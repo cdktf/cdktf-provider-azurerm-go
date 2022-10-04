@@ -1,0 +1,14 @@
+package rediscache
+
+
+type RedisCacheTimeouts struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/redis_cache#create RedisCache#create}.
+	Create *string `field:"optional" json:"create" yaml:"create"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/redis_cache#delete RedisCache#delete}.
+	Delete *string `field:"optional" json:"delete" yaml:"delete"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/redis_cache#read RedisCache#read}.
+	Read *string `field:"optional" json:"read" yaml:"read"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/redis_cache#update RedisCache#update}.
+	Update *string `field:"optional" json:"update" yaml:"update"`
+}
+

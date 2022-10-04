@@ -1,0 +1,18 @@
+package storageaccount
+
+
+type StorageAccountShareProperties struct {
+	// cors_rule block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#cors_rule StorageAccount#cors_rule}
+	CorsRule interface{} `field:"optional" json:"corsRule" yaml:"corsRule"`
+	// retention_policy block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#retention_policy StorageAccount#retention_policy}
+	RetentionPolicy *StorageAccountSharePropertiesRetentionPolicy `field:"optional" json:"retentionPolicy" yaml:"retentionPolicy"`
+	// smb block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#smb StorageAccount#smb}
+	Smb *StorageAccountSharePropertiesSmb `field:"optional" json:"smb" yaml:"smb"`
+}
+

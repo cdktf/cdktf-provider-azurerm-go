@@ -1,0 +1,6 @@
+package dataazurermpublicmaintenanceconfigurations
+
+
+type DataAzurermPublicMaintenanceConfigurationsConfigs struct {
+}
+

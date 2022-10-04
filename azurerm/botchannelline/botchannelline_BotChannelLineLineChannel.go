@@ -1,0 +1,10 @@
+package botchannelline
+
+
+type BotChannelLineLineChannel struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/bot_channel_line#access_token BotChannelLine#access_token}.
+	AccessToken *string `field:"required" json:"accessToken" yaml:"accessToken"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/bot_channel_line#secret BotChannelLine#secret}.
+	Secret *string `field:"required" json:"secret" yaml:"secret"`
+}
+

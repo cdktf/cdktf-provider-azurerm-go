@@ -1,0 +1,6 @@
+package dataazurermspringcloudservice
+
+
+type DataAzurermSpringCloudServiceConfigServerGitSettingRepositorySshAuth struct {
+}
+

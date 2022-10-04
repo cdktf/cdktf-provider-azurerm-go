@@ -1,0 +1,6 @@
+package dataazurermvirtualnetworkgateway
+
+
+type DataAzurermVirtualNetworkGatewayVpnClientConfigurationRootCertificate struct {
+}
+

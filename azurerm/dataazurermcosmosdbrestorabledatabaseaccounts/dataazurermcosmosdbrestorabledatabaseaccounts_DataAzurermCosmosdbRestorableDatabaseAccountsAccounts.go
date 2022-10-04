@@ -1,0 +1,6 @@
+package dataazurermcosmosdbrestorabledatabaseaccounts
+
+
+type DataAzurermCosmosdbRestorableDatabaseAccountsAccounts struct {
+}
+

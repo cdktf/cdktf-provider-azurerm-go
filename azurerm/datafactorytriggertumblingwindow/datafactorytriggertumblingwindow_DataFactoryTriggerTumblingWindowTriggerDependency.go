@@ -1,0 +1,12 @@
+package datafactorytriggertumblingwindow
+
+
+type DataFactoryTriggerTumblingWindowTriggerDependency struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_trigger_tumbling_window#offset DataFactoryTriggerTumblingWindow#offset}.
+	Offset *string `field:"optional" json:"offset" yaml:"offset"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_trigger_tumbling_window#size DataFactoryTriggerTumblingWindow#size}.
+	Size *string `field:"optional" json:"size" yaml:"size"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_trigger_tumbling_window#trigger_name DataFactoryTriggerTumblingWindow#trigger_name}.
+	TriggerName *string `field:"optional" json:"triggerName" yaml:"triggerName"`
+}
+

@@ -1,0 +1,6 @@
+package dataazurermlbbackendaddresspool
+
+
+type DataAzurermLbBackendAddressPoolBackendAddressInboundNatRulePortMapping struct {
+}
+

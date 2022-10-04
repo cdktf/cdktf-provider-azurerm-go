@@ -1,0 +1,10 @@
+package hdinsightsparkcluster
+
+
+type HdinsightSparkClusterNetwork struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_spark_cluster#connection_direction HdinsightSparkCluster#connection_direction}.
+	ConnectionDirection *string `field:"optional" json:"connectionDirection" yaml:"connectionDirection"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_spark_cluster#private_link_enabled HdinsightSparkCluster#private_link_enabled}.
+	PrivateLinkEnabled interface{} `field:"optional" json:"privateLinkEnabled" yaml:"privateLinkEnabled"`
+}
+

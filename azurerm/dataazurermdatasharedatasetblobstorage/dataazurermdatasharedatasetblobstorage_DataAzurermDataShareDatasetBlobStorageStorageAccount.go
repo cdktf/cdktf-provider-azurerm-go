@@ -1,0 +1,6 @@
+package dataazurermdatasharedatasetblobstorage
+
+
+type DataAzurermDataShareDatasetBlobStorageStorageAccount struct {
+}
+

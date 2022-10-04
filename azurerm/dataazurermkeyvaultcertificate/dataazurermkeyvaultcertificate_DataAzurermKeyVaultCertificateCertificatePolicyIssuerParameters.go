@@ -1,0 +1,6 @@
+package dataazurermkeyvaultcertificate
+
+
+type DataAzurermKeyVaultCertificateCertificatePolicyIssuerParameters struct {
+}
+

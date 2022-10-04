@@ -1,0 +1,14 @@
+package apimanagementgateway
+
+
+type ApiManagementGatewayLocationData struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_gateway#name ApiManagementGateway#name}.
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_gateway#city ApiManagementGateway#city}.
+	City *string `field:"optional" json:"city" yaml:"city"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_gateway#district ApiManagementGateway#district}.
+	District *string `field:"optional" json:"district" yaml:"district"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_gateway#region ApiManagementGateway#region}.
+	Region *string `field:"optional" json:"region" yaml:"region"`
+}
+

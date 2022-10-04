@@ -1,0 +1,14 @@
+package automationvariablebool
+
+
+type AutomationVariableBoolTimeouts struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/automation_variable_bool#create AutomationVariableBool#create}.
+	Create *string `field:"optional" json:"create" yaml:"create"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/automation_variable_bool#delete AutomationVariableBool#delete}.
+	Delete *string `field:"optional" json:"delete" yaml:"delete"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/automation_variable_bool#read AutomationVariableBool#read}.
+	Read *string `field:"optional" json:"read" yaml:"read"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/automation_variable_bool#update AutomationVariableBool#update}.
+	Update *string `field:"optional" json:"update" yaml:"update"`
+}
+

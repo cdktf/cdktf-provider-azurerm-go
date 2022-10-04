@@ -1,0 +1,6 @@
+package dataazurermdatabricksworkspaceprivateendpointconnection
+
+
+type DataAzurermDatabricksWorkspacePrivateEndpointConnectionConnections struct {
+}
+

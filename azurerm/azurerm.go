@@ -1,4 +1,0 @@
-// Prebuilt azurerm Provider for Terraform CDK (cdktf)
-package azurerm
-
-

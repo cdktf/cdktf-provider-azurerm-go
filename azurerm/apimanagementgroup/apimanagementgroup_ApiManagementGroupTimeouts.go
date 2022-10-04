@@ -1,0 +1,14 @@
+package apimanagementgroup
+
+
+type ApiManagementGroupTimeouts struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_group#create ApiManagementGroup#create}.
+	Create *string `field:"optional" json:"create" yaml:"create"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_group#delete ApiManagementGroup#delete}.
+	Delete *string `field:"optional" json:"delete" yaml:"delete"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_group#read ApiManagementGroup#read}.
+	Read *string `field:"optional" json:"read" yaml:"read"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_group#update ApiManagementGroup#update}.
+	Update *string `field:"optional" json:"update" yaml:"update"`
+}
+

@@ -1,0 +1,6 @@
+package dataazurermprivateendpointconnection
+
+
+type DataAzurermPrivateEndpointConnectionPrivateServiceConnection struct {
+}
+

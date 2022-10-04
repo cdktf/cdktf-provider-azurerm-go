@@ -1,0 +1,12 @@
+package sentineldataconnectorazureactivedirectory
+
+
+type SentinelDataConnectorAzureActiveDirectoryTimeouts struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_data_connector_azure_active_directory#create SentinelDataConnectorAzureActiveDirectory#create}.
+	Create *string `field:"optional" json:"create" yaml:"create"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_data_connector_azure_active_directory#delete SentinelDataConnectorAzureActiveDirectory#delete}.
+	Delete *string `field:"optional" json:"delete" yaml:"delete"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_data_connector_azure_active_directory#read SentinelDataConnectorAzureActiveDirectory#read}.
+	Read *string `field:"optional" json:"read" yaml:"read"`
+}
+

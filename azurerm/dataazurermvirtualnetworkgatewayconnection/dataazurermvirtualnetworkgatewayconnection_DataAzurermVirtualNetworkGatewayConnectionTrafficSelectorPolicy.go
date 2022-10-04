@@ -1,0 +1,6 @@
+package dataazurermvirtualnetworkgatewayconnection
+
+
+type DataAzurermVirtualNetworkGatewayConnectionTrafficSelectorPolicy struct {
+}
+

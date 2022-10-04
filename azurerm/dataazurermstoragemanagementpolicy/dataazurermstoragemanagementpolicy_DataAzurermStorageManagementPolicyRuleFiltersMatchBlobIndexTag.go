@@ -1,0 +1,6 @@
+package dataazurermstoragemanagementpolicy
+
+
+type DataAzurermStorageManagementPolicyRuleFiltersMatchBlobIndexTag struct {
+}
+

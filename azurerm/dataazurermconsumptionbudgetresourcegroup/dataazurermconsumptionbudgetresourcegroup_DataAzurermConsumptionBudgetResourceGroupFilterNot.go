@@ -1,0 +1,6 @@
+package dataazurermconsumptionbudgetresourcegroup
+
+
+type DataAzurermConsumptionBudgetResourceGroupFilterNot struct {
+}
+

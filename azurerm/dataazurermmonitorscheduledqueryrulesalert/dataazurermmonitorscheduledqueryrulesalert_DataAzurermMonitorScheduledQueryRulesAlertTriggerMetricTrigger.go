@@ -1,0 +1,6 @@
+package dataazurermmonitorscheduledqueryrulesalert
+
+
+type DataAzurermMonitorScheduledQueryRulesAlertTriggerMetricTrigger struct {
+}
+

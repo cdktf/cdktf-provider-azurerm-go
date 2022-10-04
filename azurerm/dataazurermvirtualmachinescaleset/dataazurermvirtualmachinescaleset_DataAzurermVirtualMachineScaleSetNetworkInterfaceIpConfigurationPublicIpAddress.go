@@ -1,0 +1,6 @@
+package dataazurermvirtualmachinescaleset
+
+
+type DataAzurermVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddress struct {
+}
+

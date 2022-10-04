@@ -1,0 +1,6 @@
+package dataazurermconfidentialledger
+
+
+type DataAzurermConfidentialLedgerCertificateBasedSecurityPrincipal struct {
+}
+

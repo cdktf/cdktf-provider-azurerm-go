@@ -1,0 +1,6 @@
+package dataazurermconsumptionbudgetsubscription
+
+
+type DataAzurermConsumptionBudgetSubscriptionFilterDimension struct {
+}
+

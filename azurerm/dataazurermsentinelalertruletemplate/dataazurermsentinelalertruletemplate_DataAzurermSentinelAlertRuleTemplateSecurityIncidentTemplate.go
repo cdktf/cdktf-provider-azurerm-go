@@ -1,0 +1,6 @@
+package dataazurermsentinelalertruletemplate
+
+
+type DataAzurermSentinelAlertRuleTemplateSecurityIncidentTemplate struct {
+}
+

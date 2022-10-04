@@ -1,0 +1,6 @@
+package dataazurermwindowswebapp
+
+
+type DataAzurermWindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequest struct {
+}
+

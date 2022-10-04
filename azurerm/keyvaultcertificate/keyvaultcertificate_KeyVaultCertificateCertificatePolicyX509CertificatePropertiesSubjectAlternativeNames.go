@@ -1,0 +1,12 @@
+package keyvaultcertificate
+
+
+type KeyVaultCertificateCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/key_vault_certificate#dns_names KeyVaultCertificate#dns_names}.
+	DnsNames *[]*string `field:"optional" json:"dnsNames" yaml:"dnsNames"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/key_vault_certificate#emails KeyVaultCertificate#emails}.
+	Emails *[]*string `field:"optional" json:"emails" yaml:"emails"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/key_vault_certificate#upns KeyVaultCertificate#upns}.
+	Upns *[]*string `field:"optional" json:"upns" yaml:"upns"`
+}
+

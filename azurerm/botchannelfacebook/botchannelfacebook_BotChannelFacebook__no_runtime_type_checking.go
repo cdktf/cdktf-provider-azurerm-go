@@ -1,0 +1,107 @@
+//go:build no_runtime_type_checking
+// +build no_runtime_type_checking
+
+package botchannelfacebook
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (b *jsiiProxy_BotChannelFacebook) validateAddOverrideParameters(path *string, value interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelFacebook) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelFacebook) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelFacebook) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelFacebook) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelFacebook) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelFacebook) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelFacebook) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelFacebook) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelFacebook) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelFacebook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelFacebook) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelFacebook) validatePutPageParameters(value interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelFacebook) validatePutTimeoutsParameters(value *BotChannelFacebookTimeouts) error {
+	return nil
+}
+
+func validateBotChannelFacebook_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BotChannelFacebook) validateSetBotNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BotChannelFacebook) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BotChannelFacebook) validateSetFacebookApplicationIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BotChannelFacebook) validateSetFacebookApplicationSecretParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BotChannelFacebook) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BotChannelFacebook) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_BotChannelFacebook) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BotChannelFacebook) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BotChannelFacebook) validateSetResourceGroupNameParameters(val *string) error {
+	return nil
+}
+
+func validateNewBotChannelFacebookParameters(scope constructs.Construct, id *string, config *BotChannelFacebookConfig) error {
+	return nil
+}
+

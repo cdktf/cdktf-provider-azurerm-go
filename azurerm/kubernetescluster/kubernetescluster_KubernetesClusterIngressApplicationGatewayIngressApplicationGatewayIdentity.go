@@ -1,0 +1,6 @@
+package kubernetescluster
+
+
+type KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentity struct {
+}
+

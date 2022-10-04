@@ -1,0 +1,6 @@
+package dataazurermvirtualnetworkgatewayconnection
+
+
+type DataAzurermVirtualNetworkGatewayConnectionIpsecPolicy struct {
+}
+

@@ -1,0 +1,35 @@
+//go:build no_runtime_type_checking
+// +build no_runtime_type_checking
+
+package cdnendpoint
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (c *jsiiProxy_CdnEndpointGlobalDeliveryRuleModifyRequestHeaderActionList) validateGetParameters(index *float64) error {
+	return nil
+}
+
+func (c *jsiiProxy_CdnEndpointGlobalDeliveryRuleModifyRequestHeaderActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_CdnEndpointGlobalDeliveryRuleModifyRequestHeaderActionList) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CdnEndpointGlobalDeliveryRuleModifyRequestHeaderActionList) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CdnEndpointGlobalDeliveryRuleModifyRequestHeaderActionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_CdnEndpointGlobalDeliveryRuleModifyRequestHeaderActionList) validateSetWrapsSetParameters(val *bool) error {
+	return nil
+}
+
+func validateNewCdnEndpointGlobalDeliveryRuleModifyRequestHeaderActionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+	return nil
+}
+

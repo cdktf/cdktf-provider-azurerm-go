@@ -1,0 +1,10 @@
+package cosmosdbsqlcontainer
+
+
+type CosmosdbSqlContainerIndexingPolicyCompositeIndexIndex struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cosmosdb_sql_container#order CosmosdbSqlContainer#order}.
+	Order *string `field:"required" json:"order" yaml:"order"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cosmosdb_sql_container#path CosmosdbSqlContainer#path}.
+	Path *string `field:"required" json:"path" yaml:"path"`
+}
+
