@@ -2,10 +2,10 @@ package virtualhubip
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/hashicorp/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/cdktf-provider-azurerm-go/azurerm/v3/virtualhubip/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/virtualhubip/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

@@ -2,9 +2,9 @@ package streamanalyticsoutputservicebusqueue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/hashicorp/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
 
-	"github.com/hashicorp/cdktf-provider-azurerm-go/azurerm/v3/streamanalyticsoutputservicebusqueue/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/streamanalyticsoutputservicebusqueue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
