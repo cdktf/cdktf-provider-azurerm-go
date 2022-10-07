@@ -105,7 +105,15 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetPo
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetPodCidrsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetServiceCidrParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetServiceCidrsParameters(val *[]*string) error {
 	return nil
 }
 

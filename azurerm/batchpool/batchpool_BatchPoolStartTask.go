@@ -10,6 +10,10 @@ type BatchPoolStartTask struct {
 	UserIdentity *BatchPoolStartTaskUserIdentity `field:"required" json:"userIdentity" yaml:"userIdentity"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/batch_pool#common_environment_properties BatchPool#common_environment_properties}.
 	CommonEnvironmentProperties *map[string]*string `field:"optional" json:"commonEnvironmentProperties" yaml:"commonEnvironmentProperties"`
+	// container block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/batch_pool#container BatchPool#container}
+	Container interface{} `field:"optional" json:"container" yaml:"container"`
 	// resource_file block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/batch_pool#resource_file BatchPool#resource_file}

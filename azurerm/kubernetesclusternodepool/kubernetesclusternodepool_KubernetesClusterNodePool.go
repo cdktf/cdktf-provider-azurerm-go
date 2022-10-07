@@ -80,6 +80,9 @@ type KubernetesClusterNodePool interface {
 	MaxPods() *float64
 	SetMaxPods(val *float64)
 	MaxPodsInput() *float64
+	MessageOfTheDay() *string
+	SetMessageOfTheDay(val *string)
+	MessageOfTheDayInput() *string
 	MinCount() *float64
 	SetMinCount(val *float64)
 	MinCountInput() *float64
@@ -213,6 +216,7 @@ type KubernetesClusterNodePool interface {
 	ResetLinuxOsConfig()
 	ResetMaxCount()
 	ResetMaxPods()
+	ResetMessageOfTheDay()
 	ResetMinCount()
 	ResetMode()
 	ResetNodeCount()
@@ -619,6 +623,26 @@ func (j *jsiiProxy_KubernetesClusterNodePool) MaxPodsInput() *float64 {
 	_jsii_.Get(
 		j,
 		"maxPodsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) MessageOfTheDay() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"messageOfTheDay",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) MessageOfTheDayInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"messageOfTheDayInput",
 		&returns,
 	)
 	return returns
@@ -1402,6 +1426,17 @@ func (j *jsiiProxy_KubernetesClusterNodePool)SetMaxPods(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_KubernetesClusterNodePool)SetMessageOfTheDay(val *string) {
+	if err := j.validateSetMessageOfTheDayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"messageOfTheDay",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KubernetesClusterNodePool)SetMinCount(val *float64) {
 	if err := j.validateSetMinCountParameters(val); err != nil {
 		panic(err)
@@ -2046,6 +2081,14 @@ func (k *jsiiProxy_KubernetesClusterNodePool) ResetMaxPods() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetMaxPods",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNodePool) ResetMessageOfTheDay() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetMessageOfTheDay",
 		nil, // no parameters
 	)
 }

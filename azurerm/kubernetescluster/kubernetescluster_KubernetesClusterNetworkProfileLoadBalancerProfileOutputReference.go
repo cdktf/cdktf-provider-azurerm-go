@@ -36,6 +36,9 @@ type KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference interface
 	ManagedOutboundIpCount() *float64
 	SetManagedOutboundIpCount(val *float64)
 	ManagedOutboundIpCountInput() *float64
+	ManagedOutboundIpv6Count() *float64
+	SetManagedOutboundIpv6Count(val *float64)
+	ManagedOutboundIpv6CountInput() *float64
 	OutboundIpAddressIds() *[]*string
 	SetOutboundIpAddressIds(val *[]*string)
 	OutboundIpAddressIdsInput() *[]*string
@@ -79,6 +82,7 @@ type KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference interface
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIdleTimeoutInMinutes()
 	ResetManagedOutboundIpCount()
+	ResetManagedOutboundIpv6Count()
 	ResetOutboundIpAddressIds()
 	ResetOutboundIpPrefixIds()
 	ResetOutboundPortsAllocated()
@@ -192,6 +196,26 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputRefer
 	_jsii_.Get(
 		j,
 		"managedOutboundIpCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference) ManagedOutboundIpv6Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"managedOutboundIpv6Count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference) ManagedOutboundIpv6CountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"managedOutboundIpv6CountInput",
 		&returns,
 	)
 	return returns
@@ -356,6 +380,17 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputRefer
 	_jsii_.Set(
 		j,
 		"managedOutboundIpCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference)SetManagedOutboundIpv6Count(val *float64) {
+	if err := j.validateSetManagedOutboundIpv6CountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedOutboundIpv6Count",
 		val,
 	)
 }
@@ -613,6 +648,14 @@ func (k *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputRefer
 	_jsii_.InvokeVoid(
 		k,
 		"resetManagedOutboundIpCount",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference) ResetManagedOutboundIpv6Count() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetManagedOutboundIpv6Count",
 		nil, // no parameters
 	)
 }

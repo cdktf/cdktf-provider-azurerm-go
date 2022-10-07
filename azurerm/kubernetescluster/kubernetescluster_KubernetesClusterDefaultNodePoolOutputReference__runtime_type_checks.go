@@ -325,6 +325,14 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetM
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetMessageOfTheDayParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetMinCountParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -441,6 +449,14 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetP
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetScaleDownModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -502,6 +518,14 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetV
 }
 
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetVnetSubnetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetWorkloadRuntimeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

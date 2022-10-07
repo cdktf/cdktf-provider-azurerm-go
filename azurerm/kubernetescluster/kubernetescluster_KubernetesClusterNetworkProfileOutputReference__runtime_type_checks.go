@@ -266,7 +266,23 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetPo
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetPodCidrsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetServiceCidrParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetServiceCidrsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

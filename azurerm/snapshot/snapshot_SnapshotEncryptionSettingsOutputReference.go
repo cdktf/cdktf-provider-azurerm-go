@@ -71,6 +71,7 @@ type SnapshotEncryptionSettingsOutputReference interface {
 	PutDiskEncryptionKey(value *SnapshotEncryptionSettingsDiskEncryptionKey)
 	PutKeyEncryptionKey(value *SnapshotEncryptionSettingsKeyEncryptionKey)
 	ResetDiskEncryptionKey()
+	ResetEnabled()
 	ResetKeyEncryptionKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -523,6 +524,14 @@ func (s *jsiiProxy_SnapshotEncryptionSettingsOutputReference) ResetDiskEncryptio
 	_jsii_.InvokeVoid(
 		s,
 		"resetDiskEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnapshotEncryptionSettingsOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnabled",
 		nil, // no parameters
 	)
 }

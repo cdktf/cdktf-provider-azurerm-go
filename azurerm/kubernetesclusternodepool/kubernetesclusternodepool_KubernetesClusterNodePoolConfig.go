@@ -58,6 +58,8 @@ type KubernetesClusterNodePoolConfig struct {
 	MaxCount *float64 `field:"optional" json:"maxCount" yaml:"maxCount"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster_node_pool#max_pods KubernetesClusterNodePool#max_pods}.
 	MaxPods *float64 `field:"optional" json:"maxPods" yaml:"maxPods"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster_node_pool#message_of_the_day KubernetesClusterNodePool#message_of_the_day}.
+	MessageOfTheDay *string `field:"optional" json:"messageOfTheDay" yaml:"messageOfTheDay"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster_node_pool#min_count KubernetesClusterNodePool#min_count}.
 	MinCount *float64 `field:"optional" json:"minCount" yaml:"minCount"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster_node_pool#mode KubernetesClusterNodePool#mode}.

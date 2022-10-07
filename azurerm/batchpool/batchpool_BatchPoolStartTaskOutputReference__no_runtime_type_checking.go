@@ -45,6 +45,10 @@ func (b *jsiiProxy_BatchPoolStartTaskOutputReference) validateInterpolationForAt
 	return nil
 }
 
+func (b *jsiiProxy_BatchPoolStartTaskOutputReference) validatePutContainerParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchPoolStartTaskOutputReference) validatePutResourceFileParameters(value interface{}) error {
 	return nil
 }

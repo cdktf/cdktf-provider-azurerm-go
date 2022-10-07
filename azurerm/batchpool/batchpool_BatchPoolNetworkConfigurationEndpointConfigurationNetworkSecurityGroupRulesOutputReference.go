@@ -38,6 +38,9 @@ type BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules
 	SourceAddressPrefix() *string
 	SetSourceAddressPrefix(val *string)
 	SourceAddressPrefixInput() *string
+	SourcePortRanges() *[]*string
+	SetSourcePortRanges(val *[]*string)
+	SourcePortRangesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +73,7 @@ type BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSourcePortRanges()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -195,6 +199,26 @@ func (j *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecu
 	return returns
 }
 
+func (j *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesOutputReference) SourcePortRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourcePortRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesOutputReference) SourcePortRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourcePortRangesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -305,6 +329,17 @@ func (j *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecu
 	_jsii_.Set(
 		j,
 		"sourceAddressPrefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesOutputReference)SetSourcePortRanges(val *[]*string) {
+	if err := j.validateSetSourcePortRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourcePortRanges",
 		val,
 	)
 }
@@ -515,6 +550,14 @@ func (b *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecu
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesOutputReference) ResetSourcePortRanges() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSourcePortRanges",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

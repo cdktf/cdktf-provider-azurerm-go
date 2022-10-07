@@ -26,6 +26,8 @@ type BatchPoolStartTaskOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Container() BatchPoolStartTaskContainerList
+	ContainerInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -77,9 +79,11 @@ type BatchPoolStartTaskOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutContainer(value interface{})
 	PutResourceFile(value interface{})
 	PutUserIdentity(value *BatchPoolStartTaskUserIdentity)
 	ResetCommonEnvironmentProperties()
+	ResetContainer()
 	ResetResourceFile()
 	ResetTaskRetryMaximum()
 	ResetWaitForSuccess()
@@ -153,6 +157,26 @@ func (j *jsiiProxy_BatchPoolStartTaskOutputReference) ComplexObjectIsFromSet() *
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchPoolStartTaskOutputReference) Container() BatchPoolStartTaskContainerList {
+	var returns BatchPoolStartTaskContainerList
+	_jsii_.Get(
+		j,
+		"container",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchPoolStartTaskOutputReference) ContainerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"containerInput",
 		&returns,
 	)
 	return returns
@@ -601,6 +625,17 @@ func (b *jsiiProxy_BatchPoolStartTaskOutputReference) InterpolationForAttribute(
 	return returns
 }
 
+func (b *jsiiProxy_BatchPoolStartTaskOutputReference) PutContainer(value interface{}) {
+	if err := b.validatePutContainerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putContainer",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BatchPoolStartTaskOutputReference) PutResourceFile(value interface{}) {
 	if err := b.validatePutResourceFileParameters(value); err != nil {
 		panic(err)
@@ -627,6 +662,14 @@ func (b *jsiiProxy_BatchPoolStartTaskOutputReference) ResetCommonEnvironmentProp
 	_jsii_.InvokeVoid(
 		b,
 		"resetCommonEnvironmentProperties",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchPoolStartTaskOutputReference) ResetContainer() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetContainer",
 		nil, // no parameters
 	)
 }

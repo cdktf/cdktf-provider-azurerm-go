@@ -71,6 +71,7 @@ type ManagedDiskEncryptionSettingsOutputReference interface {
 	PutDiskEncryptionKey(value *ManagedDiskEncryptionSettingsDiskEncryptionKey)
 	PutKeyEncryptionKey(value *ManagedDiskEncryptionSettingsKeyEncryptionKey)
 	ResetDiskEncryptionKey()
+	ResetEnabled()
 	ResetKeyEncryptionKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -523,6 +524,14 @@ func (m *jsiiProxy_ManagedDiskEncryptionSettingsOutputReference) ResetDiskEncryp
 	_jsii_.InvokeVoid(
 		m,
 		"resetDiskEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedDiskEncryptionSettingsOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEnabled",
 		nil, // no parameters
 	)
 }

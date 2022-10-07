@@ -129,6 +129,10 @@ func (j *jsiiProxy_KubernetesClusterNodePool) validateSetMaxPodsParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterNodePool) validateSetMessageOfTheDayParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterNodePool) validateSetMinCountParameters(val *float64) error {
 	return nil
 }

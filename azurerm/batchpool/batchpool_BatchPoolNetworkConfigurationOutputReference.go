@@ -25,6 +25,9 @@ type BatchPoolNetworkConfigurationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DynamicVnetAssignmentScope() *string
+	SetDynamicVnetAssignmentScope(val *string)
+	DynamicVnetAssignmentScopeInput() *string
 	EndpointConfiguration() BatchPoolNetworkConfigurationEndpointConfigurationList
 	EndpointConfigurationInput() interface{}
 	// Experimental.
@@ -73,6 +76,7 @@ type BatchPoolNetworkConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEndpointConfiguration(value interface{})
+	ResetDynamicVnetAssignmentScope()
 	ResetEndpointConfiguration()
 	ResetPublicAddressProvisioningType()
 	ResetPublicIps()
@@ -116,6 +120,26 @@ func (j *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) CreationStack()
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) DynamicVnetAssignmentScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dynamicVnetAssignmentScope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) DynamicVnetAssignmentScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dynamicVnetAssignmentScopeInput",
 		&returns,
 	)
 	return returns
@@ -287,6 +311,17 @@ func (j *jsiiProxy_BatchPoolNetworkConfigurationOutputReference)SetComplexObject
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BatchPoolNetworkConfigurationOutputReference)SetDynamicVnetAssignmentScope(val *string) {
+	if err := j.validateSetDynamicVnetAssignmentScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dynamicVnetAssignmentScope",
 		val,
 	)
 }
@@ -551,6 +586,14 @@ func (b *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) PutEndpointConf
 		b,
 		"putEndpointConfiguration",
 		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) ResetDynamicVnetAssignmentScope() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDynamicVnetAssignmentScope",
+		nil, // no parameters
 	)
 }
 

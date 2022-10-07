@@ -32,6 +32,8 @@ type KubernetesClusterDefaultNodePool struct {
 	MaxCount *float64 `field:"optional" json:"maxCount" yaml:"maxCount"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#max_pods KubernetesCluster#max_pods}.
 	MaxPods *float64 `field:"optional" json:"maxPods" yaml:"maxPods"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#message_of_the_day KubernetesCluster#message_of_the_day}.
+	MessageOfTheDay *string `field:"optional" json:"messageOfTheDay" yaml:"messageOfTheDay"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#min_count KubernetesCluster#min_count}.
 	MinCount *float64 `field:"optional" json:"minCount" yaml:"minCount"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#node_count KubernetesCluster#node_count}.
@@ -56,6 +58,8 @@ type KubernetesClusterDefaultNodePool struct {
 	PodSubnetId *string `field:"optional" json:"podSubnetId" yaml:"podSubnetId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#proximity_placement_group_id KubernetesCluster#proximity_placement_group_id}.
 	ProximityPlacementGroupId *string `field:"optional" json:"proximityPlacementGroupId" yaml:"proximityPlacementGroupId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#scale_down_mode KubernetesCluster#scale_down_mode}.
+	ScaleDownMode *string `field:"optional" json:"scaleDownMode" yaml:"scaleDownMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#tags KubernetesCluster#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#type KubernetesCluster#type}.
@@ -68,6 +72,8 @@ type KubernetesClusterDefaultNodePool struct {
 	UpgradeSettings *KubernetesClusterDefaultNodePoolUpgradeSettings `field:"optional" json:"upgradeSettings" yaml:"upgradeSettings"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#vnet_subnet_id KubernetesCluster#vnet_subnet_id}.
 	VnetSubnetId *string `field:"optional" json:"vnetSubnetId" yaml:"vnetSubnetId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#workload_runtime KubernetesCluster#workload_runtime}.
+	WorkloadRuntime *string `field:"optional" json:"workloadRuntime" yaml:"workloadRuntime"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#zones KubernetesCluster#zones}.
 	Zones *[]*string `field:"optional" json:"zones" yaml:"zones"`
 }

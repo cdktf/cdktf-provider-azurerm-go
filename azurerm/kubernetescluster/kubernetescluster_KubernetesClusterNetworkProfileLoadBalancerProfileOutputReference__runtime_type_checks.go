@@ -188,6 +188,14 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference) validateSetManagedOutboundIpv6CountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference) validateSetOutboundIpAddressIdsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

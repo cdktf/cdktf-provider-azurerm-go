@@ -60,6 +60,9 @@ type KubernetesClusterDefaultNodePoolOutputReference interface {
 	MaxPods() *float64
 	SetMaxPods(val *float64)
 	MaxPodsInput() *float64
+	MessageOfTheDay() *string
+	SetMessageOfTheDay(val *string)
+	MessageOfTheDayInput() *string
 	MinCount() *float64
 	SetMinCount(val *float64)
 	MinCountInput() *float64
@@ -99,6 +102,9 @@ type KubernetesClusterDefaultNodePoolOutputReference interface {
 	ProximityPlacementGroupId() *string
 	SetProximityPlacementGroupId(val *string)
 	ProximityPlacementGroupIdInput() *string
+	ScaleDownMode() *string
+	SetScaleDownMode(val *string)
+	ScaleDownModeInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -124,6 +130,9 @@ type KubernetesClusterDefaultNodePoolOutputReference interface {
 	VnetSubnetId() *string
 	SetVnetSubnetId(val *string)
 	VnetSubnetIdInput() *string
+	WorkloadRuntime() *string
+	SetWorkloadRuntime(val *string)
+	WorkloadRuntimeInput() *string
 	Zones() *[]*string
 	SetZones(val *[]*string)
 	ZonesInput() *[]*string
@@ -165,6 +174,7 @@ type KubernetesClusterDefaultNodePoolOutputReference interface {
 	ResetLinuxOsConfig()
 	ResetMaxCount()
 	ResetMaxPods()
+	ResetMessageOfTheDay()
 	ResetMinCount()
 	ResetNodeCount()
 	ResetNodeLabels()
@@ -177,11 +187,13 @@ type KubernetesClusterDefaultNodePoolOutputReference interface {
 	ResetOsSku()
 	ResetPodSubnetId()
 	ResetProximityPlacementGroupId()
+	ResetScaleDownMode()
 	ResetTags()
 	ResetType()
 	ResetUltraSsdEnabled()
 	ResetUpgradeSettings()
 	ResetVnetSubnetId()
+	ResetWorkloadRuntime()
 	ResetZones()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -468,6 +480,26 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) MaxPodsInput
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) MessageOfTheDay() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"messageOfTheDay",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) MessageOfTheDayInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"messageOfTheDayInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) MinCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -728,6 +760,26 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ProximityPla
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ScaleDownMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scaleDownMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ScaleDownModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scaleDownModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -863,6 +915,26 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) VnetSubnetId
 	_jsii_.Get(
 		j,
 		"vnetSubnetIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) WorkloadRuntime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workloadRuntime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) WorkloadRuntimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workloadRuntimeInput",
 		&returns,
 	)
 	return returns
@@ -1048,6 +1120,17 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetMaxPods(va
 	)
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetMessageOfTheDay(val *string) {
+	if err := j.validateSetMessageOfTheDayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"messageOfTheDay",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetMinCount(val *float64) {
 	if err := j.validateSetMinCountParameters(val); err != nil {
 		panic(err)
@@ -1191,6 +1274,17 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetProximityP
 	)
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetScaleDownMode(val *string) {
+	if err := j.validateSetScaleDownModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scaleDownMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
@@ -1264,6 +1358,17 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetVnetSubnet
 	_jsii_.Set(
 		j,
 		"vnetSubnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetWorkloadRuntime(val *string) {
+	if err := j.validateSetWorkloadRuntimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workloadRuntime",
 		val,
 	)
 }
@@ -1586,6 +1691,14 @@ func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetMaxPods
 	)
 }
 
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetMessageOfTheDay() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetMessageOfTheDay",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetMinCount() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1682,6 +1795,14 @@ func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetProximi
 	)
 }
 
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetScaleDownMode() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetScaleDownMode",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetTags() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1718,6 +1839,14 @@ func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetVnetSub
 	_jsii_.InvokeVoid(
 		k,
 		"resetVnetSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetWorkloadRuntime() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetWorkloadRuntime",
 		nil, // no parameters
 	)
 }

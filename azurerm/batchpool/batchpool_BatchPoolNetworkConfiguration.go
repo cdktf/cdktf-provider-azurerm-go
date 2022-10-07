@@ -4,6 +4,8 @@ package batchpool
 type BatchPoolNetworkConfiguration struct {
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/batch_pool#subnet_id BatchPool#subnet_id}.
 	SubnetId *string `field:"required" json:"subnetId" yaml:"subnetId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/batch_pool#dynamic_vnet_assignment_scope BatchPool#dynamic_vnet_assignment_scope}.
+	DynamicVnetAssignmentScope *string `field:"optional" json:"dynamicVnetAssignmentScope" yaml:"dynamicVnetAssignmentScope"`
 	// endpoint_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/batch_pool#endpoint_configuration BatchPool#endpoint_configuration}

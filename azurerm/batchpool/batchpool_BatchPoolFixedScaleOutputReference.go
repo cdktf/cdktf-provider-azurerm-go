@@ -29,6 +29,9 @@ type BatchPoolFixedScaleOutputReference interface {
 	Fqn() *string
 	InternalValue() *BatchPoolFixedScale
 	SetInternalValue(val *BatchPoolFixedScale)
+	NodeDeallocationMethod() *string
+	SetNodeDeallocationMethod(val *string)
+	NodeDeallocationMethodInput() *string
 	ResizeTimeout() *string
 	SetResizeTimeout(val *string)
 	ResizeTimeoutInput() *string
@@ -70,6 +73,7 @@ type BatchPoolFixedScaleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetNodeDeallocationMethod()
 	ResetResizeTimeout()
 	ResetTargetDedicatedNodes()
 	ResetTargetLowPriorityNodes()
@@ -133,6 +137,26 @@ func (j *jsiiProxy_BatchPoolFixedScaleOutputReference) InternalValue() *BatchPoo
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchPoolFixedScaleOutputReference) NodeDeallocationMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeDeallocationMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchPoolFixedScaleOutputReference) NodeDeallocationMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeDeallocationMethodInput",
 		&returns,
 	)
 	return returns
@@ -275,6 +299,17 @@ func (j *jsiiProxy_BatchPoolFixedScaleOutputReference)SetInternalValue(val *Batc
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BatchPoolFixedScaleOutputReference)SetNodeDeallocationMethod(val *string) {
+	if err := j.validateSetNodeDeallocationMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeDeallocationMethod",
 		val,
 	)
 }
@@ -518,6 +553,14 @@ func (b *jsiiProxy_BatchPoolFixedScaleOutputReference) InterpolationForAttribute
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BatchPoolFixedScaleOutputReference) ResetNodeDeallocationMethod() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetNodeDeallocationMethod",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BatchPoolFixedScaleOutputReference) ResetResizeTimeout() {

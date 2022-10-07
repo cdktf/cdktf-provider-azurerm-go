@@ -32,6 +32,7 @@ type DataAzurermBatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurit
 	SetInternalValue(val *DataAzurermBatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules)
 	Priority() *float64
 	SourceAddressPrefix() *string
+	SourcePortRanges() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -154,6 +155,16 @@ func (j *jsiiProxy_DataAzurermBatchPoolNetworkConfigurationEndpointConfiguration
 	_jsii_.Get(
 		j,
 		"sourceAddressPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermBatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesOutputReference) SourcePortRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourcePortRanges",
 		&returns,
 	)
 	return returns

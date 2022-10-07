@@ -2,6 +2,8 @@ package batchpool
 
 
 type BatchPoolFixedScale struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/batch_pool#node_deallocation_method BatchPool#node_deallocation_method}.
+	NodeDeallocationMethod *string `field:"optional" json:"nodeDeallocationMethod" yaml:"nodeDeallocationMethod"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/batch_pool#resize_timeout BatchPool#resize_timeout}.
 	ResizeTimeout *string `field:"optional" json:"resizeTimeout" yaml:"resizeTimeout"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/batch_pool#target_dedicated_nodes BatchPool#target_dedicated_nodes}.

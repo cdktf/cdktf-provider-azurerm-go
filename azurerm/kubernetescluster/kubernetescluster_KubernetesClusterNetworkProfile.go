@@ -28,7 +28,11 @@ type KubernetesClusterNetworkProfile struct {
 	OutboundType *string `field:"optional" json:"outboundType" yaml:"outboundType"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#pod_cidr KubernetesCluster#pod_cidr}.
 	PodCidr *string `field:"optional" json:"podCidr" yaml:"podCidr"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#pod_cidrs KubernetesCluster#pod_cidrs}.
+	PodCidrs *[]*string `field:"optional" json:"podCidrs" yaml:"podCidrs"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#service_cidr KubernetesCluster#service_cidr}.
 	ServiceCidr *string `field:"optional" json:"serviceCidr" yaml:"serviceCidr"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#service_cidrs KubernetesCluster#service_cidrs}.
+	ServiceCidrs *[]*string `field:"optional" json:"serviceCidrs" yaml:"serviceCidrs"`
 }
 

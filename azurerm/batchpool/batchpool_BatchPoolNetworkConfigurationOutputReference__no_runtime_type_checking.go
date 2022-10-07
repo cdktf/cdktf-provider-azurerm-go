@@ -61,6 +61,10 @@ func (j *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) validateSetComp
 	return nil
 }
 
+func (j *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) validateSetDynamicVnetAssignmentScopeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) validateSetInternalValueParameters(val *BatchPoolNetworkConfiguration) error {
 	return nil
 }

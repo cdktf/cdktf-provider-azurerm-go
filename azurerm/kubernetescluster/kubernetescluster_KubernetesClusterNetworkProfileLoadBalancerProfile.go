@@ -6,6 +6,8 @@ type KubernetesClusterNetworkProfileLoadBalancerProfile struct {
 	IdleTimeoutInMinutes *float64 `field:"optional" json:"idleTimeoutInMinutes" yaml:"idleTimeoutInMinutes"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#managed_outbound_ip_count KubernetesCluster#managed_outbound_ip_count}.
 	ManagedOutboundIpCount *float64 `field:"optional" json:"managedOutboundIpCount" yaml:"managedOutboundIpCount"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#managed_outbound_ipv6_count KubernetesCluster#managed_outbound_ipv6_count}.
+	ManagedOutboundIpv6Count *float64 `field:"optional" json:"managedOutboundIpv6Count" yaml:"managedOutboundIpv6Count"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#outbound_ip_address_ids KubernetesCluster#outbound_ip_address_ids}.
 	OutboundIpAddressIds *[]*string `field:"optional" json:"outboundIpAddressIds" yaml:"outboundIpAddressIds"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#outbound_ip_prefix_ids KubernetesCluster#outbound_ip_prefix_ids}.

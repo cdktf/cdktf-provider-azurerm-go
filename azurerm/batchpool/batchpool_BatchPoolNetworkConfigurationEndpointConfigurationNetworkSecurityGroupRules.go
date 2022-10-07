@@ -8,5 +8,7 @@ type BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules
 	Priority *float64 `field:"required" json:"priority" yaml:"priority"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/batch_pool#source_address_prefix BatchPool#source_address_prefix}.
 	SourceAddressPrefix *string `field:"required" json:"sourceAddressPrefix" yaml:"sourceAddressPrefix"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/batch_pool#source_port_ranges BatchPool#source_port_ranges}.
+	SourcePortRanges *[]*string `field:"optional" json:"sourcePortRanges" yaml:"sourcePortRanges"`
 }
 

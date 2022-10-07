@@ -60,9 +60,15 @@ type KubernetesClusterNetworkProfileOutputReference interface {
 	PodCidr() *string
 	SetPodCidr(val *string)
 	PodCidrInput() *string
+	PodCidrs() *[]*string
+	SetPodCidrs(val *[]*string)
+	PodCidrsInput() *[]*string
 	ServiceCidr() *string
 	SetServiceCidr(val *string)
 	ServiceCidrInput() *string
+	ServiceCidrs() *[]*string
+	SetServiceCidrs(val *[]*string)
+	ServiceCidrsInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -107,7 +113,9 @@ type KubernetesClusterNetworkProfileOutputReference interface {
 	ResetNetworkPolicy()
 	ResetOutboundType()
 	ResetPodCidr()
+	ResetPodCidrs()
 	ResetServiceCidr()
+	ResetServiceCidrs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -393,6 +401,26 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) PodCidrInput(
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) PodCidrs() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"podCidrs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) PodCidrsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"podCidrsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ServiceCidr() *string {
 	var returns *string
 	_jsii_.Get(
@@ -408,6 +436,26 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ServiceCidrIn
 	_jsii_.Get(
 		j,
 		"serviceCidrInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ServiceCidrs() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"serviceCidrs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ServiceCidrsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"serviceCidrsInput",
 		&returns,
 	)
 	return returns
@@ -593,6 +641,17 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetPodCidr(val
 	)
 }
 
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetPodCidrs(val *[]*string) {
+	if err := j.validateSetPodCidrsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"podCidrs",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetServiceCidr(val *string) {
 	if err := j.validateSetServiceCidrParameters(val); err != nil {
 		panic(err)
@@ -600,6 +659,17 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetServiceCidr
 	_jsii_.Set(
 		j,
 		"serviceCidr",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetServiceCidrs(val *[]*string) {
+	if err := j.validateSetServiceCidrsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceCidrs",
 		val,
 	)
 }
@@ -914,10 +984,26 @@ func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetPodCidr(
 	)
 }
 
+func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetPodCidrs() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetPodCidrs",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetServiceCidr() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetServiceCidr",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetServiceCidrs() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetServiceCidrs",
 		nil, // no parameters
 	)
 }

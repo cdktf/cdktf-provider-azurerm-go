@@ -204,6 +204,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putDiskEncryptionKey", GoMethod: "PutDiskEncryptionKey"},
 			_jsii_.MemberMethod{JsiiMethod: "putKeyEncryptionKey", GoMethod: "PutKeyEncryptionKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskEncryptionKey", GoMethod: "ResetDiskEncryptionKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeyEncryptionKey", GoMethod: "ResetKeyEncryptionKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

@@ -69,6 +69,10 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference) validateSetManagedOutboundIpv6CountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference) validateSetOutboundIpAddressIdsParameters(val *[]*string) error {
 	return nil
 }

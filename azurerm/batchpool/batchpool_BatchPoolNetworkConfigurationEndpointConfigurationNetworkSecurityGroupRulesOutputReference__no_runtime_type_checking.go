@@ -73,6 +73,10 @@ func (j *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecu
 	return nil
 }
 
+func (j *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesOutputReference) validateSetSourcePortRangesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

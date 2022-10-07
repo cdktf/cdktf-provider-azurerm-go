@@ -25,6 +25,7 @@ type DataAzurermBatchPoolNetworkConfigurationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DynamicVnetAssignmentScope() *string
 	EndpointConfiguration() DataAzurermBatchPoolNetworkConfigurationEndpointConfigurationList
 	// Experimental.
 	Fqn() *string
@@ -105,6 +106,16 @@ func (j *jsiiProxy_DataAzurermBatchPoolNetworkConfigurationOutputReference) Crea
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermBatchPoolNetworkConfigurationOutputReference) DynamicVnetAssignmentScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dynamicVnetAssignmentScope",
 		&returns,
 	)
 	return returns
