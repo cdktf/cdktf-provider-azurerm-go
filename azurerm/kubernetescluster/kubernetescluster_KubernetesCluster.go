@@ -179,6 +179,9 @@ type KubernetesCluster interface {
 	TimeoutsInput() interface{}
 	WindowsProfile() KubernetesClusterWindowsProfileOutputReference
 	WindowsProfileInput() *KubernetesClusterWindowsProfile
+	WorkloadIdentityEnabled() interface{}
+	SetWorkloadIdentityEnabled(val interface{})
+	WorkloadIdentityEnabledInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -263,6 +266,7 @@ type KubernetesCluster interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetWindowsProfile()
+	ResetWorkloadIdentityEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -1388,6 +1392,26 @@ func (j *jsiiProxy_KubernetesCluster) WindowsProfileInput() *KubernetesClusterWi
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesCluster) WorkloadIdentityEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workloadIdentityEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) WorkloadIdentityEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workloadIdentityEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
@@ -1765,6 +1789,17 @@ func (j *jsiiProxy_KubernetesCluster)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesCluster)SetWorkloadIdentityEnabled(val interface{}) {
+	if err := j.validateSetWorkloadIdentityEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workloadIdentityEnabled",
 		val,
 	)
 }
@@ -2500,6 +2535,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetWindowsProfile() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetWindowsProfile",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetWorkloadIdentityEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetWorkloadIdentityEnabled",
 		nil, // no parameters
 	)
 }

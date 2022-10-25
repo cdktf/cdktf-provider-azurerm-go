@@ -30,6 +30,9 @@ type WindowsWebAppSlot interface {
 	ClientCertificateEnabled() interface{}
 	SetClientCertificateEnabled(val interface{})
 	ClientCertificateEnabledInput() interface{}
+	ClientCertificateExclusionPaths() *string
+	SetClientCertificateExclusionPaths(val *string)
+	ClientCertificateExclusionPathsInput() *string
 	ClientCertificateMode() *string
 	SetClientCertificateMode(val *string)
 	ClientCertificateModeInput() *string
@@ -159,6 +162,7 @@ type WindowsWebAppSlot interface {
 	ResetBackup()
 	ResetClientAffinityEnabled()
 	ResetClientCertificateEnabled()
+	ResetClientCertificateExclusionPaths()
 	ResetClientCertificateMode()
 	ResetConnectionString()
 	ResetEnabled()
@@ -315,6 +319,26 @@ func (j *jsiiProxy_WindowsWebAppSlot) ClientCertificateEnabledInput() interface{
 	_jsii_.Get(
 		j,
 		"clientCertificateEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlot) ClientCertificateExclusionPaths() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificateExclusionPaths",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlot) ClientCertificateExclusionPathsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificateExclusionPathsInput",
 		&returns,
 	)
 	return returns
@@ -924,6 +948,17 @@ func (j *jsiiProxy_WindowsWebAppSlot)SetClientCertificateEnabled(val interface{}
 	)
 }
 
+func (j *jsiiProxy_WindowsWebAppSlot)SetClientCertificateExclusionPaths(val *string) {
+	if err := j.validateSetClientCertificateExclusionPathsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientCertificateExclusionPaths",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WindowsWebAppSlot)SetClientCertificateMode(val *string) {
 	if err := j.validateSetClientCertificateModeParameters(val); err != nil {
 		panic(err)
@@ -1440,6 +1475,14 @@ func (w *jsiiProxy_WindowsWebAppSlot) ResetClientCertificateEnabled() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetClientCertificateEnabled",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsWebAppSlot) ResetClientCertificateExclusionPaths() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetClientCertificateExclusionPaths",
 		nil, // no parameters
 	)
 }

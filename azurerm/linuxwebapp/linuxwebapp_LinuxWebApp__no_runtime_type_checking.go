@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package linuxwebapp
 
@@ -102,6 +101,10 @@ func (j *jsiiProxy_LinuxWebApp) validateSetClientAffinityEnabledParameters(val i
 }
 
 func (j *jsiiProxy_LinuxWebApp) validateSetClientCertificateEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LinuxWebApp) validateSetClientCertificateExclusionPathsParameters(val *string) error {
 	return nil
 }
 

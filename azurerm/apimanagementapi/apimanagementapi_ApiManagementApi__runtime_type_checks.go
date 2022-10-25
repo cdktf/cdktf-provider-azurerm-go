@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package apimanagementapi
 
@@ -112,7 +111,29 @@ func (a *jsiiProxy_ApiManagementApi) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (a *jsiiProxy_ApiManagementApi) validatePutContactParameters(value *ApiManagementApiContact) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementApi) validatePutImportParameters(value *ApiManagementApiImport) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_ApiManagementApi) validatePutLicenseParameters(value *ApiManagementApiLicense) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -401,6 +422,14 @@ func (j *jsiiProxy_ApiManagementApi) validateSetSubscriptionRequiredParameters(v
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApiManagementApi) validateSetTermsOfServiceUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

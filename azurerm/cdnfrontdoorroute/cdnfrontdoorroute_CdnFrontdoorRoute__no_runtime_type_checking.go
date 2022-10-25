@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package cdnfrontdoorroute
 
@@ -65,6 +64,10 @@ func validateCdnFrontdoorRoute_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_CdnFrontdoorRoute) validateSetCdnFrontdoorCustomDomainIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnFrontdoorRoute) validateSetCdnFrontdoorEndpointIdParameters(val *string) error {
 	return nil
 }
@@ -106,6 +109,10 @@ func (j *jsiiProxy_CdnFrontdoorRoute) validateSetIdParameters(val *string) error
 }
 
 func (j *jsiiProxy_CdnFrontdoorRoute) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_CdnFrontdoorRoute) validateSetLinkToDefaultDomainParameters(val interface{}) error {
 	return nil
 }
 

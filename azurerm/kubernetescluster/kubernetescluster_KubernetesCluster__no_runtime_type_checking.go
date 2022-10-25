@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package kubernetescluster
 
@@ -238,6 +237,10 @@ func (j *jsiiProxy_KubernetesCluster) validateSetSkuTierParameters(val *string) 
 }
 
 func (j *jsiiProxy_KubernetesCluster) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesCluster) validateSetWorkloadIdentityEnabledParameters(val interface{}) error {
 	return nil
 }
 

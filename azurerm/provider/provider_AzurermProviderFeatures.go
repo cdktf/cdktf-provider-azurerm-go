@@ -6,6 +6,10 @@ type AzurermProviderFeatures struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm#api_management AzurermProvider#api_management}
 	ApiManagement *AzurermProviderFeaturesApiManagement `field:"optional" json:"apiManagement" yaml:"apiManagement"`
+	// app_configuration block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm#app_configuration AzurermProvider#app_configuration}
+	AppConfiguration *AzurermProviderFeaturesAppConfiguration `field:"optional" json:"appConfiguration" yaml:"appConfiguration"`
 	// application_insights block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm#application_insights AzurermProvider#application_insights}

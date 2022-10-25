@@ -29,8 +29,6 @@ type CdnFrontdoorCustomDomainConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_custom_domain#tls CdnFrontdoorCustomDomain#tls}
 	Tls *CdnFrontdoorCustomDomainTls `field:"required" json:"tls" yaml:"tls"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_custom_domain#associate_with_cdn_frontdoor_route_id CdnFrontdoorCustomDomain#associate_with_cdn_frontdoor_route_id}.
-	AssociateWithCdnFrontdoorRouteId *string `field:"optional" json:"associateWithCdnFrontdoorRouteId" yaml:"associateWithCdnFrontdoorRouteId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_custom_domain#dns_zone_id CdnFrontdoorCustomDomain#dns_zone_id}.
 	DnsZoneId *string `field:"optional" json:"dnsZoneId" yaml:"dnsZoneId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_custom_domain#id CdnFrontdoorCustomDomain#id}.

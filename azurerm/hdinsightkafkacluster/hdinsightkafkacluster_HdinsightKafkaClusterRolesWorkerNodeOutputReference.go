@@ -35,6 +35,8 @@ type HdinsightKafkaClusterRolesWorkerNodeOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	ScriptActions() HdinsightKafkaClusterRolesWorkerNodeScriptActionsList
+	ScriptActionsInput() interface{}
 	SshKeys() *[]*string
 	SetSshKeys(val *[]*string)
 	SshKeysInput() *[]*string
@@ -85,7 +87,9 @@ type HdinsightKafkaClusterRolesWorkerNodeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutScriptActions(value interface{})
 	ResetPassword()
+	ResetScriptActions()
 	ResetSshKeys()
 	ResetSubnetId()
 	ResetVirtualNetworkId()
@@ -189,6 +193,26 @@ func (j *jsiiProxy_HdinsightKafkaClusterRolesWorkerNodeOutputReference) Password
 	_jsii_.Get(
 		j,
 		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightKafkaClusterRolesWorkerNodeOutputReference) ScriptActions() HdinsightKafkaClusterRolesWorkerNodeScriptActionsList {
+	var returns HdinsightKafkaClusterRolesWorkerNodeScriptActionsList
+	_jsii_.Get(
+		j,
+		"scriptActions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightKafkaClusterRolesWorkerNodeOutputReference) ScriptActionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scriptActionsInput",
 		&returns,
 	)
 	return returns
@@ -691,10 +715,29 @@ func (h *jsiiProxy_HdinsightKafkaClusterRolesWorkerNodeOutputReference) Interpol
 	return returns
 }
 
+func (h *jsiiProxy_HdinsightKafkaClusterRolesWorkerNodeOutputReference) PutScriptActions(value interface{}) {
+	if err := h.validatePutScriptActionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putScriptActions",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_HdinsightKafkaClusterRolesWorkerNodeOutputReference) ResetPassword() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HdinsightKafkaClusterRolesWorkerNodeOutputReference) ResetScriptActions() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetScriptActions",
 		nil, // no parameters
 	)
 }

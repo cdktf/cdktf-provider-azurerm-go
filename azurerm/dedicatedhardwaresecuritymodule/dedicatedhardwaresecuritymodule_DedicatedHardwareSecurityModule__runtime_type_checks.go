@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package dedicatedhardwaresecuritymodule
 
@@ -107,6 +106,17 @@ func (d *jsiiProxy_DedicatedHardwareSecurityModule) validateInterpolationForAttr
 func (d *jsiiProxy_DedicatedHardwareSecurityModule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DedicatedHardwareSecurityModule) validatePutManagementNetworkProfileParameters(value *DedicatedHardwareSecurityModuleManagementNetworkProfile) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

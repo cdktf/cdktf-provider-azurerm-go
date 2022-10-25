@@ -19,6 +19,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "contact", GoGetter: "Contact"},
+			_jsii_.MemberProperty{JsiiProperty: "contactInput", GoGetter: "ContactInput"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
@@ -44,6 +46,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isCurrent", GoGetter: "IsCurrent"},
 			_jsii_.MemberProperty{JsiiProperty: "isOnline", GoGetter: "IsOnline"},
+			_jsii_.MemberProperty{JsiiProperty: "license", GoGetter: "License"},
+			_jsii_.MemberProperty{JsiiProperty: "licenseInput", GoGetter: "LicenseInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
@@ -59,17 +63,21 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "protocolsInput", GoGetter: "ProtocolsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putContact", GoMethod: "PutContact"},
 			_jsii_.MemberMethod{JsiiMethod: "putImport", GoMethod: "PutImport"},
+			_jsii_.MemberMethod{JsiiMethod: "putLicense", GoMethod: "PutLicense"},
 			_jsii_.MemberMethod{JsiiMethod: "putOauth2Authorization", GoMethod: "PutOauth2Authorization"},
 			_jsii_.MemberMethod{JsiiMethod: "putOpenidAuthentication", GoMethod: "PutOpenidAuthentication"},
 			_jsii_.MemberMethod{JsiiMethod: "putSubscriptionKeyParameterNames", GoMethod: "PutSubscriptionKeyParameterNames"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApiType", GoMethod: "ResetApiType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetContact", GoMethod: "ResetContact"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImport", GoMethod: "ResetImport"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLicense", GoMethod: "ResetLicense"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOauth2Authorization", GoMethod: "ResetOauth2Authorization"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOpenidAuthentication", GoMethod: "ResetOpenidAuthentication"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -81,6 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSourceApiId", GoMethod: "ResetSourceApiId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubscriptionKeyParameterNames", GoMethod: "ResetSubscriptionKeyParameterNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubscriptionRequired", GoMethod: "ResetSubscriptionRequired"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTermsOfServiceUrl", GoMethod: "ResetTermsOfServiceUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVersion", GoMethod: "ResetVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVersionDescription", GoMethod: "ResetVersionDescription"},
@@ -102,6 +111,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "subscriptionRequired", GoGetter: "SubscriptionRequired"},
 			_jsii_.MemberProperty{JsiiProperty: "subscriptionRequiredInput", GoGetter: "SubscriptionRequiredInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
+			_jsii_.MemberProperty{JsiiProperty: "termsOfServiceUrl", GoGetter: "TermsOfServiceUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "termsOfServiceUrlInput", GoGetter: "TermsOfServiceUrlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
@@ -126,6 +137,51 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.apiManagementApi.ApiManagementApiConfig",
 		reflect.TypeOf((*ApiManagementApiConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.apiManagementApi.ApiManagementApiContact",
+		reflect.TypeOf((*ApiManagementApiContact)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.apiManagementApi.ApiManagementApiContactOutputReference",
+		reflect.TypeOf((*ApiManagementApiContactOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "email", GoGetter: "Email"},
+			_jsii_.MemberProperty{JsiiProperty: "emailInput", GoGetter: "EmailInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEmail", GoMethod: "ResetEmail"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUrl", GoMethod: "ResetUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
+			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ApiManagementApiContactOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.apiManagementApi.ApiManagementApiImport",
@@ -207,6 +263,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApiManagementApiImportWsdlSelectorOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.apiManagementApi.ApiManagementApiLicense",
+		reflect.TypeOf((*ApiManagementApiLicense)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.apiManagementApi.ApiManagementApiLicenseOutputReference",
+		reflect.TypeOf((*ApiManagementApiLicenseOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUrl", GoMethod: "ResetUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
+			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ApiManagementApiLicenseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -37,6 +37,8 @@ type StreamAnalyticsOutputServicebusQueueConfig struct {
 	SharedAccessPolicyName *string `field:"required" json:"sharedAccessPolicyName" yaml:"sharedAccessPolicyName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_servicebus_queue#stream_analytics_job_name StreamAnalyticsOutputServicebusQueue#stream_analytics_job_name}.
 	StreamAnalyticsJobName *string `field:"required" json:"streamAnalyticsJobName" yaml:"streamAnalyticsJobName"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_servicebus_queue#authentication_mode StreamAnalyticsOutputServicebusQueue#authentication_mode}.
+	AuthenticationMode *string `field:"optional" json:"authenticationMode" yaml:"authenticationMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_servicebus_queue#id StreamAnalyticsOutputServicebusQueue#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

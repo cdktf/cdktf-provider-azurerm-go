@@ -68,6 +68,10 @@ type StorageAccountConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#identity StorageAccount#identity}
 	Identity *StorageAccountIdentity `field:"optional" json:"identity" yaml:"identity"`
+	// immutability_policy block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#immutability_policy StorageAccount#immutability_policy}
+	ImmutabilityPolicy *StorageAccountImmutabilityPolicy `field:"optional" json:"immutabilityPolicy" yaml:"immutabilityPolicy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#infrastructure_encryption_enabled StorageAccount#infrastructure_encryption_enabled}.
 	InfrastructureEncryptionEnabled interface{} `field:"optional" json:"infrastructureEncryptionEnabled" yaml:"infrastructureEncryptionEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#is_hns_enabled StorageAccount#is_hns_enabled}.

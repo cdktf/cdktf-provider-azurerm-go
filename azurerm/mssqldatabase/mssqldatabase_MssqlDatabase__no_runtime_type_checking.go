@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package mssqldatabase
 
@@ -50,6 +49,10 @@ func (m *jsiiProxy_MssqlDatabase) validateInterpolationForAttributeParameters(te
 }
 
 func (m *jsiiProxy_MssqlDatabase) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlDatabase) validatePutImportParameters(value *MssqlDatabaseImport) error {
 	return nil
 }
 

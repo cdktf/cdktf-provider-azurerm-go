@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package streamanalyticsoutputservicebusqueue
 
@@ -62,6 +61,10 @@ func (s *jsiiProxy_StreamAnalyticsOutputServicebusQueue) validatePutTimeoutsPara
 }
 
 func validateStreamAnalyticsOutputServicebusQueue_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_StreamAnalyticsOutputServicebusQueue) validateSetAuthenticationModeParameters(val *string) error {
 	return nil
 }
 

@@ -20,6 +20,7 @@ type DataAzurermLinuxWebApp interface {
 	CdktfStack() cdktf.TerraformStack
 	ClientAffinityEnabled() cdktf.IResolvable
 	ClientCertificateEnabled() cdktf.IResolvable
+	ClientCertificateExclusionPaths() *string
 	ClientCertificateMode() *string
 	ConnectionString() DataAzurermLinuxWebAppConnectionStringList
 	// Experimental.
@@ -200,6 +201,16 @@ func (j *jsiiProxy_DataAzurermLinuxWebApp) ClientCertificateEnabled() cdktf.IRes
 	_jsii_.Get(
 		j,
 		"clientCertificateEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLinuxWebApp) ClientCertificateExclusionPaths() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificateExclusionPaths",
 		&returns,
 	)
 	return returns

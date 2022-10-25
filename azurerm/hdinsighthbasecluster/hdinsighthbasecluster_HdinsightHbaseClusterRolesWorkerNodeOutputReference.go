@@ -34,6 +34,8 @@ type HdinsightHbaseClusterRolesWorkerNodeOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	ScriptActions() HdinsightHbaseClusterRolesWorkerNodeScriptActionsList
+	ScriptActionsInput() interface{}
 	SshKeys() *[]*string
 	SetSshKeys(val *[]*string)
 	SshKeysInput() *[]*string
@@ -85,8 +87,10 @@ type HdinsightHbaseClusterRolesWorkerNodeOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAutoscale(value *HdinsightHbaseClusterRolesWorkerNodeAutoscale)
+	PutScriptActions(value interface{})
 	ResetAutoscale()
 	ResetPassword()
+	ResetScriptActions()
 	ResetSshKeys()
 	ResetSubnetId()
 	ResetVirtualNetworkId()
@@ -190,6 +194,26 @@ func (j *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeOutputReference) Password
 	_jsii_.Get(
 		j,
 		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeOutputReference) ScriptActions() HdinsightHbaseClusterRolesWorkerNodeScriptActionsList {
+	var returns HdinsightHbaseClusterRolesWorkerNodeScriptActionsList
+	_jsii_.Get(
+		j,
+		"scriptActions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeOutputReference) ScriptActionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scriptActionsInput",
 		&returns,
 	)
 	return returns
@@ -692,6 +716,17 @@ func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeOutputReference) PutAutos
 	)
 }
 
+func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeOutputReference) PutScriptActions(value interface{}) {
+	if err := h.validatePutScriptActionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putScriptActions",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeOutputReference) ResetAutoscale() {
 	_jsii_.InvokeVoid(
 		h,
@@ -704,6 +739,14 @@ func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeOutputReference) ResetPas
 	_jsii_.InvokeVoid(
 		h,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeOutputReference) ResetScriptActions() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetScriptActions",
 		nil, // no parameters
 	)
 }

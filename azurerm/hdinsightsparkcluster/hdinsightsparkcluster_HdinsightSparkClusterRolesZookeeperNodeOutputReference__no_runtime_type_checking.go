@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package hdinsightsparkcluster
 
@@ -42,6 +41,10 @@ func (h *jsiiProxy_HdinsightSparkClusterRolesZookeeperNodeOutputReference) valid
 }
 
 func (h *jsiiProxy_HdinsightSparkClusterRolesZookeeperNodeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HdinsightSparkClusterRolesZookeeperNodeOutputReference) validatePutScriptActionsParameters(value interface{}) error {
 	return nil
 }
 

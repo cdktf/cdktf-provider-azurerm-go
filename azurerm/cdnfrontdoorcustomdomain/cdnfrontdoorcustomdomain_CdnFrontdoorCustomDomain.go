@@ -12,9 +12,6 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_custom_domain azurerm_cdn_frontdoor_custom_domain}.
 type CdnFrontdoorCustomDomain interface {
 	cdktf.TerraformResource
-	AssociateWithCdnFrontdoorRouteId() *string
-	SetAssociateWithCdnFrontdoorRouteId(val *string)
-	AssociateWithCdnFrontdoorRouteIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CdnFrontdoorProfileId() *string
@@ -109,7 +106,6 @@ type CdnFrontdoorCustomDomain interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *CdnFrontdoorCustomDomainTimeouts)
 	PutTls(value *CdnFrontdoorCustomDomainTls)
-	ResetAssociateWithCdnFrontdoorRouteId()
 	ResetDnsZoneId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -129,26 +125,6 @@ type CdnFrontdoorCustomDomain interface {
 // The jsii proxy struct for CdnFrontdoorCustomDomain
 type jsiiProxy_CdnFrontdoorCustomDomain struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_CdnFrontdoorCustomDomain) AssociateWithCdnFrontdoorRouteId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"associateWithCdnFrontdoorRouteId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CdnFrontdoorCustomDomain) AssociateWithCdnFrontdoorRouteIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"associateWithCdnFrontdoorRouteIdInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_CdnFrontdoorCustomDomain) CdktfStack() cdktf.TerraformStack {
@@ -498,17 +474,6 @@ func NewCdnFrontdoorCustomDomain_Override(c CdnFrontdoorCustomDomain, scope cons
 		"@cdktf/provider-azurerm.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomain",
 		[]interface{}{scope, id, config},
 		c,
-	)
-}
-
-func (j *jsiiProxy_CdnFrontdoorCustomDomain)SetAssociateWithCdnFrontdoorRouteId(val *string) {
-	if err := j.validateSetAssociateWithCdnFrontdoorRouteIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"associateWithCdnFrontdoorRouteId",
-		val,
 	)
 }
 
@@ -879,14 +844,6 @@ func (c *jsiiProxy_CdnFrontdoorCustomDomain) PutTls(value *CdnFrontdoorCustomDom
 		c,
 		"putTls",
 		[]interface{}{value},
-	)
-}
-
-func (c *jsiiProxy_CdnFrontdoorCustomDomain) ResetAssociateWithCdnFrontdoorRouteId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetAssociateWithCdnFrontdoorRouteId",
-		nil, // no parameters
 	)
 }
 

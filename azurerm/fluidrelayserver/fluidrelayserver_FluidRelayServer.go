@@ -55,6 +55,7 @@ type FluidRelayServer interface {
 	// The tree node.
 	Node() constructs.Node
 	OrdererEndpoints() *[]*string
+	PrimaryKey() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -68,6 +69,8 @@ type FluidRelayServer interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	SecondaryKey() *string
+	ServiceEndpoints() *[]*string
 	StorageEndpoints() *[]*string
 	StorageSku() *string
 	SetStorageSku(val *string)
@@ -333,6 +336,16 @@ func (j *jsiiProxy_FluidRelayServer) OrdererEndpoints() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_FluidRelayServer) PrimaryKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryKey",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FluidRelayServer) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -378,6 +391,26 @@ func (j *jsiiProxy_FluidRelayServer) ResourceGroupNameInput() *string {
 	_jsii_.Get(
 		j,
 		"resourceGroupNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FluidRelayServer) SecondaryKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FluidRelayServer) ServiceEndpoints() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"serviceEndpoints",
 		&returns,
 	)
 	return returns

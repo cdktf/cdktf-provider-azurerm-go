@@ -18,6 +18,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "clientAffinityEnabled", GoGetter: "ClientAffinityEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "clientCertificateEnabled", GoGetter: "ClientCertificateEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "clientCertificateExclusionPaths", GoGetter: "ClientCertificateExclusionPaths"},
 			_jsii_.MemberProperty{JsiiProperty: "clientCertificateMode", GoGetter: "ClientCertificateMode"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionString", GoGetter: "ConnectionString"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},

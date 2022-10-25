@@ -19,6 +19,7 @@ type DataAzurermWindowsFunctionApp interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientCertificateEnabled() cdktf.IResolvable
+	ClientCertificateExclusionPaths() *string
 	ClientCertificateMode() *string
 	ConnectionString() DataAzurermWindowsFunctionAppConnectionStringList
 	// Experimental.
@@ -193,6 +194,16 @@ func (j *jsiiProxy_DataAzurermWindowsFunctionApp) ClientCertificateEnabled() cdk
 	_jsii_.Get(
 		j,
 		"clientCertificateEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermWindowsFunctionApp) ClientCertificateExclusionPaths() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificateExclusionPaths",
 		&returns,
 	)
 	return returns

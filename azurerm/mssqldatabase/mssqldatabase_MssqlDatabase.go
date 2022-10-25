@@ -57,6 +57,8 @@ type MssqlDatabase interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Import() MssqlDatabaseImportOutputReference
+	ImportInput() *MssqlDatabaseImport
 	LedgerEnabled() interface{}
 	SetLedgerEnabled(val interface{})
 	LedgerEnabledInput() interface{}
@@ -166,6 +168,7 @@ type MssqlDatabase interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutImport(value *MssqlDatabaseImport)
 	PutLongTermRetentionPolicy(value *MssqlDatabaseLongTermRetentionPolicy)
 	PutShortTermRetentionPolicy(value *MssqlDatabaseShortTermRetentionPolicy)
 	PutThreatDetectionPolicy(value *MssqlDatabaseThreatDetectionPolicy)
@@ -177,6 +180,7 @@ type MssqlDatabase interface {
 	ResetElasticPoolId()
 	ResetGeoBackupEnabled()
 	ResetId()
+	ResetImport()
 	ResetLedgerEnabled()
 	ResetLicenseType()
 	ResetLongTermRetentionPolicy()
@@ -430,6 +434,26 @@ func (j *jsiiProxy_MssqlDatabase) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlDatabase) Import() MssqlDatabaseImportOutputReference {
+	var returns MssqlDatabaseImportOutputReference
+	_jsii_.Get(
+		j,
+		"import",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlDatabase) ImportInput() *MssqlDatabaseImport {
+	var returns *MssqlDatabaseImport
+	_jsii_.Get(
+		j,
+		"importInput",
 		&returns,
 	)
 	return returns
@@ -1553,6 +1577,17 @@ func (m *jsiiProxy_MssqlDatabase) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (m *jsiiProxy_MssqlDatabase) PutImport(value *MssqlDatabaseImport) {
+	if err := m.validatePutImportParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putImport",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MssqlDatabase) PutLongTermRetentionPolicy(value *MssqlDatabaseLongTermRetentionPolicy) {
 	if err := m.validatePutLongTermRetentionPolicyParameters(value); err != nil {
 		panic(err)
@@ -1649,6 +1684,14 @@ func (m *jsiiProxy_MssqlDatabase) ResetId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlDatabase) ResetImport() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetImport",
 		nil, // no parameters
 	)
 }

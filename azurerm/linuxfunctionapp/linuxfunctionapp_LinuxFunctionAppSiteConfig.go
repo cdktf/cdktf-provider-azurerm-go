@@ -104,7 +104,7 @@ type LinuxFunctionAppSiteConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app#remote_debugging_enabled LinuxFunctionApp#remote_debugging_enabled}
 	RemoteDebuggingEnabled interface{} `field:"optional" json:"remoteDebuggingEnabled" yaml:"remoteDebuggingEnabled"`
-	// The Remote Debugging Version. Possible values include `VS2017` and `VS2019`.
+	// The Remote Debugging Version. Possible values include `VS2017`, `VS2019`, and `VS2022``.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app#remote_debugging_version LinuxFunctionApp#remote_debugging_version}
 	RemoteDebuggingVersion *string `field:"optional" json:"remoteDebuggingVersion" yaml:"remoteDebuggingVersion"`

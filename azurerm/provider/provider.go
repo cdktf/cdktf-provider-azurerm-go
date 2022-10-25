@@ -116,6 +116,10 @@ func init() {
 		reflect.TypeOf((*AzurermProviderFeaturesApiManagement)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration",
+		reflect.TypeOf((*AzurermProviderFeaturesAppConfiguration)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights",
 		reflect.TypeOf((*AzurermProviderFeaturesApplicationInsights)(nil)).Elem(),
 	)

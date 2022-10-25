@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package hdinsighthadoopcluster
 
@@ -42,6 +41,10 @@ func (h *jsiiProxy_HdinsightHadoopClusterRolesHeadNodeOutputReference) validateG
 }
 
 func (h *jsiiProxy_HdinsightHadoopClusterRolesHeadNodeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HdinsightHadoopClusterRolesHeadNodeOutputReference) validatePutScriptActionsParameters(value interface{}) error {
 	return nil
 }
 

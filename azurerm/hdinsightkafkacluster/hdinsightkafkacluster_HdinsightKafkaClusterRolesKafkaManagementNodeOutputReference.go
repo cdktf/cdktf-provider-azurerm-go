@@ -32,6 +32,8 @@ type HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	ScriptActions() HdinsightKafkaClusterRolesKafkaManagementNodeScriptActionsList
+	ScriptActionsInput() interface{}
 	SshKeys() *[]*string
 	SetSshKeys(val *[]*string)
 	SshKeysInput() *[]*string
@@ -79,7 +81,9 @@ type HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutScriptActions(value interface{})
 	ResetPassword()
+	ResetScriptActions()
 	ResetSshKeys()
 	ResetSubnetId()
 	ResetVirtualNetworkId()
@@ -163,6 +167,26 @@ func (j *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference)
 	_jsii_.Get(
 		j,
 		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference) ScriptActions() HdinsightKafkaClusterRolesKafkaManagementNodeScriptActionsList {
+	var returns HdinsightKafkaClusterRolesKafkaManagementNodeScriptActionsList
+	_jsii_.Get(
+		j,
+		"scriptActions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference) ScriptActionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scriptActionsInput",
 		&returns,
 	)
 	return returns
@@ -623,10 +647,29 @@ func (h *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference)
 	return returns
 }
 
+func (h *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference) PutScriptActions(value interface{}) {
+	if err := h.validatePutScriptActionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putScriptActions",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference) ResetPassword() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference) ResetScriptActions() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetScriptActions",
 		nil, // no parameters
 	)
 }

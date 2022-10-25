@@ -34,6 +34,8 @@ type HdinsightSparkClusterRolesWorkerNodeOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	ScriptActions() HdinsightSparkClusterRolesWorkerNodeScriptActionsList
+	ScriptActionsInput() interface{}
 	SshKeys() *[]*string
 	SetSshKeys(val *[]*string)
 	SshKeysInput() *[]*string
@@ -85,8 +87,10 @@ type HdinsightSparkClusterRolesWorkerNodeOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAutoscale(value *HdinsightSparkClusterRolesWorkerNodeAutoscale)
+	PutScriptActions(value interface{})
 	ResetAutoscale()
 	ResetPassword()
+	ResetScriptActions()
 	ResetSshKeys()
 	ResetSubnetId()
 	ResetVirtualNetworkId()
@@ -190,6 +194,26 @@ func (j *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeOutputReference) Password
 	_jsii_.Get(
 		j,
 		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeOutputReference) ScriptActions() HdinsightSparkClusterRolesWorkerNodeScriptActionsList {
+	var returns HdinsightSparkClusterRolesWorkerNodeScriptActionsList
+	_jsii_.Get(
+		j,
+		"scriptActions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeOutputReference) ScriptActionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scriptActionsInput",
 		&returns,
 	)
 	return returns
@@ -692,6 +716,17 @@ func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeOutputReference) PutAutos
 	)
 }
 
+func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeOutputReference) PutScriptActions(value interface{}) {
+	if err := h.validatePutScriptActionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putScriptActions",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeOutputReference) ResetAutoscale() {
 	_jsii_.InvokeVoid(
 		h,
@@ -704,6 +739,14 @@ func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeOutputReference) ResetPas
 	_jsii_.InvokeVoid(
 		h,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeOutputReference) ResetScriptActions() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetScriptActions",
 		nil, // no parameters
 	)
 }

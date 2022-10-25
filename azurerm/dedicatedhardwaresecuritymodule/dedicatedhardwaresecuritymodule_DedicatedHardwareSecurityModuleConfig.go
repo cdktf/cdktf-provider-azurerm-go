@@ -36,6 +36,10 @@ type DedicatedHardwareSecurityModuleConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// management_network_profile block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/dedicated_hardware_security_module#management_network_profile DedicatedHardwareSecurityModule#management_network_profile}
+	ManagementNetworkProfile *DedicatedHardwareSecurityModuleManagementNetworkProfile `field:"optional" json:"managementNetworkProfile" yaml:"managementNetworkProfile"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/dedicated_hardware_security_module#stamp_id DedicatedHardwareSecurityModule#stamp_id}.
 	StampId *string `field:"optional" json:"stampId" yaml:"stampId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/dedicated_hardware_security_module#tags DedicatedHardwareSecurityModule#tags}.

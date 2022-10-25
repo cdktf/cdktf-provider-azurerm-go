@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package windowsfunctionappslot
 
@@ -90,6 +89,10 @@ func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetBuiltinLoggingEnabledParam
 }
 
 func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetClientCertificateEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetClientCertificateExclusionPathsParameters(val *string) error {
 	return nil
 }
 

@@ -76,6 +76,8 @@ type StorageAccount interface {
 	Identity() StorageAccountIdentityOutputReference
 	IdentityInput() *StorageAccountIdentity
 	IdInput() *string
+	ImmutabilityPolicy() StorageAccountImmutabilityPolicyOutputReference
+	ImmutabilityPolicyInput() *StorageAccountImmutabilityPolicy
 	InfrastructureEncryptionEnabled() interface{}
 	SetInfrastructureEncryptionEnabled(val interface{})
 	InfrastructureEncryptionEnabledInput() interface{}
@@ -211,6 +213,7 @@ type StorageAccount interface {
 	PutCustomDomain(value *StorageAccountCustomDomain)
 	PutCustomerManagedKey(value *StorageAccountCustomerManagedKey)
 	PutIdentity(value *StorageAccountIdentity)
+	PutImmutabilityPolicy(value *StorageAccountImmutabilityPolicy)
 	PutNetworkRules(value *StorageAccountNetworkRules)
 	PutQueueProperties(value *StorageAccountQueueProperties)
 	PutRouting(value *StorageAccountRouting)
@@ -230,6 +233,7 @@ type StorageAccount interface {
 	ResetEnableHttpsTrafficOnly()
 	ResetId()
 	ResetIdentity()
+	ResetImmutabilityPolicy()
 	ResetInfrastructureEncryptionEnabled()
 	ResetIsHnsEnabled()
 	ResetLargeFileShareEnabled()
@@ -639,6 +643,26 @@ func (j *jsiiProxy_StorageAccount) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) ImmutabilityPolicy() StorageAccountImmutabilityPolicyOutputReference {
+	var returns StorageAccountImmutabilityPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"immutabilityPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) ImmutabilityPolicyInput() *StorageAccountImmutabilityPolicy {
+	var returns *StorageAccountImmutabilityPolicy
+	_jsii_.Get(
+		j,
+		"immutabilityPolicyInput",
 		&returns,
 	)
 	return returns
@@ -2055,6 +2079,17 @@ func (s *jsiiProxy_StorageAccount) PutIdentity(value *StorageAccountIdentity) {
 	)
 }
 
+func (s *jsiiProxy_StorageAccount) PutImmutabilityPolicy(value *StorageAccountImmutabilityPolicy) {
+	if err := s.validatePutImmutabilityPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putImmutabilityPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StorageAccount) PutNetworkRules(value *StorageAccountNetworkRules) {
 	if err := s.validatePutNetworkRulesParameters(value); err != nil {
 		panic(err)
@@ -2221,6 +2256,14 @@ func (s *jsiiProxy_StorageAccount) ResetIdentity() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageAccount) ResetImmutabilityPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetImmutabilityPolicy",
 		nil, // no parameters
 	)
 }

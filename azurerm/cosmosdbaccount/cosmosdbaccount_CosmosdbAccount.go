@@ -119,6 +119,8 @@ type CosmosdbAccount interface {
 	OfferTypeInput() *string
 	PrimaryKey() *string
 	PrimaryReadonlyKey() *string
+	PrimaryReadonlySqlConnectionString() *string
+	PrimarySqlConnectionString() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -140,6 +142,8 @@ type CosmosdbAccount interface {
 	RestoreInput() *CosmosdbAccountRestore
 	SecondaryKey() *string
 	SecondaryReadonlyKey() *string
+	SecondaryReadonlySqlConnectionString() *string
+	SecondarySqlConnectionString() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -915,6 +919,26 @@ func (j *jsiiProxy_CosmosdbAccount) PrimaryReadonlyKey() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CosmosdbAccount) PrimaryReadonlySqlConnectionString() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryReadonlySqlConnectionString",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccount) PrimarySqlConnectionString() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primarySqlConnectionString",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CosmosdbAccount) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -1030,6 +1054,26 @@ func (j *jsiiProxy_CosmosdbAccount) SecondaryReadonlyKey() *string {
 	_jsii_.Get(
 		j,
 		"secondaryReadonlyKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccount) SecondaryReadonlySqlConnectionString() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryReadonlySqlConnectionString",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccount) SecondarySqlConnectionString() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondarySqlConnectionString",
 		&returns,
 	)
 	return returns

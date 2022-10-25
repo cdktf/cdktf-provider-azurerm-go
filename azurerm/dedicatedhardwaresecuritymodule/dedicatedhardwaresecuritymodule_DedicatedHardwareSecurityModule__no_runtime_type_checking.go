@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dedicatedhardwaresecuritymodule
 
@@ -50,6 +49,10 @@ func (d *jsiiProxy_DedicatedHardwareSecurityModule) validateInterpolationForAttr
 }
 
 func (d *jsiiProxy_DedicatedHardwareSecurityModule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DedicatedHardwareSecurityModule) validatePutManagementNetworkProfileParameters(value *DedicatedHardwareSecurityModuleManagementNetworkProfile) error {
 	return nil
 }
 

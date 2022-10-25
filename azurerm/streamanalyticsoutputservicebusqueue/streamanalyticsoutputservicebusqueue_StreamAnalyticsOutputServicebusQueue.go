@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_servicebus_queue azurerm_stream_analytics_output_servicebus_queue}.
 type StreamAnalyticsOutputServicebusQueue interface {
 	cdktf.TerraformResource
+	AuthenticationMode() *string
+	SetAuthenticationMode(val *string)
+	AuthenticationModeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -119,6 +122,7 @@ type StreamAnalyticsOutputServicebusQueue interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutSerialization(value *StreamAnalyticsOutputServicebusQueueSerialization)
 	PutTimeouts(value *StreamAnalyticsOutputServicebusQueueTimeouts)
+	ResetAuthenticationMode()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -139,6 +143,26 @@ type StreamAnalyticsOutputServicebusQueue interface {
 // The jsii proxy struct for StreamAnalyticsOutputServicebusQueue
 type jsiiProxy_StreamAnalyticsOutputServicebusQueue struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_StreamAnalyticsOutputServicebusQueue) AuthenticationMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamAnalyticsOutputServicebusQueue) AuthenticationModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationModeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_StreamAnalyticsOutputServicebusQueue) CdktfStack() cdktf.TerraformStack {
@@ -571,6 +595,17 @@ func NewStreamAnalyticsOutputServicebusQueue_Override(s StreamAnalyticsOutputSer
 	)
 }
 
+func (j *jsiiProxy_StreamAnalyticsOutputServicebusQueue)SetAuthenticationMode(val *string) {
+	if err := j.validateSetAuthenticationModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authenticationMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_StreamAnalyticsOutputServicebusQueue)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -993,6 +1028,14 @@ func (s *jsiiProxy_StreamAnalyticsOutputServicebusQueue) PutTimeouts(value *Stre
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StreamAnalyticsOutputServicebusQueue) ResetAuthenticationMode() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAuthenticationMode",
+		nil, // no parameters
 	)
 }
 

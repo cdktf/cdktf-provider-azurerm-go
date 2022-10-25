@@ -46,6 +46,9 @@ type StorageManagementPolicyRuleActionsSnapshotOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TierToArchiveAfterDaysSinceLastTierChangeGreaterThan() *float64
+	SetTierToArchiveAfterDaysSinceLastTierChangeGreaterThan(val *float64)
+	TierToArchiveAfterDaysSinceLastTierChangeGreaterThanInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,6 +76,7 @@ type StorageManagementPolicyRuleActionsSnapshotOutputReference interface {
 	ResetChangeTierToArchiveAfterDaysSinceCreation()
 	ResetChangeTierToCoolAfterDaysSinceCreation()
 	ResetDeleteAfterDaysSinceCreationGreaterThan()
+	ResetTierToArchiveAfterDaysSinceLastTierChangeGreaterThan()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -218,6 +222,26 @@ func (j *jsiiProxy_StorageManagementPolicyRuleActionsSnapshotOutputReference) Te
 	return returns
 }
 
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsSnapshotOutputReference) TierToArchiveAfterDaysSinceLastTierChangeGreaterThan() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tierToArchiveAfterDaysSinceLastTierChangeGreaterThan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsSnapshotOutputReference) TierToArchiveAfterDaysSinceLastTierChangeGreaterThanInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tierToArchiveAfterDaysSinceLastTierChangeGreaterThanInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewStorageManagementPolicyRuleActionsSnapshotOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageManagementPolicyRuleActionsSnapshotOutputReference {
 	_init_.Initialize()
@@ -330,6 +354,17 @@ func (j *jsiiProxy_StorageManagementPolicyRuleActionsSnapshotOutputReference)Set
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsSnapshotOutputReference)SetTierToArchiveAfterDaysSinceLastTierChangeGreaterThan(val *float64) {
+	if err := j.validateSetTierToArchiveAfterDaysSinceLastTierChangeGreaterThanParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tierToArchiveAfterDaysSinceLastTierChangeGreaterThan",
 		val,
 	)
 }
@@ -540,6 +575,14 @@ func (s *jsiiProxy_StorageManagementPolicyRuleActionsSnapshotOutputReference) Re
 	_jsii_.InvokeVoid(
 		s,
 		"resetDeleteAfterDaysSinceCreationGreaterThan",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageManagementPolicyRuleActionsSnapshotOutputReference) ResetTierToArchiveAfterDaysSinceLastTierChangeGreaterThan() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTierToArchiveAfterDaysSinceLastTierChangeGreaterThan",
 		nil, // no parameters
 	)
 }

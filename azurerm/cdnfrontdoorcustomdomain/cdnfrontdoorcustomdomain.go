@@ -12,8 +12,6 @@ func init() {
 		reflect.TypeOf((*CdnFrontdoorCustomDomain)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "associateWithCdnFrontdoorRouteId", GoGetter: "AssociateWithCdnFrontdoorRouteId"},
-			_jsii_.MemberProperty{JsiiProperty: "associateWithCdnFrontdoorRouteIdInput", GoGetter: "AssociateWithCdnFrontdoorRouteIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "cdnFrontdoorProfileId", GoGetter: "CdnFrontdoorProfileId"},
 			_jsii_.MemberProperty{JsiiProperty: "cdnFrontdoorProfileIdInput", GoGetter: "CdnFrontdoorProfileIdInput"},
@@ -51,7 +49,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putTls", GoMethod: "PutTls"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAssociateWithCdnFrontdoorRouteId", GoMethod: "ResetAssociateWithCdnFrontdoorRouteId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsZoneId", GoMethod: "ResetDnsZoneId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},

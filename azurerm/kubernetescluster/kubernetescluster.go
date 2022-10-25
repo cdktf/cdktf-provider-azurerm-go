@@ -172,6 +172,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWindowsProfile", GoMethod: "ResetWindowsProfile"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadIdentityEnabled", GoMethod: "ResetWorkloadIdentityEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "roleBasedAccessControlEnabled", GoGetter: "RoleBasedAccessControlEnabled"},
@@ -195,6 +196,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "windowsProfile", GoGetter: "WindowsProfile"},
 			_jsii_.MemberProperty{JsiiProperty: "windowsProfileInput", GoGetter: "WindowsProfileInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityEnabled", GoGetter: "WorkloadIdentityEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityEnabledInput", GoGetter: "WorkloadIdentityEnabledInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_KubernetesCluster{}

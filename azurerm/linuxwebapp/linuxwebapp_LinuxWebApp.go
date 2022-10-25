@@ -27,6 +27,9 @@ type LinuxWebApp interface {
 	ClientCertificateEnabled() interface{}
 	SetClientCertificateEnabled(val interface{})
 	ClientCertificateEnabledInput() interface{}
+	ClientCertificateExclusionPaths() *string
+	SetClientCertificateExclusionPaths(val *string)
+	ClientCertificateExclusionPathsInput() *string
 	ClientCertificateMode() *string
 	SetClientCertificateMode(val *string)
 	ClientCertificateModeInput() *string
@@ -168,6 +171,7 @@ type LinuxWebApp interface {
 	ResetBackup()
 	ResetClientAffinityEnabled()
 	ResetClientCertificateEnabled()
+	ResetClientCertificateExclusionPaths()
 	ResetClientCertificateMode()
 	ResetConnectionString()
 	ResetEnabled()
@@ -305,6 +309,26 @@ func (j *jsiiProxy_LinuxWebApp) ClientCertificateEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"clientCertificateEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxWebApp) ClientCertificateExclusionPaths() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificateExclusionPaths",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxWebApp) ClientCertificateExclusionPathsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificateExclusionPathsInput",
 		&returns,
 	)
 	return returns
@@ -983,6 +1007,17 @@ func (j *jsiiProxy_LinuxWebApp)SetClientCertificateEnabled(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_LinuxWebApp)SetClientCertificateExclusionPaths(val *string) {
+	if err := j.validateSetClientCertificateExclusionPathsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientCertificateExclusionPaths",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LinuxWebApp)SetClientCertificateMode(val *string) {
 	if err := j.validateSetClientCertificateModeParameters(val); err != nil {
 		panic(err)
@@ -1543,6 +1578,14 @@ func (l *jsiiProxy_LinuxWebApp) ResetClientCertificateEnabled() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetClientCertificateEnabled",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxWebApp) ResetClientCertificateExclusionPaths() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetClientCertificateExclusionPaths",
 		nil, // no parameters
 	)
 }

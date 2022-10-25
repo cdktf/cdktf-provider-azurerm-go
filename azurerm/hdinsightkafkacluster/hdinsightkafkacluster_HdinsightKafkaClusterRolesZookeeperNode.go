@@ -8,6 +8,10 @@ type HdinsightKafkaClusterRolesZookeeperNode struct {
 	VmSize *string `field:"required" json:"vmSize" yaml:"vmSize"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_kafka_cluster#password HdinsightKafkaCluster#password}.
 	Password *string `field:"optional" json:"password" yaml:"password"`
+	// script_actions block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_kafka_cluster#script_actions HdinsightKafkaCluster#script_actions}
+	ScriptActions interface{} `field:"optional" json:"scriptActions" yaml:"scriptActions"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_kafka_cluster#ssh_keys HdinsightKafkaCluster#ssh_keys}.
 	SshKeys *[]*string `field:"optional" json:"sshKeys" yaml:"sshKeys"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_kafka_cluster#subnet_id HdinsightKafkaCluster#subnet_id}.

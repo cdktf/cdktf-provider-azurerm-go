@@ -35,6 +35,8 @@ type CdnFrontdoorRouteConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_route#cache CdnFrontdoorRoute#cache}
 	Cache *CdnFrontdoorRouteCache `field:"optional" json:"cache" yaml:"cache"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_route#cdn_frontdoor_custom_domain_ids CdnFrontdoorRoute#cdn_frontdoor_custom_domain_ids}.
+	CdnFrontdoorCustomDomainIds *[]*string `field:"optional" json:"cdnFrontdoorCustomDomainIds" yaml:"cdnFrontdoorCustomDomainIds"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_route#cdn_frontdoor_origin_path CdnFrontdoorRoute#cdn_frontdoor_origin_path}.
 	CdnFrontdoorOriginPath *string `field:"optional" json:"cdnFrontdoorOriginPath" yaml:"cdnFrontdoorOriginPath"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_route#cdn_frontdoor_rule_set_ids CdnFrontdoorRoute#cdn_frontdoor_rule_set_ids}.
@@ -50,6 +52,8 @@ type CdnFrontdoorRouteConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_route#link_to_default_domain CdnFrontdoorRoute#link_to_default_domain}.
+	LinkToDefaultDomain interface{} `field:"optional" json:"linkToDefaultDomain" yaml:"linkToDefaultDomain"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_route#timeouts CdnFrontdoorRoute#timeouts}

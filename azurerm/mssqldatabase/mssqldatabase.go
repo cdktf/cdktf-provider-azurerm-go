@@ -43,6 +43,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "import", GoGetter: "Import"},
+			_jsii_.MemberProperty{JsiiProperty: "importInput", GoGetter: "ImportInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ledgerEnabled", GoGetter: "LedgerEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "ledgerEnabledInput", GoGetter: "LedgerEnabledInput"},
@@ -63,6 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putImport", GoMethod: "PutImport"},
 			_jsii_.MemberMethod{JsiiMethod: "putLongTermRetentionPolicy", GoMethod: "PutLongTermRetentionPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putShortTermRetentionPolicy", GoMethod: "PutShortTermRetentionPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putThreatDetectionPolicy", GoMethod: "PutThreatDetectionPolicy"},
@@ -81,6 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetElasticPoolId", GoMethod: "ResetElasticPoolId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGeoBackupEnabled", GoMethod: "ResetGeoBackupEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetImport", GoMethod: "ResetImport"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLedgerEnabled", GoMethod: "ResetLedgerEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLicenseType", GoMethod: "ResetLicenseType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLongTermRetentionPolicy", GoMethod: "ResetLongTermRetentionPolicy"},
@@ -143,6 +147,57 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.mssqlDatabase.MssqlDatabaseConfig",
 		reflect.TypeOf((*MssqlDatabaseConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.mssqlDatabase.MssqlDatabaseImport",
+		reflect.TypeOf((*MssqlDatabaseImport)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.mssqlDatabase.MssqlDatabaseImportOutputReference",
+		reflect.TypeOf((*MssqlDatabaseImportOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "administratorLogin", GoGetter: "AdministratorLogin"},
+			_jsii_.MemberProperty{JsiiProperty: "administratorLoginInput", GoGetter: "AdministratorLoginInput"},
+			_jsii_.MemberProperty{JsiiProperty: "administratorLoginPassword", GoGetter: "AdministratorLoginPassword"},
+			_jsii_.MemberProperty{JsiiProperty: "administratorLoginPasswordInput", GoGetter: "AdministratorLoginPasswordInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authenticationType", GoGetter: "AuthenticationType"},
+			_jsii_.MemberProperty{JsiiProperty: "authenticationTypeInput", GoGetter: "AuthenticationTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStorageAccountId", GoMethod: "ResetStorageAccountId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "storageAccountId", GoGetter: "StorageAccountId"},
+			_jsii_.MemberProperty{JsiiProperty: "storageAccountIdInput", GoGetter: "StorageAccountIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "storageKey", GoGetter: "StorageKey"},
+			_jsii_.MemberProperty{JsiiProperty: "storageKeyInput", GoGetter: "StorageKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "storageKeyType", GoGetter: "StorageKeyType"},
+			_jsii_.MemberProperty{JsiiProperty: "storageKeyTypeInput", GoGetter: "StorageKeyTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "storageUri", GoGetter: "StorageUri"},
+			_jsii_.MemberProperty{JsiiProperty: "storageUriInput", GoGetter: "StorageUriInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MssqlDatabaseImportOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.mssqlDatabase.MssqlDatabaseLongTermRetentionPolicy",

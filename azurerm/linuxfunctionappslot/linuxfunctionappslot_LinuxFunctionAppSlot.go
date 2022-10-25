@@ -27,6 +27,9 @@ type LinuxFunctionAppSlot interface {
 	ClientCertificateEnabled() interface{}
 	SetClientCertificateEnabled(val interface{})
 	ClientCertificateEnabledInput() interface{}
+	ClientCertificateExclusionPaths() *string
+	SetClientCertificateExclusionPaths(val *string)
+	ClientCertificateExclusionPathsInput() *string
 	ClientCertificateMode() *string
 	SetClientCertificateMode(val *string)
 	ClientCertificateModeInput() *string
@@ -171,6 +174,7 @@ type LinuxFunctionAppSlot interface {
 	ResetBackup()
 	ResetBuiltinLoggingEnabled()
 	ResetClientCertificateEnabled()
+	ResetClientCertificateExclusionPaths()
 	ResetClientCertificateMode()
 	ResetConnectionString()
 	ResetContentShareForceDisabled()
@@ -311,6 +315,26 @@ func (j *jsiiProxy_LinuxFunctionAppSlot) ClientCertificateEnabledInput() interfa
 	_jsii_.Get(
 		j,
 		"clientCertificateEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxFunctionAppSlot) ClientCertificateExclusionPaths() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificateExclusionPaths",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxFunctionAppSlot) ClientCertificateExclusionPathsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificateExclusionPathsInput",
 		&returns,
 	)
 	return returns
@@ -1009,6 +1033,17 @@ func (j *jsiiProxy_LinuxFunctionAppSlot)SetClientCertificateEnabled(val interfac
 	)
 }
 
+func (j *jsiiProxy_LinuxFunctionAppSlot)SetClientCertificateExclusionPaths(val *string) {
+	if err := j.validateSetClientCertificateExclusionPathsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientCertificateExclusionPaths",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LinuxFunctionAppSlot)SetClientCertificateMode(val *string) {
 	if err := j.validateSetClientCertificateModeParameters(val); err != nil {
 		panic(err)
@@ -1580,6 +1615,14 @@ func (l *jsiiProxy_LinuxFunctionAppSlot) ResetClientCertificateEnabled() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetClientCertificateEnabled",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxFunctionAppSlot) ResetClientCertificateExclusionPaths() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetClientCertificateExclusionPaths",
 		nil, // no parameters
 	)
 }

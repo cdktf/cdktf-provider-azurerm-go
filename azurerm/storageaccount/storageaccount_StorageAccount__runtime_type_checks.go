@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package storageaccount
 
@@ -157,6 +156,17 @@ func (s *jsiiProxy_StorageAccount) validatePutCustomerManagedKeyParameters(value
 }
 
 func (s *jsiiProxy_StorageAccount) validatePutIdentityParameters(value *StorageAccountIdentity) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_StorageAccount) validatePutImmutabilityPolicyParameters(value *StorageAccountImmutabilityPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

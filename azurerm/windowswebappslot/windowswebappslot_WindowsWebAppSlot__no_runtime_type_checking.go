@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package windowswebappslot
 
@@ -102,6 +101,10 @@ func (j *jsiiProxy_WindowsWebAppSlot) validateSetClientAffinityEnabledParameters
 }
 
 func (j *jsiiProxy_WindowsWebAppSlot) validateSetClientCertificateEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WindowsWebAppSlot) validateSetClientCertificateExclusionPathsParameters(val *string) error {
 	return nil
 }
 

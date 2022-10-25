@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package appconfiguration
 
@@ -53,6 +52,10 @@ func (a *jsiiProxy_AppConfiguration) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (a *jsiiProxy_AppConfiguration) validatePutEncryptionParameters(value *AppConfigurationEncryption) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppConfiguration) validatePutIdentityParameters(value *AppConfigurationIdentity) error {
 	return nil
 }
@@ -77,6 +80,10 @@ func (j *jsiiProxy_AppConfiguration) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
+func (j *jsiiProxy_AppConfiguration) validateSetLocalAuthEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppConfiguration) validateSetLocationParameters(val *string) error {
 	return nil
 }
@@ -93,11 +100,19 @@ func (j *jsiiProxy_AppConfiguration) validateSetPublicNetworkAccessParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_AppConfiguration) validateSetPurgeProtectionEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppConfiguration) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_AppConfiguration) validateSetSkuParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppConfiguration) validateSetSoftDeleteRetentionDaysParameters(val *float64) error {
 	return nil
 }
 

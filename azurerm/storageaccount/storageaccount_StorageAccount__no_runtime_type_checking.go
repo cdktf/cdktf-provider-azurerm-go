@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package storageaccount
 
@@ -70,6 +69,10 @@ func (s *jsiiProxy_StorageAccount) validatePutCustomerManagedKeyParameters(value
 }
 
 func (s *jsiiProxy_StorageAccount) validatePutIdentityParameters(value *StorageAccountIdentity) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageAccount) validatePutImmutabilityPolicyParameters(value *StorageAccountImmutabilityPolicy) error {
 	return nil
 }
 

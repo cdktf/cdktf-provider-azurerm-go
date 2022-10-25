@@ -55,6 +55,10 @@ type LinuxFunctionAppConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app#client_certificate_enabled LinuxFunctionApp#client_certificate_enabled}
 	ClientCertificateEnabled interface{} `field:"optional" json:"clientCertificateEnabled" yaml:"clientCertificateEnabled"`
+	// Paths to exclude when using client certificates, separated by ;
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app#client_certificate_exclusion_paths LinuxFunctionApp#client_certificate_exclusion_paths}
+	ClientCertificateExclusionPaths *string `field:"optional" json:"clientCertificateExclusionPaths" yaml:"clientCertificateExclusionPaths"`
 	// The mode of the Function App's client certificates requirement for incoming requests.
 	//
 	// Possible values are `Required`, `Optional`, and `OptionalInteractiveUser`

@@ -29,6 +29,10 @@ type ApiManagementApiConfig struct {
 	Revision *string `field:"required" json:"revision" yaml:"revision"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_api#api_type ApiManagementApi#api_type}.
 	ApiType *string `field:"optional" json:"apiType" yaml:"apiType"`
+	// contact block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_api#contact ApiManagementApi#contact}
+	Contact *ApiManagementApiContact `field:"optional" json:"contact" yaml:"contact"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_api#description ApiManagementApi#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_api#display_name ApiManagementApi#display_name}.
@@ -42,6 +46,10 @@ type ApiManagementApiConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_api#import ApiManagementApi#import}
 	Import *ApiManagementApiImport `field:"optional" json:"import" yaml:"import"`
+	// license block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_api#license ApiManagementApi#license}
+	License *ApiManagementApiLicense `field:"optional" json:"license" yaml:"license"`
 	// oauth2_authorization block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_api#oauth2_authorization ApiManagementApi#oauth2_authorization}
@@ -68,6 +76,8 @@ type ApiManagementApiConfig struct {
 	SubscriptionKeyParameterNames *ApiManagementApiSubscriptionKeyParameterNames `field:"optional" json:"subscriptionKeyParameterNames" yaml:"subscriptionKeyParameterNames"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_api#subscription_required ApiManagementApi#subscription_required}.
 	SubscriptionRequired interface{} `field:"optional" json:"subscriptionRequired" yaml:"subscriptionRequired"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_api#terms_of_service_url ApiManagementApi#terms_of_service_url}.
+	TermsOfServiceUrl *string `field:"optional" json:"termsOfServiceUrl" yaml:"termsOfServiceUrl"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_api#timeouts ApiManagementApi#timeouts}

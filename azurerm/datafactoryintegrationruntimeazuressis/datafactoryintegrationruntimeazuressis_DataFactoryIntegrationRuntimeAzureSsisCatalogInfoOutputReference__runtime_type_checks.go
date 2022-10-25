@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package datafactoryintegrationruntimeazuressis
 
@@ -181,6 +180,14 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputRefere
 }
 
 func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference) validateSetDualStandbyPairNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference) validateSetElasticPoolNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

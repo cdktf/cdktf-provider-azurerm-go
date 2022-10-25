@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package windowsfunctionappslot
 
@@ -249,6 +248,14 @@ func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetClientCertificateEnabledPa
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetClientCertificateExclusionPathsParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

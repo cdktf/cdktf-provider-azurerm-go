@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package storagemanagementpolicy
 
@@ -205,6 +204,14 @@ func (j *jsiiProxy_StorageManagementPolicyRuleActionsSnapshotOutputReference) va
 }
 
 func (j *jsiiProxy_StorageManagementPolicyRuleActionsSnapshotOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsSnapshotOutputReference) validateSetTierToArchiveAfterDaysSinceLastTierChangeGreaterThanParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

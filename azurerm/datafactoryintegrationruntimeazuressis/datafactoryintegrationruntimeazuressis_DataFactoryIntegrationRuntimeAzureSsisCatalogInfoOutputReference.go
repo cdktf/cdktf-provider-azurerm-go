@@ -34,6 +34,9 @@ type DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference interface 
 	DualStandbyPairName() *string
 	SetDualStandbyPairName(val *string)
 	DualStandbyPairNameInput() *string
+	ElasticPoolName() *string
+	SetElasticPoolName(val *string)
+	ElasticPoolNameInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataFactoryIntegrationRuntimeAzureSsisCatalogInfo
@@ -79,6 +82,7 @@ type DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference interface 
 	ResetAdministratorLogin()
 	ResetAdministratorPassword()
 	ResetDualStandbyPairName()
+	ResetElasticPoolName()
 	ResetPricingTier()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -180,6 +184,26 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputRefere
 	_jsii_.Get(
 		j,
 		"dualStandbyPairNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference) ElasticPoolName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elasticPoolName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference) ElasticPoolNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elasticPoolNameInput",
 		&returns,
 	)
 	return returns
@@ -344,6 +368,17 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputRefere
 	_jsii_.Set(
 		j,
 		"dualStandbyPairName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference)SetElasticPoolName(val *string) {
+	if err := j.validateSetElasticPoolNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"elasticPoolName",
 		val,
 	)
 }
@@ -609,6 +644,14 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputRefere
 	_jsii_.InvokeVoid(
 		d,
 		"resetDualStandbyPairName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference) ResetElasticPoolName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetElasticPoolName",
 		nil, // no parameters
 	)
 }

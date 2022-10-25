@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package linuxfunctionapp
 
@@ -94,6 +93,10 @@ func (j *jsiiProxy_LinuxFunctionApp) validateSetBuiltinLoggingEnabledParameters(
 }
 
 func (j *jsiiProxy_LinuxFunctionApp) validateSetClientCertificateEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LinuxFunctionApp) validateSetClientCertificateExclusionPathsParameters(val *string) error {
 	return nil
 }
 

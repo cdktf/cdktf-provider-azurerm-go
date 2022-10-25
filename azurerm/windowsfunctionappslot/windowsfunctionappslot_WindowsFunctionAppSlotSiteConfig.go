@@ -98,7 +98,7 @@ type WindowsFunctionAppSlotSiteConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_function_app_slot#remote_debugging_enabled WindowsFunctionAppSlot#remote_debugging_enabled}
 	RemoteDebuggingEnabled interface{} `field:"optional" json:"remoteDebuggingEnabled" yaml:"remoteDebuggingEnabled"`
-	// The Remote Debugging Version. Possible values include `VS2017` and `VS2019`.
+	// The Remote Debugging Version. Possible values include `VS2017`, `VS2019`, and `VS2022`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_function_app_slot#remote_debugging_version WindowsFunctionAppSlot#remote_debugging_version}
 	RemoteDebuggingVersion *string `field:"optional" json:"remoteDebuggingVersion" yaml:"remoteDebuggingVersion"`

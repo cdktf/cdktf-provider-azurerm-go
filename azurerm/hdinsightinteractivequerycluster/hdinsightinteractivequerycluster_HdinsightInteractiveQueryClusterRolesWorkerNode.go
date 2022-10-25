@@ -14,6 +14,10 @@ type HdinsightInteractiveQueryClusterRolesWorkerNode struct {
 	Autoscale *HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscale `field:"optional" json:"autoscale" yaml:"autoscale"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_interactive_query_cluster#password HdinsightInteractiveQueryCluster#password}.
 	Password *string `field:"optional" json:"password" yaml:"password"`
+	// script_actions block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_interactive_query_cluster#script_actions HdinsightInteractiveQueryCluster#script_actions}
+	ScriptActions interface{} `field:"optional" json:"scriptActions" yaml:"scriptActions"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_interactive_query_cluster#ssh_keys HdinsightInteractiveQueryCluster#ssh_keys}.
 	SshKeys *[]*string `field:"optional" json:"sshKeys" yaml:"sshKeys"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_interactive_query_cluster#subnet_id HdinsightInteractiveQueryCluster#subnet_id}.

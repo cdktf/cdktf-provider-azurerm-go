@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package cdnfrontdoorcustomdomain
 
@@ -137,14 +136,6 @@ func (c *jsiiProxy_CdnFrontdoorCustomDomain) validatePutTlsParameters(value *Cdn
 func validateCdnFrontdoorCustomDomain_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_CdnFrontdoorCustomDomain) validateSetAssociateWithCdnFrontdoorRouteIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

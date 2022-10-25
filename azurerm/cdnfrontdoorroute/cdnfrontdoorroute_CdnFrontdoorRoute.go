@@ -16,6 +16,9 @@ type CdnFrontdoorRoute interface {
 	CacheInput() *CdnFrontdoorRouteCache
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CdnFrontdoorCustomDomainIds() *[]*string
+	SetCdnFrontdoorCustomDomainIds(val *[]*string)
+	CdnFrontdoorCustomDomainIdsInput() *[]*string
 	CdnFrontdoorEndpointId() *string
 	SetCdnFrontdoorEndpointId(val *string)
 	CdnFrontdoorEndpointIdInput() *string
@@ -69,6 +72,9 @@ type CdnFrontdoorRoute interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LinkToDefaultDomain() interface{}
+	SetLinkToDefaultDomain(val interface{})
+	LinkToDefaultDomainInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -126,12 +132,14 @@ type CdnFrontdoorRoute interface {
 	PutCache(value *CdnFrontdoorRouteCache)
 	PutTimeouts(value *CdnFrontdoorRouteTimeouts)
 	ResetCache()
+	ResetCdnFrontdoorCustomDomainIds()
 	ResetCdnFrontdoorOriginPath()
 	ResetCdnFrontdoorRuleSetIds()
 	ResetEnabled()
 	ResetForwardingProtocol()
 	ResetHttpsRedirectEnabled()
 	ResetId()
+	ResetLinkToDefaultDomain()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -176,6 +184,26 @@ func (j *jsiiProxy_CdnFrontdoorRoute) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnFrontdoorRoute) CdnFrontdoorCustomDomainIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"cdnFrontdoorCustomDomainIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnFrontdoorRoute) CdnFrontdoorCustomDomainIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"cdnFrontdoorCustomDomainIdsInput",
 		&returns,
 	)
 	return returns
@@ -441,6 +469,26 @@ func (j *jsiiProxy_CdnFrontdoorRoute) Lifecycle() *cdktf.TerraformResourceLifecy
 	return returns
 }
 
+func (j *jsiiProxy_CdnFrontdoorRoute) LinkToDefaultDomain() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"linkToDefaultDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnFrontdoorRoute) LinkToDefaultDomainInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"linkToDefaultDomainInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CdnFrontdoorRoute) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -621,6 +669,17 @@ func NewCdnFrontdoorRoute_Override(c CdnFrontdoorRoute, scope constructs.Constru
 	)
 }
 
+func (j *jsiiProxy_CdnFrontdoorRoute)SetCdnFrontdoorCustomDomainIds(val *[]*string) {
+	if err := j.validateSetCdnFrontdoorCustomDomainIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cdnFrontdoorCustomDomainIds",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CdnFrontdoorRoute)SetCdnFrontdoorEndpointId(val *string) {
 	if err := j.validateSetCdnFrontdoorEndpointIdParameters(val); err != nil {
 		panic(err)
@@ -762,6 +821,17 @@ func (j *jsiiProxy_CdnFrontdoorRoute)SetLifecycle(val *cdktf.TerraformResourceLi
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CdnFrontdoorRoute)SetLinkToDefaultDomain(val interface{}) {
+	if err := j.validateSetLinkToDefaultDomainParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"linkToDefaultDomain",
 		val,
 	)
 }
@@ -1076,6 +1146,14 @@ func (c *jsiiProxy_CdnFrontdoorRoute) ResetCache() {
 	)
 }
 
+func (c *jsiiProxy_CdnFrontdoorRoute) ResetCdnFrontdoorCustomDomainIds() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCdnFrontdoorCustomDomainIds",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CdnFrontdoorRoute) ResetCdnFrontdoorOriginPath() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1120,6 +1198,14 @@ func (c *jsiiProxy_CdnFrontdoorRoute) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnFrontdoorRoute) ResetLinkToDefaultDomain() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLinkToDefaultDomain",
 		nil, // no parameters
 	)
 }

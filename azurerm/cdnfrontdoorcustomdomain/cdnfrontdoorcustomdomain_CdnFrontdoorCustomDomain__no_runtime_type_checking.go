@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package cdnfrontdoorcustomdomain
 
@@ -62,10 +61,6 @@ func (c *jsiiProxy_CdnFrontdoorCustomDomain) validatePutTlsParameters(value *Cdn
 }
 
 func validateCdnFrontdoorCustomDomain_IsConstructParameters(x interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_CdnFrontdoorCustomDomain) validateSetAssociateWithCdnFrontdoorRouteIdParameters(val *string) error {
 	return nil
 }
 

@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package hdinsightsparkcluster
 
@@ -97,6 +96,37 @@ func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeOutputReference) validate
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (h *jsiiProxy_HdinsightSparkClusterRolesWorkerNodeOutputReference) validatePutScriptActionsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*HdinsightSparkClusterRolesWorkerNodeScriptActions:
+		value := value.(*[]*HdinsightSparkClusterRolesWorkerNodeScriptActions)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*HdinsightSparkClusterRolesWorkerNodeScriptActions:
+		value_ := value.([]*HdinsightSparkClusterRolesWorkerNodeScriptActions)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*HdinsightSparkClusterRolesWorkerNodeScriptActions; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil

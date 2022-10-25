@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package hdinsighthbasecluster
 
@@ -86,6 +85,37 @@ func (h *jsiiProxy_HdinsightHbaseClusterRolesHeadNodeOutputReference) validateGe
 func (h *jsiiProxy_HdinsightHbaseClusterRolesHeadNodeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (h *jsiiProxy_HdinsightHbaseClusterRolesHeadNodeOutputReference) validatePutScriptActionsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*HdinsightHbaseClusterRolesHeadNodeScriptActions:
+		value := value.(*[]*HdinsightHbaseClusterRolesHeadNodeScriptActions)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*HdinsightHbaseClusterRolesHeadNodeScriptActions:
+		value_ := value.([]*HdinsightHbaseClusterRolesHeadNodeScriptActions)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*HdinsightHbaseClusterRolesHeadNodeScriptActions; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil

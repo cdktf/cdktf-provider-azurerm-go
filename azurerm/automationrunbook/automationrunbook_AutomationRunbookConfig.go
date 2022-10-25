@@ -37,6 +37,10 @@ type AutomationRunbookConfig struct {
 	Content *string `field:"optional" json:"content" yaml:"content"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/automation_runbook#description AutomationRunbook#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// draft block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/automation_runbook#draft AutomationRunbook#draft}
+	Draft *AutomationRunbookDraft `field:"optional" json:"draft" yaml:"draft"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/automation_runbook#id AutomationRunbook#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -44,6 +48,8 @@ type AutomationRunbookConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/automation_runbook#job_schedule AutomationRunbook#job_schedule}.
 	JobSchedule interface{} `field:"optional" json:"jobSchedule" yaml:"jobSchedule"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/automation_runbook#log_activity_trace_level AutomationRunbook#log_activity_trace_level}.
+	LogActivityTraceLevel *float64 `field:"optional" json:"logActivityTraceLevel" yaml:"logActivityTraceLevel"`
 	// publish_content_link block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/automation_runbook#publish_content_link AutomationRunbook#publish_content_link}

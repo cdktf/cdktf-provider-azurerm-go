@@ -59,6 +59,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "identity", GoGetter: "Identity"},
 			_jsii_.MemberProperty{JsiiProperty: "identityInput", GoGetter: "IdentityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "immutabilityPolicy", GoGetter: "ImmutabilityPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "immutabilityPolicyInput", GoGetter: "ImmutabilityPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "infrastructureEncryptionEnabled", GoGetter: "InfrastructureEncryptionEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "infrastructureEncryptionEnabledInput", GoGetter: "InfrastructureEncryptionEnabledInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -104,6 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCustomDomain", GoMethod: "PutCustomDomain"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomerManagedKey", GoMethod: "PutCustomerManagedKey"},
 			_jsii_.MemberMethod{JsiiMethod: "putIdentity", GoMethod: "PutIdentity"},
+			_jsii_.MemberMethod{JsiiMethod: "putImmutabilityPolicy", GoMethod: "PutImmutabilityPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkRules", GoMethod: "PutNetworkRules"},
 			_jsii_.MemberMethod{JsiiMethod: "putQueueProperties", GoMethod: "PutQueueProperties"},
 			_jsii_.MemberMethod{JsiiMethod: "putRouting", GoMethod: "PutRouting"},
@@ -128,6 +131,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableHttpsTrafficOnly", GoMethod: "ResetEnableHttpsTrafficOnly"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIdentity", GoMethod: "ResetIdentity"},
+			_jsii_.MemberMethod{JsiiMethod: "resetImmutabilityPolicy", GoMethod: "ResetImmutabilityPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInfrastructureEncryptionEnabled", GoMethod: "ResetInfrastructureEncryptionEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsHnsEnabled", GoMethod: "ResetIsHnsEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLargeFileShareEnabled", GoMethod: "ResetLargeFileShareEnabled"},
@@ -613,6 +617,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StorageAccountIdentityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicy",
+		reflect.TypeOf((*StorageAccountImmutabilityPolicy)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicyOutputReference",
+		reflect.TypeOf((*StorageAccountImmutabilityPolicyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allowProtectedAppendWrites", GoGetter: "AllowProtectedAppendWrites"},
+			_jsii_.MemberProperty{JsiiProperty: "allowProtectedAppendWritesInput", GoGetter: "AllowProtectedAppendWritesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "periodSinceCreationInDays", GoGetter: "PeriodSinceCreationInDays"},
+			_jsii_.MemberProperty{JsiiProperty: "periodSinceCreationInDaysInput", GoGetter: "PeriodSinceCreationInDaysInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
+			_jsii_.MemberProperty{JsiiProperty: "stateInput", GoGetter: "StateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_StorageAccountImmutabilityPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
