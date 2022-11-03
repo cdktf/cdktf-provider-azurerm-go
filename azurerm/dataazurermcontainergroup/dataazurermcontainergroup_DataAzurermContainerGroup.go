@@ -35,6 +35,7 @@ type DataAzurermContainerGroup interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() DataAzurermContainerGroupIdentityList
 	IdInput() *string
 	IpAddress() *string
 	// Experimental.
@@ -56,6 +57,7 @@ type DataAzurermContainerGroup interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	SubnetIds() *[]*string
 	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -65,6 +67,9 @@ type DataAzurermContainerGroup interface {
 	TerraformResourceType() *string
 	Timeouts() DataAzurermContainerGroupTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Zones() *[]*string
+	SetZones(val *[]*string)
+	ZonesInput() *[]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -96,6 +101,7 @@ type DataAzurermContainerGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
+	ResetZones()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -196,6 +202,16 @@ func (j *jsiiProxy_DataAzurermContainerGroup) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermContainerGroup) Identity() DataAzurermContainerGroupIdentityList {
+	var returns DataAzurermContainerGroupIdentityList
+	_jsii_.Get(
+		j,
+		"identity",
 		&returns,
 	)
 	return returns
@@ -311,6 +327,16 @@ func (j *jsiiProxy_DataAzurermContainerGroup) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermContainerGroup) SubnetIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subnetIds",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermContainerGroup) Tags() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
@@ -366,6 +392,26 @@ func (j *jsiiProxy_DataAzurermContainerGroup) TimeoutsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermContainerGroup) Zones() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"zones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermContainerGroup) ZonesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"zonesInput",
 		&returns,
 	)
 	return returns
@@ -473,6 +519,17 @@ func (j *jsiiProxy_DataAzurermContainerGroup)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzurermContainerGroup)SetZones(val *[]*string) {
+	if err := j.validateSetZonesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zones",
 		val,
 	)
 }
@@ -736,6 +793,14 @@ func (d *jsiiProxy_DataAzurermContainerGroup) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermContainerGroup) ResetZones() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZones",
 		nil, // no parameters
 	)
 }

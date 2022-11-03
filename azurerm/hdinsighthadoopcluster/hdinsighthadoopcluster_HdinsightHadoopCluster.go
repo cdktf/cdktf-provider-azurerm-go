@@ -19,6 +19,8 @@ type HdinsightHadoopCluster interface {
 	ClusterVersionInput() *string
 	ComponentVersion() HdinsightHadoopClusterComponentVersionOutputReference
 	ComponentVersionInput() *HdinsightHadoopClusterComponentVersion
+	ComputeIsolation() HdinsightHadoopClusterComputeIsolationOutputReference
+	ComputeIsolationInput() *HdinsightHadoopClusterComputeIsolation
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -134,6 +136,7 @@ type HdinsightHadoopCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutComponentVersion(value *HdinsightHadoopClusterComponentVersion)
+	PutComputeIsolation(value *HdinsightHadoopClusterComputeIsolation)
 	PutDiskEncryption(value interface{})
 	PutExtension(value *HdinsightHadoopClusterExtension)
 	PutGateway(value *HdinsightHadoopClusterGateway)
@@ -145,6 +148,7 @@ type HdinsightHadoopCluster interface {
 	PutStorageAccount(value interface{})
 	PutStorageAccountGen2(value *HdinsightHadoopClusterStorageAccountGen2)
 	PutTimeouts(value *HdinsightHadoopClusterTimeouts)
+	ResetComputeIsolation()
 	ResetDiskEncryption()
 	ResetExtension()
 	ResetId()
@@ -220,6 +224,26 @@ func (j *jsiiProxy_HdinsightHadoopCluster) ComponentVersionInput() *HdinsightHad
 	_jsii_.Get(
 		j,
 		"componentVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightHadoopCluster) ComputeIsolation() HdinsightHadoopClusterComputeIsolationOutputReference {
+	var returns HdinsightHadoopClusterComputeIsolationOutputReference
+	_jsii_.Get(
+		j,
+		"computeIsolation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightHadoopCluster) ComputeIsolationInput() *HdinsightHadoopClusterComputeIsolation {
+	var returns *HdinsightHadoopClusterComputeIsolation
+	_jsii_.Get(
+		j,
+		"computeIsolationInput",
 		&returns,
 	)
 	return returns
@@ -1177,6 +1201,17 @@ func (h *jsiiProxy_HdinsightHadoopCluster) PutComponentVersion(value *HdinsightH
 	)
 }
 
+func (h *jsiiProxy_HdinsightHadoopCluster) PutComputeIsolation(value *HdinsightHadoopClusterComputeIsolation) {
+	if err := h.validatePutComputeIsolationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putComputeIsolation",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_HdinsightHadoopCluster) PutDiskEncryption(value interface{}) {
 	if err := h.validatePutDiskEncryptionParameters(value); err != nil {
 		panic(err)
@@ -1295,6 +1330,14 @@ func (h *jsiiProxy_HdinsightHadoopCluster) PutTimeouts(value *HdinsightHadoopClu
 		h,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (h *jsiiProxy_HdinsightHadoopCluster) ResetComputeIsolation() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetComputeIsolation",
+		nil, // no parameters
 	)
 }
 

@@ -80,6 +80,10 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSet) validatePutExtensionParameters
 	return nil
 }
 
+func (w *jsiiProxy_WindowsVirtualMachineScaleSet) validatePutGalleryApplicationParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsVirtualMachineScaleSet) validatePutGalleryApplicationsParameters(value interface{}) error {
 	return nil
 }

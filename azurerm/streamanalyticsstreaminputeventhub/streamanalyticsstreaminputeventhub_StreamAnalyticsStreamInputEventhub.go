@@ -129,6 +129,8 @@ type StreamAnalyticsStreamInputEventhub interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPartitionKey()
+	ResetSharedAccessPolicyKey()
+	ResetSharedAccessPolicyName()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -1067,6 +1069,22 @@ func (s *jsiiProxy_StreamAnalyticsStreamInputEventhub) ResetPartitionKey() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPartitionKey",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StreamAnalyticsStreamInputEventhub) ResetSharedAccessPolicyKey() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSharedAccessPolicyKey",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StreamAnalyticsStreamInputEventhub) ResetSharedAccessPolicyName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSharedAccessPolicyName",
 		nil, // no parameters
 	)
 }

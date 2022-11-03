@@ -112,9 +112,11 @@ type LinuxFunctionAppSlot interface {
 	SiteConfig() LinuxFunctionAppSlotSiteConfigOutputReference
 	SiteConfigInput() *LinuxFunctionAppSlotSiteConfig
 	SiteCredential() LinuxFunctionAppSlotSiteCredentialList
+	StorageAccount() LinuxFunctionAppSlotStorageAccountList
 	StorageAccountAccessKey() *string
 	SetStorageAccountAccessKey(val *string)
 	StorageAccountAccessKeyInput() *string
+	StorageAccountInput() interface{}
 	StorageAccountName() *string
 	SetStorageAccountName(val *string)
 	StorageAccountNameInput() *string
@@ -168,6 +170,7 @@ type LinuxFunctionAppSlot interface {
 	PutConnectionString(value interface{})
 	PutIdentity(value *LinuxFunctionAppSlotIdentity)
 	PutSiteConfig(value *LinuxFunctionAppSlotSiteConfig)
+	PutStorageAccount(value interface{})
 	PutTimeouts(value *LinuxFunctionAppSlotTimeouts)
 	ResetAppSettings()
 	ResetAuthSettings()
@@ -188,6 +191,7 @@ type LinuxFunctionAppSlot interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStorageAccount()
 	ResetStorageAccountAccessKey()
 	ResetStorageAccountName()
 	ResetStorageKeyVaultSecretId()
@@ -800,6 +804,16 @@ func (j *jsiiProxy_LinuxFunctionAppSlot) SiteCredential() LinuxFunctionAppSlotSi
 	return returns
 }
 
+func (j *jsiiProxy_LinuxFunctionAppSlot) StorageAccount() LinuxFunctionAppSlotStorageAccountList {
+	var returns LinuxFunctionAppSlotStorageAccountList
+	_jsii_.Get(
+		j,
+		"storageAccount",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LinuxFunctionAppSlot) StorageAccountAccessKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -815,6 +829,16 @@ func (j *jsiiProxy_LinuxFunctionAppSlot) StorageAccountAccessKeyInput() *string 
 	_jsii_.Get(
 		j,
 		"storageAccountAccessKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxFunctionAppSlot) StorageAccountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"storageAccountInput",
 		&returns,
 	)
 	return returns
@@ -1568,6 +1592,17 @@ func (l *jsiiProxy_LinuxFunctionAppSlot) PutSiteConfig(value *LinuxFunctionAppSl
 	)
 }
 
+func (l *jsiiProxy_LinuxFunctionAppSlot) PutStorageAccount(value interface{}) {
+	if err := l.validatePutStorageAccountParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putStorageAccount",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LinuxFunctionAppSlot) PutTimeouts(value *LinuxFunctionAppSlotTimeouts) {
 	if err := l.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1711,6 +1746,14 @@ func (l *jsiiProxy_LinuxFunctionAppSlot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxFunctionAppSlot) ResetStorageAccount() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetStorageAccount",
 		nil, // no parameters
 	)
 }

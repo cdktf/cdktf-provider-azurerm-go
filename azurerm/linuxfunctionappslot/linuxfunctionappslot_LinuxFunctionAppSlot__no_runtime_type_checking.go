@@ -72,6 +72,10 @@ func (l *jsiiProxy_LinuxFunctionAppSlot) validatePutSiteConfigParameters(value *
 	return nil
 }
 
+func (l *jsiiProxy_LinuxFunctionAppSlot) validatePutStorageAccountParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxFunctionAppSlot) validatePutTimeoutsParameters(value *LinuxFunctionAppSlotTimeouts) error {
 	return nil
 }

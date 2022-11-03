@@ -38,6 +38,9 @@ type MonitorDataCollectionRuleDataSourcesSyslogOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Streams() *[]*string
+	SetStreams(val *[]*string)
+	StreamsInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +73,7 @@ type MonitorDataCollectionRuleDataSourcesSyslogOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetStreams()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -195,6 +199,26 @@ func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) Na
 	return returns
 }
 
+func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) Streams() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"streams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) StreamsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"streamsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -305,6 +329,17 @@ func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference)Set
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference)SetStreams(val *[]*string) {
+	if err := j.validateSetStreamsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"streams",
 		val,
 	)
 }
@@ -515,6 +550,14 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) In
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) ResetStreams() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetStreams",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

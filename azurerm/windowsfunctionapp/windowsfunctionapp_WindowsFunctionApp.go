@@ -120,9 +120,11 @@ type WindowsFunctionApp interface {
 	SiteCredential() WindowsFunctionAppSiteCredentialList
 	StickySettings() WindowsFunctionAppStickySettingsOutputReference
 	StickySettingsInput() *WindowsFunctionAppStickySettings
+	StorageAccount() WindowsFunctionAppStorageAccountList
 	StorageAccountAccessKey() *string
 	SetStorageAccountAccessKey(val *string)
 	StorageAccountAccessKeyInput() *string
+	StorageAccountInput() interface{}
 	StorageAccountName() *string
 	SetStorageAccountName(val *string)
 	StorageAccountNameInput() *string
@@ -177,6 +179,7 @@ type WindowsFunctionApp interface {
 	PutIdentity(value *WindowsFunctionAppIdentity)
 	PutSiteConfig(value *WindowsFunctionAppSiteConfig)
 	PutStickySettings(value *WindowsFunctionAppStickySettings)
+	PutStorageAccount(value interface{})
 	PutTimeouts(value *WindowsFunctionAppTimeouts)
 	ResetAppSettings()
 	ResetAuthSettings()
@@ -198,6 +201,7 @@ type WindowsFunctionApp interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetStickySettings()
+	ResetStorageAccount()
 	ResetStorageAccountAccessKey()
 	ResetStorageAccountName()
 	ResetStorageKeyVaultSecretId()
@@ -870,6 +874,16 @@ func (j *jsiiProxy_WindowsFunctionApp) StickySettingsInput() *WindowsFunctionApp
 	return returns
 }
 
+func (j *jsiiProxy_WindowsFunctionApp) StorageAccount() WindowsFunctionAppStorageAccountList {
+	var returns WindowsFunctionAppStorageAccountList
+	_jsii_.Get(
+		j,
+		"storageAccount",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsFunctionApp) StorageAccountAccessKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -885,6 +899,16 @@ func (j *jsiiProxy_WindowsFunctionApp) StorageAccountAccessKeyInput() *string {
 	_jsii_.Get(
 		j,
 		"storageAccountAccessKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsFunctionApp) StorageAccountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"storageAccountInput",
 		&returns,
 	)
 	return returns
@@ -1671,6 +1695,17 @@ func (w *jsiiProxy_WindowsFunctionApp) PutStickySettings(value *WindowsFunctionA
 	)
 }
 
+func (w *jsiiProxy_WindowsFunctionApp) PutStorageAccount(value interface{}) {
+	if err := w.validatePutStorageAccountParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putStorageAccount",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WindowsFunctionApp) PutTimeouts(value *WindowsFunctionAppTimeouts) {
 	if err := w.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1822,6 +1857,14 @@ func (w *jsiiProxy_WindowsFunctionApp) ResetStickySettings() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetStickySettings",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsFunctionApp) ResetStorageAccount() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetStorageAccount",
 		nil, // no parameters
 	)
 }

@@ -32,6 +32,7 @@ type DataAzurermMonitorDataCollectionRuleDataSourcesSyslogOutputReference interf
 	SetInternalValue(val *DataAzurermMonitorDataCollectionRuleDataSourcesSyslog)
 	LogLevels() *[]*string
 	Name() *string
+	Streams() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -154,6 +155,16 @@ func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesSyslogOutputRe
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesSyslogOutputReference) Streams() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"streams",
 		&returns,
 	)
 	return returns

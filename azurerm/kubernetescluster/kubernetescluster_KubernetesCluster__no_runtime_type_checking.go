@@ -120,6 +120,10 @@ func (k *jsiiProxy_KubernetesCluster) validatePutWindowsProfileParameters(value 
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesCluster) validatePutWorkloadAutoscalerProfileParameters(value *KubernetesClusterWorkloadAutoscalerProfile) error {
+	return nil
+}
+
 func validateKubernetesCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }

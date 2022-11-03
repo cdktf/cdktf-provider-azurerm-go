@@ -72,6 +72,10 @@ func (w *jsiiProxy_WindowsFunctionAppSlot) validatePutSiteConfigParameters(value
 	return nil
 }
 
+func (w *jsiiProxy_WindowsFunctionAppSlot) validatePutStorageAccountParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsFunctionAppSlot) validatePutTimeoutsParameters(value *WindowsFunctionAppSlotTimeouts) error {
 	return nil
 }

@@ -52,6 +52,10 @@ func (l *jsiiProxy_LogicAppStandardSiteConfigOutputReference) validatePutIpRestr
 	return nil
 }
 
+func (l *jsiiProxy_LogicAppStandardSiteConfigOutputReference) validatePutScmIpRestrictionParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogicAppStandardSiteConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -109,6 +113,18 @@ func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) validateSetPreWarm
 }
 
 func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) validateSetRuntimeScaleMonitoringEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) validateSetScmMinTlsVersionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) validateSetScmTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) validateSetScmUseMainIpRestrictionParameters(val interface{}) error {
 	return nil
 }
 

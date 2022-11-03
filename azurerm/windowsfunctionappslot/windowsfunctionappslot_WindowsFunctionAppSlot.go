@@ -112,9 +112,11 @@ type WindowsFunctionAppSlot interface {
 	SiteConfig() WindowsFunctionAppSlotSiteConfigOutputReference
 	SiteConfigInput() *WindowsFunctionAppSlotSiteConfig
 	SiteCredential() WindowsFunctionAppSlotSiteCredentialList
+	StorageAccount() WindowsFunctionAppSlotStorageAccountList
 	StorageAccountAccessKey() *string
 	SetStorageAccountAccessKey(val *string)
 	StorageAccountAccessKeyInput() *string
+	StorageAccountInput() interface{}
 	StorageAccountName() *string
 	SetStorageAccountName(val *string)
 	StorageAccountNameInput() *string
@@ -168,6 +170,7 @@ type WindowsFunctionAppSlot interface {
 	PutConnectionString(value interface{})
 	PutIdentity(value *WindowsFunctionAppSlotIdentity)
 	PutSiteConfig(value *WindowsFunctionAppSlotSiteConfig)
+	PutStorageAccount(value interface{})
 	PutTimeouts(value *WindowsFunctionAppSlotTimeouts)
 	ResetAppSettings()
 	ResetAuthSettings()
@@ -188,6 +191,7 @@ type WindowsFunctionAppSlot interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStorageAccount()
 	ResetStorageAccountAccessKey()
 	ResetStorageAccountName()
 	ResetStorageKeyVaultSecretId()
@@ -800,6 +804,16 @@ func (j *jsiiProxy_WindowsFunctionAppSlot) SiteCredential() WindowsFunctionAppSl
 	return returns
 }
 
+func (j *jsiiProxy_WindowsFunctionAppSlot) StorageAccount() WindowsFunctionAppSlotStorageAccountList {
+	var returns WindowsFunctionAppSlotStorageAccountList
+	_jsii_.Get(
+		j,
+		"storageAccount",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsFunctionAppSlot) StorageAccountAccessKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -815,6 +829,16 @@ func (j *jsiiProxy_WindowsFunctionAppSlot) StorageAccountAccessKeyInput() *strin
 	_jsii_.Get(
 		j,
 		"storageAccountAccessKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsFunctionAppSlot) StorageAccountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"storageAccountInput",
 		&returns,
 	)
 	return returns
@@ -1568,6 +1592,17 @@ func (w *jsiiProxy_WindowsFunctionAppSlot) PutSiteConfig(value *WindowsFunctionA
 	)
 }
 
+func (w *jsiiProxy_WindowsFunctionAppSlot) PutStorageAccount(value interface{}) {
+	if err := w.validatePutStorageAccountParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putStorageAccount",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WindowsFunctionAppSlot) PutTimeouts(value *WindowsFunctionAppSlotTimeouts) {
 	if err := w.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1711,6 +1746,14 @@ func (w *jsiiProxy_WindowsFunctionAppSlot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsFunctionAppSlot) ResetStorageAccount() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetStorageAccount",
 		nil, // no parameters
 	)
 }

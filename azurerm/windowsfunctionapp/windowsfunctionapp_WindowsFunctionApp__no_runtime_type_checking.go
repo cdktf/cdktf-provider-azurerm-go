@@ -76,6 +76,10 @@ func (w *jsiiProxy_WindowsFunctionApp) validatePutStickySettingsParameters(value
 	return nil
 }
 
+func (w *jsiiProxy_WindowsFunctionApp) validatePutStorageAccountParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsFunctionApp) validatePutTimeoutsParameters(value *WindowsFunctionAppTimeouts) error {
 	return nil
 }

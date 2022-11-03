@@ -43,6 +43,9 @@ type ContainerGroupImageRegistryCredentialOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UserAssignedIdentityId() *string
+	SetUserAssignedIdentityId(val *string)
+	UserAssignedIdentityIdInput() *string
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -70,6 +73,9 @@ type ContainerGroupImageRegistryCredentialOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPassword()
+	ResetUserAssignedIdentityId()
+	ResetUsername()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -190,6 +196,26 @@ func (j *jsiiProxy_ContainerGroupImageRegistryCredentialOutputReference) Terrafo
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerGroupImageRegistryCredentialOutputReference) UserAssignedIdentityId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userAssignedIdentityId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerGroupImageRegistryCredentialOutputReference) UserAssignedIdentityIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userAssignedIdentityIdInput",
 		&returns,
 	)
 	return returns
@@ -316,6 +342,17 @@ func (j *jsiiProxy_ContainerGroupImageRegistryCredentialOutputReference)SetTerra
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerGroupImageRegistryCredentialOutputReference)SetUserAssignedIdentityId(val *string) {
+	if err := j.validateSetUserAssignedIdentityIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userAssignedIdentityId",
 		val,
 	)
 }
@@ -515,6 +552,30 @@ func (c *jsiiProxy_ContainerGroupImageRegistryCredentialOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerGroupImageRegistryCredentialOutputReference) ResetPassword() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerGroupImageRegistryCredentialOutputReference) ResetUserAssignedIdentityId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUserAssignedIdentityId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerGroupImageRegistryCredentialOutputReference) ResetUsername() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUsername",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerGroupImageRegistryCredentialOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

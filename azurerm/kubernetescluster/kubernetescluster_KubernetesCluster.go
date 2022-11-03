@@ -179,6 +179,8 @@ type KubernetesCluster interface {
 	TimeoutsInput() interface{}
 	WindowsProfile() KubernetesClusterWindowsProfileOutputReference
 	WindowsProfileInput() *KubernetesClusterWindowsProfile
+	WorkloadAutoscalerProfile() KubernetesClusterWorkloadAutoscalerProfileOutputReference
+	WorkloadAutoscalerProfileInput() *KubernetesClusterWorkloadAutoscalerProfile
 	WorkloadIdentityEnabled() interface{}
 	SetWorkloadIdentityEnabled(val interface{})
 	WorkloadIdentityEnabledInput() interface{}
@@ -224,6 +226,7 @@ type KubernetesCluster interface {
 	PutServicePrincipal(value *KubernetesClusterServicePrincipal)
 	PutTimeouts(value *KubernetesClusterTimeouts)
 	PutWindowsProfile(value *KubernetesClusterWindowsProfile)
+	PutWorkloadAutoscalerProfile(value *KubernetesClusterWorkloadAutoscalerProfile)
 	ResetAciConnectorLinux()
 	ResetApiServerAuthorizedIpRanges()
 	ResetAutomaticChannelUpgrade()
@@ -266,6 +269,7 @@ type KubernetesCluster interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetWindowsProfile()
+	ResetWorkloadAutoscalerProfile()
 	ResetWorkloadIdentityEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -1392,6 +1396,26 @@ func (j *jsiiProxy_KubernetesCluster) WindowsProfileInput() *KubernetesClusterWi
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesCluster) WorkloadAutoscalerProfile() KubernetesClusterWorkloadAutoscalerProfileOutputReference {
+	var returns KubernetesClusterWorkloadAutoscalerProfileOutputReference
+	_jsii_.Get(
+		j,
+		"workloadAutoscalerProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) WorkloadAutoscalerProfileInput() *KubernetesClusterWorkloadAutoscalerProfile {
+	var returns *KubernetesClusterWorkloadAutoscalerProfile
+	_jsii_.Get(
+		j,
+		"workloadAutoscalerProfileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesCluster) WorkloadIdentityEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -2219,6 +2243,17 @@ func (k *jsiiProxy_KubernetesCluster) PutWindowsProfile(value *KubernetesCluster
 	)
 }
 
+func (k *jsiiProxy_KubernetesCluster) PutWorkloadAutoscalerProfile(value *KubernetesClusterWorkloadAutoscalerProfile) {
+	if err := k.validatePutWorkloadAutoscalerProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putWorkloadAutoscalerProfile",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesCluster) ResetAciConnectorLinux() {
 	_jsii_.InvokeVoid(
 		k,
@@ -2535,6 +2570,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetWindowsProfile() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetWindowsProfile",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetWorkloadAutoscalerProfile() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetWorkloadAutoscalerProfile",
 		nil, // no parameters
 	)
 }

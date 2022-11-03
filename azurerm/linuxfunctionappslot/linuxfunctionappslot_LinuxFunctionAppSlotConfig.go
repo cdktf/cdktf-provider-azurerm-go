@@ -100,6 +100,10 @@ type LinuxFunctionAppSlotConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app_slot#key_vault_reference_identity_id LinuxFunctionAppSlot#key_vault_reference_identity_id}
 	KeyVaultReferenceIdentityId *string `field:"optional" json:"keyVaultReferenceIdentityId" yaml:"keyVaultReferenceIdentityId"`
+	// storage_account block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app_slot#storage_account LinuxFunctionAppSlot#storage_account}
+	StorageAccount interface{} `field:"optional" json:"storageAccount" yaml:"storageAccount"`
 	// The access key which will be used to access the storage account for the Function App Slot.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app_slot#storage_account_access_key LinuxFunctionAppSlot#storage_account_access_key}

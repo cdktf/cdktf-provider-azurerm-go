@@ -160,6 +160,7 @@ type SynapseWorkspace interface {
 	ResetDataExfiltrationProtectionEnabled()
 	ResetGithubRepo()
 	ResetId()
+	ResetIdentity()
 	ResetLinkingAllowedForAadTenantIds()
 	ResetManagedResourceGroupName()
 	ResetManagedVirtualNetworkEnabled()
@@ -169,6 +170,8 @@ type SynapseWorkspace interface {
 	ResetPublicNetworkAccessEnabled()
 	ResetPurviewId()
 	ResetSqlAadAdmin()
+	ResetSqlAdministratorLogin()
+	ResetSqlAdministratorLoginPassword()
 	ResetSqlIdentityControlEnabled()
 	ResetTags()
 	ResetTimeouts()
@@ -1449,6 +1452,14 @@ func (s *jsiiProxy_SynapseWorkspace) ResetId() {
 	)
 }
 
+func (s *jsiiProxy_SynapseWorkspace) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SynapseWorkspace) ResetLinkingAllowedForAadTenantIds() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1501,6 +1512,22 @@ func (s *jsiiProxy_SynapseWorkspace) ResetSqlAadAdmin() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSqlAadAdmin",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SynapseWorkspace) ResetSqlAdministratorLogin() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSqlAdministratorLogin",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SynapseWorkspace) ResetSqlAdministratorLoginPassword() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSqlAdministratorLoginPassword",
 		nil, // no parameters
 	)
 }

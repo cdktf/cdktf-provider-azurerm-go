@@ -56,6 +56,10 @@ func (j *jsiiProxy_DiskEncryptionSetIdentityOutputReference) validateSetComplexO
 	return nil
 }
 
+func (j *jsiiProxy_DiskEncryptionSetIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DiskEncryptionSetIdentityOutputReference) validateSetInternalValueParameters(val *DiskEncryptionSetIdentity) error {
 	return nil
 }

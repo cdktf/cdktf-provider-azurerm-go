@@ -56,6 +56,10 @@ func (j *jsiiProxy_SynapseWorkspaceIdentityOutputReference) validateSetComplexOb
 	return nil
 }
 
+func (j *jsiiProxy_SynapseWorkspaceIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseWorkspaceIdentityOutputReference) validateSetInternalValueParameters(val *SynapseWorkspaceIdentity) error {
 	return nil
 }

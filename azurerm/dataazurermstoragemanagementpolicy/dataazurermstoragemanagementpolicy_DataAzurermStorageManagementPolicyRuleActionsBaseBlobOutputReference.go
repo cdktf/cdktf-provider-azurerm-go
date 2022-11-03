@@ -40,6 +40,7 @@ type DataAzurermStorageManagementPolicyRuleActionsBaseBlobOutputReference interf
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	TierToArchiveAfterDaysSinceLastAccessTimeGreaterThan() *float64
+	TierToArchiveAfterDaysSinceLastTierChangeGreaterThan() *float64
 	TierToArchiveAfterDaysSinceModificationGreaterThan() *float64
 	TierToCoolAfterDaysSinceLastAccessTimeGreaterThan() *float64
 	TierToCoolAfterDaysSinceModificationGreaterThan() *float64
@@ -177,6 +178,16 @@ func (j *jsiiProxy_DataAzurermStorageManagementPolicyRuleActionsBaseBlobOutputRe
 	_jsii_.Get(
 		j,
 		"tierToArchiveAfterDaysSinceLastAccessTimeGreaterThan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageManagementPolicyRuleActionsBaseBlobOutputReference) TierToArchiveAfterDaysSinceLastTierChangeGreaterThan() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tierToArchiveAfterDaysSinceLastTierChangeGreaterThan",
 		&returns,
 	)
 	return returns

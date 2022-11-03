@@ -86,6 +86,8 @@ type LinuxVirtualMachineScaleSet interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GalleryApplication() LinuxVirtualMachineScaleSetGalleryApplicationList
+	GalleryApplicationInput() interface{}
 	GalleryApplications() LinuxVirtualMachineScaleSetGalleryApplicationsList
 	GalleryApplicationsInput() interface{}
 	HealthProbeId() *string
@@ -239,6 +241,7 @@ type LinuxVirtualMachineScaleSet interface {
 	PutBootDiagnostics(value *LinuxVirtualMachineScaleSetBootDiagnostics)
 	PutDataDisk(value interface{})
 	PutExtension(value interface{})
+	PutGalleryApplication(value interface{})
 	PutGalleryApplications(value interface{})
 	PutIdentity(value *LinuxVirtualMachineScaleSetIdentity)
 	PutNetworkInterface(value interface{})
@@ -270,6 +273,7 @@ type LinuxVirtualMachineScaleSet interface {
 	ResetExtension()
 	ResetExtensionOperationsEnabled()
 	ResetExtensionsTimeBudget()
+	ResetGalleryApplication()
 	ResetGalleryApplications()
 	ResetHealthProbeId()
 	ResetHostGroupId()
@@ -774,6 +778,26 @@ func (j *jsiiProxy_LinuxVirtualMachineScaleSet) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineScaleSet) GalleryApplication() LinuxVirtualMachineScaleSetGalleryApplicationList {
+	var returns LinuxVirtualMachineScaleSetGalleryApplicationList
+	_jsii_.Get(
+		j,
+		"galleryApplication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineScaleSet) GalleryApplicationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"galleryApplicationInput",
 		&returns,
 	)
 	return returns
@@ -2405,6 +2429,17 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSet) PutExtension(value interface{}) 
 	)
 }
 
+func (l *jsiiProxy_LinuxVirtualMachineScaleSet) PutGalleryApplication(value interface{}) {
+	if err := l.validatePutGalleryApplicationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putGalleryApplication",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LinuxVirtualMachineScaleSet) PutGalleryApplications(value interface{}) {
 	if err := l.validatePutGalleryApplicationsParameters(value); err != nil {
 		panic(err)
@@ -2688,6 +2723,14 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSet) ResetExtensionsTimeBudget() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetExtensionsTimeBudget",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxVirtualMachineScaleSet) ResetGalleryApplication() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetGalleryApplication",
 		nil, // no parameters
 	)
 }

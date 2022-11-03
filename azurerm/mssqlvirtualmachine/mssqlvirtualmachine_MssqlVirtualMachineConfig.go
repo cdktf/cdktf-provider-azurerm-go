@@ -23,6 +23,10 @@ type MssqlVirtualMachineConfig struct {
 	SqlLicenseType *string `field:"required" json:"sqlLicenseType" yaml:"sqlLicenseType"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_virtual_machine#virtual_machine_id MssqlVirtualMachine#virtual_machine_id}.
 	VirtualMachineId *string `field:"required" json:"virtualMachineId" yaml:"virtualMachineId"`
+	// assessment block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_virtual_machine#assessment MssqlVirtualMachine#assessment}
+	Assessment *MssqlVirtualMachineAssessment `field:"optional" json:"assessment" yaml:"assessment"`
 	// auto_backup block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_virtual_machine#auto_backup MssqlVirtualMachine#auto_backup}

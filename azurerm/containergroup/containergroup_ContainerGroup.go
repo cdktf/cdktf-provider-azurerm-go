@@ -37,6 +37,9 @@ type ContainerGroup interface {
 	DnsNameLabel() *string
 	SetDnsNameLabel(val *string)
 	DnsNameLabelInput() *string
+	DnsNameLabelReusePolicy() *string
+	SetDnsNameLabelReusePolicy(val *string)
+	DnsNameLabelReusePolicyInput() *string
 	ExposedPort() ContainerGroupExposedPortList
 	ExposedPortInput() interface{}
 	// Experimental.
@@ -98,6 +101,9 @@ type ContainerGroup interface {
 	RestartPolicy() *string
 	SetRestartPolicy(val *string)
 	RestartPolicyInput() *string
+	SubnetIds() *[]*string
+	SetSubnetIds(val *[]*string)
+	SubnetIdsInput() *[]*string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -109,6 +115,9 @@ type ContainerGroup interface {
 	TerraformResourceType() *string
 	Timeouts() ContainerGroupTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Zones() *[]*string
+	SetZones(val *[]*string)
+	ZonesInput() *[]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -145,6 +154,7 @@ type ContainerGroup interface {
 	ResetDiagnostics()
 	ResetDnsConfig()
 	ResetDnsNameLabel()
+	ResetDnsNameLabelReusePolicy()
 	ResetExposedPort()
 	ResetId()
 	ResetIdentity()
@@ -157,8 +167,10 @@ type ContainerGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRestartPolicy()
+	ResetSubnetIds()
 	ResetTags()
 	ResetTimeouts()
+	ResetZones()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -299,6 +311,26 @@ func (j *jsiiProxy_ContainerGroup) DnsNameLabelInput() *string {
 	_jsii_.Get(
 		j,
 		"dnsNameLabelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerGroup) DnsNameLabelReusePolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsNameLabelReusePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerGroup) DnsNameLabelReusePolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsNameLabelReusePolicyInput",
 		&returns,
 	)
 	return returns
@@ -664,6 +696,26 @@ func (j *jsiiProxy_ContainerGroup) RestartPolicyInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerGroup) SubnetIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subnetIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerGroup) SubnetIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subnetIdsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerGroup) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -734,6 +786,26 @@ func (j *jsiiProxy_ContainerGroup) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerGroup) Zones() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"zones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerGroup) ZonesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"zonesInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/container_group azurerm_container_group} Resource.
 func NewContainerGroup(scope constructs.Construct, id *string, config *ContainerGroupConfig) ContainerGroup {
@@ -798,6 +870,17 @@ func (j *jsiiProxy_ContainerGroup)SetDnsNameLabel(val *string) {
 	_jsii_.Set(
 		j,
 		"dnsNameLabel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerGroup)SetDnsNameLabelReusePolicy(val *string) {
+	if err := j.validateSetDnsNameLabelReusePolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnsNameLabelReusePolicy",
 		val,
 	)
 }
@@ -939,6 +1022,17 @@ func (j *jsiiProxy_ContainerGroup)SetRestartPolicy(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ContainerGroup)SetSubnetIds(val *[]*string) {
+	if err := j.validateSetSubnetIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subnetIds",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContainerGroup)SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
@@ -946,6 +1040,17 @@ func (j *jsiiProxy_ContainerGroup)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerGroup)SetZones(val *[]*string) {
+	if err := j.validateSetZonesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zones",
 		val,
 	)
 }
@@ -1290,6 +1395,14 @@ func (c *jsiiProxy_ContainerGroup) ResetDnsNameLabel() {
 	)
 }
 
+func (c *jsiiProxy_ContainerGroup) ResetDnsNameLabelReusePolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDnsNameLabelReusePolicy",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerGroup) ResetExposedPort() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1370,6 +1483,14 @@ func (c *jsiiProxy_ContainerGroup) ResetRestartPolicy() {
 	)
 }
 
+func (c *jsiiProxy_ContainerGroup) ResetSubnetIds() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSubnetIds",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerGroup) ResetTags() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1382,6 +1503,14 @@ func (c *jsiiProxy_ContainerGroup) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerGroup) ResetZones() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetZones",
 		nil, // no parameters
 	)
 }

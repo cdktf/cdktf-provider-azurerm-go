@@ -83,6 +83,8 @@ type CdnFrontdoorRuleActionsRouteConfigurationOverrideActionOutputReference inte
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCacheBehavior()
+	ResetCacheDuration()
+	ResetCdnFrontdoorOriginGroupId()
 	ResetCompressionEnabled()
 	ResetForwardingProtocol()
 	ResetQueryStringCachingBehavior()
@@ -662,6 +664,22 @@ func (c *jsiiProxy_CdnFrontdoorRuleActionsRouteConfigurationOverrideActionOutput
 	_jsii_.InvokeVoid(
 		c,
 		"resetCacheBehavior",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnFrontdoorRuleActionsRouteConfigurationOverrideActionOutputReference) ResetCacheDuration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCacheDuration",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnFrontdoorRuleActionsRouteConfigurationOverrideActionOutputReference) ResetCdnFrontdoorOriginGroupId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCdnFrontdoorOriginGroupId",
 		nil, // no parameters
 	)
 }

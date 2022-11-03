@@ -56,11 +56,31 @@ func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) validateSetDataFileCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) validateSetDataFileGrowthInMbParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) validateSetDataFileSizeMbParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) validateSetDefaultFilePathParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) validateSetInternalValueParameters(val *MssqlVirtualMachineStorageConfigurationTempDbSettings) error {
+	return nil
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) validateSetLogFileGrowthMbParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) validateSetLogFileSizeMbParameters(val *float64) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (h *jsiiProxy_HdinsightKafkaCluster) validatePutComponentVersionParameters(
 	return nil
 }
 
+func (h *jsiiProxy_HdinsightKafkaCluster) validatePutComputeIsolationParameters(value *HdinsightKafkaClusterComputeIsolation) error {
+	return nil
+}
+
 func (h *jsiiProxy_HdinsightKafkaCluster) validatePutDiskEncryptionParameters(value interface{}) error {
 	return nil
 }

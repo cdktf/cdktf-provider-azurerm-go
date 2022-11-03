@@ -25,6 +25,15 @@ type MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference interf
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataFileCount() *float64
+	SetDataFileCount(val *float64)
+	DataFileCountInput() *float64
+	DataFileGrowthInMb() *float64
+	SetDataFileGrowthInMb(val *float64)
+	DataFileGrowthInMbInput() *float64
+	DataFileSizeMb() *float64
+	SetDataFileSizeMb(val *float64)
+	DataFileSizeMbInput() *float64
 	DefaultFilePath() *string
 	SetDefaultFilePath(val *string)
 	DefaultFilePathInput() *string
@@ -32,6 +41,12 @@ type MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference interf
 	Fqn() *string
 	InternalValue() *MssqlVirtualMachineStorageConfigurationTempDbSettings
 	SetInternalValue(val *MssqlVirtualMachineStorageConfigurationTempDbSettings)
+	LogFileGrowthMb() *float64
+	SetLogFileGrowthMb(val *float64)
+	LogFileGrowthMbInput() *float64
+	LogFileSizeMb() *float64
+	SetLogFileSizeMb(val *float64)
+	LogFileSizeMbInput() *float64
 	Luns() *[]*float64
 	SetLuns(val *[]*float64)
 	LunsInput() *[]*float64
@@ -67,6 +82,11 @@ type MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDataFileCount()
+	ResetDataFileGrowthInMb()
+	ResetDataFileSizeMb()
+	ResetLogFileGrowthMb()
+	ResetLogFileSizeMb()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -112,6 +132,66 @@ func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputRe
 	return returns
 }
 
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) DataFileCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataFileCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) DataFileCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataFileCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) DataFileGrowthInMb() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataFileGrowthInMb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) DataFileGrowthInMbInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataFileGrowthInMbInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) DataFileSizeMb() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataFileSizeMb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) DataFileSizeMbInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataFileSizeMbInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) DefaultFilePath() *string {
 	var returns *string
 	_jsii_.Get(
@@ -147,6 +227,46 @@ func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputRe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) LogFileGrowthMb() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"logFileGrowthMb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) LogFileGrowthMbInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"logFileGrowthMbInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) LogFileSizeMb() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"logFileSizeMb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) LogFileSizeMbInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"logFileSizeMbInput",
 		&returns,
 	)
 	return returns
@@ -242,6 +362,39 @@ func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputRe
 	)
 }
 
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference)SetDataFileCount(val *float64) {
+	if err := j.validateSetDataFileCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataFileCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference)SetDataFileGrowthInMb(val *float64) {
+	if err := j.validateSetDataFileGrowthInMbParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataFileGrowthInMb",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference)SetDataFileSizeMb(val *float64) {
+	if err := j.validateSetDataFileSizeMbParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataFileSizeMb",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference)SetDefaultFilePath(val *string) {
 	if err := j.validateSetDefaultFilePathParameters(val); err != nil {
 		panic(err)
@@ -260,6 +413,28 @@ func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputRe
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference)SetLogFileGrowthMb(val *float64) {
+	if err := j.validateSetLogFileGrowthMbParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logFileGrowthMb",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference)SetLogFileSizeMb(val *float64) {
+	if err := j.validateSetLogFileSizeMbParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logFileSizeMb",
 		val,
 	)
 }
@@ -481,6 +656,46 @@ func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputRe
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) ResetDataFileCount() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDataFileCount",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) ResetDataFileGrowthInMb() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDataFileGrowthInMb",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) ResetDataFileSizeMb() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDataFileSizeMb",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) ResetLogFileGrowthMb() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetLogFileGrowthMb",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) ResetLogFileSizeMb() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetLogFileSizeMb",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

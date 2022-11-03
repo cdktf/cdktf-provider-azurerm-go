@@ -451,6 +451,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "preWarmedInstanceCountInput", GoGetter: "PreWarmedInstanceCountInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCors", GoMethod: "PutCors"},
 			_jsii_.MemberMethod{JsiiMethod: "putIpRestriction", GoMethod: "PutIpRestriction"},
+			_jsii_.MemberMethod{JsiiMethod: "putScmIpRestriction", GoMethod: "PutScmIpRestriction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlwaysOn", GoMethod: "ResetAlwaysOn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppScaleLimit", GoMethod: "ResetAppScaleLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCors", GoMethod: "ResetCors"},
@@ -464,12 +465,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMinTlsVersion", GoMethod: "ResetMinTlsVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPreWarmedInstanceCount", GoMethod: "ResetPreWarmedInstanceCount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRuntimeScaleMonitoringEnabled", GoMethod: "ResetRuntimeScaleMonitoringEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetScmIpRestriction", GoMethod: "ResetScmIpRestriction"},
+			_jsii_.MemberMethod{JsiiMethod: "resetScmMinTlsVersion", GoMethod: "ResetScmMinTlsVersion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetScmType", GoMethod: "ResetScmType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetScmUseMainIpRestriction", GoMethod: "ResetScmUseMainIpRestriction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUse32BitWorkerProcess", GoMethod: "ResetUse32BitWorkerProcess"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVnetRouteAllEnabled", GoMethod: "ResetVnetRouteAllEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWebsocketsEnabled", GoMethod: "ResetWebsocketsEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "runtimeScaleMonitoringEnabled", GoGetter: "RuntimeScaleMonitoringEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "runtimeScaleMonitoringEnabledInput", GoGetter: "RuntimeScaleMonitoringEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "scmIpRestriction", GoGetter: "ScmIpRestriction"},
+			_jsii_.MemberProperty{JsiiProperty: "scmIpRestrictionInput", GoGetter: "ScmIpRestrictionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "scmMinTlsVersion", GoGetter: "ScmMinTlsVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "scmMinTlsVersionInput", GoGetter: "ScmMinTlsVersionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "scmType", GoGetter: "ScmType"},
+			_jsii_.MemberProperty{JsiiProperty: "scmTypeInput", GoGetter: "ScmTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "scmUseMainIpRestriction", GoGetter: "ScmUseMainIpRestriction"},
+			_jsii_.MemberProperty{JsiiProperty: "scmUseMainIpRestrictionInput", GoGetter: "ScmUseMainIpRestrictionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -482,6 +495,154 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigScmIpRestriction",
+		reflect.TypeOf((*DataAzurermLogicAppStandardSiteConfigScmIpRestriction)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeaders",
+		reflect.TypeOf((*DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeaders)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersList",
+		reflect.TypeOf((*DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference",
+		reflect.TypeOf((*DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetXAzureFdid", GoMethod: "ResetXAzureFdid"},
+			_jsii_.MemberMethod{JsiiMethod: "resetXFdHealthProbe", GoMethod: "ResetXFdHealthProbe"},
+			_jsii_.MemberMethod{JsiiMethod: "resetXForwardedFor", GoMethod: "ResetXForwardedFor"},
+			_jsii_.MemberMethod{JsiiMethod: "resetXForwardedHost", GoMethod: "ResetXForwardedHost"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "xAzureFdid", GoGetter: "XAzureFdid"},
+			_jsii_.MemberProperty{JsiiProperty: "xAzureFdidInput", GoGetter: "XAzureFdidInput"},
+			_jsii_.MemberProperty{JsiiProperty: "xFdHealthProbe", GoGetter: "XFdHealthProbe"},
+			_jsii_.MemberProperty{JsiiProperty: "xFdHealthProbeInput", GoGetter: "XFdHealthProbeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "xForwardedFor", GoGetter: "XForwardedFor"},
+			_jsii_.MemberProperty{JsiiProperty: "xForwardedForInput", GoGetter: "XForwardedForInput"},
+			_jsii_.MemberProperty{JsiiProperty: "xForwardedHost", GoGetter: "XForwardedHost"},
+			_jsii_.MemberProperty{JsiiProperty: "xForwardedHostInput", GoGetter: "XForwardedHostInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigScmIpRestrictionList",
+		reflect.TypeOf((*DataAzurermLogicAppStandardSiteConfigScmIpRestrictionList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference",
+		reflect.TypeOf((*DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
+			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "headers", GoGetter: "Headers"},
+			_jsii_.MemberProperty{JsiiProperty: "headersInput", GoGetter: "HeadersInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "ipAddress", GoGetter: "IpAddress"},
+			_jsii_.MemberProperty{JsiiProperty: "ipAddressInput", GoGetter: "IpAddressInput"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "priority", GoGetter: "Priority"},
+			_jsii_.MemberProperty{JsiiProperty: "priorityInput", GoGetter: "PriorityInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putHeaders", GoMethod: "PutHeaders"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAction", GoMethod: "ResetAction"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHeaders", GoMethod: "ResetHeaders"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIpAddress", GoMethod: "ResetIpAddress"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPriority", GoMethod: "ResetPriority"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServiceTag", GoMethod: "ResetServiceTag"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVirtualNetworkSubnetId", GoMethod: "ResetVirtualNetworkSubnetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceTag", GoGetter: "ServiceTag"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceTagInput", GoGetter: "ServiceTagInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkSubnetId", GoGetter: "VirtualNetworkSubnetId"},
+			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkSubnetIdInput", GoGetter: "VirtualNetworkSubnetIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -25,6 +25,8 @@ type ServicebusNamespaceDisasterRecoveryConfigConfig struct {
 	PartnerNamespaceId *string `field:"required" json:"partnerNamespaceId" yaml:"partnerNamespaceId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/servicebus_namespace_disaster_recovery_config#primary_namespace_id ServicebusNamespaceDisasterRecoveryConfig#primary_namespace_id}.
 	PrimaryNamespaceId *string `field:"required" json:"primaryNamespaceId" yaml:"primaryNamespaceId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/servicebus_namespace_disaster_recovery_config#alias_authorization_rule_id ServicebusNamespaceDisasterRecoveryConfig#alias_authorization_rule_id}.
+	AliasAuthorizationRuleId *string `field:"optional" json:"aliasAuthorizationRuleId" yaml:"aliasAuthorizationRuleId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/servicebus_namespace_disaster_recovery_config#id ServicebusNamespaceDisasterRecoveryConfig#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

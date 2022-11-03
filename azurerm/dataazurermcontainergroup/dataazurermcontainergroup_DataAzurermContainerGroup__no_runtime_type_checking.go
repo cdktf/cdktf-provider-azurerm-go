@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataAzurermContainerGroup) validateSetResourceGroupNameParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermContainerGroup) validateSetZonesParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewDataAzurermContainerGroupParameters(scope constructs.Construct, id *string, config *DataAzurermContainerGroupConfig) error {
 	return nil
 }

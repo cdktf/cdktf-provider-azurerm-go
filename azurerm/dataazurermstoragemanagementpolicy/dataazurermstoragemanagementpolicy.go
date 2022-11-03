@@ -122,6 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "tierToArchiveAfterDaysSinceLastAccessTimeGreaterThan", GoGetter: "TierToArchiveAfterDaysSinceLastAccessTimeGreaterThan"},
+			_jsii_.MemberProperty{JsiiProperty: "tierToArchiveAfterDaysSinceLastTierChangeGreaterThan", GoGetter: "TierToArchiveAfterDaysSinceLastTierChangeGreaterThan"},
 			_jsii_.MemberProperty{JsiiProperty: "tierToArchiveAfterDaysSinceModificationGreaterThan", GoGetter: "TierToArchiveAfterDaysSinceModificationGreaterThan"},
 			_jsii_.MemberProperty{JsiiProperty: "tierToCoolAfterDaysSinceLastAccessTimeGreaterThan", GoGetter: "TierToCoolAfterDaysSinceLastAccessTimeGreaterThan"},
 			_jsii_.MemberProperty{JsiiProperty: "tierToCoolAfterDaysSinceModificationGreaterThan", GoGetter: "TierToCoolAfterDaysSinceModificationGreaterThan"},
@@ -239,6 +240,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "tierToArchiveAfterDaysSinceLastTierChangeGreaterThan", GoGetter: "TierToArchiveAfterDaysSinceLastTierChangeGreaterThan"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
@@ -298,6 +300,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "tierToArchiveAfterDaysSinceLastTierChangeGreaterThan", GoGetter: "TierToArchiveAfterDaysSinceLastTierChangeGreaterThan"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {

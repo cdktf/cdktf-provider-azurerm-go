@@ -163,6 +163,30 @@ func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) validateSetDataFileCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) validateSetDataFileGrowthInMbParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) validateSetDataFileSizeMbParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) validateSetDefaultFilePathParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -174,6 +198,22 @@ func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputRe
 func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) validateSetInternalValueParameters(val *MssqlVirtualMachineStorageConfigurationTempDbSettings) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) validateSetLogFileGrowthMbParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference) validateSetLogFileSizeMbParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

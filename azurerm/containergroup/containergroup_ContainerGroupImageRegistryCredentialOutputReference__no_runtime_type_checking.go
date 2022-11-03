@@ -76,6 +76,10 @@ func (j *jsiiProxy_ContainerGroupImageRegistryCredentialOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_ContainerGroupImageRegistryCredentialOutputReference) validateSetUserAssignedIdentityIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerGroupImageRegistryCredentialOutputReference) validateSetUsernameParameters(val *string) error {
 	return nil
 }

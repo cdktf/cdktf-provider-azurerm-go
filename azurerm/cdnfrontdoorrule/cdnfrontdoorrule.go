@@ -299,6 +299,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "queryStringParameters", GoGetter: "QueryStringParameters"},
 			_jsii_.MemberProperty{JsiiProperty: "queryStringParametersInput", GoGetter: "QueryStringParametersInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCacheBehavior", GoMethod: "ResetCacheBehavior"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCacheDuration", GoMethod: "ResetCacheDuration"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCdnFrontdoorOriginGroupId", GoMethod: "ResetCdnFrontdoorOriginGroupId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompressionEnabled", GoMethod: "ResetCompressionEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForwardingProtocol", GoMethod: "ResetForwardingProtocol"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQueryStringCachingBehavior", GoMethod: "ResetQueryStringCachingBehavior"},

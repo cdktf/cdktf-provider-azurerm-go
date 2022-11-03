@@ -108,6 +108,10 @@ type WindowsFunctionAppConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_function_app#sticky_settings WindowsFunctionApp#sticky_settings}
 	StickySettings *WindowsFunctionAppStickySettings `field:"optional" json:"stickySettings" yaml:"stickySettings"`
+	// storage_account block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_function_app#storage_account WindowsFunctionApp#storage_account}
+	StorageAccount interface{} `field:"optional" json:"storageAccount" yaml:"storageAccount"`
 	// The access key which will be used to access the storage account for the Function App.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_function_app#storage_account_access_key WindowsFunctionApp#storage_account_access_key}

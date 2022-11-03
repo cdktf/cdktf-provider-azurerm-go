@@ -120,9 +120,11 @@ type LinuxFunctionApp interface {
 	SiteCredential() LinuxFunctionAppSiteCredentialList
 	StickySettings() LinuxFunctionAppStickySettingsOutputReference
 	StickySettingsInput() *LinuxFunctionAppStickySettings
+	StorageAccount() LinuxFunctionAppStorageAccountList
 	StorageAccountAccessKey() *string
 	SetStorageAccountAccessKey(val *string)
 	StorageAccountAccessKeyInput() *string
+	StorageAccountInput() interface{}
 	StorageAccountName() *string
 	SetStorageAccountName(val *string)
 	StorageAccountNameInput() *string
@@ -177,6 +179,7 @@ type LinuxFunctionApp interface {
 	PutIdentity(value *LinuxFunctionAppIdentity)
 	PutSiteConfig(value *LinuxFunctionAppSiteConfig)
 	PutStickySettings(value *LinuxFunctionAppStickySettings)
+	PutStorageAccount(value interface{})
 	PutTimeouts(value *LinuxFunctionAppTimeouts)
 	ResetAppSettings()
 	ResetAuthSettings()
@@ -198,6 +201,7 @@ type LinuxFunctionApp interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetStickySettings()
+	ResetStorageAccount()
 	ResetStorageAccountAccessKey()
 	ResetStorageAccountName()
 	ResetStorageKeyVaultSecretId()
@@ -870,6 +874,16 @@ func (j *jsiiProxy_LinuxFunctionApp) StickySettingsInput() *LinuxFunctionAppStic
 	return returns
 }
 
+func (j *jsiiProxy_LinuxFunctionApp) StorageAccount() LinuxFunctionAppStorageAccountList {
+	var returns LinuxFunctionAppStorageAccountList
+	_jsii_.Get(
+		j,
+		"storageAccount",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LinuxFunctionApp) StorageAccountAccessKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -885,6 +899,16 @@ func (j *jsiiProxy_LinuxFunctionApp) StorageAccountAccessKeyInput() *string {
 	_jsii_.Get(
 		j,
 		"storageAccountAccessKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxFunctionApp) StorageAccountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"storageAccountInput",
 		&returns,
 	)
 	return returns
@@ -1671,6 +1695,17 @@ func (l *jsiiProxy_LinuxFunctionApp) PutStickySettings(value *LinuxFunctionAppSt
 	)
 }
 
+func (l *jsiiProxy_LinuxFunctionApp) PutStorageAccount(value interface{}) {
+	if err := l.validatePutStorageAccountParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putStorageAccount",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LinuxFunctionApp) PutTimeouts(value *LinuxFunctionAppTimeouts) {
 	if err := l.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1822,6 +1857,14 @@ func (l *jsiiProxy_LinuxFunctionApp) ResetStickySettings() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetStickySettings",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxFunctionApp) ResetStorageAccount() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetStorageAccount",
 		nil, // no parameters
 	)
 }

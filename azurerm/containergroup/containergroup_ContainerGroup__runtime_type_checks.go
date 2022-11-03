@@ -328,6 +328,14 @@ func (j *jsiiProxy_ContainerGroup) validateSetDnsNameLabelParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_ContainerGroup) validateSetDnsNameLabelReusePolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerGroup) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -454,7 +462,23 @@ func (j *jsiiProxy_ContainerGroup) validateSetRestartPolicyParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_ContainerGroup) validateSetSubnetIdsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerGroup) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerGroup) validateSetZonesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -41,6 +41,8 @@ type ContainerGroupConfig struct {
 	DnsConfig *ContainerGroupDnsConfig `field:"optional" json:"dnsConfig" yaml:"dnsConfig"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/container_group#dns_name_label ContainerGroup#dns_name_label}.
 	DnsNameLabel *string `field:"optional" json:"dnsNameLabel" yaml:"dnsNameLabel"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/container_group#dns_name_label_reuse_policy ContainerGroup#dns_name_label_reuse_policy}.
+	DnsNameLabelReusePolicy *string `field:"optional" json:"dnsNameLabelReusePolicy" yaml:"dnsNameLabelReusePolicy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/container_group#exposed_port ContainerGroup#exposed_port}.
 	ExposedPort interface{} `field:"optional" json:"exposedPort" yaml:"exposedPort"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/container_group#id ContainerGroup#id}.
@@ -68,11 +70,15 @@ type ContainerGroupConfig struct {
 	NetworkProfileId *string `field:"optional" json:"networkProfileId" yaml:"networkProfileId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/container_group#restart_policy ContainerGroup#restart_policy}.
 	RestartPolicy *string `field:"optional" json:"restartPolicy" yaml:"restartPolicy"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/container_group#subnet_ids ContainerGroup#subnet_ids}.
+	SubnetIds *[]*string `field:"optional" json:"subnetIds" yaml:"subnetIds"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/container_group#tags ContainerGroup#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/container_group#timeouts ContainerGroup#timeouts}
 	Timeouts *ContainerGroupTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/container_group#zones ContainerGroup#zones}.
+	Zones *[]*string `field:"optional" json:"zones" yaml:"zones"`
 }
 

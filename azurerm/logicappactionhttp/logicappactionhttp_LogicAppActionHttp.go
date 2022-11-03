@@ -68,6 +68,9 @@ type LogicAppActionHttp interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	Queries() *map[string]*string
+	SetQueries(val *map[string]*string)
+	QueriesInput() *map[string]*string
 	// Experimental.
 	RawOverrides() interface{}
 	RunAfter() LogicAppActionHttpRunAfterList
@@ -116,6 +119,7 @@ type LogicAppActionHttp interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetQueries()
 	ResetRunAfter()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -368,6 +372,26 @@ func (j *jsiiProxy_LogicAppActionHttp) Provisioners() *[]interface{} {
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogicAppActionHttp) Queries() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"queries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogicAppActionHttp) QueriesInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"queriesInput",
 		&returns,
 	)
 	return returns
@@ -630,6 +654,17 @@ func (j *jsiiProxy_LogicAppActionHttp)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogicAppActionHttp)SetQueries(val *map[string]*string) {
+	if err := j.validateSetQueriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"queries",
 		val,
 	)
 }
@@ -923,6 +958,14 @@ func (l *jsiiProxy_LogicAppActionHttp) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogicAppActionHttp) ResetQueries() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetQueries",
 		nil, // no parameters
 	)
 }

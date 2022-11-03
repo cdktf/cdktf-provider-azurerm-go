@@ -66,6 +66,17 @@ type LogicAppStandardSiteConfigOutputReference interface {
 	RuntimeScaleMonitoringEnabled() interface{}
 	SetRuntimeScaleMonitoringEnabled(val interface{})
 	RuntimeScaleMonitoringEnabledInput() interface{}
+	ScmIpRestriction() LogicAppStandardSiteConfigScmIpRestrictionList
+	ScmIpRestrictionInput() interface{}
+	ScmMinTlsVersion() *string
+	SetScmMinTlsVersion(val *string)
+	ScmMinTlsVersionInput() *string
+	ScmType() *string
+	SetScmType(val *string)
+	ScmTypeInput() *string
+	ScmUseMainIpRestriction() interface{}
+	SetScmUseMainIpRestriction(val interface{})
+	ScmUseMainIpRestrictionInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -109,6 +120,7 @@ type LogicAppStandardSiteConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCors(value *LogicAppStandardSiteConfigCors)
 	PutIpRestriction(value interface{})
+	PutScmIpRestriction(value interface{})
 	ResetAlwaysOn()
 	ResetAppScaleLimit()
 	ResetCors()
@@ -122,6 +134,10 @@ type LogicAppStandardSiteConfigOutputReference interface {
 	ResetMinTlsVersion()
 	ResetPreWarmedInstanceCount()
 	ResetRuntimeScaleMonitoringEnabled()
+	ResetScmIpRestriction()
+	ResetScmMinTlsVersion()
+	ResetScmType()
+	ResetScmUseMainIpRestriction()
 	ResetUse32BitWorkerProcess()
 	ResetVnetRouteAllEnabled()
 	ResetWebsocketsEnabled()
@@ -450,6 +466,86 @@ func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) RuntimeScaleMonito
 	return returns
 }
 
+func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) ScmIpRestriction() LogicAppStandardSiteConfigScmIpRestrictionList {
+	var returns LogicAppStandardSiteConfigScmIpRestrictionList
+	_jsii_.Get(
+		j,
+		"scmIpRestriction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) ScmIpRestrictionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scmIpRestrictionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) ScmMinTlsVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scmMinTlsVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) ScmMinTlsVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scmMinTlsVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) ScmType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scmType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) ScmTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scmTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) ScmUseMainIpRestriction() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scmUseMainIpRestriction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) ScmUseMainIpRestrictionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scmUseMainIpRestrictionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -708,6 +804,39 @@ func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference)SetRuntimeScaleMoni
 	_jsii_.Set(
 		j,
 		"runtimeScaleMonitoringEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference)SetScmMinTlsVersion(val *string) {
+	if err := j.validateSetScmMinTlsVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scmMinTlsVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference)SetScmType(val *string) {
+	if err := j.validateSetScmTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scmType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference)SetScmUseMainIpRestriction(val interface{}) {
+	if err := j.validateSetScmUseMainIpRestrictionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scmUseMainIpRestriction",
 		val,
 	)
 }
@@ -975,6 +1104,17 @@ func (l *jsiiProxy_LogicAppStandardSiteConfigOutputReference) PutIpRestriction(v
 	)
 }
 
+func (l *jsiiProxy_LogicAppStandardSiteConfigOutputReference) PutScmIpRestriction(value interface{}) {
+	if err := l.validatePutScmIpRestrictionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putScmIpRestriction",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LogicAppStandardSiteConfigOutputReference) ResetAlwaysOn() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1075,6 +1215,38 @@ func (l *jsiiProxy_LogicAppStandardSiteConfigOutputReference) ResetRuntimeScaleM
 	_jsii_.InvokeVoid(
 		l,
 		"resetRuntimeScaleMonitoringEnabled",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogicAppStandardSiteConfigOutputReference) ResetScmIpRestriction() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetScmIpRestriction",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogicAppStandardSiteConfigOutputReference) ResetScmMinTlsVersion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetScmMinTlsVersion",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogicAppStandardSiteConfigOutputReference) ResetScmType() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetScmType",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogicAppStandardSiteConfigOutputReference) ResetScmUseMainIpRestriction() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetScmUseMainIpRestriction",
 		nil, // no parameters
 	)
 }

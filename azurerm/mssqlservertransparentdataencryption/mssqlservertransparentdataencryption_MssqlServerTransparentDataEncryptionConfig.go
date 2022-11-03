@@ -21,6 +21,8 @@ type MssqlServerTransparentDataEncryptionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_server_transparent_data_encryption#server_id MssqlServerTransparentDataEncryption#server_id}.
 	ServerId *string `field:"required" json:"serverId" yaml:"serverId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_server_transparent_data_encryption#auto_rotation_enabled MssqlServerTransparentDataEncryption#auto_rotation_enabled}.
+	AutoRotationEnabled interface{} `field:"optional" json:"autoRotationEnabled" yaml:"autoRotationEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_server_transparent_data_encryption#id MssqlServerTransparentDataEncryption#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

@@ -96,6 +96,10 @@ func (j *jsiiProxy_ContainerGroup) validateSetDnsNameLabelParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_ContainerGroup) validateSetDnsNameLabelReusePolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerGroup) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -140,7 +144,15 @@ func (j *jsiiProxy_ContainerGroup) validateSetRestartPolicyParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_ContainerGroup) validateSetSubnetIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerGroup) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerGroup) validateSetZonesParameters(val *[]*string) error {
 	return nil
 }
 

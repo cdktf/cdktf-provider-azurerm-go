@@ -78,6 +78,7 @@ type DataFactoryDatasetParquetHttpServerLocationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDynamicFilenameEnabled()
 	ResetDynamicPathEnabled()
+	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -599,6 +600,14 @@ func (d *jsiiProxy_DataFactoryDatasetParquetHttpServerLocationOutputReference) R
 	_jsii_.InvokeVoid(
 		d,
 		"resetDynamicPathEnabled",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryDatasetParquetHttpServerLocationOutputReference) ResetPath() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPath",
 		nil, // no parameters
 	)
 }

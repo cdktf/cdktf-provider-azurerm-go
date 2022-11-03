@@ -100,6 +100,10 @@ func (j *jsiiProxy_LogicAppActionHttp) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_LogicAppActionHttp) validateSetQueriesParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppActionHttp) validateSetUriParameters(val *string) error {
 	return nil
 }

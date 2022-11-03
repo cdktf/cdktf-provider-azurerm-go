@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/servicebus_namespace_disaster_recovery_config azurerm_servicebus_namespace_disaster_recovery_config}.
 type DataAzurermServicebusNamespaceDisasterRecoveryConfig interface {
 	cdktf.TerraformDataSource
+	AliasAuthorizationRuleId() *string
+	SetAliasAuthorizationRuleId(val *string)
+	AliasAuthorizationRuleIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -98,6 +101,7 @@ type DataAzurermServicebusNamespaceDisasterRecoveryConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DataAzurermServicebusNamespaceDisasterRecoveryConfigTimeouts)
+	ResetAliasAuthorizationRuleId()
 	ResetId()
 	ResetNamespaceId()
 	ResetNamespaceName()
@@ -119,6 +123,26 @@ type DataAzurermServicebusNamespaceDisasterRecoveryConfig interface {
 // The jsii proxy struct for DataAzurermServicebusNamespaceDisasterRecoveryConfig
 type jsiiProxy_DataAzurermServicebusNamespaceDisasterRecoveryConfig struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataAzurermServicebusNamespaceDisasterRecoveryConfig) AliasAuthorizationRuleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aliasAuthorizationRuleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermServicebusNamespaceDisasterRecoveryConfig) AliasAuthorizationRuleIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aliasAuthorizationRuleIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAzurermServicebusNamespaceDisasterRecoveryConfig) CdktfStack() cdktf.TerraformStack {
@@ -461,6 +485,17 @@ func NewDataAzurermServicebusNamespaceDisasterRecoveryConfig_Override(d DataAzur
 	)
 }
 
+func (j *jsiiProxy_DataAzurermServicebusNamespaceDisasterRecoveryConfig)SetAliasAuthorizationRuleId(val *string) {
+	if err := j.validateSetAliasAuthorizationRuleIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aliasAuthorizationRuleId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataAzurermServicebusNamespaceDisasterRecoveryConfig)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
@@ -795,6 +830,14 @@ func (d *jsiiProxy_DataAzurermServicebusNamespaceDisasterRecoveryConfig) PutTime
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAzurermServicebusNamespaceDisasterRecoveryConfig) ResetAliasAuthorizationRuleId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAliasAuthorizationRuleId",
+		nil, // no parameters
 	)
 }
 

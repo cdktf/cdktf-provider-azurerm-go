@@ -83,6 +83,7 @@ type DataFactoryDatasetParquetAzureBlobStorageLocationOutputReference interface 
 	ResetDynamicFilenameEnabled()
 	ResetDynamicPathEnabled()
 	ResetFilename()
+	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -651,6 +652,14 @@ func (d *jsiiProxy_DataFactoryDatasetParquetAzureBlobStorageLocationOutputRefere
 	_jsii_.InvokeVoid(
 		d,
 		"resetFilename",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryDatasetParquetAzureBlobStorageLocationOutputReference) ResetPath() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPath",
 		nil, // no parameters
 	)
 }

@@ -86,6 +86,8 @@ type WindowsVirtualMachineScaleSet interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GalleryApplication() WindowsVirtualMachineScaleSetGalleryApplicationList
+	GalleryApplicationInput() interface{}
 	GalleryApplications() WindowsVirtualMachineScaleSetGalleryApplicationsList
 	GalleryApplicationsInput() interface{}
 	HealthProbeId() *string
@@ -247,6 +249,7 @@ type WindowsVirtualMachineScaleSet interface {
 	PutBootDiagnostics(value *WindowsVirtualMachineScaleSetBootDiagnostics)
 	PutDataDisk(value interface{})
 	PutExtension(value interface{})
+	PutGalleryApplication(value interface{})
 	PutGalleryApplications(value interface{})
 	PutIdentity(value *WindowsVirtualMachineScaleSetIdentity)
 	PutNetworkInterface(value interface{})
@@ -278,6 +281,7 @@ type WindowsVirtualMachineScaleSet interface {
 	ResetExtension()
 	ResetExtensionOperationsEnabled()
 	ResetExtensionsTimeBudget()
+	ResetGalleryApplication()
 	ResetGalleryApplications()
 	ResetHealthProbeId()
 	ResetHostGroupId()
@@ -784,6 +788,26 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSet) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineScaleSet) GalleryApplication() WindowsVirtualMachineScaleSetGalleryApplicationList {
+	var returns WindowsVirtualMachineScaleSetGalleryApplicationList
+	_jsii_.Get(
+		j,
+		"galleryApplication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineScaleSet) GalleryApplicationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"galleryApplicationInput",
 		&returns,
 	)
 	return returns
@@ -2497,6 +2521,17 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSet) PutExtension(value interface{}
 	)
 }
 
+func (w *jsiiProxy_WindowsVirtualMachineScaleSet) PutGalleryApplication(value interface{}) {
+	if err := w.validatePutGalleryApplicationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putGalleryApplication",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WindowsVirtualMachineScaleSet) PutGalleryApplications(value interface{}) {
 	if err := w.validatePutGalleryApplicationsParameters(value); err != nil {
 		panic(err)
@@ -2783,6 +2818,14 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSet) ResetExtensionsTimeBudget() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetExtensionsTimeBudget",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsVirtualMachineScaleSet) ResetGalleryApplication() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetGalleryApplication",
 		nil, // no parameters
 	)
 }

@@ -32,5 +32,7 @@ type DataAzurermContainerGroupConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/d/container_group#timeouts DataAzurermContainerGroup#timeouts}
 	Timeouts *DataAzurermContainerGroupTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/d/container_group#zones DataAzurermContainerGroup#zones}.
+	Zones *[]*string `field:"optional" json:"zones" yaml:"zones"`
 }
 

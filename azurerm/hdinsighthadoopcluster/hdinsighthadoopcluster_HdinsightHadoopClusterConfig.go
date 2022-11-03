@@ -41,6 +41,10 @@ type HdinsightHadoopClusterConfig struct {
 	Roles *HdinsightHadoopClusterRoles `field:"required" json:"roles" yaml:"roles"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_hadoop_cluster#tier HdinsightHadoopCluster#tier}.
 	Tier *string `field:"required" json:"tier" yaml:"tier"`
+	// compute_isolation block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_hadoop_cluster#compute_isolation HdinsightHadoopCluster#compute_isolation}
+	ComputeIsolation *HdinsightHadoopClusterComputeIsolation `field:"optional" json:"computeIsolation" yaml:"computeIsolation"`
 	// disk_encryption block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_hadoop_cluster#disk_encryption HdinsightHadoopCluster#disk_encryption}

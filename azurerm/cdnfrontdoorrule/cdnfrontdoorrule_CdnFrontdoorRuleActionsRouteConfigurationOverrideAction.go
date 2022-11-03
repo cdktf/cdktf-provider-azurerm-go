@@ -2,12 +2,12 @@ package cdnfrontdoorrule
 
 
 type CdnFrontdoorRuleActionsRouteConfigurationOverrideAction struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_rule#cache_duration CdnFrontdoorRule#cache_duration}.
-	CacheDuration *string `field:"required" json:"cacheDuration" yaml:"cacheDuration"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_rule#cdn_frontdoor_origin_group_id CdnFrontdoorRule#cdn_frontdoor_origin_group_id}.
-	CdnFrontdoorOriginGroupId *string `field:"required" json:"cdnFrontdoorOriginGroupId" yaml:"cdnFrontdoorOriginGroupId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_rule#cache_behavior CdnFrontdoorRule#cache_behavior}.
 	CacheBehavior *string `field:"optional" json:"cacheBehavior" yaml:"cacheBehavior"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_rule#cache_duration CdnFrontdoorRule#cache_duration}.
+	CacheDuration *string `field:"optional" json:"cacheDuration" yaml:"cacheDuration"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_rule#cdn_frontdoor_origin_group_id CdnFrontdoorRule#cdn_frontdoor_origin_group_id}.
+	CdnFrontdoorOriginGroupId *string `field:"optional" json:"cdnFrontdoorOriginGroupId" yaml:"cdnFrontdoorOriginGroupId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_rule#compression_enabled CdnFrontdoorRule#compression_enabled}.
 	CompressionEnabled interface{} `field:"optional" json:"compressionEnabled" yaml:"compressionEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_rule#forwarding_protocol CdnFrontdoorRule#forwarding_protocol}.

@@ -72,6 +72,10 @@ func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) validateSetStreamsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -19,6 +19,8 @@ type HdinsightKafkaCluster interface {
 	ClusterVersionInput() *string
 	ComponentVersion() HdinsightKafkaClusterComponentVersionOutputReference
 	ComponentVersionInput() *HdinsightKafkaClusterComponentVersion
+	ComputeIsolation() HdinsightKafkaClusterComputeIsolationOutputReference
+	ComputeIsolationInput() *HdinsightKafkaClusterComputeIsolation
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -140,6 +142,7 @@ type HdinsightKafkaCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutComponentVersion(value *HdinsightKafkaClusterComponentVersion)
+	PutComputeIsolation(value *HdinsightKafkaClusterComputeIsolation)
 	PutDiskEncryption(value interface{})
 	PutExtension(value *HdinsightKafkaClusterExtension)
 	PutGateway(value *HdinsightKafkaClusterGateway)
@@ -152,6 +155,7 @@ type HdinsightKafkaCluster interface {
 	PutStorageAccount(value interface{})
 	PutStorageAccountGen2(value *HdinsightKafkaClusterStorageAccountGen2)
 	PutTimeouts(value *HdinsightKafkaClusterTimeouts)
+	ResetComputeIsolation()
 	ResetDiskEncryption()
 	ResetEncryptionInTransitEnabled()
 	ResetExtension()
@@ -229,6 +233,26 @@ func (j *jsiiProxy_HdinsightKafkaCluster) ComponentVersionInput() *HdinsightKafk
 	_jsii_.Get(
 		j,
 		"componentVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightKafkaCluster) ComputeIsolation() HdinsightKafkaClusterComputeIsolationOutputReference {
+	var returns HdinsightKafkaClusterComputeIsolationOutputReference
+	_jsii_.Get(
+		j,
+		"computeIsolation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightKafkaCluster) ComputeIsolationInput() *HdinsightKafkaClusterComputeIsolation {
+	var returns *HdinsightKafkaClusterComputeIsolation
+	_jsii_.Get(
+		j,
+		"computeIsolationInput",
 		&returns,
 	)
 	return returns
@@ -1247,6 +1271,17 @@ func (h *jsiiProxy_HdinsightKafkaCluster) PutComponentVersion(value *HdinsightKa
 	)
 }
 
+func (h *jsiiProxy_HdinsightKafkaCluster) PutComputeIsolation(value *HdinsightKafkaClusterComputeIsolation) {
+	if err := h.validatePutComputeIsolationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putComputeIsolation",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_HdinsightKafkaCluster) PutDiskEncryption(value interface{}) {
 	if err := h.validatePutDiskEncryptionParameters(value); err != nil {
 		panic(err)
@@ -1376,6 +1411,14 @@ func (h *jsiiProxy_HdinsightKafkaCluster) PutTimeouts(value *HdinsightKafkaClust
 		h,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (h *jsiiProxy_HdinsightKafkaCluster) ResetComputeIsolation() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetComputeIsolation",
+		nil, // no parameters
 	)
 }
 

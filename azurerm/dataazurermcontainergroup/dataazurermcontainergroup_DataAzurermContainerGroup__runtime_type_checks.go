@@ -162,6 +162,14 @@ func (j *jsiiProxy_DataAzurermContainerGroup) validateSetResourceGroupNameParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermContainerGroup) validateSetZonesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAzurermContainerGroupParameters(scope constructs.Construct, id *string, config *DataAzurermContainerGroupConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

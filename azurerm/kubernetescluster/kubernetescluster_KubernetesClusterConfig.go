@@ -142,6 +142,10 @@ type KubernetesClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#windows_profile KubernetesCluster#windows_profile}
 	WindowsProfile *KubernetesClusterWindowsProfile `field:"optional" json:"windowsProfile" yaml:"windowsProfile"`
+	// workload_autoscaler_profile block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#workload_autoscaler_profile KubernetesCluster#workload_autoscaler_profile}
+	WorkloadAutoscalerProfile *KubernetesClusterWorkloadAutoscalerProfile `field:"optional" json:"workloadAutoscalerProfile" yaml:"workloadAutoscalerProfile"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#workload_identity_enabled KubernetesCluster#workload_identity_enabled}.
 	WorkloadIdentityEnabled interface{} `field:"optional" json:"workloadIdentityEnabled" yaml:"workloadIdentityEnabled"`
 }

@@ -19,6 +19,8 @@ type HdinsightSparkCluster interface {
 	ClusterVersionInput() *string
 	ComponentVersion() HdinsightSparkClusterComponentVersionOutputReference
 	ComponentVersionInput() *HdinsightSparkClusterComponentVersion
+	ComputeIsolation() HdinsightSparkClusterComputeIsolationOutputReference
+	ComputeIsolationInput() *HdinsightSparkClusterComputeIsolation
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -137,6 +139,7 @@ type HdinsightSparkCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutComponentVersion(value *HdinsightSparkClusterComponentVersion)
+	PutComputeIsolation(value *HdinsightSparkClusterComputeIsolation)
 	PutDiskEncryption(value interface{})
 	PutExtension(value *HdinsightSparkClusterExtension)
 	PutGateway(value *HdinsightSparkClusterGateway)
@@ -148,6 +151,7 @@ type HdinsightSparkCluster interface {
 	PutStorageAccount(value interface{})
 	PutStorageAccountGen2(value *HdinsightSparkClusterStorageAccountGen2)
 	PutTimeouts(value *HdinsightSparkClusterTimeouts)
+	ResetComputeIsolation()
 	ResetDiskEncryption()
 	ResetEncryptionInTransitEnabled()
 	ResetExtension()
@@ -224,6 +228,26 @@ func (j *jsiiProxy_HdinsightSparkCluster) ComponentVersionInput() *HdinsightSpar
 	_jsii_.Get(
 		j,
 		"componentVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightSparkCluster) ComputeIsolation() HdinsightSparkClusterComputeIsolationOutputReference {
+	var returns HdinsightSparkClusterComputeIsolationOutputReference
+	_jsii_.Get(
+		j,
+		"computeIsolation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightSparkCluster) ComputeIsolationInput() *HdinsightSparkClusterComputeIsolation {
+	var returns *HdinsightSparkClusterComputeIsolation
+	_jsii_.Get(
+		j,
+		"computeIsolationInput",
 		&returns,
 	)
 	return returns
@@ -1212,6 +1236,17 @@ func (h *jsiiProxy_HdinsightSparkCluster) PutComponentVersion(value *HdinsightSp
 	)
 }
 
+func (h *jsiiProxy_HdinsightSparkCluster) PutComputeIsolation(value *HdinsightSparkClusterComputeIsolation) {
+	if err := h.validatePutComputeIsolationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putComputeIsolation",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_HdinsightSparkCluster) PutDiskEncryption(value interface{}) {
 	if err := h.validatePutDiskEncryptionParameters(value); err != nil {
 		panic(err)
@@ -1330,6 +1365,14 @@ func (h *jsiiProxy_HdinsightSparkCluster) PutTimeouts(value *HdinsightSparkClust
 		h,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (h *jsiiProxy_HdinsightSparkCluster) ResetComputeIsolation() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetComputeIsolation",
+		nil, // no parameters
 	)
 }
 

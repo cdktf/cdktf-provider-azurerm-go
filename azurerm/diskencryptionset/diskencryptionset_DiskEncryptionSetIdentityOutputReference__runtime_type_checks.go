@@ -163,6 +163,14 @@ func (j *jsiiProxy_DiskEncryptionSetIdentityOutputReference) validateSetComplexO
 	return nil
 }
 
+func (j *jsiiProxy_DiskEncryptionSetIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DiskEncryptionSetIdentityOutputReference) validateSetInternalValueParameters(val *DiskEncryptionSetIdentity) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

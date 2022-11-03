@@ -40,6 +40,7 @@ type DataAzurermStorageManagementPolicyRuleActionsVersionOutputReference interfa
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TierToArchiveAfterDaysSinceLastTierChangeGreaterThan() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -174,6 +175,16 @@ func (j *jsiiProxy_DataAzurermStorageManagementPolicyRuleActionsVersionOutputRef
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageManagementPolicyRuleActionsVersionOutputReference) TierToArchiveAfterDaysSinceLastTierChangeGreaterThan() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tierToArchiveAfterDaysSinceLastTierChangeGreaterThan",
 		&returns,
 	)
 	return returns

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validat
 	return nil
 }
 
+func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validatePutScmIpRestrictionParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -109,6 +113,18 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validat
 }
 
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetRuntimeScaleMonitoringEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetScmMinTlsVersionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetScmTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetScmUseMainIpRestrictionParameters(val interface{}) error {
 	return nil
 }
 

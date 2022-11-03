@@ -27,6 +27,7 @@ type DataAzurermSynapseWorkspaceIdentityOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdentityIds() *[]*string
 	InternalValue() *DataAzurermSynapseWorkspaceIdentity
 	SetInternalValue(val *DataAzurermSynapseWorkspaceIdentity)
 	PrincipalId() *string
@@ -114,6 +115,16 @@ func (j *jsiiProxy_DataAzurermSynapseWorkspaceIdentityOutputReference) Fqn() *st
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermSynapseWorkspaceIdentityOutputReference) IdentityIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIds",
 		&returns,
 	)
 	return returns

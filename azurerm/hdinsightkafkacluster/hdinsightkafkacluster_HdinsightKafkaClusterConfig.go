@@ -41,6 +41,10 @@ type HdinsightKafkaClusterConfig struct {
 	Roles *HdinsightKafkaClusterRoles `field:"required" json:"roles" yaml:"roles"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_kafka_cluster#tier HdinsightKafkaCluster#tier}.
 	Tier *string `field:"required" json:"tier" yaml:"tier"`
+	// compute_isolation block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_kafka_cluster#compute_isolation HdinsightKafkaCluster#compute_isolation}
+	ComputeIsolation *HdinsightKafkaClusterComputeIsolation `field:"optional" json:"computeIsolation" yaml:"computeIsolation"`
 	// disk_encryption block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_kafka_cluster#disk_encryption HdinsightKafkaCluster#disk_encryption}

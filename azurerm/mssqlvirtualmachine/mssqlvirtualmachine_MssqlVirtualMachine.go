@@ -12,6 +12,8 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_virtual_machine azurerm_mssql_virtual_machine}.
 type MssqlVirtualMachine interface {
 	cdktf.TerraformResource
+	Assessment() MssqlVirtualMachineAssessmentOutputReference
+	AssessmentInput() *MssqlVirtualMachineAssessment
 	AutoBackup() MssqlVirtualMachineAutoBackupOutputReference
 	AutoBackupInput() *MssqlVirtualMachineAutoBackup
 	AutoPatching() MssqlVirtualMachineAutoPatchingOutputReference
@@ -120,11 +122,13 @@ type MssqlVirtualMachine interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAssessment(value *MssqlVirtualMachineAssessment)
 	PutAutoBackup(value *MssqlVirtualMachineAutoBackup)
 	PutAutoPatching(value *MssqlVirtualMachineAutoPatching)
 	PutKeyVaultCredential(value *MssqlVirtualMachineKeyVaultCredential)
 	PutStorageConfiguration(value *MssqlVirtualMachineStorageConfiguration)
 	PutTimeouts(value *MssqlVirtualMachineTimeouts)
+	ResetAssessment()
 	ResetAutoBackup()
 	ResetAutoPatching()
 	ResetId()
@@ -153,6 +157,26 @@ type MssqlVirtualMachine interface {
 // The jsii proxy struct for MssqlVirtualMachine
 type jsiiProxy_MssqlVirtualMachine struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_MssqlVirtualMachine) Assessment() MssqlVirtualMachineAssessmentOutputReference {
+	var returns MssqlVirtualMachineAssessmentOutputReference
+	_jsii_.Get(
+		j,
+		"assessment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlVirtualMachine) AssessmentInput() *MssqlVirtualMachineAssessment {
+	var returns *MssqlVirtualMachineAssessment
+	_jsii_.Get(
+		j,
+		"assessmentInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_MssqlVirtualMachine) AutoBackup() MssqlVirtualMachineAutoBackupOutputReference {
@@ -1017,6 +1041,17 @@ func (m *jsiiProxy_MssqlVirtualMachine) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (m *jsiiProxy_MssqlVirtualMachine) PutAssessment(value *MssqlVirtualMachineAssessment) {
+	if err := m.validatePutAssessmentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putAssessment",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MssqlVirtualMachine) PutAutoBackup(value *MssqlVirtualMachineAutoBackup) {
 	if err := m.validatePutAutoBackupParameters(value); err != nil {
 		panic(err)
@@ -1069,6 +1104,14 @@ func (m *jsiiProxy_MssqlVirtualMachine) PutTimeouts(value *MssqlVirtualMachineTi
 		m,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MssqlVirtualMachine) ResetAssessment() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAssessment",
+		nil, // no parameters
 	)
 }
 

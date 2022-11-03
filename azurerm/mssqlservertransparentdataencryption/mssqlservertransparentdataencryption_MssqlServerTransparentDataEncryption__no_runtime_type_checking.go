@@ -60,6 +60,10 @@ func validateMssqlServerTransparentDataEncryption_IsConstructParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_MssqlServerTransparentDataEncryption) validateSetAutoRotationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlServerTransparentDataEncryption) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -17,6 +17,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "clusterVersionInput", GoGetter: "ClusterVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "componentVersion", GoGetter: "ComponentVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "componentVersionInput", GoGetter: "ComponentVersionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "computeIsolation", GoGetter: "ComputeIsolation"},
+			_jsii_.MemberProperty{JsiiProperty: "computeIsolationInput", GoGetter: "ComputeIsolationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -61,6 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putComponentVersion", GoMethod: "PutComponentVersion"},
+			_jsii_.MemberMethod{JsiiMethod: "putComputeIsolation", GoMethod: "PutComputeIsolation"},
 			_jsii_.MemberMethod{JsiiMethod: "putDiskEncryption", GoMethod: "PutDiskEncryption"},
 			_jsii_.MemberMethod{JsiiMethod: "putExtension", GoMethod: "PutExtension"},
 			_jsii_.MemberMethod{JsiiMethod: "putGateway", GoMethod: "PutGateway"},
@@ -73,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putStorageAccountGen2", GoMethod: "PutStorageAccountGen2"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetComputeIsolation", GoMethod: "ResetComputeIsolation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskEncryption", GoMethod: "ResetDiskEncryption"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEncryptionInTransitEnabled", GoMethod: "ResetEncryptionInTransitEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExtension", GoMethod: "ResetExtension"},
@@ -154,6 +158,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_HdinsightInteractiveQueryClusterComponentVersionOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.hdinsightInteractiveQueryCluster.HdinsightInteractiveQueryClusterComputeIsolation",
+		reflect.TypeOf((*HdinsightInteractiveQueryClusterComputeIsolation)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.hdinsightInteractiveQueryCluster.HdinsightInteractiveQueryClusterComputeIsolationOutputReference",
+		reflect.TypeOf((*HdinsightInteractiveQueryClusterComputeIsolationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "computeIsolationEnabled", GoGetter: "ComputeIsolationEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "computeIsolationEnabledInput", GoGetter: "ComputeIsolationEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hostSku", GoGetter: "HostSku"},
+			_jsii_.MemberProperty{JsiiProperty: "hostSkuInput", GoGetter: "HostSkuInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetComputeIsolationEnabled", GoMethod: "ResetComputeIsolationEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHostSku", GoMethod: "ResetHostSku"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_HdinsightInteractiveQueryClusterComputeIsolationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -131,6 +131,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putServicePrincipal", GoMethod: "PutServicePrincipal"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putWindowsProfile", GoMethod: "PutWindowsProfile"},
+			_jsii_.MemberMethod{JsiiMethod: "putWorkloadAutoscalerProfile", GoMethod: "PutWorkloadAutoscalerProfile"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAciConnectorLinux", GoMethod: "ResetAciConnectorLinux"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApiServerAuthorizedIpRanges", GoMethod: "ResetApiServerAuthorizedIpRanges"},
@@ -172,6 +173,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWindowsProfile", GoMethod: "ResetWindowsProfile"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadAutoscalerProfile", GoMethod: "ResetWorkloadAutoscalerProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadIdentityEnabled", GoMethod: "ResetWorkloadIdentityEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},
@@ -196,6 +198,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "windowsProfile", GoGetter: "WindowsProfile"},
 			_jsii_.MemberProperty{JsiiProperty: "windowsProfileInput", GoGetter: "WindowsProfileInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workloadAutoscalerProfile", GoGetter: "WorkloadAutoscalerProfile"},
+			_jsii_.MemberProperty{JsiiProperty: "workloadAutoscalerProfileInput", GoGetter: "WorkloadAutoscalerProfileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityEnabled", GoGetter: "WorkloadIdentityEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityEnabledInput", GoGetter: "WorkloadIdentityEnabledInput"},
 		},
@@ -2007,6 +2011,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KubernetesClusterWindowsProfileOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfile",
+		reflect.TypeOf((*KubernetesClusterWorkloadAutoscalerProfile)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference",
+		reflect.TypeOf((*KubernetesClusterWorkloadAutoscalerProfileOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "kedaEnabled", GoGetter: "KedaEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "kedaEnabledInput", GoGetter: "KedaEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKedaEnabled", GoMethod: "ResetKedaEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KubernetesClusterWorkloadAutoscalerProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

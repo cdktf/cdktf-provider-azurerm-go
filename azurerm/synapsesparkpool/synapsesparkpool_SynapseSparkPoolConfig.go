@@ -50,6 +50,10 @@ type SynapseSparkPoolConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_spark_pool#library_requirement SynapseSparkPool#library_requirement}
 	LibraryRequirement *SynapseSparkPoolLibraryRequirement `field:"optional" json:"libraryRequirement" yaml:"libraryRequirement"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_spark_pool#max_executors SynapseSparkPool#max_executors}.
+	MaxExecutors *float64 `field:"optional" json:"maxExecutors" yaml:"maxExecutors"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_spark_pool#min_executors SynapseSparkPool#min_executors}.
+	MinExecutors *float64 `field:"optional" json:"minExecutors" yaml:"minExecutors"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_spark_pool#node_count SynapseSparkPool#node_count}.
 	NodeCount *float64 `field:"optional" json:"nodeCount" yaml:"nodeCount"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_spark_pool#session_level_packages_enabled SynapseSparkPool#session_level_packages_enabled}.

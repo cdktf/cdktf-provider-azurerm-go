@@ -80,6 +80,10 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validatePutExtensionParameters(v
 	return nil
 }
 
+func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validatePutGalleryApplicationParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validatePutGalleryApplicationsParameters(value interface{}) error {
 	return nil
 }

@@ -19,20 +19,12 @@ type SynapseWorkspaceConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// identity block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace#identity SynapseWorkspace#identity}
-	Identity *SynapseWorkspaceIdentity `field:"required" json:"identity" yaml:"identity"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace#location SynapseWorkspace#location}.
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace#name SynapseWorkspace#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace#resource_group_name SynapseWorkspace#resource_group_name}.
 	ResourceGroupName *string `field:"required" json:"resourceGroupName" yaml:"resourceGroupName"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace#sql_administrator_login SynapseWorkspace#sql_administrator_login}.
-	SqlAdministratorLogin *string `field:"required" json:"sqlAdministratorLogin" yaml:"sqlAdministratorLogin"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace#sql_administrator_login_password SynapseWorkspace#sql_administrator_login_password}.
-	SqlAdministratorLoginPassword *string `field:"required" json:"sqlAdministratorLoginPassword" yaml:"sqlAdministratorLoginPassword"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace#storage_data_lake_gen2_filesystem_id SynapseWorkspace#storage_data_lake_gen2_filesystem_id}.
 	StorageDataLakeGen2FilesystemId *string `field:"required" json:"storageDataLakeGen2FilesystemId" yaml:"storageDataLakeGen2FilesystemId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace#aad_admin SynapseWorkspace#aad_admin}.
@@ -58,6 +50,10 @@ type SynapseWorkspaceConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// identity block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace#identity SynapseWorkspace#identity}
+	Identity *SynapseWorkspaceIdentity `field:"optional" json:"identity" yaml:"identity"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace#linking_allowed_for_aad_tenant_ids SynapseWorkspace#linking_allowed_for_aad_tenant_ids}.
 	LinkingAllowedForAadTenantIds *[]*string `field:"optional" json:"linkingAllowedForAadTenantIds" yaml:"linkingAllowedForAadTenantIds"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace#managed_resource_group_name SynapseWorkspace#managed_resource_group_name}.
@@ -70,6 +66,10 @@ type SynapseWorkspaceConfig struct {
 	PurviewId *string `field:"optional" json:"purviewId" yaml:"purviewId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace#sql_aad_admin SynapseWorkspace#sql_aad_admin}.
 	SqlAadAdmin interface{} `field:"optional" json:"sqlAadAdmin" yaml:"sqlAadAdmin"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace#sql_administrator_login SynapseWorkspace#sql_administrator_login}.
+	SqlAdministratorLogin *string `field:"optional" json:"sqlAdministratorLogin" yaml:"sqlAdministratorLogin"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace#sql_administrator_login_password SynapseWorkspace#sql_administrator_login_password}.
+	SqlAdministratorLoginPassword *string `field:"optional" json:"sqlAdministratorLoginPassword" yaml:"sqlAdministratorLoginPassword"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace#sql_identity_control_enabled SynapseWorkspace#sql_identity_control_enabled}.
 	SqlIdentityControlEnabled interface{} `field:"optional" json:"sqlIdentityControlEnabled" yaml:"sqlIdentityControlEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace#tags SynapseWorkspace#tags}.

@@ -76,6 +76,10 @@ func (l *jsiiProxy_LinuxFunctionApp) validatePutStickySettingsParameters(value *
 	return nil
 }
 
+func (l *jsiiProxy_LinuxFunctionApp) validatePutStorageAccountParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxFunctionApp) validatePutTimeoutsParameters(value *LinuxFunctionAppTimeouts) error {
 	return nil
 }

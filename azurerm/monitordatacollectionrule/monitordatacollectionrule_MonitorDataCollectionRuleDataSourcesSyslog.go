@@ -8,5 +8,7 @@ type MonitorDataCollectionRuleDataSourcesSyslog struct {
 	LogLevels *[]*string `field:"required" json:"logLevels" yaml:"logLevels"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_data_collection_rule#name MonitorDataCollectionRule#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}.
+	Streams *[]*string `field:"optional" json:"streams" yaml:"streams"`
 }
 

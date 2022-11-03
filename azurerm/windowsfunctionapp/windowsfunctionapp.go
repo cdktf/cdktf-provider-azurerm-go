@@ -84,6 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putIdentity", GoMethod: "PutIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "putSiteConfig", GoMethod: "PutSiteConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putStickySettings", GoMethod: "PutStickySettings"},
+			_jsii_.MemberMethod{JsiiMethod: "putStorageAccount", GoMethod: "PutStorageAccount"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppSettings", GoMethod: "ResetAppSettings"},
@@ -104,6 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetKeyVaultReferenceIdentityId", GoMethod: "ResetKeyVaultReferenceIdentityId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStickySettings", GoMethod: "ResetStickySettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStorageAccount", GoMethod: "ResetStorageAccount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStorageAccountAccessKey", GoMethod: "ResetStorageAccountAccessKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStorageAccountName", GoMethod: "ResetStorageAccountName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStorageKeyVaultSecretId", GoMethod: "ResetStorageKeyVaultSecretId"},
@@ -120,8 +122,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "siteCredential", GoGetter: "SiteCredential"},
 			_jsii_.MemberProperty{JsiiProperty: "stickySettings", GoGetter: "StickySettings"},
 			_jsii_.MemberProperty{JsiiProperty: "stickySettingsInput", GoGetter: "StickySettingsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "storageAccount", GoGetter: "StorageAccount"},
 			_jsii_.MemberProperty{JsiiProperty: "storageAccountAccessKey", GoGetter: "StorageAccountAccessKey"},
 			_jsii_.MemberProperty{JsiiProperty: "storageAccountAccessKeyInput", GoGetter: "StorageAccountAccessKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "storageAccountInput", GoGetter: "StorageAccountInput"},
 			_jsii_.MemberProperty{JsiiProperty: "storageAccountName", GoGetter: "StorageAccountName"},
 			_jsii_.MemberProperty{JsiiProperty: "storageAccountNameInput", GoGetter: "StorageAccountNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "storageKeyVaultSecretId", GoGetter: "StorageKeyVaultSecretId"},
@@ -1385,6 +1389,76 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WindowsFunctionAppStickySettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount",
+		reflect.TypeOf((*WindowsFunctionAppStorageAccount)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountList",
+		reflect.TypeOf((*WindowsFunctionAppStorageAccountList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WindowsFunctionAppStorageAccountList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountOutputReference",
+		reflect.TypeOf((*WindowsFunctionAppStorageAccountOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accessKey", GoGetter: "AccessKey"},
+			_jsii_.MemberProperty{JsiiProperty: "accessKeyInput", GoGetter: "AccessKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "accountName", GoGetter: "AccountName"},
+			_jsii_.MemberProperty{JsiiProperty: "accountNameInput", GoGetter: "AccountNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "mountPath", GoGetter: "MountPath"},
+			_jsii_.MemberProperty{JsiiProperty: "mountPathInput", GoGetter: "MountPathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMountPath", GoMethod: "ResetMountPath"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "shareName", GoGetter: "ShareName"},
+			_jsii_.MemberProperty{JsiiProperty: "shareNameInput", GoGetter: "ShareNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WindowsFunctionAppStorageAccountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -30,6 +30,14 @@ type DataAzurermLogicAppStandardSiteConfig struct {
 	PreWarmedInstanceCount *float64 `field:"optional" json:"preWarmedInstanceCount" yaml:"preWarmedInstanceCount"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/d/logic_app_standard#runtime_scale_monitoring_enabled DataAzurermLogicAppStandard#runtime_scale_monitoring_enabled}.
 	RuntimeScaleMonitoringEnabled interface{} `field:"optional" json:"runtimeScaleMonitoringEnabled" yaml:"runtimeScaleMonitoringEnabled"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/d/logic_app_standard#scm_ip_restriction DataAzurermLogicAppStandard#scm_ip_restriction}.
+	ScmIpRestriction interface{} `field:"optional" json:"scmIpRestriction" yaml:"scmIpRestriction"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/d/logic_app_standard#scm_min_tls_version DataAzurermLogicAppStandard#scm_min_tls_version}.
+	ScmMinTlsVersion *string `field:"optional" json:"scmMinTlsVersion" yaml:"scmMinTlsVersion"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/d/logic_app_standard#scm_type DataAzurermLogicAppStandard#scm_type}.
+	ScmType *string `field:"optional" json:"scmType" yaml:"scmType"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/d/logic_app_standard#scm_use_main_ip_restriction DataAzurermLogicAppStandard#scm_use_main_ip_restriction}.
+	ScmUseMainIpRestriction interface{} `field:"optional" json:"scmUseMainIpRestriction" yaml:"scmUseMainIpRestriction"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/d/logic_app_standard#use_32_bit_worker_process DataAzurermLogicAppStandard#use_32_bit_worker_process}.
 	Use32BitWorkerProcess interface{} `field:"optional" json:"use32BitWorkerProcess" yaml:"use32BitWorkerProcess"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/d/logic_app_standard#vnet_route_all_enabled DataAzurermLogicAppStandard#vnet_route_all_enabled}.

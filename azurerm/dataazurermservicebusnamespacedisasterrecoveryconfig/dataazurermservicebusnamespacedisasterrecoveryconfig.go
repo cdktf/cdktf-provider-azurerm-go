@@ -12,6 +12,8 @@ func init() {
 		reflect.TypeOf((*DataAzurermServicebusNamespaceDisasterRecoveryConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "aliasAuthorizationRuleId", GoGetter: "AliasAuthorizationRuleId"},
+			_jsii_.MemberProperty{JsiiProperty: "aliasAuthorizationRuleIdInput", GoGetter: "AliasAuthorizationRuleIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -47,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAliasAuthorizationRuleId", GoMethod: "ResetAliasAuthorizationRuleId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNamespaceId", GoMethod: "ResetNamespaceId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNamespaceName", GoMethod: "ResetNamespaceName"},

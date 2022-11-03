@@ -41,6 +41,10 @@ type HdinsightInteractiveQueryClusterConfig struct {
 	Roles *HdinsightInteractiveQueryClusterRoles `field:"required" json:"roles" yaml:"roles"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_interactive_query_cluster#tier HdinsightInteractiveQueryCluster#tier}.
 	Tier *string `field:"required" json:"tier" yaml:"tier"`
+	// compute_isolation block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_interactive_query_cluster#compute_isolation HdinsightInteractiveQueryCluster#compute_isolation}
+	ComputeIsolation *HdinsightInteractiveQueryClusterComputeIsolation `field:"optional" json:"computeIsolation" yaml:"computeIsolation"`
 	// disk_encryption block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/hdinsight_interactive_query_cluster#disk_encryption HdinsightInteractiveQueryCluster#disk_encryption}

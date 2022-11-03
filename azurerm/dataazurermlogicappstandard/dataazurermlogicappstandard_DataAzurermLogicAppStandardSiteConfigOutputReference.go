@@ -66,6 +66,17 @@ type DataAzurermLogicAppStandardSiteConfigOutputReference interface {
 	RuntimeScaleMonitoringEnabled() interface{}
 	SetRuntimeScaleMonitoringEnabled(val interface{})
 	RuntimeScaleMonitoringEnabledInput() interface{}
+	ScmIpRestriction() DataAzurermLogicAppStandardSiteConfigScmIpRestrictionList
+	ScmIpRestrictionInput() interface{}
+	ScmMinTlsVersion() *string
+	SetScmMinTlsVersion(val *string)
+	ScmMinTlsVersionInput() *string
+	ScmType() *string
+	SetScmType(val *string)
+	ScmTypeInput() *string
+	ScmUseMainIpRestriction() interface{}
+	SetScmUseMainIpRestriction(val interface{})
+	ScmUseMainIpRestrictionInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -109,6 +120,7 @@ type DataAzurermLogicAppStandardSiteConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCors(value *DataAzurermLogicAppStandardSiteConfigCors)
 	PutIpRestriction(value interface{})
+	PutScmIpRestriction(value interface{})
 	ResetAlwaysOn()
 	ResetAppScaleLimit()
 	ResetCors()
@@ -122,6 +134,10 @@ type DataAzurermLogicAppStandardSiteConfigOutputReference interface {
 	ResetMinTlsVersion()
 	ResetPreWarmedInstanceCount()
 	ResetRuntimeScaleMonitoringEnabled()
+	ResetScmIpRestriction()
+	ResetScmMinTlsVersion()
+	ResetScmType()
+	ResetScmUseMainIpRestriction()
 	ResetUse32BitWorkerProcess()
 	ResetVnetRouteAllEnabled()
 	ResetWebsocketsEnabled()
@@ -450,6 +466,86 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) Runtime
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ScmIpRestriction() DataAzurermLogicAppStandardSiteConfigScmIpRestrictionList {
+	var returns DataAzurermLogicAppStandardSiteConfigScmIpRestrictionList
+	_jsii_.Get(
+		j,
+		"scmIpRestriction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ScmIpRestrictionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scmIpRestrictionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ScmMinTlsVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scmMinTlsVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ScmMinTlsVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scmMinTlsVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ScmType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scmType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ScmTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scmTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ScmUseMainIpRestriction() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scmUseMainIpRestriction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ScmUseMainIpRestrictionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scmUseMainIpRestrictionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -708,6 +804,39 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetRunti
 	_jsii_.Set(
 		j,
 		"runtimeScaleMonitoringEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetScmMinTlsVersion(val *string) {
+	if err := j.validateSetScmMinTlsVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scmMinTlsVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetScmType(val *string) {
+	if err := j.validateSetScmTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scmType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetScmUseMainIpRestriction(val interface{}) {
+	if err := j.validateSetScmUseMainIpRestrictionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scmUseMainIpRestriction",
 		val,
 	)
 }
@@ -975,6 +1104,17 @@ func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) PutIpRe
 	)
 }
 
+func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) PutScmIpRestriction(value interface{}) {
+	if err := d.validatePutScmIpRestrictionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putScmIpRestriction",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetAlwaysOn() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1075,6 +1215,38 @@ func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetRu
 	_jsii_.InvokeVoid(
 		d,
 		"resetRuntimeScaleMonitoringEnabled",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetScmIpRestriction() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetScmIpRestriction",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetScmMinTlsVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetScmMinTlsVersion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetScmType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetScmType",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetScmUseMainIpRestriction() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetScmUseMainIpRestriction",
 		nil, // no parameters
 	)
 }

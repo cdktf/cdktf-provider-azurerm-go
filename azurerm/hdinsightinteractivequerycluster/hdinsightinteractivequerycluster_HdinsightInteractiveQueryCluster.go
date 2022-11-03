@@ -19,6 +19,8 @@ type HdinsightInteractiveQueryCluster interface {
 	ClusterVersionInput() *string
 	ComponentVersion() HdinsightInteractiveQueryClusterComponentVersionOutputReference
 	ComponentVersionInput() *HdinsightInteractiveQueryClusterComponentVersion
+	ComputeIsolation() HdinsightInteractiveQueryClusterComputeIsolationOutputReference
+	ComputeIsolationInput() *HdinsightInteractiveQueryClusterComputeIsolation
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -137,6 +139,7 @@ type HdinsightInteractiveQueryCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutComponentVersion(value *HdinsightInteractiveQueryClusterComponentVersion)
+	PutComputeIsolation(value *HdinsightInteractiveQueryClusterComputeIsolation)
 	PutDiskEncryption(value interface{})
 	PutExtension(value *HdinsightInteractiveQueryClusterExtension)
 	PutGateway(value *HdinsightInteractiveQueryClusterGateway)
@@ -148,6 +151,7 @@ type HdinsightInteractiveQueryCluster interface {
 	PutStorageAccount(value interface{})
 	PutStorageAccountGen2(value *HdinsightInteractiveQueryClusterStorageAccountGen2)
 	PutTimeouts(value *HdinsightInteractiveQueryClusterTimeouts)
+	ResetComputeIsolation()
 	ResetDiskEncryption()
 	ResetEncryptionInTransitEnabled()
 	ResetExtension()
@@ -224,6 +228,26 @@ func (j *jsiiProxy_HdinsightInteractiveQueryCluster) ComponentVersionInput() *Hd
 	_jsii_.Get(
 		j,
 		"componentVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightInteractiveQueryCluster) ComputeIsolation() HdinsightInteractiveQueryClusterComputeIsolationOutputReference {
+	var returns HdinsightInteractiveQueryClusterComputeIsolationOutputReference
+	_jsii_.Get(
+		j,
+		"computeIsolation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightInteractiveQueryCluster) ComputeIsolationInput() *HdinsightInteractiveQueryClusterComputeIsolation {
+	var returns *HdinsightInteractiveQueryClusterComputeIsolation
+	_jsii_.Get(
+		j,
+		"computeIsolationInput",
 		&returns,
 	)
 	return returns
@@ -1212,6 +1236,17 @@ func (h *jsiiProxy_HdinsightInteractiveQueryCluster) PutComponentVersion(value *
 	)
 }
 
+func (h *jsiiProxy_HdinsightInteractiveQueryCluster) PutComputeIsolation(value *HdinsightInteractiveQueryClusterComputeIsolation) {
+	if err := h.validatePutComputeIsolationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putComputeIsolation",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_HdinsightInteractiveQueryCluster) PutDiskEncryption(value interface{}) {
 	if err := h.validatePutDiskEncryptionParameters(value); err != nil {
 		panic(err)
@@ -1330,6 +1365,14 @@ func (h *jsiiProxy_HdinsightInteractiveQueryCluster) PutTimeouts(value *Hdinsigh
 		h,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (h *jsiiProxy_HdinsightInteractiveQueryCluster) ResetComputeIsolation() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetComputeIsolation",
+		nil, // no parameters
 	)
 }
 
