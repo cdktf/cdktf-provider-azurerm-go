@@ -43,6 +43,8 @@ type WindowsVirtualMachineScaleSetExtensionOutputReference interface {
 	NameInput() *string
 	ProtectedSettings() *string
 	SetProtectedSettings(val *string)
+	ProtectedSettingsFromKeyVault() WindowsVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference
+	ProtectedSettingsFromKeyVaultInput() *WindowsVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault
 	ProtectedSettingsInput() *string
 	ProvisionAfterExtensions() *[]*string
 	SetProvisionAfterExtensions(val *[]*string)
@@ -91,10 +93,12 @@ type WindowsVirtualMachineScaleSetExtensionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutProtectedSettingsFromKeyVault(value *WindowsVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault)
 	ResetAutomaticUpgradeEnabled()
 	ResetAutoUpgradeMinorVersion()
 	ResetForceUpdateTag()
 	ResetProtectedSettings()
+	ResetProtectedSettingsFromKeyVault()
 	ResetProvisionAfterExtensions()
 	ResetSettings()
 	// Produce the Token's value at resolution time.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSetExtensionOutputReference) Protec
 	_jsii_.Get(
 		j,
 		"protectedSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineScaleSetExtensionOutputReference) ProtectedSettingsFromKeyVault() WindowsVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference {
+	var returns WindowsVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference
+	_jsii_.Get(
+		j,
+		"protectedSettingsFromKeyVault",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineScaleSetExtensionOutputReference) ProtectedSettingsFromKeyVaultInput() *WindowsVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault {
+	var returns *WindowsVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault
+	_jsii_.Get(
+		j,
+		"protectedSettingsFromKeyVaultInput",
 		&returns,
 	)
 	return returns
@@ -761,6 +785,17 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetExtensionOutputReference) Interp
 	return returns
 }
 
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetExtensionOutputReference) PutProtectedSettingsFromKeyVault(value *WindowsVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault) {
+	if err := w.validatePutProtectedSettingsFromKeyVaultParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putProtectedSettingsFromKeyVault",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WindowsVirtualMachineScaleSetExtensionOutputReference) ResetAutomaticUpgradeEnabled() {
 	_jsii_.InvokeVoid(
 		w,
@@ -789,6 +824,14 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetExtensionOutputReference) ResetP
 	_jsii_.InvokeVoid(
 		w,
 		"resetProtectedSettings",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetExtensionOutputReference) ResetProtectedSettingsFromKeyVault() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetProtectedSettingsFromKeyVault",
 		nil, // no parameters
 	)
 }

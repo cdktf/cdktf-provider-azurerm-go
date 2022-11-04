@@ -138,6 +138,10 @@ type KubernetesClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#timeouts KubernetesCluster#timeouts}
 	Timeouts *KubernetesClusterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// web_app_routing block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#web_app_routing KubernetesCluster#web_app_routing}
+	WebAppRouting *KubernetesClusterWebAppRouting `field:"optional" json:"webAppRouting" yaml:"webAppRouting"`
 	// windows_profile block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#windows_profile KubernetesCluster#windows_profile}

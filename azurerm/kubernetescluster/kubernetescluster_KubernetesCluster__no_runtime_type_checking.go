@@ -116,6 +116,10 @@ func (k *jsiiProxy_KubernetesCluster) validatePutTimeoutsParameters(value *Kuber
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesCluster) validatePutWebAppRoutingParameters(value *KubernetesClusterWebAppRouting) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesCluster) validatePutWindowsProfileParameters(value *KubernetesClusterWindowsProfile) error {
 	return nil
 }

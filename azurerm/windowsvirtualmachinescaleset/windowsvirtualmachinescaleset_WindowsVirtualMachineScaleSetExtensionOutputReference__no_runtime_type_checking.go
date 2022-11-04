@@ -44,6 +44,10 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetExtensionOutputReference) valida
 	return nil
 }
 
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetExtensionOutputReference) validatePutProtectedSettingsFromKeyVaultParameters(value *WindowsVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsVirtualMachineScaleSetExtensionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -59,6 +59,8 @@ type VirtualMachineExtension interface {
 	Node() constructs.Node
 	ProtectedSettings() *string
 	SetProtectedSettings(val *string)
+	ProtectedSettingsFromKeyVault() VirtualMachineExtensionProtectedSettingsFromKeyVaultOutputReference
+	ProtectedSettingsFromKeyVaultInput() *VirtualMachineExtensionProtectedSettingsFromKeyVault
 	ProtectedSettingsInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -121,6 +123,7 @@ type VirtualMachineExtension interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProtectedSettingsFromKeyVault(value *VirtualMachineExtensionProtectedSettingsFromKeyVault)
 	PutTimeouts(value *VirtualMachineExtensionTimeouts)
 	ResetAutomaticUpgradeEnabled()
 	ResetAutoUpgradeMinorVersion()
@@ -130,6 +133,7 @@ type VirtualMachineExtension interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProtectedSettings()
+	ResetProtectedSettingsFromKeyVault()
 	ResetSettings()
 	ResetTags()
 	ResetTimeouts()
@@ -353,6 +357,26 @@ func (j *jsiiProxy_VirtualMachineExtension) ProtectedSettings() *string {
 	_jsii_.Get(
 		j,
 		"protectedSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualMachineExtension) ProtectedSettingsFromKeyVault() VirtualMachineExtensionProtectedSettingsFromKeyVaultOutputReference {
+	var returns VirtualMachineExtensionProtectedSettingsFromKeyVaultOutputReference
+	_jsii_.Get(
+		j,
+		"protectedSettingsFromKeyVault",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualMachineExtension) ProtectedSettingsFromKeyVaultInput() *VirtualMachineExtensionProtectedSettingsFromKeyVault {
+	var returns *VirtualMachineExtensionProtectedSettingsFromKeyVault
+	_jsii_.Get(
+		j,
+		"protectedSettingsFromKeyVaultInput",
 		&returns,
 	)
 	return returns
@@ -1023,6 +1047,17 @@ func (v *jsiiProxy_VirtualMachineExtension) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (v *jsiiProxy_VirtualMachineExtension) PutProtectedSettingsFromKeyVault(value *VirtualMachineExtensionProtectedSettingsFromKeyVault) {
+	if err := v.validatePutProtectedSettingsFromKeyVaultParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putProtectedSettingsFromKeyVault",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VirtualMachineExtension) PutTimeouts(value *VirtualMachineExtensionTimeouts) {
 	if err := v.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1078,6 +1113,14 @@ func (v *jsiiProxy_VirtualMachineExtension) ResetProtectedSettings() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetProtectedSettings",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualMachineExtension) ResetProtectedSettingsFromKeyVault() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetProtectedSettingsFromKeyVault",
 		nil, // no parameters
 	)
 }

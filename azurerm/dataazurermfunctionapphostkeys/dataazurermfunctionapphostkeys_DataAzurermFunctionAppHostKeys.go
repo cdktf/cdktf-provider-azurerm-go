@@ -66,6 +66,7 @@ type DataAzurermFunctionAppHostKeys interface {
 	TerraformResourceType() *string
 	Timeouts() DataAzurermFunctionAppHostKeysTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	WebpubsubExtensionKey() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -377,6 +378,16 @@ func (j *jsiiProxy_DataAzurermFunctionAppHostKeys) TimeoutsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermFunctionAppHostKeys) WebpubsubExtensionKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webpubsubExtensionKey",
 		&returns,
 	)
 	return returns

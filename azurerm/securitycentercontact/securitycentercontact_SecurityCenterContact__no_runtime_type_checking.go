@@ -84,6 +84,10 @@ func (j *jsiiProxy_SecurityCenterContact) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_SecurityCenterContact) validateSetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityCenterContact) validateSetPhoneParameters(val *string) error {
 	return nil
 }

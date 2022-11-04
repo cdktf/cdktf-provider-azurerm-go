@@ -287,6 +287,17 @@ func (k *jsiiProxy_KubernetesCluster) validatePutTimeoutsParameters(value *Kuber
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesCluster) validatePutWebAppRoutingParameters(value *KubernetesClusterWebAppRouting) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesCluster) validatePutWindowsProfileParameters(value *KubernetesClusterWindowsProfile) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -100,6 +100,10 @@ func (j *jsiiProxy_MonitorDiagnosticSetting) validateSetNameParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_MonitorDiagnosticSetting) validateSetPartnerSolutionIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorDiagnosticSetting) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

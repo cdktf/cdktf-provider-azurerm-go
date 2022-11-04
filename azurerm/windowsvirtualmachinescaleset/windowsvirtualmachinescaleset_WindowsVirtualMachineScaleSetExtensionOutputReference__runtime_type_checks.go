@@ -90,6 +90,17 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetExtensionOutputReference) valida
 	return nil
 }
 
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetExtensionOutputReference) validatePutProtectedSettingsFromKeyVaultParameters(value *WindowsVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_WindowsVirtualMachineScaleSetExtensionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")

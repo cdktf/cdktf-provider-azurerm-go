@@ -42,6 +42,10 @@ type VirtualMachineExtensionConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_extension#protected_settings VirtualMachineExtension#protected_settings}.
 	ProtectedSettings *string `field:"optional" json:"protectedSettings" yaml:"protectedSettings"`
+	// protected_settings_from_key_vault block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_extension#protected_settings_from_key_vault VirtualMachineExtension#protected_settings_from_key_vault}
+	ProtectedSettingsFromKeyVault *VirtualMachineExtensionProtectedSettingsFromKeyVault `field:"optional" json:"protectedSettingsFromKeyVault" yaml:"protectedSettingsFromKeyVault"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_extension#settings VirtualMachineExtension#settings}.
 	Settings *string `field:"optional" json:"settings" yaml:"settings"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_extension#tags VirtualMachineExtension#tags}.

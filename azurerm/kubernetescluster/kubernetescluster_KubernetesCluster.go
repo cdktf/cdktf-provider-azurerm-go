@@ -177,6 +177,8 @@ type KubernetesCluster interface {
 	TerraformResourceType() *string
 	Timeouts() KubernetesClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	WebAppRouting() KubernetesClusterWebAppRoutingOutputReference
+	WebAppRoutingInput() *KubernetesClusterWebAppRouting
 	WindowsProfile() KubernetesClusterWindowsProfileOutputReference
 	WindowsProfileInput() *KubernetesClusterWindowsProfile
 	WorkloadAutoscalerProfile() KubernetesClusterWorkloadAutoscalerProfileOutputReference
@@ -225,6 +227,7 @@ type KubernetesCluster interface {
 	PutOmsAgent(value *KubernetesClusterOmsAgent)
 	PutServicePrincipal(value *KubernetesClusterServicePrincipal)
 	PutTimeouts(value *KubernetesClusterTimeouts)
+	PutWebAppRouting(value *KubernetesClusterWebAppRouting)
 	PutWindowsProfile(value *KubernetesClusterWindowsProfile)
 	PutWorkloadAutoscalerProfile(value *KubernetesClusterWorkloadAutoscalerProfile)
 	ResetAciConnectorLinux()
@@ -268,6 +271,7 @@ type KubernetesCluster interface {
 	ResetSkuTier()
 	ResetTags()
 	ResetTimeouts()
+	ResetWebAppRouting()
 	ResetWindowsProfile()
 	ResetWorkloadAutoscalerProfile()
 	ResetWorkloadIdentityEnabled()
@@ -1376,6 +1380,26 @@ func (j *jsiiProxy_KubernetesCluster) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesCluster) WebAppRouting() KubernetesClusterWebAppRoutingOutputReference {
+	var returns KubernetesClusterWebAppRoutingOutputReference
+	_jsii_.Get(
+		j,
+		"webAppRouting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) WebAppRoutingInput() *KubernetesClusterWebAppRouting {
+	var returns *KubernetesClusterWebAppRouting
+	_jsii_.Get(
+		j,
+		"webAppRoutingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesCluster) WindowsProfile() KubernetesClusterWindowsProfileOutputReference {
 	var returns KubernetesClusterWindowsProfileOutputReference
 	_jsii_.Get(
@@ -2232,6 +2256,17 @@ func (k *jsiiProxy_KubernetesCluster) PutTimeouts(value *KubernetesClusterTimeou
 	)
 }
 
+func (k *jsiiProxy_KubernetesCluster) PutWebAppRouting(value *KubernetesClusterWebAppRouting) {
+	if err := k.validatePutWebAppRoutingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putWebAppRouting",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesCluster) PutWindowsProfile(value *KubernetesClusterWindowsProfile) {
 	if err := k.validatePutWindowsProfileParameters(value); err != nil {
 		panic(err)
@@ -2562,6 +2597,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetWebAppRouting() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetWebAppRouting",
 		nil, // no parameters
 	)
 }

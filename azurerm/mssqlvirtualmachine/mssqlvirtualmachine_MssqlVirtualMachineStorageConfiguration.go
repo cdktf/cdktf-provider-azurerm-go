@@ -14,6 +14,8 @@ type MssqlVirtualMachineStorageConfiguration struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_virtual_machine#log_settings MssqlVirtualMachine#log_settings}
 	LogSettings *MssqlVirtualMachineStorageConfigurationLogSettings `field:"optional" json:"logSettings" yaml:"logSettings"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_virtual_machine#system_db_on_data_disk_enabled MssqlVirtualMachine#system_db_on_data_disk_enabled}.
+	SystemDbOnDataDiskEnabled interface{} `field:"optional" json:"systemDbOnDataDiskEnabled" yaml:"systemDbOnDataDiskEnabled"`
 	// temp_db_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_virtual_machine#temp_db_settings MssqlVirtualMachine#temp_db_settings}

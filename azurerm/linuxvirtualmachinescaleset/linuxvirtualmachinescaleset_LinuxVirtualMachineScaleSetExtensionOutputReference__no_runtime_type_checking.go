@@ -44,6 +44,10 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) validate
 	return nil
 }
 
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) validatePutProtectedSettingsFromKeyVaultParameters(value *LinuxVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -111,6 +111,17 @@ func (v *jsiiProxy_VirtualMachineScaleSetExtensionA) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (v *jsiiProxy_VirtualMachineScaleSetExtensionA) validatePutProtectedSettingsFromKeyVaultParameters(value *VirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (v *jsiiProxy_VirtualMachineScaleSetExtensionA) validatePutTimeoutsParameters(value *VirtualMachineScaleSetExtensionTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

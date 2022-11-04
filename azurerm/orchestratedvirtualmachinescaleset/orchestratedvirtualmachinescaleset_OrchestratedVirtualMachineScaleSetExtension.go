@@ -20,6 +20,10 @@ type OrchestratedVirtualMachineScaleSetExtension struct {
 	ForceExtensionExecutionOnChange *string `field:"optional" json:"forceExtensionExecutionOnChange" yaml:"forceExtensionExecutionOnChange"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/orchestrated_virtual_machine_scale_set#protected_settings OrchestratedVirtualMachineScaleSet#protected_settings}.
 	ProtectedSettings *string `field:"optional" json:"protectedSettings" yaml:"protectedSettings"`
+	// protected_settings_from_key_vault block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/orchestrated_virtual_machine_scale_set#protected_settings_from_key_vault OrchestratedVirtualMachineScaleSet#protected_settings_from_key_vault}
+	ProtectedSettingsFromKeyVault *OrchestratedVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault `field:"optional" json:"protectedSettingsFromKeyVault" yaml:"protectedSettingsFromKeyVault"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/orchestrated_virtual_machine_scale_set#settings OrchestratedVirtualMachineScaleSet#settings}.
 	Settings *string `field:"optional" json:"settings" yaml:"settings"`
 }

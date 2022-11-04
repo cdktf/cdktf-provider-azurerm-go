@@ -80,6 +80,10 @@ func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) validateSetSystemDbOnDataDiskEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

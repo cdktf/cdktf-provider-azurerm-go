@@ -43,6 +43,8 @@ type LinuxVirtualMachineScaleSetExtensionOutputReference interface {
 	NameInput() *string
 	ProtectedSettings() *string
 	SetProtectedSettings(val *string)
+	ProtectedSettingsFromKeyVault() LinuxVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference
+	ProtectedSettingsFromKeyVaultInput() *LinuxVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault
 	ProtectedSettingsInput() *string
 	ProvisionAfterExtensions() *[]*string
 	SetProvisionAfterExtensions(val *[]*string)
@@ -91,10 +93,12 @@ type LinuxVirtualMachineScaleSetExtensionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutProtectedSettingsFromKeyVault(value *LinuxVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault)
 	ResetAutomaticUpgradeEnabled()
 	ResetAutoUpgradeMinorVersion()
 	ResetForceUpdateTag()
 	ResetProtectedSettings()
+	ResetProtectedSettingsFromKeyVault()
 	ResetProvisionAfterExtensions()
 	ResetSettings()
 	// Produce the Token's value at resolution time.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) Protecte
 	_jsii_.Get(
 		j,
 		"protectedSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) ProtectedSettingsFromKeyVault() LinuxVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference {
+	var returns LinuxVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference
+	_jsii_.Get(
+		j,
+		"protectedSettingsFromKeyVault",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) ProtectedSettingsFromKeyVaultInput() *LinuxVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault {
+	var returns *LinuxVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault
+	_jsii_.Get(
+		j,
+		"protectedSettingsFromKeyVaultInput",
 		&returns,
 	)
 	return returns
@@ -761,6 +785,17 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) Interpol
 	return returns
 }
 
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) PutProtectedSettingsFromKeyVault(value *LinuxVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault) {
+	if err := l.validatePutProtectedSettingsFromKeyVaultParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putProtectedSettingsFromKeyVault",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) ResetAutomaticUpgradeEnabled() {
 	_jsii_.InvokeVoid(
 		l,
@@ -789,6 +824,14 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) ResetPro
 	_jsii_.InvokeVoid(
 		l,
 		"resetProtectedSettings",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionOutputReference) ResetProtectedSettingsFromKeyVault() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetProtectedSettingsFromKeyVault",
 		nil, // no parameters
 	)
 }

@@ -52,6 +52,10 @@ func (v *jsiiProxy_VirtualMachineScaleSetExtensionA) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (v *jsiiProxy_VirtualMachineScaleSetExtensionA) validatePutProtectedSettingsFromKeyVaultParameters(value *VirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualMachineScaleSetExtensionA) validatePutTimeoutsParameters(value *VirtualMachineScaleSetExtensionTimeouts) error {
 	return nil
 }

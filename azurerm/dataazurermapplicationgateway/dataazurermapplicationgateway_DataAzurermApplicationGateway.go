@@ -12,6 +12,7 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/application_gateway azurerm_application_gateway}.
 type DataAzurermApplicationGateway interface {
 	cdktf.TerraformDataSource
+	BackendAddressPool() DataAzurermApplicationGatewayBackendAddressPoolList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -108,6 +109,16 @@ type DataAzurermApplicationGateway interface {
 // The jsii proxy struct for DataAzurermApplicationGateway
 type jsiiProxy_DataAzurermApplicationGateway struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) BackendAddressPool() DataAzurermApplicationGatewayBackendAddressPoolList {
+	var returns DataAzurermApplicationGatewayBackendAddressPoolList
+	_jsii_.Get(
+		j,
+		"backendAddressPool",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAzurermApplicationGateway) CdktfStack() cdktf.TerraformStack {

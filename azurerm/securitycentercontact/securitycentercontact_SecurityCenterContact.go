@@ -52,6 +52,9 @@ type SecurityCenterContact interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Phone() *string
@@ -102,6 +105,7 @@ type SecurityCenterContact interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *SecurityCenterContactTimeouts)
 	ResetId()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -287,6 +291,26 @@ func (j *jsiiProxy_SecurityCenterContact) Lifecycle() *cdktf.TerraformResourceLi
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityCenterContact) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityCenterContact) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -518,6 +542,17 @@ func (j *jsiiProxy_SecurityCenterContact)SetLifecycle(val *cdktf.TerraformResour
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityCenterContact)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -795,6 +830,14 @@ func (s *jsiiProxy_SecurityCenterContact) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityCenterContact) ResetName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetName",
 		nil, // no parameters
 	)
 }

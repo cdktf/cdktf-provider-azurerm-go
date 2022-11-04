@@ -44,6 +44,8 @@ type MonitorDiagnosticSettingConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_diagnostic_setting#metric MonitorDiagnosticSetting#metric}
 	Metric interface{} `field:"optional" json:"metric" yaml:"metric"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_diagnostic_setting#partner_solution_id MonitorDiagnosticSetting#partner_solution_id}.
+	PartnerSolutionId *string `field:"optional" json:"partnerSolutionId" yaml:"partnerSolutionId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_diagnostic_setting#storage_account_id MonitorDiagnosticSetting#storage_account_id}.
 	StorageAccountId *string `field:"optional" json:"storageAccountId" yaml:"storageAccountId"`
 	// timeouts block.

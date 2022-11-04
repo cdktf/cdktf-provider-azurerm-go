@@ -39,6 +39,9 @@ type MssqlVirtualMachineStorageConfigurationOutputReference interface {
 	StorageWorkloadType() *string
 	SetStorageWorkloadType(val *string)
 	StorageWorkloadTypeInput() *string
+	SystemDbOnDataDiskEnabled() interface{}
+	SetSystemDbOnDataDiskEnabled(val interface{})
+	SystemDbOnDataDiskEnabledInput() interface{}
 	TempDbSettings() MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference
 	TempDbSettingsInput() *MssqlVirtualMachineStorageConfigurationTempDbSettings
 	// Experimental.
@@ -78,6 +81,7 @@ type MssqlVirtualMachineStorageConfigurationOutputReference interface {
 	PutTempDbSettings(value *MssqlVirtualMachineStorageConfigurationTempDbSettings)
 	ResetDataSettings()
 	ResetLogSettings()
+	ResetSystemDbOnDataDiskEnabled()
 	ResetTempDbSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -224,6 +228,26 @@ func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) Stora
 	return returns
 }
 
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) SystemDbOnDataDiskEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"systemDbOnDataDiskEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) SystemDbOnDataDiskEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"systemDbOnDataDiskEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) TempDbSettings() MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference {
 	var returns MssqlVirtualMachineStorageConfigurationTempDbSettingsOutputReference
 	_jsii_.Get(
@@ -343,6 +367,17 @@ func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference)SetSto
 	_jsii_.Set(
 		j,
 		"storageWorkloadType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference)SetSystemDbOnDataDiskEnabled(val interface{}) {
+	if err := j.validateSetSystemDbOnDataDiskEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"systemDbOnDataDiskEnabled",
 		val,
 	)
 }
@@ -600,6 +635,14 @@ func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) Reset
 	_jsii_.InvokeVoid(
 		m,
 		"resetLogSettings",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlVirtualMachineStorageConfigurationOutputReference) ResetSystemDbOnDataDiskEnabled() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSystemDbOnDataDiskEnabled",
 		nil, // no parameters
 	)
 }

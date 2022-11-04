@@ -29,6 +29,8 @@ type StreamAnalyticsJobConfig struct {
 	TransformationQuery *string `field:"required" json:"transformationQuery" yaml:"transformationQuery"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_job#compatibility_level StreamAnalyticsJob#compatibility_level}.
 	CompatibilityLevel *string `field:"optional" json:"compatibilityLevel" yaml:"compatibilityLevel"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_job#content_storage_policy StreamAnalyticsJob#content_storage_policy}.
+	ContentStoragePolicy *string `field:"optional" json:"contentStoragePolicy" yaml:"contentStoragePolicy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_job#data_locale StreamAnalyticsJob#data_locale}.
 	DataLocale *string `field:"optional" json:"dataLocale" yaml:"dataLocale"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_job#events_late_arrival_max_delay_in_seconds StreamAnalyticsJob#events_late_arrival_max_delay_in_seconds}.
@@ -46,6 +48,10 @@ type StreamAnalyticsJobConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_job#identity StreamAnalyticsJob#identity}
 	Identity *StreamAnalyticsJobIdentity `field:"optional" json:"identity" yaml:"identity"`
+	// job_storage_account block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_job#job_storage_account StreamAnalyticsJob#job_storage_account}
+	JobStorageAccount interface{} `field:"optional" json:"jobStorageAccount" yaml:"jobStorageAccount"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_job#output_error_policy StreamAnalyticsJob#output_error_policy}.
 	OutputErrorPolicy *string `field:"optional" json:"outputErrorPolicy" yaml:"outputErrorPolicy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_job#stream_analytics_cluster_id StreamAnalyticsJob#stream_analytics_cluster_id}.

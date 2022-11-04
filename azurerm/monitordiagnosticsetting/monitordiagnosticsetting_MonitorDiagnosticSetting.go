@@ -64,6 +64,9 @@ type MonitorDiagnosticSetting interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PartnerSolutionId() *string
+	SetPartnerSolutionId(val *string)
+	PartnerSolutionIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -126,6 +129,7 @@ type MonitorDiagnosticSetting interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPartnerSolutionId()
 	ResetStorageAccountId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -403,6 +407,26 @@ func (j *jsiiProxy_MonitorDiagnosticSetting) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_MonitorDiagnosticSetting) PartnerSolutionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"partnerSolutionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDiagnosticSetting) PartnerSolutionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"partnerSolutionIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitorDiagnosticSetting) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -661,6 +685,17 @@ func (j *jsiiProxy_MonitorDiagnosticSetting)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitorDiagnosticSetting)SetPartnerSolutionId(val *string) {
+	if err := j.validateSetPartnerSolutionIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"partnerSolutionId",
 		val,
 	)
 }
@@ -1027,6 +1062,14 @@ func (m *jsiiProxy_MonitorDiagnosticSetting) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorDiagnosticSetting) ResetPartnerSolutionId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPartnerSolutionId",
 		nil, // no parameters
 	)
 }
