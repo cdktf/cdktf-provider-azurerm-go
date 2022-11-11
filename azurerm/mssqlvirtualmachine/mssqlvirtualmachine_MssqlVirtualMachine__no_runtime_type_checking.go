@@ -68,6 +68,10 @@ func (m *jsiiProxy_MssqlVirtualMachine) validatePutKeyVaultCredentialParameters(
 	return nil
 }
 
+func (m *jsiiProxy_MssqlVirtualMachine) validatePutSqlInstanceParameters(value *MssqlVirtualMachineSqlInstance) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlVirtualMachine) validatePutStorageConfigurationParameters(value *MssqlVirtualMachineStorageConfiguration) error {
 	return nil
 }

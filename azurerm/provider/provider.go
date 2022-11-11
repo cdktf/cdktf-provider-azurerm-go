@@ -136,6 +136,10 @@ func init() {
 		reflect.TypeOf((*AzurermProviderFeaturesLogAnalyticsWorkspace)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk",
+		reflect.TypeOf((*AzurermProviderFeaturesManagedDisk)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.provider.AzurermProviderFeaturesNetwork",
 		reflect.TypeOf((*AzurermProviderFeaturesNetwork)(nil)).Elem(),
 	)

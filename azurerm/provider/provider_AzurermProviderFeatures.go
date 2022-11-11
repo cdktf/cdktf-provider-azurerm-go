@@ -26,6 +26,10 @@ type AzurermProviderFeatures struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm#log_analytics_workspace AzurermProvider#log_analytics_workspace}
 	LogAnalyticsWorkspace *AzurermProviderFeaturesLogAnalyticsWorkspace `field:"optional" json:"logAnalyticsWorkspace" yaml:"logAnalyticsWorkspace"`
+	// managed_disk block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm#managed_disk AzurermProvider#managed_disk}
+	ManagedDisk *AzurermProviderFeaturesManagedDisk `field:"optional" json:"managedDisk" yaml:"managedDisk"`
 	// network block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm#network AzurermProvider#network}

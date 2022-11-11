@@ -6,7 +6,7 @@ type LinuxFunctionAppSiteConfigApplicationStack struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app#docker LinuxFunctionApp#docker}
 	Docker interface{} `field:"optional" json:"docker" yaml:"docker"`
-	// The version of .Net. Possible values are `3.1` and `6.0`.
+	// The version of .Net. Possible values are `3.1`, `6.0` and `7.0`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app#dotnet_version LinuxFunctionApp#dotnet_version}
 	DotnetVersion *string `field:"optional" json:"dotnetVersion" yaml:"dotnetVersion"`

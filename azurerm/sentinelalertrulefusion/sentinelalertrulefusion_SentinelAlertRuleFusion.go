@@ -67,6 +67,8 @@ type SentinelAlertRuleFusion interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Source() SentinelAlertRuleFusionSourceList
+	SourceInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -100,12 +102,14 @@ type SentinelAlertRuleFusion interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutSource(value interface{})
 	PutTimeouts(value *SentinelAlertRuleFusionTimeouts)
 	ResetEnabled()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSource()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -347,6 +351,26 @@ func (j *jsiiProxy_SentinelAlertRuleFusion) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelAlertRuleFusion) Source() SentinelAlertRuleFusionSourceList {
+	var returns SentinelAlertRuleFusionSourceList
+	_jsii_.Get(
+		j,
+		"source",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelAlertRuleFusion) SourceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sourceInput",
 		&returns,
 	)
 	return returns
@@ -780,6 +804,17 @@ func (s *jsiiProxy_SentinelAlertRuleFusion) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (s *jsiiProxy_SentinelAlertRuleFusion) PutSource(value interface{}) {
+	if err := s.validatePutSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSource",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SentinelAlertRuleFusion) PutTimeouts(value *SentinelAlertRuleFusionTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -811,6 +846,14 @@ func (s *jsiiProxy_SentinelAlertRuleFusion) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SentinelAlertRuleFusion) ResetSource() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSource",
 		nil, // no parameters
 	)
 }

@@ -27,6 +27,10 @@ type PublicIpConfig struct {
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/public_ip#resource_group_name PublicIp#resource_group_name}.
 	ResourceGroupName *string `field:"required" json:"resourceGroupName" yaml:"resourceGroupName"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/public_ip#ddos_protection_mode PublicIp#ddos_protection_mode}.
+	DdosProtectionMode *string `field:"optional" json:"ddosProtectionMode" yaml:"ddosProtectionMode"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/public_ip#ddos_protection_plan_id PublicIp#ddos_protection_plan_id}.
+	DdosProtectionPlanId *string `field:"optional" json:"ddosProtectionPlanId" yaml:"ddosProtectionPlanId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/public_ip#domain_name_label PublicIp#domain_name_label}.
 	DomainNameLabel *string `field:"optional" json:"domainNameLabel" yaml:"domainNameLabel"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/public_ip#edge_zone PublicIp#edge_zone}.

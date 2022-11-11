@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAutoBackup", GoMethod: "PutAutoBackup"},
 			_jsii_.MemberMethod{JsiiMethod: "putAutoPatching", GoMethod: "PutAutoPatching"},
 			_jsii_.MemberMethod{JsiiMethod: "putKeyVaultCredential", GoMethod: "PutKeyVaultCredential"},
+			_jsii_.MemberMethod{JsiiMethod: "putSqlInstance", GoMethod: "PutSqlInstance"},
 			_jsii_.MemberMethod{JsiiMethod: "putStorageConfiguration", GoMethod: "PutStorageConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -63,6 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSqlConnectivityType", GoMethod: "ResetSqlConnectivityType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSqlConnectivityUpdatePassword", GoMethod: "ResetSqlConnectivityUpdatePassword"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSqlConnectivityUpdateUsername", GoMethod: "ResetSqlConnectivityUpdateUsername"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSqlInstance", GoMethod: "ResetSqlInstance"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStorageConfiguration", GoMethod: "ResetStorageConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
@@ -76,6 +78,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "sqlConnectivityUpdatePasswordInput", GoGetter: "SqlConnectivityUpdatePasswordInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sqlConnectivityUpdateUsername", GoGetter: "SqlConnectivityUpdateUsername"},
 			_jsii_.MemberProperty{JsiiProperty: "sqlConnectivityUpdateUsernameInput", GoGetter: "SqlConnectivityUpdateUsernameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlInstance", GoGetter: "SqlInstance"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlInstanceInput", GoGetter: "SqlInstanceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sqlLicenseType", GoGetter: "SqlLicenseType"},
 			_jsii_.MemberProperty{JsiiProperty: "sqlLicenseTypeInput", GoGetter: "SqlLicenseTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "storageConfiguration", GoGetter: "StorageConfiguration"},
@@ -377,6 +381,63 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MssqlVirtualMachineKeyVaultCredentialOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.mssqlVirtualMachine.MssqlVirtualMachineSqlInstance",
+		reflect.TypeOf((*MssqlVirtualMachineSqlInstance)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.mssqlVirtualMachine.MssqlVirtualMachineSqlInstanceOutputReference",
+		reflect.TypeOf((*MssqlVirtualMachineSqlInstanceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "adhocWorkloadsOptimizationEnabled", GoGetter: "AdhocWorkloadsOptimizationEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "adhocWorkloadsOptimizationEnabledInput", GoGetter: "AdhocWorkloadsOptimizationEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "collation", GoGetter: "Collation"},
+			_jsii_.MemberProperty{JsiiProperty: "collationInput", GoGetter: "CollationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "instantFileInitializationEnabled", GoGetter: "InstantFileInitializationEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "instantFileInitializationEnabledInput", GoGetter: "InstantFileInitializationEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lockPagesInMemoryEnabled", GoGetter: "LockPagesInMemoryEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "lockPagesInMemoryEnabledInput", GoGetter: "LockPagesInMemoryEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "maxDop", GoGetter: "MaxDop"},
+			_jsii_.MemberProperty{JsiiProperty: "maxDopInput", GoGetter: "MaxDopInput"},
+			_jsii_.MemberProperty{JsiiProperty: "maxServerMemoryMb", GoGetter: "MaxServerMemoryMb"},
+			_jsii_.MemberProperty{JsiiProperty: "maxServerMemoryMbInput", GoGetter: "MaxServerMemoryMbInput"},
+			_jsii_.MemberProperty{JsiiProperty: "minServerMemoryMb", GoGetter: "MinServerMemoryMb"},
+			_jsii_.MemberProperty{JsiiProperty: "minServerMemoryMbInput", GoGetter: "MinServerMemoryMbInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdhocWorkloadsOptimizationEnabled", GoMethod: "ResetAdhocWorkloadsOptimizationEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCollation", GoMethod: "ResetCollation"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInstantFileInitializationEnabled", GoMethod: "ResetInstantFileInitializationEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLockPagesInMemoryEnabled", GoMethod: "ResetLockPagesInMemoryEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxDop", GoMethod: "ResetMaxDop"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxServerMemoryMb", GoMethod: "ResetMaxServerMemoryMb"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinServerMemoryMb", GoMethod: "ResetMinServerMemoryMb"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MssqlVirtualMachineSqlInstanceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

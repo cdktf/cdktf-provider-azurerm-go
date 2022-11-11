@@ -68,6 +68,14 @@ func (j *jsiiProxy_PublicIp) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_PublicIp) validateSetDdosProtectionModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PublicIp) validateSetDdosProtectionPlanIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PublicIp) validateSetDomainNameLabelParameters(val *string) error {
 	return nil
 }

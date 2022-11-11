@@ -27,6 +27,12 @@ type PublicIp interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DdosProtectionMode() *string
+	SetDdosProtectionMode(val *string)
+	DdosProtectionModeInput() *string
+	DdosProtectionPlanId() *string
+	SetDdosProtectionPlanId(val *string)
+	DdosProtectionPlanIdInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -136,6 +142,8 @@ type PublicIp interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *PublicIpTimeouts)
+	ResetDdosProtectionMode()
+	ResetDdosProtectionPlanId()
 	ResetDomainNameLabel()
 	ResetEdgeZone()
 	ResetId()
@@ -222,6 +230,46 @@ func (j *jsiiProxy_PublicIp) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PublicIp) DdosProtectionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ddosProtectionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PublicIp) DdosProtectionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ddosProtectionModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PublicIp) DdosProtectionPlanId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ddosProtectionPlanId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PublicIp) DdosProtectionPlanIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ddosProtectionPlanIdInput",
 		&returns,
 	)
 	return returns
@@ -747,6 +795,28 @@ func (j *jsiiProxy_PublicIp)SetCount(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_PublicIp)SetDdosProtectionMode(val *string) {
+	if err := j.validateSetDdosProtectionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ddosProtectionMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PublicIp)SetDdosProtectionPlanId(val *string) {
+	if err := j.validateSetDdosProtectionPlanIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ddosProtectionPlanId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PublicIp)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1194,6 +1264,22 @@ func (p *jsiiProxy_PublicIp) PutTimeouts(value *PublicIpTimeouts) {
 		p,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PublicIp) ResetDdosProtectionMode() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDdosProtectionMode",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PublicIp) ResetDdosProtectionPlanId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDdosProtectionPlanId",
+		nil, // no parameters
 	)
 }
 

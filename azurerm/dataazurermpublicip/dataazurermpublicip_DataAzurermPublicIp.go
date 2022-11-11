@@ -21,6 +21,8 @@ type DataAzurermPublicIp interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DdosProtectionMode() *string
+	DdosProtectionPlanId() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,6 +156,26 @@ func (j *jsiiProxy_DataAzurermPublicIp) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermPublicIp) DdosProtectionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ddosProtectionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermPublicIp) DdosProtectionPlanId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ddosProtectionPlanId",
 		&returns,
 	)
 	return returns

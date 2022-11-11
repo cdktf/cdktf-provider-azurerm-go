@@ -35,6 +35,8 @@ type DiskEncryptionSetConfig struct {
 	AutoKeyRotationEnabled interface{} `field:"optional" json:"autoKeyRotationEnabled" yaml:"autoKeyRotationEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/disk_encryption_set#encryption_type DiskEncryptionSet#encryption_type}.
 	EncryptionType *string `field:"optional" json:"encryptionType" yaml:"encryptionType"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/disk_encryption_set#federated_client_id DiskEncryptionSet#federated_client_id}.
+	FederatedClientId *string `field:"optional" json:"federatedClientId" yaml:"federatedClientId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/disk_encryption_set#id DiskEncryptionSet#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

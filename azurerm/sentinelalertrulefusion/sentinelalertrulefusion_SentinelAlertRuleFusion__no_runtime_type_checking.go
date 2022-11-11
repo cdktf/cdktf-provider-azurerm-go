@@ -52,6 +52,10 @@ func (s *jsiiProxy_SentinelAlertRuleFusion) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (s *jsiiProxy_SentinelAlertRuleFusion) validatePutSourceParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAlertRuleFusion) validatePutTimeoutsParameters(value *SentinelAlertRuleFusionTimeouts) error {
 	return nil
 }

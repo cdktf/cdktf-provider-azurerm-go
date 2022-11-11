@@ -54,6 +54,10 @@ type MssqlVirtualMachineConfig struct {
 	SqlConnectivityUpdatePassword *string `field:"optional" json:"sqlConnectivityUpdatePassword" yaml:"sqlConnectivityUpdatePassword"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_virtual_machine#sql_connectivity_update_username MssqlVirtualMachine#sql_connectivity_update_username}.
 	SqlConnectivityUpdateUsername *string `field:"optional" json:"sqlConnectivityUpdateUsername" yaml:"sqlConnectivityUpdateUsername"`
+	// sql_instance block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_virtual_machine#sql_instance MssqlVirtualMachine#sql_instance}
+	SqlInstance *MssqlVirtualMachineSqlInstance `field:"optional" json:"sqlInstance" yaml:"sqlInstance"`
 	// storage_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_virtual_machine#storage_configuration MssqlVirtualMachine#storage_configuration}

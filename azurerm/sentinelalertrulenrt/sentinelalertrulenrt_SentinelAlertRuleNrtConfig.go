@@ -62,6 +62,8 @@ type SentinelAlertRuleNrtConfig struct {
 	SuppressionEnabled interface{} `field:"optional" json:"suppressionEnabled" yaml:"suppressionEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_nrt#tactics SentinelAlertRuleNrt#tactics}.
 	Tactics *[]*string `field:"optional" json:"tactics" yaml:"tactics"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_nrt#techniques SentinelAlertRuleNrt#techniques}.
+	Techniques *[]*string `field:"optional" json:"techniques" yaml:"techniques"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_nrt#timeouts SentinelAlertRuleNrt#timeouts}

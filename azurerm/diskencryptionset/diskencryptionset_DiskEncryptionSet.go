@@ -34,6 +34,9 @@ type DiskEncryptionSet interface {
 	EncryptionType() *string
 	SetEncryptionType(val *string)
 	EncryptionTypeInput() *string
+	FederatedClientId() *string
+	SetFederatedClientId(val *string)
+	FederatedClientIdInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -115,6 +118,7 @@ type DiskEncryptionSet interface {
 	PutTimeouts(value *DiskEncryptionSetTimeouts)
 	ResetAutoKeyRotationEnabled()
 	ResetEncryptionType()
+	ResetFederatedClientId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -221,6 +225,26 @@ func (j *jsiiProxy_DiskEncryptionSet) EncryptionTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"encryptionTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiskEncryptionSet) FederatedClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"federatedClientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiskEncryptionSet) FederatedClientIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"federatedClientIdInput",
 		&returns,
 	)
 	return returns
@@ -571,6 +595,17 @@ func (j *jsiiProxy_DiskEncryptionSet)SetEncryptionType(val *string) {
 	_jsii_.Set(
 		j,
 		"encryptionType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DiskEncryptionSet)SetFederatedClientId(val *string) {
+	if err := j.validateSetFederatedClientIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"federatedClientId",
 		val,
 	)
 }
@@ -941,6 +976,14 @@ func (d *jsiiProxy_DiskEncryptionSet) ResetEncryptionType() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetEncryptionType",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DiskEncryptionSet) ResetFederatedClientId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFederatedClientId",
 		nil, // no parameters
 	)
 }

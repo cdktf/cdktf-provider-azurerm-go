@@ -100,6 +100,9 @@ type SentinelAlertRuleNrt interface {
 	Tactics() *[]*string
 	SetTactics(val *[]*string)
 	TacticsInput() *[]*string
+	Techniques() *[]*string
+	SetTechniques(val *[]*string)
+	TechniquesInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -152,6 +155,7 @@ type SentinelAlertRuleNrt interface {
 	ResetSuppressionDuration()
 	ResetSuppressionEnabled()
 	ResetTactics()
+	ResetTechniques()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -638,6 +642,26 @@ func (j *jsiiProxy_SentinelAlertRuleNrt) TacticsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_SentinelAlertRuleNrt) Techniques() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"techniques",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelAlertRuleNrt) TechniquesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"techniquesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SentinelAlertRuleNrt) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -933,6 +957,17 @@ func (j *jsiiProxy_SentinelAlertRuleNrt)SetTactics(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"tactics",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SentinelAlertRuleNrt)SetTechniques(val *[]*string) {
+	if err := j.validateSetTechniquesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"techniques",
 		val,
 	)
 }
@@ -1309,6 +1344,14 @@ func (s *jsiiProxy_SentinelAlertRuleNrt) ResetTactics() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTactics",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SentinelAlertRuleNrt) ResetTechniques() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTechniques",
 		nil, // no parameters
 	)
 }

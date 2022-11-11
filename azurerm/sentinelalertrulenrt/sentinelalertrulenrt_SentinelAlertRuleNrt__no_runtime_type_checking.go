@@ -140,6 +140,10 @@ func (j *jsiiProxy_SentinelAlertRuleNrt) validateSetTacticsParameters(val *[]*st
 	return nil
 }
 
+func (j *jsiiProxy_SentinelAlertRuleNrt) validateSetTechniquesParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewSentinelAlertRuleNrtParameters(scope constructs.Construct, id *string, config *SentinelAlertRuleNrtConfig) error {
 	return nil
 }

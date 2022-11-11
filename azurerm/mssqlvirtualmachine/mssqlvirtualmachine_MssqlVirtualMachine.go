@@ -78,6 +78,8 @@ type MssqlVirtualMachine interface {
 	SqlConnectivityUpdateUsername() *string
 	SetSqlConnectivityUpdateUsername(val *string)
 	SqlConnectivityUpdateUsernameInput() *string
+	SqlInstance() MssqlVirtualMachineSqlInstanceOutputReference
+	SqlInstanceInput() *MssqlVirtualMachineSqlInstance
 	SqlLicenseType() *string
 	SetSqlLicenseType(val *string)
 	SqlLicenseTypeInput() *string
@@ -126,6 +128,7 @@ type MssqlVirtualMachine interface {
 	PutAutoBackup(value *MssqlVirtualMachineAutoBackup)
 	PutAutoPatching(value *MssqlVirtualMachineAutoPatching)
 	PutKeyVaultCredential(value *MssqlVirtualMachineKeyVaultCredential)
+	PutSqlInstance(value *MssqlVirtualMachineSqlInstance)
 	PutStorageConfiguration(value *MssqlVirtualMachineStorageConfiguration)
 	PutTimeouts(value *MssqlVirtualMachineTimeouts)
 	ResetAssessment()
@@ -141,6 +144,7 @@ type MssqlVirtualMachine interface {
 	ResetSqlConnectivityType()
 	ResetSqlConnectivityUpdatePassword()
 	ResetSqlConnectivityUpdateUsername()
+	ResetSqlInstance()
 	ResetStorageConfiguration()
 	ResetTags()
 	ResetTimeouts()
@@ -484,6 +488,26 @@ func (j *jsiiProxy_MssqlVirtualMachine) SqlConnectivityUpdateUsernameInput() *st
 	_jsii_.Get(
 		j,
 		"sqlConnectivityUpdateUsernameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlVirtualMachine) SqlInstance() MssqlVirtualMachineSqlInstanceOutputReference {
+	var returns MssqlVirtualMachineSqlInstanceOutputReference
+	_jsii_.Get(
+		j,
+		"sqlInstance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlVirtualMachine) SqlInstanceInput() *MssqlVirtualMachineSqlInstance {
+	var returns *MssqlVirtualMachineSqlInstance
+	_jsii_.Get(
+		j,
+		"sqlInstanceInput",
 		&returns,
 	)
 	return returns
@@ -1085,6 +1109,17 @@ func (m *jsiiProxy_MssqlVirtualMachine) PutKeyVaultCredential(value *MssqlVirtua
 	)
 }
 
+func (m *jsiiProxy_MssqlVirtualMachine) PutSqlInstance(value *MssqlVirtualMachineSqlInstance) {
+	if err := m.validatePutSqlInstanceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putSqlInstance",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MssqlVirtualMachine) PutStorageConfiguration(value *MssqlVirtualMachineStorageConfiguration) {
 	if err := m.validatePutStorageConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1191,6 +1226,14 @@ func (m *jsiiProxy_MssqlVirtualMachine) ResetSqlConnectivityUpdateUsername() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetSqlConnectivityUpdateUsername",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlVirtualMachine) ResetSqlInstance() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSqlInstance",
 		nil, // no parameters
 	)
 }

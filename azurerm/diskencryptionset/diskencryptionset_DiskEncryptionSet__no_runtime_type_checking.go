@@ -76,6 +76,10 @@ func (j *jsiiProxy_DiskEncryptionSet) validateSetEncryptionTypeParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DiskEncryptionSet) validateSetFederatedClientIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DiskEncryptionSet) validateSetIdParameters(val *string) error {
 	return nil
 }

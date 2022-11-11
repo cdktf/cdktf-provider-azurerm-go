@@ -2,7 +2,7 @@ package windowsfunctionappslot
 
 
 type WindowsFunctionAppSlotSiteConfigApplicationStack struct {
-	// The version of .Net. Possible values are `3.1` and `6`.
+	// The version of .Net. Possible values are `3.1` `6` and `7`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_function_app_slot#dotnet_version WindowsFunctionAppSlot#dotnet_version}
 	DotnetVersion *string `field:"optional" json:"dotnetVersion" yaml:"dotnetVersion"`
