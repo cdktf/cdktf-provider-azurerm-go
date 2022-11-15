@@ -60,6 +60,14 @@ func validateSentinelAlertRuleMachineLearningBehaviorAnalytics_IsConstructParame
 	return nil
 }
 
+func validateSentinelAlertRuleMachineLearningBehaviorAnalytics_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSentinelAlertRuleMachineLearningBehaviorAnalytics_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) validateSetAlertRuleTemplateGuidParameters(val *string) error {
 	return nil
 }

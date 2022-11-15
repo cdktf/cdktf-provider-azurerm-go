@@ -60,6 +60,14 @@ func validateRedisFirewallRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRedisFirewallRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedisFirewallRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisFirewallRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

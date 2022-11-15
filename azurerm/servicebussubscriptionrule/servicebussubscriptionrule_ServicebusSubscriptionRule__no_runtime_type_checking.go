@@ -64,6 +64,14 @@ func validateServicebusSubscriptionRule_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateServicebusSubscriptionRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicebusSubscriptionRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicebusSubscriptionRule) validateSetActionParameters(val *string) error {
 	return nil
 }

@@ -130,6 +130,22 @@ func validateFunctionAppHybridConnection_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateFunctionAppHybridConnection_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateFunctionAppHybridConnection_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FunctionAppHybridConnection) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

@@ -64,6 +64,14 @@ func validateFunctionAppFunction_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFunctionAppFunction_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFunctionAppFunction_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FunctionAppFunction) validateSetConfigJsonParameters(val *string) error {
 	return nil
 }

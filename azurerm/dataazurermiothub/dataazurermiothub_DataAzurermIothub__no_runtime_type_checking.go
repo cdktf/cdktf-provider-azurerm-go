@@ -60,6 +60,14 @@ func validateDataAzurermIothub_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAzurermIothub_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermIothub_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermIothub) validateSetIdParameters(val *string) error {
 	return nil
 }

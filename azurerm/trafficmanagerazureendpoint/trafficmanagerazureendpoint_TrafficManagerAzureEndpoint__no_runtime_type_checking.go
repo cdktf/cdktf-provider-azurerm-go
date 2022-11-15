@@ -68,6 +68,14 @@ func validateTrafficManagerAzureEndpoint_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateTrafficManagerAzureEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTrafficManagerAzureEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TrafficManagerAzureEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

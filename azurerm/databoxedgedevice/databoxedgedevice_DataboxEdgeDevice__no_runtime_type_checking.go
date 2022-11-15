@@ -60,6 +60,14 @@ func validateDataboxEdgeDevice_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataboxEdgeDevice_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataboxEdgeDevice_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataboxEdgeDevice) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

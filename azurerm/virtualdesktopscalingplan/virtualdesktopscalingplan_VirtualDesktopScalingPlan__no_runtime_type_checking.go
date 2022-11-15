@@ -68,6 +68,14 @@ func validateVirtualDesktopScalingPlan_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateVirtualDesktopScalingPlan_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualDesktopScalingPlan_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualDesktopScalingPlan) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

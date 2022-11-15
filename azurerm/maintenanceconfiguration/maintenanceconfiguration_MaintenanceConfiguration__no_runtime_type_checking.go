@@ -64,6 +64,14 @@ func validateMaintenanceConfiguration_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateMaintenanceConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMaintenanceConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MaintenanceConfiguration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

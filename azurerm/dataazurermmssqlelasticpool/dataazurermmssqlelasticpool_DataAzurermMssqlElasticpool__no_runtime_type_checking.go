@@ -60,6 +60,14 @@ func validateDataAzurermMssqlElasticpool_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAzurermMssqlElasticpool_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermMssqlElasticpool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMssqlElasticpool) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDataAzurermCognitiveAccount_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAzurermCognitiveAccount_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermCognitiveAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermCognitiveAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

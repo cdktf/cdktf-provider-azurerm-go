@@ -60,6 +60,14 @@ func validateAutomationHybridRunbookWorkerGroup_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateAutomationHybridRunbookWorkerGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAutomationHybridRunbookWorkerGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationHybridRunbookWorkerGroup) validateSetAutomationAccountNameParameters(val *string) error {
 	return nil
 }

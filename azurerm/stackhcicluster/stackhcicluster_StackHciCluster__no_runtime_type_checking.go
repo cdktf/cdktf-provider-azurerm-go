@@ -60,6 +60,14 @@ func validateStackHciCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStackHciCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStackHciCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StackHciCluster) validateSetClientIdParameters(val *string) error {
 	return nil
 }

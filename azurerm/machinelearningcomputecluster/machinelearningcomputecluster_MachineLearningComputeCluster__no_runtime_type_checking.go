@@ -72,6 +72,14 @@ func validateMachineLearningComputeCluster_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateMachineLearningComputeCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMachineLearningComputeCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MachineLearningComputeCluster) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

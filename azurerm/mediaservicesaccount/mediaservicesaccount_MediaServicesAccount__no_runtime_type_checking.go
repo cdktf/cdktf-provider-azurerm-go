@@ -72,6 +72,14 @@ func validateMediaServicesAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMediaServicesAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMediaServicesAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaServicesAccount) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

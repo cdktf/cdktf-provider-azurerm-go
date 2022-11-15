@@ -68,6 +68,14 @@ func validateContainerRegistryTokenPassword_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateContainerRegistryTokenPassword_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateContainerRegistryTokenPassword_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerRegistryTokenPassword) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

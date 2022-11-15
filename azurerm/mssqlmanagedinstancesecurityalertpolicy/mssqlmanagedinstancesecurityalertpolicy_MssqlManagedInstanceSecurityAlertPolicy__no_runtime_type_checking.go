@@ -60,6 +60,14 @@ func validateMssqlManagedInstanceSecurityAlertPolicy_IsConstructParameters(x int
 	return nil
 }
 
+func validateMssqlManagedInstanceSecurityAlertPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMssqlManagedInstanceSecurityAlertPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlManagedInstanceSecurityAlertPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

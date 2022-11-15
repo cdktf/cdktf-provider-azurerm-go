@@ -64,6 +64,14 @@ func validateHpcCacheNfsTarget_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateHpcCacheNfsTarget_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHpcCacheNfsTarget_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HpcCacheNfsTarget) validateSetCacheNameParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateRoleAssignment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRoleAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoleAssignment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RoleAssignment) validateSetConditionParameters(val *string) error {
 	return nil
 }

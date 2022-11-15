@@ -72,6 +72,14 @@ func validateGalleryApplicationVersion_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateGalleryApplicationVersion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGalleryApplicationVersion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GalleryApplicationVersion) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateSecurityCenterAutoProvisioning_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateSecurityCenterAutoProvisioning_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecurityCenterAutoProvisioning_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityCenterAutoProvisioning) validateSetAutoProvisionParameters(val *string) error {
 	return nil
 }

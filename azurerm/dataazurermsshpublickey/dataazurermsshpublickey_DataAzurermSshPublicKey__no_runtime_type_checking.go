@@ -60,6 +60,14 @@ func validateDataAzurermSshPublicKey_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataAzurermSshPublicKey_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermSshPublicKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermSshPublicKey) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateKustoClusterManagedPrivateEndpoint_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateKustoClusterManagedPrivateEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKustoClusterManagedPrivateEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoClusterManagedPrivateEndpoint) validateSetClusterNameParameters(val *string) error {
 	return nil
 }

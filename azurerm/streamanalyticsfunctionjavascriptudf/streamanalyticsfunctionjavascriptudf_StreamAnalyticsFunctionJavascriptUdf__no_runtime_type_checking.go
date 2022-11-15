@@ -68,6 +68,14 @@ func validateStreamAnalyticsFunctionJavascriptUdf_IsConstructParameters(x interf
 	return nil
 }
 
+func validateStreamAnalyticsFunctionJavascriptUdf_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStreamAnalyticsFunctionJavascriptUdf_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsFunctionJavascriptUdf) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

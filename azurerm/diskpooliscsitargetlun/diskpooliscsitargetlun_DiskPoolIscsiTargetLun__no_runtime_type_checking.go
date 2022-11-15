@@ -60,6 +60,14 @@ func validateDiskPoolIscsiTargetLun_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDiskPoolIscsiTargetLun_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDiskPoolIscsiTargetLun_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DiskPoolIscsiTargetLun) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

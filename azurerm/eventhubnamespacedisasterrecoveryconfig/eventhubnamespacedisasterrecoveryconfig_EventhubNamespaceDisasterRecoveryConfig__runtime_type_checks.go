@@ -130,6 +130,22 @@ func validateEventhubNamespaceDisasterRecoveryConfig_IsConstructParameters(x int
 	return nil
 }
 
+func validateEventhubNamespaceDisasterRecoveryConfig_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateEventhubNamespaceDisasterRecoveryConfig_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

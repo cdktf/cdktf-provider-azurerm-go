@@ -68,6 +68,14 @@ func validateVirtualNetworkGatewayNatRule_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateVirtualNetworkGatewayNatRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualNetworkGatewayNatRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetworkGatewayNatRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

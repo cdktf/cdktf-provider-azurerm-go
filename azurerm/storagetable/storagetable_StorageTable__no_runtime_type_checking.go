@@ -64,6 +64,14 @@ func validateStorageTable_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStorageTable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageTable_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageTable) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

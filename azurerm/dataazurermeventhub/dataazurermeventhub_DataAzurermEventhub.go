@@ -2,10 +2,10 @@ package dataazurermeventhub
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/dataazurermeventhub/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/dataazurermeventhub/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -517,6 +517,44 @@ func DataAzurermEventhub_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.dataAzurermEventhub.DataAzurermEventhub",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataAzurermEventhub_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataAzurermEventhub_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataAzurermEventhub.DataAzurermEventhub",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataAzurermEventhub_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataAzurermEventhub_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataAzurermEventhub.DataAzurermEventhub",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

@@ -64,6 +64,14 @@ func validateElasticCloudElasticsearch_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateElasticCloudElasticsearch_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElasticCloudElasticsearch_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticCloudElasticsearch) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

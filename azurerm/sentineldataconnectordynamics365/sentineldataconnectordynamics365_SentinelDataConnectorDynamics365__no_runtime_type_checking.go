@@ -60,6 +60,14 @@ func validateSentinelDataConnectorDynamics365_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateSentinelDataConnectorDynamics365_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSentinelDataConnectorDynamics365_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorDynamics365) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

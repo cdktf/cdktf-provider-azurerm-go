@@ -60,6 +60,14 @@ func validateMysqlFirewallRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMysqlFirewallRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMysqlFirewallRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MysqlFirewallRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -183,6 +183,22 @@ func validateMonitorDataCollectionRule_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateMonitorDataCollectionRule_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateMonitorDataCollectionRule_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MonitorDataCollectionRule) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

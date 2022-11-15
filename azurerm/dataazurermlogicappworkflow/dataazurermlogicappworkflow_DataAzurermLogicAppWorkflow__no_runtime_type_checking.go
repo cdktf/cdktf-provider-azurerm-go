@@ -60,6 +60,14 @@ func validateDataAzurermLogicAppWorkflow_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAzurermLogicAppWorkflow_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermLogicAppWorkflow_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermLogicAppWorkflow) validateSetIdParameters(val *string) error {
 	return nil
 }

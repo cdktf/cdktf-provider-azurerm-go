@@ -2,10 +2,10 @@ package mysqlserverkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/mysqlserverkey/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/mysqlserverkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -511,6 +511,44 @@ func MysqlServerKey_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.mysqlServerKey.MysqlServerKey",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MysqlServerKey_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMysqlServerKey_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.mysqlServerKey.MysqlServerKey",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MysqlServerKey_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMysqlServerKey_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.mysqlServerKey.MysqlServerKey",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

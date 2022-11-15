@@ -64,6 +64,14 @@ func validateDataFactoryLinkedServiceSynapse_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateDataFactoryLinkedServiceSynapse_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceSynapse_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceSynapse) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateSshPublicKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSshPublicKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSshPublicKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SshPublicKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateEventhubAuthorizationRule_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateEventhubAuthorizationRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEventhubAuthorizationRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventhubAuthorizationRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

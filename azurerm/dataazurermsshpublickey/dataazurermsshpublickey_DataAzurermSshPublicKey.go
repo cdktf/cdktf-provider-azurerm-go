@@ -2,10 +2,10 @@ package dataazurermsshpublickey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/dataazurermsshpublickey/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/dataazurermsshpublickey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -507,6 +507,44 @@ func DataAzurermSshPublicKey_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.dataAzurermSshPublicKey.DataAzurermSshPublicKey",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataAzurermSshPublicKey_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataAzurermSshPublicKey_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataAzurermSshPublicKey.DataAzurermSshPublicKey",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataAzurermSshPublicKey_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataAzurermSshPublicKey_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataAzurermSshPublicKey.DataAzurermSshPublicKey",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

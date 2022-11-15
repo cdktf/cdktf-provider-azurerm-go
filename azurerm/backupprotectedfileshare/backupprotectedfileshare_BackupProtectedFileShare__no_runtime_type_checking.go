@@ -60,6 +60,14 @@ func validateBackupProtectedFileShare_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateBackupProtectedFileShare_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBackupProtectedFileShare_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupProtectedFileShare) validateSetBackupPolicyIdParameters(val *string) error {
 	return nil
 }

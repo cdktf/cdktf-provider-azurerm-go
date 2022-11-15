@@ -60,6 +60,14 @@ func validateManagementLock_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateManagementLock_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateManagementLock_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagementLock) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDigitalTwinsEndpointServicebus_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDigitalTwinsEndpointServicebus_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDigitalTwinsEndpointServicebus_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DigitalTwinsEndpointServicebus) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

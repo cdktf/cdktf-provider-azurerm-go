@@ -60,6 +60,14 @@ func validateDataAzurermAttestationProvider_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataAzurermAttestationProvider_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermAttestationProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermAttestationProvider) validateSetIdParameters(val *string) error {
 	return nil
 }

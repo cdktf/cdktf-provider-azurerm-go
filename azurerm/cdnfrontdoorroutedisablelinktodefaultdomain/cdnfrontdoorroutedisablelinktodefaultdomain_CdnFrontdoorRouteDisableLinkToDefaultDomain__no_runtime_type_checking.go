@@ -60,6 +60,14 @@ func validateCdnFrontdoorRouteDisableLinkToDefaultDomain_IsConstructParameters(x
 	return nil
 }
 
+func validateCdnFrontdoorRouteDisableLinkToDefaultDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCdnFrontdoorRouteDisableLinkToDefaultDomain_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnFrontdoorRouteDisableLinkToDefaultDomain) validateSetCdnFrontdoorCustomDomainIdsParameters(val *[]*string) error {
 	return nil
 }

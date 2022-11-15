@@ -84,6 +84,14 @@ func validateFirewallPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFirewallPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFirewallPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FirewallPolicy) validateSetBasePolicyIdParameters(val *string) error {
 	return nil
 }

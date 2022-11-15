@@ -68,6 +68,14 @@ func validateDatadogMonitorTagRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDatadogMonitorTagRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatadogMonitorTagRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatadogMonitorTagRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

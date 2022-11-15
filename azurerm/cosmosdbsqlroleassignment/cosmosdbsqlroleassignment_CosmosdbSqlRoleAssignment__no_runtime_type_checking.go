@@ -60,6 +60,14 @@ func validateCosmosdbSqlRoleAssignment_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateCosmosdbSqlRoleAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCosmosdbSqlRoleAssignment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbSqlRoleAssignment) validateSetAccountNameParameters(val *string) error {
 	return nil
 }

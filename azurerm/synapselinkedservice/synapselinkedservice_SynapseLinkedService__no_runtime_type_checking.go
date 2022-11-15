@@ -64,6 +64,14 @@ func validateSynapseLinkedService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSynapseLinkedService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynapseLinkedService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseLinkedService) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

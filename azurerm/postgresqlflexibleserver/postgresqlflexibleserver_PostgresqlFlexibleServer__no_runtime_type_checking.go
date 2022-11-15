@@ -68,6 +68,14 @@ func validatePostgresqlFlexibleServer_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validatePostgresqlFlexibleServer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePostgresqlFlexibleServer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlFlexibleServer) validateSetAdministratorLoginParameters(val *string) error {
 	return nil
 }

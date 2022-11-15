@@ -64,6 +64,14 @@ func validateDnsMxRecord_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDnsMxRecord_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDnsMxRecord_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DnsMxRecord) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

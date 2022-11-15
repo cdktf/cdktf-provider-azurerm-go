@@ -64,6 +64,14 @@ func validateMediaStreamingLocator_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMediaStreamingLocator_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMediaStreamingLocator_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaStreamingLocator) validateSetAlternativeMediaIdParameters(val *string) error {
 	return nil
 }

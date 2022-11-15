@@ -76,6 +76,14 @@ func validateMonitorMetricAlert_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMonitorMetricAlert_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitorMetricAlert_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorMetricAlert) validateSetAutoMitigateParameters(val interface{}) error {
 	return nil
 }

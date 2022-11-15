@@ -2,10 +2,10 @@ package datafactorylinkedserviceazurefilestorage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/datafactorylinkedserviceazurefilestorage/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/datafactorylinkedserviceazurefilestorage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -884,6 +884,44 @@ func DataFactoryLinkedServiceAzureFileStorage_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.dataFactoryLinkedServiceAzureFileStorage.DataFactoryLinkedServiceAzureFileStorage",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataFactoryLinkedServiceAzureFileStorage_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataFactoryLinkedServiceAzureFileStorage_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataFactoryLinkedServiceAzureFileStorage.DataFactoryLinkedServiceAzureFileStorage",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataFactoryLinkedServiceAzureFileStorage_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataFactoryLinkedServiceAzureFileStorage_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataFactoryLinkedServiceAzureFileStorage.DataFactoryLinkedServiceAzureFileStorage",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -64,6 +64,14 @@ func validateDataFactoryDatasetHttp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataFactoryDatasetHttp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryDatasetHttp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryDatasetHttp) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

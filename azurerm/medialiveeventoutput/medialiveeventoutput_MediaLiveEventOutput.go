@@ -2,10 +2,10 @@ package medialiveeventoutput
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/medialiveeventoutput/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/medialiveeventoutput/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -719,6 +719,44 @@ func MediaLiveEventOutput_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.mediaLiveEventOutput.MediaLiveEventOutput",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MediaLiveEventOutput_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMediaLiveEventOutput_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.mediaLiveEventOutput.MediaLiveEventOutput",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MediaLiveEventOutput_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMediaLiveEventOutput_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.mediaLiveEventOutput.MediaLiveEventOutput",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

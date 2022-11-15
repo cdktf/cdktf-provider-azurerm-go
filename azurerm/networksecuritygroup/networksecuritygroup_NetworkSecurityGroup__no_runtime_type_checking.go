@@ -64,6 +64,14 @@ func validateNetworkSecurityGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNetworkSecurityGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkSecurityGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkSecurityGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

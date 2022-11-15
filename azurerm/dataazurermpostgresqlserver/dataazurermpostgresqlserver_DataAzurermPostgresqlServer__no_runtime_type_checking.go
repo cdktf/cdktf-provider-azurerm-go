@@ -60,6 +60,14 @@ func validateDataAzurermPostgresqlServer_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAzurermPostgresqlServer_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermPostgresqlServer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPostgresqlServer) validateSetIdParameters(val *string) error {
 	return nil
 }

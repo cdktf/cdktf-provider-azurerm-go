@@ -60,6 +60,14 @@ func validateContainerRegistryScopeMap_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateContainerRegistryScopeMap_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateContainerRegistryScopeMap_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerRegistryScopeMap) validateSetActionsParameters(val *[]*string) error {
 	return nil
 }

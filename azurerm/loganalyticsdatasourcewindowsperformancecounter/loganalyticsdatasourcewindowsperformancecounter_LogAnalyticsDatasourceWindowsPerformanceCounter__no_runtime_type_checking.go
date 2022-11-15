@@ -60,6 +60,14 @@ func validateLogAnalyticsDatasourceWindowsPerformanceCounter_IsConstructParamete
 	return nil
 }
 
+func validateLogAnalyticsDatasourceWindowsPerformanceCounter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogAnalyticsDatasourceWindowsPerformanceCounter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsDatasourceWindowsPerformanceCounter) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

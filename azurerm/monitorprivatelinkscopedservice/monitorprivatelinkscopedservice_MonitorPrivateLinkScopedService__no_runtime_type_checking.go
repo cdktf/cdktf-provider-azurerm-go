@@ -60,6 +60,14 @@ func validateMonitorPrivateLinkScopedService_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateMonitorPrivateLinkScopedService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitorPrivateLinkScopedService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorPrivateLinkScopedService) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package cosmosdbsqltrigger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/cosmosdbsqltrigger/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/cosmosdbsqltrigger/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -613,6 +613,44 @@ func CosmosdbSqlTrigger_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.cosmosdbSqlTrigger.CosmosdbSqlTrigger",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CosmosdbSqlTrigger_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCosmosdbSqlTrigger_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.cosmosdbSqlTrigger.CosmosdbSqlTrigger",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CosmosdbSqlTrigger_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCosmosdbSqlTrigger_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.cosmosdbSqlTrigger.CosmosdbSqlTrigger",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

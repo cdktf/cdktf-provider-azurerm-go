@@ -68,6 +68,14 @@ func validateCdnEndpointCustomDomain_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateCdnEndpointCustomDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCdnEndpointCustomDomain_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnEndpointCustomDomain) validateSetCdnEndpointIdParameters(val *string) error {
 	return nil
 }

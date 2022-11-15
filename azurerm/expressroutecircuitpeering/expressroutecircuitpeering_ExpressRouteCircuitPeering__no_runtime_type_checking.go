@@ -68,6 +68,14 @@ func validateExpressRouteCircuitPeering_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateExpressRouteCircuitPeering_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateExpressRouteCircuitPeering_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRouteCircuitPeering) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateManagedDisk_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateManagedDisk_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateManagedDisk_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedDisk) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

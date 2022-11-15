@@ -60,6 +60,14 @@ func validateSynapseSqlPoolSecurityAlertPolicy_IsConstructParameters(x interface
 	return nil
 }
 
+func validateSynapseSqlPoolSecurityAlertPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynapseSqlPoolSecurityAlertPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseSqlPoolSecurityAlertPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

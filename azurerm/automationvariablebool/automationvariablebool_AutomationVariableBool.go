@@ -2,10 +2,10 @@ package automationvariablebool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/automationvariablebool/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/automationvariablebool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -650,6 +650,44 @@ func AutomationVariableBool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.automationVariableBool.AutomationVariableBool",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AutomationVariableBool_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAutomationVariableBool_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.automationVariableBool.AutomationVariableBool",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AutomationVariableBool_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAutomationVariableBool_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.automationVariableBool.AutomationVariableBool",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

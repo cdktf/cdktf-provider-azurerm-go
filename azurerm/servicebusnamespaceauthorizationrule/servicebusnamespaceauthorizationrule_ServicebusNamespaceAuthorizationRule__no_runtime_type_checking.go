@@ -60,6 +60,14 @@ func validateServicebusNamespaceAuthorizationRule_IsConstructParameters(x interf
 	return nil
 }
 
+func validateServicebusNamespaceAuthorizationRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicebusNamespaceAuthorizationRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicebusNamespaceAuthorizationRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

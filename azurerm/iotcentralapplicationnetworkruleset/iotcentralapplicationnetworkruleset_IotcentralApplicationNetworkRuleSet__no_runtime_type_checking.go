@@ -64,6 +64,14 @@ func validateIotcentralApplicationNetworkRuleSet_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateIotcentralApplicationNetworkRuleSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIotcentralApplicationNetworkRuleSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotcentralApplicationNetworkRuleSet) validateSetApplyToDeviceParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateCosmosdbCassandraKeyspace_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateCosmosdbCassandraKeyspace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCosmosdbCassandraKeyspace_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbCassandraKeyspace) validateSetAccountNameParameters(val *string) error {
 	return nil
 }

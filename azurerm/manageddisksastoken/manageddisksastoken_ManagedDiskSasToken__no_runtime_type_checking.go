@@ -60,6 +60,14 @@ func validateManagedDiskSasToken_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateManagedDiskSasToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateManagedDiskSasToken_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedDiskSasToken) validateSetAccessLevelParameters(val *string) error {
 	return nil
 }

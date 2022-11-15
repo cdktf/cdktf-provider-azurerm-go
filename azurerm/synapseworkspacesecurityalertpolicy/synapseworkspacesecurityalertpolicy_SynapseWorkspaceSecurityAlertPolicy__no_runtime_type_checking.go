@@ -60,6 +60,14 @@ func validateSynapseWorkspaceSecurityAlertPolicy_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateSynapseWorkspaceSecurityAlertPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynapseWorkspaceSecurityAlertPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseWorkspaceSecurityAlertPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

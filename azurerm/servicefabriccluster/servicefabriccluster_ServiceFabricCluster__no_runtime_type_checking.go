@@ -104,6 +104,14 @@ func validateServiceFabricCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServiceFabricCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServiceFabricCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceFabricCluster) validateSetAddOnFeaturesParameters(val *[]*string) error {
 	return nil
 }

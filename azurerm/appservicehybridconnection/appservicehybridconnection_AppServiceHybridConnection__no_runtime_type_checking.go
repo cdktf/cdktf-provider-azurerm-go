@@ -60,6 +60,14 @@ func validateAppServiceHybridConnection_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateAppServiceHybridConnection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppServiceHybridConnection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceHybridConnection) validateSetAppServiceNameParameters(val *string) error {
 	return nil
 }

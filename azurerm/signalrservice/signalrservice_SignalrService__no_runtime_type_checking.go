@@ -76,6 +76,14 @@ func validateSignalrService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSignalrService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSignalrService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SignalrService) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

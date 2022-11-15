@@ -64,6 +64,14 @@ func validateRedisEnterpriseDatabase_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateRedisEnterpriseDatabase_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedisEnterpriseDatabase_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisEnterpriseDatabase) validateSetClientProtocolParameters(val *string) error {
 	return nil
 }

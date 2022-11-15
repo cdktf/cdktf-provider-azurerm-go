@@ -64,6 +64,14 @@ func validateVirtualHub_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVirtualHub_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualHub_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualHub) validateSetAddressPrefixParameters(val *string) error {
 	return nil
 }

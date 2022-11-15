@@ -60,6 +60,14 @@ func validateSharedImageGallery_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSharedImageGallery_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSharedImageGallery_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SharedImageGallery) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

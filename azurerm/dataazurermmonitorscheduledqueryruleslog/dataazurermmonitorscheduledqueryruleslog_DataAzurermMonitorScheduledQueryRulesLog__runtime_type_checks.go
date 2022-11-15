@@ -130,6 +130,22 @@ func validateDataAzurermMonitorScheduledQueryRulesLog_IsConstructParameters(x in
 	return nil
 }
 
+func validateDataAzurermMonitorScheduledQueryRulesLog_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAzurermMonitorScheduledQueryRulesLog_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMonitorScheduledQueryRulesLog) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

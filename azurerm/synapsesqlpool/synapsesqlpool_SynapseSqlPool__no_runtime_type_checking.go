@@ -64,6 +64,14 @@ func validateSynapseSqlPool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSynapseSqlPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynapseSqlPool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseSqlPool) validateSetCollationParameters(val *string) error {
 	return nil
 }

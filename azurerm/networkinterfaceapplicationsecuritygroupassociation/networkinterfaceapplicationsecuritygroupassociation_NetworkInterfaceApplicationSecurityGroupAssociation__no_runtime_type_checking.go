@@ -60,6 +60,14 @@ func validateNetworkInterfaceApplicationSecurityGroupAssociation_IsConstructPara
 	return nil
 }
 
+func validateNetworkInterfaceApplicationSecurityGroupAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkInterfaceApplicationSecurityGroupAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkInterfaceApplicationSecurityGroupAssociation) validateSetApplicationSecurityGroupIdParameters(val *string) error {
 	return nil
 }

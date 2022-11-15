@@ -64,6 +64,14 @@ func validateFrontdoorRulesEngine_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFrontdoorRulesEngine_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFrontdoorRulesEngine_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FrontdoorRulesEngine) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

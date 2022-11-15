@@ -183,6 +183,22 @@ func validateDataFactoryDatasetJson_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataFactoryDatasetJson_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataFactoryDatasetJson_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryDatasetJson) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

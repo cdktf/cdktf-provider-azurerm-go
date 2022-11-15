@@ -60,6 +60,14 @@ func validateDataAzurermNetappSnapshot_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataAzurermNetappSnapshot_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermNetappSnapshot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermNetappSnapshot) validateSetAccountNameParameters(val *string) error {
 	return nil
 }

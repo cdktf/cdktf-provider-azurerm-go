@@ -76,6 +76,14 @@ func validateDataFactoryDatasetDelimitedText_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateDataFactoryDatasetDelimitedText_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryDatasetDelimitedText_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryDatasetDelimitedText) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

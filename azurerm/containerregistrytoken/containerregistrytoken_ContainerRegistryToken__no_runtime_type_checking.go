@@ -60,6 +60,14 @@ func validateContainerRegistryToken_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateContainerRegistryToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateContainerRegistryToken_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerRegistryToken) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

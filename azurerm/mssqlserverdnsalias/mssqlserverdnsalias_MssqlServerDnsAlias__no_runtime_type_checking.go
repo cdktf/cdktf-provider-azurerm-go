@@ -60,6 +60,14 @@ func validateMssqlServerDnsAlias_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMssqlServerDnsAlias_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMssqlServerDnsAlias_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlServerDnsAlias) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -76,6 +76,14 @@ func validateEventgridDomain_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEventgridDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEventgridDomain_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventgridDomain) validateSetAutoCreateTopicWithFirstSubscriptionParameters(val interface{}) error {
 	return nil
 }

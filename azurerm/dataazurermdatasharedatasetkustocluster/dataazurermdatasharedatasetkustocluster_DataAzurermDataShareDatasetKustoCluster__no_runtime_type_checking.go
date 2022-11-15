@@ -60,6 +60,14 @@ func validateDataAzurermDataShareDatasetKustoCluster_IsConstructParameters(x int
 	return nil
 }
 
+func validateDataAzurermDataShareDatasetKustoCluster_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermDataShareDatasetKustoCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDataShareDatasetKustoCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

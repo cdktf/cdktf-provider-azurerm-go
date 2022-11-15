@@ -76,6 +76,14 @@ func validateHealthcareFhirService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateHealthcareFhirService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHealthcareFhirService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareFhirService) validateSetAccessPolicyObjectIdsParameters(val *[]*string) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateConfidentialLedger_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateConfidentialLedger_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConfidentialLedger_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfidentialLedger) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

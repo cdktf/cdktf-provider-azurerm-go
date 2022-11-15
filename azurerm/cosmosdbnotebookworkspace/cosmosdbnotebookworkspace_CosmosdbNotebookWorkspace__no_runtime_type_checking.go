@@ -60,6 +60,14 @@ func validateCosmosdbNotebookWorkspace_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateCosmosdbNotebookWorkspace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCosmosdbNotebookWorkspace_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbNotebookWorkspace) validateSetAccountNameParameters(val *string) error {
 	return nil
 }

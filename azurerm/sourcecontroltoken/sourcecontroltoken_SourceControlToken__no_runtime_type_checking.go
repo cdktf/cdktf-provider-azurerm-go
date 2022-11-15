@@ -60,6 +60,14 @@ func validateSourceControlToken_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSourceControlToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSourceControlToken_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SourceControlToken) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

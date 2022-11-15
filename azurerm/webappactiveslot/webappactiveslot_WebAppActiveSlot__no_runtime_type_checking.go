@@ -60,6 +60,14 @@ func validateWebAppActiveSlot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWebAppActiveSlot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWebAppActiveSlot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WebAppActiveSlot) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

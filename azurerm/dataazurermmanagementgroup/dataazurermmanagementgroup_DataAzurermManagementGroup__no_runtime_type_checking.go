@@ -60,6 +60,14 @@ func validateDataAzurermManagementGroup_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataAzurermManagementGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermManagementGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermManagementGroup) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

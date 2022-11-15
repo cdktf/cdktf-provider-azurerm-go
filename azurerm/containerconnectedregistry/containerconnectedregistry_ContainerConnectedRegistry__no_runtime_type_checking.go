@@ -64,6 +64,14 @@ func validateContainerConnectedRegistry_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateContainerConnectedRegistry_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateContainerConnectedRegistry_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerConnectedRegistry) validateSetAuditLogEnabledParameters(val interface{}) error {
 	return nil
 }

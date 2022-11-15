@@ -60,6 +60,14 @@ func validateNotificationHubNamespace_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateNotificationHubNamespace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNotificationHubNamespace_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationHubNamespace) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

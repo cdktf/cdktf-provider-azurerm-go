@@ -76,6 +76,14 @@ func validateEventgridTopic_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEventgridTopic_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEventgridTopic_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventgridTopic) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

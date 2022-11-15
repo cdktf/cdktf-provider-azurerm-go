@@ -60,6 +60,14 @@ func validateCosmosdbSqlStoredProcedure_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateCosmosdbSqlStoredProcedure_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCosmosdbSqlStoredProcedure_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbSqlStoredProcedure) validateSetAccountNameParameters(val *string) error {
 	return nil
 }

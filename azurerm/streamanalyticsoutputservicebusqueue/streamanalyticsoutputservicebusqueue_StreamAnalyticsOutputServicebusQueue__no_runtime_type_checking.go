@@ -64,6 +64,14 @@ func validateStreamAnalyticsOutputServicebusQueue_IsConstructParameters(x interf
 	return nil
 }
 
+func validateStreamAnalyticsOutputServicebusQueue_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStreamAnalyticsOutputServicebusQueue_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsOutputServicebusQueue) validateSetAuthenticationModeParameters(val *string) error {
 	return nil
 }

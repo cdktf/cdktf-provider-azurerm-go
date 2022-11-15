@@ -60,6 +60,14 @@ func validateIothubDpsSharedAccessPolicy_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateIothubDpsSharedAccessPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIothubDpsSharedAccessPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubDpsSharedAccessPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

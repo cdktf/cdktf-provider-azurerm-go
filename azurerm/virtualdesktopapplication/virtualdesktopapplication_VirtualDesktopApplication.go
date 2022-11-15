@@ -2,10 +2,10 @@ package virtualdesktopapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/virtualdesktopapplication/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/virtualdesktopapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -789,6 +789,44 @@ func VirtualDesktopApplication_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.virtualDesktopApplication.VirtualDesktopApplication",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VirtualDesktopApplication_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVirtualDesktopApplication_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.virtualDesktopApplication.VirtualDesktopApplication",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VirtualDesktopApplication_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVirtualDesktopApplication_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.virtualDesktopApplication.VirtualDesktopApplication",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

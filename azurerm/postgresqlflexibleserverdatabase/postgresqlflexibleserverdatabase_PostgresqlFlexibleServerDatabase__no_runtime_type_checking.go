@@ -60,6 +60,14 @@ func validatePostgresqlFlexibleServerDatabase_IsConstructParameters(x interface{
 	return nil
 }
 
+func validatePostgresqlFlexibleServerDatabase_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePostgresqlFlexibleServerDatabase_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlFlexibleServerDatabase) validateSetCharsetParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateNginxConfiguration_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNginxConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNginxConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NginxConfiguration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

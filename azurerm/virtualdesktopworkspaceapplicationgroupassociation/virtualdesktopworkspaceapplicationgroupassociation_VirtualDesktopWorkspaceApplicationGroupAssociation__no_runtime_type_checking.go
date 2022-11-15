@@ -60,6 +60,14 @@ func validateVirtualDesktopWorkspaceApplicationGroupAssociation_IsConstructParam
 	return nil
 }
 
+func validateVirtualDesktopWorkspaceApplicationGroupAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualDesktopWorkspaceApplicationGroupAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociation) validateSetApplicationGroupIdParameters(val *string) error {
 	return nil
 }

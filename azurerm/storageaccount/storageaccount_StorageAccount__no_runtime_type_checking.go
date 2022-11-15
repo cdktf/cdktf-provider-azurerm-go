@@ -104,6 +104,14 @@ func validateStorageAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStorageAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccount) validateSetAccessTierParameters(val *string) error {
 	return nil
 }

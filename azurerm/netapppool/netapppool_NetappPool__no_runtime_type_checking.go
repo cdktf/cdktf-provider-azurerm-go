@@ -60,6 +60,14 @@ func validateNetappPool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNetappPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetappPool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappPool) validateSetAccountNameParameters(val *string) error {
 	return nil
 }

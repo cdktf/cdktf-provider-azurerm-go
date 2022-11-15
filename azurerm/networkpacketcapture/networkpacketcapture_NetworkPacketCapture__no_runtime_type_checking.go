@@ -68,6 +68,14 @@ func validateNetworkPacketCapture_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNetworkPacketCapture_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkPacketCapture_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkPacketCapture) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -130,6 +130,22 @@ func validateDataAzurermSharedImageVersion_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataAzurermSharedImageVersion_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAzurermSharedImageVersion_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermSharedImageVersion) validateSetGalleryNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

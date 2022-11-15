@@ -130,6 +130,22 @@ func validateRedisEnterpriseCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRedisEnterpriseCluster_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateRedisEnterpriseCluster_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RedisEnterpriseCluster) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

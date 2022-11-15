@@ -130,6 +130,22 @@ func validateDataAzurermPrivateLinkService_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataAzurermPrivateLinkService_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAzurermPrivateLinkService_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPrivateLinkService) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

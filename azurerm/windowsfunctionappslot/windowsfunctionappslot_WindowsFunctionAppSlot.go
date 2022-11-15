@@ -2,10 +2,10 @@ package windowsfunctionappslot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/windowsfunctionappslot/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/windowsfunctionappslot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1337,6 +1337,44 @@ func WindowsFunctionAppSlot_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func WindowsFunctionAppSlot_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateWindowsFunctionAppSlot_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func WindowsFunctionAppSlot_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateWindowsFunctionAppSlot_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

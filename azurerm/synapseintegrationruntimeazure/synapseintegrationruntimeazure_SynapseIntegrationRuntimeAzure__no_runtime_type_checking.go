@@ -60,6 +60,14 @@ func validateSynapseIntegrationRuntimeAzure_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateSynapseIntegrationRuntimeAzure_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynapseIntegrationRuntimeAzure_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseIntegrationRuntimeAzure) validateSetComputeTypeParameters(val *string) error {
 	return nil
 }

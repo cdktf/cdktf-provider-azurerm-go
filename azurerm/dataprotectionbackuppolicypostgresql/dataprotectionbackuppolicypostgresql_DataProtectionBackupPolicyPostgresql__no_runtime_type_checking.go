@@ -64,6 +64,14 @@ func validateDataProtectionBackupPolicyPostgresql_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDataProtectionBackupPolicyPostgresql_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataProtectionBackupPolicyPostgresql_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql) validateSetBackupRepeatingTimeIntervalsParameters(val *[]*string) error {
 	return nil
 }

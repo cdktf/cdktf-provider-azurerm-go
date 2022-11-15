@@ -68,6 +68,14 @@ func validateImage_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateImage_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateImage_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Image) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

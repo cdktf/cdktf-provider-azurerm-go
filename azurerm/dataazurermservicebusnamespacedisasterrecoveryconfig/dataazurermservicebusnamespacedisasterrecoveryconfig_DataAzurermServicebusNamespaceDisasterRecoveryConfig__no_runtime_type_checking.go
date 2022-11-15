@@ -60,6 +60,14 @@ func validateDataAzurermServicebusNamespaceDisasterRecoveryConfig_IsConstructPar
 	return nil
 }
 
+func validateDataAzurermServicebusNamespaceDisasterRecoveryConfig_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermServicebusNamespaceDisasterRecoveryConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermServicebusNamespaceDisasterRecoveryConfig) validateSetAliasAuthorizationRuleIdParameters(val *string) error {
 	return nil
 }

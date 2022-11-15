@@ -60,6 +60,14 @@ func validateIothubEnrichmentA_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIothubEnrichmentA_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIothubEnrichmentA_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubEnrichmentA) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

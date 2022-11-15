@@ -60,6 +60,14 @@ func validateDataAzurermAppServicePlan_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataAzurermAppServicePlan_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermAppServicePlan_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermAppServicePlan) validateSetIdParameters(val *string) error {
 	return nil
 }

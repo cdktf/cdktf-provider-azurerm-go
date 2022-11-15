@@ -104,6 +104,14 @@ func validateMonitorActionGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMonitorActionGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitorActionGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorActionGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

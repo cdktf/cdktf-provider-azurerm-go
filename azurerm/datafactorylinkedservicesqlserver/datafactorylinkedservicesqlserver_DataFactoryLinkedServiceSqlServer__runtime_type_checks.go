@@ -152,6 +152,22 @@ func validateDataFactoryLinkedServiceSqlServer_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataFactoryLinkedServiceSqlServer_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataFactoryLinkedServiceSqlServer_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceSqlServer) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

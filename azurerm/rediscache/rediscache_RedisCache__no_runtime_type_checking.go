@@ -72,6 +72,14 @@ func validateRedisCache_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRedisCache_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedisCache_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisCache) validateSetCapacityParameters(val *float64) error {
 	return nil
 }

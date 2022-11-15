@@ -60,6 +60,14 @@ func validateApplicationInsightsSmartDetectionRule_IsConstructParameters(x inter
 	return nil
 }
 
+func validateApplicationInsightsSmartDetectionRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApplicationInsightsSmartDetectionRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationInsightsSmartDetectionRule) validateSetAdditionalEmailRecipientsParameters(val *[]*string) error {
 	return nil
 }

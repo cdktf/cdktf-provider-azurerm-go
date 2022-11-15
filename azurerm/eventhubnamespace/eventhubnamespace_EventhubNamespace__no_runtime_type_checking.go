@@ -68,6 +68,14 @@ func validateEventhubNamespace_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEventhubNamespace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEventhubNamespace_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventhubNamespace) validateSetAutoInflateEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateSentinelAlertRuleMsSecurityIncident_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateSentinelAlertRuleMsSecurityIncident_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSentinelAlertRuleMsSecurityIncident_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelAlertRuleMsSecurityIncident) validateSetAlertRuleTemplateGuidParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package datafactorylinkedservicesqlserver
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/datafactorylinkedservicesqlserver/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/datafactorylinkedservicesqlserver/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -804,6 +804,44 @@ func DataFactoryLinkedServiceSqlServer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.dataFactoryLinkedServiceSqlServer.DataFactoryLinkedServiceSqlServer",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataFactoryLinkedServiceSqlServer_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataFactoryLinkedServiceSqlServer_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataFactoryLinkedServiceSqlServer.DataFactoryLinkedServiceSqlServer",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataFactoryLinkedServiceSqlServer_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataFactoryLinkedServiceSqlServer_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataFactoryLinkedServiceSqlServer.DataFactoryLinkedServiceSqlServer",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

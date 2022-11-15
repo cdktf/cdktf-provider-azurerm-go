@@ -68,6 +68,14 @@ func validateVpnSite_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVpnSite_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpnSite_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnSite) validateSetAddressCidrsParameters(val *[]*string) error {
 	return nil
 }

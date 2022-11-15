@@ -68,6 +68,14 @@ func validateMonitorAlertProcessingRuleActionGroup_IsConstructParameters(x inter
 	return nil
 }
 
+func validateMonitorAlertProcessingRuleActionGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitorAlertProcessingRuleActionGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorAlertProcessingRuleActionGroup) validateSetAddActionGroupIdsParameters(val *[]*string) error {
 	return nil
 }

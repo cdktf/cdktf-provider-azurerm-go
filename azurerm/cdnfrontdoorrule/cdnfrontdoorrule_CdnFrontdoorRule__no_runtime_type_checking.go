@@ -68,6 +68,14 @@ func validateCdnFrontdoorRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCdnFrontdoorRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCdnFrontdoorRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnFrontdoorRule) validateSetBehaviorOnMatchParameters(val *string) error {
 	return nil
 }

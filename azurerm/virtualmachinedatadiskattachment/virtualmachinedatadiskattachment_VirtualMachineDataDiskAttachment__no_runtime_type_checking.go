@@ -60,6 +60,14 @@ func validateVirtualMachineDataDiskAttachment_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateVirtualMachineDataDiskAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualMachineDataDiskAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualMachineDataDiskAttachment) validateSetCachingParameters(val *string) error {
 	return nil
 }

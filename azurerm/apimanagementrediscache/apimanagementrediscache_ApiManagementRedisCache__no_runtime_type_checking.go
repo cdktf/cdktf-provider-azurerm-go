@@ -60,6 +60,14 @@ func validateApiManagementRedisCache_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateApiManagementRedisCache_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementRedisCache_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementRedisCache) validateSetApiManagementIdParameters(val *string) error {
 	return nil
 }

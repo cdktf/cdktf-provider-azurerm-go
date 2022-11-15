@@ -64,6 +64,14 @@ func validateCosmosdbCassandraCluster_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateCosmosdbCassandraCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCosmosdbCassandraCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbCassandraCluster) validateSetAuthenticationMethodParameters(val *string) error {
 	return nil
 }

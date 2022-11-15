@@ -60,6 +60,14 @@ func validateSubnetRouteTableAssociation_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateSubnetRouteTableAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSubnetRouteTableAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SubnetRouteTableAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

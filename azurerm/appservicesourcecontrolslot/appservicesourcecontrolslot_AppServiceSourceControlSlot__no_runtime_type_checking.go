@@ -64,6 +64,14 @@ func validateAppServiceSourceControlSlot_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateAppServiceSourceControlSlot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppServiceSourceControlSlot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceSourceControlSlot) validateSetBranchParameters(val *string) error {
 	return nil
 }

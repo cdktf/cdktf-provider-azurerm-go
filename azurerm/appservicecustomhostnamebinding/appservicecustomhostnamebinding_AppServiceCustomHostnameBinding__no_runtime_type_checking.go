@@ -60,6 +60,14 @@ func validateAppServiceCustomHostnameBinding_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateAppServiceCustomHostnameBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppServiceCustomHostnameBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceCustomHostnameBinding) validateSetAppServiceNameParameters(val *string) error {
 	return nil
 }

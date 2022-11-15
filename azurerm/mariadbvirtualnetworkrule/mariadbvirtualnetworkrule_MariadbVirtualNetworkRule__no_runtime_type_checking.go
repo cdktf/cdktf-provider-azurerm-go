@@ -60,6 +60,14 @@ func validateMariadbVirtualNetworkRule_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateMariadbVirtualNetworkRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMariadbVirtualNetworkRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MariadbVirtualNetworkRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateDataFactoryDatasetSnowflake_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataFactoryDatasetSnowflake_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryDatasetSnowflake_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryDatasetSnowflake) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

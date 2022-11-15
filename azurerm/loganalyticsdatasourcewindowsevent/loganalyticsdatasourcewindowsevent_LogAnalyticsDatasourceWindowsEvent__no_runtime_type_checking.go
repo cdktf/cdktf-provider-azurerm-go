@@ -60,6 +60,14 @@ func validateLogAnalyticsDatasourceWindowsEvent_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateLogAnalyticsDatasourceWindowsEvent_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogAnalyticsDatasourceWindowsEvent_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsDatasourceWindowsEvent) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

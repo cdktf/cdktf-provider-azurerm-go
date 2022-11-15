@@ -60,6 +60,14 @@ func validateLogAnalyticsLinkedService_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateLogAnalyticsLinkedService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogAnalyticsLinkedService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsLinkedService) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

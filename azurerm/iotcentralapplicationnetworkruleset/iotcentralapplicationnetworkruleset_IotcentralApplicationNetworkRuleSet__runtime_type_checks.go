@@ -161,6 +161,22 @@ func validateIotcentralApplicationNetworkRuleSet_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateIotcentralApplicationNetworkRuleSet_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateIotcentralApplicationNetworkRuleSet_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_IotcentralApplicationNetworkRuleSet) validateSetApplyToDeviceParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

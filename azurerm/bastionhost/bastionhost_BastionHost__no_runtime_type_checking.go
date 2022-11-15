@@ -64,6 +64,14 @@ func validateBastionHost_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBastionHost_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBastionHost_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BastionHost) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

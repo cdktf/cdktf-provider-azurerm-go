@@ -64,6 +64,14 @@ func validateKubernetesFleetManager_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKubernetesFleetManager_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKubernetesFleetManager_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesFleetManager) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

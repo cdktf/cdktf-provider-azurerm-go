@@ -60,6 +60,14 @@ func validateDataAzurermSpringCloudApp_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataAzurermSpringCloudApp_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermSpringCloudApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermSpringCloudApp) validateSetIdParameters(val *string) error {
 	return nil
 }

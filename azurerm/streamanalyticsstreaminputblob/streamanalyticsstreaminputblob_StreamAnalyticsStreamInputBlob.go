@@ -2,10 +2,10 @@ package streamanalyticsstreaminputblob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/streamanalyticsstreaminputblob/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/streamanalyticsstreaminputblob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -772,6 +772,44 @@ func StreamAnalyticsStreamInputBlob_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.streamAnalyticsStreamInputBlob.StreamAnalyticsStreamInputBlob",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func StreamAnalyticsStreamInputBlob_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStreamAnalyticsStreamInputBlob_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.streamAnalyticsStreamInputBlob.StreamAnalyticsStreamInputBlob",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func StreamAnalyticsStreamInputBlob_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStreamAnalyticsStreamInputBlob_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.streamAnalyticsStreamInputBlob.StreamAnalyticsStreamInputBlob",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

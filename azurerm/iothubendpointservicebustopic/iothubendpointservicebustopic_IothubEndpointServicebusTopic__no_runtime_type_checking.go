@@ -60,6 +60,14 @@ func validateIothubEndpointServicebusTopic_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateIothubEndpointServicebusTopic_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIothubEndpointServicebusTopic_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubEndpointServicebusTopic) validateSetAuthenticationTypeParameters(val *string) error {
 	return nil
 }

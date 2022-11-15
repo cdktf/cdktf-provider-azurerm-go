@@ -60,6 +60,14 @@ func validateSpringCloudAppCosmosdbAssociation_IsConstructParameters(x interface
 	return nil
 }
 
+func validateSpringCloudAppCosmosdbAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpringCloudAppCosmosdbAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudAppCosmosdbAssociation) validateSetApiTypeParameters(val *string) error {
 	return nil
 }

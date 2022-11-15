@@ -60,6 +60,14 @@ func validateLbNatRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLbNatRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbNatRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbNatRule) validateSetBackendAddressPoolIdParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validatePrivateDnsTxtRecord_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePrivateDnsTxtRecord_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePrivateDnsTxtRecord_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivateDnsTxtRecord) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

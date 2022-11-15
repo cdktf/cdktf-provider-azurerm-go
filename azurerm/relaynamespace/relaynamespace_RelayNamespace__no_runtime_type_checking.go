@@ -60,6 +60,14 @@ func validateRelayNamespace_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRelayNamespace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRelayNamespace_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RelayNamespace) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

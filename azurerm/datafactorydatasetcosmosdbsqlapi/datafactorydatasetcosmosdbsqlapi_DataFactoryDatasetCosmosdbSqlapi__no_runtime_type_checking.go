@@ -64,6 +64,14 @@ func validateDataFactoryDatasetCosmosdbSqlapi_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateDataFactoryDatasetCosmosdbSqlapi_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryDatasetCosmosdbSqlapi_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryDatasetCosmosdbSqlapi) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

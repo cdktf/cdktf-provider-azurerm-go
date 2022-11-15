@@ -60,6 +60,14 @@ func validateHpcCacheBlobNfsTarget_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateHpcCacheBlobNfsTarget_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHpcCacheBlobNfsTarget_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HpcCacheBlobNfsTarget) validateSetAccessPolicyNameParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateSqlManagedInstanceActiveDirectoryAdministrator_IsConstructParameter
 	return nil
 }
 
+func validateSqlManagedInstanceActiveDirectoryAdministrator_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSqlManagedInstanceActiveDirectoryAdministrator_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) validateSetAzureadAuthenticationOnlyParameters(val interface{}) error {
 	return nil
 }

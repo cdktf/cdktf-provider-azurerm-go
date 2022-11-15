@@ -60,6 +60,14 @@ func validateVirtualWan_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVirtualWan_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualWan_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualWan) validateSetAllowBranchToBranchTrafficParameters(val interface{}) error {
 	return nil
 }

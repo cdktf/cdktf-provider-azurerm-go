@@ -64,6 +64,14 @@ func validateDnsZone_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDnsZone_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDnsZone_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DnsZone) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

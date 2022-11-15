@@ -60,6 +60,14 @@ func validateCosmosdbCassandraDatacenter_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateCosmosdbCassandraDatacenter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCosmosdbCassandraDatacenter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbCassandraDatacenter) validateSetAvailabilityZonesEnabledParameters(val interface{}) error {
 	return nil
 }

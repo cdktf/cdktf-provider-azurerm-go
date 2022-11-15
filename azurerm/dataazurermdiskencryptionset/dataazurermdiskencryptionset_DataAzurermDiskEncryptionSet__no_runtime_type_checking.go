@@ -60,6 +60,14 @@ func validateDataAzurermDiskEncryptionSet_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataAzurermDiskEncryptionSet_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermDiskEncryptionSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDiskEncryptionSet) validateSetIdParameters(val *string) error {
 	return nil
 }

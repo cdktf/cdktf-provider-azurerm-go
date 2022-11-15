@@ -64,6 +64,14 @@ func validateLbOutboundRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLbOutboundRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbOutboundRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbOutboundRule) validateSetAllocatedOutboundPortsParameters(val *float64) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateLogAnalyticsLinkedStorageAccount_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateLogAnalyticsLinkedStorageAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogAnalyticsLinkedStorageAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsLinkedStorageAccount) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

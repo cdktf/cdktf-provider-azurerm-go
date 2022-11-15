@@ -60,6 +60,14 @@ func validateIotTimeSeriesInsightsEventSourceIothub_IsConstructParameters(x inte
 	return nil
 }
 
+func validateIotTimeSeriesInsightsEventSourceIothub_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIotTimeSeriesInsightsEventSourceIothub_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

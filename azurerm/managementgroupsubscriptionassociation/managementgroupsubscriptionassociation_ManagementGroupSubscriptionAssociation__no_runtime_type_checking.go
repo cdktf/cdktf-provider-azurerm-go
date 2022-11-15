@@ -60,6 +60,14 @@ func validateManagementGroupSubscriptionAssociation_IsConstructParameters(x inte
 	return nil
 }
 
+func validateManagementGroupSubscriptionAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateManagementGroupSubscriptionAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagementGroupSubscriptionAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

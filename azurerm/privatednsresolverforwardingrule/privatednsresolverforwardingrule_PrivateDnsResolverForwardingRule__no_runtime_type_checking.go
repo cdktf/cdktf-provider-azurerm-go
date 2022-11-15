@@ -64,6 +64,14 @@ func validatePrivateDnsResolverForwardingRule_IsConstructParameters(x interface{
 	return nil
 }
 
+func validatePrivateDnsResolverForwardingRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePrivateDnsResolverForwardingRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivateDnsResolverForwardingRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

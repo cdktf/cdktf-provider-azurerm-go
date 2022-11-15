@@ -88,6 +88,14 @@ func validateDataFactoryIntegrationRuntimeAzureSsis_IsConstructParameters(x inte
 	return nil
 }
 
+func validateDataFactoryIntegrationRuntimeAzureSsis_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryIntegrationRuntimeAzureSsis_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

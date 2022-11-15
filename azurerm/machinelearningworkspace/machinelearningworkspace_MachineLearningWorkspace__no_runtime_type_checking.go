@@ -68,6 +68,14 @@ func validateMachineLearningWorkspace_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateMachineLearningWorkspace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMachineLearningWorkspace_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MachineLearningWorkspace) validateSetApplicationInsightsIdParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDataAzurermConfidentialLedger_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataAzurermConfidentialLedger_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermConfidentialLedger_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermConfidentialLedger) validateSetIdParameters(val *string) error {
 	return nil
 }

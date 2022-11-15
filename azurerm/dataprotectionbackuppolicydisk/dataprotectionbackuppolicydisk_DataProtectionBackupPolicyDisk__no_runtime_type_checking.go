@@ -64,6 +64,14 @@ func validateDataProtectionBackupPolicyDisk_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataProtectionBackupPolicyDisk_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataProtectionBackupPolicyDisk_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupPolicyDisk) validateSetBackupRepeatingTimeIntervalsParameters(val *[]*string) error {
 	return nil
 }

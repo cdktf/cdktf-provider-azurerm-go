@@ -60,6 +60,14 @@ func validateKeyVaultManagedStorageAccount_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateKeyVaultManagedStorageAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKeyVaultManagedStorageAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyVaultManagedStorageAccount) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

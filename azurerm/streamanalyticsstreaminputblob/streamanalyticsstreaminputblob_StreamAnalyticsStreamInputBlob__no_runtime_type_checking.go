@@ -64,6 +64,14 @@ func validateStreamAnalyticsStreamInputBlob_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateStreamAnalyticsStreamInputBlob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStreamAnalyticsStreamInputBlob_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsStreamInputBlob) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

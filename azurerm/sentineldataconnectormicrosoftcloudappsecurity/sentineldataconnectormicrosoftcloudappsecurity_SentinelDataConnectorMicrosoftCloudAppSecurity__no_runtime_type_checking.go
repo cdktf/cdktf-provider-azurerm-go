@@ -60,6 +60,14 @@ func validateSentinelDataConnectorMicrosoftCloudAppSecurity_IsConstructParameter
 	return nil
 }
 
+func validateSentinelDataConnectorMicrosoftCloudAppSecurity_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSentinelDataConnectorMicrosoftCloudAppSecurity_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) validateSetAlertsEnabledParameters(val interface{}) error {
 	return nil
 }

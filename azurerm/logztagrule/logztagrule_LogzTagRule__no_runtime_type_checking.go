@@ -64,6 +64,14 @@ func validateLogzTagRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLogzTagRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogzTagRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogzTagRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateApiManagementIdentityProviderAadb2C_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateApiManagementIdentityProviderAadb2C_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementIdentityProviderAadb2C_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementIdentityProviderAadb2C) validateSetAllowedTenantParameters(val *string) error {
 	return nil
 }

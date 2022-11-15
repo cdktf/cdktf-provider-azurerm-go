@@ -60,6 +60,14 @@ func validateSpringCloudApiPortalCustomDomain_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateSpringCloudApiPortalCustomDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpringCloudApiPortalCustomDomain_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudApiPortalCustomDomain) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

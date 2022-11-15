@@ -140,6 +140,14 @@ func validateLinuxVirtualMachineScaleSet_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateLinuxVirtualMachineScaleSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLinuxVirtualMachineScaleSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxVirtualMachineScaleSet) validateSetAdminPasswordParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateSubnetNatGatewayAssociation_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateSubnetNatGatewayAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSubnetNatGatewayAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SubnetNatGatewayAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

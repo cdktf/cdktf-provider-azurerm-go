@@ -2,10 +2,10 @@ package loganalyticsstorageinsights
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/loganalyticsstorageinsights/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/loganalyticsstorageinsights/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -683,6 +683,44 @@ func LogAnalyticsStorageInsights_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.logAnalyticsStorageInsights.LogAnalyticsStorageInsights",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LogAnalyticsStorageInsights_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLogAnalyticsStorageInsights_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.logAnalyticsStorageInsights.LogAnalyticsStorageInsights",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LogAnalyticsStorageInsights_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLogAnalyticsStorageInsights_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.logAnalyticsStorageInsights.LogAnalyticsStorageInsights",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

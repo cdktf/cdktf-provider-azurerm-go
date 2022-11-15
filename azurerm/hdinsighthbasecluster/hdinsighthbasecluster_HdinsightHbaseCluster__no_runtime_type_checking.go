@@ -108,6 +108,14 @@ func validateHdinsightHbaseCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateHdinsightHbaseCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHdinsightHbaseCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HdinsightHbaseCluster) validateSetClusterVersionParameters(val *string) error {
 	return nil
 }

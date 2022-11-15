@@ -64,6 +64,14 @@ func validateLoadTest_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLoadTest_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLoadTest_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadTest) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

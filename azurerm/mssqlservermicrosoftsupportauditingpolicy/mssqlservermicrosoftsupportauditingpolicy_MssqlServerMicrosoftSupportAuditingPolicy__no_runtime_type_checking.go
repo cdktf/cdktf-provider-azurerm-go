@@ -60,6 +60,14 @@ func validateMssqlServerMicrosoftSupportAuditingPolicy_IsConstructParameters(x i
 	return nil
 }
 
+func validateMssqlServerMicrosoftSupportAuditingPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMssqlServerMicrosoftSupportAuditingPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlServerMicrosoftSupportAuditingPolicy) validateSetBlobStorageEndpointParameters(val *string) error {
 	return nil
 }

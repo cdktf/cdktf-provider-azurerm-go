@@ -60,6 +60,14 @@ func validateDataAzurermEventhubNamespaceAuthorizationRule_IsConstructParameters
 	return nil
 }
 
+func validateDataAzurermEventhubNamespaceAuthorizationRule_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermEventhubNamespaceAuthorizationRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermEventhubNamespaceAuthorizationRule) validateSetIdParameters(val *string) error {
 	return nil
 }

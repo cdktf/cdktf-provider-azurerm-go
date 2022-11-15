@@ -68,6 +68,14 @@ func validateDevTestWindowsVirtualMachine_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDevTestWindowsVirtualMachine_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDevTestWindowsVirtualMachine_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevTestWindowsVirtualMachine) validateSetAllowClaimParameters(val interface{}) error {
 	return nil
 }

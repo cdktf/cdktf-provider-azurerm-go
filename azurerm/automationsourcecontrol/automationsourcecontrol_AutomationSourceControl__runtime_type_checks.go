@@ -141,6 +141,22 @@ func validateAutomationSourceControl_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateAutomationSourceControl_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateAutomationSourceControl_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AutomationSourceControl) validateSetAutomaticSyncParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

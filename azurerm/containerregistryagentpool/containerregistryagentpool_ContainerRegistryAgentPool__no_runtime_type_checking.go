@@ -60,6 +60,14 @@ func validateContainerRegistryAgentPool_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateContainerRegistryAgentPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateContainerRegistryAgentPool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerRegistryAgentPool) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

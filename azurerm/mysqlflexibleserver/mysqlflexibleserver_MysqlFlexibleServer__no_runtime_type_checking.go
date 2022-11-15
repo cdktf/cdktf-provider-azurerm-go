@@ -72,6 +72,14 @@ func validateMysqlFlexibleServer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMysqlFlexibleServer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMysqlFlexibleServer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MysqlFlexibleServer) validateSetAdministratorLoginParameters(val *string) error {
 	return nil
 }

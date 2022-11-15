@@ -64,6 +64,14 @@ func validateRoleDefinition_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRoleDefinition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoleDefinition_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RoleDefinition) validateSetAssignableScopesParameters(val *[]*string) error {
 	return nil
 }

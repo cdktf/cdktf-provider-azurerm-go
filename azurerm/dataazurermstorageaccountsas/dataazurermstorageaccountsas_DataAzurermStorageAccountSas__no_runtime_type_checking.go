@@ -72,6 +72,14 @@ func validateDataAzurermStorageAccountSas_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataAzurermStorageAccountSas_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermStorageAccountSas_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermStorageAccountSas) validateSetConnectionStringParameters(val *string) error {
 	return nil
 }

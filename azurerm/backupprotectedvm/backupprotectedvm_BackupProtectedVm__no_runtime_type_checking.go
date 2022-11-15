@@ -60,6 +60,14 @@ func validateBackupProtectedVm_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBackupProtectedVm_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBackupProtectedVm_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupProtectedVm) validateSetBackupPolicyIdParameters(val *string) error {
 	return nil
 }

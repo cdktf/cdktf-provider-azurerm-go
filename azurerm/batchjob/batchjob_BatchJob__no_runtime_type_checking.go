@@ -60,6 +60,14 @@ func validateBatchJob_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBatchJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBatchJob_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchJob) validateSetBatchPoolIdParameters(val *string) error {
 	return nil
 }

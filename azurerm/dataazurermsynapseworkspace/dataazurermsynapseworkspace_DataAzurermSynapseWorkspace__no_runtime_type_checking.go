@@ -60,6 +60,14 @@ func validateDataAzurermSynapseWorkspace_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAzurermSynapseWorkspace_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermSynapseWorkspace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermSynapseWorkspace) validateSetIdParameters(val *string) error {
 	return nil
 }

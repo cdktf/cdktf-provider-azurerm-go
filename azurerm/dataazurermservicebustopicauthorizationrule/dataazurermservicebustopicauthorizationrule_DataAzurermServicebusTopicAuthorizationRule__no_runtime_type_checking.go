@@ -60,6 +60,14 @@ func validateDataAzurermServicebusTopicAuthorizationRule_IsConstructParameters(x
 	return nil
 }
 
+func validateDataAzurermServicebusTopicAuthorizationRule_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermServicebusTopicAuthorizationRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermServicebusTopicAuthorizationRule) validateSetIdParameters(val *string) error {
 	return nil
 }

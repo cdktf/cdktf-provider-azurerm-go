@@ -60,6 +60,14 @@ func validateVmwareExpressRouteAuthorization_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateVmwareExpressRouteAuthorization_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVmwareExpressRouteAuthorization_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VmwareExpressRouteAuthorization) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

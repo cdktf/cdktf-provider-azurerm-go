@@ -60,6 +60,14 @@ func validateKustoEventgridDataConnection_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateKustoEventgridDataConnection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKustoEventgridDataConnection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoEventgridDataConnection) validateSetBlobStorageEventTypeParameters(val *string) error {
 	return nil
 }

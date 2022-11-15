@@ -60,6 +60,14 @@ func validateApiManagementGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApiManagementGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementGroup) validateSetApiManagementNameParameters(val *string) error {
 	return nil
 }

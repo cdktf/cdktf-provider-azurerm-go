@@ -64,6 +64,14 @@ func validateExpressRouteCircuit_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateExpressRouteCircuit_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateExpressRouteCircuit_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRouteCircuit) validateSetAllowClassicOperationsParameters(val interface{}) error {
 	return nil
 }

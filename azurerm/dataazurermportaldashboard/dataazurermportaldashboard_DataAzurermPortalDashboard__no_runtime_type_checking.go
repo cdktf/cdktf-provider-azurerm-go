@@ -60,6 +60,14 @@ func validateDataAzurermPortalDashboard_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataAzurermPortalDashboard_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermPortalDashboard_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPortalDashboard) validateSetDashboardPropertiesParameters(val *string) error {
 	return nil
 }

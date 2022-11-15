@@ -76,6 +76,14 @@ func validateSpringCloudGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSpringCloudGateway_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpringCloudGateway_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudGateway) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

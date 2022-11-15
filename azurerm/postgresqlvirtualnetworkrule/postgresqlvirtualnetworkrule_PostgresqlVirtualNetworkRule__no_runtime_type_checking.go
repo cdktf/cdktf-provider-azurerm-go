@@ -60,6 +60,14 @@ func validatePostgresqlVirtualNetworkRule_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validatePostgresqlVirtualNetworkRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePostgresqlVirtualNetworkRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlVirtualNetworkRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

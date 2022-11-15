@@ -60,6 +60,14 @@ func validateDataAzurermEventgridTopic_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataAzurermEventgridTopic_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermEventgridTopic_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermEventgridTopic) validateSetIdParameters(val *string) error {
 	return nil
 }

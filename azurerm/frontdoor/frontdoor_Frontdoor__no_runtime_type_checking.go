@@ -84,6 +84,14 @@ func validateFrontdoor_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFrontdoor_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFrontdoor_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Frontdoor) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

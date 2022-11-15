@@ -60,6 +60,14 @@ func validateExpressRouteCircuitConnection_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateExpressRouteCircuitConnection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateExpressRouteCircuitConnection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRouteCircuitConnection) validateSetAddressPrefixIpv4Parameters(val *string) error {
 	return nil
 }

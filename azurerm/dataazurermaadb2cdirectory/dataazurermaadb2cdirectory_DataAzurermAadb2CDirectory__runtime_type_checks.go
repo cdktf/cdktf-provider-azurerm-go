@@ -130,6 +130,22 @@ func validateDataAzurermAadb2CDirectory_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataAzurermAadb2CDirectory_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAzurermAadb2CDirectory_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermAadb2CDirectory) validateSetDomainNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

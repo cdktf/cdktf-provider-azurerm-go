@@ -60,6 +60,14 @@ func validateAppServiceActiveSlot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppServiceActiveSlot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppServiceActiveSlot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceActiveSlot) validateSetAppServiceNameParameters(val *string) error {
 	return nil
 }

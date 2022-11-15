@@ -130,6 +130,22 @@ func validateDataFactoryLinkedServiceAzureTableStorage_IsConstructParameters(x i
 	return nil
 }
 
+func validateDataFactoryLinkedServiceAzureTableStorage_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataFactoryLinkedServiceAzureTableStorage_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

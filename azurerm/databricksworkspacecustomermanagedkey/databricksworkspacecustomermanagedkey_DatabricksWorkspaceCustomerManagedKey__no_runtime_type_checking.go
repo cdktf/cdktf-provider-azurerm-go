@@ -60,6 +60,14 @@ func validateDatabricksWorkspaceCustomerManagedKey_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDatabricksWorkspaceCustomerManagedKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatabricksWorkspaceCustomerManagedKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabricksWorkspaceCustomerManagedKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

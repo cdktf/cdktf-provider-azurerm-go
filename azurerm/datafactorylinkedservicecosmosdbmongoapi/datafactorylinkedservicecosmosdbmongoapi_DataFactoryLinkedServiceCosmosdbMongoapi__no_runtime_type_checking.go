@@ -60,6 +60,14 @@ func validateDataFactoryLinkedServiceCosmosdbMongoapi_IsConstructParameters(x in
 	return nil
 }
 
+func validateDataFactoryLinkedServiceCosmosdbMongoapi_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceCosmosdbMongoapi_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapi) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

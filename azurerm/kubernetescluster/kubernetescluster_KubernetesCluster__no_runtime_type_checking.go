@@ -132,6 +132,14 @@ func validateKubernetesCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKubernetesCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKubernetesCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesCluster) validateSetApiServerAuthorizedIpRangesParameters(val *[]*string) error {
 	return nil
 }

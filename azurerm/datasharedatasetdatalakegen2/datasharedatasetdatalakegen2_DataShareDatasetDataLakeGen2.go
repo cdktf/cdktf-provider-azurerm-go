@@ -2,10 +2,10 @@ package datasharedatasetdatalakegen2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/datasharedatasetdatalakegen2/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/datasharedatasetdatalakegen2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -660,6 +660,44 @@ func DataShareDatasetDataLakeGen2_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.dataShareDatasetDataLakeGen2.DataShareDatasetDataLakeGen2",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataShareDatasetDataLakeGen2_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataShareDatasetDataLakeGen2_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataShareDatasetDataLakeGen2.DataShareDatasetDataLakeGen2",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataShareDatasetDataLakeGen2_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataShareDatasetDataLakeGen2_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataShareDatasetDataLakeGen2.DataShareDatasetDataLakeGen2",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

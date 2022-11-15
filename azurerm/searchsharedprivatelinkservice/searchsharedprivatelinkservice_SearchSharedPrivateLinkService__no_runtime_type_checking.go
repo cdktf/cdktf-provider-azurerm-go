@@ -60,6 +60,14 @@ func validateSearchSharedPrivateLinkService_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateSearchSharedPrivateLinkService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSearchSharedPrivateLinkService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SearchSharedPrivateLinkService) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

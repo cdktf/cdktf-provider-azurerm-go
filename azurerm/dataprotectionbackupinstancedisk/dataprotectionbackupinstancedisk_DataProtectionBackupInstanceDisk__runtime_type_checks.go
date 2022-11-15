@@ -130,6 +130,22 @@ func validateDataProtectionBackupInstanceDisk_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateDataProtectionBackupInstanceDisk_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataProtectionBackupInstanceDisk_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupInstanceDisk) validateSetBackupPolicyIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

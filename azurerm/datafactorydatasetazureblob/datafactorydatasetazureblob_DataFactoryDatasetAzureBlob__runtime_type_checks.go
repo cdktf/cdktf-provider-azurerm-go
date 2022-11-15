@@ -161,6 +161,22 @@ func validateDataFactoryDatasetAzureBlob_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataFactoryDatasetAzureBlob_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataFactoryDatasetAzureBlob_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryDatasetAzureBlob) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

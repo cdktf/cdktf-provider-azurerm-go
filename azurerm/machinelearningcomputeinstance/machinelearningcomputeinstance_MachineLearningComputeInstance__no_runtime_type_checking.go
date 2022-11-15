@@ -72,6 +72,14 @@ func validateMachineLearningComputeInstance_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateMachineLearningComputeInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMachineLearningComputeInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MachineLearningComputeInstance) validateSetAuthorizationTypeParameters(val *string) error {
 	return nil
 }

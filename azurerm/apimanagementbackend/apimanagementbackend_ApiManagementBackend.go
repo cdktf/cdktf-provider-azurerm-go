@@ -2,10 +2,10 @@ package apimanagementbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/apimanagementbackend/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/apimanagementbackend/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -814,6 +814,44 @@ func ApiManagementBackend_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.apiManagementBackend.ApiManagementBackend",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApiManagementBackend_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApiManagementBackend_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.apiManagementBackend.ApiManagementBackend",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApiManagementBackend_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApiManagementBackend_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.apiManagementBackend.ApiManagementBackend",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

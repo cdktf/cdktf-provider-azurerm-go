@@ -130,6 +130,22 @@ func validateDataProtectionBackupPolicyBlobStorage_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDataProtectionBackupPolicyBlobStorage_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataProtectionBackupPolicyBlobStorage_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

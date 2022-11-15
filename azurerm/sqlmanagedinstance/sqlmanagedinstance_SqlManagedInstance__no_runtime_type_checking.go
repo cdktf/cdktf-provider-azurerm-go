@@ -64,6 +64,14 @@ func validateSqlManagedInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSqlManagedInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSqlManagedInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlManagedInstance) validateSetAdministratorLoginParameters(val *string) error {
 	return nil
 }

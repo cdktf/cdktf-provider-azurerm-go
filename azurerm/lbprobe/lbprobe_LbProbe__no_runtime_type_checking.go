@@ -60,6 +60,14 @@ func validateLbProbe_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLbProbe_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbProbe_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbProbe) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

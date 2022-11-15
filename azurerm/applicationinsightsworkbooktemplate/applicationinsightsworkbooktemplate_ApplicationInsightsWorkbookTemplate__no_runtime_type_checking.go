@@ -64,6 +64,14 @@ func validateApplicationInsightsWorkbookTemplate_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateApplicationInsightsWorkbookTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApplicationInsightsWorkbookTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationInsightsWorkbookTemplate) validateSetAuthorParameters(val *string) error {
 	return nil
 }

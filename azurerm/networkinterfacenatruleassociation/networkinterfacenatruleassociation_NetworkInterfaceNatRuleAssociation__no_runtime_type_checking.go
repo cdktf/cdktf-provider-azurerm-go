@@ -60,6 +60,14 @@ func validateNetworkInterfaceNatRuleAssociation_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateNetworkInterfaceNatRuleAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkInterfaceNatRuleAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkInterfaceNatRuleAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -116,6 +116,14 @@ func validateVirtualMachineScaleSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVirtualMachineScaleSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualMachineScaleSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualMachineScaleSet) validateSetAutomaticOsUpgradeParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validatePostgresqlServer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePostgresqlServer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePostgresqlServer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlServer) validateSetAdministratorLoginParameters(val *string) error {
 	return nil
 }

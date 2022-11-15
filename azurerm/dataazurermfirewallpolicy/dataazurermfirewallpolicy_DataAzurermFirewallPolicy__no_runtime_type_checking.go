@@ -60,6 +60,14 @@ func validateDataAzurermFirewallPolicy_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataAzurermFirewallPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermFirewallPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermFirewallPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

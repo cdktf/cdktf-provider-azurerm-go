@@ -64,6 +64,14 @@ func validateIothubDeviceUpdateAccount_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateIothubDeviceUpdateAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIothubDeviceUpdateAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubDeviceUpdateAccount) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

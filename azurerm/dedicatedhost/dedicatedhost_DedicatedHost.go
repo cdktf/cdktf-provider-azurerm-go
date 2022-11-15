@@ -2,10 +2,10 @@ package dedicatedhost
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/dedicatedhost/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/dedicatedhost/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -718,6 +718,44 @@ func DedicatedHost_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.dedicatedHost.DedicatedHost",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DedicatedHost_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDedicatedHost_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dedicatedHost.DedicatedHost",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DedicatedHost_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDedicatedHost_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dedicatedHost.DedicatedHost",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

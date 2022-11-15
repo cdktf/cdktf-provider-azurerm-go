@@ -64,6 +64,14 @@ func validateDataAzurermBatchAccount_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataAzurermBatchAccount_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermBatchAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermBatchAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

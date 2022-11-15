@@ -60,6 +60,14 @@ func validateSentinelDataConnectorAzureActiveDirectory_IsConstructParameters(x i
 	return nil
 }
 
+func validateSentinelDataConnectorAzureActiveDirectory_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSentinelDataConnectorAzureActiveDirectory_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorAzureActiveDirectory) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

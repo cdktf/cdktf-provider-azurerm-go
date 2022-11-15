@@ -60,6 +60,14 @@ func validateDataAzurermMysqlFlexibleServer_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataAzurermMysqlFlexibleServer_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermMysqlFlexibleServer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMysqlFlexibleServer) validateSetIdParameters(val *string) error {
 	return nil
 }

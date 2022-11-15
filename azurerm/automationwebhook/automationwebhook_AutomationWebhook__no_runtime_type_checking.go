@@ -60,6 +60,14 @@ func validateAutomationWebhook_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAutomationWebhook_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAutomationWebhook_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationWebhook) validateSetAutomationAccountNameParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateDevTestGlobalVmShutdownSchedule_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateDevTestGlobalVmShutdownSchedule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDevTestGlobalVmShutdownSchedule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevTestGlobalVmShutdownSchedule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

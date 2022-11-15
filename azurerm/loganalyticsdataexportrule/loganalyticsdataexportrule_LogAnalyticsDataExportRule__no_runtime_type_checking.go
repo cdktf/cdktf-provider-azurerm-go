@@ -60,6 +60,14 @@ func validateLogAnalyticsDataExportRule_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateLogAnalyticsDataExportRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogAnalyticsDataExportRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsDataExportRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

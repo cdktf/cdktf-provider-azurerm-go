@@ -60,6 +60,14 @@ func validateStorageShareDirectory_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStorageShareDirectory_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageShareDirectory_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageShareDirectory) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

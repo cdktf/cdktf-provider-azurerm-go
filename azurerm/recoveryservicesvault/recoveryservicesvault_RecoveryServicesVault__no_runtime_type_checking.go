@@ -68,6 +68,14 @@ func validateRecoveryServicesVault_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRecoveryServicesVault_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRecoveryServicesVault_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RecoveryServicesVault) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

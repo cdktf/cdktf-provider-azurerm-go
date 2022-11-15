@@ -60,6 +60,14 @@ func validateFederatedIdentityCredential_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateFederatedIdentityCredential_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFederatedIdentityCredential_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FederatedIdentityCredential) validateSetAudienceParameters(val *[]*string) error {
 	return nil
 }

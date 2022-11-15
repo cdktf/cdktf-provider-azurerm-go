@@ -112,6 +112,14 @@ func validateHdinsightKafkaCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateHdinsightKafkaCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHdinsightKafkaCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HdinsightKafkaCluster) validateSetClusterVersionParameters(val *string) error {
 	return nil
 }

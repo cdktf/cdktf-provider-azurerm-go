@@ -64,6 +64,14 @@ func validateCapacityReservation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCapacityReservation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCapacityReservation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CapacityReservation) validateSetCapacityReservationGroupIdParameters(val *string) error {
 	return nil
 }

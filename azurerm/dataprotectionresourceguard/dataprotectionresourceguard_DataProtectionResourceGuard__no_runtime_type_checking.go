@@ -60,6 +60,14 @@ func validateDataProtectionResourceGuard_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataProtectionResourceGuard_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataProtectionResourceGuard_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionResourceGuard) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

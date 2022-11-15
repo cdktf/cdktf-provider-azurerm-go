@@ -60,6 +60,14 @@ func validateActiveDirectoryDomainServiceReplicaSet_IsConstructParameters(x inte
 	return nil
 }
 
+func validateActiveDirectoryDomainServiceReplicaSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateActiveDirectoryDomainServiceReplicaSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ActiveDirectoryDomainServiceReplicaSet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

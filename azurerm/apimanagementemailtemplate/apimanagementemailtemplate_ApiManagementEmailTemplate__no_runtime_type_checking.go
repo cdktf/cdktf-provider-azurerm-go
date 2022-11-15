@@ -60,6 +60,14 @@ func validateApiManagementEmailTemplate_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateApiManagementEmailTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementEmailTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementEmailTemplate) validateSetApiManagementNameParameters(val *string) error {
 	return nil
 }

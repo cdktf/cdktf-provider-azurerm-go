@@ -2,10 +2,10 @@ package monitorprivatelinkscope
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/monitorprivatelinkscope/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/monitorprivatelinkscope/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -546,6 +546,44 @@ func MonitorPrivateLinkScope_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.monitorPrivateLinkScope.MonitorPrivateLinkScope",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MonitorPrivateLinkScope_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMonitorPrivateLinkScope_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.monitorPrivateLinkScope.MonitorPrivateLinkScope",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MonitorPrivateLinkScope_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMonitorPrivateLinkScope_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.monitorPrivateLinkScope.MonitorPrivateLinkScope",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

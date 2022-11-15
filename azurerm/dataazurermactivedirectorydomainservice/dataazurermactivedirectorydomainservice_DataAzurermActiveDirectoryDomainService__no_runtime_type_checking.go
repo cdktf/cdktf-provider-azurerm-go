@@ -60,6 +60,14 @@ func validateDataAzurermActiveDirectoryDomainService_IsConstructParameters(x int
 	return nil
 }
 
+func validateDataAzurermActiveDirectoryDomainService_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermActiveDirectoryDomainService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermActiveDirectoryDomainService) validateSetIdParameters(val *string) error {
 	return nil
 }

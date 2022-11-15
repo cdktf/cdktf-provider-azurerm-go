@@ -60,6 +60,14 @@ func validateMysqlFlexibleDatabase_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMysqlFlexibleDatabase_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMysqlFlexibleDatabase_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MysqlFlexibleDatabase) validateSetCharsetParameters(val *string) error {
 	return nil
 }

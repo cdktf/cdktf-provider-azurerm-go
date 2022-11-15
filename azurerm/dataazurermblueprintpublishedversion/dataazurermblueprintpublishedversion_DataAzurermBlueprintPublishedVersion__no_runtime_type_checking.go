@@ -60,6 +60,14 @@ func validateDataAzurermBlueprintPublishedVersion_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDataAzurermBlueprintPublishedVersion_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermBlueprintPublishedVersion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermBlueprintPublishedVersion) validateSetBlueprintNameParameters(val *string) error {
 	return nil
 }

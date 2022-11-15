@@ -60,6 +60,14 @@ func validateContainerRegistryWebhook_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateContainerRegistryWebhook_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateContainerRegistryWebhook_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerRegistryWebhook) validateSetActionsParameters(val *[]*string) error {
 	return nil
 }

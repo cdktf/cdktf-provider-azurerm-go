@@ -72,6 +72,14 @@ func validateDataFactoryLinkedServiceAzureDatabricks_IsConstructParameters(x int
 	return nil
 }
 
+func validateDataFactoryLinkedServiceAzureDatabricks_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceAzureDatabricks_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) validateSetAccessTokenParameters(val *string) error {
 	return nil
 }

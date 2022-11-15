@@ -192,6 +192,22 @@ func validateVirtualDesktopScalingPlan_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateVirtualDesktopScalingPlan_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateVirtualDesktopScalingPlan_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VirtualDesktopScalingPlan) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

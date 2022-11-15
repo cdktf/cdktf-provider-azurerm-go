@@ -60,6 +60,14 @@ func validateRedisLinkedServer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRedisLinkedServer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedisLinkedServer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisLinkedServer) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

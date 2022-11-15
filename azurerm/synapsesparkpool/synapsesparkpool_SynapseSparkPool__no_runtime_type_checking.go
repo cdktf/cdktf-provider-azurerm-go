@@ -76,6 +76,14 @@ func validateSynapseSparkPool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSynapseSparkPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynapseSparkPool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseSparkPool) validateSetCacheSizeParameters(val *float64) error {
 	return nil
 }

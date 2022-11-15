@@ -76,6 +76,14 @@ func validateApiManagementDiagnostic_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateApiManagementDiagnostic_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementDiagnostic_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementDiagnostic) validateSetAlwaysLogErrorsParameters(val interface{}) error {
 	return nil
 }

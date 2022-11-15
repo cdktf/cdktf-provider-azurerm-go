@@ -64,6 +64,14 @@ func validateHealthcareMedtechService_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateHealthcareMedtechService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHealthcareMedtechService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareMedtechService) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

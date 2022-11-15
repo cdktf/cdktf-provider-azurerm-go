@@ -60,6 +60,14 @@ func validateStreamAnalyticsOutputMssql_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateStreamAnalyticsOutputMssql_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStreamAnalyticsOutputMssql_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsOutputMssql) validateSetAuthenticationModeParameters(val *string) error {
 	return nil
 }

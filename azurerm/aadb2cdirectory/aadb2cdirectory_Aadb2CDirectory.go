@@ -2,10 +2,10 @@ package aadb2cdirectory
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/aadb2cdirectory/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/aadb2cdirectory/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -717,6 +717,44 @@ func Aadb2CDirectory_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.aadb2CDirectory.Aadb2CDirectory",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Aadb2CDirectory_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAadb2CDirectory_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.aadb2CDirectory.Aadb2CDirectory",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Aadb2CDirectory_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAadb2CDirectory_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.aadb2CDirectory.Aadb2CDirectory",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

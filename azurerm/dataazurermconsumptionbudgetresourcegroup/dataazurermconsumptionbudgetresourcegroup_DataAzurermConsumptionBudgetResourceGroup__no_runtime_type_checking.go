@@ -60,6 +60,14 @@ func validateDataAzurermConsumptionBudgetResourceGroup_IsConstructParameters(x i
 	return nil
 }
 
+func validateDataAzurermConsumptionBudgetResourceGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermConsumptionBudgetResourceGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermConsumptionBudgetResourceGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

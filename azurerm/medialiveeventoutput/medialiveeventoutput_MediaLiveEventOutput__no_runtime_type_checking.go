@@ -60,6 +60,14 @@ func validateMediaLiveEventOutput_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMediaLiveEventOutput_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMediaLiveEventOutput_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaLiveEventOutput) validateSetArchiveWindowDurationParameters(val *string) error {
 	return nil
 }

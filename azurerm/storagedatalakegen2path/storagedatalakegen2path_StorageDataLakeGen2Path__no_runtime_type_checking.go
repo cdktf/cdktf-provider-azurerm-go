@@ -64,6 +64,14 @@ func validateStorageDataLakeGen2Path_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateStorageDataLakeGen2Path_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageDataLakeGen2Path_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageDataLakeGen2Path) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

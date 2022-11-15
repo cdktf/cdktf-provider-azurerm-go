@@ -2,10 +2,10 @@ package mysqlflexibleserverfirewallrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/mysqlflexibleserverfirewallrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/mysqlflexibleserverfirewallrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -613,6 +613,44 @@ func MysqlFlexibleServerFirewallRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.mysqlFlexibleServerFirewallRule.MysqlFlexibleServerFirewallRule",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MysqlFlexibleServerFirewallRule_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMysqlFlexibleServerFirewallRule_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.mysqlFlexibleServerFirewallRule.MysqlFlexibleServerFirewallRule",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MysqlFlexibleServerFirewallRule_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMysqlFlexibleServerFirewallRule_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.mysqlFlexibleServerFirewallRule.MysqlFlexibleServerFirewallRule",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

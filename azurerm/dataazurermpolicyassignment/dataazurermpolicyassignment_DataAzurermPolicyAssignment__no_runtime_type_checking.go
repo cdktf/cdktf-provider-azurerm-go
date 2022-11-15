@@ -60,6 +60,14 @@ func validateDataAzurermPolicyAssignment_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAzurermPolicyAssignment_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermPolicyAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPolicyAssignment) validateSetIdParameters(val *string) error {
 	return nil
 }

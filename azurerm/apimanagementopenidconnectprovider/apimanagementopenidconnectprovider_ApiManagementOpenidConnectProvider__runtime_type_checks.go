@@ -130,6 +130,22 @@ func validateApiManagementOpenidConnectProvider_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateApiManagementOpenidConnectProvider_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateApiManagementOpenidConnectProvider_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementOpenidConnectProvider) validateSetApiManagementNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

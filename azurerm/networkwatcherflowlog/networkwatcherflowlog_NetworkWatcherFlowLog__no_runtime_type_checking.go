@@ -68,6 +68,14 @@ func validateNetworkWatcherFlowLog_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNetworkWatcherFlowLog_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkWatcherFlowLog_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkWatcherFlowLog) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

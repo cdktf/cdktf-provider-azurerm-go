@@ -60,6 +60,14 @@ func validateManagementGroupPolicyRemediation_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateManagementGroupPolicyRemediation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateManagementGroupPolicyRemediation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagementGroupPolicyRemediation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -130,6 +130,22 @@ func validateSentinelAlertRuleMachineLearningBehaviorAnalytics_IsConstructParame
 	return nil
 }
 
+func validateSentinelAlertRuleMachineLearningBehaviorAnalytics_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateSentinelAlertRuleMachineLearningBehaviorAnalytics_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) validateSetAlertRuleTemplateGuidParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

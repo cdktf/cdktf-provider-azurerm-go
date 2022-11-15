@@ -60,6 +60,14 @@ func validateStorageSyncCloudEndpoint_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateStorageSyncCloudEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageSyncCloudEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageSyncCloudEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

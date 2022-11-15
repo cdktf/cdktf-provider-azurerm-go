@@ -68,6 +68,14 @@ func validateCosmosdbMongoCollection_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateCosmosdbMongoCollection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCosmosdbMongoCollection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbMongoCollection) validateSetAccountNameParameters(val *string) error {
 	return nil
 }

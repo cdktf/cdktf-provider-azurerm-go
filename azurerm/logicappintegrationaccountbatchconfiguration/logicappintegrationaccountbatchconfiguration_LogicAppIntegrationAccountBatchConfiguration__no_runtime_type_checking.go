@@ -64,6 +64,14 @@ func validateLogicAppIntegrationAccountBatchConfiguration_IsConstructParameters(
 	return nil
 }
 
+func validateLogicAppIntegrationAccountBatchConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogicAppIntegrationAccountBatchConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppIntegrationAccountBatchConfiguration) validateSetBatchGroupNameParameters(val *string) error {
 	return nil
 }

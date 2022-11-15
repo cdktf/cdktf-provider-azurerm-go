@@ -130,6 +130,22 @@ func validateStorageSyncCloudEndpoint_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateStorageSyncCloudEndpoint_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateStorageSyncCloudEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_StorageSyncCloudEndpoint) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

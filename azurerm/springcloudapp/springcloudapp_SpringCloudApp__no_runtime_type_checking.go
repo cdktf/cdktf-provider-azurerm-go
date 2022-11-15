@@ -72,6 +72,14 @@ func validateSpringCloudApp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSpringCloudApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpringCloudApp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudApp) validateSetAddonJsonParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateAppServiceManagedCertificate_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateAppServiceManagedCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppServiceManagedCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceManagedCertificate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

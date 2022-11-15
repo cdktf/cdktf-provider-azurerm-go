@@ -60,6 +60,14 @@ func validateNetworkDdosProtectionPlan_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateNetworkDdosProtectionPlan_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkDdosProtectionPlan_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkDdosProtectionPlan) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

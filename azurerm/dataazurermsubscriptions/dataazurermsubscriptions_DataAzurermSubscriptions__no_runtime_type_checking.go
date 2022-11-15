@@ -60,6 +60,14 @@ func validateDataAzurermSubscriptions_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataAzurermSubscriptions_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermSubscriptions_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermSubscriptions) validateSetDisplayNameContainsParameters(val *string) error {
 	return nil
 }

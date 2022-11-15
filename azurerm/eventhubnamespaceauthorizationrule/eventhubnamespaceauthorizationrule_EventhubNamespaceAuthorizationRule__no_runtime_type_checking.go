@@ -60,6 +60,14 @@ func validateEventhubNamespaceAuthorizationRule_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateEventhubNamespaceAuthorizationRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEventhubNamespaceAuthorizationRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventhubNamespaceAuthorizationRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

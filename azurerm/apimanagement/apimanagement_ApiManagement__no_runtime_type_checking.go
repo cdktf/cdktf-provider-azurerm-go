@@ -104,6 +104,14 @@ func validateApiManagement_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApiManagement_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagement_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagement) validateSetClientCertificateEnabledParameters(val interface{}) error {
 	return nil
 }

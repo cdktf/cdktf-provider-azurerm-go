@@ -64,6 +64,14 @@ func validateDataShare_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataShare_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataShare_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataShare) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

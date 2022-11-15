@@ -16,6 +16,14 @@ func validateAzurermProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAzurermProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAzurermProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzurermProvider) validateSetDisableCorrelationRequestIdParameters(val interface{}) error {
 	return nil
 }

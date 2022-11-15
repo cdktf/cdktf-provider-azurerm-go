@@ -60,6 +60,14 @@ func validateServicebusQueue_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServicebusQueue_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicebusQueue_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicebusQueue) validateSetAutoDeleteOnIdleParameters(val *string) error {
 	return nil
 }

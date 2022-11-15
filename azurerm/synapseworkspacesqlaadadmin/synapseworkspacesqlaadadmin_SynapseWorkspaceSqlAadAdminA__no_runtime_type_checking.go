@@ -60,6 +60,14 @@ func validateSynapseWorkspaceSqlAadAdminA_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateSynapseWorkspaceSqlAadAdminA_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynapseWorkspaceSqlAadAdminA_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseWorkspaceSqlAadAdminA) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

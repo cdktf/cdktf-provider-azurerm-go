@@ -130,6 +130,22 @@ func validateDataAzurermKeyVaultCertificateData_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataAzurermKeyVaultCertificateData_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAzurermKeyVaultCertificateData_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermKeyVaultCertificateData) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

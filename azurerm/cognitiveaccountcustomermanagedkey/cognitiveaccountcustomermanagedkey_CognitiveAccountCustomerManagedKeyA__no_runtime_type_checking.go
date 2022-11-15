@@ -60,6 +60,14 @@ func validateCognitiveAccountCustomerManagedKeyA_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateCognitiveAccountCustomerManagedKeyA_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCognitiveAccountCustomerManagedKeyA_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitiveAccountCustomerManagedKeyA) validateSetCognitiveAccountIdParameters(val *string) error {
 	return nil
 }

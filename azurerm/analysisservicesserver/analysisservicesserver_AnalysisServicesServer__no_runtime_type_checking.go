@@ -64,6 +64,14 @@ func validateAnalysisServicesServer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAnalysisServicesServer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAnalysisServicesServer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AnalysisServicesServer) validateSetAdminUsersParameters(val *[]*string) error {
 	return nil
 }

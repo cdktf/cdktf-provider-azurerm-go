@@ -88,6 +88,14 @@ func validateWindowsFunctionApp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWindowsFunctionApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWindowsFunctionApp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsFunctionApp) validateSetAppSettingsParameters(val *map[string]*string) error {
 	return nil
 }

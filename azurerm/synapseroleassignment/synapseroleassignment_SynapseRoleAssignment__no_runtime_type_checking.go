@@ -60,6 +60,14 @@ func validateSynapseRoleAssignment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSynapseRoleAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynapseRoleAssignment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseRoleAssignment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package privatednssrvrecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/privatednssrvrecord/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/privatednssrvrecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -648,6 +648,44 @@ func PrivateDnsSrvRecord_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.privateDnsSrvRecord.PrivateDnsSrvRecord",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PrivateDnsSrvRecord_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePrivateDnsSrvRecord_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.privateDnsSrvRecord.PrivateDnsSrvRecord",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PrivateDnsSrvRecord_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePrivateDnsSrvRecord_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.privateDnsSrvRecord.PrivateDnsSrvRecord",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

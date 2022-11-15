@@ -60,6 +60,14 @@ func validateBotChannelWebChat_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBotChannelWebChat_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBotChannelWebChat_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelWebChat) validateSetBotNameParameters(val *string) error {
 	return nil
 }

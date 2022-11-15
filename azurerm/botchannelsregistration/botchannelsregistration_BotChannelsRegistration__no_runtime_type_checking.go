@@ -60,6 +60,14 @@ func validateBotChannelsRegistration_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateBotChannelsRegistration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBotChannelsRegistration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelsRegistration) validateSetCmkKeyVaultUrlParameters(val *string) error {
 	return nil
 }

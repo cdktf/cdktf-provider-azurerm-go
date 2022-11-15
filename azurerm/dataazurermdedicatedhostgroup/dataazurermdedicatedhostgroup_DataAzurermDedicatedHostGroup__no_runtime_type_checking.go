@@ -60,6 +60,14 @@ func validateDataAzurermDedicatedHostGroup_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataAzurermDedicatedHostGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermDedicatedHostGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDedicatedHostGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

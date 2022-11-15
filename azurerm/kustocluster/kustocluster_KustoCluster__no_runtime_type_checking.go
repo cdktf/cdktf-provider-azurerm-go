@@ -76,6 +76,14 @@ func validateKustoCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKustoCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKustoCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoCluster) validateSetAllowedFqdnsParameters(val *[]*string) error {
 	return nil
 }

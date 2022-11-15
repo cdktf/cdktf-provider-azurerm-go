@@ -84,6 +84,14 @@ func validateSynapseWorkspace_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSynapseWorkspace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynapseWorkspace_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseWorkspace) validateSetComputeSubnetIdParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package automationcredential
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/automationcredential/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/automationcredential/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -648,6 +648,44 @@ func AutomationCredential_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.automationCredential.AutomationCredential",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AutomationCredential_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAutomationCredential_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.automationCredential.AutomationCredential",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AutomationCredential_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAutomationCredential_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.automationCredential.AutomationCredential",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

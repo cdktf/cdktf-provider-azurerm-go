@@ -60,6 +60,14 @@ func validateDataAzurermDatabaseMigrationService_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataAzurermDatabaseMigrationService_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermDatabaseMigrationService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDatabaseMigrationService) validateSetIdParameters(val *string) error {
 	return nil
 }

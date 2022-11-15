@@ -88,6 +88,14 @@ func validateLinuxFunctionApp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLinuxFunctionApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLinuxFunctionApp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxFunctionApp) validateSetAppSettingsParameters(val *map[string]*string) error {
 	return nil
 }

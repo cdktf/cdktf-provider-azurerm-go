@@ -60,6 +60,14 @@ func validateDataAzurermMonitorDiagnosticCategories_IsConstructParameters(x inte
 	return nil
 }
 
+func validateDataAzurermMonitorDiagnosticCategories_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermMonitorDiagnosticCategories_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMonitorDiagnosticCategories) validateSetIdParameters(val *string) error {
 	return nil
 }

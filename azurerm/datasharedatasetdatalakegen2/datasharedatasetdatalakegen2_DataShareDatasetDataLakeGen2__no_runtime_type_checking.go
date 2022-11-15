@@ -60,6 +60,14 @@ func validateDataShareDatasetDataLakeGen2_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataShareDatasetDataLakeGen2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataShareDatasetDataLakeGen2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataShareDatasetDataLakeGen2) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

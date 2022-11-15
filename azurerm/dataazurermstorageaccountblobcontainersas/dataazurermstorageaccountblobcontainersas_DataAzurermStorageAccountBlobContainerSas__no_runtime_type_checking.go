@@ -64,6 +64,14 @@ func validateDataAzurermStorageAccountBlobContainerSas_IsConstructParameters(x i
 	return nil
 }
 
+func validateDataAzurermStorageAccountBlobContainerSas_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermStorageAccountBlobContainerSas_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermStorageAccountBlobContainerSas) validateSetCacheControlParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDataAzurermDigitalTwinsInstance_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateDataAzurermDigitalTwinsInstance_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermDigitalTwinsInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDigitalTwinsInstance) validateSetIdParameters(val *string) error {
 	return nil
 }

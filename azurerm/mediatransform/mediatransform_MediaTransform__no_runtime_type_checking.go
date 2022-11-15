@@ -64,6 +64,14 @@ func validateMediaTransform_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMediaTransform_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMediaTransform_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaTransform) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

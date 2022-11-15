@@ -60,6 +60,14 @@ func validateBotChannelMsTeams_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBotChannelMsTeams_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBotChannelMsTeams_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelMsTeams) validateSetBotNameParameters(val *string) error {
 	return nil
 }

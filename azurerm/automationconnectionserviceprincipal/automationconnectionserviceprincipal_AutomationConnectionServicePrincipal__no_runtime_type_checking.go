@@ -60,6 +60,14 @@ func validateAutomationConnectionServicePrincipal_IsConstructParameters(x interf
 	return nil
 }
 
+func validateAutomationConnectionServicePrincipal_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAutomationConnectionServicePrincipal_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationConnectionServicePrincipal) validateSetApplicationIdParameters(val *string) error {
 	return nil
 }

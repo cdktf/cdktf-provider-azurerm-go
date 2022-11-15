@@ -64,6 +64,14 @@ func validateDiskEncryptionSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDiskEncryptionSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDiskEncryptionSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DiskEncryptionSet) validateSetAutoKeyRotationEnabledParameters(val interface{}) error {
 	return nil
 }

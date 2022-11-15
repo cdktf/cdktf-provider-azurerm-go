@@ -130,6 +130,22 @@ func validateIotTimeSeriesInsightsEventSourceEventhub_IsConstructParameters(x in
 	return nil
 }
 
+func validateIotTimeSeriesInsightsEventSourceEventhub_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateIotTimeSeriesInsightsEventSourceEventhub_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_IotTimeSeriesInsightsEventSourceEventhub) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

@@ -68,6 +68,14 @@ func validateHealthcareService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateHealthcareService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHealthcareService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareService) validateSetAccessPolicyObjectIdsParameters(val *[]*string) error {
 	return nil
 }

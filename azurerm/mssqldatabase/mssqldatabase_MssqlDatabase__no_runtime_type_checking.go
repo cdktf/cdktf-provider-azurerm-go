@@ -76,6 +76,14 @@ func validateMssqlDatabase_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMssqlDatabase_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMssqlDatabase_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlDatabase) validateSetAutoPauseDelayInMinutesParameters(val *float64) error {
 	return nil
 }

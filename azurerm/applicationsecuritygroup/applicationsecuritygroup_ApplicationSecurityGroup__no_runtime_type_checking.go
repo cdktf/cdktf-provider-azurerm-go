@@ -60,6 +60,14 @@ func validateApplicationSecurityGroup_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateApplicationSecurityGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApplicationSecurityGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSecurityGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

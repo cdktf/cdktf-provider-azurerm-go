@@ -72,6 +72,14 @@ func validateDataFactoryTriggerTumblingWindow_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateDataFactoryTriggerTumblingWindow_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryTriggerTumblingWindow_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryTriggerTumblingWindow) validateSetActivatedParameters(val interface{}) error {
 	return nil
 }

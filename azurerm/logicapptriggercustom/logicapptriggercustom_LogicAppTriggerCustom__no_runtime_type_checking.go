@@ -60,6 +60,14 @@ func validateLogicAppTriggerCustom_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLogicAppTriggerCustom_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogicAppTriggerCustom_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppTriggerCustom) validateSetBodyParameters(val *string) error {
 	return nil
 }

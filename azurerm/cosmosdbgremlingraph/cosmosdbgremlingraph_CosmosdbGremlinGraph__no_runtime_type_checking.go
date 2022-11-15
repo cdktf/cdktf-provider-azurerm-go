@@ -76,6 +76,14 @@ func validateCosmosdbGremlinGraph_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCosmosdbGremlinGraph_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCosmosdbGremlinGraph_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbGremlinGraph) validateSetAccountNameParameters(val *string) error {
 	return nil
 }

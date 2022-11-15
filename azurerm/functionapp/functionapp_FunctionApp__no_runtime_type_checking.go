@@ -80,6 +80,14 @@ func validateFunctionApp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFunctionApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFunctionApp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FunctionApp) validateSetAppServicePlanIdParameters(val *string) error {
 	return nil
 }

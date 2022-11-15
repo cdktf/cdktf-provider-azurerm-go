@@ -60,6 +60,14 @@ func validateSynapseSqlPoolWorkloadGroup_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateSynapseSqlPoolWorkloadGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynapseSqlPoolWorkloadGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseSqlPoolWorkloadGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

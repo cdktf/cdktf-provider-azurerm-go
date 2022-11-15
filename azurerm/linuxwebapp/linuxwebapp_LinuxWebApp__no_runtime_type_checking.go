@@ -92,6 +92,14 @@ func validateLinuxWebApp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLinuxWebApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLinuxWebApp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxWebApp) validateSetAppSettingsParameters(val *map[string]*string) error {
 	return nil
 }

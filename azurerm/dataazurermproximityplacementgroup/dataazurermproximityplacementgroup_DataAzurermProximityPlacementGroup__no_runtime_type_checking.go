@@ -60,6 +60,14 @@ func validateDataAzurermProximityPlacementGroup_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataAzurermProximityPlacementGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermProximityPlacementGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermProximityPlacementGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

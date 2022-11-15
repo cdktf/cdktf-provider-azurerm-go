@@ -76,6 +76,14 @@ func validateDevTestSchedule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDevTestSchedule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDevTestSchedule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevTestSchedule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

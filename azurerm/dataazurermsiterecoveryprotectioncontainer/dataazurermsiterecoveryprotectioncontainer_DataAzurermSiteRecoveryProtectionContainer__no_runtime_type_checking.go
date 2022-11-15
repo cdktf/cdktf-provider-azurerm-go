@@ -60,6 +60,14 @@ func validateDataAzurermSiteRecoveryProtectionContainer_IsConstructParameters(x 
 	return nil
 }
 
+func validateDataAzurermSiteRecoveryProtectionContainer_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermSiteRecoveryProtectionContainer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermSiteRecoveryProtectionContainer) validateSetIdParameters(val *string) error {
 	return nil
 }

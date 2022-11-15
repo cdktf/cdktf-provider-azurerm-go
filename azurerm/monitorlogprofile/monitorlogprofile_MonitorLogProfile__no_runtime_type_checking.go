@@ -64,6 +64,14 @@ func validateMonitorLogProfile_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMonitorLogProfile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitorLogProfile_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorLogProfile) validateSetCategoriesParameters(val *[]*string) error {
 	return nil
 }

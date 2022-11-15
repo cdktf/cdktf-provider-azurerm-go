@@ -60,6 +60,14 @@ func validateAdvancedThreatProtection_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateAdvancedThreatProtection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAdvancedThreatProtection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdvancedThreatProtection) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

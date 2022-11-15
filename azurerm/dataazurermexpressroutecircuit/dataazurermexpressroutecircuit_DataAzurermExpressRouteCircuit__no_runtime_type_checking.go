@@ -60,6 +60,14 @@ func validateDataAzurermExpressRouteCircuit_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataAzurermExpressRouteCircuit_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermExpressRouteCircuit_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermExpressRouteCircuit) validateSetIdParameters(val *string) error {
 	return nil
 }

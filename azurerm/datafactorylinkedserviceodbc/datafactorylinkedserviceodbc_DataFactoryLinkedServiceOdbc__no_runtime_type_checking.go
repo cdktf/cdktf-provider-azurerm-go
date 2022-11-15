@@ -64,6 +64,14 @@ func validateDataFactoryLinkedServiceOdbc_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataFactoryLinkedServiceOdbc_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceOdbc_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceOdbc) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

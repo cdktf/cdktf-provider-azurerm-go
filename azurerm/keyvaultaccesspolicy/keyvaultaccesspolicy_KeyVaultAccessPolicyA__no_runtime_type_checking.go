@@ -60,6 +60,14 @@ func validateKeyVaultAccessPolicyA_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKeyVaultAccessPolicyA_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKeyVaultAccessPolicyA_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyVaultAccessPolicyA) validateSetApplicationIdParameters(val *string) error {
 	return nil
 }

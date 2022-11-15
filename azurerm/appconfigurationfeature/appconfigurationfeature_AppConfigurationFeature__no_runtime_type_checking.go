@@ -68,6 +68,14 @@ func validateAppConfigurationFeature_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateAppConfigurationFeature_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppConfigurationFeature_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppConfigurationFeature) validateSetConfigurationStoreIdParameters(val *string) error {
 	return nil
 }

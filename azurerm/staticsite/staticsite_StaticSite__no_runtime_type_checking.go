@@ -64,6 +64,14 @@ func validateStaticSite_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStaticSite_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStaticSite_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StaticSite) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

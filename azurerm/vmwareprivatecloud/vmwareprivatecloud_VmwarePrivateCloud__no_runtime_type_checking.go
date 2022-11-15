@@ -64,6 +64,14 @@ func validateVmwarePrivateCloud_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVmwarePrivateCloud_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVmwarePrivateCloud_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VmwarePrivateCloud) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateFluidRelayServer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFluidRelayServer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFluidRelayServer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FluidRelayServer) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDataAzurermPolicySetDefinition_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataAzurermPolicySetDefinition_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermPolicySetDefinition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPolicySetDefinition) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

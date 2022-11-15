@@ -60,6 +60,14 @@ func validateDataAzurermDnsPtrRecord_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataAzurermDnsPtrRecord_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermDnsPtrRecord_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDnsPtrRecord) validateSetIdParameters(val *string) error {
 	return nil
 }

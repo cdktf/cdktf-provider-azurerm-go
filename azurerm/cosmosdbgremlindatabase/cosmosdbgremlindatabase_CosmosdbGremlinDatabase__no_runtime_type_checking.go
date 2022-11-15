@@ -64,6 +64,14 @@ func validateCosmosdbGremlinDatabase_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateCosmosdbGremlinDatabase_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCosmosdbGremlinDatabase_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbGremlinDatabase) validateSetAccountNameParameters(val *string) error {
 	return nil
 }

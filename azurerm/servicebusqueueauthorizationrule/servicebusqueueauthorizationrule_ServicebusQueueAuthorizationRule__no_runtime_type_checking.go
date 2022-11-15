@@ -60,6 +60,14 @@ func validateServicebusQueueAuthorizationRule_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateServicebusQueueAuthorizationRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicebusQueueAuthorizationRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicebusQueueAuthorizationRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

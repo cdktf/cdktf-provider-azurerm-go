@@ -60,6 +60,14 @@ func validateVirtualDesktopWorkspace_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateVirtualDesktopWorkspace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualDesktopWorkspace_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualDesktopWorkspace) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

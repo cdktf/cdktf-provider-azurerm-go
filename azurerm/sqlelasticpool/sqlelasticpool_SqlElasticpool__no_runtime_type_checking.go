@@ -60,6 +60,14 @@ func validateSqlElasticpool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSqlElasticpool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSqlElasticpool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlElasticpool) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

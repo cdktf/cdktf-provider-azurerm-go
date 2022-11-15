@@ -60,6 +60,14 @@ func validateSentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection_IsCo
 	return nil
 }
 
+func validateSentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

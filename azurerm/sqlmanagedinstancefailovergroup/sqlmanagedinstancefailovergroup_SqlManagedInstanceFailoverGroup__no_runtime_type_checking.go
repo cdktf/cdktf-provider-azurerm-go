@@ -64,6 +64,14 @@ func validateSqlManagedInstanceFailoverGroup_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateSqlManagedInstanceFailoverGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSqlManagedInstanceFailoverGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlManagedInstanceFailoverGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

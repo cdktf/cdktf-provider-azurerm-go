@@ -60,6 +60,14 @@ func validateStreamAnalyticsManagedPrivateEndpoint_IsConstructParameters(x inter
 	return nil
 }
 
+func validateStreamAnalyticsManagedPrivateEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStreamAnalyticsManagedPrivateEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsManagedPrivateEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

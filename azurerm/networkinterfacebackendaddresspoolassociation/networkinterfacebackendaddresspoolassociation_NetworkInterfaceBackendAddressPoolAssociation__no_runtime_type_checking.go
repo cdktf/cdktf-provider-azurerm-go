@@ -60,6 +60,14 @@ func validateNetworkInterfaceBackendAddressPoolAssociation_IsConstructParameters
 	return nil
 }
 
+func validateNetworkInterfaceBackendAddressPoolAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkInterfaceBackendAddressPoolAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociation) validateSetBackendAddressPoolIdParameters(val *string) error {
 	return nil
 }

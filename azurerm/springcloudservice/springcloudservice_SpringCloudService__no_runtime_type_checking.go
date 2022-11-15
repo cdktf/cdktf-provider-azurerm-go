@@ -72,6 +72,14 @@ func validateSpringCloudService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSpringCloudService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpringCloudService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudService) validateSetBuildAgentPoolSizeParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,14 @@ func validateVirtualNetworkGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVirtualNetworkGateway_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualNetworkGateway_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetworkGateway) validateSetActiveActiveParameters(val interface{}) error {
 	return nil
 }

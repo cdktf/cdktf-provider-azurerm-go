@@ -68,6 +68,14 @@ func validateWebPubsub_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWebPubsub_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWebPubsub_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WebPubsub) validateSetAadAuthEnabledParameters(val interface{}) error {
 	return nil
 }

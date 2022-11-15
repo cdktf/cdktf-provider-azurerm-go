@@ -2,10 +2,10 @@ package datafactorydatasetsnowflake
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/datafactorydatasetsnowflake/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/datafactorydatasetsnowflake/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -814,6 +814,44 @@ func DataFactoryDatasetSnowflake_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.dataFactoryDatasetSnowflake.DataFactoryDatasetSnowflake",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataFactoryDatasetSnowflake_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataFactoryDatasetSnowflake_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataFactoryDatasetSnowflake.DataFactoryDatasetSnowflake",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataFactoryDatasetSnowflake_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataFactoryDatasetSnowflake_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataFactoryDatasetSnowflake.DataFactoryDatasetSnowflake",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

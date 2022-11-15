@@ -130,6 +130,22 @@ func validateCosmosdbSqlFunction_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCosmosdbSqlFunction_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateCosmosdbSqlFunction_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbSqlFunction) validateSetBodyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

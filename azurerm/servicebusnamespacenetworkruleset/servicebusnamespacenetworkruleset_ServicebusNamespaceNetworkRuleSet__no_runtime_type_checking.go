@@ -64,6 +64,14 @@ func validateServicebusNamespaceNetworkRuleSet_IsConstructParameters(x interface
 	return nil
 }
 
+func validateServicebusNamespaceNetworkRuleSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicebusNamespaceNetworkRuleSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicebusNamespaceNetworkRuleSet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -141,6 +141,22 @@ func validateMachineLearningSynapseSpark_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateMachineLearningSynapseSpark_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateMachineLearningSynapseSpark_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MachineLearningSynapseSpark) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

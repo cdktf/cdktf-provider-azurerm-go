@@ -72,6 +72,14 @@ func validateBatchAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBatchAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBatchAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchAccount) validateSetAllowedAuthenticationModesParameters(val *[]*string) error {
 	return nil
 }

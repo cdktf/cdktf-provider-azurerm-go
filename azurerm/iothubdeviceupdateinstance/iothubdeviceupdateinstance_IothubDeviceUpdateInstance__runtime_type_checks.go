@@ -141,6 +141,22 @@ func validateIothubDeviceUpdateInstance_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateIothubDeviceUpdateInstance_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateIothubDeviceUpdateInstance_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_IothubDeviceUpdateInstance) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

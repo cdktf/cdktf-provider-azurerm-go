@@ -80,6 +80,14 @@ func validateApiManagementCustomDomain_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateApiManagementCustomDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementCustomDomain_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementCustomDomain) validateSetApiManagementIdParameters(val *string) error {
 	return nil
 }

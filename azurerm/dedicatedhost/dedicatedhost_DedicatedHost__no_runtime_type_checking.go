@@ -60,6 +60,14 @@ func validateDedicatedHost_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDedicatedHost_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDedicatedHost_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DedicatedHost) validateSetAutoReplaceOnFailureParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDataAzurermTrafficManagerGeographicalLocation_IsConstructParameters
 	return nil
 }
 
+func validateDataAzurermTrafficManagerGeographicalLocation_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermTrafficManagerGeographicalLocation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermTrafficManagerGeographicalLocation) validateSetIdParameters(val *string) error {
 	return nil
 }

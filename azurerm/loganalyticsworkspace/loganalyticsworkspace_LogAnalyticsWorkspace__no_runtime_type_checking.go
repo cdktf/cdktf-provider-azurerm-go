@@ -60,6 +60,14 @@ func validateLogAnalyticsWorkspace_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLogAnalyticsWorkspace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogAnalyticsWorkspace_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetCmkForQueryForcedParameters(val interface{}) error {
 	return nil
 }

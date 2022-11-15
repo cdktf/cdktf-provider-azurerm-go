@@ -60,6 +60,14 @@ func validateDataFactoryPipeline_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataFactoryPipeline_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryPipeline_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryPipeline) validateSetActivitiesJsonParameters(val *string) error {
 	return nil
 }

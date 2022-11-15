@@ -64,6 +64,14 @@ func validateSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSnapshot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSnapshot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Snapshot) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateResourcePolicyAssignment_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateResourcePolicyAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateResourcePolicyAssignment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResourcePolicyAssignment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

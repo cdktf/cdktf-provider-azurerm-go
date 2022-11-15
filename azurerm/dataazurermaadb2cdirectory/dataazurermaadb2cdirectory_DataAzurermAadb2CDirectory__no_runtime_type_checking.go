@@ -60,6 +60,14 @@ func validateDataAzurermAadb2CDirectory_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataAzurermAadb2CDirectory_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermAadb2CDirectory_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermAadb2CDirectory) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

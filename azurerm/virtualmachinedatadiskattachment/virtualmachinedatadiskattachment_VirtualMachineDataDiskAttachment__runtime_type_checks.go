@@ -130,6 +130,22 @@ func validateVirtualMachineDataDiskAttachment_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateVirtualMachineDataDiskAttachment_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateVirtualMachineDataDiskAttachment_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VirtualMachineDataDiskAttachment) validateSetCachingParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

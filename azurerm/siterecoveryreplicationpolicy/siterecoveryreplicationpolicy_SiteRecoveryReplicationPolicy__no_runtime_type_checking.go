@@ -60,6 +60,14 @@ func validateSiteRecoveryReplicationPolicy_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateSiteRecoveryReplicationPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSiteRecoveryReplicationPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SiteRecoveryReplicationPolicy) validateSetApplicationConsistentSnapshotFrequencyInMinutesParameters(val *float64) error {
 	return nil
 }

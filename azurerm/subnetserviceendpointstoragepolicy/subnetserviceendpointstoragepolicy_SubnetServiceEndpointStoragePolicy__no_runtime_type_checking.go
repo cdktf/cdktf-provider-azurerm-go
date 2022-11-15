@@ -64,6 +64,14 @@ func validateSubnetServiceEndpointStoragePolicy_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateSubnetServiceEndpointStoragePolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSubnetServiceEndpointStoragePolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SubnetServiceEndpointStoragePolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

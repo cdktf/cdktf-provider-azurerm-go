@@ -72,6 +72,14 @@ func validateConsumptionBudgetManagementGroup_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateConsumptionBudgetManagementGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConsumptionBudgetManagementGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsumptionBudgetManagementGroup) validateSetAmountParameters(val *float64) error {
 	return nil
 }

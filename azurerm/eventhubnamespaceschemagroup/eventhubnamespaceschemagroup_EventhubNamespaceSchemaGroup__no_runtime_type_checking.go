@@ -60,6 +60,14 @@ func validateEventhubNamespaceSchemaGroup_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateEventhubNamespaceSchemaGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEventhubNamespaceSchemaGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventhubNamespaceSchemaGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

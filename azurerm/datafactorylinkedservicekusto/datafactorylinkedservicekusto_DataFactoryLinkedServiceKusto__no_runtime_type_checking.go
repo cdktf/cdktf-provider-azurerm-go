@@ -60,6 +60,14 @@ func validateDataFactoryLinkedServiceKusto_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataFactoryLinkedServiceKusto_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceKusto_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceKusto) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

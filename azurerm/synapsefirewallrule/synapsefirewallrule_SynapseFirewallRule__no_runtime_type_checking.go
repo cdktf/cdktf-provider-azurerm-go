@@ -60,6 +60,14 @@ func validateSynapseFirewallRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSynapseFirewallRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynapseFirewallRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseFirewallRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

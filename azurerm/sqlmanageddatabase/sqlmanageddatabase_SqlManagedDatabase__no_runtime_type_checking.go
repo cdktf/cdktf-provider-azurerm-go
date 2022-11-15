@@ -60,6 +60,14 @@ func validateSqlManagedDatabase_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSqlManagedDatabase_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSqlManagedDatabase_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlManagedDatabase) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

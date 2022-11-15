@@ -64,6 +64,14 @@ func validateVpnServerConfigurationPolicyGroup_IsConstructParameters(x interface
 	return nil
 }
 
+func validateVpnServerConfigurationPolicyGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpnServerConfigurationPolicyGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnServerConfigurationPolicyGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

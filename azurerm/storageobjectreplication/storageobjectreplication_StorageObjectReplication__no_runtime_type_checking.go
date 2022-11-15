@@ -64,6 +64,14 @@ func validateStorageObjectReplication_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateStorageObjectReplication_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageObjectReplication_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageObjectReplication) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

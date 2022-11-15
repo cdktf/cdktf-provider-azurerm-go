@@ -130,6 +130,22 @@ func validateStreamAnalyticsOutputFunction_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateStreamAnalyticsOutputFunction_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateStreamAnalyticsOutputFunction_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsOutputFunction) validateSetApiKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

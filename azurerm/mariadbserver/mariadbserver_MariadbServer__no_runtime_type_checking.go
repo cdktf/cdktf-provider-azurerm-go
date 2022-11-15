@@ -60,6 +60,14 @@ func validateMariadbServer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMariadbServer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMariadbServer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MariadbServer) validateSetAdministratorLoginParameters(val *string) error {
 	return nil
 }

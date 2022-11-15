@@ -60,6 +60,14 @@ func validateSiteRecoveryProtectionContainer_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateSiteRecoveryProtectionContainer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSiteRecoveryProtectionContainer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SiteRecoveryProtectionContainer) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

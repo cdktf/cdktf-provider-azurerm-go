@@ -60,6 +60,14 @@ func validateMonitorDataCollectionRuleAssociation_IsConstructParameters(x interf
 	return nil
 }
 
+func validateMonitorDataCollectionRuleAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitorDataCollectionRuleAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorDataCollectionRuleAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateRelayHybridConnection_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRelayHybridConnection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRelayHybridConnection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RelayHybridConnection) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

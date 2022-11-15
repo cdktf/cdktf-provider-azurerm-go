@@ -60,6 +60,14 @@ func validateKustoScript_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKustoScript_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKustoScript_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoScript) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

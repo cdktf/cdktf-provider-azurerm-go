@@ -60,6 +60,14 @@ func validateDataAzurermMonitorLogProfile_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataAzurermMonitorLogProfile_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermMonitorLogProfile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMonitorLogProfile) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package securitycenterautomation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/securitycenterautomation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/securitycenterautomation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -730,6 +730,44 @@ func SecurityCenterAutomation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.securityCenterAutomation.SecurityCenterAutomation",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SecurityCenterAutomation_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSecurityCenterAutomation_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.securityCenterAutomation.SecurityCenterAutomation",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SecurityCenterAutomation_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSecurityCenterAutomation_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.securityCenterAutomation.SecurityCenterAutomation",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

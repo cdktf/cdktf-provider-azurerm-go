@@ -60,6 +60,14 @@ func validateDataAzurermHealthcareMedtechService_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataAzurermHealthcareMedtechService_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermHealthcareMedtechService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermHealthcareMedtechService) validateSetIdParameters(val *string) error {
 	return nil
 }

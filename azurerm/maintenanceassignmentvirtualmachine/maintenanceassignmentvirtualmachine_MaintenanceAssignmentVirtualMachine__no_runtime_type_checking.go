@@ -60,6 +60,14 @@ func validateMaintenanceAssignmentVirtualMachine_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateMaintenanceAssignmentVirtualMachine_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMaintenanceAssignmentVirtualMachine_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MaintenanceAssignmentVirtualMachine) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

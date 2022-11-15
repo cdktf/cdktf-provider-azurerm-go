@@ -60,6 +60,14 @@ func validateDataAzurermKeyVaultManagedHardwareSecurityModule_IsConstructParamet
 	return nil
 }
 
+func validateDataAzurermKeyVaultManagedHardwareSecurityModule_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermKeyVaultManagedHardwareSecurityModule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModule) validateSetIdParameters(val *string) error {
 	return nil
 }

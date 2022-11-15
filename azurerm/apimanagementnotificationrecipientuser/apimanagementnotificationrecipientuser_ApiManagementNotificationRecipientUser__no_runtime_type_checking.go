@@ -60,6 +60,14 @@ func validateApiManagementNotificationRecipientUser_IsConstructParameters(x inte
 	return nil
 }
 
+func validateApiManagementNotificationRecipientUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementNotificationRecipientUser_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementNotificationRecipientUser) validateSetApiManagementIdParameters(val *string) error {
 	return nil
 }

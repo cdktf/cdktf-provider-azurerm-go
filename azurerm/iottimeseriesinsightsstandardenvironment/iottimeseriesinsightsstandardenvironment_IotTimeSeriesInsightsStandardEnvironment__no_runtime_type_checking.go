@@ -60,6 +60,14 @@ func validateIotTimeSeriesInsightsStandardEnvironment_IsConstructParameters(x in
 	return nil
 }
 
+func validateIotTimeSeriesInsightsStandardEnvironment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIotTimeSeriesInsightsStandardEnvironment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

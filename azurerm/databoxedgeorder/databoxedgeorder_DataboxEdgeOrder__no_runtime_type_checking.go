@@ -68,6 +68,14 @@ func validateDataboxEdgeOrder_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataboxEdgeOrder_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataboxEdgeOrder_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataboxEdgeOrder) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

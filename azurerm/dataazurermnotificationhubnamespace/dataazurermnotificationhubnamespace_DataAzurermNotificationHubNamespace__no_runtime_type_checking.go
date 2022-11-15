@@ -60,6 +60,14 @@ func validateDataAzurermNotificationHubNamespace_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataAzurermNotificationHubNamespace_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermNotificationHubNamespace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermNotificationHubNamespace) validateSetIdParameters(val *string) error {
 	return nil
 }

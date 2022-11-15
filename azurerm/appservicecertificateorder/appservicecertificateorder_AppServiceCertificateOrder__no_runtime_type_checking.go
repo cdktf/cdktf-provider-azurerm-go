@@ -60,6 +60,14 @@ func validateAppServiceCertificateOrder_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateAppServiceCertificateOrder_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppServiceCertificateOrder_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceCertificateOrder) validateSetAutoRenewParameters(val interface{}) error {
 	return nil
 }

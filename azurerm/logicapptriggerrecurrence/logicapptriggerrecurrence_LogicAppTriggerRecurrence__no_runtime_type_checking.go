@@ -64,6 +64,14 @@ func validateLogicAppTriggerRecurrence_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateLogicAppTriggerRecurrence_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogicAppTriggerRecurrence_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppTriggerRecurrence) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

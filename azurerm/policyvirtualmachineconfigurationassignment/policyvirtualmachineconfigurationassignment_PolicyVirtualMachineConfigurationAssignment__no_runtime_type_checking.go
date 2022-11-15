@@ -64,6 +64,14 @@ func validatePolicyVirtualMachineConfigurationAssignment_IsConstructParameters(x
 	return nil
 }
 
+func validatePolicyVirtualMachineConfigurationAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePolicyVirtualMachineConfigurationAssignment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -84,6 +84,14 @@ func validateMssqlVirtualMachine_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMssqlVirtualMachine_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMssqlVirtualMachine_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlVirtualMachine) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDashboard_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDashboard_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDashboard_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Dashboard) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

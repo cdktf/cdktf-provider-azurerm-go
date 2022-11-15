@@ -60,6 +60,14 @@ func validateDataAzurermIothubDpsSharedAccessPolicy_IsConstructParameters(x inte
 	return nil
 }
 
+func validateDataAzurermIothubDpsSharedAccessPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermIothubDpsSharedAccessPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermIothubDpsSharedAccessPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

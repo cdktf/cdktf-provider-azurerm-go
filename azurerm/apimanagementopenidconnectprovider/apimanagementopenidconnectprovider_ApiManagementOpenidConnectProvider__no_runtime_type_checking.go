@@ -60,6 +60,14 @@ func validateApiManagementOpenidConnectProvider_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateApiManagementOpenidConnectProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementOpenidConnectProvider_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementOpenidConnectProvider) validateSetApiManagementNameParameters(val *string) error {
 	return nil
 }

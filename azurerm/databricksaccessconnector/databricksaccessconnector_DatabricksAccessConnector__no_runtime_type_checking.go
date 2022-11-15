@@ -64,6 +64,14 @@ func validateDatabricksAccessConnector_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDatabricksAccessConnector_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatabricksAccessConnector_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabricksAccessConnector) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

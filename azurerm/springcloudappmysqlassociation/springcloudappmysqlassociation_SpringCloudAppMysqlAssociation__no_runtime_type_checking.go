@@ -60,6 +60,14 @@ func validateSpringCloudAppMysqlAssociation_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateSpringCloudAppMysqlAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpringCloudAppMysqlAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudAppMysqlAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

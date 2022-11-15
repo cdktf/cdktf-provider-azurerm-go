@@ -68,6 +68,14 @@ func validateTrafficManagerExternalEndpoint_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateTrafficManagerExternalEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTrafficManagerExternalEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TrafficManagerExternalEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

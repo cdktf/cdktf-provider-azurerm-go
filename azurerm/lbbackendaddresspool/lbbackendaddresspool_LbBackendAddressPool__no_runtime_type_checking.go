@@ -64,6 +64,14 @@ func validateLbBackendAddressPool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLbBackendAddressPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbBackendAddressPool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbBackendAddressPool) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

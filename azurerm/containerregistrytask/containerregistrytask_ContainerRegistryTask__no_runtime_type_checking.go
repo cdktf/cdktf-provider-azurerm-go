@@ -100,6 +100,14 @@ func validateContainerRegistryTask_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateContainerRegistryTask_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateContainerRegistryTask_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerRegistryTask) validateSetAgentPoolNameParameters(val *string) error {
 	return nil
 }

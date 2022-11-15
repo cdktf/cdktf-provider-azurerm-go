@@ -130,6 +130,22 @@ func validateSentinelDataConnectorAzureAdvancedThreatProtection_IsConstructParam
 	return nil
 }
 
+func validateSentinelDataConnectorAzureAdvancedThreatProtection_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateSentinelDataConnectorAzureAdvancedThreatProtection_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorAzureAdvancedThreatProtection) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

@@ -64,6 +64,14 @@ func validateStreamAnalyticsStreamInputIothub_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateStreamAnalyticsStreamInputIothub_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStreamAnalyticsStreamInputIothub_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsStreamInputIothub) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

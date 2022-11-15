@@ -60,6 +60,14 @@ func validateDataAzurermConsumptionBudgetSubscription_IsConstructParameters(x in
 	return nil
 }
 
+func validateDataAzurermConsumptionBudgetSubscription_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermConsumptionBudgetSubscription_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermConsumptionBudgetSubscription) validateSetIdParameters(val *string) error {
 	return nil
 }

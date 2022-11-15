@@ -60,6 +60,14 @@ func validateRouteServerBgpConnection_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateRouteServerBgpConnection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRouteServerBgpConnection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RouteServerBgpConnection) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

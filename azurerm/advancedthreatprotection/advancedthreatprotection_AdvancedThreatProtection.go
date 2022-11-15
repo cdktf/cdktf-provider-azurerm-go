@@ -2,10 +2,10 @@ package advancedthreatprotection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/advancedthreatprotection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/advancedthreatprotection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -511,6 +511,44 @@ func AdvancedThreatProtection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.advancedThreatProtection.AdvancedThreatProtection",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AdvancedThreatProtection_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAdvancedThreatProtection_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.advancedThreatProtection.AdvancedThreatProtection",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AdvancedThreatProtection_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAdvancedThreatProtection_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.advancedThreatProtection.AdvancedThreatProtection",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -64,6 +64,14 @@ func validateDevTestVirtualNetwork_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDevTestVirtualNetwork_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDevTestVirtualNetwork_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevTestVirtualNetwork) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

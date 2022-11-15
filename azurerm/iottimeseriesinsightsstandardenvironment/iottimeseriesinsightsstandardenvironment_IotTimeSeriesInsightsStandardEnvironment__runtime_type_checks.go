@@ -130,6 +130,22 @@ func validateIotTimeSeriesInsightsStandardEnvironment_IsConstructParameters(x in
 	return nil
 }
 
+func validateIotTimeSeriesInsightsStandardEnvironment_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateIotTimeSeriesInsightsStandardEnvironment_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

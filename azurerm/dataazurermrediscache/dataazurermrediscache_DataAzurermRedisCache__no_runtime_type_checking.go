@@ -60,6 +60,14 @@ func validateDataAzurermRedisCache_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAzurermRedisCache_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermRedisCache_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermRedisCache) validateSetIdParameters(val *string) error {
 	return nil
 }

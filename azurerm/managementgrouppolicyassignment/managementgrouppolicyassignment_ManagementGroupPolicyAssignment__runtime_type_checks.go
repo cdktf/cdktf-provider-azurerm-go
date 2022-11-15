@@ -172,6 +172,22 @@ func validateManagementGroupPolicyAssignment_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateManagementGroupPolicyAssignment_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateManagementGroupPolicyAssignment_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ManagementGroupPolicyAssignment) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

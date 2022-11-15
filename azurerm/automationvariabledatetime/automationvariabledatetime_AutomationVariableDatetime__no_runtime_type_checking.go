@@ -60,6 +60,14 @@ func validateAutomationVariableDatetime_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateAutomationVariableDatetime_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAutomationVariableDatetime_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationVariableDatetime) validateSetAutomationAccountNameParameters(val *string) error {
 	return nil
 }

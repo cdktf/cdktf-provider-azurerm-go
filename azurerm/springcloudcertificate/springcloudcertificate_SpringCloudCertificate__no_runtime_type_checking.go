@@ -60,6 +60,14 @@ func validateSpringCloudCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSpringCloudCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpringCloudCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudCertificate) validateSetCertificateContentParameters(val *string) error {
 	return nil
 }

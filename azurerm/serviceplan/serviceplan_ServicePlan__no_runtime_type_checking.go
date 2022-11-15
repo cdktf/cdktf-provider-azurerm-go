@@ -60,6 +60,14 @@ func validateServicePlan_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServicePlan_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicePlan_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePlan) validateSetAppServiceEnvironmentIdParameters(val *string) error {
 	return nil
 }

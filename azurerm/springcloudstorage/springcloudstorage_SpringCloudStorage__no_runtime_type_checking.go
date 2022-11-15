@@ -60,6 +60,14 @@ func validateSpringCloudStorage_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSpringCloudStorage_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpringCloudStorage_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudStorage) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

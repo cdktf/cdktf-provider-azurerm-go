@@ -60,6 +60,14 @@ func validateDataAzurermWebPubsubPrivateLinkResource_IsConstructParameters(x int
 	return nil
 }
 
+func validateDataAzurermWebPubsubPrivateLinkResource_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermWebPubsubPrivateLinkResource_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermWebPubsubPrivateLinkResource) validateSetIdParameters(val *string) error {
 	return nil
 }

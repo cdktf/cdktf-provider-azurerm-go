@@ -60,6 +60,14 @@ func validateSentinelDataConnectorIot_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateSentinelDataConnectorIot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSentinelDataConnectorIot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorIot) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

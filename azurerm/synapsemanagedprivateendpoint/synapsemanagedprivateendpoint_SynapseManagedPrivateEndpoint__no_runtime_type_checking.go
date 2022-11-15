@@ -60,6 +60,14 @@ func validateSynapseManagedPrivateEndpoint_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateSynapseManagedPrivateEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynapseManagedPrivateEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseManagedPrivateEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDataAzurermAppServiceCertificateOrder_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDataAzurermAppServiceCertificateOrder_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermAppServiceCertificateOrder_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermAppServiceCertificateOrder) validateSetIdParameters(val *string) error {
 	return nil
 }

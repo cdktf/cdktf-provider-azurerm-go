@@ -60,6 +60,14 @@ func validateDataAzurermWebPubsub_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAzurermWebPubsub_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermWebPubsub_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermWebPubsub) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateApiManagementIdentityProviderFacebook_IsConstructParameters(x inter
 	return nil
 }
 
+func validateApiManagementIdentityProviderFacebook_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementIdentityProviderFacebook_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementIdentityProviderFacebook) validateSetApiManagementNameParameters(val *string) error {
 	return nil
 }

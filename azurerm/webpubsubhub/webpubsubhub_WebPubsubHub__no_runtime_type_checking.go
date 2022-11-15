@@ -64,6 +64,14 @@ func validateWebPubsubHub_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWebPubsubHub_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWebPubsubHub_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WebPubsubHub) validateSetAnonymousConnectionsEnabledParameters(val interface{}) error {
 	return nil
 }

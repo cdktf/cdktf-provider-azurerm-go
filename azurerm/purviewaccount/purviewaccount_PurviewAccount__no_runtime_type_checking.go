@@ -64,6 +64,14 @@ func validatePurviewAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePurviewAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePurviewAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PurviewAccount) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

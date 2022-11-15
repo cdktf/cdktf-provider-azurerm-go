@@ -60,6 +60,14 @@ func validateLogAnalyticsStorageInsights_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateLogAnalyticsStorageInsights_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogAnalyticsStorageInsights_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsStorageInsights) validateSetBlobContainerNamesParameters(val *[]*string) error {
 	return nil
 }

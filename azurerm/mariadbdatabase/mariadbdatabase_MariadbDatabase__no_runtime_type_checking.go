@@ -60,6 +60,14 @@ func validateMariadbDatabase_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMariadbDatabase_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMariadbDatabase_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MariadbDatabase) validateSetCharsetParameters(val *string) error {
 	return nil
 }

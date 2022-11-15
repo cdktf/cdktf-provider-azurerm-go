@@ -60,6 +60,14 @@ func validateLogAnalyticsQueryPack_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLogAnalyticsQueryPack_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogAnalyticsQueryPack_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsQueryPack) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

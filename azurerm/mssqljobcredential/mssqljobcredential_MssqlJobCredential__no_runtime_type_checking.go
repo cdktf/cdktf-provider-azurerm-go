@@ -60,6 +60,14 @@ func validateMssqlJobCredential_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMssqlJobCredential_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMssqlJobCredential_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlJobCredential) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

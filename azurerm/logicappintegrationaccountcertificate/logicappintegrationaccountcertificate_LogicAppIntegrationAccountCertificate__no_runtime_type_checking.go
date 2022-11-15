@@ -64,6 +64,14 @@ func validateLogicAppIntegrationAccountCertificate_IsConstructParameters(x inter
 	return nil
 }
 
+func validateLogicAppIntegrationAccountCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogicAppIntegrationAccountCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppIntegrationAccountCertificate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

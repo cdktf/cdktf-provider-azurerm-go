@@ -60,6 +60,14 @@ func validateCosmosdbSqlDedicatedGateway_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateCosmosdbSqlDedicatedGateway_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCosmosdbSqlDedicatedGateway_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbSqlDedicatedGateway) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

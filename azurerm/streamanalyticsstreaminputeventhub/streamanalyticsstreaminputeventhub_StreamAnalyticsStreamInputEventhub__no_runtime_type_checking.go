@@ -64,6 +64,14 @@ func validateStreamAnalyticsStreamInputEventhub_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateStreamAnalyticsStreamInputEventhub_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStreamAnalyticsStreamInputEventhub_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsStreamInputEventhub) validateSetAuthenticationModeParameters(val *string) error {
 	return nil
 }

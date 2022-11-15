@@ -60,6 +60,14 @@ func validateDataFactoryLinkedServiceAzureSearch_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataFactoryLinkedServiceAzureSearch_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceAzureSearch_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceAzureSearch) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

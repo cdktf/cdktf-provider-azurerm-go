@@ -60,6 +60,14 @@ func validateNotificationHubAuthorizationRule_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateNotificationHubAuthorizationRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNotificationHubAuthorizationRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationHubAuthorizationRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

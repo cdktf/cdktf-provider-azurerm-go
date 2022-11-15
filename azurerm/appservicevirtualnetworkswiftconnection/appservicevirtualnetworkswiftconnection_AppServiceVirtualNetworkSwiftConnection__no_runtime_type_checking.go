@@ -60,6 +60,14 @@ func validateAppServiceVirtualNetworkSwiftConnection_IsConstructParameters(x int
 	return nil
 }
 
+func validateAppServiceVirtualNetworkSwiftConnection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppServiceVirtualNetworkSwiftConnection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceVirtualNetworkSwiftConnection) validateSetAppServiceIdParameters(val *string) error {
 	return nil
 }

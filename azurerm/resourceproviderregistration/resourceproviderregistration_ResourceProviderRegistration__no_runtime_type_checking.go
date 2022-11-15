@@ -64,6 +64,14 @@ func validateResourceProviderRegistration_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateResourceProviderRegistration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateResourceProviderRegistration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResourceProviderRegistration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

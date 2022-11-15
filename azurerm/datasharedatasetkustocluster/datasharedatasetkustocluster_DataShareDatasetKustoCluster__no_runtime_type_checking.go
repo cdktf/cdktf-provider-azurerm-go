@@ -60,6 +60,14 @@ func validateDataShareDatasetKustoCluster_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataShareDatasetKustoCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataShareDatasetKustoCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataShareDatasetKustoCluster) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

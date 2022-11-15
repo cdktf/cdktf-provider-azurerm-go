@@ -80,6 +80,14 @@ func validateBackupPolicyVm_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBackupPolicyVm_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBackupPolicyVm_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupPolicyVm) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

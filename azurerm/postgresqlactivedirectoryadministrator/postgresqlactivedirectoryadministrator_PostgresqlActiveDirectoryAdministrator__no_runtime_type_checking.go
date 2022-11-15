@@ -60,6 +60,14 @@ func validatePostgresqlActiveDirectoryAdministrator_IsConstructParameters(x inte
 	return nil
 }
 
+func validatePostgresqlActiveDirectoryAdministrator_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePostgresqlActiveDirectoryAdministrator_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlActiveDirectoryAdministrator) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

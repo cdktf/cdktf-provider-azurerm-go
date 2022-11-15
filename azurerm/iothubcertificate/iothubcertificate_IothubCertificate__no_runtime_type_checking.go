@@ -60,6 +60,14 @@ func validateIothubCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIothubCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIothubCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubCertificate) validateSetCertificateContentParameters(val *string) error {
 	return nil
 }

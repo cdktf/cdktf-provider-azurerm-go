@@ -64,6 +64,14 @@ func validateLogAnalyticsCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLogAnalyticsCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogAnalyticsCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsCluster) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

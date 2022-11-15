@@ -2,10 +2,10 @@ package springcloudapiportalcustomdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/springcloudapiportalcustomdomain/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/springcloudapiportalcustomdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -546,6 +546,44 @@ func SpringCloudApiPortalCustomDomain_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.springCloudApiPortalCustomDomain.SpringCloudApiPortalCustomDomain",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SpringCloudApiPortalCustomDomain_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSpringCloudApiPortalCustomDomain_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.springCloudApiPortalCustomDomain.SpringCloudApiPortalCustomDomain",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SpringCloudApiPortalCustomDomain_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSpringCloudApiPortalCustomDomain_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.springCloudApiPortalCustomDomain.SpringCloudApiPortalCustomDomain",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

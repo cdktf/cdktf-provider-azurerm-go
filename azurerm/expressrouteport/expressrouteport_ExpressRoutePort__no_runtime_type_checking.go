@@ -72,6 +72,14 @@ func validateExpressRoutePort_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateExpressRoutePort_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateExpressRoutePort_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRoutePort) validateSetBandwidthInGbpsParameters(val *float64) error {
 	return nil
 }

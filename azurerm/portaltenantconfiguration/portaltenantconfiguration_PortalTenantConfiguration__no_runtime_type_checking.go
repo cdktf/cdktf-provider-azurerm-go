@@ -60,6 +60,14 @@ func validatePortalTenantConfiguration_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validatePortalTenantConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePortalTenantConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PortalTenantConfiguration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

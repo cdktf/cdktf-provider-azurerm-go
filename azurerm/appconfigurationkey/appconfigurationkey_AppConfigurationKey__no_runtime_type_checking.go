@@ -60,6 +60,14 @@ func validateAppConfigurationKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppConfigurationKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppConfigurationKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppConfigurationKey) validateSetConfigurationStoreIdParameters(val *string) error {
 	return nil
 }

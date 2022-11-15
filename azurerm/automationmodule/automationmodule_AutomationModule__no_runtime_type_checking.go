@@ -64,6 +64,14 @@ func validateAutomationModule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAutomationModule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAutomationModule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationModule) validateSetAutomationAccountNameParameters(val *string) error {
 	return nil
 }

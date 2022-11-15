@@ -88,6 +88,14 @@ func validateContainerGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateContainerGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateContainerGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

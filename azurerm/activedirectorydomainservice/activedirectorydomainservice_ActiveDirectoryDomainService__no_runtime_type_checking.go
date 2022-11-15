@@ -76,6 +76,14 @@ func validateActiveDirectoryDomainService_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateActiveDirectoryDomainService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateActiveDirectoryDomainService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ActiveDirectoryDomainService) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

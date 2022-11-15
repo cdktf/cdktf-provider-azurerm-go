@@ -60,6 +60,14 @@ func validateAttestationProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAttestationProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAttestationProvider_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AttestationProvider) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

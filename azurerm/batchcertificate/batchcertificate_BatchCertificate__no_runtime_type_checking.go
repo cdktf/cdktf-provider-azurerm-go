@@ -60,6 +60,14 @@ func validateBatchCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBatchCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBatchCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchCertificate) validateSetAccountNameParameters(val *string) error {
 	return nil
 }

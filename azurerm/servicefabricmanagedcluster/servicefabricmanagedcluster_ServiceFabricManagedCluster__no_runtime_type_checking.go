@@ -76,6 +76,14 @@ func validateServiceFabricManagedCluster_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateServiceFabricManagedCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServiceFabricManagedCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceFabricManagedCluster) validateSetBackupServiceEnabledParameters(val interface{}) error {
 	return nil
 }

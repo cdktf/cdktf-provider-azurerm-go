@@ -64,6 +64,14 @@ func validateKustoAttachedDatabaseConfiguration_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateKustoAttachedDatabaseConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKustoAttachedDatabaseConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoAttachedDatabaseConfiguration) validateSetClusterNameParameters(val *string) error {
 	return nil
 }

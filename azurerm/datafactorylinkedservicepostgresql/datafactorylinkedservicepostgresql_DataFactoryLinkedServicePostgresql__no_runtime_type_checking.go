@@ -60,6 +60,14 @@ func validateDataFactoryLinkedServicePostgresql_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataFactoryLinkedServicePostgresql_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServicePostgresql_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServicePostgresql) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

@@ -100,6 +100,14 @@ func validateCosmosdbAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCosmosdbAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCosmosdbAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbAccount) validateSetAccessKeyMetadataWritesEnabledParameters(val interface{}) error {
 	return nil
 }

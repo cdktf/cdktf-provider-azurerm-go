@@ -60,6 +60,14 @@ func validateIothubRouteA_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIothubRouteA_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIothubRouteA_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubRouteA) validateSetConditionParameters(val *string) error {
 	return nil
 }

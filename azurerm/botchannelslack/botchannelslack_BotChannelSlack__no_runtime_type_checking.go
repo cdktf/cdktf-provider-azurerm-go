@@ -60,6 +60,14 @@ func validateBotChannelSlack_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBotChannelSlack_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBotChannelSlack_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelSlack) validateSetBotNameParameters(val *string) error {
 	return nil
 }

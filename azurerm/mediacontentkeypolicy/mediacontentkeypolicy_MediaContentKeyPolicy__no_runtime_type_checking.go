@@ -64,6 +64,14 @@ func validateMediaContentKeyPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMediaContentKeyPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMediaContentKeyPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaContentKeyPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

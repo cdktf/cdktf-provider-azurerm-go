@@ -60,6 +60,14 @@ func validateNatGatewayPublicIpPrefixAssociation_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateNatGatewayPublicIpPrefixAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNatGatewayPublicIpPrefixAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NatGatewayPublicIpPrefixAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

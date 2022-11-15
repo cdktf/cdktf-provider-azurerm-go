@@ -60,6 +60,14 @@ func validateDataAzurermApiManagementApiVersionSet_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDataAzurermApiManagementApiVersionSet_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermApiManagementApiVersionSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermApiManagementApiVersionSet) validateSetApiManagementNameParameters(val *string) error {
 	return nil
 }

@@ -84,6 +84,14 @@ func validateAutomationSoftwareUpdateConfiguration_IsConstructParameters(x inter
 	return nil
 }
 
+func validateAutomationSoftwareUpdateConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAutomationSoftwareUpdateConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) validateSetAutomationAccountIdParameters(val *string) error {
 	return nil
 }

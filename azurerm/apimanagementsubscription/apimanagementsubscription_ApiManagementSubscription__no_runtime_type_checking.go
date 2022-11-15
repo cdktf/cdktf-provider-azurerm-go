@@ -60,6 +60,14 @@ func validateApiManagementSubscription_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateApiManagementSubscription_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementSubscription_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementSubscription) validateSetAllowTracingParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDataAzurermCosmosdbSqlDatabase_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataAzurermCosmosdbSqlDatabase_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermCosmosdbSqlDatabase_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermCosmosdbSqlDatabase) validateSetAccountNameParameters(val *string) error {
 	return nil
 }

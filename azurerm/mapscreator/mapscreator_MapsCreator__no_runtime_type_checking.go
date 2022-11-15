@@ -60,6 +60,14 @@ func validateMapsCreator_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMapsCreator_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMapsCreator_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MapsCreator) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

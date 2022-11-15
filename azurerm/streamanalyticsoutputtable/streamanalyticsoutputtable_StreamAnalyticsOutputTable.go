@@ -2,10 +2,10 @@ package streamanalyticsoutputtable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/streamanalyticsoutputtable/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/streamanalyticsoutputtable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -784,6 +784,44 @@ func StreamAnalyticsOutputTable_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.streamAnalyticsOutputTable.StreamAnalyticsOutputTable",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func StreamAnalyticsOutputTable_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStreamAnalyticsOutputTable_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.streamAnalyticsOutputTable.StreamAnalyticsOutputTable",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func StreamAnalyticsOutputTable_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStreamAnalyticsOutputTable_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.streamAnalyticsOutputTable.StreamAnalyticsOutputTable",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

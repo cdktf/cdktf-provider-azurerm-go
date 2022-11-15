@@ -60,6 +60,14 @@ func validateBotServiceAzureBot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBotServiceAzureBot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBotServiceAzureBot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotServiceAzureBot) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

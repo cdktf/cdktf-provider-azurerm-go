@@ -60,6 +60,14 @@ func validateBotWebApp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBotWebApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBotWebApp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotWebApp) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

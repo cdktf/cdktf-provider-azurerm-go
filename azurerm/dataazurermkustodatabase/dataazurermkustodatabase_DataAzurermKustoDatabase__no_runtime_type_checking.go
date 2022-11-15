@@ -60,6 +60,14 @@ func validateDataAzurermKustoDatabase_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataAzurermKustoDatabase_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermKustoDatabase_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermKustoDatabase) validateSetClusterNameParameters(val *string) error {
 	return nil
 }

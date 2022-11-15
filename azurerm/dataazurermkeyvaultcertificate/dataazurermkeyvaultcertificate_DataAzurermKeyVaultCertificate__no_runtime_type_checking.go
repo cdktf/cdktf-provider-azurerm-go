@@ -60,6 +60,14 @@ func validateDataAzurermKeyVaultCertificate_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataAzurermKeyVaultCertificate_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermKeyVaultCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermKeyVaultCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

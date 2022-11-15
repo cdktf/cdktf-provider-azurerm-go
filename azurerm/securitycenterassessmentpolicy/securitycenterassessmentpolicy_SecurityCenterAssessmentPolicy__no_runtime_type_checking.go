@@ -60,6 +60,14 @@ func validateSecurityCenterAssessmentPolicy_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateSecurityCenterAssessmentPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecurityCenterAssessmentPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityCenterAssessmentPolicy) validateSetCategoriesParameters(val *[]*string) error {
 	return nil
 }

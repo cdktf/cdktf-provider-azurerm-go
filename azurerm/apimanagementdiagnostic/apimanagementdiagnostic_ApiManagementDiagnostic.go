@@ -2,10 +2,10 @@ package apimanagementdiagnostic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/apimanagementdiagnostic/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/apimanagementdiagnostic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -885,6 +885,44 @@ func ApiManagementDiagnostic_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.apiManagementDiagnostic.ApiManagementDiagnostic",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApiManagementDiagnostic_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApiManagementDiagnostic_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.apiManagementDiagnostic.ApiManagementDiagnostic",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApiManagementDiagnostic_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApiManagementDiagnostic_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.apiManagementDiagnostic.ApiManagementDiagnostic",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

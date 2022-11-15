@@ -60,6 +60,14 @@ func validateEventhubNamespaceDisasterRecoveryConfig_IsConstructParameters(x int
 	return nil
 }
 
+func validateEventhubNamespaceDisasterRecoveryConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEventhubNamespaceDisasterRecoveryConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

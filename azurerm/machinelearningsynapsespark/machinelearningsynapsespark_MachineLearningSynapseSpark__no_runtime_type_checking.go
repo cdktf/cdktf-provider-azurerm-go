@@ -64,6 +64,14 @@ func validateMachineLearningSynapseSpark_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateMachineLearningSynapseSpark_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMachineLearningSynapseSpark_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MachineLearningSynapseSpark) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

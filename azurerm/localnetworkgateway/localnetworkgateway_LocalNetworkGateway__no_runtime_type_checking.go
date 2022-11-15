@@ -64,6 +64,14 @@ func validateLocalNetworkGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLocalNetworkGateway_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLocalNetworkGateway_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LocalNetworkGateway) validateSetAddressSpaceParameters(val *[]*string) error {
 	return nil
 }

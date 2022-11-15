@@ -2,10 +2,10 @@ package privatednsresolvervirtualnetworklink
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/privatednsresolvervirtualnetworklink/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/privatednsresolvervirtualnetworklink/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -580,6 +580,44 @@ func PrivateDnsResolverVirtualNetworkLink_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.privateDnsResolverVirtualNetworkLink.PrivateDnsResolverVirtualNetworkLink",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PrivateDnsResolverVirtualNetworkLink_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePrivateDnsResolverVirtualNetworkLink_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.privateDnsResolverVirtualNetworkLink.PrivateDnsResolverVirtualNetworkLink",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PrivateDnsResolverVirtualNetworkLink_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePrivateDnsResolverVirtualNetworkLink_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.privateDnsResolverVirtualNetworkLink.PrivateDnsResolverVirtualNetworkLink",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -84,6 +84,14 @@ func validateHpcCache_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateHpcCache_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHpcCache_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HpcCache) validateSetAutomaticallyRotateKeyToLatestEnabledParameters(val interface{}) error {
 	return nil
 }

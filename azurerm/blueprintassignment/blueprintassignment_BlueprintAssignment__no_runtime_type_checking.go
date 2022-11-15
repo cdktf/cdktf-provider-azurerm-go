@@ -64,6 +64,14 @@ func validateBlueprintAssignment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBlueprintAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBlueprintAssignment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BlueprintAssignment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

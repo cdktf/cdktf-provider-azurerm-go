@@ -60,6 +60,14 @@ func validateLogicAppIntegrationAccountSchema_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateLogicAppIntegrationAccountSchema_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogicAppIntegrationAccountSchema_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppIntegrationAccountSchema) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

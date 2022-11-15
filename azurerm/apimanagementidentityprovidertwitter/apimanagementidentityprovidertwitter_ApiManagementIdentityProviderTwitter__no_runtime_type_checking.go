@@ -60,6 +60,14 @@ func validateApiManagementIdentityProviderTwitter_IsConstructParameters(x interf
 	return nil
 }
 
+func validateApiManagementIdentityProviderTwitter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementIdentityProviderTwitter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementIdentityProviderTwitter) validateSetApiKeyParameters(val *string) error {
 	return nil
 }

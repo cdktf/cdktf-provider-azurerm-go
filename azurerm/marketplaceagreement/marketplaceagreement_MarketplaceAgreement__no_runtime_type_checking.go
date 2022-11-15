@@ -60,6 +60,14 @@ func validateMarketplaceAgreement_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMarketplaceAgreement_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMarketplaceAgreement_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MarketplaceAgreement) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

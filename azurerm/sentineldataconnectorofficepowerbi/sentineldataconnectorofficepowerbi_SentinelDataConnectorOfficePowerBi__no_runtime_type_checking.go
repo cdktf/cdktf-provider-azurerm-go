@@ -60,6 +60,14 @@ func validateSentinelDataConnectorOfficePowerBi_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateSentinelDataConnectorOfficePowerBi_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSentinelDataConnectorOfficePowerBi_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorOfficePowerBi) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

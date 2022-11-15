@@ -68,6 +68,14 @@ func validateMonitorScheduledQueryRulesAlert_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateMonitorScheduledQueryRulesAlert_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitorScheduledQueryRulesAlert_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorScheduledQueryRulesAlert) validateSetAuthorizedResourceIdsParameters(val *[]*string) error {
 	return nil
 }

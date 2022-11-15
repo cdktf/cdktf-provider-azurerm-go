@@ -72,6 +72,14 @@ func validateNetappVolume_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNetappVolume_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetappVolume_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolume) validateSetAccountNameParameters(val *string) error {
 	return nil
 }

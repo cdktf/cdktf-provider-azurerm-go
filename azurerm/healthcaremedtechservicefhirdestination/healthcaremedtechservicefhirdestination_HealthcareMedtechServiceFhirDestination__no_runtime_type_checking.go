@@ -60,6 +60,14 @@ func validateHealthcareMedtechServiceFhirDestination_IsConstructParameters(x int
 	return nil
 }
 
+func validateHealthcareMedtechServiceFhirDestination_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHealthcareMedtechServiceFhirDestination_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareMedtechServiceFhirDestination) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

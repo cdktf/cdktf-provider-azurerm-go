@@ -76,6 +76,14 @@ func validateFunctionAppSlot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFunctionAppSlot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFunctionAppSlot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FunctionAppSlot) validateSetAppServicePlanIdParameters(val *string) error {
 	return nil
 }

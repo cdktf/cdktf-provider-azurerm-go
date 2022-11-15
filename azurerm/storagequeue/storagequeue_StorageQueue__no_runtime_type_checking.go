@@ -60,6 +60,14 @@ func validateStorageQueue_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStorageQueue_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageQueue_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageQueue) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

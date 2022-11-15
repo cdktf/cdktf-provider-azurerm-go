@@ -96,6 +96,14 @@ func validateIothub_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIothub_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIothub_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Iothub) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

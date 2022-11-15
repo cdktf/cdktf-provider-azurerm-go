@@ -64,6 +64,14 @@ func validatePrivateDnsZone_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePrivateDnsZone_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePrivateDnsZone_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivateDnsZone) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -130,6 +130,22 @@ func validateDataAzurermDiskEncryptionSet_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataAzurermDiskEncryptionSet_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAzurermDiskEncryptionSet_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDiskEncryptionSet) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

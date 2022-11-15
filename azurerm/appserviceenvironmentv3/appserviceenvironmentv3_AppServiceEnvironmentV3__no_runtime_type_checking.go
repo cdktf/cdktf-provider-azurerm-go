@@ -64,6 +64,14 @@ func validateAppServiceEnvironmentV3_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateAppServiceEnvironmentV3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppServiceEnvironmentV3_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceEnvironmentV3) validateSetAllowNewPrivateEndpointConnectionsParameters(val interface{}) error {
 	return nil
 }

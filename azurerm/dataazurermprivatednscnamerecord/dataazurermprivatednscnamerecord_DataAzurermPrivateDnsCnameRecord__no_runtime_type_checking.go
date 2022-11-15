@@ -60,6 +60,14 @@ func validateDataAzurermPrivateDnsCnameRecord_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateDataAzurermPrivateDnsCnameRecord_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermPrivateDnsCnameRecord_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPrivateDnsCnameRecord) validateSetIdParameters(val *string) error {
 	return nil
 }

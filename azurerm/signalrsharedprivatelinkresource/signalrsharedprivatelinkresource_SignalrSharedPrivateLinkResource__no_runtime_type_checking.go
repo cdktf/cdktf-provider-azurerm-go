@@ -60,6 +60,14 @@ func validateSignalrSharedPrivateLinkResource_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateSignalrSharedPrivateLinkResource_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSignalrSharedPrivateLinkResource_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SignalrSharedPrivateLinkResource) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

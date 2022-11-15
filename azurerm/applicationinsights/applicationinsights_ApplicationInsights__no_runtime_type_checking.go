@@ -60,6 +60,14 @@ func validateApplicationInsights_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApplicationInsights_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApplicationInsights_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationInsights) validateSetApplicationTypeParameters(val *string) error {
 	return nil
 }

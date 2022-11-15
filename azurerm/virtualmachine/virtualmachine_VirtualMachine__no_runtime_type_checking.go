@@ -104,6 +104,14 @@ func validateVirtualMachine_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVirtualMachine_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualMachine_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualMachine) validateSetAvailabilitySetIdParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDataAzurermServicebusNamespace_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataAzurermServicebusNamespace_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermServicebusNamespace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermServicebusNamespace) validateSetIdParameters(val *string) error {
 	return nil
 }

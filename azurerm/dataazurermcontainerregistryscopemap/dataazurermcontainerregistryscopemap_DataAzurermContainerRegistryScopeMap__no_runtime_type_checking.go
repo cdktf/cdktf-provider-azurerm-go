@@ -60,6 +60,14 @@ func validateDataAzurermContainerRegistryScopeMap_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDataAzurermContainerRegistryScopeMap_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermContainerRegistryScopeMap_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermContainerRegistryScopeMap) validateSetContainerRegistryNameParameters(val *string) error {
 	return nil
 }

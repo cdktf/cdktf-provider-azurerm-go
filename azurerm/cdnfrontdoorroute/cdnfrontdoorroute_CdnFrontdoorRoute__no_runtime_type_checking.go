@@ -64,6 +64,14 @@ func validateCdnFrontdoorRoute_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCdnFrontdoorRoute_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCdnFrontdoorRoute_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnFrontdoorRoute) validateSetCdnFrontdoorCustomDomainIdsParameters(val *[]*string) error {
 	return nil
 }

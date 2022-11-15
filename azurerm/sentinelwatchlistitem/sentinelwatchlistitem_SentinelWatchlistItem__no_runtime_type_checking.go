@@ -60,6 +60,14 @@ func validateSentinelWatchlistItem_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSentinelWatchlistItem_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSentinelWatchlistItem_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelWatchlistItem) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

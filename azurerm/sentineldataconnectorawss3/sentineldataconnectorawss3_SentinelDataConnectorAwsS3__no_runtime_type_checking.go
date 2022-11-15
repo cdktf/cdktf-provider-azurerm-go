@@ -60,6 +60,14 @@ func validateSentinelDataConnectorAwsS3_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateSentinelDataConnectorAwsS3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSentinelDataConnectorAwsS3_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorAwsS3) validateSetAwsRoleArnParameters(val *string) error {
 	return nil
 }

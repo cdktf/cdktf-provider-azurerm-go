@@ -130,6 +130,22 @@ func validateContainerRegistryWebhook_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateContainerRegistryWebhook_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateContainerRegistryWebhook_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerRegistryWebhook) validateSetActionsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -60,6 +60,14 @@ func validateDiskAccess_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDiskAccess_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDiskAccess_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DiskAccess) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDataFactoryLinkedServiceWeb_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataFactoryLinkedServiceWeb_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceWeb_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceWeb) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

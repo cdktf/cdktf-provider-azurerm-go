@@ -60,6 +60,14 @@ func validateDataAzurermNetworkServiceTags_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataAzurermNetworkServiceTags_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermNetworkServiceTags_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermNetworkServiceTags) validateSetIdParameters(val *string) error {
 	return nil
 }

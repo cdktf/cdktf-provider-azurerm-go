@@ -60,6 +60,14 @@ func validateStreamAnalyticsOutputPowerbi_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateStreamAnalyticsOutputPowerbi_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStreamAnalyticsOutputPowerbi_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsOutputPowerbi) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

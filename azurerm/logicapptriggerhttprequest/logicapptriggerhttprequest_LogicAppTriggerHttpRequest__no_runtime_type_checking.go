@@ -60,6 +60,14 @@ func validateLogicAppTriggerHttpRequest_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateLogicAppTriggerHttpRequest_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogicAppTriggerHttpRequest_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppTriggerHttpRequest) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

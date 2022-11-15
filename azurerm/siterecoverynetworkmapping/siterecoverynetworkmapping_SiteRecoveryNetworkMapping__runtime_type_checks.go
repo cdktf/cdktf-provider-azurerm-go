@@ -130,6 +130,22 @@ func validateSiteRecoveryNetworkMapping_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateSiteRecoveryNetworkMapping_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateSiteRecoveryNetworkMapping_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SiteRecoveryNetworkMapping) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

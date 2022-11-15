@@ -60,6 +60,14 @@ func validateSecurityCenterSubscriptionPricing_IsConstructParameters(x interface
 	return nil
 }
 
+func validateSecurityCenterSubscriptionPricing_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecurityCenterSubscriptionPricing_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityCenterSubscriptionPricing) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

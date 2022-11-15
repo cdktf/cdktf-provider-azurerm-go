@@ -68,6 +68,14 @@ func validateServicebusNamespace_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServicebusNamespace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicebusNamespace_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicebusNamespace) validateSetCapacityParameters(val *float64) error {
 	return nil
 }

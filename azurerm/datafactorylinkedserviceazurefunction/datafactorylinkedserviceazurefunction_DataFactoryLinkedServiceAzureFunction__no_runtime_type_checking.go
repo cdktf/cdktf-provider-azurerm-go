@@ -64,6 +64,14 @@ func validateDataFactoryLinkedServiceAzureFunction_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDataFactoryLinkedServiceAzureFunction_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceAzureFunction_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceAzureFunction) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package logicappintegrationaccountsession
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/logicappintegrationaccountsession/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/logicappintegrationaccountsession/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -579,6 +579,44 @@ func LogicAppIntegrationAccountSession_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.logicAppIntegrationAccountSession.LogicAppIntegrationAccountSession",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LogicAppIntegrationAccountSession_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLogicAppIntegrationAccountSession_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.logicAppIntegrationAccountSession.LogicAppIntegrationAccountSession",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LogicAppIntegrationAccountSession_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLogicAppIntegrationAccountSession_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.logicAppIntegrationAccountSession.LogicAppIntegrationAccountSession",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

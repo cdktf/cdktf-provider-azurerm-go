@@ -68,6 +68,14 @@ func validateSubscriptionCostManagementExport_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateSubscriptionCostManagementExport_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSubscriptionCostManagementExport_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SubscriptionCostManagementExport) validateSetActiveParameters(val interface{}) error {
 	return nil
 }

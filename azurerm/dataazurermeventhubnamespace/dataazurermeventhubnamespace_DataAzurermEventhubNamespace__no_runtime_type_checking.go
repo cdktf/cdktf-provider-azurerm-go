@@ -60,6 +60,14 @@ func validateDataAzurermEventhubNamespace_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataAzurermEventhubNamespace_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermEventhubNamespace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermEventhubNamespace) validateSetIdParameters(val *string) error {
 	return nil
 }

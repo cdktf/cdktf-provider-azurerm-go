@@ -60,6 +60,14 @@ func validateApiManagementProductTag_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateApiManagementProductTag_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementProductTag_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementProductTag) validateSetApiManagementNameParameters(val *string) error {
 	return nil
 }

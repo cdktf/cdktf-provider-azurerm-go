@@ -64,6 +64,14 @@ func validateDataFactoryDatasetSqlServerTable_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateDataFactoryDatasetSqlServerTable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryDatasetSqlServerTable_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryDatasetSqlServerTable) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

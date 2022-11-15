@@ -60,6 +60,14 @@ func validateDataAzurermCdnFrontdoorFirewallPolicy_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDataAzurermCdnFrontdoorFirewallPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermCdnFrontdoorFirewallPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermCdnFrontdoorFirewallPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

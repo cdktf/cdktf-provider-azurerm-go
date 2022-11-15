@@ -64,6 +64,14 @@ func validateSecurityCenterAssessment_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateSecurityCenterAssessment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecurityCenterAssessment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityCenterAssessment) validateSetAdditionalDataParameters(val *map[string]*string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateMaintenanceAssignmentDedicatedHost_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateMaintenanceAssignmentDedicatedHost_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMaintenanceAssignmentDedicatedHost_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MaintenanceAssignmentDedicatedHost) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

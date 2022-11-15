@@ -2,10 +2,10 @@ package datafactoryintegrationruntimeazure
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/datafactoryintegrationruntimeazure/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/datafactoryintegrationruntimeazure/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -755,6 +755,44 @@ func DataFactoryIntegrationRuntimeAzure_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.dataFactoryIntegrationRuntimeAzure.DataFactoryIntegrationRuntimeAzure",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataFactoryIntegrationRuntimeAzure_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataFactoryIntegrationRuntimeAzure_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataFactoryIntegrationRuntimeAzure.DataFactoryIntegrationRuntimeAzure",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataFactoryIntegrationRuntimeAzure_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataFactoryIntegrationRuntimeAzure_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataFactoryIntegrationRuntimeAzure.DataFactoryIntegrationRuntimeAzure",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -60,6 +60,14 @@ func validateMysqlVirtualNetworkRule_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateMysqlVirtualNetworkRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMysqlVirtualNetworkRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MysqlVirtualNetworkRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

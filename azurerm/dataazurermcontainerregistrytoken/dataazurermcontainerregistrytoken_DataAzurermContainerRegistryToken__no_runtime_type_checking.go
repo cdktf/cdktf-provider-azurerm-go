@@ -60,6 +60,14 @@ func validateDataAzurermContainerRegistryToken_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataAzurermContainerRegistryToken_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermContainerRegistryToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermContainerRegistryToken) validateSetContainerRegistryNameParameters(val *string) error {
 	return nil
 }

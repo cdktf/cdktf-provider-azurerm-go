@@ -60,6 +60,14 @@ func validateIpGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIpGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIpGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IpGroup) validateSetCidrsParameters(val *[]*string) error {
 	return nil
 }

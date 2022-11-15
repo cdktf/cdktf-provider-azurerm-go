@@ -2,10 +2,10 @@ package botwebapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/botwebapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/botwebapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -893,6 +893,44 @@ func BotWebApp_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.botWebApp.BotWebApp",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BotWebApp_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBotWebApp_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.botWebApp.BotWebApp",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BotWebApp_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBotWebApp_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.botWebApp.BotWebApp",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

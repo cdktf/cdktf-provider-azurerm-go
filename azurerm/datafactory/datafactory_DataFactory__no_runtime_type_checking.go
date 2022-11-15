@@ -76,6 +76,14 @@ func validateDataFactory_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataFactory_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactory_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactory) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

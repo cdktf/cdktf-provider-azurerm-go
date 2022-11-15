@@ -64,6 +64,14 @@ func validateDigitalTwinsInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDigitalTwinsInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDigitalTwinsInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DigitalTwinsInstance) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

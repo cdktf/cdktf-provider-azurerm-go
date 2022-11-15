@@ -68,6 +68,14 @@ func validateLighthouseDefinition_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLighthouseDefinition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLighthouseDefinition_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LighthouseDefinition) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package cosmosdbcassandratable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/cosmosdbcassandratable/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/cosmosdbcassandratable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -663,6 +663,44 @@ func CosmosdbCassandraTable_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTable",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CosmosdbCassandraTable_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCosmosdbCassandraTable_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTable",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CosmosdbCassandraTable_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCosmosdbCassandraTable_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTable",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

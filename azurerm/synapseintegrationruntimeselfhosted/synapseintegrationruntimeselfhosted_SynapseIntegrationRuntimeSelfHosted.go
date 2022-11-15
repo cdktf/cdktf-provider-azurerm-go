@@ -2,10 +2,10 @@ package synapseintegrationruntimeselfhosted
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/synapseintegrationruntimeselfhosted/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/synapseintegrationruntimeselfhosted/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -568,6 +568,44 @@ func SynapseIntegrationRuntimeSelfHosted_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.synapseIntegrationRuntimeSelfHosted.SynapseIntegrationRuntimeSelfHosted",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SynapseIntegrationRuntimeSelfHosted_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSynapseIntegrationRuntimeSelfHosted_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.synapseIntegrationRuntimeSelfHosted.SynapseIntegrationRuntimeSelfHosted",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SynapseIntegrationRuntimeSelfHosted_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSynapseIntegrationRuntimeSelfHosted_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.synapseIntegrationRuntimeSelfHosted.SynapseIntegrationRuntimeSelfHosted",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -130,6 +130,22 @@ func validateSynapseWorkspaceAadAdminA_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateSynapseWorkspaceAadAdminA_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateSynapseWorkspaceAadAdminA_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SynapseWorkspaceAadAdminA) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

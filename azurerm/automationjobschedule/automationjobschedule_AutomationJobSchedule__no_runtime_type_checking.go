@@ -60,6 +60,14 @@ func validateAutomationJobSchedule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAutomationJobSchedule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAutomationJobSchedule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationJobSchedule) validateSetAutomationAccountNameParameters(val *string) error {
 	return nil
 }

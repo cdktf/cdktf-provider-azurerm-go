@@ -60,6 +60,14 @@ func validateDataAzurermMachineLearningWorkspace_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataAzurermMachineLearningWorkspace_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermMachineLearningWorkspace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMachineLearningWorkspace) validateSetIdParameters(val *string) error {
 	return nil
 }

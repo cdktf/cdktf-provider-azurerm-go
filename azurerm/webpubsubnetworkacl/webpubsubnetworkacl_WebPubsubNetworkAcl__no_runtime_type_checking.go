@@ -68,6 +68,14 @@ func validateWebPubsubNetworkAcl_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWebPubsubNetworkAcl_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWebPubsubNetworkAcl_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WebPubsubNetworkAcl) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

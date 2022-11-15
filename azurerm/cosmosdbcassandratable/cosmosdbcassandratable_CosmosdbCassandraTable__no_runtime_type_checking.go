@@ -68,6 +68,14 @@ func validateCosmosdbCassandraTable_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCosmosdbCassandraTable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCosmosdbCassandraTable_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbCassandraTable) validateSetAnalyticalStorageTtlParameters(val *float64) error {
 	return nil
 }

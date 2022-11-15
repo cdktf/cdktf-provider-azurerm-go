@@ -60,6 +60,14 @@ func validateSentinelDataConnectorAzureSecurityCenter_IsConstructParameters(x in
 	return nil
 }
 
+func validateSentinelDataConnectorAzureSecurityCenter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSentinelDataConnectorAzureSecurityCenter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorAzureSecurityCenter) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

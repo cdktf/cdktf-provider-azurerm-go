@@ -130,6 +130,22 @@ func validateApiManagementIdentityProviderAad_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateApiManagementIdentityProviderAad_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateApiManagementIdentityProviderAad_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementIdentityProviderAad) validateSetAllowedTenantsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

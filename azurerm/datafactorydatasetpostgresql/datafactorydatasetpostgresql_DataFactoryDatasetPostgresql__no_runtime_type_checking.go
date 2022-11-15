@@ -64,6 +64,14 @@ func validateDataFactoryDatasetPostgresql_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataFactoryDatasetPostgresql_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryDatasetPostgresql_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryDatasetPostgresql) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

@@ -152,6 +152,22 @@ func validateResourceGroupCostManagementExport_IsConstructParameters(x interface
 	return nil
 }
 
+func validateResourceGroupCostManagementExport_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateResourceGroupCostManagementExport_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ResourceGroupCostManagementExport) validateSetActiveParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -60,6 +60,14 @@ func validateIothubEndpointEventhub_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIothubEndpointEventhub_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIothubEndpointEventhub_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubEndpointEventhub) validateSetAuthenticationTypeParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateSecurityCenterContact_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSecurityCenterContact_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecurityCenterContact_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityCenterContact) validateSetAlertNotificationsParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateOrbitalContactProfile_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOrbitalContactProfile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOrbitalContactProfile_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrbitalContactProfile) validateSetAutoTrackingParameters(val *string) error {
 	return nil
 }

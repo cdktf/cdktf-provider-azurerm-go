@@ -60,6 +60,14 @@ func validateVmwareCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVmwareCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVmwareCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VmwareCluster) validateSetClusterNodeCountParameters(val *float64) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDataAzurermAppConfigurationKeys_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateDataAzurermAppConfigurationKeys_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermAppConfigurationKeys_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermAppConfigurationKeys) validateSetConfigurationStoreIdParameters(val *string) error {
 	return nil
 }

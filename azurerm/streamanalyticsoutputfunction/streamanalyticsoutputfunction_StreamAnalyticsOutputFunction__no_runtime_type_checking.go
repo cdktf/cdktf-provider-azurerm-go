@@ -60,6 +60,14 @@ func validateStreamAnalyticsOutputFunction_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateStreamAnalyticsOutputFunction_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStreamAnalyticsOutputFunction_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsOutputFunction) validateSetApiKeyParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDataAzurermApiManagementUser_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataAzurermApiManagementUser_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermApiManagementUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermApiManagementUser) validateSetApiManagementNameParameters(val *string) error {
 	return nil
 }

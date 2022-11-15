@@ -68,6 +68,14 @@ func validateStreamAnalyticsJob_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStreamAnalyticsJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStreamAnalyticsJob_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsJob) validateSetCompatibilityLevelParameters(val *string) error {
 	return nil
 }

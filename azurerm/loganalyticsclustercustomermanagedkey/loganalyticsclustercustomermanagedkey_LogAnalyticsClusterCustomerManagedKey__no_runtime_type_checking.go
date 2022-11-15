@@ -60,6 +60,14 @@ func validateLogAnalyticsClusterCustomerManagedKey_IsConstructParameters(x inter
 	return nil
 }
 
+func validateLogAnalyticsClusterCustomerManagedKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogAnalyticsClusterCustomerManagedKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsClusterCustomerManagedKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

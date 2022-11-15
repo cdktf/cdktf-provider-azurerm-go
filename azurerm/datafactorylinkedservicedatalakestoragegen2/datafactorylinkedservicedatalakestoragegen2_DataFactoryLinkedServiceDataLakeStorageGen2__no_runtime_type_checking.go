@@ -60,6 +60,14 @@ func validateDataFactoryLinkedServiceDataLakeStorageGen2_IsConstructParameters(x
 	return nil
 }
 
+func validateDataFactoryLinkedServiceDataLakeStorageGen2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceDataLakeStorageGen2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

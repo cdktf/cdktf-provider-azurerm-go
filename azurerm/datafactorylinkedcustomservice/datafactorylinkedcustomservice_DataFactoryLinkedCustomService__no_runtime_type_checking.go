@@ -64,6 +64,14 @@ func validateDataFactoryLinkedCustomService_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataFactoryLinkedCustomService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryLinkedCustomService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedCustomService) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

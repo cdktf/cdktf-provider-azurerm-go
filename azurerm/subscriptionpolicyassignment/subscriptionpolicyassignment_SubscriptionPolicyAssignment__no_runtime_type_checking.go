@@ -68,6 +68,14 @@ func validateSubscriptionPolicyAssignment_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateSubscriptionPolicyAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSubscriptionPolicyAssignment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SubscriptionPolicyAssignment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

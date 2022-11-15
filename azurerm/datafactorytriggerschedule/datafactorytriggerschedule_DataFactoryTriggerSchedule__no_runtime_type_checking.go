@@ -68,6 +68,14 @@ func validateDataFactoryTriggerSchedule_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataFactoryTriggerSchedule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryTriggerSchedule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryTriggerSchedule) validateSetActivatedParameters(val interface{}) error {
 	return nil
 }

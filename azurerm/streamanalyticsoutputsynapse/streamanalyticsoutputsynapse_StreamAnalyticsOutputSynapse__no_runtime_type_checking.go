@@ -60,6 +60,14 @@ func validateStreamAnalyticsOutputSynapse_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateStreamAnalyticsOutputSynapse_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStreamAnalyticsOutputSynapse_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsOutputSynapse) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

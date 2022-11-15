@@ -68,6 +68,14 @@ func validateApiManagementLogger_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApiManagementLogger_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementLogger_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementLogger) validateSetApiManagementNameParameters(val *string) error {
 	return nil
 }

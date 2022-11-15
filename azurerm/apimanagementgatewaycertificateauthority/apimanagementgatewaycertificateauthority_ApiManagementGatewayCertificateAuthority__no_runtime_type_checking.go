@@ -60,6 +60,14 @@ func validateApiManagementGatewayCertificateAuthority_IsConstructParameters(x in
 	return nil
 }
 
+func validateApiManagementGatewayCertificateAuthority_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementGatewayCertificateAuthority_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementGatewayCertificateAuthority) validateSetApiManagementIdParameters(val *string) error {
 	return nil
 }

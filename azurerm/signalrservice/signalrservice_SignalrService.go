@@ -2,10 +2,10 @@ package signalrservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/signalrservice/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/signalrservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -903,6 +903,44 @@ func SignalrService_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.signalrService.SignalrService",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SignalrService_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSignalrService_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.signalrService.SignalrService",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SignalrService_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSignalrService_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.signalrService.SignalrService",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

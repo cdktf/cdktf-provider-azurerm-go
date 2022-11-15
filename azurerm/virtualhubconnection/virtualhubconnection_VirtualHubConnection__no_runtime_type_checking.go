@@ -64,6 +64,14 @@ func validateVirtualHubConnection_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVirtualHubConnection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualHubConnection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualHubConnection) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

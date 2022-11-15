@@ -60,6 +60,14 @@ func validateDataProtectionBackupPolicyBlobStorage_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDataProtectionBackupPolicyBlobStorage_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataProtectionBackupPolicyBlobStorage_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -72,6 +72,14 @@ func validateIothubDps_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIothubDps_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIothubDps_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubDps) validateSetAllocationPolicyParameters(val *string) error {
 	return nil
 }

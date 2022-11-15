@@ -60,6 +60,14 @@ func validateDataAzurermStreamAnalyticsJob_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataAzurermStreamAnalyticsJob_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermStreamAnalyticsJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermStreamAnalyticsJob) validateSetIdParameters(val *string) error {
 	return nil
 }

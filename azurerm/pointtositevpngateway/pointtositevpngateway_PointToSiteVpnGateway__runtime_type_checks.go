@@ -141,6 +141,22 @@ func validatePointToSiteVpnGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePointToSiteVpnGateway_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validatePointToSiteVpnGateway_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PointToSiteVpnGateway) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

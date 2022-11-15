@@ -60,6 +60,14 @@ func validateApiManagementIdentityProviderMicrosoft_IsConstructParameters(x inte
 	return nil
 }
 
+func validateApiManagementIdentityProviderMicrosoft_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementIdentityProviderMicrosoft_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementIdentityProviderMicrosoft) validateSetApiManagementNameParameters(val *string) error {
 	return nil
 }

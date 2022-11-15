@@ -68,6 +68,14 @@ func validateDevTestLinuxVirtualMachine_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDevTestLinuxVirtualMachine_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDevTestLinuxVirtualMachine_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevTestLinuxVirtualMachine) validateSetAllowClaimParameters(val interface{}) error {
 	return nil
 }

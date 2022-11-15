@@ -76,6 +76,14 @@ func validateCdnEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCdnEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCdnEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

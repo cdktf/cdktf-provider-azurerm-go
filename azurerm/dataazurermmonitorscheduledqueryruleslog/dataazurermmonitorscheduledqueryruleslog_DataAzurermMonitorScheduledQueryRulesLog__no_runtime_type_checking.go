@@ -60,6 +60,14 @@ func validateDataAzurermMonitorScheduledQueryRulesLog_IsConstructParameters(x in
 	return nil
 }
 
+func validateDataAzurermMonitorScheduledQueryRulesLog_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermMonitorScheduledQueryRulesLog_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMonitorScheduledQueryRulesLog) validateSetIdParameters(val *string) error {
 	return nil
 }

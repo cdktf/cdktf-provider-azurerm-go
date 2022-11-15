@@ -72,6 +72,14 @@ func validateDataFactoryFlowletDataFlow_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataFactoryFlowletDataFlow_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryFlowletDataFlow_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryFlowletDataFlow) validateSetAnnotationsParameters(val *[]*string) error {
 	return nil
 }

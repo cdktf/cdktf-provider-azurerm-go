@@ -2,10 +2,10 @@ package diskencryptionset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/diskencryptionset/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/diskencryptionset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -742,6 +742,44 @@ func DiskEncryptionSet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.diskEncryptionSet.DiskEncryptionSet",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DiskEncryptionSet_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDiskEncryptionSet_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.diskEncryptionSet.DiskEncryptionSet",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DiskEncryptionSet_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDiskEncryptionSet_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.diskEncryptionSet.DiskEncryptionSet",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

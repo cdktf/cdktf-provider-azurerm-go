@@ -60,6 +60,14 @@ func validateStaticSiteCustomDomain_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStaticSiteCustomDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStaticSiteCustomDomain_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StaticSiteCustomDomain) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

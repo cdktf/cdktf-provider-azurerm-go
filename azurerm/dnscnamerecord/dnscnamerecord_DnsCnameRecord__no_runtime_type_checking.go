@@ -60,6 +60,14 @@ func validateDnsCnameRecord_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDnsCnameRecord_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDnsCnameRecord_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DnsCnameRecord) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

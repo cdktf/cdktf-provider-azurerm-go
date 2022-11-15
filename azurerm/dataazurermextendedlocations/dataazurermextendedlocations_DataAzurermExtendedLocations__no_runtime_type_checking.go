@@ -60,6 +60,14 @@ func validateDataAzurermExtendedLocations_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataAzurermExtendedLocations_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermExtendedLocations_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermExtendedLocations) validateSetIdParameters(val *string) error {
 	return nil
 }

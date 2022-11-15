@@ -76,6 +76,14 @@ func validateDataFactoryDatasetBinary_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataFactoryDatasetBinary_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryDatasetBinary_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryDatasetBinary) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

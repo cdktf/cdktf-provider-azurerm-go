@@ -60,6 +60,14 @@ func validateSynapseWorkspaceKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSynapseWorkspaceKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynapseWorkspaceKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseWorkspaceKey) validateSetActiveParameters(val interface{}) error {
 	return nil
 }

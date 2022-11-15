@@ -60,6 +60,14 @@ func validateApiManagementIdentityProviderAad_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateApiManagementIdentityProviderAad_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementIdentityProviderAad_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementIdentityProviderAad) validateSetAllowedTenantsParameters(val *[]*string) error {
 	return nil
 }

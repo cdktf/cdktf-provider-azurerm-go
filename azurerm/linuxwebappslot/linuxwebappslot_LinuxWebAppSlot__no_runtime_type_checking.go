@@ -88,6 +88,14 @@ func validateLinuxWebAppSlot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLinuxWebAppSlot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLinuxWebAppSlot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxWebAppSlot) validateSetAppServiceIdParameters(val *string) error {
 	return nil
 }

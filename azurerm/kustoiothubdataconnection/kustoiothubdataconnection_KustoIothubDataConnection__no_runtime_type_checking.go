@@ -60,6 +60,14 @@ func validateKustoIothubDataConnection_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateKustoIothubDataConnection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKustoIothubDataConnection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoIothubDataConnection) validateSetClusterNameParameters(val *string) error {
 	return nil
 }

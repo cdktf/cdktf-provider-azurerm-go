@@ -64,6 +64,14 @@ func validateDataFactoryLinkedServiceAzureFileStorage_IsConstructParameters(x in
 	return nil
 }
 
+func validateDataFactoryLinkedServiceAzureFileStorage_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceAzureFileStorage_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceAzureFileStorage) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

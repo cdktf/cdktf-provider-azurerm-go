@@ -60,6 +60,14 @@ func validateDataAzurermManagedApplicationDefinition_IsConstructParameters(x int
 	return nil
 }
 
+func validateDataAzurermManagedApplicationDefinition_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermManagedApplicationDefinition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermManagedApplicationDefinition) validateSetIdParameters(val *string) error {
 	return nil
 }

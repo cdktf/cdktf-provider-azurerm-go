@@ -64,6 +64,14 @@ func validateEventhub_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEventhub_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEventhub_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Eventhub) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

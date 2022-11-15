@@ -60,6 +60,14 @@ func validateSynapseWorkspaceExtendedAuditingPolicy_IsConstructParameters(x inte
 	return nil
 }
 
+func validateSynapseWorkspaceExtendedAuditingPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynapseWorkspaceExtendedAuditingPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseWorkspaceExtendedAuditingPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

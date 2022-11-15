@@ -2,10 +2,10 @@ package applicationinsightsanalyticsitem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/applicationinsightsanalyticsitem/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/applicationinsightsanalyticsitem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -681,6 +681,44 @@ func ApplicationInsightsAnalyticsItem_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.applicationInsightsAnalyticsItem.ApplicationInsightsAnalyticsItem",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApplicationInsightsAnalyticsItem_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApplicationInsightsAnalyticsItem_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.applicationInsightsAnalyticsItem.ApplicationInsightsAnalyticsItem",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApplicationInsightsAnalyticsItem_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApplicationInsightsAnalyticsItem_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.applicationInsightsAnalyticsItem.ApplicationInsightsAnalyticsItem",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

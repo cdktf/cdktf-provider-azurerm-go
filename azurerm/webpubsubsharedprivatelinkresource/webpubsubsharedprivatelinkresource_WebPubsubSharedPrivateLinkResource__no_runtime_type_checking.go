@@ -60,6 +60,14 @@ func validateWebPubsubSharedPrivateLinkResource_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateWebPubsubSharedPrivateLinkResource_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWebPubsubSharedPrivateLinkResource_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WebPubsubSharedPrivateLinkResource) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -130,6 +130,22 @@ func validateAutomationVariableBool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAutomationVariableBool_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateAutomationVariableBool_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AutomationVariableBool) validateSetAutomationAccountNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

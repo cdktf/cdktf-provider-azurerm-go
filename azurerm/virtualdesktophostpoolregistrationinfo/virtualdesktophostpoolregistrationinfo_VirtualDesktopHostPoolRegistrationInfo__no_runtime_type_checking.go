@@ -60,6 +60,14 @@ func validateVirtualDesktopHostPoolRegistrationInfo_IsConstructParameters(x inte
 	return nil
 }
 
+func validateVirtualDesktopHostPoolRegistrationInfo_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualDesktopHostPoolRegistrationInfo_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualDesktopHostPoolRegistrationInfo) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

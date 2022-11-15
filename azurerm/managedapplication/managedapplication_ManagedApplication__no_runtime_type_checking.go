@@ -64,6 +64,14 @@ func validateManagedApplication_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateManagedApplication_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateManagedApplication_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedApplication) validateSetApplicationDefinitionIdParameters(val *string) error {
 	return nil
 }

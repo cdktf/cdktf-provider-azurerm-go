@@ -64,6 +64,14 @@ func validateLogzSubAccountTagRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLogzSubAccountTagRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogzSubAccountTagRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogzSubAccountTagRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

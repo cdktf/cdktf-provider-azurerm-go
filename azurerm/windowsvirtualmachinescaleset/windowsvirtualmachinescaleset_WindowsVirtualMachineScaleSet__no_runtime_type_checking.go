@@ -144,6 +144,14 @@ func validateWindowsVirtualMachineScaleSet_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateWindowsVirtualMachineScaleSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWindowsVirtualMachineScaleSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsVirtualMachineScaleSet) validateSetAdminPasswordParameters(val *string) error {
 	return nil
 }

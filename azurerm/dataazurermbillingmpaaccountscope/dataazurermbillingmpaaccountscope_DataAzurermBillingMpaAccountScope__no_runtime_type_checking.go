@@ -60,6 +60,14 @@ func validateDataAzurermBillingMpaAccountScope_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataAzurermBillingMpaAccountScope_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermBillingMpaAccountScope_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermBillingMpaAccountScope) validateSetBillingAccountNameParameters(val *string) error {
 	return nil
 }

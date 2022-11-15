@@ -68,6 +68,14 @@ func validateTrafficManagerNestedEndpoint_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateTrafficManagerNestedEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTrafficManagerNestedEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TrafficManagerNestedEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

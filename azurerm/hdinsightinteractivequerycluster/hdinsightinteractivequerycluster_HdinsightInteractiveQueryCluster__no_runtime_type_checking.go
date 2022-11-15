@@ -108,6 +108,14 @@ func validateHdinsightInteractiveQueryCluster_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateHdinsightInteractiveQueryCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHdinsightInteractiveQueryCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HdinsightInteractiveQueryCluster) validateSetClusterVersionParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDataAzurermPrivateDnsZoneVirtualNetworkLink_IsConstructParameters(x
 	return nil
 }
 
+func validateDataAzurermPrivateDnsZoneVirtualNetworkLink_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermPrivateDnsZoneVirtualNetworkLink_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPrivateDnsZoneVirtualNetworkLink) validateSetIdParameters(val *string) error {
 	return nil
 }

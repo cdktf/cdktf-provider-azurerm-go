@@ -64,6 +64,14 @@ func validateDnsCaaRecord_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDnsCaaRecord_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDnsCaaRecord_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DnsCaaRecord) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

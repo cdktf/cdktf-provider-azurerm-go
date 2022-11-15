@@ -60,6 +60,14 @@ func validateEventhubConsumerGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEventhubConsumerGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEventhubConsumerGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventhubConsumerGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

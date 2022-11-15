@@ -130,6 +130,22 @@ func validateExpressRouteCircuitAuthorization_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateExpressRouteCircuitAuthorization_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateExpressRouteCircuitAuthorization_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRouteCircuitAuthorization) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

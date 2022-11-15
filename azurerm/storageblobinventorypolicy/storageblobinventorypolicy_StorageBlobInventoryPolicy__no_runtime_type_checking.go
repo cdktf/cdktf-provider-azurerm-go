@@ -64,6 +64,14 @@ func validateStorageBlobInventoryPolicy_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateStorageBlobInventoryPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageBlobInventoryPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBlobInventoryPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

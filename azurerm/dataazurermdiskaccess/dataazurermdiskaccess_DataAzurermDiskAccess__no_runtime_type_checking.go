@@ -60,6 +60,14 @@ func validateDataAzurermDiskAccess_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAzurermDiskAccess_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermDiskAccess_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDiskAccess) validateSetIdParameters(val *string) error {
 	return nil
 }

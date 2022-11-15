@@ -2,10 +2,10 @@ package mysqlfirewallrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/mysqlfirewallrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/mysqlfirewallrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -613,6 +613,44 @@ func MysqlFirewallRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.mysqlFirewallRule.MysqlFirewallRule",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MysqlFirewallRule_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMysqlFirewallRule_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.mysqlFirewallRule.MysqlFirewallRule",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MysqlFirewallRule_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMysqlFirewallRule_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.mysqlFirewallRule.MysqlFirewallRule",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

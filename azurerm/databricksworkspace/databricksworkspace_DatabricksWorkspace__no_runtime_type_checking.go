@@ -64,6 +64,14 @@ func validateDatabricksWorkspace_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDatabricksWorkspace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatabricksWorkspace_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabricksWorkspace) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateAvailabilitySet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAvailabilitySet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAvailabilitySet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AvailabilitySet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

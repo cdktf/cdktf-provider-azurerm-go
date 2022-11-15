@@ -60,6 +60,14 @@ func validateBotChannelSms_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBotChannelSms_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBotChannelSms_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelSms) validateSetBotNameParameters(val *string) error {
 	return nil
 }

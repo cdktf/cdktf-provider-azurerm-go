@@ -60,6 +60,14 @@ func validateSentinelDataConnectorOffice365_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateSentinelDataConnectorOffice365_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSentinelDataConnectorOffice365_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorOffice365) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

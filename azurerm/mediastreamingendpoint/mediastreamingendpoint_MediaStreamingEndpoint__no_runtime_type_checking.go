@@ -68,6 +68,14 @@ func validateMediaStreamingEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMediaStreamingEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMediaStreamingEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaStreamingEndpoint) validateSetAutoStartEnabledParameters(val interface{}) error {
 	return nil
 }

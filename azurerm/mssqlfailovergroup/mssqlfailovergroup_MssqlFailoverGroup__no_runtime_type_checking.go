@@ -68,6 +68,14 @@ func validateMssqlFailoverGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMssqlFailoverGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMssqlFailoverGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlFailoverGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

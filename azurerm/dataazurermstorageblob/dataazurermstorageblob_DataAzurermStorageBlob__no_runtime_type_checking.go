@@ -60,6 +60,14 @@ func validateDataAzurermStorageBlob_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAzurermStorageBlob_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermStorageBlob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermStorageBlob) validateSetIdParameters(val *string) error {
 	return nil
 }

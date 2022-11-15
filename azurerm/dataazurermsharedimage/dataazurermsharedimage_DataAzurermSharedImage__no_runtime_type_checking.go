@@ -60,6 +60,14 @@ func validateDataAzurermSharedImage_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAzurermSharedImage_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermSharedImage_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermSharedImage) validateSetGalleryNameParameters(val *string) error {
 	return nil
 }

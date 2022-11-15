@@ -64,6 +64,14 @@ func validateStorageManagementPolicy_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateStorageManagementPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageManagementPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageManagementPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

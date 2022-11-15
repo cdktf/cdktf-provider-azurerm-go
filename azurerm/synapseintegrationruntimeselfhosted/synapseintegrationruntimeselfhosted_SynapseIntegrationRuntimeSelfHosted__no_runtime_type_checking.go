@@ -60,6 +60,14 @@ func validateSynapseIntegrationRuntimeSelfHosted_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateSynapseIntegrationRuntimeSelfHosted_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynapseIntegrationRuntimeSelfHosted_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseIntegrationRuntimeSelfHosted) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

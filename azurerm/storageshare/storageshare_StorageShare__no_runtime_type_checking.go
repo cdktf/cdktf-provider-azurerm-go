@@ -64,6 +64,14 @@ func validateStorageShare_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStorageShare_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageShare_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageShare) validateSetAccessTierParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateMssqlServerExtendedAuditingPolicy_IsConstructParameters(x interface
 	return nil
 }
 
+func validateMssqlServerExtendedAuditingPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMssqlServerExtendedAuditingPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlServerExtendedAuditingPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

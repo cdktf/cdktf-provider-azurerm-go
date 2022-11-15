@@ -72,6 +72,14 @@ func validateCustomProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCustomProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCustomProvider_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomProvider) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

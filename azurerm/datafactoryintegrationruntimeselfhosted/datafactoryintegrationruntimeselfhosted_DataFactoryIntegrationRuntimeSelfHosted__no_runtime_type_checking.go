@@ -64,6 +64,14 @@ func validateDataFactoryIntegrationRuntimeSelfHosted_IsConstructParameters(x int
 	return nil
 }
 
+func validateDataFactoryIntegrationRuntimeSelfHosted_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryIntegrationRuntimeSelfHosted_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

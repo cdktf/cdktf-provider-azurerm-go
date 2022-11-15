@@ -60,6 +60,14 @@ func validateDataAzurermNetworkDdosProtectionPlan_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDataAzurermNetworkDdosProtectionPlan_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermNetworkDdosProtectionPlan_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermNetworkDdosProtectionPlan) validateSetIdParameters(val *string) error {
 	return nil
 }

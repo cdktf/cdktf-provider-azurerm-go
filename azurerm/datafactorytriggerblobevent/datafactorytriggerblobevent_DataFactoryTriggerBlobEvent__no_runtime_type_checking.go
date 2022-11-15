@@ -64,6 +64,14 @@ func validateDataFactoryTriggerBlobEvent_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataFactoryTriggerBlobEvent_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryTriggerBlobEvent_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryTriggerBlobEvent) validateSetActivatedParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDataFactoryManagedPrivateEndpoint_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataFactoryManagedPrivateEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryManagedPrivateEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryManagedPrivateEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

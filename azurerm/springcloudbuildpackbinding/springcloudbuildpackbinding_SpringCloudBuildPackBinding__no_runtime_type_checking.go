@@ -64,6 +64,14 @@ func validateSpringCloudBuildPackBinding_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateSpringCloudBuildPackBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpringCloudBuildPackBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudBuildPackBinding) validateSetBindingTypeParameters(val *string) error {
 	return nil
 }

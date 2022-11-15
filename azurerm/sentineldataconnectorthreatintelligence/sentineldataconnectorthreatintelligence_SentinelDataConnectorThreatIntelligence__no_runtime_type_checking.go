@@ -60,6 +60,14 @@ func validateSentinelDataConnectorThreatIntelligence_IsConstructParameters(x int
 	return nil
 }
 
+func validateSentinelDataConnectorThreatIntelligence_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSentinelDataConnectorThreatIntelligence_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorThreatIntelligence) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

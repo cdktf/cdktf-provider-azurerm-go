@@ -76,6 +76,14 @@ func validateCognitiveAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCognitiveAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCognitiveAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitiveAccount) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

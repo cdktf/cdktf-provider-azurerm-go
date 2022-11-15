@@ -60,6 +60,14 @@ func validateVirtualHubRouteTableRouteA_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateVirtualHubRouteTableRouteA_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualHubRouteTableRouteA_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualHubRouteTableRouteA) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

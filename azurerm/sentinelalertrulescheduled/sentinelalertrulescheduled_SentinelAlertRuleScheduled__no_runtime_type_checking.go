@@ -76,6 +76,14 @@ func validateSentinelAlertRuleScheduled_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateSentinelAlertRuleScheduled_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSentinelAlertRuleScheduled_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelAlertRuleScheduled) validateSetAlertRuleTemplateGuidParameters(val *string) error {
 	return nil
 }

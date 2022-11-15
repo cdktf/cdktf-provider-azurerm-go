@@ -60,6 +60,14 @@ func validateDataAzurermNetappPool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAzurermNetappPool_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermNetappPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermNetappPool) validateSetAccountNameParameters(val *string) error {
 	return nil
 }

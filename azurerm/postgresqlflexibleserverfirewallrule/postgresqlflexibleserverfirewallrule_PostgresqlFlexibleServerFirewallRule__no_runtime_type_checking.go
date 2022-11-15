@@ -60,6 +60,14 @@ func validatePostgresqlFlexibleServerFirewallRule_IsConstructParameters(x interf
 	return nil
 }
 
+func validatePostgresqlFlexibleServerFirewallRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePostgresqlFlexibleServerFirewallRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlFlexibleServerFirewallRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

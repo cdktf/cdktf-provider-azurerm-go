@@ -60,6 +60,14 @@ func validateAutomationWatcher_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAutomationWatcher_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAutomationWatcher_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationWatcher) validateSetAutomationAccountIdParameters(val *string) error {
 	return nil
 }

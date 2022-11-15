@@ -2,10 +2,10 @@ package botchannelalexa
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/botchannelalexa/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/botchannelalexa/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -579,6 +579,44 @@ func BotChannelAlexa_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.botChannelAlexa.BotChannelAlexa",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BotChannelAlexa_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBotChannelAlexa_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.botChannelAlexa.BotChannelAlexa",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BotChannelAlexa_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBotChannelAlexa_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.botChannelAlexa.BotChannelAlexa",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

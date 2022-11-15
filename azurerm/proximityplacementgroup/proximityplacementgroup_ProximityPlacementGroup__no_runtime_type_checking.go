@@ -60,6 +60,14 @@ func validateProximityPlacementGroup_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateProximityPlacementGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProximityPlacementGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProximityPlacementGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

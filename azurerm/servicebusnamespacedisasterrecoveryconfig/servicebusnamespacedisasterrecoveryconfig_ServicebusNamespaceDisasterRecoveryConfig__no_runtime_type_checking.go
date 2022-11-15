@@ -60,6 +60,14 @@ func validateServicebusNamespaceDisasterRecoveryConfig_IsConstructParameters(x i
 	return nil
 }
 
+func validateServicebusNamespaceDisasterRecoveryConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicebusNamespaceDisasterRecoveryConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicebusNamespaceDisasterRecoveryConfig) validateSetAliasAuthorizationRuleIdParameters(val *string) error {
 	return nil
 }

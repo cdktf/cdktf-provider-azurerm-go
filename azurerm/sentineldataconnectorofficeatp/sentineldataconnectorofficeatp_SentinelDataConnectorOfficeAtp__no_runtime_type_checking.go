@@ -60,6 +60,14 @@ func validateSentinelDataConnectorOfficeAtp_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateSentinelDataConnectorOfficeAtp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSentinelDataConnectorOfficeAtp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorOfficeAtp) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

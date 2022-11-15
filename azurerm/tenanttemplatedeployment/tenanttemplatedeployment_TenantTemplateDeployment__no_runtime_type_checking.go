@@ -60,6 +60,14 @@ func validateTenantTemplateDeployment_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateTenantTemplateDeployment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTenantTemplateDeployment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TenantTemplateDeployment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

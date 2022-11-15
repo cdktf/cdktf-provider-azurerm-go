@@ -60,6 +60,14 @@ func validateStreamAnalyticsOutputTable_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateStreamAnalyticsOutputTable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStreamAnalyticsOutputTable_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsOutputTable) validateSetBatchSizeParameters(val *float64) error {
 	return nil
 }

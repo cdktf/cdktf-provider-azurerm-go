@@ -64,6 +64,14 @@ func validateStorageAccountNetworkRulesA_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateStorageAccountNetworkRulesA_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageAccountNetworkRulesA_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccountNetworkRulesA) validateSetBypassParameters(val *[]*string) error {
 	return nil
 }

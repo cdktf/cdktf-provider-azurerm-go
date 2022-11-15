@@ -68,6 +68,14 @@ func validateVirtualNetwork_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVirtualNetwork_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualNetwork_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetwork) validateSetAddressSpaceParameters(val *[]*string) error {
 	return nil
 }

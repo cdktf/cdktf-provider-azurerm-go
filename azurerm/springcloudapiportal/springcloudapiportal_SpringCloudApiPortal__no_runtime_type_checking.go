@@ -64,6 +64,14 @@ func validateSpringCloudApiPortal_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSpringCloudApiPortal_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpringCloudApiPortal_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudApiPortal) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

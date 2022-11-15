@@ -2,10 +2,10 @@ package iottimeseriesinsightseventsourceiothub
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/iottimeseriesinsightseventsourceiothub/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/iottimeseriesinsightseventsourceiothub/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -785,6 +785,44 @@ func IotTimeSeriesInsightsEventSourceIothub_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.iotTimeSeriesInsightsEventSourceIothub.IotTimeSeriesInsightsEventSourceIothub",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func IotTimeSeriesInsightsEventSourceIothub_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateIotTimeSeriesInsightsEventSourceIothub_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.iotTimeSeriesInsightsEventSourceIothub.IotTimeSeriesInsightsEventSourceIothub",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func IotTimeSeriesInsightsEventSourceIothub_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateIotTimeSeriesInsightsEventSourceIothub_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.iotTimeSeriesInsightsEventSourceIothub.IotTimeSeriesInsightsEventSourceIothub",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

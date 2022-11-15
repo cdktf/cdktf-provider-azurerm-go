@@ -161,6 +161,22 @@ func validateAnalysisServicesServer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAnalysisServicesServer_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateAnalysisServicesServer_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AnalysisServicesServer) validateSetAdminUsersParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

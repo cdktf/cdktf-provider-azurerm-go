@@ -60,6 +60,14 @@ func validateStorageAccountCustomerManagedKeyA_IsConstructParameters(x interface
 	return nil
 }
 
+func validateStorageAccountCustomerManagedKeyA_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageAccountCustomerManagedKeyA_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

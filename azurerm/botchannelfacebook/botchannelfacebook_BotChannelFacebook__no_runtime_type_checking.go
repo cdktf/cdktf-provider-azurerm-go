@@ -64,6 +64,14 @@ func validateBotChannelFacebook_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBotChannelFacebook_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBotChannelFacebook_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelFacebook) validateSetBotNameParameters(val *string) error {
 	return nil
 }

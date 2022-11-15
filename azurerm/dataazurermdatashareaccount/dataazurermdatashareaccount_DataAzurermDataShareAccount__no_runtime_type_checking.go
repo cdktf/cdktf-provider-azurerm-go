@@ -60,6 +60,14 @@ func validateDataAzurermDataShareAccount_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAzurermDataShareAccount_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermDataShareAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDataShareAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

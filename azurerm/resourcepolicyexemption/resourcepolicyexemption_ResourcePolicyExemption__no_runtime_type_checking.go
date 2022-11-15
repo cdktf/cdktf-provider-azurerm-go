@@ -60,6 +60,14 @@ func validateResourcePolicyExemption_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateResourcePolicyExemption_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateResourcePolicyExemption_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResourcePolicyExemption) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

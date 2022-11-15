@@ -60,6 +60,14 @@ func validateVirtualNetworkPeering_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVirtualNetworkPeering_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualNetworkPeering_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetworkPeering) validateSetAllowForwardedTrafficParameters(val interface{}) error {
 	return nil
 }

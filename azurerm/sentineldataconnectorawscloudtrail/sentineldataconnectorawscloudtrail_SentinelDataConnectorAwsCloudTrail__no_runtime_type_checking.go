@@ -60,6 +60,14 @@ func validateSentinelDataConnectorAwsCloudTrail_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateSentinelDataConnectorAwsCloudTrail_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSentinelDataConnectorAwsCloudTrail_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorAwsCloudTrail) validateSetAwsRoleArnParameters(val *string) error {
 	return nil
 }

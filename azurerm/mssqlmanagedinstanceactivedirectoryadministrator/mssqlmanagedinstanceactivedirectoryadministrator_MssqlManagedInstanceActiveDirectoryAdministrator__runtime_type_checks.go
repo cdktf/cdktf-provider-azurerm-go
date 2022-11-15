@@ -130,6 +130,22 @@ func validateMssqlManagedInstanceActiveDirectoryAdministrator_IsConstructParamet
 	return nil
 }
 
+func validateMssqlManagedInstanceActiveDirectoryAdministrator_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateMssqlManagedInstanceActiveDirectoryAdministrator_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MssqlManagedInstanceActiveDirectoryAdministrator) validateSetAzureadAuthenticationOnlyParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

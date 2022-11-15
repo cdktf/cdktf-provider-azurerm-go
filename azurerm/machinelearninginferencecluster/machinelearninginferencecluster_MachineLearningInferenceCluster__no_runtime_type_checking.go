@@ -68,6 +68,14 @@ func validateMachineLearningInferenceCluster_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateMachineLearningInferenceCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMachineLearningInferenceCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MachineLearningInferenceCluster) validateSetClusterPurposeParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateVirtualMachineExtension_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateVirtualMachineExtension_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualMachineExtension_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualMachineExtension) validateSetAutomaticUpgradeEnabledParameters(val interface{}) error {
 	return nil
 }

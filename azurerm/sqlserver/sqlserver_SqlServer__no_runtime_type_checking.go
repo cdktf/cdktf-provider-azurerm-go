@@ -68,6 +68,14 @@ func validateSqlServer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSqlServer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSqlServer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlServer) validateSetAdministratorLoginParameters(val *string) error {
 	return nil
 }

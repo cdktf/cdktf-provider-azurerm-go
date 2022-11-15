@@ -60,6 +60,14 @@ func validateIntegrationServiceEnvironment_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateIntegrationServiceEnvironment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIntegrationServiceEnvironment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationServiceEnvironment) validateSetAccessEndpointTypeParameters(val *string) error {
 	return nil
 }

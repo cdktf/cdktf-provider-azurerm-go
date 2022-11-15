@@ -72,6 +72,14 @@ func validateMonitorActionRuleSuppression_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateMonitorActionRuleSuppression_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitorActionRuleSuppression_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorActionRuleSuppression) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

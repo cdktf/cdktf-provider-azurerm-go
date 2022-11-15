@@ -64,6 +64,14 @@ func validateAppServiceSourceControlA_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateAppServiceSourceControlA_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppServiceSourceControlA_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceSourceControlA) validateSetAppIdParameters(val *string) error {
 	return nil
 }

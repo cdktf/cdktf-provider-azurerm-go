@@ -60,6 +60,14 @@ func validateSpatialAnchorsAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSpatialAnchorsAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpatialAnchorsAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpatialAnchorsAccount) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

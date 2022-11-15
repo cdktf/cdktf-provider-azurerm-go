@@ -60,6 +60,14 @@ func validateApiManagementIdentityProviderGoogle_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateApiManagementIdentityProviderGoogle_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementIdentityProviderGoogle_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementIdentityProviderGoogle) validateSetApiManagementNameParameters(val *string) error {
 	return nil
 }

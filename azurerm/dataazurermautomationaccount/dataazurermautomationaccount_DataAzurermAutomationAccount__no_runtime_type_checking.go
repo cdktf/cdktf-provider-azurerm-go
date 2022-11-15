@@ -60,6 +60,14 @@ func validateDataAzurermAutomationAccount_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataAzurermAutomationAccount_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermAutomationAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermAutomationAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

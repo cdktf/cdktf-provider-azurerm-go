@@ -68,6 +68,14 @@ func validateVpnGatewayNatRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVpnGatewayNatRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpnGatewayNatRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnGatewayNatRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

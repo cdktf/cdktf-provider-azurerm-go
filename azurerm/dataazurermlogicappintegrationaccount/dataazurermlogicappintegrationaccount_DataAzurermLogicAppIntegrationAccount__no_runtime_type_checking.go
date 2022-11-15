@@ -60,6 +60,14 @@ func validateDataAzurermLogicAppIntegrationAccount_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDataAzurermLogicAppIntegrationAccount_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermLogicAppIntegrationAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermLogicAppIntegrationAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

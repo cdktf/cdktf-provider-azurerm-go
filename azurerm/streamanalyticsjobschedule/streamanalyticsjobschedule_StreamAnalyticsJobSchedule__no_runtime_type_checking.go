@@ -60,6 +60,14 @@ func validateStreamAnalyticsJobSchedule_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateStreamAnalyticsJobSchedule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStreamAnalyticsJobSchedule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsJobSchedule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateDataFactoryLinkedServiceSqlServer_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataFactoryLinkedServiceSqlServer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceSqlServer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceSqlServer) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

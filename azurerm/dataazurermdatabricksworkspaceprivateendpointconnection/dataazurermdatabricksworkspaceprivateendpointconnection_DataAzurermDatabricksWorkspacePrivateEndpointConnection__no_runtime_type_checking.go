@@ -60,6 +60,14 @@ func validateDataAzurermDatabricksWorkspacePrivateEndpointConnection_IsConstruct
 	return nil
 }
 
+func validateDataAzurermDatabricksWorkspacePrivateEndpointConnection_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermDatabricksWorkspacePrivateEndpointConnection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDatabricksWorkspacePrivateEndpointConnection) validateSetIdParameters(val *string) error {
 	return nil
 }

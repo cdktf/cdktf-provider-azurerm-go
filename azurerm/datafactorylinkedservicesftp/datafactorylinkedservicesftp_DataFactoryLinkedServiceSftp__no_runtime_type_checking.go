@@ -60,6 +60,14 @@ func validateDataFactoryLinkedServiceSftp_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataFactoryLinkedServiceSftp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceSftp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceSftp) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

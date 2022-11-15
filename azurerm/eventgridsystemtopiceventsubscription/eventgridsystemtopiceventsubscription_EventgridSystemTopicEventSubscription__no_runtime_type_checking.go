@@ -100,6 +100,14 @@ func validateEventgridSystemTopicEventSubscription_IsConstructParameters(x inter
 	return nil
 }
 
+func validateEventgridSystemTopicEventSubscription_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEventgridSystemTopicEventSubscription_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventgridSystemTopicEventSubscription) validateSetAdvancedFilteringOnArraysEnabledParameters(val interface{}) error {
 	return nil
 }

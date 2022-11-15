@@ -64,6 +64,14 @@ func validateDashboardGrafana_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDashboardGrafana_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDashboardGrafana_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardGrafana) validateSetApiKeyEnabledParameters(val interface{}) error {
 	return nil
 }

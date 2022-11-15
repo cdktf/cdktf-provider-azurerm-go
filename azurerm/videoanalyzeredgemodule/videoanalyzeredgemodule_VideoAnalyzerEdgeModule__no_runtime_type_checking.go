@@ -60,6 +60,14 @@ func validateVideoAnalyzerEdgeModule_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateVideoAnalyzerEdgeModule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVideoAnalyzerEdgeModule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VideoAnalyzerEdgeModule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDataAzurermKeyVaultEncryptedValue_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataAzurermKeyVaultEncryptedValue_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermKeyVaultEncryptedValue_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermKeyVaultEncryptedValue) validateSetAlgorithmParameters(val *string) error {
 	return nil
 }

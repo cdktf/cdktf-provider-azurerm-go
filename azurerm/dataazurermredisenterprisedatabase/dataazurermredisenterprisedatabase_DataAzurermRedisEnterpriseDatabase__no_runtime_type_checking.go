@@ -60,6 +60,14 @@ func validateDataAzurermRedisEnterpriseDatabase_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataAzurermRedisEnterpriseDatabase_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermRedisEnterpriseDatabase_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

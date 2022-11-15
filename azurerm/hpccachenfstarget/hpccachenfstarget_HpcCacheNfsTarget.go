@@ -2,10 +2,10 @@ package hpccachenfstarget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/hpccachenfstarget/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/hpccachenfstarget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -636,6 +636,44 @@ func HpcCacheNfsTarget_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.hpcCacheNfsTarget.HpcCacheNfsTarget",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HpcCacheNfsTarget_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHpcCacheNfsTarget_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.hpcCacheNfsTarget.HpcCacheNfsTarget",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HpcCacheNfsTarget_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHpcCacheNfsTarget_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.hpcCacheNfsTarget.HpcCacheNfsTarget",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

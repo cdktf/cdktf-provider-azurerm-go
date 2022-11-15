@@ -60,6 +60,14 @@ func validateDevTestPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDevTestPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDevTestPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevTestPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

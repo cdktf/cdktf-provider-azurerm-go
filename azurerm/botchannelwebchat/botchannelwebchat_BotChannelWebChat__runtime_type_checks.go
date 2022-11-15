@@ -130,6 +130,22 @@ func validateBotChannelWebChat_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBotChannelWebChat_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateBotChannelWebChat_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelWebChat) validateSetBotNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

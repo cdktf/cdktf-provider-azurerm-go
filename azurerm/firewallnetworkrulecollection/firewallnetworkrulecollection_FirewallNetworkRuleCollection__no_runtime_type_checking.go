@@ -64,6 +64,14 @@ func validateFirewallNetworkRuleCollection_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateFirewallNetworkRuleCollection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFirewallNetworkRuleCollection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FirewallNetworkRuleCollection) validateSetActionParameters(val *string) error {
 	return nil
 }

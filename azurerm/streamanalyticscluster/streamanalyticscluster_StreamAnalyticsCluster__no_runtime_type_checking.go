@@ -60,6 +60,14 @@ func validateStreamAnalyticsCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStreamAnalyticsCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStreamAnalyticsCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsCluster) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

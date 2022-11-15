@@ -64,6 +64,14 @@ func validateMonitorSmartDetectorAlertRule_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateMonitorSmartDetectorAlertRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitorSmartDetectorAlertRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorSmartDetectorAlertRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

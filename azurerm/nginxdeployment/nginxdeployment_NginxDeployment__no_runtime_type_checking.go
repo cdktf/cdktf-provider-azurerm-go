@@ -80,6 +80,14 @@ func validateNginxDeployment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNginxDeployment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNginxDeployment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NginxDeployment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

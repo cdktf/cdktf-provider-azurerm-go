@@ -2,10 +2,10 @@ package apimanagementrediscache
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/apimanagementrediscache/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/apimanagementrediscache/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -650,6 +650,44 @@ func ApiManagementRedisCache_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCache",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApiManagementRedisCache_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApiManagementRedisCache_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCache",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApiManagementRedisCache_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApiManagementRedisCache_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCache",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

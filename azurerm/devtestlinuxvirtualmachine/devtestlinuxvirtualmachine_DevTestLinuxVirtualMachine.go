@@ -2,10 +2,10 @@ package devtestlinuxvirtualmachine
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/devtestlinuxvirtualmachine/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/devtestlinuxvirtualmachine/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1028,6 +1028,44 @@ func DevTestLinuxVirtualMachine_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.devTestLinuxVirtualMachine.DevTestLinuxVirtualMachine",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DevTestLinuxVirtualMachine_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDevTestLinuxVirtualMachine_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.devTestLinuxVirtualMachine.DevTestLinuxVirtualMachine",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DevTestLinuxVirtualMachine_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDevTestLinuxVirtualMachine_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.devTestLinuxVirtualMachine.DevTestLinuxVirtualMachine",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

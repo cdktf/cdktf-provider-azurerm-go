@@ -2,10 +2,10 @@ package purviewaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v3/purviewaccount/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/purviewaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -739,6 +739,44 @@ func PurviewAccount_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurerm.purviewAccount.PurviewAccount",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PurviewAccount_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePurviewAccount_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.purviewAccount.PurviewAccount",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PurviewAccount_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePurviewAccount_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.purviewAccount.PurviewAccount",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

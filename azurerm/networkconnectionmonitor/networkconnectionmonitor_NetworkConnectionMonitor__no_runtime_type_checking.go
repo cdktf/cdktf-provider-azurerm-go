@@ -72,6 +72,14 @@ func validateNetworkConnectionMonitor_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateNetworkConnectionMonitor_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkConnectionMonitor_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkConnectionMonitor) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

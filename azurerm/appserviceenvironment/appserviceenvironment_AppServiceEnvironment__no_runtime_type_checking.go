@@ -64,6 +64,14 @@ func validateAppServiceEnvironment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppServiceEnvironment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppServiceEnvironment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceEnvironment) validateSetAllowedUserIpCidrsParameters(val *[]*string) error {
 	return nil
 }

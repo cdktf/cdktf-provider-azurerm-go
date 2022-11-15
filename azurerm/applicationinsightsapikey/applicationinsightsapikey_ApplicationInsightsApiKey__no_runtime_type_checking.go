@@ -60,6 +60,14 @@ func validateApplicationInsightsApiKey_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateApplicationInsightsApiKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApplicationInsightsApiKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationInsightsApiKey) validateSetApplicationInsightsIdParameters(val *string) error {
 	return nil
 }

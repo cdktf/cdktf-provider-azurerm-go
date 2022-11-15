@@ -60,6 +60,14 @@ func validateSqlFirewallRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSqlFirewallRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSqlFirewallRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlFirewallRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

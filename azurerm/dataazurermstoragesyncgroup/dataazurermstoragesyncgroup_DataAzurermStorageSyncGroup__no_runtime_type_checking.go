@@ -60,6 +60,14 @@ func validateDataAzurermStorageSyncGroup_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAzurermStorageSyncGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermStorageSyncGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermStorageSyncGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

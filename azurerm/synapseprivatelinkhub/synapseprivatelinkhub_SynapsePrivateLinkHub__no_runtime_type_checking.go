@@ -60,6 +60,14 @@ func validateSynapsePrivateLinkHub_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSynapsePrivateLinkHub_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSynapsePrivateLinkHub_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapsePrivateLinkHub) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

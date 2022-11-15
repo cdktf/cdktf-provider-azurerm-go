@@ -60,6 +60,14 @@ func validateDataAzurermStorageManagementPolicy_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataAzurermStorageManagementPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermStorageManagementPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermStorageManagementPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

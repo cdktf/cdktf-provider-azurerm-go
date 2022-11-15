@@ -60,6 +60,14 @@ func validateDataAzurermRouteTable_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAzurermRouteTable_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurermRouteTable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermRouteTable) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateApiManagementGatewayHostNameConfiguration_IsConstructParameters(x i
 	return nil
 }
 
+func validateApiManagementGatewayHostNameConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementGatewayHostNameConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementGatewayHostNameConfiguration) validateSetApiManagementIdParameters(val *string) error {
 	return nil
 }

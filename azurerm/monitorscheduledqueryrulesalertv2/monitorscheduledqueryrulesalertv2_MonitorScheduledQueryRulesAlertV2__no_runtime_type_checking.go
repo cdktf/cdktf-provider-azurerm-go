@@ -68,6 +68,14 @@ func validateMonitorScheduledQueryRulesAlertV2_IsConstructParameters(x interface
 	return nil
 }
 
+func validateMonitorScheduledQueryRulesAlertV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitorScheduledQueryRulesAlertV2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorScheduledQueryRulesAlertV2) validateSetAutoMitigationEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validatePowerbiEmbedded_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePowerbiEmbedded_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePowerbiEmbedded_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerbiEmbedded) validateSetAdministratorsParameters(val *[]*string) error {
 	return nil
 }

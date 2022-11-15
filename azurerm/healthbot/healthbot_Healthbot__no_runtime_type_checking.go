@@ -60,6 +60,14 @@ func validateHealthbot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateHealthbot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHealthbot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Healthbot) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

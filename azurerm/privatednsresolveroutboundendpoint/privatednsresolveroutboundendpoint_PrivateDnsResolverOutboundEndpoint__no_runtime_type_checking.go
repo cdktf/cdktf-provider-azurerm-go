@@ -60,6 +60,14 @@ func validatePrivateDnsResolverOutboundEndpoint_IsConstructParameters(x interfac
 	return nil
 }
 
+func validatePrivateDnsResolverOutboundEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePrivateDnsResolverOutboundEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivateDnsResolverOutboundEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

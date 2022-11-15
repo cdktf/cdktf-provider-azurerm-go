@@ -68,6 +68,14 @@ func validateMonitorAlertProcessingRuleSuppression_IsConstructParameters(x inter
 	return nil
 }
 
+func validateMonitorAlertProcessingRuleSuppression_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitorAlertProcessingRuleSuppression_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorAlertProcessingRuleSuppression) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateAadb2CDirectory_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAadb2CDirectory_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAadb2CDirectory_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Aadb2CDirectory) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

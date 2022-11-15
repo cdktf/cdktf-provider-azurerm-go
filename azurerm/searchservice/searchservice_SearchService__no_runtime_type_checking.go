@@ -64,6 +64,14 @@ func validateSearchService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSearchService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSearchService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SearchService) validateSetAllowedIpsParameters(val *[]*string) error {
 	return nil
 }

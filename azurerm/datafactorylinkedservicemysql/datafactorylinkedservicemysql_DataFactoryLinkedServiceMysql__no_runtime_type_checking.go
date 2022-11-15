@@ -60,6 +60,14 @@ func validateDataFactoryLinkedServiceMysql_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataFactoryLinkedServiceMysql_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceMysql_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceMysql) validateSetAdditionalPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

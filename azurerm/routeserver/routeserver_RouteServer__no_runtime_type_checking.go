@@ -60,6 +60,14 @@ func validateRouteServer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRouteServer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRouteServer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RouteServer) validateSetBranchToBranchTrafficEnabledParameters(val interface{}) error {
 	return nil
 }

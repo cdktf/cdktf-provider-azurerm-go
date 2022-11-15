@@ -72,6 +72,14 @@ func validateLogicAppStandard_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLogicAppStandard_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogicAppStandard_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppStandard) validateSetAppServicePlanIdParameters(val *string) error {
 	return nil
 }

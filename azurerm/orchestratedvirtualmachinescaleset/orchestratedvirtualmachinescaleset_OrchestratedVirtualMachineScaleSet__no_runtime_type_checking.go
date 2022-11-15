@@ -108,6 +108,14 @@ func validateOrchestratedVirtualMachineScaleSet_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateOrchestratedVirtualMachineScaleSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOrchestratedVirtualMachineScaleSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateSetCapacityReservationGroupIdParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateKeyVaultKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKeyVaultKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKeyVaultKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyVaultKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -84,6 +84,14 @@ func validateWindowsFunctionAppSlot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWindowsFunctionAppSlot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWindowsFunctionAppSlot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetAppSettingsParameters(val *map[string]*string) error {
 	return nil
 }

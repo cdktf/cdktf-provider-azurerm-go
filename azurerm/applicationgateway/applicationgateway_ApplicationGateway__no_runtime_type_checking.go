@@ -156,6 +156,14 @@ func validateApplicationGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApplicationGateway_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApplicationGateway_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationGateway) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

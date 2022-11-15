@@ -60,6 +60,14 @@ func validateApiManagementApiOperationPolicy_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateApiManagementApiOperationPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiManagementApiOperationPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementApiOperationPolicy) validateSetApiManagementNameParameters(val *string) error {
 	return nil
 }
