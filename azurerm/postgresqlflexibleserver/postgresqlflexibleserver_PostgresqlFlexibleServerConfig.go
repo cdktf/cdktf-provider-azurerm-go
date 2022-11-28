@@ -29,6 +29,10 @@ type PostgresqlFlexibleServerConfig struct {
 	AdministratorLogin *string `field:"optional" json:"administratorLogin" yaml:"administratorLogin"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/postgresql_flexible_server#administrator_password PostgresqlFlexibleServer#administrator_password}.
 	AdministratorPassword *string `field:"optional" json:"administratorPassword" yaml:"administratorPassword"`
+	// authentication block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/postgresql_flexible_server#authentication PostgresqlFlexibleServer#authentication}
+	Authentication *PostgresqlFlexibleServerAuthentication `field:"optional" json:"authentication" yaml:"authentication"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/postgresql_flexible_server#backup_retention_days PostgresqlFlexibleServer#backup_retention_days}.
 	BackupRetentionDays *float64 `field:"optional" json:"backupRetentionDays" yaml:"backupRetentionDays"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/postgresql_flexible_server#create_mode PostgresqlFlexibleServer#create_mode}.

@@ -98,6 +98,10 @@ type StorageAccountConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#routing StorageAccount#routing}
 	Routing *StorageAccountRouting `field:"optional" json:"routing" yaml:"routing"`
+	// sas_policy block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#sas_policy StorageAccount#sas_policy}
+	SasPolicy *StorageAccountSasPolicy `field:"optional" json:"sasPolicy" yaml:"sasPolicy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#shared_access_key_enabled StorageAccount#shared_access_key_enabled}.
 	SharedAccessKeyEnabled interface{} `field:"optional" json:"sharedAccessKeyEnabled" yaml:"sharedAccessKeyEnabled"`
 	// share_properties block.

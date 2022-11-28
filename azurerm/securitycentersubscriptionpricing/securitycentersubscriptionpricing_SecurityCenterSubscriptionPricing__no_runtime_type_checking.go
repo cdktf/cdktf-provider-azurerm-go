@@ -88,6 +88,10 @@ func (j *jsiiProxy_SecurityCenterSubscriptionPricing) validateSetResourceTypePar
 	return nil
 }
 
+func (j *jsiiProxy_SecurityCenterSubscriptionPricing) validateSetSubplanParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityCenterSubscriptionPricing) validateSetTierParameters(val *string) error {
 	return nil
 }

@@ -58,6 +58,9 @@ type SecurityCenterSubscriptionPricing interface {
 	ResourceType() *string
 	SetResourceType(val *string)
 	ResourceTypeInput() *string
+	Subplan() *string
+	SetSubplan(val *string)
+	SubplanInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -100,6 +103,7 @@ type SecurityCenterSubscriptionPricing interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetResourceType()
+	ResetSubplan()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -281,6 +285,26 @@ func (j *jsiiProxy_SecurityCenterSubscriptionPricing) ResourceTypeInput() *strin
 	_jsii_.Get(
 		j,
 		"resourceTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityCenterSubscriptionPricing) Subplan() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subplan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityCenterSubscriptionPricing) SubplanInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subplanInput",
 		&returns,
 	)
 	return returns
@@ -469,6 +493,17 @@ func (j *jsiiProxy_SecurityCenterSubscriptionPricing)SetResourceType(val *string
 	_jsii_.Set(
 		j,
 		"resourceType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityCenterSubscriptionPricing)SetSubplan(val *string) {
+	if err := j.validateSetSubplanParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subplan",
 		val,
 	)
 }
@@ -781,6 +816,14 @@ func (s *jsiiProxy_SecurityCenterSubscriptionPricing) ResetResourceType() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetResourceType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityCenterSubscriptionPricing) ResetSubplan() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSubplan",
 		nil, // no parameters
 	)
 }

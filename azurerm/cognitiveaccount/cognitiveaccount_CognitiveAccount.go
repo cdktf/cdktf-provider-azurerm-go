@@ -39,6 +39,9 @@ type CognitiveAccount interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DynamicThrottlingEnabled() interface{}
+	SetDynamicThrottlingEnabled(val interface{})
+	DynamicThrottlingEnabledInput() interface{}
 	Endpoint() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -162,6 +165,7 @@ type CognitiveAccount interface {
 	ResetCustomQuestionAnsweringSearchServiceId()
 	ResetCustomQuestionAnsweringSearchServiceKey()
 	ResetCustomSubdomainName()
+	ResetDynamicThrottlingEnabled()
 	ResetFqdns()
 	ResetId()
 	ResetIdentity()
@@ -320,6 +324,26 @@ func (j *jsiiProxy_CognitiveAccount) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitiveAccount) DynamicThrottlingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dynamicThrottlingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitiveAccount) DynamicThrottlingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dynamicThrottlingEnabledInput",
 		&returns,
 	)
 	return returns
@@ -955,6 +979,17 @@ func (j *jsiiProxy_CognitiveAccount)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_CognitiveAccount)SetDynamicThrottlingEnabled(val interface{}) {
+	if err := j.validateSetDynamicThrottlingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dynamicThrottlingEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CognitiveAccount)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -1518,6 +1553,14 @@ func (c *jsiiProxy_CognitiveAccount) ResetCustomSubdomainName() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetCustomSubdomainName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitiveAccount) ResetDynamicThrottlingEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDynamicThrottlingEnabled",
 		nil, // no parameters
 	)
 }

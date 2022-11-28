@@ -100,6 +100,10 @@ func (j *jsiiProxy_CognitiveAccount) validateSetCustomSubdomainNameParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_CognitiveAccount) validateSetDynamicThrottlingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitiveAccount) validateSetFqdnsParameters(val *[]*string) error {
 	return nil
 }

@@ -88,6 +88,10 @@ func (s *jsiiProxy_StorageAccount) validatePutRoutingParameters(value *StorageAc
 	return nil
 }
 
+func (s *jsiiProxy_StorageAccount) validatePutSasPolicyParameters(value *StorageAccountSasPolicy) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageAccount) validatePutSharePropertiesParameters(value *StorageAccountShareProperties) error {
 	return nil
 }

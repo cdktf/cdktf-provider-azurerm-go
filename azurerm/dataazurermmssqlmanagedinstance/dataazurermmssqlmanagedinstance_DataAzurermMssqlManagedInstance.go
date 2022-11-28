@@ -22,6 +22,7 @@ type DataAzurermMssqlManagedInstance interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	CustomerManagedKeyId() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,6 +170,16 @@ func (j *jsiiProxy_DataAzurermMssqlManagedInstance) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMssqlManagedInstance) CustomerManagedKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerManagedKeyId",
 		&returns,
 	)
 	return returns

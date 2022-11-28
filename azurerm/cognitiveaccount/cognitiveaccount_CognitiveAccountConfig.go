@@ -39,6 +39,8 @@ type CognitiveAccountConfig struct {
 	CustomQuestionAnsweringSearchServiceKey *string `field:"optional" json:"customQuestionAnsweringSearchServiceKey" yaml:"customQuestionAnsweringSearchServiceKey"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cognitive_account#custom_subdomain_name CognitiveAccount#custom_subdomain_name}.
 	CustomSubdomainName *string `field:"optional" json:"customSubdomainName" yaml:"customSubdomainName"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cognitive_account#dynamic_throttling_enabled CognitiveAccount#dynamic_throttling_enabled}.
+	DynamicThrottlingEnabled interface{} `field:"optional" json:"dynamicThrottlingEnabled" yaml:"dynamicThrottlingEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cognitive_account#fqdns CognitiveAccount#fqdns}.
 	Fqdns *[]*string `field:"optional" json:"fqdns" yaml:"fqdns"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/cognitive_account#id CognitiveAccount#id}.

@@ -111,6 +111,17 @@ func (p *jsiiProxy_PostgresqlFlexibleServer) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (p *jsiiProxy_PostgresqlFlexibleServer) validatePutAuthenticationParameters(value *PostgresqlFlexibleServerAuthentication) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PostgresqlFlexibleServer) validatePutHighAvailabilityParameters(value *PostgresqlFlexibleServerHighAvailability) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -28,6 +28,8 @@ type SecurityCenterSubscriptionPricingConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/security_center_subscription_pricing#resource_type SecurityCenterSubscriptionPricing#resource_type}.
 	ResourceType *string `field:"optional" json:"resourceType" yaml:"resourceType"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/security_center_subscription_pricing#subplan SecurityCenterSubscriptionPricing#subplan}.
+	Subplan *string `field:"optional" json:"subplan" yaml:"subplan"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/security_center_subscription_pricing#timeouts SecurityCenterSubscriptionPricing#timeouts}

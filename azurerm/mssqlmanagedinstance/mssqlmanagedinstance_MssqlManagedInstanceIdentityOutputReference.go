@@ -27,6 +27,9 @@ type MssqlManagedInstanceIdentityOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdentityIds() *[]*string
+	SetIdentityIds(val *[]*string)
+	IdentityIdsInput() *[]*string
 	InternalValue() *MssqlManagedInstanceIdentity
 	SetInternalValue(val *MssqlManagedInstanceIdentity)
 	PrincipalId() *string
@@ -66,6 +69,7 @@ type MssqlManagedInstanceIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIdentityIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -116,6 +120,26 @@ func (j *jsiiProxy_MssqlManagedInstanceIdentityOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlManagedInstanceIdentityOutputReference) IdentityIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlManagedInstanceIdentityOutputReference) IdentityIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIdsInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +261,17 @@ func (j *jsiiProxy_MssqlManagedInstanceIdentityOutputReference)SetComplexObjectI
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlManagedInstanceIdentityOutputReference)SetIdentityIds(val *[]*string) {
+	if err := j.validateSetIdentityIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityIds",
 		val,
 	)
 }
@@ -469,6 +504,14 @@ func (m *jsiiProxy_MssqlManagedInstanceIdentityOutputReference) InterpolationFor
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MssqlManagedInstanceIdentityOutputReference) ResetIdentityIds() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetIdentityIds",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MssqlManagedInstanceIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

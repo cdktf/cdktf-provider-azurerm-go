@@ -18,6 +18,8 @@ type PostgresqlFlexibleServer interface {
 	AdministratorPassword() *string
 	SetAdministratorPassword(val *string)
 	AdministratorPasswordInput() *string
+	Authentication() PostgresqlFlexibleServerAuthenticationOutputReference
+	AuthenticationInput() *PostgresqlFlexibleServerAuthentication
 	BackupRetentionDays() *float64
 	SetBackupRetentionDays(val *float64)
 	BackupRetentionDaysInput() *float64
@@ -145,11 +147,13 @@ type PostgresqlFlexibleServer interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAuthentication(value *PostgresqlFlexibleServerAuthentication)
 	PutHighAvailability(value *PostgresqlFlexibleServerHighAvailability)
 	PutMaintenanceWindow(value *PostgresqlFlexibleServerMaintenanceWindow)
 	PutTimeouts(value *PostgresqlFlexibleServerTimeouts)
 	ResetAdministratorLogin()
 	ResetAdministratorPassword()
+	ResetAuthentication()
 	ResetBackupRetentionDays()
 	ResetCreateMode()
 	ResetDelegatedSubnetId()
@@ -219,6 +223,26 @@ func (j *jsiiProxy_PostgresqlFlexibleServer) AdministratorPasswordInput() *strin
 	_jsii_.Get(
 		j,
 		"administratorPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServer) Authentication() PostgresqlFlexibleServerAuthenticationOutputReference {
+	var returns PostgresqlFlexibleServerAuthenticationOutputReference
+	_jsii_.Get(
+		j,
+		"authentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServer) AuthenticationInput() *PostgresqlFlexibleServerAuthentication {
+	var returns *PostgresqlFlexibleServerAuthentication
+	_jsii_.Get(
+		j,
+		"authenticationInput",
 		&returns,
 	)
 	return returns
@@ -1343,6 +1367,17 @@ func (p *jsiiProxy_PostgresqlFlexibleServer) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (p *jsiiProxy_PostgresqlFlexibleServer) PutAuthentication(value *PostgresqlFlexibleServerAuthentication) {
+	if err := p.validatePutAuthenticationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putAuthentication",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PostgresqlFlexibleServer) PutHighAvailability(value *PostgresqlFlexibleServerHighAvailability) {
 	if err := p.validatePutHighAvailabilityParameters(value); err != nil {
 		panic(err)
@@ -1388,6 +1423,14 @@ func (p *jsiiProxy_PostgresqlFlexibleServer) ResetAdministratorPassword() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetAdministratorPassword",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresqlFlexibleServer) ResetAuthentication() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAuthentication",
 		nil, // no parameters
 	)
 }

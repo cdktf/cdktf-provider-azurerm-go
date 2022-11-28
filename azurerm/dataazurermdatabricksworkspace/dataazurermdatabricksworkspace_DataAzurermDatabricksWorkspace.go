@@ -55,6 +55,7 @@ type DataAzurermDatabricksWorkspace interface {
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
 	Sku() *string
+	StorageAccountIdentity() DataAzurermDatabricksWorkspaceStorageAccountIdentityList
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -300,6 +301,16 @@ func (j *jsiiProxy_DataAzurermDatabricksWorkspace) Sku() *string {
 	_jsii_.Get(
 		j,
 		"sku",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermDatabricksWorkspace) StorageAccountIdentity() DataAzurermDatabricksWorkspaceStorageAccountIdentityList {
+	var returns DataAzurermDatabricksWorkspaceStorageAccountIdentityList
+	_jsii_.Get(
+		j,
+		"storageAccountIdentity",
 		&returns,
 	)
 	return returns

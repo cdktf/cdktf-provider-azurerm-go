@@ -40,6 +40,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "identity", GoGetter: "Identity"},
 			_jsii_.MemberProperty{JsiiProperty: "identityInput", GoGetter: "IdentityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "ingressSettings", GoGetter: "IngressSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "ingressSettingsInput", GoGetter: "IngressSettingsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isPublic", GoGetter: "IsPublic"},
 			_jsii_.MemberProperty{JsiiProperty: "isPublicInput", GoGetter: "IsPublicInput"},
@@ -56,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publicEndpointEnabledInput", GoGetter: "PublicEndpointEnabledInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomPersistentDisk", GoMethod: "PutCustomPersistentDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "putIdentity", GoMethod: "PutIdentity"},
+			_jsii_.MemberMethod{JsiiMethod: "putIngressSettings", GoMethod: "PutIngressSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putPersistentDisk", GoMethod: "PutPersistentDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -64,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpsOnly", GoMethod: "ResetHttpsOnly"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIdentity", GoMethod: "ResetIdentity"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIngressSettings", GoMethod: "ResetIngressSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsPublic", GoMethod: "ResetIsPublic"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPersistentDisk", GoMethod: "ResetPersistentDisk"},
@@ -205,6 +209,57 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SpringCloudAppIdentityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.springCloudApp.SpringCloudAppIngressSettings",
+		reflect.TypeOf((*SpringCloudAppIngressSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.springCloudApp.SpringCloudAppIngressSettingsOutputReference",
+		reflect.TypeOf((*SpringCloudAppIngressSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "backendProtocol", GoGetter: "BackendProtocol"},
+			_jsii_.MemberProperty{JsiiProperty: "backendProtocolInput", GoGetter: "BackendProtocolInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "readTimeoutInSeconds", GoGetter: "ReadTimeoutInSeconds"},
+			_jsii_.MemberProperty{JsiiProperty: "readTimeoutInSecondsInput", GoGetter: "ReadTimeoutInSecondsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBackendProtocol", GoMethod: "ResetBackendProtocol"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReadTimeoutInSeconds", GoMethod: "ResetReadTimeoutInSeconds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSendTimeoutInSeconds", GoMethod: "ResetSendTimeoutInSeconds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSessionAffinity", GoMethod: "ResetSessionAffinity"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSessionCookieMaxAge", GoMethod: "ResetSessionCookieMaxAge"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sendTimeoutInSeconds", GoGetter: "SendTimeoutInSeconds"},
+			_jsii_.MemberProperty{JsiiProperty: "sendTimeoutInSecondsInput", GoGetter: "SendTimeoutInSecondsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sessionAffinity", GoGetter: "SessionAffinity"},
+			_jsii_.MemberProperty{JsiiProperty: "sessionAffinityInput", GoGetter: "SessionAffinityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sessionCookieMaxAge", GoGetter: "SessionCookieMaxAge"},
+			_jsii_.MemberProperty{JsiiProperty: "sessionCookieMaxAgeInput", GoGetter: "SessionCookieMaxAgeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SpringCloudAppIngressSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -33,6 +33,9 @@ type StorageBlobInventoryPolicyRulesFilterOutputReference interface {
 	IncludeBlobVersions() interface{}
 	SetIncludeBlobVersions(val interface{})
 	IncludeBlobVersionsInput() interface{}
+	IncludeDeleted() interface{}
+	SetIncludeDeleted(val interface{})
+	IncludeDeletedInput() interface{}
 	IncludeSnapshots() interface{}
 	SetIncludeSnapshots(val interface{})
 	IncludeSnapshotsInput() interface{}
@@ -74,6 +77,7 @@ type StorageBlobInventoryPolicyRulesFilterOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIncludeBlobVersions()
+	ResetIncludeDeleted()
 	ResetIncludeSnapshots()
 	ResetPrefixMatch()
 	// Produce the Token's value at resolution time.
@@ -166,6 +170,26 @@ func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) Include
 	_jsii_.Get(
 		j,
 		"includeBlobVersionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) IncludeDeleted() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeDeleted",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) IncludeDeletedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeDeletedInput",
 		&returns,
 	)
 	return returns
@@ -309,6 +333,17 @@ func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference)SetInclu
 	_jsii_.Set(
 		j,
 		"includeBlobVersions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference)SetIncludeDeleted(val interface{}) {
+	if err := j.validateSetIncludeDeletedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeDeleted",
 		val,
 	)
 }
@@ -558,6 +593,14 @@ func (s *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) ResetIn
 	_jsii_.InvokeVoid(
 		s,
 		"resetIncludeBlobVersions",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) ResetIncludeDeleted() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIncludeDeleted",
 		nil, // no parameters
 	)
 }

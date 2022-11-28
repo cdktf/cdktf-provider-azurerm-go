@@ -64,6 +64,10 @@ func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) validateSetIncludeDeletedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) validateSetIncludeSnapshotsParameters(val interface{}) error {
 	return nil
 }

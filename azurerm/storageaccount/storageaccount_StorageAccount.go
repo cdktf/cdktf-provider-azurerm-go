@@ -146,6 +146,8 @@ type StorageAccount interface {
 	ResourceGroupNameInput() *string
 	Routing() StorageAccountRoutingOutputReference
 	RoutingInput() *StorageAccountRouting
+	SasPolicy() StorageAccountSasPolicyOutputReference
+	SasPolicyInput() *StorageAccountSasPolicy
 	SecondaryAccessKey() *string
 	SecondaryBlobConnectionString() *string
 	SecondaryBlobEndpoint() *string
@@ -217,6 +219,7 @@ type StorageAccount interface {
 	PutNetworkRules(value *StorageAccountNetworkRules)
 	PutQueueProperties(value *StorageAccountQueueProperties)
 	PutRouting(value *StorageAccountRouting)
+	PutSasPolicy(value *StorageAccountSasPolicy)
 	PutShareProperties(value *StorageAccountShareProperties)
 	PutStaticWebsite(value *StorageAccountStaticWebsite)
 	PutTimeouts(value *StorageAccountTimeouts)
@@ -247,6 +250,7 @@ type StorageAccount interface {
 	ResetQueueEncryptionKeyType()
 	ResetQueueProperties()
 	ResetRouting()
+	ResetSasPolicy()
 	ResetSharedAccessKeyEnabled()
 	ResetShareProperties()
 	ResetStaticWebsite()
@@ -1133,6 +1137,26 @@ func (j *jsiiProxy_StorageAccount) RoutingInput() *StorageAccountRouting {
 	_jsii_.Get(
 		j,
 		"routingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SasPolicy() StorageAccountSasPolicyOutputReference {
+	var returns StorageAccountSasPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"sasPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SasPolicyInput() *StorageAccountSasPolicy {
+	var returns *StorageAccountSasPolicy
+	_jsii_.Get(
+		j,
+		"sasPolicyInput",
 		&returns,
 	)
 	return returns
@@ -2161,6 +2185,17 @@ func (s *jsiiProxy_StorageAccount) PutRouting(value *StorageAccountRouting) {
 	)
 }
 
+func (s *jsiiProxy_StorageAccount) PutSasPolicy(value *StorageAccountSasPolicy) {
+	if err := s.validatePutSasPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSasPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StorageAccount) PutShareProperties(value *StorageAccountShareProperties) {
 	if err := s.validatePutSharePropertiesParameters(value); err != nil {
 		panic(err)
@@ -2390,6 +2425,14 @@ func (s *jsiiProxy_StorageAccount) ResetRouting() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRouting",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageAccount) ResetSasPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSasPolicy",
 		nil, // no parameters
 	)
 }

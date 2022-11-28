@@ -42,6 +42,10 @@ type SpringCloudAppConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_app#identity SpringCloudApp#identity}
 	Identity *SpringCloudAppIdentity `field:"optional" json:"identity" yaml:"identity"`
+	// ingress_settings block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_app#ingress_settings SpringCloudApp#ingress_settings}
+	IngressSettings *SpringCloudAppIngressSettings `field:"optional" json:"ingressSettings" yaml:"ingressSettings"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_app#is_public SpringCloudApp#is_public}.
 	IsPublic interface{} `field:"optional" json:"isPublic" yaml:"isPublic"`
 	// persistent_disk block.

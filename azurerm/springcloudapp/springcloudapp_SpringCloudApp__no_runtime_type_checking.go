@@ -60,6 +60,10 @@ func (s *jsiiProxy_SpringCloudApp) validatePutIdentityParameters(value *SpringCl
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudApp) validatePutIngressSettingsParameters(value *SpringCloudAppIngressSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudApp) validatePutPersistentDiskParameters(value *SpringCloudAppPersistentDisk) error {
 	return nil
 }

@@ -110,6 +110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkRules", GoMethod: "PutNetworkRules"},
 			_jsii_.MemberMethod{JsiiMethod: "putQueueProperties", GoMethod: "PutQueueProperties"},
 			_jsii_.MemberMethod{JsiiMethod: "putRouting", GoMethod: "PutRouting"},
+			_jsii_.MemberMethod{JsiiMethod: "putSasPolicy", GoMethod: "PutSasPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putShareProperties", GoMethod: "PutShareProperties"},
 			_jsii_.MemberMethod{JsiiMethod: "putStaticWebsite", GoMethod: "PutStaticWebsite"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
@@ -143,6 +144,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetQueueEncryptionKeyType", GoMethod: "ResetQueueEncryptionKeyType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQueueProperties", GoMethod: "ResetQueueProperties"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRouting", GoMethod: "ResetRouting"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSasPolicy", GoMethod: "ResetSasPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSharedAccessKeyEnabled", GoMethod: "ResetSharedAccessKeyEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetShareProperties", GoMethod: "ResetShareProperties"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStaticWebsite", GoMethod: "ResetStaticWebsite"},
@@ -153,6 +155,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "routing", GoGetter: "Routing"},
 			_jsii_.MemberProperty{JsiiProperty: "routingInput", GoGetter: "RoutingInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sasPolicy", GoGetter: "SasPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "sasPolicyInput", GoGetter: "SasPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "secondaryAccessKey", GoGetter: "SecondaryAccessKey"},
 			_jsii_.MemberProperty{JsiiProperty: "secondaryBlobConnectionString", GoGetter: "SecondaryBlobConnectionString"},
 			_jsii_.MemberProperty{JsiiProperty: "secondaryBlobEndpoint", GoGetter: "SecondaryBlobEndpoint"},
@@ -1075,6 +1079,47 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StorageAccountRoutingOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.storageAccount.StorageAccountSasPolicy",
+		reflect.TypeOf((*StorageAccountSasPolicy)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.storageAccount.StorageAccountSasPolicyOutputReference",
+		reflect.TypeOf((*StorageAccountSasPolicyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "expirationAction", GoGetter: "ExpirationAction"},
+			_jsii_.MemberProperty{JsiiProperty: "expirationActionInput", GoGetter: "ExpirationActionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "expirationPeriod", GoGetter: "ExpirationPeriod"},
+			_jsii_.MemberProperty{JsiiProperty: "expirationPeriodInput", GoGetter: "ExpirationPeriodInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExpirationAction", GoMethod: "ResetExpirationAction"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_StorageAccountSasPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

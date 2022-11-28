@@ -52,6 +52,10 @@ func (p *jsiiProxy_PostgresqlFlexibleServer) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (p *jsiiProxy_PostgresqlFlexibleServer) validatePutAuthenticationParameters(value *PostgresqlFlexibleServerAuthentication) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresqlFlexibleServer) validatePutHighAvailabilityParameters(value *PostgresqlFlexibleServerHighAvailability) error {
 	return nil
 }

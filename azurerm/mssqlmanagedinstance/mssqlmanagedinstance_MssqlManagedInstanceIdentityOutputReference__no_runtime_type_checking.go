@@ -56,6 +56,10 @@ func (j *jsiiProxy_MssqlManagedInstanceIdentityOutputReference) validateSetCompl
 	return nil
 }
 
+func (j *jsiiProxy_MssqlManagedInstanceIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlManagedInstanceIdentityOutputReference) validateSetInternalValueParameters(val *MssqlManagedInstanceIdentity) error {
 	return nil
 }

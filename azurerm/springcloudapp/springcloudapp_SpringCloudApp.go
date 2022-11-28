@@ -50,6 +50,8 @@ type SpringCloudApp interface {
 	Identity() SpringCloudAppIdentityOutputReference
 	IdentityInput() *SpringCloudAppIdentity
 	IdInput() *string
+	IngressSettings() SpringCloudAppIngressSettingsOutputReference
+	IngressSettingsInput() *SpringCloudAppIngressSettings
 	IsPublic() interface{}
 	SetIsPublic(val interface{})
 	IsPublicInput() interface{}
@@ -122,6 +124,7 @@ type SpringCloudApp interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCustomPersistentDisk(value interface{})
 	PutIdentity(value *SpringCloudAppIdentity)
+	PutIngressSettings(value *SpringCloudAppIngressSettings)
 	PutPersistentDisk(value *SpringCloudAppPersistentDisk)
 	PutTimeouts(value *SpringCloudAppTimeouts)
 	ResetAddonJson()
@@ -129,6 +132,7 @@ type SpringCloudApp interface {
 	ResetHttpsOnly()
 	ResetId()
 	ResetIdentity()
+	ResetIngressSettings()
 	ResetIsPublic()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -337,6 +341,26 @@ func (j *jsiiProxy_SpringCloudApp) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudApp) IngressSettings() SpringCloudAppIngressSettingsOutputReference {
+	var returns SpringCloudAppIngressSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"ingressSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudApp) IngressSettingsInput() *SpringCloudAppIngressSettings {
+	var returns *SpringCloudAppIngressSettings
+	_jsii_.Get(
+		j,
+		"ingressSettingsInput",
 		&returns,
 	)
 	return returns
@@ -1074,6 +1098,17 @@ func (s *jsiiProxy_SpringCloudApp) PutIdentity(value *SpringCloudAppIdentity) {
 	)
 }
 
+func (s *jsiiProxy_SpringCloudApp) PutIngressSettings(value *SpringCloudAppIngressSettings) {
+	if err := s.validatePutIngressSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putIngressSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SpringCloudApp) PutPersistentDisk(value *SpringCloudAppPersistentDisk) {
 	if err := s.validatePutPersistentDiskParameters(value); err != nil {
 		panic(err)
@@ -1132,6 +1167,14 @@ func (s *jsiiProxy_SpringCloudApp) ResetIdentity() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudApp) ResetIngressSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIngressSettings",
 		nil, // no parameters
 	)
 }
