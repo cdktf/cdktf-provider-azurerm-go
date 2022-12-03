@@ -92,6 +92,8 @@ type ManagedDiskConfig struct {
 	Timeouts *ManagedDiskTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/managed_disk#trusted_launch_enabled ManagedDisk#trusted_launch_enabled}.
 	TrustedLaunchEnabled interface{} `field:"optional" json:"trustedLaunchEnabled" yaml:"trustedLaunchEnabled"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/managed_disk#upload_size_bytes ManagedDisk#upload_size_bytes}.
+	UploadSizeBytes *float64 `field:"optional" json:"uploadSizeBytes" yaml:"uploadSizeBytes"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/managed_disk#zone ManagedDisk#zone}.
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }

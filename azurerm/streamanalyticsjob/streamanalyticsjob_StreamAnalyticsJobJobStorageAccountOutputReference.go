@@ -70,6 +70,7 @@ type StreamAnalyticsJobJobStorageAccountOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAuthenticationMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -515,6 +516,14 @@ func (s *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) ResetAuthenticationMode() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAuthenticationMode",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_StreamAnalyticsJobJobStorageAccountOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

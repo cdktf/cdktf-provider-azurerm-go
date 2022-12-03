@@ -31,10 +31,6 @@ type StreamAnalyticsOutputEventhubConfig struct {
 	Serialization *StreamAnalyticsOutputEventhubSerialization `field:"required" json:"serialization" yaml:"serialization"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_eventhub#servicebus_namespace StreamAnalyticsOutputEventhub#servicebus_namespace}.
 	ServicebusNamespace *string `field:"required" json:"servicebusNamespace" yaml:"servicebusNamespace"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_eventhub#shared_access_policy_key StreamAnalyticsOutputEventhub#shared_access_policy_key}.
-	SharedAccessPolicyKey *string `field:"required" json:"sharedAccessPolicyKey" yaml:"sharedAccessPolicyKey"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_eventhub#shared_access_policy_name StreamAnalyticsOutputEventhub#shared_access_policy_name}.
-	SharedAccessPolicyName *string `field:"required" json:"sharedAccessPolicyName" yaml:"sharedAccessPolicyName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_eventhub#stream_analytics_job_name StreamAnalyticsOutputEventhub#stream_analytics_job_name}.
 	StreamAnalyticsJobName *string `field:"required" json:"streamAnalyticsJobName" yaml:"streamAnalyticsJobName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_eventhub#authentication_mode StreamAnalyticsOutputEventhub#authentication_mode}.
@@ -48,6 +44,10 @@ type StreamAnalyticsOutputEventhubConfig struct {
 	PartitionKey *string `field:"optional" json:"partitionKey" yaml:"partitionKey"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_eventhub#property_columns StreamAnalyticsOutputEventhub#property_columns}.
 	PropertyColumns *[]*string `field:"optional" json:"propertyColumns" yaml:"propertyColumns"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_eventhub#shared_access_policy_key StreamAnalyticsOutputEventhub#shared_access_policy_key}.
+	SharedAccessPolicyKey *string `field:"optional" json:"sharedAccessPolicyKey" yaml:"sharedAccessPolicyKey"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_eventhub#shared_access_policy_name StreamAnalyticsOutputEventhub#shared_access_policy_name}.
+	SharedAccessPolicyName *string `field:"optional" json:"sharedAccessPolicyName" yaml:"sharedAccessPolicyName"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_eventhub#timeouts StreamAnalyticsOutputEventhub#timeouts}

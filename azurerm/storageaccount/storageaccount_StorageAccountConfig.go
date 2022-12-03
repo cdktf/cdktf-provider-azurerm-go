@@ -102,6 +102,8 @@ type StorageAccountConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#sas_policy StorageAccount#sas_policy}
 	SasPolicy *StorageAccountSasPolicy `field:"optional" json:"sasPolicy" yaml:"sasPolicy"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#sftp_enabled StorageAccount#sftp_enabled}.
+	SftpEnabled interface{} `field:"optional" json:"sftpEnabled" yaml:"sftpEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#shared_access_key_enabled StorageAccount#shared_access_key_enabled}.
 	SharedAccessKeyEnabled interface{} `field:"optional" json:"sharedAccessKeyEnabled" yaml:"sharedAccessKeyEnabled"`
 	// share_properties block.

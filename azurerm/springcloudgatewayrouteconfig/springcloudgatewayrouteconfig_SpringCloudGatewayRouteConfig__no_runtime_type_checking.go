@@ -92,6 +92,10 @@ func (j *jsiiProxy_SpringCloudGatewayRouteConfig) validateSetNameParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudGatewayRouteConfig) validateSetProtocolParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudGatewayRouteConfig) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

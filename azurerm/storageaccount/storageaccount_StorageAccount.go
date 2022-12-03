@@ -164,6 +164,9 @@ type StorageAccount interface {
 	SecondaryTableHost() *string
 	SecondaryWebEndpoint() *string
 	SecondaryWebHost() *string
+	SftpEnabled() interface{}
+	SetSftpEnabled(val interface{})
+	SftpEnabledInput() interface{}
 	SharedAccessKeyEnabled() interface{}
 	SetSharedAccessKeyEnabled(val interface{})
 	SharedAccessKeyEnabledInput() interface{}
@@ -251,6 +254,7 @@ type StorageAccount interface {
 	ResetQueueProperties()
 	ResetRouting()
 	ResetSasPolicy()
+	ResetSftpEnabled()
 	ResetSharedAccessKeyEnabled()
 	ResetShareProperties()
 	ResetStaticWebsite()
@@ -1322,6 +1326,26 @@ func (j *jsiiProxy_StorageAccount) SecondaryWebHost() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageAccount) SftpEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sftpEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SftpEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sftpEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageAccount) SharedAccessKeyEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1783,6 +1807,17 @@ func (j *jsiiProxy_StorageAccount)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageAccount)SetSftpEnabled(val interface{}) {
+	if err := j.validateSetSftpEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sftpEnabled",
 		val,
 	)
 }
@@ -2433,6 +2468,14 @@ func (s *jsiiProxy_StorageAccount) ResetSasPolicy() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSasPolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageAccount) ResetSftpEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSftpEnabled",
 		nil, // no parameters
 	)
 }

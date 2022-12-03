@@ -55,6 +55,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPartitionKey", GoMethod: "ResetPartitionKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPropertyColumns", GoMethod: "ResetPropertyColumns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSharedAccessPolicyKey", GoMethod: "ResetSharedAccessPolicyKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSharedAccessPolicyName", GoMethod: "ResetSharedAccessPolicyName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},

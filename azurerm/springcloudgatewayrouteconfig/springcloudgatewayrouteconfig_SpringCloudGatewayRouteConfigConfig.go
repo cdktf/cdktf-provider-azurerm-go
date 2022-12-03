@@ -32,6 +32,8 @@ type SpringCloudGatewayRouteConfigConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway_route_config#open_api SpringCloudGatewayRouteConfig#open_api}
 	OpenApi *SpringCloudGatewayRouteConfigOpenApi `field:"optional" json:"openApi" yaml:"openApi"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway_route_config#protocol SpringCloudGatewayRouteConfig#protocol}.
+	Protocol *string `field:"optional" json:"protocol" yaml:"protocol"`
 	// route block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway_route_config#route SpringCloudGatewayRouteConfig#route}

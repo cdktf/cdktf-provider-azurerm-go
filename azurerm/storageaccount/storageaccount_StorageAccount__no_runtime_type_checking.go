@@ -208,6 +208,10 @@ func (j *jsiiProxy_StorageAccount) validateSetResourceGroupNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_StorageAccount) validateSetSftpEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccount) validateSetSharedAccessKeyEnabledParameters(val interface{}) error {
 	return nil
 }

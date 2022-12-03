@@ -56,6 +56,10 @@ func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) validateSetDeleteAfterDaysSinceCreationGreaterThanParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) validateSetDeleteAfterDaysSinceLastAccessTimeGreaterThanParameters(val *float64) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) validateSetTierToArchiveAfterDaysSinceCreationGreaterThanParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) validateSetTierToArchiveAfterDaysSinceLastAccessTimeGreaterThanParameters(val *float64) error {
 	return nil
 }
@@ -85,6 +93,10 @@ func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) va
 }
 
 func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) validateSetTierToArchiveAfterDaysSinceModificationGreaterThanParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) validateSetTierToCoolAfterDaysSinceCreationGreaterThanParameters(val *float64) error {
 	return nil
 }
 

@@ -208,6 +208,10 @@ func (j *jsiiProxy_ManagedDisk) validateSetTrustedLaunchEnabledParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ManagedDisk) validateSetUploadSizeBytesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedDisk) validateSetZoneParameters(val *string) error {
 	return nil
 }

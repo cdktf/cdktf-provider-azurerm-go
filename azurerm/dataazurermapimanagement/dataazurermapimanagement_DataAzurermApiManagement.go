@@ -71,6 +71,7 @@ type DataAzurermApiManagement interface {
 	ScmUrl() *string
 	SkuName() *string
 	Tags() cdktf.StringMap
+	TenantAccess() DataAzurermApiManagementTenantAccessList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -470,6 +471,16 @@ func (j *jsiiProxy_DataAzurermApiManagement) Tags() cdktf.StringMap {
 	_jsii_.Get(
 		j,
 		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApiManagement) TenantAccess() DataAzurermApiManagementTenantAccessList {
+	var returns DataAzurermApiManagementTenantAccessList
+	_jsii_.Get(
+		j,
+		"tenantAccess",
 		&returns,
 	)
 	return returns

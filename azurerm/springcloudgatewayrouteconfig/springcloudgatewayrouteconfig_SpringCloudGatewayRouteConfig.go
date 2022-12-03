@@ -50,6 +50,9 @@ type SpringCloudGatewayRouteConfig interface {
 	Node() constructs.Node
 	OpenApi() SpringCloudGatewayRouteConfigOpenApiOutputReference
 	OpenApiInput() *SpringCloudGatewayRouteConfigOpenApi
+	Protocol() *string
+	SetProtocol(val *string)
+	ProtocolInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -109,6 +112,7 @@ type SpringCloudGatewayRouteConfig interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProtocol()
 	ResetRoute()
 	ResetSpringCloudAppId()
 	ResetTimeouts()
@@ -282,6 +286,26 @@ func (j *jsiiProxy_SpringCloudGatewayRouteConfig) OpenApiInput() *SpringCloudGat
 	_jsii_.Get(
 		j,
 		"openApiInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGatewayRouteConfig) Protocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGatewayRouteConfig) ProtocolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocolInput",
 		&returns,
 	)
 	return returns
@@ -521,6 +545,17 @@ func (j *jsiiProxy_SpringCloudGatewayRouteConfig)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpringCloudGatewayRouteConfig)SetProtocol(val *string) {
+	if err := j.validateSetProtocolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"protocol",
 		val,
 	)
 }
@@ -885,6 +920,14 @@ func (s *jsiiProxy_SpringCloudGatewayRouteConfig) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudGatewayRouteConfig) ResetProtocol() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProtocol",
 		nil, // no parameters
 	)
 }

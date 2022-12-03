@@ -155,6 +155,9 @@ type ManagedDisk interface {
 	TrustedLaunchEnabled() interface{}
 	SetTrustedLaunchEnabled(val interface{})
 	TrustedLaunchEnabledInput() interface{}
+	UploadSizeBytes() *float64
+	SetUploadSizeBytes(val *float64)
+	UploadSizeBytesInput() *float64
 	Zone() *string
 	SetZone(val *string)
 	ZoneInput() *string
@@ -216,6 +219,7 @@ type ManagedDisk interface {
 	ResetTier()
 	ResetTimeouts()
 	ResetTrustedLaunchEnabled()
+	ResetUploadSizeBytes()
 	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -1052,6 +1056,26 @@ func (j *jsiiProxy_ManagedDisk) TrustedLaunchEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ManagedDisk) UploadSizeBytes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"uploadSizeBytes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedDisk) UploadSizeBytesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"uploadSizeBytesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ManagedDisk) Zone() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1504,6 +1528,17 @@ func (j *jsiiProxy_ManagedDisk)SetTrustedLaunchEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"trustedLaunchEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ManagedDisk)SetUploadSizeBytes(val *float64) {
+	if err := j.validateSetUploadSizeBytesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"uploadSizeBytes",
 		val,
 	)
 }
@@ -2035,6 +2070,14 @@ func (m *jsiiProxy_ManagedDisk) ResetTrustedLaunchEnabled() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetTrustedLaunchEnabled",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedDisk) ResetUploadSizeBytes() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetUploadSizeBytes",
 		nil, // no parameters
 	)
 }

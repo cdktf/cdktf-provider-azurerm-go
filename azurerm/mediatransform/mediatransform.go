@@ -148,7 +148,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "presetName", GoGetter: "PresetName"},
 			_jsii_.MemberProperty{JsiiProperty: "presetNameInput", GoGetter: "PresetNameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPresetName", GoMethod: "ResetPresetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
