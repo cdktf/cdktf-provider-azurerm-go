@@ -28,6 +28,9 @@ type SpringCloudGatewayRouteConfig interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Filters() *[]*string
+	SetFilters(val *[]*string)
+	FiltersInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -50,6 +53,9 @@ type SpringCloudGatewayRouteConfig interface {
 	Node() constructs.Node
 	OpenApi() SpringCloudGatewayRouteConfigOpenApiOutputReference
 	OpenApiInput() *SpringCloudGatewayRouteConfigOpenApi
+	Predicates() *[]*string
+	SetPredicates(val *[]*string)
+	PredicatesInput() *[]*string
 	Protocol() *string
 	SetProtocol(val *string)
 	ProtocolInput() *string
@@ -71,6 +77,9 @@ type SpringCloudGatewayRouteConfig interface {
 	SpringCloudGatewayId() *string
 	SetSpringCloudGatewayId(val *string)
 	SpringCloudGatewayIdInput() *string
+	SsoValidationEnabled() interface{}
+	SetSsoValidationEnabled(val interface{})
+	SsoValidationEnabledInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -107,14 +116,17 @@ type SpringCloudGatewayRouteConfig interface {
 	PutOpenApi(value *SpringCloudGatewayRouteConfigOpenApi)
 	PutRoute(value interface{})
 	PutTimeouts(value *SpringCloudGatewayRouteConfigTimeouts)
+	ResetFilters()
 	ResetId()
 	ResetOpenApi()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPredicates()
 	ResetProtocol()
 	ResetRoute()
 	ResetSpringCloudAppId()
+	ResetSsoValidationEnabled()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -176,6 +188,26 @@ func (j *jsiiProxy_SpringCloudGatewayRouteConfig) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGatewayRouteConfig) Filters() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"filters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGatewayRouteConfig) FiltersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"filtersInput",
 		&returns,
 	)
 	return returns
@@ -291,6 +323,26 @@ func (j *jsiiProxy_SpringCloudGatewayRouteConfig) OpenApiInput() *SpringCloudGat
 	return returns
 }
 
+func (j *jsiiProxy_SpringCloudGatewayRouteConfig) Predicates() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"predicates",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGatewayRouteConfig) PredicatesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"predicatesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpringCloudGatewayRouteConfig) Protocol() *string {
 	var returns *string
 	_jsii_.Get(
@@ -396,6 +448,26 @@ func (j *jsiiProxy_SpringCloudGatewayRouteConfig) SpringCloudGatewayIdInput() *s
 	_jsii_.Get(
 		j,
 		"springCloudGatewayIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGatewayRouteConfig) SsoValidationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ssoValidationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGatewayRouteConfig) SsoValidationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ssoValidationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -508,6 +580,17 @@ func (j *jsiiProxy_SpringCloudGatewayRouteConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_SpringCloudGatewayRouteConfig)SetFilters(val *[]*string) {
+	if err := j.validateSetFiltersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filters",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SpringCloudGatewayRouteConfig)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -545,6 +628,17 @@ func (j *jsiiProxy_SpringCloudGatewayRouteConfig)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpringCloudGatewayRouteConfig)SetPredicates(val *[]*string) {
+	if err := j.validateSetPredicatesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"predicates",
 		val,
 	)
 }
@@ -597,6 +691,17 @@ func (j *jsiiProxy_SpringCloudGatewayRouteConfig)SetSpringCloudGatewayId(val *st
 	_jsii_.Set(
 		j,
 		"springCloudGatewayId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpringCloudGatewayRouteConfig)SetSsoValidationEnabled(val interface{}) {
+	if err := j.validateSetSsoValidationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ssoValidationEnabled",
 		val,
 	)
 }
@@ -900,6 +1005,14 @@ func (s *jsiiProxy_SpringCloudGatewayRouteConfig) PutTimeouts(value *SpringCloud
 	)
 }
 
+func (s *jsiiProxy_SpringCloudGatewayRouteConfig) ResetFilters() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetFilters",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SpringCloudGatewayRouteConfig) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -924,6 +1037,14 @@ func (s *jsiiProxy_SpringCloudGatewayRouteConfig) ResetOverrideLogicalId() {
 	)
 }
 
+func (s *jsiiProxy_SpringCloudGatewayRouteConfig) ResetPredicates() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPredicates",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SpringCloudGatewayRouteConfig) ResetProtocol() {
 	_jsii_.InvokeVoid(
 		s,
@@ -944,6 +1065,14 @@ func (s *jsiiProxy_SpringCloudGatewayRouteConfig) ResetSpringCloudAppId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSpringCloudAppId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudGatewayRouteConfig) ResetSsoValidationEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSsoValidationEnabled",
 		nil, // no parameters
 	)
 }

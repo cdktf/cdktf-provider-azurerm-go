@@ -112,6 +112,10 @@ func (k *jsiiProxy_KubernetesCluster) validatePutServicePrincipalParameters(valu
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesCluster) validatePutStorageProfileParameters(value *KubernetesClusterStorageProfile) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesCluster) validatePutTimeoutsParameters(value *KubernetesClusterTimeouts) error {
 	return nil
 }
@@ -181,6 +185,14 @@ func (j *jsiiProxy_KubernetesCluster) validateSetHttpApplicationRoutingEnabledPa
 }
 
 func (j *jsiiProxy_KubernetesCluster) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesCluster) validateSetImageCleanerEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesCluster) validateSetImageCleanerIntervalHoursParameters(val *float64) error {
 	return nil
 }
 

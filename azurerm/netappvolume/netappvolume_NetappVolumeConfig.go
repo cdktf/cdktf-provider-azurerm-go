@@ -37,6 +37,8 @@ type NetappVolumeConfig struct {
 	SubnetId *string `field:"required" json:"subnetId" yaml:"subnetId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/netapp_volume#volume_path NetappVolume#volume_path}.
 	VolumePath *string `field:"required" json:"volumePath" yaml:"volumePath"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/netapp_volume#azure_vmware_data_store_enabled NetappVolume#azure_vmware_data_store_enabled}.
+	AzureVmwareDataStoreEnabled interface{} `field:"optional" json:"azureVmwareDataStoreEnabled" yaml:"azureVmwareDataStoreEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/netapp_volume#create_from_snapshot_resource_id NetappVolume#create_from_snapshot_resource_id}.
 	CreateFromSnapshotResourceId *string `field:"optional" json:"createFromSnapshotResourceId" yaml:"createFromSnapshotResourceId"`
 	// data_protection_replication block.

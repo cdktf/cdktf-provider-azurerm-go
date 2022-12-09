@@ -10,5 +10,7 @@ type MssqlVirtualMachineAutoBackupManualSchedule struct {
 	FullBackupWindowInHours *float64 `field:"required" json:"fullBackupWindowInHours" yaml:"fullBackupWindowInHours"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_virtual_machine#log_backup_frequency_in_minutes MssqlVirtualMachine#log_backup_frequency_in_minutes}.
 	LogBackupFrequencyInMinutes *float64 `field:"required" json:"logBackupFrequencyInMinutes" yaml:"logBackupFrequencyInMinutes"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_virtual_machine#days_of_week MssqlVirtualMachine#days_of_week}.
+	DaysOfWeek *[]*string `field:"optional" json:"daysOfWeek" yaml:"daysOfWeek"`
 }
 

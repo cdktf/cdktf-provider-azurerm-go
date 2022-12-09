@@ -28,6 +28,9 @@ type KubernetesClusterDefaultNodePoolOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomCaTrustEnabled() interface{}
+	SetCustomCaTrustEnabled(val interface{})
+	CustomCaTrustEnabledInput() interface{}
 	EnableAutoScaling() interface{}
 	SetEnableAutoScaling(val interface{})
 	EnableAutoScalingInput() interface{}
@@ -164,6 +167,7 @@ type KubernetesClusterDefaultNodePoolOutputReference interface {
 	PutLinuxOsConfig(value *KubernetesClusterDefaultNodePoolLinuxOsConfig)
 	PutUpgradeSettings(value *KubernetesClusterDefaultNodePoolUpgradeSettings)
 	ResetCapacityReservationGroupId()
+	ResetCustomCaTrustEnabled()
 	ResetEnableAutoScaling()
 	ResetEnableHostEncryption()
 	ResetEnableNodePublicIp()
@@ -255,6 +259,26 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) CreationStac
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) CustomCaTrustEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customCaTrustEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) CustomCaTrustEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customCaTrustEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1021,6 +1045,17 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetComplexObj
 	)
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetCustomCaTrustEnabled(val interface{}) {
+	if err := j.validateSetCustomCaTrustEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customCaTrustEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetEnableAutoScaling(val interface{}) {
 	if err := j.validateSetEnableAutoScalingParameters(val); err != nil {
 		panic(err)
@@ -1607,6 +1642,14 @@ func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetCapacit
 	_jsii_.InvokeVoid(
 		k,
 		"resetCapacityReservationGroupId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetCustomCaTrustEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetCustomCaTrustEnabled",
 		nil, // no parameters
 	)
 }

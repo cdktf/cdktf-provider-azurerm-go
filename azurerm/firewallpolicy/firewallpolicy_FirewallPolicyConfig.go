@@ -25,12 +25,18 @@ type FirewallPolicyConfig struct {
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/firewall_policy#resource_group_name FirewallPolicy#resource_group_name}.
 	ResourceGroupName *string `field:"required" json:"resourceGroupName" yaml:"resourceGroupName"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/firewall_policy#auto_learn_private_ranges_enabled FirewallPolicy#auto_learn_private_ranges_enabled}.
+	AutoLearnPrivateRangesEnabled interface{} `field:"optional" json:"autoLearnPrivateRangesEnabled" yaml:"autoLearnPrivateRangesEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/firewall_policy#base_policy_id FirewallPolicy#base_policy_id}.
 	BasePolicyId *string `field:"optional" json:"basePolicyId" yaml:"basePolicyId"`
 	// dns block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/firewall_policy#dns FirewallPolicy#dns}
 	Dns *FirewallPolicyDns `field:"optional" json:"dns" yaml:"dns"`
+	// explicit_proxy block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/firewall_policy#explicit_proxy FirewallPolicy#explicit_proxy}
+	ExplicitProxy *FirewallPolicyExplicitProxy `field:"optional" json:"explicitProxy" yaml:"explicitProxy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/firewall_policy#id FirewallPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

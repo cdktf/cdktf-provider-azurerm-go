@@ -27,6 +27,9 @@ type KubernetesClusterNodePool interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	CustomCaTrustEnabled() interface{}
+	SetCustomCaTrustEnabled(val interface{})
+	CustomCaTrustEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -204,6 +207,7 @@ type KubernetesClusterNodePool interface {
 	PutTimeouts(value *KubernetesClusterNodePoolTimeouts)
 	PutUpgradeSettings(value *KubernetesClusterNodePoolUpgradeSettings)
 	ResetCapacityReservationGroupId()
+	ResetCustomCaTrustEnabled()
 	ResetEnableAutoScaling()
 	ResetEnableHostEncryption()
 	ResetEnableNodePublicIp()
@@ -313,6 +317,26 @@ func (j *jsiiProxy_KubernetesClusterNodePool) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) CustomCaTrustEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customCaTrustEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) CustomCaTrustEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customCaTrustEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1278,6 +1302,17 @@ func (j *jsiiProxy_KubernetesClusterNodePool)SetCount(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_KubernetesClusterNodePool)SetCustomCaTrustEnabled(val interface{}) {
+	if err := j.validateSetCustomCaTrustEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customCaTrustEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KubernetesClusterNodePool)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -2023,6 +2058,14 @@ func (k *jsiiProxy_KubernetesClusterNodePool) ResetCapacityReservationGroupId() 
 	_jsii_.InvokeVoid(
 		k,
 		"resetCapacityReservationGroupId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNodePool) ResetCustomCaTrustEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetCustomCaTrustEnabled",
 		nil, // no parameters
 	)
 }

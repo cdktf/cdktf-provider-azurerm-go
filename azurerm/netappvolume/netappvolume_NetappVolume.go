@@ -15,6 +15,9 @@ type NetappVolume interface {
 	AccountName() *string
 	SetAccountName(val *string)
 	AccountNameInput() *string
+	AzureVmwareDataStoreEnabled() interface{}
+	SetAzureVmwareDataStoreEnabled(val interface{})
+	AzureVmwareDataStoreEnabledInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -147,6 +150,7 @@ type NetappVolume interface {
 	PutDataProtectionSnapshotPolicy(value *NetappVolumeDataProtectionSnapshotPolicy)
 	PutExportPolicyRule(value interface{})
 	PutTimeouts(value *NetappVolumeTimeouts)
+	ResetAzureVmwareDataStoreEnabled()
 	ResetCreateFromSnapshotResourceId()
 	ResetDataProtectionReplication()
 	ResetDataProtectionSnapshotPolicy()
@@ -192,6 +196,26 @@ func (j *jsiiProxy_NetappVolume) AccountNameInput() *string {
 	_jsii_.Get(
 		j,
 		"accountNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) AzureVmwareDataStoreEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"azureVmwareDataStoreEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) AzureVmwareDataStoreEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"azureVmwareDataStoreEnabledInput",
 		&returns,
 	)
 	return returns
@@ -808,6 +832,17 @@ func (j *jsiiProxy_NetappVolume)SetAccountName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_NetappVolume)SetAzureVmwareDataStoreEnabled(val interface{}) {
+	if err := j.validateSetAzureVmwareDataStoreEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"azureVmwareDataStoreEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetappVolume)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -1356,6 +1391,14 @@ func (n *jsiiProxy_NetappVolume) PutTimeouts(value *NetappVolumeTimeouts) {
 		n,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetappVolume) ResetAzureVmwareDataStoreEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAzureVmwareDataStoreEnabled",
+		nil, // no parameters
 	)
 }
 

@@ -23,6 +23,8 @@ type SpringCloudGatewayRouteConfigConfig struct {
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway_route_config#spring_cloud_gateway_id SpringCloudGatewayRouteConfig#spring_cloud_gateway_id}.
 	SpringCloudGatewayId *string `field:"required" json:"springCloudGatewayId" yaml:"springCloudGatewayId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway_route_config#filters SpringCloudGatewayRouteConfig#filters}.
+	Filters *[]*string `field:"optional" json:"filters" yaml:"filters"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway_route_config#id SpringCloudGatewayRouteConfig#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -32,6 +34,8 @@ type SpringCloudGatewayRouteConfigConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway_route_config#open_api SpringCloudGatewayRouteConfig#open_api}
 	OpenApi *SpringCloudGatewayRouteConfigOpenApi `field:"optional" json:"openApi" yaml:"openApi"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway_route_config#predicates SpringCloudGatewayRouteConfig#predicates}.
+	Predicates *[]*string `field:"optional" json:"predicates" yaml:"predicates"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway_route_config#protocol SpringCloudGatewayRouteConfig#protocol}.
 	Protocol *string `field:"optional" json:"protocol" yaml:"protocol"`
 	// route block.
@@ -40,6 +44,8 @@ type SpringCloudGatewayRouteConfigConfig struct {
 	Route interface{} `field:"optional" json:"route" yaml:"route"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway_route_config#spring_cloud_app_id SpringCloudGatewayRouteConfig#spring_cloud_app_id}.
 	SpringCloudAppId *string `field:"optional" json:"springCloudAppId" yaml:"springCloudAppId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway_route_config#sso_validation_enabled SpringCloudGatewayRouteConfig#sso_validation_enabled}.
+	SsoValidationEnabled interface{} `field:"optional" json:"ssoValidationEnabled" yaml:"ssoValidationEnabled"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway_route_config#timeouts SpringCloudGatewayRouteConfig#timeouts}

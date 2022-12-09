@@ -12,6 +12,8 @@ func init() {
 		reflect.TypeOf((*FirewallPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "autoLearnPrivateRangesEnabled", GoGetter: "AutoLearnPrivateRangesEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "autoLearnPrivateRangesEnabledInput", GoGetter: "AutoLearnPrivateRangesEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "basePolicyId", GoGetter: "BasePolicyId"},
 			_jsii_.MemberProperty{JsiiProperty: "basePolicyIdInput", GoGetter: "BasePolicyIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -22,6 +24,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "dns", GoGetter: "Dns"},
 			_jsii_.MemberProperty{JsiiProperty: "dnsInput", GoGetter: "DnsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "explicitProxy", GoGetter: "ExplicitProxy"},
+			_jsii_.MemberProperty{JsiiProperty: "explicitProxyInput", GoGetter: "ExplicitProxyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "firewalls", GoGetter: "Firewalls"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -56,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putDns", GoMethod: "PutDns"},
+			_jsii_.MemberMethod{JsiiMethod: "putExplicitProxy", GoMethod: "PutExplicitProxy"},
 			_jsii_.MemberMethod{JsiiMethod: "putIdentity", GoMethod: "PutIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "putInsights", GoMethod: "PutInsights"},
 			_jsii_.MemberMethod{JsiiMethod: "putIntrusionDetection", GoMethod: "PutIntrusionDetection"},
@@ -63,8 +68,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putTlsCertificate", GoMethod: "PutTlsCertificate"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAutoLearnPrivateRangesEnabled", GoMethod: "ResetAutoLearnPrivateRangesEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBasePolicyId", GoMethod: "ResetBasePolicyId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDns", GoMethod: "ResetDns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExplicitProxy", GoMethod: "ResetExplicitProxy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIdentity", GoMethod: "ResetIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInsights", GoMethod: "ResetInsights"},
@@ -151,6 +158,60 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FirewallPolicyDnsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.firewallPolicy.FirewallPolicyExplicitProxy",
+		reflect.TypeOf((*FirewallPolicyExplicitProxy)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.firewallPolicy.FirewallPolicyExplicitProxyOutputReference",
+		reflect.TypeOf((*FirewallPolicyExplicitProxyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enablePacFile", GoGetter: "EnablePacFile"},
+			_jsii_.MemberProperty{JsiiProperty: "enablePacFileInput", GoGetter: "EnablePacFileInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "httpPort", GoGetter: "HttpPort"},
+			_jsii_.MemberProperty{JsiiProperty: "httpPortInput", GoGetter: "HttpPortInput"},
+			_jsii_.MemberProperty{JsiiProperty: "httpsPort", GoGetter: "HttpsPort"},
+			_jsii_.MemberProperty{JsiiProperty: "httpsPortInput", GoGetter: "HttpsPortInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "pacFile", GoGetter: "PacFile"},
+			_jsii_.MemberProperty{JsiiProperty: "pacFileInput", GoGetter: "PacFileInput"},
+			_jsii_.MemberProperty{JsiiProperty: "pacFilePort", GoGetter: "PacFilePort"},
+			_jsii_.MemberProperty{JsiiProperty: "pacFilePortInput", GoGetter: "PacFilePortInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnablePacFile", GoMethod: "ResetEnablePacFile"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHttpPort", GoMethod: "ResetHttpPort"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHttpsPort", GoMethod: "ResetHttpsPort"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPacFile", GoMethod: "ResetPacFile"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPacFilePort", GoMethod: "ResetPacFilePort"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_FirewallPolicyExplicitProxyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

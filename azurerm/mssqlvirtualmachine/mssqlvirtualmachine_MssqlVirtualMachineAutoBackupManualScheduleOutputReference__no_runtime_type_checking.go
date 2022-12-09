@@ -56,6 +56,10 @@ func (j *jsiiProxy_MssqlVirtualMachineAutoBackupManualScheduleOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_MssqlVirtualMachineAutoBackupManualScheduleOutputReference) validateSetDaysOfWeekParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlVirtualMachineAutoBackupManualScheduleOutputReference) validateSetFullBackupFrequencyParameters(val *string) error {
 	return nil
 }

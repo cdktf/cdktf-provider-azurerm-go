@@ -128,6 +128,10 @@ func (j *jsiiProxy_ApiManagementSecurityOutputReference) validateSetTlsRsaWithAe
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) validateSetTlsRsaWithAes256GcmSha384CiphersEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementSecurityOutputReference) validateSetTripleDesCiphersEnabledParameters(val interface{}) error {
 	return nil
 }

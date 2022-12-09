@@ -34,6 +34,8 @@ type LbProbeConfig struct {
 	IntervalInSeconds *float64 `field:"optional" json:"intervalInSeconds" yaml:"intervalInSeconds"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/lb_probe#number_of_probes LbProbe#number_of_probes}.
 	NumberOfProbes *float64 `field:"optional" json:"numberOfProbes" yaml:"numberOfProbes"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/lb_probe#probe_threshold LbProbe#probe_threshold}.
+	ProbeThreshold *float64 `field:"optional" json:"probeThreshold" yaml:"probeThreshold"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/lb_probe#protocol LbProbe#protocol}.
 	Protocol *string `field:"optional" json:"protocol" yaml:"protocol"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/lb_probe#request_path LbProbe#request_path}.

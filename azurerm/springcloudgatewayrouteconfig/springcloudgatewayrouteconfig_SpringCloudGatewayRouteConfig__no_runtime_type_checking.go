@@ -80,6 +80,10 @@ func (j *jsiiProxy_SpringCloudGatewayRouteConfig) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudGatewayRouteConfig) validateSetFiltersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudGatewayRouteConfig) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (j *jsiiProxy_SpringCloudGatewayRouteConfig) validateSetLifecycleParameters
 }
 
 func (j *jsiiProxy_SpringCloudGatewayRouteConfig) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SpringCloudGatewayRouteConfig) validateSetPredicatesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -105,6 +113,10 @@ func (j *jsiiProxy_SpringCloudGatewayRouteConfig) validateSetSpringCloudAppIdPar
 }
 
 func (j *jsiiProxy_SpringCloudGatewayRouteConfig) validateSetSpringCloudGatewayIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SpringCloudGatewayRouteConfig) validateSetSsoValidationEnabledParameters(val interface{}) error {
 	return nil
 }
 

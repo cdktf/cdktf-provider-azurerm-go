@@ -100,6 +100,10 @@ func (j *jsiiProxy_LbProbe) validateSetPortParameters(val *float64) error {
 	return nil
 }
 
+func (j *jsiiProxy_LbProbe) validateSetProbeThresholdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbProbe) validateSetProtocolParameters(val *string) error {
 	return nil
 }

@@ -91,7 +91,6 @@ type SpringCloudGatewayRouteConfigRouteOutputReference interface {
 	ResetClassificationTags()
 	ResetDescription()
 	ResetFilters()
-	ResetOrder()
 	ResetPredicates()
 	ResetSsoValidationEnabled()
 	ResetTitle()
@@ -750,14 +749,6 @@ func (s *jsiiProxy_SpringCloudGatewayRouteConfigRouteOutputReference) ResetFilte
 	_jsii_.InvokeVoid(
 		s,
 		"resetFilters",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SpringCloudGatewayRouteConfigRouteOutputReference) ResetOrder() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetOrder",
 		nil, // no parameters
 	)
 }

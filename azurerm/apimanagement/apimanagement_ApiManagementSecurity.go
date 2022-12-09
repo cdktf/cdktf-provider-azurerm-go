@@ -32,6 +32,8 @@ type ApiManagementSecurity struct {
 	TlsRsaWithAes256CbcSha256CiphersEnabled interface{} `field:"optional" json:"tlsRsaWithAes256CbcSha256CiphersEnabled" yaml:"tlsRsaWithAes256CbcSha256CiphersEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management#tls_rsa_with_aes256_cbc_sha_ciphers_enabled ApiManagement#tls_rsa_with_aes256_cbc_sha_ciphers_enabled}.
 	TlsRsaWithAes256CbcShaCiphersEnabled interface{} `field:"optional" json:"tlsRsaWithAes256CbcShaCiphersEnabled" yaml:"tlsRsaWithAes256CbcShaCiphersEnabled"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management#tls_rsa_with_aes256_gcm_sha384_ciphers_enabled ApiManagement#tls_rsa_with_aes256_gcm_sha384_ciphers_enabled}.
+	TlsRsaWithAes256GcmSha384CiphersEnabled interface{} `field:"optional" json:"tlsRsaWithAes256GcmSha384CiphersEnabled" yaml:"tlsRsaWithAes256GcmSha384CiphersEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/api_management#triple_des_ciphers_enabled ApiManagement#triple_des_ciphers_enabled}.
 	TripleDesCiphersEnabled interface{} `field:"optional" json:"tripleDesCiphersEnabled" yaml:"tripleDesCiphersEnabled"`
 }

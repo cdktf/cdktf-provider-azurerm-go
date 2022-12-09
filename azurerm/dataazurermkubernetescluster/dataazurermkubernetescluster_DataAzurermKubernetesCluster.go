@@ -85,6 +85,7 @@ type DataAzurermKubernetesCluster interface {
 	ResourceGroupNameInput() *string
 	RoleBasedAccessControlEnabled() cdktf.IResolvable
 	ServicePrincipal() DataAzurermKubernetesClusterServicePrincipalList
+	StorageProfile() DataAzurermKubernetesClusterStorageProfileList
 	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -626,6 +627,16 @@ func (j *jsiiProxy_DataAzurermKubernetesCluster) ServicePrincipal() DataAzurermK
 	_jsii_.Get(
 		j,
 		"servicePrincipal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermKubernetesCluster) StorageProfile() DataAzurermKubernetesClusterStorageProfileList {
+	var returns DataAzurermKubernetesClusterStorageProfileList
+	_jsii_.Get(
+		j,
+		"storageProfile",
 		&returns,
 	)
 	return returns

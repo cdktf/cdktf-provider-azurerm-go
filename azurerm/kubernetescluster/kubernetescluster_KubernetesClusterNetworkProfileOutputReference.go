@@ -31,6 +31,9 @@ type KubernetesClusterNetworkProfileOutputReference interface {
 	DockerBridgeCidr() *string
 	SetDockerBridgeCidr(val *string)
 	DockerBridgeCidrInput() *string
+	EbpfDataPlane() *string
+	SetEbpfDataPlane(val *string)
+	EbpfDataPlaneInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *KubernetesClusterNetworkProfile
@@ -51,6 +54,9 @@ type KubernetesClusterNetworkProfileOutputReference interface {
 	NetworkPlugin() *string
 	SetNetworkPlugin(val *string)
 	NetworkPluginInput() *string
+	NetworkPluginMode() *string
+	SetNetworkPluginMode(val *string)
+	NetworkPluginModeInput() *string
 	NetworkPolicy() *string
 	SetNetworkPolicy(val *string)
 	NetworkPolicyInput() *string
@@ -105,11 +111,13 @@ type KubernetesClusterNetworkProfileOutputReference interface {
 	PutNatGatewayProfile(value *KubernetesClusterNetworkProfileNatGatewayProfile)
 	ResetDnsServiceIp()
 	ResetDockerBridgeCidr()
+	ResetEbpfDataPlane()
 	ResetIpVersions()
 	ResetLoadBalancerProfile()
 	ResetLoadBalancerSku()
 	ResetNatGatewayProfile()
 	ResetNetworkMode()
+	ResetNetworkPluginMode()
 	ResetNetworkPolicy()
 	ResetOutboundType()
 	ResetPodCidr()
@@ -196,6 +204,26 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) DockerBridgeC
 	_jsii_.Get(
 		j,
 		"dockerBridgeCidrInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) EbpfDataPlane() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ebpfDataPlane",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) EbpfDataPlaneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ebpfDataPlaneInput",
 		&returns,
 	)
 	return returns
@@ -336,6 +364,26 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) NetworkPlugin
 	_jsii_.Get(
 		j,
 		"networkPluginInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) NetworkPluginMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkPluginMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) NetworkPluginModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkPluginModeInput",
 		&returns,
 	)
 	return returns
@@ -553,6 +601,17 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetDockerBridg
 	)
 }
 
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetEbpfDataPlane(val *string) {
+	if err := j.validateSetEbpfDataPlaneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ebpfDataPlane",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetInternalValue(val *KubernetesClusterNetworkProfile) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -604,6 +663,17 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetNetworkPlug
 	_jsii_.Set(
 		j,
 		"networkPlugin",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetNetworkPluginMode(val *string) {
+	if err := j.validateSetNetworkPluginModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkPluginMode",
 		val,
 	)
 }
@@ -920,6 +990,14 @@ func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetDockerBr
 	)
 }
 
+func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetEbpfDataPlane() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetEbpfDataPlane",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetIpVersions() {
 	_jsii_.InvokeVoid(
 		k,
@@ -956,6 +1034,14 @@ func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetNetworkM
 	_jsii_.InvokeVoid(
 		k,
 		"resetNetworkMode",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetNetworkPluginMode() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetNetworkPluginMode",
 		nil, // no parameters
 	)
 }

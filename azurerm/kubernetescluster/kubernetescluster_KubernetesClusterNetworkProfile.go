@@ -8,6 +8,8 @@ type KubernetesClusterNetworkProfile struct {
 	DnsServiceIp *string `field:"optional" json:"dnsServiceIp" yaml:"dnsServiceIp"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#docker_bridge_cidr KubernetesCluster#docker_bridge_cidr}.
 	DockerBridgeCidr *string `field:"optional" json:"dockerBridgeCidr" yaml:"dockerBridgeCidr"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#ebpf_data_plane KubernetesCluster#ebpf_data_plane}.
+	EbpfDataPlane *string `field:"optional" json:"ebpfDataPlane" yaml:"ebpfDataPlane"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#ip_versions KubernetesCluster#ip_versions}.
 	IpVersions *[]*string `field:"optional" json:"ipVersions" yaml:"ipVersions"`
 	// load_balancer_profile block.
@@ -22,6 +24,8 @@ type KubernetesClusterNetworkProfile struct {
 	NatGatewayProfile *KubernetesClusterNetworkProfileNatGatewayProfile `field:"optional" json:"natGatewayProfile" yaml:"natGatewayProfile"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#network_mode KubernetesCluster#network_mode}.
 	NetworkMode *string `field:"optional" json:"networkMode" yaml:"networkMode"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#network_plugin_mode KubernetesCluster#network_plugin_mode}.
+	NetworkPluginMode *string `field:"optional" json:"networkPluginMode" yaml:"networkPluginMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#network_policy KubernetesCluster#network_policy}.
 	NetworkPolicy *string `field:"optional" json:"networkPolicy" yaml:"networkPolicy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#outbound_type KubernetesCluster#outbound_type}.

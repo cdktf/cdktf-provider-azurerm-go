@@ -61,6 +61,9 @@ type LbProbe interface {
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
+	ProbeThreshold() *float64
+	SetProbeThreshold(val *float64)
+	ProbeThresholdInput() *float64
 	Protocol() *string
 	SetProtocol(val *string)
 	ProtocolInput() *string
@@ -117,6 +120,7 @@ type LbProbe interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProbeThreshold()
 	ResetProtocol()
 	ResetRequestPath()
 	ResetTimeouts()
@@ -360,6 +364,26 @@ func (j *jsiiProxy_LbProbe) PortInput() *float64 {
 	_jsii_.Get(
 		j,
 		"portInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbProbe) ProbeThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"probeThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbProbe) ProbeThresholdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"probeThresholdInput",
 		&returns,
 	)
 	return returns
@@ -623,6 +647,17 @@ func (j *jsiiProxy_LbProbe)SetPort(val *float64) {
 	_jsii_.Set(
 		j,
 		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbProbe)SetProbeThreshold(val *float64) {
+	if err := j.validateSetProbeThresholdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"probeThreshold",
 		val,
 	)
 }
@@ -973,6 +1008,14 @@ func (l *jsiiProxy_LbProbe) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbProbe) ResetProbeThreshold() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetProbeThreshold",
 		nil, // no parameters
 	)
 }

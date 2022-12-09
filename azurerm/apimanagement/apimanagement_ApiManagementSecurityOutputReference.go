@@ -82,6 +82,9 @@ type ApiManagementSecurityOutputReference interface {
 	TlsRsaWithAes256CbcShaCiphersEnabled() interface{}
 	SetTlsRsaWithAes256CbcShaCiphersEnabled(val interface{})
 	TlsRsaWithAes256CbcShaCiphersEnabledInput() interface{}
+	TlsRsaWithAes256GcmSha384CiphersEnabled() interface{}
+	SetTlsRsaWithAes256GcmSha384CiphersEnabled(val interface{})
+	TlsRsaWithAes256GcmSha384CiphersEnabledInput() interface{}
 	TripleDesCiphersEnabled() interface{}
 	SetTripleDesCiphersEnabled(val interface{})
 	TripleDesCiphersEnabledInput() interface{}
@@ -124,6 +127,7 @@ type ApiManagementSecurityOutputReference interface {
 	ResetTlsRsaWithAes128GcmSha256CiphersEnabled()
 	ResetTlsRsaWithAes256CbcSha256CiphersEnabled()
 	ResetTlsRsaWithAes256CbcShaCiphersEnabled()
+	ResetTlsRsaWithAes256GcmSha384CiphersEnabled()
 	ResetTripleDesCiphersEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -510,6 +514,26 @@ func (j *jsiiProxy_ApiManagementSecurityOutputReference) TlsRsaWithAes256CbcShaC
 	return returns
 }
 
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) TlsRsaWithAes256GcmSha384CiphersEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tlsRsaWithAes256GcmSha384CiphersEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) TlsRsaWithAes256GcmSha384CiphersEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tlsRsaWithAes256GcmSha384CiphersEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiManagementSecurityOutputReference) TripleDesCiphersEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -774,6 +798,17 @@ func (j *jsiiProxy_ApiManagementSecurityOutputReference)SetTlsRsaWithAes256CbcSh
 	_jsii_.Set(
 		j,
 		"tlsRsaWithAes256CbcShaCiphersEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference)SetTlsRsaWithAes256GcmSha384CiphersEnabled(val interface{}) {
+	if err := j.validateSetTlsRsaWithAes256GcmSha384CiphersEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsRsaWithAes256GcmSha384CiphersEnabled",
 		val,
 	)
 }
@@ -1091,6 +1126,14 @@ func (a *jsiiProxy_ApiManagementSecurityOutputReference) ResetTlsRsaWithAes256Cb
 	_jsii_.InvokeVoid(
 		a,
 		"resetTlsRsaWithAes256CbcShaCiphersEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiManagementSecurityOutputReference) ResetTlsRsaWithAes256GcmSha384CiphersEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTlsRsaWithAes256GcmSha384CiphersEnabled",
 		nil, // no parameters
 	)
 }

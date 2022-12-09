@@ -72,6 +72,10 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetDo
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetEbpfDataPlaneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetInternalValueParameters(val *KubernetesClusterNetworkProfile) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetNe
 }
 
 func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetNetworkPluginParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetNetworkPluginModeParameters(val *string) error {
 	return nil
 }
 

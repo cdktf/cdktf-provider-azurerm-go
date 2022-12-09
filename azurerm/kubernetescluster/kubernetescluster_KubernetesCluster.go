@@ -80,6 +80,12 @@ type KubernetesCluster interface {
 	Identity() KubernetesClusterIdentityOutputReference
 	IdentityInput() *KubernetesClusterIdentity
 	IdInput() *string
+	ImageCleanerEnabled() interface{}
+	SetImageCleanerEnabled(val interface{})
+	ImageCleanerEnabledInput() interface{}
+	ImageCleanerIntervalHours() *float64
+	SetImageCleanerIntervalHours(val *float64)
+	ImageCleanerIntervalHoursInput() *float64
 	IngressApplicationGateway() KubernetesClusterIngressApplicationGatewayOutputReference
 	IngressApplicationGatewayInput() *KubernetesClusterIngressApplicationGateway
 	KeyVaultSecretsProvider() KubernetesClusterKeyVaultSecretsProviderOutputReference
@@ -166,6 +172,8 @@ type KubernetesCluster interface {
 	SkuTier() *string
 	SetSkuTier(val *string)
 	SkuTierInput() *string
+	StorageProfile() KubernetesClusterStorageProfileOutputReference
+	StorageProfileInput() *KubernetesClusterStorageProfile
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -226,6 +234,7 @@ type KubernetesCluster interface {
 	PutNetworkProfile(value *KubernetesClusterNetworkProfile)
 	PutOmsAgent(value *KubernetesClusterOmsAgent)
 	PutServicePrincipal(value *KubernetesClusterServicePrincipal)
+	PutStorageProfile(value *KubernetesClusterStorageProfile)
 	PutTimeouts(value *KubernetesClusterTimeouts)
 	PutWebAppRouting(value *KubernetesClusterWebAppRouting)
 	PutWindowsProfile(value *KubernetesClusterWindowsProfile)
@@ -245,6 +254,8 @@ type KubernetesCluster interface {
 	ResetHttpProxyConfig()
 	ResetId()
 	ResetIdentity()
+	ResetImageCleanerEnabled()
+	ResetImageCleanerIntervalHours()
 	ResetIngressApplicationGateway()
 	ResetKeyVaultSecretsProvider()
 	ResetKubeletIdentity()
@@ -269,6 +280,7 @@ type KubernetesCluster interface {
 	ResetRunCommandEnabled()
 	ResetServicePrincipal()
 	ResetSkuTier()
+	ResetStorageProfile()
 	ResetTags()
 	ResetTimeouts()
 	ResetWebAppRouting()
@@ -705,6 +717,46 @@ func (j *jsiiProxy_KubernetesCluster) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) ImageCleanerEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"imageCleanerEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) ImageCleanerEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"imageCleanerEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) ImageCleanerIntervalHours() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"imageCleanerIntervalHours",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) ImageCleanerIntervalHoursInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"imageCleanerIntervalHoursInput",
 		&returns,
 	)
 	return returns
@@ -1310,6 +1362,26 @@ func (j *jsiiProxy_KubernetesCluster) SkuTierInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesCluster) StorageProfile() KubernetesClusterStorageProfileOutputReference {
+	var returns KubernetesClusterStorageProfileOutputReference
+	_jsii_.Get(
+		j,
+		"storageProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) StorageProfileInput() *KubernetesClusterStorageProfile {
+	var returns *KubernetesClusterStorageProfile
+	_jsii_.Get(
+		j,
+		"storageProfileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesCluster) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -1631,6 +1703,28 @@ func (j *jsiiProxy_KubernetesCluster)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesCluster)SetImageCleanerEnabled(val interface{}) {
+	if err := j.validateSetImageCleanerEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"imageCleanerEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesCluster)SetImageCleanerIntervalHours(val *float64) {
+	if err := j.validateSetImageCleanerIntervalHoursParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"imageCleanerIntervalHours",
 		val,
 	)
 }
@@ -2283,6 +2377,17 @@ func (k *jsiiProxy_KubernetesCluster) PutServicePrincipal(value *KubernetesClust
 	)
 }
 
+func (k *jsiiProxy_KubernetesCluster) PutStorageProfile(value *KubernetesClusterStorageProfile) {
+	if err := k.validatePutStorageProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putStorageProfile",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesCluster) PutTimeouts(value *KubernetesClusterTimeouts) {
 	if err := k.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -2443,6 +2548,22 @@ func (k *jsiiProxy_KubernetesCluster) ResetIdentity() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetImageCleanerEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetImageCleanerEnabled",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetImageCleanerIntervalHours() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetImageCleanerIntervalHours",
 		nil, // no parameters
 	)
 }
@@ -2619,6 +2740,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetSkuTier() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetSkuTier",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetStorageProfile() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetStorageProfile",
 		nil, // no parameters
 	)
 }

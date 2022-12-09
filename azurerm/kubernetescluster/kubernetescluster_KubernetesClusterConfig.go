@@ -72,6 +72,10 @@ type KubernetesClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#identity KubernetesCluster#identity}
 	Identity *KubernetesClusterIdentity `field:"optional" json:"identity" yaml:"identity"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#image_cleaner_enabled KubernetesCluster#image_cleaner_enabled}.
+	ImageCleanerEnabled interface{} `field:"optional" json:"imageCleanerEnabled" yaml:"imageCleanerEnabled"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#image_cleaner_interval_hours KubernetesCluster#image_cleaner_interval_hours}.
+	ImageCleanerIntervalHours *float64 `field:"optional" json:"imageCleanerIntervalHours" yaml:"imageCleanerIntervalHours"`
 	// ingress_application_gateway block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#ingress_application_gateway KubernetesCluster#ingress_application_gateway}
@@ -132,6 +136,10 @@ type KubernetesClusterConfig struct {
 	ServicePrincipal *KubernetesClusterServicePrincipal `field:"optional" json:"servicePrincipal" yaml:"servicePrincipal"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#sku_tier KubernetesCluster#sku_tier}.
 	SkuTier *string `field:"optional" json:"skuTier" yaml:"skuTier"`
+	// storage_profile block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#storage_profile KubernetesCluster#storage_profile}
+	StorageProfile *KubernetesClusterStorageProfile `field:"optional" json:"storageProfile" yaml:"storageProfile"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#tags KubernetesCluster#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.

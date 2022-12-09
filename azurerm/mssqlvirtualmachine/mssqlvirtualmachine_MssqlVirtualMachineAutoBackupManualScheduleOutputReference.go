@@ -25,6 +25,9 @@ type MssqlVirtualMachineAutoBackupManualScheduleOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DaysOfWeek() *[]*string
+	SetDaysOfWeek(val *[]*string)
+	DaysOfWeekInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	FullBackupFrequency() *string
@@ -73,6 +76,7 @@ type MssqlVirtualMachineAutoBackupManualScheduleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDaysOfWeek()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -113,6 +117,26 @@ func (j *jsiiProxy_MssqlVirtualMachineAutoBackupManualScheduleOutputReference) C
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineAutoBackupManualScheduleOutputReference) DaysOfWeek() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"daysOfWeek",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineAutoBackupManualScheduleOutputReference) DaysOfWeekInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"daysOfWeekInput",
 		&returns,
 	)
 	return returns
@@ -284,6 +308,17 @@ func (j *jsiiProxy_MssqlVirtualMachineAutoBackupManualScheduleOutputReference)Se
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlVirtualMachineAutoBackupManualScheduleOutputReference)SetDaysOfWeek(val *[]*string) {
+	if err := j.validateSetDaysOfWeekParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"daysOfWeek",
 		val,
 	)
 }
@@ -549,6 +584,14 @@ func (m *jsiiProxy_MssqlVirtualMachineAutoBackupManualScheduleOutputReference) I
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MssqlVirtualMachineAutoBackupManualScheduleOutputReference) ResetDaysOfWeek() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDaysOfWeek",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MssqlVirtualMachineAutoBackupManualScheduleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

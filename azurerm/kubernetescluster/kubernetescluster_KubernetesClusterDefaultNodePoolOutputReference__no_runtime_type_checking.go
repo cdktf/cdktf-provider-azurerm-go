@@ -72,6 +72,10 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetCustomCaTrustEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetEnableAutoScalingParameters(val interface{}) error {
 	return nil
 }

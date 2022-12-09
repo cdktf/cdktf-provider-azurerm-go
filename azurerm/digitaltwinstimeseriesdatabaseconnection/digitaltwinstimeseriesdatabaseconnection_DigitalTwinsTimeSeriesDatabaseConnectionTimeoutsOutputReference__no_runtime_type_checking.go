@@ -1,0 +1,86 @@
+//go:build no_runtime_type_checking
+
+package digitaltwinstimeseriesdatabaseconnection
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateSetCreateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateSetDeleteParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateSetReadParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+
