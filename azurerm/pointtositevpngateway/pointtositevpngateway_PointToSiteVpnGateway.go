@@ -69,6 +69,9 @@ type PointToSiteVpnGateway interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	RoutingPreferenceInternetEnabled() interface{}
+	SetRoutingPreferenceInternetEnabled(val interface{})
+	RoutingPreferenceInternetEnabledInput() interface{}
 	ScaleUnit() *float64
 	SetScaleUnit(val *float64)
 	ScaleUnitInput() *float64
@@ -121,6 +124,7 @@ type PointToSiteVpnGateway interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRoutingPreferenceInternetEnabled()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -383,6 +387,26 @@ func (j *jsiiProxy_PointToSiteVpnGateway) ResourceGroupNameInput() *string {
 	_jsii_.Get(
 		j,
 		"resourceGroupNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PointToSiteVpnGateway) RoutingPreferenceInternetEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"routingPreferenceInternetEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PointToSiteVpnGateway) RoutingPreferenceInternetEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"routingPreferenceInternetEnabledInput",
 		&returns,
 	)
 	return returns
@@ -664,6 +688,17 @@ func (j *jsiiProxy_PointToSiteVpnGateway)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PointToSiteVpnGateway)SetRoutingPreferenceInternetEnabled(val interface{}) {
+	if err := j.validateSetRoutingPreferenceInternetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingPreferenceInternetEnabled",
 		val,
 	)
 }
@@ -1020,6 +1055,14 @@ func (p *jsiiProxy_PointToSiteVpnGateway) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PointToSiteVpnGateway) ResetRoutingPreferenceInternetEnabled() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRoutingPreferenceInternetEnabled",
 		nil, // no parameters
 	)
 }

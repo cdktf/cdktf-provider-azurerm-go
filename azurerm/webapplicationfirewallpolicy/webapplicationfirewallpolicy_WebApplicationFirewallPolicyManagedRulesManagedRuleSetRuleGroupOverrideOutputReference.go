@@ -32,9 +32,11 @@ type WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutp
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Rule() WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideRuleList
 	RuleGroupName() *string
 	SetRuleGroupName(val *string)
 	RuleGroupNameInput() *string
+	RuleInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutp
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutRule(value interface{})
 	ResetDisabledRules()
+	ResetRule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -153,6 +157,16 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGro
 	return returns
 }
 
+func (j *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutputReference) Rule() WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideRuleList {
+	var returns WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideRuleList
+	_jsii_.Get(
+		j,
+		"rule",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutputReference) RuleGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -168,6 +182,16 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGro
 	_jsii_.Get(
 		j,
 		"ruleGroupNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutputReference) RuleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ruleInput",
 		&returns,
 	)
 	return returns
@@ -484,10 +508,29 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGro
 	return returns
 }
 
+func (w *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutputReference) PutRule(value interface{}) {
+	if err := w.validatePutRuleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putRule",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutputReference) ResetDisabledRules() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetDisabledRules",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutputReference) ResetRule() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRule",
 		nil, // no parameters
 	)
 }

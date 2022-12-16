@@ -43,8 +43,8 @@ type PrivateEndpoint interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IpConfiguration() PrivateEndpointIpConfigurationOutputReference
-	IpConfigurationInput() *PrivateEndpointIpConfiguration
+	IpConfiguration() PrivateEndpointIpConfigurationList
+	IpConfigurationInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -115,7 +115,7 @@ type PrivateEndpoint interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutIpConfiguration(value *PrivateEndpointIpConfiguration)
+	PutIpConfiguration(value interface{})
 	PutPrivateDnsZoneGroup(value *PrivateEndpointPrivateDnsZoneGroup)
 	PutPrivateServiceConnection(value *PrivateEndpointPrivateServiceConnection)
 	PutTimeouts(value *PrivateEndpointTimeouts)
@@ -273,8 +273,8 @@ func (j *jsiiProxy_PrivateEndpoint) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PrivateEndpoint) IpConfiguration() PrivateEndpointIpConfigurationOutputReference {
-	var returns PrivateEndpointIpConfigurationOutputReference
+func (j *jsiiProxy_PrivateEndpoint) IpConfiguration() PrivateEndpointIpConfigurationList {
+	var returns PrivateEndpointIpConfigurationList
 	_jsii_.Get(
 		j,
 		"ipConfiguration",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_PrivateEndpoint) IpConfiguration() PrivateEndpointIpConfigura
 	return returns
 }
 
-func (j *jsiiProxy_PrivateEndpoint) IpConfigurationInput() *PrivateEndpointIpConfiguration {
-	var returns *PrivateEndpointIpConfiguration
+func (j *jsiiProxy_PrivateEndpoint) IpConfigurationInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"ipConfigurationInput",
@@ -991,7 +991,7 @@ func (p *jsiiProxy_PrivateEndpoint) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (p *jsiiProxy_PrivateEndpoint) PutIpConfiguration(value *PrivateEndpointIpConfiguration) {
+func (p *jsiiProxy_PrivateEndpoint) PutIpConfiguration(value interface{}) {
 	if err := p.validatePutIpConfigurationParameters(value); err != nil {
 		panic(err)
 	}

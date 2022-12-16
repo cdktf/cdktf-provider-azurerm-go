@@ -52,7 +52,7 @@ func (p *jsiiProxy_PrivateEndpoint) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
-func (p *jsiiProxy_PrivateEndpoint) validatePutIpConfigurationParameters(value *PrivateEndpointIpConfiguration) error {
+func (p *jsiiProxy_PrivateEndpoint) validatePutIpConfigurationParameters(value interface{}) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (s *jsiiProxy_StorageAccountBlobPropertiesOutputReference) validatePutDelet
 	return nil
 }
 
+func (s *jsiiProxy_StorageAccountBlobPropertiesOutputReference) validatePutRestorePolicyParameters(value *StorageAccountBlobPropertiesRestorePolicy) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageAccountBlobPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

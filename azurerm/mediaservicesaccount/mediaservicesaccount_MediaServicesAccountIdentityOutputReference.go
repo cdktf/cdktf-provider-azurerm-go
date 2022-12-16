@@ -27,6 +27,9 @@ type MediaServicesAccountIdentityOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdentityIds() *[]*string
+	SetIdentityIds(val *[]*string)
+	IdentityIdsInput() *[]*string
 	InternalValue() *MediaServicesAccountIdentity
 	SetInternalValue(val *MediaServicesAccountIdentity)
 	PrincipalId() *string
@@ -66,6 +69,7 @@ type MediaServicesAccountIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIdentityIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -116,6 +120,26 @@ func (j *jsiiProxy_MediaServicesAccountIdentityOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaServicesAccountIdentityOutputReference) IdentityIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaServicesAccountIdentityOutputReference) IdentityIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIdsInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +261,17 @@ func (j *jsiiProxy_MediaServicesAccountIdentityOutputReference)SetComplexObjectI
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MediaServicesAccountIdentityOutputReference)SetIdentityIds(val *[]*string) {
+	if err := j.validateSetIdentityIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityIds",
 		val,
 	)
 }
@@ -469,6 +504,14 @@ func (m *jsiiProxy_MediaServicesAccountIdentityOutputReference) InterpolationFor
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MediaServicesAccountIdentityOutputReference) ResetIdentityIds() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetIdentityIds",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MediaServicesAccountIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

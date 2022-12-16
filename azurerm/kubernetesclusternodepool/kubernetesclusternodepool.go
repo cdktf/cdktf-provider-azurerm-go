@@ -101,6 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putLinuxOsConfig", GoMethod: "PutLinuxOsConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putUpgradeSettings", GoMethod: "PutUpgradeSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "putWindowsProfile", GoMethod: "PutWindowsProfile"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCapacityReservationGroupId", GoMethod: "ResetCapacityReservationGroupId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomCaTrustEnabled", GoMethod: "ResetCustomCaTrustEnabled"},
@@ -139,6 +140,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetUltraSsdEnabled", GoMethod: "ResetUltraSsdEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUpgradeSettings", GoMethod: "ResetUpgradeSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVnetSubnetId", GoMethod: "ResetVnetSubnetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWindowsProfile", GoMethod: "ResetWindowsProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadRuntime", GoMethod: "ResetWorkloadRuntime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetZones", GoMethod: "ResetZones"},
 			_jsii_.MemberProperty{JsiiProperty: "scaleDownMode", GoGetter: "ScaleDownMode"},
@@ -164,6 +166,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vmSizeInput", GoGetter: "VmSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vnetSubnetId", GoGetter: "VnetSubnetId"},
 			_jsii_.MemberProperty{JsiiProperty: "vnetSubnetIdInput", GoGetter: "VnetSubnetIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "windowsProfile", GoGetter: "WindowsProfile"},
+			_jsii_.MemberProperty{JsiiProperty: "windowsProfileInput", GoGetter: "WindowsProfileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadRuntime", GoGetter: "WorkloadRuntime"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadRuntimeInput", GoGetter: "WorkloadRuntimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "zones", GoGetter: "Zones"},
@@ -499,6 +503,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.kubernetesClusterNodePool.KubernetesClusterNodePoolWindowsProfile",
+		reflect.TypeOf((*KubernetesClusterNodePoolWindowsProfile)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.kubernetesClusterNodePool.KubernetesClusterNodePoolWindowsProfileOutputReference",
+		reflect.TypeOf((*KubernetesClusterNodePoolWindowsProfileOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "outboundNatEnabled", GoGetter: "OutboundNatEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "outboundNatEnabledInput", GoGetter: "OutboundNatEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOutboundNatEnabled", GoMethod: "ResetOutboundNatEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KubernetesClusterNodePoolWindowsProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

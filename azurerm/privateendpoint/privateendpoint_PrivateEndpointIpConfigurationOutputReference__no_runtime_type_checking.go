@@ -56,7 +56,11 @@ func (j *jsiiProxy_PrivateEndpointIpConfigurationOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_PrivateEndpointIpConfigurationOutputReference) validateSetInternalValueParameters(val *PrivateEndpointIpConfiguration) error {
+func (j *jsiiProxy_PrivateEndpointIpConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PrivateEndpointIpConfigurationOutputReference) validateSetMemberNameParameters(val *string) error {
 	return nil
 }
 
@@ -80,7 +84,7 @@ func (j *jsiiProxy_PrivateEndpointIpConfigurationOutputReference) validateSetTer
 	return nil
 }
 
-func validateNewPrivateEndpointIpConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPrivateEndpointIpConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

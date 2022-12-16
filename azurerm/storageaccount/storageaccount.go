@@ -479,6 +479,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putContainerDeleteRetentionPolicy", GoMethod: "PutContainerDeleteRetentionPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putCorsRule", GoMethod: "PutCorsRule"},
 			_jsii_.MemberMethod{JsiiMethod: "putDeleteRetentionPolicy", GoMethod: "PutDeleteRetentionPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "putRestorePolicy", GoMethod: "PutRestorePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetChangeFeedEnabled", GoMethod: "ResetChangeFeedEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetChangeFeedRetentionInDays", GoMethod: "ResetChangeFeedRetentionInDays"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContainerDeleteRetentionPolicy", GoMethod: "ResetContainerDeleteRetentionPolicy"},
@@ -486,8 +487,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultServiceVersion", GoMethod: "ResetDefaultServiceVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeleteRetentionPolicy", GoMethod: "ResetDeleteRetentionPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLastAccessTimeEnabled", GoMethod: "ResetLastAccessTimeEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRestorePolicy", GoMethod: "ResetRestorePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVersioningEnabled", GoMethod: "ResetVersioningEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "restorePolicy", GoGetter: "RestorePolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "restorePolicyInput", GoGetter: "RestorePolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -496,6 +500,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StorageAccountBlobPropertiesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.storageAccount.StorageAccountBlobPropertiesRestorePolicy",
+		reflect.TypeOf((*StorageAccountBlobPropertiesRestorePolicy)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.storageAccount.StorageAccountBlobPropertiesRestorePolicyOutputReference",
+		reflect.TypeOf((*StorageAccountBlobPropertiesRestorePolicyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "days", GoGetter: "Days"},
+			_jsii_.MemberProperty{JsiiProperty: "daysInput", GoGetter: "DaysInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_StorageAccountBlobPropertiesRestorePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

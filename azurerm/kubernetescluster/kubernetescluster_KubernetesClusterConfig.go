@@ -104,6 +104,10 @@ type KubernetesClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#microsoft_defender KubernetesCluster#microsoft_defender}
 	MicrosoftDefender *KubernetesClusterMicrosoftDefender `field:"optional" json:"microsoftDefender" yaml:"microsoftDefender"`
+	// monitor_metrics block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#monitor_metrics KubernetesCluster#monitor_metrics}
+	MonitorMetrics *KubernetesClusterMonitorMetrics `field:"optional" json:"monitorMetrics" yaml:"monitorMetrics"`
 	// network_profile block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#network_profile KubernetesCluster#network_profile}

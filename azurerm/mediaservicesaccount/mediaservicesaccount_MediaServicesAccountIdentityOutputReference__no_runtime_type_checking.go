@@ -56,6 +56,10 @@ func (j *jsiiProxy_MediaServicesAccountIdentityOutputReference) validateSetCompl
 	return nil
 }
 
+func (j *jsiiProxy_MediaServicesAccountIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaServicesAccountIdentityOutputReference) validateSetInternalValueParameters(val *MediaServicesAccountIdentity) error {
 	return nil
 }

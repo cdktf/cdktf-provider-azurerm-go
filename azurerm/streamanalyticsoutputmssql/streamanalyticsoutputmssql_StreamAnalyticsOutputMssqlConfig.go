@@ -23,8 +23,6 @@ type StreamAnalyticsOutputMssqlConfig struct {
 	Database *string `field:"required" json:"database" yaml:"database"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_mssql#name StreamAnalyticsOutputMssql#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_mssql#password StreamAnalyticsOutputMssql#password}.
-	Password *string `field:"required" json:"password" yaml:"password"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_mssql#resource_group_name StreamAnalyticsOutputMssql#resource_group_name}.
 	ResourceGroupName *string `field:"required" json:"resourceGroupName" yaml:"resourceGroupName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_mssql#server StreamAnalyticsOutputMssql#server}.
@@ -33,8 +31,6 @@ type StreamAnalyticsOutputMssqlConfig struct {
 	StreamAnalyticsJobName *string `field:"required" json:"streamAnalyticsJobName" yaml:"streamAnalyticsJobName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_mssql#table StreamAnalyticsOutputMssql#table}.
 	Table *string `field:"required" json:"table" yaml:"table"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_mssql#user StreamAnalyticsOutputMssql#user}.
-	User *string `field:"required" json:"user" yaml:"user"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_mssql#authentication_mode StreamAnalyticsOutputMssql#authentication_mode}.
 	AuthenticationMode *string `field:"optional" json:"authenticationMode" yaml:"authenticationMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_mssql#id StreamAnalyticsOutputMssql#id}.
@@ -46,9 +42,13 @@ type StreamAnalyticsOutputMssqlConfig struct {
 	MaxBatchCount *float64 `field:"optional" json:"maxBatchCount" yaml:"maxBatchCount"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_mssql#max_writer_count StreamAnalyticsOutputMssql#max_writer_count}.
 	MaxWriterCount *float64 `field:"optional" json:"maxWriterCount" yaml:"maxWriterCount"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_mssql#password StreamAnalyticsOutputMssql#password}.
+	Password *string `field:"optional" json:"password" yaml:"password"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_mssql#timeouts StreamAnalyticsOutputMssql#timeouts}
 	Timeouts *StreamAnalyticsOutputMssqlTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_mssql#user StreamAnalyticsOutputMssql#user}.
+	User *string `field:"optional" json:"user" yaml:"user"`
 }
 

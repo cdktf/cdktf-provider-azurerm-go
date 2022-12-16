@@ -115,6 +115,8 @@ type KubernetesCluster interface {
 	MaintenanceWindowInput() *KubernetesClusterMaintenanceWindow
 	MicrosoftDefender() KubernetesClusterMicrosoftDefenderOutputReference
 	MicrosoftDefenderInput() *KubernetesClusterMicrosoftDefender
+	MonitorMetrics() KubernetesClusterMonitorMetricsOutputReference
+	MonitorMetricsInput() *KubernetesClusterMonitorMetrics
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -231,6 +233,7 @@ type KubernetesCluster interface {
 	PutLinuxProfile(value *KubernetesClusterLinuxProfile)
 	PutMaintenanceWindow(value *KubernetesClusterMaintenanceWindow)
 	PutMicrosoftDefender(value *KubernetesClusterMicrosoftDefender)
+	PutMonitorMetrics(value *KubernetesClusterMonitorMetrics)
 	PutNetworkProfile(value *KubernetesClusterNetworkProfile)
 	PutOmsAgent(value *KubernetesClusterOmsAgent)
 	PutServicePrincipal(value *KubernetesClusterServicePrincipal)
@@ -264,6 +267,7 @@ type KubernetesCluster interface {
 	ResetLocalAccountDisabled()
 	ResetMaintenanceWindow()
 	ResetMicrosoftDefender()
+	ResetMonitorMetrics()
 	ResetNetworkProfile()
 	ResetNodeResourceGroup()
 	ResetOidcIssuerEnabled()
@@ -987,6 +991,26 @@ func (j *jsiiProxy_KubernetesCluster) MicrosoftDefenderInput() *KubernetesCluste
 	_jsii_.Get(
 		j,
 		"microsoftDefenderInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) MonitorMetrics() KubernetesClusterMonitorMetricsOutputReference {
+	var returns KubernetesClusterMonitorMetricsOutputReference
+	_jsii_.Get(
+		j,
+		"monitorMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) MonitorMetricsInput() *KubernetesClusterMonitorMetrics {
+	var returns *KubernetesClusterMonitorMetrics
+	_jsii_.Get(
+		j,
+		"monitorMetricsInput",
 		&returns,
 	)
 	return returns
@@ -2344,6 +2368,17 @@ func (k *jsiiProxy_KubernetesCluster) PutMicrosoftDefender(value *KubernetesClus
 	)
 }
 
+func (k *jsiiProxy_KubernetesCluster) PutMonitorMetrics(value *KubernetesClusterMonitorMetrics) {
+	if err := k.validatePutMonitorMetricsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putMonitorMetrics",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesCluster) PutNetworkProfile(value *KubernetesClusterNetworkProfile) {
 	if err := k.validatePutNetworkProfileParameters(value); err != nil {
 		panic(err)
@@ -2628,6 +2663,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetMicrosoftDefender() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetMicrosoftDefender",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetMonitorMetrics() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetMonitorMetrics",
 		nil, // no parameters
 	)
 }

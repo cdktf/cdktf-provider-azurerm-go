@@ -171,6 +171,8 @@ type KubernetesClusterNodePool interface {
 	VnetSubnetId() *string
 	SetVnetSubnetId(val *string)
 	VnetSubnetIdInput() *string
+	WindowsProfile() KubernetesClusterNodePoolWindowsProfileOutputReference
+	WindowsProfileInput() *KubernetesClusterNodePoolWindowsProfile
 	WorkloadRuntime() *string
 	SetWorkloadRuntime(val *string)
 	WorkloadRuntimeInput() *string
@@ -206,6 +208,7 @@ type KubernetesClusterNodePool interface {
 	PutLinuxOsConfig(value *KubernetesClusterNodePoolLinuxOsConfig)
 	PutTimeouts(value *KubernetesClusterNodePoolTimeouts)
 	PutUpgradeSettings(value *KubernetesClusterNodePoolUpgradeSettings)
+	PutWindowsProfile(value *KubernetesClusterNodePoolWindowsProfile)
 	ResetCapacityReservationGroupId()
 	ResetCustomCaTrustEnabled()
 	ResetEnableAutoScaling()
@@ -245,6 +248,7 @@ type KubernetesClusterNodePool interface {
 	ResetUltraSsdEnabled()
 	ResetUpgradeSettings()
 	ResetVnetSubnetId()
+	ResetWindowsProfile()
 	ResetWorkloadRuntime()
 	ResetZones()
 	SynthesizeAttributes() *map[string]interface{}
@@ -1202,6 +1206,26 @@ func (j *jsiiProxy_KubernetesClusterNodePool) VnetSubnetIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterNodePool) WindowsProfile() KubernetesClusterNodePoolWindowsProfileOutputReference {
+	var returns KubernetesClusterNodePoolWindowsProfileOutputReference
+	_jsii_.Get(
+		j,
+		"windowsProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) WindowsProfileInput() *KubernetesClusterNodePoolWindowsProfile {
+	var returns *KubernetesClusterNodePoolWindowsProfile
+	_jsii_.Get(
+		j,
+		"windowsProfileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesClusterNodePool) WorkloadRuntime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2054,6 +2078,17 @@ func (k *jsiiProxy_KubernetesClusterNodePool) PutUpgradeSettings(value *Kubernet
 	)
 }
 
+func (k *jsiiProxy_KubernetesClusterNodePool) PutWindowsProfile(value *KubernetesClusterNodePoolWindowsProfile) {
+	if err := k.validatePutWindowsProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putWindowsProfile",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesClusterNodePool) ResetCapacityReservationGroupId() {
 	_jsii_.InvokeVoid(
 		k,
@@ -2346,6 +2381,14 @@ func (k *jsiiProxy_KubernetesClusterNodePool) ResetVnetSubnetId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetVnetSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNodePool) ResetWindowsProfile() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetWindowsProfile",
 		nil, // no parameters
 	)
 }

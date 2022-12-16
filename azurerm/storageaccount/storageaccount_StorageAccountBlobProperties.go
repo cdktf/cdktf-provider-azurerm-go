@@ -22,6 +22,10 @@ type StorageAccountBlobProperties struct {
 	DeleteRetentionPolicy *StorageAccountBlobPropertiesDeleteRetentionPolicy `field:"optional" json:"deleteRetentionPolicy" yaml:"deleteRetentionPolicy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#last_access_time_enabled StorageAccount#last_access_time_enabled}.
 	LastAccessTimeEnabled interface{} `field:"optional" json:"lastAccessTimeEnabled" yaml:"lastAccessTimeEnabled"`
+	// restore_policy block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#restore_policy StorageAccount#restore_policy}
+	RestorePolicy *StorageAccountBlobPropertiesRestorePolicy `field:"optional" json:"restorePolicy" yaml:"restorePolicy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#versioning_enabled StorageAccount#versioning_enabled}.
 	VersioningEnabled interface{} `field:"optional" json:"versioningEnabled" yaml:"versioningEnabled"`
 }

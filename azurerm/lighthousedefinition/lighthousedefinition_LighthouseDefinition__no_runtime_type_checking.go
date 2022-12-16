@@ -56,6 +56,10 @@ func (l *jsiiProxy_LighthouseDefinition) validatePutAuthorizationParameters(valu
 	return nil
 }
 
+func (l *jsiiProxy_LighthouseDefinition) validatePutEligibleAuthorizationParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LighthouseDefinition) validatePutPlanParameters(value *LighthouseDefinitionPlan) error {
 	return nil
 }

@@ -8,5 +8,7 @@ type PrivateEndpointIpConfiguration struct {
 	PrivateIpAddress *string `field:"required" json:"privateIpAddress" yaml:"privateIpAddress"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/private_endpoint#subresource_name PrivateEndpoint#subresource_name}.
 	SubresourceName *string `field:"required" json:"subresourceName" yaml:"subresourceName"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/private_endpoint#member_name PrivateEndpoint#member_name}.
+	MemberName *string `field:"optional" json:"memberName" yaml:"memberName"`
 }
 

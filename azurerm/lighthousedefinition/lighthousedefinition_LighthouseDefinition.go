@@ -33,6 +33,8 @@ type LighthouseDefinition interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EligibleAuthorization() LighthouseDefinitionEligibleAuthorizationList
+	EligibleAuthorizationInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -108,9 +110,11 @@ type LighthouseDefinition interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthorization(value interface{})
+	PutEligibleAuthorization(value interface{})
 	PutPlan(value *LighthouseDefinitionPlan)
 	PutTimeouts(value *LighthouseDefinitionTimeouts)
 	ResetDescription()
+	ResetEligibleAuthorization()
 	ResetId()
 	ResetLighthouseDefinitionId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -218,6 +222,26 @@ func (j *jsiiProxy_LighthouseDefinition) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LighthouseDefinition) EligibleAuthorization() LighthouseDefinitionEligibleAuthorizationList {
+	var returns LighthouseDefinitionEligibleAuthorizationList
+	_jsii_.Get(
+		j,
+		"eligibleAuthorization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LighthouseDefinition) EligibleAuthorizationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"eligibleAuthorizationInput",
 		&returns,
 	)
 	return returns
@@ -911,6 +935,17 @@ func (l *jsiiProxy_LighthouseDefinition) PutAuthorization(value interface{}) {
 	)
 }
 
+func (l *jsiiProxy_LighthouseDefinition) PutEligibleAuthorization(value interface{}) {
+	if err := l.validatePutEligibleAuthorizationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putEligibleAuthorization",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LighthouseDefinition) PutPlan(value *LighthouseDefinitionPlan) {
 	if err := l.validatePutPlanParameters(value); err != nil {
 		panic(err)
@@ -937,6 +972,14 @@ func (l *jsiiProxy_LighthouseDefinition) ResetDescription() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LighthouseDefinition) ResetEligibleAuthorization() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetEligibleAuthorization",
 		nil, // no parameters
 	)
 }

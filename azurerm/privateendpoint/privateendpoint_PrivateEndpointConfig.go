@@ -41,7 +41,7 @@ type PrivateEndpointConfig struct {
 	// ip_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/private_endpoint#ip_configuration PrivateEndpoint#ip_configuration}
-	IpConfiguration *PrivateEndpointIpConfiguration `field:"optional" json:"ipConfiguration" yaml:"ipConfiguration"`
+	IpConfiguration interface{} `field:"optional" json:"ipConfiguration" yaml:"ipConfiguration"`
 	// private_dns_zone_group block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/private_endpoint#private_dns_zone_group PrivateEndpoint#private_dns_zone_group}

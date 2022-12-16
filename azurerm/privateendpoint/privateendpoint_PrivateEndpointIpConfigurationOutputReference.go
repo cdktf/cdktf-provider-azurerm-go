@@ -27,8 +27,11 @@ type PrivateEndpointIpConfigurationOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *PrivateEndpointIpConfiguration
-	SetInternalValue(val *PrivateEndpointIpConfiguration)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	MemberName() *string
+	SetMemberName(val *string)
+	MemberNameInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -70,6 +73,7 @@ type PrivateEndpointIpConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMemberName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -125,11 +129,31 @@ func (j *jsiiProxy_PrivateEndpointIpConfigurationOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_PrivateEndpointIpConfigurationOutputReference) InternalValue() *PrivateEndpointIpConfiguration {
-	var returns *PrivateEndpointIpConfiguration
+func (j *jsiiProxy_PrivateEndpointIpConfigurationOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivateEndpointIpConfigurationOutputReference) MemberName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"memberName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivateEndpointIpConfigurationOutputReference) MemberNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"memberNameInput",
 		&returns,
 	)
 	return returns
@@ -216,29 +240,29 @@ func (j *jsiiProxy_PrivateEndpointIpConfigurationOutputReference) TerraformResou
 }
 
 
-func NewPrivateEndpointIpConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PrivateEndpointIpConfigurationOutputReference {
+func NewPrivateEndpointIpConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PrivateEndpointIpConfigurationOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewPrivateEndpointIpConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewPrivateEndpointIpConfigurationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_PrivateEndpointIpConfigurationOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.privateEndpoint.PrivateEndpointIpConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewPrivateEndpointIpConfigurationOutputReference_Override(p PrivateEndpointIpConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPrivateEndpointIpConfigurationOutputReference_Override(p PrivateEndpointIpConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.privateEndpoint.PrivateEndpointIpConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
 }
@@ -265,13 +289,24 @@ func (j *jsiiProxy_PrivateEndpointIpConfigurationOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_PrivateEndpointIpConfigurationOutputReference)SetInternalValue(val *PrivateEndpointIpConfiguration) {
+func (j *jsiiProxy_PrivateEndpointIpConfigurationOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PrivateEndpointIpConfigurationOutputReference)SetMemberName(val *string) {
+	if err := j.validateSetMemberNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"memberName",
 		val,
 	)
 }
@@ -515,6 +550,14 @@ func (p *jsiiProxy_PrivateEndpointIpConfigurationOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PrivateEndpointIpConfigurationOutputReference) ResetMemberName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMemberName",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PrivateEndpointIpConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

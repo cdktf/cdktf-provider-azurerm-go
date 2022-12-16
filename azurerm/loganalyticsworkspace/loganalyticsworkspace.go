@@ -12,6 +12,8 @@ func init() {
 		reflect.TypeOf((*LogAnalyticsWorkspace)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "allowResourceOnlyPermissions", GoGetter: "AllowResourceOnlyPermissions"},
+			_jsii_.MemberProperty{JsiiProperty: "allowResourceOnlyPermissionsInput", GoGetter: "AllowResourceOnlyPermissionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "cmkForQueryForced", GoGetter: "CmkForQueryForced"},
 			_jsii_.MemberProperty{JsiiProperty: "cmkForQueryForcedInput", GoGetter: "CmkForQueryForcedInput"},
@@ -54,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "reservationCapacityInGbPerDay", GoGetter: "ReservationCapacityInGbPerDay"},
 			_jsii_.MemberProperty{JsiiProperty: "reservationCapacityInGbPerDayInput", GoGetter: "ReservationCapacityInGbPerDayInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowResourceOnlyPermissions", GoMethod: "ResetAllowResourceOnlyPermissions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCmkForQueryForced", GoMethod: "ResetCmkForQueryForced"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDailyQuotaGb", GoMethod: "ResetDailyQuotaGb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

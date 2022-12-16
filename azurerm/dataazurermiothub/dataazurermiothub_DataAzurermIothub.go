@@ -35,6 +35,7 @@ type DataAzurermIothub interface {
 	Hostname() *string
 	Id() *string
 	SetId(val *string)
+	Identity() DataAzurermIothubIdentityList
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -197,6 +198,16 @@ func (j *jsiiProxy_DataAzurermIothub) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermIothub) Identity() DataAzurermIothubIdentityList {
+	var returns DataAzurermIothubIdentityList
+	_jsii_.Get(
+		j,
+		"identity",
 		&returns,
 	)
 	return returns

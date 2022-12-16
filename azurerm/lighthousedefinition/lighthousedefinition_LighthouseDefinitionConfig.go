@@ -31,6 +31,10 @@ type LighthouseDefinitionConfig struct {
 	Scope *string `field:"required" json:"scope" yaml:"scope"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/lighthouse_definition#description LighthouseDefinition#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// eligible_authorization block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/lighthouse_definition#eligible_authorization LighthouseDefinition#eligible_authorization}
+	EligibleAuthorization interface{} `field:"optional" json:"eligibleAuthorization" yaml:"eligibleAuthorization"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/lighthouse_definition#id LighthouseDefinition#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

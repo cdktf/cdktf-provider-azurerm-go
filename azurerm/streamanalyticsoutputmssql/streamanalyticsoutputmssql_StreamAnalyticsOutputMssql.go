@@ -129,7 +129,9 @@ type StreamAnalyticsOutputMssql interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPassword()
 	ResetTimeouts()
+	ResetUser()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -1109,10 +1111,26 @@ func (s *jsiiProxy_StreamAnalyticsOutputMssql) ResetOverrideLogicalId() {
 	)
 }
 
+func (s *jsiiProxy_StreamAnalyticsOutputMssql) ResetPassword() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StreamAnalyticsOutputMssql) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StreamAnalyticsOutputMssql) ResetUser() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUser",
 		nil, // no parameters
 	)
 }

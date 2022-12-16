@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/log_analytics_workspace azurerm_log_analytics_workspace}.
 type LogAnalyticsWorkspace interface {
 	cdktf.TerraformResource
+	AllowResourceOnlyPermissions() interface{}
+	SetAllowResourceOnlyPermissions(val interface{})
+	AllowResourceOnlyPermissionsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CmkForQueryForced() interface{}
@@ -125,6 +128,7 @@ type LogAnalyticsWorkspace interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *LogAnalyticsWorkspaceTimeouts)
+	ResetAllowResourceOnlyPermissions()
 	ResetCmkForQueryForced()
 	ResetDailyQuotaGb()
 	ResetId()
@@ -151,6 +155,26 @@ type LogAnalyticsWorkspace interface {
 // The jsii proxy struct for LogAnalyticsWorkspace
 type jsiiProxy_LogAnalyticsWorkspace struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_LogAnalyticsWorkspace) AllowResourceOnlyPermissions() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowResourceOnlyPermissions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogAnalyticsWorkspace) AllowResourceOnlyPermissionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowResourceOnlyPermissionsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_LogAnalyticsWorkspace) CdktfStack() cdktf.TerraformStack {
@@ -633,6 +657,17 @@ func NewLogAnalyticsWorkspace_Override(l LogAnalyticsWorkspace, scope constructs
 	)
 }
 
+func (j *jsiiProxy_LogAnalyticsWorkspace)SetAllowResourceOnlyPermissions(val interface{}) {
+	if err := j.validateSetAllowResourceOnlyPermissionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowResourceOnlyPermissions",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LogAnalyticsWorkspace)SetCmkForQueryForced(val interface{}) {
 	if err := j.validateSetCmkForQueryForcedParameters(val); err != nil {
 		panic(err)
@@ -1104,6 +1139,14 @@ func (l *jsiiProxy_LogAnalyticsWorkspace) PutTimeouts(value *LogAnalyticsWorkspa
 		l,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LogAnalyticsWorkspace) ResetAllowResourceOnlyPermissions() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAllowResourceOnlyPermissions",
+		nil, // no parameters
 	)
 }
 

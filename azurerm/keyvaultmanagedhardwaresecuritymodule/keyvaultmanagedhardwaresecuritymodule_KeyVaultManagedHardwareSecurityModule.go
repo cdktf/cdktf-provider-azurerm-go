@@ -53,6 +53,8 @@ type KeyVaultManagedHardwareSecurityModule interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkAcls() KeyVaultManagedHardwareSecurityModuleNetworkAclsOutputReference
+	NetworkAclsInput() *KeyVaultManagedHardwareSecurityModuleNetworkAcls
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -63,6 +65,9 @@ type KeyVaultManagedHardwareSecurityModule interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicNetworkAccessEnabled() interface{}
+	SetPublicNetworkAccessEnabled(val interface{})
+	PublicNetworkAccessEnabledInput() interface{}
 	PurgeProtectionEnabled() interface{}
 	SetPurgeProtectionEnabled(val interface{})
 	PurgeProtectionEnabledInput() interface{}
@@ -116,11 +121,14 @@ type KeyVaultManagedHardwareSecurityModule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutNetworkAcls(value *KeyVaultManagedHardwareSecurityModuleNetworkAcls)
 	PutTimeouts(value *KeyVaultManagedHardwareSecurityModuleTimeouts)
 	ResetId()
+	ResetNetworkAcls()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublicNetworkAccessEnabled()
 	ResetPurgeProtectionEnabled()
 	ResetSoftDeleteRetentionDays()
 	ResetTags()
@@ -320,6 +328,26 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) NetworkAcls() KeyVaultManagedHardwareSecurityModuleNetworkAclsOutputReference {
+	var returns KeyVaultManagedHardwareSecurityModuleNetworkAclsOutputReference
+	_jsii_.Get(
+		j,
+		"networkAcls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) NetworkAclsInput() *KeyVaultManagedHardwareSecurityModuleNetworkAcls {
+	var returns *KeyVaultManagedHardwareSecurityModuleNetworkAcls
+	_jsii_.Get(
+		j,
+		"networkAclsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -345,6 +373,26 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) Provisioners() *[]inte
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) PublicNetworkAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) PublicNetworkAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabledInput",
 		&returns,
 	)
 	return returns
@@ -665,6 +713,17 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule)SetProvisioners(val *[]
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule)SetPublicNetworkAccessEnabled(val interface{}) {
+	if err := j.validateSetPublicNetworkAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccessEnabled",
 		val,
 	)
 }
@@ -1001,6 +1060,17 @@ func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) OverrideLogicalId(newL
 	)
 }
 
+func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) PutNetworkAcls(value *KeyVaultManagedHardwareSecurityModuleNetworkAcls) {
+	if err := k.validatePutNetworkAclsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putNetworkAcls",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) PutTimeouts(value *KeyVaultManagedHardwareSecurityModuleTimeouts) {
 	if err := k.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1020,10 +1090,26 @@ func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) ResetId() {
 	)
 }
 
+func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) ResetNetworkAcls() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetNetworkAcls",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) ResetPublicNetworkAccessEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetPublicNetworkAccessEnabled",
 		nil, // no parameters
 	)
 }

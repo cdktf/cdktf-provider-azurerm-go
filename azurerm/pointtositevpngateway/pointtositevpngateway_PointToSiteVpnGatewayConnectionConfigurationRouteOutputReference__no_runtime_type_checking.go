@@ -64,7 +64,15 @@ func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputReference) validateSetInboundRouteMapIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputReference) validateSetInternalValueParameters(val *PointToSiteVpnGatewayConnectionConfigurationRoute) error {
+	return nil
+}
+
+func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputReference) validateSetOutboundRouteMapIdParameters(val *string) error {
 	return nil
 }
 

@@ -44,6 +44,10 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGro
 	return nil
 }
 
+func (w *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutputReference) validatePutRuleParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -30,8 +30,14 @@ type PointToSiteVpnGatewayConnectionConfigurationRouteOutputReference interface 
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InboundRouteMapId() *string
+	SetInboundRouteMapId(val *string)
+	InboundRouteMapIdInput() *string
 	InternalValue() *PointToSiteVpnGatewayConnectionConfigurationRoute
 	SetInternalValue(val *PointToSiteVpnGatewayConnectionConfigurationRoute)
+	OutboundRouteMapId() *string
+	SetOutboundRouteMapId(val *string)
+	OutboundRouteMapIdInput() *string
 	PropagatedRouteTable() PointToSiteVpnGatewayConnectionConfigurationRoutePropagatedRouteTableOutputReference
 	PropagatedRouteTableInput() *PointToSiteVpnGatewayConnectionConfigurationRoutePropagatedRouteTable
 	// Experimental.
@@ -67,6 +73,8 @@ type PointToSiteVpnGatewayConnectionConfigurationRouteOutputReference interface 
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPropagatedRouteTable(value *PointToSiteVpnGatewayConnectionConfigurationRoutePropagatedRouteTable)
+	ResetInboundRouteMapId()
+	ResetOutboundRouteMapId()
 	ResetPropagatedRouteTable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -143,11 +151,51 @@ func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputReference) InboundRouteMapId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inboundRouteMapId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputReference) InboundRouteMapIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inboundRouteMapIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputReference) InternalValue() *PointToSiteVpnGatewayConnectionConfigurationRoute {
 	var returns *PointToSiteVpnGatewayConnectionConfigurationRoute
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputReference) OutboundRouteMapId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outboundRouteMapId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputReference) OutboundRouteMapIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outboundRouteMapIdInput",
 		&returns,
 	)
 	return returns
@@ -254,6 +302,17 @@ func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputRefere
 	)
 }
 
+func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputReference)SetInboundRouteMapId(val *string) {
+	if err := j.validateSetInboundRouteMapIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inboundRouteMapId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputReference)SetInternalValue(val *PointToSiteVpnGatewayConnectionConfigurationRoute) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -261,6 +320,17 @@ func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputRefere
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputReference)SetOutboundRouteMapId(val *string) {
+	if err := j.validateSetOutboundRouteMapIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"outboundRouteMapId",
 		val,
 	)
 }
@@ -481,6 +551,22 @@ func (p *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputRefere
 		p,
 		"putPropagatedRouteTable",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputReference) ResetInboundRouteMapId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetInboundRouteMapId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationRouteOutputReference) ResetOutboundRouteMapId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOutboundRouteMapId",
+		nil, // no parameters
 	)
 }
 

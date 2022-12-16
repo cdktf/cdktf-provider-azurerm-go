@@ -100,6 +100,10 @@ func (k *jsiiProxy_KubernetesCluster) validatePutMicrosoftDefenderParameters(val
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesCluster) validatePutMonitorMetricsParameters(value *KubernetesClusterMonitorMetrics) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesCluster) validatePutNetworkProfileParameters(value *KubernetesClusterNetworkProfile) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (k *jsiiProxy_KubernetesClusterNodePool) validatePutUpgradeSettingsParamete
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesClusterNodePool) validatePutWindowsProfileParameters(value *KubernetesClusterNodePoolWindowsProfile) error {
+	return nil
+}
+
 func validateKubernetesClusterNodePool_IsConstructParameters(x interface{}) error {
 	return nil
 }

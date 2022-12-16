@@ -52,6 +52,10 @@ func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validateOverrideLogica
 	return nil
 }
 
+func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validatePutNetworkAclsParameters(value *KeyVaultManagedHardwareSecurityModuleNetworkAcls) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validatePutTimeoutsParameters(value *KeyVaultManagedHardwareSecurityModuleTimeouts) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validateSetNameParamet
 }
 
 func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
 	return nil
 }
 

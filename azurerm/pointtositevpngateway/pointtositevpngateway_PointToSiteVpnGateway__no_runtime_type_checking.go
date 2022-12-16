@@ -104,6 +104,10 @@ func (j *jsiiProxy_PointToSiteVpnGateway) validateSetResourceGroupNameParameters
 	return nil
 }
 
+func (j *jsiiProxy_PointToSiteVpnGateway) validateSetRoutingPreferenceInternetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PointToSiteVpnGateway) validateSetScaleUnitParameters(val *float64) error {
 	return nil
 }

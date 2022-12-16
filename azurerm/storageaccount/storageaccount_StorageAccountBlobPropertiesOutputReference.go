@@ -47,6 +47,8 @@ type StorageAccountBlobPropertiesOutputReference interface {
 	LastAccessTimeEnabled() interface{}
 	SetLastAccessTimeEnabled(val interface{})
 	LastAccessTimeEnabledInput() interface{}
+	RestorePolicy() StorageAccountBlobPropertiesRestorePolicyOutputReference
+	RestorePolicyInput() *StorageAccountBlobPropertiesRestorePolicy
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -85,6 +87,7 @@ type StorageAccountBlobPropertiesOutputReference interface {
 	PutContainerDeleteRetentionPolicy(value *StorageAccountBlobPropertiesContainerDeleteRetentionPolicy)
 	PutCorsRule(value interface{})
 	PutDeleteRetentionPolicy(value *StorageAccountBlobPropertiesDeleteRetentionPolicy)
+	PutRestorePolicy(value *StorageAccountBlobPropertiesRestorePolicy)
 	ResetChangeFeedEnabled()
 	ResetChangeFeedRetentionInDays()
 	ResetContainerDeleteRetentionPolicy()
@@ -92,6 +95,7 @@ type StorageAccountBlobPropertiesOutputReference interface {
 	ResetDefaultServiceVersion()
 	ResetDeleteRetentionPolicy()
 	ResetLastAccessTimeEnabled()
+	ResetRestorePolicy()
 	ResetVersioningEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -293,6 +297,26 @@ func (j *jsiiProxy_StorageAccountBlobPropertiesOutputReference) LastAccessTimeEn
 	_jsii_.Get(
 		j,
 		"lastAccessTimeEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccountBlobPropertiesOutputReference) RestorePolicy() StorageAccountBlobPropertiesRestorePolicyOutputReference {
+	var returns StorageAccountBlobPropertiesRestorePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"restorePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccountBlobPropertiesOutputReference) RestorePolicyInput() *StorageAccountBlobPropertiesRestorePolicy {
+	var returns *StorageAccountBlobPropertiesRestorePolicy
+	_jsii_.Get(
+		j,
+		"restorePolicyInput",
 		&returns,
 	)
 	return returns
@@ -695,6 +719,17 @@ func (s *jsiiProxy_StorageAccountBlobPropertiesOutputReference) PutDeleteRetenti
 	)
 }
 
+func (s *jsiiProxy_StorageAccountBlobPropertiesOutputReference) PutRestorePolicy(value *StorageAccountBlobPropertiesRestorePolicy) {
+	if err := s.validatePutRestorePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putRestorePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StorageAccountBlobPropertiesOutputReference) ResetChangeFeedEnabled() {
 	_jsii_.InvokeVoid(
 		s,
@@ -747,6 +782,14 @@ func (s *jsiiProxy_StorageAccountBlobPropertiesOutputReference) ResetLastAccessT
 	_jsii_.InvokeVoid(
 		s,
 		"resetLastAccessTimeEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageAccountBlobPropertiesOutputReference) ResetRestorePolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRestorePolicy",
 		nil, // no parameters
 	)
 }

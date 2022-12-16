@@ -68,6 +68,10 @@ func validateLogAnalyticsWorkspace_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetAllowResourceOnlyPermissionsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetCmkForQueryForcedParameters(val interface{}) error {
 	return nil
 }

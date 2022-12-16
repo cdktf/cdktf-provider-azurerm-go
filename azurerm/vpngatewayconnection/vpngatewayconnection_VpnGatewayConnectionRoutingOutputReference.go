@@ -30,8 +30,14 @@ type VpnGatewayConnectionRoutingOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InboundRouteMapId() *string
+	SetInboundRouteMapId(val *string)
+	InboundRouteMapIdInput() *string
 	InternalValue() *VpnGatewayConnectionRouting
 	SetInternalValue(val *VpnGatewayConnectionRouting)
+	OutboundRouteMapId() *string
+	SetOutboundRouteMapId(val *string)
+	OutboundRouteMapIdInput() *string
 	PropagatedRouteTable() VpnGatewayConnectionRoutingPropagatedRouteTableOutputReference
 	PropagatedRouteTableInput() *VpnGatewayConnectionRoutingPropagatedRouteTable
 	// Experimental.
@@ -67,6 +73,8 @@ type VpnGatewayConnectionRoutingOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPropagatedRouteTable(value *VpnGatewayConnectionRoutingPropagatedRouteTable)
+	ResetInboundRouteMapId()
+	ResetOutboundRouteMapId()
 	ResetPropagatedRouteTable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -143,11 +151,51 @@ func (j *jsiiProxy_VpnGatewayConnectionRoutingOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VpnGatewayConnectionRoutingOutputReference) InboundRouteMapId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inboundRouteMapId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnGatewayConnectionRoutingOutputReference) InboundRouteMapIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inboundRouteMapIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpnGatewayConnectionRoutingOutputReference) InternalValue() *VpnGatewayConnectionRouting {
 	var returns *VpnGatewayConnectionRouting
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnGatewayConnectionRoutingOutputReference) OutboundRouteMapId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outboundRouteMapId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnGatewayConnectionRoutingOutputReference) OutboundRouteMapIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outboundRouteMapIdInput",
 		&returns,
 	)
 	return returns
@@ -254,6 +302,17 @@ func (j *jsiiProxy_VpnGatewayConnectionRoutingOutputReference)SetComplexObjectIs
 	)
 }
 
+func (j *jsiiProxy_VpnGatewayConnectionRoutingOutputReference)SetInboundRouteMapId(val *string) {
+	if err := j.validateSetInboundRouteMapIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inboundRouteMapId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_VpnGatewayConnectionRoutingOutputReference)SetInternalValue(val *VpnGatewayConnectionRouting) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -261,6 +320,17 @@ func (j *jsiiProxy_VpnGatewayConnectionRoutingOutputReference)SetInternalValue(v
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpnGatewayConnectionRoutingOutputReference)SetOutboundRouteMapId(val *string) {
+	if err := j.validateSetOutboundRouteMapIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"outboundRouteMapId",
 		val,
 	)
 }
@@ -481,6 +551,22 @@ func (v *jsiiProxy_VpnGatewayConnectionRoutingOutputReference) PutPropagatedRout
 		v,
 		"putPropagatedRouteTable",
 		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VpnGatewayConnectionRoutingOutputReference) ResetInboundRouteMapId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetInboundRouteMapId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpnGatewayConnectionRoutingOutputReference) ResetOutboundRouteMapId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetOutboundRouteMapId",
+		nil, // no parameters
 	)
 }
 
