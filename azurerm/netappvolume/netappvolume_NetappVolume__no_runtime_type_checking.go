@@ -164,6 +164,10 @@ func (j *jsiiProxy_NetappVolume) validateSetVolumePathParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolume) validateSetZoneParameters(val *string) error {
+	return nil
+}
+
 func validateNewNetappVolumeParameters(scope constructs.Construct, id *string, config *NetappVolumeConfig) error {
 	return nil
 }

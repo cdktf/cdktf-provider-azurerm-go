@@ -454,6 +454,14 @@ func (j *jsiiProxy_NetappVolume) validateSetVolumePathParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolume) validateSetZoneParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewNetappVolumeParameters(scope constructs.Construct, id *string, config *NetappVolumeConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -79,6 +79,7 @@ type DataAzurermNetappVolume interface {
 	Timeouts() DataAzurermNetappVolumeTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	VolumePath() *string
+	Zone() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -491,6 +492,16 @@ func (j *jsiiProxy_DataAzurermNetappVolume) VolumePath() *string {
 	_jsii_.Get(
 		j,
 		"volumePath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermNetappVolume) Zone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zone",
 		&returns,
 	)
 	return returns

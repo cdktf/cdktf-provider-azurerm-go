@@ -121,6 +121,9 @@ type NetappVolume interface {
 	VolumePath() *string
 	SetVolumePath(val *string)
 	VolumePathInput() *string
+	Zone() *string
+	SetZone(val *string)
+	ZoneInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -166,6 +169,7 @@ type NetappVolume interface {
 	ResetTags()
 	ResetThroughputInMibps()
 	ResetTimeouts()
+	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -791,6 +795,26 @@ func (j *jsiiProxy_NetappVolume) VolumePathInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NetappVolume) Zone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) ZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/netapp_volume azurerm_netapp_volume} Resource.
 func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolumeConfig) NetappVolume {
@@ -1080,6 +1104,17 @@ func (j *jsiiProxy_NetappVolume)SetVolumePath(val *string) {
 	_jsii_.Set(
 		j,
 		"volumePath",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappVolume)SetZone(val *string) {
+	if err := j.validateSetZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zone",
 		val,
 	)
 }
@@ -1502,6 +1537,14 @@ func (n *jsiiProxy_NetappVolume) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolume) ResetZone() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetZone",
 		nil, // no parameters
 	)
 }

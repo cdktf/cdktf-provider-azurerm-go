@@ -74,5 +74,7 @@ type NetappVolumeConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/netapp_volume#timeouts NetappVolume#timeouts}
 	Timeouts *NetappVolumeTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/netapp_volume#zone NetappVolume#zone}.
+	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
 
