@@ -31,8 +31,6 @@ type StreamAnalyticsReferenceInputBlobConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_reference_input_blob#serialization StreamAnalyticsReferenceInputBlob#serialization}
 	Serialization *StreamAnalyticsReferenceInputBlobSerialization `field:"required" json:"serialization" yaml:"serialization"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_reference_input_blob#storage_account_key StreamAnalyticsReferenceInputBlob#storage_account_key}.
-	StorageAccountKey *string `field:"required" json:"storageAccountKey" yaml:"storageAccountKey"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_reference_input_blob#storage_account_name StreamAnalyticsReferenceInputBlob#storage_account_name}.
 	StorageAccountName *string `field:"required" json:"storageAccountName" yaml:"storageAccountName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_reference_input_blob#storage_container_name StreamAnalyticsReferenceInputBlob#storage_container_name}.
@@ -48,6 +46,8 @@ type StreamAnalyticsReferenceInputBlobConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_reference_input_blob#storage_account_key StreamAnalyticsReferenceInputBlob#storage_account_key}.
+	StorageAccountKey *string `field:"optional" json:"storageAccountKey" yaml:"storageAccountKey"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_reference_input_blob#timeouts StreamAnalyticsReferenceInputBlob#timeouts}

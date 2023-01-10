@@ -146,6 +146,14 @@ func validateProximityPlacementGroup_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_ProximityPlacementGroup) validateSetAllowedVmSizesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ProximityPlacementGroup) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -266,6 +274,14 @@ func (j *jsiiProxy_ProximityPlacementGroup) validateSetResourceGroupNameParamete
 }
 
 func (j *jsiiProxy_ProximityPlacementGroup) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ProximityPlacementGroup) validateSetZoneParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

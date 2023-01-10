@@ -127,6 +127,7 @@ type StreamAnalyticsReferenceInputBlob interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStorageAccountKey()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -1087,6 +1088,14 @@ func (s *jsiiProxy_StreamAnalyticsReferenceInputBlob) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StreamAnalyticsReferenceInputBlob) ResetStorageAccountKey() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStorageAccountKey",
 		nil, // no parameters
 	)
 }

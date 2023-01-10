@@ -68,6 +68,10 @@ func validateProximityPlacementGroup_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_ProximityPlacementGroup) validateSetAllowedVmSizesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProximityPlacementGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (j *jsiiProxy_ProximityPlacementGroup) validateSetResourceGroupNameParamete
 }
 
 func (j *jsiiProxy_ProximityPlacementGroup) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ProximityPlacementGroup) validateSetZoneParameters(val *string) error {
 	return nil
 }
 

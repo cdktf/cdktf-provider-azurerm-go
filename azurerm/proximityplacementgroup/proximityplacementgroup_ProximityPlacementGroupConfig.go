@@ -25,6 +25,8 @@ type ProximityPlacementGroupConfig struct {
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/proximity_placement_group#resource_group_name ProximityPlacementGroup#resource_group_name}.
 	ResourceGroupName *string `field:"required" json:"resourceGroupName" yaml:"resourceGroupName"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/proximity_placement_group#allowed_vm_sizes ProximityPlacementGroup#allowed_vm_sizes}.
+	AllowedVmSizes *[]*string `field:"optional" json:"allowedVmSizes" yaml:"allowedVmSizes"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/proximity_placement_group#id ProximityPlacementGroup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -36,5 +38,7 @@ type ProximityPlacementGroupConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/proximity_placement_group#timeouts ProximityPlacementGroup#timeouts}
 	Timeouts *ProximityPlacementGroupTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/proximity_placement_group#zone ProximityPlacementGroup#zone}.
+	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
 
