@@ -14,6 +14,8 @@ type KubernetesCluster interface {
 	cdktf.TerraformResource
 	AciConnectorLinux() KubernetesClusterAciConnectorLinuxOutputReference
 	AciConnectorLinuxInput() *KubernetesClusterAciConnectorLinux
+	ApiServerAccessProfile() KubernetesClusterApiServerAccessProfileOutputReference
+	ApiServerAccessProfileInput() *KubernetesClusterApiServerAccessProfile
 	ApiServerAuthorizedIpRanges() *[]*string
 	SetApiServerAuthorizedIpRanges(val *[]*string)
 	ApiServerAuthorizedIpRangesInput() *[]*string
@@ -222,6 +224,7 @@ type KubernetesCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAciConnectorLinux(value *KubernetesClusterAciConnectorLinux)
+	PutApiServerAccessProfile(value *KubernetesClusterApiServerAccessProfile)
 	PutAutoScalerProfile(value *KubernetesClusterAutoScalerProfile)
 	PutAzureActiveDirectoryRoleBasedAccessControl(value *KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl)
 	PutDefaultNodePool(value *KubernetesClusterDefaultNodePool)
@@ -243,6 +246,7 @@ type KubernetesCluster interface {
 	PutWindowsProfile(value *KubernetesClusterWindowsProfile)
 	PutWorkloadAutoscalerProfile(value *KubernetesClusterWorkloadAutoscalerProfile)
 	ResetAciConnectorLinux()
+	ResetApiServerAccessProfile()
 	ResetApiServerAuthorizedIpRanges()
 	ResetAutomaticChannelUpgrade()
 	ResetAutoScalerProfile()
@@ -321,6 +325,26 @@ func (j *jsiiProxy_KubernetesCluster) AciConnectorLinuxInput() *KubernetesCluste
 	_jsii_.Get(
 		j,
 		"aciConnectorLinuxInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) ApiServerAccessProfile() KubernetesClusterApiServerAccessProfileOutputReference {
+	var returns KubernetesClusterApiServerAccessProfileOutputReference
+	_jsii_.Get(
+		j,
+		"apiServerAccessProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) ApiServerAccessProfileInput() *KubernetesClusterApiServerAccessProfile {
+	var returns *KubernetesClusterApiServerAccessProfile
+	_jsii_.Get(
+		j,
+		"apiServerAccessProfileInput",
 		&returns,
 	)
 	return returns
@@ -2247,6 +2271,17 @@ func (k *jsiiProxy_KubernetesCluster) PutAciConnectorLinux(value *KubernetesClus
 	)
 }
 
+func (k *jsiiProxy_KubernetesCluster) PutApiServerAccessProfile(value *KubernetesClusterApiServerAccessProfile) {
+	if err := k.validatePutApiServerAccessProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putApiServerAccessProfile",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesCluster) PutAutoScalerProfile(value *KubernetesClusterAutoScalerProfile) {
 	if err := k.validatePutAutoScalerProfileParameters(value); err != nil {
 		panic(err)
@@ -2471,6 +2506,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetAciConnectorLinux() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetAciConnectorLinux",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetApiServerAccessProfile() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetApiServerAccessProfile",
 		nil, // no parameters
 	)
 }

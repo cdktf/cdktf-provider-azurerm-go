@@ -10,7 +10,7 @@ type LinuxFunctionAppSlotSiteConfigApplicationStack struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app_slot#dotnet_version LinuxFunctionAppSlot#dotnet_version}
 	DotnetVersion *string `field:"optional" json:"dotnetVersion" yaml:"dotnetVersion"`
-	// The version of Java to use. Possible values are `8`, and `11`.
+	// The version of Java to use. Possible values are `8`, `11`, and `17`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app_slot#java_version LinuxFunctionAppSlot#java_version}
 	JavaVersion *string `field:"optional" json:"javaVersion" yaml:"javaVersion"`

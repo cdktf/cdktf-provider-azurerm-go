@@ -37,6 +37,9 @@ type WindowsWebAppSlotSiteConfigApplicationStackOutputReference interface {
 	DockerContainerTag() *string
 	SetDockerContainerTag(val *string)
 	DockerContainerTagInput() *string
+	DotnetCoreVersion() *string
+	SetDotnetCoreVersion(val *string)
+	DotnetCoreVersionInput() *string
 	DotnetVersion() *string
 	SetDotnetVersion(val *string)
 	DotnetVersionInput() *string
@@ -50,6 +53,9 @@ type WindowsWebAppSlotSiteConfigApplicationStackOutputReference interface {
 	JavaContainerVersion() *string
 	SetJavaContainerVersion(val *string)
 	JavaContainerVersionInput() *string
+	JavaEmbeddedServerEnabled() interface{}
+	SetJavaEmbeddedServerEnabled(val interface{})
+	JavaEmbeddedServerEnabledInput() interface{}
 	JavaVersion() *string
 	SetJavaVersion(val *string)
 	JavaVersionInput() *string
@@ -59,6 +65,9 @@ type WindowsWebAppSlotSiteConfigApplicationStackOutputReference interface {
 	PhpVersion() *string
 	SetPhpVersion(val *string)
 	PhpVersionInput() *string
+	Python() interface{}
+	SetPython(val interface{})
+	PythonInput() interface{}
 	PythonVersion() *string
 	SetPythonVersion(val *string)
 	PythonVersionInput() *string
@@ -70,6 +79,9 @@ type WindowsWebAppSlotSiteConfigApplicationStackOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TomcatVersion() *string
+	SetTomcatVersion(val *string)
+	TomcatVersionInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -98,13 +110,17 @@ type WindowsWebAppSlotSiteConfigApplicationStackOutputReference interface {
 	ResetDockerContainerName()
 	ResetDockerContainerRegistry()
 	ResetDockerContainerTag()
+	ResetDotnetCoreVersion()
 	ResetDotnetVersion()
 	ResetJavaContainer()
 	ResetJavaContainerVersion()
+	ResetJavaEmbeddedServerEnabled()
 	ResetJavaVersion()
 	ResetNodeVersion()
 	ResetPhpVersion()
+	ResetPython()
 	ResetPythonVersion()
+	ResetTomcatVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -230,6 +246,26 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) D
 	return returns
 }
 
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) DotnetCoreVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dotnetCoreVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) DotnetCoreVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dotnetCoreVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) DotnetVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -310,6 +346,26 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) J
 	return returns
 }
 
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) JavaEmbeddedServerEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"javaEmbeddedServerEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) JavaEmbeddedServerEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"javaEmbeddedServerEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) JavaVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -370,6 +426,26 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) P
 	return returns
 }
 
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) Python() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"python",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) PythonInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pythonInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) PythonVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -405,6 +481,26 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) T
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) TomcatVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tomcatVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) TomcatVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tomcatVersionInput",
 		&returns,
 	)
 	return returns
@@ -504,6 +600,17 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)Se
 	)
 }
 
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)SetDotnetCoreVersion(val *string) {
+	if err := j.validateSetDotnetCoreVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dotnetCoreVersion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)SetDotnetVersion(val *string) {
 	if err := j.validateSetDotnetVersionParameters(val); err != nil {
 		panic(err)
@@ -548,6 +655,17 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)Se
 	)
 }
 
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)SetJavaEmbeddedServerEnabled(val interface{}) {
+	if err := j.validateSetJavaEmbeddedServerEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"javaEmbeddedServerEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)SetJavaVersion(val *string) {
 	if err := j.validateSetJavaVersionParameters(val); err != nil {
 		panic(err)
@@ -581,6 +699,17 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)Se
 	)
 }
 
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)SetPython(val interface{}) {
+	if err := j.validateSetPythonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"python",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)SetPythonVersion(val *string) {
 	if err := j.validateSetPythonVersionParameters(val); err != nil {
 		panic(err)
@@ -610,6 +739,17 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)Se
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)SetTomcatVersion(val *string) {
+	if err := j.validateSetTomcatVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tomcatVersion",
 		val,
 	)
 }
@@ -832,6 +972,14 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) R
 	)
 }
 
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) ResetDotnetCoreVersion() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDotnetCoreVersion",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) ResetDotnetVersion() {
 	_jsii_.InvokeVoid(
 		w,
@@ -852,6 +1000,14 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) R
 	_jsii_.InvokeVoid(
 		w,
 		"resetJavaContainerVersion",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) ResetJavaEmbeddedServerEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetJavaEmbeddedServerEnabled",
 		nil, // no parameters
 	)
 }
@@ -880,10 +1036,26 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) R
 	)
 }
 
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) ResetPython() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetPython",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) ResetPythonVersion() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetPythonVersion",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) ResetTomcatVersion() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTomcatVersion",
 		nil, // no parameters
 	)
 }

@@ -1,0 +1,6 @@
+package dataazurermprivatednsresolverforwardingrule
+
+
+type DataAzurermPrivateDnsResolverForwardingRuleTargetDnsServers struct {
+}
+

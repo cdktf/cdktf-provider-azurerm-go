@@ -111,6 +111,17 @@ func (m *jsiiProxy_MaintenanceConfiguration) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (m *jsiiProxy_MaintenanceConfiguration) validatePutInstallPatchesParameters(value *MaintenanceConfigurationInstallPatches) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MaintenanceConfiguration) validatePutTimeoutsParameters(value *MaintenanceConfigurationTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -191,6 +202,14 @@ func (j *jsiiProxy_MaintenanceConfiguration) validateSetConnectionParameters(val
 }
 
 func (j *jsiiProxy_MaintenanceConfiguration) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MaintenanceConfiguration) validateSetInGuestUserPatchModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

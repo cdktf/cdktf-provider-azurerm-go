@@ -59,6 +59,7 @@ type DataAzurermSharedImage interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	PurchasePlan() DataAzurermSharedImagePurchasePlanList
 	// Experimental.
 	RawOverrides() interface{}
 	ReleaseNoteUri() *string
@@ -356,6 +357,16 @@ func (j *jsiiProxy_DataAzurermSharedImage) Provider() cdktf.TerraformProvider {
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermSharedImage) PurchasePlan() DataAzurermSharedImagePurchasePlanList {
+	var returns DataAzurermSharedImagePurchasePlanList
+	_jsii_.Get(
+		j,
+		"purchasePlan",
 		&returns,
 	)
 	return returns

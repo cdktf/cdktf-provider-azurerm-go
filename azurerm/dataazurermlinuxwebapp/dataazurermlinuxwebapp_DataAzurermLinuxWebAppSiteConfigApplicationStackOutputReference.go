@@ -30,6 +30,7 @@ type DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReference interface {
 	DotnetVersion() *string
 	// Experimental.
 	Fqn() *string
+	GoVersion() *string
 	InternalValue() *DataAzurermLinuxWebAppSiteConfigApplicationStack
 	SetInternalValue(val *DataAzurermLinuxWebAppSiteConfigApplicationStack)
 	JavaServer() *string
@@ -151,6 +152,16 @@ func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReferen
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReference) GoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"goVersion",
 		&returns,
 	)
 	return returns

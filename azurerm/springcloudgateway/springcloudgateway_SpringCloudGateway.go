@@ -14,6 +14,9 @@ type SpringCloudGateway interface {
 	cdktf.TerraformResource
 	ApiMetadata() SpringCloudGatewayApiMetadataOutputReference
 	ApiMetadataInput() *SpringCloudGatewayApiMetadata
+	ApplicationPerformanceMonitoringTypes() *[]*string
+	SetApplicationPerformanceMonitoringTypes(val *[]*string)
+	ApplicationPerformanceMonitoringTypesInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -32,6 +35,9 @@ type SpringCloudGateway interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnvironmentVariables() *map[string]*string
+	SetEnvironmentVariables(val *map[string]*string)
+	EnvironmentVariablesInput() *map[string]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -73,6 +79,9 @@ type SpringCloudGateway interface {
 	QuotaInput() *SpringCloudGatewayQuota
 	// Experimental.
 	RawOverrides() interface{}
+	SensitiveEnvironmentVariables() *map[string]*string
+	SetSensitiveEnvironmentVariables(val *map[string]*string)
+	SensitiveEnvironmentVariablesInput() *map[string]*string
 	SpringCloudServiceId() *string
 	SetSpringCloudServiceId(val *string)
 	SpringCloudServiceIdInput() *string
@@ -118,7 +127,9 @@ type SpringCloudGateway interface {
 	PutSso(value *SpringCloudGatewaySso)
 	PutTimeouts(value *SpringCloudGatewayTimeouts)
 	ResetApiMetadata()
+	ResetApplicationPerformanceMonitoringTypes()
 	ResetCors()
+	ResetEnvironmentVariables()
 	ResetHttpsOnly()
 	ResetId()
 	ResetInstanceCount()
@@ -127,6 +138,7 @@ type SpringCloudGateway interface {
 	ResetOverrideLogicalId()
 	ResetPublicNetworkAccessEnabled()
 	ResetQuota()
+	ResetSensitiveEnvironmentVariables()
 	ResetSso()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -159,6 +171,26 @@ func (j *jsiiProxy_SpringCloudGateway) ApiMetadataInput() *SpringCloudGatewayApi
 	_jsii_.Get(
 		j,
 		"apiMetadataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGateway) ApplicationPerformanceMonitoringTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"applicationPerformanceMonitoringTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGateway) ApplicationPerformanceMonitoringTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"applicationPerformanceMonitoringTypesInput",
 		&returns,
 	)
 	return returns
@@ -229,6 +261,26 @@ func (j *jsiiProxy_SpringCloudGateway) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGateway) EnvironmentVariables() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"environmentVariables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGateway) EnvironmentVariablesInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"environmentVariablesInput",
 		&returns,
 	)
 	return returns
@@ -434,6 +486,26 @@ func (j *jsiiProxy_SpringCloudGateway) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SpringCloudGateway) SensitiveEnvironmentVariables() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"sensitiveEnvironmentVariables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGateway) SensitiveEnvironmentVariablesInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"sensitiveEnvironmentVariablesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpringCloudGateway) SpringCloudServiceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -564,6 +636,17 @@ func NewSpringCloudGateway_Override(s SpringCloudGateway, scope constructs.Const
 	)
 }
 
+func (j *jsiiProxy_SpringCloudGateway)SetApplicationPerformanceMonitoringTypes(val *[]*string) {
+	if err := j.validateSetApplicationPerformanceMonitoringTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"applicationPerformanceMonitoringTypes",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SpringCloudGateway)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -587,6 +670,17 @@ func (j *jsiiProxy_SpringCloudGateway)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpringCloudGateway)SetEnvironmentVariables(val *map[string]*string) {
+	if err := j.validateSetEnvironmentVariablesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"environmentVariables",
 		val,
 	)
 }
@@ -680,6 +774,17 @@ func (j *jsiiProxy_SpringCloudGateway)SetPublicNetworkAccessEnabled(val interfac
 	_jsii_.Set(
 		j,
 		"publicNetworkAccessEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpringCloudGateway)SetSensitiveEnvironmentVariables(val *map[string]*string) {
+	if err := j.validateSetSensitiveEnvironmentVariablesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sensitiveEnvironmentVariables",
 		val,
 	)
 }
@@ -1024,10 +1129,26 @@ func (s *jsiiProxy_SpringCloudGateway) ResetApiMetadata() {
 	)
 }
 
+func (s *jsiiProxy_SpringCloudGateway) ResetApplicationPerformanceMonitoringTypes() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetApplicationPerformanceMonitoringTypes",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SpringCloudGateway) ResetCors() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCors",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudGateway) ResetEnvironmentVariables() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnvironmentVariables",
 		nil, // no parameters
 	)
 }
@@ -1076,6 +1197,14 @@ func (s *jsiiProxy_SpringCloudGateway) ResetQuota() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetQuota",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudGateway) ResetSensitiveEnvironmentVariables() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSensitiveEnvironmentVariables",
 		nil, // no parameters
 	)
 }

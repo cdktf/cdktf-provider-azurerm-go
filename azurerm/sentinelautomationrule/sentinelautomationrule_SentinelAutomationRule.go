@@ -20,6 +20,9 @@ type SentinelAutomationRule interface {
 	CdktfStack() cdktf.TerraformStack
 	Condition() SentinelAutomationRuleConditionList
 	ConditionInput() interface{}
+	ConditionJson() *string
+	SetConditionJson(val *string)
+	ConditionJsonInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -87,6 +90,12 @@ type SentinelAutomationRule interface {
 	TerraformResourceType() *string
 	Timeouts() SentinelAutomationRuleTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TriggersOn() *string
+	SetTriggersOn(val *string)
+	TriggersOnInput() *string
+	TriggersWhen() *string
+	SetTriggersWhen(val *string)
+	TriggersWhenInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -119,6 +128,7 @@ type SentinelAutomationRule interface {
 	ResetActionIncident()
 	ResetActionPlaybook()
 	ResetCondition()
+	ResetConditionJson()
 	ResetEnabled()
 	ResetExpiration()
 	ResetId()
@@ -126,6 +136,8 @@ type SentinelAutomationRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
+	ResetTriggersOn()
+	ResetTriggersWhen()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -206,6 +218,26 @@ func (j *jsiiProxy_SentinelAutomationRule) ConditionInput() interface{} {
 	_jsii_.Get(
 		j,
 		"conditionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelAutomationRule) ConditionJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"conditionJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelAutomationRule) ConditionJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"conditionJsonInput",
 		&returns,
 	)
 	return returns
@@ -521,6 +553,46 @@ func (j *jsiiProxy_SentinelAutomationRule) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SentinelAutomationRule) TriggersOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"triggersOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelAutomationRule) TriggersOnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"triggersOnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelAutomationRule) TriggersWhen() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"triggersWhen",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelAutomationRule) TriggersWhenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"triggersWhenInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_automation_rule azurerm_sentinel_automation_rule} Resource.
 func NewSentinelAutomationRule(scope constructs.Construct, id *string, config *SentinelAutomationRuleConfig) SentinelAutomationRule {
@@ -548,6 +620,17 @@ func NewSentinelAutomationRule_Override(s SentinelAutomationRule, scope construc
 		"@cdktf/provider-azurerm.sentinelAutomationRule.SentinelAutomationRule",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SentinelAutomationRule)SetConditionJson(val *string) {
+	if err := j.validateSetConditionJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"conditionJson",
+		val,
 	)
 }
 
@@ -689,6 +772,28 @@ func (j *jsiiProxy_SentinelAutomationRule)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SentinelAutomationRule)SetTriggersOn(val *string) {
+	if err := j.validateSetTriggersOnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"triggersOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SentinelAutomationRule)SetTriggersWhen(val *string) {
+	if err := j.validateSetTriggersWhenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"triggersWhen",
 		val,
 	)
 }
@@ -1027,6 +1132,14 @@ func (s *jsiiProxy_SentinelAutomationRule) ResetCondition() {
 	)
 }
 
+func (s *jsiiProxy_SentinelAutomationRule) ResetConditionJson() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetConditionJson",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SentinelAutomationRule) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1063,6 +1176,22 @@ func (s *jsiiProxy_SentinelAutomationRule) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SentinelAutomationRule) ResetTriggersOn() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTriggersOn",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SentinelAutomationRule) ResetTriggersWhen() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTriggersWhen",
 		nil, // no parameters
 	)
 }

@@ -56,6 +56,10 @@ func (k *jsiiProxy_KubernetesCluster) validatePutAciConnectorLinuxParameters(val
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesCluster) validatePutApiServerAccessProfileParameters(value *KubernetesClusterApiServerAccessProfile) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesCluster) validatePutAutoScalerProfileParameters(value *KubernetesClusterAutoScalerProfile) error {
 	return nil
 }

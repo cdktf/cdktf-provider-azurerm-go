@@ -239,6 +239,14 @@ func validateSentinelAutomationRule_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_SentinelAutomationRule) validateSetConditionJsonParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SentinelAutomationRule) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -389,6 +397,22 @@ func (j *jsiiProxy_SentinelAutomationRule) validateSetProvisionersParameters(val
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SentinelAutomationRule) validateSetTriggersOnParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SentinelAutomationRule) validateSetTriggersWhenParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

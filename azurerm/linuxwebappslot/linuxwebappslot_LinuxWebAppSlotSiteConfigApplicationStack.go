@@ -8,6 +8,8 @@ type LinuxWebAppSlotSiteConfigApplicationStack struct {
 	DockerImageTag *string `field:"optional" json:"dockerImageTag" yaml:"dockerImageTag"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_web_app_slot#dotnet_version LinuxWebAppSlot#dotnet_version}.
 	DotnetVersion *string `field:"optional" json:"dotnetVersion" yaml:"dotnetVersion"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_web_app_slot#go_version LinuxWebAppSlot#go_version}.
+	GoVersion *string `field:"optional" json:"goVersion" yaml:"goVersion"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_web_app_slot#java_server LinuxWebAppSlot#java_server}.
 	JavaServer *string `field:"optional" json:"javaServer" yaml:"javaServer"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_web_app_slot#java_server_version LinuxWebAppSlot#java_server_version}.

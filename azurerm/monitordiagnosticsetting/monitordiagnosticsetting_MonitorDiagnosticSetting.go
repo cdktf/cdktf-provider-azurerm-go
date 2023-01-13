@@ -28,6 +28,8 @@ type MonitorDiagnosticSetting interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnabledLog() MonitorDiagnosticSettingEnabledLogList
+	EnabledLogInput() interface{}
 	EventhubAuthorizationRuleId() *string
 	SetEventhubAuthorizationRuleId(val *string)
 	EventhubAuthorizationRuleIdInput() *string
@@ -116,9 +118,11 @@ type MonitorDiagnosticSetting interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEnabledLog(value interface{})
 	PutLog(value interface{})
 	PutMetric(value interface{})
 	PutTimeouts(value *MonitorDiagnosticSettingTimeouts)
+	ResetEnabledLog()
 	ResetEventhubAuthorizationRuleId()
 	ResetEventhubName()
 	ResetId()
@@ -192,6 +196,26 @@ func (j *jsiiProxy_MonitorDiagnosticSetting) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDiagnosticSetting) EnabledLog() MonitorDiagnosticSettingEnabledLogList {
+	var returns MonitorDiagnosticSettingEnabledLogList
+	_jsii_.Get(
+		j,
+		"enabledLog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDiagnosticSetting) EnabledLogInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledLogInput",
 		&returns,
 	)
 	return returns
@@ -1007,6 +1031,17 @@ func (m *jsiiProxy_MonitorDiagnosticSetting) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (m *jsiiProxy_MonitorDiagnosticSetting) PutEnabledLog(value interface{}) {
+	if err := m.validatePutEnabledLogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putEnabledLog",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitorDiagnosticSetting) PutLog(value interface{}) {
 	if err := m.validatePutLogParameters(value); err != nil {
 		panic(err)
@@ -1037,6 +1072,14 @@ func (m *jsiiProxy_MonitorDiagnosticSetting) PutTimeouts(value *MonitorDiagnosti
 		m,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorDiagnosticSetting) ResetEnabledLog() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEnabledLog",
+		nil, // no parameters
 	)
 }
 

@@ -60,6 +60,10 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) validateSetIsPrimaryParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) validateSetRecoveryPublicIpAddressIdParameters(val *string) error {
 	return nil
 }

@@ -1,0 +1,6 @@
+package dataazurermprivatednsresolverinboundendpoint
+
+
+type DataAzurermPrivateDnsResolverInboundEndpointIpConfigurations struct {
+}
+

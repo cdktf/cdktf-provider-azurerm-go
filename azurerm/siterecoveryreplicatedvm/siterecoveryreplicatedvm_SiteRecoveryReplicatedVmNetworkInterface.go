@@ -2,6 +2,8 @@ package siterecoveryreplicatedvm
 
 
 type SiteRecoveryReplicatedVmNetworkInterface struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/site_recovery_replicated_vm#is_primary SiteRecoveryReplicatedVm#is_primary}.
+	IsPrimary interface{} `field:"optional" json:"isPrimary" yaml:"isPrimary"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/site_recovery_replicated_vm#recovery_public_ip_address_id SiteRecoveryReplicatedVm#recovery_public_ip_address_id}.
 	RecoveryPublicIpAddressId *string `field:"optional" json:"recoveryPublicIpAddressId" yaml:"recoveryPublicIpAddressId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/site_recovery_replicated_vm#source_network_interface_id SiteRecoveryReplicatedVm#source_network_interface_id}.

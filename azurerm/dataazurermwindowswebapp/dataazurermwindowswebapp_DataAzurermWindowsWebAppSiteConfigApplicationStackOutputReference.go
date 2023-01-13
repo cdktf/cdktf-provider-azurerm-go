@@ -29,6 +29,7 @@ type DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference interface
 	DockerContainerName() *string
 	DockerContainerRegistry() *string
 	DockerContainerTag() *string
+	DotnetCoreVersion() *string
 	DotnetVersion() *string
 	// Experimental.
 	Fqn() *string
@@ -36,9 +37,11 @@ type DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference interface
 	SetInternalValue(val *DataAzurermWindowsWebAppSiteConfigApplicationStack)
 	JavaContainer() *string
 	JavaContainerVersion() *string
+	JavaEmbeddedServerEnabled() cdktf.IResolvable
 	JavaVersion() *string
 	NodeVersion() *string
 	PhpVersion() *string
+	Python() cdktf.IResolvable
 	PythonVersion() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -48,6 +51,7 @@ type DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference interface
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TomcatVersion() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -157,6 +161,16 @@ func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputRefer
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference) DotnetCoreVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dotnetCoreVersion",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference) DotnetVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -207,6 +221,16 @@ func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputRefer
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference) JavaEmbeddedServerEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"javaEmbeddedServerEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference) JavaVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -237,6 +261,16 @@ func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputRefer
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference) Python() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"python",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference) PythonVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -262,6 +296,16 @@ func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputRefer
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference) TomcatVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tomcatVersion",
 		&returns,
 	)
 	return returns

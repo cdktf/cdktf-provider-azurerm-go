@@ -33,6 +33,10 @@ type KubernetesClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#aci_connector_linux KubernetesCluster#aci_connector_linux}
 	AciConnectorLinux *KubernetesClusterAciConnectorLinux `field:"optional" json:"aciConnectorLinux" yaml:"aciConnectorLinux"`
+	// api_server_access_profile block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#api_server_access_profile KubernetesCluster#api_server_access_profile}
+	ApiServerAccessProfile *KubernetesClusterApiServerAccessProfile `field:"optional" json:"apiServerAccessProfile" yaml:"apiServerAccessProfile"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#api_server_authorized_ip_ranges KubernetesCluster#api_server_authorized_ip_ranges}.
 	ApiServerAuthorizedIpRanges *[]*string `field:"optional" json:"apiServerAuthorizedIpRanges" yaml:"apiServerAuthorizedIpRanges"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#automatic_channel_upgrade KubernetesCluster#automatic_channel_upgrade}.

@@ -52,6 +52,10 @@ func (m *jsiiProxy_MonitorDiagnosticSetting) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (m *jsiiProxy_MonitorDiagnosticSetting) validatePutEnabledLogParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDiagnosticSetting) validatePutLogParameters(value interface{}) error {
 	return nil
 }

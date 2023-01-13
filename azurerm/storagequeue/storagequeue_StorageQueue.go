@@ -61,6 +61,7 @@ type StorageQueue interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ResourceManagerId() *string
 	StorageAccountName() *string
 	SetStorageAccountName(val *string)
 	StorageAccountNameInput() *string
@@ -304,6 +305,16 @@ func (j *jsiiProxy_StorageQueue) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageQueue) ResourceManagerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceManagerId",
 		&returns,
 	)
 	return returns

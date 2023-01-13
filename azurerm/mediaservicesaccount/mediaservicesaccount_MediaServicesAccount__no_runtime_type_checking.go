@@ -52,6 +52,10 @@ func (m *jsiiProxy_MediaServicesAccount) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (m *jsiiProxy_MediaServicesAccount) validatePutEncryptionParameters(value *MediaServicesAccountEncryption) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaServicesAccount) validatePutIdentityParameters(value *MediaServicesAccountIdentity) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (j *jsiiProxy_MediaServicesAccount) validateSetNameParameters(val *string) 
 }
 
 func (j *jsiiProxy_MediaServicesAccount) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MediaServicesAccount) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
 	return nil
 }
 

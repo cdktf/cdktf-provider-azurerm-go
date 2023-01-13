@@ -33,6 +33,8 @@ type StorageAccountConfig struct {
 	AccessTier *string `field:"optional" json:"accessTier" yaml:"accessTier"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#account_kind StorageAccount#account_kind}.
 	AccountKind *string `field:"optional" json:"accountKind" yaml:"accountKind"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#allowed_copy_scope StorageAccount#allowed_copy_scope}.
+	AllowedCopyScope *string `field:"optional" json:"allowedCopyScope" yaml:"allowedCopyScope"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/storage_account#allow_nested_items_to_be_public StorageAccount#allow_nested_items_to_be_public}.
 	AllowNestedItemsToBePublic interface{} `field:"optional" json:"allowNestedItemsToBePublic" yaml:"allowNestedItemsToBePublic"`
 	// azure_files_authentication block.

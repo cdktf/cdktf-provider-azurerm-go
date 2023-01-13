@@ -52,7 +52,15 @@ func (m *jsiiProxy_MysqlFlexibleServer) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (m *jsiiProxy_MysqlFlexibleServer) validatePutCustomerManagedKeyParameters(value *MysqlFlexibleServerCustomerManagedKey) error {
+	return nil
+}
+
 func (m *jsiiProxy_MysqlFlexibleServer) validatePutHighAvailabilityParameters(value *MysqlFlexibleServerHighAvailability) error {
+	return nil
+}
+
+func (m *jsiiProxy_MysqlFlexibleServer) validatePutIdentityParameters(value *MysqlFlexibleServerIdentity) error {
 	return nil
 }
 

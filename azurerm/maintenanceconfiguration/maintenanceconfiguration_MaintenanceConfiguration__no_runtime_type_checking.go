@@ -52,6 +52,10 @@ func (m *jsiiProxy_MaintenanceConfiguration) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (m *jsiiProxy_MaintenanceConfiguration) validatePutInstallPatchesParameters(value *MaintenanceConfigurationInstallPatches) error {
+	return nil
+}
+
 func (m *jsiiProxy_MaintenanceConfiguration) validatePutTimeoutsParameters(value *MaintenanceConfigurationTimeouts) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (j *jsiiProxy_MaintenanceConfiguration) validateSetConnectionParameters(val
 }
 
 func (j *jsiiProxy_MaintenanceConfiguration) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MaintenanceConfiguration) validateSetInGuestUserPatchModeParameters(val *string) error {
 	return nil
 }
 

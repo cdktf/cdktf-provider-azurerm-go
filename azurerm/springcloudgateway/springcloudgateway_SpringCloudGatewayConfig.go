@@ -27,10 +27,14 @@ type SpringCloudGatewayConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway#api_metadata SpringCloudGateway#api_metadata}
 	ApiMetadata *SpringCloudGatewayApiMetadata `field:"optional" json:"apiMetadata" yaml:"apiMetadata"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway#application_performance_monitoring_types SpringCloudGateway#application_performance_monitoring_types}.
+	ApplicationPerformanceMonitoringTypes *[]*string `field:"optional" json:"applicationPerformanceMonitoringTypes" yaml:"applicationPerformanceMonitoringTypes"`
 	// cors block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway#cors SpringCloudGateway#cors}
 	Cors *SpringCloudGatewayCors `field:"optional" json:"cors" yaml:"cors"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway#environment_variables SpringCloudGateway#environment_variables}.
+	EnvironmentVariables *map[string]*string `field:"optional" json:"environmentVariables" yaml:"environmentVariables"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway#https_only SpringCloudGateway#https_only}.
 	HttpsOnly interface{} `field:"optional" json:"httpsOnly" yaml:"httpsOnly"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway#id SpringCloudGateway#id}.
@@ -46,6 +50,8 @@ type SpringCloudGatewayConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway#quota SpringCloudGateway#quota}
 	Quota *SpringCloudGatewayQuota `field:"optional" json:"quota" yaml:"quota"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway#sensitive_environment_variables SpringCloudGateway#sensitive_environment_variables}.
+	SensitiveEnvironmentVariables *map[string]*string `field:"optional" json:"sensitiveEnvironmentVariables" yaml:"sensitiveEnvironmentVariables"`
 	// sso block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_gateway#sso SpringCloudGateway#sso}

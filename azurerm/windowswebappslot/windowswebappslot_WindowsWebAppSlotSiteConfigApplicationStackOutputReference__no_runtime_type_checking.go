@@ -72,6 +72,10 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) validateSetDotnetCoreVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) validateSetDotnetVersionParameters(val *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) validateSetJavaEmbeddedServerEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) validateSetJavaVersionParameters(val *string) error {
 	return nil
 }
@@ -100,6 +108,10 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) validateSetPythonParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) validateSetPythonVersionParameters(val *string) error {
 	return nil
 }
@@ -109,6 +121,10 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) v
 }
 
 func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) validateSetTomcatVersionParameters(val *string) error {
 	return nil
 }
 

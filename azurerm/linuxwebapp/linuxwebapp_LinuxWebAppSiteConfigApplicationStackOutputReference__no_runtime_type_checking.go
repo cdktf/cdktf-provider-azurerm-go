@@ -68,6 +68,10 @@ func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) validateSetGoVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) validateSetInternalValueParameters(val *LinuxWebAppSiteConfigApplicationStack) error {
 	return nil
 }

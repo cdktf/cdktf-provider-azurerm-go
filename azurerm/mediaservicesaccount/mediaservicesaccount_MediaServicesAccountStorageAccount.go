@@ -9,5 +9,9 @@ type MediaServicesAccountStorageAccount struct {
 	Id *string `field:"required" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_services_account#is_primary MediaServicesAccount#is_primary}.
 	IsPrimary interface{} `field:"optional" json:"isPrimary" yaml:"isPrimary"`
+	// managed_identity block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_services_account#managed_identity MediaServicesAccount#managed_identity}
+	ManagedIdentity *MediaServicesAccountStorageAccountManagedIdentity `field:"optional" json:"managedIdentity" yaml:"managedIdentity"`
 }
 

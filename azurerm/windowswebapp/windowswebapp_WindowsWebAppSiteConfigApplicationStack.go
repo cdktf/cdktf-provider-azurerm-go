@@ -10,19 +10,31 @@ type WindowsWebAppSiteConfigApplicationStack struct {
 	DockerContainerRegistry *string `field:"optional" json:"dockerContainerRegistry" yaml:"dockerContainerRegistry"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app#docker_container_tag WindowsWebApp#docker_container_tag}.
 	DockerContainerTag *string `field:"optional" json:"dockerContainerTag" yaml:"dockerContainerTag"`
+	// The version of DotNetCore to use.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app#dotnet_core_version WindowsWebApp#dotnet_core_version}
+	DotnetCoreVersion *string `field:"optional" json:"dotnetCoreVersion" yaml:"dotnetCoreVersion"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app#dotnet_version WindowsWebApp#dotnet_version}.
 	DotnetVersion *string `field:"optional" json:"dotnetVersion" yaml:"dotnetVersion"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app#java_container WindowsWebApp#java_container}.
 	JavaContainer *string `field:"optional" json:"javaContainer" yaml:"javaContainer"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app#java_container_version WindowsWebApp#java_container_version}.
 	JavaContainerVersion *string `field:"optional" json:"javaContainerVersion" yaml:"javaContainerVersion"`
+	// Should the application use the embedded web server for the version of Java in use.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app#java_embedded_server_enabled WindowsWebApp#java_embedded_server_enabled}
+	JavaEmbeddedServerEnabled interface{} `field:"optional" json:"javaEmbeddedServerEnabled" yaml:"javaEmbeddedServerEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app#java_version WindowsWebApp#java_version}.
 	JavaVersion *string `field:"optional" json:"javaVersion" yaml:"javaVersion"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app#node_version WindowsWebApp#node_version}.
 	NodeVersion *string `field:"optional" json:"nodeVersion" yaml:"nodeVersion"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app#php_version WindowsWebApp#php_version}.
 	PhpVersion *string `field:"optional" json:"phpVersion" yaml:"phpVersion"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app#python WindowsWebApp#python}.
+	Python interface{} `field:"optional" json:"python" yaml:"python"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app#python_version WindowsWebApp#python_version}.
 	PythonVersion *string `field:"optional" json:"pythonVersion" yaml:"pythonVersion"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app#tomcat_version WindowsWebApp#tomcat_version}.
+	TomcatVersion *string `field:"optional" json:"tomcatVersion" yaml:"tomcatVersion"`
 }
 

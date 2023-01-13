@@ -35,6 +35,8 @@ type MediaServicesAccountStorageAccountOutputReference interface {
 	IsPrimary() interface{}
 	SetIsPrimary(val interface{})
 	IsPrimaryInput() interface{}
+	ManagedIdentity() MediaServicesAccountStorageAccountManagedIdentityOutputReference
+	ManagedIdentityInput() *MediaServicesAccountStorageAccountManagedIdentity
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type MediaServicesAccountStorageAccountOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutManagedIdentity(value *MediaServicesAccountStorageAccountManagedIdentity)
 	ResetIsPrimary()
+	ResetManagedIdentity()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -168,6 +172,26 @@ func (j *jsiiProxy_MediaServicesAccountStorageAccountOutputReference) IsPrimaryI
 	_jsii_.Get(
 		j,
 		"isPrimaryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaServicesAccountStorageAccountOutputReference) ManagedIdentity() MediaServicesAccountStorageAccountManagedIdentityOutputReference {
+	var returns MediaServicesAccountStorageAccountManagedIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"managedIdentity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaServicesAccountStorageAccountOutputReference) ManagedIdentityInput() *MediaServicesAccountStorageAccountManagedIdentity {
+	var returns *MediaServicesAccountStorageAccountManagedIdentity
+	_jsii_.Get(
+		j,
+		"managedIdentityInput",
 		&returns,
 	)
 	return returns
@@ -484,10 +508,29 @@ func (m *jsiiProxy_MediaServicesAccountStorageAccountOutputReference) Interpolat
 	return returns
 }
 
+func (m *jsiiProxy_MediaServicesAccountStorageAccountOutputReference) PutManagedIdentity(value *MediaServicesAccountStorageAccountManagedIdentity) {
+	if err := m.validatePutManagedIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putManagedIdentity",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MediaServicesAccountStorageAccountOutputReference) ResetIsPrimary() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetIsPrimary",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaServicesAccountStorageAccountOutputReference) ResetManagedIdentity() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetManagedIdentity",
 		nil, // no parameters
 	)
 }

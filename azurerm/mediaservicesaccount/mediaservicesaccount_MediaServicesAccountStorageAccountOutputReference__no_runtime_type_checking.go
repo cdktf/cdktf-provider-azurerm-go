@@ -44,6 +44,10 @@ func (m *jsiiProxy_MediaServicesAccountStorageAccountOutputReference) validateIn
 	return nil
 }
 
+func (m *jsiiProxy_MediaServicesAccountStorageAccountOutputReference) validatePutManagedIdentityParameters(value *MediaServicesAccountStorageAccountManagedIdentity) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaServicesAccountStorageAccountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

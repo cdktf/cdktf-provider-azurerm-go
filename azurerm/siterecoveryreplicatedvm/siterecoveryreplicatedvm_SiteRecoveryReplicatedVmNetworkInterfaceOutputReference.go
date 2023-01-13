@@ -29,6 +29,9 @@ type SiteRecoveryReplicatedVmNetworkInterfaceOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	IsPrimary() interface{}
+	SetIsPrimary(val interface{})
+	IsPrimaryInput() interface{}
 	RecoveryPublicIpAddressId() *string
 	SetRecoveryPublicIpAddressId(val *string)
 	RecoveryPublicIpAddressIdInput() *string
@@ -73,6 +76,7 @@ type SiteRecoveryReplicatedVmNetworkInterfaceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIsPrimary()
 	ResetRecoveryPublicIpAddressId()
 	ResetSourceNetworkInterfaceId()
 	ResetTargetStaticIp()
@@ -137,6 +141,26 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) IsPrimary() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isPrimary",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) IsPrimaryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isPrimaryInput",
 		&returns,
 	)
 	return returns
@@ -299,6 +323,17 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference)SetIn
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference)SetIsPrimary(val interface{}) {
+	if err := j.validateSetIsPrimaryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isPrimary",
 		val,
 	)
 }
@@ -553,6 +588,14 @@ func (s *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) Inte
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) ResetIsPrimary() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIsPrimary",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) ResetRecoveryPublicIpAddressId() {

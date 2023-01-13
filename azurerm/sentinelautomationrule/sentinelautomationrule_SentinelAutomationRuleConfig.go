@@ -39,6 +39,8 @@ type SentinelAutomationRuleConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_automation_rule#condition SentinelAutomationRule#condition}
 	Condition interface{} `field:"optional" json:"condition" yaml:"condition"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_automation_rule#condition_json SentinelAutomationRule#condition_json}.
+	ConditionJson *string `field:"optional" json:"conditionJson" yaml:"conditionJson"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_automation_rule#enabled SentinelAutomationRule#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_automation_rule#expiration SentinelAutomationRule#expiration}.
@@ -52,5 +54,9 @@ type SentinelAutomationRuleConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_automation_rule#timeouts SentinelAutomationRule#timeouts}
 	Timeouts *SentinelAutomationRuleTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_automation_rule#triggers_on SentinelAutomationRule#triggers_on}.
+	TriggersOn *string `field:"optional" json:"triggersOn" yaml:"triggersOn"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_automation_rule#triggers_when SentinelAutomationRule#triggers_when}.
+	TriggersWhen *string `field:"optional" json:"triggersWhen" yaml:"triggersWhen"`
 }
 

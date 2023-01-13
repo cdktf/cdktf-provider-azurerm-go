@@ -29,6 +29,10 @@ type MediaServicesAccountConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_services_account#storage_account MediaServicesAccount#storage_account}
 	StorageAccount interface{} `field:"required" json:"storageAccount" yaml:"storageAccount"`
+	// encryption block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_services_account#encryption MediaServicesAccount#encryption}
+	Encryption *MediaServicesAccountEncryption `field:"optional" json:"encryption" yaml:"encryption"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_services_account#id MediaServicesAccount#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -42,6 +46,8 @@ type MediaServicesAccountConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_services_account#key_delivery_access_control MediaServicesAccount#key_delivery_access_control}
 	KeyDeliveryAccessControl *MediaServicesAccountKeyDeliveryAccessControl `field:"optional" json:"keyDeliveryAccessControl" yaml:"keyDeliveryAccessControl"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_services_account#public_network_access_enabled MediaServicesAccount#public_network_access_enabled}.
+	PublicNetworkAccessEnabled interface{} `field:"optional" json:"publicNetworkAccessEnabled" yaml:"publicNetworkAccessEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_services_account#storage_authentication_type MediaServicesAccount#storage_authentication_type}.
 	StorageAuthenticationType *string `field:"optional" json:"storageAuthenticationType" yaml:"storageAuthenticationType"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_services_account#tags MediaServicesAccount#tags}.

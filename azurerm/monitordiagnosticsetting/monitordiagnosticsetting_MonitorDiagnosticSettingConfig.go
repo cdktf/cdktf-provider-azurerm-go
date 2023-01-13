@@ -23,6 +23,10 @@ type MonitorDiagnosticSettingConfig struct {
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_diagnostic_setting#target_resource_id MonitorDiagnosticSetting#target_resource_id}.
 	TargetResourceId *string `field:"required" json:"targetResourceId" yaml:"targetResourceId"`
+	// enabled_log block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_diagnostic_setting#enabled_log MonitorDiagnosticSetting#enabled_log}
+	EnabledLog interface{} `field:"optional" json:"enabledLog" yaml:"enabledLog"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_diagnostic_setting#eventhub_authorization_rule_id MonitorDiagnosticSetting#eventhub_authorization_rule_id}.
 	EventhubAuthorizationRuleId *string `field:"optional" json:"eventhubAuthorizationRuleId" yaml:"eventhubAuthorizationRuleId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_diagnostic_setting#eventhub_name MonitorDiagnosticSetting#eventhub_name}.

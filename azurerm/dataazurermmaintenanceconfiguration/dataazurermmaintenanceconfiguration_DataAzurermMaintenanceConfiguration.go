@@ -35,6 +35,8 @@ type DataAzurermMaintenanceConfiguration interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InGuestUserPatchMode() *string
+	InstallPatches() DataAzurermMaintenanceConfigurationInstallPatchesList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -198,6 +200,26 @@ func (j *jsiiProxy_DataAzurermMaintenanceConfiguration) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMaintenanceConfiguration) InGuestUserPatchMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inGuestUserPatchMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMaintenanceConfiguration) InstallPatches() DataAzurermMaintenanceConfigurationInstallPatchesList {
+	var returns DataAzurermMaintenanceConfigurationInstallPatchesList
+	_jsii_.Get(
+		j,
+		"installPatches",
 		&returns,
 	)
 	return returns

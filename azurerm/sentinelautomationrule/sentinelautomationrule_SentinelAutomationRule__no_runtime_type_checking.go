@@ -80,6 +80,10 @@ func validateSentinelAutomationRule_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_SentinelAutomationRule) validateSetConditionJsonParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelAutomationRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -117,6 +121,14 @@ func (j *jsiiProxy_SentinelAutomationRule) validateSetOrderParameters(val *float
 }
 
 func (j *jsiiProxy_SentinelAutomationRule) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SentinelAutomationRule) validateSetTriggersOnParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SentinelAutomationRule) validateSetTriggersWhenParameters(val *string) error {
 	return nil
 }
 

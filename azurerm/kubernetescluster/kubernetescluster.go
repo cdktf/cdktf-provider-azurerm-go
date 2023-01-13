@@ -14,6 +14,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "aciConnectorLinux", GoGetter: "AciConnectorLinux"},
 			_jsii_.MemberProperty{JsiiProperty: "aciConnectorLinuxInput", GoGetter: "AciConnectorLinuxInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "apiServerAccessProfile", GoGetter: "ApiServerAccessProfile"},
+			_jsii_.MemberProperty{JsiiProperty: "apiServerAccessProfileInput", GoGetter: "ApiServerAccessProfileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "apiServerAuthorizedIpRanges", GoGetter: "ApiServerAuthorizedIpRanges"},
 			_jsii_.MemberProperty{JsiiProperty: "apiServerAuthorizedIpRangesInput", GoGetter: "ApiServerAuthorizedIpRangesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "automaticChannelUpgrade", GoGetter: "AutomaticChannelUpgrade"},
@@ -121,6 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publicNetworkAccessEnabled", GoGetter: "PublicNetworkAccessEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "publicNetworkAccessEnabledInput", GoGetter: "PublicNetworkAccessEnabledInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAciConnectorLinux", GoMethod: "PutAciConnectorLinux"},
+			_jsii_.MemberMethod{JsiiMethod: "putApiServerAccessProfile", GoMethod: "PutApiServerAccessProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "putAutoScalerProfile", GoMethod: "PutAutoScalerProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "putAzureActiveDirectoryRoleBasedAccessControl", GoMethod: "PutAzureActiveDirectoryRoleBasedAccessControl"},
 			_jsii_.MemberMethod{JsiiMethod: "putDefaultNodePool", GoMethod: "PutDefaultNodePool"},
@@ -143,6 +146,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putWorkloadAutoscalerProfile", GoMethod: "PutWorkloadAutoscalerProfile"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAciConnectorLinux", GoMethod: "ResetAciConnectorLinux"},
+			_jsii_.MemberMethod{JsiiMethod: "resetApiServerAccessProfile", GoMethod: "ResetApiServerAccessProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApiServerAuthorizedIpRanges", GoMethod: "ResetApiServerAuthorizedIpRanges"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomaticChannelUpgrade", GoMethod: "ResetAutomaticChannelUpgrade"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoScalerProfile", GoMethod: "ResetAutoScalerProfile"},
@@ -261,6 +265,51 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KubernetesClusterAciConnectorLinuxOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfile",
+		reflect.TypeOf((*KubernetesClusterApiServerAccessProfile)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference",
+		reflect.TypeOf((*KubernetesClusterApiServerAccessProfileOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "authorizedIpRanges", GoGetter: "AuthorizedIpRanges"},
+			_jsii_.MemberProperty{JsiiProperty: "authorizedIpRangesInput", GoGetter: "AuthorizedIpRangesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthorizedIpRanges", GoMethod: "ResetAuthorizedIpRanges"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubnetId", GoMethod: "ResetSubnetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVnetIntegrationEnabled", GoMethod: "ResetVnetIntegrationEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "subnetId", GoGetter: "SubnetId"},
+			_jsii_.MemberProperty{JsiiProperty: "subnetIdInput", GoGetter: "SubnetIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "vnetIntegrationEnabled", GoGetter: "VnetIntegrationEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "vnetIntegrationEnabledInput", GoGetter: "VnetIntegrationEnabledInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -190,6 +190,14 @@ func validateSpringCloudGateway_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudGateway) validateSetApplicationPerformanceMonitoringTypesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudGateway) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -218,6 +226,14 @@ func (j *jsiiProxy_SpringCloudGateway) validateSetConnectionParameters(val inter
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *cdktf.SSHProvisionerConnection, *cdktf.WinrmProvisionerConnection; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SpringCloudGateway) validateSetEnvironmentVariablesParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -336,6 +352,14 @@ func (j *jsiiProxy_SpringCloudGateway) validateSetPublicNetworkAccessEnabledPara
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SpringCloudGateway) validateSetSensitiveEnvironmentVariablesParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

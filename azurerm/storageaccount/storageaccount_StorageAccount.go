@@ -24,6 +24,9 @@ type StorageAccount interface {
 	AccountTier() *string
 	SetAccountTier(val *string)
 	AccountTierInput() *string
+	AllowedCopyScope() *string
+	SetAllowedCopyScope(val *string)
+	AllowedCopyScopeInput() *string
 	AllowNestedItemsToBePublic() interface{}
 	SetAllowNestedItemsToBePublic(val interface{})
 	AllowNestedItemsToBePublicInput() interface{}
@@ -228,6 +231,7 @@ type StorageAccount interface {
 	PutTimeouts(value *StorageAccountTimeouts)
 	ResetAccessTier()
 	ResetAccountKind()
+	ResetAllowedCopyScope()
 	ResetAllowNestedItemsToBePublic()
 	ResetAzureFilesAuthentication()
 	ResetBlobProperties()
@@ -351,6 +355,26 @@ func (j *jsiiProxy_StorageAccount) AccountTierInput() *string {
 	_jsii_.Get(
 		j,
 		"accountTierInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) AllowedCopyScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"allowedCopyScope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) AllowedCopyScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"allowedCopyScopeInput",
 		&returns,
 	)
 	return returns
@@ -1570,6 +1594,17 @@ func (j *jsiiProxy_StorageAccount)SetAccountTier(val *string) {
 	)
 }
 
+func (j *jsiiProxy_StorageAccount)SetAllowedCopyScope(val *string) {
+	if err := j.validateSetAllowedCopyScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedCopyScope",
+		val,
+	)
+}
+
 func (j *jsiiProxy_StorageAccount)SetAllowNestedItemsToBePublic(val interface{}) {
 	if err := j.validateSetAllowNestedItemsToBePublicParameters(val); err != nil {
 		panic(err)
@@ -2276,6 +2311,14 @@ func (s *jsiiProxy_StorageAccount) ResetAccountKind() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAccountKind",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageAccount) ResetAllowedCopyScope() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAllowedCopyScope",
 		nil, // no parameters
 	)
 }

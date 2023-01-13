@@ -84,7 +84,15 @@ func validateSpringCloudGateway_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudGateway) validateSetApplicationPerformanceMonitoringTypesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudGateway) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SpringCloudGateway) validateSetEnvironmentVariablesParameters(val *map[string]*string) error {
 	return nil
 }
 
@@ -113,6 +121,10 @@ func (j *jsiiProxy_SpringCloudGateway) validateSetProvisionersParameters(val *[]
 }
 
 func (j *jsiiProxy_SpringCloudGateway) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SpringCloudGateway) validateSetSensitiveEnvironmentVariablesParameters(val *map[string]*string) error {
 	return nil
 }
 

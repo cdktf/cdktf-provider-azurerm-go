@@ -132,6 +132,10 @@ func (j *jsiiProxy_StorageAccount) validateSetAccountTierParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_StorageAccount) validateSetAllowedCopyScopeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccount) validateSetAllowNestedItemsToBePublicParameters(val interface{}) error {
 	return nil
 }

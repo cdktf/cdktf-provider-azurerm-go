@@ -36,6 +36,9 @@ type LinuxWebAppSlotSiteConfigApplicationStackOutputReference interface {
 	DotnetVersionInput() *string
 	// Experimental.
 	Fqn() *string
+	GoVersion() *string
+	SetGoVersion(val *string)
+	GoVersionInput() *string
 	InternalValue() *LinuxWebAppSlotSiteConfigApplicationStack
 	SetInternalValue(val *LinuxWebAppSlotSiteConfigApplicationStack)
 	JavaServer() *string
@@ -94,6 +97,7 @@ type LinuxWebAppSlotSiteConfigApplicationStackOutputReference interface {
 	ResetDockerImage()
 	ResetDockerImageTag()
 	ResetDotnetVersion()
+	ResetGoVersion()
 	ResetJavaServer()
 	ResetJavaServerVersion()
 	ResetJavaVersion()
@@ -211,6 +215,26 @@ func (j *jsiiProxy_LinuxWebAppSlotSiteConfigApplicationStackOutputReference) Fqn
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxWebAppSlotSiteConfigApplicationStackOutputReference) GoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"goVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxWebAppSlotSiteConfigApplicationStackOutputReference) GoVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"goVersionInput",
 		&returns,
 	)
 	return returns
@@ -465,6 +489,17 @@ func (j *jsiiProxy_LinuxWebAppSlotSiteConfigApplicationStackOutputReference)SetD
 	_jsii_.Set(
 		j,
 		"dotnetVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxWebAppSlotSiteConfigApplicationStackOutputReference)SetGoVersion(val *string) {
+	if err := j.validateSetGoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"goVersion",
 		val,
 	)
 }
@@ -785,6 +820,14 @@ func (l *jsiiProxy_LinuxWebAppSlotSiteConfigApplicationStackOutputReference) Res
 	_jsii_.InvokeVoid(
 		l,
 		"resetDotnetVersion",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxWebAppSlotSiteConfigApplicationStackOutputReference) ResetGoVersion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetGoVersion",
 		nil, // no parameters
 	)
 }
