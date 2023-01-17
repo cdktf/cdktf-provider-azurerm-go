@@ -2,9 +2,9 @@ package logicapptriggerhttprequest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v4/logicapptriggerhttprequest/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v5/logicapptriggerhttprequest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
