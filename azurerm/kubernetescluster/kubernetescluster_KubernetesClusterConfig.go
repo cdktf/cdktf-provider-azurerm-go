@@ -84,6 +84,10 @@ type KubernetesClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#ingress_application_gateway KubernetesCluster#ingress_application_gateway}
 	IngressApplicationGateway *KubernetesClusterIngressApplicationGateway `field:"optional" json:"ingressApplicationGateway" yaml:"ingressApplicationGateway"`
+	// key_management_service block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#key_management_service KubernetesCluster#key_management_service}
+	KeyManagementService *KubernetesClusterKeyManagementService `field:"optional" json:"keyManagementService" yaml:"keyManagementService"`
 	// key_vault_secrets_provider block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#key_vault_secrets_provider KubernetesCluster#key_vault_secrets_provider}

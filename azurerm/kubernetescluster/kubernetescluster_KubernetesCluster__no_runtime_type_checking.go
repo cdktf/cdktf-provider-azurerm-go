@@ -84,6 +84,10 @@ func (k *jsiiProxy_KubernetesCluster) validatePutIngressApplicationGatewayParame
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesCluster) validatePutKeyManagementServiceParameters(value *KubernetesClusterKeyManagementService) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesCluster) validatePutKeyVaultSecretsProviderParameters(value *KubernetesClusterKeyVaultSecretsProvider) error {
 	return nil
 }

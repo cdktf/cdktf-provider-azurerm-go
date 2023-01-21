@@ -76,6 +76,10 @@ func (j *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) validateSetTe
 	return nil
 }
 
+func (j *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) validateSetUserAssignedIdentityIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) validateSetUseSystemAssignedIdentityParameters(val interface{}) error {
 	return nil
 }

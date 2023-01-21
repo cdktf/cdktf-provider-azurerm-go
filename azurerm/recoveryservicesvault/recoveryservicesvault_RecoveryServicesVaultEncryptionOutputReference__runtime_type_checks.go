@@ -215,6 +215,14 @@ func (j *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) validateSetTe
 	return nil
 }
 
+func (j *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) validateSetUserAssignedIdentityIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) validateSetUseSystemAssignedIdentityParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

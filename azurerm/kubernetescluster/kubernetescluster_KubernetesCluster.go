@@ -90,6 +90,8 @@ type KubernetesCluster interface {
 	ImageCleanerIntervalHoursInput() *float64
 	IngressApplicationGateway() KubernetesClusterIngressApplicationGatewayOutputReference
 	IngressApplicationGatewayInput() *KubernetesClusterIngressApplicationGateway
+	KeyManagementService() KubernetesClusterKeyManagementServiceOutputReference
+	KeyManagementServiceInput() *KubernetesClusterKeyManagementService
 	KeyVaultSecretsProvider() KubernetesClusterKeyVaultSecretsProviderOutputReference
 	KeyVaultSecretsProviderInput() *KubernetesClusterKeyVaultSecretsProvider
 	KubeAdminConfig() KubernetesClusterKubeAdminConfigList
@@ -231,6 +233,7 @@ type KubernetesCluster interface {
 	PutHttpProxyConfig(value *KubernetesClusterHttpProxyConfig)
 	PutIdentity(value *KubernetesClusterIdentity)
 	PutIngressApplicationGateway(value *KubernetesClusterIngressApplicationGateway)
+	PutKeyManagementService(value *KubernetesClusterKeyManagementService)
 	PutKeyVaultSecretsProvider(value *KubernetesClusterKeyVaultSecretsProvider)
 	PutKubeletIdentity(value *KubernetesClusterKubeletIdentity)
 	PutLinuxProfile(value *KubernetesClusterLinuxProfile)
@@ -264,6 +267,7 @@ type KubernetesCluster interface {
 	ResetImageCleanerEnabled()
 	ResetImageCleanerIntervalHours()
 	ResetIngressApplicationGateway()
+	ResetKeyManagementService()
 	ResetKeyVaultSecretsProvider()
 	ResetKubeletIdentity()
 	ResetKubernetesVersion()
@@ -805,6 +809,26 @@ func (j *jsiiProxy_KubernetesCluster) IngressApplicationGatewayInput() *Kubernet
 	_jsii_.Get(
 		j,
 		"ingressApplicationGatewayInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) KeyManagementService() KubernetesClusterKeyManagementServiceOutputReference {
+	var returns KubernetesClusterKeyManagementServiceOutputReference
+	_jsii_.Get(
+		j,
+		"keyManagementService",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) KeyManagementServiceInput() *KubernetesClusterKeyManagementService {
+	var returns *KubernetesClusterKeyManagementService
+	_jsii_.Get(
+		j,
+		"keyManagementServiceInput",
 		&returns,
 	)
 	return returns
@@ -2348,6 +2372,17 @@ func (k *jsiiProxy_KubernetesCluster) PutIngressApplicationGateway(value *Kubern
 	)
 }
 
+func (k *jsiiProxy_KubernetesCluster) PutKeyManagementService(value *KubernetesClusterKeyManagementService) {
+	if err := k.validatePutKeyManagementServiceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putKeyManagementService",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesCluster) PutKeyVaultSecretsProvider(value *KubernetesClusterKeyVaultSecretsProvider) {
 	if err := k.validatePutKeyVaultSecretsProviderParameters(value); err != nil {
 		panic(err)
@@ -2650,6 +2685,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetIngressApplicationGateway() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetIngressApplicationGateway",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetKeyManagementService() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetKeyManagementService",
 		nil, // no parameters
 	)
 }

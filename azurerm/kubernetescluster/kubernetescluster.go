@@ -72,6 +72,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ingressApplicationGateway", GoGetter: "IngressApplicationGateway"},
 			_jsii_.MemberProperty{JsiiProperty: "ingressApplicationGatewayInput", GoGetter: "IngressApplicationGatewayInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "keyManagementService", GoGetter: "KeyManagementService"},
+			_jsii_.MemberProperty{JsiiProperty: "keyManagementServiceInput", GoGetter: "KeyManagementServiceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "keyVaultSecretsProvider", GoGetter: "KeyVaultSecretsProvider"},
 			_jsii_.MemberProperty{JsiiProperty: "keyVaultSecretsProviderInput", GoGetter: "KeyVaultSecretsProviderInput"},
 			_jsii_.MemberProperty{JsiiProperty: "kubeAdminConfig", GoGetter: "KubeAdminConfig"},
@@ -130,6 +132,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putHttpProxyConfig", GoMethod: "PutHttpProxyConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putIdentity", GoMethod: "PutIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "putIngressApplicationGateway", GoMethod: "PutIngressApplicationGateway"},
+			_jsii_.MemberMethod{JsiiMethod: "putKeyManagementService", GoMethod: "PutKeyManagementService"},
 			_jsii_.MemberMethod{JsiiMethod: "putKeyVaultSecretsProvider", GoMethod: "PutKeyVaultSecretsProvider"},
 			_jsii_.MemberMethod{JsiiMethod: "putKubeletIdentity", GoMethod: "PutKubeletIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "putLinuxProfile", GoMethod: "PutLinuxProfile"},
@@ -164,6 +167,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetImageCleanerEnabled", GoMethod: "ResetImageCleanerEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImageCleanerIntervalHours", GoMethod: "ResetImageCleanerIntervalHours"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIngressApplicationGateway", GoMethod: "ResetIngressApplicationGateway"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKeyManagementService", GoMethod: "ResetKeyManagementService"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeyVaultSecretsProvider", GoMethod: "ResetKeyVaultSecretsProvider"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKubeletIdentity", GoMethod: "ResetKubeletIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKubernetesVersion", GoMethod: "ResetKubernetesVersion"},
@@ -1076,6 +1080,47 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KubernetesClusterIngressApplicationGatewayOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterKeyManagementService",
+		reflect.TypeOf((*KubernetesClusterKeyManagementService)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterKeyManagementServiceOutputReference",
+		reflect.TypeOf((*KubernetesClusterKeyManagementServiceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "keyVaultKeyId", GoGetter: "KeyVaultKeyId"},
+			_jsii_.MemberProperty{JsiiProperty: "keyVaultKeyIdInput", GoGetter: "KeyVaultKeyIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "keyVaultNetworkAccess", GoGetter: "KeyVaultNetworkAccess"},
+			_jsii_.MemberProperty{JsiiProperty: "keyVaultNetworkAccessInput", GoGetter: "KeyVaultNetworkAccessInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKeyVaultNetworkAccess", GoMethod: "ResetKeyVaultNetworkAccess"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KubernetesClusterKeyManagementServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

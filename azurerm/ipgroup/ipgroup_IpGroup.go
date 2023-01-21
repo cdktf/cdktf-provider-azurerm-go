@@ -31,6 +31,8 @@ type IpGroup interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	FirewallIds() *[]*string
+	FirewallPolicyIds() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -191,6 +193,26 @@ func (j *jsiiProxy_IpGroup) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpGroup) FirewallIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"firewallIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpGroup) FirewallPolicyIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"firewallPolicyIds",
 		&returns,
 	)
 	return returns

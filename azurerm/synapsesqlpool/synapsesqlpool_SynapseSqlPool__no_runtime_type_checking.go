@@ -88,6 +88,10 @@ func (j *jsiiProxy_SynapseSqlPool) validateSetDataEncryptedParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_SynapseSqlPool) validateSetGeoBackupPolicyEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseSqlPool) validateSetIdParameters(val *string) error {
 	return nil
 }

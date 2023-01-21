@@ -47,6 +47,7 @@ type DataAzurermKubernetesCluster interface {
 	Identity() DataAzurermKubernetesClusterIdentityList
 	IdInput() *string
 	IngressApplicationGateway() DataAzurermKubernetesClusterIngressApplicationGatewayList
+	KeyManagementService() DataAzurermKubernetesClusterKeyManagementServiceList
 	KeyVaultSecretsProvider() DataAzurermKubernetesClusterKeyVaultSecretsProviderList
 	KubeAdminConfig() DataAzurermKubernetesClusterKubeAdminConfigList
 	KubeAdminConfigRaw() *string
@@ -347,6 +348,16 @@ func (j *jsiiProxy_DataAzurermKubernetesCluster) IngressApplicationGateway() Dat
 	_jsii_.Get(
 		j,
 		"ingressApplicationGateway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermKubernetesCluster) KeyManagementService() DataAzurermKubernetesClusterKeyManagementServiceList {
+	var returns DataAzurermKubernetesClusterKeyManagementServiceList
+	_jsii_.Get(
+		j,
+		"keyManagementService",
 		&returns,
 	)
 	return returns

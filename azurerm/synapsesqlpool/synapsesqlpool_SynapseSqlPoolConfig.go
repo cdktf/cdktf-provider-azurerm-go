@@ -31,6 +31,8 @@ type SynapseSqlPoolConfig struct {
 	CreateMode *string `field:"optional" json:"createMode" yaml:"createMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_sql_pool#data_encrypted SynapseSqlPool#data_encrypted}.
 	DataEncrypted interface{} `field:"optional" json:"dataEncrypted" yaml:"dataEncrypted"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_sql_pool#geo_backup_policy_enabled SynapseSqlPool#geo_backup_policy_enabled}.
+	GeoBackupPolicyEnabled interface{} `field:"optional" json:"geoBackupPolicyEnabled" yaml:"geoBackupPolicyEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_sql_pool#id SynapseSqlPool#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

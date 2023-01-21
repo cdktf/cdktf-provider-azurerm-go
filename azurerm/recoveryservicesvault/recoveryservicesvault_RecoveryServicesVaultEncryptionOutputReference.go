@@ -43,6 +43,9 @@ type RecoveryServicesVaultEncryptionOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UserAssignedIdentityId() *string
+	SetUserAssignedIdentityId(val *string)
+	UserAssignedIdentityIdInput() *string
 	UseSystemAssignedIdentity() interface{}
 	SetUseSystemAssignedIdentity(val interface{})
 	UseSystemAssignedIdentityInput() interface{}
@@ -70,6 +73,7 @@ type RecoveryServicesVaultEncryptionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetUserAssignedIdentityId()
 	ResetUseSystemAssignedIdentity()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -196,6 +200,26 @@ func (j *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) TerraformReso
 	return returns
 }
 
+func (j *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) UserAssignedIdentityId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userAssignedIdentityId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) UserAssignedIdentityIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userAssignedIdentityIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) UseSystemAssignedIdentity() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -317,6 +341,17 @@ func (j *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference)SetTerraformRe
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference)SetUserAssignedIdentityId(val *string) {
+	if err := j.validateSetUserAssignedIdentityIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userAssignedIdentityId",
 		val,
 	)
 }
@@ -516,6 +551,14 @@ func (r *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) ResetUserAssignedIdentityId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetUserAssignedIdentityId",
+		nil, // no parameters
+	)
 }
 
 func (r *jsiiProxy_RecoveryServicesVaultEncryptionOutputReference) ResetUseSystemAssignedIdentity() {

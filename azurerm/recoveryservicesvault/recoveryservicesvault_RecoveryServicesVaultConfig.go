@@ -42,6 +42,10 @@ type RecoveryServicesVaultConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/recovery_services_vault#identity RecoveryServicesVault#identity}
 	Identity *RecoveryServicesVaultIdentity `field:"optional" json:"identity" yaml:"identity"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/recovery_services_vault#immutability RecoveryServicesVault#immutability}.
+	Immutability *string `field:"optional" json:"immutability" yaml:"immutability"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/recovery_services_vault#public_network_access_enabled RecoveryServicesVault#public_network_access_enabled}.
+	PublicNetworkAccessEnabled interface{} `field:"optional" json:"publicNetworkAccessEnabled" yaml:"publicNetworkAccessEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/recovery_services_vault#soft_delete_enabled RecoveryServicesVault#soft_delete_enabled}.
 	SoftDeleteEnabled interface{} `field:"optional" json:"softDeleteEnabled" yaml:"softDeleteEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/recovery_services_vault#storage_mode_type RecoveryServicesVault#storage_mode_type}.

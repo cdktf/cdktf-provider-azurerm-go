@@ -56,6 +56,10 @@ func (j *jsiiProxy_RecoveryServicesVaultIdentityOutputReference) validateSetComp
 	return nil
 }
 
+func (j *jsiiProxy_RecoveryServicesVaultIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RecoveryServicesVaultIdentityOutputReference) validateSetInternalValueParameters(val *RecoveryServicesVaultIdentity) error {
 	return nil
 }

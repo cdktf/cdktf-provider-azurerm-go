@@ -46,6 +46,9 @@ type RecoveryServicesVault interface {
 	Identity() RecoveryServicesVaultIdentityOutputReference
 	IdentityInput() *RecoveryServicesVaultIdentity
 	IdInput() *string
+	Immutability() *string
+	SetImmutability(val *string)
+	ImmutabilityInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -66,6 +69,9 @@ type RecoveryServicesVault interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicNetworkAccessEnabled() interface{}
+	SetPublicNetworkAccessEnabled(val interface{})
+	PublicNetworkAccessEnabledInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -123,9 +129,11 @@ type RecoveryServicesVault interface {
 	ResetEncryption()
 	ResetId()
 	ResetIdentity()
+	ResetImmutability()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublicNetworkAccessEnabled()
 	ResetSoftDeleteEnabled()
 	ResetStorageModeType()
 	ResetTags()
@@ -305,6 +313,26 @@ func (j *jsiiProxy_RecoveryServicesVault) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RecoveryServicesVault) Immutability() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"immutability",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RecoveryServicesVault) ImmutabilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"immutabilityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RecoveryServicesVault) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -380,6 +408,26 @@ func (j *jsiiProxy_RecoveryServicesVault) Provisioners() *[]interface{} {
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RecoveryServicesVault) PublicNetworkAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RecoveryServicesVault) PublicNetworkAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabledInput",
 		&returns,
 	)
 	return returns
@@ -632,6 +680,17 @@ func (j *jsiiProxy_RecoveryServicesVault)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_RecoveryServicesVault)SetImmutability(val *string) {
+	if err := j.validateSetImmutabilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"immutability",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RecoveryServicesVault)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -680,6 +739,17 @@ func (j *jsiiProxy_RecoveryServicesVault)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RecoveryServicesVault)SetPublicNetworkAccessEnabled(val interface{}) {
+	if err := j.validateSetPublicNetworkAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccessEnabled",
 		val,
 	)
 }
@@ -1070,10 +1140,26 @@ func (r *jsiiProxy_RecoveryServicesVault) ResetIdentity() {
 	)
 }
 
+func (r *jsiiProxy_RecoveryServicesVault) ResetImmutability() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetImmutability",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RecoveryServicesVault) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RecoveryServicesVault) ResetPublicNetworkAccessEnabled() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPublicNetworkAccessEnabled",
 		nil, // no parameters
 	)
 }
