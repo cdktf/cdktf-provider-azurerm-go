@@ -42,6 +42,10 @@ type KubernetesClusterDefaultNodePool struct {
 	NodeCount *float64 `field:"optional" json:"nodeCount" yaml:"nodeCount"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#node_labels KubernetesCluster#node_labels}.
 	NodeLabels *map[string]*string `field:"optional" json:"nodeLabels" yaml:"nodeLabels"`
+	// node_network_profile block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#node_network_profile KubernetesCluster#node_network_profile}
+	NodeNetworkProfile *KubernetesClusterDefaultNodePoolNodeNetworkProfile `field:"optional" json:"nodeNetworkProfile" yaml:"nodeNetworkProfile"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#node_public_ip_prefix_id KubernetesCluster#node_public_ip_prefix_id}.
 	NodePublicIpPrefixId *string `field:"optional" json:"nodePublicIpPrefixId" yaml:"nodePublicIpPrefixId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#node_taints KubernetesCluster#node_taints}.

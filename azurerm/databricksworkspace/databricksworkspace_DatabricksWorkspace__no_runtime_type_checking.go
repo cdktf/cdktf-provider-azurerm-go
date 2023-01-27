@@ -100,6 +100,14 @@ func (j *jsiiProxy_DatabricksWorkspace) validateSetLocationParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DatabricksWorkspace) validateSetManagedDiskCmkKeyVaultKeyIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabricksWorkspace) validateSetManagedDiskCmkRotationToLatestVersionEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabricksWorkspace) validateSetManagedResourceGroupNameParameters(val *string) error {
 	return nil
 }

@@ -44,6 +44,10 @@ func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicens
 	return nil
 }
 
+func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) validatePutExplicitAnalogTelevisionOutputRestrictionParameters(value *MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightExplicitAnalogTelevisionOutputRestriction) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicens
 }
 
 func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) validateSetCompressedDigitalAudioOplParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) validateSetCompressedDigitalVideoOplParameters(val *float64) error {
 	return nil
 }
 

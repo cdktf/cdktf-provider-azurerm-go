@@ -90,6 +90,37 @@ func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputRefere
 	return nil
 }
 
+func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputReference) validatePutAlternateKeyParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*MediaContentKeyPolicyPolicyOptionTokenRestrictionAlternateKey:
+		value := value.(*[]*MediaContentKeyPolicyPolicyOptionTokenRestrictionAlternateKey)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*MediaContentKeyPolicyPolicyOptionTokenRestrictionAlternateKey:
+		value_ := value.([]*MediaContentKeyPolicyPolicyOptionTokenRestrictionAlternateKey)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MediaContentKeyPolicyPolicyOptionTokenRestrictionAlternateKey; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputReference) validatePutRequiredClaimParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

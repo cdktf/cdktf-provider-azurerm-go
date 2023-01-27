@@ -58,6 +58,9 @@ type LogAnalyticsWorkspace interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LocalAuthenticationDisabled() interface{}
+	SetLocalAuthenticationDisabled(val interface{})
+	LocalAuthenticationDisabledInput() interface{}
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
@@ -134,6 +137,7 @@ type LogAnalyticsWorkspace interface {
 	ResetId()
 	ResetInternetIngestionEnabled()
 	ResetInternetQueryEnabled()
+	ResetLocalAuthenticationDisabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -362,6 +366,26 @@ func (j *jsiiProxy_LogAnalyticsWorkspace) Lifecycle() *cdktf.TerraformResourceLi
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogAnalyticsWorkspace) LocalAuthenticationDisabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localAuthenticationDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogAnalyticsWorkspace) LocalAuthenticationDisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localAuthenticationDisabledInput",
 		&returns,
 	)
 	return returns
@@ -765,6 +789,17 @@ func (j *jsiiProxy_LogAnalyticsWorkspace)SetLifecycle(val *cdktf.TerraformResour
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogAnalyticsWorkspace)SetLocalAuthenticationDisabled(val interface{}) {
+	if err := j.validateSetLocalAuthenticationDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localAuthenticationDisabled",
 		val,
 	)
 }
@@ -1186,6 +1221,14 @@ func (l *jsiiProxy_LogAnalyticsWorkspace) ResetInternetQueryEnabled() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetInternetQueryEnabled",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogAnalyticsWorkspace) ResetLocalAuthenticationDisabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetLocalAuthenticationDisabled",
 		nil, // no parameters
 	)
 }

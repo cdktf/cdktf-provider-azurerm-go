@@ -70,6 +70,8 @@ type WindowsWebAppSlotConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app_slot#logs WindowsWebAppSlot#logs}
 	Logs *WindowsWebAppSlotLogs `field:"optional" json:"logs" yaml:"logs"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app_slot#service_plan_id WindowsWebAppSlot#service_plan_id}.
+	ServicePlanId *string `field:"optional" json:"servicePlanId" yaml:"servicePlanId"`
 	// storage_account block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app_slot#storage_account WindowsWebAppSlot#storage_account}

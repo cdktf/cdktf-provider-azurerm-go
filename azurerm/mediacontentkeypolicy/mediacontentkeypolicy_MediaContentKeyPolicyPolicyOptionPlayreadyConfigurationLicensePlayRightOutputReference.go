@@ -32,6 +32,9 @@ type MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutp
 	CompressedDigitalAudioOpl() *float64
 	SetCompressedDigitalAudioOpl(val *float64)
 	CompressedDigitalAudioOplInput() *float64
+	CompressedDigitalVideoOpl() *float64
+	SetCompressedDigitalVideoOpl(val *float64)
+	CompressedDigitalVideoOplInput() *float64
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -40,6 +43,8 @@ type MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutp
 	DigitalVideoOnlyContentRestriction() interface{}
 	SetDigitalVideoOnlyContentRestriction(val interface{})
 	DigitalVideoOnlyContentRestrictionInput() interface{}
+	ExplicitAnalogTelevisionOutputRestriction() MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightExplicitAnalogTelevisionOutputRestrictionOutputReference
+	ExplicitAnalogTelevisionOutputRestrictionInput() *MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightExplicitAnalogTelevisionOutputRestriction
 	FirstPlayExpiration() *string
 	SetFirstPlayExpiration(val *string)
 	FirstPlayExpirationInput() *string
@@ -94,11 +99,14 @@ type MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutp
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutExplicitAnalogTelevisionOutputRestriction(value *MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightExplicitAnalogTelevisionOutputRestriction)
 	ResetAgcAndColorStripeRestriction()
 	ResetAllowPassingVideoContentToUnknownOutput()
 	ResetAnalogVideoOpl()
 	ResetCompressedDigitalAudioOpl()
+	ResetCompressedDigitalVideoOpl()
 	ResetDigitalVideoOnlyContentRestriction()
+	ResetExplicitAnalogTelevisionOutputRestriction()
 	ResetFirstPlayExpiration()
 	ResetImageConstraintForAnalogComponentVideoRestriction()
 	ResetImageConstraintForAnalogComputerMonitorRestriction()
@@ -220,6 +228,26 @@ func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicens
 	return returns
 }
 
+func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) CompressedDigitalVideoOpl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"compressedDigitalVideoOpl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) CompressedDigitalVideoOplInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"compressedDigitalVideoOplInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -245,6 +273,26 @@ func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicens
 	_jsii_.Get(
 		j,
 		"digitalVideoOnlyContentRestrictionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) ExplicitAnalogTelevisionOutputRestriction() MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightExplicitAnalogTelevisionOutputRestrictionOutputReference {
+	var returns MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightExplicitAnalogTelevisionOutputRestrictionOutputReference
+	_jsii_.Get(
+		j,
+		"explicitAnalogTelevisionOutputRestriction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) ExplicitAnalogTelevisionOutputRestrictionInput() *MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightExplicitAnalogTelevisionOutputRestriction {
+	var returns *MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightExplicitAnalogTelevisionOutputRestriction
+	_jsii_.Get(
+		j,
+		"explicitAnalogTelevisionOutputRestrictionInput",
 		&returns,
 	)
 	return returns
@@ -500,6 +548,17 @@ func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicens
 	_jsii_.Set(
 		j,
 		"compressedDigitalAudioOpl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference)SetCompressedDigitalVideoOpl(val *float64) {
+	if err := j.validateSetCompressedDigitalVideoOplParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"compressedDigitalVideoOpl",
 		val,
 	)
 }
@@ -800,6 +859,17 @@ func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicens
 	return returns
 }
 
+func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) PutExplicitAnalogTelevisionOutputRestriction(value *MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightExplicitAnalogTelevisionOutputRestriction) {
+	if err := m.validatePutExplicitAnalogTelevisionOutputRestrictionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putExplicitAnalogTelevisionOutputRestriction",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) ResetAgcAndColorStripeRestriction() {
 	_jsii_.InvokeVoid(
 		m,
@@ -832,10 +902,26 @@ func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicens
 	)
 }
 
+func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) ResetCompressedDigitalVideoOpl() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCompressedDigitalVideoOpl",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) ResetDigitalVideoOnlyContentRestriction() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetDigitalVideoOnlyContentRestriction",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) ResetExplicitAnalogTelevisionOutputRestriction() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetExplicitAnalogTelevisionOutputRestriction",
 		nil, // no parameters
 	)
 }

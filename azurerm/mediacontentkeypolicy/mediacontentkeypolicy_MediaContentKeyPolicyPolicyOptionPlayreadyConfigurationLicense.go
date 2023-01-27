@@ -26,5 +26,7 @@ type MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicense struct {
 	RelativeBeginDate *string `field:"optional" json:"relativeBeginDate" yaml:"relativeBeginDate"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_content_key_policy#relative_expiration_date MediaContentKeyPolicy#relative_expiration_date}.
 	RelativeExpirationDate *string `field:"optional" json:"relativeExpirationDate" yaml:"relativeExpirationDate"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_content_key_policy#security_level MediaContentKeyPolicy#security_level}.
+	SecurityLevel *string `field:"optional" json:"securityLevel" yaml:"securityLevel"`
 }
 

@@ -16,6 +16,8 @@ type MediaContentKeyPolicyPolicyOption struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_content_key_policy#playready_configuration_license MediaContentKeyPolicy#playready_configuration_license}
 	PlayreadyConfigurationLicense interface{} `field:"optional" json:"playreadyConfigurationLicense" yaml:"playreadyConfigurationLicense"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_content_key_policy#playready_response_custom_data MediaContentKeyPolicy#playready_response_custom_data}.
+	PlayreadyResponseCustomData *string `field:"optional" json:"playreadyResponseCustomData" yaml:"playreadyResponseCustomData"`
 	// token_restriction block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_content_key_policy#token_restriction MediaContentKeyPolicy#token_restriction}

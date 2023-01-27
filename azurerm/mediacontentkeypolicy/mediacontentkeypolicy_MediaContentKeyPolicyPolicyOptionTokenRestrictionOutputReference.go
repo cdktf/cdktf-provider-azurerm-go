@@ -10,6 +10,8 @@ import (
 
 type MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputReference interface {
 	cdktf.ComplexObject
+	AlternateKey() MediaContentKeyPolicyPolicyOptionTokenRestrictionAlternateKeyList
+	AlternateKeyInput() interface{}
 	Audience() *string
 	SetAudience(val *string)
 	AudienceInput() *string
@@ -87,7 +89,9 @@ type MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAlternateKey(value interface{})
 	PutRequiredClaim(value interface{})
+	ResetAlternateKey()
 	ResetAudience()
 	ResetIssuer()
 	ResetOpenIdConnectDiscoveryDocument()
@@ -110,6 +114,26 @@ type MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputReference interface 
 // The jsii proxy struct for MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputReference
 type jsiiProxy_MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputReference) AlternateKey() MediaContentKeyPolicyPolicyOptionTokenRestrictionAlternateKeyList {
+	var returns MediaContentKeyPolicyPolicyOptionTokenRestrictionAlternateKeyList
+	_jsii_.Get(
+		j,
+		"alternateKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputReference) AlternateKeyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"alternateKeyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputReference) Audience() *string {
@@ -719,6 +743,17 @@ func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputRefere
 	return returns
 }
 
+func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputReference) PutAlternateKey(value interface{}) {
+	if err := m.validatePutAlternateKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putAlternateKey",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputReference) PutRequiredClaim(value interface{}) {
 	if err := m.validatePutRequiredClaimParameters(value); err != nil {
 		panic(err)
@@ -727,6 +762,14 @@ func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputRefere
 		m,
 		"putRequiredClaim",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputReference) ResetAlternateKey() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAlternateKey",
+		nil, // no parameters
 	)
 }
 

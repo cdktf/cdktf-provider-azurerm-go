@@ -1,0 +1,6 @@
+package dataazurermsiterecoveryreplicationrecoveryplan
+
+
+type DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreAction struct {
+}
+

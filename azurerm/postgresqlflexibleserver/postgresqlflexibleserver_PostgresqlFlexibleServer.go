@@ -38,6 +38,8 @@ type PostgresqlFlexibleServer interface {
 	CreateMode() *string
 	SetCreateMode(val *string)
 	CreateModeInput() *string
+	CustomerManagedKey() PostgresqlFlexibleServerCustomerManagedKeyOutputReference
+	CustomerManagedKeyInput() *PostgresqlFlexibleServerCustomerManagedKey
 	DelegatedSubnetId() *string
 	SetDelegatedSubnetId(val *string)
 	DelegatedSubnetIdInput() *string
@@ -61,6 +63,8 @@ type PostgresqlFlexibleServer interface {
 	HighAvailabilityInput() *PostgresqlFlexibleServerHighAvailability
 	Id() *string
 	SetId(val *string)
+	Identity() PostgresqlFlexibleServerIdentityOutputReference
+	IdentityInput() *PostgresqlFlexibleServerIdentity
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -148,7 +152,9 @@ type PostgresqlFlexibleServer interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthentication(value *PostgresqlFlexibleServerAuthentication)
+	PutCustomerManagedKey(value *PostgresqlFlexibleServerCustomerManagedKey)
 	PutHighAvailability(value *PostgresqlFlexibleServerHighAvailability)
+	PutIdentity(value *PostgresqlFlexibleServerIdentity)
 	PutMaintenanceWindow(value *PostgresqlFlexibleServerMaintenanceWindow)
 	PutTimeouts(value *PostgresqlFlexibleServerTimeouts)
 	ResetAdministratorLogin()
@@ -156,10 +162,12 @@ type PostgresqlFlexibleServer interface {
 	ResetAuthentication()
 	ResetBackupRetentionDays()
 	ResetCreateMode()
+	ResetCustomerManagedKey()
 	ResetDelegatedSubnetId()
 	ResetGeoRedundantBackupEnabled()
 	ResetHighAvailability()
 	ResetId()
+	ResetIdentity()
 	ResetMaintenanceWindow()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -328,6 +336,26 @@ func (j *jsiiProxy_PostgresqlFlexibleServer) CreateModeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PostgresqlFlexibleServer) CustomerManagedKey() PostgresqlFlexibleServerCustomerManagedKeyOutputReference {
+	var returns PostgresqlFlexibleServerCustomerManagedKeyOutputReference
+	_jsii_.Get(
+		j,
+		"customerManagedKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServer) CustomerManagedKeyInput() *PostgresqlFlexibleServerCustomerManagedKey {
+	var returns *PostgresqlFlexibleServerCustomerManagedKey
+	_jsii_.Get(
+		j,
+		"customerManagedKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresqlFlexibleServer) DelegatedSubnetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -443,6 +471,26 @@ func (j *jsiiProxy_PostgresqlFlexibleServer) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServer) Identity() PostgresqlFlexibleServerIdentityOutputReference {
+	var returns PostgresqlFlexibleServerIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServer) IdentityInput() *PostgresqlFlexibleServerIdentity {
+	var returns *PostgresqlFlexibleServerIdentity
+	_jsii_.Get(
+		j,
+		"identityInput",
 		&returns,
 	)
 	return returns
@@ -1378,6 +1426,17 @@ func (p *jsiiProxy_PostgresqlFlexibleServer) PutAuthentication(value *Postgresql
 	)
 }
 
+func (p *jsiiProxy_PostgresqlFlexibleServer) PutCustomerManagedKey(value *PostgresqlFlexibleServerCustomerManagedKey) {
+	if err := p.validatePutCustomerManagedKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putCustomerManagedKey",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PostgresqlFlexibleServer) PutHighAvailability(value *PostgresqlFlexibleServerHighAvailability) {
 	if err := p.validatePutHighAvailabilityParameters(value); err != nil {
 		panic(err)
@@ -1385,6 +1444,17 @@ func (p *jsiiProxy_PostgresqlFlexibleServer) PutHighAvailability(value *Postgres
 	_jsii_.InvokeVoid(
 		p,
 		"putHighAvailability",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PostgresqlFlexibleServer) PutIdentity(value *PostgresqlFlexibleServerIdentity) {
+	if err := p.validatePutIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putIdentity",
 		[]interface{}{value},
 	)
 }
@@ -1451,6 +1521,14 @@ func (p *jsiiProxy_PostgresqlFlexibleServer) ResetCreateMode() {
 	)
 }
 
+func (p *jsiiProxy_PostgresqlFlexibleServer) ResetCustomerManagedKey() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCustomerManagedKey",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PostgresqlFlexibleServer) ResetDelegatedSubnetId() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1479,6 +1557,14 @@ func (p *jsiiProxy_PostgresqlFlexibleServer) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresqlFlexibleServer) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetIdentity",
 		nil, // no parameters
 	)
 }

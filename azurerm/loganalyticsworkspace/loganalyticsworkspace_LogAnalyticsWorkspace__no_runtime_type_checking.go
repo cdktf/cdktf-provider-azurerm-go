@@ -100,6 +100,10 @@ func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetLocalAuthenticationDisabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetLocationParameters(val *string) error {
 	return nil
 }

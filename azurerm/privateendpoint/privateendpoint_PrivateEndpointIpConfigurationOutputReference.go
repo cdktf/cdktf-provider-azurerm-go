@@ -74,6 +74,7 @@ type PrivateEndpointIpConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetMemberName()
+	ResetSubresourceName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -556,6 +557,14 @@ func (p *jsiiProxy_PrivateEndpointIpConfigurationOutputReference) ResetMemberNam
 	_jsii_.InvokeVoid(
 		p,
 		"resetMemberName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrivateEndpointIpConfigurationOutputReference) ResetSubresourceName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSubresourceName",
 		nil, // no parameters
 	)
 }

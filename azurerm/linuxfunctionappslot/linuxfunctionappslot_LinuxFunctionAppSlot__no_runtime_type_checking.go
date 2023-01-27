@@ -160,6 +160,10 @@ func (j *jsiiProxy_LinuxFunctionAppSlot) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_LinuxFunctionAppSlot) validateSetServicePlanIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxFunctionAppSlot) validateSetStorageAccountAccessKeyParameters(val *string) error {
 	return nil
 }

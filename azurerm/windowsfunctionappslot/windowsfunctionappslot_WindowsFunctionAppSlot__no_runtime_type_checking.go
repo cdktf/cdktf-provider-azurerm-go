@@ -160,6 +160,10 @@ func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetServicePlanIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetStorageAccountAccessKeyParameters(val *string) error {
 	return nil
 }

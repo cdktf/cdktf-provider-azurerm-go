@@ -61,6 +61,9 @@ type MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicenseOutputReferen
 	RelativeExpirationDate() *string
 	SetRelativeExpirationDate(val *string)
 	RelativeExpirationDateInput() *string
+	SecurityLevel() *string
+	SetSecurityLevel(val *string)
+	SecurityLevelInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -105,6 +108,7 @@ type MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicenseOutputReferen
 	ResetPlayRight()
 	ResetRelativeBeginDate()
 	ResetRelativeExpirationDate()
+	ResetSecurityLevel()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -390,6 +394,26 @@ func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicens
 	return returns
 }
 
+func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicenseOutputReference) SecurityLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicenseOutputReference) SecurityLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityLevelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicenseOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -577,6 +601,17 @@ func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicens
 	_jsii_.Set(
 		j,
 		"relativeExpirationDate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicenseOutputReference)SetSecurityLevel(val *string) {
+	if err := j.validateSetSecurityLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityLevel",
 		val,
 	)
 }
@@ -884,6 +919,14 @@ func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicens
 	_jsii_.InvokeVoid(
 		m,
 		"resetRelativeExpirationDate",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicenseOutputReference) ResetSecurityLevel() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSecurityLevel",
 		nil, // no parameters
 	)
 }

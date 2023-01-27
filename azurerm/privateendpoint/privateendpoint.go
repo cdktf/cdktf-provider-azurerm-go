@@ -201,6 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "privateIpAddress", GoGetter: "PrivateIpAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "privateIpAddressInput", GoGetter: "PrivateIpAddressInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMemberName", GoMethod: "ResetMemberName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubresourceName", GoMethod: "ResetSubresourceName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "subresourceName", GoGetter: "SubresourceName"},
 			_jsii_.MemberProperty{JsiiProperty: "subresourceNameInput", GoGetter: "SubresourceNameInput"},

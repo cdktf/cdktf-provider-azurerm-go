@@ -70,6 +70,8 @@ type LinuxWebAppSlotConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_web_app_slot#logs LinuxWebAppSlot#logs}
 	Logs *LinuxWebAppSlotLogs `field:"optional" json:"logs" yaml:"logs"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_web_app_slot#service_plan_id LinuxWebAppSlot#service_plan_id}.
+	ServicePlanId *string `field:"optional" json:"servicePlanId" yaml:"servicePlanId"`
 	// storage_account block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_web_app_slot#storage_account LinuxWebAppSlot#storage_account}

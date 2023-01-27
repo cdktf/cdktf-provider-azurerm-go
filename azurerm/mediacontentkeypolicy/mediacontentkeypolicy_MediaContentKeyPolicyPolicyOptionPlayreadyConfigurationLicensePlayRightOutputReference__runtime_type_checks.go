@@ -90,6 +90,17 @@ func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicens
 	return nil
 }
 
+func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) validatePutExplicitAnalogTelevisionOutputRestrictionParameters(value *MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightExplicitAnalogTelevisionOutputRestriction) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -188,6 +199,14 @@ func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicens
 }
 
 func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) validateSetCompressedDigitalAudioOplParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightOutputReference) validateSetCompressedDigitalVideoOplParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

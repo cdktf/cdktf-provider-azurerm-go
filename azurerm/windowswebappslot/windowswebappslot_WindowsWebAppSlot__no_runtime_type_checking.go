@@ -152,6 +152,10 @@ func (j *jsiiProxy_WindowsWebAppSlot) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_WindowsWebAppSlot) validateSetServicePlanIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsWebAppSlot) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -42,6 +42,10 @@ type DatabricksWorkspaceConfig struct {
 	InfrastructureEncryptionEnabled interface{} `field:"optional" json:"infrastructureEncryptionEnabled" yaml:"infrastructureEncryptionEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/databricks_workspace#load_balancer_backend_address_pool_id DatabricksWorkspace#load_balancer_backend_address_pool_id}.
 	LoadBalancerBackendAddressPoolId *string `field:"optional" json:"loadBalancerBackendAddressPoolId" yaml:"loadBalancerBackendAddressPoolId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/databricks_workspace#managed_disk_cmk_key_vault_key_id DatabricksWorkspace#managed_disk_cmk_key_vault_key_id}.
+	ManagedDiskCmkKeyVaultKeyId *string `field:"optional" json:"managedDiskCmkKeyVaultKeyId" yaml:"managedDiskCmkKeyVaultKeyId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/databricks_workspace#managed_disk_cmk_rotation_to_latest_version_enabled DatabricksWorkspace#managed_disk_cmk_rotation_to_latest_version_enabled}.
+	ManagedDiskCmkRotationToLatestVersionEnabled interface{} `field:"optional" json:"managedDiskCmkRotationToLatestVersionEnabled" yaml:"managedDiskCmkRotationToLatestVersionEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/databricks_workspace#managed_resource_group_name DatabricksWorkspace#managed_resource_group_name}.
 	ManagedResourceGroupName *string `field:"optional" json:"managedResourceGroupName" yaml:"managedResourceGroupName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/databricks_workspace#managed_services_cmk_key_vault_key_id DatabricksWorkspace#managed_services_cmk_key_vault_key_id}.

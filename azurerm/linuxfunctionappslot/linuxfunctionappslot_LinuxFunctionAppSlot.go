@@ -109,6 +109,9 @@ type LinuxFunctionAppSlot interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ServicePlanId() *string
+	SetServicePlanId(val *string)
+	ServicePlanIdInput() *string
 	SiteConfig() LinuxFunctionAppSlotSiteConfigOutputReference
 	SiteConfigInput() *LinuxFunctionAppSlotSiteConfig
 	SiteCredential() LinuxFunctionAppSlotSiteCredentialList
@@ -191,6 +194,7 @@ type LinuxFunctionAppSlot interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetServicePlanId()
 	ResetStorageAccount()
 	ResetStorageAccountAccessKey()
 	ResetStorageAccountName()
@@ -774,6 +778,26 @@ func (j *jsiiProxy_LinuxFunctionAppSlot) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LinuxFunctionAppSlot) ServicePlanId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servicePlanId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxFunctionAppSlot) ServicePlanIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servicePlanIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LinuxFunctionAppSlot) SiteConfig() LinuxFunctionAppSlotSiteConfigOutputReference {
 	var returns LinuxFunctionAppSlotSiteConfigOutputReference
 	_jsii_.Get(
@@ -1239,6 +1263,17 @@ func (j *jsiiProxy_LinuxFunctionAppSlot)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxFunctionAppSlot)SetServicePlanId(val *string) {
+	if err := j.validateSetServicePlanIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"servicePlanId",
 		val,
 	)
 }
@@ -1784,6 +1819,14 @@ func (l *jsiiProxy_LinuxFunctionAppSlot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxFunctionAppSlot) ResetServicePlanId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetServicePlanId",
 		nil, // no parameters
 	)
 }

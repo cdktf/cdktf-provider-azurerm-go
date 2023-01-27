@@ -708,6 +708,45 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfile",
+		reflect.TypeOf((*KubernetesClusterDefaultNodePoolNodeNetworkProfile)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference",
+		reflect.TypeOf((*KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "nodePublicIpTags", GoGetter: "NodePublicIpTags"},
+			_jsii_.MemberProperty{JsiiProperty: "nodePublicIpTagsInput", GoGetter: "NodePublicIpTagsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNodePublicIpTags", GoMethod: "ResetNodePublicIpTags"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference",
 		reflect.TypeOf((*KubernetesClusterDefaultNodePoolOutputReference)(nil)).Elem(),
@@ -763,6 +802,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nodeCountInput", GoGetter: "NodeCountInput"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeLabels", GoGetter: "NodeLabels"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeLabelsInput", GoGetter: "NodeLabelsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "nodeNetworkProfile", GoGetter: "NodeNetworkProfile"},
+			_jsii_.MemberProperty{JsiiProperty: "nodeNetworkProfileInput", GoGetter: "NodeNetworkProfileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "nodePublicIpPrefixId", GoGetter: "NodePublicIpPrefixId"},
 			_jsii_.MemberProperty{JsiiProperty: "nodePublicIpPrefixIdInput", GoGetter: "NodePublicIpPrefixIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeTaints", GoGetter: "NodeTaints"},
@@ -783,6 +824,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "proximityPlacementGroupIdInput", GoGetter: "ProximityPlacementGroupIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putKubeletConfig", GoMethod: "PutKubeletConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putLinuxOsConfig", GoMethod: "PutLinuxOsConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putNodeNetworkProfile", GoMethod: "PutNodeNetworkProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "putUpgradeSettings", GoMethod: "PutUpgradeSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCapacityReservationGroupId", GoMethod: "ResetCapacityReservationGroupId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomCaTrustEnabled", GoMethod: "ResetCustomCaTrustEnabled"},
@@ -800,6 +842,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMinCount", GoMethod: "ResetMinCount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNodeCount", GoMethod: "ResetNodeCount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNodeLabels", GoMethod: "ResetNodeLabels"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNodeNetworkProfile", GoMethod: "ResetNodeNetworkProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNodePublicIpPrefixId", GoMethod: "ResetNodePublicIpPrefixId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNodeTaints", GoMethod: "ResetNodeTaints"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnlyCriticalAddonsEnabled", GoMethod: "ResetOnlyCriticalAddonsEnabled"},

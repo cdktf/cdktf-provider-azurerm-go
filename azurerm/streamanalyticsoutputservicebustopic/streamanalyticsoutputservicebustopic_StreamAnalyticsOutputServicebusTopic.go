@@ -128,6 +128,8 @@ type StreamAnalyticsOutputServicebusTopic interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPropertyColumns()
+	ResetSharedAccessPolicyKey()
+	ResetSharedAccessPolicyName()
 	ResetSystemPropertyColumns()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -1097,6 +1099,22 @@ func (s *jsiiProxy_StreamAnalyticsOutputServicebusTopic) ResetPropertyColumns() 
 	_jsii_.InvokeVoid(
 		s,
 		"resetPropertyColumns",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StreamAnalyticsOutputServicebusTopic) ResetSharedAccessPolicyKey() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSharedAccessPolicyKey",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StreamAnalyticsOutputServicebusTopic) ResetSharedAccessPolicyName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSharedAccessPolicyName",
 		nil, // no parameters
 	)
 }

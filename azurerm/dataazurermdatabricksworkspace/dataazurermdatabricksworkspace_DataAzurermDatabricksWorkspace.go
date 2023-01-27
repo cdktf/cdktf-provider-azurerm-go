@@ -40,6 +40,7 @@ type DataAzurermDatabricksWorkspace interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Location() *string
+	ManagedDiskIdentity() DataAzurermDatabricksWorkspaceManagedDiskIdentityList
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -221,6 +222,16 @@ func (j *jsiiProxy_DataAzurermDatabricksWorkspace) Location() *string {
 	_jsii_.Get(
 		j,
 		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermDatabricksWorkspace) ManagedDiskIdentity() DataAzurermDatabricksWorkspaceManagedDiskIdentityList {
+	var returns DataAzurermDatabricksWorkspaceManagedDiskIdentityList
+	_jsii_.Get(
+		j,
+		"managedDiskIdentity",
 		&returns,
 	)
 	return returns

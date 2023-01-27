@@ -104,6 +104,10 @@ func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicens
 	return nil
 }
 
+func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicenseOutputReference) validateSetSecurityLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicenseOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

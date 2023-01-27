@@ -10,8 +10,14 @@ type MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRight str
 	AnalogVideoOpl *float64 `field:"optional" json:"analogVideoOpl" yaml:"analogVideoOpl"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_content_key_policy#compressed_digital_audio_opl MediaContentKeyPolicy#compressed_digital_audio_opl}.
 	CompressedDigitalAudioOpl *float64 `field:"optional" json:"compressedDigitalAudioOpl" yaml:"compressedDigitalAudioOpl"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_content_key_policy#compressed_digital_video_opl MediaContentKeyPolicy#compressed_digital_video_opl}.
+	CompressedDigitalVideoOpl *float64 `field:"optional" json:"compressedDigitalVideoOpl" yaml:"compressedDigitalVideoOpl"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_content_key_policy#digital_video_only_content_restriction MediaContentKeyPolicy#digital_video_only_content_restriction}.
 	DigitalVideoOnlyContentRestriction interface{} `field:"optional" json:"digitalVideoOnlyContentRestriction" yaml:"digitalVideoOnlyContentRestriction"`
+	// explicit_analog_television_output_restriction block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_content_key_policy#explicit_analog_television_output_restriction MediaContentKeyPolicy#explicit_analog_television_output_restriction}
+	ExplicitAnalogTelevisionOutputRestriction *MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicensePlayRightExplicitAnalogTelevisionOutputRestriction `field:"optional" json:"explicitAnalogTelevisionOutputRestriction" yaml:"explicitAnalogTelevisionOutputRestriction"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_content_key_policy#first_play_expiration MediaContentKeyPolicy#first_play_expiration}.
 	FirstPlayExpiration *string `field:"optional" json:"firstPlayExpiration" yaml:"firstPlayExpiration"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_content_key_policy#image_constraint_for_analog_component_video_restriction MediaContentKeyPolicy#image_constraint_for_analog_component_video_restriction}.

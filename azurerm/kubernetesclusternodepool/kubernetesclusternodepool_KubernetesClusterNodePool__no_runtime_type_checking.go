@@ -60,6 +60,10 @@ func (k *jsiiProxy_KubernetesClusterNodePool) validatePutLinuxOsConfigParameters
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesClusterNodePool) validatePutNodeNetworkProfileParameters(value *KubernetesClusterNodePoolNodeNetworkProfile) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesClusterNodePool) validatePutTimeoutsParameters(value *KubernetesClusterNodePoolTimeouts) error {
 	return nil
 }

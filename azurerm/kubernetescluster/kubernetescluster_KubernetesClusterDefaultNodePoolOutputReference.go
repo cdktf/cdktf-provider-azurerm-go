@@ -78,6 +78,8 @@ type KubernetesClusterDefaultNodePoolOutputReference interface {
 	NodeLabels() *map[string]*string
 	SetNodeLabels(val *map[string]*string)
 	NodeLabelsInput() *map[string]*string
+	NodeNetworkProfile() KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference
+	NodeNetworkProfileInput() *KubernetesClusterDefaultNodePoolNodeNetworkProfile
 	NodePublicIpPrefixId() *string
 	SetNodePublicIpPrefixId(val *string)
 	NodePublicIpPrefixIdInput() *string
@@ -165,6 +167,7 @@ type KubernetesClusterDefaultNodePoolOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutKubeletConfig(value *KubernetesClusterDefaultNodePoolKubeletConfig)
 	PutLinuxOsConfig(value *KubernetesClusterDefaultNodePoolLinuxOsConfig)
+	PutNodeNetworkProfile(value *KubernetesClusterDefaultNodePoolNodeNetworkProfile)
 	PutUpgradeSettings(value *KubernetesClusterDefaultNodePoolUpgradeSettings)
 	ResetCapacityReservationGroupId()
 	ResetCustomCaTrustEnabled()
@@ -182,6 +185,7 @@ type KubernetesClusterDefaultNodePoolOutputReference interface {
 	ResetMinCount()
 	ResetNodeCount()
 	ResetNodeLabels()
+	ResetNodeNetworkProfile()
 	ResetNodePublicIpPrefixId()
 	ResetNodeTaints()
 	ResetOnlyCriticalAddonsEnabled()
@@ -599,6 +603,26 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) NodeLabelsIn
 	_jsii_.Get(
 		j,
 		"nodeLabelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) NodeNetworkProfile() KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference {
+	var returns KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference
+	_jsii_.Get(
+		j,
+		"nodeNetworkProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) NodeNetworkProfileInput() *KubernetesClusterDefaultNodePoolNodeNetworkProfile {
+	var returns *KubernetesClusterDefaultNodePoolNodeNetworkProfile
+	_jsii_.Get(
+		j,
+		"nodeNetworkProfileInput",
 		&returns,
 	)
 	return returns
@@ -1627,6 +1651,17 @@ func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) PutLinuxOsCo
 	)
 }
 
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) PutNodeNetworkProfile(value *KubernetesClusterDefaultNodePoolNodeNetworkProfile) {
+	if err := k.validatePutNodeNetworkProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putNodeNetworkProfile",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) PutUpgradeSettings(value *KubernetesClusterDefaultNodePoolUpgradeSettings) {
 	if err := k.validatePutUpgradeSettingsParameters(value); err != nil {
 		panic(err)
@@ -1762,6 +1797,14 @@ func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetNodeLab
 	_jsii_.InvokeVoid(
 		k,
 		"resetNodeLabels",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetNodeNetworkProfile() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetNodeNetworkProfile",
 		nil, // no parameters
 	)
 }

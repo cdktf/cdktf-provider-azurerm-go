@@ -84,6 +84,10 @@ func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionOutputReference) validateSetPlayreadyResponseCustomDataParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

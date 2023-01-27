@@ -44,6 +44,10 @@ func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputRefere
 	return nil
 }
 
+func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputReference) validatePutAlternateKeyParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionTokenRestrictionOutputReference) validatePutRequiredClaimParameters(value interface{}) error {
 	return nil
 }

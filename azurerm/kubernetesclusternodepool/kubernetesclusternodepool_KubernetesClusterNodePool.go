@@ -103,6 +103,8 @@ type KubernetesClusterNodePool interface {
 	NodeLabels() *map[string]*string
 	SetNodeLabels(val *map[string]*string)
 	NodeLabelsInput() *map[string]*string
+	NodeNetworkProfile() KubernetesClusterNodePoolNodeNetworkProfileOutputReference
+	NodeNetworkProfileInput() *KubernetesClusterNodePoolNodeNetworkProfile
 	NodePublicIpPrefixId() *string
 	SetNodePublicIpPrefixId(val *string)
 	NodePublicIpPrefixIdInput() *string
@@ -206,6 +208,7 @@ type KubernetesClusterNodePool interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutKubeletConfig(value *KubernetesClusterNodePoolKubeletConfig)
 	PutLinuxOsConfig(value *KubernetesClusterNodePoolLinuxOsConfig)
+	PutNodeNetworkProfile(value *KubernetesClusterNodePoolNodeNetworkProfile)
 	PutTimeouts(value *KubernetesClusterNodePoolTimeouts)
 	PutUpgradeSettings(value *KubernetesClusterNodePoolUpgradeSettings)
 	PutWindowsProfile(value *KubernetesClusterNodePoolWindowsProfile)
@@ -228,6 +231,7 @@ type KubernetesClusterNodePool interface {
 	ResetMode()
 	ResetNodeCount()
 	ResetNodeLabels()
+	ResetNodeNetworkProfile()
 	ResetNodePublicIpPrefixId()
 	ResetNodeTaints()
 	ResetOrchestratorVersion()
@@ -781,6 +785,26 @@ func (j *jsiiProxy_KubernetesClusterNodePool) NodeLabelsInput() *map[string]*str
 	_jsii_.Get(
 		j,
 		"nodeLabelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) NodeNetworkProfile() KubernetesClusterNodePoolNodeNetworkProfileOutputReference {
+	var returns KubernetesClusterNodePoolNodeNetworkProfileOutputReference
+	_jsii_.Get(
+		j,
+		"nodeNetworkProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) NodeNetworkProfileInput() *KubernetesClusterNodePoolNodeNetworkProfile {
+	var returns *KubernetesClusterNodePoolNodeNetworkProfile
+	_jsii_.Get(
+		j,
+		"nodeNetworkProfileInput",
 		&returns,
 	)
 	return returns
@@ -2056,6 +2080,17 @@ func (k *jsiiProxy_KubernetesClusterNodePool) PutLinuxOsConfig(value *Kubernetes
 	)
 }
 
+func (k *jsiiProxy_KubernetesClusterNodePool) PutNodeNetworkProfile(value *KubernetesClusterNodePoolNodeNetworkProfile) {
+	if err := k.validatePutNodeNetworkProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putNodeNetworkProfile",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesClusterNodePool) PutTimeouts(value *KubernetesClusterNodePoolTimeouts) {
 	if err := k.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -2237,6 +2272,14 @@ func (k *jsiiProxy_KubernetesClusterNodePool) ResetNodeLabels() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetNodeLabels",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNodePool) ResetNodeNetworkProfile() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetNodeNetworkProfile",
 		nil, // no parameters
 	)
 }

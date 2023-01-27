@@ -109,6 +109,9 @@ type WindowsFunctionAppSlot interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ServicePlanId() *string
+	SetServicePlanId(val *string)
+	ServicePlanIdInput() *string
 	SiteConfig() WindowsFunctionAppSlotSiteConfigOutputReference
 	SiteConfigInput() *WindowsFunctionAppSlotSiteConfig
 	SiteCredential() WindowsFunctionAppSlotSiteCredentialList
@@ -191,6 +194,7 @@ type WindowsFunctionAppSlot interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetServicePlanId()
 	ResetStorageAccount()
 	ResetStorageAccountAccessKey()
 	ResetStorageAccountName()
@@ -774,6 +778,26 @@ func (j *jsiiProxy_WindowsFunctionAppSlot) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WindowsFunctionAppSlot) ServicePlanId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servicePlanId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsFunctionAppSlot) ServicePlanIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servicePlanIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsFunctionAppSlot) SiteConfig() WindowsFunctionAppSlotSiteConfigOutputReference {
 	var returns WindowsFunctionAppSlotSiteConfigOutputReference
 	_jsii_.Get(
@@ -1239,6 +1263,17 @@ func (j *jsiiProxy_WindowsFunctionAppSlot)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsFunctionAppSlot)SetServicePlanId(val *string) {
+	if err := j.validateSetServicePlanIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"servicePlanId",
 		val,
 	)
 }
@@ -1784,6 +1819,14 @@ func (w *jsiiProxy_WindowsFunctionAppSlot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsFunctionAppSlot) ResetServicePlanId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetServicePlanId",
 		nil, // no parameters
 	)
 }

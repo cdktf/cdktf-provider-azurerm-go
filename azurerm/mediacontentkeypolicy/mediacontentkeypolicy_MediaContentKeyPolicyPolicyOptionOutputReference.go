@@ -42,6 +42,9 @@ type MediaContentKeyPolicyPolicyOptionOutputReference interface {
 	OpenRestrictionEnabledInput() interface{}
 	PlayreadyConfigurationLicense() MediaContentKeyPolicyPolicyOptionPlayreadyConfigurationLicenseList
 	PlayreadyConfigurationLicenseInput() interface{}
+	PlayreadyResponseCustomData() *string
+	SetPlayreadyResponseCustomData(val *string)
+	PlayreadyResponseCustomDataInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -86,6 +89,7 @@ type MediaContentKeyPolicyPolicyOptionOutputReference interface {
 	ResetFairplayConfiguration()
 	ResetOpenRestrictionEnabled()
 	ResetPlayreadyConfigurationLicense()
+	ResetPlayreadyResponseCustomData()
 	ResetTokenRestriction()
 	ResetWidevineConfigurationTemplate()
 	// Produce the Token's value at resolution time.
@@ -253,6 +257,26 @@ func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionOutputReference) PlayreadyCo
 	return returns
 }
 
+func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionOutputReference) PlayreadyResponseCustomData() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"playreadyResponseCustomData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionOutputReference) PlayreadyResponseCustomDataInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"playreadyResponseCustomDataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -403,6 +427,17 @@ func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionOutputReference)SetOpenRestr
 	_jsii_.Set(
 		j,
 		"openRestrictionEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MediaContentKeyPolicyPolicyOptionOutputReference)SetPlayreadyResponseCustomData(val *string) {
+	if err := j.validateSetPlayreadyResponseCustomDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"playreadyResponseCustomData",
 		val,
 	)
 }
@@ -687,6 +722,14 @@ func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionOutputReference) ResetPlayre
 	_jsii_.InvokeVoid(
 		m,
 		"resetPlayreadyConfigurationLicense",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaContentKeyPolicyPolicyOptionOutputReference) ResetPlayreadyResponseCustomData() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPlayreadyResponseCustomData",
 		nil, // no parameters
 	)
 }

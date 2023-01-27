@@ -40,6 +40,8 @@ type LogAnalyticsWorkspaceConfig struct {
 	InternetIngestionEnabled interface{} `field:"optional" json:"internetIngestionEnabled" yaml:"internetIngestionEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/log_analytics_workspace#internet_query_enabled LogAnalyticsWorkspace#internet_query_enabled}.
 	InternetQueryEnabled interface{} `field:"optional" json:"internetQueryEnabled" yaml:"internetQueryEnabled"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/log_analytics_workspace#local_authentication_disabled LogAnalyticsWorkspace#local_authentication_disabled}.
+	LocalAuthenticationDisabled interface{} `field:"optional" json:"localAuthenticationDisabled" yaml:"localAuthenticationDisabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/log_analytics_workspace#reservation_capacity_in_gb_per_day LogAnalyticsWorkspace#reservation_capacity_in_gb_per_day}.
 	ReservationCapacityInGbPerDay *float64 `field:"optional" json:"reservationCapacityInGbPerDay" yaml:"reservationCapacityInGbPerDay"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/log_analytics_workspace#retention_in_days LogAnalyticsWorkspace#retention_in_days}.

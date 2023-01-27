@@ -2,6 +2,10 @@ package mediacontentkeypolicy
 
 
 type MediaContentKeyPolicyPolicyOptionTokenRestriction struct {
+	// alternate_key block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_content_key_policy#alternate_key MediaContentKeyPolicy#alternate_key}
+	AlternateKey interface{} `field:"optional" json:"alternateKey" yaml:"alternateKey"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_content_key_policy#audience MediaContentKeyPolicy#audience}.
 	Audience *string `field:"optional" json:"audience" yaml:"audience"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_content_key_policy#issuer MediaContentKeyPolicy#issuer}.

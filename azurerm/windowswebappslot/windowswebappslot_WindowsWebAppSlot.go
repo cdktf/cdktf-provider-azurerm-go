@@ -102,6 +102,9 @@ type WindowsWebAppSlot interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ServicePlanId() *string
+	SetServicePlanId(val *string)
+	ServicePlanIdInput() *string
 	SiteConfig() WindowsWebAppSlotSiteConfigOutputReference
 	SiteConfigInput() *WindowsWebAppSlotSiteConfig
 	SiteCredential() WindowsWebAppSlotSiteCredentialList
@@ -174,6 +177,7 @@ type WindowsWebAppSlot interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetServicePlanId()
 	ResetStorageAccount()
 	ResetTags()
 	ResetTimeouts()
@@ -714,6 +718,26 @@ func (j *jsiiProxy_WindowsWebAppSlot) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WindowsWebAppSlot) ServicePlanId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servicePlanId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlot) ServicePlanIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servicePlanIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsWebAppSlot) SiteConfig() WindowsWebAppSlotSiteConfigOutputReference {
 	var returns WindowsWebAppSlotSiteConfigOutputReference
 	_jsii_.Get(
@@ -1086,6 +1110,17 @@ func (j *jsiiProxy_WindowsWebAppSlot)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsWebAppSlot)SetServicePlanId(val *string) {
+	if err := j.validateSetServicePlanIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"servicePlanId",
 		val,
 	)
 }
@@ -1593,6 +1628,14 @@ func (w *jsiiProxy_WindowsWebAppSlot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsWebAppSlot) ResetServicePlanId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetServicePlanId",
 		nil, // no parameters
 	)
 }

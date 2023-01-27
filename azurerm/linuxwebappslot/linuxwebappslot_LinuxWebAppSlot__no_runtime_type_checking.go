@@ -152,6 +152,10 @@ func (j *jsiiProxy_LinuxWebAppSlot) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_LinuxWebAppSlot) validateSetServicePlanIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxWebAppSlot) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
