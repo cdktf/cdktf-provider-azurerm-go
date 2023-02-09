@@ -75,6 +75,9 @@ type LbBackendAddressPool interface {
 	TimeoutsInput() interface{}
 	TunnelInterface() LbBackendAddressPoolTunnelInterfaceList
 	TunnelInterfaceInput() interface{}
+	VirtualNetworkId() *string
+	SetVirtualNetworkId(val *string)
+	VirtualNetworkIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -108,6 +111,7 @@ type LbBackendAddressPool interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	ResetTunnelInterface()
+	ResetVirtualNetworkId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -423,6 +427,26 @@ func (j *jsiiProxy_LbBackendAddressPool) TunnelInterfaceInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LbBackendAddressPool) VirtualNetworkId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"virtualNetworkId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbBackendAddressPool) VirtualNetworkIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"virtualNetworkIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/lb_backend_address_pool azurerm_lb_backend_address_pool} Resource.
 func NewLbBackendAddressPool(scope constructs.Construct, id *string, config *LbBackendAddressPoolConfig) LbBackendAddressPool {
@@ -547,6 +571,17 @@ func (j *jsiiProxy_LbBackendAddressPool)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbBackendAddressPool)SetVirtualNetworkId(val *string) {
+	if err := j.validateSetVirtualNetworkIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"virtualNetworkId",
 		val,
 	)
 }
@@ -867,6 +902,14 @@ func (l *jsiiProxy_LbBackendAddressPool) ResetTunnelInterface() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetTunnelInterface",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbBackendAddressPool) ResetVirtualNetworkId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetVirtualNetworkId",
 		nil, // no parameters
 	)
 }

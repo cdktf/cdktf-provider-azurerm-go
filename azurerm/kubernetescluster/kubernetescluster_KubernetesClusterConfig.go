@@ -51,6 +51,10 @@ type KubernetesClusterConfig struct {
 	AzureActiveDirectoryRoleBasedAccessControl *KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl `field:"optional" json:"azureActiveDirectoryRoleBasedAccessControl" yaml:"azureActiveDirectoryRoleBasedAccessControl"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#azure_policy_enabled KubernetesCluster#azure_policy_enabled}.
 	AzurePolicyEnabled interface{} `field:"optional" json:"azurePolicyEnabled" yaml:"azurePolicyEnabled"`
+	// confidential_computing block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#confidential_computing KubernetesCluster#confidential_computing}
+	ConfidentialComputing *KubernetesClusterConfidentialComputing `field:"optional" json:"confidentialComputing" yaml:"confidentialComputing"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#disk_encryption_set_id KubernetesCluster#disk_encryption_set_id}.
 	DiskEncryptionSetId *string `field:"optional" json:"diskEncryptionSetId" yaml:"diskEncryptionSetId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#dns_prefix KubernetesCluster#dns_prefix}.

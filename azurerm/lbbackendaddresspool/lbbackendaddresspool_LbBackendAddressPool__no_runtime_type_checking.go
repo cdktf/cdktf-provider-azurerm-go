@@ -96,6 +96,10 @@ func (j *jsiiProxy_LbBackendAddressPool) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_LbBackendAddressPool) validateSetVirtualNetworkIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewLbBackendAddressPoolParameters(scope constructs.Construct, id *string, config *LbBackendAddressPoolConfig) error {
 	return nil
 }

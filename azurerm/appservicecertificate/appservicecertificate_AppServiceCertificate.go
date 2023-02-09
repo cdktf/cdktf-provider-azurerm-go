@@ -41,6 +41,7 @@ type AppServiceCertificate interface {
 	FriendlyName() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HostingEnvironmentProfileId() *string
 	HostNames() *[]*string
 	Id() *string
 	SetId(val *string)
@@ -260,6 +261,16 @@ func (j *jsiiProxy_AppServiceCertificate) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppServiceCertificate) HostingEnvironmentProfileId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostingEnvironmentProfileId",
 		&returns,
 	)
 	return returns

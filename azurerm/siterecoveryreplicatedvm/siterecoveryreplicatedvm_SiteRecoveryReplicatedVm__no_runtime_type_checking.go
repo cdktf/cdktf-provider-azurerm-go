@@ -64,6 +64,10 @@ func (s *jsiiProxy_SiteRecoveryReplicatedVm) validatePutTimeoutsParameters(value
 	return nil
 }
 
+func (s *jsiiProxy_SiteRecoveryReplicatedVm) validatePutUnmanagedDiskParameters(value interface{}) error {
+	return nil
+}
+
 func validateSiteRecoveryReplicatedVm_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetIdParameters(val *string
 }
 
 func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetMultiVmGroupNameParameters(val *string) error {
 	return nil
 }
 
@@ -124,7 +132,23 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetAvailabilitySetIdP
 	return nil
 }
 
+func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetBootDiagnosticStorageAccountIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetCapacityReservationGroupIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetEdgeZoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetNetworkIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetProximityPlacementGroupIdParameters(val *string) error {
 	return nil
 }
 
@@ -140,7 +164,15 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetResourceGroupIdPar
 	return nil
 }
 
+func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetVirtualMachineScaleSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetZoneParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTestNetworkIdParameters(val *string) error {
 	return nil
 }
 

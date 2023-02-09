@@ -12,6 +12,8 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/site_recovery_protection_container_mapping azurerm_site_recovery_protection_container_mapping}.
 type SiteRecoveryProtectionContainerMapping interface {
 	cdktf.TerraformResource
+	AutomaticUpdate() SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference
+	AutomaticUpdateInput() *SiteRecoveryProtectionContainerMappingAutomaticUpdate
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -109,7 +111,9 @@ type SiteRecoveryProtectionContainerMapping interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutomaticUpdate(value *SiteRecoveryProtectionContainerMappingAutomaticUpdate)
 	PutTimeouts(value *SiteRecoveryProtectionContainerMappingTimeouts)
+	ResetAutomaticUpdate()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -128,6 +132,26 @@ type SiteRecoveryProtectionContainerMapping interface {
 // The jsii proxy struct for SiteRecoveryProtectionContainerMapping
 type jsiiProxy_SiteRecoveryProtectionContainerMapping struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SiteRecoveryProtectionContainerMapping) AutomaticUpdate() SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference {
+	var returns SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference
+	_jsii_.Get(
+		j,
+		"automaticUpdate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SiteRecoveryProtectionContainerMapping) AutomaticUpdateInput() *SiteRecoveryProtectionContainerMappingAutomaticUpdate {
+	var returns *SiteRecoveryProtectionContainerMappingAutomaticUpdate
+	_jsii_.Get(
+		j,
+		"automaticUpdateInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SiteRecoveryProtectionContainerMapping) CdktfStack() cdktf.TerraformStack {
@@ -919,6 +943,17 @@ func (s *jsiiProxy_SiteRecoveryProtectionContainerMapping) OverrideLogicalId(new
 	)
 }
 
+func (s *jsiiProxy_SiteRecoveryProtectionContainerMapping) PutAutomaticUpdate(value *SiteRecoveryProtectionContainerMappingAutomaticUpdate) {
+	if err := s.validatePutAutomaticUpdateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAutomaticUpdate",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SiteRecoveryProtectionContainerMapping) PutTimeouts(value *SiteRecoveryProtectionContainerMappingTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -927,6 +962,14 @@ func (s *jsiiProxy_SiteRecoveryProtectionContainerMapping) PutTimeouts(value *Si
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SiteRecoveryProtectionContainerMapping) ResetAutomaticUpdate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAutomaticUpdate",
+		nil, // no parameters
 	)
 }
 

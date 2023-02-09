@@ -31,6 +31,8 @@ type KubernetesCluster interface {
 	AzurePolicyEnabledInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConfidentialComputing() KubernetesClusterConfidentialComputingOutputReference
+	ConfidentialComputingInput() *KubernetesClusterConfidentialComputing
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -229,6 +231,7 @@ type KubernetesCluster interface {
 	PutApiServerAccessProfile(value *KubernetesClusterApiServerAccessProfile)
 	PutAutoScalerProfile(value *KubernetesClusterAutoScalerProfile)
 	PutAzureActiveDirectoryRoleBasedAccessControl(value *KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl)
+	PutConfidentialComputing(value *KubernetesClusterConfidentialComputing)
 	PutDefaultNodePool(value *KubernetesClusterDefaultNodePool)
 	PutHttpProxyConfig(value *KubernetesClusterHttpProxyConfig)
 	PutIdentity(value *KubernetesClusterIdentity)
@@ -255,6 +258,7 @@ type KubernetesCluster interface {
 	ResetAutoScalerProfile()
 	ResetAzureActiveDirectoryRoleBasedAccessControl()
 	ResetAzurePolicyEnabled()
+	ResetConfidentialComputing()
 	ResetDiskEncryptionSetId()
 	ResetDnsPrefix()
 	ResetDnsPrefixPrivateCluster()
@@ -459,6 +463,26 @@ func (j *jsiiProxy_KubernetesCluster) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) ConfidentialComputing() KubernetesClusterConfidentialComputingOutputReference {
+	var returns KubernetesClusterConfidentialComputingOutputReference
+	_jsii_.Get(
+		j,
+		"confidentialComputing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) ConfidentialComputingInput() *KubernetesClusterConfidentialComputing {
+	var returns *KubernetesClusterConfidentialComputing
+	_jsii_.Get(
+		j,
+		"confidentialComputingInput",
 		&returns,
 	)
 	return returns
@@ -2328,6 +2352,17 @@ func (k *jsiiProxy_KubernetesCluster) PutAzureActiveDirectoryRoleBasedAccessCont
 	)
 }
 
+func (k *jsiiProxy_KubernetesCluster) PutConfidentialComputing(value *KubernetesClusterConfidentialComputing) {
+	if err := k.validatePutConfidentialComputingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putConfidentialComputing",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesCluster) PutDefaultNodePool(value *KubernetesClusterDefaultNodePool) {
 	if err := k.validatePutDefaultNodePoolParameters(value); err != nil {
 		panic(err)
@@ -2589,6 +2624,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetAzurePolicyEnabled() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetAzurePolicyEnabled",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetConfidentialComputing() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetConfidentialComputing",
 		nil, // no parameters
 	)
 }

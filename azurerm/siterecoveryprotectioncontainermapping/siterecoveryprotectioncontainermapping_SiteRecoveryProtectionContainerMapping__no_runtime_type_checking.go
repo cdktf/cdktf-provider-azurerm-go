@@ -52,6 +52,10 @@ func (s *jsiiProxy_SiteRecoveryProtectionContainerMapping) validateOverrideLogic
 	return nil
 }
 
+func (s *jsiiProxy_SiteRecoveryProtectionContainerMapping) validatePutAutomaticUpdateParameters(value *SiteRecoveryProtectionContainerMappingAutomaticUpdate) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryProtectionContainerMapping) validatePutTimeoutsParameters(value *SiteRecoveryProtectionContainerMappingTimeouts) error {
 	return nil
 }

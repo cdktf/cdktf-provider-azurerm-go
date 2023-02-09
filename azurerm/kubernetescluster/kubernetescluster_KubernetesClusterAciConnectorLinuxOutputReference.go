@@ -20,6 +20,7 @@ type KubernetesClusterAciConnectorLinuxOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectorIdentity() KubernetesClusterAciConnectorLinuxConnectorIdentityList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -94,6 +95,16 @@ func (j *jsiiProxy_KubernetesClusterAciConnectorLinuxOutputReference) ComplexObj
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterAciConnectorLinuxOutputReference) ConnectorIdentity() KubernetesClusterAciConnectorLinuxConnectorIdentityList {
+	var returns KubernetesClusterAciConnectorLinuxConnectorIdentityList
+	_jsii_.Get(
+		j,
+		"connectorIdentity",
 		&returns,
 	)
 	return returns

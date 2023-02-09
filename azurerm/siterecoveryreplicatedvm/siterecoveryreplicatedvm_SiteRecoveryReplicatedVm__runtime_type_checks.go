@@ -184,6 +184,37 @@ func (s *jsiiProxy_SiteRecoveryReplicatedVm) validatePutTimeoutsParameters(value
 	return nil
 }
 
+func (s *jsiiProxy_SiteRecoveryReplicatedVm) validatePutUnmanagedDiskParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*SiteRecoveryReplicatedVmUnmanagedDisk:
+		value := value.(*[]*SiteRecoveryReplicatedVmUnmanagedDisk)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*SiteRecoveryReplicatedVmUnmanagedDisk:
+		value_ := value.([]*SiteRecoveryReplicatedVmUnmanagedDisk)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SiteRecoveryReplicatedVmUnmanagedDisk; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func validateSiteRecoveryReplicatedVm_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
@@ -252,6 +283,14 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetIdParameters(val *string
 func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetMultiVmGroupNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -367,7 +406,39 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetAvailabilitySetIdP
 	return nil
 }
 
+func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetBootDiagnosticStorageAccountIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetCapacityReservationGroupIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetEdgeZoneParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetNetworkIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetProximityPlacementGroupIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -399,7 +470,23 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetResourceGroupIdPar
 	return nil
 }
 
+func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetVirtualMachineScaleSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTargetZoneParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVm) validateSetTestNetworkIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

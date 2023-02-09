@@ -56,6 +56,18 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) validateSetFailoverTestPublicIpAddressIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) validateSetFailoverTestStaticIpParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) validateSetFailoverTestSubnetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

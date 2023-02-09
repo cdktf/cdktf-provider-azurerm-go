@@ -36,5 +36,7 @@ type LbBackendAddressPoolConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/lb_backend_address_pool#tunnel_interface LbBackendAddressPool#tunnel_interface}
 	TunnelInterface interface{} `field:"optional" json:"tunnelInterface" yaml:"tunnelInterface"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/lb_backend_address_pool#virtual_network_id LbBackendAddressPool#virtual_network_id}.
+	VirtualNetworkId *string `field:"optional" json:"virtualNetworkId" yaml:"virtualNetworkId"`
 }
 

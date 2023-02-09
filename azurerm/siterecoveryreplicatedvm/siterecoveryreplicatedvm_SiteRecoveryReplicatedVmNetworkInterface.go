@@ -2,6 +2,12 @@ package siterecoveryreplicatedvm
 
 
 type SiteRecoveryReplicatedVmNetworkInterface struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/site_recovery_replicated_vm#failover_test_public_ip_address_id SiteRecoveryReplicatedVm#failover_test_public_ip_address_id}.
+	FailoverTestPublicIpAddressId *string `field:"optional" json:"failoverTestPublicIpAddressId" yaml:"failoverTestPublicIpAddressId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/site_recovery_replicated_vm#failover_test_static_ip SiteRecoveryReplicatedVm#failover_test_static_ip}.
+	FailoverTestStaticIp *string `field:"optional" json:"failoverTestStaticIp" yaml:"failoverTestStaticIp"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/site_recovery_replicated_vm#failover_test_subnet_name SiteRecoveryReplicatedVm#failover_test_subnet_name}.
+	FailoverTestSubnetName *string `field:"optional" json:"failoverTestSubnetName" yaml:"failoverTestSubnetName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/site_recovery_replicated_vm#is_primary SiteRecoveryReplicatedVm#is_primary}.
 	IsPrimary interface{} `field:"optional" json:"isPrimary" yaml:"isPrimary"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/site_recovery_replicated_vm#recovery_public_ip_address_id SiteRecoveryReplicatedVm#recovery_public_ip_address_id}.
