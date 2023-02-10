@@ -52,6 +52,10 @@ func (d *jsiiProxy_DashboardGrafana) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (d *jsiiProxy_DashboardGrafana) validatePutAzureMonitorWorkspaceIntegrationsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardGrafana) validatePutIdentityParameters(value *DashboardGrafanaIdentity) error {
 	return nil
 }

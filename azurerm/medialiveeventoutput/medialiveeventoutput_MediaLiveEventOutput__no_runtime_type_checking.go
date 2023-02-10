@@ -116,6 +116,10 @@ func (j *jsiiProxy_MediaLiveEventOutput) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_MediaLiveEventOutput) validateSetRewindWindowDurationParameters(val *string) error {
+	return nil
+}
+
 func validateNewMediaLiveEventOutputParameters(scope constructs.Construct, id *string, config *MediaLiveEventOutputConfig) error {
 	return nil
 }

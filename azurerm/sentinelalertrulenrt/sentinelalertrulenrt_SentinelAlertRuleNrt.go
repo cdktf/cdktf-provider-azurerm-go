@@ -50,6 +50,8 @@ type SentinelAlertRuleNrt interface {
 	EnabledInput() interface{}
 	EntityMapping() SentinelAlertRuleNrtEntityMappingList
 	EntityMappingInput() interface{}
+	EventGrouping() SentinelAlertRuleNrtEventGroupingOutputReference
+	EventGroupingInput() *SentinelAlertRuleNrtEventGrouping
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -88,6 +90,8 @@ type SentinelAlertRuleNrt interface {
 	QueryInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	SentinelEntityMapping() SentinelAlertRuleNrtSentinelEntityMappingList
+	SentinelEntityMappingInput() interface{}
 	Severity() *string
 	SetSeverity(val *string)
 	SeverityInput() *string
@@ -138,7 +142,9 @@ type SentinelAlertRuleNrt interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAlertDetailsOverride(value interface{})
 	PutEntityMapping(value interface{})
+	PutEventGrouping(value *SentinelAlertRuleNrtEventGrouping)
 	PutIncident(value *SentinelAlertRuleNrtIncident)
+	PutSentinelEntityMapping(value interface{})
 	PutTimeouts(value *SentinelAlertRuleNrtTimeouts)
 	ResetAlertDetailsOverride()
 	ResetAlertRuleTemplateGuid()
@@ -147,11 +153,13 @@ type SentinelAlertRuleNrt interface {
 	ResetDescription()
 	ResetEnabled()
 	ResetEntityMapping()
+	ResetEventGrouping()
 	ResetId()
 	ResetIncident()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSentinelEntityMapping()
 	ResetSuppressionDuration()
 	ResetSuppressionEnabled()
 	ResetTactics()
@@ -382,6 +390,26 @@ func (j *jsiiProxy_SentinelAlertRuleNrt) EntityMappingInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SentinelAlertRuleNrt) EventGrouping() SentinelAlertRuleNrtEventGroupingOutputReference {
+	var returns SentinelAlertRuleNrtEventGroupingOutputReference
+	_jsii_.Get(
+		j,
+		"eventGrouping",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelAlertRuleNrt) EventGroupingInput() *SentinelAlertRuleNrtEventGrouping {
+	var returns *SentinelAlertRuleNrtEventGrouping
+	_jsii_.Get(
+		j,
+		"eventGroupingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SentinelAlertRuleNrt) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -557,6 +585,26 @@ func (j *jsiiProxy_SentinelAlertRuleNrt) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelAlertRuleNrt) SentinelEntityMapping() SentinelAlertRuleNrtSentinelEntityMappingList {
+	var returns SentinelAlertRuleNrtSentinelEntityMappingList
+	_jsii_.Get(
+		j,
+		"sentinelEntityMapping",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelAlertRuleNrt) SentinelEntityMappingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sentinelEntityMappingInput",
 		&returns,
 	)
 	return returns
@@ -1260,6 +1308,17 @@ func (s *jsiiProxy_SentinelAlertRuleNrt) PutEntityMapping(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_SentinelAlertRuleNrt) PutEventGrouping(value *SentinelAlertRuleNrtEventGrouping) {
+	if err := s.validatePutEventGroupingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putEventGrouping",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SentinelAlertRuleNrt) PutIncident(value *SentinelAlertRuleNrtIncident) {
 	if err := s.validatePutIncidentParameters(value); err != nil {
 		panic(err)
@@ -1267,6 +1326,17 @@ func (s *jsiiProxy_SentinelAlertRuleNrt) PutIncident(value *SentinelAlertRuleNrt
 	_jsii_.InvokeVoid(
 		s,
 		"putIncident",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SentinelAlertRuleNrt) PutSentinelEntityMapping(value interface{}) {
+	if err := s.validatePutSentinelEntityMappingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSentinelEntityMapping",
 		[]interface{}{value},
 	)
 }
@@ -1338,6 +1408,14 @@ func (s *jsiiProxy_SentinelAlertRuleNrt) ResetEntityMapping() {
 	)
 }
 
+func (s *jsiiProxy_SentinelAlertRuleNrt) ResetEventGrouping() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEventGrouping",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SentinelAlertRuleNrt) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1358,6 +1436,14 @@ func (s *jsiiProxy_SentinelAlertRuleNrt) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SentinelAlertRuleNrt) ResetSentinelEntityMapping() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSentinelEntityMapping",
 		nil, // no parameters
 	)
 }

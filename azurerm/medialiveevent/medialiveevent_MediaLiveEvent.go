@@ -84,6 +84,9 @@ type MediaLiveEvent interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	StreamOptions() *[]*string
+	SetStreamOptions(val *[]*string)
+	StreamOptionsInput() *[]*string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -141,6 +144,7 @@ type MediaLiveEvent interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreview()
+	ResetStreamOptions()
 	ResetTags()
 	ResetTimeouts()
 	ResetTranscriptionLanguages()
@@ -530,6 +534,26 @@ func (j *jsiiProxy_MediaLiveEvent) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MediaLiveEvent) StreamOptions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"streamOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaLiveEvent) StreamOptionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"streamOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MediaLiveEvent) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -819,6 +843,17 @@ func (j *jsiiProxy_MediaLiveEvent)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MediaLiveEvent)SetStreamOptions(val *[]*string) {
+	if err := j.validateSetStreamOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"streamOptions",
 		val,
 	)
 }
@@ -1237,6 +1272,14 @@ func (m *jsiiProxy_MediaLiveEvent) ResetPreview() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetPreview",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaLiveEvent) ResetStreamOptions() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetStreamOptions",
 		nil, // no parameters
 	)
 }

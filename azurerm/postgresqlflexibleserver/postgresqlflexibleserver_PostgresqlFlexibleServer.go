@@ -97,6 +97,9 @@ type PostgresqlFlexibleServer interface {
 	PublicNetworkAccessEnabled() cdktf.IResolvable
 	// Experimental.
 	RawOverrides() interface{}
+	ReplicationRole() *string
+	SetReplicationRole(val *string)
+	ReplicationRoleInput() *string
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
@@ -174,6 +177,7 @@ type PostgresqlFlexibleServer interface {
 	ResetOverrideLogicalId()
 	ResetPointInTimeRestoreTimeInUtc()
 	ResetPrivateDnsZoneId()
+	ResetReplicationRole()
 	ResetSkuName()
 	ResetSourceServerId()
 	ResetStorageMb()
@@ -666,6 +670,26 @@ func (j *jsiiProxy_PostgresqlFlexibleServer) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PostgresqlFlexibleServer) ReplicationRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicationRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServer) ReplicationRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicationRoleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresqlFlexibleServer) ResourceGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1068,6 +1092,17 @@ func (j *jsiiProxy_PostgresqlFlexibleServer)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServer)SetReplicationRole(val *string) {
+	if err := j.validateSetReplicationRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicationRole",
 		val,
 	)
 }
@@ -1597,6 +1632,14 @@ func (p *jsiiProxy_PostgresqlFlexibleServer) ResetPrivateDnsZoneId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPrivateDnsZoneId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresqlFlexibleServer) ResetReplicationRole() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetReplicationRole",
 		nil, // no parameters
 	)
 }

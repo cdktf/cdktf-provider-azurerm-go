@@ -54,6 +54,8 @@ type MediaLiveEventConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_live_event#preview MediaLiveEvent#preview}
 	Preview *MediaLiveEventPreview `field:"optional" json:"preview" yaml:"preview"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_live_event#stream_options MediaLiveEvent#stream_options}.
+	StreamOptions *[]*string `field:"optional" json:"streamOptions" yaml:"streamOptions"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_live_event#tags MediaLiveEvent#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.

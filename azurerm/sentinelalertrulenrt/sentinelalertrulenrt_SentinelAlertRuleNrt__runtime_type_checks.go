@@ -173,12 +173,54 @@ func (s *jsiiProxy_SentinelAlertRuleNrt) validatePutEntityMappingParameters(valu
 	return nil
 }
 
+func (s *jsiiProxy_SentinelAlertRuleNrt) validatePutEventGroupingParameters(value *SentinelAlertRuleNrtEventGrouping) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAlertRuleNrt) validatePutIncidentParameters(value *SentinelAlertRuleNrtIncident) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAlertRuleNrt) validatePutSentinelEntityMappingParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*SentinelAlertRuleNrtSentinelEntityMapping:
+		value := value.(*[]*SentinelAlertRuleNrtSentinelEntityMapping)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*SentinelAlertRuleNrtSentinelEntityMapping:
+		value_ := value.([]*SentinelAlertRuleNrtSentinelEntityMapping)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SentinelAlertRuleNrtSentinelEntityMapping; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil

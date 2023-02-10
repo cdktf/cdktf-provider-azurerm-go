@@ -66,6 +66,8 @@ type PostgresqlFlexibleServerConfig struct {
 	PointInTimeRestoreTimeInUtc *string `field:"optional" json:"pointInTimeRestoreTimeInUtc" yaml:"pointInTimeRestoreTimeInUtc"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/postgresql_flexible_server#private_dns_zone_id PostgresqlFlexibleServer#private_dns_zone_id}.
 	PrivateDnsZoneId *string `field:"optional" json:"privateDnsZoneId" yaml:"privateDnsZoneId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/postgresql_flexible_server#replication_role PostgresqlFlexibleServer#replication_role}.
+	ReplicationRole *string `field:"optional" json:"replicationRole" yaml:"replicationRole"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/postgresql_flexible_server#sku_name PostgresqlFlexibleServer#sku_name}.
 	SkuName *string `field:"optional" json:"skuName" yaml:"skuName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/postgresql_flexible_server#source_server_id PostgresqlFlexibleServer#source_server_id}.

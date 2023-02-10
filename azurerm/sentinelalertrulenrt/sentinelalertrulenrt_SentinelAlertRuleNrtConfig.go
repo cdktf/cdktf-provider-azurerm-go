@@ -47,6 +47,10 @@ type SentinelAlertRuleNrtConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_nrt#entity_mapping SentinelAlertRuleNrt#entity_mapping}
 	EntityMapping interface{} `field:"optional" json:"entityMapping" yaml:"entityMapping"`
+	// event_grouping block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_nrt#event_grouping SentinelAlertRuleNrt#event_grouping}
+	EventGrouping *SentinelAlertRuleNrtEventGrouping `field:"optional" json:"eventGrouping" yaml:"eventGrouping"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_nrt#id SentinelAlertRuleNrt#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -56,6 +60,10 @@ type SentinelAlertRuleNrtConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_nrt#incident SentinelAlertRuleNrt#incident}
 	Incident *SentinelAlertRuleNrtIncident `field:"optional" json:"incident" yaml:"incident"`
+	// sentinel_entity_mapping block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_nrt#sentinel_entity_mapping SentinelAlertRuleNrt#sentinel_entity_mapping}
+	SentinelEntityMapping interface{} `field:"optional" json:"sentinelEntityMapping" yaml:"sentinelEntityMapping"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_nrt#suppression_duration SentinelAlertRuleNrt#suppression_duration}.
 	SuppressionDuration *string `field:"optional" json:"suppressionDuration" yaml:"suppressionDuration"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_nrt#suppression_enabled SentinelAlertRuleNrt#suppression_enabled}.

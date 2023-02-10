@@ -84,6 +84,14 @@ func (j *jsiiProxy_SharedImage) validateSetArchitectureParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_SharedImage) validateSetConfidentialVmEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SharedImage) validateSetConfidentialVmSupportedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SharedImage) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

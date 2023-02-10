@@ -128,6 +128,10 @@ func (j *jsiiProxy_MediaLiveEvent) validateSetResourceGroupNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_MediaLiveEvent) validateSetStreamOptionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaLiveEvent) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

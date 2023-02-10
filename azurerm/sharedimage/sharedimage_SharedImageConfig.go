@@ -37,6 +37,10 @@ type SharedImageConfig struct {
 	AcceleratedNetworkSupportEnabled interface{} `field:"optional" json:"acceleratedNetworkSupportEnabled" yaml:"acceleratedNetworkSupportEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/shared_image#architecture SharedImage#architecture}.
 	Architecture *string `field:"optional" json:"architecture" yaml:"architecture"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/shared_image#confidential_vm_enabled SharedImage#confidential_vm_enabled}.
+	ConfidentialVmEnabled interface{} `field:"optional" json:"confidentialVmEnabled" yaml:"confidentialVmEnabled"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/shared_image#confidential_vm_supported SharedImage#confidential_vm_supported}.
+	ConfidentialVmSupported interface{} `field:"optional" json:"confidentialVmSupported" yaml:"confidentialVmSupported"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/shared_image#description SharedImage#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/shared_image#disk_types_not_allowed SharedImage#disk_types_not_allowed}.

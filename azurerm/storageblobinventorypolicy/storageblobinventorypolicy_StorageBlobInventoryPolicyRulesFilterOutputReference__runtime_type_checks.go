@@ -171,6 +171,14 @@ func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) validateSetExcludePrefixesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) validateSetIncludeBlobVersionsParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

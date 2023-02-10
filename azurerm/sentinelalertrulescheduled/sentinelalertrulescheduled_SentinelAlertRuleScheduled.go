@@ -96,6 +96,8 @@ type SentinelAlertRuleScheduled interface {
 	QueryPeriodInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	SentinelEntityMapping() SentinelAlertRuleScheduledSentinelEntityMappingList
+	SentinelEntityMappingInput() interface{}
 	Severity() *string
 	SetSeverity(val *string)
 	SeverityInput() *string
@@ -154,6 +156,7 @@ type SentinelAlertRuleScheduled interface {
 	PutEntityMapping(value interface{})
 	PutEventGrouping(value *SentinelAlertRuleScheduledEventGrouping)
 	PutIncidentConfiguration(value *SentinelAlertRuleScheduledIncidentConfiguration)
+	PutSentinelEntityMapping(value interface{})
 	PutTimeouts(value *SentinelAlertRuleScheduledTimeouts)
 	ResetAlertDetailsOverride()
 	ResetAlertRuleTemplateGuid()
@@ -170,6 +173,7 @@ type SentinelAlertRuleScheduled interface {
 	ResetOverrideLogicalId()
 	ResetQueryFrequency()
 	ResetQueryPeriod()
+	ResetSentinelEntityMapping()
 	ResetSuppressionDuration()
 	ResetSuppressionEnabled()
 	ResetTactics()
@@ -637,6 +641,26 @@ func (j *jsiiProxy_SentinelAlertRuleScheduled) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelAlertRuleScheduled) SentinelEntityMapping() SentinelAlertRuleScheduledSentinelEntityMappingList {
+	var returns SentinelAlertRuleScheduledSentinelEntityMappingList
+	_jsii_.Get(
+		j,
+		"sentinelEntityMapping",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelAlertRuleScheduled) SentinelEntityMappingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sentinelEntityMappingInput",
 		&returns,
 	)
 	return returns
@@ -1446,6 +1470,17 @@ func (s *jsiiProxy_SentinelAlertRuleScheduled) PutIncidentConfiguration(value *S
 	)
 }
 
+func (s *jsiiProxy_SentinelAlertRuleScheduled) PutSentinelEntityMapping(value interface{}) {
+	if err := s.validatePutSentinelEntityMappingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSentinelEntityMapping",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SentinelAlertRuleScheduled) PutTimeouts(value *SentinelAlertRuleScheduledTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1557,6 +1592,14 @@ func (s *jsiiProxy_SentinelAlertRuleScheduled) ResetQueryPeriod() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetQueryPeriod",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SentinelAlertRuleScheduled) ResetSentinelEntityMapping() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSentinelEntityMapping",
 		nil, // no parameters
 	)
 }

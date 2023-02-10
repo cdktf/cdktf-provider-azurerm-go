@@ -31,6 +31,8 @@ type SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference interface {
 	DisplayNameFormat() *string
 	SetDisplayNameFormat(val *string)
 	DisplayNameFormatInput() *string
+	DynamicProperty() SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyList
+	DynamicPropertyInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -73,8 +75,10 @@ type SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDynamicProperty(value interface{})
 	ResetDescriptionFormat()
 	ResetDisplayNameFormat()
+	ResetDynamicProperty()
 	ResetSeverityColumnName()
 	ResetTacticsColumnName()
 	// Produce the Token's value at resolution time.
@@ -157,6 +161,26 @@ func (j *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference
 	_jsii_.Get(
 		j,
 		"displayNameFormatInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference) DynamicProperty() SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyList {
+	var returns SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyList
+	_jsii_.Get(
+		j,
+		"dynamicProperty",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference) DynamicPropertyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dynamicPropertyInput",
 		&returns,
 	)
 	return returns
@@ -555,6 +579,17 @@ func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference
 	return returns
 }
 
+func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference) PutDynamicProperty(value interface{}) {
+	if err := s.validatePutDynamicPropertyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putDynamicProperty",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference) ResetDescriptionFormat() {
 	_jsii_.InvokeVoid(
 		s,
@@ -567,6 +602,14 @@ func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference
 	_jsii_.InvokeVoid(
 		s,
 		"resetDisplayNameFormat",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference) ResetDynamicProperty() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDynamicProperty",
 		nil, // no parameters
 	)
 }

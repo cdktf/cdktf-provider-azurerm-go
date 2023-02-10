@@ -44,6 +44,10 @@ func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference
 	return nil
 }
 
+func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference) validatePutDynamicPropertyParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

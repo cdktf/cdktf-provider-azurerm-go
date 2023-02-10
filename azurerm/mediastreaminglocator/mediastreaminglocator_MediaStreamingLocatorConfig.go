@@ -39,6 +39,8 @@ type MediaStreamingLocatorConfig struct {
 	DefaultContentKeyPolicyName *string `field:"optional" json:"defaultContentKeyPolicyName" yaml:"defaultContentKeyPolicyName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_streaming_locator#end_time MediaStreamingLocator#end_time}.
 	EndTime *string `field:"optional" json:"endTime" yaml:"endTime"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_streaming_locator#filter_names MediaStreamingLocator#filter_names}.
+	FilterNames *[]*string `field:"optional" json:"filterNames" yaml:"filterNames"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_streaming_locator#id MediaStreamingLocator#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

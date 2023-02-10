@@ -68,6 +68,10 @@ func (s *jsiiProxy_SentinelAlertRuleScheduled) validatePutIncidentConfigurationP
 	return nil
 }
 
+func (s *jsiiProxy_SentinelAlertRuleScheduled) validatePutSentinelEntityMappingParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAlertRuleScheduled) validatePutTimeoutsParameters(value *SentinelAlertRuleScheduledTimeouts) error {
 	return nil
 }

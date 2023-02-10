@@ -20,6 +20,12 @@ type SharedImage interface {
 	ArchitectureInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConfidentialVmEnabled() interface{}
+	SetConfidentialVmEnabled(val interface{})
+	ConfidentialVmEnabledInput() interface{}
+	ConfidentialVmSupported() interface{}
+	SetConfidentialVmSupported(val interface{})
+	ConfidentialVmSupportedInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -160,6 +166,8 @@ type SharedImage interface {
 	PutTimeouts(value *SharedImageTimeouts)
 	ResetAcceleratedNetworkSupportEnabled()
 	ResetArchitecture()
+	ResetConfidentialVmEnabled()
+	ResetConfidentialVmSupported()
 	ResetDescription()
 	ResetDiskTypesNotAllowed()
 	ResetEndOfLifeDate()
@@ -240,6 +248,46 @@ func (j *jsiiProxy_SharedImage) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SharedImage) ConfidentialVmEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"confidentialVmEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SharedImage) ConfidentialVmEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"confidentialVmEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SharedImage) ConfidentialVmSupported() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"confidentialVmSupported",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SharedImage) ConfidentialVmSupportedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"confidentialVmSupportedInput",
 		&returns,
 	)
 	return returns
@@ -907,6 +955,28 @@ func (j *jsiiProxy_SharedImage)SetArchitecture(val *string) {
 	)
 }
 
+func (j *jsiiProxy_SharedImage)SetConfidentialVmEnabled(val interface{}) {
+	if err := j.validateSetConfidentialVmEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"confidentialVmEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SharedImage)SetConfidentialVmSupported(val interface{}) {
+	if err := j.validateSetConfidentialVmSupportedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"confidentialVmSupported",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SharedImage)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -1503,6 +1573,22 @@ func (s *jsiiProxy_SharedImage) ResetArchitecture() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetArchitecture",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SharedImage) ResetConfidentialVmEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetConfidentialVmEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SharedImage) ResetConfidentialVmSupported() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetConfidentialVmSupported",
 		nil, // no parameters
 	)
 }

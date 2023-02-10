@@ -28,6 +28,9 @@ type StorageBlobInventoryPolicyRulesFilterOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExcludePrefixes() *[]*string
+	SetExcludePrefixes(val *[]*string)
+	ExcludePrefixesInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	IncludeBlobVersions() interface{}
@@ -76,6 +79,7 @@ type StorageBlobInventoryPolicyRulesFilterOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetExcludePrefixes()
 	ResetIncludeBlobVersions()
 	ResetIncludeDeleted()
 	ResetIncludeSnapshots()
@@ -140,6 +144,26 @@ func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) Creatio
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) ExcludePrefixes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludePrefixes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) ExcludePrefixesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludePrefixesInput",
 		&returns,
 	)
 	return returns
@@ -322,6 +346,17 @@ func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference)SetCompl
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference)SetExcludePrefixes(val *[]*string) {
+	if err := j.validateSetExcludePrefixesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludePrefixes",
 		val,
 	)
 }
@@ -587,6 +622,14 @@ func (s *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) ResetExcludePrefixes() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExcludePrefixes",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) ResetIncludeBlobVersions() {

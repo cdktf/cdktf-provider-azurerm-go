@@ -92,6 +92,10 @@ func (j *jsiiProxy_MediaStreamingLocator) validateSetEndTimeParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_MediaStreamingLocator) validateSetFilterNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaStreamingLocator) validateSetIdParameters(val *string) error {
 	return nil
 }

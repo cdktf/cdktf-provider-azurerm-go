@@ -105,6 +105,7 @@ type DatabricksAccessConnector interface {
 	PutIdentity(value *DatabricksAccessConnectorIdentity)
 	PutTimeouts(value *DatabricksAccessConnectorTimeouts)
 	ResetId()
+	ResetIdentity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -867,6 +868,14 @@ func (d *jsiiProxy_DatabricksAccessConnector) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksAccessConnector) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIdentity",
 		nil, // no parameters
 	)
 }

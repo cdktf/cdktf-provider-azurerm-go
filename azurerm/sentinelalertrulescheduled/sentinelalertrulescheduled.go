@@ -65,6 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putEntityMapping", GoMethod: "PutEntityMapping"},
 			_jsii_.MemberMethod{JsiiMethod: "putEventGrouping", GoMethod: "PutEventGrouping"},
 			_jsii_.MemberMethod{JsiiMethod: "putIncidentConfiguration", GoMethod: "PutIncidentConfiguration"},
+			_jsii_.MemberMethod{JsiiMethod: "putSentinelEntityMapping", GoMethod: "PutSentinelEntityMapping"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "query", GoGetter: "Query"},
 			_jsii_.MemberProperty{JsiiProperty: "queryFrequency", GoGetter: "QueryFrequency"},
@@ -86,6 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQueryFrequency", GoMethod: "ResetQueryFrequency"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQueryPeriod", GoMethod: "ResetQueryPeriod"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSentinelEntityMapping", GoMethod: "ResetSentinelEntityMapping"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSuppressionDuration", GoMethod: "ResetSuppressionDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSuppressionEnabled", GoMethod: "ResetSuppressionEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTactics", GoMethod: "ResetTactics"},
@@ -93,6 +95,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTriggerOperator", GoMethod: "ResetTriggerOperator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTriggerThreshold", GoMethod: "ResetTriggerThreshold"},
+			_jsii_.MemberProperty{JsiiProperty: "sentinelEntityMapping", GoGetter: "SentinelEntityMapping"},
+			_jsii_.MemberProperty{JsiiProperty: "sentinelEntityMappingInput", GoGetter: "SentinelEntityMappingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "severity", GoGetter: "Severity"},
 			_jsii_.MemberProperty{JsiiProperty: "severityInput", GoGetter: "SeverityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "suppressionDuration", GoGetter: "SuppressionDuration"},
@@ -127,6 +131,67 @@ func init() {
 		"@cdktf/provider-azurerm.sentinelAlertRuleScheduled.SentinelAlertRuleScheduledAlertDetailsOverride",
 		reflect.TypeOf((*SentinelAlertRuleScheduledAlertDetailsOverride)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.sentinelAlertRuleScheduled.SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty",
+		reflect.TypeOf((*SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.sentinelAlertRuleScheduled.SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyList",
+		reflect.TypeOf((*SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.sentinelAlertRuleScheduled.SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyOutputReference",
+		reflect.TypeOf((*SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-azurerm.sentinelAlertRuleScheduled.SentinelAlertRuleScheduledAlertDetailsOverrideList",
 		reflect.TypeOf((*SentinelAlertRuleScheduledAlertDetailsOverrideList)(nil)).Elem(),
@@ -160,6 +225,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "descriptionFormatInput", GoGetter: "DescriptionFormatInput"},
 			_jsii_.MemberProperty{JsiiProperty: "displayNameFormat", GoGetter: "DisplayNameFormat"},
 			_jsii_.MemberProperty{JsiiProperty: "displayNameFormatInput", GoGetter: "DisplayNameFormatInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dynamicProperty", GoGetter: "DynamicProperty"},
+			_jsii_.MemberProperty{JsiiProperty: "dynamicPropertyInput", GoGetter: "DynamicPropertyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -173,8 +240,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putDynamicProperty", GoMethod: "PutDynamicProperty"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescriptionFormat", GoMethod: "ResetDescriptionFormat"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayNameFormat", GoMethod: "ResetDisplayNameFormat"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDynamicProperty", GoMethod: "ResetDynamicProperty"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSeverityColumnName", GoMethod: "ResetSeverityColumnName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTacticsColumnName", GoMethod: "ResetTacticsColumnName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -451,6 +520,65 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SentinelAlertRuleScheduledIncidentConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.sentinelAlertRuleScheduled.SentinelAlertRuleScheduledSentinelEntityMapping",
+		reflect.TypeOf((*SentinelAlertRuleScheduledSentinelEntityMapping)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.sentinelAlertRuleScheduled.SentinelAlertRuleScheduledSentinelEntityMappingList",
+		reflect.TypeOf((*SentinelAlertRuleScheduledSentinelEntityMappingList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SentinelAlertRuleScheduledSentinelEntityMappingList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.sentinelAlertRuleScheduled.SentinelAlertRuleScheduledSentinelEntityMappingOutputReference",
+		reflect.TypeOf((*SentinelAlertRuleScheduledSentinelEntityMappingOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "columnName", GoGetter: "ColumnName"},
+			_jsii_.MemberProperty{JsiiProperty: "columnNameInput", GoGetter: "ColumnNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SentinelAlertRuleScheduledSentinelEntityMappingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -40,6 +40,8 @@ type MediaLiveEventOutputConfig struct {
 	ManifestName *string `field:"optional" json:"manifestName" yaml:"manifestName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_live_event_output#output_snap_time_in_seconds MediaLiveEventOutput#output_snap_time_in_seconds}.
 	OutputSnapTimeInSeconds *float64 `field:"optional" json:"outputSnapTimeInSeconds" yaml:"outputSnapTimeInSeconds"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_live_event_output#rewind_window_duration MediaLiveEventOutput#rewind_window_duration}.
+	RewindWindowDuration *string `field:"optional" json:"rewindWindowDuration" yaml:"rewindWindowDuration"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_live_event_output#timeouts MediaLiveEventOutput#timeouts}

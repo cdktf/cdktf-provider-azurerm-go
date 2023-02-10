@@ -64,6 +64,10 @@ type SentinelAlertRuleScheduledConfig struct {
 	QueryFrequency *string `field:"optional" json:"queryFrequency" yaml:"queryFrequency"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_scheduled#query_period SentinelAlertRuleScheduled#query_period}.
 	QueryPeriod *string `field:"optional" json:"queryPeriod" yaml:"queryPeriod"`
+	// sentinel_entity_mapping block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_scheduled#sentinel_entity_mapping SentinelAlertRuleScheduled#sentinel_entity_mapping}
+	SentinelEntityMapping interface{} `field:"optional" json:"sentinelEntityMapping" yaml:"sentinelEntityMapping"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_scheduled#suppression_duration SentinelAlertRuleScheduled#suppression_duration}.
 	SuppressionDuration *string `field:"optional" json:"suppressionDuration" yaml:"suppressionDuration"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_scheduled#suppression_enabled SentinelAlertRuleScheduled#suppression_enabled}.

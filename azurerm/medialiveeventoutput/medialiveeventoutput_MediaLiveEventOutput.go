@@ -79,6 +79,9 @@ type MediaLiveEventOutput interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RewindWindowDuration() *string
+	SetRewindWindowDuration(val *string)
+	RewindWindowDurationInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -121,6 +124,7 @@ type MediaLiveEventOutput interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRewindWindowDuration()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -447,6 +451,26 @@ func (j *jsiiProxy_MediaLiveEventOutput) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MediaLiveEventOutput) RewindWindowDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rewindWindowDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaLiveEventOutput) RewindWindowDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rewindWindowDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MediaLiveEventOutput) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -687,6 +711,17 @@ func (j *jsiiProxy_MediaLiveEventOutput)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MediaLiveEventOutput)SetRewindWindowDuration(val *string) {
+	if err := j.validateSetRewindWindowDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rewindWindowDuration",
 		val,
 	)
 }
@@ -1012,6 +1047,14 @@ func (m *jsiiProxy_MediaLiveEventOutput) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaLiveEventOutput) ResetRewindWindowDuration() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRewindWindowDuration",
 		nil, // no parameters
 	)
 }

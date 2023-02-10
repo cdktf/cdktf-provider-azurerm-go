@@ -60,6 +60,10 @@ func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) validateSetExcludePrefixesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBlobInventoryPolicyRulesFilterOutputReference) validateSetIncludeBlobVersionsParameters(val interface{}) error {
 	return nil
 }

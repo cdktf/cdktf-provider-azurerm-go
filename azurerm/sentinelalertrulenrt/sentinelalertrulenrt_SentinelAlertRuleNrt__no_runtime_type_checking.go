@@ -60,7 +60,15 @@ func (s *jsiiProxy_SentinelAlertRuleNrt) validatePutEntityMappingParameters(valu
 	return nil
 }
 
+func (s *jsiiProxy_SentinelAlertRuleNrt) validatePutEventGroupingParameters(value *SentinelAlertRuleNrtEventGrouping) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAlertRuleNrt) validatePutIncidentParameters(value *SentinelAlertRuleNrtIncident) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAlertRuleNrt) validatePutSentinelEntityMappingParameters(value interface{}) error {
 	return nil
 }
 
