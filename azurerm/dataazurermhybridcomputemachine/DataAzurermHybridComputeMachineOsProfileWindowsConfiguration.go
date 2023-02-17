@@ -1,0 +1,6 @@
+package dataazurermhybridcomputemachine
+
+
+type DataAzurermHybridComputeMachineOsProfileWindowsConfiguration struct {
+}
+

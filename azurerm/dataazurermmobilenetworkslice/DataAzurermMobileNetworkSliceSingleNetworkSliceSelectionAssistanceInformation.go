@@ -1,0 +1,6 @@
+package dataazurermmobilenetworkslice
+
+
+type DataAzurermMobileNetworkSliceSingleNetworkSliceSelectionAssistanceInformation struct {
+}
+

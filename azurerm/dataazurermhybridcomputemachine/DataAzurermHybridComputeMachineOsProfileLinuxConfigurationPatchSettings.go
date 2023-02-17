@@ -1,0 +1,6 @@
+package dataazurermhybridcomputemachine
+
+
+type DataAzurermHybridComputeMachineOsProfileLinuxConfigurationPatchSettings struct {
+}
+

@@ -1,0 +1,6 @@
+package dataazurermvirtualdesktophostpool
+
+
+type DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesSchedule struct {
+}
+

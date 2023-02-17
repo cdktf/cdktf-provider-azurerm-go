@@ -1,0 +1,6 @@
+package dataazurermmobilenetworkservice
+
+
+type DataAzurermMobileNetworkServicePccRuleServiceDataFlowTemplate struct {
+}
+
