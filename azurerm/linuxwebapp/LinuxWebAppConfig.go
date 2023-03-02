@@ -37,6 +37,10 @@ type LinuxWebAppConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_web_app#auth_settings LinuxWebApp#auth_settings}
 	AuthSettings *LinuxWebAppAuthSettings `field:"optional" json:"authSettings" yaml:"authSettings"`
+	// auth_settings_v2 block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_web_app#auth_settings_v2 LinuxWebApp#auth_settings_v2}
+	AuthSettingsV2 *LinuxWebAppAuthSettingsV2 `field:"optional" json:"authSettingsV2" yaml:"authSettingsV2"`
 	// backup block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_web_app#backup LinuxWebApp#backup}

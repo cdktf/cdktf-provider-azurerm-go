@@ -178,14 +178,6 @@ func (j *jsiiProxy_DataAzurermDiskAccess) validateSetResourceGroupNameParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermDiskAccess) validateSetTagsParameters(val *map[string]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewDataAzurermDiskAccessParameters(scope constructs.Construct, id *string, config *DataAzurermDiskAccessConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -29,6 +29,8 @@ type ExpressRouteConnectionConfig struct {
 	AuthorizationKey *string `field:"optional" json:"authorizationKey" yaml:"authorizationKey"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_connection#enable_internet_security ExpressRouteConnection#enable_internet_security}.
 	EnableInternetSecurity interface{} `field:"optional" json:"enableInternetSecurity" yaml:"enableInternetSecurity"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_connection#express_route_gateway_bypass_enabled ExpressRouteConnection#express_route_gateway_bypass_enabled}.
+	ExpressRouteGatewayBypassEnabled interface{} `field:"optional" json:"expressRouteGatewayBypassEnabled" yaml:"expressRouteGatewayBypassEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_connection#id ExpressRouteConnection#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

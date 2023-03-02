@@ -33,6 +33,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "instantRestoreResourceGroup", GoGetter: "InstantRestoreResourceGroup"},
+			_jsii_.MemberProperty{JsiiProperty: "instantRestoreResourceGroupInput", GoGetter: "InstantRestoreResourceGroupInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instantRestoreRetentionDays", GoGetter: "InstantRestoreRetentionDays"},
 			_jsii_.MemberProperty{JsiiProperty: "instantRestoreRetentionDaysInput", GoGetter: "InstantRestoreRetentionDaysInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -46,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putBackup", GoMethod: "PutBackup"},
+			_jsii_.MemberMethod{JsiiMethod: "putInstantRestoreResourceGroup", GoMethod: "PutInstantRestoreResourceGroup"},
 			_jsii_.MemberMethod{JsiiMethod: "putRetentionDaily", GoMethod: "PutRetentionDaily"},
 			_jsii_.MemberMethod{JsiiMethod: "putRetentionMonthly", GoMethod: "PutRetentionMonthly"},
 			_jsii_.MemberMethod{JsiiMethod: "putRetentionWeekly", GoMethod: "PutRetentionWeekly"},
@@ -55,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "recoveryVaultName", GoGetter: "RecoveryVaultName"},
 			_jsii_.MemberProperty{JsiiProperty: "recoveryVaultNameInput", GoGetter: "RecoveryVaultNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInstantRestoreResourceGroup", GoMethod: "ResetInstantRestoreResourceGroup"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstantRestoreRetentionDays", GoMethod: "ResetInstantRestoreRetentionDays"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPolicyType", GoMethod: "ResetPolicyType"},
@@ -144,6 +148,47 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig",
 		reflect.TypeOf((*BackupPolicyVmConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.backupPolicyVm.BackupPolicyVmInstantRestoreResourceGroup",
+		reflect.TypeOf((*BackupPolicyVmInstantRestoreResourceGroup)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.backupPolicyVm.BackupPolicyVmInstantRestoreResourceGroupOutputReference",
+		reflect.TypeOf((*BackupPolicyVmInstantRestoreResourceGroupOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "prefix", GoGetter: "Prefix"},
+			_jsii_.MemberProperty{JsiiProperty: "prefixInput", GoGetter: "PrefixInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSuffix", GoMethod: "ResetSuffix"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "suffix", GoGetter: "Suffix"},
+			_jsii_.MemberProperty{JsiiProperty: "suffixInput", GoGetter: "SuffixInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BackupPolicyVmInstantRestoreResourceGroupOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionDaily",

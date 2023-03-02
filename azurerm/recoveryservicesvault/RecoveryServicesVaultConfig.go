@@ -27,6 +27,8 @@ type RecoveryServicesVaultConfig struct {
 	ResourceGroupName *string `field:"required" json:"resourceGroupName" yaml:"resourceGroupName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/recovery_services_vault#sku RecoveryServicesVault#sku}.
 	Sku *string `field:"required" json:"sku" yaml:"sku"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/recovery_services_vault#classic_vmware_replication_enabled RecoveryServicesVault#classic_vmware_replication_enabled}.
+	ClassicVmwareReplicationEnabled interface{} `field:"optional" json:"classicVmwareReplicationEnabled" yaml:"classicVmwareReplicationEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/recovery_services_vault#cross_region_restore_enabled RecoveryServicesVault#cross_region_restore_enabled}.
 	CrossRegionRestoreEnabled interface{} `field:"optional" json:"crossRegionRestoreEnabled" yaml:"crossRegionRestoreEnabled"`
 	// encryption block.

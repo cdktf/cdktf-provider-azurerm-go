@@ -41,6 +41,8 @@ type BackupPolicyVm interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InstantRestoreResourceGroup() BackupPolicyVmInstantRestoreResourceGroupOutputReference
+	InstantRestoreResourceGroupInput() *BackupPolicyVmInstantRestoreResourceGroup
 	InstantRestoreRetentionDays() *float64
 	SetInstantRestoreRetentionDays(val *float64)
 	InstantRestoreRetentionDaysInput() *float64
@@ -117,12 +119,14 @@ type BackupPolicyVm interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBackup(value *BackupPolicyVmBackup)
+	PutInstantRestoreResourceGroup(value *BackupPolicyVmInstantRestoreResourceGroup)
 	PutRetentionDaily(value *BackupPolicyVmRetentionDaily)
 	PutRetentionMonthly(value *BackupPolicyVmRetentionMonthly)
 	PutRetentionWeekly(value *BackupPolicyVmRetentionWeekly)
 	PutRetentionYearly(value *BackupPolicyVmRetentionYearly)
 	PutTimeouts(value *BackupPolicyVmTimeouts)
 	ResetId()
+	ResetInstantRestoreResourceGroup()
 	ResetInstantRestoreRetentionDays()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -264,6 +268,26 @@ func (j *jsiiProxy_BackupPolicyVm) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupPolicyVm) InstantRestoreResourceGroup() BackupPolicyVmInstantRestoreResourceGroupOutputReference {
+	var returns BackupPolicyVmInstantRestoreResourceGroupOutputReference
+	_jsii_.Get(
+		j,
+		"instantRestoreResourceGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupPolicyVm) InstantRestoreResourceGroupInput() *BackupPolicyVmInstantRestoreResourceGroup {
+	var returns *BackupPolicyVmInstantRestoreResourceGroup
+	_jsii_.Get(
+		j,
+		"instantRestoreResourceGroupInput",
 		&returns,
 	)
 	return returns
@@ -1018,6 +1042,17 @@ func (b *jsiiProxy_BackupPolicyVm) PutBackup(value *BackupPolicyVmBackup) {
 	)
 }
 
+func (b *jsiiProxy_BackupPolicyVm) PutInstantRestoreResourceGroup(value *BackupPolicyVmInstantRestoreResourceGroup) {
+	if err := b.validatePutInstantRestoreResourceGroupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putInstantRestoreResourceGroup",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BackupPolicyVm) PutRetentionDaily(value *BackupPolicyVmRetentionDaily) {
 	if err := b.validatePutRetentionDailyParameters(value); err != nil {
 		panic(err)
@@ -1077,6 +1112,14 @@ func (b *jsiiProxy_BackupPolicyVm) ResetId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupPolicyVm) ResetInstantRestoreResourceGroup() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetInstantRestoreResourceGroup",
 		nil, // no parameters
 	)
 }

@@ -37,6 +37,10 @@ type WindowsWebAppConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app#auth_settings WindowsWebApp#auth_settings}
 	AuthSettings *WindowsWebAppAuthSettings `field:"optional" json:"authSettings" yaml:"authSettings"`
+	// auth_settings_v2 block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app#auth_settings_v2 WindowsWebApp#auth_settings_v2}
+	AuthSettingsV2 *WindowsWebAppAuthSettingsV2 `field:"optional" json:"authSettingsV2" yaml:"authSettingsV2"`
 	// backup block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app#backup WindowsWebApp#backup}

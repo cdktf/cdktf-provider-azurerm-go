@@ -32,8 +32,6 @@ type MobileNetworkSimGroupIdentityOutputReference interface {
 	IdentityIdsInput() *[]*string
 	InternalValue() *MobileNetworkSimGroupIdentity
 	SetInternalValue(val *MobileNetworkSimGroupIdentity)
-	PrincipalId() *string
-	TenantId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,7 +67,6 @@ type MobileNetworkSimGroupIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetIdentityIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -150,26 +147,6 @@ func (j *jsiiProxy_MobileNetworkSimGroupIdentityOutputReference) InternalValue()
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MobileNetworkSimGroupIdentityOutputReference) PrincipalId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"principalId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MobileNetworkSimGroupIdentityOutputReference) TenantId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tenantId",
 		&returns,
 	)
 	return returns
@@ -504,14 +481,6 @@ func (m *jsiiProxy_MobileNetworkSimGroupIdentityOutputReference) InterpolationFo
 	)
 
 	return returns
-}
-
-func (m *jsiiProxy_MobileNetworkSimGroupIdentityOutputReference) ResetIdentityIds() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetIdentityIds",
-		nil, // no parameters
-	)
 }
 
 func (m *jsiiProxy_MobileNetworkSimGroupIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

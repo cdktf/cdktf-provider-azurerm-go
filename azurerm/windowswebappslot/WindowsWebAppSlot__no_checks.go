@@ -56,6 +56,10 @@ func (w *jsiiProxy_WindowsWebAppSlot) validatePutAuthSettingsParameters(value *W
 	return nil
 }
 
+func (w *jsiiProxy_WindowsWebAppSlot) validatePutAuthSettingsV2Parameters(value *WindowsWebAppSlotAuthSettingsV2) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsWebAppSlot) validatePutBackupParameters(value *WindowsWebAppSlotBackup) error {
 	return nil
 }

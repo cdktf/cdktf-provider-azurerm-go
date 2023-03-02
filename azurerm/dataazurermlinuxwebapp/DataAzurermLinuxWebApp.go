@@ -15,6 +15,7 @@ type DataAzurermLinuxWebApp interface {
 	AppMetadata() cdktf.StringMap
 	AppSettings() cdktf.StringMap
 	AuthSettings() DataAzurermLinuxWebAppAuthSettingsList
+	AuthSettingsV2() DataAzurermLinuxWebAppAuthSettingsV2List
 	Backup() DataAzurermLinuxWebAppBackupList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -161,6 +162,16 @@ func (j *jsiiProxy_DataAzurermLinuxWebApp) AuthSettings() DataAzurermLinuxWebApp
 	_jsii_.Get(
 		j,
 		"authSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLinuxWebApp) AuthSettingsV2() DataAzurermLinuxWebAppAuthSettingsV2List {
+	var returns DataAzurermLinuxWebAppAuthSettingsV2List
+	_jsii_.Get(
+		j,
+		"authSettingsV2",
 		&returns,
 	)
 	return returns

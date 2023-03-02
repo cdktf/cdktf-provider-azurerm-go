@@ -20,6 +20,8 @@ type WindowsWebAppSlot interface {
 	AppSettingsInput() *map[string]*string
 	AuthSettings() WindowsWebAppSlotAuthSettingsOutputReference
 	AuthSettingsInput() *WindowsWebAppSlotAuthSettings
+	AuthSettingsV2() WindowsWebAppSlotAuthSettingsV2OutputReference
+	AuthSettingsV2Input() *WindowsWebAppSlotAuthSettingsV2
 	Backup() WindowsWebAppSlotBackupOutputReference
 	BackupInput() *WindowsWebAppSlotBackup
 	// Experimental.
@@ -153,6 +155,7 @@ type WindowsWebAppSlot interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthSettings(value *WindowsWebAppSlotAuthSettings)
+	PutAuthSettingsV2(value *WindowsWebAppSlotAuthSettingsV2)
 	PutBackup(value *WindowsWebAppSlotBackup)
 	PutConnectionString(value interface{})
 	PutIdentity(value *WindowsWebAppSlotIdentity)
@@ -162,6 +165,7 @@ type WindowsWebAppSlot interface {
 	PutTimeouts(value *WindowsWebAppSlotTimeouts)
 	ResetAppSettings()
 	ResetAuthSettings()
+	ResetAuthSettingsV2()
 	ResetBackup()
 	ResetClientAffinityEnabled()
 	ResetClientCertificateEnabled()
@@ -253,6 +257,26 @@ func (j *jsiiProxy_WindowsWebAppSlot) AuthSettingsInput() *WindowsWebAppSlotAuth
 	_jsii_.Get(
 		j,
 		"authSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlot) AuthSettingsV2() WindowsWebAppSlotAuthSettingsV2OutputReference {
+	var returns WindowsWebAppSlotAuthSettingsV2OutputReference
+	_jsii_.Get(
+		j,
+		"authSettingsV2",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlot) AuthSettingsV2Input() *WindowsWebAppSlotAuthSettingsV2 {
+	var returns *WindowsWebAppSlotAuthSettingsV2
+	_jsii_.Get(
+		j,
+		"authSettingsV2Input",
 		&returns,
 	)
 	return returns
@@ -1435,6 +1459,17 @@ func (w *jsiiProxy_WindowsWebAppSlot) PutAuthSettings(value *WindowsWebAppSlotAu
 	)
 }
 
+func (w *jsiiProxy_WindowsWebAppSlot) PutAuthSettingsV2(value *WindowsWebAppSlotAuthSettingsV2) {
+	if err := w.validatePutAuthSettingsV2Parameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putAuthSettingsV2",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WindowsWebAppSlot) PutBackup(value *WindowsWebAppSlotBackup) {
 	if err := w.validatePutBackupParameters(value); err != nil {
 		panic(err)
@@ -1524,6 +1559,14 @@ func (w *jsiiProxy_WindowsWebAppSlot) ResetAuthSettings() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetAuthSettings",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsWebAppSlot) ResetAuthSettingsV2() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAuthSettingsV2",
 		nil, // no parameters
 	)
 }

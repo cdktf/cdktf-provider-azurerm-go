@@ -14,6 +14,9 @@ type RecoveryServicesVault interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClassicVmwareReplicationEnabled() interface{}
+	SetClassicVmwareReplicationEnabled(val interface{})
+	ClassicVmwareReplicationEnabledInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -125,6 +128,7 @@ type RecoveryServicesVault interface {
 	PutEncryption(value *RecoveryServicesVaultEncryption)
 	PutIdentity(value *RecoveryServicesVaultIdentity)
 	PutTimeouts(value *RecoveryServicesVaultTimeouts)
+	ResetClassicVmwareReplicationEnabled()
 	ResetCrossRegionRestoreEnabled()
 	ResetEncryption()
 	ResetId()
@@ -158,6 +162,26 @@ func (j *jsiiProxy_RecoveryServicesVault) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RecoveryServicesVault) ClassicVmwareReplicationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"classicVmwareReplicationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RecoveryServicesVault) ClassicVmwareReplicationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"classicVmwareReplicationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -620,6 +644,17 @@ func NewRecoveryServicesVault_Override(r RecoveryServicesVault, scope constructs
 		"@cdktf/provider-azurerm.recoveryServicesVault.RecoveryServicesVault",
 		[]interface{}{scope, id, config},
 		r,
+	)
+}
+
+func (j *jsiiProxy_RecoveryServicesVault)SetClassicVmwareReplicationEnabled(val interface{}) {
+	if err := j.validateSetClassicVmwareReplicationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"classicVmwareReplicationEnabled",
+		val,
 	)
 }
 
@@ -1105,6 +1140,14 @@ func (r *jsiiProxy_RecoveryServicesVault) PutTimeouts(value *RecoveryServicesVau
 		r,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RecoveryServicesVault) ResetClassicVmwareReplicationEnabled() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetClassicVmwareReplicationEnabled",
+		nil, // no parameters
 	)
 }
 

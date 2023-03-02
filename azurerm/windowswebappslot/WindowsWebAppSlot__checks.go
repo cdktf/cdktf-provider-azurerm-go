@@ -122,6 +122,17 @@ func (w *jsiiProxy_WindowsWebAppSlot) validatePutAuthSettingsParameters(value *W
 	return nil
 }
 
+func (w *jsiiProxy_WindowsWebAppSlot) validatePutAuthSettingsV2Parameters(value *WindowsWebAppSlotAuthSettingsV2) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_WindowsWebAppSlot) validatePutBackupParameters(value *WindowsWebAppSlotBackup) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

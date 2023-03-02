@@ -56,6 +56,10 @@ func (w *jsiiProxy_WindowsWebApp) validatePutAuthSettingsParameters(value *Windo
 	return nil
 }
 
+func (w *jsiiProxy_WindowsWebApp) validatePutAuthSettingsV2Parameters(value *WindowsWebAppAuthSettingsV2) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsWebApp) validatePutBackupParameters(value *WindowsWebAppBackup) error {
 	return nil
 }

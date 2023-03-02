@@ -23,6 +23,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "durationInput", GoGetter: "DurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "errorCode", GoGetter: "ErrorCode"},
 			_jsii_.MemberProperty{JsiiProperty: "errorMeesage", GoGetter: "ErrorMeesage"},
+			_jsii_.MemberProperty{JsiiProperty: "errorMessage", GoGetter: "ErrorMessage"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},

@@ -17,6 +17,8 @@ type WindowsWebApp interface {
 	AppSettingsInput() *map[string]*string
 	AuthSettings() WindowsWebAppAuthSettingsOutputReference
 	AuthSettingsInput() *WindowsWebAppAuthSettings
+	AuthSettingsV2() WindowsWebAppAuthSettingsV2OutputReference
+	AuthSettingsV2Input() *WindowsWebAppAuthSettingsV2
 	Backup() WindowsWebAppBackupOutputReference
 	BackupInput() *WindowsWebAppBackup
 	// Experimental.
@@ -158,6 +160,7 @@ type WindowsWebApp interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthSettings(value *WindowsWebAppAuthSettings)
+	PutAuthSettingsV2(value *WindowsWebAppAuthSettingsV2)
 	PutBackup(value *WindowsWebAppBackup)
 	PutConnectionString(value interface{})
 	PutIdentity(value *WindowsWebAppIdentity)
@@ -168,6 +171,7 @@ type WindowsWebApp interface {
 	PutTimeouts(value *WindowsWebAppTimeouts)
 	ResetAppSettings()
 	ResetAuthSettings()
+	ResetAuthSettingsV2()
 	ResetBackup()
 	ResetClientAffinityEnabled()
 	ResetClientCertificateEnabled()
@@ -239,6 +243,26 @@ func (j *jsiiProxy_WindowsWebApp) AuthSettingsInput() *WindowsWebAppAuthSettings
 	_jsii_.Get(
 		j,
 		"authSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebApp) AuthSettingsV2() WindowsWebAppAuthSettingsV2OutputReference {
+	var returns WindowsWebAppAuthSettingsV2OutputReference
+	_jsii_.Get(
+		j,
+		"authSettingsV2",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebApp) AuthSettingsV2Input() *WindowsWebAppAuthSettingsV2 {
+	var returns *WindowsWebAppAuthSettingsV2
+	_jsii_.Get(
+		j,
+		"authSettingsV2Input",
 		&returns,
 	)
 	return returns
@@ -1492,6 +1516,17 @@ func (w *jsiiProxy_WindowsWebApp) PutAuthSettings(value *WindowsWebAppAuthSettin
 	)
 }
 
+func (w *jsiiProxy_WindowsWebApp) PutAuthSettingsV2(value *WindowsWebAppAuthSettingsV2) {
+	if err := w.validatePutAuthSettingsV2Parameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putAuthSettingsV2",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WindowsWebApp) PutBackup(value *WindowsWebAppBackup) {
 	if err := w.validatePutBackupParameters(value); err != nil {
 		panic(err)
@@ -1592,6 +1627,14 @@ func (w *jsiiProxy_WindowsWebApp) ResetAuthSettings() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetAuthSettings",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsWebApp) ResetAuthSettingsV2() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAuthSettingsV2",
 		nil, // no parameters
 	)
 }

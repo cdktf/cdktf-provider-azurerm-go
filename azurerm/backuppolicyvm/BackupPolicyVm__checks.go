@@ -122,6 +122,17 @@ func (b *jsiiProxy_BackupPolicyVm) validatePutBackupParameters(value *BackupPoli
 	return nil
 }
 
+func (b *jsiiProxy_BackupPolicyVm) validatePutInstantRestoreResourceGroupParameters(value *BackupPolicyVmInstantRestoreResourceGroup) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (b *jsiiProxy_BackupPolicyVm) validatePutRetentionDailyParameters(value *BackupPolicyVmRetentionDaily) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

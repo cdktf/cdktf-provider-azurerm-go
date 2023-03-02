@@ -122,6 +122,17 @@ func (l *jsiiProxy_LinuxWebApp) validatePutAuthSettingsParameters(value *LinuxWe
 	return nil
 }
 
+func (l *jsiiProxy_LinuxWebApp) validatePutAuthSettingsV2Parameters(value *LinuxWebAppAuthSettingsV2) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (l *jsiiProxy_LinuxWebApp) validatePutBackupParameters(value *LinuxWebAppBackup) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

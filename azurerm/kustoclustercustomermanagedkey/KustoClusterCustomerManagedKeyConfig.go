@@ -25,13 +25,13 @@ type KustoClusterCustomerManagedKeyConfig struct {
 	KeyName *string `field:"required" json:"keyName" yaml:"keyName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kusto_cluster_customer_managed_key#key_vault_id KustoClusterCustomerManagedKey#key_vault_id}.
 	KeyVaultId *string `field:"required" json:"keyVaultId" yaml:"keyVaultId"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kusto_cluster_customer_managed_key#key_version KustoClusterCustomerManagedKey#key_version}.
-	KeyVersion *string `field:"required" json:"keyVersion" yaml:"keyVersion"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kusto_cluster_customer_managed_key#id KustoClusterCustomerManagedKey#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kusto_cluster_customer_managed_key#key_version KustoClusterCustomerManagedKey#key_version}.
+	KeyVersion *string `field:"optional" json:"keyVersion" yaml:"keyVersion"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kusto_cluster_customer_managed_key#timeouts KustoClusterCustomerManagedKey#timeouts}

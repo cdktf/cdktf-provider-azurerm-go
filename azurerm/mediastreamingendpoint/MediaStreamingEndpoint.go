@@ -96,6 +96,7 @@ type MediaStreamingEndpoint interface {
 	ScaleUnits() *float64
 	SetScaleUnits(val *float64)
 	ScaleUnitsInput() *float64
+	Sku() MediaStreamingEndpointSkuList
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -600,6 +601,16 @@ func (j *jsiiProxy_MediaStreamingEndpoint) ScaleUnitsInput() *float64 {
 	_jsii_.Get(
 		j,
 		"scaleUnitsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaStreamingEndpoint) Sku() MediaStreamingEndpointSkuList {
+	var returns MediaStreamingEndpointSkuList
+	_jsii_.Get(
+		j,
+		"sku",
 		&returns,
 	)
 	return returns

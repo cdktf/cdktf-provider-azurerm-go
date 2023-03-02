@@ -64,7 +64,15 @@ func (j *jsiiProxy_ExpressRouteConnectionRoutingOutputReference) validateSetComp
 	return nil
 }
 
+func (j *jsiiProxy_ExpressRouteConnectionRoutingOutputReference) validateSetInboundRouteMapIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRouteConnectionRoutingOutputReference) validateSetInternalValueParameters(val *ExpressRouteConnectionRouting) error {
+	return nil
+}
+
+func (j *jsiiProxy_ExpressRouteConnectionRoutingOutputReference) validateSetOutboundRouteMapIdParameters(val *string) error {
 	return nil
 }
 

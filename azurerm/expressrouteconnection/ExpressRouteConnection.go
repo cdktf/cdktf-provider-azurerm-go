@@ -37,6 +37,9 @@ type ExpressRouteConnection interface {
 	ExpressRouteCircuitPeeringId() *string
 	SetExpressRouteCircuitPeeringId(val *string)
 	ExpressRouteCircuitPeeringIdInput() *string
+	ExpressRouteGatewayBypassEnabled() interface{}
+	SetExpressRouteGatewayBypassEnabled(val interface{})
+	ExpressRouteGatewayBypassEnabledInput() interface{}
 	ExpressRouteGatewayId() *string
 	SetExpressRouteGatewayId(val *string)
 	ExpressRouteGatewayIdInput() *string
@@ -112,6 +115,7 @@ type ExpressRouteConnection interface {
 	PutTimeouts(value *ExpressRouteConnectionTimeouts)
 	ResetAuthorizationKey()
 	ResetEnableInternetSecurity()
+	ResetExpressRouteGatewayBypassEnabled()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -239,6 +243,26 @@ func (j *jsiiProxy_ExpressRouteConnection) ExpressRouteCircuitPeeringIdInput() *
 	_jsii_.Get(
 		j,
 		"expressRouteCircuitPeeringIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExpressRouteConnection) ExpressRouteGatewayBypassEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"expressRouteGatewayBypassEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExpressRouteConnection) ExpressRouteGatewayBypassEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"expressRouteGatewayBypassEnabledInput",
 		&returns,
 	)
 	return returns
@@ -560,6 +584,17 @@ func (j *jsiiProxy_ExpressRouteConnection)SetExpressRouteCircuitPeeringId(val *s
 	_jsii_.Set(
 		j,
 		"expressRouteCircuitPeeringId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ExpressRouteConnection)SetExpressRouteGatewayBypassEnabled(val interface{}) {
+	if err := j.validateSetExpressRouteGatewayBypassEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expressRouteGatewayBypassEnabled",
 		val,
 	)
 }
@@ -946,6 +981,14 @@ func (e *jsiiProxy_ExpressRouteConnection) ResetEnableInternetSecurity() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetEnableInternetSecurity",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExpressRouteConnection) ResetExpressRouteGatewayBypassEnabled() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetExpressRouteGatewayBypassEnabled",
 		nil, // no parameters
 	)
 }

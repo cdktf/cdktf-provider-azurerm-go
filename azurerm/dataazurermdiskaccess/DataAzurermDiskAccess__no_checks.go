@@ -84,10 +84,6 @@ func (j *jsiiProxy_DataAzurermDiskAccess) validateSetResourceGroupNameParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermDiskAccess) validateSetTagsParameters(val *map[string]*string) error {
-	return nil
-}
-
 func validateNewDataAzurermDiskAccessParameters(scope constructs.Construct, id *string, config *DataAzurermDiskAccessConfig) error {
 	return nil
 }

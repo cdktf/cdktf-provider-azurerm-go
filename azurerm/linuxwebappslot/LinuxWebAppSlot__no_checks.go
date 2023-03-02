@@ -56,6 +56,10 @@ func (l *jsiiProxy_LinuxWebAppSlot) validatePutAuthSettingsParameters(value *Lin
 	return nil
 }
 
+func (l *jsiiProxy_LinuxWebAppSlot) validatePutAuthSettingsV2Parameters(value *LinuxWebAppSlotAuthSettingsV2) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxWebAppSlot) validatePutBackupParameters(value *LinuxWebAppSlotBackup) error {
 	return nil
 }

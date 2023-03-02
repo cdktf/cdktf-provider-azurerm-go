@@ -14,6 +14,7 @@ type DataAzurermWindowsWebApp interface {
 	cdktf.TerraformDataSource
 	AppSettings() cdktf.StringMap
 	AuthSettings() DataAzurermWindowsWebAppAuthSettingsList
+	AuthSettingsV2() DataAzurermWindowsWebAppAuthSettingsV2List
 	Backup() DataAzurermWindowsWebAppBackupList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -149,6 +150,16 @@ func (j *jsiiProxy_DataAzurermWindowsWebApp) AuthSettings() DataAzurermWindowsWe
 	_jsii_.Get(
 		j,
 		"authSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermWindowsWebApp) AuthSettingsV2() DataAzurermWindowsWebAppAuthSettingsV2List {
+	var returns DataAzurermWindowsWebAppAuthSettingsV2List
+	_jsii_.Get(
+		j,
+		"authSettingsV2",
 		&returns,
 	)
 	return returns

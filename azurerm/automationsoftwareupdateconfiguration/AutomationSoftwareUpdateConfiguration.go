@@ -36,6 +36,7 @@ type AutomationSoftwareUpdateConfiguration interface {
 	DurationInput() *string
 	ErrorCode() *string
 	ErrorMeesage() *string
+	ErrorMessage() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -261,6 +262,16 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) ErrorMeesage() *string
 	_jsii_.Get(
 		j,
 		"errorMeesage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) ErrorMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"errorMessage",
 		&returns,
 	)
 	return returns

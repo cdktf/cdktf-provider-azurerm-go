@@ -88,6 +88,10 @@ func (j *jsiiProxy_ExpressRouteConnection) validateSetExpressRouteCircuitPeering
 	return nil
 }
 
+func (j *jsiiProxy_ExpressRouteConnection) validateSetExpressRouteGatewayBypassEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRouteConnection) validateSetExpressRouteGatewayIdParameters(val *string) error {
 	return nil
 }

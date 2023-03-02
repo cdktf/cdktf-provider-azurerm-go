@@ -105,6 +105,7 @@ type KustoClusterCustomerManagedKey interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *KustoClusterCustomerManagedKeyTimeouts)
 	ResetId()
+	ResetKeyVersion()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -867,6 +868,14 @@ func (k *jsiiProxy_KustoClusterCustomerManagedKey) ResetId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KustoClusterCustomerManagedKey) ResetKeyVersion() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetKeyVersion",
 		nil, // no parameters
 	)
 }

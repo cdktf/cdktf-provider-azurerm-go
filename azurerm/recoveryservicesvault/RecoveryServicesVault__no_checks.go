@@ -76,6 +76,10 @@ func validateRecoveryServicesVault_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_RecoveryServicesVault) validateSetClassicVmwareReplicationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RecoveryServicesVault) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

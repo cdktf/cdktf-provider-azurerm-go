@@ -56,6 +56,10 @@ func (b *jsiiProxy_BackupPolicyVm) validatePutBackupParameters(value *BackupPoli
 	return nil
 }
 
+func (b *jsiiProxy_BackupPolicyVm) validatePutInstantRestoreResourceGroupParameters(value *BackupPolicyVmInstantRestoreResourceGroup) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupPolicyVm) validatePutRetentionDailyParameters(value *BackupPolicyVmRetentionDaily) error {
 	return nil
 }

@@ -17,6 +17,8 @@ type LinuxWebApp interface {
 	AppSettingsInput() *map[string]*string
 	AuthSettings() LinuxWebAppAuthSettingsOutputReference
 	AuthSettingsInput() *LinuxWebAppAuthSettings
+	AuthSettingsV2() LinuxWebAppAuthSettingsV2OutputReference
+	AuthSettingsV2Input() *LinuxWebAppAuthSettingsV2
 	Backup() LinuxWebAppBackupOutputReference
 	BackupInput() *LinuxWebAppBackup
 	// Experimental.
@@ -158,6 +160,7 @@ type LinuxWebApp interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthSettings(value *LinuxWebAppAuthSettings)
+	PutAuthSettingsV2(value *LinuxWebAppAuthSettingsV2)
 	PutBackup(value *LinuxWebAppBackup)
 	PutConnectionString(value interface{})
 	PutIdentity(value *LinuxWebAppIdentity)
@@ -168,6 +171,7 @@ type LinuxWebApp interface {
 	PutTimeouts(value *LinuxWebAppTimeouts)
 	ResetAppSettings()
 	ResetAuthSettings()
+	ResetAuthSettingsV2()
 	ResetBackup()
 	ResetClientAffinityEnabled()
 	ResetClientCertificateEnabled()
@@ -239,6 +243,26 @@ func (j *jsiiProxy_LinuxWebApp) AuthSettingsInput() *LinuxWebAppAuthSettings {
 	_jsii_.Get(
 		j,
 		"authSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxWebApp) AuthSettingsV2() LinuxWebAppAuthSettingsV2OutputReference {
+	var returns LinuxWebAppAuthSettingsV2OutputReference
+	_jsii_.Get(
+		j,
+		"authSettingsV2",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxWebApp) AuthSettingsV2Input() *LinuxWebAppAuthSettingsV2 {
+	var returns *LinuxWebAppAuthSettingsV2
+	_jsii_.Get(
+		j,
+		"authSettingsV2Input",
 		&returns,
 	)
 	return returns
@@ -1492,6 +1516,17 @@ func (l *jsiiProxy_LinuxWebApp) PutAuthSettings(value *LinuxWebAppAuthSettings) 
 	)
 }
 
+func (l *jsiiProxy_LinuxWebApp) PutAuthSettingsV2(value *LinuxWebAppAuthSettingsV2) {
+	if err := l.validatePutAuthSettingsV2Parameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putAuthSettingsV2",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LinuxWebApp) PutBackup(value *LinuxWebAppBackup) {
 	if err := l.validatePutBackupParameters(value); err != nil {
 		panic(err)
@@ -1592,6 +1627,14 @@ func (l *jsiiProxy_LinuxWebApp) ResetAuthSettings() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetAuthSettings",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxWebApp) ResetAuthSettingsV2() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAuthSettingsV2",
 		nil, // no parameters
 	)
 }

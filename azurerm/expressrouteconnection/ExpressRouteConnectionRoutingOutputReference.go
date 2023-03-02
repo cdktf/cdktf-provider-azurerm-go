@@ -30,8 +30,14 @@ type ExpressRouteConnectionRoutingOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InboundRouteMapId() *string
+	SetInboundRouteMapId(val *string)
+	InboundRouteMapIdInput() *string
 	InternalValue() *ExpressRouteConnectionRouting
 	SetInternalValue(val *ExpressRouteConnectionRouting)
+	OutboundRouteMapId() *string
+	SetOutboundRouteMapId(val *string)
+	OutboundRouteMapIdInput() *string
 	PropagatedRouteTable() ExpressRouteConnectionRoutingPropagatedRouteTableOutputReference
 	PropagatedRouteTableInput() *ExpressRouteConnectionRoutingPropagatedRouteTable
 	// Experimental.
@@ -68,6 +74,8 @@ type ExpressRouteConnectionRoutingOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPropagatedRouteTable(value *ExpressRouteConnectionRoutingPropagatedRouteTable)
 	ResetAssociatedRouteTableId()
+	ResetInboundRouteMapId()
+	ResetOutboundRouteMapId()
 	ResetPropagatedRouteTable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -144,11 +152,51 @@ func (j *jsiiProxy_ExpressRouteConnectionRoutingOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ExpressRouteConnectionRoutingOutputReference) InboundRouteMapId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inboundRouteMapId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExpressRouteConnectionRoutingOutputReference) InboundRouteMapIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inboundRouteMapIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ExpressRouteConnectionRoutingOutputReference) InternalValue() *ExpressRouteConnectionRouting {
 	var returns *ExpressRouteConnectionRouting
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExpressRouteConnectionRoutingOutputReference) OutboundRouteMapId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outboundRouteMapId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExpressRouteConnectionRoutingOutputReference) OutboundRouteMapIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outboundRouteMapIdInput",
 		&returns,
 	)
 	return returns
@@ -255,6 +303,17 @@ func (j *jsiiProxy_ExpressRouteConnectionRoutingOutputReference)SetComplexObject
 	)
 }
 
+func (j *jsiiProxy_ExpressRouteConnectionRoutingOutputReference)SetInboundRouteMapId(val *string) {
+	if err := j.validateSetInboundRouteMapIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inboundRouteMapId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ExpressRouteConnectionRoutingOutputReference)SetInternalValue(val *ExpressRouteConnectionRouting) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -262,6 +321,17 @@ func (j *jsiiProxy_ExpressRouteConnectionRoutingOutputReference)SetInternalValue
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ExpressRouteConnectionRoutingOutputReference)SetOutboundRouteMapId(val *string) {
+	if err := j.validateSetOutboundRouteMapIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"outboundRouteMapId",
 		val,
 	)
 }
@@ -489,6 +559,22 @@ func (e *jsiiProxy_ExpressRouteConnectionRoutingOutputReference) ResetAssociated
 	_jsii_.InvokeVoid(
 		e,
 		"resetAssociatedRouteTableId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExpressRouteConnectionRoutingOutputReference) ResetInboundRouteMapId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetInboundRouteMapId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExpressRouteConnectionRoutingOutputReference) ResetOutboundRouteMapId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetOutboundRouteMapId",
 		nil, // no parameters
 	)
 }
