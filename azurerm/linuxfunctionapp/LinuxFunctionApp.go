@@ -17,6 +17,8 @@ type LinuxFunctionApp interface {
 	AppSettingsInput() *map[string]*string
 	AuthSettings() LinuxFunctionAppAuthSettingsOutputReference
 	AuthSettingsInput() *LinuxFunctionAppAuthSettings
+	AuthSettingsV2() LinuxFunctionAppAuthSettingsV2OutputReference
+	AuthSettingsV2Input() *LinuxFunctionAppAuthSettingsV2
 	Backup() LinuxFunctionAppBackupOutputReference
 	BackupInput() *LinuxFunctionAppBackup
 	BuiltinLoggingEnabled() interface{}
@@ -174,6 +176,7 @@ type LinuxFunctionApp interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthSettings(value *LinuxFunctionAppAuthSettings)
+	PutAuthSettingsV2(value *LinuxFunctionAppAuthSettingsV2)
 	PutBackup(value *LinuxFunctionAppBackup)
 	PutConnectionString(value interface{})
 	PutIdentity(value *LinuxFunctionAppIdentity)
@@ -183,6 +186,7 @@ type LinuxFunctionApp interface {
 	PutTimeouts(value *LinuxFunctionAppTimeouts)
 	ResetAppSettings()
 	ResetAuthSettings()
+	ResetAuthSettingsV2()
 	ResetBackup()
 	ResetBuiltinLoggingEnabled()
 	ResetClientCertificateEnabled()
@@ -259,6 +263,26 @@ func (j *jsiiProxy_LinuxFunctionApp) AuthSettingsInput() *LinuxFunctionAppAuthSe
 	_jsii_.Get(
 		j,
 		"authSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxFunctionApp) AuthSettingsV2() LinuxFunctionAppAuthSettingsV2OutputReference {
+	var returns LinuxFunctionAppAuthSettingsV2OutputReference
+	_jsii_.Get(
+		j,
+		"authSettingsV2",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxFunctionApp) AuthSettingsV2Input() *LinuxFunctionAppAuthSettingsV2 {
+	var returns *LinuxFunctionAppAuthSettingsV2
+	_jsii_.Get(
+		j,
+		"authSettingsV2Input",
 		&returns,
 	)
 	return returns
@@ -1678,6 +1702,17 @@ func (l *jsiiProxy_LinuxFunctionApp) PutAuthSettings(value *LinuxFunctionAppAuth
 	)
 }
 
+func (l *jsiiProxy_LinuxFunctionApp) PutAuthSettingsV2(value *LinuxFunctionAppAuthSettingsV2) {
+	if err := l.validatePutAuthSettingsV2Parameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putAuthSettingsV2",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LinuxFunctionApp) PutBackup(value *LinuxFunctionAppBackup) {
 	if err := l.validatePutBackupParameters(value); err != nil {
 		panic(err)
@@ -1767,6 +1802,14 @@ func (l *jsiiProxy_LinuxFunctionApp) ResetAuthSettings() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetAuthSettings",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxFunctionApp) ResetAuthSettingsV2() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAuthSettingsV2",
 		nil, // no parameters
 	)
 }

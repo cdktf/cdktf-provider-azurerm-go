@@ -44,6 +44,10 @@ func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCbcsOutputReference) vali
 	return nil
 }
 
+func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCbcsOutputReference) validatePutClearKeyEncryptionParameters(value *MediaStreamingPolicyCommonEncryptionCbcsClearKeyEncryption) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCbcsOutputReference) validatePutDefaultContentKeyParameters(value *MediaStreamingPolicyCommonEncryptionCbcsDefaultContentKey) error {
 	return nil
 }

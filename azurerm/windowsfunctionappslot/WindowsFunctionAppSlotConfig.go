@@ -39,6 +39,10 @@ type WindowsFunctionAppSlotConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_function_app_slot#auth_settings WindowsFunctionAppSlot#auth_settings}
 	AuthSettings *WindowsFunctionAppSlotAuthSettings `field:"optional" json:"authSettings" yaml:"authSettings"`
+	// auth_settings_v2 block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_function_app_slot#auth_settings_v2 WindowsFunctionAppSlot#auth_settings_v2}
+	AuthSettingsV2 *WindowsFunctionAppSlotAuthSettingsV2 `field:"optional" json:"authSettingsV2" yaml:"authSettingsV2"`
 	// backup block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_function_app_slot#backup WindowsFunctionAppSlot#backup}

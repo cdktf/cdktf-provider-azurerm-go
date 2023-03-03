@@ -44,6 +44,18 @@ func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) vali
 	return nil
 }
 
+func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) validatePutClearKeyEncryptionParameters(value *MediaStreamingPolicyCommonEncryptionCencClearKeyEncryption) error {
+	return nil
+}
+
+func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) validatePutClearTrackParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) validatePutContentKeyToTrackMappingParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) validatePutDefaultContentKeyParameters(value *MediaStreamingPolicyCommonEncryptionCencDefaultContentKey) error {
 	return nil
 }

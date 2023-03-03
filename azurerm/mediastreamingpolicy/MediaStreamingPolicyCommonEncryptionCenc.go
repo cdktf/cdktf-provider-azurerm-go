@@ -2,6 +2,18 @@ package mediastreamingpolicy
 
 
 type MediaStreamingPolicyCommonEncryptionCenc struct {
+	// clear_key_encryption block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_streaming_policy#clear_key_encryption MediaStreamingPolicy#clear_key_encryption}
+	ClearKeyEncryption *MediaStreamingPolicyCommonEncryptionCencClearKeyEncryption `field:"optional" json:"clearKeyEncryption" yaml:"clearKeyEncryption"`
+	// clear_track block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_streaming_policy#clear_track MediaStreamingPolicy#clear_track}
+	ClearTrack interface{} `field:"optional" json:"clearTrack" yaml:"clearTrack"`
+	// content_key_to_track_mapping block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_streaming_policy#content_key_to_track_mapping MediaStreamingPolicy#content_key_to_track_mapping}
+	ContentKeyToTrackMapping interface{} `field:"optional" json:"contentKeyToTrackMapping" yaml:"contentKeyToTrackMapping"`
 	// default_content_key block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_streaming_policy#default_content_key MediaStreamingPolicy#default_content_key}

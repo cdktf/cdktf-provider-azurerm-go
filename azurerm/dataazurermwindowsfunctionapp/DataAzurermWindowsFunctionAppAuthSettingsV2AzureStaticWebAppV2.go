@@ -1,0 +1,6 @@
+package dataazurermwindowsfunctionapp
+
+
+type DataAzurermWindowsFunctionAppAuthSettingsV2AzureStaticWebAppV2 struct {
+}
+

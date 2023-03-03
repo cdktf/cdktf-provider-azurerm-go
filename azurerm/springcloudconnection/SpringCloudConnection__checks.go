@@ -122,6 +122,17 @@ func (s *jsiiProxy_SpringCloudConnection) validatePutAuthenticationParameters(va
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudConnection) validatePutSecretStoreParameters(value *SpringCloudConnectionSecretStore) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudConnection) validatePutTimeoutsParameters(value *SpringCloudConnectionTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

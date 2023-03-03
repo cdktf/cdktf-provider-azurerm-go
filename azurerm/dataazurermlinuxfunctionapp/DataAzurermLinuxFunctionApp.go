@@ -14,6 +14,7 @@ type DataAzurermLinuxFunctionApp interface {
 	cdktf.TerraformDataSource
 	AppSettings() cdktf.StringMap
 	AuthSettings() DataAzurermLinuxFunctionAppAuthSettingsList
+	AuthSettingsV2() DataAzurermLinuxFunctionAppAuthSettingsV2List
 	Backup() DataAzurermLinuxFunctionAppBackupList
 	BuiltinLoggingEnabled() cdktf.IResolvable
 	// Experimental.
@@ -154,6 +155,16 @@ func (j *jsiiProxy_DataAzurermLinuxFunctionApp) AuthSettings() DataAzurermLinuxF
 	_jsii_.Get(
 		j,
 		"authSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLinuxFunctionApp) AuthSettingsV2() DataAzurermLinuxFunctionAppAuthSettingsV2List {
+	var returns DataAzurermLinuxFunctionAppAuthSettingsV2List
+	_jsii_.Get(
+		j,
+		"authSettingsV2",
 		&returns,
 	)
 	return returns

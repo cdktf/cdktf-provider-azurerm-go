@@ -2,6 +2,8 @@ package expressroutecircuitpeering
 
 
 type ExpressRouteCircuitPeeringIpv6MicrosoftPeering struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_circuit_peering#advertised_communities ExpressRouteCircuitPeering#advertised_communities}.
+	AdvertisedCommunities *[]*string `field:"optional" json:"advertisedCommunities" yaml:"advertisedCommunities"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_circuit_peering#advertised_public_prefixes ExpressRouteCircuitPeering#advertised_public_prefixes}.
 	AdvertisedPublicPrefixes *[]*string `field:"optional" json:"advertisedPublicPrefixes" yaml:"advertisedPublicPrefixes"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_circuit_peering#customer_asn ExpressRouteCircuitPeering#customer_asn}.

@@ -52,6 +52,10 @@ func (k *jsiiProxy_KeyVaultKey) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (k *jsiiProxy_KeyVaultKey) validatePutRotationPolicyParameters(value *KeyVaultKeyRotationPolicy) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultKey) validatePutTimeoutsParameters(value *KeyVaultKeyTimeouts) error {
 	return nil
 }

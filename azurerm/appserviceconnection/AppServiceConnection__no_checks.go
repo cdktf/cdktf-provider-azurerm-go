@@ -56,6 +56,10 @@ func (a *jsiiProxy_AppServiceConnection) validatePutAuthenticationParameters(val
 	return nil
 }
 
+func (a *jsiiProxy_AppServiceConnection) validatePutSecretStoreParameters(value *AppServiceConnectionSecretStore) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppServiceConnection) validatePutTimeoutsParameters(value *AppServiceConnectionTimeouts) error {
 	return nil
 }

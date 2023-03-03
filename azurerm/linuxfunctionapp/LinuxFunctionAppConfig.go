@@ -43,6 +43,10 @@ type LinuxFunctionAppConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app#auth_settings LinuxFunctionApp#auth_settings}
 	AuthSettings *LinuxFunctionAppAuthSettings `field:"optional" json:"authSettings" yaml:"authSettings"`
+	// auth_settings_v2 block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app#auth_settings_v2 LinuxFunctionApp#auth_settings_v2}
+	AuthSettingsV2 *LinuxFunctionAppAuthSettingsV2 `field:"optional" json:"authSettingsV2" yaml:"authSettingsV2"`
 	// backup block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app#backup LinuxFunctionApp#backup}

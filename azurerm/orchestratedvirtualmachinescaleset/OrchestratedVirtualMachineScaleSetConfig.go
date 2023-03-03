@@ -90,6 +90,10 @@ type OrchestratedVirtualMachineScaleSetConfig struct {
 	Plan *OrchestratedVirtualMachineScaleSetPlan `field:"optional" json:"plan" yaml:"plan"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/orchestrated_virtual_machine_scale_set#priority OrchestratedVirtualMachineScaleSet#priority}.
 	Priority *string `field:"optional" json:"priority" yaml:"priority"`
+	// priority_mix block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/orchestrated_virtual_machine_scale_set#priority_mix OrchestratedVirtualMachineScaleSet#priority_mix}
+	PriorityMix *OrchestratedVirtualMachineScaleSetPriorityMix `field:"optional" json:"priorityMix" yaml:"priorityMix"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/orchestrated_virtual_machine_scale_set#proximity_placement_group_id OrchestratedVirtualMachineScaleSet#proximity_placement_group_id}.
 	ProximityPlacementGroupId *string `field:"optional" json:"proximityPlacementGroupId" yaml:"proximityPlacementGroupId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/orchestrated_virtual_machine_scale_set#single_placement_group OrchestratedVirtualMachineScaleSet#single_placement_group}.

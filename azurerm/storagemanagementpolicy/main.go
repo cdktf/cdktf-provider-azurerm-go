@@ -84,6 +84,8 @@ func init() {
 		"@cdktf/provider-azurerm.storageManagementPolicy.StorageManagementPolicyRuleActionsBaseBlobOutputReference",
 		reflect.TypeOf((*StorageManagementPolicyRuleActionsBaseBlobOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "autoTierToHotFromCoolEnabled", GoGetter: "AutoTierToHotFromCoolEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "autoTierToHotFromCoolEnabledInput", GoGetter: "AutoTierToHotFromCoolEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,6 +109,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAutoTierToHotFromCoolEnabled", GoMethod: "ResetAutoTierToHotFromCoolEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeleteAfterDaysSinceCreationGreaterThan", GoMethod: "ResetDeleteAfterDaysSinceCreationGreaterThan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeleteAfterDaysSinceLastAccessTimeGreaterThan", GoMethod: "ResetDeleteAfterDaysSinceLastAccessTimeGreaterThan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeleteAfterDaysSinceModificationGreaterThan", GoMethod: "ResetDeleteAfterDaysSinceModificationGreaterThan"},

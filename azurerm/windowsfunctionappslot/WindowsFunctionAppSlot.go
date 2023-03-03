@@ -17,6 +17,8 @@ type WindowsFunctionAppSlot interface {
 	AppSettingsInput() *map[string]*string
 	AuthSettings() WindowsFunctionAppSlotAuthSettingsOutputReference
 	AuthSettingsInput() *WindowsFunctionAppSlotAuthSettings
+	AuthSettingsV2() WindowsFunctionAppSlotAuthSettingsV2OutputReference
+	AuthSettingsV2Input() *WindowsFunctionAppSlotAuthSettingsV2
 	Backup() WindowsFunctionAppSlotBackupOutputReference
 	BackupInput() *WindowsFunctionAppSlotBackup
 	BuiltinLoggingEnabled() interface{}
@@ -169,6 +171,7 @@ type WindowsFunctionAppSlot interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthSettings(value *WindowsFunctionAppSlotAuthSettings)
+	PutAuthSettingsV2(value *WindowsFunctionAppSlotAuthSettingsV2)
 	PutBackup(value *WindowsFunctionAppSlotBackup)
 	PutConnectionString(value interface{})
 	PutIdentity(value *WindowsFunctionAppSlotIdentity)
@@ -177,6 +180,7 @@ type WindowsFunctionAppSlot interface {
 	PutTimeouts(value *WindowsFunctionAppSlotTimeouts)
 	ResetAppSettings()
 	ResetAuthSettings()
+	ResetAuthSettingsV2()
 	ResetBackup()
 	ResetBuiltinLoggingEnabled()
 	ResetClientCertificateEnabled()
@@ -253,6 +257,26 @@ func (j *jsiiProxy_WindowsFunctionAppSlot) AuthSettingsInput() *WindowsFunctionA
 	_jsii_.Get(
 		j,
 		"authSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsFunctionAppSlot) AuthSettingsV2() WindowsFunctionAppSlotAuthSettingsV2OutputReference {
+	var returns WindowsFunctionAppSlotAuthSettingsV2OutputReference
+	_jsii_.Get(
+		j,
+		"authSettingsV2",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsFunctionAppSlot) AuthSettingsV2Input() *WindowsFunctionAppSlotAuthSettingsV2 {
+	var returns *WindowsFunctionAppSlotAuthSettingsV2
+	_jsii_.Get(
+		j,
+		"authSettingsV2Input",
 		&returns,
 	)
 	return returns
@@ -1621,6 +1645,17 @@ func (w *jsiiProxy_WindowsFunctionAppSlot) PutAuthSettings(value *WindowsFunctio
 	)
 }
 
+func (w *jsiiProxy_WindowsFunctionAppSlot) PutAuthSettingsV2(value *WindowsFunctionAppSlotAuthSettingsV2) {
+	if err := w.validatePutAuthSettingsV2Parameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putAuthSettingsV2",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WindowsFunctionAppSlot) PutBackup(value *WindowsFunctionAppSlotBackup) {
 	if err := w.validatePutBackupParameters(value); err != nil {
 		panic(err)
@@ -1699,6 +1734,14 @@ func (w *jsiiProxy_WindowsFunctionAppSlot) ResetAuthSettings() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetAuthSettings",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsFunctionAppSlot) ResetAuthSettingsV2() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAuthSettingsV2",
 		nil, // no parameters
 	)
 }

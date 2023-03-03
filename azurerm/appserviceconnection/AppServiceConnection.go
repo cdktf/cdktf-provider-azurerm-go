@@ -66,6 +66,8 @@ type AppServiceConnection interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SecretStore() AppServiceConnectionSecretStoreOutputReference
+	SecretStoreInput() *AppServiceConnectionSecretStore
 	TargetResourceId() *string
 	SetTargetResourceId(val *string)
 	TargetResourceIdInput() *string
@@ -106,12 +108,14 @@ type AppServiceConnection interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthentication(value *AppServiceConnectionAuthentication)
+	PutSecretStore(value *AppServiceConnectionSecretStore)
 	PutTimeouts(value *AppServiceConnectionTimeouts)
 	ResetClientType()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSecretStore()
 	ResetTimeouts()
 	ResetVnetSolution()
 	SynthesizeAttributes() *map[string]interface{}
@@ -354,6 +358,26 @@ func (j *jsiiProxy_AppServiceConnection) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppServiceConnection) SecretStore() AppServiceConnectionSecretStoreOutputReference {
+	var returns AppServiceConnectionSecretStoreOutputReference
+	_jsii_.Get(
+		j,
+		"secretStore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppServiceConnection) SecretStoreInput() *AppServiceConnectionSecretStore {
+	var returns *AppServiceConnectionSecretStore
+	_jsii_.Get(
+		j,
+		"secretStoreInput",
 		&returns,
 	)
 	return returns
@@ -887,6 +911,17 @@ func (a *jsiiProxy_AppServiceConnection) PutAuthentication(value *AppServiceConn
 	)
 }
 
+func (a *jsiiProxy_AppServiceConnection) PutSecretStore(value *AppServiceConnectionSecretStore) {
+	if err := a.validatePutSecretStoreParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putSecretStore",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppServiceConnection) PutTimeouts(value *AppServiceConnectionTimeouts) {
 	if err := a.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -918,6 +953,14 @@ func (a *jsiiProxy_AppServiceConnection) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppServiceConnection) ResetSecretStore() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSecretStore",
 		nil, // no parameters
 	)
 }

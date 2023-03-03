@@ -79,6 +79,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "platformFaultDomainCountInput", GoGetter: "PlatformFaultDomainCountInput"},
 			_jsii_.MemberProperty{JsiiProperty: "priority", GoGetter: "Priority"},
 			_jsii_.MemberProperty{JsiiProperty: "priorityInput", GoGetter: "PriorityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "priorityMix", GoGetter: "PriorityMix"},
+			_jsii_.MemberProperty{JsiiProperty: "priorityMixInput", GoGetter: "PriorityMixInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "proximityPlacementGroupId", GoGetter: "ProximityPlacementGroupId"},
@@ -93,6 +95,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOsDisk", GoMethod: "PutOsDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "putOsProfile", GoMethod: "PutOsProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "putPlan", GoMethod: "PutPlan"},
+			_jsii_.MemberMethod{JsiiMethod: "putPriorityMix", GoMethod: "PutPriorityMix"},
 			_jsii_.MemberMethod{JsiiMethod: "putSourceImageReference", GoMethod: "PutSourceImageReference"},
 			_jsii_.MemberMethod{JsiiMethod: "putTerminationNotification", GoMethod: "PutTerminationNotification"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
@@ -118,6 +121,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPlan", GoMethod: "ResetPlan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPriority", GoMethod: "ResetPriority"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPriorityMix", GoMethod: "ResetPriorityMix"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProximityPlacementGroupId", GoMethod: "ResetProximityPlacementGroupId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSinglePlacementGroup", GoMethod: "ResetSinglePlacementGroup"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkuName", GoMethod: "ResetSkuName"},
@@ -1512,6 +1516,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OrchestratedVirtualMachineScaleSetPlanOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.orchestratedVirtualMachineScaleSet.OrchestratedVirtualMachineScaleSetPriorityMix",
+		reflect.TypeOf((*OrchestratedVirtualMachineScaleSetPriorityMix)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.orchestratedVirtualMachineScaleSet.OrchestratedVirtualMachineScaleSetPriorityMixOutputReference",
+		reflect.TypeOf((*OrchestratedVirtualMachineScaleSetPriorityMixOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "baseRegularCount", GoGetter: "BaseRegularCount"},
+			_jsii_.MemberProperty{JsiiProperty: "baseRegularCountInput", GoGetter: "BaseRegularCountInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "regularPercentageAboveBase", GoGetter: "RegularPercentageAboveBase"},
+			_jsii_.MemberProperty{JsiiProperty: "regularPercentageAboveBaseInput", GoGetter: "RegularPercentageAboveBaseInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBaseRegularCount", GoMethod: "ResetBaseRegularCount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRegularPercentageAboveBase", GoMethod: "ResetRegularPercentageAboveBase"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OrchestratedVirtualMachineScaleSetPriorityMixOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

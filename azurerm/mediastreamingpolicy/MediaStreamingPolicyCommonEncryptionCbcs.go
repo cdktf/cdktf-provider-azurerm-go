@@ -2,6 +2,10 @@ package mediastreamingpolicy
 
 
 type MediaStreamingPolicyCommonEncryptionCbcs struct {
+	// clear_key_encryption block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_streaming_policy#clear_key_encryption MediaStreamingPolicy#clear_key_encryption}
+	ClearKeyEncryption *MediaStreamingPolicyCommonEncryptionCbcsClearKeyEncryption `field:"optional" json:"clearKeyEncryption" yaml:"clearKeyEncryption"`
 	// default_content_key block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_streaming_policy#default_content_key MediaStreamingPolicy#default_content_key}

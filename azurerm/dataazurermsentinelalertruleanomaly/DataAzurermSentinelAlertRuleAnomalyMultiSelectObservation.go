@@ -1,0 +1,6 @@
+package dataazurermsentinelalertruleanomaly
+
+
+type DataAzurermSentinelAlertRuleAnomalyMultiSelectObservation struct {
+}
+

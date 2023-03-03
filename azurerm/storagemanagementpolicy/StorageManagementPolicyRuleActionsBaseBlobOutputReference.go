@@ -10,6 +10,9 @@ import (
 
 type StorageManagementPolicyRuleActionsBaseBlobOutputReference interface {
 	cdktf.ComplexObject
+	AutoTierToHotFromCoolEnabled() interface{}
+	SetAutoTierToHotFromCoolEnabled(val interface{})
+	AutoTierToHotFromCoolEnabledInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -91,6 +94,7 @@ type StorageManagementPolicyRuleActionsBaseBlobOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAutoTierToHotFromCoolEnabled()
 	ResetDeleteAfterDaysSinceCreationGreaterThan()
 	ResetDeleteAfterDaysSinceLastAccessTimeGreaterThan()
 	ResetDeleteAfterDaysSinceModificationGreaterThan()
@@ -114,6 +118,26 @@ type StorageManagementPolicyRuleActionsBaseBlobOutputReference interface {
 // The jsii proxy struct for StorageManagementPolicyRuleActionsBaseBlobOutputReference
 type jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) AutoTierToHotFromCoolEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoTierToHotFromCoolEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) AutoTierToHotFromCoolEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoTierToHotFromCoolEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) ComplexObjectIndex() interface{} {
@@ -411,6 +435,17 @@ func NewStorageManagementPolicyRuleActionsBaseBlobOutputReference_Override(s Sto
 		"@cdktf/provider-azurerm.storageManagementPolicy.StorageManagementPolicyRuleActionsBaseBlobOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
+	)
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference)SetAutoTierToHotFromCoolEnabled(val interface{}) {
+	if err := j.validateSetAutoTierToHotFromCoolEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoTierToHotFromCoolEnabled",
+		val,
 	)
 }
 
@@ -763,6 +798,14 @@ func (s *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) In
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) ResetAutoTierToHotFromCoolEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAutoTierToHotFromCoolEnabled",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) ResetDeleteAfterDaysSinceCreationGreaterThan() {

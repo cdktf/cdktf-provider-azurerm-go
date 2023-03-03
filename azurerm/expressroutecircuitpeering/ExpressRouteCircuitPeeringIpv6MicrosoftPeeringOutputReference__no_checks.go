@@ -48,6 +48,10 @@ func (e *jsiiProxy_ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference) validateSetAdvertisedCommunitiesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference) validateSetAdvertisedPublicPrefixesParameters(val *[]*string) error {
 	return nil
 }

@@ -1,0 +1,74 @@
+//go:build no_runtime_type_checking
+
+package sentinelalertruleanomalybuiltin
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInMultiSelectObservationOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInMultiSelectObservationOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInMultiSelectObservationOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInMultiSelectObservationOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInMultiSelectObservationOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInMultiSelectObservationOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInMultiSelectObservationOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInMultiSelectObservationOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInMultiSelectObservationOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInMultiSelectObservationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAlertRuleAnomalyBuiltInMultiSelectObservationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_SentinelAlertRuleAnomalyBuiltInMultiSelectObservationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SentinelAlertRuleAnomalyBuiltInMultiSelectObservationOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_SentinelAlertRuleAnomalyBuiltInMultiSelectObservationOutputReference) validateSetInternalValueParameters(val *SentinelAlertRuleAnomalyBuiltInMultiSelectObservation) error {
+	return nil
+}
+
+func (j *jsiiProxy_SentinelAlertRuleAnomalyBuiltInMultiSelectObservationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SentinelAlertRuleAnomalyBuiltInMultiSelectObservationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewSentinelAlertRuleAnomalyBuiltInMultiSelectObservationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+	return nil
+}
+

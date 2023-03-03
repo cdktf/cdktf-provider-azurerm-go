@@ -17,6 +17,8 @@ type WindowsFunctionApp interface {
 	AppSettingsInput() *map[string]*string
 	AuthSettings() WindowsFunctionAppAuthSettingsOutputReference
 	AuthSettingsInput() *WindowsFunctionAppAuthSettings
+	AuthSettingsV2() WindowsFunctionAppAuthSettingsV2OutputReference
+	AuthSettingsV2Input() *WindowsFunctionAppAuthSettingsV2
 	Backup() WindowsFunctionAppBackupOutputReference
 	BackupInput() *WindowsFunctionAppBackup
 	BuiltinLoggingEnabled() interface{}
@@ -174,6 +176,7 @@ type WindowsFunctionApp interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthSettings(value *WindowsFunctionAppAuthSettings)
+	PutAuthSettingsV2(value *WindowsFunctionAppAuthSettingsV2)
 	PutBackup(value *WindowsFunctionAppBackup)
 	PutConnectionString(value interface{})
 	PutIdentity(value *WindowsFunctionAppIdentity)
@@ -183,6 +186,7 @@ type WindowsFunctionApp interface {
 	PutTimeouts(value *WindowsFunctionAppTimeouts)
 	ResetAppSettings()
 	ResetAuthSettings()
+	ResetAuthSettingsV2()
 	ResetBackup()
 	ResetBuiltinLoggingEnabled()
 	ResetClientCertificateEnabled()
@@ -259,6 +263,26 @@ func (j *jsiiProxy_WindowsFunctionApp) AuthSettingsInput() *WindowsFunctionAppAu
 	_jsii_.Get(
 		j,
 		"authSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsFunctionApp) AuthSettingsV2() WindowsFunctionAppAuthSettingsV2OutputReference {
+	var returns WindowsFunctionAppAuthSettingsV2OutputReference
+	_jsii_.Get(
+		j,
+		"authSettingsV2",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsFunctionApp) AuthSettingsV2Input() *WindowsFunctionAppAuthSettingsV2 {
+	var returns *WindowsFunctionAppAuthSettingsV2
+	_jsii_.Get(
+		j,
+		"authSettingsV2Input",
 		&returns,
 	)
 	return returns
@@ -1678,6 +1702,17 @@ func (w *jsiiProxy_WindowsFunctionApp) PutAuthSettings(value *WindowsFunctionApp
 	)
 }
 
+func (w *jsiiProxy_WindowsFunctionApp) PutAuthSettingsV2(value *WindowsFunctionAppAuthSettingsV2) {
+	if err := w.validatePutAuthSettingsV2Parameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putAuthSettingsV2",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WindowsFunctionApp) PutBackup(value *WindowsFunctionAppBackup) {
 	if err := w.validatePutBackupParameters(value); err != nil {
 		panic(err)
@@ -1767,6 +1802,14 @@ func (w *jsiiProxy_WindowsFunctionApp) ResetAuthSettings() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetAuthSettings",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsFunctionApp) ResetAuthSettingsV2() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAuthSettingsV2",
 		nil, // no parameters
 	)
 }

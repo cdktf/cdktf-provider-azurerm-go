@@ -43,6 +43,10 @@ type WindowsFunctionAppConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_function_app#auth_settings WindowsFunctionApp#auth_settings}
 	AuthSettings *WindowsFunctionAppAuthSettings `field:"optional" json:"authSettings" yaml:"authSettings"`
+	// auth_settings_v2 block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_function_app#auth_settings_v2 WindowsFunctionApp#auth_settings_v2}
+	AuthSettingsV2 *WindowsFunctionAppAuthSettingsV2 `field:"optional" json:"authSettingsV2" yaml:"authSettingsV2"`
 	// backup block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_function_app#backup WindowsFunctionApp#backup}

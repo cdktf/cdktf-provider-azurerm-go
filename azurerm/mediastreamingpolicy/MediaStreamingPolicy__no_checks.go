@@ -60,6 +60,10 @@ func (m *jsiiProxy_MediaStreamingPolicy) validatePutCommonEncryptionCencParamete
 	return nil
 }
 
+func (m *jsiiProxy_MediaStreamingPolicy) validatePutEnvelopeEncryptionParameters(value *MediaStreamingPolicyEnvelopeEncryption) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaStreamingPolicy) validatePutNoEncryptionEnabledProtocolsParameters(value *MediaStreamingPolicyNoEncryptionEnabledProtocols) error {
 	return nil
 }

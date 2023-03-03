@@ -92,6 +92,10 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) validatePutPlanParameters
 	return nil
 }
 
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) validatePutPriorityMixParameters(value *OrchestratedVirtualMachineScaleSetPriorityMix) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) validatePutSourceImageReferenceParameters(value *OrchestratedVirtualMachineScaleSetSourceImageReference) error {
 	return nil
 }

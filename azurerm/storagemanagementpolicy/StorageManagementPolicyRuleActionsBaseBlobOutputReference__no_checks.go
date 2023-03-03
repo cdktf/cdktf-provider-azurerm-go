@@ -48,6 +48,10 @@ func (s *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) validateSetAutoTierToHotFromCoolEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

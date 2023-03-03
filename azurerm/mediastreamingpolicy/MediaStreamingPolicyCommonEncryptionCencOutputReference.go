@@ -10,6 +10,10 @@ import (
 
 type MediaStreamingPolicyCommonEncryptionCencOutputReference interface {
 	cdktf.ComplexObject
+	ClearKeyEncryption() MediaStreamingPolicyCommonEncryptionCencClearKeyEncryptionOutputReference
+	ClearKeyEncryptionInput() *MediaStreamingPolicyCommonEncryptionCencClearKeyEncryption
+	ClearTrack() MediaStreamingPolicyCommonEncryptionCencClearTrackList
+	ClearTrackInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -20,6 +24,8 @@ type MediaStreamingPolicyCommonEncryptionCencOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ContentKeyToTrackMapping() MediaStreamingPolicyCommonEncryptionCencContentKeyToTrackMappingList
+	ContentKeyToTrackMappingInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -70,9 +76,15 @@ type MediaStreamingPolicyCommonEncryptionCencOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutClearKeyEncryption(value *MediaStreamingPolicyCommonEncryptionCencClearKeyEncryption)
+	PutClearTrack(value interface{})
+	PutContentKeyToTrackMapping(value interface{})
 	PutDefaultContentKey(value *MediaStreamingPolicyCommonEncryptionCencDefaultContentKey)
 	PutDrmPlayready(value *MediaStreamingPolicyCommonEncryptionCencDrmPlayready)
 	PutEnabledProtocols(value *MediaStreamingPolicyCommonEncryptionCencEnabledProtocols)
+	ResetClearKeyEncryption()
+	ResetClearTrack()
+	ResetContentKeyToTrackMapping()
 	ResetDefaultContentKey()
 	ResetDrmPlayready()
 	ResetDrmWidevineCustomLicenseAcquisitionUrlTemplate()
@@ -92,6 +104,46 @@ type jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
+func (j *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) ClearKeyEncryption() MediaStreamingPolicyCommonEncryptionCencClearKeyEncryptionOutputReference {
+	var returns MediaStreamingPolicyCommonEncryptionCencClearKeyEncryptionOutputReference
+	_jsii_.Get(
+		j,
+		"clearKeyEncryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) ClearKeyEncryptionInput() *MediaStreamingPolicyCommonEncryptionCencClearKeyEncryption {
+	var returns *MediaStreamingPolicyCommonEncryptionCencClearKeyEncryption
+	_jsii_.Get(
+		j,
+		"clearKeyEncryptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) ClearTrack() MediaStreamingPolicyCommonEncryptionCencClearTrackList {
+	var returns MediaStreamingPolicyCommonEncryptionCencClearTrackList
+	_jsii_.Get(
+		j,
+		"clearTrack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) ClearTrackInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clearTrackInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -107,6 +159,26 @@ func (j *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) Comp
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) ContentKeyToTrackMapping() MediaStreamingPolicyCommonEncryptionCencContentKeyToTrackMappingList {
+	var returns MediaStreamingPolicyCommonEncryptionCencContentKeyToTrackMappingList
+	_jsii_.Get(
+		j,
+		"contentKeyToTrackMapping",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) ContentKeyToTrackMappingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"contentKeyToTrackMappingInput",
 		&returns,
 	)
 	return returns
@@ -522,6 +594,39 @@ func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) Inte
 	return returns
 }
 
+func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) PutClearKeyEncryption(value *MediaStreamingPolicyCommonEncryptionCencClearKeyEncryption) {
+	if err := m.validatePutClearKeyEncryptionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putClearKeyEncryption",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) PutClearTrack(value interface{}) {
+	if err := m.validatePutClearTrackParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putClearTrack",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) PutContentKeyToTrackMapping(value interface{}) {
+	if err := m.validatePutContentKeyToTrackMappingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putContentKeyToTrackMapping",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) PutDefaultContentKey(value *MediaStreamingPolicyCommonEncryptionCencDefaultContentKey) {
 	if err := m.validatePutDefaultContentKeyParameters(value); err != nil {
 		panic(err)
@@ -552,6 +657,30 @@ func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) PutE
 		m,
 		"putEnabledProtocols",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) ResetClearKeyEncryption() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetClearKeyEncryption",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) ResetClearTrack() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetClearTrack",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) ResetContentKeyToTrackMapping() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetContentKeyToTrackMapping",
+		nil, // no parameters
 	)
 }
 

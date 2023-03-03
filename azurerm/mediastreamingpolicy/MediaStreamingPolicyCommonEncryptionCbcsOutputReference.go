@@ -10,6 +10,8 @@ import (
 
 type MediaStreamingPolicyCommonEncryptionCbcsOutputReference interface {
 	cdktf.ComplexObject
+	ClearKeyEncryption() MediaStreamingPolicyCommonEncryptionCbcsClearKeyEncryptionOutputReference
+	ClearKeyEncryptionInput() *MediaStreamingPolicyCommonEncryptionCbcsClearKeyEncryption
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,9 +69,11 @@ type MediaStreamingPolicyCommonEncryptionCbcsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutClearKeyEncryption(value *MediaStreamingPolicyCommonEncryptionCbcsClearKeyEncryption)
 	PutDefaultContentKey(value *MediaStreamingPolicyCommonEncryptionCbcsDefaultContentKey)
 	PutDrmFairplay(value *MediaStreamingPolicyCommonEncryptionCbcsDrmFairplay)
 	PutEnabledProtocols(value *MediaStreamingPolicyCommonEncryptionCbcsEnabledProtocols)
+	ResetClearKeyEncryption()
 	ResetDefaultContentKey()
 	ResetDrmFairplay()
 	ResetEnabledProtocols()
@@ -86,6 +90,26 @@ type MediaStreamingPolicyCommonEncryptionCbcsOutputReference interface {
 // The jsii proxy struct for MediaStreamingPolicyCommonEncryptionCbcsOutputReference
 type jsiiProxy_MediaStreamingPolicyCommonEncryptionCbcsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_MediaStreamingPolicyCommonEncryptionCbcsOutputReference) ClearKeyEncryption() MediaStreamingPolicyCommonEncryptionCbcsClearKeyEncryptionOutputReference {
+	var returns MediaStreamingPolicyCommonEncryptionCbcsClearKeyEncryptionOutputReference
+	_jsii_.Get(
+		j,
+		"clearKeyEncryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaStreamingPolicyCommonEncryptionCbcsOutputReference) ClearKeyEncryptionInput() *MediaStreamingPolicyCommonEncryptionCbcsClearKeyEncryption {
+	var returns *MediaStreamingPolicyCommonEncryptionCbcsClearKeyEncryption
+	_jsii_.Get(
+		j,
+		"clearKeyEncryptionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_MediaStreamingPolicyCommonEncryptionCbcsOutputReference) ComplexObjectIndex() interface{} {
@@ -487,6 +511,17 @@ func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCbcsOutputReference) Inte
 	return returns
 }
 
+func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCbcsOutputReference) PutClearKeyEncryption(value *MediaStreamingPolicyCommonEncryptionCbcsClearKeyEncryption) {
+	if err := m.validatePutClearKeyEncryptionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putClearKeyEncryption",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCbcsOutputReference) PutDefaultContentKey(value *MediaStreamingPolicyCommonEncryptionCbcsDefaultContentKey) {
 	if err := m.validatePutDefaultContentKeyParameters(value); err != nil {
 		panic(err)
@@ -517,6 +552,14 @@ func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCbcsOutputReference) PutE
 		m,
 		"putEnabledProtocols",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCbcsOutputReference) ResetClearKeyEncryption() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetClearKeyEncryption",
+		nil, // no parameters
 	)
 }
 

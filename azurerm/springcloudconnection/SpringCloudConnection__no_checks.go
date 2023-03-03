@@ -56,6 +56,10 @@ func (s *jsiiProxy_SpringCloudConnection) validatePutAuthenticationParameters(va
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudConnection) validatePutSecretStoreParameters(value *SpringCloudConnectionSecretStore) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudConnection) validatePutTimeoutsParameters(value *SpringCloudConnectionTimeouts) error {
 	return nil
 }

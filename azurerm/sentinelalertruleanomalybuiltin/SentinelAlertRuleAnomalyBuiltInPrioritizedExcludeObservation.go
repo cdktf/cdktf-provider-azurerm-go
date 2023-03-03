@@ -1,0 +1,6 @@
+package sentinelalertruleanomalybuiltin
+
+
+type SentinelAlertRuleAnomalyBuiltInPrioritizedExcludeObservation struct {
+}
+

@@ -101,6 +101,8 @@ type OrchestratedVirtualMachineScaleSet interface {
 	Priority() *string
 	SetPriority(val *string)
 	PriorityInput() *string
+	PriorityMix() OrchestratedVirtualMachineScaleSetPriorityMixOutputReference
+	PriorityMixInput() *OrchestratedVirtualMachineScaleSetPriorityMix
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -186,6 +188,7 @@ type OrchestratedVirtualMachineScaleSet interface {
 	PutOsDisk(value *OrchestratedVirtualMachineScaleSetOsDisk)
 	PutOsProfile(value *OrchestratedVirtualMachineScaleSetOsProfile)
 	PutPlan(value *OrchestratedVirtualMachineScaleSetPlan)
+	PutPriorityMix(value *OrchestratedVirtualMachineScaleSetPriorityMix)
 	PutSourceImageReference(value *OrchestratedVirtualMachineScaleSetSourceImageReference)
 	PutTerminationNotification(value *OrchestratedVirtualMachineScaleSetTerminationNotification)
 	PutTimeouts(value *OrchestratedVirtualMachineScaleSetTimeouts)
@@ -212,6 +215,7 @@ type OrchestratedVirtualMachineScaleSet interface {
 	ResetOverrideLogicalId()
 	ResetPlan()
 	ResetPriority()
+	ResetPriorityMix()
 	ResetProximityPlacementGroupId()
 	ResetSinglePlacementGroup()
 	ResetSkuName()
@@ -793,6 +797,26 @@ func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) PriorityInput() *string {
 	_jsii_.Get(
 		j,
 		"priorityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) PriorityMix() OrchestratedVirtualMachineScaleSetPriorityMixOutputReference {
+	var returns OrchestratedVirtualMachineScaleSetPriorityMixOutputReference
+	_jsii_.Get(
+		j,
+		"priorityMix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) PriorityMixInput() *OrchestratedVirtualMachineScaleSetPriorityMix {
+	var returns *OrchestratedVirtualMachineScaleSetPriorityMix
+	_jsii_.Get(
+		j,
+		"priorityMixInput",
 		&returns,
 	)
 	return returns
@@ -1821,6 +1845,17 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) PutPlan(value *Orchestrat
 	)
 }
 
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) PutPriorityMix(value *OrchestratedVirtualMachineScaleSetPriorityMix) {
+	if err := o.validatePutPriorityMixParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putPriorityMix",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) PutSourceImageReference(value *OrchestratedVirtualMachineScaleSetSourceImageReference) {
 	if err := o.validatePutSourceImageReferenceParameters(value); err != nil {
 		panic(err)
@@ -2018,6 +2053,14 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) ResetPriority() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetPriority",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) ResetPriorityMix() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetPriorityMix",
 		nil, // no parameters
 	)
 }

@@ -112,6 +112,8 @@ func init() {
 		"@cdktf/provider-azurerm.expressRouteCircuitPeering.ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference",
 		reflect.TypeOf((*ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "advertisedCommunities", GoGetter: "AdvertisedCommunities"},
+			_jsii_.MemberProperty{JsiiProperty: "advertisedCommunitiesInput", GoGetter: "AdvertisedCommunitiesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "advertisedPublicPrefixes", GoGetter: "AdvertisedPublicPrefixes"},
 			_jsii_.MemberProperty{JsiiProperty: "advertisedPublicPrefixesInput", GoGetter: "AdvertisedPublicPrefixesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,6 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdvertisedCommunities", GoMethod: "ResetAdvertisedCommunities"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvertisedPublicPrefixes", GoMethod: "ResetAdvertisedPublicPrefixes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomerAsn", GoMethod: "ResetCustomerAsn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRoutingRegistryName", GoMethod: "ResetRoutingRegistryName"},
@@ -203,6 +206,8 @@ func init() {
 		"@cdktf/provider-azurerm.expressRouteCircuitPeering.ExpressRouteCircuitPeeringMicrosoftPeeringConfigOutputReference",
 		reflect.TypeOf((*ExpressRouteCircuitPeeringMicrosoftPeeringConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "advertisedCommunities", GoGetter: "AdvertisedCommunities"},
+			_jsii_.MemberProperty{JsiiProperty: "advertisedCommunitiesInput", GoGetter: "AdvertisedCommunitiesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "advertisedPublicPrefixes", GoGetter: "AdvertisedPublicPrefixes"},
 			_jsii_.MemberProperty{JsiiProperty: "advertisedPublicPrefixesInput", GoGetter: "AdvertisedPublicPrefixesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -224,6 +229,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdvertisedCommunities", GoMethod: "ResetAdvertisedCommunities"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomerAsn", GoMethod: "ResetCustomerAsn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRoutingRegistryName", GoMethod: "ResetRoutingRegistryName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

@@ -14,6 +14,7 @@ type DataAzurermWindowsFunctionApp interface {
 	cdktf.TerraformDataSource
 	AppSettings() cdktf.StringMap
 	AuthSettings() DataAzurermWindowsFunctionAppAuthSettingsList
+	AuthSettingsV2() DataAzurermWindowsFunctionAppAuthSettingsV2List
 	Backup() DataAzurermWindowsFunctionAppBackupList
 	BuiltinLoggingEnabled() cdktf.IResolvable
 	// Experimental.
@@ -154,6 +155,16 @@ func (j *jsiiProxy_DataAzurermWindowsFunctionApp) AuthSettings() DataAzurermWind
 	_jsii_.Get(
 		j,
 		"authSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermWindowsFunctionApp) AuthSettingsV2() DataAzurermWindowsFunctionAppAuthSettingsV2List {
+	var returns DataAzurermWindowsFunctionAppAuthSettingsV2List
+	_jsii_.Get(
+		j,
+		"authSettingsV2",
 		&returns,
 	)
 	return returns

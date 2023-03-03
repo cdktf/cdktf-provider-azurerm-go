@@ -98,6 +98,14 @@ func (e *jsiiProxy_ExpressRouteCircuitPeeringMicrosoftPeeringConfigOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_ExpressRouteCircuitPeeringMicrosoftPeeringConfigOutputReference) validateSetAdvertisedCommunitiesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRouteCircuitPeeringMicrosoftPeeringConfigOutputReference) validateSetAdvertisedPublicPrefixesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

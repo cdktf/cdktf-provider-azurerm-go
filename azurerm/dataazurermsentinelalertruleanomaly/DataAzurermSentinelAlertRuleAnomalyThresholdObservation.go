@@ -1,0 +1,6 @@
+package dataazurermsentinelalertruleanomaly
+
+
+type DataAzurermSentinelAlertRuleAnomalyThresholdObservation struct {
+}
+

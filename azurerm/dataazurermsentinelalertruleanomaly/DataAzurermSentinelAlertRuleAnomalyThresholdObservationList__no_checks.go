@@ -1,0 +1,30 @@
+//go:build no_runtime_type_checking
+
+package dataazurermsentinelalertruleanomaly
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyThresholdObservationList) validateGetParameters(index *float64) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyThresholdObservationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyThresholdObservationList) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyThresholdObservationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAzurermSentinelAlertRuleAnomalyThresholdObservationList) validateSetWrapsSetParameters(val *bool) error {
+	return nil
+}
+
+func validateNewDataAzurermSentinelAlertRuleAnomalyThresholdObservationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+	return nil
+}
+

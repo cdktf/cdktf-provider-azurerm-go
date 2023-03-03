@@ -85,6 +85,8 @@ type KeyVaultKey interface {
 	RawOverrides() interface{}
 	ResourceId() *string
 	ResourceVersionlessId() *string
+	RotationPolicy() KeyVaultKeyRotationPolicyOutputReference
+	RotationPolicyInput() *KeyVaultKeyRotationPolicy
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -125,6 +127,7 @@ type KeyVaultKey interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutRotationPolicy(value *KeyVaultKeyRotationPolicy)
 	PutTimeouts(value *KeyVaultKeyTimeouts)
 	ResetCurve()
 	ResetExpirationDate()
@@ -134,6 +137,7 @@ type KeyVaultKey interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRotationPolicy()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -516,6 +520,26 @@ func (j *jsiiProxy_KeyVaultKey) ResourceVersionlessId() *string {
 	_jsii_.Get(
 		j,
 		"resourceVersionlessId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVaultKey) RotationPolicy() KeyVaultKeyRotationPolicyOutputReference {
+	var returns KeyVaultKeyRotationPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"rotationPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVaultKey) RotationPolicyInput() *KeyVaultKeyRotationPolicy {
+	var returns *KeyVaultKeyRotationPolicy
+	_jsii_.Get(
+		j,
+		"rotationPolicyInput",
 		&returns,
 	)
 	return returns
@@ -1102,6 +1126,17 @@ func (k *jsiiProxy_KeyVaultKey) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (k *jsiiProxy_KeyVaultKey) PutRotationPolicy(value *KeyVaultKeyRotationPolicy) {
+	if err := k.validatePutRotationPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putRotationPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KeyVaultKey) PutTimeouts(value *KeyVaultKeyTimeouts) {
 	if err := k.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1157,6 +1192,14 @@ func (k *jsiiProxy_KeyVaultKey) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KeyVaultKey) ResetRotationPolicy() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetRotationPolicy",
 		nil, // no parameters
 	)
 }

@@ -10,6 +10,9 @@ import (
 
 type ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference interface {
 	cdktf.ComplexObject
+	AdvertisedCommunities() *[]*string
+	SetAdvertisedCommunities(val *[]*string)
+	AdvertisedCommunitiesInput() *[]*string
 	AdvertisedPublicPrefixes() *[]*string
 	SetAdvertisedPublicPrefixes(val *[]*string)
 	AdvertisedPublicPrefixesInput() *[]*string
@@ -70,6 +73,7 @@ type ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAdvertisedCommunities()
 	ResetAdvertisedPublicPrefixes()
 	ResetCustomerAsn()
 	ResetRoutingRegistryName()
@@ -86,6 +90,26 @@ type ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference interface {
 // The jsii proxy struct for ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference
 type jsiiProxy_ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference) AdvertisedCommunities() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"advertisedCommunities",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference) AdvertisedCommunitiesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"advertisedCommunitiesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference) AdvertisedPublicPrefixes() *[]*string {
@@ -243,6 +267,17 @@ func NewExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference_Override(e
 		"@cdktf/provider-azurerm.expressRouteCircuitPeering.ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
+	)
+}
+
+func (j *jsiiProxy_ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference)SetAdvertisedCommunities(val *[]*string) {
+	if err := j.validateSetAdvertisedCommunitiesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"advertisedCommunities",
+		val,
 	)
 }
 
@@ -518,6 +553,14 @@ func (e *jsiiProxy_ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference) ResetAdvertisedCommunities() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAdvertisedCommunities",
+		nil, // no parameters
+	)
 }
 
 func (e *jsiiProxy_ExpressRouteCircuitPeeringIpv6MicrosoftPeeringOutputReference) ResetAdvertisedPublicPrefixes() {

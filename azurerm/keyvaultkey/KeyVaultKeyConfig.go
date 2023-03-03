@@ -40,6 +40,10 @@ type KeyVaultKeyConfig struct {
 	KeySize *float64 `field:"optional" json:"keySize" yaml:"keySize"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/key_vault_key#not_before_date KeyVaultKey#not_before_date}.
 	NotBeforeDate *string `field:"optional" json:"notBeforeDate" yaml:"notBeforeDate"`
+	// rotation_policy block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/key_vault_key#rotation_policy KeyVaultKey#rotation_policy}
+	RotationPolicy *KeyVaultKeyRotationPolicy `field:"optional" json:"rotationPolicy" yaml:"rotationPolicy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/key_vault_key#tags KeyVaultKey#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.

@@ -90,6 +90,79 @@ func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) vali
 	return nil
 }
 
+func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) validatePutClearKeyEncryptionParameters(value *MediaStreamingPolicyCommonEncryptionCencClearKeyEncryption) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) validatePutClearTrackParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*MediaStreamingPolicyCommonEncryptionCencClearTrack:
+		value := value.(*[]*MediaStreamingPolicyCommonEncryptionCencClearTrack)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*MediaStreamingPolicyCommonEncryptionCencClearTrack:
+		value_ := value.([]*MediaStreamingPolicyCommonEncryptionCencClearTrack)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MediaStreamingPolicyCommonEncryptionCencClearTrack; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) validatePutContentKeyToTrackMappingParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*MediaStreamingPolicyCommonEncryptionCencContentKeyToTrackMapping:
+		value := value.(*[]*MediaStreamingPolicyCommonEncryptionCencContentKeyToTrackMapping)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*MediaStreamingPolicyCommonEncryptionCencContentKeyToTrackMapping:
+		value_ := value.([]*MediaStreamingPolicyCommonEncryptionCencContentKeyToTrackMapping)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MediaStreamingPolicyCommonEncryptionCencContentKeyToTrackMapping; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MediaStreamingPolicyCommonEncryptionCencOutputReference) validatePutDefaultContentKeyParameters(value *MediaStreamingPolicyCommonEncryptionCencDefaultContentKey) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

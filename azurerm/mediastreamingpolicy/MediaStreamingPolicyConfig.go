@@ -35,6 +35,10 @@ type MediaStreamingPolicyConfig struct {
 	CommonEncryptionCenc *MediaStreamingPolicyCommonEncryptionCenc `field:"optional" json:"commonEncryptionCenc" yaml:"commonEncryptionCenc"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_streaming_policy#default_content_key_policy_name MediaStreamingPolicy#default_content_key_policy_name}.
 	DefaultContentKeyPolicyName *string `field:"optional" json:"defaultContentKeyPolicyName" yaml:"defaultContentKeyPolicyName"`
+	// envelope_encryption block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_streaming_policy#envelope_encryption MediaStreamingPolicy#envelope_encryption}
+	EnvelopeEncryption *MediaStreamingPolicyEnvelopeEncryption `field:"optional" json:"envelopeEncryption" yaml:"envelopeEncryption"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/media_streaming_policy#id MediaStreamingPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

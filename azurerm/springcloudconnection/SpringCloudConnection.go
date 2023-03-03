@@ -63,6 +63,8 @@ type SpringCloudConnection interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SecretStore() SpringCloudConnectionSecretStoreOutputReference
+	SecretStoreInput() *SpringCloudConnectionSecretStore
 	SpringCloudId() *string
 	SetSpringCloudId(val *string)
 	SpringCloudIdInput() *string
@@ -106,12 +108,14 @@ type SpringCloudConnection interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthentication(value *SpringCloudConnectionAuthentication)
+	PutSecretStore(value *SpringCloudConnectionSecretStore)
 	PutTimeouts(value *SpringCloudConnectionTimeouts)
 	ResetClientType()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSecretStore()
 	ResetTimeouts()
 	ResetVnetSolution()
 	SynthesizeAttributes() *map[string]interface{}
@@ -334,6 +338,26 @@ func (j *jsiiProxy_SpringCloudConnection) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudConnection) SecretStore() SpringCloudConnectionSecretStoreOutputReference {
+	var returns SpringCloudConnectionSecretStoreOutputReference
+	_jsii_.Get(
+		j,
+		"secretStore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudConnection) SecretStoreInput() *SpringCloudConnectionSecretStore {
+	var returns *SpringCloudConnectionSecretStore
+	_jsii_.Get(
+		j,
+		"secretStoreInput",
 		&returns,
 	)
 	return returns
@@ -887,6 +911,17 @@ func (s *jsiiProxy_SpringCloudConnection) PutAuthentication(value *SpringCloudCo
 	)
 }
 
+func (s *jsiiProxy_SpringCloudConnection) PutSecretStore(value *SpringCloudConnectionSecretStore) {
+	if err := s.validatePutSecretStoreParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSecretStore",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SpringCloudConnection) PutTimeouts(value *SpringCloudConnectionTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -918,6 +953,14 @@ func (s *jsiiProxy_SpringCloudConnection) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudConnection) ResetSecretStore() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSecretStore",
 		nil, // no parameters
 	)
 }

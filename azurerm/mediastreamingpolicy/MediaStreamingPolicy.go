@@ -35,6 +35,8 @@ type MediaStreamingPolicy interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnvelopeEncryption() MediaStreamingPolicyEnvelopeEncryptionOutputReference
+	EnvelopeEncryptionInput() *MediaStreamingPolicyEnvelopeEncryption
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -108,11 +110,13 @@ type MediaStreamingPolicy interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCommonEncryptionCbcs(value *MediaStreamingPolicyCommonEncryptionCbcs)
 	PutCommonEncryptionCenc(value *MediaStreamingPolicyCommonEncryptionCenc)
+	PutEnvelopeEncryption(value *MediaStreamingPolicyEnvelopeEncryption)
 	PutNoEncryptionEnabledProtocols(value *MediaStreamingPolicyNoEncryptionEnabledProtocols)
 	PutTimeouts(value *MediaStreamingPolicyTimeouts)
 	ResetCommonEncryptionCbcs()
 	ResetCommonEncryptionCenc()
 	ResetDefaultContentKeyPolicyName()
+	ResetEnvelopeEncryption()
 	ResetId()
 	ResetNoEncryptionEnabledProtocols()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -239,6 +243,26 @@ func (j *jsiiProxy_MediaStreamingPolicy) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaStreamingPolicy) EnvelopeEncryption() MediaStreamingPolicyEnvelopeEncryptionOutputReference {
+	var returns MediaStreamingPolicyEnvelopeEncryptionOutputReference
+	_jsii_.Get(
+		j,
+		"envelopeEncryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaStreamingPolicy) EnvelopeEncryptionInput() *MediaStreamingPolicyEnvelopeEncryption {
+	var returns *MediaStreamingPolicyEnvelopeEncryption
+	_jsii_.Get(
+		j,
+		"envelopeEncryptionInput",
 		&returns,
 	)
 	return returns
@@ -912,6 +936,17 @@ func (m *jsiiProxy_MediaStreamingPolicy) PutCommonEncryptionCenc(value *MediaStr
 	)
 }
 
+func (m *jsiiProxy_MediaStreamingPolicy) PutEnvelopeEncryption(value *MediaStreamingPolicyEnvelopeEncryption) {
+	if err := m.validatePutEnvelopeEncryptionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putEnvelopeEncryption",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MediaStreamingPolicy) PutNoEncryptionEnabledProtocols(value *MediaStreamingPolicyNoEncryptionEnabledProtocols) {
 	if err := m.validatePutNoEncryptionEnabledProtocolsParameters(value); err != nil {
 		panic(err)
@@ -954,6 +989,14 @@ func (m *jsiiProxy_MediaStreamingPolicy) ResetDefaultContentKeyPolicyName() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetDefaultContentKeyPolicyName",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaStreamingPolicy) ResetEnvelopeEncryption() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEnvelopeEncryption",
 		nil, // no parameters
 	)
 }
