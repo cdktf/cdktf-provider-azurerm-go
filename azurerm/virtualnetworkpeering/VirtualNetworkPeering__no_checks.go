@@ -108,6 +108,10 @@ func (j *jsiiProxy_VirtualNetworkPeering) validateSetResourceGroupNameParameters
 	return nil
 }
 
+func (j *jsiiProxy_VirtualNetworkPeering) validateSetTriggersParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetworkPeering) validateSetUseRemoteGatewaysParameters(val interface{}) error {
 	return nil
 }

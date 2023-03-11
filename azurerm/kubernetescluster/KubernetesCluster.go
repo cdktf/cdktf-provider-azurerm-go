@@ -132,6 +132,7 @@ type KubernetesCluster interface {
 	Node() constructs.Node
 	NodeResourceGroup() *string
 	SetNodeResourceGroup(val *string)
+	NodeResourceGroupId() *string
 	NodeResourceGroupInput() *string
 	OidcIssuerEnabled() interface{}
 	SetOidcIssuerEnabled(val interface{})
@@ -1143,6 +1144,16 @@ func (j *jsiiProxy_KubernetesCluster) NodeResourceGroup() *string {
 	_jsii_.Get(
 		j,
 		"nodeResourceGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) NodeResourceGroupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeResourceGroupId",
 		&returns,
 	)
 	return returns

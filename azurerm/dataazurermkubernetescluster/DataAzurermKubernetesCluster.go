@@ -69,6 +69,7 @@ type DataAzurermKubernetesCluster interface {
 	// The tree node.
 	Node() constructs.Node
 	NodeResourceGroup() *string
+	NodeResourceGroupId() *string
 	OidcIssuerEnabled() cdktf.IResolvable
 	OidcIssuerUrl() *string
 	OmsAgent() DataAzurermKubernetesClusterOmsAgentList
@@ -518,6 +519,16 @@ func (j *jsiiProxy_DataAzurermKubernetesCluster) NodeResourceGroup() *string {
 	_jsii_.Get(
 		j,
 		"nodeResourceGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermKubernetesCluster) NodeResourceGroupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeResourceGroupId",
 		&returns,
 	)
 	return returns

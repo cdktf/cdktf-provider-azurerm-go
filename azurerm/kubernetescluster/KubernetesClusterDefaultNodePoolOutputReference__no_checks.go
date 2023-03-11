@@ -180,6 +180,10 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetT
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetTemporaryNameForRotationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

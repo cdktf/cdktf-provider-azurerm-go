@@ -14,7 +14,7 @@ type LinuxFunctionAppSiteConfigApplicationStack struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app#java_version LinuxFunctionApp#java_version}
 	JavaVersion *string `field:"optional" json:"javaVersion" yaml:"javaVersion"`
-	// The version of Node to use. Possible values include `12`, and `14`.
+	// The version of Node to use. Possible values include `12`, `14`, `16` and `18`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app#node_version LinuxFunctionApp#node_version}
 	NodeVersion *string `field:"optional" json:"nodeVersion" yaml:"nodeVersion"`
@@ -22,7 +22,7 @@ type LinuxFunctionAppSiteConfigApplicationStack struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app#powershell_core_version LinuxFunctionApp#powershell_core_version}
 	PowershellCoreVersion *string `field:"optional" json:"powershellCoreVersion" yaml:"powershellCoreVersion"`
-	// The version of Python to use. Possible values include `3.9`, `3.8`, and `3.7`.
+	// The version of Python to use. Possible values include `3.10`, `3.9`, `3.8`, and `3.7`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app#python_version LinuxFunctionApp#python_version}
 	PythonVersion *string `field:"optional" json:"pythonVersion" yaml:"pythonVersion"`

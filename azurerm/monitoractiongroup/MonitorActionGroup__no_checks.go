@@ -128,6 +128,10 @@ func (j *jsiiProxy_MonitorActionGroup) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_MonitorActionGroup) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorActionGroup) validateSetNameParameters(val *string) error {
 	return nil
 }

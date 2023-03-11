@@ -43,6 +43,8 @@ type MssqlManagedDatabase interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LongTermRetentionPolicy() MssqlManagedDatabaseLongTermRetentionPolicyOutputReference
+	LongTermRetentionPolicyInput() *MssqlManagedDatabaseLongTermRetentionPolicy
 	ManagedInstanceId() *string
 	SetManagedInstanceId(val *string)
 	ManagedInstanceIdInput() *string
@@ -61,6 +63,9 @@ type MssqlManagedDatabase interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ShortTermRetentionDays() *float64
+	SetShortTermRetentionDays(val *float64)
+	ShortTermRetentionDaysInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -94,11 +99,14 @@ type MssqlManagedDatabase interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutLongTermRetentionPolicy(value *MssqlManagedDatabaseLongTermRetentionPolicy)
 	PutTimeouts(value *MssqlManagedDatabaseTimeouts)
 	ResetId()
+	ResetLongTermRetentionPolicy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetShortTermRetentionDays()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -225,6 +233,26 @@ func (j *jsiiProxy_MssqlManagedDatabase) Lifecycle() *cdktf.TerraformResourceLif
 	return returns
 }
 
+func (j *jsiiProxy_MssqlManagedDatabase) LongTermRetentionPolicy() MssqlManagedDatabaseLongTermRetentionPolicyOutputReference {
+	var returns MssqlManagedDatabaseLongTermRetentionPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"longTermRetentionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlManagedDatabase) LongTermRetentionPolicyInput() *MssqlManagedDatabaseLongTermRetentionPolicy {
+	var returns *MssqlManagedDatabaseLongTermRetentionPolicy
+	_jsii_.Get(
+		j,
+		"longTermRetentionPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MssqlManagedDatabase) ManagedInstanceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -300,6 +328,26 @@ func (j *jsiiProxy_MssqlManagedDatabase) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlManagedDatabase) ShortTermRetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"shortTermRetentionDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlManagedDatabase) ShortTermRetentionDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"shortTermRetentionDaysInput",
 		&returns,
 	)
 	return returns
@@ -479,6 +527,17 @@ func (j *jsiiProxy_MssqlManagedDatabase)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlManagedDatabase)SetShortTermRetentionDays(val *float64) {
+	if err := j.validateSetShortTermRetentionDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shortTermRetentionDays",
 		val,
 	)
 }
@@ -749,6 +808,17 @@ func (m *jsiiProxy_MssqlManagedDatabase) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (m *jsiiProxy_MssqlManagedDatabase) PutLongTermRetentionPolicy(value *MssqlManagedDatabaseLongTermRetentionPolicy) {
+	if err := m.validatePutLongTermRetentionPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putLongTermRetentionPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MssqlManagedDatabase) PutTimeouts(value *MssqlManagedDatabaseTimeouts) {
 	if err := m.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -768,10 +838,26 @@ func (m *jsiiProxy_MssqlManagedDatabase) ResetId() {
 	)
 }
 
+func (m *jsiiProxy_MssqlManagedDatabase) ResetLongTermRetentionPolicy() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetLongTermRetentionPolicy",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MssqlManagedDatabase) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlManagedDatabase) ResetShortTermRetentionDays() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetShortTermRetentionDays",
 		nil, // no parameters
 	)
 }

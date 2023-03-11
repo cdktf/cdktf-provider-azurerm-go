@@ -68,6 +68,8 @@ type KubernetesClusterDefaultNodePool struct {
 	ScaleDownMode *string `field:"optional" json:"scaleDownMode" yaml:"scaleDownMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#tags KubernetesCluster#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#temporary_name_for_rotation KubernetesCluster#temporary_name_for_rotation}.
+	TemporaryNameForRotation *string `field:"optional" json:"temporaryNameForRotation" yaml:"temporaryNameForRotation"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#type KubernetesCluster#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster#ultra_ssd_enabled KubernetesCluster#ultra_ssd_enabled}.

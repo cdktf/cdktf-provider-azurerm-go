@@ -21,6 +21,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "defaultSecondaryConnectionString", GoGetter: "DefaultSecondaryConnectionString"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultSecondaryKey", GoGetter: "DefaultSecondaryKey"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "endpoint", GoGetter: "Endpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},

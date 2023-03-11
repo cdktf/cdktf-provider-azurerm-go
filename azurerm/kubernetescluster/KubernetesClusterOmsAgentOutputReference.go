@@ -32,6 +32,9 @@ type KubernetesClusterOmsAgentOutputReference interface {
 	LogAnalyticsWorkspaceId() *string
 	SetLogAnalyticsWorkspaceId(val *string)
 	LogAnalyticsWorkspaceIdInput() *string
+	MsiAuthForMonitoringEnabled() interface{}
+	SetMsiAuthForMonitoringEnabled(val interface{})
+	MsiAuthForMonitoringEnabledInput() interface{}
 	OmsAgentIdentity() KubernetesClusterOmsAgentOmsAgentIdentityList
 	// Experimental.
 	TerraformAttribute() *string
@@ -65,6 +68,7 @@ type KubernetesClusterOmsAgentOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMsiAuthForMonitoringEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,6 +149,26 @@ func (j *jsiiProxy_KubernetesClusterOmsAgentOutputReference) LogAnalyticsWorkspa
 	_jsii_.Get(
 		j,
 		"logAnalyticsWorkspaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterOmsAgentOutputReference) MsiAuthForMonitoringEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"msiAuthForMonitoringEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterOmsAgentOutputReference) MsiAuthForMonitoringEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"msiAuthForMonitoringEnabledInput",
 		&returns,
 	)
 	return returns
@@ -248,6 +272,17 @@ func (j *jsiiProxy_KubernetesClusterOmsAgentOutputReference)SetLogAnalyticsWorks
 	_jsii_.Set(
 		j,
 		"logAnalyticsWorkspaceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterOmsAgentOutputReference)SetMsiAuthForMonitoringEnabled(val interface{}) {
+	if err := j.validateSetMsiAuthForMonitoringEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"msiAuthForMonitoringEnabled",
 		val,
 	)
 }
@@ -458,6 +493,14 @@ func (k *jsiiProxy_KubernetesClusterOmsAgentOutputReference) InterpolationForAtt
 	)
 
 	return returns
+}
+
+func (k *jsiiProxy_KubernetesClusterOmsAgentOutputReference) ResetMsiAuthForMonitoringEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetMsiAuthForMonitoringEnabled",
+		nil, // no parameters
+	)
 }
 
 func (k *jsiiProxy_KubernetesClusterOmsAgentOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

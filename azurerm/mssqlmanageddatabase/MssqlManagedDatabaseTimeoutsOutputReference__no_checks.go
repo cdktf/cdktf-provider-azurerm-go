@@ -80,6 +80,10 @@ func (j *jsiiProxy_MssqlManagedDatabaseTimeoutsOutputReference) validateSetTerra
 	return nil
 }
 
+func (j *jsiiProxy_MssqlManagedDatabaseTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewMssqlManagedDatabaseTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

@@ -12,6 +12,7 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/function_app_host_keys azurerm_function_app_host_keys}.
 type DataAzurermFunctionAppHostKeys interface {
 	cdktf.TerraformDataSource
+	BlobsExtensionKey() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -111,6 +112,16 @@ type DataAzurermFunctionAppHostKeys interface {
 // The jsii proxy struct for DataAzurermFunctionAppHostKeys
 type jsiiProxy_DataAzurermFunctionAppHostKeys struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataAzurermFunctionAppHostKeys) BlobsExtensionKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"blobsExtensionKey",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAzurermFunctionAppHostKeys) CdktfStack() cdktf.TerraformStack {

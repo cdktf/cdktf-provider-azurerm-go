@@ -52,6 +52,10 @@ func (m *jsiiProxy_MssqlManagedDatabase) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (m *jsiiProxy_MssqlManagedDatabase) validatePutLongTermRetentionPolicyParameters(value *MssqlManagedDatabaseLongTermRetentionPolicy) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlManagedDatabase) validatePutTimeoutsParameters(value *MssqlManagedDatabaseTimeouts) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (j *jsiiProxy_MssqlManagedDatabase) validateSetNameParameters(val *string) 
 }
 
 func (j *jsiiProxy_MssqlManagedDatabase) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MssqlManagedDatabase) validateSetShortTermRetentionDaysParameters(val *float64) error {
 	return nil
 }
 

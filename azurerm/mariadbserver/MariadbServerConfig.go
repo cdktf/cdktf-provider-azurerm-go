@@ -54,6 +54,8 @@ type MariadbServerConfig struct {
 	PublicNetworkAccessEnabled interface{} `field:"optional" json:"publicNetworkAccessEnabled" yaml:"publicNetworkAccessEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mariadb_server#restore_point_in_time MariadbServer#restore_point_in_time}.
 	RestorePointInTime *string `field:"optional" json:"restorePointInTime" yaml:"restorePointInTime"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mariadb_server#ssl_minimal_tls_version_enforced MariadbServer#ssl_minimal_tls_version_enforced}.
+	SslMinimalTlsVersionEnforced *string `field:"optional" json:"sslMinimalTlsVersionEnforced" yaml:"sslMinimalTlsVersionEnforced"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mariadb_server#storage_mb MariadbServer#storage_mb}.
 	StorageMb *float64 `field:"optional" json:"storageMb" yaml:"storageMb"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mariadb_server#tags MariadbServer#tags}.

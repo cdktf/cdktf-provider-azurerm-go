@@ -10,7 +10,7 @@ type WindowsFunctionAppSlotSiteConfigApplicationStack struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_function_app_slot#java_version WindowsFunctionAppSlot#java_version}
 	JavaVersion *string `field:"optional" json:"javaVersion" yaml:"javaVersion"`
-	// The version of Node to use. Possible values include `12`, and `14`.
+	// The version of Node to use. Possible values include `12`, `14`, `16` and `18`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_function_app_slot#node_version WindowsFunctionAppSlot#node_version}
 	NodeVersion *string `field:"optional" json:"nodeVersion" yaml:"nodeVersion"`

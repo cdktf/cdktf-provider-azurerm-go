@@ -72,6 +72,10 @@ func (j *jsiiProxy_KubernetesClusterWorkloadAutoscalerProfileOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterWorkloadAutoscalerProfileOutputReference) validateSetVerticalPodAutoscalerEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewKubernetesClusterWorkloadAutoscalerProfileOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

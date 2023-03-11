@@ -64,6 +64,10 @@ func (j *jsiiProxy_KubernetesClusterOmsAgentOutputReference) validateSetLogAnaly
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterOmsAgentOutputReference) validateSetMsiAuthForMonitoringEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterOmsAgentOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

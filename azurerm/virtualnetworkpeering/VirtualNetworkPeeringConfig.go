@@ -42,6 +42,8 @@ type VirtualNetworkPeeringConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_network_peering#timeouts VirtualNetworkPeering#timeouts}
 	Timeouts *VirtualNetworkPeeringTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_network_peering#triggers VirtualNetworkPeering#triggers}.
+	Triggers *map[string]*string `field:"optional" json:"triggers" yaml:"triggers"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_network_peering#use_remote_gateways VirtualNetworkPeering#use_remote_gateways}.
 	UseRemoteGateways interface{} `field:"optional" json:"useRemoteGateways" yaml:"useRemoteGateways"`
 }

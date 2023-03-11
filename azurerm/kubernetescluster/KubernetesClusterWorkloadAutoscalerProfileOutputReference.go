@@ -40,6 +40,11 @@ type KubernetesClusterWorkloadAutoscalerProfileOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VerticalPodAutoscalerControlledValues() *string
+	VerticalPodAutoscalerEnabled() interface{}
+	SetVerticalPodAutoscalerEnabled(val interface{})
+	VerticalPodAutoscalerEnabledInput() interface{}
+	VerticalPodAutoscalerUpdateMode() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -65,6 +70,7 @@ type KubernetesClusterWorkloadAutoscalerProfileOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetKedaEnabled()
+	ResetVerticalPodAutoscalerEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -170,6 +176,46 @@ func (j *jsiiProxy_KubernetesClusterWorkloadAutoscalerProfileOutputReference) Te
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterWorkloadAutoscalerProfileOutputReference) VerticalPodAutoscalerControlledValues() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"verticalPodAutoscalerControlledValues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterWorkloadAutoscalerProfileOutputReference) VerticalPodAutoscalerEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"verticalPodAutoscalerEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterWorkloadAutoscalerProfileOutputReference) VerticalPodAutoscalerEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"verticalPodAutoscalerEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterWorkloadAutoscalerProfileOutputReference) VerticalPodAutoscalerUpdateMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"verticalPodAutoscalerUpdateMode",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewKubernetesClusterWorkloadAutoscalerProfileOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KubernetesClusterWorkloadAutoscalerProfileOutputReference {
 	_init_.Initialize()
@@ -260,6 +306,17 @@ func (j *jsiiProxy_KubernetesClusterWorkloadAutoscalerProfileOutputReference)Set
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterWorkloadAutoscalerProfileOutputReference)SetVerticalPodAutoscalerEnabled(val interface{}) {
+	if err := j.validateSetVerticalPodAutoscalerEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"verticalPodAutoscalerEnabled",
 		val,
 	)
 }
@@ -454,6 +511,14 @@ func (k *jsiiProxy_KubernetesClusterWorkloadAutoscalerProfileOutputReference) Re
 	_jsii_.InvokeVoid(
 		k,
 		"resetKedaEnabled",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterWorkloadAutoscalerProfileOutputReference) ResetVerticalPodAutoscalerEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetVerticalPodAutoscalerEnabled",
 		nil, // no parameters
 	)
 }

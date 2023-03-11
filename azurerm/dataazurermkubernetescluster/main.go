@@ -60,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "networkProfile", GoGetter: "NetworkProfile"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeResourceGroup", GoGetter: "NodeResourceGroup"},
+			_jsii_.MemberProperty{JsiiProperty: "nodeResourceGroupId", GoGetter: "NodeResourceGroupId"},
 			_jsii_.MemberProperty{JsiiProperty: "oidcIssuerEnabled", GoGetter: "OidcIssuerEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "oidcIssuerUrl", GoGetter: "OidcIssuerUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "omsAgent", GoGetter: "OmsAgent"},

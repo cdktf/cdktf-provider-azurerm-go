@@ -60,6 +60,9 @@ type MonitorActionGroup interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
 	LogicAppReceiver() MonitorActionGroupLogicAppReceiverList
 	LogicAppReceiverInput() interface{}
 	Name() *string
@@ -146,6 +149,7 @@ type MonitorActionGroup interface {
 	ResetEventHubReceiver()
 	ResetId()
 	ResetItsmReceiver()
+	ResetLocation()
 	ResetLogicAppReceiver()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -435,6 +439,26 @@ func (j *jsiiProxy_MonitorActionGroup) Lifecycle() *cdktf.TerraformResourceLifec
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorActionGroup) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorActionGroup) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
 		&returns,
 	)
 	return returns
@@ -784,6 +808,17 @@ func (j *jsiiProxy_MonitorActionGroup)SetLifecycle(val *cdktf.TerraformResourceL
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitorActionGroup)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
 		val,
 	)
 }
@@ -1317,6 +1352,14 @@ func (m *jsiiProxy_MonitorActionGroup) ResetItsmReceiver() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetItsmReceiver",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorActionGroup) ResetLocation() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

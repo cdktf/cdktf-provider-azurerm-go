@@ -60,6 +60,8 @@ type MonitorActionGroupConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_action_group#itsm_receiver MonitorActionGroup#itsm_receiver}
 	ItsmReceiver interface{} `field:"optional" json:"itsmReceiver" yaml:"itsmReceiver"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_action_group#location MonitorActionGroup#location}.
+	Location *string `field:"optional" json:"location" yaml:"location"`
 	// logic_app_receiver block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_action_group#logic_app_receiver MonitorActionGroup#logic_app_receiver}

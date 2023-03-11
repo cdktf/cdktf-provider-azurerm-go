@@ -113,6 +113,9 @@ type KubernetesClusterDefaultNodePoolOutputReference interface {
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
+	TemporaryNameForRotation() *string
+	SetTemporaryNameForRotation(val *string)
+	TemporaryNameForRotationInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -197,6 +200,7 @@ type KubernetesClusterDefaultNodePoolOutputReference interface {
 	ResetProximityPlacementGroupId()
 	ResetScaleDownMode()
 	ResetTags()
+	ResetTemporaryNameForRotation()
 	ResetType()
 	ResetUltraSsdEnabled()
 	ResetUpgradeSettings()
@@ -848,6 +852,26 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) TagsInput() 
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) TemporaryNameForRotation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"temporaryNameForRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) TemporaryNameForRotationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"temporaryNameForRotationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1351,6 +1375,17 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetTags(val *
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetTemporaryNameForRotation(val *string) {
+	if err := j.validateSetTemporaryNameForRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"temporaryNameForRotation",
 		val,
 	)
 }
@@ -1893,6 +1928,14 @@ func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetTags() 
 	_jsii_.InvokeVoid(
 		k,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetTemporaryNameForRotation() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetTemporaryNameForRotation",
 		nil, // no parameters
 	)
 }
