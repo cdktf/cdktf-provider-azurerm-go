@@ -68,6 +68,10 @@ func validateExpressRouteGateway_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_ExpressRouteGateway) validateSetAllowNonVirtualWanTrafficParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRouteGateway) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

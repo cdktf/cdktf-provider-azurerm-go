@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_gateway azurerm_express_route_gateway}.
 type ExpressRouteGateway interface {
 	cdktf.TerraformResource
+	AllowNonVirtualWanTraffic() interface{}
+	SetAllowNonVirtualWanTraffic(val interface{})
+	AllowNonVirtualWanTrafficInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -107,6 +110,7 @@ type ExpressRouteGateway interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ExpressRouteGatewayTimeouts)
+	ResetAllowNonVirtualWanTraffic()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -126,6 +130,26 @@ type ExpressRouteGateway interface {
 // The jsii proxy struct for ExpressRouteGateway
 type jsiiProxy_ExpressRouteGateway struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ExpressRouteGateway) AllowNonVirtualWanTraffic() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNonVirtualWanTraffic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExpressRouteGateway) AllowNonVirtualWanTrafficInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNonVirtualWanTrafficInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ExpressRouteGateway) CdktfStack() cdktf.TerraformStack {
@@ -475,6 +499,17 @@ func NewExpressRouteGateway_Override(e ExpressRouteGateway, scope constructs.Con
 		"@cdktf/provider-azurerm.expressRouteGateway.ExpressRouteGateway",
 		[]interface{}{scope, id, config},
 		e,
+	)
+}
+
+func (j *jsiiProxy_ExpressRouteGateway)SetAllowNonVirtualWanTraffic(val interface{}) {
+	if err := j.validateSetAllowNonVirtualWanTrafficParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowNonVirtualWanTraffic",
+		val,
 	)
 }
 
@@ -894,6 +929,14 @@ func (e *jsiiProxy_ExpressRouteGateway) PutTimeouts(value *ExpressRouteGatewayTi
 		e,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ExpressRouteGateway) ResetAllowNonVirtualWanTraffic() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAllowNonVirtualWanTraffic",
+		nil, // no parameters
 	)
 }
 

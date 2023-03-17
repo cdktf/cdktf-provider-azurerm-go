@@ -1,0 +1,6 @@
+package dataazurermmobilenetworksimpolicy
+
+
+type DataAzurermMobileNetworkSimPolicySliceDataNetworkSessionAggregateMaximumBitRate struct {
+}
+

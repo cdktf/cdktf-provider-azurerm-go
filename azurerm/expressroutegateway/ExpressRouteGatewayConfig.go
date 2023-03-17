@@ -29,6 +29,8 @@ type ExpressRouteGatewayConfig struct {
 	ScaleUnits *float64 `field:"required" json:"scaleUnits" yaml:"scaleUnits"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_gateway#virtual_hub_id ExpressRouteGateway#virtual_hub_id}.
 	VirtualHubId *string `field:"required" json:"virtualHubId" yaml:"virtualHubId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_gateway#allow_non_virtual_wan_traffic ExpressRouteGateway#allow_non_virtual_wan_traffic}.
+	AllowNonVirtualWanTraffic interface{} `field:"optional" json:"allowNonVirtualWanTraffic" yaml:"allowNonVirtualWanTraffic"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_gateway#id ExpressRouteGateway#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
