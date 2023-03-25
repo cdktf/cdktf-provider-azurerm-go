@@ -5,7 +5,7 @@ type LinuxWebAppSiteConfigCors struct {
 	// Specifies a list of origins that should be allowed to make cross-origin calls.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_web_app#allowed_origins LinuxWebApp#allowed_origins}
-	AllowedOrigins *[]*string `field:"required" json:"allowedOrigins" yaml:"allowedOrigins"`
+	AllowedOrigins *[]*string `field:"optional" json:"allowedOrigins" yaml:"allowedOrigins"`
 	// Are credentials allowed in CORS requests? Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_web_app#support_credentials LinuxWebApp#support_credentials}

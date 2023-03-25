@@ -40,6 +40,9 @@ type VirtualHub interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HubRoutingPreference() *string
+	SetHubRoutingPreference(val *string)
+	HubRoutingPreferenceInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -117,6 +120,7 @@ type VirtualHub interface {
 	PutRoute(value interface{})
 	PutTimeouts(value *VirtualHubTimeouts)
 	ResetAddressPrefix()
+	ResetHubRoutingPreference()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -246,6 +250,26 @@ func (j *jsiiProxy_VirtualHub) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualHub) HubRoutingPreference() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hubRoutingPreference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualHub) HubRoutingPreferenceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hubRoutingPreferenceInput",
 		&returns,
 	)
 	return returns
@@ -603,6 +627,17 @@ func (j *jsiiProxy_VirtualHub)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualHub)SetHubRoutingPreference(val *string) {
+	if err := j.validateSetHubRoutingPreferenceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hubRoutingPreference",
 		val,
 	)
 }
@@ -1006,6 +1041,14 @@ func (v *jsiiProxy_VirtualHub) ResetAddressPrefix() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetAddressPrefix",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualHub) ResetHubRoutingPreference() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetHubRoutingPreference",
 		nil, // no parameters
 	)
 }

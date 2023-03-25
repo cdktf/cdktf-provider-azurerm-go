@@ -1474,6 +1474,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedOrigins", GoMethod: "ResetAllowedOrigins"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSupportCredentials", GoMethod: "ResetSupportCredentials"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "supportCredentials", GoGetter: "SupportCredentials"},

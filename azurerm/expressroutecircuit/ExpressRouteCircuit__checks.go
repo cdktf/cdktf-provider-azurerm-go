@@ -177,6 +177,14 @@ func (j *jsiiProxy_ExpressRouteCircuit) validateSetAllowClassicOperationsParamet
 	return nil
 }
 
+func (j *jsiiProxy_ExpressRouteCircuit) validateSetAuthorizationKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRouteCircuit) validateSetBandwidthInGbpsParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

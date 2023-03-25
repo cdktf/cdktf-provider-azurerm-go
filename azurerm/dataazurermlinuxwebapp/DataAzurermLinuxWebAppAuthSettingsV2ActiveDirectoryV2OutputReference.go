@@ -39,7 +39,7 @@ type DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2OutputReference interf
 	JwtAllowedClientApplications() *[]*string
 	JwtAllowedGroups() *[]*string
 	LoginParameters() cdktf.StringMap
-	TenantId() *string
+	TenantAuthEndpoint() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -48,6 +48,7 @@ type DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2OutputReference interf
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WwwAuthenticationDisabled() cdktf.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -237,11 +238,11 @@ func (j *jsiiProxy_DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2OutputRe
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2OutputReference) TenantId() *string {
+func (j *jsiiProxy_DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2OutputReference) TenantAuthEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"tenantId",
+		"tenantAuthEndpoint",
 		&returns,
 	)
 	return returns
@@ -262,6 +263,16 @@ func (j *jsiiProxy_DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2OutputRe
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2OutputReference) WwwAuthenticationDisabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"wwwAuthenticationDisabled",
 		&returns,
 	)
 	return returns

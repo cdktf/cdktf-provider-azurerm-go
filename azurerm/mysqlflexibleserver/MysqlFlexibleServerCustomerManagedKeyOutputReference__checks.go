@@ -163,6 +163,22 @@ func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) validateSetGeoBackupKeyVaultKeyIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) validateSetGeoBackupUserAssignedIdentityIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) validateSetInternalValueParameters(val *MysqlFlexibleServerCustomerManagedKey) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

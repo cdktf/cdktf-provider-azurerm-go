@@ -69,6 +69,9 @@ type SentinelLogAnalyticsWorkspaceOnboarding interface {
 	TerraformResourceType() *string
 	Timeouts() SentinelLogAnalyticsWorkspaceOnboardingTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	WorkspaceId() *string
+	SetWorkspaceId(val *string)
+	WorkspaceIdInput() *string
 	WorkspaceName() *string
 	SetWorkspaceName(val *string)
 	WorkspaceNameInput() *string
@@ -103,7 +106,10 @@ type SentinelLogAnalyticsWorkspaceOnboarding interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetResourceGroupName()
 	ResetTimeouts()
+	ResetWorkspaceId()
+	ResetWorkspaceName()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -359,6 +365,26 @@ func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) TimeoutsInput() inte
 	return returns
 }
 
+func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) WorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) WorkspaceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) WorkspaceName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -503,6 +529,17 @@ func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding)SetResourceGroupName(
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding)SetWorkspaceId(val *string) {
+	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceId",
 		val,
 	)
 }
@@ -819,10 +856,34 @@ func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) ResetOverrideLogical
 	)
 }
 
+func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) ResetResourceGroupName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetResourceGroupName",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) ResetWorkspaceName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetWorkspaceName",
 		nil, // no parameters
 	)
 }

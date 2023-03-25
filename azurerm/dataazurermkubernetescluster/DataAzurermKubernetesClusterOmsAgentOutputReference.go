@@ -30,6 +30,7 @@ type DataAzurermKubernetesClusterOmsAgentOutputReference interface {
 	InternalValue() *DataAzurermKubernetesClusterOmsAgent
 	SetInternalValue(val *DataAzurermKubernetesClusterOmsAgent)
 	LogAnalyticsWorkspaceId() *string
+	MsiAuthForMonitoringEnabled() cdktf.IResolvable
 	OmsAgentIdentity() DataAzurermKubernetesClusterOmsAgentOmsAgentIdentityList
 	// Experimental.
 	TerraformAttribute() *string
@@ -133,6 +134,16 @@ func (j *jsiiProxy_DataAzurermKubernetesClusterOmsAgentOutputReference) LogAnaly
 	_jsii_.Get(
 		j,
 		"logAnalyticsWorkspaceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermKubernetesClusterOmsAgentOutputReference) MsiAuthForMonitoringEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"msiAuthForMonitoringEnabled",
 		&returns,
 	)
 	return returns

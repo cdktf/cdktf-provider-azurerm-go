@@ -67,6 +67,7 @@ type LinuxWebAppSiteConfigCorsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAllowedOrigins()
 	ResetSupportCredentials()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -482,6 +483,14 @@ func (l *jsiiProxy_LinuxWebAppSiteConfigCorsOutputReference) InterpolationForAtt
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LinuxWebAppSiteConfigCorsOutputReference) ResetAllowedOrigins() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAllowedOrigins",
+		nil, // no parameters
+	)
 }
 
 func (l *jsiiProxy_LinuxWebAppSiteConfigCorsOutputReference) ResetSupportCredentials() {

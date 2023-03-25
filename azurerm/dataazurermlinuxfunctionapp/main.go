@@ -583,10 +583,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "jwtAllowedGroups", GoGetter: "JwtAllowedGroups"},
 			_jsii_.MemberProperty{JsiiProperty: "loginParameters", GoGetter: "LoginParameters"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "tenantId", GoGetter: "TenantId"},
+			_jsii_.MemberProperty{JsiiProperty: "tenantAuthEndpoint", GoGetter: "TenantAuthEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wwwAuthenticationDisabled", GoGetter: "WwwAuthenticationDisabled"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAzurermLinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference{}

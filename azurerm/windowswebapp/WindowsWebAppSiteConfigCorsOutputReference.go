@@ -67,6 +67,7 @@ type WindowsWebAppSiteConfigCorsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAllowedOrigins()
 	ResetSupportCredentials()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -482,6 +483,14 @@ func (w *jsiiProxy_WindowsWebAppSiteConfigCorsOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_WindowsWebAppSiteConfigCorsOutputReference) ResetAllowedOrigins() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAllowedOrigins",
+		nil, // no parameters
+	)
 }
 
 func (w *jsiiProxy_WindowsWebAppSiteConfigCorsOutputReference) ResetSupportCredentials() {

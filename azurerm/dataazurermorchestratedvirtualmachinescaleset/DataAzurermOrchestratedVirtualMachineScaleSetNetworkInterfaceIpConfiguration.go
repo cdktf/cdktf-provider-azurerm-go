@@ -1,0 +1,6 @@
+package dataazurermorchestratedvirtualmachinescaleset
+
+
+type DataAzurermOrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguration struct {
+}
+

@@ -12,6 +12,7 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/signalr_service azurerm_signalr_service}.
 type DataAzurermSignalrService interface {
 	cdktf.TerraformDataSource
+	AadAuthEnabled() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -41,6 +42,7 @@ type DataAzurermSignalrService interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LocalAuthEnabled() cdktf.IResolvable
 	Location() *string
 	Name() *string
 	SetName(val *string)
@@ -53,6 +55,7 @@ type DataAzurermSignalrService interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	PublicNetworkAccessEnabled() cdktf.IResolvable
 	PublicPort() *float64
 	// Experimental.
 	RawOverrides() interface{}
@@ -61,6 +64,7 @@ type DataAzurermSignalrService interface {
 	ResourceGroupNameInput() *string
 	SecondaryAccessKey() *string
 	SecondaryConnectionString() *string
+	ServerlessConnectionTimeoutInSeconds() *float64
 	ServerPort() *float64
 	Tags() cdktf.StringMap
 	// Experimental.
@@ -71,6 +75,7 @@ type DataAzurermSignalrService interface {
 	TerraformResourceType() *string
 	Timeouts() DataAzurermSignalrServiceTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TlsClientCertEnabled() cdktf.IResolvable
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -115,6 +120,16 @@ type DataAzurermSignalrService interface {
 // The jsii proxy struct for DataAzurermSignalrService
 type jsiiProxy_DataAzurermSignalrService struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataAzurermSignalrService) AadAuthEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"aadAuthEnabled",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAzurermSignalrService) CdktfStack() cdktf.TerraformStack {
@@ -237,6 +252,16 @@ func (j *jsiiProxy_DataAzurermSignalrService) Lifecycle() *cdktf.TerraformResour
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermSignalrService) LocalAuthEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"localAuthEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermSignalrService) Location() *string {
 	var returns *string
 	_jsii_.Get(
@@ -307,6 +332,16 @@ func (j *jsiiProxy_DataAzurermSignalrService) Provider() cdktf.TerraformProvider
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermSignalrService) PublicNetworkAccessEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermSignalrService) PublicPort() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -362,6 +397,16 @@ func (j *jsiiProxy_DataAzurermSignalrService) SecondaryConnectionString() *strin
 	_jsii_.Get(
 		j,
 		"secondaryConnectionString",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermSignalrService) ServerlessConnectionTimeoutInSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"serverlessConnectionTimeoutInSeconds",
 		&returns,
 	)
 	return returns
@@ -432,6 +477,16 @@ func (j *jsiiProxy_DataAzurermSignalrService) TimeoutsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermSignalrService) TlsClientCertEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"tlsClientCertEnabled",
 		&returns,
 	)
 	return returns

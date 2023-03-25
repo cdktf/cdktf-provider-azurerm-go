@@ -50,8 +50,16 @@ type SubscriptionPolicyAssignmentConfig struct {
 	NonComplianceMessage interface{} `field:"optional" json:"nonComplianceMessage" yaml:"nonComplianceMessage"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/subscription_policy_assignment#not_scopes SubscriptionPolicyAssignment#not_scopes}.
 	NotScopes *[]*string `field:"optional" json:"notScopes" yaml:"notScopes"`
+	// overrides block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/subscription_policy_assignment#overrides SubscriptionPolicyAssignment#overrides}
+	Overrides interface{} `field:"optional" json:"overrides" yaml:"overrides"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/subscription_policy_assignment#parameters SubscriptionPolicyAssignment#parameters}.
 	Parameters *string `field:"optional" json:"parameters" yaml:"parameters"`
+	// resource_selectors block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/subscription_policy_assignment#resource_selectors SubscriptionPolicyAssignment#resource_selectors}
+	ResourceSelectors interface{} `field:"optional" json:"resourceSelectors" yaml:"resourceSelectors"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/subscription_policy_assignment#timeouts SubscriptionPolicyAssignment#timeouts}

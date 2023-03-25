@@ -56,6 +56,14 @@ func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) validateSetGeoBackupKeyVaultKeyIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) validateSetGeoBackupUserAssignedIdentityIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) validateSetInternalValueParameters(val *MysqlFlexibleServerCustomerManagedKey) error {
 	return nil
 }

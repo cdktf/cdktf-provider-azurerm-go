@@ -70,6 +70,8 @@ type SubscriptionPolicyAssignment interface {
 	NotScopes() *[]*string
 	SetNotScopes(val *[]*string)
 	NotScopesInput() *[]*string
+	Overrides() SubscriptionPolicyAssignmentOverridesList
+	OverridesInput() interface{}
 	Parameters() *string
 	SetParameters(val *string)
 	ParametersInput() *string
@@ -86,6 +88,8 @@ type SubscriptionPolicyAssignment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ResourceSelectors() SubscriptionPolicyAssignmentResourceSelectorsList
+	ResourceSelectorsInput() interface{}
 	SubscriptionId() *string
 	SetSubscriptionId(val *string)
 	SubscriptionIdInput() *string
@@ -124,6 +128,8 @@ type SubscriptionPolicyAssignment interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutIdentity(value *SubscriptionPolicyAssignmentIdentity)
 	PutNonComplianceMessage(value interface{})
+	PutOverrides(value interface{})
+	PutResourceSelectors(value interface{})
 	PutTimeouts(value *SubscriptionPolicyAssignmentTimeouts)
 	ResetDescription()
 	ResetDisplayName()
@@ -137,7 +143,9 @@ type SubscriptionPolicyAssignment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetOverrides()
 	ResetParameters()
+	ResetResourceSelectors()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -454,6 +462,26 @@ func (j *jsiiProxy_SubscriptionPolicyAssignment) NotScopesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_SubscriptionPolicyAssignment) Overrides() SubscriptionPolicyAssignmentOverridesList {
+	var returns SubscriptionPolicyAssignmentOverridesList
+	_jsii_.Get(
+		j,
+		"overrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SubscriptionPolicyAssignment) OverridesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"overridesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SubscriptionPolicyAssignment) Parameters() *string {
 	var returns *string
 	_jsii_.Get(
@@ -519,6 +547,26 @@ func (j *jsiiProxy_SubscriptionPolicyAssignment) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SubscriptionPolicyAssignment) ResourceSelectors() SubscriptionPolicyAssignmentResourceSelectorsList {
+	var returns SubscriptionPolicyAssignmentResourceSelectorsList
+	_jsii_.Get(
+		j,
+		"resourceSelectors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SubscriptionPolicyAssignment) ResourceSelectorsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resourceSelectorsInput",
 		&returns,
 	)
 	return returns
@@ -1098,6 +1146,28 @@ func (s *jsiiProxy_SubscriptionPolicyAssignment) PutNonComplianceMessage(value i
 	)
 }
 
+func (s *jsiiProxy_SubscriptionPolicyAssignment) PutOverrides(value interface{}) {
+	if err := s.validatePutOverridesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putOverrides",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SubscriptionPolicyAssignment) PutResourceSelectors(value interface{}) {
+	if err := s.validatePutResourceSelectorsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putResourceSelectors",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SubscriptionPolicyAssignment) PutTimeouts(value *SubscriptionPolicyAssignmentTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1189,10 +1259,26 @@ func (s *jsiiProxy_SubscriptionPolicyAssignment) ResetOverrideLogicalId() {
 	)
 }
 
+func (s *jsiiProxy_SubscriptionPolicyAssignment) ResetOverrides() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOverrides",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SubscriptionPolicyAssignment) ResetParameters() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SubscriptionPolicyAssignment) ResetResourceSelectors() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetResourceSelectors",
 		nil, // no parameters
 	)
 }

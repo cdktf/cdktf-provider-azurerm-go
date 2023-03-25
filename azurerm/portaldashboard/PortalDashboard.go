@@ -104,7 +104,6 @@ type PortalDashboard interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *PortalDashboardTimeouts)
-	ResetDashboardProperties()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -861,14 +860,6 @@ func (p *jsiiProxy_PortalDashboard) PutTimeouts(value *PortalDashboardTimeouts) 
 		p,
 		"putTimeouts",
 		[]interface{}{value},
-	)
-}
-
-func (p *jsiiProxy_PortalDashboard) ResetDashboardProperties() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetDashboardProperties",
-		nil, // no parameters
 	)
 }
 

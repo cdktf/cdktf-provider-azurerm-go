@@ -1232,6 +1232,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "logAnalyticsWorkspaceId", GoGetter: "LogAnalyticsWorkspaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "msiAuthForMonitoringEnabled", GoGetter: "MsiAuthForMonitoringEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "omsAgentIdentity", GoGetter: "OmsAgentIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

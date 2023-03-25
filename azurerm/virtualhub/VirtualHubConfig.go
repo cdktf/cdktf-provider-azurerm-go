@@ -27,6 +27,8 @@ type VirtualHubConfig struct {
 	ResourceGroupName *string `field:"required" json:"resourceGroupName" yaml:"resourceGroupName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_hub#address_prefix VirtualHub#address_prefix}.
 	AddressPrefix *string `field:"optional" json:"addressPrefix" yaml:"addressPrefix"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_hub#hub_routing_preference VirtualHub#hub_routing_preference}.
+	HubRoutingPreference *string `field:"optional" json:"hubRoutingPreference" yaml:"hubRoutingPreference"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_hub#id VirtualHub#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

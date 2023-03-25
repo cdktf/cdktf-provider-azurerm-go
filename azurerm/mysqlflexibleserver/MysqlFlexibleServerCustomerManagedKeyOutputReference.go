@@ -27,6 +27,12 @@ type MysqlFlexibleServerCustomerManagedKeyOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GeoBackupKeyVaultKeyId() *string
+	SetGeoBackupKeyVaultKeyId(val *string)
+	GeoBackupKeyVaultKeyIdInput() *string
+	GeoBackupUserAssignedIdentityId() *string
+	SetGeoBackupUserAssignedIdentityId(val *string)
+	GeoBackupUserAssignedIdentityIdInput() *string
 	InternalValue() *MysqlFlexibleServerCustomerManagedKey
 	SetInternalValue(val *MysqlFlexibleServerCustomerManagedKey)
 	KeyVaultKeyId() *string
@@ -67,6 +73,8 @@ type MysqlFlexibleServerCustomerManagedKeyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetGeoBackupKeyVaultKeyId()
+	ResetGeoBackupUserAssignedIdentityId()
 	ResetKeyVaultKeyId()
 	ResetPrimaryUserAssignedIdentityId()
 	// Produce the Token's value at resolution time.
@@ -119,6 +127,46 @@ func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) Fqn() *
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) GeoBackupKeyVaultKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"geoBackupKeyVaultKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) GeoBackupKeyVaultKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"geoBackupKeyVaultKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) GeoBackupUserAssignedIdentityId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"geoBackupUserAssignedIdentityId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) GeoBackupUserAssignedIdentityIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"geoBackupUserAssignedIdentityIdInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +288,28 @@ func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference)SetCompl
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference)SetGeoBackupKeyVaultKeyId(val *string) {
+	if err := j.validateSetGeoBackupKeyVaultKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"geoBackupKeyVaultKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference)SetGeoBackupUserAssignedIdentityId(val *string) {
+	if err := j.validateSetGeoBackupUserAssignedIdentityIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"geoBackupUserAssignedIdentityId",
 		val,
 	)
 }
@@ -483,6 +553,22 @@ func (m *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) ResetGeoBackupKeyVaultKeyId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetGeoBackupKeyVaultKeyId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) ResetGeoBackupUserAssignedIdentityId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetGeoBackupUserAssignedIdentityId",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MysqlFlexibleServerCustomerManagedKeyOutputReference) ResetKeyVaultKeyId() {

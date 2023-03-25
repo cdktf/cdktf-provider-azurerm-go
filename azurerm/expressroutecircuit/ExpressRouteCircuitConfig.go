@@ -31,6 +31,8 @@ type ExpressRouteCircuitConfig struct {
 	Sku *ExpressRouteCircuitSku `field:"required" json:"sku" yaml:"sku"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_circuit#allow_classic_operations ExpressRouteCircuit#allow_classic_operations}.
 	AllowClassicOperations interface{} `field:"optional" json:"allowClassicOperations" yaml:"allowClassicOperations"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_circuit#authorization_key ExpressRouteCircuit#authorization_key}.
+	AuthorizationKey *string `field:"optional" json:"authorizationKey" yaml:"authorizationKey"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_circuit#bandwidth_in_gbps ExpressRouteCircuit#bandwidth_in_gbps}.
 	BandwidthInGbps *float64 `field:"optional" json:"bandwidthInGbps" yaml:"bandwidthInGbps"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_circuit#bandwidth_in_mbps ExpressRouteCircuit#bandwidth_in_mbps}.

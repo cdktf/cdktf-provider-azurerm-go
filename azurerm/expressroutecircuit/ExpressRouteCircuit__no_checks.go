@@ -76,6 +76,10 @@ func (j *jsiiProxy_ExpressRouteCircuit) validateSetAllowClassicOperationsParamet
 	return nil
 }
 
+func (j *jsiiProxy_ExpressRouteCircuit) validateSetAuthorizationKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRouteCircuit) validateSetBandwidthInGbpsParameters(val *float64) error {
 	return nil
 }

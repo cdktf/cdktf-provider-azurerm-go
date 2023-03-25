@@ -70,6 +70,8 @@ type ResourceGroupPolicyAssignment interface {
 	NotScopes() *[]*string
 	SetNotScopes(val *[]*string)
 	NotScopesInput() *[]*string
+	Overrides() ResourceGroupPolicyAssignmentOverridesList
+	OverridesInput() interface{}
 	Parameters() *string
 	SetParameters(val *string)
 	ParametersInput() *string
@@ -89,6 +91,8 @@ type ResourceGroupPolicyAssignment interface {
 	ResourceGroupId() *string
 	SetResourceGroupId(val *string)
 	ResourceGroupIdInput() *string
+	ResourceSelectors() ResourceGroupPolicyAssignmentResourceSelectorsList
+	ResourceSelectorsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -124,6 +128,8 @@ type ResourceGroupPolicyAssignment interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutIdentity(value *ResourceGroupPolicyAssignmentIdentity)
 	PutNonComplianceMessage(value interface{})
+	PutOverrides(value interface{})
+	PutResourceSelectors(value interface{})
 	PutTimeouts(value *ResourceGroupPolicyAssignmentTimeouts)
 	ResetDescription()
 	ResetDisplayName()
@@ -137,7 +143,9 @@ type ResourceGroupPolicyAssignment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetOverrides()
 	ResetParameters()
+	ResetResourceSelectors()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -454,6 +462,26 @@ func (j *jsiiProxy_ResourceGroupPolicyAssignment) NotScopesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ResourceGroupPolicyAssignment) Overrides() ResourceGroupPolicyAssignmentOverridesList {
+	var returns ResourceGroupPolicyAssignmentOverridesList
+	_jsii_.Get(
+		j,
+		"overrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ResourceGroupPolicyAssignment) OverridesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"overridesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ResourceGroupPolicyAssignment) Parameters() *string {
 	var returns *string
 	_jsii_.Get(
@@ -539,6 +567,26 @@ func (j *jsiiProxy_ResourceGroupPolicyAssignment) ResourceGroupIdInput() *string
 	_jsii_.Get(
 		j,
 		"resourceGroupIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ResourceGroupPolicyAssignment) ResourceSelectors() ResourceGroupPolicyAssignmentResourceSelectorsList {
+	var returns ResourceGroupPolicyAssignmentResourceSelectorsList
+	_jsii_.Get(
+		j,
+		"resourceSelectors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ResourceGroupPolicyAssignment) ResourceSelectorsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resourceSelectorsInput",
 		&returns,
 	)
 	return returns
@@ -1098,6 +1146,28 @@ func (r *jsiiProxy_ResourceGroupPolicyAssignment) PutNonComplianceMessage(value 
 	)
 }
 
+func (r *jsiiProxy_ResourceGroupPolicyAssignment) PutOverrides(value interface{}) {
+	if err := r.validatePutOverridesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putOverrides",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_ResourceGroupPolicyAssignment) PutResourceSelectors(value interface{}) {
+	if err := r.validatePutResourceSelectorsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putResourceSelectors",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_ResourceGroupPolicyAssignment) PutTimeouts(value *ResourceGroupPolicyAssignmentTimeouts) {
 	if err := r.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1189,10 +1259,26 @@ func (r *jsiiProxy_ResourceGroupPolicyAssignment) ResetOverrideLogicalId() {
 	)
 }
 
+func (r *jsiiProxy_ResourceGroupPolicyAssignment) ResetOverrides() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetOverrides",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_ResourceGroupPolicyAssignment) ResetParameters() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ResourceGroupPolicyAssignment) ResetResourceSelectors() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetResourceSelectors",
 		nil, // no parameters
 	)
 }

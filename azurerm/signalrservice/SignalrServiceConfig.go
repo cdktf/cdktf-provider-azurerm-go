@@ -29,6 +29,8 @@ type SignalrServiceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service#sku SignalrService#sku}
 	Sku *SignalrServiceSku `field:"required" json:"sku" yaml:"sku"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service#aad_auth_enabled SignalrService#aad_auth_enabled}.
+	AadAuthEnabled interface{} `field:"optional" json:"aadAuthEnabled" yaml:"aadAuthEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service#connectivity_logs_enabled SignalrService#connectivity_logs_enabled}.
 	ConnectivityLogsEnabled interface{} `field:"optional" json:"connectivityLogsEnabled" yaml:"connectivityLogsEnabled"`
 	// cors block.
@@ -40,14 +42,24 @@ type SignalrServiceConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// identity block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service#identity SignalrService#identity}
+	Identity *SignalrServiceIdentity `field:"optional" json:"identity" yaml:"identity"`
 	// live_trace block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service#live_trace SignalrService#live_trace}
 	LiveTrace *SignalrServiceLiveTrace `field:"optional" json:"liveTrace" yaml:"liveTrace"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service#live_trace_enabled SignalrService#live_trace_enabled}.
 	LiveTraceEnabled interface{} `field:"optional" json:"liveTraceEnabled" yaml:"liveTraceEnabled"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service#local_auth_enabled SignalrService#local_auth_enabled}.
+	LocalAuthEnabled interface{} `field:"optional" json:"localAuthEnabled" yaml:"localAuthEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service#messaging_logs_enabled SignalrService#messaging_logs_enabled}.
 	MessagingLogsEnabled interface{} `field:"optional" json:"messagingLogsEnabled" yaml:"messagingLogsEnabled"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service#public_network_access_enabled SignalrService#public_network_access_enabled}.
+	PublicNetworkAccessEnabled interface{} `field:"optional" json:"publicNetworkAccessEnabled" yaml:"publicNetworkAccessEnabled"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service#serverless_connection_timeout_in_seconds SignalrService#serverless_connection_timeout_in_seconds}.
+	ServerlessConnectionTimeoutInSeconds *float64 `field:"optional" json:"serverlessConnectionTimeoutInSeconds" yaml:"serverlessConnectionTimeoutInSeconds"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service#service_mode SignalrService#service_mode}.
 	ServiceMode *string `field:"optional" json:"serviceMode" yaml:"serviceMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service#tags SignalrService#tags}.
@@ -56,6 +68,8 @@ type SignalrServiceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service#timeouts SignalrService#timeouts}
 	Timeouts *SignalrServiceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service#tls_client_cert_enabled SignalrService#tls_client_cert_enabled}.
+	TlsClientCertEnabled interface{} `field:"optional" json:"tlsClientCertEnabled" yaml:"tlsClientCertEnabled"`
 	// upstream_endpoint block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service#upstream_endpoint SignalrService#upstream_endpoint}

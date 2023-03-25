@@ -153,6 +153,68 @@ func (s *jsiiProxy_SubscriptionPolicyAssignment) validatePutNonComplianceMessage
 	return nil
 }
 
+func (s *jsiiProxy_SubscriptionPolicyAssignment) validatePutOverridesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*SubscriptionPolicyAssignmentOverrides:
+		value := value.(*[]*SubscriptionPolicyAssignmentOverrides)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*SubscriptionPolicyAssignmentOverrides:
+		value_ := value.([]*SubscriptionPolicyAssignmentOverrides)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SubscriptionPolicyAssignmentOverrides; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SubscriptionPolicyAssignment) validatePutResourceSelectorsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*SubscriptionPolicyAssignmentResourceSelectors:
+		value := value.(*[]*SubscriptionPolicyAssignmentResourceSelectors)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*SubscriptionPolicyAssignmentResourceSelectors:
+		value_ := value.([]*SubscriptionPolicyAssignmentResourceSelectors)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SubscriptionPolicyAssignmentResourceSelectors; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SubscriptionPolicyAssignment) validatePutTimeoutsParameters(value *SubscriptionPolicyAssignmentTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -60,6 +60,14 @@ func (s *jsiiProxy_SubscriptionPolicyAssignment) validatePutNonComplianceMessage
 	return nil
 }
 
+func (s *jsiiProxy_SubscriptionPolicyAssignment) validatePutOverridesParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SubscriptionPolicyAssignment) validatePutResourceSelectorsParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SubscriptionPolicyAssignment) validatePutTimeoutsParameters(value *SubscriptionPolicyAssignmentTimeouts) error {
 	return nil
 }

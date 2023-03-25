@@ -50,8 +50,16 @@ type ResourceGroupPolicyAssignmentConfig struct {
 	NonComplianceMessage interface{} `field:"optional" json:"nonComplianceMessage" yaml:"nonComplianceMessage"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/resource_group_policy_assignment#not_scopes ResourceGroupPolicyAssignment#not_scopes}.
 	NotScopes *[]*string `field:"optional" json:"notScopes" yaml:"notScopes"`
+	// overrides block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/resource_group_policy_assignment#overrides ResourceGroupPolicyAssignment#overrides}
+	Overrides interface{} `field:"optional" json:"overrides" yaml:"overrides"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/resource_group_policy_assignment#parameters ResourceGroupPolicyAssignment#parameters}.
 	Parameters *string `field:"optional" json:"parameters" yaml:"parameters"`
+	// resource_selectors block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/resource_group_policy_assignment#resource_selectors ResourceGroupPolicyAssignment#resource_selectors}
+	ResourceSelectors interface{} `field:"optional" json:"resourceSelectors" yaml:"resourceSelectors"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/resource_group_policy_assignment#timeouts ResourceGroupPolicyAssignment#timeouts}

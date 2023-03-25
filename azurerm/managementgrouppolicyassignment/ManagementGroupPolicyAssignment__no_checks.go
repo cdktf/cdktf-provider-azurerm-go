@@ -60,6 +60,14 @@ func (m *jsiiProxy_ManagementGroupPolicyAssignment) validatePutNonComplianceMess
 	return nil
 }
 
+func (m *jsiiProxy_ManagementGroupPolicyAssignment) validatePutOverridesParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagementGroupPolicyAssignment) validatePutResourceSelectorsParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagementGroupPolicyAssignment) validatePutTimeoutsParameters(value *ManagementGroupPolicyAssignmentTimeouts) error {
 	return nil
 }

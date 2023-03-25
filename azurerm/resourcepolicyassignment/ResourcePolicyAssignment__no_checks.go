@@ -60,6 +60,14 @@ func (r *jsiiProxy_ResourcePolicyAssignment) validatePutNonComplianceMessagePara
 	return nil
 }
 
+func (r *jsiiProxy_ResourcePolicyAssignment) validatePutOverridesParameters(value interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourcePolicyAssignment) validatePutResourceSelectorsParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourcePolicyAssignment) validatePutTimeoutsParameters(value *ResourcePolicyAssignmentTimeouts) error {
 	return nil
 }

@@ -92,6 +92,10 @@ func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateSetResourceG
 	return nil
 }
 
+func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateSetWorkspaceNameParameters(val *string) error {
 	return nil
 }

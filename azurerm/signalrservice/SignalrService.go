@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service azurerm_signalr_service}.
 type SignalrService interface {
 	cdktf.TerraformResource
+	AadAuthEnabled() interface{}
+	SetAadAuthEnabled(val interface{})
+	AadAuthEnabledInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -44,6 +47,8 @@ type SignalrService interface {
 	Hostname() *string
 	Id() *string
 	SetId(val *string)
+	Identity() SignalrServiceIdentityOutputReference
+	IdentityInput() *SignalrServiceIdentity
 	IdInput() *string
 	IpAddress() *string
 	// Experimental.
@@ -55,6 +60,9 @@ type SignalrService interface {
 	SetLiveTraceEnabled(val interface{})
 	LiveTraceEnabledInput() interface{}
 	LiveTraceInput() *SignalrServiceLiveTrace
+	LocalAuthEnabled() interface{}
+	SetLocalAuthEnabled(val interface{})
+	LocalAuthEnabledInput() interface{}
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
@@ -76,6 +84,9 @@ type SignalrService interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicNetworkAccessEnabled() interface{}
+	SetPublicNetworkAccessEnabled(val interface{})
+	PublicNetworkAccessEnabledInput() interface{}
 	PublicPort() *float64
 	// Experimental.
 	RawOverrides() interface{}
@@ -84,6 +95,9 @@ type SignalrService interface {
 	ResourceGroupNameInput() *string
 	SecondaryAccessKey() *string
 	SecondaryConnectionString() *string
+	ServerlessConnectionTimeoutInSeconds() *float64
+	SetServerlessConnectionTimeoutInSeconds(val *float64)
+	ServerlessConnectionTimeoutInSecondsInput() *float64
 	ServerPort() *float64
 	ServiceMode() *string
 	SetServiceMode(val *string)
@@ -101,6 +115,9 @@ type SignalrService interface {
 	TerraformResourceType() *string
 	Timeouts() SignalrServiceTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TlsClientCertEnabled() interface{}
+	SetTlsClientCertEnabled(val interface{})
+	TlsClientCertEnabledInput() interface{}
 	UpstreamEndpoint() SignalrServiceUpstreamEndpointList
 	UpstreamEndpointInput() interface{}
 	// Experimental.
@@ -129,22 +146,29 @@ type SignalrService interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCors(value interface{})
+	PutIdentity(value *SignalrServiceIdentity)
 	PutLiveTrace(value *SignalrServiceLiveTrace)
 	PutSku(value *SignalrServiceSku)
 	PutTimeouts(value *SignalrServiceTimeouts)
 	PutUpstreamEndpoint(value interface{})
+	ResetAadAuthEnabled()
 	ResetConnectivityLogsEnabled()
 	ResetCors()
 	ResetId()
+	ResetIdentity()
 	ResetLiveTrace()
 	ResetLiveTraceEnabled()
+	ResetLocalAuthEnabled()
 	ResetMessagingLogsEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublicNetworkAccessEnabled()
+	ResetServerlessConnectionTimeoutInSeconds()
 	ResetServiceMode()
 	ResetTags()
 	ResetTimeouts()
+	ResetTlsClientCertEnabled()
 	ResetUpstreamEndpoint()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -159,6 +183,26 @@ type SignalrService interface {
 // The jsii proxy struct for SignalrService
 type jsiiProxy_SignalrService struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SignalrService) AadAuthEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aadAuthEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SignalrService) AadAuthEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aadAuthEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SignalrService) CdktfStack() cdktf.TerraformStack {
@@ -301,6 +345,26 @@ func (j *jsiiProxy_SignalrService) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SignalrService) Identity() SignalrServiceIdentityOutputReference {
+	var returns SignalrServiceIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SignalrService) IdentityInput() *SignalrServiceIdentity {
+	var returns *SignalrServiceIdentity
+	_jsii_.Get(
+		j,
+		"identityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SignalrService) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -366,6 +430,26 @@ func (j *jsiiProxy_SignalrService) LiveTraceInput() *SignalrServiceLiveTrace {
 	_jsii_.Get(
 		j,
 		"liveTraceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SignalrService) LocalAuthEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localAuthEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SignalrService) LocalAuthEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localAuthEnabledInput",
 		&returns,
 	)
 	return returns
@@ -481,6 +565,26 @@ func (j *jsiiProxy_SignalrService) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SignalrService) PublicNetworkAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SignalrService) PublicNetworkAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SignalrService) PublicPort() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -536,6 +640,26 @@ func (j *jsiiProxy_SignalrService) SecondaryConnectionString() *string {
 	_jsii_.Get(
 		j,
 		"secondaryConnectionString",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SignalrService) ServerlessConnectionTimeoutInSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"serverlessConnectionTimeoutInSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SignalrService) ServerlessConnectionTimeoutInSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"serverlessConnectionTimeoutInSecondsInput",
 		&returns,
 	)
 	return returns
@@ -661,6 +785,26 @@ func (j *jsiiProxy_SignalrService) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SignalrService) TlsClientCertEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tlsClientCertEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SignalrService) TlsClientCertEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tlsClientCertEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SignalrService) UpstreamEndpoint() SignalrServiceUpstreamEndpointList {
 	var returns SignalrServiceUpstreamEndpointList
 	_jsii_.Get(
@@ -708,6 +852,17 @@ func NewSignalrService_Override(s SignalrService, scope constructs.Construct, id
 		"@cdktf/provider-azurerm.signalrService.SignalrService",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SignalrService)SetAadAuthEnabled(val interface{}) {
+	if err := j.validateSetAadAuthEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aadAuthEnabled",
+		val,
 	)
 }
 
@@ -790,6 +945,17 @@ func (j *jsiiProxy_SignalrService)SetLiveTraceEnabled(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_SignalrService)SetLocalAuthEnabled(val interface{}) {
+	if err := j.validateSetLocalAuthEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localAuthEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SignalrService)SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
@@ -842,6 +1008,17 @@ func (j *jsiiProxy_SignalrService)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_SignalrService)SetPublicNetworkAccessEnabled(val interface{}) {
+	if err := j.validateSetPublicNetworkAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccessEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SignalrService)SetResourceGroupName(val *string) {
 	if err := j.validateSetResourceGroupNameParameters(val); err != nil {
 		panic(err)
@@ -849,6 +1026,17 @@ func (j *jsiiProxy_SignalrService)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SignalrService)SetServerlessConnectionTimeoutInSeconds(val *float64) {
+	if err := j.validateSetServerlessConnectionTimeoutInSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverlessConnectionTimeoutInSeconds",
 		val,
 	)
 }
@@ -871,6 +1059,17 @@ func (j *jsiiProxy_SignalrService)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SignalrService)SetTlsClientCertEnabled(val interface{}) {
+	if err := j.validateSetTlsClientCertEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsClientCertEnabled",
 		val,
 	)
 }
@@ -1152,6 +1351,17 @@ func (s *jsiiProxy_SignalrService) PutCors(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_SignalrService) PutIdentity(value *SignalrServiceIdentity) {
+	if err := s.validatePutIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putIdentity",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SignalrService) PutLiveTrace(value *SignalrServiceLiveTrace) {
 	if err := s.validatePutLiveTraceParameters(value); err != nil {
 		panic(err)
@@ -1196,6 +1406,14 @@ func (s *jsiiProxy_SignalrService) PutUpstreamEndpoint(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_SignalrService) ResetAadAuthEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAadAuthEnabled",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SignalrService) ResetConnectivityLogsEnabled() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1220,6 +1438,14 @@ func (s *jsiiProxy_SignalrService) ResetId() {
 	)
 }
 
+func (s *jsiiProxy_SignalrService) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SignalrService) ResetLiveTrace() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1236,6 +1462,14 @@ func (s *jsiiProxy_SignalrService) ResetLiveTraceEnabled() {
 	)
 }
 
+func (s *jsiiProxy_SignalrService) ResetLocalAuthEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLocalAuthEnabled",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SignalrService) ResetMessagingLogsEnabled() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1248,6 +1482,22 @@ func (s *jsiiProxy_SignalrService) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SignalrService) ResetPublicNetworkAccessEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPublicNetworkAccessEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SignalrService) ResetServerlessConnectionTimeoutInSeconds() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetServerlessConnectionTimeoutInSeconds",
 		nil, // no parameters
 	)
 }
@@ -1272,6 +1522,14 @@ func (s *jsiiProxy_SignalrService) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SignalrService) ResetTlsClientCertEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTlsClientCertEnabled",
 		nil, // no parameters
 	)
 }

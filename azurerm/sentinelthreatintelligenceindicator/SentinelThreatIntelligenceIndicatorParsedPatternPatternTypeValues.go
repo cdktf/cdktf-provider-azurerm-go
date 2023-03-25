@@ -1,0 +1,6 @@
+package sentinelthreatintelligenceindicator
+
+
+type SentinelThreatIntelligenceIndicatorParsedPatternPatternTypeValues struct {
+}
+
