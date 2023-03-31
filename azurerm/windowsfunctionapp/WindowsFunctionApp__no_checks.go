@@ -200,6 +200,10 @@ func (j *jsiiProxy_WindowsFunctionApp) validateSetVirtualNetworkSubnetIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_WindowsFunctionApp) validateSetZipDeployFileParameters(val *string) error {
+	return nil
+}
+
 func validateNewWindowsFunctionAppParameters(scope constructs.Construct, id *string, config *WindowsFunctionAppConfig) error {
 	return nil
 }

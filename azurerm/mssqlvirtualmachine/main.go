@@ -65,6 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSqlConnectivityUpdatePassword", GoMethod: "ResetSqlConnectivityUpdatePassword"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSqlConnectivityUpdateUsername", GoMethod: "ResetSqlConnectivityUpdateUsername"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSqlInstance", GoMethod: "ResetSqlInstance"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSqlLicenseType", GoMethod: "ResetSqlLicenseType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStorageConfiguration", GoMethod: "ResetStorageConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},

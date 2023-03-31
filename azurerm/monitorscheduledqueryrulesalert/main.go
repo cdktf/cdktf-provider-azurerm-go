@@ -233,6 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "metricTriggerTypeInput", GoGetter: "MetricTriggerTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operator", GoGetter: "Operator"},
 			_jsii_.MemberProperty{JsiiProperty: "operatorInput", GoGetter: "OperatorInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetricColumn", GoMethod: "ResetMetricColumn"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

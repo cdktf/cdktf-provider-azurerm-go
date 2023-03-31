@@ -163,6 +163,14 @@ func (j *jsiiProxy_DatabricksAccessConnectorIdentityOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_DatabricksAccessConnectorIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabricksAccessConnectorIdentityOutputReference) validateSetInternalValueParameters(val *DatabricksAccessConnectorIdentity) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

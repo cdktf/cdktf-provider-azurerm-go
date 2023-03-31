@@ -19,8 +19,6 @@ type MssqlVirtualMachineConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_virtual_machine#sql_license_type MssqlVirtualMachine#sql_license_type}.
-	SqlLicenseType *string `field:"required" json:"sqlLicenseType" yaml:"sqlLicenseType"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_virtual_machine#virtual_machine_id MssqlVirtualMachine#virtual_machine_id}.
 	VirtualMachineId *string `field:"required" json:"virtualMachineId" yaml:"virtualMachineId"`
 	// assessment block.
@@ -58,6 +56,8 @@ type MssqlVirtualMachineConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_virtual_machine#sql_instance MssqlVirtualMachine#sql_instance}
 	SqlInstance *MssqlVirtualMachineSqlInstance `field:"optional" json:"sqlInstance" yaml:"sqlInstance"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_virtual_machine#sql_license_type MssqlVirtualMachine#sql_license_type}.
+	SqlLicenseType *string `field:"optional" json:"sqlLicenseType" yaml:"sqlLicenseType"`
 	// storage_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_virtual_machine#storage_configuration MssqlVirtualMachine#storage_configuration}

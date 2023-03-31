@@ -96,7 +96,7 @@ type WindowsWebAppConfig struct {
 	VirtualNetworkSubnetId *string `field:"optional" json:"virtualNetworkSubnetId" yaml:"virtualNetworkSubnetId"`
 	// The local path and filename of the Zip packaged application to deploy to this Windows Web App.
 	//
-	// **Note:** Using this value requires `WEBSITE_RUN_FROM_PACKAGE=1` on the App in `app_settings`.
+	// **Note:** Using this value requires either `WEBSITE_RUN_FROM_PACKAGE=1` or `SCM_DO_BUILD_DURING_DEPLOYMENT=true` to be set on the App in `app_settings`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_web_app#zip_deploy_file WindowsWebApp#zip_deploy_file}
 	ZipDeployFile *string `field:"optional" json:"zipDeployFile" yaml:"zipDeployFile"`

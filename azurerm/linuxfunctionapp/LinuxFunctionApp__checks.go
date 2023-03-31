@@ -609,6 +609,14 @@ func (j *jsiiProxy_LinuxFunctionApp) validateSetVirtualNetworkSubnetIdParameters
 	return nil
 }
 
+func (j *jsiiProxy_LinuxFunctionApp) validateSetZipDeployFileParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewLinuxFunctionAppParameters(scope constructs.Construct, id *string, config *LinuxFunctionAppConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

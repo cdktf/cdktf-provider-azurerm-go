@@ -140,5 +140,11 @@ type WindowsFunctionAppConfig struct {
 	Timeouts *WindowsFunctionAppTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_function_app#virtual_network_subnet_id WindowsFunctionApp#virtual_network_subnet_id}.
 	VirtualNetworkSubnetId *string `field:"optional" json:"virtualNetworkSubnetId" yaml:"virtualNetworkSubnetId"`
+	// The local path and filename of the Zip packaged application to deploy to this Windows Function App.
+	//
+	// **Note:** Using this value requires `WEBSITE_RUN_FROM_PACKAGE=1` to be set on the App in `app_settings`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/windows_function_app#zip_deploy_file WindowsFunctionApp#zip_deploy_file}
+	ZipDeployFile *string `field:"optional" json:"zipDeployFile" yaml:"zipDeployFile"`
 }
 

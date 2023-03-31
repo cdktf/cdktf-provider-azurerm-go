@@ -76,6 +76,7 @@ type WebApplicationFirewallPolicyCustomRulesMatchConditionsOutputReference inter
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutMatchVariables(value interface{})
+	ResetMatchValues()
 	ResetNegationCondition()
 	ResetTransforms()
 	// Produce the Token's value at resolution time.
@@ -584,6 +585,14 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyCustomRulesMatchConditionsOutputR
 		w,
 		"putMatchVariables",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WebApplicationFirewallPolicyCustomRulesMatchConditionsOutputReference) ResetMatchValues() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetMatchValues",
+		nil, // no parameters
 	)
 }
 

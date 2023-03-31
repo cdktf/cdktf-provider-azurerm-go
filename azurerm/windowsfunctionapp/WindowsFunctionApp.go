@@ -150,6 +150,9 @@ type WindowsFunctionApp interface {
 	VirtualNetworkSubnetId() *string
 	SetVirtualNetworkSubnetId(val *string)
 	VirtualNetworkSubnetIdInput() *string
+	ZipDeployFile() *string
+	SetZipDeployFile(val *string)
+	ZipDeployFileInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -213,6 +216,7 @@ type WindowsFunctionApp interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetVirtualNetworkSubnetId()
+	ResetZipDeployFile()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -1088,6 +1092,26 @@ func (j *jsiiProxy_WindowsFunctionApp) VirtualNetworkSubnetIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WindowsFunctionApp) ZipDeployFile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zipDeployFile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsFunctionApp) ZipDeployFileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zipDeployFileInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/windows_function_app azurerm_windows_function_app} Resource.
 func NewWindowsFunctionApp(scope constructs.Construct, id *string, config *WindowsFunctionAppConfig) WindowsFunctionApp {
@@ -1421,6 +1445,17 @@ func (j *jsiiProxy_WindowsFunctionApp)SetVirtualNetworkSubnetId(val *string) {
 	_jsii_.Set(
 		j,
 		"virtualNetworkSubnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsFunctionApp)SetZipDeployFile(val *string) {
+	if err := j.validateSetZipDeployFileParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zipDeployFile",
 		val,
 	)
 }
@@ -2002,6 +2037,14 @@ func (w *jsiiProxy_WindowsFunctionApp) ResetVirtualNetworkSubnetId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetVirtualNetworkSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsFunctionApp) ResetZipDeployFile() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetZipDeployFile",
 		nil, // no parameters
 	)
 }

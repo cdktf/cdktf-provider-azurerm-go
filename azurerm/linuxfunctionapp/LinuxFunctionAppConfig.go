@@ -140,5 +140,11 @@ type LinuxFunctionAppConfig struct {
 	Timeouts *LinuxFunctionAppTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app#virtual_network_subnet_id LinuxFunctionApp#virtual_network_subnet_id}.
 	VirtualNetworkSubnetId *string `field:"optional" json:"virtualNetworkSubnetId" yaml:"virtualNetworkSubnetId"`
+	// The local path and filename of the Zip packaged application to deploy to this Linux Function App.
+	//
+	// **Note:** Using this value requires either `WEBSITE_RUN_FROM_PACKAGE=1` or `SCM_DO_BUILD_DURING_DEPLOYMENT=true` to be set on the App in `app_settings`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app#zip_deploy_file LinuxFunctionApp#zip_deploy_file}
+	ZipDeployFile *string `field:"optional" json:"zipDeployFile" yaml:"zipDeployFile"`
 }
 

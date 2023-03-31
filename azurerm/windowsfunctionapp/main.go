@@ -117,6 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVirtualNetworkSubnetId", GoMethod: "ResetVirtualNetworkSubnetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZipDeployFile", GoMethod: "ResetZipDeployFile"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "servicePlanId", GoGetter: "ServicePlanId"},
@@ -149,6 +150,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkSubnetId", GoGetter: "VirtualNetworkSubnetId"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkSubnetIdInput", GoGetter: "VirtualNetworkSubnetIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "zipDeployFile", GoGetter: "ZipDeployFile"},
+			_jsii_.MemberProperty{JsiiProperty: "zipDeployFileInput", GoGetter: "ZipDeployFileInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_WindowsFunctionApp{}

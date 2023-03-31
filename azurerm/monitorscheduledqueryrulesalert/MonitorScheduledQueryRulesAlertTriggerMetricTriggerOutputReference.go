@@ -73,6 +73,7 @@ type MonitorScheduledQueryRulesAlertTriggerMetricTriggerOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMetricColumn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -549,6 +550,14 @@ func (m *jsiiProxy_MonitorScheduledQueryRulesAlertTriggerMetricTriggerOutputRefe
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MonitorScheduledQueryRulesAlertTriggerMetricTriggerOutputReference) ResetMetricColumn() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMetricColumn",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MonitorScheduledQueryRulesAlertTriggerMetricTriggerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

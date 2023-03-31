@@ -200,6 +200,10 @@ func (j *jsiiProxy_LinuxFunctionApp) validateSetVirtualNetworkSubnetIdParameters
 	return nil
 }
 
+func (j *jsiiProxy_LinuxFunctionApp) validateSetZipDeployFileParameters(val *string) error {
+	return nil
+}
+
 func validateNewLinuxFunctionAppParameters(scope constructs.Construct, id *string, config *LinuxFunctionAppConfig) error {
 	return nil
 }

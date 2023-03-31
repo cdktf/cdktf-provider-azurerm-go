@@ -56,6 +56,10 @@ func (j *jsiiProxy_DatabricksAccessConnectorIdentityOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_DatabricksAccessConnectorIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabricksAccessConnectorIdentityOutputReference) validateSetInternalValueParameters(val *DatabricksAccessConnectorIdentity) error {
 	return nil
 }

@@ -145,6 +145,7 @@ type MssqlVirtualMachine interface {
 	ResetSqlConnectivityUpdatePassword()
 	ResetSqlConnectivityUpdateUsername()
 	ResetSqlInstance()
+	ResetSqlLicenseType()
 	ResetStorageConfiguration()
 	ResetTags()
 	ResetTimeouts()
@@ -1272,6 +1273,14 @@ func (m *jsiiProxy_MssqlVirtualMachine) ResetSqlInstance() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetSqlInstance",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlVirtualMachine) ResetSqlLicenseType() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSqlLicenseType",
 		nil, // no parameters
 	)
 }

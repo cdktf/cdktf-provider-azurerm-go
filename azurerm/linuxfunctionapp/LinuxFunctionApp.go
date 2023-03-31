@@ -150,6 +150,9 @@ type LinuxFunctionApp interface {
 	VirtualNetworkSubnetId() *string
 	SetVirtualNetworkSubnetId(val *string)
 	VirtualNetworkSubnetIdInput() *string
+	ZipDeployFile() *string
+	SetZipDeployFile(val *string)
+	ZipDeployFileInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -213,6 +216,7 @@ type LinuxFunctionApp interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetVirtualNetworkSubnetId()
+	ResetZipDeployFile()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -1088,6 +1092,26 @@ func (j *jsiiProxy_LinuxFunctionApp) VirtualNetworkSubnetIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LinuxFunctionApp) ZipDeployFile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zipDeployFile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxFunctionApp) ZipDeployFileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zipDeployFileInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app azurerm_linux_function_app} Resource.
 func NewLinuxFunctionApp(scope constructs.Construct, id *string, config *LinuxFunctionAppConfig) LinuxFunctionApp {
@@ -1421,6 +1445,17 @@ func (j *jsiiProxy_LinuxFunctionApp)SetVirtualNetworkSubnetId(val *string) {
 	_jsii_.Set(
 		j,
 		"virtualNetworkSubnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxFunctionApp)SetZipDeployFile(val *string) {
+	if err := j.validateSetZipDeployFileParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zipDeployFile",
 		val,
 	)
 }
@@ -2002,6 +2037,14 @@ func (l *jsiiProxy_LinuxFunctionApp) ResetVirtualNetworkSubnetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetVirtualNetworkSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxFunctionApp) ResetZipDeployFile() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetZipDeployFile",
 		nil, // no parameters
 	)
 }
