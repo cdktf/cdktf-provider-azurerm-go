@@ -1,0 +1,20 @@
+package subscriptioncostmanagementview
+
+
+type SubscriptionCostManagementViewDataset struct {
+	// aggregation block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/subscription_cost_management_view#aggregation SubscriptionCostManagementView#aggregation}
+	Aggregation interface{} `field:"required" json:"aggregation" yaml:"aggregation"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/subscription_cost_management_view#granularity SubscriptionCostManagementView#granularity}.
+	Granularity *string `field:"required" json:"granularity" yaml:"granularity"`
+	// grouping block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/subscription_cost_management_view#grouping SubscriptionCostManagementView#grouping}
+	Grouping interface{} `field:"optional" json:"grouping" yaml:"grouping"`
+	// sorting block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/subscription_cost_management_view#sorting SubscriptionCostManagementView#sorting}
+	Sorting interface{} `field:"optional" json:"sorting" yaml:"sorting"`
+}
+

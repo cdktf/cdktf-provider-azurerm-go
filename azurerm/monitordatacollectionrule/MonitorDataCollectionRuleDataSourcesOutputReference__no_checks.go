@@ -44,11 +44,31 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validate
 	return nil
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validatePutDataImportParameters(value *MonitorDataCollectionRuleDataSourcesDataImport) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validatePutExtensionParameters(value interface{}) error {
 	return nil
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validatePutIisLogParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validatePutLogFileParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validatePutPerformanceCounterParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validatePutPlatformTelemetryParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validatePutPrometheusForwarderParameters(value interface{}) error {
 	return nil
 }
 
@@ -57,6 +77,10 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validate
 }
 
 func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validatePutWindowsEventLogParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validatePutWindowsFirewallLogParameters(value interface{}) error {
 	return nil
 }
 

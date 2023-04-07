@@ -20,6 +20,7 @@ type DataAzurermMonitorDataCollectionRule interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DataCollectionEndpointId() *string
 	DataFlow() DataAzurermMonitorDataCollectionRuleDataFlowList
 	DataSources() DataAzurermMonitorDataCollectionRuleDataSourcesList
 	// Experimental.
@@ -38,7 +39,9 @@ type DataAzurermMonitorDataCollectionRule interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() DataAzurermMonitorDataCollectionRuleIdentityList
 	IdInput() *string
+	ImmutableId() *string
 	Kind() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -59,6 +62,7 @@ type DataAzurermMonitorDataCollectionRule interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	StreamDeclaration() DataAzurermMonitorDataCollectionRuleStreamDeclarationList
 	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -139,6 +143,16 @@ func (j *jsiiProxy_DataAzurermMonitorDataCollectionRule) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRule) DataCollectionEndpointId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataCollectionEndpointId",
 		&returns,
 	)
 	return returns
@@ -234,11 +248,31 @@ func (j *jsiiProxy_DataAzurermMonitorDataCollectionRule) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRule) Identity() DataAzurermMonitorDataCollectionRuleIdentityList {
+	var returns DataAzurermMonitorDataCollectionRuleIdentityList
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermMonitorDataCollectionRule) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRule) ImmutableId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"immutableId",
 		&returns,
 	)
 	return returns
@@ -339,6 +373,16 @@ func (j *jsiiProxy_DataAzurermMonitorDataCollectionRule) ResourceGroupNameInput(
 	_jsii_.Get(
 		j,
 		"resourceGroupNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRule) StreamDeclaration() DataAzurermMonitorDataCollectionRuleStreamDeclarationList {
+	var returns DataAzurermMonitorDataCollectionRuleStreamDeclarationList
+	_jsii_.Get(
+		j,
+		"streamDeclaration",
 		&returns,
 	)
 	return returns

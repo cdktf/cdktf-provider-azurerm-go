@@ -90,6 +90,17 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validate
 	return nil
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validatePutDataImportParameters(value *MonitorDataCollectionRuleDataSourcesDataImport) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validatePutExtensionParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -121,6 +132,68 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validate
 	return nil
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validatePutIisLogParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*MonitorDataCollectionRuleDataSourcesIisLog:
+		value := value.(*[]*MonitorDataCollectionRuleDataSourcesIisLog)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*MonitorDataCollectionRuleDataSourcesIisLog:
+		value_ := value.([]*MonitorDataCollectionRuleDataSourcesIisLog)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorDataCollectionRuleDataSourcesIisLog; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validatePutLogFileParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*MonitorDataCollectionRuleDataSourcesLogFile:
+		value := value.(*[]*MonitorDataCollectionRuleDataSourcesLogFile)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*MonitorDataCollectionRuleDataSourcesLogFile:
+		value_ := value.([]*MonitorDataCollectionRuleDataSourcesLogFile)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorDataCollectionRuleDataSourcesLogFile; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validatePutPerformanceCounterParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -146,6 +219,68 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validate
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorDataCollectionRuleDataSourcesPerformanceCounter; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validatePutPlatformTelemetryParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*MonitorDataCollectionRuleDataSourcesPlatformTelemetry:
+		value := value.(*[]*MonitorDataCollectionRuleDataSourcesPlatformTelemetry)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*MonitorDataCollectionRuleDataSourcesPlatformTelemetry:
+		value_ := value.([]*MonitorDataCollectionRuleDataSourcesPlatformTelemetry)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorDataCollectionRuleDataSourcesPlatformTelemetry; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validatePutPrometheusForwarderParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*MonitorDataCollectionRuleDataSourcesPrometheusForwarder:
+		value := value.(*[]*MonitorDataCollectionRuleDataSourcesPrometheusForwarder)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*MonitorDataCollectionRuleDataSourcesPrometheusForwarder:
+		value_ := value.([]*MonitorDataCollectionRuleDataSourcesPrometheusForwarder)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorDataCollectionRuleDataSourcesPrometheusForwarder; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -208,6 +343,37 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validate
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorDataCollectionRuleDataSourcesWindowsEventLog; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) validatePutWindowsFirewallLogParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*MonitorDataCollectionRuleDataSourcesWindowsFirewallLog:
+		value := value.(*[]*MonitorDataCollectionRuleDataSourcesWindowsFirewallLog)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*MonitorDataCollectionRuleDataSourcesWindowsFirewallLog:
+		value_ := value.([]*MonitorDataCollectionRuleDataSourcesWindowsFirewallLog)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorDataCollectionRuleDataSourcesWindowsFirewallLog; received %#v (a %T)", value, value)
 		}
 	}
 

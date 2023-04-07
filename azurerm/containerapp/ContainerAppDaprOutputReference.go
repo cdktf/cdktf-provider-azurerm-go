@@ -70,6 +70,7 @@ type ContainerAppDaprOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAppPort()
 	ResetAppProtocol()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -516,6 +517,14 @@ func (c *jsiiProxy_ContainerAppDaprOutputReference) InterpolationForAttribute(pr
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerAppDaprOutputReference) ResetAppPort() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAppPort",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerAppDaprOutputReference) ResetAppProtocol() {

@@ -48,7 +48,31 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) validat
 	return nil
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) validatePutEventHubParameters(value *MonitorDataCollectionRuleDestinationsEventHub) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) validatePutEventHubDirectParameters(value *MonitorDataCollectionRuleDestinationsEventHubDirect) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) validatePutLogAnalyticsParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) validatePutMonitorAccountParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) validatePutStorageBlobParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) validatePutStorageBlobDirectParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) validatePutStorageTableDirectParameters(value interface{}) error {
 	return nil
 }
 

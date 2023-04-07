@@ -64,6 +64,14 @@ func (m *jsiiProxy_MonitorDataCollectionRule) validatePutDestinationsParameters(
 	return nil
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRule) validatePutIdentityParameters(value *MonitorDataCollectionRuleIdentity) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRule) validatePutStreamDeclarationParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRule) validatePutTimeoutsParameters(value *MonitorDataCollectionRuleTimeouts) error {
 	return nil
 }
@@ -81,6 +89,10 @@ func validateMonitorDataCollectionRule_IsTerraformResourceParameters(x interface
 }
 
 func (j *jsiiProxy_MonitorDataCollectionRule) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRule) validateSetDataCollectionEndpointIdParameters(val *string) error {
 	return nil
 }
 

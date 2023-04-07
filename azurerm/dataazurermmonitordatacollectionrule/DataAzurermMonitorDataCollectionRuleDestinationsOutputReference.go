@@ -26,11 +26,17 @@ type DataAzurermMonitorDataCollectionRuleDestinationsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EventHub() DataAzurermMonitorDataCollectionRuleDestinationsEventHubList
+	EventHubDirect() DataAzurermMonitorDataCollectionRuleDestinationsEventHubDirectList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataAzurermMonitorDataCollectionRuleDestinations
 	SetInternalValue(val *DataAzurermMonitorDataCollectionRuleDestinations)
 	LogAnalytics() DataAzurermMonitorDataCollectionRuleDestinationsLogAnalyticsList
+	MonitorAccount() DataAzurermMonitorDataCollectionRuleDestinationsMonitorAccountList
+	StorageBlob() DataAzurermMonitorDataCollectionRuleDestinationsStorageBlobList
+	StorageBlobDirect() DataAzurermMonitorDataCollectionRuleDestinationsStorageBlobDirectList
+	StorageTableDirect() DataAzurermMonitorDataCollectionRuleDestinationsStorageTableDirectList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -118,6 +124,26 @@ func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsOutputReference) EventHub() DataAzurermMonitorDataCollectionRuleDestinationsEventHubList {
+	var returns DataAzurermMonitorDataCollectionRuleDestinationsEventHubList
+	_jsii_.Get(
+		j,
+		"eventHub",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsOutputReference) EventHubDirect() DataAzurermMonitorDataCollectionRuleDestinationsEventHubDirectList {
+	var returns DataAzurermMonitorDataCollectionRuleDestinationsEventHubDirectList
+	_jsii_.Get(
+		j,
+		"eventHubDirect",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -143,6 +169,46 @@ func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsOutputReferen
 	_jsii_.Get(
 		j,
 		"logAnalytics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsOutputReference) MonitorAccount() DataAzurermMonitorDataCollectionRuleDestinationsMonitorAccountList {
+	var returns DataAzurermMonitorDataCollectionRuleDestinationsMonitorAccountList
+	_jsii_.Get(
+		j,
+		"monitorAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsOutputReference) StorageBlob() DataAzurermMonitorDataCollectionRuleDestinationsStorageBlobList {
+	var returns DataAzurermMonitorDataCollectionRuleDestinationsStorageBlobList
+	_jsii_.Get(
+		j,
+		"storageBlob",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsOutputReference) StorageBlobDirect() DataAzurermMonitorDataCollectionRuleDestinationsStorageBlobDirectList {
+	var returns DataAzurermMonitorDataCollectionRuleDestinationsStorageBlobDirectList
+	_jsii_.Get(
+		j,
+		"storageBlobDirect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsOutputReference) StorageTableDirect() DataAzurermMonitorDataCollectionRuleDestinationsStorageTableDirectList {
+	var returns DataAzurermMonitorDataCollectionRuleDestinationsStorageTableDirectList
+	_jsii_.Get(
+		j,
+		"storageTableDirect",
 		&returns,
 	)
 	return returns

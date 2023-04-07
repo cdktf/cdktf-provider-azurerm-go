@@ -38,6 +38,8 @@ type SnapshotConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/snapshot#incremental_enabled Snapshot#incremental_enabled}.
+	IncrementalEnabled interface{} `field:"optional" json:"incrementalEnabled" yaml:"incrementalEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/snapshot#source_resource_id Snapshot#source_resource_id}.
 	SourceResourceId *string `field:"optional" json:"sourceResourceId" yaml:"sourceResourceId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/snapshot#source_uri Snapshot#source_uri}.

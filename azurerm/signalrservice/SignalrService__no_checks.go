@@ -100,6 +100,10 @@ func (j *jsiiProxy_SignalrService) validateSetConnectivityLogsEnabledParameters(
 	return nil
 }
 
+func (j *jsiiProxy_SignalrService) validateSetHttpRequestLogsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SignalrService) validateSetIdParameters(val *string) error {
 	return nil
 }

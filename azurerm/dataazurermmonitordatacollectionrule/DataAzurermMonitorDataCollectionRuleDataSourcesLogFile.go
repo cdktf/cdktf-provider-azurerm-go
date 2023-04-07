@@ -1,0 +1,6 @@
+package dataazurermmonitordatacollectionrule
+
+
+type DataAzurermMonitorDataCollectionRuleDataSourcesLogFile struct {
+}
+

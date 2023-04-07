@@ -33,6 +33,8 @@ type WebPubsubHub interface {
 	SetDependsOn(val *[]*string)
 	EventHandler() WebPubsubHubEventHandlerList
 	EventHandlerInput() interface{}
+	EventListener() WebPubsubHubEventListenerList
+	EventListenerInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -100,9 +102,11 @@ type WebPubsubHub interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEventHandler(value interface{})
+	PutEventListener(value interface{})
 	PutTimeouts(value *WebPubsubHubTimeouts)
 	ResetAnonymousConnectionsEnabled()
 	ResetEventHandler()
+	ResetEventListener()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -208,6 +212,26 @@ func (j *jsiiProxy_WebPubsubHub) EventHandlerInput() interface{} {
 	_jsii_.Get(
 		j,
 		"eventHandlerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebPubsubHub) EventListener() WebPubsubHubEventListenerList {
+	var returns WebPubsubHubEventListenerList
+	_jsii_.Get(
+		j,
+		"eventListener",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebPubsubHub) EventListenerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"eventListenerInput",
 		&returns,
 	)
 	return returns
@@ -819,6 +843,17 @@ func (w *jsiiProxy_WebPubsubHub) PutEventHandler(value interface{}) {
 	)
 }
 
+func (w *jsiiProxy_WebPubsubHub) PutEventListener(value interface{}) {
+	if err := w.validatePutEventListenerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putEventListener",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WebPubsubHub) PutTimeouts(value *WebPubsubHubTimeouts) {
 	if err := w.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -842,6 +877,14 @@ func (w *jsiiProxy_WebPubsubHub) ResetEventHandler() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetEventHandler",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WebPubsubHub) ResetEventListener() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetEventListener",
 		nil, // no parameters
 	)
 }

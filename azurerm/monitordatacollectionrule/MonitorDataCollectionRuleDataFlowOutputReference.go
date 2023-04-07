@@ -10,6 +10,9 @@ import (
 
 type MonitorDataCollectionRuleDataFlowOutputReference interface {
 	cdktf.ComplexObject
+	BuiltInTransform() *string
+	SetBuiltInTransform(val *string)
+	BuiltInTransformInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,6 +35,9 @@ type MonitorDataCollectionRuleDataFlowOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	OutputStream() *string
+	SetOutputStream(val *string)
+	OutputStreamInput() *string
 	Streams() *[]*string
 	SetStreams(val *[]*string)
 	StreamsInput() *[]*string
@@ -43,6 +49,9 @@ type MonitorDataCollectionRuleDataFlowOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransformKql() *string
+	SetTransformKql(val *string)
+	TransformKqlInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,6 +76,9 @@ type MonitorDataCollectionRuleDataFlowOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBuiltInTransform()
+	ResetOutputStream()
+	ResetTransformKql()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -80,6 +92,26 @@ type MonitorDataCollectionRuleDataFlowOutputReference interface {
 // The jsii proxy struct for MonitorDataCollectionRuleDataFlowOutputReference
 type jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) BuiltInTransform() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"builtInTransform",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) BuiltInTransformInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"builtInTransformInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) ComplexObjectIndex() interface{} {
@@ -152,6 +184,26 @@ func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) InternalVal
 	return returns
 }
 
+func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) OutputStream() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outputStream",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) OutputStreamInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outputStreamInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) Streams() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -192,6 +244,26 @@ func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) TerraformRe
 	return returns
 }
 
+func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) TransformKql() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transformKql",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) TransformKqlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transformKqlInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewMonitorDataCollectionRuleDataFlowOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MonitorDataCollectionRuleDataFlowOutputReference {
 	_init_.Initialize()
@@ -217,6 +289,17 @@ func NewMonitorDataCollectionRuleDataFlowOutputReference_Override(m MonitorDataC
 		"@cdktf/provider-azurerm.monitorDataCollectionRule.MonitorDataCollectionRuleDataFlowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
+	)
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference)SetBuiltInTransform(val *string) {
+	if err := j.validateSetBuiltInTransformParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"builtInTransform",
+		val,
 	)
 }
 
@@ -264,6 +347,17 @@ func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference)SetInternalV
 	)
 }
 
+func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference)SetOutputStream(val *string) {
+	if err := j.validateSetOutputStreamParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"outputStream",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference)SetStreams(val *[]*string) {
 	if err := j.validateSetStreamsParameters(val); err != nil {
 		panic(err)
@@ -293,6 +387,17 @@ func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference)SetTerraform
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference)SetTransformKql(val *string) {
+	if err := j.validateSetTransformKqlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transformKql",
 		val,
 	)
 }
@@ -481,6 +586,30 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) Interpolati
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) ResetBuiltInTransform() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetBuiltInTransform",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) ResetOutputStream() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetOutputStream",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) ResetTransformKql() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTransformKql",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

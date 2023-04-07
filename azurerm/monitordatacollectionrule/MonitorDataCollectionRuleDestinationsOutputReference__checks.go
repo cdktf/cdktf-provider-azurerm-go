@@ -101,6 +101,28 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) validat
 	return nil
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) validatePutEventHubParameters(value *MonitorDataCollectionRuleDestinationsEventHub) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) validatePutEventHubDirectParameters(value *MonitorDataCollectionRuleDestinationsEventHubDirect) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) validatePutLogAnalyticsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -126,6 +148,130 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) validat
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorDataCollectionRuleDestinationsLogAnalytics; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) validatePutMonitorAccountParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*MonitorDataCollectionRuleDestinationsMonitorAccount:
+		value := value.(*[]*MonitorDataCollectionRuleDestinationsMonitorAccount)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*MonitorDataCollectionRuleDestinationsMonitorAccount:
+		value_ := value.([]*MonitorDataCollectionRuleDestinationsMonitorAccount)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorDataCollectionRuleDestinationsMonitorAccount; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) validatePutStorageBlobParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*MonitorDataCollectionRuleDestinationsStorageBlob:
+		value := value.(*[]*MonitorDataCollectionRuleDestinationsStorageBlob)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*MonitorDataCollectionRuleDestinationsStorageBlob:
+		value_ := value.([]*MonitorDataCollectionRuleDestinationsStorageBlob)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorDataCollectionRuleDestinationsStorageBlob; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) validatePutStorageBlobDirectParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*MonitorDataCollectionRuleDestinationsStorageBlobDirect:
+		value := value.(*[]*MonitorDataCollectionRuleDestinationsStorageBlobDirect)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*MonitorDataCollectionRuleDestinationsStorageBlobDirect:
+		value_ := value.([]*MonitorDataCollectionRuleDestinationsStorageBlobDirect)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorDataCollectionRuleDestinationsStorageBlobDirect; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) validatePutStorageTableDirectParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*MonitorDataCollectionRuleDestinationsStorageTableDirect:
+		value := value.(*[]*MonitorDataCollectionRuleDestinationsStorageTableDirect)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*MonitorDataCollectionRuleDestinationsStorageTableDirect:
+		value_ := value.([]*MonitorDataCollectionRuleDestinationsStorageTableDirect)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorDataCollectionRuleDestinationsStorageTableDirect; received %#v (a %T)", value, value)
 		}
 	}
 

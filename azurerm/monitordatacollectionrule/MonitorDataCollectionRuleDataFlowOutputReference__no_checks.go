@@ -48,6 +48,10 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateRes
 	return nil
 }
 
+func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateSetBuiltInTransformParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -64,6 +68,10 @@ func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateSetOutputStreamParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateSetStreamsParameters(val *[]*string) error {
 	return nil
 }
@@ -73,6 +81,10 @@ func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateSet
 }
 
 func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateSetTransformKqlParameters(val *string) error {
 	return nil
 }
 

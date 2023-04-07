@@ -45,6 +45,9 @@ type SignalrService interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Hostname() *string
+	HttpRequestLogsEnabled() interface{}
+	SetHttpRequestLogsEnabled(val interface{})
+	HttpRequestLogsEnabledInput() interface{}
 	Id() *string
 	SetId(val *string)
 	Identity() SignalrServiceIdentityOutputReference
@@ -154,6 +157,7 @@ type SignalrService interface {
 	ResetAadAuthEnabled()
 	ResetConnectivityLogsEnabled()
 	ResetCors()
+	ResetHttpRequestLogsEnabled()
 	ResetId()
 	ResetIdentity()
 	ResetLiveTrace()
@@ -330,6 +334,26 @@ func (j *jsiiProxy_SignalrService) Hostname() *string {
 	_jsii_.Get(
 		j,
 		"hostname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SignalrService) HttpRequestLogsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"httpRequestLogsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SignalrService) HttpRequestLogsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"httpRequestLogsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -912,6 +936,17 @@ func (j *jsiiProxy_SignalrService)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
+func (j *jsiiProxy_SignalrService)SetHttpRequestLogsEnabled(val interface{}) {
+	if err := j.validateSetHttpRequestLogsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpRequestLogsEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SignalrService)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -1426,6 +1461,14 @@ func (s *jsiiProxy_SignalrService) ResetCors() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCors",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SignalrService) ResetHttpRequestLogsEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHttpRequestLogsEnabled",
 		nil, // no parameters
 	)
 }

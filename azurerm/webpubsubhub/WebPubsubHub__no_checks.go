@@ -56,6 +56,10 @@ func (w *jsiiProxy_WebPubsubHub) validatePutEventHandlerParameters(value interfa
 	return nil
 }
 
+func (w *jsiiProxy_WebPubsubHub) validatePutEventListenerParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebPubsubHub) validatePutTimeoutsParameters(value *WebPubsubHubTimeouts) error {
 	return nil
 }

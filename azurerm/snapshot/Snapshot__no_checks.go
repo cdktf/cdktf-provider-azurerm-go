@@ -88,6 +88,10 @@ func (j *jsiiProxy_Snapshot) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Snapshot) validateSetIncrementalEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Snapshot) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -1,0 +1,6 @@
+package dataazurermmonitordatacollectionrule
+
+
+type DataAzurermMonitorDataCollectionRuleDestinationsStorageBlobDirect struct {
+}
+

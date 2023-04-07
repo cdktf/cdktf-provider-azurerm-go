@@ -29,6 +29,10 @@ type WebPubsubHubConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/web_pubsub_hub#event_handler WebPubsubHub#event_handler}
 	EventHandler interface{} `field:"optional" json:"eventHandler" yaml:"eventHandler"`
+	// event_listener block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/web_pubsub_hub#event_listener WebPubsubHub#event_listener}
+	EventListener interface{} `field:"optional" json:"eventListener" yaml:"eventListener"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/web_pubsub_hub#id WebPubsubHub#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

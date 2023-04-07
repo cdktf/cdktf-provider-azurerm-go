@@ -98,6 +98,14 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateRes
 	return nil
 }
 
+func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateSetBuiltInTransformParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -195,6 +203,14 @@ func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateSetOutputStreamParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateSetStreamsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -212,6 +228,14 @@ func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateSet
 }
 
 func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataFlowOutputReference) validateSetTransformKqlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

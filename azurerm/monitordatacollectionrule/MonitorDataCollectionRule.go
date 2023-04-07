@@ -24,6 +24,9 @@ type MonitorDataCollectionRule interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DataCollectionEndpointId() *string
+	SetDataCollectionEndpointId(val *string)
+	DataCollectionEndpointIdInput() *string
 	DataFlow() MonitorDataCollectionRuleDataFlowList
 	DataFlowInput() interface{}
 	DataSources() MonitorDataCollectionRuleDataSourcesOutputReference
@@ -47,7 +50,10 @@ type MonitorDataCollectionRule interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() MonitorDataCollectionRuleIdentityOutputReference
+	IdentityInput() *MonitorDataCollectionRuleIdentity
 	IdInput() *string
+	ImmutableId() *string
 	Kind() *string
 	SetKind(val *string)
 	KindInput() *string
@@ -76,6 +82,8 @@ type MonitorDataCollectionRule interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	StreamDeclaration() MonitorDataCollectionRuleStreamDeclarationList
+	StreamDeclarationInput() interface{}
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -115,14 +123,19 @@ type MonitorDataCollectionRule interface {
 	PutDataFlow(value interface{})
 	PutDataSources(value *MonitorDataCollectionRuleDataSources)
 	PutDestinations(value *MonitorDataCollectionRuleDestinations)
+	PutIdentity(value *MonitorDataCollectionRuleIdentity)
+	PutStreamDeclaration(value interface{})
 	PutTimeouts(value *MonitorDataCollectionRuleTimeouts)
+	ResetDataCollectionEndpointId()
 	ResetDataSources()
 	ResetDescription()
 	ResetId()
+	ResetIdentity()
 	ResetKind()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStreamDeclaration()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -175,6 +188,26 @@ func (j *jsiiProxy_MonitorDataCollectionRule) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRule) DataCollectionEndpointId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataCollectionEndpointId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRule) DataCollectionEndpointIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataCollectionEndpointIdInput",
 		&returns,
 	)
 	return returns
@@ -310,11 +343,41 @@ func (j *jsiiProxy_MonitorDataCollectionRule) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MonitorDataCollectionRule) Identity() MonitorDataCollectionRuleIdentityOutputReference {
+	var returns MonitorDataCollectionRuleIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRule) IdentityInput() *MonitorDataCollectionRuleIdentity {
+	var returns *MonitorDataCollectionRuleIdentity
+	_jsii_.Get(
+		j,
+		"identityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitorDataCollectionRule) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRule) ImmutableId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"immutableId",
 		&returns,
 	)
 	return returns
@@ -450,6 +513,26 @@ func (j *jsiiProxy_MonitorDataCollectionRule) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MonitorDataCollectionRule) StreamDeclaration() MonitorDataCollectionRuleStreamDeclarationList {
+	var returns MonitorDataCollectionRuleStreamDeclarationList
+	_jsii_.Get(
+		j,
+		"streamDeclaration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRule) StreamDeclarationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"streamDeclarationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitorDataCollectionRule) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -565,6 +648,17 @@ func (j *jsiiProxy_MonitorDataCollectionRule)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRule)SetDataCollectionEndpointId(val *string) {
+	if err := j.validateSetDataCollectionEndpointIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataCollectionEndpointId",
 		val,
 	)
 }
@@ -991,6 +1085,28 @@ func (m *jsiiProxy_MonitorDataCollectionRule) PutDestinations(value *MonitorData
 	)
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRule) PutIdentity(value *MonitorDataCollectionRuleIdentity) {
+	if err := m.validatePutIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putIdentity",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRule) PutStreamDeclaration(value interface{}) {
+	if err := m.validatePutStreamDeclarationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putStreamDeclaration",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRule) PutTimeouts(value *MonitorDataCollectionRuleTimeouts) {
 	if err := m.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -999,6 +1115,14 @@ func (m *jsiiProxy_MonitorDataCollectionRule) PutTimeouts(value *MonitorDataColl
 		m,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRule) ResetDataCollectionEndpointId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDataCollectionEndpointId",
+		nil, // no parameters
 	)
 }
 
@@ -1026,6 +1150,14 @@ func (m *jsiiProxy_MonitorDataCollectionRule) ResetId() {
 	)
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRule) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRule) ResetKind() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1038,6 +1170,14 @@ func (m *jsiiProxy_MonitorDataCollectionRule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRule) ResetStreamDeclaration() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetStreamDeclaration",
 		nil, // no parameters
 	)
 }

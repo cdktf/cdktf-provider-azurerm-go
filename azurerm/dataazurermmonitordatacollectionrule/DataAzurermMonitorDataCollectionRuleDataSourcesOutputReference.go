@@ -25,12 +25,17 @@ type DataAzurermMonitorDataCollectionRuleDataSourcesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataImport() DataAzurermMonitorDataCollectionRuleDataSourcesDataImportList
 	Extension() DataAzurermMonitorDataCollectionRuleDataSourcesExtensionList
 	// Experimental.
 	Fqn() *string
+	IisLog() DataAzurermMonitorDataCollectionRuleDataSourcesIisLogList
 	InternalValue() *DataAzurermMonitorDataCollectionRuleDataSources
 	SetInternalValue(val *DataAzurermMonitorDataCollectionRuleDataSources)
+	LogFile() DataAzurermMonitorDataCollectionRuleDataSourcesLogFileList
 	PerformanceCounter() DataAzurermMonitorDataCollectionRuleDataSourcesPerformanceCounterList
+	PlatformTelemetry() DataAzurermMonitorDataCollectionRuleDataSourcesPlatformTelemetryList
+	PrometheusForwarder() DataAzurermMonitorDataCollectionRuleDataSourcesPrometheusForwarderList
 	Syslog() DataAzurermMonitorDataCollectionRuleDataSourcesSyslogList
 	// Experimental.
 	TerraformAttribute() *string
@@ -41,6 +46,7 @@ type DataAzurermMonitorDataCollectionRuleDataSourcesOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	WindowsEventLog() DataAzurermMonitorDataCollectionRuleDataSourcesWindowsEventLogList
+	WindowsFirewallLog() DataAzurermMonitorDataCollectionRuleDataSourcesWindowsFirewallLogList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -110,6 +116,16 @@ func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesOutputReference) DataImport() DataAzurermMonitorDataCollectionRuleDataSourcesDataImportList {
+	var returns DataAzurermMonitorDataCollectionRuleDataSourcesDataImportList
+	_jsii_.Get(
+		j,
+		"dataImport",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesOutputReference) Extension() DataAzurermMonitorDataCollectionRuleDataSourcesExtensionList {
 	var returns DataAzurermMonitorDataCollectionRuleDataSourcesExtensionList
 	_jsii_.Get(
@@ -130,6 +146,16 @@ func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesOutputReference) IisLog() DataAzurermMonitorDataCollectionRuleDataSourcesIisLogList {
+	var returns DataAzurermMonitorDataCollectionRuleDataSourcesIisLogList
+	_jsii_.Get(
+		j,
+		"iisLog",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesOutputReference) InternalValue() *DataAzurermMonitorDataCollectionRuleDataSources {
 	var returns *DataAzurermMonitorDataCollectionRuleDataSources
 	_jsii_.Get(
@@ -140,11 +166,41 @@ func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesOutputReference) LogFile() DataAzurermMonitorDataCollectionRuleDataSourcesLogFileList {
+	var returns DataAzurermMonitorDataCollectionRuleDataSourcesLogFileList
+	_jsii_.Get(
+		j,
+		"logFile",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesOutputReference) PerformanceCounter() DataAzurermMonitorDataCollectionRuleDataSourcesPerformanceCounterList {
 	var returns DataAzurermMonitorDataCollectionRuleDataSourcesPerformanceCounterList
 	_jsii_.Get(
 		j,
 		"performanceCounter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesOutputReference) PlatformTelemetry() DataAzurermMonitorDataCollectionRuleDataSourcesPlatformTelemetryList {
+	var returns DataAzurermMonitorDataCollectionRuleDataSourcesPlatformTelemetryList
+	_jsii_.Get(
+		j,
+		"platformTelemetry",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesOutputReference) PrometheusForwarder() DataAzurermMonitorDataCollectionRuleDataSourcesPrometheusForwarderList {
+	var returns DataAzurermMonitorDataCollectionRuleDataSourcesPrometheusForwarderList
+	_jsii_.Get(
+		j,
+		"prometheusForwarder",
 		&returns,
 	)
 	return returns
@@ -185,6 +241,16 @@ func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesOutputReferenc
 	_jsii_.Get(
 		j,
 		"windowsEventLog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataSourcesOutputReference) WindowsFirewallLog() DataAzurermMonitorDataCollectionRuleDataSourcesWindowsFirewallLogList {
+	var returns DataAzurermMonitorDataCollectionRuleDataSourcesWindowsFirewallLogList
+	_jsii_.Get(
+		j,
+		"windowsFirewallLog",
 		&returns,
 	)
 	return returns

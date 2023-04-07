@@ -164,6 +164,48 @@ func (m *jsiiProxy_MonitorDataCollectionRule) validatePutDestinationsParameters(
 	return nil
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRule) validatePutIdentityParameters(value *MonitorDataCollectionRuleIdentity) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRule) validatePutStreamDeclarationParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*MonitorDataCollectionRuleStreamDeclaration:
+		value := value.(*[]*MonitorDataCollectionRuleStreamDeclaration)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*MonitorDataCollectionRuleStreamDeclaration:
+		value_ := value.([]*MonitorDataCollectionRuleStreamDeclaration)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MonitorDataCollectionRuleStreamDeclaration; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRule) validatePutTimeoutsParameters(value *MonitorDataCollectionRuleTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -227,6 +269,14 @@ func (j *jsiiProxy_MonitorDataCollectionRule) validateSetConnectionParameters(va
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *cdktf.SSHProvisionerConnection, *cdktf.WinrmProvisionerConnection; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRule) validateSetDataCollectionEndpointIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

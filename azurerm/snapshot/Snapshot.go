@@ -47,6 +47,9 @@ type Snapshot interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IncrementalEnabled() interface{}
+	SetIncrementalEnabled(val interface{})
+	IncrementalEnabledInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -123,6 +126,7 @@ type Snapshot interface {
 	ResetDiskSizeGb()
 	ResetEncryptionSettings()
 	ResetId()
+	ResetIncrementalEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -301,6 +305,26 @@ func (j *jsiiProxy_Snapshot) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Snapshot) IncrementalEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"incrementalEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Snapshot) IncrementalEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"incrementalEnabledInput",
 		&returns,
 	)
 	return returns
@@ -650,6 +674,17 @@ func (j *jsiiProxy_Snapshot)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Snapshot)SetIncrementalEnabled(val interface{}) {
+	if err := j.validateSetIncrementalEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"incrementalEnabled",
 		val,
 	)
 }
@@ -1069,6 +1104,14 @@ func (s *jsiiProxy_Snapshot) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Snapshot) ResetIncrementalEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIncrementalEnabled",
 		nil, // no parameters
 	)
 }

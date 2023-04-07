@@ -100,6 +100,10 @@ func (j *jsiiProxy_AppConfigurationFeature) validateSetIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_AppConfigurationFeature) validateSetKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppConfigurationFeature) validateSetLabelParameters(val *string) error {
 	return nil
 }

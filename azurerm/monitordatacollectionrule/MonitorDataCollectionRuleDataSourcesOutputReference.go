@@ -25,14 +25,24 @@ type MonitorDataCollectionRuleDataSourcesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataImport() MonitorDataCollectionRuleDataSourcesDataImportOutputReference
+	DataImportInput() *MonitorDataCollectionRuleDataSourcesDataImport
 	Extension() MonitorDataCollectionRuleDataSourcesExtensionList
 	ExtensionInput() interface{}
 	// Experimental.
 	Fqn() *string
+	IisLog() MonitorDataCollectionRuleDataSourcesIisLogList
+	IisLogInput() interface{}
 	InternalValue() *MonitorDataCollectionRuleDataSources
 	SetInternalValue(val *MonitorDataCollectionRuleDataSources)
+	LogFile() MonitorDataCollectionRuleDataSourcesLogFileList
+	LogFileInput() interface{}
 	PerformanceCounter() MonitorDataCollectionRuleDataSourcesPerformanceCounterList
 	PerformanceCounterInput() interface{}
+	PlatformTelemetry() MonitorDataCollectionRuleDataSourcesPlatformTelemetryList
+	PlatformTelemetryInput() interface{}
+	PrometheusForwarder() MonitorDataCollectionRuleDataSourcesPrometheusForwarderList
+	PrometheusForwarderInput() interface{}
 	Syslog() MonitorDataCollectionRuleDataSourcesSyslogList
 	SyslogInput() interface{}
 	// Experimental.
@@ -45,6 +55,8 @@ type MonitorDataCollectionRuleDataSourcesOutputReference interface {
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	WindowsEventLog() MonitorDataCollectionRuleDataSourcesWindowsEventLogList
 	WindowsEventLogInput() interface{}
+	WindowsFirewallLog() MonitorDataCollectionRuleDataSourcesWindowsFirewallLogList
+	WindowsFirewallLogInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -69,14 +81,26 @@ type MonitorDataCollectionRuleDataSourcesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDataImport(value *MonitorDataCollectionRuleDataSourcesDataImport)
 	PutExtension(value interface{})
+	PutIisLog(value interface{})
+	PutLogFile(value interface{})
 	PutPerformanceCounter(value interface{})
+	PutPlatformTelemetry(value interface{})
+	PutPrometheusForwarder(value interface{})
 	PutSyslog(value interface{})
 	PutWindowsEventLog(value interface{})
+	PutWindowsFirewallLog(value interface{})
+	ResetDataImport()
 	ResetExtension()
+	ResetIisLog()
+	ResetLogFile()
 	ResetPerformanceCounter()
+	ResetPlatformTelemetry()
+	ResetPrometheusForwarder()
 	ResetSyslog()
 	ResetWindowsEventLog()
+	ResetWindowsFirewallLog()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -122,6 +146,26 @@ func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) Creation
 	return returns
 }
 
+func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) DataImport() MonitorDataCollectionRuleDataSourcesDataImportOutputReference {
+	var returns MonitorDataCollectionRuleDataSourcesDataImportOutputReference
+	_jsii_.Get(
+		j,
+		"dataImport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) DataImportInput() *MonitorDataCollectionRuleDataSourcesDataImport {
+	var returns *MonitorDataCollectionRuleDataSourcesDataImport
+	_jsii_.Get(
+		j,
+		"dataImportInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) Extension() MonitorDataCollectionRuleDataSourcesExtensionList {
 	var returns MonitorDataCollectionRuleDataSourcesExtensionList
 	_jsii_.Get(
@@ -152,11 +196,51 @@ func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) Fqn() *s
 	return returns
 }
 
+func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) IisLog() MonitorDataCollectionRuleDataSourcesIisLogList {
+	var returns MonitorDataCollectionRuleDataSourcesIisLogList
+	_jsii_.Get(
+		j,
+		"iisLog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) IisLogInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"iisLogInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) InternalValue() *MonitorDataCollectionRuleDataSources {
 	var returns *MonitorDataCollectionRuleDataSources
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) LogFile() MonitorDataCollectionRuleDataSourcesLogFileList {
+	var returns MonitorDataCollectionRuleDataSourcesLogFileList
+	_jsii_.Get(
+		j,
+		"logFile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) LogFileInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logFileInput",
 		&returns,
 	)
 	return returns
@@ -177,6 +261,46 @@ func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) Performa
 	_jsii_.Get(
 		j,
 		"performanceCounterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) PlatformTelemetry() MonitorDataCollectionRuleDataSourcesPlatformTelemetryList {
+	var returns MonitorDataCollectionRuleDataSourcesPlatformTelemetryList
+	_jsii_.Get(
+		j,
+		"platformTelemetry",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) PlatformTelemetryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"platformTelemetryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) PrometheusForwarder() MonitorDataCollectionRuleDataSourcesPrometheusForwarderList {
+	var returns MonitorDataCollectionRuleDataSourcesPrometheusForwarderList
+	_jsii_.Get(
+		j,
+		"prometheusForwarder",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) PrometheusForwarderInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"prometheusForwarderInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +361,26 @@ func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) WindowsE
 	_jsii_.Get(
 		j,
 		"windowsEventLogInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) WindowsFirewallLog() MonitorDataCollectionRuleDataSourcesWindowsFirewallLogList {
+	var returns MonitorDataCollectionRuleDataSourcesWindowsFirewallLogList
+	_jsii_.Get(
+		j,
+		"windowsFirewallLog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) WindowsFirewallLogInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"windowsFirewallLogInput",
 		&returns,
 	)
 	return returns
@@ -511,6 +655,17 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) Interpol
 	return returns
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) PutDataImport(value *MonitorDataCollectionRuleDataSourcesDataImport) {
+	if err := m.validatePutDataImportParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putDataImport",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) PutExtension(value interface{}) {
 	if err := m.validatePutExtensionParameters(value); err != nil {
 		panic(err)
@@ -522,6 +677,28 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) PutExten
 	)
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) PutIisLog(value interface{}) {
+	if err := m.validatePutIisLogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putIisLog",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) PutLogFile(value interface{}) {
+	if err := m.validatePutLogFileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putLogFile",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) PutPerformanceCounter(value interface{}) {
 	if err := m.validatePutPerformanceCounterParameters(value); err != nil {
 		panic(err)
@@ -529,6 +706,28 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) PutPerfo
 	_jsii_.InvokeVoid(
 		m,
 		"putPerformanceCounter",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) PutPlatformTelemetry(value interface{}) {
+	if err := m.validatePutPlatformTelemetryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putPlatformTelemetry",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) PutPrometheusForwarder(value interface{}) {
+	if err := m.validatePutPrometheusForwarderParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putPrometheusForwarder",
 		[]interface{}{value},
 	)
 }
@@ -555,6 +754,25 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) PutWindo
 	)
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) PutWindowsFirewallLog(value interface{}) {
+	if err := m.validatePutWindowsFirewallLogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putWindowsFirewallLog",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) ResetDataImport() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDataImport",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) ResetExtension() {
 	_jsii_.InvokeVoid(
 		m,
@@ -563,10 +781,42 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) ResetExt
 	)
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) ResetIisLog() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetIisLog",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) ResetLogFile() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetLogFile",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) ResetPerformanceCounter() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetPerformanceCounter",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) ResetPlatformTelemetry() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPlatformTelemetry",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) ResetPrometheusForwarder() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPrometheusForwarder",
 		nil, // no parameters
 	)
 }
@@ -583,6 +833,14 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) ResetWin
 	_jsii_.InvokeVoid(
 		m,
 		"resetWindowsEventLog",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesOutputReference) ResetWindowsFirewallLog() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetWindowsFirewallLog",
 		nil, // no parameters
 	)
 }

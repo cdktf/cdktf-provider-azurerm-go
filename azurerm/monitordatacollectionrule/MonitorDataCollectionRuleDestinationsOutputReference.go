@@ -27,12 +27,24 @@ type MonitorDataCollectionRuleDestinationsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EventHub() MonitorDataCollectionRuleDestinationsEventHubOutputReference
+	EventHubDirect() MonitorDataCollectionRuleDestinationsEventHubDirectOutputReference
+	EventHubDirectInput() *MonitorDataCollectionRuleDestinationsEventHubDirect
+	EventHubInput() *MonitorDataCollectionRuleDestinationsEventHub
 	// Experimental.
 	Fqn() *string
 	InternalValue() *MonitorDataCollectionRuleDestinations
 	SetInternalValue(val *MonitorDataCollectionRuleDestinations)
 	LogAnalytics() MonitorDataCollectionRuleDestinationsLogAnalyticsList
 	LogAnalyticsInput() interface{}
+	MonitorAccount() MonitorDataCollectionRuleDestinationsMonitorAccountList
+	MonitorAccountInput() interface{}
+	StorageBlob() MonitorDataCollectionRuleDestinationsStorageBlobList
+	StorageBlobDirect() MonitorDataCollectionRuleDestinationsStorageBlobDirectList
+	StorageBlobDirectInput() interface{}
+	StorageBlobInput() interface{}
+	StorageTableDirect() MonitorDataCollectionRuleDestinationsStorageTableDirectList
+	StorageTableDirectInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,9 +78,21 @@ type MonitorDataCollectionRuleDestinationsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAzureMonitorMetrics(value *MonitorDataCollectionRuleDestinationsAzureMonitorMetrics)
+	PutEventHub(value *MonitorDataCollectionRuleDestinationsEventHub)
+	PutEventHubDirect(value *MonitorDataCollectionRuleDestinationsEventHubDirect)
 	PutLogAnalytics(value interface{})
+	PutMonitorAccount(value interface{})
+	PutStorageBlob(value interface{})
+	PutStorageBlobDirect(value interface{})
+	PutStorageTableDirect(value interface{})
 	ResetAzureMonitorMetrics()
+	ResetEventHub()
+	ResetEventHubDirect()
 	ResetLogAnalytics()
+	ResetMonitorAccount()
+	ResetStorageBlob()
+	ResetStorageBlobDirect()
+	ResetStorageTableDirect()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -134,6 +158,46 @@ func (j *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) Creatio
 	return returns
 }
 
+func (j *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) EventHub() MonitorDataCollectionRuleDestinationsEventHubOutputReference {
+	var returns MonitorDataCollectionRuleDestinationsEventHubOutputReference
+	_jsii_.Get(
+		j,
+		"eventHub",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) EventHubDirect() MonitorDataCollectionRuleDestinationsEventHubDirectOutputReference {
+	var returns MonitorDataCollectionRuleDestinationsEventHubDirectOutputReference
+	_jsii_.Get(
+		j,
+		"eventHubDirect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) EventHubDirectInput() *MonitorDataCollectionRuleDestinationsEventHubDirect {
+	var returns *MonitorDataCollectionRuleDestinationsEventHubDirect
+	_jsii_.Get(
+		j,
+		"eventHubDirectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) EventHubInput() *MonitorDataCollectionRuleDestinationsEventHub {
+	var returns *MonitorDataCollectionRuleDestinationsEventHub
+	_jsii_.Get(
+		j,
+		"eventHubInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -169,6 +233,86 @@ func (j *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) LogAnal
 	_jsii_.Get(
 		j,
 		"logAnalyticsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) MonitorAccount() MonitorDataCollectionRuleDestinationsMonitorAccountList {
+	var returns MonitorDataCollectionRuleDestinationsMonitorAccountList
+	_jsii_.Get(
+		j,
+		"monitorAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) MonitorAccountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"monitorAccountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) StorageBlob() MonitorDataCollectionRuleDestinationsStorageBlobList {
+	var returns MonitorDataCollectionRuleDestinationsStorageBlobList
+	_jsii_.Get(
+		j,
+		"storageBlob",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) StorageBlobDirect() MonitorDataCollectionRuleDestinationsStorageBlobDirectList {
+	var returns MonitorDataCollectionRuleDestinationsStorageBlobDirectList
+	_jsii_.Get(
+		j,
+		"storageBlobDirect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) StorageBlobDirectInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"storageBlobDirectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) StorageBlobInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"storageBlobInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) StorageTableDirect() MonitorDataCollectionRuleDestinationsStorageTableDirectList {
+	var returns MonitorDataCollectionRuleDestinationsStorageTableDirectList
+	_jsii_.Get(
+		j,
+		"storageTableDirect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) StorageTableDirectInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"storageTableDirectInput",
 		&returns,
 	)
 	return returns
@@ -474,6 +618,28 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) PutAzur
 	)
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) PutEventHub(value *MonitorDataCollectionRuleDestinationsEventHub) {
+	if err := m.validatePutEventHubParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putEventHub",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) PutEventHubDirect(value *MonitorDataCollectionRuleDestinationsEventHubDirect) {
+	if err := m.validatePutEventHubDirectParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putEventHubDirect",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) PutLogAnalytics(value interface{}) {
 	if err := m.validatePutLogAnalyticsParameters(value); err != nil {
 		panic(err)
@@ -481,6 +647,50 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) PutLogA
 	_jsii_.InvokeVoid(
 		m,
 		"putLogAnalytics",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) PutMonitorAccount(value interface{}) {
+	if err := m.validatePutMonitorAccountParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putMonitorAccount",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) PutStorageBlob(value interface{}) {
+	if err := m.validatePutStorageBlobParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putStorageBlob",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) PutStorageBlobDirect(value interface{}) {
+	if err := m.validatePutStorageBlobDirectParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putStorageBlobDirect",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) PutStorageTableDirect(value interface{}) {
+	if err := m.validatePutStorageTableDirectParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putStorageTableDirect",
 		[]interface{}{value},
 	)
 }
@@ -493,10 +703,58 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) ResetAz
 	)
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) ResetEventHub() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEventHub",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) ResetEventHubDirect() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEventHubDirect",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) ResetLogAnalytics() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetLogAnalytics",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) ResetMonitorAccount() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMonitorAccount",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) ResetStorageBlob() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetStorageBlob",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) ResetStorageBlobDirect() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetStorageBlobDirect",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsOutputReference) ResetStorageTableDirect() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetStorageTableDirect",
 		nil, // no parameters
 	)
 }

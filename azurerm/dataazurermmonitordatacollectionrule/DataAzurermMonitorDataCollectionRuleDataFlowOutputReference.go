@@ -10,6 +10,7 @@ import (
 
 type DataAzurermMonitorDataCollectionRuleDataFlowOutputReference interface {
 	cdktf.ComplexObject
+	BuiltInTransform() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,6 +31,7 @@ type DataAzurermMonitorDataCollectionRuleDataFlowOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataAzurermMonitorDataCollectionRuleDataFlow
 	SetInternalValue(val *DataAzurermMonitorDataCollectionRuleDataFlow)
+	OutputStream() *string
 	Streams() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
@@ -39,6 +41,7 @@ type DataAzurermMonitorDataCollectionRuleDataFlowOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransformKql() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,6 +79,16 @@ type DataAzurermMonitorDataCollectionRuleDataFlowOutputReference interface {
 // The jsii proxy struct for DataAzurermMonitorDataCollectionRuleDataFlowOutputReference
 type jsiiProxy_DataAzurermMonitorDataCollectionRuleDataFlowOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataFlowOutputReference) BuiltInTransform() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"builtInTransform",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataFlowOutputReference) ComplexObjectIndex() interface{} {
@@ -138,6 +151,16 @@ func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataFlowOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataFlowOutputReference) OutputStream() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outputStream",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataFlowOutputReference) Streams() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -163,6 +186,16 @@ func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataFlowOutputReference) 
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRuleDataFlowOutputReference) TransformKql() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transformKql",
 		&returns,
 	)
 	return returns
