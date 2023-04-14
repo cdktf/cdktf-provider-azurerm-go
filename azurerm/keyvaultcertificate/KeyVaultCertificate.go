@@ -2,10 +2,10 @@ package keyvaultcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v5/keyvaultcertificate/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/keyvaultcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -68,6 +68,8 @@ type KeyVaultCertificate interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ResourceManagerId() *string
+	ResourceManagerVersionlessId() *string
 	SecretId() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -390,6 +392,26 @@ func (j *jsiiProxy_KeyVaultCertificate) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVaultCertificate) ResourceManagerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceManagerId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVaultCertificate) ResourceManagerVersionlessId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceManagerVersionlessId",
 		&returns,
 	)
 	return returns

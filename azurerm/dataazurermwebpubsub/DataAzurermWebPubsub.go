@@ -2,10 +2,10 @@ package dataazurermwebpubsub
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v5/dataazurermwebpubsub/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermwebpubsub/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

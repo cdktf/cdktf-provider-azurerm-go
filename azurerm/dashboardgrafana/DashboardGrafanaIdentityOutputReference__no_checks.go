@@ -56,6 +56,10 @@ func (j *jsiiProxy_DashboardGrafanaIdentityOutputReference) validateSetComplexOb
 	return nil
 }
 
+func (j *jsiiProxy_DashboardGrafanaIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardGrafanaIdentityOutputReference) validateSetInternalValueParameters(val *DashboardGrafanaIdentity) error {
 	return nil
 }

@@ -2,9 +2,9 @@ package dashboardgrafana
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v5/dashboardgrafana/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dashboardgrafana/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -27,6 +27,9 @@ type DashboardGrafanaIdentityOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdentityIds() *[]*string
+	SetIdentityIds(val *[]*string)
+	IdentityIdsInput() *[]*string
 	InternalValue() *DashboardGrafanaIdentity
 	SetInternalValue(val *DashboardGrafanaIdentity)
 	PrincipalId() *string
@@ -66,6 +69,7 @@ type DashboardGrafanaIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIdentityIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -116,6 +120,26 @@ func (j *jsiiProxy_DashboardGrafanaIdentityOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardGrafanaIdentityOutputReference) IdentityIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardGrafanaIdentityOutputReference) IdentityIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIdsInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +261,17 @@ func (j *jsiiProxy_DashboardGrafanaIdentityOutputReference)SetComplexObjectIsFro
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardGrafanaIdentityOutputReference)SetIdentityIds(val *[]*string) {
+	if err := j.validateSetIdentityIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityIds",
 		val,
 	)
 }
@@ -469,6 +504,14 @@ func (d *jsiiProxy_DashboardGrafanaIdentityOutputReference) InterpolationForAttr
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DashboardGrafanaIdentityOutputReference) ResetIdentityIds() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIdentityIds",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DashboardGrafanaIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

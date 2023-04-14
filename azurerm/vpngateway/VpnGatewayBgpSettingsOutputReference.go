@@ -2,9 +2,9 @@ package vpngateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v5/vpngateway/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/vpngateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

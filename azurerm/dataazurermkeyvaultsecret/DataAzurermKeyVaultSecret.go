@@ -2,10 +2,10 @@ package dataazurermkeyvaultsecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v5/dataazurermkeyvaultsecret/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermkeyvaultsecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -25,6 +25,7 @@ type DataAzurermKeyVaultSecret interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExpirationDate() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -48,6 +49,7 @@ type DataAzurermKeyVaultSecret interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NotBeforeDate() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -67,6 +69,8 @@ type DataAzurermKeyVaultSecret interface {
 	TimeoutsInput() interface{}
 	Value() *string
 	Version() *string
+	SetVersion(val *string)
+	VersionInput() *string
 	VersionlessId() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -99,6 +103,7 @@ type DataAzurermKeyVaultSecret interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
+	ResetVersion()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -159,6 +164,16 @@ func (j *jsiiProxy_DataAzurermKeyVaultSecret) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermKeyVaultSecret) ExpirationDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expirationDate",
 		&returns,
 	)
 	return returns
@@ -269,6 +284,16 @@ func (j *jsiiProxy_DataAzurermKeyVaultSecret) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermKeyVaultSecret) NotBeforeDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notBeforeDate",
 		&returns,
 	)
 	return returns
@@ -394,6 +419,16 @@ func (j *jsiiProxy_DataAzurermKeyVaultSecret) Version() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermKeyVaultSecret) VersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermKeyVaultSecret) VersionlessId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -506,6 +541,17 @@ func (j *jsiiProxy_DataAzurermKeyVaultSecret)SetProvider(val cdktf.TerraformProv
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzurermKeyVaultSecret)SetVersion(val *string) {
+	if err := j.validateSetVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"version",
 		val,
 	)
 }
@@ -807,6 +853,14 @@ func (d *jsiiProxy_DataAzurermKeyVaultSecret) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermKeyVaultSecret) ResetVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetVersion",
 		nil, // no parameters
 	)
 }

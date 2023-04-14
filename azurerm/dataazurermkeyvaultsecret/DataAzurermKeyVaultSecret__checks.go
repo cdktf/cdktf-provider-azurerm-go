@@ -178,6 +178,14 @@ func (j *jsiiProxy_DataAzurermKeyVaultSecret) validateSetNameParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermKeyVaultSecret) validateSetVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAzurermKeyVaultSecretParameters(scope constructs.Construct, id *string, config *DataAzurermKeyVaultSecretConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

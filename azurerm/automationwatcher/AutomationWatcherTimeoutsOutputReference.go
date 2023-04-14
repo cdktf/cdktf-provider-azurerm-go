@@ -2,9 +2,9 @@ package automationwatcher
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v5/automationwatcher/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/automationwatcher/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

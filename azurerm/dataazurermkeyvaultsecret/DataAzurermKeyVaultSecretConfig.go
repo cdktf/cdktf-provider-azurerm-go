@@ -32,5 +32,7 @@ type DataAzurermKeyVaultSecretConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/d/key_vault_secret#timeouts DataAzurermKeyVaultSecret#timeouts}
 	Timeouts *DataAzurermKeyVaultSecretTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/d/key_vault_secret#version DataAzurermKeyVaultSecret#version}.
+	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 

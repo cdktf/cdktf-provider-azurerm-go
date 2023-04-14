@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataAzurermKeyVaultSecret) validateSetNameParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermKeyVaultSecret) validateSetVersionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAzurermKeyVaultSecretParameters(scope constructs.Construct, id *string, config *DataAzurermKeyVaultSecretConfig) error {
 	return nil
 }

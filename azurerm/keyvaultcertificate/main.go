@@ -58,6 +58,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceManagerId", GoGetter: "ResourceManagerId"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceManagerVersionlessId", GoGetter: "ResourceManagerVersionlessId"},
 			_jsii_.MemberProperty{JsiiProperty: "secretId", GoGetter: "SecretId"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},

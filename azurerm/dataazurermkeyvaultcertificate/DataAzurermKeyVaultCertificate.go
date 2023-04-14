@@ -2,10 +2,10 @@ package dataazurermkeyvaultcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v5/dataazurermkeyvaultcertificate/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermkeyvaultcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -58,6 +58,8 @@ type DataAzurermKeyVaultCertificate interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	ResourceManagerId() *string
+	ResourceManagerVersionlessId() *string
 	SecretId() *string
 	Tags() cdktf.StringMap
 	// Experimental.
@@ -336,6 +338,26 @@ func (j *jsiiProxy_DataAzurermKeyVaultCertificate) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermKeyVaultCertificate) ResourceManagerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceManagerId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermKeyVaultCertificate) ResourceManagerVersionlessId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceManagerVersionlessId",
 		&returns,
 	)
 	return returns
