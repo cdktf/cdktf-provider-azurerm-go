@@ -76,6 +76,10 @@ func (j *jsiiProxy_KustoScript) validateSetContinueOnErrorsEnabledParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_KustoScript) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoScript) validateSetDatabaseIdParameters(val *string) error {
 	return nil
 }

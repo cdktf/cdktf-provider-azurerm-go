@@ -72,6 +72,10 @@ func (j *jsiiProxy_RouteServerBgpConnection) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_RouteServerBgpConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RouteServerBgpConnection) validateSetIdParameters(val *string) error {
 	return nil
 }

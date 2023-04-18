@@ -80,6 +80,10 @@ func (j *jsiiProxy_NotificationHub) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_NotificationHub) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationHub) validateSetIdParameters(val *string) error {
 	return nil
 }

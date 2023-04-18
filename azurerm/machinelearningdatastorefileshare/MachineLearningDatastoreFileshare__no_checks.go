@@ -76,6 +76,10 @@ func (j *jsiiProxy_MachineLearningDatastoreFileshare) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_MachineLearningDatastoreFileshare) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MachineLearningDatastoreFileshare) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

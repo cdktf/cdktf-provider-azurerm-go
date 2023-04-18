@@ -76,6 +76,10 @@ func (j *jsiiProxy_PrivateDnsZone) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_PrivateDnsZone) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivateDnsZone) validateSetIdParameters(val *string) error {
 	return nil
 }

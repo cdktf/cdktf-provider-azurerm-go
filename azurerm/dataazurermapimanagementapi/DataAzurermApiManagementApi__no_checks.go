@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermApiManagementApi) validateSetApiManagementNamePara
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermApiManagementApi) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermApiManagementApi) validateSetIdParameters(val *string) error {
 	return nil
 }

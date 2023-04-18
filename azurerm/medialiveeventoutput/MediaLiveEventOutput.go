@@ -2,14 +2,14 @@ package medialiveeventoutput
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/medialiveeventoutput/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/medialiveeventoutput/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/media_live_event_output azurerm_media_live_event_output}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_live_event_output azurerm_media_live_event_output}.
 type MediaLiveEventOutput interface {
 	cdktf.TerraformResource
 	ArchiveWindowDuration() *string
@@ -27,9 +27,9 @@ type MediaLiveEventOutput interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -211,8 +211,8 @@ func (j *jsiiProxy_MediaLiveEventOutput) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_MediaLiveEventOutput) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MediaLiveEventOutput) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -522,7 +522,7 @@ func (j *jsiiProxy_MediaLiveEventOutput) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/media_live_event_output azurerm_media_live_event_output} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_live_event_output azurerm_media_live_event_output} Resource.
 func NewMediaLiveEventOutput(scope constructs.Construct, id *string, config *MediaLiveEventOutputConfig) MediaLiveEventOutput {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewMediaLiveEventOutput(scope constructs.Construct, id *string, config *Med
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/media_live_event_output azurerm_media_live_event_output} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_live_event_output azurerm_media_live_event_output} Resource.
 func NewMediaLiveEventOutput_Override(m MediaLiveEventOutput, scope constructs.Construct, id *string, config *MediaLiveEventOutputConfig) {
 	_init_.Initialize()
 
@@ -584,7 +584,10 @@ func (j *jsiiProxy_MediaLiveEventOutput)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MediaLiveEventOutput)SetCount(val *float64) {
+func (j *jsiiProxy_MediaLiveEventOutput)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermBlueprintPublishedVersion) validateSetBlueprintNam
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermBlueprintPublishedVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermBlueprintPublishedVersion) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_PostgresqlFlexibleServerDatabase) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_PostgresqlFlexibleServerDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlFlexibleServerDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }

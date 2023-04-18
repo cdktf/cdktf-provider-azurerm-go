@@ -72,6 +72,10 @@ func validateDataAzurermBatchAccount_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermBatchAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermBatchAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

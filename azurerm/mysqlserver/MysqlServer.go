@@ -2,14 +2,14 @@ package mysqlserver
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/mysqlserver/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/mysqlserver/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_server azurerm_mysql_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_server azurerm_mysql_server}.
 type MysqlServer interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -33,9 +33,9 @@ type MysqlServer interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateMode() *string
 	SetCreateMode(val *string)
 	CreateModeInput() *string
@@ -298,8 +298,8 @@ func (j *jsiiProxy_MysqlServer) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_MysqlServer) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MysqlServer) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -819,7 +819,7 @@ func (j *jsiiProxy_MysqlServer) VersionInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_server azurerm_mysql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_server azurerm_mysql_server} Resource.
 func NewMysqlServer(scope constructs.Construct, id *string, config *MysqlServerConfig) MysqlServer {
 	_init_.Initialize()
 
@@ -837,7 +837,7 @@ func NewMysqlServer(scope constructs.Construct, id *string, config *MysqlServerC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_server azurerm_mysql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_server azurerm_mysql_server} Resource.
 func NewMysqlServer_Override(m MysqlServer, scope constructs.Construct, id *string, config *MysqlServerConfig) {
 	_init_.Initialize()
 
@@ -903,7 +903,10 @@ func (j *jsiiProxy_MysqlServer)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MysqlServer)SetCount(val *float64) {
+func (j *jsiiProxy_MysqlServer)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

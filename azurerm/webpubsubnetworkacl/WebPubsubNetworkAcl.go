@@ -2,14 +2,14 @@ package webpubsubnetworkacl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/webpubsubnetworkacl/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/webpubsubnetworkacl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/web_pubsub_network_acl azurerm_web_pubsub_network_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/web_pubsub_network_acl azurerm_web_pubsub_network_acl}.
 type WebPubsubNetworkAcl interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type WebPubsubNetworkAcl interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultAction() *string
 	SetDefaultAction(val *string)
 	DefaultActionInput() *string
@@ -153,8 +153,8 @@ func (j *jsiiProxy_WebPubsubNetworkAcl) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_WebPubsubNetworkAcl) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_WebPubsubNetworkAcl) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -404,7 +404,7 @@ func (j *jsiiProxy_WebPubsubNetworkAcl) WebPubsubIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/web_pubsub_network_acl azurerm_web_pubsub_network_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/web_pubsub_network_acl azurerm_web_pubsub_network_acl} Resource.
 func NewWebPubsubNetworkAcl(scope constructs.Construct, id *string, config *WebPubsubNetworkAclConfig) WebPubsubNetworkAcl {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewWebPubsubNetworkAcl(scope constructs.Construct, id *string, config *WebP
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/web_pubsub_network_acl azurerm_web_pubsub_network_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/web_pubsub_network_acl azurerm_web_pubsub_network_acl} Resource.
 func NewWebPubsubNetworkAcl_Override(w WebPubsubNetworkAcl, scope constructs.Construct, id *string, config *WebPubsubNetworkAclConfig) {
 	_init_.Initialize()
 
@@ -444,7 +444,10 @@ func (j *jsiiProxy_WebPubsubNetworkAcl)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WebPubsubNetworkAcl)SetCount(val *float64) {
+func (j *jsiiProxy_WebPubsubNetworkAcl)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

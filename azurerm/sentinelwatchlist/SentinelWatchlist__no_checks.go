@@ -72,6 +72,10 @@ func (j *jsiiProxy_SentinelWatchlist) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_SentinelWatchlist) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelWatchlist) validateSetDefaultDurationParameters(val *string) error {
 	return nil
 }

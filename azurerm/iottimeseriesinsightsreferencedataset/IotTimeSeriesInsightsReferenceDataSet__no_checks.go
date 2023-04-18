@@ -76,6 +76,10 @@ func (j *jsiiProxy_IotTimeSeriesInsightsReferenceDataSet) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_IotTimeSeriesInsightsReferenceDataSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotTimeSeriesInsightsReferenceDataSet) validateSetDataStringComparisonBehaviorParameters(val *string) error {
 	return nil
 }

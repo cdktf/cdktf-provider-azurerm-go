@@ -2,14 +2,14 @@ package containerconnectedregistry
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/containerconnectedregistry/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/containerconnectedregistry/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/container_connected_registry azurerm_container_connected_registry}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/container_connected_registry azurerm_container_connected_registry}.
 type ContainerConnectedRegistry interface {
 	cdktf.TerraformResource
 	AuditLogEnabled() interface{}
@@ -30,9 +30,9 @@ type ContainerConnectedRegistry interface {
 	SetContainerRegistryId(val *string)
 	ContainerRegistryIdInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -244,8 +244,8 @@ func (j *jsiiProxy_ContainerConnectedRegistry) ContainerRegistryIdInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_ContainerConnectedRegistry) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ContainerConnectedRegistry) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -595,7 +595,7 @@ func (j *jsiiProxy_ContainerConnectedRegistry) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/container_connected_registry azurerm_container_connected_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/container_connected_registry azurerm_container_connected_registry} Resource.
 func NewContainerConnectedRegistry(scope constructs.Construct, id *string, config *ContainerConnectedRegistryConfig) ContainerConnectedRegistry {
 	_init_.Initialize()
 
@@ -613,7 +613,7 @@ func NewContainerConnectedRegistry(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/container_connected_registry azurerm_container_connected_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/container_connected_registry azurerm_container_connected_registry} Resource.
 func NewContainerConnectedRegistry_Override(c ContainerConnectedRegistry, scope constructs.Construct, id *string, config *ContainerConnectedRegistryConfig) {
 	_init_.Initialize()
 
@@ -668,7 +668,10 @@ func (j *jsiiProxy_ContainerConnectedRegistry)SetContainerRegistryId(val *string
 	)
 }
 
-func (j *jsiiProxy_ContainerConnectedRegistry)SetCount(val *float64) {
+func (j *jsiiProxy_ContainerConnectedRegistry)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func validateDataAzurermDatabaseMigrationService_IsTerraformElementParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermDatabaseMigrationService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDatabaseMigrationService) validateSetIdParameters(val *string) error {
 	return nil
 }

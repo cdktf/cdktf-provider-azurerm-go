@@ -88,6 +88,10 @@ func (j *jsiiProxy_StreamAnalyticsOutputBlob) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsOutputBlob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsOutputBlob) validateSetDateFormatParameters(val *string) error {
 	return nil
 }

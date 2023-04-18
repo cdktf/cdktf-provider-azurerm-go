@@ -2,14 +2,14 @@ package virtualnetworkgatewayconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/virtualnetworkgatewayconnection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/virtualnetworkgatewayconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection}.
 type VirtualNetworkGatewayConnection interface {
 	cdktf.TerraformResource
 	AuthorizationKey() *string
@@ -30,9 +30,9 @@ type VirtualNetworkGatewayConnection interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomBgpAddresses() VirtualNetworkGatewayConnectionCustomBgpAddressesOutputReference
 	CustomBgpAddressesInput() *VirtualNetworkGatewayConnectionCustomBgpAddresses
 	// Experimental.
@@ -290,8 +290,8 @@ func (j *jsiiProxy_VirtualNetworkGatewayConnection) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_VirtualNetworkGatewayConnection) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VirtualNetworkGatewayConnection) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -881,7 +881,7 @@ func (j *jsiiProxy_VirtualNetworkGatewayConnection) VirtualNetworkGatewayIdInput
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Resource.
 func NewVirtualNetworkGatewayConnection(scope constructs.Construct, id *string, config *VirtualNetworkGatewayConnectionConfig) VirtualNetworkGatewayConnection {
 	_init_.Initialize()
 
@@ -899,7 +899,7 @@ func NewVirtualNetworkGatewayConnection(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Resource.
 func NewVirtualNetworkGatewayConnection_Override(v VirtualNetworkGatewayConnection, scope constructs.Construct, id *string, config *VirtualNetworkGatewayConnectionConfig) {
 	_init_.Initialize()
 
@@ -954,7 +954,10 @@ func (j *jsiiProxy_VirtualNetworkGatewayConnection)SetConnectionProtocol(val *st
 	)
 }
 
-func (j *jsiiProxy_VirtualNetworkGatewayConnection)SetCount(val *float64) {
+func (j *jsiiProxy_VirtualNetworkGatewayConnection)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

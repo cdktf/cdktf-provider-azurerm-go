@@ -84,6 +84,10 @@ func (j *jsiiProxy_ContainerRegistryTokenPassword) validateSetContainerRegistryT
 	return nil
 }
 
+func (j *jsiiProxy_ContainerRegistryTokenPassword) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerRegistryTokenPassword) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package iothubdps
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/iothubdps/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/iothubdps/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/iothub_dps azurerm_iothub_dps}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iothub_dps azurerm_iothub_dps}.
 type IothubDps interface {
 	cdktf.TerraformResource
 	AllocationPolicy() *string
@@ -24,9 +24,9 @@ type IothubDps interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataResidencyEnabled() interface{}
 	SetDataResidencyEnabled(val interface{})
 	DataResidencyEnabledInput() interface{}
@@ -198,8 +198,8 @@ func (j *jsiiProxy_IothubDps) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IothubDps) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IothubDps) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -579,7 +579,7 @@ func (j *jsiiProxy_IothubDps) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/iothub_dps azurerm_iothub_dps} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iothub_dps azurerm_iothub_dps} Resource.
 func NewIothubDps(scope constructs.Construct, id *string, config *IothubDpsConfig) IothubDps {
 	_init_.Initialize()
 
@@ -597,7 +597,7 @@ func NewIothubDps(scope constructs.Construct, id *string, config *IothubDpsConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/iothub_dps azurerm_iothub_dps} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iothub_dps azurerm_iothub_dps} Resource.
 func NewIothubDps_Override(i IothubDps, scope constructs.Construct, id *string, config *IothubDpsConfig) {
 	_init_.Initialize()
 
@@ -630,7 +630,10 @@ func (j *jsiiProxy_IothubDps)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IothubDps)SetCount(val *float64) {
+func (j *jsiiProxy_IothubDps)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

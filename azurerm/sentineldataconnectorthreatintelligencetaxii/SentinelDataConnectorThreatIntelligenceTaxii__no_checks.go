@@ -80,6 +80,10 @@ func (j *jsiiProxy_SentinelDataConnectorThreatIntelligenceTaxii) validateSetConn
 	return nil
 }
 
+func (j *jsiiProxy_SentinelDataConnectorThreatIntelligenceTaxii) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorThreatIntelligenceTaxii) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataazurermsqlserver
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermsqlserver/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermsqlserver/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/sql_server azurerm_sql_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/sql_server azurerm_sql_server}.
 type DataAzurermSqlServer interface {
 	cdktf.TerraformDataSource
 	AdministratorLogin() *string
@@ -18,9 +18,9 @@ type DataAzurermSqlServer interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataAzurermSqlServer) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermSqlServer) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermSqlServer) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataAzurermSqlServer) Version() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/sql_server azurerm_sql_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/sql_server azurerm_sql_server} Data Source.
 func NewDataAzurermSqlServer(scope constructs.Construct, id *string, config *DataAzurermSqlServerConfig) DataAzurermSqlServer {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataAzurermSqlServer(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/sql_server azurerm_sql_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/sql_server azurerm_sql_server} Data Source.
 func NewDataAzurermSqlServer_Override(d DataAzurermSqlServer, scope constructs.Construct, id *string, config *DataAzurermSqlServerConfig) {
 	_init_.Initialize()
 
@@ -423,7 +423,10 @@ func NewDataAzurermSqlServer_Override(d DataAzurermSqlServer, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_DataAzurermSqlServer)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermSqlServer)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

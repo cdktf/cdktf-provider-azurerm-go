@@ -68,6 +68,10 @@ func validateDataAzurermDataShareAccount_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermDataShareAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDataShareAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

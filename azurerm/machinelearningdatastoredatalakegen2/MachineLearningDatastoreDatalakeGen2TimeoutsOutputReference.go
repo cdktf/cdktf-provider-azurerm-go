@@ -2,9 +2,9 @@ package machinelearningdatastoredatalakegen2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/machinelearningdatastoredatalakegen2/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/machinelearningdatastoredatalakegen2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

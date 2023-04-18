@@ -68,6 +68,10 @@ func validateDataAzurermPrivateDnsResolverInboundEndpoint_IsTerraformElementPara
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermPrivateDnsResolverInboundEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPrivateDnsResolverInboundEndpoint) validateSetIdParameters(val *string) error {
 	return nil
 }

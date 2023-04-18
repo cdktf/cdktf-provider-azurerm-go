@@ -92,6 +92,10 @@ func (j *jsiiProxy_CosmosdbGremlinGraph) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbGremlinGraph) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbGremlinGraph) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

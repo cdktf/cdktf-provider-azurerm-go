@@ -2,14 +2,14 @@ package monitormetricalert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/monitormetricalert/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/monitormetricalert/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_metric_alert azurerm_monitor_metric_alert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_metric_alert azurerm_monitor_metric_alert}.
 type MonitorMetricAlert interface {
 	cdktf.TerraformResource
 	Action() MonitorMetricAlertActionList
@@ -28,9 +28,9 @@ type MonitorMetricAlert interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Criteria() MonitorMetricAlertCriteriaList
 	CriteriaInput() interface{}
 	// Experimental.
@@ -260,8 +260,8 @@ func (j *jsiiProxy_MonitorMetricAlert) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_MonitorMetricAlert) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MonitorMetricAlert) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -691,7 +691,7 @@ func (j *jsiiProxy_MonitorMetricAlert) WindowSizeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_metric_alert azurerm_monitor_metric_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_metric_alert azurerm_monitor_metric_alert} Resource.
 func NewMonitorMetricAlert(scope constructs.Construct, id *string, config *MonitorMetricAlertConfig) MonitorMetricAlert {
 	_init_.Initialize()
 
@@ -709,7 +709,7 @@ func NewMonitorMetricAlert(scope constructs.Construct, id *string, config *Monit
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_metric_alert azurerm_monitor_metric_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_metric_alert azurerm_monitor_metric_alert} Resource.
 func NewMonitorMetricAlert_Override(m MonitorMetricAlert, scope constructs.Construct, id *string, config *MonitorMetricAlertConfig) {
 	_init_.Initialize()
 
@@ -742,7 +742,10 @@ func (j *jsiiProxy_MonitorMetricAlert)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitorMetricAlert)SetCount(val *float64) {
+func (j *jsiiProxy_MonitorMetricAlert)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package lbnatrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/lbnatrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/lbnatrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/lb_nat_rule azurerm_lb_nat_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/lb_nat_rule azurerm_lb_nat_rule}.
 type LbNatRule interface {
 	cdktf.TerraformResource
 	BackendAddressPoolId() *string
@@ -28,9 +28,9 @@ type LbNatRule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -237,8 +237,8 @@ func (j *jsiiProxy_LbNatRule) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LbNatRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LbNatRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -638,7 +638,7 @@ func (j *jsiiProxy_LbNatRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/lb_nat_rule azurerm_lb_nat_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/lb_nat_rule azurerm_lb_nat_rule} Resource.
 func NewLbNatRule(scope constructs.Construct, id *string, config *LbNatRuleConfig) LbNatRule {
 	_init_.Initialize()
 
@@ -656,7 +656,7 @@ func NewLbNatRule(scope constructs.Construct, id *string, config *LbNatRuleConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/lb_nat_rule azurerm_lb_nat_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/lb_nat_rule azurerm_lb_nat_rule} Resource.
 func NewLbNatRule_Override(l LbNatRule, scope constructs.Construct, id *string, config *LbNatRuleConfig) {
 	_init_.Initialize()
 
@@ -700,7 +700,10 @@ func (j *jsiiProxy_LbNatRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LbNatRule)SetCount(val *float64) {
+func (j *jsiiProxy_LbNatRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

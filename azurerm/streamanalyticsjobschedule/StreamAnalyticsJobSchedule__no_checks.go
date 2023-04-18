@@ -72,6 +72,10 @@ func (j *jsiiProxy_StreamAnalyticsJobSchedule) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsJobSchedule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsJobSchedule) validateSetIdParameters(val *string) error {
 	return nil
 }

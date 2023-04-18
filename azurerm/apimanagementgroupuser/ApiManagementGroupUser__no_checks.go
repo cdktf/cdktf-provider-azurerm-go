@@ -76,6 +76,10 @@ func (j *jsiiProxy_ApiManagementGroupUser) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementGroupUser) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementGroupUser) validateSetGroupNameParameters(val *string) error {
 	return nil
 }

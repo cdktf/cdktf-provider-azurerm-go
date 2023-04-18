@@ -76,6 +76,10 @@ func (j *jsiiProxy_MssqlManagedInstanceActiveDirectoryAdministrator) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_MssqlManagedInstanceActiveDirectoryAdministrator) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlManagedInstanceActiveDirectoryAdministrator) validateSetIdParameters(val *string) error {
 	return nil
 }

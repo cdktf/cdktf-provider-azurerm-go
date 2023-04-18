@@ -2,14 +2,14 @@ package expressroutecircuitpeering
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/expressroutecircuitpeering/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/expressroutecircuitpeering/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_circuit_peering azurerm_express_route_circuit_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/express_route_circuit_peering azurerm_express_route_circuit_peering}.
 type ExpressRouteCircuitPeering interface {
 	cdktf.TerraformResource
 	AzureAsn() *float64
@@ -22,9 +22,9 @@ type ExpressRouteCircuitPeering interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -197,8 +197,8 @@ func (j *jsiiProxy_ExpressRouteCircuitPeering) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_ExpressRouteCircuitPeering) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ExpressRouteCircuitPeering) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -638,7 +638,7 @@ func (j *jsiiProxy_ExpressRouteCircuitPeering) VlanIdInput() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_circuit_peering azurerm_express_route_circuit_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/express_route_circuit_peering azurerm_express_route_circuit_peering} Resource.
 func NewExpressRouteCircuitPeering(scope constructs.Construct, id *string, config *ExpressRouteCircuitPeeringConfig) ExpressRouteCircuitPeering {
 	_init_.Initialize()
 
@@ -656,7 +656,7 @@ func NewExpressRouteCircuitPeering(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_circuit_peering azurerm_express_route_circuit_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/express_route_circuit_peering azurerm_express_route_circuit_peering} Resource.
 func NewExpressRouteCircuitPeering_Override(e ExpressRouteCircuitPeering, scope constructs.Construct, id *string, config *ExpressRouteCircuitPeeringConfig) {
 	_init_.Initialize()
 
@@ -678,7 +678,10 @@ func (j *jsiiProxy_ExpressRouteCircuitPeering)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ExpressRouteCircuitPeering)SetCount(val *float64) {
+func (j *jsiiProxy_ExpressRouteCircuitPeering)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

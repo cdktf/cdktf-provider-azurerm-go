@@ -76,6 +76,10 @@ func (j *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

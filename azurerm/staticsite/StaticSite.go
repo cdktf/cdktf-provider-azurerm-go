@@ -2,14 +2,14 @@ package staticsite
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/staticsite/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/staticsite/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/static_site azurerm_static_site}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/static_site azurerm_static_site}.
 type StaticSite interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -22,9 +22,9 @@ type StaticSite interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultHostName() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -176,8 +176,8 @@ func (j *jsiiProxy_StaticSite) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StaticSite) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_StaticSite) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -497,7 +497,7 @@ func (j *jsiiProxy_StaticSite) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/static_site azurerm_static_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/static_site azurerm_static_site} Resource.
 func NewStaticSite(scope constructs.Construct, id *string, config *StaticSiteConfig) StaticSite {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewStaticSite(scope constructs.Construct, id *string, config *StaticSiteCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/static_site azurerm_static_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/static_site azurerm_static_site} Resource.
 func NewStaticSite_Override(s StaticSite, scope constructs.Construct, id *string, config *StaticSiteConfig) {
 	_init_.Initialize()
 
@@ -537,7 +537,10 @@ func (j *jsiiProxy_StaticSite)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StaticSite)SetCount(val *float64) {
+func (j *jsiiProxy_StaticSite)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

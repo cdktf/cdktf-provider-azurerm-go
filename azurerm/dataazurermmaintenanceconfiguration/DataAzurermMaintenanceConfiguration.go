@@ -2,14 +2,14 @@ package dataazurermmaintenanceconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermmaintenanceconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermmaintenanceconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/maintenance_configuration azurerm_maintenance_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/maintenance_configuration azurerm_maintenance_configuration}.
 type DataAzurermMaintenanceConfiguration interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermMaintenanceConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataAzurermMaintenanceConfiguration) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermMaintenanceConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermMaintenanceConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -416,7 +416,7 @@ func (j *jsiiProxy_DataAzurermMaintenanceConfiguration) Window() DataAzurermMain
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/maintenance_configuration azurerm_maintenance_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/maintenance_configuration azurerm_maintenance_configuration} Data Source.
 func NewDataAzurermMaintenanceConfiguration(scope constructs.Construct, id *string, config *DataAzurermMaintenanceConfigurationConfig) DataAzurermMaintenanceConfiguration {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewDataAzurermMaintenanceConfiguration(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/maintenance_configuration azurerm_maintenance_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/maintenance_configuration azurerm_maintenance_configuration} Data Source.
 func NewDataAzurermMaintenanceConfiguration_Override(d DataAzurermMaintenanceConfiguration, scope constructs.Construct, id *string, config *DataAzurermMaintenanceConfigurationConfig) {
 	_init_.Initialize()
 
@@ -445,7 +445,10 @@ func NewDataAzurermMaintenanceConfiguration_Override(d DataAzurermMaintenanceCon
 	)
 }
 
-func (j *jsiiProxy_DataAzurermMaintenanceConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermMaintenanceConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

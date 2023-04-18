@@ -72,6 +72,10 @@ func (j *jsiiProxy_LogAnalyticsLinkedService) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsLinkedService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsLinkedService) validateSetIdParameters(val *string) error {
 	return nil
 }

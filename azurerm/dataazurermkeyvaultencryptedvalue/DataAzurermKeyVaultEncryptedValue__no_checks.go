@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermKeyVaultEncryptedValue) validateSetAlgorithmParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermKeyVaultEncryptedValue) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermKeyVaultEncryptedValue) validateSetEncryptedDataParameters(val *string) error {
 	return nil
 }

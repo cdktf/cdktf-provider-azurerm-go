@@ -76,6 +76,10 @@ func (j *jsiiProxy_RouteFilter) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_RouteFilter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RouteFilter) validateSetIdParameters(val *string) error {
 	return nil
 }

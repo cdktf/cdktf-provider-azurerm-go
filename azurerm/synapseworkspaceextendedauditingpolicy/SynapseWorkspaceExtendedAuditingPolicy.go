@@ -2,14 +2,14 @@ package synapseworkspaceextendedauditingpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/synapseworkspaceextendedauditingpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/synapseworkspaceextendedauditingpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace_extended_auditing_policy azurerm_synapse_workspace_extended_auditing_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/synapse_workspace_extended_auditing_policy azurerm_synapse_workspace_extended_auditing_policy}.
 type SynapseWorkspaceExtendedAuditingPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SynapseWorkspaceExtendedAuditingPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_SynapseWorkspaceExtendedAuditingPolicy) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_SynapseWorkspaceExtendedAuditingPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SynapseWorkspaceExtendedAuditingPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -453,7 +453,7 @@ func (j *jsiiProxy_SynapseWorkspaceExtendedAuditingPolicy) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace_extended_auditing_policy azurerm_synapse_workspace_extended_auditing_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/synapse_workspace_extended_auditing_policy azurerm_synapse_workspace_extended_auditing_policy} Resource.
 func NewSynapseWorkspaceExtendedAuditingPolicy(scope constructs.Construct, id *string, config *SynapseWorkspaceExtendedAuditingPolicyConfig) SynapseWorkspaceExtendedAuditingPolicy {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewSynapseWorkspaceExtendedAuditingPolicy(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace_extended_auditing_policy azurerm_synapse_workspace_extended_auditing_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/synapse_workspace_extended_auditing_policy azurerm_synapse_workspace_extended_auditing_policy} Resource.
 func NewSynapseWorkspaceExtendedAuditingPolicy_Override(s SynapseWorkspaceExtendedAuditingPolicy, scope constructs.Construct, id *string, config *SynapseWorkspaceExtendedAuditingPolicyConfig) {
 	_init_.Initialize()
 
@@ -493,7 +493,10 @@ func (j *jsiiProxy_SynapseWorkspaceExtendedAuditingPolicy)SetConnection(val inte
 	)
 }
 
-func (j *jsiiProxy_SynapseWorkspaceExtendedAuditingPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_SynapseWorkspaceExtendedAuditingPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

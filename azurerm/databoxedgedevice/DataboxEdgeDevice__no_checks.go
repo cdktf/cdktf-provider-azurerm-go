@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataboxEdgeDevice) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_DataboxEdgeDevice) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataboxEdgeDevice) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_WebPubsubCustomCertificate) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_WebPubsubCustomCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WebPubsubCustomCertificate) validateSetCustomCertificateIdParameters(val *string) error {
 	return nil
 }

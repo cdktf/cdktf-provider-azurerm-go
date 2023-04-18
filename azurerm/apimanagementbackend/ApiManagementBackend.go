@@ -2,14 +2,14 @@ package apimanagementbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/apimanagementbackend/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/apimanagementbackend/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_backend azurerm_api_management_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_backend azurerm_api_management_backend}.
 type ApiManagementBackend interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -24,9 +24,9 @@ type ApiManagementBackend interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Credentials() ApiManagementBackendCredentialsOutputReference
 	CredentialsInput() *ApiManagementBackendCredentials
 	// Experimental.
@@ -202,8 +202,8 @@ func (j *jsiiProxy_ApiManagementBackend) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_ApiManagementBackend) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApiManagementBackend) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -593,7 +593,7 @@ func (j *jsiiProxy_ApiManagementBackend) UrlInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_backend azurerm_api_management_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_backend azurerm_api_management_backend} Resource.
 func NewApiManagementBackend(scope constructs.Construct, id *string, config *ApiManagementBackendConfig) ApiManagementBackend {
 	_init_.Initialize()
 
@@ -611,7 +611,7 @@ func NewApiManagementBackend(scope constructs.Construct, id *string, config *Api
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_backend azurerm_api_management_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_backend azurerm_api_management_backend} Resource.
 func NewApiManagementBackend_Override(a ApiManagementBackend, scope constructs.Construct, id *string, config *ApiManagementBackendConfig) {
 	_init_.Initialize()
 
@@ -644,7 +644,10 @@ func (j *jsiiProxy_ApiManagementBackend)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiManagementBackend)SetCount(val *float64) {
+func (j *jsiiProxy_ApiManagementBackend)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

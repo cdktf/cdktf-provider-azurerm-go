@@ -2,14 +2,14 @@ package servicefabricmanagedcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/servicefabricmanagedcluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/servicefabricmanagedcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster}.
 type ServiceFabricManagedCluster interface {
 	cdktf.TerraformResource
 	Authentication() ServiceFabricManagedClusterAuthenticationOutputReference
@@ -29,9 +29,9 @@ type ServiceFabricManagedCluster interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomFabricSetting() ServiceFabricManagedClusterCustomFabricSettingList
 	CustomFabricSettingInput() interface{}
 	// Experimental.
@@ -261,8 +261,8 @@ func (j *jsiiProxy_ServiceFabricManagedCluster) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_ServiceFabricManagedCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ServiceFabricManagedCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -712,7 +712,7 @@ func (j *jsiiProxy_ServiceFabricManagedCluster) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster} Resource.
 func NewServiceFabricManagedCluster(scope constructs.Construct, id *string, config *ServiceFabricManagedClusterConfig) ServiceFabricManagedCluster {
 	_init_.Initialize()
 
@@ -730,7 +730,7 @@ func NewServiceFabricManagedCluster(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster} Resource.
 func NewServiceFabricManagedCluster_Override(s ServiceFabricManagedCluster, scope constructs.Construct, id *string, config *ServiceFabricManagedClusterConfig) {
 	_init_.Initialize()
 
@@ -774,7 +774,10 @@ func (j *jsiiProxy_ServiceFabricManagedCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceFabricManagedCluster)SetCount(val *float64) {
+func (j *jsiiProxy_ServiceFabricManagedCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

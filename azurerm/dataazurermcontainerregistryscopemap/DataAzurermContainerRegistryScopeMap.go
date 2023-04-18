@@ -2,14 +2,14 @@ package dataazurermcontainerregistryscopemap
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermcontainerregistryscopemap/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermcontainerregistryscopemap/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/container_registry_scope_map azurerm_container_registry_scope_map}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/container_registry_scope_map azurerm_container_registry_scope_map}.
 type DataAzurermContainerRegistryScopeMap interface {
 	cdktf.TerraformDataSource
 	Actions() *[]*string
@@ -21,9 +21,9 @@ type DataAzurermContainerRegistryScopeMap interface {
 	SetContainerRegistryName(val *string)
 	ContainerRegistryNameInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataAzurermContainerRegistryScopeMap) ContainerRegistryNameIn
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermContainerRegistryScopeMap) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermContainerRegistryScopeMap) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -373,7 +373,7 @@ func (j *jsiiProxy_DataAzurermContainerRegistryScopeMap) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/container_registry_scope_map azurerm_container_registry_scope_map} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/container_registry_scope_map azurerm_container_registry_scope_map} Data Source.
 func NewDataAzurermContainerRegistryScopeMap(scope constructs.Construct, id *string, config *DataAzurermContainerRegistryScopeMapConfig) DataAzurermContainerRegistryScopeMap {
 	_init_.Initialize()
 
@@ -391,7 +391,7 @@ func NewDataAzurermContainerRegistryScopeMap(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/container_registry_scope_map azurerm_container_registry_scope_map} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/container_registry_scope_map azurerm_container_registry_scope_map} Data Source.
 func NewDataAzurermContainerRegistryScopeMap_Override(d DataAzurermContainerRegistryScopeMap, scope constructs.Construct, id *string, config *DataAzurermContainerRegistryScopeMapConfig) {
 	_init_.Initialize()
 
@@ -413,7 +413,10 @@ func (j *jsiiProxy_DataAzurermContainerRegistryScopeMap)SetContainerRegistryName
 	)
 }
 
-func (j *jsiiProxy_DataAzurermContainerRegistryScopeMap)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermContainerRegistryScopeMap)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

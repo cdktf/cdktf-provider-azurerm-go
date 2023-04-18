@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataFactoryDatasetCosmosdbSqlapi) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryDatasetCosmosdbSqlapi) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryDatasetCosmosdbSqlapi) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

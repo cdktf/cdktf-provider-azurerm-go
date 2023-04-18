@@ -84,6 +84,10 @@ func (j *jsiiProxy_VirtualNetworkPeering) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_VirtualNetworkPeering) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetworkPeering) validateSetIdParameters(val *string) error {
 	return nil
 }

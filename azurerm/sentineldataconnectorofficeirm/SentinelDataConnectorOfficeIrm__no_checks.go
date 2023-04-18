@@ -72,6 +72,10 @@ func (j *jsiiProxy_SentinelDataConnectorOfficeIrm) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_SentinelDataConnectorOfficeIrm) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorOfficeIrm) validateSetIdParameters(val *string) error {
 	return nil
 }

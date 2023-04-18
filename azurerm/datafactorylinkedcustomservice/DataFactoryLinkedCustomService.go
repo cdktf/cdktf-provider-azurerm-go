@@ -2,14 +2,14 @@ package datafactorylinkedcustomservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/datafactorylinkedcustomservice/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/datafactorylinkedcustomservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_custom_service azurerm_data_factory_linked_custom_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_custom_service azurerm_data_factory_linked_custom_service}.
 type DataFactoryLinkedCustomService interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -27,9 +27,9 @@ type DataFactoryLinkedCustomService interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataFactoryId() *string
 	SetDataFactoryId(val *string)
 	DataFactoryIdInput() *string
@@ -211,8 +211,8 @@ func (j *jsiiProxy_DataFactoryLinkedCustomService) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataFactoryLinkedCustomService) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataFactoryLinkedCustomService) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -522,7 +522,7 @@ func (j *jsiiProxy_DataFactoryLinkedCustomService) TypePropertiesJsonInput() *st
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_custom_service azurerm_data_factory_linked_custom_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_custom_service azurerm_data_factory_linked_custom_service} Resource.
 func NewDataFactoryLinkedCustomService(scope constructs.Construct, id *string, config *DataFactoryLinkedCustomServiceConfig) DataFactoryLinkedCustomService {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewDataFactoryLinkedCustomService(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_custom_service azurerm_data_factory_linked_custom_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_custom_service azurerm_data_factory_linked_custom_service} Resource.
 func NewDataFactoryLinkedCustomService_Override(d DataFactoryLinkedCustomService, scope constructs.Construct, id *string, config *DataFactoryLinkedCustomServiceConfig) {
 	_init_.Initialize()
 
@@ -584,7 +584,10 @@ func (j *jsiiProxy_DataFactoryLinkedCustomService)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DataFactoryLinkedCustomService)SetCount(val *float64) {
+func (j *jsiiProxy_DataFactoryLinkedCustomService)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

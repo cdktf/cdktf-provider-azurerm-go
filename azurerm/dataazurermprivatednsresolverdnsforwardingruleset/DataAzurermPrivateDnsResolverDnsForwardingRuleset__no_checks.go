@@ -68,6 +68,10 @@ func validateDataAzurermPrivateDnsResolverDnsForwardingRuleset_IsTerraformElemen
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermPrivateDnsResolverDnsForwardingRuleset) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPrivateDnsResolverDnsForwardingRuleset) validateSetIdParameters(val *string) error {
 	return nil
 }

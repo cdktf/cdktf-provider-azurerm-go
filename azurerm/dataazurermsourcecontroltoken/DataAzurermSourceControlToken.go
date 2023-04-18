@@ -2,14 +2,14 @@ package dataazurermsourcecontroltoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermsourcecontroltoken/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermsourcecontroltoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/source_control_token azurerm_source_control_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/source_control_token azurerm_source_control_token}.
 type DataAzurermSourceControlToken interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermSourceControlToken interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataAzurermSourceControlToken) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermSourceControlToken) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermSourceControlToken) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -327,7 +327,7 @@ func (j *jsiiProxy_DataAzurermSourceControlToken) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/source_control_token azurerm_source_control_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/source_control_token azurerm_source_control_token} Data Source.
 func NewDataAzurermSourceControlToken(scope constructs.Construct, id *string, config *DataAzurermSourceControlTokenConfig) DataAzurermSourceControlToken {
 	_init_.Initialize()
 
@@ -345,7 +345,7 @@ func NewDataAzurermSourceControlToken(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/source_control_token azurerm_source_control_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/source_control_token azurerm_source_control_token} Data Source.
 func NewDataAzurermSourceControlToken_Override(d DataAzurermSourceControlToken, scope constructs.Construct, id *string, config *DataAzurermSourceControlTokenConfig) {
 	_init_.Initialize()
 
@@ -356,7 +356,10 @@ func NewDataAzurermSourceControlToken_Override(d DataAzurermSourceControlToken, 
 	)
 }
 
-func (j *jsiiProxy_DataAzurermSourceControlToken)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermSourceControlToken)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

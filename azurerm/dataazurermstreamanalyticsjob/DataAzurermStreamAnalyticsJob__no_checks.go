@@ -68,6 +68,10 @@ func validateDataAzurermStreamAnalyticsJob_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermStreamAnalyticsJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermStreamAnalyticsJob) validateSetIdParameters(val *string) error {
 	return nil
 }

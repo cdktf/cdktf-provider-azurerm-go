@@ -72,6 +72,10 @@ func (j *jsiiProxy_SecurityCenterWorkspace) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SecurityCenterWorkspace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityCenterWorkspace) validateSetIdParameters(val *string) error {
 	return nil
 }

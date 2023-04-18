@@ -68,6 +68,10 @@ func validateDataAzurermSearchService_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermSearchService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermSearchService) validateSetIdParameters(val *string) error {
 	return nil
 }

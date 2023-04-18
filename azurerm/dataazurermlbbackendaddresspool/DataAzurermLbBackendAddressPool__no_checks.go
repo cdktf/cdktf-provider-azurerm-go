@@ -68,6 +68,10 @@ func validateDataAzurermLbBackendAddressPool_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermLbBackendAddressPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermLbBackendAddressPool) validateSetIdParameters(val *string) error {
 	return nil
 }

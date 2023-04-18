@@ -68,6 +68,10 @@ func validateDataAzurermAppServiceEnvironment_IsTerraformElementParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermAppServiceEnvironment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermAppServiceEnvironment) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermAutomationVariableBool) validateSetAutomationAccou
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermAutomationVariableBool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermAutomationVariableBool) validateSetIdParameters(val *string) error {
 	return nil
 }

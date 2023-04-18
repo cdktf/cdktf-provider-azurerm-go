@@ -68,6 +68,10 @@ func validateDataAzurermSshPublicKey_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermSshPublicKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermSshPublicKey) validateSetIdParameters(val *string) error {
 	return nil
 }

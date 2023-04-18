@@ -76,6 +76,10 @@ func (j *jsiiProxy_BackupProtectedVm) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_BackupProtectedVm) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupProtectedVm) validateSetExcludeDiskLunsParameters(val *[]*float64) error {
 	return nil
 }

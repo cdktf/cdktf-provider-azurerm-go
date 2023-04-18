@@ -96,6 +96,10 @@ func (j *jsiiProxy_ResourceDeploymentScriptAzurePowerShell) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_ResourceDeploymentScriptAzurePowerShell) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResourceDeploymentScriptAzurePowerShell) validateSetForceUpdateTagParameters(val *string) error {
 	return nil
 }

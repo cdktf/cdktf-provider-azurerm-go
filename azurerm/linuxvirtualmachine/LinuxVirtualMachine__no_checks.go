@@ -136,6 +136,10 @@ func (j *jsiiProxy_LinuxVirtualMachine) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_LinuxVirtualMachine) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxVirtualMachine) validateSetCustomDataParameters(val *string) error {
 	return nil
 }

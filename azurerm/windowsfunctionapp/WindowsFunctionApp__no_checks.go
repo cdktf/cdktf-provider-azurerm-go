@@ -128,6 +128,10 @@ func (j *jsiiProxy_WindowsFunctionApp) validateSetContentShareForceDisabledParam
 	return nil
 }
 
+func (j *jsiiProxy_WindowsFunctionApp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsFunctionApp) validateSetDailyMemoryTimeQuotaParameters(val *float64) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_ApplicationInsightsAnalyticsItem) validateSetContentParameter
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationInsightsAnalyticsItem) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationInsightsAnalyticsItem) validateSetFunctionAliasParameters(val *string) error {
 	return nil
 }

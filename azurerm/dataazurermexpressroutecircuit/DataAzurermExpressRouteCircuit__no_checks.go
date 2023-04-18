@@ -68,6 +68,10 @@ func validateDataAzurermExpressRouteCircuit_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermExpressRouteCircuit) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermExpressRouteCircuit) validateSetIdParameters(val *string) error {
 	return nil
 }

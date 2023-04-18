@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermBatchPool) validateSetAccountNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermBatchPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermBatchPool) validateSetIdParameters(val *string) error {
 	return nil
 }

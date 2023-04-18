@@ -72,6 +72,10 @@ func (j *jsiiProxy_MarketplaceAgreement) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_MarketplaceAgreement) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MarketplaceAgreement) validateSetIdParameters(val *string) error {
 	return nil
 }

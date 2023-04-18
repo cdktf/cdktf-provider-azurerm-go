@@ -2,14 +2,14 @@ package mssqlservertransparentdataencryption
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/mssqlservertransparentdataencryption/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/mssqlservertransparentdataencryption/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_server_transparent_data_encryption azurerm_mssql_server_transparent_data_encryption}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mssql_server_transparent_data_encryption azurerm_mssql_server_transparent_data_encryption}.
 type MssqlServerTransparentDataEncryption interface {
 	cdktf.TerraformResource
 	AutoRotationEnabled() interface{}
@@ -24,9 +24,9 @@ type MssqlServerTransparentDataEncryption interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -170,8 +170,8 @@ func (j *jsiiProxy_MssqlServerTransparentDataEncryption) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_MssqlServerTransparentDataEncryption) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MssqlServerTransparentDataEncryption) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -381,7 +381,7 @@ func (j *jsiiProxy_MssqlServerTransparentDataEncryption) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_server_transparent_data_encryption azurerm_mssql_server_transparent_data_encryption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mssql_server_transparent_data_encryption azurerm_mssql_server_transparent_data_encryption} Resource.
 func NewMssqlServerTransparentDataEncryption(scope constructs.Construct, id *string, config *MssqlServerTransparentDataEncryptionConfig) MssqlServerTransparentDataEncryption {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewMssqlServerTransparentDataEncryption(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_server_transparent_data_encryption azurerm_mssql_server_transparent_data_encryption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mssql_server_transparent_data_encryption azurerm_mssql_server_transparent_data_encryption} Resource.
 func NewMssqlServerTransparentDataEncryption_Override(m MssqlServerTransparentDataEncryption, scope constructs.Construct, id *string, config *MssqlServerTransparentDataEncryptionConfig) {
 	_init_.Initialize()
 
@@ -432,7 +432,10 @@ func (j *jsiiProxy_MssqlServerTransparentDataEncryption)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_MssqlServerTransparentDataEncryption)SetCount(val *float64) {
+func (j *jsiiProxy_MssqlServerTransparentDataEncryption)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_VirtualMachinePacketCapture) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_VirtualMachinePacketCapture) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualMachinePacketCapture) validateSetIdParameters(val *string) error {
 	return nil
 }

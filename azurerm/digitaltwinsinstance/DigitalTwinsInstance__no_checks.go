@@ -76,6 +76,10 @@ func (j *jsiiProxy_DigitalTwinsInstance) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_DigitalTwinsInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DigitalTwinsInstance) validateSetIdParameters(val *string) error {
 	return nil
 }

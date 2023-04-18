@@ -72,6 +72,10 @@ func (j *jsiiProxy_ExpressRoutePortAuthorization) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_ExpressRoutePortAuthorization) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRoutePortAuthorization) validateSetExpressRoutePortNameParameters(val *string) error {
 	return nil
 }

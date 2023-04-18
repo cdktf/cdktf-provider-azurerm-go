@@ -72,6 +72,10 @@ func (j *jsiiProxy_ServicebusTopicAuthorizationRule) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_ServicebusTopicAuthorizationRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicebusTopicAuthorizationRule) validateSetIdParameters(val *string) error {
 	return nil
 }

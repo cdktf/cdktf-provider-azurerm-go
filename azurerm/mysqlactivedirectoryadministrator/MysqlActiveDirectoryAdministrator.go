@@ -2,14 +2,14 @@ package mysqlactivedirectoryadministrator
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/mysqlactivedirectoryadministrator/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/mysqlactivedirectoryadministrator/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_active_directory_administrator azurerm_mysql_active_directory_administrator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_active_directory_administrator azurerm_mysql_active_directory_administrator}.
 type MysqlActiveDirectoryAdministrator interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MysqlActiveDirectoryAdministrator interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_MysqlActiveDirectoryAdministrator) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_MysqlActiveDirectoryAdministrator) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MysqlActiveDirectoryAdministrator) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -425,7 +425,7 @@ func (j *jsiiProxy_MysqlActiveDirectoryAdministrator) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_active_directory_administrator azurerm_mysql_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_active_directory_administrator azurerm_mysql_active_directory_administrator} Resource.
 func NewMysqlActiveDirectoryAdministrator(scope constructs.Construct, id *string, config *MysqlActiveDirectoryAdministratorConfig) MysqlActiveDirectoryAdministrator {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewMysqlActiveDirectoryAdministrator(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_active_directory_administrator azurerm_mysql_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_active_directory_administrator azurerm_mysql_active_directory_administrator} Resource.
 func NewMysqlActiveDirectoryAdministrator_Override(m MysqlActiveDirectoryAdministrator, scope constructs.Construct, id *string, config *MysqlActiveDirectoryAdministratorConfig) {
 	_init_.Initialize()
 
@@ -465,7 +465,10 @@ func (j *jsiiProxy_MysqlActiveDirectoryAdministrator)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_MysqlActiveDirectoryAdministrator)SetCount(val *float64) {
+func (j *jsiiProxy_MysqlActiveDirectoryAdministrator)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

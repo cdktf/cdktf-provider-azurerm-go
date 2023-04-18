@@ -2,14 +2,14 @@ package networkinterface
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/networkinterface/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/networkinterface/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/network_interface azurerm_network_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/network_interface azurerm_network_interface}.
 type NetworkInterface interface {
 	cdktf.TerraformResource
 	AppliedDnsServers() *[]*string
@@ -22,9 +22,9 @@ type NetworkInterface interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -191,8 +191,8 @@ func (j *jsiiProxy_NetworkInterface) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_NetworkInterface) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_NetworkInterface) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -612,7 +612,7 @@ func (j *jsiiProxy_NetworkInterface) VirtualMachineId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/network_interface azurerm_network_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/network_interface azurerm_network_interface} Resource.
 func NewNetworkInterface(scope constructs.Construct, id *string, config *NetworkInterfaceConfig) NetworkInterface {
 	_init_.Initialize()
 
@@ -630,7 +630,7 @@ func NewNetworkInterface(scope constructs.Construct, id *string, config *Network
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/network_interface azurerm_network_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/network_interface azurerm_network_interface} Resource.
 func NewNetworkInterface_Override(n NetworkInterface, scope constructs.Construct, id *string, config *NetworkInterfaceConfig) {
 	_init_.Initialize()
 
@@ -652,7 +652,10 @@ func (j *jsiiProxy_NetworkInterface)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkInterface)SetCount(val *float64) {
+func (j *jsiiProxy_NetworkInterface)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

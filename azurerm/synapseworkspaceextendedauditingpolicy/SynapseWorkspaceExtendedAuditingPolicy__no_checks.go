@@ -72,6 +72,10 @@ func (j *jsiiProxy_SynapseWorkspaceExtendedAuditingPolicy) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_SynapseWorkspaceExtendedAuditingPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseWorkspaceExtendedAuditingPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

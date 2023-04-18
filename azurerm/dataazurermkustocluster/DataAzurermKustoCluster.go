@@ -2,14 +2,14 @@ package dataazurermkustocluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermkustocluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermkustocluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/kusto_cluster azurerm_kusto_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/kusto_cluster azurerm_kusto_cluster}.
 type DataAzurermKustoCluster interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermKustoCluster interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataIngestionUri() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataAzurermKustoCluster) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermKustoCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermKustoCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -372,7 +372,7 @@ func (j *jsiiProxy_DataAzurermKustoCluster) Uri() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/kusto_cluster azurerm_kusto_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/kusto_cluster azurerm_kusto_cluster} Data Source.
 func NewDataAzurermKustoCluster(scope constructs.Construct, id *string, config *DataAzurermKustoClusterConfig) DataAzurermKustoCluster {
 	_init_.Initialize()
 
@@ -390,7 +390,7 @@ func NewDataAzurermKustoCluster(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/kusto_cluster azurerm_kusto_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/kusto_cluster azurerm_kusto_cluster} Data Source.
 func NewDataAzurermKustoCluster_Override(d DataAzurermKustoCluster, scope constructs.Construct, id *string, config *DataAzurermKustoClusterConfig) {
 	_init_.Initialize()
 
@@ -401,7 +401,10 @@ func NewDataAzurermKustoCluster_Override(d DataAzurermKustoCluster, scope constr
 	)
 }
 
-func (j *jsiiProxy_DataAzurermKustoCluster)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermKustoCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func validateDataAzurermMonitorScheduledQueryRulesAlert_IsTerraformElementParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermMonitorScheduledQueryRulesAlert) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMonitorScheduledQueryRulesAlert) validateSetIdParameters(val *string) error {
 	return nil
 }

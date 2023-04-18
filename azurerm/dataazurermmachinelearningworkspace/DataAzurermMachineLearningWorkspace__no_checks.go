@@ -68,6 +68,10 @@ func validateDataAzurermMachineLearningWorkspace_IsTerraformElementParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermMachineLearningWorkspace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMachineLearningWorkspace) validateSetIdParameters(val *string) error {
 	return nil
 }

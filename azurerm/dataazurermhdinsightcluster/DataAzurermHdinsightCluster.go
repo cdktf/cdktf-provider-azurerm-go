@@ -2,14 +2,14 @@ package dataazurermhdinsightcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermhdinsightcluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermhdinsightcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/hdinsight_cluster azurerm_hdinsight_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/hdinsight_cluster azurerm_hdinsight_cluster}.
 type DataAzurermHdinsightCluster interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -19,9 +19,9 @@ type DataAzurermHdinsightCluster interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataAzurermHdinsightCluster) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermHdinsightCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermHdinsightCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -460,7 +460,7 @@ func (j *jsiiProxy_DataAzurermHdinsightCluster) TlsMinVersion() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/hdinsight_cluster azurerm_hdinsight_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/hdinsight_cluster azurerm_hdinsight_cluster} Data Source.
 func NewDataAzurermHdinsightCluster(scope constructs.Construct, id *string, config *DataAzurermHdinsightClusterConfig) DataAzurermHdinsightCluster {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewDataAzurermHdinsightCluster(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/hdinsight_cluster azurerm_hdinsight_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/hdinsight_cluster azurerm_hdinsight_cluster} Data Source.
 func NewDataAzurermHdinsightCluster_Override(d DataAzurermHdinsightCluster, scope constructs.Construct, id *string, config *DataAzurermHdinsightClusterConfig) {
 	_init_.Initialize()
 
@@ -489,7 +489,10 @@ func NewDataAzurermHdinsightCluster_Override(d DataAzurermHdinsightCluster, scop
 	)
 }
 
-func (j *jsiiProxy_DataAzurermHdinsightCluster)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermHdinsightCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

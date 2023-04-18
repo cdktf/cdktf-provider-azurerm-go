@@ -72,6 +72,10 @@ func (j *jsiiProxy_NetworkDdosProtectionPlan) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_NetworkDdosProtectionPlan) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkDdosProtectionPlan) validateSetIdParameters(val *string) error {
 	return nil
 }

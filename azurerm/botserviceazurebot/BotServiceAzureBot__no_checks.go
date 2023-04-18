@@ -72,6 +72,10 @@ func (j *jsiiProxy_BotServiceAzureBot) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_BotServiceAzureBot) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotServiceAzureBot) validateSetDeveloperAppInsightsApiKeyParameters(val *string) error {
 	return nil
 }

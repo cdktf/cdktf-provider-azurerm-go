@@ -2,14 +2,14 @@ package dataazurermelasticcloudelasticsearch
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermelasticcloudelasticsearch/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermelasticcloudelasticsearch/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/elastic_cloud_elasticsearch azurerm_elastic_cloud_elasticsearch}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/elastic_cloud_elasticsearch azurerm_elastic_cloud_elasticsearch}.
 type DataAzurermElasticCloudElasticsearch interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermElasticCloudElasticsearch interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataAzurermElasticCloudElasticsearch) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermElasticCloudElasticsearch) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermElasticCloudElasticsearch) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -473,7 +473,7 @@ func (j *jsiiProxy_DataAzurermElasticCloudElasticsearch) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/elastic_cloud_elasticsearch azurerm_elastic_cloud_elasticsearch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/elastic_cloud_elasticsearch azurerm_elastic_cloud_elasticsearch} Data Source.
 func NewDataAzurermElasticCloudElasticsearch(scope constructs.Construct, id *string, config *DataAzurermElasticCloudElasticsearchConfig) DataAzurermElasticCloudElasticsearch {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewDataAzurermElasticCloudElasticsearch(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/elastic_cloud_elasticsearch azurerm_elastic_cloud_elasticsearch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/elastic_cloud_elasticsearch azurerm_elastic_cloud_elasticsearch} Data Source.
 func NewDataAzurermElasticCloudElasticsearch_Override(d DataAzurermElasticCloudElasticsearch, scope constructs.Construct, id *string, config *DataAzurermElasticCloudElasticsearchConfig) {
 	_init_.Initialize()
 
@@ -502,7 +502,10 @@ func NewDataAzurermElasticCloudElasticsearch_Override(d DataAzurermElasticCloudE
 	)
 }
 
-func (j *jsiiProxy_DataAzurermElasticCloudElasticsearch)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermElasticCloudElasticsearch)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

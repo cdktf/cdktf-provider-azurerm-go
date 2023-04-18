@@ -2,14 +2,14 @@ package streamanalyticsoutputeventhub
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/streamanalyticsoutputeventhub/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/streamanalyticsoutputeventhub/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_eventhub azurerm_stream_analytics_output_eventhub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_output_eventhub azurerm_stream_analytics_output_eventhub}.
 type StreamAnalyticsOutputEventhub interface {
 	cdktf.TerraformResource
 	AuthenticationMode() *string
@@ -24,9 +24,9 @@ type StreamAnalyticsOutputEventhub interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -197,8 +197,8 @@ func (j *jsiiProxy_StreamAnalyticsOutputEventhub) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_StreamAnalyticsOutputEventhub) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_StreamAnalyticsOutputEventhub) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -568,7 +568,7 @@ func (j *jsiiProxy_StreamAnalyticsOutputEventhub) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_eventhub azurerm_stream_analytics_output_eventhub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_output_eventhub azurerm_stream_analytics_output_eventhub} Resource.
 func NewStreamAnalyticsOutputEventhub(scope constructs.Construct, id *string, config *StreamAnalyticsOutputEventhubConfig) StreamAnalyticsOutputEventhub {
 	_init_.Initialize()
 
@@ -586,7 +586,7 @@ func NewStreamAnalyticsOutputEventhub(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_eventhub azurerm_stream_analytics_output_eventhub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_output_eventhub azurerm_stream_analytics_output_eventhub} Resource.
 func NewStreamAnalyticsOutputEventhub_Override(s StreamAnalyticsOutputEventhub, scope constructs.Construct, id *string, config *StreamAnalyticsOutputEventhubConfig) {
 	_init_.Initialize()
 
@@ -619,7 +619,10 @@ func (j *jsiiProxy_StreamAnalyticsOutputEventhub)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_StreamAnalyticsOutputEventhub)SetCount(val *float64) {
+func (j *jsiiProxy_StreamAnalyticsOutputEventhub)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

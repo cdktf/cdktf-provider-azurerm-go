@@ -2,14 +2,14 @@ package dataazurermsiterecoveryreplicationrecoveryplan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermsiterecoveryreplicationrecoveryplan/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermsiterecoveryreplicationrecoveryplan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan}.
 type DataAzurermSiteRecoveryReplicationRecoveryPlan interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermSiteRecoveryReplicationRecoveryPlan interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlan) ConstructNode
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlan) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlan) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -372,7 +372,7 @@ func (j *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlan) TimeoutsInput
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Data Source.
 func NewDataAzurermSiteRecoveryReplicationRecoveryPlan(scope constructs.Construct, id *string, config *DataAzurermSiteRecoveryReplicationRecoveryPlanConfig) DataAzurermSiteRecoveryReplicationRecoveryPlan {
 	_init_.Initialize()
 
@@ -390,7 +390,7 @@ func NewDataAzurermSiteRecoveryReplicationRecoveryPlan(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Data Source.
 func NewDataAzurermSiteRecoveryReplicationRecoveryPlan_Override(d DataAzurermSiteRecoveryReplicationRecoveryPlan, scope constructs.Construct, id *string, config *DataAzurermSiteRecoveryReplicationRecoveryPlanConfig) {
 	_init_.Initialize()
 
@@ -401,7 +401,10 @@ func NewDataAzurermSiteRecoveryReplicationRecoveryPlan_Override(d DataAzurermSit
 	)
 }
 
-func (j *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlan)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlan)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

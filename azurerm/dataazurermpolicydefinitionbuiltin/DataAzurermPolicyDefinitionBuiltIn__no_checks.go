@@ -68,6 +68,10 @@ func validateDataAzurermPolicyDefinitionBuiltIn_IsTerraformElementParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermPolicyDefinitionBuiltIn) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPolicyDefinitionBuiltIn) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

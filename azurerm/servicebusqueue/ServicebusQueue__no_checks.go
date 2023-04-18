@@ -76,6 +76,10 @@ func (j *jsiiProxy_ServicebusQueue) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_ServicebusQueue) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicebusQueue) validateSetDeadLetteringOnMessageExpirationParameters(val interface{}) error {
 	return nil
 }

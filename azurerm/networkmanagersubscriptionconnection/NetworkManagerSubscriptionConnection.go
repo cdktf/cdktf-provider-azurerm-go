@@ -2,14 +2,14 @@ package networkmanagersubscriptionconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/networkmanagersubscriptionconnection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/networkmanagersubscriptionconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/network_manager_subscription_connection azurerm_network_manager_subscription_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/network_manager_subscription_connection azurerm_network_manager_subscription_connection}.
 type NetworkManagerSubscriptionConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -22,9 +22,9 @@ type NetworkManagerSubscriptionConnection interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -163,8 +163,8 @@ func (j *jsiiProxy_NetworkManagerSubscriptionConnection) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagerSubscriptionConnection) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_NetworkManagerSubscriptionConnection) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_NetworkManagerSubscriptionConnection) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/network_manager_subscription_connection azurerm_network_manager_subscription_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/network_manager_subscription_connection azurerm_network_manager_subscription_connection} Resource.
 func NewNetworkManagerSubscriptionConnection(scope constructs.Construct, id *string, config *NetworkManagerSubscriptionConnectionConfig) NetworkManagerSubscriptionConnection {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewNetworkManagerSubscriptionConnection(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/network_manager_subscription_connection azurerm_network_manager_subscription_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/network_manager_subscription_connection azurerm_network_manager_subscription_connection} Resource.
 func NewNetworkManagerSubscriptionConnection_Override(n NetworkManagerSubscriptionConnection, scope constructs.Construct, id *string, config *NetworkManagerSubscriptionConnectionConfig) {
 	_init_.Initialize()
 
@@ -454,7 +454,10 @@ func (j *jsiiProxy_NetworkManagerSubscriptionConnection)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_NetworkManagerSubscriptionConnection)SetCount(val *float64) {
+func (j *jsiiProxy_NetworkManagerSubscriptionConnection)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

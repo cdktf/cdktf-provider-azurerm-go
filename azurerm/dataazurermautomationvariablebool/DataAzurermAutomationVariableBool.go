@@ -2,14 +2,14 @@ package dataazurermautomationvariablebool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermautomationvariablebool/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermautomationvariablebool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/automation_variable_bool azurerm_automation_variable_bool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/automation_variable_bool azurerm_automation_variable_bool}.
 type DataAzurermAutomationVariableBool interface {
 	cdktf.TerraformDataSource
 	AutomationAccountName() *string
@@ -20,9 +20,9 @@ type DataAzurermAutomationVariableBool interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataAzurermAutomationVariableBool) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermAutomationVariableBool) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermAutomationVariableBool) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DataAzurermAutomationVariableBool) Value() cdktf.IResolvable 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/automation_variable_bool azurerm_automation_variable_bool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/automation_variable_bool azurerm_automation_variable_bool} Data Source.
 func NewDataAzurermAutomationVariableBool(scope constructs.Construct, id *string, config *DataAzurermAutomationVariableBoolConfig) DataAzurermAutomationVariableBool {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewDataAzurermAutomationVariableBool(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/automation_variable_bool azurerm_automation_variable_bool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/automation_variable_bool azurerm_automation_variable_bool} Data Source.
 func NewDataAzurermAutomationVariableBool_Override(d DataAzurermAutomationVariableBool, scope constructs.Construct, id *string, config *DataAzurermAutomationVariableBoolConfig) {
 	_init_.Initialize()
 
@@ -424,7 +424,10 @@ func (j *jsiiProxy_DataAzurermAutomationVariableBool)SetAutomationAccountName(va
 	)
 }
 
-func (j *jsiiProxy_DataAzurermAutomationVariableBool)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermAutomationVariableBool)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

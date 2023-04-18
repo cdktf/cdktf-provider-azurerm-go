@@ -92,6 +92,10 @@ func (j *jsiiProxy_MssqlServer) validateSetConnectionPolicyParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_MssqlServer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlServer) validateSetIdParameters(val *string) error {
 	return nil
 }

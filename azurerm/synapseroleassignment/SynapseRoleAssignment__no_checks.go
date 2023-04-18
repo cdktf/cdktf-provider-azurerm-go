@@ -72,6 +72,10 @@ func (j *jsiiProxy_SynapseRoleAssignment) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_SynapseRoleAssignment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseRoleAssignment) validateSetIdParameters(val *string) error {
 	return nil
 }

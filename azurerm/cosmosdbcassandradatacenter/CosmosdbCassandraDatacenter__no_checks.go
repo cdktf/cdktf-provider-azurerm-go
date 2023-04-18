@@ -88,6 +88,10 @@ func (j *jsiiProxy_CosmosdbCassandraDatacenter) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbCassandraDatacenter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbCassandraDatacenter) validateSetDelegatedManagementSubnetIdParameters(val *string) error {
 	return nil
 }

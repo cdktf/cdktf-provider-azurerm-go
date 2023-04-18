@@ -76,6 +76,10 @@ func (j *jsiiProxy_IothubDpsCertificate) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_IothubDpsCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubDpsCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

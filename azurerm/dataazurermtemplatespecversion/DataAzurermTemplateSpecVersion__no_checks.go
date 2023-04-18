@@ -68,6 +68,10 @@ func validateDataAzurermTemplateSpecVersion_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermTemplateSpecVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermTemplateSpecVersion) validateSetIdParameters(val *string) error {
 	return nil
 }

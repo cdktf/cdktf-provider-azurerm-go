@@ -72,6 +72,10 @@ func (j *jsiiProxy_VirtualDesktopHostPoolRegistrationInfo) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_VirtualDesktopHostPoolRegistrationInfo) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualDesktopHostPoolRegistrationInfo) validateSetExpirationDateParameters(val *string) error {
 	return nil
 }

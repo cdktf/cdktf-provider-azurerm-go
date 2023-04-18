@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureFunction) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryLinkedServiceAzureFunction) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceAzureFunction) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_ContainerRegistryWebhook) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ContainerRegistryWebhook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerRegistryWebhook) validateSetCustomHeadersParameters(val *map[string]*string) error {
 	return nil
 }

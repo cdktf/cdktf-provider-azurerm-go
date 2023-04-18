@@ -2,14 +2,14 @@ package apimanagementpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/apimanagementpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/apimanagementpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_policy azurerm_api_management_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_policy azurerm_api_management_policy}.
 type ApiManagementPolicyA interface {
 	cdktf.TerraformResource
 	ApiManagementId() *string
@@ -24,9 +24,9 @@ type ApiManagementPolicyA interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -170,8 +170,8 @@ func (j *jsiiProxy_ApiManagementPolicyA) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_ApiManagementPolicyA) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApiManagementPolicyA) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -381,7 +381,7 @@ func (j *jsiiProxy_ApiManagementPolicyA) XmlLinkInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_policy azurerm_api_management_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_policy azurerm_api_management_policy} Resource.
 func NewApiManagementPolicyA(scope constructs.Construct, id *string, config *ApiManagementPolicyAConfig) ApiManagementPolicyA {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewApiManagementPolicyA(scope constructs.Construct, id *string, config *Api
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_policy azurerm_api_management_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_policy azurerm_api_management_policy} Resource.
 func NewApiManagementPolicyA_Override(a ApiManagementPolicyA, scope constructs.Construct, id *string, config *ApiManagementPolicyAConfig) {
 	_init_.Initialize()
 
@@ -432,7 +432,10 @@ func (j *jsiiProxy_ApiManagementPolicyA)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiManagementPolicyA)SetCount(val *float64) {
+func (j *jsiiProxy_ApiManagementPolicyA)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

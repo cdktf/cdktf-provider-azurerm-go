@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataFactoryDatasetSqlServerTable) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryDatasetSqlServerTable) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryDatasetSqlServerTable) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func validateDataAzurermSqlManagedInstance_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermSqlManagedInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermSqlManagedInstance) validateSetIdParameters(val *string) error {
 	return nil
 }

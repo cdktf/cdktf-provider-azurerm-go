@@ -72,6 +72,10 @@ func (j *jsiiProxy_SynapseSqlPoolSecurityAlertPolicy) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_SynapseSqlPoolSecurityAlertPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseSqlPoolSecurityAlertPolicy) validateSetDisabledAlertsParameters(val *[]*string) error {
 	return nil
 }

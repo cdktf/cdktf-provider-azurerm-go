@@ -2,14 +2,14 @@ package dataazurermvirtualhub
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermvirtualhub/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermvirtualhub/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/virtual_hub azurerm_virtual_hub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/virtual_hub azurerm_virtual_hub}.
 type DataAzurermVirtualHub interface {
 	cdktf.TerraformDataSource
 	AddressPrefix() *string
@@ -18,9 +18,9 @@ type DataAzurermVirtualHub interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultRouteTableId() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DataAzurermVirtualHub) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermVirtualHub) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermVirtualHub) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -405,7 +405,7 @@ func (j *jsiiProxy_DataAzurermVirtualHub) VirtualWanId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/virtual_hub azurerm_virtual_hub} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/virtual_hub azurerm_virtual_hub} Data Source.
 func NewDataAzurermVirtualHub(scope constructs.Construct, id *string, config *DataAzurermVirtualHubConfig) DataAzurermVirtualHub {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewDataAzurermVirtualHub(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/virtual_hub azurerm_virtual_hub} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/virtual_hub azurerm_virtual_hub} Data Source.
 func NewDataAzurermVirtualHub_Override(d DataAzurermVirtualHub, scope constructs.Construct, id *string, config *DataAzurermVirtualHubConfig) {
 	_init_.Initialize()
 
@@ -434,7 +434,10 @@ func NewDataAzurermVirtualHub_Override(d DataAzurermVirtualHub, scope constructs
 	)
 }
 
-func (j *jsiiProxy_DataAzurermVirtualHub)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermVirtualHub)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

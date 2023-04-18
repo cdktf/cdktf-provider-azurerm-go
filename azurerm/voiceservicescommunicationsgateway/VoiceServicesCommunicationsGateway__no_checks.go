@@ -92,6 +92,10 @@ func (j *jsiiProxy_VoiceServicesCommunicationsGateway) validateSetConnectivityPa
 	return nil
 }
 
+func (j *jsiiProxy_VoiceServicesCommunicationsGateway) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VoiceServicesCommunicationsGateway) validateSetE911TypeParameters(val *string) error {
 	return nil
 }

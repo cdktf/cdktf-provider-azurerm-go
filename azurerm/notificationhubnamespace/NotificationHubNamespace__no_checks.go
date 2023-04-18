@@ -72,6 +72,10 @@ func (j *jsiiProxy_NotificationHubNamespace) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_NotificationHubNamespace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationHubNamespace) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

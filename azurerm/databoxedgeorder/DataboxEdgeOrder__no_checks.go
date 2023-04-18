@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataboxEdgeOrder) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataboxEdgeOrder) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataboxEdgeOrder) validateSetDeviceNameParameters(val *string) error {
 	return nil
 }

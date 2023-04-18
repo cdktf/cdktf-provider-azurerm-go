@@ -2,14 +2,14 @@ package cdnprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/cdnprofile/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/cdnprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_profile azurerm_cdn_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/cdn_profile azurerm_cdn_profile}.
 type CdnProfile interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CdnProfile interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -155,8 +155,8 @@ func (j *jsiiProxy_CdnProfile) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CdnProfile) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CdnProfile) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -426,7 +426,7 @@ func (j *jsiiProxy_CdnProfile) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_profile azurerm_cdn_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/cdn_profile azurerm_cdn_profile} Resource.
 func NewCdnProfile(scope constructs.Construct, id *string, config *CdnProfileConfig) CdnProfile {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewCdnProfile(scope constructs.Construct, id *string, config *CdnProfileCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_profile azurerm_cdn_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/cdn_profile azurerm_cdn_profile} Resource.
 func NewCdnProfile_Override(c CdnProfile, scope constructs.Construct, id *string, config *CdnProfileConfig) {
 	_init_.Initialize()
 
@@ -466,7 +466,10 @@ func (j *jsiiProxy_CdnProfile)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CdnProfile)SetCount(val *float64) {
+func (j *jsiiProxy_CdnProfile)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -84,6 +84,10 @@ func (j *jsiiProxy_SpringCloudBuildDeployment) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudBuildDeployment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudBuildDeployment) validateSetEnvironmentVariablesParameters(val *map[string]*string) error {
 	return nil
 }

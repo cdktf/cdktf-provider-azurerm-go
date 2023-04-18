@@ -68,6 +68,10 @@ func validateDataAzurermPolicyVirtualMachineConfigurationAssignment_IsTerraformE
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermPolicyVirtualMachineConfigurationAssignment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPolicyVirtualMachineConfigurationAssignment) validateSetIdParameters(val *string) error {
 	return nil
 }

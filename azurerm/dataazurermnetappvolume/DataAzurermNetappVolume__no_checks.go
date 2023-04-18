@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermNetappVolume) validateSetAccountNameParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermNetappVolume) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermNetappVolume) validateSetIdParameters(val *string) error {
 	return nil
 }

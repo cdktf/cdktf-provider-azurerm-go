@@ -76,6 +76,10 @@ func (j *jsiiProxy_AutomationJobSchedule) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_AutomationJobSchedule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationJobSchedule) validateSetIdParameters(val *string) error {
 	return nil
 }

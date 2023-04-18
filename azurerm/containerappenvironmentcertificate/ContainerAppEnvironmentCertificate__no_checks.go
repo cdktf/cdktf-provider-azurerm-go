@@ -84,6 +84,10 @@ func (j *jsiiProxy_ContainerAppEnvironmentCertificate) validateSetContainerAppEn
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppEnvironmentCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppEnvironmentCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

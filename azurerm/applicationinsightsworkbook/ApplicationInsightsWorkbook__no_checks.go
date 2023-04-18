@@ -80,6 +80,10 @@ func (j *jsiiProxy_ApplicationInsightsWorkbook) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationInsightsWorkbook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationInsightsWorkbook) validateSetDataJsonParameters(val *string) error {
 	return nil
 }

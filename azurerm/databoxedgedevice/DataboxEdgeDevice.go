@@ -2,14 +2,14 @@ package databoxedgedevice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/databoxedgedevice/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/databoxedgedevice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/databox_edge_device azurerm_databox_edge_device}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/databox_edge_device azurerm_databox_edge_device}.
 type DataboxEdgeDevice interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DataboxEdgeDevice interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DataboxEdgeDevice) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataboxEdgeDevice) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataboxEdgeDevice) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -437,7 +437,7 @@ func (j *jsiiProxy_DataboxEdgeDevice) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/databox_edge_device azurerm_databox_edge_device} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/databox_edge_device azurerm_databox_edge_device} Resource.
 func NewDataboxEdgeDevice(scope constructs.Construct, id *string, config *DataboxEdgeDeviceConfig) DataboxEdgeDevice {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewDataboxEdgeDevice(scope constructs.Construct, id *string, config *Databo
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/databox_edge_device azurerm_databox_edge_device} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/databox_edge_device azurerm_databox_edge_device} Resource.
 func NewDataboxEdgeDevice_Override(d DataboxEdgeDevice, scope constructs.Construct, id *string, config *DataboxEdgeDeviceConfig) {
 	_init_.Initialize()
 
@@ -477,7 +477,10 @@ func (j *jsiiProxy_DataboxEdgeDevice)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataboxEdgeDevice)SetCount(val *float64) {
+func (j *jsiiProxy_DataboxEdgeDevice)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

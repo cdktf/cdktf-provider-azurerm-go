@@ -2,14 +2,14 @@ package dataazurermredisenterprisedatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermredisenterprisedatabase/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermredisenterprisedatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/redis_enterprise_database azurerm_redis_enterprise_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/redis_enterprise_database azurerm_redis_enterprise_database}.
 type DataAzurermRedisEnterpriseDatabase interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -20,9 +20,9 @@ type DataAzurermRedisEnterpriseDatabase interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -155,8 +155,8 @@ func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/redis_enterprise_database azurerm_redis_enterprise_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/redis_enterprise_database azurerm_redis_enterprise_database} Data Source.
 func NewDataAzurermRedisEnterpriseDatabase(scope constructs.Construct, id *string, config *DataAzurermRedisEnterpriseDatabaseConfig) DataAzurermRedisEnterpriseDatabase {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewDataAzurermRedisEnterpriseDatabase(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/redis_enterprise_database azurerm_redis_enterprise_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/redis_enterprise_database azurerm_redis_enterprise_database} Data Source.
 func NewDataAzurermRedisEnterpriseDatabase_Override(d DataAzurermRedisEnterpriseDatabase, scope constructs.Construct, id *string, config *DataAzurermRedisEnterpriseDatabaseConfig) {
 	_init_.Initialize()
 
@@ -436,7 +436,10 @@ func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase)SetClusterId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

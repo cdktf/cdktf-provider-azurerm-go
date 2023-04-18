@@ -72,6 +72,10 @@ func (j *jsiiProxy_LogAnalyticsClusterCustomerManagedKey) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsClusterCustomerManagedKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsClusterCustomerManagedKey) validateSetIdParameters(val *string) error {
 	return nil
 }

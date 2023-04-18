@@ -68,6 +68,10 @@ func validateDataAzurermMssqlDatabase_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermMssqlDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMssqlDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }

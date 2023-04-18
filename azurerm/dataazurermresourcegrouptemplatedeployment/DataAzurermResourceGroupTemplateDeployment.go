@@ -2,14 +2,14 @@ package dataazurermresourcegrouptemplatedeployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermresourcegrouptemplatedeployment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermresourcegrouptemplatedeployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/resource_group_template_deployment azurerm_resource_group_template_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/resource_group_template_deployment azurerm_resource_group_template_deployment}.
 type DataAzurermResourceGroupTemplateDeployment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermResourceGroupTemplateDeployment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataAzurermResourceGroupTemplateDeployment) ConstructNodeMeta
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermResourceGroupTemplateDeployment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermResourceGroupTemplateDeployment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -339,7 +339,7 @@ func (j *jsiiProxy_DataAzurermResourceGroupTemplateDeployment) TimeoutsInput() i
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/resource_group_template_deployment azurerm_resource_group_template_deployment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/resource_group_template_deployment azurerm_resource_group_template_deployment} Data Source.
 func NewDataAzurermResourceGroupTemplateDeployment(scope constructs.Construct, id *string, config *DataAzurermResourceGroupTemplateDeploymentConfig) DataAzurermResourceGroupTemplateDeployment {
 	_init_.Initialize()
 
@@ -357,7 +357,7 @@ func NewDataAzurermResourceGroupTemplateDeployment(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/resource_group_template_deployment azurerm_resource_group_template_deployment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/resource_group_template_deployment azurerm_resource_group_template_deployment} Data Source.
 func NewDataAzurermResourceGroupTemplateDeployment_Override(d DataAzurermResourceGroupTemplateDeployment, scope constructs.Construct, id *string, config *DataAzurermResourceGroupTemplateDeploymentConfig) {
 	_init_.Initialize()
 
@@ -368,7 +368,10 @@ func NewDataAzurermResourceGroupTemplateDeployment_Override(d DataAzurermResourc
 	)
 }
 
-func (j *jsiiProxy_DataAzurermResourceGroupTemplateDeployment)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermResourceGroupTemplateDeployment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

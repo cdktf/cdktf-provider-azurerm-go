@@ -68,6 +68,10 @@ func validateDataAzurermPrivateDnsResolverVirtualNetworkLink_IsTerraformElementP
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermPrivateDnsResolverVirtualNetworkLink) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPrivateDnsResolverVirtualNetworkLink) validateSetDnsForwardingRulesetIdParameters(val *string) error {
 	return nil
 }

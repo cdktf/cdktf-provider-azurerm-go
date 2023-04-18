@@ -2,14 +2,14 @@ package voiceservicescommunicationsgatewaytestline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/voiceservicescommunicationsgatewaytestline/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/voiceservicescommunicationsgatewaytestline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/voice_services_communications_gateway_test_line azurerm_voice_services_communications_gateway_test_line}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/voice_services_communications_gateway_test_line azurerm_voice_services_communications_gateway_test_line}.
 type VoiceServicesCommunicationsGatewayTestLine interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type VoiceServicesCommunicationsGatewayTestLine interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -158,8 +158,8 @@ func (j *jsiiProxy_VoiceServicesCommunicationsGatewayTestLine) ConstructNodeMeta
 	return returns
 }
 
-func (j *jsiiProxy_VoiceServicesCommunicationsGatewayTestLine) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VoiceServicesCommunicationsGatewayTestLine) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -449,7 +449,7 @@ func (j *jsiiProxy_VoiceServicesCommunicationsGatewayTestLine) VoiceServicesComm
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/voice_services_communications_gateway_test_line azurerm_voice_services_communications_gateway_test_line} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/voice_services_communications_gateway_test_line azurerm_voice_services_communications_gateway_test_line} Resource.
 func NewVoiceServicesCommunicationsGatewayTestLine(scope constructs.Construct, id *string, config *VoiceServicesCommunicationsGatewayTestLineConfig) VoiceServicesCommunicationsGatewayTestLine {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewVoiceServicesCommunicationsGatewayTestLine(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/voice_services_communications_gateway_test_line azurerm_voice_services_communications_gateway_test_line} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/voice_services_communications_gateway_test_line azurerm_voice_services_communications_gateway_test_line} Resource.
 func NewVoiceServicesCommunicationsGatewayTestLine_Override(v VoiceServicesCommunicationsGatewayTestLine, scope constructs.Construct, id *string, config *VoiceServicesCommunicationsGatewayTestLineConfig) {
 	_init_.Initialize()
 
@@ -489,7 +489,10 @@ func (j *jsiiProxy_VoiceServicesCommunicationsGatewayTestLine)SetConnection(val 
 	)
 }
 
-func (j *jsiiProxy_VoiceServicesCommunicationsGatewayTestLine)SetCount(val *float64) {
+func (j *jsiiProxy_VoiceServicesCommunicationsGatewayTestLine)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

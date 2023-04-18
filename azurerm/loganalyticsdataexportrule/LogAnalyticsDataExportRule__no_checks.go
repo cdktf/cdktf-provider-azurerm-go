@@ -72,6 +72,10 @@ func (j *jsiiProxy_LogAnalyticsDataExportRule) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsDataExportRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsDataExportRule) validateSetDestinationResourceIdParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql) validateSetDefaultRetentionDurationParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package publicip
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/publicip/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/publicip/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/public_ip azurerm_public_ip}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/public_ip azurerm_public_ip}.
 type PublicIp interface {
 	cdktf.TerraformResource
 	AllocationMethod() *string
@@ -24,9 +24,9 @@ type PublicIp interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DdosProtectionMode() *string
 	SetDdosProtectionMode(val *string)
 	DdosProtectionModeInput() *string
@@ -225,8 +225,8 @@ func (j *jsiiProxy_PublicIp) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PublicIp) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PublicIp) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -736,7 +736,7 @@ func (j *jsiiProxy_PublicIp) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/public_ip azurerm_public_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/public_ip azurerm_public_ip} Resource.
 func NewPublicIp(scope constructs.Construct, id *string, config *PublicIpConfig) PublicIp {
 	_init_.Initialize()
 
@@ -754,7 +754,7 @@ func NewPublicIp(scope constructs.Construct, id *string, config *PublicIpConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/public_ip azurerm_public_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/public_ip azurerm_public_ip} Resource.
 func NewPublicIp_Override(p PublicIp, scope constructs.Construct, id *string, config *PublicIpConfig) {
 	_init_.Initialize()
 
@@ -787,7 +787,10 @@ func (j *jsiiProxy_PublicIp)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PublicIp)SetCount(val *float64) {
+func (j *jsiiProxy_PublicIp)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

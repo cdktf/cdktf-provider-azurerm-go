@@ -76,6 +76,10 @@ func (j *jsiiProxy_ProximityPlacementGroup) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ProximityPlacementGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProximityPlacementGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

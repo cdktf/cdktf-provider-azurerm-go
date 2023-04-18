@@ -68,6 +68,10 @@ func validateDataAzurermMobileNetworkDataNetwork_IsTerraformElementParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermMobileNetworkDataNetwork) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMobileNetworkDataNetwork) validateSetIdParameters(val *string) error {
 	return nil
 }

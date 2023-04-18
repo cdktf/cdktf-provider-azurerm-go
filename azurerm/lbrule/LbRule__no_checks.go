@@ -80,6 +80,10 @@ func (j *jsiiProxy_LbRule) validateSetConnectionParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_LbRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbRule) validateSetDisableOutboundSnatParameters(val interface{}) error {
 	return nil
 }

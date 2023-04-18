@@ -76,6 +76,10 @@ func (j *jsiiProxy_NginxCertificate) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_NginxCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NginxCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

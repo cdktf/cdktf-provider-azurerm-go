@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermAutomationVariableInt) validateSetAutomationAccoun
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermAutomationVariableInt) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermAutomationVariableInt) validateSetIdParameters(val *string) error {
 	return nil
 }

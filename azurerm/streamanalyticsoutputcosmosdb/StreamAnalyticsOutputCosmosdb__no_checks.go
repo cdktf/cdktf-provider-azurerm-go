@@ -84,6 +84,10 @@ func (j *jsiiProxy_StreamAnalyticsOutputCosmosdb) validateSetCosmosdbSqlDatabase
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsOutputCosmosdb) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsOutputCosmosdb) validateSetDocumentIdParameters(val *string) error {
 	return nil
 }

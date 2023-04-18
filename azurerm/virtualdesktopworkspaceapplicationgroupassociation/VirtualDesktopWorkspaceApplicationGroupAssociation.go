@@ -2,14 +2,14 @@ package virtualdesktopworkspaceapplicationgroupassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/virtualdesktopworkspaceapplicationgroupassociation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/virtualdesktopworkspaceapplicationgroupassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_desktop_workspace_application_group_association azurerm_virtual_desktop_workspace_application_group_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_desktop_workspace_application_group_association azurerm_virtual_desktop_workspace_application_group_association}.
 type VirtualDesktopWorkspaceApplicationGroupAssociation interface {
 	cdktf.TerraformResource
 	ApplicationGroupId() *string
@@ -24,9 +24,9 @@ type VirtualDesktopWorkspaceApplicationGroupAssociation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociation) Construct
 	return returns
 }
 
-func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociation) Workspace
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_desktop_workspace_application_group_association azurerm_virtual_desktop_workspace_application_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_desktop_workspace_application_group_association azurerm_virtual_desktop_workspace_application_group_association} Resource.
 func NewVirtualDesktopWorkspaceApplicationGroupAssociation(scope constructs.Construct, id *string, config *VirtualDesktopWorkspaceApplicationGroupAssociationConfig) VirtualDesktopWorkspaceApplicationGroupAssociation {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewVirtualDesktopWorkspaceApplicationGroupAssociation(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_desktop_workspace_application_group_association azurerm_virtual_desktop_workspace_application_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_desktop_workspace_application_group_association azurerm_virtual_desktop_workspace_application_group_association} Resource.
 func NewVirtualDesktopWorkspaceApplicationGroupAssociation_Override(v VirtualDesktopWorkspaceApplicationGroupAssociation, scope constructs.Construct, id *string, config *VirtualDesktopWorkspaceApplicationGroupAssociationConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociation)SetConnect
 	)
 }
 
-func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociation)SetCount(val *float64) {
+func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

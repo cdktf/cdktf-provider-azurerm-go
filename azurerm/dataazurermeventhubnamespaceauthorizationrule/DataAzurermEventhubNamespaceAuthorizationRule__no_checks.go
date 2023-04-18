@@ -68,6 +68,10 @@ func validateDataAzurermEventhubNamespaceAuthorizationRule_IsTerraformElementPar
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermEventhubNamespaceAuthorizationRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermEventhubNamespaceAuthorizationRule) validateSetIdParameters(val *string) error {
 	return nil
 }

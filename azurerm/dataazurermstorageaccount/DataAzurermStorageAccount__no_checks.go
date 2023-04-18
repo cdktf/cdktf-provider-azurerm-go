@@ -68,6 +68,10 @@ func validateDataAzurermStorageAccount_IsTerraformElementParameters(x interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermStorageAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermStorageAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

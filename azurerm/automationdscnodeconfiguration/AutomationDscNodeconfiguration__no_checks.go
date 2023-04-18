@@ -80,6 +80,10 @@ func (j *jsiiProxy_AutomationDscNodeconfiguration) validateSetContentEmbeddedPar
 	return nil
 }
 
+func (j *jsiiProxy_AutomationDscNodeconfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationDscNodeconfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

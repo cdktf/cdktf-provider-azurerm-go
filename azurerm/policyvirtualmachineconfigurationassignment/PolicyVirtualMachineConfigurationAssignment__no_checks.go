@@ -76,6 +76,10 @@ func (j *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) validateSetConne
 	return nil
 }
 
+func (j *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) validateSetIdParameters(val *string) error {
 	return nil
 }

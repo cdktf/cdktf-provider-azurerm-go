@@ -124,6 +124,10 @@ func (j *jsiiProxy_HdinsightInteractiveQueryCluster) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_HdinsightInteractiveQueryCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HdinsightInteractiveQueryCluster) validateSetEncryptionInTransitEnabledParameters(val interface{}) error {
 	return nil
 }

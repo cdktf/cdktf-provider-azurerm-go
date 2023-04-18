@@ -88,6 +88,10 @@ func (j *jsiiProxy_LogicAppIntegrationAccountAgreement) validateSetContentParame
 	return nil
 }
 
+func (j *jsiiProxy_LogicAppIntegrationAccountAgreement) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppIntegrationAccountAgreement) validateSetGuestPartnerNameParameters(val *string) error {
 	return nil
 }

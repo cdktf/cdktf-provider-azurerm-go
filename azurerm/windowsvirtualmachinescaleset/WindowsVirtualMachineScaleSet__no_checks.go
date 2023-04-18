@@ -172,6 +172,10 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSet) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_WindowsVirtualMachineScaleSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsVirtualMachineScaleSet) validateSetCustomDataParameters(val *string) error {
 	return nil
 }

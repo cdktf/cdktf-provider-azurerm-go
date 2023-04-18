@@ -72,6 +72,10 @@ func (j *jsiiProxy_SentinelDataConnectorAzureSecurityCenter) validateSetConnecti
 	return nil
 }
 
+func (j *jsiiProxy_SentinelDataConnectorAzureSecurityCenter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorAzureSecurityCenter) validateSetIdParameters(val *string) error {
 	return nil
 }

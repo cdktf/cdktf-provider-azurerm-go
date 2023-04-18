@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermServicebusNamespaceDisasterRecoveryConfig) validat
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermServicebusNamespaceDisasterRecoveryConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermServicebusNamespaceDisasterRecoveryConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

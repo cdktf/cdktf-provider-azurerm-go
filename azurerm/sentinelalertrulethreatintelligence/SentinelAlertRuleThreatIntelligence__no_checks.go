@@ -76,6 +76,10 @@ func (j *jsiiProxy_SentinelAlertRuleThreatIntelligence) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_SentinelAlertRuleThreatIntelligence) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelAlertRuleThreatIntelligence) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

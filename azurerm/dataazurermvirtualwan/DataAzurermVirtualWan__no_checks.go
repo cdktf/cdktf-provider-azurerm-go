@@ -68,6 +68,10 @@ func validateDataAzurermVirtualWan_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermVirtualWan) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermVirtualWan) validateSetIdParameters(val *string) error {
 	return nil
 }

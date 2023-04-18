@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermDataShare) validateSetAccountIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermDataShare) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDataShare) validateSetIdParameters(val *string) error {
 	return nil
 }

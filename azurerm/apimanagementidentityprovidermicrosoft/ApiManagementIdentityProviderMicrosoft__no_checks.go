@@ -84,6 +84,10 @@ func (j *jsiiProxy_ApiManagementIdentityProviderMicrosoft) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementIdentityProviderMicrosoft) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementIdentityProviderMicrosoft) validateSetIdParameters(val *string) error {
 	return nil
 }

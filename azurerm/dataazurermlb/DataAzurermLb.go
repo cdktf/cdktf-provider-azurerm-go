@@ -2,14 +2,14 @@ package dataazurermlb
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermlb/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermlb/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/lb azurerm_lb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/lb azurerm_lb}.
 type DataAzurermLb interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermLb interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataAzurermLb) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLb) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermLb) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataAzurermLb) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/lb azurerm_lb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/lb azurerm_lb} Data Source.
 func NewDataAzurermLb(scope constructs.Construct, id *string, config *DataAzurermLbConfig) DataAzurermLb {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataAzurermLb(scope constructs.Construct, id *string, config *DataAzurer
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/lb azurerm_lb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/lb azurerm_lb} Data Source.
 func NewDataAzurermLb_Override(d DataAzurermLb, scope constructs.Construct, id *string, config *DataAzurermLbConfig) {
 	_init_.Initialize()
 
@@ -423,7 +423,10 @@ func NewDataAzurermLb_Override(d DataAzurermLb, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_DataAzurermLb)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermLb)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

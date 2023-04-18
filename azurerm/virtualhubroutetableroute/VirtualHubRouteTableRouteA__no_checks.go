@@ -72,6 +72,10 @@ func (j *jsiiProxy_VirtualHubRouteTableRouteA) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_VirtualHubRouteTableRouteA) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualHubRouteTableRouteA) validateSetDestinationsParameters(val *[]*string) error {
 	return nil
 }

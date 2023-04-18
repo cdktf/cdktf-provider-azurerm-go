@@ -2,14 +2,14 @@ package apimanagementgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/apimanagementgroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/apimanagementgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_group azurerm_api_management_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_group azurerm_api_management_group}.
 type ApiManagementGroup interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -24,9 +24,9 @@ type ApiManagementGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -183,8 +183,8 @@ func (j *jsiiProxy_ApiManagementGroup) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_ApiManagementGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApiManagementGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -474,7 +474,7 @@ func (j *jsiiProxy_ApiManagementGroup) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_group azurerm_api_management_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_group azurerm_api_management_group} Resource.
 func NewApiManagementGroup(scope constructs.Construct, id *string, config *ApiManagementGroupConfig) ApiManagementGroup {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewApiManagementGroup(scope constructs.Construct, id *string, config *ApiMa
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_group azurerm_api_management_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_group azurerm_api_management_group} Resource.
 func NewApiManagementGroup_Override(a ApiManagementGroup, scope constructs.Construct, id *string, config *ApiManagementGroupConfig) {
 	_init_.Initialize()
 
@@ -525,7 +525,10 @@ func (j *jsiiProxy_ApiManagementGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiManagementGroup)SetCount(val *float64) {
+func (j *jsiiProxy_ApiManagementGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

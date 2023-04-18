@@ -76,6 +76,10 @@ func (j *jsiiProxy_VirtualDesktopHostPool) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_VirtualDesktopHostPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualDesktopHostPool) validateSetCustomRdpPropertiesParameters(val *string) error {
 	return nil
 }

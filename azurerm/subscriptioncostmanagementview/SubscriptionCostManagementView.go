@@ -2,14 +2,14 @@ package subscriptioncostmanagementview
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/subscriptioncostmanagementview/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/subscriptioncostmanagementview/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/subscription_cost_management_view azurerm_subscription_cost_management_view}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/subscription_cost_management_view azurerm_subscription_cost_management_view}.
 type SubscriptionCostManagementView interface {
 	cdktf.TerraformResource
 	Accumulated() interface{}
@@ -27,9 +27,9 @@ type SubscriptionCostManagementView interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Dataset() SubscriptionCostManagementViewDatasetOutputReference
 	DatasetInput() *SubscriptionCostManagementViewDataset
 	// Experimental.
@@ -211,8 +211,8 @@ func (j *jsiiProxy_SubscriptionCostManagementView) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_SubscriptionCostManagementView) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SubscriptionCostManagementView) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -542,7 +542,7 @@ func (j *jsiiProxy_SubscriptionCostManagementView) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/subscription_cost_management_view azurerm_subscription_cost_management_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/subscription_cost_management_view azurerm_subscription_cost_management_view} Resource.
 func NewSubscriptionCostManagementView(scope constructs.Construct, id *string, config *SubscriptionCostManagementViewConfig) SubscriptionCostManagementView {
 	_init_.Initialize()
 
@@ -560,7 +560,7 @@ func NewSubscriptionCostManagementView(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/subscription_cost_management_view azurerm_subscription_cost_management_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/subscription_cost_management_view azurerm_subscription_cost_management_view} Resource.
 func NewSubscriptionCostManagementView_Override(s SubscriptionCostManagementView, scope constructs.Construct, id *string, config *SubscriptionCostManagementViewConfig) {
 	_init_.Initialize()
 
@@ -604,7 +604,10 @@ func (j *jsiiProxy_SubscriptionCostManagementView)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_SubscriptionCostManagementView)SetCount(val *float64) {
+func (j *jsiiProxy_SubscriptionCostManagementView)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

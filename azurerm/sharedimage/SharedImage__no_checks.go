@@ -96,6 +96,10 @@ func (j *jsiiProxy_SharedImage) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_SharedImage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SharedImage) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

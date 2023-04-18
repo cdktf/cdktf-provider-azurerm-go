@@ -2,14 +2,14 @@ package appserviceslotcustomhostnamebinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/appserviceslotcustomhostnamebinding/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/appserviceslotcustomhostnamebinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/app_service_slot_custom_hostname_binding azurerm_app_service_slot_custom_hostname_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_slot_custom_hostname_binding azurerm_app_service_slot_custom_hostname_binding}.
 type AppServiceSlotCustomHostnameBinding interface {
 	cdktf.TerraformResource
 	AppServiceSlotId() *string
@@ -24,9 +24,9 @@ type AppServiceSlotCustomHostnameBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -174,8 +174,8 @@ func (j *jsiiProxy_AppServiceSlotCustomHostnameBinding) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_AppServiceSlotCustomHostnameBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppServiceSlotCustomHostnameBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -415,7 +415,7 @@ func (j *jsiiProxy_AppServiceSlotCustomHostnameBinding) VirtualIp() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/app_service_slot_custom_hostname_binding azurerm_app_service_slot_custom_hostname_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_slot_custom_hostname_binding azurerm_app_service_slot_custom_hostname_binding} Resource.
 func NewAppServiceSlotCustomHostnameBinding(scope constructs.Construct, id *string, config *AppServiceSlotCustomHostnameBindingConfig) AppServiceSlotCustomHostnameBinding {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewAppServiceSlotCustomHostnameBinding(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/app_service_slot_custom_hostname_binding azurerm_app_service_slot_custom_hostname_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_slot_custom_hostname_binding azurerm_app_service_slot_custom_hostname_binding} Resource.
 func NewAppServiceSlotCustomHostnameBinding_Override(a AppServiceSlotCustomHostnameBinding, scope constructs.Construct, id *string, config *AppServiceSlotCustomHostnameBindingConfig) {
 	_init_.Initialize()
 
@@ -466,7 +466,10 @@ func (j *jsiiProxy_AppServiceSlotCustomHostnameBinding)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_AppServiceSlotCustomHostnameBinding)SetCount(val *float64) {
+func (j *jsiiProxy_AppServiceSlotCustomHostnameBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

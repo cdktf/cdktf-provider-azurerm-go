@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataFactoryDatasetPostgresql) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryDatasetPostgresql) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryDatasetPostgresql) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

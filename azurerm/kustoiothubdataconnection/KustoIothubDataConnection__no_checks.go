@@ -80,6 +80,10 @@ func (j *jsiiProxy_KustoIothubDataConnection) validateSetConsumerGroupParameters
 	return nil
 }
 
+func (j *jsiiProxy_KustoIothubDataConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoIothubDataConnection) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

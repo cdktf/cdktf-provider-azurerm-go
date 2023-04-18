@@ -76,6 +76,10 @@ func (j *jsiiProxy_HealthcareMedtechService) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareMedtechService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareMedtechService) validateSetDeviceMappingJsonParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_MachineLearningSynapseSpark) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_MachineLearningSynapseSpark) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MachineLearningSynapseSpark) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

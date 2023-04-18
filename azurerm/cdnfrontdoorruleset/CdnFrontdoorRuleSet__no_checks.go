@@ -76,6 +76,10 @@ func (j *jsiiProxy_CdnFrontdoorRuleSet) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_CdnFrontdoorRuleSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnFrontdoorRuleSet) validateSetIdParameters(val *string) error {
 	return nil
 }

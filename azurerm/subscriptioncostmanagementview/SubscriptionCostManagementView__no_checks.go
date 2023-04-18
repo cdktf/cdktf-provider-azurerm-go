@@ -92,6 +92,10 @@ func (j *jsiiProxy_SubscriptionCostManagementView) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_SubscriptionCostManagementView) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SubscriptionCostManagementView) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

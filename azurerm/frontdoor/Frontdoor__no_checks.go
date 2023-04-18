@@ -96,6 +96,10 @@ func (j *jsiiProxy_Frontdoor) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_Frontdoor) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Frontdoor) validateSetFriendlyNameParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package apimanagementapi
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/apimanagementapi/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/apimanagementapi/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_api azurerm_api_management_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_api azurerm_api_management_api}.
 type ApiManagementApi interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -29,9 +29,9 @@ type ApiManagementApi interface {
 	Contact() ApiManagementApiContactOutputReference
 	ContactInput() *ApiManagementApiContact
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -293,8 +293,8 @@ func (j *jsiiProxy_ApiManagementApi) ContactInput() *ApiManagementApiContact {
 	return returns
 }
 
-func (j *jsiiProxy_ApiManagementApi) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApiManagementApi) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -904,7 +904,7 @@ func (j *jsiiProxy_ApiManagementApi) VersionSetIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_api azurerm_api_management_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_api azurerm_api_management_api} Resource.
 func NewApiManagementApi(scope constructs.Construct, id *string, config *ApiManagementApiConfig) ApiManagementApi {
 	_init_.Initialize()
 
@@ -922,7 +922,7 @@ func NewApiManagementApi(scope constructs.Construct, id *string, config *ApiMana
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_api azurerm_api_management_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_api azurerm_api_management_api} Resource.
 func NewApiManagementApi_Override(a ApiManagementApi, scope constructs.Construct, id *string, config *ApiManagementApiConfig) {
 	_init_.Initialize()
 
@@ -966,7 +966,10 @@ func (j *jsiiProxy_ApiManagementApi)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiManagementApi)SetCount(val *float64) {
+func (j *jsiiProxy_ApiManagementApi)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

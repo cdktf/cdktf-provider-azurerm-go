@@ -84,6 +84,10 @@ func (j *jsiiProxy_VirtualDesktopApplication) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_VirtualDesktopApplication) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualDesktopApplication) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_ManagedDiskSasToken) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_ManagedDiskSasToken) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedDiskSasToken) validateSetDurationInSecondsParameters(val *float64) error {
 	return nil
 }

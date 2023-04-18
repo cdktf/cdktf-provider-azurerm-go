@@ -80,6 +80,10 @@ func (j *jsiiProxy_VirtualDesktopScalingPlan) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_VirtualDesktopScalingPlan) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualDesktopScalingPlan) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package cdnfrontdoorcustomdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/cdnfrontdoorcustomdomain/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/cdnfrontdoorcustomdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_custom_domain azurerm_cdn_frontdoor_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/cdn_frontdoor_custom_domain azurerm_cdn_frontdoor_custom_domain}.
 type CdnFrontdoorCustomDomain interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type CdnFrontdoorCustomDomain interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -177,8 +177,8 @@ func (j *jsiiProxy_CdnFrontdoorCustomDomain) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_CdnFrontdoorCustomDomain) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CdnFrontdoorCustomDomain) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -448,7 +448,7 @@ func (j *jsiiProxy_CdnFrontdoorCustomDomain) ValidationToken() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_custom_domain azurerm_cdn_frontdoor_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/cdn_frontdoor_custom_domain azurerm_cdn_frontdoor_custom_domain} Resource.
 func NewCdnFrontdoorCustomDomain(scope constructs.Construct, id *string, config *CdnFrontdoorCustomDomainConfig) CdnFrontdoorCustomDomain {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewCdnFrontdoorCustomDomain(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/cdn_frontdoor_custom_domain azurerm_cdn_frontdoor_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/cdn_frontdoor_custom_domain azurerm_cdn_frontdoor_custom_domain} Resource.
 func NewCdnFrontdoorCustomDomain_Override(c CdnFrontdoorCustomDomain, scope constructs.Construct, id *string, config *CdnFrontdoorCustomDomainConfig) {
 	_init_.Initialize()
 
@@ -499,7 +499,10 @@ func (j *jsiiProxy_CdnFrontdoorCustomDomain)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CdnFrontdoorCustomDomain)SetCount(val *float64) {
+func (j *jsiiProxy_CdnFrontdoorCustomDomain)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

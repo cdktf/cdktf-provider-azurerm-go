@@ -2,14 +2,14 @@ package datadogmonitorssoconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/datadogmonitorssoconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/datadogmonitorssoconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/datadog_monitor_sso_configuration azurerm_datadog_monitor_sso_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/datadog_monitor_sso_configuration azurerm_datadog_monitor_sso_configuration}.
 type DatadogMonitorSsoConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DatadogMonitorSsoConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatadogMonitorId() *string
 	SetDatadogMonitorId(val *string)
 	DatadogMonitorIdInput() *string
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DatadogMonitorSsoConfiguration) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DatadogMonitorSsoConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DatadogMonitorSsoConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_DatadogMonitorSsoConfiguration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/datadog_monitor_sso_configuration azurerm_datadog_monitor_sso_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/datadog_monitor_sso_configuration azurerm_datadog_monitor_sso_configuration} Resource.
 func NewDatadogMonitorSsoConfiguration(scope constructs.Construct, id *string, config *DatadogMonitorSsoConfigurationConfig) DatadogMonitorSsoConfiguration {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewDatadogMonitorSsoConfiguration(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/datadog_monitor_sso_configuration azurerm_datadog_monitor_sso_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/datadog_monitor_sso_configuration azurerm_datadog_monitor_sso_configuration} Resource.
 func NewDatadogMonitorSsoConfiguration_Override(d DatadogMonitorSsoConfiguration, scope constructs.Construct, id *string, config *DatadogMonitorSsoConfigurationConfig) {
 	_init_.Initialize()
 
@@ -454,7 +454,10 @@ func (j *jsiiProxy_DatadogMonitorSsoConfiguration)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DatadogMonitorSsoConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_DatadogMonitorSsoConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

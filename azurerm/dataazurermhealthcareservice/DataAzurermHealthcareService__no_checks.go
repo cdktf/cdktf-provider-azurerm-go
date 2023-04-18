@@ -68,6 +68,10 @@ func validateDataAzurermHealthcareService_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermHealthcareService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermHealthcareService) validateSetIdParameters(val *string) error {
 	return nil
 }

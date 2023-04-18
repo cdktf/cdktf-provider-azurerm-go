@@ -100,6 +100,10 @@ func (j *jsiiProxy_SynapseWorkspace) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_SynapseWorkspace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseWorkspace) validateSetDataExfiltrationProtectionEnabledParameters(val interface{}) error {
 	return nil
 }

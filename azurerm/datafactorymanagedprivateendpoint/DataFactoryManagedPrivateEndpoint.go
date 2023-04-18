@@ -2,14 +2,14 @@ package datafactorymanagedprivateendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/datafactorymanagedprivateendpoint/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/datafactorymanagedprivateendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_managed_private_endpoint azurerm_data_factory_managed_private_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_managed_private_endpoint azurerm_data_factory_managed_private_endpoint}.
 type DataFactoryManagedPrivateEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DataFactoryManagedPrivateEndpoint interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataFactoryId() *string
 	SetDataFactoryId(val *string)
 	DataFactoryIdInput() *string
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DataFactoryManagedPrivateEndpoint) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataFactoryManagedPrivateEndpoint) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataFactoryManagedPrivateEndpoint) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -427,7 +427,7 @@ func (j *jsiiProxy_DataFactoryManagedPrivateEndpoint) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_managed_private_endpoint azurerm_data_factory_managed_private_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_managed_private_endpoint azurerm_data_factory_managed_private_endpoint} Resource.
 func NewDataFactoryManagedPrivateEndpoint(scope constructs.Construct, id *string, config *DataFactoryManagedPrivateEndpointConfig) DataFactoryManagedPrivateEndpoint {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewDataFactoryManagedPrivateEndpoint(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_managed_private_endpoint azurerm_data_factory_managed_private_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_managed_private_endpoint azurerm_data_factory_managed_private_endpoint} Resource.
 func NewDataFactoryManagedPrivateEndpoint_Override(d DataFactoryManagedPrivateEndpoint, scope constructs.Construct, id *string, config *DataFactoryManagedPrivateEndpointConfig) {
 	_init_.Initialize()
 
@@ -467,7 +467,10 @@ func (j *jsiiProxy_DataFactoryManagedPrivateEndpoint)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_DataFactoryManagedPrivateEndpoint)SetCount(val *float64) {
+func (j *jsiiProxy_DataFactoryManagedPrivateEndpoint)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

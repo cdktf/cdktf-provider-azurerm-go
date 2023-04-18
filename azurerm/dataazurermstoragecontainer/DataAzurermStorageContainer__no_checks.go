@@ -68,6 +68,10 @@ func validateDataAzurermStorageContainer_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermStorageContainer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermStorageContainer) validateSetIdParameters(val *string) error {
 	return nil
 }

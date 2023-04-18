@@ -2,14 +2,14 @@ package synapseworkspacesecurityalertpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/synapseworkspacesecurityalertpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/synapseworkspacesecurityalertpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace_security_alert_policy azurerm_synapse_workspace_security_alert_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/synapse_workspace_security_alert_policy azurerm_synapse_workspace_security_alert_policy}.
 type SynapseWorkspaceSecurityAlertPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SynapseWorkspaceSecurityAlertPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_SynapseWorkspaceSecurityAlertPolicy) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_SynapseWorkspaceSecurityAlertPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SynapseWorkspaceSecurityAlertPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -500,7 +500,7 @@ func (j *jsiiProxy_SynapseWorkspaceSecurityAlertPolicy) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace_security_alert_policy azurerm_synapse_workspace_security_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/synapse_workspace_security_alert_policy azurerm_synapse_workspace_security_alert_policy} Resource.
 func NewSynapseWorkspaceSecurityAlertPolicy(scope constructs.Construct, id *string, config *SynapseWorkspaceSecurityAlertPolicyConfig) SynapseWorkspaceSecurityAlertPolicy {
 	_init_.Initialize()
 
@@ -518,7 +518,7 @@ func NewSynapseWorkspaceSecurityAlertPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace_security_alert_policy azurerm_synapse_workspace_security_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/synapse_workspace_security_alert_policy azurerm_synapse_workspace_security_alert_policy} Resource.
 func NewSynapseWorkspaceSecurityAlertPolicy_Override(s SynapseWorkspaceSecurityAlertPolicy, scope constructs.Construct, id *string, config *SynapseWorkspaceSecurityAlertPolicyConfig) {
 	_init_.Initialize()
 
@@ -540,7 +540,10 @@ func (j *jsiiProxy_SynapseWorkspaceSecurityAlertPolicy)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_SynapseWorkspaceSecurityAlertPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_SynapseWorkspaceSecurityAlertPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package applicationinsightsanalyticsitem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/applicationinsightsanalyticsitem/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/applicationinsightsanalyticsitem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/application_insights_analytics_item azurerm_application_insights_analytics_item}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/application_insights_analytics_item azurerm_application_insights_analytics_item}.
 type ApplicationInsightsAnalyticsItem interface {
 	cdktf.TerraformResource
 	ApplicationInsightsId() *string
@@ -27,9 +27,9 @@ type ApplicationInsightsAnalyticsItem interface {
 	SetContent(val *string)
 	ContentInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -201,8 +201,8 @@ func (j *jsiiProxy_ApplicationInsightsAnalyticsItem) ContentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApplicationInsightsAnalyticsItem) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApplicationInsightsAnalyticsItem) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -482,7 +482,7 @@ func (j *jsiiProxy_ApplicationInsightsAnalyticsItem) Version() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/application_insights_analytics_item azurerm_application_insights_analytics_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/application_insights_analytics_item azurerm_application_insights_analytics_item} Resource.
 func NewApplicationInsightsAnalyticsItem(scope constructs.Construct, id *string, config *ApplicationInsightsAnalyticsItemConfig) ApplicationInsightsAnalyticsItem {
 	_init_.Initialize()
 
@@ -500,7 +500,7 @@ func NewApplicationInsightsAnalyticsItem(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/application_insights_analytics_item azurerm_application_insights_analytics_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/application_insights_analytics_item azurerm_application_insights_analytics_item} Resource.
 func NewApplicationInsightsAnalyticsItem_Override(a ApplicationInsightsAnalyticsItem, scope constructs.Construct, id *string, config *ApplicationInsightsAnalyticsItemConfig) {
 	_init_.Initialize()
 
@@ -544,7 +544,10 @@ func (j *jsiiProxy_ApplicationInsightsAnalyticsItem)SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationInsightsAnalyticsItem)SetCount(val *float64) {
+func (j *jsiiProxy_ApplicationInsightsAnalyticsItem)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

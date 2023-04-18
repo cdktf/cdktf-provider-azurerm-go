@@ -68,6 +68,10 @@ func validateDataAzurermDedicatedHostGroup_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermDedicatedHostGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDedicatedHostGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

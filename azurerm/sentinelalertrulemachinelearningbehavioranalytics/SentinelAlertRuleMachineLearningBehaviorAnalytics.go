@@ -2,14 +2,14 @@ package sentinelalertrulemachinelearningbehavioranalytics
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/sentinelalertrulemachinelearningbehavioranalytics/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/sentinelalertrulemachinelearningbehavioranalytics/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_machine_learning_behavior_analytics azurerm_sentinel_alert_rule_machine_learning_behavior_analytics}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sentinel_alert_rule_machine_learning_behavior_analytics azurerm_sentinel_alert_rule_machine_learning_behavior_analytics}.
 type SentinelAlertRuleMachineLearningBehaviorAnalytics interface {
 	cdktf.TerraformResource
 	AlertRuleTemplateGuid() *string
@@ -24,9 +24,9 @@ type SentinelAlertRuleMachineLearningBehaviorAnalytics interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -172,8 +172,8 @@ func (j *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) ConstructN
 	return returns
 }
 
-func (j *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -403,7 +403,7 @@ func (j *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) TimeoutsIn
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_machine_learning_behavior_analytics azurerm_sentinel_alert_rule_machine_learning_behavior_analytics} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sentinel_alert_rule_machine_learning_behavior_analytics azurerm_sentinel_alert_rule_machine_learning_behavior_analytics} Resource.
 func NewSentinelAlertRuleMachineLearningBehaviorAnalytics(scope constructs.Construct, id *string, config *SentinelAlertRuleMachineLearningBehaviorAnalyticsConfig) SentinelAlertRuleMachineLearningBehaviorAnalytics {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewSentinelAlertRuleMachineLearningBehaviorAnalytics(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_machine_learning_behavior_analytics azurerm_sentinel_alert_rule_machine_learning_behavior_analytics} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sentinel_alert_rule_machine_learning_behavior_analytics azurerm_sentinel_alert_rule_machine_learning_behavior_analytics} Resource.
 func NewSentinelAlertRuleMachineLearningBehaviorAnalytics_Override(s SentinelAlertRuleMachineLearningBehaviorAnalytics, scope constructs.Construct, id *string, config *SentinelAlertRuleMachineLearningBehaviorAnalyticsConfig) {
 	_init_.Initialize()
 
@@ -454,7 +454,10 @@ func (j *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics)SetConnecti
 	)
 }
 
-func (j *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics)SetCount(val *float64) {
+func (j *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

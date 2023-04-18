@@ -84,6 +84,10 @@ func (j *jsiiProxy_MonitorAlertProcessingRuleActionGroup) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_MonitorAlertProcessingRuleActionGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorAlertProcessingRuleActionGroup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

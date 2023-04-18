@@ -92,6 +92,10 @@ func (j *jsiiProxy_HealthcareService) validateSetCosmosdbThroughputParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareService) validateSetIdParameters(val *string) error {
 	return nil
 }

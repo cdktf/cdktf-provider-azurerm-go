@@ -68,6 +68,10 @@ func validateDataAzurermKubernetesServiceVersions_IsTerraformElementParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermKubernetesServiceVersions) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermKubernetesServiceVersions) validateSetIdParameters(val *string) error {
 	return nil
 }

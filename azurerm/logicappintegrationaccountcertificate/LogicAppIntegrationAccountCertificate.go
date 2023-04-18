@@ -2,14 +2,14 @@ package logicappintegrationaccountcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/logicappintegrationaccountcertificate/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/logicappintegrationaccountcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/logic_app_integration_account_certificate azurerm_logic_app_integration_account_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logic_app_integration_account_certificate azurerm_logic_app_integration_account_certificate}.
 type LogicAppIntegrationAccountCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type LogicAppIntegrationAccountCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_LogicAppIntegrationAccountCertificate) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_LogicAppIntegrationAccountCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LogicAppIntegrationAccountCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -451,7 +451,7 @@ func (j *jsiiProxy_LogicAppIntegrationAccountCertificate) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/logic_app_integration_account_certificate azurerm_logic_app_integration_account_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logic_app_integration_account_certificate azurerm_logic_app_integration_account_certificate} Resource.
 func NewLogicAppIntegrationAccountCertificate(scope constructs.Construct, id *string, config *LogicAppIntegrationAccountCertificateConfig) LogicAppIntegrationAccountCertificate {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewLogicAppIntegrationAccountCertificate(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/logic_app_integration_account_certificate azurerm_logic_app_integration_account_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logic_app_integration_account_certificate azurerm_logic_app_integration_account_certificate} Resource.
 func NewLogicAppIntegrationAccountCertificate_Override(l LogicAppIntegrationAccountCertificate, scope constructs.Construct, id *string, config *LogicAppIntegrationAccountCertificateConfig) {
 	_init_.Initialize()
 
@@ -491,7 +491,10 @@ func (j *jsiiProxy_LogicAppIntegrationAccountCertificate)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_LogicAppIntegrationAccountCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_LogicAppIntegrationAccountCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

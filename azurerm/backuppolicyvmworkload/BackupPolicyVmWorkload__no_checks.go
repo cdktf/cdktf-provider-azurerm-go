@@ -80,6 +80,10 @@ func (j *jsiiProxy_BackupPolicyVmWorkload) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_BackupPolicyVmWorkload) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupPolicyVmWorkload) validateSetIdParameters(val *string) error {
 	return nil
 }

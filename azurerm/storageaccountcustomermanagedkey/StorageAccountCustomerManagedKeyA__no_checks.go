@@ -72,6 +72,10 @@ func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) validateSetIdParameters(val *string) error {
 	return nil
 }

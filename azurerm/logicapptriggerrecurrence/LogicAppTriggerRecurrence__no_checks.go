@@ -76,6 +76,10 @@ func (j *jsiiProxy_LogicAppTriggerRecurrence) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_LogicAppTriggerRecurrence) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppTriggerRecurrence) validateSetFrequencyParameters(val *string) error {
 	return nil
 }

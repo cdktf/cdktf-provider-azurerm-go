@@ -72,6 +72,10 @@ func (j *jsiiProxy_LogAnalyticsDatasourceWindowsEvent) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsDatasourceWindowsEvent) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsDatasourceWindowsEvent) validateSetEventLogNameParameters(val *string) error {
 	return nil
 }

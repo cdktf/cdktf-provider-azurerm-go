@@ -2,14 +2,14 @@ package orbitalcontact
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/orbitalcontact/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/orbitalcontact/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/orbital_contact azurerm_orbital_contact}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/orbital_contact azurerm_orbital_contact}.
 type OrbitalContact interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type OrbitalContact interface {
 	SetContactProfileId(val *string)
 	ContactProfileIdInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -177,8 +177,8 @@ func (j *jsiiProxy_OrbitalContact) ContactProfileIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OrbitalContact) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OrbitalContact) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -448,7 +448,7 @@ func (j *jsiiProxy_OrbitalContact) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/orbital_contact azurerm_orbital_contact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/orbital_contact azurerm_orbital_contact} Resource.
 func NewOrbitalContact(scope constructs.Construct, id *string, config *OrbitalContactConfig) OrbitalContact {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewOrbitalContact(scope constructs.Construct, id *string, config *OrbitalCo
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/orbital_contact azurerm_orbital_contact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/orbital_contact azurerm_orbital_contact} Resource.
 func NewOrbitalContact_Override(o OrbitalContact, scope constructs.Construct, id *string, config *OrbitalContactConfig) {
 	_init_.Initialize()
 
@@ -499,7 +499,10 @@ func (j *jsiiProxy_OrbitalContact)SetContactProfileId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrbitalContact)SetCount(val *float64) {
+func (j *jsiiProxy_OrbitalContact)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

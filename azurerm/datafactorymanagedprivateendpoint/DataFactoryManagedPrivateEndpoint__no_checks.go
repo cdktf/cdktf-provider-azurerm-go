@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataFactoryManagedPrivateEndpoint) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryManagedPrivateEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryManagedPrivateEndpoint) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

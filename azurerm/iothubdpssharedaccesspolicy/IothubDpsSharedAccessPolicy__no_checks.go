@@ -72,6 +72,10 @@ func (j *jsiiProxy_IothubDpsSharedAccessPolicy) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_IothubDpsSharedAccessPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubDpsSharedAccessPolicy) validateSetEnrollmentReadParameters(val interface{}) error {
 	return nil
 }

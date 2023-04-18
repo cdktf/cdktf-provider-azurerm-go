@@ -80,6 +80,10 @@ func (j *jsiiProxy_BatchCertificate) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_BatchCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchCertificate) validateSetFormatParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_StreamAnalyticsReferenceInputMssql) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsReferenceInputMssql) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsReferenceInputMssql) validateSetDatabaseParameters(val *string) error {
 	return nil
 }

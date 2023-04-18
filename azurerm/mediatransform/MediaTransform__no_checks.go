@@ -76,6 +76,10 @@ func (j *jsiiProxy_MediaTransform) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_MediaTransform) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaTransform) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

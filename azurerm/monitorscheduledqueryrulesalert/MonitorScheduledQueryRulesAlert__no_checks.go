@@ -88,6 +88,10 @@ func (j *jsiiProxy_MonitorScheduledQueryRulesAlert) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_MonitorScheduledQueryRulesAlert) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorScheduledQueryRulesAlert) validateSetDataSourceIdParameters(val *string) error {
 	return nil
 }

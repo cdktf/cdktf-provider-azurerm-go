@@ -80,6 +80,10 @@ func (j *jsiiProxy_ConfidentialLedger) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_ConfidentialLedger) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfidentialLedger) validateSetIdParameters(val *string) error {
 	return nil
 }

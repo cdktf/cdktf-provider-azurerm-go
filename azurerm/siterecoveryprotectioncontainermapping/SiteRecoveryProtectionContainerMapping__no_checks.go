@@ -76,6 +76,10 @@ func (j *jsiiProxy_SiteRecoveryProtectionContainerMapping) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_SiteRecoveryProtectionContainerMapping) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SiteRecoveryProtectionContainerMapping) validateSetIdParameters(val *string) error {
 	return nil
 }

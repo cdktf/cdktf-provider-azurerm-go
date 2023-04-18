@@ -2,14 +2,14 @@ package datafactorylinkedserviceazurefunction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/datafactorylinkedserviceazurefunction/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/datafactorylinkedserviceazurefunction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_service_azure_function azurerm_data_factory_linked_service_azure_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_service_azure_function azurerm_data_factory_linked_service_azure_function}.
 type DataFactoryLinkedServiceAzureFunction interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -27,9 +27,9 @@ type DataFactoryLinkedServiceAzureFunction interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataFactoryId() *string
 	SetDataFactoryId(val *string)
 	DataFactoryIdInput() *string
@@ -216,8 +216,8 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureFunction) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataFactoryLinkedServiceAzureFunction) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataFactoryLinkedServiceAzureFunction) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -547,7 +547,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureFunction) UrlInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_service_azure_function azurerm_data_factory_linked_service_azure_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_service_azure_function azurerm_data_factory_linked_service_azure_function} Resource.
 func NewDataFactoryLinkedServiceAzureFunction(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureFunctionConfig) DataFactoryLinkedServiceAzureFunction {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewDataFactoryLinkedServiceAzureFunction(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_service_azure_function azurerm_data_factory_linked_service_azure_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_service_azure_function azurerm_data_factory_linked_service_azure_function} Resource.
 func NewDataFactoryLinkedServiceAzureFunction_Override(d DataFactoryLinkedServiceAzureFunction, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureFunctionConfig) {
 	_init_.Initialize()
 
@@ -609,7 +609,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureFunction)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_DataFactoryLinkedServiceAzureFunction)SetCount(val *float64) {
+func (j *jsiiProxy_DataFactoryLinkedServiceAzureFunction)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

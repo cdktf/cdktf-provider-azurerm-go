@@ -72,6 +72,10 @@ func (j *jsiiProxy_StreamAnalyticsOutputPowerbi) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsOutputPowerbi) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsOutputPowerbi) validateSetDatasetParameters(val *string) error {
 	return nil
 }

@@ -116,6 +116,10 @@ func (j *jsiiProxy_MonitorActionGroup) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_MonitorActionGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorActionGroup) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

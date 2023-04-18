@@ -72,6 +72,10 @@ func (j *jsiiProxy_EventhubConsumerGroup) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_EventhubConsumerGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventhubConsumerGroup) validateSetEventhubNameParameters(val *string) error {
 	return nil
 }

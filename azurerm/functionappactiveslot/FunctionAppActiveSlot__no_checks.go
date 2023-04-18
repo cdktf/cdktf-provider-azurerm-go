@@ -72,6 +72,10 @@ func (j *jsiiProxy_FunctionAppActiveSlot) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_FunctionAppActiveSlot) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FunctionAppActiveSlot) validateSetIdParameters(val *string) error {
 	return nil
 }

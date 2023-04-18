@@ -2,14 +2,14 @@ package storagemover
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/storagemover/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/storagemover/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/storage_mover azurerm_storage_mover}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/storage_mover azurerm_storage_mover}.
 type StorageMover interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type StorageMover interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -156,8 +156,8 @@ func (j *jsiiProxy_StorageMover) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_StorageMover) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_StorageMover) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -427,7 +427,7 @@ func (j *jsiiProxy_StorageMover) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/storage_mover azurerm_storage_mover} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/storage_mover azurerm_storage_mover} Resource.
 func NewStorageMover(scope constructs.Construct, id *string, config *StorageMoverConfig) StorageMover {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewStorageMover(scope constructs.Construct, id *string, config *StorageMove
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/storage_mover azurerm_storage_mover} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/storage_mover azurerm_storage_mover} Resource.
 func NewStorageMover_Override(s StorageMover, scope constructs.Construct, id *string, config *StorageMoverConfig) {
 	_init_.Initialize()
 
@@ -467,7 +467,10 @@ func (j *jsiiProxy_StorageMover)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StorageMover)SetCount(val *float64) {
+func (j *jsiiProxy_StorageMover)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

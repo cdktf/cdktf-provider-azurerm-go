@@ -2,14 +2,14 @@ package dataazurermloganalyticsworkspace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermloganalyticsworkspace/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermloganalyticsworkspace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/log_analytics_workspace azurerm_log_analytics_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/log_analytics_workspace azurerm_log_analytics_workspace}.
 type DataAzurermLogAnalyticsWorkspace interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermLogAnalyticsWorkspace interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DailyQuotaGb() *float64
 	// Experimental.
 	DependsOn() *[]*string
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataAzurermLogAnalyticsWorkspace) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogAnalyticsWorkspace) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermLogAnalyticsWorkspace) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -416,7 +416,7 @@ func (j *jsiiProxy_DataAzurermLogAnalyticsWorkspace) WorkspaceId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/log_analytics_workspace azurerm_log_analytics_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/log_analytics_workspace azurerm_log_analytics_workspace} Data Source.
 func NewDataAzurermLogAnalyticsWorkspace(scope constructs.Construct, id *string, config *DataAzurermLogAnalyticsWorkspaceConfig) DataAzurermLogAnalyticsWorkspace {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewDataAzurermLogAnalyticsWorkspace(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/log_analytics_workspace azurerm_log_analytics_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/log_analytics_workspace azurerm_log_analytics_workspace} Data Source.
 func NewDataAzurermLogAnalyticsWorkspace_Override(d DataAzurermLogAnalyticsWorkspace, scope constructs.Construct, id *string, config *DataAzurermLogAnalyticsWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -445,7 +445,10 @@ func NewDataAzurermLogAnalyticsWorkspace_Override(d DataAzurermLogAnalyticsWorks
 	)
 }
 
-func (j *jsiiProxy_DataAzurermLogAnalyticsWorkspace)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermLogAnalyticsWorkspace)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

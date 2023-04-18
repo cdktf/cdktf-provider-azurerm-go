@@ -88,6 +88,10 @@ func (j *jsiiProxy_MachineLearningComputeInstance) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_MachineLearningComputeInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MachineLearningComputeInstance) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

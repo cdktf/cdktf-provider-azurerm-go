@@ -2,14 +2,14 @@ package streamanalyticsreferenceinputmssql
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/streamanalyticsreferenceinputmssql/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/streamanalyticsreferenceinputmssql/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql}.
 type StreamAnalyticsReferenceInputMssql interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type StreamAnalyticsReferenceInputMssql interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
@@ -178,8 +178,8 @@ func (j *jsiiProxy_StreamAnalyticsReferenceInputMssql) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_StreamAnalyticsReferenceInputMssql) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_StreamAnalyticsReferenceInputMssql) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -589,7 +589,7 @@ func (j *jsiiProxy_StreamAnalyticsReferenceInputMssql) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql} Resource.
 func NewStreamAnalyticsReferenceInputMssql(scope constructs.Construct, id *string, config *StreamAnalyticsReferenceInputMssqlConfig) StreamAnalyticsReferenceInputMssql {
 	_init_.Initialize()
 
@@ -607,7 +607,7 @@ func NewStreamAnalyticsReferenceInputMssql(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql} Resource.
 func NewStreamAnalyticsReferenceInputMssql_Override(s StreamAnalyticsReferenceInputMssql, scope constructs.Construct, id *string, config *StreamAnalyticsReferenceInputMssqlConfig) {
 	_init_.Initialize()
 
@@ -629,7 +629,10 @@ func (j *jsiiProxy_StreamAnalyticsReferenceInputMssql)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_StreamAnalyticsReferenceInputMssql)SetCount(val *float64) {
+func (j *jsiiProxy_StreamAnalyticsReferenceInputMssql)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -84,6 +84,10 @@ func (j *jsiiProxy_WebPubsubHub) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_WebPubsubHub) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WebPubsubHub) validateSetIdParameters(val *string) error {
 	return nil
 }

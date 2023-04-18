@@ -2,14 +2,14 @@ package logicappworkflow
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/logicappworkflow/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/logicappworkflow/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/logic_app_workflow azurerm_logic_app_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logic_app_workflow azurerm_logic_app_workflow}.
 type LogicAppWorkflow interface {
 	cdktf.TerraformResource
 	AccessControl() LogicAppWorkflowAccessControlOutputReference
@@ -26,9 +26,9 @@ type LogicAppWorkflow interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -243,8 +243,8 @@ func (j *jsiiProxy_LogicAppWorkflow) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_LogicAppWorkflow) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LogicAppWorkflow) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -674,7 +674,7 @@ func (j *jsiiProxy_LogicAppWorkflow) WorkflowVersionInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/logic_app_workflow azurerm_logic_app_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logic_app_workflow azurerm_logic_app_workflow} Resource.
 func NewLogicAppWorkflow(scope constructs.Construct, id *string, config *LogicAppWorkflowConfig) LogicAppWorkflow {
 	_init_.Initialize()
 
@@ -692,7 +692,7 @@ func NewLogicAppWorkflow(scope constructs.Construct, id *string, config *LogicAp
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/logic_app_workflow azurerm_logic_app_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logic_app_workflow azurerm_logic_app_workflow} Resource.
 func NewLogicAppWorkflow_Override(l LogicAppWorkflow, scope constructs.Construct, id *string, config *LogicAppWorkflowConfig) {
 	_init_.Initialize()
 
@@ -714,7 +714,10 @@ func (j *jsiiProxy_LogicAppWorkflow)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogicAppWorkflow)SetCount(val *float64) {
+func (j *jsiiProxy_LogicAppWorkflow)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package apimanagementidentityprovideraadb2c
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/apimanagementidentityprovideraadb2c/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/apimanagementidentityprovideraadb2c/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_identity_provider_aadb2c azurerm_api_management_identity_provider_aadb2c}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_identity_provider_aadb2c azurerm_api_management_identity_provider_aadb2c}.
 type ApiManagementIdentityProviderAadb2C interface {
 	cdktf.TerraformResource
 	AllowedTenant() *string
@@ -36,9 +36,9 @@ type ApiManagementIdentityProviderAadb2C interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -274,8 +274,8 @@ func (j *jsiiProxy_ApiManagementIdentityProviderAadb2C) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_ApiManagementIdentityProviderAadb2C) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApiManagementIdentityProviderAadb2C) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -565,7 +565,7 @@ func (j *jsiiProxy_ApiManagementIdentityProviderAadb2C) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_identity_provider_aadb2c azurerm_api_management_identity_provider_aadb2c} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_identity_provider_aadb2c azurerm_api_management_identity_provider_aadb2c} Resource.
 func NewApiManagementIdentityProviderAadb2C(scope constructs.Construct, id *string, config *ApiManagementIdentityProviderAadb2CConfig) ApiManagementIdentityProviderAadb2C {
 	_init_.Initialize()
 
@@ -583,7 +583,7 @@ func NewApiManagementIdentityProviderAadb2C(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_identity_provider_aadb2c azurerm_api_management_identity_provider_aadb2c} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_identity_provider_aadb2c azurerm_api_management_identity_provider_aadb2c} Resource.
 func NewApiManagementIdentityProviderAadb2C_Override(a ApiManagementIdentityProviderAadb2C, scope constructs.Construct, id *string, config *ApiManagementIdentityProviderAadb2CConfig) {
 	_init_.Initialize()
 
@@ -660,7 +660,10 @@ func (j *jsiiProxy_ApiManagementIdentityProviderAadb2C)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_ApiManagementIdentityProviderAadb2C)SetCount(val *float64) {
+func (j *jsiiProxy_ApiManagementIdentityProviderAadb2C)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

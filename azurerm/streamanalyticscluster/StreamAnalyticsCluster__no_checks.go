@@ -72,6 +72,10 @@ func (j *jsiiProxy_StreamAnalyticsCluster) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

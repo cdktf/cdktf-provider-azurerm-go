@@ -72,6 +72,10 @@ func (j *jsiiProxy_MaintenanceAssignmentVirtualMachineScaleSet) validateSetConne
 	return nil
 }
 
+func (j *jsiiProxy_MaintenanceAssignmentVirtualMachineScaleSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MaintenanceAssignmentVirtualMachineScaleSet) validateSetIdParameters(val *string) error {
 	return nil
 }

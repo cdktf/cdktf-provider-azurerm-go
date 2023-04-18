@@ -2,7 +2,7 @@ package dataazurermdatabasemigrationproject
 
 
 type DataAzurermDatabaseMigrationProjectTimeouts struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/d/database_migration_project#read DataAzurermDatabaseMigrationProject#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/database_migration_project#read DataAzurermDatabaseMigrationProject#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

@@ -100,6 +100,10 @@ func (j *jsiiProxy_DataFactoryDatasetParquet) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryDatasetParquet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryDatasetParquet) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

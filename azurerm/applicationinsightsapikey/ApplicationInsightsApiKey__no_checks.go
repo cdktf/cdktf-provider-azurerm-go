@@ -76,6 +76,10 @@ func (j *jsiiProxy_ApplicationInsightsApiKey) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationInsightsApiKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationInsightsApiKey) validateSetIdParameters(val *string) error {
 	return nil
 }

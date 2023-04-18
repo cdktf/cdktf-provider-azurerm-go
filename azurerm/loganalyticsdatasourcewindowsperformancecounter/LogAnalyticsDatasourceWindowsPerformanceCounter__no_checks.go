@@ -72,6 +72,10 @@ func (j *jsiiProxy_LogAnalyticsDatasourceWindowsPerformanceCounter) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsDatasourceWindowsPerformanceCounter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsDatasourceWindowsPerformanceCounter) validateSetCounterNameParameters(val *string) error {
 	return nil
 }

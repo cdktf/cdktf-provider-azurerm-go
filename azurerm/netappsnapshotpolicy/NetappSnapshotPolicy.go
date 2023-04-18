@@ -2,14 +2,14 @@ package netappsnapshotpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/netappsnapshotpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/netappsnapshotpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/netapp_snapshot_policy azurerm_netapp_snapshot_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/netapp_snapshot_policy azurerm_netapp_snapshot_policy}.
 type NetappSnapshotPolicy interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -24,9 +24,9 @@ type NetappSnapshotPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DailySchedule() NetappSnapshotPolicyDailyScheduleOutputReference
 	DailyScheduleInput() *NetappSnapshotPolicyDailySchedule
 	// Experimental.
@@ -194,8 +194,8 @@ func (j *jsiiProxy_NetappSnapshotPolicy) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_NetappSnapshotPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_NetappSnapshotPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -545,7 +545,7 @@ func (j *jsiiProxy_NetappSnapshotPolicy) WeeklyScheduleInput() *NetappSnapshotPo
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/netapp_snapshot_policy azurerm_netapp_snapshot_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/netapp_snapshot_policy azurerm_netapp_snapshot_policy} Resource.
 func NewNetappSnapshotPolicy(scope constructs.Construct, id *string, config *NetappSnapshotPolicyConfig) NetappSnapshotPolicy {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewNetappSnapshotPolicy(scope constructs.Construct, id *string, config *Net
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/netapp_snapshot_policy azurerm_netapp_snapshot_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/netapp_snapshot_policy azurerm_netapp_snapshot_policy} Resource.
 func NewNetappSnapshotPolicy_Override(n NetappSnapshotPolicy, scope constructs.Construct, id *string, config *NetappSnapshotPolicyConfig) {
 	_init_.Initialize()
 
@@ -596,7 +596,10 @@ func (j *jsiiProxy_NetappSnapshotPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappSnapshotPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_NetappSnapshotPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

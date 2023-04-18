@@ -100,6 +100,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

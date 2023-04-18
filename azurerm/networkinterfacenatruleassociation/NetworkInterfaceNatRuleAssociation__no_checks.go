@@ -72,6 +72,10 @@ func (j *jsiiProxy_NetworkInterfaceNatRuleAssociation) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_NetworkInterfaceNatRuleAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkInterfaceNatRuleAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dnsaaaarecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dnsaaaarecord/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dnsaaaarecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/dns_aaaa_record azurerm_dns_aaaa_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/dns_aaaa_record azurerm_dns_aaaa_record}.
 type DnsAaaaRecord interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DnsAaaaRecord interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -164,8 +164,8 @@ func (j *jsiiProxy_DnsAaaaRecord) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_DnsAaaaRecord) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DnsAaaaRecord) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -485,7 +485,7 @@ func (j *jsiiProxy_DnsAaaaRecord) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/dns_aaaa_record azurerm_dns_aaaa_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/dns_aaaa_record azurerm_dns_aaaa_record} Resource.
 func NewDnsAaaaRecord(scope constructs.Construct, id *string, config *DnsAaaaRecordConfig) DnsAaaaRecord {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewDnsAaaaRecord(scope constructs.Construct, id *string, config *DnsAaaaRec
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/dns_aaaa_record azurerm_dns_aaaa_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/dns_aaaa_record azurerm_dns_aaaa_record} Resource.
 func NewDnsAaaaRecord_Override(d DnsAaaaRecord, scope constructs.Construct, id *string, config *DnsAaaaRecordConfig) {
 	_init_.Initialize()
 
@@ -525,7 +525,10 @@ func (j *jsiiProxy_DnsAaaaRecord)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsAaaaRecord)SetCount(val *float64) {
+func (j *jsiiProxy_DnsAaaaRecord)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

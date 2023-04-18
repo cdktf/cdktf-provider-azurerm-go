@@ -72,6 +72,10 @@ func (j *jsiiProxy_SignalrServiceCustomCertificate) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_SignalrServiceCustomCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SignalrServiceCustomCertificate) validateSetCustomCertificateIdParameters(val *string) error {
 	return nil
 }

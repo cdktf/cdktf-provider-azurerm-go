@@ -120,6 +120,10 @@ func (j *jsiiProxy_ContainerRegistryTask) validateSetContainerRegistryIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_ContainerRegistryTask) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerRegistryTask) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

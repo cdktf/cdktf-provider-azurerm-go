@@ -76,6 +76,10 @@ func (j *jsiiProxy_KustoDatabasePrincipalAssignment) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_KustoDatabasePrincipalAssignment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoDatabasePrincipalAssignment) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

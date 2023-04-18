@@ -72,6 +72,10 @@ func validateDataAzurermElasticCloudElasticsearch_IsTerraformElementParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermElasticCloudElasticsearch) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermElasticCloudElasticsearch) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) validateSetConnecti
 	return nil
 }
 
+func (j *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) validateSetDataRetentionTimeParameters(val *string) error {
 	return nil
 }

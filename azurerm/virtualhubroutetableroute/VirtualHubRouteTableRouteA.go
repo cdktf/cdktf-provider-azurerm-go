@@ -2,14 +2,14 @@ package virtualhubroutetableroute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/virtualhubroutetableroute/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/virtualhubroutetableroute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_hub_route_table_route azurerm_virtual_hub_route_table_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_hub_route_table_route azurerm_virtual_hub_route_table_route}.
 type VirtualHubRouteTableRouteA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type VirtualHubRouteTableRouteA interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -158,8 +158,8 @@ func (j *jsiiProxy_VirtualHubRouteTableRouteA) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_VirtualHubRouteTableRouteA) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VirtualHubRouteTableRouteA) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -449,7 +449,7 @@ func (j *jsiiProxy_VirtualHubRouteTableRouteA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_hub_route_table_route azurerm_virtual_hub_route_table_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_hub_route_table_route azurerm_virtual_hub_route_table_route} Resource.
 func NewVirtualHubRouteTableRouteA(scope constructs.Construct, id *string, config *VirtualHubRouteTableRouteAConfig) VirtualHubRouteTableRouteA {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewVirtualHubRouteTableRouteA(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_hub_route_table_route azurerm_virtual_hub_route_table_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_hub_route_table_route azurerm_virtual_hub_route_table_route} Resource.
 func NewVirtualHubRouteTableRouteA_Override(v VirtualHubRouteTableRouteA, scope constructs.Construct, id *string, config *VirtualHubRouteTableRouteAConfig) {
 	_init_.Initialize()
 
@@ -489,7 +489,10 @@ func (j *jsiiProxy_VirtualHubRouteTableRouteA)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VirtualHubRouteTableRouteA)SetCount(val *float64) {
+func (j *jsiiProxy_VirtualHubRouteTableRouteA)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

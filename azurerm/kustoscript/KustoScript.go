@@ -2,14 +2,14 @@ package kustoscript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/kustoscript/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/kustoscript/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/kusto_script azurerm_kusto_script}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/kusto_script azurerm_kusto_script}.
 type KustoScript interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type KustoScript interface {
 	SetContinueOnErrorsEnabled(val interface{})
 	ContinueOnErrorsEnabledInput() interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatabaseId() *string
 	SetDatabaseId(val *string)
 	DatabaseIdInput() *string
@@ -185,8 +185,8 @@ func (j *jsiiProxy_KustoScript) ContinueOnErrorsEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KustoScript) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_KustoScript) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -476,7 +476,7 @@ func (j *jsiiProxy_KustoScript) UrlInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/kusto_script azurerm_kusto_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/kusto_script azurerm_kusto_script} Resource.
 func NewKustoScript(scope constructs.Construct, id *string, config *KustoScriptConfig) KustoScript {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewKustoScript(scope constructs.Construct, id *string, config *KustoScriptC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/kusto_script azurerm_kusto_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/kusto_script azurerm_kusto_script} Resource.
 func NewKustoScript_Override(k KustoScript, scope constructs.Construct, id *string, config *KustoScriptConfig) {
 	_init_.Initialize()
 
@@ -527,7 +527,10 @@ func (j *jsiiProxy_KustoScript)SetContinueOnErrorsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KustoScript)SetCount(val *float64) {
+func (j *jsiiProxy_KustoScript)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

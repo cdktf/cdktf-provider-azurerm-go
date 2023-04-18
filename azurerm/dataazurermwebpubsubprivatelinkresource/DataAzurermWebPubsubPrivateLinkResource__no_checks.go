@@ -68,6 +68,10 @@ func validateDataAzurermWebPubsubPrivateLinkResource_IsTerraformElementParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermWebPubsubPrivateLinkResource) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermWebPubsubPrivateLinkResource) validateSetIdParameters(val *string) error {
 	return nil
 }

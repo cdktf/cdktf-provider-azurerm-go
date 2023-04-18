@@ -92,6 +92,10 @@ func (j *jsiiProxy_VirtualNetworkGateway) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_VirtualNetworkGateway) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetworkGateway) validateSetDefaultLocalNetworkGatewayIdParameters(val *string) error {
 	return nil
 }

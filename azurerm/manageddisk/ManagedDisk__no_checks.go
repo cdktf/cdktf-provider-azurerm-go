@@ -76,6 +76,10 @@ func (j *jsiiProxy_ManagedDisk) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_ManagedDisk) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedDisk) validateSetCreateOptionParameters(val *string) error {
 	return nil
 }

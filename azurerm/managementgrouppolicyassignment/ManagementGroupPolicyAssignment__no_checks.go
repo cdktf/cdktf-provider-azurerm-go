@@ -88,6 +88,10 @@ func (j *jsiiProxy_ManagementGroupPolicyAssignment) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_ManagementGroupPolicyAssignment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagementGroupPolicyAssignment) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

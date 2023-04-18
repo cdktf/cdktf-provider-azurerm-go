@@ -72,6 +72,10 @@ func (j *jsiiProxy_MonitorDataCollectionRuleAssociation) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_MonitorDataCollectionRuleAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorDataCollectionRuleAssociation) validateSetDataCollectionEndpointIdParameters(val *string) error {
 	return nil
 }

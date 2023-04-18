@@ -2,9 +2,9 @@ package dataazurermsiterecoveryreplicationrecoveryplan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermsiterecoveryreplicationrecoveryplan/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermsiterecoveryreplicationrecoveryplan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -29,8 +29,8 @@ type DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupOutputReference 
 	Fqn() *string
 	InternalValue() *DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroup
 	SetInternalValue(val *DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroup)
-	PostAction() DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionList
-	PreAction() DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActionList
+	PostAction() DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionListList
+	PreAction() DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActionListList
 	ReplicatedProtectedItems() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupOu
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupOutputReference) PostAction() DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionList {
-	var returns DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionList
+func (j *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupOutputReference) PostAction() DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionListList {
+	var returns DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionListList
 	_jsii_.Get(
 		j,
 		"postAction",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupOu
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupOutputReference) PreAction() DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActionList {
-	var returns DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActionList
+func (j *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupOutputReference) PreAction() DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActionListList {
+	var returns DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActionListList
 	_jsii_.Get(
 		j,
 		"preAction",

@@ -84,6 +84,10 @@ func (j *jsiiProxy_DatabricksVirtualNetworkPeering) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_DatabricksVirtualNetworkPeering) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabricksVirtualNetworkPeering) validateSetIdParameters(val *string) error {
 	return nil
 }

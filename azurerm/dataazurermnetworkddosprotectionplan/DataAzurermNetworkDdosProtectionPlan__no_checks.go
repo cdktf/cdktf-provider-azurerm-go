@@ -68,6 +68,10 @@ func validateDataAzurermNetworkDdosProtectionPlan_IsTerraformElementParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermNetworkDdosProtectionPlan) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermNetworkDdosProtectionPlan) validateSetIdParameters(val *string) error {
 	return nil
 }

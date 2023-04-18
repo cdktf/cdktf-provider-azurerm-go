@@ -68,6 +68,10 @@ func validateDataAzurermSourceControlToken_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermSourceControlToken) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermSourceControlToken) validateSetIdParameters(val *string) error {
 	return nil
 }

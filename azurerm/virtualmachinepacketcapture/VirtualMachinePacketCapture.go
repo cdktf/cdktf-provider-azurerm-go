@@ -2,14 +2,14 @@ package virtualmachinepacketcapture
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/virtualmachinepacketcapture/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/virtualmachinepacketcapture/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_packet_capture azurerm_virtual_machine_packet_capture}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_machine_packet_capture azurerm_virtual_machine_packet_capture}.
 type VirtualMachinePacketCapture interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type VirtualMachinePacketCapture interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -167,8 +167,8 @@ func (j *jsiiProxy_VirtualMachinePacketCapture) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_VirtualMachinePacketCapture) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VirtualMachinePacketCapture) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -498,7 +498,7 @@ func (j *jsiiProxy_VirtualMachinePacketCapture) VirtualMachineIdInput() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_packet_capture azurerm_virtual_machine_packet_capture} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_machine_packet_capture azurerm_virtual_machine_packet_capture} Resource.
 func NewVirtualMachinePacketCapture(scope constructs.Construct, id *string, config *VirtualMachinePacketCaptureConfig) VirtualMachinePacketCapture {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewVirtualMachinePacketCapture(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_packet_capture azurerm_virtual_machine_packet_capture} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_machine_packet_capture azurerm_virtual_machine_packet_capture} Resource.
 func NewVirtualMachinePacketCapture_Override(v VirtualMachinePacketCapture, scope constructs.Construct, id *string, config *VirtualMachinePacketCaptureConfig) {
 	_init_.Initialize()
 
@@ -538,7 +538,10 @@ func (j *jsiiProxy_VirtualMachinePacketCapture)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VirtualMachinePacketCapture)SetCount(val *float64) {
+func (j *jsiiProxy_VirtualMachinePacketCapture)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermAppConfigurationKeys) validateSetConfigurationStor
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermAppConfigurationKeys) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermAppConfigurationKeys) validateSetIdParameters(val *string) error {
 	return nil
 }

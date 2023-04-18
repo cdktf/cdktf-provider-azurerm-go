@@ -96,6 +96,10 @@ func (j *jsiiProxy_CosmosdbSqlContainer) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbSqlContainer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbSqlContainer) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

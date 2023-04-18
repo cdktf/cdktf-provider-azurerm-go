@@ -2,14 +2,14 @@ package dataazurermappserviceenvironmentv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermappserviceenvironmentv3/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermappserviceenvironmentv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/app_service_environment_v3 azurerm_app_service_environment_v3}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3}.
 type DataAzurermAppServiceEnvironmentV3 interface {
 	cdktf.TerraformDataSource
 	AllowNewPrivateEndpointConnections() cdktf.IResolvable
@@ -19,9 +19,9 @@ type DataAzurermAppServiceEnvironmentV3 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DedicatedHostCount() *float64
 	// Experimental.
 	DependsOn() *[]*string
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DataAzurermAppServiceEnvironmentV3) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermAppServiceEnvironmentV3) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermAppServiceEnvironmentV3) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -504,7 +504,7 @@ func (j *jsiiProxy_DataAzurermAppServiceEnvironmentV3) ZoneRedundant() cdktf.IRe
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/app_service_environment_v3 azurerm_app_service_environment_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3} Data Source.
 func NewDataAzurermAppServiceEnvironmentV3(scope constructs.Construct, id *string, config *DataAzurermAppServiceEnvironmentV3Config) DataAzurermAppServiceEnvironmentV3 {
 	_init_.Initialize()
 
@@ -522,7 +522,7 @@ func NewDataAzurermAppServiceEnvironmentV3(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/app_service_environment_v3 azurerm_app_service_environment_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3} Data Source.
 func NewDataAzurermAppServiceEnvironmentV3_Override(d DataAzurermAppServiceEnvironmentV3, scope constructs.Construct, id *string, config *DataAzurermAppServiceEnvironmentV3Config) {
 	_init_.Initialize()
 
@@ -533,7 +533,10 @@ func NewDataAzurermAppServiceEnvironmentV3_Override(d DataAzurermAppServiceEnvir
 	)
 }
 
-func (j *jsiiProxy_DataAzurermAppServiceEnvironmentV3)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermAppServiceEnvironmentV3)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

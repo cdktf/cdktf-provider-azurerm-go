@@ -88,6 +88,10 @@ func (j *jsiiProxy_CdnFrontdoorRule) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_CdnFrontdoorRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnFrontdoorRule) validateSetIdParameters(val *string) error {
 	return nil
 }

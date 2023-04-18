@@ -68,6 +68,10 @@ func validateDataAzurermEventhubConsumerGroup_IsTerraformElementParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermEventhubConsumerGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermEventhubConsumerGroup) validateSetEventhubNameParameters(val *string) error {
 	return nil
 }

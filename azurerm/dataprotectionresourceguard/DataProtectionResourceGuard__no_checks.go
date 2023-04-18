@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataProtectionResourceGuard) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataProtectionResourceGuard) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionResourceGuard) validateSetIdParameters(val *string) error {
 	return nil
 }

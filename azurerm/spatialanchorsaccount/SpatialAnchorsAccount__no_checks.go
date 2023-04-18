@@ -72,6 +72,10 @@ func (j *jsiiProxy_SpatialAnchorsAccount) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_SpatialAnchorsAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpatialAnchorsAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

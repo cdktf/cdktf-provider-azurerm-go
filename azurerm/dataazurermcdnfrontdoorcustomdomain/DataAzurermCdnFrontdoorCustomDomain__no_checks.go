@@ -68,6 +68,10 @@ func validateDataAzurermCdnFrontdoorCustomDomain_IsTerraformElementParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermCdnFrontdoorCustomDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermCdnFrontdoorCustomDomain) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_SubnetServiceEndpointStoragePolicy) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_SubnetServiceEndpointStoragePolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SubnetServiceEndpointStoragePolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

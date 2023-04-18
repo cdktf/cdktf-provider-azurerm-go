@@ -76,6 +76,10 @@ func (j *jsiiProxy_SpringCloudCertificate) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

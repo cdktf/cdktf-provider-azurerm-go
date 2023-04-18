@@ -2,14 +2,14 @@ package datafactorylinkedservicedatalakestoragegen2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/datafactorylinkedservicedatalakestoragegen2/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/datafactorylinkedservicedatalakestoragegen2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_service_data_lake_storage_gen2 azurerm_data_factory_linked_service_data_lake_storage_gen2}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_service_data_lake_storage_gen2 azurerm_data_factory_linked_service_data_lake_storage_gen2}.
 type DataFactoryLinkedServiceDataLakeStorageGen2 interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -27,9 +27,9 @@ type DataFactoryLinkedServiceDataLakeStorageGen2 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataFactoryId() *string
 	SetDataFactoryId(val *string)
 	DataFactoryIdInput() *string
@@ -228,8 +228,8 @@ func (j *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2) ConstructNodeMet
 	return returns
 }
 
-func (j *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -619,7 +619,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2) UseManagedIdenti
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_service_data_lake_storage_gen2 azurerm_data_factory_linked_service_data_lake_storage_gen2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_service_data_lake_storage_gen2 azurerm_data_factory_linked_service_data_lake_storage_gen2} Resource.
 func NewDataFactoryLinkedServiceDataLakeStorageGen2(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceDataLakeStorageGen2Config) DataFactoryLinkedServiceDataLakeStorageGen2 {
 	_init_.Initialize()
 
@@ -637,7 +637,7 @@ func NewDataFactoryLinkedServiceDataLakeStorageGen2(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_service_data_lake_storage_gen2 azurerm_data_factory_linked_service_data_lake_storage_gen2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_service_data_lake_storage_gen2 azurerm_data_factory_linked_service_data_lake_storage_gen2} Resource.
 func NewDataFactoryLinkedServiceDataLakeStorageGen2_Override(d DataFactoryLinkedServiceDataLakeStorageGen2, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceDataLakeStorageGen2Config) {
 	_init_.Initialize()
 
@@ -681,7 +681,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2)SetConnection(val
 	)
 }
 
-func (j *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2)SetCount(val *float64) {
+func (j *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

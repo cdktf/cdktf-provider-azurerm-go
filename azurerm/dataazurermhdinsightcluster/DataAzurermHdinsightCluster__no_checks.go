@@ -68,6 +68,10 @@ func validateDataAzurermHdinsightCluster_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermHdinsightCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermHdinsightCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

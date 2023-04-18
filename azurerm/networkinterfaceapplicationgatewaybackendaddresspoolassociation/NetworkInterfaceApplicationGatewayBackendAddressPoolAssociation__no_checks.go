@@ -76,6 +76,10 @@ func (j *jsiiProxy_NetworkInterfaceApplicationGatewayBackendAddressPoolAssociati
 	return nil
 }
 
+func (j *jsiiProxy_NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

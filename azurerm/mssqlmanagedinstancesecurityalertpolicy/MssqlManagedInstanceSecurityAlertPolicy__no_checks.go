@@ -72,6 +72,10 @@ func (j *jsiiProxy_MssqlManagedInstanceSecurityAlertPolicy) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_MssqlManagedInstanceSecurityAlertPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlManagedInstanceSecurityAlertPolicy) validateSetDisabledAlertsParameters(val *[]*string) error {
 	return nil
 }

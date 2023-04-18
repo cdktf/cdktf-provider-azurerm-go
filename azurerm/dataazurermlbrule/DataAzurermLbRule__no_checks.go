@@ -68,6 +68,10 @@ func validateDataAzurermLbRule_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermLbRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermLbRule) validateSetIdParameters(val *string) error {
 	return nil
 }

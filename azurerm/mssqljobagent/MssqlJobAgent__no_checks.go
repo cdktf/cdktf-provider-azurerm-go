@@ -72,6 +72,10 @@ func (j *jsiiProxy_MssqlJobAgent) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_MssqlJobAgent) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlJobAgent) validateSetDatabaseIdParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_DiskEncryptionSet) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_DiskEncryptionSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DiskEncryptionSet) validateSetEncryptionTypeParameters(val *string) error {
 	return nil
 }

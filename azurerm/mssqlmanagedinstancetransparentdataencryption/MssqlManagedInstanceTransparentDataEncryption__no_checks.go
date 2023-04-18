@@ -76,6 +76,10 @@ func (j *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) validateSetCon
 	return nil
 }
 
+func (j *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) validateSetIdParameters(val *string) error {
 	return nil
 }

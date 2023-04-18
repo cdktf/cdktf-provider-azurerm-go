@@ -2,14 +2,14 @@ package mediajob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/mediajob/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/mediajob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/media_job azurerm_media_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_job azurerm_media_job}.
 type MediaJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MediaJob interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_MediaJob) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MediaJob) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MediaJob) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -496,7 +496,7 @@ func (j *jsiiProxy_MediaJob) TransformNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/media_job azurerm_media_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_job azurerm_media_job} Resource.
 func NewMediaJob(scope constructs.Construct, id *string, config *MediaJobConfig) MediaJob {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewMediaJob(scope constructs.Construct, id *string, config *MediaJobConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/media_job azurerm_media_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_job azurerm_media_job} Resource.
 func NewMediaJob_Override(m MediaJob, scope constructs.Construct, id *string, config *MediaJobConfig) {
 	_init_.Initialize()
 
@@ -536,7 +536,10 @@ func (j *jsiiProxy_MediaJob)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MediaJob)SetCount(val *float64) {
+func (j *jsiiProxy_MediaJob)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

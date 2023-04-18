@@ -2,14 +2,14 @@ package monitoractivitylogalert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/monitoractivitylogalert/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/monitoractivitylogalert/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_activity_log_alert azurerm_monitor_activity_log_alert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert}.
 type MonitorActivityLogAlert interface {
 	cdktf.TerraformResource
 	Action() MonitorActivityLogAlertActionList
@@ -23,9 +23,9 @@ type MonitorActivityLogAlert interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Criteria() MonitorActivityLogAlertCriteriaOutputReference
 	CriteriaInput() *MonitorActivityLogAlertCriteria
 	// Experimental.
@@ -187,8 +187,8 @@ func (j *jsiiProxy_MonitorActivityLogAlert) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_MonitorActivityLogAlert) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MonitorActivityLogAlert) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -498,7 +498,7 @@ func (j *jsiiProxy_MonitorActivityLogAlert) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_activity_log_alert azurerm_monitor_activity_log_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert} Resource.
 func NewMonitorActivityLogAlert(scope constructs.Construct, id *string, config *MonitorActivityLogAlertConfig) MonitorActivityLogAlert {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewMonitorActivityLogAlert(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_activity_log_alert azurerm_monitor_activity_log_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert} Resource.
 func NewMonitorActivityLogAlert_Override(m MonitorActivityLogAlert, scope constructs.Construct, id *string, config *MonitorActivityLogAlertConfig) {
 	_init_.Initialize()
 
@@ -538,7 +538,10 @@ func (j *jsiiProxy_MonitorActivityLogAlert)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitorActivityLogAlert)SetCount(val *float64) {
+func (j *jsiiProxy_MonitorActivityLogAlert)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

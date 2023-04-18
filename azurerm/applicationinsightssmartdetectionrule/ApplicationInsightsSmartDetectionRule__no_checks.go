@@ -80,6 +80,10 @@ func (j *jsiiProxy_ApplicationInsightsSmartDetectionRule) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationInsightsSmartDetectionRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationInsightsSmartDetectionRule) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

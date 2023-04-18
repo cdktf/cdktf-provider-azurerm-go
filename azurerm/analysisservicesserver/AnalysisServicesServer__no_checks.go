@@ -84,6 +84,10 @@ func (j *jsiiProxy_AnalysisServicesServer) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_AnalysisServicesServer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AnalysisServicesServer) validateSetEnablePowerBiServiceParameters(val interface{}) error {
 	return nil
 }

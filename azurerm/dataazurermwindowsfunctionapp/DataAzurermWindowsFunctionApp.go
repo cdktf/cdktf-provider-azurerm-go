@@ -2,14 +2,14 @@ package dataazurermwindowsfunctionapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermwindowsfunctionapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermwindowsfunctionapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/windows_function_app azurerm_windows_function_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/windows_function_app azurerm_windows_function_app}.
 type DataAzurermWindowsFunctionApp interface {
 	cdktf.TerraformDataSource
 	AppSettings() cdktf.StringMap
@@ -27,9 +27,9 @@ type DataAzurermWindowsFunctionApp interface {
 	ConstructNodeMetadata() *map[string]interface{}
 	ContentShareForceDisabled() cdktf.IResolvable
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomDomainVerificationId() *string
 	DailyMemoryTimeQuota() *float64
 	DefaultHostname() *string
@@ -260,8 +260,8 @@ func (j *jsiiProxy_DataAzurermWindowsFunctionApp) ContentShareForceDisabled() cd
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermWindowsFunctionApp) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermWindowsFunctionApp) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -691,7 +691,7 @@ func (j *jsiiProxy_DataAzurermWindowsFunctionApp) VirtualNetworkSubnetId() *stri
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/windows_function_app azurerm_windows_function_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/windows_function_app azurerm_windows_function_app} Data Source.
 func NewDataAzurermWindowsFunctionApp(scope constructs.Construct, id *string, config *DataAzurermWindowsFunctionAppConfig) DataAzurermWindowsFunctionApp {
 	_init_.Initialize()
 
@@ -709,7 +709,7 @@ func NewDataAzurermWindowsFunctionApp(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/windows_function_app azurerm_windows_function_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/windows_function_app azurerm_windows_function_app} Data Source.
 func NewDataAzurermWindowsFunctionApp_Override(d DataAzurermWindowsFunctionApp, scope constructs.Construct, id *string, config *DataAzurermWindowsFunctionAppConfig) {
 	_init_.Initialize()
 
@@ -720,7 +720,10 @@ func NewDataAzurermWindowsFunctionApp_Override(d DataAzurermWindowsFunctionApp, 
 	)
 }
 
-func (j *jsiiProxy_DataAzurermWindowsFunctionApp)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermWindowsFunctionApp)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

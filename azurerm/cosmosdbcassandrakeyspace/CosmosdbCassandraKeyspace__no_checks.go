@@ -80,6 +80,10 @@ func (j *jsiiProxy_CosmosdbCassandraKeyspace) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbCassandraKeyspace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbCassandraKeyspace) validateSetIdParameters(val *string) error {
 	return nil
 }

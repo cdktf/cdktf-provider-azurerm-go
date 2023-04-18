@@ -72,6 +72,10 @@ func (j *jsiiProxy_SiteRecoveryHypervReplicationPolicyAssociation) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_SiteRecoveryHypervReplicationPolicyAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SiteRecoveryHypervReplicationPolicyAssociation) validateSetHypervSiteIdParameters(val *string) error {
 	return nil
 }

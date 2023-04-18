@@ -68,6 +68,10 @@ func validateDataAzurermManagedDisk_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermManagedDisk) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermManagedDisk) validateSetIdParameters(val *string) error {
 	return nil
 }

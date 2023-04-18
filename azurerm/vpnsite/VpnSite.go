@@ -2,14 +2,14 @@ package vpnsite
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/vpnsite/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/vpnsite/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/vpn_site azurerm_vpn_site}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/vpn_site azurerm_vpn_site}.
 type VpnSite interface {
 	cdktf.TerraformResource
 	AddressCidrs() *[]*string
@@ -24,9 +24,9 @@ type VpnSite interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -195,8 +195,8 @@ func (j *jsiiProxy_VpnSite) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpnSite) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VpnSite) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -546,7 +546,7 @@ func (j *jsiiProxy_VpnSite) VirtualWanIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/vpn_site azurerm_vpn_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/vpn_site azurerm_vpn_site} Resource.
 func NewVpnSite(scope constructs.Construct, id *string, config *VpnSiteConfig) VpnSite {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewVpnSite(scope constructs.Construct, id *string, config *VpnSiteConfig) V
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/vpn_site azurerm_vpn_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/vpn_site azurerm_vpn_site} Resource.
 func NewVpnSite_Override(v VpnSite, scope constructs.Construct, id *string, config *VpnSiteConfig) {
 	_init_.Initialize()
 
@@ -597,7 +597,10 @@ func (j *jsiiProxy_VpnSite)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpnSite)SetCount(val *float64) {
+func (j *jsiiProxy_VpnSite)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

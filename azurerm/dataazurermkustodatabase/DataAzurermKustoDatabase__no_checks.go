@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermKustoDatabase) validateSetClusterNameParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermKustoDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermKustoDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataAzurermStorageAccountSas) validateSetConnectionStringPara
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermStorageAccountSas) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermStorageAccountSas) validateSetExpiryParameters(val *string) error {
 	return nil
 }

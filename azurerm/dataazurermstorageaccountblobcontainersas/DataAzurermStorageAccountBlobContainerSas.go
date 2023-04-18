@@ -2,14 +2,14 @@ package dataazurermstorageaccountblobcontainersas
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermstorageaccountblobcontainersas/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermstorageaccountblobcontainersas/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/storage_account_blob_container_sas azurerm_storage_account_blob_container_sas}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/storage_account_blob_container_sas azurerm_storage_account_blob_container_sas}.
 type DataAzurermStorageAccountBlobContainerSas interface {
 	cdktf.TerraformDataSource
 	CacheControl() *string
@@ -38,9 +38,9 @@ type DataAzurermStorageAccountBlobContainerSas interface {
 	SetContentType(val *string)
 	ContentTypeInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -305,8 +305,8 @@ func (j *jsiiProxy_DataAzurermStorageAccountBlobContainerSas) ContentTypeInput()
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermStorageAccountBlobContainerSas) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermStorageAccountBlobContainerSas) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -576,7 +576,7 @@ func (j *jsiiProxy_DataAzurermStorageAccountBlobContainerSas) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/storage_account_blob_container_sas azurerm_storage_account_blob_container_sas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/storage_account_blob_container_sas azurerm_storage_account_blob_container_sas} Data Source.
 func NewDataAzurermStorageAccountBlobContainerSas(scope constructs.Construct, id *string, config *DataAzurermStorageAccountBlobContainerSasConfig) DataAzurermStorageAccountBlobContainerSas {
 	_init_.Initialize()
 
@@ -594,7 +594,7 @@ func NewDataAzurermStorageAccountBlobContainerSas(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/storage_account_blob_container_sas azurerm_storage_account_blob_container_sas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/storage_account_blob_container_sas azurerm_storage_account_blob_container_sas} Data Source.
 func NewDataAzurermStorageAccountBlobContainerSas_Override(d DataAzurermStorageAccountBlobContainerSas, scope constructs.Construct, id *string, config *DataAzurermStorageAccountBlobContainerSasConfig) {
 	_init_.Initialize()
 
@@ -682,7 +682,10 @@ func (j *jsiiProxy_DataAzurermStorageAccountBlobContainerSas)SetContentType(val 
 	)
 }
 
-func (j *jsiiProxy_DataAzurermStorageAccountBlobContainerSas)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermStorageAccountBlobContainerSas)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

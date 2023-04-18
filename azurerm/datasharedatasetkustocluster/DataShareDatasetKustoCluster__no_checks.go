@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataShareDatasetKustoCluster) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataShareDatasetKustoCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataShareDatasetKustoCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

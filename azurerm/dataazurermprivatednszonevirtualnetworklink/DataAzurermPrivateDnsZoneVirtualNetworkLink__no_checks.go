@@ -68,6 +68,10 @@ func validateDataAzurermPrivateDnsZoneVirtualNetworkLink_IsTerraformElementParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermPrivateDnsZoneVirtualNetworkLink) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPrivateDnsZoneVirtualNetworkLink) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_SpringCloudAppMysqlAssociation) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudAppMysqlAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudAppMysqlAssociation) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package expressroutegateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/expressroutegateway/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/expressroutegateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_gateway azurerm_express_route_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/express_route_gateway azurerm_express_route_gateway}.
 type ExpressRouteGateway interface {
 	cdktf.TerraformResource
 	AllowNonVirtualWanTraffic() interface{}
@@ -24,9 +24,9 @@ type ExpressRouteGateway interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -182,8 +182,8 @@ func (j *jsiiProxy_ExpressRouteGateway) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_ExpressRouteGateway) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ExpressRouteGateway) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -473,7 +473,7 @@ func (j *jsiiProxy_ExpressRouteGateway) VirtualHubIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_gateway azurerm_express_route_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/express_route_gateway azurerm_express_route_gateway} Resource.
 func NewExpressRouteGateway(scope constructs.Construct, id *string, config *ExpressRouteGatewayConfig) ExpressRouteGateway {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewExpressRouteGateway(scope constructs.Construct, id *string, config *Expr
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/express_route_gateway azurerm_express_route_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/express_route_gateway azurerm_express_route_gateway} Resource.
 func NewExpressRouteGateway_Override(e ExpressRouteGateway, scope constructs.Construct, id *string, config *ExpressRouteGatewayConfig) {
 	_init_.Initialize()
 
@@ -524,7 +524,10 @@ func (j *jsiiProxy_ExpressRouteGateway)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ExpressRouteGateway)SetCount(val *float64) {
+func (j *jsiiProxy_ExpressRouteGateway)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

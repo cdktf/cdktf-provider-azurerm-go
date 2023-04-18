@@ -72,6 +72,10 @@ func (j *jsiiProxy_LogicAppTriggerHttpRequest) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_LogicAppTriggerHttpRequest) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppTriggerHttpRequest) validateSetIdParameters(val *string) error {
 	return nil
 }

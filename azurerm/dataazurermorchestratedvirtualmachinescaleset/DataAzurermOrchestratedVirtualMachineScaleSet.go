@@ -2,14 +2,14 @@ package dataazurermorchestratedvirtualmachinescaleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermorchestratedvirtualmachinescaleset/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermorchestratedvirtualmachinescaleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set}.
 type DataAzurermOrchestratedVirtualMachineScaleSet interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermOrchestratedVirtualMachineScaleSet interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataAzurermOrchestratedVirtualMachineScaleSet) ConstructNodeM
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermOrchestratedVirtualMachineScaleSet) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermOrchestratedVirtualMachineScaleSet) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -361,7 +361,7 @@ func (j *jsiiProxy_DataAzurermOrchestratedVirtualMachineScaleSet) TimeoutsInput(
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Data Source.
 func NewDataAzurermOrchestratedVirtualMachineScaleSet(scope constructs.Construct, id *string, config *DataAzurermOrchestratedVirtualMachineScaleSetConfig) DataAzurermOrchestratedVirtualMachineScaleSet {
 	_init_.Initialize()
 
@@ -379,7 +379,7 @@ func NewDataAzurermOrchestratedVirtualMachineScaleSet(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Data Source.
 func NewDataAzurermOrchestratedVirtualMachineScaleSet_Override(d DataAzurermOrchestratedVirtualMachineScaleSet, scope constructs.Construct, id *string, config *DataAzurermOrchestratedVirtualMachineScaleSetConfig) {
 	_init_.Initialize()
 
@@ -390,7 +390,10 @@ func NewDataAzurermOrchestratedVirtualMachineScaleSet_Override(d DataAzurermOrch
 	)
 }
 
-func (j *jsiiProxy_DataAzurermOrchestratedVirtualMachineScaleSet)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermOrchestratedVirtualMachineScaleSet)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

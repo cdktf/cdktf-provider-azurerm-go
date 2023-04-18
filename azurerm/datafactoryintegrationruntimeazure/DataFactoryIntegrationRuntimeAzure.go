@@ -2,14 +2,14 @@ package datafactoryintegrationruntimeazure
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/datafactoryintegrationruntimeazure/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/datafactoryintegrationruntimeazure/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_integration_runtime_azure azurerm_data_factory_integration_runtime_azure}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_integration_runtime_azure azurerm_data_factory_integration_runtime_azure}.
 type DataFactoryIntegrationRuntimeAzure interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -30,9 +30,9 @@ type DataFactoryIntegrationRuntimeAzure interface {
 	SetCoreCount(val *float64)
 	CoreCountInput() *float64
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataFactoryId() *string
 	SetDataFactoryId(val *string)
 	DataFactoryIdInput() *string
@@ -232,8 +232,8 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzure) CoreCountInput() *float64
 	return returns
 }
 
-func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzure) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzure) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -523,7 +523,7 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzure) VirtualNetworkEnabledInpu
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_integration_runtime_azure azurerm_data_factory_integration_runtime_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_integration_runtime_azure azurerm_data_factory_integration_runtime_azure} Resource.
 func NewDataFactoryIntegrationRuntimeAzure(scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeAzureConfig) DataFactoryIntegrationRuntimeAzure {
 	_init_.Initialize()
 
@@ -541,7 +541,7 @@ func NewDataFactoryIntegrationRuntimeAzure(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_integration_runtime_azure azurerm_data_factory_integration_runtime_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_integration_runtime_azure azurerm_data_factory_integration_runtime_azure} Resource.
 func NewDataFactoryIntegrationRuntimeAzure_Override(d DataFactoryIntegrationRuntimeAzure, scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeAzureConfig) {
 	_init_.Initialize()
 
@@ -596,7 +596,10 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzure)SetCoreCount(val *float64)
 	)
 }
 
-func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzure)SetCount(val *float64) {
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzure)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

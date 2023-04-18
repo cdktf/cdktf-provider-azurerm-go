@@ -84,6 +84,10 @@ func (j *jsiiProxy_ResourceGroupCostManagementExport) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_ResourceGroupCostManagementExport) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResourceGroupCostManagementExport) validateSetIdParameters(val *string) error {
 	return nil
 }

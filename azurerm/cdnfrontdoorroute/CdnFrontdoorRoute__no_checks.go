@@ -100,6 +100,10 @@ func (j *jsiiProxy_CdnFrontdoorRoute) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_CdnFrontdoorRoute) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnFrontdoorRoute) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

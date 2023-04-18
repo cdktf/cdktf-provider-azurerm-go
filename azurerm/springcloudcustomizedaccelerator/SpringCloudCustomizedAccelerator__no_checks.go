@@ -80,6 +80,10 @@ func (j *jsiiProxy_SpringCloudCustomizedAccelerator) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudCustomizedAccelerator) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudCustomizedAccelerator) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

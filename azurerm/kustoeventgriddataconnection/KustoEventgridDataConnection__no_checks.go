@@ -80,6 +80,10 @@ func (j *jsiiProxy_KustoEventgridDataConnection) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_KustoEventgridDataConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoEventgridDataConnection) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

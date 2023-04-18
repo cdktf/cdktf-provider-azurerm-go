@@ -76,6 +76,10 @@ func (j *jsiiProxy_StreamAnalyticsStreamInputIothub) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsStreamInputIothub) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsStreamInputIothub) validateSetEndpointParameters(val *string) error {
 	return nil
 }

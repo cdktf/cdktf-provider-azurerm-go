@@ -68,6 +68,10 @@ func validateDataAzurermOrchestratedVirtualMachineScaleSet_IsTerraformElementPar
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermOrchestratedVirtualMachineScaleSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermOrchestratedVirtualMachineScaleSet) validateSetIdParameters(val *string) error {
 	return nil
 }

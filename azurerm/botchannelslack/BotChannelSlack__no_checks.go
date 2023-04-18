@@ -84,6 +84,10 @@ func (j *jsiiProxy_BotChannelSlack) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_BotChannelSlack) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelSlack) validateSetIdParameters(val *string) error {
 	return nil
 }

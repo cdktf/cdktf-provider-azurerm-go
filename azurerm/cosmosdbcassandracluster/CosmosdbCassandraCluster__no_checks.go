@@ -84,6 +84,10 @@ func (j *jsiiProxy_CosmosdbCassandraCluster) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbCassandraCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbCassandraCluster) validateSetDefaultAdminPasswordParameters(val *string) error {
 	return nil
 }

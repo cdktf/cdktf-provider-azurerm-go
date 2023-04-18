@@ -72,6 +72,10 @@ func (j *jsiiProxy_NotificationHubAuthorizationRule) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_NotificationHubAuthorizationRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationHubAuthorizationRule) validateSetIdParameters(val *string) error {
 	return nil
 }

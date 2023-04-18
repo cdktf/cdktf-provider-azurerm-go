@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage) validateSetConnect
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

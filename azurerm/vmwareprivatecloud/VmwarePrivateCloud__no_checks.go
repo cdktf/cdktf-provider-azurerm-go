@@ -76,6 +76,10 @@ func (j *jsiiProxy_VmwarePrivateCloud) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_VmwarePrivateCloud) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VmwarePrivateCloud) validateSetIdParameters(val *string) error {
 	return nil
 }

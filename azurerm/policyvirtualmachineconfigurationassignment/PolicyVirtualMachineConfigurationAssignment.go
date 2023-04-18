@@ -2,14 +2,14 @@ package policyvirtualmachineconfigurationassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/policyvirtualmachineconfigurationassignment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/policyvirtualmachineconfigurationassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/policy_virtual_machine_configuration_assignment azurerm_policy_virtual_machine_configuration_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/policy_virtual_machine_configuration_assignment azurerm_policy_virtual_machine_configuration_assignment}.
 type PolicyVirtualMachineConfigurationAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type PolicyVirtualMachineConfigurationAssignment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -171,8 +171,8 @@ func (j *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) ConstructNodeMet
 	return returns
 }
 
-func (j *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,7 +402,7 @@ func (j *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) VirtualMachineId
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/policy_virtual_machine_configuration_assignment azurerm_policy_virtual_machine_configuration_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/policy_virtual_machine_configuration_assignment azurerm_policy_virtual_machine_configuration_assignment} Resource.
 func NewPolicyVirtualMachineConfigurationAssignment(scope constructs.Construct, id *string, config *PolicyVirtualMachineConfigurationAssignmentConfig) PolicyVirtualMachineConfigurationAssignment {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewPolicyVirtualMachineConfigurationAssignment(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/policy_virtual_machine_configuration_assignment azurerm_policy_virtual_machine_configuration_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/policy_virtual_machine_configuration_assignment azurerm_policy_virtual_machine_configuration_assignment} Resource.
 func NewPolicyVirtualMachineConfigurationAssignment_Override(p PolicyVirtualMachineConfigurationAssignment, scope constructs.Construct, id *string, config *PolicyVirtualMachineConfigurationAssignmentConfig) {
 	_init_.Initialize()
 
@@ -442,7 +442,10 @@ func (j *jsiiProxy_PolicyVirtualMachineConfigurationAssignment)SetConnection(val
 	)
 }
 
-func (j *jsiiProxy_PolicyVirtualMachineConfigurationAssignment)SetCount(val *float64) {
+func (j *jsiiProxy_PolicyVirtualMachineConfigurationAssignment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

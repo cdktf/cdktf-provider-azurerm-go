@@ -80,6 +80,10 @@ func (j *jsiiProxy_SentinelAlertRuleFusion) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SentinelAlertRuleFusion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelAlertRuleFusion) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

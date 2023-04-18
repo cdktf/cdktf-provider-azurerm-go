@@ -72,6 +72,10 @@ func (j *jsiiProxy_LogAnalyticsLinkedStorageAccount) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsLinkedStorageAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsLinkedStorageAccount) validateSetDataSourceTypeParameters(val *string) error {
 	return nil
 }

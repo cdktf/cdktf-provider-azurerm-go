@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSynapse) validateSetConnectionStringP
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryLinkedServiceSynapse) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceSynapse) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_SynapseSqlPoolWorkloadGroup) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_SynapseSqlPoolWorkloadGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseSqlPoolWorkloadGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

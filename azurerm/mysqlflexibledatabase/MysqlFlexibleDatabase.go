@@ -2,14 +2,14 @@ package mysqlflexibledatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/mysqlflexibledatabase/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/mysqlflexibledatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_flexible_database azurerm_mysql_flexible_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_flexible_database azurerm_mysql_flexible_database}.
 type MysqlFlexibleDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,9 +27,9 @@ type MysqlFlexibleDatabase interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -194,8 +194,8 @@ func (j *jsiiProxy_MysqlFlexibleDatabase) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_MysqlFlexibleDatabase) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MysqlFlexibleDatabase) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -425,7 +425,7 @@ func (j *jsiiProxy_MysqlFlexibleDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_flexible_database azurerm_mysql_flexible_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_flexible_database azurerm_mysql_flexible_database} Resource.
 func NewMysqlFlexibleDatabase(scope constructs.Construct, id *string, config *MysqlFlexibleDatabaseConfig) MysqlFlexibleDatabase {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewMysqlFlexibleDatabase(scope constructs.Construct, id *string, config *My
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_flexible_database azurerm_mysql_flexible_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_flexible_database azurerm_mysql_flexible_database} Resource.
 func NewMysqlFlexibleDatabase_Override(m MysqlFlexibleDatabase, scope constructs.Construct, id *string, config *MysqlFlexibleDatabaseConfig) {
 	_init_.Initialize()
 
@@ -487,7 +487,10 @@ func (j *jsiiProxy_MysqlFlexibleDatabase)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MysqlFlexibleDatabase)SetCount(val *float64) {
+func (j *jsiiProxy_MysqlFlexibleDatabase)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

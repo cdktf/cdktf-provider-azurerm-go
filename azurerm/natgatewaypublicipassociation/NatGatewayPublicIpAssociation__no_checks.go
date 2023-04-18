@@ -72,6 +72,10 @@ func (j *jsiiProxy_NatGatewayPublicIpAssociation) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_NatGatewayPublicIpAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NatGatewayPublicIpAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

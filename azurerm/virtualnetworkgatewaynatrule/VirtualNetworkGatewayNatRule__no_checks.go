@@ -80,6 +80,10 @@ func (j *jsiiProxy_VirtualNetworkGatewayNatRule) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_VirtualNetworkGatewayNatRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetworkGatewayNatRule) validateSetIdParameters(val *string) error {
 	return nil
 }

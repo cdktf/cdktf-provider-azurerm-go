@@ -68,6 +68,10 @@ func validateDataAzurermMonitorScheduledQueryRulesLog_IsTerraformElementParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermMonitorScheduledQueryRulesLog) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMonitorScheduledQueryRulesLog) validateSetIdParameters(val *string) error {
 	return nil
 }

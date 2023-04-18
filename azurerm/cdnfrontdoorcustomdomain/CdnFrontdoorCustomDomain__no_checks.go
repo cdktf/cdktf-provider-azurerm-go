@@ -80,6 +80,10 @@ func (j *jsiiProxy_CdnFrontdoorCustomDomain) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_CdnFrontdoorCustomDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnFrontdoorCustomDomain) validateSetDnsZoneIdParameters(val *string) error {
 	return nil
 }

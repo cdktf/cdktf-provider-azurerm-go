@@ -2,14 +2,14 @@ package databricksaccessconnector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/databricksaccessconnector/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/databricksaccessconnector/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/databricks_access_connector azurerm_databricks_access_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/databricks_access_connector azurerm_databricks_access_connector}.
 type DatabricksAccessConnector interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DatabricksAccessConnector interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DatabricksAccessConnector) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DatabricksAccessConnector) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DatabricksAccessConnector) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -427,7 +427,7 @@ func (j *jsiiProxy_DatabricksAccessConnector) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/databricks_access_connector azurerm_databricks_access_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/databricks_access_connector azurerm_databricks_access_connector} Resource.
 func NewDatabricksAccessConnector(scope constructs.Construct, id *string, config *DatabricksAccessConnectorConfig) DatabricksAccessConnector {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewDatabricksAccessConnector(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/databricks_access_connector azurerm_databricks_access_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/databricks_access_connector azurerm_databricks_access_connector} Resource.
 func NewDatabricksAccessConnector_Override(d DatabricksAccessConnector, scope constructs.Construct, id *string, config *DatabricksAccessConnectorConfig) {
 	_init_.Initialize()
 
@@ -467,7 +467,10 @@ func (j *jsiiProxy_DatabricksAccessConnector)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatabricksAccessConnector)SetCount(val *float64) {
+func (j *jsiiProxy_DatabricksAccessConnector)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

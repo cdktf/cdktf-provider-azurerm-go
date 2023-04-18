@@ -2,14 +2,14 @@ package lighthouseassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/lighthouseassignment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/lighthouseassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/lighthouse_assignment azurerm_lighthouse_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/lighthouse_assignment azurerm_lighthouse_assignment}.
 type LighthouseAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type LighthouseAssignment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_LighthouseAssignment) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_LighthouseAssignment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LighthouseAssignment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_LighthouseAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/lighthouse_assignment azurerm_lighthouse_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/lighthouse_assignment azurerm_lighthouse_assignment} Resource.
 func NewLighthouseAssignment(scope constructs.Construct, id *string, config *LighthouseAssignmentConfig) LighthouseAssignment {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewLighthouseAssignment(scope constructs.Construct, id *string, config *Lig
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/lighthouse_assignment azurerm_lighthouse_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/lighthouse_assignment azurerm_lighthouse_assignment} Resource.
 func NewLighthouseAssignment_Override(l LighthouseAssignment, scope constructs.Construct, id *string, config *LighthouseAssignmentConfig) {
 	_init_.Initialize()
 
@@ -420,7 +420,10 @@ func (j *jsiiProxy_LighthouseAssignment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LighthouseAssignment)SetCount(val *float64) {
+func (j *jsiiProxy_LighthouseAssignment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

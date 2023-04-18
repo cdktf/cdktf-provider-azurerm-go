@@ -68,6 +68,10 @@ func validateDataAzurermDatabricksWorkspacePrivateEndpointConnection_IsTerraform
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermDatabricksWorkspacePrivateEndpointConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDatabricksWorkspacePrivateEndpointConnection) validateSetIdParameters(val *string) error {
 	return nil
 }

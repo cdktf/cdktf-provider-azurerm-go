@@ -72,6 +72,10 @@ func (j *jsiiProxy_PostgresqlActiveDirectoryAdministrator) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_PostgresqlActiveDirectoryAdministrator) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlActiveDirectoryAdministrator) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_TrafficManagerProfile) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_TrafficManagerProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TrafficManagerProfile) validateSetIdParameters(val *string) error {
 	return nil
 }

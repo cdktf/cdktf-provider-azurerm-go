@@ -76,6 +76,10 @@ func (j *jsiiProxy_CosmosdbNotebookWorkspace) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbNotebookWorkspace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbNotebookWorkspace) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -88,6 +88,10 @@ func (j *jsiiProxy_MachineLearningWorkspace) validateSetContainerRegistryIdParam
 	return nil
 }
 
+func (j *jsiiProxy_MachineLearningWorkspace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MachineLearningWorkspace) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func validateDataAzurermDataboxEdgeDevice_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermDataboxEdgeDevice) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDataboxEdgeDevice) validateSetIdParameters(val *string) error {
 	return nil
 }

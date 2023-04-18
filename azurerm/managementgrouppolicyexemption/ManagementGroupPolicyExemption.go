@@ -2,14 +2,14 @@ package managementgrouppolicyexemption
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/managementgrouppolicyexemption/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/managementgrouppolicyexemption/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/management_group_policy_exemption azurerm_management_group_policy_exemption}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/management_group_policy_exemption azurerm_management_group_policy_exemption}.
 type ManagementGroupPolicyExemption interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ManagementGroupPolicyExemption interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -171,8 +171,8 @@ func (j *jsiiProxy_ManagementGroupPolicyExemption) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_ManagementGroupPolicyExemption) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ManagementGroupPolicyExemption) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -522,7 +522,7 @@ func (j *jsiiProxy_ManagementGroupPolicyExemption) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/management_group_policy_exemption azurerm_management_group_policy_exemption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/management_group_policy_exemption azurerm_management_group_policy_exemption} Resource.
 func NewManagementGroupPolicyExemption(scope constructs.Construct, id *string, config *ManagementGroupPolicyExemptionConfig) ManagementGroupPolicyExemption {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewManagementGroupPolicyExemption(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/management_group_policy_exemption azurerm_management_group_policy_exemption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/management_group_policy_exemption azurerm_management_group_policy_exemption} Resource.
 func NewManagementGroupPolicyExemption_Override(m ManagementGroupPolicyExemption, scope constructs.Construct, id *string, config *ManagementGroupPolicyExemptionConfig) {
 	_init_.Initialize()
 
@@ -562,7 +562,10 @@ func (j *jsiiProxy_ManagementGroupPolicyExemption)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ManagementGroupPolicyExemption)SetCount(val *float64) {
+func (j *jsiiProxy_ManagementGroupPolicyExemption)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_IothubConsumerGroup) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_IothubConsumerGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubConsumerGroup) validateSetEventhubEndpointNameParameters(val *string) error {
 	return nil
 }

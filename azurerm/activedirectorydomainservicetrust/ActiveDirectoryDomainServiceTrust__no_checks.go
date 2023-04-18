@@ -72,6 +72,10 @@ func (j *jsiiProxy_ActiveDirectoryDomainServiceTrust) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_ActiveDirectoryDomainServiceTrust) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ActiveDirectoryDomainServiceTrust) validateSetDomainServiceIdParameters(val *string) error {
 	return nil
 }

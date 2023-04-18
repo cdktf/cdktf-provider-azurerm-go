@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataFactoryDatasetSnowflake) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryDatasetSnowflake) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryDatasetSnowflake) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

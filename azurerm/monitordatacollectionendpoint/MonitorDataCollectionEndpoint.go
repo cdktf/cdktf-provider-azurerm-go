@@ -2,14 +2,14 @@ package monitordatacollectionendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/monitordatacollectionendpoint/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/monitordatacollectionendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint}.
 type MonitorDataCollectionEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -22,9 +22,9 @@ type MonitorDataCollectionEndpoint interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -176,8 +176,8 @@ func (j *jsiiProxy_MonitorDataCollectionEndpoint) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_MonitorDataCollectionEndpoint) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MonitorDataCollectionEndpoint) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -497,7 +497,7 @@ func (j *jsiiProxy_MonitorDataCollectionEndpoint) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint} Resource.
 func NewMonitorDataCollectionEndpoint(scope constructs.Construct, id *string, config *MonitorDataCollectionEndpointConfig) MonitorDataCollectionEndpoint {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewMonitorDataCollectionEndpoint(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint} Resource.
 func NewMonitorDataCollectionEndpoint_Override(m MonitorDataCollectionEndpoint, scope constructs.Construct, id *string, config *MonitorDataCollectionEndpointConfig) {
 	_init_.Initialize()
 
@@ -537,7 +537,10 @@ func (j *jsiiProxy_MonitorDataCollectionEndpoint)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_MonitorDataCollectionEndpoint)SetCount(val *float64) {
+func (j *jsiiProxy_MonitorDataCollectionEndpoint)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

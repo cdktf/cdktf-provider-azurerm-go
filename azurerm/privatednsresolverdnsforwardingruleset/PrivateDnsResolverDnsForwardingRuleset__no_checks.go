@@ -72,6 +72,10 @@ func (j *jsiiProxy_PrivateDnsResolverDnsForwardingRuleset) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_PrivateDnsResolverDnsForwardingRuleset) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivateDnsResolverDnsForwardingRuleset) validateSetIdParameters(val *string) error {
 	return nil
 }

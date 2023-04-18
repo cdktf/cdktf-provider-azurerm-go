@@ -84,6 +84,10 @@ func (j *jsiiProxy_CdnFrontdoorOrigin) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_CdnFrontdoorOrigin) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnFrontdoorOrigin) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

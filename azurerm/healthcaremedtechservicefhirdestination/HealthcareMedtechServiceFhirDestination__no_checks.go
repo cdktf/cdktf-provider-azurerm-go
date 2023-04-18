@@ -72,6 +72,10 @@ func (j *jsiiProxy_HealthcareMedtechServiceFhirDestination) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareMedtechServiceFhirDestination) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareMedtechServiceFhirDestination) validateSetDestinationFhirMappingJsonParameters(val *string) error {
 	return nil
 }

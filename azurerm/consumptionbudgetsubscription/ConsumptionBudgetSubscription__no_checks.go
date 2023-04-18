@@ -88,6 +88,10 @@ func (j *jsiiProxy_ConsumptionBudgetSubscription) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_ConsumptionBudgetSubscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsumptionBudgetSubscription) validateSetEtagParameters(val *string) error {
 	return nil
 }

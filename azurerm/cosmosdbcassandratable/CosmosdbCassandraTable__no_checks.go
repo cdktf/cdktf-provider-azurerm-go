@@ -88,6 +88,10 @@ func (j *jsiiProxy_CosmosdbCassandraTable) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbCassandraTable) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbCassandraTable) validateSetDefaultTtlParameters(val *float64) error {
 	return nil
 }

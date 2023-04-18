@@ -88,6 +88,10 @@ func (j *jsiiProxy_SentinelThreatIntelligenceIndicator) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_SentinelThreatIntelligenceIndicator) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelThreatIntelligenceIndicator) validateSetCreatedByParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_ResourceGroupTemplateDeployment) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_ResourceGroupTemplateDeployment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResourceGroupTemplateDeployment) validateSetDebugLevelParameters(val *string) error {
 	return nil
 }

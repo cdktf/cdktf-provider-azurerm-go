@@ -2,14 +2,14 @@ package digitaltwinsendpointeventgrid
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/digitaltwinsendpointeventgrid/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/digitaltwinsendpointeventgrid/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/digital_twins_endpoint_eventgrid azurerm_digital_twins_endpoint_eventgrid}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/digital_twins_endpoint_eventgrid azurerm_digital_twins_endpoint_eventgrid}.
 type DigitalTwinsEndpointEventgrid interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DigitalTwinsEndpointEventgrid interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeadLetterStorageSecret() *string
 	SetDeadLetterStorageSecret(val *string)
 	DeadLetterStorageSecretInput() *string
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DigitalTwinsEndpointEventgrid) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DigitalTwinsEndpointEventgrid) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DigitalTwinsEndpointEventgrid) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -449,7 +449,7 @@ func (j *jsiiProxy_DigitalTwinsEndpointEventgrid) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/digital_twins_endpoint_eventgrid azurerm_digital_twins_endpoint_eventgrid} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/digital_twins_endpoint_eventgrid azurerm_digital_twins_endpoint_eventgrid} Resource.
 func NewDigitalTwinsEndpointEventgrid(scope constructs.Construct, id *string, config *DigitalTwinsEndpointEventgridConfig) DigitalTwinsEndpointEventgrid {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewDigitalTwinsEndpointEventgrid(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/digital_twins_endpoint_eventgrid azurerm_digital_twins_endpoint_eventgrid} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/digital_twins_endpoint_eventgrid azurerm_digital_twins_endpoint_eventgrid} Resource.
 func NewDigitalTwinsEndpointEventgrid_Override(d DigitalTwinsEndpointEventgrid, scope constructs.Construct, id *string, config *DigitalTwinsEndpointEventgridConfig) {
 	_init_.Initialize()
 
@@ -489,7 +489,10 @@ func (j *jsiiProxy_DigitalTwinsEndpointEventgrid)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_DigitalTwinsEndpointEventgrid)SetCount(val *float64) {
+func (j *jsiiProxy_DigitalTwinsEndpointEventgrid)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

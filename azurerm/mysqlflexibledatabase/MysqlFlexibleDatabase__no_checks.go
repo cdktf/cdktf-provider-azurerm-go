@@ -80,6 +80,10 @@ func (j *jsiiProxy_MysqlFlexibleDatabase) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_MysqlFlexibleDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MysqlFlexibleDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }

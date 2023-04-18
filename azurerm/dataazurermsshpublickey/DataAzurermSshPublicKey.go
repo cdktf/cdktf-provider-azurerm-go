@@ -2,14 +2,14 @@ package dataazurermsshpublickey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermsshpublickey/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermsshpublickey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/ssh_public_key azurerm_ssh_public_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/ssh_public_key azurerm_ssh_public_key}.
 type DataAzurermSshPublicKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermSshPublicKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataAzurermSshPublicKey) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermSshPublicKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermSshPublicKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -363,7 +363,7 @@ func (j *jsiiProxy_DataAzurermSshPublicKey) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/ssh_public_key azurerm_ssh_public_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/ssh_public_key azurerm_ssh_public_key} Data Source.
 func NewDataAzurermSshPublicKey(scope constructs.Construct, id *string, config *DataAzurermSshPublicKeyConfig) DataAzurermSshPublicKey {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewDataAzurermSshPublicKey(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/ssh_public_key azurerm_ssh_public_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/ssh_public_key azurerm_ssh_public_key} Data Source.
 func NewDataAzurermSshPublicKey_Override(d DataAzurermSshPublicKey, scope constructs.Construct, id *string, config *DataAzurermSshPublicKeyConfig) {
 	_init_.Initialize()
 
@@ -392,7 +392,10 @@ func NewDataAzurermSshPublicKey_Override(d DataAzurermSshPublicKey, scope constr
 	)
 }
 
-func (j *jsiiProxy_DataAzurermSshPublicKey)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermSshPublicKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

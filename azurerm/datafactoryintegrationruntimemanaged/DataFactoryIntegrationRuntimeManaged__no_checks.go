@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeManaged) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeManaged) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryIntegrationRuntimeManaged) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_KustoClusterCustomerManagedKey) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_KustoClusterCustomerManagedKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoClusterCustomerManagedKey) validateSetIdParameters(val *string) error {
 	return nil
 }

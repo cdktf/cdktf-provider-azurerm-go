@@ -68,6 +68,10 @@ func validateDataAzurermNatGateway_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermNatGateway) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermNatGateway) validateSetIdParameters(val *string) error {
 	return nil
 }

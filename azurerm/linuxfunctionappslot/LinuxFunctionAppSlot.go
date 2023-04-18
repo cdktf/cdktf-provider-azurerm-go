@@ -2,14 +2,14 @@ package linuxfunctionappslot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/linuxfunctionappslot/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/linuxfunctionappslot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app_slot azurerm_linux_function_app_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/linux_function_app_slot azurerm_linux_function_app_slot}.
 type LinuxFunctionAppSlot interface {
 	cdktf.TerraformResource
 	AppSettings() *map[string]*string
@@ -47,9 +47,9 @@ type LinuxFunctionAppSlot interface {
 	SetContentShareForceDisabled(val interface{})
 	ContentShareForceDisabledInput() interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomDomainVerificationId() *string
 	DailyMemoryTimeQuota() *float64
 	SetDailyMemoryTimeQuota(val *float64)
@@ -452,8 +452,8 @@ func (j *jsiiProxy_LinuxFunctionAppSlot) ContentShareForceDisabledInput() interf
 	return returns
 }
 
-func (j *jsiiProxy_LinuxFunctionAppSlot) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LinuxFunctionAppSlot) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1043,7 +1043,7 @@ func (j *jsiiProxy_LinuxFunctionAppSlot) VirtualNetworkSubnetIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app_slot azurerm_linux_function_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/linux_function_app_slot azurerm_linux_function_app_slot} Resource.
 func NewLinuxFunctionAppSlot(scope constructs.Construct, id *string, config *LinuxFunctionAppSlotConfig) LinuxFunctionAppSlot {
 	_init_.Initialize()
 
@@ -1061,7 +1061,7 @@ func NewLinuxFunctionAppSlot(scope constructs.Construct, id *string, config *Lin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/linux_function_app_slot azurerm_linux_function_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/linux_function_app_slot azurerm_linux_function_app_slot} Resource.
 func NewLinuxFunctionAppSlot_Override(l LinuxFunctionAppSlot, scope constructs.Construct, id *string, config *LinuxFunctionAppSlotConfig) {
 	_init_.Initialize()
 
@@ -1149,7 +1149,10 @@ func (j *jsiiProxy_LinuxFunctionAppSlot)SetContentShareForceDisabled(val interfa
 	)
 }
 
-func (j *jsiiProxy_LinuxFunctionAppSlot)SetCount(val *float64) {
+func (j *jsiiProxy_LinuxFunctionAppSlot)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

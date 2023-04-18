@@ -72,6 +72,10 @@ func (j *jsiiProxy_BotWebApp) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_BotWebApp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotWebApp) validateSetDeveloperAppInsightsApiKeyParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_LogicAppWorkflow) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_LogicAppWorkflow) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppWorkflow) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_SentinelDataConnectorDynamics365) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_SentinelDataConnectorDynamics365) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorDynamics365) validateSetIdParameters(val *string) error {
 	return nil
 }

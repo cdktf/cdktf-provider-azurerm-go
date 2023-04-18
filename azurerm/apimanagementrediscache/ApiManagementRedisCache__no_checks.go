@@ -84,6 +84,10 @@ func (j *jsiiProxy_ApiManagementRedisCache) validateSetConnectionStringParameter
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementRedisCache) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementRedisCache) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

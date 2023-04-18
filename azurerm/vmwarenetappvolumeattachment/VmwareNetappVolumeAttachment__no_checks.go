@@ -72,6 +72,10 @@ func (j *jsiiProxy_VmwareNetappVolumeAttachment) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_VmwareNetappVolumeAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VmwareNetappVolumeAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

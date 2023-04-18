@@ -72,6 +72,10 @@ func (j *jsiiProxy_KeyVaultManagedStorageAccountSasTokenDefinition) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_KeyVaultManagedStorageAccountSasTokenDefinition) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyVaultManagedStorageAccountSasTokenDefinition) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -84,6 +84,10 @@ func (j *jsiiProxy_BotChannelDirectLineSpeech) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_BotChannelDirectLineSpeech) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelDirectLineSpeech) validateSetCustomSpeechModelIdParameters(val *string) error {
 	return nil
 }

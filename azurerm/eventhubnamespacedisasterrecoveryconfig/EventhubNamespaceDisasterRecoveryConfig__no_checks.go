@@ -72,6 +72,10 @@ func (j *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

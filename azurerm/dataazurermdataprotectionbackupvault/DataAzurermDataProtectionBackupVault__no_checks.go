@@ -68,6 +68,10 @@ func validateDataAzurermDataProtectionBackupVault_IsTerraformElementParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermDataProtectionBackupVault) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDataProtectionBackupVault) validateSetIdParameters(val *string) error {
 	return nil
 }

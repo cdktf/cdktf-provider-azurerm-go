@@ -76,6 +76,10 @@ func (j *jsiiProxy_ContainerRegistryAgentPool) validateSetContainerRegistryNameP
 	return nil
 }
 
+func (j *jsiiProxy_ContainerRegistryAgentPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerRegistryAgentPool) validateSetIdParameters(val *string) error {
 	return nil
 }

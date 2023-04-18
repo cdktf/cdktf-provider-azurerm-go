@@ -104,6 +104,10 @@ func (j *jsiiProxy_LogicAppStandard) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_LogicAppStandard) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppStandard) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

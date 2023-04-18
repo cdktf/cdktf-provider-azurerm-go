@@ -68,6 +68,10 @@ func validateDataAzurermDataShareDatasetKustoDatabase_IsTerraformElementParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermDataShareDatasetKustoDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDataShareDatasetKustoDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }

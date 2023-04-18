@@ -2,14 +2,14 @@ package dataazurermpolicysetdefinition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermpolicysetdefinition/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermpolicysetdefinition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/policy_set_definition azurerm_policy_set_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/policy_set_definition azurerm_policy_set_definition}.
 type DataAzurermPolicySetDefinition interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermPolicySetDefinition interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataAzurermPolicySetDefinition) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermPolicySetDefinition) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermPolicySetDefinition) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -431,7 +431,7 @@ func (j *jsiiProxy_DataAzurermPolicySetDefinition) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/policy_set_definition azurerm_policy_set_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/policy_set_definition azurerm_policy_set_definition} Data Source.
 func NewDataAzurermPolicySetDefinition(scope constructs.Construct, id *string, config *DataAzurermPolicySetDefinitionConfig) DataAzurermPolicySetDefinition {
 	_init_.Initialize()
 
@@ -449,7 +449,7 @@ func NewDataAzurermPolicySetDefinition(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/policy_set_definition azurerm_policy_set_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/policy_set_definition azurerm_policy_set_definition} Data Source.
 func NewDataAzurermPolicySetDefinition_Override(d DataAzurermPolicySetDefinition, scope constructs.Construct, id *string, config *DataAzurermPolicySetDefinitionConfig) {
 	_init_.Initialize()
 
@@ -460,7 +460,10 @@ func NewDataAzurermPolicySetDefinition_Override(d DataAzurermPolicySetDefinition
 	)
 }
 
-func (j *jsiiProxy_DataAzurermPolicySetDefinition)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermPolicySetDefinition)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

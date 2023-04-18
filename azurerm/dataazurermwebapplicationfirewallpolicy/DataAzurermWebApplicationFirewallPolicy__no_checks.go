@@ -68,6 +68,10 @@ func validateDataAzurermWebApplicationFirewallPolicy_IsTerraformElementParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermWebApplicationFirewallPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermWebApplicationFirewallPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func validateDataAzurermSynapseWorkspace_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermSynapseWorkspace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermSynapseWorkspace) validateSetIdParameters(val *string) error {
 	return nil
 }

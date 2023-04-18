@@ -80,6 +80,10 @@ func (j *jsiiProxy_BatchJob) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_BatchJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchJob) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

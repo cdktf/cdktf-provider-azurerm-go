@@ -2,14 +2,14 @@ package maintenanceconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/maintenanceconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/maintenanceconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/maintenance_configuration azurerm_maintenance_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration}.
 type MaintenanceConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MaintenanceConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -175,8 +175,8 @@ func (j *jsiiProxy_MaintenanceConfiguration) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_MaintenanceConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MaintenanceConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -546,7 +546,7 @@ func (j *jsiiProxy_MaintenanceConfiguration) WindowInput() *MaintenanceConfigura
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/maintenance_configuration azurerm_maintenance_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration} Resource.
 func NewMaintenanceConfiguration(scope constructs.Construct, id *string, config *MaintenanceConfigurationConfig) MaintenanceConfiguration {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewMaintenanceConfiguration(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/maintenance_configuration azurerm_maintenance_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration} Resource.
 func NewMaintenanceConfiguration_Override(m MaintenanceConfiguration, scope constructs.Construct, id *string, config *MaintenanceConfigurationConfig) {
 	_init_.Initialize()
 
@@ -586,7 +586,10 @@ func (j *jsiiProxy_MaintenanceConfiguration)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MaintenanceConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_MaintenanceConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

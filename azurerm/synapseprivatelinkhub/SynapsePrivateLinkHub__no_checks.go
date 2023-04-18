@@ -72,6 +72,10 @@ func (j *jsiiProxy_SynapsePrivateLinkHub) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_SynapsePrivateLinkHub) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapsePrivateLinkHub) validateSetIdParameters(val *string) error {
 	return nil
 }

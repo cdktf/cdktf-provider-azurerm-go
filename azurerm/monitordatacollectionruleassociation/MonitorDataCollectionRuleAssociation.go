@@ -2,14 +2,14 @@ package monitordatacollectionruleassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/monitordatacollectionruleassociation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/monitordatacollectionruleassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_data_collection_rule_association azurerm_monitor_data_collection_rule_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_data_collection_rule_association azurerm_monitor_data_collection_rule_association}.
 type MonitorDataCollectionRuleAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MonitorDataCollectionRuleAssociation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataCollectionEndpointId() *string
 	SetDataCollectionEndpointId(val *string)
 	DataCollectionEndpointIdInput() *string
@@ -158,8 +158,8 @@ func (j *jsiiProxy_MonitorDataCollectionRuleAssociation) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_MonitorDataCollectionRuleAssociation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MonitorDataCollectionRuleAssociation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -429,7 +429,7 @@ func (j *jsiiProxy_MonitorDataCollectionRuleAssociation) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_data_collection_rule_association azurerm_monitor_data_collection_rule_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_data_collection_rule_association azurerm_monitor_data_collection_rule_association} Resource.
 func NewMonitorDataCollectionRuleAssociation(scope constructs.Construct, id *string, config *MonitorDataCollectionRuleAssociationConfig) MonitorDataCollectionRuleAssociation {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewMonitorDataCollectionRuleAssociation(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_data_collection_rule_association azurerm_monitor_data_collection_rule_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_data_collection_rule_association azurerm_monitor_data_collection_rule_association} Resource.
 func NewMonitorDataCollectionRuleAssociation_Override(m MonitorDataCollectionRuleAssociation, scope constructs.Construct, id *string, config *MonitorDataCollectionRuleAssociationConfig) {
 	_init_.Initialize()
 
@@ -469,7 +469,10 @@ func (j *jsiiProxy_MonitorDataCollectionRuleAssociation)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_MonitorDataCollectionRuleAssociation)SetCount(val *float64) {
+func (j *jsiiProxy_MonitorDataCollectionRuleAssociation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

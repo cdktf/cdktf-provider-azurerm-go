@@ -2,14 +2,14 @@ package dataazurermcontainerappenvironmentcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermcontainerappenvironmentcertificate/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermcontainerappenvironmentcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/container_app_environment_certificate azurerm_container_app_environment_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/container_app_environment_certificate azurerm_container_app_environment_certificate}.
 type DataAzurermContainerAppEnvironmentCertificate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -20,9 +20,9 @@ type DataAzurermContainerAppEnvironmentCertificate interface {
 	SetContainerAppEnvironmentId(val *string)
 	ContainerAppEnvironmentIdInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataAzurermContainerAppEnvironmentCertificate) ContainerAppEn
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermContainerAppEnvironmentCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermContainerAppEnvironmentCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataAzurermContainerAppEnvironmentCertificate) TimeoutsInput(
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/container_app_environment_certificate azurerm_container_app_environment_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/container_app_environment_certificate azurerm_container_app_environment_certificate} Data Source.
 func NewDataAzurermContainerAppEnvironmentCertificate(scope constructs.Construct, id *string, config *DataAzurermContainerAppEnvironmentCertificateConfig) DataAzurermContainerAppEnvironmentCertificate {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataAzurermContainerAppEnvironmentCertificate(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/container_app_environment_certificate azurerm_container_app_environment_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/container_app_environment_certificate azurerm_container_app_environment_certificate} Data Source.
 func NewDataAzurermContainerAppEnvironmentCertificate_Override(d DataAzurermContainerAppEnvironmentCertificate, scope constructs.Construct, id *string, config *DataAzurermContainerAppEnvironmentCertificateConfig) {
 	_init_.Initialize()
 
@@ -434,7 +434,10 @@ func (j *jsiiProxy_DataAzurermContainerAppEnvironmentCertificate)SetContainerApp
 	)
 }
 
-func (j *jsiiProxy_DataAzurermContainerAppEnvironmentCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermContainerAppEnvironmentCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

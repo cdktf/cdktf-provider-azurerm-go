@@ -68,6 +68,10 @@ func validateDataAzurermMarketplaceAgreement_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermMarketplaceAgreement) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMarketplaceAgreement) validateSetIdParameters(val *string) error {
 	return nil
 }

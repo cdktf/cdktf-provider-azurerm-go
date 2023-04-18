@@ -84,6 +84,10 @@ func (j *jsiiProxy_AutomationConnectionServicePrincipal) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_AutomationConnectionServicePrincipal) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationConnectionServicePrincipal) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

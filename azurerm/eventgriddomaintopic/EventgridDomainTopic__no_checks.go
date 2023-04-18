@@ -72,6 +72,10 @@ func (j *jsiiProxy_EventgridDomainTopic) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_EventgridDomainTopic) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventgridDomainTopic) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

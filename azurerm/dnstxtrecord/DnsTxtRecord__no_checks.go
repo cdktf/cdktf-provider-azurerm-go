@@ -76,6 +76,10 @@ func (j *jsiiProxy_DnsTxtRecord) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DnsTxtRecord) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DnsTxtRecord) validateSetIdParameters(val *string) error {
 	return nil
 }

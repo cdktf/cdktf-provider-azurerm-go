@@ -76,6 +76,10 @@ func (j *jsiiProxy_IotcentralApplication) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_IotcentralApplication) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotcentralApplication) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

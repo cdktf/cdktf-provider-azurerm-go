@@ -96,6 +96,10 @@ func (j *jsiiProxy_DataFactoryTriggerTumblingWindow) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryTriggerTumblingWindow) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryTriggerTumblingWindow) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

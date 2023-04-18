@@ -2,14 +2,14 @@ package appserviceconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/appserviceconnection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/appserviceconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/app_service_connection azurerm_app_service_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_connection azurerm_app_service_connection}.
 type AppServiceConnection interface {
 	cdktf.TerraformResource
 	AppServiceId() *string
@@ -29,9 +29,9 @@ type AppServiceConnection interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -223,8 +223,8 @@ func (j *jsiiProxy_AppServiceConnection) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_AppServiceConnection) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppServiceConnection) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -474,7 +474,7 @@ func (j *jsiiProxy_AppServiceConnection) VnetSolutionInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/app_service_connection azurerm_app_service_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_connection azurerm_app_service_connection} Resource.
 func NewAppServiceConnection(scope constructs.Construct, id *string, config *AppServiceConnectionConfig) AppServiceConnection {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewAppServiceConnection(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/app_service_connection azurerm_app_service_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_connection azurerm_app_service_connection} Resource.
 func NewAppServiceConnection_Override(a AppServiceConnection, scope constructs.Construct, id *string, config *AppServiceConnectionConfig) {
 	_init_.Initialize()
 
@@ -536,7 +536,10 @@ func (j *jsiiProxy_AppServiceConnection)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppServiceConnection)SetCount(val *float64) {
+func (j *jsiiProxy_AppServiceConnection)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

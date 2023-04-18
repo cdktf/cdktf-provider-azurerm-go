@@ -72,6 +72,10 @@ func (j *jsiiProxy_ManagementGroupSubscriptionAssociation) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_ManagementGroupSubscriptionAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagementGroupSubscriptionAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

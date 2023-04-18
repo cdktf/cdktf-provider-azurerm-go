@@ -72,6 +72,10 @@ func (j *jsiiProxy_LighthouseAssignment) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_LighthouseAssignment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LighthouseAssignment) validateSetIdParameters(val *string) error {
 	return nil
 }

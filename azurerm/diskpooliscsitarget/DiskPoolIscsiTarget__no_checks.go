@@ -76,6 +76,10 @@ func (j *jsiiProxy_DiskPoolIscsiTarget) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_DiskPoolIscsiTarget) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DiskPoolIscsiTarget) validateSetDisksPoolIdParameters(val *string) error {
 	return nil
 }

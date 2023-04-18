@@ -2,14 +2,14 @@ package dataazurermsubscriptiontemplatedeployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermsubscriptiontemplatedeployment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermsubscriptiontemplatedeployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/subscription_template_deployment azurerm_subscription_template_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/subscription_template_deployment azurerm_subscription_template_deployment}.
 type DataAzurermSubscriptionTemplateDeployment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermSubscriptionTemplateDeployment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -125,8 +125,8 @@ func (j *jsiiProxy_DataAzurermSubscriptionTemplateDeployment) ConstructNodeMetad
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermSubscriptionTemplateDeployment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermSubscriptionTemplateDeployment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -316,7 +316,7 @@ func (j *jsiiProxy_DataAzurermSubscriptionTemplateDeployment) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/subscription_template_deployment azurerm_subscription_template_deployment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/subscription_template_deployment azurerm_subscription_template_deployment} Data Source.
 func NewDataAzurermSubscriptionTemplateDeployment(scope constructs.Construct, id *string, config *DataAzurermSubscriptionTemplateDeploymentConfig) DataAzurermSubscriptionTemplateDeployment {
 	_init_.Initialize()
 
@@ -334,7 +334,7 @@ func NewDataAzurermSubscriptionTemplateDeployment(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/subscription_template_deployment azurerm_subscription_template_deployment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/subscription_template_deployment azurerm_subscription_template_deployment} Data Source.
 func NewDataAzurermSubscriptionTemplateDeployment_Override(d DataAzurermSubscriptionTemplateDeployment, scope constructs.Construct, id *string, config *DataAzurermSubscriptionTemplateDeploymentConfig) {
 	_init_.Initialize()
 
@@ -345,7 +345,10 @@ func NewDataAzurermSubscriptionTemplateDeployment_Override(d DataAzurermSubscrip
 	)
 }
 
-func (j *jsiiProxy_DataAzurermSubscriptionTemplateDeployment)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermSubscriptionTemplateDeployment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

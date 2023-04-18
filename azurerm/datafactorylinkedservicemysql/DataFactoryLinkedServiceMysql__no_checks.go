@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceMysql) validateSetConnectionStringPar
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryLinkedServiceMysql) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceMysql) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

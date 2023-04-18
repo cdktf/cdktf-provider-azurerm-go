@@ -76,6 +76,10 @@ func (j *jsiiProxy_DevTestGlobalVmShutdownSchedule) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_DevTestGlobalVmShutdownSchedule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevTestGlobalVmShutdownSchedule) validateSetDailyRecurrenceTimeParameters(val *string) error {
 	return nil
 }

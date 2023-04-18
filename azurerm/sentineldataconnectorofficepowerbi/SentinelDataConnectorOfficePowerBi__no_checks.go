@@ -72,6 +72,10 @@ func (j *jsiiProxy_SentinelDataConnectorOfficePowerBi) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_SentinelDataConnectorOfficePowerBi) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorOfficePowerBi) validateSetIdParameters(val *string) error {
 	return nil
 }

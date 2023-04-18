@@ -128,6 +128,10 @@ func (j *jsiiProxy_LinuxFunctionApp) validateSetContentShareForceDisabledParamet
 	return nil
 }
 
+func (j *jsiiProxy_LinuxFunctionApp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxFunctionApp) validateSetDailyMemoryTimeQuotaParameters(val *float64) error {
 	return nil
 }

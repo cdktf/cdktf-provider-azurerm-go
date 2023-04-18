@@ -76,6 +76,10 @@ func (j *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub) validateSetConsumerGr
 	return nil
 }
 
+func (j *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub) validateSetEnvironmentIdParameters(val *string) error {
 	return nil
 }

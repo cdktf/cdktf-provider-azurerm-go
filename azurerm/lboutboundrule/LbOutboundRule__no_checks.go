@@ -84,6 +84,10 @@ func (j *jsiiProxy_LbOutboundRule) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_LbOutboundRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbOutboundRule) validateSetEnableTcpResetParameters(val interface{}) error {
 	return nil
 }

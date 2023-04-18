@@ -68,6 +68,10 @@ func validateDataAzurermVpnGateway_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermVpnGateway) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermVpnGateway) validateSetIdParameters(val *string) error {
 	return nil
 }

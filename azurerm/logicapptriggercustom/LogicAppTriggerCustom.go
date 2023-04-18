@@ -2,14 +2,14 @@ package logicapptriggercustom
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/logicapptriggercustom/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/logicapptriggercustom/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/logic_app_trigger_custom azurerm_logic_app_trigger_custom}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logic_app_trigger_custom azurerm_logic_app_trigger_custom}.
 type LogicAppTriggerCustom interface {
 	cdktf.TerraformResource
 	Body() *string
@@ -24,9 +24,9 @@ type LogicAppTriggerCustom interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -168,8 +168,8 @@ func (j *jsiiProxy_LogicAppTriggerCustom) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_LogicAppTriggerCustom) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LogicAppTriggerCustom) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,7 +379,7 @@ func (j *jsiiProxy_LogicAppTriggerCustom) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/logic_app_trigger_custom azurerm_logic_app_trigger_custom} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logic_app_trigger_custom azurerm_logic_app_trigger_custom} Resource.
 func NewLogicAppTriggerCustom(scope constructs.Construct, id *string, config *LogicAppTriggerCustomConfig) LogicAppTriggerCustom {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewLogicAppTriggerCustom(scope constructs.Construct, id *string, config *Lo
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/logic_app_trigger_custom azurerm_logic_app_trigger_custom} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logic_app_trigger_custom azurerm_logic_app_trigger_custom} Resource.
 func NewLogicAppTriggerCustom_Override(l LogicAppTriggerCustom, scope constructs.Construct, id *string, config *LogicAppTriggerCustomConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_LogicAppTriggerCustom)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogicAppTriggerCustom)SetCount(val *float64) {
+func (j *jsiiProxy_LogicAppTriggerCustom)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_FluidRelayServer) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_FluidRelayServer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FluidRelayServer) validateSetIdParameters(val *string) error {
 	return nil
 }

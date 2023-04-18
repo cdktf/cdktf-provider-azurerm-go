@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataShareDatasetBlobStorage) validateSetContainerNameParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataShareDatasetBlobStorage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataShareDatasetBlobStorage) validateSetDataShareIdParameters(val *string) error {
 	return nil
 }

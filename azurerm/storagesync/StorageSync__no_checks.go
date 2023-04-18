@@ -72,6 +72,10 @@ func (j *jsiiProxy_StorageSync) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_StorageSync) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageSync) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package servicebustopic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/servicebustopic/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/servicebustopic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/servicebus_topic azurerm_servicebus_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/servicebus_topic azurerm_servicebus_topic}.
 type ServicebusTopic interface {
 	cdktf.TerraformResource
 	AutoDeleteOnIdle() *string
@@ -24,9 +24,9 @@ type ServicebusTopic interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultMessageTtl() *string
 	SetDefaultMessageTtl(val *string)
 	DefaultMessageTtlInput() *string
@@ -209,8 +209,8 @@ func (j *jsiiProxy_ServicebusTopic) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_ServicebusTopic) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ServicebusTopic) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -620,7 +620,7 @@ func (j *jsiiProxy_ServicebusTopic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/servicebus_topic azurerm_servicebus_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/servicebus_topic azurerm_servicebus_topic} Resource.
 func NewServicebusTopic(scope constructs.Construct, id *string, config *ServicebusTopicConfig) ServicebusTopic {
 	_init_.Initialize()
 
@@ -638,7 +638,7 @@ func NewServicebusTopic(scope constructs.Construct, id *string, config *Serviceb
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/servicebus_topic azurerm_servicebus_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/servicebus_topic azurerm_servicebus_topic} Resource.
 func NewServicebusTopic_Override(s ServicebusTopic, scope constructs.Construct, id *string, config *ServicebusTopicConfig) {
 	_init_.Initialize()
 
@@ -671,7 +671,10 @@ func (j *jsiiProxy_ServicebusTopic)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServicebusTopic)SetCount(val *float64) {
+func (j *jsiiProxy_ServicebusTopic)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

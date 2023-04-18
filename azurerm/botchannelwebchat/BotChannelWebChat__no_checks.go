@@ -76,6 +76,10 @@ func (j *jsiiProxy_BotChannelWebChat) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_BotChannelWebChat) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelWebChat) validateSetIdParameters(val *string) error {
 	return nil
 }

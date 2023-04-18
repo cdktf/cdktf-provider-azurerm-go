@@ -2,14 +2,14 @@ package dataazurermapimanagementapi
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermapimanagementapi/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermapimanagementapi/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/api_management_api azurerm_api_management_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/api_management_api azurerm_api_management_api}.
 type DataAzurermApiManagementApi interface {
 	cdktf.TerraformDataSource
 	ApiManagementName() *string
@@ -20,9 +20,9 @@ type DataAzurermApiManagementApi interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_DataAzurermApiManagementApi) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermApiManagementApi) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermApiManagementApi) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -506,7 +506,7 @@ func (j *jsiiProxy_DataAzurermApiManagementApi) VersionSetId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/api_management_api azurerm_api_management_api} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/api_management_api azurerm_api_management_api} Data Source.
 func NewDataAzurermApiManagementApi(scope constructs.Construct, id *string, config *DataAzurermApiManagementApiConfig) DataAzurermApiManagementApi {
 	_init_.Initialize()
 
@@ -524,7 +524,7 @@ func NewDataAzurermApiManagementApi(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/api_management_api azurerm_api_management_api} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/api_management_api azurerm_api_management_api} Data Source.
 func NewDataAzurermApiManagementApi_Override(d DataAzurermApiManagementApi, scope constructs.Construct, id *string, config *DataAzurermApiManagementApiConfig) {
 	_init_.Initialize()
 
@@ -546,7 +546,10 @@ func (j *jsiiProxy_DataAzurermApiManagementApi)SetApiManagementName(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataAzurermApiManagementApi)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermApiManagementApi)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

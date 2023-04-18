@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataFactoryFlowletDataFlow) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryFlowletDataFlow) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryFlowletDataFlow) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_BotChannelFacebook) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_BotChannelFacebook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelFacebook) validateSetFacebookApplicationIdParameters(val *string) error {
 	return nil
 }

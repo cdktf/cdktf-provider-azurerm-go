@@ -84,6 +84,10 @@ func (j *jsiiProxy_DevTestWindowsVirtualMachine) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_DevTestWindowsVirtualMachine) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevTestWindowsVirtualMachine) validateSetDisallowPublicIpAddressParameters(val interface{}) error {
 	return nil
 }

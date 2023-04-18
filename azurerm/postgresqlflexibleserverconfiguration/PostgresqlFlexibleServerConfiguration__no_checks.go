@@ -72,6 +72,10 @@ func (j *jsiiProxy_PostgresqlFlexibleServerConfiguration) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_PostgresqlFlexibleServerConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlFlexibleServerConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

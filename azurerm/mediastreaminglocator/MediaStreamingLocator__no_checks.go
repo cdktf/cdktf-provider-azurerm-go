@@ -84,6 +84,10 @@ func (j *jsiiProxy_MediaStreamingLocator) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_MediaStreamingLocator) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaStreamingLocator) validateSetDefaultContentKeyPolicyNameParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package iottimeseriesinsightsstandardenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/iottimeseriesinsightsstandardenvironment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/iottimeseriesinsightsstandardenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/iot_time_series_insights_standard_environment azurerm_iot_time_series_insights_standard_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iot_time_series_insights_standard_environment azurerm_iot_time_series_insights_standard_environment}.
 type IotTimeSeriesInsightsStandardEnvironment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type IotTimeSeriesInsightsStandardEnvironment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataRetentionTime() *string
 	SetDataRetentionTime(val *string)
 	DataRetentionTimeInput() *string
@@ -166,8 +166,8 @@ func (j *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -497,7 +497,7 @@ func (j *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/iot_time_series_insights_standard_environment azurerm_iot_time_series_insights_standard_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iot_time_series_insights_standard_environment azurerm_iot_time_series_insights_standard_environment} Resource.
 func NewIotTimeSeriesInsightsStandardEnvironment(scope constructs.Construct, id *string, config *IotTimeSeriesInsightsStandardEnvironmentConfig) IotTimeSeriesInsightsStandardEnvironment {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewIotTimeSeriesInsightsStandardEnvironment(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/iot_time_series_insights_standard_environment azurerm_iot_time_series_insights_standard_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iot_time_series_insights_standard_environment azurerm_iot_time_series_insights_standard_environment} Resource.
 func NewIotTimeSeriesInsightsStandardEnvironment_Override(i IotTimeSeriesInsightsStandardEnvironment, scope constructs.Construct, id *string, config *IotTimeSeriesInsightsStandardEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -537,7 +537,10 @@ func (j *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment)SetConnection(val in
 	)
 }
 
-func (j *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment)SetCount(val *float64) {
+func (j *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

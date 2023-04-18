@@ -68,6 +68,10 @@ func validateDataAzurermTrafficManagerProfile_IsTerraformElementParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermTrafficManagerProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermTrafficManagerProfile) validateSetIdParameters(val *string) error {
 	return nil
 }

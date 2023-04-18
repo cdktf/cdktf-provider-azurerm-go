@@ -2,14 +2,14 @@ package mysqlfirewallrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/mysqlfirewallrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/mysqlfirewallrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_firewall_rule azurerm_mysql_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_firewall_rule azurerm_mysql_firewall_rule}.
 type MysqlFirewallRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MysqlFirewallRule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_MysqlFirewallRule) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_MysqlFirewallRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MysqlFirewallRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -425,7 +425,7 @@ func (j *jsiiProxy_MysqlFirewallRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_firewall_rule azurerm_mysql_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_firewall_rule azurerm_mysql_firewall_rule} Resource.
 func NewMysqlFirewallRule(scope constructs.Construct, id *string, config *MysqlFirewallRuleConfig) MysqlFirewallRule {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewMysqlFirewallRule(scope constructs.Construct, id *string, config *MysqlF
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_firewall_rule azurerm_mysql_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_firewall_rule azurerm_mysql_firewall_rule} Resource.
 func NewMysqlFirewallRule_Override(m MysqlFirewallRule, scope constructs.Construct, id *string, config *MysqlFirewallRuleConfig) {
 	_init_.Initialize()
 
@@ -465,7 +465,10 @@ func (j *jsiiProxy_MysqlFirewallRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MysqlFirewallRule)SetCount(val *float64) {
+func (j *jsiiProxy_MysqlFirewallRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

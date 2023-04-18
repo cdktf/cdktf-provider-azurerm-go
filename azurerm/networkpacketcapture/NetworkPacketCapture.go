@@ -2,14 +2,14 @@ package networkpacketcapture
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/networkpacketcapture/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/networkpacketcapture/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/network_packet_capture azurerm_network_packet_capture}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/network_packet_capture azurerm_network_packet_capture}.
 type NetworkPacketCapture interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type NetworkPacketCapture interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -170,8 +170,8 @@ func (j *jsiiProxy_NetworkPacketCapture) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_NetworkPacketCapture) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_NetworkPacketCapture) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -521,7 +521,7 @@ func (j *jsiiProxy_NetworkPacketCapture) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/network_packet_capture azurerm_network_packet_capture} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/network_packet_capture azurerm_network_packet_capture} Resource.
 func NewNetworkPacketCapture(scope constructs.Construct, id *string, config *NetworkPacketCaptureConfig) NetworkPacketCapture {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewNetworkPacketCapture(scope constructs.Construct, id *string, config *Net
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/network_packet_capture azurerm_network_packet_capture} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/network_packet_capture azurerm_network_packet_capture} Resource.
 func NewNetworkPacketCapture_Override(n NetworkPacketCapture, scope constructs.Construct, id *string, config *NetworkPacketCaptureConfig) {
 	_init_.Initialize()
 
@@ -561,7 +561,10 @@ func (j *jsiiProxy_NetworkPacketCapture)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkPacketCapture)SetCount(val *float64) {
+func (j *jsiiProxy_NetworkPacketCapture)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

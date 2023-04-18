@@ -88,6 +88,10 @@ func (j *jsiiProxy_ContainerAppEnvironmentStorage) validateSetContainerAppEnviro
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppEnvironmentStorage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppEnvironmentStorage) validateSetIdParameters(val *string) error {
 	return nil
 }

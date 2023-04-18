@@ -88,6 +88,10 @@ func (j *jsiiProxy_CognitiveAccount) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_CognitiveAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitiveAccount) validateSetCustomQuestionAnsweringSearchServiceIdParameters(val *string) error {
 	return nil
 }

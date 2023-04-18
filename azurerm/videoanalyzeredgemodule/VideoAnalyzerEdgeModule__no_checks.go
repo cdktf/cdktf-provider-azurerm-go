@@ -72,6 +72,10 @@ func (j *jsiiProxy_VideoAnalyzerEdgeModule) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_VideoAnalyzerEdgeModule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VideoAnalyzerEdgeModule) validateSetIdParameters(val *string) error {
 	return nil
 }

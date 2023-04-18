@@ -96,6 +96,10 @@ func (j *jsiiProxy_SentinelMetadata) validateSetContentSchemaVersionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SentinelMetadata) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelMetadata) validateSetCustomVersionParameters(val *string) error {
 	return nil
 }

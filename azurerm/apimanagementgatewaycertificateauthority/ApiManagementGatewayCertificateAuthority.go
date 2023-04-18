@@ -2,14 +2,14 @@ package apimanagementgatewaycertificateauthority
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/apimanagementgatewaycertificateauthority/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/apimanagementgatewaycertificateauthority/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority}.
 type ApiManagementGatewayCertificateAuthority interface {
 	cdktf.TerraformResource
 	ApiManagementId() *string
@@ -27,9 +27,9 @@ type ApiManagementGatewayCertificateAuthority interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -192,8 +192,8 @@ func (j *jsiiProxy_ApiManagementGatewayCertificateAuthority) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_ApiManagementGatewayCertificateAuthority) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApiManagementGatewayCertificateAuthority) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -403,7 +403,7 @@ func (j *jsiiProxy_ApiManagementGatewayCertificateAuthority) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority} Resource.
 func NewApiManagementGatewayCertificateAuthority(scope constructs.Construct, id *string, config *ApiManagementGatewayCertificateAuthorityConfig) ApiManagementGatewayCertificateAuthority {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewApiManagementGatewayCertificateAuthority(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority} Resource.
 func NewApiManagementGatewayCertificateAuthority_Override(a ApiManagementGatewayCertificateAuthority, scope constructs.Construct, id *string, config *ApiManagementGatewayCertificateAuthorityConfig) {
 	_init_.Initialize()
 
@@ -465,7 +465,10 @@ func (j *jsiiProxy_ApiManagementGatewayCertificateAuthority)SetConnection(val in
 	)
 }
 
-func (j *jsiiProxy_ApiManagementGatewayCertificateAuthority)SetCount(val *float64) {
+func (j *jsiiProxy_ApiManagementGatewayCertificateAuthority)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

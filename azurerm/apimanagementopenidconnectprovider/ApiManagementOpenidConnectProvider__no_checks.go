@@ -84,6 +84,10 @@ func (j *jsiiProxy_ApiManagementOpenidConnectProvider) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementOpenidConnectProvider) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementOpenidConnectProvider) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

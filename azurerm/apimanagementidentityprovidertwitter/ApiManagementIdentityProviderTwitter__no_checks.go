@@ -84,6 +84,10 @@ func (j *jsiiProxy_ApiManagementIdentityProviderTwitter) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementIdentityProviderTwitter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementIdentityProviderTwitter) validateSetIdParameters(val *string) error {
 	return nil
 }

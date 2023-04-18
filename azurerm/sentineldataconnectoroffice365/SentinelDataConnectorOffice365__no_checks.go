@@ -72,6 +72,10 @@ func (j *jsiiProxy_SentinelDataConnectorOffice365) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_SentinelDataConnectorOffice365) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorOffice365) validateSetExchangeEnabledParameters(val interface{}) error {
 	return nil
 }

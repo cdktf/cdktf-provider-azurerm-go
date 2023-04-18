@@ -72,6 +72,10 @@ func (j *jsiiProxy_SubnetNatGatewayAssociation) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_SubnetNatGatewayAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SubnetNatGatewayAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

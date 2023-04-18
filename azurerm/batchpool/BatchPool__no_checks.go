@@ -140,6 +140,10 @@ func (j *jsiiProxy_BatchPool) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_BatchPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchPool) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

@@ -72,7 +72,7 @@ func (j *jsiiProxy_EventgridEventSubscriptionAdvancedFilterNumberInRangeOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_EventgridEventSubscriptionAdvancedFilterNumberInRangeOutputReference) validateSetValuesParameters(val *[]*float64) error {
+func (j *jsiiProxy_EventgridEventSubscriptionAdvancedFilterNumberInRangeOutputReference) validateSetValuesParameters(val interface{}) error {
 	return nil
 }
 

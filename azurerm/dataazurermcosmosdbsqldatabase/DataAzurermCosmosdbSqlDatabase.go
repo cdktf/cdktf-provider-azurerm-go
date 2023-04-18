@@ -2,14 +2,14 @@ package dataazurermcosmosdbsqldatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermcosmosdbsqldatabase/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermcosmosdbsqldatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/cosmosdb_sql_database azurerm_cosmosdb_sql_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/cosmosdb_sql_database azurerm_cosmosdb_sql_database}.
 type DataAzurermCosmosdbSqlDatabase interface {
 	cdktf.TerraformDataSource
 	AccountName() *string
@@ -21,9 +21,9 @@ type DataAzurermCosmosdbSqlDatabase interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataAzurermCosmosdbSqlDatabase) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermCosmosdbSqlDatabase) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermCosmosdbSqlDatabase) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -373,7 +373,7 @@ func (j *jsiiProxy_DataAzurermCosmosdbSqlDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/cosmosdb_sql_database azurerm_cosmosdb_sql_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/cosmosdb_sql_database azurerm_cosmosdb_sql_database} Data Source.
 func NewDataAzurermCosmosdbSqlDatabase(scope constructs.Construct, id *string, config *DataAzurermCosmosdbSqlDatabaseConfig) DataAzurermCosmosdbSqlDatabase {
 	_init_.Initialize()
 
@@ -391,7 +391,7 @@ func NewDataAzurermCosmosdbSqlDatabase(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/cosmosdb_sql_database azurerm_cosmosdb_sql_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/cosmosdb_sql_database azurerm_cosmosdb_sql_database} Data Source.
 func NewDataAzurermCosmosdbSqlDatabase_Override(d DataAzurermCosmosdbSqlDatabase, scope constructs.Construct, id *string, config *DataAzurermCosmosdbSqlDatabaseConfig) {
 	_init_.Initialize()
 
@@ -413,7 +413,10 @@ func (j *jsiiProxy_DataAzurermCosmosdbSqlDatabase)SetAccountName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAzurermCosmosdbSqlDatabase)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermCosmosdbSqlDatabase)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

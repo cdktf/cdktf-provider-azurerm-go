@@ -2,14 +2,14 @@ package mariadbconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/mariadbconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/mariadbconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/mariadb_configuration azurerm_mariadb_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mariadb_configuration azurerm_mariadb_configuration}.
 type MariadbConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MariadbConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -151,8 +151,8 @@ func (j *jsiiProxy_MariadbConfiguration) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_MariadbConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MariadbConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,7 +402,7 @@ func (j *jsiiProxy_MariadbConfiguration) ValueInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mariadb_configuration azurerm_mariadb_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mariadb_configuration azurerm_mariadb_configuration} Resource.
 func NewMariadbConfiguration(scope constructs.Construct, id *string, config *MariadbConfigurationConfig) MariadbConfiguration {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewMariadbConfiguration(scope constructs.Construct, id *string, config *Mar
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mariadb_configuration azurerm_mariadb_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mariadb_configuration azurerm_mariadb_configuration} Resource.
 func NewMariadbConfiguration_Override(m MariadbConfiguration, scope constructs.Construct, id *string, config *MariadbConfigurationConfig) {
 	_init_.Initialize()
 
@@ -442,7 +442,10 @@ func (j *jsiiProxy_MariadbConfiguration)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MariadbConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_MariadbConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_SqlVirtualNetworkRule) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_SqlVirtualNetworkRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlVirtualNetworkRule) validateSetIdParameters(val *string) error {
 	return nil
 }

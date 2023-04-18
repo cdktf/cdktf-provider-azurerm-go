@@ -2,14 +2,14 @@ package apimanagementdiagnostic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/apimanagementdiagnostic/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/apimanagementdiagnostic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_diagnostic azurerm_api_management_diagnostic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_diagnostic azurerm_api_management_diagnostic}.
 type ApiManagementDiagnostic interface {
 	cdktf.TerraformResource
 	AlwaysLogErrors() interface{}
@@ -34,9 +34,9 @@ type ApiManagementDiagnostic interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -291,8 +291,8 @@ func (j *jsiiProxy_ApiManagementDiagnostic) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_ApiManagementDiagnostic) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApiManagementDiagnostic) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -642,7 +642,7 @@ func (j *jsiiProxy_ApiManagementDiagnostic) VerbosityInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_diagnostic azurerm_api_management_diagnostic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_diagnostic azurerm_api_management_diagnostic} Resource.
 func NewApiManagementDiagnostic(scope constructs.Construct, id *string, config *ApiManagementDiagnosticConfig) ApiManagementDiagnostic {
 	_init_.Initialize()
 
@@ -660,7 +660,7 @@ func NewApiManagementDiagnostic(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_diagnostic azurerm_api_management_diagnostic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_diagnostic azurerm_api_management_diagnostic} Resource.
 func NewApiManagementDiagnostic_Override(a ApiManagementDiagnostic, scope constructs.Construct, id *string, config *ApiManagementDiagnosticConfig) {
 	_init_.Initialize()
 
@@ -715,7 +715,10 @@ func (j *jsiiProxy_ApiManagementDiagnostic)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiManagementDiagnostic)SetCount(val *float64) {
+func (j *jsiiProxy_ApiManagementDiagnostic)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -84,6 +84,10 @@ func (j *jsiiProxy_NetworkManagerConnectivityConfiguration) validateSetConnectiv
 	return nil
 }
 
+func (j *jsiiProxy_NetworkManagerConnectivityConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkManagerConnectivityConfiguration) validateSetDeleteExistingPeeringEnabledParameters(val interface{}) error {
 	return nil
 }

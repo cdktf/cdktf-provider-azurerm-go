@@ -2,14 +2,14 @@ package hpccacheblobnfstarget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/hpccacheblobnfstarget/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/hpccacheblobnfstarget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/hpc_cache_blob_nfs_target azurerm_hpc_cache_blob_nfs_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/hpc_cache_blob_nfs_target azurerm_hpc_cache_blob_nfs_target}.
 type HpcCacheBlobNfsTarget interface {
 	cdktf.TerraformResource
 	AccessPolicyName() *string
@@ -27,9 +27,9 @@ type HpcCacheBlobNfsTarget interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -201,8 +201,8 @@ func (j *jsiiProxy_HpcCacheBlobNfsTarget) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_HpcCacheBlobNfsTarget) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_HpcCacheBlobNfsTarget) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -472,7 +472,7 @@ func (j *jsiiProxy_HpcCacheBlobNfsTarget) UsageModelInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/hpc_cache_blob_nfs_target azurerm_hpc_cache_blob_nfs_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/hpc_cache_blob_nfs_target azurerm_hpc_cache_blob_nfs_target} Resource.
 func NewHpcCacheBlobNfsTarget(scope constructs.Construct, id *string, config *HpcCacheBlobNfsTargetConfig) HpcCacheBlobNfsTarget {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewHpcCacheBlobNfsTarget(scope constructs.Construct, id *string, config *Hp
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/hpc_cache_blob_nfs_target azurerm_hpc_cache_blob_nfs_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/hpc_cache_blob_nfs_target azurerm_hpc_cache_blob_nfs_target} Resource.
 func NewHpcCacheBlobNfsTarget_Override(h HpcCacheBlobNfsTarget, scope constructs.Construct, id *string, config *HpcCacheBlobNfsTargetConfig) {
 	_init_.Initialize()
 
@@ -534,7 +534,10 @@ func (j *jsiiProxy_HpcCacheBlobNfsTarget)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HpcCacheBlobNfsTarget)SetCount(val *float64) {
+func (j *jsiiProxy_HpcCacheBlobNfsTarget)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

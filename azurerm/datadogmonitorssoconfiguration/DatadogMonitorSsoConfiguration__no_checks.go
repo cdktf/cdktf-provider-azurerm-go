@@ -72,6 +72,10 @@ func (j *jsiiProxy_DatadogMonitorSsoConfiguration) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_DatadogMonitorSsoConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatadogMonitorSsoConfiguration) validateSetDatadogMonitorIdParameters(val *string) error {
 	return nil
 }

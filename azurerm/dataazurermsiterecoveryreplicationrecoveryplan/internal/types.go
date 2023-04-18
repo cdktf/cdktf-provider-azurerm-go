@@ -5,3 +5,4 @@ import (
 type Type__cdktfTerraformDataSource = cdktf.TerraformDataSource
 type Type__cdktfComplexList = cdktf.ComplexList
 type Type__cdktfComplexObject = cdktf.ComplexObject
+type Type__cdktfMapList = cdktf.MapList

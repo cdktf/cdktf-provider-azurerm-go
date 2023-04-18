@@ -76,6 +76,10 @@ func (j *jsiiProxy_LogicAppIntegrationAccountSchema) validateSetContentParameter
 	return nil
 }
 
+func (j *jsiiProxy_LogicAppIntegrationAccountSchema) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppIntegrationAccountSchema) validateSetFileNameParameters(val *string) error {
 	return nil
 }

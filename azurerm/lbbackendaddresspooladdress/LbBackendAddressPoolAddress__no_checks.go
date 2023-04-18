@@ -80,6 +80,10 @@ func (j *jsiiProxy_LbBackendAddressPoolAddress) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_LbBackendAddressPoolAddress) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbBackendAddressPoolAddress) validateSetIdParameters(val *string) error {
 	return nil
 }

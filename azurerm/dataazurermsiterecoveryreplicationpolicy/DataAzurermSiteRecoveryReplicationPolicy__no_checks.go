@@ -68,6 +68,10 @@ func validateDataAzurermSiteRecoveryReplicationPolicy_IsTerraformElementParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermSiteRecoveryReplicationPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermSiteRecoveryReplicationPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

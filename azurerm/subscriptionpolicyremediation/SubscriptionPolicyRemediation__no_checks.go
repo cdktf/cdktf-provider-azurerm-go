@@ -72,6 +72,10 @@ func (j *jsiiProxy_SubscriptionPolicyRemediation) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_SubscriptionPolicyRemediation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SubscriptionPolicyRemediation) validateSetFailurePercentageParameters(val *float64) error {
 	return nil
 }

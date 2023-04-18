@@ -80,6 +80,10 @@ func (j *jsiiProxy_OrbitalContactProfile) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_OrbitalContactProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrbitalContactProfile) validateSetEventHubUriParameters(val *string) error {
 	return nil
 }

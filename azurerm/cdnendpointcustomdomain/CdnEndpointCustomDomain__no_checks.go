@@ -84,6 +84,10 @@ func (j *jsiiProxy_CdnEndpointCustomDomain) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_CdnEndpointCustomDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnEndpointCustomDomain) validateSetHostNameParameters(val *string) error {
 	return nil
 }

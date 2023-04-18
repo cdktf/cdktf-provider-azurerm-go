@@ -2,14 +2,14 @@ package activedirectorydomainservicereplicaset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/activedirectorydomainservicereplicaset/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/activedirectorydomainservicereplicaset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/active_directory_domain_service_replica_set azurerm_active_directory_domain_service_replica_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/active_directory_domain_service_replica_set azurerm_active_directory_domain_service_replica_set}.
 type ActiveDirectoryDomainServiceReplicaSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ActiveDirectoryDomainServiceReplicaSet interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -151,8 +151,8 @@ func (j *jsiiProxy_ActiveDirectoryDomainServiceReplicaSet) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_ActiveDirectoryDomainServiceReplicaSet) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ActiveDirectoryDomainServiceReplicaSet) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -412,7 +412,7 @@ func (j *jsiiProxy_ActiveDirectoryDomainServiceReplicaSet) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/active_directory_domain_service_replica_set azurerm_active_directory_domain_service_replica_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/active_directory_domain_service_replica_set azurerm_active_directory_domain_service_replica_set} Resource.
 func NewActiveDirectoryDomainServiceReplicaSet(scope constructs.Construct, id *string, config *ActiveDirectoryDomainServiceReplicaSetConfig) ActiveDirectoryDomainServiceReplicaSet {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewActiveDirectoryDomainServiceReplicaSet(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/active_directory_domain_service_replica_set azurerm_active_directory_domain_service_replica_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/active_directory_domain_service_replica_set azurerm_active_directory_domain_service_replica_set} Resource.
 func NewActiveDirectoryDomainServiceReplicaSet_Override(a ActiveDirectoryDomainServiceReplicaSet, scope constructs.Construct, id *string, config *ActiveDirectoryDomainServiceReplicaSetConfig) {
 	_init_.Initialize()
 
@@ -452,7 +452,10 @@ func (j *jsiiProxy_ActiveDirectoryDomainServiceReplicaSet)SetConnection(val inte
 	)
 }
 
-func (j *jsiiProxy_ActiveDirectoryDomainServiceReplicaSet)SetCount(val *float64) {
+func (j *jsiiProxy_ActiveDirectoryDomainServiceReplicaSet)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

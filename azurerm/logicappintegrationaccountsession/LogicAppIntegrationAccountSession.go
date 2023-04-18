@@ -2,14 +2,14 @@ package logicappintegrationaccountsession
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/logicappintegrationaccountsession/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/logicappintegrationaccountsession/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/logic_app_integration_account_session azurerm_logic_app_integration_account_session}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logic_app_integration_account_session azurerm_logic_app_integration_account_session}.
 type LogicAppIntegrationAccountSession interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type LogicAppIntegrationAccountSession interface {
 	SetContent(val *string)
 	ContentInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -171,8 +171,8 @@ func (j *jsiiProxy_LogicAppIntegrationAccountSession) ContentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LogicAppIntegrationAccountSession) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LogicAppIntegrationAccountSession) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,7 +402,7 @@ func (j *jsiiProxy_LogicAppIntegrationAccountSession) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/logic_app_integration_account_session azurerm_logic_app_integration_account_session} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logic_app_integration_account_session azurerm_logic_app_integration_account_session} Resource.
 func NewLogicAppIntegrationAccountSession(scope constructs.Construct, id *string, config *LogicAppIntegrationAccountSessionConfig) LogicAppIntegrationAccountSession {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewLogicAppIntegrationAccountSession(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/logic_app_integration_account_session azurerm_logic_app_integration_account_session} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logic_app_integration_account_session azurerm_logic_app_integration_account_session} Resource.
 func NewLogicAppIntegrationAccountSession_Override(l LogicAppIntegrationAccountSession, scope constructs.Construct, id *string, config *LogicAppIntegrationAccountSessionConfig) {
 	_init_.Initialize()
 
@@ -453,7 +453,10 @@ func (j *jsiiProxy_LogicAppIntegrationAccountSession)SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogicAppIntegrationAccountSession)SetCount(val *float64) {
+func (j *jsiiProxy_LogicAppIntegrationAccountSession)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

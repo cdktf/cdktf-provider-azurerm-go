@@ -84,6 +84,10 @@ func (j *jsiiProxy_DevTestLinuxVirtualMachine) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DevTestLinuxVirtualMachine) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevTestLinuxVirtualMachine) validateSetDisallowPublicIpAddressParameters(val interface{}) error {
 	return nil
 }

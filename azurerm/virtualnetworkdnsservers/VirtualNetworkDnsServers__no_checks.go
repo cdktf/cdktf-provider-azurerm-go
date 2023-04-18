@@ -72,6 +72,10 @@ func (j *jsiiProxy_VirtualNetworkDnsServers) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_VirtualNetworkDnsServers) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetworkDnsServers) validateSetDnsServersParameters(val *[]*string) error {
 	return nil
 }

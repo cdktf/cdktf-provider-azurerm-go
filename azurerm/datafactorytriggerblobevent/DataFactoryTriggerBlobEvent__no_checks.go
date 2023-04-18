@@ -96,6 +96,10 @@ func (j *jsiiProxy_DataFactoryTriggerBlobEvent) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryTriggerBlobEvent) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryTriggerBlobEvent) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

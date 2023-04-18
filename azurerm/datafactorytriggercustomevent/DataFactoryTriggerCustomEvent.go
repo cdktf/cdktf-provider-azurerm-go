@@ -2,14 +2,14 @@ package datafactorytriggercustomevent
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/datafactorytriggercustomevent/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/datafactorytriggercustomevent/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_trigger_custom_event azurerm_data_factory_trigger_custom_event}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_trigger_custom_event azurerm_data_factory_trigger_custom_event}.
 type DataFactoryTriggerCustomEvent interface {
 	cdktf.TerraformResource
 	Activated() interface{}
@@ -30,9 +30,9 @@ type DataFactoryTriggerCustomEvent interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataFactoryId() *string
 	SetDataFactoryId(val *string)
 	DataFactoryIdInput() *string
@@ -238,8 +238,8 @@ func (j *jsiiProxy_DataFactoryTriggerCustomEvent) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataFactoryTriggerCustomEvent) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataFactoryTriggerCustomEvent) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -569,7 +569,7 @@ func (j *jsiiProxy_DataFactoryTriggerCustomEvent) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_trigger_custom_event azurerm_data_factory_trigger_custom_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_trigger_custom_event azurerm_data_factory_trigger_custom_event} Resource.
 func NewDataFactoryTriggerCustomEvent(scope constructs.Construct, id *string, config *DataFactoryTriggerCustomEventConfig) DataFactoryTriggerCustomEvent {
 	_init_.Initialize()
 
@@ -587,7 +587,7 @@ func NewDataFactoryTriggerCustomEvent(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_trigger_custom_event azurerm_data_factory_trigger_custom_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_trigger_custom_event azurerm_data_factory_trigger_custom_event} Resource.
 func NewDataFactoryTriggerCustomEvent_Override(d DataFactoryTriggerCustomEvent, scope constructs.Construct, id *string, config *DataFactoryTriggerCustomEventConfig) {
 	_init_.Initialize()
 
@@ -642,7 +642,10 @@ func (j *jsiiProxy_DataFactoryTriggerCustomEvent)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_DataFactoryTriggerCustomEvent)SetCount(val *float64) {
+func (j *jsiiProxy_DataFactoryTriggerCustomEvent)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

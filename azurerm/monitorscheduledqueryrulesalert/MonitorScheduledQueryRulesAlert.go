@@ -2,14 +2,14 @@ package monitorscheduledqueryrulesalert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/monitorscheduledqueryrulesalert/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/monitorscheduledqueryrulesalert/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_scheduled_query_rules_alert azurerm_monitor_scheduled_query_rules_alert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_scheduled_query_rules_alert azurerm_monitor_scheduled_query_rules_alert}.
 type MonitorScheduledQueryRulesAlert interface {
 	cdktf.TerraformResource
 	Action() MonitorScheduledQueryRulesAlertActionOutputReference
@@ -29,9 +29,9 @@ type MonitorScheduledQueryRulesAlert interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataSourceId() *string
 	SetDataSourceId(val *string)
 	DataSourceIdInput() *string
@@ -258,8 +258,8 @@ func (j *jsiiProxy_MonitorScheduledQueryRulesAlert) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_MonitorScheduledQueryRulesAlert) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MonitorScheduledQueryRulesAlert) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -709,7 +709,7 @@ func (j *jsiiProxy_MonitorScheduledQueryRulesAlert) TriggerInput() *MonitorSched
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_scheduled_query_rules_alert azurerm_monitor_scheduled_query_rules_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_scheduled_query_rules_alert azurerm_monitor_scheduled_query_rules_alert} Resource.
 func NewMonitorScheduledQueryRulesAlert(scope constructs.Construct, id *string, config *MonitorScheduledQueryRulesAlertConfig) MonitorScheduledQueryRulesAlert {
 	_init_.Initialize()
 
@@ -727,7 +727,7 @@ func NewMonitorScheduledQueryRulesAlert(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_scheduled_query_rules_alert azurerm_monitor_scheduled_query_rules_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_scheduled_query_rules_alert azurerm_monitor_scheduled_query_rules_alert} Resource.
 func NewMonitorScheduledQueryRulesAlert_Override(m MonitorScheduledQueryRulesAlert, scope constructs.Construct, id *string, config *MonitorScheduledQueryRulesAlertConfig) {
 	_init_.Initialize()
 
@@ -771,7 +771,10 @@ func (j *jsiiProxy_MonitorScheduledQueryRulesAlert)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_MonitorScheduledQueryRulesAlert)SetCount(val *float64) {
+func (j *jsiiProxy_MonitorScheduledQueryRulesAlert)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

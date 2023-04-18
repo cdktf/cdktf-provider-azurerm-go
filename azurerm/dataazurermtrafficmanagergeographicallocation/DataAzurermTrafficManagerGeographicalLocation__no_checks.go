@@ -68,6 +68,10 @@ func validateDataAzurermTrafficManagerGeographicalLocation_IsTerraformElementPar
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermTrafficManagerGeographicalLocation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermTrafficManagerGeographicalLocation) validateSetIdParameters(val *string) error {
 	return nil
 }

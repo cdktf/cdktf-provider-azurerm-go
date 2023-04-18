@@ -84,6 +84,10 @@ func (j *jsiiProxy_KeyVault) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_KeyVault) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyVault) validateSetEnabledForDeploymentParameters(val interface{}) error {
 	return nil
 }

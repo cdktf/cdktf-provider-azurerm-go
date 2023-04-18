@@ -76,6 +76,10 @@ func (j *jsiiProxy_ServicebusNamespaceDisasterRecoveryConfig) validateSetConnect
 	return nil
 }
 
+func (j *jsiiProxy_ServicebusNamespaceDisasterRecoveryConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicebusNamespaceDisasterRecoveryConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

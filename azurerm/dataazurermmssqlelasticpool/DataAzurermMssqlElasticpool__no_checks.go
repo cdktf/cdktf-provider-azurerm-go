@@ -68,6 +68,10 @@ func validateDataAzurermMssqlElasticpool_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermMssqlElasticpool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMssqlElasticpool) validateSetIdParameters(val *string) error {
 	return nil
 }

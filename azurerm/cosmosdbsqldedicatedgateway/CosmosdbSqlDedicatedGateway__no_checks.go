@@ -76,6 +76,10 @@ func (j *jsiiProxy_CosmosdbSqlDedicatedGateway) validateSetCosmosdbAccountIdPara
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbSqlDedicatedGateway) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbSqlDedicatedGateway) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package siterecoveryreplicatedvm
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/siterecoveryreplicatedvm/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/siterecoveryreplicatedvm/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/site_recovery_replicated_vm azurerm_site_recovery_replicated_vm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/site_recovery_replicated_vm azurerm_site_recovery_replicated_vm}.
 type SiteRecoveryReplicatedVm interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SiteRecoveryReplicatedVm interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -221,8 +221,8 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVm) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_SiteRecoveryReplicatedVm) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SiteRecoveryReplicatedVm) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -852,7 +852,7 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVm) UnmanagedDiskInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/site_recovery_replicated_vm azurerm_site_recovery_replicated_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/site_recovery_replicated_vm azurerm_site_recovery_replicated_vm} Resource.
 func NewSiteRecoveryReplicatedVm(scope constructs.Construct, id *string, config *SiteRecoveryReplicatedVmConfig) SiteRecoveryReplicatedVm {
 	_init_.Initialize()
 
@@ -870,7 +870,7 @@ func NewSiteRecoveryReplicatedVm(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/site_recovery_replicated_vm azurerm_site_recovery_replicated_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/site_recovery_replicated_vm azurerm_site_recovery_replicated_vm} Resource.
 func NewSiteRecoveryReplicatedVm_Override(s SiteRecoveryReplicatedVm, scope constructs.Construct, id *string, config *SiteRecoveryReplicatedVmConfig) {
 	_init_.Initialize()
 
@@ -892,7 +892,10 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVm)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SiteRecoveryReplicatedVm)SetCount(val *float64) {
+func (j *jsiiProxy_SiteRecoveryReplicatedVm)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

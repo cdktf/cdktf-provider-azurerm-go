@@ -80,6 +80,10 @@ func (j *jsiiProxy_SignalrServiceNetworkAcl) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_SignalrServiceNetworkAcl) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SignalrServiceNetworkAcl) validateSetDefaultActionParameters(val *string) error {
 	return nil
 }

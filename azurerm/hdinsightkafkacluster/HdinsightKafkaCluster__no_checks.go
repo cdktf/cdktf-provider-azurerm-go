@@ -128,6 +128,10 @@ func (j *jsiiProxy_HdinsightKafkaCluster) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_HdinsightKafkaCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HdinsightKafkaCluster) validateSetEncryptionInTransitEnabledParameters(val interface{}) error {
 	return nil
 }

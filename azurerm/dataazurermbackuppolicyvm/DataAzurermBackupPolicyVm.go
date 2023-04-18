@@ -2,14 +2,14 @@ package dataazurermbackuppolicyvm
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermbackuppolicyvm/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermbackuppolicyvm/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/backup_policy_vm azurerm_backup_policy_vm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/backup_policy_vm azurerm_backup_policy_vm}.
 type DataAzurermBackupPolicyVm interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermBackupPolicyVm interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataAzurermBackupPolicyVm) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermBackupPolicyVm) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermBackupPolicyVm) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataAzurermBackupPolicyVm) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/backup_policy_vm azurerm_backup_policy_vm} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/backup_policy_vm azurerm_backup_policy_vm} Data Source.
 func NewDataAzurermBackupPolicyVm(scope constructs.Construct, id *string, config *DataAzurermBackupPolicyVmConfig) DataAzurermBackupPolicyVm {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataAzurermBackupPolicyVm(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/backup_policy_vm azurerm_backup_policy_vm} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/backup_policy_vm azurerm_backup_policy_vm} Data Source.
 func NewDataAzurermBackupPolicyVm_Override(d DataAzurermBackupPolicyVm, scope constructs.Construct, id *string, config *DataAzurermBackupPolicyVmConfig) {
 	_init_.Initialize()
 
@@ -380,7 +380,10 @@ func NewDataAzurermBackupPolicyVm_Override(d DataAzurermBackupPolicyVm, scope co
 	)
 }
 
-func (j *jsiiProxy_DataAzurermBackupPolicyVm)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermBackupPolicyVm)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

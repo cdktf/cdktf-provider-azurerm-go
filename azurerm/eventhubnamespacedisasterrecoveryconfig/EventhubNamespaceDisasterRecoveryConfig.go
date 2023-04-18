@@ -2,14 +2,14 @@ package eventhubnamespacedisasterrecoveryconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/eventhubnamespacedisasterrecoveryconfig/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/eventhubnamespacedisasterrecoveryconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config}.
 type EventhubNamespaceDisasterRecoveryConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type EventhubNamespaceDisasterRecoveryConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -151,8 +151,8 @@ func (j *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,7 +402,7 @@ func (j *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config} Resource.
 func NewEventhubNamespaceDisasterRecoveryConfig(scope constructs.Construct, id *string, config *EventhubNamespaceDisasterRecoveryConfigConfig) EventhubNamespaceDisasterRecoveryConfig {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewEventhubNamespaceDisasterRecoveryConfig(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config} Resource.
 func NewEventhubNamespaceDisasterRecoveryConfig_Override(e EventhubNamespaceDisasterRecoveryConfig, scope constructs.Construct, id *string, config *EventhubNamespaceDisasterRecoveryConfigConfig) {
 	_init_.Initialize()
 
@@ -442,7 +442,10 @@ func (j *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig)SetCount(val *float64) {
+func (j *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

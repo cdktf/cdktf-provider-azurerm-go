@@ -80,6 +80,10 @@ func (j *jsiiProxy_LogicAppActionHttp) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_LogicAppActionHttp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppActionHttp) validateSetHeadersParameters(val *map[string]*string) error {
 	return nil
 }

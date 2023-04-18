@@ -76,6 +76,10 @@ func (j *jsiiProxy_OrbitalContact) validateSetContactProfileIdParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_OrbitalContact) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrbitalContact) validateSetGroundStationNameParameters(val *string) error {
 	return nil
 }

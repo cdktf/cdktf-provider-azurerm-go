@@ -2,14 +2,14 @@ package iottimeseriesinsightseventsourceiothub
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/iottimeseriesinsightseventsourceiothub/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/iottimeseriesinsightseventsourceiothub/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/iot_time_series_insights_event_source_iothub azurerm_iot_time_series_insights_event_source_iothub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iot_time_series_insights_event_source_iothub azurerm_iot_time_series_insights_event_source_iothub}.
 type IotTimeSeriesInsightsEventSourceIothub interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type IotTimeSeriesInsightsEventSourceIothub interface {
 	SetConsumerGroupName(val *string)
 	ConsumerGroupNameInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -191,8 +191,8 @@ func (j *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub) ConsumerGroupNameInpu
 	return returns
 }
 
-func (j *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -542,7 +542,7 @@ func (j *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub) TimestampPropertyName
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/iot_time_series_insights_event_source_iothub azurerm_iot_time_series_insights_event_source_iothub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iot_time_series_insights_event_source_iothub azurerm_iot_time_series_insights_event_source_iothub} Resource.
 func NewIotTimeSeriesInsightsEventSourceIothub(scope constructs.Construct, id *string, config *IotTimeSeriesInsightsEventSourceIothubConfig) IotTimeSeriesInsightsEventSourceIothub {
 	_init_.Initialize()
 
@@ -560,7 +560,7 @@ func NewIotTimeSeriesInsightsEventSourceIothub(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/iot_time_series_insights_event_source_iothub azurerm_iot_time_series_insights_event_source_iothub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iot_time_series_insights_event_source_iothub azurerm_iot_time_series_insights_event_source_iothub} Resource.
 func NewIotTimeSeriesInsightsEventSourceIothub_Override(i IotTimeSeriesInsightsEventSourceIothub, scope constructs.Construct, id *string, config *IotTimeSeriesInsightsEventSourceIothubConfig) {
 	_init_.Initialize()
 
@@ -593,7 +593,10 @@ func (j *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub)SetConsumerGroupName(v
 	)
 }
 
-func (j *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub)SetCount(val *float64) {
+func (j *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

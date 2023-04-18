@@ -72,6 +72,10 @@ func (j *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateSetEventhubNamespaceIdParameters(val *string) error {
 	return nil
 }

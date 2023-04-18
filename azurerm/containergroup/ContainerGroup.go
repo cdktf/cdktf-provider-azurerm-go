@@ -2,14 +2,14 @@ package containergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/containergroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/containergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/container_group azurerm_container_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/container_group azurerm_container_group}.
 type ContainerGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type ContainerGroup interface {
 	Container() ContainerGroupContainerList
 	ContainerInput() interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -236,8 +236,8 @@ func (j *jsiiProxy_ContainerGroup) ContainerInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ContainerGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -807,7 +807,7 @@ func (j *jsiiProxy_ContainerGroup) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/container_group azurerm_container_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/container_group azurerm_container_group} Resource.
 func NewContainerGroup(scope constructs.Construct, id *string, config *ContainerGroupConfig) ContainerGroup {
 	_init_.Initialize()
 
@@ -825,7 +825,7 @@ func NewContainerGroup(scope constructs.Construct, id *string, config *Container
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/container_group azurerm_container_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/container_group azurerm_container_group} Resource.
 func NewContainerGroup_Override(c ContainerGroup, scope constructs.Construct, id *string, config *ContainerGroupConfig) {
 	_init_.Initialize()
 
@@ -847,7 +847,10 @@ func (j *jsiiProxy_ContainerGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerGroup)SetCount(val *float64) {
+func (j *jsiiProxy_ContainerGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

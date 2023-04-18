@@ -76,6 +76,10 @@ func (j *jsiiProxy_ServicebusTopic) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_ServicebusTopic) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicebusTopic) validateSetDefaultMessageTtlParameters(val *string) error {
 	return nil
 }

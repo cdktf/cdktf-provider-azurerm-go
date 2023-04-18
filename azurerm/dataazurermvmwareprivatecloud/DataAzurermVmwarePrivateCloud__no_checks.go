@@ -68,6 +68,10 @@ func validateDataAzurermVmwarePrivateCloud_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermVmwarePrivateCloud) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermVmwarePrivateCloud) validateSetIdParameters(val *string) error {
 	return nil
 }

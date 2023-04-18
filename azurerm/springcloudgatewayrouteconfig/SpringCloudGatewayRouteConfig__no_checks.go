@@ -80,6 +80,10 @@ func (j *jsiiProxy_SpringCloudGatewayRouteConfig) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudGatewayRouteConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudGatewayRouteConfig) validateSetFiltersParameters(val *[]*string) error {
 	return nil
 }

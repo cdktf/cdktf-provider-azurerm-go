@@ -68,6 +68,10 @@ func validateDataAzurermHybridComputeMachine_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermHybridComputeMachine) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermHybridComputeMachine) validateSetIdParameters(val *string) error {
 	return nil
 }

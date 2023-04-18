@@ -68,6 +68,10 @@ func validateDataAzurermServicebusTopicAuthorizationRule_IsTerraformElementParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermServicebusTopicAuthorizationRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermServicebusTopicAuthorizationRule) validateSetIdParameters(val *string) error {
 	return nil
 }

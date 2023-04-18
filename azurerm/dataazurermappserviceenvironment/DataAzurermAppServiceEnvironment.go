@@ -2,14 +2,14 @@ package dataazurermappserviceenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermappserviceenvironment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermappserviceenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/app_service_environment azurerm_app_service_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/app_service_environment azurerm_app_service_environment}.
 type DataAzurermAppServiceEnvironment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -18,9 +18,9 @@ type DataAzurermAppServiceEnvironment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DataAzurermAppServiceEnvironment) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermAppServiceEnvironment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermAppServiceEnvironment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -416,7 +416,7 @@ func (j *jsiiProxy_DataAzurermAppServiceEnvironment) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/app_service_environment azurerm_app_service_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/app_service_environment azurerm_app_service_environment} Data Source.
 func NewDataAzurermAppServiceEnvironment(scope constructs.Construct, id *string, config *DataAzurermAppServiceEnvironmentConfig) DataAzurermAppServiceEnvironment {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewDataAzurermAppServiceEnvironment(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/app_service_environment azurerm_app_service_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/app_service_environment azurerm_app_service_environment} Data Source.
 func NewDataAzurermAppServiceEnvironment_Override(d DataAzurermAppServiceEnvironment, scope constructs.Construct, id *string, config *DataAzurermAppServiceEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -445,7 +445,10 @@ func NewDataAzurermAppServiceEnvironment_Override(d DataAzurermAppServiceEnviron
 	)
 }
 
-func (j *jsiiProxy_DataAzurermAppServiceEnvironment)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermAppServiceEnvironment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

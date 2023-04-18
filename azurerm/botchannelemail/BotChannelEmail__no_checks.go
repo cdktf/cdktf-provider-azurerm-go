@@ -76,6 +76,10 @@ func (j *jsiiProxy_BotChannelEmail) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_BotChannelEmail) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelEmail) validateSetEmailAddressParameters(val *string) error {
 	return nil
 }

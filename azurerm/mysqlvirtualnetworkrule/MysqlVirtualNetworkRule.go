@@ -2,14 +2,14 @@ package mysqlvirtualnetworkrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/mysqlvirtualnetworkrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/mysqlvirtualnetworkrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_virtual_network_rule azurerm_mysql_virtual_network_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_virtual_network_rule azurerm_mysql_virtual_network_rule}.
 type MysqlVirtualNetworkRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MysqlVirtualNetworkRule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -151,8 +151,8 @@ func (j *jsiiProxy_MysqlVirtualNetworkRule) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_MysqlVirtualNetworkRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MysqlVirtualNetworkRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,7 +402,7 @@ func (j *jsiiProxy_MysqlVirtualNetworkRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_virtual_network_rule azurerm_mysql_virtual_network_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_virtual_network_rule azurerm_mysql_virtual_network_rule} Resource.
 func NewMysqlVirtualNetworkRule(scope constructs.Construct, id *string, config *MysqlVirtualNetworkRuleConfig) MysqlVirtualNetworkRule {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewMysqlVirtualNetworkRule(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_virtual_network_rule azurerm_mysql_virtual_network_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_virtual_network_rule azurerm_mysql_virtual_network_rule} Resource.
 func NewMysqlVirtualNetworkRule_Override(m MysqlVirtualNetworkRule, scope constructs.Construct, id *string, config *MysqlVirtualNetworkRuleConfig) {
 	_init_.Initialize()
 
@@ -442,7 +442,10 @@ func (j *jsiiProxy_MysqlVirtualNetworkRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MysqlVirtualNetworkRule)SetCount(val *float64) {
+func (j *jsiiProxy_MysqlVirtualNetworkRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

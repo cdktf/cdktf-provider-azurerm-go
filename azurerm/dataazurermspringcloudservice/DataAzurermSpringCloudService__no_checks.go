@@ -68,6 +68,10 @@ func validateDataAzurermSpringCloudService_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermSpringCloudService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermSpringCloudService) validateSetIdParameters(val *string) error {
 	return nil
 }

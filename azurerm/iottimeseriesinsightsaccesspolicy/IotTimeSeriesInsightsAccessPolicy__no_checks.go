@@ -72,6 +72,10 @@ func (j *jsiiProxy_IotTimeSeriesInsightsAccessPolicy) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_IotTimeSeriesInsightsAccessPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotTimeSeriesInsightsAccessPolicy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

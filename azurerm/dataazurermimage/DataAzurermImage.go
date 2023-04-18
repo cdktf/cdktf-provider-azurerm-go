@@ -2,14 +2,14 @@ package dataazurermimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermimage/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/image azurerm_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/image azurerm_image}.
 type DataAzurermImage interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermImage interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataDisk() DataAzurermImageDataDiskList
 	// Experimental.
 	DependsOn() *[]*string
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataAzurermImage) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermImage) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermImage) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -432,7 +432,7 @@ func (j *jsiiProxy_DataAzurermImage) ZoneResilient() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/image azurerm_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/image azurerm_image} Data Source.
 func NewDataAzurermImage(scope constructs.Construct, id *string, config *DataAzurermImageConfig) DataAzurermImage {
 	_init_.Initialize()
 
@@ -450,7 +450,7 @@ func NewDataAzurermImage(scope constructs.Construct, id *string, config *DataAzu
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/image azurerm_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/image azurerm_image} Data Source.
 func NewDataAzurermImage_Override(d DataAzurermImage, scope constructs.Construct, id *string, config *DataAzurermImageConfig) {
 	_init_.Initialize()
 
@@ -461,7 +461,10 @@ func NewDataAzurermImage_Override(d DataAzurermImage, scope constructs.Construct
 	)
 }
 
-func (j *jsiiProxy_DataAzurermImage)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermImage)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

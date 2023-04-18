@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataFactoryLinkedCustomService) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryLinkedCustomService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedCustomService) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

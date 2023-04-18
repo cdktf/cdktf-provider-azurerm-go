@@ -72,6 +72,10 @@ func (j *jsiiProxy_PortalTenantConfiguration) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_PortalTenantConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PortalTenantConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

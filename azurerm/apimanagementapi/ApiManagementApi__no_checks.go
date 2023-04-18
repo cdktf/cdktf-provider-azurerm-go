@@ -104,6 +104,10 @@ func (j *jsiiProxy_ApiManagementApi) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementApi) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementApi) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

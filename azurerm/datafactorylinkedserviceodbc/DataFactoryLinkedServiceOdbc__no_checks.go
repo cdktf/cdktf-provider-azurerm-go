@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceOdbc) validateSetConnectionStringPara
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryLinkedServiceOdbc) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceOdbc) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

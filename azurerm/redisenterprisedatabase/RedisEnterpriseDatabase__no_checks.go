@@ -88,6 +88,10 @@ func (j *jsiiProxy_RedisEnterpriseDatabase) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_RedisEnterpriseDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisEnterpriseDatabase) validateSetEvictionPolicyParameters(val *string) error {
 	return nil
 }

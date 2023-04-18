@@ -72,6 +72,10 @@ func (j *jsiiProxy_SpringCloudApplicationLiveView) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudApplicationLiveView) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudApplicationLiveView) validateSetIdParameters(val *string) error {
 	return nil
 }

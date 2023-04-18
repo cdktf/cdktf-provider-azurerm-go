@@ -84,6 +84,10 @@ func (j *jsiiProxy_VpnGatewayConnection) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_VpnGatewayConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnGatewayConnection) validateSetIdParameters(val *string) error {
 	return nil
 }

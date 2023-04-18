@@ -2,14 +2,14 @@ package dataazurermspatialanchorsaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermspatialanchorsaccount/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermspatialanchorsaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/spatial_anchors_account azurerm_spatial_anchors_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/spatial_anchors_account azurerm_spatial_anchors_account}.
 type DataAzurermSpatialAnchorsAccount interface {
 	cdktf.TerraformDataSource
 	AccountDomain() *string
@@ -19,9 +19,9 @@ type DataAzurermSpatialAnchorsAccount interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataAzurermSpatialAnchorsAccount) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermSpatialAnchorsAccount) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermSpatialAnchorsAccount) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -372,7 +372,7 @@ func (j *jsiiProxy_DataAzurermSpatialAnchorsAccount) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/spatial_anchors_account azurerm_spatial_anchors_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/spatial_anchors_account azurerm_spatial_anchors_account} Data Source.
 func NewDataAzurermSpatialAnchorsAccount(scope constructs.Construct, id *string, config *DataAzurermSpatialAnchorsAccountConfig) DataAzurermSpatialAnchorsAccount {
 	_init_.Initialize()
 
@@ -390,7 +390,7 @@ func NewDataAzurermSpatialAnchorsAccount(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/spatial_anchors_account azurerm_spatial_anchors_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/spatial_anchors_account azurerm_spatial_anchors_account} Data Source.
 func NewDataAzurermSpatialAnchorsAccount_Override(d DataAzurermSpatialAnchorsAccount, scope constructs.Construct, id *string, config *DataAzurermSpatialAnchorsAccountConfig) {
 	_init_.Initialize()
 
@@ -401,7 +401,10 @@ func NewDataAzurermSpatialAnchorsAccount_Override(d DataAzurermSpatialAnchorsAcc
 	)
 }
 
-func (j *jsiiProxy_DataAzurermSpatialAnchorsAccount)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermSpatialAnchorsAccount)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

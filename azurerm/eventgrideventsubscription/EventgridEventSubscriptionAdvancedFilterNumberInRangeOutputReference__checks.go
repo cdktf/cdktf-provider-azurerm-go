@@ -211,9 +211,21 @@ func (j *jsiiProxy_EventgridEventSubscriptionAdvancedFilterNumberInRangeOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_EventgridEventSubscriptionAdvancedFilterNumberInRangeOutputReference) validateSetValuesParameters(val *[]*float64) error {
+func (j *jsiiProxy_EventgridEventSubscriptionAdvancedFilterNumberInRangeOutputReference) validateSetValuesParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*[]*float64:
+		// ok
+	case []*[]*float64:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*[]*float64; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

@@ -76,6 +76,10 @@ func (j *jsiiProxy_KustoClusterPrincipalAssignment) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_KustoClusterPrincipalAssignment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoClusterPrincipalAssignment) validateSetIdParameters(val *string) error {
 	return nil
 }

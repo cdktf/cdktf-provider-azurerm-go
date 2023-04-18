@@ -72,6 +72,10 @@ func (j *jsiiProxy_DatabricksWorkspaceCustomerManagedKey) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_DatabricksWorkspaceCustomerManagedKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabricksWorkspaceCustomerManagedKey) validateSetIdParameters(val *string) error {
 	return nil
 }

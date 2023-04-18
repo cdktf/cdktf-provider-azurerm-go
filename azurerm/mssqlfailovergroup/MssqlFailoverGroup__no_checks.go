@@ -80,6 +80,10 @@ func (j *jsiiProxy_MssqlFailoverGroup) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_MssqlFailoverGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlFailoverGroup) validateSetDatabasesParameters(val *[]*string) error {
 	return nil
 }

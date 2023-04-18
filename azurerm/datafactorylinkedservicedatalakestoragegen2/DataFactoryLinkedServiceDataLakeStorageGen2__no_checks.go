@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2) validateSetConne
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

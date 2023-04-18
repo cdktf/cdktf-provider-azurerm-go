@@ -2,14 +2,14 @@ package mysqlserverkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/mysqlserverkey/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/mysqlserverkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_server_key azurerm_mysql_server_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_server_key azurerm_mysql_server_key}.
 type MysqlServerKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MysqlServerKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_MysqlServerKey) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_MysqlServerKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MysqlServerKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_MysqlServerKey) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_server_key azurerm_mysql_server_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_server_key azurerm_mysql_server_key} Resource.
 func NewMysqlServerKey(scope constructs.Construct, id *string, config *MysqlServerKeyConfig) MysqlServerKey {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewMysqlServerKey(scope constructs.Construct, id *string, config *MysqlServ
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mysql_server_key azurerm_mysql_server_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mysql_server_key azurerm_mysql_server_key} Resource.
 func NewMysqlServerKey_Override(m MysqlServerKey, scope constructs.Construct, id *string, config *MysqlServerKeyConfig) {
 	_init_.Initialize()
 
@@ -396,7 +396,10 @@ func (j *jsiiProxy_MysqlServerKey)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MysqlServerKey)SetCount(val *float64) {
+func (j *jsiiProxy_MysqlServerKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

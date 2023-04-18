@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSftp) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceSftp) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

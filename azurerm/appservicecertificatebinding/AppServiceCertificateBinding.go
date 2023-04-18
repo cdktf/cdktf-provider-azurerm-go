@@ -2,14 +2,14 @@ package appservicecertificatebinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/appservicecertificatebinding/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/appservicecertificatebinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/app_service_certificate_binding azurerm_app_service_certificate_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_certificate_binding azurerm_app_service_certificate_binding}.
 type AppServiceCertificateBinding interface {
 	cdktf.TerraformResource
 	AppServiceName() *string
@@ -25,9 +25,9 @@ type AppServiceCertificateBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -181,8 +181,8 @@ func (j *jsiiProxy_AppServiceCertificateBinding) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_AppServiceCertificateBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppServiceCertificateBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -412,7 +412,7 @@ func (j *jsiiProxy_AppServiceCertificateBinding) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/app_service_certificate_binding azurerm_app_service_certificate_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_certificate_binding azurerm_app_service_certificate_binding} Resource.
 func NewAppServiceCertificateBinding(scope constructs.Construct, id *string, config *AppServiceCertificateBindingConfig) AppServiceCertificateBinding {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewAppServiceCertificateBinding(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/app_service_certificate_binding azurerm_app_service_certificate_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_certificate_binding azurerm_app_service_certificate_binding} Resource.
 func NewAppServiceCertificateBinding_Override(a AppServiceCertificateBinding, scope constructs.Construct, id *string, config *AppServiceCertificateBindingConfig) {
 	_init_.Initialize()
 
@@ -463,7 +463,10 @@ func (j *jsiiProxy_AppServiceCertificateBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppServiceCertificateBinding)SetCount(val *float64) {
+func (j *jsiiProxy_AppServiceCertificateBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

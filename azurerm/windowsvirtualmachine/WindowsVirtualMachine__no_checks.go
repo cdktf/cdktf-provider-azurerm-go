@@ -140,6 +140,10 @@ func (j *jsiiProxy_WindowsVirtualMachine) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_WindowsVirtualMachine) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsVirtualMachine) validateSetCustomDataParameters(val *string) error {
 	return nil
 }

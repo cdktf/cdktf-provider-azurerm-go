@@ -88,6 +88,10 @@ func (j *jsiiProxy_DevTestSchedule) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_DevTestSchedule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevTestSchedule) validateSetIdParameters(val *string) error {
 	return nil
 }

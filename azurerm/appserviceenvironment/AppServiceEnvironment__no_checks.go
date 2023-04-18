@@ -80,6 +80,10 @@ func (j *jsiiProxy_AppServiceEnvironment) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_AppServiceEnvironment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceEnvironment) validateSetFrontEndScaleFactorParameters(val *float64) error {
 	return nil
 }

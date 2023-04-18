@@ -80,6 +80,10 @@ func (j *jsiiProxy_NetworkPacketCapture) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_NetworkPacketCapture) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkPacketCapture) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_NetworkInterfaceApplicationSecurityGroupAssociation) validate
 	return nil
 }
 
+func (j *jsiiProxy_NetworkInterfaceApplicationSecurityGroupAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkInterfaceApplicationSecurityGroupAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

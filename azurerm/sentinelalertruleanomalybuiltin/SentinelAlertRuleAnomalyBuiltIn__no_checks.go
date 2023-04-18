@@ -72,6 +72,10 @@ func (j *jsiiProxy_SentinelAlertRuleAnomalyBuiltIn) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_SentinelAlertRuleAnomalyBuiltIn) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelAlertRuleAnomalyBuiltIn) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

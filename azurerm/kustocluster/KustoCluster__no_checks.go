@@ -100,6 +100,10 @@ func (j *jsiiProxy_KustoCluster) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_KustoCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoCluster) validateSetDiskEncryptionEnabledParameters(val interface{}) error {
 	return nil
 }

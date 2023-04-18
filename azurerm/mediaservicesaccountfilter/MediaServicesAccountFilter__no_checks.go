@@ -80,6 +80,10 @@ func (j *jsiiProxy_MediaServicesAccountFilter) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_MediaServicesAccountFilter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaServicesAccountFilter) validateSetFirstQualityBitrateParameters(val *float64) error {
 	return nil
 }

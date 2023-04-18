@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureFileStorage) validateSetConnecti
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryLinkedServiceAzureFileStorage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceAzureFileStorage) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

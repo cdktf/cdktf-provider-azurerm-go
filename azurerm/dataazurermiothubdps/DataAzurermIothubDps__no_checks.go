@@ -68,6 +68,10 @@ func validateDataAzurermIothubDps_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermIothubDps) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermIothubDps) validateSetIdParameters(val *string) error {
 	return nil
 }

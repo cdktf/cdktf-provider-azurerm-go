@@ -80,6 +80,10 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validateSetIdParameters(val *string) error {
 	return nil
 }

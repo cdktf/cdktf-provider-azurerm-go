@@ -76,6 +76,10 @@ func (j *jsiiProxy_PrivateDnsResolverInboundEndpoint) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_PrivateDnsResolverInboundEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivateDnsResolverInboundEndpoint) validateSetIdParameters(val *string) error {
 	return nil
 }

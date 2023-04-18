@@ -72,6 +72,10 @@ func (j *jsiiProxy_LbProbe) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_LbProbe) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbProbe) validateSetIdParameters(val *string) error {
 	return nil
 }

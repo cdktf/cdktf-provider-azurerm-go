@@ -124,6 +124,10 @@ func (j *jsiiProxy_ServiceFabricCluster) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_ServiceFabricCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceFabricCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

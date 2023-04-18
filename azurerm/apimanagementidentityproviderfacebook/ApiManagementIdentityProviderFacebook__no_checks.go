@@ -84,6 +84,10 @@ func (j *jsiiProxy_ApiManagementIdentityProviderFacebook) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementIdentityProviderFacebook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementIdentityProviderFacebook) validateSetIdParameters(val *string) error {
 	return nil
 }

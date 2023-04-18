@@ -2,14 +2,14 @@ package datasharedatasetkustocluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/datasharedatasetkustocluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/datasharedatasetkustocluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/data_share_dataset_kusto_cluster azurerm_data_share_dataset_kusto_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_share_dataset_kusto_cluster azurerm_data_share_dataset_kusto_cluster}.
 type DataShareDatasetKustoCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DataShareDatasetKustoCluster interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -150,8 +150,8 @@ func (j *jsiiProxy_DataShareDatasetKustoCluster) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataShareDatasetKustoCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataShareDatasetKustoCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -401,7 +401,7 @@ func (j *jsiiProxy_DataShareDatasetKustoCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_share_dataset_kusto_cluster azurerm_data_share_dataset_kusto_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_share_dataset_kusto_cluster azurerm_data_share_dataset_kusto_cluster} Resource.
 func NewDataShareDatasetKustoCluster(scope constructs.Construct, id *string, config *DataShareDatasetKustoClusterConfig) DataShareDatasetKustoCluster {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewDataShareDatasetKustoCluster(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_share_dataset_kusto_cluster azurerm_data_share_dataset_kusto_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_share_dataset_kusto_cluster azurerm_data_share_dataset_kusto_cluster} Resource.
 func NewDataShareDatasetKustoCluster_Override(d DataShareDatasetKustoCluster, scope constructs.Construct, id *string, config *DataShareDatasetKustoClusterConfig) {
 	_init_.Initialize()
 
@@ -441,7 +441,10 @@ func (j *jsiiProxy_DataShareDatasetKustoCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataShareDatasetKustoCluster)SetCount(val *float64) {
+func (j *jsiiProxy_DataShareDatasetKustoCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

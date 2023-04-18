@@ -92,6 +92,10 @@ func (j *jsiiProxy_CdnEndpoint) validateSetContentTypesToCompressParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_CdnEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnEndpoint) validateSetIdParameters(val *string) error {
 	return nil
 }

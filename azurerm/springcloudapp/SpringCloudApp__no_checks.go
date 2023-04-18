@@ -92,6 +92,10 @@ func (j *jsiiProxy_SpringCloudApp) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudApp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudApp) validateSetHttpsOnlyParameters(val interface{}) error {
 	return nil
 }

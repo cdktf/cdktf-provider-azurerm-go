@@ -84,6 +84,10 @@ func (j *jsiiProxy_KustoEventhubDataConnection) validateSetConsumerGroupParamete
 	return nil
 }
 
+func (j *jsiiProxy_KustoEventhubDataConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoEventhubDataConnection) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

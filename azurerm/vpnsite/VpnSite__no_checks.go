@@ -84,6 +84,10 @@ func (j *jsiiProxy_VpnSite) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_VpnSite) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnSite) validateSetDeviceModelParameters(val *string) error {
 	return nil
 }

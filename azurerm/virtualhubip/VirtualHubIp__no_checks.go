@@ -72,6 +72,10 @@ func (j *jsiiProxy_VirtualHubIp) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_VirtualHubIp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualHubIp) validateSetIdParameters(val *string) error {
 	return nil
 }

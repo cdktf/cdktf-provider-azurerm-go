@@ -72,6 +72,10 @@ func (j *jsiiProxy_SentinelDataConnectorAzureActiveDirectory) validateSetConnect
 	return nil
 }
 
+func (j *jsiiProxy_SentinelDataConnectorAzureActiveDirectory) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorAzureActiveDirectory) validateSetIdParameters(val *string) error {
 	return nil
 }

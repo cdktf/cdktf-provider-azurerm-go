@@ -2,14 +2,14 @@ package dataazurermkeyvaultkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermkeyvaultkey/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermkeyvaultkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/key_vault_key azurerm_key_vault_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/key_vault_key azurerm_key_vault_key}.
 type DataAzurermKeyVaultKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermKeyVaultKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Curve() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataAzurermKeyVaultKey) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermKeyVaultKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermKeyVaultKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -493,7 +493,7 @@ func (j *jsiiProxy_DataAzurermKeyVaultKey) Y() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/key_vault_key azurerm_key_vault_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/key_vault_key azurerm_key_vault_key} Data Source.
 func NewDataAzurermKeyVaultKey(scope constructs.Construct, id *string, config *DataAzurermKeyVaultKeyConfig) DataAzurermKeyVaultKey {
 	_init_.Initialize()
 
@@ -511,7 +511,7 @@ func NewDataAzurermKeyVaultKey(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/key_vault_key azurerm_key_vault_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/key_vault_key azurerm_key_vault_key} Data Source.
 func NewDataAzurermKeyVaultKey_Override(d DataAzurermKeyVaultKey, scope constructs.Construct, id *string, config *DataAzurermKeyVaultKeyConfig) {
 	_init_.Initialize()
 
@@ -522,7 +522,10 @@ func NewDataAzurermKeyVaultKey_Override(d DataAzurermKeyVaultKey, scope construc
 	)
 }
 
-func (j *jsiiProxy_DataAzurermKeyVaultKey)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermKeyVaultKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

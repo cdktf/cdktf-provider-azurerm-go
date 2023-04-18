@@ -72,6 +72,10 @@ func (j *jsiiProxy_RelayNamespaceAuthorizationRule) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_RelayNamespaceAuthorizationRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RelayNamespaceAuthorizationRule) validateSetIdParameters(val *string) error {
 	return nil
 }

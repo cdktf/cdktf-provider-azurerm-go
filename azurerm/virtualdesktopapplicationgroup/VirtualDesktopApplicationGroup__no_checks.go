@@ -72,6 +72,10 @@ func (j *jsiiProxy_VirtualDesktopApplicationGroup) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_VirtualDesktopApplicationGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualDesktopApplicationGroup) validateSetDefaultDesktopDisplayNameParameters(val *string) error {
 	return nil
 }

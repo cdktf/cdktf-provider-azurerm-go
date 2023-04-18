@@ -72,6 +72,10 @@ func (j *jsiiProxy_DiskAccess) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DiskAccess) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DiskAccess) validateSetIdParameters(val *string) error {
 	return nil
 }

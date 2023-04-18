@@ -2,14 +2,14 @@ package streamanalyticsreferenceinputblob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/streamanalyticsreferenceinputblob/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/streamanalyticsreferenceinputblob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_reference_input_blob azurerm_stream_analytics_reference_input_blob}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_reference_input_blob azurerm_stream_analytics_reference_input_blob}.
 type StreamAnalyticsReferenceInputBlob interface {
 	cdktf.TerraformResource
 	AuthenticationMode() *string
@@ -24,9 +24,9 @@ type StreamAnalyticsReferenceInputBlob interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DateFormat() *string
 	SetDateFormat(val *string)
 	DateFormatInput() *string
@@ -194,8 +194,8 @@ func (j *jsiiProxy_StreamAnalyticsReferenceInputBlob) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_StreamAnalyticsReferenceInputBlob) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_StreamAnalyticsReferenceInputBlob) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -565,7 +565,7 @@ func (j *jsiiProxy_StreamAnalyticsReferenceInputBlob) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_reference_input_blob azurerm_stream_analytics_reference_input_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_reference_input_blob azurerm_stream_analytics_reference_input_blob} Resource.
 func NewStreamAnalyticsReferenceInputBlob(scope constructs.Construct, id *string, config *StreamAnalyticsReferenceInputBlobConfig) StreamAnalyticsReferenceInputBlob {
 	_init_.Initialize()
 
@@ -583,7 +583,7 @@ func NewStreamAnalyticsReferenceInputBlob(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_reference_input_blob azurerm_stream_analytics_reference_input_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_reference_input_blob azurerm_stream_analytics_reference_input_blob} Resource.
 func NewStreamAnalyticsReferenceInputBlob_Override(s StreamAnalyticsReferenceInputBlob, scope constructs.Construct, id *string, config *StreamAnalyticsReferenceInputBlobConfig) {
 	_init_.Initialize()
 
@@ -616,7 +616,10 @@ func (j *jsiiProxy_StreamAnalyticsReferenceInputBlob)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_StreamAnalyticsReferenceInputBlob)SetCount(val *float64) {
+func (j *jsiiProxy_StreamAnalyticsReferenceInputBlob)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

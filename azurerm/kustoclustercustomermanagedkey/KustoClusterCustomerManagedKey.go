@@ -2,14 +2,14 @@ package kustoclustercustomermanagedkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/kustoclustercustomermanagedkey/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/kustoclustercustomermanagedkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/kusto_cluster_customer_managed_key azurerm_kusto_cluster_customer_managed_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/kusto_cluster_customer_managed_key azurerm_kusto_cluster_customer_managed_key}.
 type KustoClusterCustomerManagedKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type KustoClusterCustomerManagedKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -176,8 +176,8 @@ func (j *jsiiProxy_KustoClusterCustomerManagedKey) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_KustoClusterCustomerManagedKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_KustoClusterCustomerManagedKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -427,7 +427,7 @@ func (j *jsiiProxy_KustoClusterCustomerManagedKey) UserIdentityInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/kusto_cluster_customer_managed_key azurerm_kusto_cluster_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/kusto_cluster_customer_managed_key azurerm_kusto_cluster_customer_managed_key} Resource.
 func NewKustoClusterCustomerManagedKey(scope constructs.Construct, id *string, config *KustoClusterCustomerManagedKeyConfig) KustoClusterCustomerManagedKey {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewKustoClusterCustomerManagedKey(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/kusto_cluster_customer_managed_key azurerm_kusto_cluster_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/kusto_cluster_customer_managed_key azurerm_kusto_cluster_customer_managed_key} Resource.
 func NewKustoClusterCustomerManagedKey_Override(k KustoClusterCustomerManagedKey, scope constructs.Construct, id *string, config *KustoClusterCustomerManagedKeyConfig) {
 	_init_.Initialize()
 
@@ -478,7 +478,10 @@ func (j *jsiiProxy_KustoClusterCustomerManagedKey)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_KustoClusterCustomerManagedKey)SetCount(val *float64) {
+func (j *jsiiProxy_KustoClusterCustomerManagedKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

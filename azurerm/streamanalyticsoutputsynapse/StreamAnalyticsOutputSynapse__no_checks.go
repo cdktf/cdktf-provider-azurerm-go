@@ -72,6 +72,10 @@ func (j *jsiiProxy_StreamAnalyticsOutputSynapse) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsOutputSynapse) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsOutputSynapse) validateSetDatabaseParameters(val *string) error {
 	return nil
 }

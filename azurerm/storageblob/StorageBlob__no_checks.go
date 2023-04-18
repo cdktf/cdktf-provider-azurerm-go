@@ -88,6 +88,10 @@ func (j *jsiiProxy_StorageBlob) validateSetContentTypeParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_StorageBlob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBlob) validateSetIdParameters(val *string) error {
 	return nil
 }

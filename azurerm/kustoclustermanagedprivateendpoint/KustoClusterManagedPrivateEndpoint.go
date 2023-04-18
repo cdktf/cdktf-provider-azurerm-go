@@ -2,14 +2,14 @@ package kustoclustermanagedprivateendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/kustoclustermanagedprivateendpoint/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/kustoclustermanagedprivateendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/kusto_cluster_managed_private_endpoint azurerm_kusto_cluster_managed_private_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/kusto_cluster_managed_private_endpoint azurerm_kusto_cluster_managed_private_endpoint}.
 type KustoClusterManagedPrivateEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type KustoClusterManagedPrivateEndpoint interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -182,8 +182,8 @@ func (j *jsiiProxy_KustoClusterManagedPrivateEndpoint) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_KustoClusterManagedPrivateEndpoint) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_KustoClusterManagedPrivateEndpoint) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -473,7 +473,7 @@ func (j *jsiiProxy_KustoClusterManagedPrivateEndpoint) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/kusto_cluster_managed_private_endpoint azurerm_kusto_cluster_managed_private_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/kusto_cluster_managed_private_endpoint azurerm_kusto_cluster_managed_private_endpoint} Resource.
 func NewKustoClusterManagedPrivateEndpoint(scope constructs.Construct, id *string, config *KustoClusterManagedPrivateEndpointConfig) KustoClusterManagedPrivateEndpoint {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewKustoClusterManagedPrivateEndpoint(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/kusto_cluster_managed_private_endpoint azurerm_kusto_cluster_managed_private_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/kusto_cluster_managed_private_endpoint azurerm_kusto_cluster_managed_private_endpoint} Resource.
 func NewKustoClusterManagedPrivateEndpoint_Override(k KustoClusterManagedPrivateEndpoint, scope constructs.Construct, id *string, config *KustoClusterManagedPrivateEndpointConfig) {
 	_init_.Initialize()
 
@@ -524,7 +524,10 @@ func (j *jsiiProxy_KustoClusterManagedPrivateEndpoint)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_KustoClusterManagedPrivateEndpoint)SetCount(val *float64) {
+func (j *jsiiProxy_KustoClusterManagedPrivateEndpoint)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

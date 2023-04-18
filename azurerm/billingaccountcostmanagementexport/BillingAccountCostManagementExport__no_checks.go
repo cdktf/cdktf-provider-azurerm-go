@@ -88,6 +88,10 @@ func (j *jsiiProxy_BillingAccountCostManagementExport) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_BillingAccountCostManagementExport) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BillingAccountCostManagementExport) validateSetIdParameters(val *string) error {
 	return nil
 }

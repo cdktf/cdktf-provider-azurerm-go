@@ -76,6 +76,10 @@ func (j *jsiiProxy_LogzSubAccountTagRule) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_LogzSubAccountTagRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogzSubAccountTagRule) validateSetIdParameters(val *string) error {
 	return nil
 }

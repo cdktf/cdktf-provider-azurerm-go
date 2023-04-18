@@ -72,6 +72,10 @@ func (j *jsiiProxy_SiteRecoveryServicesVaultHypervSite) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_SiteRecoveryServicesVaultHypervSite) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SiteRecoveryServicesVaultHypervSite) validateSetIdParameters(val *string) error {
 	return nil
 }

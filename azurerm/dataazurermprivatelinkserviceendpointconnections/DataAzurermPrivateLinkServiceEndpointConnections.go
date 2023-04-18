@@ -2,14 +2,14 @@ package dataazurermprivatelinkserviceendpointconnections
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermprivatelinkserviceendpointconnections/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermprivatelinkserviceendpointconnections/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/private_link_service_endpoint_connections azurerm_private_link_service_endpoint_connections}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/private_link_service_endpoint_connections azurerm_private_link_service_endpoint_connections}.
 type DataAzurermPrivateLinkServiceEndpointConnections interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermPrivateLinkServiceEndpointConnections interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataAzurermPrivateLinkServiceEndpointConnections) ConstructNo
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermPrivateLinkServiceEndpointConnections) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermPrivateLinkServiceEndpointConnections) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -361,7 +361,7 @@ func (j *jsiiProxy_DataAzurermPrivateLinkServiceEndpointConnections) TimeoutsInp
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/private_link_service_endpoint_connections azurerm_private_link_service_endpoint_connections} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/private_link_service_endpoint_connections azurerm_private_link_service_endpoint_connections} Data Source.
 func NewDataAzurermPrivateLinkServiceEndpointConnections(scope constructs.Construct, id *string, config *DataAzurermPrivateLinkServiceEndpointConnectionsConfig) DataAzurermPrivateLinkServiceEndpointConnections {
 	_init_.Initialize()
 
@@ -379,7 +379,7 @@ func NewDataAzurermPrivateLinkServiceEndpointConnections(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/private_link_service_endpoint_connections azurerm_private_link_service_endpoint_connections} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/private_link_service_endpoint_connections azurerm_private_link_service_endpoint_connections} Data Source.
 func NewDataAzurermPrivateLinkServiceEndpointConnections_Override(d DataAzurermPrivateLinkServiceEndpointConnections, scope constructs.Construct, id *string, config *DataAzurermPrivateLinkServiceEndpointConnectionsConfig) {
 	_init_.Initialize()
 
@@ -390,7 +390,10 @@ func NewDataAzurermPrivateLinkServiceEndpointConnections_Override(d DataAzurermP
 	)
 }
 
-func (j *jsiiProxy_DataAzurermPrivateLinkServiceEndpointConnections)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermPrivateLinkServiceEndpointConnections)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

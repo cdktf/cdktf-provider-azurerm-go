@@ -76,6 +76,10 @@ func (j *jsiiProxy_VirtualMachineDataDiskAttachment) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_VirtualMachineDataDiskAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualMachineDataDiskAttachment) validateSetCreateOptionParameters(val *string) error {
 	return nil
 }

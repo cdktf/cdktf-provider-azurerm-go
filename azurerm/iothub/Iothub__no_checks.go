@@ -108,6 +108,10 @@ func (j *jsiiProxy_Iothub) validateSetConnectionParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_Iothub) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Iothub) validateSetEventHubPartitionCountParameters(val *float64) error {
 	return nil
 }

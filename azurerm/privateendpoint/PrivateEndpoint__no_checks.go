@@ -84,6 +84,10 @@ func (j *jsiiProxy_PrivateEndpoint) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_PrivateEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivateEndpoint) validateSetCustomNetworkInterfaceNameParameters(val *string) error {
 	return nil
 }

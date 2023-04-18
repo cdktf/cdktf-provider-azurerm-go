@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermNetappSnapshotPolicy) validateSetAccountNameParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermNetappSnapshotPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermNetappSnapshotPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

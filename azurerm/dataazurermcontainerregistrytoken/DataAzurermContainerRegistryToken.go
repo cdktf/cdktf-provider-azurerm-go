@@ -2,14 +2,14 @@ package dataazurermcontainerregistrytoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermcontainerregistrytoken/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermcontainerregistrytoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/container_registry_token azurerm_container_registry_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/container_registry_token azurerm_container_registry_token}.
 type DataAzurermContainerRegistryToken interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -20,9 +20,9 @@ type DataAzurermContainerRegistryToken interface {
 	SetContainerRegistryName(val *string)
 	ContainerRegistryNameInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataAzurermContainerRegistryToken) ContainerRegistryNameInput
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermContainerRegistryToken) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermContainerRegistryToken) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -373,7 +373,7 @@ func (j *jsiiProxy_DataAzurermContainerRegistryToken) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/container_registry_token azurerm_container_registry_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/container_registry_token azurerm_container_registry_token} Data Source.
 func NewDataAzurermContainerRegistryToken(scope constructs.Construct, id *string, config *DataAzurermContainerRegistryTokenConfig) DataAzurermContainerRegistryToken {
 	_init_.Initialize()
 
@@ -391,7 +391,7 @@ func NewDataAzurermContainerRegistryToken(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/container_registry_token azurerm_container_registry_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/container_registry_token azurerm_container_registry_token} Data Source.
 func NewDataAzurermContainerRegistryToken_Override(d DataAzurermContainerRegistryToken, scope constructs.Construct, id *string, config *DataAzurermContainerRegistryTokenConfig) {
 	_init_.Initialize()
 
@@ -413,7 +413,10 @@ func (j *jsiiProxy_DataAzurermContainerRegistryToken)SetContainerRegistryName(va
 	)
 }
 
-func (j *jsiiProxy_DataAzurermContainerRegistryToken)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermContainerRegistryToken)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

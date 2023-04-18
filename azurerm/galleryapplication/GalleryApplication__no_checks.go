@@ -72,6 +72,10 @@ func (j *jsiiProxy_GalleryApplication) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GalleryApplication) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GalleryApplication) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

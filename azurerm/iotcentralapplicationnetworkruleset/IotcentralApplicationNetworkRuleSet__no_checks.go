@@ -80,6 +80,10 @@ func (j *jsiiProxy_IotcentralApplicationNetworkRuleSet) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_IotcentralApplicationNetworkRuleSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotcentralApplicationNetworkRuleSet) validateSetDefaultActionParameters(val *string) error {
 	return nil
 }

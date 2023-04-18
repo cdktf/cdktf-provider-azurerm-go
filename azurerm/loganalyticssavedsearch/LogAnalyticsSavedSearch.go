@@ -2,14 +2,14 @@ package loganalyticssavedsearch
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/loganalyticssavedsearch/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/loganalyticssavedsearch/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/log_analytics_saved_search azurerm_log_analytics_saved_search}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/log_analytics_saved_search azurerm_log_analytics_saved_search}.
 type LogAnalyticsSavedSearch interface {
 	cdktf.TerraformResource
 	Category() *string
@@ -24,9 +24,9 @@ type LogAnalyticsSavedSearch interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -186,8 +186,8 @@ func (j *jsiiProxy_LogAnalyticsSavedSearch) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_LogAnalyticsSavedSearch) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LogAnalyticsSavedSearch) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -497,7 +497,7 @@ func (j *jsiiProxy_LogAnalyticsSavedSearch) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/log_analytics_saved_search azurerm_log_analytics_saved_search} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/log_analytics_saved_search azurerm_log_analytics_saved_search} Resource.
 func NewLogAnalyticsSavedSearch(scope constructs.Construct, id *string, config *LogAnalyticsSavedSearchConfig) LogAnalyticsSavedSearch {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewLogAnalyticsSavedSearch(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/log_analytics_saved_search azurerm_log_analytics_saved_search} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/log_analytics_saved_search azurerm_log_analytics_saved_search} Resource.
 func NewLogAnalyticsSavedSearch_Override(l LogAnalyticsSavedSearch, scope constructs.Construct, id *string, config *LogAnalyticsSavedSearchConfig) {
 	_init_.Initialize()
 
@@ -548,7 +548,10 @@ func (j *jsiiProxy_LogAnalyticsSavedSearch)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogAnalyticsSavedSearch)SetCount(val *float64) {
+func (j *jsiiProxy_LogAnalyticsSavedSearch)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

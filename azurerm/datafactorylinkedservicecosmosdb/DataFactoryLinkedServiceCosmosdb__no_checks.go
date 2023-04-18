@@ -92,6 +92,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceCosmosdb) validateSetConnectionString
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryLinkedServiceCosmosdb) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceCosmosdb) validateSetDatabaseParameters(val *string) error {
 	return nil
 }

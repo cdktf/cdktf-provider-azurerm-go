@@ -80,6 +80,10 @@ func (j *jsiiProxy_MobileNetworkService) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_MobileNetworkService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MobileNetworkService) validateSetIdParameters(val *string) error {
 	return nil
 }

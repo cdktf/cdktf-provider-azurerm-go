@@ -68,6 +68,10 @@ func validateDataAzurermStorageSyncGroup_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermStorageSyncGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermStorageSyncGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

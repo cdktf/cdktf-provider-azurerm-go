@@ -2,14 +2,14 @@ package cosmosdbcassandratable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/cosmosdbcassandratable/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/cosmosdbcassandratable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/cosmosdb_cassandra_table azurerm_cosmosdb_cassandra_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/cosmosdb_cassandra_table azurerm_cosmosdb_cassandra_table}.
 type CosmosdbCassandraTable interface {
 	cdktf.TerraformResource
 	AnalyticalStorageTtl() *float64
@@ -29,9 +29,9 @@ type CosmosdbCassandraTable interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultTtl() *float64
 	SetDefaultTtl(val *float64)
 	DefaultTtlInput() *float64
@@ -224,8 +224,8 @@ func (j *jsiiProxy_CosmosdbCassandraTable) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_CosmosdbCassandraTable) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CosmosdbCassandraTable) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -475,7 +475,7 @@ func (j *jsiiProxy_CosmosdbCassandraTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/cosmosdb_cassandra_table azurerm_cosmosdb_cassandra_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/cosmosdb_cassandra_table azurerm_cosmosdb_cassandra_table} Resource.
 func NewCosmosdbCassandraTable(scope constructs.Construct, id *string, config *CosmosdbCassandraTableConfig) CosmosdbCassandraTable {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewCosmosdbCassandraTable(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/cosmosdb_cassandra_table azurerm_cosmosdb_cassandra_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/cosmosdb_cassandra_table azurerm_cosmosdb_cassandra_table} Resource.
 func NewCosmosdbCassandraTable_Override(c CosmosdbCassandraTable, scope constructs.Construct, id *string, config *CosmosdbCassandraTableConfig) {
 	_init_.Initialize()
 
@@ -537,7 +537,10 @@ func (j *jsiiProxy_CosmosdbCassandraTable)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CosmosdbCassandraTable)SetCount(val *float64) {
+func (j *jsiiProxy_CosmosdbCassandraTable)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

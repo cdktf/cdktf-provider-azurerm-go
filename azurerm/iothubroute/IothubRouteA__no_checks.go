@@ -76,6 +76,10 @@ func (j *jsiiProxy_IothubRouteA) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_IothubRouteA) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubRouteA) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

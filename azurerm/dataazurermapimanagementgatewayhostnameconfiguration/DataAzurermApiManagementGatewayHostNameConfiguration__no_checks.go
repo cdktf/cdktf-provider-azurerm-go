@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermApiManagementGatewayHostNameConfiguration) validat
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermApiManagementGatewayHostNameConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermApiManagementGatewayHostNameConfiguration) validateSetGatewayNameParameters(val *string) error {
 	return nil
 }

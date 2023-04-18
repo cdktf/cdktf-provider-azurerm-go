@@ -2,14 +2,14 @@ package dataazurermautomationvariabledatetime
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermautomationvariabledatetime/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermautomationvariabledatetime/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/automation_variable_datetime azurerm_automation_variable_datetime}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/automation_variable_datetime azurerm_automation_variable_datetime}.
 type DataAzurermAutomationVariableDatetime interface {
 	cdktf.TerraformDataSource
 	AutomationAccountName() *string
@@ -20,9 +20,9 @@ type DataAzurermAutomationVariableDatetime interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataAzurermAutomationVariableDatetime) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermAutomationVariableDatetime) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermAutomationVariableDatetime) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DataAzurermAutomationVariableDatetime) Value() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/automation_variable_datetime azurerm_automation_variable_datetime} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/automation_variable_datetime azurerm_automation_variable_datetime} Data Source.
 func NewDataAzurermAutomationVariableDatetime(scope constructs.Construct, id *string, config *DataAzurermAutomationVariableDatetimeConfig) DataAzurermAutomationVariableDatetime {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewDataAzurermAutomationVariableDatetime(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/automation_variable_datetime azurerm_automation_variable_datetime} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/automation_variable_datetime azurerm_automation_variable_datetime} Data Source.
 func NewDataAzurermAutomationVariableDatetime_Override(d DataAzurermAutomationVariableDatetime, scope constructs.Construct, id *string, config *DataAzurermAutomationVariableDatetimeConfig) {
 	_init_.Initialize()
 
@@ -424,7 +424,10 @@ func (j *jsiiProxy_DataAzurermAutomationVariableDatetime)SetAutomationAccountNam
 	)
 }
 
-func (j *jsiiProxy_DataAzurermAutomationVariableDatetime)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermAutomationVariableDatetime)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_StorageAccountLocalUser) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_StorageAccountLocalUser) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccountLocalUser) validateSetHomeDirectoryParameters(val *string) error {
 	return nil
 }

@@ -88,6 +88,10 @@ func (j *jsiiProxy_AppServicePublicCertificate) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_AppServicePublicCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServicePublicCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

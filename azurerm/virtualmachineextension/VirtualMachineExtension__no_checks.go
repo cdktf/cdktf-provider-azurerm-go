@@ -84,6 +84,10 @@ func (j *jsiiProxy_VirtualMachineExtension) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_VirtualMachineExtension) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualMachineExtension) validateSetFailureSuppressionEnabledParameters(val interface{}) error {
 	return nil
 }

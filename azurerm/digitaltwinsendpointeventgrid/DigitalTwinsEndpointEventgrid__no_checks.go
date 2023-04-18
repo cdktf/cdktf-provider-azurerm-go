@@ -72,6 +72,10 @@ func (j *jsiiProxy_DigitalTwinsEndpointEventgrid) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_DigitalTwinsEndpointEventgrid) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DigitalTwinsEndpointEventgrid) validateSetDeadLetterStorageSecretParameters(val *string) error {
 	return nil
 }

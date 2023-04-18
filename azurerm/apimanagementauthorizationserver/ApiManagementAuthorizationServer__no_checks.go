@@ -108,6 +108,10 @@ func (j *jsiiProxy_ApiManagementAuthorizationServer) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementAuthorizationServer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementAuthorizationServer) validateSetDefaultScopeParameters(val *string) error {
 	return nil
 }

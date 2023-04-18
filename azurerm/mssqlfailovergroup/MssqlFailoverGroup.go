@@ -2,14 +2,14 @@ package mssqlfailovergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/mssqlfailovergroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/mssqlfailovergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_failover_group azurerm_mssql_failover_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mssql_failover_group azurerm_mssql_failover_group}.
 type MssqlFailoverGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MssqlFailoverGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Databases() *[]*string
 	SetDatabases(val *[]*string)
 	DatabasesInput() *[]*string
@@ -163,8 +163,8 @@ func (j *jsiiProxy_MssqlFailoverGroup) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_MssqlFailoverGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MssqlFailoverGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -474,7 +474,7 @@ func (j *jsiiProxy_MssqlFailoverGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_failover_group azurerm_mssql_failover_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mssql_failover_group azurerm_mssql_failover_group} Resource.
 func NewMssqlFailoverGroup(scope constructs.Construct, id *string, config *MssqlFailoverGroupConfig) MssqlFailoverGroup {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewMssqlFailoverGroup(scope constructs.Construct, id *string, config *Mssql
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_failover_group azurerm_mssql_failover_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mssql_failover_group azurerm_mssql_failover_group} Resource.
 func NewMssqlFailoverGroup_Override(m MssqlFailoverGroup, scope constructs.Construct, id *string, config *MssqlFailoverGroupConfig) {
 	_init_.Initialize()
 
@@ -514,7 +514,10 @@ func (j *jsiiProxy_MssqlFailoverGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MssqlFailoverGroup)SetCount(val *float64) {
+func (j *jsiiProxy_MssqlFailoverGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

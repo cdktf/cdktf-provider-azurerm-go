@@ -80,6 +80,10 @@ func (j *jsiiProxy_LogicAppIntegrationAccountBatchConfiguration) validateSetConn
 	return nil
 }
 
+func (j *jsiiProxy_LogicAppIntegrationAccountBatchConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppIntegrationAccountBatchConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

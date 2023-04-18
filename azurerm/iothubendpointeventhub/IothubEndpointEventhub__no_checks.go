@@ -80,6 +80,10 @@ func (j *jsiiProxy_IothubEndpointEventhub) validateSetConnectionStringParameters
 	return nil
 }
 
+func (j *jsiiProxy_IothubEndpointEventhub) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubEndpointEventhub) validateSetEndpointUriParameters(val *string) error {
 	return nil
 }

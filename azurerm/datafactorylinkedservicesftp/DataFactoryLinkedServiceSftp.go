@@ -2,14 +2,14 @@ package datafactorylinkedservicesftp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/datafactorylinkedservicesftp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/datafactorylinkedservicesftp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp}.
 type DataFactoryLinkedServiceSftp interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -30,9 +30,9 @@ type DataFactoryLinkedServiceSftp interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataFactoryId() *string
 	SetDataFactoryId(val *string)
 	DataFactoryIdInput() *string
@@ -248,8 +248,8 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSftp) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataFactoryLinkedServiceSftp) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -639,7 +639,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSftp) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp} Resource.
 func NewDataFactoryLinkedServiceSftp(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceSftpConfig) DataFactoryLinkedServiceSftp {
 	_init_.Initialize()
 
@@ -657,7 +657,7 @@ func NewDataFactoryLinkedServiceSftp(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp} Resource.
 func NewDataFactoryLinkedServiceSftp_Override(d DataFactoryLinkedServiceSftp, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceSftpConfig) {
 	_init_.Initialize()
 
@@ -712,7 +712,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSftp)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataFactoryLinkedServiceSftp)SetCount(val *float64) {
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

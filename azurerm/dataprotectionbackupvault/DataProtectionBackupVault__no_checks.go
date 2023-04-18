@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataProtectionBackupVault) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataProtectionBackupVault) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupVault) validateSetDatastoreTypeParameters(val *string) error {
 	return nil
 }

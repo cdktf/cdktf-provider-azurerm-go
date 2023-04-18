@@ -72,6 +72,10 @@ func (j *jsiiProxy_PostgresqlFirewallRule) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_PostgresqlFirewallRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlFirewallRule) validateSetEndIpAddressParameters(val *string) error {
 	return nil
 }

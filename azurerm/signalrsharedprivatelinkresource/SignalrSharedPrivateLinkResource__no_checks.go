@@ -72,6 +72,10 @@ func (j *jsiiProxy_SignalrSharedPrivateLinkResource) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_SignalrSharedPrivateLinkResource) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SignalrSharedPrivateLinkResource) validateSetIdParameters(val *string) error {
 	return nil
 }

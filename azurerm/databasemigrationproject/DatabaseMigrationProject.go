@@ -2,14 +2,14 @@ package databasemigrationproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/databasemigrationproject/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/databasemigrationproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/database_migration_project azurerm_database_migration_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/database_migration_project azurerm_database_migration_project}.
 type DatabaseMigrationProject interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DatabaseMigrationProject interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DatabaseMigrationProject) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationProject) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DatabaseMigrationProject) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -472,7 +472,7 @@ func (j *jsiiProxy_DatabaseMigrationProject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/database_migration_project azurerm_database_migration_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/database_migration_project azurerm_database_migration_project} Resource.
 func NewDatabaseMigrationProject(scope constructs.Construct, id *string, config *DatabaseMigrationProjectConfig) DatabaseMigrationProject {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewDatabaseMigrationProject(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/database_migration_project azurerm_database_migration_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/database_migration_project azurerm_database_migration_project} Resource.
 func NewDatabaseMigrationProject_Override(d DatabaseMigrationProject, scope constructs.Construct, id *string, config *DatabaseMigrationProjectConfig) {
 	_init_.Initialize()
 
@@ -512,7 +512,10 @@ func (j *jsiiProxy_DatabaseMigrationProject)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationProject)SetCount(val *float64) {
+func (j *jsiiProxy_DatabaseMigrationProject)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

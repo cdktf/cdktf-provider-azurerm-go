@@ -2,14 +2,14 @@ package dataazurermdataprotectionbackupvault
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermdataprotectionbackupvault/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermdataprotectionbackupvault/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/data_protection_backup_vault azurerm_data_protection_backup_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/data_protection_backup_vault azurerm_data_protection_backup_vault}.
 type DataAzurermDataProtectionBackupVault interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermDataProtectionBackupVault interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatastoreType() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataAzurermDataProtectionBackupVault) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermDataProtectionBackupVault) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermDataProtectionBackupVault) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataAzurermDataProtectionBackupVault) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/data_protection_backup_vault azurerm_data_protection_backup_vault} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/data_protection_backup_vault azurerm_data_protection_backup_vault} Data Source.
 func NewDataAzurermDataProtectionBackupVault(scope constructs.Construct, id *string, config *DataAzurermDataProtectionBackupVaultConfig) DataAzurermDataProtectionBackupVault {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataAzurermDataProtectionBackupVault(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/data_protection_backup_vault azurerm_data_protection_backup_vault} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/data_protection_backup_vault azurerm_data_protection_backup_vault} Data Source.
 func NewDataAzurermDataProtectionBackupVault_Override(d DataAzurermDataProtectionBackupVault, scope constructs.Construct, id *string, config *DataAzurermDataProtectionBackupVaultConfig) {
 	_init_.Initialize()
 
@@ -412,7 +412,10 @@ func NewDataAzurermDataProtectionBackupVault_Override(d DataAzurermDataProtectio
 	)
 }
 
-func (j *jsiiProxy_DataAzurermDataProtectionBackupVault)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermDataProtectionBackupVault)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

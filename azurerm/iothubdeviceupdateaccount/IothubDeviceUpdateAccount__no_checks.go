@@ -76,6 +76,10 @@ func (j *jsiiProxy_IothubDeviceUpdateAccount) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_IothubDeviceUpdateAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubDeviceUpdateAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

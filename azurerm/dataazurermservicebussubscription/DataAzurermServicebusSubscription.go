@@ -2,14 +2,14 @@ package dataazurermservicebussubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermservicebussubscription/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermservicebussubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/servicebus_subscription azurerm_servicebus_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/servicebus_subscription azurerm_servicebus_subscription}.
 type DataAzurermServicebusSubscription interface {
 	cdktf.TerraformDataSource
 	AutoDeleteOnIdle() *string
@@ -18,9 +18,9 @@ type DataAzurermServicebusSubscription interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeadLetteringOnFilterEvaluationError() cdktf.IResolvable
 	DeadLetteringOnMessageExpiration() cdktf.IResolvable
 	DefaultMessageTtl() *string
@@ -160,8 +160,8 @@ func (j *jsiiProxy_DataAzurermServicebusSubscription) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermServicebusSubscription) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermServicebusSubscription) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -511,7 +511,7 @@ func (j *jsiiProxy_DataAzurermServicebusSubscription) TopicNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/servicebus_subscription azurerm_servicebus_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/servicebus_subscription azurerm_servicebus_subscription} Data Source.
 func NewDataAzurermServicebusSubscription(scope constructs.Construct, id *string, config *DataAzurermServicebusSubscriptionConfig) DataAzurermServicebusSubscription {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewDataAzurermServicebusSubscription(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/servicebus_subscription azurerm_servicebus_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/servicebus_subscription azurerm_servicebus_subscription} Data Source.
 func NewDataAzurermServicebusSubscription_Override(d DataAzurermServicebusSubscription, scope constructs.Construct, id *string, config *DataAzurermServicebusSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -540,7 +540,10 @@ func NewDataAzurermServicebusSubscription_Override(d DataAzurermServicebusSubscr
 	)
 }
 
-func (j *jsiiProxy_DataAzurermServicebusSubscription)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermServicebusSubscription)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

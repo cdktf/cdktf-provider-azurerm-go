@@ -80,6 +80,10 @@ func (j *jsiiProxy_IotSecuritySolution) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_IotSecuritySolution) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotSecuritySolution) validateSetDisabledDataSourcesParameters(val *[]*string) error {
 	return nil
 }

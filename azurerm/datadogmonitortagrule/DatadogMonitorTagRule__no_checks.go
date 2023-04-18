@@ -80,6 +80,10 @@ func (j *jsiiProxy_DatadogMonitorTagRule) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_DatadogMonitorTagRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatadogMonitorTagRule) validateSetDatadogMonitorIdParameters(val *string) error {
 	return nil
 }

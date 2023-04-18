@@ -76,6 +76,10 @@ func (j *jsiiProxy_KustoDatabase) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_KustoDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoDatabase) validateSetHotCachePeriodParameters(val *string) error {
 	return nil
 }

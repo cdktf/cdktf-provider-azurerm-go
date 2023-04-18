@@ -80,6 +80,10 @@ func (j *jsiiProxy_MonitorAutoscaleSetting) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_MonitorAutoscaleSetting) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorAutoscaleSetting) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

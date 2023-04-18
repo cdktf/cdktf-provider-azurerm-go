@@ -76,6 +76,10 @@ func (j *jsiiProxy_IothubFallbackRouteA) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_IothubFallbackRouteA) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubFallbackRouteA) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

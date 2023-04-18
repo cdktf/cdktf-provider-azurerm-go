@@ -2,14 +2,14 @@ package dataazurermdatasharedatasetdatalakegen2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermdatasharedatasetdatalakegen2/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermdatasharedatasetdatalakegen2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/data_share_dataset_data_lake_gen2 azurerm_data_share_dataset_data_lake_gen2}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/data_share_dataset_data_lake_gen2 azurerm_data_share_dataset_data_lake_gen2}.
 type DataAzurermDataShareDatasetDataLakeGen2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermDataShareDatasetDataLakeGen2 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataAzurermDataShareDatasetDataLakeGen2) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermDataShareDatasetDataLakeGen2) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermDataShareDatasetDataLakeGen2) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataAzurermDataShareDatasetDataLakeGen2) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/data_share_dataset_data_lake_gen2 azurerm_data_share_dataset_data_lake_gen2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/data_share_dataset_data_lake_gen2 azurerm_data_share_dataset_data_lake_gen2} Data Source.
 func NewDataAzurermDataShareDatasetDataLakeGen2(scope constructs.Construct, id *string, config *DataAzurermDataShareDatasetDataLakeGen2Config) DataAzurermDataShareDatasetDataLakeGen2 {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataAzurermDataShareDatasetDataLakeGen2(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/data_share_dataset_data_lake_gen2 azurerm_data_share_dataset_data_lake_gen2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/data_share_dataset_data_lake_gen2 azurerm_data_share_dataset_data_lake_gen2} Data Source.
 func NewDataAzurermDataShareDatasetDataLakeGen2_Override(d DataAzurermDataShareDatasetDataLakeGen2, scope constructs.Construct, id *string, config *DataAzurermDataShareDatasetDataLakeGen2Config) {
 	_init_.Initialize()
 
@@ -412,7 +412,10 @@ func NewDataAzurermDataShareDatasetDataLakeGen2_Override(d DataAzurermDataShareD
 	)
 }
 
-func (j *jsiiProxy_DataAzurermDataShareDatasetDataLakeGen2)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermDataShareDatasetDataLakeGen2)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

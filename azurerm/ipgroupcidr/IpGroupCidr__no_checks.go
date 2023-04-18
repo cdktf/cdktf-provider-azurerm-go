@@ -76,6 +76,10 @@ func (j *jsiiProxy_IpGroupCidr) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_IpGroupCidr) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IpGroupCidr) validateSetIdParameters(val *string) error {
 	return nil
 }

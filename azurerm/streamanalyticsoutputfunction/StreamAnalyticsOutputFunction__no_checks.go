@@ -84,6 +84,10 @@ func (j *jsiiProxy_StreamAnalyticsOutputFunction) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsOutputFunction) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsOutputFunction) validateSetFunctionAppParameters(val *string) error {
 	return nil
 }

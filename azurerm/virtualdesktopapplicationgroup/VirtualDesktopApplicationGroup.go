@@ -2,14 +2,14 @@ package virtualdesktopapplicationgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/virtualdesktopapplicationgroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/virtualdesktopapplicationgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_desktop_application_group azurerm_virtual_desktop_application_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_desktop_application_group azurerm_virtual_desktop_application_group}.
 type VirtualDesktopApplicationGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type VirtualDesktopApplicationGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultDesktopDisplayName() *string
 	SetDefaultDesktopDisplayName(val *string)
 	DefaultDesktopDisplayNameInput() *string
@@ -170,8 +170,8 @@ func (j *jsiiProxy_VirtualDesktopApplicationGroup) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_VirtualDesktopApplicationGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VirtualDesktopApplicationGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -521,7 +521,7 @@ func (j *jsiiProxy_VirtualDesktopApplicationGroup) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_desktop_application_group azurerm_virtual_desktop_application_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_desktop_application_group azurerm_virtual_desktop_application_group} Resource.
 func NewVirtualDesktopApplicationGroup(scope constructs.Construct, id *string, config *VirtualDesktopApplicationGroupConfig) VirtualDesktopApplicationGroup {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewVirtualDesktopApplicationGroup(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_desktop_application_group azurerm_virtual_desktop_application_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_desktop_application_group azurerm_virtual_desktop_application_group} Resource.
 func NewVirtualDesktopApplicationGroup_Override(v VirtualDesktopApplicationGroup, scope constructs.Construct, id *string, config *VirtualDesktopApplicationGroupConfig) {
 	_init_.Initialize()
 
@@ -561,7 +561,10 @@ func (j *jsiiProxy_VirtualDesktopApplicationGroup)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_VirtualDesktopApplicationGroup)SetCount(val *float64) {
+func (j *jsiiProxy_VirtualDesktopApplicationGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_IothubEnrichmentA) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_IothubEnrichmentA) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubEnrichmentA) validateSetEndpointNamesParameters(val *[]*string) error {
 	return nil
 }

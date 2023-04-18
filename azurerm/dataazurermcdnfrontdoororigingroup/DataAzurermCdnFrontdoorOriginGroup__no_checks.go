@@ -68,6 +68,10 @@ func validateDataAzurermCdnFrontdoorOriginGroup_IsTerraformElementParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermCdnFrontdoorOriginGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermCdnFrontdoorOriginGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

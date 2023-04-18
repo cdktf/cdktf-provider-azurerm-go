@@ -2,14 +2,14 @@ package datafactorylinkedservicesqlserver
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/datafactorylinkedservicesqlserver/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/datafactorylinkedservicesqlserver/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_service_sql_server azurerm_data_factory_linked_service_sql_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_service_sql_server azurerm_data_factory_linked_service_sql_server}.
 type DataFactoryLinkedServiceSqlServer interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -30,9 +30,9 @@ type DataFactoryLinkedServiceSqlServer interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataFactoryId() *string
 	SetDataFactoryId(val *string)
 	DataFactoryIdInput() *string
@@ -241,8 +241,8 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSqlServer) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataFactoryLinkedServiceSqlServer) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataFactoryLinkedServiceSqlServer) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -572,7 +572,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSqlServer) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_service_sql_server azurerm_data_factory_linked_service_sql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_service_sql_server azurerm_data_factory_linked_service_sql_server} Resource.
 func NewDataFactoryLinkedServiceSqlServer(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceSqlServerConfig) DataFactoryLinkedServiceSqlServer {
 	_init_.Initialize()
 
@@ -590,7 +590,7 @@ func NewDataFactoryLinkedServiceSqlServer(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_service_sql_server azurerm_data_factory_linked_service_sql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_service_sql_server azurerm_data_factory_linked_service_sql_server} Resource.
 func NewDataFactoryLinkedServiceSqlServer_Override(d DataFactoryLinkedServiceSqlServer, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceSqlServerConfig) {
 	_init_.Initialize()
 
@@ -645,7 +645,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSqlServer)SetConnectionString(val *st
 	)
 }
 
-func (j *jsiiProxy_DataFactoryLinkedServiceSqlServer)SetCount(val *float64) {
+func (j *jsiiProxy_DataFactoryLinkedServiceSqlServer)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

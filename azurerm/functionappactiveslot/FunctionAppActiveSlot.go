@@ -2,14 +2,14 @@ package functionappactiveslot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/functionappactiveslot/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/functionappactiveslot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/function_app_active_slot azurerm_function_app_active_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/function_app_active_slot azurerm_function_app_active_slot}.
 type FunctionAppActiveSlot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type FunctionAppActiveSlot interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -147,8 +147,8 @@ func (j *jsiiProxy_FunctionAppActiveSlot) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_FunctionAppActiveSlot) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_FunctionAppActiveSlot) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -368,7 +368,7 @@ func (j *jsiiProxy_FunctionAppActiveSlot) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/function_app_active_slot azurerm_function_app_active_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/function_app_active_slot azurerm_function_app_active_slot} Resource.
 func NewFunctionAppActiveSlot(scope constructs.Construct, id *string, config *FunctionAppActiveSlotConfig) FunctionAppActiveSlot {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewFunctionAppActiveSlot(scope constructs.Construct, id *string, config *Fu
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/function_app_active_slot azurerm_function_app_active_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/function_app_active_slot azurerm_function_app_active_slot} Resource.
 func NewFunctionAppActiveSlot_Override(f FunctionAppActiveSlot, scope constructs.Construct, id *string, config *FunctionAppActiveSlotConfig) {
 	_init_.Initialize()
 
@@ -408,7 +408,10 @@ func (j *jsiiProxy_FunctionAppActiveSlot)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FunctionAppActiveSlot)SetCount(val *float64) {
+func (j *jsiiProxy_FunctionAppActiveSlot)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

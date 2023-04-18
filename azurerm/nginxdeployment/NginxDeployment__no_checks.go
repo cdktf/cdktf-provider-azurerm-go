@@ -92,6 +92,10 @@ func (j *jsiiProxy_NginxDeployment) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_NginxDeployment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NginxDeployment) validateSetDiagnoseSupportEnabledParameters(val interface{}) error {
 	return nil
 }

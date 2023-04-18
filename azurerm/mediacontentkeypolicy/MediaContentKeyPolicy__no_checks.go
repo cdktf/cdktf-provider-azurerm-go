@@ -76,6 +76,10 @@ func (j *jsiiProxy_MediaContentKeyPolicy) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_MediaContentKeyPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaContentKeyPolicy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

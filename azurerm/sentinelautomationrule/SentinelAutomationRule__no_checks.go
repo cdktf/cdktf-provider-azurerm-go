@@ -88,6 +88,10 @@ func (j *jsiiProxy_SentinelAutomationRule) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_SentinelAutomationRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelAutomationRule) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

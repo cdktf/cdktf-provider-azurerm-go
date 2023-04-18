@@ -68,6 +68,10 @@ func validateDataAzurermMobileNetworkSlice_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermMobileNetworkSlice) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMobileNetworkSlice) validateSetIdParameters(val *string) error {
 	return nil
 }

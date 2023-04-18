@@ -100,6 +100,10 @@ func (j *jsiiProxy_DataAzurermStorageAccountBlobContainerSas) validateSetContent
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermStorageAccountBlobContainerSas) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermStorageAccountBlobContainerSas) validateSetExpiryParameters(val *string) error {
 	return nil
 }

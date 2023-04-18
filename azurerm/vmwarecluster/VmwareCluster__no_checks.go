@@ -76,6 +76,10 @@ func (j *jsiiProxy_VmwareCluster) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_VmwareCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VmwareCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

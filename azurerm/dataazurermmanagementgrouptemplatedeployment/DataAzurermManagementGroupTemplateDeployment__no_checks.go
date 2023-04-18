@@ -68,6 +68,10 @@ func validateDataAzurermManagementGroupTemplateDeployment_IsTerraformElementPara
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermManagementGroupTemplateDeployment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermManagementGroupTemplateDeployment) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -100,6 +100,10 @@ func (j *jsiiProxy_ContainerApp) validateSetContainerAppEnvironmentIdParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ContainerApp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerApp) validateSetIdParameters(val *string) error {
 	return nil
 }

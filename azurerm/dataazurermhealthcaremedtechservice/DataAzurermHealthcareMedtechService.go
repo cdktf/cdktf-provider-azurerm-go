@@ -2,14 +2,14 @@ package dataazurermhealthcaremedtechservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermhealthcaremedtechservice/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermhealthcaremedtechservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/healthcare_medtech_service azurerm_healthcare_medtech_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/healthcare_medtech_service azurerm_healthcare_medtech_service}.
 type DataAzurermHealthcareMedtechService interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermHealthcareMedtechService interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataAzurermHealthcareMedtechService) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermHealthcareMedtechService) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermHealthcareMedtechService) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataAzurermHealthcareMedtechService) WorkspaceIdInput() *stri
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/healthcare_medtech_service azurerm_healthcare_medtech_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/healthcare_medtech_service azurerm_healthcare_medtech_service} Data Source.
 func NewDataAzurermHealthcareMedtechService(scope constructs.Construct, id *string, config *DataAzurermHealthcareMedtechServiceConfig) DataAzurermHealthcareMedtechService {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataAzurermHealthcareMedtechService(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/healthcare_medtech_service azurerm_healthcare_medtech_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/healthcare_medtech_service azurerm_healthcare_medtech_service} Data Source.
 func NewDataAzurermHealthcareMedtechService_Override(d DataAzurermHealthcareMedtechService, scope constructs.Construct, id *string, config *DataAzurermHealthcareMedtechServiceConfig) {
 	_init_.Initialize()
 
@@ -412,7 +412,10 @@ func NewDataAzurermHealthcareMedtechService_Override(d DataAzurermHealthcareMedt
 	)
 }
 
-func (j *jsiiProxy_DataAzurermHealthcareMedtechService)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermHealthcareMedtechService)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

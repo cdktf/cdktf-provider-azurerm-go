@@ -120,6 +120,10 @@ func (j *jsiiProxy_VirtualMachine) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_VirtualMachine) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualMachine) validateSetDeleteDataDisksOnTerminationParameters(val interface{}) error {
 	return nil
 }

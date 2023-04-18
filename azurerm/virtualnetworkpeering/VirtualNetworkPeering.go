@@ -2,14 +2,14 @@ package virtualnetworkpeering
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/virtualnetworkpeering/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/virtualnetworkpeering/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_network_peering azurerm_virtual_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_network_peering azurerm_virtual_network_peering}.
 type VirtualNetworkPeering interface {
 	cdktf.TerraformResource
 	AllowForwardedTraffic() interface{}
@@ -30,9 +30,9 @@ type VirtualNetworkPeering interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -231,8 +231,8 @@ func (j *jsiiProxy_VirtualNetworkPeering) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_VirtualNetworkPeering) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VirtualNetworkPeering) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -522,7 +522,7 @@ func (j *jsiiProxy_VirtualNetworkPeering) VirtualNetworkNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_network_peering azurerm_virtual_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_network_peering azurerm_virtual_network_peering} Resource.
 func NewVirtualNetworkPeering(scope constructs.Construct, id *string, config *VirtualNetworkPeeringConfig) VirtualNetworkPeering {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewVirtualNetworkPeering(scope constructs.Construct, id *string, config *Vi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_network_peering azurerm_virtual_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_network_peering azurerm_virtual_network_peering} Resource.
 func NewVirtualNetworkPeering_Override(v VirtualNetworkPeering, scope constructs.Construct, id *string, config *VirtualNetworkPeeringConfig) {
 	_init_.Initialize()
 
@@ -595,7 +595,10 @@ func (j *jsiiProxy_VirtualNetworkPeering)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VirtualNetworkPeering)SetCount(val *float64) {
+func (j *jsiiProxy_VirtualNetworkPeering)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

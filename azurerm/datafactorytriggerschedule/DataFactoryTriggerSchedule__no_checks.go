@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataFactoryTriggerSchedule) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryTriggerSchedule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryTriggerSchedule) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_CdnProfile) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_CdnProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnProfile) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_MonitorAadDiagnosticSetting) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_MonitorAadDiagnosticSetting) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorAadDiagnosticSetting) validateSetEventhubAuthorizationRuleIdParameters(val *string) error {
 	return nil
 }

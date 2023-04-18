@@ -68,6 +68,10 @@ func validateDataAzurermVirtualHubRouteTable_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermVirtualHubRouteTable) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermVirtualHubRouteTable) validateSetIdParameters(val *string) error {
 	return nil
 }

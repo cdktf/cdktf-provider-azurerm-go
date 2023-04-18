@@ -2,14 +2,14 @@ package labserviceschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/labserviceschedule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/labserviceschedule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/lab_service_schedule azurerm_lab_service_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/lab_service_schedule azurerm_lab_service_schedule}.
 type LabServiceSchedule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type LabServiceSchedule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -163,8 +163,8 @@ func (j *jsiiProxy_LabServiceSchedule) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_LabServiceSchedule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LabServiceSchedule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -474,7 +474,7 @@ func (j *jsiiProxy_LabServiceSchedule) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/lab_service_schedule azurerm_lab_service_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/lab_service_schedule azurerm_lab_service_schedule} Resource.
 func NewLabServiceSchedule(scope constructs.Construct, id *string, config *LabServiceScheduleConfig) LabServiceSchedule {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewLabServiceSchedule(scope constructs.Construct, id *string, config *LabSe
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/lab_service_schedule azurerm_lab_service_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/lab_service_schedule azurerm_lab_service_schedule} Resource.
 func NewLabServiceSchedule_Override(l LabServiceSchedule, scope constructs.Construct, id *string, config *LabServiceScheduleConfig) {
 	_init_.Initialize()
 
@@ -514,7 +514,10 @@ func (j *jsiiProxy_LabServiceSchedule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LabServiceSchedule)SetCount(val *float64) {
+func (j *jsiiProxy_LabServiceSchedule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

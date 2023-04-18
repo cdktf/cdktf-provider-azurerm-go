@@ -80,6 +80,10 @@ func (j *jsiiProxy_SynapseSqlPool) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_SynapseSqlPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseSqlPool) validateSetCreateModeParameters(val *string) error {
 	return nil
 }

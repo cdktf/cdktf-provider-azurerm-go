@@ -2,14 +2,14 @@ package diskpooliscsitargetlun
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/diskpooliscsitargetlun/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/diskpooliscsitargetlun/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/disk_pool_iscsi_target_lun azurerm_disk_pool_iscsi_target_lun}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/disk_pool_iscsi_target_lun azurerm_disk_pool_iscsi_target_lun}.
 type DiskPoolIscsiTargetLun interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DiskPoolIscsiTargetLun interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DiskPoolIscsiTargetLun) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DiskPoolIscsiTargetLun) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DiskPoolIscsiTargetLun) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DiskPoolIscsiTargetLun) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/disk_pool_iscsi_target_lun azurerm_disk_pool_iscsi_target_lun} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/disk_pool_iscsi_target_lun azurerm_disk_pool_iscsi_target_lun} Resource.
 func NewDiskPoolIscsiTargetLun(scope constructs.Construct, id *string, config *DiskPoolIscsiTargetLunConfig) DiskPoolIscsiTargetLun {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewDiskPoolIscsiTargetLun(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/disk_pool_iscsi_target_lun azurerm_disk_pool_iscsi_target_lun} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/disk_pool_iscsi_target_lun azurerm_disk_pool_iscsi_target_lun} Resource.
 func NewDiskPoolIscsiTargetLun_Override(d DiskPoolIscsiTargetLun, scope constructs.Construct, id *string, config *DiskPoolIscsiTargetLunConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_DiskPoolIscsiTargetLun)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DiskPoolIscsiTargetLun)SetCount(val *float64) {
+func (j *jsiiProxy_DiskPoolIscsiTargetLun)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

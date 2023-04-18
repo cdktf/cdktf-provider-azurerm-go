@@ -72,6 +72,10 @@ func (j *jsiiProxy_SubscriptionPolicyExemption) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_SubscriptionPolicyExemption) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SubscriptionPolicyExemption) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

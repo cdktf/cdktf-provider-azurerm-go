@@ -2,14 +2,14 @@ package privatednsresolverforwardingrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/privatednsresolverforwardingrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/privatednsresolverforwardingrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/private_dns_resolver_forwarding_rule azurerm_private_dns_resolver_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/private_dns_resolver_forwarding_rule azurerm_private_dns_resolver_forwarding_rule}.
 type PrivateDnsResolverForwardingRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type PrivateDnsResolverForwardingRule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -159,8 +159,8 @@ func (j *jsiiProxy_PrivateDnsResolverForwardingRule) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_PrivateDnsResolverForwardingRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PrivateDnsResolverForwardingRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -450,7 +450,7 @@ func (j *jsiiProxy_PrivateDnsResolverForwardingRule) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/private_dns_resolver_forwarding_rule azurerm_private_dns_resolver_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/private_dns_resolver_forwarding_rule azurerm_private_dns_resolver_forwarding_rule} Resource.
 func NewPrivateDnsResolverForwardingRule(scope constructs.Construct, id *string, config *PrivateDnsResolverForwardingRuleConfig) PrivateDnsResolverForwardingRule {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewPrivateDnsResolverForwardingRule(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/private_dns_resolver_forwarding_rule azurerm_private_dns_resolver_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/private_dns_resolver_forwarding_rule azurerm_private_dns_resolver_forwarding_rule} Resource.
 func NewPrivateDnsResolverForwardingRule_Override(p PrivateDnsResolverForwardingRule, scope constructs.Construct, id *string, config *PrivateDnsResolverForwardingRuleConfig) {
 	_init_.Initialize()
 
@@ -490,7 +490,10 @@ func (j *jsiiProxy_PrivateDnsResolverForwardingRule)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_PrivateDnsResolverForwardingRule)SetCount(val *float64) {
+func (j *jsiiProxy_PrivateDnsResolverForwardingRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

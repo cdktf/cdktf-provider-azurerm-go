@@ -80,6 +80,10 @@ func (j *jsiiProxy_CosmosdbMongoDatabase) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbMongoDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbMongoDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }

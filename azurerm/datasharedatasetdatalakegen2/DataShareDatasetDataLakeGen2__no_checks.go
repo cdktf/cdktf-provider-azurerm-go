@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataShareDatasetDataLakeGen2) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataShareDatasetDataLakeGen2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataShareDatasetDataLakeGen2) validateSetFilePathParameters(val *string) error {
 	return nil
 }

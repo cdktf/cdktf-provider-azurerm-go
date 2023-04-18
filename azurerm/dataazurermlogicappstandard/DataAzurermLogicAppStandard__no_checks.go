@@ -72,6 +72,10 @@ func validateDataAzurermLogicAppStandard_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermLogicAppStandard) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermLogicAppStandard) validateSetIdParameters(val *string) error {
 	return nil
 }

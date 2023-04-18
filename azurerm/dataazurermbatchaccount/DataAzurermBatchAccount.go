@@ -2,14 +2,14 @@ package dataazurermbatchaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermbatchaccount/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermbatchaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/batch_account azurerm_batch_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/batch_account azurerm_batch_account}.
 type DataAzurermBatchAccount interface {
 	cdktf.TerraformDataSource
 	AccountEndpoint() *string
@@ -18,9 +18,9 @@ type DataAzurermBatchAccount interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataAzurermBatchAccount) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermBatchAccount) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermBatchAccount) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -440,7 +440,7 @@ func (j *jsiiProxy_DataAzurermBatchAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/batch_account azurerm_batch_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/batch_account azurerm_batch_account} Data Source.
 func NewDataAzurermBatchAccount(scope constructs.Construct, id *string, config *DataAzurermBatchAccountConfig) DataAzurermBatchAccount {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewDataAzurermBatchAccount(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/batch_account azurerm_batch_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/batch_account azurerm_batch_account} Data Source.
 func NewDataAzurermBatchAccount_Override(d DataAzurermBatchAccount, scope constructs.Construct, id *string, config *DataAzurermBatchAccountConfig) {
 	_init_.Initialize()
 
@@ -469,7 +469,10 @@ func NewDataAzurermBatchAccount_Override(d DataAzurermBatchAccount, scope constr
 	)
 }
 
-func (j *jsiiProxy_DataAzurermBatchAccount)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermBatchAccount)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

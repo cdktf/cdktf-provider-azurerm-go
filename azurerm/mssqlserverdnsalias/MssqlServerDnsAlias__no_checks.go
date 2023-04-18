@@ -72,6 +72,10 @@ func (j *jsiiProxy_MssqlServerDnsAlias) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_MssqlServerDnsAlias) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlServerDnsAlias) validateSetIdParameters(val *string) error {
 	return nil
 }

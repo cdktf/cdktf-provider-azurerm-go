@@ -80,6 +80,10 @@ func (j *jsiiProxy_SpringCloudBuilder) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudBuilder) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudBuilder) validateSetIdParameters(val *string) error {
 	return nil
 }

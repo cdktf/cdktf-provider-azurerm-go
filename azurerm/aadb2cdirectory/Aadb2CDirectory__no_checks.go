@@ -72,6 +72,10 @@ func (j *jsiiProxy_Aadb2CDirectory) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_Aadb2CDirectory) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Aadb2CDirectory) validateSetCountryCodeParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_KubernetesFleetManager) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesFleetManager) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesFleetManager) validateSetIdParameters(val *string) error {
 	return nil
 }

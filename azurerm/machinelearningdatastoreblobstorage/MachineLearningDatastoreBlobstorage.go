@@ -2,14 +2,14 @@ package machinelearningdatastoreblobstorage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/machinelearningdatastoreblobstorage/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/machinelearningdatastoreblobstorage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/machine_learning_datastore_blobstorage azurerm_machine_learning_datastore_blobstorage}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/machine_learning_datastore_blobstorage azurerm_machine_learning_datastore_blobstorage}.
 type MachineLearningDatastoreBlobstorage interface {
 	cdktf.TerraformResource
 	AccountKey() *string
@@ -24,9 +24,9 @@ type MachineLearningDatastoreBlobstorage interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -192,8 +192,8 @@ func (j *jsiiProxy_MachineLearningDatastoreBlobstorage) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_MachineLearningDatastoreBlobstorage) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MachineLearningDatastoreBlobstorage) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -523,7 +523,7 @@ func (j *jsiiProxy_MachineLearningDatastoreBlobstorage) WorkspaceIdInput() *stri
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/machine_learning_datastore_blobstorage azurerm_machine_learning_datastore_blobstorage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/machine_learning_datastore_blobstorage azurerm_machine_learning_datastore_blobstorage} Resource.
 func NewMachineLearningDatastoreBlobstorage(scope constructs.Construct, id *string, config *MachineLearningDatastoreBlobstorageConfig) MachineLearningDatastoreBlobstorage {
 	_init_.Initialize()
 
@@ -541,7 +541,7 @@ func NewMachineLearningDatastoreBlobstorage(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/machine_learning_datastore_blobstorage azurerm_machine_learning_datastore_blobstorage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/machine_learning_datastore_blobstorage azurerm_machine_learning_datastore_blobstorage} Resource.
 func NewMachineLearningDatastoreBlobstorage_Override(m MachineLearningDatastoreBlobstorage, scope constructs.Construct, id *string, config *MachineLearningDatastoreBlobstorageConfig) {
 	_init_.Initialize()
 
@@ -574,7 +574,10 @@ func (j *jsiiProxy_MachineLearningDatastoreBlobstorage)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_MachineLearningDatastoreBlobstorage)SetCount(val *float64) {
+func (j *jsiiProxy_MachineLearningDatastoreBlobstorage)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

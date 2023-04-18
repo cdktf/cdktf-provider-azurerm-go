@@ -2,9 +2,9 @@ package eventgridsystemtopiceventsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/eventgridsystemtopiceventsubscription/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/eventgridsystemtopiceventsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -40,9 +40,9 @@ type EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeOutputRefer
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Values() *[]*float64
-	SetValues(val *[]*float64)
-	ValuesInput() *[]*float64
+	Values() interface{}
+	SetValues(val interface{})
+	ValuesInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -172,8 +172,8 @@ func (j *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRa
 	return returns
 }
 
-func (j *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeOutputReference) Values() *[]*float64 {
-	var returns *[]*float64
+func (j *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeOutputReference) Values() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"values",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRa
 	return returns
 }
 
-func (j *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeOutputReference) ValuesInput() *[]*float64 {
-	var returns *[]*float64
+func (j *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeOutputReference) ValuesInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"valuesInput",
@@ -286,7 +286,7 @@ func (j *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRa
 	)
 }
 
-func (j *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeOutputReference)SetValues(val *[]*float64) {
+func (j *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeOutputReference)SetValues(val interface{}) {
 	if err := j.validateSetValuesParameters(val); err != nil {
 		panic(err)
 	}

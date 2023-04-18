@@ -72,6 +72,10 @@ func (j *jsiiProxy_SpringCloudAppRedisAssociation) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudAppRedisAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudAppRedisAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

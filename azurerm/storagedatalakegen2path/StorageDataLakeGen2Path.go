@@ -2,14 +2,14 @@ package storagedatalakegen2path
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/storagedatalakegen2path/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/storagedatalakegen2path/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/storage_data_lake_gen2_path azurerm_storage_data_lake_gen2_path}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/storage_data_lake_gen2_path azurerm_storage_data_lake_gen2_path}.
 type StorageDataLakeGen2Path interface {
 	cdktf.TerraformResource
 	Ace() StorageDataLakeGen2PathAceList
@@ -23,9 +23,9 @@ type StorageDataLakeGen2Path interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -183,8 +183,8 @@ func (j *jsiiProxy_StorageDataLakeGen2Path) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_StorageDataLakeGen2Path) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_StorageDataLakeGen2Path) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -474,7 +474,7 @@ func (j *jsiiProxy_StorageDataLakeGen2Path) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/storage_data_lake_gen2_path azurerm_storage_data_lake_gen2_path} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/storage_data_lake_gen2_path azurerm_storage_data_lake_gen2_path} Resource.
 func NewStorageDataLakeGen2Path(scope constructs.Construct, id *string, config *StorageDataLakeGen2PathConfig) StorageDataLakeGen2Path {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewStorageDataLakeGen2Path(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/storage_data_lake_gen2_path azurerm_storage_data_lake_gen2_path} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/storage_data_lake_gen2_path azurerm_storage_data_lake_gen2_path} Resource.
 func NewStorageDataLakeGen2Path_Override(s StorageDataLakeGen2Path, scope constructs.Construct, id *string, config *StorageDataLakeGen2PathConfig) {
 	_init_.Initialize()
 
@@ -514,7 +514,10 @@ func (j *jsiiProxy_StorageDataLakeGen2Path)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StorageDataLakeGen2Path)SetCount(val *float64) {
+func (j *jsiiProxy_StorageDataLakeGen2Path)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

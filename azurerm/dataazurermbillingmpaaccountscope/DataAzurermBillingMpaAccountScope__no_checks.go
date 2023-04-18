@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermBillingMpaAccountScope) validateSetBillingAccountN
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermBillingMpaAccountScope) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermBillingMpaAccountScope) validateSetCustomerNameParameters(val *string) error {
 	return nil
 }

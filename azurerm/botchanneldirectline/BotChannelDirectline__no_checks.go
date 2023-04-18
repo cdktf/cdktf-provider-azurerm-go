@@ -80,6 +80,10 @@ func (j *jsiiProxy_BotChannelDirectline) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_BotChannelDirectline) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelDirectline) validateSetIdParameters(val *string) error {
 	return nil
 }

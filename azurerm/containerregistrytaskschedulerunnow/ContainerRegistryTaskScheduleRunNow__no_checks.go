@@ -76,6 +76,10 @@ func (j *jsiiProxy_ContainerRegistryTaskScheduleRunNow) validateSetContainerRegi
 	return nil
 }
 
+func (j *jsiiProxy_ContainerRegistryTaskScheduleRunNow) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerRegistryTaskScheduleRunNow) validateSetIdParameters(val *string) error {
 	return nil
 }

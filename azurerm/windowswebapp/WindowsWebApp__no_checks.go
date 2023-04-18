@@ -128,6 +128,10 @@ func (j *jsiiProxy_WindowsWebApp) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_WindowsWebApp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsWebApp) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -8,7 +8,7 @@ type ConsumptionBudgetSubscriptionConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -19,36 +19,36 @@ type ConsumptionBudgetSubscriptionConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/consumption_budget_subscription#amount ConsumptionBudgetSubscription#amount}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/consumption_budget_subscription#amount ConsumptionBudgetSubscription#amount}.
 	Amount *float64 `field:"required" json:"amount" yaml:"amount"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/consumption_budget_subscription#name ConsumptionBudgetSubscription#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/consumption_budget_subscription#name ConsumptionBudgetSubscription#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// notification block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/consumption_budget_subscription#notification ConsumptionBudgetSubscription#notification}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/consumption_budget_subscription#notification ConsumptionBudgetSubscription#notification}
 	Notification interface{} `field:"required" json:"notification" yaml:"notification"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/consumption_budget_subscription#subscription_id ConsumptionBudgetSubscription#subscription_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/consumption_budget_subscription#subscription_id ConsumptionBudgetSubscription#subscription_id}.
 	SubscriptionId *string `field:"required" json:"subscriptionId" yaml:"subscriptionId"`
 	// time_period block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/consumption_budget_subscription#time_period ConsumptionBudgetSubscription#time_period}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/consumption_budget_subscription#time_period ConsumptionBudgetSubscription#time_period}
 	TimePeriod *ConsumptionBudgetSubscriptionTimePeriod `field:"required" json:"timePeriod" yaml:"timePeriod"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/consumption_budget_subscription#etag ConsumptionBudgetSubscription#etag}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/consumption_budget_subscription#etag ConsumptionBudgetSubscription#etag}.
 	Etag *string `field:"optional" json:"etag" yaml:"etag"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/consumption_budget_subscription#filter ConsumptionBudgetSubscription#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/consumption_budget_subscription#filter ConsumptionBudgetSubscription#filter}
 	Filter *ConsumptionBudgetSubscriptionFilter `field:"optional" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/consumption_budget_subscription#id ConsumptionBudgetSubscription#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/consumption_budget_subscription#id ConsumptionBudgetSubscription#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/consumption_budget_subscription#time_grain ConsumptionBudgetSubscription#time_grain}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/consumption_budget_subscription#time_grain ConsumptionBudgetSubscription#time_grain}.
 	TimeGrain *string `field:"optional" json:"timeGrain" yaml:"timeGrain"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/consumption_budget_subscription#timeouts ConsumptionBudgetSubscription#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/consumption_budget_subscription#timeouts ConsumptionBudgetSubscription#timeouts}
 	Timeouts *ConsumptionBudgetSubscriptionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

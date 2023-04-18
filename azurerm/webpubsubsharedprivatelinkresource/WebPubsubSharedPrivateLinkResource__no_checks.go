@@ -72,6 +72,10 @@ func (j *jsiiProxy_WebPubsubSharedPrivateLinkResource) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_WebPubsubSharedPrivateLinkResource) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WebPubsubSharedPrivateLinkResource) validateSetIdParameters(val *string) error {
 	return nil
 }

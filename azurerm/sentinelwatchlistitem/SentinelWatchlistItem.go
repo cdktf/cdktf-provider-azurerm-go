@@ -2,14 +2,14 @@ package sentinelwatchlistitem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/sentinelwatchlistitem/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/sentinelwatchlistitem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_watchlist_item azurerm_sentinel_watchlist_item}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sentinel_watchlist_item azurerm_sentinel_watchlist_item}.
 type SentinelWatchlistItem interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SentinelWatchlistItem interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_SentinelWatchlistItem) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_SentinelWatchlistItem) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SentinelWatchlistItem) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_SentinelWatchlistItem) WatchlistIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_watchlist_item azurerm_sentinel_watchlist_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sentinel_watchlist_item azurerm_sentinel_watchlist_item} Resource.
 func NewSentinelWatchlistItem(scope constructs.Construct, id *string, config *SentinelWatchlistItemConfig) SentinelWatchlistItem {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewSentinelWatchlistItem(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_watchlist_item azurerm_sentinel_watchlist_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sentinel_watchlist_item azurerm_sentinel_watchlist_item} Resource.
 func NewSentinelWatchlistItem_Override(s SentinelWatchlistItem, scope constructs.Construct, id *string, config *SentinelWatchlistItemConfig) {
 	_init_.Initialize()
 
@@ -420,7 +420,10 @@ func (j *jsiiProxy_SentinelWatchlistItem)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SentinelWatchlistItem)SetCount(val *float64) {
+func (j *jsiiProxy_SentinelWatchlistItem)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

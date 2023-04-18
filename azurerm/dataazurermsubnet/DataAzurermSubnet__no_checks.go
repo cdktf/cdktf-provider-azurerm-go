@@ -68,6 +68,10 @@ func validateDataAzurermSubnet_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermSubnet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermSubnet) validateSetIdParameters(val *string) error {
 	return nil
 }

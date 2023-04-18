@@ -2,14 +2,14 @@ package streamanalyticsoutputcosmosdb
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/streamanalyticsoutputcosmosdb/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/streamanalyticsoutputcosmosdb/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_cosmosdb azurerm_stream_analytics_output_cosmosdb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_output_cosmosdb azurerm_stream_analytics_output_cosmosdb}.
 type StreamAnalyticsOutputCosmosdb interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -30,9 +30,9 @@ type StreamAnalyticsOutputCosmosdb interface {
 	SetCosmosdbSqlDatabaseId(val *string)
 	CosmosdbSqlDatabaseIdInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -222,8 +222,8 @@ func (j *jsiiProxy_StreamAnalyticsOutputCosmosdb) CosmosdbSqlDatabaseIdInput() *
 	return returns
 }
 
-func (j *jsiiProxy_StreamAnalyticsOutputCosmosdb) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_StreamAnalyticsOutputCosmosdb) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -473,7 +473,7 @@ func (j *jsiiProxy_StreamAnalyticsOutputCosmosdb) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_cosmosdb azurerm_stream_analytics_output_cosmosdb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_output_cosmosdb azurerm_stream_analytics_output_cosmosdb} Resource.
 func NewStreamAnalyticsOutputCosmosdb(scope constructs.Construct, id *string, config *StreamAnalyticsOutputCosmosdbConfig) StreamAnalyticsOutputCosmosdb {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewStreamAnalyticsOutputCosmosdb(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_cosmosdb azurerm_stream_analytics_output_cosmosdb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_output_cosmosdb azurerm_stream_analytics_output_cosmosdb} Resource.
 func NewStreamAnalyticsOutputCosmosdb_Override(s StreamAnalyticsOutputCosmosdb, scope constructs.Construct, id *string, config *StreamAnalyticsOutputCosmosdbConfig) {
 	_init_.Initialize()
 
@@ -546,7 +546,10 @@ func (j *jsiiProxy_StreamAnalyticsOutputCosmosdb)SetCosmosdbSqlDatabaseId(val *s
 	)
 }
 
-func (j *jsiiProxy_StreamAnalyticsOutputCosmosdb)SetCount(val *float64) {
+func (j *jsiiProxy_StreamAnalyticsOutputCosmosdb)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

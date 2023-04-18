@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermContainerRegistryScopeMap) validateSetContainerReg
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermContainerRegistryScopeMap) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermContainerRegistryScopeMap) validateSetIdParameters(val *string) error {
 	return nil
 }

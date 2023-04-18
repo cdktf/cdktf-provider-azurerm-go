@@ -88,6 +88,10 @@ func (j *jsiiProxy_EventhubNamespace) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_EventhubNamespace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventhubNamespace) validateSetDedicatedClusterIdParameters(val *string) error {
 	return nil
 }

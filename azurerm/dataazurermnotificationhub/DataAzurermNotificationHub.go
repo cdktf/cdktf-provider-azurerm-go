@@ -2,14 +2,14 @@ package dataazurermnotificationhub
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermnotificationhub/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermnotificationhub/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/notification_hub azurerm_notification_hub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/notification_hub azurerm_notification_hub}.
 type DataAzurermNotificationHub interface {
 	cdktf.TerraformDataSource
 	ApnsCredential() DataAzurermNotificationHubApnsCredentialList
@@ -18,9 +18,9 @@ type DataAzurermNotificationHub interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DataAzurermNotificationHub) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermNotificationHub) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermNotificationHub) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -395,7 +395,7 @@ func (j *jsiiProxy_DataAzurermNotificationHub) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/notification_hub azurerm_notification_hub} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/notification_hub azurerm_notification_hub} Data Source.
 func NewDataAzurermNotificationHub(scope constructs.Construct, id *string, config *DataAzurermNotificationHubConfig) DataAzurermNotificationHub {
 	_init_.Initialize()
 
@@ -413,7 +413,7 @@ func NewDataAzurermNotificationHub(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/notification_hub azurerm_notification_hub} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/notification_hub azurerm_notification_hub} Data Source.
 func NewDataAzurermNotificationHub_Override(d DataAzurermNotificationHub, scope constructs.Construct, id *string, config *DataAzurermNotificationHubConfig) {
 	_init_.Initialize()
 
@@ -424,7 +424,10 @@ func NewDataAzurermNotificationHub_Override(d DataAzurermNotificationHub, scope 
 	)
 }
 
-func (j *jsiiProxy_DataAzurermNotificationHub)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermNotificationHub)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

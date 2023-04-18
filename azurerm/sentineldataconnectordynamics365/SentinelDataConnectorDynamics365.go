@@ -2,14 +2,14 @@ package sentineldataconnectordynamics365
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/sentineldataconnectordynamics365/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/sentineldataconnectordynamics365/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_data_connector_dynamics_365 azurerm_sentinel_data_connector_dynamics_365}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sentinel_data_connector_dynamics_365 azurerm_sentinel_data_connector_dynamics_365}.
 type SentinelDataConnectorDynamics365 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SentinelDataConnectorDynamics365 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_SentinelDataConnectorDynamics365) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_SentinelDataConnectorDynamics365) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SentinelDataConnectorDynamics365) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_SentinelDataConnectorDynamics365) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_data_connector_dynamics_365 azurerm_sentinel_data_connector_dynamics_365} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sentinel_data_connector_dynamics_365 azurerm_sentinel_data_connector_dynamics_365} Resource.
 func NewSentinelDataConnectorDynamics365(scope constructs.Construct, id *string, config *SentinelDataConnectorDynamics365Config) SentinelDataConnectorDynamics365 {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewSentinelDataConnectorDynamics365(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_data_connector_dynamics_365 azurerm_sentinel_data_connector_dynamics_365} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sentinel_data_connector_dynamics_365 azurerm_sentinel_data_connector_dynamics_365} Resource.
 func NewSentinelDataConnectorDynamics365_Override(s SentinelDataConnectorDynamics365, scope constructs.Construct, id *string, config *SentinelDataConnectorDynamics365Config) {
 	_init_.Initialize()
 
@@ -420,7 +420,10 @@ func (j *jsiiProxy_SentinelDataConnectorDynamics365)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_SentinelDataConnectorDynamics365)SetCount(val *float64) {
+func (j *jsiiProxy_SentinelDataConnectorDynamics365)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

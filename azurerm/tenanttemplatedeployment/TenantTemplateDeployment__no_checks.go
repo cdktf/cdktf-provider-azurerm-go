@@ -72,6 +72,10 @@ func (j *jsiiProxy_TenantTemplateDeployment) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_TenantTemplateDeployment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TenantTemplateDeployment) validateSetDebugLevelParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_RedisLinkedServer) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_RedisLinkedServer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisLinkedServer) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataazurermroutefilter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermroutefilter/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermroutefilter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/route_filter azurerm_route_filter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/route_filter azurerm_route_filter}.
 type DataAzurermRouteFilter interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermRouteFilter interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataAzurermRouteFilter) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermRouteFilter) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermRouteFilter) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -361,7 +361,7 @@ func (j *jsiiProxy_DataAzurermRouteFilter) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/route_filter azurerm_route_filter} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/route_filter azurerm_route_filter} Data Source.
 func NewDataAzurermRouteFilter(scope constructs.Construct, id *string, config *DataAzurermRouteFilterConfig) DataAzurermRouteFilter {
 	_init_.Initialize()
 
@@ -379,7 +379,7 @@ func NewDataAzurermRouteFilter(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/route_filter azurerm_route_filter} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/route_filter azurerm_route_filter} Data Source.
 func NewDataAzurermRouteFilter_Override(d DataAzurermRouteFilter, scope constructs.Construct, id *string, config *DataAzurermRouteFilterConfig) {
 	_init_.Initialize()
 
@@ -390,7 +390,10 @@ func NewDataAzurermRouteFilter_Override(d DataAzurermRouteFilter, scope construc
 	)
 }
 
-func (j *jsiiProxy_DataAzurermRouteFilter)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermRouteFilter)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

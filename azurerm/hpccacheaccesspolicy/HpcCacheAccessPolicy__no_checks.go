@@ -76,6 +76,10 @@ func (j *jsiiProxy_HpcCacheAccessPolicy) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_HpcCacheAccessPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HpcCacheAccessPolicy) validateSetHpcCacheIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataazurermvirtualnetworkgateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermvirtualnetworkgateway/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermvirtualnetworkgateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/virtual_network_gateway azurerm_virtual_network_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/virtual_network_gateway azurerm_virtual_network_gateway}.
 type DataAzurermVirtualNetworkGateway interface {
 	cdktf.TerraformDataSource
 	ActiveActive() cdktf.IResolvable
@@ -19,9 +19,9 @@ type DataAzurermVirtualNetworkGateway interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomRoute() DataAzurermVirtualNetworkGatewayCustomRouteList
 	DefaultLocalNetworkGatewayId() *string
 	// Experimental.
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DataAzurermVirtualNetworkGateway) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermVirtualNetworkGateway) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermVirtualNetworkGateway) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -482,7 +482,7 @@ func (j *jsiiProxy_DataAzurermVirtualNetworkGateway) VpnType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/virtual_network_gateway azurerm_virtual_network_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/virtual_network_gateway azurerm_virtual_network_gateway} Data Source.
 func NewDataAzurermVirtualNetworkGateway(scope constructs.Construct, id *string, config *DataAzurermVirtualNetworkGatewayConfig) DataAzurermVirtualNetworkGateway {
 	_init_.Initialize()
 
@@ -500,7 +500,7 @@ func NewDataAzurermVirtualNetworkGateway(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/virtual_network_gateway azurerm_virtual_network_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/virtual_network_gateway azurerm_virtual_network_gateway} Data Source.
 func NewDataAzurermVirtualNetworkGateway_Override(d DataAzurermVirtualNetworkGateway, scope constructs.Construct, id *string, config *DataAzurermVirtualNetworkGatewayConfig) {
 	_init_.Initialize()
 
@@ -511,7 +511,10 @@ func NewDataAzurermVirtualNetworkGateway_Override(d DataAzurermVirtualNetworkGat
 	)
 }
 
-func (j *jsiiProxy_DataAzurermVirtualNetworkGateway)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermVirtualNetworkGateway)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

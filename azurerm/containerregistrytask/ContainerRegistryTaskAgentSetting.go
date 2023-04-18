@@ -2,7 +2,7 @@ package containerregistrytask
 
 
 type ContainerRegistryTaskAgentSetting struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurerm/r/container_registry_task#cpu ContainerRegistryTask#cpu}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/container_registry_task#cpu ContainerRegistryTask#cpu}.
 	Cpu *float64 `field:"required" json:"cpu" yaml:"cpu"`
 }
 

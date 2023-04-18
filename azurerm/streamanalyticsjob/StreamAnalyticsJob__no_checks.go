@@ -88,6 +88,10 @@ func (j *jsiiProxy_StreamAnalyticsJob) validateSetContentStoragePolicyParameters
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsJob) validateSetDataLocaleParameters(val *string) error {
 	return nil
 }

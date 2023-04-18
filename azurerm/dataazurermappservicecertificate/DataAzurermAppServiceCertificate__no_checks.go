@@ -68,6 +68,10 @@ func validateDataAzurermAppServiceCertificate_IsTerraformElementParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermAppServiceCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermAppServiceCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_MaintenanceAssignmentDedicatedHost) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_MaintenanceAssignmentDedicatedHost) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MaintenanceAssignmentDedicatedHost) validateSetDedicatedHostIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func validateDataAzurermStorageEncryptionScope_IsTerraformElementParameters(x in
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermStorageEncryptionScope) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermStorageEncryptionScope) validateSetIdParameters(val *string) error {
 	return nil
 }

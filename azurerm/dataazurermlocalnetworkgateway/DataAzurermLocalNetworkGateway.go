@@ -2,14 +2,14 @@ package dataazurermlocalnetworkgateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermlocalnetworkgateway/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermlocalnetworkgateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/local_network_gateway azurerm_local_network_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/local_network_gateway azurerm_local_network_gateway}.
 type DataAzurermLocalNetworkGateway interface {
 	cdktf.TerraformDataSource
 	AddressSpace() *[]*string
@@ -19,9 +19,9 @@ type DataAzurermLocalNetworkGateway interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataAzurermLocalNetworkGateway) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLocalNetworkGateway) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermLocalNetworkGateway) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataAzurermLocalNetworkGateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/local_network_gateway azurerm_local_network_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/local_network_gateway azurerm_local_network_gateway} Data Source.
 func NewDataAzurermLocalNetworkGateway(scope constructs.Construct, id *string, config *DataAzurermLocalNetworkGatewayConfig) DataAzurermLocalNetworkGateway {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataAzurermLocalNetworkGateway(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/local_network_gateway azurerm_local_network_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/local_network_gateway azurerm_local_network_gateway} Data Source.
 func NewDataAzurermLocalNetworkGateway_Override(d DataAzurermLocalNetworkGateway, scope constructs.Construct, id *string, config *DataAzurermLocalNetworkGatewayConfig) {
 	_init_.Initialize()
 
@@ -423,7 +423,10 @@ func NewDataAzurermLocalNetworkGateway_Override(d DataAzurermLocalNetworkGateway
 	)
 }
 
-func (j *jsiiProxy_DataAzurermLocalNetworkGateway)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermLocalNetworkGateway)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

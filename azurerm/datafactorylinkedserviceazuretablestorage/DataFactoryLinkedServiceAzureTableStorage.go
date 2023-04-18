@@ -2,14 +2,14 @@ package datafactorylinkedserviceazuretablestorage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/datafactorylinkedserviceazuretablestorage/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/datafactorylinkedserviceazuretablestorage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_service_azure_table_storage azurerm_data_factory_linked_service_azure_table_storage}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_service_azure_table_storage azurerm_data_factory_linked_service_azure_table_storage}.
 type DataFactoryLinkedServiceAzureTableStorage interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -30,9 +30,9 @@ type DataFactoryLinkedServiceAzureTableStorage interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataFactoryId() *string
 	SetDataFactoryId(val *string)
 	DataFactoryIdInput() *string
@@ -228,8 +228,8 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage) ConstructNodeMetad
 	return returns
 }
 
-func (j *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -499,7 +499,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_service_azure_table_storage azurerm_data_factory_linked_service_azure_table_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_service_azure_table_storage azurerm_data_factory_linked_service_azure_table_storage} Resource.
 func NewDataFactoryLinkedServiceAzureTableStorage(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureTableStorageConfig) DataFactoryLinkedServiceAzureTableStorage {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewDataFactoryLinkedServiceAzureTableStorage(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_factory_linked_service_azure_table_storage azurerm_data_factory_linked_service_azure_table_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_factory_linked_service_azure_table_storage azurerm_data_factory_linked_service_azure_table_storage} Resource.
 func NewDataFactoryLinkedServiceAzureTableStorage_Override(d DataFactoryLinkedServiceAzureTableStorage, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureTableStorageConfig) {
 	_init_.Initialize()
 
@@ -572,7 +572,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage)SetConnectionString
 	)
 }
 
-func (j *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage)SetCount(val *float64) {
+func (j *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

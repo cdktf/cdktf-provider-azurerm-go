@@ -88,6 +88,10 @@ func (j *jsiiProxy_IothubEndpointStorageContainer) validateSetContainerNameParam
 	return nil
 }
 
+func (j *jsiiProxy_IothubEndpointStorageContainer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubEndpointStorageContainer) validateSetEncodingParameters(val *string) error {
 	return nil
 }

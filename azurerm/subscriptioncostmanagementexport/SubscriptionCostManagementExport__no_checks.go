@@ -84,6 +84,10 @@ func (j *jsiiProxy_SubscriptionCostManagementExport) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_SubscriptionCostManagementExport) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SubscriptionCostManagementExport) validateSetIdParameters(val *string) error {
 	return nil
 }

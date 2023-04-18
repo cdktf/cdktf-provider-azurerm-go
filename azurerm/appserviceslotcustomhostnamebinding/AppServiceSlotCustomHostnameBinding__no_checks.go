@@ -76,6 +76,10 @@ func (j *jsiiProxy_AppServiceSlotCustomHostnameBinding) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_AppServiceSlotCustomHostnameBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceSlotCustomHostnameBinding) validateSetHostnameParameters(val *string) error {
 	return nil
 }

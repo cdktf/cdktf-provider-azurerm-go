@@ -72,6 +72,10 @@ func (j *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) validateSetConnecti
 	return nil
 }
 
+func (j *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) validateSetDigitalTwinsIdParameters(val *string) error {
 	return nil
 }

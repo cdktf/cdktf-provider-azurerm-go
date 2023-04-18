@@ -2,14 +2,14 @@ package dataazurermapimanagementgatewayhostnameconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermapimanagementgatewayhostnameconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermapimanagementgatewayhostnameconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration}.
 type DataAzurermApiManagementGatewayHostNameConfiguration interface {
 	cdktf.TerraformDataSource
 	ApiManagementId() *string
@@ -21,9 +21,9 @@ type DataAzurermApiManagementGatewayHostNameConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -166,8 +166,8 @@ func (j *jsiiProxy_DataAzurermApiManagementGatewayHostNameConfiguration) Constru
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermApiManagementGatewayHostNameConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermApiManagementGatewayHostNameConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -417,7 +417,7 @@ func (j *jsiiProxy_DataAzurermApiManagementGatewayHostNameConfiguration) Tls11En
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration} Data Source.
 func NewDataAzurermApiManagementGatewayHostNameConfiguration(scope constructs.Construct, id *string, config *DataAzurermApiManagementGatewayHostNameConfigurationConfig) DataAzurermApiManagementGatewayHostNameConfiguration {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewDataAzurermApiManagementGatewayHostNameConfiguration(scope constructs.Co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration} Data Source.
 func NewDataAzurermApiManagementGatewayHostNameConfiguration_Override(d DataAzurermApiManagementGatewayHostNameConfiguration, scope constructs.Construct, id *string, config *DataAzurermApiManagementGatewayHostNameConfigurationConfig) {
 	_init_.Initialize()
 
@@ -457,7 +457,10 @@ func (j *jsiiProxy_DataAzurermApiManagementGatewayHostNameConfiguration)SetApiMa
 	)
 }
 
-func (j *jsiiProxy_DataAzurermApiManagementGatewayHostNameConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermApiManagementGatewayHostNameConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

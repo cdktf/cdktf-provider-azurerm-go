@@ -68,6 +68,10 @@ func validateDataAzurermVirtualDesktopHostPool_IsTerraformElementParameters(x in
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermVirtualDesktopHostPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermVirtualDesktopHostPool) validateSetIdParameters(val *string) error {
 	return nil
 }

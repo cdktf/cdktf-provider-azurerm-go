@@ -68,6 +68,10 @@ func validateDataAzurermIpGroup_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermIpGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermIpGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

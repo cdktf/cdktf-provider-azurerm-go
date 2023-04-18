@@ -68,6 +68,10 @@ func validateDataAzurermCosmosdbRestorableDatabaseAccounts_IsTerraformElementPar
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermCosmosdbRestorableDatabaseAccounts) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermCosmosdbRestorableDatabaseAccounts) validateSetIdParameters(val *string) error {
 	return nil
 }

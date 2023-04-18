@@ -2,14 +2,14 @@ package dataazurermtrafficmanagergeographicallocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermtrafficmanagergeographicallocation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermtrafficmanagergeographicallocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/traffic_manager_geographical_location azurerm_traffic_manager_geographical_location}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/traffic_manager_geographical_location azurerm_traffic_manager_geographical_location}.
 type DataAzurermTrafficManagerGeographicalLocation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermTrafficManagerGeographicalLocation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataAzurermTrafficManagerGeographicalLocation) ConstructNodeM
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermTrafficManagerGeographicalLocation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermTrafficManagerGeographicalLocation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -305,7 +305,7 @@ func (j *jsiiProxy_DataAzurermTrafficManagerGeographicalLocation) TimeoutsInput(
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/traffic_manager_geographical_location azurerm_traffic_manager_geographical_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/traffic_manager_geographical_location azurerm_traffic_manager_geographical_location} Data Source.
 func NewDataAzurermTrafficManagerGeographicalLocation(scope constructs.Construct, id *string, config *DataAzurermTrafficManagerGeographicalLocationConfig) DataAzurermTrafficManagerGeographicalLocation {
 	_init_.Initialize()
 
@@ -323,7 +323,7 @@ func NewDataAzurermTrafficManagerGeographicalLocation(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/traffic_manager_geographical_location azurerm_traffic_manager_geographical_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/traffic_manager_geographical_location azurerm_traffic_manager_geographical_location} Data Source.
 func NewDataAzurermTrafficManagerGeographicalLocation_Override(d DataAzurermTrafficManagerGeographicalLocation, scope constructs.Construct, id *string, config *DataAzurermTrafficManagerGeographicalLocationConfig) {
 	_init_.Initialize()
 
@@ -334,7 +334,10 @@ func NewDataAzurermTrafficManagerGeographicalLocation_Override(d DataAzurermTraf
 	)
 }
 
-func (j *jsiiProxy_DataAzurermTrafficManagerGeographicalLocation)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermTrafficManagerGeographicalLocation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

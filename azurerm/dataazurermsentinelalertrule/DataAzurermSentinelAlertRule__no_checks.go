@@ -68,6 +68,10 @@ func validateDataAzurermSentinelAlertRule_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermSentinelAlertRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermSentinelAlertRule) validateSetIdParameters(val *string) error {
 	return nil
 }

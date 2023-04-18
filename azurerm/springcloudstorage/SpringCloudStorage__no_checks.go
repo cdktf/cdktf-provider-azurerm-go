@@ -72,6 +72,10 @@ func (j *jsiiProxy_SpringCloudStorage) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudStorage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudStorage) validateSetIdParameters(val *string) error {
 	return nil
 }

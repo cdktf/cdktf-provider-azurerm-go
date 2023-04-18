@@ -2,14 +2,14 @@ package mediaasset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/mediaasset/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/mediaasset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/media_asset azurerm_media_asset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_asset azurerm_media_asset}.
 type MediaAsset interface {
 	cdktf.TerraformResource
 	AlternateId() *string
@@ -27,9 +27,9 @@ type MediaAsset interface {
 	SetContainer(val *string)
 	ContainerInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -204,8 +204,8 @@ func (j *jsiiProxy_MediaAsset) ContainerInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MediaAsset) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MediaAsset) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -475,7 +475,7 @@ func (j *jsiiProxy_MediaAsset) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/media_asset azurerm_media_asset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_asset azurerm_media_asset} Resource.
 func NewMediaAsset(scope constructs.Construct, id *string, config *MediaAssetConfig) MediaAsset {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewMediaAsset(scope constructs.Construct, id *string, config *MediaAssetCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/media_asset azurerm_media_asset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_asset azurerm_media_asset} Resource.
 func NewMediaAsset_Override(m MediaAsset, scope constructs.Construct, id *string, config *MediaAssetConfig) {
 	_init_.Initialize()
 
@@ -537,7 +537,10 @@ func (j *jsiiProxy_MediaAsset)SetContainer(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MediaAsset)SetCount(val *float64) {
+func (j *jsiiProxy_MediaAsset)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

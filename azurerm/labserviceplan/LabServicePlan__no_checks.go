@@ -88,6 +88,10 @@ func (j *jsiiProxy_LabServicePlan) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_LabServicePlan) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LabServicePlan) validateSetDefaultNetworkSubnetIdParameters(val *string) error {
 	return nil
 }

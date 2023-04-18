@@ -2,14 +2,14 @@ package apimanagementidentityprovidergoogle
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/apimanagementidentityprovidergoogle/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/apimanagementidentityprovidergoogle/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_identity_provider_google azurerm_api_management_identity_provider_google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_identity_provider_google azurerm_api_management_identity_provider_google}.
 type ApiManagementIdentityProviderGoogle interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -30,9 +30,9 @@ type ApiManagementIdentityProviderGoogle interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -211,8 +211,8 @@ func (j *jsiiProxy_ApiManagementIdentityProviderGoogle) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_ApiManagementIdentityProviderGoogle) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApiManagementIdentityProviderGoogle) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,7 +402,7 @@ func (j *jsiiProxy_ApiManagementIdentityProviderGoogle) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_identity_provider_google azurerm_api_management_identity_provider_google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_identity_provider_google azurerm_api_management_identity_provider_google} Resource.
 func NewApiManagementIdentityProviderGoogle(scope constructs.Construct, id *string, config *ApiManagementIdentityProviderGoogleConfig) ApiManagementIdentityProviderGoogle {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewApiManagementIdentityProviderGoogle(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_identity_provider_google azurerm_api_management_identity_provider_google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_identity_provider_google azurerm_api_management_identity_provider_google} Resource.
 func NewApiManagementIdentityProviderGoogle_Override(a ApiManagementIdentityProviderGoogle, scope constructs.Construct, id *string, config *ApiManagementIdentityProviderGoogleConfig) {
 	_init_.Initialize()
 
@@ -475,7 +475,10 @@ func (j *jsiiProxy_ApiManagementIdentityProviderGoogle)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_ApiManagementIdentityProviderGoogle)SetCount(val *float64) {
+func (j *jsiiProxy_ApiManagementIdentityProviderGoogle)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

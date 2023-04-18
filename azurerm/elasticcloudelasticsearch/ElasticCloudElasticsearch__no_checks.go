@@ -76,6 +76,10 @@ func (j *jsiiProxy_ElasticCloudElasticsearch) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ElasticCloudElasticsearch) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticCloudElasticsearch) validateSetElasticCloudEmailAddressParameters(val *string) error {
 	return nil
 }

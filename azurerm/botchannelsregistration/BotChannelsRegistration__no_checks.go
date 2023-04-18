@@ -76,6 +76,10 @@ func (j *jsiiProxy_BotChannelsRegistration) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_BotChannelsRegistration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelsRegistration) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

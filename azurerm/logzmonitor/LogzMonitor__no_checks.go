@@ -84,6 +84,10 @@ func (j *jsiiProxy_LogzMonitor) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_LogzMonitor) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogzMonitor) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package datadogmonitortagrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/datadogmonitortagrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/datadogmonitortagrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/datadog_monitor_tag_rule azurerm_datadog_monitor_tag_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/datadog_monitor_tag_rule azurerm_datadog_monitor_tag_rule}.
 type DatadogMonitorTagRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DatadogMonitorTagRule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatadogMonitorId() *string
 	SetDatadogMonitorId(val *string)
 	DatadogMonitorIdInput() *string
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DatadogMonitorTagRule) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DatadogMonitorTagRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DatadogMonitorTagRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -405,7 +405,7 @@ func (j *jsiiProxy_DatadogMonitorTagRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/datadog_monitor_tag_rule azurerm_datadog_monitor_tag_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/datadog_monitor_tag_rule azurerm_datadog_monitor_tag_rule} Resource.
 func NewDatadogMonitorTagRule(scope constructs.Construct, id *string, config *DatadogMonitorTagRuleConfig) DatadogMonitorTagRule {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewDatadogMonitorTagRule(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/datadog_monitor_tag_rule azurerm_datadog_monitor_tag_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/datadog_monitor_tag_rule azurerm_datadog_monitor_tag_rule} Resource.
 func NewDatadogMonitorTagRule_Override(d DatadogMonitorTagRule, scope constructs.Construct, id *string, config *DatadogMonitorTagRuleConfig) {
 	_init_.Initialize()
 
@@ -445,7 +445,10 @@ func (j *jsiiProxy_DatadogMonitorTagRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatadogMonitorTagRule)SetCount(val *float64) {
+func (j *jsiiProxy_DatadogMonitorTagRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

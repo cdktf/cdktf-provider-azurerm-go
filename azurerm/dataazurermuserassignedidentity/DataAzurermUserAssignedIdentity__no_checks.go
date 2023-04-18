@@ -68,6 +68,10 @@ func validateDataAzurermUserAssignedIdentity_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermUserAssignedIdentity) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermUserAssignedIdentity) validateSetIdParameters(val *string) error {
 	return nil
 }

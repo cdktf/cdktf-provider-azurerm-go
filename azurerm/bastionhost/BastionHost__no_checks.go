@@ -80,6 +80,10 @@ func (j *jsiiProxy_BastionHost) validateSetCopyPasteEnabledParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_BastionHost) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BastionHost) validateSetFileCopyEnabledParameters(val interface{}) error {
 	return nil
 }

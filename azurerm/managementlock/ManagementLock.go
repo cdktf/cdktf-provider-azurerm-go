@@ -2,14 +2,14 @@ package managementlock
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/managementlock/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/managementlock/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/management_lock azurerm_management_lock}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/management_lock azurerm_management_lock}.
 type ManagementLock interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ManagementLock interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ManagementLock) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_ManagementLock) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ManagementLock) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -403,7 +403,7 @@ func (j *jsiiProxy_ManagementLock) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/management_lock azurerm_management_lock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/management_lock azurerm_management_lock} Resource.
 func NewManagementLock(scope constructs.Construct, id *string, config *ManagementLockConfig) ManagementLock {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewManagementLock(scope constructs.Construct, id *string, config *Managemen
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/management_lock azurerm_management_lock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/management_lock azurerm_management_lock} Resource.
 func NewManagementLock_Override(m ManagementLock, scope constructs.Construct, id *string, config *ManagementLockConfig) {
 	_init_.Initialize()
 
@@ -443,7 +443,10 @@ func (j *jsiiProxy_ManagementLock)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagementLock)SetCount(val *float64) {
+func (j *jsiiProxy_ManagementLock)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

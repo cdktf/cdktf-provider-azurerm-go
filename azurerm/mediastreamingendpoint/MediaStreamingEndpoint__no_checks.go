@@ -96,6 +96,10 @@ func (j *jsiiProxy_MediaStreamingEndpoint) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_MediaStreamingEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaStreamingEndpoint) validateSetCustomHostNamesParameters(val *[]*string) error {
 	return nil
 }

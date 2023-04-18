@@ -120,6 +120,10 @@ func (j *jsiiProxy_CosmosdbAccount) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbAccount) validateSetCreateModeParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_RedisFirewallRule) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_RedisFirewallRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisFirewallRule) validateSetEndIpParameters(val *string) error {
 	return nil
 }

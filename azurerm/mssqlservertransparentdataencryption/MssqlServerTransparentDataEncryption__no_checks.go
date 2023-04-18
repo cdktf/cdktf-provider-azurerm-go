@@ -76,6 +76,10 @@ func (j *jsiiProxy_MssqlServerTransparentDataEncryption) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_MssqlServerTransparentDataEncryption) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlServerTransparentDataEncryption) validateSetIdParameters(val *string) error {
 	return nil
 }

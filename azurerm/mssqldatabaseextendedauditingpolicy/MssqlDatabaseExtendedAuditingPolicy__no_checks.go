@@ -72,6 +72,10 @@ func (j *jsiiProxy_MssqlDatabaseExtendedAuditingPolicy) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_MssqlDatabaseExtendedAuditingPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlDatabaseExtendedAuditingPolicy) validateSetDatabaseIdParameters(val *string) error {
 	return nil
 }

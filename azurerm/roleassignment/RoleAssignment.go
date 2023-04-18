@@ -2,14 +2,14 @@ package roleassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/roleassignment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/roleassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/role_assignment azurerm_role_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/role_assignment azurerm_role_assignment}.
 type RoleAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,9 +27,9 @@ type RoleAssignment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DelegatedManagedIdentityResourceId() *string
 	SetDelegatedManagedIdentityResourceId(val *string)
 	DelegatedManagedIdentityResourceIdInput() *string
@@ -218,8 +218,8 @@ func (j *jsiiProxy_RoleAssignment) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_RoleAssignment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_RoleAssignment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -559,7 +559,7 @@ func (j *jsiiProxy_RoleAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/role_assignment azurerm_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/role_assignment azurerm_role_assignment} Resource.
 func NewRoleAssignment(scope constructs.Construct, id *string, config *RoleAssignmentConfig) RoleAssignment {
 	_init_.Initialize()
 
@@ -577,7 +577,7 @@ func NewRoleAssignment(scope constructs.Construct, id *string, config *RoleAssig
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/role_assignment azurerm_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/role_assignment azurerm_role_assignment} Resource.
 func NewRoleAssignment_Override(r RoleAssignment, scope constructs.Construct, id *string, config *RoleAssignmentConfig) {
 	_init_.Initialize()
 
@@ -621,7 +621,10 @@ func (j *jsiiProxy_RoleAssignment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RoleAssignment)SetCount(val *float64) {
+func (j *jsiiProxy_RoleAssignment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

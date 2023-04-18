@@ -76,6 +76,10 @@ func (j *jsiiProxy_BotChannelAlexa) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_BotChannelAlexa) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelAlexa) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -92,6 +92,10 @@ func (j *jsiiProxy_ApiManagementIdentityProviderAadb2C) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementIdentityProviderAadb2C) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementIdentityProviderAadb2C) validateSetIdParameters(val *string) error {
 	return nil
 }

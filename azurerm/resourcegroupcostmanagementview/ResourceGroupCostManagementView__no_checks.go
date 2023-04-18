@@ -92,6 +92,10 @@ func (j *jsiiProxy_ResourceGroupCostManagementView) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_ResourceGroupCostManagementView) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResourceGroupCostManagementView) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

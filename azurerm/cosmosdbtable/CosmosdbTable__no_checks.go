@@ -80,6 +80,10 @@ func (j *jsiiProxy_CosmosdbTable) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbTable) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbTable) validateSetIdParameters(val *string) error {
 	return nil
 }

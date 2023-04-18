@@ -88,6 +88,10 @@ func (j *jsiiProxy_DashboardGrafana) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_DashboardGrafana) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardGrafana) validateSetDeterministicOutboundIpEnabledParameters(val interface{}) error {
 	return nil
 }

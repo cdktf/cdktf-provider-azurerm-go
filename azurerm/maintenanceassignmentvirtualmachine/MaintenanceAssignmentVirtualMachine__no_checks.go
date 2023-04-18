@@ -72,6 +72,10 @@ func (j *jsiiProxy_MaintenanceAssignmentVirtualMachine) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_MaintenanceAssignmentVirtualMachine) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MaintenanceAssignmentVirtualMachine) validateSetIdParameters(val *string) error {
 	return nil
 }

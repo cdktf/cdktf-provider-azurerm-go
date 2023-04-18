@@ -68,6 +68,10 @@ func validateDataAzurermMonitorLogProfile_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermMonitorLogProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMonitorLogProfile) validateSetIdParameters(val *string) error {
 	return nil
 }

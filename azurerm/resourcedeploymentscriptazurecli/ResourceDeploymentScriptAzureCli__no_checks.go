@@ -96,6 +96,10 @@ func (j *jsiiProxy_ResourceDeploymentScriptAzureCli) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_ResourceDeploymentScriptAzureCli) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResourceDeploymentScriptAzureCli) validateSetForceUpdateTagParameters(val *string) error {
 	return nil
 }

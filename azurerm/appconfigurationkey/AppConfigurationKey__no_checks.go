@@ -80,6 +80,10 @@ func (j *jsiiProxy_AppConfigurationKey) validateSetContentTypeParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_AppConfigurationKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppConfigurationKey) validateSetEtagParameters(val *string) error {
 	return nil
 }

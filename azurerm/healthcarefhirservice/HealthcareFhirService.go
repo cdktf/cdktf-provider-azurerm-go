@@ -2,14 +2,14 @@ package healthcarefhirservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/healthcarefhirservice/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/healthcarefhirservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/healthcare_fhir_service azurerm_healthcare_fhir_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/healthcare_fhir_service azurerm_healthcare_fhir_service}.
 type HealthcareFhirService interface {
 	cdktf.TerraformResource
 	AccessPolicyObjectIds() *[]*string
@@ -34,9 +34,9 @@ type HealthcareFhirService interface {
 	Cors() HealthcareFhirServiceCorsOutputReference
 	CorsInput() *HealthcareFhirServiceCors
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -287,8 +287,8 @@ func (j *jsiiProxy_HealthcareFhirService) CorsInput() *HealthcareFhirServiceCors
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirService) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_HealthcareFhirService) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -628,7 +628,7 @@ func (j *jsiiProxy_HealthcareFhirService) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/healthcare_fhir_service azurerm_healthcare_fhir_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/healthcare_fhir_service azurerm_healthcare_fhir_service} Resource.
 func NewHealthcareFhirService(scope constructs.Construct, id *string, config *HealthcareFhirServiceConfig) HealthcareFhirService {
 	_init_.Initialize()
 
@@ -646,7 +646,7 @@ func NewHealthcareFhirService(scope constructs.Construct, id *string, config *He
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/healthcare_fhir_service azurerm_healthcare_fhir_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/healthcare_fhir_service azurerm_healthcare_fhir_service} Resource.
 func NewHealthcareFhirService_Override(h HealthcareFhirService, scope constructs.Construct, id *string, config *HealthcareFhirServiceConfig) {
 	_init_.Initialize()
 
@@ -701,7 +701,10 @@ func (j *jsiiProxy_HealthcareFhirService)SetContainerRegistryLoginServerUrl(val 
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirService)SetCount(val *float64) {
+func (j *jsiiProxy_HealthcareFhirService)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

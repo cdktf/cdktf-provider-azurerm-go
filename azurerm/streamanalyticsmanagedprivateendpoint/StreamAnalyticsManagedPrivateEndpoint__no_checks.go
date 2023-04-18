@@ -72,6 +72,10 @@ func (j *jsiiProxy_StreamAnalyticsManagedPrivateEndpoint) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsManagedPrivateEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsManagedPrivateEndpoint) validateSetIdParameters(val *string) error {
 	return nil
 }

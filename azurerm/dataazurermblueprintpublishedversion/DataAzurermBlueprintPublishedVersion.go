@@ -2,14 +2,14 @@ package dataazurermblueprintpublishedversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermblueprintpublishedversion/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermblueprintpublishedversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/blueprint_published_version azurerm_blueprint_published_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/blueprint_published_version azurerm_blueprint_published_version}.
 type DataAzurermBlueprintPublishedVersion interface {
 	cdktf.TerraformDataSource
 	BlueprintName() *string
@@ -20,9 +20,9 @@ type DataAzurermBlueprintPublishedVersion interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DataAzurermBlueprintPublishedVersion) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermBlueprintPublishedVersion) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermBlueprintPublishedVersion) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -417,7 +417,7 @@ func (j *jsiiProxy_DataAzurermBlueprintPublishedVersion) VersionInput() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/blueprint_published_version azurerm_blueprint_published_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/blueprint_published_version azurerm_blueprint_published_version} Data Source.
 func NewDataAzurermBlueprintPublishedVersion(scope constructs.Construct, id *string, config *DataAzurermBlueprintPublishedVersionConfig) DataAzurermBlueprintPublishedVersion {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewDataAzurermBlueprintPublishedVersion(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/blueprint_published_version azurerm_blueprint_published_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/blueprint_published_version azurerm_blueprint_published_version} Data Source.
 func NewDataAzurermBlueprintPublishedVersion_Override(d DataAzurermBlueprintPublishedVersion, scope constructs.Construct, id *string, config *DataAzurermBlueprintPublishedVersionConfig) {
 	_init_.Initialize()
 
@@ -457,7 +457,10 @@ func (j *jsiiProxy_DataAzurermBlueprintPublishedVersion)SetBlueprintName(val *st
 	)
 }
 
-func (j *jsiiProxy_DataAzurermBlueprintPublishedVersion)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermBlueprintPublishedVersion)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

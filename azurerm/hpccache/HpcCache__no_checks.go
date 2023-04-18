@@ -104,6 +104,10 @@ func (j *jsiiProxy_HpcCache) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_HpcCache) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HpcCache) validateSetIdParameters(val *string) error {
 	return nil
 }

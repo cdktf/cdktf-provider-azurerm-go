@@ -2,14 +2,14 @@ package streamanalyticsoutputservicebustopic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/streamanalyticsoutputservicebustopic/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/streamanalyticsoutputservicebustopic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_servicebus_topic azurerm_stream_analytics_output_servicebus_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_output_servicebus_topic azurerm_stream_analytics_output_servicebus_topic}.
 type StreamAnalyticsOutputServicebusTopic interface {
 	cdktf.TerraformResource
 	AuthenticationMode() *string
@@ -24,9 +24,9 @@ type StreamAnalyticsOutputServicebusTopic interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -197,8 +197,8 @@ func (j *jsiiProxy_StreamAnalyticsOutputServicebusTopic) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_StreamAnalyticsOutputServicebusTopic) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_StreamAnalyticsOutputServicebusTopic) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -568,7 +568,7 @@ func (j *jsiiProxy_StreamAnalyticsOutputServicebusTopic) TopicNameInput() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_servicebus_topic azurerm_stream_analytics_output_servicebus_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_output_servicebus_topic azurerm_stream_analytics_output_servicebus_topic} Resource.
 func NewStreamAnalyticsOutputServicebusTopic(scope constructs.Construct, id *string, config *StreamAnalyticsOutputServicebusTopicConfig) StreamAnalyticsOutputServicebusTopic {
 	_init_.Initialize()
 
@@ -586,7 +586,7 @@ func NewStreamAnalyticsOutputServicebusTopic(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/stream_analytics_output_servicebus_topic azurerm_stream_analytics_output_servicebus_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_output_servicebus_topic azurerm_stream_analytics_output_servicebus_topic} Resource.
 func NewStreamAnalyticsOutputServicebusTopic_Override(s StreamAnalyticsOutputServicebusTopic, scope constructs.Construct, id *string, config *StreamAnalyticsOutputServicebusTopicConfig) {
 	_init_.Initialize()
 
@@ -619,7 +619,10 @@ func (j *jsiiProxy_StreamAnalyticsOutputServicebusTopic)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_StreamAnalyticsOutputServicebusTopic)SetCount(val *float64) {
+func (j *jsiiProxy_StreamAnalyticsOutputServicebusTopic)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

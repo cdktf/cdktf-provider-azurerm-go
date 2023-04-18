@@ -92,6 +92,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) validateSetConnecti
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

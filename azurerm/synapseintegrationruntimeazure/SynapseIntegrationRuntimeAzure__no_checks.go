@@ -80,6 +80,10 @@ func (j *jsiiProxy_SynapseIntegrationRuntimeAzure) validateSetCoreCountParameter
 	return nil
 }
 
+func (j *jsiiProxy_SynapseIntegrationRuntimeAzure) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseIntegrationRuntimeAzure) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

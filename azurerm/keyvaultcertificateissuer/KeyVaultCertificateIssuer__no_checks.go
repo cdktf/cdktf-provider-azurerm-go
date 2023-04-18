@@ -80,6 +80,10 @@ func (j *jsiiProxy_KeyVaultCertificateIssuer) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_KeyVaultCertificateIssuer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyVaultCertificateIssuer) validateSetIdParameters(val *string) error {
 	return nil
 }

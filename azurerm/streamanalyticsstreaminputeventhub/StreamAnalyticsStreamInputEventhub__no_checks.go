@@ -80,6 +80,10 @@ func (j *jsiiProxy_StreamAnalyticsStreamInputEventhub) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsStreamInputEventhub) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsStreamInputEventhub) validateSetEventhubConsumerGroupNameParameters(val *string) error {
 	return nil
 }

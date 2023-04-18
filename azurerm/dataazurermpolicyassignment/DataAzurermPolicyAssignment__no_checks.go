@@ -68,6 +68,10 @@ func validateDataAzurermPolicyAssignment_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermPolicyAssignment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPolicyAssignment) validateSetIdParameters(val *string) error {
 	return nil
 }

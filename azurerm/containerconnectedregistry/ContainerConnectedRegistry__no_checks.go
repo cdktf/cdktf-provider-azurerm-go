@@ -88,6 +88,10 @@ func (j *jsiiProxy_ContainerConnectedRegistry) validateSetContainerRegistryIdPar
 	return nil
 }
 
+func (j *jsiiProxy_ContainerConnectedRegistry) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerConnectedRegistry) validateSetIdParameters(val *string) error {
 	return nil
 }

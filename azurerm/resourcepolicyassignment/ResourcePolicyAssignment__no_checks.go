@@ -88,6 +88,10 @@ func (j *jsiiProxy_ResourcePolicyAssignment) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ResourcePolicyAssignment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResourcePolicyAssignment) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

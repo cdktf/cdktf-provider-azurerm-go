@@ -2,14 +2,14 @@ package devtestschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/devtestschedule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/devtestschedule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/dev_test_schedule azurerm_dev_test_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/dev_test_schedule azurerm_dev_test_schedule}.
 type DevTestSchedule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DevTestSchedule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DailyRecurrence() DevTestScheduleDailyRecurrenceOutputReference
 	DailyRecurrenceInput() *DevTestScheduleDailyRecurrence
 	// Experimental.
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DevTestSchedule) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_DevTestSchedule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DevTestSchedule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -591,7 +591,7 @@ func (j *jsiiProxy_DevTestSchedule) WeeklyRecurrenceInput() *DevTestScheduleWeek
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/dev_test_schedule azurerm_dev_test_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/dev_test_schedule azurerm_dev_test_schedule} Resource.
 func NewDevTestSchedule(scope constructs.Construct, id *string, config *DevTestScheduleConfig) DevTestSchedule {
 	_init_.Initialize()
 
@@ -609,7 +609,7 @@ func NewDevTestSchedule(scope constructs.Construct, id *string, config *DevTestS
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/dev_test_schedule azurerm_dev_test_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/dev_test_schedule azurerm_dev_test_schedule} Resource.
 func NewDevTestSchedule_Override(d DevTestSchedule, scope constructs.Construct, id *string, config *DevTestScheduleConfig) {
 	_init_.Initialize()
 
@@ -631,7 +631,10 @@ func (j *jsiiProxy_DevTestSchedule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DevTestSchedule)SetCount(val *float64) {
+func (j *jsiiProxy_DevTestSchedule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_RelayHybridConnection) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_RelayHybridConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RelayHybridConnection) validateSetIdParameters(val *string) error {
 	return nil
 }

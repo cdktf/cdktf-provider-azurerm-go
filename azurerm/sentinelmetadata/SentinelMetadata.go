@@ -2,14 +2,14 @@ package sentinelmetadata
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/sentinelmetadata/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/sentinelmetadata/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_metadata azurerm_sentinel_metadata}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sentinel_metadata azurerm_sentinel_metadata}.
 type SentinelMetadata interface {
 	cdktf.TerraformResource
 	Author() SentinelMetadataAuthorOutputReference
@@ -31,9 +31,9 @@ type SentinelMetadata interface {
 	SetContentSchemaVersion(val *string)
 	ContentSchemaVersionInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomVersion() *string
 	SetCustomVersion(val *string)
 	CustomVersionInput() *string
@@ -298,8 +298,8 @@ func (j *jsiiProxy_SentinelMetadata) ContentSchemaVersionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SentinelMetadata) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SentinelMetadata) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -809,7 +809,7 @@ func (j *jsiiProxy_SentinelMetadata) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_metadata azurerm_sentinel_metadata} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sentinel_metadata azurerm_sentinel_metadata} Resource.
 func NewSentinelMetadata(scope constructs.Construct, id *string, config *SentinelMetadataConfig) SentinelMetadata {
 	_init_.Initialize()
 
@@ -827,7 +827,7 @@ func NewSentinelMetadata(scope constructs.Construct, id *string, config *Sentine
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_metadata azurerm_sentinel_metadata} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sentinel_metadata azurerm_sentinel_metadata} Resource.
 func NewSentinelMetadata_Override(s SentinelMetadata, scope constructs.Construct, id *string, config *SentinelMetadataConfig) {
 	_init_.Initialize()
 
@@ -871,7 +871,10 @@ func (j *jsiiProxy_SentinelMetadata)SetContentSchemaVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SentinelMetadata)SetCount(val *float64) {
+func (j *jsiiProxy_SentinelMetadata)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_TrafficManagerNestedEndpoint) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_TrafficManagerNestedEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TrafficManagerNestedEndpoint) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

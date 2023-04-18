@@ -72,6 +72,10 @@ func (j *jsiiProxy_SqlElasticpool) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_SqlElasticpool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlElasticpool) validateSetDbDtuMaxParameters(val *float64) error {
 	return nil
 }

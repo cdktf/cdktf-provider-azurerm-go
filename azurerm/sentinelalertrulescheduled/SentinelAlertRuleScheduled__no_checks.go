@@ -100,6 +100,10 @@ func (j *jsiiProxy_SentinelAlertRuleScheduled) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SentinelAlertRuleScheduled) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelAlertRuleScheduled) validateSetCustomDetailsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func validateDataAzurermEventgridSystemTopic_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermEventgridSystemTopic) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermEventgridSystemTopic) validateSetIdParameters(val *string) error {
 	return nil
 }

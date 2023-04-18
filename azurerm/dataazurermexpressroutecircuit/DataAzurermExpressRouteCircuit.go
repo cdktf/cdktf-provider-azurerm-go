@@ -2,14 +2,14 @@ package dataazurermexpressroutecircuit
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermexpressroutecircuit/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermexpressroutecircuit/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/express_route_circuit azurerm_express_route_circuit}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/express_route_circuit azurerm_express_route_circuit}.
 type DataAzurermExpressRouteCircuit interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermExpressRouteCircuit interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataAzurermExpressRouteCircuit) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermExpressRouteCircuit) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermExpressRouteCircuit) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataAzurermExpressRouteCircuit) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/express_route_circuit azurerm_express_route_circuit} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/express_route_circuit azurerm_express_route_circuit} Data Source.
 func NewDataAzurermExpressRouteCircuit(scope constructs.Construct, id *string, config *DataAzurermExpressRouteCircuitConfig) DataAzurermExpressRouteCircuit {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataAzurermExpressRouteCircuit(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/express_route_circuit azurerm_express_route_circuit} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/express_route_circuit azurerm_express_route_circuit} Data Source.
 func NewDataAzurermExpressRouteCircuit_Override(d DataAzurermExpressRouteCircuit, scope constructs.Construct, id *string, config *DataAzurermExpressRouteCircuitConfig) {
 	_init_.Initialize()
 
@@ -423,7 +423,10 @@ func NewDataAzurermExpressRouteCircuit_Override(d DataAzurermExpressRouteCircuit
 	)
 }
 
-func (j *jsiiProxy_DataAzurermExpressRouteCircuit)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermExpressRouteCircuit)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_LabServiceSchedule) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_LabServiceSchedule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LabServiceSchedule) validateSetIdParameters(val *string) error {
 	return nil
 }

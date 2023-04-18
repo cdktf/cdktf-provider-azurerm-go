@@ -2,14 +2,14 @@ package synapseworkspacesqlaadadmin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/synapseworkspacesqlaadadmin/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/synapseworkspacesqlaadadmin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin}.
 type SynapseWorkspaceSqlAadAdminA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SynapseWorkspaceSqlAadAdminA interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -151,8 +151,8 @@ func (j *jsiiProxy_SynapseWorkspaceSqlAadAdminA) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_SynapseWorkspaceSqlAadAdminA) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SynapseWorkspaceSqlAadAdminA) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,7 +402,7 @@ func (j *jsiiProxy_SynapseWorkspaceSqlAadAdminA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin} Resource.
 func NewSynapseWorkspaceSqlAadAdminA(scope constructs.Construct, id *string, config *SynapseWorkspaceSqlAadAdminAConfig) SynapseWorkspaceSqlAadAdminA {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewSynapseWorkspaceSqlAadAdminA(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin} Resource.
 func NewSynapseWorkspaceSqlAadAdminA_Override(s SynapseWorkspaceSqlAadAdminA, scope constructs.Construct, id *string, config *SynapseWorkspaceSqlAadAdminAConfig) {
 	_init_.Initialize()
 
@@ -442,7 +442,10 @@ func (j *jsiiProxy_SynapseWorkspaceSqlAadAdminA)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SynapseWorkspaceSqlAadAdminA)SetCount(val *float64) {
+func (j *jsiiProxy_SynapseWorkspaceSqlAadAdminA)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

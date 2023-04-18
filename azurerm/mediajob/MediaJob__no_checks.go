@@ -80,6 +80,10 @@ func (j *jsiiProxy_MediaJob) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_MediaJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaJob) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_SshPublicKey) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_SshPublicKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SshPublicKey) validateSetIdParameters(val *string) error {
 	return nil
 }

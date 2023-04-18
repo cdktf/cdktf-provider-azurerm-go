@@ -2,14 +2,14 @@ package loganalyticsquerypackquery
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/loganalyticsquerypackquery/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/loganalyticsquerypackquery/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/log_analytics_query_pack_query azurerm_log_analytics_query_pack_query}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/log_analytics_query_pack_query azurerm_log_analytics_query_pack_query}.
 type LogAnalyticsQueryPackQuery interface {
 	cdktf.TerraformResource
 	AdditionalSettingsJson() *string
@@ -30,9 +30,9 @@ type LogAnalyticsQueryPackQuery interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -236,8 +236,8 @@ func (j *jsiiProxy_LogAnalyticsQueryPackQuery) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_LogAnalyticsQueryPackQuery) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LogAnalyticsQueryPackQuery) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -547,7 +547,7 @@ func (j *jsiiProxy_LogAnalyticsQueryPackQuery) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/log_analytics_query_pack_query azurerm_log_analytics_query_pack_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/log_analytics_query_pack_query azurerm_log_analytics_query_pack_query} Resource.
 func NewLogAnalyticsQueryPackQuery(scope constructs.Construct, id *string, config *LogAnalyticsQueryPackQueryConfig) LogAnalyticsQueryPackQuery {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewLogAnalyticsQueryPackQuery(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/log_analytics_query_pack_query azurerm_log_analytics_query_pack_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/log_analytics_query_pack_query azurerm_log_analytics_query_pack_query} Resource.
 func NewLogAnalyticsQueryPackQuery_Override(l LogAnalyticsQueryPackQuery, scope constructs.Construct, id *string, config *LogAnalyticsQueryPackQueryConfig) {
 	_init_.Initialize()
 
@@ -620,7 +620,10 @@ func (j *jsiiProxy_LogAnalyticsQueryPackQuery)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogAnalyticsQueryPackQuery)SetCount(val *float64) {
+func (j *jsiiProxy_LogAnalyticsQueryPackQuery)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

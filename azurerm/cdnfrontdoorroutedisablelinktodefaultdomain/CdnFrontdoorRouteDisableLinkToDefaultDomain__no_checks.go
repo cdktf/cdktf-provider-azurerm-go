@@ -80,6 +80,10 @@ func (j *jsiiProxy_CdnFrontdoorRouteDisableLinkToDefaultDomain) validateSetConne
 	return nil
 }
 
+func (j *jsiiProxy_CdnFrontdoorRouteDisableLinkToDefaultDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnFrontdoorRouteDisableLinkToDefaultDomain) validateSetIdParameters(val *string) error {
 	return nil
 }

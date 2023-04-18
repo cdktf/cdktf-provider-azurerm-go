@@ -80,6 +80,10 @@ func (j *jsiiProxy_ServicebusSubscriptionRule) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ServicebusSubscriptionRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicebusSubscriptionRule) validateSetFilterTypeParameters(val *string) error {
 	return nil
 }

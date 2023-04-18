@@ -80,6 +80,10 @@ func (j *jsiiProxy_StorageAccountNetworkRulesA) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_StorageAccountNetworkRulesA) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccountNetworkRulesA) validateSetDefaultActionParameters(val *string) error {
 	return nil
 }

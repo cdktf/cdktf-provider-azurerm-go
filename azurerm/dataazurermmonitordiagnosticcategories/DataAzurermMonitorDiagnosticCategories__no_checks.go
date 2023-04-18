@@ -68,6 +68,10 @@ func validateDataAzurermMonitorDiagnosticCategories_IsTerraformElementParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermMonitorDiagnosticCategories) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMonitorDiagnosticCategories) validateSetIdParameters(val *string) error {
 	return nil
 }

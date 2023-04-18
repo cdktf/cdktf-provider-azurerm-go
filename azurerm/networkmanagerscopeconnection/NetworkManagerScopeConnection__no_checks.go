@@ -72,6 +72,10 @@ func (j *jsiiProxy_NetworkManagerScopeConnection) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_NetworkManagerScopeConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkManagerScopeConnection) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

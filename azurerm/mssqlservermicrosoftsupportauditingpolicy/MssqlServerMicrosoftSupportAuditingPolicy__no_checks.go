@@ -76,6 +76,10 @@ func (j *jsiiProxy_MssqlServerMicrosoftSupportAuditingPolicy) validateSetConnect
 	return nil
 }
 
+func (j *jsiiProxy_MssqlServerMicrosoftSupportAuditingPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlServerMicrosoftSupportAuditingPolicy) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

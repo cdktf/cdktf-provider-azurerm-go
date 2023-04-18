@@ -2,14 +2,14 @@ package mariadbfirewallrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/mariadbfirewallrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/mariadbfirewallrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/mariadb_firewall_rule azurerm_mariadb_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mariadb_firewall_rule azurerm_mariadb_firewall_rule}.
 type MariadbFirewallRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MariadbFirewallRule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_MariadbFirewallRule) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_MariadbFirewallRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MariadbFirewallRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -425,7 +425,7 @@ func (j *jsiiProxy_MariadbFirewallRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mariadb_firewall_rule azurerm_mariadb_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mariadb_firewall_rule azurerm_mariadb_firewall_rule} Resource.
 func NewMariadbFirewallRule(scope constructs.Construct, id *string, config *MariadbFirewallRuleConfig) MariadbFirewallRule {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewMariadbFirewallRule(scope constructs.Construct, id *string, config *Mari
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mariadb_firewall_rule azurerm_mariadb_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mariadb_firewall_rule azurerm_mariadb_firewall_rule} Resource.
 func NewMariadbFirewallRule_Override(m MariadbFirewallRule, scope constructs.Construct, id *string, config *MariadbFirewallRuleConfig) {
 	_init_.Initialize()
 
@@ -465,7 +465,10 @@ func (j *jsiiProxy_MariadbFirewallRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MariadbFirewallRule)SetCount(val *float64) {
+func (j *jsiiProxy_MariadbFirewallRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

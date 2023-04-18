@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateSetIdParameters(val *string) error {
 	return nil
 }

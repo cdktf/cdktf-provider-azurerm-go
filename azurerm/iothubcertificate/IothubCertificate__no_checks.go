@@ -76,6 +76,10 @@ func (j *jsiiProxy_IothubCertificate) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_IothubCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IothubCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

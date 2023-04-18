@@ -2,14 +2,14 @@ package virtualwan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/virtualwan/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/virtualwan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_wan azurerm_virtual_wan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_wan azurerm_virtual_wan}.
 type VirtualWan interface {
 	cdktf.TerraformResource
 	AllowBranchToBranchTraffic() interface{}
@@ -24,9 +24,9 @@ type VirtualWan interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -188,8 +188,8 @@ func (j *jsiiProxy_VirtualWan) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VirtualWan) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VirtualWan) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -499,7 +499,7 @@ func (j *jsiiProxy_VirtualWan) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_wan azurerm_virtual_wan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_wan azurerm_virtual_wan} Resource.
 func NewVirtualWan(scope constructs.Construct, id *string, config *VirtualWanConfig) VirtualWan {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewVirtualWan(scope constructs.Construct, id *string, config *VirtualWanCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_wan azurerm_virtual_wan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_wan azurerm_virtual_wan} Resource.
 func NewVirtualWan_Override(v VirtualWan, scope constructs.Construct, id *string, config *VirtualWanConfig) {
 	_init_.Initialize()
 
@@ -550,7 +550,10 @@ func (j *jsiiProxy_VirtualWan)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VirtualWan)SetCount(val *float64) {
+func (j *jsiiProxy_VirtualWan)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

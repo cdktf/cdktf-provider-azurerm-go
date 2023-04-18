@@ -2,14 +2,14 @@ package natgatewaypublicipassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/natgatewaypublicipassociation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/natgatewaypublicipassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/nat_gateway_public_ip_association azurerm_nat_gateway_public_ip_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/nat_gateway_public_ip_association azurerm_nat_gateway_public_ip_association}.
 type NatGatewayPublicIpAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type NatGatewayPublicIpAssociation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_NatGatewayPublicIpAssociation) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_NatGatewayPublicIpAssociation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_NatGatewayPublicIpAssociation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_NatGatewayPublicIpAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/nat_gateway_public_ip_association azurerm_nat_gateway_public_ip_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/nat_gateway_public_ip_association azurerm_nat_gateway_public_ip_association} Resource.
 func NewNatGatewayPublicIpAssociation(scope constructs.Construct, id *string, config *NatGatewayPublicIpAssociationConfig) NatGatewayPublicIpAssociation {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewNatGatewayPublicIpAssociation(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/nat_gateway_public_ip_association azurerm_nat_gateway_public_ip_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/nat_gateway_public_ip_association azurerm_nat_gateway_public_ip_association} Resource.
 func NewNatGatewayPublicIpAssociation_Override(n NatGatewayPublicIpAssociation, scope constructs.Construct, id *string, config *NatGatewayPublicIpAssociationConfig) {
 	_init_.Initialize()
 
@@ -396,7 +396,10 @@ func (j *jsiiProxy_NatGatewayPublicIpAssociation)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_NatGatewayPublicIpAssociation)SetCount(val *float64) {
+func (j *jsiiProxy_NatGatewayPublicIpAssociation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

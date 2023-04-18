@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataProtectionBackupInstanceDisk) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_DataProtectionBackupInstanceDisk) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupInstanceDisk) validateSetDiskIdParameters(val *string) error {
 	return nil
 }

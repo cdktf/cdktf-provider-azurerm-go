@@ -2,14 +2,14 @@ package botchannelalexa
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/botchannelalexa/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/botchannelalexa/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/bot_channel_alexa azurerm_bot_channel_alexa}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/bot_channel_alexa azurerm_bot_channel_alexa}.
 type BotChannelAlexa interface {
 	cdktf.TerraformResource
 	BotName() *string
@@ -24,9 +24,9 @@ type BotChannelAlexa interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -171,8 +171,8 @@ func (j *jsiiProxy_BotChannelAlexa) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_BotChannelAlexa) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_BotChannelAlexa) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,7 +402,7 @@ func (j *jsiiProxy_BotChannelAlexa) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/bot_channel_alexa azurerm_bot_channel_alexa} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/bot_channel_alexa azurerm_bot_channel_alexa} Resource.
 func NewBotChannelAlexa(scope constructs.Construct, id *string, config *BotChannelAlexaConfig) BotChannelAlexa {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewBotChannelAlexa(scope constructs.Construct, id *string, config *BotChann
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/bot_channel_alexa azurerm_bot_channel_alexa} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/bot_channel_alexa azurerm_bot_channel_alexa} Resource.
 func NewBotChannelAlexa_Override(b BotChannelAlexa, scope constructs.Construct, id *string, config *BotChannelAlexaConfig) {
 	_init_.Initialize()
 
@@ -453,7 +453,10 @@ func (j *jsiiProxy_BotChannelAlexa)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BotChannelAlexa)SetCount(val *float64) {
+func (j *jsiiProxy_BotChannelAlexa)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

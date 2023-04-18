@@ -76,6 +76,10 @@ func (j *jsiiProxy_LbBackendAddressPool) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_LbBackendAddressPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbBackendAddressPool) validateSetIdParameters(val *string) error {
 	return nil
 }

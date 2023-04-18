@@ -2,14 +2,14 @@ package policydefinition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/policydefinition/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/policydefinition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/policy_definition azurerm_policy_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/policy_definition azurerm_policy_definition}.
 type PolicyDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type PolicyDefinition interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -172,8 +172,8 @@ func (j *jsiiProxy_PolicyDefinition) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDefinition) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PolicyDefinition) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -533,7 +533,7 @@ func (j *jsiiProxy_PolicyDefinition) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/policy_definition azurerm_policy_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/policy_definition azurerm_policy_definition} Resource.
 func NewPolicyDefinition(scope constructs.Construct, id *string, config *PolicyDefinitionConfig) PolicyDefinition {
 	_init_.Initialize()
 
@@ -551,7 +551,7 @@ func NewPolicyDefinition(scope constructs.Construct, id *string, config *PolicyD
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/policy_definition azurerm_policy_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/policy_definition azurerm_policy_definition} Resource.
 func NewPolicyDefinition_Override(p PolicyDefinition, scope constructs.Construct, id *string, config *PolicyDefinitionConfig) {
 	_init_.Initialize()
 
@@ -573,7 +573,10 @@ func (j *jsiiProxy_PolicyDefinition)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDefinition)SetCount(val *float64) {
+func (j *jsiiProxy_PolicyDefinition)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

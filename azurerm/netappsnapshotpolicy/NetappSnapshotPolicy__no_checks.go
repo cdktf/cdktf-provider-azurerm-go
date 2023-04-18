@@ -92,6 +92,10 @@ func (j *jsiiProxy_NetappSnapshotPolicy) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_NetappSnapshotPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappSnapshotPolicy) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

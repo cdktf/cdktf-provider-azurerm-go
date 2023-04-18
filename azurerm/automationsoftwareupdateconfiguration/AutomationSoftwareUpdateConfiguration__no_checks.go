@@ -100,6 +100,10 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) validateSetDurationParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceKeyVault) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryLinkedServiceKeyVault) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceKeyVault) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

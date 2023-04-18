@@ -2,14 +2,14 @@ package privatednscnamerecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/privatednscnamerecord/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/privatednscnamerecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/private_dns_cname_record azurerm_private_dns_cname_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/private_dns_cname_record azurerm_private_dns_cname_record}.
 type PrivateDnsCnameRecord interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type PrivateDnsCnameRecord interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -159,8 +159,8 @@ func (j *jsiiProxy_PrivateDnsCnameRecord) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_PrivateDnsCnameRecord) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PrivateDnsCnameRecord) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -460,7 +460,7 @@ func (j *jsiiProxy_PrivateDnsCnameRecord) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/private_dns_cname_record azurerm_private_dns_cname_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/private_dns_cname_record azurerm_private_dns_cname_record} Resource.
 func NewPrivateDnsCnameRecord(scope constructs.Construct, id *string, config *PrivateDnsCnameRecordConfig) PrivateDnsCnameRecord {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewPrivateDnsCnameRecord(scope constructs.Construct, id *string, config *Pr
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/private_dns_cname_record azurerm_private_dns_cname_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/private_dns_cname_record azurerm_private_dns_cname_record} Resource.
 func NewPrivateDnsCnameRecord_Override(p PrivateDnsCnameRecord, scope constructs.Construct, id *string, config *PrivateDnsCnameRecordConfig) {
 	_init_.Initialize()
 
@@ -500,7 +500,10 @@ func (j *jsiiProxy_PrivateDnsCnameRecord)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PrivateDnsCnameRecord)SetCount(val *float64) {
+func (j *jsiiProxy_PrivateDnsCnameRecord)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

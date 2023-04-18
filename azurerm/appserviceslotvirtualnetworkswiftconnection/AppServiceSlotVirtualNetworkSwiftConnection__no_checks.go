@@ -76,6 +76,10 @@ func (j *jsiiProxy_AppServiceSlotVirtualNetworkSwiftConnection) validateSetConne
 	return nil
 }
 
+func (j *jsiiProxy_AppServiceSlotVirtualNetworkSwiftConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceSlotVirtualNetworkSwiftConnection) validateSetIdParameters(val *string) error {
 	return nil
 }

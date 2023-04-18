@@ -76,6 +76,10 @@ func (j *jsiiProxy_KustoClusterManagedPrivateEndpoint) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_KustoClusterManagedPrivateEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoClusterManagedPrivateEndpoint) validateSetGroupIdParameters(val *string) error {
 	return nil
 }

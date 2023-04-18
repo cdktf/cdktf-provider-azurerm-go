@@ -2,14 +2,14 @@ package mediaassetfilter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/mediaassetfilter/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/mediaassetfilter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/media_asset_filter azurerm_media_asset_filter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_asset_filter azurerm_media_asset_filter}.
 type MediaAssetFilter interface {
 	cdktf.TerraformResource
 	AssetId() *string
@@ -24,9 +24,9 @@ type MediaAssetFilter interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -177,8 +177,8 @@ func (j *jsiiProxy_MediaAssetFilter) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_MediaAssetFilter) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MediaAssetFilter) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -428,7 +428,7 @@ func (j *jsiiProxy_MediaAssetFilter) TrackSelectionInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/media_asset_filter azurerm_media_asset_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_asset_filter azurerm_media_asset_filter} Resource.
 func NewMediaAssetFilter(scope constructs.Construct, id *string, config *MediaAssetFilterConfig) MediaAssetFilter {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewMediaAssetFilter(scope constructs.Construct, id *string, config *MediaAs
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/media_asset_filter azurerm_media_asset_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_asset_filter azurerm_media_asset_filter} Resource.
 func NewMediaAssetFilter_Override(m MediaAssetFilter, scope constructs.Construct, id *string, config *MediaAssetFilterConfig) {
 	_init_.Initialize()
 
@@ -479,7 +479,10 @@ func (j *jsiiProxy_MediaAssetFilter)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MediaAssetFilter)SetCount(val *float64) {
+func (j *jsiiProxy_MediaAssetFilter)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

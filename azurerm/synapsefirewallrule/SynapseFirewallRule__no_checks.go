@@ -72,6 +72,10 @@ func (j *jsiiProxy_SynapseFirewallRule) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_SynapseFirewallRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseFirewallRule) validateSetEndIpAddressParameters(val *string) error {
 	return nil
 }

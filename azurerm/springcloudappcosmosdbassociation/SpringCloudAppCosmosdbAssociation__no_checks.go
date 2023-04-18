@@ -104,6 +104,10 @@ func (j *jsiiProxy_SpringCloudAppCosmosdbAssociation) validateSetCosmosdbSqlData
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudAppCosmosdbAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudAppCosmosdbAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_TrafficManagerAzureEndpoint) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_TrafficManagerAzureEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TrafficManagerAzureEndpoint) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -84,6 +84,10 @@ func (j *jsiiProxy_CosmosdbSqlStoredProcedure) validateSetContainerNameParameter
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbSqlStoredProcedure) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbSqlStoredProcedure) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

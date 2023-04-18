@@ -72,6 +72,10 @@ func (j *jsiiProxy_ResourcePolicyExemption) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ResourcePolicyExemption) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResourcePolicyExemption) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

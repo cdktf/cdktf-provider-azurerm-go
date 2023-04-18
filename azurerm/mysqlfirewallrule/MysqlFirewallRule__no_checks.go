@@ -72,6 +72,10 @@ func (j *jsiiProxy_MysqlFirewallRule) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_MysqlFirewallRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MysqlFirewallRule) validateSetEndIpAddressParameters(val *string) error {
 	return nil
 }

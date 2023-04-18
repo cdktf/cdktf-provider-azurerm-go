@@ -80,6 +80,10 @@ func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetDailyQuotaGbParameters(val *float64) error {
 	return nil
 }

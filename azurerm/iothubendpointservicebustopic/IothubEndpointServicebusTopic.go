@@ -2,14 +2,14 @@ package iothubendpointservicebustopic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/iothubendpointservicebustopic/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/iothubendpointservicebustopic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic}.
 type IothubEndpointServicebusTopic interface {
 	cdktf.TerraformResource
 	AuthenticationType() *string
@@ -27,9 +27,9 @@ type IothubEndpointServicebusTopic interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -208,8 +208,8 @@ func (j *jsiiProxy_IothubEndpointServicebusTopic) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_IothubEndpointServicebusTopic) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IothubEndpointServicebusTopic) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -499,7 +499,7 @@ func (j *jsiiProxy_IothubEndpointServicebusTopic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic} Resource.
 func NewIothubEndpointServicebusTopic(scope constructs.Construct, id *string, config *IothubEndpointServicebusTopicConfig) IothubEndpointServicebusTopic {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewIothubEndpointServicebusTopic(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic} Resource.
 func NewIothubEndpointServicebusTopic_Override(i IothubEndpointServicebusTopic, scope constructs.Construct, id *string, config *IothubEndpointServicebusTopicConfig) {
 	_init_.Initialize()
 
@@ -561,7 +561,10 @@ func (j *jsiiProxy_IothubEndpointServicebusTopic)SetConnectionString(val *string
 	)
 }
 
-func (j *jsiiProxy_IothubEndpointServicebusTopic)SetCount(val *float64) {
+func (j *jsiiProxy_IothubEndpointServicebusTopic)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

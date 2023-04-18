@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermCosmosdbSqlDatabase) validateSetAccountNameParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermCosmosdbSqlDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermCosmosdbSqlDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package siterecoverynetworkmapping
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/siterecoverynetworkmapping/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/siterecoverynetworkmapping/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/site_recovery_network_mapping azurerm_site_recovery_network_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/site_recovery_network_mapping azurerm_site_recovery_network_mapping}.
 type SiteRecoveryNetworkMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SiteRecoveryNetworkMapping interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_SiteRecoveryNetworkMapping) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_SiteRecoveryNetworkMapping) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SiteRecoveryNetworkMapping) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -471,7 +471,7 @@ func (j *jsiiProxy_SiteRecoveryNetworkMapping) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/site_recovery_network_mapping azurerm_site_recovery_network_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/site_recovery_network_mapping azurerm_site_recovery_network_mapping} Resource.
 func NewSiteRecoveryNetworkMapping(scope constructs.Construct, id *string, config *SiteRecoveryNetworkMappingConfig) SiteRecoveryNetworkMapping {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewSiteRecoveryNetworkMapping(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/site_recovery_network_mapping azurerm_site_recovery_network_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/site_recovery_network_mapping azurerm_site_recovery_network_mapping} Resource.
 func NewSiteRecoveryNetworkMapping_Override(s SiteRecoveryNetworkMapping, scope constructs.Construct, id *string, config *SiteRecoveryNetworkMappingConfig) {
 	_init_.Initialize()
 
@@ -511,7 +511,10 @@ func (j *jsiiProxy_SiteRecoveryNetworkMapping)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SiteRecoveryNetworkMapping)SetCount(val *float64) {
+func (j *jsiiProxy_SiteRecoveryNetworkMapping)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

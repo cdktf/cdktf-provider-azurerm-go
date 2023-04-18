@@ -80,6 +80,10 @@ func (j *jsiiProxy_AppServiceEnvironmentV3) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_AppServiceEnvironmentV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceEnvironmentV3) validateSetDedicatedHostCountParameters(val *float64) error {
 	return nil
 }

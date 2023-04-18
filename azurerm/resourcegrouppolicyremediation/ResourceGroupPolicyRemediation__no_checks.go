@@ -72,6 +72,10 @@ func (j *jsiiProxy_ResourceGroupPolicyRemediation) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_ResourceGroupPolicyRemediation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResourceGroupPolicyRemediation) validateSetFailurePercentageParameters(val *float64) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package virtualmachinedatadiskattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/virtualmachinedatadiskattachment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/virtualmachinedatadiskattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_data_disk_attachment azurerm_virtual_machine_data_disk_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_machine_data_disk_attachment azurerm_virtual_machine_data_disk_attachment}.
 type VirtualMachineDataDiskAttachment interface {
 	cdktf.TerraformResource
 	Caching() *string
@@ -24,9 +24,9 @@ type VirtualMachineDataDiskAttachment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateOption() *string
 	SetCreateOption(val *string)
 	CreateOptionInput() *string
@@ -179,8 +179,8 @@ func (j *jsiiProxy_VirtualMachineDataDiskAttachment) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_VirtualMachineDataDiskAttachment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VirtualMachineDataDiskAttachment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -450,7 +450,7 @@ func (j *jsiiProxy_VirtualMachineDataDiskAttachment) WriteAcceleratorEnabledInpu
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_data_disk_attachment azurerm_virtual_machine_data_disk_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_machine_data_disk_attachment azurerm_virtual_machine_data_disk_attachment} Resource.
 func NewVirtualMachineDataDiskAttachment(scope constructs.Construct, id *string, config *VirtualMachineDataDiskAttachmentConfig) VirtualMachineDataDiskAttachment {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewVirtualMachineDataDiskAttachment(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_data_disk_attachment azurerm_virtual_machine_data_disk_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/virtual_machine_data_disk_attachment azurerm_virtual_machine_data_disk_attachment} Resource.
 func NewVirtualMachineDataDiskAttachment_Override(v VirtualMachineDataDiskAttachment, scope constructs.Construct, id *string, config *VirtualMachineDataDiskAttachmentConfig) {
 	_init_.Initialize()
 
@@ -501,7 +501,10 @@ func (j *jsiiProxy_VirtualMachineDataDiskAttachment)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_VirtualMachineDataDiskAttachment)SetCount(val *float64) {
+func (j *jsiiProxy_VirtualMachineDataDiskAttachment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_EventhubAuthorizationRule) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_EventhubAuthorizationRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventhubAuthorizationRule) validateSetEventhubNameParameters(val *string) error {
 	return nil
 }

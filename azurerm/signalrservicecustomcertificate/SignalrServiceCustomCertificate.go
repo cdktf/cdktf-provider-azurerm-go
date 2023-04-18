@@ -2,14 +2,14 @@ package signalrservicecustomcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/signalrservicecustomcertificate/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/signalrservicecustomcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service_custom_certificate azurerm_signalr_service_custom_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/signalr_service_custom_certificate azurerm_signalr_service_custom_certificate}.
 type SignalrServiceCustomCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -22,9 +22,9 @@ type SignalrServiceCustomCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomCertificateId() *string
 	SetCustomCertificateId(val *string)
 	CustomCertificateIdInput() *string
@@ -159,8 +159,8 @@ func (j *jsiiProxy_SignalrServiceCustomCertificate) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_SignalrServiceCustomCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SignalrServiceCustomCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_SignalrServiceCustomCertificate) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service_custom_certificate azurerm_signalr_service_custom_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/signalr_service_custom_certificate azurerm_signalr_service_custom_certificate} Resource.
 func NewSignalrServiceCustomCertificate(scope constructs.Construct, id *string, config *SignalrServiceCustomCertificateConfig) SignalrServiceCustomCertificate {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewSignalrServiceCustomCertificate(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/signalr_service_custom_certificate azurerm_signalr_service_custom_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/signalr_service_custom_certificate azurerm_signalr_service_custom_certificate} Resource.
 func NewSignalrServiceCustomCertificate_Override(s SignalrServiceCustomCertificate, scope constructs.Construct, id *string, config *SignalrServiceCustomCertificateConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_SignalrServiceCustomCertificate)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_SignalrServiceCustomCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_SignalrServiceCustomCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

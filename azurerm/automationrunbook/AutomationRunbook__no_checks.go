@@ -92,6 +92,10 @@ func (j *jsiiProxy_AutomationRunbook) validateSetContentParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_AutomationRunbook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationRunbook) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

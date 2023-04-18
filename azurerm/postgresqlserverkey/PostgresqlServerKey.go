@@ -2,14 +2,14 @@ package postgresqlserverkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/postgresqlserverkey/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/postgresqlserverkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/postgresql_server_key azurerm_postgresql_server_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/postgresql_server_key azurerm_postgresql_server_key}.
 type PostgresqlServerKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type PostgresqlServerKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_PostgresqlServerKey) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_PostgresqlServerKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PostgresqlServerKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_PostgresqlServerKey) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/postgresql_server_key azurerm_postgresql_server_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/postgresql_server_key azurerm_postgresql_server_key} Resource.
 func NewPostgresqlServerKey(scope constructs.Construct, id *string, config *PostgresqlServerKeyConfig) PostgresqlServerKey {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewPostgresqlServerKey(scope constructs.Construct, id *string, config *Post
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/postgresql_server_key azurerm_postgresql_server_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/postgresql_server_key azurerm_postgresql_server_key} Resource.
 func NewPostgresqlServerKey_Override(p PostgresqlServerKey, scope constructs.Construct, id *string, config *PostgresqlServerKeyConfig) {
 	_init_.Initialize()
 
@@ -396,7 +396,10 @@ func (j *jsiiProxy_PostgresqlServerKey)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PostgresqlServerKey)SetCount(val *float64) {
+func (j *jsiiProxy_PostgresqlServerKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

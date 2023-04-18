@@ -80,6 +80,10 @@ func (j *jsiiProxy_AutomationSchedule) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_AutomationSchedule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationSchedule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

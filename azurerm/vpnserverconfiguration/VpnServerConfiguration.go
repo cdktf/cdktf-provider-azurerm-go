@@ -2,14 +2,14 @@ package vpnserverconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/vpnserverconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/vpnserverconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/vpn_server_configuration azurerm_vpn_server_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/vpn_server_configuration azurerm_vpn_server_configuration}.
 type VpnServerConfiguration interface {
 	cdktf.TerraformResource
 	AzureActiveDirectoryAuthentication() VpnServerConfigurationAzureActiveDirectoryAuthenticationList
@@ -27,9 +27,9 @@ type VpnServerConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -239,8 +239,8 @@ func (j *jsiiProxy_VpnServerConfiguration) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_VpnServerConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VpnServerConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -570,7 +570,7 @@ func (j *jsiiProxy_VpnServerConfiguration) VpnProtocolsInput() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/vpn_server_configuration azurerm_vpn_server_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/vpn_server_configuration azurerm_vpn_server_configuration} Resource.
 func NewVpnServerConfiguration(scope constructs.Construct, id *string, config *VpnServerConfigurationConfig) VpnServerConfiguration {
 	_init_.Initialize()
 
@@ -588,7 +588,7 @@ func NewVpnServerConfiguration(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/vpn_server_configuration azurerm_vpn_server_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/vpn_server_configuration azurerm_vpn_server_configuration} Resource.
 func NewVpnServerConfiguration_Override(v VpnServerConfiguration, scope constructs.Construct, id *string, config *VpnServerConfigurationConfig) {
 	_init_.Initialize()
 
@@ -610,7 +610,10 @@ func (j *jsiiProxy_VpnServerConfiguration)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpnServerConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_VpnServerConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

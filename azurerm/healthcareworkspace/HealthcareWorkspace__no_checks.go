@@ -72,6 +72,10 @@ func (j *jsiiProxy_HealthcareWorkspace) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareWorkspace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareWorkspace) validateSetIdParameters(val *string) error {
 	return nil
 }

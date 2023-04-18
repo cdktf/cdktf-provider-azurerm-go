@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureSearch) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryLinkedServiceAzureSearch) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceAzureSearch) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

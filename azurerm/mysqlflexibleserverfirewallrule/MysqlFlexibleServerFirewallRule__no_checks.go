@@ -72,6 +72,10 @@ func (j *jsiiProxy_MysqlFlexibleServerFirewallRule) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_MysqlFlexibleServerFirewallRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MysqlFlexibleServerFirewallRule) validateSetEndIpAddressParameters(val *string) error {
 	return nil
 }

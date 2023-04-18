@@ -124,6 +124,10 @@ func (j *jsiiProxy_HdinsightHadoopCluster) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_HdinsightHadoopCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HdinsightHadoopCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

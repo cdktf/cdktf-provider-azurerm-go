@@ -112,6 +112,10 @@ func (j *jsiiProxy_AppServiceSlot) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_AppServiceSlot) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceSlot) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

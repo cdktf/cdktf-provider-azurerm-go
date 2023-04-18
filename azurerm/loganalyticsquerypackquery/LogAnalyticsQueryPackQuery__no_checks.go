@@ -84,6 +84,10 @@ func (j *jsiiProxy_LogAnalyticsQueryPackQuery) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsQueryPackQuery) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsQueryPackQuery) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package networkprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/networkprofile/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/networkprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/network_profile azurerm_network_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/network_profile azurerm_network_profile}.
 type NetworkProfile interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type NetworkProfile interface {
 	ContainerNetworkInterfaceIds() *[]*string
 	ContainerNetworkInterfaceInput() *NetworkProfileContainerNetworkInterface
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -186,8 +186,8 @@ func (j *jsiiProxy_NetworkProfile) ContainerNetworkInterfaceInput() *NetworkProf
 	return returns
 }
 
-func (j *jsiiProxy_NetworkProfile) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_NetworkProfile) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -437,7 +437,7 @@ func (j *jsiiProxy_NetworkProfile) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/network_profile azurerm_network_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/network_profile azurerm_network_profile} Resource.
 func NewNetworkProfile(scope constructs.Construct, id *string, config *NetworkProfileConfig) NetworkProfile {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewNetworkProfile(scope constructs.Construct, id *string, config *NetworkPr
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/network_profile azurerm_network_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/network_profile azurerm_network_profile} Resource.
 func NewNetworkProfile_Override(n NetworkProfile, scope constructs.Construct, id *string, config *NetworkProfileConfig) {
 	_init_.Initialize()
 
@@ -477,7 +477,10 @@ func (j *jsiiProxy_NetworkProfile)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkProfile)SetCount(val *float64) {
+func (j *jsiiProxy_NetworkProfile)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

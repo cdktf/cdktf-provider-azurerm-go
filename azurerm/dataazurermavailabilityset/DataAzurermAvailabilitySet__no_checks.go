@@ -68,6 +68,10 @@ func validateDataAzurermAvailabilitySet_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermAvailabilitySet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermAvailabilitySet) validateSetIdParameters(val *string) error {
 	return nil
 }

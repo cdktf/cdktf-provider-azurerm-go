@@ -100,6 +100,10 @@ func (j *jsiiProxy_ContainerGroup) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_ContainerGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerGroup) validateSetDnsNameLabelParameters(val *string) error {
 	return nil
 }

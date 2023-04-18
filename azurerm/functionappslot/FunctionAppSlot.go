@@ -2,14 +2,14 @@ package functionappslot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/functionappslot/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/functionappslot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/function_app_slot azurerm_function_app_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/function_app_slot azurerm_function_app_slot}.
 type FunctionAppSlot interface {
 	cdktf.TerraformResource
 	AppServicePlanId() *string
@@ -31,9 +31,9 @@ type FunctionAppSlot interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DailyMemoryTimeQuota() *float64
 	SetDailyMemoryTimeQuota(val *float64)
 	DailyMemoryTimeQuotaInput() *float64
@@ -293,8 +293,8 @@ func (j *jsiiProxy_FunctionAppSlot) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_FunctionAppSlot) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_FunctionAppSlot) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -814,7 +814,7 @@ func (j *jsiiProxy_FunctionAppSlot) VersionInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/function_app_slot azurerm_function_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/function_app_slot azurerm_function_app_slot} Resource.
 func NewFunctionAppSlot(scope constructs.Construct, id *string, config *FunctionAppSlotConfig) FunctionAppSlot {
 	_init_.Initialize()
 
@@ -832,7 +832,7 @@ func NewFunctionAppSlot(scope constructs.Construct, id *string, config *Function
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/function_app_slot azurerm_function_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/function_app_slot azurerm_function_app_slot} Resource.
 func NewFunctionAppSlot_Override(f FunctionAppSlot, scope constructs.Construct, id *string, config *FunctionAppSlotConfig) {
 	_init_.Initialize()
 
@@ -876,7 +876,10 @@ func (j *jsiiProxy_FunctionAppSlot)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FunctionAppSlot)SetCount(val *float64) {
+func (j *jsiiProxy_FunctionAppSlot)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

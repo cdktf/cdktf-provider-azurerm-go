@@ -72,6 +72,10 @@ func (j *jsiiProxy_FunctionAppHybridConnection) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_FunctionAppHybridConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FunctionAppHybridConnection) validateSetFunctionAppIdParameters(val *string) error {
 	return nil
 }

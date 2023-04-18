@@ -96,6 +96,10 @@ func (j *jsiiProxy_KubernetesClusterNodePool) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterNodePool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterNodePool) validateSetCustomCaTrustEnabledParameters(val interface{}) error {
 	return nil
 }

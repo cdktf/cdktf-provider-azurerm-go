@@ -68,6 +68,10 @@ func validateDataAzurermPublicIpPrefix_IsTerraformElementParameters(x interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermPublicIpPrefix) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPublicIpPrefix) validateSetIdParameters(val *string) error {
 	return nil
 }

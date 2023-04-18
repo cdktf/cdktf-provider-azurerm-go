@@ -68,6 +68,10 @@ func validateDataAzurermDataShareDatasetBlobStorage_IsTerraformElementParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermDataShareDatasetBlobStorage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDataShareDatasetBlobStorage) validateSetDataShareIdParameters(val *string) error {
 	return nil
 }

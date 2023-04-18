@@ -84,6 +84,10 @@ func (j *jsiiProxy_RecoveryServicesVault) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_RecoveryServicesVault) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RecoveryServicesVault) validateSetCrossRegionRestoreEnabledParameters(val interface{}) error {
 	return nil
 }

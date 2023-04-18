@@ -84,6 +84,10 @@ func (j *jsiiProxy_ServicebusSubscription) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_ServicebusSubscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicebusSubscription) validateSetDeadLetteringOnFilterEvaluationErrorParameters(val interface{}) error {
 	return nil
 }

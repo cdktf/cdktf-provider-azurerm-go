@@ -128,6 +128,10 @@ func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateSetEncryptionAtHostEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func validateDataAzurermNetworkWatcher_IsTerraformElementParameters(x interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermNetworkWatcher) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermNetworkWatcher) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package privateendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/privateendpoint/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/privateendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/private_endpoint azurerm_private_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/private_endpoint azurerm_private_endpoint}.
 type PrivateEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type PrivateEndpoint interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomDnsConfigs() PrivateEndpointCustomDnsConfigsList
 	CustomNetworkInterfaceName() *string
 	SetCustomNetworkInterfaceName(val *string)
@@ -173,8 +173,8 @@ func (j *jsiiProxy_PrivateEndpoint) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_PrivateEndpoint) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PrivateEndpoint) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -554,7 +554,7 @@ func (j *jsiiProxy_PrivateEndpoint) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/private_endpoint azurerm_private_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/private_endpoint azurerm_private_endpoint} Resource.
 func NewPrivateEndpoint(scope constructs.Construct, id *string, config *PrivateEndpointConfig) PrivateEndpoint {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewPrivateEndpoint(scope constructs.Construct, id *string, config *PrivateE
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/private_endpoint azurerm_private_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/private_endpoint azurerm_private_endpoint} Resource.
 func NewPrivateEndpoint_Override(p PrivateEndpoint, scope constructs.Construct, id *string, config *PrivateEndpointConfig) {
 	_init_.Initialize()
 
@@ -594,7 +594,10 @@ func (j *jsiiProxy_PrivateEndpoint)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PrivateEndpoint)SetCount(val *float64) {
+func (j *jsiiProxy_PrivateEndpoint)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

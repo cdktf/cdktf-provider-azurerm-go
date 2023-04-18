@@ -76,6 +76,10 @@ func (j *jsiiProxy_CognitiveAccountCustomerManagedKeyA) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_CognitiveAccountCustomerManagedKeyA) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitiveAccountCustomerManagedKeyA) validateSetIdParameters(val *string) error {
 	return nil
 }

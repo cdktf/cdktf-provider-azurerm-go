@@ -72,6 +72,10 @@ func (j *jsiiProxy_SentinelDataConnectorMicrosoftThreatProtection) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_SentinelDataConnectorMicrosoftThreatProtection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorMicrosoftThreatProtection) validateSetIdParameters(val *string) error {
 	return nil
 }

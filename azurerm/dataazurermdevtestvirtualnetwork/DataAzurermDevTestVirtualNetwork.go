@@ -2,14 +2,14 @@ package dataazurermdevtestvirtualnetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermdevtestvirtualnetwork/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermdevtestvirtualnetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/dev_test_virtual_network azurerm_dev_test_virtual_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/dev_test_virtual_network azurerm_dev_test_virtual_network}.
 type DataAzurermDevTestVirtualNetwork interface {
 	cdktf.TerraformDataSource
 	AllowedSubnets() DataAzurermDevTestVirtualNetworkAllowedSubnetsList
@@ -18,9 +18,9 @@ type DataAzurermDevTestVirtualNetwork interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataAzurermDevTestVirtualNetwork) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermDevTestVirtualNetwork) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermDevTestVirtualNetwork) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DataAzurermDevTestVirtualNetwork) UniqueIdentifier() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/dev_test_virtual_network azurerm_dev_test_virtual_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/dev_test_virtual_network azurerm_dev_test_virtual_network} Data Source.
 func NewDataAzurermDevTestVirtualNetwork(scope constructs.Construct, id *string, config *DataAzurermDevTestVirtualNetworkConfig) DataAzurermDevTestVirtualNetwork {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewDataAzurermDevTestVirtualNetwork(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/dev_test_virtual_network azurerm_dev_test_virtual_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/dev_test_virtual_network azurerm_dev_test_virtual_network} Data Source.
 func NewDataAzurermDevTestVirtualNetwork_Override(d DataAzurermDevTestVirtualNetwork, scope constructs.Construct, id *string, config *DataAzurermDevTestVirtualNetworkConfig) {
 	_init_.Initialize()
 
@@ -413,7 +413,10 @@ func NewDataAzurermDevTestVirtualNetwork_Override(d DataAzurermDevTestVirtualNet
 	)
 }
 
-func (j *jsiiProxy_DataAzurermDevTestVirtualNetwork)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermDevTestVirtualNetwork)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

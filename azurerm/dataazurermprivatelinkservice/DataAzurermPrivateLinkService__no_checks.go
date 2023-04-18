@@ -68,6 +68,10 @@ func validateDataAzurermPrivateLinkService_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermPrivateLinkService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPrivateLinkService) validateSetIdParameters(val *string) error {
 	return nil
 }

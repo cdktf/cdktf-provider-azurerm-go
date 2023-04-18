@@ -68,6 +68,10 @@ func validateDataAzurermWindowsWebApp_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermWindowsWebApp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermWindowsWebApp) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package sentinelalertruleanomalybuiltin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/sentinelalertruleanomalybuiltin/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/sentinelalertruleanomalybuiltin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_anomaly_built_in azurerm_sentinel_alert_rule_anomaly_built_in}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sentinel_alert_rule_anomaly_built_in azurerm_sentinel_alert_rule_anomaly_built_in}.
 type SentinelAlertRuleAnomalyBuiltIn interface {
 	cdktf.TerraformResource
 	AnomalySettingsVersion() *float64
@@ -23,9 +23,9 @@ type SentinelAlertRuleAnomalyBuiltIn interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -188,8 +188,8 @@ func (j *jsiiProxy_SentinelAlertRuleAnomalyBuiltIn) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_SentinelAlertRuleAnomalyBuiltIn) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SentinelAlertRuleAnomalyBuiltIn) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -559,7 +559,7 @@ func (j *jsiiProxy_SentinelAlertRuleAnomalyBuiltIn) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_anomaly_built_in azurerm_sentinel_alert_rule_anomaly_built_in} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sentinel_alert_rule_anomaly_built_in azurerm_sentinel_alert_rule_anomaly_built_in} Resource.
 func NewSentinelAlertRuleAnomalyBuiltIn(scope constructs.Construct, id *string, config *SentinelAlertRuleAnomalyBuiltInConfig) SentinelAlertRuleAnomalyBuiltIn {
 	_init_.Initialize()
 
@@ -577,7 +577,7 @@ func NewSentinelAlertRuleAnomalyBuiltIn(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/sentinel_alert_rule_anomaly_built_in azurerm_sentinel_alert_rule_anomaly_built_in} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sentinel_alert_rule_anomaly_built_in azurerm_sentinel_alert_rule_anomaly_built_in} Resource.
 func NewSentinelAlertRuleAnomalyBuiltIn_Override(s SentinelAlertRuleAnomalyBuiltIn, scope constructs.Construct, id *string, config *SentinelAlertRuleAnomalyBuiltInConfig) {
 	_init_.Initialize()
 
@@ -599,7 +599,10 @@ func (j *jsiiProxy_SentinelAlertRuleAnomalyBuiltIn)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_SentinelAlertRuleAnomalyBuiltIn)SetCount(val *float64) {
+func (j *jsiiProxy_SentinelAlertRuleAnomalyBuiltIn)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

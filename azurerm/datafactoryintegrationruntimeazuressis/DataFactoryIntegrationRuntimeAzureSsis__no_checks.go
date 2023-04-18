@@ -100,6 +100,10 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

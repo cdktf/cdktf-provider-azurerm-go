@@ -2,14 +2,14 @@ package sqldatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/sqldatabase/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/sqldatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/sql_database azurerm_sql_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sql_database azurerm_sql_database}.
 type SqlDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type SqlDatabase interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateMode() *string
 	SetCreateMode(val *string)
 	CreateModeInput() *string
@@ -238,8 +238,8 @@ func (j *jsiiProxy_SqlDatabase) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabase) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SqlDatabase) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -819,7 +819,7 @@ func (j *jsiiProxy_SqlDatabase) ZoneRedundantInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/sql_database azurerm_sql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sql_database azurerm_sql_database} Resource.
 func NewSqlDatabase(scope constructs.Construct, id *string, config *SqlDatabaseConfig) SqlDatabase {
 	_init_.Initialize()
 
@@ -837,7 +837,7 @@ func NewSqlDatabase(scope constructs.Construct, id *string, config *SqlDatabaseC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/sql_database azurerm_sql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/sql_database azurerm_sql_database} Resource.
 func NewSqlDatabase_Override(s SqlDatabase, scope constructs.Construct, id *string, config *SqlDatabaseConfig) {
 	_init_.Initialize()
 
@@ -870,7 +870,10 @@ func (j *jsiiProxy_SqlDatabase)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabase)SetCount(val *float64) {
+func (j *jsiiProxy_SqlDatabase)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_StorageTableEntity) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_StorageTableEntity) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageTableEntity) validateSetEntityParameters(val *map[string]*string) error {
 	return nil
 }

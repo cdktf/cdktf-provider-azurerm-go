@@ -72,6 +72,10 @@ func (j *jsiiProxy_VirtualHubBgpConnection) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_VirtualHubBgpConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualHubBgpConnection) validateSetIdParameters(val *string) error {
 	return nil
 }

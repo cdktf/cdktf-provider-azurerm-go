@@ -68,6 +68,10 @@ func validateDataAzurermRedisCache_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermRedisCache) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermRedisCache) validateSetIdParameters(val *string) error {
 	return nil
 }

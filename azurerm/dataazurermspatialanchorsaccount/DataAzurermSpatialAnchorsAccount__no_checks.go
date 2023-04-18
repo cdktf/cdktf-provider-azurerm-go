@@ -68,6 +68,10 @@ func validateDataAzurermSpatialAnchorsAccount_IsTerraformElementParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermSpatialAnchorsAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermSpatialAnchorsAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

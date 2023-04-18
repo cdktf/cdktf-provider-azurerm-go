@@ -72,6 +72,10 @@ func (j *jsiiProxy_SynapseIntegrationRuntimeSelfHosted) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_SynapseIntegrationRuntimeSelfHosted) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseIntegrationRuntimeSelfHosted) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

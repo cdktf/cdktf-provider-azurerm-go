@@ -88,6 +88,10 @@ func (j *jsiiProxy_WebPubsub) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_WebPubsub) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WebPubsub) validateSetIdParameters(val *string) error {
 	return nil
 }

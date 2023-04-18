@@ -84,6 +84,10 @@ func (j *jsiiProxy_FirewallPolicyRuleCollectionGroup) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_FirewallPolicyRuleCollectionGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FirewallPolicyRuleCollectionGroup) validateSetFirewallPolicyIdParameters(val *string) error {
 	return nil
 }

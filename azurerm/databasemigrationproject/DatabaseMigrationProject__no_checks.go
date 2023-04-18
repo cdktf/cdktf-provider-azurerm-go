@@ -72,6 +72,10 @@ func (j *jsiiProxy_DatabaseMigrationProject) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseMigrationProject) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseMigrationProject) validateSetIdParameters(val *string) error {
 	return nil
 }

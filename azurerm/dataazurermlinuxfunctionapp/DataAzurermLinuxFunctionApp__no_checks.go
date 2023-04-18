@@ -68,6 +68,10 @@ func validateDataAzurermLinuxFunctionApp_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermLinuxFunctionApp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermLinuxFunctionApp) validateSetIdParameters(val *string) error {
 	return nil
 }

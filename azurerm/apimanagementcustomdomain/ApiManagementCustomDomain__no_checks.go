@@ -96,6 +96,10 @@ func (j *jsiiProxy_ApiManagementCustomDomain) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementCustomDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementCustomDomain) validateSetIdParameters(val *string) error {
 	return nil
 }

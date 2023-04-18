@@ -100,6 +100,10 @@ func (j *jsiiProxy_HealthcareFhirService) validateSetContainerRegistryLoginServe
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareFhirService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareFhirService) validateSetIdParameters(val *string) error {
 	return nil
 }

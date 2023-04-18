@@ -68,6 +68,10 @@ func validateDataAzurermActiveDirectoryDomainService_IsTerraformElementParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermActiveDirectoryDomainService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermActiveDirectoryDomainService) validateSetIdParameters(val *string) error {
 	return nil
 }

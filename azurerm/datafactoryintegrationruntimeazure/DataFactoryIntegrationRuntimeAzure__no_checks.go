@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzure) validateSetCoreCountParam
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzure) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzure) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

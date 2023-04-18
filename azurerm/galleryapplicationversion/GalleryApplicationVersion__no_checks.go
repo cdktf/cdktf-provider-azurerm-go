@@ -84,6 +84,10 @@ func (j *jsiiProxy_GalleryApplicationVersion) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GalleryApplicationVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GalleryApplicationVersion) validateSetEnableHealthCheckParameters(val interface{}) error {
 	return nil
 }

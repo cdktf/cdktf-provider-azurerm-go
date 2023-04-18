@@ -72,6 +72,10 @@ func (j *jsiiProxy_AdvancedThreatProtection) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_AdvancedThreatProtection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdvancedThreatProtection) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

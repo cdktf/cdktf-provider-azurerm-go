@@ -2,14 +2,14 @@ package iotcentralapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/iotcentralapplication/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/iotcentralapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/iotcentral_application azurerm_iotcentral_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iotcentral_application azurerm_iotcentral_application}.
 type IotcentralApplication interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type IotcentralApplication interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -175,8 +175,8 @@ func (j *jsiiProxy_IotcentralApplication) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_IotcentralApplication) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IotcentralApplication) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -546,7 +546,7 @@ func (j *jsiiProxy_IotcentralApplication) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/iotcentral_application azurerm_iotcentral_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iotcentral_application azurerm_iotcentral_application} Resource.
 func NewIotcentralApplication(scope constructs.Construct, id *string, config *IotcentralApplicationConfig) IotcentralApplication {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewIotcentralApplication(scope constructs.Construct, id *string, config *Io
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/iotcentral_application azurerm_iotcentral_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iotcentral_application azurerm_iotcentral_application} Resource.
 func NewIotcentralApplication_Override(i IotcentralApplication, scope constructs.Construct, id *string, config *IotcentralApplicationConfig) {
 	_init_.Initialize()
 
@@ -586,7 +586,10 @@ func (j *jsiiProxy_IotcentralApplication)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IotcentralApplication)SetCount(val *float64) {
+func (j *jsiiProxy_IotcentralApplication)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

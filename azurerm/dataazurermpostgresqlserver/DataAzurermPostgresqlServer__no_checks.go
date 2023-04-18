@@ -68,6 +68,10 @@ func validateDataAzurermPostgresqlServer_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermPostgresqlServer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPostgresqlServer) validateSetIdParameters(val *string) error {
 	return nil
 }

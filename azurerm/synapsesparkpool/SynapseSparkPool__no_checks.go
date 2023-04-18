@@ -96,6 +96,10 @@ func (j *jsiiProxy_SynapseSparkPool) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_SynapseSparkPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseSparkPool) validateSetDynamicExecutorAllocationEnabledParameters(val interface{}) error {
 	return nil
 }

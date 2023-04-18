@@ -76,6 +76,10 @@ func (j *jsiiProxy_AutomationVariableDatetime) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_AutomationVariableDatetime) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationVariableDatetime) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package springcloudjavadeployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/springcloudjavadeployment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/springcloudjavadeployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_java_deployment azurerm_spring_cloud_java_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/spring_cloud_java_deployment azurerm_spring_cloud_java_deployment}.
 type SpringCloudJavaDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SpringCloudJavaDeployment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_SpringCloudJavaDeployment) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_SpringCloudJavaDeployment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SpringCloudJavaDeployment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -476,7 +476,7 @@ func (j *jsiiProxy_SpringCloudJavaDeployment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_java_deployment azurerm_spring_cloud_java_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/spring_cloud_java_deployment azurerm_spring_cloud_java_deployment} Resource.
 func NewSpringCloudJavaDeployment(scope constructs.Construct, id *string, config *SpringCloudJavaDeploymentConfig) SpringCloudJavaDeployment {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewSpringCloudJavaDeployment(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_java_deployment azurerm_spring_cloud_java_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/spring_cloud_java_deployment azurerm_spring_cloud_java_deployment} Resource.
 func NewSpringCloudJavaDeployment_Override(s SpringCloudJavaDeployment, scope constructs.Construct, id *string, config *SpringCloudJavaDeploymentConfig) {
 	_init_.Initialize()
 
@@ -516,7 +516,10 @@ func (j *jsiiProxy_SpringCloudJavaDeployment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpringCloudJavaDeployment)SetCount(val *float64) {
+func (j *jsiiProxy_SpringCloudJavaDeployment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

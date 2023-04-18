@@ -80,6 +80,10 @@ func (j *jsiiProxy_StreamAnalyticsFunctionJavascriptUdf) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsFunctionJavascriptUdf) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsFunctionJavascriptUdf) validateSetIdParameters(val *string) error {
 	return nil
 }

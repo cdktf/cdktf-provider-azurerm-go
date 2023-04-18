@@ -2,14 +2,14 @@ package dataazurermsharedimagegallery
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermsharedimagegallery/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermsharedimagegallery/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/shared_image_gallery azurerm_shared_image_gallery}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/shared_image_gallery azurerm_shared_image_gallery}.
 type DataAzurermSharedImageGallery interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermSharedImageGallery interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataAzurermSharedImageGallery) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermSharedImageGallery) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermSharedImageGallery) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -372,7 +372,7 @@ func (j *jsiiProxy_DataAzurermSharedImageGallery) UniqueName() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/shared_image_gallery azurerm_shared_image_gallery} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/shared_image_gallery azurerm_shared_image_gallery} Data Source.
 func NewDataAzurermSharedImageGallery(scope constructs.Construct, id *string, config *DataAzurermSharedImageGalleryConfig) DataAzurermSharedImageGallery {
 	_init_.Initialize()
 
@@ -390,7 +390,7 @@ func NewDataAzurermSharedImageGallery(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/shared_image_gallery azurerm_shared_image_gallery} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/shared_image_gallery azurerm_shared_image_gallery} Data Source.
 func NewDataAzurermSharedImageGallery_Override(d DataAzurermSharedImageGallery, scope constructs.Construct, id *string, config *DataAzurermSharedImageGalleryConfig) {
 	_init_.Initialize()
 
@@ -401,7 +401,10 @@ func NewDataAzurermSharedImageGallery_Override(d DataAzurermSharedImageGallery, 
 	)
 }
 
-func (j *jsiiProxy_DataAzurermSharedImageGallery)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermSharedImageGallery)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

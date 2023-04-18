@@ -68,6 +68,10 @@ func validateDataAzurermFunctionAppHostKeys_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermFunctionAppHostKeys) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermFunctionAppHostKeys) validateSetIdParameters(val *string) error {
 	return nil
 }

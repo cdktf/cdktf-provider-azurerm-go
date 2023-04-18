@@ -68,6 +68,10 @@ func validateDataAzurermMysqlFlexibleServer_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermMysqlFlexibleServer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMysqlFlexibleServer) validateSetIdParameters(val *string) error {
 	return nil
 }

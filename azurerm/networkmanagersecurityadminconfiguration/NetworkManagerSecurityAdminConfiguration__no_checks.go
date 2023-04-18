@@ -76,6 +76,10 @@ func (j *jsiiProxy_NetworkManagerSecurityAdminConfiguration) validateSetConnecti
 	return nil
 }
 
+func (j *jsiiProxy_NetworkManagerSecurityAdminConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkManagerSecurityAdminConfiguration) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

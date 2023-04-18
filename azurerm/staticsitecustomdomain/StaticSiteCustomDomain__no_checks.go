@@ -72,6 +72,10 @@ func (j *jsiiProxy_StaticSiteCustomDomain) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_StaticSiteCustomDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StaticSiteCustomDomain) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

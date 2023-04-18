@@ -68,6 +68,10 @@ func validateDataAzurermMonitorDataCollectionRule_IsTerraformElementParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMonitorDataCollectionRule) validateSetIdParameters(val *string) error {
 	return nil
 }

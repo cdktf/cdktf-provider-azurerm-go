@@ -76,6 +76,10 @@ func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociation) validateS
 	return nil
 }
 
+func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

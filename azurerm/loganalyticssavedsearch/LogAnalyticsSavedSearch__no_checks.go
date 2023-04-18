@@ -76,6 +76,10 @@ func (j *jsiiProxy_LogAnalyticsSavedSearch) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsSavedSearch) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsSavedSearch) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

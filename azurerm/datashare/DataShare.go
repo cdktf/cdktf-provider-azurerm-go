@@ -2,14 +2,14 @@ package datashare
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/datashare/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/datashare/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/data_share azurerm_data_share}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_share azurerm_data_share}.
 type DataShare interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -24,9 +24,9 @@ type DataShare interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DataShare) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataShare) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataShare) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -451,7 +451,7 @@ func (j *jsiiProxy_DataShare) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_share azurerm_data_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_share azurerm_data_share} Resource.
 func NewDataShare(scope constructs.Construct, id *string, config *DataShareConfig) DataShare {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewDataShare(scope constructs.Construct, id *string, config *DataShareConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_share azurerm_data_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_share azurerm_data_share} Resource.
 func NewDataShare_Override(d DataShare, scope constructs.Construct, id *string, config *DataShareConfig) {
 	_init_.Initialize()
 
@@ -502,7 +502,10 @@ func (j *jsiiProxy_DataShare)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataShare)SetCount(val *float64) {
+func (j *jsiiProxy_DataShare)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

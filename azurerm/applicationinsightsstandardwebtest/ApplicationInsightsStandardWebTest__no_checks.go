@@ -84,6 +84,10 @@ func (j *jsiiProxy_ApplicationInsightsStandardWebTest) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationInsightsStandardWebTest) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationInsightsStandardWebTest) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_RoleAssignment) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_RoleAssignment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RoleAssignment) validateSetDelegatedManagedIdentityResourceIdParameters(val *string) error {
 	return nil
 }

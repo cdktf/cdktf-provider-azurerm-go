@@ -88,6 +88,10 @@ func (j *jsiiProxy_MariadbServer) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_MariadbServer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MariadbServer) validateSetCreateModeParameters(val *string) error {
 	return nil
 }

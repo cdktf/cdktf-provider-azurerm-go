@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataFactoryDatasetMysql) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryDatasetMysql) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryDatasetMysql) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

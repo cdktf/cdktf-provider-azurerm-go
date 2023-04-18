@@ -80,6 +80,10 @@ func (j *jsiiProxy_HpcCacheBlobNfsTarget) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_HpcCacheBlobNfsTarget) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HpcCacheBlobNfsTarget) validateSetIdParameters(val *string) error {
 	return nil
 }

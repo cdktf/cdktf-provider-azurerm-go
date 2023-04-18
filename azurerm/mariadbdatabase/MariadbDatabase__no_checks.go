@@ -80,6 +80,10 @@ func (j *jsiiProxy_MariadbDatabase) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_MariadbDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MariadbDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }

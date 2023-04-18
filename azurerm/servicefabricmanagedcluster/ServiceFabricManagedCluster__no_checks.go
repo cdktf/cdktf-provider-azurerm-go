@@ -96,6 +96,10 @@ func (j *jsiiProxy_ServiceFabricManagedCluster) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ServiceFabricManagedCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceFabricManagedCluster) validateSetDnsNameParameters(val *string) error {
 	return nil
 }

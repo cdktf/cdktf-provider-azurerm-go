@@ -76,6 +76,10 @@ func (j *jsiiProxy_SiteRecoveryVmwareReplicationPolicy) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_SiteRecoveryVmwareReplicationPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SiteRecoveryVmwareReplicationPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

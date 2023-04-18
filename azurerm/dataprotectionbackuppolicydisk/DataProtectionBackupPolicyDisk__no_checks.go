@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataProtectionBackupPolicyDisk) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataProtectionBackupPolicyDisk) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupPolicyDisk) validateSetDefaultRetentionDurationParameters(val *string) error {
 	return nil
 }

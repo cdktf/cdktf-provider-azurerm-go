@@ -92,6 +92,10 @@ func (j *jsiiProxy_ExpressRoutePort) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_ExpressRoutePort) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRoutePort) validateSetEncapsulationParameters(val *string) error {
 	return nil
 }

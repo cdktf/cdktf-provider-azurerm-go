@@ -2,14 +2,14 @@ package dataprotectionbackuppolicypostgresql
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataprotectionbackuppolicypostgresql/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataprotectionbackuppolicypostgresql/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql}.
 type DataProtectionBackupPolicyPostgresql interface {
 	cdktf.TerraformResource
 	BackupRepeatingTimeIntervals() *[]*string
@@ -24,9 +24,9 @@ type DataProtectionBackupPolicyPostgresql interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultRetentionDuration() *string
 	SetDefaultRetentionDuration(val *string)
 	DefaultRetentionDurationInput() *string
@@ -178,8 +178,8 @@ func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -449,7 +449,7 @@ func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql) VaultNameInput() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql} Resource.
 func NewDataProtectionBackupPolicyPostgresql(scope constructs.Construct, id *string, config *DataProtectionBackupPolicyPostgresqlConfig) DataProtectionBackupPolicyPostgresql {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewDataProtectionBackupPolicyPostgresql(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql} Resource.
 func NewDataProtectionBackupPolicyPostgresql_Override(d DataProtectionBackupPolicyPostgresql, scope constructs.Construct, id *string, config *DataProtectionBackupPolicyPostgresqlConfig) {
 	_init_.Initialize()
 
@@ -500,7 +500,10 @@ func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql)SetCount(val *float64) {
+func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package cognitiveaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/cognitiveaccount/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/cognitiveaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/cognitive_account azurerm_cognitive_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/cognitive_account azurerm_cognitive_account}.
 type CognitiveAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CognitiveAccount interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomerManagedKey() CognitiveAccountCustomerManagedKeyOutputReference
 	CustomerManagedKeyInput() *CognitiveAccountCustomerManagedKey
 	CustomQuestionAnsweringSearchServiceId() *string
@@ -229,8 +229,8 @@ func (j *jsiiProxy_CognitiveAccount) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_CognitiveAccount) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CognitiveAccount) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -890,7 +890,7 @@ func (j *jsiiProxy_CognitiveAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/cognitive_account azurerm_cognitive_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/cognitive_account azurerm_cognitive_account} Resource.
 func NewCognitiveAccount(scope constructs.Construct, id *string, config *CognitiveAccountConfig) CognitiveAccount {
 	_init_.Initialize()
 
@@ -908,7 +908,7 @@ func NewCognitiveAccount(scope constructs.Construct, id *string, config *Cogniti
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/cognitive_account azurerm_cognitive_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/cognitive_account azurerm_cognitive_account} Resource.
 func NewCognitiveAccount_Override(c CognitiveAccount, scope constructs.Construct, id *string, config *CognitiveAccountConfig) {
 	_init_.Initialize()
 
@@ -930,7 +930,10 @@ func (j *jsiiProxy_CognitiveAccount)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CognitiveAccount)SetCount(val *float64) {
+func (j *jsiiProxy_CognitiveAccount)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

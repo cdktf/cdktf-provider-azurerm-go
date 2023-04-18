@@ -72,6 +72,10 @@ func (j *jsiiProxy_SpringCloudGatewayCustomDomain) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudGatewayCustomDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudGatewayCustomDomain) validateSetIdParameters(val *string) error {
 	return nil
 }

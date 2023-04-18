@@ -76,6 +76,10 @@ func (j *jsiiProxy_SentinelDataConnectorAwsCloudTrail) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_SentinelDataConnectorAwsCloudTrail) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorAwsCloudTrail) validateSetIdParameters(val *string) error {
 	return nil
 }

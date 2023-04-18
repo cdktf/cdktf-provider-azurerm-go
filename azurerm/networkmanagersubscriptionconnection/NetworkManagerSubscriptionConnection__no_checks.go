@@ -72,6 +72,10 @@ func (j *jsiiProxy_NetworkManagerSubscriptionConnection) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_NetworkManagerSubscriptionConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkManagerSubscriptionConnection) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_PrivateLinkService) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_PrivateLinkService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivateLinkService) validateSetEnableProxyProtocolParameters(val interface{}) error {
 	return nil
 }

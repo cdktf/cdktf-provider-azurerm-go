@@ -144,6 +144,10 @@ func (j *jsiiProxy_StorageAccount) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_StorageAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccount) validateSetCrossTenantReplicationEnabledParameters(val interface{}) error {
 	return nil
 }

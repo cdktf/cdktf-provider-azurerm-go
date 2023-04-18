@@ -68,6 +68,10 @@ func validateDataAzurermDevTestVirtualNetwork_IsTerraformElementParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermDevTestVirtualNetwork) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDevTestVirtualNetwork) validateSetIdParameters(val *string) error {
 	return nil
 }

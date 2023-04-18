@@ -76,6 +76,10 @@ func (j *jsiiProxy_SentinelDataConnectorAwsS3) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SentinelDataConnectorAwsS3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorAwsS3) validateSetDestinationTableParameters(val *string) error {
 	return nil
 }

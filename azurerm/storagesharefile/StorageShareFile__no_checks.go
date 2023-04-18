@@ -88,6 +88,10 @@ func (j *jsiiProxy_StorageShareFile) validateSetContentTypeParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_StorageShareFile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageShareFile) validateSetIdParameters(val *string) error {
 	return nil
 }

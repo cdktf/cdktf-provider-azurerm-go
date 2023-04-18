@@ -72,6 +72,10 @@ func (j *jsiiProxy_RedisEnterpriseCluster) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_RedisEnterpriseCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisEnterpriseCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

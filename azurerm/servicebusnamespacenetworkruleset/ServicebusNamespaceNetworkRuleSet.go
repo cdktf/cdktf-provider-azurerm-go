@@ -2,14 +2,14 @@ package servicebusnamespacenetworkruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/servicebusnamespacenetworkruleset/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/servicebusnamespacenetworkruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set}.
 type ServicebusNamespaceNetworkRuleSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ServicebusNamespaceNetworkRuleSet interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultAction() *string
 	SetDefaultAction(val *string)
 	DefaultActionInput() *string
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ServicebusNamespaceNetworkRuleSet) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_ServicebusNamespaceNetworkRuleSet) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ServicebusNamespaceNetworkRuleSet) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -453,7 +453,7 @@ func (j *jsiiProxy_ServicebusNamespaceNetworkRuleSet) TrustedServicesAllowedInpu
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set} Resource.
 func NewServicebusNamespaceNetworkRuleSet(scope constructs.Construct, id *string, config *ServicebusNamespaceNetworkRuleSetConfig) ServicebusNamespaceNetworkRuleSet {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewServicebusNamespaceNetworkRuleSet(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set} Resource.
 func NewServicebusNamespaceNetworkRuleSet_Override(s ServicebusNamespaceNetworkRuleSet, scope constructs.Construct, id *string, config *ServicebusNamespaceNetworkRuleSetConfig) {
 	_init_.Initialize()
 
@@ -493,7 +493,10 @@ func (j *jsiiProxy_ServicebusNamespaceNetworkRuleSet)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_ServicebusNamespaceNetworkRuleSet)SetCount(val *float64) {
+func (j *jsiiProxy_ServicebusNamespaceNetworkRuleSet)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

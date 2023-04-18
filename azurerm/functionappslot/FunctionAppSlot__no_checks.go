@@ -96,6 +96,10 @@ func (j *jsiiProxy_FunctionAppSlot) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_FunctionAppSlot) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FunctionAppSlot) validateSetDailyMemoryTimeQuotaParameters(val *float64) error {
 	return nil
 }

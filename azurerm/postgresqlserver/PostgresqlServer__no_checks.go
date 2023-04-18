@@ -96,6 +96,10 @@ func (j *jsiiProxy_PostgresqlServer) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_PostgresqlServer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlServer) validateSetCreateModeParameters(val *string) error {
 	return nil
 }

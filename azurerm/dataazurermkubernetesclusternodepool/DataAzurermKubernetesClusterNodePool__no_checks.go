@@ -68,6 +68,10 @@ func validateDataAzurermKubernetesClusterNodePool_IsTerraformElementParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermKubernetesClusterNodePool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermKubernetesClusterNodePool) validateSetIdParameters(val *string) error {
 	return nil
 }

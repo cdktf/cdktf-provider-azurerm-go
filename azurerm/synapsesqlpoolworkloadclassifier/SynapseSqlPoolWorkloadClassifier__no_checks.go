@@ -76,6 +76,10 @@ func (j *jsiiProxy_SynapseSqlPoolWorkloadClassifier) validateSetContextParameter
 	return nil
 }
 
+func (j *jsiiProxy_SynapseSqlPoolWorkloadClassifier) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseSqlPoolWorkloadClassifier) validateSetEndTimeParameters(val *string) error {
 	return nil
 }

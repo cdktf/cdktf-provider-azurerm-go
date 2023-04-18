@@ -2,14 +2,14 @@ package mssqlmanagedinstancesecurityalertpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/mssqlmanagedinstancesecurityalertpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/mssqlmanagedinstancesecurityalertpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_managed_instance_security_alert_policy azurerm_mssql_managed_instance_security_alert_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mssql_managed_instance_security_alert_policy azurerm_mssql_managed_instance_security_alert_policy}.
 type MssqlManagedInstanceSecurityAlertPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MssqlManagedInstanceSecurityAlertPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -173,8 +173,8 @@ func (j *jsiiProxy_MssqlManagedInstanceSecurityAlertPolicy) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_MssqlManagedInstanceSecurityAlertPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MssqlManagedInstanceSecurityAlertPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -524,7 +524,7 @@ func (j *jsiiProxy_MssqlManagedInstanceSecurityAlertPolicy) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_managed_instance_security_alert_policy azurerm_mssql_managed_instance_security_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mssql_managed_instance_security_alert_policy azurerm_mssql_managed_instance_security_alert_policy} Resource.
 func NewMssqlManagedInstanceSecurityAlertPolicy(scope constructs.Construct, id *string, config *MssqlManagedInstanceSecurityAlertPolicyConfig) MssqlManagedInstanceSecurityAlertPolicy {
 	_init_.Initialize()
 
@@ -542,7 +542,7 @@ func NewMssqlManagedInstanceSecurityAlertPolicy(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/mssql_managed_instance_security_alert_policy azurerm_mssql_managed_instance_security_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/mssql_managed_instance_security_alert_policy azurerm_mssql_managed_instance_security_alert_policy} Resource.
 func NewMssqlManagedInstanceSecurityAlertPolicy_Override(m MssqlManagedInstanceSecurityAlertPolicy, scope constructs.Construct, id *string, config *MssqlManagedInstanceSecurityAlertPolicyConfig) {
 	_init_.Initialize()
 
@@ -564,7 +564,10 @@ func (j *jsiiProxy_MssqlManagedInstanceSecurityAlertPolicy)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_MssqlManagedInstanceSecurityAlertPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_MssqlManagedInstanceSecurityAlertPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

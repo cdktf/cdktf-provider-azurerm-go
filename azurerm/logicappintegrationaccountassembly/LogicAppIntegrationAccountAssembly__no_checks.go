@@ -88,6 +88,10 @@ func (j *jsiiProxy_LogicAppIntegrationAccountAssembly) validateSetContentLinkUri
 	return nil
 }
 
+func (j *jsiiProxy_LogicAppIntegrationAccountAssembly) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppIntegrationAccountAssembly) validateSetIdParameters(val *string) error {
 	return nil
 }

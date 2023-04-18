@@ -2,14 +2,14 @@ package dataazurermmobilenetworkservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermmobilenetworkservice/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermmobilenetworkservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/mobile_network_service azurerm_mobile_network_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/mobile_network_service azurerm_mobile_network_service}.
 type DataAzurermMobileNetworkService interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermMobileNetworkService interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataAzurermMobileNetworkService) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermMobileNetworkService) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermMobileNetworkService) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataAzurermMobileNetworkService) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/mobile_network_service azurerm_mobile_network_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/mobile_network_service azurerm_mobile_network_service} Data Source.
 func NewDataAzurermMobileNetworkService(scope constructs.Construct, id *string, config *DataAzurermMobileNetworkServiceConfig) DataAzurermMobileNetworkService {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataAzurermMobileNetworkService(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/mobile_network_service azurerm_mobile_network_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/mobile_network_service azurerm_mobile_network_service} Data Source.
 func NewDataAzurermMobileNetworkService_Override(d DataAzurermMobileNetworkService, scope constructs.Construct, id *string, config *DataAzurermMobileNetworkServiceConfig) {
 	_init_.Initialize()
 
@@ -412,7 +412,10 @@ func NewDataAzurermMobileNetworkService_Override(d DataAzurermMobileNetworkServi
 	)
 }
 
-func (j *jsiiProxy_DataAzurermMobileNetworkService)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermMobileNetworkService)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_LogicAppIntegrationAccountCertificate) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_LogicAppIntegrationAccountCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppIntegrationAccountCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

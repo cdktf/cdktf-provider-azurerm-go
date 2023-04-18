@@ -72,6 +72,10 @@ func (j *jsiiProxy_SynapseSqlPoolExtendedAuditingPolicy) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_SynapseSqlPoolExtendedAuditingPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseSqlPoolExtendedAuditingPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package eventgrideventsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/eventgrideventsubscription/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/eventgrideventsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/eventgrid_event_subscription azurerm_eventgrid_event_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/eventgrid_event_subscription azurerm_eventgrid_event_subscription}.
 type EventgridEventSubscription interface {
 	cdktf.TerraformResource
 	AdvancedFilter() EventgridEventSubscriptionAdvancedFilterOutputReference
@@ -28,9 +28,9 @@ type EventgridEventSubscription interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeadLetterIdentity() EventgridEventSubscriptionDeadLetterIdentityOutputReference
 	DeadLetterIdentityInput() *EventgridEventSubscriptionDeadLetterIdentity
 	DeliveryIdentity() EventgridEventSubscriptionDeliveryIdentityOutputReference
@@ -281,8 +281,8 @@ func (j *jsiiProxy_EventgridEventSubscription) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_EventgridEventSubscription) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EventgridEventSubscription) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -812,7 +812,7 @@ func (j *jsiiProxy_EventgridEventSubscription) WebhookEndpointInput() *Eventgrid
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/eventgrid_event_subscription azurerm_eventgrid_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/eventgrid_event_subscription azurerm_eventgrid_event_subscription} Resource.
 func NewEventgridEventSubscription(scope constructs.Construct, id *string, config *EventgridEventSubscriptionConfig) EventgridEventSubscription {
 	_init_.Initialize()
 
@@ -830,7 +830,7 @@ func NewEventgridEventSubscription(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/eventgrid_event_subscription azurerm_eventgrid_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/eventgrid_event_subscription azurerm_eventgrid_event_subscription} Resource.
 func NewEventgridEventSubscription_Override(e EventgridEventSubscription, scope constructs.Construct, id *string, config *EventgridEventSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -863,7 +863,10 @@ func (j *jsiiProxy_EventgridEventSubscription)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventgridEventSubscription)SetCount(val *float64) {
+func (j *jsiiProxy_EventgridEventSubscription)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

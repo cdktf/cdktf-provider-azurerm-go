@@ -76,6 +76,10 @@ func (j *jsiiProxy_ApiManagementApiRelease) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementApiRelease) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementApiRelease) validateSetIdParameters(val *string) error {
 	return nil
 }

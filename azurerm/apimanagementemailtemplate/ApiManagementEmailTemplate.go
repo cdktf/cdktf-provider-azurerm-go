@@ -2,14 +2,14 @@ package apimanagementemailtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/apimanagementemailtemplate/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/apimanagementemailtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_email_template azurerm_api_management_email_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_email_template azurerm_api_management_email_template}.
 type ApiManagementEmailTemplate interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -27,9 +27,9 @@ type ApiManagementEmailTemplate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -196,8 +196,8 @@ func (j *jsiiProxy_ApiManagementEmailTemplate) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_ApiManagementEmailTemplate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApiManagementEmailTemplate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -447,7 +447,7 @@ func (j *jsiiProxy_ApiManagementEmailTemplate) Title() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_email_template azurerm_api_management_email_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_email_template azurerm_api_management_email_template} Resource.
 func NewApiManagementEmailTemplate(scope constructs.Construct, id *string, config *ApiManagementEmailTemplateConfig) ApiManagementEmailTemplate {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewApiManagementEmailTemplate(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/api_management_email_template azurerm_api_management_email_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/api_management_email_template azurerm_api_management_email_template} Resource.
 func NewApiManagementEmailTemplate_Override(a ApiManagementEmailTemplate, scope constructs.Construct, id *string, config *ApiManagementEmailTemplateConfig) {
 	_init_.Initialize()
 
@@ -509,7 +509,10 @@ func (j *jsiiProxy_ApiManagementEmailTemplate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiManagementEmailTemplate)SetCount(val *float64) {
+func (j *jsiiProxy_ApiManagementEmailTemplate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -96,6 +96,10 @@ func (j *jsiiProxy_LabServiceLab) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_LabServiceLab) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LabServiceLab) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

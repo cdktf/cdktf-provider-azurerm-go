@@ -80,6 +80,10 @@ func (j *jsiiProxy_LbNatRule) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_LbNatRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbNatRule) validateSetEnableFloatingIpParameters(val interface{}) error {
 	return nil
 }

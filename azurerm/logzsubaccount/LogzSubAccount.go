@@ -2,14 +2,14 @@ package logzsubaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/logzsubaccount/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/logzsubaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/logz_sub_account azurerm_logz_sub_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logz_sub_account azurerm_logz_sub_account}.
 type LogzSubAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type LogzSubAccount interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -156,8 +156,8 @@ func (j *jsiiProxy_LogzSubAccount) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_LogzSubAccount) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LogzSubAccount) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -427,7 +427,7 @@ func (j *jsiiProxy_LogzSubAccount) UserInput() *LogzSubAccountUser {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/logz_sub_account azurerm_logz_sub_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logz_sub_account azurerm_logz_sub_account} Resource.
 func NewLogzSubAccount(scope constructs.Construct, id *string, config *LogzSubAccountConfig) LogzSubAccount {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewLogzSubAccount(scope constructs.Construct, id *string, config *LogzSubAc
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/logz_sub_account azurerm_logz_sub_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logz_sub_account azurerm_logz_sub_account} Resource.
 func NewLogzSubAccount_Override(l LogzSubAccount, scope constructs.Construct, id *string, config *LogzSubAccountConfig) {
 	_init_.Initialize()
 
@@ -467,7 +467,10 @@ func (j *jsiiProxy_LogzSubAccount)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogzSubAccount)SetCount(val *float64) {
+func (j *jsiiProxy_LogzSubAccount)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

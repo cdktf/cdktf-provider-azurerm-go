@@ -2,14 +2,14 @@ package capacityreservation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/capacityreservation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/capacityreservation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/capacity_reservation azurerm_capacity_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/capacity_reservation azurerm_capacity_reservation}.
 type CapacityReservation interface {
 	cdktf.TerraformResource
 	CapacityReservationGroupId() *string
@@ -24,9 +24,9 @@ type CapacityReservation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -176,8 +176,8 @@ func (j *jsiiProxy_CapacityReservation) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_CapacityReservation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CapacityReservation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -427,7 +427,7 @@ func (j *jsiiProxy_CapacityReservation) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/capacity_reservation azurerm_capacity_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/capacity_reservation azurerm_capacity_reservation} Resource.
 func NewCapacityReservation(scope constructs.Construct, id *string, config *CapacityReservationConfig) CapacityReservation {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewCapacityReservation(scope constructs.Construct, id *string, config *Capa
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/capacity_reservation azurerm_capacity_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/capacity_reservation azurerm_capacity_reservation} Resource.
 func NewCapacityReservation_Override(c CapacityReservation, scope constructs.Construct, id *string, config *CapacityReservationConfig) {
 	_init_.Initialize()
 
@@ -478,7 +478,10 @@ func (j *jsiiProxy_CapacityReservation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CapacityReservation)SetCount(val *float64) {
+func (j *jsiiProxy_CapacityReservation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

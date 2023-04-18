@@ -88,6 +88,10 @@ func (j *jsiiProxy_NetworkManagerAdminRule) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_NetworkManagerAdminRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkManagerAdminRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

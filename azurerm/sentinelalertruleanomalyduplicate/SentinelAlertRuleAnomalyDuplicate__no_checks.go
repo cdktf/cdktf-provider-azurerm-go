@@ -92,6 +92,10 @@ func (j *jsiiProxy_SentinelAlertRuleAnomalyDuplicate) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_SentinelAlertRuleAnomalyDuplicate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelAlertRuleAnomalyDuplicate) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

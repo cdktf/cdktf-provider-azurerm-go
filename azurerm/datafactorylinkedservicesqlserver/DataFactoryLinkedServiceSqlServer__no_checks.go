@@ -92,6 +92,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSqlServer) validateSetConnectionStrin
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryLinkedServiceSqlServer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceSqlServer) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_StorageSyncCloudEndpoint) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_StorageSyncCloudEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageSyncCloudEndpoint) validateSetFileShareNameParameters(val *string) error {
 	return nil
 }

@@ -104,6 +104,10 @@ func (j *jsiiProxy_ApiManagementApiDiagnostic) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementApiDiagnostic) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementApiDiagnostic) validateSetHttpCorrelationProtocolParameters(val *string) error {
 	return nil
 }

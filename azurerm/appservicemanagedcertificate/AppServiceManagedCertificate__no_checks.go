@@ -72,6 +72,10 @@ func (j *jsiiProxy_AppServiceManagedCertificate) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_AppServiceManagedCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceManagedCertificate) validateSetCustomHostnameBindingIdParameters(val *string) error {
 	return nil
 }

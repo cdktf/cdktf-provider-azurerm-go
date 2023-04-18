@@ -2,14 +2,14 @@ package appserviceenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/appserviceenvironment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/appserviceenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/app_service_environment azurerm_app_service_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_environment azurerm_app_service_environment}.
 type AppServiceEnvironment interface {
 	cdktf.TerraformResource
 	AllowedUserIpCidrs() *[]*string
@@ -26,9 +26,9 @@ type AppServiceEnvironment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -216,8 +216,8 @@ func (j *jsiiProxy_AppServiceEnvironment) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_AppServiceEnvironment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppServiceEnvironment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -567,7 +567,7 @@ func (j *jsiiProxy_AppServiceEnvironment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/app_service_environment azurerm_app_service_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_environment azurerm_app_service_environment} Resource.
 func NewAppServiceEnvironment(scope constructs.Construct, id *string, config *AppServiceEnvironmentConfig) AppServiceEnvironment {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewAppServiceEnvironment(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/app_service_environment azurerm_app_service_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_environment azurerm_app_service_environment} Resource.
 func NewAppServiceEnvironment_Override(a AppServiceEnvironment, scope constructs.Construct, id *string, config *AppServiceEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -618,7 +618,10 @@ func (j *jsiiProxy_AppServiceEnvironment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppServiceEnvironment)SetCount(val *float64) {
+func (j *jsiiProxy_AppServiceEnvironment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

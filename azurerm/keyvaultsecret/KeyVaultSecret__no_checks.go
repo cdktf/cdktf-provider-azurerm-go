@@ -76,6 +76,10 @@ func (j *jsiiProxy_KeyVaultSecret) validateSetContentTypeParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_KeyVaultSecret) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyVaultSecret) validateSetExpirationDateParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func validateDataAzurermMobileNetworkSimGroup_IsTerraformElementParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermMobileNetworkSimGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMobileNetworkSimGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -128,6 +128,10 @@ func (j *jsiiProxy_LinuxWebAppSlot) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_LinuxWebAppSlot) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxWebAppSlot) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

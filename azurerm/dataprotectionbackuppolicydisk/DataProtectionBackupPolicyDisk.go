@@ -2,14 +2,14 @@ package dataprotectionbackuppolicydisk
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataprotectionbackuppolicydisk/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataprotectionbackuppolicydisk/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/data_protection_backup_policy_disk azurerm_data_protection_backup_policy_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_protection_backup_policy_disk azurerm_data_protection_backup_policy_disk}.
 type DataProtectionBackupPolicyDisk interface {
 	cdktf.TerraformResource
 	BackupRepeatingTimeIntervals() *[]*string
@@ -24,9 +24,9 @@ type DataProtectionBackupPolicyDisk interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultRetentionDuration() *string
 	SetDefaultRetentionDuration(val *string)
 	DefaultRetentionDurationInput() *string
@@ -175,8 +175,8 @@ func (j *jsiiProxy_DataProtectionBackupPolicyDisk) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataProtectionBackupPolicyDisk) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataProtectionBackupPolicyDisk) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -426,7 +426,7 @@ func (j *jsiiProxy_DataProtectionBackupPolicyDisk) VaultIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_protection_backup_policy_disk azurerm_data_protection_backup_policy_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_protection_backup_policy_disk azurerm_data_protection_backup_policy_disk} Resource.
 func NewDataProtectionBackupPolicyDisk(scope constructs.Construct, id *string, config *DataProtectionBackupPolicyDiskConfig) DataProtectionBackupPolicyDisk {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewDataProtectionBackupPolicyDisk(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/data_protection_backup_policy_disk azurerm_data_protection_backup_policy_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/data_protection_backup_policy_disk azurerm_data_protection_backup_policy_disk} Resource.
 func NewDataProtectionBackupPolicyDisk_Override(d DataProtectionBackupPolicyDisk, scope constructs.Construct, id *string, config *DataProtectionBackupPolicyDiskConfig) {
 	_init_.Initialize()
 
@@ -477,7 +477,10 @@ func (j *jsiiProxy_DataProtectionBackupPolicyDisk)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DataProtectionBackupPolicyDisk)SetCount(val *float64) {
+func (j *jsiiProxy_DataProtectionBackupPolicyDisk)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

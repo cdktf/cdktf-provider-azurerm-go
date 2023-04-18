@@ -68,6 +68,10 @@ func validateDataAzurermWebPubsub_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermWebPubsub) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermWebPubsub) validateSetIdParameters(val *string) error {
 	return nil
 }

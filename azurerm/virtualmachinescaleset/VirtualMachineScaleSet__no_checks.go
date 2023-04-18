@@ -132,6 +132,10 @@ func (j *jsiiProxy_VirtualMachineScaleSet) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_VirtualMachineScaleSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualMachineScaleSet) validateSetEvictionPolicyParameters(val *string) error {
 	return nil
 }

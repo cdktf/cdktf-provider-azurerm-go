@@ -76,6 +76,10 @@ func (j *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) validateSetDiscoveryLogsEnabledParameters(val interface{}) error {
 	return nil
 }

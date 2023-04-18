@@ -72,6 +72,10 @@ func (j *jsiiProxy_SpringCloudAccelerator) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudAccelerator) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudAccelerator) validateSetIdParameters(val *string) error {
 	return nil
 }

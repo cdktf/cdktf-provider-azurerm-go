@@ -68,6 +68,10 @@ func validateDataAzurermCdnFrontdoorProfile_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermCdnFrontdoorProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermCdnFrontdoorProfile) validateSetIdParameters(val *string) error {
 	return nil
 }

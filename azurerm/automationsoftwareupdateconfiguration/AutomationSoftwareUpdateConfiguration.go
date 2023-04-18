@@ -2,14 +2,14 @@ package automationsoftwareupdateconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/automationsoftwareupdateconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/automationsoftwareupdateconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/automation_software_update_configuration azurerm_automation_software_update_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration}.
 type AutomationSoftwareUpdateConfiguration interface {
 	cdktf.TerraformResource
 	AutomationAccountId() *string
@@ -24,9 +24,9 @@ type AutomationSoftwareUpdateConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -207,8 +207,8 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -628,7 +628,7 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) WindowsInput() *Automa
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/automation_software_update_configuration azurerm_automation_software_update_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration} Resource.
 func NewAutomationSoftwareUpdateConfiguration(scope constructs.Construct, id *string, config *AutomationSoftwareUpdateConfigurationConfig) AutomationSoftwareUpdateConfiguration {
 	_init_.Initialize()
 
@@ -646,7 +646,7 @@ func NewAutomationSoftwareUpdateConfiguration(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/automation_software_update_configuration azurerm_automation_software_update_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration} Resource.
 func NewAutomationSoftwareUpdateConfiguration_Override(a AutomationSoftwareUpdateConfiguration, scope constructs.Construct, id *string, config *AutomationSoftwareUpdateConfigurationConfig) {
 	_init_.Initialize()
 
@@ -679,7 +679,10 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

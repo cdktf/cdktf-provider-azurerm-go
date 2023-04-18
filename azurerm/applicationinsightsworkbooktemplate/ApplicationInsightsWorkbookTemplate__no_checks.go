@@ -80,6 +80,10 @@ func (j *jsiiProxy_ApplicationInsightsWorkbookTemplate) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationInsightsWorkbookTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationInsightsWorkbookTemplate) validateSetIdParameters(val *string) error {
 	return nil
 }

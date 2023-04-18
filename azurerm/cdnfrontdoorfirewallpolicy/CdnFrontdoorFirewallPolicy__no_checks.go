@@ -80,6 +80,10 @@ func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) validateSetCustomBlockResponseBodyParameters(val *string) error {
 	return nil
 }

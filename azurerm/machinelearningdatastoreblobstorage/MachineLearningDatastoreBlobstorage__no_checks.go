@@ -76,6 +76,10 @@ func (j *jsiiProxy_MachineLearningDatastoreBlobstorage) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_MachineLearningDatastoreBlobstorage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MachineLearningDatastoreBlobstorage) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

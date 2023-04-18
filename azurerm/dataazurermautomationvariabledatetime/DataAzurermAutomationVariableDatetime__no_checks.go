@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermAutomationVariableDatetime) validateSetAutomationA
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermAutomationVariableDatetime) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermAutomationVariableDatetime) validateSetIdParameters(val *string) error {
 	return nil
 }

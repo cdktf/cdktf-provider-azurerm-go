@@ -72,6 +72,10 @@ func (j *jsiiProxy_SubnetRouteTableAssociation) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_SubnetRouteTableAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SubnetRouteTableAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_KeyVaultKey) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_KeyVaultKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyVaultKey) validateSetCurveParameters(val *string) error {
 	return nil
 }

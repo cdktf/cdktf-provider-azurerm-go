@@ -84,6 +84,10 @@ func (j *jsiiProxy_SynapseLinkedService) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_SynapseLinkedService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseLinkedService) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package networkmanageradminrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/networkmanageradminrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/networkmanageradminrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/network_manager_admin_rule azurerm_network_manager_admin_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/network_manager_admin_rule azurerm_network_manager_admin_rule}.
 type NetworkManagerAdminRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -27,9 +27,9 @@ type NetworkManagerAdminRule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -217,8 +217,8 @@ func (j *jsiiProxy_NetworkManagerAdminRule) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagerAdminRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_NetworkManagerAdminRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -568,7 +568,7 @@ func (j *jsiiProxy_NetworkManagerAdminRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/network_manager_admin_rule azurerm_network_manager_admin_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/network_manager_admin_rule azurerm_network_manager_admin_rule} Resource.
 func NewNetworkManagerAdminRule(scope constructs.Construct, id *string, config *NetworkManagerAdminRuleConfig) NetworkManagerAdminRule {
 	_init_.Initialize()
 
@@ -586,7 +586,7 @@ func NewNetworkManagerAdminRule(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/network_manager_admin_rule azurerm_network_manager_admin_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/network_manager_admin_rule azurerm_network_manager_admin_rule} Resource.
 func NewNetworkManagerAdminRule_Override(n NetworkManagerAdminRule, scope constructs.Construct, id *string, config *NetworkManagerAdminRuleConfig) {
 	_init_.Initialize()
 
@@ -630,7 +630,10 @@ func (j *jsiiProxy_NetworkManagerAdminRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkManagerAdminRule)SetCount(val *float64) {
+func (j *jsiiProxy_NetworkManagerAdminRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

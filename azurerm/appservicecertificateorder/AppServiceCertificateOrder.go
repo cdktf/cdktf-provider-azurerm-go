@@ -2,14 +2,14 @@ package appservicecertificateorder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/appservicecertificateorder/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/appservicecertificateorder/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/app_service_certificate_order azurerm_app_service_certificate_order}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_certificate_order azurerm_app_service_certificate_order}.
 type AppServiceCertificateOrder interface {
 	cdktf.TerraformResource
 	AppServiceCertificateNotRenewableReasons() *[]*string
@@ -26,9 +26,9 @@ type AppServiceCertificateOrder interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Csr() *string
 	SetCsr(val *string)
 	CsrInput() *string
@@ -225,8 +225,8 @@ func (j *jsiiProxy_AppServiceCertificateOrder) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_AppServiceCertificateOrder) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppServiceCertificateOrder) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -646,7 +646,7 @@ func (j *jsiiProxy_AppServiceCertificateOrder) ValidityInYearsInput() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/app_service_certificate_order azurerm_app_service_certificate_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_certificate_order azurerm_app_service_certificate_order} Resource.
 func NewAppServiceCertificateOrder(scope constructs.Construct, id *string, config *AppServiceCertificateOrderConfig) AppServiceCertificateOrder {
 	_init_.Initialize()
 
@@ -664,7 +664,7 @@ func NewAppServiceCertificateOrder(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/app_service_certificate_order azurerm_app_service_certificate_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_certificate_order azurerm_app_service_certificate_order} Resource.
 func NewAppServiceCertificateOrder_Override(a AppServiceCertificateOrder, scope constructs.Construct, id *string, config *AppServiceCertificateOrderConfig) {
 	_init_.Initialize()
 
@@ -697,7 +697,10 @@ func (j *jsiiProxy_AppServiceCertificateOrder)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppServiceCertificateOrder)SetCount(val *float64) {
+func (j *jsiiProxy_AppServiceCertificateOrder)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

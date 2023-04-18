@@ -68,6 +68,10 @@ func validateDataAzurermDiskEncryptionSet_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermDiskEncryptionSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermDiskEncryptionSet) validateSetIdParameters(val *string) error {
 	return nil
 }

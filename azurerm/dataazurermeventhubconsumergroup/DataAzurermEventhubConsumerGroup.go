@@ -2,14 +2,14 @@ package dataazurermeventhubconsumergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermeventhubconsumergroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermeventhubconsumergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/eventhub_consumer_group azurerm_eventhub_consumer_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/eventhub_consumer_group azurerm_eventhub_consumer_group}.
 type DataAzurermEventhubConsumerGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAzurermEventhubConsumerGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataAzurermEventhubConsumerGroup) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermEventhubConsumerGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermEventhubConsumerGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataAzurermEventhubConsumerGroup) UserMetadata() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/eventhub_consumer_group azurerm_eventhub_consumer_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/eventhub_consumer_group azurerm_eventhub_consumer_group} Data Source.
 func NewDataAzurermEventhubConsumerGroup(scope constructs.Construct, id *string, config *DataAzurermEventhubConsumerGroupConfig) DataAzurermEventhubConsumerGroup {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewDataAzurermEventhubConsumerGroup(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/eventhub_consumer_group azurerm_eventhub_consumer_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/eventhub_consumer_group azurerm_eventhub_consumer_group} Data Source.
 func NewDataAzurermEventhubConsumerGroup_Override(d DataAzurermEventhubConsumerGroup, scope constructs.Construct, id *string, config *DataAzurermEventhubConsumerGroupConfig) {
 	_init_.Initialize()
 
@@ -414,7 +414,10 @@ func NewDataAzurermEventhubConsumerGroup_Override(d DataAzurermEventhubConsumerG
 	)
 }
 
-func (j *jsiiProxy_DataAzurermEventhubConsumerGroup)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermEventhubConsumerGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

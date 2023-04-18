@@ -84,6 +84,10 @@ func (j *jsiiProxy_MediaAssetFilter) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_MediaAssetFilter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaAssetFilter) validateSetFirstQualityBitrateParameters(val *float64) error {
 	return nil
 }

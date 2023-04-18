@@ -80,6 +80,10 @@ func (j *jsiiProxy_StreamAnalyticsOutputServicebusQueue) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsOutputServicebusQueue) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsOutputServicebusQueue) validateSetIdParameters(val *string) error {
 	return nil
 }

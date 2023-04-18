@@ -2,14 +2,14 @@ package lbprobe
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/lbprobe/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/lbprobe/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/lb_probe azurerm_lb_probe}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/lb_probe azurerm_lb_probe}.
 type LbProbe interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type LbProbe interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_LbProbe) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LbProbe) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LbProbe) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -510,7 +510,7 @@ func (j *jsiiProxy_LbProbe) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/lb_probe azurerm_lb_probe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/lb_probe azurerm_lb_probe} Resource.
 func NewLbProbe(scope constructs.Construct, id *string, config *LbProbeConfig) LbProbe {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewLbProbe(scope constructs.Construct, id *string, config *LbProbeConfig) L
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/lb_probe azurerm_lb_probe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/lb_probe azurerm_lb_probe} Resource.
 func NewLbProbe_Override(l LbProbe, scope constructs.Construct, id *string, config *LbProbeConfig) {
 	_init_.Initialize()
 
@@ -550,7 +550,10 @@ func (j *jsiiProxy_LbProbe)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LbProbe)SetCount(val *float64) {
+func (j *jsiiProxy_LbProbe)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

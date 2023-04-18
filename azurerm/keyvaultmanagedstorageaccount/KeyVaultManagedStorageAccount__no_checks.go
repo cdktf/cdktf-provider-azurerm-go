@@ -72,6 +72,10 @@ func (j *jsiiProxy_KeyVaultManagedStorageAccount) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_KeyVaultManagedStorageAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyVaultManagedStorageAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

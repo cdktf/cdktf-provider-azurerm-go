@@ -84,6 +84,10 @@ func (j *jsiiProxy_ExpressRouteCircuitConnection) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_ExpressRouteCircuitConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRouteCircuitConnection) validateSetIdParameters(val *string) error {
 	return nil
 }

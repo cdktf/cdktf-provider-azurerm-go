@@ -2,14 +2,14 @@ package iothubenrichment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/iothubenrichment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/iothubenrichment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/iothub_enrichment azurerm_iothub_enrichment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iothub_enrichment azurerm_iothub_enrichment}.
 type IothubEnrichmentA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type IothubEnrichmentA interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_IothubEnrichmentA) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_IothubEnrichmentA) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IothubEnrichmentA) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -425,7 +425,7 @@ func (j *jsiiProxy_IothubEnrichmentA) ValueInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/iothub_enrichment azurerm_iothub_enrichment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iothub_enrichment azurerm_iothub_enrichment} Resource.
 func NewIothubEnrichmentA(scope constructs.Construct, id *string, config *IothubEnrichmentAConfig) IothubEnrichmentA {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewIothubEnrichmentA(scope constructs.Construct, id *string, config *Iothub
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/iothub_enrichment azurerm_iothub_enrichment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iothub_enrichment azurerm_iothub_enrichment} Resource.
 func NewIothubEnrichmentA_Override(i IothubEnrichmentA, scope constructs.Construct, id *string, config *IothubEnrichmentAConfig) {
 	_init_.Initialize()
 
@@ -465,7 +465,10 @@ func (j *jsiiProxy_IothubEnrichmentA)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IothubEnrichmentA)SetCount(val *float64) {
+func (j *jsiiProxy_IothubEnrichmentA)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

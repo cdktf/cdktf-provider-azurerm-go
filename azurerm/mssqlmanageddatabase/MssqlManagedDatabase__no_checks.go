@@ -76,6 +76,10 @@ func (j *jsiiProxy_MssqlManagedDatabase) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_MssqlManagedDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlManagedDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }

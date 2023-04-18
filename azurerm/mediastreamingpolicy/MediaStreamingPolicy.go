@@ -2,14 +2,14 @@ package mediastreamingpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/mediastreamingpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/mediastreamingpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/media_streaming_policy azurerm_media_streaming_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_streaming_policy azurerm_media_streaming_policy}.
 type MediaStreamingPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -25,9 +25,9 @@ type MediaStreamingPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultContentKeyPolicyName() *string
 	SetDefaultContentKeyPolicyName(val *string)
 	DefaultContentKeyPolicyNameInput() *string
@@ -208,8 +208,8 @@ func (j *jsiiProxy_MediaStreamingPolicy) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_MediaStreamingPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MediaStreamingPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -499,7 +499,7 @@ func (j *jsiiProxy_MediaStreamingPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/media_streaming_policy azurerm_media_streaming_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_streaming_policy azurerm_media_streaming_policy} Resource.
 func NewMediaStreamingPolicy(scope constructs.Construct, id *string, config *MediaStreamingPolicyConfig) MediaStreamingPolicy {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewMediaStreamingPolicy(scope constructs.Construct, id *string, config *Med
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/media_streaming_policy azurerm_media_streaming_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_streaming_policy azurerm_media_streaming_policy} Resource.
 func NewMediaStreamingPolicy_Override(m MediaStreamingPolicy, scope constructs.Construct, id *string, config *MediaStreamingPolicyConfig) {
 	_init_.Initialize()
 
@@ -539,7 +539,10 @@ func (j *jsiiProxy_MediaStreamingPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MediaStreamingPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_MediaStreamingPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

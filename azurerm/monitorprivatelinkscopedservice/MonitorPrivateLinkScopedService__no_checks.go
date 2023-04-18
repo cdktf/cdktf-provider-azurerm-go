@@ -72,6 +72,10 @@ func (j *jsiiProxy_MonitorPrivateLinkScopedService) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_MonitorPrivateLinkScopedService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorPrivateLinkScopedService) validateSetIdParameters(val *string) error {
 	return nil
 }

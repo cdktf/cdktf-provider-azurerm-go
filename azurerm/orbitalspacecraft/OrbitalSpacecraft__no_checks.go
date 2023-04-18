@@ -76,6 +76,10 @@ func (j *jsiiProxy_OrbitalSpacecraft) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_OrbitalSpacecraft) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrbitalSpacecraft) validateSetIdParameters(val *string) error {
 	return nil
 }

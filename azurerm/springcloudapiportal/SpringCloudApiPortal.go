@@ -2,14 +2,14 @@ package springcloudapiportal
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/springcloudapiportal/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/springcloudapiportal/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_api_portal azurerm_spring_cloud_api_portal}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/spring_cloud_api_portal azurerm_spring_cloud_api_portal}.
 type SpringCloudApiPortal interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SpringCloudApiPortal interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -166,8 +166,8 @@ func (j *jsiiProxy_SpringCloudApiPortal) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_SpringCloudApiPortal) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SpringCloudApiPortal) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -487,7 +487,7 @@ func (j *jsiiProxy_SpringCloudApiPortal) Url() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_api_portal azurerm_spring_cloud_api_portal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/spring_cloud_api_portal azurerm_spring_cloud_api_portal} Resource.
 func NewSpringCloudApiPortal(scope constructs.Construct, id *string, config *SpringCloudApiPortalConfig) SpringCloudApiPortal {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewSpringCloudApiPortal(scope constructs.Construct, id *string, config *Spr
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/spring_cloud_api_portal azurerm_spring_cloud_api_portal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/spring_cloud_api_portal azurerm_spring_cloud_api_portal} Resource.
 func NewSpringCloudApiPortal_Override(s SpringCloudApiPortal, scope constructs.Construct, id *string, config *SpringCloudApiPortalConfig) {
 	_init_.Initialize()
 
@@ -527,7 +527,10 @@ func (j *jsiiProxy_SpringCloudApiPortal)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpringCloudApiPortal)SetCount(val *float64) {
+func (j *jsiiProxy_SpringCloudApiPortal)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

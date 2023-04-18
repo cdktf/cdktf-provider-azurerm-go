@@ -88,6 +88,10 @@ func (j *jsiiProxy_ContainerAppEnvironmentDaprComponent) validateSetContainerApp
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppEnvironmentDaprComponent) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppEnvironmentDaprComponent) validateSetIdParameters(val *string) error {
 	return nil
 }

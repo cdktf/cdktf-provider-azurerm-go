@@ -88,6 +88,10 @@ func (j *jsiiProxy_RedisCache) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_RedisCache) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisCache) validateSetEnableNonSslPortParameters(val interface{}) error {
 	return nil
 }

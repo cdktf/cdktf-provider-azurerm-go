@@ -92,6 +92,10 @@ func (j *jsiiProxy_NetappVolume) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolume) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolume) validateSetCreateFromSnapshotResourceIdParameters(val *string) error {
 	return nil
 }

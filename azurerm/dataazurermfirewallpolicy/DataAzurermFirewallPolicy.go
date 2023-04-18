@@ -2,14 +2,14 @@ package dataazurermfirewallpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermfirewallpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermfirewallpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/firewall_policy azurerm_firewall_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/firewall_policy azurerm_firewall_policy}.
 type DataAzurermFirewallPolicy interface {
 	cdktf.TerraformDataSource
 	BasePolicyId() *string
@@ -19,9 +19,9 @@ type DataAzurermFirewallPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DataAzurermFirewallPolicy) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermFirewallPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermFirewallPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -427,7 +427,7 @@ func (j *jsiiProxy_DataAzurermFirewallPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/firewall_policy azurerm_firewall_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/firewall_policy azurerm_firewall_policy} Data Source.
 func NewDataAzurermFirewallPolicy(scope constructs.Construct, id *string, config *DataAzurermFirewallPolicyConfig) DataAzurermFirewallPolicy {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewDataAzurermFirewallPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/firewall_policy azurerm_firewall_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/firewall_policy azurerm_firewall_policy} Data Source.
 func NewDataAzurermFirewallPolicy_Override(d DataAzurermFirewallPolicy, scope constructs.Construct, id *string, config *DataAzurermFirewallPolicyConfig) {
 	_init_.Initialize()
 
@@ -456,7 +456,10 @@ func NewDataAzurermFirewallPolicy_Override(d DataAzurermFirewallPolicy, scope co
 	)
 }
 
-func (j *jsiiProxy_DataAzurermFirewallPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermFirewallPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

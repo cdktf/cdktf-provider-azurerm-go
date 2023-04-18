@@ -68,6 +68,10 @@ func validateDataAzurermMariadbServer_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermMariadbServer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMariadbServer) validateSetIdParameters(val *string) error {
 	return nil
 }

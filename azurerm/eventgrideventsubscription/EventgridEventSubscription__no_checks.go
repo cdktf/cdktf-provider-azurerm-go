@@ -116,6 +116,10 @@ func (j *jsiiProxy_EventgridEventSubscription) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_EventgridEventSubscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventgridEventSubscription) validateSetEventDeliverySchemaParameters(val *string) error {
 	return nil
 }

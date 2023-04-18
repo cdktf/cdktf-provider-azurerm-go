@@ -2,14 +2,14 @@ package automationdscnodeconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/automationdscnodeconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/automationdscnodeconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/automation_dsc_nodeconfiguration azurerm_automation_dsc_nodeconfiguration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/automation_dsc_nodeconfiguration azurerm_automation_dsc_nodeconfiguration}.
 type AutomationDscNodeconfiguration interface {
 	cdktf.TerraformResource
 	AutomationAccountName() *string
@@ -28,9 +28,9 @@ type AutomationDscNodeconfiguration interface {
 	SetContentEmbedded(val *string)
 	ContentEmbeddedInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -202,8 +202,8 @@ func (j *jsiiProxy_AutomationDscNodeconfiguration) ContentEmbeddedInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_AutomationDscNodeconfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AutomationDscNodeconfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -413,7 +413,7 @@ func (j *jsiiProxy_AutomationDscNodeconfiguration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/automation_dsc_nodeconfiguration azurerm_automation_dsc_nodeconfiguration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/automation_dsc_nodeconfiguration azurerm_automation_dsc_nodeconfiguration} Resource.
 func NewAutomationDscNodeconfiguration(scope constructs.Construct, id *string, config *AutomationDscNodeconfigurationConfig) AutomationDscNodeconfiguration {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewAutomationDscNodeconfiguration(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/automation_dsc_nodeconfiguration azurerm_automation_dsc_nodeconfiguration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/automation_dsc_nodeconfiguration azurerm_automation_dsc_nodeconfiguration} Resource.
 func NewAutomationDscNodeconfiguration_Override(a AutomationDscNodeconfiguration, scope constructs.Construct, id *string, config *AutomationDscNodeconfigurationConfig) {
 	_init_.Initialize()
 
@@ -475,7 +475,10 @@ func (j *jsiiProxy_AutomationDscNodeconfiguration)SetContentEmbedded(val *string
 	)
 }
 
-func (j *jsiiProxy_AutomationDscNodeconfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_AutomationDscNodeconfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

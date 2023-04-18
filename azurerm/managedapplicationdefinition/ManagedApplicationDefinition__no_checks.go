@@ -76,6 +76,10 @@ func (j *jsiiProxy_ManagedApplicationDefinition) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_ManagedApplicationDefinition) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedApplicationDefinition) validateSetCreateUiDefinitionParameters(val *string) error {
 	return nil
 }

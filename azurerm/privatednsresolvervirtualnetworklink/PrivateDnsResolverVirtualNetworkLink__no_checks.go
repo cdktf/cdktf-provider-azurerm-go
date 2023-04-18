@@ -72,6 +72,10 @@ func (j *jsiiProxy_PrivateDnsResolverVirtualNetworkLink) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_PrivateDnsResolverVirtualNetworkLink) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivateDnsResolverVirtualNetworkLink) validateSetDnsForwardingRulesetIdParameters(val *string) error {
 	return nil
 }

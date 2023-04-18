@@ -168,6 +168,10 @@ func (j *jsiiProxy_ApplicationGateway) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationGateway) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationGateway) validateSetEnableHttp2Parameters(val interface{}) error {
 	return nil
 }

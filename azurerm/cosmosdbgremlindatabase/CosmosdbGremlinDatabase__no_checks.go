@@ -80,6 +80,10 @@ func (j *jsiiProxy_CosmosdbGremlinDatabase) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbGremlinDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbGremlinDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }

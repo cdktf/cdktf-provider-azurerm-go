@@ -80,6 +80,10 @@ func (j *jsiiProxy_ApiManagementGatewayHostNameConfiguration) validateSetConnect
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementGatewayHostNameConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementGatewayHostNameConfiguration) validateSetGatewayNameParameters(val *string) error {
 	return nil
 }

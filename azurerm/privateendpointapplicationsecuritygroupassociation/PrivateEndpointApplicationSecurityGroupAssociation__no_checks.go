@@ -76,6 +76,10 @@ func (j *jsiiProxy_PrivateEndpointApplicationSecurityGroupAssociation) validateS
 	return nil
 }
 
+func (j *jsiiProxy_PrivateEndpointApplicationSecurityGroupAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivateEndpointApplicationSecurityGroupAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_PowerbiEmbedded) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_PowerbiEmbedded) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PowerbiEmbedded) validateSetIdParameters(val *string) error {
 	return nil
 }

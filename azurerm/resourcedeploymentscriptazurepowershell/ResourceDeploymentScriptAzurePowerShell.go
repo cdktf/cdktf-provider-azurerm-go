@@ -2,14 +2,14 @@ package resourcedeploymentscriptazurepowershell
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/resourcedeploymentscriptazurepowershell/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/resourcedeploymentscriptazurepowershell/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/resource_deployment_script_azure_power_shell azurerm_resource_deployment_script_azure_power_shell}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/resource_deployment_script_azure_power_shell azurerm_resource_deployment_script_azure_power_shell}.
 type ResourceDeploymentScriptAzurePowerShell interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -29,9 +29,9 @@ type ResourceDeploymentScriptAzurePowerShell interface {
 	Container() ResourceDeploymentScriptAzurePowerShellContainerOutputReference
 	ContainerInput() *ResourceDeploymentScriptAzurePowerShellContainer
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -263,8 +263,8 @@ func (j *jsiiProxy_ResourceDeploymentScriptAzurePowerShell) ContainerInput() *Re
 	return returns
 }
 
-func (j *jsiiProxy_ResourceDeploymentScriptAzurePowerShell) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ResourceDeploymentScriptAzurePowerShell) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -724,7 +724,7 @@ func (j *jsiiProxy_ResourceDeploymentScriptAzurePowerShell) VersionInput() *stri
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/resource_deployment_script_azure_power_shell azurerm_resource_deployment_script_azure_power_shell} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/resource_deployment_script_azure_power_shell azurerm_resource_deployment_script_azure_power_shell} Resource.
 func NewResourceDeploymentScriptAzurePowerShell(scope constructs.Construct, id *string, config *ResourceDeploymentScriptAzurePowerShellConfig) ResourceDeploymentScriptAzurePowerShell {
 	_init_.Initialize()
 
@@ -742,7 +742,7 @@ func NewResourceDeploymentScriptAzurePowerShell(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/resource_deployment_script_azure_power_shell azurerm_resource_deployment_script_azure_power_shell} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/resource_deployment_script_azure_power_shell azurerm_resource_deployment_script_azure_power_shell} Resource.
 func NewResourceDeploymentScriptAzurePowerShell_Override(r ResourceDeploymentScriptAzurePowerShell, scope constructs.Construct, id *string, config *ResourceDeploymentScriptAzurePowerShellConfig) {
 	_init_.Initialize()
 
@@ -786,7 +786,10 @@ func (j *jsiiProxy_ResourceDeploymentScriptAzurePowerShell)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_ResourceDeploymentScriptAzurePowerShell)SetCount(val *float64) {
+func (j *jsiiProxy_ResourceDeploymentScriptAzurePowerShell)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

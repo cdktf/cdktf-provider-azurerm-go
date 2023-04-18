@@ -2,14 +2,14 @@ package iotcentralapplicationnetworkruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/iotcentralapplicationnetworkruleset/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/iotcentralapplicationnetworkruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set}.
 type IotcentralApplicationNetworkRuleSet interface {
 	cdktf.TerraformResource
 	ApplyToDevice() interface{}
@@ -24,9 +24,9 @@ type IotcentralApplicationNetworkRuleSet interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultAction() *string
 	SetDefaultAction(val *string)
 	DefaultActionInput() *string
@@ -174,8 +174,8 @@ func (j *jsiiProxy_IotcentralApplicationNetworkRuleSet) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_IotcentralApplicationNetworkRuleSet) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IotcentralApplicationNetworkRuleSet) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -405,7 +405,7 @@ func (j *jsiiProxy_IotcentralApplicationNetworkRuleSet) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set} Resource.
 func NewIotcentralApplicationNetworkRuleSet(scope constructs.Construct, id *string, config *IotcentralApplicationNetworkRuleSetConfig) IotcentralApplicationNetworkRuleSet {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewIotcentralApplicationNetworkRuleSet(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set} Resource.
 func NewIotcentralApplicationNetworkRuleSet_Override(i IotcentralApplicationNetworkRuleSet, scope constructs.Construct, id *string, config *IotcentralApplicationNetworkRuleSetConfig) {
 	_init_.Initialize()
 
@@ -456,7 +456,10 @@ func (j *jsiiProxy_IotcentralApplicationNetworkRuleSet)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_IotcentralApplicationNetworkRuleSet)SetCount(val *float64) {
+func (j *jsiiProxy_IotcentralApplicationNetworkRuleSet)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

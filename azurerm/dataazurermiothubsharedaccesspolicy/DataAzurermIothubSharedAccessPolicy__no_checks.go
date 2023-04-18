@@ -68,6 +68,10 @@ func validateDataAzurermIothubSharedAccessPolicy_IsTerraformElementParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermIothubSharedAccessPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermIothubSharedAccessPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

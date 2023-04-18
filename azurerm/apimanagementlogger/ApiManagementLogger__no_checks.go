@@ -88,6 +88,10 @@ func (j *jsiiProxy_ApiManagementLogger) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementLogger) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementLogger) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

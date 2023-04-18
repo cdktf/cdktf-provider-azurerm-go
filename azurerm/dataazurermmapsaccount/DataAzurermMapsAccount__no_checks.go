@@ -68,6 +68,10 @@ func validateDataAzurermMapsAccount_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermMapsAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermMapsAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

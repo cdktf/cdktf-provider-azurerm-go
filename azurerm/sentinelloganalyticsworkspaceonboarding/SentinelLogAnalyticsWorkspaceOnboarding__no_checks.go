@@ -72,6 +72,10 @@ func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateSetCustomerManagedKeyEnabledParameters(val interface{}) error {
 	return nil
 }

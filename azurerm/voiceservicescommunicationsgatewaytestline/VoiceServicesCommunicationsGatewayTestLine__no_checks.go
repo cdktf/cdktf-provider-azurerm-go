@@ -72,6 +72,10 @@ func (j *jsiiProxy_VoiceServicesCommunicationsGatewayTestLine) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_VoiceServicesCommunicationsGatewayTestLine) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VoiceServicesCommunicationsGatewayTestLine) validateSetIdParameters(val *string) error {
 	return nil
 }

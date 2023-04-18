@@ -2,14 +2,14 @@ package dataazurermnetappsnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dataazurermnetappsnapshot/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dataazurermnetappsnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/d/netapp_snapshot azurerm_netapp_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/netapp_snapshot azurerm_netapp_snapshot}.
 type DataAzurermNetappSnapshot interface {
 	cdktf.TerraformDataSource
 	AccountName() *string
@@ -20,9 +20,9 @@ type DataAzurermNetappSnapshot interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -157,8 +157,8 @@ func (j *jsiiProxy_DataAzurermNetappSnapshot) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermNetappSnapshot) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAzurermNetappSnapshot) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -408,7 +408,7 @@ func (j *jsiiProxy_DataAzurermNetappSnapshot) VolumeNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/netapp_snapshot azurerm_netapp_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/netapp_snapshot azurerm_netapp_snapshot} Data Source.
 func NewDataAzurermNetappSnapshot(scope constructs.Construct, id *string, config *DataAzurermNetappSnapshotConfig) DataAzurermNetappSnapshot {
 	_init_.Initialize()
 
@@ -426,7 +426,7 @@ func NewDataAzurermNetappSnapshot(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/d/netapp_snapshot azurerm_netapp_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/netapp_snapshot azurerm_netapp_snapshot} Data Source.
 func NewDataAzurermNetappSnapshot_Override(d DataAzurermNetappSnapshot, scope constructs.Construct, id *string, config *DataAzurermNetappSnapshotConfig) {
 	_init_.Initialize()
 
@@ -448,7 +448,10 @@ func (j *jsiiProxy_DataAzurermNetappSnapshot)SetAccountName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAzurermNetappSnapshot)SetCount(val *float64) {
+func (j *jsiiProxy_DataAzurermNetappSnapshot)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

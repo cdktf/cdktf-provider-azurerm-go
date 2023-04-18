@@ -68,6 +68,10 @@ func validateDataAzurermPlatformImage_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermPlatformImage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermPlatformImage) validateSetIdParameters(val *string) error {
 	return nil
 }

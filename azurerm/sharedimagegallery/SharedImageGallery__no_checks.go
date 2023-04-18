@@ -72,6 +72,10 @@ func (j *jsiiProxy_SharedImageGallery) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_SharedImageGallery) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SharedImageGallery) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

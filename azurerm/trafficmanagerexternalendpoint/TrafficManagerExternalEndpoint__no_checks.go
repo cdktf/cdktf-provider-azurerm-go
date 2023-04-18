@@ -80,6 +80,10 @@ func (j *jsiiProxy_TrafficManagerExternalEndpoint) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_TrafficManagerExternalEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TrafficManagerExternalEndpoint) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

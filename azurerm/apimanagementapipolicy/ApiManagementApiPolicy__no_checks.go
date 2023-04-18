@@ -80,6 +80,10 @@ func (j *jsiiProxy_ApiManagementApiPolicy) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementApiPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementApiPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

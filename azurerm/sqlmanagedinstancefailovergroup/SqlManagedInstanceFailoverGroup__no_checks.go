@@ -76,6 +76,10 @@ func (j *jsiiProxy_SqlManagedInstanceFailoverGroup) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_SqlManagedInstanceFailoverGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlManagedInstanceFailoverGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

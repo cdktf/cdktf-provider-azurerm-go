@@ -88,6 +88,10 @@ func (j *jsiiProxy_EventgridTopic) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_EventgridTopic) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventgridTopic) validateSetIdParameters(val *string) error {
 	return nil
 }

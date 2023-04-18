@@ -68,6 +68,10 @@ func validateDataAzurermKeyVaultManagedHardwareSecurityModule_IsTerraformElement
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModule) validateSetIdParameters(val *string) error {
 	return nil
 }

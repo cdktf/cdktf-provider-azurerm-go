@@ -72,6 +72,10 @@ func (j *jsiiProxy_CapacityReservationGroup) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_CapacityReservationGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CapacityReservationGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_SqlActiveDirectoryAdministrator) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_SqlActiveDirectoryAdministrator) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlActiveDirectoryAdministrator) validateSetIdParameters(val *string) error {
 	return nil
 }

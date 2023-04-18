@@ -80,6 +80,10 @@ func (j *jsiiProxy_ContainerRegistryScopeMap) validateSetContainerRegistryNamePa
 	return nil
 }
 
+func (j *jsiiProxy_ContainerRegistryScopeMap) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerRegistryScopeMap) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

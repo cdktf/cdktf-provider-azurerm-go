@@ -96,6 +96,10 @@ func (j *jsiiProxy_VirtualNetworkGatewayConnection) validateSetConnectionProtoco
 	return nil
 }
 
+func (j *jsiiProxy_VirtualNetworkGatewayConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetworkGatewayConnection) validateSetDpdTimeoutSecondsParameters(val *float64) error {
 	return nil
 }

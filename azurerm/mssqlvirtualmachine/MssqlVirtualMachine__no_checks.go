@@ -96,6 +96,10 @@ func (j *jsiiProxy_MssqlVirtualMachine) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_MssqlVirtualMachine) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlVirtualMachine) validateSetIdParameters(val *string) error {
 	return nil
 }

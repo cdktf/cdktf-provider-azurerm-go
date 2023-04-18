@@ -80,6 +80,10 @@ func (j *jsiiProxy_VirtualHub) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_VirtualHub) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualHub) validateSetHubRoutingPreferenceParameters(val *string) error {
 	return nil
 }

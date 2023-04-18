@@ -72,6 +72,10 @@ func (j *jsiiProxy_VmwareExpressRouteAuthorization) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_VmwareExpressRouteAuthorization) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VmwareExpressRouteAuthorization) validateSetIdParameters(val *string) error {
 	return nil
 }

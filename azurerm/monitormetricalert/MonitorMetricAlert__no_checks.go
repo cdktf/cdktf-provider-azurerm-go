@@ -92,6 +92,10 @@ func (j *jsiiProxy_MonitorMetricAlert) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_MonitorMetricAlert) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorMetricAlert) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

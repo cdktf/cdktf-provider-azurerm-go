@@ -84,6 +84,10 @@ func (j *jsiiProxy_ApiManagementSubscription) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementSubscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementSubscription) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

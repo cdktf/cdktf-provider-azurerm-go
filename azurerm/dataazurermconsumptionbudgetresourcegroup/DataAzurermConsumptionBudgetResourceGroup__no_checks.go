@@ -68,6 +68,10 @@ func validateDataAzurermConsumptionBudgetResourceGroup_IsTerraformElementParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermConsumptionBudgetResourceGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermConsumptionBudgetResourceGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

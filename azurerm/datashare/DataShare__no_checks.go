@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataShare) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataShare) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataShare) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

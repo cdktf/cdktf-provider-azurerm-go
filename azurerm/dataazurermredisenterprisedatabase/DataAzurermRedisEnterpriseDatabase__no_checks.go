@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase) validateSetClusterIdParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }

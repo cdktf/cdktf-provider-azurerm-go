@@ -2,14 +2,14 @@ package dnstxtrecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/dnstxtrecord/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/dnstxtrecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/dns_txt_record azurerm_dns_txt_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/dns_txt_record azurerm_dns_txt_record}.
 type DnsTxtRecord interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DnsTxtRecord interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DnsTxtRecord) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_DnsTxtRecord) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DnsTxtRecord) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -460,7 +460,7 @@ func (j *jsiiProxy_DnsTxtRecord) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/dns_txt_record azurerm_dns_txt_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/dns_txt_record azurerm_dns_txt_record} Resource.
 func NewDnsTxtRecord(scope constructs.Construct, id *string, config *DnsTxtRecordConfig) DnsTxtRecord {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewDnsTxtRecord(scope constructs.Construct, id *string, config *DnsTxtRecor
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/dns_txt_record azurerm_dns_txt_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/dns_txt_record azurerm_dns_txt_record} Resource.
 func NewDnsTxtRecord_Override(d DnsTxtRecord, scope constructs.Construct, id *string, config *DnsTxtRecordConfig) {
 	_init_.Initialize()
 
@@ -500,7 +500,10 @@ func (j *jsiiProxy_DnsTxtRecord)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsTxtRecord)SetCount(val *float64) {
+func (j *jsiiProxy_DnsTxtRecord)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

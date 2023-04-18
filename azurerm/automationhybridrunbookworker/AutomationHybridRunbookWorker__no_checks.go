@@ -76,6 +76,10 @@ func (j *jsiiProxy_AutomationHybridRunbookWorker) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_AutomationHybridRunbookWorker) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationHybridRunbookWorker) validateSetIdParameters(val *string) error {
 	return nil
 }

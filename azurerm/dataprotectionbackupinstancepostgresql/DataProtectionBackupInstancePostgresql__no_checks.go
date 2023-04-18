@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataProtectionBackupInstancePostgresql) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_DataProtectionBackupInstancePostgresql) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupInstancePostgresql) validateSetDatabaseCredentialKeyVaultSecretIdParameters(val *string) error {
 	return nil
 }

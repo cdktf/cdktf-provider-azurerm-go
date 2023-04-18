@@ -88,6 +88,10 @@ func (j *jsiiProxy_ApiManagementApiSchema) validateSetContentTypeParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementApiSchema) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementApiSchema) validateSetDefinitionsParameters(val *string) error {
 	return nil
 }

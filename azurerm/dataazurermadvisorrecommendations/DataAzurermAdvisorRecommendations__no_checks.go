@@ -68,6 +68,10 @@ func validateDataAzurermAdvisorRecommendations_IsTerraformElementParameters(x in
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermAdvisorRecommendations) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermAdvisorRecommendations) validateSetFilterByCategoryParameters(val *[]*string) error {
 	return nil
 }

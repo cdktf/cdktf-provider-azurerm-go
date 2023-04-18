@@ -2,14 +2,14 @@ package mediaservicesaccountfilter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/mediaservicesaccountfilter/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/mediaservicesaccountfilter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/media_services_account_filter azurerm_media_services_account_filter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_services_account_filter azurerm_media_services_account_filter}.
 type MediaServicesAccountFilter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MediaServicesAccountFilter interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_MediaServicesAccountFilter) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_MediaServicesAccountFilter) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MediaServicesAccountFilter) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -451,7 +451,7 @@ func (j *jsiiProxy_MediaServicesAccountFilter) TrackSelectionInput() interface{}
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/media_services_account_filter azurerm_media_services_account_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_services_account_filter azurerm_media_services_account_filter} Resource.
 func NewMediaServicesAccountFilter(scope constructs.Construct, id *string, config *MediaServicesAccountFilterConfig) MediaServicesAccountFilter {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewMediaServicesAccountFilter(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/media_services_account_filter azurerm_media_services_account_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/media_services_account_filter azurerm_media_services_account_filter} Resource.
 func NewMediaServicesAccountFilter_Override(m MediaServicesAccountFilter, scope constructs.Construct, id *string, config *MediaServicesAccountFilterConfig) {
 	_init_.Initialize()
 
@@ -491,7 +491,10 @@ func (j *jsiiProxy_MediaServicesAccountFilter)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MediaServicesAccountFilter)SetCount(val *float64) {
+func (j *jsiiProxy_MediaServicesAccountFilter)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

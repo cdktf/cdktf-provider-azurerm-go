@@ -80,6 +80,10 @@ func (j *jsiiProxy_Subnet) validateSetConnectionParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_Subnet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Subnet) validateSetEnforcePrivateLinkEndpointNetworkPoliciesParameters(val interface{}) error {
 	return nil
 }

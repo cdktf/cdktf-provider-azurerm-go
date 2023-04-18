@@ -72,6 +72,10 @@ func (j *jsiiProxy_SynapseWorkspaceSecurityAlertPolicy) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_SynapseWorkspaceSecurityAlertPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseWorkspaceSecurityAlertPolicy) validateSetDisabledAlertsParameters(val *[]*string) error {
 	return nil
 }

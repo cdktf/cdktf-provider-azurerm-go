@@ -76,6 +76,10 @@ func (j *jsiiProxy_ApiManagementNotificationRecipientEmail) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementNotificationRecipientEmail) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementNotificationRecipientEmail) validateSetEmailParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package monitorprivatelinkscope
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v6/monitorprivatelinkscope/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/monitorprivatelinkscope/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_private_link_scope azurerm_monitor_private_link_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_private_link_scope azurerm_monitor_private_link_scope}.
 type MonitorPrivateLinkScope interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MonitorPrivateLinkScope interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_MonitorPrivateLinkScope) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_MonitorPrivateLinkScope) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MonitorPrivateLinkScope) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_MonitorPrivateLinkScope) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_private_link_scope azurerm_monitor_private_link_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_private_link_scope azurerm_monitor_private_link_scope} Resource.
 func NewMonitorPrivateLinkScope(scope constructs.Construct, id *string, config *MonitorPrivateLinkScopeConfig) MonitorPrivateLinkScope {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewMonitorPrivateLinkScope(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/azurerm/r/monitor_private_link_scope azurerm_monitor_private_link_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/monitor_private_link_scope azurerm_monitor_private_link_scope} Resource.
 func NewMonitorPrivateLinkScope_Override(m MonitorPrivateLinkScope, scope constructs.Construct, id *string, config *MonitorPrivateLinkScopeConfig) {
 	_init_.Initialize()
 
@@ -420,7 +420,10 @@ func (j *jsiiProxy_MonitorPrivateLinkScope)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitorPrivateLinkScope)SetCount(val *float64) {
+func (j *jsiiProxy_MonitorPrivateLinkScope)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
