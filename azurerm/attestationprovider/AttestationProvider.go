@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/attestation_provider azurerm_attestation_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/attestation_provider azurerm_attestation_provider}.
 type AttestationProvider interface {
 	cdktf.TerraformResource
 	AttestationUri() *string
@@ -52,6 +52,8 @@ type AttestationProvider interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Policy() AttestationProviderPolicyList
+	PolicyInput() interface{}
 	PolicySigningCertificateData() *string
 	SetPolicySigningCertificateData(val *string)
 	PolicySigningCertificateDataInput() *string
@@ -105,11 +107,13 @@ type AttestationProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutPolicy(value interface{})
 	PutTimeouts(value *AttestationProviderTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicy()
 	ResetPolicySigningCertificateData()
 	ResetTags()
 	ResetTimeouts()
@@ -298,6 +302,26 @@ func (j *jsiiProxy_AttestationProvider) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_AttestationProvider) Policy() AttestationProviderPolicyList {
+	var returns AttestationProviderPolicyList
+	_jsii_.Get(
+		j,
+		"policy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AttestationProvider) PolicyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"policyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AttestationProvider) PolicySigningCertificateData() *string {
 	var returns *string
 	_jsii_.Get(
@@ -449,7 +473,7 @@ func (j *jsiiProxy_AttestationProvider) TrustModel() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/attestation_provider azurerm_attestation_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/attestation_provider azurerm_attestation_provider} Resource.
 func NewAttestationProvider(scope constructs.Construct, id *string, config *AttestationProviderConfig) AttestationProvider {
 	_init_.Initialize()
 
@@ -467,7 +491,7 @@ func NewAttestationProvider(scope constructs.Construct, id *string, config *Atte
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/attestation_provider azurerm_attestation_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/attestation_provider azurerm_attestation_provider} Resource.
 func NewAttestationProvider_Override(a AttestationProvider, scope constructs.Construct, id *string, config *AttestationProviderConfig) {
 	_init_.Initialize()
 
@@ -878,6 +902,17 @@ func (a *jsiiProxy_AttestationProvider) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (a *jsiiProxy_AttestationProvider) PutPolicy(value interface{}) {
+	if err := a.validatePutPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AttestationProvider) PutTimeouts(value *AttestationProviderTimeouts) {
 	if err := a.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -901,6 +936,14 @@ func (a *jsiiProxy_AttestationProvider) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AttestationProvider) ResetPolicy() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPolicy",
 		nil, // no parameters
 	)
 }

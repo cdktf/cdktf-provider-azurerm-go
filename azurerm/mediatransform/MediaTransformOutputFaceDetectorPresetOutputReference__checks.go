@@ -106,6 +106,14 @@ func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) validateSetBlurTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -164,6 +172,22 @@ func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) valida
 }
 
 func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) validateSetExperimentalOptionsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) validateSetFaceRedactorModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

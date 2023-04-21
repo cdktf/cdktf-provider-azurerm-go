@@ -52,11 +52,23 @@ func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) validateSetBlurTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) validateSetExperimentalOptionsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) validateSetFaceRedactorModeParameters(val *string) error {
 	return nil
 }
 

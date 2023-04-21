@@ -52,6 +52,10 @@ func (m *jsiiProxy_MediaTransformOutputOutputReference) validatePutBuiltinPreset
 	return nil
 }
 
+func (m *jsiiProxy_MediaTransformOutputOutputReference) validatePutCustomPresetParameters(value *MediaTransformOutputCustomPreset) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaTransformOutputOutputReference) validatePutFaceDetectorPresetParameters(value *MediaTransformOutputFaceDetectorPreset) error {
 	return nil
 }

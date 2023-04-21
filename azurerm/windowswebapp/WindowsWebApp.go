@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/windows_web_app azurerm_windows_web_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/windows_web_app azurerm_windows_web_app}.
 type WindowsWebApp interface {
 	cdktf.TerraformResource
 	AppSettings() *map[string]*string
@@ -64,6 +64,7 @@ type WindowsWebApp interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HostingEnvironmentId() *string
 	HttpsOnly() interface{}
 	SetHttpsOnly(val interface{})
 	HttpsOnlyInput() interface{}
@@ -503,6 +504,16 @@ func (j *jsiiProxy_WindowsWebApp) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebApp) HostingEnvironmentId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostingEnvironmentId",
 		&returns,
 	)
 	return returns
@@ -969,7 +980,7 @@ func (j *jsiiProxy_WindowsWebApp) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/windows_web_app azurerm_windows_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/windows_web_app azurerm_windows_web_app} Resource.
 func NewWindowsWebApp(scope constructs.Construct, id *string, config *WindowsWebAppConfig) WindowsWebApp {
 	_init_.Initialize()
 
@@ -987,7 +998,7 @@ func NewWindowsWebApp(scope constructs.Construct, id *string, config *WindowsWeb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/windows_web_app azurerm_windows_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/windows_web_app azurerm_windows_web_app} Resource.
 func NewWindowsWebApp_Override(w WindowsWebApp, scope constructs.Construct, id *string, config *WindowsWebAppConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/linux_function_app azurerm_linux_function_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/linux_function_app azurerm_linux_function_app}.
 type LinuxFunctionApp interface {
 	cdktf.TerraformResource
 	AppSettings() *map[string]*string
@@ -73,6 +73,7 @@ type LinuxFunctionApp interface {
 	FunctionsExtensionVersion() *string
 	SetFunctionsExtensionVersion(val *string)
 	FunctionsExtensionVersionInput() *string
+	HostingEnvironmentId() *string
 	HttpsOnly() interface{}
 	SetHttpsOnly(val interface{})
 	HttpsOnlyInput() interface{}
@@ -587,6 +588,16 @@ func (j *jsiiProxy_LinuxFunctionApp) FunctionsExtensionVersionInput() *string {
 	_jsii_.Get(
 		j,
 		"functionsExtensionVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxFunctionApp) HostingEnvironmentId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostingEnvironmentId",
 		&returns,
 	)
 	return returns
@@ -1113,7 +1124,7 @@ func (j *jsiiProxy_LinuxFunctionApp) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/linux_function_app azurerm_linux_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/linux_function_app azurerm_linux_function_app} Resource.
 func NewLinuxFunctionApp(scope constructs.Construct, id *string, config *LinuxFunctionAppConfig) LinuxFunctionApp {
 	_init_.Initialize()
 
@@ -1131,7 +1142,7 @@ func NewLinuxFunctionApp(scope constructs.Construct, id *string, config *LinuxFu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/linux_function_app azurerm_linux_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/linux_function_app azurerm_linux_function_app} Resource.
 func NewLinuxFunctionApp_Override(l LinuxFunctionApp, scope constructs.Construct, id *string, config *LinuxFunctionAppConfig) {
 	_init_.Initialize()
 

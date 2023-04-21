@@ -179,6 +179,14 @@ func (j *jsiiProxy_MediaTransformOutputAudioAnalyzerPresetOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_MediaTransformOutputAudioAnalyzerPresetOutputReference) validateSetExperimentalOptionsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MediaTransformOutputAudioAnalyzerPresetOutputReference) validateSetInternalValueParameters(val *MediaTransformOutputAudioAnalyzerPreset) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

@@ -56,6 +56,10 @@ func (j *jsiiProxy_HealthcareMedtechServiceIdentityOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareMedtechServiceIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareMedtechServiceIdentityOutputReference) validateSetInternalValueParameters(val *HealthcareMedtechServiceIdentity) error {
 	return nil
 }

@@ -52,6 +52,10 @@ func (a *jsiiProxy_AttestationProvider) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (a *jsiiProxy_AttestationProvider) validatePutPolicyParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AttestationProvider) validatePutTimeoutsParameters(value *AttestationProviderTimeouts) error {
 	return nil
 }

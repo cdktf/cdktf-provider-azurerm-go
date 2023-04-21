@@ -31,6 +31,9 @@ type MediaTransformOutputAudioAnalyzerPresetOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExperimentalOptions() *map[string]*string
+	SetExperimentalOptions(val *map[string]*string)
+	ExperimentalOptionsInput() *map[string]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *MediaTransformOutputAudioAnalyzerPreset
@@ -69,6 +72,7 @@ type MediaTransformOutputAudioAnalyzerPresetOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAudioAnalysisMode()
 	ResetAudioLanguage()
+	ResetExperimentalOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -149,6 +153,26 @@ func (j *jsiiProxy_MediaTransformOutputAudioAnalyzerPresetOutputReference) Creat
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputAudioAnalyzerPresetOutputReference) ExperimentalOptions() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"experimentalOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputAudioAnalyzerPresetOutputReference) ExperimentalOptionsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"experimentalOptionsInput",
 		&returns,
 	)
 	return returns
@@ -262,6 +286,17 @@ func (j *jsiiProxy_MediaTransformOutputAudioAnalyzerPresetOutputReference)SetCom
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MediaTransformOutputAudioAnalyzerPresetOutputReference)SetExperimentalOptions(val *map[string]*string) {
+	if err := j.validateSetExperimentalOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"experimentalOptions",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (m *jsiiProxy_MediaTransformOutputAudioAnalyzerPresetOutputReference) Reset
 	_jsii_.InvokeVoid(
 		m,
 		"resetAudioLanguage",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaTransformOutputAudioAnalyzerPresetOutputReference) ResetExperimentalOptions() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetExperimentalOptions",
 		nil, // no parameters
 	)
 }

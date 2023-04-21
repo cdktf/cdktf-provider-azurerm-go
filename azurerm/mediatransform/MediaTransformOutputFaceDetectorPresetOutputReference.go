@@ -13,6 +13,9 @@ type MediaTransformOutputFaceDetectorPresetOutputReference interface {
 	AnalysisResolution() *string
 	SetAnalysisResolution(val *string)
 	AnalysisResolutionInput() *string
+	BlurType() *string
+	SetBlurType(val *string)
+	BlurTypeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,6 +31,12 @@ type MediaTransformOutputFaceDetectorPresetOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExperimentalOptions() *map[string]*string
+	SetExperimentalOptions(val *map[string]*string)
+	ExperimentalOptionsInput() *map[string]*string
+	FaceRedactorMode() *string
+	SetFaceRedactorMode(val *string)
+	FaceRedactorModeInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *MediaTransformOutputFaceDetectorPreset
@@ -65,6 +74,9 @@ type MediaTransformOutputFaceDetectorPresetOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAnalysisResolution()
+	ResetBlurType()
+	ResetExperimentalOptions()
+	ResetFaceRedactorMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -100,6 +112,26 @@ func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) Analys
 	return returns
 }
 
+func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) BlurType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"blurType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) BlurTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"blurTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -125,6 +157,46 @@ func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) Creati
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) ExperimentalOptions() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"experimentalOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) ExperimentalOptionsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"experimentalOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) FaceRedactorMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"faceRedactorMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) FaceRedactorModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"faceRedactorModeInput",
 		&returns,
 	)
 	return returns
@@ -209,6 +281,17 @@ func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference)SetAnal
 	)
 }
 
+func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference)SetBlurType(val *string) {
+	if err := j.validateSetBlurTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"blurType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -227,6 +310,28 @@ func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference)SetComp
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference)SetExperimentalOptions(val *map[string]*string) {
+	if err := j.validateSetExperimentalOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"experimentalOptions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference)SetFaceRedactorMode(val *string) {
+	if err := j.validateSetFaceRedactorModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"faceRedactorMode",
 		val,
 	)
 }
@@ -454,6 +559,30 @@ func (m *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) ResetA
 	_jsii_.InvokeVoid(
 		m,
 		"resetAnalysisResolution",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) ResetBlurType() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetBlurType",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) ResetExperimentalOptions() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetExperimentalOptions",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaTransformOutputFaceDetectorPresetOutputReference) ResetFaceRedactorMode() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetFaceRedactorMode",
 		nil, // no parameters
 	)
 }

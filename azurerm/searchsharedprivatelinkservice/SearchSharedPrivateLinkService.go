@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/search_shared_private_link_service azurerm_search_shared_private_link_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/search_shared_private_link_service azurerm_search_shared_private_link_service}.
 type SearchSharedPrivateLinkService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_SearchSharedPrivateLinkService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/search_shared_private_link_service azurerm_search_shared_private_link_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/search_shared_private_link_service azurerm_search_shared_private_link_service} Resource.
 func NewSearchSharedPrivateLinkService(scope constructs.Construct, id *string, config *SearchSharedPrivateLinkServiceConfig) SearchSharedPrivateLinkService {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewSearchSharedPrivateLinkService(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/search_shared_private_link_service azurerm_search_shared_private_link_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/search_shared_private_link_service azurerm_search_shared_private_link_service} Resource.
 func NewSearchSharedPrivateLinkService_Override(s SearchSharedPrivateLinkService, scope constructs.Construct, id *string, config *SearchSharedPrivateLinkServiceConfig) {
 	_init_.Initialize()
 

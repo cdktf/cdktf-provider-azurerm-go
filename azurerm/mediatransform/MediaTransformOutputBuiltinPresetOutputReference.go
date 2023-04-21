@@ -29,6 +29,8 @@ type MediaTransformOutputBuiltinPresetOutputReference interface {
 	Fqn() *string
 	InternalValue() *MediaTransformOutputBuiltinPreset
 	SetInternalValue(val *MediaTransformOutputBuiltinPreset)
+	PresetConfiguration() MediaTransformOutputBuiltinPresetPresetConfigurationOutputReference
+	PresetConfigurationInput() *MediaTransformOutputBuiltinPresetPresetConfiguration
 	PresetName() *string
 	SetPresetName(val *string)
 	PresetNameInput() *string
@@ -64,6 +66,8 @@ type MediaTransformOutputBuiltinPresetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPresetConfiguration(value *MediaTransformOutputBuiltinPresetPresetConfiguration)
+	ResetPresetConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,6 +128,26 @@ func (j *jsiiProxy_MediaTransformOutputBuiltinPresetOutputReference) InternalVal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputBuiltinPresetOutputReference) PresetConfiguration() MediaTransformOutputBuiltinPresetPresetConfigurationOutputReference {
+	var returns MediaTransformOutputBuiltinPresetPresetConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"presetConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputBuiltinPresetOutputReference) PresetConfigurationInput() *MediaTransformOutputBuiltinPresetPresetConfiguration {
+	var returns *MediaTransformOutputBuiltinPresetPresetConfiguration
+	_jsii_.Get(
+		j,
+		"presetConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -447,6 +471,25 @@ func (m *jsiiProxy_MediaTransformOutputBuiltinPresetOutputReference) Interpolati
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MediaTransformOutputBuiltinPresetOutputReference) PutPresetConfiguration(value *MediaTransformOutputBuiltinPresetPresetConfiguration) {
+	if err := m.validatePutPresetConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putPresetConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MediaTransformOutputBuiltinPresetOutputReference) ResetPresetConfiguration() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPresetConfiguration",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MediaTransformOutputBuiltinPresetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

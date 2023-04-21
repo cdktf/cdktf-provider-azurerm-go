@@ -56,6 +56,10 @@ func (j *jsiiProxy_HealthcareFhirServiceIdentityOutputReference) validateSetComp
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareFhirServiceIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareFhirServiceIdentityOutputReference) validateSetInternalValueParameters(val *HealthcareFhirServiceIdentity) error {
 	return nil
 }

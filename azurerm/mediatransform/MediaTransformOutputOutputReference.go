@@ -29,6 +29,8 @@ type MediaTransformOutputOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomPreset() MediaTransformOutputCustomPresetOutputReference
+	CustomPresetInput() *MediaTransformOutputCustomPreset
 	FaceDetectorPreset() MediaTransformOutputFaceDetectorPresetOutputReference
 	FaceDetectorPresetInput() *MediaTransformOutputFaceDetectorPreset
 	// Experimental.
@@ -77,10 +79,12 @@ type MediaTransformOutputOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAudioAnalyzerPreset(value *MediaTransformOutputAudioAnalyzerPreset)
 	PutBuiltinPreset(value *MediaTransformOutputBuiltinPreset)
+	PutCustomPreset(value *MediaTransformOutputCustomPreset)
 	PutFaceDetectorPreset(value *MediaTransformOutputFaceDetectorPreset)
 	PutVideoAnalyzerPreset(value *MediaTransformOutputVideoAnalyzerPreset)
 	ResetAudioAnalyzerPreset()
 	ResetBuiltinPreset()
+	ResetCustomPreset()
 	ResetFaceDetectorPreset()
 	ResetOnErrorAction()
 	ResetRelativePriority()
@@ -165,6 +169,26 @@ func (j *jsiiProxy_MediaTransformOutputOutputReference) CreationStack() *[]*stri
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputOutputReference) CustomPreset() MediaTransformOutputCustomPresetOutputReference {
+	var returns MediaTransformOutputCustomPresetOutputReference
+	_jsii_.Get(
+		j,
+		"customPreset",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputOutputReference) CustomPresetInput() *MediaTransformOutputCustomPreset {
+	var returns *MediaTransformOutputCustomPreset
+	_jsii_.Get(
+		j,
+		"customPresetInput",
 		&returns,
 	)
 	return returns
@@ -603,6 +627,17 @@ func (m *jsiiProxy_MediaTransformOutputOutputReference) PutBuiltinPreset(value *
 	)
 }
 
+func (m *jsiiProxy_MediaTransformOutputOutputReference) PutCustomPreset(value *MediaTransformOutputCustomPreset) {
+	if err := m.validatePutCustomPresetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putCustomPreset",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MediaTransformOutputOutputReference) PutFaceDetectorPreset(value *MediaTransformOutputFaceDetectorPreset) {
 	if err := m.validatePutFaceDetectorPresetParameters(value); err != nil {
 		panic(err)
@@ -637,6 +672,14 @@ func (m *jsiiProxy_MediaTransformOutputOutputReference) ResetBuiltinPreset() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetBuiltinPreset",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaTransformOutputOutputReference) ResetCustomPreset() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCustomPreset",
 		nil, // no parameters
 	)
 }

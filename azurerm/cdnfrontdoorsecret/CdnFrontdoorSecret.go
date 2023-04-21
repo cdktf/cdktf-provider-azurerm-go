@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/cdn_frontdoor_secret azurerm_cdn_frontdoor_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/cdn_frontdoor_secret azurerm_cdn_frontdoor_secret}.
 type CdnFrontdoorSecret interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_CdnFrontdoorSecret) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/cdn_frontdoor_secret azurerm_cdn_frontdoor_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/cdn_frontdoor_secret azurerm_cdn_frontdoor_secret} Resource.
 func NewCdnFrontdoorSecret(scope constructs.Construct, id *string, config *CdnFrontdoorSecretConfig) CdnFrontdoorSecret {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewCdnFrontdoorSecret(scope constructs.Construct, id *string, config *CdnFr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/cdn_frontdoor_secret azurerm_cdn_frontdoor_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/cdn_frontdoor_secret azurerm_cdn_frontdoor_secret} Resource.
 func NewCdnFrontdoorSecret_Override(c CdnFrontdoorSecret, scope constructs.Construct, id *string, config *CdnFrontdoorSecretConfig) {
 	_init_.Initialize()
 

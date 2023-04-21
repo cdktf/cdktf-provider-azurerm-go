@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/cosmosdb_sql_database azurerm_cosmosdb_sql_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/data-sources/cosmosdb_sql_database azurerm_cosmosdb_sql_database}.
 type DataAzurermCosmosdbSqlDatabase interface {
 	cdktf.TerraformDataSource
 	AccountName() *string
@@ -373,7 +373,7 @@ func (j *jsiiProxy_DataAzurermCosmosdbSqlDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/cosmosdb_sql_database azurerm_cosmosdb_sql_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/data-sources/cosmosdb_sql_database azurerm_cosmosdb_sql_database} Data Source.
 func NewDataAzurermCosmosdbSqlDatabase(scope constructs.Construct, id *string, config *DataAzurermCosmosdbSqlDatabaseConfig) DataAzurermCosmosdbSqlDatabase {
 	_init_.Initialize()
 
@@ -391,7 +391,7 @@ func NewDataAzurermCosmosdbSqlDatabase(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/cosmosdb_sql_database azurerm_cosmosdb_sql_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/data-sources/cosmosdb_sql_database azurerm_cosmosdb_sql_database} Data Source.
 func NewDataAzurermCosmosdbSqlDatabase_Override(d DataAzurermCosmosdbSqlDatabase, scope constructs.Construct, id *string, config *DataAzurermCosmosdbSqlDatabaseConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/advisor_recommendations azurerm_advisor_recommendations}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/data-sources/advisor_recommendations azurerm_advisor_recommendations}.
 type DataAzurermAdvisorRecommendations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataAzurermAdvisorRecommendations) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/advisor_recommendations azurerm_advisor_recommendations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/data-sources/advisor_recommendations azurerm_advisor_recommendations} Data Source.
 func NewDataAzurermAdvisorRecommendations(scope constructs.Construct, id *string, config *DataAzurermAdvisorRecommendationsConfig) DataAzurermAdvisorRecommendations {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataAzurermAdvisorRecommendations(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/data-sources/advisor_recommendations azurerm_advisor_recommendations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/data-sources/advisor_recommendations azurerm_advisor_recommendations} Data Source.
 func NewDataAzurermAdvisorRecommendations_Override(d DataAzurermAdvisorRecommendations, scope constructs.Construct, id *string, config *DataAzurermAdvisorRecommendationsConfig) {
 	_init_.Initialize()
 

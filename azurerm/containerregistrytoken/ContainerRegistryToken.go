@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/container_registry_token azurerm_container_registry_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/container_registry_token azurerm_container_registry_token}.
 type ContainerRegistryToken interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_ContainerRegistryToken) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/container_registry_token azurerm_container_registry_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/container_registry_token azurerm_container_registry_token} Resource.
 func NewContainerRegistryToken(scope constructs.Construct, id *string, config *ContainerRegistryTokenConfig) ContainerRegistryToken {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewContainerRegistryToken(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/container_registry_token azurerm_container_registry_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/container_registry_token azurerm_container_registry_token} Resource.
 func NewContainerRegistryToken_Override(c ContainerRegistryToken, scope constructs.Construct, id *string, config *ContainerRegistryTokenConfig) {
 	_init_.Initialize()
 

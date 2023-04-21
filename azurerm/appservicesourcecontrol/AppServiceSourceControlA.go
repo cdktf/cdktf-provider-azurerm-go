@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_source_control azurerm_app_service_source_control}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/app_service_source_control azurerm_app_service_source_control}.
 type AppServiceSourceControlA interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -523,7 +523,7 @@ func (j *jsiiProxy_AppServiceSourceControlA) UsesGithubAction() cdktf.IResolvabl
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_source_control azurerm_app_service_source_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/app_service_source_control azurerm_app_service_source_control} Resource.
 func NewAppServiceSourceControlA(scope constructs.Construct, id *string, config *AppServiceSourceControlAConfig) AppServiceSourceControlA {
 	_init_.Initialize()
 
@@ -541,7 +541,7 @@ func NewAppServiceSourceControlA(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/app_service_source_control azurerm_app_service_source_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/app_service_source_control azurerm_app_service_source_control} Resource.
 func NewAppServiceSourceControlA_Override(a AppServiceSourceControlA, scope constructs.Construct, id *string, config *AppServiceSourceControlAConfig) {
 	_init_.Initialize()
 

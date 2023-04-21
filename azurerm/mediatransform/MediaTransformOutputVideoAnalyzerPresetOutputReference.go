@@ -31,6 +31,9 @@ type MediaTransformOutputVideoAnalyzerPresetOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExperimentalOptions() *map[string]*string
+	SetExperimentalOptions(val *map[string]*string)
+	ExperimentalOptionsInput() *map[string]*string
 	// Experimental.
 	Fqn() *string
 	InsightsType() *string
@@ -72,6 +75,7 @@ type MediaTransformOutputVideoAnalyzerPresetOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAudioAnalysisMode()
 	ResetAudioLanguage()
+	ResetExperimentalOptions()
 	ResetInsightsType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -153,6 +157,26 @@ func (j *jsiiProxy_MediaTransformOutputVideoAnalyzerPresetOutputReference) Creat
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputVideoAnalyzerPresetOutputReference) ExperimentalOptions() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"experimentalOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputVideoAnalyzerPresetOutputReference) ExperimentalOptionsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"experimentalOptionsInput",
 		&returns,
 	)
 	return returns
@@ -286,6 +310,17 @@ func (j *jsiiProxy_MediaTransformOutputVideoAnalyzerPresetOutputReference)SetCom
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MediaTransformOutputVideoAnalyzerPresetOutputReference)SetExperimentalOptions(val *map[string]*string) {
+	if err := j.validateSetExperimentalOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"experimentalOptions",
 		val,
 	)
 }
@@ -532,6 +567,14 @@ func (m *jsiiProxy_MediaTransformOutputVideoAnalyzerPresetOutputReference) Reset
 	_jsii_.InvokeVoid(
 		m,
 		"resetAudioLanguage",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaTransformOutputVideoAnalyzerPresetOutputReference) ResetExperimentalOptions() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetExperimentalOptions",
 		nil, // no parameters
 	)
 }

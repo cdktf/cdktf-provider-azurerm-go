@@ -44,6 +44,10 @@ func (m *jsiiProxy_MediaTransformOutputBuiltinPresetOutputReference) validateInt
 	return nil
 }
 
+func (m *jsiiProxy_MediaTransformOutputBuiltinPresetOutputReference) validatePutPresetConfigurationParameters(value *MediaTransformOutputBuiltinPresetPresetConfiguration) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaTransformOutputBuiltinPresetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

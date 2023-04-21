@@ -27,6 +27,9 @@ type HealthcareMedtechServiceIdentityOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdentityIds() *[]*string
+	SetIdentityIds(val *[]*string)
+	IdentityIdsInput() *[]*string
 	InternalValue() *HealthcareMedtechServiceIdentity
 	SetInternalValue(val *HealthcareMedtechServiceIdentity)
 	PrincipalId() *string
@@ -66,6 +69,7 @@ type HealthcareMedtechServiceIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIdentityIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -116,6 +120,26 @@ func (j *jsiiProxy_HealthcareMedtechServiceIdentityOutputReference) Fqn() *strin
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareMedtechServiceIdentityOutputReference) IdentityIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareMedtechServiceIdentityOutputReference) IdentityIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIdsInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +261,17 @@ func (j *jsiiProxy_HealthcareMedtechServiceIdentityOutputReference)SetComplexObj
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HealthcareMedtechServiceIdentityOutputReference)SetIdentityIds(val *[]*string) {
+	if err := j.validateSetIdentityIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityIds",
 		val,
 	)
 }
@@ -469,6 +504,14 @@ func (h *jsiiProxy_HealthcareMedtechServiceIdentityOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (h *jsiiProxy_HealthcareMedtechServiceIdentityOutputReference) ResetIdentityIds() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetIdentityIds",
+		nil, // no parameters
+	)
 }
 
 func (h *jsiiProxy_HealthcareMedtechServiceIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

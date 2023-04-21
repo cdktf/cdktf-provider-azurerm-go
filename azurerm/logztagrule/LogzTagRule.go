@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logz_tag_rule azurerm_logz_tag_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/logz_tag_rule azurerm_logz_tag_rule}.
 type LogzTagRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -429,7 +429,7 @@ func (j *jsiiProxy_LogzTagRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logz_tag_rule azurerm_logz_tag_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/logz_tag_rule azurerm_logz_tag_rule} Resource.
 func NewLogzTagRule(scope constructs.Construct, id *string, config *LogzTagRuleConfig) LogzTagRule {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewLogzTagRule(scope constructs.Construct, id *string, config *LogzTagRuleC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/logz_tag_rule azurerm_logz_tag_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/logz_tag_rule azurerm_logz_tag_rule} Resource.
 func NewLogzTagRule_Override(l LogzTagRule, scope constructs.Construct, id *string, config *LogzTagRuleConfig) {
 	_init_.Initialize()
 

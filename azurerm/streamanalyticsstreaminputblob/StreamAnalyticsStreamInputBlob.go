@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_stream_input_blob azurerm_stream_analytics_stream_input_blob}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/stream_analytics_stream_input_blob azurerm_stream_analytics_stream_input_blob}.
 type StreamAnalyticsStreamInputBlob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -540,7 +540,7 @@ func (j *jsiiProxy_StreamAnalyticsStreamInputBlob) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_stream_input_blob azurerm_stream_analytics_stream_input_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/stream_analytics_stream_input_blob azurerm_stream_analytics_stream_input_blob} Resource.
 func NewStreamAnalyticsStreamInputBlob(scope constructs.Construct, id *string, config *StreamAnalyticsStreamInputBlobConfig) StreamAnalyticsStreamInputBlob {
 	_init_.Initialize()
 
@@ -558,7 +558,7 @@ func NewStreamAnalyticsStreamInputBlob(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/stream_analytics_stream_input_blob azurerm_stream_analytics_stream_input_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/stream_analytics_stream_input_blob azurerm_stream_analytics_stream_input_blob} Resource.
 func NewStreamAnalyticsStreamInputBlob_Override(s StreamAnalyticsStreamInputBlob, scope constructs.Construct, id *string, config *StreamAnalyticsStreamInputBlobConfig) {
 	_init_.Initialize()
 

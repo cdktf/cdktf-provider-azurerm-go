@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/redis_firewall_rule azurerm_redis_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/redis_firewall_rule azurerm_redis_firewall_rule}.
 type RedisFirewallRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_RedisFirewallRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/redis_firewall_rule azurerm_redis_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/redis_firewall_rule azurerm_redis_firewall_rule} Resource.
 func NewRedisFirewallRule(scope constructs.Construct, id *string, config *RedisFirewallRuleConfig) RedisFirewallRule {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewRedisFirewallRule(scope constructs.Construct, id *string, config *RedisF
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/redis_firewall_rule azurerm_redis_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/redis_firewall_rule azurerm_redis_firewall_rule} Resource.
 func NewRedisFirewallRule_Override(r RedisFirewallRule, scope constructs.Construct, id *string, config *RedisFirewallRuleConfig) {
 	_init_.Initialize()
 

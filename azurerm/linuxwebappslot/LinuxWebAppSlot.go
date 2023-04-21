@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot}.
 type LinuxWebAppSlot interface {
 	cdktf.TerraformResource
 	AppMetadata() cdktf.StringMap
@@ -68,6 +68,7 @@ type LinuxWebAppSlot interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HostingEnvironmentId() *string
 	HttpsOnly() interface{}
 	SetHttpsOnly(val interface{})
 	HttpsOnlyInput() interface{}
@@ -533,6 +534,16 @@ func (j *jsiiProxy_LinuxWebAppSlot) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LinuxWebAppSlot) HostingEnvironmentId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostingEnvironmentId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LinuxWebAppSlot) HttpsOnly() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -934,7 +945,7 @@ func (j *jsiiProxy_LinuxWebAppSlot) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot} Resource.
 func NewLinuxWebAppSlot(scope constructs.Construct, id *string, config *LinuxWebAppSlotConfig) LinuxWebAppSlot {
 	_init_.Initialize()
 
@@ -952,7 +963,7 @@ func NewLinuxWebAppSlot(scope constructs.Construct, id *string, config *LinuxWeb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.52.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot} Resource.
 func NewLinuxWebAppSlot_Override(l LinuxWebAppSlot, scope constructs.Construct, id *string, config *LinuxWebAppSlotConfig) {
 	_init_.Initialize()
 
