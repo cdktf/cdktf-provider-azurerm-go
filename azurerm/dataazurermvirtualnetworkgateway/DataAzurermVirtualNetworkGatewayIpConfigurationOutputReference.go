@@ -31,6 +31,7 @@ type DataAzurermVirtualNetworkGatewayIpConfigurationOutputReference interface {
 	InternalValue() *DataAzurermVirtualNetworkGatewayIpConfiguration
 	SetInternalValue(val *DataAzurermVirtualNetworkGatewayIpConfiguration)
 	Name() *string
+	PrivateIpAddress() *string
 	PrivateIpAddressAllocation() *string
 	PublicIpAddressId() *string
 	SubnetId() *string
@@ -146,6 +147,16 @@ func (j *jsiiProxy_DataAzurermVirtualNetworkGatewayIpConfigurationOutputReferenc
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermVirtualNetworkGatewayIpConfigurationOutputReference) PrivateIpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateIpAddress",
 		&returns,
 	)
 	return returns

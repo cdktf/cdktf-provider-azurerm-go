@@ -309,6 +309,17 @@ func (k *jsiiProxy_KubernetesCluster) validatePutOmsAgentParameters(value *Kuber
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesCluster) validatePutServiceMeshProfileParameters(value *KubernetesClusterServiceMeshProfile) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesCluster) validatePutServicePrincipalParameters(value *KubernetesClusterServicePrincipal) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

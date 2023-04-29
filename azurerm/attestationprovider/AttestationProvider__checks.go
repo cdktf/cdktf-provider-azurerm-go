@@ -299,6 +299,14 @@ func (j *jsiiProxy_AttestationProvider) validateSetNameParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_AttestationProvider) validateSetOpenEnclavePolicyBase64Parameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AttestationProvider) validateSetPolicySigningCertificateDataParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -361,7 +369,23 @@ func (j *jsiiProxy_AttestationProvider) validateSetResourceGroupNameParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_AttestationProvider) validateSetSgxEnclavePolicyBase64Parameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AttestationProvider) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AttestationProvider) validateSetTpmPolicyBase64Parameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

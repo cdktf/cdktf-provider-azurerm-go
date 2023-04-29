@@ -2,13 +2,13 @@ package cosmosdbmongodatabase
 
 
 type CosmosdbMongoDatabaseTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/cosmosdb_mongo_database#create CosmosdbMongoDatabase#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/cosmosdb_mongo_database#create CosmosdbMongoDatabase#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/cosmosdb_mongo_database#delete CosmosdbMongoDatabase#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/cosmosdb_mongo_database#delete CosmosdbMongoDatabase#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/cosmosdb_mongo_database#read CosmosdbMongoDatabase#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/cosmosdb_mongo_database#read CosmosdbMongoDatabase#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/cosmosdb_mongo_database#update CosmosdbMongoDatabase#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/cosmosdb_mongo_database#update CosmosdbMongoDatabase#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

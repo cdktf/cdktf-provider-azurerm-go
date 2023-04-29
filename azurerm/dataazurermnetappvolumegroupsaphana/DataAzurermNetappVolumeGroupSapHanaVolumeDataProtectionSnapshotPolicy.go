@@ -1,0 +1,6 @@
+package dataazurermnetappvolumegroupsaphana
+
+
+type DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionSnapshotPolicy struct {
+}
+

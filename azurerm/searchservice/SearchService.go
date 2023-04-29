@@ -9,12 +9,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/search_service azurerm_search_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/search_service azurerm_search_service}.
 type SearchService interface {
 	cdktf.TerraformResource
 	AllowedIps() *[]*string
 	SetAllowedIps(val *[]*string)
 	AllowedIpsInput() *[]*string
+	AuthenticationFailureMode() *string
+	SetAuthenticationFailureMode(val *string)
+	AuthenticationFailureModeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -27,6 +30,9 @@ type SearchService interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomerManagedKeyEnforcementEnabled() interface{}
+	SetCustomerManagedKeyEnforcementEnabled(val interface{})
+	CustomerManagedKeyEnforcementEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -39,6 +45,9 @@ type SearchService interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HostingMode() *string
+	SetHostingMode(val *string)
+	HostingModeInput() *string
 	Id() *string
 	SetId(val *string)
 	Identity() SearchServiceIdentityOutputReference
@@ -48,6 +57,9 @@ type SearchService interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LocalAuthenticationEnabled() interface{}
+	SetLocalAuthenticationEnabled(val interface{})
+	LocalAuthenticationEnabledInput() interface{}
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
@@ -123,8 +135,12 @@ type SearchService interface {
 	PutIdentity(value *SearchServiceIdentity)
 	PutTimeouts(value *SearchServiceTimeouts)
 	ResetAllowedIps()
+	ResetAuthenticationFailureMode()
+	ResetCustomerManagedKeyEnforcementEnabled()
+	ResetHostingMode()
 	ResetId()
 	ResetIdentity()
+	ResetLocalAuthenticationEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -163,6 +179,26 @@ func (j *jsiiProxy_SearchService) AllowedIpsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"allowedIpsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchService) AuthenticationFailureMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationFailureMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchService) AuthenticationFailureModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationFailureModeInput",
 		&returns,
 	)
 	return returns
@@ -208,6 +244,26 @@ func (j *jsiiProxy_SearchService) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SearchService) CustomerManagedKeyEnforcementEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customerManagedKeyEnforcementEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchService) CustomerManagedKeyEnforcementEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customerManagedKeyEnforcementEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SearchService) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -243,6 +299,26 @@ func (j *jsiiProxy_SearchService) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchService) HostingMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostingMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchService) HostingModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostingModeInput",
 		&returns,
 	)
 	return returns
@@ -293,6 +369,26 @@ func (j *jsiiProxy_SearchService) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchService) LocalAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchService) LocalAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localAuthenticationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -579,7 +675,7 @@ func (j *jsiiProxy_SearchService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/search_service azurerm_search_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/search_service azurerm_search_service} Resource.
 func NewSearchService(scope constructs.Construct, id *string, config *SearchServiceConfig) SearchService {
 	_init_.Initialize()
 
@@ -597,7 +693,7 @@ func NewSearchService(scope constructs.Construct, id *string, config *SearchServ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/search_service azurerm_search_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/search_service azurerm_search_service} Resource.
 func NewSearchService_Override(s SearchService, scope constructs.Construct, id *string, config *SearchServiceConfig) {
 	_init_.Initialize()
 
@@ -615,6 +711,17 @@ func (j *jsiiProxy_SearchService)SetAllowedIps(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"allowedIps",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SearchService)SetAuthenticationFailureMode(val *string) {
+	if err := j.validateSetAuthenticationFailureModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authenticationFailureMode",
 		val,
 	)
 }
@@ -641,6 +748,17 @@ func (j *jsiiProxy_SearchService)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_SearchService)SetCustomerManagedKeyEnforcementEnabled(val interface{}) {
+	if err := j.validateSetCustomerManagedKeyEnforcementEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customerManagedKeyEnforcementEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SearchService)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -653,6 +771,17 @@ func (j *jsiiProxy_SearchService)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SearchService)SetHostingMode(val *string) {
+	if err := j.validateSetHostingModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hostingMode",
 		val,
 	)
 }
@@ -675,6 +804,17 @@ func (j *jsiiProxy_SearchService)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SearchService)SetLocalAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetLocalAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localAuthenticationEnabled",
 		val,
 	)
 }
@@ -1082,6 +1222,30 @@ func (s *jsiiProxy_SearchService) ResetAllowedIps() {
 	)
 }
 
+func (s *jsiiProxy_SearchService) ResetAuthenticationFailureMode() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAuthenticationFailureMode",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SearchService) ResetCustomerManagedKeyEnforcementEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomerManagedKeyEnforcementEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SearchService) ResetHostingMode() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHostingMode",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SearchService) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1094,6 +1258,14 @@ func (s *jsiiProxy_SearchService) ResetIdentity() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SearchService) ResetLocalAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLocalAuthenticationEnabled",
 		nil, // no parameters
 	)
 }

@@ -145,6 +145,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMonitorMetrics", GoMethod: "PutMonitorMetrics"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkProfile", GoMethod: "PutNetworkProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "putOmsAgent", GoMethod: "PutOmsAgent"},
+			_jsii_.MemberMethod{JsiiMethod: "putServiceMeshProfile", GoMethod: "PutServiceMeshProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "putServicePrincipal", GoMethod: "PutServicePrincipal"},
 			_jsii_.MemberMethod{JsiiMethod: "putStorageProfile", GoMethod: "PutStorageProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
@@ -193,6 +194,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPublicNetworkAccessEnabled", GoMethod: "ResetPublicNetworkAccessEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRoleBasedAccessControlEnabled", GoMethod: "ResetRoleBasedAccessControlEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRunCommandEnabled", GoMethod: "ResetRunCommandEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServiceMeshProfile", GoMethod: "ResetServiceMeshProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServicePrincipal", GoMethod: "ResetServicePrincipal"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkuTier", GoMethod: "ResetSkuTier"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStorageProfile", GoMethod: "ResetStorageProfile"},
@@ -208,6 +210,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "roleBasedAccessControlEnabledInput", GoGetter: "RoleBasedAccessControlEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "runCommandEnabled", GoGetter: "RunCommandEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "runCommandEnabledInput", GoGetter: "RunCommandEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceMeshProfile", GoGetter: "ServiceMeshProfile"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceMeshProfileInput", GoGetter: "ServiceMeshProfileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "servicePrincipal", GoGetter: "ServicePrincipal"},
 			_jsii_.MemberProperty{JsiiProperty: "servicePrincipalInput", GoGetter: "ServicePrincipalInput"},
 			_jsii_.MemberProperty{JsiiProperty: "skuTier", GoGetter: "SkuTier"},
@@ -2150,6 +2154,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KubernetesClusterOmsAgentOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfile",
+		reflect.TypeOf((*KubernetesClusterServiceMeshProfile)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference",
+		reflect.TypeOf((*KubernetesClusterServiceMeshProfileOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
+			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

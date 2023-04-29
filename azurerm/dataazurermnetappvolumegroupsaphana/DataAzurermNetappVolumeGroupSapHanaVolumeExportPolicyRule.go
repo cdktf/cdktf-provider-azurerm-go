@@ -1,0 +1,6 @@
+package dataazurermnetappvolumegroupsaphana
+
+
+type DataAzurermNetappVolumeGroupSapHanaVolumeExportPolicyRule struct {
+}
+

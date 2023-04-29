@@ -32,8 +32,6 @@ type MysqlFlexibleServerIdentityOutputReference interface {
 	IdentityIdsInput() *[]*string
 	InternalValue() *MysqlFlexibleServerIdentity
 	SetInternalValue(val *MysqlFlexibleServerIdentity)
-	PrincipalId() *string
-	TenantId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,7 +67,6 @@ type MysqlFlexibleServerIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetIdentityIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -150,26 +147,6 @@ func (j *jsiiProxy_MysqlFlexibleServerIdentityOutputReference) InternalValue() *
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MysqlFlexibleServerIdentityOutputReference) PrincipalId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"principalId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MysqlFlexibleServerIdentityOutputReference) TenantId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tenantId",
 		&returns,
 	)
 	return returns
@@ -504,14 +481,6 @@ func (m *jsiiProxy_MysqlFlexibleServerIdentityOutputReference) InterpolationForA
 	)
 
 	return returns
-}
-
-func (m *jsiiProxy_MysqlFlexibleServerIdentityOutputReference) ResetIdentityIds() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetIdentityIds",
-		nil, // no parameters
-	)
 }
 
 func (m *jsiiProxy_MysqlFlexibleServerIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -241,6 +241,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "privateIpAddress", GoGetter: "PrivateIpAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "privateIpAddressAllocation", GoGetter: "PrivateIpAddressAllocation"},
 			_jsii_.MemberProperty{JsiiProperty: "publicIpAddressId", GoGetter: "PublicIpAddressId"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

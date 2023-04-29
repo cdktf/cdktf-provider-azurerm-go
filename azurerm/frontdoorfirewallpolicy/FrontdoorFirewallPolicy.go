@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/frontdoor_firewall_policy azurerm_frontdoor_firewall_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/frontdoor_firewall_policy azurerm_frontdoor_firewall_policy}.
 type FrontdoorFirewallPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -570,7 +570,7 @@ func (j *jsiiProxy_FrontdoorFirewallPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/frontdoor_firewall_policy azurerm_frontdoor_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/frontdoor_firewall_policy azurerm_frontdoor_firewall_policy} Resource.
 func NewFrontdoorFirewallPolicy(scope constructs.Construct, id *string, config *FrontdoorFirewallPolicyConfig) FrontdoorFirewallPolicy {
 	_init_.Initialize()
 
@@ -588,7 +588,7 @@ func NewFrontdoorFirewallPolicy(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/frontdoor_firewall_policy azurerm_frontdoor_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/frontdoor_firewall_policy azurerm_frontdoor_firewall_policy} Resource.
 func NewFrontdoorFirewallPolicy_Override(f FrontdoorFirewallPolicy, scope constructs.Construct, id *string, config *FrontdoorFirewallPolicyConfig) {
 	_init_.Initialize()
 

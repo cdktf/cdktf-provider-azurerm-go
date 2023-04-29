@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
 type KubernetesCluster interface {
 	cdktf.TerraformResource
 	AciConnectorLinux() KubernetesClusterAciConnectorLinuxOutputReference
@@ -176,6 +176,8 @@ type KubernetesCluster interface {
 	RunCommandEnabled() interface{}
 	SetRunCommandEnabled(val interface{})
 	RunCommandEnabledInput() interface{}
+	ServiceMeshProfile() KubernetesClusterServiceMeshProfileOutputReference
+	ServiceMeshProfileInput() *KubernetesClusterServiceMeshProfile
 	ServicePrincipal() KubernetesClusterServicePrincipalOutputReference
 	ServicePrincipalInput() *KubernetesClusterServicePrincipal
 	SkuTier() *string
@@ -246,6 +248,7 @@ type KubernetesCluster interface {
 	PutMonitorMetrics(value *KubernetesClusterMonitorMetrics)
 	PutNetworkProfile(value *KubernetesClusterNetworkProfile)
 	PutOmsAgent(value *KubernetesClusterOmsAgent)
+	PutServiceMeshProfile(value *KubernetesClusterServiceMeshProfile)
 	PutServicePrincipal(value *KubernetesClusterServicePrincipal)
 	PutStorageProfile(value *KubernetesClusterStorageProfile)
 	PutTimeouts(value *KubernetesClusterTimeouts)
@@ -295,6 +298,7 @@ type KubernetesCluster interface {
 	ResetPublicNetworkAccessEnabled()
 	ResetRoleBasedAccessControlEnabled()
 	ResetRunCommandEnabled()
+	ResetServiceMeshProfile()
 	ResetServicePrincipal()
 	ResetSkuTier()
 	ResetStorageProfile()
@@ -1429,6 +1433,26 @@ func (j *jsiiProxy_KubernetesCluster) RunCommandEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesCluster) ServiceMeshProfile() KubernetesClusterServiceMeshProfileOutputReference {
+	var returns KubernetesClusterServiceMeshProfileOutputReference
+	_jsii_.Get(
+		j,
+		"serviceMeshProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) ServiceMeshProfileInput() *KubernetesClusterServiceMeshProfile {
+	var returns *KubernetesClusterServiceMeshProfile
+	_jsii_.Get(
+		j,
+		"serviceMeshProfileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesCluster) ServicePrincipal() KubernetesClusterServicePrincipalOutputReference {
 	var returns KubernetesClusterServicePrincipalOutputReference
 	_jsii_.Get(
@@ -1640,7 +1664,7 @@ func (j *jsiiProxy_KubernetesCluster) WorkloadIdentityEnabledInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
 	_init_.Initialize()
 
@@ -1658,7 +1682,7 @@ func NewKubernetesCluster(scope constructs.Construct, id *string, config *Kubern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Construct, id *string, config *KubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -2520,6 +2544,17 @@ func (k *jsiiProxy_KubernetesCluster) PutOmsAgent(value *KubernetesClusterOmsAge
 	)
 }
 
+func (k *jsiiProxy_KubernetesCluster) PutServiceMeshProfile(value *KubernetesClusterServiceMeshProfile) {
+	if err := k.validatePutServiceMeshProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putServiceMeshProfile",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesCluster) PutServicePrincipal(value *KubernetesClusterServicePrincipal) {
 	if err := k.validatePutServicePrincipalParameters(value); err != nil {
 		panic(err)
@@ -2910,6 +2945,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetRunCommandEnabled() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetRunCommandEnabled",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetServiceMeshProfile() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetServiceMeshProfile",
 		nil, // no parameters
 	)
 }

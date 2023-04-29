@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/federated_identity_credential azurerm_federated_identity_credential}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/federated_identity_credential azurerm_federated_identity_credential}.
 type FederatedIdentityCredential interface {
 	cdktf.TerraformResource
 	Audience() *[]*string
@@ -448,7 +448,7 @@ func (j *jsiiProxy_FederatedIdentityCredential) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/federated_identity_credential azurerm_federated_identity_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/federated_identity_credential azurerm_federated_identity_credential} Resource.
 func NewFederatedIdentityCredential(scope constructs.Construct, id *string, config *FederatedIdentityCredentialConfig) FederatedIdentityCredential {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewFederatedIdentityCredential(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/federated_identity_credential azurerm_federated_identity_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/federated_identity_credential azurerm_federated_identity_credential} Resource.
 func NewFederatedIdentityCredential_Override(f FederatedIdentityCredential, scope constructs.Construct, id *string, config *FederatedIdentityCredentialConfig) {
 	_init_.Initialize()
 

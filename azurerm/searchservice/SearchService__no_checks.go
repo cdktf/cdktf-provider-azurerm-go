@@ -76,6 +76,10 @@ func (j *jsiiProxy_SearchService) validateSetAllowedIpsParameters(val *[]*string
 	return nil
 }
 
+func (j *jsiiProxy_SearchService) validateSetAuthenticationFailureModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SearchService) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -84,11 +88,23 @@ func (j *jsiiProxy_SearchService) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_SearchService) validateSetCustomerManagedKeyEnforcementEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SearchService) validateSetHostingModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SearchService) validateSetIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_SearchService) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_SearchService) validateSetLocalAuthenticationEnabledParameters(val interface{}) error {
 	return nil
 }
 

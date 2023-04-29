@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/attestation_provider azurerm_attestation_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/attestation_provider azurerm_attestation_provider}.
 type AttestationProvider interface {
 	cdktf.TerraformResource
 	AttestationUri() *string
@@ -52,6 +52,9 @@ type AttestationProvider interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OpenEnclavePolicyBase64() *string
+	SetOpenEnclavePolicyBase64(val *string)
+	OpenEnclavePolicyBase64Input() *string
 	Policy() AttestationProviderPolicyList
 	PolicyInput() interface{}
 	PolicySigningCertificateData() *string
@@ -70,6 +73,9 @@ type AttestationProvider interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	SgxEnclavePolicyBase64() *string
+	SetSgxEnclavePolicyBase64(val *string)
+	SgxEnclavePolicyBase64Input() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -81,6 +87,9 @@ type AttestationProvider interface {
 	TerraformResourceType() *string
 	Timeouts() AttestationProviderTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TpmPolicyBase64() *string
+	SetTpmPolicyBase64(val *string)
+	TpmPolicyBase64Input() *string
 	TrustModel() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -110,13 +119,16 @@ type AttestationProvider interface {
 	PutPolicy(value interface{})
 	PutTimeouts(value *AttestationProviderTimeouts)
 	ResetId()
+	ResetOpenEnclavePolicyBase64()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicy()
 	ResetPolicySigningCertificateData()
+	ResetSgxEnclavePolicyBase64()
 	ResetTags()
 	ResetTimeouts()
+	ResetTpmPolicyBase64()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -302,6 +314,26 @@ func (j *jsiiProxy_AttestationProvider) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_AttestationProvider) OpenEnclavePolicyBase64() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"openEnclavePolicyBase64",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AttestationProvider) OpenEnclavePolicyBase64Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"openEnclavePolicyBase64Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AttestationProvider) Policy() AttestationProviderPolicyList {
 	var returns AttestationProviderPolicyList
 	_jsii_.Get(
@@ -392,6 +424,26 @@ func (j *jsiiProxy_AttestationProvider) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AttestationProvider) SgxEnclavePolicyBase64() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sgxEnclavePolicyBase64",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AttestationProvider) SgxEnclavePolicyBase64Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sgxEnclavePolicyBase64Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AttestationProvider) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -462,6 +514,26 @@ func (j *jsiiProxy_AttestationProvider) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AttestationProvider) TpmPolicyBase64() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpmPolicyBase64",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AttestationProvider) TpmPolicyBase64Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpmPolicyBase64Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AttestationProvider) TrustModel() *string {
 	var returns *string
 	_jsii_.Get(
@@ -473,7 +545,7 @@ func (j *jsiiProxy_AttestationProvider) TrustModel() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/attestation_provider azurerm_attestation_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/attestation_provider azurerm_attestation_provider} Resource.
 func NewAttestationProvider(scope constructs.Construct, id *string, config *AttestationProviderConfig) AttestationProvider {
 	_init_.Initialize()
 
@@ -491,7 +563,7 @@ func NewAttestationProvider(scope constructs.Construct, id *string, config *Atte
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/attestation_provider azurerm_attestation_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/attestation_provider azurerm_attestation_provider} Resource.
 func NewAttestationProvider_Override(a AttestationProvider, scope constructs.Construct, id *string, config *AttestationProviderConfig) {
 	_init_.Initialize()
 
@@ -584,6 +656,17 @@ func (j *jsiiProxy_AttestationProvider)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AttestationProvider)SetOpenEnclavePolicyBase64(val *string) {
+	if err := j.validateSetOpenEnclavePolicyBase64Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"openEnclavePolicyBase64",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AttestationProvider)SetPolicySigningCertificateData(val *string) {
 	if err := j.validateSetPolicySigningCertificateDataParameters(val); err != nil {
 		panic(err)
@@ -625,6 +708,17 @@ func (j *jsiiProxy_AttestationProvider)SetResourceGroupName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AttestationProvider)SetSgxEnclavePolicyBase64(val *string) {
+	if err := j.validateSetSgxEnclavePolicyBase64Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sgxEnclavePolicyBase64",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AttestationProvider)SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
@@ -632,6 +726,17 @@ func (j *jsiiProxy_AttestationProvider)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AttestationProvider)SetTpmPolicyBase64(val *string) {
+	if err := j.validateSetTpmPolicyBase64Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tpmPolicyBase64",
 		val,
 	)
 }
@@ -932,6 +1037,14 @@ func (a *jsiiProxy_AttestationProvider) ResetId() {
 	)
 }
 
+func (a *jsiiProxy_AttestationProvider) ResetOpenEnclavePolicyBase64() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOpenEnclavePolicyBase64",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AttestationProvider) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -956,6 +1069,14 @@ func (a *jsiiProxy_AttestationProvider) ResetPolicySigningCertificateData() {
 	)
 }
 
+func (a *jsiiProxy_AttestationProvider) ResetSgxEnclavePolicyBase64() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSgxEnclavePolicyBase64",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AttestationProvider) ResetTags() {
 	_jsii_.InvokeVoid(
 		a,
@@ -968,6 +1089,14 @@ func (a *jsiiProxy_AttestationProvider) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AttestationProvider) ResetTpmPolicyBase64() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTpmPolicyBase64",
 		nil, // no parameters
 	)
 }

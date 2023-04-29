@@ -124,6 +124,10 @@ func (k *jsiiProxy_KubernetesCluster) validatePutOmsAgentParameters(value *Kuber
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesCluster) validatePutServiceMeshProfileParameters(value *KubernetesClusterServiceMeshProfile) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesCluster) validatePutServicePrincipalParameters(value *KubernetesClusterServicePrincipal) error {
 	return nil
 }

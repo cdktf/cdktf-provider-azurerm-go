@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/data_factory_linked_service_azure_blob_storage azurerm_data_factory_linked_service_azure_blob_storage}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/data_factory_linked_service_azure_blob_storage azurerm_data_factory_linked_service_azure_blob_storage}.
 type DataFactoryLinkedServiceAzureBlobStorage interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -740,7 +740,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureBlobStorage) UseManagedIdentityI
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/data_factory_linked_service_azure_blob_storage azurerm_data_factory_linked_service_azure_blob_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/data_factory_linked_service_azure_blob_storage azurerm_data_factory_linked_service_azure_blob_storage} Resource.
 func NewDataFactoryLinkedServiceAzureBlobStorage(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureBlobStorageConfig) DataFactoryLinkedServiceAzureBlobStorage {
 	_init_.Initialize()
 
@@ -758,7 +758,7 @@ func NewDataFactoryLinkedServiceAzureBlobStorage(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/data_factory_linked_service_azure_blob_storage azurerm_data_factory_linked_service_azure_blob_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/data_factory_linked_service_azure_blob_storage azurerm_data_factory_linked_service_azure_blob_storage} Resource.
 func NewDataFactoryLinkedServiceAzureBlobStorage_Override(d DataFactoryLinkedServiceAzureBlobStorage, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureBlobStorageConfig) {
 	_init_.Initialize()
 

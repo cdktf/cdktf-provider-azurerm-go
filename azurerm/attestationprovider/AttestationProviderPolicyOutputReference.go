@@ -67,6 +67,8 @@ type AttestationProviderPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetData()
+	ResetEnvironmentType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -481,6 +483,22 @@ func (a *jsiiProxy_AttestationProviderPolicyOutputReference) InterpolationForAtt
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AttestationProviderPolicyOutputReference) ResetData() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetData",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AttestationProviderPolicyOutputReference) ResetEnvironmentType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnvironmentType",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AttestationProviderPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

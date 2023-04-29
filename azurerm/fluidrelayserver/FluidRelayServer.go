@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server}.
 type FluidRelayServer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -517,7 +517,7 @@ func (j *jsiiProxy_FluidRelayServer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server} Resource.
 func NewFluidRelayServer(scope constructs.Construct, id *string, config *FluidRelayServerConfig) FluidRelayServer {
 	_init_.Initialize()
 
@@ -535,7 +535,7 @@ func NewFluidRelayServer(scope constructs.Construct, id *string, config *FluidRe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.53.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server} Resource.
 func NewFluidRelayServer_Override(f FluidRelayServer, scope constructs.Construct, id *string, config *FluidRelayServerConfig) {
 	_init_.Initialize()
 
