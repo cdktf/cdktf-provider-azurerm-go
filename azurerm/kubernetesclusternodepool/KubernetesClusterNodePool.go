@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool}.
 type KubernetesClusterNodePool interface {
 	cdktf.TerraformResource
 	CapacityReservationGroupId() *string
@@ -148,6 +148,9 @@ type KubernetesClusterNodePool interface {
 	ScaleDownMode() *string
 	SetScaleDownMode(val *string)
 	ScaleDownModeInput() *string
+	SnapshotId() *string
+	SetSnapshotId(val *string)
+	SnapshotIdInput() *string
 	SpotMaxPrice() *float64
 	SetSpotMaxPrice(val *float64)
 	SpotMaxPriceInput() *float64
@@ -246,6 +249,7 @@ type KubernetesClusterNodePool interface {
 	ResetPriority()
 	ResetProximityPlacementGroupId()
 	ResetScaleDownMode()
+	ResetSnapshotId()
 	ResetSpotMaxPrice()
 	ResetTags()
 	ResetTimeouts()
@@ -1060,6 +1064,26 @@ func (j *jsiiProxy_KubernetesClusterNodePool) ScaleDownModeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterNodePool) SnapshotId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) SnapshotIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesClusterNodePool) SpotMaxPrice() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1291,7 +1315,7 @@ func (j *jsiiProxy_KubernetesClusterNodePool) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Resource.
 func NewKubernetesClusterNodePool(scope constructs.Construct, id *string, config *KubernetesClusterNodePoolConfig) KubernetesClusterNodePool {
 	_init_.Initialize()
 
@@ -1309,7 +1333,7 @@ func NewKubernetesClusterNodePool(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Resource.
 func NewKubernetesClusterNodePool_Override(k KubernetesClusterNodePool, scope constructs.Construct, id *string, config *KubernetesClusterNodePoolConfig) {
 	_init_.Initialize()
 
@@ -1714,6 +1738,17 @@ func (j *jsiiProxy_KubernetesClusterNodePool)SetScaleDownMode(val *string) {
 	_jsii_.Set(
 		j,
 		"scaleDownMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool)SetSnapshotId(val *string) {
+	if err := j.validateSetSnapshotIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"snapshotId",
 		val,
 	)
 }
@@ -2379,6 +2414,14 @@ func (k *jsiiProxy_KubernetesClusterNodePool) ResetScaleDownMode() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetScaleDownMode",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNodePool) ResetSnapshotId() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetSnapshotId",
 		nil, // no parameters
 	)
 }

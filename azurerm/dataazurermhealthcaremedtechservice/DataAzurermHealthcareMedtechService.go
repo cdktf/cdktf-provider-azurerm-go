@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/data-sources/healthcare_medtech_service azurerm_healthcare_medtech_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/data-sources/healthcare_medtech_service azurerm_healthcare_medtech_service}.
 type DataAzurermHealthcareMedtechService interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataAzurermHealthcareMedtechService) WorkspaceIdInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/data-sources/healthcare_medtech_service azurerm_healthcare_medtech_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/data-sources/healthcare_medtech_service azurerm_healthcare_medtech_service} Data Source.
 func NewDataAzurermHealthcareMedtechService(scope constructs.Construct, id *string, config *DataAzurermHealthcareMedtechServiceConfig) DataAzurermHealthcareMedtechService {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataAzurermHealthcareMedtechService(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/data-sources/healthcare_medtech_service azurerm_healthcare_medtech_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/data-sources/healthcare_medtech_service azurerm_healthcare_medtech_service} Data Source.
 func NewDataAzurermHealthcareMedtechService_Override(d DataAzurermHealthcareMedtechService, scope constructs.Construct, id *string, config *DataAzurermHealthcareMedtechServiceConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/application_insights_web_test azurerm_application_insights_web_test}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/application_insights_web_test azurerm_application_insights_web_test}.
 type ApplicationInsightsWebTest interface {
 	cdktf.TerraformResource
 	ApplicationInsightsId() *string
@@ -626,7 +626,7 @@ func (j *jsiiProxy_ApplicationInsightsWebTest) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/application_insights_web_test azurerm_application_insights_web_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/application_insights_web_test azurerm_application_insights_web_test} Resource.
 func NewApplicationInsightsWebTest(scope constructs.Construct, id *string, config *ApplicationInsightsWebTestConfig) ApplicationInsightsWebTest {
 	_init_.Initialize()
 
@@ -644,7 +644,7 @@ func NewApplicationInsightsWebTest(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/application_insights_web_test azurerm_application_insights_web_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/application_insights_web_test azurerm_application_insights_web_test} Resource.
 func NewApplicationInsightsWebTest_Override(a ApplicationInsightsWebTest, scope constructs.Construct, id *string, config *ApplicationInsightsWebTestConfig) {
 	_init_.Initialize()
 

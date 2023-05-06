@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/disk_access azurerm_disk_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/disk_access azurerm_disk_access}.
 type DiskAccess interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_DiskAccess) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/disk_access azurerm_disk_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/disk_access azurerm_disk_access} Resource.
 func NewDiskAccess(scope constructs.Construct, id *string, config *DiskAccessConfig) DiskAccess {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewDiskAccess(scope constructs.Construct, id *string, config *DiskAccessCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/disk_access azurerm_disk_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/disk_access azurerm_disk_access} Resource.
 func NewDiskAccess_Override(d DiskAccess, scope constructs.Construct, id *string, config *DiskAccessConfig) {
 	_init_.Initialize()
 

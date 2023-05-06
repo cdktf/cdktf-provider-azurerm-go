@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/data-sources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/data-sources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link}.
 type DataAzurermPrivateDnsZoneVirtualNetworkLink interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DataAzurermPrivateDnsZoneVirtualNetworkLink) VirtualNetworkId
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/data-sources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/data-sources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link} Data Source.
 func NewDataAzurermPrivateDnsZoneVirtualNetworkLink(scope constructs.Construct, id *string, config *DataAzurermPrivateDnsZoneVirtualNetworkLinkConfig) DataAzurermPrivateDnsZoneVirtualNetworkLink {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewDataAzurermPrivateDnsZoneVirtualNetworkLink(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/data-sources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/data-sources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link} Data Source.
 func NewDataAzurermPrivateDnsZoneVirtualNetworkLink_Override(d DataAzurermPrivateDnsZoneVirtualNetworkLink, scope constructs.Construct, id *string, config *DataAzurermPrivateDnsZoneVirtualNetworkLinkConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration}.
 type MaintenanceConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -546,7 +546,7 @@ func (j *jsiiProxy_MaintenanceConfiguration) WindowInput() *MaintenanceConfigura
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration} Resource.
 func NewMaintenanceConfiguration(scope constructs.Construct, id *string, config *MaintenanceConfigurationConfig) MaintenanceConfiguration {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewMaintenanceConfiguration(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration} Resource.
 func NewMaintenanceConfiguration_Override(m MaintenanceConfiguration, scope constructs.Construct, id *string, config *MaintenanceConfigurationConfig) {
 	_init_.Initialize()
 

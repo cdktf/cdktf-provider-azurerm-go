@@ -224,6 +224,10 @@ func (j *jsiiProxy_KubernetesClusterNodePool) validateSetScaleDownModeParameters
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterNodePool) validateSetSnapshotIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterNodePool) validateSetSpotMaxPriceParameters(val *float64) error {
 	return nil
 }

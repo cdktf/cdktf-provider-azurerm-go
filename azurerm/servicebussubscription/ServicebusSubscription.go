@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/servicebus_subscription azurerm_servicebus_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/servicebus_subscription azurerm_servicebus_subscription}.
 type ServicebusSubscription interface {
 	cdktf.TerraformResource
 	AutoDeleteOnIdle() *string
@@ -667,7 +667,7 @@ func (j *jsiiProxy_ServicebusSubscription) TopicIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/servicebus_subscription azurerm_servicebus_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/servicebus_subscription azurerm_servicebus_subscription} Resource.
 func NewServicebusSubscription(scope constructs.Construct, id *string, config *ServicebusSubscriptionConfig) ServicebusSubscription {
 	_init_.Initialize()
 
@@ -685,7 +685,7 @@ func NewServicebusSubscription(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/servicebus_subscription azurerm_servicebus_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/servicebus_subscription azurerm_servicebus_subscription} Resource.
 func NewServicebusSubscription_Override(s ServicebusSubscription, scope constructs.Construct, id *string, config *ServicebusSubscriptionConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/management_group_policy_assignment azurerm_management_group_policy_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/management_group_policy_assignment azurerm_management_group_policy_assignment}.
 type ManagementGroupPolicyAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -643,7 +643,7 @@ func (j *jsiiProxy_ManagementGroupPolicyAssignment) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/management_group_policy_assignment azurerm_management_group_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/management_group_policy_assignment azurerm_management_group_policy_assignment} Resource.
 func NewManagementGroupPolicyAssignment(scope constructs.Construct, id *string, config *ManagementGroupPolicyAssignmentConfig) ManagementGroupPolicyAssignment {
 	_init_.Initialize()
 
@@ -661,7 +661,7 @@ func NewManagementGroupPolicyAssignment(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/management_group_policy_assignment azurerm_management_group_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/management_group_policy_assignment azurerm_management_group_policy_assignment} Resource.
 func NewManagementGroupPolicyAssignment_Override(m ManagementGroupPolicyAssignment, scope constructs.Construct, id *string, config *ManagementGroupPolicyAssignmentConfig) {
 	_init_.Initialize()
 

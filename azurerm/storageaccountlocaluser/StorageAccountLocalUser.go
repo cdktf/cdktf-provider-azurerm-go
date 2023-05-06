@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/storage_account_local_user azurerm_storage_account_local_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/storage_account_local_user azurerm_storage_account_local_user}.
 type StorageAccountLocalUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -498,7 +498,7 @@ func (j *jsiiProxy_StorageAccountLocalUser) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/storage_account_local_user azurerm_storage_account_local_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/storage_account_local_user azurerm_storage_account_local_user} Resource.
 func NewStorageAccountLocalUser(scope constructs.Construct, id *string, config *StorageAccountLocalUserConfig) StorageAccountLocalUser {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewStorageAccountLocalUser(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.54.0/docs/resources/storage_account_local_user azurerm_storage_account_local_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/storage_account_local_user azurerm_storage_account_local_user} Resource.
 func NewStorageAccountLocalUser_Override(s StorageAccountLocalUser, scope constructs.Construct, id *string, config *StorageAccountLocalUserConfig) {
 	_init_.Initialize()
 

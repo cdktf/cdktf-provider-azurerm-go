@@ -645,6 +645,14 @@ func (j *jsiiProxy_KubernetesClusterNodePool) validateSetScaleDownModeParameters
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterNodePool) validateSetSnapshotIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterNodePool) validateSetSpotMaxPriceParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
