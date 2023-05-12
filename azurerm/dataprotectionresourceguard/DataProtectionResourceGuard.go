@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/data_protection_resource_guard azurerm_data_protection_resource_guard}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/data_protection_resource_guard azurerm_data_protection_resource_guard}.
 type DataProtectionResourceGuard interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_DataProtectionResourceGuard) VaultCriticalOperationExclusionL
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/data_protection_resource_guard azurerm_data_protection_resource_guard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/data_protection_resource_guard azurerm_data_protection_resource_guard} Resource.
 func NewDataProtectionResourceGuard(scope constructs.Construct, id *string, config *DataProtectionResourceGuardConfig) DataProtectionResourceGuard {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewDataProtectionResourceGuard(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/data_protection_resource_guard azurerm_data_protection_resource_guard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/data_protection_resource_guard azurerm_data_protection_resource_guard} Resource.
 func NewDataProtectionResourceGuard_Override(d DataProtectionResourceGuard, scope constructs.Construct, id *string, config *DataProtectionResourceGuardConfig) {
 	_init_.Initialize()
 

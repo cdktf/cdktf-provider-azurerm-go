@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/ssh_public_key azurerm_ssh_public_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/ssh_public_key azurerm_ssh_public_key}.
 type SshPublicKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_SshPublicKey) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/ssh_public_key azurerm_ssh_public_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/ssh_public_key azurerm_ssh_public_key} Resource.
 func NewSshPublicKey(scope constructs.Construct, id *string, config *SshPublicKeyConfig) SshPublicKey {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewSshPublicKey(scope constructs.Construct, id *string, config *SshPublicKe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/ssh_public_key azurerm_ssh_public_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/ssh_public_key azurerm_ssh_public_key} Resource.
 func NewSshPublicKey_Override(s SshPublicKey, scope constructs.Construct, id *string, config *SshPublicKeyConfig) {
 	_init_.Initialize()
 

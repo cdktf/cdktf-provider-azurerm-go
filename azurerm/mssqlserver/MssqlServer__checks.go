@@ -432,6 +432,14 @@ func (j *jsiiProxy_MssqlServer) validateSetTagsParameters(val *map[string]*strin
 	return nil
 }
 
+func (j *jsiiProxy_MssqlServer) validateSetTransparentDataEncryptionKeyVaultKeyIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MssqlServer) validateSetVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

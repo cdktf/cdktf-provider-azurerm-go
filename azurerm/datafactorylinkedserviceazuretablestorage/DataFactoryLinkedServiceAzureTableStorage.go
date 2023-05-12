@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/data_factory_linked_service_azure_table_storage azurerm_data_factory_linked_service_azure_table_storage}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/data_factory_linked_service_azure_table_storage azurerm_data_factory_linked_service_azure_table_storage}.
 type DataFactoryLinkedServiceAzureTableStorage interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -499,7 +499,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/data_factory_linked_service_azure_table_storage azurerm_data_factory_linked_service_azure_table_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/data_factory_linked_service_azure_table_storage azurerm_data_factory_linked_service_azure_table_storage} Resource.
 func NewDataFactoryLinkedServiceAzureTableStorage(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureTableStorageConfig) DataFactoryLinkedServiceAzureTableStorage {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewDataFactoryLinkedServiceAzureTableStorage(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/data_factory_linked_service_azure_table_storage azurerm_data_factory_linked_service_azure_table_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/data_factory_linked_service_azure_table_storage azurerm_data_factory_linked_service_azure_table_storage} Resource.
 func NewDataFactoryLinkedServiceAzureTableStorage_Override(d DataFactoryLinkedServiceAzureTableStorage, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureTableStorageConfig) {
 	_init_.Initialize()
 

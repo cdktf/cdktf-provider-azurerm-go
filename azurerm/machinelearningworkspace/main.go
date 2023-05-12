@@ -104,6 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "v1LegacyModeEnabled", GoGetter: "V1LegacyModeEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "v1LegacyModeEnabledInput", GoGetter: "V1LegacyModeEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
 		},
 		func() interface{} {
 			j := jsiiProxy_MachineLearningWorkspace{}

@@ -140,6 +140,10 @@ func (j *jsiiProxy_MssqlServer) validateSetTagsParameters(val *map[string]*strin
 	return nil
 }
 
+func (j *jsiiProxy_MssqlServer) validateSetTransparentDataEncryptionKeyVaultKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlServer) validateSetVersionParameters(val *string) error {
 	return nil
 }

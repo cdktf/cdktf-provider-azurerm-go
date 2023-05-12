@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/data-sources/managed_application_definition azurerm_managed_application_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/data-sources/managed_application_definition azurerm_managed_application_definition}.
 type DataAzurermManagedApplicationDefinition interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -339,7 +339,7 @@ func (j *jsiiProxy_DataAzurermManagedApplicationDefinition) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/data-sources/managed_application_definition azurerm_managed_application_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/data-sources/managed_application_definition azurerm_managed_application_definition} Data Source.
 func NewDataAzurermManagedApplicationDefinition(scope constructs.Construct, id *string, config *DataAzurermManagedApplicationDefinitionConfig) DataAzurermManagedApplicationDefinition {
 	_init_.Initialize()
 
@@ -357,7 +357,7 @@ func NewDataAzurermManagedApplicationDefinition(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/data-sources/managed_application_definition azurerm_managed_application_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/data-sources/managed_application_definition azurerm_managed_application_definition} Data Source.
 func NewDataAzurermManagedApplicationDefinition_Override(d DataAzurermManagedApplicationDefinition, scope constructs.Construct, id *string, config *DataAzurermManagedApplicationDefinitionConfig) {
 	_init_.Initialize()
 

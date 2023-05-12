@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/express_route_port_authorization azurerm_express_route_port_authorization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/express_route_port_authorization azurerm_express_route_port_authorization}.
 type ExpressRoutePortAuthorization interface {
 	cdktf.TerraformResource
 	AuthorizationKey() *string
@@ -401,7 +401,7 @@ func (j *jsiiProxy_ExpressRoutePortAuthorization) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/express_route_port_authorization azurerm_express_route_port_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/express_route_port_authorization azurerm_express_route_port_authorization} Resource.
 func NewExpressRoutePortAuthorization(scope constructs.Construct, id *string, config *ExpressRoutePortAuthorizationConfig) ExpressRoutePortAuthorization {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewExpressRoutePortAuthorization(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/express_route_port_authorization azurerm_express_route_port_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/express_route_port_authorization azurerm_express_route_port_authorization} Resource.
 func NewExpressRoutePortAuthorization_Override(e ExpressRoutePortAuthorization, scope constructs.Construct, id *string, config *ExpressRoutePortAuthorizationConfig) {
 	_init_.Initialize()
 

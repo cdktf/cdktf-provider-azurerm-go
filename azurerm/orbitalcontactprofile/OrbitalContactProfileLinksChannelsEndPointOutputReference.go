@@ -73,6 +73,7 @@ type OrbitalContactProfileLinksChannelsEndPointOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIpAddress()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -549,6 +550,14 @@ func (o *jsiiProxy_OrbitalContactProfileLinksChannelsEndPointOutputReference) In
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OrbitalContactProfileLinksChannelsEndPointOutputReference) ResetIpAddress() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetIpAddress",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OrbitalContactProfileLinksChannelsEndPointOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/data-sources/management_group_template_deployment azurerm_management_group_template_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/data-sources/management_group_template_deployment azurerm_management_group_template_deployment}.
 type DataAzurermManagementGroupTemplateDeployment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -339,7 +339,7 @@ func (j *jsiiProxy_DataAzurermManagementGroupTemplateDeployment) TimeoutsInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/data-sources/management_group_template_deployment azurerm_management_group_template_deployment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/data-sources/management_group_template_deployment azurerm_management_group_template_deployment} Data Source.
 func NewDataAzurermManagementGroupTemplateDeployment(scope constructs.Construct, id *string, config *DataAzurermManagementGroupTemplateDeploymentConfig) DataAzurermManagementGroupTemplateDeployment {
 	_init_.Initialize()
 
@@ -357,7 +357,7 @@ func NewDataAzurermManagementGroupTemplateDeployment(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/data-sources/management_group_template_deployment azurerm_management_group_template_deployment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/data-sources/management_group_template_deployment azurerm_management_group_template_deployment} Data Source.
 func NewDataAzurermManagementGroupTemplateDeployment_Override(d DataAzurermManagementGroupTemplateDeployment, scope constructs.Construct, id *string, config *DataAzurermManagementGroupTemplateDeploymentConfig) {
 	_init_.Initialize()
 

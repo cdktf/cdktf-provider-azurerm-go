@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/mssql_server azurerm_mssql_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/mssql_server azurerm_mssql_server}.
 type MssqlServer interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -102,6 +102,9 @@ type MssqlServer interface {
 	TerraformResourceType() *string
 	Timeouts() MssqlServerTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TransparentDataEncryptionKeyVaultKeyId() *string
+	SetTransparentDataEncryptionKeyVaultKeyId(val *string)
+	TransparentDataEncryptionKeyVaultKeyIdInput() *string
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -148,6 +151,7 @@ type MssqlServer interface {
 	ResetPublicNetworkAccessEnabled()
 	ResetTags()
 	ResetTimeouts()
+	ResetTransparentDataEncryptionKeyVaultKeyId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -643,6 +647,26 @@ func (j *jsiiProxy_MssqlServer) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MssqlServer) TransparentDataEncryptionKeyVaultKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentDataEncryptionKeyVaultKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlServer) TransparentDataEncryptionKeyVaultKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentDataEncryptionKeyVaultKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MssqlServer) Version() *string {
 	var returns *string
 	_jsii_.Get(
@@ -664,7 +688,7 @@ func (j *jsiiProxy_MssqlServer) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
 func NewMssqlServer(scope constructs.Construct, id *string, config *MssqlServerConfig) MssqlServer {
 	_init_.Initialize()
 
@@ -682,7 +706,7 @@ func NewMssqlServer(scope constructs.Construct, id *string, config *MssqlServerC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.55.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
 func NewMssqlServer_Override(m MssqlServer, scope constructs.Construct, id *string, config *MssqlServerConfig) {
 	_init_.Initialize()
 
@@ -889,6 +913,17 @@ func (j *jsiiProxy_MssqlServer)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlServer)SetTransparentDataEncryptionKeyVaultKeyId(val *string) {
+	if err := j.validateSetTransparentDataEncryptionKeyVaultKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transparentDataEncryptionKeyVaultKeyId",
 		val,
 	)
 }
@@ -1303,6 +1338,14 @@ func (m *jsiiProxy_MssqlServer) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlServer) ResetTransparentDataEncryptionKeyVaultKeyId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTransparentDataEncryptionKeyVaultKeyId",
 		nil, // no parameters
 	)
 }
