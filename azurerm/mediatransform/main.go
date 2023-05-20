@@ -729,6 +729,138 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.mediaTransform.MediaTransformOutputCustomPresetCodecJpgImage",
+		reflect.TypeOf((*MediaTransformOutputCustomPresetCodecJpgImage)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.mediaTransform.MediaTransformOutputCustomPresetCodecJpgImageLayer",
+		reflect.TypeOf((*MediaTransformOutputCustomPresetCodecJpgImageLayer)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.mediaTransform.MediaTransformOutputCustomPresetCodecJpgImageLayerList",
+		reflect.TypeOf((*MediaTransformOutputCustomPresetCodecJpgImageLayerList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MediaTransformOutputCustomPresetCodecJpgImageLayerList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.mediaTransform.MediaTransformOutputCustomPresetCodecJpgImageLayerOutputReference",
+		reflect.TypeOf((*MediaTransformOutputCustomPresetCodecJpgImageLayerOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "height", GoGetter: "Height"},
+			_jsii_.MemberProperty{JsiiProperty: "heightInput", GoGetter: "HeightInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "label", GoGetter: "Label"},
+			_jsii_.MemberProperty{JsiiProperty: "labelInput", GoGetter: "LabelInput"},
+			_jsii_.MemberProperty{JsiiProperty: "quality", GoGetter: "Quality"},
+			_jsii_.MemberProperty{JsiiProperty: "qualityInput", GoGetter: "QualityInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHeight", GoMethod: "ResetHeight"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLabel", GoMethod: "ResetLabel"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQuality", GoMethod: "ResetQuality"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWidth", GoMethod: "ResetWidth"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "width", GoGetter: "Width"},
+			_jsii_.MemberProperty{JsiiProperty: "widthInput", GoGetter: "WidthInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MediaTransformOutputCustomPresetCodecJpgImageLayerOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.mediaTransform.MediaTransformOutputCustomPresetCodecJpgImageOutputReference",
+		reflect.TypeOf((*MediaTransformOutputCustomPresetCodecJpgImageOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "keyFrameInterval", GoGetter: "KeyFrameInterval"},
+			_jsii_.MemberProperty{JsiiProperty: "keyFrameIntervalInput", GoGetter: "KeyFrameIntervalInput"},
+			_jsii_.MemberProperty{JsiiProperty: "label", GoGetter: "Label"},
+			_jsii_.MemberProperty{JsiiProperty: "labelInput", GoGetter: "LabelInput"},
+			_jsii_.MemberProperty{JsiiProperty: "layer", GoGetter: "Layer"},
+			_jsii_.MemberProperty{JsiiProperty: "layerInput", GoGetter: "LayerInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putLayer", GoMethod: "PutLayer"},
+			_jsii_.MemberProperty{JsiiProperty: "range", GoGetter: "Range"},
+			_jsii_.MemberProperty{JsiiProperty: "rangeInput", GoGetter: "RangeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKeyFrameInterval", GoMethod: "ResetKeyFrameInterval"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLabel", GoMethod: "ResetLabel"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLayer", GoMethod: "ResetLayer"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRange", GoMethod: "ResetRange"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSpriteColumn", GoMethod: "ResetSpriteColumn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStep", GoMethod: "ResetStep"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStretchMode", GoMethod: "ResetStretchMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSyncMode", GoMethod: "ResetSyncMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "spriteColumn", GoGetter: "SpriteColumn"},
+			_jsii_.MemberProperty{JsiiProperty: "spriteColumnInput", GoGetter: "SpriteColumnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "start", GoGetter: "Start"},
+			_jsii_.MemberProperty{JsiiProperty: "startInput", GoGetter: "StartInput"},
+			_jsii_.MemberProperty{JsiiProperty: "step", GoGetter: "Step"},
+			_jsii_.MemberProperty{JsiiProperty: "stepInput", GoGetter: "StepInput"},
+			_jsii_.MemberProperty{JsiiProperty: "stretchMode", GoGetter: "StretchMode"},
+			_jsii_.MemberProperty{JsiiProperty: "stretchModeInput", GoGetter: "StretchModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "syncMode", GoGetter: "SyncMode"},
+			_jsii_.MemberProperty{JsiiProperty: "syncModeInput", GoGetter: "SyncModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MediaTransformOutputCustomPresetCodecJpgImageOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-azurerm.mediaTransform.MediaTransformOutputCustomPresetCodecList",
 		reflect.TypeOf((*MediaTransformOutputCustomPresetCodecList)(nil)).Elem(),
@@ -783,18 +915,26 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "jpgImage", GoGetter: "JpgImage"},
+			_jsii_.MemberProperty{JsiiProperty: "jpgImageInput", GoGetter: "JpgImageInput"},
+			_jsii_.MemberProperty{JsiiProperty: "pngImage", GoGetter: "PngImage"},
+			_jsii_.MemberProperty{JsiiProperty: "pngImageInput", GoGetter: "PngImageInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAacAudio", GoMethod: "PutAacAudio"},
 			_jsii_.MemberMethod{JsiiMethod: "putCopyAudio", GoMethod: "PutCopyAudio"},
 			_jsii_.MemberMethod{JsiiMethod: "putCopyVideo", GoMethod: "PutCopyVideo"},
 			_jsii_.MemberMethod{JsiiMethod: "putDdAudio", GoMethod: "PutDdAudio"},
 			_jsii_.MemberMethod{JsiiMethod: "putH264Video", GoMethod: "PutH264Video"},
 			_jsii_.MemberMethod{JsiiMethod: "putH265Video", GoMethod: "PutH265Video"},
+			_jsii_.MemberMethod{JsiiMethod: "putJpgImage", GoMethod: "PutJpgImage"},
+			_jsii_.MemberMethod{JsiiMethod: "putPngImage", GoMethod: "PutPngImage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAacAudio", GoMethod: "ResetAacAudio"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCopyAudio", GoMethod: "ResetCopyAudio"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCopyVideo", GoMethod: "ResetCopyVideo"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDdAudio", GoMethod: "ResetDdAudio"},
 			_jsii_.MemberMethod{JsiiMethod: "resetH264Video", GoMethod: "ResetH264Video"},
 			_jsii_.MemberMethod{JsiiMethod: "resetH265Video", GoMethod: "ResetH265Video"},
+			_jsii_.MemberMethod{JsiiMethod: "resetJpgImage", GoMethod: "ResetJpgImage"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPngImage", GoMethod: "ResetPngImage"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -802,6 +942,132 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MediaTransformOutputCustomPresetCodecOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.mediaTransform.MediaTransformOutputCustomPresetCodecPngImage",
+		reflect.TypeOf((*MediaTransformOutputCustomPresetCodecPngImage)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.mediaTransform.MediaTransformOutputCustomPresetCodecPngImageLayer",
+		reflect.TypeOf((*MediaTransformOutputCustomPresetCodecPngImageLayer)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.mediaTransform.MediaTransformOutputCustomPresetCodecPngImageLayerList",
+		reflect.TypeOf((*MediaTransformOutputCustomPresetCodecPngImageLayerList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MediaTransformOutputCustomPresetCodecPngImageLayerList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.mediaTransform.MediaTransformOutputCustomPresetCodecPngImageLayerOutputReference",
+		reflect.TypeOf((*MediaTransformOutputCustomPresetCodecPngImageLayerOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "height", GoGetter: "Height"},
+			_jsii_.MemberProperty{JsiiProperty: "heightInput", GoGetter: "HeightInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "label", GoGetter: "Label"},
+			_jsii_.MemberProperty{JsiiProperty: "labelInput", GoGetter: "LabelInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHeight", GoMethod: "ResetHeight"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLabel", GoMethod: "ResetLabel"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWidth", GoMethod: "ResetWidth"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "width", GoGetter: "Width"},
+			_jsii_.MemberProperty{JsiiProperty: "widthInput", GoGetter: "WidthInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MediaTransformOutputCustomPresetCodecPngImageLayerOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.mediaTransform.MediaTransformOutputCustomPresetCodecPngImageOutputReference",
+		reflect.TypeOf((*MediaTransformOutputCustomPresetCodecPngImageOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "keyFrameInterval", GoGetter: "KeyFrameInterval"},
+			_jsii_.MemberProperty{JsiiProperty: "keyFrameIntervalInput", GoGetter: "KeyFrameIntervalInput"},
+			_jsii_.MemberProperty{JsiiProperty: "label", GoGetter: "Label"},
+			_jsii_.MemberProperty{JsiiProperty: "labelInput", GoGetter: "LabelInput"},
+			_jsii_.MemberProperty{JsiiProperty: "layer", GoGetter: "Layer"},
+			_jsii_.MemberProperty{JsiiProperty: "layerInput", GoGetter: "LayerInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putLayer", GoMethod: "PutLayer"},
+			_jsii_.MemberProperty{JsiiProperty: "range", GoGetter: "Range"},
+			_jsii_.MemberProperty{JsiiProperty: "rangeInput", GoGetter: "RangeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKeyFrameInterval", GoMethod: "ResetKeyFrameInterval"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLabel", GoMethod: "ResetLabel"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLayer", GoMethod: "ResetLayer"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRange", GoMethod: "ResetRange"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStep", GoMethod: "ResetStep"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStretchMode", GoMethod: "ResetStretchMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSyncMode", GoMethod: "ResetSyncMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "start", GoGetter: "Start"},
+			_jsii_.MemberProperty{JsiiProperty: "startInput", GoGetter: "StartInput"},
+			_jsii_.MemberProperty{JsiiProperty: "step", GoGetter: "Step"},
+			_jsii_.MemberProperty{JsiiProperty: "stepInput", GoGetter: "StepInput"},
+			_jsii_.MemberProperty{JsiiProperty: "stretchMode", GoGetter: "StretchMode"},
+			_jsii_.MemberProperty{JsiiProperty: "stretchModeInput", GoGetter: "StretchModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "syncMode", GoGetter: "SyncMode"},
+			_jsii_.MemberProperty{JsiiProperty: "syncModeInput", GoGetter: "SyncModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MediaTransformOutputCustomPresetCodecPngImageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -1323,6 +1589,44 @@ func init() {
 		"@cdktf/provider-azurerm.mediaTransform.MediaTransformOutputCustomPresetFormat",
 		reflect.TypeOf((*MediaTransformOutputCustomPresetFormat)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.mediaTransform.MediaTransformOutputCustomPresetFormatJpg",
+		reflect.TypeOf((*MediaTransformOutputCustomPresetFormatJpg)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.mediaTransform.MediaTransformOutputCustomPresetFormatJpgOutputReference",
+		reflect.TypeOf((*MediaTransformOutputCustomPresetFormatJpgOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "filenamePattern", GoGetter: "FilenamePattern"},
+			_jsii_.MemberProperty{JsiiProperty: "filenamePatternInput", GoGetter: "FilenamePatternInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MediaTransformOutputCustomPresetFormatJpgOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-azurerm.mediaTransform.MediaTransformOutputCustomPresetFormatList",
 		reflect.TypeOf((*MediaTransformOutputCustomPresetFormatList)(nil)).Elem(),
@@ -1466,11 +1770,19 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "jpg", GoGetter: "Jpg"},
+			_jsii_.MemberProperty{JsiiProperty: "jpgInput", GoGetter: "JpgInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mp4", GoGetter: "Mp4"},
 			_jsii_.MemberProperty{JsiiProperty: "mp4Input", GoGetter: "Mp4Input"},
+			_jsii_.MemberProperty{JsiiProperty: "png", GoGetter: "Png"},
+			_jsii_.MemberProperty{JsiiProperty: "pngInput", GoGetter: "PngInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putJpg", GoMethod: "PutJpg"},
 			_jsii_.MemberMethod{JsiiMethod: "putMp4", GoMethod: "PutMp4"},
+			_jsii_.MemberMethod{JsiiMethod: "putPng", GoMethod: "PutPng"},
 			_jsii_.MemberMethod{JsiiMethod: "putTransportStream", GoMethod: "PutTransportStream"},
+			_jsii_.MemberMethod{JsiiMethod: "resetJpg", GoMethod: "ResetJpg"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMp4", GoMethod: "ResetMp4"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPng", GoMethod: "ResetPng"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTransportStream", GoMethod: "ResetTransportStream"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -1481,6 +1793,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.mediaTransform.MediaTransformOutputCustomPresetFormatPng",
+		reflect.TypeOf((*MediaTransformOutputCustomPresetFormatPng)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.mediaTransform.MediaTransformOutputCustomPresetFormatPngOutputReference",
+		reflect.TypeOf((*MediaTransformOutputCustomPresetFormatPngOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "filenamePattern", GoGetter: "FilenamePattern"},
+			_jsii_.MemberProperty{JsiiProperty: "filenamePatternInput", GoGetter: "FilenamePatternInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MediaTransformOutputCustomPresetFormatPngOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

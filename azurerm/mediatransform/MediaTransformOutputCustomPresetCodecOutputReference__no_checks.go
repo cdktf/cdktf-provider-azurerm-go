@@ -68,6 +68,14 @@ func (m *jsiiProxy_MediaTransformOutputCustomPresetCodecOutputReference) validat
 	return nil
 }
 
+func (m *jsiiProxy_MediaTransformOutputCustomPresetCodecOutputReference) validatePutJpgImageParameters(value *MediaTransformOutputCustomPresetCodecJpgImage) error {
+	return nil
+}
+
+func (m *jsiiProxy_MediaTransformOutputCustomPresetCodecOutputReference) validatePutPngImageParameters(value *MediaTransformOutputCustomPresetCodecPngImage) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaTransformOutputCustomPresetCodecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

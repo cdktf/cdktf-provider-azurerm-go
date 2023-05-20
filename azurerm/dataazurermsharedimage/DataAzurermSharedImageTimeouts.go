@@ -2,7 +2,7 @@ package dataazurermsharedimage
 
 
 type DataAzurermSharedImageTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/data-sources/shared_image#read DataAzurermSharedImage#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/data-sources/shared_image#read DataAzurermSharedImage#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

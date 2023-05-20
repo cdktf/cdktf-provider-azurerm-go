@@ -90,7 +90,29 @@ func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) valida
 	return nil
 }
 
+func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) validatePutJpgParameters(value *MediaTransformOutputCustomPresetFormatJpg) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) validatePutMp4Parameters(value *MediaTransformOutputCustomPresetFormatMp4) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) validatePutPngParameters(value *MediaTransformOutputCustomPresetFormatPng) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

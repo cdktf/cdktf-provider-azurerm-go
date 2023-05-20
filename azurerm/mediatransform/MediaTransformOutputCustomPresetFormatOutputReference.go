@@ -29,8 +29,12 @@ type MediaTransformOutputCustomPresetFormatOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Jpg() MediaTransformOutputCustomPresetFormatJpgOutputReference
+	JpgInput() *MediaTransformOutputCustomPresetFormatJpg
 	Mp4() MediaTransformOutputCustomPresetFormatMp4OutputReference
 	Mp4Input() *MediaTransformOutputCustomPresetFormatMp4
+	Png() MediaTransformOutputCustomPresetFormatPngOutputReference
+	PngInput() *MediaTransformOutputCustomPresetFormatPng
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -65,9 +69,13 @@ type MediaTransformOutputCustomPresetFormatOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutJpg(value *MediaTransformOutputCustomPresetFormatJpg)
 	PutMp4(value *MediaTransformOutputCustomPresetFormatMp4)
+	PutPng(value *MediaTransformOutputCustomPresetFormatPng)
 	PutTransportStream(value *MediaTransformOutputCustomPresetFormatTransportStream)
+	ResetJpg()
 	ResetMp4()
+	ResetPng()
 	ResetTransportStream()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -134,6 +142,26 @@ func (j *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) Intern
 	return returns
 }
 
+func (j *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) Jpg() MediaTransformOutputCustomPresetFormatJpgOutputReference {
+	var returns MediaTransformOutputCustomPresetFormatJpgOutputReference
+	_jsii_.Get(
+		j,
+		"jpg",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) JpgInput() *MediaTransformOutputCustomPresetFormatJpg {
+	var returns *MediaTransformOutputCustomPresetFormatJpg
+	_jsii_.Get(
+		j,
+		"jpgInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) Mp4() MediaTransformOutputCustomPresetFormatMp4OutputReference {
 	var returns MediaTransformOutputCustomPresetFormatMp4OutputReference
 	_jsii_.Get(
@@ -149,6 +177,26 @@ func (j *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) Mp4Inp
 	_jsii_.Get(
 		j,
 		"mp4Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) Png() MediaTransformOutputCustomPresetFormatPngOutputReference {
+	var returns MediaTransformOutputCustomPresetFormatPngOutputReference
+	_jsii_.Get(
+		j,
+		"png",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) PngInput() *MediaTransformOutputCustomPresetFormatPng {
+	var returns *MediaTransformOutputCustomPresetFormatPng
+	_jsii_.Get(
+		j,
+		"pngInput",
 		&returns,
 	)
 	return returns
@@ -463,6 +511,17 @@ func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) Interp
 	return returns
 }
 
+func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) PutJpg(value *MediaTransformOutputCustomPresetFormatJpg) {
+	if err := m.validatePutJpgParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putJpg",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) PutMp4(value *MediaTransformOutputCustomPresetFormatMp4) {
 	if err := m.validatePutMp4Parameters(value); err != nil {
 		panic(err)
@@ -470,6 +529,17 @@ func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) PutMp4
 	_jsii_.InvokeVoid(
 		m,
 		"putMp4",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) PutPng(value *MediaTransformOutputCustomPresetFormatPng) {
+	if err := m.validatePutPngParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putPng",
 		[]interface{}{value},
 	)
 }
@@ -485,10 +555,26 @@ func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) PutTra
 	)
 }
 
+func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) ResetJpg() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetJpg",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) ResetMp4() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetMp4",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) ResetPng() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPng",
 		nil, // no parameters
 	)
 }

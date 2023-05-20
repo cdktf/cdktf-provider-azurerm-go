@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/synapse_linked_service azurerm_synapse_linked_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/synapse_linked_service azurerm_synapse_linked_service}.
 type SynapseLinkedService interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -522,7 +522,7 @@ func (j *jsiiProxy_SynapseLinkedService) TypePropertiesJsonInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/synapse_linked_service azurerm_synapse_linked_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/synapse_linked_service azurerm_synapse_linked_service} Resource.
 func NewSynapseLinkedService(scope constructs.Construct, id *string, config *SynapseLinkedServiceConfig) SynapseLinkedService {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewSynapseLinkedService(scope constructs.Construct, id *string, config *Syn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/synapse_linked_service azurerm_synapse_linked_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/synapse_linked_service azurerm_synapse_linked_service} Resource.
 func NewSynapseLinkedService_Override(s SynapseLinkedService, scope constructs.Construct, id *string, config *SynapseLinkedServiceConfig) {
 	_init_.Initialize()
 

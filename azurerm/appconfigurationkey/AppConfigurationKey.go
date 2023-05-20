@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/app_configuration_key azurerm_app_configuration_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/app_configuration_key azurerm_app_configuration_key}.
 type AppConfigurationKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -548,7 +548,7 @@ func (j *jsiiProxy_AppConfigurationKey) VaultKeyReferenceInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/app_configuration_key azurerm_app_configuration_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/app_configuration_key azurerm_app_configuration_key} Resource.
 func NewAppConfigurationKey(scope constructs.Construct, id *string, config *AppConfigurationKeyConfig) AppConfigurationKey {
 	_init_.Initialize()
 
@@ -566,7 +566,7 @@ func NewAppConfigurationKey(scope constructs.Construct, id *string, config *AppC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/app_configuration_key azurerm_app_configuration_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/app_configuration_key azurerm_app_configuration_key} Resource.
 func NewAppConfigurationKey_Override(a AppConfigurationKey, scope constructs.Construct, id *string, config *AppConfigurationKeyConfig) {
 	_init_.Initialize()
 

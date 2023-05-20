@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/mssql_managed_instance_security_alert_policy azurerm_mssql_managed_instance_security_alert_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/mssql_managed_instance_security_alert_policy azurerm_mssql_managed_instance_security_alert_policy}.
 type MssqlManagedInstanceSecurityAlertPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -524,7 +524,7 @@ func (j *jsiiProxy_MssqlManagedInstanceSecurityAlertPolicy) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/mssql_managed_instance_security_alert_policy azurerm_mssql_managed_instance_security_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/mssql_managed_instance_security_alert_policy azurerm_mssql_managed_instance_security_alert_policy} Resource.
 func NewMssqlManagedInstanceSecurityAlertPolicy(scope constructs.Construct, id *string, config *MssqlManagedInstanceSecurityAlertPolicyConfig) MssqlManagedInstanceSecurityAlertPolicy {
 	_init_.Initialize()
 
@@ -542,7 +542,7 @@ func NewMssqlManagedInstanceSecurityAlertPolicy(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/mssql_managed_instance_security_alert_policy azurerm_mssql_managed_instance_security_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/mssql_managed_instance_security_alert_policy azurerm_mssql_managed_instance_security_alert_policy} Resource.
 func NewMssqlManagedInstanceSecurityAlertPolicy_Override(m MssqlManagedInstanceSecurityAlertPolicy, scope constructs.Construct, id *string, config *MssqlManagedInstanceSecurityAlertPolicyConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/recovery_services_vault azurerm_recovery_services_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/recovery_services_vault azurerm_recovery_services_vault}.
 type RecoveryServicesVault interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -59,6 +59,8 @@ type RecoveryServicesVault interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	Monitoring() RecoveryServicesVaultMonitoringOutputReference
+	MonitoringInput() *RecoveryServicesVaultMonitoring
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -127,6 +129,7 @@ type RecoveryServicesVault interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutEncryption(value *RecoveryServicesVaultEncryption)
 	PutIdentity(value *RecoveryServicesVaultIdentity)
+	PutMonitoring(value *RecoveryServicesVaultMonitoring)
 	PutTimeouts(value *RecoveryServicesVaultTimeouts)
 	ResetClassicVmwareReplicationEnabled()
 	ResetCrossRegionRestoreEnabled()
@@ -134,6 +137,7 @@ type RecoveryServicesVault interface {
 	ResetId()
 	ResetIdentity()
 	ResetImmutability()
+	ResetMonitoring()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -387,6 +391,26 @@ func (j *jsiiProxy_RecoveryServicesVault) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RecoveryServicesVault) Monitoring() RecoveryServicesVaultMonitoringOutputReference {
+	var returns RecoveryServicesVaultMonitoringOutputReference
+	_jsii_.Get(
+		j,
+		"monitoring",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RecoveryServicesVault) MonitoringInput() *RecoveryServicesVaultMonitoring {
+	var returns *RecoveryServicesVaultMonitoring
+	_jsii_.Get(
+		j,
+		"monitoringInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RecoveryServicesVault) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -618,7 +642,7 @@ func (j *jsiiProxy_RecoveryServicesVault) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/recovery_services_vault azurerm_recovery_services_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/recovery_services_vault azurerm_recovery_services_vault} Resource.
 func NewRecoveryServicesVault(scope constructs.Construct, id *string, config *RecoveryServicesVaultConfig) RecoveryServicesVault {
 	_init_.Initialize()
 
@@ -636,7 +660,7 @@ func NewRecoveryServicesVault(scope constructs.Construct, id *string, config *Re
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/recovery_services_vault azurerm_recovery_services_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/recovery_services_vault azurerm_recovery_services_vault} Resource.
 func NewRecoveryServicesVault_Override(r RecoveryServicesVault, scope constructs.Construct, id *string, config *RecoveryServicesVaultConfig) {
 	_init_.Initialize()
 
@@ -1135,6 +1159,17 @@ func (r *jsiiProxy_RecoveryServicesVault) PutIdentity(value *RecoveryServicesVau
 	)
 }
 
+func (r *jsiiProxy_RecoveryServicesVault) PutMonitoring(value *RecoveryServicesVaultMonitoring) {
+	if err := r.validatePutMonitoringParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putMonitoring",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RecoveryServicesVault) PutTimeouts(value *RecoveryServicesVaultTimeouts) {
 	if err := r.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1190,6 +1225,14 @@ func (r *jsiiProxy_RecoveryServicesVault) ResetImmutability() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetImmutability",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RecoveryServicesVault) ResetMonitoring() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMonitoring",
 		nil, // no parameters
 	)
 }

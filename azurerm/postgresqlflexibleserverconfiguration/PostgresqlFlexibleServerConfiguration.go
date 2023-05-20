@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/postgresql_flexible_server_configuration azurerm_postgresql_flexible_server_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/postgresql_flexible_server_configuration azurerm_postgresql_flexible_server_configuration}.
 type PostgresqlFlexibleServerConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_PostgresqlFlexibleServerConfiguration) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/postgresql_flexible_server_configuration azurerm_postgresql_flexible_server_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/postgresql_flexible_server_configuration azurerm_postgresql_flexible_server_configuration} Resource.
 func NewPostgresqlFlexibleServerConfiguration(scope constructs.Construct, id *string, config *PostgresqlFlexibleServerConfigurationConfig) PostgresqlFlexibleServerConfiguration {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewPostgresqlFlexibleServerConfiguration(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/postgresql_flexible_server_configuration azurerm_postgresql_flexible_server_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/postgresql_flexible_server_configuration azurerm_postgresql_flexible_server_configuration} Resource.
 func NewPostgresqlFlexibleServerConfiguration_Override(p PostgresqlFlexibleServerConfiguration, scope constructs.Construct, id *string, config *PostgresqlFlexibleServerConfigurationConfig) {
 	_init_.Initialize()
 

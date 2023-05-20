@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/monitor_data_collection_rule azurerm_monitor_data_collection_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/monitor_data_collection_rule azurerm_monitor_data_collection_rule}.
 type MonitorDataCollectionRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -604,7 +604,7 @@ func (j *jsiiProxy_MonitorDataCollectionRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/monitor_data_collection_rule azurerm_monitor_data_collection_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/monitor_data_collection_rule azurerm_monitor_data_collection_rule} Resource.
 func NewMonitorDataCollectionRule(scope constructs.Construct, id *string, config *MonitorDataCollectionRuleConfig) MonitorDataCollectionRule {
 	_init_.Initialize()
 
@@ -622,7 +622,7 @@ func NewMonitorDataCollectionRule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/resources/monitor_data_collection_rule azurerm_monitor_data_collection_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/monitor_data_collection_rule azurerm_monitor_data_collection_rule} Resource.
 func NewMonitorDataCollectionRule_Override(m MonitorDataCollectionRule, scope constructs.Construct, id *string, config *MonitorDataCollectionRuleConfig) {
 	_init_.Initialize()
 

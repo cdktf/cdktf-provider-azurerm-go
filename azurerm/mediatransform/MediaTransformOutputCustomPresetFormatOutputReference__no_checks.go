@@ -44,7 +44,15 @@ func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) valida
 	return nil
 }
 
+func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) validatePutJpgParameters(value *MediaTransformOutputCustomPresetFormatJpg) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) validatePutMp4Parameters(value *MediaTransformOutputCustomPresetFormatMp4) error {
+	return nil
+}
+
+func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatOutputReference) validatePutPngParameters(value *MediaTransformOutputCustomPresetFormatPng) error {
 	return nil
 }
 

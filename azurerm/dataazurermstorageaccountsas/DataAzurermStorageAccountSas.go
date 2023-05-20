@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/data-sources/storage_account_sas azurerm_storage_account_sas}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/data-sources/storage_account_sas azurerm_storage_account_sas}.
 type DataAzurermStorageAccountSas interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -503,7 +503,7 @@ func (j *jsiiProxy_DataAzurermStorageAccountSas) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/data-sources/storage_account_sas azurerm_storage_account_sas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/data-sources/storage_account_sas azurerm_storage_account_sas} Data Source.
 func NewDataAzurermStorageAccountSas(scope constructs.Construct, id *string, config *DataAzurermStorageAccountSasConfig) DataAzurermStorageAccountSas {
 	_init_.Initialize()
 
@@ -521,7 +521,7 @@ func NewDataAzurermStorageAccountSas(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/data-sources/storage_account_sas azurerm_storage_account_sas} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/data-sources/storage_account_sas azurerm_storage_account_sas} Data Source.
 func NewDataAzurermStorageAccountSas_Override(d DataAzurermStorageAccountSas, scope constructs.Construct, id *string, config *DataAzurermStorageAccountSasConfig) {
 	_init_.Initialize()
 

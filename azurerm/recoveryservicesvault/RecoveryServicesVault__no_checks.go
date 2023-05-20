@@ -60,6 +60,10 @@ func (r *jsiiProxy_RecoveryServicesVault) validatePutIdentityParameters(value *R
 	return nil
 }
 
+func (r *jsiiProxy_RecoveryServicesVault) validatePutMonitoringParameters(value *RecoveryServicesVaultMonitoring) error {
+	return nil
+}
+
 func (r *jsiiProxy_RecoveryServicesVault) validatePutTimeoutsParameters(value *RecoveryServicesVaultTimeouts) error {
 	return nil
 }

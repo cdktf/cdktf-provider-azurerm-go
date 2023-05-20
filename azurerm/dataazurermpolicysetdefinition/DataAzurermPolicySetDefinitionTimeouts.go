@@ -2,7 +2,7 @@ package dataazurermpolicysetdefinition
 
 
 type DataAzurermPolicySetDefinitionTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.56.0/docs/data-sources/policy_set_definition#read DataAzurermPolicySetDefinition#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/data-sources/policy_set_definition#read DataAzurermPolicySetDefinition#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

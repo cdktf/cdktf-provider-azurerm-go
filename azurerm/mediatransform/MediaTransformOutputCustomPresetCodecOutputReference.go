@@ -41,6 +41,10 @@ type MediaTransformOutputCustomPresetCodecOutputReference interface {
 	H265VideoInput() *MediaTransformOutputCustomPresetCodecH265Video
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	JpgImage() MediaTransformOutputCustomPresetCodecJpgImageOutputReference
+	JpgImageInput() *MediaTransformOutputCustomPresetCodecJpgImage
+	PngImage() MediaTransformOutputCustomPresetCodecPngImageOutputReference
+	PngImageInput() *MediaTransformOutputCustomPresetCodecPngImage
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,12 +83,16 @@ type MediaTransformOutputCustomPresetCodecOutputReference interface {
 	PutDdAudio(value *MediaTransformOutputCustomPresetCodecDdAudio)
 	PutH264Video(value *MediaTransformOutputCustomPresetCodecH264Video)
 	PutH265Video(value *MediaTransformOutputCustomPresetCodecH265Video)
+	PutJpgImage(value *MediaTransformOutputCustomPresetCodecJpgImage)
+	PutPngImage(value *MediaTransformOutputCustomPresetCodecPngImage)
 	ResetAacAudio()
 	ResetCopyAudio()
 	ResetCopyVideo()
 	ResetDdAudio()
 	ResetH264Video()
 	ResetH265Video()
+	ResetJpgImage()
+	ResetPngImage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -265,6 +273,46 @@ func (j *jsiiProxy_MediaTransformOutputCustomPresetCodecOutputReference) Interna
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputCustomPresetCodecOutputReference) JpgImage() MediaTransformOutputCustomPresetCodecJpgImageOutputReference {
+	var returns MediaTransformOutputCustomPresetCodecJpgImageOutputReference
+	_jsii_.Get(
+		j,
+		"jpgImage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputCustomPresetCodecOutputReference) JpgImageInput() *MediaTransformOutputCustomPresetCodecJpgImage {
+	var returns *MediaTransformOutputCustomPresetCodecJpgImage
+	_jsii_.Get(
+		j,
+		"jpgImageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputCustomPresetCodecOutputReference) PngImage() MediaTransformOutputCustomPresetCodecPngImageOutputReference {
+	var returns MediaTransformOutputCustomPresetCodecPngImageOutputReference
+	_jsii_.Get(
+		j,
+		"pngImage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputCustomPresetCodecOutputReference) PngImageInput() *MediaTransformOutputCustomPresetCodecPngImage {
+	var returns *MediaTransformOutputCustomPresetCodecPngImage
+	_jsii_.Get(
+		j,
+		"pngImageInput",
 		&returns,
 	)
 	return returns
@@ -625,6 +673,28 @@ func (m *jsiiProxy_MediaTransformOutputCustomPresetCodecOutputReference) PutH265
 	)
 }
 
+func (m *jsiiProxy_MediaTransformOutputCustomPresetCodecOutputReference) PutJpgImage(value *MediaTransformOutputCustomPresetCodecJpgImage) {
+	if err := m.validatePutJpgImageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putJpgImage",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MediaTransformOutputCustomPresetCodecOutputReference) PutPngImage(value *MediaTransformOutputCustomPresetCodecPngImage) {
+	if err := m.validatePutPngImageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putPngImage",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MediaTransformOutputCustomPresetCodecOutputReference) ResetAacAudio() {
 	_jsii_.InvokeVoid(
 		m,
@@ -669,6 +739,22 @@ func (m *jsiiProxy_MediaTransformOutputCustomPresetCodecOutputReference) ResetH2
 	_jsii_.InvokeVoid(
 		m,
 		"resetH265Video",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaTransformOutputCustomPresetCodecOutputReference) ResetJpgImage() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetJpgImage",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaTransformOutputCustomPresetCodecOutputReference) ResetPngImage() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPngImage",
 		nil, // no parameters
 	)
 }
