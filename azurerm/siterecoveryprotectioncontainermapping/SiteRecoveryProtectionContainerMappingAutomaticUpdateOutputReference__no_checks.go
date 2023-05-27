@@ -48,6 +48,10 @@ func (s *jsiiProxy_SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference) validateSetAuthenticationTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference) validateSetAutomationAccountIdParameters(val *string) error {
 	return nil
 }

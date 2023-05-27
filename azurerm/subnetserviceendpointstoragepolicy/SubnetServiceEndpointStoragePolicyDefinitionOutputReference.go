@@ -30,11 +30,14 @@ type SubnetServiceEndpointStoragePolicyDefinitionOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *SubnetServiceEndpointStoragePolicyDefinition
-	SetInternalValue(val *SubnetServiceEndpointStoragePolicyDefinition)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Service() *string
+	SetService(val *string)
+	ServiceInput() *string
 	ServiceResources() *[]*string
 	SetServiceResources(val *[]*string)
 	ServiceResourcesInput() *[]*string
@@ -71,6 +74,7 @@ type SubnetServiceEndpointStoragePolicyDefinitionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDescription()
+	ResetService()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -146,8 +150,8 @@ func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) InternalValue() *SubnetServiceEndpointStoragePolicyDefinition {
-	var returns *SubnetServiceEndpointStoragePolicyDefinition
+func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -171,6 +175,26 @@ func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) 
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) Service() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"service",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) ServiceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceInput",
 		&returns,
 	)
 	return returns
@@ -217,29 +241,29 @@ func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) 
 }
 
 
-func NewSubnetServiceEndpointStoragePolicyDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SubnetServiceEndpointStoragePolicyDefinitionOutputReference {
+func NewSubnetServiceEndpointStoragePolicyDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SubnetServiceEndpointStoragePolicyDefinitionOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewSubnetServiceEndpointStoragePolicyDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewSubnetServiceEndpointStoragePolicyDefinitionOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.subnetServiceEndpointStoragePolicy.SubnetServiceEndpointStoragePolicyDefinitionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewSubnetServiceEndpointStoragePolicyDefinitionOutputReference_Override(s SubnetServiceEndpointStoragePolicyDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSubnetServiceEndpointStoragePolicyDefinitionOutputReference_Override(s SubnetServiceEndpointStoragePolicyDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.subnetServiceEndpointStoragePolicy.SubnetServiceEndpointStoragePolicyDefinitionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -277,7 +301,7 @@ func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference)SetInternalValue(val *SubnetServiceEndpointStoragePolicyDefinition) {
+func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,6 +319,17 @@ func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference)S
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference)SetService(val *string) {
+	if err := j.validateSetServiceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"service",
 		val,
 	)
 }
@@ -522,6 +557,14 @@ func (s *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) 
 	_jsii_.InvokeVoid(
 		s,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) ResetService() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetService",
 		nil, // no parameters
 	)
 }

@@ -60,11 +60,15 @@ func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) validateSetInternalValueParameters(val *SubnetServiceEndpointStoragePolicyDefinition) error {
+func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) validateSetServiceParameters(val *string) error {
 	return nil
 }
 
@@ -80,7 +84,7 @@ func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) 
 	return nil
 }
 
-func validateNewSubnetServiceEndpointStoragePolicyDefinitionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSubnetServiceEndpointStoragePolicyDefinitionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

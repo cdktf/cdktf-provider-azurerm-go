@@ -27,6 +27,9 @@ type MediaTransformOutputCustomPresetOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExperimentalOptions() *map[string]*string
+	SetExperimentalOptions(val *map[string]*string)
+	ExperimentalOptionsInput() *map[string]*string
 	Filter() MediaTransformOutputCustomPresetFilterOutputReference
 	FilterInput() *MediaTransformOutputCustomPresetFilter
 	Format() MediaTransformOutputCustomPresetFormatList
@@ -70,6 +73,7 @@ type MediaTransformOutputCustomPresetOutputReference interface {
 	PutCodec(value interface{})
 	PutFilter(value *MediaTransformOutputCustomPresetFilter)
 	PutFormat(value interface{})
+	ResetExperimentalOptions()
 	ResetFilter()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -131,6 +135,26 @@ func (j *jsiiProxy_MediaTransformOutputCustomPresetOutputReference) CreationStac
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputCustomPresetOutputReference) ExperimentalOptions() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"experimentalOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaTransformOutputCustomPresetOutputReference) ExperimentalOptionsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"experimentalOptionsInput",
 		&returns,
 	)
 	return returns
@@ -262,6 +286,17 @@ func (j *jsiiProxy_MediaTransformOutputCustomPresetOutputReference)SetComplexObj
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MediaTransformOutputCustomPresetOutputReference)SetExperimentalOptions(val *map[string]*string) {
+	if err := j.validateSetExperimentalOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"experimentalOptions",
 		val,
 	)
 }
@@ -515,6 +550,14 @@ func (m *jsiiProxy_MediaTransformOutputCustomPresetOutputReference) PutFormat(va
 		m,
 		"putFormat",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MediaTransformOutputCustomPresetOutputReference) ResetExperimentalOptions() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetExperimentalOptions",
+		nil, // no parameters
 	)
 }
 

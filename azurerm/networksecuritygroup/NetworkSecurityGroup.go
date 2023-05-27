@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/network_security_group azurerm_network_security_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/network_security_group azurerm_network_security_group}.
 type NetworkSecurityGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_NetworkSecurityGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/network_security_group azurerm_network_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/network_security_group azurerm_network_security_group} Resource.
 func NewNetworkSecurityGroup(scope constructs.Construct, id *string, config *NetworkSecurityGroupConfig) NetworkSecurityGroup {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewNetworkSecurityGroup(scope constructs.Construct, id *string, config *Net
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/network_security_group azurerm_network_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/network_security_group azurerm_network_security_group} Resource.
 func NewNetworkSecurityGroup_Override(n NetworkSecurityGroup, scope constructs.Construct, id *string, config *NetworkSecurityGroupConfig) {
 	_init_.Initialize()
 

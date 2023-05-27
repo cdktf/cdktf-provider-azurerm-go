@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/iot_time_series_insights_event_source_iothub azurerm_iot_time_series_insights_event_source_iothub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/iot_time_series_insights_event_source_iothub azurerm_iot_time_series_insights_event_source_iothub}.
 type IotTimeSeriesInsightsEventSourceIothub interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -542,7 +542,7 @@ func (j *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub) TimestampPropertyName
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/iot_time_series_insights_event_source_iothub azurerm_iot_time_series_insights_event_source_iothub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/iot_time_series_insights_event_source_iothub azurerm_iot_time_series_insights_event_source_iothub} Resource.
 func NewIotTimeSeriesInsightsEventSourceIothub(scope constructs.Construct, id *string, config *IotTimeSeriesInsightsEventSourceIothubConfig) IotTimeSeriesInsightsEventSourceIothub {
 	_init_.Initialize()
 
@@ -560,7 +560,7 @@ func NewIotTimeSeriesInsightsEventSourceIothub(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/iot_time_series_insights_event_source_iothub azurerm_iot_time_series_insights_event_source_iothub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/iot_time_series_insights_event_source_iothub azurerm_iot_time_series_insights_event_source_iothub} Resource.
 func NewIotTimeSeriesInsightsEventSourceIothub_Override(i IotTimeSeriesInsightsEventSourceIothub, scope constructs.Construct, id *string, config *IotTimeSeriesInsightsEventSourceIothubConfig) {
 	_init_.Initialize()
 

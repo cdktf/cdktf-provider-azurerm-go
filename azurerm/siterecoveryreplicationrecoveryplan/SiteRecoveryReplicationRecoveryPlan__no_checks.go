@@ -52,6 +52,10 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validateOverrideLogicalI
 	return nil
 }
 
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutAzureToAzureSettingsParameters(value *SiteRecoveryReplicationRecoveryPlanAzureToAzureSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutRecoveryGroupParameters(value interface{}) error {
 	return nil
 }

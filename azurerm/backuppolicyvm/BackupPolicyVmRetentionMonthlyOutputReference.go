@@ -28,8 +28,14 @@ type BackupPolicyVmRetentionMonthlyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Days() *[]*float64
+	SetDays(val *[]*float64)
+	DaysInput() *[]*float64
 	// Experimental.
 	Fqn() *string
+	IncludeLastDays() interface{}
+	SetIncludeLastDays(val interface{})
+	IncludeLastDaysInput() interface{}
 	InternalValue() *BackupPolicyVmRetentionMonthly
 	SetInternalValue(val *BackupPolicyVmRetentionMonthly)
 	// Experimental.
@@ -70,6 +76,10 @@ type BackupPolicyVmRetentionMonthlyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDays()
+	ResetIncludeLastDays()
+	ResetWeekdays()
+	ResetWeeks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -135,11 +145,51 @@ func (j *jsiiProxy_BackupPolicyVmRetentionMonthlyOutputReference) CreationStack(
 	return returns
 }
 
+func (j *jsiiProxy_BackupPolicyVmRetentionMonthlyOutputReference) Days() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"days",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupPolicyVmRetentionMonthlyOutputReference) DaysInput() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"daysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BackupPolicyVmRetentionMonthlyOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupPolicyVmRetentionMonthlyOutputReference) IncludeLastDays() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeLastDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupPolicyVmRetentionMonthlyOutputReference) IncludeLastDaysInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeLastDaysInput",
 		&returns,
 	)
 	return returns
@@ -272,6 +322,28 @@ func (j *jsiiProxy_BackupPolicyVmRetentionMonthlyOutputReference)SetCount(val *f
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupPolicyVmRetentionMonthlyOutputReference)SetDays(val *[]*float64) {
+	if err := j.validateSetDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"days",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupPolicyVmRetentionMonthlyOutputReference)SetIncludeLastDays(val interface{}) {
+	if err := j.validateSetIncludeLastDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeLastDays",
 		val,
 	)
 }
@@ -515,6 +587,38 @@ func (b *jsiiProxy_BackupPolicyVmRetentionMonthlyOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BackupPolicyVmRetentionMonthlyOutputReference) ResetDays() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDays",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupPolicyVmRetentionMonthlyOutputReference) ResetIncludeLastDays() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetIncludeLastDays",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupPolicyVmRetentionMonthlyOutputReference) ResetWeekdays() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetWeekdays",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupPolicyVmRetentionMonthlyOutputReference) ResetWeeks() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetWeeks",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BackupPolicyVmRetentionMonthlyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

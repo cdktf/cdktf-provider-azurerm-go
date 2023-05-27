@@ -10,6 +10,9 @@ import (
 
 type SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference interface {
 	cdktf.ComplexObject
+	AuthenticationType() *string
+	SetAuthenticationType(val *string)
+	AuthenticationTypeInput() *string
 	AutomationAccountId() *string
 	SetAutomationAccountId(val *string)
 	AutomationAccountIdInput() *string
@@ -67,6 +70,7 @@ type SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAuthenticationType()
 	ResetAutomationAccountId()
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
@@ -82,6 +86,26 @@ type SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference interf
 // The jsii proxy struct for SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference
 type jsiiProxy_SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference) AuthenticationType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference) AuthenticationTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationTypeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference) AutomationAccountId() *string {
@@ -219,6 +243,17 @@ func NewSiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference_Ove
 		"@cdktf/provider-azurerm.siteRecoveryProtectionContainerMapping.SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference)SetAuthenticationType(val *string) {
+	if err := j.validateSetAuthenticationTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authenticationType",
+		val,
 	)
 }
 
@@ -483,6 +518,14 @@ func (s *jsiiProxy_SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputRe
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference) ResetAuthenticationType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAuthenticationType",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference) ResetAutomationAccountId() {

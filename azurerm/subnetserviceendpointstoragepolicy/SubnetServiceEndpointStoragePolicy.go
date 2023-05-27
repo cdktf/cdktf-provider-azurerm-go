@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/subnet_service_endpoint_storage_policy azurerm_subnet_service_endpoint_storage_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/subnet_service_endpoint_storage_policy azurerm_subnet_service_endpoint_storage_policy}.
 type SubnetServiceEndpointStoragePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,8 +24,8 @@ type SubnetServiceEndpointStoragePolicy interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	Definition() SubnetServiceEndpointStoragePolicyDefinitionOutputReference
-	DefinitionInput() *SubnetServiceEndpointStoragePolicyDefinition
+	Definition() SubnetServiceEndpointStoragePolicyDefinitionList
+	DefinitionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -102,7 +102,7 @@ type SubnetServiceEndpointStoragePolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutDefinition(value *SubnetServiceEndpointStoragePolicyDefinition)
+	PutDefinition(value interface{})
 	PutTimeouts(value *SubnetServiceEndpointStoragePolicyTimeouts)
 	ResetDefinition()
 	ResetId()
@@ -166,8 +166,8 @@ func (j *jsiiProxy_SubnetServiceEndpointStoragePolicy) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SubnetServiceEndpointStoragePolicy) Definition() SubnetServiceEndpointStoragePolicyDefinitionOutputReference {
-	var returns SubnetServiceEndpointStoragePolicyDefinitionOutputReference
+func (j *jsiiProxy_SubnetServiceEndpointStoragePolicy) Definition() SubnetServiceEndpointStoragePolicyDefinitionList {
+	var returns SubnetServiceEndpointStoragePolicyDefinitionList
 	_jsii_.Get(
 		j,
 		"definition",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_SubnetServiceEndpointStoragePolicy) Definition() SubnetServic
 	return returns
 }
 
-func (j *jsiiProxy_SubnetServiceEndpointStoragePolicy) DefinitionInput() *SubnetServiceEndpointStoragePolicyDefinition {
-	var returns *SubnetServiceEndpointStoragePolicyDefinition
+func (j *jsiiProxy_SubnetServiceEndpointStoragePolicy) DefinitionInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"definitionInput",
@@ -427,7 +427,7 @@ func (j *jsiiProxy_SubnetServiceEndpointStoragePolicy) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/subnet_service_endpoint_storage_policy azurerm_subnet_service_endpoint_storage_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/subnet_service_endpoint_storage_policy azurerm_subnet_service_endpoint_storage_policy} Resource.
 func NewSubnetServiceEndpointStoragePolicy(scope constructs.Construct, id *string, config *SubnetServiceEndpointStoragePolicyConfig) SubnetServiceEndpointStoragePolicy {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewSubnetServiceEndpointStoragePolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/subnet_service_endpoint_storage_policy azurerm_subnet_service_endpoint_storage_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/subnet_service_endpoint_storage_policy azurerm_subnet_service_endpoint_storage_policy} Resource.
 func NewSubnetServiceEndpointStoragePolicy_Override(s SubnetServiceEndpointStoragePolicy, scope constructs.Construct, id *string, config *SubnetServiceEndpointStoragePolicyConfig) {
 	_init_.Initialize()
 
@@ -845,7 +845,7 @@ func (s *jsiiProxy_SubnetServiceEndpointStoragePolicy) OverrideLogicalId(newLogi
 	)
 }
 
-func (s *jsiiProxy_SubnetServiceEndpointStoragePolicy) PutDefinition(value *SubnetServiceEndpointStoragePolicyDefinition) {
+func (s *jsiiProxy_SubnetServiceEndpointStoragePolicy) PutDefinition(value interface{}) {
 	if err := s.validatePutDefinitionParameters(value); err != nil {
 		panic(err)
 	}

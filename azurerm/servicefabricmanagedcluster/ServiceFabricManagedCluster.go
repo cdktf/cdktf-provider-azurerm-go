@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster}.
 type ServiceFabricManagedCluster interface {
 	cdktf.TerraformResource
 	Authentication() ServiceFabricManagedClusterAuthenticationOutputReference
@@ -712,7 +712,7 @@ func (j *jsiiProxy_ServiceFabricManagedCluster) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster} Resource.
 func NewServiceFabricManagedCluster(scope constructs.Construct, id *string, config *ServiceFabricManagedClusterConfig) ServiceFabricManagedCluster {
 	_init_.Initialize()
 
@@ -730,7 +730,7 @@ func NewServiceFabricManagedCluster(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster} Resource.
 func NewServiceFabricManagedCluster_Override(s ServiceFabricManagedCluster, scope constructs.Construct, id *string, config *ServiceFabricManagedClusterConfig) {
 	_init_.Initialize()
 

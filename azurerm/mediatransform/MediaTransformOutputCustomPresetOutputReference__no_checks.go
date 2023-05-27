@@ -68,6 +68,10 @@ func (j *jsiiProxy_MediaTransformOutputCustomPresetOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_MediaTransformOutputCustomPresetOutputReference) validateSetExperimentalOptionsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaTransformOutputCustomPresetOutputReference) validateSetInternalValueParameters(val *MediaTransformOutputCustomPreset) error {
 	return nil
 }

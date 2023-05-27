@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/servicebus_topic azurerm_servicebus_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/servicebus_topic azurerm_servicebus_topic}.
 type ServicebusTopic interface {
 	cdktf.TerraformResource
 	AutoDeleteOnIdle() *string
@@ -620,7 +620,7 @@ func (j *jsiiProxy_ServicebusTopic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/servicebus_topic azurerm_servicebus_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/servicebus_topic azurerm_servicebus_topic} Resource.
 func NewServicebusTopic(scope constructs.Construct, id *string, config *ServicebusTopicConfig) ServicebusTopic {
 	_init_.Initialize()
 
@@ -638,7 +638,7 @@ func NewServicebusTopic(scope constructs.Construct, id *string, config *Serviceb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/servicebus_topic azurerm_servicebus_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/servicebus_topic azurerm_servicebus_topic} Resource.
 func NewServicebusTopic_Override(s ServicebusTopic, scope constructs.Construct, id *string, config *ServicebusTopicConfig) {
 	_init_.Initialize()
 

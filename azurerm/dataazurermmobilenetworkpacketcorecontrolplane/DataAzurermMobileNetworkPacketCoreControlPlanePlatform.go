@@ -1,0 +1,6 @@
+package dataazurermmobilenetworkpacketcorecontrolplane
+
+
+type DataAzurermMobileNetworkPacketCoreControlPlanePlatform struct {
+}
+

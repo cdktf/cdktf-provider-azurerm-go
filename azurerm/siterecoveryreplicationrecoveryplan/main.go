@@ -12,6 +12,8 @@ func init() {
 		reflect.TypeOf((*SiteRecoveryReplicationRecoveryPlan)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "azureToAzureSettings", GoGetter: "AzureToAzureSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "azureToAzureSettingsInput", GoGetter: "AzureToAzureSettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
@@ -39,6 +41,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putAzureToAzureSettings", GoMethod: "PutAzureToAzureSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putRecoveryGroup", GoMethod: "PutRecoveryGroup"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -46,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "recoveryGroupInput", GoGetter: "RecoveryGroupInput"},
 			_jsii_.MemberProperty{JsiiProperty: "recoveryVaultId", GoGetter: "RecoveryVaultId"},
 			_jsii_.MemberProperty{JsiiProperty: "recoveryVaultIdInput", GoGetter: "RecoveryVaultIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAzureToAzureSettings", GoMethod: "ResetAzureToAzureSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRecoveryGroup", GoMethod: "ResetRecoveryGroup"},
@@ -67,6 +71,54 @@ func init() {
 		func() interface{} {
 			j := jsiiProxy_SiteRecoveryReplicationRecoveryPlan{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.siteRecoveryReplicationRecoveryPlan.SiteRecoveryReplicationRecoveryPlanAzureToAzureSettings",
+		reflect.TypeOf((*SiteRecoveryReplicationRecoveryPlanAzureToAzureSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.siteRecoveryReplicationRecoveryPlan.SiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsOutputReference",
+		reflect.TypeOf((*SiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "primaryEdgeZone", GoGetter: "PrimaryEdgeZone"},
+			_jsii_.MemberProperty{JsiiProperty: "primaryEdgeZoneInput", GoGetter: "PrimaryEdgeZoneInput"},
+			_jsii_.MemberProperty{JsiiProperty: "primaryZone", GoGetter: "PrimaryZone"},
+			_jsii_.MemberProperty{JsiiProperty: "primaryZoneInput", GoGetter: "PrimaryZoneInput"},
+			_jsii_.MemberProperty{JsiiProperty: "recoveryEdgeZone", GoGetter: "RecoveryEdgeZone"},
+			_jsii_.MemberProperty{JsiiProperty: "recoveryEdgeZoneInput", GoGetter: "RecoveryEdgeZoneInput"},
+			_jsii_.MemberProperty{JsiiProperty: "recoveryZone", GoGetter: "RecoveryZone"},
+			_jsii_.MemberProperty{JsiiProperty: "recoveryZoneInput", GoGetter: "RecoveryZoneInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrimaryEdgeZone", GoMethod: "ResetPrimaryEdgeZone"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrimaryZone", GoMethod: "ResetPrimaryZone"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRecoveryEdgeZone", GoMethod: "ResetRecoveryEdgeZone"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRecoveryZone", GoMethod: "ResetRecoveryZone"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)

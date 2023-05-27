@@ -257,6 +257,14 @@ func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validateSetLe
 	return nil
 }
 
+func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validateSetLevelsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validateSetOperationNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -297,7 +305,23 @@ func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validateSetRe
 	return nil
 }
 
+func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validateSetResourceGroupsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validateSetResourceIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validateSetResourceIdsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -313,7 +337,23 @@ func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validateSetRe
 	return nil
 }
 
+func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validateSetResourceProvidersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validateSetResourceTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validateSetResourceTypesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -329,7 +369,23 @@ func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validateSetSt
 	return nil
 }
 
+func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validateSetStatusesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validateSetSubStatusParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validateSetSubStatusesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

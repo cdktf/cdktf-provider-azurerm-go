@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/mysql_firewall_rule azurerm_mysql_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/mysql_firewall_rule azurerm_mysql_firewall_rule}.
 type MysqlFirewallRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_MysqlFirewallRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/mysql_firewall_rule azurerm_mysql_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/mysql_firewall_rule azurerm_mysql_firewall_rule} Resource.
 func NewMysqlFirewallRule(scope constructs.Construct, id *string, config *MysqlFirewallRuleConfig) MysqlFirewallRule {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewMysqlFirewallRule(scope constructs.Construct, id *string, config *MysqlF
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/mysql_firewall_rule azurerm_mysql_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/mysql_firewall_rule azurerm_mysql_firewall_rule} Resource.
 func NewMysqlFirewallRule_Override(m MysqlFirewallRule, scope constructs.Construct, id *string, config *MysqlFirewallRuleConfig) {
 	_init_.Initialize()
 

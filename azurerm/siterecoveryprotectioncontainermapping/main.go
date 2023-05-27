@@ -84,6 +84,8 @@ func init() {
 		"@cdktf/provider-azurerm.siteRecoveryProtectionContainerMapping.SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference",
 		reflect.TypeOf((*SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "authenticationType", GoGetter: "AuthenticationType"},
+			_jsii_.MemberProperty{JsiiProperty: "authenticationTypeInput", GoGetter: "AuthenticationTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "automationAccountId", GoGetter: "AutomationAccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "automationAccountIdInput", GoGetter: "AutomationAccountIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -105,6 +107,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthenticationType", GoMethod: "ResetAuthenticationType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomationAccountId", GoMethod: "ResetAutomationAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/eventgrid_system_topic_event_subscription azurerm_eventgrid_system_topic_event_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/eventgrid_system_topic_event_subscription azurerm_eventgrid_system_topic_event_subscription}.
 type EventgridSystemTopicEventSubscription interface {
 	cdktf.TerraformResource
 	AdvancedFilter() EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference
@@ -835,7 +835,7 @@ func (j *jsiiProxy_EventgridSystemTopicEventSubscription) WebhookEndpointInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/eventgrid_system_topic_event_subscription azurerm_eventgrid_system_topic_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/eventgrid_system_topic_event_subscription azurerm_eventgrid_system_topic_event_subscription} Resource.
 func NewEventgridSystemTopicEventSubscription(scope constructs.Construct, id *string, config *EventgridSystemTopicEventSubscriptionConfig) EventgridSystemTopicEventSubscription {
 	_init_.Initialize()
 
@@ -853,7 +853,7 @@ func NewEventgridSystemTopicEventSubscription(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/eventgrid_system_topic_event_subscription azurerm_eventgrid_system_topic_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/eventgrid_system_topic_event_subscription azurerm_eventgrid_system_topic_event_subscription} Resource.
 func NewEventgridSystemTopicEventSubscription_Override(e EventgridSystemTopicEventSubscription, scope constructs.Construct, id *string, config *EventgridSystemTopicEventSubscriptionConfig) {
 	_init_.Initialize()
 

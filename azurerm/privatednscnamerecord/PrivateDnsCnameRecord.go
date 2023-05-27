@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/private_dns_cname_record azurerm_private_dns_cname_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/private_dns_cname_record azurerm_private_dns_cname_record}.
 type PrivateDnsCnameRecord interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -460,7 +460,7 @@ func (j *jsiiProxy_PrivateDnsCnameRecord) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/private_dns_cname_record azurerm_private_dns_cname_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/private_dns_cname_record azurerm_private_dns_cname_record} Resource.
 func NewPrivateDnsCnameRecord(scope constructs.Construct, id *string, config *PrivateDnsCnameRecordConfig) PrivateDnsCnameRecord {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewPrivateDnsCnameRecord(scope constructs.Construct, id *string, config *Pr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/private_dns_cname_record azurerm_private_dns_cname_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/private_dns_cname_record azurerm_private_dns_cname_record} Resource.
 func NewPrivateDnsCnameRecord_Override(p PrivateDnsCnameRecord, scope constructs.Construct, id *string, config *PrivateDnsCnameRecordConfig) {
 	_init_.Initialize()
 

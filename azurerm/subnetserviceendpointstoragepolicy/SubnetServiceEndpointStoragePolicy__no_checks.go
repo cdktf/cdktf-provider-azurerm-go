@@ -52,7 +52,7 @@ func (s *jsiiProxy_SubnetServiceEndpointStoragePolicy) validateOverrideLogicalId
 	return nil
 }
 
-func (s *jsiiProxy_SubnetServiceEndpointStoragePolicy) validatePutDefinitionParameters(value *SubnetServiceEndpointStoragePolicyDefinition) error {
+func (s *jsiiProxy_SubnetServiceEndpointStoragePolicy) validatePutDefinitionParameters(value interface{}) error {
 	return nil
 }
 

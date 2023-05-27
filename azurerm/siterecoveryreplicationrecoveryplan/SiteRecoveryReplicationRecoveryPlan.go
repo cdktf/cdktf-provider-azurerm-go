@@ -9,9 +9,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan}.
 type SiteRecoveryReplicationRecoveryPlan interface {
 	cdktf.TerraformResource
+	AzureToAzureSettings() SiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsOutputReference
+	AzureToAzureSettingsInput() *SiteRecoveryReplicationRecoveryPlanAzureToAzureSettings
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -102,8 +104,10 @@ type SiteRecoveryReplicationRecoveryPlan interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAzureToAzureSettings(value *SiteRecoveryReplicationRecoveryPlanAzureToAzureSettings)
 	PutRecoveryGroup(value interface{})
 	PutTimeouts(value *SiteRecoveryReplicationRecoveryPlanTimeouts)
+	ResetAzureToAzureSettings()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -123,6 +127,26 @@ type SiteRecoveryReplicationRecoveryPlan interface {
 // The jsii proxy struct for SiteRecoveryReplicationRecoveryPlan
 type jsiiProxy_SiteRecoveryReplicationRecoveryPlan struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) AzureToAzureSettings() SiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsOutputReference {
+	var returns SiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"azureToAzureSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) AzureToAzureSettingsInput() *SiteRecoveryReplicationRecoveryPlanAzureToAzureSettings {
+	var returns *SiteRecoveryReplicationRecoveryPlanAzureToAzureSettings
+	_jsii_.Get(
+		j,
+		"azureToAzureSettingsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) CdktfStack() cdktf.TerraformStack {
@@ -426,7 +450,7 @@ func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Resource.
 func NewSiteRecoveryReplicationRecoveryPlan(scope constructs.Construct, id *string, config *SiteRecoveryReplicationRecoveryPlanConfig) SiteRecoveryReplicationRecoveryPlan {
 	_init_.Initialize()
 
@@ -444,7 +468,7 @@ func NewSiteRecoveryReplicationRecoveryPlan(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Resource.
 func NewSiteRecoveryReplicationRecoveryPlan_Override(s SiteRecoveryReplicationRecoveryPlan, scope constructs.Construct, id *string, config *SiteRecoveryReplicationRecoveryPlanConfig) {
 	_init_.Initialize()
 
@@ -844,6 +868,17 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) OverrideLogicalId(newLog
 	)
 }
 
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) PutAzureToAzureSettings(value *SiteRecoveryReplicationRecoveryPlanAzureToAzureSettings) {
+	if err := s.validatePutAzureToAzureSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAzureToAzureSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) PutRecoveryGroup(value interface{}) {
 	if err := s.validatePutRecoveryGroupParameters(value); err != nil {
 		panic(err)
@@ -863,6 +898,14 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) PutTimeouts(value *SiteR
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) ResetAzureToAzureSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAzureToAzureSettings",
+		nil, // no parameters
 	)
 }
 

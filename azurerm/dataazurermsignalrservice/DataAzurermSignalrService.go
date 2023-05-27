@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/data-sources/signalr_service azurerm_signalr_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/data-sources/signalr_service azurerm_signalr_service}.
 type DataAzurermSignalrService interface {
 	cdktf.TerraformDataSource
 	AadAuthEnabled() cdktf.IResolvable
@@ -493,7 +493,7 @@ func (j *jsiiProxy_DataAzurermSignalrService) TlsClientCertEnabled() cdktf.IReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/data-sources/signalr_service azurerm_signalr_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/data-sources/signalr_service azurerm_signalr_service} Data Source.
 func NewDataAzurermSignalrService(scope constructs.Construct, id *string, config *DataAzurermSignalrServiceConfig) DataAzurermSignalrService {
 	_init_.Initialize()
 
@@ -511,7 +511,7 @@ func NewDataAzurermSignalrService(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/data-sources/signalr_service azurerm_signalr_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/data-sources/signalr_service azurerm_signalr_service} Data Source.
 func NewDataAzurermSignalrService_Override(d DataAzurermSignalrService, scope constructs.Construct, id *string, config *DataAzurermSignalrServiceConfig) {
 	_init_.Initialize()
 

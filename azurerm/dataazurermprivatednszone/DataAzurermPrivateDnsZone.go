@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/data-sources/private_dns_zone azurerm_private_dns_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/data-sources/private_dns_zone azurerm_private_dns_zone}.
 type DataAzurermPrivateDnsZone interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -397,7 +397,7 @@ func (j *jsiiProxy_DataAzurermPrivateDnsZone) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/data-sources/private_dns_zone azurerm_private_dns_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/data-sources/private_dns_zone azurerm_private_dns_zone} Data Source.
 func NewDataAzurermPrivateDnsZone(scope constructs.Construct, id *string, config *DataAzurermPrivateDnsZoneConfig) DataAzurermPrivateDnsZone {
 	_init_.Initialize()
 
@@ -415,7 +415,7 @@ func NewDataAzurermPrivateDnsZone(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/data-sources/private_dns_zone azurerm_private_dns_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/data-sources/private_dns_zone azurerm_private_dns_zone} Data Source.
 func NewDataAzurermPrivateDnsZone_Override(d DataAzurermPrivateDnsZone, scope constructs.Construct, id *string, config *DataAzurermPrivateDnsZoneConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/data-sources/shared_image_gallery azurerm_shared_image_gallery}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/data-sources/shared_image_gallery azurerm_shared_image_gallery}.
 type DataAzurermSharedImageGallery interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -372,7 +372,7 @@ func (j *jsiiProxy_DataAzurermSharedImageGallery) UniqueName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/data-sources/shared_image_gallery azurerm_shared_image_gallery} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/data-sources/shared_image_gallery azurerm_shared_image_gallery} Data Source.
 func NewDataAzurermSharedImageGallery(scope constructs.Construct, id *string, config *DataAzurermSharedImageGalleryConfig) DataAzurermSharedImageGallery {
 	_init_.Initialize()
 
@@ -390,7 +390,7 @@ func NewDataAzurermSharedImageGallery(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.57.0/docs/data-sources/shared_image_gallery azurerm_shared_image_gallery} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/data-sources/shared_image_gallery azurerm_shared_image_gallery} Data Source.
 func NewDataAzurermSharedImageGallery_Override(d DataAzurermSharedImageGallery, scope constructs.Construct, id *string, config *DataAzurermSharedImageGalleryConfig) {
 	_init_.Initialize()
 

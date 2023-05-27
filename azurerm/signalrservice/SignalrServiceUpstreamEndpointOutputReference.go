@@ -49,6 +49,9 @@ type SignalrServiceUpstreamEndpointOutputReference interface {
 	UrlTemplate() *string
 	SetUrlTemplate(val *string)
 	UrlTemplateInput() *string
+	UserAssignedIdentityId() *string
+	SetUserAssignedIdentityId(val *string)
+	UserAssignedIdentityIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,6 +76,7 @@ type SignalrServiceUpstreamEndpointOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetUserAssignedIdentityId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -238,6 +242,26 @@ func (j *jsiiProxy_SignalrServiceUpstreamEndpointOutputReference) UrlTemplateInp
 	return returns
 }
 
+func (j *jsiiProxy_SignalrServiceUpstreamEndpointOutputReference) UserAssignedIdentityId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userAssignedIdentityId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SignalrServiceUpstreamEndpointOutputReference) UserAssignedIdentityIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userAssignedIdentityIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewSignalrServiceUpstreamEndpointOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SignalrServiceUpstreamEndpointOutputReference {
 	_init_.Initialize()
@@ -361,6 +385,17 @@ func (j *jsiiProxy_SignalrServiceUpstreamEndpointOutputReference)SetUrlTemplate(
 	_jsii_.Set(
 		j,
 		"urlTemplate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SignalrServiceUpstreamEndpointOutputReference)SetUserAssignedIdentityId(val *string) {
+	if err := j.validateSetUserAssignedIdentityIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userAssignedIdentityId",
 		val,
 	)
 }
@@ -549,6 +584,14 @@ func (s *jsiiProxy_SignalrServiceUpstreamEndpointOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SignalrServiceUpstreamEndpointOutputReference) ResetUserAssignedIdentityId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUserAssignedIdentityId",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SignalrServiceUpstreamEndpointOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

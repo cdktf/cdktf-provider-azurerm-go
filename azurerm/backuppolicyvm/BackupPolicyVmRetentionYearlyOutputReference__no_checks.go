@@ -60,6 +60,14 @@ func (j *jsiiProxy_BackupPolicyVmRetentionYearlyOutputReference) validateSetCoun
 	return nil
 }
 
+func (j *jsiiProxy_BackupPolicyVmRetentionYearlyOutputReference) validateSetDaysParameters(val *[]*float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_BackupPolicyVmRetentionYearlyOutputReference) validateSetIncludeLastDaysParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupPolicyVmRetentionYearlyOutputReference) validateSetInternalValueParameters(val *BackupPolicyVmRetentionYearly) error {
 	return nil
 }
