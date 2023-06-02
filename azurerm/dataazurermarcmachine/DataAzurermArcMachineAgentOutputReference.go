@@ -25,8 +25,8 @@ type DataAzurermArcMachineAgentOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	ExtensionsAllowList() DataAzurermArcMachineAgentExtensionsAllowListList
-	ExtensionsBlockList() DataAzurermArcMachineAgentExtensionsBlockListList
+	ExtensionsAllowList() DataAzurermArcMachineAgentExtensionsAllowListStructList
+	ExtensionsBlockList() DataAzurermArcMachineAgentExtensionsBlockListStructList
 	ExtensionsEnabled() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -113,8 +113,8 @@ func (j *jsiiProxy_DataAzurermArcMachineAgentOutputReference) CreationStack() *[
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermArcMachineAgentOutputReference) ExtensionsAllowList() DataAzurermArcMachineAgentExtensionsAllowListList {
-	var returns DataAzurermArcMachineAgentExtensionsAllowListList
+func (j *jsiiProxy_DataAzurermArcMachineAgentOutputReference) ExtensionsAllowList() DataAzurermArcMachineAgentExtensionsAllowListStructList {
+	var returns DataAzurermArcMachineAgentExtensionsAllowListStructList
 	_jsii_.Get(
 		j,
 		"extensionsAllowList",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataAzurermArcMachineAgentOutputReference) ExtensionsAllowLis
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermArcMachineAgentOutputReference) ExtensionsBlockList() DataAzurermArcMachineAgentExtensionsBlockListList {
-	var returns DataAzurermArcMachineAgentExtensionsBlockListList
+func (j *jsiiProxy_DataAzurermArcMachineAgentOutputReference) ExtensionsBlockList() DataAzurermArcMachineAgentExtensionsBlockListStructList {
+	var returns DataAzurermArcMachineAgentExtensionsBlockListStructList
 	_jsii_.Get(
 		j,
 		"extensionsBlockList",

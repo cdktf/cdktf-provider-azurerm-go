@@ -66,7 +66,7 @@ type DataAzurermFirewallPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	ThreatIntelligenceAllowlist() DataAzurermFirewallPolicyThreatIntelligenceAllowlistList
+	ThreatIntelligenceAllowlist() DataAzurermFirewallPolicyThreatIntelligenceAllowlistStructList
 	ThreatIntelligenceMode() *string
 	Timeouts() DataAzurermFirewallPolicyTimeoutsOutputReference
 	TimeoutsInput() interface{}
@@ -386,8 +386,8 @@ func (j *jsiiProxy_DataAzurermFirewallPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermFirewallPolicy) ThreatIntelligenceAllowlist() DataAzurermFirewallPolicyThreatIntelligenceAllowlistList {
-	var returns DataAzurermFirewallPolicyThreatIntelligenceAllowlistList
+func (j *jsiiProxy_DataAzurermFirewallPolicy) ThreatIntelligenceAllowlist() DataAzurermFirewallPolicyThreatIntelligenceAllowlistStructList {
+	var returns DataAzurermFirewallPolicyThreatIntelligenceAllowlistStructList
 	_jsii_.Get(
 		j,
 		"threatIntelligenceAllowlist",

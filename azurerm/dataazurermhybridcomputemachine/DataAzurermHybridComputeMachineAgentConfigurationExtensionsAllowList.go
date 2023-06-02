@@ -1,6 +1,0 @@
-package dataazurermhybridcomputemachine
-
-
-type DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowList struct {
-}
-

@@ -557,12 +557,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-azurerm.firewallPolicy.FirewallPolicyThreatIntelligenceAllowlist",
-		reflect.TypeOf((*FirewallPolicyThreatIntelligenceAllowlist)(nil)).Elem(),
+		"@cdktf/provider-azurerm.firewallPolicy.FirewallPolicyThreatIntelligenceAllowlistStruct",
+		reflect.TypeOf((*FirewallPolicyThreatIntelligenceAllowlistStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.firewallPolicy.FirewallPolicyThreatIntelligenceAllowlistOutputReference",
-		reflect.TypeOf((*FirewallPolicyThreatIntelligenceAllowlistOutputReference)(nil)).Elem(),
+		"@cdktf/provider-azurerm.firewallPolicy.FirewallPolicyThreatIntelligenceAllowlistStructOutputReference",
+		reflect.TypeOf((*FirewallPolicyThreatIntelligenceAllowlistStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -593,7 +593,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_FirewallPolicyThreatIntelligenceAllowlistOutputReference{}
+			j := jsiiProxy_FirewallPolicyThreatIntelligenceAllowlistStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

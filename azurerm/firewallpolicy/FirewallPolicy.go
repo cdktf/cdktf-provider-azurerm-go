@@ -101,8 +101,8 @@ type FirewallPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	ThreatIntelligenceAllowlist() FirewallPolicyThreatIntelligenceAllowlistOutputReference
-	ThreatIntelligenceAllowlistInput() *FirewallPolicyThreatIntelligenceAllowlist
+	ThreatIntelligenceAllowlist() FirewallPolicyThreatIntelligenceAllowlistStructOutputReference
+	ThreatIntelligenceAllowlistInput() *FirewallPolicyThreatIntelligenceAllowlistStruct
 	ThreatIntelligenceMode() *string
 	SetThreatIntelligenceMode(val *string)
 	ThreatIntelligenceModeInput() *string
@@ -140,7 +140,7 @@ type FirewallPolicy interface {
 	PutIdentity(value *FirewallPolicyIdentity)
 	PutInsights(value *FirewallPolicyInsights)
 	PutIntrusionDetection(value *FirewallPolicyIntrusionDetection)
-	PutThreatIntelligenceAllowlist(value *FirewallPolicyThreatIntelligenceAllowlist)
+	PutThreatIntelligenceAllowlist(value *FirewallPolicyThreatIntelligenceAllowlistStruct)
 	PutTimeouts(value *FirewallPolicyTimeouts)
 	PutTlsCertificate(value *FirewallPolicyTlsCertificate)
 	ResetAutoLearnPrivateRangesEnabled()
@@ -667,8 +667,8 @@ func (j *jsiiProxy_FirewallPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FirewallPolicy) ThreatIntelligenceAllowlist() FirewallPolicyThreatIntelligenceAllowlistOutputReference {
-	var returns FirewallPolicyThreatIntelligenceAllowlistOutputReference
+func (j *jsiiProxy_FirewallPolicy) ThreatIntelligenceAllowlist() FirewallPolicyThreatIntelligenceAllowlistStructOutputReference {
+	var returns FirewallPolicyThreatIntelligenceAllowlistStructOutputReference
 	_jsii_.Get(
 		j,
 		"threatIntelligenceAllowlist",
@@ -677,8 +677,8 @@ func (j *jsiiProxy_FirewallPolicy) ThreatIntelligenceAllowlist() FirewallPolicyT
 	return returns
 }
 
-func (j *jsiiProxy_FirewallPolicy) ThreatIntelligenceAllowlistInput() *FirewallPolicyThreatIntelligenceAllowlist {
-	var returns *FirewallPolicyThreatIntelligenceAllowlist
+func (j *jsiiProxy_FirewallPolicy) ThreatIntelligenceAllowlistInput() *FirewallPolicyThreatIntelligenceAllowlistStruct {
+	var returns *FirewallPolicyThreatIntelligenceAllowlistStruct
 	_jsii_.Get(
 		j,
 		"threatIntelligenceAllowlistInput",
@@ -1287,7 +1287,7 @@ func (f *jsiiProxy_FirewallPolicy) PutIntrusionDetection(value *FirewallPolicyIn
 	)
 }
 
-func (f *jsiiProxy_FirewallPolicy) PutThreatIntelligenceAllowlist(value *FirewallPolicyThreatIntelligenceAllowlist) {
+func (f *jsiiProxy_FirewallPolicy) PutThreatIntelligenceAllowlist(value *FirewallPolicyThreatIntelligenceAllowlistStruct) {
 	if err := f.validatePutThreatIntelligenceAllowlistParameters(value); err != nil {
 		panic(err)
 	}

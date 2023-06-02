@@ -93,12 +93,12 @@ func init() {
 		reflect.TypeOf((*DataAzurermHybridComputeMachineAgentConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-azurerm.dataAzurermHybridComputeMachine.DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowList",
-		reflect.TypeOf((*DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowList)(nil)).Elem(),
+		"@cdktf/provider-azurerm.dataAzurermHybridComputeMachine.DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListStruct",
+		reflect.TypeOf((*DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.dataAzurermHybridComputeMachine.DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListList",
-		reflect.TypeOf((*DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListList)(nil)).Elem(),
+		"@cdktf/provider-azurerm.dataAzurermHybridComputeMachine.DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListStructList",
+		reflect.TypeOf((*DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -111,14 +111,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListList{}
+			j := jsiiProxy_DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.dataAzurermHybridComputeMachine.DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListOutputReference",
-		reflect.TypeOf((*DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListOutputReference)(nil)).Elem(),
+		"@cdktf/provider-azurerm.dataAzurermHybridComputeMachine.DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListStructOutputReference",
+		reflect.TypeOf((*DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -145,18 +145,18 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListOutputReference{}
+			j := jsiiProxy_DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-azurerm.dataAzurermHybridComputeMachine.DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockList",
-		reflect.TypeOf((*DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockList)(nil)).Elem(),
+		"@cdktf/provider-azurerm.dataAzurermHybridComputeMachine.DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListStruct",
+		reflect.TypeOf((*DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.dataAzurermHybridComputeMachine.DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListList",
-		reflect.TypeOf((*DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListList)(nil)).Elem(),
+		"@cdktf/provider-azurerm.dataAzurermHybridComputeMachine.DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListStructList",
+		reflect.TypeOf((*DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -169,14 +169,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListList{}
+			j := jsiiProxy_DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.dataAzurermHybridComputeMachine.DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListOutputReference",
-		reflect.TypeOf((*DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListOutputReference)(nil)).Elem(),
+		"@cdktf/provider-azurerm.dataAzurermHybridComputeMachine.DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListStructOutputReference",
+		reflect.TypeOf((*DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListOutputReference{}
+			j := jsiiProxy_DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

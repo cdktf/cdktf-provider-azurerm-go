@@ -1,6 +1,0 @@
-package dataazurermhybridcomputemachine
-
-
-type DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockList struct {
-}
-

@@ -72,7 +72,7 @@ func (f *jsiiProxy_FirewallPolicy) validatePutIntrusionDetectionParameters(value
 	return nil
 }
 
-func (f *jsiiProxy_FirewallPolicy) validatePutThreatIntelligenceAllowlistParameters(value *FirewallPolicyThreatIntelligenceAllowlist) error {
+func (f *jsiiProxy_FirewallPolicy) validatePutThreatIntelligenceAllowlistParameters(value *FirewallPolicyThreatIntelligenceAllowlistStruct) error {
 	return nil
 }
 

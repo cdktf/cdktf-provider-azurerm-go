@@ -25,8 +25,8 @@ type DataAzurermHybridComputeMachineAgentConfigurationOutputReference interface 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	ExtensionsAllowList() DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListList
-	ExtensionsBlockList() DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListList
+	ExtensionsAllowList() DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListStructList
+	ExtensionsBlockList() DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListStructList
 	ExtensionsEnabled() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -113,8 +113,8 @@ func (j *jsiiProxy_DataAzurermHybridComputeMachineAgentConfigurationOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermHybridComputeMachineAgentConfigurationOutputReference) ExtensionsAllowList() DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListList {
-	var returns DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListList
+func (j *jsiiProxy_DataAzurermHybridComputeMachineAgentConfigurationOutputReference) ExtensionsAllowList() DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListStructList {
+	var returns DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListStructList
 	_jsii_.Get(
 		j,
 		"extensionsAllowList",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataAzurermHybridComputeMachineAgentConfigurationOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermHybridComputeMachineAgentConfigurationOutputReference) ExtensionsBlockList() DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListList {
-	var returns DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListList
+func (j *jsiiProxy_DataAzurermHybridComputeMachineAgentConfigurationOutputReference) ExtensionsBlockList() DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListStructList {
+	var returns DataAzurermHybridComputeMachineAgentConfigurationExtensionsBlockListStructList
 	_jsii_.Get(
 		j,
 		"extensionsBlockList",

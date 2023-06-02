@@ -65,7 +65,7 @@ type FirewallPolicyConfig struct {
 	// threat_intelligence_allowlist block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/firewall_policy#threat_intelligence_allowlist FirewallPolicy#threat_intelligence_allowlist}
-	ThreatIntelligenceAllowlist *FirewallPolicyThreatIntelligenceAllowlist `field:"optional" json:"threatIntelligenceAllowlist" yaml:"threatIntelligenceAllowlist"`
+	ThreatIntelligenceAllowlist *FirewallPolicyThreatIntelligenceAllowlistStruct `field:"optional" json:"threatIntelligenceAllowlist" yaml:"threatIntelligenceAllowlist"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/firewall_policy#threat_intelligence_mode FirewallPolicy#threat_intelligence_mode}.
 	ThreatIntelligenceMode *string `field:"optional" json:"threatIntelligenceMode" yaml:"threatIntelligenceMode"`
 	// timeouts block.
