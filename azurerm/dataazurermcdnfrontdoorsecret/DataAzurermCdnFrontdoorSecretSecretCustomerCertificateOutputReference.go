@@ -25,6 +25,7 @@ type DataAzurermCdnFrontdoorSecretSecretCustomerCertificateOutputReference inter
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExpirationDate() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataAzurermCdnFrontdoorSecretSecretCustomerCertificate
@@ -103,6 +104,16 @@ func (j *jsiiProxy_DataAzurermCdnFrontdoorSecretSecretCustomerCertificateOutputR
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermCdnFrontdoorSecretSecretCustomerCertificateOutputReference) ExpirationDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expirationDate",
 		&returns,
 	)
 	return returns

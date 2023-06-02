@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/virtual_network_gateway_nat_rule azurerm_virtual_network_gateway_nat_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/virtual_network_gateway_nat_rule azurerm_virtual_network_gateway_nat_rule}.
 type VirtualNetworkGatewayNatRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -497,7 +497,7 @@ func (j *jsiiProxy_VirtualNetworkGatewayNatRule) VirtualNetworkGatewayIdInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/virtual_network_gateway_nat_rule azurerm_virtual_network_gateway_nat_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/virtual_network_gateway_nat_rule azurerm_virtual_network_gateway_nat_rule} Resource.
 func NewVirtualNetworkGatewayNatRule(scope constructs.Construct, id *string, config *VirtualNetworkGatewayNatRuleConfig) VirtualNetworkGatewayNatRule {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewVirtualNetworkGatewayNatRule(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/virtual_network_gateway_nat_rule azurerm_virtual_network_gateway_nat_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/virtual_network_gateway_nat_rule azurerm_virtual_network_gateway_nat_rule} Resource.
 func NewVirtualNetworkGatewayNatRule_Override(v VirtualNetworkGatewayNatRule, scope constructs.Construct, id *string, config *VirtualNetworkGatewayNatRuleConfig) {
 	_init_.Initialize()
 

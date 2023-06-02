@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority}.
 type ApiManagementGatewayCertificateAuthority interface {
 	cdktf.TerraformResource
 	ApiManagementId() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_ApiManagementGatewayCertificateAuthority) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority} Resource.
 func NewApiManagementGatewayCertificateAuthority(scope constructs.Construct, id *string, config *ApiManagementGatewayCertificateAuthorityConfig) ApiManagementGatewayCertificateAuthority {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewApiManagementGatewayCertificateAuthority(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority} Resource.
 func NewApiManagementGatewayCertificateAuthority_Override(a ApiManagementGatewayCertificateAuthority, scope constructs.Construct, id *string, config *ApiManagementGatewayCertificateAuthorityConfig) {
 	_init_.Initialize()
 

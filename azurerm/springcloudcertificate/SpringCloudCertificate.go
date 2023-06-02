@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/spring_cloud_certificate azurerm_spring_cloud_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/spring_cloud_certificate azurerm_spring_cloud_certificate}.
 type SpringCloudCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type SpringCloudCertificate interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExcludePrivateKey() interface{}
+	SetExcludePrivateKey(val interface{})
+	ExcludePrivateKeyInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -106,6 +109,7 @@ type SpringCloudCertificate interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *SpringCloudCertificateTimeouts)
 	ResetCertificateContent()
+	ResetExcludePrivateKey()
 	ResetId()
 	ResetKeyVaultCertificateId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -192,6 +196,26 @@ func (j *jsiiProxy_SpringCloudCertificate) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudCertificate) ExcludePrivateKey() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludePrivateKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudCertificate) ExcludePrivateKeyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludePrivateKeyInput",
 		&returns,
 	)
 	return returns
@@ -438,7 +462,7 @@ func (j *jsiiProxy_SpringCloudCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/spring_cloud_certificate azurerm_spring_cloud_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/spring_cloud_certificate azurerm_spring_cloud_certificate} Resource.
 func NewSpringCloudCertificate(scope constructs.Construct, id *string, config *SpringCloudCertificateConfig) SpringCloudCertificate {
 	_init_.Initialize()
 
@@ -456,7 +480,7 @@ func NewSpringCloudCertificate(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/spring_cloud_certificate azurerm_spring_cloud_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/spring_cloud_certificate azurerm_spring_cloud_certificate} Resource.
 func NewSpringCloudCertificate_Override(s SpringCloudCertificate, scope constructs.Construct, id *string, config *SpringCloudCertificateConfig) {
 	_init_.Initialize()
 
@@ -504,6 +528,17 @@ func (j *jsiiProxy_SpringCloudCertificate)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpringCloudCertificate)SetExcludePrivateKey(val interface{}) {
+	if err := j.validateSetExcludePrivateKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludePrivateKey",
 		val,
 	)
 }
@@ -882,6 +917,14 @@ func (s *jsiiProxy_SpringCloudCertificate) ResetCertificateContent() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCertificateContent",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudCertificate) ResetExcludePrivateKey() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExcludePrivateKey",
 		nil, // no parameters
 	)
 }

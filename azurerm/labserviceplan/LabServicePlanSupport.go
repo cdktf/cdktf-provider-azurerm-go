@@ -2,13 +2,13 @@ package labserviceplan
 
 
 type LabServicePlanSupport struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/lab_service_plan#email LabServicePlan#email}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/lab_service_plan#email LabServicePlan#email}.
 	Email *string `field:"optional" json:"email" yaml:"email"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/lab_service_plan#instructions LabServicePlan#instructions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/lab_service_plan#instructions LabServicePlan#instructions}.
 	Instructions *string `field:"optional" json:"instructions" yaml:"instructions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/lab_service_plan#phone LabServicePlan#phone}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/lab_service_plan#phone LabServicePlan#phone}.
 	Phone *string `field:"optional" json:"phone" yaml:"phone"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/lab_service_plan#url LabServicePlan#url}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/lab_service_plan#url LabServicePlan#url}.
 	Url *string `field:"optional" json:"url" yaml:"url"`
 }
 

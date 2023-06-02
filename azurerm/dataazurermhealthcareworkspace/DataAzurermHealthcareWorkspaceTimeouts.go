@@ -2,7 +2,7 @@ package dataazurermhealthcareworkspace
 
 
 type DataAzurermHealthcareWorkspaceTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/data-sources/healthcare_workspace#read DataAzurermHealthcareWorkspace#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/data-sources/healthcare_workspace#read DataAzurermHealthcareWorkspace#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

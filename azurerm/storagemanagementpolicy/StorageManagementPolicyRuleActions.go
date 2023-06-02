@@ -4,15 +4,15 @@ package storagemanagementpolicy
 type StorageManagementPolicyRuleActions struct {
 	// base_blob block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/storage_management_policy#base_blob StorageManagementPolicy#base_blob}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/storage_management_policy#base_blob StorageManagementPolicy#base_blob}
 	BaseBlob *StorageManagementPolicyRuleActionsBaseBlob `field:"optional" json:"baseBlob" yaml:"baseBlob"`
 	// snapshot block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/storage_management_policy#snapshot StorageManagementPolicy#snapshot}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/storage_management_policy#snapshot StorageManagementPolicy#snapshot}
 	Snapshot *StorageManagementPolicyRuleActionsSnapshot `field:"optional" json:"snapshot" yaml:"snapshot"`
 	// version block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/storage_management_policy#version StorageManagementPolicy#version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/storage_management_policy#version StorageManagementPolicy#version}
 	Version *StorageManagementPolicyRuleActionsVersion `field:"optional" json:"version" yaml:"version"`
 }
 

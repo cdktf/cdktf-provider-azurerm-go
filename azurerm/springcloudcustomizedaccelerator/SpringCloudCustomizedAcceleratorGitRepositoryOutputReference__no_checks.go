@@ -60,6 +60,10 @@ func (j *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositoryOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositoryOutputReference) validateSetCaCertificateIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositoryOutputReference) validateSetCommitParameters(val *string) error {
 	return nil
 }

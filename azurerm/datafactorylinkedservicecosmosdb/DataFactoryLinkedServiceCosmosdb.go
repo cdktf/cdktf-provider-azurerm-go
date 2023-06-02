@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/data_factory_linked_service_cosmosdb azurerm_data_factory_linked_service_cosmosdb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/data_factory_linked_service_cosmosdb azurerm_data_factory_linked_service_cosmosdb}.
 type DataFactoryLinkedServiceCosmosdb interface {
 	cdktf.TerraformResource
 	AccountEndpoint() *string
@@ -572,7 +572,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceCosmosdb) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/data_factory_linked_service_cosmosdb azurerm_data_factory_linked_service_cosmosdb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/data_factory_linked_service_cosmosdb azurerm_data_factory_linked_service_cosmosdb} Resource.
 func NewDataFactoryLinkedServiceCosmosdb(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceCosmosdbConfig) DataFactoryLinkedServiceCosmosdb {
 	_init_.Initialize()
 
@@ -590,7 +590,7 @@ func NewDataFactoryLinkedServiceCosmosdb(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/data_factory_linked_service_cosmosdb azurerm_data_factory_linked_service_cosmosdb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/data_factory_linked_service_cosmosdb azurerm_data_factory_linked_service_cosmosdb} Resource.
 func NewDataFactoryLinkedServiceCosmosdb_Override(d DataFactoryLinkedServiceCosmosdb, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceCosmosdbConfig) {
 	_init_.Initialize()
 

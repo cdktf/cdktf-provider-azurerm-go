@@ -33,6 +33,7 @@ type DataAzurermVirtualMachineScaleSetInstancesOutputReference interface {
 	SetInternalValue(val *DataAzurermVirtualMachineScaleSetInstances)
 	LatestModelApplied() cdktf.IResolvable
 	Name() *string
+	PowerState() *string
 	PrivateIpAddress() *string
 	PrivateIpAddresses() *[]*string
 	PublicIpAddress() *string
@@ -171,6 +172,16 @@ func (j *jsiiProxy_DataAzurermVirtualMachineScaleSetInstancesOutputReference) Na
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermVirtualMachineScaleSetInstancesOutputReference) PowerState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"powerState",
 		&returns,
 	)
 	return returns

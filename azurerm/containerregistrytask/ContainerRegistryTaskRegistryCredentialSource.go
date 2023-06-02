@@ -2,7 +2,7 @@ package containerregistrytask
 
 
 type ContainerRegistryTaskRegistryCredentialSource struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/container_registry_task#login_mode ContainerRegistryTask#login_mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/container_registry_task#login_mode ContainerRegistryTask#login_mode}.
 	LoginMode *string `field:"required" json:"loginMode" yaml:"loginMode"`
 }
 

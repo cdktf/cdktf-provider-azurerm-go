@@ -2,9 +2,9 @@ package sentinelmetadata
 
 
 type SentinelMetadataCategory struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/sentinel_metadata#domains SentinelMetadata#domains}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/sentinel_metadata#domains SentinelMetadata#domains}.
 	Domains *[]*string `field:"optional" json:"domains" yaml:"domains"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/sentinel_metadata#verticals SentinelMetadata#verticals}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/sentinel_metadata#verticals SentinelMetadata#verticals}.
 	Verticals *[]*string `field:"optional" json:"verticals" yaml:"verticals"`
 }
 

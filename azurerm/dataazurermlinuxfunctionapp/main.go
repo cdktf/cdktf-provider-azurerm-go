@@ -15,6 +15,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "appSettings", GoGetter: "AppSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "authSettings", GoGetter: "AuthSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "authSettingsV2", GoGetter: "AuthSettingsV2"},
+			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
 			_jsii_.MemberProperty{JsiiProperty: "backup", GoGetter: "Backup"},
 			_jsii_.MemberProperty{JsiiProperty: "builtinLoggingEnabled", GoGetter: "BuiltinLoggingEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -86,6 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "usage", GoGetter: "Usage"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkSubnetId", GoGetter: "VirtualNetworkSubnetId"},
 		},
 		func() interface{} {

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/security_center_contact azurerm_security_center_contact}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/security_center_contact azurerm_security_center_contact}.
 type SecurityCenterContact interface {
 	cdktf.TerraformResource
 	AlertNotifications() interface{}
@@ -427,7 +427,7 @@ func (j *jsiiProxy_SecurityCenterContact) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/security_center_contact azurerm_security_center_contact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/security_center_contact azurerm_security_center_contact} Resource.
 func NewSecurityCenterContact(scope constructs.Construct, id *string, config *SecurityCenterContactConfig) SecurityCenterContact {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewSecurityCenterContact(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/security_center_contact azurerm_security_center_contact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/security_center_contact azurerm_security_center_contact} Resource.
 func NewSecurityCenterContact_Override(s SecurityCenterContact, scope constructs.Construct, id *string, config *SecurityCenterContactConfig) {
 	_init_.Initialize()
 

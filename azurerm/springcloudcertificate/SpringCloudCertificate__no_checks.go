@@ -80,6 +80,10 @@ func (j *jsiiProxy_SpringCloudCertificate) validateSetCountParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudCertificate) validateSetExcludePrivateKeyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

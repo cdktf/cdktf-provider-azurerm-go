@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/mariadb_configuration azurerm_mariadb_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/mariadb_configuration azurerm_mariadb_configuration}.
 type MariadbConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_MariadbConfiguration) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/mariadb_configuration azurerm_mariadb_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/mariadb_configuration azurerm_mariadb_configuration} Resource.
 func NewMariadbConfiguration(scope constructs.Construct, id *string, config *MariadbConfigurationConfig) MariadbConfiguration {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewMariadbConfiguration(scope constructs.Construct, id *string, config *Mar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/mariadb_configuration azurerm_mariadb_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/mariadb_configuration azurerm_mariadb_configuration} Resource.
 func NewMariadbConfiguration_Override(m MariadbConfiguration, scope constructs.Construct, id *string, config *MariadbConfigurationConfig) {
 	_init_.Initialize()
 

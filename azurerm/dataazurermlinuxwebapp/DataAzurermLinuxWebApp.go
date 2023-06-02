@@ -9,13 +9,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/data-sources/linux_web_app azurerm_linux_web_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/data-sources/linux_web_app azurerm_linux_web_app}.
 type DataAzurermLinuxWebApp interface {
 	cdktf.TerraformDataSource
 	AppMetadata() cdktf.StringMap
 	AppSettings() cdktf.StringMap
 	AuthSettings() DataAzurermLinuxWebAppAuthSettingsList
 	AuthSettingsV2() DataAzurermLinuxWebAppAuthSettingsV2List
+	Availability() *string
 	Backup() DataAzurermLinuxWebAppBackupList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -91,6 +92,7 @@ type DataAzurermLinuxWebApp interface {
 	TerraformResourceType() *string
 	Timeouts() DataAzurermLinuxWebAppTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Usage() *string
 	VirtualNetworkSubnetId() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -173,6 +175,16 @@ func (j *jsiiProxy_DataAzurermLinuxWebApp) AuthSettingsV2() DataAzurermLinuxWebA
 	_jsii_.Get(
 		j,
 		"authSettingsV2",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLinuxWebApp) Availability() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availability",
 		&returns,
 	)
 	return returns
@@ -658,6 +670,16 @@ func (j *jsiiProxy_DataAzurermLinuxWebApp) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermLinuxWebApp) Usage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermLinuxWebApp) VirtualNetworkSubnetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -669,7 +691,7 @@ func (j *jsiiProxy_DataAzurermLinuxWebApp) VirtualNetworkSubnetId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/data-sources/linux_web_app azurerm_linux_web_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/data-sources/linux_web_app azurerm_linux_web_app} Data Source.
 func NewDataAzurermLinuxWebApp(scope constructs.Construct, id *string, config *DataAzurermLinuxWebAppConfig) DataAzurermLinuxWebApp {
 	_init_.Initialize()
 
@@ -687,7 +709,7 @@ func NewDataAzurermLinuxWebApp(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/data-sources/linux_web_app azurerm_linux_web_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/data-sources/linux_web_app azurerm_linux_web_app} Data Source.
 func NewDataAzurermLinuxWebApp_Override(d DataAzurermLinuxWebApp, scope constructs.Construct, id *string, config *DataAzurermLinuxWebAppConfig) {
 	_init_.Initialize()
 

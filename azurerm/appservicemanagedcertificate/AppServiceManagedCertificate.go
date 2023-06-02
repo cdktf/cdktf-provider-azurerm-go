@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/app_service_managed_certificate azurerm_app_service_managed_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/app_service_managed_certificate azurerm_app_service_managed_certificate}.
 type AppServiceManagedCertificate interface {
 	cdktf.TerraformResource
 	CanonicalName() *string
@@ -445,7 +445,7 @@ func (j *jsiiProxy_AppServiceManagedCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/app_service_managed_certificate azurerm_app_service_managed_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/app_service_managed_certificate azurerm_app_service_managed_certificate} Resource.
 func NewAppServiceManagedCertificate(scope constructs.Construct, id *string, config *AppServiceManagedCertificateConfig) AppServiceManagedCertificate {
 	_init_.Initialize()
 
@@ -463,7 +463,7 @@ func NewAppServiceManagedCertificate(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/app_service_managed_certificate azurerm_app_service_managed_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/app_service_managed_certificate azurerm_app_service_managed_certificate} Resource.
 func NewAppServiceManagedCertificate_Override(a AppServiceManagedCertificate, scope constructs.Construct, id *string, config *AppServiceManagedCertificateConfig) {
 	_init_.Initialize()
 

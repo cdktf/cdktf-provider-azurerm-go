@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration}.
 type AutomationSoftwareUpdateConfiguration interface {
 	cdktf.TerraformResource
 	AutomationAccountId() *string
@@ -628,7 +628,7 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) WindowsInput() *Automa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration} Resource.
 func NewAutomationSoftwareUpdateConfiguration(scope constructs.Construct, id *string, config *AutomationSoftwareUpdateConfigurationConfig) AutomationSoftwareUpdateConfiguration {
 	_init_.Initialize()
 
@@ -646,7 +646,7 @@ func NewAutomationSoftwareUpdateConfiguration(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration} Resource.
 func NewAutomationSoftwareUpdateConfiguration_Override(a AutomationSoftwareUpdateConfiguration, scope constructs.Construct, id *string, config *AutomationSoftwareUpdateConfigurationConfig) {
 	_init_.Initialize()
 

@@ -32,6 +32,7 @@ type DataAzurermResourcesResourcesOutputReference interface {
 	SetInternalValue(val *DataAzurermResourcesResources)
 	Location() *string
 	Name() *string
+	ResourceGroupName() *string
 	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformAttribute() *string
@@ -156,6 +157,16 @@ func (j *jsiiProxy_DataAzurermResourcesResourcesOutputReference) Name() *string 
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermResourcesResourcesOutputReference) ResourceGroupName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceGroupName",
 		&returns,
 	)
 	return returns

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/data_factory azurerm_data_factory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/data_factory azurerm_data_factory}.
 type DataFactory interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -619,7 +619,7 @@ func (j *jsiiProxy_DataFactory) VstsConfigurationInput() *DataFactoryVstsConfigu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/data_factory azurerm_data_factory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/data_factory azurerm_data_factory} Resource.
 func NewDataFactory(scope constructs.Construct, id *string, config *DataFactoryConfig) DataFactory {
 	_init_.Initialize()
 
@@ -637,7 +637,7 @@ func NewDataFactory(scope constructs.Construct, id *string, config *DataFactoryC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/data_factory azurerm_data_factory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/data_factory azurerm_data_factory} Resource.
 func NewDataFactory_Override(d DataFactory, scope constructs.Construct, id *string, config *DataFactoryConfig) {
 	_init_.Initialize()
 

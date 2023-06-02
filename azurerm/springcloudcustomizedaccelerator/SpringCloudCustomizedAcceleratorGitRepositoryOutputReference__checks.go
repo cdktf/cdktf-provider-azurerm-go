@@ -128,6 +128,14 @@ func (j *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositoryOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositoryOutputReference) validateSetCaCertificateIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositoryOutputReference) validateSetCommitParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

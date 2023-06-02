@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/sentinel_data_connector_microsoft_threat_intelligence azurerm_sentinel_data_connector_microsoft_threat_intelligence}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/sentinel_data_connector_microsoft_threat_intelligence azurerm_sentinel_data_connector_microsoft_threat_intelligence}.
 type SentinelDataConnectorMicrosoftThreatIntelligence interface {
 	cdktf.TerraformResource
 	BingSafetyPhishingUrlLookbackDate() *string
@@ -428,7 +428,7 @@ func (j *jsiiProxy_SentinelDataConnectorMicrosoftThreatIntelligence) TimeoutsInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/sentinel_data_connector_microsoft_threat_intelligence azurerm_sentinel_data_connector_microsoft_threat_intelligence} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/sentinel_data_connector_microsoft_threat_intelligence azurerm_sentinel_data_connector_microsoft_threat_intelligence} Resource.
 func NewSentinelDataConnectorMicrosoftThreatIntelligence(scope constructs.Construct, id *string, config *SentinelDataConnectorMicrosoftThreatIntelligenceConfig) SentinelDataConnectorMicrosoftThreatIntelligence {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewSentinelDataConnectorMicrosoftThreatIntelligence(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/sentinel_data_connector_microsoft_threat_intelligence azurerm_sentinel_data_connector_microsoft_threat_intelligence} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/sentinel_data_connector_microsoft_threat_intelligence azurerm_sentinel_data_connector_microsoft_threat_intelligence} Resource.
 func NewSentinelDataConnectorMicrosoftThreatIntelligence_Override(s SentinelDataConnectorMicrosoftThreatIntelligence, scope constructs.Construct, id *string, config *SentinelDataConnectorMicrosoftThreatIntelligenceConfig) {
 	_init_.Initialize()
 

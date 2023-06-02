@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/sql_firewall_rule azurerm_sql_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/sql_firewall_rule azurerm_sql_firewall_rule}.
 type SqlFirewallRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_SqlFirewallRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/sql_firewall_rule azurerm_sql_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/sql_firewall_rule azurerm_sql_firewall_rule} Resource.
 func NewSqlFirewallRule(scope constructs.Construct, id *string, config *SqlFirewallRuleConfig) SqlFirewallRule {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewSqlFirewallRule(scope constructs.Construct, id *string, config *SqlFirew
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/sql_firewall_rule azurerm_sql_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/sql_firewall_rule azurerm_sql_firewall_rule} Resource.
 func NewSqlFirewallRule_Override(s SqlFirewallRule, scope constructs.Construct, id *string, config *SqlFirewallRuleConfig) {
 	_init_.Initialize()
 
