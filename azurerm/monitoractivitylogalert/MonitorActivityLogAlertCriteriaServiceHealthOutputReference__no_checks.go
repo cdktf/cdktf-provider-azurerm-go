@@ -60,7 +60,7 @@ func (j *jsiiProxy_MonitorActivityLogAlertCriteriaServiceHealthOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_MonitorActivityLogAlertCriteriaServiceHealthOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorActivityLogAlertCriteriaServiceHealthOutputReference) validateSetInternalValueParameters(val *MonitorActivityLogAlertCriteriaServiceHealth) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_MonitorActivityLogAlertCriteriaServiceHealthOutputReference) 
 	return nil
 }
 
-func validateNewMonitorActivityLogAlertCriteriaServiceHealthOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewMonitorActivityLogAlertCriteriaServiceHealthOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

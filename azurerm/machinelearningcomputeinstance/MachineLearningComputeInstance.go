@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance}.
 type MachineLearningComputeInstance interface {
 	cdktf.TerraformResource
 	AssignToUser() MachineLearningComputeInstanceAssignToUserOutputReference
@@ -67,6 +67,9 @@ type MachineLearningComputeInstance interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NodePublicIpEnabled() interface{}
+	SetNodePublicIpEnabled(val interface{})
+	NodePublicIpEnabledInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -131,6 +134,7 @@ type MachineLearningComputeInstance interface {
 	ResetId()
 	ResetIdentity()
 	ResetLocalAuthEnabled()
+	ResetNodePublicIpEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -433,6 +437,26 @@ func (j *jsiiProxy_MachineLearningComputeInstance) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_MachineLearningComputeInstance) NodePublicIpEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nodePublicIpEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MachineLearningComputeInstance) NodePublicIpEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nodePublicIpEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MachineLearningComputeInstance) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -594,7 +618,7 @@ func (j *jsiiProxy_MachineLearningComputeInstance) VirtualMachineSizeInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance} Resource.
 func NewMachineLearningComputeInstance(scope constructs.Construct, id *string, config *MachineLearningComputeInstanceConfig) MachineLearningComputeInstance {
 	_init_.Initialize()
 
@@ -612,7 +636,7 @@ func NewMachineLearningComputeInstance(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance} Resource.
 func NewMachineLearningComputeInstance_Override(m MachineLearningComputeInstance, scope constructs.Construct, id *string, config *MachineLearningComputeInstanceConfig) {
 	_init_.Initialize()
 
@@ -745,6 +769,17 @@ func (j *jsiiProxy_MachineLearningComputeInstance)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MachineLearningComputeInstance)SetNodePublicIpEnabled(val interface{}) {
+	if err := j.validateSetNodePublicIpEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodePublicIpEnabled",
 		val,
 	)
 }
@@ -1155,6 +1190,14 @@ func (m *jsiiProxy_MachineLearningComputeInstance) ResetLocalAuthEnabled() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetLocalAuthEnabled",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MachineLearningComputeInstance) ResetNodePublicIpEnabled() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetNodePublicIpEnabled",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/monitor_autoscale_setting azurerm_monitor_autoscale_setting}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/monitor_autoscale_setting azurerm_monitor_autoscale_setting}.
 type MonitorAutoscaleSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -56,6 +56,8 @@ type MonitorAutoscaleSetting interface {
 	Node() constructs.Node
 	Notification() MonitorAutoscaleSettingNotificationOutputReference
 	NotificationInput() *MonitorAutoscaleSettingNotification
+	Predictive() MonitorAutoscaleSettingPredictiveOutputReference
+	PredictiveInput() *MonitorAutoscaleSettingPredictive
 	Profile() MonitorAutoscaleSettingProfileList
 	ProfileInput() interface{}
 	// Experimental.
@@ -111,6 +113,7 @@ type MonitorAutoscaleSetting interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutNotification(value *MonitorAutoscaleSettingNotification)
+	PutPredictive(value *MonitorAutoscaleSettingPredictive)
 	PutProfile(value interface{})
 	PutTimeouts(value *MonitorAutoscaleSettingTimeouts)
 	ResetEnabled()
@@ -119,6 +122,7 @@ type MonitorAutoscaleSetting interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPredictive()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -336,6 +340,26 @@ func (j *jsiiProxy_MonitorAutoscaleSetting) NotificationInput() *MonitorAutoscal
 	return returns
 }
 
+func (j *jsiiProxy_MonitorAutoscaleSetting) Predictive() MonitorAutoscaleSettingPredictiveOutputReference {
+	var returns MonitorAutoscaleSettingPredictiveOutputReference
+	_jsii_.Get(
+		j,
+		"predictive",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorAutoscaleSetting) PredictiveInput() *MonitorAutoscaleSettingPredictive {
+	var returns *MonitorAutoscaleSettingPredictive
+	_jsii_.Get(
+		j,
+		"predictiveInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitorAutoscaleSetting) Profile() MonitorAutoscaleSettingProfileList {
 	var returns MonitorAutoscaleSettingProfileList
 	_jsii_.Get(
@@ -497,7 +521,7 @@ func (j *jsiiProxy_MonitorAutoscaleSetting) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/monitor_autoscale_setting azurerm_monitor_autoscale_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/monitor_autoscale_setting azurerm_monitor_autoscale_setting} Resource.
 func NewMonitorAutoscaleSetting(scope constructs.Construct, id *string, config *MonitorAutoscaleSettingConfig) MonitorAutoscaleSetting {
 	_init_.Initialize()
 
@@ -515,7 +539,7 @@ func NewMonitorAutoscaleSetting(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/monitor_autoscale_setting azurerm_monitor_autoscale_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/monitor_autoscale_setting azurerm_monitor_autoscale_setting} Resource.
 func NewMonitorAutoscaleSetting_Override(m MonitorAutoscaleSetting, scope constructs.Construct, id *string, config *MonitorAutoscaleSettingConfig) {
 	_init_.Initialize()
 
@@ -948,6 +972,17 @@ func (m *jsiiProxy_MonitorAutoscaleSetting) PutNotification(value *MonitorAutosc
 	)
 }
 
+func (m *jsiiProxy_MonitorAutoscaleSetting) PutPredictive(value *MonitorAutoscaleSettingPredictive) {
+	if err := m.validatePutPredictiveParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putPredictive",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitorAutoscaleSetting) PutProfile(value interface{}) {
 	if err := m.validatePutProfileParameters(value); err != nil {
 		panic(err)
@@ -998,6 +1033,14 @@ func (m *jsiiProxy_MonitorAutoscaleSetting) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorAutoscaleSetting) ResetPredictive() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPredictive",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/postgresql_virtual_network_rule azurerm_postgresql_virtual_network_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/postgresql_virtual_network_rule azurerm_postgresql_virtual_network_rule}.
 type PostgresqlVirtualNetworkRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_PostgresqlVirtualNetworkRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/postgresql_virtual_network_rule azurerm_postgresql_virtual_network_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/postgresql_virtual_network_rule azurerm_postgresql_virtual_network_rule} Resource.
 func NewPostgresqlVirtualNetworkRule(scope constructs.Construct, id *string, config *PostgresqlVirtualNetworkRuleConfig) PostgresqlVirtualNetworkRule {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewPostgresqlVirtualNetworkRule(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/postgresql_virtual_network_rule azurerm_postgresql_virtual_network_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/postgresql_virtual_network_rule azurerm_postgresql_virtual_network_rule} Resource.
 func NewPostgresqlVirtualNetworkRule_Override(p PostgresqlVirtualNetworkRule, scope constructs.Construct, id *string, config *PostgresqlVirtualNetworkRuleConfig) {
 	_init_.Initialize()
 

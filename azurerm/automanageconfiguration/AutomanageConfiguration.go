@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/automanage_configuration azurerm_automanage_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/automanage_configuration azurerm_automanage_configuration}.
 type AutomanageConfiguration interface {
 	cdktf.TerraformResource
 	Antimalware() AutomanageConfigurationAntimalwareOutputReference
@@ -17,6 +17,10 @@ type AutomanageConfiguration interface {
 	AutomationAccountEnabled() interface{}
 	SetAutomationAccountEnabled(val interface{})
 	AutomationAccountEnabledInput() interface{}
+	AzureSecurityBaseline() AutomanageConfigurationAzureSecurityBaselineOutputReference
+	AzureSecurityBaselineInput() *AutomanageConfigurationAzureSecurityBaseline
+	Backup() AutomanageConfigurationBackupOutputReference
+	BackupInput() *AutomanageConfigurationBackup
 	BootDiagnosticsEnabled() interface{}
 	SetBootDiagnosticsEnabled(val interface{})
 	BootDiagnosticsEnabledInput() interface{}
@@ -118,9 +122,13 @@ type AutomanageConfiguration interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAntimalware(value *AutomanageConfigurationAntimalware)
+	PutAzureSecurityBaseline(value *AutomanageConfigurationAzureSecurityBaseline)
+	PutBackup(value *AutomanageConfigurationBackup)
 	PutTimeouts(value *AutomanageConfigurationTimeouts)
 	ResetAntimalware()
 	ResetAutomationAccountEnabled()
+	ResetAzureSecurityBaseline()
+	ResetBackup()
 	ResetBootDiagnosticsEnabled()
 	ResetDefenderForCloudEnabled()
 	ResetGuestConfigurationEnabled()
@@ -181,6 +189,46 @@ func (j *jsiiProxy_AutomanageConfiguration) AutomationAccountEnabledInput() inte
 	_jsii_.Get(
 		j,
 		"automationAccountEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutomanageConfiguration) AzureSecurityBaseline() AutomanageConfigurationAzureSecurityBaselineOutputReference {
+	var returns AutomanageConfigurationAzureSecurityBaselineOutputReference
+	_jsii_.Get(
+		j,
+		"azureSecurityBaseline",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutomanageConfiguration) AzureSecurityBaselineInput() *AutomanageConfigurationAzureSecurityBaseline {
+	var returns *AutomanageConfigurationAzureSecurityBaseline
+	_jsii_.Get(
+		j,
+		"azureSecurityBaselineInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutomanageConfiguration) Backup() AutomanageConfigurationBackupOutputReference {
+	var returns AutomanageConfigurationBackupOutputReference
+	_jsii_.Get(
+		j,
+		"backup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutomanageConfiguration) BackupInput() *AutomanageConfigurationBackup {
+	var returns *AutomanageConfigurationBackup
+	_jsii_.Get(
+		j,
+		"backupInput",
 		&returns,
 	)
 	return returns
@@ -547,7 +595,7 @@ func (j *jsiiProxy_AutomanageConfiguration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/automanage_configuration azurerm_automanage_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/automanage_configuration azurerm_automanage_configuration} Resource.
 func NewAutomanageConfiguration(scope constructs.Construct, id *string, config *AutomanageConfigurationConfig) AutomanageConfiguration {
 	_init_.Initialize()
 
@@ -565,7 +613,7 @@ func NewAutomanageConfiguration(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/automanage_configuration azurerm_automanage_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/automanage_configuration azurerm_automanage_configuration} Resource.
 func NewAutomanageConfiguration_Override(a AutomanageConfiguration, scope constructs.Construct, id *string, config *AutomanageConfigurationConfig) {
 	_init_.Initialize()
 
@@ -1031,6 +1079,28 @@ func (a *jsiiProxy_AutomanageConfiguration) PutAntimalware(value *AutomanageConf
 	)
 }
 
+func (a *jsiiProxy_AutomanageConfiguration) PutAzureSecurityBaseline(value *AutomanageConfigurationAzureSecurityBaseline) {
+	if err := a.validatePutAzureSecurityBaselineParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAzureSecurityBaseline",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AutomanageConfiguration) PutBackup(value *AutomanageConfigurationBackup) {
+	if err := a.validatePutBackupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putBackup",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AutomanageConfiguration) PutTimeouts(value *AutomanageConfigurationTimeouts) {
 	if err := a.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1054,6 +1124,22 @@ func (a *jsiiProxy_AutomanageConfiguration) ResetAutomationAccountEnabled() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAutomationAccountEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutomanageConfiguration) ResetAzureSecurityBaseline() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAzureSecurityBaseline",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutomanageConfiguration) ResetBackup() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBackup",
 		nil, // no parameters
 	)
 }

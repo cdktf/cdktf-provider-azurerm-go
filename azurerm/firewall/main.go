@@ -153,6 +153,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "privateIpAddress", GoGetter: "PrivateIpAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "publicIpAddressId", GoGetter: "PublicIpAddressId"},
 			_jsii_.MemberProperty{JsiiProperty: "publicIpAddressIdInput", GoGetter: "PublicIpAddressIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPublicIpAddressId", GoMethod: "ResetPublicIpAddressId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubnetId", GoMethod: "ResetSubnetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "subnetId", GoGetter: "SubnetId"},

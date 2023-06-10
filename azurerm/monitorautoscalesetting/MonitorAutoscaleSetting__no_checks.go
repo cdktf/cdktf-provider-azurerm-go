@@ -56,6 +56,10 @@ func (m *jsiiProxy_MonitorAutoscaleSetting) validatePutNotificationParameters(va
 	return nil
 }
 
+func (m *jsiiProxy_MonitorAutoscaleSetting) validatePutPredictiveParameters(value *MonitorAutoscaleSettingPredictive) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAutoscaleSetting) validatePutProfileParameters(value interface{}) error {
 	return nil
 }

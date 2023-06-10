@@ -44,11 +44,11 @@ func (m *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validateInter
 	return nil
 }
 
-func (m *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validatePutResourceHealthParameters(value interface{}) error {
+func (m *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validatePutResourceHealthParameters(value *MonitorActivityLogAlertCriteriaResourceHealth) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validatePutServiceHealthParameters(value interface{}) error {
+func (m *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) validatePutServiceHealthParameters(value *MonitorActivityLogAlertCriteriaServiceHealth) error {
 	return nil
 }
 

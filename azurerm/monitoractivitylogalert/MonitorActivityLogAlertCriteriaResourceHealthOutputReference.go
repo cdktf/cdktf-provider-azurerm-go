@@ -30,8 +30,8 @@ type MonitorActivityLogAlertCriteriaResourceHealthOutputReference interface {
 	CurrentInput() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *MonitorActivityLogAlertCriteriaResourceHealth
+	SetInternalValue(val *MonitorActivityLogAlertCriteriaResourceHealth)
 	Previous() *[]*string
 	SetPrevious(val *[]*string)
 	PreviousInput() *[]*string
@@ -148,8 +148,8 @@ func (j *jsiiProxy_MonitorActivityLogAlertCriteriaResourceHealthOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_MonitorActivityLogAlertCriteriaResourceHealthOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorActivityLogAlertCriteriaResourceHealthOutputReference) InternalValue() *MonitorActivityLogAlertCriteriaResourceHealth {
+	var returns *MonitorActivityLogAlertCriteriaResourceHealth
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -219,29 +219,29 @@ func (j *jsiiProxy_MonitorActivityLogAlertCriteriaResourceHealthOutputReference)
 }
 
 
-func NewMonitorActivityLogAlertCriteriaResourceHealthOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MonitorActivityLogAlertCriteriaResourceHealthOutputReference {
+func NewMonitorActivityLogAlertCriteriaResourceHealthOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorActivityLogAlertCriteriaResourceHealthOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewMonitorActivityLogAlertCriteriaResourceHealthOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewMonitorActivityLogAlertCriteriaResourceHealthOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_MonitorActivityLogAlertCriteriaResourceHealthOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteriaResourceHealthOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewMonitorActivityLogAlertCriteriaResourceHealthOutputReference_Override(m MonitorActivityLogAlertCriteriaResourceHealthOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewMonitorActivityLogAlertCriteriaResourceHealthOutputReference_Override(m MonitorActivityLogAlertCriteriaResourceHealthOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteriaResourceHealthOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
 }
@@ -279,7 +279,7 @@ func (j *jsiiProxy_MonitorActivityLogAlertCriteriaResourceHealthOutputReference)
 	)
 }
 
-func (j *jsiiProxy_MonitorActivityLogAlertCriteriaResourceHealthOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MonitorActivityLogAlertCriteriaResourceHealthOutputReference)SetInternalValue(val *MonitorActivityLogAlertCriteriaResourceHealth) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

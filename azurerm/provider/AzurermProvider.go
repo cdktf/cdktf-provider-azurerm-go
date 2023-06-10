@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs azurerm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs azurerm}.
 type AzurermProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -31,9 +31,15 @@ type AzurermProvider interface {
 	ClientCertificatePathInput() *string
 	ClientId() *string
 	SetClientId(val *string)
+	ClientIdFilePath() *string
+	SetClientIdFilePath(val *string)
+	ClientIdFilePathInput() *string
 	ClientIdInput() *string
 	ClientSecret() *string
 	SetClientSecret(val *string)
+	ClientSecretFilePath() *string
+	SetClientSecretFilePath(val *string)
+	ClientSecretFilePathInput() *string
 	ClientSecretInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
@@ -118,7 +124,9 @@ type AzurermProvider interface {
 	ResetClientCertificatePassword()
 	ResetClientCertificatePath()
 	ResetClientId()
+	ResetClientIdFilePath()
 	ResetClientSecret()
+	ResetClientSecretFilePath()
 	ResetDisableCorrelationRequestId()
 	ResetDisableTerraformPartnerId()
 	ResetEnvironment()
@@ -274,6 +282,26 @@ func (j *jsiiProxy_AzurermProvider) ClientId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AzurermProvider) ClientIdFilePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientIdFilePath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzurermProvider) ClientIdFilePathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientIdFilePathInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AzurermProvider) ClientIdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -289,6 +317,26 @@ func (j *jsiiProxy_AzurermProvider) ClientSecret() *string {
 	_jsii_.Get(
 		j,
 		"clientSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzurermProvider) ClientSecretFilePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecretFilePath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzurermProvider) ClientSecretFilePathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecretFilePathInput",
 		&returns,
 	)
 	return returns
@@ -755,7 +803,7 @@ func (j *jsiiProxy_AzurermProvider) UseOidcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs azurerm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs azurerm} Resource.
 func NewAzurermProvider(scope constructs.Construct, id *string, config *AzurermProviderConfig) AzurermProvider {
 	_init_.Initialize()
 
@@ -773,7 +821,7 @@ func NewAzurermProvider(scope constructs.Construct, id *string, config *AzurermP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs azurerm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs azurerm} Resource.
 func NewAzurermProvider_Override(a AzurermProvider, scope constructs.Construct, id *string, config *AzurermProviderConfig) {
 	_init_.Initialize()
 
@@ -832,10 +880,26 @@ func (j *jsiiProxy_AzurermProvider)SetClientId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AzurermProvider)SetClientIdFilePath(val *string) {
+	_jsii_.Set(
+		j,
+		"clientIdFilePath",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AzurermProvider)SetClientSecret(val *string) {
 	_jsii_.Set(
 		j,
 		"clientSecret",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzurermProvider)SetClientSecretFilePath(val *string) {
+	_jsii_.Set(
+		j,
+		"clientSecretFilePath",
 		val,
 	)
 }
@@ -1162,10 +1226,26 @@ func (a *jsiiProxy_AzurermProvider) ResetClientId() {
 	)
 }
 
+func (a *jsiiProxy_AzurermProvider) ResetClientIdFilePath() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClientIdFilePath",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AzurermProvider) ResetClientSecret() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetClientSecret",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzurermProvider) ResetClientSecretFilePath() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClientSecretFilePath",
 		nil, // no parameters
 	)
 }

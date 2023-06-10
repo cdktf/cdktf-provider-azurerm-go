@@ -56,6 +56,14 @@ func (s *jsiiProxy_SpringCloudService) validatePutConfigServerGitSettingParamete
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudService) validatePutContainerRegistryParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudService) validatePutDefaultBuildServiceParameters(value *SpringCloudServiceDefaultBuildService) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudService) validatePutNetworkParameters(value *SpringCloudServiceNetwork) error {
 	return nil
 }

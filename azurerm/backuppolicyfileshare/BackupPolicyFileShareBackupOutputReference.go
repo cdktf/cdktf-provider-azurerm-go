@@ -30,6 +30,8 @@ type BackupPolicyFileShareBackupOutputReference interface {
 	Frequency() *string
 	SetFrequency(val *string)
 	FrequencyInput() *string
+	Hourly() BackupPolicyFileShareBackupHourlyOutputReference
+	HourlyInput() *BackupPolicyFileShareBackupHourly
 	InternalValue() *BackupPolicyFileShareBackup
 	SetInternalValue(val *BackupPolicyFileShareBackup)
 	// Experimental.
@@ -67,6 +69,9 @@ type BackupPolicyFileShareBackupOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutHourly(value *BackupPolicyFileShareBackupHourly)
+	ResetHourly()
+	ResetTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -137,6 +142,26 @@ func (j *jsiiProxy_BackupPolicyFileShareBackupOutputReference) FrequencyInput() 
 	_jsii_.Get(
 		j,
 		"frequencyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupPolicyFileShareBackupOutputReference) Hourly() BackupPolicyFileShareBackupHourlyOutputReference {
+	var returns BackupPolicyFileShareBackupHourlyOutputReference
+	_jsii_.Get(
+		j,
+		"hourly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupPolicyFileShareBackupOutputReference) HourlyInput() *BackupPolicyFileShareBackupHourly {
+	var returns *BackupPolicyFileShareBackupHourly
+	_jsii_.Get(
+		j,
+		"hourlyInput",
 		&returns,
 	)
 	return returns
@@ -481,6 +506,33 @@ func (b *jsiiProxy_BackupPolicyFileShareBackupOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BackupPolicyFileShareBackupOutputReference) PutHourly(value *BackupPolicyFileShareBackupHourly) {
+	if err := b.validatePutHourlyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putHourly",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BackupPolicyFileShareBackupOutputReference) ResetHourly() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetHourly",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupPolicyFileShareBackupOutputReference) ResetTime() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTime",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BackupPolicyFileShareBackupOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

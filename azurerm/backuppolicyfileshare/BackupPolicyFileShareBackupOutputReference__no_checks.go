@@ -44,6 +44,10 @@ func (b *jsiiProxy_BackupPolicyFileShareBackupOutputReference) validateInterpola
 	return nil
 }
 
+func (b *jsiiProxy_BackupPolicyFileShareBackupOutputReference) validatePutHourlyParameters(value *BackupPolicyFileShareBackupHourly) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupPolicyFileShareBackupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

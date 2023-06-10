@@ -56,6 +56,14 @@ func (a *jsiiProxy_AutomanageConfiguration) validatePutAntimalwareParameters(val
 	return nil
 }
 
+func (a *jsiiProxy_AutomanageConfiguration) validatePutAzureSecurityBaselineParameters(value *AutomanageConfigurationAzureSecurityBaseline) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutomanageConfiguration) validatePutBackupParameters(value *AutomanageConfigurationBackup) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomanageConfiguration) validatePutTimeoutsParameters(value *AutomanageConfigurationTimeouts) error {
 	return nil
 }

@@ -122,6 +122,28 @@ func (a *jsiiProxy_AutomanageConfiguration) validatePutAntimalwareParameters(val
 	return nil
 }
 
+func (a *jsiiProxy_AutomanageConfiguration) validatePutAzureSecurityBaselineParameters(value *AutomanageConfigurationAzureSecurityBaseline) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AutomanageConfiguration) validatePutBackupParameters(value *AutomanageConfigurationBackup) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AutomanageConfiguration) validatePutTimeoutsParameters(value *AutomanageConfigurationTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

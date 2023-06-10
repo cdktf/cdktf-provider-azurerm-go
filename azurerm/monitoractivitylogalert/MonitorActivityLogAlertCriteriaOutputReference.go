@@ -59,8 +59,8 @@ type MonitorActivityLogAlertCriteriaOutputReference interface {
 	ResourceGroups() *[]*string
 	SetResourceGroups(val *[]*string)
 	ResourceGroupsInput() *[]*string
-	ResourceHealth() MonitorActivityLogAlertCriteriaResourceHealthList
-	ResourceHealthInput() interface{}
+	ResourceHealth() MonitorActivityLogAlertCriteriaResourceHealthOutputReference
+	ResourceHealthInput() *MonitorActivityLogAlertCriteriaResourceHealth
 	ResourceId() *string
 	SetResourceId(val *string)
 	ResourceIdInput() *string
@@ -79,8 +79,8 @@ type MonitorActivityLogAlertCriteriaOutputReference interface {
 	ResourceTypes() *[]*string
 	SetResourceTypes(val *[]*string)
 	ResourceTypesInput() *[]*string
-	ServiceHealth() MonitorActivityLogAlertCriteriaServiceHealthList
-	ServiceHealthInput() interface{}
+	ServiceHealth() MonitorActivityLogAlertCriteriaServiceHealthOutputReference
+	ServiceHealthInput() *MonitorActivityLogAlertCriteriaServiceHealth
 	Status() *string
 	SetStatus(val *string)
 	Statuses() *[]*string
@@ -125,8 +125,8 @@ type MonitorActivityLogAlertCriteriaOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutResourceHealth(value interface{})
-	PutServiceHealth(value interface{})
+	PutResourceHealth(value *MonitorActivityLogAlertCriteriaResourceHealth)
+	PutServiceHealth(value *MonitorActivityLogAlertCriteriaServiceHealth)
 	ResetCaller()
 	ResetLevel()
 	ResetLevels()
@@ -413,8 +413,8 @@ func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) ResourceGroup
 	return returns
 }
 
-func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) ResourceHealth() MonitorActivityLogAlertCriteriaResourceHealthList {
-	var returns MonitorActivityLogAlertCriteriaResourceHealthList
+func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) ResourceHealth() MonitorActivityLogAlertCriteriaResourceHealthOutputReference {
+	var returns MonitorActivityLogAlertCriteriaResourceHealthOutputReference
 	_jsii_.Get(
 		j,
 		"resourceHealth",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) ResourceHealt
 	return returns
 }
 
-func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) ResourceHealthInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) ResourceHealthInput() *MonitorActivityLogAlertCriteriaResourceHealth {
+	var returns *MonitorActivityLogAlertCriteriaResourceHealth
 	_jsii_.Get(
 		j,
 		"resourceHealthInput",
@@ -553,8 +553,8 @@ func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) ResourceTypes
 	return returns
 }
 
-func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) ServiceHealth() MonitorActivityLogAlertCriteriaServiceHealthList {
-	var returns MonitorActivityLogAlertCriteriaServiceHealthList
+func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) ServiceHealth() MonitorActivityLogAlertCriteriaServiceHealthOutputReference {
+	var returns MonitorActivityLogAlertCriteriaServiceHealthOutputReference
 	_jsii_.Get(
 		j,
 		"serviceHealth",
@@ -563,8 +563,8 @@ func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) ServiceHealth
 	return returns
 }
 
-func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) ServiceHealthInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) ServiceHealthInput() *MonitorActivityLogAlertCriteriaServiceHealth {
+	var returns *MonitorActivityLogAlertCriteriaServiceHealth
 	_jsii_.Get(
 		j,
 		"serviceHealthInput",
@@ -1162,7 +1162,7 @@ func (m *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) Interpolation
 	return returns
 }
 
-func (m *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) PutResourceHealth(value interface{}) {
+func (m *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) PutResourceHealth(value *MonitorActivityLogAlertCriteriaResourceHealth) {
 	if err := m.validatePutResourceHealthParameters(value); err != nil {
 		panic(err)
 	}
@@ -1173,7 +1173,7 @@ func (m *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) PutResourceHe
 	)
 }
 
-func (m *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) PutServiceHealth(value interface{}) {
+func (m *jsiiProxy_MonitorActivityLogAlertCriteriaOutputReference) PutServiceHealth(value *MonitorActivityLogAlertCriteriaServiceHealth) {
 	if err := m.validatePutServiceHealthParameters(value); err != nil {
 		panic(err)
 	}

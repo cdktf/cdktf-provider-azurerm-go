@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service}.
 type SpringCloudService interface {
 	cdktf.TerraformResource
 	BuildAgentPoolSize() *string
@@ -25,10 +25,14 @@ type SpringCloudService interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ContainerRegistry() SpringCloudServiceContainerRegistryList
+	ContainerRegistryInput() interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultBuildService() SpringCloudServiceDefaultBuildServiceOutputReference
+	DefaultBuildServiceInput() *SpringCloudServiceDefaultBuildService
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -125,11 +129,15 @@ type SpringCloudService interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfigServerGitSetting(value *SpringCloudServiceConfigServerGitSetting)
+	PutContainerRegistry(value interface{})
+	PutDefaultBuildService(value *SpringCloudServiceDefaultBuildService)
 	PutNetwork(value *SpringCloudServiceNetwork)
 	PutTimeouts(value *SpringCloudServiceTimeouts)
 	PutTrace(value *SpringCloudServiceTrace)
 	ResetBuildAgentPoolSize()
 	ResetConfigServerGitSetting()
+	ResetContainerRegistry()
+	ResetDefaultBuildService()
 	ResetId()
 	ResetLogStreamPublicEndpointEnabled()
 	ResetNetwork()
@@ -227,11 +235,51 @@ func (j *jsiiProxy_SpringCloudService) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
+func (j *jsiiProxy_SpringCloudService) ContainerRegistry() SpringCloudServiceContainerRegistryList {
+	var returns SpringCloudServiceContainerRegistryList
+	_jsii_.Get(
+		j,
+		"containerRegistry",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudService) ContainerRegistryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"containerRegistryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpringCloudService) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudService) DefaultBuildService() SpringCloudServiceDefaultBuildServiceOutputReference {
+	var returns SpringCloudServiceDefaultBuildServiceOutputReference
+	_jsii_.Get(
+		j,
+		"defaultBuildService",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudService) DefaultBuildServiceInput() *SpringCloudServiceDefaultBuildService {
+	var returns *SpringCloudServiceDefaultBuildService
+	_jsii_.Get(
+		j,
+		"defaultBuildServiceInput",
 		&returns,
 	)
 	return returns
@@ -628,7 +676,7 @@ func (j *jsiiProxy_SpringCloudService) ZoneRedundantInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service} Resource.
 func NewSpringCloudService(scope constructs.Construct, id *string, config *SpringCloudServiceConfig) SpringCloudService {
 	_init_.Initialize()
 
@@ -646,7 +694,7 @@ func NewSpringCloudService(scope constructs.Construct, id *string, config *Sprin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service} Resource.
 func NewSpringCloudService_Override(s SpringCloudService, scope constructs.Construct, id *string, config *SpringCloudServiceConfig) {
 	_init_.Initialize()
 
@@ -1112,6 +1160,28 @@ func (s *jsiiProxy_SpringCloudService) PutConfigServerGitSetting(value *SpringCl
 	)
 }
 
+func (s *jsiiProxy_SpringCloudService) PutContainerRegistry(value interface{}) {
+	if err := s.validatePutContainerRegistryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putContainerRegistry",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SpringCloudService) PutDefaultBuildService(value *SpringCloudServiceDefaultBuildService) {
+	if err := s.validatePutDefaultBuildServiceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putDefaultBuildService",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SpringCloudService) PutNetwork(value *SpringCloudServiceNetwork) {
 	if err := s.validatePutNetworkParameters(value); err != nil {
 		panic(err)
@@ -1157,6 +1227,22 @@ func (s *jsiiProxy_SpringCloudService) ResetConfigServerGitSetting() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetConfigServerGitSetting",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudService) ResetContainerRegistry() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetContainerRegistry",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudService) ResetDefaultBuildService() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultBuildService",
 		nil, // no parameters
 	)
 }

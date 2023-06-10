@@ -60,6 +60,14 @@ func (j *jsiiProxy_BackupPolicyFileShareRetentionMonthlyOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_BackupPolicyFileShareRetentionMonthlyOutputReference) validateSetDaysParameters(val *[]*float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_BackupPolicyFileShareRetentionMonthlyOutputReference) validateSetIncludeLastDaysParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupPolicyFileShareRetentionMonthlyOutputReference) validateSetInternalValueParameters(val *BackupPolicyFileShareRetentionMonthly) error {
 	return nil
 }

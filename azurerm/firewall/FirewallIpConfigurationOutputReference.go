@@ -71,6 +71,7 @@ type FirewallIpConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPublicIpAddressId()
 	ResetSubnetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -527,6 +528,14 @@ func (f *jsiiProxy_FirewallIpConfigurationOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FirewallIpConfigurationOutputReference) ResetPublicIpAddressId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetPublicIpAddressId",
+		nil, // no parameters
+	)
 }
 
 func (f *jsiiProxy_FirewallIpConfigurationOutputReference) ResetSubnetId() {

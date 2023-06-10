@@ -32,8 +32,6 @@ type PostgresqlFlexibleServerIdentityOutputReference interface {
 	IdentityIdsInput() *[]*string
 	InternalValue() *PostgresqlFlexibleServerIdentity
 	SetInternalValue(val *PostgresqlFlexibleServerIdentity)
-	PrincipalId() *string
-	TenantId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,7 +67,6 @@ type PostgresqlFlexibleServerIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetIdentityIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -150,26 +147,6 @@ func (j *jsiiProxy_PostgresqlFlexibleServerIdentityOutputReference) InternalValu
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PostgresqlFlexibleServerIdentityOutputReference) PrincipalId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"principalId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PostgresqlFlexibleServerIdentityOutputReference) TenantId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tenantId",
 		&returns,
 	)
 	return returns
@@ -504,14 +481,6 @@ func (p *jsiiProxy_PostgresqlFlexibleServerIdentityOutputReference) Interpolatio
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PostgresqlFlexibleServerIdentityOutputReference) ResetIdentityIds() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetIdentityIds",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PostgresqlFlexibleServerIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

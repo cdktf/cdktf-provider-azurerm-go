@@ -120,6 +120,10 @@ func (j *jsiiProxy_MachineLearningComputeInstance) validateSetNameParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_MachineLearningComputeInstance) validateSetNodePublicIpEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MachineLearningComputeInstance) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

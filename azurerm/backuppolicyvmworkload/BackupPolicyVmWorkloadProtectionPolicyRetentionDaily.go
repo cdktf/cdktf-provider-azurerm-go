@@ -2,7 +2,7 @@ package backuppolicyvmworkload
 
 
 type BackupPolicyVmWorkloadProtectionPolicyRetentionDaily struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/backup_policy_vm_workload#count BackupPolicyVmWorkload#count}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/backup_policy_vm_workload#count BackupPolicyVmWorkload#count}.
 	Count *float64 `field:"required" json:"count" yaml:"count"`
 }
 

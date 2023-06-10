@@ -56,6 +56,10 @@ func (j *jsiiProxy_LoadTestIdentityOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
+func (j *jsiiProxy_LoadTestIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadTestIdentityOutputReference) validateSetInternalValueParameters(val *LoadTestIdentity) error {
 	return nil
 }

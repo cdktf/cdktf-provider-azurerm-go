@@ -32,6 +32,8 @@ type HpcCacheIdentityOutputReference interface {
 	IdentityIdsInput() *[]*string
 	InternalValue() *HpcCacheIdentity
 	SetInternalValue(val *HpcCacheIdentity)
+	PrincipalId() *string
+	TenantId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +69,7 @@ type HpcCacheIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIdentityIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +150,26 @@ func (j *jsiiProxy_HpcCacheIdentityOutputReference) InternalValue() *HpcCacheIde
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HpcCacheIdentityOutputReference) PrincipalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HpcCacheIdentityOutputReference) TenantId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantId",
 		&returns,
 	)
 	return returns
@@ -481,6 +504,14 @@ func (h *jsiiProxy_HpcCacheIdentityOutputReference) InterpolationForAttribute(pr
 	)
 
 	return returns
+}
+
+func (h *jsiiProxy_HpcCacheIdentityOutputReference) ResetIdentityIds() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetIdentityIds",
+		nil, // no parameters
+	)
 }
 
 func (h *jsiiProxy_HpcCacheIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

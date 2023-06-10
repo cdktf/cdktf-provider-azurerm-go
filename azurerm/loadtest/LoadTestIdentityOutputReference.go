@@ -27,6 +27,9 @@ type LoadTestIdentityOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdentityIds() *[]*string
+	SetIdentityIds(val *[]*string)
+	IdentityIdsInput() *[]*string
 	InternalValue() *LoadTestIdentity
 	SetInternalValue(val *LoadTestIdentity)
 	PrincipalId() *string
@@ -66,6 +69,7 @@ type LoadTestIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIdentityIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -116,6 +120,26 @@ func (j *jsiiProxy_LoadTestIdentityOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadTestIdentityOutputReference) IdentityIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadTestIdentityOutputReference) IdentityIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIdsInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +261,17 @@ func (j *jsiiProxy_LoadTestIdentityOutputReference)SetComplexObjectIsFromSet(val
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadTestIdentityOutputReference)SetIdentityIds(val *[]*string) {
+	if err := j.validateSetIdentityIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityIds",
 		val,
 	)
 }
@@ -469,6 +504,14 @@ func (l *jsiiProxy_LoadTestIdentityOutputReference) InterpolationForAttribute(pr
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LoadTestIdentityOutputReference) ResetIdentityIds() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetIdentityIds",
+		nil, // no parameters
+	)
 }
 
 func (l *jsiiProxy_LoadTestIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

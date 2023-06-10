@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/synapse_integration_runtime_self_hosted azurerm_synapse_integration_runtime_self_hosted}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/synapse_integration_runtime_self_hosted azurerm_synapse_integration_runtime_self_hosted}.
 type SynapseIntegrationRuntimeSelfHosted interface {
 	cdktf.TerraformResource
 	AuthorizationKeyPrimary() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_SynapseIntegrationRuntimeSelfHosted) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/synapse_integration_runtime_self_hosted azurerm_synapse_integration_runtime_self_hosted} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/synapse_integration_runtime_self_hosted azurerm_synapse_integration_runtime_self_hosted} Resource.
 func NewSynapseIntegrationRuntimeSelfHosted(scope constructs.Construct, id *string, config *SynapseIntegrationRuntimeSelfHostedConfig) SynapseIntegrationRuntimeSelfHosted {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewSynapseIntegrationRuntimeSelfHosted(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.59.0/docs/resources/synapse_integration_runtime_self_hosted azurerm_synapse_integration_runtime_self_hosted} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/synapse_integration_runtime_self_hosted azurerm_synapse_integration_runtime_self_hosted} Resource.
 func NewSynapseIntegrationRuntimeSelfHosted_Override(s SynapseIntegrationRuntimeSelfHosted, scope constructs.Construct, id *string, config *SynapseIntegrationRuntimeSelfHostedConfig) {
 	_init_.Initialize()
 
