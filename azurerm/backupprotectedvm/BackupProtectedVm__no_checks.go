@@ -96,6 +96,10 @@ func (j *jsiiProxy_BackupProtectedVm) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
+func (j *jsiiProxy_BackupProtectedVm) validateSetProtectionStateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupProtectedVm) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

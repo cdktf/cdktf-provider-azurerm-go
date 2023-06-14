@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/management_group_template_deployment azurerm_management_group_template_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/management_group_template_deployment azurerm_management_group_template_deployment}.
 type ManagementGroupTemplateDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -510,7 +510,7 @@ func (j *jsiiProxy_ManagementGroupTemplateDeployment) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/management_group_template_deployment azurerm_management_group_template_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/management_group_template_deployment azurerm_management_group_template_deployment} Resource.
 func NewManagementGroupTemplateDeployment(scope constructs.Construct, id *string, config *ManagementGroupTemplateDeploymentConfig) ManagementGroupTemplateDeployment {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewManagementGroupTemplateDeployment(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/management_group_template_deployment azurerm_management_group_template_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/management_group_template_deployment azurerm_management_group_template_deployment} Resource.
 func NewManagementGroupTemplateDeployment_Override(m ManagementGroupTemplateDeployment, scope constructs.Construct, id *string, config *ManagementGroupTemplateDeploymentConfig) {
 	_init_.Initialize()
 

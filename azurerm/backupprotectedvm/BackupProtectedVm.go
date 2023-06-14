@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/backup_protected_vm azurerm_backup_protected_vm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/backup_protected_vm azurerm_backup_protected_vm}.
 type BackupProtectedVm interface {
 	cdktf.TerraformResource
 	BackupPolicyId() *string
@@ -54,6 +54,9 @@ type BackupProtectedVm interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	ProtectionState() *string
+	SetProtectionState(val *string)
+	ProtectionStateInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -107,12 +110,14 @@ type BackupProtectedVm interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *BackupProtectedVmTimeouts)
+	ResetBackupPolicyId()
 	ResetExcludeDiskLuns()
 	ResetId()
 	ResetIncludeDiskLuns()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProtectionState()
 	ResetSourceVmId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -310,6 +315,26 @@ func (j *jsiiProxy_BackupProtectedVm) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_BackupProtectedVm) ProtectionState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protectionState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupProtectedVm) ProtectionStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protectionStateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BackupProtectedVm) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -451,7 +476,7 @@ func (j *jsiiProxy_BackupProtectedVm) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/backup_protected_vm azurerm_backup_protected_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/backup_protected_vm azurerm_backup_protected_vm} Resource.
 func NewBackupProtectedVm(scope constructs.Construct, id *string, config *BackupProtectedVmConfig) BackupProtectedVm {
 	_init_.Initialize()
 
@@ -469,7 +494,7 @@ func NewBackupProtectedVm(scope constructs.Construct, id *string, config *Backup
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/backup_protected_vm azurerm_backup_protected_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/backup_protected_vm azurerm_backup_protected_vm} Resource.
 func NewBackupProtectedVm_Override(b BackupProtectedVm, scope constructs.Construct, id *string, config *BackupProtectedVmConfig) {
 	_init_.Initialize()
 
@@ -569,6 +594,17 @@ func (j *jsiiProxy_BackupProtectedVm)SetLifecycle(val *cdktf.TerraformResourceLi
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupProtectedVm)SetProtectionState(val *string) {
+	if err := j.validateSetProtectionStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"protectionState",
 		val,
 	)
 }
@@ -902,6 +938,14 @@ func (b *jsiiProxy_BackupProtectedVm) PutTimeouts(value *BackupProtectedVmTimeou
 	)
 }
 
+func (b *jsiiProxy_BackupProtectedVm) ResetBackupPolicyId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetBackupPolicyId",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BackupProtectedVm) ResetExcludeDiskLuns() {
 	_jsii_.InvokeVoid(
 		b,
@@ -930,6 +974,14 @@ func (b *jsiiProxy_BackupProtectedVm) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupProtectedVm) ResetProtectionState() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetProtectionState",
 		nil, // no parameters
 	)
 }

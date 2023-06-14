@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway}.
 type SpringCloudGateway interface {
 	cdktf.TerraformResource
 	ApiMetadata() SpringCloudGatewayApiMetadataOutputReference
@@ -19,6 +19,8 @@ type SpringCloudGateway interface {
 	ApplicationPerformanceMonitoringTypesInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientAuthorization() SpringCloudGatewayClientAuthorizationOutputReference
+	ClientAuthorizationInput() *SpringCloudGatewayClientAuthorization
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -122,12 +124,14 @@ type SpringCloudGateway interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutApiMetadata(value *SpringCloudGatewayApiMetadata)
+	PutClientAuthorization(value *SpringCloudGatewayClientAuthorization)
 	PutCors(value *SpringCloudGatewayCors)
 	PutQuota(value *SpringCloudGatewayQuota)
 	PutSso(value *SpringCloudGatewaySso)
 	PutTimeouts(value *SpringCloudGatewayTimeouts)
 	ResetApiMetadata()
 	ResetApplicationPerformanceMonitoringTypes()
+	ResetClientAuthorization()
 	ResetCors()
 	ResetEnvironmentVariables()
 	ResetHttpsOnly()
@@ -201,6 +205,26 @@ func (j *jsiiProxy_SpringCloudGateway) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGateway) ClientAuthorization() SpringCloudGatewayClientAuthorizationOutputReference {
+	var returns SpringCloudGatewayClientAuthorizationOutputReference
+	_jsii_.Get(
+		j,
+		"clientAuthorization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGateway) ClientAuthorizationInput() *SpringCloudGatewayClientAuthorization {
+	var returns *SpringCloudGatewayClientAuthorization
+	_jsii_.Get(
+		j,
+		"clientAuthorizationInput",
 		&returns,
 	)
 	return returns
@@ -607,7 +631,7 @@ func (j *jsiiProxy_SpringCloudGateway) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway} Resource.
 func NewSpringCloudGateway(scope constructs.Construct, id *string, config *SpringCloudGatewayConfig) SpringCloudGateway {
 	_init_.Initialize()
 
@@ -625,7 +649,7 @@ func NewSpringCloudGateway(scope constructs.Construct, id *string, config *Sprin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway} Resource.
 func NewSpringCloudGateway_Override(s SpringCloudGateway, scope constructs.Construct, id *string, config *SpringCloudGatewayConfig) {
 	_init_.Initialize()
 
@@ -1080,6 +1104,17 @@ func (s *jsiiProxy_SpringCloudGateway) PutApiMetadata(value *SpringCloudGatewayA
 	)
 }
 
+func (s *jsiiProxy_SpringCloudGateway) PutClientAuthorization(value *SpringCloudGatewayClientAuthorization) {
+	if err := s.validatePutClientAuthorizationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putClientAuthorization",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SpringCloudGateway) PutCors(value *SpringCloudGatewayCors) {
 	if err := s.validatePutCorsParameters(value); err != nil {
 		panic(err)
@@ -1136,6 +1171,14 @@ func (s *jsiiProxy_SpringCloudGateway) ResetApplicationPerformanceMonitoringType
 	_jsii_.InvokeVoid(
 		s,
 		"resetApplicationPerformanceMonitoringTypes",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudGateway) ResetClientAuthorization() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetClientAuthorization",
 		nil, // no parameters
 	)
 }

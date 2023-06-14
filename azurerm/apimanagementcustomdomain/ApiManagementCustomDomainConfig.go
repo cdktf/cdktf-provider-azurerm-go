@@ -19,36 +19,36 @@ type ApiManagementCustomDomainConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/api_management_custom_domain#api_management_id ApiManagementCustomDomain#api_management_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_custom_domain#api_management_id ApiManagementCustomDomain#api_management_id}.
 	ApiManagementId *string `field:"required" json:"apiManagementId" yaml:"apiManagementId"`
 	// developer_portal block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/api_management_custom_domain#developer_portal ApiManagementCustomDomain#developer_portal}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_custom_domain#developer_portal ApiManagementCustomDomain#developer_portal}
 	DeveloperPortal interface{} `field:"optional" json:"developerPortal" yaml:"developerPortal"`
 	// gateway block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/api_management_custom_domain#gateway ApiManagementCustomDomain#gateway}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_custom_domain#gateway ApiManagementCustomDomain#gateway}
 	Gateway interface{} `field:"optional" json:"gateway" yaml:"gateway"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/api_management_custom_domain#id ApiManagementCustomDomain#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_custom_domain#id ApiManagementCustomDomain#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// management block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/api_management_custom_domain#management ApiManagementCustomDomain#management}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_custom_domain#management ApiManagementCustomDomain#management}
 	Management interface{} `field:"optional" json:"management" yaml:"management"`
 	// portal block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/api_management_custom_domain#portal ApiManagementCustomDomain#portal}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_custom_domain#portal ApiManagementCustomDomain#portal}
 	Portal interface{} `field:"optional" json:"portal" yaml:"portal"`
 	// scm block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/api_management_custom_domain#scm ApiManagementCustomDomain#scm}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_custom_domain#scm ApiManagementCustomDomain#scm}
 	Scm interface{} `field:"optional" json:"scm" yaml:"scm"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/api_management_custom_domain#timeouts ApiManagementCustomDomain#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_custom_domain#timeouts ApiManagementCustomDomain#timeouts}
 	Timeouts *ApiManagementCustomDomainTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

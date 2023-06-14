@@ -80,6 +80,10 @@ func (j *jsiiProxy_NginxCertificateTimeoutsOutputReference) validateSetTerraform
 	return nil
 }
 
+func (j *jsiiProxy_NginxCertificateTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewNginxCertificateTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

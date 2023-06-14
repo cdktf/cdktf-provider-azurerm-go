@@ -17,6 +17,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "applicationPerformanceMonitoringTypes", GoGetter: "ApplicationPerformanceMonitoringTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationPerformanceMonitoringTypesInput", GoGetter: "ApplicationPerformanceMonitoringTypesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "clientAuthorization", GoGetter: "ClientAuthorization"},
+			_jsii_.MemberProperty{JsiiProperty: "clientAuthorizationInput", GoGetter: "ClientAuthorizationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "cors", GoGetter: "Cors"},
@@ -54,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publicNetworkAccessEnabled", GoGetter: "PublicNetworkAccessEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "publicNetworkAccessEnabledInput", GoGetter: "PublicNetworkAccessEnabledInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putApiMetadata", GoMethod: "PutApiMetadata"},
+			_jsii_.MemberMethod{JsiiMethod: "putClientAuthorization", GoMethod: "PutClientAuthorization"},
 			_jsii_.MemberMethod{JsiiMethod: "putCors", GoMethod: "PutCors"},
 			_jsii_.MemberMethod{JsiiMethod: "putQuota", GoMethod: "PutQuota"},
 			_jsii_.MemberMethod{JsiiMethod: "putSso", GoMethod: "PutSso"},
@@ -63,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApiMetadata", GoMethod: "ResetApiMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApplicationPerformanceMonitoringTypes", GoMethod: "ResetApplicationPerformanceMonitoringTypes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClientAuthorization", GoMethod: "ResetClientAuthorization"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCors", GoMethod: "ResetCors"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentVariables", GoMethod: "ResetEnvironmentVariables"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpsOnly", GoMethod: "ResetHttpsOnly"},
@@ -144,6 +148,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SpringCloudGatewayApiMetadataOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.springCloudGateway.SpringCloudGatewayClientAuthorization",
+		reflect.TypeOf((*SpringCloudGatewayClientAuthorization)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.springCloudGateway.SpringCloudGatewayClientAuthorizationOutputReference",
+		reflect.TypeOf((*SpringCloudGatewayClientAuthorizationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "certificateIds", GoGetter: "CertificateIds"},
+			_jsii_.MemberProperty{JsiiProperty: "certificateIdsInput", GoGetter: "CertificateIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCertificateIds", GoMethod: "ResetCertificateIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVerificationEnabled", GoMethod: "ResetVerificationEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "verificationEnabled", GoGetter: "VerificationEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "verificationEnabledInput", GoGetter: "VerificationEnabledInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SpringCloudGatewayClientAuthorizationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

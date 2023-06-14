@@ -196,6 +196,10 @@ func (j *jsiiProxy_BatchPool) validateSetStopPendingResizeOperationParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_BatchPool) validateSetTargetNodeCommunicationModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchPool) validateSetVmSizeParameters(val *string) error {
 	return nil
 }

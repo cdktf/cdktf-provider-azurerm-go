@@ -9,9 +9,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/data-sources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan}.
 type DataAzurermSiteRecoveryReplicationRecoveryPlan interface {
 	cdktf.TerraformDataSource
+	AzureToAzureSettings() DataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -109,6 +110,16 @@ type DataAzurermSiteRecoveryReplicationRecoveryPlan interface {
 // The jsii proxy struct for DataAzurermSiteRecoveryReplicationRecoveryPlan
 type jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlan struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlan) AzureToAzureSettings() DataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsList {
+	var returns DataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsList
+	_jsii_.Get(
+		j,
+		"azureToAzureSettings",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlan) CdktfStack() cdktf.TerraformStack {
@@ -372,7 +383,7 @@ func (j *jsiiProxy_DataAzurermSiteRecoveryReplicationRecoveryPlan) TimeoutsInput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/data-sources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Data Source.
 func NewDataAzurermSiteRecoveryReplicationRecoveryPlan(scope constructs.Construct, id *string, config *DataAzurermSiteRecoveryReplicationRecoveryPlanConfig) DataAzurermSiteRecoveryReplicationRecoveryPlan {
 	_init_.Initialize()
 
@@ -390,7 +401,7 @@ func NewDataAzurermSiteRecoveryReplicationRecoveryPlan(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/data-sources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Data Source.
 func NewDataAzurermSiteRecoveryReplicationRecoveryPlan_Override(d DataAzurermSiteRecoveryReplicationRecoveryPlan, scope constructs.Construct, id *string, config *DataAzurermSiteRecoveryReplicationRecoveryPlanConfig) {
 	_init_.Initialize()
 

@@ -2,13 +2,13 @@ package networkmanagernetworkgroup
 
 
 type NetworkManagerNetworkGroupTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/network_manager_network_group#create NetworkManagerNetworkGroup#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/network_manager_network_group#create NetworkManagerNetworkGroup#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/network_manager_network_group#delete NetworkManagerNetworkGroup#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/network_manager_network_group#delete NetworkManagerNetworkGroup#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/network_manager_network_group#read NetworkManagerNetworkGroup#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/network_manager_network_group#read NetworkManagerNetworkGroup#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/network_manager_network_group#update NetworkManagerNetworkGroup#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/network_manager_network_group#update NetworkManagerNetworkGroup#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

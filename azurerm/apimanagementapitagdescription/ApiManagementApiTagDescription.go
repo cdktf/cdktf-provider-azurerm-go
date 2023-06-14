@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/api_management_api_tag_description azurerm_api_management_api_tag_description}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_api_tag_description azurerm_api_management_api_tag_description}.
 type ApiManagementApiTagDescription interface {
 	cdktf.TerraformResource
 	ApiTagId() *string
@@ -405,7 +405,7 @@ func (j *jsiiProxy_ApiManagementApiTagDescription) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/api_management_api_tag_description azurerm_api_management_api_tag_description} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_api_tag_description azurerm_api_management_api_tag_description} Resource.
 func NewApiManagementApiTagDescription(scope constructs.Construct, id *string, config *ApiManagementApiTagDescriptionConfig) ApiManagementApiTagDescription {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewApiManagementApiTagDescription(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/api_management_api_tag_description azurerm_api_management_api_tag_description} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_api_tag_description azurerm_api_management_api_tag_description} Resource.
 func NewApiManagementApiTagDescription_Override(a ApiManagementApiTagDescription, scope constructs.Construct, id *string, config *ApiManagementApiTagDescriptionConfig) {
 	_init_.Initialize()
 

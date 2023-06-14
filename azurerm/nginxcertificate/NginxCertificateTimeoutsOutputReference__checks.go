@@ -227,6 +227,14 @@ func (j *jsiiProxy_NginxCertificateTimeoutsOutputReference) validateSetTerraform
 	return nil
 }
 
+func (j *jsiiProxy_NginxCertificateTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewNginxCertificateTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")

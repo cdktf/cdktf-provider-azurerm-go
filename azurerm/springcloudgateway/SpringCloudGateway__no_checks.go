@@ -56,6 +56,10 @@ func (s *jsiiProxy_SpringCloudGateway) validatePutApiMetadataParameters(value *S
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudGateway) validatePutClientAuthorizationParameters(value *SpringCloudGatewayClientAuthorization) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudGateway) validatePutCorsParameters(value *SpringCloudGatewayCors) error {
 	return nil
 }

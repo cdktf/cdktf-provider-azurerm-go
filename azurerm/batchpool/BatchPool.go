@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/batch_pool azurerm_batch_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/batch_pool azurerm_batch_pool}.
 type BatchPool interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -114,6 +114,9 @@ type BatchPool interface {
 	StopPendingResizeOperationInput() interface{}
 	StorageImageReference() BatchPoolStorageImageReferenceOutputReference
 	StorageImageReferenceInput() *BatchPoolStorageImageReference
+	TargetNodeCommunicationMode() *string
+	SetTargetNodeCommunicationMode(val *string)
+	TargetNodeCommunicationModeInput() *string
 	TaskSchedulingPolicy() BatchPoolTaskSchedulingPolicyList
 	TaskSchedulingPolicyInput() interface{}
 	// Experimental.
@@ -196,6 +199,7 @@ type BatchPool interface {
 	ResetOverrideLogicalId()
 	ResetStartTask()
 	ResetStopPendingResizeOperation()
+	ResetTargetNodeCommunicationMode()
 	ResetTaskSchedulingPolicy()
 	ResetTimeouts()
 	ResetUserAccounts()
@@ -845,6 +849,26 @@ func (j *jsiiProxy_BatchPool) StorageImageReferenceInput() *BatchPoolStorageImag
 	return returns
 }
 
+func (j *jsiiProxy_BatchPool) TargetNodeCommunicationMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetNodeCommunicationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchPool) TargetNodeCommunicationModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetNodeCommunicationModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BatchPool) TaskSchedulingPolicy() BatchPoolTaskSchedulingPolicyList {
 	var returns BatchPoolTaskSchedulingPolicyList
 	_jsii_.Get(
@@ -976,7 +1000,7 @@ func (j *jsiiProxy_BatchPool) WindowsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/batch_pool azurerm_batch_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/batch_pool azurerm_batch_pool} Resource.
 func NewBatchPool(scope constructs.Construct, id *string, config *BatchPoolConfig) BatchPool {
 	_init_.Initialize()
 
@@ -994,7 +1018,7 @@ func NewBatchPool(scope constructs.Construct, id *string, config *BatchPoolConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/batch_pool azurerm_batch_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/batch_pool azurerm_batch_pool} Resource.
 func NewBatchPool_Override(b BatchPool, scope constructs.Construct, id *string, config *BatchPoolConfig) {
 	_init_.Initialize()
 
@@ -1201,6 +1225,17 @@ func (j *jsiiProxy_BatchPool)SetStopPendingResizeOperation(val interface{}) {
 	_jsii_.Set(
 		j,
 		"stopPendingResizeOperation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BatchPool)SetTargetNodeCommunicationMode(val *string) {
+	if err := j.validateSetTargetNodeCommunicationModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetNodeCommunicationMode",
 		val,
 	)
 }
@@ -1833,6 +1868,14 @@ func (b *jsiiProxy_BatchPool) ResetStopPendingResizeOperation() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetStopPendingResizeOperation",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchPool) ResetTargetNodeCommunicationMode() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTargetNodeCommunicationMode",
 		nil, // no parameters
 	)
 }

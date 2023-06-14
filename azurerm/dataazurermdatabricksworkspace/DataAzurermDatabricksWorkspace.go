@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/data-sources/databricks_workspace azurerm_databricks_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/databricks_workspace azurerm_databricks_workspace}.
 type DataAzurermDatabricksWorkspace interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -418,7 +418,7 @@ func (j *jsiiProxy_DataAzurermDatabricksWorkspace) WorkspaceUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/data-sources/databricks_workspace azurerm_databricks_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/databricks_workspace azurerm_databricks_workspace} Data Source.
 func NewDataAzurermDatabricksWorkspace(scope constructs.Construct, id *string, config *DataAzurermDatabricksWorkspaceConfig) DataAzurermDatabricksWorkspace {
 	_init_.Initialize()
 
@@ -436,7 +436,7 @@ func NewDataAzurermDatabricksWorkspace(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/data-sources/databricks_workspace azurerm_databricks_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/databricks_workspace azurerm_databricks_workspace} Data Source.
 func NewDataAzurermDatabricksWorkspace_Override(d DataAzurermDatabricksWorkspace, scope constructs.Construct, id *string, config *DataAzurermDatabricksWorkspaceConfig) {
 	_init_.Initialize()
 

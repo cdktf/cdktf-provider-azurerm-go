@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/data-sources/extended_locations azurerm_extended_locations}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/extended_locations azurerm_extended_locations}.
 type DataAzurermExtendedLocations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -316,7 +316,7 @@ func (j *jsiiProxy_DataAzurermExtendedLocations) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/data-sources/extended_locations azurerm_extended_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/extended_locations azurerm_extended_locations} Data Source.
 func NewDataAzurermExtendedLocations(scope constructs.Construct, id *string, config *DataAzurermExtendedLocationsConfig) DataAzurermExtendedLocations {
 	_init_.Initialize()
 
@@ -334,7 +334,7 @@ func NewDataAzurermExtendedLocations(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/data-sources/extended_locations azurerm_extended_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/extended_locations azurerm_extended_locations} Data Source.
 func NewDataAzurermExtendedLocations_Override(d DataAzurermExtendedLocations, scope constructs.Construct, id *string, config *DataAzurermExtendedLocationsConfig) {
 	_init_.Initialize()
 

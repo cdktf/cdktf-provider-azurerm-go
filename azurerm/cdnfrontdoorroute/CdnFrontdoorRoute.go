@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/cdn_frontdoor_route azurerm_cdn_frontdoor_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cdn_frontdoor_route azurerm_cdn_frontdoor_route}.
 type CdnFrontdoorRoute interface {
 	cdktf.TerraformResource
 	Cache() CdnFrontdoorRouteCacheOutputReference
@@ -640,7 +640,7 @@ func (j *jsiiProxy_CdnFrontdoorRoute) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/cdn_frontdoor_route azurerm_cdn_frontdoor_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cdn_frontdoor_route azurerm_cdn_frontdoor_route} Resource.
 func NewCdnFrontdoorRoute(scope constructs.Construct, id *string, config *CdnFrontdoorRouteConfig) CdnFrontdoorRoute {
 	_init_.Initialize()
 
@@ -658,7 +658,7 @@ func NewCdnFrontdoorRoute(scope constructs.Construct, id *string, config *CdnFro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.60.0/docs/resources/cdn_frontdoor_route azurerm_cdn_frontdoor_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cdn_frontdoor_route azurerm_cdn_frontdoor_route} Resource.
 func NewCdnFrontdoorRoute_Override(c CdnFrontdoorRoute, scope constructs.Construct, id *string, config *CdnFrontdoorRouteConfig) {
 	_init_.Initialize()
 

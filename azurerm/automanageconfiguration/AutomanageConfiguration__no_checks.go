@@ -116,6 +116,10 @@ func (j *jsiiProxy_AutomanageConfiguration) validateSetLocationParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_AutomanageConfiguration) validateSetLogAnalyticsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomanageConfiguration) validateSetNameParameters(val *string) error {
 	return nil
 }
