@@ -2,10 +2,10 @@ package datafactorylinkedservicesftp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/datafactorylinkedservicesftp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/datafactorylinkedservicesftp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

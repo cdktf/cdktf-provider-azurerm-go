@@ -2,9 +2,9 @@ package siterecoveryhypervreplicationpolicyassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/siterecoveryhypervreplicationpolicyassociation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/siterecoveryhypervreplicationpolicyassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

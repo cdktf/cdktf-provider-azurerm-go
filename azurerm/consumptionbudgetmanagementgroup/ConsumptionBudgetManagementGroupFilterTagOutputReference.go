@@ -2,9 +2,9 @@ package consumptionbudgetmanagementgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v7/consumptionbudgetmanagementgroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/consumptionbudgetmanagementgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
