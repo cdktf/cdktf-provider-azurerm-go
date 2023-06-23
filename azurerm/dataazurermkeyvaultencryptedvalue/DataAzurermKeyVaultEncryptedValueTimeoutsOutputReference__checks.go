@@ -165,6 +165,8 @@ func (j *jsiiProxy_DataAzurermKeyVaultEncryptedValueTimeoutsOutputReference) val
 
 func (j *jsiiProxy_DataAzurermKeyVaultEncryptedValueTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataAzurermKeyVaultEncryptedValueTimeouts:
 		val := val.(*DataAzurermKeyVaultEncryptedValueTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_DataAzurermKeyVaultEncryptedValueTimeoutsOutputReference) val
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAzurermKeyVaultEncryptedValueTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAzurermKeyVaultEncryptedValueTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -181,6 +181,8 @@ func (j *jsiiProxy_NetworkPacketCaptureTimeoutsOutputReference) validateSetDelet
 
 func (j *jsiiProxy_NetworkPacketCaptureTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *NetworkPacketCaptureTimeouts:
 		val := val.(*NetworkPacketCaptureTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_NetworkPacketCaptureTimeoutsOutputReference) validateSetInter
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *NetworkPacketCaptureTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *NetworkPacketCaptureTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

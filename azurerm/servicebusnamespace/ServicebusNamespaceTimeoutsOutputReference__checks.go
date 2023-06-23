@@ -181,6 +181,8 @@ func (j *jsiiProxy_ServicebusNamespaceTimeoutsOutputReference) validateSetDelete
 
 func (j *jsiiProxy_ServicebusNamespaceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ServicebusNamespaceTimeouts:
 		val := val.(*ServicebusNamespaceTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_ServicebusNamespaceTimeoutsOutputReference) validateSetIntern
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ServicebusNamespaceTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ServicebusNamespaceTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -2,14 +2,14 @@ package cosmosdbcassandrakeyspace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/cosmosdbcassandrakeyspace/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/cosmosdbcassandrakeyspace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_cassandra_keyspace azurerm_cosmosdb_cassandra_keyspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_cassandra_keyspace azurerm_cosmosdb_cassandra_keyspace}.
 type CosmosdbCassandraKeyspace interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_CosmosdbCassandraKeyspace) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_cassandra_keyspace azurerm_cosmosdb_cassandra_keyspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_cassandra_keyspace azurerm_cosmosdb_cassandra_keyspace} Resource.
 func NewCosmosdbCassandraKeyspace(scope constructs.Construct, id *string, config *CosmosdbCassandraKeyspaceConfig) CosmosdbCassandraKeyspace {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewCosmosdbCassandraKeyspace(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_cassandra_keyspace azurerm_cosmosdb_cassandra_keyspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_cassandra_keyspace azurerm_cosmosdb_cassandra_keyspace} Resource.
 func NewCosmosdbCassandraKeyspace_Override(c CosmosdbCassandraKeyspace, scope constructs.Construct, id *string, config *CosmosdbCassandraKeyspaceConfig) {
 	_init_.Initialize()
 

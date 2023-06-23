@@ -181,6 +181,8 @@ func (j *jsiiProxy_NginxDeploymentTimeoutsOutputReference) validateSetDeletePara
 
 func (j *jsiiProxy_NginxDeploymentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *NginxDeploymentTimeouts:
 		val := val.(*NginxDeploymentTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_NginxDeploymentTimeoutsOutputReference) validateSetInternalVa
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *NginxDeploymentTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *NginxDeploymentTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

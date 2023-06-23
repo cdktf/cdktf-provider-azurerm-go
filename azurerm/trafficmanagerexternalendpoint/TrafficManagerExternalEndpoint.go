@@ -2,14 +2,14 @@ package trafficmanagerexternalendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/trafficmanagerexternalendpoint/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/trafficmanagerexternalendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/traffic_manager_external_endpoint azurerm_traffic_manager_external_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/traffic_manager_external_endpoint azurerm_traffic_manager_external_endpoint}.
 type TrafficManagerExternalEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -547,7 +547,7 @@ func (j *jsiiProxy_TrafficManagerExternalEndpoint) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/traffic_manager_external_endpoint azurerm_traffic_manager_external_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/traffic_manager_external_endpoint azurerm_traffic_manager_external_endpoint} Resource.
 func NewTrafficManagerExternalEndpoint(scope constructs.Construct, id *string, config *TrafficManagerExternalEndpointConfig) TrafficManagerExternalEndpoint {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewTrafficManagerExternalEndpoint(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/traffic_manager_external_endpoint azurerm_traffic_manager_external_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/traffic_manager_external_endpoint azurerm_traffic_manager_external_endpoint} Resource.
 func NewTrafficManagerExternalEndpoint_Override(t TrafficManagerExternalEndpoint, scope constructs.Construct, id *string, config *TrafficManagerExternalEndpointConfig) {
 	_init_.Initialize()
 

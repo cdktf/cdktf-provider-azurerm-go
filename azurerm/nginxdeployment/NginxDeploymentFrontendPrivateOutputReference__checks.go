@@ -173,6 +173,8 @@ func (j *jsiiProxy_NginxDeploymentFrontendPrivateOutputReference) validateSetCom
 
 func (j *jsiiProxy_NginxDeploymentFrontendPrivateOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *NginxDeploymentFrontendPrivate:
 		val := val.(*NginxDeploymentFrontendPrivate)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_NginxDeploymentFrontendPrivateOutputReference) validateSetInt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *NginxDeploymentFrontendPrivate, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *NginxDeploymentFrontendPrivate; received %#v (a %T)", val, val)
 		}
 	}
 

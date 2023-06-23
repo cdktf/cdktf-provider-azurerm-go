@@ -165,6 +165,8 @@ func (j *jsiiProxy_ContainerAppTemplateContainerLivenessProbeHeaderOutputReferen
 
 func (j *jsiiProxy_ContainerAppTemplateContainerLivenessProbeHeaderOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ContainerAppTemplateContainerLivenessProbeHeader:
 		val := val.(*ContainerAppTemplateContainerLivenessProbeHeader)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_ContainerAppTemplateContainerLivenessProbeHeaderOutputReferen
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ContainerAppTemplateContainerLivenessProbeHeader, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ContainerAppTemplateContainerLivenessProbeHeader; received %#v (a %T)", val, val)
 		}
 	}
 

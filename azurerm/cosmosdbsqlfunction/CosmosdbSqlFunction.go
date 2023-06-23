@@ -2,14 +2,14 @@ package cosmosdbsqlfunction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/cosmosdbsqlfunction/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/cosmosdbsqlfunction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_sql_function azurerm_cosmosdb_sql_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_sql_function azurerm_cosmosdb_sql_function}.
 type CosmosdbSqlFunction interface {
 	cdktf.TerraformResource
 	Body() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_CosmosdbSqlFunction) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_sql_function azurerm_cosmosdb_sql_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_sql_function azurerm_cosmosdb_sql_function} Resource.
 func NewCosmosdbSqlFunction(scope constructs.Construct, id *string, config *CosmosdbSqlFunctionConfig) CosmosdbSqlFunction {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewCosmosdbSqlFunction(scope constructs.Construct, id *string, config *Cosm
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_sql_function azurerm_cosmosdb_sql_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_sql_function azurerm_cosmosdb_sql_function} Resource.
 func NewCosmosdbSqlFunction_Override(c CosmosdbSqlFunction, scope constructs.Construct, id *string, config *CosmosdbSqlFunctionConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package cosmosdbsqlstoredprocedure
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/cosmosdbsqlstoredprocedure/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/cosmosdbsqlstoredprocedure/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_sql_stored_procedure azurerm_cosmosdb_sql_stored_procedure}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_sql_stored_procedure azurerm_cosmosdb_sql_stored_procedure}.
 type CosmosdbSqlStoredProcedure interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -448,7 +448,7 @@ func (j *jsiiProxy_CosmosdbSqlStoredProcedure) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_sql_stored_procedure azurerm_cosmosdb_sql_stored_procedure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_sql_stored_procedure azurerm_cosmosdb_sql_stored_procedure} Resource.
 func NewCosmosdbSqlStoredProcedure(scope constructs.Construct, id *string, config *CosmosdbSqlStoredProcedureConfig) CosmosdbSqlStoredProcedure {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewCosmosdbSqlStoredProcedure(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_sql_stored_procedure azurerm_cosmosdb_sql_stored_procedure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_sql_stored_procedure azurerm_cosmosdb_sql_stored_procedure} Resource.
 func NewCosmosdbSqlStoredProcedure_Override(c CosmosdbSqlStoredProcedure, scope constructs.Construct, id *string, config *CosmosdbSqlStoredProcedureConfig) {
 	_init_.Initialize()
 

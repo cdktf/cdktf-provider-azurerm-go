@@ -2,14 +2,14 @@ package apimanagementlogger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/apimanagementlogger/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/apimanagementlogger/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_logger azurerm_api_management_logger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/api_management_logger azurerm_api_management_logger}.
 type ApiManagementLogger interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -499,7 +499,7 @@ func (j *jsiiProxy_ApiManagementLogger) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_logger azurerm_api_management_logger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/api_management_logger azurerm_api_management_logger} Resource.
 func NewApiManagementLogger(scope constructs.Construct, id *string, config *ApiManagementLoggerConfig) ApiManagementLogger {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewApiManagementLogger(scope constructs.Construct, id *string, config *ApiM
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_logger azurerm_api_management_logger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/api_management_logger azurerm_api_management_logger} Resource.
 func NewApiManagementLogger_Override(a ApiManagementLogger, scope constructs.Construct, id *string, config *ApiManagementLoggerConfig) {
 	_init_.Initialize()
 

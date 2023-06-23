@@ -181,6 +181,8 @@ func (j *jsiiProxy_MysqlActiveDirectoryAdministratorTimeoutsOutputReference) val
 
 func (j *jsiiProxy_MysqlActiveDirectoryAdministratorTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *MysqlActiveDirectoryAdministratorTimeouts:
 		val := val.(*MysqlActiveDirectoryAdministratorTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_MysqlActiveDirectoryAdministratorTimeoutsOutputReference) val
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *MysqlActiveDirectoryAdministratorTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *MysqlActiveDirectoryAdministratorTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

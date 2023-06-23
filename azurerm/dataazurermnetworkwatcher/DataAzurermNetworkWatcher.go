@@ -2,14 +2,14 @@ package dataazurermnetworkwatcher
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermnetworkwatcher/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermnetworkwatcher/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/network_watcher azurerm_network_watcher}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/network_watcher azurerm_network_watcher}.
 type DataAzurermNetworkWatcher interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -350,7 +350,7 @@ func (j *jsiiProxy_DataAzurermNetworkWatcher) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/network_watcher azurerm_network_watcher} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/network_watcher azurerm_network_watcher} Data Source.
 func NewDataAzurermNetworkWatcher(scope constructs.Construct, id *string, config *DataAzurermNetworkWatcherConfig) DataAzurermNetworkWatcher {
 	_init_.Initialize()
 
@@ -368,7 +368,7 @@ func NewDataAzurermNetworkWatcher(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/network_watcher azurerm_network_watcher} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/network_watcher azurerm_network_watcher} Data Source.
 func NewDataAzurermNetworkWatcher_Override(d DataAzurermNetworkWatcher, scope constructs.Construct, id *string, config *DataAzurermNetworkWatcherConfig) {
 	_init_.Initialize()
 

@@ -88,6 +88,10 @@ func (j *jsiiProxy_CosmosdbGremlinGraph) validateSetAccountNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbGremlinGraph) validateSetAnalyticalStorageTtlParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbGremlinGraph) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

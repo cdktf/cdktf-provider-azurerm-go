@@ -2,14 +2,14 @@ package monitoractionruleactiongroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/monitoractionruleactiongroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/monitoractionruleactiongroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/monitor_action_rule_action_group azurerm_monitor_action_rule_action_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/monitor_action_rule_action_group azurerm_monitor_action_rule_action_group}.
 type MonitorActionRuleActionGroup interface {
 	cdktf.TerraformResource
 	ActionGroupId() *string
@@ -499,7 +499,7 @@ func (j *jsiiProxy_MonitorActionRuleActionGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/monitor_action_rule_action_group azurerm_monitor_action_rule_action_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/monitor_action_rule_action_group azurerm_monitor_action_rule_action_group} Resource.
 func NewMonitorActionRuleActionGroup(scope constructs.Construct, id *string, config *MonitorActionRuleActionGroupConfig) MonitorActionRuleActionGroup {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewMonitorActionRuleActionGroup(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/monitor_action_rule_action_group azurerm_monitor_action_rule_action_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/monitor_action_rule_action_group azurerm_monitor_action_rule_action_group} Resource.
 func NewMonitorActionRuleActionGroup_Override(m MonitorActionRuleActionGroup, scope constructs.Construct, id *string, config *MonitorActionRuleActionGroupConfig) {
 	_init_.Initialize()
 

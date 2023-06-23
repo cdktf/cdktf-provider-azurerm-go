@@ -181,6 +181,8 @@ func (j *jsiiProxy_SentinelDataConnectorOfficeIrmTimeoutsOutputReference) valida
 
 func (j *jsiiProxy_SentinelDataConnectorOfficeIrmTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *SentinelDataConnectorOfficeIrmTimeouts:
 		val := val.(*SentinelDataConnectorOfficeIrmTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_SentinelDataConnectorOfficeIrmTimeoutsOutputReference) valida
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *SentinelDataConnectorOfficeIrmTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SentinelDataConnectorOfficeIrmTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

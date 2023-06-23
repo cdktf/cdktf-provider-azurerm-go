@@ -181,6 +181,8 @@ func (j *jsiiProxy_ApiManagementIdentityProviderFacebookTimeoutsOutputReference)
 
 func (j *jsiiProxy_ApiManagementIdentityProviderFacebookTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ApiManagementIdentityProviderFacebookTimeouts:
 		val := val.(*ApiManagementIdentityProviderFacebookTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_ApiManagementIdentityProviderFacebookTimeoutsOutputReference)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ApiManagementIdentityProviderFacebookTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ApiManagementIdentityProviderFacebookTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

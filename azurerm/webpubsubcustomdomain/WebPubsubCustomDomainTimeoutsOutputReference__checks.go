@@ -181,6 +181,8 @@ func (j *jsiiProxy_WebPubsubCustomDomainTimeoutsOutputReference) validateSetDele
 
 func (j *jsiiProxy_WebPubsubCustomDomainTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *WebPubsubCustomDomainTimeouts:
 		val := val.(*WebPubsubCustomDomainTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_WebPubsubCustomDomainTimeoutsOutputReference) validateSetInte
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *WebPubsubCustomDomainTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *WebPubsubCustomDomainTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

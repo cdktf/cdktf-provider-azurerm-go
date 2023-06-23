@@ -181,6 +181,8 @@ func (j *jsiiProxy_LogicAppActionHttpRunAfterOutputReference) validateSetComplex
 
 func (j *jsiiProxy_LogicAppActionHttpRunAfterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *LogicAppActionHttpRunAfter:
 		val := val.(*LogicAppActionHttpRunAfter)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_LogicAppActionHttpRunAfterOutputReference) validateSetInterna
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *LogicAppActionHttpRunAfter, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *LogicAppActionHttpRunAfter; received %#v (a %T)", val, val)
 		}
 	}
 

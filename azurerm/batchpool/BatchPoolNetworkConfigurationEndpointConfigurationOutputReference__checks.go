@@ -212,6 +212,8 @@ func (j *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationOutputRefer
 
 func (j *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *BatchPoolNetworkConfigurationEndpointConfiguration:
 		val := val.(*BatchPoolNetworkConfigurationEndpointConfiguration)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -223,11 +225,9 @@ func (j *jsiiProxy_BatchPoolNetworkConfigurationEndpointConfigurationOutputRefer
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *BatchPoolNetworkConfigurationEndpointConfiguration, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *BatchPoolNetworkConfigurationEndpointConfiguration; received %#v (a %T)", val, val)
 		}
 	}
 

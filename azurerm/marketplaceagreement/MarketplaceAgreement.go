@@ -2,14 +2,14 @@ package marketplaceagreement
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/marketplaceagreement/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/marketplaceagreement/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/marketplace_agreement azurerm_marketplace_agreement}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/marketplace_agreement azurerm_marketplace_agreement}.
 type MarketplaceAgreement interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_MarketplaceAgreement) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/marketplace_agreement azurerm_marketplace_agreement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/marketplace_agreement azurerm_marketplace_agreement} Resource.
 func NewMarketplaceAgreement(scope constructs.Construct, id *string, config *MarketplaceAgreementConfig) MarketplaceAgreement {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewMarketplaceAgreement(scope constructs.Construct, id *string, config *Mar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/marketplace_agreement azurerm_marketplace_agreement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/marketplace_agreement azurerm_marketplace_agreement} Resource.
 func NewMarketplaceAgreement_Override(m MarketplaceAgreement, scope constructs.Construct, id *string, config *MarketplaceAgreementConfig) {
 	_init_.Initialize()
 

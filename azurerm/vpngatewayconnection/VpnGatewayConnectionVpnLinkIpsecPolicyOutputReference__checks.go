@@ -205,6 +205,8 @@ func (j *jsiiProxy_VpnGatewayConnectionVpnLinkIpsecPolicyOutputReference) valida
 
 func (j *jsiiProxy_VpnGatewayConnectionVpnLinkIpsecPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *VpnGatewayConnectionVpnLinkIpsecPolicy:
 		val := val.(*VpnGatewayConnectionVpnLinkIpsecPolicy)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -216,11 +218,9 @@ func (j *jsiiProxy_VpnGatewayConnectionVpnLinkIpsecPolicyOutputReference) valida
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *VpnGatewayConnectionVpnLinkIpsecPolicy, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *VpnGatewayConnectionVpnLinkIpsecPolicy; received %#v (a %T)", val, val)
 		}
 	}
 

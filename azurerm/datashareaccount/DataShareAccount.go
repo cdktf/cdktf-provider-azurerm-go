@@ -2,14 +2,14 @@ package datashareaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/datashareaccount/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/datashareaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_share_account azurerm_data_share_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_share_account azurerm_data_share_account}.
 type DataShareAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_DataShareAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_share_account azurerm_data_share_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_share_account azurerm_data_share_account} Resource.
 func NewDataShareAccount(scope constructs.Construct, id *string, config *DataShareAccountConfig) DataShareAccount {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewDataShareAccount(scope constructs.Construct, id *string, config *DataSha
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_share_account azurerm_data_share_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_share_account azurerm_data_share_account} Resource.
 func NewDataShareAccount_Override(d DataShareAccount, scope constructs.Construct, id *string, config *DataShareAccountConfig) {
 	_init_.Initialize()
 

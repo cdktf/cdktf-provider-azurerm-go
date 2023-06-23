@@ -2,14 +2,14 @@ package apimanagementtag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/apimanagementtag/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/apimanagementtag/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_tag azurerm_api_management_tag}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/api_management_tag azurerm_api_management_tag}.
 type ApiManagementTag interface {
 	cdktf.TerraformResource
 	ApiManagementId() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ApiManagementTag) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_tag azurerm_api_management_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/api_management_tag azurerm_api_management_tag} Resource.
 func NewApiManagementTag(scope constructs.Construct, id *string, config *ApiManagementTagConfig) ApiManagementTag {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewApiManagementTag(scope constructs.Construct, id *string, config *ApiMana
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_tag azurerm_api_management_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/api_management_tag azurerm_api_management_tag} Resource.
 func NewApiManagementTag_Override(a ApiManagementTag, scope constructs.Construct, id *string, config *ApiManagementTagConfig) {
 	_init_.Initialize()
 

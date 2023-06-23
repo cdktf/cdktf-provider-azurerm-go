@@ -181,6 +181,8 @@ func (j *jsiiProxy_StreamAnalyticsManagedPrivateEndpointTimeoutsOutputReference)
 
 func (j *jsiiProxy_StreamAnalyticsManagedPrivateEndpointTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *StreamAnalyticsManagedPrivateEndpointTimeouts:
 		val := val.(*StreamAnalyticsManagedPrivateEndpointTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_StreamAnalyticsManagedPrivateEndpointTimeoutsOutputReference)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *StreamAnalyticsManagedPrivateEndpointTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *StreamAnalyticsManagedPrivateEndpointTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

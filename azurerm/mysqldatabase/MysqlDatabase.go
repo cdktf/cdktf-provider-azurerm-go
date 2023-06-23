@@ -2,14 +2,14 @@ package mysqldatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/mysqldatabase/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/mysqldatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mysql_database azurerm_mysql_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mysql_database azurerm_mysql_database}.
 type MysqlDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_MysqlDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mysql_database azurerm_mysql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mysql_database azurerm_mysql_database} Resource.
 func NewMysqlDatabase(scope constructs.Construct, id *string, config *MysqlDatabaseConfig) MysqlDatabase {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewMysqlDatabase(scope constructs.Construct, id *string, config *MysqlDatab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mysql_database azurerm_mysql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mysql_database azurerm_mysql_database} Resource.
 func NewMysqlDatabase_Override(m MysqlDatabase, scope constructs.Construct, id *string, config *MysqlDatabaseConfig) {
 	_init_.Initialize()
 

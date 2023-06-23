@@ -2,14 +2,14 @@ package eventgriddomaintopic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/eventgriddomaintopic/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/eventgriddomaintopic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/eventgrid_domain_topic azurerm_eventgrid_domain_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/eventgrid_domain_topic azurerm_eventgrid_domain_topic}.
 type EventgridDomainTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_EventgridDomainTopic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/eventgrid_domain_topic azurerm_eventgrid_domain_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/eventgrid_domain_topic azurerm_eventgrid_domain_topic} Resource.
 func NewEventgridDomainTopic(scope constructs.Construct, id *string, config *EventgridDomainTopicConfig) EventgridDomainTopic {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewEventgridDomainTopic(scope constructs.Construct, id *string, config *Eve
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/eventgrid_domain_topic azurerm_eventgrid_domain_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/eventgrid_domain_topic azurerm_eventgrid_domain_topic} Resource.
 func NewEventgridDomainTopic_Override(e EventgridDomainTopic, scope constructs.Construct, id *string, config *EventgridDomainTopicConfig) {
 	_init_.Initialize()
 

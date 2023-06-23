@@ -2,14 +2,14 @@ package logicappactionhttp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/logicappactionhttp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/logicappactionhttp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/logic_app_action_http azurerm_logic_app_action_http}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/logic_app_action_http azurerm_logic_app_action_http}.
 type LogicAppActionHttp interface {
 	cdktf.TerraformResource
 	Body() *string
@@ -498,7 +498,7 @@ func (j *jsiiProxy_LogicAppActionHttp) UriInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/logic_app_action_http azurerm_logic_app_action_http} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/logic_app_action_http azurerm_logic_app_action_http} Resource.
 func NewLogicAppActionHttp(scope constructs.Construct, id *string, config *LogicAppActionHttpConfig) LogicAppActionHttp {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewLogicAppActionHttp(scope constructs.Construct, id *string, config *Logic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/logic_app_action_http azurerm_logic_app_action_http} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/logic_app_action_http azurerm_logic_app_action_http} Resource.
 func NewLogicAppActionHttp_Override(l LogicAppActionHttp, scope constructs.Construct, id *string, config *LogicAppActionHttpConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package subscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/subscription/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/subscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/subscription azurerm_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/subscription azurerm_subscription}.
 type Subscription interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -464,7 +464,7 @@ func (j *jsiiProxy_Subscription) WorkloadInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/subscription azurerm_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/subscription azurerm_subscription} Resource.
 func NewSubscription(scope constructs.Construct, id *string, config *SubscriptionConfig) Subscription {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewSubscription(scope constructs.Construct, id *string, config *Subscriptio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/subscription azurerm_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/subscription azurerm_subscription} Resource.
 func NewSubscription_Override(s Subscription, scope constructs.Construct, id *string, config *SubscriptionConfig) {
 	_init_.Initialize()
 

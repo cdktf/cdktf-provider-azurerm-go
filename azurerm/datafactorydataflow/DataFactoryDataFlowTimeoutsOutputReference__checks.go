@@ -181,6 +181,8 @@ func (j *jsiiProxy_DataFactoryDataFlowTimeoutsOutputReference) validateSetDelete
 
 func (j *jsiiProxy_DataFactoryDataFlowTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataFactoryDataFlowTimeouts:
 		val := val.(*DataFactoryDataFlowTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_DataFactoryDataFlowTimeoutsOutputReference) validateSetIntern
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataFactoryDataFlowTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataFactoryDataFlowTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

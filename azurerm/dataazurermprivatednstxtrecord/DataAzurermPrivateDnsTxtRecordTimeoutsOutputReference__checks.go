@@ -165,6 +165,8 @@ func (j *jsiiProxy_DataAzurermPrivateDnsTxtRecordTimeoutsOutputReference) valida
 
 func (j *jsiiProxy_DataAzurermPrivateDnsTxtRecordTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataAzurermPrivateDnsTxtRecordTimeouts:
 		val := val.(*DataAzurermPrivateDnsTxtRecordTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_DataAzurermPrivateDnsTxtRecordTimeoutsOutputReference) valida
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAzurermPrivateDnsTxtRecordTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAzurermPrivateDnsTxtRecordTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -2,14 +2,14 @@ package dataazurermaadb2cdirectory
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermaadb2cdirectory/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermaadb2cdirectory/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/aadb2c_directory azurerm_aadb2c_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/aadb2c_directory azurerm_aadb2c_directory}.
 type DataAzurermAadb2CDirectory interface {
 	cdktf.TerraformDataSource
 	BillingType() *string
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataAzurermAadb2CDirectory) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/aadb2c_directory azurerm_aadb2c_directory} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/aadb2c_directory azurerm_aadb2c_directory} Data Source.
 func NewDataAzurermAadb2CDirectory(scope constructs.Construct, id *string, config *DataAzurermAadb2CDirectoryConfig) DataAzurermAadb2CDirectory {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataAzurermAadb2CDirectory(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/aadb2c_directory azurerm_aadb2c_directory} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/aadb2c_directory azurerm_aadb2c_directory} Data Source.
 func NewDataAzurermAadb2CDirectory_Override(d DataAzurermAadb2CDirectory, scope constructs.Construct, id *string, config *DataAzurermAadb2CDirectoryConfig) {
 	_init_.Initialize()
 

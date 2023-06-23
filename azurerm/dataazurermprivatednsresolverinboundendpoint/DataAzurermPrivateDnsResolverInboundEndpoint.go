@@ -2,14 +2,14 @@ package dataazurermprivatednsresolverinboundendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermprivatednsresolverinboundendpoint/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermprivatednsresolverinboundendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/private_dns_resolver_inbound_endpoint azurerm_private_dns_resolver_inbound_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/private_dns_resolver_inbound_endpoint azurerm_private_dns_resolver_inbound_endpoint}.
 type DataAzurermPrivateDnsResolverInboundEndpoint interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -361,7 +361,7 @@ func (j *jsiiProxy_DataAzurermPrivateDnsResolverInboundEndpoint) TimeoutsInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/private_dns_resolver_inbound_endpoint azurerm_private_dns_resolver_inbound_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/private_dns_resolver_inbound_endpoint azurerm_private_dns_resolver_inbound_endpoint} Data Source.
 func NewDataAzurermPrivateDnsResolverInboundEndpoint(scope constructs.Construct, id *string, config *DataAzurermPrivateDnsResolverInboundEndpointConfig) DataAzurermPrivateDnsResolverInboundEndpoint {
 	_init_.Initialize()
 
@@ -379,7 +379,7 @@ func NewDataAzurermPrivateDnsResolverInboundEndpoint(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/private_dns_resolver_inbound_endpoint azurerm_private_dns_resolver_inbound_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/private_dns_resolver_inbound_endpoint azurerm_private_dns_resolver_inbound_endpoint} Data Source.
 func NewDataAzurermPrivateDnsResolverInboundEndpoint_Override(d DataAzurermPrivateDnsResolverInboundEndpoint, scope constructs.Construct, id *string, config *DataAzurermPrivateDnsResolverInboundEndpointConfig) {
 	_init_.Initialize()
 

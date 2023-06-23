@@ -165,6 +165,8 @@ func (j *jsiiProxy_LinuxFunctionAppConnectionStringOutputReference) validateSetC
 
 func (j *jsiiProxy_LinuxFunctionAppConnectionStringOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *LinuxFunctionAppConnectionString:
 		val := val.(*LinuxFunctionAppConnectionString)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_LinuxFunctionAppConnectionStringOutputReference) validateSetI
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *LinuxFunctionAppConnectionString, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *LinuxFunctionAppConnectionString; received %#v (a %T)", val, val)
 		}
 	}
 

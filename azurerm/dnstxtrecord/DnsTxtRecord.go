@@ -2,14 +2,14 @@ package dnstxtrecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dnstxtrecord/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dnstxtrecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/dns_txt_record azurerm_dns_txt_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/dns_txt_record azurerm_dns_txt_record}.
 type DnsTxtRecord interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -460,7 +460,7 @@ func (j *jsiiProxy_DnsTxtRecord) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/dns_txt_record azurerm_dns_txt_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/dns_txt_record azurerm_dns_txt_record} Resource.
 func NewDnsTxtRecord(scope constructs.Construct, id *string, config *DnsTxtRecordConfig) DnsTxtRecord {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewDnsTxtRecord(scope constructs.Construct, id *string, config *DnsTxtRecor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/dns_txt_record azurerm_dns_txt_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/dns_txt_record azurerm_dns_txt_record} Resource.
 func NewDnsTxtRecord_Override(d DnsTxtRecord, scope constructs.Construct, id *string, config *DnsTxtRecordConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package cosmosdbcassandratable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/cosmosdbcassandratable/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/cosmosdbcassandratable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_cassandra_table azurerm_cosmosdb_cassandra_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_cassandra_table azurerm_cosmosdb_cassandra_table}.
 type CosmosdbCassandraTable interface {
 	cdktf.TerraformResource
 	AnalyticalStorageTtl() *float64
@@ -475,7 +475,7 @@ func (j *jsiiProxy_CosmosdbCassandraTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_cassandra_table azurerm_cosmosdb_cassandra_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_cassandra_table azurerm_cosmosdb_cassandra_table} Resource.
 func NewCosmosdbCassandraTable(scope constructs.Construct, id *string, config *CosmosdbCassandraTableConfig) CosmosdbCassandraTable {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewCosmosdbCassandraTable(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_cassandra_table azurerm_cosmosdb_cassandra_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_cassandra_table azurerm_cosmosdb_cassandra_table} Resource.
 func NewCosmosdbCassandraTable_Override(c CosmosdbCassandraTable, scope constructs.Construct, id *string, config *CosmosdbCassandraTableConfig) {
 	_init_.Initialize()
 

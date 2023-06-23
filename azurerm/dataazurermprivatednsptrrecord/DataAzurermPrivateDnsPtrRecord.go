@@ -2,14 +2,14 @@ package dataazurermprivatednsptrrecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermprivatednsptrrecord/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermprivatednsptrrecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/private_dns_ptr_record azurerm_private_dns_ptr_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/private_dns_ptr_record azurerm_private_dns_ptr_record}.
 type DataAzurermPrivateDnsPtrRecord interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -395,7 +395,7 @@ func (j *jsiiProxy_DataAzurermPrivateDnsPtrRecord) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/private_dns_ptr_record azurerm_private_dns_ptr_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/private_dns_ptr_record azurerm_private_dns_ptr_record} Data Source.
 func NewDataAzurermPrivateDnsPtrRecord(scope constructs.Construct, id *string, config *DataAzurermPrivateDnsPtrRecordConfig) DataAzurermPrivateDnsPtrRecord {
 	_init_.Initialize()
 
@@ -413,7 +413,7 @@ func NewDataAzurermPrivateDnsPtrRecord(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/private_dns_ptr_record azurerm_private_dns_ptr_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/private_dns_ptr_record azurerm_private_dns_ptr_record} Data Source.
 func NewDataAzurermPrivateDnsPtrRecord_Override(d DataAzurermPrivateDnsPtrRecord, scope constructs.Construct, id *string, config *DataAzurermPrivateDnsPtrRecordConfig) {
 	_init_.Initialize()
 

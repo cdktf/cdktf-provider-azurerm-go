@@ -2,14 +2,14 @@ package logicappintegrationaccountagreement
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/logicappintegrationaccountagreement/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/logicappintegrationaccountagreement/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/logic_app_integration_account_agreement azurerm_logic_app_integration_account_agreement}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/logic_app_integration_account_agreement azurerm_logic_app_integration_account_agreement}.
 type LogicAppIntegrationAccountAgreement interface {
 	cdktf.TerraformResource
 	AgreementType() *string
@@ -541,7 +541,7 @@ func (j *jsiiProxy_LogicAppIntegrationAccountAgreement) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/logic_app_integration_account_agreement azurerm_logic_app_integration_account_agreement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/logic_app_integration_account_agreement azurerm_logic_app_integration_account_agreement} Resource.
 func NewLogicAppIntegrationAccountAgreement(scope constructs.Construct, id *string, config *LogicAppIntegrationAccountAgreementConfig) LogicAppIntegrationAccountAgreement {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewLogicAppIntegrationAccountAgreement(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/logic_app_integration_account_agreement azurerm_logic_app_integration_account_agreement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/logic_app_integration_account_agreement azurerm_logic_app_integration_account_agreement} Resource.
 func NewLogicAppIntegrationAccountAgreement_Override(l LogicAppIntegrationAccountAgreement, scope constructs.Construct, id *string, config *LogicAppIntegrationAccountAgreementConfig) {
 	_init_.Initialize()
 

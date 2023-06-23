@@ -352,6 +352,8 @@ func (j *jsiiProxy_ContainerAppTemplateContainerOutputReference) validateSetImag
 
 func (j *jsiiProxy_ContainerAppTemplateContainerOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ContainerAppTemplateContainer:
 		val := val.(*ContainerAppTemplateContainer)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -363,11 +365,9 @@ func (j *jsiiProxy_ContainerAppTemplateContainerOutputReference) validateSetInte
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ContainerAppTemplateContainer, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ContainerAppTemplateContainer; received %#v (a %T)", val, val)
 		}
 	}
 

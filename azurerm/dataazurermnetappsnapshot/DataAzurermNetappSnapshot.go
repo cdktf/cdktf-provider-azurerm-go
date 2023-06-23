@@ -2,14 +2,14 @@ package dataazurermnetappsnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermnetappsnapshot/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermnetappsnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/netapp_snapshot azurerm_netapp_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/netapp_snapshot azurerm_netapp_snapshot}.
 type DataAzurermNetappSnapshot interface {
 	cdktf.TerraformDataSource
 	AccountName() *string
@@ -408,7 +408,7 @@ func (j *jsiiProxy_DataAzurermNetappSnapshot) VolumeNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/netapp_snapshot azurerm_netapp_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/netapp_snapshot azurerm_netapp_snapshot} Data Source.
 func NewDataAzurermNetappSnapshot(scope constructs.Construct, id *string, config *DataAzurermNetappSnapshotConfig) DataAzurermNetappSnapshot {
 	_init_.Initialize()
 
@@ -426,7 +426,7 @@ func NewDataAzurermNetappSnapshot(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/netapp_snapshot azurerm_netapp_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/netapp_snapshot azurerm_netapp_snapshot} Data Source.
 func NewDataAzurermNetappSnapshot_Override(d DataAzurermNetappSnapshot, scope constructs.Construct, id *string, config *DataAzurermNetappSnapshotConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package datafactoryflowletdataflow
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/datafactoryflowletdataflow/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/datafactoryflowletdataflow/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_flowlet_data_flow azurerm_data_factory_flowlet_data_flow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_flowlet_data_flow azurerm_data_factory_flowlet_data_flow}.
 type DataFactoryFlowletDataFlow interface {
 	cdktf.TerraformResource
 	Annotations() *[]*string
@@ -546,7 +546,7 @@ func (j *jsiiProxy_DataFactoryFlowletDataFlow) TransformationInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_flowlet_data_flow azurerm_data_factory_flowlet_data_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_flowlet_data_flow azurerm_data_factory_flowlet_data_flow} Resource.
 func NewDataFactoryFlowletDataFlow(scope constructs.Construct, id *string, config *DataFactoryFlowletDataFlowConfig) DataFactoryFlowletDataFlow {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewDataFactoryFlowletDataFlow(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_flowlet_data_flow azurerm_data_factory_flowlet_data_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_flowlet_data_flow azurerm_data_factory_flowlet_data_flow} Resource.
 func NewDataFactoryFlowletDataFlow_Override(d DataFactoryFlowletDataFlow, scope constructs.Construct, id *string, config *DataFactoryFlowletDataFlowConfig) {
 	_init_.Initialize()
 

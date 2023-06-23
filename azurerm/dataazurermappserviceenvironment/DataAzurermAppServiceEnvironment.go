@@ -2,14 +2,14 @@ package dataazurermappserviceenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermappserviceenvironment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermappserviceenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/app_service_environment azurerm_app_service_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/app_service_environment azurerm_app_service_environment}.
 type DataAzurermAppServiceEnvironment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_DataAzurermAppServiceEnvironment) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/app_service_environment azurerm_app_service_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/app_service_environment azurerm_app_service_environment} Data Source.
 func NewDataAzurermAppServiceEnvironment(scope constructs.Construct, id *string, config *DataAzurermAppServiceEnvironmentConfig) DataAzurermAppServiceEnvironment {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewDataAzurermAppServiceEnvironment(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/app_service_environment azurerm_app_service_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/app_service_environment azurerm_app_service_environment} Data Source.
 func NewDataAzurermAppServiceEnvironment_Override(d DataAzurermAppServiceEnvironment, scope constructs.Construct, id *string, config *DataAzurermAppServiceEnvironmentConfig) {
 	_init_.Initialize()
 

@@ -165,6 +165,8 @@ func (j *jsiiProxy_CdnFrontdoorRuleConditionsRemoteAddressConditionOutputReferen
 
 func (j *jsiiProxy_CdnFrontdoorRuleConditionsRemoteAddressConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CdnFrontdoorRuleConditionsRemoteAddressCondition:
 		val := val.(*CdnFrontdoorRuleConditionsRemoteAddressCondition)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_CdnFrontdoorRuleConditionsRemoteAddressConditionOutputReferen
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CdnFrontdoorRuleConditionsRemoteAddressCondition, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CdnFrontdoorRuleConditionsRemoteAddressCondition; received %#v (a %T)", val, val)
 		}
 	}
 

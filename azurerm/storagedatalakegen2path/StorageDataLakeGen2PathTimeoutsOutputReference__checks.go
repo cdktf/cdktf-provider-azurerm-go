@@ -181,6 +181,8 @@ func (j *jsiiProxy_StorageDataLakeGen2PathTimeoutsOutputReference) validateSetDe
 
 func (j *jsiiProxy_StorageDataLakeGen2PathTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *StorageDataLakeGen2PathTimeouts:
 		val := val.(*StorageDataLakeGen2PathTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_StorageDataLakeGen2PathTimeoutsOutputReference) validateSetIn
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *StorageDataLakeGen2PathTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *StorageDataLakeGen2PathTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

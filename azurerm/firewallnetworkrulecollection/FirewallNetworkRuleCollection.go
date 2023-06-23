@@ -2,14 +2,14 @@ package firewallnetworkrulecollection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/firewallnetworkrulecollection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/firewallnetworkrulecollection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/firewall_network_rule_collection azurerm_firewall_network_rule_collection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/firewall_network_rule_collection azurerm_firewall_network_rule_collection}.
 type FirewallNetworkRuleCollection interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -448,7 +448,7 @@ func (j *jsiiProxy_FirewallNetworkRuleCollection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/firewall_network_rule_collection azurerm_firewall_network_rule_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/firewall_network_rule_collection azurerm_firewall_network_rule_collection} Resource.
 func NewFirewallNetworkRuleCollection(scope constructs.Construct, id *string, config *FirewallNetworkRuleCollectionConfig) FirewallNetworkRuleCollection {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewFirewallNetworkRuleCollection(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/firewall_network_rule_collection azurerm_firewall_network_rule_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/firewall_network_rule_collection azurerm_firewall_network_rule_collection} Resource.
 func NewFirewallNetworkRuleCollection_Override(f FirewallNetworkRuleCollection, scope constructs.Construct, id *string, config *FirewallNetworkRuleCollectionConfig) {
 	_init_.Initialize()
 

@@ -181,6 +181,8 @@ func (j *jsiiProxy_AppServiceVirtualNetworkSwiftConnectionTimeoutsOutputReferenc
 
 func (j *jsiiProxy_AppServiceVirtualNetworkSwiftConnectionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AppServiceVirtualNetworkSwiftConnectionTimeouts:
 		val := val.(*AppServiceVirtualNetworkSwiftConnectionTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_AppServiceVirtualNetworkSwiftConnectionTimeoutsOutputReferenc
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AppServiceVirtualNetworkSwiftConnectionTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AppServiceVirtualNetworkSwiftConnectionTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

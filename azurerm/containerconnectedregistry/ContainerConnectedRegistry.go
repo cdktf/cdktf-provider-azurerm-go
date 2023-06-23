@@ -2,14 +2,14 @@ package containerconnectedregistry
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/containerconnectedregistry/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/containerconnectedregistry/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/container_connected_registry azurerm_container_connected_registry}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/container_connected_registry azurerm_container_connected_registry}.
 type ContainerConnectedRegistry interface {
 	cdktf.TerraformResource
 	AuditLogEnabled() interface{}
@@ -595,7 +595,7 @@ func (j *jsiiProxy_ContainerConnectedRegistry) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/container_connected_registry azurerm_container_connected_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/container_connected_registry azurerm_container_connected_registry} Resource.
 func NewContainerConnectedRegistry(scope constructs.Construct, id *string, config *ContainerConnectedRegistryConfig) ContainerConnectedRegistry {
 	_init_.Initialize()
 
@@ -613,7 +613,7 @@ func NewContainerConnectedRegistry(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/container_connected_registry azurerm_container_connected_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/container_connected_registry azurerm_container_connected_registry} Resource.
 func NewContainerConnectedRegistry_Override(c ContainerConnectedRegistry, scope constructs.Construct, id *string, config *ContainerConnectedRegistryConfig) {
 	_init_.Initialize()
 

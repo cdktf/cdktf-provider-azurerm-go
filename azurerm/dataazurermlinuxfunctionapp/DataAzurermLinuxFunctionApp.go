@@ -2,14 +2,14 @@ package dataazurermlinuxfunctionapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermlinuxfunctionapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermlinuxfunctionapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/linux_function_app azurerm_linux_function_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/linux_function_app azurerm_linux_function_app}.
 type DataAzurermLinuxFunctionApp interface {
 	cdktf.TerraformDataSource
 	AppSettings() cdktf.StringMap
@@ -724,7 +724,7 @@ func (j *jsiiProxy_DataAzurermLinuxFunctionApp) VirtualNetworkSubnetId() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/linux_function_app azurerm_linux_function_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/linux_function_app azurerm_linux_function_app} Data Source.
 func NewDataAzurermLinuxFunctionApp(scope constructs.Construct, id *string, config *DataAzurermLinuxFunctionAppConfig) DataAzurermLinuxFunctionApp {
 	_init_.Initialize()
 
@@ -742,7 +742,7 @@ func NewDataAzurermLinuxFunctionApp(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/linux_function_app azurerm_linux_function_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/linux_function_app azurerm_linux_function_app} Data Source.
 func NewDataAzurermLinuxFunctionApp_Override(d DataAzurermLinuxFunctionApp, scope constructs.Construct, id *string, config *DataAzurermLinuxFunctionAppConfig) {
 	_init_.Initialize()
 

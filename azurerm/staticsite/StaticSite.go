@@ -2,14 +2,14 @@ package staticsite
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/staticsite/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/staticsite/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/static_site azurerm_static_site}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/static_site azurerm_static_site}.
 type StaticSite interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -497,7 +497,7 @@ func (j *jsiiProxy_StaticSite) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/static_site azurerm_static_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/static_site azurerm_static_site} Resource.
 func NewStaticSite(scope constructs.Construct, id *string, config *StaticSiteConfig) StaticSite {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewStaticSite(scope constructs.Construct, id *string, config *StaticSiteCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/static_site azurerm_static_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/static_site azurerm_static_site} Resource.
 func NewStaticSite_Override(s StaticSite, scope constructs.Construct, id *string, config *StaticSiteConfig) {
 	_init_.Initialize()
 

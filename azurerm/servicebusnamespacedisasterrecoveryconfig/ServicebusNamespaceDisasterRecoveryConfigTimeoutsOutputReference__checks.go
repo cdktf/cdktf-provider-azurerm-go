@@ -181,6 +181,8 @@ func (j *jsiiProxy_ServicebusNamespaceDisasterRecoveryConfigTimeoutsOutputRefere
 
 func (j *jsiiProxy_ServicebusNamespaceDisasterRecoveryConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ServicebusNamespaceDisasterRecoveryConfigTimeouts:
 		val := val.(*ServicebusNamespaceDisasterRecoveryConfigTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_ServicebusNamespaceDisasterRecoveryConfigTimeoutsOutputRefere
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ServicebusNamespaceDisasterRecoveryConfigTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ServicebusNamespaceDisasterRecoveryConfigTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -2,14 +2,14 @@ package datasharedatasetblobstorage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/datasharedatasetblobstorage/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/datasharedatasetblobstorage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_share_dataset_blob_storage azurerm_data_share_dataset_blob_storage}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_share_dataset_blob_storage azurerm_data_share_dataset_blob_storage}.
 type DataShareDatasetBlobStorage interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -461,7 +461,7 @@ func (j *jsiiProxy_DataShareDatasetBlobStorage) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_share_dataset_blob_storage azurerm_data_share_dataset_blob_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_share_dataset_blob_storage azurerm_data_share_dataset_blob_storage} Resource.
 func NewDataShareDatasetBlobStorage(scope constructs.Construct, id *string, config *DataShareDatasetBlobStorageConfig) DataShareDatasetBlobStorage {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewDataShareDatasetBlobStorage(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_share_dataset_blob_storage azurerm_data_share_dataset_blob_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_share_dataset_blob_storage azurerm_data_share_dataset_blob_storage} Resource.
 func NewDataShareDatasetBlobStorage_Override(d DataShareDatasetBlobStorage, scope constructs.Construct, id *string, config *DataShareDatasetBlobStorageConfig) {
 	_init_.Initialize()
 

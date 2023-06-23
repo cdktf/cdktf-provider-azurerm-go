@@ -2,14 +2,14 @@ package webpubsubsharedprivatelinkresource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/webpubsubsharedprivatelinkresource/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/webpubsubsharedprivatelinkresource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/web_pubsub_shared_private_link_resource azurerm_web_pubsub_shared_private_link_resource}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/web_pubsub_shared_private_link_resource azurerm_web_pubsub_shared_private_link_resource}.
 type WebPubsubSharedPrivateLinkResource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_WebPubsubSharedPrivateLinkResource) WebPubsubIdInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/web_pubsub_shared_private_link_resource azurerm_web_pubsub_shared_private_link_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/web_pubsub_shared_private_link_resource azurerm_web_pubsub_shared_private_link_resource} Resource.
 func NewWebPubsubSharedPrivateLinkResource(scope constructs.Construct, id *string, config *WebPubsubSharedPrivateLinkResourceConfig) WebPubsubSharedPrivateLinkResource {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewWebPubsubSharedPrivateLinkResource(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/web_pubsub_shared_private_link_resource azurerm_web_pubsub_shared_private_link_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/web_pubsub_shared_private_link_resource azurerm_web_pubsub_shared_private_link_resource} Resource.
 func NewWebPubsubSharedPrivateLinkResource_Override(w WebPubsubSharedPrivateLinkResource, scope constructs.Construct, id *string, config *WebPubsubSharedPrivateLinkResourceConfig) {
 	_init_.Initialize()
 

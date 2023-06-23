@@ -2,14 +2,14 @@ package mediatransform
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/mediatransform/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/mediatransform/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/media_transform azurerm_media_transform}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/media_transform azurerm_media_transform}.
 type MediaTransform interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_MediaTransform) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/media_transform azurerm_media_transform} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/media_transform azurerm_media_transform} Resource.
 func NewMediaTransform(scope constructs.Construct, id *string, config *MediaTransformConfig) MediaTransform {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewMediaTransform(scope constructs.Construct, id *string, config *MediaTran
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/media_transform azurerm_media_transform} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/media_transform azurerm_media_transform} Resource.
 func NewMediaTransform_Override(m MediaTransform, scope constructs.Construct, id *string, config *MediaTransformConfig) {
 	_init_.Initialize()
 

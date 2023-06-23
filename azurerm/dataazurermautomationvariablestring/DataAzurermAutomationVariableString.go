@@ -2,14 +2,14 @@ package dataazurermautomationvariablestring
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermautomationvariablestring/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermautomationvariablestring/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/automation_variable_string azurerm_automation_variable_string}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/automation_variable_string azurerm_automation_variable_string}.
 type DataAzurermAutomationVariableString interface {
 	cdktf.TerraformDataSource
 	AutomationAccountName() *string
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DataAzurermAutomationVariableString) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/automation_variable_string azurerm_automation_variable_string} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/automation_variable_string azurerm_automation_variable_string} Data Source.
 func NewDataAzurermAutomationVariableString(scope constructs.Construct, id *string, config *DataAzurermAutomationVariableStringConfig) DataAzurermAutomationVariableString {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewDataAzurermAutomationVariableString(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/automation_variable_string azurerm_automation_variable_string} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/automation_variable_string azurerm_automation_variable_string} Data Source.
 func NewDataAzurermAutomationVariableString_Override(d DataAzurermAutomationVariableString, scope constructs.Construct, id *string, config *DataAzurermAutomationVariableStringConfig) {
 	_init_.Initialize()
 

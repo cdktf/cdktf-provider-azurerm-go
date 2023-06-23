@@ -181,6 +181,8 @@ func (j *jsiiProxy_ActiveDirectoryDomainServiceReplicaSetTimeoutsOutputReference
 
 func (j *jsiiProxy_ActiveDirectoryDomainServiceReplicaSetTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ActiveDirectoryDomainServiceReplicaSetTimeouts:
 		val := val.(*ActiveDirectoryDomainServiceReplicaSetTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_ActiveDirectoryDomainServiceReplicaSetTimeoutsOutputReference
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ActiveDirectoryDomainServiceReplicaSetTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ActiveDirectoryDomainServiceReplicaSetTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

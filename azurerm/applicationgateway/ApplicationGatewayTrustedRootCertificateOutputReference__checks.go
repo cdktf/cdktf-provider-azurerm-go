@@ -173,6 +173,8 @@ func (j *jsiiProxy_ApplicationGatewayTrustedRootCertificateOutputReference) vali
 
 func (j *jsiiProxy_ApplicationGatewayTrustedRootCertificateOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ApplicationGatewayTrustedRootCertificate:
 		val := val.(*ApplicationGatewayTrustedRootCertificate)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_ApplicationGatewayTrustedRootCertificateOutputReference) vali
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ApplicationGatewayTrustedRootCertificate, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ApplicationGatewayTrustedRootCertificate; received %#v (a %T)", val, val)
 		}
 	}
 

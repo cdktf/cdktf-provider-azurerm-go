@@ -181,6 +181,8 @@ func (j *jsiiProxy_PrivateDnsAaaaRecordTimeoutsOutputReference) validateSetDelet
 
 func (j *jsiiProxy_PrivateDnsAaaaRecordTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *PrivateDnsAaaaRecordTimeouts:
 		val := val.(*PrivateDnsAaaaRecordTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_PrivateDnsAaaaRecordTimeoutsOutputReference) validateSetInter
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *PrivateDnsAaaaRecordTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PrivateDnsAaaaRecordTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

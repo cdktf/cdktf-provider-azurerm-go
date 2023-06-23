@@ -2,14 +2,14 @@ package servicebusnamespacenetworkruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/servicebusnamespacenetworkruleset/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/servicebusnamespacenetworkruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set}.
 type ServicebusNamespaceNetworkRuleSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -453,7 +453,7 @@ func (j *jsiiProxy_ServicebusNamespaceNetworkRuleSet) TrustedServicesAllowedInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set} Resource.
 func NewServicebusNamespaceNetworkRuleSet(scope constructs.Construct, id *string, config *ServicebusNamespaceNetworkRuleSetConfig) ServicebusNamespaceNetworkRuleSet {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewServicebusNamespaceNetworkRuleSet(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set} Resource.
 func NewServicebusNamespaceNetworkRuleSet_Override(s ServicebusNamespaceNetworkRuleSet, scope constructs.Construct, id *string, config *ServicebusNamespaceNetworkRuleSetConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package hpccacheblobtarget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/hpccacheblobtarget/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/hpccacheblobtarget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/hpc_cache_blob_target azurerm_hpc_cache_blob_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/hpc_cache_blob_target azurerm_hpc_cache_blob_target}.
 type HpcCacheBlobTarget interface {
 	cdktf.TerraformResource
 	AccessPolicyName() *string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_HpcCacheBlobTarget) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/hpc_cache_blob_target azurerm_hpc_cache_blob_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/hpc_cache_blob_target azurerm_hpc_cache_blob_target} Resource.
 func NewHpcCacheBlobTarget(scope constructs.Construct, id *string, config *HpcCacheBlobTargetConfig) HpcCacheBlobTarget {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewHpcCacheBlobTarget(scope constructs.Construct, id *string, config *HpcCa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/hpc_cache_blob_target azurerm_hpc_cache_blob_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/hpc_cache_blob_target azurerm_hpc_cache_blob_target} Resource.
 func NewHpcCacheBlobTarget_Override(h HpcCacheBlobTarget, scope constructs.Construct, id *string, config *HpcCacheBlobTargetConfig) {
 	_init_.Initialize()
 

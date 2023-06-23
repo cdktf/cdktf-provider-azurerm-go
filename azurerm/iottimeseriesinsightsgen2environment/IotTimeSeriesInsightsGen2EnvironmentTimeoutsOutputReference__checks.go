@@ -181,6 +181,8 @@ func (j *jsiiProxy_IotTimeSeriesInsightsGen2EnvironmentTimeoutsOutputReference) 
 
 func (j *jsiiProxy_IotTimeSeriesInsightsGen2EnvironmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *IotTimeSeriesInsightsGen2EnvironmentTimeouts:
 		val := val.(*IotTimeSeriesInsightsGen2EnvironmentTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_IotTimeSeriesInsightsGen2EnvironmentTimeoutsOutputReference) 
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *IotTimeSeriesInsightsGen2EnvironmentTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *IotTimeSeriesInsightsGen2EnvironmentTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -181,6 +181,8 @@ func (j *jsiiProxy_BackupContainerStorageAccountTimeoutsOutputReference) validat
 
 func (j *jsiiProxy_BackupContainerStorageAccountTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *BackupContainerStorageAccountTimeouts:
 		val := val.(*BackupContainerStorageAccountTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_BackupContainerStorageAccountTimeoutsOutputReference) validat
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *BackupContainerStorageAccountTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *BackupContainerStorageAccountTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

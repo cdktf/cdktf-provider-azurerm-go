@@ -181,6 +181,8 @@ func (j *jsiiProxy_CosmosdbMongoDatabaseTimeoutsOutputReference) validateSetDele
 
 func (j *jsiiProxy_CosmosdbMongoDatabaseTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CosmosdbMongoDatabaseTimeouts:
 		val := val.(*CosmosdbMongoDatabaseTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_CosmosdbMongoDatabaseTimeoutsOutputReference) validateSetInte
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CosmosdbMongoDatabaseTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CosmosdbMongoDatabaseTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -2,14 +2,14 @@ package dataazurermmysqlflexibleserver
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermmysqlflexibleserver/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermmysqlflexibleserver/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/mysql_flexible_server azurerm_mysql_flexible_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/mysql_flexible_server azurerm_mysql_flexible_server}.
 type DataAzurermMysqlFlexibleServer interface {
 	cdktf.TerraformDataSource
 	AdministratorLogin() *string
@@ -526,7 +526,7 @@ func (j *jsiiProxy_DataAzurermMysqlFlexibleServer) Zone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/mysql_flexible_server azurerm_mysql_flexible_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/mysql_flexible_server azurerm_mysql_flexible_server} Data Source.
 func NewDataAzurermMysqlFlexibleServer(scope constructs.Construct, id *string, config *DataAzurermMysqlFlexibleServerConfig) DataAzurermMysqlFlexibleServer {
 	_init_.Initialize()
 
@@ -544,7 +544,7 @@ func NewDataAzurermMysqlFlexibleServer(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/mysql_flexible_server azurerm_mysql_flexible_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/mysql_flexible_server azurerm_mysql_flexible_server} Data Source.
 func NewDataAzurermMysqlFlexibleServer_Override(d DataAzurermMysqlFlexibleServer, scope constructs.Construct, id *string, config *DataAzurermMysqlFlexibleServerConfig) {
 	_init_.Initialize()
 

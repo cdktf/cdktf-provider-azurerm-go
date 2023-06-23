@@ -2,14 +2,14 @@ package databoxedgeorder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/databoxedgeorder/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/databoxedgeorder/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/databox_edge_order azurerm_databox_edge_order}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/databox_edge_order azurerm_databox_edge_order}.
 type DataboxEdgeOrder interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -468,7 +468,7 @@ func (j *jsiiProxy_DataboxEdgeOrder) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/databox_edge_order azurerm_databox_edge_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/databox_edge_order azurerm_databox_edge_order} Resource.
 func NewDataboxEdgeOrder(scope constructs.Construct, id *string, config *DataboxEdgeOrderConfig) DataboxEdgeOrder {
 	_init_.Initialize()
 
@@ -486,7 +486,7 @@ func NewDataboxEdgeOrder(scope constructs.Construct, id *string, config *Databox
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/databox_edge_order azurerm_databox_edge_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/databox_edge_order azurerm_databox_edge_order} Resource.
 func NewDataboxEdgeOrder_Override(d DataboxEdgeOrder, scope constructs.Construct, id *string, config *DataboxEdgeOrderConfig) {
 	_init_.Initialize()
 

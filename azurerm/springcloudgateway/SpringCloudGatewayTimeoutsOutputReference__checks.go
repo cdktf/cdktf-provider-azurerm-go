@@ -181,6 +181,8 @@ func (j *jsiiProxy_SpringCloudGatewayTimeoutsOutputReference) validateSetDeleteP
 
 func (j *jsiiProxy_SpringCloudGatewayTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *SpringCloudGatewayTimeouts:
 		val := val.(*SpringCloudGatewayTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_SpringCloudGatewayTimeoutsOutputReference) validateSetInterna
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *SpringCloudGatewayTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SpringCloudGatewayTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

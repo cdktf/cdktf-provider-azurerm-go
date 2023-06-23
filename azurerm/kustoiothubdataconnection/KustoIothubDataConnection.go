@@ -2,14 +2,14 @@ package kustoiothubdataconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/kustoiothubdataconnection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/kustoiothubdataconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/kusto_iothub_data_connection azurerm_kusto_iothub_data_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/kusto_iothub_data_connection azurerm_kusto_iothub_data_connection}.
 type KustoIothubDataConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -614,7 +614,7 @@ func (j *jsiiProxy_KustoIothubDataConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/kusto_iothub_data_connection azurerm_kusto_iothub_data_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/kusto_iothub_data_connection azurerm_kusto_iothub_data_connection} Resource.
 func NewKustoIothubDataConnection(scope constructs.Construct, id *string, config *KustoIothubDataConnectionConfig) KustoIothubDataConnection {
 	_init_.Initialize()
 
@@ -632,7 +632,7 @@ func NewKustoIothubDataConnection(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/kusto_iothub_data_connection azurerm_kusto_iothub_data_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/kusto_iothub_data_connection azurerm_kusto_iothub_data_connection} Resource.
 func NewKustoIothubDataConnection_Override(k KustoIothubDataConnection, scope constructs.Construct, id *string, config *KustoIothubDataConnectionConfig) {
 	_init_.Initialize()
 

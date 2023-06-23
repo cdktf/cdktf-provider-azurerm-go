@@ -181,6 +181,8 @@ func (j *jsiiProxy_LogAnalyticsQueryPackQueryTimeoutsOutputReference) validateSe
 
 func (j *jsiiProxy_LogAnalyticsQueryPackQueryTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *LogAnalyticsQueryPackQueryTimeouts:
 		val := val.(*LogAnalyticsQueryPackQueryTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_LogAnalyticsQueryPackQueryTimeoutsOutputReference) validateSe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *LogAnalyticsQueryPackQueryTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *LogAnalyticsQueryPackQueryTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

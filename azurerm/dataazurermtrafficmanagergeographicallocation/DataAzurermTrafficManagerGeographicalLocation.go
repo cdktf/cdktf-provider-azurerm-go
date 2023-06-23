@@ -2,14 +2,14 @@ package dataazurermtrafficmanagergeographicallocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermtrafficmanagergeographicallocation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermtrafficmanagergeographicallocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/traffic_manager_geographical_location azurerm_traffic_manager_geographical_location}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/traffic_manager_geographical_location azurerm_traffic_manager_geographical_location}.
 type DataAzurermTrafficManagerGeographicalLocation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -305,7 +305,7 @@ func (j *jsiiProxy_DataAzurermTrafficManagerGeographicalLocation) TimeoutsInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/traffic_manager_geographical_location azurerm_traffic_manager_geographical_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/traffic_manager_geographical_location azurerm_traffic_manager_geographical_location} Data Source.
 func NewDataAzurermTrafficManagerGeographicalLocation(scope constructs.Construct, id *string, config *DataAzurermTrafficManagerGeographicalLocationConfig) DataAzurermTrafficManagerGeographicalLocation {
 	_init_.Initialize()
 
@@ -323,7 +323,7 @@ func NewDataAzurermTrafficManagerGeographicalLocation(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/traffic_manager_geographical_location azurerm_traffic_manager_geographical_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/traffic_manager_geographical_location azurerm_traffic_manager_geographical_location} Data Source.
 func NewDataAzurermTrafficManagerGeographicalLocation_Override(d DataAzurermTrafficManagerGeographicalLocation, scope constructs.Construct, id *string, config *DataAzurermTrafficManagerGeographicalLocationConfig) {
 	_init_.Initialize()
 

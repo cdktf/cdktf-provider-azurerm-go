@@ -207,6 +207,8 @@ func (j *jsiiProxy_MonitorScheduledQueryRulesAlertV2CriteriaOutputReference) val
 
 func (j *jsiiProxy_MonitorScheduledQueryRulesAlertV2CriteriaOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *MonitorScheduledQueryRulesAlertV2Criteria:
 		val := val.(*MonitorScheduledQueryRulesAlertV2Criteria)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -218,11 +220,9 @@ func (j *jsiiProxy_MonitorScheduledQueryRulesAlertV2CriteriaOutputReference) val
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *MonitorScheduledQueryRulesAlertV2Criteria, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *MonitorScheduledQueryRulesAlertV2Criteria; received %#v (a %T)", val, val)
 		}
 	}
 

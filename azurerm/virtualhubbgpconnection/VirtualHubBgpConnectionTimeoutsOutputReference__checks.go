@@ -181,6 +181,8 @@ func (j *jsiiProxy_VirtualHubBgpConnectionTimeoutsOutputReference) validateSetDe
 
 func (j *jsiiProxy_VirtualHubBgpConnectionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *VirtualHubBgpConnectionTimeouts:
 		val := val.(*VirtualHubBgpConnectionTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_VirtualHubBgpConnectionTimeoutsOutputReference) validateSetIn
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *VirtualHubBgpConnectionTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *VirtualHubBgpConnectionTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

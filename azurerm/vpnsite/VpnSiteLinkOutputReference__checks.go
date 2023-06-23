@@ -184,6 +184,8 @@ func (j *jsiiProxy_VpnSiteLinkOutputReference) validateSetFqdnParameters(val *st
 
 func (j *jsiiProxy_VpnSiteLinkOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *VpnSiteLink:
 		val := val.(*VpnSiteLink)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -195,11 +197,9 @@ func (j *jsiiProxy_VpnSiteLinkOutputReference) validateSetInternalValueParameter
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *VpnSiteLink, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *VpnSiteLink; received %#v (a %T)", val, val)
 		}
 	}
 

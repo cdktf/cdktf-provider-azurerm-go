@@ -173,6 +173,8 @@ func (j *jsiiProxy_ElasticCloudElasticsearchLogsFilteringTagOutputReference) val
 
 func (j *jsiiProxy_ElasticCloudElasticsearchLogsFilteringTagOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ElasticCloudElasticsearchLogsFilteringTag:
 		val := val.(*ElasticCloudElasticsearchLogsFilteringTag)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_ElasticCloudElasticsearchLogsFilteringTagOutputReference) val
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ElasticCloudElasticsearchLogsFilteringTag, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ElasticCloudElasticsearchLogsFilteringTag; received %#v (a %T)", val, val)
 		}
 	}
 

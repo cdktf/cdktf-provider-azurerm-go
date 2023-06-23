@@ -2,14 +2,14 @@ package netappaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/netappaccount/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/netappaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/netapp_account azurerm_netapp_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/netapp_account azurerm_netapp_account}.
 type NetappAccount interface {
 	cdktf.TerraformResource
 	ActiveDirectory() NetappAccountActiveDirectoryOutputReference
@@ -427,7 +427,7 @@ func (j *jsiiProxy_NetappAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/netapp_account azurerm_netapp_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/netapp_account azurerm_netapp_account} Resource.
 func NewNetappAccount(scope constructs.Construct, id *string, config *NetappAccountConfig) NetappAccount {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewNetappAccount(scope constructs.Construct, id *string, config *NetappAcco
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/netapp_account azurerm_netapp_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/netapp_account azurerm_netapp_account} Resource.
 func NewNetappAccount_Override(n NetappAccount, scope constructs.Construct, id *string, config *NetappAccountConfig) {
 	_init_.Initialize()
 

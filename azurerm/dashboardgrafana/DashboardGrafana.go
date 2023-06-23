@@ -2,14 +2,14 @@ package dashboardgrafana
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dashboardgrafana/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dashboardgrafana/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/dashboard_grafana azurerm_dashboard_grafana}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/dashboard_grafana azurerm_dashboard_grafana}.
 type DashboardGrafana interface {
 	cdktf.TerraformResource
 	ApiKeyEnabled() interface{}
@@ -628,7 +628,7 @@ func (j *jsiiProxy_DashboardGrafana) ZoneRedundancyEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/dashboard_grafana azurerm_dashboard_grafana} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/dashboard_grafana azurerm_dashboard_grafana} Resource.
 func NewDashboardGrafana(scope constructs.Construct, id *string, config *DashboardGrafanaConfig) DashboardGrafana {
 	_init_.Initialize()
 
@@ -646,7 +646,7 @@ func NewDashboardGrafana(scope constructs.Construct, id *string, config *Dashboa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/dashboard_grafana azurerm_dashboard_grafana} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/dashboard_grafana azurerm_dashboard_grafana} Resource.
 func NewDashboardGrafana_Override(d DashboardGrafana, scope constructs.Construct, id *string, config *DashboardGrafanaConfig) {
 	_init_.Initialize()
 

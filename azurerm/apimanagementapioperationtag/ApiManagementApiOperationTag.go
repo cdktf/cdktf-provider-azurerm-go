@@ -2,14 +2,14 @@ package apimanagementapioperationtag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/apimanagementapioperationtag/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/apimanagementapioperationtag/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_api_operation_tag azurerm_api_management_api_operation_tag}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/api_management_api_operation_tag azurerm_api_management_api_operation_tag}.
 type ApiManagementApiOperationTag interface {
 	cdktf.TerraformResource
 	ApiOperationId() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_ApiManagementApiOperationTag) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_api_operation_tag azurerm_api_management_api_operation_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/api_management_api_operation_tag azurerm_api_management_api_operation_tag} Resource.
 func NewApiManagementApiOperationTag(scope constructs.Construct, id *string, config *ApiManagementApiOperationTagConfig) ApiManagementApiOperationTag {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewApiManagementApiOperationTag(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_api_operation_tag azurerm_api_management_api_operation_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/api_management_api_operation_tag azurerm_api_management_api_operation_tag} Resource.
 func NewApiManagementApiOperationTag_Override(a ApiManagementApiOperationTag, scope constructs.Construct, id *string, config *ApiManagementApiOperationTagConfig) {
 	_init_.Initialize()
 

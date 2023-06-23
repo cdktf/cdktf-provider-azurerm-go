@@ -2,14 +2,14 @@ package kubernetescluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/kubernetescluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/kubernetescluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
 type KubernetesCluster interface {
 	cdktf.TerraformResource
 	AciConnectorLinux() KubernetesClusterAciConnectorLinuxOutputReference
@@ -130,6 +130,9 @@ type KubernetesCluster interface {
 	NetworkProfileInput() *KubernetesClusterNetworkProfile
 	// The tree node.
 	Node() constructs.Node
+	NodeOsChannelUpgrade() *string
+	SetNodeOsChannelUpgrade(val *string)
+	NodeOsChannelUpgradeInput() *string
 	NodeResourceGroup() *string
 	SetNodeResourceGroup(val *string)
 	NodeResourceGroupId() *string
@@ -285,6 +288,7 @@ type KubernetesCluster interface {
 	ResetMicrosoftDefender()
 	ResetMonitorMetrics()
 	ResetNetworkProfile()
+	ResetNodeOsChannelUpgrade()
 	ResetNodeResourceGroup()
 	ResetOidcIssuerEnabled()
 	ResetOmsAgent()
@@ -1143,6 +1147,26 @@ func (j *jsiiProxy_KubernetesCluster) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesCluster) NodeOsChannelUpgrade() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeOsChannelUpgrade",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) NodeOsChannelUpgradeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeOsChannelUpgradeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesCluster) NodeResourceGroup() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1664,7 +1688,7 @@ func (j *jsiiProxy_KubernetesCluster) WorkloadIdentityEnabledInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
 	_init_.Initialize()
 
@@ -1682,7 +1706,7 @@ func NewKubernetesCluster(scope constructs.Construct, id *string, config *Kubern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Construct, id *string, config *KubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -1914,6 +1938,17 @@ func (j *jsiiProxy_KubernetesCluster)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesCluster)SetNodeOsChannelUpgrade(val *string) {
+	if err := j.validateSetNodeOsChannelUpgradeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeOsChannelUpgrade",
 		val,
 	)
 }
@@ -2857,6 +2892,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetNetworkProfile() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetNetworkProfile",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetNodeOsChannelUpgrade() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetNodeOsChannelUpgrade",
 		nil, // no parameters
 	)
 }

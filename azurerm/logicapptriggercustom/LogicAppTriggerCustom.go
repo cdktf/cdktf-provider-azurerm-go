@@ -2,14 +2,14 @@ package logicapptriggercustom
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/logicapptriggercustom/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/logicapptriggercustom/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/logic_app_trigger_custom azurerm_logic_app_trigger_custom}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/logic_app_trigger_custom azurerm_logic_app_trigger_custom}.
 type LogicAppTriggerCustom interface {
 	cdktf.TerraformResource
 	Body() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_LogicAppTriggerCustom) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/logic_app_trigger_custom azurerm_logic_app_trigger_custom} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/logic_app_trigger_custom azurerm_logic_app_trigger_custom} Resource.
 func NewLogicAppTriggerCustom(scope constructs.Construct, id *string, config *LogicAppTriggerCustomConfig) LogicAppTriggerCustom {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewLogicAppTriggerCustom(scope constructs.Construct, id *string, config *Lo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/logic_app_trigger_custom azurerm_logic_app_trigger_custom} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/logic_app_trigger_custom azurerm_logic_app_trigger_custom} Resource.
 func NewLogicAppTriggerCustom_Override(l LogicAppTriggerCustom, scope constructs.Construct, id *string, config *LogicAppTriggerCustomConfig) {
 	_init_.Initialize()
 

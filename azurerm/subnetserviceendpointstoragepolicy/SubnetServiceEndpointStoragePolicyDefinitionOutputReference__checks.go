@@ -173,6 +173,8 @@ func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) 
 
 func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *SubnetServiceEndpointStoragePolicyDefinition:
 		val := val.(*SubnetServiceEndpointStoragePolicyDefinition)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionOutputReference) 
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *SubnetServiceEndpointStoragePolicyDefinition, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SubnetServiceEndpointStoragePolicyDefinition; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -165,6 +165,8 @@ func (j *jsiiProxy_CdnFrontdoorFirewallPolicyManagedRuleOverrideExclusionOutputR
 
 func (j *jsiiProxy_CdnFrontdoorFirewallPolicyManagedRuleOverrideExclusionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CdnFrontdoorFirewallPolicyManagedRuleOverrideExclusion:
 		val := val.(*CdnFrontdoorFirewallPolicyManagedRuleOverrideExclusion)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_CdnFrontdoorFirewallPolicyManagedRuleOverrideExclusionOutputR
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CdnFrontdoorFirewallPolicyManagedRuleOverrideExclusion, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CdnFrontdoorFirewallPolicyManagedRuleOverrideExclusion; received %#v (a %T)", val, val)
 		}
 	}
 

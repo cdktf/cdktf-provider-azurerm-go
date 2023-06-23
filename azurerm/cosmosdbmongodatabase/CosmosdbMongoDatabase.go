@@ -2,14 +2,14 @@ package cosmosdbmongodatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/cosmosdbmongodatabase/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/cosmosdbmongodatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_mongo_database azurerm_cosmosdb_mongo_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_mongo_database azurerm_cosmosdb_mongo_database}.
 type CosmosdbMongoDatabase interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_CosmosdbMongoDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_mongo_database azurerm_cosmosdb_mongo_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_mongo_database azurerm_cosmosdb_mongo_database} Resource.
 func NewCosmosdbMongoDatabase(scope constructs.Construct, id *string, config *CosmosdbMongoDatabaseConfig) CosmosdbMongoDatabase {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewCosmosdbMongoDatabase(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_mongo_database azurerm_cosmosdb_mongo_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_mongo_database azurerm_cosmosdb_mongo_database} Resource.
 func NewCosmosdbMongoDatabase_Override(c CosmosdbMongoDatabase, scope constructs.Construct, id *string, config *CosmosdbMongoDatabaseConfig) {
 	_init_.Initialize()
 

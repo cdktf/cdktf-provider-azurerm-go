@@ -2,14 +2,14 @@ package redislinkedserver
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/redislinkedserver/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/redislinkedserver/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/redis_linked_server azurerm_redis_linked_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/redis_linked_server azurerm_redis_linked_server}.
 type RedisLinkedServer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -436,7 +436,7 @@ func (j *jsiiProxy_RedisLinkedServer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/redis_linked_server azurerm_redis_linked_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/redis_linked_server azurerm_redis_linked_server} Resource.
 func NewRedisLinkedServer(scope constructs.Construct, id *string, config *RedisLinkedServerConfig) RedisLinkedServer {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewRedisLinkedServer(scope constructs.Construct, id *string, config *RedisL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/redis_linked_server azurerm_redis_linked_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/redis_linked_server azurerm_redis_linked_server} Resource.
 func NewRedisLinkedServer_Override(r RedisLinkedServer, scope constructs.Construct, id *string, config *RedisLinkedServerConfig) {
 	_init_.Initialize()
 

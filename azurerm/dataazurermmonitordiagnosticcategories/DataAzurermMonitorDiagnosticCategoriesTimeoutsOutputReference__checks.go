@@ -165,6 +165,8 @@ func (j *jsiiProxy_DataAzurermMonitorDiagnosticCategoriesTimeoutsOutputReference
 
 func (j *jsiiProxy_DataAzurermMonitorDiagnosticCategoriesTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataAzurermMonitorDiagnosticCategoriesTimeouts:
 		val := val.(*DataAzurermMonitorDiagnosticCategoriesTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_DataAzurermMonitorDiagnosticCategoriesTimeoutsOutputReference
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAzurermMonitorDiagnosticCategoriesTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAzurermMonitorDiagnosticCategoriesTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

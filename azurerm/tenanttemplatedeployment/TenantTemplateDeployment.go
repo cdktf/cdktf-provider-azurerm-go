@@ -2,14 +2,14 @@ package tenanttemplatedeployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/tenanttemplatedeployment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/tenanttemplatedeployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/tenant_template_deployment azurerm_tenant_template_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/tenant_template_deployment azurerm_tenant_template_deployment}.
 type TenantTemplateDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -487,7 +487,7 @@ func (j *jsiiProxy_TenantTemplateDeployment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/tenant_template_deployment azurerm_tenant_template_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/tenant_template_deployment azurerm_tenant_template_deployment} Resource.
 func NewTenantTemplateDeployment(scope constructs.Construct, id *string, config *TenantTemplateDeploymentConfig) TenantTemplateDeployment {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewTenantTemplateDeployment(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/tenant_template_deployment azurerm_tenant_template_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/tenant_template_deployment azurerm_tenant_template_deployment} Resource.
 func NewTenantTemplateDeployment_Override(t TenantTemplateDeployment, scope constructs.Construct, id *string, config *TenantTemplateDeploymentConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package dataazurermpolicydefinitionbuiltin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermpolicydefinitionbuiltin/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermpolicydefinitionbuiltin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/policy_definition_built_in azurerm_policy_definition_built_in}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/policy_definition_built_in azurerm_policy_definition_built_in}.
 type DataAzurermPolicyDefinitionBuiltIn interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -442,7 +442,7 @@ func (j *jsiiProxy_DataAzurermPolicyDefinitionBuiltIn) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/policy_definition_built_in azurerm_policy_definition_built_in} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/policy_definition_built_in azurerm_policy_definition_built_in} Data Source.
 func NewDataAzurermPolicyDefinitionBuiltIn(scope constructs.Construct, id *string, config *DataAzurermPolicyDefinitionBuiltInConfig) DataAzurermPolicyDefinitionBuiltIn {
 	_init_.Initialize()
 
@@ -460,7 +460,7 @@ func NewDataAzurermPolicyDefinitionBuiltIn(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/policy_definition_built_in azurerm_policy_definition_built_in} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/policy_definition_built_in azurerm_policy_definition_built_in} Data Source.
 func NewDataAzurermPolicyDefinitionBuiltIn_Override(d DataAzurermPolicyDefinitionBuiltIn, scope constructs.Construct, id *string, config *DataAzurermPolicyDefinitionBuiltInConfig) {
 	_init_.Initialize()
 

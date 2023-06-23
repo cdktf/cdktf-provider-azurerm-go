@@ -165,6 +165,8 @@ func (j *jsiiProxy_WindowsWebAppSlotConnectionStringOutputReference) validateSet
 
 func (j *jsiiProxy_WindowsWebAppSlotConnectionStringOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *WindowsWebAppSlotConnectionString:
 		val := val.(*WindowsWebAppSlotConnectionString)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_WindowsWebAppSlotConnectionStringOutputReference) validateSet
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *WindowsWebAppSlotConnectionString, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *WindowsWebAppSlotConnectionString; received %#v (a %T)", val, val)
 		}
 	}
 

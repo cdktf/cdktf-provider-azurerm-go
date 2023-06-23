@@ -120,6 +120,10 @@ func (j *jsiiProxy_VirtualHub) validateSetTagsParameters(val *map[string]*string
 	return nil
 }
 
+func (j *jsiiProxy_VirtualHub) validateSetVirtualRouterAutoScaleMinCapacityParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualHub) validateSetVirtualWanIdParameters(val *string) error {
 	return nil
 }

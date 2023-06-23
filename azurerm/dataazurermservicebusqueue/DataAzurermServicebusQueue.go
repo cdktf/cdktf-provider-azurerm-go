@@ -2,14 +2,14 @@ package dataazurermservicebusqueue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermservicebusqueue/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermservicebusqueue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue}.
 type DataAzurermServicebusQueue interface {
 	cdktf.TerraformDataSource
 	AutoDeleteOnIdle() *string
@@ -542,7 +542,7 @@ func (j *jsiiProxy_DataAzurermServicebusQueue) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue} Data Source.
 func NewDataAzurermServicebusQueue(scope constructs.Construct, id *string, config *DataAzurermServicebusQueueConfig) DataAzurermServicebusQueue {
 	_init_.Initialize()
 
@@ -560,7 +560,7 @@ func NewDataAzurermServicebusQueue(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue} Data Source.
 func NewDataAzurermServicebusQueue_Override(d DataAzurermServicebusQueue, scope constructs.Construct, id *string, config *DataAzurermServicebusQueueConfig) {
 	_init_.Initialize()
 

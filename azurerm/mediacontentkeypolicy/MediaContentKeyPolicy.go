@@ -2,14 +2,14 @@ package mediacontentkeypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/mediacontentkeypolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/mediacontentkeypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/media_content_key_policy azurerm_media_content_key_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/media_content_key_policy azurerm_media_content_key_policy}.
 type MediaContentKeyPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_MediaContentKeyPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/media_content_key_policy azurerm_media_content_key_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/media_content_key_policy azurerm_media_content_key_policy} Resource.
 func NewMediaContentKeyPolicy(scope constructs.Construct, id *string, config *MediaContentKeyPolicyConfig) MediaContentKeyPolicy {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewMediaContentKeyPolicy(scope constructs.Construct, id *string, config *Me
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/media_content_key_policy azurerm_media_content_key_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/media_content_key_policy azurerm_media_content_key_policy} Resource.
 func NewMediaContentKeyPolicy_Override(m MediaContentKeyPolicy, scope constructs.Construct, id *string, config *MediaContentKeyPolicyConfig) {
 	_init_.Initialize()
 

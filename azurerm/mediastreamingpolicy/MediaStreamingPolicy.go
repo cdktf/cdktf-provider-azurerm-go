@@ -2,14 +2,14 @@ package mediastreamingpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/mediastreamingpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/mediastreamingpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/media_streaming_policy azurerm_media_streaming_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/media_streaming_policy azurerm_media_streaming_policy}.
 type MediaStreamingPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -499,7 +499,7 @@ func (j *jsiiProxy_MediaStreamingPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/media_streaming_policy azurerm_media_streaming_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/media_streaming_policy azurerm_media_streaming_policy} Resource.
 func NewMediaStreamingPolicy(scope constructs.Construct, id *string, config *MediaStreamingPolicyConfig) MediaStreamingPolicy {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewMediaStreamingPolicy(scope constructs.Construct, id *string, config *Med
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/media_streaming_policy azurerm_media_streaming_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/media_streaming_policy azurerm_media_streaming_policy} Resource.
 func NewMediaStreamingPolicy_Override(m MediaStreamingPolicy, scope constructs.Construct, id *string, config *MediaStreamingPolicyConfig) {
 	_init_.Initialize()
 

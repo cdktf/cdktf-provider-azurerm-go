@@ -165,6 +165,8 @@ func (j *jsiiProxy_SubscriptionCostManagementViewKpiOutputReference) validateSet
 
 func (j *jsiiProxy_SubscriptionCostManagementViewKpiOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *SubscriptionCostManagementViewKpi:
 		val := val.(*SubscriptionCostManagementViewKpi)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_SubscriptionCostManagementViewKpiOutputReference) validateSet
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *SubscriptionCostManagementViewKpi, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SubscriptionCostManagementViewKpi; received %#v (a %T)", val, val)
 		}
 	}
 

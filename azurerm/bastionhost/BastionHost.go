@@ -2,14 +2,14 @@ package bastionhost
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/bastionhost/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/bastionhost/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/bastion_host azurerm_bastion_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/bastion_host azurerm_bastion_host}.
 type BastionHost interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -129,7 +129,6 @@ type BastionHost interface {
 	ResetCopyPasteEnabled()
 	ResetFileCopyEnabled()
 	ResetId()
-	ResetIpConfiguration()
 	ResetIpConnectEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -606,7 +605,7 @@ func (j *jsiiProxy_BastionHost) TunnelingEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
 func NewBastionHost(scope constructs.Construct, id *string, config *BastionHostConfig) BastionHost {
 	_init_.Initialize()
 
@@ -624,7 +623,7 @@ func NewBastionHost(scope constructs.Construct, id *string, config *BastionHostC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
 func NewBastionHost_Override(b BastionHost, scope constructs.Construct, id *string, config *BastionHostConfig) {
 	_init_.Initialize()
 
@@ -1143,14 +1142,6 @@ func (b *jsiiProxy_BastionHost) ResetId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (b *jsiiProxy_BastionHost) ResetIpConfiguration() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetIpConfiguration",
 		nil, // no parameters
 	)
 }

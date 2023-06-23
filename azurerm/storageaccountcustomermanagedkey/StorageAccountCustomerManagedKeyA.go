@@ -2,14 +2,14 @@ package storageaccountcustomermanagedkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/storageaccountcustomermanagedkey/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/storageaccountcustomermanagedkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key}.
 type StorageAccountCustomerManagedKeyA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) UserAssignedIdentityIdInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key} Resource.
 func NewStorageAccountCustomerManagedKeyA(scope constructs.Construct, id *string, config *StorageAccountCustomerManagedKeyAConfig) StorageAccountCustomerManagedKeyA {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewStorageAccountCustomerManagedKeyA(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key} Resource.
 func NewStorageAccountCustomerManagedKeyA_Override(s StorageAccountCustomerManagedKeyA, scope constructs.Construct, id *string, config *StorageAccountCustomerManagedKeyAConfig) {
 	_init_.Initialize()
 

@@ -173,6 +173,8 @@ func (j *jsiiProxy_CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociation
 
 func (j *jsiiProxy_CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationDomainOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationDomain:
 		val := val.(*CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationDomain)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociation
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationDomain, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationDomain; received %#v (a %T)", val, val)
 		}
 	}
 

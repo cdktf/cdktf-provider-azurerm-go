@@ -2,14 +2,14 @@ package securitycentersetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/securitycentersetting/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/securitycentersetting/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/security_center_setting azurerm_security_center_setting}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/security_center_setting azurerm_security_center_setting}.
 type SecurityCenterSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_SecurityCenterSetting) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/security_center_setting azurerm_security_center_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/security_center_setting azurerm_security_center_setting} Resource.
 func NewSecurityCenterSetting(scope constructs.Construct, id *string, config *SecurityCenterSettingConfig) SecurityCenterSetting {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewSecurityCenterSetting(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/security_center_setting azurerm_security_center_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/security_center_setting azurerm_security_center_setting} Resource.
 func NewSecurityCenterSetting_Override(s SecurityCenterSetting, scope constructs.Construct, id *string, config *SecurityCenterSettingConfig) {
 	_init_.Initialize()
 

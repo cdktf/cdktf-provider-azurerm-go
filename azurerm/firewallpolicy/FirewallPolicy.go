@@ -2,14 +2,14 @@ package firewallpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/firewallpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/firewallpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/firewall_policy azurerm_firewall_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/firewall_policy azurerm_firewall_policy}.
 type FirewallPolicy interface {
 	cdktf.TerraformResource
 	AutoLearnPrivateRangesEnabled() interface{}
@@ -748,7 +748,7 @@ func (j *jsiiProxy_FirewallPolicy) TlsCertificateInput() *FirewallPolicyTlsCerti
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/firewall_policy azurerm_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/firewall_policy azurerm_firewall_policy} Resource.
 func NewFirewallPolicy(scope constructs.Construct, id *string, config *FirewallPolicyConfig) FirewallPolicy {
 	_init_.Initialize()
 
@@ -766,7 +766,7 @@ func NewFirewallPolicy(scope constructs.Construct, id *string, config *FirewallP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/firewall_policy azurerm_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/firewall_policy azurerm_firewall_policy} Resource.
 func NewFirewallPolicy_Override(f FirewallPolicy, scope constructs.Construct, id *string, config *FirewallPolicyConfig) {
 	_init_.Initialize()
 

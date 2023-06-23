@@ -2,14 +2,14 @@ package capacityreservation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/capacityreservation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/capacityreservation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/capacity_reservation azurerm_capacity_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/capacity_reservation azurerm_capacity_reservation}.
 type CapacityReservation interface {
 	cdktf.TerraformResource
 	CapacityReservationGroupId() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_CapacityReservation) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/capacity_reservation azurerm_capacity_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/capacity_reservation azurerm_capacity_reservation} Resource.
 func NewCapacityReservation(scope constructs.Construct, id *string, config *CapacityReservationConfig) CapacityReservation {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewCapacityReservation(scope constructs.Construct, id *string, config *Capa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/capacity_reservation azurerm_capacity_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/capacity_reservation azurerm_capacity_reservation} Resource.
 func NewCapacityReservation_Override(c CapacityReservation, scope constructs.Construct, id *string, config *CapacityReservationConfig) {
 	_init_.Initialize()
 

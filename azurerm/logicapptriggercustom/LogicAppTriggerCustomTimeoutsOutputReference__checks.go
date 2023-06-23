@@ -181,6 +181,8 @@ func (j *jsiiProxy_LogicAppTriggerCustomTimeoutsOutputReference) validateSetDele
 
 func (j *jsiiProxy_LogicAppTriggerCustomTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *LogicAppTriggerCustomTimeouts:
 		val := val.(*LogicAppTriggerCustomTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_LogicAppTriggerCustomTimeoutsOutputReference) validateSetInte
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *LogicAppTriggerCustomTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *LogicAppTriggerCustomTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

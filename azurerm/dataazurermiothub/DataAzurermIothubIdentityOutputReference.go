@@ -2,9 +2,9 @@ package dataazurermiothub
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermiothub/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermiothub/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

@@ -2,14 +2,14 @@ package lbrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/lbrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/lbrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/lb_rule azurerm_lb_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/lb_rule azurerm_lb_rule}.
 type LbRule interface {
 	cdktf.TerraformResource
 	BackendAddressPoolIds() *[]*string
@@ -627,7 +627,7 @@ func (j *jsiiProxy_LbRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/lb_rule azurerm_lb_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/lb_rule azurerm_lb_rule} Resource.
 func NewLbRule(scope constructs.Construct, id *string, config *LbRuleConfig) LbRule {
 	_init_.Initialize()
 
@@ -645,7 +645,7 @@ func NewLbRule(scope constructs.Construct, id *string, config *LbRuleConfig) LbR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/lb_rule azurerm_lb_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/lb_rule azurerm_lb_rule} Resource.
 func NewLbRule_Override(l LbRule, scope constructs.Construct, id *string, config *LbRuleConfig) {
 	_init_.Initialize()
 

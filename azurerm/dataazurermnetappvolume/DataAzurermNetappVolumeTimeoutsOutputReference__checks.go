@@ -165,6 +165,8 @@ func (j *jsiiProxy_DataAzurermNetappVolumeTimeoutsOutputReference) validateSetCo
 
 func (j *jsiiProxy_DataAzurermNetappVolumeTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataAzurermNetappVolumeTimeouts:
 		val := val.(*DataAzurermNetappVolumeTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_DataAzurermNetappVolumeTimeoutsOutputReference) validateSetIn
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAzurermNetappVolumeTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAzurermNetappVolumeTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -2,14 +2,14 @@ package mediaassetfilter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/mediaassetfilter/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/mediaassetfilter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/media_asset_filter azurerm_media_asset_filter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/media_asset_filter azurerm_media_asset_filter}.
 type MediaAssetFilter interface {
 	cdktf.TerraformResource
 	AssetId() *string
@@ -428,7 +428,7 @@ func (j *jsiiProxy_MediaAssetFilter) TrackSelectionInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/media_asset_filter azurerm_media_asset_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/media_asset_filter azurerm_media_asset_filter} Resource.
 func NewMediaAssetFilter(scope constructs.Construct, id *string, config *MediaAssetFilterConfig) MediaAssetFilter {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewMediaAssetFilter(scope constructs.Construct, id *string, config *MediaAs
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/media_asset_filter azurerm_media_asset_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/media_asset_filter azurerm_media_asset_filter} Resource.
 func NewMediaAssetFilter_Override(m MediaAssetFilter, scope constructs.Construct, id *string, config *MediaAssetFilterConfig) {
 	_init_.Initialize()
 

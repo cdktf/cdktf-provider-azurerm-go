@@ -2,14 +2,14 @@ package applicationinsightsstandardwebtest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/applicationinsightsstandardwebtest/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/applicationinsightsstandardwebtest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/application_insights_standard_web_test azurerm_application_insights_standard_web_test}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/application_insights_standard_web_test azurerm_application_insights_standard_web_test}.
 type ApplicationInsightsStandardWebTest interface {
 	cdktf.TerraformResource
 	ApplicationInsightsId() *string
@@ -627,7 +627,7 @@ func (j *jsiiProxy_ApplicationInsightsStandardWebTest) ValidationRulesInput() *A
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/application_insights_standard_web_test azurerm_application_insights_standard_web_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/application_insights_standard_web_test azurerm_application_insights_standard_web_test} Resource.
 func NewApplicationInsightsStandardWebTest(scope constructs.Construct, id *string, config *ApplicationInsightsStandardWebTestConfig) ApplicationInsightsStandardWebTest {
 	_init_.Initialize()
 
@@ -645,7 +645,7 @@ func NewApplicationInsightsStandardWebTest(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/application_insights_standard_web_test azurerm_application_insights_standard_web_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/application_insights_standard_web_test azurerm_application_insights_standard_web_test} Resource.
 func NewApplicationInsightsStandardWebTest_Override(a ApplicationInsightsStandardWebTest, scope constructs.Construct, id *string, config *ApplicationInsightsStandardWebTestConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package datafactorydatasetdelimitedtext
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/datafactorydatasetdelimitedtext/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/datafactorydatasetdelimitedtext/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_dataset_delimited_text azurerm_data_factory_dataset_delimited_text}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_dataset_delimited_text azurerm_data_factory_dataset_delimited_text}.
 type DataFactoryDatasetDelimitedText interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -811,7 +811,7 @@ func (j *jsiiProxy_DataFactoryDatasetDelimitedText) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_dataset_delimited_text azurerm_data_factory_dataset_delimited_text} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_dataset_delimited_text azurerm_data_factory_dataset_delimited_text} Resource.
 func NewDataFactoryDatasetDelimitedText(scope constructs.Construct, id *string, config *DataFactoryDatasetDelimitedTextConfig) DataFactoryDatasetDelimitedText {
 	_init_.Initialize()
 
@@ -829,7 +829,7 @@ func NewDataFactoryDatasetDelimitedText(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_dataset_delimited_text azurerm_data_factory_dataset_delimited_text} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_dataset_delimited_text azurerm_data_factory_dataset_delimited_text} Resource.
 func NewDataFactoryDatasetDelimitedText_Override(d DataFactoryDatasetDelimitedText, scope constructs.Construct, id *string, config *DataFactoryDatasetDelimitedTextConfig) {
 	_init_.Initialize()
 

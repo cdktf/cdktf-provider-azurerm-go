@@ -2,9 +2,9 @@ package iothubdpssharedaccesspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/iothubdpssharedaccesspolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/iothubdpssharedaccesspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

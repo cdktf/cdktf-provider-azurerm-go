@@ -2,14 +2,14 @@ package iothubendpointservicebustopic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/iothubendpointservicebustopic/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/iothubendpointservicebustopic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic}.
 type IothubEndpointServicebusTopic interface {
 	cdktf.TerraformResource
 	AuthenticationType() *string
@@ -499,7 +499,7 @@ func (j *jsiiProxy_IothubEndpointServicebusTopic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic} Resource.
 func NewIothubEndpointServicebusTopic(scope constructs.Construct, id *string, config *IothubEndpointServicebusTopicConfig) IothubEndpointServicebusTopic {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewIothubEndpointServicebusTopic(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/iothub_endpoint_servicebus_topic azurerm_iothub_endpoint_servicebus_topic} Resource.
 func NewIothubEndpointServicebusTopic_Override(i IothubEndpointServicebusTopic, scope constructs.Construct, id *string, config *IothubEndpointServicebusTopicConfig) {
 	_init_.Initialize()
 

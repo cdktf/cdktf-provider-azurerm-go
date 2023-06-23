@@ -2,14 +2,14 @@ package cosmosdbpostgresqlcoordinatorconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/cosmosdbpostgresqlcoordinatorconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/cosmosdbpostgresqlcoordinatorconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_postgresql_coordinator_configuration azurerm_cosmosdb_postgresql_coordinator_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_postgresql_coordinator_configuration azurerm_cosmosdb_postgresql_coordinator_configuration}.
 type CosmosdbPostgresqlCoordinatorConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_CosmosdbPostgresqlCoordinatorConfiguration) ValueInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_postgresql_coordinator_configuration azurerm_cosmosdb_postgresql_coordinator_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_postgresql_coordinator_configuration azurerm_cosmosdb_postgresql_coordinator_configuration} Resource.
 func NewCosmosdbPostgresqlCoordinatorConfiguration(scope constructs.Construct, id *string, config *CosmosdbPostgresqlCoordinatorConfigurationConfig) CosmosdbPostgresqlCoordinatorConfiguration {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewCosmosdbPostgresqlCoordinatorConfiguration(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_postgresql_coordinator_configuration azurerm_cosmosdb_postgresql_coordinator_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_postgresql_coordinator_configuration azurerm_cosmosdb_postgresql_coordinator_configuration} Resource.
 func NewCosmosdbPostgresqlCoordinatorConfiguration_Override(c CosmosdbPostgresqlCoordinatorConfiguration, scope constructs.Construct, id *string, config *CosmosdbPostgresqlCoordinatorConfigurationConfig) {
 	_init_.Initialize()
 

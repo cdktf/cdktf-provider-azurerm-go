@@ -2,14 +2,14 @@ package resourcepolicyexemption
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/resourcepolicyexemption/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/resourcepolicyexemption/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/resource_policy_exemption azurerm_resource_policy_exemption}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/resource_policy_exemption azurerm_resource_policy_exemption}.
 type ResourcePolicyExemption interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -522,7 +522,7 @@ func (j *jsiiProxy_ResourcePolicyExemption) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/resource_policy_exemption azurerm_resource_policy_exemption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/resource_policy_exemption azurerm_resource_policy_exemption} Resource.
 func NewResourcePolicyExemption(scope constructs.Construct, id *string, config *ResourcePolicyExemptionConfig) ResourcePolicyExemption {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewResourcePolicyExemption(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/resource_policy_exemption azurerm_resource_policy_exemption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/resource_policy_exemption azurerm_resource_policy_exemption} Resource.
 func NewResourcePolicyExemption_Override(r ResourcePolicyExemption, scope constructs.Construct, id *string, config *ResourcePolicyExemptionConfig) {
 	_init_.Initialize()
 

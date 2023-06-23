@@ -2,14 +2,14 @@ package siterecoveryservicesvaulthypervsite
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/siterecoveryservicesvaulthypervsite/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/siterecoveryservicesvaulthypervsite/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/site_recovery_services_vault_hyperv_site azurerm_site_recovery_services_vault_hyperv_site}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/site_recovery_services_vault_hyperv_site azurerm_site_recovery_services_vault_hyperv_site}.
 type SiteRecoveryServicesVaultHypervSite interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_SiteRecoveryServicesVaultHypervSite) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/site_recovery_services_vault_hyperv_site azurerm_site_recovery_services_vault_hyperv_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/site_recovery_services_vault_hyperv_site azurerm_site_recovery_services_vault_hyperv_site} Resource.
 func NewSiteRecoveryServicesVaultHypervSite(scope constructs.Construct, id *string, config *SiteRecoveryServicesVaultHypervSiteConfig) SiteRecoveryServicesVaultHypervSite {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewSiteRecoveryServicesVaultHypervSite(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/site_recovery_services_vault_hyperv_site azurerm_site_recovery_services_vault_hyperv_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/site_recovery_services_vault_hyperv_site azurerm_site_recovery_services_vault_hyperv_site} Resource.
 func NewSiteRecoveryServicesVaultHypervSite_Override(s SiteRecoveryServicesVaultHypervSite, scope constructs.Construct, id *string, config *SiteRecoveryServicesVaultHypervSiteConfig) {
 	_init_.Initialize()
 

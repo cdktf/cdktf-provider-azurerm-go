@@ -181,6 +181,8 @@ func (j *jsiiProxy_ApiManagementNotificationRecipientEmailTimeoutsOutputReferenc
 
 func (j *jsiiProxy_ApiManagementNotificationRecipientEmailTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ApiManagementNotificationRecipientEmailTimeouts:
 		val := val.(*ApiManagementNotificationRecipientEmailTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_ApiManagementNotificationRecipientEmailTimeoutsOutputReferenc
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ApiManagementNotificationRecipientEmailTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ApiManagementNotificationRecipientEmailTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

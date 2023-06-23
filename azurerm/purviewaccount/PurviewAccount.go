@@ -2,14 +2,14 @@ package purviewaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/purviewaccount/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/purviewaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/purview_account azurerm_purview_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/purview_account azurerm_purview_account}.
 type PurviewAccount interface {
 	cdktf.TerraformResource
 	AtlasKafkaEndpointPrimaryConnectionString() *string
@@ -540,7 +540,7 @@ func (j *jsiiProxy_PurviewAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/purview_account azurerm_purview_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/purview_account azurerm_purview_account} Resource.
 func NewPurviewAccount(scope constructs.Construct, id *string, config *PurviewAccountConfig) PurviewAccount {
 	_init_.Initialize()
 
@@ -558,7 +558,7 @@ func NewPurviewAccount(scope constructs.Construct, id *string, config *PurviewAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/purview_account azurerm_purview_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/purview_account azurerm_purview_account} Resource.
 func NewPurviewAccount_Override(p PurviewAccount, scope constructs.Construct, id *string, config *PurviewAccountConfig) {
 	_init_.Initialize()
 

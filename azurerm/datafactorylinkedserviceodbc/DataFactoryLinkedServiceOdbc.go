@@ -2,14 +2,14 @@ package datafactorylinkedserviceodbc
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/datafactorylinkedserviceodbc/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/datafactorylinkedserviceodbc/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_linked_service_odbc azurerm_data_factory_linked_service_odbc}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_linked_service_odbc azurerm_data_factory_linked_service_odbc}.
 type DataFactoryLinkedServiceOdbc interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -523,7 +523,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceOdbc) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_linked_service_odbc azurerm_data_factory_linked_service_odbc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_linked_service_odbc azurerm_data_factory_linked_service_odbc} Resource.
 func NewDataFactoryLinkedServiceOdbc(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceOdbcConfig) DataFactoryLinkedServiceOdbc {
 	_init_.Initialize()
 
@@ -541,7 +541,7 @@ func NewDataFactoryLinkedServiceOdbc(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_linked_service_odbc azurerm_data_factory_linked_service_odbc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_linked_service_odbc azurerm_data_factory_linked_service_odbc} Resource.
 func NewDataFactoryLinkedServiceOdbc_Override(d DataFactoryLinkedServiceOdbc, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceOdbcConfig) {
 	_init_.Initialize()
 

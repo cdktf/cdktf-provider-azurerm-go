@@ -2,14 +2,14 @@ package expressroutecircuit
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/expressroutecircuit/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/expressroutecircuit/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/express_route_circuit azurerm_express_route_circuit}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/express_route_circuit azurerm_express_route_circuit}.
 type ExpressRouteCircuit interface {
 	cdktf.TerraformResource
 	AllowClassicOperations() interface{}
@@ -616,7 +616,7 @@ func (j *jsiiProxy_ExpressRouteCircuit) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/express_route_circuit azurerm_express_route_circuit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/express_route_circuit azurerm_express_route_circuit} Resource.
 func NewExpressRouteCircuit(scope constructs.Construct, id *string, config *ExpressRouteCircuitConfig) ExpressRouteCircuit {
 	_init_.Initialize()
 
@@ -634,7 +634,7 @@ func NewExpressRouteCircuit(scope constructs.Construct, id *string, config *Expr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/express_route_circuit azurerm_express_route_circuit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/express_route_circuit azurerm_express_route_circuit} Resource.
 func NewExpressRouteCircuit_Override(e ExpressRouteCircuit, scope constructs.Construct, id *string, config *ExpressRouteCircuitConfig) {
 	_init_.Initialize()
 

@@ -235,6 +235,8 @@ func (j *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) validateSetDe
 
 func (j *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ContainerRegistryNetworkRuleSet:
 		val := val.(*ContainerRegistryNetworkRuleSet)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -246,11 +248,9 @@ func (j *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) validateSetIn
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ContainerRegistryNetworkRuleSet, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ContainerRegistryNetworkRuleSet; received %#v (a %T)", val, val)
 		}
 	}
 

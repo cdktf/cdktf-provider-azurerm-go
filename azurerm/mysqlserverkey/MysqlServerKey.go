@@ -2,14 +2,14 @@ package mysqlserverkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/mysqlserverkey/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/mysqlserverkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mysql_server_key azurerm_mysql_server_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mysql_server_key azurerm_mysql_server_key}.
 type MysqlServerKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_MysqlServerKey) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mysql_server_key azurerm_mysql_server_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mysql_server_key azurerm_mysql_server_key} Resource.
 func NewMysqlServerKey(scope constructs.Construct, id *string, config *MysqlServerKeyConfig) MysqlServerKey {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewMysqlServerKey(scope constructs.Construct, id *string, config *MysqlServ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mysql_server_key azurerm_mysql_server_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mysql_server_key azurerm_mysql_server_key} Resource.
 func NewMysqlServerKey_Override(m MysqlServerKey, scope constructs.Construct, id *string, config *MysqlServerKeyConfig) {
 	_init_.Initialize()
 

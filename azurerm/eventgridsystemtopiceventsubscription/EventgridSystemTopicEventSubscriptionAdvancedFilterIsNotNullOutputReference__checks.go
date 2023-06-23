@@ -165,6 +165,8 @@ func (j *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullO
 
 func (j *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull:
 		val := val.(*EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullO
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull; received %#v (a %T)", val, val)
 		}
 	}
 

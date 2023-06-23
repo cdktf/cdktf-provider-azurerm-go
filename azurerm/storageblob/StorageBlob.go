@@ -2,14 +2,14 @@ package storageblob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/storageblob/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/storageblob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/storage_blob azurerm_storage_blob}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/storage_blob azurerm_storage_blob}.
 type StorageBlob interface {
 	cdktf.TerraformResource
 	AccessTier() *string
@@ -653,7 +653,7 @@ func (j *jsiiProxy_StorageBlob) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/storage_blob azurerm_storage_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/storage_blob azurerm_storage_blob} Resource.
 func NewStorageBlob(scope constructs.Construct, id *string, config *StorageBlobConfig) StorageBlob {
 	_init_.Initialize()
 
@@ -671,7 +671,7 @@ func NewStorageBlob(scope constructs.Construct, id *string, config *StorageBlobC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/storage_blob azurerm_storage_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/storage_blob azurerm_storage_blob} Resource.
 func NewStorageBlob_Override(s StorageBlob, scope constructs.Construct, id *string, config *StorageBlobConfig) {
 	_init_.Initialize()
 

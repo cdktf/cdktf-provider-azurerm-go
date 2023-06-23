@@ -2,14 +2,14 @@ package logzsubaccounttagrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/logzsubaccounttagrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/logzsubaccounttagrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/logz_sub_account_tag_rule azurerm_logz_sub_account_tag_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/logz_sub_account_tag_rule azurerm_logz_sub_account_tag_rule}.
 type LogzSubAccountTagRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -429,7 +429,7 @@ func (j *jsiiProxy_LogzSubAccountTagRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/logz_sub_account_tag_rule azurerm_logz_sub_account_tag_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/logz_sub_account_tag_rule azurerm_logz_sub_account_tag_rule} Resource.
 func NewLogzSubAccountTagRule(scope constructs.Construct, id *string, config *LogzSubAccountTagRuleConfig) LogzSubAccountTagRule {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewLogzSubAccountTagRule(scope constructs.Construct, id *string, config *Lo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/logz_sub_account_tag_rule azurerm_logz_sub_account_tag_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/logz_sub_account_tag_rule azurerm_logz_sub_account_tag_rule} Resource.
 func NewLogzSubAccountTagRule_Override(l LogzSubAccountTagRule, scope constructs.Construct, id *string, config *LogzSubAccountTagRuleConfig) {
 	_init_.Initialize()
 

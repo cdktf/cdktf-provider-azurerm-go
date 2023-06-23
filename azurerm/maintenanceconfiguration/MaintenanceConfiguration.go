@@ -2,14 +2,14 @@ package maintenanceconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/maintenanceconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/maintenanceconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration}.
 type MaintenanceConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -546,7 +546,7 @@ func (j *jsiiProxy_MaintenanceConfiguration) WindowInput() *MaintenanceConfigura
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration} Resource.
 func NewMaintenanceConfiguration(scope constructs.Construct, id *string, config *MaintenanceConfigurationConfig) MaintenanceConfiguration {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewMaintenanceConfiguration(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration} Resource.
 func NewMaintenanceConfiguration_Override(m MaintenanceConfiguration, scope constructs.Construct, id *string, config *MaintenanceConfigurationConfig) {
 	_init_.Initialize()
 

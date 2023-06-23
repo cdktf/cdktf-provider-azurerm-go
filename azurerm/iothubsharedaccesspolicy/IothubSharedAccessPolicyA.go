@@ -2,14 +2,14 @@ package iothubsharedaccesspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/iothubsharedaccesspolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/iothubsharedaccesspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/iothub_shared_access_policy azurerm_iothub_shared_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/iothub_shared_access_policy azurerm_iothub_shared_access_policy}.
 type IothubSharedAccessPolicyA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -519,7 +519,7 @@ func (j *jsiiProxy_IothubSharedAccessPolicyA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/iothub_shared_access_policy azurerm_iothub_shared_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/iothub_shared_access_policy azurerm_iothub_shared_access_policy} Resource.
 func NewIothubSharedAccessPolicyA(scope constructs.Construct, id *string, config *IothubSharedAccessPolicyAConfig) IothubSharedAccessPolicyA {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewIothubSharedAccessPolicyA(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/iothub_shared_access_policy azurerm_iothub_shared_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/iothub_shared_access_policy azurerm_iothub_shared_access_policy} Resource.
 func NewIothubSharedAccessPolicyA_Override(i IothubSharedAccessPolicyA, scope constructs.Construct, id *string, config *IothubSharedAccessPolicyAConfig) {
 	_init_.Initialize()
 

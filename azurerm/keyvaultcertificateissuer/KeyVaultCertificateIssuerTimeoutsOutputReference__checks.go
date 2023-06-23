@@ -181,6 +181,8 @@ func (j *jsiiProxy_KeyVaultCertificateIssuerTimeoutsOutputReference) validateSet
 
 func (j *jsiiProxy_KeyVaultCertificateIssuerTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *KeyVaultCertificateIssuerTimeouts:
 		val := val.(*KeyVaultCertificateIssuerTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_KeyVaultCertificateIssuerTimeoutsOutputReference) validateSet
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *KeyVaultCertificateIssuerTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *KeyVaultCertificateIssuerTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

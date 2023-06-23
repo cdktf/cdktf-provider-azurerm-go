@@ -181,6 +181,8 @@ func (j *jsiiProxy_AutomationVariableIntTimeoutsOutputReference) validateSetDele
 
 func (j *jsiiProxy_AutomationVariableIntTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AutomationVariableIntTimeouts:
 		val := val.(*AutomationVariableIntTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_AutomationVariableIntTimeoutsOutputReference) validateSetInte
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AutomationVariableIntTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AutomationVariableIntTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

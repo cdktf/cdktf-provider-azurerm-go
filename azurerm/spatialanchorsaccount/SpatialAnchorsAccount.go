@@ -2,14 +2,14 @@ package spatialanchorsaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/spatialanchorsaccount/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/spatialanchorsaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/spatial_anchors_account azurerm_spatial_anchors_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/spatial_anchors_account azurerm_spatial_anchors_account}.
 type SpatialAnchorsAccount interface {
 	cdktf.TerraformResource
 	AccountDomain() *string
@@ -425,7 +425,7 @@ func (j *jsiiProxy_SpatialAnchorsAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/spatial_anchors_account azurerm_spatial_anchors_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/spatial_anchors_account azurerm_spatial_anchors_account} Resource.
 func NewSpatialAnchorsAccount(scope constructs.Construct, id *string, config *SpatialAnchorsAccountConfig) SpatialAnchorsAccount {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewSpatialAnchorsAccount(scope constructs.Construct, id *string, config *Sp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/spatial_anchors_account azurerm_spatial_anchors_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/spatial_anchors_account azurerm_spatial_anchors_account} Resource.
 func NewSpatialAnchorsAccount_Override(s SpatialAnchorsAccount, scope constructs.Construct, id *string, config *SpatialAnchorsAccountConfig) {
 	_init_.Initialize()
 

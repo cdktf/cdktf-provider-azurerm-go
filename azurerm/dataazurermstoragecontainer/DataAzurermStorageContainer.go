@@ -2,14 +2,14 @@ package dataazurermstoragecontainer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermstoragecontainer/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermstoragecontainer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/storage_container azurerm_storage_container}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/storage_container azurerm_storage_container}.
 type DataAzurermStorageContainer interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DataAzurermStorageContainer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/storage_container azurerm_storage_container} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/storage_container azurerm_storage_container} Data Source.
 func NewDataAzurermStorageContainer(scope constructs.Construct, id *string, config *DataAzurermStorageContainerConfig) DataAzurermStorageContainer {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewDataAzurermStorageContainer(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/storage_container azurerm_storage_container} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/storage_container azurerm_storage_container} Data Source.
 func NewDataAzurermStorageContainer_Override(d DataAzurermStorageContainer, scope constructs.Construct, id *string, config *DataAzurermStorageContainerConfig) {
 	_init_.Initialize()
 

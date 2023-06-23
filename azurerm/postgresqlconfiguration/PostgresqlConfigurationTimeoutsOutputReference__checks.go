@@ -181,6 +181,8 @@ func (j *jsiiProxy_PostgresqlConfigurationTimeoutsOutputReference) validateSetDe
 
 func (j *jsiiProxy_PostgresqlConfigurationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *PostgresqlConfigurationTimeouts:
 		val := val.(*PostgresqlConfigurationTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_PostgresqlConfigurationTimeoutsOutputReference) validateSetIn
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *PostgresqlConfigurationTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PostgresqlConfigurationTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

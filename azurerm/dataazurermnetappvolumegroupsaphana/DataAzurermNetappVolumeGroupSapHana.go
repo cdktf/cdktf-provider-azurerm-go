@@ -2,14 +2,14 @@ package dataazurermnetappvolumegroupsaphana
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermnetappvolumegroupsaphana/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermnetappvolumegroupsaphana/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/netapp_volume_group_sap_hana azurerm_netapp_volume_group_sap_hana}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/netapp_volume_group_sap_hana azurerm_netapp_volume_group_sap_hana}.
 type DataAzurermNetappVolumeGroupSapHana interface {
 	cdktf.TerraformDataSource
 	AccountName() *string
@@ -395,7 +395,7 @@ func (j *jsiiProxy_DataAzurermNetappVolumeGroupSapHana) Volume() DataAzurermNeta
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/netapp_volume_group_sap_hana azurerm_netapp_volume_group_sap_hana} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/netapp_volume_group_sap_hana azurerm_netapp_volume_group_sap_hana} Data Source.
 func NewDataAzurermNetappVolumeGroupSapHana(scope constructs.Construct, id *string, config *DataAzurermNetappVolumeGroupSapHanaConfig) DataAzurermNetappVolumeGroupSapHana {
 	_init_.Initialize()
 
@@ -413,7 +413,7 @@ func NewDataAzurermNetappVolumeGroupSapHana(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/netapp_volume_group_sap_hana azurerm_netapp_volume_group_sap_hana} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/netapp_volume_group_sap_hana azurerm_netapp_volume_group_sap_hana} Data Source.
 func NewDataAzurermNetappVolumeGroupSapHana_Override(d DataAzurermNetappVolumeGroupSapHana, scope constructs.Construct, id *string, config *DataAzurermNetappVolumeGroupSapHanaConfig) {
 	_init_.Initialize()
 

@@ -185,6 +185,8 @@ func (j *jsiiProxy_CognitiveAccountNetworkAclsVirtualNetworkRulesOutputReference
 
 func (j *jsiiProxy_CognitiveAccountNetworkAclsVirtualNetworkRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CognitiveAccountNetworkAclsVirtualNetworkRules:
 		val := val.(*CognitiveAccountNetworkAclsVirtualNetworkRules)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -196,11 +198,9 @@ func (j *jsiiProxy_CognitiveAccountNetworkAclsVirtualNetworkRulesOutputReference
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CognitiveAccountNetworkAclsVirtualNetworkRules, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CognitiveAccountNetworkAclsVirtualNetworkRules; received %#v (a %T)", val, val)
 		}
 	}
 

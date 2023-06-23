@@ -2,14 +2,14 @@ package devtestvirtualnetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/devtestvirtualnetwork/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/devtestvirtualnetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/dev_test_virtual_network azurerm_dev_test_virtual_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/dev_test_virtual_network azurerm_dev_test_virtual_network}.
 type DevTestVirtualNetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_DevTestVirtualNetwork) UniqueIdentifier() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/dev_test_virtual_network azurerm_dev_test_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/dev_test_virtual_network azurerm_dev_test_virtual_network} Resource.
 func NewDevTestVirtualNetwork(scope constructs.Construct, id *string, config *DevTestVirtualNetworkConfig) DevTestVirtualNetwork {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewDevTestVirtualNetwork(scope constructs.Construct, id *string, config *De
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/dev_test_virtual_network azurerm_dev_test_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/dev_test_virtual_network azurerm_dev_test_virtual_network} Resource.
 func NewDevTestVirtualNetwork_Override(d DevTestVirtualNetwork, scope constructs.Construct, id *string, config *DevTestVirtualNetworkConfig) {
 	_init_.Initialize()
 

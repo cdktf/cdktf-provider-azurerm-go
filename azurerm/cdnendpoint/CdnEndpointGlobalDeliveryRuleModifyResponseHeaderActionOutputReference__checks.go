@@ -173,6 +173,8 @@ func (j *jsiiProxy_CdnEndpointGlobalDeliveryRuleModifyResponseHeaderActionOutput
 
 func (j *jsiiProxy_CdnEndpointGlobalDeliveryRuleModifyResponseHeaderActionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CdnEndpointGlobalDeliveryRuleModifyResponseHeaderAction:
 		val := val.(*CdnEndpointGlobalDeliveryRuleModifyResponseHeaderAction)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_CdnEndpointGlobalDeliveryRuleModifyResponseHeaderActionOutput
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CdnEndpointGlobalDeliveryRuleModifyResponseHeaderAction, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CdnEndpointGlobalDeliveryRuleModifyResponseHeaderAction; received %#v (a %T)", val, val)
 		}
 	}
 

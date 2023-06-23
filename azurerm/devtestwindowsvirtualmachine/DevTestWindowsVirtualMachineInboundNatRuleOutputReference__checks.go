@@ -173,6 +173,8 @@ func (j *jsiiProxy_DevTestWindowsVirtualMachineInboundNatRuleOutputReference) va
 
 func (j *jsiiProxy_DevTestWindowsVirtualMachineInboundNatRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DevTestWindowsVirtualMachineInboundNatRule:
 		val := val.(*DevTestWindowsVirtualMachineInboundNatRule)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_DevTestWindowsVirtualMachineInboundNatRuleOutputReference) va
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DevTestWindowsVirtualMachineInboundNatRule, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DevTestWindowsVirtualMachineInboundNatRule; received %#v (a %T)", val, val)
 		}
 	}
 

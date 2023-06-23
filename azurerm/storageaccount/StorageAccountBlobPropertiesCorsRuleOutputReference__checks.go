@@ -197,6 +197,8 @@ func (j *jsiiProxy_StorageAccountBlobPropertiesCorsRuleOutputReference) validate
 
 func (j *jsiiProxy_StorageAccountBlobPropertiesCorsRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *StorageAccountBlobPropertiesCorsRule:
 		val := val.(*StorageAccountBlobPropertiesCorsRule)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -208,11 +210,9 @@ func (j *jsiiProxy_StorageAccountBlobPropertiesCorsRuleOutputReference) validate
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *StorageAccountBlobPropertiesCorsRule, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *StorageAccountBlobPropertiesCorsRule; received %#v (a %T)", val, val)
 		}
 	}
 

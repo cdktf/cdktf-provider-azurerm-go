@@ -173,6 +173,8 @@ func (j *jsiiProxy_TrafficManagerNestedEndpointSubnetOutputReference) validateSe
 
 func (j *jsiiProxy_TrafficManagerNestedEndpointSubnetOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *TrafficManagerNestedEndpointSubnet:
 		val := val.(*TrafficManagerNestedEndpointSubnet)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_TrafficManagerNestedEndpointSubnetOutputReference) validateSe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *TrafficManagerNestedEndpointSubnet, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *TrafficManagerNestedEndpointSubnet; received %#v (a %T)", val, val)
 		}
 	}
 

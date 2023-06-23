@@ -2,14 +2,14 @@ package dataazurermstreamanalyticsjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermstreamanalyticsjob/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermstreamanalyticsjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/stream_analytics_job azurerm_stream_analytics_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/stream_analytics_job azurerm_stream_analytics_job}.
 type DataAzurermStreamAnalyticsJob interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -482,7 +482,7 @@ func (j *jsiiProxy_DataAzurermStreamAnalyticsJob) TransformationQuery() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/stream_analytics_job azurerm_stream_analytics_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/stream_analytics_job azurerm_stream_analytics_job} Data Source.
 func NewDataAzurermStreamAnalyticsJob(scope constructs.Construct, id *string, config *DataAzurermStreamAnalyticsJobConfig) DataAzurermStreamAnalyticsJob {
 	_init_.Initialize()
 
@@ -500,7 +500,7 @@ func NewDataAzurermStreamAnalyticsJob(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/stream_analytics_job azurerm_stream_analytics_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/stream_analytics_job azurerm_stream_analytics_job} Data Source.
 func NewDataAzurermStreamAnalyticsJob_Override(d DataAzurermStreamAnalyticsJob, scope constructs.Construct, id *string, config *DataAzurermStreamAnalyticsJobConfig) {
 	_init_.Initialize()
 

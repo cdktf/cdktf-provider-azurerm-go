@@ -2,14 +2,14 @@ package labservicelab
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/labservicelab/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/labservicelab/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/lab_service_lab azurerm_lab_service_lab}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/lab_service_lab azurerm_lab_service_lab}.
 type LabServiceLab interface {
 	cdktf.TerraformResource
 	AutoShutdown() LabServiceLabAutoShutdownOutputReference
@@ -616,7 +616,7 @@ func (j *jsiiProxy_LabServiceLab) VirtualMachineInput() *LabServiceLabVirtualMac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/lab_service_lab azurerm_lab_service_lab} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/lab_service_lab azurerm_lab_service_lab} Resource.
 func NewLabServiceLab(scope constructs.Construct, id *string, config *LabServiceLabConfig) LabServiceLab {
 	_init_.Initialize()
 
@@ -634,7 +634,7 @@ func NewLabServiceLab(scope constructs.Construct, id *string, config *LabService
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/lab_service_lab azurerm_lab_service_lab} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/lab_service_lab azurerm_lab_service_lab} Resource.
 func NewLabServiceLab_Override(l LabServiceLab, scope constructs.Construct, id *string, config *LabServiceLabConfig) {
 	_init_.Initialize()
 

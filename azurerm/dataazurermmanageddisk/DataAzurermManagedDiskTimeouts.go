@@ -2,7 +2,7 @@ package dataazurermmanageddisk
 
 
 type DataAzurermManagedDiskTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/managed_disk#read DataAzurermManagedDisk#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/managed_disk#read DataAzurermManagedDisk#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

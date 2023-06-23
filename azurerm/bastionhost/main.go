@@ -56,7 +56,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCopyPasteEnabled", GoMethod: "ResetCopyPasteEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFileCopyEnabled", GoMethod: "ResetFileCopyEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIpConfiguration", GoMethod: "ResetIpConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpConnectEnabled", GoMethod: "ResetIpConnectEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScaleUnits", GoMethod: "ResetScaleUnits"},

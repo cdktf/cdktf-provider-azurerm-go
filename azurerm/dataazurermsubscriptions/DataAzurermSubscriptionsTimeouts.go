@@ -2,7 +2,7 @@ package dataazurermsubscriptions
 
 
 type DataAzurermSubscriptionsTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/subscriptions#read DataAzurermSubscriptions#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/subscriptions#read DataAzurermSubscriptions#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

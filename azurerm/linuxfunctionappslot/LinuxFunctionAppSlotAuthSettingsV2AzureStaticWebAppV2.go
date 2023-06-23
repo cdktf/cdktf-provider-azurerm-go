@@ -4,7 +4,7 @@ package linuxfunctionappslot
 type LinuxFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2 struct {
 	// The ID of the Client to use to authenticate with Azure Static Web App Authentication.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/linux_function_app_slot#client_id LinuxFunctionAppSlot#client_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/linux_function_app_slot#client_id LinuxFunctionAppSlot#client_id}
 	ClientId *string `field:"required" json:"clientId" yaml:"clientId"`
 }
 

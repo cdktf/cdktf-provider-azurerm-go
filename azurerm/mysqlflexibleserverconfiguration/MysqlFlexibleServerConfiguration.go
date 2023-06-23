@@ -2,14 +2,14 @@ package mysqlflexibleserverconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/mysqlflexibleserverconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/mysqlflexibleserverconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mysql_flexible_server_configuration azurerm_mysql_flexible_server_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mysql_flexible_server_configuration azurerm_mysql_flexible_server_configuration}.
 type MysqlFlexibleServerConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_MysqlFlexibleServerConfiguration) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mysql_flexible_server_configuration azurerm_mysql_flexible_server_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mysql_flexible_server_configuration azurerm_mysql_flexible_server_configuration} Resource.
 func NewMysqlFlexibleServerConfiguration(scope constructs.Construct, id *string, config *MysqlFlexibleServerConfigurationConfig) MysqlFlexibleServerConfiguration {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewMysqlFlexibleServerConfiguration(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mysql_flexible_server_configuration azurerm_mysql_flexible_server_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mysql_flexible_server_configuration azurerm_mysql_flexible_server_configuration} Resource.
 func NewMysqlFlexibleServerConfiguration_Override(m MysqlFlexibleServerConfiguration, scope constructs.Construct, id *string, config *MysqlFlexibleServerConfigurationConfig) {
 	_init_.Initialize()
 

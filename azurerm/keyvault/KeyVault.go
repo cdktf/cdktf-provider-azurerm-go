@@ -2,14 +2,14 @@ package keyvault
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/keyvault/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/keyvault/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/key_vault azurerm_key_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/key_vault azurerm_key_vault}.
 type KeyVault interface {
 	cdktf.TerraformResource
 	AccessPolicy() KeyVaultAccessPolicyList
@@ -700,7 +700,7 @@ func (j *jsiiProxy_KeyVault) VaultUri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/key_vault azurerm_key_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/key_vault azurerm_key_vault} Resource.
 func NewKeyVault(scope constructs.Construct, id *string, config *KeyVaultConfig) KeyVault {
 	_init_.Initialize()
 
@@ -718,7 +718,7 @@ func NewKeyVault(scope constructs.Construct, id *string, config *KeyVaultConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/key_vault azurerm_key_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/key_vault azurerm_key_vault} Resource.
 func NewKeyVault_Override(k KeyVault, scope constructs.Construct, id *string, config *KeyVaultConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package dataazurermvirtualwan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermvirtualwan/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermvirtualwan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/virtual_wan azurerm_virtual_wan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/virtual_wan azurerm_virtual_wan}.
 type DataAzurermVirtualWan interface {
 	cdktf.TerraformDataSource
 	AllowBranchToBranchTraffic() cdktf.IResolvable
@@ -416,7 +416,7 @@ func (j *jsiiProxy_DataAzurermVirtualWan) VpnSiteIds() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/virtual_wan azurerm_virtual_wan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/virtual_wan azurerm_virtual_wan} Data Source.
 func NewDataAzurermVirtualWan(scope constructs.Construct, id *string, config *DataAzurermVirtualWanConfig) DataAzurermVirtualWan {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewDataAzurermVirtualWan(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/virtual_wan azurerm_virtual_wan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/virtual_wan azurerm_virtual_wan} Data Source.
 func NewDataAzurermVirtualWan_Override(d DataAzurermVirtualWan, scope constructs.Construct, id *string, config *DataAzurermVirtualWanConfig) {
 	_init_.Initialize()
 

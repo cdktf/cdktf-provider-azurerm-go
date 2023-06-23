@@ -2,14 +2,14 @@ package sentinelalertrulefusion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/sentinelalertrulefusion/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/sentinelalertrulefusion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/sentinel_alert_rule_fusion azurerm_sentinel_alert_rule_fusion}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/sentinel_alert_rule_fusion azurerm_sentinel_alert_rule_fusion}.
 type SentinelAlertRuleFusion interface {
 	cdktf.TerraformResource
 	AlertRuleTemplateGuid() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_SentinelAlertRuleFusion) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/sentinel_alert_rule_fusion azurerm_sentinel_alert_rule_fusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/sentinel_alert_rule_fusion azurerm_sentinel_alert_rule_fusion} Resource.
 func NewSentinelAlertRuleFusion(scope constructs.Construct, id *string, config *SentinelAlertRuleFusionConfig) SentinelAlertRuleFusion {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewSentinelAlertRuleFusion(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/sentinel_alert_rule_fusion azurerm_sentinel_alert_rule_fusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/sentinel_alert_rule_fusion azurerm_sentinel_alert_rule_fusion} Resource.
 func NewSentinelAlertRuleFusion_Override(s SentinelAlertRuleFusion, scope constructs.Construct, id *string, config *SentinelAlertRuleFusionConfig) {
 	_init_.Initialize()
 

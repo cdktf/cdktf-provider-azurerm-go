@@ -2,14 +2,14 @@ package mobilenetworkdatanetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/mobilenetworkdatanetwork/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/mobilenetworkdatanetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mobile_network_data_network azurerm_mobile_network_data_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mobile_network_data_network azurerm_mobile_network_data_network}.
 type MobileNetworkDataNetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_MobileNetworkDataNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mobile_network_data_network azurerm_mobile_network_data_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mobile_network_data_network azurerm_mobile_network_data_network} Resource.
 func NewMobileNetworkDataNetwork(scope constructs.Construct, id *string, config *MobileNetworkDataNetworkConfig) MobileNetworkDataNetwork {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewMobileNetworkDataNetwork(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mobile_network_data_network azurerm_mobile_network_data_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mobile_network_data_network azurerm_mobile_network_data_network} Resource.
 func NewMobileNetworkDataNetwork_Override(m MobileNetworkDataNetwork, scope constructs.Construct, id *string, config *MobileNetworkDataNetworkConfig) {
 	_init_.Initialize()
 

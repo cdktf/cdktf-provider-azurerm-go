@@ -2,14 +2,14 @@ package communicationservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/communicationservice/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/communicationservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/communication_service azurerm_communication_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/communication_service azurerm_communication_service}.
 type CommunicationService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -448,7 +448,7 @@ func (j *jsiiProxy_CommunicationService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/communication_service azurerm_communication_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/communication_service azurerm_communication_service} Resource.
 func NewCommunicationService(scope constructs.Construct, id *string, config *CommunicationServiceConfig) CommunicationService {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewCommunicationService(scope constructs.Construct, id *string, config *Com
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/communication_service azurerm_communication_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/communication_service azurerm_communication_service} Resource.
 func NewCommunicationService_Override(c CommunicationService, scope constructs.Construct, id *string, config *CommunicationServiceConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package datafactorytriggerblobevent
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/datafactorytriggerblobevent/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/datafactorytriggerblobevent/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event}.
 type DataFactoryTriggerBlobEvent interface {
 	cdktf.TerraformResource
 	Activated() interface{}
@@ -593,7 +593,7 @@ func (j *jsiiProxy_DataFactoryTriggerBlobEvent) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event} Resource.
 func NewDataFactoryTriggerBlobEvent(scope constructs.Construct, id *string, config *DataFactoryTriggerBlobEventConfig) DataFactoryTriggerBlobEvent {
 	_init_.Initialize()
 
@@ -611,7 +611,7 @@ func NewDataFactoryTriggerBlobEvent(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event} Resource.
 func NewDataFactoryTriggerBlobEvent_Override(d DataFactoryTriggerBlobEvent, scope constructs.Construct, id *string, config *DataFactoryTriggerBlobEventConfig) {
 	_init_.Initialize()
 

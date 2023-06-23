@@ -2,14 +2,14 @@ package mssqlservermicrosoftsupportauditingpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/mssqlservermicrosoftsupportauditingpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/mssqlservermicrosoftsupportauditingpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mssql_server_microsoft_support_auditing_policy azurerm_mssql_server_microsoft_support_auditing_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mssql_server_microsoft_support_auditing_policy azurerm_mssql_server_microsoft_support_auditing_policy}.
 type MssqlServerMicrosoftSupportAuditingPolicy interface {
 	cdktf.TerraformResource
 	BlobStorageEndpoint() *string
@@ -453,7 +453,7 @@ func (j *jsiiProxy_MssqlServerMicrosoftSupportAuditingPolicy) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mssql_server_microsoft_support_auditing_policy azurerm_mssql_server_microsoft_support_auditing_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mssql_server_microsoft_support_auditing_policy azurerm_mssql_server_microsoft_support_auditing_policy} Resource.
 func NewMssqlServerMicrosoftSupportAuditingPolicy(scope constructs.Construct, id *string, config *MssqlServerMicrosoftSupportAuditingPolicyConfig) MssqlServerMicrosoftSupportAuditingPolicy {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewMssqlServerMicrosoftSupportAuditingPolicy(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mssql_server_microsoft_support_auditing_policy azurerm_mssql_server_microsoft_support_auditing_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mssql_server_microsoft_support_auditing_policy azurerm_mssql_server_microsoft_support_auditing_policy} Resource.
 func NewMssqlServerMicrosoftSupportAuditingPolicy_Override(m MssqlServerMicrosoftSupportAuditingPolicy, scope constructs.Construct, id *string, config *MssqlServerMicrosoftSupportAuditingPolicyConfig) {
 	_init_.Initialize()
 

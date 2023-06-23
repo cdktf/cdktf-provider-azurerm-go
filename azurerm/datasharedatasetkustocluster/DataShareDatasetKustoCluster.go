@@ -2,14 +2,14 @@ package datasharedatasetkustocluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/datasharedatasetkustocluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/datasharedatasetkustocluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_share_dataset_kusto_cluster azurerm_data_share_dataset_kusto_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_share_dataset_kusto_cluster azurerm_data_share_dataset_kusto_cluster}.
 type DataShareDatasetKustoCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_DataShareDatasetKustoCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_share_dataset_kusto_cluster azurerm_data_share_dataset_kusto_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_share_dataset_kusto_cluster azurerm_data_share_dataset_kusto_cluster} Resource.
 func NewDataShareDatasetKustoCluster(scope constructs.Construct, id *string, config *DataShareDatasetKustoClusterConfig) DataShareDatasetKustoCluster {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewDataShareDatasetKustoCluster(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_share_dataset_kusto_cluster azurerm_data_share_dataset_kusto_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_share_dataset_kusto_cluster azurerm_data_share_dataset_kusto_cluster} Resource.
 func NewDataShareDatasetKustoCluster_Override(d DataShareDatasetKustoCluster, scope constructs.Construct, id *string, config *DataShareDatasetKustoClusterConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package dataazurermsubnet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermsubnet/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermsubnet/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/subnet azurerm_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/subnet azurerm_subnet}.
 type DataAzurermSubnet interface {
 	cdktf.TerraformDataSource
 	AddressPrefix() *string
@@ -450,7 +450,7 @@ func (j *jsiiProxy_DataAzurermSubnet) VirtualNetworkNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/subnet azurerm_subnet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/subnet azurerm_subnet} Data Source.
 func NewDataAzurermSubnet(scope constructs.Construct, id *string, config *DataAzurermSubnetConfig) DataAzurermSubnet {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewDataAzurermSubnet(scope constructs.Construct, id *string, config *DataAz
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/subnet azurerm_subnet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/subnet azurerm_subnet} Data Source.
 func NewDataAzurermSubnet_Override(d DataAzurermSubnet, scope constructs.Construct, id *string, config *DataAzurermSubnetConfig) {
 	_init_.Initialize()
 

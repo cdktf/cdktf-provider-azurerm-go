@@ -2,14 +2,14 @@ package synapseroleassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/synapseroleassignment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/synapseroleassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment}.
 type SynapseRoleAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_SynapseRoleAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment} Resource.
 func NewSynapseRoleAssignment(scope constructs.Construct, id *string, config *SynapseRoleAssignmentConfig) SynapseRoleAssignment {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewSynapseRoleAssignment(scope constructs.Construct, id *string, config *Sy
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment} Resource.
 func NewSynapseRoleAssignment_Override(s SynapseRoleAssignment, scope constructs.Construct, id *string, config *SynapseRoleAssignmentConfig) {
 	_init_.Initialize()
 

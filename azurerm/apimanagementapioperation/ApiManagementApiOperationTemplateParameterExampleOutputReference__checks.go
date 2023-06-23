@@ -181,6 +181,8 @@ func (j *jsiiProxy_ApiManagementApiOperationTemplateParameterExampleOutputRefere
 
 func (j *jsiiProxy_ApiManagementApiOperationTemplateParameterExampleOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ApiManagementApiOperationTemplateParameterExample:
 		val := val.(*ApiManagementApiOperationTemplateParameterExample)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_ApiManagementApiOperationTemplateParameterExampleOutputRefere
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ApiManagementApiOperationTemplateParameterExample, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ApiManagementApiOperationTemplateParameterExample; received %#v (a %T)", val, val)
 		}
 	}
 

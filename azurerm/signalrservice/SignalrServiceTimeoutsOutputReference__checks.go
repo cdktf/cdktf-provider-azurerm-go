@@ -181,6 +181,8 @@ func (j *jsiiProxy_SignalrServiceTimeoutsOutputReference) validateSetDeleteParam
 
 func (j *jsiiProxy_SignalrServiceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *SignalrServiceTimeouts:
 		val := val.(*SignalrServiceTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_SignalrServiceTimeoutsOutputReference) validateSetInternalVal
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *SignalrServiceTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SignalrServiceTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

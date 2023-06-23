@@ -218,6 +218,14 @@ func (j *jsiiProxy_CosmosdbGremlinGraph) validateSetAccountNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbGremlinGraph) validateSetAnalyticalStorageTtlParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbGremlinGraph) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

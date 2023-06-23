@@ -96,6 +96,10 @@ func (j *jsiiProxy_MonitorWorkspace) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_MonitorWorkspace) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorWorkspace) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }

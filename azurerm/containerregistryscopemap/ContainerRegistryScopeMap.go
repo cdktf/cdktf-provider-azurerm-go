@@ -2,14 +2,14 @@ package containerregistryscopemap
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/containerregistryscopemap/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/containerregistryscopemap/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/container_registry_scope_map azurerm_container_registry_scope_map}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/container_registry_scope_map azurerm_container_registry_scope_map}.
 type ContainerRegistryScopeMap interface {
 	cdktf.TerraformResource
 	Actions() *[]*string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_ContainerRegistryScopeMap) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/container_registry_scope_map azurerm_container_registry_scope_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/container_registry_scope_map azurerm_container_registry_scope_map} Resource.
 func NewContainerRegistryScopeMap(scope constructs.Construct, id *string, config *ContainerRegistryScopeMapConfig) ContainerRegistryScopeMap {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewContainerRegistryScopeMap(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/container_registry_scope_map azurerm_container_registry_scope_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/container_registry_scope_map azurerm_container_registry_scope_map} Resource.
 func NewContainerRegistryScopeMap_Override(c ContainerRegistryScopeMap, scope constructs.Construct, id *string, config *ContainerRegistryScopeMapConfig) {
 	_init_.Initialize()
 

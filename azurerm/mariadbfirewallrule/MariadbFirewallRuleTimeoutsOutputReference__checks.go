@@ -181,6 +181,8 @@ func (j *jsiiProxy_MariadbFirewallRuleTimeoutsOutputReference) validateSetDelete
 
 func (j *jsiiProxy_MariadbFirewallRuleTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *MariadbFirewallRuleTimeouts:
 		val := val.(*MariadbFirewallRuleTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_MariadbFirewallRuleTimeoutsOutputReference) validateSetIntern
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *MariadbFirewallRuleTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *MariadbFirewallRuleTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

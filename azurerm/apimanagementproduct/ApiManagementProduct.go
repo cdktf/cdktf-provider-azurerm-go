@@ -2,14 +2,14 @@ package apimanagementproduct
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/apimanagementproduct/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/apimanagementproduct/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_product azurerm_api_management_product}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/api_management_product azurerm_api_management_product}.
 type ApiManagementProduct interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -545,7 +545,7 @@ func (j *jsiiProxy_ApiManagementProduct) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_product azurerm_api_management_product} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/api_management_product azurerm_api_management_product} Resource.
 func NewApiManagementProduct(scope constructs.Construct, id *string, config *ApiManagementProductConfig) ApiManagementProduct {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewApiManagementProduct(scope constructs.Construct, id *string, config *Api
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/api_management_product azurerm_api_management_product} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/api_management_product azurerm_api_management_product} Resource.
 func NewApiManagementProduct_Override(a ApiManagementProduct, scope constructs.Construct, id *string, config *ApiManagementProductConfig) {
 	_init_.Initialize()
 

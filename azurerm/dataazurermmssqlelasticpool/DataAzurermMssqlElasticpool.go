@@ -2,14 +2,14 @@ package dataazurermmssqlelasticpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermmssqlelasticpool/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermmssqlelasticpool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/mssql_elasticpool azurerm_mssql_elasticpool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/mssql_elasticpool azurerm_mssql_elasticpool}.
 type DataAzurermMssqlElasticpool interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -450,7 +450,7 @@ func (j *jsiiProxy_DataAzurermMssqlElasticpool) ZoneRedundant() cdktf.IResolvabl
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/mssql_elasticpool azurerm_mssql_elasticpool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/mssql_elasticpool azurerm_mssql_elasticpool} Data Source.
 func NewDataAzurermMssqlElasticpool(scope constructs.Construct, id *string, config *DataAzurermMssqlElasticpoolConfig) DataAzurermMssqlElasticpool {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewDataAzurermMssqlElasticpool(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/mssql_elasticpool azurerm_mssql_elasticpool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/mssql_elasticpool azurerm_mssql_elasticpool} Data Source.
 func NewDataAzurermMssqlElasticpool_Override(d DataAzurermMssqlElasticpool, scope constructs.Construct, id *string, config *DataAzurermMssqlElasticpoolConfig) {
 	_init_.Initialize()
 

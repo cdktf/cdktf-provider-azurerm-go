@@ -204,6 +204,8 @@ func (j *jsiiProxy_WindowsFunctionAppSlotSiteConfigScmIpRestrictionOutputReferen
 
 func (j *jsiiProxy_WindowsFunctionAppSlotSiteConfigScmIpRestrictionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *WindowsFunctionAppSlotSiteConfigScmIpRestriction:
 		val := val.(*WindowsFunctionAppSlotSiteConfigScmIpRestriction)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -215,11 +217,9 @@ func (j *jsiiProxy_WindowsFunctionAppSlotSiteConfigScmIpRestrictionOutputReferen
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *WindowsFunctionAppSlotSiteConfigScmIpRestriction, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *WindowsFunctionAppSlotSiteConfigScmIpRestriction; received %#v (a %T)", val, val)
 		}
 	}
 

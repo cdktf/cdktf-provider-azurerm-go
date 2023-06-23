@@ -2,14 +2,14 @@ package synapseworkspacesqlaadadmin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/synapseworkspacesqlaadadmin/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/synapseworkspacesqlaadadmin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin}.
 type SynapseWorkspaceSqlAadAdminA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_SynapseWorkspaceSqlAadAdminA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin} Resource.
 func NewSynapseWorkspaceSqlAadAdminA(scope constructs.Construct, id *string, config *SynapseWorkspaceSqlAadAdminAConfig) SynapseWorkspaceSqlAadAdminA {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewSynapseWorkspaceSqlAadAdminA(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin} Resource.
 func NewSynapseWorkspaceSqlAadAdminA_Override(s SynapseWorkspaceSqlAadAdminA, scope constructs.Construct, id *string, config *SynapseWorkspaceSqlAadAdminAConfig) {
 	_init_.Initialize()
 

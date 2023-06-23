@@ -2,14 +2,14 @@ package botwebapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/botwebapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/botwebapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/bot_web_app azurerm_bot_web_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/bot_web_app azurerm_bot_web_app}.
 type BotWebApp interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -617,7 +617,7 @@ func (j *jsiiProxy_BotWebApp) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/bot_web_app azurerm_bot_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/bot_web_app azurerm_bot_web_app} Resource.
 func NewBotWebApp(scope constructs.Construct, id *string, config *BotWebAppConfig) BotWebApp {
 	_init_.Initialize()
 
@@ -635,7 +635,7 @@ func NewBotWebApp(scope constructs.Construct, id *string, config *BotWebAppConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/bot_web_app azurerm_bot_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/bot_web_app azurerm_bot_web_app} Resource.
 func NewBotWebApp_Override(b BotWebApp, scope constructs.Construct, id *string, config *BotWebAppConfig) {
 	_init_.Initialize()
 

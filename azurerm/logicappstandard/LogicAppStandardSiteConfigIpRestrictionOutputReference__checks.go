@@ -204,6 +204,8 @@ func (j *jsiiProxy_LogicAppStandardSiteConfigIpRestrictionOutputReference) valid
 
 func (j *jsiiProxy_LogicAppStandardSiteConfigIpRestrictionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *LogicAppStandardSiteConfigIpRestriction:
 		val := val.(*LogicAppStandardSiteConfigIpRestriction)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -215,11 +217,9 @@ func (j *jsiiProxy_LogicAppStandardSiteConfigIpRestrictionOutputReference) valid
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *LogicAppStandardSiteConfigIpRestriction, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *LogicAppStandardSiteConfigIpRestriction; received %#v (a %T)", val, val)
 		}
 	}
 

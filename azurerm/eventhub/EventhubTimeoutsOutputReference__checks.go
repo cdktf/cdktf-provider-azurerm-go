@@ -181,6 +181,8 @@ func (j *jsiiProxy_EventhubTimeoutsOutputReference) validateSetDeleteParameters(
 
 func (j *jsiiProxy_EventhubTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *EventhubTimeouts:
 		val := val.(*EventhubTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_EventhubTimeoutsOutputReference) validateSetInternalValuePara
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *EventhubTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *EventhubTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

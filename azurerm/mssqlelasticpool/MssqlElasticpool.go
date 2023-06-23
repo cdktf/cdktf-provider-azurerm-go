@@ -2,14 +2,14 @@ package mssqlelasticpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/mssqlelasticpool/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/mssqlelasticpool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mssql_elasticpool azurerm_mssql_elasticpool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mssql_elasticpool azurerm_mssql_elasticpool}.
 type MssqlElasticpool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -592,7 +592,7 @@ func (j *jsiiProxy_MssqlElasticpool) ZoneRedundantInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mssql_elasticpool azurerm_mssql_elasticpool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mssql_elasticpool azurerm_mssql_elasticpool} Resource.
 func NewMssqlElasticpool(scope constructs.Construct, id *string, config *MssqlElasticpoolConfig) MssqlElasticpool {
 	_init_.Initialize()
 
@@ -610,7 +610,7 @@ func NewMssqlElasticpool(scope constructs.Construct, id *string, config *MssqlEl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mssql_elasticpool azurerm_mssql_elasticpool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mssql_elasticpool azurerm_mssql_elasticpool} Resource.
 func NewMssqlElasticpool_Override(m MssqlElasticpool, scope constructs.Construct, id *string, config *MssqlElasticpoolConfig) {
 	_init_.Initialize()
 

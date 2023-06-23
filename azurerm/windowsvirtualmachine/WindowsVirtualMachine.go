@@ -2,14 +2,14 @@ package windowsvirtualmachine
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/windowsvirtualmachine/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/windowsvirtualmachine/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine}.
 type WindowsVirtualMachine interface {
 	cdktf.TerraformResource
 	AdditionalCapabilities() WindowsVirtualMachineAdditionalCapabilitiesOutputReference
@@ -1485,7 +1485,7 @@ func (j *jsiiProxy_WindowsVirtualMachine) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine} Resource.
 func NewWindowsVirtualMachine(scope constructs.Construct, id *string, config *WindowsVirtualMachineConfig) WindowsVirtualMachine {
 	_init_.Initialize()
 
@@ -1503,7 +1503,7 @@ func NewWindowsVirtualMachine(scope constructs.Construct, id *string, config *Wi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine} Resource.
 func NewWindowsVirtualMachine_Override(w WindowsVirtualMachine, scope constructs.Construct, id *string, config *WindowsVirtualMachineConfig) {
 	_init_.Initialize()
 

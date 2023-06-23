@@ -240,6 +240,10 @@ func (j *jsiiProxy_KubernetesCluster) validateSetNameParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesCluster) validateSetNodeOsChannelUpgradeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesCluster) validateSetNodeResourceGroupParameters(val *string) error {
 	return nil
 }

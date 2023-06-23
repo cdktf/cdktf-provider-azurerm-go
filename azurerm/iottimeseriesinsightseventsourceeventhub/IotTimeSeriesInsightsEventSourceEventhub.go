@@ -2,14 +2,14 @@ package iottimeseriesinsightseventsourceeventhub
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/iottimeseriesinsightseventsourceeventhub/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/iottimeseriesinsightseventsourceeventhub/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/iot_time_series_insights_event_source_eventhub azurerm_iot_time_series_insights_event_source_eventhub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/iot_time_series_insights_event_source_eventhub azurerm_iot_time_series_insights_event_source_eventhub}.
 type IotTimeSeriesInsightsEventSourceEventhub interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -565,7 +565,7 @@ func (j *jsiiProxy_IotTimeSeriesInsightsEventSourceEventhub) TimestampPropertyNa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/iot_time_series_insights_event_source_eventhub azurerm_iot_time_series_insights_event_source_eventhub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/iot_time_series_insights_event_source_eventhub azurerm_iot_time_series_insights_event_source_eventhub} Resource.
 func NewIotTimeSeriesInsightsEventSourceEventhub(scope constructs.Construct, id *string, config *IotTimeSeriesInsightsEventSourceEventhubConfig) IotTimeSeriesInsightsEventSourceEventhub {
 	_init_.Initialize()
 
@@ -583,7 +583,7 @@ func NewIotTimeSeriesInsightsEventSourceEventhub(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/iot_time_series_insights_event_source_eventhub azurerm_iot_time_series_insights_event_source_eventhub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/iot_time_series_insights_event_source_eventhub azurerm_iot_time_series_insights_event_source_eventhub} Resource.
 func NewIotTimeSeriesInsightsEventSourceEventhub_Override(i IotTimeSeriesInsightsEventSourceEventhub, scope constructs.Construct, id *string, config *IotTimeSeriesInsightsEventSourceEventhubConfig) {
 	_init_.Initialize()
 

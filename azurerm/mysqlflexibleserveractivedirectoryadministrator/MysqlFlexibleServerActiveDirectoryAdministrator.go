@@ -2,14 +2,14 @@ package mysqlflexibleserveractivedirectoryadministrator
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/mysqlflexibleserveractivedirectoryadministrator/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/mysqlflexibleserveractivedirectoryadministrator/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mysql_flexible_server_active_directory_administrator azurerm_mysql_flexible_server_active_directory_administrator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mysql_flexible_server_active_directory_administrator azurerm_mysql_flexible_server_active_directory_administrator}.
 type MysqlFlexibleServerActiveDirectoryAdministrator interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_MysqlFlexibleServerActiveDirectoryAdministrator) TimeoutsInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mysql_flexible_server_active_directory_administrator azurerm_mysql_flexible_server_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mysql_flexible_server_active_directory_administrator azurerm_mysql_flexible_server_active_directory_administrator} Resource.
 func NewMysqlFlexibleServerActiveDirectoryAdministrator(scope constructs.Construct, id *string, config *MysqlFlexibleServerActiveDirectoryAdministratorConfig) MysqlFlexibleServerActiveDirectoryAdministrator {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewMysqlFlexibleServerActiveDirectoryAdministrator(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mysql_flexible_server_active_directory_administrator azurerm_mysql_flexible_server_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mysql_flexible_server_active_directory_administrator azurerm_mysql_flexible_server_active_directory_administrator} Resource.
 func NewMysqlFlexibleServerActiveDirectoryAdministrator_Override(m MysqlFlexibleServerActiveDirectoryAdministrator, scope constructs.Construct, id *string, config *MysqlFlexibleServerActiveDirectoryAdministratorConfig) {
 	_init_.Initialize()
 

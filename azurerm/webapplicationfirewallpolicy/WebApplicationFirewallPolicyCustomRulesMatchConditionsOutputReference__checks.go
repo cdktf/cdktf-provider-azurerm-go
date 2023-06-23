@@ -196,6 +196,8 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesMatchConditionsOutputR
 
 func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesMatchConditionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *WebApplicationFirewallPolicyCustomRulesMatchConditions:
 		val := val.(*WebApplicationFirewallPolicyCustomRulesMatchConditions)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -207,11 +209,9 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesMatchConditionsOutputR
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *WebApplicationFirewallPolicyCustomRulesMatchConditions, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *WebApplicationFirewallPolicyCustomRulesMatchConditions; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -2,14 +2,14 @@ package mssqlserverextendedauditingpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/mssqlserverextendedauditingpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/mssqlserverextendedauditingpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mssql_server_extended_auditing_policy azurerm_mssql_server_extended_auditing_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mssql_server_extended_auditing_policy azurerm_mssql_server_extended_auditing_policy}.
 type MssqlServerExtendedAuditingPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -501,7 +501,7 @@ func (j *jsiiProxy_MssqlServerExtendedAuditingPolicy) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mssql_server_extended_auditing_policy azurerm_mssql_server_extended_auditing_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mssql_server_extended_auditing_policy azurerm_mssql_server_extended_auditing_policy} Resource.
 func NewMssqlServerExtendedAuditingPolicy(scope constructs.Construct, id *string, config *MssqlServerExtendedAuditingPolicyConfig) MssqlServerExtendedAuditingPolicy {
 	_init_.Initialize()
 
@@ -519,7 +519,7 @@ func NewMssqlServerExtendedAuditingPolicy(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mssql_server_extended_auditing_policy azurerm_mssql_server_extended_auditing_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mssql_server_extended_auditing_policy azurerm_mssql_server_extended_auditing_policy} Resource.
 func NewMssqlServerExtendedAuditingPolicy_Override(m MssqlServerExtendedAuditingPolicy, scope constructs.Construct, id *string, config *MssqlServerExtendedAuditingPolicyConfig) {
 	_init_.Initialize()
 

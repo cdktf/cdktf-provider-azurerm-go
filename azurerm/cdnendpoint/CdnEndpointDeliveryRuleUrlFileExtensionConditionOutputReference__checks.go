@@ -165,6 +165,8 @@ func (j *jsiiProxy_CdnEndpointDeliveryRuleUrlFileExtensionConditionOutputReferen
 
 func (j *jsiiProxy_CdnEndpointDeliveryRuleUrlFileExtensionConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CdnEndpointDeliveryRuleUrlFileExtensionCondition:
 		val := val.(*CdnEndpointDeliveryRuleUrlFileExtensionCondition)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_CdnEndpointDeliveryRuleUrlFileExtensionConditionOutputReferen
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CdnEndpointDeliveryRuleUrlFileExtensionCondition, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CdnEndpointDeliveryRuleUrlFileExtensionCondition; received %#v (a %T)", val, val)
 		}
 	}
 

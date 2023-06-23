@@ -2,14 +2,14 @@ package dataazurermappservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/dataazurermappservice/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermappservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/app_service azurerm_app_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/app_service azurerm_app_service}.
 type DataAzurermAppService interface {
 	cdktf.TerraformDataSource
 	AppServicePlanId() *string
@@ -526,7 +526,7 @@ func (j *jsiiProxy_DataAzurermAppService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/app_service azurerm_app_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/app_service azurerm_app_service} Data Source.
 func NewDataAzurermAppService(scope constructs.Construct, id *string, config *DataAzurermAppServiceConfig) DataAzurermAppService {
 	_init_.Initialize()
 
@@ -544,7 +544,7 @@ func NewDataAzurermAppService(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/data-sources/app_service azurerm_app_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/app_service azurerm_app_service} Data Source.
 func NewDataAzurermAppService_Override(d DataAzurermAppService, scope constructs.Construct, id *string, config *DataAzurermAppServiceConfig) {
 	_init_.Initialize()
 

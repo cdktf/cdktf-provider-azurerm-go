@@ -2,14 +2,14 @@ package sharedimagegallery
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/sharedimagegallery/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/sharedimagegallery/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/shared_image_gallery azurerm_shared_image_gallery}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/shared_image_gallery azurerm_shared_image_gallery}.
 type SharedImageGallery interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_SharedImageGallery) UniqueName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/shared_image_gallery azurerm_shared_image_gallery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/shared_image_gallery azurerm_shared_image_gallery} Resource.
 func NewSharedImageGallery(scope constructs.Construct, id *string, config *SharedImageGalleryConfig) SharedImageGallery {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewSharedImageGallery(scope constructs.Construct, id *string, config *Share
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/shared_image_gallery azurerm_shared_image_gallery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/shared_image_gallery azurerm_shared_image_gallery} Resource.
 func NewSharedImageGallery_Override(s SharedImageGallery, scope constructs.Construct, id *string, config *SharedImageGalleryConfig) {
 	_init_.Initialize()
 

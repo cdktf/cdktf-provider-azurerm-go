@@ -181,6 +181,8 @@ func (j *jsiiProxy_FirewallNatRuleCollectionTimeoutsOutputReference) validateSet
 
 func (j *jsiiProxy_FirewallNatRuleCollectionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *FirewallNatRuleCollectionTimeouts:
 		val := val.(*FirewallNatRuleCollectionTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_FirewallNatRuleCollectionTimeoutsOutputReference) validateSet
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *FirewallNatRuleCollectionTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *FirewallNatRuleCollectionTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

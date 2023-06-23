@@ -2,14 +2,14 @@ package datafactorylinkedservicepostgresql
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/datafactorylinkedservicepostgresql/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/datafactorylinkedservicepostgresql/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_linked_service_postgresql azurerm_data_factory_linked_service_postgresql}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_linked_service_postgresql azurerm_data_factory_linked_service_postgresql}.
 type DataFactoryLinkedServicePostgresql interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -499,7 +499,7 @@ func (j *jsiiProxy_DataFactoryLinkedServicePostgresql) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_linked_service_postgresql azurerm_data_factory_linked_service_postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_linked_service_postgresql azurerm_data_factory_linked_service_postgresql} Resource.
 func NewDataFactoryLinkedServicePostgresql(scope constructs.Construct, id *string, config *DataFactoryLinkedServicePostgresqlConfig) DataFactoryLinkedServicePostgresql {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewDataFactoryLinkedServicePostgresql(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_linked_service_postgresql azurerm_data_factory_linked_service_postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_linked_service_postgresql azurerm_data_factory_linked_service_postgresql} Resource.
 func NewDataFactoryLinkedServicePostgresql_Override(d DataFactoryLinkedServicePostgresql, scope constructs.Construct, id *string, config *DataFactoryLinkedServicePostgresqlConfig) {
 	_init_.Initialize()
 

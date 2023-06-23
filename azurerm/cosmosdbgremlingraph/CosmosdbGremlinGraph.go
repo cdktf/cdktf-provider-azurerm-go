@@ -2,19 +2,22 @@ package cosmosdbgremlingraph
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/cosmosdbgremlingraph/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/cosmosdbgremlingraph/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph}.
 type CosmosdbGremlinGraph interface {
 	cdktf.TerraformResource
 	AccountName() *string
 	SetAccountName(val *string)
 	AccountNameInput() *string
+	AnalyticalStorageTtl() *float64
+	SetAnalyticalStorageTtl(val *float64)
+	AnalyticalStorageTtlInput() *float64
 	AutoscaleSettings() CosmosdbGremlinGraphAutoscaleSettingsOutputReference
 	AutoscaleSettingsInput() *CosmosdbGremlinGraphAutoscaleSettings
 	// Experimental.
@@ -125,6 +128,7 @@ type CosmosdbGremlinGraph interface {
 	PutIndexPolicy(value *CosmosdbGremlinGraphIndexPolicy)
 	PutTimeouts(value *CosmosdbGremlinGraphTimeouts)
 	PutUniqueKey(value interface{})
+	ResetAnalyticalStorageTtl()
 	ResetAutoscaleSettings()
 	ResetConflictResolutionPolicy()
 	ResetDefaultTtl()
@@ -167,6 +171,26 @@ func (j *jsiiProxy_CosmosdbGremlinGraph) AccountNameInput() *string {
 	_jsii_.Get(
 		j,
 		"accountNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbGremlinGraph) AnalyticalStorageTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"analyticalStorageTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbGremlinGraph) AnalyticalStorageTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"analyticalStorageTtlInput",
 		&returns,
 	)
 	return returns
@@ -593,7 +617,7 @@ func (j *jsiiProxy_CosmosdbGremlinGraph) UniqueKeyInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph} Resource.
 func NewCosmosdbGremlinGraph(scope constructs.Construct, id *string, config *CosmosdbGremlinGraphConfig) CosmosdbGremlinGraph {
 	_init_.Initialize()
 
@@ -611,7 +635,7 @@ func NewCosmosdbGremlinGraph(scope constructs.Construct, id *string, config *Cos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph} Resource.
 func NewCosmosdbGremlinGraph_Override(c CosmosdbGremlinGraph, scope constructs.Construct, id *string, config *CosmosdbGremlinGraphConfig) {
 	_init_.Initialize()
 
@@ -629,6 +653,17 @@ func (j *jsiiProxy_CosmosdbGremlinGraph)SetAccountName(val *string) {
 	_jsii_.Set(
 		j,
 		"accountName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CosmosdbGremlinGraph)SetAnalyticalStorageTtl(val *float64) {
+	if err := j.validateSetAnalyticalStorageTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"analyticalStorageTtl",
 		val,
 	)
 }
@@ -1107,6 +1142,14 @@ func (c *jsiiProxy_CosmosdbGremlinGraph) PutUniqueKey(value interface{}) {
 		c,
 		"putUniqueKey",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CosmosdbGremlinGraph) ResetAnalyticalStorageTtl() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAnalyticalStorageTtl",
+		nil, // no parameters
 	)
 }
 

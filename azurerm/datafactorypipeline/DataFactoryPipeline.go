@@ -2,14 +2,14 @@ package datafactorypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/datafactorypipeline/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/datafactorypipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_pipeline azurerm_data_factory_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_pipeline azurerm_data_factory_pipeline}.
 type DataFactoryPipeline interface {
 	cdktf.TerraformResource
 	ActivitiesJson() *string
@@ -548,7 +548,7 @@ func (j *jsiiProxy_DataFactoryPipeline) VariablesInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_pipeline azurerm_data_factory_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_pipeline azurerm_data_factory_pipeline} Resource.
 func NewDataFactoryPipeline(scope constructs.Construct, id *string, config *DataFactoryPipelineConfig) DataFactoryPipeline {
 	_init_.Initialize()
 
@@ -566,7 +566,7 @@ func NewDataFactoryPipeline(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/data_factory_pipeline azurerm_data_factory_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_pipeline azurerm_data_factory_pipeline} Resource.
 func NewDataFactoryPipeline_Override(d DataFactoryPipeline, scope constructs.Construct, id *string, config *DataFactoryPipelineConfig) {
 	_init_.Initialize()
 

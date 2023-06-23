@@ -2,14 +2,14 @@ package resourcedeploymentscriptazurepowershell
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/resourcedeploymentscriptazurepowershell/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/resourcedeploymentscriptazurepowershell/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/resource_deployment_script_azure_power_shell azurerm_resource_deployment_script_azure_power_shell}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/resource_deployment_script_azure_power_shell azurerm_resource_deployment_script_azure_power_shell}.
 type ResourceDeploymentScriptAzurePowerShell interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -724,7 +724,7 @@ func (j *jsiiProxy_ResourceDeploymentScriptAzurePowerShell) VersionInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/resource_deployment_script_azure_power_shell azurerm_resource_deployment_script_azure_power_shell} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/resource_deployment_script_azure_power_shell azurerm_resource_deployment_script_azure_power_shell} Resource.
 func NewResourceDeploymentScriptAzurePowerShell(scope constructs.Construct, id *string, config *ResourceDeploymentScriptAzurePowerShellConfig) ResourceDeploymentScriptAzurePowerShell {
 	_init_.Initialize()
 
@@ -742,7 +742,7 @@ func NewResourceDeploymentScriptAzurePowerShell(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/resource_deployment_script_azure_power_shell azurerm_resource_deployment_script_azure_power_shell} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/resource_deployment_script_azure_power_shell azurerm_resource_deployment_script_azure_power_shell} Resource.
 func NewResourceDeploymentScriptAzurePowerShell_Override(r ResourceDeploymentScriptAzurePowerShell, scope constructs.Construct, id *string, config *ResourceDeploymentScriptAzurePowerShellConfig) {
 	_init_.Initialize()
 

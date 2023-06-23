@@ -2,14 +2,14 @@ package logzsubaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/logzsubaccount/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/logzsubaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/logz_sub_account azurerm_logz_sub_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/logz_sub_account azurerm_logz_sub_account}.
 type LogzSubAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_LogzSubAccount) UserInput() *LogzSubAccountUser {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/logz_sub_account azurerm_logz_sub_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/logz_sub_account azurerm_logz_sub_account} Resource.
 func NewLogzSubAccount(scope constructs.Construct, id *string, config *LogzSubAccountConfig) LogzSubAccount {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewLogzSubAccount(scope constructs.Construct, id *string, config *LogzSubAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/logz_sub_account azurerm_logz_sub_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/logz_sub_account azurerm_logz_sub_account} Resource.
 func NewLogzSubAccount_Override(l LogzSubAccount, scope constructs.Construct, id *string, config *LogzSubAccountConfig) {
 	_init_.Initialize()
 

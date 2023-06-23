@@ -165,6 +165,8 @@ func (j *jsiiProxy_MonitorAutoscaleSettingProfileRuleMetricTriggerDimensionsOutp
 
 func (j *jsiiProxy_MonitorAutoscaleSettingProfileRuleMetricTriggerDimensionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *MonitorAutoscaleSettingProfileRuleMetricTriggerDimensions:
 		val := val.(*MonitorAutoscaleSettingProfileRuleMetricTriggerDimensions)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_MonitorAutoscaleSettingProfileRuleMetricTriggerDimensionsOutp
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *MonitorAutoscaleSettingProfileRuleMetricTriggerDimensions, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *MonitorAutoscaleSettingProfileRuleMetricTriggerDimensions; received %#v (a %T)", val, val)
 		}
 	}
 

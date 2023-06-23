@@ -181,6 +181,8 @@ func (j *jsiiProxy_AppServiceManagedCertificateTimeoutsOutputReference) validate
 
 func (j *jsiiProxy_AppServiceManagedCertificateTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AppServiceManagedCertificateTimeouts:
 		val := val.(*AppServiceManagedCertificateTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_AppServiceManagedCertificateTimeoutsOutputReference) validate
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AppServiceManagedCertificateTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AppServiceManagedCertificateTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -2,14 +2,14 @@ package springcloudcustomdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/springcloudcustomdomain/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/springcloudcustomdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/spring_cloud_custom_domain azurerm_spring_cloud_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/spring_cloud_custom_domain azurerm_spring_cloud_custom_domain}.
 type SpringCloudCustomDomain interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_SpringCloudCustomDomain) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/spring_cloud_custom_domain azurerm_spring_cloud_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/spring_cloud_custom_domain azurerm_spring_cloud_custom_domain} Resource.
 func NewSpringCloudCustomDomain(scope constructs.Construct, id *string, config *SpringCloudCustomDomainConfig) SpringCloudCustomDomain {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewSpringCloudCustomDomain(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/spring_cloud_custom_domain azurerm_spring_cloud_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/spring_cloud_custom_domain azurerm_spring_cloud_custom_domain} Resource.
 func NewSpringCloudCustomDomain_Override(s SpringCloudCustomDomain, scope constructs.Construct, id *string, config *SpringCloudCustomDomainConfig) {
 	_init_.Initialize()
 

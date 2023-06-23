@@ -2,14 +2,14 @@ package webpubsubnetworkacl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/webpubsubnetworkacl/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/webpubsubnetworkacl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/web_pubsub_network_acl azurerm_web_pubsub_network_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/web_pubsub_network_acl azurerm_web_pubsub_network_acl}.
 type WebPubsubNetworkAcl interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_WebPubsubNetworkAcl) WebPubsubIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/web_pubsub_network_acl azurerm_web_pubsub_network_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/web_pubsub_network_acl azurerm_web_pubsub_network_acl} Resource.
 func NewWebPubsubNetworkAcl(scope constructs.Construct, id *string, config *WebPubsubNetworkAclConfig) WebPubsubNetworkAcl {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewWebPubsubNetworkAcl(scope constructs.Construct, id *string, config *WebP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/web_pubsub_network_acl azurerm_web_pubsub_network_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/web_pubsub_network_acl azurerm_web_pubsub_network_acl} Resource.
 func NewWebPubsubNetworkAcl_Override(w WebPubsubNetworkAcl, scope constructs.Construct, id *string, config *WebPubsubNetworkAclConfig) {
 	_init_.Initialize()
 

@@ -181,6 +181,8 @@ func (j *jsiiProxy_NetworkWatcherFlowLogTimeoutsOutputReference) validateSetDele
 
 func (j *jsiiProxy_NetworkWatcherFlowLogTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *NetworkWatcherFlowLogTimeouts:
 		val := val.(*NetworkWatcherFlowLogTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_NetworkWatcherFlowLogTimeoutsOutputReference) validateSetInte
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *NetworkWatcherFlowLogTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *NetworkWatcherFlowLogTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

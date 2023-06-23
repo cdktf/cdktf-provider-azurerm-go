@@ -181,6 +181,8 @@ func (j *jsiiProxy_ConsumptionBudgetResourceGroupTimeoutsOutputReference) valida
 
 func (j *jsiiProxy_ConsumptionBudgetResourceGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ConsumptionBudgetResourceGroupTimeouts:
 		val := val.(*ConsumptionBudgetResourceGroupTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_ConsumptionBudgetResourceGroupTimeoutsOutputReference) valida
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ConsumptionBudgetResourceGroupTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ConsumptionBudgetResourceGroupTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

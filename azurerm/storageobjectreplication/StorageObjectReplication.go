@@ -2,14 +2,14 @@ package storageobjectreplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/storageobjectreplication/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/storageobjectreplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/storage_object_replication azurerm_storage_object_replication}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/storage_object_replication azurerm_storage_object_replication}.
 type StorageObjectReplication interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_StorageObjectReplication) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/storage_object_replication azurerm_storage_object_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/storage_object_replication azurerm_storage_object_replication} Resource.
 func NewStorageObjectReplication(scope constructs.Construct, id *string, config *StorageObjectReplicationConfig) StorageObjectReplication {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewStorageObjectReplication(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/storage_object_replication azurerm_storage_object_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/storage_object_replication azurerm_storage_object_replication} Resource.
 func NewStorageObjectReplication_Override(s StorageObjectReplication, scope constructs.Construct, id *string, config *StorageObjectReplicationConfig) {
 	_init_.Initialize()
 

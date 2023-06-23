@@ -193,6 +193,8 @@ func (j *jsiiProxy_HdinsightSparkClusterDiskEncryptionOutputReference) validateS
 
 func (j *jsiiProxy_HdinsightSparkClusterDiskEncryptionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *HdinsightSparkClusterDiskEncryption:
 		val := val.(*HdinsightSparkClusterDiskEncryption)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -204,11 +206,9 @@ func (j *jsiiProxy_HdinsightSparkClusterDiskEncryptionOutputReference) validateS
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *HdinsightSparkClusterDiskEncryption, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *HdinsightSparkClusterDiskEncryption; received %#v (a %T)", val, val)
 		}
 	}
 

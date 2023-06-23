@@ -2,14 +2,14 @@ package springcloudapiportal
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/springcloudapiportal/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/springcloudapiportal/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/spring_cloud_api_portal azurerm_spring_cloud_api_portal}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/spring_cloud_api_portal azurerm_spring_cloud_api_portal}.
 type SpringCloudApiPortal interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -487,7 +487,7 @@ func (j *jsiiProxy_SpringCloudApiPortal) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/spring_cloud_api_portal azurerm_spring_cloud_api_portal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/spring_cloud_api_portal azurerm_spring_cloud_api_portal} Resource.
 func NewSpringCloudApiPortal(scope constructs.Construct, id *string, config *SpringCloudApiPortalConfig) SpringCloudApiPortal {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewSpringCloudApiPortal(scope constructs.Construct, id *string, config *Spr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/spring_cloud_api_portal azurerm_spring_cloud_api_portal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/spring_cloud_api_portal azurerm_spring_cloud_api_portal} Resource.
 func NewSpringCloudApiPortal_Override(s SpringCloudApiPortal, scope constructs.Construct, id *string, config *SpringCloudApiPortalConfig) {
 	_init_.Initialize()
 

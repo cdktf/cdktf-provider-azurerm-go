@@ -2,14 +2,14 @@ package monitorworkspace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/monitorworkspace/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/monitorworkspace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/monitor_workspace azurerm_monitor_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/monitor_workspace azurerm_monitor_workspace}.
 type MonitorWorkspace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -59,6 +59,9 @@ type MonitorWorkspace interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicNetworkAccessEnabled() interface{}
+	SetPublicNetworkAccessEnabled(val interface{})
+	PublicNetworkAccessEnabledInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -105,6 +108,7 @@ type MonitorWorkspace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublicNetworkAccessEnabled()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -302,6 +306,26 @@ func (j *jsiiProxy_MonitorWorkspace) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MonitorWorkspace) PublicNetworkAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorWorkspace) PublicNetworkAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitorWorkspace) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -403,7 +427,7 @@ func (j *jsiiProxy_MonitorWorkspace) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/monitor_workspace azurerm_monitor_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/monitor_workspace azurerm_monitor_workspace} Resource.
 func NewMonitorWorkspace(scope constructs.Construct, id *string, config *MonitorWorkspaceConfig) MonitorWorkspace {
 	_init_.Initialize()
 
@@ -421,7 +445,7 @@ func NewMonitorWorkspace(scope constructs.Construct, id *string, config *Monitor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/monitor_workspace azurerm_monitor_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/monitor_workspace azurerm_monitor_workspace} Resource.
 func NewMonitorWorkspace_Override(m MonitorWorkspace, scope constructs.Construct, id *string, config *MonitorWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -529,6 +553,17 @@ func (j *jsiiProxy_MonitorWorkspace)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitorWorkspace)SetPublicNetworkAccessEnabled(val interface{}) {
+	if err := j.validateSetPublicNetworkAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccessEnabled",
 		val,
 	)
 }
@@ -844,6 +879,14 @@ func (m *jsiiProxy_MonitorWorkspace) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorWorkspace) ResetPublicNetworkAccessEnabled() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPublicNetworkAccessEnabled",
 		nil, // no parameters
 	)
 }

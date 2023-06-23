@@ -2,14 +2,14 @@ package mssqldatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/mssqldatabase/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/mssqldatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mssql_database azurerm_mssql_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mssql_database azurerm_mssql_database}.
 type MssqlDatabase interface {
 	cdktf.TerraformResource
 	AutoPauseDelayInMinutes() *float64
@@ -980,7 +980,7 @@ func (j *jsiiProxy_MssqlDatabase) ZoneRedundantInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mssql_database azurerm_mssql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mssql_database azurerm_mssql_database} Resource.
 func NewMssqlDatabase(scope constructs.Construct, id *string, config *MssqlDatabaseConfig) MssqlDatabase {
 	_init_.Initialize()
 
@@ -998,7 +998,7 @@ func NewMssqlDatabase(scope constructs.Construct, id *string, config *MssqlDatab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/mssql_database azurerm_mssql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/mssql_database azurerm_mssql_database} Resource.
 func NewMssqlDatabase_Override(m MssqlDatabase, scope constructs.Construct, id *string, config *MssqlDatabaseConfig) {
 	_init_.Initialize()
 

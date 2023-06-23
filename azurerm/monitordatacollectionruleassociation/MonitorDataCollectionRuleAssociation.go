@@ -2,14 +2,14 @@ package monitordatacollectionruleassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/monitordatacollectionruleassociation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/monitordatacollectionruleassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/monitor_data_collection_rule_association azurerm_monitor_data_collection_rule_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/monitor_data_collection_rule_association azurerm_monitor_data_collection_rule_association}.
 type MonitorDataCollectionRuleAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -429,7 +429,7 @@ func (j *jsiiProxy_MonitorDataCollectionRuleAssociation) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/monitor_data_collection_rule_association azurerm_monitor_data_collection_rule_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/monitor_data_collection_rule_association azurerm_monitor_data_collection_rule_association} Resource.
 func NewMonitorDataCollectionRuleAssociation(scope constructs.Construct, id *string, config *MonitorDataCollectionRuleAssociationConfig) MonitorDataCollectionRuleAssociation {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewMonitorDataCollectionRuleAssociation(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/monitor_data_collection_rule_association azurerm_monitor_data_collection_rule_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/monitor_data_collection_rule_association azurerm_monitor_data_collection_rule_association} Resource.
 func NewMonitorDataCollectionRuleAssociation_Override(m MonitorDataCollectionRuleAssociation, scope constructs.Construct, id *string, config *MonitorDataCollectionRuleAssociationConfig) {
 	_init_.Initialize()
 

@@ -173,6 +173,8 @@ func (j *jsiiProxy_ResourceGroupCostManagementViewDatasetAggregationOutputRefere
 
 func (j *jsiiProxy_ResourceGroupCostManagementViewDatasetAggregationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ResourceGroupCostManagementViewDatasetAggregation:
 		val := val.(*ResourceGroupCostManagementViewDatasetAggregation)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_ResourceGroupCostManagementViewDatasetAggregationOutputRefere
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ResourceGroupCostManagementViewDatasetAggregation, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ResourceGroupCostManagementViewDatasetAggregation; received %#v (a %T)", val, val)
 		}
 	}
 

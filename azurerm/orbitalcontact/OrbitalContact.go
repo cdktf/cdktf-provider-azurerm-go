@@ -2,14 +2,14 @@ package orbitalcontact
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/orbitalcontact/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/orbitalcontact/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/orbital_contact azurerm_orbital_contact}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/orbital_contact azurerm_orbital_contact}.
 type OrbitalContact interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -448,7 +448,7 @@ func (j *jsiiProxy_OrbitalContact) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/orbital_contact azurerm_orbital_contact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/orbital_contact azurerm_orbital_contact} Resource.
 func NewOrbitalContact(scope constructs.Construct, id *string, config *OrbitalContactConfig) OrbitalContact {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewOrbitalContact(scope constructs.Construct, id *string, config *OrbitalCo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/orbital_contact azurerm_orbital_contact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/orbital_contact azurerm_orbital_contact} Resource.
 func NewOrbitalContact_Override(o OrbitalContact, scope constructs.Construct, id *string, config *OrbitalContactConfig) {
 	_init_.Initialize()
 

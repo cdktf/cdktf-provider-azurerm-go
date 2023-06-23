@@ -204,6 +204,8 @@ func (j *jsiiProxy_AppConfigurationFeatureTargetingFilterOutputReference) valida
 
 func (j *jsiiProxy_AppConfigurationFeatureTargetingFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AppConfigurationFeatureTargetingFilter:
 		val := val.(*AppConfigurationFeatureTargetingFilter)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -215,11 +217,9 @@ func (j *jsiiProxy_AppConfigurationFeatureTargetingFilterOutputReference) valida
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AppConfigurationFeatureTargetingFilter, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AppConfigurationFeatureTargetingFilter; received %#v (a %T)", val, val)
 		}
 	}
 

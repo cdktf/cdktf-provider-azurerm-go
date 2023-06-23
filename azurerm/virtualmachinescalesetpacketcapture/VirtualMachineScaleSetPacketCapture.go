@@ -2,14 +2,14 @@ package virtualmachinescalesetpacketcapture
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/virtualmachinescalesetpacketcapture/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/virtualmachinescalesetpacketcapture/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/virtual_machine_scale_set_packet_capture azurerm_virtual_machine_scale_set_packet_capture}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/virtual_machine_scale_set_packet_capture azurerm_virtual_machine_scale_set_packet_capture}.
 type VirtualMachineScaleSetPacketCapture interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -522,7 +522,7 @@ func (j *jsiiProxy_VirtualMachineScaleSetPacketCapture) VirtualMachineScaleSetId
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/virtual_machine_scale_set_packet_capture azurerm_virtual_machine_scale_set_packet_capture} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/virtual_machine_scale_set_packet_capture azurerm_virtual_machine_scale_set_packet_capture} Resource.
 func NewVirtualMachineScaleSetPacketCapture(scope constructs.Construct, id *string, config *VirtualMachineScaleSetPacketCaptureConfig) VirtualMachineScaleSetPacketCapture {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewVirtualMachineScaleSetPacketCapture(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/virtual_machine_scale_set_packet_capture azurerm_virtual_machine_scale_set_packet_capture} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/virtual_machine_scale_set_packet_capture azurerm_virtual_machine_scale_set_packet_capture} Resource.
 func NewVirtualMachineScaleSetPacketCapture_Override(v VirtualMachineScaleSetPacketCapture, scope constructs.Construct, id *string, config *VirtualMachineScaleSetPacketCaptureConfig) {
 	_init_.Initialize()
 

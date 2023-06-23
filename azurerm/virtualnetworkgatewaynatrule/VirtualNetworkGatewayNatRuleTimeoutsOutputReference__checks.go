@@ -181,6 +181,8 @@ func (j *jsiiProxy_VirtualNetworkGatewayNatRuleTimeoutsOutputReference) validate
 
 func (j *jsiiProxy_VirtualNetworkGatewayNatRuleTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *VirtualNetworkGatewayNatRuleTimeouts:
 		val := val.(*VirtualNetworkGatewayNatRuleTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_VirtualNetworkGatewayNatRuleTimeoutsOutputReference) validate
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *VirtualNetworkGatewayNatRuleTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *VirtualNetworkGatewayNatRuleTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

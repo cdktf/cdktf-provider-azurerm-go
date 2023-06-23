@@ -181,6 +181,8 @@ func (j *jsiiProxy_ResourceGroupPolicyExemptionTimeoutsOutputReference) validate
 
 func (j *jsiiProxy_ResourceGroupPolicyExemptionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ResourceGroupPolicyExemptionTimeouts:
 		val := val.(*ResourceGroupPolicyExemptionTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_ResourceGroupPolicyExemptionTimeoutsOutputReference) validate
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ResourceGroupPolicyExemptionTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ResourceGroupPolicyExemptionTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

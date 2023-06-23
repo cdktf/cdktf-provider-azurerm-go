@@ -2,14 +2,14 @@ package synapsesparkpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/synapsesparkpool/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/synapsesparkpool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool}.
 type SynapseSparkPool interface {
 	cdktf.TerraformResource
 	AutoPause() SynapseSparkPoolAutoPauseOutputReference
@@ -762,7 +762,7 @@ func (j *jsiiProxy_SynapseSparkPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool} Resource.
 func NewSynapseSparkPool(scope constructs.Construct, id *string, config *SynapseSparkPoolConfig) SynapseSparkPool {
 	_init_.Initialize()
 
@@ -780,7 +780,7 @@ func NewSynapseSparkPool(scope constructs.Construct, id *string, config *Synapse
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool} Resource.
 func NewSynapseSparkPool_Override(s SynapseSparkPool, scope constructs.Construct, id *string, config *SynapseSparkPoolConfig) {
 	_init_.Initialize()
 

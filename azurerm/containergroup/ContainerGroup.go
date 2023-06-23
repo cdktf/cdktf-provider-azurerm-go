@@ -2,14 +2,14 @@ package containergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/containergroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/containergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/container_group azurerm_container_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/container_group azurerm_container_group}.
 type ContainerGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -807,7 +807,7 @@ func (j *jsiiProxy_ContainerGroup) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/container_group azurerm_container_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/container_group azurerm_container_group} Resource.
 func NewContainerGroup(scope constructs.Construct, id *string, config *ContainerGroupConfig) ContainerGroup {
 	_init_.Initialize()
 
@@ -825,7 +825,7 @@ func NewContainerGroup(scope constructs.Construct, id *string, config *Container
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/container_group azurerm_container_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/container_group azurerm_container_group} Resource.
 func NewContainerGroup_Override(c ContainerGroup, scope constructs.Construct, id *string, config *ContainerGroupConfig) {
 	_init_.Initialize()
 

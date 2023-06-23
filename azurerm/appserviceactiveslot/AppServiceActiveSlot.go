@@ -2,14 +2,14 @@ package appserviceactiveslot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v8/appserviceactiveslot/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/appserviceactiveslot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/app_service_active_slot azurerm_app_service_active_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/app_service_active_slot azurerm_app_service_active_slot}.
 type AppServiceActiveSlot interface {
 	cdktf.TerraformResource
 	AppServiceName() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_AppServiceActiveSlot) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/app_service_active_slot azurerm_app_service_active_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/app_service_active_slot azurerm_app_service_active_slot} Resource.
 func NewAppServiceActiveSlot(scope constructs.Construct, id *string, config *AppServiceActiveSlotConfig) AppServiceActiveSlot {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewAppServiceActiveSlot(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.61.0/docs/resources/app_service_active_slot azurerm_app_service_active_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/app_service_active_slot azurerm_app_service_active_slot} Resource.
 func NewAppServiceActiveSlot_Override(a AppServiceActiveSlot, scope constructs.Construct, id *string, config *AppServiceActiveSlotConfig) {
 	_init_.Initialize()
 
