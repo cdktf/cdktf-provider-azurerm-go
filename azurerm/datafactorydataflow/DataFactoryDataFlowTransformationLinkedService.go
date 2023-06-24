@@ -2,9 +2,9 @@ package datafactorydataflow
 
 
 type DataFactoryDataFlowTransformationLinkedService struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
 	Parameters *map[string]*string `field:"optional" json:"parameters" yaml:"parameters"`
 }
 

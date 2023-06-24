@@ -2,9 +2,9 @@ package functionappslot
 
 
 type FunctionAppSlotAuthSettingsTwitter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/function_app_slot#consumer_key FunctionAppSlot#consumer_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/function_app_slot#consumer_key FunctionAppSlot#consumer_key}.
 	ConsumerKey *string `field:"required" json:"consumerKey" yaml:"consumerKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/function_app_slot#consumer_secret FunctionAppSlot#consumer_secret}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/function_app_slot#consumer_secret FunctionAppSlot#consumer_secret}.
 	ConsumerSecret *string `field:"required" json:"consumerSecret" yaml:"consumerSecret"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/policy_definition azurerm_policy_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/policy_definition azurerm_policy_definition}.
 type PolicyDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -533,7 +533,7 @@ func (j *jsiiProxy_PolicyDefinition) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/policy_definition azurerm_policy_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/policy_definition azurerm_policy_definition} Resource.
 func NewPolicyDefinition(scope constructs.Construct, id *string, config *PolicyDefinitionConfig) PolicyDefinition {
 	_init_.Initialize()
 
@@ -551,7 +551,7 @@ func NewPolicyDefinition(scope constructs.Construct, id *string, config *PolicyD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/policy_definition azurerm_policy_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/policy_definition azurerm_policy_definition} Resource.
 func NewPolicyDefinition_Override(p PolicyDefinition, scope constructs.Construct, id *string, config *PolicyDefinitionConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/storage_mover azurerm_storage_mover}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/storage_mover azurerm_storage_mover}.
 type StorageMover interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_StorageMover) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/storage_mover azurerm_storage_mover} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/storage_mover azurerm_storage_mover} Resource.
 func NewStorageMover(scope constructs.Construct, id *string, config *StorageMoverConfig) StorageMover {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewStorageMover(scope constructs.Construct, id *string, config *StorageMove
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/storage_mover azurerm_storage_mover} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/storage_mover azurerm_storage_mover} Resource.
 func NewStorageMover_Override(s StorageMover, scope constructs.Construct, id *string, config *StorageMoverConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/media_asset azurerm_media_asset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/media_asset azurerm_media_asset}.
 type MediaAsset interface {
 	cdktf.TerraformResource
 	AlternateId() *string
@@ -475,7 +475,7 @@ func (j *jsiiProxy_MediaAsset) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/media_asset azurerm_media_asset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/media_asset azurerm_media_asset} Resource.
 func NewMediaAsset(scope constructs.Construct, id *string, config *MediaAssetConfig) MediaAsset {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewMediaAsset(scope constructs.Construct, id *string, config *MediaAssetCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/media_asset azurerm_media_asset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/media_asset azurerm_media_asset} Resource.
 func NewMediaAsset_Override(m MediaAsset, scope constructs.Construct, id *string, config *MediaAssetConfig) {
 	_init_.Initialize()
 

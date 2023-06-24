@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/api_management_authorization_server azurerm_api_management_authorization_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/api_management_authorization_server azurerm_api_management_authorization_server}.
 type ApiManagementAuthorizationServer interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -757,7 +757,7 @@ func (j *jsiiProxy_ApiManagementAuthorizationServer) TokenEndpointInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/api_management_authorization_server azurerm_api_management_authorization_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/api_management_authorization_server azurerm_api_management_authorization_server} Resource.
 func NewApiManagementAuthorizationServer(scope constructs.Construct, id *string, config *ApiManagementAuthorizationServerConfig) ApiManagementAuthorizationServer {
 	_init_.Initialize()
 
@@ -775,7 +775,7 @@ func NewApiManagementAuthorizationServer(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/api_management_authorization_server azurerm_api_management_authorization_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/api_management_authorization_server azurerm_api_management_authorization_server} Resource.
 func NewApiManagementAuthorizationServer_Override(a ApiManagementAuthorizationServer, scope constructs.Construct, id *string, config *ApiManagementAuthorizationServerConfig) {
 	_init_.Initialize()
 

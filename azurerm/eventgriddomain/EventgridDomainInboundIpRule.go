@@ -2,9 +2,9 @@ package eventgriddomain
 
 
 type EventgridDomainInboundIpRule struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/eventgrid_domain#action EventgridDomain#action}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/eventgrid_domain#action EventgridDomain#action}.
 	Action *string `field:"optional" json:"action" yaml:"action"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/eventgrid_domain#ip_mask EventgridDomain#ip_mask}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/eventgrid_domain#ip_mask EventgridDomain#ip_mask}.
 	IpMask *string `field:"optional" json:"ipMask" yaml:"ipMask"`
 }
 

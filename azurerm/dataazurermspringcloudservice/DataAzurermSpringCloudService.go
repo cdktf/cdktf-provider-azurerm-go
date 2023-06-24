@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/spring_cloud_service azurerm_spring_cloud_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/spring_cloud_service azurerm_spring_cloud_service}.
 type DataAzurermSpringCloudService interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataAzurermSpringCloudService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/spring_cloud_service azurerm_spring_cloud_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/spring_cloud_service azurerm_spring_cloud_service} Data Source.
 func NewDataAzurermSpringCloudService(scope constructs.Construct, id *string, config *DataAzurermSpringCloudServiceConfig) DataAzurermSpringCloudService {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataAzurermSpringCloudService(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/data-sources/spring_cloud_service azurerm_spring_cloud_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/spring_cloud_service azurerm_spring_cloud_service} Data Source.
 func NewDataAzurermSpringCloudService_Override(d DataAzurermSpringCloudService, scope constructs.Construct, id *string, config *DataAzurermSpringCloudServiceConfig) {
 	_init_.Initialize()
 

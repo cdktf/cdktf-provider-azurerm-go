@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/video_analyzer azurerm_video_analyzer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/video_analyzer azurerm_video_analyzer}.
 type VideoAnalyzer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -449,7 +449,7 @@ func (j *jsiiProxy_VideoAnalyzer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/video_analyzer azurerm_video_analyzer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/video_analyzer azurerm_video_analyzer} Resource.
 func NewVideoAnalyzer(scope constructs.Construct, id *string, config *VideoAnalyzerConfig) VideoAnalyzer {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewVideoAnalyzer(scope constructs.Construct, id *string, config *VideoAnaly
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.0/docs/resources/video_analyzer azurerm_video_analyzer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/video_analyzer azurerm_video_analyzer} Resource.
 func NewVideoAnalyzer_Override(v VideoAnalyzer, scope constructs.Construct, id *string, config *VideoAnalyzerConfig) {
 	_init_.Initialize()
 
