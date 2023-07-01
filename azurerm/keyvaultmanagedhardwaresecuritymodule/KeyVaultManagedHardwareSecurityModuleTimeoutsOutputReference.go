@@ -46,6 +46,9 @@ type KeyVaultManagedHardwareSecurityModuleTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,6 +76,7 @@ type KeyVaultManagedHardwareSecurityModuleTimeoutsOutputReference interface {
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -218,6 +222,26 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleTimeoutsOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewKeyVaultManagedHardwareSecurityModuleTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KeyVaultManagedHardwareSecurityModuleTimeoutsOutputReference {
 	_init_.Initialize()
@@ -330,6 +354,17 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleTimeoutsOutputReference)
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -540,6 +575,14 @@ func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleTimeoutsOutputReference)
 	_jsii_.InvokeVoid(
 		k,
 		"resetRead",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleTimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetUpdate",
 		nil, // no parameters
 	)
 }

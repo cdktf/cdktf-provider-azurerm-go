@@ -243,7 +243,7 @@ func (j *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutput
 	return nil
 }
 
-func (j *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) validateSetWin32StatusParameters(val *string) error {
+func (j *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) validateSetWin32StatusParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

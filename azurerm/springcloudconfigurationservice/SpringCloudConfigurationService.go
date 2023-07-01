@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service}.
 type SpringCloudConfigurationService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -36,6 +36,9 @@ type SpringCloudConfigurationService interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Generation() *string
+	SetGeneration(val *string)
+	GenerationInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -98,6 +101,7 @@ type SpringCloudConfigurationService interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutRepository(value interface{})
 	PutTimeouts(value *SpringCloudConfigurationServiceTimeouts)
+	ResetGeneration()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -194,6 +198,26 @@ func (j *jsiiProxy_SpringCloudConfigurationService) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudConfigurationService) Generation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"generation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudConfigurationService) GenerationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"generationInput",
 		&returns,
 	)
 	return returns
@@ -380,7 +404,7 @@ func (j *jsiiProxy_SpringCloudConfigurationService) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service} Resource.
 func NewSpringCloudConfigurationService(scope constructs.Construct, id *string, config *SpringCloudConfigurationServiceConfig) SpringCloudConfigurationService {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewSpringCloudConfigurationService(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service} Resource.
 func NewSpringCloudConfigurationService_Override(s SpringCloudConfigurationService, scope constructs.Construct, id *string, config *SpringCloudConfigurationServiceConfig) {
 	_init_.Initialize()
 
@@ -443,6 +467,17 @@ func (j *jsiiProxy_SpringCloudConfigurationService)SetForEach(val cdktf.ITerrafo
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpringCloudConfigurationService)SetGeneration(val *string) {
+	if err := j.validateSetGenerationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"generation",
 		val,
 	)
 }
@@ -795,6 +830,14 @@ func (s *jsiiProxy_SpringCloudConfigurationService) PutTimeouts(value *SpringClo
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SpringCloudConfigurationService) ResetGeneration() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetGeneration",
+		nil, // no parameters
 	)
 }
 

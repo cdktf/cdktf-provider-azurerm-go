@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/managed_application_definition azurerm_managed_application_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/managed_application_definition azurerm_managed_application_definition}.
 type ManagedApplicationDefinition interface {
 	cdktf.TerraformResource
 	Authorization() ManagedApplicationDefinitionAuthorizationList
@@ -593,7 +593,7 @@ func (j *jsiiProxy_ManagedApplicationDefinition) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/managed_application_definition azurerm_managed_application_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/managed_application_definition azurerm_managed_application_definition} Resource.
 func NewManagedApplicationDefinition(scope constructs.Construct, id *string, config *ManagedApplicationDefinitionConfig) ManagedApplicationDefinition {
 	_init_.Initialize()
 
@@ -611,7 +611,7 @@ func NewManagedApplicationDefinition(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/managed_application_definition azurerm_managed_application_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/managed_application_definition azurerm_managed_application_definition} Resource.
 func NewManagedApplicationDefinition_Override(m ManagedApplicationDefinition, scope constructs.Construct, id *string, config *ManagedApplicationDefinitionConfig) {
 	_init_.Initialize()
 

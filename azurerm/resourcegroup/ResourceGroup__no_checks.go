@@ -88,6 +88,10 @@ func (j *jsiiProxy_ResourceGroup) validateSetLocationParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_ResourceGroup) validateSetManagedByParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResourceGroup) validateSetNameParameters(val *string) error {
 	return nil
 }

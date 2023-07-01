@@ -20,6 +20,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "customCaTrustCertificatesBase64", GoGetter: "CustomCaTrustCertificatesBase64"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "diskEncryptionSetId", GoGetter: "DiskEncryptionSetId"},
 			_jsii_.MemberProperty{JsiiProperty: "dnsPrefix", GoGetter: "DnsPrefix"},

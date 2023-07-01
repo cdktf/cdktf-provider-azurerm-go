@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/cdn_frontdoor_custom_domain azurerm_cdn_frontdoor_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/cdn_frontdoor_custom_domain azurerm_cdn_frontdoor_custom_domain}.
 type DataAzurermCdnFrontdoorCustomDomain interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -417,7 +417,7 @@ func (j *jsiiProxy_DataAzurermCdnFrontdoorCustomDomain) ValidationToken() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/cdn_frontdoor_custom_domain azurerm_cdn_frontdoor_custom_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/cdn_frontdoor_custom_domain azurerm_cdn_frontdoor_custom_domain} Data Source.
 func NewDataAzurermCdnFrontdoorCustomDomain(scope constructs.Construct, id *string, config *DataAzurermCdnFrontdoorCustomDomainConfig) DataAzurermCdnFrontdoorCustomDomain {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewDataAzurermCdnFrontdoorCustomDomain(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/cdn_frontdoor_custom_domain azurerm_cdn_frontdoor_custom_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/cdn_frontdoor_custom_domain azurerm_cdn_frontdoor_custom_domain} Data Source.
 func NewDataAzurermCdnFrontdoorCustomDomain_Override(d DataAzurermCdnFrontdoorCustomDomain, scope constructs.Construct, id *string, config *DataAzurermCdnFrontdoorCustomDomainConfig) {
 	_init_.Initialize()
 

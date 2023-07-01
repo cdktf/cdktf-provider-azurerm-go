@@ -27,8 +27,8 @@ type AutomationSoftwareUpdateConfigurationPreTaskOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *AutomationSoftwareUpdateConfigurationPreTask
+	SetInternalValue(val *AutomationSoftwareUpdateConfigurationPreTask)
 	Parameters() *map[string]*string
 	SetParameters(val *map[string]*string)
 	ParametersInput() *map[string]*string
@@ -124,8 +124,8 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskOutputReference) InternalValue() *AutomationSoftwareUpdateConfigurationPreTask {
+	var returns *AutomationSoftwareUpdateConfigurationPreTask
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -195,29 +195,29 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskOutputReference) 
 }
 
 
-func NewAutomationSoftwareUpdateConfigurationPreTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AutomationSoftwareUpdateConfigurationPreTaskOutputReference {
+func NewAutomationSoftwareUpdateConfigurationPreTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AutomationSoftwareUpdateConfigurationPreTaskOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewAutomationSoftwareUpdateConfigurationPreTaskOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewAutomationSoftwareUpdateConfigurationPreTaskOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationPreTaskOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewAutomationSoftwareUpdateConfigurationPreTaskOutputReference_Override(a AutomationSoftwareUpdateConfigurationPreTaskOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewAutomationSoftwareUpdateConfigurationPreTaskOutputReference_Override(a AutomationSoftwareUpdateConfigurationPreTaskOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationPreTaskOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
 }
@@ -244,7 +244,7 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskOutputReference)SetInternalValue(val *AutomationSoftwareUpdateConfigurationPreTask) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

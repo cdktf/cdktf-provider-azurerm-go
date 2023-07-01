@@ -13,6 +13,9 @@ type AutomationSoftwareUpdateConfigurationLinuxOutputReference interface {
 	ClassificationIncluded() *string
 	SetClassificationIncluded(val *string)
 	ClassificationIncludedInput() *string
+	ClassificationsIncluded() *[]*string
+	SetClassificationsIncluded(val *[]*string)
+	ClassificationsIncludedInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,8 +39,8 @@ type AutomationSoftwareUpdateConfigurationLinuxOutputReference interface {
 	IncludedPackages() *[]*string
 	SetIncludedPackages(val *[]*string)
 	IncludedPackagesInput() *[]*string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *AutomationSoftwareUpdateConfigurationLinux
+	SetInternalValue(val *AutomationSoftwareUpdateConfigurationLinux)
 	Reboot() *string
 	SetReboot(val *string)
 	RebootInput() *string
@@ -74,6 +77,7 @@ type AutomationSoftwareUpdateConfigurationLinuxOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetClassificationIncluded()
+	ResetClassificationsIncluded()
 	ResetExcludedPackages()
 	ResetIncludedPackages()
 	ResetReboot()
@@ -107,6 +111,26 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) Cl
 	_jsii_.Get(
 		j,
 		"classificationIncludedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) ClassificationsIncluded() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"classificationsIncluded",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) ClassificationsIncludedInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"classificationsIncludedInput",
 		&returns,
 	)
 	return returns
@@ -192,8 +216,8 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) In
 	return returns
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) InternalValue() *AutomationSoftwareUpdateConfigurationLinux {
+	var returns *AutomationSoftwareUpdateConfigurationLinux
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -243,29 +267,29 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) Te
 }
 
 
-func NewAutomationSoftwareUpdateConfigurationLinuxOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AutomationSoftwareUpdateConfigurationLinuxOutputReference {
+func NewAutomationSoftwareUpdateConfigurationLinuxOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AutomationSoftwareUpdateConfigurationLinuxOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewAutomationSoftwareUpdateConfigurationLinuxOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewAutomationSoftwareUpdateConfigurationLinuxOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationLinuxOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewAutomationSoftwareUpdateConfigurationLinuxOutputReference_Override(a AutomationSoftwareUpdateConfigurationLinuxOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewAutomationSoftwareUpdateConfigurationLinuxOutputReference_Override(a AutomationSoftwareUpdateConfigurationLinuxOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationLinuxOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
 }
@@ -277,6 +301,17 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference)Set
 	_jsii_.Set(
 		j,
 		"classificationIncluded",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference)SetClassificationsIncluded(val *[]*string) {
+	if err := j.validateSetClassificationsIncludedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"classificationsIncluded",
 		val,
 	)
 }
@@ -325,7 +360,7 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference)SetInternalValue(val *AutomationSoftwareUpdateConfigurationLinux) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,6 +594,14 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) Re
 	_jsii_.InvokeVoid(
 		a,
 		"resetClassificationIncluded",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) ResetClassificationsIncluded() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClassificationsIncluded",
 		nil, // no parameters
 	)
 }

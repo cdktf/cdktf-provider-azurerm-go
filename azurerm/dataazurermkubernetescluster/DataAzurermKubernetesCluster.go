@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster}.
 type DataAzurermKubernetesCluster interface {
 	cdktf.TerraformDataSource
 	AciConnectorLinux() DataAzurermKubernetesClusterAciConnectorLinuxList
@@ -25,6 +25,7 @@ type DataAzurermKubernetesCluster interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomCaTrustCertificatesBase64() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -219,6 +220,16 @@ func (j *jsiiProxy_DataAzurermKubernetesCluster) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermKubernetesCluster) CustomCaTrustCertificatesBase64() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customCaTrustCertificatesBase64",
 		&returns,
 	)
 	return returns
@@ -735,7 +746,7 @@ func (j *jsiiProxy_DataAzurermKubernetesCluster) WindowsProfile() DataAzurermKub
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster} Data Source.
 func NewDataAzurermKubernetesCluster(scope constructs.Construct, id *string, config *DataAzurermKubernetesClusterConfig) DataAzurermKubernetesCluster {
 	_init_.Initialize()
 
@@ -753,7 +764,7 @@ func NewDataAzurermKubernetesCluster(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster} Data Source.
 func NewDataAzurermKubernetesCluster_Override(d DataAzurermKubernetesCluster, scope constructs.Construct, id *string, config *DataAzurermKubernetesClusterConfig) {
 	_init_.Initialize()
 

@@ -26,7 +26,11 @@ type DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DockerImage() *string
+	DockerImageName() *string
 	DockerImageTag() *string
+	DockerRegistryPassword() *string
+	DockerRegistryUrl() *string
+	DockerRegistryUsername() *string
 	DotnetVersion() *string
 	// Experimental.
 	Fqn() *string
@@ -127,11 +131,51 @@ func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReference) DockerImageName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerImageName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReference) DockerImageTag() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"dockerImageTag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReference) DockerRegistryPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerRegistryPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReference) DockerRegistryUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerRegistryUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReference) DockerRegistryUsername() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerRegistryUsername",
 		&returns,
 	)
 	return returns

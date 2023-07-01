@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/resource_group azurerm_resource_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/resource_group azurerm_resource_group}.
 type ResourceGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,6 +46,9 @@ type ResourceGroup interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	ManagedBy() *string
+	SetManagedBy(val *string)
+	ManagedByInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -99,6 +102,7 @@ type ResourceGroup interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ResourceGroupTimeouts)
 	ResetId()
+	ResetManagedBy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -249,6 +253,26 @@ func (j *jsiiProxy_ResourceGroup) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ResourceGroup) ManagedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ResourceGroup) ManagedByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedByInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ResourceGroup) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -380,7 +404,7 @@ func (j *jsiiProxy_ResourceGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/resource_group azurerm_resource_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/resource_group azurerm_resource_group} Resource.
 func NewResourceGroup(scope constructs.Construct, id *string, config *ResourceGroupConfig) ResourceGroup {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewResourceGroup(scope constructs.Construct, id *string, config *ResourceGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/resource_group azurerm_resource_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/resource_group azurerm_resource_group} Resource.
 func NewResourceGroup_Override(r ResourceGroup, scope constructs.Construct, id *string, config *ResourceGroupConfig) {
 	_init_.Initialize()
 
@@ -476,6 +500,17 @@ func (j *jsiiProxy_ResourceGroup)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ResourceGroup)SetManagedBy(val *string) {
+	if err := j.validateSetManagedByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedBy",
 		val,
 	)
 }
@@ -802,6 +837,14 @@ func (r *jsiiProxy_ResourceGroup) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ResourceGroup) ResetManagedBy() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetManagedBy",
 		nil, // no parameters
 	)
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleTimeoutsOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewKeyVaultManagedHardwareSecurityModuleTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

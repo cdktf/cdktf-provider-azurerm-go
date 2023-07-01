@@ -2,7 +2,7 @@ package sqlmanagedinstance
 
 
 type SqlManagedInstanceIdentity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/sql_managed_instance#type SqlManagedInstance#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/sql_managed_instance#type SqlManagedInstance#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

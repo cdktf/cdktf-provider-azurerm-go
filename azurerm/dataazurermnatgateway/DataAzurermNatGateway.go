@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/nat_gateway azurerm_nat_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/nat_gateway azurerm_nat_gateway}.
 type DataAzurermNatGateway interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -442,7 +442,7 @@ func (j *jsiiProxy_DataAzurermNatGateway) Zones() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/nat_gateway azurerm_nat_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/nat_gateway azurerm_nat_gateway} Data Source.
 func NewDataAzurermNatGateway(scope constructs.Construct, id *string, config *DataAzurermNatGatewayConfig) DataAzurermNatGateway {
 	_init_.Initialize()
 
@@ -460,7 +460,7 @@ func NewDataAzurermNatGateway(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/nat_gateway azurerm_nat_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/nat_gateway azurerm_nat_gateway} Data Source.
 func NewDataAzurermNatGateway_Override(d DataAzurermNatGateway, scope constructs.Construct, id *string, config *DataAzurermNatGatewayConfig) {
 	_init_.Initialize()
 

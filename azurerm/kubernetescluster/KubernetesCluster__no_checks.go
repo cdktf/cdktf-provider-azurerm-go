@@ -108,6 +108,14 @@ func (k *jsiiProxy_KubernetesCluster) validatePutMaintenanceWindowParameters(val
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesCluster) validatePutMaintenanceWindowAutoUpgradeParameters(value *KubernetesClusterMaintenanceWindowAutoUpgrade) error {
+	return nil
+}
+
+func (k *jsiiProxy_KubernetesCluster) validatePutMaintenanceWindowNodeOsParameters(value *KubernetesClusterMaintenanceWindowNodeOs) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesCluster) validatePutMicrosoftDefenderParameters(value *KubernetesClusterMicrosoftDefender) error {
 	return nil
 }
@@ -181,6 +189,10 @@ func (j *jsiiProxy_KubernetesCluster) validateSetConnectionParameters(val interf
 }
 
 func (j *jsiiProxy_KubernetesCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesCluster) validateSetCustomCaTrustCertificatesBase64Parameters(val *[]*string) error {
 	return nil
 }
 

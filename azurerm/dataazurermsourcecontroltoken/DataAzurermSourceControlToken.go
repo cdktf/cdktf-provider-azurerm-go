@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/source_control_token azurerm_source_control_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/source_control_token azurerm_source_control_token}.
 type DataAzurermSourceControlToken interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -327,7 +327,7 @@ func (j *jsiiProxy_DataAzurermSourceControlToken) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/source_control_token azurerm_source_control_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/source_control_token azurerm_source_control_token} Data Source.
 func NewDataAzurermSourceControlToken(scope constructs.Construct, id *string, config *DataAzurermSourceControlTokenConfig) DataAzurermSourceControlToken {
 	_init_.Initialize()
 
@@ -345,7 +345,7 @@ func NewDataAzurermSourceControlToken(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/source_control_token azurerm_source_control_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/source_control_token azurerm_source_control_token} Data Source.
 func NewDataAzurermSourceControlToken_Override(d DataAzurermSourceControlToken, scope constructs.Construct, id *string, config *DataAzurermSourceControlTokenConfig) {
 	_init_.Initialize()
 

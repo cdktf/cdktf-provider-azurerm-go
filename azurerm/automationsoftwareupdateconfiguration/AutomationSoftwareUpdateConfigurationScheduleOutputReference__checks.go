@@ -90,32 +90,12 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleOutputReference)
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleOutputReference) validatePutMonthlyOccurrenceParameters(value interface{}) error {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleOutputReference) validatePutMonthlyOccurrenceParameters(value *AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrence) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrence:
-		value := value.(*[]*AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrence)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrence:
-		value_ := value.([]*AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrence)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrence; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -242,25 +222,9 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *AutomationSoftwareUpdateConfigurationSchedule:
-		val := val.(*AutomationSoftwareUpdateConfigurationSchedule)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case AutomationSoftwareUpdateConfigurationSchedule:
-		val_ := val.(AutomationSoftwareUpdateConfigurationSchedule)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AutomationSoftwareUpdateConfigurationSchedule; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleOutputReference) validateSetInternalValueParameters(val *AutomationSoftwareUpdateConfigurationSchedule) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -350,21 +314,13 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleOutputReference)
 	return nil
 }
 
-func validateNewAutomationSoftwareUpdateConfigurationScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAutomationSoftwareUpdateConfigurationScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
-	}
-
-	if complexObjectIndex == nil {
-		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
-	}
-
-	if complexObjectIsFromSet == nil {
-		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

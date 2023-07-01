@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/sql_failover_group azurerm_sql_failover_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/sql_failover_group azurerm_sql_failover_group}.
 type SqlFailoverGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -519,7 +519,7 @@ func (j *jsiiProxy_SqlFailoverGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/sql_failover_group azurerm_sql_failover_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/sql_failover_group azurerm_sql_failover_group} Resource.
 func NewSqlFailoverGroup(scope constructs.Construct, id *string, config *SqlFailoverGroupConfig) SqlFailoverGroup {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewSqlFailoverGroup(scope constructs.Construct, id *string, config *SqlFail
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/sql_failover_group azurerm_sql_failover_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/sql_failover_group azurerm_sql_failover_group} Resource.
 func NewSqlFailoverGroup_Override(s SqlFailoverGroup, scope constructs.Construct, id *string, config *SqlFailoverGroupConfig) {
 	_init_.Initialize()
 

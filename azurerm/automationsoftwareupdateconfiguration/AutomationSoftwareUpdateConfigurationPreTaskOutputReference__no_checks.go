@@ -56,7 +56,7 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskOutputReference) validateSetInternalValueParameters(val *AutomationSoftwareUpdateConfigurationPreTask) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskOutputReference) 
 	return nil
 }
 
-func validateNewAutomationSoftwareUpdateConfigurationPreTaskOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAutomationSoftwareUpdateConfigurationPreTaskOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

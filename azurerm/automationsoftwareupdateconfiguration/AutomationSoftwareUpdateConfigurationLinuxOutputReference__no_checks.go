@@ -52,6 +52,10 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) validateSetClassificationsIncludedParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -68,7 +72,7 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) validateSetInternalValueParameters(val *AutomationSoftwareUpdateConfigurationLinux) error {
 	return nil
 }
 
@@ -84,7 +88,7 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) va
 	return nil
 }
 
-func validateNewAutomationSoftwareUpdateConfigurationLinuxOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAutomationSoftwareUpdateConfigurationLinuxOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

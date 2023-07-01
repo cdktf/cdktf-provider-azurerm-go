@@ -80,6 +80,10 @@ func (j *jsiiProxy_SpringCloudConfigurationService) validateSetCountParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudConfigurationService) validateSetGenerationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudConfigurationService) validateSetIdParameters(val *string) error {
 	return nil
 }

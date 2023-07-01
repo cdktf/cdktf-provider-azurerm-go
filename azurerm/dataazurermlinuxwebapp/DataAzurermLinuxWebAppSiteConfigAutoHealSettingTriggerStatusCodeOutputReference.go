@@ -42,7 +42,7 @@ type DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputRefer
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Win32Status() *string
+	Win32Status() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -202,8 +202,8 @@ func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusC
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) Win32Status() *string {
-	var returns *string
+func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) Win32Status() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"win32Status",

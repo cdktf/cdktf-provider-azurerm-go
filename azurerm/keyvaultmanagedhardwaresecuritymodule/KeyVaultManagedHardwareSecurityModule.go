@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module}.
 type KeyVaultManagedHardwareSecurityModule interface {
 	cdktf.TerraformResource
 	AdminObjectIds() *[]*string
@@ -76,6 +76,13 @@ type KeyVaultManagedHardwareSecurityModule interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	SecurityDomainEncryptedData() *string
+	SecurityDomainKeyVaultCertificateIds() *[]*string
+	SetSecurityDomainKeyVaultCertificateIds(val *[]*string)
+	SecurityDomainKeyVaultCertificateIdsInput() *[]*string
+	SecurityDomainQuorum() *float64
+	SetSecurityDomainQuorum(val *float64)
+	SecurityDomainQuorumInput() *float64
 	SkuName() *string
 	SetSkuName(val *string)
 	SkuNameInput() *string
@@ -130,6 +137,8 @@ type KeyVaultManagedHardwareSecurityModule interface {
 	ResetOverrideLogicalId()
 	ResetPublicNetworkAccessEnabled()
 	ResetPurgeProtectionEnabled()
+	ResetSecurityDomainKeyVaultCertificateIds()
+	ResetSecurityDomainQuorum()
 	ResetSoftDeleteRetentionDays()
 	ResetTags()
 	ResetTimeouts()
@@ -448,6 +457,56 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) ResourceGroupNameInput
 	return returns
 }
 
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) SecurityDomainEncryptedData() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityDomainEncryptedData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) SecurityDomainKeyVaultCertificateIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityDomainKeyVaultCertificateIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) SecurityDomainKeyVaultCertificateIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityDomainKeyVaultCertificateIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) SecurityDomainQuorum() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"securityDomainQuorum",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) SecurityDomainQuorumInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"securityDomainQuorumInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) SkuName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -579,7 +638,7 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module} Resource.
 func NewKeyVaultManagedHardwareSecurityModule(scope constructs.Construct, id *string, config *KeyVaultManagedHardwareSecurityModuleConfig) KeyVaultManagedHardwareSecurityModule {
 	_init_.Initialize()
 
@@ -597,7 +656,7 @@ func NewKeyVaultManagedHardwareSecurityModule(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module} Resource.
 func NewKeyVaultManagedHardwareSecurityModule_Override(k KeyVaultManagedHardwareSecurityModule, scope constructs.Construct, id *string, config *KeyVaultManagedHardwareSecurityModuleConfig) {
 	_init_.Initialize()
 
@@ -749,6 +808,28 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule)SetResourceGroupName(va
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule)SetSecurityDomainKeyVaultCertificateIds(val *[]*string) {
+	if err := j.validateSetSecurityDomainKeyVaultCertificateIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityDomainKeyVaultCertificateIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule)SetSecurityDomainQuorum(val *float64) {
+	if err := j.validateSetSecurityDomainQuorumParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityDomainQuorum",
 		val,
 	)
 }
@@ -1121,6 +1202,22 @@ func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) ResetPurgeProtectionEn
 	_jsii_.InvokeVoid(
 		k,
 		"resetPurgeProtectionEnabled",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) ResetSecurityDomainKeyVaultCertificateIds() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetSecurityDomainKeyVaultCertificateIds",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) ResetSecurityDomainQuorum() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetSecurityDomainQuorum",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/web_pubsub azurerm_web_pubsub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/web_pubsub azurerm_web_pubsub}.
 type DataAzurermWebPubsub interface {
 	cdktf.TerraformDataSource
 	AadAuthEnabled() cdktf.IResolvable
@@ -515,7 +515,7 @@ func (j *jsiiProxy_DataAzurermWebPubsub) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/web_pubsub azurerm_web_pubsub} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/web_pubsub azurerm_web_pubsub} Data Source.
 func NewDataAzurermWebPubsub(scope constructs.Construct, id *string, config *DataAzurermWebPubsubConfig) DataAzurermWebPubsub {
 	_init_.Initialize()
 
@@ -533,7 +533,7 @@ func NewDataAzurermWebPubsub(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/data-sources/web_pubsub azurerm_web_pubsub} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/web_pubsub azurerm_web_pubsub} Data Source.
 func NewDataAzurermWebPubsub_Override(d DataAzurermWebPubsub, scope constructs.Construct, id *string, config *DataAzurermWebPubsubConfig) {
 	_init_.Initialize()
 

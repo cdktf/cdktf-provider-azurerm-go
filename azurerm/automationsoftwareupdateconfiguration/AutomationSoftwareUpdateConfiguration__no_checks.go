@@ -52,19 +52,19 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validateOverrideLogica
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutLinuxParameters(value interface{}) error {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutLinuxParameters(value *AutomationSoftwareUpdateConfigurationLinux) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutPostTaskParameters(value interface{}) error {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutPostTaskParameters(value *AutomationSoftwareUpdateConfigurationPostTask) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutPreTaskParameters(value interface{}) error {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutPreTaskParameters(value *AutomationSoftwareUpdateConfigurationPreTask) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutScheduleParameters(value interface{}) error {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutScheduleParameters(value *AutomationSoftwareUpdateConfigurationSchedule) error {
 	return nil
 }
 

@@ -32,6 +32,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "customCaTrustCertificatesBase64", GoGetter: "CustomCaTrustCertificatesBase64"},
+			_jsii_.MemberProperty{JsiiProperty: "customCaTrustCertificatesBase64Input", GoGetter: "CustomCaTrustCertificatesBase64Input"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultNodePool", GoGetter: "DefaultNodePool"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultNodePoolInput", GoGetter: "DefaultNodePoolInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
@@ -94,7 +96,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindow", GoGetter: "MaintenanceWindow"},
+			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindowAutoUpgrade", GoGetter: "MaintenanceWindowAutoUpgrade"},
+			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindowAutoUpgradeInput", GoGetter: "MaintenanceWindowAutoUpgradeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindowInput", GoGetter: "MaintenanceWindowInput"},
+			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindowNodeOs", GoGetter: "MaintenanceWindowNodeOs"},
+			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindowNodeOsInput", GoGetter: "MaintenanceWindowNodeOsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "microsoftDefender", GoGetter: "MicrosoftDefender"},
 			_jsii_.MemberProperty{JsiiProperty: "microsoftDefenderInput", GoGetter: "MicrosoftDefenderInput"},
 			_jsii_.MemberProperty{JsiiProperty: "monitorMetrics", GoGetter: "MonitorMetrics"},
@@ -143,6 +149,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putKubeletIdentity", GoMethod: "PutKubeletIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "putLinuxProfile", GoMethod: "PutLinuxProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "putMaintenanceWindow", GoMethod: "PutMaintenanceWindow"},
+			_jsii_.MemberMethod{JsiiMethod: "putMaintenanceWindowAutoUpgrade", GoMethod: "PutMaintenanceWindowAutoUpgrade"},
+			_jsii_.MemberMethod{JsiiMethod: "putMaintenanceWindowNodeOs", GoMethod: "PutMaintenanceWindowNodeOs"},
 			_jsii_.MemberMethod{JsiiMethod: "putMicrosoftDefender", GoMethod: "PutMicrosoftDefender"},
 			_jsii_.MemberMethod{JsiiMethod: "putMonitorMetrics", GoMethod: "PutMonitorMetrics"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkProfile", GoMethod: "PutNetworkProfile"},
@@ -163,6 +171,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureActiveDirectoryRoleBasedAccessControl", GoMethod: "ResetAzureActiveDirectoryRoleBasedAccessControl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzurePolicyEnabled", GoMethod: "ResetAzurePolicyEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConfidentialComputing", GoMethod: "ResetConfidentialComputing"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomCaTrustCertificatesBase64", GoMethod: "ResetCustomCaTrustCertificatesBase64"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskEncryptionSetId", GoMethod: "ResetDiskEncryptionSetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsPrefix", GoMethod: "ResetDnsPrefix"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsPrefixPrivateCluster", GoMethod: "ResetDnsPrefixPrivateCluster"},
@@ -182,6 +191,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLinuxProfile", GoMethod: "ResetLinuxProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocalAccountDisabled", GoMethod: "ResetLocalAccountDisabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaintenanceWindow", GoMethod: "ResetMaintenanceWindow"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaintenanceWindowAutoUpgrade", GoMethod: "ResetMaintenanceWindowAutoUpgrade"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaintenanceWindowNodeOs", GoMethod: "ResetMaintenanceWindowNodeOs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMicrosoftDefender", GoMethod: "ResetMicrosoftDefender"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMonitorMetrics", GoMethod: "ResetMonitorMetrics"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkProfile", GoMethod: "ResetNetworkProfile"},
@@ -1692,6 +1703,256 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KubernetesClusterMaintenanceWindowAllowedOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgrade",
+		reflect.TypeOf((*KubernetesClusterMaintenanceWindowAutoUpgrade)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed",
+		reflect.TypeOf((*KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList",
+		reflect.TypeOf((*KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference",
+		reflect.TypeOf((*KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "end", GoGetter: "End"},
+			_jsii_.MemberProperty{JsiiProperty: "endInput", GoGetter: "EndInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "start", GoGetter: "Start"},
+			_jsii_.MemberProperty{JsiiProperty: "startInput", GoGetter: "StartInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference",
+		reflect.TypeOf((*KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dayOfMonth", GoGetter: "DayOfMonth"},
+			_jsii_.MemberProperty{JsiiProperty: "dayOfMonthInput", GoGetter: "DayOfMonthInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dayOfWeek", GoGetter: "DayOfWeek"},
+			_jsii_.MemberProperty{JsiiProperty: "dayOfWeekInput", GoGetter: "DayOfWeekInput"},
+			_jsii_.MemberProperty{JsiiProperty: "duration", GoGetter: "Duration"},
+			_jsii_.MemberProperty{JsiiProperty: "durationInput", GoGetter: "DurationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberProperty{JsiiProperty: "frequency", GoGetter: "Frequency"},
+			_jsii_.MemberProperty{JsiiProperty: "frequencyInput", GoGetter: "FrequencyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "interval", GoGetter: "Interval"},
+			_jsii_.MemberProperty{JsiiProperty: "intervalInput", GoGetter: "IntervalInput"},
+			_jsii_.MemberProperty{JsiiProperty: "notAllowed", GoGetter: "NotAllowed"},
+			_jsii_.MemberProperty{JsiiProperty: "notAllowedInput", GoGetter: "NotAllowedInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putNotAllowed", GoMethod: "PutNotAllowed"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDayOfMonth", GoMethod: "ResetDayOfMonth"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDayOfWeek", GoMethod: "ResetDayOfWeek"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNotAllowed", GoMethod: "ResetNotAllowed"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStartDate", GoMethod: "ResetStartDate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStartTime", GoMethod: "ResetStartTime"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUtcOffset", GoMethod: "ResetUtcOffset"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWeekIndex", GoMethod: "ResetWeekIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "startDate", GoGetter: "StartDate"},
+			_jsii_.MemberProperty{JsiiProperty: "startDateInput", GoGetter: "StartDateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "startTime", GoGetter: "StartTime"},
+			_jsii_.MemberProperty{JsiiProperty: "startTimeInput", GoGetter: "StartTimeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "utcOffset", GoGetter: "UtcOffset"},
+			_jsii_.MemberProperty{JsiiProperty: "utcOffsetInput", GoGetter: "UtcOffsetInput"},
+			_jsii_.MemberProperty{JsiiProperty: "weekIndex", GoGetter: "WeekIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "weekIndexInput", GoGetter: "WeekIndexInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOs",
+		reflect.TypeOf((*KubernetesClusterMaintenanceWindowNodeOs)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed",
+		reflect.TypeOf((*KubernetesClusterMaintenanceWindowNodeOsNotAllowed)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedList",
+		reflect.TypeOf((*KubernetesClusterMaintenanceWindowNodeOsNotAllowedList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KubernetesClusterMaintenanceWindowNodeOsNotAllowedList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference",
+		reflect.TypeOf((*KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "end", GoGetter: "End"},
+			_jsii_.MemberProperty{JsiiProperty: "endInput", GoGetter: "EndInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "start", GoGetter: "Start"},
+			_jsii_.MemberProperty{JsiiProperty: "startInput", GoGetter: "StartInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsOutputReference",
+		reflect.TypeOf((*KubernetesClusterMaintenanceWindowNodeOsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dayOfMonth", GoGetter: "DayOfMonth"},
+			_jsii_.MemberProperty{JsiiProperty: "dayOfMonthInput", GoGetter: "DayOfMonthInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dayOfWeek", GoGetter: "DayOfWeek"},
+			_jsii_.MemberProperty{JsiiProperty: "dayOfWeekInput", GoGetter: "DayOfWeekInput"},
+			_jsii_.MemberProperty{JsiiProperty: "duration", GoGetter: "Duration"},
+			_jsii_.MemberProperty{JsiiProperty: "durationInput", GoGetter: "DurationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberProperty{JsiiProperty: "frequency", GoGetter: "Frequency"},
+			_jsii_.MemberProperty{JsiiProperty: "frequencyInput", GoGetter: "FrequencyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "interval", GoGetter: "Interval"},
+			_jsii_.MemberProperty{JsiiProperty: "intervalInput", GoGetter: "IntervalInput"},
+			_jsii_.MemberProperty{JsiiProperty: "notAllowed", GoGetter: "NotAllowed"},
+			_jsii_.MemberProperty{JsiiProperty: "notAllowedInput", GoGetter: "NotAllowedInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putNotAllowed", GoMethod: "PutNotAllowed"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDayOfMonth", GoMethod: "ResetDayOfMonth"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDayOfWeek", GoMethod: "ResetDayOfWeek"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNotAllowed", GoMethod: "ResetNotAllowed"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStartDate", GoMethod: "ResetStartDate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStartTime", GoMethod: "ResetStartTime"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUtcOffset", GoMethod: "ResetUtcOffset"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWeekIndex", GoMethod: "ResetWeekIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "startDate", GoGetter: "StartDate"},
+			_jsii_.MemberProperty{JsiiProperty: "startDateInput", GoGetter: "StartDateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "startTime", GoGetter: "StartTime"},
+			_jsii_.MemberProperty{JsiiProperty: "startTimeInput", GoGetter: "StartTimeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "utcOffset", GoGetter: "UtcOffset"},
+			_jsii_.MemberProperty{JsiiProperty: "utcOffsetInput", GoGetter: "UtcOffsetInput"},
+			_jsii_.MemberProperty{JsiiProperty: "weekIndex", GoGetter: "WeekIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "weekIndexInput", GoGetter: "WeekIndexInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KubernetesClusterMaintenanceWindowNodeOsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

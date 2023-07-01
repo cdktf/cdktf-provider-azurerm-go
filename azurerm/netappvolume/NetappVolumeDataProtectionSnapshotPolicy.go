@@ -2,7 +2,7 @@ package netappvolume
 
 
 type NetappVolumeDataProtectionSnapshotPolicy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/netapp_volume#snapshot_policy_id NetappVolume#snapshot_policy_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/netapp_volume#snapshot_policy_id NetappVolume#snapshot_policy_id}.
 	SnapshotPolicyId *string `field:"required" json:"snapshotPolicyId" yaml:"snapshotPolicyId"`
 }
 

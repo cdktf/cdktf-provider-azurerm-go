@@ -195,6 +195,38 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) validateSetDockerImageNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) validateSetDockerRegistryPasswordParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) validateSetDockerRegistryUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) validateSetDockerRegistryUsernameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) validateSetDotnetCoreVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/web_app_hybrid_connection azurerm_web_app_hybrid_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/web_app_hybrid_connection azurerm_web_app_hybrid_connection}.
 type WebAppHybridConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -481,7 +481,7 @@ func (j *jsiiProxy_WebAppHybridConnection) WebAppIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/web_app_hybrid_connection azurerm_web_app_hybrid_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/web_app_hybrid_connection azurerm_web_app_hybrid_connection} Resource.
 func NewWebAppHybridConnection(scope constructs.Construct, id *string, config *WebAppHybridConnectionConfig) WebAppHybridConnection {
 	_init_.Initialize()
 
@@ -499,7 +499,7 @@ func NewWebAppHybridConnection(scope constructs.Construct, id *string, config *W
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/web_app_hybrid_connection azurerm_web_app_hybrid_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/web_app_hybrid_connection azurerm_web_app_hybrid_connection} Resource.
 func NewWebAppHybridConnection_Override(w WebAppHybridConnection, scope constructs.Construct, id *string, config *WebAppHybridConnectionConfig) {
 	_init_.Initialize()
 

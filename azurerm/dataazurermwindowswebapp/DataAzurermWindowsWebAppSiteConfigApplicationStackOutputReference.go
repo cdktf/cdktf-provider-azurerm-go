@@ -29,6 +29,10 @@ type DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference interface
 	DockerContainerName() *string
 	DockerContainerRegistry() *string
 	DockerContainerTag() *string
+	DockerImageName() *string
+	DockerRegistryPassword() *string
+	DockerRegistryUrl() *string
+	DockerRegistryUsername() *string
 	DotnetCoreVersion() *string
 	DotnetVersion() *string
 	// Experimental.
@@ -156,6 +160,46 @@ func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputRefer
 	_jsii_.Get(
 		j,
 		"dockerContainerTag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference) DockerImageName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerImageName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference) DockerRegistryPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerRegistryPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference) DockerRegistryUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerRegistryUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference) DockerRegistryUsername() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerRegistryUsername",
 		&returns,
 	)
 	return returns

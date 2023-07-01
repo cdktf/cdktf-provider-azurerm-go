@@ -171,7 +171,39 @@ func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) validateSetDockerImageNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) validateSetDockerImageTagParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) validateSetDockerRegistryPasswordParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) validateSetDockerRegistryUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) validateSetDockerRegistryUsernameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

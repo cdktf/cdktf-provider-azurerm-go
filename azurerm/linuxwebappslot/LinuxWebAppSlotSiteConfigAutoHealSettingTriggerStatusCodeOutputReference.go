@@ -52,9 +52,9 @@ type LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference in
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Win32Status() *string
-	SetWin32Status(val *string)
-	Win32StatusInput() *string
+	Win32Status() *float64
+	SetWin32Status(val *float64)
+	Win32StatusInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -267,8 +267,8 @@ func (j *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutp
 	return returns
 }
 
-func (j *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) Win32Status() *string {
-	var returns *string
+func (j *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) Win32Status() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"win32Status",
@@ -277,8 +277,8 @@ func (j *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutp
 	return returns
 }
 
-func (j *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) Win32StatusInput() *string {
-	var returns *string
+func (j *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) Win32StatusInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"win32StatusInput",
@@ -425,7 +425,7 @@ func (j *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutp
 	)
 }
 
-func (j *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference)SetWin32Status(val *string) {
+func (j *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference)SetWin32Status(val *float64) {
 	if err := j.validateSetWin32StatusParameters(val); err != nil {
 		panic(err)
 	}

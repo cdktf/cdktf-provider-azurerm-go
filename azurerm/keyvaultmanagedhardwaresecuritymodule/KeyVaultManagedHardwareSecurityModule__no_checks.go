@@ -116,6 +116,14 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validateSetResourceGro
 	return nil
 }
 
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validateSetSecurityDomainKeyVaultCertificateIdsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validateSetSecurityDomainQuorumParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validateSetSkuNameParameters(val *string) error {
 	return nil
 }

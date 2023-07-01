@@ -68,10 +68,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLinux", GoMethod: "ResetLinux"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNonAzureComputerNames", GoMethod: "ResetNonAzureComputerNames"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOperatingSystem", GoMethod: "ResetOperatingSystem"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPostTask", GoMethod: "ResetPostTask"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPreTask", GoMethod: "ResetPreTask"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSchedule", GoMethod: "ResetSchedule"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTarget", GoMethod: "ResetTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVirtualMachineIds", GoMethod: "ResetVirtualMachineIds"},
@@ -109,32 +109,13 @@ func init() {
 		reflect.TypeOf((*AutomationSoftwareUpdateConfigurationLinux)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationLinuxList",
-		reflect.TypeOf((*AutomationSoftwareUpdateConfigurationLinuxList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
 		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationLinuxOutputReference",
 		reflect.TypeOf((*AutomationSoftwareUpdateConfigurationLinuxOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "classificationIncluded", GoGetter: "ClassificationIncluded"},
 			_jsii_.MemberProperty{JsiiProperty: "classificationIncludedInput", GoGetter: "ClassificationIncludedInput"},
+			_jsii_.MemberProperty{JsiiProperty: "classificationsIncluded", GoGetter: "ClassificationsIncluded"},
+			_jsii_.MemberProperty{JsiiProperty: "classificationsIncludedInput", GoGetter: "ClassificationsIncludedInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -159,6 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "reboot", GoGetter: "Reboot"},
 			_jsii_.MemberProperty{JsiiProperty: "rebootInput", GoGetter: "RebootInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClassificationIncluded", GoMethod: "ResetClassificationIncluded"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClassificationsIncluded", GoMethod: "ResetClassificationsIncluded"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludedPackages", GoMethod: "ResetExcludedPackages"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIncludedPackages", GoMethod: "ResetIncludedPackages"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReboot", GoMethod: "ResetReboot"},
@@ -176,27 +158,6 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationPostTask",
 		reflect.TypeOf((*AutomationSoftwareUpdateConfigurationPostTask)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationPostTaskList",
-		reflect.TypeOf((*AutomationSoftwareUpdateConfigurationPostTaskList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AutomationSoftwareUpdateConfigurationPostTaskList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationPostTaskOutputReference",
@@ -241,27 +202,6 @@ func init() {
 		reflect.TypeOf((*AutomationSoftwareUpdateConfigurationPreTask)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationPreTaskList",
-		reflect.TypeOf((*AutomationSoftwareUpdateConfigurationPreTaskList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AutomationSoftwareUpdateConfigurationPreTaskList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
 		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationPreTaskOutputReference",
 		reflect.TypeOf((*AutomationSoftwareUpdateConfigurationPreTaskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -303,51 +243,9 @@ func init() {
 		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationSchedule",
 		reflect.TypeOf((*AutomationSoftwareUpdateConfigurationSchedule)(nil)).Elem(),
 	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationScheduleList",
-		reflect.TypeOf((*AutomationSoftwareUpdateConfigurationScheduleList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrence",
 		reflect.TypeOf((*AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrence)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceList",
-		reflect.TypeOf((*AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference",
@@ -436,7 +334,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExpiryTime", GoMethod: "ResetExpiryTime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExpiryTimeOffsetMinutes", GoMethod: "ResetExpiryTimeOffsetMinutes"},
-			_jsii_.MemberMethod{JsiiMethod: "resetFrequency", GoMethod: "ResetFrequency"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInterval", GoMethod: "ResetInterval"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsEnabled", GoMethod: "ResetIsEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMonthlyOccurrence", GoMethod: "ResetMonthlyOccurrence"},

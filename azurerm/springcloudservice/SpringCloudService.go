@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/spring_cloud_service azurerm_spring_cloud_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service}.
 type SpringCloudService interface {
 	cdktf.TerraformResource
 	BuildAgentPoolSize() *string
@@ -676,7 +676,7 @@ func (j *jsiiProxy_SpringCloudService) ZoneRedundantInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/spring_cloud_service azurerm_spring_cloud_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service} Resource.
 func NewSpringCloudService(scope constructs.Construct, id *string, config *SpringCloudServiceConfig) SpringCloudService {
 	_init_.Initialize()
 
@@ -694,7 +694,7 @@ func NewSpringCloudService(scope constructs.Construct, id *string, config *Sprin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/spring_cloud_service azurerm_spring_cloud_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service} Resource.
 func NewSpringCloudService_Override(s SpringCloudService, scope constructs.Construct, id *string, config *SpringCloudServiceConfig) {
 	_init_.Initialize()
 

@@ -111,125 +111,45 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validateOverrideLogica
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutLinuxParameters(value interface{}) error {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutLinuxParameters(value *AutomationSoftwareUpdateConfigurationLinux) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*AutomationSoftwareUpdateConfigurationLinux:
-		value := value.(*[]*AutomationSoftwareUpdateConfigurationLinux)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*AutomationSoftwareUpdateConfigurationLinux:
-		value_ := value.([]*AutomationSoftwareUpdateConfigurationLinux)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AutomationSoftwareUpdateConfigurationLinux; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutPostTaskParameters(value interface{}) error {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutPostTaskParameters(value *AutomationSoftwareUpdateConfigurationPostTask) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*AutomationSoftwareUpdateConfigurationPostTask:
-		value := value.(*[]*AutomationSoftwareUpdateConfigurationPostTask)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*AutomationSoftwareUpdateConfigurationPostTask:
-		value_ := value.([]*AutomationSoftwareUpdateConfigurationPostTask)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AutomationSoftwareUpdateConfigurationPostTask; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutPreTaskParameters(value interface{}) error {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutPreTaskParameters(value *AutomationSoftwareUpdateConfigurationPreTask) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*AutomationSoftwareUpdateConfigurationPreTask:
-		value := value.(*[]*AutomationSoftwareUpdateConfigurationPreTask)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*AutomationSoftwareUpdateConfigurationPreTask:
-		value_ := value.([]*AutomationSoftwareUpdateConfigurationPreTask)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AutomationSoftwareUpdateConfigurationPreTask; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutScheduleParameters(value interface{}) error {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutScheduleParameters(value *AutomationSoftwareUpdateConfigurationSchedule) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*AutomationSoftwareUpdateConfigurationSchedule:
-		value := value.(*[]*AutomationSoftwareUpdateConfigurationSchedule)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*AutomationSoftwareUpdateConfigurationSchedule:
-		value_ := value.([]*AutomationSoftwareUpdateConfigurationSchedule)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AutomationSoftwareUpdateConfigurationSchedule; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

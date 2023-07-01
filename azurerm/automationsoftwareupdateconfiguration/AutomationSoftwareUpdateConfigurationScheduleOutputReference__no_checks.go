@@ -44,7 +44,7 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleOutputReference)
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleOutputReference) validatePutMonthlyOccurrenceParameters(value interface{}) error {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleOutputReference) validatePutMonthlyOccurrenceParameters(value *AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrence) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleOutputReference) validateSetInternalValueParameters(val *AutomationSoftwareUpdateConfigurationSchedule) error {
 	return nil
 }
 
@@ -124,7 +124,7 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleOutputReference)
 	return nil
 }
 
-func validateNewAutomationSoftwareUpdateConfigurationScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAutomationSoftwareUpdateConfigurationScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

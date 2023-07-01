@@ -265,6 +265,28 @@ func (k *jsiiProxy_KubernetesCluster) validatePutMaintenanceWindowParameters(val
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesCluster) validatePutMaintenanceWindowAutoUpgradeParameters(value *KubernetesClusterMaintenanceWindowAutoUpgrade) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (k *jsiiProxy_KubernetesCluster) validatePutMaintenanceWindowNodeOsParameters(value *KubernetesClusterMaintenanceWindowNodeOs) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesCluster) validatePutMicrosoftDefenderParameters(value *KubernetesClusterMicrosoftDefender) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -531,6 +553,14 @@ func (j *jsiiProxy_KubernetesCluster) validateSetCountParameters(val interface{}
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesCluster) validateSetCustomCaTrustCertificatesBase64Parameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

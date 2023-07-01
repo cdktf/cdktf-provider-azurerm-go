@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration}.
 type AutomationSoftwareUpdateConfiguration interface {
 	cdktf.TerraformResource
 	AutomationAccountId() *string
@@ -52,8 +52,8 @@ type AutomationSoftwareUpdateConfiguration interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Linux() AutomationSoftwareUpdateConfigurationLinuxList
-	LinuxInput() interface{}
+	Linux() AutomationSoftwareUpdateConfigurationLinuxOutputReference
+	LinuxInput() *AutomationSoftwareUpdateConfigurationLinux
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -65,10 +65,10 @@ type AutomationSoftwareUpdateConfiguration interface {
 	OperatingSystem() *string
 	SetOperatingSystem(val *string)
 	OperatingSystemInput() *string
-	PostTask() AutomationSoftwareUpdateConfigurationPostTaskList
-	PostTaskInput() interface{}
-	PreTask() AutomationSoftwareUpdateConfigurationPreTaskList
-	PreTaskInput() interface{}
+	PostTask() AutomationSoftwareUpdateConfigurationPostTaskOutputReference
+	PostTaskInput() *AutomationSoftwareUpdateConfigurationPostTask
+	PreTask() AutomationSoftwareUpdateConfigurationPreTaskOutputReference
+	PreTaskInput() *AutomationSoftwareUpdateConfigurationPreTask
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -79,8 +79,8 @@ type AutomationSoftwareUpdateConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Schedule() AutomationSoftwareUpdateConfigurationScheduleList
-	ScheduleInput() interface{}
+	Schedule() AutomationSoftwareUpdateConfigurationScheduleOutputReference
+	ScheduleInput() *AutomationSoftwareUpdateConfigurationSchedule
 	Target() AutomationSoftwareUpdateConfigurationTargetOutputReference
 	TargetInput() *AutomationSoftwareUpdateConfigurationTarget
 	// Experimental.
@@ -121,10 +121,10 @@ type AutomationSoftwareUpdateConfiguration interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutLinux(value interface{})
-	PutPostTask(value interface{})
-	PutPreTask(value interface{})
-	PutSchedule(value interface{})
+	PutLinux(value *AutomationSoftwareUpdateConfigurationLinux)
+	PutPostTask(value *AutomationSoftwareUpdateConfigurationPostTask)
+	PutPreTask(value *AutomationSoftwareUpdateConfigurationPreTask)
+	PutSchedule(value *AutomationSoftwareUpdateConfigurationSchedule)
 	PutTarget(value *AutomationSoftwareUpdateConfigurationTarget)
 	PutTimeouts(value *AutomationSoftwareUpdateConfigurationTimeouts)
 	PutWindows(value *AutomationSoftwareUpdateConfigurationWindows)
@@ -132,12 +132,12 @@ type AutomationSoftwareUpdateConfiguration interface {
 	ResetId()
 	ResetLinux()
 	ResetNonAzureComputerNames()
+	ResetOperatingSystem()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPostTask()
 	ResetPreTask()
-	ResetSchedule()
 	ResetTarget()
 	ResetTimeouts()
 	ResetVirtualMachineIds()
@@ -337,8 +337,8 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) Lifecycle() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) Linux() AutomationSoftwareUpdateConfigurationLinuxList {
-	var returns AutomationSoftwareUpdateConfigurationLinuxList
+func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) Linux() AutomationSoftwareUpdateConfigurationLinuxOutputReference {
+	var returns AutomationSoftwareUpdateConfigurationLinuxOutputReference
 	_jsii_.Get(
 		j,
 		"linux",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) Linux() AutomationSoft
 	return returns
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) LinuxInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) LinuxInput() *AutomationSoftwareUpdateConfigurationLinux {
+	var returns *AutomationSoftwareUpdateConfigurationLinux
 	_jsii_.Get(
 		j,
 		"linuxInput",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) OperatingSystemInput()
 	return returns
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) PostTask() AutomationSoftwareUpdateConfigurationPostTaskList {
-	var returns AutomationSoftwareUpdateConfigurationPostTaskList
+func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) PostTask() AutomationSoftwareUpdateConfigurationPostTaskOutputReference {
+	var returns AutomationSoftwareUpdateConfigurationPostTaskOutputReference
 	_jsii_.Get(
 		j,
 		"postTask",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) PostTask() AutomationS
 	return returns
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) PostTaskInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) PostTaskInput() *AutomationSoftwareUpdateConfigurationPostTask {
+	var returns *AutomationSoftwareUpdateConfigurationPostTask
 	_jsii_.Get(
 		j,
 		"postTaskInput",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) PostTaskInput() interf
 	return returns
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) PreTask() AutomationSoftwareUpdateConfigurationPreTaskList {
-	var returns AutomationSoftwareUpdateConfigurationPreTaskList
+func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) PreTask() AutomationSoftwareUpdateConfigurationPreTaskOutputReference {
+	var returns AutomationSoftwareUpdateConfigurationPreTaskOutputReference
 	_jsii_.Get(
 		j,
 		"preTask",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) PreTask() AutomationSo
 	return returns
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) PreTaskInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) PreTaskInput() *AutomationSoftwareUpdateConfigurationPreTask {
+	var returns *AutomationSoftwareUpdateConfigurationPreTask
 	_jsii_.Get(
 		j,
 		"preTaskInput",
@@ -497,8 +497,8 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) RawOverrides() interfa
 	return returns
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) Schedule() AutomationSoftwareUpdateConfigurationScheduleList {
-	var returns AutomationSoftwareUpdateConfigurationScheduleList
+func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) Schedule() AutomationSoftwareUpdateConfigurationScheduleOutputReference {
+	var returns AutomationSoftwareUpdateConfigurationScheduleOutputReference
 	_jsii_.Get(
 		j,
 		"schedule",
@@ -507,8 +507,8 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) Schedule() AutomationS
 	return returns
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) ScheduleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) ScheduleInput() *AutomationSoftwareUpdateConfigurationSchedule {
+	var returns *AutomationSoftwareUpdateConfigurationSchedule
 	_jsii_.Get(
 		j,
 		"scheduleInput",
@@ -628,7 +628,7 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) WindowsInput() *Automa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration} Resource.
 func NewAutomationSoftwareUpdateConfiguration(scope constructs.Construct, id *string, config *AutomationSoftwareUpdateConfigurationConfig) AutomationSoftwareUpdateConfiguration {
 	_init_.Initialize()
 
@@ -646,7 +646,7 @@ func NewAutomationSoftwareUpdateConfiguration(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration} Resource.
 func NewAutomationSoftwareUpdateConfiguration_Override(a AutomationSoftwareUpdateConfiguration, scope constructs.Construct, id *string, config *AutomationSoftwareUpdateConfigurationConfig) {
 	_init_.Initialize()
 
@@ -1068,7 +1068,7 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) OverrideLogicalId(newL
 	)
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) PutLinux(value interface{}) {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) PutLinux(value *AutomationSoftwareUpdateConfigurationLinux) {
 	if err := a.validatePutLinuxParameters(value); err != nil {
 		panic(err)
 	}
@@ -1079,7 +1079,7 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) PutLinux(value interfa
 	)
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) PutPostTask(value interface{}) {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) PutPostTask(value *AutomationSoftwareUpdateConfigurationPostTask) {
 	if err := a.validatePutPostTaskParameters(value); err != nil {
 		panic(err)
 	}
@@ -1090,7 +1090,7 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) PutPostTask(value inte
 	)
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) PutPreTask(value interface{}) {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) PutPreTask(value *AutomationSoftwareUpdateConfigurationPreTask) {
 	if err := a.validatePutPreTaskParameters(value); err != nil {
 		panic(err)
 	}
@@ -1101,7 +1101,7 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) PutPreTask(value inter
 	)
 }
 
-func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) PutSchedule(value interface{}) {
+func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) PutSchedule(value *AutomationSoftwareUpdateConfigurationSchedule) {
 	if err := a.validatePutScheduleParameters(value); err != nil {
 		panic(err)
 	}
@@ -1177,6 +1177,14 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) ResetNonAzureComputerN
 	)
 }
 
+func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) ResetOperatingSystem() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOperatingSystem",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1197,14 +1205,6 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) ResetPreTask() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPreTask",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) ResetSchedule() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSchedule",
 		nil, // no parameters
 	)
 }

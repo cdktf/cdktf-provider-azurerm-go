@@ -30,8 +30,8 @@ type AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReferen
 	DayInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrence
+	SetInternalValue(val *AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrence)
 	Occurrence() *float64
 	SetOccurrence(val *float64)
 	OccurrenceInput() *float64
@@ -142,8 +142,8 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenc
 	return returns
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference) InternalValue() *AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrence {
+	var returns *AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrence
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,29 +193,29 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenc
 }
 
 
-func NewAutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference {
+func NewAutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewAutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewAutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewAutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference_Override(a AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewAutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference_Override(a AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
 }
@@ -253,7 +253,7 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenc
 	)
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrenceOutputReference)SetInternalValue(val *AutomationSoftwareUpdateConfigurationScheduleMonthlyOccurrence) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

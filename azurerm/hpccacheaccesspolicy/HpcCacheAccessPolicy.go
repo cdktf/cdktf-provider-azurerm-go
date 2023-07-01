@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/hpc_cache_access_policy azurerm_hpc_cache_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/hpc_cache_access_policy azurerm_hpc_cache_access_policy}.
 type HpcCacheAccessPolicy interface {
 	cdktf.TerraformResource
 	AccessRule() HpcCacheAccessPolicyAccessRuleList
@@ -379,7 +379,7 @@ func (j *jsiiProxy_HpcCacheAccessPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/hpc_cache_access_policy azurerm_hpc_cache_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/hpc_cache_access_policy azurerm_hpc_cache_access_policy} Resource.
 func NewHpcCacheAccessPolicy(scope constructs.Construct, id *string, config *HpcCacheAccessPolicyConfig) HpcCacheAccessPolicy {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewHpcCacheAccessPolicy(scope constructs.Construct, id *string, config *Hpc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.62.1/docs/resources/hpc_cache_access_policy azurerm_hpc_cache_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/hpc_cache_access_policy azurerm_hpc_cache_access_policy} Resource.
 func NewHpcCacheAccessPolicy_Override(h HpcCacheAccessPolicy, scope constructs.Construct, id *string, config *HpcCacheAccessPolicyConfig) {
 	_init_.Initialize()
 

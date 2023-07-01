@@ -37,6 +37,18 @@ type WindowsWebAppSlotSiteConfigApplicationStackOutputReference interface {
 	DockerContainerTag() *string
 	SetDockerContainerTag(val *string)
 	DockerContainerTagInput() *string
+	DockerImageName() *string
+	SetDockerImageName(val *string)
+	DockerImageNameInput() *string
+	DockerRegistryPassword() *string
+	SetDockerRegistryPassword(val *string)
+	DockerRegistryPasswordInput() *string
+	DockerRegistryUrl() *string
+	SetDockerRegistryUrl(val *string)
+	DockerRegistryUrlInput() *string
+	DockerRegistryUsername() *string
+	SetDockerRegistryUsername(val *string)
+	DockerRegistryUsernameInput() *string
 	DotnetCoreVersion() *string
 	SetDotnetCoreVersion(val *string)
 	DotnetCoreVersionInput() *string
@@ -110,6 +122,10 @@ type WindowsWebAppSlotSiteConfigApplicationStackOutputReference interface {
 	ResetDockerContainerName()
 	ResetDockerContainerRegistry()
 	ResetDockerContainerTag()
+	ResetDockerImageName()
+	ResetDockerRegistryPassword()
+	ResetDockerRegistryUrl()
+	ResetDockerRegistryUsername()
 	ResetDotnetCoreVersion()
 	ResetDotnetVersion()
 	ResetJavaContainer()
@@ -241,6 +257,86 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) D
 	_jsii_.Get(
 		j,
 		"dockerContainerTagInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) DockerImageName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerImageName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) DockerImageNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerImageNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) DockerRegistryPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerRegistryPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) DockerRegistryPasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerRegistryPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) DockerRegistryUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerRegistryUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) DockerRegistryUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerRegistryUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) DockerRegistryUsername() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerRegistryUsername",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) DockerRegistryUsernameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dockerRegistryUsernameInput",
 		&returns,
 	)
 	return returns
@@ -596,6 +692,50 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)Se
 	_jsii_.Set(
 		j,
 		"dockerContainerTag",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)SetDockerImageName(val *string) {
+	if err := j.validateSetDockerImageNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dockerImageName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)SetDockerRegistryPassword(val *string) {
+	if err := j.validateSetDockerRegistryPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dockerRegistryPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)SetDockerRegistryUrl(val *string) {
+	if err := j.validateSetDockerRegistryUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dockerRegistryUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)SetDockerRegistryUsername(val *string) {
+	if err := j.validateSetDockerRegistryUsernameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dockerRegistryUsername",
 		val,
 	)
 }
@@ -968,6 +1108,38 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) R
 	_jsii_.InvokeVoid(
 		w,
 		"resetDockerContainerTag",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) ResetDockerImageName() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDockerImageName",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) ResetDockerRegistryPassword() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDockerRegistryPassword",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) ResetDockerRegistryUrl() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDockerRegistryUrl",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) ResetDockerRegistryUsername() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDockerRegistryUsername",
 		nil, // no parameters
 	)
 }

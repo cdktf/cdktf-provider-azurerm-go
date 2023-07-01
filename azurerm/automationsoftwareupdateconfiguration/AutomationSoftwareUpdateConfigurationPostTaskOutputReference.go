@@ -27,8 +27,8 @@ type AutomationSoftwareUpdateConfigurationPostTaskOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *AutomationSoftwareUpdateConfigurationPostTask
+	SetInternalValue(val *AutomationSoftwareUpdateConfigurationPostTask)
 	Parameters() *map[string]*string
 	SetParameters(val *map[string]*string)
 	ParametersInput() *map[string]*string
@@ -124,8 +124,8 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPostTaskOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPostTaskOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPostTaskOutputReference) InternalValue() *AutomationSoftwareUpdateConfigurationPostTask {
+	var returns *AutomationSoftwareUpdateConfigurationPostTask
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -195,29 +195,29 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPostTaskOutputReference)
 }
 
 
-func NewAutomationSoftwareUpdateConfigurationPostTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AutomationSoftwareUpdateConfigurationPostTaskOutputReference {
+func NewAutomationSoftwareUpdateConfigurationPostTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AutomationSoftwareUpdateConfigurationPostTaskOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewAutomationSoftwareUpdateConfigurationPostTaskOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewAutomationSoftwareUpdateConfigurationPostTaskOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_AutomationSoftwareUpdateConfigurationPostTaskOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationPostTaskOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewAutomationSoftwareUpdateConfigurationPostTaskOutputReference_Override(a AutomationSoftwareUpdateConfigurationPostTaskOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewAutomationSoftwareUpdateConfigurationPostTaskOutputReference_Override(a AutomationSoftwareUpdateConfigurationPostTaskOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationPostTaskOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
 }
@@ -244,7 +244,7 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPostTaskOutputReference)
 	)
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPostTaskOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationPostTaskOutputReference)SetInternalValue(val *AutomationSoftwareUpdateConfigurationPostTask) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

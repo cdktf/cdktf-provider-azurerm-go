@@ -72,6 +72,22 @@ func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) validateSetDockerImageNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) validateSetDockerRegistryPasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) validateSetDockerRegistryUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) validateSetDockerRegistryUsernameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) validateSetDotnetCoreVersionParameters(val *string) error {
 	return nil
 }
