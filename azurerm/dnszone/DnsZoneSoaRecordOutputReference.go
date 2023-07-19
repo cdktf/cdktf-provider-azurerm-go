@@ -90,6 +90,7 @@ type DnsZoneSoaRecordOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetExpireTime()
+	ResetHostName()
 	ResetMinimumTtl()
 	ResetRefreshTime()
 	ResetRetryTime()
@@ -743,6 +744,14 @@ func (d *jsiiProxy_DnsZoneSoaRecordOutputReference) ResetExpireTime() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetExpireTime",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DnsZoneSoaRecordOutputReference) ResetHostName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHostName",
 		nil, // no parameters
 	)
 }

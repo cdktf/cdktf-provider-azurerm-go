@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/databricks_workspace_customer_managed_key azurerm_databricks_workspace_customer_managed_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/databricks_workspace_customer_managed_key azurerm_databricks_workspace_customer_managed_key}.
 type DatabricksWorkspaceCustomerManagedKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_DatabricksWorkspaceCustomerManagedKey) WorkspaceIdInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/databricks_workspace_customer_managed_key azurerm_databricks_workspace_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/databricks_workspace_customer_managed_key azurerm_databricks_workspace_customer_managed_key} Resource.
 func NewDatabricksWorkspaceCustomerManagedKey(scope constructs.Construct, id *string, config *DatabricksWorkspaceCustomerManagedKeyConfig) DatabricksWorkspaceCustomerManagedKey {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewDatabricksWorkspaceCustomerManagedKey(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/databricks_workspace_customer_managed_key azurerm_databricks_workspace_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/databricks_workspace_customer_managed_key azurerm_databricks_workspace_customer_managed_key} Resource.
 func NewDatabricksWorkspaceCustomerManagedKey_Override(d DatabricksWorkspaceCustomerManagedKey, scope constructs.Construct, id *string, config *DatabricksWorkspaceCustomerManagedKeyConfig) {
 	_init_.Initialize()
 

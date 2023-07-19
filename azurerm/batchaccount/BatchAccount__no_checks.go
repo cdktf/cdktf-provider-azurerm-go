@@ -64,6 +64,10 @@ func (b *jsiiProxy_BatchAccount) validatePutKeyVaultReferenceParameters(value *B
 	return nil
 }
 
+func (b *jsiiProxy_BatchAccount) validatePutNetworkProfileParameters(value *BatchAccountNetworkProfile) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchAccount) validatePutTimeoutsParameters(value *BatchAccountTimeouts) error {
 	return nil
 }

@@ -61,6 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "possibleOutboundIpAddresses", GoGetter: "PossibleOutboundIpAddresses"},
 			_jsii_.MemberProperty{JsiiProperty: "possibleOutboundIpAddressList", GoGetter: "PossibleOutboundIpAddressList"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
+			_jsii_.MemberProperty{JsiiProperty: "publicNetworkAccessEnabled", GoGetter: "PublicNetworkAccessEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

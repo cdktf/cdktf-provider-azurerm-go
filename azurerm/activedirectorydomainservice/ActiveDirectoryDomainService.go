@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/active_directory_domain_service azurerm_active_directory_domain_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/active_directory_domain_service azurerm_active_directory_domain_service}.
 type ActiveDirectoryDomainService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -647,7 +647,7 @@ func (j *jsiiProxy_ActiveDirectoryDomainService) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/active_directory_domain_service azurerm_active_directory_domain_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/active_directory_domain_service azurerm_active_directory_domain_service} Resource.
 func NewActiveDirectoryDomainService(scope constructs.Construct, id *string, config *ActiveDirectoryDomainServiceConfig) ActiveDirectoryDomainService {
 	_init_.Initialize()
 
@@ -665,7 +665,7 @@ func NewActiveDirectoryDomainService(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/active_directory_domain_service azurerm_active_directory_domain_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/active_directory_domain_service azurerm_active_directory_domain_service} Resource.
 func NewActiveDirectoryDomainService_Override(a ActiveDirectoryDomainService, scope constructs.Construct, id *string, config *ActiveDirectoryDomainServiceConfig) {
 	_init_.Initialize()
 

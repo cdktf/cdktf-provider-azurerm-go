@@ -98,6 +98,14 @@ func (c *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateResolveParam
 	return nil
 }
 
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetCapacityParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -163,9 +171,25 @@ func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetComplexOb
 	return nil
 }
 
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetFamilyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetInternalValueParameters(val *CognitiveDeploymentScale) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetSizeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -180,6 +204,14 @@ func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetTerraform
 }
 
 func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetTierParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -56,6 +56,14 @@ func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) validateSetExternalIngressGatewayEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) validateSetInternalIngressGatewayEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) validateSetInternalValueParameters(val *KubernetesClusterServiceMeshProfile) error {
 	return nil
 }

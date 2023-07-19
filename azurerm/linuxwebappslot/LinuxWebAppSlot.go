@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot}.
 type LinuxWebAppSlot interface {
 	cdktf.TerraformResource
 	AppMetadata() cdktf.StringMap
@@ -104,6 +104,9 @@ type LinuxWebAppSlot interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicNetworkAccessEnabled() interface{}
+	SetPublicNetworkAccessEnabled(val interface{})
+	PublicNetworkAccessEnabledInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	ServicePlanId() *string
@@ -183,6 +186,7 @@ type LinuxWebAppSlot interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublicNetworkAccessEnabled()
 	ResetServicePlanId()
 	ResetStorageAccount()
 	ResetTags()
@@ -754,6 +758,26 @@ func (j *jsiiProxy_LinuxWebAppSlot) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LinuxWebAppSlot) PublicNetworkAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxWebAppSlot) PublicNetworkAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LinuxWebAppSlot) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -945,7 +969,7 @@ func (j *jsiiProxy_LinuxWebAppSlot) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot} Resource.
 func NewLinuxWebAppSlot(scope constructs.Construct, id *string, config *LinuxWebAppSlotConfig) LinuxWebAppSlot {
 	_init_.Initialize()
 
@@ -963,7 +987,7 @@ func NewLinuxWebAppSlot(scope constructs.Construct, id *string, config *LinuxWeb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot} Resource.
 func NewLinuxWebAppSlot_Override(l LinuxWebAppSlot, scope constructs.Construct, id *string, config *LinuxWebAppSlotConfig) {
 	_init_.Initialize()
 
@@ -1159,6 +1183,17 @@ func (j *jsiiProxy_LinuxWebAppSlot)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxWebAppSlot)SetPublicNetworkAccessEnabled(val interface{}) {
+	if err := j.validateSetPublicNetworkAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccessEnabled",
 		val,
 	)
 }
@@ -1696,6 +1731,14 @@ func (l *jsiiProxy_LinuxWebAppSlot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxWebAppSlot) ResetPublicNetworkAccessEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPublicNetworkAccessEnabled",
 		nil, // no parameters
 	)
 }

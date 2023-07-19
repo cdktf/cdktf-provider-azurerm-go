@@ -164,6 +164,10 @@ func (j *jsiiProxy_LinuxWebApp) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_LinuxWebApp) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxWebApp) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }

@@ -113,6 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "refreshTime", GoGetter: "RefreshTime"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshTimeInput", GoGetter: "RefreshTimeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExpireTime", GoMethod: "ResetExpireTime"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHostName", GoMethod: "ResetHostName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMinimumTtl", GoMethod: "ResetMinimumTtl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRefreshTime", GoMethod: "ResetRefreshTime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRetryTime", GoMethod: "ResetRetryTime"},

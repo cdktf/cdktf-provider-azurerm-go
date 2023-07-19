@@ -2,7 +2,7 @@ package dataazurermsentinelalertruletemplate
 
 
 type DataAzurermSentinelAlertRuleTemplateTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/sentinel_alert_rule_template#read DataAzurermSentinelAlertRuleTemplate#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/sentinel_alert_rule_template#read DataAzurermSentinelAlertRuleTemplate#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

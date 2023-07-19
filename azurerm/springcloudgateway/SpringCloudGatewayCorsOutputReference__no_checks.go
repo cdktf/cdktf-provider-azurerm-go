@@ -56,6 +56,10 @@ func (j *jsiiProxy_SpringCloudGatewayCorsOutputReference) validateSetAllowedMeth
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudGatewayCorsOutputReference) validateSetAllowedOriginPatternsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudGatewayCorsOutputReference) validateSetAllowedOriginsParameters(val *[]*string) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/monitor_alert_processing_rule_action_group azurerm_monitor_alert_processing_rule_action_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/monitor_alert_processing_rule_action_group azurerm_monitor_alert_processing_rule_action_group}.
 type MonitorAlertProcessingRuleActionGroup interface {
 	cdktf.TerraformResource
 	AddActionGroupIds() *[]*string
@@ -522,7 +522,7 @@ func (j *jsiiProxy_MonitorAlertProcessingRuleActionGroup) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/monitor_alert_processing_rule_action_group azurerm_monitor_alert_processing_rule_action_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/monitor_alert_processing_rule_action_group azurerm_monitor_alert_processing_rule_action_group} Resource.
 func NewMonitorAlertProcessingRuleActionGroup(scope constructs.Construct, id *string, config *MonitorAlertProcessingRuleActionGroupConfig) MonitorAlertProcessingRuleActionGroup {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewMonitorAlertProcessingRuleActionGroup(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/monitor_alert_processing_rule_action_group azurerm_monitor_alert_processing_rule_action_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/monitor_alert_processing_rule_action_group azurerm_monitor_alert_processing_rule_action_group} Resource.
 func NewMonitorAlertProcessingRuleActionGroup_Override(m MonitorAlertProcessingRuleActionGroup, scope constructs.Construct, id *string, config *MonitorAlertProcessingRuleActionGroupConfig) {
 	_init_.Initialize()
 

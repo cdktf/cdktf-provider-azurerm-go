@@ -10,6 +10,9 @@ import (
 
 type CognitiveDeploymentScaleOutputReference interface {
 	cdktf.ComplexObject
+	Capacity() *float64
+	SetCapacity(val *float64)
+	CapacityInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -25,10 +28,16 @@ type CognitiveDeploymentScaleOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Family() *string
+	SetFamily(val *string)
+	FamilyInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *CognitiveDeploymentScale
 	SetInternalValue(val *CognitiveDeploymentScale)
+	Size() *string
+	SetSize(val *string)
+	SizeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -37,6 +46,9 @@ type CognitiveDeploymentScaleOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Tier() *string
+	SetTier(val *string)
+	TierInput() *string
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -64,6 +76,10 @@ type CognitiveDeploymentScaleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCapacity()
+	ResetFamily()
+	ResetSize()
+	ResetTier()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -77,6 +93,26 @@ type CognitiveDeploymentScaleOutputReference interface {
 // The jsii proxy struct for CognitiveDeploymentScaleOutputReference
 type jsiiProxy_CognitiveDeploymentScaleOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) Capacity() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"capacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) CapacityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"capacityInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) ComplexObjectIndex() interface{} {
@@ -109,6 +145,26 @@ func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) CreationStack() *[]*
 	return returns
 }
 
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) Family() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"family",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) FamilyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"familyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -129,6 +185,26 @@ func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) InternalValue() *Cog
 	return returns
 }
 
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) Size() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"size",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) SizeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -144,6 +220,26 @@ func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) TerraformResource() 
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) Tier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) TierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tierInput",
 		&returns,
 	)
 	return returns
@@ -197,6 +293,17 @@ func NewCognitiveDeploymentScaleOutputReference_Override(c CognitiveDeploymentSc
 	)
 }
 
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference)SetCapacity(val *float64) {
+	if err := j.validateSetCapacityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"capacity",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -219,6 +326,17 @@ func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference)SetComplexObjectIsFro
 	)
 }
 
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference)SetFamily(val *string) {
+	if err := j.validateSetFamilyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"family",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference)SetInternalValue(val *CognitiveDeploymentScale) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -226,6 +344,17 @@ func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference)SetInternalValue(val 
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference)SetSize(val *string) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"size",
 		val,
 	)
 }
@@ -248,6 +377,17 @@ func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference)SetTerraformResource(
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference)SetTier(val *string) {
+	if err := j.validateSetTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tier",
 		val,
 	)
 }
@@ -447,6 +587,38 @@ func (c *jsiiProxy_CognitiveDeploymentScaleOutputReference) InterpolationForAttr
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CognitiveDeploymentScaleOutputReference) ResetCapacity() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCapacity",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitiveDeploymentScaleOutputReference) ResetFamily() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFamily",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitiveDeploymentScaleOutputReference) ResetSize() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSize",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitiveDeploymentScaleOutputReference) ResetTier() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTier",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CognitiveDeploymentScaleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

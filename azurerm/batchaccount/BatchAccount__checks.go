@@ -164,6 +164,17 @@ func (b *jsiiProxy_BatchAccount) validatePutKeyVaultReferenceParameters(value *B
 	return nil
 }
 
+func (b *jsiiProxy_BatchAccount) validatePutNetworkProfileParameters(value *BatchAccountNetworkProfile) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (b *jsiiProxy_BatchAccount) validatePutTimeoutsParameters(value *BatchAccountTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

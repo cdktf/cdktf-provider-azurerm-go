@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/linux_web_app azurerm_linux_web_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/linux_web_app azurerm_linux_web_app}.
 type DataAzurermLinuxWebApp interface {
 	cdktf.TerraformDataSource
 	AppMetadata() cdktf.StringMap
@@ -73,6 +73,7 @@ type DataAzurermLinuxWebApp interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	PublicNetworkAccessEnabled() cdktf.IResolvable
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -530,6 +531,16 @@ func (j *jsiiProxy_DataAzurermLinuxWebApp) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermLinuxWebApp) PublicNetworkAccessEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermLinuxWebApp) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -691,7 +702,7 @@ func (j *jsiiProxy_DataAzurermLinuxWebApp) VirtualNetworkSubnetId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/linux_web_app azurerm_linux_web_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/linux_web_app azurerm_linux_web_app} Data Source.
 func NewDataAzurermLinuxWebApp(scope constructs.Construct, id *string, config *DataAzurermLinuxWebAppConfig) DataAzurermLinuxWebApp {
 	_init_.Initialize()
 
@@ -709,7 +720,7 @@ func NewDataAzurermLinuxWebApp(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/linux_web_app azurerm_linux_web_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/linux_web_app azurerm_linux_web_app} Data Source.
 func NewDataAzurermLinuxWebApp_Override(d DataAzurermLinuxWebApp, scope constructs.Construct, id *string, config *DataAzurermLinuxWebAppConfig) {
 	_init_.Initialize()
 

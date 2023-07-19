@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/postgresql_flexible_server_firewall_rule azurerm_postgresql_flexible_server_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/postgresql_flexible_server_firewall_rule azurerm_postgresql_flexible_server_firewall_rule}.
 type PostgresqlFlexibleServerFirewallRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_PostgresqlFlexibleServerFirewallRule) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/postgresql_flexible_server_firewall_rule azurerm_postgresql_flexible_server_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/postgresql_flexible_server_firewall_rule azurerm_postgresql_flexible_server_firewall_rule} Resource.
 func NewPostgresqlFlexibleServerFirewallRule(scope constructs.Construct, id *string, config *PostgresqlFlexibleServerFirewallRuleConfig) PostgresqlFlexibleServerFirewallRule {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewPostgresqlFlexibleServerFirewallRule(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/postgresql_flexible_server_firewall_rule azurerm_postgresql_flexible_server_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/postgresql_flexible_server_firewall_rule azurerm_postgresql_flexible_server_firewall_rule} Resource.
 func NewPostgresqlFlexibleServerFirewallRule_Override(p PostgresqlFlexibleServerFirewallRule, scope constructs.Construct, id *string, config *PostgresqlFlexibleServerFirewallRuleConfig) {
 	_init_.Initialize()
 

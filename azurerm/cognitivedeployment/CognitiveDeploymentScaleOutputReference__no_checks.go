@@ -48,6 +48,10 @@ func (c *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateResolveParam
 	return nil
 }
 
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetCapacityParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -56,7 +60,15 @@ func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetComplexOb
 	return nil
 }
 
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetFamilyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetInternalValueParameters(val *CognitiveDeploymentScale) error {
+	return nil
+}
+
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetSizeParameters(val *string) error {
 	return nil
 }
 
@@ -65,6 +77,10 @@ func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetTerraform
 }
 
 func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_CognitiveDeploymentScaleOutputReference) validateSetTierParameters(val *string) error {
 	return nil
 }
 

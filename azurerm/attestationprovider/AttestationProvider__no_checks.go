@@ -112,6 +112,10 @@ func (j *jsiiProxy_AttestationProvider) validateSetResourceGroupNameParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_AttestationProvider) validateSetSevSnpPolicyBase64Parameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AttestationProvider) validateSetSgxEnclavePolicyBase64Parameters(val *string) error {
 	return nil
 }

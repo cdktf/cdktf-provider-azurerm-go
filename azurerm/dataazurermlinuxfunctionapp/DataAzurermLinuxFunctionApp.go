@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/linux_function_app azurerm_linux_function_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/linux_function_app azurerm_linux_function_app}.
 type DataAzurermLinuxFunctionApp interface {
 	cdktf.TerraformDataSource
 	AppSettings() cdktf.StringMap
@@ -73,6 +73,7 @@ type DataAzurermLinuxFunctionApp interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	PublicNetworkAccessEnabled() cdktf.IResolvable
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -533,6 +534,16 @@ func (j *jsiiProxy_DataAzurermLinuxFunctionApp) Provider() cdktf.TerraformProvid
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermLinuxFunctionApp) PublicNetworkAccessEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermLinuxFunctionApp) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -724,7 +735,7 @@ func (j *jsiiProxy_DataAzurermLinuxFunctionApp) VirtualNetworkSubnetId() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/linux_function_app azurerm_linux_function_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/linux_function_app azurerm_linux_function_app} Data Source.
 func NewDataAzurermLinuxFunctionApp(scope constructs.Construct, id *string, config *DataAzurermLinuxFunctionAppConfig) DataAzurermLinuxFunctionApp {
 	_init_.Initialize()
 
@@ -742,7 +753,7 @@ func NewDataAzurermLinuxFunctionApp(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/linux_function_app azurerm_linux_function_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/linux_function_app azurerm_linux_function_app} Data Source.
 func NewDataAzurermLinuxFunctionApp_Override(d DataAzurermLinuxFunctionApp, scope constructs.Construct, id *string, config *DataAzurermLinuxFunctionAppConfig) {
 	_init_.Initialize()
 

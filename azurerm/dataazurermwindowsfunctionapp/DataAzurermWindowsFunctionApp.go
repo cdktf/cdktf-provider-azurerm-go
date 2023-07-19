@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/windows_function_app azurerm_windows_function_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/windows_function_app azurerm_windows_function_app}.
 type DataAzurermWindowsFunctionApp interface {
 	cdktf.TerraformDataSource
 	AppSettings() cdktf.StringMap
@@ -72,6 +72,7 @@ type DataAzurermWindowsFunctionApp interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	PublicNetworkAccessEnabled() cdktf.IResolvable
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -521,6 +522,16 @@ func (j *jsiiProxy_DataAzurermWindowsFunctionApp) Provider() cdktf.TerraformProv
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermWindowsFunctionApp) PublicNetworkAccessEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermWindowsFunctionApp) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -702,7 +713,7 @@ func (j *jsiiProxy_DataAzurermWindowsFunctionApp) VirtualNetworkSubnetId() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/windows_function_app azurerm_windows_function_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/windows_function_app azurerm_windows_function_app} Data Source.
 func NewDataAzurermWindowsFunctionApp(scope constructs.Construct, id *string, config *DataAzurermWindowsFunctionAppConfig) DataAzurermWindowsFunctionApp {
 	_init_.Initialize()
 
@@ -720,7 +731,7 @@ func NewDataAzurermWindowsFunctionApp(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/windows_function_app azurerm_windows_function_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/windows_function_app azurerm_windows_function_app} Data Source.
 func NewDataAzurermWindowsFunctionApp_Override(d DataAzurermWindowsFunctionApp, scope constructs.Construct, id *string, config *DataAzurermWindowsFunctionAppConfig) {
 	_init_.Initialize()
 

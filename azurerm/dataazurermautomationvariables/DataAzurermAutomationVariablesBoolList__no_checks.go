@@ -1,0 +1,30 @@
+//go:build no_runtime_type_checking
+
+package dataazurermautomationvariables
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataAzurermAutomationVariablesBoolList) validateGetParameters(index *float64) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAzurermAutomationVariablesBoolList) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAzurermAutomationVariablesBoolList) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAzurermAutomationVariablesBoolList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAzurermAutomationVariablesBoolList) validateSetWrapsSetParameters(val *bool) error {
+	return nil
+}
+
+func validateNewDataAzurermAutomationVariablesBoolListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+	return nil
+}
+

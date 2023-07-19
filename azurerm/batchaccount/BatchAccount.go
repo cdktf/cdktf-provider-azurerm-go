@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/batch_account azurerm_batch_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/batch_account azurerm_batch_account}.
 type BatchAccount interface {
 	cdktf.TerraformResource
 	AccountEndpoint() *string
@@ -59,6 +59,8 @@ type BatchAccount interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkProfile() BatchAccountNetworkProfileOutputReference
+	NetworkProfileInput() *BatchAccountNetworkProfile
 	// The tree node.
 	Node() constructs.Node
 	PoolAllocationMode() *string
@@ -130,12 +132,14 @@ type BatchAccount interface {
 	PutEncryption(value interface{})
 	PutIdentity(value *BatchAccountIdentity)
 	PutKeyVaultReference(value *BatchAccountKeyVaultReference)
+	PutNetworkProfile(value *BatchAccountNetworkProfile)
 	PutTimeouts(value *BatchAccountTimeouts)
 	ResetAllowedAuthenticationModes()
 	ResetEncryption()
 	ResetId()
 	ResetIdentity()
 	ResetKeyVaultReference()
+	ResetNetworkProfile()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -401,6 +405,26 @@ func (j *jsiiProxy_BatchAccount) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BatchAccount) NetworkProfile() BatchAccountNetworkProfileOutputReference {
+	var returns BatchAccountNetworkProfileOutputReference
+	_jsii_.Get(
+		j,
+		"networkProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchAccount) NetworkProfileInput() *BatchAccountNetworkProfile {
+	var returns *BatchAccountNetworkProfile
+	_jsii_.Get(
+		j,
+		"networkProfileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BatchAccount) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -652,7 +676,7 @@ func (j *jsiiProxy_BatchAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/batch_account azurerm_batch_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/batch_account azurerm_batch_account} Resource.
 func NewBatchAccount(scope constructs.Construct, id *string, config *BatchAccountConfig) BatchAccount {
 	_init_.Initialize()
 
@@ -670,7 +694,7 @@ func NewBatchAccount(scope constructs.Construct, id *string, config *BatchAccoun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/batch_account azurerm_batch_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/batch_account azurerm_batch_account} Resource.
 func NewBatchAccount_Override(b BatchAccount, scope constructs.Construct, id *string, config *BatchAccountConfig) {
 	_init_.Initialize()
 
@@ -1169,6 +1193,17 @@ func (b *jsiiProxy_BatchAccount) PutKeyVaultReference(value *BatchAccountKeyVaul
 	)
 }
 
+func (b *jsiiProxy_BatchAccount) PutNetworkProfile(value *BatchAccountNetworkProfile) {
+	if err := b.validatePutNetworkProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putNetworkProfile",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BatchAccount) PutTimeouts(value *BatchAccountTimeouts) {
 	if err := b.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1216,6 +1251,14 @@ func (b *jsiiProxy_BatchAccount) ResetKeyVaultReference() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetKeyVaultReference",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchAccount) ResetNetworkProfile() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetNetworkProfile",
 		nil, // no parameters
 	)
 }

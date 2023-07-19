@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service}.
 type SpringCloudConfigurationService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_SpringCloudConfigurationService) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service} Resource.
 func NewSpringCloudConfigurationService(scope constructs.Construct, id *string, config *SpringCloudConfigurationServiceConfig) SpringCloudConfigurationService {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewSpringCloudConfigurationService(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service} Resource.
 func NewSpringCloudConfigurationService_Override(s SpringCloudConfigurationService, scope constructs.Construct, id *string, config *SpringCloudConfigurationServiceConfig) {
 	_init_.Initialize()
 

@@ -16,6 +16,9 @@ type SpringCloudGatewayCorsOutputReference interface {
 	AllowedMethods() *[]*string
 	SetAllowedMethods(val *[]*string)
 	AllowedMethodsInput() *[]*string
+	AllowedOriginPatterns() *[]*string
+	SetAllowedOriginPatterns(val *[]*string)
+	AllowedOriginPatternsInput() *[]*string
 	AllowedOrigins() *[]*string
 	SetAllowedOrigins(val *[]*string)
 	AllowedOriginsInput() *[]*string
@@ -81,6 +84,7 @@ type SpringCloudGatewayCorsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAllowedHeaders()
 	ResetAllowedMethods()
+	ResetAllowedOriginPatterns()
 	ResetAllowedOrigins()
 	ResetCredentialsAllowed()
 	ResetExposedHeaders()
@@ -135,6 +139,26 @@ func (j *jsiiProxy_SpringCloudGatewayCorsOutputReference) AllowedMethodsInput() 
 	_jsii_.Get(
 		j,
 		"allowedMethodsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGatewayCorsOutputReference) AllowedOriginPatterns() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedOriginPatterns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGatewayCorsOutputReference) AllowedOriginPatternsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedOriginPatternsInput",
 		&returns,
 	)
 	return returns
@@ -336,6 +360,17 @@ func (j *jsiiProxy_SpringCloudGatewayCorsOutputReference)SetAllowedMethods(val *
 	_jsii_.Set(
 		j,
 		"allowedMethods",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpringCloudGatewayCorsOutputReference)SetAllowedOriginPatterns(val *[]*string) {
+	if err := j.validateSetAllowedOriginPatternsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedOriginPatterns",
 		val,
 	)
 }
@@ -637,6 +672,14 @@ func (s *jsiiProxy_SpringCloudGatewayCorsOutputReference) ResetAllowedMethods() 
 	_jsii_.InvokeVoid(
 		s,
 		"resetAllowedMethods",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudGatewayCorsOutputReference) ResetAllowedOriginPatterns() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAllowedOriginPatterns",
 		nil, // no parameters
 	)
 }

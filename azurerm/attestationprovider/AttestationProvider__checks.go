@@ -369,6 +369,14 @@ func (j *jsiiProxy_AttestationProvider) validateSetResourceGroupNameParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_AttestationProvider) validateSetSevSnpPolicyBase64Parameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AttestationProvider) validateSetSgxEnclavePolicyBase64Parameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

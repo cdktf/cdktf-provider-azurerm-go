@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/kubernetes_node_pool_snapshot azurerm_kubernetes_node_pool_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/kubernetes_node_pool_snapshot azurerm_kubernetes_node_pool_snapshot}.
 type DataAzurermKubernetesNodePoolSnapshot interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -350,7 +350,7 @@ func (j *jsiiProxy_DataAzurermKubernetesNodePoolSnapshot) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/kubernetes_node_pool_snapshot azurerm_kubernetes_node_pool_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/kubernetes_node_pool_snapshot azurerm_kubernetes_node_pool_snapshot} Data Source.
 func NewDataAzurermKubernetesNodePoolSnapshot(scope constructs.Construct, id *string, config *DataAzurermKubernetesNodePoolSnapshotConfig) DataAzurermKubernetesNodePoolSnapshot {
 	_init_.Initialize()
 
@@ -368,7 +368,7 @@ func NewDataAzurermKubernetesNodePoolSnapshot(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/kubernetes_node_pool_snapshot azurerm_kubernetes_node_pool_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/kubernetes_node_pool_snapshot azurerm_kubernetes_node_pool_snapshot} Data Source.
 func NewDataAzurermKubernetesNodePoolSnapshot_Override(d DataAzurermKubernetesNodePoolSnapshot, scope constructs.Construct, id *string, config *DataAzurermKubernetesNodePoolSnapshotConfig) {
 	_init_.Initialize()
 

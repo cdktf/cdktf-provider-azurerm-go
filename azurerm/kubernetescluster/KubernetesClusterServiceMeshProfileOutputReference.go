@@ -25,8 +25,14 @@ type KubernetesClusterServiceMeshProfileOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExternalIngressGatewayEnabled() interface{}
+	SetExternalIngressGatewayEnabled(val interface{})
+	ExternalIngressGatewayEnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
+	InternalIngressGatewayEnabled() interface{}
+	SetInternalIngressGatewayEnabled(val interface{})
+	InternalIngressGatewayEnabledInput() interface{}
 	InternalValue() *KubernetesClusterServiceMeshProfile
 	SetInternalValue(val *KubernetesClusterServiceMeshProfile)
 	Mode() *string
@@ -64,6 +70,8 @@ type KubernetesClusterServiceMeshProfileOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetExternalIngressGatewayEnabled()
+	ResetInternalIngressGatewayEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -109,11 +117,51 @@ func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) CreationS
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) ExternalIngressGatewayEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalIngressGatewayEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) ExternalIngressGatewayEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalIngressGatewayEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) InternalIngressGatewayEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalIngressGatewayEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) InternalIngressGatewayEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalIngressGatewayEnabledInput",
 		&returns,
 	)
 	return returns
@@ -215,6 +263,28 @@ func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference)SetComplex
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference)SetExternalIngressGatewayEnabled(val interface{}) {
+	if err := j.validateSetExternalIngressGatewayEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalIngressGatewayEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference)SetInternalIngressGatewayEnabled(val interface{}) {
+	if err := j.validateSetInternalIngressGatewayEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"internalIngressGatewayEnabled",
 		val,
 	)
 }
@@ -447,6 +517,22 @@ func (k *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (k *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) ResetExternalIngressGatewayEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetExternalIngressGatewayEnabled",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) ResetInternalIngressGatewayEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetInternalIngressGatewayEnabled",
+		nil, // no parameters
+	)
 }
 
 func (k *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

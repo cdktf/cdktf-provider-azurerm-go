@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config}.
 type EventhubNamespaceDisasterRecoveryConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config} Resource.
 func NewEventhubNamespaceDisasterRecoveryConfig(scope constructs.Construct, id *string, config *EventhubNamespaceDisasterRecoveryConfigConfig) EventhubNamespaceDisasterRecoveryConfig {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewEventhubNamespaceDisasterRecoveryConfig(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config} Resource.
 func NewEventhubNamespaceDisasterRecoveryConfig_Override(e EventhubNamespaceDisasterRecoveryConfig, scope constructs.Construct, id *string, config *EventhubNamespaceDisasterRecoveryConfigConfig) {
 	_init_.Initialize()
 

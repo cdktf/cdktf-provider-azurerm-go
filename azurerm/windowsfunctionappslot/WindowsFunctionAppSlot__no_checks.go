@@ -168,6 +168,10 @@ func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetServicePlanIdParameters(val *string) error {
 	return nil
 }

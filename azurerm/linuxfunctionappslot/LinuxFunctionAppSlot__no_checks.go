@@ -168,6 +168,10 @@ func (j *jsiiProxy_LinuxFunctionAppSlot) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_LinuxFunctionAppSlot) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxFunctionAppSlot) validateSetServicePlanIdParameters(val *string) error {
 	return nil
 }

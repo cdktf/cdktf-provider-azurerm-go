@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/dedicated_host_group azurerm_dedicated_host_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/dedicated_host_group azurerm_dedicated_host_group}.
 type DataAzurermDedicatedHostGroup interface {
 	cdktf.TerraformDataSource
 	AutomaticPlacementEnabled() cdktf.IResolvable
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataAzurermDedicatedHostGroup) Zones() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/dedicated_host_group azurerm_dedicated_host_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/dedicated_host_group azurerm_dedicated_host_group} Data Source.
 func NewDataAzurermDedicatedHostGroup(scope constructs.Construct, id *string, config *DataAzurermDedicatedHostGroupConfig) DataAzurermDedicatedHostGroup {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataAzurermDedicatedHostGroup(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/data-sources/dedicated_host_group azurerm_dedicated_host_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/dedicated_host_group azurerm_dedicated_host_group} Data Source.
 func NewDataAzurermDedicatedHostGroup_Override(d DataAzurermDedicatedHostGroup, scope constructs.Construct, id *string, config *DataAzurermDedicatedHostGroupConfig) {
 	_init_.Initialize()
 

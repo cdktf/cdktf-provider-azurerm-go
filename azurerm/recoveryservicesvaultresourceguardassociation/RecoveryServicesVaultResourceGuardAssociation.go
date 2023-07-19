@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association}.
 type RecoveryServicesVaultResourceGuardAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation) VaultIdInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association} Resource.
 func NewRecoveryServicesVaultResourceGuardAssociation(scope constructs.Construct, id *string, config *RecoveryServicesVaultResourceGuardAssociationConfig) RecoveryServicesVaultResourceGuardAssociation {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewRecoveryServicesVaultResourceGuardAssociation(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association} Resource.
 func NewRecoveryServicesVaultResourceGuardAssociation_Override(r RecoveryServicesVaultResourceGuardAssociation, scope constructs.Construct, id *string, config *RecoveryServicesVaultResourceGuardAssociationConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/synapse_sql_pool_extended_auditing_policy azurerm_synapse_sql_pool_extended_auditing_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/synapse_sql_pool_extended_auditing_policy azurerm_synapse_sql_pool_extended_auditing_policy}.
 type SynapseSqlPoolExtendedAuditingPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -453,7 +453,7 @@ func (j *jsiiProxy_SynapseSqlPoolExtendedAuditingPolicy) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/synapse_sql_pool_extended_auditing_policy azurerm_synapse_sql_pool_extended_auditing_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/synapse_sql_pool_extended_auditing_policy azurerm_synapse_sql_pool_extended_auditing_policy} Resource.
 func NewSynapseSqlPoolExtendedAuditingPolicy(scope constructs.Construct, id *string, config *SynapseSqlPoolExtendedAuditingPolicyConfig) SynapseSqlPoolExtendedAuditingPolicy {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewSynapseSqlPoolExtendedAuditingPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/synapse_sql_pool_extended_auditing_policy azurerm_synapse_sql_pool_extended_auditing_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/synapse_sql_pool_extended_auditing_policy azurerm_synapse_sql_pool_extended_auditing_policy} Resource.
 func NewSynapseSqlPoolExtendedAuditingPolicy_Override(s SynapseSqlPoolExtendedAuditingPolicy, scope constructs.Construct, id *string, config *SynapseSqlPoolExtendedAuditingPolicyConfig) {
 	_init_.Initialize()
 

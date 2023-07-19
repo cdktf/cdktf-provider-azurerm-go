@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/attestation_provider azurerm_attestation_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/attestation_provider azurerm_attestation_provider}.
 type AttestationProvider interface {
 	cdktf.TerraformResource
 	AttestationUri() *string
@@ -73,6 +73,9 @@ type AttestationProvider interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	SevSnpPolicyBase64() *string
+	SetSevSnpPolicyBase64(val *string)
+	SevSnpPolicyBase64Input() *string
 	SgxEnclavePolicyBase64() *string
 	SetSgxEnclavePolicyBase64(val *string)
 	SgxEnclavePolicyBase64Input() *string
@@ -125,6 +128,7 @@ type AttestationProvider interface {
 	ResetOverrideLogicalId()
 	ResetPolicy()
 	ResetPolicySigningCertificateData()
+	ResetSevSnpPolicyBase64()
 	ResetSgxEnclavePolicyBase64()
 	ResetTags()
 	ResetTimeouts()
@@ -424,6 +428,26 @@ func (j *jsiiProxy_AttestationProvider) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AttestationProvider) SevSnpPolicyBase64() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sevSnpPolicyBase64",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AttestationProvider) SevSnpPolicyBase64Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sevSnpPolicyBase64Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AttestationProvider) SgxEnclavePolicyBase64() *string {
 	var returns *string
 	_jsii_.Get(
@@ -545,7 +569,7 @@ func (j *jsiiProxy_AttestationProvider) TrustModel() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/attestation_provider azurerm_attestation_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/attestation_provider azurerm_attestation_provider} Resource.
 func NewAttestationProvider(scope constructs.Construct, id *string, config *AttestationProviderConfig) AttestationProvider {
 	_init_.Initialize()
 
@@ -563,7 +587,7 @@ func NewAttestationProvider(scope constructs.Construct, id *string, config *Atte
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/attestation_provider azurerm_attestation_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/attestation_provider azurerm_attestation_provider} Resource.
 func NewAttestationProvider_Override(a AttestationProvider, scope constructs.Construct, id *string, config *AttestationProviderConfig) {
 	_init_.Initialize()
 
@@ -704,6 +728,17 @@ func (j *jsiiProxy_AttestationProvider)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AttestationProvider)SetSevSnpPolicyBase64(val *string) {
+	if err := j.validateSetSevSnpPolicyBase64Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sevSnpPolicyBase64",
 		val,
 	)
 }
@@ -1065,6 +1100,14 @@ func (a *jsiiProxy_AttestationProvider) ResetPolicySigningCertificateData() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPolicySigningCertificateData",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AttestationProvider) ResetSevSnpPolicyBase64() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSevSnpPolicyBase64",
 		nil, // no parameters
 	)
 }

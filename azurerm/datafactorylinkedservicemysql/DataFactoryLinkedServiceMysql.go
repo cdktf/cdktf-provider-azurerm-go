@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/data_factory_linked_service_mysql azurerm_data_factory_linked_service_mysql}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/data_factory_linked_service_mysql azurerm_data_factory_linked_service_mysql}.
 type DataFactoryLinkedServiceMysql interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -499,7 +499,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceMysql) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/data_factory_linked_service_mysql azurerm_data_factory_linked_service_mysql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/data_factory_linked_service_mysql azurerm_data_factory_linked_service_mysql} Resource.
 func NewDataFactoryLinkedServiceMysql(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceMysqlConfig) DataFactoryLinkedServiceMysql {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewDataFactoryLinkedServiceMysql(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/data_factory_linked_service_mysql azurerm_data_factory_linked_service_mysql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/data_factory_linked_service_mysql azurerm_data_factory_linked_service_mysql} Resource.
 func NewDataFactoryLinkedServiceMysql_Override(d DataFactoryLinkedServiceMysql, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceMysqlConfig) {
 	_init_.Initialize()
 

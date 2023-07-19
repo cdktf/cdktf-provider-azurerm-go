@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/postgresql_database azurerm_postgresql_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/postgresql_database azurerm_postgresql_database}.
 type PostgresqlDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_PostgresqlDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/postgresql_database azurerm_postgresql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/postgresql_database azurerm_postgresql_database} Resource.
 func NewPostgresqlDatabase(scope constructs.Construct, id *string, config *PostgresqlDatabaseConfig) PostgresqlDatabase {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewPostgresqlDatabase(scope constructs.Construct, id *string, config *Postg
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/postgresql_database azurerm_postgresql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/postgresql_database azurerm_postgresql_database} Resource.
 func NewPostgresqlDatabase_Override(p PostgresqlDatabase, scope constructs.Construct, id *string, config *PostgresqlDatabaseConfig) {
 	_init_.Initialize()
 

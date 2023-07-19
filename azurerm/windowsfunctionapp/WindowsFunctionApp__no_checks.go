@@ -172,6 +172,10 @@ func (j *jsiiProxy_WindowsFunctionApp) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_WindowsFunctionApp) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsFunctionApp) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }

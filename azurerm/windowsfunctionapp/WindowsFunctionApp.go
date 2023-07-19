@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/windows_function_app azurerm_windows_function_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/windows_function_app azurerm_windows_function_app}.
 type WindowsFunctionApp interface {
 	cdktf.TerraformResource
 	AppSettings() *map[string]*string
@@ -110,6 +110,9 @@ type WindowsFunctionApp interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicNetworkAccessEnabled() interface{}
+	SetPublicNetworkAccessEnabled(val interface{})
+	PublicNetworkAccessEnabledInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -208,6 +211,7 @@ type WindowsFunctionApp interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublicNetworkAccessEnabled()
 	ResetStickySettings()
 	ResetStorageAccount()
 	ResetStorageAccountAccessKey()
@@ -813,6 +817,26 @@ func (j *jsiiProxy_WindowsFunctionApp) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WindowsFunctionApp) PublicNetworkAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsFunctionApp) PublicNetworkAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsFunctionApp) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1124,7 +1148,7 @@ func (j *jsiiProxy_WindowsFunctionApp) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/windows_function_app azurerm_windows_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/windows_function_app azurerm_windows_function_app} Resource.
 func NewWindowsFunctionApp(scope constructs.Construct, id *string, config *WindowsFunctionAppConfig) WindowsFunctionApp {
 	_init_.Initialize()
 
@@ -1142,7 +1166,7 @@ func NewWindowsFunctionApp(scope constructs.Construct, id *string, config *Windo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.63.0/docs/resources/windows_function_app azurerm_windows_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/windows_function_app azurerm_windows_function_app} Resource.
 func NewWindowsFunctionApp_Override(w WindowsFunctionApp, scope constructs.Construct, id *string, config *WindowsFunctionAppConfig) {
 	_init_.Initialize()
 
@@ -1371,6 +1395,17 @@ func (j *jsiiProxy_WindowsFunctionApp)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsFunctionApp)SetPublicNetworkAccessEnabled(val interface{}) {
+	if err := j.validateSetPublicNetworkAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccessEnabled",
 		val,
 	)
 }
@@ -1979,6 +2014,14 @@ func (w *jsiiProxy_WindowsFunctionApp) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsFunctionApp) ResetPublicNetworkAccessEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetPublicNetworkAccessEnabled",
 		nil, // no parameters
 	)
 }
