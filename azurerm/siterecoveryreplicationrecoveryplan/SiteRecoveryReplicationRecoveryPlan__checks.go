@@ -122,6 +122,48 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutAzureToAzureS
 	return nil
 }
 
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutBootRecoveryGroupParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup:
+		value := value.(*[]*SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup:
+		value_ := value.([]*SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutFailoverRecoveryGroupParameters(value *SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroup) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutRecoveryGroupParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -148,6 +190,17 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutRecoveryGroup
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SiteRecoveryReplicationRecoveryPlanRecoveryGroup; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutShutdownRecoveryGroupParameters(value *SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroup) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

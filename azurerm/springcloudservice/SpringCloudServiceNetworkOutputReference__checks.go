@@ -195,6 +195,14 @@ func (j *jsiiProxy_SpringCloudServiceNetworkOutputReference) validateSetInternal
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudServiceNetworkOutputReference) validateSetOutboundTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudServiceNetworkOutputReference) validateSetReadTimeoutSecondsParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

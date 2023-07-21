@@ -1,0 +1,6 @@
+package dataazurermmobilenetworkattacheddatanetwork
+
+
+type DataAzurermMobileNetworkAttachedDataNetworkNetworkAddressPortTranslationPortRange struct {
+}
+

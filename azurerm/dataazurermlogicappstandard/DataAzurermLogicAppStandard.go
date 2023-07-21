@@ -9,11 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard}.
 type DataAzurermLogicAppStandard interface {
 	cdktf.TerraformDataSource
 	AppServicePlanId() *string
 	AppSettings() cdktf.StringMap
+	AutoSwapSlotName() *string
 	BundleVersion() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -152,6 +153,16 @@ func (j *jsiiProxy_DataAzurermLogicAppStandard) AppSettings() cdktf.StringMap {
 	_jsii_.Get(
 		j,
 		"appSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandard) AutoSwapSlotName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoSwapSlotName",
 		&returns,
 	)
 	return returns
@@ -618,7 +629,7 @@ func (j *jsiiProxy_DataAzurermLogicAppStandard) VirtualNetworkSubnetId() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard} Data Source.
 func NewDataAzurermLogicAppStandard(scope constructs.Construct, id *string, config *DataAzurermLogicAppStandardConfig) DataAzurermLogicAppStandard {
 	_init_.Initialize()
 
@@ -636,7 +647,7 @@ func NewDataAzurermLogicAppStandard(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard} Data Source.
 func NewDataAzurermLogicAppStandard_Override(d DataAzurermLogicAppStandard, scope constructs.Construct, id *string, config *DataAzurermLogicAppStandardConfig) {
 	_init_.Initialize()
 

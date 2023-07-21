@@ -38,6 +38,9 @@ type SpringCloudServiceNetworkOutputReference interface {
 	Fqn() *string
 	InternalValue() *SpringCloudServiceNetwork
 	SetInternalValue(val *SpringCloudServiceNetwork)
+	OutboundType() *string
+	SetOutboundType(val *string)
+	OutboundTypeInput() *string
 	ReadTimeoutSeconds() *float64
 	SetReadTimeoutSeconds(val *float64)
 	ReadTimeoutSecondsInput() *float64
@@ -80,6 +83,7 @@ type SpringCloudServiceNetworkOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAppNetworkResourceGroup()
+	ResetOutboundType()
 	ResetReadTimeoutSeconds()
 	ResetServiceRuntimeNetworkResourceGroup()
 	// Produce the Token's value at resolution time.
@@ -202,6 +206,26 @@ func (j *jsiiProxy_SpringCloudServiceNetworkOutputReference) InternalValue() *Sp
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudServiceNetworkOutputReference) OutboundType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outboundType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudServiceNetworkOutputReference) OutboundTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outboundTypeInput",
 		&returns,
 	)
 	return returns
@@ -377,6 +401,17 @@ func (j *jsiiProxy_SpringCloudServiceNetworkOutputReference)SetInternalValue(val
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpringCloudServiceNetworkOutputReference)SetOutboundType(val *string) {
+	if err := j.validateSetOutboundTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"outboundType",
 		val,
 	)
 }
@@ -626,6 +661,14 @@ func (s *jsiiProxy_SpringCloudServiceNetworkOutputReference) ResetAppNetworkReso
 	_jsii_.InvokeVoid(
 		s,
 		"resetAppNetworkResourceGroup",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudServiceNetworkOutputReference) ResetOutboundType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOutboundType",
 		nil, // no parameters
 	)
 }

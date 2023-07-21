@@ -9,11 +9,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan}.
 type SiteRecoveryReplicationRecoveryPlan interface {
 	cdktf.TerraformResource
 	AzureToAzureSettings() SiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsOutputReference
 	AzureToAzureSettingsInput() *SiteRecoveryReplicationRecoveryPlanAzureToAzureSettings
+	BootRecoveryGroup() SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupList
+	BootRecoveryGroupInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -30,6 +32,8 @@ type SiteRecoveryReplicationRecoveryPlan interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	FailoverRecoveryGroup() SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupOutputReference
+	FailoverRecoveryGroupInput() *SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroup
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -65,6 +69,8 @@ type SiteRecoveryReplicationRecoveryPlan interface {
 	RecoveryVaultId() *string
 	SetRecoveryVaultId(val *string)
 	RecoveryVaultIdInput() *string
+	ShutdownRecoveryGroup() SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupOutputReference
+	ShutdownRecoveryGroupInput() *SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroup
 	SourceRecoveryFabricId() *string
 	SetSourceRecoveryFabricId(val *string)
 	SourceRecoveryFabricIdInput() *string
@@ -105,14 +111,20 @@ type SiteRecoveryReplicationRecoveryPlan interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAzureToAzureSettings(value *SiteRecoveryReplicationRecoveryPlanAzureToAzureSettings)
+	PutBootRecoveryGroup(value interface{})
+	PutFailoverRecoveryGroup(value *SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroup)
 	PutRecoveryGroup(value interface{})
+	PutShutdownRecoveryGroup(value *SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroup)
 	PutTimeouts(value *SiteRecoveryReplicationRecoveryPlanTimeouts)
 	ResetAzureToAzureSettings()
+	ResetBootRecoveryGroup()
+	ResetFailoverRecoveryGroup()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRecoveryGroup()
+	ResetShutdownRecoveryGroup()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -144,6 +156,26 @@ func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) AzureToAzureSettingsInpu
 	_jsii_.Get(
 		j,
 		"azureToAzureSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) BootRecoveryGroup() SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupList {
+	var returns SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupList
+	_jsii_.Get(
+		j,
+		"bootRecoveryGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) BootRecoveryGroupInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bootRecoveryGroupInput",
 		&returns,
 	)
 	return returns
@@ -194,6 +226,26 @@ func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) FailoverRecoveryGroup() SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupOutputReference {
+	var returns SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupOutputReference
+	_jsii_.Get(
+		j,
+		"failoverRecoveryGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) FailoverRecoveryGroupInput() *SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroup {
+	var returns *SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroup
+	_jsii_.Get(
+		j,
+		"failoverRecoveryGroupInput",
 		&returns,
 	)
 	return returns
@@ -359,6 +411,26 @@ func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) RecoveryVaultIdInput() *
 	return returns
 }
 
+func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) ShutdownRecoveryGroup() SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupOutputReference {
+	var returns SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupOutputReference
+	_jsii_.Get(
+		j,
+		"shutdownRecoveryGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) ShutdownRecoveryGroupInput() *SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroup {
+	var returns *SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroup
+	_jsii_.Get(
+		j,
+		"shutdownRecoveryGroupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) SourceRecoveryFabricId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -450,7 +522,7 @@ func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Resource.
 func NewSiteRecoveryReplicationRecoveryPlan(scope constructs.Construct, id *string, config *SiteRecoveryReplicationRecoveryPlanConfig) SiteRecoveryReplicationRecoveryPlan {
 	_init_.Initialize()
 
@@ -468,7 +540,7 @@ func NewSiteRecoveryReplicationRecoveryPlan(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Resource.
 func NewSiteRecoveryReplicationRecoveryPlan_Override(s SiteRecoveryReplicationRecoveryPlan, scope constructs.Construct, id *string, config *SiteRecoveryReplicationRecoveryPlanConfig) {
 	_init_.Initialize()
 
@@ -879,6 +951,28 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) PutAzureToAzureSettings(
 	)
 }
 
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) PutBootRecoveryGroup(value interface{}) {
+	if err := s.validatePutBootRecoveryGroupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putBootRecoveryGroup",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) PutFailoverRecoveryGroup(value *SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroup) {
+	if err := s.validatePutFailoverRecoveryGroupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putFailoverRecoveryGroup",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) PutRecoveryGroup(value interface{}) {
 	if err := s.validatePutRecoveryGroupParameters(value); err != nil {
 		panic(err)
@@ -886,6 +980,17 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) PutRecoveryGroup(value i
 	_jsii_.InvokeVoid(
 		s,
 		"putRecoveryGroup",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) PutShutdownRecoveryGroup(value *SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroup) {
+	if err := s.validatePutShutdownRecoveryGroupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putShutdownRecoveryGroup",
 		[]interface{}{value},
 	)
 }
@@ -905,6 +1010,22 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) ResetAzureToAzureSetting
 	_jsii_.InvokeVoid(
 		s,
 		"resetAzureToAzureSettings",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) ResetBootRecoveryGroup() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBootRecoveryGroup",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) ResetFailoverRecoveryGroup() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetFailoverRecoveryGroup",
 		nil, // no parameters
 	)
 }
@@ -929,6 +1050,14 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) ResetRecoveryGroup() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRecoveryGroup",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) ResetShutdownRecoveryGroup() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetShutdownRecoveryGroup",
 		nil, // no parameters
 	)
 }

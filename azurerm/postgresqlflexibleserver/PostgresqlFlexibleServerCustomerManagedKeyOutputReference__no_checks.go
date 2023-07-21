@@ -56,6 +56,14 @@ func (j *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) validateSetGeoBackupKeyVaultKeyIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) validateSetGeoBackupUserAssignedIdentityIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) validateSetInternalValueParameters(val *PostgresqlFlexibleServerCustomerManagedKey) error {
 	return nil
 }

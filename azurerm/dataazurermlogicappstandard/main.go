@@ -14,6 +14,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "appServicePlanId", GoGetter: "AppServicePlanId"},
 			_jsii_.MemberProperty{JsiiProperty: "appSettings", GoGetter: "AppSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "autoSwapSlotName", GoGetter: "AutoSwapSlotName"},
 			_jsii_.MemberProperty{JsiiProperty: "bundleVersion", GoGetter: "BundleVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "clientAffinityEnabled", GoGetter: "ClientAffinityEnabled"},

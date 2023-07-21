@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/sentinel_data_connector_microsoft_defender_advanced_threat_protection azurerm_sentinel_data_connector_microsoft_defender_advanced_threat_protection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/sentinel_data_connector_microsoft_defender_advanced_threat_protection azurerm_sentinel_data_connector_microsoft_defender_advanced_threat_protection}.
 type SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtectio
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/sentinel_data_connector_microsoft_defender_advanced_threat_protection azurerm_sentinel_data_connector_microsoft_defender_advanced_threat_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/sentinel_data_connector_microsoft_defender_advanced_threat_protection azurerm_sentinel_data_connector_microsoft_defender_advanced_threat_protection} Resource.
 func NewSentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection(scope constructs.Construct, id *string, config *SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtectionConfig) SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewSentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection(scope con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/sentinel_data_connector_microsoft_defender_advanced_threat_protection azurerm_sentinel_data_connector_microsoft_defender_advanced_threat_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/sentinel_data_connector_microsoft_defender_advanced_threat_protection azurerm_sentinel_data_connector_microsoft_defender_advanced_threat_protection} Resource.
 func NewSentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection_Override(s SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection, scope constructs.Construct, id *string, config *SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtectionConfig) {
 	_init_.Initialize()
 

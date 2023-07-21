@@ -29,6 +29,7 @@ type DataAzurermAutomationVariablesBoolOutputReference interface {
 	Encrypted() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataAzurermAutomationVariablesBool
 	SetInternalValue(val *DataAzurermAutomationVariablesBool)
 	Name() *string
@@ -135,6 +136,16 @@ func (j *jsiiProxy_DataAzurermAutomationVariablesBoolOutputReference) Fqn() *str
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermAutomationVariablesBoolOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

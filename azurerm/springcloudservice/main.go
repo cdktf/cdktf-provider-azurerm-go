@@ -45,6 +45,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "logStreamPublicEndpointEnabled", GoGetter: "LogStreamPublicEndpointEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "logStreamPublicEndpointEnabledInput", GoGetter: "LogStreamPublicEndpointEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "marketplace", GoGetter: "Marketplace"},
+			_jsii_.MemberProperty{JsiiProperty: "marketplaceInput", GoGetter: "MarketplaceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},
@@ -57,6 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putConfigServerGitSetting", GoMethod: "PutConfigServerGitSetting"},
 			_jsii_.MemberMethod{JsiiMethod: "putContainerRegistry", GoMethod: "PutContainerRegistry"},
 			_jsii_.MemberMethod{JsiiMethod: "putDefaultBuildService", GoMethod: "PutDefaultBuildService"},
+			_jsii_.MemberMethod{JsiiMethod: "putMarketplace", GoMethod: "PutMarketplace"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetwork", GoMethod: "PutNetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putTrace", GoMethod: "PutTrace"},
@@ -68,6 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultBuildService", GoMethod: "ResetDefaultBuildService"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLogStreamPublicEndpointEnabled", GoMethod: "ResetLogStreamPublicEndpointEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMarketplace", GoMethod: "ResetMarketplace"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetwork", GoMethod: "ResetNetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceRegistryEnabled", GoMethod: "ResetServiceRegistryEnabled"},
@@ -522,6 +526,48 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.springCloudService.SpringCloudServiceMarketplace",
+		reflect.TypeOf((*SpringCloudServiceMarketplace)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.springCloudService.SpringCloudServiceMarketplaceOutputReference",
+		reflect.TypeOf((*SpringCloudServiceMarketplaceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "plan", GoGetter: "Plan"},
+			_jsii_.MemberProperty{JsiiProperty: "planInput", GoGetter: "PlanInput"},
+			_jsii_.MemberProperty{JsiiProperty: "product", GoGetter: "Product"},
+			_jsii_.MemberProperty{JsiiProperty: "productInput", GoGetter: "ProductInput"},
+			_jsii_.MemberProperty{JsiiProperty: "publisher", GoGetter: "Publisher"},
+			_jsii_.MemberProperty{JsiiProperty: "publisherInput", GoGetter: "PublisherInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SpringCloudServiceMarketplaceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.springCloudService.SpringCloudServiceNetwork",
 		reflect.TypeOf((*SpringCloudServiceNetwork)(nil)).Elem(),
 	)
@@ -552,9 +598,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "outboundType", GoGetter: "OutboundType"},
+			_jsii_.MemberProperty{JsiiProperty: "outboundTypeInput", GoGetter: "OutboundTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "readTimeoutSeconds", GoGetter: "ReadTimeoutSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "readTimeoutSecondsInput", GoGetter: "ReadTimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppNetworkResourceGroup", GoMethod: "ResetAppNetworkResourceGroup"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOutboundType", GoMethod: "ResetOutboundType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReadTimeoutSeconds", GoMethod: "ResetReadTimeoutSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceRuntimeNetworkResourceGroup", GoMethod: "ResetServiceRuntimeNetworkResourceGroup"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

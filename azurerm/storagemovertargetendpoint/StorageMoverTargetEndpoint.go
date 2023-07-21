@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/storage_mover_target_endpoint azurerm_storage_mover_target_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/storage_mover_target_endpoint azurerm_storage_mover_target_endpoint}.
 type StorageMoverTargetEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_StorageMoverTargetEndpoint) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/storage_mover_target_endpoint azurerm_storage_mover_target_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/storage_mover_target_endpoint azurerm_storage_mover_target_endpoint} Resource.
 func NewStorageMoverTargetEndpoint(scope constructs.Construct, id *string, config *StorageMoverTargetEndpointConfig) StorageMoverTargetEndpoint {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewStorageMoverTargetEndpoint(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/storage_mover_target_endpoint azurerm_storage_mover_target_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/storage_mover_target_endpoint azurerm_storage_mover_target_endpoint} Resource.
 func NewStorageMoverTargetEndpoint_Override(s StorageMoverTargetEndpoint, scope constructs.Construct, id *string, config *StorageMoverTargetEndpointConfig) {
 	_init_.Initialize()
 

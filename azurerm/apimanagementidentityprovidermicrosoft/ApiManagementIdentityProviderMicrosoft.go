@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/api_management_identity_provider_microsoft azurerm_api_management_identity_provider_microsoft}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/api_management_identity_provider_microsoft azurerm_api_management_identity_provider_microsoft}.
 type ApiManagementIdentityProviderMicrosoft interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_ApiManagementIdentityProviderMicrosoft) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/api_management_identity_provider_microsoft azurerm_api_management_identity_provider_microsoft} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/api_management_identity_provider_microsoft azurerm_api_management_identity_provider_microsoft} Resource.
 func NewApiManagementIdentityProviderMicrosoft(scope constructs.Construct, id *string, config *ApiManagementIdentityProviderMicrosoftConfig) ApiManagementIdentityProviderMicrosoft {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewApiManagementIdentityProviderMicrosoft(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/api_management_identity_provider_microsoft azurerm_api_management_identity_provider_microsoft} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/api_management_identity_provider_microsoft azurerm_api_management_identity_provider_microsoft} Resource.
 func NewApiManagementIdentityProviderMicrosoft_Override(a ApiManagementIdentityProviderMicrosoft, scope constructs.Construct, id *string, config *ApiManagementIdentityProviderMicrosoftConfig) {
 	_init_.Initialize()
 

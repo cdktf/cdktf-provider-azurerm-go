@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/spring_cloud_active_deployment azurerm_spring_cloud_active_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/spring_cloud_active_deployment azurerm_spring_cloud_active_deployment}.
 type SpringCloudActiveDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_SpringCloudActiveDeployment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/spring_cloud_active_deployment azurerm_spring_cloud_active_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/spring_cloud_active_deployment azurerm_spring_cloud_active_deployment} Resource.
 func NewSpringCloudActiveDeployment(scope constructs.Construct, id *string, config *SpringCloudActiveDeploymentConfig) SpringCloudActiveDeployment {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewSpringCloudActiveDeployment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/spring_cloud_active_deployment azurerm_spring_cloud_active_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/spring_cloud_active_deployment azurerm_spring_cloud_active_deployment} Resource.
 func NewSpringCloudActiveDeployment_Override(s SpringCloudActiveDeployment, scope constructs.Construct, id *string, config *SpringCloudActiveDeploymentConfig) {
 	_init_.Initialize()
 

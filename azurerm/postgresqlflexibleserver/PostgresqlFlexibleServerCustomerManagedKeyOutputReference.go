@@ -27,6 +27,12 @@ type PostgresqlFlexibleServerCustomerManagedKeyOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GeoBackupKeyVaultKeyId() *string
+	SetGeoBackupKeyVaultKeyId(val *string)
+	GeoBackupKeyVaultKeyIdInput() *string
+	GeoBackupUserAssignedIdentityId() *string
+	SetGeoBackupUserAssignedIdentityId(val *string)
+	GeoBackupUserAssignedIdentityIdInput() *string
 	InternalValue() *PostgresqlFlexibleServerCustomerManagedKey
 	SetInternalValue(val *PostgresqlFlexibleServerCustomerManagedKey)
 	KeyVaultKeyId() *string
@@ -67,6 +73,8 @@ type PostgresqlFlexibleServerCustomerManagedKeyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetGeoBackupKeyVaultKeyId()
+	ResetGeoBackupUserAssignedIdentityId()
 	ResetKeyVaultKeyId()
 	ResetPrimaryUserAssignedIdentityId()
 	// Produce the Token's value at resolution time.
@@ -119,6 +127,46 @@ func (j *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) Fq
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) GeoBackupKeyVaultKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"geoBackupKeyVaultKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) GeoBackupKeyVaultKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"geoBackupKeyVaultKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) GeoBackupUserAssignedIdentityId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"geoBackupUserAssignedIdentityId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) GeoBackupUserAssignedIdentityIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"geoBackupUserAssignedIdentityIdInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +288,28 @@ func (j *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference)Set
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference)SetGeoBackupKeyVaultKeyId(val *string) {
+	if err := j.validateSetGeoBackupKeyVaultKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"geoBackupKeyVaultKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference)SetGeoBackupUserAssignedIdentityId(val *string) {
+	if err := j.validateSetGeoBackupUserAssignedIdentityIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"geoBackupUserAssignedIdentityId",
 		val,
 	)
 }
@@ -483,6 +553,22 @@ func (p *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) In
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) ResetGeoBackupKeyVaultKeyId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetGeoBackupKeyVaultKeyId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) ResetGeoBackupUserAssignedIdentityId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetGeoBackupUserAssignedIdentityId",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) ResetKeyVaultKeyId() {

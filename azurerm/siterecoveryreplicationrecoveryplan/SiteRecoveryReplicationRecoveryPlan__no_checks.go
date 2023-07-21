@@ -56,7 +56,19 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutAzureToAzureS
 	return nil
 }
 
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutBootRecoveryGroupParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutFailoverRecoveryGroupParameters(value *SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroup) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutRecoveryGroupParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutShutdownRecoveryGroupParameters(value *SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroup) error {
 	return nil
 }
 

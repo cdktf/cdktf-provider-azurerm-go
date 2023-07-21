@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/network_manager_deployment azurerm_network_manager_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/network_manager_deployment azurerm_network_manager_deployment}.
 type NetworkManagerDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_NetworkManagerDeployment) TriggersInput() *map[string]*string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/network_manager_deployment azurerm_network_manager_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/network_manager_deployment azurerm_network_manager_deployment} Resource.
 func NewNetworkManagerDeployment(scope constructs.Construct, id *string, config *NetworkManagerDeploymentConfig) NetworkManagerDeployment {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewNetworkManagerDeployment(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/network_manager_deployment azurerm_network_manager_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/network_manager_deployment azurerm_network_manager_deployment} Resource.
 func NewNetworkManagerDeployment_Override(n NetworkManagerDeployment, scope constructs.Construct, id *string, config *NetworkManagerDeploymentConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/iothub_device_update_account azurerm_iothub_device_update_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/iothub_device_update_account azurerm_iothub_device_update_account}.
 type IothubDeviceUpdateAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -486,7 +486,7 @@ func (j *jsiiProxy_IothubDeviceUpdateAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/iothub_device_update_account azurerm_iothub_device_update_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/iothub_device_update_account azurerm_iothub_device_update_account} Resource.
 func NewIothubDeviceUpdateAccount(scope constructs.Construct, id *string, config *IothubDeviceUpdateAccountConfig) IothubDeviceUpdateAccount {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewIothubDeviceUpdateAccount(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/iothub_device_update_account azurerm_iothub_device_update_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/iothub_device_update_account azurerm_iothub_device_update_account} Resource.
 func NewIothubDeviceUpdateAccount_Override(i IothubDeviceUpdateAccount, scope constructs.Construct, id *string, config *IothubDeviceUpdateAccountConfig) {
 	_init_.Initialize()
 

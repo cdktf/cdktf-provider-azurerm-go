@@ -72,6 +72,10 @@ func (j *jsiiProxy_SpringCloudServiceNetworkOutputReference) validateSetInternal
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudServiceNetworkOutputReference) validateSetOutboundTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudServiceNetworkOutputReference) validateSetReadTimeoutSecondsParameters(val *float64) error {
 	return nil
 }

@@ -16,6 +16,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "appServicePlanIdInput", GoGetter: "AppServicePlanIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "appSettings", GoGetter: "AppSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "appSettingsInput", GoGetter: "AppSettingsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "autoSwapSlotName", GoGetter: "AutoSwapSlotName"},
 			_jsii_.MemberProperty{JsiiProperty: "bundleVersion", GoGetter: "BundleVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "bundleVersionInput", GoGetter: "BundleVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},

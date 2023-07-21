@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service}.
 type SpringCloudService interface {
 	cdktf.TerraformResource
 	BuildAgentPoolSize() *string
@@ -58,6 +58,8 @@ type SpringCloudService interface {
 	LogStreamPublicEndpointEnabled() interface{}
 	SetLogStreamPublicEndpointEnabled(val interface{})
 	LogStreamPublicEndpointEnabledInput() interface{}
+	Marketplace() SpringCloudServiceMarketplaceOutputReference
+	MarketplaceInput() *SpringCloudServiceMarketplace
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -131,6 +133,7 @@ type SpringCloudService interface {
 	PutConfigServerGitSetting(value *SpringCloudServiceConfigServerGitSetting)
 	PutContainerRegistry(value interface{})
 	PutDefaultBuildService(value *SpringCloudServiceDefaultBuildService)
+	PutMarketplace(value *SpringCloudServiceMarketplace)
 	PutNetwork(value *SpringCloudServiceNetwork)
 	PutTimeouts(value *SpringCloudServiceTimeouts)
 	PutTrace(value *SpringCloudServiceTrace)
@@ -140,6 +143,7 @@ type SpringCloudService interface {
 	ResetDefaultBuildService()
 	ResetId()
 	ResetLogStreamPublicEndpointEnabled()
+	ResetMarketplace()
 	ResetNetwork()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -390,6 +394,26 @@ func (j *jsiiProxy_SpringCloudService) LogStreamPublicEndpointEnabledInput() int
 	_jsii_.Get(
 		j,
 		"logStreamPublicEndpointEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudService) Marketplace() SpringCloudServiceMarketplaceOutputReference {
+	var returns SpringCloudServiceMarketplaceOutputReference
+	_jsii_.Get(
+		j,
+		"marketplace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudService) MarketplaceInput() *SpringCloudServiceMarketplace {
+	var returns *SpringCloudServiceMarketplace
+	_jsii_.Get(
+		j,
+		"marketplaceInput",
 		&returns,
 	)
 	return returns
@@ -676,7 +700,7 @@ func (j *jsiiProxy_SpringCloudService) ZoneRedundantInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service} Resource.
 func NewSpringCloudService(scope constructs.Construct, id *string, config *SpringCloudServiceConfig) SpringCloudService {
 	_init_.Initialize()
 
@@ -694,7 +718,7 @@ func NewSpringCloudService(scope constructs.Construct, id *string, config *Sprin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service} Resource.
 func NewSpringCloudService_Override(s SpringCloudService, scope constructs.Construct, id *string, config *SpringCloudServiceConfig) {
 	_init_.Initialize()
 
@@ -1182,6 +1206,17 @@ func (s *jsiiProxy_SpringCloudService) PutDefaultBuildService(value *SpringCloud
 	)
 }
 
+func (s *jsiiProxy_SpringCloudService) PutMarketplace(value *SpringCloudServiceMarketplace) {
+	if err := s.validatePutMarketplaceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putMarketplace",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SpringCloudService) PutNetwork(value *SpringCloudServiceNetwork) {
 	if err := s.validatePutNetworkParameters(value); err != nil {
 		panic(err)
@@ -1259,6 +1294,14 @@ func (s *jsiiProxy_SpringCloudService) ResetLogStreamPublicEndpointEnabled() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetLogStreamPublicEndpointEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudService) ResetMarketplace() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMarketplace",
 		nil, // no parameters
 	)
 }

@@ -64,6 +64,10 @@ func (s *jsiiProxy_SpringCloudService) validatePutDefaultBuildServiceParameters(
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudService) validatePutMarketplaceParameters(value *SpringCloudServiceMarketplace) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudService) validatePutNetworkParameters(value *SpringCloudServiceNetwork) error {
 	return nil
 }

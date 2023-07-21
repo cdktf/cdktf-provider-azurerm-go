@@ -163,6 +163,22 @@ func (j *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) validateSetGeoBackupKeyVaultKeyIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) validateSetGeoBackupUserAssignedIdentityIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) validateSetInternalValueParameters(val *PostgresqlFlexibleServerCustomerManagedKey) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

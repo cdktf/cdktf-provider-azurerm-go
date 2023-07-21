@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/application_insights_workbook azurerm_application_insights_workbook}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/application_insights_workbook azurerm_application_insights_workbook}.
 type ApplicationInsightsWorkbook interface {
 	cdktf.TerraformResource
 	Category() *string
@@ -569,7 +569,7 @@ func (j *jsiiProxy_ApplicationInsightsWorkbook) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/application_insights_workbook azurerm_application_insights_workbook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/application_insights_workbook azurerm_application_insights_workbook} Resource.
 func NewApplicationInsightsWorkbook(scope constructs.Construct, id *string, config *ApplicationInsightsWorkbookConfig) ApplicationInsightsWorkbook {
 	_init_.Initialize()
 
@@ -587,7 +587,7 @@ func NewApplicationInsightsWorkbook(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/resources/application_insights_workbook azurerm_application_insights_workbook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/application_insights_workbook azurerm_application_insights_workbook} Resource.
 func NewApplicationInsightsWorkbook_Override(a ApplicationInsightsWorkbook, scope constructs.Construct, id *string, config *ApplicationInsightsWorkbookConfig) {
 	_init_.Initialize()
 

@@ -9,9 +9,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/route_table azurerm_route_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/data-sources/route_table azurerm_route_table}.
 type DataAzurermRouteTable interface {
 	cdktf.TerraformDataSource
+	BgpRoutePropagationEnabled() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -109,6 +110,16 @@ type DataAzurermRouteTable interface {
 // The jsii proxy struct for DataAzurermRouteTable
 type jsiiProxy_DataAzurermRouteTable struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataAzurermRouteTable) BgpRoutePropagationEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"bgpRoutePropagationEnabled",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAzurermRouteTable) CdktfStack() cdktf.TerraformStack {
@@ -372,7 +383,7 @@ func (j *jsiiProxy_DataAzurermRouteTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/route_table azurerm_route_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/data-sources/route_table azurerm_route_table} Data Source.
 func NewDataAzurermRouteTable(scope constructs.Construct, id *string, config *DataAzurermRouteTableConfig) DataAzurermRouteTable {
 	_init_.Initialize()
 
@@ -390,7 +401,7 @@ func NewDataAzurermRouteTable(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.65.0/docs/data-sources/route_table azurerm_route_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/data-sources/route_table azurerm_route_table} Data Source.
 func NewDataAzurermRouteTable_Override(d DataAzurermRouteTable, scope constructs.Construct, id *string, config *DataAzurermRouteTableConfig) {
 	_init_.Initialize()
 
