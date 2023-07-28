@@ -128,6 +128,10 @@ func (j *jsiiProxy_WindowsVirtualMachine) validateSetAvailabilitySetIdParameters
 	return nil
 }
 
+func (j *jsiiProxy_WindowsVirtualMachine) validateSetBypassPlatformSafetyChecksOnUserScheduleEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsVirtualMachine) validateSetCapacityReservationGroupIdParameters(val *string) error {
 	return nil
 }
@@ -233,6 +237,10 @@ func (j *jsiiProxy_WindowsVirtualMachine) validateSetProvisionVmAgentParameters(
 }
 
 func (j *jsiiProxy_WindowsVirtualMachine) validateSetProximityPlacementGroupIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine) validateSetRebootSettingParameters(val *string) error {
 	return nil
 }
 

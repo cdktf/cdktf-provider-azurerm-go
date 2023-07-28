@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/cdn_frontdoor_security_policy azurerm_cdn_frontdoor_security_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/cdn_frontdoor_security_policy azurerm_cdn_frontdoor_security_policy}.
 type CdnFrontdoorSecurityPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_CdnFrontdoorSecurityPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/cdn_frontdoor_security_policy azurerm_cdn_frontdoor_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/cdn_frontdoor_security_policy azurerm_cdn_frontdoor_security_policy} Resource.
 func NewCdnFrontdoorSecurityPolicy(scope constructs.Construct, id *string, config *CdnFrontdoorSecurityPolicyConfig) CdnFrontdoorSecurityPolicy {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewCdnFrontdoorSecurityPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/cdn_frontdoor_security_policy azurerm_cdn_frontdoor_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/cdn_frontdoor_security_policy azurerm_cdn_frontdoor_security_policy} Resource.
 func NewCdnFrontdoorSecurityPolicy_Override(c CdnFrontdoorSecurityPolicy, scope constructs.Construct, id *string, config *CdnFrontdoorSecurityPolicyConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/automation_runbook azurerm_automation_runbook}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/automation_runbook azurerm_automation_runbook}.
 type AutomationRunbook interface {
 	cdktf.TerraformResource
 	AutomationAccountName() *string
@@ -639,7 +639,7 @@ func (j *jsiiProxy_AutomationRunbook) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/automation_runbook azurerm_automation_runbook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/automation_runbook azurerm_automation_runbook} Resource.
 func NewAutomationRunbook(scope constructs.Construct, id *string, config *AutomationRunbookConfig) AutomationRunbook {
 	_init_.Initialize()
 
@@ -657,7 +657,7 @@ func NewAutomationRunbook(scope constructs.Construct, id *string, config *Automa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/automation_runbook azurerm_automation_runbook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/automation_runbook azurerm_automation_runbook} Resource.
 func NewAutomationRunbook_Override(a AutomationRunbook, scope constructs.Construct, id *string, config *AutomationRunbookConfig) {
 	_init_.Initialize()
 

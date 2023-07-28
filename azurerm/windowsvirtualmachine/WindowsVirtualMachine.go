@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine}.
 type WindowsVirtualMachine interface {
 	cdktf.TerraformResource
 	AdditionalCapabilities() WindowsVirtualMachineAdditionalCapabilitiesOutputReference
@@ -30,6 +30,9 @@ type WindowsVirtualMachine interface {
 	AvailabilitySetIdInput() *string
 	BootDiagnostics() WindowsVirtualMachineBootDiagnosticsOutputReference
 	BootDiagnosticsInput() *WindowsVirtualMachineBootDiagnostics
+	BypassPlatformSafetyChecksOnUserScheduleEnabled() interface{}
+	SetBypassPlatformSafetyChecksOnUserScheduleEnabled(val interface{})
+	BypassPlatformSafetyChecksOnUserScheduleEnabledInput() interface{}
 	CapacityReservationGroupId() *string
 	SetCapacityReservationGroupId(val *string)
 	CapacityReservationGroupIdInput() *string
@@ -151,6 +154,9 @@ type WindowsVirtualMachine interface {
 	PublicIpAddresses() *[]*string
 	// Experimental.
 	RawOverrides() interface{}
+	RebootSetting() *string
+	SetRebootSetting(val *string)
+	RebootSettingInput() *string
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
@@ -240,6 +246,7 @@ type WindowsVirtualMachine interface {
 	ResetAllowExtensionOperations()
 	ResetAvailabilitySetId()
 	ResetBootDiagnostics()
+	ResetBypassPlatformSafetyChecksOnUserScheduleEnabled()
 	ResetCapacityReservationGroupId()
 	ResetComputerName()
 	ResetCustomData()
@@ -266,6 +273,7 @@ type WindowsVirtualMachine interface {
 	ResetPriority()
 	ResetProvisionVmAgent()
 	ResetProximityPlacementGroupId()
+	ResetRebootSetting()
 	ResetSecret()
 	ResetSecureBootEnabled()
 	ResetSourceImageId()
@@ -429,6 +437,26 @@ func (j *jsiiProxy_WindowsVirtualMachine) BootDiagnosticsInput() *WindowsVirtual
 	_jsii_.Get(
 		j,
 		"bootDiagnosticsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine) BypassPlatformSafetyChecksOnUserScheduleEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bypassPlatformSafetyChecksOnUserScheduleEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine) BypassPlatformSafetyChecksOnUserScheduleEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bypassPlatformSafetyChecksOnUserScheduleEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1144,6 +1172,26 @@ func (j *jsiiProxy_WindowsVirtualMachine) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WindowsVirtualMachine) RebootSetting() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rebootSetting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine) RebootSettingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rebootSettingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsVirtualMachine) ResourceGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1485,7 +1533,7 @@ func (j *jsiiProxy_WindowsVirtualMachine) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine} Resource.
 func NewWindowsVirtualMachine(scope constructs.Construct, id *string, config *WindowsVirtualMachineConfig) WindowsVirtualMachine {
 	_init_.Initialize()
 
@@ -1503,7 +1551,7 @@ func NewWindowsVirtualMachine(scope constructs.Construct, id *string, config *Wi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine} Resource.
 func NewWindowsVirtualMachine_Override(w WindowsVirtualMachine, scope constructs.Construct, id *string, config *WindowsVirtualMachineConfig) {
 	_init_.Initialize()
 
@@ -1554,6 +1602,17 @@ func (j *jsiiProxy_WindowsVirtualMachine)SetAvailabilitySetId(val *string) {
 	_jsii_.Set(
 		j,
 		"availabilitySetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine)SetBypassPlatformSafetyChecksOnUserScheduleEnabled(val interface{}) {
+	if err := j.validateSetBypassPlatformSafetyChecksOnUserScheduleEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bypassPlatformSafetyChecksOnUserScheduleEnabled",
 		val,
 	)
 }
@@ -1875,6 +1934,17 @@ func (j *jsiiProxy_WindowsVirtualMachine)SetProximityPlacementGroupId(val *strin
 	_jsii_.Set(
 		j,
 		"proximityPlacementGroupId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine)SetRebootSetting(val *string) {
+	if err := j.validateSetRebootSettingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rebootSetting",
 		val,
 	)
 }
@@ -2427,6 +2497,14 @@ func (w *jsiiProxy_WindowsVirtualMachine) ResetBootDiagnostics() {
 	)
 }
 
+func (w *jsiiProxy_WindowsVirtualMachine) ResetBypassPlatformSafetyChecksOnUserScheduleEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetBypassPlatformSafetyChecksOnUserScheduleEnabled",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WindowsVirtualMachine) ResetCapacityReservationGroupId() {
 	_jsii_.InvokeVoid(
 		w,
@@ -2615,6 +2693,14 @@ func (w *jsiiProxy_WindowsVirtualMachine) ResetProximityPlacementGroupId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetProximityPlacementGroupId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsVirtualMachine) ResetRebootSetting() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRebootSetting",
 		nil, // no parameters
 	)
 }

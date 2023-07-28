@@ -31,6 +31,9 @@ type ImageOsDiskOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DiskEncryptionSetId() *string
+	SetDiskEncryptionSetId(val *string)
+	DiskEncryptionSetIdInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ImageOsDisk
@@ -81,6 +84,7 @@ type ImageOsDiskOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBlobUri()
 	ResetCaching()
+	ResetDiskEncryptionSetId()
 	ResetManagedDiskId()
 	ResetOsState()
 	ResetOsType()
@@ -165,6 +169,26 @@ func (j *jsiiProxy_ImageOsDiskOutputReference) CreationStack() *[]*string {
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImageOsDiskOutputReference) DiskEncryptionSetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionSetId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImageOsDiskOutputReference) DiskEncryptionSetIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionSetIdInput",
 		&returns,
 	)
 	return returns
@@ -358,6 +382,17 @@ func (j *jsiiProxy_ImageOsDiskOutputReference)SetComplexObjectIsFromSet(val *boo
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ImageOsDiskOutputReference)SetDiskEncryptionSetId(val *string) {
+	if err := j.validateSetDiskEncryptionSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskEncryptionSetId",
 		val,
 	)
 }
@@ -637,6 +672,14 @@ func (i *jsiiProxy_ImageOsDiskOutputReference) ResetCaching() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetCaching",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImageOsDiskOutputReference) ResetDiskEncryptionSetId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetDiskEncryptionSetId",
 		nil, // no parameters
 	)
 }

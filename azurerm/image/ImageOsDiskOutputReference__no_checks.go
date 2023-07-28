@@ -64,6 +64,10 @@ func (j *jsiiProxy_ImageOsDiskOutputReference) validateSetComplexObjectIsFromSet
 	return nil
 }
 
+func (j *jsiiProxy_ImageOsDiskOutputReference) validateSetDiskEncryptionSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImageOsDiskOutputReference) validateSetInternalValueParameters(val *ImageOsDisk) error {
 	return nil
 }

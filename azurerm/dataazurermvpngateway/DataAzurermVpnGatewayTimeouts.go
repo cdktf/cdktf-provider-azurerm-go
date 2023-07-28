@@ -2,7 +2,7 @@ package dataazurermvpngateway
 
 
 type DataAzurermVpnGatewayTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/data-sources/vpn_gateway#read DataAzurermVpnGateway#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/vpn_gateway#read DataAzurermVpnGateway#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

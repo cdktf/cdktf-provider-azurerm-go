@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/data-sources/sql_database azurerm_sql_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/sql_database azurerm_sql_database}.
 type DataAzurermSqlDatabase interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -452,7 +452,7 @@ func (j *jsiiProxy_DataAzurermSqlDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/data-sources/sql_database azurerm_sql_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/sql_database azurerm_sql_database} Data Source.
 func NewDataAzurermSqlDatabase(scope constructs.Construct, id *string, config *DataAzurermSqlDatabaseConfig) DataAzurermSqlDatabase {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewDataAzurermSqlDatabase(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/data-sources/sql_database azurerm_sql_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/sql_database azurerm_sql_database} Data Source.
 func NewDataAzurermSqlDatabase_Override(d DataAzurermSqlDatabase, scope constructs.Construct, id *string, config *DataAzurermSqlDatabaseConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/automation_connection azurerm_automation_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/automation_connection azurerm_automation_connection}.
 type AutomationConnection interface {
 	cdktf.TerraformResource
 	AutomationAccountName() *string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_AutomationConnection) ValuesInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/automation_connection azurerm_automation_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/automation_connection azurerm_automation_connection} Resource.
 func NewAutomationConnection(scope constructs.Construct, id *string, config *AutomationConnectionConfig) AutomationConnection {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewAutomationConnection(scope constructs.Construct, id *string, config *Aut
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/automation_connection azurerm_automation_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/automation_connection azurerm_automation_connection} Resource.
 func NewAutomationConnection_Override(a AutomationConnection, scope constructs.Construct, id *string, config *AutomationConnectionConfig) {
 	_init_.Initialize()
 

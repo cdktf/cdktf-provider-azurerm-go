@@ -16,6 +16,7 @@ type DataAzurermLogicAppStandardSiteConfigOutputReference interface {
 	AppScaleLimit() *float64
 	SetAppScaleLimit(val *float64)
 	AppScaleLimitInput() *float64
+	AutoSwapSlotName() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -191,6 +192,16 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) AppScal
 	_jsii_.Get(
 		j,
 		"appScaleLimitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) AutoSwapSlotName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoSwapSlotName",
 		&returns,
 	)
 	return returns

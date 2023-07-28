@@ -360,6 +360,26 @@ func (j *jsiiProxy_LinuxVirtualMachine) validateSetAvailabilitySetIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_LinuxVirtualMachine) validateSetBypassPlatformSafetyChecksOnUserScheduleEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LinuxVirtualMachine) validateSetCapacityReservationGroupIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -709,6 +729,14 @@ func (j *jsiiProxy_LinuxVirtualMachine) validateSetProvisionVmAgentParameters(va
 }
 
 func (j *jsiiProxy_LinuxVirtualMachine) validateSetProximityPlacementGroupIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LinuxVirtualMachine) validateSetRebootSettingParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

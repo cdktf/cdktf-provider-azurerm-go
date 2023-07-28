@@ -432,6 +432,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxAgeInSeconds", GoGetter: "MaxAgeInSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "maxAgeInSecondsInput", GoGetter: "MaxAgeInSecondsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxAgeInSeconds", GoMethod: "ResetMaxAgeInSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

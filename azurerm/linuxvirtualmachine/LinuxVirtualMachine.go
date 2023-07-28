@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine}.
 type LinuxVirtualMachine interface {
 	cdktf.TerraformResource
 	AdditionalCapabilities() LinuxVirtualMachineAdditionalCapabilitiesOutputReference
@@ -30,6 +30,9 @@ type LinuxVirtualMachine interface {
 	AvailabilitySetIdInput() *string
 	BootDiagnostics() LinuxVirtualMachineBootDiagnosticsOutputReference
 	BootDiagnosticsInput() *LinuxVirtualMachineBootDiagnostics
+	BypassPlatformSafetyChecksOnUserScheduleEnabled() interface{}
+	SetBypassPlatformSafetyChecksOnUserScheduleEnabled(val interface{})
+	BypassPlatformSafetyChecksOnUserScheduleEnabledInput() interface{}
 	CapacityReservationGroupId() *string
 	SetCapacityReservationGroupId(val *string)
 	CapacityReservationGroupIdInput() *string
@@ -148,6 +151,9 @@ type LinuxVirtualMachine interface {
 	PublicIpAddresses() *[]*string
 	// Experimental.
 	RawOverrides() interface{}
+	RebootSetting() *string
+	SetRebootSetting(val *string)
+	RebootSettingInput() *string
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
@@ -232,6 +238,7 @@ type LinuxVirtualMachine interface {
 	ResetAllowExtensionOperations()
 	ResetAvailabilitySetId()
 	ResetBootDiagnostics()
+	ResetBypassPlatformSafetyChecksOnUserScheduleEnabled()
 	ResetCapacityReservationGroupId()
 	ResetComputerName()
 	ResetCustomData()
@@ -257,6 +264,7 @@ type LinuxVirtualMachine interface {
 	ResetPriority()
 	ResetProvisionVmAgent()
 	ResetProximityPlacementGroupId()
+	ResetRebootSetting()
 	ResetSecret()
 	ResetSecureBootEnabled()
 	ResetSourceImageId()
@@ -418,6 +426,26 @@ func (j *jsiiProxy_LinuxVirtualMachine) BootDiagnosticsInput() *LinuxVirtualMach
 	_jsii_.Get(
 		j,
 		"bootDiagnosticsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachine) BypassPlatformSafetyChecksOnUserScheduleEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bypassPlatformSafetyChecksOnUserScheduleEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachine) BypassPlatformSafetyChecksOnUserScheduleEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bypassPlatformSafetyChecksOnUserScheduleEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1113,6 +1141,26 @@ func (j *jsiiProxy_LinuxVirtualMachine) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LinuxVirtualMachine) RebootSetting() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rebootSetting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachine) RebootSettingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rebootSettingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LinuxVirtualMachine) ResourceGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1414,7 +1462,7 @@ func (j *jsiiProxy_LinuxVirtualMachine) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine} Resource.
 func NewLinuxVirtualMachine(scope constructs.Construct, id *string, config *LinuxVirtualMachineConfig) LinuxVirtualMachine {
 	_init_.Initialize()
 
@@ -1432,7 +1480,7 @@ func NewLinuxVirtualMachine(scope constructs.Construct, id *string, config *Linu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine} Resource.
 func NewLinuxVirtualMachine_Override(l LinuxVirtualMachine, scope constructs.Construct, id *string, config *LinuxVirtualMachineConfig) {
 	_init_.Initialize()
 
@@ -1483,6 +1531,17 @@ func (j *jsiiProxy_LinuxVirtualMachine)SetAvailabilitySetId(val *string) {
 	_jsii_.Set(
 		j,
 		"availabilitySetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxVirtualMachine)SetBypassPlatformSafetyChecksOnUserScheduleEnabled(val interface{}) {
+	if err := j.validateSetBypassPlatformSafetyChecksOnUserScheduleEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bypassPlatformSafetyChecksOnUserScheduleEnabled",
 		val,
 	)
 }
@@ -1793,6 +1852,17 @@ func (j *jsiiProxy_LinuxVirtualMachine)SetProximityPlacementGroupId(val *string)
 	_jsii_.Set(
 		j,
 		"proximityPlacementGroupId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxVirtualMachine)SetRebootSetting(val *string) {
+	if err := j.validateSetRebootSettingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rebootSetting",
 		val,
 	)
 }
@@ -2331,6 +2401,14 @@ func (l *jsiiProxy_LinuxVirtualMachine) ResetBootDiagnostics() {
 	)
 }
 
+func (l *jsiiProxy_LinuxVirtualMachine) ResetBypassPlatformSafetyChecksOnUserScheduleEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetBypassPlatformSafetyChecksOnUserScheduleEnabled",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LinuxVirtualMachine) ResetCapacityReservationGroupId() {
 	_jsii_.InvokeVoid(
 		l,
@@ -2511,6 +2589,14 @@ func (l *jsiiProxy_LinuxVirtualMachine) ResetProximityPlacementGroupId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetProximityPlacementGroupId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxVirtualMachine) ResetRebootSetting() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRebootSetting",
 		nil, // no parameters
 	)
 }

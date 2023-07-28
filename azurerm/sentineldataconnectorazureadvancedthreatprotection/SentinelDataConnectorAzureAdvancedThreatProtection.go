@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/sentinel_data_connector_azure_advanced_threat_protection azurerm_sentinel_data_connector_azure_advanced_threat_protection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/sentinel_data_connector_azure_advanced_threat_protection azurerm_sentinel_data_connector_azure_advanced_threat_protection}.
 type SentinelDataConnectorAzureAdvancedThreatProtection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_SentinelDataConnectorAzureAdvancedThreatProtection) TimeoutsI
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/sentinel_data_connector_azure_advanced_threat_protection azurerm_sentinel_data_connector_azure_advanced_threat_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/sentinel_data_connector_azure_advanced_threat_protection azurerm_sentinel_data_connector_azure_advanced_threat_protection} Resource.
 func NewSentinelDataConnectorAzureAdvancedThreatProtection(scope constructs.Construct, id *string, config *SentinelDataConnectorAzureAdvancedThreatProtectionConfig) SentinelDataConnectorAzureAdvancedThreatProtection {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewSentinelDataConnectorAzureAdvancedThreatProtection(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/sentinel_data_connector_azure_advanced_threat_protection azurerm_sentinel_data_connector_azure_advanced_threat_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/sentinel_data_connector_azure_advanced_threat_protection azurerm_sentinel_data_connector_azure_advanced_threat_protection} Resource.
 func NewSentinelDataConnectorAzureAdvancedThreatProtection_Override(s SentinelDataConnectorAzureAdvancedThreatProtection, scope constructs.Construct, id *string, config *SentinelDataConnectorAzureAdvancedThreatProtectionConfig) {
 	_init_.Initialize()
 

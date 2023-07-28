@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/api_management_notification_recipient_email azurerm_api_management_notification_recipient_email}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/api_management_notification_recipient_email azurerm_api_management_notification_recipient_email}.
 type ApiManagementNotificationRecipientEmail interface {
 	cdktf.TerraformResource
 	ApiManagementId() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_ApiManagementNotificationRecipientEmail) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/api_management_notification_recipient_email azurerm_api_management_notification_recipient_email} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/api_management_notification_recipient_email azurerm_api_management_notification_recipient_email} Resource.
 func NewApiManagementNotificationRecipientEmail(scope constructs.Construct, id *string, config *ApiManagementNotificationRecipientEmailConfig) ApiManagementNotificationRecipientEmail {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewApiManagementNotificationRecipientEmail(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/api_management_notification_recipient_email azurerm_api_management_notification_recipient_email} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/api_management_notification_recipient_email azurerm_api_management_notification_recipient_email} Resource.
 func NewApiManagementNotificationRecipientEmail_Override(a ApiManagementNotificationRecipientEmail, scope constructs.Construct, id *string, config *ApiManagementNotificationRecipientEmailConfig) {
 	_init_.Initialize()
 

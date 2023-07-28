@@ -124,6 +124,10 @@ func (j *jsiiProxy_LinuxVirtualMachine) validateSetAvailabilitySetIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_LinuxVirtualMachine) validateSetBypassPlatformSafetyChecksOnUserScheduleEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxVirtualMachine) validateSetCapacityReservationGroupIdParameters(val *string) error {
 	return nil
 }
@@ -225,6 +229,10 @@ func (j *jsiiProxy_LinuxVirtualMachine) validateSetProvisionVmAgentParameters(va
 }
 
 func (j *jsiiProxy_LinuxVirtualMachine) validateSetProximityPlacementGroupIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LinuxVirtualMachine) validateSetRebootSettingParameters(val *string) error {
 	return nil
 }
 

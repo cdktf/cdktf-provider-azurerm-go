@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/mobile_network_attached_data_network azurerm_mobile_network_attached_data_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/mobile_network_attached_data_network azurerm_mobile_network_attached_data_network}.
 type MobileNetworkAttachedDataNetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -594,7 +594,7 @@ func (j *jsiiProxy_MobileNetworkAttachedDataNetwork) UserPlaneAccessNameInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/mobile_network_attached_data_network azurerm_mobile_network_attached_data_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/mobile_network_attached_data_network azurerm_mobile_network_attached_data_network} Resource.
 func NewMobileNetworkAttachedDataNetwork(scope constructs.Construct, id *string, config *MobileNetworkAttachedDataNetworkConfig) MobileNetworkAttachedDataNetwork {
 	_init_.Initialize()
 
@@ -612,7 +612,7 @@ func NewMobileNetworkAttachedDataNetwork(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.66.0/docs/resources/mobile_network_attached_data_network azurerm_mobile_network_attached_data_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/mobile_network_attached_data_network azurerm_mobile_network_attached_data_network} Resource.
 func NewMobileNetworkAttachedDataNetwork_Override(m MobileNetworkAttachedDataNetwork, scope constructs.Construct, id *string, config *MobileNetworkAttachedDataNetworkConfig) {
 	_init_.Initialize()
 

@@ -76,6 +76,7 @@ type CosmosdbAccountCorsRuleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMaxAgeInSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -583,6 +584,14 @@ func (c *jsiiProxy_CosmosdbAccountCorsRuleOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CosmosdbAccountCorsRuleOutputReference) ResetMaxAgeInSeconds() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaxAgeInSeconds",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CosmosdbAccountCorsRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
