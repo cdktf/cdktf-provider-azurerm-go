@@ -88,10 +88,6 @@ func (j *jsiiProxy_DataAzurermEventgridTopic) validateSetResourceGroupNameParame
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermEventgridTopic) validateSetTagsParameters(val *map[string]*string) error {
-	return nil
-}
-
 func validateNewDataAzurermEventgridTopicParameters(scope constructs.Construct, id *string, config *DataAzurermEventgridTopicConfig) error {
 	return nil
 }

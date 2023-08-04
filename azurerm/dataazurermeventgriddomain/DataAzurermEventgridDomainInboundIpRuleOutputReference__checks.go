@@ -98,14 +98,6 @@ func (d *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) validateSetActionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -171,33 +163,9 @@ func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataAzurermEventgridDomainInboundIpRule:
-		val := val.(*DataAzurermEventgridDomainInboundIpRule)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataAzurermEventgridDomainInboundIpRule:
-		val_ := val.(DataAzurermEventgridDomainInboundIpRule)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAzurermEventgridDomainInboundIpRule; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) validateSetIpMaskParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) validateSetInternalValueParameters(val *DataAzurermEventgridDomainInboundIpRule) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

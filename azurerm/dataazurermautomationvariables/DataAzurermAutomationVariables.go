@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/automation_variables azurerm_automation_variables}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/automation_variables azurerm_automation_variables}.
 type DataAzurermAutomationVariables interface {
 	cdktf.TerraformDataSource
 	AutomationAccountId() *string
@@ -49,6 +49,7 @@ type DataAzurermAutomationVariables interface {
 	// The tree node.
 	Node() constructs.Node
 	Null() DataAzurermAutomationVariablesNullList
+	Object() DataAzurermAutomationVariablesObjectList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -290,6 +291,16 @@ func (j *jsiiProxy_DataAzurermAutomationVariables) Null() DataAzurermAutomationV
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermAutomationVariables) Object() DataAzurermAutomationVariablesObjectList {
+	var returns DataAzurermAutomationVariablesObjectList
+	_jsii_.Get(
+		j,
+		"object",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermAutomationVariables) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -371,7 +382,7 @@ func (j *jsiiProxy_DataAzurermAutomationVariables) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/automation_variables azurerm_automation_variables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/automation_variables azurerm_automation_variables} Data Source.
 func NewDataAzurermAutomationVariables(scope constructs.Construct, id *string, config *DataAzurermAutomationVariablesConfig) DataAzurermAutomationVariables {
 	_init_.Initialize()
 
@@ -389,7 +400,7 @@ func NewDataAzurermAutomationVariables(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/automation_variables azurerm_automation_variables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/automation_variables azurerm_automation_variables} Data Source.
 func NewDataAzurermAutomationVariables_Override(d DataAzurermAutomationVariables, scope constructs.Construct, id *string, config *DataAzurermAutomationVariablesConfig) {
 	_init_.Initialize()
 

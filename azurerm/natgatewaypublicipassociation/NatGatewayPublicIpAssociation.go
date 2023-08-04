@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/nat_gateway_public_ip_association azurerm_nat_gateway_public_ip_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/nat_gateway_public_ip_association azurerm_nat_gateway_public_ip_association}.
 type NatGatewayPublicIpAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_NatGatewayPublicIpAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/nat_gateway_public_ip_association azurerm_nat_gateway_public_ip_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/nat_gateway_public_ip_association azurerm_nat_gateway_public_ip_association} Resource.
 func NewNatGatewayPublicIpAssociation(scope constructs.Construct, id *string, config *NatGatewayPublicIpAssociationConfig) NatGatewayPublicIpAssociation {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewNatGatewayPublicIpAssociation(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/nat_gateway_public_ip_association azurerm_nat_gateway_public_ip_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/nat_gateway_public_ip_association azurerm_nat_gateway_public_ip_association} Resource.
 func NewNatGatewayPublicIpAssociation_Override(n NatGatewayPublicIpAssociation, scope constructs.Construct, id *string, config *NatGatewayPublicIpAssociationConfig) {
 	_init_.Initialize()
 

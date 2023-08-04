@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/mobile_network_attached_data_network azurerm_mobile_network_attached_data_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/mobile_network_attached_data_network azurerm_mobile_network_attached_data_network}.
 type DataAzurermMobileNetworkAttachedDataNetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_DataAzurermMobileNetworkAttachedDataNetwork) UserPlaneAccessN
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/mobile_network_attached_data_network azurerm_mobile_network_attached_data_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/mobile_network_attached_data_network azurerm_mobile_network_attached_data_network} Data Source.
 func NewDataAzurermMobileNetworkAttachedDataNetwork(scope constructs.Construct, id *string, config *DataAzurermMobileNetworkAttachedDataNetworkConfig) DataAzurermMobileNetworkAttachedDataNetwork {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewDataAzurermMobileNetworkAttachedDataNetwork(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/mobile_network_attached_data_network azurerm_mobile_network_attached_data_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/mobile_network_attached_data_network azurerm_mobile_network_attached_data_network} Data Source.
 func NewDataAzurermMobileNetworkAttachedDataNetwork_Override(d DataAzurermMobileNetworkAttachedDataNetwork, scope constructs.Construct, id *string, config *DataAzurermMobileNetworkAttachedDataNetworkConfig) {
 	_init_.Initialize()
 

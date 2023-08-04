@@ -52,10 +52,6 @@ func (d *jsiiProxy_DataAzurermEventgridDomain) validateOverrideLogicalIdParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermEventgridDomain) validatePutInboundIpRuleParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataAzurermEventgridDomain) validatePutTimeoutsParameters(value *DataAzurermEventgridDomainTimeouts) error {
 	return nil
 }
@@ -88,15 +84,7 @@ func (j *jsiiProxy_DataAzurermEventgridDomain) validateSetNameParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermEventgridDomain) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAzurermEventgridDomain) validateSetResourceGroupNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermEventgridDomain) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

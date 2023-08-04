@@ -84,6 +84,10 @@ func (j *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateSetIdParameters(
 	return nil
 }
 
+func (j *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateSetInfrastructureEncryptionEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateSetKeyVaultKeyIdsParameters(val *[]*string) error {
 	return nil
 }

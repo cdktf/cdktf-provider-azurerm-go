@@ -27,6 +27,7 @@ type DataAzurermImagesImagesOsDiskOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DiskEncryptionSetId() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataAzurermImagesImagesOsDisk
@@ -127,6 +128,16 @@ func (j *jsiiProxy_DataAzurermImagesImagesOsDiskOutputReference) CreationStack()
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermImagesImagesOsDiskOutputReference) DiskEncryptionSetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionSetId",
 		&returns,
 	)
 	return returns

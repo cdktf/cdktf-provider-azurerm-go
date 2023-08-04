@@ -56,6 +56,10 @@ func (v *jsiiProxy_VirtualNetwork) validatePutDdosProtectionPlanParameters(value
 	return nil
 }
 
+func (v *jsiiProxy_VirtualNetwork) validatePutEncryptionParameters(value *VirtualNetworkEncryption) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetwork) validatePutSubnetParameters(value interface{}) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/mssql_managed_instance_active_directory_administrator azurerm_mssql_managed_instance_active_directory_administrator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/mssql_managed_instance_active_directory_administrator azurerm_mssql_managed_instance_active_directory_administrator}.
 type MssqlManagedInstanceActiveDirectoryAdministrator interface {
 	cdktf.TerraformResource
 	AzureadAuthenticationOnly() interface{}
@@ -426,7 +426,7 @@ func (j *jsiiProxy_MssqlManagedInstanceActiveDirectoryAdministrator) TimeoutsInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/mssql_managed_instance_active_directory_administrator azurerm_mssql_managed_instance_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/mssql_managed_instance_active_directory_administrator azurerm_mssql_managed_instance_active_directory_administrator} Resource.
 func NewMssqlManagedInstanceActiveDirectoryAdministrator(scope constructs.Construct, id *string, config *MssqlManagedInstanceActiveDirectoryAdministratorConfig) MssqlManagedInstanceActiveDirectoryAdministrator {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewMssqlManagedInstanceActiveDirectoryAdministrator(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/mssql_managed_instance_active_directory_administrator azurerm_mssql_managed_instance_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/mssql_managed_instance_active_directory_administrator azurerm_mssql_managed_instance_active_directory_administrator} Resource.
 func NewMssqlManagedInstanceActiveDirectoryAdministrator_Override(m MssqlManagedInstanceActiveDirectoryAdministrator, scope constructs.Construct, id *string, config *MssqlManagedInstanceActiveDirectoryAdministratorConfig) {
 	_init_.Initialize()
 

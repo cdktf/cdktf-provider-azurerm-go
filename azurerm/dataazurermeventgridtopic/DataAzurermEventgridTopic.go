@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/eventgrid_topic azurerm_eventgrid_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/eventgrid_topic azurerm_eventgrid_topic}.
 type DataAzurermEventgridTopic interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -57,9 +57,7 @@ type DataAzurermEventgridTopic interface {
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
 	SecondaryAccessKey() *string
-	Tags() *map[string]*string
-	SetTags(val *map[string]*string)
-	TagsInput() *map[string]*string
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -98,7 +96,6 @@ type DataAzurermEventgridTopic interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -325,21 +322,11 @@ func (j *jsiiProxy_DataAzurermEventgridTopic) SecondaryAccessKey() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermEventgridTopic) Tags() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_DataAzurermEventgridTopic) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"tags",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermEventgridTopic) TagsInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"tagsInput",
 		&returns,
 	)
 	return returns
@@ -396,7 +383,7 @@ func (j *jsiiProxy_DataAzurermEventgridTopic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/eventgrid_topic azurerm_eventgrid_topic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/eventgrid_topic azurerm_eventgrid_topic} Data Source.
 func NewDataAzurermEventgridTopic(scope constructs.Construct, id *string, config *DataAzurermEventgridTopicConfig) DataAzurermEventgridTopic {
 	_init_.Initialize()
 
@@ -414,7 +401,7 @@ func NewDataAzurermEventgridTopic(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/eventgrid_topic azurerm_eventgrid_topic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/eventgrid_topic azurerm_eventgrid_topic} Data Source.
 func NewDataAzurermEventgridTopic_Override(d DataAzurermEventgridTopic, scope constructs.Construct, id *string, config *DataAzurermEventgridTopicConfig) {
 	_init_.Initialize()
 
@@ -500,17 +487,6 @@ func (j *jsiiProxy_DataAzurermEventgridTopic)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermEventgridTopic)SetTags(val *map[string]*string) {
-	if err := j.validateSetTagsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tags",
 		val,
 	)
 }
@@ -804,14 +780,6 @@ func (d *jsiiProxy_DataAzurermEventgridTopic) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermEventgridTopic) ResetTags() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTags",
 		nil, // no parameters
 	)
 }

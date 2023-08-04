@@ -44,6 +44,10 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) va
 	return nil
 }
 
+func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) validatePutLogScrubbingParameters(value *WebApplicationFirewallPolicyPolicySettingsLogScrubbing) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

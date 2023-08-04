@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/virtual_network azurerm_virtual_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/virtual_network azurerm_virtual_network}.
 type VirtualNetwork interface {
 	cdktf.TerraformResource
 	AddressSpace() *[]*string
@@ -42,6 +42,8 @@ type VirtualNetwork interface {
 	EdgeZone() *string
 	SetEdgeZone(val *string)
 	EdgeZoneInput() *string
+	Encryption() VirtualNetworkEncryptionOutputReference
+	EncryptionInput() *VirtualNetworkEncryption
 	FlowTimeoutInMinutes() *float64
 	SetFlowTimeoutInMinutes(val *float64)
 	FlowTimeoutInMinutesInput() *float64
@@ -121,12 +123,14 @@ type VirtualNetwork interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDdosProtectionPlan(value *VirtualNetworkDdosProtectionPlan)
+	PutEncryption(value *VirtualNetworkEncryption)
 	PutSubnet(value interface{})
 	PutTimeouts(value *VirtualNetworkTimeouts)
 	ResetBgpCommunity()
 	ResetDdosProtectionPlan()
 	ResetDnsServers()
 	ResetEdgeZone()
+	ResetEncryption()
 	ResetFlowTimeoutInMinutes()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -295,6 +299,26 @@ func (j *jsiiProxy_VirtualNetwork) EdgeZoneInput() *string {
 	_jsii_.Get(
 		j,
 		"edgeZoneInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetwork) Encryption() VirtualNetworkEncryptionOutputReference {
+	var returns VirtualNetworkEncryptionOutputReference
+	_jsii_.Get(
+		j,
+		"encryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetwork) EncryptionInput() *VirtualNetworkEncryption {
+	var returns *VirtualNetworkEncryption
+	_jsii_.Get(
+		j,
+		"encryptionInput",
 		&returns,
 	)
 	return returns
@@ -581,7 +605,7 @@ func (j *jsiiProxy_VirtualNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
 func NewVirtualNetwork(scope constructs.Construct, id *string, config *VirtualNetworkConfig) VirtualNetwork {
 	_init_.Initialize()
 
@@ -599,7 +623,7 @@ func NewVirtualNetwork(scope constructs.Construct, id *string, config *VirtualNe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
 func NewVirtualNetwork_Override(v VirtualNetwork, scope constructs.Construct, id *string, config *VirtualNetworkConfig) {
 	_init_.Initialize()
 
@@ -1065,6 +1089,17 @@ func (v *jsiiProxy_VirtualNetwork) PutDdosProtectionPlan(value *VirtualNetworkDd
 	)
 }
 
+func (v *jsiiProxy_VirtualNetwork) PutEncryption(value *VirtualNetworkEncryption) {
+	if err := v.validatePutEncryptionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putEncryption",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VirtualNetwork) PutSubnet(value interface{}) {
 	if err := v.validatePutSubnetParameters(value); err != nil {
 		panic(err)
@@ -1115,6 +1150,14 @@ func (v *jsiiProxy_VirtualNetwork) ResetEdgeZone() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetEdgeZone",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetwork) ResetEncryption() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetEncryption",
 		nil, // no parameters
 	)
 }

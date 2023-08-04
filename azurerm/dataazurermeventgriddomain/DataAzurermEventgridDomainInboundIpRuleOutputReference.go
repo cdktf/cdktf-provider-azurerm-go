@@ -11,8 +11,6 @@ import (
 type DataAzurermEventgridDomainInboundIpRuleOutputReference interface {
 	cdktf.ComplexObject
 	Action() *string
-	SetAction(val *string)
-	ActionInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,11 +28,9 @@ type DataAzurermEventgridDomainInboundIpRuleOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAzurermEventgridDomainInboundIpRule
+	SetInternalValue(val *DataAzurermEventgridDomainInboundIpRule)
 	IpMask() *string
-	SetIpMask(val *string)
-	IpMaskInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,8 +63,6 @@ type DataAzurermEventgridDomainInboundIpRuleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetAction()
-	ResetIpMask()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -89,16 +83,6 @@ func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) Actio
 	_jsii_.Get(
 		j,
 		"action",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) ActionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"actionInput",
 		&returns,
 	)
 	return returns
@@ -144,8 +128,8 @@ func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) InternalValue() *DataAzurermEventgridDomainInboundIpRule {
+	var returns *DataAzurermEventgridDomainInboundIpRule
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -159,16 +143,6 @@ func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) IpMas
 	_jsii_.Get(
 		j,
 		"ipMask",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) IpMaskInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ipMaskInput",
 		&returns,
 	)
 	return returns
@@ -222,17 +196,6 @@ func NewDataAzurermEventgridDomainInboundIpRuleOutputReference_Override(d DataAz
 	)
 }
 
-func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference)SetAction(val *string) {
-	if err := j.validateSetActionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"action",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -255,24 +218,13 @@ func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference)SetInternalValue(val *DataAzurermEventgridDomainInboundIpRule) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference)SetIpMask(val *string) {
-	if err := j.validateSetIpMaskParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ipMask",
 		val,
 	)
 }
@@ -483,22 +435,6 @@ func (d *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) Inter
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) ResetAction() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAction",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) ResetIpMask() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIpMask",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

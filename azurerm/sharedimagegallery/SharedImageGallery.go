@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/shared_image_gallery azurerm_shared_image_gallery}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/shared_image_gallery azurerm_shared_image_gallery}.
 type SharedImageGallery interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,8 @@ type SharedImageGallery interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	Sharing() SharedImageGallerySharingOutputReference
+	SharingInput() *SharedImageGallerySharing
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -104,12 +106,14 @@ type SharedImageGallery interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutSharing(value *SharedImageGallerySharing)
 	PutTimeouts(value *SharedImageGalleryTimeouts)
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSharing()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -357,6 +361,26 @@ func (j *jsiiProxy_SharedImageGallery) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SharedImageGallery) Sharing() SharedImageGallerySharingOutputReference {
+	var returns SharedImageGallerySharingOutputReference
+	_jsii_.Get(
+		j,
+		"sharing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SharedImageGallery) SharingInput() *SharedImageGallerySharing {
+	var returns *SharedImageGallerySharing
+	_jsii_.Get(
+		j,
+		"sharingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SharedImageGallery) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -438,7 +462,7 @@ func (j *jsiiProxy_SharedImageGallery) UniqueName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/shared_image_gallery azurerm_shared_image_gallery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/shared_image_gallery azurerm_shared_image_gallery} Resource.
 func NewSharedImageGallery(scope constructs.Construct, id *string, config *SharedImageGalleryConfig) SharedImageGallery {
 	_init_.Initialize()
 
@@ -456,7 +480,7 @@ func NewSharedImageGallery(scope constructs.Construct, id *string, config *Share
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/shared_image_gallery azurerm_shared_image_gallery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/shared_image_gallery azurerm_shared_image_gallery} Resource.
 func NewSharedImageGallery_Override(s SharedImageGallery, scope constructs.Construct, id *string, config *SharedImageGalleryConfig) {
 	_init_.Initialize()
 
@@ -867,6 +891,17 @@ func (s *jsiiProxy_SharedImageGallery) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_SharedImageGallery) PutSharing(value *SharedImageGallerySharing) {
+	if err := s.validatePutSharingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSharing",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SharedImageGallery) PutTimeouts(value *SharedImageGalleryTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -898,6 +933,14 @@ func (s *jsiiProxy_SharedImageGallery) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SharedImageGallery) ResetSharing() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSharing",
 		nil, // no parameters
 	)
 }

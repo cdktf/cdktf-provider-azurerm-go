@@ -27,6 +27,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dnsServersInput", GoGetter: "DnsServersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "edgeZone", GoGetter: "EdgeZone"},
 			_jsii_.MemberProperty{JsiiProperty: "edgeZoneInput", GoGetter: "EdgeZoneInput"},
+			_jsii_.MemberProperty{JsiiProperty: "encryption", GoGetter: "Encryption"},
+			_jsii_.MemberProperty{JsiiProperty: "encryptionInput", GoGetter: "EncryptionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "flowTimeoutInMinutes", GoGetter: "FlowTimeoutInMinutes"},
 			_jsii_.MemberProperty{JsiiProperty: "flowTimeoutInMinutesInput", GoGetter: "FlowTimeoutInMinutesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
@@ -55,6 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putDdosProtectionPlan", GoMethod: "PutDdosProtectionPlan"},
+			_jsii_.MemberMethod{JsiiMethod: "putEncryption", GoMethod: "PutEncryption"},
 			_jsii_.MemberMethod{JsiiMethod: "putSubnet", GoMethod: "PutSubnet"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -62,6 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDdosProtectionPlan", GoMethod: "ResetDdosProtectionPlan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsServers", GoMethod: "ResetDnsServers"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEdgeZone", GoMethod: "ResetEdgeZone"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEncryption", GoMethod: "ResetEncryption"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFlowTimeoutInMinutes", GoMethod: "ResetFlowTimeoutInMinutes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -130,6 +134,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_VirtualNetworkDdosProtectionPlanOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.virtualNetwork.VirtualNetworkEncryption",
+		reflect.TypeOf((*VirtualNetworkEncryption)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.virtualNetwork.VirtualNetworkEncryptionOutputReference",
+		reflect.TypeOf((*VirtualNetworkEncryptionOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enforcement", GoGetter: "Enforcement"},
+			_jsii_.MemberProperty{JsiiProperty: "enforcementInput", GoGetter: "EnforcementInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_VirtualNetworkEncryptionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

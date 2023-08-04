@@ -35,6 +35,8 @@ type WebApplicationFirewallPolicyPolicySettingsOutputReference interface {
 	Fqn() *string
 	InternalValue() *WebApplicationFirewallPolicyPolicySettings
 	SetInternalValue(val *WebApplicationFirewallPolicyPolicySettings)
+	LogScrubbing() WebApplicationFirewallPolicyPolicySettingsLogScrubbingOutputReference
+	LogScrubbingInput() *WebApplicationFirewallPolicyPolicySettingsLogScrubbing
 	MaxRequestBodySizeInKb() *float64
 	SetMaxRequestBodySizeInKb(val *float64)
 	MaxRequestBodySizeInKbInput() *float64
@@ -76,8 +78,10 @@ type WebApplicationFirewallPolicyPolicySettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutLogScrubbing(value *WebApplicationFirewallPolicyPolicySettingsLogScrubbing)
 	ResetEnabled()
 	ResetFileUploadLimitInMb()
+	ResetLogScrubbing()
 	ResetMaxRequestBodySizeInKb()
 	ResetMode()
 	ResetRequestBodyCheck()
@@ -181,6 +185,26 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) LogScrubbing() WebApplicationFirewallPolicyPolicySettingsLogScrubbingOutputReference {
+	var returns WebApplicationFirewallPolicyPolicySettingsLogScrubbingOutputReference
+	_jsii_.Get(
+		j,
+		"logScrubbing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) LogScrubbingInput() *WebApplicationFirewallPolicyPolicySettingsLogScrubbing {
+	var returns *WebApplicationFirewallPolicyPolicySettingsLogScrubbing
+	_jsii_.Get(
+		j,
+		"logScrubbingInput",
 		&returns,
 	)
 	return returns
@@ -590,6 +614,17 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) In
 	return returns
 }
 
+func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) PutLogScrubbing(value *WebApplicationFirewallPolicyPolicySettingsLogScrubbing) {
+	if err := w.validatePutLogScrubbingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putLogScrubbing",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		w,
@@ -602,6 +637,14 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) Re
 	_jsii_.InvokeVoid(
 		w,
 		"resetFileUploadLimitInMb",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) ResetLogScrubbing() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetLogScrubbing",
 		nil, // no parameters
 	)
 }

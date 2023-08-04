@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/gallery_application azurerm_gallery_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/gallery_application azurerm_gallery_application}.
 type GalleryApplication interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -546,7 +546,7 @@ func (j *jsiiProxy_GalleryApplication) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/gallery_application azurerm_gallery_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/gallery_application azurerm_gallery_application} Resource.
 func NewGalleryApplication(scope constructs.Construct, id *string, config *GalleryApplicationConfig) GalleryApplication {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewGalleryApplication(scope constructs.Construct, id *string, config *Galle
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/gallery_application azurerm_gallery_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/gallery_application azurerm_gallery_application} Resource.
 func NewGalleryApplication_Override(g GalleryApplication, scope constructs.Construct, id *string, config *GalleryApplicationConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph}.
 type CosmosdbGremlinGraph interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -617,7 +617,7 @@ func (j *jsiiProxy_CosmosdbGremlinGraph) UniqueKeyInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph} Resource.
 func NewCosmosdbGremlinGraph(scope constructs.Construct, id *string, config *CosmosdbGremlinGraphConfig) CosmosdbGremlinGraph {
 	_init_.Initialize()
 
@@ -635,7 +635,7 @@ func NewCosmosdbGremlinGraph(scope constructs.Construct, id *string, config *Cos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph} Resource.
 func NewCosmosdbGremlinGraph_Override(c CosmosdbGremlinGraph, scope constructs.Construct, id *string, config *CosmosdbGremlinGraphConfig) {
 	_init_.Initialize()
 

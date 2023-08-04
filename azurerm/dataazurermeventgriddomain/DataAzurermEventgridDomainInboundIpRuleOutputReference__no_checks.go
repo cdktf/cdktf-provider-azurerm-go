@@ -48,10 +48,6 @@ func (d *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) validateSetActionParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -60,11 +56,7 @@ func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) validateSetIpMaskParameters(val *string) error {
+func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleOutputReference) validateSetInternalValueParameters(val *DataAzurermEventgridDomainInboundIpRule) error {
 	return nil
 }
 

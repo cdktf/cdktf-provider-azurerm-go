@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/pim_active_role_assignment azurerm_pim_active_role_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/pim_active_role_assignment azurerm_pim_active_role_assignment}.
 type PimActiveRoleAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_PimActiveRoleAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/pim_active_role_assignment azurerm_pim_active_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/pim_active_role_assignment azurerm_pim_active_role_assignment} Resource.
 func NewPimActiveRoleAssignment(scope constructs.Construct, id *string, config *PimActiveRoleAssignmentConfig) PimActiveRoleAssignment {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewPimActiveRoleAssignment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/pim_active_role_assignment azurerm_pim_active_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/pim_active_role_assignment azurerm_pim_active_role_assignment} Resource.
 func NewPimActiveRoleAssignment_Override(p PimActiveRoleAssignment, scope constructs.Construct, id *string, config *PimActiveRoleAssignmentConfig) {
 	_init_.Initialize()
 

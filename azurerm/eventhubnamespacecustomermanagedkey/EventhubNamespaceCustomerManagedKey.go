@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/eventhub_namespace_customer_managed_key azurerm_eventhub_namespace_customer_managed_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/eventhub_namespace_customer_managed_key azurerm_eventhub_namespace_customer_managed_key}.
 type EventhubNamespaceCustomerManagedKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,6 +42,9 @@ type EventhubNamespaceCustomerManagedKey interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InfrastructureEncryptionEnabled() interface{}
+	SetInfrastructureEncryptionEnabled(val interface{})
+	InfrastructureEncryptionEnabledInput() interface{}
 	KeyVaultKeyIds() *[]*string
 	SetKeyVaultKeyIds(val *[]*string)
 	KeyVaultKeyIdsInput() *[]*string
@@ -96,6 +99,7 @@ type EventhubNamespaceCustomerManagedKey interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *EventhubNamespaceCustomerManagedKeyTimeouts)
 	ResetId()
+	ResetInfrastructureEncryptionEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -235,6 +239,26 @@ func (j *jsiiProxy_EventhubNamespaceCustomerManagedKey) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_EventhubNamespaceCustomerManagedKey) InfrastructureEncryptionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"infrastructureEncryptionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventhubNamespaceCustomerManagedKey) InfrastructureEncryptionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"infrastructureEncryptionEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EventhubNamespaceCustomerManagedKey) KeyVaultKeyIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_EventhubNamespaceCustomerManagedKey) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/eventhub_namespace_customer_managed_key azurerm_eventhub_namespace_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/eventhub_namespace_customer_managed_key azurerm_eventhub_namespace_customer_managed_key} Resource.
 func NewEventhubNamespaceCustomerManagedKey(scope constructs.Construct, id *string, config *EventhubNamespaceCustomerManagedKeyConfig) EventhubNamespaceCustomerManagedKey {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewEventhubNamespaceCustomerManagedKey(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/eventhub_namespace_customer_managed_key azurerm_eventhub_namespace_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/eventhub_namespace_customer_managed_key azurerm_eventhub_namespace_customer_managed_key} Resource.
 func NewEventhubNamespaceCustomerManagedKey_Override(e EventhubNamespaceCustomerManagedKey, scope constructs.Construct, id *string, config *EventhubNamespaceCustomerManagedKeyConfig) {
 	_init_.Initialize()
 
@@ -441,6 +465,17 @@ func (j *jsiiProxy_EventhubNamespaceCustomerManagedKey)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EventhubNamespaceCustomerManagedKey)SetInfrastructureEncryptionEnabled(val interface{}) {
+	if err := j.validateSetInfrastructureEncryptionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"infrastructureEncryptionEnabled",
 		val,
 	)
 }
@@ -767,6 +802,14 @@ func (e *jsiiProxy_EventhubNamespaceCustomerManagedKey) ResetId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EventhubNamespaceCustomerManagedKey) ResetInfrastructureEncryptionEnabled() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetInfrastructureEncryptionEnabled",
 		nil, // no parameters
 	)
 }

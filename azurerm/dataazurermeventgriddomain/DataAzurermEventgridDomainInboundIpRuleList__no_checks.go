@@ -12,10 +12,6 @@ func (d *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

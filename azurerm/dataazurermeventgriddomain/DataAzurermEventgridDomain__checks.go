@@ -111,37 +111,6 @@ func (d *jsiiProxy_DataAzurermEventgridDomain) validateOverrideLogicalIdParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermEventgridDomain) validatePutInboundIpRuleParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataAzurermEventgridDomainInboundIpRule:
-		value := value.(*[]*DataAzurermEventgridDomainInboundIpRule)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataAzurermEventgridDomainInboundIpRule:
-		value_ := value.([]*DataAzurermEventgridDomainInboundIpRule)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAzurermEventgridDomainInboundIpRule; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func (d *jsiiProxy_DataAzurermEventgridDomain) validatePutTimeoutsParameters(value *DataAzurermEventgridDomainTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -258,35 +227,7 @@ func (j *jsiiProxy_DataAzurermEventgridDomain) validateSetNameParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermEventgridDomain) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataAzurermEventgridDomain) validateSetResourceGroupNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermEventgridDomain) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

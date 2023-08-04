@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/maintenance_assignment_virtual_machine azurerm_maintenance_assignment_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/maintenance_assignment_virtual_machine azurerm_maintenance_assignment_virtual_machine}.
 type MaintenanceAssignmentVirtualMachine interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_MaintenanceAssignmentVirtualMachine) VirtualMachineIdInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/maintenance_assignment_virtual_machine azurerm_maintenance_assignment_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/maintenance_assignment_virtual_machine azurerm_maintenance_assignment_virtual_machine} Resource.
 func NewMaintenanceAssignmentVirtualMachine(scope constructs.Construct, id *string, config *MaintenanceAssignmentVirtualMachineConfig) MaintenanceAssignmentVirtualMachine {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewMaintenanceAssignmentVirtualMachine(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/maintenance_assignment_virtual_machine azurerm_maintenance_assignment_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/maintenance_assignment_virtual_machine azurerm_maintenance_assignment_virtual_machine} Resource.
 func NewMaintenanceAssignmentVirtualMachine_Override(m MaintenanceAssignmentVirtualMachine, scope constructs.Construct, id *string, config *MaintenanceAssignmentVirtualMachineConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/eventhub_cluster azurerm_eventhub_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/eventhub_cluster azurerm_eventhub_cluster}.
 type EventhubCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_EventhubCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/eventhub_cluster azurerm_eventhub_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/eventhub_cluster azurerm_eventhub_cluster} Resource.
 func NewEventhubCluster(scope constructs.Construct, id *string, config *EventhubClusterConfig) EventhubCluster {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewEventhubCluster(scope constructs.Construct, id *string, config *Eventhub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/eventhub_cluster azurerm_eventhub_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/eventhub_cluster azurerm_eventhub_cluster} Resource.
 func NewEventhubCluster_Override(e EventhubCluster, scope constructs.Construct, id *string, config *EventhubClusterConfig) {
 	_init_.Initialize()
 

@@ -52,6 +52,10 @@ func (s *jsiiProxy_SharedImageGallery) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (s *jsiiProxy_SharedImageGallery) validatePutSharingParameters(value *SharedImageGallerySharing) error {
+	return nil
+}
+
 func (s *jsiiProxy_SharedImageGallery) validatePutTimeoutsParameters(value *SharedImageGalleryTimeouts) error {
 	return nil
 }

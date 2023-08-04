@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/storage_share azurerm_storage_share}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/storage_share azurerm_storage_share}.
 type DataAzurermStorageShare interface {
 	cdktf.TerraformDataSource
 	Acl() DataAzurermStorageShareAclList
@@ -398,7 +398,7 @@ func (j *jsiiProxy_DataAzurermStorageShare) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/storage_share azurerm_storage_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/storage_share azurerm_storage_share} Data Source.
 func NewDataAzurermStorageShare(scope constructs.Construct, id *string, config *DataAzurermStorageShareConfig) DataAzurermStorageShare {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewDataAzurermStorageShare(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/storage_share azurerm_storage_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/storage_share azurerm_storage_share} Data Source.
 func NewDataAzurermStorageShare_Override(d DataAzurermStorageShare, scope constructs.Construct, id *string, config *DataAzurermStorageShareConfig) {
 	_init_.Initialize()
 

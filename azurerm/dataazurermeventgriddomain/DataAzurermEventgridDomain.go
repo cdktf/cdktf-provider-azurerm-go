@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/eventgrid_domain azurerm_eventgrid_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/eventgrid_domain azurerm_eventgrid_domain}.
 type DataAzurermEventgridDomain interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -37,7 +37,6 @@ type DataAzurermEventgridDomain interface {
 	SetId(val *string)
 	IdInput() *string
 	InboundIpRule() DataAzurermEventgridDomainInboundIpRuleList
-	InboundIpRuleInput() interface{}
 	InputMappingDefaultValues() DataAzurermEventgridDomainInputMappingDefaultValuesList
 	InputMappingFields() DataAzurermEventgridDomainInputMappingFieldsList
 	InputSchema() *string
@@ -56,18 +55,14 @@ type DataAzurermEventgridDomain interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
-	PublicNetworkAccessEnabled() interface{}
-	SetPublicNetworkAccessEnabled(val interface{})
-	PublicNetworkAccessEnabledInput() interface{}
+	PublicNetworkAccessEnabled() cdktf.IResolvable
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
 	SecondaryAccessKey() *string
-	Tags() *map[string]*string
-	SetTags(val *map[string]*string)
-	TagsInput() *map[string]*string
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -101,15 +96,11 @@ type DataAzurermEventgridDomain interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutInboundIpRule(value interface{})
 	PutTimeouts(value *DataAzurermEventgridDomainTimeouts)
 	ResetId()
-	ResetInboundIpRule()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPublicNetworkAccessEnabled()
-	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -236,16 +227,6 @@ func (j *jsiiProxy_DataAzurermEventgridDomain) InboundIpRule() DataAzurermEventg
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermEventgridDomain) InboundIpRuleInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"inboundIpRuleInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAzurermEventgridDomain) InputMappingDefaultValues() DataAzurermEventgridDomainInputMappingDefaultValuesList {
 	var returns DataAzurermEventgridDomainInputMappingDefaultValuesList
 	_jsii_.Get(
@@ -346,21 +327,11 @@ func (j *jsiiProxy_DataAzurermEventgridDomain) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermEventgridDomain) PublicNetworkAccessEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAzurermEventgridDomain) PublicNetworkAccessEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"publicNetworkAccessEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermEventgridDomain) PublicNetworkAccessEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"publicNetworkAccessEnabledInput",
 		&returns,
 	)
 	return returns
@@ -406,21 +377,11 @@ func (j *jsiiProxy_DataAzurermEventgridDomain) SecondaryAccessKey() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermEventgridDomain) Tags() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_DataAzurermEventgridDomain) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"tags",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermEventgridDomain) TagsInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"tagsInput",
 		&returns,
 	)
 	return returns
@@ -477,7 +438,7 @@ func (j *jsiiProxy_DataAzurermEventgridDomain) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/eventgrid_domain azurerm_eventgrid_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/eventgrid_domain azurerm_eventgrid_domain} Data Source.
 func NewDataAzurermEventgridDomain(scope constructs.Construct, id *string, config *DataAzurermEventgridDomainConfig) DataAzurermEventgridDomain {
 	_init_.Initialize()
 
@@ -495,7 +456,7 @@ func NewDataAzurermEventgridDomain(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/eventgrid_domain azurerm_eventgrid_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/eventgrid_domain azurerm_eventgrid_domain} Data Source.
 func NewDataAzurermEventgridDomain_Override(d DataAzurermEventgridDomain, scope constructs.Construct, id *string, config *DataAzurermEventgridDomainConfig) {
 	_init_.Initialize()
 
@@ -574,17 +535,6 @@ func (j *jsiiProxy_DataAzurermEventgridDomain)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_DataAzurermEventgridDomain)SetPublicNetworkAccessEnabled(val interface{}) {
-	if err := j.validateSetPublicNetworkAccessEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"publicNetworkAccessEnabled",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataAzurermEventgridDomain)SetResourceGroupName(val *string) {
 	if err := j.validateSetResourceGroupNameParameters(val); err != nil {
 		panic(err)
@@ -592,17 +542,6 @@ func (j *jsiiProxy_DataAzurermEventgridDomain)SetResourceGroupName(val *string) 
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermEventgridDomain)SetTags(val *map[string]*string) {
-	if err := j.validateSetTagsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tags",
 		val,
 	)
 }
@@ -873,17 +812,6 @@ func (d *jsiiProxy_DataAzurermEventgridDomain) OverrideLogicalId(newLogicalId *s
 	)
 }
 
-func (d *jsiiProxy_DataAzurermEventgridDomain) PutInboundIpRule(value interface{}) {
-	if err := d.validatePutInboundIpRuleParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putInboundIpRule",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataAzurermEventgridDomain) PutTimeouts(value *DataAzurermEventgridDomainTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -903,34 +831,10 @@ func (d *jsiiProxy_DataAzurermEventgridDomain) ResetId() {
 	)
 }
 
-func (d *jsiiProxy_DataAzurermEventgridDomain) ResetInboundIpRule() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetInboundIpRule",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataAzurermEventgridDomain) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermEventgridDomain) ResetPublicNetworkAccessEnabled() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPublicNetworkAccessEnabled",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermEventgridDomain) ResetTags() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTags",
 		nil, // no parameters
 	)
 }

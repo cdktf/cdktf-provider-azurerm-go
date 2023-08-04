@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/logic_app_integration_account_schema azurerm_logic_app_integration_account_schema}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/logic_app_integration_account_schema azurerm_logic_app_integration_account_schema}.
 type LogicAppIntegrationAccountSchema interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -450,7 +450,7 @@ func (j *jsiiProxy_LogicAppIntegrationAccountSchema) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/logic_app_integration_account_schema azurerm_logic_app_integration_account_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/logic_app_integration_account_schema azurerm_logic_app_integration_account_schema} Resource.
 func NewLogicAppIntegrationAccountSchema(scope constructs.Construct, id *string, config *LogicAppIntegrationAccountSchemaConfig) LogicAppIntegrationAccountSchema {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewLogicAppIntegrationAccountSchema(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/logic_app_integration_account_schema azurerm_logic_app_integration_account_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/logic_app_integration_account_schema azurerm_logic_app_integration_account_schema} Resource.
 func NewLogicAppIntegrationAccountSchema_Override(l LogicAppIntegrationAccountSchema, scope constructs.Construct, id *string, config *LogicAppIntegrationAccountSchemaConfig) {
 	_init_.Initialize()
 

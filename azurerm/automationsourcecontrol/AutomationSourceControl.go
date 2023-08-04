@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/automation_source_control azurerm_automation_source_control}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/automation_source_control azurerm_automation_source_control}.
 type AutomationSourceControl interface {
 	cdktf.TerraformResource
 	AutomaticSync() interface{}
@@ -544,7 +544,7 @@ func (j *jsiiProxy_AutomationSourceControl) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/automation_source_control azurerm_automation_source_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/automation_source_control azurerm_automation_source_control} Resource.
 func NewAutomationSourceControl(scope constructs.Construct, id *string, config *AutomationSourceControlConfig) AutomationSourceControl {
 	_init_.Initialize()
 
@@ -562,7 +562,7 @@ func NewAutomationSourceControl(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/resources/automation_source_control azurerm_automation_source_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/automation_source_control azurerm_automation_source_control} Resource.
 func NewAutomationSourceControl_Override(a AutomationSourceControl, scope constructs.Construct, id *string, config *AutomationSourceControlConfig) {
 	_init_.Initialize()
 

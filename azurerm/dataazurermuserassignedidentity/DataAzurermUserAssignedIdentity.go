@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/user_assigned_identity azurerm_user_assigned_identity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/user_assigned_identity azurerm_user_assigned_identity}.
 type DataAzurermUserAssignedIdentity interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataAzurermUserAssignedIdentity) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/user_assigned_identity azurerm_user_assigned_identity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/user_assigned_identity azurerm_user_assigned_identity} Data Source.
 func NewDataAzurermUserAssignedIdentity(scope constructs.Construct, id *string, config *DataAzurermUserAssignedIdentityConfig) DataAzurermUserAssignedIdentity {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataAzurermUserAssignedIdentity(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.67.0/docs/data-sources/user_assigned_identity azurerm_user_assigned_identity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/user_assigned_identity azurerm_user_assigned_identity} Data Source.
 func NewDataAzurermUserAssignedIdentity_Override(d DataAzurermUserAssignedIdentity, scope constructs.Construct, id *string, config *DataAzurermUserAssignedIdentityConfig) {
 	_init_.Initialize()
 
