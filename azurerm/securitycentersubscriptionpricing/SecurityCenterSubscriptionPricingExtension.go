@@ -1,0 +1,10 @@
+package securitycentersubscriptionpricing
+
+
+type SecurityCenterSubscriptionPricingExtension struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/security_center_subscription_pricing#name SecurityCenterSubscriptionPricing#name}.
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/security_center_subscription_pricing#additional_extension_properties SecurityCenterSubscriptionPricing#additional_extension_properties}.
+	AdditionalExtensionProperties *map[string]*string `field:"optional" json:"additionalExtensionProperties" yaml:"additionalExtensionProperties"`
+}
+

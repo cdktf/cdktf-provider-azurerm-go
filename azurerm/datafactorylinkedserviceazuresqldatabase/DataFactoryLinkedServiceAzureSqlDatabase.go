@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/data_factory_linked_service_azure_sql_database azurerm_data_factory_linked_service_azure_sql_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/data_factory_linked_service_azure_sql_database azurerm_data_factory_linked_service_azure_sql_database}.
 type DataFactoryLinkedServiceAzureSqlDatabase interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -644,7 +644,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) UseManagedIdentityI
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/data_factory_linked_service_azure_sql_database azurerm_data_factory_linked_service_azure_sql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/data_factory_linked_service_azure_sql_database azurerm_data_factory_linked_service_azure_sql_database} Resource.
 func NewDataFactoryLinkedServiceAzureSqlDatabase(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureSqlDatabaseConfig) DataFactoryLinkedServiceAzureSqlDatabase {
 	_init_.Initialize()
 
@@ -662,7 +662,7 @@ func NewDataFactoryLinkedServiceAzureSqlDatabase(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/data_factory_linked_service_azure_sql_database azurerm_data_factory_linked_service_azure_sql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/data_factory_linked_service_azure_sql_database azurerm_data_factory_linked_service_azure_sql_database} Resource.
 func NewDataFactoryLinkedServiceAzureSqlDatabase_Override(d DataFactoryLinkedServiceAzureSqlDatabase, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureSqlDatabaseConfig) {
 	_init_.Initialize()
 

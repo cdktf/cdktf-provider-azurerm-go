@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/security_center_subscription_pricing azurerm_security_center_subscription_pricing}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/security_center_subscription_pricing azurerm_security_center_subscription_pricing}.
 type SecurityCenterSubscriptionPricing interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,8 @@ type SecurityCenterSubscriptionPricing interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Extension() SecurityCenterSubscriptionPricingExtensionList
+	ExtensionInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -97,7 +99,9 @@ type SecurityCenterSubscriptionPricing interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutExtension(value interface{})
 	PutTimeouts(value *SecurityCenterSubscriptionPricingTimeouts)
+	ResetExtension()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -165,6 +169,26 @@ func (j *jsiiProxy_SecurityCenterSubscriptionPricing) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityCenterSubscriptionPricing) Extension() SecurityCenterSubscriptionPricingExtensionList {
+	var returns SecurityCenterSubscriptionPricingExtensionList
+	_jsii_.Get(
+		j,
+		"extension",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityCenterSubscriptionPricing) ExtensionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"extensionInput",
 		&returns,
 	)
 	return returns
@@ -381,7 +405,7 @@ func (j *jsiiProxy_SecurityCenterSubscriptionPricing) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/security_center_subscription_pricing azurerm_security_center_subscription_pricing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/security_center_subscription_pricing azurerm_security_center_subscription_pricing} Resource.
 func NewSecurityCenterSubscriptionPricing(scope constructs.Construct, id *string, config *SecurityCenterSubscriptionPricingConfig) SecurityCenterSubscriptionPricing {
 	_init_.Initialize()
 
@@ -399,7 +423,7 @@ func NewSecurityCenterSubscriptionPricing(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/security_center_subscription_pricing azurerm_security_center_subscription_pricing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/security_center_subscription_pricing azurerm_security_center_subscription_pricing} Resource.
 func NewSecurityCenterSubscriptionPricing_Override(s SecurityCenterSubscriptionPricing, scope constructs.Construct, id *string, config *SecurityCenterSubscriptionPricingConfig) {
 	_init_.Initialize()
 
@@ -788,6 +812,17 @@ func (s *jsiiProxy_SecurityCenterSubscriptionPricing) OverrideLogicalId(newLogic
 	)
 }
 
+func (s *jsiiProxy_SecurityCenterSubscriptionPricing) PutExtension(value interface{}) {
+	if err := s.validatePutExtensionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putExtension",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SecurityCenterSubscriptionPricing) PutTimeouts(value *SecurityCenterSubscriptionPricingTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -796,6 +831,14 @@ func (s *jsiiProxy_SecurityCenterSubscriptionPricing) PutTimeouts(value *Securit
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SecurityCenterSubscriptionPricing) ResetExtension() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExtension",
+		nil, // no parameters
 	)
 }
 

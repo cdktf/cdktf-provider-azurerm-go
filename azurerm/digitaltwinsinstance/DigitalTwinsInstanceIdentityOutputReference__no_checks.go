@@ -56,6 +56,10 @@ func (j *jsiiProxy_DigitalTwinsInstanceIdentityOutputReference) validateSetCompl
 	return nil
 }
 
+func (j *jsiiProxy_DigitalTwinsInstanceIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DigitalTwinsInstanceIdentityOutputReference) validateSetInternalValueParameters(val *DigitalTwinsInstanceIdentity) error {
 	return nil
 }

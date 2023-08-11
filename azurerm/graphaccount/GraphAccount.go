@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/graph_account azurerm_graph_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/graph_account azurerm_graph_account}.
 type GraphAccount interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GraphAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/graph_account azurerm_graph_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/graph_account azurerm_graph_account} Resource.
 func NewGraphAccount(scope constructs.Construct, id *string, config *GraphAccountConfig) GraphAccount {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGraphAccount(scope constructs.Construct, id *string, config *GraphAccoun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/graph_account azurerm_graph_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/graph_account azurerm_graph_account} Resource.
 func NewGraphAccount_Override(g GraphAccount, scope constructs.Construct, id *string, config *GraphAccountConfig) {
 	_init_.Initialize()
 

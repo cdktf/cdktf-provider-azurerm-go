@@ -110,6 +110,9 @@ type KubernetesClusterDefaultNodePoolOutputReference interface {
 	ScaleDownMode() *string
 	SetScaleDownMode(val *string)
 	ScaleDownModeInput() *string
+	SnapshotId() *string
+	SetSnapshotId(val *string)
+	SnapshotIdInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -199,6 +202,7 @@ type KubernetesClusterDefaultNodePoolOutputReference interface {
 	ResetPodSubnetId()
 	ResetProximityPlacementGroupId()
 	ResetScaleDownMode()
+	ResetSnapshotId()
 	ResetTags()
 	ResetTemporaryNameForRotation()
 	ResetType()
@@ -832,6 +836,26 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ScaleDownMod
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) SnapshotId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) SnapshotIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -1364,6 +1388,17 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetScaleDownM
 	_jsii_.Set(
 		j,
 		"scaleDownMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference)SetSnapshotId(val *string) {
+	if err := j.validateSetSnapshotIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"snapshotId",
 		val,
 	)
 }
@@ -1920,6 +1955,14 @@ func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetScaleDo
 	_jsii_.InvokeVoid(
 		k,
 		"resetScaleDownMode",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetSnapshotId() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetSnapshotId",
 		nil, // no parameters
 	)
 }

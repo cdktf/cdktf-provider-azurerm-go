@@ -48,6 +48,10 @@ func (s *jsiiProxy_SpringCloudConfigurationServiceRepositoryOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudConfigurationServiceRepositoryOutputReference) validateSetCaCertificateIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudConfigurationServiceRepositoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

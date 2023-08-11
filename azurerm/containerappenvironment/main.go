@@ -56,6 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInfrastructureSubnetId", GoMethod: "ResetInfrastructureSubnetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInternalLoadBalancerEnabled", GoMethod: "ResetInternalLoadBalancerEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLogAnalyticsWorkspaceId", GoMethod: "ResetLogAnalyticsWorkspaceId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},

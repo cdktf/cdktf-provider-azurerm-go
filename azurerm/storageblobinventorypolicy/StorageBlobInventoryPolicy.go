@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/storage_blob_inventory_policy azurerm_storage_blob_inventory_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/storage_blob_inventory_policy azurerm_storage_blob_inventory_policy}.
 type StorageBlobInventoryPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_StorageBlobInventoryPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/storage_blob_inventory_policy azurerm_storage_blob_inventory_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/storage_blob_inventory_policy azurerm_storage_blob_inventory_policy} Resource.
 func NewStorageBlobInventoryPolicy(scope constructs.Construct, id *string, config *StorageBlobInventoryPolicyConfig) StorageBlobInventoryPolicy {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewStorageBlobInventoryPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/storage_blob_inventory_policy azurerm_storage_blob_inventory_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/storage_blob_inventory_policy azurerm_storage_blob_inventory_policy} Resource.
 func NewStorageBlobInventoryPolicy_Override(s StorageBlobInventoryPolicy, scope constructs.Construct, id *string, config *StorageBlobInventoryPolicyConfig) {
 	_init_.Initialize()
 

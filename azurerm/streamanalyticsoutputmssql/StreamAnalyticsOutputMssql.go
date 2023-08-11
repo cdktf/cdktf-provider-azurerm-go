@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/stream_analytics_output_mssql azurerm_stream_analytics_output_mssql}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/stream_analytics_output_mssql azurerm_stream_analytics_output_mssql}.
 type StreamAnalyticsOutputMssql interface {
 	cdktf.TerraformResource
 	AuthenticationMode() *string
@@ -568,7 +568,7 @@ func (j *jsiiProxy_StreamAnalyticsOutputMssql) UserInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/stream_analytics_output_mssql azurerm_stream_analytics_output_mssql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/stream_analytics_output_mssql azurerm_stream_analytics_output_mssql} Resource.
 func NewStreamAnalyticsOutputMssql(scope constructs.Construct, id *string, config *StreamAnalyticsOutputMssqlConfig) StreamAnalyticsOutputMssql {
 	_init_.Initialize()
 
@@ -586,7 +586,7 @@ func NewStreamAnalyticsOutputMssql(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/stream_analytics_output_mssql azurerm_stream_analytics_output_mssql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/stream_analytics_output_mssql azurerm_stream_analytics_output_mssql} Resource.
 func NewStreamAnalyticsOutputMssql_Override(s StreamAnalyticsOutputMssql, scope constructs.Construct, id *string, config *StreamAnalyticsOutputMssqlConfig) {
 	_init_.Initialize()
 

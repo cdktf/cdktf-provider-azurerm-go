@@ -2,7 +2,7 @@ package dataazurermkubernetesnodepoolsnapshot
 
 
 type DataAzurermKubernetesNodePoolSnapshotTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/kubernetes_node_pool_snapshot#read DataAzurermKubernetesNodePoolSnapshot#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/data-sources/kubernetes_node_pool_snapshot#read DataAzurermKubernetesNodePoolSnapshot#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

@@ -1,0 +1,6 @@
+package paloaltonextgenerationfirewallvirtualnetworkpanorama
+
+
+type PaloAltoNextGenerationFirewallVirtualNetworkPanoramaPanorama struct {
+}
+

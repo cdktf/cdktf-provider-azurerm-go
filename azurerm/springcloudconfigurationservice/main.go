@@ -102,6 +102,8 @@ func init() {
 		"@cdktf/provider-azurerm.springCloudConfigurationService.SpringCloudConfigurationServiceRepositoryOutputReference",
 		reflect.TypeOf((*SpringCloudConfigurationServiceRepositoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "caCertificateId", GoGetter: "CaCertificateId"},
+			_jsii_.MemberProperty{JsiiProperty: "caCertificateIdInput", GoGetter: "CaCertificateIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -133,6 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "patternsInput", GoGetter: "PatternsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "privateKey", GoGetter: "PrivateKey"},
 			_jsii_.MemberProperty{JsiiProperty: "privateKeyInput", GoGetter: "PrivateKeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCaCertificateId", GoMethod: "ResetCaCertificateId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHostKey", GoMethod: "ResetHostKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHostKeyAlgorithm", GoMethod: "ResetHostKeyAlgorithm"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPassword", GoMethod: "ResetPassword"},

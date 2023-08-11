@@ -32,6 +32,8 @@ type BlueprintAssignmentIdentityOutputReference interface {
 	IdentityIdsInput() *[]*string
 	InternalValue() *BlueprintAssignmentIdentity
 	SetInternalValue(val *BlueprintAssignmentIdentity)
+	PrincipalId() *string
+	TenantId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +69,7 @@ type BlueprintAssignmentIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIdentityIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +150,26 @@ func (j *jsiiProxy_BlueprintAssignmentIdentityOutputReference) InternalValue() *
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BlueprintAssignmentIdentityOutputReference) PrincipalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BlueprintAssignmentIdentityOutputReference) TenantId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantId",
 		&returns,
 	)
 	return returns
@@ -481,6 +504,14 @@ func (b *jsiiProxy_BlueprintAssignmentIdentityOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BlueprintAssignmentIdentityOutputReference) ResetIdentityIds() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetIdentityIds",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BlueprintAssignmentIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

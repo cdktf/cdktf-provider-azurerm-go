@@ -10,6 +10,9 @@ import (
 
 type SpringCloudConfigurationServiceRepositoryOutputReference interface {
 	cdktf.ComplexObject
+	CaCertificateId() *string
+	SetCaCertificateId(val *string)
+	CaCertificateIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -94,6 +97,7 @@ type SpringCloudConfigurationServiceRepositoryOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCaCertificateId()
 	ResetHostKey()
 	ResetHostKeyAlgorithm()
 	ResetPassword()
@@ -114,6 +118,26 @@ type SpringCloudConfigurationServiceRepositoryOutputReference interface {
 // The jsii proxy struct for SpringCloudConfigurationServiceRepositoryOutputReference
 type jsiiProxy_SpringCloudConfigurationServiceRepositoryOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SpringCloudConfigurationServiceRepositoryOutputReference) CaCertificateId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"caCertificateId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudConfigurationServiceRepositoryOutputReference) CaCertificateIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"caCertificateIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SpringCloudConfigurationServiceRepositoryOutputReference) ComplexObjectIndex() interface{} {
@@ -431,6 +455,17 @@ func NewSpringCloudConfigurationServiceRepositoryOutputReference_Override(s Spri
 		"@cdktf/provider-azurerm.springCloudConfigurationService.SpringCloudConfigurationServiceRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SpringCloudConfigurationServiceRepositoryOutputReference)SetCaCertificateId(val *string) {
+	if err := j.validateSetCaCertificateIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"caCertificateId",
+		val,
 	)
 }
 
@@ -794,6 +829,14 @@ func (s *jsiiProxy_SpringCloudConfigurationServiceRepositoryOutputReference) Int
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SpringCloudConfigurationServiceRepositoryOutputReference) ResetCaCertificateId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCaCertificateId",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SpringCloudConfigurationServiceRepositoryOutputReference) ResetHostKey() {

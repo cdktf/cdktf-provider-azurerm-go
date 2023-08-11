@@ -104,6 +104,10 @@ func (j *jsiiProxy_VirtualDesktopWorkspace) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_VirtualDesktopWorkspace) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualDesktopWorkspace) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }

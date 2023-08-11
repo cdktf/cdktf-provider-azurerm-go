@@ -52,6 +52,10 @@ func (s *jsiiProxy_SecurityCenterSubscriptionPricing) validateOverrideLogicalIdP
 	return nil
 }
 
+func (s *jsiiProxy_SecurityCenterSubscriptionPricing) validatePutExtensionParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityCenterSubscriptionPricing) validatePutTimeoutsParameters(value *SecurityCenterSubscriptionPricingTimeouts) error {
 	return nil
 }

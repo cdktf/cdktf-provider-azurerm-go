@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/sentinel_data_connector_microsoft_threat_protection azurerm_sentinel_data_connector_microsoft_threat_protection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/sentinel_data_connector_microsoft_threat_protection azurerm_sentinel_data_connector_microsoft_threat_protection}.
 type SentinelDataConnectorMicrosoftThreatProtection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_SentinelDataConnectorMicrosoftThreatProtection) TimeoutsInput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/sentinel_data_connector_microsoft_threat_protection azurerm_sentinel_data_connector_microsoft_threat_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/sentinel_data_connector_microsoft_threat_protection azurerm_sentinel_data_connector_microsoft_threat_protection} Resource.
 func NewSentinelDataConnectorMicrosoftThreatProtection(scope constructs.Construct, id *string, config *SentinelDataConnectorMicrosoftThreatProtectionConfig) SentinelDataConnectorMicrosoftThreatProtection {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewSentinelDataConnectorMicrosoftThreatProtection(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/sentinel_data_connector_microsoft_threat_protection azurerm_sentinel_data_connector_microsoft_threat_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/sentinel_data_connector_microsoft_threat_protection azurerm_sentinel_data_connector_microsoft_threat_protection} Resource.
 func NewSentinelDataConnectorMicrosoftThreatProtection_Override(s SentinelDataConnectorMicrosoftThreatProtection, scope constructs.Construct, id *string, config *SentinelDataConnectorMicrosoftThreatProtectionConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/virtual_desktop_workspace azurerm_virtual_desktop_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/virtual_desktop_workspace azurerm_virtual_desktop_workspace}.
 type VirtualDesktopWorkspace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,9 @@ type VirtualDesktopWorkspace interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicNetworkAccessEnabled() interface{}
+	SetPublicNetworkAccessEnabled(val interface{})
+	PublicNetworkAccessEnabledInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -113,6 +116,7 @@ type VirtualDesktopWorkspace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublicNetworkAccessEnabled()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -350,6 +354,26 @@ func (j *jsiiProxy_VirtualDesktopWorkspace) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VirtualDesktopWorkspace) PublicNetworkAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualDesktopWorkspace) PublicNetworkAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualDesktopWorkspace) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -451,7 +475,7 @@ func (j *jsiiProxy_VirtualDesktopWorkspace) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/virtual_desktop_workspace azurerm_virtual_desktop_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/virtual_desktop_workspace azurerm_virtual_desktop_workspace} Resource.
 func NewVirtualDesktopWorkspace(scope constructs.Construct, id *string, config *VirtualDesktopWorkspaceConfig) VirtualDesktopWorkspace {
 	_init_.Initialize()
 
@@ -469,7 +493,7 @@ func NewVirtualDesktopWorkspace(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/resources/virtual_desktop_workspace azurerm_virtual_desktop_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/virtual_desktop_workspace azurerm_virtual_desktop_workspace} Resource.
 func NewVirtualDesktopWorkspace_Override(v VirtualDesktopWorkspace, scope constructs.Construct, id *string, config *VirtualDesktopWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -599,6 +623,17 @@ func (j *jsiiProxy_VirtualDesktopWorkspace)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualDesktopWorkspace)SetPublicNetworkAccessEnabled(val interface{}) {
+	if err := j.validateSetPublicNetworkAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccessEnabled",
 		val,
 	)
 }
@@ -930,6 +965,14 @@ func (v *jsiiProxy_VirtualDesktopWorkspace) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualDesktopWorkspace) ResetPublicNetworkAccessEnabled() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPublicNetworkAccessEnabled",
 		nil, // no parameters
 	)
 }

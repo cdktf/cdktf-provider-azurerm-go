@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/network_service_tags azurerm_network_service_tags}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/data-sources/network_service_tags azurerm_network_service_tags}.
 type DataAzurermNetworkServiceTags interface {
 	cdktf.TerraformDataSource
 	AddressPrefixes() *[]*string
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataAzurermNetworkServiceTags) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/network_service_tags azurerm_network_service_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/data-sources/network_service_tags azurerm_network_service_tags} Data Source.
 func NewDataAzurermNetworkServiceTags(scope constructs.Construct, id *string, config *DataAzurermNetworkServiceTagsConfig) DataAzurermNetworkServiceTags {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewDataAzurermNetworkServiceTags(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.68.0/docs/data-sources/network_service_tags azurerm_network_service_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/data-sources/network_service_tags azurerm_network_service_tags} Data Source.
 func NewDataAzurermNetworkServiceTags_Override(d DataAzurermNetworkServiceTags, scope constructs.Construct, id *string, config *DataAzurermNetworkServiceTagsConfig) {
 	_init_.Initialize()
 

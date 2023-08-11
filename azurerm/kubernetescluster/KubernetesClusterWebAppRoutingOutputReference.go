@@ -40,6 +40,7 @@ type KubernetesClusterWebAppRoutingOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WebAppRoutingIdentity() KubernetesClusterWebAppRoutingWebAppRoutingIdentityList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -164,6 +165,16 @@ func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) TerraformResou
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) WebAppRoutingIdentity() KubernetesClusterWebAppRoutingWebAppRoutingIdentityList {
+	var returns KubernetesClusterWebAppRoutingWebAppRoutingIdentityList
+	_jsii_.Get(
+		j,
+		"webAppRoutingIdentity",
 		&returns,
 	)
 	return returns
