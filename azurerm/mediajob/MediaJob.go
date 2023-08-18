@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/media_job azurerm_media_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/media_job azurerm_media_job}.
 type MediaJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -496,7 +496,7 @@ func (j *jsiiProxy_MediaJob) TransformNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/media_job azurerm_media_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/media_job azurerm_media_job} Resource.
 func NewMediaJob(scope constructs.Construct, id *string, config *MediaJobConfig) MediaJob {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewMediaJob(scope constructs.Construct, id *string, config *MediaJobConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/media_job azurerm_media_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/media_job azurerm_media_job} Resource.
 func NewMediaJob_Override(m MediaJob, scope constructs.Construct, id *string, config *MediaJobConfig) {
 	_init_.Initialize()
 

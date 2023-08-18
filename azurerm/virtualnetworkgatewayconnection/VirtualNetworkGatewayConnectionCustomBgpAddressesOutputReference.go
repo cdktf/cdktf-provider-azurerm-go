@@ -67,6 +67,7 @@ type VirtualNetworkGatewayConnectionCustomBgpAddressesOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSecondary()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -481,6 +482,14 @@ func (v *jsiiProxy_VirtualNetworkGatewayConnectionCustomBgpAddressesOutputRefere
 	)
 
 	return returns
+}
+
+func (v *jsiiProxy_VirtualNetworkGatewayConnectionCustomBgpAddressesOutputReference) ResetSecondary() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetSecondary",
+		nil, // no parameters
+	)
 }
 
 func (v *jsiiProxy_VirtualNetworkGatewayConnectionCustomBgpAddressesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

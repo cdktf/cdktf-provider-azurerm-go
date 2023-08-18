@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/mssql_virtual_machine azurerm_mssql_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/mssql_virtual_machine azurerm_mssql_virtual_machine}.
 type MssqlVirtualMachine interface {
 	cdktf.TerraformResource
 	Assessment() MssqlVirtualMachineAssessmentOutputReference
@@ -83,6 +83,9 @@ type MssqlVirtualMachine interface {
 	SqlLicenseType() *string
 	SetSqlLicenseType(val *string)
 	SqlLicenseTypeInput() *string
+	SqlVirtualMachineGroupId() *string
+	SetSqlVirtualMachineGroupId(val *string)
+	SqlVirtualMachineGroupIdInput() *string
 	StorageConfiguration() MssqlVirtualMachineStorageConfigurationOutputReference
 	StorageConfigurationInput() *MssqlVirtualMachineStorageConfiguration
 	Tags() *map[string]*string
@@ -99,6 +102,8 @@ type MssqlVirtualMachine interface {
 	VirtualMachineId() *string
 	SetVirtualMachineId(val *string)
 	VirtualMachineIdInput() *string
+	WsfcDomainCredential() MssqlVirtualMachineWsfcDomainCredentialOutputReference
+	WsfcDomainCredentialInput() *MssqlVirtualMachineWsfcDomainCredential
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -131,6 +136,7 @@ type MssqlVirtualMachine interface {
 	PutSqlInstance(value *MssqlVirtualMachineSqlInstance)
 	PutStorageConfiguration(value *MssqlVirtualMachineStorageConfiguration)
 	PutTimeouts(value *MssqlVirtualMachineTimeouts)
+	PutWsfcDomainCredential(value *MssqlVirtualMachineWsfcDomainCredential)
 	ResetAssessment()
 	ResetAutoBackup()
 	ResetAutoPatching()
@@ -146,9 +152,11 @@ type MssqlVirtualMachine interface {
 	ResetSqlConnectivityUpdateUsername()
 	ResetSqlInstance()
 	ResetSqlLicenseType()
+	ResetSqlVirtualMachineGroupId()
 	ResetStorageConfiguration()
 	ResetTags()
 	ResetTimeouts()
+	ResetWsfcDomainCredential()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -534,6 +542,26 @@ func (j *jsiiProxy_MssqlVirtualMachine) SqlLicenseTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MssqlVirtualMachine) SqlVirtualMachineGroupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sqlVirtualMachineGroupId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlVirtualMachine) SqlVirtualMachineGroupIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sqlVirtualMachineGroupIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MssqlVirtualMachine) StorageConfiguration() MssqlVirtualMachineStorageConfigurationOutputReference {
 	var returns MssqlVirtualMachineStorageConfigurationOutputReference
 	_jsii_.Get(
@@ -644,8 +672,28 @@ func (j *jsiiProxy_MssqlVirtualMachine) VirtualMachineIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MssqlVirtualMachine) WsfcDomainCredential() MssqlVirtualMachineWsfcDomainCredentialOutputReference {
+	var returns MssqlVirtualMachineWsfcDomainCredentialOutputReference
+	_jsii_.Get(
+		j,
+		"wsfcDomainCredential",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/mssql_virtual_machine azurerm_mssql_virtual_machine} Resource.
+func (j *jsiiProxy_MssqlVirtualMachine) WsfcDomainCredentialInput() *MssqlVirtualMachineWsfcDomainCredential {
+	var returns *MssqlVirtualMachineWsfcDomainCredential
+	_jsii_.Get(
+		j,
+		"wsfcDomainCredentialInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/mssql_virtual_machine azurerm_mssql_virtual_machine} Resource.
 func NewMssqlVirtualMachine(scope constructs.Construct, id *string, config *MssqlVirtualMachineConfig) MssqlVirtualMachine {
 	_init_.Initialize()
 
@@ -663,7 +711,7 @@ func NewMssqlVirtualMachine(scope constructs.Construct, id *string, config *Mssq
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/mssql_virtual_machine azurerm_mssql_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/mssql_virtual_machine azurerm_mssql_virtual_machine} Resource.
 func NewMssqlVirtualMachine_Override(m MssqlVirtualMachine, scope constructs.Construct, id *string, config *MssqlVirtualMachineConfig) {
 	_init_.Initialize()
 
@@ -815,6 +863,17 @@ func (j *jsiiProxy_MssqlVirtualMachine)SetSqlLicenseType(val *string) {
 	_jsii_.Set(
 		j,
 		"sqlLicenseType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlVirtualMachine)SetSqlVirtualMachineGroupId(val *string) {
+	if err := j.validateSetSqlVirtualMachineGroupIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sqlVirtualMachineGroupId",
 		val,
 	)
 }
@@ -1184,6 +1243,17 @@ func (m *jsiiProxy_MssqlVirtualMachine) PutTimeouts(value *MssqlVirtualMachineTi
 	)
 }
 
+func (m *jsiiProxy_MssqlVirtualMachine) PutWsfcDomainCredential(value *MssqlVirtualMachineWsfcDomainCredential) {
+	if err := m.validatePutWsfcDomainCredentialParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putWsfcDomainCredential",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MssqlVirtualMachine) ResetAssessment() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1288,6 +1358,14 @@ func (m *jsiiProxy_MssqlVirtualMachine) ResetSqlLicenseType() {
 	)
 }
 
+func (m *jsiiProxy_MssqlVirtualMachine) ResetSqlVirtualMachineGroupId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSqlVirtualMachineGroupId",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MssqlVirtualMachine) ResetStorageConfiguration() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1308,6 +1386,14 @@ func (m *jsiiProxy_MssqlVirtualMachine) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlVirtualMachine) ResetWsfcDomainCredential() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetWsfcDomainCredential",
 		nil, // no parameters
 	)
 }

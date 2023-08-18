@@ -2,7 +2,7 @@ package dataazurermappservicecertificate
 
 
 type DataAzurermAppServiceCertificateTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/data-sources/app_service_certificate#read DataAzurermAppServiceCertificate#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/data-sources/app_service_certificate#read DataAzurermAppServiceCertificate#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

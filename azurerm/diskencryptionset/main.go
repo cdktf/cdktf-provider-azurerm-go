@@ -42,6 +42,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "keyVaultKeyId", GoGetter: "KeyVaultKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "keyVaultKeyIdInput", GoGetter: "KeyVaultKeyIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "keyVaultKeyUrl", GoGetter: "KeyVaultKeyUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},

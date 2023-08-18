@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/aadb2c_directory azurerm_aadb2c_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/aadb2c_directory azurerm_aadb2c_directory}.
 type Aadb2CDirectory interface {
 	cdktf.TerraformResource
 	BillingType() *string
@@ -507,7 +507,7 @@ func (j *jsiiProxy_Aadb2CDirectory) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/aadb2c_directory azurerm_aadb2c_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/aadb2c_directory azurerm_aadb2c_directory} Resource.
 func NewAadb2CDirectory(scope constructs.Construct, id *string, config *Aadb2CDirectoryConfig) Aadb2CDirectory {
 	_init_.Initialize()
 
@@ -525,7 +525,7 @@ func NewAadb2CDirectory(scope constructs.Construct, id *string, config *Aadb2CDi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/aadb2c_directory azurerm_aadb2c_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/aadb2c_directory azurerm_aadb2c_directory} Resource.
 func NewAadb2CDirectory_Override(a Aadb2CDirectory, scope constructs.Construct, id *string, config *Aadb2CDirectoryConfig) {
 	_init_.Initialize()
 

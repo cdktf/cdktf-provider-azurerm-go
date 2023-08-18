@@ -159,6 +159,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "primary", GoGetter: "Primary"},
 			_jsii_.MemberProperty{JsiiProperty: "primaryInput", GoGetter: "PrimaryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecondary", GoMethod: "ResetSecondary"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "secondary", GoGetter: "Secondary"},
 			_jsii_.MemberProperty{JsiiProperty: "secondaryInput", GoGetter: "SecondaryInput"},

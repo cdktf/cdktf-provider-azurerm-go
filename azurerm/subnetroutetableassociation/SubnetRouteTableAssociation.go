@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/subnet_route_table_association azurerm_subnet_route_table_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/subnet_route_table_association azurerm_subnet_route_table_association}.
 type SubnetRouteTableAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_SubnetRouteTableAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/subnet_route_table_association azurerm_subnet_route_table_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/subnet_route_table_association azurerm_subnet_route_table_association} Resource.
 func NewSubnetRouteTableAssociation(scope constructs.Construct, id *string, config *SubnetRouteTableAssociationConfig) SubnetRouteTableAssociation {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewSubnetRouteTableAssociation(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/subnet_route_table_association azurerm_subnet_route_table_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/subnet_route_table_association azurerm_subnet_route_table_association} Resource.
 func NewSubnetRouteTableAssociation_Override(s SubnetRouteTableAssociation, scope constructs.Construct, id *string, config *SubnetRouteTableAssociationConfig) {
 	_init_.Initialize()
 

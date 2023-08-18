@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/data-sources/mysql_server azurerm_mysql_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/data-sources/mysql_server azurerm_mysql_server}.
 type DataAzurermMysqlServer interface {
 	cdktf.TerraformDataSource
 	AdministratorLogin() *string
@@ -515,7 +515,7 @@ func (j *jsiiProxy_DataAzurermMysqlServer) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/data-sources/mysql_server azurerm_mysql_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/data-sources/mysql_server azurerm_mysql_server} Data Source.
 func NewDataAzurermMysqlServer(scope constructs.Construct, id *string, config *DataAzurermMysqlServerConfig) DataAzurermMysqlServer {
 	_init_.Initialize()
 
@@ -533,7 +533,7 @@ func NewDataAzurermMysqlServer(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/data-sources/mysql_server azurerm_mysql_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/data-sources/mysql_server azurerm_mysql_server} Data Source.
 func NewDataAzurermMysqlServer_Override(d DataAzurermMysqlServer, scope constructs.Construct, id *string, config *DataAzurermMysqlServerConfig) {
 	_init_.Initialize()
 

@@ -9,9 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/stack_hci_cluster azurerm_stack_hci_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/stack_hci_cluster azurerm_stack_hci_cluster}.
 type StackHciCluster interface {
 	cdktf.TerraformResource
+	AutomanageConfigurationId() *string
+	SetAutomanageConfigurationId(val *string)
+	AutomanageConfigurationIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientId() *string
@@ -107,6 +110,7 @@ type StackHciCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *StackHciClusterTimeouts)
+	ResetAutomanageConfigurationId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -127,6 +131,26 @@ type StackHciCluster interface {
 // The jsii proxy struct for StackHciCluster
 type jsiiProxy_StackHciCluster struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_StackHciCluster) AutomanageConfigurationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"automanageConfigurationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackHciCluster) AutomanageConfigurationIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"automanageConfigurationIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_StackHciCluster) CdktfStack() cdktf.TerraformStack {
@@ -450,7 +474,7 @@ func (j *jsiiProxy_StackHciCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/stack_hci_cluster azurerm_stack_hci_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/stack_hci_cluster azurerm_stack_hci_cluster} Resource.
 func NewStackHciCluster(scope constructs.Construct, id *string, config *StackHciClusterConfig) StackHciCluster {
 	_init_.Initialize()
 
@@ -468,7 +492,7 @@ func NewStackHciCluster(scope constructs.Construct, id *string, config *StackHci
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/stack_hci_cluster azurerm_stack_hci_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/stack_hci_cluster azurerm_stack_hci_cluster} Resource.
 func NewStackHciCluster_Override(s StackHciCluster, scope constructs.Construct, id *string, config *StackHciClusterConfig) {
 	_init_.Initialize()
 
@@ -476,6 +500,17 @@ func NewStackHciCluster_Override(s StackHciCluster, scope constructs.Construct, 
 		"@cdktf/provider-azurerm.stackHciCluster.StackHciCluster",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_StackHciCluster)SetAutomanageConfigurationId(val *string) {
+	if err := j.validateSetAutomanageConfigurationIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"automanageConfigurationId",
+		val,
 	)
 }
 
@@ -898,6 +933,14 @@ func (s *jsiiProxy_StackHciCluster) PutTimeouts(value *StackHciClusterTimeouts) 
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StackHciCluster) ResetAutomanageConfigurationId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAutomanageConfigurationId",
+		nil, // no parameters
 	)
 }
 

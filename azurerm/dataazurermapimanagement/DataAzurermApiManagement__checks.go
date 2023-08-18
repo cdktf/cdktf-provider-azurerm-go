@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAzurermApiManagement) validateSetResourceGroupNameParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermApiManagement) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAzurermApiManagementParameters(scope constructs.Construct, id *string, config *DataAzurermApiManagementConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

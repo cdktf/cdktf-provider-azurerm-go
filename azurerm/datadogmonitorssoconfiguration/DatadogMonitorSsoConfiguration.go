@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/datadog_monitor_sso_configuration azurerm_datadog_monitor_sso_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/datadog_monitor_sso_configuration azurerm_datadog_monitor_sso_configuration}.
 type DatadogMonitorSsoConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_DatadogMonitorSsoConfiguration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/datadog_monitor_sso_configuration azurerm_datadog_monitor_sso_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/datadog_monitor_sso_configuration azurerm_datadog_monitor_sso_configuration} Resource.
 func NewDatadogMonitorSsoConfiguration(scope constructs.Construct, id *string, config *DatadogMonitorSsoConfigurationConfig) DatadogMonitorSsoConfiguration {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewDatadogMonitorSsoConfiguration(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/datadog_monitor_sso_configuration azurerm_datadog_monitor_sso_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/datadog_monitor_sso_configuration azurerm_datadog_monitor_sso_configuration} Resource.
 func NewDatadogMonitorSsoConfiguration_Override(d DatadogMonitorSsoConfiguration, scope constructs.Construct, id *string, config *DatadogMonitorSsoConfigurationConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/data-sources/api_management azurerm_api_management}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/data-sources/api_management azurerm_api_management}.
 type DataAzurermApiManagement interface {
 	cdktf.TerraformDataSource
 	AdditionalLocation() DataAzurermApiManagementAdditionalLocationList
@@ -70,7 +70,9 @@ type DataAzurermApiManagement interface {
 	ResourceGroupNameInput() *string
 	ScmUrl() *string
 	SkuName() *string
-	Tags() cdktf.StringMap
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	TenantAccess() DataAzurermApiManagementTenantAccessList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -110,6 +112,7 @@ type DataAzurermApiManagement interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -466,11 +469,21 @@ func (j *jsiiProxy_DataAzurermApiManagement) SkuName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermApiManagement) Tags() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataAzurermApiManagement) Tags() *map[string]*string {
+	var returns *map[string]*string
 	_jsii_.Get(
 		j,
 		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApiManagement) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
 		&returns,
 	)
 	return returns
@@ -537,7 +550,7 @@ func (j *jsiiProxy_DataAzurermApiManagement) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/data-sources/api_management azurerm_api_management} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/data-sources/api_management azurerm_api_management} Data Source.
 func NewDataAzurermApiManagement(scope constructs.Construct, id *string, config *DataAzurermApiManagementConfig) DataAzurermApiManagement {
 	_init_.Initialize()
 
@@ -555,7 +568,7 @@ func NewDataAzurermApiManagement(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/data-sources/api_management azurerm_api_management} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/data-sources/api_management azurerm_api_management} Data Source.
 func NewDataAzurermApiManagement_Override(d DataAzurermApiManagement, scope constructs.Construct, id *string, config *DataAzurermApiManagementConfig) {
 	_init_.Initialize()
 
@@ -641,6 +654,17 @@ func (j *jsiiProxy_DataAzurermApiManagement)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzurermApiManagement)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -934,6 +958,14 @@ func (d *jsiiProxy_DataAzurermApiManagement) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermApiManagement) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
 		nil, // no parameters
 	)
 }

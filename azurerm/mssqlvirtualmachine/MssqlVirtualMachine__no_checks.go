@@ -80,6 +80,10 @@ func (m *jsiiProxy_MssqlVirtualMachine) validatePutTimeoutsParameters(value *Mss
 	return nil
 }
 
+func (m *jsiiProxy_MssqlVirtualMachine) validatePutWsfcDomainCredentialParameters(value *MssqlVirtualMachineWsfcDomainCredential) error {
+	return nil
+}
+
 func validateMssqlVirtualMachine_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -133,6 +137,10 @@ func (j *jsiiProxy_MssqlVirtualMachine) validateSetSqlConnectivityUpdateUsername
 }
 
 func (j *jsiiProxy_MssqlVirtualMachine) validateSetSqlLicenseTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MssqlVirtualMachine) validateSetSqlVirtualMachineGroupIdParameters(val *string) error {
 	return nil
 }
 

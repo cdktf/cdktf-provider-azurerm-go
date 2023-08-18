@@ -2,7 +2,7 @@ package kubernetescluster
 
 
 type KubernetesClusterLinuxProfileSshKey struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/kubernetes_cluster#key_data KubernetesCluster#key_data}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/kubernetes_cluster#key_data KubernetesCluster#key_data}.
 	KeyData *string `field:"required" json:"keyData" yaml:"keyData"`
 }
 

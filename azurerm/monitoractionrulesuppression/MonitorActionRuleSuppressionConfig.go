@@ -19,36 +19,36 @@ type MonitorActionRuleSuppressionConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/monitor_action_rule_suppression#name MonitorActionRuleSuppression#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/monitor_action_rule_suppression#name MonitorActionRuleSuppression#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/monitor_action_rule_suppression#resource_group_name MonitorActionRuleSuppression#resource_group_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/monitor_action_rule_suppression#resource_group_name MonitorActionRuleSuppression#resource_group_name}.
 	ResourceGroupName *string `field:"required" json:"resourceGroupName" yaml:"resourceGroupName"`
 	// suppression block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/monitor_action_rule_suppression#suppression MonitorActionRuleSuppression#suppression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/monitor_action_rule_suppression#suppression MonitorActionRuleSuppression#suppression}
 	Suppression *MonitorActionRuleSuppressionSuppression `field:"required" json:"suppression" yaml:"suppression"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/monitor_action_rule_suppression#condition MonitorActionRuleSuppression#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/monitor_action_rule_suppression#condition MonitorActionRuleSuppression#condition}
 	Condition *MonitorActionRuleSuppressionCondition `field:"optional" json:"condition" yaml:"condition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/monitor_action_rule_suppression#description MonitorActionRuleSuppression#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/monitor_action_rule_suppression#description MonitorActionRuleSuppression#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/monitor_action_rule_suppression#enabled MonitorActionRuleSuppression#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/monitor_action_rule_suppression#enabled MonitorActionRuleSuppression#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/monitor_action_rule_suppression#id MonitorActionRuleSuppression#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/monitor_action_rule_suppression#id MonitorActionRuleSuppression#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// scope block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/monitor_action_rule_suppression#scope MonitorActionRuleSuppression#scope}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/monitor_action_rule_suppression#scope MonitorActionRuleSuppression#scope}
 	Scope *MonitorActionRuleSuppressionScope `field:"optional" json:"scope" yaml:"scope"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/monitor_action_rule_suppression#tags MonitorActionRuleSuppression#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/monitor_action_rule_suppression#tags MonitorActionRuleSuppression#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/monitor_action_rule_suppression#timeouts MonitorActionRuleSuppression#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/monitor_action_rule_suppression#timeouts MonitorActionRuleSuppression#timeouts}
 	Timeouts *MonitorActionRuleSuppressionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

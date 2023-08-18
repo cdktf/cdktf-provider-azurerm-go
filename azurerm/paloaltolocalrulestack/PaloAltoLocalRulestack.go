@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/palo_alto_local_rulestack azurerm_palo_alto_local_rulestack}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/palo_alto_local_rulestack azurerm_palo_alto_local_rulestack}.
 type PaloAltoLocalRulestack interface {
 	cdktf.TerraformResource
 	AntiSpywareProfile() *string
@@ -547,7 +547,7 @@ func (j *jsiiProxy_PaloAltoLocalRulestack) VulnerabilityProfileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/palo_alto_local_rulestack azurerm_palo_alto_local_rulestack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/palo_alto_local_rulestack azurerm_palo_alto_local_rulestack} Resource.
 func NewPaloAltoLocalRulestack(scope constructs.Construct, id *string, config *PaloAltoLocalRulestackConfig) PaloAltoLocalRulestack {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewPaloAltoLocalRulestack(scope constructs.Construct, id *string, config *P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/palo_alto_local_rulestack azurerm_palo_alto_local_rulestack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/palo_alto_local_rulestack azurerm_palo_alto_local_rulestack} Resource.
 func NewPaloAltoLocalRulestack_Override(p PaloAltoLocalRulestack, scope constructs.Construct, id *string, config *PaloAltoLocalRulestackConfig) {
 	_init_.Initialize()
 

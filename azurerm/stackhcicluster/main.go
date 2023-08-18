@@ -12,6 +12,8 @@ func init() {
 		reflect.TypeOf((*StackHciCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "automanageConfigurationId", GoGetter: "AutomanageConfigurationId"},
+			_jsii_.MemberProperty{JsiiProperty: "automanageConfigurationIdInput", GoGetter: "AutomanageConfigurationIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
@@ -45,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAutomanageConfigurationId", GoMethod: "ResetAutomanageConfigurationId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},

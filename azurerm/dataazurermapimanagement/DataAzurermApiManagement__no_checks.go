@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataAzurermApiManagement) validateSetResourceGroupNameParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermApiManagement) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewDataAzurermApiManagementParameters(scope constructs.Construct, id *string, config *DataAzurermApiManagementConfig) error {
 	return nil
 }

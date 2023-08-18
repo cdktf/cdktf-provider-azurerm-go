@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/voice_services_communications_gateway azurerm_voice_services_communications_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/voice_services_communications_gateway azurerm_voice_services_communications_gateway}.
 type VoiceServicesCommunicationsGateway interface {
 	cdktf.TerraformResource
 	ApiBridge() *string
@@ -638,7 +638,7 @@ func (j *jsiiProxy_VoiceServicesCommunicationsGateway) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/voice_services_communications_gateway azurerm_voice_services_communications_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/voice_services_communications_gateway azurerm_voice_services_communications_gateway} Resource.
 func NewVoiceServicesCommunicationsGateway(scope constructs.Construct, id *string, config *VoiceServicesCommunicationsGatewayConfig) VoiceServicesCommunicationsGateway {
 	_init_.Initialize()
 
@@ -656,7 +656,7 @@ func NewVoiceServicesCommunicationsGateway(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/voice_services_communications_gateway azurerm_voice_services_communications_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/voice_services_communications_gateway azurerm_voice_services_communications_gateway} Resource.
 func NewVoiceServicesCommunicationsGateway_Override(v VoiceServicesCommunicationsGateway, scope constructs.Construct, id *string, config *VoiceServicesCommunicationsGatewayConfig) {
 	_init_.Initialize()
 

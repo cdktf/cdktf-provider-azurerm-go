@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/disk_encryption_set azurerm_disk_encryption_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/disk_encryption_set azurerm_disk_encryption_set}.
 type DiskEncryptionSet interface {
 	cdktf.TerraformResource
 	AutoKeyRotationEnabled() interface{}
@@ -53,6 +53,7 @@ type DiskEncryptionSet interface {
 	KeyVaultKeyId() *string
 	SetKeyVaultKeyId(val *string)
 	KeyVaultKeyIdInput() *string
+	KeyVaultKeyUrl() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -340,6 +341,16 @@ func (j *jsiiProxy_DiskEncryptionSet) KeyVaultKeyIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DiskEncryptionSet) KeyVaultKeyUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultKeyUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DiskEncryptionSet) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -521,7 +532,7 @@ func (j *jsiiProxy_DiskEncryptionSet) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/disk_encryption_set azurerm_disk_encryption_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/disk_encryption_set azurerm_disk_encryption_set} Resource.
 func NewDiskEncryptionSet(scope constructs.Construct, id *string, config *DiskEncryptionSetConfig) DiskEncryptionSet {
 	_init_.Initialize()
 
@@ -539,7 +550,7 @@ func NewDiskEncryptionSet(scope constructs.Construct, id *string, config *DiskEn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.69.0/docs/resources/disk_encryption_set azurerm_disk_encryption_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/disk_encryption_set azurerm_disk_encryption_set} Resource.
 func NewDiskEncryptionSet_Override(d DiskEncryptionSet, scope constructs.Construct, id *string, config *DiskEncryptionSetConfig) {
 	_init_.Initialize()
 

@@ -52,6 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSqlInstance", GoMethod: "PutSqlInstance"},
 			_jsii_.MemberMethod{JsiiMethod: "putStorageConfiguration", GoMethod: "PutStorageConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "putWsfcDomainCredential", GoMethod: "PutWsfcDomainCredential"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAssessment", GoMethod: "ResetAssessment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoBackup", GoMethod: "ResetAutoBackup"},
@@ -66,9 +67,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSqlConnectivityUpdateUsername", GoMethod: "ResetSqlConnectivityUpdateUsername"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSqlInstance", GoMethod: "ResetSqlInstance"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSqlLicenseType", GoMethod: "ResetSqlLicenseType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSqlVirtualMachineGroupId", GoMethod: "ResetSqlVirtualMachineGroupId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStorageConfiguration", GoMethod: "ResetStorageConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWsfcDomainCredential", GoMethod: "ResetWsfcDomainCredential"},
 			_jsii_.MemberProperty{JsiiProperty: "rServicesEnabled", GoGetter: "RServicesEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "rServicesEnabledInput", GoGetter: "RServicesEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sqlConnectivityPort", GoGetter: "SqlConnectivityPort"},
@@ -83,6 +86,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "sqlInstanceInput", GoGetter: "SqlInstanceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sqlLicenseType", GoGetter: "SqlLicenseType"},
 			_jsii_.MemberProperty{JsiiProperty: "sqlLicenseTypeInput", GoGetter: "SqlLicenseTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlVirtualMachineGroupId", GoGetter: "SqlVirtualMachineGroupId"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlVirtualMachineGroupIdInput", GoGetter: "SqlVirtualMachineGroupIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "storageConfiguration", GoGetter: "StorageConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "storageConfigurationInput", GoGetter: "StorageConfigurationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -98,6 +103,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualMachineId", GoGetter: "VirtualMachineId"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualMachineIdInput", GoGetter: "VirtualMachineIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "wsfcDomainCredential", GoGetter: "WsfcDomainCredential"},
+			_jsii_.MemberProperty{JsiiProperty: "wsfcDomainCredentialInput", GoGetter: "WsfcDomainCredentialInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_MssqlVirtualMachine{}
@@ -680,6 +687,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MssqlVirtualMachineTimeoutsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.mssqlVirtualMachine.MssqlVirtualMachineWsfcDomainCredential",
+		reflect.TypeOf((*MssqlVirtualMachineWsfcDomainCredential)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.mssqlVirtualMachine.MssqlVirtualMachineWsfcDomainCredentialOutputReference",
+		reflect.TypeOf((*MssqlVirtualMachineWsfcDomainCredentialOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "clusterBootstrapAccountPassword", GoGetter: "ClusterBootstrapAccountPassword"},
+			_jsii_.MemberProperty{JsiiProperty: "clusterBootstrapAccountPasswordInput", GoGetter: "ClusterBootstrapAccountPasswordInput"},
+			_jsii_.MemberProperty{JsiiProperty: "clusterOperatorAccountPassword", GoGetter: "ClusterOperatorAccountPassword"},
+			_jsii_.MemberProperty{JsiiProperty: "clusterOperatorAccountPasswordInput", GoGetter: "ClusterOperatorAccountPasswordInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlServiceAccountPassword", GoGetter: "SqlServiceAccountPassword"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlServiceAccountPasswordInput", GoGetter: "SqlServiceAccountPasswordInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MssqlVirtualMachineWsfcDomainCredentialOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
