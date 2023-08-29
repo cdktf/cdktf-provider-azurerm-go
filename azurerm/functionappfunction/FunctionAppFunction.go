@@ -1,11 +1,14 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package functionappfunction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/functionappfunction/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/functionappfunction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

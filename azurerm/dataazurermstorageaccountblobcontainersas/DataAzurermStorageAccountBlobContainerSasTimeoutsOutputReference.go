@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataazurermstorageaccountblobcontainersas
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/dataazurermstorageaccountblobcontainersas/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/dataazurermstorageaccountblobcontainersas/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

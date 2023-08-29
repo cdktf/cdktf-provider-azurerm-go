@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package backupprotectedvm
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v9/backupprotectedvm/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/backupprotectedvm/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
