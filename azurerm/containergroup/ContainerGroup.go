@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/container_group azurerm_container_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/container_group azurerm_container_group}.
 type ContainerGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -104,6 +104,9 @@ type ContainerGroup interface {
 	RestartPolicy() *string
 	SetRestartPolicy(val *string)
 	RestartPolicyInput() *string
+	Sku() *string
+	SetSku(val *string)
+	SkuInput() *string
 	SubnetIds() *[]*string
 	SetSubnetIds(val *[]*string)
 	SubnetIdsInput() *[]*string
@@ -170,6 +173,7 @@ type ContainerGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRestartPolicy()
+	ResetSku()
 	ResetSubnetIds()
 	ResetTags()
 	ResetTimeouts()
@@ -699,6 +703,26 @@ func (j *jsiiProxy_ContainerGroup) RestartPolicyInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerGroup) Sku() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sku",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerGroup) SkuInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"skuInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerGroup) SubnetIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -810,7 +834,7 @@ func (j *jsiiProxy_ContainerGroup) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/container_group azurerm_container_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/container_group azurerm_container_group} Resource.
 func NewContainerGroup(scope constructs.Construct, id *string, config *ContainerGroupConfig) ContainerGroup {
 	_init_.Initialize()
 
@@ -828,7 +852,7 @@ func NewContainerGroup(scope constructs.Construct, id *string, config *Container
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/container_group azurerm_container_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/container_group azurerm_container_group} Resource.
 func NewContainerGroup_Override(c ContainerGroup, scope constructs.Construct, id *string, config *ContainerGroupConfig) {
 	_init_.Initialize()
 
@@ -1024,6 +1048,17 @@ func (j *jsiiProxy_ContainerGroup)SetRestartPolicy(val *string) {
 	_jsii_.Set(
 		j,
 		"restartPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerGroup)SetSku(val *string) {
+	if err := j.validateSetSkuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sku",
 		val,
 	)
 }
@@ -1523,6 +1558,14 @@ func (c *jsiiProxy_ContainerGroup) ResetRestartPolicy() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRestartPolicy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerGroup) ResetSku() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSku",
 		nil, // no parameters
 	)
 }

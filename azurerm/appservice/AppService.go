@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/app_service azurerm_app_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/app_service azurerm_app_service}.
 type AppService interface {
 	cdktf.TerraformResource
 	AppServicePlanId() *string
@@ -866,7 +866,7 @@ func (j *jsiiProxy_AppService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/app_service azurerm_app_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/app_service azurerm_app_service} Resource.
 func NewAppService(scope constructs.Construct, id *string, config *AppServiceConfig) AppService {
 	_init_.Initialize()
 
@@ -884,7 +884,7 @@ func NewAppService(scope constructs.Construct, id *string, config *AppServiceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/app_service azurerm_app_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/app_service azurerm_app_service} Resource.
 func NewAppService_Override(a AppService, scope constructs.Construct, id *string, config *AppServiceConfig) {
 	_init_.Initialize()
 

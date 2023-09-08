@@ -2298,7 +2298,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "win32Status", GoGetter: "Win32Status"},
+			_jsii_.MemberProperty{JsiiProperty: "win32StatusCode", GoGetter: "Win32StatusCode"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAzurermWindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference{}

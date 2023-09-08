@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace}.
 type ServicebusNamespace interface {
 	cdktf.TerraformResource
 	Capacity() *float64
@@ -70,6 +70,8 @@ type ServicebusNamespace interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkRuleSet() ServicebusNamespaceNetworkRuleSetOutputReference
+	NetworkRuleSetInput() *ServicebusNamespaceNetworkRuleSet
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -132,6 +134,7 @@ type ServicebusNamespace interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCustomerManagedKey(value *ServicebusNamespaceCustomerManagedKey)
 	PutIdentity(value *ServicebusNamespaceIdentity)
+	PutNetworkRuleSet(value *ServicebusNamespaceNetworkRuleSet)
 	PutTimeouts(value *ServicebusNamespaceTimeouts)
 	ResetCapacity()
 	ResetCustomerManagedKey()
@@ -139,6 +142,7 @@ type ServicebusNamespace interface {
 	ResetIdentity()
 	ResetLocalAuthEnabled()
 	ResetMinimumTlsVersion()
+	ResetNetworkRuleSet()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -461,6 +465,26 @@ func (j *jsiiProxy_ServicebusNamespace) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ServicebusNamespace) NetworkRuleSet() ServicebusNamespaceNetworkRuleSetOutputReference {
+	var returns ServicebusNamespaceNetworkRuleSetOutputReference
+	_jsii_.Get(
+		j,
+		"networkRuleSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicebusNamespace) NetworkRuleSetInput() *ServicebusNamespaceNetworkRuleSet {
+	var returns *ServicebusNamespaceNetworkRuleSet
+	_jsii_.Get(
+		j,
+		"networkRuleSetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServicebusNamespace) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -652,7 +676,7 @@ func (j *jsiiProxy_ServicebusNamespace) ZoneRedundantInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace} Resource.
 func NewServicebusNamespace(scope constructs.Construct, id *string, config *ServicebusNamespaceConfig) ServicebusNamespace {
 	_init_.Initialize()
 
@@ -670,7 +694,7 @@ func NewServicebusNamespace(scope constructs.Construct, id *string, config *Serv
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace} Resource.
 func NewServicebusNamespace_Override(s ServicebusNamespace, scope constructs.Construct, id *string, config *ServicebusNamespaceConfig) {
 	_init_.Initialize()
 
@@ -1158,6 +1182,17 @@ func (s *jsiiProxy_ServicebusNamespace) PutIdentity(value *ServicebusNamespaceId
 	)
 }
 
+func (s *jsiiProxy_ServicebusNamespace) PutNetworkRuleSet(value *ServicebusNamespaceNetworkRuleSet) {
+	if err := s.validatePutNetworkRuleSetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putNetworkRuleSet",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_ServicebusNamespace) PutTimeouts(value *ServicebusNamespaceTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1213,6 +1248,14 @@ func (s *jsiiProxy_ServicebusNamespace) ResetMinimumTlsVersion() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMinimumTlsVersion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicebusNamespace) ResetNetworkRuleSet() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNetworkRuleSet",
 		nil, // no parameters
 	)
 }

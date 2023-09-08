@@ -75,6 +75,10 @@ func (j *jsiiProxy_BotChannelDirectLineSpeech) validateSetBotNameParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_BotChannelDirectLineSpeech) validateSetCognitiveAccountIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelDirectLineSpeech) validateSetCognitiveServiceAccessKeyParameters(val *string) error {
 	return nil
 }

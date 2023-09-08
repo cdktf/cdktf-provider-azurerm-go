@@ -47,6 +47,10 @@ func (c *jsiiProxy_ContainerGroupInitContainerOutputReference) validateInterpola
 	return nil
 }
 
+func (c *jsiiProxy_ContainerGroupInitContainerOutputReference) validatePutSecurityParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerGroupInitContainerOutputReference) validatePutVolumeParameters(value interface{}) error {
 	return nil
 }

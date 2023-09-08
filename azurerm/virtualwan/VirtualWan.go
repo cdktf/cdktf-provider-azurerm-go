@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/virtual_wan azurerm_virtual_wan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/virtual_wan azurerm_virtual_wan}.
 type VirtualWan interface {
 	cdktf.TerraformResource
 	AllowBranchToBranchTraffic() interface{}
@@ -502,7 +502,7 @@ func (j *jsiiProxy_VirtualWan) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/virtual_wan azurerm_virtual_wan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/virtual_wan azurerm_virtual_wan} Resource.
 func NewVirtualWan(scope constructs.Construct, id *string, config *VirtualWanConfig) VirtualWan {
 	_init_.Initialize()
 
@@ -520,7 +520,7 @@ func NewVirtualWan(scope constructs.Construct, id *string, config *VirtualWanCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/virtual_wan azurerm_virtual_wan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/virtual_wan azurerm_virtual_wan} Resource.
 func NewVirtualWan_Override(v VirtualWan, scope constructs.Construct, id *string, config *VirtualWanConfig) {
 	_init_.Initialize()
 

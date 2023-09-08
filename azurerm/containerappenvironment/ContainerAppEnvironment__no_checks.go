@@ -79,6 +79,10 @@ func (j *jsiiProxy_ContainerAppEnvironment) validateSetCountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppEnvironment) validateSetDaprApplicationInsightsConnectionStringParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppEnvironment) validateSetIdParameters(val *string) error {
 	return nil
 }

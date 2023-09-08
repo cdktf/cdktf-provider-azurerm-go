@@ -63,6 +63,10 @@ func (s *jsiiProxy_ServicebusNamespace) validatePutIdentityParameters(value *Ser
 	return nil
 }
 
+func (s *jsiiProxy_ServicebusNamespace) validatePutNetworkRuleSetParameters(value *ServicebusNamespaceNetworkRuleSet) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicebusNamespace) validatePutTimeoutsParameters(value *ServicebusNamespaceTimeouts) error {
 	return nil
 }

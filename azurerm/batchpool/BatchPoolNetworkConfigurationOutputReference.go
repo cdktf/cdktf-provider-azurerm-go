@@ -13,6 +13,9 @@ import (
 
 type BatchPoolNetworkConfigurationOutputReference interface {
 	cdktf.ComplexObject
+	AcceleratedNetworkingEnabled() interface{}
+	SetAcceleratedNetworkingEnabled(val interface{})
+	AcceleratedNetworkingEnabledInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -79,10 +82,12 @@ type BatchPoolNetworkConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEndpointConfiguration(value interface{})
+	ResetAcceleratedNetworkingEnabled()
 	ResetDynamicVnetAssignmentScope()
 	ResetEndpointConfiguration()
 	ResetPublicAddressProvisioningType()
 	ResetPublicIps()
+	ResetSubnetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -96,6 +101,26 @@ type BatchPoolNetworkConfigurationOutputReference interface {
 // The jsii proxy struct for BatchPoolNetworkConfigurationOutputReference
 type jsiiProxy_BatchPoolNetworkConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) AcceleratedNetworkingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceleratedNetworkingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) AcceleratedNetworkingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceleratedNetworkingEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) ComplexObjectIndex() interface{} {
@@ -293,6 +318,17 @@ func NewBatchPoolNetworkConfigurationOutputReference_Override(b BatchPoolNetwork
 		"@cdktf/provider-azurerm.batchPool.BatchPoolNetworkConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
+	)
+}
+
+func (j *jsiiProxy_BatchPoolNetworkConfigurationOutputReference)SetAcceleratedNetworkingEnabled(val interface{}) {
+	if err := j.validateSetAcceleratedNetworkingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"acceleratedNetworkingEnabled",
+		val,
 	)
 }
 
@@ -592,6 +628,14 @@ func (b *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) PutEndpointConf
 	)
 }
 
+func (b *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) ResetAcceleratedNetworkingEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAcceleratedNetworkingEnabled",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) ResetDynamicVnetAssignmentScope() {
 	_jsii_.InvokeVoid(
 		b,
@@ -620,6 +664,14 @@ func (b *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) ResetPublicIps(
 	_jsii_.InvokeVoid(
 		b,
 		"resetPublicIps",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) ResetSubnetId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSubnetId",
 		nil, // no parameters
 	)
 }

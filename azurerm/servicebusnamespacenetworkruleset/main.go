@@ -11,8 +11,8 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.servicebusNamespaceNetworkRuleSet.ServicebusNamespaceNetworkRuleSet",
-		reflect.TypeOf((*ServicebusNamespaceNetworkRuleSet)(nil)).Elem(),
+		"@cdktf/provider-azurerm.servicebusNamespaceNetworkRuleSet.ServicebusNamespaceNetworkRuleSetA",
+		reflect.TypeOf((*ServicebusNamespaceNetworkRuleSetA)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -74,22 +74,22 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trustedServicesAllowedInput", GoGetter: "TrustedServicesAllowedInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_ServicebusNamespaceNetworkRuleSet{}
+			j := jsiiProxy_ServicebusNamespaceNetworkRuleSetA{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-azurerm.servicebusNamespaceNetworkRuleSet.ServicebusNamespaceNetworkRuleSetConfig",
-		reflect.TypeOf((*ServicebusNamespaceNetworkRuleSetConfig)(nil)).Elem(),
+		"@cdktf/provider-azurerm.servicebusNamespaceNetworkRuleSet.ServicebusNamespaceNetworkRuleSetAConfig",
+		reflect.TypeOf((*ServicebusNamespaceNetworkRuleSetAConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-azurerm.servicebusNamespaceNetworkRuleSet.ServicebusNamespaceNetworkRuleSetNetworkRules",
-		reflect.TypeOf((*ServicebusNamespaceNetworkRuleSetNetworkRules)(nil)).Elem(),
+		"@cdktf/provider-azurerm.servicebusNamespaceNetworkRuleSet.ServicebusNamespaceNetworkRuleSetNetworkRulesA",
+		reflect.TypeOf((*ServicebusNamespaceNetworkRuleSetNetworkRulesA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.servicebusNamespaceNetworkRuleSet.ServicebusNamespaceNetworkRuleSetNetworkRulesList",
-		reflect.TypeOf((*ServicebusNamespaceNetworkRuleSetNetworkRulesList)(nil)).Elem(),
+		"@cdktf/provider-azurerm.servicebusNamespaceNetworkRuleSet.ServicebusNamespaceNetworkRuleSetNetworkRulesAList",
+		reflect.TypeOf((*ServicebusNamespaceNetworkRuleSetNetworkRulesAList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -103,14 +103,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_ServicebusNamespaceNetworkRuleSetNetworkRulesList{}
+			j := jsiiProxy_ServicebusNamespaceNetworkRuleSetNetworkRulesAList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.servicebusNamespaceNetworkRuleSet.ServicebusNamespaceNetworkRuleSetNetworkRulesOutputReference",
-		reflect.TypeOf((*ServicebusNamespaceNetworkRuleSetNetworkRulesOutputReference)(nil)).Elem(),
+		"@cdktf/provider-azurerm.servicebusNamespaceNetworkRuleSet.ServicebusNamespaceNetworkRuleSetNetworkRulesAOutputReference",
+		reflect.TypeOf((*ServicebusNamespaceNetworkRuleSetNetworkRulesAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_ServicebusNamespaceNetworkRuleSetNetworkRulesOutputReference{}
+			j := jsiiProxy_ServicebusNamespaceNetworkRuleSetNetworkRulesAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

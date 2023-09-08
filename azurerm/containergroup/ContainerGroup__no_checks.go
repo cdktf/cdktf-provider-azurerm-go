@@ -159,6 +159,10 @@ func (j *jsiiProxy_ContainerGroup) validateSetRestartPolicyParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_ContainerGroup) validateSetSkuParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerGroup) validateSetSubnetIdsParameters(val *[]*string) error {
 	return nil
 }

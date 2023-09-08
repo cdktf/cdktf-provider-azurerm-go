@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/monitor_workspace azurerm_monitor_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/monitor_workspace azurerm_monitor_workspace}.
 type MonitorWorkspace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -430,7 +430,7 @@ func (j *jsiiProxy_MonitorWorkspace) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/monitor_workspace azurerm_monitor_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/monitor_workspace azurerm_monitor_workspace} Resource.
 func NewMonitorWorkspace(scope constructs.Construct, id *string, config *MonitorWorkspaceConfig) MonitorWorkspace {
 	_init_.Initialize()
 
@@ -448,7 +448,7 @@ func NewMonitorWorkspace(scope constructs.Construct, id *string, config *Monitor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/monitor_workspace azurerm_monitor_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/monitor_workspace azurerm_monitor_workspace} Resource.
 func NewMonitorWorkspace_Override(m MonitorWorkspace, scope constructs.Construct, id *string, config *MonitorWorkspaceConfig) {
 	_init_.Initialize()
 

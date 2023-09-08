@@ -55,6 +55,10 @@ func (b *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) validateResolve
 	return nil
 }
 
+func (j *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) validateSetAcceleratedNetworkingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchPoolNetworkConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

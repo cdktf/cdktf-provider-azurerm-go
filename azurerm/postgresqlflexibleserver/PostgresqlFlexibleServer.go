@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server}.
 type PostgresqlFlexibleServer interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -23,6 +23,9 @@ type PostgresqlFlexibleServer interface {
 	AdministratorPasswordInput() *string
 	Authentication() PostgresqlFlexibleServerAuthenticationOutputReference
 	AuthenticationInput() *PostgresqlFlexibleServerAuthentication
+	AutoGrowEnabled() interface{}
+	SetAutoGrowEnabled(val interface{})
+	AutoGrowEnabledInput() interface{}
 	BackupRetentionDays() *float64
 	SetBackupRetentionDays(val *float64)
 	BackupRetentionDaysInput() *float64
@@ -166,6 +169,7 @@ type PostgresqlFlexibleServer interface {
 	ResetAdministratorLogin()
 	ResetAdministratorPassword()
 	ResetAuthentication()
+	ResetAutoGrowEnabled()
 	ResetBackupRetentionDays()
 	ResetCreateMode()
 	ResetCustomerManagedKey()
@@ -258,6 +262,26 @@ func (j *jsiiProxy_PostgresqlFlexibleServer) AuthenticationInput() *PostgresqlFl
 	_jsii_.Get(
 		j,
 		"authenticationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServer) AutoGrowEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoGrowEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServer) AutoGrowEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoGrowEnabledInput",
 		&returns,
 	)
 	return returns
@@ -884,7 +908,7 @@ func (j *jsiiProxy_PostgresqlFlexibleServer) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server} Resource.
 func NewPostgresqlFlexibleServer(scope constructs.Construct, id *string, config *PostgresqlFlexibleServerConfig) PostgresqlFlexibleServer {
 	_init_.Initialize()
 
@@ -902,7 +926,7 @@ func NewPostgresqlFlexibleServer(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server} Resource.
 func NewPostgresqlFlexibleServer_Override(p PostgresqlFlexibleServer, scope constructs.Construct, id *string, config *PostgresqlFlexibleServerConfig) {
 	_init_.Initialize()
 
@@ -931,6 +955,17 @@ func (j *jsiiProxy_PostgresqlFlexibleServer)SetAdministratorPassword(val *string
 	_jsii_.Set(
 		j,
 		"administratorPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServer)SetAutoGrowEnabled(val interface{}) {
+	if err := j.validateSetAutoGrowEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoGrowEnabled",
 		val,
 	)
 }
@@ -1542,6 +1577,14 @@ func (p *jsiiProxy_PostgresqlFlexibleServer) ResetAuthentication() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetAuthentication",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresqlFlexibleServer) ResetAutoGrowEnabled() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAutoGrowEnabled",
 		nil, // no parameters
 	)
 }

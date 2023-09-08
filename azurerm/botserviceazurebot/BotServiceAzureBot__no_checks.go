@@ -107,6 +107,10 @@ func (j *jsiiProxy_BotServiceAzureBot) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_BotServiceAzureBot) validateSetLocalAuthenticationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotServiceAzureBot) validateSetLocationParameters(val *string) error {
 	return nil
 }

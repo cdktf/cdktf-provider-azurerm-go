@@ -47,6 +47,8 @@ type ContainerGroupInitContainerOutputReference interface {
 	SecureEnvironmentVariables() *map[string]*string
 	SetSecureEnvironmentVariables(val *map[string]*string)
 	SecureEnvironmentVariablesInput() *map[string]*string
+	Security() ContainerGroupInitContainerSecurityList
+	SecurityInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -81,10 +83,12 @@ type ContainerGroupInitContainerOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSecurity(value interface{})
 	PutVolume(value interface{})
 	ResetCommands()
 	ResetEnvironmentVariables()
 	ResetSecureEnvironmentVariables()
+	ResetSecurity()
 	ResetVolume()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -246,6 +250,26 @@ func (j *jsiiProxy_ContainerGroupInitContainerOutputReference) SecureEnvironment
 	_jsii_.Get(
 		j,
 		"secureEnvironmentVariablesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerGroupInitContainerOutputReference) Security() ContainerGroupInitContainerSecurityList {
+	var returns ContainerGroupInitContainerSecurityList
+	_jsii_.Get(
+		j,
+		"security",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerGroupInitContainerOutputReference) SecurityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"securityInput",
 		&returns,
 	)
 	return returns
@@ -615,6 +639,17 @@ func (c *jsiiProxy_ContainerGroupInitContainerOutputReference) InterpolationForA
 	return returns
 }
 
+func (c *jsiiProxy_ContainerGroupInitContainerOutputReference) PutSecurity(value interface{}) {
+	if err := c.validatePutSecurityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSecurity",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerGroupInitContainerOutputReference) PutVolume(value interface{}) {
 	if err := c.validatePutVolumeParameters(value); err != nil {
 		panic(err)
@@ -646,6 +681,14 @@ func (c *jsiiProxy_ContainerGroupInitContainerOutputReference) ResetSecureEnviro
 	_jsii_.InvokeVoid(
 		c,
 		"resetSecureEnvironmentVariables",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerGroupInitContainerOutputReference) ResetSecurity() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSecurity",
 		nil, // no parameters
 	)
 }

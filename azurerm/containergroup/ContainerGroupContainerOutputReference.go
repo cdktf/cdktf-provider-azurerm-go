@@ -69,6 +69,8 @@ type ContainerGroupContainerOutputReference interface {
 	SecureEnvironmentVariables() *map[string]*string
 	SetSecureEnvironmentVariables(val *map[string]*string)
 	SecureEnvironmentVariablesInput() *map[string]*string
+	Security() ContainerGroupContainerSecurityList
+	SecurityInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -108,6 +110,7 @@ type ContainerGroupContainerOutputReference interface {
 	PutLivenessProbe(value *ContainerGroupContainerLivenessProbe)
 	PutPorts(value interface{})
 	PutReadinessProbe(value *ContainerGroupContainerReadinessProbe)
+	PutSecurity(value interface{})
 	PutVolume(value interface{})
 	ResetCommands()
 	ResetCpuLimit()
@@ -119,6 +122,7 @@ type ContainerGroupContainerOutputReference interface {
 	ResetPorts()
 	ResetReadinessProbe()
 	ResetSecureEnvironmentVariables()
+	ResetSecurity()
 	ResetVolume()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -460,6 +464,26 @@ func (j *jsiiProxy_ContainerGroupContainerOutputReference) SecureEnvironmentVari
 	_jsii_.Get(
 		j,
 		"secureEnvironmentVariablesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerGroupContainerOutputReference) Security() ContainerGroupContainerSecurityList {
+	var returns ContainerGroupContainerSecurityList
+	_jsii_.Get(
+		j,
+		"security",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerGroupContainerOutputReference) SecurityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"securityInput",
 		&returns,
 	)
 	return returns
@@ -928,6 +952,17 @@ func (c *jsiiProxy_ContainerGroupContainerOutputReference) PutReadinessProbe(val
 	)
 }
 
+func (c *jsiiProxy_ContainerGroupContainerOutputReference) PutSecurity(value interface{}) {
+	if err := c.validatePutSecurityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSecurity",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerGroupContainerOutputReference) PutVolume(value interface{}) {
 	if err := c.validatePutVolumeParameters(value); err != nil {
 		panic(err)
@@ -1015,6 +1050,14 @@ func (c *jsiiProxy_ContainerGroupContainerOutputReference) ResetSecureEnvironmen
 	_jsii_.InvokeVoid(
 		c,
 		"resetSecureEnvironmentVariables",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerGroupContainerOutputReference) ResetSecurity() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSecurity",
 		nil, // no parameters
 	)
 }

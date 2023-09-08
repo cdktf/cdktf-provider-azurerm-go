@@ -111,6 +111,10 @@ func (j *jsiiProxy_VirtualMachineExtension) validateSetProtectedSettingsParamete
 	return nil
 }
 
+func (j *jsiiProxy_VirtualMachineExtension) validateSetProvisionAfterExtensionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualMachineExtension) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

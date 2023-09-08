@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "administratorLogin", GoGetter: "AdministratorLogin"},
+			_jsii_.MemberProperty{JsiiProperty: "autoGrowEnabled", GoGetter: "AutoGrowEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "backupRetentionDays", GoGetter: "BackupRetentionDays"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/spring_cloud_builder azurerm_spring_cloud_builder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/spring_cloud_builder azurerm_spring_cloud_builder}.
 type SpringCloudBuilder interface {
 	cdktf.TerraformResource
 	BuildPackGroup() SpringCloudBuilderBuildPackGroupList
@@ -405,7 +405,7 @@ func (j *jsiiProxy_SpringCloudBuilder) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/spring_cloud_builder azurerm_spring_cloud_builder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/spring_cloud_builder azurerm_spring_cloud_builder} Resource.
 func NewSpringCloudBuilder(scope constructs.Construct, id *string, config *SpringCloudBuilderConfig) SpringCloudBuilder {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewSpringCloudBuilder(scope constructs.Construct, id *string, config *Sprin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/spring_cloud_builder azurerm_spring_cloud_builder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/spring_cloud_builder azurerm_spring_cloud_builder} Resource.
 func NewSpringCloudBuilder_Override(s SpringCloudBuilder, scope constructs.Construct, id *string, config *SpringCloudBuilderConfig) {
 	_init_.Initialize()
 

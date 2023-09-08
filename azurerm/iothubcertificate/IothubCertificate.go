@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/iothub_certificate azurerm_iothub_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/iothub_certificate azurerm_iothub_certificate}.
 type IothubCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -429,7 +429,7 @@ func (j *jsiiProxy_IothubCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/iothub_certificate azurerm_iothub_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/iothub_certificate azurerm_iothub_certificate} Resource.
 func NewIothubCertificate(scope constructs.Construct, id *string, config *IothubCertificateConfig) IothubCertificate {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewIothubCertificate(scope constructs.Construct, id *string, config *Iothub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/iothub_certificate azurerm_iothub_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/iothub_certificate azurerm_iothub_certificate} Resource.
 func NewIothubCertificate_Override(i IothubCertificate, scope constructs.Construct, id *string, config *IothubCertificateConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/automation_webhook azurerm_automation_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/automation_webhook azurerm_automation_webhook}.
 type AutomationWebhook interface {
 	cdktf.TerraformResource
 	AutomationAccountName() *string
@@ -524,7 +524,7 @@ func (j *jsiiProxy_AutomationWebhook) UriInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/automation_webhook azurerm_automation_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/automation_webhook azurerm_automation_webhook} Resource.
 func NewAutomationWebhook(scope constructs.Construct, id *string, config *AutomationWebhookConfig) AutomationWebhook {
 	_init_.Initialize()
 
@@ -542,7 +542,7 @@ func NewAutomationWebhook(scope constructs.Construct, id *string, config *Automa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/automation_webhook azurerm_automation_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/automation_webhook azurerm_automation_webhook} Resource.
 func NewAutomationWebhook_Override(a AutomationWebhook, scope constructs.Construct, id *string, config *AutomationWebhookConfig) {
 	_init_.Initialize()
 

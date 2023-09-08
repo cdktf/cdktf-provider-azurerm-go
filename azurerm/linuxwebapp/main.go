@@ -1961,7 +1961,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPath", GoMethod: "ResetPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubStatus", GoMethod: "ResetSubStatus"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWin32Status", GoMethod: "ResetWin32Status"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWin32StatusCode", GoMethod: "ResetWin32StatusCode"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "statusCodeRange", GoGetter: "StatusCodeRange"},
 			_jsii_.MemberProperty{JsiiProperty: "statusCodeRangeInput", GoGetter: "StatusCodeRangeInput"},
@@ -1970,8 +1970,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "win32Status", GoGetter: "Win32Status"},
-			_jsii_.MemberProperty{JsiiProperty: "win32StatusInput", GoGetter: "Win32StatusInput"},
+			_jsii_.MemberProperty{JsiiProperty: "win32StatusCode", GoGetter: "Win32StatusCode"},
+			_jsii_.MemberProperty{JsiiProperty: "win32StatusCodeInput", GoGetter: "Win32StatusCodeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference{}

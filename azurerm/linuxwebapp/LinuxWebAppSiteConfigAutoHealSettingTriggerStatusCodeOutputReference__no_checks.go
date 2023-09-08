@@ -91,7 +91,7 @@ func (j *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) validateSetWin32StatusParameters(val *float64) error {
+func (j *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) validateSetWin32StatusCodeParameters(val *float64) error {
 	return nil
 }
 

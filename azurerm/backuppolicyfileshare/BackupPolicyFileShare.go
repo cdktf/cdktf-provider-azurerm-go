@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/backup_policy_file_share azurerm_backup_policy_file_share}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/backup_policy_file_share azurerm_backup_policy_file_share}.
 type BackupPolicyFileShare interface {
 	cdktf.TerraformResource
 	Backup() BackupPolicyFileShareBackupOutputReference
@@ -524,7 +524,7 @@ func (j *jsiiProxy_BackupPolicyFileShare) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/backup_policy_file_share azurerm_backup_policy_file_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/backup_policy_file_share azurerm_backup_policy_file_share} Resource.
 func NewBackupPolicyFileShare(scope constructs.Construct, id *string, config *BackupPolicyFileShareConfig) BackupPolicyFileShare {
 	_init_.Initialize()
 
@@ -542,7 +542,7 @@ func NewBackupPolicyFileShare(scope constructs.Construct, id *string, config *Ba
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/backup_policy_file_share azurerm_backup_policy_file_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/backup_policy_file_share azurerm_backup_policy_file_share} Resource.
 func NewBackupPolicyFileShare_Override(b BackupPolicyFileShare, scope constructs.Construct, id *string, config *BackupPolicyFileShareConfig) {
 	_init_.Initialize()
 

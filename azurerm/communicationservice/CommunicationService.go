@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/communication_service azurerm_communication_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/communication_service azurerm_communication_service}.
 type CommunicationService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_CommunicationService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/communication_service azurerm_communication_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/communication_service azurerm_communication_service} Resource.
 func NewCommunicationService(scope constructs.Construct, id *string, config *CommunicationServiceConfig) CommunicationService {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewCommunicationService(scope constructs.Construct, id *string, config *Com
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/communication_service azurerm_communication_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/communication_service azurerm_communication_service} Resource.
 func NewCommunicationService_Override(c CommunicationService, scope constructs.Construct, id *string, config *CommunicationServiceConfig) {
 	_init_.Initialize()
 

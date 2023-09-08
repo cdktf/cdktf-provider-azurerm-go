@@ -13,6 +13,9 @@ import (
 
 type BatchPoolExtensionsOutputReference interface {
 	cdktf.ComplexObject
+	AutomaticUpgradeEnabled() interface{}
+	SetAutomaticUpgradeEnabled(val interface{})
+	AutomaticUpgradeEnabledInput() interface{}
 	AutoUpgradeMinorVersion() interface{}
 	SetAutoUpgradeMinorVersion(val interface{})
 	AutoUpgradeMinorVersionInput() interface{}
@@ -88,6 +91,7 @@ type BatchPoolExtensionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAutomaticUpgradeEnabled()
 	ResetAutoUpgradeMinorVersion()
 	ResetProtectedSettings()
 	ResetProvisionAfterExtensions()
@@ -106,6 +110,26 @@ type BatchPoolExtensionsOutputReference interface {
 // The jsii proxy struct for BatchPoolExtensionsOutputReference
 type jsiiProxy_BatchPoolExtensionsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_BatchPoolExtensionsOutputReference) AutomaticUpgradeEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticUpgradeEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchPoolExtensionsOutputReference) AutomaticUpgradeEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticUpgradeEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_BatchPoolExtensionsOutputReference) AutoUpgradeMinorVersion() interface{} {
@@ -363,6 +387,17 @@ func NewBatchPoolExtensionsOutputReference_Override(b BatchPoolExtensionsOutputR
 		"@cdktf/provider-azurerm.batchPool.BatchPoolExtensionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
+	)
+}
+
+func (j *jsiiProxy_BatchPoolExtensionsOutputReference)SetAutomaticUpgradeEnabled(val interface{}) {
+	if err := j.validateSetAutomaticUpgradeEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"automaticUpgradeEnabled",
+		val,
 	)
 }
 
@@ -693,6 +728,14 @@ func (b *jsiiProxy_BatchPoolExtensionsOutputReference) InterpolationForAttribute
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BatchPoolExtensionsOutputReference) ResetAutomaticUpgradeEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAutomaticUpgradeEnabled",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BatchPoolExtensionsOutputReference) ResetAutoUpgradeMinorVersion() {

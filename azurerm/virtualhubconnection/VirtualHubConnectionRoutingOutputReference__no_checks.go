@@ -71,7 +71,19 @@ func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateSetComple
 	return nil
 }
 
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateSetInboundRouteMapIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateSetInternalValueParameters(val *VirtualHubConnectionRouting) error {
+	return nil
+}
+
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateSetOutboundRouteMapIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateSetStaticVnetLocalRouteOverrideCriteriaParameters(val *string) error {
 	return nil
 }
 

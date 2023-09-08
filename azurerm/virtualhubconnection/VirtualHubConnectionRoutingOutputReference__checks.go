@@ -216,9 +216,33 @@ func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateSetComple
 	return nil
 }
 
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateSetInboundRouteMapIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateSetInternalValueParameters(val *VirtualHubConnectionRouting) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateSetOutboundRouteMapIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateSetStaticVnetLocalRouteOverrideCriteriaParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

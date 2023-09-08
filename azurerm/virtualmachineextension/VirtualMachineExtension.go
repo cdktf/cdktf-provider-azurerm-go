@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/virtual_machine_extension azurerm_virtual_machine_extension}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/virtual_machine_extension azurerm_virtual_machine_extension}.
 type VirtualMachineExtension interface {
 	cdktf.TerraformResource
 	AutomaticUpgradeEnabled() interface{}
@@ -69,6 +69,9 @@ type VirtualMachineExtension interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProvisionAfterExtensions() *[]*string
+	SetProvisionAfterExtensions(val *[]*string)
+	ProvisionAfterExtensionsInput() *[]*string
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -137,6 +140,7 @@ type VirtualMachineExtension interface {
 	ResetOverrideLogicalId()
 	ResetProtectedSettings()
 	ResetProtectedSettingsFromKeyVault()
+	ResetProvisionAfterExtensions()
 	ResetSettings()
 	ResetTags()
 	ResetTimeouts()
@@ -405,6 +409,26 @@ func (j *jsiiProxy_VirtualMachineExtension) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_VirtualMachineExtension) ProvisionAfterExtensions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"provisionAfterExtensions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualMachineExtension) ProvisionAfterExtensionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"provisionAfterExtensionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualMachineExtension) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
@@ -596,7 +620,7 @@ func (j *jsiiProxy_VirtualMachineExtension) VirtualMachineIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/virtual_machine_extension azurerm_virtual_machine_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/virtual_machine_extension azurerm_virtual_machine_extension} Resource.
 func NewVirtualMachineExtension(scope constructs.Construct, id *string, config *VirtualMachineExtensionConfig) VirtualMachineExtension {
 	_init_.Initialize()
 
@@ -614,7 +638,7 @@ func NewVirtualMachineExtension(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/virtual_machine_extension azurerm_virtual_machine_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/virtual_machine_extension azurerm_virtual_machine_extension} Resource.
 func NewVirtualMachineExtension_Override(v VirtualMachineExtension, scope constructs.Construct, id *string, config *VirtualMachineExtensionConfig) {
 	_init_.Initialize()
 
@@ -744,6 +768,17 @@ func (j *jsiiProxy_VirtualMachineExtension)SetProvider(val cdktf.TerraformProvid
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualMachineExtension)SetProvisionAfterExtensions(val *[]*string) {
+	if err := j.validateSetProvisionAfterExtensionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionAfterExtensions",
 		val,
 	)
 }
@@ -1165,6 +1200,14 @@ func (v *jsiiProxy_VirtualMachineExtension) ResetProtectedSettingsFromKeyVault()
 	_jsii_.InvokeVoid(
 		v,
 		"resetProtectedSettingsFromKeyVault",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualMachineExtension) ResetProvisionAfterExtensions() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetProvisionAfterExtensions",
 		nil, // no parameters
 	)
 }

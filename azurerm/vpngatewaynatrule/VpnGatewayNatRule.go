@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/vpn_gateway_nat_rule azurerm_vpn_gateway_nat_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/vpn_gateway_nat_rule azurerm_vpn_gateway_nat_rule}.
 type VpnGatewayNatRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -550,7 +550,7 @@ func (j *jsiiProxy_VpnGatewayNatRule) VpnGatewayIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/vpn_gateway_nat_rule azurerm_vpn_gateway_nat_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/vpn_gateway_nat_rule azurerm_vpn_gateway_nat_rule} Resource.
 func NewVpnGatewayNatRule(scope constructs.Construct, id *string, config *VpnGatewayNatRuleConfig) VpnGatewayNatRule {
 	_init_.Initialize()
 
@@ -568,7 +568,7 @@ func NewVpnGatewayNatRule(scope constructs.Construct, id *string, config *VpnGat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/vpn_gateway_nat_rule azurerm_vpn_gateway_nat_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/vpn_gateway_nat_rule azurerm_vpn_gateway_nat_rule} Resource.
 func NewVpnGatewayNatRule_Override(v VpnGatewayNatRule, scope constructs.Construct, id *string, config *VpnGatewayNatRuleConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/bot_channel_direct_line_speech azurerm_bot_channel_direct_line_speech}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/bot_channel_direct_line_speech azurerm_bot_channel_direct_line_speech}.
 type BotChannelDirectLineSpeech interface {
 	cdktf.TerraformResource
 	BotName() *string
@@ -20,6 +20,9 @@ type BotChannelDirectLineSpeech interface {
 	BotNameInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CognitiveAccountId() *string
+	SetCognitiveAccountId(val *string)
+	CognitiveAccountIdInput() *string
 	CognitiveServiceAccessKey() *string
 	SetCognitiveServiceAccessKey(val *string)
 	CognitiveServiceAccessKeyInput() *string
@@ -113,6 +116,7 @@ type BotChannelDirectLineSpeech interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *BotChannelDirectLineSpeechTimeouts)
+	ResetCognitiveAccountId()
 	ResetCustomSpeechModelId()
 	ResetCustomVoiceDeploymentId()
 	ResetId()
@@ -160,6 +164,26 @@ func (j *jsiiProxy_BotChannelDirectLineSpeech) CdktfStack() cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotChannelDirectLineSpeech) CognitiveAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cognitiveAccountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotChannelDirectLineSpeech) CognitiveAccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cognitiveAccountIdInput",
 		&returns,
 	)
 	return returns
@@ -476,7 +500,7 @@ func (j *jsiiProxy_BotChannelDirectLineSpeech) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/bot_channel_direct_line_speech azurerm_bot_channel_direct_line_speech} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/bot_channel_direct_line_speech azurerm_bot_channel_direct_line_speech} Resource.
 func NewBotChannelDirectLineSpeech(scope constructs.Construct, id *string, config *BotChannelDirectLineSpeechConfig) BotChannelDirectLineSpeech {
 	_init_.Initialize()
 
@@ -494,7 +518,7 @@ func NewBotChannelDirectLineSpeech(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/bot_channel_direct_line_speech azurerm_bot_channel_direct_line_speech} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/bot_channel_direct_line_speech azurerm_bot_channel_direct_line_speech} Resource.
 func NewBotChannelDirectLineSpeech_Override(b BotChannelDirectLineSpeech, scope constructs.Construct, id *string, config *BotChannelDirectLineSpeechConfig) {
 	_init_.Initialize()
 
@@ -512,6 +536,17 @@ func (j *jsiiProxy_BotChannelDirectLineSpeech)SetBotName(val *string) {
 	_jsii_.Set(
 		j,
 		"botName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotChannelDirectLineSpeech)SetCognitiveAccountId(val *string) {
+	if err := j.validateSetCognitiveAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cognitiveAccountId",
 		val,
 	)
 }
@@ -935,6 +970,14 @@ func (b *jsiiProxy_BotChannelDirectLineSpeech) PutTimeouts(value *BotChannelDire
 		b,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BotChannelDirectLineSpeech) ResetCognitiveAccountId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCognitiveAccountId",
+		nil, // no parameters
 	)
 }
 

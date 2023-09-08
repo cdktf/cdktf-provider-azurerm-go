@@ -13,6 +13,7 @@ import (
 
 type DataAzurermBatchPoolNetworkConfigurationOutputReference interface {
 	cdktf.ComplexObject
+	AcceleratedNetworkingEnabled() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -82,6 +83,16 @@ type DataAzurermBatchPoolNetworkConfigurationOutputReference interface {
 // The jsii proxy struct for DataAzurermBatchPoolNetworkConfigurationOutputReference
 type jsiiProxy_DataAzurermBatchPoolNetworkConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataAzurermBatchPoolNetworkConfigurationOutputReference) AcceleratedNetworkingEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"acceleratedNetworkingEnabled",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAzurermBatchPoolNetworkConfigurationOutputReference) ComplexObjectIndex() interface{} {

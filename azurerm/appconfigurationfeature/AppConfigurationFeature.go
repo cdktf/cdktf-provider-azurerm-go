@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/app_configuration_feature azurerm_app_configuration_feature}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/app_configuration_feature azurerm_app_configuration_feature}.
 type AppConfigurationFeature interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -599,7 +599,7 @@ func (j *jsiiProxy_AppConfigurationFeature) TimewindowFilterInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/app_configuration_feature azurerm_app_configuration_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/app_configuration_feature azurerm_app_configuration_feature} Resource.
 func NewAppConfigurationFeature(scope constructs.Construct, id *string, config *AppConfigurationFeatureConfig) AppConfigurationFeature {
 	_init_.Initialize()
 
@@ -617,7 +617,7 @@ func NewAppConfigurationFeature(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/app_configuration_feature azurerm_app_configuration_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/app_configuration_feature azurerm_app_configuration_feature} Resource.
 func NewAppConfigurationFeature_Override(a AppConfigurationFeature, scope constructs.Construct, id *string, config *AppConfigurationFeatureConfig) {
 	_init_.Initialize()
 

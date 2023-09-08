@@ -168,6 +168,37 @@ func (c *jsiiProxy_ContainerGroupContainerOutputReference) validatePutReadinessP
 	return nil
 }
 
+func (c *jsiiProxy_ContainerGroupContainerOutputReference) validatePutSecurityParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ContainerGroupContainerSecurity:
+		value := value.(*[]*ContainerGroupContainerSecurity)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ContainerGroupContainerSecurity:
+		value_ := value.([]*ContainerGroupContainerSecurity)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ContainerGroupContainerSecurity; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerGroupContainerOutputReference) validatePutVolumeParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

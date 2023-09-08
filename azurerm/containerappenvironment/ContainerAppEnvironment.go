@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/container_app_environment azurerm_container_app_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/container_app_environment azurerm_container_app_environment}.
 type ContainerAppEnvironment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,9 @@ type ContainerAppEnvironment interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DaprApplicationInsightsConnectionString() *string
+	SetDaprApplicationInsightsConnectionString(val *string)
+	DaprApplicationInsightsConnectionStringInput() *string
 	DefaultDomain() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -118,6 +121,7 @@ type ContainerAppEnvironment interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ContainerAppEnvironmentTimeouts)
+	ResetDaprApplicationInsightsConnectionString()
 	ResetId()
 	ResetInfrastructureSubnetId()
 	ResetInternalLoadBalancerEnabled()
@@ -177,6 +181,26 @@ func (j *jsiiProxy_ContainerAppEnvironment) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppEnvironment) DaprApplicationInsightsConnectionString() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"daprApplicationInsightsConnectionString",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppEnvironment) DaprApplicationInsightsConnectionStringInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"daprApplicationInsightsConnectionStringInput",
 		&returns,
 	)
 	return returns
@@ -533,7 +557,7 @@ func (j *jsiiProxy_ContainerAppEnvironment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
 func NewContainerAppEnvironment(scope constructs.Construct, id *string, config *ContainerAppEnvironmentConfig) ContainerAppEnvironment {
 	_init_.Initialize()
 
@@ -551,7 +575,7 @@ func NewContainerAppEnvironment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
 func NewContainerAppEnvironment_Override(c ContainerAppEnvironment, scope constructs.Construct, id *string, config *ContainerAppEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -580,6 +604,17 @@ func (j *jsiiProxy_ContainerAppEnvironment)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAppEnvironment)SetDaprApplicationInsightsConnectionString(val *string) {
+	if err := j.validateSetDaprApplicationInsightsConnectionStringParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"daprApplicationInsightsConnectionString",
 		val,
 	)
 }
@@ -992,6 +1027,14 @@ func (c *jsiiProxy_ContainerAppEnvironment) PutTimeouts(value *ContainerAppEnvir
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerAppEnvironment) ResetDaprApplicationInsightsConnectionString() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDaprApplicationInsightsConnectionString",
+		nil, // no parameters
 	)
 }
 

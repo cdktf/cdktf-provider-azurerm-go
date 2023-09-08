@@ -55,9 +55,9 @@ type WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference inte
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Win32Status() *float64
-	SetWin32Status(val *float64)
-	Win32StatusInput() *float64
+	Win32StatusCode() *float64
+	SetWin32StatusCode(val *float64)
+	Win32StatusCodeInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -84,7 +84,7 @@ type WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference inte
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetPath()
 	ResetSubStatus()
-	ResetWin32Status()
+	ResetWin32StatusCode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -270,21 +270,21 @@ func (j *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutput
 	return returns
 }
 
-func (j *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) Win32Status() *float64 {
+func (j *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) Win32StatusCode() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"win32Status",
+		"win32StatusCode",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) Win32StatusInput() *float64 {
+func (j *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) Win32StatusCodeInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"win32StatusInput",
+		"win32StatusCodeInput",
 		&returns,
 	)
 	return returns
@@ -428,13 +428,13 @@ func (j *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutput
 	)
 }
 
-func (j *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference)SetWin32Status(val *float64) {
-	if err := j.validateSetWin32StatusParameters(val); err != nil {
+func (j *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference)SetWin32StatusCode(val *float64) {
+	if err := j.validateSetWin32StatusCodeParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"win32Status",
+		"win32StatusCode",
 		val,
 	)
 }
@@ -641,10 +641,10 @@ func (w *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutput
 	)
 }
 
-func (w *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) ResetWin32Status() {
+func (w *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference) ResetWin32StatusCode() {
 	_jsii_.InvokeVoid(
 		w,
-		"resetWin32Status",
+		"resetWin32StatusCode",
 		nil, // no parameters
 	)
 }

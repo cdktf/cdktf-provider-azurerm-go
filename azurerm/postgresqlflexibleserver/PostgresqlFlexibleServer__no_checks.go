@@ -99,6 +99,10 @@ func (j *jsiiProxy_PostgresqlFlexibleServer) validateSetAdministratorPasswordPar
 	return nil
 }
 
+func (j *jsiiProxy_PostgresqlFlexibleServer) validateSetAutoGrowEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlFlexibleServer) validateSetBackupRetentionDaysParameters(val *float64) error {
 	return nil
 }

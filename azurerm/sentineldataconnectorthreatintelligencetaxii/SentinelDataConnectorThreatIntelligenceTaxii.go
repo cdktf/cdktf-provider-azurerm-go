@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/sentinel_data_connector_threat_intelligence_taxii azurerm_sentinel_data_connector_threat_intelligence_taxii}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/sentinel_data_connector_threat_intelligence_taxii azurerm_sentinel_data_connector_threat_intelligence_taxii}.
 type SentinelDataConnectorThreatIntelligenceTaxii interface {
 	cdktf.TerraformResource
 	ApiRootUrl() *string
@@ -548,7 +548,7 @@ func (j *jsiiProxy_SentinelDataConnectorThreatIntelligenceTaxii) UserNameInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/sentinel_data_connector_threat_intelligence_taxii azurerm_sentinel_data_connector_threat_intelligence_taxii} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/sentinel_data_connector_threat_intelligence_taxii azurerm_sentinel_data_connector_threat_intelligence_taxii} Resource.
 func NewSentinelDataConnectorThreatIntelligenceTaxii(scope constructs.Construct, id *string, config *SentinelDataConnectorThreatIntelligenceTaxiiConfig) SentinelDataConnectorThreatIntelligenceTaxii {
 	_init_.Initialize()
 
@@ -566,7 +566,7 @@ func NewSentinelDataConnectorThreatIntelligenceTaxii(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.70.0/docs/resources/sentinel_data_connector_threat_intelligence_taxii azurerm_sentinel_data_connector_threat_intelligence_taxii} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/sentinel_data_connector_threat_intelligence_taxii azurerm_sentinel_data_connector_threat_intelligence_taxii} Resource.
 func NewSentinelDataConnectorThreatIntelligenceTaxii_Override(s SentinelDataConnectorThreatIntelligenceTaxii, scope constructs.Construct, id *string, config *SentinelDataConnectorThreatIntelligenceTaxiiConfig) {
 	_init_.Initialize()
 

@@ -157,6 +157,14 @@ func (j *jsiiProxy_BotChannelDirectLineSpeech) validateSetBotNameParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_BotChannelDirectLineSpeech) validateSetCognitiveAccountIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelDirectLineSpeech) validateSetCognitiveServiceAccessKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

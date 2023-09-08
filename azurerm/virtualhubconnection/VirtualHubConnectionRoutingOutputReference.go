@@ -33,10 +33,19 @@ type VirtualHubConnectionRoutingOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InboundRouteMapId() *string
+	SetInboundRouteMapId(val *string)
+	InboundRouteMapIdInput() *string
 	InternalValue() *VirtualHubConnectionRouting
 	SetInternalValue(val *VirtualHubConnectionRouting)
+	OutboundRouteMapId() *string
+	SetOutboundRouteMapId(val *string)
+	OutboundRouteMapIdInput() *string
 	PropagatedRouteTable() VirtualHubConnectionRoutingPropagatedRouteTableOutputReference
 	PropagatedRouteTableInput() *VirtualHubConnectionRoutingPropagatedRouteTable
+	StaticVnetLocalRouteOverrideCriteria() *string
+	SetStaticVnetLocalRouteOverrideCriteria(val *string)
+	StaticVnetLocalRouteOverrideCriteriaInput() *string
 	StaticVnetRoute() VirtualHubConnectionRoutingStaticVnetRouteList
 	StaticVnetRouteInput() interface{}
 	// Experimental.
@@ -74,7 +83,10 @@ type VirtualHubConnectionRoutingOutputReference interface {
 	PutPropagatedRouteTable(value *VirtualHubConnectionRoutingPropagatedRouteTable)
 	PutStaticVnetRoute(value interface{})
 	ResetAssociatedRouteTableId()
+	ResetInboundRouteMapId()
+	ResetOutboundRouteMapId()
 	ResetPropagatedRouteTable()
+	ResetStaticVnetLocalRouteOverrideCriteria()
 	ResetStaticVnetRoute()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -151,11 +163,51 @@ func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) InboundRouteMapId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inboundRouteMapId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) InboundRouteMapIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inboundRouteMapIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) InternalValue() *VirtualHubConnectionRouting {
 	var returns *VirtualHubConnectionRouting
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) OutboundRouteMapId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outboundRouteMapId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) OutboundRouteMapIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outboundRouteMapIdInput",
 		&returns,
 	)
 	return returns
@@ -176,6 +228,26 @@ func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) PropagatedRouteTa
 	_jsii_.Get(
 		j,
 		"propagatedRouteTableInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) StaticVnetLocalRouteOverrideCriteria() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"staticVnetLocalRouteOverrideCriteria",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) StaticVnetLocalRouteOverrideCriteriaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"staticVnetLocalRouteOverrideCriteriaInput",
 		&returns,
 	)
 	return returns
@@ -282,6 +354,17 @@ func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference)SetComplexObjectIs
 	)
 }
 
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference)SetInboundRouteMapId(val *string) {
+	if err := j.validateSetInboundRouteMapIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inboundRouteMapId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference)SetInternalValue(val *VirtualHubConnectionRouting) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -289,6 +372,28 @@ func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference)SetInternalValue(v
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference)SetOutboundRouteMapId(val *string) {
+	if err := j.validateSetOutboundRouteMapIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"outboundRouteMapId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference)SetStaticVnetLocalRouteOverrideCriteria(val *string) {
+	if err := j.validateSetStaticVnetLocalRouteOverrideCriteriaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"staticVnetLocalRouteOverrideCriteria",
 		val,
 	)
 }
@@ -531,10 +636,34 @@ func (v *jsiiProxy_VirtualHubConnectionRoutingOutputReference) ResetAssociatedRo
 	)
 }
 
+func (v *jsiiProxy_VirtualHubConnectionRoutingOutputReference) ResetInboundRouteMapId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetInboundRouteMapId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualHubConnectionRoutingOutputReference) ResetOutboundRouteMapId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetOutboundRouteMapId",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VirtualHubConnectionRoutingOutputReference) ResetPropagatedRouteTable() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetPropagatedRouteTable",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualHubConnectionRoutingOutputReference) ResetStaticVnetLocalRouteOverrideCriteria() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetStaticVnetLocalRouteOverrideCriteria",
 		nil, // no parameters
 	)
 }

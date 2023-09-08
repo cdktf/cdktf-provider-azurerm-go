@@ -51,6 +51,10 @@ func (b *jsiiProxy_BatchPoolExtensionsOutputReference) validateResolveParameters
 	return nil
 }
 
+func (j *jsiiProxy_BatchPoolExtensionsOutputReference) validateSetAutomaticUpgradeEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchPoolExtensionsOutputReference) validateSetAutoUpgradeMinorVersionParameters(val interface{}) error {
 	return nil
 }

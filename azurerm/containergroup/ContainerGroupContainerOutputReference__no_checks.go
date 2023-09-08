@@ -67,6 +67,10 @@ func (c *jsiiProxy_ContainerGroupContainerOutputReference) validatePutReadinessP
 	return nil
 }
 
+func (c *jsiiProxy_ContainerGroupContainerOutputReference) validatePutSecurityParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerGroupContainerOutputReference) validatePutVolumeParameters(value interface{}) error {
 	return nil
 }
