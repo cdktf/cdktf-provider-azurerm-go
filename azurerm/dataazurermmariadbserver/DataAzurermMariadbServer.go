@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/data-sources/mariadb_server azurerm_mariadb_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/mariadb_server azurerm_mariadb_server}.
 type DataAzurermMariadbServer interface {
 	cdktf.TerraformDataSource
 	AdministratorLogin() *string
@@ -419,7 +419,7 @@ func (j *jsiiProxy_DataAzurermMariadbServer) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/data-sources/mariadb_server azurerm_mariadb_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/mariadb_server azurerm_mariadb_server} Data Source.
 func NewDataAzurermMariadbServer(scope constructs.Construct, id *string, config *DataAzurermMariadbServerConfig) DataAzurermMariadbServer {
 	_init_.Initialize()
 
@@ -437,7 +437,7 @@ func NewDataAzurermMariadbServer(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/data-sources/mariadb_server azurerm_mariadb_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/mariadb_server azurerm_mariadb_server} Data Source.
 func NewDataAzurermMariadbServer_Override(d DataAzurermMariadbServer, scope constructs.Construct, id *string, config *DataAzurermMariadbServerConfig) {
 	_init_.Initialize()
 

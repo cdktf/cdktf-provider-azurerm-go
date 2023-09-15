@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/maps_creator azurerm_maps_creator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/maps_creator azurerm_maps_creator}.
 type MapsCreator interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -429,7 +429,7 @@ func (j *jsiiProxy_MapsCreator) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/maps_creator azurerm_maps_creator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/maps_creator azurerm_maps_creator} Resource.
 func NewMapsCreator(scope constructs.Construct, id *string, config *MapsCreatorConfig) MapsCreator {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewMapsCreator(scope constructs.Construct, id *string, config *MapsCreatorC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/maps_creator azurerm_maps_creator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/maps_creator azurerm_maps_creator} Resource.
 func NewMapsCreator_Override(m MapsCreator, scope constructs.Construct, id *string, config *MapsCreatorConfig) {
 	_init_.Initialize()
 

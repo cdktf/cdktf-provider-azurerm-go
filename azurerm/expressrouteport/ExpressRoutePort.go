@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/express_route_port azurerm_express_route_port}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/express_route_port azurerm_express_route_port}.
 type ExpressRoutePort interface {
 	cdktf.TerraformResource
 	BandwidthInGbps() *float64
@@ -604,7 +604,7 @@ func (j *jsiiProxy_ExpressRoutePort) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/express_route_port azurerm_express_route_port} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/express_route_port azurerm_express_route_port} Resource.
 func NewExpressRoutePort(scope constructs.Construct, id *string, config *ExpressRoutePortConfig) ExpressRoutePort {
 	_init_.Initialize()
 
@@ -622,7 +622,7 @@ func NewExpressRoutePort(scope constructs.Construct, id *string, config *Express
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/express_route_port azurerm_express_route_port} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/express_route_port azurerm_express_route_port} Resource.
 func NewExpressRoutePort_Override(e ExpressRoutePort, scope constructs.Construct, id *string, config *ExpressRoutePortConfig) {
 	_init_.Initialize()
 

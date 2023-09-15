@@ -163,7 +163,15 @@ func (j *jsiiProxy_ManagedDisk) validateSetOnDemandBurstingEnabledParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ManagedDisk) validateSetOptimizedFrequentAttachEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedDisk) validateSetOsTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ManagedDisk) validateSetPerformancePlusEnabledParameters(val interface{}) error {
 	return nil
 }
 

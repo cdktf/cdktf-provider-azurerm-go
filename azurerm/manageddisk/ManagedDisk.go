@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/managed_disk azurerm_managed_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/managed_disk azurerm_managed_disk}.
 type ManagedDisk interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -104,9 +104,15 @@ type ManagedDisk interface {
 	OnDemandBurstingEnabled() interface{}
 	SetOnDemandBurstingEnabled(val interface{})
 	OnDemandBurstingEnabledInput() interface{}
+	OptimizedFrequentAttachEnabled() interface{}
+	SetOptimizedFrequentAttachEnabled(val interface{})
+	OptimizedFrequentAttachEnabledInput() interface{}
 	OsType() *string
 	SetOsType(val *string)
 	OsTypeInput() *string
+	PerformancePlusEnabled() interface{}
+	SetPerformancePlusEnabled(val interface{})
+	PerformancePlusEnabledInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -208,10 +214,12 @@ type ManagedDisk interface {
 	ResetMaxShares()
 	ResetNetworkAccessPolicy()
 	ResetOnDemandBurstingEnabled()
+	ResetOptimizedFrequentAttachEnabled()
 	ResetOsType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPerformancePlusEnabled()
 	ResetPublicNetworkAccessEnabled()
 	ResetSecureVmDiskEncryptionSetId()
 	ResetSecurityType()
@@ -739,6 +747,26 @@ func (j *jsiiProxy_ManagedDisk) OnDemandBurstingEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ManagedDisk) OptimizedFrequentAttachEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"optimizedFrequentAttachEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedDisk) OptimizedFrequentAttachEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"optimizedFrequentAttachEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ManagedDisk) OsType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -754,6 +782,26 @@ func (j *jsiiProxy_ManagedDisk) OsTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"osTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedDisk) PerformancePlusEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"performancePlusEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedDisk) PerformancePlusEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"performancePlusEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1100,7 +1148,7 @@ func (j *jsiiProxy_ManagedDisk) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/managed_disk azurerm_managed_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/managed_disk azurerm_managed_disk} Resource.
 func NewManagedDisk(scope constructs.Construct, id *string, config *ManagedDiskConfig) ManagedDisk {
 	_init_.Initialize()
 
@@ -1118,7 +1166,7 @@ func NewManagedDisk(scope constructs.Construct, id *string, config *ManagedDiskC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/managed_disk azurerm_managed_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/managed_disk azurerm_managed_disk} Resource.
 func NewManagedDisk_Override(m ManagedDisk, scope constructs.Construct, id *string, config *ManagedDiskConfig) {
 	_init_.Initialize()
 
@@ -1387,6 +1435,17 @@ func (j *jsiiProxy_ManagedDisk)SetOnDemandBurstingEnabled(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_ManagedDisk)SetOptimizedFrequentAttachEnabled(val interface{}) {
+	if err := j.validateSetOptimizedFrequentAttachEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optimizedFrequentAttachEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ManagedDisk)SetOsType(val *string) {
 	if err := j.validateSetOsTypeParameters(val); err != nil {
 		panic(err)
@@ -1394,6 +1453,17 @@ func (j *jsiiProxy_ManagedDisk)SetOsType(val *string) {
 	_jsii_.Set(
 		j,
 		"osType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ManagedDisk)SetPerformancePlusEnabled(val interface{}) {
+	if err := j.validateSetPerformancePlusEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"performancePlusEnabled",
 		val,
 	)
 }
@@ -1984,6 +2054,14 @@ func (m *jsiiProxy_ManagedDisk) ResetOnDemandBurstingEnabled() {
 	)
 }
 
+func (m *jsiiProxy_ManagedDisk) ResetOptimizedFrequentAttachEnabled() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetOptimizedFrequentAttachEnabled",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_ManagedDisk) ResetOsType() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1996,6 +2074,14 @@ func (m *jsiiProxy_ManagedDisk) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedDisk) ResetPerformancePlusEnabled() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPerformancePlusEnabled",
 		nil, // no parameters
 	)
 }

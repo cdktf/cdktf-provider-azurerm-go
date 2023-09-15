@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/mssql_virtual_machine azurerm_mssql_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/mssql_virtual_machine azurerm_mssql_virtual_machine}.
 type MssqlVirtualMachine interface {
 	cdktf.TerraformResource
 	Assessment() MssqlVirtualMachineAssessmentOutputReference
@@ -696,7 +696,7 @@ func (j *jsiiProxy_MssqlVirtualMachine) WsfcDomainCredentialInput() *MssqlVirtua
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/mssql_virtual_machine azurerm_mssql_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/mssql_virtual_machine azurerm_mssql_virtual_machine} Resource.
 func NewMssqlVirtualMachine(scope constructs.Construct, id *string, config *MssqlVirtualMachineConfig) MssqlVirtualMachine {
 	_init_.Initialize()
 
@@ -714,7 +714,7 @@ func NewMssqlVirtualMachine(scope constructs.Construct, id *string, config *Mssq
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/mssql_virtual_machine azurerm_mssql_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/mssql_virtual_machine azurerm_mssql_virtual_machine} Resource.
 func NewMssqlVirtualMachine_Override(m MssqlVirtualMachine, scope constructs.Construct, id *string, config *MssqlVirtualMachineConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/subnet_network_security_group_association azurerm_subnet_network_security_group_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/subnet_network_security_group_association azurerm_subnet_network_security_group_association}.
 type SubnetNetworkSecurityGroupAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -359,7 +359,7 @@ func (j *jsiiProxy_SubnetNetworkSecurityGroupAssociation) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/subnet_network_security_group_association azurerm_subnet_network_security_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/subnet_network_security_group_association azurerm_subnet_network_security_group_association} Resource.
 func NewSubnetNetworkSecurityGroupAssociation(scope constructs.Construct, id *string, config *SubnetNetworkSecurityGroupAssociationConfig) SubnetNetworkSecurityGroupAssociation {
 	_init_.Initialize()
 
@@ -377,7 +377,7 @@ func NewSubnetNetworkSecurityGroupAssociation(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/subnet_network_security_group_association azurerm_subnet_network_security_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/subnet_network_security_group_association azurerm_subnet_network_security_group_association} Resource.
 func NewSubnetNetworkSecurityGroupAssociation_Override(s SubnetNetworkSecurityGroupAssociation, scope constructs.Construct, id *string, config *SubnetNetworkSecurityGroupAssociationConfig) {
 	_init_.Initialize()
 

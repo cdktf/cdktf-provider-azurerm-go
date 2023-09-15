@@ -131,6 +131,10 @@ func (j *jsiiProxy_Iothub) validateSetLifecycleParameters(val *cdktf.TerraformRe
 	return nil
 }
 
+func (j *jsiiProxy_Iothub) validateSetLocalAuthenticationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Iothub) validateSetLocationParameters(val *string) error {
 	return nil
 }

@@ -87,6 +87,10 @@ func (j *jsiiProxy_MapsAccount) validateSetLifecycleParameters(val *cdktf.Terraf
 	return nil
 }
 
+func (j *jsiiProxy_MapsAccount) validateSetLocalAuthenticationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MapsAccount) validateSetNameParameters(val *string) error {
 	return nil
 }

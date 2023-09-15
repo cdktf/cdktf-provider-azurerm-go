@@ -67,6 +67,10 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams}.
 type BotChannelMsTeams interface {
 	cdktf.TerraformResource
 	BotName() *string
@@ -37,6 +37,9 @@ type BotChannelMsTeams interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DeploymentEnvironment() *string
+	SetDeploymentEnvironment(val *string)
+	DeploymentEnvironmentInput() *string
 	EnableCalling() interface{}
 	SetEnableCalling(val interface{})
 	EnableCallingInput() interface{}
@@ -108,6 +111,7 @@ type BotChannelMsTeams interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *BotChannelMsTeamsTimeouts)
 	ResetCallingWebHook()
+	ResetDeploymentEnvironment()
 	ResetEnableCalling()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -214,6 +218,26 @@ func (j *jsiiProxy_BotChannelMsTeams) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotChannelMsTeams) DeploymentEnvironment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deploymentEnvironment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotChannelMsTeams) DeploymentEnvironmentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deploymentEnvironmentInput",
 		&returns,
 	)
 	return returns
@@ -430,7 +454,7 @@ func (j *jsiiProxy_BotChannelMsTeams) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams} Resource.
 func NewBotChannelMsTeams(scope constructs.Construct, id *string, config *BotChannelMsTeamsConfig) BotChannelMsTeams {
 	_init_.Initialize()
 
@@ -448,7 +472,7 @@ func NewBotChannelMsTeams(scope constructs.Construct, id *string, config *BotCha
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams} Resource.
 func NewBotChannelMsTeams_Override(b BotChannelMsTeams, scope constructs.Construct, id *string, config *BotChannelMsTeamsConfig) {
 	_init_.Initialize()
 
@@ -507,6 +531,17 @@ func (j *jsiiProxy_BotChannelMsTeams)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotChannelMsTeams)SetDeploymentEnvironment(val *string) {
+	if err := j.validateSetDeploymentEnvironmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deploymentEnvironment",
 		val,
 	)
 }
@@ -874,6 +909,14 @@ func (b *jsiiProxy_BotChannelMsTeams) ResetCallingWebHook() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetCallingWebHook",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotChannelMsTeams) ResetDeploymentEnvironment() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDeploymentEnvironment",
 		nil, // no parameters
 	)
 }

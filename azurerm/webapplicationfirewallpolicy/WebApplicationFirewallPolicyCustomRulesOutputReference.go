@@ -31,6 +31,9 @@ type WebApplicationFirewallPolicyCustomRulesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -79,6 +82,7 @@ type WebApplicationFirewallPolicyCustomRulesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutMatchConditions(value interface{})
+	ResetEnabled()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -140,6 +144,26 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) Creat
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -322,6 +346,17 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference)SetCom
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
 		val,
 	)
 }
@@ -586,6 +621,14 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) PutMa
 		w,
 		"putMatchConditions",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetEnabled",
+		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/data-sources/iothub_shared_access_policy azurerm_iothub_shared_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/iothub_shared_access_policy azurerm_iothub_shared_access_policy}.
 type DataAzurermIothubSharedAccessPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -398,7 +398,7 @@ func (j *jsiiProxy_DataAzurermIothubSharedAccessPolicy) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/data-sources/iothub_shared_access_policy azurerm_iothub_shared_access_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/iothub_shared_access_policy azurerm_iothub_shared_access_policy} Data Source.
 func NewDataAzurermIothubSharedAccessPolicy(scope constructs.Construct, id *string, config *DataAzurermIothubSharedAccessPolicyConfig) DataAzurermIothubSharedAccessPolicy {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewDataAzurermIothubSharedAccessPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/data-sources/iothub_shared_access_policy azurerm_iothub_shared_access_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/iothub_shared_access_policy azurerm_iothub_shared_access_policy} Data Source.
 func NewDataAzurermIothubSharedAccessPolicy_Override(d DataAzurermIothubSharedAccessPolicy, scope constructs.Construct, id *string, config *DataAzurermIothubSharedAccessPolicyConfig) {
 	_init_.Initialize()
 

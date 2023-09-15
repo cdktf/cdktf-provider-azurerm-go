@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/lab_service_user azurerm_lab_service_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/lab_service_user azurerm_lab_service_user}.
 type LabServiceUser interface {
 	cdktf.TerraformResource
 	AdditionalUsageQuota() *string
@@ -406,7 +406,7 @@ func (j *jsiiProxy_LabServiceUser) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/lab_service_user azurerm_lab_service_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/lab_service_user azurerm_lab_service_user} Resource.
 func NewLabServiceUser(scope constructs.Construct, id *string, config *LabServiceUserConfig) LabServiceUser {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewLabServiceUser(scope constructs.Construct, id *string, config *LabServic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/lab_service_user azurerm_lab_service_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/lab_service_user azurerm_lab_service_user} Resource.
 func NewLabServiceUser_Override(l LabServiceUser, scope constructs.Construct, id *string, config *LabServiceUserConfig) {
 	_init_.Initialize()
 

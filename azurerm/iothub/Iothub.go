@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/iothub azurerm_iothub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/iothub azurerm_iothub}.
 type Iothub interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +70,9 @@ type Iothub interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LocalAuthenticationEnabled() interface{}
+	SetLocalAuthenticationEnabled(val interface{})
+	LocalAuthenticationEnabledInput() interface{}
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
@@ -160,6 +163,7 @@ type Iothub interface {
 	ResetFileUpload()
 	ResetId()
 	ResetIdentity()
+	ResetLocalAuthenticationEnabled()
 	ResetMinTlsVersion()
 	ResetNetworkRuleSet()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -514,6 +518,26 @@ func (j *jsiiProxy_Iothub) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_Iothub) LocalAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Iothub) LocalAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localAuthenticationEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Iothub) Location() *string {
 	var returns *string
 	_jsii_.Get(
@@ -805,7 +829,7 @@ func (j *jsiiProxy_Iothub) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/iothub azurerm_iothub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/iothub azurerm_iothub} Resource.
 func NewIothub(scope constructs.Construct, id *string, config *IothubConfig) Iothub {
 	_init_.Initialize()
 
@@ -823,7 +847,7 @@ func NewIothub(scope constructs.Construct, id *string, config *IothubConfig) Iot
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/iothub azurerm_iothub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/iothub azurerm_iothub} Resource.
 func NewIothub_Override(i Iothub, scope constructs.Construct, id *string, config *IothubConfig) {
 	_init_.Initialize()
 
@@ -912,6 +936,17 @@ func (j *jsiiProxy_Iothub)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Iothub)SetLocalAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetLocalAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localAuthenticationEnabled",
 		val,
 	)
 }
@@ -1445,6 +1480,14 @@ func (i *jsiiProxy_Iothub) ResetIdentity() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_Iothub) ResetLocalAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetLocalAuthenticationEnabled",
 		nil, // no parameters
 	)
 }

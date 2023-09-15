@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/data-sources/virtual_machine_scale_set azurerm_virtual_machine_scale_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/virtual_machine_scale_set azurerm_virtual_machine_scale_set}.
 type DataAzurermVirtualMachineScaleSet interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -375,7 +375,7 @@ func (j *jsiiProxy_DataAzurermVirtualMachineScaleSet) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/data-sources/virtual_machine_scale_set azurerm_virtual_machine_scale_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/virtual_machine_scale_set azurerm_virtual_machine_scale_set} Data Source.
 func NewDataAzurermVirtualMachineScaleSet(scope constructs.Construct, id *string, config *DataAzurermVirtualMachineScaleSetConfig) DataAzurermVirtualMachineScaleSet {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewDataAzurermVirtualMachineScaleSet(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/data-sources/virtual_machine_scale_set azurerm_virtual_machine_scale_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/virtual_machine_scale_set azurerm_virtual_machine_scale_set} Data Source.
 func NewDataAzurermVirtualMachineScaleSet_Override(d DataAzurermVirtualMachineScaleSet, scope constructs.Construct, id *string, config *DataAzurermVirtualMachineScaleSetConfig) {
 	_init_.Initialize()
 

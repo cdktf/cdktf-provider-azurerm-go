@@ -83,6 +83,10 @@ func (j *jsiiProxy_ApplicationGatewaySslProfileOutputReference) validateSetTrust
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationGatewaySslProfileOutputReference) validateSetVerifyClientCertificateRevocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationGatewaySslProfileOutputReference) validateSetVerifyClientCertIssuerDnParameters(val interface{}) error {
 	return nil
 }

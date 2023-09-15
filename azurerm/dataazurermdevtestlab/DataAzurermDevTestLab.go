@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/data-sources/dev_test_lab azurerm_dev_test_lab}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/dev_test_lab azurerm_dev_test_lab}.
 type DataAzurermDevTestLab interface {
 	cdktf.TerraformDataSource
 	ArtifactsStorageAccountId() *string
@@ -430,7 +430,7 @@ func (j *jsiiProxy_DataAzurermDevTestLab) UniqueIdentifier() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/data-sources/dev_test_lab azurerm_dev_test_lab} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/dev_test_lab azurerm_dev_test_lab} Data Source.
 func NewDataAzurermDevTestLab(scope constructs.Construct, id *string, config *DataAzurermDevTestLabConfig) DataAzurermDevTestLab {
 	_init_.Initialize()
 
@@ -448,7 +448,7 @@ func NewDataAzurermDevTestLab(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/data-sources/dev_test_lab azurerm_dev_test_lab} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/dev_test_lab azurerm_dev_test_lab} Data Source.
 func NewDataAzurermDevTestLab_Override(d DataAzurermDevTestLab, scope constructs.Construct, id *string, config *DataAzurermDevTestLabConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/api_management_user azurerm_api_management_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/api_management_user azurerm_api_management_user}.
 type ApiManagementUser interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -547,7 +547,7 @@ func (j *jsiiProxy_ApiManagementUser) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/api_management_user azurerm_api_management_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/api_management_user azurerm_api_management_user} Resource.
 func NewApiManagementUser(scope constructs.Construct, id *string, config *ApiManagementUserConfig) ApiManagementUser {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewApiManagementUser(scope constructs.Construct, id *string, config *ApiMan
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/api_management_user azurerm_api_management_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/api_management_user azurerm_api_management_user} Resource.
 func NewApiManagementUser_Override(a ApiManagementUser, scope constructs.Construct, id *string, config *ApiManagementUserConfig) {
 	_init_.Initialize()
 

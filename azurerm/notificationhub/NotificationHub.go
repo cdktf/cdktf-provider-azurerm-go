@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/notification_hub azurerm_notification_hub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/notification_hub azurerm_notification_hub}.
 type NotificationHub interface {
 	cdktf.TerraformResource
 	ApnsCredential() NotificationHubApnsCredentialOutputReference
@@ -477,7 +477,7 @@ func (j *jsiiProxy_NotificationHub) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/notification_hub azurerm_notification_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/notification_hub azurerm_notification_hub} Resource.
 func NewNotificationHub(scope constructs.Construct, id *string, config *NotificationHubConfig) NotificationHub {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewNotificationHub(scope constructs.Construct, id *string, config *Notifica
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/notification_hub azurerm_notification_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/notification_hub azurerm_notification_hub} Resource.
 func NewNotificationHub_Override(n NotificationHub, scope constructs.Construct, id *string, config *NotificationHubConfig) {
 	_init_.Initialize()
 

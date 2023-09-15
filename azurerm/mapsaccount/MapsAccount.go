@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/maps_account azurerm_maps_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/maps_account azurerm_maps_account}.
 type MapsAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,6 +46,9 @@ type MapsAccount interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LocalAuthenticationEnabled() interface{}
+	SetLocalAuthenticationEnabled(val interface{})
+	LocalAuthenticationEnabledInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -108,6 +111,7 @@ type MapsAccount interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *MapsAccountTimeouts)
 	ResetId()
+	ResetLocalAuthenticationEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -233,6 +237,26 @@ func (j *jsiiProxy_MapsAccount) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MapsAccount) LocalAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MapsAccount) LocalAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localAuthenticationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -439,7 +463,7 @@ func (j *jsiiProxy_MapsAccount) XMsClientId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/maps_account azurerm_maps_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/maps_account azurerm_maps_account} Resource.
 func NewMapsAccount(scope constructs.Construct, id *string, config *MapsAccountConfig) MapsAccount {
 	_init_.Initialize()
 
@@ -457,7 +481,7 @@ func NewMapsAccount(scope constructs.Construct, id *string, config *MapsAccountC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/maps_account azurerm_maps_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/maps_account azurerm_maps_account} Resource.
 func NewMapsAccount_Override(m MapsAccount, scope constructs.Construct, id *string, config *MapsAccountConfig) {
 	_init_.Initialize()
 
@@ -524,6 +548,17 @@ func (j *jsiiProxy_MapsAccount)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MapsAccount)SetLocalAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetLocalAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localAuthenticationEnabled",
 		val,
 	)
 }
@@ -872,6 +907,14 @@ func (m *jsiiProxy_MapsAccount) ResetId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MapsAccount) ResetLocalAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetLocalAuthenticationEnabled",
 		nil, // no parameters
 	)
 }

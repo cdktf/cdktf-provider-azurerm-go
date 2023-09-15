@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system}.
 type ManagedLustreFileSystem interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -593,7 +593,7 @@ func (j *jsiiProxy_ManagedLustreFileSystem) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system} Resource.
 func NewManagedLustreFileSystem(scope constructs.Construct, id *string, config *ManagedLustreFileSystemConfig) ManagedLustreFileSystem {
 	_init_.Initialize()
 
@@ -611,7 +611,7 @@ func NewManagedLustreFileSystem(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.72.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system} Resource.
 func NewManagedLustreFileSystem_Override(m ManagedLustreFileSystem, scope constructs.Construct, id *string, config *ManagedLustreFileSystemConfig) {
 	_init_.Initialize()
 
