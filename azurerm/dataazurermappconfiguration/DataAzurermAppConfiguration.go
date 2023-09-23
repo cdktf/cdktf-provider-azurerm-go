@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/app_configuration azurerm_app_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/app_configuration azurerm_app_configuration}.
 type DataAzurermAppConfiguration interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -63,6 +63,7 @@ type DataAzurermAppConfiguration interface {
 	PurgeProtectionEnabled() cdktf.IResolvable
 	// Experimental.
 	RawOverrides() interface{}
+	Replica() DataAzurermAppConfigurationReplicaList
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
@@ -375,6 +376,16 @@ func (j *jsiiProxy_DataAzurermAppConfiguration) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermAppConfiguration) Replica() DataAzurermAppConfigurationReplicaList {
+	var returns DataAzurermAppConfigurationReplicaList
+	_jsii_.Get(
+		j,
+		"replica",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermAppConfiguration) ResourceGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -496,7 +507,7 @@ func (j *jsiiProxy_DataAzurermAppConfiguration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/app_configuration azurerm_app_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/app_configuration azurerm_app_configuration} Data Source.
 func NewDataAzurermAppConfiguration(scope constructs.Construct, id *string, config *DataAzurermAppConfigurationConfig) DataAzurermAppConfiguration {
 	_init_.Initialize()
 
@@ -514,7 +525,7 @@ func NewDataAzurermAppConfiguration(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/app_configuration azurerm_app_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/app_configuration azurerm_app_configuration} Data Source.
 func NewDataAzurermAppConfiguration_Override(d DataAzurermAppConfiguration, scope constructs.Construct, id *string, config *DataAzurermAppConfigurationConfig) {
 	_init_.Initialize()
 

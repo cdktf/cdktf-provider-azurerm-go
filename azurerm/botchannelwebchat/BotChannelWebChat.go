@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/bot_channel_web_chat azurerm_bot_channel_web_chat}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/bot_channel_web_chat azurerm_bot_channel_web_chat}.
 type BotChannelWebChat interface {
 	cdktf.TerraformResource
 	BotName() *string
@@ -67,6 +67,8 @@ type BotChannelWebChat interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	Site() BotChannelWebChatSiteList
+	SiteInput() interface{}
 	SiteNames() *[]*string
 	SetSiteNames(val *[]*string)
 	SiteNamesInput() *[]*string
@@ -103,11 +105,14 @@ type BotChannelWebChat interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutSite(value interface{})
 	PutTimeouts(value *BotChannelWebChatTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSite()
+	ResetSiteNames()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -334,6 +339,26 @@ func (j *jsiiProxy_BotChannelWebChat) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BotChannelWebChat) Site() BotChannelWebChatSiteList {
+	var returns BotChannelWebChatSiteList
+	_jsii_.Get(
+		j,
+		"site",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotChannelWebChat) SiteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"siteInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BotChannelWebChat) SiteNames() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -405,7 +430,7 @@ func (j *jsiiProxy_BotChannelWebChat) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/bot_channel_web_chat azurerm_bot_channel_web_chat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/bot_channel_web_chat azurerm_bot_channel_web_chat} Resource.
 func NewBotChannelWebChat(scope constructs.Construct, id *string, config *BotChannelWebChatConfig) BotChannelWebChat {
 	_init_.Initialize()
 
@@ -423,7 +448,7 @@ func NewBotChannelWebChat(scope constructs.Construct, id *string, config *BotCha
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/bot_channel_web_chat azurerm_bot_channel_web_chat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/bot_channel_web_chat azurerm_bot_channel_web_chat} Resource.
 func NewBotChannelWebChat_Override(b BotChannelWebChat, scope constructs.Construct, id *string, config *BotChannelWebChatConfig) {
 	_init_.Initialize()
 
@@ -823,6 +848,17 @@ func (b *jsiiProxy_BotChannelWebChat) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (b *jsiiProxy_BotChannelWebChat) PutSite(value interface{}) {
+	if err := b.validatePutSiteParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putSite",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BotChannelWebChat) PutTimeouts(value *BotChannelWebChatTimeouts) {
 	if err := b.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -846,6 +882,22 @@ func (b *jsiiProxy_BotChannelWebChat) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotChannelWebChat) ResetSite() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSite",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotChannelWebChat) ResetSiteNames() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSiteNames",
 		nil, // no parameters
 	)
 }

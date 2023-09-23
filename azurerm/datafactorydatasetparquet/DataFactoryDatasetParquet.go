@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/data_factory_dataset_parquet azurerm_data_factory_dataset_parquet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/data_factory_dataset_parquet azurerm_data_factory_dataset_parquet}.
 type DataFactoryDatasetParquet interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -21,6 +21,8 @@ type DataFactoryDatasetParquet interface {
 	Annotations() *[]*string
 	SetAnnotations(val *[]*string)
 	AnnotationsInput() *[]*string
+	AzureBlobFsLocation() DataFactoryDatasetParquetAzureBlobFsLocationOutputReference
+	AzureBlobFsLocationInput() *DataFactoryDatasetParquetAzureBlobFsLocation
 	AzureBlobStorageLocation() DataFactoryDatasetParquetAzureBlobStorageLocationOutputReference
 	AzureBlobStorageLocationInput() *DataFactoryDatasetParquetAzureBlobStorageLocation
 	// Experimental.
@@ -127,12 +129,14 @@ type DataFactoryDatasetParquet interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAzureBlobFsLocation(value *DataFactoryDatasetParquetAzureBlobFsLocation)
 	PutAzureBlobStorageLocation(value *DataFactoryDatasetParquetAzureBlobStorageLocation)
 	PutHttpServerLocation(value *DataFactoryDatasetParquetHttpServerLocation)
 	PutSchemaColumn(value interface{})
 	PutTimeouts(value *DataFactoryDatasetParquetTimeouts)
 	ResetAdditionalProperties()
 	ResetAnnotations()
+	ResetAzureBlobFsLocation()
 	ResetAzureBlobStorageLocation()
 	ResetCompressionCodec()
 	ResetCompressionLevel()
@@ -196,6 +200,26 @@ func (j *jsiiProxy_DataFactoryDatasetParquet) AnnotationsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"annotationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryDatasetParquet) AzureBlobFsLocation() DataFactoryDatasetParquetAzureBlobFsLocationOutputReference {
+	var returns DataFactoryDatasetParquetAzureBlobFsLocationOutputReference
+	_jsii_.Get(
+		j,
+		"azureBlobFsLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryDatasetParquet) AzureBlobFsLocationInput() *DataFactoryDatasetParquetAzureBlobFsLocation {
+	var returns *DataFactoryDatasetParquetAzureBlobFsLocation
+	_jsii_.Get(
+		j,
+		"azureBlobFsLocationInput",
 		&returns,
 	)
 	return returns
@@ -622,7 +646,7 @@ func (j *jsiiProxy_DataFactoryDatasetParquet) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/data_factory_dataset_parquet azurerm_data_factory_dataset_parquet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/data_factory_dataset_parquet azurerm_data_factory_dataset_parquet} Resource.
 func NewDataFactoryDatasetParquet(scope constructs.Construct, id *string, config *DataFactoryDatasetParquetConfig) DataFactoryDatasetParquet {
 	_init_.Initialize()
 
@@ -640,7 +664,7 @@ func NewDataFactoryDatasetParquet(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/data_factory_dataset_parquet azurerm_data_factory_dataset_parquet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/data_factory_dataset_parquet azurerm_data_factory_dataset_parquet} Resource.
 func NewDataFactoryDatasetParquet_Override(d DataFactoryDatasetParquet, scope constructs.Construct, id *string, config *DataFactoryDatasetParquetConfig) {
 	_init_.Initialize()
 
@@ -1106,6 +1130,17 @@ func (d *jsiiProxy_DataFactoryDatasetParquet) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (d *jsiiProxy_DataFactoryDatasetParquet) PutAzureBlobFsLocation(value *DataFactoryDatasetParquetAzureBlobFsLocation) {
+	if err := d.validatePutAzureBlobFsLocationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAzureBlobFsLocation",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataFactoryDatasetParquet) PutAzureBlobStorageLocation(value *DataFactoryDatasetParquetAzureBlobStorageLocation) {
 	if err := d.validatePutAzureBlobStorageLocationParameters(value); err != nil {
 		panic(err)
@@ -1162,6 +1197,14 @@ func (d *jsiiProxy_DataFactoryDatasetParquet) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryDatasetParquet) ResetAzureBlobFsLocation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAzureBlobFsLocation",
 		nil, // no parameters
 	)
 }

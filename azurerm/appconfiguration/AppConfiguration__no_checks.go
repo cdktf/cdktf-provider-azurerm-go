@@ -63,6 +63,10 @@ func (a *jsiiProxy_AppConfiguration) validatePutIdentityParameters(value *AppCon
 	return nil
 }
 
+func (a *jsiiProxy_AppConfiguration) validatePutReplicaParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppConfiguration) validatePutTimeoutsParameters(value *AppConfigurationTimeouts) error {
 	return nil
 }

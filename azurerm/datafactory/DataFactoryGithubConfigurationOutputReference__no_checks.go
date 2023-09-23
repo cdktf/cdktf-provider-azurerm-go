@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataFactoryGithubConfigurationOutputReference) validateSetInt
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryGithubConfigurationOutputReference) validateSetPublishingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryGithubConfigurationOutputReference) validateSetRepositoryNameParameters(val *string) error {
 	return nil
 }

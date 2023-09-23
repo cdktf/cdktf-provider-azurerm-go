@@ -5,13 +5,13 @@ package storageaccountnetworkrules
 
 
 type StorageAccountNetworkRulesTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/storage_account_network_rules#create StorageAccountNetworkRulesA#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/storage_account_network_rules#create StorageAccountNetworkRulesA#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/storage_account_network_rules#delete StorageAccountNetworkRulesA#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/storage_account_network_rules#delete StorageAccountNetworkRulesA#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/storage_account_network_rules#read StorageAccountNetworkRulesA#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/storage_account_network_rules#read StorageAccountNetworkRulesA#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/storage_account_network_rules#update StorageAccountNetworkRulesA#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/storage_account_network_rules#update StorageAccountNetworkRulesA#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

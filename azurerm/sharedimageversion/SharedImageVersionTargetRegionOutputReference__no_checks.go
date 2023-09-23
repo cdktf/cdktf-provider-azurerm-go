@@ -63,6 +63,10 @@ func (j *jsiiProxy_SharedImageVersionTargetRegionOutputReference) validateSetDis
 	return nil
 }
 
+func (j *jsiiProxy_SharedImageVersionTargetRegionOutputReference) validateSetExcludeFromLatestEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SharedImageVersionTargetRegionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

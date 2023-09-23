@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/automation_dsc_nodeconfiguration azurerm_automation_dsc_nodeconfiguration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/automation_dsc_nodeconfiguration azurerm_automation_dsc_nodeconfiguration}.
 type AutomationDscNodeconfiguration interface {
 	cdktf.TerraformResource
 	AutomationAccountName() *string
@@ -416,7 +416,7 @@ func (j *jsiiProxy_AutomationDscNodeconfiguration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/automation_dsc_nodeconfiguration azurerm_automation_dsc_nodeconfiguration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/automation_dsc_nodeconfiguration azurerm_automation_dsc_nodeconfiguration} Resource.
 func NewAutomationDscNodeconfiguration(scope constructs.Construct, id *string, config *AutomationDscNodeconfigurationConfig) AutomationDscNodeconfiguration {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewAutomationDscNodeconfiguration(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/automation_dsc_nodeconfiguration azurerm_automation_dsc_nodeconfiguration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/automation_dsc_nodeconfiguration azurerm_automation_dsc_nodeconfiguration} Resource.
 func NewAutomationDscNodeconfiguration_Override(a AutomationDscNodeconfiguration, scope constructs.Construct, id *string, config *AutomationDscNodeconfigurationConfig) {
 	_init_.Initialize()
 

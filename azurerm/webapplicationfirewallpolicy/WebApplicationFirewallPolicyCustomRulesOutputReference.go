@@ -36,6 +36,9 @@ type WebApplicationFirewallPolicyCustomRulesOutputReference interface {
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
+	GroupRateLimitBy() *string
+	SetGroupRateLimitBy(val *string)
+	GroupRateLimitByInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	MatchConditions() WebApplicationFirewallPolicyCustomRulesMatchConditionsList
@@ -46,6 +49,12 @@ type WebApplicationFirewallPolicyCustomRulesOutputReference interface {
 	Priority() *float64
 	SetPriority(val *float64)
 	PriorityInput() *float64
+	RateLimitDuration() *string
+	SetRateLimitDuration(val *string)
+	RateLimitDurationInput() *string
+	RateLimitThreshold() *float64
+	SetRateLimitThreshold(val *float64)
+	RateLimitThresholdInput() *float64
 	RuleType() *string
 	SetRuleType(val *string)
 	RuleTypeInput() *string
@@ -83,7 +92,10 @@ type WebApplicationFirewallPolicyCustomRulesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutMatchConditions(value interface{})
 	ResetEnabled()
+	ResetGroupRateLimitBy()
 	ResetName()
+	ResetRateLimitDuration()
+	ResetRateLimitThreshold()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -179,6 +191,26 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) Fqn()
 	return returns
 }
 
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) GroupRateLimitBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupRateLimitBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) GroupRateLimitByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupRateLimitByInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -244,6 +276,46 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) Prior
 	_jsii_.Get(
 		j,
 		"priorityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) RateLimitDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rateLimitDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) RateLimitDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rateLimitDurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) RateLimitThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rateLimitThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) RateLimitThresholdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rateLimitThresholdInput",
 		&returns,
 	)
 	return returns
@@ -361,6 +433,17 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference)SetEna
 	)
 }
 
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference)SetGroupRateLimitBy(val *string) {
+	if err := j.validateSetGroupRateLimitByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupRateLimitBy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -390,6 +473,28 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference)SetPri
 	_jsii_.Set(
 		j,
 		"priority",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference)SetRateLimitDuration(val *string) {
+	if err := j.validateSetRateLimitDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rateLimitDuration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference)SetRateLimitThreshold(val *float64) {
+	if err := j.validateSetRateLimitThresholdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rateLimitThreshold",
 		val,
 	)
 }
@@ -632,10 +737,34 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) Reset
 	)
 }
 
+func (w *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) ResetGroupRateLimitBy() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetGroupRateLimitBy",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) ResetRateLimitDuration() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRateLimitDuration",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) ResetRateLimitThreshold() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRateLimitThreshold",
 		nil, // no parameters
 	)
 }

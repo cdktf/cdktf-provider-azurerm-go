@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/shared_image_version azurerm_shared_image_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/shared_image_version azurerm_shared_image_version}.
 type SharedImageVersion interface {
 	cdktf.TerraformResource
 	BlobUri() *string
@@ -30,6 +30,9 @@ type SharedImageVersion interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DeletionOfReplicatedLocationsEnabled() interface{}
+	SetDeletionOfReplicatedLocationsEnabled(val interface{})
+	DeletionOfReplicatedLocationsEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -135,6 +138,7 @@ type SharedImageVersion interface {
 	PutTargetRegion(value interface{})
 	PutTimeouts(value *SharedImageVersionTimeouts)
 	ResetBlobUri()
+	ResetDeletionOfReplicatedLocationsEnabled()
 	ResetEndOfLifeDate()
 	ResetExcludeFromLatest()
 	ResetId()
@@ -217,6 +221,26 @@ func (j *jsiiProxy_SharedImageVersion) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SharedImageVersion) DeletionOfReplicatedLocationsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionOfReplicatedLocationsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SharedImageVersion) DeletionOfReplicatedLocationsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionOfReplicatedLocationsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -643,7 +667,7 @@ func (j *jsiiProxy_SharedImageVersion) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/shared_image_version azurerm_shared_image_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/shared_image_version azurerm_shared_image_version} Resource.
 func NewSharedImageVersion(scope constructs.Construct, id *string, config *SharedImageVersionConfig) SharedImageVersion {
 	_init_.Initialize()
 
@@ -661,7 +685,7 @@ func NewSharedImageVersion(scope constructs.Construct, id *string, config *Share
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/shared_image_version azurerm_shared_image_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/shared_image_version azurerm_shared_image_version} Resource.
 func NewSharedImageVersion_Override(s SharedImageVersion, scope constructs.Construct, id *string, config *SharedImageVersionConfig) {
 	_init_.Initialize()
 
@@ -701,6 +725,17 @@ func (j *jsiiProxy_SharedImageVersion)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SharedImageVersion)SetDeletionOfReplicatedLocationsEnabled(val interface{}) {
+	if err := j.validateSetDeletionOfReplicatedLocationsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionOfReplicatedLocationsEnabled",
 		val,
 	)
 }
@@ -1186,6 +1221,14 @@ func (s *jsiiProxy_SharedImageVersion) ResetBlobUri() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetBlobUri",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SharedImageVersion) ResetDeletionOfReplicatedLocationsEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDeletionOfReplicatedLocationsEnabled",
 		nil, // no parameters
 	)
 }

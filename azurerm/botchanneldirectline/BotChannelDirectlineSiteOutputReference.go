@@ -31,6 +31,9 @@ type BotChannelDirectlineSiteOutputReference interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
+	EndpointParametersEnabled() interface{}
+	SetEndpointParametersEnabled(val interface{})
+	EndpointParametersEnabledInput() interface{}
 	EnhancedAuthenticationEnabled() interface{}
 	SetEnhancedAuthenticationEnabled(val interface{})
 	EnhancedAuthenticationEnabledInput() interface{}
@@ -44,6 +47,9 @@ type BotChannelDirectlineSiteOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	StorageEnabled() interface{}
+	SetStorageEnabled(val interface{})
+	StorageEnabledInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -55,6 +61,9 @@ type BotChannelDirectlineSiteOutputReference interface {
 	TrustedOrigins() *[]*string
 	SetTrustedOrigins(val *[]*string)
 	TrustedOriginsInput() *[]*string
+	UserUploadEnabled() interface{}
+	SetUserUploadEnabled(val interface{})
+	UserUploadEnabledInput() interface{}
 	V1Allowed() interface{}
 	SetV1Allowed(val interface{})
 	V1AllowedInput() interface{}
@@ -86,8 +95,11 @@ type BotChannelDirectlineSiteOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnabled()
+	ResetEndpointParametersEnabled()
 	ResetEnhancedAuthenticationEnabled()
+	ResetStorageEnabled()
 	ResetTrustedOrigins()
+	ResetUserUploadEnabled()
 	ResetV1Allowed()
 	ResetV3Allowed()
 	// Produce the Token's value at resolution time.
@@ -150,6 +162,26 @@ func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) EnabledInput() inter
 	_jsii_.Get(
 		j,
 		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) EndpointParametersEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"endpointParametersEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) EndpointParametersEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"endpointParametersEnabledInput",
 		&returns,
 	)
 	return returns
@@ -245,6 +277,26 @@ func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) NameInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) StorageEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"storageEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) StorageEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"storageEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -280,6 +332,26 @@ func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) TrustedOriginsInput(
 	_jsii_.Get(
 		j,
 		"trustedOriginsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) UserUploadEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"userUploadEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) UserUploadEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"userUploadEnabledInput",
 		&returns,
 	)
 	return returns
@@ -386,6 +458,17 @@ func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference)SetEnabled(val interf
 	)
 }
 
+func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference)SetEndpointParametersEnabled(val interface{}) {
+	if err := j.validateSetEndpointParametersEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointParametersEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference)SetEnhancedAuthenticationEnabled(val interface{}) {
 	if err := j.validateSetEnhancedAuthenticationEnabledParameters(val); err != nil {
 		panic(err)
@@ -419,6 +502,17 @@ func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference)SetName(val *string) 
 	)
 }
 
+func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference)SetStorageEnabled(val interface{}) {
+	if err := j.validateSetStorageEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -448,6 +542,17 @@ func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference)SetTrustedOrigins(val
 	_jsii_.Set(
 		j,
 		"trustedOrigins",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference)SetUserUploadEnabled(val interface{}) {
+	if err := j.validateSetUserUploadEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userUploadEnabled",
 		val,
 	)
 }
@@ -668,6 +773,14 @@ func (b *jsiiProxy_BotChannelDirectlineSiteOutputReference) ResetEnabled() {
 	)
 }
 
+func (b *jsiiProxy_BotChannelDirectlineSiteOutputReference) ResetEndpointParametersEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetEndpointParametersEnabled",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BotChannelDirectlineSiteOutputReference) ResetEnhancedAuthenticationEnabled() {
 	_jsii_.InvokeVoid(
 		b,
@@ -676,10 +789,26 @@ func (b *jsiiProxy_BotChannelDirectlineSiteOutputReference) ResetEnhancedAuthent
 	)
 }
 
+func (b *jsiiProxy_BotChannelDirectlineSiteOutputReference) ResetStorageEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetStorageEnabled",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BotChannelDirectlineSiteOutputReference) ResetTrustedOrigins() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetTrustedOrigins",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotChannelDirectlineSiteOutputReference) ResetUserUploadEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetUserUploadEnabled",
 		nil, // no parameters
 	)
 }

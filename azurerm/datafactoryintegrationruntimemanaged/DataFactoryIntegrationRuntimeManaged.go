@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/data_factory_integration_runtime_managed azurerm_data_factory_integration_runtime_managed}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/data_factory_integration_runtime_managed azurerm_data_factory_integration_runtime_managed}.
 type DataFactoryIntegrationRuntimeManaged interface {
 	cdktf.TerraformResource
 	CatalogInfo() DataFactoryIntegrationRuntimeManagedCatalogInfoOutputReference
@@ -597,7 +597,7 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeManaged) VnetIntegrationInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/data_factory_integration_runtime_managed azurerm_data_factory_integration_runtime_managed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/data_factory_integration_runtime_managed azurerm_data_factory_integration_runtime_managed} Resource.
 func NewDataFactoryIntegrationRuntimeManaged(scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeManagedConfig) DataFactoryIntegrationRuntimeManaged {
 	_init_.Initialize()
 
@@ -615,7 +615,7 @@ func NewDataFactoryIntegrationRuntimeManaged(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/data_factory_integration_runtime_managed azurerm_data_factory_integration_runtime_managed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/data_factory_integration_runtime_managed azurerm_data_factory_integration_runtime_managed} Resource.
 func NewDataFactoryIntegrationRuntimeManaged_Override(d DataFactoryIntegrationRuntimeManaged, scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeManagedConfig) {
 	_init_.Initialize()
 

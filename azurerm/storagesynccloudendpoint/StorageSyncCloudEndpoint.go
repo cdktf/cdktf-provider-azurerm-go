@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/storage_sync_cloud_endpoint azurerm_storage_sync_cloud_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/storage_sync_cloud_endpoint azurerm_storage_sync_cloud_endpoint}.
 type StorageSyncCloudEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -429,7 +429,7 @@ func (j *jsiiProxy_StorageSyncCloudEndpoint) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/storage_sync_cloud_endpoint azurerm_storage_sync_cloud_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/storage_sync_cloud_endpoint azurerm_storage_sync_cloud_endpoint} Resource.
 func NewStorageSyncCloudEndpoint(scope constructs.Construct, id *string, config *StorageSyncCloudEndpointConfig) StorageSyncCloudEndpoint {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewStorageSyncCloudEndpoint(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/storage_sync_cloud_endpoint azurerm_storage_sync_cloud_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/storage_sync_cloud_endpoint azurerm_storage_sync_cloud_endpoint} Resource.
 func NewStorageSyncCloudEndpoint_Override(s StorageSyncCloudEndpoint, scope constructs.Construct, id *string, config *StorageSyncCloudEndpointConfig) {
 	_init_.Initialize()
 

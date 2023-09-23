@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataFactoryDatasetParquet) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryDatasetParquet) validatePutAzureBlobFsLocationParameters(value *DataFactoryDatasetParquetAzureBlobFsLocation) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetParquet) validatePutAzureBlobStorageLocationParameters(value *DataFactoryDatasetParquetAzureBlobStorageLocation) error {
 	return nil
 }

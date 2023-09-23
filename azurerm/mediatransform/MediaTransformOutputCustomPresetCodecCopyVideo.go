@@ -5,7 +5,7 @@ package mediatransform
 
 
 type MediaTransformOutputCustomPresetCodecCopyVideo struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/media_transform#label MediaTransform#label}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/media_transform#label MediaTransform#label}.
 	Label *string `field:"optional" json:"label" yaml:"label"`
 }
 

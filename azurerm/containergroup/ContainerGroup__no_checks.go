@@ -127,6 +127,10 @@ func (j *jsiiProxy_ContainerGroup) validateSetKeyVaultKeyIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_ContainerGroup) validateSetKeyVaultUserAssignedIdentityIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -49,6 +49,9 @@ type WebApplicationFirewallPolicyPolicySettingsOutputReference interface {
 	RequestBodyCheck() interface{}
 	SetRequestBodyCheck(val interface{})
 	RequestBodyCheckInput() interface{}
+	RequestBodyInspectLimitInKb() *float64
+	SetRequestBodyInspectLimitInKb(val *float64)
+	RequestBodyInspectLimitInKbInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -88,6 +91,7 @@ type WebApplicationFirewallPolicyPolicySettingsOutputReference interface {
 	ResetMaxRequestBodySizeInKb()
 	ResetMode()
 	ResetRequestBodyCheck()
+	ResetRequestBodyInspectLimitInKb()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -273,6 +277,26 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) Re
 	return returns
 }
 
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) RequestBodyInspectLimitInKb() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"requestBodyInspectLimitInKb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) RequestBodyInspectLimitInKbInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"requestBodyInspectLimitInKbInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -405,6 +429,17 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference)Set
 	_jsii_.Set(
 		j,
 		"requestBodyCheck",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference)SetRequestBodyInspectLimitInKb(val *float64) {
+	if err := j.validateSetRequestBodyInspectLimitInKbParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestBodyInspectLimitInKb",
 		val,
 	)
 }
@@ -672,6 +707,14 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) Re
 	_jsii_.InvokeVoid(
 		w,
 		"resetRequestBodyCheck",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) ResetRequestBodyInspectLimitInKb() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRequestBodyInspectLimitInKb",
 		nil, // no parameters
 	)
 }

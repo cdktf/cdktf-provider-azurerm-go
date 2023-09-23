@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/synapse_sql_pool azurerm_synapse_sql_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/synapse_sql_pool azurerm_synapse_sql_pool}.
 type SynapseSqlPool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -81,6 +81,9 @@ type SynapseSqlPool interface {
 	SkuName() *string
 	SetSkuName(val *string)
 	SkuNameInput() *string
+	StorageAccountType() *string
+	SetStorageAccountType(val *string)
+	StorageAccountTypeInput() *string
 	SynapseWorkspaceId() *string
 	SetSynapseWorkspaceId(val *string)
 	SynapseWorkspaceIdInput() *string
@@ -132,6 +135,7 @@ type SynapseSqlPool interface {
 	ResetOverrideLogicalId()
 	ResetRecoveryDatabaseId()
 	ResetRestore()
+	ResetStorageAccountType()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -459,6 +463,26 @@ func (j *jsiiProxy_SynapseSqlPool) SkuNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SynapseSqlPool) StorageAccountType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageAccountType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SynapseSqlPool) StorageAccountTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageAccountTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SynapseSqlPool) SynapseWorkspaceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -550,7 +574,7 @@ func (j *jsiiProxy_SynapseSqlPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/synapse_sql_pool azurerm_synapse_sql_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/synapse_sql_pool azurerm_synapse_sql_pool} Resource.
 func NewSynapseSqlPool(scope constructs.Construct, id *string, config *SynapseSqlPoolConfig) SynapseSqlPool {
 	_init_.Initialize()
 
@@ -568,7 +592,7 @@ func NewSynapseSqlPool(scope constructs.Construct, id *string, config *SynapseSq
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/synapse_sql_pool azurerm_synapse_sql_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/synapse_sql_pool azurerm_synapse_sql_pool} Resource.
 func NewSynapseSqlPool_Override(s SynapseSqlPool, scope constructs.Construct, id *string, config *SynapseSqlPoolConfig) {
 	_init_.Initialize()
 
@@ -731,6 +755,17 @@ func (j *jsiiProxy_SynapseSqlPool)SetSkuName(val *string) {
 	_jsii_.Set(
 		j,
 		"skuName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SynapseSqlPool)SetStorageAccountType(val *string) {
+	if err := j.validateSetStorageAccountTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageAccountType",
 		val,
 	)
 }
@@ -1105,6 +1140,14 @@ func (s *jsiiProxy_SynapseSqlPool) ResetRestore() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRestore",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SynapseSqlPool) ResetStorageAccountType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStorageAccountType",
 		nil, // no parameters
 	)
 }

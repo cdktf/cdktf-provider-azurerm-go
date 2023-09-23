@@ -47,7 +47,23 @@ func (c *jsiiProxy_ContainerAppTemplateOutputReference) validateInterpolationFor
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) validatePutAzureQueueScaleRuleParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAppTemplateOutputReference) validatePutContainerParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) validatePutCustomScaleRuleParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) validatePutHttpScaleRuleParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) validatePutTcpScaleRuleParameters(value interface{}) error {
 	return nil
 }
 

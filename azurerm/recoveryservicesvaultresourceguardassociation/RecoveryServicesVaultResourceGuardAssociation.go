@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association}.
 type RecoveryServicesVaultResourceGuardAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -102,6 +102,7 @@ type RecoveryServicesVaultResourceGuardAssociation interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *RecoveryServicesVaultResourceGuardAssociationTimeouts)
 	ResetId()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -382,7 +383,7 @@ func (j *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation) VaultIdInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association} Resource.
 func NewRecoveryServicesVaultResourceGuardAssociation(scope constructs.Construct, id *string, config *RecoveryServicesVaultResourceGuardAssociationConfig) RecoveryServicesVaultResourceGuardAssociation {
 	_init_.Initialize()
 
@@ -400,7 +401,7 @@ func NewRecoveryServicesVaultResourceGuardAssociation(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association} Resource.
 func NewRecoveryServicesVaultResourceGuardAssociation_Override(r RecoveryServicesVaultResourceGuardAssociation, scope constructs.Construct, id *string, config *RecoveryServicesVaultResourceGuardAssociationConfig) {
 	_init_.Initialize()
 
@@ -804,6 +805,14 @@ func (r *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation) ResetName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetName",
 		nil, // no parameters
 	)
 }

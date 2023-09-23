@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/cosmosdb_mongo_collection azurerm_cosmosdb_mongo_collection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/cosmosdb_mongo_collection azurerm_cosmosdb_mongo_collection}.
 type CosmosdbMongoCollection interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -560,7 +560,7 @@ func (j *jsiiProxy_CosmosdbMongoCollection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/cosmosdb_mongo_collection azurerm_cosmosdb_mongo_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/cosmosdb_mongo_collection azurerm_cosmosdb_mongo_collection} Resource.
 func NewCosmosdbMongoCollection(scope constructs.Construct, id *string, config *CosmosdbMongoCollectionConfig) CosmosdbMongoCollection {
 	_init_.Initialize()
 
@@ -578,7 +578,7 @@ func NewCosmosdbMongoCollection(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/cosmosdb_mongo_collection azurerm_cosmosdb_mongo_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/cosmosdb_mongo_collection azurerm_cosmosdb_mongo_collection} Resource.
 func NewCosmosdbMongoCollection_Override(c CosmosdbMongoCollection, scope constructs.Construct, id *string, config *CosmosdbMongoCollectionConfig) {
 	_init_.Initialize()
 

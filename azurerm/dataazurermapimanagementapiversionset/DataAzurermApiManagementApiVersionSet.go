@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/api_management_api_version_set azurerm_api_management_api_version_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/api_management_api_version_set azurerm_api_management_api_version_set}.
 type DataAzurermApiManagementApiVersionSet interface {
 	cdktf.TerraformDataSource
 	ApiManagementName() *string
@@ -409,7 +409,7 @@ func (j *jsiiProxy_DataAzurermApiManagementApiVersionSet) VersionQueryName() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/api_management_api_version_set azurerm_api_management_api_version_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/api_management_api_version_set azurerm_api_management_api_version_set} Data Source.
 func NewDataAzurermApiManagementApiVersionSet(scope constructs.Construct, id *string, config *DataAzurermApiManagementApiVersionSetConfig) DataAzurermApiManagementApiVersionSet {
 	_init_.Initialize()
 
@@ -427,7 +427,7 @@ func NewDataAzurermApiManagementApiVersionSet(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/api_management_api_version_set azurerm_api_management_api_version_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/api_management_api_version_set azurerm_api_management_api_version_set} Data Source.
 func NewDataAzurermApiManagementApiVersionSet_Override(d DataAzurermApiManagementApiVersionSet, scope constructs.Construct, id *string, config *DataAzurermApiManagementApiVersionSetConfig) {
 	_init_.Initialize()
 

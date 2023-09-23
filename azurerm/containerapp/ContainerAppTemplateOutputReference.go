@@ -13,6 +13,8 @@ import (
 
 type ContainerAppTemplateOutputReference interface {
 	cdktf.ComplexObject
+	AzureQueueScaleRule() ContainerAppTemplateAzureQueueScaleRuleList
+	AzureQueueScaleRuleInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,8 +32,12 @@ type ContainerAppTemplateOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomScaleRule() ContainerAppTemplateCustomScaleRuleList
+	CustomScaleRuleInput() interface{}
 	// Experimental.
 	Fqn() *string
+	HttpScaleRule() ContainerAppTemplateHttpScaleRuleList
+	HttpScaleRuleInput() interface{}
 	InternalValue() *ContainerAppTemplate
 	SetInternalValue(val *ContainerAppTemplate)
 	MaxReplicas() *float64
@@ -43,6 +49,8 @@ type ContainerAppTemplateOutputReference interface {
 	RevisionSuffix() *string
 	SetRevisionSuffix(val *string)
 	RevisionSuffixInput() *string
+	TcpScaleRule() ContainerAppTemplateTcpScaleRuleList
+	TcpScaleRuleInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -77,11 +85,19 @@ type ContainerAppTemplateOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAzureQueueScaleRule(value interface{})
 	PutContainer(value interface{})
+	PutCustomScaleRule(value interface{})
+	PutHttpScaleRule(value interface{})
+	PutTcpScaleRule(value interface{})
 	PutVolume(value interface{})
+	ResetAzureQueueScaleRule()
+	ResetCustomScaleRule()
+	ResetHttpScaleRule()
 	ResetMaxReplicas()
 	ResetMinReplicas()
 	ResetRevisionSuffix()
+	ResetTcpScaleRule()
 	ResetVolume()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -96,6 +112,26 @@ type ContainerAppTemplateOutputReference interface {
 // The jsii proxy struct for ContainerAppTemplateOutputReference
 type jsiiProxy_ContainerAppTemplateOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) AzureQueueScaleRule() ContainerAppTemplateAzureQueueScaleRuleList {
+	var returns ContainerAppTemplateAzureQueueScaleRuleList
+	_jsii_.Get(
+		j,
+		"azureQueueScaleRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) AzureQueueScaleRuleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"azureQueueScaleRuleInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ContainerAppTemplateOutputReference) ComplexObjectIndex() interface{} {
@@ -148,11 +184,51 @@ func (j *jsiiProxy_ContainerAppTemplateOutputReference) CreationStack() *[]*stri
 	return returns
 }
 
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) CustomScaleRule() ContainerAppTemplateCustomScaleRuleList {
+	var returns ContainerAppTemplateCustomScaleRuleList
+	_jsii_.Get(
+		j,
+		"customScaleRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) CustomScaleRuleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customScaleRuleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerAppTemplateOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) HttpScaleRule() ContainerAppTemplateHttpScaleRuleList {
+	var returns ContainerAppTemplateHttpScaleRuleList
+	_jsii_.Get(
+		j,
+		"httpScaleRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) HttpScaleRuleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"httpScaleRuleInput",
 		&returns,
 	)
 	return returns
@@ -223,6 +299,26 @@ func (j *jsiiProxy_ContainerAppTemplateOutputReference) RevisionSuffixInput() *s
 	_jsii_.Get(
 		j,
 		"revisionSuffixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) TcpScaleRule() ContainerAppTemplateTcpScaleRuleList {
+	var returns ContainerAppTemplateTcpScaleRuleList
+	_jsii_.Get(
+		j,
+		"tcpScaleRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) TcpScaleRuleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tcpScaleRuleInput",
 		&returns,
 	)
 	return returns
@@ -570,6 +666,17 @@ func (c *jsiiProxy_ContainerAppTemplateOutputReference) InterpolationForAttribut
 	return returns
 }
 
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) PutAzureQueueScaleRule(value interface{}) {
+	if err := c.validatePutAzureQueueScaleRuleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAzureQueueScaleRule",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerAppTemplateOutputReference) PutContainer(value interface{}) {
 	if err := c.validatePutContainerParameters(value); err != nil {
 		panic(err)
@@ -577,6 +684,39 @@ func (c *jsiiProxy_ContainerAppTemplateOutputReference) PutContainer(value inter
 	_jsii_.InvokeVoid(
 		c,
 		"putContainer",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) PutCustomScaleRule(value interface{}) {
+	if err := c.validatePutCustomScaleRuleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCustomScaleRule",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) PutHttpScaleRule(value interface{}) {
+	if err := c.validatePutHttpScaleRuleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putHttpScaleRule",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) PutTcpScaleRule(value interface{}) {
+	if err := c.validatePutTcpScaleRuleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTcpScaleRule",
 		[]interface{}{value},
 	)
 }
@@ -589,6 +729,30 @@ func (c *jsiiProxy_ContainerAppTemplateOutputReference) PutVolume(value interfac
 		c,
 		"putVolume",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) ResetAzureQueueScaleRule() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAzureQueueScaleRule",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) ResetCustomScaleRule() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomScaleRule",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) ResetHttpScaleRule() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHttpScaleRule",
+		nil, // no parameters
 	)
 }
 
@@ -612,6 +776,14 @@ func (c *jsiiProxy_ContainerAppTemplateOutputReference) ResetRevisionSuffix() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRevisionSuffix",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) ResetTcpScaleRule() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTcpScaleRule",
 		nil, // no parameters
 	)
 }

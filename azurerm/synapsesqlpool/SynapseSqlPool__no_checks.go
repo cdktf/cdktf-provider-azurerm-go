@@ -123,6 +123,10 @@ func (j *jsiiProxy_SynapseSqlPool) validateSetSkuNameParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_SynapseSqlPool) validateSetStorageAccountTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseSqlPool) validateSetSynapseWorkspaceIdParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/machine_learning_inference_cluster azurerm_machine_learning_inference_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/machine_learning_inference_cluster azurerm_machine_learning_inference_cluster}.
 type MachineLearningInferenceCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -525,7 +525,7 @@ func (j *jsiiProxy_MachineLearningInferenceCluster) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/machine_learning_inference_cluster azurerm_machine_learning_inference_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/machine_learning_inference_cluster azurerm_machine_learning_inference_cluster} Resource.
 func NewMachineLearningInferenceCluster(scope constructs.Construct, id *string, config *MachineLearningInferenceClusterConfig) MachineLearningInferenceCluster {
 	_init_.Initialize()
 
@@ -543,7 +543,7 @@ func NewMachineLearningInferenceCluster(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/machine_learning_inference_cluster azurerm_machine_learning_inference_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/machine_learning_inference_cluster azurerm_machine_learning_inference_cluster} Resource.
 func NewMachineLearningInferenceCluster_Override(m MachineLearningInferenceCluster, scope constructs.Construct, id *string, config *MachineLearningInferenceClusterConfig) {
 	_init_.Initialize()
 

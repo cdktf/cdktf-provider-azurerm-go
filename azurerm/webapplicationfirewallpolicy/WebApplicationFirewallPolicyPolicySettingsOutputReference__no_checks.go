@@ -87,6 +87,10 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) validateSetRequestBodyInspectLimitInKbParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

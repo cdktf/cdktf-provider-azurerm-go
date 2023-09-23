@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/container_group azurerm_container_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/container_group azurerm_container_group}.
 type ContainerGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +70,9 @@ type ContainerGroup interface {
 	KeyVaultKeyId() *string
 	SetKeyVaultKeyId(val *string)
 	KeyVaultKeyIdInput() *string
+	KeyVaultUserAssignedIdentityId() *string
+	SetKeyVaultUserAssignedIdentityId(val *string)
+	KeyVaultUserAssignedIdentityIdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -168,6 +171,7 @@ type ContainerGroup interface {
 	ResetInitContainer()
 	ResetIpAddressType()
 	ResetKeyVaultKeyId()
+	ResetKeyVaultUserAssignedIdentityId()
 	ResetNetworkProfileId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -533,6 +537,26 @@ func (j *jsiiProxy_ContainerGroup) KeyVaultKeyIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerGroup) KeyVaultUserAssignedIdentityId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultUserAssignedIdentityId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerGroup) KeyVaultUserAssignedIdentityIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultUserAssignedIdentityIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerGroup) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -834,7 +858,7 @@ func (j *jsiiProxy_ContainerGroup) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/container_group azurerm_container_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/container_group azurerm_container_group} Resource.
 func NewContainerGroup(scope constructs.Construct, id *string, config *ContainerGroupConfig) ContainerGroup {
 	_init_.Initialize()
 
@@ -852,7 +876,7 @@ func NewContainerGroup(scope constructs.Construct, id *string, config *Container
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/container_group azurerm_container_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/container_group azurerm_container_group} Resource.
 func NewContainerGroup_Override(c ContainerGroup, scope constructs.Construct, id *string, config *ContainerGroupConfig) {
 	_init_.Initialize()
 
@@ -952,6 +976,17 @@ func (j *jsiiProxy_ContainerGroup)SetKeyVaultKeyId(val *string) {
 	_jsii_.Set(
 		j,
 		"keyVaultKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerGroup)SetKeyVaultUserAssignedIdentityId(val *string) {
+	if err := j.validateSetKeyVaultUserAssignedIdentityIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyVaultUserAssignedIdentityId",
 		val,
 	)
 }
@@ -1534,6 +1569,14 @@ func (c *jsiiProxy_ContainerGroup) ResetKeyVaultKeyId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetKeyVaultKeyId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerGroup) ResetKeyVaultUserAssignedIdentityId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKeyVaultUserAssignedIdentityId",
 		nil, // no parameters
 	)
 }

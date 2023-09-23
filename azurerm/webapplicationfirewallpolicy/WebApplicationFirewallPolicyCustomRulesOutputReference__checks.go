@@ -225,6 +225,14 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) validateSetGroupRateLimitByParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -258,6 +266,22 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) valid
 }
 
 func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) validateSetPriorityParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) validateSetRateLimitDurationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) validateSetRateLimitThresholdParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

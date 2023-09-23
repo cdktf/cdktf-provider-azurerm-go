@@ -87,6 +87,10 @@ func (j *jsiiProxy_SharedImageVersion) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_SharedImageVersion) validateSetDeletionOfReplicatedLocationsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SharedImageVersion) validateSetEndOfLifeDateParameters(val *string) error {
 	return nil
 }

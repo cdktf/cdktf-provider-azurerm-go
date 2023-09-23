@@ -123,6 +123,10 @@ func (j *jsiiProxy_ContainerAppEnvironment) validateSetTagsParameters(val *map[s
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppEnvironment) validateSetZoneRedundancyEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewContainerAppEnvironmentParameters(scope constructs.Construct, id *string, config *ContainerAppEnvironmentConfig) error {
 	return nil
 }

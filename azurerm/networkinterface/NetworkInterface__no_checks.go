@@ -75,6 +75,14 @@ func validateNetworkInterface_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_NetworkInterface) validateSetAuxiliaryModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkInterface) validateSetAuxiliarySkuParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkInterface) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

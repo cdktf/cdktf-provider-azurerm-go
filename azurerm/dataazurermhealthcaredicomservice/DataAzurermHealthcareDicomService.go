@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/healthcare_dicom_service azurerm_healthcare_dicom_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/healthcare_dicom_service azurerm_healthcare_dicom_service}.
 type DataAzurermHealthcareDicomService interface {
 	cdktf.TerraformDataSource
 	Authentication() DataAzurermHealthcareDicomServiceAuthenticationList
@@ -397,7 +397,7 @@ func (j *jsiiProxy_DataAzurermHealthcareDicomService) WorkspaceIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/healthcare_dicom_service azurerm_healthcare_dicom_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/healthcare_dicom_service azurerm_healthcare_dicom_service} Data Source.
 func NewDataAzurermHealthcareDicomService(scope constructs.Construct, id *string, config *DataAzurermHealthcareDicomServiceConfig) DataAzurermHealthcareDicomService {
 	_init_.Initialize()
 
@@ -415,7 +415,7 @@ func NewDataAzurermHealthcareDicomService(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/healthcare_dicom_service azurerm_healthcare_dicom_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/healthcare_dicom_service azurerm_healthcare_dicom_service} Data Source.
 func NewDataAzurermHealthcareDicomService_Override(d DataAzurermHealthcareDicomService, scope constructs.Construct, id *string, config *DataAzurermHealthcareDicomServiceConfig) {
 	_init_.Initialize()
 

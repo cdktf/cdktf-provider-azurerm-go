@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key}.
 type StorageAccountCustomerManagedKeyA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type StorageAccountCustomerManagedKeyA interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	FederatedIdentityClientId() *string
+	SetFederatedIdentityClientId(val *string)
+	FederatedIdentityClientIdInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -48,6 +51,9 @@ type StorageAccountCustomerManagedKeyA interface {
 	KeyVaultId() *string
 	SetKeyVaultId(val *string)
 	KeyVaultIdInput() *string
+	KeyVaultUri() *string
+	SetKeyVaultUri(val *string)
+	KeyVaultUriInput() *string
 	KeyVersion() *string
 	SetKeyVersion(val *string)
 	KeyVersionInput() *string
@@ -107,7 +113,10 @@ type StorageAccountCustomerManagedKeyA interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *StorageAccountCustomerManagedKeyTimeouts)
+	ResetFederatedIdentityClientId()
 	ResetId()
+	ResetKeyVaultId()
+	ResetKeyVaultUri()
 	ResetKeyVersion()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -174,6 +183,26 @@ func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) FederatedIdentityClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"federatedIdentityClientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) FederatedIdentityClientIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"federatedIdentityClientIdInput",
 		&returns,
 	)
 	return returns
@@ -264,6 +293,26 @@ func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) KeyVaultIdInput() *string 
 	_jsii_.Get(
 		j,
 		"keyVaultIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) KeyVaultUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) KeyVaultUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultUriInput",
 		&returns,
 	)
 	return returns
@@ -430,7 +479,7 @@ func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) UserAssignedIdentityIdInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key} Resource.
 func NewStorageAccountCustomerManagedKeyA(scope constructs.Construct, id *string, config *StorageAccountCustomerManagedKeyAConfig) StorageAccountCustomerManagedKeyA {
 	_init_.Initialize()
 
@@ -448,7 +497,7 @@ func NewStorageAccountCustomerManagedKeyA(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key} Resource.
 func NewStorageAccountCustomerManagedKeyA_Override(s StorageAccountCustomerManagedKeyA, scope constructs.Construct, id *string, config *StorageAccountCustomerManagedKeyAConfig) {
 	_init_.Initialize()
 
@@ -485,6 +534,17 @@ func (j *jsiiProxy_StorageAccountCustomerManagedKeyA)SetDependsOn(val *[]*string
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageAccountCustomerManagedKeyA)SetFederatedIdentityClientId(val *string) {
+	if err := j.validateSetFederatedIdentityClientIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"federatedIdentityClientId",
 		val,
 	)
 }
@@ -526,6 +586,17 @@ func (j *jsiiProxy_StorageAccountCustomerManagedKeyA)SetKeyVaultId(val *string) 
 	_jsii_.Set(
 		j,
 		"keyVaultId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageAccountCustomerManagedKeyA)SetKeyVaultUri(val *string) {
+	if err := j.validateSetKeyVaultUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyVaultUri",
 		val,
 	)
 }
@@ -870,10 +941,34 @@ func (s *jsiiProxy_StorageAccountCustomerManagedKeyA) PutTimeouts(value *Storage
 	)
 }
 
+func (s *jsiiProxy_StorageAccountCustomerManagedKeyA) ResetFederatedIdentityClientId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetFederatedIdentityClientId",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StorageAccountCustomerManagedKeyA) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageAccountCustomerManagedKeyA) ResetKeyVaultId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKeyVaultId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageAccountCustomerManagedKeyA) ResetKeyVaultUri() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKeyVaultUri",
 		nil, // no parameters
 	)
 }

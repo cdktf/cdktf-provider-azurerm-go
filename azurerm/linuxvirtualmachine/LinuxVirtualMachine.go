@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine}.
 type LinuxVirtualMachine interface {
 	cdktf.TerraformResource
 	AdditionalCapabilities() LinuxVirtualMachineAdditionalCapabilitiesOutputReference
@@ -1465,7 +1465,7 @@ func (j *jsiiProxy_LinuxVirtualMachine) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine} Resource.
 func NewLinuxVirtualMachine(scope constructs.Construct, id *string, config *LinuxVirtualMachineConfig) LinuxVirtualMachine {
 	_init_.Initialize()
 
@@ -1483,7 +1483,7 @@ func NewLinuxVirtualMachine(scope constructs.Construct, id *string, config *Linu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine} Resource.
 func NewLinuxVirtualMachine_Override(l LinuxVirtualMachine, scope constructs.Construct, id *string, config *LinuxVirtualMachineConfig) {
 	_init_.Initialize()
 

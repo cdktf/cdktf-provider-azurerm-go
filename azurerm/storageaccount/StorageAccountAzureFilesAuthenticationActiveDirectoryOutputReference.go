@@ -82,6 +82,10 @@ type StorageAccountAzureFilesAuthenticationActiveDirectoryOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDomainSid()
+	ResetForestName()
+	ResetNetbiosDomainName()
+	ResetStorageSid()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -620,6 +624,38 @@ func (s *jsiiProxy_StorageAccountAzureFilesAuthenticationActiveDirectoryOutputRe
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_StorageAccountAzureFilesAuthenticationActiveDirectoryOutputReference) ResetDomainSid() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDomainSid",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageAccountAzureFilesAuthenticationActiveDirectoryOutputReference) ResetForestName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetForestName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageAccountAzureFilesAuthenticationActiveDirectoryOutputReference) ResetNetbiosDomainName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNetbiosDomainName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageAccountAzureFilesAuthenticationActiveDirectoryOutputReference) ResetStorageSid() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStorageSid",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_StorageAccountAzureFilesAuthenticationActiveDirectoryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

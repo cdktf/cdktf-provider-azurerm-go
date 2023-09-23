@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/kusto_cosmosdb_data_connection azurerm_kusto_cosmosdb_data_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/kusto_cosmosdb_data_connection azurerm_kusto_cosmosdb_data_connection}.
 type KustoCosmosdbDataConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -499,7 +499,7 @@ func (j *jsiiProxy_KustoCosmosdbDataConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/kusto_cosmosdb_data_connection azurerm_kusto_cosmosdb_data_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/kusto_cosmosdb_data_connection azurerm_kusto_cosmosdb_data_connection} Resource.
 func NewKustoCosmosdbDataConnection(scope constructs.Construct, id *string, config *KustoCosmosdbDataConnectionConfig) KustoCosmosdbDataConnection {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewKustoCosmosdbDataConnection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/kusto_cosmosdb_data_connection azurerm_kusto_cosmosdb_data_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/kusto_cosmosdb_data_connection azurerm_kusto_cosmosdb_data_connection} Resource.
 func NewKustoCosmosdbDataConnection_Override(k KustoCosmosdbDataConnection, scope constructs.Construct, id *string, config *KustoCosmosdbDataConnectionConfig) {
 	_init_.Initialize()
 

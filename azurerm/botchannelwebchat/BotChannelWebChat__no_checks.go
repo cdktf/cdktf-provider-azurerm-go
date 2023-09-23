@@ -55,6 +55,10 @@ func (b *jsiiProxy_BotChannelWebChat) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (b *jsiiProxy_BotChannelWebChat) validatePutSiteParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelWebChat) validatePutTimeoutsParameters(value *BotChannelWebChatTimeouts) error {
 	return nil
 }

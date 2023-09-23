@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/app_configuration azurerm_app_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/app_configuration azurerm_app_configuration}.
 type AppConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -80,6 +80,8 @@ type AppConfiguration interface {
 	PurgeProtectionEnabledInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	Replica() AppConfigurationReplicaList
+	ReplicaInput() interface{}
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
@@ -129,6 +131,7 @@ type AppConfiguration interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutEncryption(value *AppConfigurationEncryption)
 	PutIdentity(value *AppConfigurationIdentity)
+	PutReplica(value interface{})
 	PutTimeouts(value *AppConfigurationTimeouts)
 	ResetEncryption()
 	ResetId()
@@ -139,6 +142,7 @@ type AppConfiguration interface {
 	ResetOverrideLogicalId()
 	ResetPublicNetworkAccess()
 	ResetPurgeProtectionEnabled()
+	ResetReplica()
 	ResetSku()
 	ResetSoftDeleteRetentionDays()
 	ResetTags()
@@ -478,6 +482,26 @@ func (j *jsiiProxy_AppConfiguration) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppConfiguration) Replica() AppConfigurationReplicaList {
+	var returns AppConfigurationReplicaList
+	_jsii_.Get(
+		j,
+		"replica",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppConfiguration) ReplicaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"replicaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppConfiguration) ResourceGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -629,7 +653,7 @@ func (j *jsiiProxy_AppConfiguration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/app_configuration azurerm_app_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/app_configuration azurerm_app_configuration} Resource.
 func NewAppConfiguration(scope constructs.Construct, id *string, config *AppConfigurationConfig) AppConfiguration {
 	_init_.Initialize()
 
@@ -647,7 +671,7 @@ func NewAppConfiguration(scope constructs.Construct, id *string, config *AppConf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/app_configuration azurerm_app_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/app_configuration azurerm_app_configuration} Resource.
 func NewAppConfiguration_Override(a AppConfiguration, scope constructs.Construct, id *string, config *AppConfigurationConfig) {
 	_init_.Initialize()
 
@@ -1124,6 +1148,17 @@ func (a *jsiiProxy_AppConfiguration) PutIdentity(value *AppConfigurationIdentity
 	)
 }
 
+func (a *jsiiProxy_AppConfiguration) PutReplica(value interface{}) {
+	if err := a.validatePutReplicaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putReplica",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppConfiguration) PutTimeouts(value *AppConfigurationTimeouts) {
 	if err := a.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1187,6 +1222,14 @@ func (a *jsiiProxy_AppConfiguration) ResetPurgeProtectionEnabled() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPurgeProtectionEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppConfiguration) ResetReplica() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetReplica",
 		nil, // no parameters
 	)
 }

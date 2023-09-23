@@ -66,6 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneRedundancyEnabled", GoMethod: "ResetZoneRedundancyEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "staticIpAddress", GoGetter: "StaticIpAddress"},
@@ -80,6 +81,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "zoneRedundancyEnabled", GoGetter: "ZoneRedundancyEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "zoneRedundancyEnabledInput", GoGetter: "ZoneRedundancyEnabledInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAppEnvironment{}

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/image azurerm_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/image azurerm_image}.
 type Image interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -526,7 +526,7 @@ func (j *jsiiProxy_Image) ZoneResilientInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/image azurerm_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/image azurerm_image} Resource.
 func NewImage(scope constructs.Construct, id *string, config *ImageConfig) Image {
 	_init_.Initialize()
 
@@ -544,7 +544,7 @@ func NewImage(scope constructs.Construct, id *string, config *ImageConfig) Image
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/image azurerm_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/image azurerm_image} Resource.
 func NewImage_Override(i Image, scope constructs.Construct, id *string, config *ImageConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/container_app_environment azurerm_container_app_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/container_app_environment azurerm_container_app_environment}.
 type ContainerAppEnvironment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -95,6 +95,9 @@ type ContainerAppEnvironment interface {
 	TerraformResourceType() *string
 	Timeouts() ContainerAppEnvironmentTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	ZoneRedundancyEnabled() interface{}
+	SetZoneRedundancyEnabled(val interface{})
+	ZoneRedundancyEnabledInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -131,6 +134,7 @@ type ContainerAppEnvironment interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTimeouts()
+	ResetZoneRedundancyEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -556,8 +560,28 @@ func (j *jsiiProxy_ContainerAppEnvironment) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerAppEnvironment) ZoneRedundancyEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zoneRedundancyEnabled",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
+func (j *jsiiProxy_ContainerAppEnvironment) ZoneRedundancyEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zoneRedundancyEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
 func NewContainerAppEnvironment(scope constructs.Construct, id *string, config *ContainerAppEnvironmentConfig) ContainerAppEnvironment {
 	_init_.Initialize()
 
@@ -575,7 +599,7 @@ func NewContainerAppEnvironment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
 func NewContainerAppEnvironment_Override(c ContainerAppEnvironment, scope constructs.Construct, id *string, config *ContainerAppEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -749,6 +773,17 @@ func (j *jsiiProxy_ContainerAppEnvironment)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAppEnvironment)SetZoneRedundancyEnabled(val interface{}) {
+	if err := j.validateSetZoneRedundancyEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zoneRedundancyEnabled",
 		val,
 	)
 }
@@ -1090,6 +1125,14 @@ func (c *jsiiProxy_ContainerAppEnvironment) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppEnvironment) ResetZoneRedundancyEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetZoneRedundancyEnabled",
 		nil, // no parameters
 	)
 }

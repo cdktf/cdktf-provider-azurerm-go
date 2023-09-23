@@ -93,6 +93,37 @@ func (c *jsiiProxy_ContainerAppTemplateOutputReference) validateInterpolationFor
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) validatePutAzureQueueScaleRuleParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ContainerAppTemplateAzureQueueScaleRule:
+		value := value.(*[]*ContainerAppTemplateAzureQueueScaleRule)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ContainerAppTemplateAzureQueueScaleRule:
+		value_ := value.([]*ContainerAppTemplateAzureQueueScaleRule)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ContainerAppTemplateAzureQueueScaleRule; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAppTemplateOutputReference) validatePutContainerParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -118,6 +149,99 @@ func (c *jsiiProxy_ContainerAppTemplateOutputReference) validatePutContainerPara
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ContainerAppTemplateContainer; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) validatePutCustomScaleRuleParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ContainerAppTemplateCustomScaleRule:
+		value := value.(*[]*ContainerAppTemplateCustomScaleRule)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ContainerAppTemplateCustomScaleRule:
+		value_ := value.([]*ContainerAppTemplateCustomScaleRule)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ContainerAppTemplateCustomScaleRule; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) validatePutHttpScaleRuleParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ContainerAppTemplateHttpScaleRule:
+		value := value.(*[]*ContainerAppTemplateHttpScaleRule)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ContainerAppTemplateHttpScaleRule:
+		value_ := value.([]*ContainerAppTemplateHttpScaleRule)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ContainerAppTemplateHttpScaleRule; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) validatePutTcpScaleRuleParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ContainerAppTemplateTcpScaleRule:
+		value := value.(*[]*ContainerAppTemplateTcpScaleRule)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ContainerAppTemplateTcpScaleRule:
+		value_ := value.([]*ContainerAppTemplateTcpScaleRule)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ContainerAppTemplateTcpScaleRule; received %#v (a %T)", value, value)
 		}
 	}
 

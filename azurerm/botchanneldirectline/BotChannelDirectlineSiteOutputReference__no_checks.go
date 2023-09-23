@@ -63,6 +63,10 @@ func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) validateSetEnabledPa
 	return nil
 }
 
+func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) validateSetEndpointParametersEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) validateSetEnhancedAuthenticationEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -75,6 +79,10 @@ func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) validateSetNameParam
 	return nil
 }
 
+func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) validateSetStorageEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
@@ -84,6 +92,10 @@ func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) validateSetTerraform
 }
 
 func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) validateSetTrustedOriginsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BotChannelDirectlineSiteOutputReference) validateSetUserUploadEnabledParameters(val interface{}) error {
 	return nil
 }
 

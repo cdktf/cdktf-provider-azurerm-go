@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/api_management_api_release azurerm_api_management_api_release}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/api_management_api_release azurerm_api_management_api_release}.
 type ApiManagementApiRelease interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -383,7 +383,7 @@ func (j *jsiiProxy_ApiManagementApiRelease) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/api_management_api_release azurerm_api_management_api_release} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/api_management_api_release azurerm_api_management_api_release} Resource.
 func NewApiManagementApiRelease(scope constructs.Construct, id *string, config *ApiManagementApiReleaseConfig) ApiManagementApiRelease {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewApiManagementApiRelease(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/api_management_api_release azurerm_api_management_api_release} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/api_management_api_release azurerm_api_management_api_release} Resource.
 func NewApiManagementApiRelease_Override(a ApiManagementApiRelease, scope constructs.Construct, id *string, config *ApiManagementApiReleaseConfig) {
 	_init_.Initialize()
 

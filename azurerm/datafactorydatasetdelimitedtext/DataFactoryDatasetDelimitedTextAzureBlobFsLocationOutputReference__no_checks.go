@@ -59,6 +59,18 @@ func (j *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference) validateSetDynamicFilenameEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference) validateSetDynamicFileSystemEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference) validateSetDynamicPathEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference) validateSetFilenameParameters(val *string) error {
 	return nil
 }

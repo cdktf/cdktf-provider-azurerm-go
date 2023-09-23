@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/sql_virtual_network_rule azurerm_sql_virtual_network_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/sql_virtual_network_rule azurerm_sql_virtual_network_rule}.
 type SqlVirtualNetworkRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -429,7 +429,7 @@ func (j *jsiiProxy_SqlVirtualNetworkRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/sql_virtual_network_rule azurerm_sql_virtual_network_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/sql_virtual_network_rule azurerm_sql_virtual_network_rule} Resource.
 func NewSqlVirtualNetworkRule(scope constructs.Construct, id *string, config *SqlVirtualNetworkRuleConfig) SqlVirtualNetworkRule {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewSqlVirtualNetworkRule(scope constructs.Construct, id *string, config *Sq
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/sql_virtual_network_rule azurerm_sql_virtual_network_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/sql_virtual_network_rule azurerm_sql_virtual_network_rule} Resource.
 func NewSqlVirtualNetworkRule_Override(s SqlVirtualNetworkRule, scope constructs.Construct, id *string, config *SqlVirtualNetworkRuleConfig) {
 	_init_.Initialize()
 

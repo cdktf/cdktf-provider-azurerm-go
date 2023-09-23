@@ -31,6 +31,9 @@ type SharedImageVersionTargetRegionOutputReference interface {
 	DiskEncryptionSetId() *string
 	SetDiskEncryptionSetId(val *string)
 	DiskEncryptionSetIdInput() *string
+	ExcludeFromLatestEnabled() interface{}
+	SetExcludeFromLatestEnabled(val interface{})
+	ExcludeFromLatestEnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -77,6 +80,7 @@ type SharedImageVersionTargetRegionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDiskEncryptionSetId()
+	ResetExcludeFromLatestEnabled()
 	ResetStorageAccountType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -138,6 +142,26 @@ func (j *jsiiProxy_SharedImageVersionTargetRegionOutputReference) DiskEncryption
 	_jsii_.Get(
 		j,
 		"diskEncryptionSetIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SharedImageVersionTargetRegionOutputReference) ExcludeFromLatestEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeFromLatestEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SharedImageVersionTargetRegionOutputReference) ExcludeFromLatestEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeFromLatestEnabledInput",
 		&returns,
 	)
 	return returns
@@ -300,6 +324,17 @@ func (j *jsiiProxy_SharedImageVersionTargetRegionOutputReference)SetDiskEncrypti
 	_jsii_.Set(
 		j,
 		"diskEncryptionSetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SharedImageVersionTargetRegionOutputReference)SetExcludeFromLatestEnabled(val interface{}) {
+	if err := j.validateSetExcludeFromLatestEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeFromLatestEnabled",
 		val,
 	)
 }
@@ -560,6 +595,14 @@ func (s *jsiiProxy_SharedImageVersionTargetRegionOutputReference) ResetDiskEncry
 	_jsii_.InvokeVoid(
 		s,
 		"resetDiskEncryptionSetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SharedImageVersionTargetRegionOutputReference) ResetExcludeFromLatestEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExcludeFromLatestEnabled",
 		nil, // no parameters
 	)
 }

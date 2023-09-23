@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/data_factory_linked_service_kusto azurerm_data_factory_linked_service_kusto}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/data_factory_linked_service_kusto azurerm_data_factory_linked_service_kusto}.
 type DataFactoryLinkedServiceKusto interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -621,7 +621,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceKusto) UseManagedIdentityInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/data_factory_linked_service_kusto azurerm_data_factory_linked_service_kusto} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/data_factory_linked_service_kusto azurerm_data_factory_linked_service_kusto} Resource.
 func NewDataFactoryLinkedServiceKusto(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceKustoConfig) DataFactoryLinkedServiceKusto {
 	_init_.Initialize()
 
@@ -639,7 +639,7 @@ func NewDataFactoryLinkedServiceKusto(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/data_factory_linked_service_kusto azurerm_data_factory_linked_service_kusto} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/data_factory_linked_service_kusto azurerm_data_factory_linked_service_kusto} Resource.
 func NewDataFactoryLinkedServiceKusto_Override(d DataFactoryLinkedServiceKusto, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceKustoConfig) {
 	_init_.Initialize()
 

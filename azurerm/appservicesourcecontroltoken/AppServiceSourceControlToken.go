@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/app_service_source_control_token azurerm_app_service_source_control_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/app_service_source_control_token azurerm_app_service_source_control_token}.
 type AppServiceSourceControlToken interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -383,7 +383,7 @@ func (j *jsiiProxy_AppServiceSourceControlToken) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/app_service_source_control_token azurerm_app_service_source_control_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/app_service_source_control_token azurerm_app_service_source_control_token} Resource.
 func NewAppServiceSourceControlToken(scope constructs.Construct, id *string, config *AppServiceSourceControlTokenConfig) AppServiceSourceControlToken {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewAppServiceSourceControlToken(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/app_service_source_control_token azurerm_app_service_source_control_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/app_service_source_control_token azurerm_app_service_source_control_token} Resource.
 func NewAppServiceSourceControlToken_Override(a AppServiceSourceControlToken, scope constructs.Construct, id *string, config *AppServiceSourceControlTokenConfig) {
 	_init_.Initialize()
 

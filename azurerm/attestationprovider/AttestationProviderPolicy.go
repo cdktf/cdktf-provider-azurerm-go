@@ -5,9 +5,9 @@ package attestationprovider
 
 
 type AttestationProviderPolicy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/attestation_provider#data AttestationProvider#data}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/attestation_provider#data AttestationProvider#data}.
 	Data *string `field:"optional" json:"data" yaml:"data"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/attestation_provider#environment_type AttestationProvider#environment_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/attestation_provider#environment_type AttestationProvider#environment_type}.
 	EnvironmentType *string `field:"optional" json:"environmentType" yaml:"environmentType"`
 }
 

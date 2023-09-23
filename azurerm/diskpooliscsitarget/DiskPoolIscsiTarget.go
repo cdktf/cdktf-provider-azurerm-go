@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/disk_pool_iscsi_target azurerm_disk_pool_iscsi_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/disk_pool_iscsi_target azurerm_disk_pool_iscsi_target}.
 type DiskPoolIscsiTarget interface {
 	cdktf.TerraformResource
 	AclMode() *string
@@ -428,7 +428,7 @@ func (j *jsiiProxy_DiskPoolIscsiTarget) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/disk_pool_iscsi_target azurerm_disk_pool_iscsi_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/disk_pool_iscsi_target azurerm_disk_pool_iscsi_target} Resource.
 func NewDiskPoolIscsiTarget(scope constructs.Construct, id *string, config *DiskPoolIscsiTargetConfig) DiskPoolIscsiTarget {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewDiskPoolIscsiTarget(scope constructs.Construct, id *string, config *Disk
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/disk_pool_iscsi_target azurerm_disk_pool_iscsi_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/disk_pool_iscsi_target azurerm_disk_pool_iscsi_target} Resource.
 func NewDiskPoolIscsiTarget_Override(d DiskPoolIscsiTarget, scope constructs.Construct, id *string, config *DiskPoolIscsiTargetConfig) {
 	_init_.Initialize()
 

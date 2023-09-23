@@ -13,6 +13,7 @@ import (
 
 type DataAzurermContainerAppTemplateOutputReference interface {
 	cdktf.ComplexObject
+	AzureQueueScaleRule() DataAzurermContainerAppTemplateAzureQueueScaleRuleList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,13 +30,16 @@ type DataAzurermContainerAppTemplateOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomScaleRule() DataAzurermContainerAppTemplateCustomScaleRuleList
 	// Experimental.
 	Fqn() *string
+	HttpScaleRule() DataAzurermContainerAppTemplateHttpScaleRuleList
 	InternalValue() *DataAzurermContainerAppTemplate
 	SetInternalValue(val *DataAzurermContainerAppTemplate)
 	MaxReplicas() *float64
 	MinReplicas() *float64
 	RevisionSuffix() *string
+	TcpScaleRule() DataAzurermContainerAppTemplateTcpScaleRuleList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -84,6 +88,16 @@ type jsiiProxy_DataAzurermContainerAppTemplateOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
+func (j *jsiiProxy_DataAzurermContainerAppTemplateOutputReference) AzureQueueScaleRule() DataAzurermContainerAppTemplateAzureQueueScaleRuleList {
+	var returns DataAzurermContainerAppTemplateAzureQueueScaleRuleList
+	_jsii_.Get(
+		j,
+		"azureQueueScaleRule",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermContainerAppTemplateOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -124,11 +138,31 @@ func (j *jsiiProxy_DataAzurermContainerAppTemplateOutputReference) CreationStack
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermContainerAppTemplateOutputReference) CustomScaleRule() DataAzurermContainerAppTemplateCustomScaleRuleList {
+	var returns DataAzurermContainerAppTemplateCustomScaleRuleList
+	_jsii_.Get(
+		j,
+		"customScaleRule",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermContainerAppTemplateOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermContainerAppTemplateOutputReference) HttpScaleRule() DataAzurermContainerAppTemplateHttpScaleRuleList {
+	var returns DataAzurermContainerAppTemplateHttpScaleRuleList
+	_jsii_.Get(
+		j,
+		"httpScaleRule",
 		&returns,
 	)
 	return returns
@@ -169,6 +203,16 @@ func (j *jsiiProxy_DataAzurermContainerAppTemplateOutputReference) RevisionSuffi
 	_jsii_.Get(
 		j,
 		"revisionSuffix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermContainerAppTemplateOutputReference) TcpScaleRule() DataAzurermContainerAppTemplateTcpScaleRuleList {
+	var returns DataAzurermContainerAppTemplateTcpScaleRuleList
+	_jsii_.Get(
+		j,
+		"tcpScaleRule",
 		&returns,
 	)
 	return returns

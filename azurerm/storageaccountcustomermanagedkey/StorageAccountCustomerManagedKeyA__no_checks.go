@@ -79,6 +79,10 @@ func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) validateSetCountParameters
 	return nil
 }
 
+func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) validateSetFederatedIdentityClientIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) validateSetKeyNameParamete
 }
 
 func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) validateSetKeyVaultIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) validateSetKeyVaultUriParameters(val *string) error {
 	return nil
 }
 

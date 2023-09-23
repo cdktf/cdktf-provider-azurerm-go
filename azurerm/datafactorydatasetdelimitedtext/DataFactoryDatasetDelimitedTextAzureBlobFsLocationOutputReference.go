@@ -28,6 +28,15 @@ type DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference interface
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DynamicFilenameEnabled() interface{}
+	SetDynamicFilenameEnabled(val interface{})
+	DynamicFilenameEnabledInput() interface{}
+	DynamicFileSystemEnabled() interface{}
+	SetDynamicFileSystemEnabled(val interface{})
+	DynamicFileSystemEnabledInput() interface{}
+	DynamicPathEnabled() interface{}
+	SetDynamicPathEnabled(val interface{})
+	DynamicPathEnabledInput() interface{}
 	Filename() *string
 	SetFilename(val *string)
 	FilenameInput() *string
@@ -73,7 +82,11 @@ type DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDynamicFilenameEnabled()
+	ResetDynamicFileSystemEnabled()
+	ResetDynamicPathEnabled()
 	ResetFilename()
+	ResetFileSystem()
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -115,6 +128,66 @@ func (j *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputRefer
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference) DynamicFilenameEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dynamicFilenameEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference) DynamicFilenameEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dynamicFilenameEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference) DynamicFileSystemEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dynamicFileSystemEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference) DynamicFileSystemEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dynamicFileSystemEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference) DynamicPathEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dynamicPathEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference) DynamicPathEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dynamicPathEnabledInput",
 		&returns,
 	)
 	return returns
@@ -266,6 +339,39 @@ func (j *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputRefer
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference)SetDynamicFilenameEnabled(val interface{}) {
+	if err := j.validateSetDynamicFilenameEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dynamicFilenameEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference)SetDynamicFileSystemEnabled(val interface{}) {
+	if err := j.validateSetDynamicFileSystemEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dynamicFileSystemEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference)SetDynamicPathEnabled(val interface{}) {
+	if err := j.validateSetDynamicPathEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dynamicPathEnabled",
 		val,
 	)
 }
@@ -522,10 +628,42 @@ func (d *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputRefer
 	return returns
 }
 
+func (d *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference) ResetDynamicFilenameEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDynamicFilenameEnabled",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference) ResetDynamicFileSystemEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDynamicFileSystemEnabled",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference) ResetDynamicPathEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDynamicPathEnabled",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference) ResetFilename() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetFilename",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference) ResetFileSystem() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFileSystem",
 		nil, // no parameters
 	)
 }

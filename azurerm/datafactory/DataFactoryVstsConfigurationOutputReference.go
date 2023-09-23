@@ -41,6 +41,9 @@ type DataFactoryVstsConfigurationOutputReference interface {
 	ProjectName() *string
 	SetProjectName(val *string)
 	ProjectNameInput() *string
+	PublishingEnabled() interface{}
+	SetPublishingEnabled(val interface{})
+	PublishingEnabledInput() interface{}
 	RepositoryName() *string
 	SetRepositoryName(val *string)
 	RepositoryNameInput() *string
@@ -82,6 +85,7 @@ type DataFactoryVstsConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPublishingEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -202,6 +206,26 @@ func (j *jsiiProxy_DataFactoryVstsConfigurationOutputReference) ProjectNameInput
 	_jsii_.Get(
 		j,
 		"projectNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryVstsConfigurationOutputReference) PublishingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publishingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryVstsConfigurationOutputReference) PublishingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publishingEnabledInput",
 		&returns,
 	)
 	return returns
@@ -377,6 +401,17 @@ func (j *jsiiProxy_DataFactoryVstsConfigurationOutputReference)SetProjectName(va
 	_jsii_.Set(
 		j,
 		"projectName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataFactoryVstsConfigurationOutputReference)SetPublishingEnabled(val interface{}) {
+	if err := j.validateSetPublishingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publishingEnabled",
 		val,
 	)
 }
@@ -620,6 +655,14 @@ func (d *jsiiProxy_DataFactoryVstsConfigurationOutputReference) InterpolationFor
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataFactoryVstsConfigurationOutputReference) ResetPublishingEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPublishingEnabled",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataFactoryVstsConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

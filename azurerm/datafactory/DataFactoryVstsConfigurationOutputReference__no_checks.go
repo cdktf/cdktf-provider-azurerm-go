@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataFactoryVstsConfigurationOutputReference) validateSetProje
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryVstsConfigurationOutputReference) validateSetPublishingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryVstsConfigurationOutputReference) validateSetRepositoryNameParameters(val *string) error {
 	return nil
 }

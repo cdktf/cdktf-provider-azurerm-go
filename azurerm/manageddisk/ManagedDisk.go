@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/managed_disk azurerm_managed_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/managed_disk azurerm_managed_disk}.
 type ManagedDisk interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -1148,7 +1148,7 @@ func (j *jsiiProxy_ManagedDisk) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/managed_disk azurerm_managed_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/managed_disk azurerm_managed_disk} Resource.
 func NewManagedDisk(scope constructs.Construct, id *string, config *ManagedDiskConfig) ManagedDisk {
 	_init_.Initialize()
 
@@ -1166,7 +1166,7 @@ func NewManagedDisk(scope constructs.Construct, id *string, config *ManagedDiskC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/managed_disk azurerm_managed_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/managed_disk azurerm_managed_disk} Resource.
 func NewManagedDisk_Override(m ManagedDisk, scope constructs.Construct, id *string, config *ManagedDiskConfig) {
 	_init_.Initialize()
 

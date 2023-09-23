@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account}.
 type CosmosdbAccount interface {
 	cdktf.TerraformResource
 	AccessKeyMetadataWritesEnabled() interface{}
@@ -121,7 +121,9 @@ type CosmosdbAccount interface {
 	SetOfferType(val *string)
 	OfferTypeInput() *string
 	PrimaryKey() *string
+	PrimaryMongodbConnectionString() *string
 	PrimaryReadonlyKey() *string
+	PrimaryReadonlyMongodbConnectionString() *string
 	PrimaryReadonlySqlConnectionString() *string
 	PrimarySqlConnectionString() *string
 	// Experimental.
@@ -144,7 +146,9 @@ type CosmosdbAccount interface {
 	Restore() CosmosdbAccountRestoreOutputReference
 	RestoreInput() *CosmosdbAccountRestore
 	SecondaryKey() *string
+	SecondaryMongodbConnectionString() *string
 	SecondaryReadonlyKey() *string
+	SecondaryReadonlyMongodbConnectionString() *string
 	SecondaryReadonlySqlConnectionString() *string
 	SecondarySqlConnectionString() *string
 	Tags() *map[string]*string
@@ -912,11 +916,31 @@ func (j *jsiiProxy_CosmosdbAccount) PrimaryKey() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CosmosdbAccount) PrimaryMongodbConnectionString() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryMongodbConnectionString",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CosmosdbAccount) PrimaryReadonlyKey() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"primaryReadonlyKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccount) PrimaryReadonlyMongodbConnectionString() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryReadonlyMongodbConnectionString",
 		&returns,
 	)
 	return returns
@@ -1052,11 +1076,31 @@ func (j *jsiiProxy_CosmosdbAccount) SecondaryKey() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CosmosdbAccount) SecondaryMongodbConnectionString() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryMongodbConnectionString",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CosmosdbAccount) SecondaryReadonlyKey() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"secondaryReadonlyKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccount) SecondaryReadonlyMongodbConnectionString() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryReadonlyMongodbConnectionString",
 		&returns,
 	)
 	return returns
@@ -1183,7 +1227,7 @@ func (j *jsiiProxy_CosmosdbAccount) WriteEndpoints() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
 func NewCosmosdbAccount(scope constructs.Construct, id *string, config *CosmosdbAccountConfig) CosmosdbAccount {
 	_init_.Initialize()
 
@@ -1201,7 +1245,7 @@ func NewCosmosdbAccount(scope constructs.Construct, id *string, config *Cosmosdb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
 func NewCosmosdbAccount_Override(c CosmosdbAccount, scope constructs.Construct, id *string, config *CosmosdbAccountConfig) {
 	_init_.Initialize()
 

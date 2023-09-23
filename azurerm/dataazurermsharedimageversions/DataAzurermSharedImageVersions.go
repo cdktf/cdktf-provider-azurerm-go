@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/shared_image_versions azurerm_shared_image_versions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/shared_image_versions azurerm_shared_image_versions}.
 type DataAzurermSharedImageVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -389,7 +389,7 @@ func (j *jsiiProxy_DataAzurermSharedImageVersions) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/shared_image_versions azurerm_shared_image_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/shared_image_versions azurerm_shared_image_versions} Data Source.
 func NewDataAzurermSharedImageVersions(scope constructs.Construct, id *string, config *DataAzurermSharedImageVersionsConfig) DataAzurermSharedImageVersions {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewDataAzurermSharedImageVersions(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/data-sources/shared_image_versions azurerm_shared_image_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/shared_image_versions azurerm_shared_image_versions} Data Source.
 func NewDataAzurermSharedImageVersions_Override(d DataAzurermSharedImageVersions, scope constructs.Construct, id *string, config *DataAzurermSharedImageVersionsConfig) {
 	_init_.Initialize()
 

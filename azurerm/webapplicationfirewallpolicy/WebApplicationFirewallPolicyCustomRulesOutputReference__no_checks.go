@@ -71,6 +71,10 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) validateSetGroupRateLimitByParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -80,6 +84,14 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) valid
 }
 
 func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) validateSetPriorityParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) validateSetRateLimitDurationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyCustomRulesOutputReference) validateSetRateLimitThresholdParameters(val *float64) error {
 	return nil
 }
 

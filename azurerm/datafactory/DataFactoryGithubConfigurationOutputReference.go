@@ -41,6 +41,9 @@ type DataFactoryGithubConfigurationOutputReference interface {
 	GitUrlInput() *string
 	InternalValue() *DataFactoryGithubConfiguration
 	SetInternalValue(val *DataFactoryGithubConfiguration)
+	PublishingEnabled() interface{}
+	SetPublishingEnabled(val interface{})
+	PublishingEnabledInput() interface{}
 	RepositoryName() *string
 	SetRepositoryName(val *string)
 	RepositoryNameInput() *string
@@ -79,6 +82,7 @@ type DataFactoryGithubConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPublishingEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -199,6 +203,26 @@ func (j *jsiiProxy_DataFactoryGithubConfigurationOutputReference) InternalValue(
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryGithubConfigurationOutputReference) PublishingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publishingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryGithubConfigurationOutputReference) PublishingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publishingEnabledInput",
 		&returns,
 	)
 	return returns
@@ -354,6 +378,17 @@ func (j *jsiiProxy_DataFactoryGithubConfigurationOutputReference)SetInternalValu
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataFactoryGithubConfigurationOutputReference)SetPublishingEnabled(val interface{}) {
+	if err := j.validateSetPublishingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publishingEnabled",
 		val,
 	)
 }
@@ -586,6 +621,14 @@ func (d *jsiiProxy_DataFactoryGithubConfigurationOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataFactoryGithubConfigurationOutputReference) ResetPublishingEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPublishingEnabled",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataFactoryGithubConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -19,6 +19,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "azureBlobFsLocation", GoGetter: "AzureBlobFsLocation"},
+			_jsii_.MemberProperty{JsiiProperty: "azureBlobFsLocationInput", GoGetter: "AzureBlobFsLocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "azureBlobStorageLocation", GoGetter: "AzureBlobStorageLocation"},
 			_jsii_.MemberProperty{JsiiProperty: "azureBlobStorageLocationInput", GoGetter: "AzureBlobStorageLocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -64,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "parametersInput", GoGetter: "ParametersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putAzureBlobFsLocation", GoMethod: "PutAzureBlobFsLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "putAzureBlobStorageLocation", GoMethod: "PutAzureBlobStorageLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "putHttpServerLocation", GoMethod: "PutHttpServerLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "putSchemaColumn", GoMethod: "PutSchemaColumn"},
@@ -71,6 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdditionalProperties", GoMethod: "ResetAdditionalProperties"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAzureBlobFsLocation", GoMethod: "ResetAzureBlobFsLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureBlobStorageLocation", GoMethod: "ResetAzureBlobStorageLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompressionCodec", GoMethod: "ResetCompressionCodec"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompressionLevel", GoMethod: "ResetCompressionLevel"},
@@ -97,6 +101,60 @@ func init() {
 		func() interface{} {
 			j := jsiiProxy_DataFactoryDatasetParquet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquetAzureBlobFsLocation",
+		reflect.TypeOf((*DataFactoryDatasetParquetAzureBlobFsLocation)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquetAzureBlobFsLocationOutputReference",
+		reflect.TypeOf((*DataFactoryDatasetParquetAzureBlobFsLocationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dynamicFilenameEnabled", GoGetter: "DynamicFilenameEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "dynamicFilenameEnabledInput", GoGetter: "DynamicFilenameEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dynamicFileSystemEnabled", GoGetter: "DynamicFileSystemEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "dynamicFileSystemEnabledInput", GoGetter: "DynamicFileSystemEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dynamicPathEnabled", GoGetter: "DynamicPathEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "dynamicPathEnabledInput", GoGetter: "DynamicPathEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "filename", GoGetter: "Filename"},
+			_jsii_.MemberProperty{JsiiProperty: "filenameInput", GoGetter: "FilenameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fileSystem", GoGetter: "FileSystem"},
+			_jsii_.MemberProperty{JsiiProperty: "fileSystemInput", GoGetter: "FileSystemInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
+			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDynamicFilenameEnabled", GoMethod: "ResetDynamicFilenameEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDynamicFileSystemEnabled", GoMethod: "ResetDynamicFileSystemEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDynamicPathEnabled", GoMethod: "ResetDynamicPathEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFilename", GoMethod: "ResetFilename"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFileSystem", GoMethod: "ResetFileSystem"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPath", GoMethod: "ResetPath"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataFactoryDatasetParquetAzureBlobFsLocationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)

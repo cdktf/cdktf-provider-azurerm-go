@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/web_pubsub_custom_certificate azurerm_web_pubsub_custom_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/web_pubsub_custom_certificate azurerm_web_pubsub_custom_certificate}.
 type WebPubsubCustomCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_WebPubsubCustomCertificate) WebPubsubIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/web_pubsub_custom_certificate azurerm_web_pubsub_custom_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/web_pubsub_custom_certificate azurerm_web_pubsub_custom_certificate} Resource.
 func NewWebPubsubCustomCertificate(scope constructs.Construct, id *string, config *WebPubsubCustomCertificateConfig) WebPubsubCustomCertificate {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewWebPubsubCustomCertificate(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/web_pubsub_custom_certificate azurerm_web_pubsub_custom_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/web_pubsub_custom_certificate azurerm_web_pubsub_custom_certificate} Resource.
 func NewWebPubsubCustomCertificate_Override(w WebPubsubCustomCertificate, scope constructs.Construct, id *string, config *WebPubsubCustomCertificateConfig) {
 	_init_.Initialize()
 

@@ -12,10 +12,16 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/network_interface azurerm_network_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/network_interface azurerm_network_interface}.
 type NetworkInterface interface {
 	cdktf.TerraformResource
 	AppliedDnsServers() *[]*string
+	AuxiliaryMode() *string
+	SetAuxiliaryMode(val *string)
+	AuxiliaryModeInput() *string
+	AuxiliarySku() *string
+	SetAuxiliarySku(val *string)
+	AuxiliarySkuInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -128,6 +134,8 @@ type NetworkInterface interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutIpConfiguration(value interface{})
 	PutTimeouts(value *NetworkInterfaceTimeouts)
+	ResetAuxiliaryMode()
+	ResetAuxiliarySku()
 	ResetDnsServers()
 	ResetEdgeZone()
 	ResetEnableAcceleratedNetworking()
@@ -159,6 +167,46 @@ func (j *jsiiProxy_NetworkInterface) AppliedDnsServers() *[]*string {
 	_jsii_.Get(
 		j,
 		"appliedDnsServers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkInterface) AuxiliaryMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"auxiliaryMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkInterface) AuxiliaryModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"auxiliaryModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkInterface) AuxiliarySku() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"auxiliarySku",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkInterface) AuxiliarySkuInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"auxiliarySkuInput",
 		&returns,
 	)
 	return returns
@@ -615,7 +663,7 @@ func (j *jsiiProxy_NetworkInterface) VirtualMachineId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/network_interface azurerm_network_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/network_interface azurerm_network_interface} Resource.
 func NewNetworkInterface(scope constructs.Construct, id *string, config *NetworkInterfaceConfig) NetworkInterface {
 	_init_.Initialize()
 
@@ -633,7 +681,7 @@ func NewNetworkInterface(scope constructs.Construct, id *string, config *Network
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.73.0/docs/resources/network_interface azurerm_network_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/network_interface azurerm_network_interface} Resource.
 func NewNetworkInterface_Override(n NetworkInterface, scope constructs.Construct, id *string, config *NetworkInterfaceConfig) {
 	_init_.Initialize()
 
@@ -641,6 +689,28 @@ func NewNetworkInterface_Override(n NetworkInterface, scope constructs.Construct
 		"@cdktf/provider-azurerm.networkInterface.NetworkInterface",
 		[]interface{}{scope, id, config},
 		n,
+	)
+}
+
+func (j *jsiiProxy_NetworkInterface)SetAuxiliaryMode(val *string) {
+	if err := j.validateSetAuxiliaryModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auxiliaryMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkInterface)SetAuxiliarySku(val *string) {
+	if err := j.validateSetAuxiliarySkuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auxiliarySku",
+		val,
 	)
 }
 
@@ -1107,6 +1177,22 @@ func (n *jsiiProxy_NetworkInterface) PutTimeouts(value *NetworkInterfaceTimeouts
 		n,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkInterface) ResetAuxiliaryMode() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAuxiliaryMode",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkInterface) ResetAuxiliarySku() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAuxiliarySku",
+		nil, // no parameters
 	)
 }
 
