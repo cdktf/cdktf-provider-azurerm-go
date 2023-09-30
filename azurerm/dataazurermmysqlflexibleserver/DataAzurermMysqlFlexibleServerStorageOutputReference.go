@@ -34,6 +34,7 @@ type DataAzurermMysqlFlexibleServerStorageOutputReference interface {
 	InternalValue() *DataAzurermMysqlFlexibleServerStorage
 	SetInternalValue(val *DataAzurermMysqlFlexibleServerStorage)
 	Iops() *float64
+	IoScalingEnabled() cdktf.IResolvable
 	SizeGb() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -147,6 +148,16 @@ func (j *jsiiProxy_DataAzurermMysqlFlexibleServerStorageOutputReference) Iops() 
 	_jsii_.Get(
 		j,
 		"iops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMysqlFlexibleServerStorageOutputReference) IoScalingEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"ioScalingEnabled",
 		&returns,
 	)
 	return returns

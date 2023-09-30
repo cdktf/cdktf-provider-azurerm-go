@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/dns_caa_record azurerm_dns_caa_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/dns_caa_record azurerm_dns_caa_record}.
 type DnsCaaRecord interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -463,7 +463,7 @@ func (j *jsiiProxy_DnsCaaRecord) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/dns_caa_record azurerm_dns_caa_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/dns_caa_record azurerm_dns_caa_record} Resource.
 func NewDnsCaaRecord(scope constructs.Construct, id *string, config *DnsCaaRecordConfig) DnsCaaRecord {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewDnsCaaRecord(scope constructs.Construct, id *string, config *DnsCaaRecor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/dns_caa_record azurerm_dns_caa_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/dns_caa_record azurerm_dns_caa_record} Resource.
 func NewDnsCaaRecord_Override(d DnsCaaRecord, scope constructs.Construct, id *string, config *DnsCaaRecordConfig) {
 	_init_.Initialize()
 

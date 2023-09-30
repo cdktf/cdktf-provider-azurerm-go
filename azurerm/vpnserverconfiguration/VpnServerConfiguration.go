@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/vpn_server_configuration azurerm_vpn_server_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/vpn_server_configuration azurerm_vpn_server_configuration}.
 type VpnServerConfiguration interface {
 	cdktf.TerraformResource
 	AzureActiveDirectoryAuthentication() VpnServerConfigurationAzureActiveDirectoryAuthenticationList
@@ -573,7 +573,7 @@ func (j *jsiiProxy_VpnServerConfiguration) VpnProtocolsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/vpn_server_configuration azurerm_vpn_server_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/vpn_server_configuration azurerm_vpn_server_configuration} Resource.
 func NewVpnServerConfiguration(scope constructs.Construct, id *string, config *VpnServerConfigurationConfig) VpnServerConfiguration {
 	_init_.Initialize()
 
@@ -591,7 +591,7 @@ func NewVpnServerConfiguration(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/vpn_server_configuration azurerm_vpn_server_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/vpn_server_configuration azurerm_vpn_server_configuration} Resource.
 func NewVpnServerConfiguration_Override(v VpnServerConfiguration, scope constructs.Construct, id *string, config *VpnServerConfigurationConfig) {
 	_init_.Initialize()
 

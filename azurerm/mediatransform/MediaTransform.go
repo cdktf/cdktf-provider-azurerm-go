@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/media_transform azurerm_media_transform}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/media_transform azurerm_media_transform}.
 type MediaTransform interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -430,7 +430,7 @@ func (j *jsiiProxy_MediaTransform) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/media_transform azurerm_media_transform} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/media_transform azurerm_media_transform} Resource.
 func NewMediaTransform(scope constructs.Construct, id *string, config *MediaTransformConfig) MediaTransform {
 	_init_.Initialize()
 
@@ -448,7 +448,7 @@ func NewMediaTransform(scope constructs.Construct, id *string, config *MediaTran
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/media_transform azurerm_media_transform} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/media_transform azurerm_media_transform} Resource.
 func NewMediaTransform_Override(m MediaTransform, scope constructs.Construct, id *string, config *MediaTransformConfig) {
 	_init_.Initialize()
 

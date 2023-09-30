@@ -35,6 +35,8 @@ type FirewallPolicyIdentityOutputReference interface {
 	IdentityIdsInput() *[]*string
 	InternalValue() *FirewallPolicyIdentity
 	SetInternalValue(val *FirewallPolicyIdentity)
+	PrincipalId() *string
+	TenantId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +72,7 @@ type FirewallPolicyIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIdentityIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -150,6 +153,26 @@ func (j *jsiiProxy_FirewallPolicyIdentityOutputReference) InternalValue() *Firew
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirewallPolicyIdentityOutputReference) PrincipalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirewallPolicyIdentityOutputReference) TenantId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantId",
 		&returns,
 	)
 	return returns
@@ -484,6 +507,14 @@ func (f *jsiiProxy_FirewallPolicyIdentityOutputReference) InterpolationForAttrib
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FirewallPolicyIdentityOutputReference) ResetIdentityIds() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetIdentityIds",
+		nil, // no parameters
+	)
 }
 
 func (f *jsiiProxy_FirewallPolicyIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

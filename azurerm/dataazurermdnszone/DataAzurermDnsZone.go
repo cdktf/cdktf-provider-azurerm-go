@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/dns_zone azurerm_dns_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/dns_zone azurerm_dns_zone}.
 type DataAzurermDnsZone interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataAzurermDnsZone) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/dns_zone azurerm_dns_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/dns_zone azurerm_dns_zone} Data Source.
 func NewDataAzurermDnsZone(scope constructs.Construct, id *string, config *DataAzurermDnsZoneConfig) DataAzurermDnsZone {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDataAzurermDnsZone(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/dns_zone azurerm_dns_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/dns_zone azurerm_dns_zone} Data Source.
 func NewDataAzurermDnsZone_Override(d DataAzurermDnsZone, scope constructs.Construct, id *string, config *DataAzurermDnsZoneConfig) {
 	_init_.Initialize()
 

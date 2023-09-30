@@ -38,6 +38,9 @@ type MysqlFlexibleServerStorageOutputReference interface {
 	Iops() *float64
 	SetIops(val *float64)
 	IopsInput() *float64
+	IoScalingEnabled() interface{}
+	SetIoScalingEnabled(val interface{})
+	IoScalingEnabledInput() interface{}
 	SizeGb() *float64
 	SetSizeGb(val *float64)
 	SizeGbInput() *float64
@@ -75,6 +78,7 @@ type MysqlFlexibleServerStorageOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAutoGrowEnabled()
 	ResetIops()
+	ResetIoScalingEnabled()
 	ResetSizeGb()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -176,6 +180,26 @@ func (j *jsiiProxy_MysqlFlexibleServerStorageOutputReference) IopsInput() *float
 	_jsii_.Get(
 		j,
 		"iopsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MysqlFlexibleServerStorageOutputReference) IoScalingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ioScalingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MysqlFlexibleServerStorageOutputReference) IoScalingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ioScalingEnabledInput",
 		&returns,
 	)
 	return returns
@@ -300,6 +324,17 @@ func (j *jsiiProxy_MysqlFlexibleServerStorageOutputReference)SetIops(val *float6
 	_jsii_.Set(
 		j,
 		"iops",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MysqlFlexibleServerStorageOutputReference)SetIoScalingEnabled(val interface{}) {
+	if err := j.validateSetIoScalingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ioScalingEnabled",
 		val,
 	)
 }
@@ -535,6 +570,14 @@ func (m *jsiiProxy_MysqlFlexibleServerStorageOutputReference) ResetIops() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetIops",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MysqlFlexibleServerStorageOutputReference) ResetIoScalingEnabled() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetIoScalingEnabled",
 		nil, // no parameters
 	)
 }

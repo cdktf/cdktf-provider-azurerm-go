@@ -83,10 +83,6 @@ func (j *jsiiProxy_ManagementLockTimeoutsOutputReference) validateSetTerraformRe
 	return nil
 }
 
-func (j *jsiiProxy_ManagementLockTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewManagementLockTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

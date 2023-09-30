@@ -28,6 +28,9 @@ type FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOutputReference i
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	DestinationAddresses() *[]*string
 	SetDestinationAddresses(val *[]*string)
 	DestinationAddressesInput() *[]*string
@@ -88,6 +91,7 @@ type FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDescription()
 	ResetDestinationAddresses()
 	ResetDestinationFqdns()
 	ResetDestinationIpGroups()
@@ -133,6 +137,26 @@ func (j *jsiiProxy_FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOut
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -384,6 +408,17 @@ func (j *jsiiProxy_FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOut
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -693,6 +728,14 @@ func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOut
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDescription",
+		nil, // no parameters
+	)
 }
 
 func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOutputReference) ResetDestinationAddresses() {

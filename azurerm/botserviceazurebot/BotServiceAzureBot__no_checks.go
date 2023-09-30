@@ -99,6 +99,10 @@ func (j *jsiiProxy_BotServiceAzureBot) validateSetEndpointParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_BotServiceAzureBot) validateSetIconUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotServiceAzureBot) validateSetIdParameters(val *string) error {
 	return nil
 }

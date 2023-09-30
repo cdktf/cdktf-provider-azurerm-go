@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot}.
 type BotServiceAzureBot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -54,6 +54,9 @@ type BotServiceAzureBot interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	IconUrl() *string
+	SetIconUrl(val *string)
+	IconUrlInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -151,6 +154,7 @@ type BotServiceAzureBot interface {
 	ResetDeveloperAppInsightsKey()
 	ResetDisplayName()
 	ResetEndpoint()
+	ResetIconUrl()
 	ResetId()
 	ResetLocalAuthenticationEnabled()
 	ResetLuisAppIds()
@@ -354,6 +358,26 @@ func (j *jsiiProxy_BotServiceAzureBot) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotServiceAzureBot) IconUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iconUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotServiceAzureBot) IconUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iconUrlInput",
 		&returns,
 	)
 	return returns
@@ -740,7 +764,7 @@ func (j *jsiiProxy_BotServiceAzureBot) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot} Resource.
 func NewBotServiceAzureBot(scope constructs.Construct, id *string, config *BotServiceAzureBotConfig) BotServiceAzureBot {
 	_init_.Initialize()
 
@@ -758,7 +782,7 @@ func NewBotServiceAzureBot(scope constructs.Construct, id *string, config *BotSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot} Resource.
 func NewBotServiceAzureBot_Override(b BotServiceAzureBot, scope constructs.Construct, id *string, config *BotServiceAzureBotConfig) {
 	_init_.Initialize()
 
@@ -858,6 +882,17 @@ func (j *jsiiProxy_BotServiceAzureBot)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotServiceAzureBot)SetIconUrl(val *string) {
+	if err := j.validateSetIconUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"iconUrl",
 		val,
 	)
 }
@@ -1359,6 +1394,14 @@ func (b *jsiiProxy_BotServiceAzureBot) ResetEndpoint() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotServiceAzureBot) ResetIconUrl() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetIconUrl",
 		nil, // no parameters
 	)
 }

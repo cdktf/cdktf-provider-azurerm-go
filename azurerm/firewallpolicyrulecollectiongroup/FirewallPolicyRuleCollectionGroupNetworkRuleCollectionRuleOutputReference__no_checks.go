@@ -59,6 +59,10 @@ func (j *jsiiProxy_FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOut
 	return nil
 }
 
+func (j *jsiiProxy_FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FirewallPolicyRuleCollectionGroupNetworkRuleCollectionRuleOutputReference) validateSetDestinationAddressesParameters(val *[]*string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams}.
 type BotChannelMsTeams interface {
 	cdktf.TerraformResource
 	BotName() *string
@@ -454,7 +454,7 @@ func (j *jsiiProxy_BotChannelMsTeams) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams} Resource.
 func NewBotChannelMsTeams(scope constructs.Construct, id *string, config *BotChannelMsTeamsConfig) BotChannelMsTeams {
 	_init_.Initialize()
 
@@ -472,7 +472,7 @@ func NewBotChannelMsTeams(scope constructs.Construct, id *string, config *BotCha
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams} Resource.
 func NewBotChannelMsTeams_Override(b BotChannelMsTeams, scope constructs.Construct, id *string, config *BotChannelMsTeamsConfig) {
 	_init_.Initialize()
 

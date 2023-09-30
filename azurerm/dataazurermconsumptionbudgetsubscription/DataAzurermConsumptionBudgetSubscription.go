@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/consumption_budget_subscription azurerm_consumption_budget_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/consumption_budget_subscription azurerm_consumption_budget_subscription}.
 type DataAzurermConsumptionBudgetSubscription interface {
 	cdktf.TerraformDataSource
 	Amount() *float64
@@ -386,7 +386,7 @@ func (j *jsiiProxy_DataAzurermConsumptionBudgetSubscription) TimePeriod() DataAz
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/consumption_budget_subscription azurerm_consumption_budget_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/consumption_budget_subscription azurerm_consumption_budget_subscription} Data Source.
 func NewDataAzurermConsumptionBudgetSubscription(scope constructs.Construct, id *string, config *DataAzurermConsumptionBudgetSubscriptionConfig) DataAzurermConsumptionBudgetSubscription {
 	_init_.Initialize()
 
@@ -404,7 +404,7 @@ func NewDataAzurermConsumptionBudgetSubscription(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/consumption_budget_subscription azurerm_consumption_budget_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/consumption_budget_subscription azurerm_consumption_budget_subscription} Data Source.
 func NewDataAzurermConsumptionBudgetSubscription_Override(d DataAzurermConsumptionBudgetSubscription, scope constructs.Construct, id *string, config *DataAzurermConsumptionBudgetSubscriptionConfig) {
 	_init_.Initialize()
 

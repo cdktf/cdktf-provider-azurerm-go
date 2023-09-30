@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/monitor_action_rule_suppression azurerm_monitor_action_rule_suppression}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/monitor_action_rule_suppression azurerm_monitor_action_rule_suppression}.
 type MonitorActionRuleSuppression interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -502,7 +502,7 @@ func (j *jsiiProxy_MonitorActionRuleSuppression) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/monitor_action_rule_suppression azurerm_monitor_action_rule_suppression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/monitor_action_rule_suppression azurerm_monitor_action_rule_suppression} Resource.
 func NewMonitorActionRuleSuppression(scope constructs.Construct, id *string, config *MonitorActionRuleSuppressionConfig) MonitorActionRuleSuppression {
 	_init_.Initialize()
 
@@ -520,7 +520,7 @@ func NewMonitorActionRuleSuppression(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/monitor_action_rule_suppression azurerm_monitor_action_rule_suppression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/monitor_action_rule_suppression azurerm_monitor_action_rule_suppression} Resource.
 func NewMonitorActionRuleSuppression_Override(m MonitorActionRuleSuppression, scope constructs.Construct, id *string, config *MonitorActionRuleSuppressionConfig) {
 	_init_.Initialize()
 

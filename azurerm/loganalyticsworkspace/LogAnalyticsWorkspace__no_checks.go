@@ -91,6 +91,10 @@ func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetDailyQuotaGbParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetDataCollectionRuleIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetIdParameters(val *string) error {
 	return nil
 }

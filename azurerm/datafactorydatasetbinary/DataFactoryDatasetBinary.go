@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/data_factory_dataset_binary azurerm_data_factory_dataset_binary}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/data_factory_dataset_binary azurerm_data_factory_dataset_binary}.
 type DataFactoryDatasetBinary interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -598,7 +598,7 @@ func (j *jsiiProxy_DataFactoryDatasetBinary) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/data_factory_dataset_binary azurerm_data_factory_dataset_binary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/data_factory_dataset_binary azurerm_data_factory_dataset_binary} Resource.
 func NewDataFactoryDatasetBinary(scope constructs.Construct, id *string, config *DataFactoryDatasetBinaryConfig) DataFactoryDatasetBinary {
 	_init_.Initialize()
 
@@ -616,7 +616,7 @@ func NewDataFactoryDatasetBinary(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/data_factory_dataset_binary azurerm_data_factory_dataset_binary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/data_factory_dataset_binary azurerm_data_factory_dataset_binary} Resource.
 func NewDataFactoryDatasetBinary_Override(d DataFactoryDatasetBinary, scope constructs.Construct, id *string, config *DataFactoryDatasetBinaryConfig) {
 	_init_.Initialize()
 

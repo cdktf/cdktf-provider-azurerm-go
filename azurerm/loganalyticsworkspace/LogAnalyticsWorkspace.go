@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace}.
 type LogAnalyticsWorkspace interface {
 	cdktf.TerraformResource
 	AllowResourceOnlyPermissions() interface{}
@@ -36,6 +36,9 @@ type LogAnalyticsWorkspace interface {
 	DailyQuotaGb() *float64
 	SetDailyQuotaGb(val *float64)
 	DailyQuotaGbInput() *float64
+	DataCollectionRuleId() *string
+	SetDataCollectionRuleId(val *string)
+	DataCollectionRuleIdInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -137,6 +140,7 @@ type LogAnalyticsWorkspace interface {
 	ResetAllowResourceOnlyPermissions()
 	ResetCmkForQueryForced()
 	ResetDailyQuotaGb()
+	ResetDataCollectionRuleId()
 	ResetId()
 	ResetInternetIngestionEnabled()
 	ResetInternetQueryEnabled()
@@ -259,6 +263,26 @@ func (j *jsiiProxy_LogAnalyticsWorkspace) DailyQuotaGbInput() *float64 {
 	_jsii_.Get(
 		j,
 		"dailyQuotaGbInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogAnalyticsWorkspace) DataCollectionRuleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataCollectionRuleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogAnalyticsWorkspace) DataCollectionRuleIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataCollectionRuleIdInput",
 		&returns,
 	)
 	return returns
@@ -655,7 +679,7 @@ func (j *jsiiProxy_LogAnalyticsWorkspace) WorkspaceId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource.
 func NewLogAnalyticsWorkspace(scope constructs.Construct, id *string, config *LogAnalyticsWorkspaceConfig) LogAnalyticsWorkspace {
 	_init_.Initialize()
 
@@ -673,7 +697,7 @@ func NewLogAnalyticsWorkspace(scope constructs.Construct, id *string, config *Lo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource.
 func NewLogAnalyticsWorkspace_Override(l LogAnalyticsWorkspace, scope constructs.Construct, id *string, config *LogAnalyticsWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -735,6 +759,17 @@ func (j *jsiiProxy_LogAnalyticsWorkspace)SetDailyQuotaGb(val *float64) {
 	_jsii_.Set(
 		j,
 		"dailyQuotaGb",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogAnalyticsWorkspace)SetDataCollectionRuleId(val *string) {
+	if err := j.validateSetDataCollectionRuleIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataCollectionRuleId",
 		val,
 	)
 }
@@ -1203,6 +1238,14 @@ func (l *jsiiProxy_LogAnalyticsWorkspace) ResetDailyQuotaGb() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDailyQuotaGb",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogAnalyticsWorkspace) ResetDataCollectionRuleId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDataCollectionRuleId",
 		nil, // no parameters
 	)
 }

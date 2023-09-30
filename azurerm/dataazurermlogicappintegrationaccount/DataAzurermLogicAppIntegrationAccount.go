@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/logic_app_integration_account azurerm_logic_app_integration_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/logic_app_integration_account azurerm_logic_app_integration_account}.
 type DataAzurermLogicAppIntegrationAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DataAzurermLogicAppIntegrationAccount) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/logic_app_integration_account azurerm_logic_app_integration_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/logic_app_integration_account azurerm_logic_app_integration_account} Data Source.
 func NewDataAzurermLogicAppIntegrationAccount(scope constructs.Construct, id *string, config *DataAzurermLogicAppIntegrationAccountConfig) DataAzurermLogicAppIntegrationAccount {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewDataAzurermLogicAppIntegrationAccount(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/logic_app_integration_account azurerm_logic_app_integration_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/logic_app_integration_account azurerm_logic_app_integration_account} Data Source.
 func NewDataAzurermLogicAppIntegrationAccount_Override(d DataAzurermLogicAppIntegrationAccount, scope constructs.Construct, id *string, config *DataAzurermLogicAppIntegrationAccountConfig) {
 	_init_.Initialize()
 

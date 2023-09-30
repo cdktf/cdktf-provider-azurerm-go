@@ -71,6 +71,10 @@ func (j *jsiiProxy_MysqlFlexibleServerStorageOutputReference) validateSetIopsPar
 	return nil
 }
 
+func (j *jsiiProxy_MysqlFlexibleServerStorageOutputReference) validateSetIoScalingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MysqlFlexibleServerStorageOutputReference) validateSetSizeGbParameters(val *float64) error {
 	return nil
 }

@@ -279,6 +279,14 @@ func (j *jsiiProxy_BotServiceAzureBot) validateSetEndpointParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_BotServiceAzureBot) validateSetIconUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BotServiceAzureBot) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

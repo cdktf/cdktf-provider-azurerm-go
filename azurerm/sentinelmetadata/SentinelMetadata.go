@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/sentinel_metadata azurerm_sentinel_metadata}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/sentinel_metadata azurerm_sentinel_metadata}.
 type SentinelMetadata interface {
 	cdktf.TerraformResource
 	Author() SentinelMetadataAuthorOutputReference
@@ -812,7 +812,7 @@ func (j *jsiiProxy_SentinelMetadata) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/sentinel_metadata azurerm_sentinel_metadata} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/sentinel_metadata azurerm_sentinel_metadata} Resource.
 func NewSentinelMetadata(scope constructs.Construct, id *string, config *SentinelMetadataConfig) SentinelMetadata {
 	_init_.Initialize()
 
@@ -830,7 +830,7 @@ func NewSentinelMetadata(scope constructs.Construct, id *string, config *Sentine
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/sentinel_metadata azurerm_sentinel_metadata} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/sentinel_metadata azurerm_sentinel_metadata} Resource.
 func NewSentinelMetadata_Override(s SentinelMetadata, scope constructs.Construct, id *string, config *SentinelMetadataConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/mariadb_firewall_rule azurerm_mariadb_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/mariadb_firewall_rule azurerm_mariadb_firewall_rule}.
 type MariadbFirewallRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_MariadbFirewallRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/mariadb_firewall_rule azurerm_mariadb_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/mariadb_firewall_rule azurerm_mariadb_firewall_rule} Resource.
 func NewMariadbFirewallRule(scope constructs.Construct, id *string, config *MariadbFirewallRuleConfig) MariadbFirewallRule {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewMariadbFirewallRule(scope constructs.Construct, id *string, config *Mari
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/mariadb_firewall_rule azurerm_mariadb_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/mariadb_firewall_rule azurerm_mariadb_firewall_rule} Resource.
 func NewMariadbFirewallRule_Override(m MariadbFirewallRule, scope constructs.Construct, id *string, config *MariadbFirewallRuleConfig) {
 	_init_.Initialize()
 

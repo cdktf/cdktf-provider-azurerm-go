@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/private_dns_resolver_outbound_endpoint azurerm_private_dns_resolver_outbound_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/private_dns_resolver_outbound_endpoint azurerm_private_dns_resolver_outbound_endpoint}.
 type DataAzurermPrivateDnsResolverOutboundEndpoint interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DataAzurermPrivateDnsResolverOutboundEndpoint) TimeoutsInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/private_dns_resolver_outbound_endpoint azurerm_private_dns_resolver_outbound_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/private_dns_resolver_outbound_endpoint azurerm_private_dns_resolver_outbound_endpoint} Data Source.
 func NewDataAzurermPrivateDnsResolverOutboundEndpoint(scope constructs.Construct, id *string, config *DataAzurermPrivateDnsResolverOutboundEndpointConfig) DataAzurermPrivateDnsResolverOutboundEndpoint {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewDataAzurermPrivateDnsResolverOutboundEndpoint(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/data-sources/private_dns_resolver_outbound_endpoint azurerm_private_dns_resolver_outbound_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/private_dns_resolver_outbound_endpoint azurerm_private_dns_resolver_outbound_endpoint} Data Source.
 func NewDataAzurermPrivateDnsResolverOutboundEndpoint_Override(d DataAzurermPrivateDnsResolverOutboundEndpoint, scope constructs.Construct, id *string, config *DataAzurermPrivateDnsResolverOutboundEndpointConfig) {
 	_init_.Initialize()
 

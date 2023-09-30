@@ -22,26 +22,26 @@ type OrbitalContactConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/orbital_contact#contact_profile_id OrbitalContact#contact_profile_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/orbital_contact#contact_profile_id OrbitalContact#contact_profile_id}.
 	ContactProfileId *string `field:"required" json:"contactProfileId" yaml:"contactProfileId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/orbital_contact#ground_station_name OrbitalContact#ground_station_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/orbital_contact#ground_station_name OrbitalContact#ground_station_name}.
 	GroundStationName *string `field:"required" json:"groundStationName" yaml:"groundStationName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/orbital_contact#name OrbitalContact#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/orbital_contact#name OrbitalContact#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/orbital_contact#reservation_end_time OrbitalContact#reservation_end_time}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/orbital_contact#reservation_end_time OrbitalContact#reservation_end_time}.
 	ReservationEndTime *string `field:"required" json:"reservationEndTime" yaml:"reservationEndTime"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/orbital_contact#reservation_start_time OrbitalContact#reservation_start_time}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/orbital_contact#reservation_start_time OrbitalContact#reservation_start_time}.
 	ReservationStartTime *string `field:"required" json:"reservationStartTime" yaml:"reservationStartTime"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/orbital_contact#spacecraft_id OrbitalContact#spacecraft_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/orbital_contact#spacecraft_id OrbitalContact#spacecraft_id}.
 	SpacecraftId *string `field:"required" json:"spacecraftId" yaml:"spacecraftId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/orbital_contact#id OrbitalContact#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/orbital_contact#id OrbitalContact#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.74.0/docs/resources/orbital_contact#timeouts OrbitalContact#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/orbital_contact#timeouts OrbitalContact#timeouts}
 	Timeouts *OrbitalContactTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

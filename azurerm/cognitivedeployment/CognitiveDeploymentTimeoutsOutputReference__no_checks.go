@@ -83,6 +83,10 @@ func (j *jsiiProxy_CognitiveDeploymentTimeoutsOutputReference) validateSetTerraf
 	return nil
 }
 
+func (j *jsiiProxy_CognitiveDeploymentTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewCognitiveDeploymentTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
