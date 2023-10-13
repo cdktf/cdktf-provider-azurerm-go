@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/log_analytics_solution azurerm_log_analytics_solution}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/log_analytics_solution azurerm_log_analytics_solution}.
 type LogAnalyticsSolution interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -475,7 +475,7 @@ func (j *jsiiProxy_LogAnalyticsSolution) WorkspaceResourceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/log_analytics_solution azurerm_log_analytics_solution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/log_analytics_solution azurerm_log_analytics_solution} Resource.
 func NewLogAnalyticsSolution(scope constructs.Construct, id *string, config *LogAnalyticsSolutionConfig) LogAnalyticsSolution {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewLogAnalyticsSolution(scope constructs.Construct, id *string, config *Log
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/log_analytics_solution azurerm_log_analytics_solution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/log_analytics_solution azurerm_log_analytics_solution} Resource.
 func NewLogAnalyticsSolution_Override(l LogAnalyticsSolution, scope constructs.Construct, id *string, config *LogAnalyticsSolutionConfig) {
 	_init_.Initialize()
 

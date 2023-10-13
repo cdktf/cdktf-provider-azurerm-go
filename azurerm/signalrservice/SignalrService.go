@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/signalr_service azurerm_signalr_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/signalr_service azurerm_signalr_service}.
 type SignalrService interface {
 	cdktf.TerraformResource
 	AadAuthEnabled() interface{}
@@ -853,7 +853,7 @@ func (j *jsiiProxy_SignalrService) UpstreamEndpointInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/signalr_service azurerm_signalr_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/signalr_service azurerm_signalr_service} Resource.
 func NewSignalrService(scope constructs.Construct, id *string, config *SignalrServiceConfig) SignalrService {
 	_init_.Initialize()
 
@@ -871,7 +871,7 @@ func NewSignalrService(scope constructs.Construct, id *string, config *SignalrSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/signalr_service azurerm_signalr_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/signalr_service azurerm_signalr_service} Resource.
 func NewSignalrService_Override(s SignalrService, scope constructs.Construct, id *string, config *SignalrServiceConfig) {
 	_init_.Initialize()
 

@@ -12,10 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/application_gateway azurerm_application_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/data-sources/application_gateway azurerm_application_gateway}.
 type DataAzurermApplicationGateway interface {
 	cdktf.TerraformDataSource
+	AuthenticationCertificate() DataAzurermApplicationGatewayAuthenticationCertificateList
+	AutoscaleConfiguration() DataAzurermApplicationGatewayAutoscaleConfigurationList
 	BackendAddressPool() DataAzurermApplicationGatewayBackendAddressPoolList
+	BackendHttpSettings() DataAzurermApplicationGatewayBackendHttpSettingsList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -24,10 +27,14 @@ type DataAzurermApplicationGateway interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomErrorConfiguration() DataAzurermApplicationGatewayCustomErrorConfigurationList
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	FipsEnabled() cdktf.IResolvable
+	FirewallPolicyId() *string
+	ForceFirewallPolicyAssociation() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -36,6 +43,12 @@ type DataAzurermApplicationGateway interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	FrontendIpConfiguration() DataAzurermApplicationGatewayFrontendIpConfigurationList
+	FrontendPort() DataAzurermApplicationGatewayFrontendPortList
+	GatewayIpConfiguration() DataAzurermApplicationGatewayGatewayIpConfigurationList
+	Global() DataAzurermApplicationGatewayGlobalList
+	Http2Enabled() cdktf.IResolvable
+	HttpListener() DataAzurermApplicationGatewayHttpListenerList
 	Id() *string
 	SetId(val *string)
 	Identity() DataAzurermApplicationGatewayIdentityList
@@ -50,15 +63,25 @@ type DataAzurermApplicationGateway interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PrivateEndpointConnection() DataAzurermApplicationGatewayPrivateEndpointConnectionList
+	PrivateLinkConfiguration() DataAzurermApplicationGatewayPrivateLinkConfigurationList
+	Probe() DataAzurermApplicationGatewayProbeList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	RedirectConfiguration() DataAzurermApplicationGatewayRedirectConfigurationList
+	RequestRoutingRule() DataAzurermApplicationGatewayRequestRoutingRuleList
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	RewriteRuleSet() DataAzurermApplicationGatewayRewriteRuleSetList
+	Sku() DataAzurermApplicationGatewaySkuList
+	SslCertificate() DataAzurermApplicationGatewaySslCertificateList
+	SslPolicy() DataAzurermApplicationGatewaySslPolicyList
+	SslProfile() DataAzurermApplicationGatewaySslProfileList
 	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -68,6 +91,11 @@ type DataAzurermApplicationGateway interface {
 	TerraformResourceType() *string
 	Timeouts() DataAzurermApplicationGatewayTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TrustedClientCertificate() DataAzurermApplicationGatewayTrustedClientCertificateList
+	TrustedRootCertificate() DataAzurermApplicationGatewayTrustedRootCertificateList
+	UrlPathMap() DataAzurermApplicationGatewayUrlPathMapList
+	WafConfiguration() DataAzurermApplicationGatewayWafConfigurationList
+	Zones() *[]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -114,11 +142,41 @@ type jsiiProxy_DataAzurermApplicationGateway struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
+func (j *jsiiProxy_DataAzurermApplicationGateway) AuthenticationCertificate() DataAzurermApplicationGatewayAuthenticationCertificateList {
+	var returns DataAzurermApplicationGatewayAuthenticationCertificateList
+	_jsii_.Get(
+		j,
+		"authenticationCertificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) AutoscaleConfiguration() DataAzurermApplicationGatewayAutoscaleConfigurationList {
+	var returns DataAzurermApplicationGatewayAutoscaleConfigurationList
+	_jsii_.Get(
+		j,
+		"autoscaleConfiguration",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermApplicationGateway) BackendAddressPool() DataAzurermApplicationGatewayBackendAddressPoolList {
 	var returns DataAzurermApplicationGatewayBackendAddressPoolList
 	_jsii_.Get(
 		j,
 		"backendAddressPool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) BackendHttpSettings() DataAzurermApplicationGatewayBackendHttpSettingsList {
+	var returns DataAzurermApplicationGatewayBackendHttpSettingsList
+	_jsii_.Get(
+		j,
+		"backendHttpSettings",
 		&returns,
 	)
 	return returns
@@ -154,11 +212,51 @@ func (j *jsiiProxy_DataAzurermApplicationGateway) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermApplicationGateway) CustomErrorConfiguration() DataAzurermApplicationGatewayCustomErrorConfigurationList {
+	var returns DataAzurermApplicationGatewayCustomErrorConfigurationList
+	_jsii_.Get(
+		j,
+		"customErrorConfiguration",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermApplicationGateway) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) FipsEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"fipsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) FirewallPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firewallPolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) ForceFirewallPolicyAssociation() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"forceFirewallPolicyAssociation",
 		&returns,
 	)
 	return returns
@@ -189,6 +287,66 @@ func (j *jsiiProxy_DataAzurermApplicationGateway) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) FrontendIpConfiguration() DataAzurermApplicationGatewayFrontendIpConfigurationList {
+	var returns DataAzurermApplicationGatewayFrontendIpConfigurationList
+	_jsii_.Get(
+		j,
+		"frontendIpConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) FrontendPort() DataAzurermApplicationGatewayFrontendPortList {
+	var returns DataAzurermApplicationGatewayFrontendPortList
+	_jsii_.Get(
+		j,
+		"frontendPort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) GatewayIpConfiguration() DataAzurermApplicationGatewayGatewayIpConfigurationList {
+	var returns DataAzurermApplicationGatewayGatewayIpConfigurationList
+	_jsii_.Get(
+		j,
+		"gatewayIpConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) Global() DataAzurermApplicationGatewayGlobalList {
+	var returns DataAzurermApplicationGatewayGlobalList
+	_jsii_.Get(
+		j,
+		"global",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) Http2Enabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"http2Enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) HttpListener() DataAzurermApplicationGatewayHttpListenerList {
+	var returns DataAzurermApplicationGatewayHttpListenerList
+	_jsii_.Get(
+		j,
+		"httpListener",
 		&returns,
 	)
 	return returns
@@ -274,6 +432,36 @@ func (j *jsiiProxy_DataAzurermApplicationGateway) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermApplicationGateway) PrivateEndpointConnection() DataAzurermApplicationGatewayPrivateEndpointConnectionList {
+	var returns DataAzurermApplicationGatewayPrivateEndpointConnectionList
+	_jsii_.Get(
+		j,
+		"privateEndpointConnection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) PrivateLinkConfiguration() DataAzurermApplicationGatewayPrivateLinkConfigurationList {
+	var returns DataAzurermApplicationGatewayPrivateLinkConfigurationList
+	_jsii_.Get(
+		j,
+		"privateLinkConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) Probe() DataAzurermApplicationGatewayProbeList {
+	var returns DataAzurermApplicationGatewayProbeList
+	_jsii_.Get(
+		j,
+		"probe",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermApplicationGateway) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -294,6 +482,26 @@ func (j *jsiiProxy_DataAzurermApplicationGateway) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermApplicationGateway) RedirectConfiguration() DataAzurermApplicationGatewayRedirectConfigurationList {
+	var returns DataAzurermApplicationGatewayRedirectConfigurationList
+	_jsii_.Get(
+		j,
+		"redirectConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) RequestRoutingRule() DataAzurermApplicationGatewayRequestRoutingRuleList {
+	var returns DataAzurermApplicationGatewayRequestRoutingRuleList
+	_jsii_.Get(
+		j,
+		"requestRoutingRule",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermApplicationGateway) ResourceGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -309,6 +517,56 @@ func (j *jsiiProxy_DataAzurermApplicationGateway) ResourceGroupNameInput() *stri
 	_jsii_.Get(
 		j,
 		"resourceGroupNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) RewriteRuleSet() DataAzurermApplicationGatewayRewriteRuleSetList {
+	var returns DataAzurermApplicationGatewayRewriteRuleSetList
+	_jsii_.Get(
+		j,
+		"rewriteRuleSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) Sku() DataAzurermApplicationGatewaySkuList {
+	var returns DataAzurermApplicationGatewaySkuList
+	_jsii_.Get(
+		j,
+		"sku",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) SslCertificate() DataAzurermApplicationGatewaySslCertificateList {
+	var returns DataAzurermApplicationGatewaySslCertificateList
+	_jsii_.Get(
+		j,
+		"sslCertificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) SslPolicy() DataAzurermApplicationGatewaySslPolicyList {
+	var returns DataAzurermApplicationGatewaySslPolicyList
+	_jsii_.Get(
+		j,
+		"sslPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) SslProfile() DataAzurermApplicationGatewaySslProfileList {
+	var returns DataAzurermApplicationGatewaySslProfileList
+	_jsii_.Get(
+		j,
+		"sslProfile",
 		&returns,
 	)
 	return returns
@@ -374,8 +632,58 @@ func (j *jsiiProxy_DataAzurermApplicationGateway) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermApplicationGateway) TrustedClientCertificate() DataAzurermApplicationGatewayTrustedClientCertificateList {
+	var returns DataAzurermApplicationGatewayTrustedClientCertificateList
+	_jsii_.Get(
+		j,
+		"trustedClientCertificate",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/application_gateway azurerm_application_gateway} Data Source.
+func (j *jsiiProxy_DataAzurermApplicationGateway) TrustedRootCertificate() DataAzurermApplicationGatewayTrustedRootCertificateList {
+	var returns DataAzurermApplicationGatewayTrustedRootCertificateList
+	_jsii_.Get(
+		j,
+		"trustedRootCertificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) UrlPathMap() DataAzurermApplicationGatewayUrlPathMapList {
+	var returns DataAzurermApplicationGatewayUrlPathMapList
+	_jsii_.Get(
+		j,
+		"urlPathMap",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) WafConfiguration() DataAzurermApplicationGatewayWafConfigurationList {
+	var returns DataAzurermApplicationGatewayWafConfigurationList
+	_jsii_.Get(
+		j,
+		"wafConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGateway) Zones() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"zones",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/data-sources/application_gateway azurerm_application_gateway} Data Source.
 func NewDataAzurermApplicationGateway(scope constructs.Construct, id *string, config *DataAzurermApplicationGatewayConfig) DataAzurermApplicationGateway {
 	_init_.Initialize()
 
@@ -393,7 +701,7 @@ func NewDataAzurermApplicationGateway(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/application_gateway azurerm_application_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/data-sources/application_gateway azurerm_application_gateway} Data Source.
 func NewDataAzurermApplicationGateway_Override(d DataAzurermApplicationGateway, scope constructs.Construct, id *string, config *DataAzurermApplicationGatewayConfig) {
 	_init_.Initialize()
 

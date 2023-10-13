@@ -12,10 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/static_site azurerm_static_site}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/static_site azurerm_static_site}.
 type StaticSite interface {
 	cdktf.TerraformResource
 	ApiKey() *string
+	AppSettings() *map[string]*string
+	SetAppSettings(val *map[string]*string)
+	AppSettingsInput() *map[string]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -115,6 +118,7 @@ type StaticSite interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutIdentity(value *StaticSiteIdentity)
 	PutTimeouts(value *StaticSiteTimeouts)
+	ResetAppSettings()
 	ResetId()
 	ResetIdentity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -144,6 +148,26 @@ func (j *jsiiProxy_StaticSite) ApiKey() *string {
 	_jsii_.Get(
 		j,
 		"apiKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StaticSite) AppSettings() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"appSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StaticSite) AppSettingsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"appSettingsInput",
 		&returns,
 	)
 	return returns
@@ -500,7 +524,7 @@ func (j *jsiiProxy_StaticSite) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/static_site azurerm_static_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/static_site azurerm_static_site} Resource.
 func NewStaticSite(scope constructs.Construct, id *string, config *StaticSiteConfig) StaticSite {
 	_init_.Initialize()
 
@@ -518,7 +542,7 @@ func NewStaticSite(scope constructs.Construct, id *string, config *StaticSiteCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/static_site azurerm_static_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/static_site azurerm_static_site} Resource.
 func NewStaticSite_Override(s StaticSite, scope constructs.Construct, id *string, config *StaticSiteConfig) {
 	_init_.Initialize()
 
@@ -526,6 +550,17 @@ func NewStaticSite_Override(s StaticSite, scope constructs.Construct, id *string
 		"@cdktf/provider-azurerm.staticSite.StaticSite",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_StaticSite)SetAppSettings(val *map[string]*string) {
+	if err := j.validateSetAppSettingsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appSettings",
+		val,
 	)
 }
 
@@ -959,6 +994,14 @@ func (s *jsiiProxy_StaticSite) PutTimeouts(value *StaticSiteTimeouts) {
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StaticSite) ResetAppSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAppSettings",
+		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/video_analyzer_edge_module azurerm_video_analyzer_edge_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/video_analyzer_edge_module azurerm_video_analyzer_edge_module}.
 type VideoAnalyzerEdgeModule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -382,7 +382,7 @@ func (j *jsiiProxy_VideoAnalyzerEdgeModule) VideoAnalyzerNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/video_analyzer_edge_module azurerm_video_analyzer_edge_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/video_analyzer_edge_module azurerm_video_analyzer_edge_module} Resource.
 func NewVideoAnalyzerEdgeModule(scope constructs.Construct, id *string, config *VideoAnalyzerEdgeModuleConfig) VideoAnalyzerEdgeModule {
 	_init_.Initialize()
 
@@ -400,7 +400,7 @@ func NewVideoAnalyzerEdgeModule(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/video_analyzer_edge_module azurerm_video_analyzer_edge_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/video_analyzer_edge_module azurerm_video_analyzer_edge_module} Resource.
 func NewVideoAnalyzerEdgeModule_Override(v VideoAnalyzerEdgeModule, scope constructs.Construct, id *string, config *VideoAnalyzerEdgeModuleConfig) {
 	_init_.Initialize()
 

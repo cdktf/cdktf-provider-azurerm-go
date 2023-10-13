@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/storage_container azurerm_storage_container}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/storage_container azurerm_storage_container}.
 type StorageContainer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -440,7 +440,7 @@ func (j *jsiiProxy_StorageContainer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/storage_container azurerm_storage_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/storage_container azurerm_storage_container} Resource.
 func NewStorageContainer(scope constructs.Construct, id *string, config *StorageContainerConfig) StorageContainer {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewStorageContainer(scope constructs.Construct, id *string, config *Storage
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/storage_container azurerm_storage_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/storage_container azurerm_storage_container} Resource.
 func NewStorageContainer_Override(s StorageContainer, scope constructs.Construct, id *string, config *StorageContainerConfig) {
 	_init_.Initialize()
 

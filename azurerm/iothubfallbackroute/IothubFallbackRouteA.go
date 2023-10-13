@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route}.
 type IothubFallbackRouteA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -453,7 +453,7 @@ func (j *jsiiProxy_IothubFallbackRouteA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route} Resource.
 func NewIothubFallbackRouteA(scope constructs.Construct, id *string, config *IothubFallbackRouteAConfig) IothubFallbackRouteA {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewIothubFallbackRouteA(scope constructs.Construct, id *string, config *Iot
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route} Resource.
 func NewIothubFallbackRouteA_Override(i IothubFallbackRouteA, scope constructs.Construct, id *string, config *IothubFallbackRouteAConfig) {
 	_init_.Initialize()
 

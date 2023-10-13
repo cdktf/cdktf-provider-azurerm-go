@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/site_recovery_protection_container azurerm_site_recovery_protection_container}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/data-sources/site_recovery_protection_container azurerm_site_recovery_protection_container}.
 type DataAzurermSiteRecoveryProtectionContainer interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_DataAzurermSiteRecoveryProtectionContainer) TimeoutsInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/site_recovery_protection_container azurerm_site_recovery_protection_container} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/data-sources/site_recovery_protection_container azurerm_site_recovery_protection_container} Data Source.
 func NewDataAzurermSiteRecoveryProtectionContainer(scope constructs.Construct, id *string, config *DataAzurermSiteRecoveryProtectionContainerConfig) DataAzurermSiteRecoveryProtectionContainer {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewDataAzurermSiteRecoveryProtectionContainer(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/data-sources/site_recovery_protection_container azurerm_site_recovery_protection_container} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/data-sources/site_recovery_protection_container azurerm_site_recovery_protection_container} Data Source.
 func NewDataAzurermSiteRecoveryProtectionContainer_Override(d DataAzurermSiteRecoveryProtectionContainer, scope constructs.Construct, id *string, config *DataAzurermSiteRecoveryProtectionContainerConfig) {
 	_init_.Initialize()
 

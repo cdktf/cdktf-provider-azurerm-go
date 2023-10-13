@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/digital_twins_instance azurerm_digital_twins_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/digital_twins_instance azurerm_digital_twins_instance}.
 type DigitalTwinsInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_DigitalTwinsInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/digital_twins_instance azurerm_digital_twins_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/digital_twins_instance azurerm_digital_twins_instance} Resource.
 func NewDigitalTwinsInstance(scope constructs.Construct, id *string, config *DigitalTwinsInstanceConfig) DigitalTwinsInstance {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewDigitalTwinsInstance(scope constructs.Construct, id *string, config *Dig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/digital_twins_instance azurerm_digital_twins_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/digital_twins_instance azurerm_digital_twins_instance} Resource.
 func NewDigitalTwinsInstance_Override(d DigitalTwinsInstance, scope constructs.Construct, id *string, config *DigitalTwinsInstanceConfig) {
 	_init_.Initialize()
 

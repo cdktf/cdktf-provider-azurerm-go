@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/cosmosdb_sql_role_definition azurerm_cosmosdb_sql_role_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/cosmosdb_sql_role_definition azurerm_cosmosdb_sql_role_definition}.
 type CosmosdbSqlRoleDefinition interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -476,7 +476,7 @@ func (j *jsiiProxy_CosmosdbSqlRoleDefinition) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/cosmosdb_sql_role_definition azurerm_cosmosdb_sql_role_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/cosmosdb_sql_role_definition azurerm_cosmosdb_sql_role_definition} Resource.
 func NewCosmosdbSqlRoleDefinition(scope constructs.Construct, id *string, config *CosmosdbSqlRoleDefinitionConfig) CosmosdbSqlRoleDefinition {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewCosmosdbSqlRoleDefinition(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.75.0/docs/resources/cosmosdb_sql_role_definition azurerm_cosmosdb_sql_role_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/cosmosdb_sql_role_definition azurerm_cosmosdb_sql_role_definition} Resource.
 func NewCosmosdbSqlRoleDefinition_Override(c CosmosdbSqlRoleDefinition, scope constructs.Construct, id *string, config *CosmosdbSqlRoleDefinitionConfig) {
 	_init_.Initialize()
 
