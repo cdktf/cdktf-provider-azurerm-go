@@ -7,6 +7,10 @@ package sentinelmetadata
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SentinelMetadata) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelMetadata) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SentinelMetadata) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_SentinelMetadata) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelMetadata) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelMetadata) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (s *jsiiProxy_SentinelMetadata) validatePutSupportParameters(value *Sentine
 }
 
 func (s *jsiiProxy_SentinelMetadata) validatePutTimeoutsParameters(value *SentinelMetadataTimeouts) error {
+	return nil
+}
+
+func validateSentinelMetadata_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

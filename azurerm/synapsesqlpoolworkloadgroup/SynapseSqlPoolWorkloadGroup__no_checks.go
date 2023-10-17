@@ -7,6 +7,10 @@ package synapsesqlpoolworkloadgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SynapseSqlPoolWorkloadGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseSqlPoolWorkloadGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SynapseSqlPoolWorkloadGroup) validateGetStringMapAttributePar
 	return nil
 }
 
+func (s *jsiiProxy_SynapseSqlPoolWorkloadGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseSqlPoolWorkloadGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SynapseSqlPoolWorkloadGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SynapseSqlPoolWorkloadGroup) validateOverrideLogicalIdParamet
 }
 
 func (s *jsiiProxy_SynapseSqlPoolWorkloadGroup) validatePutTimeoutsParameters(value *SynapseSqlPoolWorkloadGroupTimeouts) error {
+	return nil
+}
+
+func validateSynapseSqlPoolWorkloadGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

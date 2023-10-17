@@ -7,6 +7,10 @@ package mapsaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MapsAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MapsAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MapsAccount) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (m *jsiiProxy_MapsAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MapsAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MapsAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MapsAccount) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (m *jsiiProxy_MapsAccount) validatePutTimeoutsParameters(value *MapsAccountTimeouts) error {
+	return nil
+}
+
+func validateMapsAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

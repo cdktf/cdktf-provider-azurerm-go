@@ -7,6 +7,10 @@ package iothubcertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IothubCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IothubCertificate) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (i *jsiiProxy_IothubCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IothubCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IothubCertificate) validateOverrideLogicalIdParameters(newLog
 }
 
 func (i *jsiiProxy_IothubCertificate) validatePutTimeoutsParameters(value *IothubCertificateTimeouts) error {
+	return nil
+}
+
+func validateIothubCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

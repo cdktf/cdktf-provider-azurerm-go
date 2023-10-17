@@ -7,6 +7,10 @@ package eventhubnamespacecustomermanagedkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateGetStringMapAttr
 	return nil
 }
 
+func (e *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateOverrideLogicalI
 }
 
 func (e *jsiiProxy_EventhubNamespaceCustomerManagedKey) validatePutTimeoutsParameters(value *EventhubNamespaceCustomerManagedKeyTimeouts) error {
+	return nil
+}
+
+func validateEventhubNamespaceCustomerManagedKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

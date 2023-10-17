@@ -7,6 +7,10 @@ package networkinterfaceapplicationgatewaybackendaddresspoolassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkInterfaceApplicationGatewayBackendAddressPoolAssociati
 	return nil
 }
 
+func (n *jsiiProxy_NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkInterfaceApplicationGatewayBackendAddressPoolAssociati
 }
 
 func (n *jsiiProxy_NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation) validatePutTimeoutsParameters(value *NetworkInterfaceApplicationGatewayBackendAddressPoolAssociationTimeouts) error {
+	return nil
+}
+
+func validateNetworkInterfaceApplicationGatewayBackendAddressPoolAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

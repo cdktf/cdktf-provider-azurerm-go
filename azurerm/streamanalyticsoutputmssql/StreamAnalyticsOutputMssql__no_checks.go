@@ -7,6 +7,10 @@ package streamanalyticsoutputmssql
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StreamAnalyticsOutputMssql) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsOutputMssql) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StreamAnalyticsOutputMssql) validateGetStringMapAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_StreamAnalyticsOutputMssql) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsOutputMssql) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamAnalyticsOutputMssql) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_StreamAnalyticsOutputMssql) validateOverrideLogicalIdParamete
 }
 
 func (s *jsiiProxy_StreamAnalyticsOutputMssql) validatePutTimeoutsParameters(value *StreamAnalyticsOutputMssqlTimeouts) error {
+	return nil
+}
+
+func validateStreamAnalyticsOutputMssql_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

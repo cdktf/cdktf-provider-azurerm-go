@@ -7,6 +7,10 @@ package datafactorydatasetdelimitedtext
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryDatasetDelimitedText) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetDelimitedText) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryDatasetDelimitedText) validateGetStringMapAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryDatasetDelimitedText) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetDelimitedText) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryDatasetDelimitedText) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (d *jsiiProxy_DataFactoryDatasetDelimitedText) validatePutSchemaColumnParam
 }
 
 func (d *jsiiProxy_DataFactoryDatasetDelimitedText) validatePutTimeoutsParameters(value *DataFactoryDatasetDelimitedTextTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryDatasetDelimitedText_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

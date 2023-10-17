@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAzurermStorageShare) validatePutTimeoutsParameters(value 
 	return nil
 }
 
+func validateDataAzurermStorageShare_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermStorageShare_IsConstructParameters(x interface{}) error {
 	return nil
 }

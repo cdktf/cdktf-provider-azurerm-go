@@ -7,6 +7,10 @@ package siterecoveryvmwarereplicationpolicyassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicyAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicyAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicyAssociation) validateGetSt
 	return nil
 }
 
+func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicyAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicyAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicyAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicyAssociation) validateOverr
 }
 
 func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicyAssociation) validatePutTimeoutsParameters(value *SiteRecoveryVmwareReplicationPolicyAssociationTimeouts) error {
+	return nil
+}
+
+func validateSiteRecoveryVmwareReplicationPolicyAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermKustoDatabase) validatePutTimeoutsParameters(value
 	return nil
 }
 
+func validateDataAzurermKustoDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermKustoDatabase_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermAadb2CDirectory) validatePutTimeoutsParameters(val
 	return nil
 }
 
+func validateDataAzurermAadb2CDirectory_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermAadb2CDirectory_IsConstructParameters(x interface{}) error {
 	return nil
 }

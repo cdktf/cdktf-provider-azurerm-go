@@ -7,6 +7,10 @@ package eventhubcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventhubCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventhubCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EventhubCluster) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (e *jsiiProxy_EventhubCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventhubCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventhubCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_EventhubCluster) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (e *jsiiProxy_EventhubCluster) validatePutTimeoutsParameters(value *EventhubClusterTimeouts) error {
+	return nil
+}
+
+func validateEventhubCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

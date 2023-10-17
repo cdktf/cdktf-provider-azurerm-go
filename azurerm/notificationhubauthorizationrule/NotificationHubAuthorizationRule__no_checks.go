@@ -7,6 +7,10 @@ package notificationhubauthorizationrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NotificationHubAuthorizationRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationHubAuthorizationRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NotificationHubAuthorizationRule) validateGetStringMapAttribu
 	return nil
 }
 
+func (n *jsiiProxy_NotificationHubAuthorizationRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationHubAuthorizationRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationHubAuthorizationRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NotificationHubAuthorizationRule) validateOverrideLogicalIdPa
 }
 
 func (n *jsiiProxy_NotificationHubAuthorizationRule) validatePutTimeoutsParameters(value *NotificationHubAuthorizationRuleTimeouts) error {
+	return nil
+}
+
+func validateNotificationHubAuthorizationRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

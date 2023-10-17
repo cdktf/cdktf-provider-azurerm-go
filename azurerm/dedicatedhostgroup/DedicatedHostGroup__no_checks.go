@@ -7,6 +7,10 @@ package dedicatedhostgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DedicatedHostGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DedicatedHostGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DedicatedHostGroup) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (d *jsiiProxy_DedicatedHostGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DedicatedHostGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DedicatedHostGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DedicatedHostGroup) validateOverrideLogicalIdParameters(newLo
 }
 
 func (d *jsiiProxy_DedicatedHostGroup) validatePutTimeoutsParameters(value *DedicatedHostGroupTimeouts) error {
+	return nil
+}
+
+func validateDedicatedHostGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package voiceservicescommunicationsgateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VoiceServicesCommunicationsGateway) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VoiceServicesCommunicationsGateway) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VoiceServicesCommunicationsGateway) validateGetStringMapAttri
 	return nil
 }
 
+func (v *jsiiProxy_VoiceServicesCommunicationsGateway) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VoiceServicesCommunicationsGateway) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VoiceServicesCommunicationsGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (v *jsiiProxy_VoiceServicesCommunicationsGateway) validatePutServiceLocatio
 }
 
 func (v *jsiiProxy_VoiceServicesCommunicationsGateway) validatePutTimeoutsParameters(value *VoiceServicesCommunicationsGatewayTimeouts) error {
+	return nil
+}
+
+func validateVoiceServicesCommunicationsGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

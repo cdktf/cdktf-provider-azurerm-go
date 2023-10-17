@@ -7,6 +7,10 @@ package tenanttemplatedeployment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TenantTemplateDeployment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TenantTemplateDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (t *jsiiProxy_TenantTemplateDeployment) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (t *jsiiProxy_TenantTemplateDeployment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TenantTemplateDeployment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TenantTemplateDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (t *jsiiProxy_TenantTemplateDeployment) validateOverrideLogicalIdParameters
 }
 
 func (t *jsiiProxy_TenantTemplateDeployment) validatePutTimeoutsParameters(value *TenantTemplateDeploymentTimeouts) error {
+	return nil
+}
+
+func validateTenantTemplateDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

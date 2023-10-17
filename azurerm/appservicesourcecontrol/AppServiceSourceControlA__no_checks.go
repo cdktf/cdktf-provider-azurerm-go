@@ -7,6 +7,10 @@ package appservicesourcecontrol
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppServiceSourceControlA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppServiceSourceControlA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppServiceSourceControlA) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (a *jsiiProxy_AppServiceSourceControlA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppServiceSourceControlA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppServiceSourceControlA) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_AppServiceSourceControlA) validatePutGithubActionConfiguratio
 }
 
 func (a *jsiiProxy_AppServiceSourceControlA) validatePutTimeoutsParameters(value *AppServiceSourceControlTimeouts) error {
+	return nil
+}
+
+func validateAppServiceSourceControlA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

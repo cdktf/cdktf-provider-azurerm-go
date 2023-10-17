@@ -7,6 +7,10 @@ package datafactorylinkedserviceazurefilestorage
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureFileStorage) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureFileStorage) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureFileStorage) validateGetStringMa
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureFileStorage) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureFileStorage) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureFileStorage) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureFileStorage) validatePutKeyVault
 }
 
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureFileStorage) validatePutTimeoutsParameters(value *DataFactoryLinkedServiceAzureFileStorageTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceAzureFileStorage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

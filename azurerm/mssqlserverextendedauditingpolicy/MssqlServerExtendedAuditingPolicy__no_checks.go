@@ -7,6 +7,10 @@ package mssqlserverextendedauditingpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MssqlServerExtendedAuditingPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlServerExtendedAuditingPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MssqlServerExtendedAuditingPolicy) validateGetStringMapAttrib
 	return nil
 }
 
+func (m *jsiiProxy_MssqlServerExtendedAuditingPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlServerExtendedAuditingPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlServerExtendedAuditingPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MssqlServerExtendedAuditingPolicy) validateOverrideLogicalIdP
 }
 
 func (m *jsiiProxy_MssqlServerExtendedAuditingPolicy) validatePutTimeoutsParameters(value *MssqlServerExtendedAuditingPolicyTimeouts) error {
+	return nil
+}
+
+func validateMssqlServerExtendedAuditingPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermPrivateDnsZoneVirtualNetworkLink) validatePutTimeo
 	return nil
 }
 
+func validateDataAzurermPrivateDnsZoneVirtualNetworkLink_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermPrivateDnsZoneVirtualNetworkLink_IsConstructParameters(x interface{}) error {
 	return nil
 }

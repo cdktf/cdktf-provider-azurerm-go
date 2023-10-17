@@ -7,6 +7,10 @@ package kustocosmosdbdataconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KustoCosmosdbDataConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoCosmosdbDataConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KustoCosmosdbDataConnection) validateGetStringMapAttributePar
 	return nil
 }
 
+func (k *jsiiProxy_KustoCosmosdbDataConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoCosmosdbDataConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KustoCosmosdbDataConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KustoCosmosdbDataConnection) validateOverrideLogicalIdParamet
 }
 
 func (k *jsiiProxy_KustoCosmosdbDataConnection) validatePutTimeoutsParameters(value *KustoCosmosdbDataConnectionTimeouts) error {
+	return nil
+}
+
+func validateKustoCosmosdbDataConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

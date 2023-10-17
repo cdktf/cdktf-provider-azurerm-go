@@ -7,6 +7,10 @@ package mobilenetworkattacheddatanetwork
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MobileNetworkAttachedDataNetwork) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MobileNetworkAttachedDataNetwork) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MobileNetworkAttachedDataNetwork) validateGetStringMapAttribu
 	return nil
 }
 
+func (m *jsiiProxy_MobileNetworkAttachedDataNetwork) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MobileNetworkAttachedDataNetwork) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MobileNetworkAttachedDataNetwork) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MobileNetworkAttachedDataNetwork) validatePutNetworkAddressPo
 }
 
 func (m *jsiiProxy_MobileNetworkAttachedDataNetwork) validatePutTimeoutsParameters(value *MobileNetworkAttachedDataNetworkTimeouts) error {
+	return nil
+}
+
+func validateMobileNetworkAttachedDataNetwork_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

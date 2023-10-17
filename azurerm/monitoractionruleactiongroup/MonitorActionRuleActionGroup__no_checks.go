@@ -7,6 +7,10 @@ package monitoractionruleactiongroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorActionRuleActionGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorActionRuleActionGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitorActionRuleActionGroup) validateGetStringMapAttributePa
 	return nil
 }
 
+func (m *jsiiProxy_MonitorActionRuleActionGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorActionRuleActionGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorActionRuleActionGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (m *jsiiProxy_MonitorActionRuleActionGroup) validatePutScopeParameters(valu
 }
 
 func (m *jsiiProxy_MonitorActionRuleActionGroup) validatePutTimeoutsParameters(value *MonitorActionRuleActionGroupTimeouts) error {
+	return nil
+}
+
+func validateMonitorActionRuleActionGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package containerregistrytokenpassword
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerRegistryTokenPassword) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerRegistryTokenPassword) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ContainerRegistryTokenPassword) validateGetStringMapAttribute
 	return nil
 }
 
+func (c *jsiiProxy_ContainerRegistryTokenPassword) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerRegistryTokenPassword) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerRegistryTokenPassword) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_ContainerRegistryTokenPassword) validatePutPassword2Parameter
 }
 
 func (c *jsiiProxy_ContainerRegistryTokenPassword) validatePutTimeoutsParameters(value *ContainerRegistryTokenPasswordTimeouts) error {
+	return nil
+}
+
+func validateContainerRegistryTokenPassword_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

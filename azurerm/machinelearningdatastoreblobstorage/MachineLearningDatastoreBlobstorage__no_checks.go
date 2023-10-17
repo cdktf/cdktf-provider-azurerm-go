@@ -7,6 +7,10 @@ package machinelearningdatastoreblobstorage
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MachineLearningDatastoreBlobstorage) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MachineLearningDatastoreBlobstorage) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MachineLearningDatastoreBlobstorage) validateGetStringMapAttr
 	return nil
 }
 
+func (m *jsiiProxy_MachineLearningDatastoreBlobstorage) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MachineLearningDatastoreBlobstorage) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MachineLearningDatastoreBlobstorage) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MachineLearningDatastoreBlobstorage) validateOverrideLogicalI
 }
 
 func (m *jsiiProxy_MachineLearningDatastoreBlobstorage) validatePutTimeoutsParameters(value *MachineLearningDatastoreBlobstorageTimeouts) error {
+	return nil
+}
+
+func validateMachineLearningDatastoreBlobstorage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

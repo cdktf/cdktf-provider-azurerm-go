@@ -7,6 +7,10 @@ package devtestvirtualnetwork
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DevTestVirtualNetwork) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevTestVirtualNetwork) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DevTestVirtualNetwork) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (d *jsiiProxy_DevTestVirtualNetwork) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevTestVirtualNetwork) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DevTestVirtualNetwork) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DevTestVirtualNetwork) validatePutSubnetParameters(value *Dev
 }
 
 func (d *jsiiProxy_DevTestVirtualNetwork) validatePutTimeoutsParameters(value *DevTestVirtualNetworkTimeouts) error {
+	return nil
+}
+
+func validateDevTestVirtualNetwork_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

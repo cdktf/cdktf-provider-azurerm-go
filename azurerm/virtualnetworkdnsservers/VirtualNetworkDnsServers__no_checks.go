@@ -7,6 +7,10 @@ package virtualnetworkdnsservers
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualNetworkDnsServers) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetworkDnsServers) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VirtualNetworkDnsServers) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (v *jsiiProxy_VirtualNetworkDnsServers) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetworkDnsServers) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualNetworkDnsServers) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (v *jsiiProxy_VirtualNetworkDnsServers) validateOverrideLogicalIdParameters
 }
 
 func (v *jsiiProxy_VirtualNetworkDnsServers) validatePutTimeoutsParameters(value *VirtualNetworkDnsServersTimeouts) error {
+	return nil
+}
+
+func validateVirtualNetworkDnsServers_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

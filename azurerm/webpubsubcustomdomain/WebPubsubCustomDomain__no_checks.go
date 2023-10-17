@@ -7,6 +7,10 @@ package webpubsubcustomdomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WebPubsubCustomDomain) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebPubsubCustomDomain) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WebPubsubCustomDomain) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (w *jsiiProxy_WebPubsubCustomDomain) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebPubsubCustomDomain) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WebPubsubCustomDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (w *jsiiProxy_WebPubsubCustomDomain) validateOverrideLogicalIdParameters(ne
 }
 
 func (w *jsiiProxy_WebPubsubCustomDomain) validatePutTimeoutsParameters(value *WebPubsubCustomDomainTimeouts) error {
+	return nil
+}
+
+func validateWebPubsubCustomDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

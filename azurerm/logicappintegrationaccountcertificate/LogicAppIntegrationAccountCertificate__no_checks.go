@@ -7,6 +7,10 @@ package logicappintegrationaccountcertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogicAppIntegrationAccountCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogicAppIntegrationAccountCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LogicAppIntegrationAccountCertificate) validateGetStringMapAt
 	return nil
 }
 
+func (l *jsiiProxy_LogicAppIntegrationAccountCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogicAppIntegrationAccountCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogicAppIntegrationAccountCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (l *jsiiProxy_LogicAppIntegrationAccountCertificate) validatePutKeyVaultKey
 }
 
 func (l *jsiiProxy_LogicAppIntegrationAccountCertificate) validatePutTimeoutsParameters(value *LogicAppIntegrationAccountCertificateTimeouts) error {
+	return nil
+}
+
+func validateLogicAppIntegrationAccountCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

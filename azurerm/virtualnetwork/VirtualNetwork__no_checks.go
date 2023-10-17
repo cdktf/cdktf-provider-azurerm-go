@@ -7,6 +7,10 @@ package virtualnetwork
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualNetwork) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetwork) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VirtualNetwork) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (v *jsiiProxy_VirtualNetwork) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetwork) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualNetwork) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (v *jsiiProxy_VirtualNetwork) validatePutSubnetParameters(value interface{}
 }
 
 func (v *jsiiProxy_VirtualNetwork) validatePutTimeoutsParameters(value *VirtualNetworkTimeouts) error {
+	return nil
+}
+
+func validateVirtualNetwork_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

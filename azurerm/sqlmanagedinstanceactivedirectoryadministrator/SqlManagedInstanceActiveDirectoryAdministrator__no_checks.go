@@ -7,6 +7,10 @@ package sqlmanagedinstanceactivedirectoryadministrator
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) validateGetSt
 	return nil
 }
 
+func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) validateOverr
 }
 
 func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) validatePutTimeoutsParameters(value *SqlManagedInstanceActiveDirectoryAdministratorTimeouts) error {
+	return nil
+}
+
+func validateSqlManagedInstanceActiveDirectoryAdministrator_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

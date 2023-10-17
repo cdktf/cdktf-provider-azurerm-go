@@ -7,6 +7,10 @@ package subscriptionpolicyexemption
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SubscriptionPolicyExemption) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SubscriptionPolicyExemption) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SubscriptionPolicyExemption) validateGetStringMapAttributePar
 	return nil
 }
 
+func (s *jsiiProxy_SubscriptionPolicyExemption) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SubscriptionPolicyExemption) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SubscriptionPolicyExemption) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SubscriptionPolicyExemption) validateOverrideLogicalIdParamet
 }
 
 func (s *jsiiProxy_SubscriptionPolicyExemption) validatePutTimeoutsParameters(value *SubscriptionPolicyExemptionTimeouts) error {
+	return nil
+}
+
+func validateSubscriptionPolicyExemption_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

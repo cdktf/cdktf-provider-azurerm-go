@@ -7,6 +7,10 @@ package siterecoveryreplicatedvm
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SiteRecoveryReplicatedVm) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryReplicatedVm) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SiteRecoveryReplicatedVm) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_SiteRecoveryReplicatedVm) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryReplicatedVm) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SiteRecoveryReplicatedVm) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (s *jsiiProxy_SiteRecoveryReplicatedVm) validatePutTimeoutsParameters(value
 }
 
 func (s *jsiiProxy_SiteRecoveryReplicatedVm) validatePutUnmanagedDiskParameters(value interface{}) error {
+	return nil
+}
+
+func validateSiteRecoveryReplicatedVm_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

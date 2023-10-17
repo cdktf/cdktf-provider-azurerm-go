@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-azurerm.botChannelsRegistration.BotChannelsRegistration",
 		reflect.TypeOf((*BotChannelsRegistration)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "cmkKeyVaultUrl", GoGetter: "CmkKeyVaultUrl"},
@@ -50,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "iconUrlInput", GoGetter: "IconUrlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isolatedNetworkEnabled", GoGetter: "IsolatedNetworkEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "isolatedNetworkEnabledInput", GoGetter: "IsolatedNetworkEnabledInput"},
@@ -58,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "microsoftAppId", GoGetter: "MicrosoftAppId"},
 			_jsii_.MemberProperty{JsiiProperty: "microsoftAppIdInput", GoGetter: "MicrosoftAppIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

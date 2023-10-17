@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermCosmosdbSqlDatabase) validatePutTimeoutsParameters
 	return nil
 }
 
+func validateDataAzurermCosmosdbSqlDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermCosmosdbSqlDatabase_IsConstructParameters(x interface{}) error {
 	return nil
 }

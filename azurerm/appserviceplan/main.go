@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-azurerm.appServicePlan.AppServicePlan",
 		reflect.TypeOf((*AppServicePlan)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "appServiceEnvironmentId", GoGetter: "AppServiceEnvironmentId"},
 			_jsii_.MemberProperty{JsiiProperty: "appServiceEnvironmentIdInput", GoGetter: "AppServiceEnvironmentIdInput"},
@@ -36,6 +37,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isXenon", GoGetter: "IsXenon"},
 			_jsii_.MemberProperty{JsiiProperty: "isXenonInput", GoGetter: "IsXenonInput"},
@@ -47,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maximumElasticWorkerCount", GoGetter: "MaximumElasticWorkerCount"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumElasticWorkerCountInput", GoGetter: "MaximumElasticWorkerCountInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumNumberOfWorkers", GoGetter: "MaximumNumberOfWorkers"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

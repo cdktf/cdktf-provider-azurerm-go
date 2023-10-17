@@ -7,6 +7,10 @@ package apimanagementcustomdomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiManagementCustomDomain) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementCustomDomain) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApiManagementCustomDomain) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (a *jsiiProxy_ApiManagementCustomDomain) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementCustomDomain) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiManagementCustomDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (a *jsiiProxy_ApiManagementCustomDomain) validatePutScmParameters(value int
 }
 
 func (a *jsiiProxy_ApiManagementCustomDomain) validatePutTimeoutsParameters(value *ApiManagementCustomDomainTimeouts) error {
+	return nil
+}
+
+func validateApiManagementCustomDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package lighthousedefinition
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LighthouseDefinition) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LighthouseDefinition) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LighthouseDefinition) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (l *jsiiProxy_LighthouseDefinition) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LighthouseDefinition) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LighthouseDefinition) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (l *jsiiProxy_LighthouseDefinition) validatePutPlanParameters(value *Lighth
 }
 
 func (l *jsiiProxy_LighthouseDefinition) validatePutTimeoutsParameters(value *LighthouseDefinitionTimeouts) error {
+	return nil
+}
+
+func validateLighthouseDefinition_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

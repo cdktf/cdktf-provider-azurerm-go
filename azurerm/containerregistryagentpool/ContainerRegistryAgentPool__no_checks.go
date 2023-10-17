@@ -7,6 +7,10 @@ package containerregistryagentpool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerRegistryAgentPool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerRegistryAgentPool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ContainerRegistryAgentPool) validateGetStringMapAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_ContainerRegistryAgentPool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerRegistryAgentPool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerRegistryAgentPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ContainerRegistryAgentPool) validateOverrideLogicalIdParamete
 }
 
 func (c *jsiiProxy_ContainerRegistryAgentPool) validatePutTimeoutsParameters(value *ContainerRegistryAgentPoolTimeouts) error {
+	return nil
+}
+
+func validateContainerRegistryAgentPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

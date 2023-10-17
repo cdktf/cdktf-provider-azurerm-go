@@ -7,6 +7,10 @@ package sourcecontroltoken
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SourceControlToken) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SourceControlToken) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SourceControlToken) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_SourceControlToken) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SourceControlToken) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SourceControlToken) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SourceControlToken) validateOverrideLogicalIdParameters(newLo
 }
 
 func (s *jsiiProxy_SourceControlToken) validatePutTimeoutsParameters(value *SourceControlTokenTimeouts) error {
+	return nil
+}
+
+func validateSourceControlToken_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

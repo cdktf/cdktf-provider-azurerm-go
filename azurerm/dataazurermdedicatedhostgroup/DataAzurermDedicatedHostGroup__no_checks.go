@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermDedicatedHostGroup) validatePutTimeoutsParameters(
 	return nil
 }
 
+func validateDataAzurermDedicatedHostGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermDedicatedHostGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

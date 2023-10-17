@@ -7,6 +7,10 @@ package hdinsighthbasecluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HdinsightHbaseCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HdinsightHbaseCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (h *jsiiProxy_HdinsightHbaseCluster) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (h *jsiiProxy_HdinsightHbaseCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HdinsightHbaseCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HdinsightHbaseCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -104,6 +116,10 @@ func (h *jsiiProxy_HdinsightHbaseCluster) validatePutStorageAccountGen2Parameter
 }
 
 func (h *jsiiProxy_HdinsightHbaseCluster) validatePutTimeoutsParameters(value *HdinsightHbaseClusterTimeouts) error {
+	return nil
+}
+
+func validateHdinsightHbaseCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

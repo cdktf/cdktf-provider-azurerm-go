@@ -7,6 +7,10 @@ package relaynamespace
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RelayNamespace) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RelayNamespace) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RelayNamespace) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (r *jsiiProxy_RelayNamespace) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RelayNamespace) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RelayNamespace) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_RelayNamespace) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (r *jsiiProxy_RelayNamespace) validatePutTimeoutsParameters(value *RelayNamespaceTimeouts) error {
+	return nil
+}
+
+func validateRelayNamespace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

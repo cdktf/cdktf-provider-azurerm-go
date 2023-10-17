@@ -5,10 +5,10 @@ package sentineldataconnectorthreatintelligence
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/sentineldataconnectorthreatintelligence/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/sentineldataconnectorthreatintelligence/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -78,6 +78,9 @@ type SentinelDataConnectorThreatIntelligence interface {
 	TerraformResourceType() *string
 	Timeouts() SentinelDataConnectorThreatIntelligenceTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -99,7 +102,12 @@ type SentinelDataConnectorThreatIntelligence interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -559,6 +567,25 @@ func (j *jsiiProxy_SentinelDataConnectorThreatIntelligence)SetTenantId(val *stri
 	)
 }
 
+// Generates CDKTF code for importing a SentinelDataConnectorThreatIntelligence resource upon running "cdktf plan <stack-name>".
+func SentinelDataConnectorThreatIntelligence_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateSentinelDataConnectorThreatIntelligence_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.sentinelDataConnectorThreatIntelligence.SentinelDataConnectorThreatIntelligence",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -641,6 +668,17 @@ func SentinelDataConnectorThreatIntelligence_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (s *jsiiProxy_SentinelDataConnectorThreatIntelligence) AddMoveTarget(moveTarget *string) {
+	if err := s.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (s *jsiiProxy_SentinelDataConnectorThreatIntelligence) AddOverride(path *string, value interface{}) {
@@ -798,6 +836,17 @@ func (s *jsiiProxy_SentinelDataConnectorThreatIntelligence) GetStringMapAttribut
 	return returns
 }
 
+func (s *jsiiProxy_SentinelDataConnectorThreatIntelligence) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := s.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (s *jsiiProxy_SentinelDataConnectorThreatIntelligence) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -812,6 +861,17 @@ func (s *jsiiProxy_SentinelDataConnectorThreatIntelligence) InterpolationForAttr
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SentinelDataConnectorThreatIntelligence) MoveTo(moveTarget *string, index interface{}) {
+	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (s *jsiiProxy_SentinelDataConnectorThreatIntelligence) OverrideLogicalId(newLogicalId *string) {

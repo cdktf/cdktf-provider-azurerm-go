@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermKubernetesNodePoolSnapshot) validatePutTimeoutsPar
 	return nil
 }
 
+func validateDataAzurermKubernetesNodePoolSnapshot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermKubernetesNodePoolSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }

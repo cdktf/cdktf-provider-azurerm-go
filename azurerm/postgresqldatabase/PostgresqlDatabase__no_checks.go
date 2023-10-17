@@ -7,6 +7,10 @@ package postgresqldatabase
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PostgresqlDatabase) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresqlDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PostgresqlDatabase) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (p *jsiiProxy_PostgresqlDatabase) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresqlDatabase) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PostgresqlDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PostgresqlDatabase) validateOverrideLogicalIdParameters(newLo
 }
 
 func (p *jsiiProxy_PostgresqlDatabase) validatePutTimeoutsParameters(value *PostgresqlDatabaseTimeouts) error {
+	return nil
+}
+
+func validatePostgresqlDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

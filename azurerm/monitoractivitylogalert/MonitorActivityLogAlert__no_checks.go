@@ -7,6 +7,10 @@ package monitoractivitylogalert
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorActivityLogAlert) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorActivityLogAlert) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitorActivityLogAlert) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_MonitorActivityLogAlert) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorActivityLogAlert) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorActivityLogAlert) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (m *jsiiProxy_MonitorActivityLogAlert) validatePutCriteriaParameters(value 
 }
 
 func (m *jsiiProxy_MonitorActivityLogAlert) validatePutTimeoutsParameters(value *MonitorActivityLogAlertTimeouts) error {
+	return nil
+}
+
+func validateMonitorActivityLogAlert_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

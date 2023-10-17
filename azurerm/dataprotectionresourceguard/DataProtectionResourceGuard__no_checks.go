@@ -7,6 +7,10 @@ package dataprotectionresourceguard
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataProtectionResourceGuard) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataProtectionResourceGuard) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataProtectionResourceGuard) validateGetStringMapAttributePar
 	return nil
 }
 
+func (d *jsiiProxy_DataProtectionResourceGuard) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataProtectionResourceGuard) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataProtectionResourceGuard) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataProtectionResourceGuard) validateOverrideLogicalIdParamet
 }
 
 func (d *jsiiProxy_DataProtectionResourceGuard) validatePutTimeoutsParameters(value *DataProtectionResourceGuardTimeouts) error {
+	return nil
+}
+
+func validateDataProtectionResourceGuard_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

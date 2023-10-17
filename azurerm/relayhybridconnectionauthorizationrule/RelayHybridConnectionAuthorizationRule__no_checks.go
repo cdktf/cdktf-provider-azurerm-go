@@ -7,6 +7,10 @@ package relayhybridconnectionauthorizationrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RelayHybridConnectionAuthorizationRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RelayHybridConnectionAuthorizationRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RelayHybridConnectionAuthorizationRule) validateGetStringMapA
 	return nil
 }
 
+func (r *jsiiProxy_RelayHybridConnectionAuthorizationRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RelayHybridConnectionAuthorizationRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RelayHybridConnectionAuthorizationRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_RelayHybridConnectionAuthorizationRule) validateOverrideLogic
 }
 
 func (r *jsiiProxy_RelayHybridConnectionAuthorizationRule) validatePutTimeoutsParameters(value *RelayHybridConnectionAuthorizationRuleTimeouts) error {
+	return nil
+}
+
+func validateRelayHybridConnectionAuthorizationRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

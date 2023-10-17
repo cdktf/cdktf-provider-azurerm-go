@@ -7,6 +7,10 @@ package mssqlmanagedinstancetransparentdataencryption
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) validateGetStr
 	return nil
 }
 
+func (m *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) validateOverri
 }
 
 func (m *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) validatePutTimeoutsParameters(value *MssqlManagedInstanceTransparentDataEncryptionTimeouts) error {
+	return nil
+}
+
+func validateMssqlManagedInstanceTransparentDataEncryption_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

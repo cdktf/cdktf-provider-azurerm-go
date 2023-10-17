@@ -7,6 +7,10 @@ package graphservicesaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GraphServicesAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GraphServicesAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GraphServicesAccount) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GraphServicesAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GraphServicesAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GraphServicesAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GraphServicesAccount) validateOverrideLogicalIdParameters(new
 }
 
 func (g *jsiiProxy_GraphServicesAccount) validatePutTimeoutsParameters(value *GraphServicesAccountTimeouts) error {
+	return nil
+}
+
+func validateGraphServicesAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

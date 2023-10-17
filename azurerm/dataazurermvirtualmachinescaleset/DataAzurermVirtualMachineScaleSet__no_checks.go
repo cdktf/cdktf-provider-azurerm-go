@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermVirtualMachineScaleSet) validatePutTimeoutsParamet
 	return nil
 }
 
+func validateDataAzurermVirtualMachineScaleSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermVirtualMachineScaleSet_IsConstructParameters(x interface{}) error {
 	return nil
 }

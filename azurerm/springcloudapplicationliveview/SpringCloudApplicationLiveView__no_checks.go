@@ -7,6 +7,10 @@ package springcloudapplicationliveview
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpringCloudApplicationLiveView) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudApplicationLiveView) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SpringCloudApplicationLiveView) validateGetStringMapAttribute
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudApplicationLiveView) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudApplicationLiveView) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudApplicationLiveView) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SpringCloudApplicationLiveView) validateOverrideLogicalIdPara
 }
 
 func (s *jsiiProxy_SpringCloudApplicationLiveView) validatePutTimeoutsParameters(value *SpringCloudApplicationLiveViewTimeouts) error {
+	return nil
+}
+
+func validateSpringCloudApplicationLiveView_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

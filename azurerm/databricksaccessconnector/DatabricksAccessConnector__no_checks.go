@@ -7,6 +7,10 @@ package databricksaccessconnector
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatabricksAccessConnector) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabricksAccessConnector) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DatabricksAccessConnector) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (d *jsiiProxy_DatabricksAccessConnector) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabricksAccessConnector) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabricksAccessConnector) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DatabricksAccessConnector) validatePutIdentityParameters(valu
 }
 
 func (d *jsiiProxy_DatabricksAccessConnector) validatePutTimeoutsParameters(value *DatabricksAccessConnectorTimeouts) error {
+	return nil
+}
+
+func validateDatabricksAccessConnector_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package monitorautoscalesetting
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorAutoscaleSetting) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAutoscaleSetting) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitorAutoscaleSetting) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_MonitorAutoscaleSetting) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAutoscaleSetting) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorAutoscaleSetting) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (m *jsiiProxy_MonitorAutoscaleSetting) validatePutProfileParameters(value i
 }
 
 func (m *jsiiProxy_MonitorAutoscaleSetting) validatePutTimeoutsParameters(value *MonitorAutoscaleSettingTimeouts) error {
+	return nil
+}
+
+func validateMonitorAutoscaleSetting_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

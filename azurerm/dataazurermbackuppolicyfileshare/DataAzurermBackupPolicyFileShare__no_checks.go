@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermBackupPolicyFileShare) validatePutTimeoutsParamete
 	return nil
 }
 
+func validateDataAzurermBackupPolicyFileShare_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermBackupPolicyFileShare_IsConstructParameters(x interface{}) error {
 	return nil
 }

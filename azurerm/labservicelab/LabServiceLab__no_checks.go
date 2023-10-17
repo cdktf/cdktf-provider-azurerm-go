@@ -7,6 +7,10 @@ package labservicelab
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LabServiceLab) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LabServiceLab) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LabServiceLab) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (l *jsiiProxy_LabServiceLab) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LabServiceLab) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LabServiceLab) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -80,6 +92,10 @@ func (l *jsiiProxy_LabServiceLab) validatePutTimeoutsParameters(value *LabServic
 }
 
 func (l *jsiiProxy_LabServiceLab) validatePutVirtualMachineParameters(value *LabServiceLabVirtualMachine) error {
+	return nil
+}
+
+func validateLabServiceLab_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

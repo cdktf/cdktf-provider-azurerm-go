@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermNetappSnapshot) validatePutTimeoutsParameters(valu
 	return nil
 }
 
+func validateDataAzurermNetappSnapshot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermNetappSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }

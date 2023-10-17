@@ -7,6 +7,10 @@ package sentinelalertrulethreatintelligence
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SentinelAlertRuleThreatIntelligence) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAlertRuleThreatIntelligence) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SentinelAlertRuleThreatIntelligence) validateGetStringMapAttr
 	return nil
 }
 
+func (s *jsiiProxy_SentinelAlertRuleThreatIntelligence) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAlertRuleThreatIntelligence) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAlertRuleThreatIntelligence) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SentinelAlertRuleThreatIntelligence) validateOverrideLogicalI
 }
 
 func (s *jsiiProxy_SentinelAlertRuleThreatIntelligence) validatePutTimeoutsParameters(value *SentinelAlertRuleThreatIntelligenceTimeouts) error {
+	return nil
+}
+
+func validateSentinelAlertRuleThreatIntelligence_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

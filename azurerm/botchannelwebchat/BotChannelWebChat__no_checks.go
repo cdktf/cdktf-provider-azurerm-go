@@ -7,6 +7,10 @@ package botchannelwebchat
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BotChannelWebChat) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelWebChat) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BotChannelWebChat) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (b *jsiiProxy_BotChannelWebChat) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelWebChat) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelWebChat) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (b *jsiiProxy_BotChannelWebChat) validatePutSiteParameters(value interface{
 }
 
 func (b *jsiiProxy_BotChannelWebChat) validatePutTimeoutsParameters(value *BotChannelWebChatTimeouts) error {
+	return nil
+}
+
+func validateBotChannelWebChat_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

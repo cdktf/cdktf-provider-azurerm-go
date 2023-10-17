@@ -7,6 +7,10 @@ package dedicatedhost
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DedicatedHost) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DedicatedHost) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DedicatedHost) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (d *jsiiProxy_DedicatedHost) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DedicatedHost) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DedicatedHost) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DedicatedHost) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (d *jsiiProxy_DedicatedHost) validatePutTimeoutsParameters(value *DedicatedHostTimeouts) error {
+	return nil
+}
+
+func validateDedicatedHost_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

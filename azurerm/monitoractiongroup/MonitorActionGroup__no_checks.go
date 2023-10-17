@@ -7,6 +7,10 @@ package monitoractiongroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorActionGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorActionGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitorActionGroup) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (m *jsiiProxy_MonitorActionGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorActionGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorActionGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -100,6 +112,10 @@ func (m *jsiiProxy_MonitorActionGroup) validatePutVoiceReceiverParameters(value 
 }
 
 func (m *jsiiProxy_MonitorActionGroup) validatePutWebhookReceiverParameters(value interface{}) error {
+	return nil
+}
+
+func validateMonitorActionGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

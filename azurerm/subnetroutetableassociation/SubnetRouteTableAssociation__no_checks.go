@@ -7,6 +7,10 @@ package subnetroutetableassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SubnetRouteTableAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SubnetRouteTableAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SubnetRouteTableAssociation) validateGetStringMapAttributePar
 	return nil
 }
 
+func (s *jsiiProxy_SubnetRouteTableAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SubnetRouteTableAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SubnetRouteTableAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SubnetRouteTableAssociation) validateOverrideLogicalIdParamet
 }
 
 func (s *jsiiProxy_SubnetRouteTableAssociation) validatePutTimeoutsParameters(value *SubnetRouteTableAssociationTimeouts) error {
+	return nil
+}
+
+func validateSubnetRouteTableAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

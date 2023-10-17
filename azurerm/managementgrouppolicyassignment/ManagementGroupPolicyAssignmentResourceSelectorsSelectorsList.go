@@ -5,9 +5,9 @@ package managementgrouppolicyassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/managementgrouppolicyassignment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/managementgrouppolicyassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

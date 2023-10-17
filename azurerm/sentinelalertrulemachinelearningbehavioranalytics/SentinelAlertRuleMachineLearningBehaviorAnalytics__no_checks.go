@@ -7,6 +7,10 @@ package sentinelalertrulemachinelearningbehavioranalytics
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) validateGe
 	return nil
 }
 
+func (s *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) validateOv
 }
 
 func (s *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) validatePutTimeoutsParameters(value *SentinelAlertRuleMachineLearningBehaviorAnalyticsTimeouts) error {
+	return nil
+}
+
+func validateSentinelAlertRuleMachineLearningBehaviorAnalytics_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

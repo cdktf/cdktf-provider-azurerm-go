@@ -7,6 +7,10 @@ package datafactoryintegrationruntimeselfhosted
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) validateGetStringMap
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) validatePutRbacAutho
 }
 
 func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) validatePutTimeoutsParameters(value *DataFactoryIntegrationRuntimeSelfHostedTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryIntegrationRuntimeSelfHosted_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermMarketplaceAgreement) validatePutTimeoutsParameter
 	return nil
 }
 
+func validateDataAzurermMarketplaceAgreement_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermMarketplaceAgreement_IsConstructParameters(x interface{}) error {
 	return nil
 }

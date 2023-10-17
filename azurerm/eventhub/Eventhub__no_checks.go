@@ -7,6 +7,10 @@ package eventhub
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Eventhub) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Eventhub) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_Eventhub) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (e *jsiiProxy_Eventhub) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Eventhub) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Eventhub) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (e *jsiiProxy_Eventhub) validatePutCaptureDescriptionParameters(value *Even
 }
 
 func (e *jsiiProxy_Eventhub) validatePutTimeoutsParameters(value *EventhubTimeouts) error {
+	return nil
+}
+
+func validateEventhub_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

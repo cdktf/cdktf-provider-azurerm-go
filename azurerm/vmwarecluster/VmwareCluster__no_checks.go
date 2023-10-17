@@ -7,6 +7,10 @@ package vmwarecluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VmwareCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VmwareCluster) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (v *jsiiProxy_VmwareCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (v *jsiiProxy_VmwareCluster) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (v *jsiiProxy_VmwareCluster) validatePutTimeoutsParameters(value *VmwareClusterTimeouts) error {
+	return nil
+}
+
+func validateVmwareCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

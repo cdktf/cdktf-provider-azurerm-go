@@ -7,6 +7,10 @@ package webapplicationfirewallpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WebApplicationFirewallPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebApplicationFirewallPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WebApplicationFirewallPolicy) validateGetStringMapAttributePa
 	return nil
 }
 
+func (w *jsiiProxy_WebApplicationFirewallPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebApplicationFirewallPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WebApplicationFirewallPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (w *jsiiProxy_WebApplicationFirewallPolicy) validatePutPolicySettingsParame
 }
 
 func (w *jsiiProxy_WebApplicationFirewallPolicy) validatePutTimeoutsParameters(value *WebApplicationFirewallPolicyTimeouts) error {
+	return nil
+}
+
+func validateWebApplicationFirewallPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

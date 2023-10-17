@@ -7,6 +7,10 @@ package sharedimageversion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SharedImageVersion) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SharedImageVersion) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SharedImageVersion) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_SharedImageVersion) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SharedImageVersion) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SharedImageVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SharedImageVersion) validatePutTargetRegionParameters(value i
 }
 
 func (s *jsiiProxy_SharedImageVersion) validatePutTimeoutsParameters(value *SharedImageVersionTimeouts) error {
+	return nil
+}
+
+func validateSharedImageVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

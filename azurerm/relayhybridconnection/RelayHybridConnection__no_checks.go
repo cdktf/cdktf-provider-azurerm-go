@@ -7,6 +7,10 @@ package relayhybridconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RelayHybridConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RelayHybridConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RelayHybridConnection) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (r *jsiiProxy_RelayHybridConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RelayHybridConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RelayHybridConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_RelayHybridConnection) validateOverrideLogicalIdParameters(ne
 }
 
 func (r *jsiiProxy_RelayHybridConnection) validatePutTimeoutsParameters(value *RelayHybridConnectionTimeouts) error {
+	return nil
+}
+
+func validateRelayHybridConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

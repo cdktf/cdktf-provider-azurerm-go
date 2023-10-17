@@ -7,6 +7,10 @@ package datafactorylinkedservicekusto
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryLinkedServiceKusto) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceKusto) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceKusto) validateGetStringMapAttributeP
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceKusto) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceKusto) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceKusto) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataFactoryLinkedServiceKusto) validateOverrideLogicalIdParam
 }
 
 func (d *jsiiProxy_DataFactoryLinkedServiceKusto) validatePutTimeoutsParameters(value *DataFactoryLinkedServiceKustoTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceKusto_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

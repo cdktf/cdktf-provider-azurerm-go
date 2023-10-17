@@ -7,6 +7,10 @@ package portaltenantconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PortalTenantConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PortalTenantConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PortalTenantConfiguration) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (p *jsiiProxy_PortalTenantConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PortalTenantConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PortalTenantConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PortalTenantConfiguration) validateOverrideLogicalIdParameter
 }
 
 func (p *jsiiProxy_PortalTenantConfiguration) validatePutTimeoutsParameters(value *PortalTenantConfigurationTimeouts) error {
+	return nil
+}
+
+func validatePortalTenantConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

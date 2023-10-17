@@ -7,6 +7,10 @@ package automationdscconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutomationDscConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationDscConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AutomationDscConfiguration) validateGetStringMapAttributePara
 	return nil
 }
 
+func (a *jsiiProxy_AutomationDscConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationDscConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutomationDscConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AutomationDscConfiguration) validateOverrideLogicalIdParamete
 }
 
 func (a *jsiiProxy_AutomationDscConfiguration) validatePutTimeoutsParameters(value *AutomationDscConfigurationTimeouts) error {
+	return nil
+}
+
+func validateAutomationDscConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

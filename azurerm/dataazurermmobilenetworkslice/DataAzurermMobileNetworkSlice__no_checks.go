@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermMobileNetworkSlice) validatePutTimeoutsParameters(
 	return nil
 }
 
+func validateDataAzurermMobileNetworkSlice_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermMobileNetworkSlice_IsConstructParameters(x interface{}) error {
 	return nil
 }

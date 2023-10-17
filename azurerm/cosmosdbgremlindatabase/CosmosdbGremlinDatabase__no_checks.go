@@ -7,6 +7,10 @@ package cosmosdbgremlindatabase
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CosmosdbGremlinDatabase) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbGremlinDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CosmosdbGremlinDatabase) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbGremlinDatabase) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbGremlinDatabase) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbGremlinDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CosmosdbGremlinDatabase) validatePutAutoscaleSettingsParamete
 }
 
 func (c *jsiiProxy_CosmosdbGremlinDatabase) validatePutTimeoutsParameters(value *CosmosdbGremlinDatabaseTimeouts) error {
+	return nil
+}
+
+func validateCosmosdbGremlinDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

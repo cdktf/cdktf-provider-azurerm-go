@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermApiManagementGatewayHostNameConfiguration) validat
 	return nil
 }
 
+func validateDataAzurermApiManagementGatewayHostNameConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermApiManagementGatewayHostNameConfiguration_IsConstructParameters(x interface{}) error {
 	return nil
 }

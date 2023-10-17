@@ -7,6 +7,10 @@ package trafficmanagerazureendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TrafficManagerAzureEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TrafficManagerAzureEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (t *jsiiProxy_TrafficManagerAzureEndpoint) validateGetStringMapAttributePar
 	return nil
 }
 
+func (t *jsiiProxy_TrafficManagerAzureEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TrafficManagerAzureEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TrafficManagerAzureEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (t *jsiiProxy_TrafficManagerAzureEndpoint) validatePutSubnetParameters(valu
 }
 
 func (t *jsiiProxy_TrafficManagerAzureEndpoint) validatePutTimeoutsParameters(value *TrafficManagerAzureEndpointTimeouts) error {
+	return nil
+}
+
+func validateTrafficManagerAzureEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

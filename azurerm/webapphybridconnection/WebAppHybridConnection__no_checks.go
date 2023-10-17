@@ -7,6 +7,10 @@ package webapphybridconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WebAppHybridConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebAppHybridConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WebAppHybridConnection) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (w *jsiiProxy_WebAppHybridConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebAppHybridConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WebAppHybridConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (w *jsiiProxy_WebAppHybridConnection) validateOverrideLogicalIdParameters(n
 }
 
 func (w *jsiiProxy_WebAppHybridConnection) validatePutTimeoutsParameters(value *WebAppHybridConnectionTimeouts) error {
+	return nil
+}
+
+func validateWebAppHybridConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

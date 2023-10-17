@@ -7,6 +7,10 @@ package sentinelwatchlist
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SentinelWatchlist) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelWatchlist) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SentinelWatchlist) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_SentinelWatchlist) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelWatchlist) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelWatchlist) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SentinelWatchlist) validateOverrideLogicalIdParameters(newLog
 }
 
 func (s *jsiiProxy_SentinelWatchlist) validatePutTimeoutsParameters(value *SentinelWatchlistTimeouts) error {
+	return nil
+}
+
+func validateSentinelWatchlist_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

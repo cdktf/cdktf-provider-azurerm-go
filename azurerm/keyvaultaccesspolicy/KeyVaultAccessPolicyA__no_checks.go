@@ -7,6 +7,10 @@ package keyvaultaccesspolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KeyVaultAccessPolicyA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultAccessPolicyA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KeyVaultAccessPolicyA) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (k *jsiiProxy_KeyVaultAccessPolicyA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultAccessPolicyA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KeyVaultAccessPolicyA) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KeyVaultAccessPolicyA) validateOverrideLogicalIdParameters(ne
 }
 
 func (k *jsiiProxy_KeyVaultAccessPolicyA) validatePutTimeoutsParameters(value *KeyVaultAccessPolicyTimeouts) error {
+	return nil
+}
+
+func validateKeyVaultAccessPolicyA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

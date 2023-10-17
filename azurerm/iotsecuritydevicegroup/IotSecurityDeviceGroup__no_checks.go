@@ -7,6 +7,10 @@ package iotsecuritydevicegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotSecurityDeviceGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotSecurityDeviceGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IotSecurityDeviceGroup) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (i *jsiiProxy_IotSecurityDeviceGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotSecurityDeviceGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotSecurityDeviceGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (i *jsiiProxy_IotSecurityDeviceGroup) validatePutRangeRuleParameters(value 
 }
 
 func (i *jsiiProxy_IotSecurityDeviceGroup) validatePutTimeoutsParameters(value *IotSecurityDeviceGroupTimeouts) error {
+	return nil
+}
+
+func validateIotSecurityDeviceGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

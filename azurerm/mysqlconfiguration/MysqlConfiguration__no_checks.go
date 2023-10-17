@@ -7,6 +7,10 @@ package mysqlconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MysqlConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MysqlConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MysqlConfiguration) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (m *jsiiProxy_MysqlConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MysqlConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MysqlConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MysqlConfiguration) validateOverrideLogicalIdParameters(newLo
 }
 
 func (m *jsiiProxy_MysqlConfiguration) validatePutTimeoutsParameters(value *MysqlConfigurationTimeouts) error {
+	return nil
+}
+
+func validateMysqlConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -5,10 +5,10 @@ package dataazurermcosmosdbsqldatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/dataazurermcosmosdbsqldatabase/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/dataazurermcosmosdbsqldatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -493,6 +493,25 @@ func (j *jsiiProxy_DataAzurermCosmosdbSqlDatabase)SetResourceGroupName(val *stri
 		"resourceGroupName",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataAzurermCosmosdbSqlDatabase resource upon running "cdktf plan <stack-name>".
+func DataAzurermCosmosdbSqlDatabase_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAzurermCosmosdbSqlDatabase_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataAzurermCosmosdbSqlDatabase.DataAzurermCosmosdbSqlDatabase",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

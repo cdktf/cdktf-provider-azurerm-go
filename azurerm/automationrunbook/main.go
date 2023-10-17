@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-azurerm.automationRunbook.AutomationRunbook",
 		reflect.TypeOf((*AutomationRunbook)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "automationAccountName", GoGetter: "AutomationAccountName"},
 			_jsii_.MemberProperty{JsiiProperty: "automationAccountNameInput", GoGetter: "AutomationAccountNameInput"},
@@ -42,6 +43,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "jobSchedule", GoGetter: "JobSchedule"},
 			_jsii_.MemberProperty{JsiiProperty: "jobScheduleInput", GoGetter: "JobScheduleInput"},
@@ -54,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "logProgressInput", GoGetter: "LogProgressInput"},
 			_jsii_.MemberProperty{JsiiProperty: "logVerbose", GoGetter: "LogVerbose"},
 			_jsii_.MemberProperty{JsiiProperty: "logVerboseInput", GoGetter: "LogVerboseInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

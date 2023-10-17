@@ -7,6 +7,10 @@ package mysqlflexibleserverfirewallrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MysqlFlexibleServerFirewallRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MysqlFlexibleServerFirewallRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MysqlFlexibleServerFirewallRule) validateGetStringMapAttribut
 	return nil
 }
 
+func (m *jsiiProxy_MysqlFlexibleServerFirewallRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MysqlFlexibleServerFirewallRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MysqlFlexibleServerFirewallRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MysqlFlexibleServerFirewallRule) validateOverrideLogicalIdPar
 }
 
 func (m *jsiiProxy_MysqlFlexibleServerFirewallRule) validatePutTimeoutsParameters(value *MysqlFlexibleServerFirewallRuleTimeouts) error {
+	return nil
+}
+
+func validateMysqlFlexibleServerFirewallRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

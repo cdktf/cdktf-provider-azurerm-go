@@ -7,6 +7,10 @@ package mariadbserver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MariadbServer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MariadbServer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MariadbServer) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (m *jsiiProxy_MariadbServer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MariadbServer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MariadbServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MariadbServer) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (m *jsiiProxy_MariadbServer) validatePutTimeoutsParameters(value *MariadbServerTimeouts) error {
+	return nil
+}
+
+func validateMariadbServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

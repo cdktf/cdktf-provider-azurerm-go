@@ -7,6 +7,10 @@ package devtestwindowsvirtualmachine
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DevTestWindowsVirtualMachine) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevTestWindowsVirtualMachine) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DevTestWindowsVirtualMachine) validateGetStringMapAttributePa
 	return nil
 }
 
+func (d *jsiiProxy_DevTestWindowsVirtualMachine) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevTestWindowsVirtualMachine) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DevTestWindowsVirtualMachine) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (d *jsiiProxy_DevTestWindowsVirtualMachine) validatePutInboundNatRuleParame
 }
 
 func (d *jsiiProxy_DevTestWindowsVirtualMachine) validatePutTimeoutsParameters(value *DevTestWindowsVirtualMachineTimeouts) error {
+	return nil
+}
+
+func validateDevTestWindowsVirtualMachine_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

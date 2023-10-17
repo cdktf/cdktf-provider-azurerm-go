@@ -7,6 +7,10 @@ package windowswebappslot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WindowsWebAppSlot) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsWebAppSlot) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WindowsWebAppSlot) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (w *jsiiProxy_WindowsWebAppSlot) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsWebAppSlot) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WindowsWebAppSlot) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -88,6 +100,10 @@ func (w *jsiiProxy_WindowsWebAppSlot) validatePutStorageAccountParameters(value 
 }
 
 func (w *jsiiProxy_WindowsWebAppSlot) validatePutTimeoutsParameters(value *WindowsWebAppSlotTimeouts) error {
+	return nil
+}
+
+func validateWindowsWebAppSlot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

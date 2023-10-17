@@ -7,6 +7,10 @@ package netappsnapshot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetappSnapshot) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappSnapshot) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetappSnapshot) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (n *jsiiProxy_NetappSnapshot) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappSnapshot) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappSnapshot) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetappSnapshot) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (n *jsiiProxy_NetappSnapshot) validatePutTimeoutsParameters(value *NetappSnapshotTimeouts) error {
+	return nil
+}
+
+func validateNetappSnapshot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

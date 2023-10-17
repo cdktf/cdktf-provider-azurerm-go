@@ -7,6 +7,10 @@ package eventgriddomaintopic
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventgridDomainTopic) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventgridDomainTopic) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EventgridDomainTopic) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_EventgridDomainTopic) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventgridDomainTopic) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventgridDomainTopic) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_EventgridDomainTopic) validateOverrideLogicalIdParameters(new
 }
 
 func (e *jsiiProxy_EventgridDomainTopic) validatePutTimeoutsParameters(value *EventgridDomainTopicTimeouts) error {
+	return nil
+}
+
+func validateEventgridDomainTopic_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

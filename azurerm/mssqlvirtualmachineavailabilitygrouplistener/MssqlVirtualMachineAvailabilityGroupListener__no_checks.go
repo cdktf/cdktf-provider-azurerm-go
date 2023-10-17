@@ -7,6 +7,10 @@ package mssqlvirtualmachineavailabilitygrouplistener
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListener) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListener) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListener) validateGetStri
 	return nil
 }
 
+func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListener) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListener) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListener) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListener) validatePutRepl
 }
 
 func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListener) validatePutTimeoutsParameters(value *MssqlVirtualMachineAvailabilityGroupListenerTimeouts) error {
+	return nil
+}
+
+func validateMssqlVirtualMachineAvailabilityGroupListener_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

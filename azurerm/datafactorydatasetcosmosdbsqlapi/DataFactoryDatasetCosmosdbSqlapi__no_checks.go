@@ -7,6 +7,10 @@ package datafactorydatasetcosmosdbsqlapi
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryDatasetCosmosdbSqlapi) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetCosmosdbSqlapi) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryDatasetCosmosdbSqlapi) validateGetStringMapAttribu
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryDatasetCosmosdbSqlapi) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetCosmosdbSqlapi) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryDatasetCosmosdbSqlapi) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataFactoryDatasetCosmosdbSqlapi) validatePutSchemaColumnPara
 }
 
 func (d *jsiiProxy_DataFactoryDatasetCosmosdbSqlapi) validatePutTimeoutsParameters(value *DataFactoryDatasetCosmosdbSqlapiTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryDatasetCosmosdbSqlapi_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

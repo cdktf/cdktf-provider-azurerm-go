@@ -7,6 +7,10 @@ package privatednsresolverforwardingrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrivateDnsResolverForwardingRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateDnsResolverForwardingRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PrivateDnsResolverForwardingRule) validateGetStringMapAttribu
 	return nil
 }
 
+func (p *jsiiProxy_PrivateDnsResolverForwardingRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateDnsResolverForwardingRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivateDnsResolverForwardingRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (p *jsiiProxy_PrivateDnsResolverForwardingRule) validatePutTargetDnsServers
 }
 
 func (p *jsiiProxy_PrivateDnsResolverForwardingRule) validatePutTimeoutsParameters(value *PrivateDnsResolverForwardingRuleTimeouts) error {
+	return nil
+}
+
+func validatePrivateDnsResolverForwardingRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

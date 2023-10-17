@@ -7,6 +7,10 @@ package vpnsite
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpnSite) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnSite) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpnSite) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (v *jsiiProxy_VpnSite) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnSite) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpnSite) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (v *jsiiProxy_VpnSite) validatePutO365PolicyParameters(value *VpnSiteO365Po
 }
 
 func (v *jsiiProxy_VpnSite) validatePutTimeoutsParameters(value *VpnSiteTimeouts) error {
+	return nil
+}
+
+func validateVpnSite_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

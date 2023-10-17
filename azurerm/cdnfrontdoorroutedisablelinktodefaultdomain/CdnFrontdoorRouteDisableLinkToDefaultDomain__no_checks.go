@@ -7,6 +7,10 @@ package cdnfrontdoorroutedisablelinktodefaultdomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CdnFrontdoorRouteDisableLinkToDefaultDomain) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorRouteDisableLinkToDefaultDomain) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CdnFrontdoorRouteDisableLinkToDefaultDomain) validateGetStrin
 	return nil
 }
 
+func (c *jsiiProxy_CdnFrontdoorRouteDisableLinkToDefaultDomain) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorRouteDisableLinkToDefaultDomain) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CdnFrontdoorRouteDisableLinkToDefaultDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CdnFrontdoorRouteDisableLinkToDefaultDomain) validateOverride
 }
 
 func (c *jsiiProxy_CdnFrontdoorRouteDisableLinkToDefaultDomain) validatePutTimeoutsParameters(value *CdnFrontdoorRouteDisableLinkToDefaultDomainTimeouts) error {
+	return nil
+}
+
+func validateCdnFrontdoorRouteDisableLinkToDefaultDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

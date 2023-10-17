@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermNetworkManagerNetworkGroup) validatePutTimeoutsPar
 	return nil
 }
 
+func validateDataAzurermNetworkManagerNetworkGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermNetworkManagerNetworkGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

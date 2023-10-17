@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermHealthcareMedtechService) validatePutTimeoutsParam
 	return nil
 }
 
+func validateDataAzurermHealthcareMedtechService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermHealthcareMedtechService_IsConstructParameters(x interface{}) error {
 	return nil
 }

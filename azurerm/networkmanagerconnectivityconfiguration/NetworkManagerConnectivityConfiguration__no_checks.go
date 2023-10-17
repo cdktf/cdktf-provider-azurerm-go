@@ -7,6 +7,10 @@ package networkmanagerconnectivityconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkManagerConnectivityConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkManagerConnectivityConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkManagerConnectivityConfiguration) validateGetStringMap
 	return nil
 }
 
+func (n *jsiiProxy_NetworkManagerConnectivityConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkManagerConnectivityConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkManagerConnectivityConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (n *jsiiProxy_NetworkManagerConnectivityConfiguration) validatePutHubParame
 }
 
 func (n *jsiiProxy_NetworkManagerConnectivityConfiguration) validatePutTimeoutsParameters(value *NetworkManagerConnectivityConfigurationTimeouts) error {
+	return nil
+}
+
+func validateNetworkManagerConnectivityConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

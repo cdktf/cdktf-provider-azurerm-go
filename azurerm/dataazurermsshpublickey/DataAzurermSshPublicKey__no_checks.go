@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermSshPublicKey) validatePutTimeoutsParameters(value 
 	return nil
 }
 
+func validateDataAzurermSshPublicKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermSshPublicKey_IsConstructParameters(x interface{}) error {
 	return nil
 }

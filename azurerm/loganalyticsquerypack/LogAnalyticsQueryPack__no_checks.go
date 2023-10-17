@@ -7,6 +7,10 @@ package loganalyticsquerypack
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogAnalyticsQueryPack) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsQueryPack) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LogAnalyticsQueryPack) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (l *jsiiProxy_LogAnalyticsQueryPack) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsQueryPack) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogAnalyticsQueryPack) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (l *jsiiProxy_LogAnalyticsQueryPack) validateOverrideLogicalIdParameters(ne
 }
 
 func (l *jsiiProxy_LogAnalyticsQueryPack) validatePutTimeoutsParameters(value *LogAnalyticsQueryPackTimeouts) error {
+	return nil
+}
+
+func validateLogAnalyticsQueryPack_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

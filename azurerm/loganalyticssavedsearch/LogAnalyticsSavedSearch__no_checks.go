@@ -7,6 +7,10 @@ package loganalyticssavedsearch
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogAnalyticsSavedSearch) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsSavedSearch) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LogAnalyticsSavedSearch) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (l *jsiiProxy_LogAnalyticsSavedSearch) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsSavedSearch) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogAnalyticsSavedSearch) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (l *jsiiProxy_LogAnalyticsSavedSearch) validateOverrideLogicalIdParameters(
 }
 
 func (l *jsiiProxy_LogAnalyticsSavedSearch) validatePutTimeoutsParameters(value *LogAnalyticsSavedSearchTimeouts) error {
+	return nil
+}
+
+func validateLogAnalyticsSavedSearch_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package cognitiveaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CognitiveAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitiveAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CognitiveAccount) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (c *jsiiProxy_CognitiveAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitiveAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitiveAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (c *jsiiProxy_CognitiveAccount) validatePutStorageParameters(value interfac
 }
 
 func (c *jsiiProxy_CognitiveAccount) validatePutTimeoutsParameters(value *CognitiveAccountTimeouts) error {
+	return nil
+}
+
+func validateCognitiveAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

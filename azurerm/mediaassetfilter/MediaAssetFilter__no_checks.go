@@ -7,6 +7,10 @@ package mediaassetfilter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MediaAssetFilter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaAssetFilter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MediaAssetFilter) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (m *jsiiProxy_MediaAssetFilter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaAssetFilter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MediaAssetFilter) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (m *jsiiProxy_MediaAssetFilter) validatePutTimeoutsParameters(value *MediaA
 }
 
 func (m *jsiiProxy_MediaAssetFilter) validatePutTrackSelectionParameters(value interface{}) error {
+	return nil
+}
+
+func validateMediaAssetFilter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package lbnatpool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbNatPool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbNatPool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LbNatPool) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (l *jsiiProxy_LbNatPool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbNatPool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbNatPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (l *jsiiProxy_LbNatPool) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (l *jsiiProxy_LbNatPool) validatePutTimeoutsParameters(value *LbNatPoolTimeouts) error {
+	return nil
+}
+
+func validateLbNatPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

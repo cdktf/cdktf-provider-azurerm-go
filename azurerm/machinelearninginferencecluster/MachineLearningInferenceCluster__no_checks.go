@@ -7,6 +7,10 @@ package machinelearninginferencecluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MachineLearningInferenceCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MachineLearningInferenceCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MachineLearningInferenceCluster) validateGetStringMapAttribut
 	return nil
 }
 
+func (m *jsiiProxy_MachineLearningInferenceCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MachineLearningInferenceCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MachineLearningInferenceCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (m *jsiiProxy_MachineLearningInferenceCluster) validatePutSslParameters(val
 }
 
 func (m *jsiiProxy_MachineLearningInferenceCluster) validatePutTimeoutsParameters(value *MachineLearningInferenceClusterTimeouts) error {
+	return nil
+}
+
+func validateMachineLearningInferenceCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

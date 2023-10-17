@@ -7,6 +7,10 @@ package kustocluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KustoCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KustoCluster) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (k *jsiiProxy_KustoCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KustoCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (k *jsiiProxy_KustoCluster) validatePutTimeoutsParameters(value *KustoClust
 }
 
 func (k *jsiiProxy_KustoCluster) validatePutVirtualNetworkConfigurationParameters(value *KustoClusterVirtualNetworkConfiguration) error {
+	return nil
+}
+
+func validateKustoCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package virtualmachinepacketcapture
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualMachinePacketCapture) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualMachinePacketCapture) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VirtualMachinePacketCapture) validateGetStringMapAttributePar
 	return nil
 }
 
+func (v *jsiiProxy_VirtualMachinePacketCapture) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualMachinePacketCapture) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualMachinePacketCapture) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (v *jsiiProxy_VirtualMachinePacketCapture) validatePutStorageLocationParame
 }
 
 func (v *jsiiProxy_VirtualMachinePacketCapture) validatePutTimeoutsParameters(value *VirtualMachinePacketCaptureTimeouts) error {
+	return nil
+}
+
+func validateVirtualMachinePacketCapture_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

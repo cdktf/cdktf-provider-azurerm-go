@@ -7,6 +7,10 @@ package appservicevirtualnetworkswiftconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppServiceVirtualNetworkSwiftConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppServiceVirtualNetworkSwiftConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppServiceVirtualNetworkSwiftConnection) validateGetStringMap
 	return nil
 }
 
+func (a *jsiiProxy_AppServiceVirtualNetworkSwiftConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppServiceVirtualNetworkSwiftConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppServiceVirtualNetworkSwiftConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AppServiceVirtualNetworkSwiftConnection) validateOverrideLogi
 }
 
 func (a *jsiiProxy_AppServiceVirtualNetworkSwiftConnection) validatePutTimeoutsParameters(value *AppServiceVirtualNetworkSwiftConnectionTimeouts) error {
+	return nil
+}
+
+func validateAppServiceVirtualNetworkSwiftConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

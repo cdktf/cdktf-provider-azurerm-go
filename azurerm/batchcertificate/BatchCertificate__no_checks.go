@@ -7,6 +7,10 @@ package batchcertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BatchCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BatchCertificate) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (b *jsiiProxy_BatchCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BatchCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BatchCertificate) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (b *jsiiProxy_BatchCertificate) validatePutTimeoutsParameters(value *BatchCertificateTimeouts) error {
+	return nil
+}
+
+func validateBatchCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

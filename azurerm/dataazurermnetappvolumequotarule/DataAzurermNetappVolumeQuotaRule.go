@@ -5,10 +5,10 @@ package dataazurermnetappvolumequotarule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/dataazurermnetappvolumequotarule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/dataazurermnetappvolumequotarule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -481,6 +481,25 @@ func (j *jsiiProxy_DataAzurermNetappVolumeQuotaRule)SetVolumeId(val *string) {
 		"volumeId",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataAzurermNetappVolumeQuotaRule resource upon running "cdktf plan <stack-name>".
+func DataAzurermNetappVolumeQuotaRule_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAzurermNetappVolumeQuotaRule_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataAzurermNetappVolumeQuotaRule.DataAzurermNetappVolumeQuotaRule",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

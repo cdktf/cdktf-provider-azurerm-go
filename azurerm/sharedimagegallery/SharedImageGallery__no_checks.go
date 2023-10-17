@@ -7,6 +7,10 @@ package sharedimagegallery
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SharedImageGallery) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SharedImageGallery) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SharedImageGallery) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_SharedImageGallery) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SharedImageGallery) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SharedImageGallery) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SharedImageGallery) validatePutSharingParameters(value *Share
 }
 
 func (s *jsiiProxy_SharedImageGallery) validatePutTimeoutsParameters(value *SharedImageGalleryTimeouts) error {
+	return nil
+}
+
+func validateSharedImageGallery_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

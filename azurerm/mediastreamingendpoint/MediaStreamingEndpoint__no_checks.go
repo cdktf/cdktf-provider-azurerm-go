@@ -7,6 +7,10 @@ package mediastreamingendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MediaStreamingEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaStreamingEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MediaStreamingEndpoint) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (m *jsiiProxy_MediaStreamingEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaStreamingEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MediaStreamingEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (m *jsiiProxy_MediaStreamingEndpoint) validatePutCrossSiteAccessPolicyParam
 }
 
 func (m *jsiiProxy_MediaStreamingEndpoint) validatePutTimeoutsParameters(value *MediaStreamingEndpointTimeouts) error {
+	return nil
+}
+
+func validateMediaStreamingEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

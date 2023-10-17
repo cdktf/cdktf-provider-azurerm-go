@@ -7,6 +7,10 @@ package dashboardgrafana
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DashboardGrafana) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardGrafana) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DashboardGrafana) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (d *jsiiProxy_DashboardGrafana) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardGrafana) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DashboardGrafana) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (d *jsiiProxy_DashboardGrafana) validatePutIdentityParameters(value *Dashbo
 }
 
 func (d *jsiiProxy_DashboardGrafana) validatePutTimeoutsParameters(value *DashboardGrafanaTimeouts) error {
+	return nil
+}
+
+func validateDashboardGrafana_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package keyvaultcertificatecontacts
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KeyVaultCertificateContacts) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultCertificateContacts) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KeyVaultCertificateContacts) validateGetStringMapAttributePar
 	return nil
 }
 
+func (k *jsiiProxy_KeyVaultCertificateContacts) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultCertificateContacts) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KeyVaultCertificateContacts) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (k *jsiiProxy_KeyVaultCertificateContacts) validatePutContactParameters(val
 }
 
 func (k *jsiiProxy_KeyVaultCertificateContacts) validatePutTimeoutsParameters(value *KeyVaultCertificateContactsTimeouts) error {
+	return nil
+}
+
+func validateKeyVaultCertificateContacts_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

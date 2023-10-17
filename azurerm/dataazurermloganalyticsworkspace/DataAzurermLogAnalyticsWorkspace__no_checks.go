@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermLogAnalyticsWorkspace) validatePutTimeoutsParamete
 	return nil
 }
 
+func validateDataAzurermLogAnalyticsWorkspace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermLogAnalyticsWorkspace_IsConstructParameters(x interface{}) error {
 	return nil
 }

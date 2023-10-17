@@ -7,6 +7,10 @@ package applicationgateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApplicationGateway) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationGateway) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApplicationGateway) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_ApplicationGateway) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationGateway) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -152,6 +164,10 @@ func (a *jsiiProxy_ApplicationGateway) validatePutUrlPathMapParameters(value int
 }
 
 func (a *jsiiProxy_ApplicationGateway) validatePutWafConfigurationParameters(value *ApplicationGatewayWafConfiguration) error {
+	return nil
+}
+
+func validateApplicationGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

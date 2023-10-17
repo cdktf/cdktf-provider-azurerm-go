@@ -7,6 +7,10 @@ package botchannelalexa
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BotChannelAlexa) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelAlexa) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BotChannelAlexa) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (b *jsiiProxy_BotChannelAlexa) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelAlexa) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelAlexa) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BotChannelAlexa) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (b *jsiiProxy_BotChannelAlexa) validatePutTimeoutsParameters(value *BotChannelAlexaTimeouts) error {
+	return nil
+}
+
+func validateBotChannelAlexa_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

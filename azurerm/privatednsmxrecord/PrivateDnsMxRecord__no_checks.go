@@ -7,6 +7,10 @@ package privatednsmxrecord
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrivateDnsMxRecord) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateDnsMxRecord) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PrivateDnsMxRecord) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (p *jsiiProxy_PrivateDnsMxRecord) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateDnsMxRecord) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivateDnsMxRecord) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (p *jsiiProxy_PrivateDnsMxRecord) validatePutRecordParameters(value interfa
 }
 
 func (p *jsiiProxy_PrivateDnsMxRecord) validatePutTimeoutsParameters(value *PrivateDnsMxRecordTimeouts) error {
+	return nil
+}
+
+func validatePrivateDnsMxRecord_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

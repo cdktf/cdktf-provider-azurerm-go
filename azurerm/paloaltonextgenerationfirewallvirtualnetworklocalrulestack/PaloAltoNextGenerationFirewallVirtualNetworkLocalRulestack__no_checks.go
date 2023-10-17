@@ -7,6 +7,10 @@ package paloaltonextgenerationfirewallvirtualnetworklocalrulestack
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) v
 	return nil
 }
 
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) v
 }
 
 func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) validatePutTimeoutsParameters(value *PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackTimeouts) error {
+	return nil
+}
+
+func validatePaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package mssqlmanageddatabase
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MssqlManagedDatabase) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlManagedDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MssqlManagedDatabase) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (m *jsiiProxy_MssqlManagedDatabase) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlManagedDatabase) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlManagedDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MssqlManagedDatabase) validatePutLongTermRetentionPolicyParam
 }
 
 func (m *jsiiProxy_MssqlManagedDatabase) validatePutTimeoutsParameters(value *MssqlManagedDatabaseTimeouts) error {
+	return nil
+}
+
+func validateMssqlManagedDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

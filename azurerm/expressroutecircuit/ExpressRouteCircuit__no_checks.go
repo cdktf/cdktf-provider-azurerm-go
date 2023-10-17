@@ -7,6 +7,10 @@ package expressroutecircuit
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ExpressRouteCircuit) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExpressRouteCircuit) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_ExpressRouteCircuit) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (e *jsiiProxy_ExpressRouteCircuit) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExpressRouteCircuit) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ExpressRouteCircuit) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (e *jsiiProxy_ExpressRouteCircuit) validatePutSkuParameters(value *ExpressR
 }
 
 func (e *jsiiProxy_ExpressRouteCircuit) validatePutTimeoutsParameters(value *ExpressRouteCircuitTimeouts) error {
+	return nil
+}
+
+func validateExpressRouteCircuit_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package dedicatedhardwaresecuritymodule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DedicatedHardwareSecurityModule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DedicatedHardwareSecurityModule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DedicatedHardwareSecurityModule) validateGetStringMapAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DedicatedHardwareSecurityModule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DedicatedHardwareSecurityModule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DedicatedHardwareSecurityModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (d *jsiiProxy_DedicatedHardwareSecurityModule) validatePutNetworkProfilePar
 }
 
 func (d *jsiiProxy_DedicatedHardwareSecurityModule) validatePutTimeoutsParameters(value *DedicatedHardwareSecurityModuleTimeouts) error {
+	return nil
+}
+
+func validateDedicatedHardwareSecurityModule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermLocalNetworkGateway) validatePutTimeoutsParameters
 	return nil
 }
 
+func validateDataAzurermLocalNetworkGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermLocalNetworkGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }

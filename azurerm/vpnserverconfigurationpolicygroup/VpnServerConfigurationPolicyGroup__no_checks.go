@@ -7,6 +7,10 @@ package vpnserverconfigurationpolicygroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpnServerConfigurationPolicyGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnServerConfigurationPolicyGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpnServerConfigurationPolicyGroup) validateGetStringMapAttrib
 	return nil
 }
 
+func (v *jsiiProxy_VpnServerConfigurationPolicyGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnServerConfigurationPolicyGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpnServerConfigurationPolicyGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (v *jsiiProxy_VpnServerConfigurationPolicyGroup) validatePutPolicyParameter
 }
 
 func (v *jsiiProxy_VpnServerConfigurationPolicyGroup) validatePutTimeoutsParameters(value *VpnServerConfigurationPolicyGroupTimeouts) error {
+	return nil
+}
+
+func validateVpnServerConfigurationPolicyGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

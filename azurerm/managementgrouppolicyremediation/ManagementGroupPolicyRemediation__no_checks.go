@@ -7,6 +7,10 @@ package managementgrouppolicyremediation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_ManagementGroupPolicyRemediation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagementGroupPolicyRemediation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_ManagementGroupPolicyRemediation) validateGetStringMapAttribu
 	return nil
 }
 
+func (m *jsiiProxy_ManagementGroupPolicyRemediation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagementGroupPolicyRemediation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagementGroupPolicyRemediation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_ManagementGroupPolicyRemediation) validateOverrideLogicalIdPa
 }
 
 func (m *jsiiProxy_ManagementGroupPolicyRemediation) validatePutTimeoutsParameters(value *ManagementGroupPolicyRemediationTimeouts) error {
+	return nil
+}
+
+func validateManagementGroupPolicyRemediation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

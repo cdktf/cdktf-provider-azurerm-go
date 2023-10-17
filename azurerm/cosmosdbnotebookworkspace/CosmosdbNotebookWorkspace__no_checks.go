@@ -7,6 +7,10 @@ package cosmosdbnotebookworkspace
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CosmosdbNotebookWorkspace) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbNotebookWorkspace) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CosmosdbNotebookWorkspace) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbNotebookWorkspace) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbNotebookWorkspace) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbNotebookWorkspace) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CosmosdbNotebookWorkspace) validateOverrideLogicalIdParameter
 }
 
 func (c *jsiiProxy_CosmosdbNotebookWorkspace) validatePutTimeoutsParameters(value *CosmosdbNotebookWorkspaceTimeouts) error {
+	return nil
+}
+
+func validateCosmosdbNotebookWorkspace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

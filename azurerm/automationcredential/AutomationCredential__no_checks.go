@@ -7,6 +7,10 @@ package automationcredential
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutomationCredential) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationCredential) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AutomationCredential) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_AutomationCredential) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationCredential) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutomationCredential) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AutomationCredential) validateOverrideLogicalIdParameters(new
 }
 
 func (a *jsiiProxy_AutomationCredential) validatePutTimeoutsParameters(value *AutomationCredentialTimeouts) error {
+	return nil
+}
+
+func validateAutomationCredential_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

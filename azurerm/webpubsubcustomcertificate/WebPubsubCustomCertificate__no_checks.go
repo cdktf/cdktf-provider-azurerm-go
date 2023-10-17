@@ -7,6 +7,10 @@ package webpubsubcustomcertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WebPubsubCustomCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebPubsubCustomCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WebPubsubCustomCertificate) validateGetStringMapAttributePara
 	return nil
 }
 
+func (w *jsiiProxy_WebPubsubCustomCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebPubsubCustomCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WebPubsubCustomCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (w *jsiiProxy_WebPubsubCustomCertificate) validateOverrideLogicalIdParamete
 }
 
 func (w *jsiiProxy_WebPubsubCustomCertificate) validatePutTimeoutsParameters(value *WebPubsubCustomCertificateTimeouts) error {
+	return nil
+}
+
+func validateWebPubsubCustomCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

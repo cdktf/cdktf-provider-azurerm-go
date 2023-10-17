@@ -7,6 +7,10 @@ package monitoralertprocessingrulesuppression
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorAlertProcessingRuleSuppression) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAlertProcessingRuleSuppression) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitorAlertProcessingRuleSuppression) validateGetStringMapAt
 	return nil
 }
 
+func (m *jsiiProxy_MonitorAlertProcessingRuleSuppression) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAlertProcessingRuleSuppression) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorAlertProcessingRuleSuppression) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (m *jsiiProxy_MonitorAlertProcessingRuleSuppression) validatePutSchedulePar
 }
 
 func (m *jsiiProxy_MonitorAlertProcessingRuleSuppression) validatePutTimeoutsParameters(value *MonitorAlertProcessingRuleSuppressionTimeouts) error {
+	return nil
+}
+
+func validateMonitorAlertProcessingRuleSuppression_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

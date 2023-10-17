@@ -7,6 +7,10 @@ package machinelearningdatastoredatalakegen2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) validateGetStringMapAtt
 	return nil
 }
 
+func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) validateOverrideLogical
 }
 
 func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) validatePutTimeoutsParameters(value *MachineLearningDatastoreDatalakeGen2Timeouts) error {
+	return nil
+}
+
+func validateMachineLearningDatastoreDatalakeGen2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

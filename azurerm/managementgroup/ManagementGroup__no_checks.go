@@ -7,6 +7,10 @@ package managementgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_ManagementGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagementGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_ManagementGroup) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (m *jsiiProxy_ManagementGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagementGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagementGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_ManagementGroup) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (m *jsiiProxy_ManagementGroup) validatePutTimeoutsParameters(value *ManagementGroupTimeouts) error {
+	return nil
+}
+
+func validateManagementGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

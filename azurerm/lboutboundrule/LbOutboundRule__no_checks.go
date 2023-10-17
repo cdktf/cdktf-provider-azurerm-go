@@ -7,6 +7,10 @@ package lboutboundrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbOutboundRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbOutboundRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LbOutboundRule) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (l *jsiiProxy_LbOutboundRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbOutboundRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbOutboundRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (l *jsiiProxy_LbOutboundRule) validatePutFrontendIpConfigurationParameters(
 }
 
 func (l *jsiiProxy_LbOutboundRule) validatePutTimeoutsParameters(value *LbOutboundRuleTimeouts) error {
+	return nil
+}
+
+func validateLbOutboundRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

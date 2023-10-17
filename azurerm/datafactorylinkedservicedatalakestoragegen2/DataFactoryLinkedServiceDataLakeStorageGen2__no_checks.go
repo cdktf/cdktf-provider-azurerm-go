@@ -7,6 +7,10 @@ package datafactorylinkedservicedatalakestoragegen2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2) validateGetStrin
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2) validateOverride
 }
 
 func (d *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2) validatePutTimeoutsParameters(value *DataFactoryLinkedServiceDataLakeStorageGen2Timeouts) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceDataLakeStorageGen2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

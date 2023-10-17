@@ -7,6 +7,10 @@ package sshpublickey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SshPublicKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SshPublicKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SshPublicKey) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (s *jsiiProxy_SshPublicKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SshPublicKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SshPublicKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SshPublicKey) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (s *jsiiProxy_SshPublicKey) validatePutTimeoutsParameters(value *SshPublicKeyTimeouts) error {
+	return nil
+}
+
+func validateSshPublicKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

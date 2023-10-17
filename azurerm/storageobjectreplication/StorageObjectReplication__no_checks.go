@@ -7,6 +7,10 @@ package storageobjectreplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageObjectReplication) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageObjectReplication) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageObjectReplication) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_StorageObjectReplication) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageObjectReplication) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageObjectReplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_StorageObjectReplication) validatePutRulesParameters(value in
 }
 
 func (s *jsiiProxy_StorageObjectReplication) validatePutTimeoutsParameters(value *StorageObjectReplicationTimeouts) error {
+	return nil
+}
+
+func validateStorageObjectReplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

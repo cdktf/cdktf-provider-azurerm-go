@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-azurerm.eventgridDomain.EventgridDomain",
 		reflect.TypeOf((*EventgridDomain)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "autoCreateTopicWithFirstSubscription", GoGetter: "AutoCreateTopicWithFirstSubscription"},
 			_jsii_.MemberProperty{JsiiProperty: "autoCreateTopicWithFirstSubscriptionInput", GoGetter: "AutoCreateTopicWithFirstSubscriptionInput"},
@@ -41,6 +42,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "identity", GoGetter: "Identity"},
 			_jsii_.MemberProperty{JsiiProperty: "identityInput", GoGetter: "IdentityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "inboundIpRule", GoGetter: "InboundIpRule"},
 			_jsii_.MemberProperty{JsiiProperty: "inboundIpRuleInput", GoGetter: "InboundIpRuleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "inputMappingDefaultValues", GoGetter: "InputMappingDefaultValues"},
@@ -55,6 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "localAuthEnabledInput", GoGetter: "LocalAuthEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

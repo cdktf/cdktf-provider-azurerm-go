@@ -7,6 +7,10 @@ package appserviceenvironmentv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppServiceEnvironmentV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppServiceEnvironmentV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppServiceEnvironmentV3) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (a *jsiiProxy_AppServiceEnvironmentV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppServiceEnvironmentV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppServiceEnvironmentV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_AppServiceEnvironmentV3) validatePutClusterSettingParameters(
 }
 
 func (a *jsiiProxy_AppServiceEnvironmentV3) validatePutTimeoutsParameters(value *AppServiceEnvironmentV3Timeouts) error {
+	return nil
+}
+
+func validateAppServiceEnvironmentV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

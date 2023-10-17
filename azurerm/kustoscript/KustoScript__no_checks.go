@@ -7,6 +7,10 @@ package kustoscript
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KustoScript) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoScript) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KustoScript) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (k *jsiiProxy_KustoScript) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoScript) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KustoScript) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KustoScript) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (k *jsiiProxy_KustoScript) validatePutTimeoutsParameters(value *KustoScriptTimeouts) error {
+	return nil
+}
+
+func validateKustoScript_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

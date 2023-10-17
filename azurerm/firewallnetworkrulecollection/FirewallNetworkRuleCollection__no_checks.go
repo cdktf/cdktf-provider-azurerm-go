@@ -7,6 +7,10 @@ package firewallnetworkrulecollection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FirewallNetworkRuleCollection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirewallNetworkRuleCollection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FirewallNetworkRuleCollection) validateGetStringMapAttributeP
 	return nil
 }
 
+func (f *jsiiProxy_FirewallNetworkRuleCollection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirewallNetworkRuleCollection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirewallNetworkRuleCollection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (f *jsiiProxy_FirewallNetworkRuleCollection) validatePutRuleParameters(valu
 }
 
 func (f *jsiiProxy_FirewallNetworkRuleCollection) validatePutTimeoutsParameters(value *FirewallNetworkRuleCollectionTimeouts) error {
+	return nil
+}
+
+func validateFirewallNetworkRuleCollection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

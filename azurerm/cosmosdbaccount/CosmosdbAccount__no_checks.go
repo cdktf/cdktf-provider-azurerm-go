@@ -7,6 +7,10 @@ package cosmosdbaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CosmosdbAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CosmosdbAccount) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -96,6 +108,10 @@ func (c *jsiiProxy_CosmosdbAccount) validatePutTimeoutsParameters(value *Cosmosd
 }
 
 func (c *jsiiProxy_CosmosdbAccount) validatePutVirtualNetworkRuleParameters(value interface{}) error {
+	return nil
+}
+
+func validateCosmosdbAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

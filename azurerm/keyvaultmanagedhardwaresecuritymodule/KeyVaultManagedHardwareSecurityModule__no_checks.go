@@ -7,6 +7,10 @@ package keyvaultmanagedhardwaresecuritymodule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validateGetStringMapAt
 	return nil
 }
 
+func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validatePutNetworkAcls
 }
 
 func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModule) validatePutTimeoutsParameters(value *KeyVaultManagedHardwareSecurityModuleTimeouts) error {
+	return nil
+}
+
+func validateKeyVaultManagedHardwareSecurityModule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

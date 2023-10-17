@@ -7,6 +7,10 @@ package diskpooliscsitarget
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DiskPoolIscsiTarget) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiskPoolIscsiTarget) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DiskPoolIscsiTarget) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DiskPoolIscsiTarget) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiskPoolIscsiTarget) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DiskPoolIscsiTarget) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DiskPoolIscsiTarget) validateOverrideLogicalIdParameters(newL
 }
 
 func (d *jsiiProxy_DiskPoolIscsiTarget) validatePutTimeoutsParameters(value *DiskPoolIscsiTargetTimeouts) error {
+	return nil
+}
+
+func validateDiskPoolIscsiTarget_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

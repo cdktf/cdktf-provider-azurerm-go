@@ -7,6 +7,10 @@ package apimanagementcertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiManagementCertificateA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementCertificateA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApiManagementCertificateA) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (a *jsiiProxy_ApiManagementCertificateA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementCertificateA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiManagementCertificateA) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApiManagementCertificateA) validateOverrideLogicalIdParameter
 }
 
 func (a *jsiiProxy_ApiManagementCertificateA) validatePutTimeoutsParameters(value *ApiManagementCertificateTimeouts) error {
+	return nil
+}
+
+func validateApiManagementCertificateA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

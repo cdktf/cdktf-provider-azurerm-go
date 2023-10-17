@@ -7,6 +7,10 @@ package sqlmanagedinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SqlManagedInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlManagedInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SqlManagedInstance) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_SqlManagedInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlManagedInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlManagedInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SqlManagedInstance) validatePutIdentityParameters(value *SqlM
 }
 
 func (s *jsiiProxy_SqlManagedInstance) validatePutTimeoutsParameters(value *SqlManagedInstanceTimeouts) error {
+	return nil
+}
+
+func validateSqlManagedInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

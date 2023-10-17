@@ -7,6 +7,10 @@ package datafactorylinkedservicesynapse
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryLinkedServiceSynapse) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceSynapse) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceSynapse) validateGetStringMapAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceSynapse) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceSynapse) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceSynapse) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataFactoryLinkedServiceSynapse) validatePutKeyVaultPasswordP
 }
 
 func (d *jsiiProxy_DataFactoryLinkedServiceSynapse) validatePutTimeoutsParameters(value *DataFactoryLinkedServiceSynapseTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceSynapse_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

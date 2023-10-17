@@ -7,6 +7,10 @@ package mobilenetworksim
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MobileNetworkSim) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MobileNetworkSim) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MobileNetworkSim) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (m *jsiiProxy_MobileNetworkSim) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MobileNetworkSim) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MobileNetworkSim) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MobileNetworkSim) validatePutStaticIpConfigurationParameters(
 }
 
 func (m *jsiiProxy_MobileNetworkSim) validatePutTimeoutsParameters(value *MobileNetworkSimTimeouts) error {
+	return nil
+}
+
+func validateMobileNetworkSim_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

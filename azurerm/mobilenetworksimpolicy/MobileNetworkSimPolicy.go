@@ -5,10 +5,10 @@ package mobilenetworksimpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/mobilenetworksimpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/mobilenetworksimpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -91,6 +91,9 @@ type MobileNetworkSimPolicy interface {
 	TimeoutsInput() interface{}
 	UserEquipmentAggregateMaximumBitRate() MobileNetworkSimPolicyUserEquipmentAggregateMaximumBitRateOutputReference
 	UserEquipmentAggregateMaximumBitRateInput() *MobileNetworkSimPolicyUserEquipmentAggregateMaximumBitRate
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -112,7 +115,12 @@ type MobileNetworkSimPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -708,6 +716,25 @@ func (j *jsiiProxy_MobileNetworkSimPolicy)SetTags(val *map[string]*string) {
 	)
 }
 
+// Generates CDKTF code for importing a MobileNetworkSimPolicy resource upon running "cdktf plan <stack-name>".
+func MobileNetworkSimPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateMobileNetworkSimPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.mobileNetworkSimPolicy.MobileNetworkSimPolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -790,6 +817,17 @@ func MobileNetworkSimPolicy_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (m *jsiiProxy_MobileNetworkSimPolicy) AddMoveTarget(moveTarget *string) {
+	if err := m.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (m *jsiiProxy_MobileNetworkSimPolicy) AddOverride(path *string, value interface{}) {
@@ -947,6 +985,17 @@ func (m *jsiiProxy_MobileNetworkSimPolicy) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (m *jsiiProxy_MobileNetworkSimPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := m.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (m *jsiiProxy_MobileNetworkSimPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -961,6 +1010,17 @@ func (m *jsiiProxy_MobileNetworkSimPolicy) InterpolationForAttribute(terraformAt
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MobileNetworkSimPolicy) MoveTo(moveTarget *string, index interface{}) {
+	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (m *jsiiProxy_MobileNetworkSimPolicy) OverrideLogicalId(newLogicalId *string) {

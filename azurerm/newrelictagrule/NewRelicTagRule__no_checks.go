@@ -7,6 +7,10 @@ package newrelictagrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NewRelicTagRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NewRelicTagRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NewRelicTagRule) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (n *jsiiProxy_NewRelicTagRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NewRelicTagRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NewRelicTagRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (n *jsiiProxy_NewRelicTagRule) validatePutMetricTagFilterParameters(value i
 }
 
 func (n *jsiiProxy_NewRelicTagRule) validatePutTimeoutsParameters(value *NewRelicTagRuleTimeouts) error {
+	return nil
+}
+
+func validateNewRelicTagRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

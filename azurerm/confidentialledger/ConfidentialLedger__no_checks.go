@@ -7,6 +7,10 @@ package confidentialledger
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConfidentialLedger) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfidentialLedger) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ConfidentialLedger) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (c *jsiiProxy_ConfidentialLedger) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfidentialLedger) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfidentialLedger) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_ConfidentialLedger) validatePutCertificateBasedSecurityPrinci
 }
 
 func (c *jsiiProxy_ConfidentialLedger) validatePutTimeoutsParameters(value *ConfidentialLedgerTimeouts) error {
+	return nil
+}
+
+func validateConfidentialLedger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

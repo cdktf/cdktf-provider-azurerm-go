@@ -7,6 +7,10 @@ package backupcontainerstorageaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BackupContainerStorageAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupContainerStorageAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BackupContainerStorageAccount) validateGetStringMapAttributeP
 	return nil
 }
 
+func (b *jsiiProxy_BackupContainerStorageAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupContainerStorageAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BackupContainerStorageAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BackupContainerStorageAccount) validateOverrideLogicalIdParam
 }
 
 func (b *jsiiProxy_BackupContainerStorageAccount) validatePutTimeoutsParameters(value *BackupContainerStorageAccountTimeouts) error {
+	return nil
+}
+
+func validateBackupContainerStorageAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package datasharedatasetblobstorage
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataShareDatasetBlobStorage) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataShareDatasetBlobStorage) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataShareDatasetBlobStorage) validateGetStringMapAttributePar
 	return nil
 }
 
+func (d *jsiiProxy_DataShareDatasetBlobStorage) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataShareDatasetBlobStorage) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataShareDatasetBlobStorage) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataShareDatasetBlobStorage) validatePutStorageAccountParamet
 }
 
 func (d *jsiiProxy_DataShareDatasetBlobStorage) validatePutTimeoutsParameters(value *DataShareDatasetBlobStorageTimeouts) error {
+	return nil
+}
+
+func validateDataShareDatasetBlobStorage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

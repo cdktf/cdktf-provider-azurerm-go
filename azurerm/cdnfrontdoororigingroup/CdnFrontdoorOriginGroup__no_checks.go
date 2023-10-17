@@ -7,6 +7,10 @@ package cdnfrontdoororigingroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CdnFrontdoorOriginGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorOriginGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CdnFrontdoorOriginGroup) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_CdnFrontdoorOriginGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorOriginGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CdnFrontdoorOriginGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_CdnFrontdoorOriginGroup) validatePutLoadBalancingParameters(v
 }
 
 func (c *jsiiProxy_CdnFrontdoorOriginGroup) validatePutTimeoutsParameters(value *CdnFrontdoorOriginGroupTimeouts) error {
+	return nil
+}
+
+func validateCdnFrontdoorOriginGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

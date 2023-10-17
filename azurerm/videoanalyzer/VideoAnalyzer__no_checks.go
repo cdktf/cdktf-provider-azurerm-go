@@ -7,6 +7,10 @@ package videoanalyzer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VideoAnalyzer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VideoAnalyzer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VideoAnalyzer) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (v *jsiiProxy_VideoAnalyzer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VideoAnalyzer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VideoAnalyzer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (v *jsiiProxy_VideoAnalyzer) validatePutStorageAccountParameters(value *Vid
 }
 
 func (v *jsiiProxy_VideoAnalyzer) validatePutTimeoutsParameters(value *VideoAnalyzerTimeouts) error {
+	return nil
+}
+
+func validateVideoAnalyzer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

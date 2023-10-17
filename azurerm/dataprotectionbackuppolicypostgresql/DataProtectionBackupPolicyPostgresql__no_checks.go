@@ -7,6 +7,10 @@ package dataprotectionbackuppolicypostgresql
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) validateGetStringMapAtt
 	return nil
 }
 
+func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) validatePutRetentionRul
 }
 
 func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) validatePutTimeoutsParameters(value *DataProtectionBackupPolicyPostgresqlTimeouts) error {
+	return nil
+}
+
+func validateDataProtectionBackupPolicyPostgresql_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package linuxfunctionapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LinuxFunctionApp) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxFunctionApp) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LinuxFunctionApp) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (l *jsiiProxy_LinuxFunctionApp) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxFunctionApp) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LinuxFunctionApp) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -88,6 +100,10 @@ func (l *jsiiProxy_LinuxFunctionApp) validatePutStorageAccountParameters(value i
 }
 
 func (l *jsiiProxy_LinuxFunctionApp) validatePutTimeoutsParameters(value *LinuxFunctionAppTimeouts) error {
+	return nil
+}
+
+func validateLinuxFunctionApp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

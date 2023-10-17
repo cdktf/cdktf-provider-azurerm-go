@@ -7,6 +7,10 @@ package applicationsecuritygroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApplicationSecurityGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationSecurityGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApplicationSecurityGroup) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (a *jsiiProxy_ApplicationSecurityGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationSecurityGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationSecurityGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApplicationSecurityGroup) validateOverrideLogicalIdParameters
 }
 
 func (a *jsiiProxy_ApplicationSecurityGroup) validatePutTimeoutsParameters(value *ApplicationSecurityGroupTimeouts) error {
+	return nil
+}
+
+func validateApplicationSecurityGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

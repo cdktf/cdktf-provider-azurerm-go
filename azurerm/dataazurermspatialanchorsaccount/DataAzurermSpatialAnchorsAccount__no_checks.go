@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermSpatialAnchorsAccount) validatePutTimeoutsParamete
 	return nil
 }
 
+func validateDataAzurermSpatialAnchorsAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermSpatialAnchorsAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-azurerm.mobileNetworkAttachedDataNetwork.MobileNetworkAttachedDataNetwork",
 		reflect.TypeOf((*MobileNetworkAttachedDataNetwork)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
@@ -36,6 +37,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
@@ -44,6 +46,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mobileNetworkDataNetworkNameInput", GoGetter: "MobileNetworkDataNetworkNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mobileNetworkPacketCoreDataPlaneId", GoGetter: "MobileNetworkPacketCoreDataPlaneId"},
 			_jsii_.MemberProperty{JsiiProperty: "mobileNetworkPacketCoreDataPlaneIdInput", GoGetter: "MobileNetworkPacketCoreDataPlaneIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "networkAddressPortTranslation", GoGetter: "NetworkAddressPortTranslation"},
 			_jsii_.MemberProperty{JsiiProperty: "networkAddressPortTranslationInput", GoGetter: "NetworkAddressPortTranslationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

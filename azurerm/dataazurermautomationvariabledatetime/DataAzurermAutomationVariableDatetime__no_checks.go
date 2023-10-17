@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermAutomationVariableDatetime) validatePutTimeoutsPar
 	return nil
 }
 
+func validateDataAzurermAutomationVariableDatetime_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermAutomationVariableDatetime_IsConstructParameters(x interface{}) error {
 	return nil
 }

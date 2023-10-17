@@ -7,6 +7,10 @@ package springclouddevtoolportal
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpringCloudDevToolPortal) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudDevToolPortal) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SpringCloudDevToolPortal) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudDevToolPortal) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudDevToolPortal) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudDevToolPortal) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SpringCloudDevToolPortal) validatePutSsoParameters(value *Spr
 }
 
 func (s *jsiiProxy_SpringCloudDevToolPortal) validatePutTimeoutsParameters(value *SpringCloudDevToolPortalTimeouts) error {
+	return nil
+}
+
+func validateSpringCloudDevToolPortal_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

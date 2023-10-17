@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-azurerm.vmwarePrivateCloud.VmwarePrivateCloud",
 		reflect.TypeOf((*VmwarePrivateCloud)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "circuit", GoGetter: "Circuit"},
@@ -36,6 +37,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "hcxCloudManagerEndpoint", GoGetter: "HcxCloudManagerEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "internetConnectionEnabled", GoGetter: "InternetConnectionEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "internetConnectionEnabledInput", GoGetter: "InternetConnectionEnabledInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -45,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "managementCluster", GoGetter: "ManagementCluster"},
 			_jsii_.MemberProperty{JsiiProperty: "managementClusterInput", GoGetter: "ManagementClusterInput"},
 			_jsii_.MemberProperty{JsiiProperty: "managementSubnetCidr", GoGetter: "ManagementSubnetCidr"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "networkSubnetCidr", GoGetter: "NetworkSubnetCidr"},

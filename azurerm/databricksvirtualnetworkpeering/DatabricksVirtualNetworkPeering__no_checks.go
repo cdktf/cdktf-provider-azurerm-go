@@ -7,6 +7,10 @@ package databricksvirtualnetworkpeering
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatabricksVirtualNetworkPeering) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabricksVirtualNetworkPeering) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DatabricksVirtualNetworkPeering) validateGetStringMapAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DatabricksVirtualNetworkPeering) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabricksVirtualNetworkPeering) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabricksVirtualNetworkPeering) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DatabricksVirtualNetworkPeering) validateOverrideLogicalIdPar
 }
 
 func (d *jsiiProxy_DatabricksVirtualNetworkPeering) validatePutTimeoutsParameters(value *DatabricksVirtualNetworkPeeringTimeouts) error {
+	return nil
+}
+
+func validateDatabricksVirtualNetworkPeering_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermAppServiceCertificateOrder) validatePutTimeoutsPar
 	return nil
 }
 
+func validateDataAzurermAppServiceCertificateOrder_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermAppServiceCertificateOrder_IsConstructParameters(x interface{}) error {
 	return nil
 }

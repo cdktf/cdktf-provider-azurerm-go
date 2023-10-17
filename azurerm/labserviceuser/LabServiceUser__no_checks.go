@@ -7,6 +7,10 @@ package labserviceuser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LabServiceUser) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LabServiceUser) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LabServiceUser) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (l *jsiiProxy_LabServiceUser) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LabServiceUser) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LabServiceUser) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (l *jsiiProxy_LabServiceUser) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (l *jsiiProxy_LabServiceUser) validatePutTimeoutsParameters(value *LabServiceUserTimeouts) error {
+	return nil
+}
+
+func validateLabServiceUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

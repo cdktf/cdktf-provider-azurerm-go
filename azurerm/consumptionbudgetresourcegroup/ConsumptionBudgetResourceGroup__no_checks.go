@@ -7,6 +7,10 @@ package consumptionbudgetresourcegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConsumptionBudgetResourceGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConsumptionBudgetResourceGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ConsumptionBudgetResourceGroup) validateGetStringMapAttribute
 	return nil
 }
 
+func (c *jsiiProxy_ConsumptionBudgetResourceGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConsumptionBudgetResourceGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConsumptionBudgetResourceGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (c *jsiiProxy_ConsumptionBudgetResourceGroup) validatePutTimeoutsParameters
 }
 
 func (c *jsiiProxy_ConsumptionBudgetResourceGroup) validatePutTimePeriodParameters(value *ConsumptionBudgetResourceGroupTimePeriod) error {
+	return nil
+}
+
+func validateConsumptionBudgetResourceGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

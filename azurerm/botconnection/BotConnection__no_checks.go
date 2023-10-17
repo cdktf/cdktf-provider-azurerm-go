@@ -7,6 +7,10 @@ package botconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BotConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BotConnection) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (b *jsiiProxy_BotConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BotConnection) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (b *jsiiProxy_BotConnection) validatePutTimeoutsParameters(value *BotConnectionTimeouts) error {
+	return nil
+}
+
+func validateBotConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

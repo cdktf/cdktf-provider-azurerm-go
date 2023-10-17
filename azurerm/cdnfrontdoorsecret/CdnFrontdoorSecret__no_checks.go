@@ -7,6 +7,10 @@ package cdnfrontdoorsecret
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CdnFrontdoorSecret) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorSecret) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CdnFrontdoorSecret) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (c *jsiiProxy_CdnFrontdoorSecret) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorSecret) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CdnFrontdoorSecret) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CdnFrontdoorSecret) validatePutSecretParameters(value *CdnFro
 }
 
 func (c *jsiiProxy_CdnFrontdoorSecret) validatePutTimeoutsParameters(value *CdnFrontdoorSecretTimeouts) error {
+	return nil
+}
+
+func validateCdnFrontdoorSecret_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

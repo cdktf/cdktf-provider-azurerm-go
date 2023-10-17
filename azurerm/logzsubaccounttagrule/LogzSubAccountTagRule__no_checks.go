@@ -7,6 +7,10 @@ package logzsubaccounttagrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogzSubAccountTagRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogzSubAccountTagRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LogzSubAccountTagRule) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (l *jsiiProxy_LogzSubAccountTagRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogzSubAccountTagRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogzSubAccountTagRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (l *jsiiProxy_LogzSubAccountTagRule) validatePutTagFilterParameters(value i
 }
 
 func (l *jsiiProxy_LogzSubAccountTagRule) validatePutTimeoutsParameters(value *LogzSubAccountTagRuleTimeouts) error {
+	return nil
+}
+
+func validateLogzSubAccountTagRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

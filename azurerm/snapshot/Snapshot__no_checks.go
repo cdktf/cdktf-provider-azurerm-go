@@ -7,6 +7,10 @@ package snapshot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_Snapshot) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Snapshot) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_Snapshot) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (s *jsiiProxy_Snapshot) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Snapshot) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_Snapshot) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_Snapshot) validatePutEncryptionSettingsParameters(value *Snap
 }
 
 func (s *jsiiProxy_Snapshot) validatePutTimeoutsParameters(value *SnapshotTimeouts) error {
+	return nil
+}
+
+func validateSnapshot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

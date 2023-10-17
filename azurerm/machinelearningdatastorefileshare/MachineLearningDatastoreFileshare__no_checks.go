@@ -7,6 +7,10 @@ package machinelearningdatastorefileshare
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MachineLearningDatastoreFileshare) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MachineLearningDatastoreFileshare) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MachineLearningDatastoreFileshare) validateGetStringMapAttrib
 	return nil
 }
 
+func (m *jsiiProxy_MachineLearningDatastoreFileshare) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MachineLearningDatastoreFileshare) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MachineLearningDatastoreFileshare) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MachineLearningDatastoreFileshare) validateOverrideLogicalIdP
 }
 
 func (m *jsiiProxy_MachineLearningDatastoreFileshare) validatePutTimeoutsParameters(value *MachineLearningDatastoreFileshareTimeouts) error {
+	return nil
+}
+
+func validateMachineLearningDatastoreFileshare_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

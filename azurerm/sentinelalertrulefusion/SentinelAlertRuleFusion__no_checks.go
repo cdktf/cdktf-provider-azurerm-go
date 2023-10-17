@@ -7,6 +7,10 @@ package sentinelalertrulefusion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SentinelAlertRuleFusion) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAlertRuleFusion) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SentinelAlertRuleFusion) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_SentinelAlertRuleFusion) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAlertRuleFusion) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAlertRuleFusion) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SentinelAlertRuleFusion) validatePutSourceParameters(value in
 }
 
 func (s *jsiiProxy_SentinelAlertRuleFusion) validatePutTimeoutsParameters(value *SentinelAlertRuleFusionTimeouts) error {
+	return nil
+}
+
+func validateSentinelAlertRuleFusion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

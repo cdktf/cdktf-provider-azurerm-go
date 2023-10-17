@@ -7,6 +7,10 @@ package devtestschedule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DevTestSchedule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevTestSchedule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DevTestSchedule) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (d *jsiiProxy_DevTestSchedule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevTestSchedule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DevTestSchedule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (d *jsiiProxy_DevTestSchedule) validatePutTimeoutsParameters(value *DevTest
 }
 
 func (d *jsiiProxy_DevTestSchedule) validatePutWeeklyRecurrenceParameters(value *DevTestScheduleWeeklyRecurrence) error {
+	return nil
+}
+
+func validateDevTestSchedule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

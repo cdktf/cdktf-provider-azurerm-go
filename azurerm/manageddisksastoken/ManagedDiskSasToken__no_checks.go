@@ -7,6 +7,10 @@ package manageddisksastoken
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_ManagedDiskSasToken) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedDiskSasToken) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_ManagedDiskSasToken) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (m *jsiiProxy_ManagedDiskSasToken) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedDiskSasToken) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedDiskSasToken) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_ManagedDiskSasToken) validateOverrideLogicalIdParameters(newL
 }
 
 func (m *jsiiProxy_ManagedDiskSasToken) validatePutTimeoutsParameters(value *ManagedDiskSasTokenTimeouts) error {
+	return nil
+}
+
+func validateManagedDiskSasToken_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

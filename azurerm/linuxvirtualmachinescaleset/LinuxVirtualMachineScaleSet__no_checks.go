@@ -7,6 +7,10 @@ package linuxvirtualmachinescaleset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validateGetStringMapAttributePar
 	return nil
 }
 
+func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -136,6 +148,10 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validatePutTerminationNotificati
 }
 
 func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validatePutTimeoutsParameters(value *LinuxVirtualMachineScaleSetTimeouts) error {
+	return nil
+}
+
+func validateLinuxVirtualMachineScaleSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

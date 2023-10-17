@@ -7,6 +7,10 @@ package routefilter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RouteFilter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RouteFilter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RouteFilter) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (r *jsiiProxy_RouteFilter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RouteFilter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RouteFilter) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (r *jsiiProxy_RouteFilter) validatePutRuleParameters(value interface{}) err
 }
 
 func (r *jsiiProxy_RouteFilter) validatePutTimeoutsParameters(value *RouteFilterTimeouts) error {
+	return nil
+}
+
+func validateRouteFilter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

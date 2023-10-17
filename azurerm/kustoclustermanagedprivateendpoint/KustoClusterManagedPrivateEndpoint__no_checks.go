@@ -7,6 +7,10 @@ package kustoclustermanagedprivateendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KustoClusterManagedPrivateEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoClusterManagedPrivateEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KustoClusterManagedPrivateEndpoint) validateGetStringMapAttri
 	return nil
 }
 
+func (k *jsiiProxy_KustoClusterManagedPrivateEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoClusterManagedPrivateEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KustoClusterManagedPrivateEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KustoClusterManagedPrivateEndpoint) validateOverrideLogicalId
 }
 
 func (k *jsiiProxy_KustoClusterManagedPrivateEndpoint) validatePutTimeoutsParameters(value *KustoClusterManagedPrivateEndpointTimeouts) error {
+	return nil
+}
+
+func validateKustoClusterManagedPrivateEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

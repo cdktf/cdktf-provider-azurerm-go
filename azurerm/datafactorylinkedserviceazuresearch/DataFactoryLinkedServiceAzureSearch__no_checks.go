@@ -7,6 +7,10 @@ package datafactorylinkedserviceazuresearch
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureSearch) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureSearch) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureSearch) validateGetStringMapAttr
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureSearch) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureSearch) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureSearch) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureSearch) validateOverrideLogicalI
 }
 
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureSearch) validatePutTimeoutsParameters(value *DataFactoryLinkedServiceAzureSearchTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceAzureSearch_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package resourcemanagementprivatelink
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_ResourceManagementPrivateLink) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceManagementPrivateLink) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_ResourceManagementPrivateLink) validateGetStringMapAttributeP
 	return nil
 }
 
+func (r *jsiiProxy_ResourceManagementPrivateLink) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceManagementPrivateLink) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourceManagementPrivateLink) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_ResourceManagementPrivateLink) validateOverrideLogicalIdParam
 }
 
 func (r *jsiiProxy_ResourceManagementPrivateLink) validatePutTimeoutsParameters(value *ResourceManagementPrivateLinkTimeouts) error {
+	return nil
+}
+
+func validateResourceManagementPrivateLink_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

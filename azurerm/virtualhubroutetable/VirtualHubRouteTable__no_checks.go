@@ -7,6 +7,10 @@ package virtualhubroutetable
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualHubRouteTable) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualHubRouteTable) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VirtualHubRouteTable) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (v *jsiiProxy_VirtualHubRouteTable) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualHubRouteTable) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualHubRouteTable) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (v *jsiiProxy_VirtualHubRouteTable) validatePutRouteParameters(value interf
 }
 
 func (v *jsiiProxy_VirtualHubRouteTable) validatePutTimeoutsParameters(value *VirtualHubRouteTableTimeouts) error {
+	return nil
+}
+
+func validateVirtualHubRouteTable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

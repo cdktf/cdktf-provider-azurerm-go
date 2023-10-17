@@ -7,6 +7,10 @@ package availabilityset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AvailabilitySet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AvailabilitySet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AvailabilitySet) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (a *jsiiProxy_AvailabilitySet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AvailabilitySet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AvailabilitySet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AvailabilitySet) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (a *jsiiProxy_AvailabilitySet) validatePutTimeoutsParameters(value *AvailabilitySetTimeouts) error {
+	return nil
+}
+
+func validateAvailabilitySet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

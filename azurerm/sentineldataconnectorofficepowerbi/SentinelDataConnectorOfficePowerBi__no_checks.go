@@ -7,6 +7,10 @@ package sentineldataconnectorofficepowerbi
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SentinelDataConnectorOfficePowerBi) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelDataConnectorOfficePowerBi) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SentinelDataConnectorOfficePowerBi) validateGetStringMapAttri
 	return nil
 }
 
+func (s *jsiiProxy_SentinelDataConnectorOfficePowerBi) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelDataConnectorOfficePowerBi) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelDataConnectorOfficePowerBi) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SentinelDataConnectorOfficePowerBi) validateOverrideLogicalId
 }
 
 func (s *jsiiProxy_SentinelDataConnectorOfficePowerBi) validatePutTimeoutsParameters(value *SentinelDataConnectorOfficePowerBiTimeouts) error {
+	return nil
+}
+
+func validateSentinelDataConnectorOfficePowerBi_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

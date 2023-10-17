@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aciConnectorLinux", GoGetter: "AciConnectorLinux"},
 			_jsii_.MemberProperty{JsiiProperty: "aciConnectorLinuxInput", GoGetter: "AciConnectorLinuxInput"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "apiServerAccessProfile", GoGetter: "ApiServerAccessProfile"},
 			_jsii_.MemberProperty{JsiiProperty: "apiServerAccessProfileInput", GoGetter: "ApiServerAccessProfileInput"},
@@ -76,6 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "imageCleanerEnabledInput", GoGetter: "ImageCleanerEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "imageCleanerIntervalHours", GoGetter: "ImageCleanerIntervalHours"},
 			_jsii_.MemberProperty{JsiiProperty: "imageCleanerIntervalHoursInput", GoGetter: "ImageCleanerIntervalHoursInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "ingressApplicationGateway", GoGetter: "IngressApplicationGateway"},
 			_jsii_.MemberProperty{JsiiProperty: "ingressApplicationGatewayInput", GoGetter: "IngressApplicationGatewayInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -108,6 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "microsoftDefenderInput", GoGetter: "MicrosoftDefenderInput"},
 			_jsii_.MemberProperty{JsiiProperty: "monitorMetrics", GoGetter: "MonitorMetrics"},
 			_jsii_.MemberProperty{JsiiProperty: "monitorMetricsInput", GoGetter: "MonitorMetricsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "networkProfile", GoGetter: "NetworkProfile"},

@@ -7,6 +7,10 @@ package linuxfunctionappslot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LinuxFunctionAppSlot) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxFunctionAppSlot) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LinuxFunctionAppSlot) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (l *jsiiProxy_LinuxFunctionAppSlot) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxFunctionAppSlot) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LinuxFunctionAppSlot) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (l *jsiiProxy_LinuxFunctionAppSlot) validatePutStorageAccountParameters(val
 }
 
 func (l *jsiiProxy_LinuxFunctionAppSlot) validatePutTimeoutsParameters(value *LinuxFunctionAppSlotTimeouts) error {
+	return nil
+}
+
+func validateLinuxFunctionAppSlot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

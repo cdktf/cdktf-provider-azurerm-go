@@ -7,6 +7,10 @@ package cosmosdbcassandradatacenter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CosmosdbCassandraDatacenter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbCassandraDatacenter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CosmosdbCassandraDatacenter) validateGetStringMapAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbCassandraDatacenter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbCassandraDatacenter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbCassandraDatacenter) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CosmosdbCassandraDatacenter) validateOverrideLogicalIdParamet
 }
 
 func (c *jsiiProxy_CosmosdbCassandraDatacenter) validatePutTimeoutsParameters(value *CosmosdbCassandraDatacenterTimeouts) error {
+	return nil
+}
+
+func validateCosmosdbCassandraDatacenter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

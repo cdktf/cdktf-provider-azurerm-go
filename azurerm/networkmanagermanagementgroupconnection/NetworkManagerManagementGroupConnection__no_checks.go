@@ -7,6 +7,10 @@ package networkmanagermanagementgroupconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkManagerManagementGroupConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkManagerManagementGroupConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkManagerManagementGroupConnection) validateGetStringMap
 	return nil
 }
 
+func (n *jsiiProxy_NetworkManagerManagementGroupConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkManagerManagementGroupConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkManagerManagementGroupConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkManagerManagementGroupConnection) validateOverrideLogi
 }
 
 func (n *jsiiProxy_NetworkManagerManagementGroupConnection) validatePutTimeoutsParameters(value *NetworkManagerManagementGroupConnectionTimeouts) error {
+	return nil
+}
+
+func validateNetworkManagerManagementGroupConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

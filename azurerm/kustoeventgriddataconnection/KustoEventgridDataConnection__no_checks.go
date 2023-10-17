@@ -7,6 +7,10 @@ package kustoeventgriddataconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KustoEventgridDataConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoEventgridDataConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KustoEventgridDataConnection) validateGetStringMapAttributePa
 	return nil
 }
 
+func (k *jsiiProxy_KustoEventgridDataConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoEventgridDataConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KustoEventgridDataConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KustoEventgridDataConnection) validateOverrideLogicalIdParame
 }
 
 func (k *jsiiProxy_KustoEventgridDataConnection) validatePutTimeoutsParameters(value *KustoEventgridDataConnectionTimeouts) error {
+	return nil
+}
+
+func validateKustoEventgridDataConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

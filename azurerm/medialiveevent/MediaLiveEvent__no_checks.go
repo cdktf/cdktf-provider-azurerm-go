@@ -7,6 +7,10 @@ package medialiveevent
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MediaLiveEvent) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaLiveEvent) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MediaLiveEvent) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (m *jsiiProxy_MediaLiveEvent) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaLiveEvent) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MediaLiveEvent) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (m *jsiiProxy_MediaLiveEvent) validatePutPreviewParameters(value *MediaLive
 }
 
 func (m *jsiiProxy_MediaLiveEvent) validatePutTimeoutsParameters(value *MediaLiveEventTimeouts) error {
+	return nil
+}
+
+func validateMediaLiveEvent_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

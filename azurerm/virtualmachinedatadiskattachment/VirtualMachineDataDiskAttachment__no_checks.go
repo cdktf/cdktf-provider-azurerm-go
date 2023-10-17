@@ -7,6 +7,10 @@ package virtualmachinedatadiskattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualMachineDataDiskAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualMachineDataDiskAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VirtualMachineDataDiskAttachment) validateGetStringMapAttribu
 	return nil
 }
 
+func (v *jsiiProxy_VirtualMachineDataDiskAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualMachineDataDiskAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualMachineDataDiskAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (v *jsiiProxy_VirtualMachineDataDiskAttachment) validateOverrideLogicalIdPa
 }
 
 func (v *jsiiProxy_VirtualMachineDataDiskAttachment) validatePutTimeoutsParameters(value *VirtualMachineDataDiskAttachmentTimeouts) error {
+	return nil
+}
+
+func validateVirtualMachineDataDiskAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

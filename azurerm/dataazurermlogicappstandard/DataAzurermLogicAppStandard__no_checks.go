@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAzurermLogicAppStandard) validatePutTimeoutsParameters(va
 	return nil
 }
 
+func validateDataAzurermLogicAppStandard_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermLogicAppStandard_IsConstructParameters(x interface{}) error {
 	return nil
 }

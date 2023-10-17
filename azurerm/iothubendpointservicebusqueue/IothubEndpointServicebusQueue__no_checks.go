@@ -7,6 +7,10 @@ package iothubendpointservicebusqueue
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IothubEndpointServicebusQueue) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubEndpointServicebusQueue) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IothubEndpointServicebusQueue) validateGetStringMapAttributeP
 	return nil
 }
 
+func (i *jsiiProxy_IothubEndpointServicebusQueue) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubEndpointServicebusQueue) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IothubEndpointServicebusQueue) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IothubEndpointServicebusQueue) validateOverrideLogicalIdParam
 }
 
 func (i *jsiiProxy_IothubEndpointServicebusQueue) validatePutTimeoutsParameters(value *IothubEndpointServicebusQueueTimeouts) error {
+	return nil
+}
+
+func validateIothubEndpointServicebusQueue_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

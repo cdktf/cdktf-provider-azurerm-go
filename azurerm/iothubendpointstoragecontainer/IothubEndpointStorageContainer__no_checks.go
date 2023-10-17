@@ -7,6 +7,10 @@ package iothubendpointstoragecontainer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IothubEndpointStorageContainer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubEndpointStorageContainer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IothubEndpointStorageContainer) validateGetStringMapAttribute
 	return nil
 }
 
+func (i *jsiiProxy_IothubEndpointStorageContainer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubEndpointStorageContainer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IothubEndpointStorageContainer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IothubEndpointStorageContainer) validateOverrideLogicalIdPara
 }
 
 func (i *jsiiProxy_IothubEndpointStorageContainer) validatePutTimeoutsParameters(value *IothubEndpointStorageContainerTimeouts) error {
+	return nil
+}
+
+func validateIothubEndpointStorageContainer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

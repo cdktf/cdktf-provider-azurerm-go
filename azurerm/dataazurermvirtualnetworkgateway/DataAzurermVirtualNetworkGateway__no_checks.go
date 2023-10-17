@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermVirtualNetworkGateway) validatePutTimeoutsParamete
 	return nil
 }
 
+func validateDataAzurermVirtualNetworkGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermVirtualNetworkGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }

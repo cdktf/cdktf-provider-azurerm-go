@@ -7,6 +7,10 @@ package diskaccess
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DiskAccess) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiskAccess) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DiskAccess) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (d *jsiiProxy_DiskAccess) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiskAccess) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DiskAccess) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DiskAccess) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (d *jsiiProxy_DiskAccess) validatePutTimeoutsParameters(value *DiskAccessTimeouts) error {
+	return nil
+}
+
+func validateDiskAccess_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

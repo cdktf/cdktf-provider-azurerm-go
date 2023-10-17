@@ -7,6 +7,10 @@ package cdnendpointcustomdomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CdnEndpointCustomDomain) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnEndpointCustomDomain) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CdnEndpointCustomDomain) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_CdnEndpointCustomDomain) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnEndpointCustomDomain) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CdnEndpointCustomDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_CdnEndpointCustomDomain) validatePutTimeoutsParameters(value 
 }
 
 func (c *jsiiProxy_CdnEndpointCustomDomain) validatePutUserManagedHttpsParameters(value *CdnEndpointCustomDomainUserManagedHttps) error {
+	return nil
+}
+
+func validateCdnEndpointCustomDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

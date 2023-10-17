@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermApiManagementProduct) validatePutTimeoutsParameter
 	return nil
 }
 
+func validateDataAzurermApiManagementProduct_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermApiManagementProduct_IsConstructParameters(x interface{}) error {
 	return nil
 }

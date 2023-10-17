@@ -7,6 +7,10 @@ package apimanagementapioperationpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiManagementApiOperationPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementApiOperationPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApiManagementApiOperationPolicy) validateGetStringMapAttribut
 	return nil
 }
 
+func (a *jsiiProxy_ApiManagementApiOperationPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementApiOperationPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiManagementApiOperationPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApiManagementApiOperationPolicy) validateOverrideLogicalIdPar
 }
 
 func (a *jsiiProxy_ApiManagementApiOperationPolicy) validatePutTimeoutsParameters(value *ApiManagementApiOperationPolicyTimeouts) error {
+	return nil
+}
+
+func validateApiManagementApiOperationPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

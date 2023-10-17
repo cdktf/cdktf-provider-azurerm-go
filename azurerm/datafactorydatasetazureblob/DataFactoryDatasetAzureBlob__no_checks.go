@@ -7,6 +7,10 @@ package datafactorydatasetazureblob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryDatasetAzureBlob) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetAzureBlob) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryDatasetAzureBlob) validateGetStringMapAttributePar
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryDatasetAzureBlob) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetAzureBlob) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryDatasetAzureBlob) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataFactoryDatasetAzureBlob) validatePutSchemaColumnParameter
 }
 
 func (d *jsiiProxy_DataFactoryDatasetAzureBlob) validatePutTimeoutsParameters(value *DataFactoryDatasetAzureBlobTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryDatasetAzureBlob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

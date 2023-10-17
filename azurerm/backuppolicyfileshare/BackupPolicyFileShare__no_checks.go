@@ -7,6 +7,10 @@ package backuppolicyfileshare
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BackupPolicyFileShare) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupPolicyFileShare) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BackupPolicyFileShare) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (b *jsiiProxy_BackupPolicyFileShare) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupPolicyFileShare) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BackupPolicyFileShare) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (b *jsiiProxy_BackupPolicyFileShare) validatePutRetentionYearlyParameters(v
 }
 
 func (b *jsiiProxy_BackupPolicyFileShare) validatePutTimeoutsParameters(value *BackupPolicyFileShareTimeouts) error {
+	return nil
+}
+
+func validateBackupPolicyFileShare_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermWebPubsubPrivateLinkResource) validatePutTimeoutsP
 	return nil
 }
 
+func validateDataAzurermWebPubsubPrivateLinkResource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermWebPubsubPrivateLinkResource_IsConstructParameters(x interface{}) error {
 	return nil
 }

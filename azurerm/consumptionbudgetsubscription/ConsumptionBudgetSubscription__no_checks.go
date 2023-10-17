@@ -7,6 +7,10 @@ package consumptionbudgetsubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConsumptionBudgetSubscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConsumptionBudgetSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ConsumptionBudgetSubscription) validateGetStringMapAttributeP
 	return nil
 }
 
+func (c *jsiiProxy_ConsumptionBudgetSubscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConsumptionBudgetSubscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConsumptionBudgetSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (c *jsiiProxy_ConsumptionBudgetSubscription) validatePutTimeoutsParameters(
 }
 
 func (c *jsiiProxy_ConsumptionBudgetSubscription) validatePutTimePeriodParameters(value *ConsumptionBudgetSubscriptionTimePeriod) error {
+	return nil
+}
+
+func validateConsumptionBudgetSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

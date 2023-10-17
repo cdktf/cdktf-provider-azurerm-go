@@ -7,6 +7,10 @@ package aadb2cdirectory
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_Aadb2CDirectory) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Aadb2CDirectory) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_Aadb2CDirectory) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (a *jsiiProxy_Aadb2CDirectory) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Aadb2CDirectory) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_Aadb2CDirectory) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_Aadb2CDirectory) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (a *jsiiProxy_Aadb2CDirectory) validatePutTimeoutsParameters(value *Aadb2CDirectoryTimeouts) error {
+	return nil
+}
+
+func validateAadb2CDirectory_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

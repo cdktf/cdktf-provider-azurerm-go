@@ -7,6 +7,10 @@ package nginxconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NginxConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NginxConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NginxConfiguration) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (n *jsiiProxy_NginxConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NginxConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NginxConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (n *jsiiProxy_NginxConfiguration) validatePutProtectedFileParameters(value 
 }
 
 func (n *jsiiProxy_NginxConfiguration) validatePutTimeoutsParameters(value *NginxConfigurationTimeouts) error {
+	return nil
+}
+
+func validateNginxConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

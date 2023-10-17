@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermDatabaseMigrationService) validatePutTimeoutsParam
 	return nil
 }
 
+func validateDataAzurermDatabaseMigrationService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermDatabaseMigrationService_IsConstructParameters(x interface{}) error {
 	return nil
 }

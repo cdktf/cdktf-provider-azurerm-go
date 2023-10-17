@@ -7,6 +7,10 @@ package botchannelline
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BotChannelLine) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelLine) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BotChannelLine) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (b *jsiiProxy_BotChannelLine) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelLine) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelLine) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (b *jsiiProxy_BotChannelLine) validatePutLineChannelParameters(value interf
 }
 
 func (b *jsiiProxy_BotChannelLine) validatePutTimeoutsParameters(value *BotChannelLineTimeouts) error {
+	return nil
+}
+
+func validateBotChannelLine_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

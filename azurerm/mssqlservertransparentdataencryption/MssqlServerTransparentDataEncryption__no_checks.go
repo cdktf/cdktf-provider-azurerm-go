@@ -7,6 +7,10 @@ package mssqlservertransparentdataencryption
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MssqlServerTransparentDataEncryption) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlServerTransparentDataEncryption) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MssqlServerTransparentDataEncryption) validateGetStringMapAtt
 	return nil
 }
 
+func (m *jsiiProxy_MssqlServerTransparentDataEncryption) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlServerTransparentDataEncryption) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlServerTransparentDataEncryption) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MssqlServerTransparentDataEncryption) validateOverrideLogical
 }
 
 func (m *jsiiProxy_MssqlServerTransparentDataEncryption) validatePutTimeoutsParameters(value *MssqlServerTransparentDataEncryptionTimeouts) error {
+	return nil
+}
+
+func validateMssqlServerTransparentDataEncryption_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

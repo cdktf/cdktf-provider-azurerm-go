@@ -7,6 +7,10 @@ package integrationserviceenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IntegrationServiceEnvironment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationServiceEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IntegrationServiceEnvironment) validateGetStringMapAttributeP
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationServiceEnvironment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationServiceEnvironment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IntegrationServiceEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IntegrationServiceEnvironment) validateOverrideLogicalIdParam
 }
 
 func (i *jsiiProxy_IntegrationServiceEnvironment) validatePutTimeoutsParameters(value *IntegrationServiceEnvironmentTimeouts) error {
+	return nil
+}
+
+func validateIntegrationServiceEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

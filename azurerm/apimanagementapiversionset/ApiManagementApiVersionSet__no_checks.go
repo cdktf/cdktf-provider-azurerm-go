@@ -7,6 +7,10 @@ package apimanagementapiversionset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiManagementApiVersionSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementApiVersionSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApiManagementApiVersionSet) validateGetStringMapAttributePara
 	return nil
 }
 
+func (a *jsiiProxy_ApiManagementApiVersionSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementApiVersionSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiManagementApiVersionSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApiManagementApiVersionSet) validateOverrideLogicalIdParamete
 }
 
 func (a *jsiiProxy_ApiManagementApiVersionSet) validatePutTimeoutsParameters(value *ApiManagementApiVersionSetTimeouts) error {
+	return nil
+}
+
+func validateApiManagementApiVersionSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

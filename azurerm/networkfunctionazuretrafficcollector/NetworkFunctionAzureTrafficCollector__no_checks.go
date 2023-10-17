@@ -7,6 +7,10 @@ package networkfunctionazuretrafficcollector
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkFunctionAzureTrafficCollector) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkFunctionAzureTrafficCollector) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkFunctionAzureTrafficCollector) validateGetStringMapAtt
 	return nil
 }
 
+func (n *jsiiProxy_NetworkFunctionAzureTrafficCollector) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkFunctionAzureTrafficCollector) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkFunctionAzureTrafficCollector) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkFunctionAzureTrafficCollector) validateOverrideLogical
 }
 
 func (n *jsiiProxy_NetworkFunctionAzureTrafficCollector) validatePutTimeoutsParameters(value *NetworkFunctionAzureTrafficCollectorTimeouts) error {
+	return nil
+}
+
+func validateNetworkFunctionAzureTrafficCollector_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package healthcaredicomservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HealthcareDicomService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareDicomService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (h *jsiiProxy_HealthcareDicomService) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareDicomService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareDicomService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareDicomService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (h *jsiiProxy_HealthcareDicomService) validatePutIdentityParameters(value *
 }
 
 func (h *jsiiProxy_HealthcareDicomService) validatePutTimeoutsParameters(value *HealthcareDicomServiceTimeouts) error {
+	return nil
+}
+
+func validateHealthcareDicomService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

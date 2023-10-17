@@ -7,6 +7,10 @@ package iothubdeviceupdateaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IothubDeviceUpdateAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubDeviceUpdateAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IothubDeviceUpdateAccount) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (i *jsiiProxy_IothubDeviceUpdateAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubDeviceUpdateAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IothubDeviceUpdateAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (i *jsiiProxy_IothubDeviceUpdateAccount) validatePutIdentityParameters(valu
 }
 
 func (i *jsiiProxy_IothubDeviceUpdateAccount) validatePutTimeoutsParameters(value *IothubDeviceUpdateAccountTimeouts) error {
+	return nil
+}
+
+func validateIothubDeviceUpdateAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

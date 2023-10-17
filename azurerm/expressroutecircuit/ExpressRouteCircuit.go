@@ -5,10 +5,10 @@ package expressroutecircuit
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/expressroutecircuit/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/expressroutecircuit/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -103,6 +103,9 @@ type ExpressRouteCircuit interface {
 	TerraformResourceType() *string
 	Timeouts() ExpressRouteCircuitTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -124,7 +127,12 @@ type ExpressRouteCircuit interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -848,6 +856,25 @@ func (j *jsiiProxy_ExpressRouteCircuit)SetTags(val *map[string]*string) {
 	)
 }
 
+// Generates CDKTF code for importing a ExpressRouteCircuit resource upon running "cdktf plan <stack-name>".
+func ExpressRouteCircuit_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateExpressRouteCircuit_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.expressRouteCircuit.ExpressRouteCircuit",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -930,6 +957,17 @@ func ExpressRouteCircuit_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (e *jsiiProxy_ExpressRouteCircuit) AddMoveTarget(moveTarget *string) {
+	if err := e.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (e *jsiiProxy_ExpressRouteCircuit) AddOverride(path *string, value interface{}) {
@@ -1087,6 +1125,17 @@ func (e *jsiiProxy_ExpressRouteCircuit) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (e *jsiiProxy_ExpressRouteCircuit) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := e.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (e *jsiiProxy_ExpressRouteCircuit) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1101,6 +1150,17 @@ func (e *jsiiProxy_ExpressRouteCircuit) InterpolationForAttribute(terraformAttri
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_ExpressRouteCircuit) MoveTo(moveTarget *string, index interface{}) {
+	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (e *jsiiProxy_ExpressRouteCircuit) OverrideLogicalId(newLogicalId *string) {

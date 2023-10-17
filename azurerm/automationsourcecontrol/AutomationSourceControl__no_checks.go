@@ -7,6 +7,10 @@ package automationsourcecontrol
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutomationSourceControl) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationSourceControl) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AutomationSourceControl) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (a *jsiiProxy_AutomationSourceControl) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationSourceControl) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutomationSourceControl) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_AutomationSourceControl) validatePutSecurityParameters(value 
 }
 
 func (a *jsiiProxy_AutomationSourceControl) validatePutTimeoutsParameters(value *AutomationSourceControlTimeouts) error {
+	return nil
+}
+
+func validateAutomationSourceControl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

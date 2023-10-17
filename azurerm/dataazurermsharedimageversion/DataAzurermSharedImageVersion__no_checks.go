@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermSharedImageVersion) validatePutTimeoutsParameters(
 	return nil
 }
 
+func validateDataAzurermSharedImageVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermSharedImageVersion_IsConstructParameters(x interface{}) error {
 	return nil
 }

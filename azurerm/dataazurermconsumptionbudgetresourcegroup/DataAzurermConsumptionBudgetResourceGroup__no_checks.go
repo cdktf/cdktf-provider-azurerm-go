@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermConsumptionBudgetResourceGroup) validatePutTimeout
 	return nil
 }
 
+func validateDataAzurermConsumptionBudgetResourceGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermConsumptionBudgetResourceGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

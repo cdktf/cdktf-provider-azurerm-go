@@ -7,6 +7,10 @@ package privatednszone
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrivateDnsZone) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateDnsZone) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PrivateDnsZone) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (p *jsiiProxy_PrivateDnsZone) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateDnsZone) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivateDnsZone) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (p *jsiiProxy_PrivateDnsZone) validatePutSoaRecordParameters(value *Private
 }
 
 func (p *jsiiProxy_PrivateDnsZone) validatePutTimeoutsParameters(value *PrivateDnsZoneTimeouts) error {
+	return nil
+}
+
+func validatePrivateDnsZone_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

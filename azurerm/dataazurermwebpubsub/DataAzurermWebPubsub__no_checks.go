@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermWebPubsub) validatePutTimeoutsParameters(value *Da
 	return nil
 }
 
+func validateDataAzurermWebPubsub_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermWebPubsub_IsConstructParameters(x interface{}) error {
 	return nil
 }

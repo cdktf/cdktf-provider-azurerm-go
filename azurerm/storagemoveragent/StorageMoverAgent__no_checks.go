@@ -7,6 +7,10 @@ package storagemoveragent
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageMoverAgent) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageMoverAgent) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageMoverAgent) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_StorageMoverAgent) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageMoverAgent) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageMoverAgent) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_StorageMoverAgent) validateOverrideLogicalIdParameters(newLog
 }
 
 func (s *jsiiProxy_StorageMoverAgent) validatePutTimeoutsParameters(value *StorageMoverAgentTimeouts) error {
+	return nil
+}
+
+func validateStorageMoverAgent_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermSynapseWorkspace) validatePutTimeoutsParameters(va
 	return nil
 }
 
+func validateDataAzurermSynapseWorkspace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermSynapseWorkspace_IsConstructParameters(x interface{}) error {
 	return nil
 }

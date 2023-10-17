@@ -7,6 +7,10 @@ package monitorsmartdetectoralertrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorSmartDetectorAlertRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorSmartDetectorAlertRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitorSmartDetectorAlertRule) validateGetStringMapAttributeP
 	return nil
 }
 
+func (m *jsiiProxy_MonitorSmartDetectorAlertRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorSmartDetectorAlertRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorSmartDetectorAlertRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MonitorSmartDetectorAlertRule) validatePutActionGroupParamete
 }
 
 func (m *jsiiProxy_MonitorSmartDetectorAlertRule) validatePutTimeoutsParameters(value *MonitorSmartDetectorAlertRuleTimeouts) error {
+	return nil
+}
+
+func validateMonitorSmartDetectorAlertRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

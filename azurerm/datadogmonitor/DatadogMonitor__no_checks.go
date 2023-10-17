@@ -7,6 +7,10 @@ package datadogmonitor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatadogMonitor) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatadogMonitor) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DatadogMonitor) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (d *jsiiProxy_DatadogMonitor) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatadogMonitor) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatadogMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (d *jsiiProxy_DatadogMonitor) validatePutTimeoutsParameters(value *DatadogM
 }
 
 func (d *jsiiProxy_DatadogMonitor) validatePutUserParameters(value *DatadogMonitorUser) error {
+	return nil
+}
+
+func validateDatadogMonitor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

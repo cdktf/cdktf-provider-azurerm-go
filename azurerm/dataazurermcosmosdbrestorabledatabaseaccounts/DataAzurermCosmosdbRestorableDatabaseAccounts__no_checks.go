@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermCosmosdbRestorableDatabaseAccounts) validatePutTim
 	return nil
 }
 
+func validateDataAzurermCosmosdbRestorableDatabaseAccounts_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermCosmosdbRestorableDatabaseAccounts_IsConstructParameters(x interface{}) error {
 	return nil
 }

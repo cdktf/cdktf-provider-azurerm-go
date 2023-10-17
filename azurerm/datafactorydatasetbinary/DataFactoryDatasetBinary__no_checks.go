@@ -7,6 +7,10 @@ package datafactorydatasetbinary
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryDatasetBinary) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetBinary) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryDatasetBinary) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryDatasetBinary) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetBinary) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryDatasetBinary) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (d *jsiiProxy_DataFactoryDatasetBinary) validatePutSftpServerLocationParame
 }
 
 func (d *jsiiProxy_DataFactoryDatasetBinary) validatePutTimeoutsParameters(value *DataFactoryDatasetBinaryTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryDatasetBinary_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

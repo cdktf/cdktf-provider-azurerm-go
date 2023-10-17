@@ -7,6 +7,10 @@ package customipprefix
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CustomIpPrefix) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomIpPrefix) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CustomIpPrefix) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (c *jsiiProxy_CustomIpPrefix) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomIpPrefix) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomIpPrefix) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CustomIpPrefix) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (c *jsiiProxy_CustomIpPrefix) validatePutTimeoutsParameters(value *CustomIpPrefixTimeouts) error {
+	return nil
+}
+
+func validateCustomIpPrefix_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

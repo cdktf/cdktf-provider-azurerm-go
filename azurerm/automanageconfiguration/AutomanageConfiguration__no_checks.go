@@ -7,6 +7,10 @@ package automanageconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutomanageConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomanageConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AutomanageConfiguration) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (a *jsiiProxy_AutomanageConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomanageConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutomanageConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (a *jsiiProxy_AutomanageConfiguration) validatePutBackupParameters(value *A
 }
 
 func (a *jsiiProxy_AutomanageConfiguration) validatePutTimeoutsParameters(value *AutomanageConfigurationTimeouts) error {
+	return nil
+}
+
+func validateAutomanageConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

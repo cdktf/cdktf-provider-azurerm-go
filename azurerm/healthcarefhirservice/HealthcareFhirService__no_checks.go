@@ -7,6 +7,10 @@ package healthcarefhirservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HealthcareFhirService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareFhirService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (h *jsiiProxy_HealthcareFhirService) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareFhirService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareFhirService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareFhirService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (h *jsiiProxy_HealthcareFhirService) validatePutOciArtifactParameters(value
 }
 
 func (h *jsiiProxy_HealthcareFhirService) validatePutTimeoutsParameters(value *HealthcareFhirServiceTimeouts) error {
+	return nil
+}
+
+func validateHealthcareFhirService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

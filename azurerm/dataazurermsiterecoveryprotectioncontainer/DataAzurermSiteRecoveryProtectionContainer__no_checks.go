@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermSiteRecoveryProtectionContainer) validatePutTimeou
 	return nil
 }
 
+func validateDataAzurermSiteRecoveryProtectionContainer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermSiteRecoveryProtectionContainer_IsConstructParameters(x interface{}) error {
 	return nil
 }

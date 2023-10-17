@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermNetappVolumeQuotaRule) validatePutTimeoutsParamete
 	return nil
 }
 
+func validateDataAzurermNetappVolumeQuotaRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermNetappVolumeQuotaRule_IsConstructParameters(x interface{}) error {
 	return nil
 }

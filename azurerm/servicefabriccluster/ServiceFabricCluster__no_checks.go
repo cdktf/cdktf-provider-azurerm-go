@@ -7,6 +7,10 @@ package servicefabriccluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServiceFabricCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceFabricCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServiceFabricCluster) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_ServiceFabricCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceFabricCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceFabricCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -100,6 +112,10 @@ func (s *jsiiProxy_ServiceFabricCluster) validatePutTimeoutsParameters(value *Se
 }
 
 func (s *jsiiProxy_ServiceFabricCluster) validatePutUpgradePolicyParameters(value *ServiceFabricClusterUpgradePolicy) error {
+	return nil
+}
+
+func validateServiceFabricCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

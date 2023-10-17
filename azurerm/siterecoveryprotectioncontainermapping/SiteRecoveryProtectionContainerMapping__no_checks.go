@@ -7,6 +7,10 @@ package siterecoveryprotectioncontainermapping
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SiteRecoveryProtectionContainerMapping) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryProtectionContainerMapping) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SiteRecoveryProtectionContainerMapping) validateGetStringMapA
 	return nil
 }
 
+func (s *jsiiProxy_SiteRecoveryProtectionContainerMapping) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryProtectionContainerMapping) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SiteRecoveryProtectionContainerMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SiteRecoveryProtectionContainerMapping) validatePutAutomaticU
 }
 
 func (s *jsiiProxy_SiteRecoveryProtectionContainerMapping) validatePutTimeoutsParameters(value *SiteRecoveryProtectionContainerMappingTimeouts) error {
+	return nil
+}
+
+func validateSiteRecoveryProtectionContainerMapping_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

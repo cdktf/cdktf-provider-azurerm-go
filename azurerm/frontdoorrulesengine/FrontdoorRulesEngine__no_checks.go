@@ -7,6 +7,10 @@ package frontdoorrulesengine
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FrontdoorRulesEngine) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FrontdoorRulesEngine) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FrontdoorRulesEngine) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (f *jsiiProxy_FrontdoorRulesEngine) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FrontdoorRulesEngine) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FrontdoorRulesEngine) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (f *jsiiProxy_FrontdoorRulesEngine) validatePutRuleParameters(value interfa
 }
 
 func (f *jsiiProxy_FrontdoorRulesEngine) validatePutTimeoutsParameters(value *FrontdoorRulesEngineTimeouts) error {
+	return nil
+}
+
+func validateFrontdoorRulesEngine_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

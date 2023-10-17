@@ -7,6 +7,10 @@ package botchannelfacebook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BotChannelFacebook) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelFacebook) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BotChannelFacebook) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (b *jsiiProxy_BotChannelFacebook) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelFacebook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelFacebook) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (b *jsiiProxy_BotChannelFacebook) validatePutPageParameters(value interface
 }
 
 func (b *jsiiProxy_BotChannelFacebook) validatePutTimeoutsParameters(value *BotChannelFacebookTimeouts) error {
+	return nil
+}
+
+func validateBotChannelFacebook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

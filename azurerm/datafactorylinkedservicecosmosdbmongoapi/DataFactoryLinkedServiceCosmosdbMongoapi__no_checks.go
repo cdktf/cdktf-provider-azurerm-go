@@ -7,6 +7,10 @@ package datafactorylinkedservicecosmosdbmongoapi
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapi) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapi) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapi) validateGetStringMa
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapi) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapi) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapi) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapi) validateOverrideLog
 }
 
 func (d *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapi) validatePutTimeoutsParameters(value *DataFactoryLinkedServiceCosmosdbMongoapiTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceCosmosdbMongoapi_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

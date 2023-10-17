@@ -7,6 +7,10 @@ package purviewaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PurviewAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PurviewAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PurviewAccount) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (p *jsiiProxy_PurviewAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PurviewAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PurviewAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (p *jsiiProxy_PurviewAccount) validatePutIdentityParameters(value *PurviewA
 }
 
 func (p *jsiiProxy_PurviewAccount) validatePutTimeoutsParameters(value *PurviewAccountTimeouts) error {
+	return nil
+}
+
+func validatePurviewAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

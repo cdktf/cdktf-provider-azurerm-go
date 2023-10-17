@@ -7,6 +7,10 @@ package subscriptionpolicyassignment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SubscriptionPolicyAssignment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SubscriptionPolicyAssignment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SubscriptionPolicyAssignment) validateGetStringMapAttributePa
 	return nil
 }
 
+func (s *jsiiProxy_SubscriptionPolicyAssignment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SubscriptionPolicyAssignment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SubscriptionPolicyAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (s *jsiiProxy_SubscriptionPolicyAssignment) validatePutResourceSelectorsPar
 }
 
 func (s *jsiiProxy_SubscriptionPolicyAssignment) validatePutTimeoutsParameters(value *SubscriptionPolicyAssignmentTimeouts) error {
+	return nil
+}
+
+func validateSubscriptionPolicyAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

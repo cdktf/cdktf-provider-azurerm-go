@@ -7,6 +7,10 @@ package botchannelsms
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BotChannelSms) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelSms) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BotChannelSms) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (b *jsiiProxy_BotChannelSms) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelSms) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelSms) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BotChannelSms) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (b *jsiiProxy_BotChannelSms) validatePutTimeoutsParameters(value *BotChannelSmsTimeouts) error {
+	return nil
+}
+
+func validateBotChannelSms_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

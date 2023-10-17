@@ -7,6 +7,10 @@ package datafactoryintegrationruntimeazuressis
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validateGetStringMapA
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validatePutTimeoutsPa
 }
 
 func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validatePutVnetIntegrationParameters(value *DataFactoryIntegrationRuntimeAzureSsisVnetIntegration) error {
+	return nil
+}
+
+func validateDataFactoryIntegrationRuntimeAzureSsis_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

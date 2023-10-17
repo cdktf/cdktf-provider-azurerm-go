@@ -7,6 +7,10 @@ package maintenanceassignmentdedicatedhost
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MaintenanceAssignmentDedicatedHost) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MaintenanceAssignmentDedicatedHost) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MaintenanceAssignmentDedicatedHost) validateGetStringMapAttri
 	return nil
 }
 
+func (m *jsiiProxy_MaintenanceAssignmentDedicatedHost) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MaintenanceAssignmentDedicatedHost) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MaintenanceAssignmentDedicatedHost) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MaintenanceAssignmentDedicatedHost) validateOverrideLogicalId
 }
 
 func (m *jsiiProxy_MaintenanceAssignmentDedicatedHost) validatePutTimeoutsParameters(value *MaintenanceAssignmentDedicatedHostTimeouts) error {
+	return nil
+}
+
+func validateMaintenanceAssignmentDedicatedHost_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

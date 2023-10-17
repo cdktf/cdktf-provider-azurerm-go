@@ -7,6 +7,10 @@ package botchanneldirectlinespeech
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BotChannelDirectLineSpeech) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelDirectLineSpeech) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BotChannelDirectLineSpeech) validateGetStringMapAttributePara
 	return nil
 }
 
+func (b *jsiiProxy_BotChannelDirectLineSpeech) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelDirectLineSpeech) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelDirectLineSpeech) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BotChannelDirectLineSpeech) validateOverrideLogicalIdParamete
 }
 
 func (b *jsiiProxy_BotChannelDirectLineSpeech) validatePutTimeoutsParameters(value *BotChannelDirectLineSpeechTimeouts) error {
+	return nil
+}
+
+func validateBotChannelDirectLineSpeech_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

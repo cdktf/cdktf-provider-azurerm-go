@@ -7,6 +7,10 @@ package applicationinsightsstandardwebtest
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApplicationInsightsStandardWebTest) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationInsightsStandardWebTest) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApplicationInsightsStandardWebTest) validateGetStringMapAttri
 	return nil
 }
 
+func (a *jsiiProxy_ApplicationInsightsStandardWebTest) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationInsightsStandardWebTest) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationInsightsStandardWebTest) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (a *jsiiProxy_ApplicationInsightsStandardWebTest) validatePutTimeoutsParame
 }
 
 func (a *jsiiProxy_ApplicationInsightsStandardWebTest) validatePutValidationRulesParameters(value *ApplicationInsightsStandardWebTestValidationRules) error {
+	return nil
+}
+
+func validateApplicationInsightsStandardWebTest_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

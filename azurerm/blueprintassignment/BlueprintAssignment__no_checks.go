@@ -7,6 +7,10 @@ package blueprintassignment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BlueprintAssignment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BlueprintAssignment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BlueprintAssignment) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (b *jsiiProxy_BlueprintAssignment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BlueprintAssignment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BlueprintAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (b *jsiiProxy_BlueprintAssignment) validatePutIdentityParameters(value *Blu
 }
 
 func (b *jsiiProxy_BlueprintAssignment) validatePutTimeoutsParameters(value *BlueprintAssignmentTimeouts) error {
+	return nil
+}
+
+func validateBlueprintAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package cognitiveaccountcustomermanagedkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CognitiveAccountCustomerManagedKeyA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitiveAccountCustomerManagedKeyA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CognitiveAccountCustomerManagedKeyA) validateGetStringMapAttr
 	return nil
 }
 
+func (c *jsiiProxy_CognitiveAccountCustomerManagedKeyA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitiveAccountCustomerManagedKeyA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitiveAccountCustomerManagedKeyA) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CognitiveAccountCustomerManagedKeyA) validateOverrideLogicalI
 }
 
 func (c *jsiiProxy_CognitiveAccountCustomerManagedKeyA) validatePutTimeoutsParameters(value *CognitiveAccountCustomerManagedKeyTimeouts) error {
+	return nil
+}
+
+func validateCognitiveAccountCustomerManagedKeyA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package mssqlserver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MssqlServer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlServer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MssqlServer) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (m *jsiiProxy_MssqlServer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlServer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (m *jsiiProxy_MssqlServer) validatePutIdentityParameters(value *MssqlServer
 }
 
 func (m *jsiiProxy_MssqlServer) validatePutTimeoutsParameters(value *MssqlServerTimeouts) error {
+	return nil
+}
+
+func validateMssqlServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

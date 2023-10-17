@@ -7,6 +7,10 @@ package sqlserver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SqlServer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlServer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SqlServer) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (s *jsiiProxy_SqlServer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlServer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (s *jsiiProxy_SqlServer) validatePutThreatDetectionPolicyParameters(value *
 }
 
 func (s *jsiiProxy_SqlServer) validatePutTimeoutsParameters(value *SqlServerTimeouts) error {
+	return nil
+}
+
+func validateSqlServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

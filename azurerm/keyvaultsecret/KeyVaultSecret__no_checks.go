@@ -7,6 +7,10 @@ package keyvaultsecret
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KeyVaultSecret) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultSecret) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KeyVaultSecret) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (k *jsiiProxy_KeyVaultSecret) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultSecret) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KeyVaultSecret) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KeyVaultSecret) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (k *jsiiProxy_KeyVaultSecret) validatePutTimeoutsParameters(value *KeyVaultSecretTimeouts) error {
+	return nil
+}
+
+func validateKeyVaultSecret_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

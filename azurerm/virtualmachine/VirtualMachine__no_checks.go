@@ -7,6 +7,10 @@ package virtualmachine
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualMachine) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualMachine) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VirtualMachine) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (v *jsiiProxy_VirtualMachine) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualMachine) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualMachine) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -100,6 +112,10 @@ func (v *jsiiProxy_VirtualMachine) validatePutStorageOsDiskParameters(value *Vir
 }
 
 func (v *jsiiProxy_VirtualMachine) validatePutTimeoutsParameters(value *VirtualMachineTimeouts) error {
+	return nil
+}
+
+func validateVirtualMachine_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

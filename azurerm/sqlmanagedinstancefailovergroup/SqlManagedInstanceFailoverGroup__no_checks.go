@@ -7,6 +7,10 @@ package sqlmanagedinstancefailovergroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SqlManagedInstanceFailoverGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlManagedInstanceFailoverGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SqlManagedInstanceFailoverGroup) validateGetStringMapAttribut
 	return nil
 }
 
+func (s *jsiiProxy_SqlManagedInstanceFailoverGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlManagedInstanceFailoverGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlManagedInstanceFailoverGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SqlManagedInstanceFailoverGroup) validatePutReadWriteEndpoint
 }
 
 func (s *jsiiProxy_SqlManagedInstanceFailoverGroup) validatePutTimeoutsParameters(value *SqlManagedInstanceFailoverGroupTimeouts) error {
+	return nil
+}
+
+func validateSqlManagedInstanceFailoverGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package logicapptriggerrecurrence
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogicAppTriggerRecurrence) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogicAppTriggerRecurrence) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LogicAppTriggerRecurrence) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (l *jsiiProxy_LogicAppTriggerRecurrence) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogicAppTriggerRecurrence) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogicAppTriggerRecurrence) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (l *jsiiProxy_LogicAppTriggerRecurrence) validatePutScheduleParameters(valu
 }
 
 func (l *jsiiProxy_LogicAppTriggerRecurrence) validatePutTimeoutsParameters(value *LogicAppTriggerRecurrenceTimeouts) error {
+	return nil
+}
+
+func validateLogicAppTriggerRecurrence_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

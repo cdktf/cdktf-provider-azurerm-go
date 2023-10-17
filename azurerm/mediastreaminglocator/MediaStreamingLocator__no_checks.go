@@ -7,6 +7,10 @@ package mediastreaminglocator
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MediaStreamingLocator) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaStreamingLocator) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MediaStreamingLocator) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (m *jsiiProxy_MediaStreamingLocator) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaStreamingLocator) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MediaStreamingLocator) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MediaStreamingLocator) validatePutContentKeyParameters(value 
 }
 
 func (m *jsiiProxy_MediaStreamingLocator) validatePutTimeoutsParameters(value *MediaStreamingLocatorTimeouts) error {
+	return nil
+}
+
+func validateMediaStreamingLocator_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

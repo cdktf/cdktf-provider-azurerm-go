@@ -5,10 +5,10 @@ package springcloudapplicationliveview
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/springcloudapplicationliveview/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/springcloudapplicationliveview/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -72,6 +72,9 @@ type SpringCloudApplicationLiveView interface {
 	TerraformResourceType() *string
 	Timeouts() SpringCloudApplicationLiveViewTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -93,7 +96,12 @@ type SpringCloudApplicationLiveView interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -489,6 +497,25 @@ func (j *jsiiProxy_SpringCloudApplicationLiveView)SetSpringCloudServiceId(val *s
 	)
 }
 
+// Generates CDKTF code for importing a SpringCloudApplicationLiveView resource upon running "cdktf plan <stack-name>".
+func SpringCloudApplicationLiveView_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateSpringCloudApplicationLiveView_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveView",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -571,6 +598,17 @@ func SpringCloudApplicationLiveView_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (s *jsiiProxy_SpringCloudApplicationLiveView) AddMoveTarget(moveTarget *string) {
+	if err := s.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (s *jsiiProxy_SpringCloudApplicationLiveView) AddOverride(path *string, value interface{}) {
@@ -728,6 +766,17 @@ func (s *jsiiProxy_SpringCloudApplicationLiveView) GetStringMapAttribute(terrafo
 	return returns
 }
 
+func (s *jsiiProxy_SpringCloudApplicationLiveView) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := s.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (s *jsiiProxy_SpringCloudApplicationLiveView) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -742,6 +791,17 @@ func (s *jsiiProxy_SpringCloudApplicationLiveView) InterpolationForAttribute(ter
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SpringCloudApplicationLiveView) MoveTo(moveTarget *string, index interface{}) {
+	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (s *jsiiProxy_SpringCloudApplicationLiveView) OverrideLogicalId(newLogicalId *string) {

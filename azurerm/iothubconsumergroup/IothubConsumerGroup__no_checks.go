@@ -7,6 +7,10 @@ package iothubconsumergroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IothubConsumerGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubConsumerGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IothubConsumerGroup) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (i *jsiiProxy_IothubConsumerGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubConsumerGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IothubConsumerGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IothubConsumerGroup) validateOverrideLogicalIdParameters(newL
 }
 
 func (i *jsiiProxy_IothubConsumerGroup) validatePutTimeoutsParameters(value *IothubConsumerGroupTimeouts) error {
+	return nil
+}
+
+func validateIothubConsumerGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

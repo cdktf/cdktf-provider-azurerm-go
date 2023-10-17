@@ -7,6 +7,10 @@ package managementlock
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_ManagementLock) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagementLock) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_ManagementLock) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (m *jsiiProxy_ManagementLock) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagementLock) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagementLock) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_ManagementLock) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (m *jsiiProxy_ManagementLock) validatePutTimeoutsParameters(value *ManagementLockTimeouts) error {
+	return nil
+}
+
+func validateManagementLock_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

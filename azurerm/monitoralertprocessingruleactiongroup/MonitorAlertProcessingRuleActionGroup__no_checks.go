@@ -7,6 +7,10 @@ package monitoralertprocessingruleactiongroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroup) validateGetStringMapAt
 	return nil
 }
 
+func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroup) validatePutSchedulePar
 }
 
 func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroup) validatePutTimeoutsParameters(value *MonitorAlertProcessingRuleActionGroupTimeouts) error {
+	return nil
+}
+
+func validateMonitorAlertProcessingRuleActionGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

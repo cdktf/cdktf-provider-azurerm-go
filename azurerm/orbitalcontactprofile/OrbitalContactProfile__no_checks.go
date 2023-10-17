@@ -7,6 +7,10 @@ package orbitalcontactprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrbitalContactProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrbitalContactProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OrbitalContactProfile) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (o *jsiiProxy_OrbitalContactProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrbitalContactProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrbitalContactProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (o *jsiiProxy_OrbitalContactProfile) validatePutLinksParameters(value inter
 }
 
 func (o *jsiiProxy_OrbitalContactProfile) validatePutTimeoutsParameters(value *OrbitalContactProfileTimeouts) error {
+	return nil
+}
+
+func validateOrbitalContactProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

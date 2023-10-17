@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermPrivateDnsCnameRecord) validatePutTimeoutsParamete
 	return nil
 }
 
+func validateDataAzurermPrivateDnsCnameRecord_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermPrivateDnsCnameRecord_IsConstructParameters(x interface{}) error {
 	return nil
 }

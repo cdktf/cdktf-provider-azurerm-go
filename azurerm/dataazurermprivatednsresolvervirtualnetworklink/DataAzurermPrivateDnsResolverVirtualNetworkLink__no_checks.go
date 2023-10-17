@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermPrivateDnsResolverVirtualNetworkLink) validatePutT
 	return nil
 }
 
+func validateDataAzurermPrivateDnsResolverVirtualNetworkLink_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermPrivateDnsResolverVirtualNetworkLink_IsConstructParameters(x interface{}) error {
 	return nil
 }

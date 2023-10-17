@@ -7,6 +7,10 @@ package signalrsharedprivatelinkresource
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SignalrSharedPrivateLinkResource) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SignalrSharedPrivateLinkResource) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SignalrSharedPrivateLinkResource) validateGetStringMapAttribu
 	return nil
 }
 
+func (s *jsiiProxy_SignalrSharedPrivateLinkResource) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SignalrSharedPrivateLinkResource) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SignalrSharedPrivateLinkResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SignalrSharedPrivateLinkResource) validateOverrideLogicalIdPa
 }
 
 func (s *jsiiProxy_SignalrSharedPrivateLinkResource) validatePutTimeoutsParameters(value *SignalrSharedPrivateLinkResourceTimeouts) error {
+	return nil
+}
+
+func validateSignalrSharedPrivateLinkResource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

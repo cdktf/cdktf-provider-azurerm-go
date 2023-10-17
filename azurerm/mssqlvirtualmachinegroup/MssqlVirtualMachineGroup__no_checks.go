@@ -7,6 +7,10 @@ package mssqlvirtualmachinegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MssqlVirtualMachineGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlVirtualMachineGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MssqlVirtualMachineGroup) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (m *jsiiProxy_MssqlVirtualMachineGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlVirtualMachineGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlVirtualMachineGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MssqlVirtualMachineGroup) validatePutTimeoutsParameters(value
 }
 
 func (m *jsiiProxy_MssqlVirtualMachineGroup) validatePutWsfcDomainProfileParameters(value *MssqlVirtualMachineGroupWsfcDomainProfile) error {
+	return nil
+}
+
+func validateMssqlVirtualMachineGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

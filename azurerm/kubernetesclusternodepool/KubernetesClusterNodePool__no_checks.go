@@ -7,6 +7,10 @@ package kubernetesclusternodepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KubernetesClusterNodePool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesClusterNodePool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KubernetesClusterNodePool) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesClusterNodePool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesClusterNodePool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KubernetesClusterNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (k *jsiiProxy_KubernetesClusterNodePool) validatePutUpgradeSettingsParamete
 }
 
 func (k *jsiiProxy_KubernetesClusterNodePool) validatePutWindowsProfileParameters(value *KubernetesClusterNodePoolWindowsProfile) error {
+	return nil
+}
+
+func validateKubernetesClusterNodePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

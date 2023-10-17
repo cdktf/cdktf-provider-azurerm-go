@@ -7,6 +7,10 @@ package datashare
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataShare) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataShare) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataShare) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (d *jsiiProxy_DataShare) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataShare) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataShare) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataShare) validatePutSnapshotScheduleParameters(value *DataS
 }
 
 func (d *jsiiProxy_DataShare) validatePutTimeoutsParameters(value *DataShareTimeouts) error {
+	return nil
+}
+
+func validateDataShare_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

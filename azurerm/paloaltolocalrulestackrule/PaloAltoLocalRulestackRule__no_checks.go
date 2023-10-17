@@ -7,6 +7,10 @@ package paloaltolocalrulestackrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PaloAltoLocalRulestackRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PaloAltoLocalRulestackRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PaloAltoLocalRulestackRule) validateGetStringMapAttributePara
 	return nil
 }
 
+func (p *jsiiProxy_PaloAltoLocalRulestackRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PaloAltoLocalRulestackRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PaloAltoLocalRulestackRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (p *jsiiProxy_PaloAltoLocalRulestackRule) validatePutSourceParameters(value
 }
 
 func (p *jsiiProxy_PaloAltoLocalRulestackRule) validatePutTimeoutsParameters(value *PaloAltoLocalRulestackRuleTimeouts) error {
+	return nil
+}
+
+func validatePaloAltoLocalRulestackRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

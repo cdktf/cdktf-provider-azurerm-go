@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermTenantTemplateDeployment) validatePutTimeoutsParam
 	return nil
 }
 
+func validateDataAzurermTenantTemplateDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermTenantTemplateDeployment_IsConstructParameters(x interface{}) error {
 	return nil
 }

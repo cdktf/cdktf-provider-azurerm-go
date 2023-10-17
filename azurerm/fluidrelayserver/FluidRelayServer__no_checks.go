@@ -7,6 +7,10 @@ package fluidrelayserver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FluidRelayServer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FluidRelayServer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FluidRelayServer) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (f *jsiiProxy_FluidRelayServer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FluidRelayServer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FluidRelayServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (f *jsiiProxy_FluidRelayServer) validatePutIdentityParameters(value *FluidR
 }
 
 func (f *jsiiProxy_FluidRelayServer) validatePutTimeoutsParameters(value *FluidRelayServerTimeouts) error {
+	return nil
+}
+
+func validateFluidRelayServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

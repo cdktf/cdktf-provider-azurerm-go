@@ -7,6 +7,10 @@ package vmwareexpressrouteauthorization
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VmwareExpressRouteAuthorization) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareExpressRouteAuthorization) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VmwareExpressRouteAuthorization) validateGetStringMapAttribut
 	return nil
 }
 
+func (v *jsiiProxy_VmwareExpressRouteAuthorization) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareExpressRouteAuthorization) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareExpressRouteAuthorization) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (v *jsiiProxy_VmwareExpressRouteAuthorization) validateOverrideLogicalIdPar
 }
 
 func (v *jsiiProxy_VmwareExpressRouteAuthorization) validatePutTimeoutsParameters(value *VmwareExpressRouteAuthorizationTimeouts) error {
+	return nil
+}
+
+func validateVmwareExpressRouteAuthorization_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

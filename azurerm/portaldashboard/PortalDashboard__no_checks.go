@@ -7,6 +7,10 @@ package portaldashboard
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PortalDashboard) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PortalDashboard) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PortalDashboard) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (p *jsiiProxy_PortalDashboard) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PortalDashboard) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PortalDashboard) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PortalDashboard) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (p *jsiiProxy_PortalDashboard) validatePutTimeoutsParameters(value *PortalDashboardTimeouts) error {
+	return nil
+}
+
+func validatePortalDashboard_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

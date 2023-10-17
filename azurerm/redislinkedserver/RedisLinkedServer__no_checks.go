@@ -7,6 +7,10 @@ package redislinkedserver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RedisLinkedServer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisLinkedServer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RedisLinkedServer) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (r *jsiiProxy_RedisLinkedServer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisLinkedServer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedisLinkedServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_RedisLinkedServer) validateOverrideLogicalIdParameters(newLog
 }
 
 func (r *jsiiProxy_RedisLinkedServer) validatePutTimeoutsParameters(value *RedisLinkedServerTimeouts) error {
+	return nil
+}
+
+func validateRedisLinkedServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

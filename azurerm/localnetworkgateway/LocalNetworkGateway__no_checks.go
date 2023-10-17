@@ -7,6 +7,10 @@ package localnetworkgateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LocalNetworkGateway) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LocalNetworkGateway) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LocalNetworkGateway) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (l *jsiiProxy_LocalNetworkGateway) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LocalNetworkGateway) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LocalNetworkGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (l *jsiiProxy_LocalNetworkGateway) validatePutBgpSettingsParameters(value *
 }
 
 func (l *jsiiProxy_LocalNetworkGateway) validatePutTimeoutsParameters(value *LocalNetworkGatewayTimeouts) error {
+	return nil
+}
+
+func validateLocalNetworkGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

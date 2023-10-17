@@ -7,6 +7,10 @@ package galleryapplicationversion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GalleryApplicationVersion) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GalleryApplicationVersion) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GalleryApplicationVersion) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GalleryApplicationVersion) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GalleryApplicationVersion) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GalleryApplicationVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (g *jsiiProxy_GalleryApplicationVersion) validatePutTargetRegionParameters(
 }
 
 func (g *jsiiProxy_GalleryApplicationVersion) validatePutTimeoutsParameters(value *GalleryApplicationVersionTimeouts) error {
+	return nil
+}
+
+func validateGalleryApplicationVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

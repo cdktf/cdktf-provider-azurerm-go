@@ -7,6 +7,10 @@ package apimanagementapirelease
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiManagementApiRelease) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementApiRelease) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApiManagementApiRelease) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (a *jsiiProxy_ApiManagementApiRelease) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementApiRelease) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiManagementApiRelease) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApiManagementApiRelease) validateOverrideLogicalIdParameters(
 }
 
 func (a *jsiiProxy_ApiManagementApiRelease) validatePutTimeoutsParameters(value *ApiManagementApiReleaseTimeouts) error {
+	return nil
+}
+
+func validateApiManagementApiRelease_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

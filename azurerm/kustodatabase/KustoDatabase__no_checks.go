@@ -7,6 +7,10 @@ package kustodatabase
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KustoDatabase) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KustoDatabase) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (k *jsiiProxy_KustoDatabase) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoDatabase) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KustoDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KustoDatabase) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (k *jsiiProxy_KustoDatabase) validatePutTimeoutsParameters(value *KustoDatabaseTimeouts) error {
+	return nil
+}
+
+func validateKustoDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

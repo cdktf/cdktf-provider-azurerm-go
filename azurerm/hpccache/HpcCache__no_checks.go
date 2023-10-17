@@ -7,6 +7,10 @@ package hpccache
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HpcCache) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HpcCache) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (h *jsiiProxy_HpcCache) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (h *jsiiProxy_HpcCache) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HpcCache) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HpcCache) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -80,6 +92,10 @@ func (h *jsiiProxy_HpcCache) validatePutIdentityParameters(value *HpcCacheIdenti
 }
 
 func (h *jsiiProxy_HpcCache) validatePutTimeoutsParameters(value *HpcCacheTimeouts) error {
+	return nil
+}
+
+func validateHpcCache_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermActiveDirectoryDomainService) validatePutTimeoutsP
 	return nil
 }
 
+func validateDataAzurermActiveDirectoryDomainService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermActiveDirectoryDomainService_IsConstructParameters(x interface{}) error {
 	return nil
 }

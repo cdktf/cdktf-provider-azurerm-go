@@ -7,6 +7,10 @@ package iothubendpointeventhub
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IothubEndpointEventhub) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubEndpointEventhub) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IothubEndpointEventhub) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (i *jsiiProxy_IothubEndpointEventhub) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubEndpointEventhub) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IothubEndpointEventhub) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IothubEndpointEventhub) validateOverrideLogicalIdParameters(n
 }
 
 func (i *jsiiProxy_IothubEndpointEventhub) validatePutTimeoutsParameters(value *IothubEndpointEventhubTimeouts) error {
+	return nil
+}
+
+func validateIothubEndpointEventhub_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

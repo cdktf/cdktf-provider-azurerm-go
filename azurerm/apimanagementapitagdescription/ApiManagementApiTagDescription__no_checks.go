@@ -7,6 +7,10 @@ package apimanagementapitagdescription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiManagementApiTagDescription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementApiTagDescription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApiManagementApiTagDescription) validateGetStringMapAttribute
 	return nil
 }
 
+func (a *jsiiProxy_ApiManagementApiTagDescription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementApiTagDescription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiManagementApiTagDescription) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApiManagementApiTagDescription) validateOverrideLogicalIdPara
 }
 
 func (a *jsiiProxy_ApiManagementApiTagDescription) validatePutTimeoutsParameters(value *ApiManagementApiTagDescriptionTimeouts) error {
+	return nil
+}
+
+func validateApiManagementApiTagDescription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

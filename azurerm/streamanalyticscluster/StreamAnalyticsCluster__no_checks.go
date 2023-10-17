@@ -7,6 +7,10 @@ package streamanalyticscluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StreamAnalyticsCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StreamAnalyticsCluster) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (s *jsiiProxy_StreamAnalyticsCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamAnalyticsCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_StreamAnalyticsCluster) validateOverrideLogicalIdParameters(n
 }
 
 func (s *jsiiProxy_StreamAnalyticsCluster) validatePutTimeoutsParameters(value *StreamAnalyticsClusterTimeouts) error {
+	return nil
+}
+
+func validateStreamAnalyticsCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

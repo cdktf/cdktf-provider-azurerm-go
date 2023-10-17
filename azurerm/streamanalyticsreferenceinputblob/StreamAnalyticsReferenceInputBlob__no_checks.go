@@ -7,6 +7,10 @@ package streamanalyticsreferenceinputblob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StreamAnalyticsReferenceInputBlob) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsReferenceInputBlob) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StreamAnalyticsReferenceInputBlob) validateGetStringMapAttrib
 	return nil
 }
 
+func (s *jsiiProxy_StreamAnalyticsReferenceInputBlob) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsReferenceInputBlob) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamAnalyticsReferenceInputBlob) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_StreamAnalyticsReferenceInputBlob) validatePutSerializationPa
 }
 
 func (s *jsiiProxy_StreamAnalyticsReferenceInputBlob) validatePutTimeoutsParameters(value *StreamAnalyticsReferenceInputBlobTimeouts) error {
+	return nil
+}
+
+func validateStreamAnalyticsReferenceInputBlob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

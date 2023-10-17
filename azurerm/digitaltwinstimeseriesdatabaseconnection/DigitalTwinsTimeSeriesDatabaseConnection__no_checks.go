@@ -7,6 +7,10 @@ package digitaltwinstimeseriesdatabaseconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) validateGetStringMa
 	return nil
 }
 
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) validateOverrideLog
 }
 
 func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) validatePutTimeoutsParameters(value *DigitalTwinsTimeSeriesDatabaseConnectionTimeouts) error {
+	return nil
+}
+
+func validateDigitalTwinsTimeSeriesDatabaseConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

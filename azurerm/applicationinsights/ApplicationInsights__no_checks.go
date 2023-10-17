@@ -7,6 +7,10 @@ package applicationinsights
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApplicationInsights) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationInsights) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApplicationInsights) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (a *jsiiProxy_ApplicationInsights) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationInsights) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationInsights) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApplicationInsights) validateOverrideLogicalIdParameters(newL
 }
 
 func (a *jsiiProxy_ApplicationInsights) validatePutTimeoutsParameters(value *ApplicationInsightsTimeouts) error {
+	return nil
+}
+
+func validateApplicationInsights_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

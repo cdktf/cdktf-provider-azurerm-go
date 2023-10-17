@@ -7,6 +7,10 @@ package databoxedgeorder
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataboxEdgeOrder) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataboxEdgeOrder) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataboxEdgeOrder) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (d *jsiiProxy_DataboxEdgeOrder) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataboxEdgeOrder) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataboxEdgeOrder) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (d *jsiiProxy_DataboxEdgeOrder) validatePutShipmentAddressParameters(value 
 }
 
 func (d *jsiiProxy_DataboxEdgeOrder) validatePutTimeoutsParameters(value *DataboxEdgeOrderTimeouts) error {
+	return nil
+}
+
+func validateDataboxEdgeOrder_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

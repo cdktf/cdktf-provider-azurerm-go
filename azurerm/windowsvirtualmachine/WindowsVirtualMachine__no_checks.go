@@ -7,6 +7,10 @@ package windowsvirtualmachine
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WindowsVirtualMachine) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsVirtualMachine) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WindowsVirtualMachine) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (w *jsiiProxy_WindowsVirtualMachine) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsVirtualMachine) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WindowsVirtualMachine) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -100,6 +112,10 @@ func (w *jsiiProxy_WindowsVirtualMachine) validatePutTimeoutsParameters(value *W
 }
 
 func (w *jsiiProxy_WindowsVirtualMachine) validatePutWinrmListenerParameters(value interface{}) error {
+	return nil
+}
+
+func validateWindowsVirtualMachine_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

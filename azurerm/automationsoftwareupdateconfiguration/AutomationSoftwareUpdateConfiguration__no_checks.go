@@ -7,6 +7,10 @@ package automationsoftwareupdateconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validateGetStringMapAt
 	return nil
 }
 
+func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -80,6 +92,10 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutTimeoutsPar
 }
 
 func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) validatePutWindowsParameters(value *AutomationSoftwareUpdateConfigurationWindows) error {
+	return nil
+}
+
+func validateAutomationSoftwareUpdateConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package mssqljobcredential
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MssqlJobCredential) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlJobCredential) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MssqlJobCredential) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (m *jsiiProxy_MssqlJobCredential) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlJobCredential) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlJobCredential) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MssqlJobCredential) validateOverrideLogicalIdParameters(newLo
 }
 
 func (m *jsiiProxy_MssqlJobCredential) validatePutTimeoutsParameters(value *MssqlJobCredentialTimeouts) error {
+	return nil
+}
+
+func validateMssqlJobCredential_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

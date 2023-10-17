@@ -7,6 +7,10 @@ package postgresqlserverkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PostgresqlServerKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresqlServerKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PostgresqlServerKey) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (p *jsiiProxy_PostgresqlServerKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresqlServerKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PostgresqlServerKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PostgresqlServerKey) validateOverrideLogicalIdParameters(newL
 }
 
 func (p *jsiiProxy_PostgresqlServerKey) validatePutTimeoutsParameters(value *PostgresqlServerKeyTimeouts) error {
+	return nil
+}
+
+func validatePostgresqlServerKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

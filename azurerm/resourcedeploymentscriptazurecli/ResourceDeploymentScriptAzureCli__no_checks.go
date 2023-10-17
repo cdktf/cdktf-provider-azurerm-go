@@ -7,6 +7,10 @@ package resourcedeploymentscriptazurecli
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_ResourceDeploymentScriptAzureCli) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceDeploymentScriptAzureCli) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_ResourceDeploymentScriptAzureCli) validateGetStringMapAttribu
 	return nil
 }
 
+func (r *jsiiProxy_ResourceDeploymentScriptAzureCli) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceDeploymentScriptAzureCli) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourceDeploymentScriptAzureCli) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (r *jsiiProxy_ResourceDeploymentScriptAzureCli) validatePutStorageAccountPa
 }
 
 func (r *jsiiProxy_ResourceDeploymentScriptAzureCli) validatePutTimeoutsParameters(value *ResourceDeploymentScriptAzureCliTimeouts) error {
+	return nil
+}
+
+func validateResourceDeploymentScriptAzureCli_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

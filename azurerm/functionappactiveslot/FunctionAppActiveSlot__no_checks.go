@@ -7,6 +7,10 @@ package functionappactiveslot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FunctionAppActiveSlot) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FunctionAppActiveSlot) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FunctionAppActiveSlot) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (f *jsiiProxy_FunctionAppActiveSlot) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FunctionAppActiveSlot) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FunctionAppActiveSlot) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (f *jsiiProxy_FunctionAppActiveSlot) validateOverrideLogicalIdParameters(ne
 }
 
 func (f *jsiiProxy_FunctionAppActiveSlot) validatePutTimeoutsParameters(value *FunctionAppActiveSlotTimeouts) error {
+	return nil
+}
+
+func validateFunctionAppActiveSlot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

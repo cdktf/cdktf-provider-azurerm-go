@@ -7,6 +7,10 @@ package monitorprivatelinkscopedservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorPrivateLinkScopedService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorPrivateLinkScopedService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitorPrivateLinkScopedService) validateGetStringMapAttribut
 	return nil
 }
 
+func (m *jsiiProxy_MonitorPrivateLinkScopedService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorPrivateLinkScopedService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorPrivateLinkScopedService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MonitorPrivateLinkScopedService) validateOverrideLogicalIdPar
 }
 
 func (m *jsiiProxy_MonitorPrivateLinkScopedService) validatePutTimeoutsParameters(value *MonitorPrivateLinkScopedServiceTimeouts) error {
+	return nil
+}
+
+func validateMonitorPrivateLinkScopedService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermStorageSyncGroup) validatePutTimeoutsParameters(va
 	return nil
 }
 
+func validateDataAzurermStorageSyncGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermStorageSyncGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

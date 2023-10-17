@@ -7,6 +7,10 @@ package hpccacheblobtarget
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HpcCacheBlobTarget) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HpcCacheBlobTarget) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (h *jsiiProxy_HpcCacheBlobTarget) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (h *jsiiProxy_HpcCacheBlobTarget) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HpcCacheBlobTarget) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HpcCacheBlobTarget) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (h *jsiiProxy_HpcCacheBlobTarget) validateOverrideLogicalIdParameters(newLo
 }
 
 func (h *jsiiProxy_HpcCacheBlobTarget) validatePutTimeoutsParameters(value *HpcCacheBlobTargetTimeouts) error {
+	return nil
+}
+
+func validateHpcCacheBlobTarget_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

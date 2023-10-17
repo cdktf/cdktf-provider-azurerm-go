@@ -7,6 +7,10 @@ package emailcommunicationservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EmailCommunicationService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailCommunicationService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EmailCommunicationService) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (e *jsiiProxy_EmailCommunicationService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailCommunicationService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailCommunicationService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_EmailCommunicationService) validateOverrideLogicalIdParameter
 }
 
 func (e *jsiiProxy_EmailCommunicationService) validatePutTimeoutsParameters(value *EmailCommunicationServiceTimeouts) error {
+	return nil
+}
+
+func validateEmailCommunicationService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

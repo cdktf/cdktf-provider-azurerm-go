@@ -7,6 +7,10 @@ package resourcegroupcostmanagementexport
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_ResourceGroupCostManagementExport) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceGroupCostManagementExport) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_ResourceGroupCostManagementExport) validateGetStringMapAttrib
 	return nil
 }
 
+func (r *jsiiProxy_ResourceGroupCostManagementExport) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceGroupCostManagementExport) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourceGroupCostManagementExport) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (r *jsiiProxy_ResourceGroupCostManagementExport) validatePutExportDataStora
 }
 
 func (r *jsiiProxy_ResourceGroupCostManagementExport) validatePutTimeoutsParameters(value *ResourceGroupCostManagementExportTimeouts) error {
+	return nil
+}
+
+func validateResourceGroupCostManagementExport_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

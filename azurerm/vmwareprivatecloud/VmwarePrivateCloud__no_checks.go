@@ -7,6 +7,10 @@ package vmwareprivatecloud
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VmwarePrivateCloud) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwarePrivateCloud) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VmwarePrivateCloud) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (v *jsiiProxy_VmwarePrivateCloud) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwarePrivateCloud) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwarePrivateCloud) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (v *jsiiProxy_VmwarePrivateCloud) validatePutManagementClusterParameters(va
 }
 
 func (v *jsiiProxy_VmwarePrivateCloud) validatePutTimeoutsParameters(value *VmwarePrivateCloudTimeouts) error {
+	return nil
+}
+
+func validateVmwarePrivateCloud_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package trafficmanagerprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TrafficManagerProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TrafficManagerProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (t *jsiiProxy_TrafficManagerProfile) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (t *jsiiProxy_TrafficManagerProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TrafficManagerProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TrafficManagerProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (t *jsiiProxy_TrafficManagerProfile) validatePutMonitorConfigParameters(val
 }
 
 func (t *jsiiProxy_TrafficManagerProfile) validatePutTimeoutsParameters(value *TrafficManagerProfileTimeouts) error {
+	return nil
+}
+
+func validateTrafficManagerProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

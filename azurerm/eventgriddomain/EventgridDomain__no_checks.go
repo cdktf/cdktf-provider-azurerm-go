@@ -7,6 +7,10 @@ package eventgriddomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventgridDomain) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventgridDomain) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EventgridDomain) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (e *jsiiProxy_EventgridDomain) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventgridDomain) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventgridDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (e *jsiiProxy_EventgridDomain) validatePutInputMappingFieldsParameters(valu
 }
 
 func (e *jsiiProxy_EventgridDomain) validatePutTimeoutsParameters(value *EventgridDomainTimeouts) error {
+	return nil
+}
+
+func validateEventgridDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

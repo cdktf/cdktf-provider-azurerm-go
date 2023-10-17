@@ -7,6 +7,10 @@ package logzmonitor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogzMonitor) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogzMonitor) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LogzMonitor) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (l *jsiiProxy_LogzMonitor) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogzMonitor) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogzMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (l *jsiiProxy_LogzMonitor) validatePutTimeoutsParameters(value *LogzMonitor
 }
 
 func (l *jsiiProxy_LogzMonitor) validatePutUserParameters(value *LogzMonitorUser) error {
+	return nil
+}
+
+func validateLogzMonitor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

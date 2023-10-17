@@ -7,6 +7,10 @@ package healthcaremedtechservicefhirdestination
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HealthcareMedtechServiceFhirDestination) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareMedtechServiceFhirDestination) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (h *jsiiProxy_HealthcareMedtechServiceFhirDestination) validateGetStringMap
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareMedtechServiceFhirDestination) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareMedtechServiceFhirDestination) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareMedtechServiceFhirDestination) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (h *jsiiProxy_HealthcareMedtechServiceFhirDestination) validateOverrideLogi
 }
 
 func (h *jsiiProxy_HealthcareMedtechServiceFhirDestination) validatePutTimeoutsParameters(value *HealthcareMedtechServiceFhirDestinationTimeouts) error {
+	return nil
+}
+
+func validateHealthcareMedtechServiceFhirDestination_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

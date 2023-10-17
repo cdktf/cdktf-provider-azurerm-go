@@ -7,6 +7,10 @@ package activedirectorydomainservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ActiveDirectoryDomainService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActiveDirectoryDomainService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ActiveDirectoryDomainService) validateGetStringMapAttributePa
 	return nil
 }
 
+func (a *jsiiProxy_ActiveDirectoryDomainService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActiveDirectoryDomainService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActiveDirectoryDomainService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (a *jsiiProxy_ActiveDirectoryDomainService) validatePutSecurityParameters(v
 }
 
 func (a *jsiiProxy_ActiveDirectoryDomainService) validatePutTimeoutsParameters(value *ActiveDirectoryDomainServiceTimeouts) error {
+	return nil
+}
+
+func validateActiveDirectoryDomainService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package paloaltolocalrulestackfqdnlist
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PaloAltoLocalRulestackFqdnList) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PaloAltoLocalRulestackFqdnList) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PaloAltoLocalRulestackFqdnList) validateGetStringMapAttribute
 	return nil
 }
 
+func (p *jsiiProxy_PaloAltoLocalRulestackFqdnList) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PaloAltoLocalRulestackFqdnList) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PaloAltoLocalRulestackFqdnList) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PaloAltoLocalRulestackFqdnList) validateOverrideLogicalIdPara
 }
 
 func (p *jsiiProxy_PaloAltoLocalRulestackFqdnList) validatePutTimeoutsParameters(value *PaloAltoLocalRulestackFqdnListTimeouts) error {
+	return nil
+}
+
+func validatePaloAltoLocalRulestackFqdnList_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

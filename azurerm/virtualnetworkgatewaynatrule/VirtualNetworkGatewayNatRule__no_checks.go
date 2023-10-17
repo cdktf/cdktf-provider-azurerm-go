@@ -7,6 +7,10 @@ package virtualnetworkgatewaynatrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualNetworkGatewayNatRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetworkGatewayNatRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VirtualNetworkGatewayNatRule) validateGetStringMapAttributePa
 	return nil
 }
 
+func (v *jsiiProxy_VirtualNetworkGatewayNatRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetworkGatewayNatRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualNetworkGatewayNatRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (v *jsiiProxy_VirtualNetworkGatewayNatRule) validatePutInternalMappingParam
 }
 
 func (v *jsiiProxy_VirtualNetworkGatewayNatRule) validatePutTimeoutsParameters(value *VirtualNetworkGatewayNatRuleTimeouts) error {
+	return nil
+}
+
+func validateVirtualNetworkGatewayNatRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

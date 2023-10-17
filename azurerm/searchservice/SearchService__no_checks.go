@@ -7,6 +7,10 @@ package searchservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SearchService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SearchService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SearchService) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (s *jsiiProxy_SearchService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SearchService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SearchService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SearchService) validatePutIdentityParameters(value *SearchSer
 }
 
 func (s *jsiiProxy_SearchService) validatePutTimeoutsParameters(value *SearchServiceTimeouts) error {
+	return nil
+}
+
+func validateSearchService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

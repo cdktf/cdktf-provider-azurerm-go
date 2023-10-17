@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermSpringCloudService) validatePutTimeoutsParameters(
 	return nil
 }
 
+func validateDataAzurermSpringCloudService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermSpringCloudService_IsConstructParameters(x interface{}) error {
 	return nil
 }

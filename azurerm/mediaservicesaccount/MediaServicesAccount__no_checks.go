@@ -7,6 +7,10 @@ package mediaservicesaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MediaServicesAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaServicesAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MediaServicesAccount) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (m *jsiiProxy_MediaServicesAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaServicesAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MediaServicesAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (m *jsiiProxy_MediaServicesAccount) validatePutStorageAccountParameters(val
 }
 
 func (m *jsiiProxy_MediaServicesAccount) validatePutTimeoutsParameters(value *MediaServicesAccountTimeouts) error {
+	return nil
+}
+
+func validateMediaServicesAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

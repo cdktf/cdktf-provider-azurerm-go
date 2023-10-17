@@ -7,6 +7,10 @@ package postgresqlfirewallrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PostgresqlFirewallRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresqlFirewallRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PostgresqlFirewallRule) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (p *jsiiProxy_PostgresqlFirewallRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresqlFirewallRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PostgresqlFirewallRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PostgresqlFirewallRule) validateOverrideLogicalIdParameters(n
 }
 
 func (p *jsiiProxy_PostgresqlFirewallRule) validatePutTimeoutsParameters(value *PostgresqlFirewallRuleTimeouts) error {
+	return nil
+}
+
+func validatePostgresqlFirewallRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModule) validatePut
 	return nil
 }
 
+func validateDataAzurermKeyVaultManagedHardwareSecurityModule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermKeyVaultManagedHardwareSecurityModule_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package expressroutecircuitpeering
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ExpressRouteCircuitPeering) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExpressRouteCircuitPeering) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_ExpressRouteCircuitPeering) validateGetStringMapAttributePara
 	return nil
 }
 
+func (e *jsiiProxy_ExpressRouteCircuitPeering) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExpressRouteCircuitPeering) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ExpressRouteCircuitPeering) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (e *jsiiProxy_ExpressRouteCircuitPeering) validatePutMicrosoftPeeringConfig
 }
 
 func (e *jsiiProxy_ExpressRouteCircuitPeering) validatePutTimeoutsParameters(value *ExpressRouteCircuitPeeringTimeouts) error {
+	return nil
+}
+
+func validateExpressRouteCircuitPeering_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

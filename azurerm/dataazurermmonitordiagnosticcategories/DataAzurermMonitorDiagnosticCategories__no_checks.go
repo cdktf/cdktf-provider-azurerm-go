@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermMonitorDiagnosticCategories) validatePutTimeoutsPa
 	return nil
 }
 
+func validateDataAzurermMonitorDiagnosticCategories_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermMonitorDiagnosticCategories_IsConstructParameters(x interface{}) error {
 	return nil
 }

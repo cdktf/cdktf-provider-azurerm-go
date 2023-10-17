@@ -7,6 +7,10 @@ package cosmosdbsqlcontainer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CosmosdbSqlContainer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbSqlContainer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CosmosdbSqlContainer) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbSqlContainer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbSqlContainer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbSqlContainer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (c *jsiiProxy_CosmosdbSqlContainer) validatePutTimeoutsParameters(value *Co
 }
 
 func (c *jsiiProxy_CosmosdbSqlContainer) validatePutUniqueKeyParameters(value interface{}) error {
+	return nil
+}
+
+func validateCosmosdbSqlContainer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

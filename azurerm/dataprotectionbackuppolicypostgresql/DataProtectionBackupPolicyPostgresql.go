@@ -5,10 +5,10 @@ package dataprotectionbackuppolicypostgresql
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/dataprotectionbackuppolicypostgresql/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/dataprotectionbackuppolicypostgresql/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -83,6 +83,9 @@ type DataProtectionBackupPolicyPostgresql interface {
 	VaultName() *string
 	SetVaultName(val *string)
 	VaultNameInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -104,7 +107,12 @@ type DataProtectionBackupPolicyPostgresql interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -615,6 +623,25 @@ func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql)SetVaultName(val *string
 	)
 }
 
+// Generates CDKTF code for importing a DataProtectionBackupPolicyPostgresql resource upon running "cdktf plan <stack-name>".
+func DataProtectionBackupPolicyPostgresql_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataProtectionBackupPolicyPostgresql_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataProtectionBackupPolicyPostgresql.DataProtectionBackupPolicyPostgresql",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -697,6 +724,17 @@ func DataProtectionBackupPolicyPostgresql_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) AddMoveTarget(moveTarget *string) {
+	if err := d.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) AddOverride(path *string, value interface{}) {
@@ -854,6 +892,17 @@ func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) GetStringMapAttribute(t
 	return returns
 }
 
+func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := d.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -868,6 +917,17 @@ func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) InterpolationForAttribu
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) MoveTo(moveTarget *string, index interface{}) {
+	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) OverrideLogicalId(newLogicalId *string) {

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermApplicationSecurityGroup) validatePutTimeoutsParam
 	return nil
 }
 
+func validateDataAzurermApplicationSecurityGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermApplicationSecurityGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

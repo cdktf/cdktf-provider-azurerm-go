@@ -7,6 +7,10 @@ package automationhybridrunbookworkergroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutomationHybridRunbookWorkerGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationHybridRunbookWorkerGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AutomationHybridRunbookWorkerGroup) validateGetStringMapAttri
 	return nil
 }
 
+func (a *jsiiProxy_AutomationHybridRunbookWorkerGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationHybridRunbookWorkerGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutomationHybridRunbookWorkerGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AutomationHybridRunbookWorkerGroup) validateOverrideLogicalId
 }
 
 func (a *jsiiProxy_AutomationHybridRunbookWorkerGroup) validatePutTimeoutsParameters(value *AutomationHybridRunbookWorkerGroupTimeouts) error {
+	return nil
+}
+
+func validateAutomationHybridRunbookWorkerGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

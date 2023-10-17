@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermTrafficManagerProfile) validatePutTimeoutsParamete
 	return nil
 }
 
+func validateDataAzurermTrafficManagerProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermTrafficManagerProfile_IsConstructParameters(x interface{}) error {
 	return nil
 }

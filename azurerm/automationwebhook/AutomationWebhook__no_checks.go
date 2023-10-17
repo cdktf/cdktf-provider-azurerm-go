@@ -7,6 +7,10 @@ package automationwebhook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutomationWebhook) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationWebhook) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AutomationWebhook) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (a *jsiiProxy_AutomationWebhook) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationWebhook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutomationWebhook) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AutomationWebhook) validateOverrideLogicalIdParameters(newLog
 }
 
 func (a *jsiiProxy_AutomationWebhook) validatePutTimeoutsParameters(value *AutomationWebhookTimeouts) error {
+	return nil
+}
+
+func validateAutomationWebhook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

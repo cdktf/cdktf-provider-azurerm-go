@@ -7,6 +7,10 @@ package botserviceazurebot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BotServiceAzureBot) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotServiceAzureBot) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BotServiceAzureBot) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (b *jsiiProxy_BotServiceAzureBot) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotServiceAzureBot) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotServiceAzureBot) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BotServiceAzureBot) validateOverrideLogicalIdParameters(newLo
 }
 
 func (b *jsiiProxy_BotServiceAzureBot) validatePutTimeoutsParameters(value *BotServiceAzureBotTimeouts) error {
+	return nil
+}
+
+func validateBotServiceAzureBot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

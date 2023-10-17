@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermVirtualDesktopHostPool) validatePutTimeoutsParamet
 	return nil
 }
 
+func validateDataAzurermVirtualDesktopHostPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermVirtualDesktopHostPool_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package storagetableentity
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageTableEntity) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageTableEntity) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageTableEntity) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_StorageTableEntity) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageTableEntity) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageTableEntity) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_StorageTableEntity) validateOverrideLogicalIdParameters(newLo
 }
 
 func (s *jsiiProxy_StorageTableEntity) validatePutTimeoutsParameters(value *StorageTableEntityTimeouts) error {
+	return nil
+}
+
+func validateStorageTableEntity_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

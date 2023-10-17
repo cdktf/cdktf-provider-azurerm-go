@@ -7,6 +7,10 @@ package containerregistrywebhook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerRegistryWebhook) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerRegistryWebhook) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ContainerRegistryWebhook) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_ContainerRegistryWebhook) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerRegistryWebhook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerRegistryWebhook) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ContainerRegistryWebhook) validateOverrideLogicalIdParameters
 }
 
 func (c *jsiiProxy_ContainerRegistryWebhook) validatePutTimeoutsParameters(value *ContainerRegistryWebhookTimeouts) error {
+	return nil
+}
+
+func validateContainerRegistryWebhook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

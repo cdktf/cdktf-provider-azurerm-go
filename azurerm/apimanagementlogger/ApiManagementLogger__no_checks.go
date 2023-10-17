@@ -7,6 +7,10 @@ package apimanagementlogger
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiManagementLogger) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementLogger) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApiManagementLogger) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (a *jsiiProxy_ApiManagementLogger) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementLogger) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiManagementLogger) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (a *jsiiProxy_ApiManagementLogger) validatePutEventhubParameters(value *Api
 }
 
 func (a *jsiiProxy_ApiManagementLogger) validatePutTimeoutsParameters(value *ApiManagementLoggerTimeouts) error {
+	return nil
+}
+
+func validateApiManagementLogger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

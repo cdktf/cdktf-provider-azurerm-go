@@ -7,6 +7,10 @@ package cosmosdbcassandrakeyspace
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CosmosdbCassandraKeyspace) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbCassandraKeyspace) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CosmosdbCassandraKeyspace) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbCassandraKeyspace) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbCassandraKeyspace) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbCassandraKeyspace) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CosmosdbCassandraKeyspace) validatePutAutoscaleSettingsParame
 }
 
 func (c *jsiiProxy_CosmosdbCassandraKeyspace) validatePutTimeoutsParameters(value *CosmosdbCassandraKeyspaceTimeouts) error {
+	return nil
+}
+
+func validateCosmosdbCassandraKeyspace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package iothubendpointcosmosdbaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IothubEndpointCosmosdbAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubEndpointCosmosdbAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IothubEndpointCosmosdbAccount) validateGetStringMapAttributeP
 	return nil
 }
 
+func (i *jsiiProxy_IothubEndpointCosmosdbAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubEndpointCosmosdbAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IothubEndpointCosmosdbAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IothubEndpointCosmosdbAccount) validateOverrideLogicalIdParam
 }
 
 func (i *jsiiProxy_IothubEndpointCosmosdbAccount) validatePutTimeoutsParameters(value *IothubEndpointCosmosdbAccountTimeouts) error {
+	return nil
+}
+
+func validateIothubEndpointCosmosdbAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

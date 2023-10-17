@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermEventhubAuthorizationRule) validatePutTimeoutsPara
 	return nil
 }
 
+func validateDataAzurermEventhubAuthorizationRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermEventhubAuthorizationRule_IsConstructParameters(x interface{}) error {
 	return nil
 }

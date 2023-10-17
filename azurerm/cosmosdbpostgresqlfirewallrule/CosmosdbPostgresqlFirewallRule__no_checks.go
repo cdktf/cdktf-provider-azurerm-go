@@ -7,6 +7,10 @@ package cosmosdbpostgresqlfirewallrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CosmosdbPostgresqlFirewallRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbPostgresqlFirewallRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CosmosdbPostgresqlFirewallRule) validateGetStringMapAttribute
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbPostgresqlFirewallRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbPostgresqlFirewallRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbPostgresqlFirewallRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CosmosdbPostgresqlFirewallRule) validateOverrideLogicalIdPara
 }
 
 func (c *jsiiProxy_CosmosdbPostgresqlFirewallRule) validatePutTimeoutsParameters(value *CosmosdbPostgresqlFirewallRuleTimeouts) error {
+	return nil
+}
+
+func validateCosmosdbPostgresqlFirewallRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

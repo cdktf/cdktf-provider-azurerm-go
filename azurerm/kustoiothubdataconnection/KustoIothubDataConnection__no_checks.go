@@ -7,6 +7,10 @@ package kustoiothubdataconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KustoIothubDataConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoIothubDataConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KustoIothubDataConnection) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (k *jsiiProxy_KustoIothubDataConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoIothubDataConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KustoIothubDataConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KustoIothubDataConnection) validateOverrideLogicalIdParameter
 }
 
 func (k *jsiiProxy_KustoIothubDataConnection) validatePutTimeoutsParameters(value *KustoIothubDataConnectionTimeouts) error {
+	return nil
+}
+
+func validateKustoIothubDataConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

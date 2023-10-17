@@ -7,6 +7,10 @@ package windowsfunctionapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WindowsFunctionApp) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsFunctionApp) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WindowsFunctionApp) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (w *jsiiProxy_WindowsFunctionApp) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsFunctionApp) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WindowsFunctionApp) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -88,6 +100,10 @@ func (w *jsiiProxy_WindowsFunctionApp) validatePutStorageAccountParameters(value
 }
 
 func (w *jsiiProxy_WindowsFunctionApp) validatePutTimeoutsParameters(value *WindowsFunctionAppTimeouts) error {
+	return nil
+}
+
+func validateWindowsFunctionApp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

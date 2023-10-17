@@ -7,6 +7,10 @@ package resourcepolicyassignment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_ResourcePolicyAssignment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourcePolicyAssignment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_ResourcePolicyAssignment) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (r *jsiiProxy_ResourcePolicyAssignment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourcePolicyAssignment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourcePolicyAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (r *jsiiProxy_ResourcePolicyAssignment) validatePutResourceSelectorsParamet
 }
 
 func (r *jsiiProxy_ResourcePolicyAssignment) validatePutTimeoutsParameters(value *ResourcePolicyAssignmentTimeouts) error {
+	return nil
+}
+
+func validateResourcePolicyAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

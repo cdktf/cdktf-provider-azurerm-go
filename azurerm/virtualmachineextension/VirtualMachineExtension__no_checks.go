@@ -7,6 +7,10 @@ package virtualmachineextension
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualMachineExtension) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualMachineExtension) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VirtualMachineExtension) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (v *jsiiProxy_VirtualMachineExtension) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualMachineExtension) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualMachineExtension) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (v *jsiiProxy_VirtualMachineExtension) validatePutProtectedSettingsFromKeyV
 }
 
 func (v *jsiiProxy_VirtualMachineExtension) validatePutTimeoutsParameters(value *VirtualMachineExtensionTimeouts) error {
+	return nil
+}
+
+func validateVirtualMachineExtension_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

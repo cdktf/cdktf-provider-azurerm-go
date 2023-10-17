@@ -5,10 +5,10 @@ package dataazurermprivatednsresolvervirtualnetworklink
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/dataazurermprivatednsresolvervirtualnetworklink/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/dataazurermprivatednsresolvervirtualnetworklink/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -459,6 +459,25 @@ func (j *jsiiProxy_DataAzurermPrivateDnsResolverVirtualNetworkLink)SetProvider(v
 		"provider",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataAzurermPrivateDnsResolverVirtualNetworkLink resource upon running "cdktf plan <stack-name>".
+func DataAzurermPrivateDnsResolverVirtualNetworkLink_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAzurermPrivateDnsResolverVirtualNetworkLink_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataAzurermPrivateDnsResolverVirtualNetworkLink.DataAzurermPrivateDnsResolverVirtualNetworkLink",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

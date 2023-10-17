@@ -7,6 +7,10 @@ package trafficmanagernestedendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TrafficManagerNestedEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TrafficManagerNestedEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (t *jsiiProxy_TrafficManagerNestedEndpoint) validateGetStringMapAttributePa
 	return nil
 }
 
+func (t *jsiiProxy_TrafficManagerNestedEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TrafficManagerNestedEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TrafficManagerNestedEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (t *jsiiProxy_TrafficManagerNestedEndpoint) validatePutSubnetParameters(val
 }
 
 func (t *jsiiProxy_TrafficManagerNestedEndpoint) validatePutTimeoutsParameters(value *TrafficManagerNestedEndpointTimeouts) error {
+	return nil
+}
+
+func validateTrafficManagerNestedEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

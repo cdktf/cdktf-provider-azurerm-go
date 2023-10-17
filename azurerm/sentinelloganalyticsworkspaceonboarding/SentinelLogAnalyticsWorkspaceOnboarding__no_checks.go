@@ -7,6 +7,10 @@ package sentinelloganalyticsworkspaceonboarding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateGetStringMap
 	return nil
 }
 
+func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateOverrideLogi
 }
 
 func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validatePutTimeoutsParameters(value *SentinelLogAnalyticsWorkspaceOnboardingTimeouts) error {
+	return nil
+}
+
+func validateSentinelLogAnalyticsWorkspaceOnboarding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

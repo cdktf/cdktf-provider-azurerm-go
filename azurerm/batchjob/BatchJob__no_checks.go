@@ -7,6 +7,10 @@ package batchjob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BatchJob) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchJob) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BatchJob) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (b *jsiiProxy_BatchJob) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchJob) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BatchJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BatchJob) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (b *jsiiProxy_BatchJob) validatePutTimeoutsParameters(value *BatchJobTimeouts) error {
+	return nil
+}
+
+func validateBatchJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

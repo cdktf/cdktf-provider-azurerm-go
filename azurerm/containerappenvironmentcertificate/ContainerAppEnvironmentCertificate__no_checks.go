@@ -7,6 +7,10 @@ package containerappenvironmentcertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerAppEnvironmentCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAppEnvironmentCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ContainerAppEnvironmentCertificate) validateGetStringMapAttri
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAppEnvironmentCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAppEnvironmentCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAppEnvironmentCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ContainerAppEnvironmentCertificate) validateOverrideLogicalId
 }
 
 func (c *jsiiProxy_ContainerAppEnvironmentCertificate) validatePutTimeoutsParameters(value *ContainerAppEnvironmentCertificateTimeouts) error {
+	return nil
+}
+
+func validateContainerAppEnvironmentCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

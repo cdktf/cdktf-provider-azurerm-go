@@ -7,6 +7,10 @@ package ipgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IpGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IpGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IpGroup) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (i *jsiiProxy_IpGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IpGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IpGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IpGroup) validateOverrideLogicalIdParameters(newLogicalId *st
 }
 
 func (i *jsiiProxy_IpGroup) validatePutTimeoutsParameters(value *IpGroupTimeouts) error {
+	return nil
+}
+
+func validateIpGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

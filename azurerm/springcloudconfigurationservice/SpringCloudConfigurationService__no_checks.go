@@ -7,6 +7,10 @@ package springcloudconfigurationservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpringCloudConfigurationService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudConfigurationService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SpringCloudConfigurationService) validateGetStringMapAttribut
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudConfigurationService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudConfigurationService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudConfigurationService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SpringCloudConfigurationService) validatePutRepositoryParamet
 }
 
 func (s *jsiiProxy_SpringCloudConfigurationService) validatePutTimeoutsParameters(value *SpringCloudConfigurationServiceTimeouts) error {
+	return nil
+}
+
+func validateSpringCloudConfigurationService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

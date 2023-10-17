@@ -7,6 +7,10 @@ package backuppolicyvm
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BackupPolicyVm) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupPolicyVm) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BackupPolicyVm) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (b *jsiiProxy_BackupPolicyVm) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupPolicyVm) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BackupPolicyVm) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -80,6 +92,10 @@ func (b *jsiiProxy_BackupPolicyVm) validatePutRetentionYearlyParameters(value *B
 }
 
 func (b *jsiiProxy_BackupPolicyVm) validatePutTimeoutsParameters(value *BackupPolicyVmTimeouts) error {
+	return nil
+}
+
+func validateBackupPolicyVm_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

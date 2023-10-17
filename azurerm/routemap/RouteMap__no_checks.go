@@ -7,6 +7,10 @@ package routemap
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RouteMap) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RouteMap) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RouteMap) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (r *jsiiProxy_RouteMap) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RouteMap) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RouteMap) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (r *jsiiProxy_RouteMap) validatePutRuleParameters(value interface{}) error 
 }
 
 func (r *jsiiProxy_RouteMap) validatePutTimeoutsParameters(value *RouteMapTimeouts) error {
+	return nil
+}
+
+func validateRouteMap_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

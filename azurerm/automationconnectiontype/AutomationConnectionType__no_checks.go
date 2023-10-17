@@ -7,6 +7,10 @@ package automationconnectiontype
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutomationConnectionType) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationConnectionType) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AutomationConnectionType) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (a *jsiiProxy_AutomationConnectionType) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationConnectionType) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutomationConnectionType) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_AutomationConnectionType) validatePutFieldParameters(value in
 }
 
 func (a *jsiiProxy_AutomationConnectionType) validatePutTimeoutsParameters(value *AutomationConnectionTypeTimeouts) error {
+	return nil
+}
+
+func validateAutomationConnectionType_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

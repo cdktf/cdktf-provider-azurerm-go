@@ -7,6 +7,10 @@ package monitordatacollectionruleassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorDataCollectionRuleAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRuleAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitorDataCollectionRuleAssociation) validateGetStringMapAtt
 	return nil
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRuleAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRuleAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRuleAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MonitorDataCollectionRuleAssociation) validateOverrideLogical
 }
 
 func (m *jsiiProxy_MonitorDataCollectionRuleAssociation) validatePutTimeoutsParameters(value *MonitorDataCollectionRuleAssociationTimeouts) error {
+	return nil
+}
+
+func validateMonitorDataCollectionRuleAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

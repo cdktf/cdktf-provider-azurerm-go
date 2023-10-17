@@ -7,6 +7,10 @@ package diskpool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DiskPool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiskPool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DiskPool) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (d *jsiiProxy_DiskPool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiskPool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DiskPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DiskPool) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (d *jsiiProxy_DiskPool) validatePutTimeoutsParameters(value *DiskPoolTimeouts) error {
+	return nil
+}
+
+func validateDiskPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

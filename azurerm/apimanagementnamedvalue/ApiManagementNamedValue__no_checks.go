@@ -7,6 +7,10 @@ package apimanagementnamedvalue
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiManagementNamedValue) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementNamedValue) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApiManagementNamedValue) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (a *jsiiProxy_ApiManagementNamedValue) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementNamedValue) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiManagementNamedValue) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_ApiManagementNamedValue) validatePutTimeoutsParameters(value 
 }
 
 func (a *jsiiProxy_ApiManagementNamedValue) validatePutValueFromKeyVaultParameters(value *ApiManagementNamedValueValueFromKeyVault) error {
+	return nil
+}
+
+func validateApiManagementNamedValue_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package mediatransform
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MediaTransform) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaTransform) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MediaTransform) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (m *jsiiProxy_MediaTransform) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaTransform) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MediaTransform) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MediaTransform) validatePutOutputParameters(value interface{}
 }
 
 func (m *jsiiProxy_MediaTransform) validatePutTimeoutsParameters(value *MediaTransformTimeouts) error {
+	return nil
+}
+
+func validateMediaTransform_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

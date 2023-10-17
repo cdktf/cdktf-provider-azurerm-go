@@ -7,6 +7,10 @@ package streamanalyticsoutputservicebustopic
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StreamAnalyticsOutputServicebusTopic) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsOutputServicebusTopic) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StreamAnalyticsOutputServicebusTopic) validateGetStringMapAtt
 	return nil
 }
 
+func (s *jsiiProxy_StreamAnalyticsOutputServicebusTopic) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsOutputServicebusTopic) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamAnalyticsOutputServicebusTopic) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_StreamAnalyticsOutputServicebusTopic) validatePutSerializatio
 }
 
 func (s *jsiiProxy_StreamAnalyticsOutputServicebusTopic) validatePutTimeoutsParameters(value *StreamAnalyticsOutputServicebusTopicTimeouts) error {
+	return nil
+}
+
+func validateStreamAnalyticsOutputServicebusTopic_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

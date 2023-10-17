@@ -7,6 +7,10 @@ package eventhubconsumergroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventhubConsumerGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventhubConsumerGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EventhubConsumerGroup) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (e *jsiiProxy_EventhubConsumerGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventhubConsumerGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventhubConsumerGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_EventhubConsumerGroup) validateOverrideLogicalIdParameters(ne
 }
 
 func (e *jsiiProxy_EventhubConsumerGroup) validatePutTimeoutsParameters(value *EventhubConsumerGroupTimeouts) error {
+	return nil
+}
+
+func validateEventhubConsumerGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package galleryapplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GalleryApplication) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GalleryApplication) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GalleryApplication) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (g *jsiiProxy_GalleryApplication) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GalleryApplication) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GalleryApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GalleryApplication) validateOverrideLogicalIdParameters(newLo
 }
 
 func (g *jsiiProxy_GalleryApplication) validatePutTimeoutsParameters(value *GalleryApplicationTimeouts) error {
+	return nil
+}
+
+func validateGalleryApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

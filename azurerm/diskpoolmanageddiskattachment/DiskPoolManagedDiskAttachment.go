@@ -5,10 +5,10 @@ package diskpoolmanageddiskattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/diskpoolmanageddiskattachment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/diskpoolmanageddiskattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -72,6 +72,9 @@ type DiskPoolManagedDiskAttachment interface {
 	TerraformResourceType() *string
 	Timeouts() DiskPoolManagedDiskAttachmentTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -93,7 +96,12 @@ type DiskPoolManagedDiskAttachment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -489,6 +497,25 @@ func (j *jsiiProxy_DiskPoolManagedDiskAttachment)SetProvisioners(val *[]interfac
 	)
 }
 
+// Generates CDKTF code for importing a DiskPoolManagedDiskAttachment resource upon running "cdktf plan <stack-name>".
+func DiskPoolManagedDiskAttachment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDiskPoolManagedDiskAttachment_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.diskPoolManagedDiskAttachment.DiskPoolManagedDiskAttachment",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -571,6 +598,17 @@ func DiskPoolManagedDiskAttachment_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (d *jsiiProxy_DiskPoolManagedDiskAttachment) AddMoveTarget(moveTarget *string) {
+	if err := d.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (d *jsiiProxy_DiskPoolManagedDiskAttachment) AddOverride(path *string, value interface{}) {
@@ -728,6 +766,17 @@ func (d *jsiiProxy_DiskPoolManagedDiskAttachment) GetStringMapAttribute(terrafor
 	return returns
 }
 
+func (d *jsiiProxy_DiskPoolManagedDiskAttachment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := d.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (d *jsiiProxy_DiskPoolManagedDiskAttachment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -742,6 +791,17 @@ func (d *jsiiProxy_DiskPoolManagedDiskAttachment) InterpolationForAttribute(terr
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DiskPoolManagedDiskAttachment) MoveTo(moveTarget *string, index interface{}) {
+	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (d *jsiiProxy_DiskPoolManagedDiskAttachment) OverrideLogicalId(newLogicalId *string) {

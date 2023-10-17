@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-azurerm.mediaLiveEvent.MediaLiveEvent",
 		reflect.TypeOf((*MediaLiveEvent)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "autoStartEnabled", GoGetter: "AutoStartEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "autoStartEnabledInput", GoGetter: "AutoStartEnabledInput"},
@@ -44,6 +45,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "hostnamePrefixInput", GoGetter: "HostnamePrefixInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "input", GoGetter: "Input"},
 			_jsii_.MemberProperty{JsiiProperty: "inputInput", GoGetter: "InputInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -52,6 +54,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mediaServicesAccountName", GoGetter: "MediaServicesAccountName"},
 			_jsii_.MemberProperty{JsiiProperty: "mediaServicesAccountNameInput", GoGetter: "MediaServicesAccountNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

@@ -7,6 +7,10 @@ package cognitivedeployment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CognitiveDeployment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitiveDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CognitiveDeployment) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (c *jsiiProxy_CognitiveDeployment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitiveDeployment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitiveDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_CognitiveDeployment) validatePutScaleParameters(value *Cognit
 }
 
 func (c *jsiiProxy_CognitiveDeployment) validatePutTimeoutsParameters(value *CognitiveDeploymentTimeouts) error {
+	return nil
+}
+
+func validateCognitiveDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

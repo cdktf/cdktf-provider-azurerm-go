@@ -7,6 +7,10 @@ package sentineldataconnectordynamics365
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SentinelDataConnectorDynamics365) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelDataConnectorDynamics365) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SentinelDataConnectorDynamics365) validateGetStringMapAttribu
 	return nil
 }
 
+func (s *jsiiProxy_SentinelDataConnectorDynamics365) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelDataConnectorDynamics365) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelDataConnectorDynamics365) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SentinelDataConnectorDynamics365) validateOverrideLogicalIdPa
 }
 
 func (s *jsiiProxy_SentinelDataConnectorDynamics365) validatePutTimeoutsParameters(value *SentinelDataConnectorDynamics365Timeouts) error {
+	return nil
+}
+
+func validateSentinelDataConnectorDynamics365_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

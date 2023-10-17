@@ -7,6 +7,10 @@ package elasticcloudelasticsearch
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElasticCloudElasticsearch) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticCloudElasticsearch) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_ElasticCloudElasticsearch) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (e *jsiiProxy_ElasticCloudElasticsearch) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticCloudElasticsearch) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticCloudElasticsearch) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (e *jsiiProxy_ElasticCloudElasticsearch) validatePutLogsParameters(value *E
 }
 
 func (e *jsiiProxy_ElasticCloudElasticsearch) validatePutTimeoutsParameters(value *ElasticCloudElasticsearchTimeouts) error {
+	return nil
+}
+
+func validateElasticCloudElasticsearch_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

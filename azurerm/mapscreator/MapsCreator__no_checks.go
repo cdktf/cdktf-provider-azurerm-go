@@ -7,6 +7,10 @@ package mapscreator
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MapsCreator) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MapsCreator) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MapsCreator) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (m *jsiiProxy_MapsCreator) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MapsCreator) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MapsCreator) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MapsCreator) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (m *jsiiProxy_MapsCreator) validatePutTimeoutsParameters(value *MapsCreatorTimeouts) error {
+	return nil
+}
+
+func validateMapsCreator_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

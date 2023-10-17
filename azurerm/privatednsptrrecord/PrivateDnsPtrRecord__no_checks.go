@@ -7,6 +7,10 @@ package privatednsptrrecord
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrivateDnsPtrRecord) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateDnsPtrRecord) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PrivateDnsPtrRecord) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (p *jsiiProxy_PrivateDnsPtrRecord) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateDnsPtrRecord) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivateDnsPtrRecord) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PrivateDnsPtrRecord) validateOverrideLogicalIdParameters(newL
 }
 
 func (p *jsiiProxy_PrivateDnsPtrRecord) validatePutTimeoutsParameters(value *PrivateDnsPtrRecordTimeouts) error {
+	return nil
+}
+
+func validatePrivateDnsPtrRecord_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

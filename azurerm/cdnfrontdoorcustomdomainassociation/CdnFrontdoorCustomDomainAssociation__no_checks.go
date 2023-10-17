@@ -7,6 +7,10 @@ package cdnfrontdoorcustomdomainassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CdnFrontdoorCustomDomainAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorCustomDomainAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CdnFrontdoorCustomDomainAssociation) validateGetStringMapAttr
 	return nil
 }
 
+func (c *jsiiProxy_CdnFrontdoorCustomDomainAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorCustomDomainAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CdnFrontdoorCustomDomainAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CdnFrontdoorCustomDomainAssociation) validateOverrideLogicalI
 }
 
 func (c *jsiiProxy_CdnFrontdoorCustomDomainAssociation) validatePutTimeoutsParameters(value *CdnFrontdoorCustomDomainAssociationTimeouts) error {
+	return nil
+}
+
+func validateCdnFrontdoorCustomDomainAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

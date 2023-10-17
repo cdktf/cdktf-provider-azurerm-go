@@ -7,6 +7,10 @@ package eventhubauthorizationrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventhubAuthorizationRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventhubAuthorizationRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EventhubAuthorizationRule) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (e *jsiiProxy_EventhubAuthorizationRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventhubAuthorizationRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventhubAuthorizationRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_EventhubAuthorizationRule) validateOverrideLogicalIdParameter
 }
 
 func (e *jsiiProxy_EventhubAuthorizationRule) validatePutTimeoutsParameters(value *EventhubAuthorizationRuleTimeouts) error {
+	return nil
+}
+
+func validateEventhubAuthorizationRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

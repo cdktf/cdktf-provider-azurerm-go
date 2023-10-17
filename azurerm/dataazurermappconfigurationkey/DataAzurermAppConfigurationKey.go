@@ -5,10 +5,10 @@ package dataazurermappconfigurationkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/dataazurermappconfigurationkey/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/dataazurermappconfigurationkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -549,6 +549,25 @@ func (j *jsiiProxy_DataAzurermAppConfigurationKey)SetProvider(val cdktf.Terrafor
 		"provider",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataAzurermAppConfigurationKey resource upon running "cdktf plan <stack-name>".
+func DataAzurermAppConfigurationKey_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAzurermAppConfigurationKey_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataAzurermAppConfigurationKey.DataAzurermAppConfigurationKey",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

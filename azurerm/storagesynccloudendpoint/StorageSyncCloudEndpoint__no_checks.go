@@ -7,6 +7,10 @@ package storagesynccloudendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageSyncCloudEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageSyncCloudEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageSyncCloudEndpoint) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_StorageSyncCloudEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageSyncCloudEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageSyncCloudEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_StorageSyncCloudEndpoint) validateOverrideLogicalIdParameters
 }
 
 func (s *jsiiProxy_StorageSyncCloudEndpoint) validatePutTimeoutsParameters(value *StorageSyncCloudEndpointTimeouts) error {
+	return nil
+}
+
+func validateStorageSyncCloudEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

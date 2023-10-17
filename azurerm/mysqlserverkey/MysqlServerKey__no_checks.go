@@ -7,6 +7,10 @@ package mysqlserverkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MysqlServerKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MysqlServerKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MysqlServerKey) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (m *jsiiProxy_MysqlServerKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MysqlServerKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MysqlServerKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MysqlServerKey) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (m *jsiiProxy_MysqlServerKey) validatePutTimeoutsParameters(value *MysqlServerKeyTimeouts) error {
+	return nil
+}
+
+func validateMysqlServerKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

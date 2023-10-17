@@ -7,6 +7,10 @@ package iottimeseriesinsightsreferencedataset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotTimeSeriesInsightsReferenceDataSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotTimeSeriesInsightsReferenceDataSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IotTimeSeriesInsightsReferenceDataSet) validateGetStringMapAt
 	return nil
 }
 
+func (i *jsiiProxy_IotTimeSeriesInsightsReferenceDataSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotTimeSeriesInsightsReferenceDataSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotTimeSeriesInsightsReferenceDataSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (i *jsiiProxy_IotTimeSeriesInsightsReferenceDataSet) validatePutKeyProperty
 }
 
 func (i *jsiiProxy_IotTimeSeriesInsightsReferenceDataSet) validatePutTimeoutsParameters(value *IotTimeSeriesInsightsReferenceDataSetTimeouts) error {
+	return nil
+}
+
+func validateIotTimeSeriesInsightsReferenceDataSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

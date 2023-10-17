@@ -7,6 +7,10 @@ package mysqlactivedirectoryadministrator
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MysqlActiveDirectoryAdministrator) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MysqlActiveDirectoryAdministrator) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MysqlActiveDirectoryAdministrator) validateGetStringMapAttrib
 	return nil
 }
 
+func (m *jsiiProxy_MysqlActiveDirectoryAdministrator) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MysqlActiveDirectoryAdministrator) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MysqlActiveDirectoryAdministrator) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MysqlActiveDirectoryAdministrator) validateOverrideLogicalIdP
 }
 
 func (m *jsiiProxy_MysqlActiveDirectoryAdministrator) validatePutTimeoutsParameters(value *MysqlActiveDirectoryAdministratorTimeouts) error {
+	return nil
+}
+
+func validateMysqlActiveDirectoryAdministrator_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package apimanagementnotificationrecipientuser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiManagementNotificationRecipientUser) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementNotificationRecipientUser) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApiManagementNotificationRecipientUser) validateGetStringMapA
 	return nil
 }
 
+func (a *jsiiProxy_ApiManagementNotificationRecipientUser) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementNotificationRecipientUser) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiManagementNotificationRecipientUser) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApiManagementNotificationRecipientUser) validateOverrideLogic
 }
 
 func (a *jsiiProxy_ApiManagementNotificationRecipientUser) validatePutTimeoutsParameters(value *ApiManagementNotificationRecipientUserTimeouts) error {
+	return nil
+}
+
+func validateApiManagementNotificationRecipientUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

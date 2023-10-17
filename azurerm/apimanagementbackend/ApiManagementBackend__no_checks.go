@@ -7,6 +7,10 @@ package apimanagementbackend
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiManagementBackend) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementBackend) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApiManagementBackend) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_ApiManagementBackend) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementBackend) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiManagementBackend) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (a *jsiiProxy_ApiManagementBackend) validatePutTimeoutsParameters(value *Ap
 }
 
 func (a *jsiiProxy_ApiManagementBackend) validatePutTlsParameters(value *ApiManagementBackendTls) error {
+	return nil
+}
+
+func validateApiManagementBackend_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

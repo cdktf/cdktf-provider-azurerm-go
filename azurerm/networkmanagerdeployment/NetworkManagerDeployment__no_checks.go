@@ -7,6 +7,10 @@ package networkmanagerdeployment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkManagerDeployment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkManagerDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkManagerDeployment) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (n *jsiiProxy_NetworkManagerDeployment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkManagerDeployment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkManagerDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkManagerDeployment) validateOverrideLogicalIdParameters
 }
 
 func (n *jsiiProxy_NetworkManagerDeployment) validatePutTimeoutsParameters(value *NetworkManagerDeploymentTimeouts) error {
+	return nil
+}
+
+func validateNetworkManagerDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermSiteRecoveryReplicationPolicy) validatePutTimeouts
 	return nil
 }
 
+func validateDataAzurermSiteRecoveryReplicationPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermSiteRecoveryReplicationPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

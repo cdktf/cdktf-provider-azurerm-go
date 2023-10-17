@@ -7,6 +7,10 @@ package analysisservicesserver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AnalysisServicesServer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AnalysisServicesServer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AnalysisServicesServer) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (a *jsiiProxy_AnalysisServicesServer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AnalysisServicesServer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AnalysisServicesServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_AnalysisServicesServer) validatePutIpv4FirewallRuleParameters
 }
 
 func (a *jsiiProxy_AnalysisServicesServer) validatePutTimeoutsParameters(value *AnalysisServicesServerTimeouts) error {
+	return nil
+}
+
+func validateAnalysisServicesServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

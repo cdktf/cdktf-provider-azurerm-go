@@ -7,6 +7,10 @@ package datafactorylinkedserviceazuresqldatabase
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) validateGetStringMa
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) validatePutKeyVault
 }
 
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) validatePutTimeoutsParameters(value *DataFactoryLinkedServiceAzureSqlDatabaseTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceAzureSqlDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

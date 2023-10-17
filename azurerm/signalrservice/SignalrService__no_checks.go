@@ -7,6 +7,10 @@ package signalrservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SignalrService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SignalrService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SignalrService) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (s *jsiiProxy_SignalrService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SignalrService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SignalrService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (s *jsiiProxy_SignalrService) validatePutTimeoutsParameters(value *SignalrS
 }
 
 func (s *jsiiProxy_SignalrService) validatePutUpstreamEndpointParameters(value interface{}) error {
+	return nil
+}
+
+func validateSignalrService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

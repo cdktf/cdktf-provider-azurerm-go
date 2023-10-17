@@ -7,6 +7,10 @@ package kustoattacheddatabaseconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KustoAttachedDatabaseConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoAttachedDatabaseConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KustoAttachedDatabaseConfiguration) validateGetStringMapAttri
 	return nil
 }
 
+func (k *jsiiProxy_KustoAttachedDatabaseConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoAttachedDatabaseConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KustoAttachedDatabaseConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (k *jsiiProxy_KustoAttachedDatabaseConfiguration) validatePutSharingParamet
 }
 
 func (k *jsiiProxy_KustoAttachedDatabaseConfiguration) validatePutTimeoutsParameters(value *KustoAttachedDatabaseConfigurationTimeouts) error {
+	return nil
+}
+
+func validateKustoAttachedDatabaseConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

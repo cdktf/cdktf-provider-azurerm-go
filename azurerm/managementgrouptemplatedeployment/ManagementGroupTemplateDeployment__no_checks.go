@@ -7,6 +7,10 @@ package managementgrouptemplatedeployment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_ManagementGroupTemplateDeployment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagementGroupTemplateDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_ManagementGroupTemplateDeployment) validateGetStringMapAttrib
 	return nil
 }
 
+func (m *jsiiProxy_ManagementGroupTemplateDeployment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagementGroupTemplateDeployment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagementGroupTemplateDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_ManagementGroupTemplateDeployment) validateOverrideLogicalIdP
 }
 
 func (m *jsiiProxy_ManagementGroupTemplateDeployment) validatePutTimeoutsParameters(value *ManagementGroupTemplateDeploymentTimeouts) error {
+	return nil
+}
+
+func validateManagementGroupTemplateDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

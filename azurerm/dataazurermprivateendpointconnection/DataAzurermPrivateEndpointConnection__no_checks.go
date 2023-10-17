@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermPrivateEndpointConnection) validatePutTimeoutsPara
 	return nil
 }
 
+func validateDataAzurermPrivateEndpointConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermPrivateEndpointConnection_IsConstructParameters(x interface{}) error {
 	return nil
 }

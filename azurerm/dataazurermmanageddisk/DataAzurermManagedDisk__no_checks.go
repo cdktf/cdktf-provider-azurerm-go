@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermManagedDisk) validatePutTimeoutsParameters(value *
 	return nil
 }
 
+func validateDataAzurermManagedDisk_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermManagedDisk_IsConstructParameters(x interface{}) error {
 	return nil
 }

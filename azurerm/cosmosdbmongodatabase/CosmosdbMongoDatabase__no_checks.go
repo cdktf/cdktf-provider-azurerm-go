@@ -7,6 +7,10 @@ package cosmosdbmongodatabase
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CosmosdbMongoDatabase) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbMongoDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CosmosdbMongoDatabase) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbMongoDatabase) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbMongoDatabase) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbMongoDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CosmosdbMongoDatabase) validatePutAutoscaleSettingsParameters
 }
 
 func (c *jsiiProxy_CosmosdbMongoDatabase) validatePutTimeoutsParameters(value *CosmosdbMongoDatabaseTimeouts) error {
+	return nil
+}
+
+func validateCosmosdbMongoDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package cdnfrontdoorfirewallpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) validateGetStringMapAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) validatePutManagedRuleParameters(
 }
 
 func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) validatePutTimeoutsParameters(value *CdnFrontdoorFirewallPolicyTimeouts) error {
+	return nil
+}
+
+func validateCdnFrontdoorFirewallPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package mysqldatabase
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MysqlDatabase) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MysqlDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MysqlDatabase) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (m *jsiiProxy_MysqlDatabase) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MysqlDatabase) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MysqlDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MysqlDatabase) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (m *jsiiProxy_MysqlDatabase) validatePutTimeoutsParameters(value *MysqlDatabaseTimeouts) error {
+	return nil
+}
+
+func validateMysqlDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

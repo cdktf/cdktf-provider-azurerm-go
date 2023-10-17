@@ -7,6 +7,10 @@ package dataprotectionbackuppolicyblobstorage
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateGetStringMapAt
 	return nil
 }
 
+func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateOverrideLogica
 }
 
 func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validatePutTimeoutsParameters(value *DataProtectionBackupPolicyBlobStorageTimeouts) error {
+	return nil
+}
+
+func validateDataProtectionBackupPolicyBlobStorage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

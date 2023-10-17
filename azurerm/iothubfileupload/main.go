@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-azurerm.iothubFileUpload.IothubFileUploadA",
 		reflect.TypeOf((*IothubFileUploadA)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationType", GoGetter: "AuthenticationType"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationTypeInput", GoGetter: "AuthenticationTypeInput"},
@@ -44,6 +45,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "identityId", GoGetter: "IdentityId"},
 			_jsii_.MemberProperty{JsiiProperty: "identityIdInput", GoGetter: "IdentityIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "iothubId", GoGetter: "IothubId"},
 			_jsii_.MemberProperty{JsiiProperty: "iothubIdInput", GoGetter: "IothubIdInput"},
@@ -52,6 +54,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lockDurationInput", GoGetter: "LockDurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxDeliveryCount", GoGetter: "MaxDeliveryCount"},
 			_jsii_.MemberProperty{JsiiProperty: "maxDeliveryCountInput", GoGetter: "MaxDeliveryCountInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "notificationsEnabled", GoGetter: "NotificationsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "notificationsEnabledInput", GoGetter: "NotificationsEnabledInput"},

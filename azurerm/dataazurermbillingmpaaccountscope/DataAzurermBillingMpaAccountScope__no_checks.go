@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermBillingMpaAccountScope) validatePutTimeoutsParamet
 	return nil
 }
 
+func validateDataAzurermBillingMpaAccountScope_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermBillingMpaAccountScope_IsConstructParameters(x interface{}) error {
 	return nil
 }

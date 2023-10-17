@@ -7,6 +7,10 @@ package streamanalyticsoutputblob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StreamAnalyticsOutputBlob) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsOutputBlob) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StreamAnalyticsOutputBlob) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_StreamAnalyticsOutputBlob) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsOutputBlob) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamAnalyticsOutputBlob) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_StreamAnalyticsOutputBlob) validatePutSerializationParameters
 }
 
 func (s *jsiiProxy_StreamAnalyticsOutputBlob) validatePutTimeoutsParameters(value *StreamAnalyticsOutputBlobTimeouts) error {
+	return nil
+}
+
+func validateStreamAnalyticsOutputBlob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package siterecoveryreplicationrecoveryplan
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validateGetStringMapAttr
 	return nil
 }
 
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutShutdownRecov
 }
 
 func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutTimeoutsParameters(value *SiteRecoveryReplicationRecoveryPlanTimeouts) error {
+	return nil
+}
+
+func validateSiteRecoveryReplicationRecoveryPlan_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

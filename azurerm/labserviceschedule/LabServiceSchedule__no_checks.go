@@ -7,6 +7,10 @@ package labserviceschedule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LabServiceSchedule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LabServiceSchedule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LabServiceSchedule) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (l *jsiiProxy_LabServiceSchedule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LabServiceSchedule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LabServiceSchedule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (l *jsiiProxy_LabServiceSchedule) validatePutRecurrenceParameters(value *La
 }
 
 func (l *jsiiProxy_LabServiceSchedule) validatePutTimeoutsParameters(value *LabServiceScheduleTimeouts) error {
+	return nil
+}
+
+func validateLabServiceSchedule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package attestationprovider
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AttestationProvider) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AttestationProvider) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AttestationProvider) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (a *jsiiProxy_AttestationProvider) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AttestationProvider) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AttestationProvider) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_AttestationProvider) validatePutPolicyParameters(value interf
 }
 
 func (a *jsiiProxy_AttestationProvider) validatePutTimeoutsParameters(value *AttestationProviderTimeouts) error {
+	return nil
+}
+
+func validateAttestationProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

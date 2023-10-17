@@ -7,6 +7,10 @@ package streamanalyticsfunctionjavascriptudf
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StreamAnalyticsFunctionJavascriptUdf) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsFunctionJavascriptUdf) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StreamAnalyticsFunctionJavascriptUdf) validateGetStringMapAtt
 	return nil
 }
 
+func (s *jsiiProxy_StreamAnalyticsFunctionJavascriptUdf) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsFunctionJavascriptUdf) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamAnalyticsFunctionJavascriptUdf) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (s *jsiiProxy_StreamAnalyticsFunctionJavascriptUdf) validatePutOutputParame
 }
 
 func (s *jsiiProxy_StreamAnalyticsFunctionJavascriptUdf) validatePutTimeoutsParameters(value *StreamAnalyticsFunctionJavascriptUdfTimeouts) error {
+	return nil
+}
+
+func validateStreamAnalyticsFunctionJavascriptUdf_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

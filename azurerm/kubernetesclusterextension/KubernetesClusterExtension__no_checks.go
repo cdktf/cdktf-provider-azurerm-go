@@ -7,6 +7,10 @@ package kubernetesclusterextension
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KubernetesClusterExtension) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesClusterExtension) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KubernetesClusterExtension) validateGetStringMapAttributePara
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesClusterExtension) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesClusterExtension) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KubernetesClusterExtension) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (k *jsiiProxy_KubernetesClusterExtension) validatePutPlanParameters(value *
 }
 
 func (k *jsiiProxy_KubernetesClusterExtension) validatePutTimeoutsParameters(value *KubernetesClusterExtensionTimeouts) error {
+	return nil
+}
+
+func validateKubernetesClusterExtension_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

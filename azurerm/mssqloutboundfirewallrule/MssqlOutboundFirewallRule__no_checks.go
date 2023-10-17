@@ -7,6 +7,10 @@ package mssqloutboundfirewallrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MssqlOutboundFirewallRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlOutboundFirewallRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MssqlOutboundFirewallRule) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (m *jsiiProxy_MssqlOutboundFirewallRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlOutboundFirewallRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlOutboundFirewallRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MssqlOutboundFirewallRule) validateOverrideLogicalIdParameter
 }
 
 func (m *jsiiProxy_MssqlOutboundFirewallRule) validatePutTimeoutsParameters(value *MssqlOutboundFirewallRuleTimeouts) error {
+	return nil
+}
+
+func validateMssqlOutboundFirewallRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

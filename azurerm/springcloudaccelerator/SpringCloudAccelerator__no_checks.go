@@ -7,6 +7,10 @@ package springcloudaccelerator
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpringCloudAccelerator) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudAccelerator) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SpringCloudAccelerator) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudAccelerator) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudAccelerator) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudAccelerator) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SpringCloudAccelerator) validateOverrideLogicalIdParameters(n
 }
 
 func (s *jsiiProxy_SpringCloudAccelerator) validatePutTimeoutsParameters(value *SpringCloudAcceleratorTimeouts) error {
+	return nil
+}
+
+func validateSpringCloudAccelerator_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

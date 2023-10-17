@@ -7,6 +7,10 @@ package policyvirtualmachineconfigurationassignment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) validateGetStrin
 	return nil
 }
 
+func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) validatePutConfi
 }
 
 func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) validatePutTimeoutsParameters(value *PolicyVirtualMachineConfigurationAssignmentTimeouts) error {
+	return nil
+}
+
+func validatePolicyVirtualMachineConfigurationAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

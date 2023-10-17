@@ -7,6 +7,10 @@ package datafactorydatasethttp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryDatasetHttp) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetHttp) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryDatasetHttp) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryDatasetHttp) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetHttp) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryDatasetHttp) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataFactoryDatasetHttp) validatePutSchemaColumnParameters(val
 }
 
 func (d *jsiiProxy_DataFactoryDatasetHttp) validatePutTimeoutsParameters(value *DataFactoryDatasetHttpTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryDatasetHttp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

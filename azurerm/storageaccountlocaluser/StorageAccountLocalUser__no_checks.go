@@ -7,6 +7,10 @@ package storageaccountlocaluser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageAccountLocalUser) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageAccountLocalUser) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageAccountLocalUser) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_StorageAccountLocalUser) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageAccountLocalUser) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageAccountLocalUser) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (s *jsiiProxy_StorageAccountLocalUser) validatePutSshAuthorizedKeyParameter
 }
 
 func (s *jsiiProxy_StorageAccountLocalUser) validatePutTimeoutsParameters(value *StorageAccountLocalUserTimeouts) error {
+	return nil
+}
+
+func validateStorageAccountLocalUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

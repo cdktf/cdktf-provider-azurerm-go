@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermExpressRouteCircuit) validatePutTimeoutsParameters
 	return nil
 }
 
+func validateDataAzurermExpressRouteCircuit_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermExpressRouteCircuit_IsConstructParameters(x interface{}) error {
 	return nil
 }

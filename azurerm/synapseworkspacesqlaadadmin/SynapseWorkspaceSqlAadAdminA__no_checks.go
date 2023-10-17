@@ -7,6 +7,10 @@ package synapseworkspacesqlaadadmin
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SynapseWorkspaceSqlAadAdminA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseWorkspaceSqlAadAdminA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SynapseWorkspaceSqlAadAdminA) validateGetStringMapAttributePa
 	return nil
 }
 
+func (s *jsiiProxy_SynapseWorkspaceSqlAadAdminA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseWorkspaceSqlAadAdminA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SynapseWorkspaceSqlAadAdminA) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SynapseWorkspaceSqlAadAdminA) validateOverrideLogicalIdParame
 }
 
 func (s *jsiiProxy_SynapseWorkspaceSqlAadAdminA) validatePutTimeoutsParameters(value *SynapseWorkspaceSqlAadAdminTimeouts) error {
+	return nil
+}
+
+func validateSynapseWorkspaceSqlAadAdminA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

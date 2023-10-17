@@ -7,6 +7,10 @@ package springcloudapplicationinsightsapplicationperformancemonitoring
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpringCloudApplicationInsightsApplicationPerformanceMonitoring) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudApplicationInsightsApplicationPerformanceMonitoring) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SpringCloudApplicationInsightsApplicationPerformanceMonitorin
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudApplicationInsightsApplicationPerformanceMonitoring) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudApplicationInsightsApplicationPerformanceMonitoring) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudApplicationInsightsApplicationPerformanceMonitoring) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SpringCloudApplicationInsightsApplicationPerformanceMonitorin
 }
 
 func (s *jsiiProxy_SpringCloudApplicationInsightsApplicationPerformanceMonitoring) validatePutTimeoutsParameters(value *SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeouts) error {
+	return nil
+}
+
+func validateSpringCloudApplicationInsightsApplicationPerformanceMonitoring_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

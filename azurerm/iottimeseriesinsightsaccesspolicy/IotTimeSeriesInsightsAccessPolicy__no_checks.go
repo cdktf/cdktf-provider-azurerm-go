@@ -7,6 +7,10 @@ package iottimeseriesinsightsaccesspolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotTimeSeriesInsightsAccessPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotTimeSeriesInsightsAccessPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IotTimeSeriesInsightsAccessPolicy) validateGetStringMapAttrib
 	return nil
 }
 
+func (i *jsiiProxy_IotTimeSeriesInsightsAccessPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotTimeSeriesInsightsAccessPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotTimeSeriesInsightsAccessPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IotTimeSeriesInsightsAccessPolicy) validateOverrideLogicalIdP
 }
 
 func (i *jsiiProxy_IotTimeSeriesInsightsAccessPolicy) validatePutTimeoutsParameters(value *IotTimeSeriesInsightsAccessPolicyTimeouts) error {
+	return nil
+}
+
+func validateIotTimeSeriesInsightsAccessPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

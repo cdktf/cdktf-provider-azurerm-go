@@ -7,6 +7,10 @@ package postgresqlflexibleserver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PostgresqlFlexibleServer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresqlFlexibleServer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PostgresqlFlexibleServer) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (p *jsiiProxy_PostgresqlFlexibleServer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresqlFlexibleServer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PostgresqlFlexibleServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (p *jsiiProxy_PostgresqlFlexibleServer) validatePutMaintenanceWindowParamet
 }
 
 func (p *jsiiProxy_PostgresqlFlexibleServer) validatePutTimeoutsParameters(value *PostgresqlFlexibleServerTimeouts) error {
+	return nil
+}
+
+func validatePostgresqlFlexibleServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

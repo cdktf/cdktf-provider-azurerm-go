@@ -7,6 +7,10 @@ package springcloudcustomizedaccelerator
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpringCloudCustomizedAccelerator) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudCustomizedAccelerator) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SpringCloudCustomizedAccelerator) validateGetStringMapAttribu
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudCustomizedAccelerator) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudCustomizedAccelerator) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudCustomizedAccelerator) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SpringCloudCustomizedAccelerator) validatePutGitRepositoryPar
 }
 
 func (s *jsiiProxy_SpringCloudCustomizedAccelerator) validatePutTimeoutsParameters(value *SpringCloudCustomizedAcceleratorTimeouts) error {
+	return nil
+}
+
+func validateSpringCloudCustomizedAccelerator_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

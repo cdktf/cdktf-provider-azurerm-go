@@ -7,6 +7,10 @@ package kustodatabaseprincipalassignment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KustoDatabasePrincipalAssignment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoDatabasePrincipalAssignment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KustoDatabasePrincipalAssignment) validateGetStringMapAttribu
 	return nil
 }
 
+func (k *jsiiProxy_KustoDatabasePrincipalAssignment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoDatabasePrincipalAssignment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KustoDatabasePrincipalAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KustoDatabasePrincipalAssignment) validateOverrideLogicalIdPa
 }
 
 func (k *jsiiProxy_KustoDatabasePrincipalAssignment) validatePutTimeoutsParameters(value *KustoDatabasePrincipalAssignmentTimeouts) error {
+	return nil
+}
+
+func validateKustoDatabasePrincipalAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

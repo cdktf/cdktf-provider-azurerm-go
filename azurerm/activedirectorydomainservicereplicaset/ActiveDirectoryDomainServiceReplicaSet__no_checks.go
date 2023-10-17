@@ -7,6 +7,10 @@ package activedirectorydomainservicereplicaset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ActiveDirectoryDomainServiceReplicaSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActiveDirectoryDomainServiceReplicaSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ActiveDirectoryDomainServiceReplicaSet) validateGetStringMapA
 	return nil
 }
 
+func (a *jsiiProxy_ActiveDirectoryDomainServiceReplicaSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActiveDirectoryDomainServiceReplicaSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActiveDirectoryDomainServiceReplicaSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ActiveDirectoryDomainServiceReplicaSet) validateOverrideLogic
 }
 
 func (a *jsiiProxy_ActiveDirectoryDomainServiceReplicaSet) validatePutTimeoutsParameters(value *ActiveDirectoryDomainServiceReplicaSetTimeouts) error {
+	return nil
+}
+
+func validateActiveDirectoryDomainServiceReplicaSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

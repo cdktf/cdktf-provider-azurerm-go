@@ -7,6 +7,10 @@ package stackhcicluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StackHciCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StackHciCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StackHciCluster) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (s *jsiiProxy_StackHciCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StackHciCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StackHciCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_StackHciCluster) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (s *jsiiProxy_StackHciCluster) validatePutTimeoutsParameters(value *StackHciClusterTimeouts) error {
+	return nil
+}
+
+func validateStackHciCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

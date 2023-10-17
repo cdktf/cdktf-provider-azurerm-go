@@ -7,6 +7,10 @@ package mssqlfailovergroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MssqlFailoverGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlFailoverGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MssqlFailoverGroup) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (m *jsiiProxy_MssqlFailoverGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlFailoverGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlFailoverGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (m *jsiiProxy_MssqlFailoverGroup) validatePutReadWriteEndpointFailoverPolic
 }
 
 func (m *jsiiProxy_MssqlFailoverGroup) validatePutTimeoutsParameters(value *MssqlFailoverGroupTimeouts) error {
+	return nil
+}
+
+func validateMssqlFailoverGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

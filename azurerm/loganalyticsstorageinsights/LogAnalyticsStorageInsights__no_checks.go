@@ -7,6 +7,10 @@ package loganalyticsstorageinsights
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogAnalyticsStorageInsights) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsStorageInsights) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LogAnalyticsStorageInsights) validateGetStringMapAttributePar
 	return nil
 }
 
+func (l *jsiiProxy_LogAnalyticsStorageInsights) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsStorageInsights) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogAnalyticsStorageInsights) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (l *jsiiProxy_LogAnalyticsStorageInsights) validateOverrideLogicalIdParamet
 }
 
 func (l *jsiiProxy_LogAnalyticsStorageInsights) validatePutTimeoutsParameters(value *LogAnalyticsStorageInsightsTimeouts) error {
+	return nil
+}
+
+func validateLogAnalyticsStorageInsights_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

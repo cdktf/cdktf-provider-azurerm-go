@@ -7,6 +7,10 @@ package networkinterfacesecuritygroupassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) validateGetStringMa
 	return nil
 }
 
+func (n *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) validateOverrideLog
 }
 
 func (n *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) validatePutTimeoutsParameters(value *NetworkInterfaceSecurityGroupAssociationTimeouts) error {
+	return nil
+}
+
+func validateNetworkInterfaceSecurityGroupAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

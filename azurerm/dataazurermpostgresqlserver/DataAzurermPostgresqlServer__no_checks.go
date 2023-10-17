@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermPostgresqlServer) validatePutTimeoutsParameters(va
 	return nil
 }
 
+func validateDataAzurermPostgresqlServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermPostgresqlServer_IsConstructParameters(x interface{}) error {
 	return nil
 }

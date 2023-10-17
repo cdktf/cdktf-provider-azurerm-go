@@ -7,6 +7,10 @@ package monitordatacollectionendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorDataCollectionEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDataCollectionEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitorDataCollectionEndpoint) validateGetStringMapAttributeP
 	return nil
 }
 
+func (m *jsiiProxy_MonitorDataCollectionEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDataCollectionEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MonitorDataCollectionEndpoint) validateOverrideLogicalIdParam
 }
 
 func (m *jsiiProxy_MonitorDataCollectionEndpoint) validatePutTimeoutsParameters(value *MonitorDataCollectionEndpointTimeouts) error {
+	return nil
+}
+
+func validateMonitorDataCollectionEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

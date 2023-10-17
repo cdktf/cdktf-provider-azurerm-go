@@ -7,6 +7,10 @@ package datafactorylinkedserviceodbc
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryLinkedServiceOdbc) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceOdbc) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceOdbc) validateGetStringMapAttributePa
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceOdbc) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceOdbc) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceOdbc) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataFactoryLinkedServiceOdbc) validatePutBasicAuthenticationP
 }
 
 func (d *jsiiProxy_DataFactoryLinkedServiceOdbc) validatePutTimeoutsParameters(value *DataFactoryLinkedServiceOdbcTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceOdbc_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

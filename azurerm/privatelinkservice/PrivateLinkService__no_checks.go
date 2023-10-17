@@ -7,6 +7,10 @@ package privatelinkservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrivateLinkService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateLinkService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PrivateLinkService) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (p *jsiiProxy_PrivateLinkService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateLinkService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivateLinkService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (p *jsiiProxy_PrivateLinkService) validatePutNatIpConfigurationParameters(v
 }
 
 func (p *jsiiProxy_PrivateLinkService) validatePutTimeoutsParameters(value *PrivateLinkServiceTimeouts) error {
+	return nil
+}
+
+func validatePrivateLinkService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

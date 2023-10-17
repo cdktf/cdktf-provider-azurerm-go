@@ -7,6 +7,10 @@ package lbnatrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbNatRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbNatRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LbNatRule) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (l *jsiiProxy_LbNatRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbNatRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbNatRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (l *jsiiProxy_LbNatRule) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (l *jsiiProxy_LbNatRule) validatePutTimeoutsParameters(value *LbNatRuleTimeouts) error {
+	return nil
+}
+
+func validateLbNatRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

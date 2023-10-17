@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermRedisEnterpriseDatabase) validatePutTimeoutsParame
 	return nil
 }
 
+func validateDataAzurermRedisEnterpriseDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermRedisEnterpriseDatabase_IsConstructParameters(x interface{}) error {
 	return nil
 }

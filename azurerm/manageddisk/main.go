@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-azurerm.managedDisk.ManagedDisk",
 		reflect.TypeOf((*ManagedDisk)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
@@ -60,6 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "imageReferenceId", GoGetter: "ImageReferenceId"},
 			_jsii_.MemberProperty{JsiiProperty: "imageReferenceIdInput", GoGetter: "ImageReferenceIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
@@ -68,6 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "logicalSectorSizeInput", GoGetter: "LogicalSectorSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxShares", GoGetter: "MaxShares"},
 			_jsii_.MemberProperty{JsiiProperty: "maxSharesInput", GoGetter: "MaxSharesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "networkAccessPolicy", GoGetter: "NetworkAccessPolicy"},

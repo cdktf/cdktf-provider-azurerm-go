@@ -7,6 +7,10 @@ package logzsubaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogzSubAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogzSubAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LogzSubAccount) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (l *jsiiProxy_LogzSubAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogzSubAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogzSubAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (l *jsiiProxy_LogzSubAccount) validatePutTimeoutsParameters(value *LogzSubA
 }
 
 func (l *jsiiProxy_LogzSubAccount) validatePutUserParameters(value *LogzSubAccountUser) error {
+	return nil
+}
+
+func validateLogzSubAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

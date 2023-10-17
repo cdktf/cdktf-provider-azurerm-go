@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-azurerm.appServiceEnvironmentV3.AppServiceEnvironmentV3",
 		reflect.TypeOf((*AppServiceEnvironmentV3)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowNewPrivateEndpointConnections", GoGetter: "AllowNewPrivateEndpointConnections"},
 			_jsii_.MemberProperty{JsiiProperty: "allowNewPrivateEndpointConnectionsInput", GoGetter: "AllowNewPrivateEndpointConnectionsInput"},
@@ -42,6 +43,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "inboundNetworkDependencies", GoGetter: "InboundNetworkDependencies"},
 			_jsii_.MemberProperty{JsiiProperty: "internalInboundIpAddresses", GoGetter: "InternalInboundIpAddresses"},
 			_jsii_.MemberProperty{JsiiProperty: "internalLoadBalancingMode", GoGetter: "InternalLoadBalancingMode"},
@@ -51,6 +53,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "linuxOutboundIpAddresses", GoGetter: "LinuxOutboundIpAddresses"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

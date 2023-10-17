@@ -7,6 +7,10 @@ package iottimeseriesinsightsgen2environment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotTimeSeriesInsightsGen2Environment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotTimeSeriesInsightsGen2Environment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IotTimeSeriesInsightsGen2Environment) validateGetStringMapAtt
 	return nil
 }
 
+func (i *jsiiProxy_IotTimeSeriesInsightsGen2Environment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotTimeSeriesInsightsGen2Environment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotTimeSeriesInsightsGen2Environment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (i *jsiiProxy_IotTimeSeriesInsightsGen2Environment) validatePutStorageParam
 }
 
 func (i *jsiiProxy_IotTimeSeriesInsightsGen2Environment) validatePutTimeoutsParameters(value *IotTimeSeriesInsightsGen2EnvironmentTimeouts) error {
+	return nil
+}
+
+func validateIotTimeSeriesInsightsGen2Environment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package apimanagementgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiManagementGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApiManagementGroup) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_ApiManagementGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiManagementGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApiManagementGroup) validateOverrideLogicalIdParameters(newLo
 }
 
 func (a *jsiiProxy_ApiManagementGroup) validatePutTimeoutsParameters(value *ApiManagementGroupTimeouts) error {
+	return nil
+}
+
+func validateApiManagementGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package image
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_Image) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Image) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_Image) validateGetStringMapAttributeParameters(terraformAttri
 	return nil
 }
 
+func (i *jsiiProxy_Image) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Image) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_Image) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (i *jsiiProxy_Image) validatePutOsDiskParameters(value *ImageOsDisk) error 
 }
 
 func (i *jsiiProxy_Image) validatePutTimeoutsParameters(value *ImageTimeouts) error {
+	return nil
+}
+
+func validateImage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

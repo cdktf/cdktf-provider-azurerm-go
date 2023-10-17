@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermDnsNsRecord) validatePutTimeoutsParameters(value *
 	return nil
 }
 
+func validateDataAzurermDnsNsRecord_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermDnsNsRecord_IsConstructParameters(x interface{}) error {
 	return nil
 }

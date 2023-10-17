@@ -5,10 +5,10 @@ package dataazurermpublicipprefix
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/dataazurermpublicipprefix/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/dataazurermpublicipprefix/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -503,6 +503,25 @@ func (j *jsiiProxy_DataAzurermPublicIpPrefix)SetResourceGroupName(val *string) {
 		"resourceGroupName",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataAzurermPublicIpPrefix resource upon running "cdktf plan <stack-name>".
+func DataAzurermPublicIpPrefix_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAzurermPublicIpPrefix_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefix",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

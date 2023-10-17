@@ -7,6 +7,10 @@ package synapsesqlpoolsecurityalertpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SynapseSqlPoolSecurityAlertPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseSqlPoolSecurityAlertPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SynapseSqlPoolSecurityAlertPolicy) validateGetStringMapAttrib
 	return nil
 }
 
+func (s *jsiiProxy_SynapseSqlPoolSecurityAlertPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseSqlPoolSecurityAlertPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SynapseSqlPoolSecurityAlertPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SynapseSqlPoolSecurityAlertPolicy) validateOverrideLogicalIdP
 }
 
 func (s *jsiiProxy_SynapseSqlPoolSecurityAlertPolicy) validatePutTimeoutsParameters(value *SynapseSqlPoolSecurityAlertPolicyTimeouts) error {
+	return nil
+}
+
+func validateSynapseSqlPoolSecurityAlertPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

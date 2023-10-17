@@ -7,6 +7,10 @@ package mssqlvirtualnetworkrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MssqlVirtualNetworkRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlVirtualNetworkRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MssqlVirtualNetworkRule) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_MssqlVirtualNetworkRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlVirtualNetworkRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlVirtualNetworkRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MssqlVirtualNetworkRule) validateOverrideLogicalIdParameters(
 }
 
 func (m *jsiiProxy_MssqlVirtualNetworkRule) validatePutTimeoutsParameters(value *MssqlVirtualNetworkRuleTimeouts) error {
+	return nil
+}
+
+func validateMssqlVirtualNetworkRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package orchestratedvirtualmachinescaleset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateGetStringMapAttri
 	return nil
 }
 
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -108,6 +120,10 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) validatePutTerminationNot
 }
 
 func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) validatePutTimeoutsParameters(value *OrchestratedVirtualMachineScaleSetTimeouts) error {
+	return nil
+}
+
+func validateOrchestratedVirtualMachineScaleSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

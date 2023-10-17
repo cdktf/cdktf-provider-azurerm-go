@@ -7,6 +7,10 @@ package synapselinkedservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SynapseLinkedService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseLinkedService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SynapseLinkedService) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_SynapseLinkedService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseLinkedService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SynapseLinkedService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SynapseLinkedService) validatePutIntegrationRuntimeParameters
 }
 
 func (s *jsiiProxy_SynapseLinkedService) validatePutTimeoutsParameters(value *SynapseLinkedServiceTimeouts) error {
+	return nil
+}
+
+func validateSynapseLinkedService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

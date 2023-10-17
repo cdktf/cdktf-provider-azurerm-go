@@ -7,6 +7,10 @@ package customprovider
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CustomProvider) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomProvider) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CustomProvider) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (c *jsiiProxy_CustomProvider) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomProvider) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomProvider) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (c *jsiiProxy_CustomProvider) validatePutTimeoutsParameters(value *CustomPr
 }
 
 func (c *jsiiProxy_CustomProvider) validatePutValidationParameters(value interface{}) error {
+	return nil
+}
+
+func validateCustomProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

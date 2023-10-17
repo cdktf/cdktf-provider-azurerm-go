@@ -7,6 +7,10 @@ package cosmosdbsqlstoredprocedure
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CosmosdbSqlStoredProcedure) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbSqlStoredProcedure) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CosmosdbSqlStoredProcedure) validateGetStringMapAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbSqlStoredProcedure) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbSqlStoredProcedure) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbSqlStoredProcedure) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CosmosdbSqlStoredProcedure) validateOverrideLogicalIdParamete
 }
 
 func (c *jsiiProxy_CosmosdbSqlStoredProcedure) validatePutTimeoutsParameters(value *CosmosdbSqlStoredProcedureTimeouts) error {
+	return nil
+}
+
+func validateCosmosdbSqlStoredProcedure_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

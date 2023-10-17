@@ -7,6 +7,10 @@ package appservicecertificatebinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppServiceCertificateBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppServiceCertificateBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppServiceCertificateBinding) validateGetStringMapAttributePa
 	return nil
 }
 
+func (a *jsiiProxy_AppServiceCertificateBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppServiceCertificateBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppServiceCertificateBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AppServiceCertificateBinding) validateOverrideLogicalIdParame
 }
 
 func (a *jsiiProxy_AppServiceCertificateBinding) validatePutTimeoutsParameters(value *AppServiceCertificateBindingTimeouts) error {
+	return nil
+}
+
+func validateAppServiceCertificateBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

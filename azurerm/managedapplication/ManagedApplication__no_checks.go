@@ -7,6 +7,10 @@ package managedapplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_ManagedApplication) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedApplication) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_ManagedApplication) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (m *jsiiProxy_ManagedApplication) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedApplication) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_ManagedApplication) validatePutPlanParameters(value *ManagedA
 }
 
 func (m *jsiiProxy_ManagedApplication) validatePutTimeoutsParameters(value *ManagedApplicationTimeouts) error {
+	return nil
+}
+
+func validateManagedApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package securitycentersubscriptionpricing
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecurityCenterSubscriptionPricing) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityCenterSubscriptionPricing) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SecurityCenterSubscriptionPricing) validateGetStringMapAttrib
 	return nil
 }
 
+func (s *jsiiProxy_SecurityCenterSubscriptionPricing) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityCenterSubscriptionPricing) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityCenterSubscriptionPricing) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SecurityCenterSubscriptionPricing) validatePutExtensionParame
 }
 
 func (s *jsiiProxy_SecurityCenterSubscriptionPricing) validatePutTimeoutsParameters(value *SecurityCenterSubscriptionPricingTimeouts) error {
+	return nil
+}
+
+func validateSecurityCenterSubscriptionPricing_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

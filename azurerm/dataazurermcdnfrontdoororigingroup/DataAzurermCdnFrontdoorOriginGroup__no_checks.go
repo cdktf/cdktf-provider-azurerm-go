@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermCdnFrontdoorOriginGroup) validatePutTimeoutsParame
 	return nil
 }
 
+func validateDataAzurermCdnFrontdoorOriginGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermCdnFrontdoorOriginGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

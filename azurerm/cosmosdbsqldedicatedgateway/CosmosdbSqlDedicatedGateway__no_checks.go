@@ -7,6 +7,10 @@ package cosmosdbsqldedicatedgateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CosmosdbSqlDedicatedGateway) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbSqlDedicatedGateway) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CosmosdbSqlDedicatedGateway) validateGetStringMapAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbSqlDedicatedGateway) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbSqlDedicatedGateway) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbSqlDedicatedGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CosmosdbSqlDedicatedGateway) validateOverrideLogicalIdParamet
 }
 
 func (c *jsiiProxy_CosmosdbSqlDedicatedGateway) validatePutTimeoutsParameters(value *CosmosdbSqlDedicatedGatewayTimeouts) error {
+	return nil
+}
+
+func validateCosmosdbSqlDedicatedGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

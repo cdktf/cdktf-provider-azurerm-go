@@ -7,6 +7,10 @@ package storagemanagementpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageManagementPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageManagementPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageManagementPolicy) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_StorageManagementPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageManagementPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageManagementPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_StorageManagementPolicy) validatePutRuleParameters(value inte
 }
 
 func (s *jsiiProxy_StorageManagementPolicy) validatePutTimeoutsParameters(value *StorageManagementPolicyTimeouts) error {
+	return nil
+}
+
+func validateStorageManagementPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

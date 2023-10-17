@@ -7,6 +7,10 @@ package mediajob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MediaJob) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaJob) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MediaJob) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (m *jsiiProxy_MediaJob) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaJob) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MediaJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (m *jsiiProxy_MediaJob) validatePutOutputAssetParameters(value interface{})
 }
 
 func (m *jsiiProxy_MediaJob) validatePutTimeoutsParameters(value *MediaJobTimeouts) error {
+	return nil
+}
+
+func validateMediaJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

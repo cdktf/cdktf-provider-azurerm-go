@@ -7,6 +7,10 @@ package storagesyncgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageSyncGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageSyncGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageSyncGroup) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_StorageSyncGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageSyncGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageSyncGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_StorageSyncGroup) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (s *jsiiProxy_StorageSyncGroup) validatePutTimeoutsParameters(value *StorageSyncGroupTimeouts) error {
+	return nil
+}
+
+func validateStorageSyncGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

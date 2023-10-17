@@ -7,6 +7,10 @@ package virtualdesktopscalingplan
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualDesktopScalingPlan) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualDesktopScalingPlan) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VirtualDesktopScalingPlan) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (v *jsiiProxy_VirtualDesktopScalingPlan) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualDesktopScalingPlan) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualDesktopScalingPlan) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (v *jsiiProxy_VirtualDesktopScalingPlan) validatePutScheduleParameters(valu
 }
 
 func (v *jsiiProxy_VirtualDesktopScalingPlan) validatePutTimeoutsParameters(value *VirtualDesktopScalingPlanTimeouts) error {
+	return nil
+}
+
+func validateVirtualDesktopScalingPlan_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

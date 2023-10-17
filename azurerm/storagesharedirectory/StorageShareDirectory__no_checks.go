@@ -7,6 +7,10 @@ package storagesharedirectory
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageShareDirectory) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageShareDirectory) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageShareDirectory) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (s *jsiiProxy_StorageShareDirectory) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageShareDirectory) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageShareDirectory) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_StorageShareDirectory) validateOverrideLogicalIdParameters(ne
 }
 
 func (s *jsiiProxy_StorageShareDirectory) validatePutTimeoutsParameters(value *StorageShareDirectoryTimeouts) error {
+	return nil
+}
+
+func validateStorageShareDirectory_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package digitaltwinsendpointeventgrid
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DigitalTwinsEndpointEventgrid) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DigitalTwinsEndpointEventgrid) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DigitalTwinsEndpointEventgrid) validateGetStringMapAttributeP
 	return nil
 }
 
+func (d *jsiiProxy_DigitalTwinsEndpointEventgrid) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DigitalTwinsEndpointEventgrid) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DigitalTwinsEndpointEventgrid) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DigitalTwinsEndpointEventgrid) validateOverrideLogicalIdParam
 }
 
 func (d *jsiiProxy_DigitalTwinsEndpointEventgrid) validatePutTimeoutsParameters(value *DigitalTwinsEndpointEventgridTimeouts) error {
+	return nil
+}
+
+func validateDigitalTwinsEndpointEventgrid_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

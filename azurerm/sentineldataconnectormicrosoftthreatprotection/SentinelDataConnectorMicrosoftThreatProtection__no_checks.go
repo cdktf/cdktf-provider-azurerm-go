@@ -7,6 +7,10 @@ package sentineldataconnectormicrosoftthreatprotection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SentinelDataConnectorMicrosoftThreatProtection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelDataConnectorMicrosoftThreatProtection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SentinelDataConnectorMicrosoftThreatProtection) validateGetSt
 	return nil
 }
 
+func (s *jsiiProxy_SentinelDataConnectorMicrosoftThreatProtection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelDataConnectorMicrosoftThreatProtection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelDataConnectorMicrosoftThreatProtection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SentinelDataConnectorMicrosoftThreatProtection) validateOverr
 }
 
 func (s *jsiiProxy_SentinelDataConnectorMicrosoftThreatProtection) validatePutTimeoutsParameters(value *SentinelDataConnectorMicrosoftThreatProtectionTimeouts) error {
+	return nil
+}
+
+func validateSentinelDataConnectorMicrosoftThreatProtection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

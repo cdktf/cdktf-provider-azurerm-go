@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-azurerm.hpcCache.HpcCache",
 		reflect.TypeOf((*HpcCache)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "automaticallyRotateKeyToLatestEnabled", GoGetter: "AutomaticallyRotateKeyToLatestEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "automaticallyRotateKeyToLatestEnabledInput", GoGetter: "AutomaticallyRotateKeyToLatestEnabledInput"},
@@ -50,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "identity", GoGetter: "Identity"},
 			_jsii_.MemberProperty{JsiiProperty: "identityInput", GoGetter: "IdentityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "keyVaultKeyId", GoGetter: "KeyVaultKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "keyVaultKeyIdInput", GoGetter: "KeyVaultKeyIdInput"},
@@ -57,6 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mountAddresses", GoGetter: "MountAddresses"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "mtu", GoGetter: "Mtu"},
 			_jsii_.MemberProperty{JsiiProperty: "mtuInput", GoGetter: "MtuInput"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},

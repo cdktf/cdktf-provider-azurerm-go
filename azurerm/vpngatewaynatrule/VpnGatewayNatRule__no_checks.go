@@ -7,6 +7,10 @@ package vpngatewaynatrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpnGatewayNatRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnGatewayNatRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpnGatewayNatRule) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (v *jsiiProxy_VpnGatewayNatRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnGatewayNatRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpnGatewayNatRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (v *jsiiProxy_VpnGatewayNatRule) validatePutInternalMappingParameters(value
 }
 
 func (v *jsiiProxy_VpnGatewayNatRule) validatePutTimeoutsParameters(value *VpnGatewayNatRuleTimeouts) error {
+	return nil
+}
+
+func validateVpnGatewayNatRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

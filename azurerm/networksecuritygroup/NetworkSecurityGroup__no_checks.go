@@ -7,6 +7,10 @@ package networksecuritygroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkSecurityGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkSecurityGroup) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (n *jsiiProxy_NetworkSecurityGroup) validatePutSecurityRuleParameters(value
 }
 
 func (n *jsiiProxy_NetworkSecurityGroup) validatePutTimeoutsParameters(value *NetworkSecurityGroupTimeouts) error {
+	return nil
+}
+
+func validateNetworkSecurityGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

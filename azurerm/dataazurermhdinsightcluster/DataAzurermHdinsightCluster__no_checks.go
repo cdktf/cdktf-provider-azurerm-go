@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermHdinsightCluster) validatePutTimeoutsParameters(va
 	return nil
 }
 
+func validateDataAzurermHdinsightCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermHdinsightCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }

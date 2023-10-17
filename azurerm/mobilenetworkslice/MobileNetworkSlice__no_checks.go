@@ -7,6 +7,10 @@ package mobilenetworkslice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MobileNetworkSlice) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MobileNetworkSlice) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MobileNetworkSlice) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (m *jsiiProxy_MobileNetworkSlice) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MobileNetworkSlice) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MobileNetworkSlice) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MobileNetworkSlice) validatePutSingleNetworkSliceSelectionAss
 }
 
 func (m *jsiiProxy_MobileNetworkSlice) validatePutTimeoutsParameters(value *MobileNetworkSliceTimeouts) error {
+	return nil
+}
+
+func validateMobileNetworkSlice_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

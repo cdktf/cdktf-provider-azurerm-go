@@ -7,6 +7,10 @@ package networkinterfacenatruleassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkInterfaceNatRuleAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkInterfaceNatRuleAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkInterfaceNatRuleAssociation) validateGetStringMapAttri
 	return nil
 }
 
+func (n *jsiiProxy_NetworkInterfaceNatRuleAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkInterfaceNatRuleAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkInterfaceNatRuleAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkInterfaceNatRuleAssociation) validateOverrideLogicalId
 }
 
 func (n *jsiiProxy_NetworkInterfaceNatRuleAssociation) validatePutTimeoutsParameters(value *NetworkInterfaceNatRuleAssociationTimeouts) error {
+	return nil
+}
+
+func validateNetworkInterfaceNatRuleAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

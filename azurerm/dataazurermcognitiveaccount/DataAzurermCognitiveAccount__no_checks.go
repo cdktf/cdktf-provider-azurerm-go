@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermCognitiveAccount) validatePutTimeoutsParameters(va
 	return nil
 }
 
+func validateDataAzurermCognitiveAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermCognitiveAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermEventgridSystemTopic) validatePutTimeoutsParameter
 	return nil
 }
 
+func validateDataAzurermEventgridSystemTopic_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermEventgridSystemTopic_IsConstructParameters(x interface{}) error {
 	return nil
 }

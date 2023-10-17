@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermPrivateDnsResolverDnsForwardingRuleset) validatePu
 	return nil
 }
 
+func validateDataAzurermPrivateDnsResolverDnsForwardingRuleset_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermPrivateDnsResolverDnsForwardingRuleset_IsConstructParameters(x interface{}) error {
 	return nil
 }

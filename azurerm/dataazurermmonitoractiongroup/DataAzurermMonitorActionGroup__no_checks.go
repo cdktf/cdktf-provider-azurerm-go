@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermMonitorActionGroup) validatePutTimeoutsParameters(
 	return nil
 }
 
+func validateDataAzurermMonitorActionGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermMonitorActionGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

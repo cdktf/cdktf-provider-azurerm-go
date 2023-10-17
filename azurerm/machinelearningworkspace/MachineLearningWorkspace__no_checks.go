@@ -7,6 +7,10 @@ package machinelearningworkspace
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MachineLearningWorkspace) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MachineLearningWorkspace) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MachineLearningWorkspace) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (m *jsiiProxy_MachineLearningWorkspace) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MachineLearningWorkspace) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MachineLearningWorkspace) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (m *jsiiProxy_MachineLearningWorkspace) validatePutIdentityParameters(value
 }
 
 func (m *jsiiProxy_MachineLearningWorkspace) validatePutTimeoutsParameters(value *MachineLearningWorkspaceTimeouts) error {
+	return nil
+}
+
+func validateMachineLearningWorkspace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

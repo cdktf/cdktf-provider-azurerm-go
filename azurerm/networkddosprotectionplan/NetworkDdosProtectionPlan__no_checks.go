@@ -7,6 +7,10 @@ package networkddosprotectionplan
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkDdosProtectionPlan) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkDdosProtectionPlan) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkDdosProtectionPlan) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (n *jsiiProxy_NetworkDdosProtectionPlan) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkDdosProtectionPlan) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkDdosProtectionPlan) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkDdosProtectionPlan) validateOverrideLogicalIdParameter
 }
 
 func (n *jsiiProxy_NetworkDdosProtectionPlan) validatePutTimeoutsParameters(value *NetworkDdosProtectionPlanTimeouts) error {
+	return nil
+}
+
+func validateNetworkDdosProtectionPlan_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

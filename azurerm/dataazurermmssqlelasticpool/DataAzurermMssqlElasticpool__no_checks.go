@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermMssqlElasticpool) validatePutTimeoutsParameters(va
 	return nil
 }
 
+func validateDataAzurermMssqlElasticpool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermMssqlElasticpool_IsConstructParameters(x interface{}) error {
 	return nil
 }

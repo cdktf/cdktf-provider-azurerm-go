@@ -7,6 +7,10 @@ package mobilenetworkpacketcoredataplane
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MobileNetworkPacketCoreDataPlane) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MobileNetworkPacketCoreDataPlane) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MobileNetworkPacketCoreDataPlane) validateGetStringMapAttribu
 	return nil
 }
 
+func (m *jsiiProxy_MobileNetworkPacketCoreDataPlane) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MobileNetworkPacketCoreDataPlane) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MobileNetworkPacketCoreDataPlane) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MobileNetworkPacketCoreDataPlane) validateOverrideLogicalIdPa
 }
 
 func (m *jsiiProxy_MobileNetworkPacketCoreDataPlane) validatePutTimeoutsParameters(value *MobileNetworkPacketCoreDataPlaneTimeouts) error {
+	return nil
+}
+
+func validateMobileNetworkPacketCoreDataPlane_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

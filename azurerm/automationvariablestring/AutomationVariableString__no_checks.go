@@ -7,6 +7,10 @@ package automationvariablestring
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutomationVariableString) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationVariableString) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AutomationVariableString) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (a *jsiiProxy_AutomationVariableString) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationVariableString) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutomationVariableString) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AutomationVariableString) validateOverrideLogicalIdParameters
 }
 
 func (a *jsiiProxy_AutomationVariableString) validatePutTimeoutsParameters(value *AutomationVariableStringTimeouts) error {
+	return nil
+}
+
+func validateAutomationVariableString_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

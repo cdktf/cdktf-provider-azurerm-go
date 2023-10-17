@@ -7,6 +7,10 @@ package networkconnectionmonitor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkConnectionMonitor) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectionMonitor) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkConnectionMonitor) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (n *jsiiProxy_NetworkConnectionMonitor) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectionMonitor) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkConnectionMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (n *jsiiProxy_NetworkConnectionMonitor) validatePutTestGroupParameters(valu
 }
 
 func (n *jsiiProxy_NetworkConnectionMonitor) validatePutTimeoutsParameters(value *NetworkConnectionMonitorTimeouts) error {
+	return nil
+}
+
+func validateNetworkConnectionMonitor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

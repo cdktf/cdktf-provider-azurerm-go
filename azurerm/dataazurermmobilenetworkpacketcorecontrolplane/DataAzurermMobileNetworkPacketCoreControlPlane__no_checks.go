@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermMobileNetworkPacketCoreControlPlane) validatePutTi
 	return nil
 }
 
+func validateDataAzurermMobileNetworkPacketCoreControlPlane_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermMobileNetworkPacketCoreControlPlane_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package resourcepolicyremediation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_ResourcePolicyRemediation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourcePolicyRemediation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_ResourcePolicyRemediation) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (r *jsiiProxy_ResourcePolicyRemediation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourcePolicyRemediation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourcePolicyRemediation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_ResourcePolicyRemediation) validateOverrideLogicalIdParameter
 }
 
 func (r *jsiiProxy_ResourcePolicyRemediation) validatePutTimeoutsParameters(value *ResourcePolicyRemediationTimeouts) error {
+	return nil
+}
+
+func validateResourcePolicyRemediation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

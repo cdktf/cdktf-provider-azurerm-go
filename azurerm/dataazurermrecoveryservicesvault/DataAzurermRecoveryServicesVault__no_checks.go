@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermRecoveryServicesVault) validatePutTimeoutsParamete
 	return nil
 }
 
+func validateDataAzurermRecoveryServicesVault_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermRecoveryServicesVault_IsConstructParameters(x interface{}) error {
 	return nil
 }

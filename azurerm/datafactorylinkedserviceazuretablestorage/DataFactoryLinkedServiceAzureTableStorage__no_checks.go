@@ -7,6 +7,10 @@ package datafactorylinkedserviceazuretablestorage
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage) validateGetStringM
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage) validateOverrideLo
 }
 
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureTableStorage) validatePutTimeoutsParameters(value *DataFactoryLinkedServiceAzureTableStorageTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceAzureTableStorage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

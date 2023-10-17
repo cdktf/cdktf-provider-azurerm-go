@@ -7,6 +7,10 @@ package hpccachenfstarget
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HpcCacheNfsTarget) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HpcCacheNfsTarget) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (h *jsiiProxy_HpcCacheNfsTarget) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (h *jsiiProxy_HpcCacheNfsTarget) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HpcCacheNfsTarget) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HpcCacheNfsTarget) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (h *jsiiProxy_HpcCacheNfsTarget) validatePutNamespaceJunctionParameters(val
 }
 
 func (h *jsiiProxy_HpcCacheNfsTarget) validatePutTimeoutsParameters(value *HpcCacheNfsTargetTimeouts) error {
+	return nil
+}
+
+func validateHpcCacheNfsTarget_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

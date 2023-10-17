@@ -5,10 +5,10 @@ package paloaltonextgenerationfirewallvirtualnetworkpanorama
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/paloaltonextgenerationfirewallvirtualnetworkpanorama/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/paloaltonextgenerationfirewallvirtualnetworkpanorama/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -88,6 +88,9 @@ type PaloAltoNextGenerationFirewallVirtualNetworkPanorama interface {
 	TerraformResourceType() *string
 	Timeouts() PaloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -109,7 +112,12 @@ type PaloAltoNextGenerationFirewallVirtualNetworkPanorama interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -674,6 +682,25 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanorama)SetTags(
 	)
 }
 
+// Generates CDKTF code for importing a PaloAltoNextGenerationFirewallVirtualNetworkPanorama resource upon running "cdktf plan <stack-name>".
+func PaloAltoNextGenerationFirewallVirtualNetworkPanorama_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validatePaloAltoNextGenerationFirewallVirtualNetworkPanorama_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkPanorama.PaloAltoNextGenerationFirewallVirtualNetworkPanorama",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -756,6 +783,17 @@ func PaloAltoNextGenerationFirewallVirtualNetworkPanorama_TfResourceType() *stri
 		&returns,
 	)
 	return returns
+}
+
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanorama) AddMoveTarget(moveTarget *string) {
+	if err := p.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanorama) AddOverride(path *string, value interface{}) {
@@ -913,6 +951,17 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanorama) GetStri
 	return returns
 }
 
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanorama) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := p.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanorama) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -927,6 +976,17 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanorama) Interpo
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanorama) MoveTo(moveTarget *string, index interface{}) {
+	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanorama) OverrideLogicalId(newLogicalId *string) {

@@ -7,6 +7,10 @@ package datafactorypipeline
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryPipeline) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryPipeline) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryPipeline) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryPipeline) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryPipeline) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryPipeline) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataFactoryPipeline) validateOverrideLogicalIdParameters(newL
 }
 
 func (d *jsiiProxy_DataFactoryPipeline) validatePutTimeoutsParameters(value *DataFactoryPipelineTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryPipeline_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

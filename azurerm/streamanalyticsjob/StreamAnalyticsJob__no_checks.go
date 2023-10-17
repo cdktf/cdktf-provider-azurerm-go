@@ -7,6 +7,10 @@ package streamanalyticsjob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StreamAnalyticsJob) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsJob) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StreamAnalyticsJob) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_StreamAnalyticsJob) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsJob) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamAnalyticsJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (s *jsiiProxy_StreamAnalyticsJob) validatePutJobStorageAccountParameters(va
 }
 
 func (s *jsiiProxy_StreamAnalyticsJob) validatePutTimeoutsParameters(value *StreamAnalyticsJobTimeouts) error {
+	return nil
+}
+
+func validateStreamAnalyticsJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

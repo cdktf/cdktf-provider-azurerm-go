@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermPrivateDnsResolverOutboundEndpoint) validatePutTim
 	return nil
 }
 
+func validateDataAzurermPrivateDnsResolverOutboundEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermPrivateDnsResolverOutboundEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }

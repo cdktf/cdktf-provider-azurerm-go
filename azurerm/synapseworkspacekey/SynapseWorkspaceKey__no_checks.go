@@ -7,6 +7,10 @@ package synapseworkspacekey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SynapseWorkspaceKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseWorkspaceKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SynapseWorkspaceKey) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (s *jsiiProxy_SynapseWorkspaceKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseWorkspaceKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SynapseWorkspaceKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SynapseWorkspaceKey) validateOverrideLogicalIdParameters(newL
 }
 
 func (s *jsiiProxy_SynapseWorkspaceKey) validatePutTimeoutsParameters(value *SynapseWorkspaceKeyTimeouts) error {
+	return nil
+}
+
+func validateSynapseWorkspaceKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

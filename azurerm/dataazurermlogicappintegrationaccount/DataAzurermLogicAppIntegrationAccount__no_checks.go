@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermLogicAppIntegrationAccount) validatePutTimeoutsPar
 	return nil
 }
 
+func validateDataAzurermLogicAppIntegrationAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermLogicAppIntegrationAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }

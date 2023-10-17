@@ -7,6 +7,10 @@ package managementgrouppolicyexemption
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_ManagementGroupPolicyExemption) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagementGroupPolicyExemption) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_ManagementGroupPolicyExemption) validateGetStringMapAttribute
 	return nil
 }
 
+func (m *jsiiProxy_ManagementGroupPolicyExemption) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagementGroupPolicyExemption) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagementGroupPolicyExemption) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_ManagementGroupPolicyExemption) validateOverrideLogicalIdPara
 }
 
 func (m *jsiiProxy_ManagementGroupPolicyExemption) validatePutTimeoutsParameters(value *ManagementGroupPolicyExemptionTimeouts) error {
+	return nil
+}
+
+func validateManagementGroupPolicyExemption_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

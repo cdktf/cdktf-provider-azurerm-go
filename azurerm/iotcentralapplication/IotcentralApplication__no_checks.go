@@ -7,6 +7,10 @@ package iotcentralapplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotcentralApplication) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotcentralApplication) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IotcentralApplication) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (i *jsiiProxy_IotcentralApplication) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotcentralApplication) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotcentralApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (i *jsiiProxy_IotcentralApplication) validatePutIdentityParameters(value *I
 }
 
 func (i *jsiiProxy_IotcentralApplication) validatePutTimeoutsParameters(value *IotcentralApplicationTimeouts) error {
+	return nil
+}
+
+func validateIotcentralApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

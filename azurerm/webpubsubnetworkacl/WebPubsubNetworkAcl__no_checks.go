@@ -7,6 +7,10 @@ package webpubsubnetworkacl
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WebPubsubNetworkAcl) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebPubsubNetworkAcl) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WebPubsubNetworkAcl) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (w *jsiiProxy_WebPubsubNetworkAcl) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebPubsubNetworkAcl) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WebPubsubNetworkAcl) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (w *jsiiProxy_WebPubsubNetworkAcl) validatePutPublicNetworkParameters(value
 }
 
 func (w *jsiiProxy_WebPubsubNetworkAcl) validatePutTimeoutsParameters(value *WebPubsubNetworkAclTimeouts) error {
+	return nil
+}
+
+func validateWebPubsubNetworkAcl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

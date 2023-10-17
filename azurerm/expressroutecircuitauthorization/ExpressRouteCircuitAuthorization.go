@@ -5,10 +5,10 @@ package expressroutecircuitauthorization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/expressroutecircuitauthorization/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/expressroutecircuitauthorization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -77,6 +77,9 @@ type ExpressRouteCircuitAuthorization interface {
 	TerraformResourceType() *string
 	Timeouts() ExpressRouteCircuitAuthorizationTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -98,7 +101,12 @@ type ExpressRouteCircuitAuthorization interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -545,6 +553,25 @@ func (j *jsiiProxy_ExpressRouteCircuitAuthorization)SetResourceGroupName(val *st
 	)
 }
 
+// Generates CDKTF code for importing a ExpressRouteCircuitAuthorization resource upon running "cdktf plan <stack-name>".
+func ExpressRouteCircuitAuthorization_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateExpressRouteCircuitAuthorization_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.expressRouteCircuitAuthorization.ExpressRouteCircuitAuthorization",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -627,6 +654,17 @@ func ExpressRouteCircuitAuthorization_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (e *jsiiProxy_ExpressRouteCircuitAuthorization) AddMoveTarget(moveTarget *string) {
+	if err := e.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (e *jsiiProxy_ExpressRouteCircuitAuthorization) AddOverride(path *string, value interface{}) {
@@ -784,6 +822,17 @@ func (e *jsiiProxy_ExpressRouteCircuitAuthorization) GetStringMapAttribute(terra
 	return returns
 }
 
+func (e *jsiiProxy_ExpressRouteCircuitAuthorization) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := e.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (e *jsiiProxy_ExpressRouteCircuitAuthorization) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -798,6 +847,17 @@ func (e *jsiiProxy_ExpressRouteCircuitAuthorization) InterpolationForAttribute(t
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_ExpressRouteCircuitAuthorization) MoveTo(moveTarget *string, index interface{}) {
+	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (e *jsiiProxy_ExpressRouteCircuitAuthorization) OverrideLogicalId(newLogicalId *string) {

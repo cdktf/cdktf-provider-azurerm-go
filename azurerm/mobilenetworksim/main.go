@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-azurerm.mobileNetworkSim.MobileNetworkSim",
 		reflect.TypeOf((*MobileNetworkSim)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationKey", GoGetter: "AuthenticationKey"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationKeyInput", GoGetter: "AuthenticationKeyInput"},
@@ -38,6 +39,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "integratedCircuitCardIdentifier", GoGetter: "IntegratedCircuitCardIdentifier"},
 			_jsii_.MemberProperty{JsiiProperty: "integratedCircuitCardIdentifierInput", GoGetter: "IntegratedCircuitCardIdentifierInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internationalMobileSubscriberIdentity", GoGetter: "InternationalMobileSubscriberIdentity"},
@@ -46,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "mobileNetworkSimGroupId", GoGetter: "MobileNetworkSimGroupId"},
 			_jsii_.MemberProperty{JsiiProperty: "mobileNetworkSimGroupIdInput", GoGetter: "MobileNetworkSimGroupIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

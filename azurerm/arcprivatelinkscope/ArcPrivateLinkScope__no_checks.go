@@ -7,6 +7,10 @@ package arcprivatelinkscope
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ArcPrivateLinkScope) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArcPrivateLinkScope) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ArcPrivateLinkScope) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (a *jsiiProxy_ArcPrivateLinkScope) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArcPrivateLinkScope) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ArcPrivateLinkScope) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ArcPrivateLinkScope) validateOverrideLogicalIdParameters(newL
 }
 
 func (a *jsiiProxy_ArcPrivateLinkScope) validatePutTimeoutsParameters(value *ArcPrivateLinkScopeTimeouts) error {
+	return nil
+}
+
+func validateArcPrivateLinkScope_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

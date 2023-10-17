@@ -7,6 +7,10 @@ package virtualhubsecuritypartnerprovider
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualHubSecurityPartnerProvider) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualHubSecurityPartnerProvider) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VirtualHubSecurityPartnerProvider) validateGetStringMapAttrib
 	return nil
 }
 
+func (v *jsiiProxy_VirtualHubSecurityPartnerProvider) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualHubSecurityPartnerProvider) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualHubSecurityPartnerProvider) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (v *jsiiProxy_VirtualHubSecurityPartnerProvider) validateOverrideLogicalIdP
 }
 
 func (v *jsiiProxy_VirtualHubSecurityPartnerProvider) validatePutTimeoutsParameters(value *VirtualHubSecurityPartnerProviderTimeouts) error {
+	return nil
+}
+
+func validateVirtualHubSecurityPartnerProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

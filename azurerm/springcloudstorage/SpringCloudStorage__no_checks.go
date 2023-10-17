@@ -7,6 +7,10 @@ package springcloudstorage
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpringCloudStorage) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudStorage) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SpringCloudStorage) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudStorage) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudStorage) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudStorage) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SpringCloudStorage) validateOverrideLogicalIdParameters(newLo
 }
 
 func (s *jsiiProxy_SpringCloudStorage) validatePutTimeoutsParameters(value *SpringCloudStorageTimeouts) error {
+	return nil
+}
+
+func validateSpringCloudStorage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

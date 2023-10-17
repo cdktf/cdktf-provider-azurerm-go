@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermAppServiceEnvironmentV3) validatePutTimeoutsParame
 	return nil
 }
 
+func validateDataAzurermAppServiceEnvironmentV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermAppServiceEnvironmentV3_IsConstructParameters(x interface{}) error {
 	return nil
 }

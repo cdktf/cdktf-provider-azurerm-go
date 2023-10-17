@@ -7,6 +7,10 @@ package containergroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ContainerGroup) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (c *jsiiProxy_ContainerGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (c *jsiiProxy_ContainerGroup) validatePutInitContainerParameters(value inte
 }
 
 func (c *jsiiProxy_ContainerGroup) validatePutTimeoutsParameters(value *ContainerGroupTimeouts) error {
+	return nil
+}
+
+func validateContainerGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package keyvaultmanagedstorageaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KeyVaultManagedStorageAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultManagedStorageAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KeyVaultManagedStorageAccount) validateGetStringMapAttributeP
 	return nil
 }
 
+func (k *jsiiProxy_KeyVaultManagedStorageAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultManagedStorageAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KeyVaultManagedStorageAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KeyVaultManagedStorageAccount) validateOverrideLogicalIdParam
 }
 
 func (k *jsiiProxy_KeyVaultManagedStorageAccount) validatePutTimeoutsParameters(value *KeyVaultManagedStorageAccountTimeouts) error {
+	return nil
+}
+
+func validateKeyVaultManagedStorageAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

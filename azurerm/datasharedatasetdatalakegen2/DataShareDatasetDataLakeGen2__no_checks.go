@@ -7,6 +7,10 @@ package datasharedatasetdatalakegen2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataShareDatasetDataLakeGen2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataShareDatasetDataLakeGen2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataShareDatasetDataLakeGen2) validateGetStringMapAttributePa
 	return nil
 }
 
+func (d *jsiiProxy_DataShareDatasetDataLakeGen2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataShareDatasetDataLakeGen2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataShareDatasetDataLakeGen2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataShareDatasetDataLakeGen2) validateOverrideLogicalIdParame
 }
 
 func (d *jsiiProxy_DataShareDatasetDataLakeGen2) validatePutTimeoutsParameters(value *DataShareDatasetDataLakeGen2Timeouts) error {
+	return nil
+}
+
+func validateDataShareDatasetDataLakeGen2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

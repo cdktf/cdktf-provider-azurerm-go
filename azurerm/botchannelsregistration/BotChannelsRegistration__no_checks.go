@@ -7,6 +7,10 @@ package botchannelsregistration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BotChannelsRegistration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelsRegistration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BotChannelsRegistration) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (b *jsiiProxy_BotChannelsRegistration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelsRegistration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelsRegistration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BotChannelsRegistration) validateOverrideLogicalIdParameters(
 }
 
 func (b *jsiiProxy_BotChannelsRegistration) validatePutTimeoutsParameters(value *BotChannelsRegistrationTimeouts) error {
+	return nil
+}
+
+func validateBotChannelsRegistration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

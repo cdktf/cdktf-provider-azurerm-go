@@ -7,6 +7,10 @@ package trafficmanagerexternalendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TrafficManagerExternalEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TrafficManagerExternalEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (t *jsiiProxy_TrafficManagerExternalEndpoint) validateGetStringMapAttribute
 	return nil
 }
 
+func (t *jsiiProxy_TrafficManagerExternalEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TrafficManagerExternalEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TrafficManagerExternalEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (t *jsiiProxy_TrafficManagerExternalEndpoint) validatePutSubnetParameters(v
 }
 
 func (t *jsiiProxy_TrafficManagerExternalEndpoint) validatePutTimeoutsParameters(value *TrafficManagerExternalEndpointTimeouts) error {
+	return nil
+}
+
+func validateTrafficManagerExternalEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

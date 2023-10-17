@@ -7,6 +7,10 @@ package appconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppConfiguration) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (a *jsiiProxy_AppConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (a *jsiiProxy_AppConfiguration) validatePutReplicaParameters(value interfac
 }
 
 func (a *jsiiProxy_AppConfiguration) validatePutTimeoutsParameters(value *AppConfigurationTimeouts) error {
+	return nil
+}
+
+func validateAppConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

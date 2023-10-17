@@ -7,6 +7,10 @@ package applicationinsightsworkbook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApplicationInsightsWorkbook) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationInsightsWorkbook) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApplicationInsightsWorkbook) validateGetStringMapAttributePar
 	return nil
 }
 
+func (a *jsiiProxy_ApplicationInsightsWorkbook) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationInsightsWorkbook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationInsightsWorkbook) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_ApplicationInsightsWorkbook) validatePutIdentityParameters(va
 }
 
 func (a *jsiiProxy_ApplicationInsightsWorkbook) validatePutTimeoutsParameters(value *ApplicationInsightsWorkbookTimeouts) error {
+	return nil
+}
+
+func validateApplicationInsightsWorkbook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

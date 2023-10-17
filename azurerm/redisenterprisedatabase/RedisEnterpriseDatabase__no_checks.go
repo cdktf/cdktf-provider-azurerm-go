@@ -7,6 +7,10 @@ package redisenterprisedatabase
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RedisEnterpriseDatabase) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisEnterpriseDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RedisEnterpriseDatabase) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (r *jsiiProxy_RedisEnterpriseDatabase) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisEnterpriseDatabase) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedisEnterpriseDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (r *jsiiProxy_RedisEnterpriseDatabase) validatePutModuleParameters(value in
 }
 
 func (r *jsiiProxy_RedisEnterpriseDatabase) validatePutTimeoutsParameters(value *RedisEnterpriseDatabaseTimeouts) error {
+	return nil
+}
+
+func validateRedisEnterpriseDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

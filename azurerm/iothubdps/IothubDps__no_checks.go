@@ -7,6 +7,10 @@ package iothubdps
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IothubDps) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubDps) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IothubDps) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (i *jsiiProxy_IothubDps) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubDps) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IothubDps) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (i *jsiiProxy_IothubDps) validatePutSkuParameters(value *IothubDpsSku) erro
 }
 
 func (i *jsiiProxy_IothubDps) validatePutTimeoutsParameters(value *IothubDpsTimeouts) error {
+	return nil
+}
+
+func validateIothubDps_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package netappvolume
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetappVolume) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolume) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetappVolume) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (n *jsiiProxy_NetappVolume) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolume) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappVolume) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (n *jsiiProxy_NetappVolume) validatePutExportPolicyRuleParameters(value int
 }
 
 func (n *jsiiProxy_NetappVolume) validatePutTimeoutsParameters(value *NetappVolumeTimeouts) error {
+	return nil
+}
+
+func validateNetappVolume_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

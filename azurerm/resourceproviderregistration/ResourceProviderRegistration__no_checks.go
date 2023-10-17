@@ -7,6 +7,10 @@ package resourceproviderregistration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_ResourceProviderRegistration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceProviderRegistration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_ResourceProviderRegistration) validateGetStringMapAttributePa
 	return nil
 }
 
+func (r *jsiiProxy_ResourceProviderRegistration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceProviderRegistration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourceProviderRegistration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (r *jsiiProxy_ResourceProviderRegistration) validatePutFeatureParameters(va
 }
 
 func (r *jsiiProxy_ResourceProviderRegistration) validatePutTimeoutsParameters(value *ResourceProviderRegistrationTimeouts) error {
+	return nil
+}
+
+func validateResourceProviderRegistration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

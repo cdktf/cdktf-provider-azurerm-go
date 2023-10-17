@@ -7,6 +7,10 @@ package managedlustrefilesystem
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_ManagedLustreFileSystem) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedLustreFileSystem) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_ManagedLustreFileSystem) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_ManagedLustreFileSystem) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedLustreFileSystem) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedLustreFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (m *jsiiProxy_ManagedLustreFileSystem) validatePutMaintenanceWindowParamete
 }
 
 func (m *jsiiProxy_ManagedLustreFileSystem) validatePutTimeoutsParameters(value *ManagedLustreFileSystemTimeouts) error {
+	return nil
+}
+
+func validateManagedLustreFileSystem_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

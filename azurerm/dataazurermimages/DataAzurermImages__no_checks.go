@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermImages) validatePutTimeoutsParameters(value *DataA
 	return nil
 }
 
+func validateDataAzurermImages_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermImages_IsConstructParameters(x interface{}) error {
 	return nil
 }

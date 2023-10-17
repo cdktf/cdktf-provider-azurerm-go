@@ -7,6 +7,10 @@ package netappvolumequotarule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetappVolumeQuotaRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolumeQuotaRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetappVolumeQuotaRule) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (n *jsiiProxy_NetappVolumeQuotaRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolumeQuotaRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappVolumeQuotaRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetappVolumeQuotaRule) validateOverrideLogicalIdParameters(ne
 }
 
 func (n *jsiiProxy_NetappVolumeQuotaRule) validatePutTimeoutsParameters(value *NetappVolumeQuotaRuleTimeouts) error {
+	return nil
+}
+
+func validateNetappVolumeQuotaRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

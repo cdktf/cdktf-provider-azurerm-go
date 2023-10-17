@@ -7,6 +7,10 @@ package siterecoverynetworkmapping
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SiteRecoveryNetworkMapping) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryNetworkMapping) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SiteRecoveryNetworkMapping) validateGetStringMapAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_SiteRecoveryNetworkMapping) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryNetworkMapping) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SiteRecoveryNetworkMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SiteRecoveryNetworkMapping) validateOverrideLogicalIdParamete
 }
 
 func (s *jsiiProxy_SiteRecoveryNetworkMapping) validatePutTimeoutsParameters(value *SiteRecoveryNetworkMappingTimeouts) error {
+	return nil
+}
+
+func validateSiteRecoveryNetworkMapping_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

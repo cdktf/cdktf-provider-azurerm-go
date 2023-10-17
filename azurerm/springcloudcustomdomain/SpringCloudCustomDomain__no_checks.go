@@ -7,6 +7,10 @@ package springcloudcustomdomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpringCloudCustomDomain) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudCustomDomain) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SpringCloudCustomDomain) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudCustomDomain) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudCustomDomain) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudCustomDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SpringCloudCustomDomain) validateOverrideLogicalIdParameters(
 }
 
 func (s *jsiiProxy_SpringCloudCustomDomain) validatePutTimeoutsParameters(value *SpringCloudCustomDomainTimeouts) error {
+	return nil
+}
+
+func validateSpringCloudCustomDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

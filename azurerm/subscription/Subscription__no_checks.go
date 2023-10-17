@@ -7,6 +7,10 @@ package subscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_Subscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Subscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_Subscription) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (s *jsiiProxy_Subscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Subscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_Subscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_Subscription) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (s *jsiiProxy_Subscription) validatePutTimeoutsParameters(value *SubscriptionTimeouts) error {
+	return nil
+}
+
+func validateSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

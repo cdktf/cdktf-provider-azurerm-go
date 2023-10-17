@@ -7,6 +7,10 @@ package springcloudjavadeployment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpringCloudJavaDeployment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudJavaDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SpringCloudJavaDeployment) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudJavaDeployment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudJavaDeployment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudJavaDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SpringCloudJavaDeployment) validatePutQuotaParameters(value *
 }
 
 func (s *jsiiProxy_SpringCloudJavaDeployment) validatePutTimeoutsParameters(value *SpringCloudJavaDeploymentTimeouts) error {
+	return nil
+}
+
+func validateSpringCloudJavaDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

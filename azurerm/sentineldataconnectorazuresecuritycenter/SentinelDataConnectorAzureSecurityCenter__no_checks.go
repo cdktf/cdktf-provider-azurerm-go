@@ -7,6 +7,10 @@ package sentineldataconnectorazuresecuritycenter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SentinelDataConnectorAzureSecurityCenter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelDataConnectorAzureSecurityCenter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SentinelDataConnectorAzureSecurityCenter) validateGetStringMa
 	return nil
 }
 
+func (s *jsiiProxy_SentinelDataConnectorAzureSecurityCenter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelDataConnectorAzureSecurityCenter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelDataConnectorAzureSecurityCenter) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SentinelDataConnectorAzureSecurityCenter) validateOverrideLog
 }
 
 func (s *jsiiProxy_SentinelDataConnectorAzureSecurityCenter) validatePutTimeoutsParameters(value *SentinelDataConnectorAzureSecurityCenterTimeouts) error {
+	return nil
+}
+
+func validateSentinelDataConnectorAzureSecurityCenter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package automationrunbook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutomationRunbook) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationRunbook) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AutomationRunbook) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (a *jsiiProxy_AutomationRunbook) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationRunbook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutomationRunbook) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (a *jsiiProxy_AutomationRunbook) validatePutPublishContentLinkParameters(va
 }
 
 func (a *jsiiProxy_AutomationRunbook) validatePutTimeoutsParameters(value *AutomationRunbookTimeouts) error {
+	return nil
+}
+
+func validateAutomationRunbook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

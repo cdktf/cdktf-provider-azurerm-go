@@ -7,6 +7,10 @@ package spatialanchorsaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpatialAnchorsAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpatialAnchorsAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SpatialAnchorsAccount) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (s *jsiiProxy_SpatialAnchorsAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpatialAnchorsAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpatialAnchorsAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SpatialAnchorsAccount) validateOverrideLogicalIdParameters(ne
 }
 
 func (s *jsiiProxy_SpatialAnchorsAccount) validatePutTimeoutsParameters(value *SpatialAnchorsAccountTimeouts) error {
+	return nil
+}
+
+func validateSpatialAnchorsAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

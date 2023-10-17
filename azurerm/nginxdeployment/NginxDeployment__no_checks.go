@@ -7,6 +7,10 @@ package nginxdeployment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NginxDeployment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NginxDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NginxDeployment) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (n *jsiiProxy_NginxDeployment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NginxDeployment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NginxDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (n *jsiiProxy_NginxDeployment) validatePutNetworkInterfaceParameters(value 
 }
 
 func (n *jsiiProxy_NginxDeployment) validatePutTimeoutsParameters(value *NginxDeploymentTimeouts) error {
+	return nil
+}
+
+func validateNginxDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

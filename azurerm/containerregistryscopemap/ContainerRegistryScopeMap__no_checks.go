@@ -7,6 +7,10 @@ package containerregistryscopemap
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerRegistryScopeMap) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerRegistryScopeMap) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ContainerRegistryScopeMap) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_ContainerRegistryScopeMap) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerRegistryScopeMap) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerRegistryScopeMap) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ContainerRegistryScopeMap) validateOverrideLogicalIdParameter
 }
 
 func (c *jsiiProxy_ContainerRegistryScopeMap) validatePutTimeoutsParameters(value *ContainerRegistryScopeMapTimeouts) error {
+	return nil
+}
+
+func validateContainerRegistryScopeMap_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

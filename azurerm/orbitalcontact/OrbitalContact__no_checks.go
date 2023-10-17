@@ -7,6 +7,10 @@ package orbitalcontact
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrbitalContact) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrbitalContact) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OrbitalContact) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (o *jsiiProxy_OrbitalContact) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrbitalContact) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrbitalContact) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (o *jsiiProxy_OrbitalContact) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (o *jsiiProxy_OrbitalContact) validatePutTimeoutsParameters(value *OrbitalContactTimeouts) error {
+	return nil
+}
+
+func validateOrbitalContact_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

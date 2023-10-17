@@ -7,6 +7,10 @@ package datafactorylinkedcustomservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryLinkedCustomService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedCustomService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryLinkedCustomService) validateGetStringMapAttribute
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedCustomService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedCustomService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedCustomService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataFactoryLinkedCustomService) validatePutIntegrationRuntime
 }
 
 func (d *jsiiProxy_DataFactoryLinkedCustomService) validatePutTimeoutsParameters(value *DataFactoryLinkedCustomServiceTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryLinkedCustomService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

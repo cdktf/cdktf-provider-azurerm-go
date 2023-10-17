@@ -7,6 +7,10 @@ package paloaltonextgenerationfirewallvirtualhubpanorama
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validateGet
 	return nil
 }
 
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validatePut
 }
 
 func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validatePutTimeoutsParameters(value *PaloAltoNextGenerationFirewallVirtualHubPanoramaTimeouts) error {
+	return nil
+}
+
+func validatePaloAltoNextGenerationFirewallVirtualHubPanorama_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

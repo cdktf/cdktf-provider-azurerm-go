@@ -7,6 +7,10 @@ package mssqlmanagedinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MssqlManagedInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlManagedInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MssqlManagedInstance) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (m *jsiiProxy_MssqlManagedInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlManagedInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlManagedInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MssqlManagedInstance) validatePutIdentityParameters(value *Ms
 }
 
 func (m *jsiiProxy_MssqlManagedInstance) validatePutTimeoutsParameters(value *MssqlManagedInstanceTimeouts) error {
+	return nil
+}
+
+func validateMssqlManagedInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

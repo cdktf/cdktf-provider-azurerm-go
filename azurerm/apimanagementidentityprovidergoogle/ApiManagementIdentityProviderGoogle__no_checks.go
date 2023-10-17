@@ -7,6 +7,10 @@ package apimanagementidentityprovidergoogle
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiManagementIdentityProviderGoogle) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementIdentityProviderGoogle) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApiManagementIdentityProviderGoogle) validateGetStringMapAttr
 	return nil
 }
 
+func (a *jsiiProxy_ApiManagementIdentityProviderGoogle) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementIdentityProviderGoogle) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiManagementIdentityProviderGoogle) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApiManagementIdentityProviderGoogle) validateOverrideLogicalI
 }
 
 func (a *jsiiProxy_ApiManagementIdentityProviderGoogle) validatePutTimeoutsParameters(value *ApiManagementIdentityProviderGoogleTimeouts) error {
+	return nil
+}
+
+func validateApiManagementIdentityProviderGoogle_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

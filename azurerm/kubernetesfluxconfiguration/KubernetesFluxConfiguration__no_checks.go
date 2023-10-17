@@ -7,6 +7,10 @@ package kubernetesfluxconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KubernetesFluxConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesFluxConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KubernetesFluxConfiguration) validateGetStringMapAttributePar
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesFluxConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesFluxConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KubernetesFluxConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (k *jsiiProxy_KubernetesFluxConfiguration) validatePutKustomizationsParamet
 }
 
 func (k *jsiiProxy_KubernetesFluxConfiguration) validatePutTimeoutsParameters(value *KubernetesFluxConfigurationTimeouts) error {
+	return nil
+}
+
+func validateKubernetesFluxConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

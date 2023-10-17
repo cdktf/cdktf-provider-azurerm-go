@@ -7,6 +7,10 @@ package managementgroupsubscriptionassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_ManagementGroupSubscriptionAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagementGroupSubscriptionAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_ManagementGroupSubscriptionAssociation) validateGetStringMapA
 	return nil
 }
 
+func (m *jsiiProxy_ManagementGroupSubscriptionAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagementGroupSubscriptionAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagementGroupSubscriptionAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_ManagementGroupSubscriptionAssociation) validateOverrideLogic
 }
 
 func (m *jsiiProxy_ManagementGroupSubscriptionAssociation) validatePutTimeoutsParameters(value *ManagementGroupSubscriptionAssociationTimeouts) error {
+	return nil
+}
+
+func validateManagementGroupSubscriptionAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

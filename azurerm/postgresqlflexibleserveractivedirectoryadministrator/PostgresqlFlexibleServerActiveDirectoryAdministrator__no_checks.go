@@ -7,6 +7,10 @@ package postgresqlflexibleserveractivedirectoryadministrator
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) validat
 	return nil
 }
 
+func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) validat
 }
 
 func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) validatePutTimeoutsParameters(value *PostgresqlFlexibleServerActiveDirectoryAdministratorTimeouts) error {
+	return nil
+}
+
+func validatePostgresqlFlexibleServerActiveDirectoryAdministrator_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

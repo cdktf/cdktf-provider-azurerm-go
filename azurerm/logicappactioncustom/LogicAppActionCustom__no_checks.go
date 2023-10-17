@@ -7,6 +7,10 @@ package logicappactioncustom
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogicAppActionCustom) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogicAppActionCustom) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LogicAppActionCustom) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (l *jsiiProxy_LogicAppActionCustom) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogicAppActionCustom) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogicAppActionCustom) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (l *jsiiProxy_LogicAppActionCustom) validateOverrideLogicalIdParameters(new
 }
 
 func (l *jsiiProxy_LogicAppActionCustom) validatePutTimeoutsParameters(value *LogicAppActionCustomTimeouts) error {
+	return nil
+}
+
+func validateLogicAppActionCustom_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

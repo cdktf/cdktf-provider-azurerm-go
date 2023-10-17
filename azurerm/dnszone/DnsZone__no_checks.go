@@ -7,6 +7,10 @@ package dnszone
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DnsZone) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsZone) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DnsZone) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (d *jsiiProxy_DnsZone) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsZone) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DnsZone) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DnsZone) validatePutSoaRecordParameters(value *DnsZoneSoaReco
 }
 
 func (d *jsiiProxy_DnsZone) validatePutTimeoutsParameters(value *DnsZoneTimeouts) error {
+	return nil
+}
+
+func validateDnsZone_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package diskpoolmanageddiskattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DiskPoolManagedDiskAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiskPoolManagedDiskAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DiskPoolManagedDiskAttachment) validateGetStringMapAttributeP
 	return nil
 }
 
+func (d *jsiiProxy_DiskPoolManagedDiskAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiskPoolManagedDiskAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DiskPoolManagedDiskAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DiskPoolManagedDiskAttachment) validateOverrideLogicalIdParam
 }
 
 func (d *jsiiProxy_DiskPoolManagedDiskAttachment) validatePutTimeoutsParameters(value *DiskPoolManagedDiskAttachmentTimeouts) error {
+	return nil
+}
+
+func validateDiskPoolManagedDiskAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

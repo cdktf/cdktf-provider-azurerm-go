@@ -7,6 +7,10 @@ package pointtositevpngateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PointToSiteVpnGateway) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PointToSiteVpnGateway) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PointToSiteVpnGateway) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (p *jsiiProxy_PointToSiteVpnGateway) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PointToSiteVpnGateway) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PointToSiteVpnGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (p *jsiiProxy_PointToSiteVpnGateway) validatePutConnectionConfigurationPara
 }
 
 func (p *jsiiProxy_PointToSiteVpnGateway) validatePutTimeoutsParameters(value *PointToSiteVpnGatewayTimeouts) error {
+	return nil
+}
+
+func validatePointToSiteVpnGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

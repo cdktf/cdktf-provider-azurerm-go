@@ -7,6 +7,10 @@ package cosmosdbgremlingraph
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CosmosdbGremlinGraph) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbGremlinGraph) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CosmosdbGremlinGraph) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbGremlinGraph) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbGremlinGraph) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbGremlinGraph) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (c *jsiiProxy_CosmosdbGremlinGraph) validatePutTimeoutsParameters(value *Co
 }
 
 func (c *jsiiProxy_CosmosdbGremlinGraph) validatePutUniqueKeyParameters(value interface{}) error {
+	return nil
+}
+
+func validateCosmosdbGremlinGraph_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

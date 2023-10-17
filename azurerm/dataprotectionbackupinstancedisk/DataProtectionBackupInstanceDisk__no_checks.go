@@ -7,6 +7,10 @@ package dataprotectionbackupinstancedisk
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataProtectionBackupInstanceDisk) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataProtectionBackupInstanceDisk) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataProtectionBackupInstanceDisk) validateGetStringMapAttribu
 	return nil
 }
 
+func (d *jsiiProxy_DataProtectionBackupInstanceDisk) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataProtectionBackupInstanceDisk) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataProtectionBackupInstanceDisk) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataProtectionBackupInstanceDisk) validateOverrideLogicalIdPa
 }
 
 func (d *jsiiProxy_DataProtectionBackupInstanceDisk) validatePutTimeoutsParameters(value *DataProtectionBackupInstanceDiskTimeouts) error {
+	return nil
+}
+
+func validateDataProtectionBackupInstanceDisk_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

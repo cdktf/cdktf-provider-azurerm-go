@@ -7,6 +7,10 @@ package webpubsubsharedprivatelinkresource
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WebPubsubSharedPrivateLinkResource) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebPubsubSharedPrivateLinkResource) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WebPubsubSharedPrivateLinkResource) validateGetStringMapAttri
 	return nil
 }
 
+func (w *jsiiProxy_WebPubsubSharedPrivateLinkResource) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebPubsubSharedPrivateLinkResource) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WebPubsubSharedPrivateLinkResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (w *jsiiProxy_WebPubsubSharedPrivateLinkResource) validateOverrideLogicalId
 }
 
 func (w *jsiiProxy_WebPubsubSharedPrivateLinkResource) validatePutTimeoutsParameters(value *WebPubsubSharedPrivateLinkResourceTimeouts) error {
+	return nil
+}
+
+func validateWebPubsubSharedPrivateLinkResource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

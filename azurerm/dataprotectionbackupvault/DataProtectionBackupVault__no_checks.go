@@ -7,6 +7,10 @@ package dataprotectionbackupvault
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataProtectionBackupVault) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataProtectionBackupVault) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataProtectionBackupVault) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (d *jsiiProxy_DataProtectionBackupVault) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataProtectionBackupVault) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataProtectionBackupVault) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataProtectionBackupVault) validatePutIdentityParameters(valu
 }
 
 func (d *jsiiProxy_DataProtectionBackupVault) validatePutTimeoutsParameters(value *DataProtectionBackupVaultTimeouts) error {
+	return nil
+}
+
+func validateDataProtectionBackupVault_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

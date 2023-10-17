@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermPaloAltoLocalRulestack) validatePutTimeoutsParamet
 	return nil
 }
 
+func validateDataAzurermPaloAltoLocalRulestack_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermPaloAltoLocalRulestack_IsConstructParameters(x interface{}) error {
 	return nil
 }

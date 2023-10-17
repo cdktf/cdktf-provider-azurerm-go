@@ -7,6 +7,10 @@ package mariadbfirewallrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MariadbFirewallRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MariadbFirewallRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MariadbFirewallRule) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (m *jsiiProxy_MariadbFirewallRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MariadbFirewallRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MariadbFirewallRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MariadbFirewallRule) validateOverrideLogicalIdParameters(newL
 }
 
 func (m *jsiiProxy_MariadbFirewallRule) validatePutTimeoutsParameters(value *MariadbFirewallRuleTimeouts) error {
+	return nil
+}
+
+func validateMariadbFirewallRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

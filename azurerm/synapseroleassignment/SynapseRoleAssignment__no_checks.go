@@ -7,6 +7,10 @@ package synapseroleassignment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SynapseRoleAssignment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseRoleAssignment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SynapseRoleAssignment) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (s *jsiiProxy_SynapseRoleAssignment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseRoleAssignment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SynapseRoleAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SynapseRoleAssignment) validateOverrideLogicalIdParameters(ne
 }
 
 func (s *jsiiProxy_SynapseRoleAssignment) validatePutTimeoutsParameters(value *SynapseRoleAssignmentTimeouts) error {
+	return nil
+}
+
+func validateSynapseRoleAssignment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package virtualmachinescaleset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualMachineScaleSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualMachineScaleSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VirtualMachineScaleSet) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (v *jsiiProxy_VirtualMachineScaleSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualMachineScaleSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualMachineScaleSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -112,6 +124,10 @@ func (v *jsiiProxy_VirtualMachineScaleSet) validatePutStorageProfileOsDiskParame
 }
 
 func (v *jsiiProxy_VirtualMachineScaleSet) validatePutTimeoutsParameters(value *VirtualMachineScaleSetTimeouts) error {
+	return nil
+}
+
+func validateVirtualMachineScaleSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

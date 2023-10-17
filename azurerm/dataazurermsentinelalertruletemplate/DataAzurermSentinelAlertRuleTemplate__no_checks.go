@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermSentinelAlertRuleTemplate) validatePutTimeoutsPara
 	return nil
 }
 
+func validateDataAzurermSentinelAlertRuleTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermSentinelAlertRuleTemplate_IsConstructParameters(x interface{}) error {
 	return nil
 }

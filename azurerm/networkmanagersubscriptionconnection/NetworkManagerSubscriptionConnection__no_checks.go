@@ -7,6 +7,10 @@ package networkmanagersubscriptionconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkManagerSubscriptionConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkManagerSubscriptionConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkManagerSubscriptionConnection) validateGetStringMapAtt
 	return nil
 }
 
+func (n *jsiiProxy_NetworkManagerSubscriptionConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkManagerSubscriptionConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkManagerSubscriptionConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkManagerSubscriptionConnection) validateOverrideLogical
 }
 
 func (n *jsiiProxy_NetworkManagerSubscriptionConnection) validatePutTimeoutsParameters(value *NetworkManagerSubscriptionConnectionTimeouts) error {
+	return nil
+}
+
+func validateNetworkManagerSubscriptionConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package subscriptiontemplatedeployment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SubscriptionTemplateDeployment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SubscriptionTemplateDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SubscriptionTemplateDeployment) validateGetStringMapAttribute
 	return nil
 }
 
+func (s *jsiiProxy_SubscriptionTemplateDeployment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SubscriptionTemplateDeployment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SubscriptionTemplateDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SubscriptionTemplateDeployment) validateOverrideLogicalIdPara
 }
 
 func (s *jsiiProxy_SubscriptionTemplateDeployment) validatePutTimeoutsParameters(value *SubscriptionTemplateDeploymentTimeouts) error {
+	return nil
+}
+
+func validateSubscriptionTemplateDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

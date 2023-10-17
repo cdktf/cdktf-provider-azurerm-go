@@ -7,6 +7,10 @@ package streamanalyticsoutputeventhub
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StreamAnalyticsOutputEventhub) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsOutputEventhub) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StreamAnalyticsOutputEventhub) validateGetStringMapAttributeP
 	return nil
 }
 
+func (s *jsiiProxy_StreamAnalyticsOutputEventhub) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsOutputEventhub) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamAnalyticsOutputEventhub) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_StreamAnalyticsOutputEventhub) validatePutSerializationParame
 }
 
 func (s *jsiiProxy_StreamAnalyticsOutputEventhub) validatePutTimeoutsParameters(value *StreamAnalyticsOutputEventhubTimeouts) error {
+	return nil
+}
+
+func validateStreamAnalyticsOutputEventhub_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

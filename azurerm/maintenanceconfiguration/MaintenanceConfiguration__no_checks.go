@@ -7,6 +7,10 @@ package maintenanceconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MaintenanceConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MaintenanceConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MaintenanceConfiguration) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (m *jsiiProxy_MaintenanceConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MaintenanceConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MaintenanceConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (m *jsiiProxy_MaintenanceConfiguration) validatePutTimeoutsParameters(value
 }
 
 func (m *jsiiProxy_MaintenanceConfiguration) validatePutWindowParameters(value *MaintenanceConfigurationWindow) error {
+	return nil
+}
+
+func validateMaintenanceConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

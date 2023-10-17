@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermLb) validatePutTimeoutsParameters(value *DataAzure
 	return nil
 }
 
+func validateDataAzurermLb_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermLb_IsConstructParameters(x interface{}) error {
 	return nil
 }

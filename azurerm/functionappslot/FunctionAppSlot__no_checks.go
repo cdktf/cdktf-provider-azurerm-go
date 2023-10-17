@@ -7,6 +7,10 @@ package functionappslot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FunctionAppSlot) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FunctionAppSlot) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FunctionAppSlot) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (f *jsiiProxy_FunctionAppSlot) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FunctionAppSlot) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FunctionAppSlot) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (f *jsiiProxy_FunctionAppSlot) validatePutSiteConfigParameters(value *Funct
 }
 
 func (f *jsiiProxy_FunctionAppSlot) validatePutTimeoutsParameters(value *FunctionAppSlotTimeouts) error {
+	return nil
+}
+
+func validateFunctionAppSlot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

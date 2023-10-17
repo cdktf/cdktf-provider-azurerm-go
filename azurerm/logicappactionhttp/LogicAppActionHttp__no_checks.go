@@ -7,6 +7,10 @@ package logicappactionhttp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogicAppActionHttp) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogicAppActionHttp) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LogicAppActionHttp) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (l *jsiiProxy_LogicAppActionHttp) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogicAppActionHttp) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogicAppActionHttp) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (l *jsiiProxy_LogicAppActionHttp) validatePutRunAfterParameters(value inter
 }
 
 func (l *jsiiProxy_LogicAppActionHttp) validatePutTimeoutsParameters(value *LogicAppActionHttpTimeouts) error {
+	return nil
+}
+
+func validateLogicAppActionHttp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

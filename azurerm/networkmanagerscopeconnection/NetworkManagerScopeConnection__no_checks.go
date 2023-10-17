@@ -7,6 +7,10 @@ package networkmanagerscopeconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkManagerScopeConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkManagerScopeConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkManagerScopeConnection) validateGetStringMapAttributeP
 	return nil
 }
 
+func (n *jsiiProxy_NetworkManagerScopeConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkManagerScopeConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkManagerScopeConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkManagerScopeConnection) validateOverrideLogicalIdParam
 }
 
 func (n *jsiiProxy_NetworkManagerScopeConnection) validatePutTimeoutsParameters(value *NetworkManagerScopeConnectionTimeouts) error {
+	return nil
+}
+
+func validateNetworkManagerScopeConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

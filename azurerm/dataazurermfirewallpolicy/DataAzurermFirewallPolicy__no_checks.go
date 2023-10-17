@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermFirewallPolicy) validatePutTimeoutsParameters(valu
 	return nil
 }
 
+func validateDataAzurermFirewallPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermFirewallPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

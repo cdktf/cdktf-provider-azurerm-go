@@ -7,6 +7,10 @@ package servicebusqueue
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServicebusQueue) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicebusQueue) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServicebusQueue) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (s *jsiiProxy_ServicebusQueue) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicebusQueue) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicebusQueue) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_ServicebusQueue) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (s *jsiiProxy_ServicebusQueue) validatePutTimeoutsParameters(value *ServicebusQueueTimeouts) error {
+	return nil
+}
+
+func validateServicebusQueue_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

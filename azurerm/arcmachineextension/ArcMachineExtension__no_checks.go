@@ -7,6 +7,10 @@ package arcmachineextension
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ArcMachineExtension) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArcMachineExtension) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ArcMachineExtension) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (a *jsiiProxy_ArcMachineExtension) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArcMachineExtension) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ArcMachineExtension) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ArcMachineExtension) validateOverrideLogicalIdParameters(newL
 }
 
 func (a *jsiiProxy_ArcMachineExtension) validatePutTimeoutsParameters(value *ArcMachineExtensionTimeouts) error {
+	return nil
+}
+
+func validateArcMachineExtension_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -5,10 +5,10 @@ package apimanagementidentityprovidertwitter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/apimanagementidentityprovidertwitter/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/apimanagementidentityprovidertwitter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -78,6 +78,9 @@ type ApiManagementIdentityProviderTwitter interface {
 	TerraformResourceType() *string
 	Timeouts() ApiManagementIdentityProviderTwitterTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -99,7 +102,12 @@ type ApiManagementIdentityProviderTwitter interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -557,6 +565,25 @@ func (j *jsiiProxy_ApiManagementIdentityProviderTwitter)SetResourceGroupName(val
 	)
 }
 
+// Generates CDKTF code for importing a ApiManagementIdentityProviderTwitter resource upon running "cdktf plan <stack-name>".
+func ApiManagementIdentityProviderTwitter_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateApiManagementIdentityProviderTwitter_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.apiManagementIdentityProviderTwitter.ApiManagementIdentityProviderTwitter",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -639,6 +666,17 @@ func ApiManagementIdentityProviderTwitter_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (a *jsiiProxy_ApiManagementIdentityProviderTwitter) AddMoveTarget(moveTarget *string) {
+	if err := a.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (a *jsiiProxy_ApiManagementIdentityProviderTwitter) AddOverride(path *string, value interface{}) {
@@ -796,6 +834,17 @@ func (a *jsiiProxy_ApiManagementIdentityProviderTwitter) GetStringMapAttribute(t
 	return returns
 }
 
+func (a *jsiiProxy_ApiManagementIdentityProviderTwitter) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := a.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (a *jsiiProxy_ApiManagementIdentityProviderTwitter) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -810,6 +859,17 @@ func (a *jsiiProxy_ApiManagementIdentityProviderTwitter) InterpolationForAttribu
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_ApiManagementIdentityProviderTwitter) MoveTo(moveTarget *string, index interface{}) {
+	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (a *jsiiProxy_ApiManagementIdentityProviderTwitter) OverrideLogicalId(newLogicalId *string) {

@@ -7,6 +7,10 @@ package monitordiagnosticsetting
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorDiagnosticSetting) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDiagnosticSetting) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitorDiagnosticSetting) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (m *jsiiProxy_MonitorDiagnosticSetting) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDiagnosticSetting) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDiagnosticSetting) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (m *jsiiProxy_MonitorDiagnosticSetting) validatePutMetricParameters(value i
 }
 
 func (m *jsiiProxy_MonitorDiagnosticSetting) validatePutTimeoutsParameters(value *MonitorDiagnosticSettingTimeouts) error {
+	return nil
+}
+
+func validateMonitorDiagnosticSetting_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

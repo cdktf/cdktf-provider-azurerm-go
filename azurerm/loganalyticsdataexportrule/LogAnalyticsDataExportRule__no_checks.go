@@ -7,6 +7,10 @@ package loganalyticsdataexportrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogAnalyticsDataExportRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsDataExportRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LogAnalyticsDataExportRule) validateGetStringMapAttributePara
 	return nil
 }
 
+func (l *jsiiProxy_LogAnalyticsDataExportRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsDataExportRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogAnalyticsDataExportRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (l *jsiiProxy_LogAnalyticsDataExportRule) validateOverrideLogicalIdParamete
 }
 
 func (l *jsiiProxy_LogAnalyticsDataExportRule) validatePutTimeoutsParameters(value *LogAnalyticsDataExportRuleTimeouts) error {
+	return nil
+}
+
+func validateLogAnalyticsDataExportRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

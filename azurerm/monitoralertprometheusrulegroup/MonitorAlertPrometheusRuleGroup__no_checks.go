@@ -7,6 +7,10 @@ package monitoralertprometheusrulegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorAlertPrometheusRuleGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAlertPrometheusRuleGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitorAlertPrometheusRuleGroup) validateGetStringMapAttribut
 	return nil
 }
 
+func (m *jsiiProxy_MonitorAlertPrometheusRuleGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAlertPrometheusRuleGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorAlertPrometheusRuleGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MonitorAlertPrometheusRuleGroup) validatePutRuleParameters(va
 }
 
 func (m *jsiiProxy_MonitorAlertPrometheusRuleGroup) validatePutTimeoutsParameters(value *MonitorAlertPrometheusRuleGroupTimeouts) error {
+	return nil
+}
+
+func validateMonitorAlertPrometheusRuleGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

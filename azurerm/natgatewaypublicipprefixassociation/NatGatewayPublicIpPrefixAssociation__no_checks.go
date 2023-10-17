@@ -7,6 +7,10 @@ package natgatewaypublicipprefixassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NatGatewayPublicIpPrefixAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NatGatewayPublicIpPrefixAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NatGatewayPublicIpPrefixAssociation) validateGetStringMapAttr
 	return nil
 }
 
+func (n *jsiiProxy_NatGatewayPublicIpPrefixAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NatGatewayPublicIpPrefixAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NatGatewayPublicIpPrefixAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NatGatewayPublicIpPrefixAssociation) validateOverrideLogicalI
 }
 
 func (n *jsiiProxy_NatGatewayPublicIpPrefixAssociation) validatePutTimeoutsParameters(value *NatGatewayPublicIpPrefixAssociationTimeouts) error {
+	return nil
+}
+
+func validateNatGatewayPublicIpPrefixAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

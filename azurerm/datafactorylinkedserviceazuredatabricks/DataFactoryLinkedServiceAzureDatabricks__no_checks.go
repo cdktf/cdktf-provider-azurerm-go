@@ -7,6 +7,10 @@ package datafactorylinkedserviceazuredatabricks
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) validateGetStringMap
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) validatePutNewCluste
 }
 
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) validatePutTimeoutsParameters(value *DataFactoryLinkedServiceAzureDatabricksTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceAzureDatabricks_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

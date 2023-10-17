@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermVirtualHub) validatePutTimeoutsParameters(value *D
 	return nil
 }
 
+func validateDataAzurermVirtualHub_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermVirtualHub_IsConstructParameters(x interface{}) error {
 	return nil
 }

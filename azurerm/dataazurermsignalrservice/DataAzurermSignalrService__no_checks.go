@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermSignalrService) validatePutTimeoutsParameters(valu
 	return nil
 }
 
+func validateDataAzurermSignalrService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermSignalrService_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package paloaltolocalrulestack
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PaloAltoLocalRulestack) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PaloAltoLocalRulestack) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PaloAltoLocalRulestack) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (p *jsiiProxy_PaloAltoLocalRulestack) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PaloAltoLocalRulestack) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PaloAltoLocalRulestack) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PaloAltoLocalRulestack) validateOverrideLogicalIdParameters(n
 }
 
 func (p *jsiiProxy_PaloAltoLocalRulestack) validatePutTimeoutsParameters(value *PaloAltoLocalRulestackTimeouts) error {
+	return nil
+}
+
+func validatePaloAltoLocalRulestack_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

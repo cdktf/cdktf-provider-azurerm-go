@@ -7,6 +7,10 @@ package datasharedatasetkustodatabase
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataShareDatasetKustoDatabase) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataShareDatasetKustoDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataShareDatasetKustoDatabase) validateGetStringMapAttributeP
 	return nil
 }
 
+func (d *jsiiProxy_DataShareDatasetKustoDatabase) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataShareDatasetKustoDatabase) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataShareDatasetKustoDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataShareDatasetKustoDatabase) validateOverrideLogicalIdParam
 }
 
 func (d *jsiiProxy_DataShareDatasetKustoDatabase) validatePutTimeoutsParameters(value *DataShareDatasetKustoDatabaseTimeouts) error {
+	return nil
+}
+
+func validateDataShareDatasetKustoDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

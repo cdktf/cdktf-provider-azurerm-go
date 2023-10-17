@@ -7,6 +7,10 @@ package storagecontainer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageContainer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageContainer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageContainer) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_StorageContainer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageContainer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageContainer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_StorageContainer) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (s *jsiiProxy_StorageContainer) validatePutTimeoutsParameters(value *StorageContainerTimeouts) error {
+	return nil
+}
+
+func validateStorageContainer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

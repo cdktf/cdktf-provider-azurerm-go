@@ -7,6 +7,10 @@ package linuxwebapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LinuxWebApp) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxWebApp) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LinuxWebApp) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (l *jsiiProxy_LinuxWebApp) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxWebApp) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LinuxWebApp) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -92,6 +104,10 @@ func (l *jsiiProxy_LinuxWebApp) validatePutStorageAccountParameters(value interf
 }
 
 func (l *jsiiProxy_LinuxWebApp) validatePutTimeoutsParameters(value *LinuxWebAppTimeouts) error {
+	return nil
+}
+
+func validateLinuxWebApp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

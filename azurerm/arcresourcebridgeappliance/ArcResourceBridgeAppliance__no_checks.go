@@ -7,6 +7,10 @@ package arcresourcebridgeappliance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ArcResourceBridgeAppliance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArcResourceBridgeAppliance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ArcResourceBridgeAppliance) validateGetStringMapAttributePara
 	return nil
 }
 
+func (a *jsiiProxy_ArcResourceBridgeAppliance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArcResourceBridgeAppliance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ArcResourceBridgeAppliance) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_ArcResourceBridgeAppliance) validatePutIdentityParameters(val
 }
 
 func (a *jsiiProxy_ArcResourceBridgeAppliance) validatePutTimeoutsParameters(value *ArcResourceBridgeApplianceTimeouts) error {
+	return nil
+}
+
+func validateArcResourceBridgeAppliance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

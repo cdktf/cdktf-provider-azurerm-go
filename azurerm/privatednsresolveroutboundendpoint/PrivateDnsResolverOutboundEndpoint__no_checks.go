@@ -7,6 +7,10 @@ package privatednsresolveroutboundendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrivateDnsResolverOutboundEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateDnsResolverOutboundEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PrivateDnsResolverOutboundEndpoint) validateGetStringMapAttri
 	return nil
 }
 
+func (p *jsiiProxy_PrivateDnsResolverOutboundEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateDnsResolverOutboundEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivateDnsResolverOutboundEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PrivateDnsResolverOutboundEndpoint) validateOverrideLogicalId
 }
 
 func (p *jsiiProxy_PrivateDnsResolverOutboundEndpoint) validatePutTimeoutsParameters(value *PrivateDnsResolverOutboundEndpointTimeouts) error {
+	return nil
+}
+
+func validatePrivateDnsResolverOutboundEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

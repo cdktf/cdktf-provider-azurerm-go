@@ -7,6 +7,10 @@ package rediscache
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RedisCache) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisCache) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RedisCache) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (r *jsiiProxy_RedisCache) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisCache) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedisCache) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (r *jsiiProxy_RedisCache) validatePutRedisConfigurationParameters(value *Re
 }
 
 func (r *jsiiProxy_RedisCache) validatePutTimeoutsParameters(value *RedisCacheTimeouts) error {
+	return nil
+}
+
+func validateRedisCache_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package storagedatalakegen2filesystem
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageDataLakeGen2Filesystem) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageDataLakeGen2Filesystem) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageDataLakeGen2Filesystem) validateGetStringMapAttributeP
 	return nil
 }
 
+func (s *jsiiProxy_StorageDataLakeGen2Filesystem) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageDataLakeGen2Filesystem) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageDataLakeGen2Filesystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_StorageDataLakeGen2Filesystem) validatePutAceParameters(value
 }
 
 func (s *jsiiProxy_StorageDataLakeGen2Filesystem) validatePutTimeoutsParameters(value *StorageDataLakeGen2FilesystemTimeouts) error {
+	return nil
+}
+
+func validateStorageDataLakeGen2Filesystem_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package monitormetricalert
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorMetricAlert) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorMetricAlert) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitorMetricAlert) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (m *jsiiProxy_MonitorMetricAlert) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorMetricAlert) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorMetricAlert) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (m *jsiiProxy_MonitorMetricAlert) validatePutDynamicCriteriaParameters(valu
 }
 
 func (m *jsiiProxy_MonitorMetricAlert) validatePutTimeoutsParameters(value *MonitorMetricAlertTimeouts) error {
+	return nil
+}
+
+func validateMonitorMetricAlert_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

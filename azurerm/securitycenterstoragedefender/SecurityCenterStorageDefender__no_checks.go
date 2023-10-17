@@ -7,6 +7,10 @@ package securitycenterstoragedefender
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecurityCenterStorageDefender) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityCenterStorageDefender) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SecurityCenterStorageDefender) validateGetStringMapAttributeP
 	return nil
 }
 
+func (s *jsiiProxy_SecurityCenterStorageDefender) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityCenterStorageDefender) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityCenterStorageDefender) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SecurityCenterStorageDefender) validateOverrideLogicalIdParam
 }
 
 func (s *jsiiProxy_SecurityCenterStorageDefender) validatePutTimeoutsParameters(value *SecurityCenterStorageDefenderTimeouts) error {
+	return nil
+}
+
+func validateSecurityCenterStorageDefender_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

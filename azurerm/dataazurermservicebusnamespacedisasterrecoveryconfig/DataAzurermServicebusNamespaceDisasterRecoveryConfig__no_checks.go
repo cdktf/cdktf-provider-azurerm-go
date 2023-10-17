@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermServicebusNamespaceDisasterRecoveryConfig) validat
 	return nil
 }
 
+func validateDataAzurermServicebusNamespaceDisasterRecoveryConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermServicebusNamespaceDisasterRecoveryConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }

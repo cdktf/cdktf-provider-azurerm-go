@@ -7,6 +7,10 @@ package streamanalyticsoutputsynapse
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StreamAnalyticsOutputSynapse) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsOutputSynapse) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StreamAnalyticsOutputSynapse) validateGetStringMapAttributePa
 	return nil
 }
 
+func (s *jsiiProxy_StreamAnalyticsOutputSynapse) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsOutputSynapse) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamAnalyticsOutputSynapse) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_StreamAnalyticsOutputSynapse) validateOverrideLogicalIdParame
 }
 
 func (s *jsiiProxy_StreamAnalyticsOutputSynapse) validatePutTimeoutsParameters(value *StreamAnalyticsOutputSynapseTimeouts) error {
+	return nil
+}
+
+func validateStreamAnalyticsOutputSynapse_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package monitordatacollectionrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorDataCollectionRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitorDataCollectionRule) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (m *jsiiProxy_MonitorDataCollectionRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorDataCollectionRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (m *jsiiProxy_MonitorDataCollectionRule) validatePutStreamDeclarationParame
 }
 
 func (m *jsiiProxy_MonitorDataCollectionRule) validatePutTimeoutsParameters(value *MonitorDataCollectionRuleTimeouts) error {
+	return nil
+}
+
+func validateMonitorDataCollectionRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

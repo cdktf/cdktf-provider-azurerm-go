@@ -7,6 +7,10 @@ package keyvault
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KeyVault) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVault) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KeyVault) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (k *jsiiProxy_KeyVault) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVault) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KeyVault) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (k *jsiiProxy_KeyVault) validatePutNetworkAclsParameters(value *KeyVaultNet
 }
 
 func (k *jsiiProxy_KeyVault) validatePutTimeoutsParameters(value *KeyVaultTimeouts) error {
+	return nil
+}
+
+func validateKeyVault_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package securitycenterautomation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecurityCenterAutomation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityCenterAutomation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SecurityCenterAutomation) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_SecurityCenterAutomation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityCenterAutomation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityCenterAutomation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (s *jsiiProxy_SecurityCenterAutomation) validatePutSourceParameters(value i
 }
 
 func (s *jsiiProxy_SecurityCenterAutomation) validatePutTimeoutsParameters(value *SecurityCenterAutomationTimeouts) error {
+	return nil
+}
+
+func validateSecurityCenterAutomation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package netappaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetappAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetappAccount) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (n *jsiiProxy_NetappAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (n *jsiiProxy_NetappAccount) validatePutActiveDirectoryParameters(value *Ne
 }
 
 func (n *jsiiProxy_NetappAccount) validatePutTimeoutsParameters(value *NetappAccountTimeouts) error {
+	return nil
+}
+
+func validateNetappAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

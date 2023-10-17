@@ -7,6 +7,10 @@ package loganalyticscluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogAnalyticsCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LogAnalyticsCluster) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (l *jsiiProxy_LogAnalyticsCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogAnalyticsCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (l *jsiiProxy_LogAnalyticsCluster) validatePutIdentityParameters(value *Log
 }
 
 func (l *jsiiProxy_LogAnalyticsCluster) validatePutTimeoutsParameters(value *LogAnalyticsClusterTimeouts) error {
+	return nil
+}
+
+func validateLogAnalyticsCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

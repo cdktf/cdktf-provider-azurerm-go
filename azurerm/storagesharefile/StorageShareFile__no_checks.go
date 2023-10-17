@@ -7,6 +7,10 @@ package storagesharefile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageShareFile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageShareFile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageShareFile) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_StorageShareFile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageShareFile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageShareFile) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_StorageShareFile) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (s *jsiiProxy_StorageShareFile) validatePutTimeoutsParameters(value *StorageShareFileTimeouts) error {
+	return nil
+}
+
+func validateStorageShareFile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

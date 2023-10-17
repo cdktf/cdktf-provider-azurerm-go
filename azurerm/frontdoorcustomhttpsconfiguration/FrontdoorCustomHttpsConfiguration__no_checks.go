@@ -7,6 +7,10 @@ package frontdoorcustomhttpsconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FrontdoorCustomHttpsConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FrontdoorCustomHttpsConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FrontdoorCustomHttpsConfiguration) validateGetStringMapAttrib
 	return nil
 }
 
+func (f *jsiiProxy_FrontdoorCustomHttpsConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FrontdoorCustomHttpsConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FrontdoorCustomHttpsConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (f *jsiiProxy_FrontdoorCustomHttpsConfiguration) validatePutCustomHttpsConf
 }
 
 func (f *jsiiProxy_FrontdoorCustomHttpsConfiguration) validatePutTimeoutsParameters(value *FrontdoorCustomHttpsConfigurationTimeouts) error {
+	return nil
+}
+
+func validateFrontdoorCustomHttpsConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

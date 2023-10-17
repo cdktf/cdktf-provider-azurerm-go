@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermDataShareDatasetKustoCluster) validatePutTimeoutsP
 	return nil
 }
 
+func validateDataAzurermDataShareDatasetKustoCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermDataShareDatasetKustoCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }

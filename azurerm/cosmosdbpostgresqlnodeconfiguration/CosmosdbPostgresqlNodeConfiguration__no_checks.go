@@ -7,6 +7,10 @@ package cosmosdbpostgresqlnodeconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CosmosdbPostgresqlNodeConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbPostgresqlNodeConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CosmosdbPostgresqlNodeConfiguration) validateGetStringMapAttr
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbPostgresqlNodeConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbPostgresqlNodeConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbPostgresqlNodeConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CosmosdbPostgresqlNodeConfiguration) validateOverrideLogicalI
 }
 
 func (c *jsiiProxy_CosmosdbPostgresqlNodeConfiguration) validatePutTimeoutsParameters(value *CosmosdbPostgresqlNodeConfigurationTimeouts) error {
+	return nil
+}
+
+func validateCosmosdbPostgresqlNodeConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

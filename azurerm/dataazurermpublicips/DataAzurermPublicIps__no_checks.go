@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermPublicIps) validatePutTimeoutsParameters(value *Da
 	return nil
 }
 
+func validateDataAzurermPublicIps_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermPublicIps_IsConstructParameters(x interface{}) error {
 	return nil
 }

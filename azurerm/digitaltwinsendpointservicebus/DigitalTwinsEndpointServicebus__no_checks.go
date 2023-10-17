@@ -7,6 +7,10 @@ package digitaltwinsendpointservicebus
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DigitalTwinsEndpointServicebus) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DigitalTwinsEndpointServicebus) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DigitalTwinsEndpointServicebus) validateGetStringMapAttribute
 	return nil
 }
 
+func (d *jsiiProxy_DigitalTwinsEndpointServicebus) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DigitalTwinsEndpointServicebus) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DigitalTwinsEndpointServicebus) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DigitalTwinsEndpointServicebus) validateOverrideLogicalIdPara
 }
 
 func (d *jsiiProxy_DigitalTwinsEndpointServicebus) validatePutTimeoutsParameters(value *DigitalTwinsEndpointServicebusTimeouts) error {
+	return nil
+}
+
+func validateDigitalTwinsEndpointServicebus_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermKeyVaultCertificates) validatePutTimeoutsParameter
 	return nil
 }
 
+func validateDataAzurermKeyVaultCertificates_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermKeyVaultCertificates_IsConstructParameters(x interface{}) error {
 	return nil
 }

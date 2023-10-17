@@ -7,6 +7,10 @@ package orbitalspacecraft
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrbitalSpacecraft) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrbitalSpacecraft) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OrbitalSpacecraft) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (o *jsiiProxy_OrbitalSpacecraft) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrbitalSpacecraft) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrbitalSpacecraft) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (o *jsiiProxy_OrbitalSpacecraft) validatePutLinksParameters(value interface
 }
 
 func (o *jsiiProxy_OrbitalSpacecraft) validatePutTimeoutsParameters(value *OrbitalSpacecraftTimeouts) error {
+	return nil
+}
+
+func validateOrbitalSpacecraft_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

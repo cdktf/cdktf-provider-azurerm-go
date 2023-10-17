@@ -7,6 +7,10 @@ package dataprotectionbackupinstancepostgresql
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataProtectionBackupInstancePostgresql) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataProtectionBackupInstancePostgresql) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataProtectionBackupInstancePostgresql) validateGetStringMapA
 	return nil
 }
 
+func (d *jsiiProxy_DataProtectionBackupInstancePostgresql) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataProtectionBackupInstancePostgresql) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataProtectionBackupInstancePostgresql) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataProtectionBackupInstancePostgresql) validateOverrideLogic
 }
 
 func (d *jsiiProxy_DataProtectionBackupInstancePostgresql) validatePutTimeoutsParameters(value *DataProtectionBackupInstancePostgresqlTimeouts) error {
+	return nil
+}
+
+func validateDataProtectionBackupInstancePostgresql_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

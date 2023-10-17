@@ -7,6 +7,10 @@ package datafactorylinkedservicemysql
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryLinkedServiceMysql) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceMysql) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceMysql) validateGetStringMapAttributeP
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceMysql) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceMysql) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceMysql) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataFactoryLinkedServiceMysql) validateOverrideLogicalIdParam
 }
 
 func (d *jsiiProxy_DataFactoryLinkedServiceMysql) validatePutTimeoutsParameters(value *DataFactoryLinkedServiceMysqlTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryLinkedServiceMysql_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

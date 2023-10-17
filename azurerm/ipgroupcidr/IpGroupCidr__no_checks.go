@@ -7,6 +7,10 @@ package ipgroupcidr
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IpGroupCidr) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IpGroupCidr) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IpGroupCidr) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (i *jsiiProxy_IpGroupCidr) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IpGroupCidr) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IpGroupCidr) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IpGroupCidr) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (i *jsiiProxy_IpGroupCidr) validatePutTimeoutsParameters(value *IpGroupCidrTimeouts) error {
+	return nil
+}
+
+func validateIpGroupCidr_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

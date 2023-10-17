@@ -5,10 +5,10 @@ package dataprotectionbackupinstanceblobstorage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/dataprotectionbackupinstanceblobstorage/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/dataprotectionbackupinstanceblobstorage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -81,6 +81,9 @@ type DataProtectionBackupInstanceBlobStorage interface {
 	VaultId() *string
 	SetVaultId(val *string)
 	VaultIdInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -102,7 +105,12 @@ type DataProtectionBackupInstanceBlobStorage interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -591,6 +599,25 @@ func (j *jsiiProxy_DataProtectionBackupInstanceBlobStorage)SetVaultId(val *strin
 	)
 }
 
+// Generates CDKTF code for importing a DataProtectionBackupInstanceBlobStorage resource upon running "cdktf plan <stack-name>".
+func DataProtectionBackupInstanceBlobStorage_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataProtectionBackupInstanceBlobStorage_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.dataProtectionBackupInstanceBlobStorage.DataProtectionBackupInstanceBlobStorage",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -673,6 +700,17 @@ func DataProtectionBackupInstanceBlobStorage_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (d *jsiiProxy_DataProtectionBackupInstanceBlobStorage) AddMoveTarget(moveTarget *string) {
+	if err := d.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (d *jsiiProxy_DataProtectionBackupInstanceBlobStorage) AddOverride(path *string, value interface{}) {
@@ -830,6 +868,17 @@ func (d *jsiiProxy_DataProtectionBackupInstanceBlobStorage) GetStringMapAttribut
 	return returns
 }
 
+func (d *jsiiProxy_DataProtectionBackupInstanceBlobStorage) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := d.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (d *jsiiProxy_DataProtectionBackupInstanceBlobStorage) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -844,6 +893,17 @@ func (d *jsiiProxy_DataProtectionBackupInstanceBlobStorage) InterpolationForAttr
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataProtectionBackupInstanceBlobStorage) MoveTo(moveTarget *string, index interface{}) {
+	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (d *jsiiProxy_DataProtectionBackupInstanceBlobStorage) OverrideLogicalId(newLogicalId *string) {

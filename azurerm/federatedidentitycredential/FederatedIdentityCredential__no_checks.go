@@ -7,6 +7,10 @@ package federatedidentitycredential
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FederatedIdentityCredential) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FederatedIdentityCredential) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FederatedIdentityCredential) validateGetStringMapAttributePar
 	return nil
 }
 
+func (f *jsiiProxy_FederatedIdentityCredential) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FederatedIdentityCredential) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FederatedIdentityCredential) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (f *jsiiProxy_FederatedIdentityCredential) validateOverrideLogicalIdParamet
 }
 
 func (f *jsiiProxy_FederatedIdentityCredential) validatePutTimeoutsParameters(value *FederatedIdentityCredentialTimeouts) error {
+	return nil
+}
+
+func validateFederatedIdentityCredential_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

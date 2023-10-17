@@ -7,6 +7,10 @@ package iotsecuritysolution
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotSecuritySolution) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotSecuritySolution) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IotSecuritySolution) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (i *jsiiProxy_IotSecuritySolution) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotSecuritySolution) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotSecuritySolution) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (i *jsiiProxy_IotSecuritySolution) validatePutRecommendationsEnabledParamet
 }
 
 func (i *jsiiProxy_IotSecuritySolution) validatePutTimeoutsParameters(value *IotSecuritySolutionTimeouts) error {
+	return nil
+}
+
+func validateIotSecuritySolution_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

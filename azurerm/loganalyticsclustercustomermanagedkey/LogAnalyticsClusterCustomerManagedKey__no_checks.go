@@ -7,6 +7,10 @@ package loganalyticsclustercustomermanagedkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogAnalyticsClusterCustomerManagedKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsClusterCustomerManagedKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LogAnalyticsClusterCustomerManagedKey) validateGetStringMapAt
 	return nil
 }
 
+func (l *jsiiProxy_LogAnalyticsClusterCustomerManagedKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsClusterCustomerManagedKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogAnalyticsClusterCustomerManagedKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (l *jsiiProxy_LogAnalyticsClusterCustomerManagedKey) validateOverrideLogica
 }
 
 func (l *jsiiProxy_LogAnalyticsClusterCustomerManagedKey) validatePutTimeoutsParameters(value *LogAnalyticsClusterCustomerManagedKeyTimeouts) error {
+	return nil
+}
+
+func validateLogAnalyticsClusterCustomerManagedKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

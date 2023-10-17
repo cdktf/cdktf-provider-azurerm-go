@@ -7,6 +7,10 @@ package monitorscheduledqueryruleslog
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorScheduledQueryRulesLog) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorScheduledQueryRulesLog) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitorScheduledQueryRulesLog) validateGetStringMapAttributeP
 	return nil
 }
 
+func (m *jsiiProxy_MonitorScheduledQueryRulesLog) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorScheduledQueryRulesLog) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorScheduledQueryRulesLog) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MonitorScheduledQueryRulesLog) validatePutCriteriaParameters(
 }
 
 func (m *jsiiProxy_MonitorScheduledQueryRulesLog) validatePutTimeoutsParameters(value *MonitorScheduledQueryRulesLogTimeouts) error {
+	return nil
+}
+
+func validateMonitorScheduledQueryRulesLog_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package datafactorytriggertumblingwindow
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryTriggerTumblingWindow) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryTriggerTumblingWindow) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryTriggerTumblingWindow) validateGetStringMapAttribu
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryTriggerTumblingWindow) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryTriggerTumblingWindow) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryTriggerTumblingWindow) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (d *jsiiProxy_DataFactoryTriggerTumblingWindow) validatePutTimeoutsParamete
 }
 
 func (d *jsiiProxy_DataFactoryTriggerTumblingWindow) validatePutTriggerDependencyParameters(value interface{}) error {
+	return nil
+}
+
+func validateDataFactoryTriggerTumblingWindow_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

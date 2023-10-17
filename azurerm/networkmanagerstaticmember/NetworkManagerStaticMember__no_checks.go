@@ -7,6 +7,10 @@ package networkmanagerstaticmember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkManagerStaticMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkManagerStaticMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkManagerStaticMember) validateGetStringMapAttributePara
 	return nil
 }
 
+func (n *jsiiProxy_NetworkManagerStaticMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkManagerStaticMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkManagerStaticMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkManagerStaticMember) validateOverrideLogicalIdParamete
 }
 
 func (n *jsiiProxy_NetworkManagerStaticMember) validatePutTimeoutsParameters(value *NetworkManagerStaticMemberTimeouts) error {
+	return nil
+}
+
+func validateNetworkManagerStaticMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

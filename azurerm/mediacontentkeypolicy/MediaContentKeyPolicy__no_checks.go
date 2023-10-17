@@ -7,6 +7,10 @@ package mediacontentkeypolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MediaContentKeyPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaContentKeyPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MediaContentKeyPolicy) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (m *jsiiProxy_MediaContentKeyPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaContentKeyPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MediaContentKeyPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MediaContentKeyPolicy) validatePutPolicyOptionParameters(valu
 }
 
 func (m *jsiiProxy_MediaContentKeyPolicy) validatePutTimeoutsParameters(value *MediaContentKeyPolicyTimeouts) error {
+	return nil
+}
+
+func validateMediaContentKeyPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package storageaccountnetworkrules
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageAccountNetworkRulesA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageAccountNetworkRulesA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageAccountNetworkRulesA) validateGetStringMapAttributePar
 	return nil
 }
 
+func (s *jsiiProxy_StorageAccountNetworkRulesA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageAccountNetworkRulesA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageAccountNetworkRulesA) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_StorageAccountNetworkRulesA) validatePutPrivateLinkAccessPara
 }
 
 func (s *jsiiProxy_StorageAccountNetworkRulesA) validatePutTimeoutsParameters(value *StorageAccountNetworkRulesTimeouts) error {
+	return nil
+}
+
+func validateStorageAccountNetworkRulesA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

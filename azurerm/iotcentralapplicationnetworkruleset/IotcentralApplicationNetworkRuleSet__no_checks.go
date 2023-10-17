@@ -7,6 +7,10 @@ package iotcentralapplicationnetworkruleset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) validateGetStringMapAttr
 	return nil
 }
 
+func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) validatePutIpRuleParamet
 }
 
 func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) validatePutTimeoutsParameters(value *IotcentralApplicationNetworkRuleSetTimeouts) error {
+	return nil
+}
+
+func validateIotcentralApplicationNetworkRuleSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package sentinelautomationrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SentinelAutomationRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAutomationRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SentinelAutomationRule) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (s *jsiiProxy_SentinelAutomationRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAutomationRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAutomationRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (s *jsiiProxy_SentinelAutomationRule) validatePutConditionParameters(value 
 }
 
 func (s *jsiiProxy_SentinelAutomationRule) validatePutTimeoutsParameters(value *SentinelAutomationRuleTimeouts) error {
+	return nil
+}
+
+func validateSentinelAutomationRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

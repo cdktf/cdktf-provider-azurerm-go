@@ -7,6 +7,10 @@ package eventgridsystemtopiceventsubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventgridSystemTopicEventSubscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventgridSystemTopicEventSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EventgridSystemTopicEventSubscription) validateGetStringMapAt
 	return nil
 }
 
+func (e *jsiiProxy_EventgridSystemTopicEventSubscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventgridSystemTopicEventSubscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventgridSystemTopicEventSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -96,6 +108,10 @@ func (e *jsiiProxy_EventgridSystemTopicEventSubscription) validatePutTimeoutsPar
 }
 
 func (e *jsiiProxy_EventgridSystemTopicEventSubscription) validatePutWebhookEndpointParameters(value *EventgridSystemTopicEventSubscriptionWebhookEndpoint) error {
+	return nil
+}
+
+func validateEventgridSystemTopicEventSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

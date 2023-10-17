@@ -7,6 +7,10 @@ package windowswebapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WindowsWebApp) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsWebApp) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WindowsWebApp) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (w *jsiiProxy_WindowsWebApp) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsWebApp) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WindowsWebApp) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -92,6 +104,10 @@ func (w *jsiiProxy_WindowsWebApp) validatePutStorageAccountParameters(value inte
 }
 
 func (w *jsiiProxy_WindowsWebApp) validatePutTimeoutsParameters(value *WindowsWebAppTimeouts) error {
+	return nil
+}
+
+func validateWindowsWebApp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

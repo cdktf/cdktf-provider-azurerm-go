@@ -7,6 +7,10 @@ package policydefinition
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PolicyDefinition) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyDefinition) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PolicyDefinition) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (p *jsiiProxy_PolicyDefinition) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyDefinition) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PolicyDefinition) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PolicyDefinition) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (p *jsiiProxy_PolicyDefinition) validatePutTimeoutsParameters(value *PolicyDefinitionTimeouts) error {
+	return nil
+}
+
+func validatePolicyDefinition_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

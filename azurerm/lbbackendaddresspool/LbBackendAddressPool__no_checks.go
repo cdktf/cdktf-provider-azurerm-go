@@ -7,6 +7,10 @@ package lbbackendaddresspool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbBackendAddressPool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbBackendAddressPool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LbBackendAddressPool) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (l *jsiiProxy_LbBackendAddressPool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbBackendAddressPool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbBackendAddressPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (l *jsiiProxy_LbBackendAddressPool) validatePutTimeoutsParameters(value *Lb
 }
 
 func (l *jsiiProxy_LbBackendAddressPool) validatePutTunnelInterfaceParameters(value interface{}) error {
+	return nil
+}
+
+func validateLbBackendAddressPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

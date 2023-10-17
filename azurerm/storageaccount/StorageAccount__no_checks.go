@@ -7,6 +7,10 @@ package storageaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageAccount) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (s *jsiiProxy_StorageAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -104,6 +116,10 @@ func (s *jsiiProxy_StorageAccount) validatePutStaticWebsiteParameters(value *Sto
 }
 
 func (s *jsiiProxy_StorageAccount) validatePutTimeoutsParameters(value *StorageAccountTimeouts) error {
+	return nil
+}
+
+func validateStorageAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

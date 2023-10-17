@@ -7,6 +7,10 @@ package logicappintegrationaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogicAppIntegrationAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogicAppIntegrationAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LogicAppIntegrationAccount) validateGetStringMapAttributePara
 	return nil
 }
 
+func (l *jsiiProxy_LogicAppIntegrationAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogicAppIntegrationAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogicAppIntegrationAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (l *jsiiProxy_LogicAppIntegrationAccount) validateOverrideLogicalIdParamete
 }
 
 func (l *jsiiProxy_LogicAppIntegrationAccount) validatePutTimeoutsParameters(value *LogicAppIntegrationAccountTimeouts) error {
+	return nil
+}
+
+func validateLogicAppIntegrationAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

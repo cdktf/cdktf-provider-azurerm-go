@@ -7,6 +7,10 @@ package containerregistrytask
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerRegistryTask) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerRegistryTask) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ContainerRegistryTask) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_ContainerRegistryTask) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerRegistryTask) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerRegistryTask) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -96,6 +108,10 @@ func (c *jsiiProxy_ContainerRegistryTask) validatePutTimeoutsParameters(value *C
 }
 
 func (c *jsiiProxy_ContainerRegistryTask) validatePutTimerTriggerParameters(value interface{}) error {
+	return nil
+}
+
+func validateContainerRegistryTask_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package virtualdesktopapplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualDesktopApplication) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualDesktopApplication) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VirtualDesktopApplication) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (v *jsiiProxy_VirtualDesktopApplication) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualDesktopApplication) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualDesktopApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (v *jsiiProxy_VirtualDesktopApplication) validateOverrideLogicalIdParameter
 }
 
 func (v *jsiiProxy_VirtualDesktopApplication) validatePutTimeoutsParameters(value *VirtualDesktopApplicationTimeouts) error {
+	return nil
+}
+
+func validateVirtualDesktopApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

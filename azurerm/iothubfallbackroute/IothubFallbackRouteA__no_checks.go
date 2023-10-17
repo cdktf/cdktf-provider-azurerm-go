@@ -7,6 +7,10 @@ package iothubfallbackroute
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IothubFallbackRouteA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubFallbackRouteA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IothubFallbackRouteA) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (i *jsiiProxy_IothubFallbackRouteA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubFallbackRouteA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IothubFallbackRouteA) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IothubFallbackRouteA) validateOverrideLogicalIdParameters(new
 }
 
 func (i *jsiiProxy_IothubFallbackRouteA) validatePutTimeoutsParameters(value *IothubFallbackRouteTimeouts) error {
+	return nil
+}
+
+func validateIothubFallbackRouteA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

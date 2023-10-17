@@ -7,6 +7,10 @@ package automationvariabledatetime
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutomationVariableDatetime) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationVariableDatetime) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AutomationVariableDatetime) validateGetStringMapAttributePara
 	return nil
 }
 
+func (a *jsiiProxy_AutomationVariableDatetime) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationVariableDatetime) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutomationVariableDatetime) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AutomationVariableDatetime) validateOverrideLogicalIdParamete
 }
 
 func (a *jsiiProxy_AutomationVariableDatetime) validatePutTimeoutsParameters(value *AutomationVariableDatetimeTimeouts) error {
+	return nil
+}
+
+func validateAutomationVariableDatetime_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

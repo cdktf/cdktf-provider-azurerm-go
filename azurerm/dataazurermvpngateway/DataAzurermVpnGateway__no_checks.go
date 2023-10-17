@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermVpnGateway) validatePutTimeoutsParameters(value *D
 	return nil
 }
 
+func validateDataAzurermVpnGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermVpnGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }

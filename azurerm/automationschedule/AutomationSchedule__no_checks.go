@@ -7,6 +7,10 @@ package automationschedule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutomationSchedule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationSchedule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AutomationSchedule) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_AutomationSchedule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationSchedule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutomationSchedule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_AutomationSchedule) validatePutMonthlyOccurrenceParameters(va
 }
 
 func (a *jsiiProxy_AutomationSchedule) validatePutTimeoutsParameters(value *AutomationScheduleTimeouts) error {
+	return nil
+}
+
+func validateAutomationSchedule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

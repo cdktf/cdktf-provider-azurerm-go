@@ -7,6 +7,10 @@ package linuxvirtualmachine
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LinuxVirtualMachine) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxVirtualMachine) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LinuxVirtualMachine) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (l *jsiiProxy_LinuxVirtualMachine) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxVirtualMachine) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LinuxVirtualMachine) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -96,6 +108,10 @@ func (l *jsiiProxy_LinuxVirtualMachine) validatePutTerminationNotificationParame
 }
 
 func (l *jsiiProxy_LinuxVirtualMachine) validatePutTimeoutsParameters(value *LinuxVirtualMachineTimeouts) error {
+	return nil
+}
+
+func validateLinuxVirtualMachine_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

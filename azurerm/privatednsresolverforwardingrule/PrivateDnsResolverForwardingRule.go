@@ -5,10 +5,10 @@ package privatednsresolverforwardingrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v10/privatednsresolverforwardingrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/privatednsresolverforwardingrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -83,6 +83,9 @@ type PrivateDnsResolverForwardingRule interface {
 	TerraformResourceType() *string
 	Timeouts() PrivateDnsResolverForwardingRuleTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -104,7 +107,12 @@ type PrivateDnsResolverForwardingRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -616,6 +624,25 @@ func (j *jsiiProxy_PrivateDnsResolverForwardingRule)SetProvisioners(val *[]inter
 	)
 }
 
+// Generates CDKTF code for importing a PrivateDnsResolverForwardingRule resource upon running "cdktf plan <stack-name>".
+func PrivateDnsResolverForwardingRule_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validatePrivateDnsResolverForwardingRule_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurerm.privateDnsResolverForwardingRule.PrivateDnsResolverForwardingRule",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -698,6 +725,17 @@ func PrivateDnsResolverForwardingRule_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (p *jsiiProxy_PrivateDnsResolverForwardingRule) AddMoveTarget(moveTarget *string) {
+	if err := p.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (p *jsiiProxy_PrivateDnsResolverForwardingRule) AddOverride(path *string, value interface{}) {
@@ -855,6 +893,17 @@ func (p *jsiiProxy_PrivateDnsResolverForwardingRule) GetStringMapAttribute(terra
 	return returns
 }
 
+func (p *jsiiProxy_PrivateDnsResolverForwardingRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := p.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (p *jsiiProxy_PrivateDnsResolverForwardingRule) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -869,6 +918,17 @@ func (p *jsiiProxy_PrivateDnsResolverForwardingRule) InterpolationForAttribute(t
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PrivateDnsResolverForwardingRule) MoveTo(moveTarget *string, index interface{}) {
+	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (p *jsiiProxy_PrivateDnsResolverForwardingRule) OverrideLogicalId(newLogicalId *string) {

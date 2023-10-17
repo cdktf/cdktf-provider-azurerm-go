@@ -7,6 +7,10 @@ package storagemoverjobdefinition
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageMoverJobDefinition) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageMoverJobDefinition) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageMoverJobDefinition) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_StorageMoverJobDefinition) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageMoverJobDefinition) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageMoverJobDefinition) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_StorageMoverJobDefinition) validateOverrideLogicalIdParameter
 }
 
 func (s *jsiiProxy_StorageMoverJobDefinition) validatePutTimeoutsParameters(value *StorageMoverJobDefinitionTimeouts) error {
+	return nil
+}
+
+func validateStorageMoverJobDefinition_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

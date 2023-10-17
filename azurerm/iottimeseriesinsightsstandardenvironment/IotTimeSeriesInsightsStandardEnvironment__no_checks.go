@@ -7,6 +7,10 @@ package iottimeseriesinsightsstandardenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) validateGetStringMa
 	return nil
 }
 
+func (i *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) validateOverrideLog
 }
 
 func (i *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) validatePutTimeoutsParameters(value *IotTimeSeriesInsightsStandardEnvironmentTimeouts) error {
+	return nil
+}
+
+func validateIotTimeSeriesInsightsStandardEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

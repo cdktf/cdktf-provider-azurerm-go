@@ -7,6 +7,10 @@ package cosmosdbmongocollection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CosmosdbMongoCollection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbMongoCollection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CosmosdbMongoCollection) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbMongoCollection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbMongoCollection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbMongoCollection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_CosmosdbMongoCollection) validatePutIndexParameters(value int
 }
 
 func (c *jsiiProxy_CosmosdbMongoCollection) validatePutTimeoutsParameters(value *CosmosdbMongoCollectionTimeouts) error {
+	return nil
+}
+
+func validateCosmosdbMongoCollection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

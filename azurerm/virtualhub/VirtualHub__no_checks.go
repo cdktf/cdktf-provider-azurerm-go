@@ -7,6 +7,10 @@ package virtualhub
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualHub) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualHub) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VirtualHub) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (v *jsiiProxy_VirtualHub) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualHub) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualHub) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (v *jsiiProxy_VirtualHub) validatePutRouteParameters(value interface{}) err
 }
 
 func (v *jsiiProxy_VirtualHub) validatePutTimeoutsParameters(value *VirtualHubTimeouts) error {
+	return nil
+}
+
+func validateVirtualHub_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

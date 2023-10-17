@@ -7,6 +7,10 @@ package databasemigrationservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatabaseMigrationService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseMigrationService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DatabaseMigrationService) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseMigrationService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseMigrationService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseMigrationService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DatabaseMigrationService) validateOverrideLogicalIdParameters
 }
 
 func (d *jsiiProxy_DatabaseMigrationService) validatePutTimeoutsParameters(value *DatabaseMigrationServiceTimeouts) error {
+	return nil
+}
+
+func validateDatabaseMigrationService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

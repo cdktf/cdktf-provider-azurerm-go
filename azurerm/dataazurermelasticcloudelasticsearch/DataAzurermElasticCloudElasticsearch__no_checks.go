@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAzurermElasticCloudElasticsearch) validatePutTimeoutsPara
 	return nil
 }
 
+func validateDataAzurermElasticCloudElasticsearch_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermElasticCloudElasticsearch_IsConstructParameters(x interface{}) error {
 	return nil
 }

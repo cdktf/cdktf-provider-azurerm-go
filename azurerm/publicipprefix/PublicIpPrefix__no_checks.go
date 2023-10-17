@@ -7,6 +7,10 @@ package publicipprefix
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PublicIpPrefix) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PublicIpPrefix) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PublicIpPrefix) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (p *jsiiProxy_PublicIpPrefix) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PublicIpPrefix) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PublicIpPrefix) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PublicIpPrefix) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (p *jsiiProxy_PublicIpPrefix) validatePutTimeoutsParameters(value *PublicIpPrefixTimeouts) error {
+	return nil
+}
+
+func validatePublicIpPrefix_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

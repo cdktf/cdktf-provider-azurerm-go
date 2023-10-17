@@ -7,6 +7,10 @@ package networkwatcherflowlog
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkWatcherFlowLog) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkWatcherFlowLog) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkWatcherFlowLog) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (n *jsiiProxy_NetworkWatcherFlowLog) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkWatcherFlowLog) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkWatcherFlowLog) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (n *jsiiProxy_NetworkWatcherFlowLog) validatePutTimeoutsParameters(value *N
 }
 
 func (n *jsiiProxy_NetworkWatcherFlowLog) validatePutTrafficAnalyticsParameters(value *NetworkWatcherFlowLogTrafficAnalytics) error {
+	return nil
+}
+
+func validateNetworkWatcherFlowLog_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package recoveryservicesvault
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RecoveryServicesVault) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RecoveryServicesVault) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RecoveryServicesVault) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (r *jsiiProxy_RecoveryServicesVault) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RecoveryServicesVault) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RecoveryServicesVault) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (r *jsiiProxy_RecoveryServicesVault) validatePutMonitoringParameters(value 
 }
 
 func (r *jsiiProxy_RecoveryServicesVault) validatePutTimeoutsParameters(value *RecoveryServicesVaultTimeouts) error {
+	return nil
+}
+
+func validateRecoveryServicesVault_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package functionappfunction
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FunctionAppFunction) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FunctionAppFunction) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FunctionAppFunction) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (f *jsiiProxy_FunctionAppFunction) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FunctionAppFunction) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FunctionAppFunction) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (f *jsiiProxy_FunctionAppFunction) validatePutFileParameters(value interfac
 }
 
 func (f *jsiiProxy_FunctionAppFunction) validatePutTimeoutsParameters(value *FunctionAppFunctionTimeouts) error {
+	return nil
+}
+
+func validateFunctionAppFunction_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

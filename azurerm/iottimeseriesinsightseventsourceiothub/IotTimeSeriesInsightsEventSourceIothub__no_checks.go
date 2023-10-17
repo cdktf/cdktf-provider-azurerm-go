@@ -7,6 +7,10 @@ package iottimeseriesinsightseventsourceiothub
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub) validateGetStringMapA
 	return nil
 }
 
+func (i *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub) validateOverrideLogic
 }
 
 func (i *jsiiProxy_IotTimeSeriesInsightsEventSourceIothub) validatePutTimeoutsParameters(value *IotTimeSeriesInsightsEventSourceIothubTimeouts) error {
+	return nil
+}
+
+func validateIotTimeSeriesInsightsEventSourceIothub_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

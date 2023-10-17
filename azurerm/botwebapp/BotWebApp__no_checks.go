@@ -7,6 +7,10 @@ package botwebapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BotWebApp) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotWebApp) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BotWebApp) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (b *jsiiProxy_BotWebApp) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotWebApp) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotWebApp) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BotWebApp) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (b *jsiiProxy_BotWebApp) validatePutTimeoutsParameters(value *BotWebAppTimeouts) error {
+	return nil
+}
+
+func validateBotWebApp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

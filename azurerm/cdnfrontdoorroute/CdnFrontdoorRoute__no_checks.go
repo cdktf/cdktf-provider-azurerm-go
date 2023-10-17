@@ -7,6 +7,10 @@ package cdnfrontdoorroute
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CdnFrontdoorRoute) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorRoute) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CdnFrontdoorRoute) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (c *jsiiProxy_CdnFrontdoorRoute) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorRoute) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CdnFrontdoorRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CdnFrontdoorRoute) validatePutCacheParameters(value *CdnFront
 }
 
 func (c *jsiiProxy_CdnFrontdoorRoute) validatePutTimeoutsParameters(value *CdnFrontdoorRouteTimeouts) error {
+	return nil
+}
+
+func validateCdnFrontdoorRoute_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

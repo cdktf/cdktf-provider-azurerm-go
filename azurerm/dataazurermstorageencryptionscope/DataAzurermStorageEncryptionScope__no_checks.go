@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermStorageEncryptionScope) validatePutTimeoutsParamet
 	return nil
 }
 
+func validateDataAzurermStorageEncryptionScope_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermStorageEncryptionScope_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package datafactorydatasetsnowflake
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryDatasetSnowflake) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetSnowflake) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryDatasetSnowflake) validateGetStringMapAttributePar
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryDatasetSnowflake) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetSnowflake) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryDatasetSnowflake) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataFactoryDatasetSnowflake) validatePutSchemaColumnParameter
 }
 
 func (d *jsiiProxy_DataFactoryDatasetSnowflake) validatePutTimeoutsParameters(value *DataFactoryDatasetSnowflakeTimeouts) error {
+	return nil
+}
+
+func validateDataFactoryDatasetSnowflake_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

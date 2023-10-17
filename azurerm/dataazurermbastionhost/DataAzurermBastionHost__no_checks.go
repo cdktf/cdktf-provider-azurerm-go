@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermBastionHost) validatePutTimeoutsParameters(value *
 	return nil
 }
 
+func validateDataAzurermBastionHost_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermBastionHost_IsConstructParameters(x interface{}) error {
 	return nil
 }

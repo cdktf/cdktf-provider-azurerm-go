@@ -7,6 +7,10 @@ package keyvaultcertificateissuer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KeyVaultCertificateIssuer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultCertificateIssuer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KeyVaultCertificateIssuer) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (k *jsiiProxy_KeyVaultCertificateIssuer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultCertificateIssuer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KeyVaultCertificateIssuer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (k *jsiiProxy_KeyVaultCertificateIssuer) validatePutAdminParameters(value i
 }
 
 func (k *jsiiProxy_KeyVaultCertificateIssuer) validatePutTimeoutsParameters(value *KeyVaultCertificateIssuerTimeouts) error {
+	return nil
+}
+
+func validateKeyVaultCertificateIssuer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

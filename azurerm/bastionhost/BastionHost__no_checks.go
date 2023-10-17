@@ -7,6 +7,10 @@ package bastionhost
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BastionHost) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BastionHost) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BastionHost) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (b *jsiiProxy_BastionHost) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BastionHost) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BastionHost) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (b *jsiiProxy_BastionHost) validatePutIpConfigurationParameters(value *Bast
 }
 
 func (b *jsiiProxy_BastionHost) validatePutTimeoutsParameters(value *BastionHostTimeouts) error {
+	return nil
+}
+
+func validateBastionHost_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

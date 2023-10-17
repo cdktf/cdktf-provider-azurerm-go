@@ -7,6 +7,10 @@ package streamanalyticsmanagedprivateendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StreamAnalyticsManagedPrivateEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsManagedPrivateEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StreamAnalyticsManagedPrivateEndpoint) validateGetStringMapAt
 	return nil
 }
 
+func (s *jsiiProxy_StreamAnalyticsManagedPrivateEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsManagedPrivateEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamAnalyticsManagedPrivateEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_StreamAnalyticsManagedPrivateEndpoint) validateOverrideLogica
 }
 
 func (s *jsiiProxy_StreamAnalyticsManagedPrivateEndpoint) validatePutTimeoutsParameters(value *StreamAnalyticsManagedPrivateEndpointTimeouts) error {
+	return nil
+}
+
+func validateStreamAnalyticsManagedPrivateEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

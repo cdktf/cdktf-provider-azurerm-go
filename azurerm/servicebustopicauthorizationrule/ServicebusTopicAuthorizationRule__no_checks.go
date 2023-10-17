@@ -7,6 +7,10 @@ package servicebustopicauthorizationrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServicebusTopicAuthorizationRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicebusTopicAuthorizationRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServicebusTopicAuthorizationRule) validateGetStringMapAttribu
 	return nil
 }
 
+func (s *jsiiProxy_ServicebusTopicAuthorizationRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicebusTopicAuthorizationRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicebusTopicAuthorizationRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_ServicebusTopicAuthorizationRule) validateOverrideLogicalIdPa
 }
 
 func (s *jsiiProxy_ServicebusTopicAuthorizationRule) validatePutTimeoutsParameters(value *ServicebusTopicAuthorizationRuleTimeouts) error {
+	return nil
+}
+
+func validateServicebusTopicAuthorizationRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

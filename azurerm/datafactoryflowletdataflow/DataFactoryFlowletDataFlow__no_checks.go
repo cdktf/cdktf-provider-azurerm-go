@@ -7,6 +7,10 @@ package datafactoryflowletdataflow
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryFlowletDataFlow) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryFlowletDataFlow) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFactoryFlowletDataFlow) validateGetStringMapAttributePara
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryFlowletDataFlow) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryFlowletDataFlow) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryFlowletDataFlow) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (d *jsiiProxy_DataFactoryFlowletDataFlow) validatePutTimeoutsParameters(val
 }
 
 func (d *jsiiProxy_DataFactoryFlowletDataFlow) validatePutTransformationParameters(value interface{}) error {
+	return nil
+}
+
+func validateDataFactoryFlowletDataFlow_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

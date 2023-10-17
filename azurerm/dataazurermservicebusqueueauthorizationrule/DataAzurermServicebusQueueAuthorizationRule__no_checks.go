@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurermServicebusQueueAuthorizationRule) validatePutTimeo
 	return nil
 }
 
+func validateDataAzurermServicebusQueueAuthorizationRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurermServicebusQueueAuthorizationRule_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package loganalyticssolution
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogAnalyticsSolution) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsSolution) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LogAnalyticsSolution) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (l *jsiiProxy_LogAnalyticsSolution) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsSolution) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogAnalyticsSolution) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (l *jsiiProxy_LogAnalyticsSolution) validatePutPlanParameters(value *LogAna
 }
 
 func (l *jsiiProxy_LogAnalyticsSolution) validatePutTimeoutsParameters(value *LogAnalyticsSolutionTimeouts) error {
+	return nil
+}
+
+func validateLogAnalyticsSolution_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 
