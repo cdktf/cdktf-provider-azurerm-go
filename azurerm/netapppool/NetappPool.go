@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/netapp_pool azurerm_netapp_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/netapp_pool azurerm_netapp_pool}.
 type NetappPool interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -507,7 +507,7 @@ func (j *jsiiProxy_NetappPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/netapp_pool azurerm_netapp_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/netapp_pool azurerm_netapp_pool} Resource.
 func NewNetappPool(scope constructs.Construct, id *string, config *NetappPoolConfig) NetappPool {
 	_init_.Initialize()
 
@@ -525,7 +525,7 @@ func NewNetappPool(scope constructs.Construct, id *string, config *NetappPoolCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/netapp_pool azurerm_netapp_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/netapp_pool azurerm_netapp_pool} Resource.
 func NewNetappPool_Override(n NetappPool, scope constructs.Construct, id *string, config *NetappPoolConfig) {
 	_init_.Initialize()
 

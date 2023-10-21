@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/nginx_deployment azurerm_nginx_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/nginx_deployment azurerm_nginx_deployment}.
 type NginxDeployment interface {
 	cdktf.TerraformResource
+	Capacity() *float64
+	SetCapacity(val *float64)
+	CapacityInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -34,6 +37,9 @@ type NginxDeployment interface {
 	DiagnoseSupportEnabled() interface{}
 	SetDiagnoseSupportEnabled(val interface{})
 	DiagnoseSupportEnabledInput() interface{}
+	Email() *string
+	SetEmail(val *string)
+	EmailInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -138,7 +144,9 @@ type NginxDeployment interface {
 	PutLoggingStorageAccount(value interface{})
 	PutNetworkInterface(value interface{})
 	PutTimeouts(value *NginxDeploymentTimeouts)
+	ResetCapacity()
 	ResetDiagnoseSupportEnabled()
+	ResetEmail()
 	ResetFrontendPrivate()
 	ResetFrontendPublic()
 	ResetId()
@@ -164,6 +172,26 @@ type NginxDeployment interface {
 // The jsii proxy struct for NginxDeployment
 type jsiiProxy_NginxDeployment struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_NginxDeployment) Capacity() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"capacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NginxDeployment) CapacityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"capacityInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NginxDeployment) CdktfStack() cdktf.TerraformStack {
@@ -231,6 +259,26 @@ func (j *jsiiProxy_NginxDeployment) DiagnoseSupportEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"diagnoseSupportEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NginxDeployment) Email() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"email",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NginxDeployment) EmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"emailInput",
 		&returns,
 	)
 	return returns
@@ -627,7 +675,7 @@ func (j *jsiiProxy_NginxDeployment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
 func NewNginxDeployment(scope constructs.Construct, id *string, config *NginxDeploymentConfig) NginxDeployment {
 	_init_.Initialize()
 
@@ -645,7 +693,7 @@ func NewNginxDeployment(scope constructs.Construct, id *string, config *NginxDep
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
 func NewNginxDeployment_Override(n NginxDeployment, scope constructs.Construct, id *string, config *NginxDeploymentConfig) {
 	_init_.Initialize()
 
@@ -653,6 +701,17 @@ func NewNginxDeployment_Override(n NginxDeployment, scope constructs.Construct, 
 		"@cdktf/provider-azurerm.nginxDeployment.NginxDeployment",
 		[]interface{}{scope, id, config},
 		n,
+	)
+}
+
+func (j *jsiiProxy_NginxDeployment)SetCapacity(val *float64) {
+	if err := j.validateSetCapacityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"capacity",
+		val,
 	)
 }
 
@@ -693,6 +752,17 @@ func (j *jsiiProxy_NginxDeployment)SetDiagnoseSupportEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"diagnoseSupportEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NginxDeployment)SetEmail(val *string) {
+	if err := j.validateSetEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"email",
 		val,
 	)
 }
@@ -1196,10 +1266,26 @@ func (n *jsiiProxy_NginxDeployment) PutTimeouts(value *NginxDeploymentTimeouts) 
 	)
 }
 
+func (n *jsiiProxy_NginxDeployment) ResetCapacity() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCapacity",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NginxDeployment) ResetDiagnoseSupportEnabled() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetDiagnoseSupportEnabled",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NginxDeployment) ResetEmail() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEmail",
 		nil, // no parameters
 	)
 }

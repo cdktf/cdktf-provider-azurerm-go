@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/iothub azurerm_iothub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/iothub azurerm_iothub}.
 type Iothub interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -837,7 +837,7 @@ func (j *jsiiProxy_Iothub) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/iothub azurerm_iothub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/iothub azurerm_iothub} Resource.
 func NewIothub(scope constructs.Construct, id *string, config *IothubConfig) Iothub {
 	_init_.Initialize()
 
@@ -855,7 +855,7 @@ func NewIothub(scope constructs.Construct, id *string, config *IothubConfig) Iot
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/iothub azurerm_iothub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/iothub azurerm_iothub} Resource.
 func NewIothub_Override(i Iothub, scope constructs.Construct, id *string, config *IothubConfig) {
 	_init_.Initialize()
 

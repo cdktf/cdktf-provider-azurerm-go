@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/api_management_api_operation azurerm_api_management_api_operation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/api_management_api_operation azurerm_api_management_api_operation}.
 type ApiManagementApiOperation interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -578,7 +578,7 @@ func (j *jsiiProxy_ApiManagementApiOperation) UrlTemplateInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/api_management_api_operation azurerm_api_management_api_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/api_management_api_operation azurerm_api_management_api_operation} Resource.
 func NewApiManagementApiOperation(scope constructs.Construct, id *string, config *ApiManagementApiOperationConfig) ApiManagementApiOperation {
 	_init_.Initialize()
 
@@ -596,7 +596,7 @@ func NewApiManagementApiOperation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/api_management_api_operation azurerm_api_management_api_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/api_management_api_operation azurerm_api_management_api_operation} Resource.
 func NewApiManagementApiOperation_Override(a ApiManagementApiOperation, scope constructs.Construct, id *string, config *ApiManagementApiOperationConfig) {
 	_init_.Initialize()
 

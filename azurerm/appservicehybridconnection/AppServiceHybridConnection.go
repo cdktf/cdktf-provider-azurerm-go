@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/app_service_hybrid_connection azurerm_app_service_hybrid_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/app_service_hybrid_connection azurerm_app_service_hybrid_connection}.
 type AppServiceHybridConnection interface {
 	cdktf.TerraformResource
 	AppServiceName() *string
@@ -515,7 +515,7 @@ func (j *jsiiProxy_AppServiceHybridConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/app_service_hybrid_connection azurerm_app_service_hybrid_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/app_service_hybrid_connection azurerm_app_service_hybrid_connection} Resource.
 func NewAppServiceHybridConnection(scope constructs.Construct, id *string, config *AppServiceHybridConnectionConfig) AppServiceHybridConnection {
 	_init_.Initialize()
 
@@ -533,7 +533,7 @@ func NewAppServiceHybridConnection(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/app_service_hybrid_connection azurerm_app_service_hybrid_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/app_service_hybrid_connection azurerm_app_service_hybrid_connection} Resource.
 func NewAppServiceHybridConnection_Override(a AppServiceHybridConnection, scope constructs.Construct, id *string, config *AppServiceHybridConnectionConfig) {
 	_init_.Initialize()
 

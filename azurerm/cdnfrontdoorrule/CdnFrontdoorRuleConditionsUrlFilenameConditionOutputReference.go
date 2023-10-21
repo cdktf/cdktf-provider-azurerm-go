@@ -76,6 +76,7 @@ type CdnFrontdoorRuleConditionsUrlFilenameConditionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMatchValues()
 	ResetNegateCondition()
 	ResetTransforms()
 	// Produce the Token's value at resolution time.
@@ -554,6 +555,14 @@ func (c *jsiiProxy_CdnFrontdoorRuleConditionsUrlFilenameConditionOutputReference
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CdnFrontdoorRuleConditionsUrlFilenameConditionOutputReference) ResetMatchValues() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMatchValues",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CdnFrontdoorRuleConditionsUrlFilenameConditionOutputReference) ResetNegateCondition() {

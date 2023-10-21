@@ -107,6 +107,10 @@ func validateNginxDeployment_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_NginxDeployment) validateSetCapacityParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_NginxDeployment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (j *jsiiProxy_NginxDeployment) validateSetCountParameters(val interface{}) 
 }
 
 func (j *jsiiProxy_NginxDeployment) validateSetDiagnoseSupportEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NginxDeployment) validateSetEmailParameters(val *string) error {
 	return nil
 }
 

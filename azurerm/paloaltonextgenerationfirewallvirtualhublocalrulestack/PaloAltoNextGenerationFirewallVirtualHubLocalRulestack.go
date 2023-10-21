@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_local_rulestack azurerm_palo_alto_next_generation_firewall_virtual_hub_local_rulestack}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_local_rulestack azurerm_palo_alto_next_generation_firewall_virtual_hub_local_rulestack}.
 type PaloAltoNextGenerationFirewallVirtualHubLocalRulestack interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubLocalRulestack) Timeo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_local_rulestack azurerm_palo_alto_next_generation_firewall_virtual_hub_local_rulestack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_local_rulestack azurerm_palo_alto_next_generation_firewall_virtual_hub_local_rulestack} Resource.
 func NewPaloAltoNextGenerationFirewallVirtualHubLocalRulestack(scope constructs.Construct, id *string, config *PaloAltoNextGenerationFirewallVirtualHubLocalRulestackConfig) PaloAltoNextGenerationFirewallVirtualHubLocalRulestack {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewPaloAltoNextGenerationFirewallVirtualHubLocalRulestack(scope constructs.
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_local_rulestack azurerm_palo_alto_next_generation_firewall_virtual_hub_local_rulestack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_local_rulestack azurerm_palo_alto_next_generation_firewall_virtual_hub_local_rulestack} Resource.
 func NewPaloAltoNextGenerationFirewallVirtualHubLocalRulestack_Override(p PaloAltoNextGenerationFirewallVirtualHubLocalRulestack, scope constructs.Construct, id *string, config *PaloAltoNextGenerationFirewallVirtualHubLocalRulestackConfig) {
 	_init_.Initialize()
 

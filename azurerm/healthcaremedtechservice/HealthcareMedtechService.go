@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/healthcare_medtech_service azurerm_healthcare_medtech_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/healthcare_medtech_service azurerm_healthcare_medtech_service}.
 type HealthcareMedtechService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -530,7 +530,7 @@ func (j *jsiiProxy_HealthcareMedtechService) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/healthcare_medtech_service azurerm_healthcare_medtech_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/healthcare_medtech_service azurerm_healthcare_medtech_service} Resource.
 func NewHealthcareMedtechService(scope constructs.Construct, id *string, config *HealthcareMedtechServiceConfig) HealthcareMedtechService {
 	_init_.Initialize()
 
@@ -548,7 +548,7 @@ func NewHealthcareMedtechService(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/healthcare_medtech_service azurerm_healthcare_medtech_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/healthcare_medtech_service azurerm_healthcare_medtech_service} Resource.
 func NewHealthcareMedtechService_Override(h HealthcareMedtechService, scope constructs.Construct, id *string, config *HealthcareMedtechServiceConfig) {
 	_init_.Initialize()
 

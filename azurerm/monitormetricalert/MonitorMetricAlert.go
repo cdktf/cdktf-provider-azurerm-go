@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/monitor_metric_alert azurerm_monitor_metric_alert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/monitor_metric_alert azurerm_monitor_metric_alert}.
 type MonitorMetricAlert interface {
 	cdktf.TerraformResource
 	Action() MonitorMetricAlertActionList
@@ -702,7 +702,7 @@ func (j *jsiiProxy_MonitorMetricAlert) WindowSizeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/monitor_metric_alert azurerm_monitor_metric_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/monitor_metric_alert azurerm_monitor_metric_alert} Resource.
 func NewMonitorMetricAlert(scope constructs.Construct, id *string, config *MonitorMetricAlertConfig) MonitorMetricAlert {
 	_init_.Initialize()
 
@@ -720,7 +720,7 @@ func NewMonitorMetricAlert(scope constructs.Construct, id *string, config *Monit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/monitor_metric_alert azurerm_monitor_metric_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/monitor_metric_alert azurerm_monitor_metric_alert} Resource.
 func NewMonitorMetricAlert_Override(m MonitorMetricAlert, scope constructs.Construct, id *string, config *MonitorMetricAlertConfig) {
 	_init_.Initialize()
 

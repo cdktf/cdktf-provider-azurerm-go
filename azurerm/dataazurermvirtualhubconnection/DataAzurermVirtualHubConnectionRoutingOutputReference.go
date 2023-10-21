@@ -31,9 +31,12 @@ type DataAzurermVirtualHubConnectionRoutingOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InboundRouteMapId() *string
 	InternalValue() *DataAzurermVirtualHubConnectionRouting
 	SetInternalValue(val *DataAzurermVirtualHubConnectionRouting)
+	OutboundRouteMapId() *string
 	PropagatedRouteTable() DataAzurermVirtualHubConnectionRoutingPropagatedRouteTableList
+	StaticVnetLocalRouteOverrideCriteria() *string
 	StaticVnetRoute() DataAzurermVirtualHubConnectionRoutingStaticVnetRouteList
 	// Experimental.
 	TerraformAttribute() *string
@@ -132,6 +135,16 @@ func (j *jsiiProxy_DataAzurermVirtualHubConnectionRoutingOutputReference) Fqn() 
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermVirtualHubConnectionRoutingOutputReference) InboundRouteMapId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inboundRouteMapId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermVirtualHubConnectionRoutingOutputReference) InternalValue() *DataAzurermVirtualHubConnectionRouting {
 	var returns *DataAzurermVirtualHubConnectionRouting
 	_jsii_.Get(
@@ -142,11 +155,31 @@ func (j *jsiiProxy_DataAzurermVirtualHubConnectionRoutingOutputReference) Intern
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermVirtualHubConnectionRoutingOutputReference) OutboundRouteMapId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outboundRouteMapId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermVirtualHubConnectionRoutingOutputReference) PropagatedRouteTable() DataAzurermVirtualHubConnectionRoutingPropagatedRouteTableList {
 	var returns DataAzurermVirtualHubConnectionRoutingPropagatedRouteTableList
 	_jsii_.Get(
 		j,
 		"propagatedRouteTable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermVirtualHubConnectionRoutingOutputReference) StaticVnetLocalRouteOverrideCriteria() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"staticVnetLocalRouteOverrideCriteria",
 		&returns,
 	)
 	return returns

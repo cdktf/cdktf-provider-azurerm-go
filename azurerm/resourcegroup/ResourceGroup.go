@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/resource_group azurerm_resource_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/resource_group azurerm_resource_group}.
 type ResourceGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_ResourceGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/resource_group azurerm_resource_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/resource_group azurerm_resource_group} Resource.
 func NewResourceGroup(scope constructs.Construct, id *string, config *ResourceGroupConfig) ResourceGroup {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewResourceGroup(scope constructs.Construct, id *string, config *ResourceGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/resource_group azurerm_resource_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/resource_group azurerm_resource_group} Resource.
 func NewResourceGroup_Override(r ResourceGroup, scope constructs.Construct, id *string, config *ResourceGroupConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/lab_service_plan azurerm_lab_service_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/lab_service_plan azurerm_lab_service_plan}.
 type LabServicePlan interface {
 	cdktf.TerraformResource
 	AllowedRegions() *[]*string
@@ -557,7 +557,7 @@ func (j *jsiiProxy_LabServicePlan) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/lab_service_plan azurerm_lab_service_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/lab_service_plan azurerm_lab_service_plan} Resource.
 func NewLabServicePlan(scope constructs.Construct, id *string, config *LabServicePlanConfig) LabServicePlan {
 	_init_.Initialize()
 
@@ -575,7 +575,7 @@ func NewLabServicePlan(scope constructs.Construct, id *string, config *LabServic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/lab_service_plan azurerm_lab_service_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/lab_service_plan azurerm_lab_service_plan} Resource.
 func NewLabServicePlan_Override(l LabServicePlan, scope constructs.Construct, id *string, config *LabServicePlanConfig) {
 	_init_.Initialize()
 

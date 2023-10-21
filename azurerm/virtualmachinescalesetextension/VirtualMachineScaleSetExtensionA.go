@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/virtual_machine_scale_set_extension azurerm_virtual_machine_scale_set_extension}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/virtual_machine_scale_set_extension azurerm_virtual_machine_scale_set_extension}.
 type VirtualMachineScaleSetExtensionA interface {
 	cdktf.TerraformResource
 	AutomaticUpgradeEnabled() interface{}
@@ -628,7 +628,7 @@ func (j *jsiiProxy_VirtualMachineScaleSetExtensionA) VirtualMachineScaleSetIdInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/virtual_machine_scale_set_extension azurerm_virtual_machine_scale_set_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/virtual_machine_scale_set_extension azurerm_virtual_machine_scale_set_extension} Resource.
 func NewVirtualMachineScaleSetExtensionA(scope constructs.Construct, id *string, config *VirtualMachineScaleSetExtensionAConfig) VirtualMachineScaleSetExtensionA {
 	_init_.Initialize()
 
@@ -646,7 +646,7 @@ func NewVirtualMachineScaleSetExtensionA(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/virtual_machine_scale_set_extension azurerm_virtual_machine_scale_set_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/virtual_machine_scale_set_extension azurerm_virtual_machine_scale_set_extension} Resource.
 func NewVirtualMachineScaleSetExtensionA_Override(v VirtualMachineScaleSetExtensionA, scope constructs.Construct, id *string, config *VirtualMachineScaleSetExtensionAConfig) {
 	_init_.Initialize()
 

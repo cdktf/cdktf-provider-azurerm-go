@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/function_app_function azurerm_function_app_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/function_app_function azurerm_function_app_function}.
 type FunctionAppFunction interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -563,7 +563,7 @@ func (j *jsiiProxy_FunctionAppFunction) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/function_app_function azurerm_function_app_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/function_app_function azurerm_function_app_function} Resource.
 func NewFunctionAppFunction(scope constructs.Construct, id *string, config *FunctionAppFunctionConfig) FunctionAppFunction {
 	_init_.Initialize()
 
@@ -581,7 +581,7 @@ func NewFunctionAppFunction(scope constructs.Construct, id *string, config *Func
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/function_app_function azurerm_function_app_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/function_app_function azurerm_function_app_function} Resource.
 func NewFunctionAppFunction_Override(f FunctionAppFunction, scope constructs.Construct, id *string, config *FunctionAppFunctionConfig) {
 	_init_.Initialize()
 

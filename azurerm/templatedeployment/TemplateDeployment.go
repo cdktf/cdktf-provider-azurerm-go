@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/template_deployment azurerm_template_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/template_deployment azurerm_template_deployment}.
 type TemplateDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_TemplateDeployment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/template_deployment azurerm_template_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/template_deployment azurerm_template_deployment} Resource.
 func NewTemplateDeployment(scope constructs.Construct, id *string, config *TemplateDeploymentConfig) TemplateDeployment {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewTemplateDeployment(scope constructs.Construct, id *string, config *Templ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/template_deployment azurerm_template_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/template_deployment azurerm_template_deployment} Resource.
 func NewTemplateDeployment_Override(t TemplateDeployment, scope constructs.Construct, id *string, config *TemplateDeploymentConfig) {
 	_init_.Initialize()
 

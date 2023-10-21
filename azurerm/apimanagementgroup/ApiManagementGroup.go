@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/api_management_group azurerm_api_management_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/api_management_group azurerm_api_management_group}.
 type ApiManagementGroup interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -485,7 +485,7 @@ func (j *jsiiProxy_ApiManagementGroup) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/api_management_group azurerm_api_management_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/api_management_group azurerm_api_management_group} Resource.
 func NewApiManagementGroup(scope constructs.Construct, id *string, config *ApiManagementGroupConfig) ApiManagementGroup {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewApiManagementGroup(scope constructs.Construct, id *string, config *ApiMa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/api_management_group azurerm_api_management_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/api_management_group azurerm_api_management_group} Resource.
 func NewApiManagementGroup_Override(a ApiManagementGroup, scope constructs.Construct, id *string, config *ApiManagementGroupConfig) {
 	_init_.Initialize()
 

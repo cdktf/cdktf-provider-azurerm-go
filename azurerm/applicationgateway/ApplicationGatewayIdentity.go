@@ -5,9 +5,9 @@ package applicationgateway
 
 
 type ApplicationGatewayIdentity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/application_gateway#identity_ids ApplicationGateway#identity_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/application_gateway#identity_ids ApplicationGateway#identity_ids}.
 	IdentityIds *[]*string `field:"required" json:"identityIds" yaml:"identityIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/application_gateway#type ApplicationGateway#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/application_gateway#type ApplicationGateway#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

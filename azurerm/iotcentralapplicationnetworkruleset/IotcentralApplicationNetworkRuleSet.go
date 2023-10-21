@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set}.
 type IotcentralApplicationNetworkRuleSet interface {
 	cdktf.TerraformResource
 	ApplyToDevice() interface{}
@@ -416,7 +416,7 @@ func (j *jsiiProxy_IotcentralApplicationNetworkRuleSet) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set} Resource.
 func NewIotcentralApplicationNetworkRuleSet(scope constructs.Construct, id *string, config *IotcentralApplicationNetworkRuleSetConfig) IotcentralApplicationNetworkRuleSet {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewIotcentralApplicationNetworkRuleSet(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set} Resource.
 func NewIotcentralApplicationNetworkRuleSet_Override(i IotcentralApplicationNetworkRuleSet, scope constructs.Construct, id *string, config *IotcentralApplicationNetworkRuleSetConfig) {
 	_init_.Initialize()
 

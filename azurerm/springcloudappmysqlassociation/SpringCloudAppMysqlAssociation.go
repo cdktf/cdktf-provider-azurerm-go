@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/spring_cloud_app_mysql_association azurerm_spring_cloud_app_mysql_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/spring_cloud_app_mysql_association azurerm_spring_cloud_app_mysql_association}.
 type SpringCloudAppMysqlAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_SpringCloudAppMysqlAssociation) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/spring_cloud_app_mysql_association azurerm_spring_cloud_app_mysql_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/spring_cloud_app_mysql_association azurerm_spring_cloud_app_mysql_association} Resource.
 func NewSpringCloudAppMysqlAssociation(scope constructs.Construct, id *string, config *SpringCloudAppMysqlAssociationConfig) SpringCloudAppMysqlAssociation {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewSpringCloudAppMysqlAssociation(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/spring_cloud_app_mysql_association azurerm_spring_cloud_app_mysql_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/spring_cloud_app_mysql_association azurerm_spring_cloud_app_mysql_association} Resource.
 func NewSpringCloudAppMysqlAssociation_Override(s SpringCloudAppMysqlAssociation, scope constructs.Construct, id *string, config *SpringCloudAppMysqlAssociationConfig) {
 	_init_.Initialize()
 

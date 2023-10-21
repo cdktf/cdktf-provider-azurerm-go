@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/lb_probe azurerm_lb_probe}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/lb_probe azurerm_lb_probe}.
 type LbProbe interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -521,7 +521,7 @@ func (j *jsiiProxy_LbProbe) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/lb_probe azurerm_lb_probe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/lb_probe azurerm_lb_probe} Resource.
 func NewLbProbe(scope constructs.Construct, id *string, config *LbProbeConfig) LbProbe {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewLbProbe(scope constructs.Construct, id *string, config *LbProbeConfig) L
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/lb_probe azurerm_lb_probe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/lb_probe azurerm_lb_probe} Resource.
 func NewLbProbe_Override(l LbProbe, scope constructs.Construct, id *string, config *LbProbeConfig) {
 	_init_.Initialize()
 

@@ -5,11 +5,11 @@ package batchaccount
 
 
 type BatchAccountNetworkProfileNodeManagementAccess struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/batch_account#default_action BatchAccount#default_action}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/batch_account#default_action BatchAccount#default_action}.
 	DefaultAction *string `field:"optional" json:"defaultAction" yaml:"defaultAction"`
 	// ip_rule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.76.0/docs/resources/batch_account#ip_rule BatchAccount#ip_rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/batch_account#ip_rule BatchAccount#ip_rule}
 	IpRule interface{} `field:"optional" json:"ipRule" yaml:"ipRule"`
 }
 

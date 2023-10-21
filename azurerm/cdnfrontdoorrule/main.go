@@ -1717,6 +1717,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "negateConditionInput", GoGetter: "NegateConditionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operator", GoGetter: "Operator"},
 			_jsii_.MemberProperty{JsiiProperty: "operatorInput", GoGetter: "OperatorInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMatchValues", GoMethod: "ResetMatchValues"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNegateCondition", GoMethod: "ResetNegateCondition"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTransforms", GoMethod: "ResetTransforms"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
