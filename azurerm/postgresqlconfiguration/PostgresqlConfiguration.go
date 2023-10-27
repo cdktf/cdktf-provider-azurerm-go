@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/postgresql_configuration azurerm_postgresql_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/postgresql_configuration azurerm_postgresql_configuration}.
 type PostgresqlConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_PostgresqlConfiguration) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/postgresql_configuration azurerm_postgresql_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/postgresql_configuration azurerm_postgresql_configuration} Resource.
 func NewPostgresqlConfiguration(scope constructs.Construct, id *string, config *PostgresqlConfigurationConfig) PostgresqlConfiguration {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewPostgresqlConfiguration(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/postgresql_configuration azurerm_postgresql_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/postgresql_configuration azurerm_postgresql_configuration} Resource.
 func NewPostgresqlConfiguration_Override(p PostgresqlConfiguration, scope constructs.Construct, id *string, config *PostgresqlConfigurationConfig) {
 	_init_.Initialize()
 

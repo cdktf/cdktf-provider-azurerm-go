@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/managed_disk_sas_token azurerm_managed_disk_sas_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/managed_disk_sas_token azurerm_managed_disk_sas_token}.
 type ManagedDiskSasToken interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -401,7 +401,7 @@ func (j *jsiiProxy_ManagedDiskSasToken) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/managed_disk_sas_token azurerm_managed_disk_sas_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/managed_disk_sas_token azurerm_managed_disk_sas_token} Resource.
 func NewManagedDiskSasToken(scope constructs.Construct, id *string, config *ManagedDiskSasTokenConfig) ManagedDiskSasToken {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewManagedDiskSasToken(scope constructs.Construct, id *string, config *Mana
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/managed_disk_sas_token azurerm_managed_disk_sas_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/managed_disk_sas_token azurerm_managed_disk_sas_token} Resource.
 func NewManagedDiskSasToken_Override(m ManagedDiskSasToken, scope constructs.Construct, id *string, config *ManagedDiskSasTokenConfig) {
 	_init_.Initialize()
 

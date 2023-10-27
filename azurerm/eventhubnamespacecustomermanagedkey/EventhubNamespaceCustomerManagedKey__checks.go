@@ -430,6 +430,14 @@ func (j *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateSetUserAssignedIdentityIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewEventhubNamespaceCustomerManagedKeyParameters(scope constructs.Construct, id *string, config *EventhubNamespaceCustomerManagedKeyConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

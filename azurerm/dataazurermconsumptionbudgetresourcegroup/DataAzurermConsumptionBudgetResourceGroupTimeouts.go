@@ -5,7 +5,7 @@ package dataazurermconsumptionbudgetresourcegroup
 
 
 type DataAzurermConsumptionBudgetResourceGroupTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/data-sources/consumption_budget_resource_group#read DataAzurermConsumptionBudgetResourceGroup#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/data-sources/consumption_budget_resource_group#read DataAzurermConsumptionBudgetResourceGroup#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

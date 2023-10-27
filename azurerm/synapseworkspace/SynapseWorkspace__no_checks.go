@@ -111,6 +111,10 @@ func validateSynapseWorkspace_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_SynapseWorkspace) validateSetAzureadAuthenticationOnlyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SynapseWorkspace) validateSetComputeSubnetIdParameters(val *string) error {
 	return nil
 }

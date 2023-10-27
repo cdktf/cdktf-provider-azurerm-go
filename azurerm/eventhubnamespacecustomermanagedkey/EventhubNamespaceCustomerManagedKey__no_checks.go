@@ -119,6 +119,10 @@ func (j *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateSetUserAssignedIdentityIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewEventhubNamespaceCustomerManagedKeyParameters(scope constructs.Construct, id *string, config *EventhubNamespaceCustomerManagedKeyConfig) error {
 	return nil
 }

@@ -47,6 +47,9 @@ type ExpressRoutePortLink1OutputReference interface {
 	MacsecCknKeyvaultSecretId() *string
 	SetMacsecCknKeyvaultSecretId(val *string)
 	MacsecCknKeyvaultSecretIdInput() *string
+	MacsecSciEnabled() interface{}
+	SetMacsecSciEnabled(val interface{})
+	MacsecSciEnabledInput() interface{}
 	PatchPanelId() *string
 	RackId() *string
 	RouterName() *string
@@ -86,6 +89,7 @@ type ExpressRoutePortLink1OutputReference interface {
 	ResetMacsecCakKeyvaultSecretId()
 	ResetMacsecCipher()
 	ResetMacsecCknKeyvaultSecretId()
+	ResetMacsecSciEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -261,6 +265,26 @@ func (j *jsiiProxy_ExpressRoutePortLink1OutputReference) MacsecCknKeyvaultSecret
 	return returns
 }
 
+func (j *jsiiProxy_ExpressRoutePortLink1OutputReference) MacsecSciEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"macsecSciEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExpressRoutePortLink1OutputReference) MacsecSciEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"macsecSciEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ExpressRoutePortLink1OutputReference) PatchPanelId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -412,6 +436,17 @@ func (j *jsiiProxy_ExpressRoutePortLink1OutputReference)SetMacsecCknKeyvaultSecr
 	_jsii_.Set(
 		j,
 		"macsecCknKeyvaultSecretId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ExpressRoutePortLink1OutputReference)SetMacsecSciEnabled(val interface{}) {
+	if err := j.validateSetMacsecSciEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"macsecSciEnabled",
 		val,
 	)
 }
@@ -652,6 +687,14 @@ func (e *jsiiProxy_ExpressRoutePortLink1OutputReference) ResetMacsecCknKeyvaultS
 	_jsii_.InvokeVoid(
 		e,
 		"resetMacsecCknKeyvaultSecretId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExpressRoutePortLink1OutputReference) ResetMacsecSciEnabled() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMacsecSciEnabled",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/iot_time_series_insights_standard_environment azurerm_iot_time_series_insights_standard_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/iot_time_series_insights_standard_environment azurerm_iot_time_series_insights_standard_environment}.
 type IotTimeSeriesInsightsStandardEnvironment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -508,7 +508,7 @@ func (j *jsiiProxy_IotTimeSeriesInsightsStandardEnvironment) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/iot_time_series_insights_standard_environment azurerm_iot_time_series_insights_standard_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/iot_time_series_insights_standard_environment azurerm_iot_time_series_insights_standard_environment} Resource.
 func NewIotTimeSeriesInsightsStandardEnvironment(scope constructs.Construct, id *string, config *IotTimeSeriesInsightsStandardEnvironmentConfig) IotTimeSeriesInsightsStandardEnvironment {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewIotTimeSeriesInsightsStandardEnvironment(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/iot_time_series_insights_standard_environment azurerm_iot_time_series_insights_standard_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/iot_time_series_insights_standard_environment azurerm_iot_time_series_insights_standard_environment} Resource.
 func NewIotTimeSeriesInsightsStandardEnvironment_Override(i IotTimeSeriesInsightsStandardEnvironment, scope constructs.Construct, id *string, config *IotTimeSeriesInsightsStandardEnvironmentConfig) {
 	_init_.Initialize()
 

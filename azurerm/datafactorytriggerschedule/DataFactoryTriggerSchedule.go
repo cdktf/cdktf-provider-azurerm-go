@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule}.
 type DataFactoryTriggerSchedule interface {
 	cdktf.TerraformResource
 	Activated() interface{}
@@ -655,7 +655,7 @@ func (j *jsiiProxy_DataFactoryTriggerSchedule) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule} Resource.
 func NewDataFactoryTriggerSchedule(scope constructs.Construct, id *string, config *DataFactoryTriggerScheduleConfig) DataFactoryTriggerSchedule {
 	_init_.Initialize()
 
@@ -673,7 +673,7 @@ func NewDataFactoryTriggerSchedule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule} Resource.
 func NewDataFactoryTriggerSchedule_Override(d DataFactoryTriggerSchedule, scope constructs.Construct, id *string, config *DataFactoryTriggerScheduleConfig) {
 	_init_.Initialize()
 

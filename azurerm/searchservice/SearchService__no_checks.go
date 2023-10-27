@@ -155,6 +155,10 @@ func (j *jsiiProxy_SearchService) validateSetResourceGroupNameParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_SearchService) validateSetSemanticSearchSkuParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SearchService) validateSetSkuParameters(val *string) error {
 	return nil
 }

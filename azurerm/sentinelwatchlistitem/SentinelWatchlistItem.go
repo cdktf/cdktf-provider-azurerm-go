@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/sentinel_watchlist_item azurerm_sentinel_watchlist_item}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/sentinel_watchlist_item azurerm_sentinel_watchlist_item}.
 type SentinelWatchlistItem interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_SentinelWatchlistItem) WatchlistIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/sentinel_watchlist_item azurerm_sentinel_watchlist_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/sentinel_watchlist_item azurerm_sentinel_watchlist_item} Resource.
 func NewSentinelWatchlistItem(scope constructs.Construct, id *string, config *SentinelWatchlistItemConfig) SentinelWatchlistItem {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewSentinelWatchlistItem(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/sentinel_watchlist_item azurerm_sentinel_watchlist_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/sentinel_watchlist_item azurerm_sentinel_watchlist_item} Resource.
 func NewSentinelWatchlistItem_Override(s SentinelWatchlistItem, scope constructs.Construct, id *string, config *SentinelWatchlistItemConfig) {
 	_init_.Initialize()
 

@@ -79,6 +79,10 @@ func (j *jsiiProxy_ExpressRoutePortLink1OutputReference) validateSetMacsecCknKey
 	return nil
 }
 
+func (j *jsiiProxy_ExpressRoutePortLink1OutputReference) validateSetMacsecSciEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRoutePortLink1OutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

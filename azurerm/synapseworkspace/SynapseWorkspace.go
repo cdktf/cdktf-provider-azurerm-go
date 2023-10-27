@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/synapse_workspace azurerm_synapse_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/synapse_workspace azurerm_synapse_workspace}.
 type SynapseWorkspace interface {
 	cdktf.TerraformResource
 	AadAdmin() SynapseWorkspaceAadAdminList
 	AadAdminInput() interface{}
+	AzureadAuthenticationOnly() interface{}
+	SetAzureadAuthenticationOnly(val interface{})
+	AzureadAuthenticationOnlyInput() interface{}
 	AzureDevopsRepo() SynapseWorkspaceAzureDevopsRepoOutputReference
 	AzureDevopsRepoInput() *SynapseWorkspaceAzureDevopsRepo
 	// Experimental.
@@ -165,6 +168,7 @@ type SynapseWorkspace interface {
 	PutSqlAadAdmin(value interface{})
 	PutTimeouts(value *SynapseWorkspaceTimeouts)
 	ResetAadAdmin()
+	ResetAzureadAuthenticationOnly()
 	ResetAzureDevopsRepo()
 	ResetComputeSubnetId()
 	ResetCustomerManagedKey()
@@ -216,6 +220,26 @@ func (j *jsiiProxy_SynapseWorkspace) AadAdminInput() interface{} {
 	_jsii_.Get(
 		j,
 		"aadAdminInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SynapseWorkspace) AzureadAuthenticationOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"azureadAuthenticationOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SynapseWorkspace) AzureadAuthenticationOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"azureadAuthenticationOnlyInput",
 		&returns,
 	)
 	return returns
@@ -832,7 +856,7 @@ func (j *jsiiProxy_SynapseWorkspace) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/synapse_workspace azurerm_synapse_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/synapse_workspace azurerm_synapse_workspace} Resource.
 func NewSynapseWorkspace(scope constructs.Construct, id *string, config *SynapseWorkspaceConfig) SynapseWorkspace {
 	_init_.Initialize()
 
@@ -850,7 +874,7 @@ func NewSynapseWorkspace(scope constructs.Construct, id *string, config *Synapse
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/synapse_workspace azurerm_synapse_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/synapse_workspace azurerm_synapse_workspace} Resource.
 func NewSynapseWorkspace_Override(s SynapseWorkspace, scope constructs.Construct, id *string, config *SynapseWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -858,6 +882,17 @@ func NewSynapseWorkspace_Override(s SynapseWorkspace, scope constructs.Construct
 		"@cdktf/provider-azurerm.synapseWorkspace.SynapseWorkspace",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SynapseWorkspace)SetAzureadAuthenticationOnly(val interface{}) {
+	if err := j.validateSetAzureadAuthenticationOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"azureadAuthenticationOnly",
+		val,
 	)
 }
 
@@ -1504,6 +1539,14 @@ func (s *jsiiProxy_SynapseWorkspace) ResetAadAdmin() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAadAdmin",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SynapseWorkspace) ResetAzureadAuthenticationOnly() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAzureadAuthenticationOnly",
 		nil, // no parameters
 	)
 }

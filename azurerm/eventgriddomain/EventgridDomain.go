@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/eventgrid_domain azurerm_eventgrid_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/eventgrid_domain azurerm_eventgrid_domain}.
 type EventgridDomain interface {
 	cdktf.TerraformResource
 	AutoCreateTopicWithFirstSubscription() interface{}
@@ -663,7 +663,7 @@ func (j *jsiiProxy_EventgridDomain) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/eventgrid_domain azurerm_eventgrid_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/eventgrid_domain azurerm_eventgrid_domain} Resource.
 func NewEventgridDomain(scope constructs.Construct, id *string, config *EventgridDomainConfig) EventgridDomain {
 	_init_.Initialize()
 
@@ -681,7 +681,7 @@ func NewEventgridDomain(scope constructs.Construct, id *string, config *Eventgri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/eventgrid_domain azurerm_eventgrid_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/eventgrid_domain azurerm_eventgrid_domain} Resource.
 func NewEventgridDomain_Override(e EventgridDomain, scope constructs.Construct, id *string, config *EventgridDomainConfig) {
 	_init_.Initialize()
 

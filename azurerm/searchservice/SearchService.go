@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/search_service azurerm_search_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/search_service azurerm_search_service}.
 type SearchService interface {
 	cdktf.TerraformResource
 	AllowedIps() *[]*string
@@ -96,6 +96,9 @@ type SearchService interface {
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
 	SecondaryKey() *string
+	SemanticSearchSku() *string
+	SetSemanticSearchSku(val *string)
+	SemanticSearchSkuInput() *string
 	Sku() *string
 	SetSku(val *string)
 	SkuInput() *string
@@ -158,6 +161,7 @@ type SearchService interface {
 	ResetPartitionCount()
 	ResetPublicNetworkAccessEnabled()
 	ResetReplicaCount()
+	ResetSemanticSearchSku()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -595,6 +599,26 @@ func (j *jsiiProxy_SearchService) SecondaryKey() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SearchService) SemanticSearchSku() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"semanticSearchSku",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchService) SemanticSearchSkuInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"semanticSearchSkuInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SearchService) Sku() *string {
 	var returns *string
 	_jsii_.Get(
@@ -686,7 +710,7 @@ func (j *jsiiProxy_SearchService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/search_service azurerm_search_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/search_service azurerm_search_service} Resource.
 func NewSearchService(scope constructs.Construct, id *string, config *SearchServiceConfig) SearchService {
 	_init_.Initialize()
 
@@ -704,7 +728,7 @@ func NewSearchService(scope constructs.Construct, id *string, config *SearchServ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/search_service azurerm_search_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/search_service azurerm_search_service} Resource.
 func NewSearchService_Override(s SearchService, scope constructs.Construct, id *string, config *SearchServiceConfig) {
 	_init_.Initialize()
 
@@ -911,6 +935,17 @@ func (j *jsiiProxy_SearchService)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SearchService)SetSemanticSearchSku(val *string) {
+	if err := j.validateSetSemanticSearchSkuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"semanticSearchSku",
 		val,
 	)
 }
@@ -1361,6 +1396,14 @@ func (s *jsiiProxy_SearchService) ResetReplicaCount() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetReplicaCount",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SearchService) ResetSemanticSearchSku() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSemanticSearchSku",
 		nil, // no parameters
 	)
 }

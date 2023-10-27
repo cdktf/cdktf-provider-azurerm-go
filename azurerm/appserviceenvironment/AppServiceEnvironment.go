@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/app_service_environment azurerm_app_service_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/app_service_environment azurerm_app_service_environment}.
 type AppServiceEnvironment interface {
 	cdktf.TerraformResource
 	AllowedUserIpCidrs() *[]*string
@@ -578,7 +578,7 @@ func (j *jsiiProxy_AppServiceEnvironment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/app_service_environment azurerm_app_service_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/app_service_environment azurerm_app_service_environment} Resource.
 func NewAppServiceEnvironment(scope constructs.Construct, id *string, config *AppServiceEnvironmentConfig) AppServiceEnvironment {
 	_init_.Initialize()
 
@@ -596,7 +596,7 @@ func NewAppServiceEnvironment(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/app_service_environment azurerm_app_service_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/app_service_environment azurerm_app_service_environment} Resource.
 func NewAppServiceEnvironment_Override(a AppServiceEnvironment, scope constructs.Construct, id *string, config *AppServiceEnvironmentConfig) {
 	_init_.Initialize()
 

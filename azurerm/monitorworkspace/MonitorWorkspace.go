@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/monitor_workspace azurerm_monitor_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/monitor_workspace azurerm_monitor_workspace}.
 type MonitorWorkspace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,7 @@ type MonitorWorkspace interface {
 	PublicNetworkAccessEnabled() interface{}
 	SetPublicNetworkAccessEnabled(val interface{})
 	PublicNetworkAccessEnabledInput() interface{}
+	QueryEndpoint() *string
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -337,6 +338,16 @@ func (j *jsiiProxy_MonitorWorkspace) PublicNetworkAccessEnabledInput() interface
 	return returns
 }
 
+func (j *jsiiProxy_MonitorWorkspace) QueryEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"queryEndpoint",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitorWorkspace) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -438,7 +449,7 @@ func (j *jsiiProxy_MonitorWorkspace) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/monitor_workspace azurerm_monitor_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/monitor_workspace azurerm_monitor_workspace} Resource.
 func NewMonitorWorkspace(scope constructs.Construct, id *string, config *MonitorWorkspaceConfig) MonitorWorkspace {
 	_init_.Initialize()
 
@@ -456,7 +467,7 @@ func NewMonitorWorkspace(scope constructs.Construct, id *string, config *Monitor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/resources/monitor_workspace azurerm_monitor_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/monitor_workspace azurerm_monitor_workspace} Resource.
 func NewMonitorWorkspace_Override(m MonitorWorkspace, scope constructs.Construct, id *string, config *MonitorWorkspaceConfig) {
 	_init_.Initialize()
 

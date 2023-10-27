@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/data-sources/monitor_scheduled_query_rules_alert azurerm_monitor_scheduled_query_rules_alert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/data-sources/monitor_scheduled_query_rules_alert azurerm_monitor_scheduled_query_rules_alert}.
 type DataAzurermMonitorScheduledQueryRulesAlert interface {
 	cdktf.TerraformDataSource
 	Action() DataAzurermMonitorScheduledQueryRulesAlertActionList
@@ -485,7 +485,7 @@ func (j *jsiiProxy_DataAzurermMonitorScheduledQueryRulesAlert) Trigger() DataAzu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/data-sources/monitor_scheduled_query_rules_alert azurerm_monitor_scheduled_query_rules_alert} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/data-sources/monitor_scheduled_query_rules_alert azurerm_monitor_scheduled_query_rules_alert} Data Source.
 func NewDataAzurermMonitorScheduledQueryRulesAlert(scope constructs.Construct, id *string, config *DataAzurermMonitorScheduledQueryRulesAlertConfig) DataAzurermMonitorScheduledQueryRulesAlert {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewDataAzurermMonitorScheduledQueryRulesAlert(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.77.0/docs/data-sources/monitor_scheduled_query_rules_alert azurerm_monitor_scheduled_query_rules_alert} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/data-sources/monitor_scheduled_query_rules_alert azurerm_monitor_scheduled_query_rules_alert} Data Source.
 func NewDataAzurermMonitorScheduledQueryRulesAlert_Override(d DataAzurermMonitorScheduledQueryRulesAlert, scope constructs.Construct, id *string, config *DataAzurermMonitorScheduledQueryRulesAlertConfig) {
 	_init_.Initialize()
 
