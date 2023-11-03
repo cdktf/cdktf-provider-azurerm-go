@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/machine_learning_synapse_spark azurerm_machine_learning_synapse_spark}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/machine_learning_synapse_spark azurerm_machine_learning_synapse_spark}.
 type MachineLearningSynapseSpark interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -509,7 +509,7 @@ func (j *jsiiProxy_MachineLearningSynapseSpark) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/machine_learning_synapse_spark azurerm_machine_learning_synapse_spark} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/machine_learning_synapse_spark azurerm_machine_learning_synapse_spark} Resource.
 func NewMachineLearningSynapseSpark(scope constructs.Construct, id *string, config *MachineLearningSynapseSparkConfig) MachineLearningSynapseSpark {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewMachineLearningSynapseSpark(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/machine_learning_synapse_spark azurerm_machine_learning_synapse_spark} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/machine_learning_synapse_spark azurerm_machine_learning_synapse_spark} Resource.
 func NewMachineLearningSynapseSpark_Override(m MachineLearningSynapseSpark, scope constructs.Construct, id *string, config *MachineLearningSynapseSparkConfig) {
 	_init_.Initialize()
 

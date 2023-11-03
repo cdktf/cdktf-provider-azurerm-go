@@ -87,6 +87,10 @@ func (j *jsiiProxy_StorageManagementPolicyRuleActionsSnapshotOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsSnapshotOutputReference) validateSetTierToColdAfterDaysSinceCreationGreaterThanParameters(val *float64) error {
+	return nil
+}
+
 func validateNewStorageManagementPolicyRuleActionsSnapshotOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

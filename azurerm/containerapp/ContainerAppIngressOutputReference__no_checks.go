@@ -71,6 +71,10 @@ func (j *jsiiProxy_ContainerAppIngressOutputReference) validateSetComplexObjectI
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppIngressOutputReference) validateSetExposedPortParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppIngressOutputReference) validateSetExternalEnabledParameters(val interface{}) error {
 	return nil
 }

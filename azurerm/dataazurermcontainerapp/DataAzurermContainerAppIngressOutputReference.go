@@ -30,6 +30,7 @@ type DataAzurermContainerAppIngressOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomDomain() DataAzurermContainerAppIngressCustomDomainList
+	ExposedPort() *float64
 	ExternalEnabled() cdktf.IResolvable
 	Fqdn() *string
 	// Experimental.
@@ -131,6 +132,16 @@ func (j *jsiiProxy_DataAzurermContainerAppIngressOutputReference) CustomDomain()
 	_jsii_.Get(
 		j,
 		"customDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermContainerAppIngressOutputReference) ExposedPort() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"exposedPort",
 		&returns,
 	)
 	return returns

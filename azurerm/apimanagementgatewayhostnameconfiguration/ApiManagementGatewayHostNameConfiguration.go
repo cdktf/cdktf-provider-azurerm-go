@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration}.
 type ApiManagementGatewayHostNameConfiguration interface {
 	cdktf.TerraformResource
 	ApiManagementId() *string
@@ -532,7 +532,7 @@ func (j *jsiiProxy_ApiManagementGatewayHostNameConfiguration) Tls11EnabledInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration} Resource.
 func NewApiManagementGatewayHostNameConfiguration(scope constructs.Construct, id *string, config *ApiManagementGatewayHostNameConfigurationConfig) ApiManagementGatewayHostNameConfiguration {
 	_init_.Initialize()
 
@@ -550,7 +550,7 @@ func NewApiManagementGatewayHostNameConfiguration(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration} Resource.
 func NewApiManagementGatewayHostNameConfiguration_Override(a ApiManagementGatewayHostNameConfiguration, scope constructs.Construct, id *string, config *ApiManagementGatewayHostNameConfigurationConfig) {
 	_init_.Initialize()
 

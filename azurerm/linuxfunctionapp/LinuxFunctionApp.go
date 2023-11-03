@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/linux_function_app azurerm_linux_function_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/linux_function_app azurerm_linux_function_app}.
 type LinuxFunctionApp interface {
 	cdktf.TerraformResource
 	AppSettings() *map[string]*string
@@ -1159,7 +1159,7 @@ func (j *jsiiProxy_LinuxFunctionApp) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/linux_function_app azurerm_linux_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/linux_function_app azurerm_linux_function_app} Resource.
 func NewLinuxFunctionApp(scope constructs.Construct, id *string, config *LinuxFunctionAppConfig) LinuxFunctionApp {
 	_init_.Initialize()
 
@@ -1177,7 +1177,7 @@ func NewLinuxFunctionApp(scope constructs.Construct, id *string, config *LinuxFu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/linux_function_app azurerm_linux_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/linux_function_app azurerm_linux_function_app} Resource.
 func NewLinuxFunctionApp_Override(l LinuxFunctionApp, scope constructs.Construct, id *string, config *LinuxFunctionAppConfig) {
 	_init_.Initialize()
 

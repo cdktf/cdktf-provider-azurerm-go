@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/web_application_firewall_policy azurerm_web_application_firewall_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/web_application_firewall_policy azurerm_web_application_firewall_policy}.
 type WebApplicationFirewallPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -507,7 +507,7 @@ func (j *jsiiProxy_WebApplicationFirewallPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/web_application_firewall_policy azurerm_web_application_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/web_application_firewall_policy azurerm_web_application_firewall_policy} Resource.
 func NewWebApplicationFirewallPolicy(scope constructs.Construct, id *string, config *WebApplicationFirewallPolicyConfig) WebApplicationFirewallPolicy {
 	_init_.Initialize()
 
@@ -525,7 +525,7 @@ func NewWebApplicationFirewallPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/web_application_firewall_policy azurerm_web_application_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/web_application_firewall_policy azurerm_web_application_firewall_policy} Resource.
 func NewWebApplicationFirewallPolicy_Override(w WebApplicationFirewallPolicy, scope constructs.Construct, id *string, config *WebApplicationFirewallPolicyConfig) {
 	_init_.Initialize()
 

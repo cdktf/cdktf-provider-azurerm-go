@@ -81,6 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMaintenanceWindow", GoMethod: "PutMaintenanceWindow"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdministratorLoginPassword", GoMethod: "ResetAdministratorLoginPassword"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCitusVersion", GoMethod: "ResetCitusVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCoordinatorPublicIpAccessEnabled", GoMethod: "ResetCoordinatorPublicIpAccessEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCoordinatorServerEdition", GoMethod: "ResetCoordinatorServerEdition"},

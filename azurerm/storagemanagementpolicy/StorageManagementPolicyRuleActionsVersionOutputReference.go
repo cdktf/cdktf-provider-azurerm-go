@@ -52,6 +52,9 @@ type StorageManagementPolicyRuleActionsVersionOutputReference interface {
 	TierToArchiveAfterDaysSinceLastTierChangeGreaterThan() *float64
 	SetTierToArchiveAfterDaysSinceLastTierChangeGreaterThan(val *float64)
 	TierToArchiveAfterDaysSinceLastTierChangeGreaterThanInput() *float64
+	TierToColdAfterDaysSinceCreationGreaterThan() *float64
+	SetTierToColdAfterDaysSinceCreationGreaterThan(val *float64)
+	TierToColdAfterDaysSinceCreationGreaterThanInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -80,6 +83,7 @@ type StorageManagementPolicyRuleActionsVersionOutputReference interface {
 	ResetChangeTierToCoolAfterDaysSinceCreation()
 	ResetDeleteAfterDaysSinceCreation()
 	ResetTierToArchiveAfterDaysSinceLastTierChangeGreaterThan()
+	ResetTierToColdAfterDaysSinceCreationGreaterThan()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -245,6 +249,26 @@ func (j *jsiiProxy_StorageManagementPolicyRuleActionsVersionOutputReference) Tie
 	return returns
 }
 
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsVersionOutputReference) TierToColdAfterDaysSinceCreationGreaterThan() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tierToColdAfterDaysSinceCreationGreaterThan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsVersionOutputReference) TierToColdAfterDaysSinceCreationGreaterThanInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tierToColdAfterDaysSinceCreationGreaterThanInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewStorageManagementPolicyRuleActionsVersionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageManagementPolicyRuleActionsVersionOutputReference {
 	_init_.Initialize()
@@ -368,6 +392,17 @@ func (j *jsiiProxy_StorageManagementPolicyRuleActionsVersionOutputReference)SetT
 	_jsii_.Set(
 		j,
 		"tierToArchiveAfterDaysSinceLastTierChangeGreaterThan",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsVersionOutputReference)SetTierToColdAfterDaysSinceCreationGreaterThan(val *float64) {
+	if err := j.validateSetTierToColdAfterDaysSinceCreationGreaterThanParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tierToColdAfterDaysSinceCreationGreaterThan",
 		val,
 	)
 }
@@ -586,6 +621,14 @@ func (s *jsiiProxy_StorageManagementPolicyRuleActionsVersionOutputReference) Res
 	_jsii_.InvokeVoid(
 		s,
 		"resetTierToArchiveAfterDaysSinceLastTierChangeGreaterThan",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageManagementPolicyRuleActionsVersionOutputReference) ResetTierToColdAfterDaysSinceCreationGreaterThan() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTierToColdAfterDaysSinceCreationGreaterThan",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/data_factory_linked_service_sql_server azurerm_data_factory_linked_service_sql_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/data_factory_linked_service_sql_server azurerm_data_factory_linked_service_sql_server}.
 type DataFactoryLinkedServiceSqlServer interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -583,7 +583,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSqlServer) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/data_factory_linked_service_sql_server azurerm_data_factory_linked_service_sql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/data_factory_linked_service_sql_server azurerm_data_factory_linked_service_sql_server} Resource.
 func NewDataFactoryLinkedServiceSqlServer(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceSqlServerConfig) DataFactoryLinkedServiceSqlServer {
 	_init_.Initialize()
 
@@ -601,7 +601,7 @@ func NewDataFactoryLinkedServiceSqlServer(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/data_factory_linked_service_sql_server azurerm_data_factory_linked_service_sql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/data_factory_linked_service_sql_server azurerm_data_factory_linked_service_sql_server} Resource.
 func NewDataFactoryLinkedServiceSqlServer_Override(d DataFactoryLinkedServiceSqlServer, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceSqlServerConfig) {
 	_init_.Initialize()
 

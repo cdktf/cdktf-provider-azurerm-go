@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/hdinsight_interactive_query_cluster azurerm_hdinsight_interactive_query_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/hdinsight_interactive_query_cluster azurerm_hdinsight_interactive_query_cluster}.
 type HdinsightInteractiveQueryCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -815,7 +815,7 @@ func (j *jsiiProxy_HdinsightInteractiveQueryCluster) TlsMinVersionInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/hdinsight_interactive_query_cluster azurerm_hdinsight_interactive_query_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/hdinsight_interactive_query_cluster azurerm_hdinsight_interactive_query_cluster} Resource.
 func NewHdinsightInteractiveQueryCluster(scope constructs.Construct, id *string, config *HdinsightInteractiveQueryClusterConfig) HdinsightInteractiveQueryCluster {
 	_init_.Initialize()
 
@@ -833,7 +833,7 @@ func NewHdinsightInteractiveQueryCluster(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/hdinsight_interactive_query_cluster azurerm_hdinsight_interactive_query_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/hdinsight_interactive_query_cluster azurerm_hdinsight_interactive_query_cluster} Resource.
 func NewHdinsightInteractiveQueryCluster_Override(h HdinsightInteractiveQueryCluster, scope constructs.Construct, id *string, config *HdinsightInteractiveQueryClusterConfig) {
 	_init_.Initialize()
 

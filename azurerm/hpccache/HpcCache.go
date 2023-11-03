@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/hpc_cache azurerm_hpc_cache}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/hpc_cache azurerm_hpc_cache}.
 type HpcCache interface {
 	cdktf.TerraformResource
 	AutomaticallyRotateKeyToLatestEnabled() interface{}
@@ -734,7 +734,7 @@ func (j *jsiiProxy_HpcCache) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/hpc_cache azurerm_hpc_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/hpc_cache azurerm_hpc_cache} Resource.
 func NewHpcCache(scope constructs.Construct, id *string, config *HpcCacheConfig) HpcCache {
 	_init_.Initialize()
 
@@ -752,7 +752,7 @@ func NewHpcCache(scope constructs.Construct, id *string, config *HpcCacheConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/hpc_cache azurerm_hpc_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/hpc_cache azurerm_hpc_cache} Resource.
 func NewHpcCache_Override(h HpcCache, scope constructs.Construct, id *string, config *HpcCacheConfig) {
 	_init_.Initialize()
 

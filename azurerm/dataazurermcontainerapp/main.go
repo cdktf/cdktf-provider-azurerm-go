@@ -293,6 +293,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "customDomain", GoGetter: "CustomDomain"},
+			_jsii_.MemberProperty{JsiiProperty: "exposedPort", GoGetter: "ExposedPort"},
 			_jsii_.MemberProperty{JsiiProperty: "externalEnabled", GoGetter: "ExternalEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "fqdn", GoGetter: "Fqdn"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

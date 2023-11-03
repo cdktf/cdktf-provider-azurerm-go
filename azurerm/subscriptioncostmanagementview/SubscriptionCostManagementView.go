@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/subscription_cost_management_view azurerm_subscription_cost_management_view}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/subscription_cost_management_view azurerm_subscription_cost_management_view}.
 type SubscriptionCostManagementView interface {
 	cdktf.TerraformResource
 	Accumulated() interface{}
@@ -553,7 +553,7 @@ func (j *jsiiProxy_SubscriptionCostManagementView) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/subscription_cost_management_view azurerm_subscription_cost_management_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/subscription_cost_management_view azurerm_subscription_cost_management_view} Resource.
 func NewSubscriptionCostManagementView(scope constructs.Construct, id *string, config *SubscriptionCostManagementViewConfig) SubscriptionCostManagementView {
 	_init_.Initialize()
 
@@ -571,7 +571,7 @@ func NewSubscriptionCostManagementView(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/subscription_cost_management_view azurerm_subscription_cost_management_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/subscription_cost_management_view azurerm_subscription_cost_management_view} Resource.
 func NewSubscriptionCostManagementView_Override(s SubscriptionCostManagementView, scope constructs.Construct, id *string, config *SubscriptionCostManagementViewConfig) {
 	_init_.Initialize()
 

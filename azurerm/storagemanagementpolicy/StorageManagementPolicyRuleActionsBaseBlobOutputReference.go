@@ -64,6 +64,15 @@ type StorageManagementPolicyRuleActionsBaseBlobOutputReference interface {
 	TierToArchiveAfterDaysSinceModificationGreaterThan() *float64
 	SetTierToArchiveAfterDaysSinceModificationGreaterThan(val *float64)
 	TierToArchiveAfterDaysSinceModificationGreaterThanInput() *float64
+	TierToColdAfterDaysSinceCreationGreaterThan() *float64
+	SetTierToColdAfterDaysSinceCreationGreaterThan(val *float64)
+	TierToColdAfterDaysSinceCreationGreaterThanInput() *float64
+	TierToColdAfterDaysSinceLastAccessTimeGreaterThan() *float64
+	SetTierToColdAfterDaysSinceLastAccessTimeGreaterThan(val *float64)
+	TierToColdAfterDaysSinceLastAccessTimeGreaterThanInput() *float64
+	TierToColdAfterDaysSinceModificationGreaterThan() *float64
+	SetTierToColdAfterDaysSinceModificationGreaterThan(val *float64)
+	TierToColdAfterDaysSinceModificationGreaterThanInput() *float64
 	TierToCoolAfterDaysSinceCreationGreaterThan() *float64
 	SetTierToCoolAfterDaysSinceCreationGreaterThan(val *float64)
 	TierToCoolAfterDaysSinceCreationGreaterThanInput() *float64
@@ -105,6 +114,9 @@ type StorageManagementPolicyRuleActionsBaseBlobOutputReference interface {
 	ResetTierToArchiveAfterDaysSinceLastAccessTimeGreaterThan()
 	ResetTierToArchiveAfterDaysSinceLastTierChangeGreaterThan()
 	ResetTierToArchiveAfterDaysSinceModificationGreaterThan()
+	ResetTierToColdAfterDaysSinceCreationGreaterThan()
+	ResetTierToColdAfterDaysSinceLastAccessTimeGreaterThan()
+	ResetTierToColdAfterDaysSinceModificationGreaterThan()
 	ResetTierToCoolAfterDaysSinceCreationGreaterThan()
 	ResetTierToCoolAfterDaysSinceLastAccessTimeGreaterThan()
 	ResetTierToCoolAfterDaysSinceModificationGreaterThan()
@@ -353,6 +365,66 @@ func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) Ti
 	return returns
 }
 
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) TierToColdAfterDaysSinceCreationGreaterThan() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tierToColdAfterDaysSinceCreationGreaterThan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) TierToColdAfterDaysSinceCreationGreaterThanInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tierToColdAfterDaysSinceCreationGreaterThanInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) TierToColdAfterDaysSinceLastAccessTimeGreaterThan() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tierToColdAfterDaysSinceLastAccessTimeGreaterThan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) TierToColdAfterDaysSinceLastAccessTimeGreaterThanInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tierToColdAfterDaysSinceLastAccessTimeGreaterThanInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) TierToColdAfterDaysSinceModificationGreaterThan() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tierToColdAfterDaysSinceModificationGreaterThan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) TierToColdAfterDaysSinceModificationGreaterThanInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tierToColdAfterDaysSinceModificationGreaterThanInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) TierToCoolAfterDaysSinceCreationGreaterThan() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -580,6 +652,39 @@ func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference)Set
 	_jsii_.Set(
 		j,
 		"tierToArchiveAfterDaysSinceModificationGreaterThan",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference)SetTierToColdAfterDaysSinceCreationGreaterThan(val *float64) {
+	if err := j.validateSetTierToColdAfterDaysSinceCreationGreaterThanParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tierToColdAfterDaysSinceCreationGreaterThan",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference)SetTierToColdAfterDaysSinceLastAccessTimeGreaterThan(val *float64) {
+	if err := j.validateSetTierToColdAfterDaysSinceLastAccessTimeGreaterThanParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tierToColdAfterDaysSinceLastAccessTimeGreaterThan",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference)SetTierToColdAfterDaysSinceModificationGreaterThan(val *float64) {
+	if err := j.validateSetTierToColdAfterDaysSinceModificationGreaterThanParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tierToColdAfterDaysSinceModificationGreaterThan",
 		val,
 	)
 }
@@ -863,6 +968,30 @@ func (s *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) Re
 	_jsii_.InvokeVoid(
 		s,
 		"resetTierToArchiveAfterDaysSinceModificationGreaterThan",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) ResetTierToColdAfterDaysSinceCreationGreaterThan() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTierToColdAfterDaysSinceCreationGreaterThan",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) ResetTierToColdAfterDaysSinceLastAccessTimeGreaterThan() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTierToColdAfterDaysSinceLastAccessTimeGreaterThan",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) ResetTierToColdAfterDaysSinceModificationGreaterThan() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTierToColdAfterDaysSinceModificationGreaterThan",
 		nil, // no parameters
 	)
 }

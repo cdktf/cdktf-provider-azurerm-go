@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/web_app_active_slot azurerm_web_app_active_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/web_app_active_slot azurerm_web_app_active_slot}.
 type WebAppActiveSlot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_WebAppActiveSlot) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/web_app_active_slot azurerm_web_app_active_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/web_app_active_slot azurerm_web_app_active_slot} Resource.
 func NewWebAppActiveSlot(scope constructs.Construct, id *string, config *WebAppActiveSlotConfig) WebAppActiveSlot {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewWebAppActiveSlot(scope constructs.Construct, id *string, config *WebAppA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/web_app_active_slot azurerm_web_app_active_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/web_app_active_slot azurerm_web_app_active_slot} Resource.
 func NewWebAppActiveSlot_Override(w WebAppActiveSlot, scope constructs.Construct, id *string, config *WebAppActiveSlotConfig) {
 	_init_.Initialize()
 

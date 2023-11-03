@@ -33,6 +33,9 @@ type ContainerAppIngressOutputReference interface {
 	CreationStack() *[]*string
 	CustomDomain() ContainerAppIngressCustomDomainOutputReference
 	CustomDomainInput() *ContainerAppIngressCustomDomain
+	ExposedPort() *float64
+	SetExposedPort(val *float64)
+	ExposedPortInput() *float64
 	ExternalEnabled() interface{}
 	SetExternalEnabled(val interface{})
 	ExternalEnabledInput() interface{}
@@ -85,6 +88,7 @@ type ContainerAppIngressOutputReference interface {
 	PutTrafficWeight(value interface{})
 	ResetAllowInsecureConnections()
 	ResetCustomDomain()
+	ResetExposedPort()
 	ResetExternalEnabled()
 	ResetTransport()
 	// Produce the Token's value at resolution time.
@@ -167,6 +171,26 @@ func (j *jsiiProxy_ContainerAppIngressOutputReference) CustomDomainInput() *Cont
 	_jsii_.Get(
 		j,
 		"customDomainInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppIngressOutputReference) ExposedPort() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"exposedPort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppIngressOutputReference) ExposedPortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"exposedPortInput",
 		&returns,
 	)
 	return returns
@@ -359,6 +383,17 @@ func (j *jsiiProxy_ContainerAppIngressOutputReference)SetComplexObjectIsFromSet(
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAppIngressOutputReference)SetExposedPort(val *float64) {
+	if err := j.validateSetExposedPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exposedPort",
 		val,
 	)
 }
@@ -649,6 +684,14 @@ func (c *jsiiProxy_ContainerAppIngressOutputReference) ResetCustomDomain() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetCustomDomain",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppIngressOutputReference) ResetExposedPort() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExposedPort",
 		nil, // no parameters
 	)
 }

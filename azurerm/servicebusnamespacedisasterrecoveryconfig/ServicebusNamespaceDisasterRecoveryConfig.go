@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/servicebus_namespace_disaster_recovery_config azurerm_servicebus_namespace_disaster_recovery_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/servicebus_namespace_disaster_recovery_config azurerm_servicebus_namespace_disaster_recovery_config}.
 type ServicebusNamespaceDisasterRecoveryConfig interface {
 	cdktf.TerraformResource
 	AliasAuthorizationRuleId() *string
@@ -458,7 +458,7 @@ func (j *jsiiProxy_ServicebusNamespaceDisasterRecoveryConfig) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/servicebus_namespace_disaster_recovery_config azurerm_servicebus_namespace_disaster_recovery_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/servicebus_namespace_disaster_recovery_config azurerm_servicebus_namespace_disaster_recovery_config} Resource.
 func NewServicebusNamespaceDisasterRecoveryConfig(scope constructs.Construct, id *string, config *ServicebusNamespaceDisasterRecoveryConfigConfig) ServicebusNamespaceDisasterRecoveryConfig {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewServicebusNamespaceDisasterRecoveryConfig(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/servicebus_namespace_disaster_recovery_config azurerm_servicebus_namespace_disaster_recovery_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/servicebus_namespace_disaster_recovery_config azurerm_servicebus_namespace_disaster_recovery_config} Resource.
 func NewServicebusNamespaceDisasterRecoveryConfig_Override(s ServicebusNamespaceDisasterRecoveryConfig, scope constructs.Construct, id *string, config *ServicebusNamespaceDisasterRecoveryConfigConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert}.
 type CostAnomalyAlert interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_CostAnomalyAlert) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert} Resource.
 func NewCostAnomalyAlert(scope constructs.Construct, id *string, config *CostAnomalyAlertConfig) CostAnomalyAlert {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewCostAnomalyAlert(scope constructs.Construct, id *string, config *CostAno
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert} Resource.
 func NewCostAnomalyAlert_Override(c CostAnomalyAlert, scope constructs.Construct, id *string, config *CostAnomalyAlertConfig) {
 	_init_.Initialize()
 

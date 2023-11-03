@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule}.
 type ApplicationInsightsSmartDetectionRule interface {
 	cdktf.TerraformResource
 	AdditionalEmailRecipients() *[]*string
@@ -439,7 +439,7 @@ func (j *jsiiProxy_ApplicationInsightsSmartDetectionRule) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule} Resource.
 func NewApplicationInsightsSmartDetectionRule(scope constructs.Construct, id *string, config *ApplicationInsightsSmartDetectionRuleConfig) ApplicationInsightsSmartDetectionRule {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewApplicationInsightsSmartDetectionRule(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule} Resource.
 func NewApplicationInsightsSmartDetectionRule_Override(a ApplicationInsightsSmartDetectionRule, scope constructs.Construct, id *string, config *ApplicationInsightsSmartDetectionRuleConfig) {
 	_init_.Initialize()
 

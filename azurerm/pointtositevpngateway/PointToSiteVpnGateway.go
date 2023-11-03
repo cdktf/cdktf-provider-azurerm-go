@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/point_to_site_vpn_gateway azurerm_point_to_site_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/point_to_site_vpn_gateway azurerm_point_to_site_vpn_gateway}.
 type PointToSiteVpnGateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -554,7 +554,7 @@ func (j *jsiiProxy_PointToSiteVpnGateway) VpnServerConfigurationIdInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/point_to_site_vpn_gateway azurerm_point_to_site_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/point_to_site_vpn_gateway azurerm_point_to_site_vpn_gateway} Resource.
 func NewPointToSiteVpnGateway(scope constructs.Construct, id *string, config *PointToSiteVpnGatewayConfig) PointToSiteVpnGateway {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewPointToSiteVpnGateway(scope constructs.Construct, id *string, config *Po
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/point_to_site_vpn_gateway azurerm_point_to_site_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/point_to_site_vpn_gateway azurerm_point_to_site_vpn_gateway} Resource.
 func NewPointToSiteVpnGateway_Override(p PointToSiteVpnGateway, scope constructs.Construct, id *string, config *PointToSiteVpnGatewayConfig) {
 	_init_.Initialize()
 

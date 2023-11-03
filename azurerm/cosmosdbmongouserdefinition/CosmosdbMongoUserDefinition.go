@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/cosmosdb_mongo_user_definition azurerm_cosmosdb_mongo_user_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/cosmosdb_mongo_user_definition azurerm_cosmosdb_mongo_user_definition}.
 type CosmosdbMongoUserDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_CosmosdbMongoUserDefinition) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/cosmosdb_mongo_user_definition azurerm_cosmosdb_mongo_user_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/cosmosdb_mongo_user_definition azurerm_cosmosdb_mongo_user_definition} Resource.
 func NewCosmosdbMongoUserDefinition(scope constructs.Construct, id *string, config *CosmosdbMongoUserDefinitionConfig) CosmosdbMongoUserDefinition {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewCosmosdbMongoUserDefinition(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/cosmosdb_mongo_user_definition azurerm_cosmosdb_mongo_user_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/cosmosdb_mongo_user_definition azurerm_cosmosdb_mongo_user_definition} Resource.
 func NewCosmosdbMongoUserDefinition_Override(c CosmosdbMongoUserDefinition, scope constructs.Construct, id *string, config *CosmosdbMongoUserDefinitionConfig) {
 	_init_.Initialize()
 

@@ -266,6 +266,30 @@ func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) validateSetTierToColdAfterDaysSinceCreationGreaterThanParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) validateSetTierToColdAfterDaysSinceLastAccessTimeGreaterThanParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) validateSetTierToColdAfterDaysSinceModificationGreaterThanParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_StorageManagementPolicyRuleActionsBaseBlobOutputReference) validateSetTierToCoolAfterDaysSinceCreationGreaterThanParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

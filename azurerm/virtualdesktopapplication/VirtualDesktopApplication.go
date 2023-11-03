@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/virtual_desktop_application azurerm_virtual_desktop_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/virtual_desktop_application azurerm_virtual_desktop_application}.
 type VirtualDesktopApplication interface {
 	cdktf.TerraformResource
 	ApplicationGroupId() *string
@@ -557,7 +557,7 @@ func (j *jsiiProxy_VirtualDesktopApplication) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/virtual_desktop_application azurerm_virtual_desktop_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/virtual_desktop_application azurerm_virtual_desktop_application} Resource.
 func NewVirtualDesktopApplication(scope constructs.Construct, id *string, config *VirtualDesktopApplicationConfig) VirtualDesktopApplication {
 	_init_.Initialize()
 
@@ -575,7 +575,7 @@ func NewVirtualDesktopApplication(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/virtual_desktop_application azurerm_virtual_desktop_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/virtual_desktop_application azurerm_virtual_desktop_application} Resource.
 func NewVirtualDesktopApplication_Override(v VirtualDesktopApplication, scope constructs.Construct, id *string, config *VirtualDesktopApplicationConfig) {
 	_init_.Initialize()
 

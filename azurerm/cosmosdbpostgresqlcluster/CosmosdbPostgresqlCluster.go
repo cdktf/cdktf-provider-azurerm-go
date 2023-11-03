@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/cosmosdb_postgresql_cluster azurerm_cosmosdb_postgresql_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/cosmosdb_postgresql_cluster azurerm_cosmosdb_postgresql_cluster}.
 type CosmosdbPostgresqlCluster interface {
 	cdktf.TerraformResource
 	AdministratorLoginPassword() *string
@@ -170,6 +170,7 @@ type CosmosdbPostgresqlCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMaintenanceWindow(value *CosmosdbPostgresqlClusterMaintenanceWindow)
 	PutTimeouts(value *CosmosdbPostgresqlClusterTimeouts)
+	ResetAdministratorLoginPassword()
 	ResetCitusVersion()
 	ResetCoordinatorPublicIpAccessEnabled()
 	ResetCoordinatorServerEdition()
@@ -877,7 +878,7 @@ func (j *jsiiProxy_CosmosdbPostgresqlCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/cosmosdb_postgresql_cluster azurerm_cosmosdb_postgresql_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/cosmosdb_postgresql_cluster azurerm_cosmosdb_postgresql_cluster} Resource.
 func NewCosmosdbPostgresqlCluster(scope constructs.Construct, id *string, config *CosmosdbPostgresqlClusterConfig) CosmosdbPostgresqlCluster {
 	_init_.Initialize()
 
@@ -895,7 +896,7 @@ func NewCosmosdbPostgresqlCluster(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.78.0/docs/resources/cosmosdb_postgresql_cluster azurerm_cosmosdb_postgresql_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/cosmosdb_postgresql_cluster azurerm_cosmosdb_postgresql_cluster} Resource.
 func NewCosmosdbPostgresqlCluster_Override(c CosmosdbPostgresqlCluster, scope constructs.Construct, id *string, config *CosmosdbPostgresqlClusterConfig) {
 	_init_.Initialize()
 
@@ -1564,6 +1565,14 @@ func (c *jsiiProxy_CosmosdbPostgresqlCluster) PutTimeouts(value *CosmosdbPostgre
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CosmosdbPostgresqlCluster) ResetAdministratorLoginPassword() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAdministratorLoginPassword",
+		nil, // no parameters
 	)
 }
 

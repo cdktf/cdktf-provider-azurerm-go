@@ -48,6 +48,9 @@ type DataAzurermStorageManagementPolicyRuleActionsBaseBlobOutputReference interf
 	TierToArchiveAfterDaysSinceLastAccessTimeGreaterThan() *float64
 	TierToArchiveAfterDaysSinceLastTierChangeGreaterThan() *float64
 	TierToArchiveAfterDaysSinceModificationGreaterThan() *float64
+	TierToColdAfterDaysSinceCreationGreaterThan() *float64
+	TierToColdAfterDaysSinceLastAccessTimeGreaterThan() *float64
+	TierToColdAfterDaysSinceModificationGreaterThan() *float64
 	TierToCoolAfterDaysSinceCreationGreaterThan() *float64
 	TierToCoolAfterDaysSinceLastAccessTimeGreaterThan() *float64
 	TierToCoolAfterDaysSinceModificationGreaterThan() *float64
@@ -235,6 +238,36 @@ func (j *jsiiProxy_DataAzurermStorageManagementPolicyRuleActionsBaseBlobOutputRe
 	_jsii_.Get(
 		j,
 		"tierToArchiveAfterDaysSinceModificationGreaterThan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageManagementPolicyRuleActionsBaseBlobOutputReference) TierToColdAfterDaysSinceCreationGreaterThan() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tierToColdAfterDaysSinceCreationGreaterThan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageManagementPolicyRuleActionsBaseBlobOutputReference) TierToColdAfterDaysSinceLastAccessTimeGreaterThan() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tierToColdAfterDaysSinceLastAccessTimeGreaterThan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageManagementPolicyRuleActionsBaseBlobOutputReference) TierToColdAfterDaysSinceModificationGreaterThan() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tierToColdAfterDaysSinceModificationGreaterThan",
 		&returns,
 	)
 	return returns

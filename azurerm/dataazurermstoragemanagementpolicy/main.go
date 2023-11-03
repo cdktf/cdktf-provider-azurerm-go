@@ -130,6 +130,9 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tierToArchiveAfterDaysSinceLastAccessTimeGreaterThan", GoGetter: "TierToArchiveAfterDaysSinceLastAccessTimeGreaterThan"},
 			_jsii_.MemberProperty{JsiiProperty: "tierToArchiveAfterDaysSinceLastTierChangeGreaterThan", GoGetter: "TierToArchiveAfterDaysSinceLastTierChangeGreaterThan"},
 			_jsii_.MemberProperty{JsiiProperty: "tierToArchiveAfterDaysSinceModificationGreaterThan", GoGetter: "TierToArchiveAfterDaysSinceModificationGreaterThan"},
+			_jsii_.MemberProperty{JsiiProperty: "tierToColdAfterDaysSinceCreationGreaterThan", GoGetter: "TierToColdAfterDaysSinceCreationGreaterThan"},
+			_jsii_.MemberProperty{JsiiProperty: "tierToColdAfterDaysSinceLastAccessTimeGreaterThan", GoGetter: "TierToColdAfterDaysSinceLastAccessTimeGreaterThan"},
+			_jsii_.MemberProperty{JsiiProperty: "tierToColdAfterDaysSinceModificationGreaterThan", GoGetter: "TierToColdAfterDaysSinceModificationGreaterThan"},
 			_jsii_.MemberProperty{JsiiProperty: "tierToCoolAfterDaysSinceCreationGreaterThan", GoGetter: "TierToCoolAfterDaysSinceCreationGreaterThan"},
 			_jsii_.MemberProperty{JsiiProperty: "tierToCoolAfterDaysSinceLastAccessTimeGreaterThan", GoGetter: "TierToCoolAfterDaysSinceLastAccessTimeGreaterThan"},
 			_jsii_.MemberProperty{JsiiProperty: "tierToCoolAfterDaysSinceModificationGreaterThan", GoGetter: "TierToCoolAfterDaysSinceModificationGreaterThan"},
@@ -248,6 +251,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "tierToArchiveAfterDaysSinceLastTierChangeGreaterThan", GoGetter: "TierToArchiveAfterDaysSinceLastTierChangeGreaterThan"},
+			_jsii_.MemberProperty{JsiiProperty: "tierToColdAfterDaysSinceCreationGreaterThan", GoGetter: "TierToColdAfterDaysSinceCreationGreaterThan"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
@@ -308,6 +312,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "tierToArchiveAfterDaysSinceLastTierChangeGreaterThan", GoGetter: "TierToArchiveAfterDaysSinceLastTierChangeGreaterThan"},
+			_jsii_.MemberProperty{JsiiProperty: "tierToColdAfterDaysSinceCreationGreaterThan", GoGetter: "TierToColdAfterDaysSinceCreationGreaterThan"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
