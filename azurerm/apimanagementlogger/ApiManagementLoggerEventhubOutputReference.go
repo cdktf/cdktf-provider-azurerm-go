@@ -31,6 +31,9 @@ type ApiManagementLoggerEventhubOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EndpointUri() *string
+	SetEndpointUri(val *string)
+	EndpointUriInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ApiManagementLoggerEventhub
@@ -46,6 +49,9 @@ type ApiManagementLoggerEventhubOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UserAssignedIdentityClientId() *string
+	SetUserAssignedIdentityClientId(val *string)
+	UserAssignedIdentityClientIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,6 +76,9 @@ type ApiManagementLoggerEventhubOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetConnectionString()
+	ResetEndpointUri()
+	ResetUserAssignedIdentityClientId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -135,6 +144,26 @@ func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) CreationStack() *
 	return returns
 }
 
+func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) EndpointUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) EndpointUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointUriInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -190,6 +219,26 @@ func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) TerraformResource
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) UserAssignedIdentityClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userAssignedIdentityClientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) UserAssignedIdentityClientIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userAssignedIdentityClientIdInput",
 		&returns,
 	)
 	return returns
@@ -256,6 +305,17 @@ func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference)SetConnectionStrin
 	)
 }
 
+func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference)SetEndpointUri(val *string) {
+	if err := j.validateSetEndpointUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointUri",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference)SetInternalValue(val *ApiManagementLoggerEventhub) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -296,6 +356,17 @@ func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference)SetTerraformResour
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference)SetUserAssignedIdentityClientId(val *string) {
+	if err := j.validateSetUserAssignedIdentityClientIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userAssignedIdentityClientId",
 		val,
 	)
 }
@@ -484,6 +555,30 @@ func (a *jsiiProxy_ApiManagementLoggerEventhubOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_ApiManagementLoggerEventhubOutputReference) ResetConnectionString() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConnectionString",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiManagementLoggerEventhubOutputReference) ResetEndpointUri() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEndpointUri",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiManagementLoggerEventhubOutputReference) ResetUserAssignedIdentityClientId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUserAssignedIdentityClientId",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_ApiManagementLoggerEventhubOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

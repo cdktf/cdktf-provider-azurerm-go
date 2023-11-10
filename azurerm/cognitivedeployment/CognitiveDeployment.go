@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment}.
 type CognitiveDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -79,6 +79,9 @@ type CognitiveDeployment interface {
 	TerraformResourceType() *string
 	Timeouts() CognitiveDeploymentTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	VersionUpgradeOption() *string
+	SetVersionUpgradeOption(val *string)
+	VersionUpgradeOptionInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -121,6 +124,7 @@ type CognitiveDeployment interface {
 	ResetOverrideLogicalId()
 	ResetRaiPolicyName()
 	ResetTimeouts()
+	ResetVersionUpgradeOption()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -436,8 +440,28 @@ func (j *jsiiProxy_CognitiveDeployment) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CognitiveDeployment) VersionUpgradeOption() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionUpgradeOption",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment} Resource.
+func (j *jsiiProxy_CognitiveDeployment) VersionUpgradeOptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionUpgradeOptionInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment} Resource.
 func NewCognitiveDeployment(scope constructs.Construct, id *string, config *CognitiveDeploymentConfig) CognitiveDeployment {
 	_init_.Initialize()
 
@@ -455,7 +479,7 @@ func NewCognitiveDeployment(scope constructs.Construct, id *string, config *Cogn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment} Resource.
 func NewCognitiveDeployment_Override(c CognitiveDeployment, scope constructs.Construct, id *string, config *CognitiveDeploymentConfig) {
 	_init_.Initialize()
 
@@ -574,6 +598,17 @@ func (j *jsiiProxy_CognitiveDeployment)SetRaiPolicyName(val *string) {
 	_jsii_.Set(
 		j,
 		"raiPolicyName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitiveDeployment)SetVersionUpgradeOption(val *string) {
+	if err := j.validateSetVersionUpgradeOptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"versionUpgradeOption",
 		val,
 	)
 }
@@ -957,6 +992,14 @@ func (c *jsiiProxy_CognitiveDeployment) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitiveDeployment) ResetVersionUpgradeOption() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVersionUpgradeOption",
 		nil, // no parameters
 	)
 }

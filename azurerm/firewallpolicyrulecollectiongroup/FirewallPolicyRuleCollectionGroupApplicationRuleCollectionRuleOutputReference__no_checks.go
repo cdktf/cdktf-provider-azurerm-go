@@ -47,6 +47,10 @@ func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionRul
 	return nil
 }
 
+func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionRuleOutputReference) validatePutHttpHeadersParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionRuleOutputReference) validatePutProtocolsParameters(value interface{}) error {
 	return nil
 }

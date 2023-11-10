@@ -59,6 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRaiPolicyName", GoMethod: "ResetRaiPolicyName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVersionUpgradeOption", GoMethod: "ResetVersionUpgradeOption"},
 			_jsii_.MemberProperty{JsiiProperty: "scale", GoGetter: "Scale"},
 			_jsii_.MemberProperty{JsiiProperty: "scaleInput", GoGetter: "ScaleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -70,6 +71,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "versionUpgradeOption", GoGetter: "VersionUpgradeOption"},
+			_jsii_.MemberProperty{JsiiProperty: "versionUpgradeOptionInput", GoGetter: "VersionUpgradeOptionInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CognitiveDeployment{}

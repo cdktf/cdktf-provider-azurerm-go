@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/mobile_network azurerm_mobile_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/mobile_network azurerm_mobile_network}.
 type MobileNetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -471,7 +471,7 @@ func (j *jsiiProxy_MobileNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/mobile_network azurerm_mobile_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/mobile_network azurerm_mobile_network} Resource.
 func NewMobileNetwork(scope constructs.Construct, id *string, config *MobileNetworkConfig) MobileNetwork {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewMobileNetwork(scope constructs.Construct, id *string, config *MobileNetw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/mobile_network azurerm_mobile_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/mobile_network azurerm_mobile_network} Resource.
 func NewMobileNetwork_Override(m MobileNetwork, scope constructs.Construct, id *string, config *MobileNetworkConfig) {
 	_init_.Initialize()
 

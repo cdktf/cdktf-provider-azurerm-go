@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/private_dns_ptr_record azurerm_private_dns_ptr_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/private_dns_ptr_record azurerm_private_dns_ptr_record}.
 type PrivateDnsPtrRecord interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -471,7 +471,7 @@ func (j *jsiiProxy_PrivateDnsPtrRecord) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/private_dns_ptr_record azurerm_private_dns_ptr_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/private_dns_ptr_record azurerm_private_dns_ptr_record} Resource.
 func NewPrivateDnsPtrRecord(scope constructs.Construct, id *string, config *PrivateDnsPtrRecordConfig) PrivateDnsPtrRecord {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewPrivateDnsPtrRecord(scope constructs.Construct, id *string, config *Priv
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/private_dns_ptr_record azurerm_private_dns_ptr_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/private_dns_ptr_record azurerm_private_dns_ptr_record} Resource.
 func NewPrivateDnsPtrRecord_Override(p PrivateDnsPtrRecord, scope constructs.Construct, id *string, config *PrivateDnsPtrRecordConfig) {
 	_init_.Initialize()
 

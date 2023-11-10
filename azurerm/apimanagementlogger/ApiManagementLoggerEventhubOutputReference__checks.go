@@ -174,6 +174,14 @@ func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) validateSetEndpointUriParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) validateSetInternalValueParameters(val *ApiManagementLoggerEventhub) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -199,6 +207,14 @@ func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) validateSetTerraf
 }
 
 func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) validateSetUserAssignedIdentityClientIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

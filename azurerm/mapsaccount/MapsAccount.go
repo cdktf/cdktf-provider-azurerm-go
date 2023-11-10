@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/maps_account azurerm_maps_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/maps_account azurerm_maps_account}.
 type MapsAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -471,7 +471,7 @@ func (j *jsiiProxy_MapsAccount) XMsClientId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/maps_account azurerm_maps_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/maps_account azurerm_maps_account} Resource.
 func NewMapsAccount(scope constructs.Construct, id *string, config *MapsAccountConfig) MapsAccount {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewMapsAccount(scope constructs.Construct, id *string, config *MapsAccountC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/maps_account azurerm_maps_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/maps_account azurerm_maps_account} Resource.
 func NewMapsAccount_Override(m MapsAccount, scope constructs.Construct, id *string, config *MapsAccountConfig) {
 	_init_.Initialize()
 

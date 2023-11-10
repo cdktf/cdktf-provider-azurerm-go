@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/stream_analytics_managed_private_endpoint azurerm_stream_analytics_managed_private_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/stream_analytics_managed_private_endpoint azurerm_stream_analytics_managed_private_endpoint}.
 type StreamAnalyticsManagedPrivateEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -436,7 +436,7 @@ func (j *jsiiProxy_StreamAnalyticsManagedPrivateEndpoint) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/stream_analytics_managed_private_endpoint azurerm_stream_analytics_managed_private_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/stream_analytics_managed_private_endpoint azurerm_stream_analytics_managed_private_endpoint} Resource.
 func NewStreamAnalyticsManagedPrivateEndpoint(scope constructs.Construct, id *string, config *StreamAnalyticsManagedPrivateEndpointConfig) StreamAnalyticsManagedPrivateEndpoint {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewStreamAnalyticsManagedPrivateEndpoint(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/stream_analytics_managed_private_endpoint azurerm_stream_analytics_managed_private_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/stream_analytics_managed_private_endpoint azurerm_stream_analytics_managed_private_endpoint} Resource.
 func NewStreamAnalyticsManagedPrivateEndpoint_Override(s StreamAnalyticsManagedPrivateEndpoint, scope constructs.Construct, id *string, config *StreamAnalyticsManagedPrivateEndpointConfig) {
 	_init_.Initialize()
 

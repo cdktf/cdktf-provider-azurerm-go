@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/data-sources/eventhub_namespace_authorization_rule azurerm_eventhub_namespace_authorization_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/data-sources/eventhub_namespace_authorization_rule azurerm_eventhub_namespace_authorization_rule}.
 type DataAzurermEventhubNamespaceAuthorizationRule interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -453,7 +453,7 @@ func (j *jsiiProxy_DataAzurermEventhubNamespaceAuthorizationRule) TimeoutsInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/data-sources/eventhub_namespace_authorization_rule azurerm_eventhub_namespace_authorization_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/data-sources/eventhub_namespace_authorization_rule azurerm_eventhub_namespace_authorization_rule} Data Source.
 func NewDataAzurermEventhubNamespaceAuthorizationRule(scope constructs.Construct, id *string, config *DataAzurermEventhubNamespaceAuthorizationRuleConfig) DataAzurermEventhubNamespaceAuthorizationRule {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewDataAzurermEventhubNamespaceAuthorizationRule(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/data-sources/eventhub_namespace_authorization_rule azurerm_eventhub_namespace_authorization_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/data-sources/eventhub_namespace_authorization_rule azurerm_eventhub_namespace_authorization_rule} Data Source.
 func NewDataAzurermEventhubNamespaceAuthorizationRule_Override(d DataAzurermEventhubNamespaceAuthorizationRule, scope constructs.Construct, id *string, config *DataAzurermEventhubNamespaceAuthorizationRuleConfig) {
 	_init_.Initialize()
 

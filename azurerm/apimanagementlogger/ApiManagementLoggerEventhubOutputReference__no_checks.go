@@ -63,6 +63,10 @@ func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) validateSetEndpointUriParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) validateSetInternalValueParameters(val *ApiManagementLoggerEventhub) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) validateSetTerraf
 }
 
 func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApiManagementLoggerEventhubOutputReference) validateSetUserAssignedIdentityClientIdParameters(val *string) error {
 	return nil
 }
 

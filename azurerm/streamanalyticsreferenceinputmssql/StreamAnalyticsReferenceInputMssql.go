@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql}.
 type StreamAnalyticsReferenceInputMssql interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -600,7 +600,7 @@ func (j *jsiiProxy_StreamAnalyticsReferenceInputMssql) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql} Resource.
 func NewStreamAnalyticsReferenceInputMssql(scope constructs.Construct, id *string, config *StreamAnalyticsReferenceInputMssqlConfig) StreamAnalyticsReferenceInputMssql {
 	_init_.Initialize()
 
@@ -618,7 +618,7 @@ func NewStreamAnalyticsReferenceInputMssql(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql} Resource.
 func NewStreamAnalyticsReferenceInputMssql_Override(s StreamAnalyticsReferenceInputMssql, scope constructs.Construct, id *string, config *StreamAnalyticsReferenceInputMssqlConfig) {
 	_init_.Initialize()
 

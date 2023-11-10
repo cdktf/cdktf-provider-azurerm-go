@@ -45,6 +45,8 @@ type FirewallPolicyRuleCollectionGroupApplicationRuleCollectionRuleOutputReferen
 	DestinationUrlsInput() *[]*string
 	// Experimental.
 	Fqn() *string
+	HttpHeaders() FirewallPolicyRuleCollectionGroupApplicationRuleCollectionRuleHttpHeadersList
+	HttpHeadersInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Name() *string
@@ -96,12 +98,14 @@ type FirewallPolicyRuleCollectionGroupApplicationRuleCollectionRuleOutputReferen
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutHttpHeaders(value interface{})
 	PutProtocols(value interface{})
 	ResetDescription()
 	ResetDestinationAddresses()
 	ResetDestinationFqdns()
 	ResetDestinationFqdnTags()
 	ResetDestinationUrls()
+	ResetHttpHeaders()
 	ResetProtocols()
 	ResetSourceAddresses()
 	ResetSourceIpGroups()
@@ -257,6 +261,26 @@ func (j *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionRul
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionRuleOutputReference) HttpHeaders() FirewallPolicyRuleCollectionGroupApplicationRuleCollectionRuleHttpHeadersList {
+	var returns FirewallPolicyRuleCollectionGroupApplicationRuleCollectionRuleHttpHeadersList
+	_jsii_.Get(
+		j,
+		"httpHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionRuleOutputReference) HttpHeadersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"httpHeadersInput",
 		&returns,
 	)
 	return returns
@@ -791,6 +815,17 @@ func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionRul
 	return returns
 }
 
+func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionRuleOutputReference) PutHttpHeaders(value interface{}) {
+	if err := f.validatePutHttpHeadersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putHttpHeaders",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionRuleOutputReference) PutProtocols(value interface{}) {
 	if err := f.validatePutProtocolsParameters(value); err != nil {
 		panic(err)
@@ -838,6 +873,14 @@ func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionRul
 	_jsii_.InvokeVoid(
 		f,
 		"resetDestinationUrls",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FirewallPolicyRuleCollectionGroupApplicationRuleCollectionRuleOutputReference) ResetHttpHeaders() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetHttpHeaders",
 		nil, // no parameters
 	)
 }

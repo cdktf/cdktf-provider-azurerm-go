@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/security_center_subscription_pricing azurerm_security_center_subscription_pricing}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/security_center_subscription_pricing azurerm_security_center_subscription_pricing}.
 type SecurityCenterSubscriptionPricing interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_SecurityCenterSubscriptionPricing) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/security_center_subscription_pricing azurerm_security_center_subscription_pricing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/security_center_subscription_pricing azurerm_security_center_subscription_pricing} Resource.
 func NewSecurityCenterSubscriptionPricing(scope constructs.Construct, id *string, config *SecurityCenterSubscriptionPricingConfig) SecurityCenterSubscriptionPricing {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewSecurityCenterSubscriptionPricing(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/security_center_subscription_pricing azurerm_security_center_subscription_pricing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/security_center_subscription_pricing azurerm_security_center_subscription_pricing} Resource.
 func NewSecurityCenterSubscriptionPricing_Override(s SecurityCenterSubscriptionPricing, scope constructs.Construct, id *string, config *SecurityCenterSubscriptionPricingConfig) {
 	_init_.Initialize()
 

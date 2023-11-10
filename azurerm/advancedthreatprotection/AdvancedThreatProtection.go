@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/advanced_threat_protection azurerm_advanced_threat_protection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/advanced_threat_protection azurerm_advanced_threat_protection}.
 type AdvancedThreatProtection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_AdvancedThreatProtection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/advanced_threat_protection azurerm_advanced_threat_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/advanced_threat_protection azurerm_advanced_threat_protection} Resource.
 func NewAdvancedThreatProtection(scope constructs.Construct, id *string, config *AdvancedThreatProtectionConfig) AdvancedThreatProtection {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewAdvancedThreatProtection(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.79.0/docs/resources/advanced_threat_protection azurerm_advanced_threat_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/advanced_threat_protection azurerm_advanced_threat_protection} Resource.
 func NewAdvancedThreatProtection_Override(a AdvancedThreatProtection, scope constructs.Construct, id *string, config *AdvancedThreatProtectionConfig) {
 	_init_.Initialize()
 

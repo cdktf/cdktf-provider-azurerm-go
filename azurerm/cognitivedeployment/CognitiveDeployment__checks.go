@@ -440,6 +440,14 @@ func (j *jsiiProxy_CognitiveDeployment) validateSetRaiPolicyNameParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_CognitiveDeployment) validateSetVersionUpgradeOptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewCognitiveDeploymentParameters(scope constructs.Construct, id *string, config *CognitiveDeploymentConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
