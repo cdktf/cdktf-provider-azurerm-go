@@ -5,13 +5,13 @@ package batchpool
 
 
 type BatchPoolDataDisks struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/batch_pool#disk_size_gb BatchPool#disk_size_gb}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/batch_pool#disk_size_gb BatchPool#disk_size_gb}.
 	DiskSizeGb *float64 `field:"required" json:"diskSizeGb" yaml:"diskSizeGb"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/batch_pool#lun BatchPool#lun}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/batch_pool#lun BatchPool#lun}.
 	Lun *float64 `field:"required" json:"lun" yaml:"lun"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/batch_pool#caching BatchPool#caching}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/batch_pool#caching BatchPool#caching}.
 	Caching *string `field:"optional" json:"caching" yaml:"caching"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/batch_pool#storage_account_type BatchPool#storage_account_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/batch_pool#storage_account_type BatchPool#storage_account_type}.
 	StorageAccountType *string `field:"optional" json:"storageAccountType" yaml:"storageAccountType"`
 }
 

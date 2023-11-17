@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/linux_function_app_slot azurerm_linux_function_app_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/linux_function_app_slot azurerm_linux_function_app_slot}.
 type LinuxFunctionAppSlot interface {
 	cdktf.TerraformResource
 	AppSettings() *map[string]*string
@@ -73,6 +73,9 @@ type LinuxFunctionAppSlot interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	FtpPublishBasicAuthenticationEnabled() interface{}
+	SetFtpPublishBasicAuthenticationEnabled(val interface{})
+	FtpPublishBasicAuthenticationEnabledInput() interface{}
 	FunctionAppId() *string
 	SetFunctionAppId(val *string)
 	FunctionAppIdInput() *string
@@ -152,6 +155,9 @@ type LinuxFunctionAppSlot interface {
 	VirtualNetworkSubnetId() *string
 	SetVirtualNetworkSubnetId(val *string)
 	VirtualNetworkSubnetIdInput() *string
+	WebdeployPublishBasicAuthenticationEnabled() interface{}
+	SetWebdeployPublishBasicAuthenticationEnabled(val interface{})
+	WebdeployPublishBasicAuthenticationEnabledInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -205,6 +211,7 @@ type LinuxFunctionAppSlot interface {
 	ResetContentShareForceDisabled()
 	ResetDailyMemoryTimeQuota()
 	ResetEnabled()
+	ResetFtpPublishBasicAuthenticationEnabled()
 	ResetFunctionsExtensionVersion()
 	ResetHttpsOnly()
 	ResetId()
@@ -223,6 +230,7 @@ type LinuxFunctionAppSlot interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetVirtualNetworkSubnetId()
+	ResetWebdeployPublishBasicAuthenticationEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -573,6 +581,26 @@ func (j *jsiiProxy_LinuxFunctionAppSlot) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxFunctionAppSlot) FtpPublishBasicAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ftpPublishBasicAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxFunctionAppSlot) FtpPublishBasicAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ftpPublishBasicAuthenticationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1088,8 +1116,28 @@ func (j *jsiiProxy_LinuxFunctionAppSlot) VirtualNetworkSubnetIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LinuxFunctionAppSlot) WebdeployPublishBasicAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"webdeployPublishBasicAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/linux_function_app_slot azurerm_linux_function_app_slot} Resource.
+func (j *jsiiProxy_LinuxFunctionAppSlot) WebdeployPublishBasicAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"webdeployPublishBasicAuthenticationEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/linux_function_app_slot azurerm_linux_function_app_slot} Resource.
 func NewLinuxFunctionAppSlot(scope constructs.Construct, id *string, config *LinuxFunctionAppSlotConfig) LinuxFunctionAppSlot {
 	_init_.Initialize()
 
@@ -1107,7 +1155,7 @@ func NewLinuxFunctionAppSlot(scope constructs.Construct, id *string, config *Lin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/linux_function_app_slot azurerm_linux_function_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/linux_function_app_slot azurerm_linux_function_app_slot} Resource.
 func NewLinuxFunctionAppSlot_Override(l LinuxFunctionAppSlot, scope constructs.Construct, id *string, config *LinuxFunctionAppSlotConfig) {
 	_init_.Initialize()
 
@@ -1240,6 +1288,17 @@ func (j *jsiiProxy_LinuxFunctionAppSlot)SetForEach(val cdktf.ITerraformIterator)
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxFunctionAppSlot)SetFtpPublishBasicAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetFtpPublishBasicAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ftpPublishBasicAuthenticationEnabled",
 		val,
 	)
 }
@@ -1424,6 +1483,17 @@ func (j *jsiiProxy_LinuxFunctionAppSlot)SetVirtualNetworkSubnetId(val *string) {
 	_jsii_.Set(
 		j,
 		"virtualNetworkSubnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxFunctionAppSlot)SetWebdeployPublishBasicAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetWebdeployPublishBasicAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"webdeployPublishBasicAuthenticationEnabled",
 		val,
 	)
 }
@@ -1930,6 +2000,14 @@ func (l *jsiiProxy_LinuxFunctionAppSlot) ResetEnabled() {
 	)
 }
 
+func (l *jsiiProxy_LinuxFunctionAppSlot) ResetFtpPublishBasicAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFtpPublishBasicAuthenticationEnabled",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LinuxFunctionAppSlot) ResetFunctionsExtensionVersion() {
 	_jsii_.InvokeVoid(
 		l,
@@ -2054,6 +2132,14 @@ func (l *jsiiProxy_LinuxFunctionAppSlot) ResetVirtualNetworkSubnetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetVirtualNetworkSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxFunctionAppSlot) ResetWebdeployPublishBasicAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetWebdeployPublishBasicAuthenticationEnabled",
 		nil, // no parameters
 	)
 }

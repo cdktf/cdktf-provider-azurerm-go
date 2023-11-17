@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/sql_server azurerm_sql_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/sql_server azurerm_sql_server}.
 type SqlServer interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -566,7 +566,7 @@ func (j *jsiiProxy_SqlServer) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/sql_server azurerm_sql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/sql_server azurerm_sql_server} Resource.
 func NewSqlServer(scope constructs.Construct, id *string, config *SqlServerConfig) SqlServer {
 	_init_.Initialize()
 
@@ -584,7 +584,7 @@ func NewSqlServer(scope constructs.Construct, id *string, config *SqlServerConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/sql_server azurerm_sql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/sql_server azurerm_sql_server} Resource.
 func NewSqlServer_Override(s SqlServer, scope constructs.Construct, id *string, config *SqlServerConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/integration_service_environment azurerm_integration_service_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/integration_service_environment azurerm_integration_service_environment}.
 type IntegrationServiceEnvironment interface {
 	cdktf.TerraformResource
 	AccessEndpointType() *string
@@ -528,7 +528,7 @@ func (j *jsiiProxy_IntegrationServiceEnvironment) WorkflowOutboundIpAddresses() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/integration_service_environment azurerm_integration_service_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/integration_service_environment azurerm_integration_service_environment} Resource.
 func NewIntegrationServiceEnvironment(scope constructs.Construct, id *string, config *IntegrationServiceEnvironmentConfig) IntegrationServiceEnvironment {
 	_init_.Initialize()
 
@@ -546,7 +546,7 @@ func NewIntegrationServiceEnvironment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/integration_service_environment azurerm_integration_service_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/integration_service_environment azurerm_integration_service_environment} Resource.
 func NewIntegrationServiceEnvironment_Override(i IntegrationServiceEnvironment, scope constructs.Construct, id *string, config *IntegrationServiceEnvironmentConfig) {
 	_init_.Initialize()
 

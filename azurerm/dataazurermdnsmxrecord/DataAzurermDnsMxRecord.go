@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/data-sources/dns_mx_record azurerm_dns_mx_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/data-sources/dns_mx_record azurerm_dns_mx_record}.
 type DataAzurermDnsMxRecord interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -399,7 +399,7 @@ func (j *jsiiProxy_DataAzurermDnsMxRecord) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/data-sources/dns_mx_record azurerm_dns_mx_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/data-sources/dns_mx_record azurerm_dns_mx_record} Data Source.
 func NewDataAzurermDnsMxRecord(scope constructs.Construct, id *string, config *DataAzurermDnsMxRecordConfig) DataAzurermDnsMxRecord {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewDataAzurermDnsMxRecord(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/data-sources/dns_mx_record azurerm_dns_mx_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/data-sources/dns_mx_record azurerm_dns_mx_record} Data Source.
 func NewDataAzurermDnsMxRecord_Override(d DataAzurermDnsMxRecord, scope constructs.Construct, id *string, config *DataAzurermDnsMxRecordConfig) {
 	_init_.Initialize()
 

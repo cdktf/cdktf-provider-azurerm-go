@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/logz_monitor azurerm_logz_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/logz_monitor azurerm_logz_monitor}.
 type LogzMonitor interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -554,7 +554,7 @@ func (j *jsiiProxy_LogzMonitor) UserInput() *LogzMonitorUser {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/logz_monitor azurerm_logz_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/logz_monitor azurerm_logz_monitor} Resource.
 func NewLogzMonitor(scope constructs.Construct, id *string, config *LogzMonitorConfig) LogzMonitor {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewLogzMonitor(scope constructs.Construct, id *string, config *LogzMonitorC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/logz_monitor azurerm_logz_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/logz_monitor azurerm_logz_monitor} Resource.
 func NewLogzMonitor_Override(l LogzMonitor, scope constructs.Construct, id *string, config *LogzMonitorConfig) {
 	_init_.Initialize()
 

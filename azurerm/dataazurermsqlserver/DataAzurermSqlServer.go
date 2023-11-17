@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/data-sources/sql_server azurerm_sql_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/data-sources/sql_server azurerm_sql_server}.
 type DataAzurermSqlServer interface {
 	cdktf.TerraformDataSource
 	AdministratorLogin() *string
@@ -397,7 +397,7 @@ func (j *jsiiProxy_DataAzurermSqlServer) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/data-sources/sql_server azurerm_sql_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/data-sources/sql_server azurerm_sql_server} Data Source.
 func NewDataAzurermSqlServer(scope constructs.Construct, id *string, config *DataAzurermSqlServerConfig) DataAzurermSqlServer {
 	_init_.Initialize()
 
@@ -415,7 +415,7 @@ func NewDataAzurermSqlServer(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/data-sources/sql_server azurerm_sql_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/data-sources/sql_server azurerm_sql_server} Data Source.
 func NewDataAzurermSqlServer_Override(d DataAzurermSqlServer, scope constructs.Construct, id *string, config *DataAzurermSqlServerConfig) {
 	_init_.Initialize()
 

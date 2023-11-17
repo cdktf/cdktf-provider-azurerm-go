@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/cognitive_account_customer_managed_key azurerm_cognitive_account_customer_managed_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/cognitive_account_customer_managed_key azurerm_cognitive_account_customer_managed_key}.
 type CognitiveAccountCustomerManagedKeyA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_CognitiveAccountCustomerManagedKeyA) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/cognitive_account_customer_managed_key azurerm_cognitive_account_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/cognitive_account_customer_managed_key azurerm_cognitive_account_customer_managed_key} Resource.
 func NewCognitiveAccountCustomerManagedKeyA(scope constructs.Construct, id *string, config *CognitiveAccountCustomerManagedKeyAConfig) CognitiveAccountCustomerManagedKeyA {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewCognitiveAccountCustomerManagedKeyA(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/cognitive_account_customer_managed_key azurerm_cognitive_account_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/cognitive_account_customer_managed_key azurerm_cognitive_account_customer_managed_key} Resource.
 func NewCognitiveAccountCustomerManagedKeyA_Override(c CognitiveAccountCustomerManagedKeyA, scope constructs.Construct, id *string, config *CognitiveAccountCustomerManagedKeyAConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot}.
 type WindowsWebAppSlot interface {
 	cdktf.TerraformResource
 	AppServiceId() *string
@@ -70,6 +70,9 @@ type WindowsWebAppSlot interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	FtpPublishBasicAuthenticationEnabled() interface{}
+	SetFtpPublishBasicAuthenticationEnabled(val interface{})
+	FtpPublishBasicAuthenticationEnabledInput() interface{}
 	HostingEnvironmentId() *string
 	HttpsOnly() interface{}
 	SetHttpsOnly(val interface{})
@@ -133,6 +136,9 @@ type WindowsWebAppSlot interface {
 	VirtualNetworkSubnetId() *string
 	SetVirtualNetworkSubnetId(val *string)
 	VirtualNetworkSubnetIdInput() *string
+	WebdeployPublishBasicAuthenticationEnabled() interface{}
+	SetWebdeployPublishBasicAuthenticationEnabled(val interface{})
+	WebdeployPublishBasicAuthenticationEnabledInput() interface{}
 	ZipDeployFile() *string
 	SetZipDeployFile(val *string)
 	ZipDeployFileInput() *string
@@ -188,6 +194,7 @@ type WindowsWebAppSlot interface {
 	ResetClientCertificateMode()
 	ResetConnectionString()
 	ResetEnabled()
+	ResetFtpPublishBasicAuthenticationEnabled()
 	ResetHttpsOnly()
 	ResetId()
 	ResetIdentity()
@@ -202,6 +209,7 @@ type WindowsWebAppSlot interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetVirtualNetworkSubnetId()
+	ResetWebdeployPublishBasicAuthenticationEnabled()
 	ResetZipDeployFile()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -533,6 +541,26 @@ func (j *jsiiProxy_WindowsWebAppSlot) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlot) FtpPublishBasicAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ftpPublishBasicAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlot) FtpPublishBasicAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ftpPublishBasicAuthenticationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -948,6 +976,26 @@ func (j *jsiiProxy_WindowsWebAppSlot) VirtualNetworkSubnetIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WindowsWebAppSlot) WebdeployPublishBasicAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"webdeployPublishBasicAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlot) WebdeployPublishBasicAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"webdeployPublishBasicAuthenticationEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsWebAppSlot) ZipDeployFile() *string {
 	var returns *string
 	_jsii_.Get(
@@ -969,7 +1017,7 @@ func (j *jsiiProxy_WindowsWebAppSlot) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot} Resource.
 func NewWindowsWebAppSlot(scope constructs.Construct, id *string, config *WindowsWebAppSlotConfig) WindowsWebAppSlot {
 	_init_.Initialize()
 
@@ -987,7 +1035,7 @@ func NewWindowsWebAppSlot(scope constructs.Construct, id *string, config *Window
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot} Resource.
 func NewWindowsWebAppSlot_Override(w WindowsWebAppSlot, scope constructs.Construct, id *string, config *WindowsWebAppSlotConfig) {
 	_init_.Initialize()
 
@@ -1113,6 +1161,17 @@ func (j *jsiiProxy_WindowsWebAppSlot)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
+func (j *jsiiProxy_WindowsWebAppSlot)SetFtpPublishBasicAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetFtpPublishBasicAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ftpPublishBasicAuthenticationEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WindowsWebAppSlot)SetHttpsOnly(val interface{}) {
 	if err := j.validateSetHttpsOnlyParameters(val); err != nil {
 		panic(err)
@@ -1227,6 +1286,17 @@ func (j *jsiiProxy_WindowsWebAppSlot)SetVirtualNetworkSubnetId(val *string) {
 	_jsii_.Set(
 		j,
 		"virtualNetworkSubnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsWebAppSlot)SetWebdeployPublishBasicAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetWebdeployPublishBasicAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"webdeployPublishBasicAuthenticationEnabled",
 		val,
 	)
 }
@@ -1739,6 +1809,14 @@ func (w *jsiiProxy_WindowsWebAppSlot) ResetEnabled() {
 	)
 }
 
+func (w *jsiiProxy_WindowsWebAppSlot) ResetFtpPublishBasicAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetFtpPublishBasicAuthenticationEnabled",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WindowsWebAppSlot) ResetHttpsOnly() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1831,6 +1909,14 @@ func (w *jsiiProxy_WindowsWebAppSlot) ResetVirtualNetworkSubnetId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetVirtualNetworkSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsWebAppSlot) ResetWebdeployPublishBasicAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetWebdeployPublishBasicAuthenticationEnabled",
 		nil, // no parameters
 	)
 }

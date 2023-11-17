@@ -22,40 +22,40 @@ type LabServicePlanConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/lab_service_plan#allowed_regions LabServicePlan#allowed_regions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/lab_service_plan#allowed_regions LabServicePlan#allowed_regions}.
 	AllowedRegions *[]*string `field:"required" json:"allowedRegions" yaml:"allowedRegions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/lab_service_plan#location LabServicePlan#location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/lab_service_plan#location LabServicePlan#location}.
 	Location *string `field:"required" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/lab_service_plan#name LabServicePlan#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/lab_service_plan#name LabServicePlan#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/lab_service_plan#resource_group_name LabServicePlan#resource_group_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/lab_service_plan#resource_group_name LabServicePlan#resource_group_name}.
 	ResourceGroupName *string `field:"required" json:"resourceGroupName" yaml:"resourceGroupName"`
 	// default_auto_shutdown block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/lab_service_plan#default_auto_shutdown LabServicePlan#default_auto_shutdown}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/lab_service_plan#default_auto_shutdown LabServicePlan#default_auto_shutdown}
 	DefaultAutoShutdown *LabServicePlanDefaultAutoShutdown `field:"optional" json:"defaultAutoShutdown" yaml:"defaultAutoShutdown"`
 	// default_connection block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/lab_service_plan#default_connection LabServicePlan#default_connection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/lab_service_plan#default_connection LabServicePlan#default_connection}
 	DefaultConnection *LabServicePlanDefaultConnection `field:"optional" json:"defaultConnection" yaml:"defaultConnection"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/lab_service_plan#default_network_subnet_id LabServicePlan#default_network_subnet_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/lab_service_plan#default_network_subnet_id LabServicePlan#default_network_subnet_id}.
 	DefaultNetworkSubnetId *string `field:"optional" json:"defaultNetworkSubnetId" yaml:"defaultNetworkSubnetId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/lab_service_plan#id LabServicePlan#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/lab_service_plan#id LabServicePlan#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/lab_service_plan#shared_gallery_id LabServicePlan#shared_gallery_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/lab_service_plan#shared_gallery_id LabServicePlan#shared_gallery_id}.
 	SharedGalleryId *string `field:"optional" json:"sharedGalleryId" yaml:"sharedGalleryId"`
 	// support block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/lab_service_plan#support LabServicePlan#support}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/lab_service_plan#support LabServicePlan#support}
 	Support *LabServicePlanSupport `field:"optional" json:"support" yaml:"support"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/lab_service_plan#tags LabServicePlan#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/lab_service_plan#tags LabServicePlan#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/lab_service_plan#timeouts LabServicePlan#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/lab_service_plan#timeouts LabServicePlan#timeouts}
 	Timeouts *LabServicePlanTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

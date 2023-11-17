@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/virtual_machine_packet_capture azurerm_virtual_machine_packet_capture}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/virtual_machine_packet_capture azurerm_virtual_machine_packet_capture}.
 type VirtualMachinePacketCapture interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -509,7 +509,7 @@ func (j *jsiiProxy_VirtualMachinePacketCapture) VirtualMachineIdInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/virtual_machine_packet_capture azurerm_virtual_machine_packet_capture} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/virtual_machine_packet_capture azurerm_virtual_machine_packet_capture} Resource.
 func NewVirtualMachinePacketCapture(scope constructs.Construct, id *string, config *VirtualMachinePacketCaptureConfig) VirtualMachinePacketCapture {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewVirtualMachinePacketCapture(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/virtual_machine_packet_capture azurerm_virtual_machine_packet_capture} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/virtual_machine_packet_capture azurerm_virtual_machine_packet_capture} Resource.
 func NewVirtualMachinePacketCapture_Override(v VirtualMachinePacketCapture, scope constructs.Construct, id *string, config *VirtualMachinePacketCaptureConfig) {
 	_init_.Initialize()
 

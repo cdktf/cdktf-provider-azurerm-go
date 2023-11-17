@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/windows_function_app azurerm_windows_function_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/windows_function_app azurerm_windows_function_app}.
 type WindowsFunctionApp interface {
 	cdktf.TerraformResource
 	AppSettings() *map[string]*string
@@ -73,6 +73,9 @@ type WindowsFunctionApp interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	FtpPublishBasicAuthenticationEnabled() interface{}
+	SetFtpPublishBasicAuthenticationEnabled(val interface{})
+	FtpPublishBasicAuthenticationEnabledInput() interface{}
 	FunctionsExtensionVersion() *string
 	SetFunctionsExtensionVersion(val *string)
 	FunctionsExtensionVersionInput() *string
@@ -157,6 +160,9 @@ type WindowsFunctionApp interface {
 	VirtualNetworkSubnetId() *string
 	SetVirtualNetworkSubnetId(val *string)
 	VirtualNetworkSubnetIdInput() *string
+	WebdeployPublishBasicAuthenticationEnabled() interface{}
+	SetWebdeployPublishBasicAuthenticationEnabled(val interface{})
+	WebdeployPublishBasicAuthenticationEnabledInput() interface{}
 	ZipDeployFile() *string
 	SetZipDeployFile(val *string)
 	ZipDeployFileInput() *string
@@ -214,6 +220,7 @@ type WindowsFunctionApp interface {
 	ResetContentShareForceDisabled()
 	ResetDailyMemoryTimeQuota()
 	ResetEnabled()
+	ResetFtpPublishBasicAuthenticationEnabled()
 	ResetFunctionsExtensionVersion()
 	ResetHttpsOnly()
 	ResetId()
@@ -232,6 +239,7 @@ type WindowsFunctionApp interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetVirtualNetworkSubnetId()
+	ResetWebdeployPublishBasicAuthenticationEnabled()
 	ResetZipDeployFile()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -583,6 +591,26 @@ func (j *jsiiProxy_WindowsFunctionApp) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsFunctionApp) FtpPublishBasicAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ftpPublishBasicAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsFunctionApp) FtpPublishBasicAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ftpPublishBasicAuthenticationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1138,6 +1166,26 @@ func (j *jsiiProxy_WindowsFunctionApp) VirtualNetworkSubnetIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WindowsFunctionApp) WebdeployPublishBasicAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"webdeployPublishBasicAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsFunctionApp) WebdeployPublishBasicAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"webdeployPublishBasicAuthenticationEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsFunctionApp) ZipDeployFile() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1159,7 +1207,7 @@ func (j *jsiiProxy_WindowsFunctionApp) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/windows_function_app azurerm_windows_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/windows_function_app azurerm_windows_function_app} Resource.
 func NewWindowsFunctionApp(scope constructs.Construct, id *string, config *WindowsFunctionAppConfig) WindowsFunctionApp {
 	_init_.Initialize()
 
@@ -1177,7 +1225,7 @@ func NewWindowsFunctionApp(scope constructs.Construct, id *string, config *Windo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/windows_function_app azurerm_windows_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/windows_function_app azurerm_windows_function_app} Resource.
 func NewWindowsFunctionApp_Override(w WindowsFunctionApp, scope constructs.Construct, id *string, config *WindowsFunctionAppConfig) {
 	_init_.Initialize()
 
@@ -1310,6 +1358,17 @@ func (j *jsiiProxy_WindowsFunctionApp)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsFunctionApp)SetFtpPublishBasicAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetFtpPublishBasicAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ftpPublishBasicAuthenticationEnabled",
 		val,
 	)
 }
@@ -1505,6 +1564,17 @@ func (j *jsiiProxy_WindowsFunctionApp)SetVirtualNetworkSubnetId(val *string) {
 	_jsii_.Set(
 		j,
 		"virtualNetworkSubnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsFunctionApp)SetWebdeployPublishBasicAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetWebdeployPublishBasicAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"webdeployPublishBasicAuthenticationEnabled",
 		val,
 	)
 }
@@ -2033,6 +2103,14 @@ func (w *jsiiProxy_WindowsFunctionApp) ResetEnabled() {
 	)
 }
 
+func (w *jsiiProxy_WindowsFunctionApp) ResetFtpPublishBasicAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetFtpPublishBasicAuthenticationEnabled",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WindowsFunctionApp) ResetFunctionsExtensionVersion() {
 	_jsii_.InvokeVoid(
 		w,
@@ -2157,6 +2235,14 @@ func (w *jsiiProxy_WindowsFunctionApp) ResetVirtualNetworkSubnetId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetVirtualNetworkSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsFunctionApp) ResetWebdeployPublishBasicAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetWebdeployPublishBasicAuthenticationEnabled",
 		nil, // no parameters
 	)
 }

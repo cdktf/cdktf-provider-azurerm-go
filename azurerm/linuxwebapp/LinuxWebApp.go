@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/linux_web_app azurerm_linux_web_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/linux_web_app azurerm_linux_web_app}.
 type LinuxWebApp interface {
 	cdktf.TerraformResource
 	AppSettings() *map[string]*string
@@ -67,6 +67,9 @@ type LinuxWebApp interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	FtpPublishBasicAuthenticationEnabled() interface{}
+	SetFtpPublishBasicAuthenticationEnabled(val interface{})
+	FtpPublishBasicAuthenticationEnabledInput() interface{}
 	HostingEnvironmentId() *string
 	HttpsOnly() interface{}
 	SetHttpsOnly(val interface{})
@@ -138,6 +141,9 @@ type LinuxWebApp interface {
 	VirtualNetworkSubnetId() *string
 	SetVirtualNetworkSubnetId(val *string)
 	VirtualNetworkSubnetIdInput() *string
+	WebdeployPublishBasicAuthenticationEnabled() interface{}
+	SetWebdeployPublishBasicAuthenticationEnabled(val interface{})
+	WebdeployPublishBasicAuthenticationEnabledInput() interface{}
 	ZipDeployFile() *string
 	SetZipDeployFile(val *string)
 	ZipDeployFileInput() *string
@@ -194,6 +200,7 @@ type LinuxWebApp interface {
 	ResetClientCertificateMode()
 	ResetConnectionString()
 	ResetEnabled()
+	ResetFtpPublishBasicAuthenticationEnabled()
 	ResetHttpsOnly()
 	ResetId()
 	ResetIdentity()
@@ -208,6 +215,7 @@ type LinuxWebApp interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetVirtualNetworkSubnetId()
+	ResetWebdeployPublishBasicAuthenticationEnabled()
 	ResetZipDeployFile()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -519,6 +527,26 @@ func (j *jsiiProxy_LinuxWebApp) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxWebApp) FtpPublishBasicAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ftpPublishBasicAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxWebApp) FtpPublishBasicAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ftpPublishBasicAuthenticationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -994,6 +1022,26 @@ func (j *jsiiProxy_LinuxWebApp) VirtualNetworkSubnetIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LinuxWebApp) WebdeployPublishBasicAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"webdeployPublishBasicAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxWebApp) WebdeployPublishBasicAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"webdeployPublishBasicAuthenticationEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LinuxWebApp) ZipDeployFile() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1015,7 +1063,7 @@ func (j *jsiiProxy_LinuxWebApp) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/linux_web_app azurerm_linux_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/linux_web_app azurerm_linux_web_app} Resource.
 func NewLinuxWebApp(scope constructs.Construct, id *string, config *LinuxWebAppConfig) LinuxWebApp {
 	_init_.Initialize()
 
@@ -1033,7 +1081,7 @@ func NewLinuxWebApp(scope constructs.Construct, id *string, config *LinuxWebAppC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/linux_web_app azurerm_linux_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/linux_web_app azurerm_linux_web_app} Resource.
 func NewLinuxWebApp_Override(l LinuxWebApp, scope constructs.Construct, id *string, config *LinuxWebAppConfig) {
 	_init_.Initialize()
 
@@ -1144,6 +1192,17 @@ func (j *jsiiProxy_LinuxWebApp)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxWebApp)SetFtpPublishBasicAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetFtpPublishBasicAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ftpPublishBasicAuthenticationEnabled",
 		val,
 	)
 }
@@ -1284,6 +1343,17 @@ func (j *jsiiProxy_LinuxWebApp)SetVirtualNetworkSubnetId(val *string) {
 	_jsii_.Set(
 		j,
 		"virtualNetworkSubnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxWebApp)SetWebdeployPublishBasicAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetWebdeployPublishBasicAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"webdeployPublishBasicAuthenticationEnabled",
 		val,
 	)
 }
@@ -1807,6 +1877,14 @@ func (l *jsiiProxy_LinuxWebApp) ResetEnabled() {
 	)
 }
 
+func (l *jsiiProxy_LinuxWebApp) ResetFtpPublishBasicAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFtpPublishBasicAuthenticationEnabled",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LinuxWebApp) ResetHttpsOnly() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1899,6 +1977,14 @@ func (l *jsiiProxy_LinuxWebApp) ResetVirtualNetworkSubnetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetVirtualNetworkSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxWebApp) ResetWebdeployPublishBasicAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetWebdeployPublishBasicAuthenticationEnabled",
 		nil, // no parameters
 	)
 }

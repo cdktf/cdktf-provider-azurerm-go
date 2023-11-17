@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/vmware_cluster azurerm_vmware_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/vmware_cluster azurerm_vmware_cluster}.
 type VmwareCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_VmwareCluster) VmwareCloudIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/vmware_cluster azurerm_vmware_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/vmware_cluster azurerm_vmware_cluster} Resource.
 func NewVmwareCluster(scope constructs.Construct, id *string, config *VmwareClusterConfig) VmwareCluster {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewVmwareCluster(scope constructs.Construct, id *string, config *VmwareClus
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/vmware_cluster azurerm_vmware_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/vmware_cluster azurerm_vmware_cluster} Resource.
 func NewVmwareCluster_Override(v VmwareCluster, scope constructs.Construct, id *string, config *VmwareClusterConfig) {
 	_init_.Initialize()
 

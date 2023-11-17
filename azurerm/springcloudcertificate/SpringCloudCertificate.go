@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/spring_cloud_certificate azurerm_spring_cloud_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/spring_cloud_certificate azurerm_spring_cloud_certificate}.
 type SpringCloudCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_SpringCloudCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/spring_cloud_certificate azurerm_spring_cloud_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/spring_cloud_certificate azurerm_spring_cloud_certificate} Resource.
 func NewSpringCloudCertificate(scope constructs.Construct, id *string, config *SpringCloudCertificateConfig) SpringCloudCertificate {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewSpringCloudCertificate(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/spring_cloud_certificate azurerm_spring_cloud_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/spring_cloud_certificate azurerm_spring_cloud_certificate} Resource.
 func NewSpringCloudCertificate_Override(s SpringCloudCertificate, scope constructs.Construct, id *string, config *SpringCloudCertificateConfig) {
 	_init_.Initialize()
 

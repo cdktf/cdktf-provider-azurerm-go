@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/windows_function_app_slot azurerm_windows_function_app_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/windows_function_app_slot azurerm_windows_function_app_slot}.
 type WindowsFunctionAppSlot interface {
 	cdktf.TerraformResource
 	AppSettings() *map[string]*string
@@ -73,6 +73,9 @@ type WindowsFunctionAppSlot interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	FtpPublishBasicAuthenticationEnabled() interface{}
+	SetFtpPublishBasicAuthenticationEnabled(val interface{})
+	FtpPublishBasicAuthenticationEnabledInput() interface{}
 	FunctionAppId() *string
 	SetFunctionAppId(val *string)
 	FunctionAppIdInput() *string
@@ -152,6 +155,9 @@ type WindowsFunctionAppSlot interface {
 	VirtualNetworkSubnetId() *string
 	SetVirtualNetworkSubnetId(val *string)
 	VirtualNetworkSubnetIdInput() *string
+	WebdeployPublishBasicAuthenticationEnabled() interface{}
+	SetWebdeployPublishBasicAuthenticationEnabled(val interface{})
+	WebdeployPublishBasicAuthenticationEnabledInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -205,6 +211,7 @@ type WindowsFunctionAppSlot interface {
 	ResetContentShareForceDisabled()
 	ResetDailyMemoryTimeQuota()
 	ResetEnabled()
+	ResetFtpPublishBasicAuthenticationEnabled()
 	ResetFunctionsExtensionVersion()
 	ResetHttpsOnly()
 	ResetId()
@@ -223,6 +230,7 @@ type WindowsFunctionAppSlot interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetVirtualNetworkSubnetId()
+	ResetWebdeployPublishBasicAuthenticationEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -573,6 +581,26 @@ func (j *jsiiProxy_WindowsFunctionAppSlot) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsFunctionAppSlot) FtpPublishBasicAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ftpPublishBasicAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsFunctionAppSlot) FtpPublishBasicAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ftpPublishBasicAuthenticationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1088,8 +1116,28 @@ func (j *jsiiProxy_WindowsFunctionAppSlot) VirtualNetworkSubnetIdInput() *string
 	return returns
 }
 
+func (j *jsiiProxy_WindowsFunctionAppSlot) WebdeployPublishBasicAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"webdeployPublishBasicAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/windows_function_app_slot azurerm_windows_function_app_slot} Resource.
+func (j *jsiiProxy_WindowsFunctionAppSlot) WebdeployPublishBasicAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"webdeployPublishBasicAuthenticationEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/windows_function_app_slot azurerm_windows_function_app_slot} Resource.
 func NewWindowsFunctionAppSlot(scope constructs.Construct, id *string, config *WindowsFunctionAppSlotConfig) WindowsFunctionAppSlot {
 	_init_.Initialize()
 
@@ -1107,7 +1155,7 @@ func NewWindowsFunctionAppSlot(scope constructs.Construct, id *string, config *W
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/windows_function_app_slot azurerm_windows_function_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/windows_function_app_slot azurerm_windows_function_app_slot} Resource.
 func NewWindowsFunctionAppSlot_Override(w WindowsFunctionAppSlot, scope constructs.Construct, id *string, config *WindowsFunctionAppSlotConfig) {
 	_init_.Initialize()
 
@@ -1240,6 +1288,17 @@ func (j *jsiiProxy_WindowsFunctionAppSlot)SetForEach(val cdktf.ITerraformIterato
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsFunctionAppSlot)SetFtpPublishBasicAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetFtpPublishBasicAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ftpPublishBasicAuthenticationEnabled",
 		val,
 	)
 }
@@ -1424,6 +1483,17 @@ func (j *jsiiProxy_WindowsFunctionAppSlot)SetVirtualNetworkSubnetId(val *string)
 	_jsii_.Set(
 		j,
 		"virtualNetworkSubnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsFunctionAppSlot)SetWebdeployPublishBasicAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetWebdeployPublishBasicAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"webdeployPublishBasicAuthenticationEnabled",
 		val,
 	)
 }
@@ -1930,6 +2000,14 @@ func (w *jsiiProxy_WindowsFunctionAppSlot) ResetEnabled() {
 	)
 }
 
+func (w *jsiiProxy_WindowsFunctionAppSlot) ResetFtpPublishBasicAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetFtpPublishBasicAuthenticationEnabled",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WindowsFunctionAppSlot) ResetFunctionsExtensionVersion() {
 	_jsii_.InvokeVoid(
 		w,
@@ -2054,6 +2132,14 @@ func (w *jsiiProxy_WindowsFunctionAppSlot) ResetVirtualNetworkSubnetId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetVirtualNetworkSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsFunctionAppSlot) ResetWebdeployPublishBasicAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetWebdeployPublishBasicAuthenticationEnabled",
 		nil, // no parameters
 	)
 }

@@ -155,6 +155,10 @@ func (j *jsiiProxy_LinuxFunctionAppSlot) validateSetEnabledParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_LinuxFunctionAppSlot) validateSetFtpPublishBasicAuthenticationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxFunctionAppSlot) validateSetFunctionAppIdParameters(val *string) error {
 	return nil
 }
@@ -216,6 +220,10 @@ func (j *jsiiProxy_LinuxFunctionAppSlot) validateSetTagsParameters(val *map[stri
 }
 
 func (j *jsiiProxy_LinuxFunctionAppSlot) validateSetVirtualNetworkSubnetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LinuxFunctionAppSlot) validateSetWebdeployPublishBasicAuthenticationEnabledParameters(val interface{}) error {
 	return nil
 }
 

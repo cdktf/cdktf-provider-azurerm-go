@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/subnet_nat_gateway_association azurerm_subnet_nat_gateway_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/subnet_nat_gateway_association azurerm_subnet_nat_gateway_association}.
 type SubnetNatGatewayAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_SubnetNatGatewayAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/subnet_nat_gateway_association azurerm_subnet_nat_gateway_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/subnet_nat_gateway_association azurerm_subnet_nat_gateway_association} Resource.
 func NewSubnetNatGatewayAssociation(scope constructs.Construct, id *string, config *SubnetNatGatewayAssociationConfig) SubnetNatGatewayAssociation {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewSubnetNatGatewayAssociation(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/subnet_nat_gateway_association azurerm_subnet_nat_gateway_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/subnet_nat_gateway_association azurerm_subnet_nat_gateway_association} Resource.
 func NewSubnetNatGatewayAssociation_Override(s SubnetNatGatewayAssociation, scope constructs.Construct, id *string, config *SubnetNatGatewayAssociationConfig) {
 	_init_.Initialize()
 

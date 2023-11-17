@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/key_vault_certificate_issuer azurerm_key_vault_certificate_issuer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/key_vault_certificate_issuer azurerm_key_vault_certificate_issuer}.
 type KeyVaultCertificateIssuer interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -486,7 +486,7 @@ func (j *jsiiProxy_KeyVaultCertificateIssuer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/key_vault_certificate_issuer azurerm_key_vault_certificate_issuer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/key_vault_certificate_issuer azurerm_key_vault_certificate_issuer} Resource.
 func NewKeyVaultCertificateIssuer(scope constructs.Construct, id *string, config *KeyVaultCertificateIssuerConfig) KeyVaultCertificateIssuer {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewKeyVaultCertificateIssuer(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/key_vault_certificate_issuer azurerm_key_vault_certificate_issuer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/key_vault_certificate_issuer azurerm_key_vault_certificate_issuer} Resource.
 func NewKeyVaultCertificateIssuer_Override(k KeyVaultCertificateIssuer, scope constructs.Construct, id *string, config *KeyVaultCertificateIssuerConfig) {
 	_init_.Initialize()
 

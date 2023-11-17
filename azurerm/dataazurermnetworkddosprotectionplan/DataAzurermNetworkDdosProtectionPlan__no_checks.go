@@ -95,10 +95,6 @@ func (j *jsiiProxy_DataAzurermNetworkDdosProtectionPlan) validateSetResourceGrou
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermNetworkDdosProtectionPlan) validateSetTagsParameters(val *map[string]*string) error {
-	return nil
-}
-
 func validateNewDataAzurermNetworkDdosProtectionPlanParameters(scope constructs.Construct, id *string, config *DataAzurermNetworkDdosProtectionPlanConfig) error {
 	return nil
 }

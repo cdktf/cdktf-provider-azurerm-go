@@ -155,6 +155,10 @@ func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetEnabledParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetFtpPublishBasicAuthenticationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetFunctionAppIdParameters(val *string) error {
 	return nil
 }
@@ -216,6 +220,10 @@ func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetTagsParameters(val *map[st
 }
 
 func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetVirtualNetworkSubnetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetWebdeployPublishBasicAuthenticationEnabledParameters(val interface{}) error {
 	return nil
 }
 

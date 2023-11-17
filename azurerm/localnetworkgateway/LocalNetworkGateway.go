@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/local_network_gateway azurerm_local_network_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/local_network_gateway azurerm_local_network_gateway}.
 type LocalNetworkGateway interface {
 	cdktf.TerraformResource
 	AddressSpace() *[]*string
@@ -510,7 +510,7 @@ func (j *jsiiProxy_LocalNetworkGateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/local_network_gateway azurerm_local_network_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/local_network_gateway azurerm_local_network_gateway} Resource.
 func NewLocalNetworkGateway(scope constructs.Construct, id *string, config *LocalNetworkGatewayConfig) LocalNetworkGateway {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewLocalNetworkGateway(scope constructs.Construct, id *string, config *Loca
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/local_network_gateway azurerm_local_network_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/local_network_gateway azurerm_local_network_gateway} Resource.
 func NewLocalNetworkGateway_Override(l LocalNetworkGateway, scope constructs.Construct, id *string, config *LocalNetworkGatewayConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/mobile_network_packet_core_control_plane azurerm_mobile_network_packet_core_control_plane}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/mobile_network_packet_core_control_plane azurerm_mobile_network_packet_core_control_plane}.
 type MobileNetworkPacketCoreControlPlane interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -723,7 +723,7 @@ func (j *jsiiProxy_MobileNetworkPacketCoreControlPlane) UserEquipmentMtuInBytesI
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/mobile_network_packet_core_control_plane azurerm_mobile_network_packet_core_control_plane} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/mobile_network_packet_core_control_plane azurerm_mobile_network_packet_core_control_plane} Resource.
 func NewMobileNetworkPacketCoreControlPlane(scope constructs.Construct, id *string, config *MobileNetworkPacketCoreControlPlaneConfig) MobileNetworkPacketCoreControlPlane {
 	_init_.Initialize()
 
@@ -741,7 +741,7 @@ func NewMobileNetworkPacketCoreControlPlane(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/mobile_network_packet_core_control_plane azurerm_mobile_network_packet_core_control_plane} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/mobile_network_packet_core_control_plane azurerm_mobile_network_packet_core_control_plane} Resource.
 func NewMobileNetworkPacketCoreControlPlane_Override(m MobileNetworkPacketCoreControlPlane, scope constructs.Construct, id *string, config *MobileNetworkPacketCoreControlPlaneConfig) {
 	_init_.Initialize()
 

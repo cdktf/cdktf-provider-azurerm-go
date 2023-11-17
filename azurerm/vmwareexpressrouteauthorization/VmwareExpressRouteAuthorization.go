@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/vmware_express_route_authorization azurerm_vmware_express_route_authorization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/vmware_express_route_authorization azurerm_vmware_express_route_authorization}.
 type VmwareExpressRouteAuthorization interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -389,7 +389,7 @@ func (j *jsiiProxy_VmwareExpressRouteAuthorization) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/vmware_express_route_authorization azurerm_vmware_express_route_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/vmware_express_route_authorization azurerm_vmware_express_route_authorization} Resource.
 func NewVmwareExpressRouteAuthorization(scope constructs.Construct, id *string, config *VmwareExpressRouteAuthorizationConfig) VmwareExpressRouteAuthorization {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewVmwareExpressRouteAuthorization(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/vmware_express_route_authorization azurerm_vmware_express_route_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/vmware_express_route_authorization azurerm_vmware_express_route_authorization} Resource.
 func NewVmwareExpressRouteAuthorization_Override(v VmwareExpressRouteAuthorization, scope constructs.Construct, id *string, config *VmwareExpressRouteAuthorizationConfig) {
 	_init_.Initialize()
 

@@ -50,6 +50,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
+			_jsii_.MemberProperty{JsiiProperty: "ftpPublishBasicAuthenticationEnabled", GoGetter: "FtpPublishBasicAuthenticationEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "ftpPublishBasicAuthenticationEnabledInput", GoGetter: "FtpPublishBasicAuthenticationEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "functionAppId", GoGetter: "FunctionAppId"},
 			_jsii_.MemberProperty{JsiiProperty: "functionAppIdInput", GoGetter: "FunctionAppIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "functionsExtensionVersion", GoGetter: "FunctionsExtensionVersion"},
@@ -110,6 +112,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetContentShareForceDisabled", GoMethod: "ResetContentShareForceDisabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDailyMemoryTimeQuota", GoMethod: "ResetDailyMemoryTimeQuota"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFtpPublishBasicAuthenticationEnabled", GoMethod: "ResetFtpPublishBasicAuthenticationEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFunctionsExtensionVersion", GoMethod: "ResetFunctionsExtensionVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpsOnly", GoMethod: "ResetHttpsOnly"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -126,6 +129,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVirtualNetworkSubnetId", GoMethod: "ResetVirtualNetworkSubnetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWebdeployPublishBasicAuthenticationEnabled", GoMethod: "ResetWebdeployPublishBasicAuthenticationEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "servicePlanId", GoGetter: "ServicePlanId"},
 			_jsii_.MemberProperty{JsiiProperty: "servicePlanIdInput", GoGetter: "ServicePlanIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "siteConfig", GoGetter: "SiteConfig"},
@@ -154,6 +158,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkSubnetId", GoGetter: "VirtualNetworkSubnetId"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkSubnetIdInput", GoGetter: "VirtualNetworkSubnetIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "webdeployPublishBasicAuthenticationEnabled", GoGetter: "WebdeployPublishBasicAuthenticationEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "webdeployPublishBasicAuthenticationEnabledInput", GoGetter: "WebdeployPublishBasicAuthenticationEnabledInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_LinuxFunctionAppSlot{}

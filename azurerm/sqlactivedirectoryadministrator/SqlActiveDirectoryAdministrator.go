@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/sql_active_directory_administrator azurerm_sql_active_directory_administrator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/sql_active_directory_administrator azurerm_sql_active_directory_administrator}.
 type SqlActiveDirectoryAdministrator interface {
 	cdktf.TerraformResource
 	AzureadAuthenticationOnly() interface{}
@@ -460,7 +460,7 @@ func (j *jsiiProxy_SqlActiveDirectoryAdministrator) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/sql_active_directory_administrator azurerm_sql_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/sql_active_directory_administrator azurerm_sql_active_directory_administrator} Resource.
 func NewSqlActiveDirectoryAdministrator(scope constructs.Construct, id *string, config *SqlActiveDirectoryAdministratorConfig) SqlActiveDirectoryAdministrator {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewSqlActiveDirectoryAdministrator(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.80.0/docs/resources/sql_active_directory_administrator azurerm_sql_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/sql_active_directory_administrator azurerm_sql_active_directory_administrator} Resource.
 func NewSqlActiveDirectoryAdministrator_Override(s SqlActiveDirectoryAdministrator, scope constructs.Construct, id *string, config *SqlActiveDirectoryAdministratorConfig) {
 	_init_.Initialize()
 
