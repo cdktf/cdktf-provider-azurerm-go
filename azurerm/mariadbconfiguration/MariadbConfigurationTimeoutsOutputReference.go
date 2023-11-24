@@ -49,9 +49,6 @@ type MariadbConfigurationTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Update() *string
-	SetUpdate(val *string)
-	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,7 +76,6 @@ type MariadbConfigurationTimeoutsOutputReference interface {
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
-	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -225,26 +221,6 @@ func (j *jsiiProxy_MariadbConfigurationTimeoutsOutputReference) TerraformResourc
 	return returns
 }
 
-func (j *jsiiProxy_MariadbConfigurationTimeoutsOutputReference) Update() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"update",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MariadbConfigurationTimeoutsOutputReference) UpdateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updateInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewMariadbConfigurationTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MariadbConfigurationTimeoutsOutputReference {
 	_init_.Initialize()
@@ -357,17 +333,6 @@ func (j *jsiiProxy_MariadbConfigurationTimeoutsOutputReference)SetTerraformResou
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MariadbConfigurationTimeoutsOutputReference)SetUpdate(val *string) {
-	if err := j.validateSetUpdateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"update",
 		val,
 	)
 }
@@ -578,14 +543,6 @@ func (m *jsiiProxy_MariadbConfigurationTimeoutsOutputReference) ResetRead() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetRead",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MariadbConfigurationTimeoutsOutputReference) ResetUpdate() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetUpdate",
 		nil, // no parameters
 	)
 }

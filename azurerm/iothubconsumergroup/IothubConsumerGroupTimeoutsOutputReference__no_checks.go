@@ -83,10 +83,6 @@ func (j *jsiiProxy_IothubConsumerGroupTimeoutsOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_IothubConsumerGroupTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewIothubConsumerGroupTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

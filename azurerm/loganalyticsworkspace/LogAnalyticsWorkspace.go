@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace}.
 type LogAnalyticsWorkspace interface {
 	cdktf.TerraformResource
 	AllowResourceOnlyPermissions() interface{}
@@ -53,6 +53,8 @@ type LogAnalyticsWorkspace interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() LogAnalyticsWorkspaceIdentityOutputReference
+	IdentityInput() *LogAnalyticsWorkspaceIdentity
 	IdInput() *string
 	InternetIngestionEnabled() interface{}
 	SetInternetIngestionEnabled(val interface{})
@@ -144,12 +146,14 @@ type LogAnalyticsWorkspace interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutIdentity(value *LogAnalyticsWorkspaceIdentity)
 	PutTimeouts(value *LogAnalyticsWorkspaceTimeouts)
 	ResetAllowResourceOnlyPermissions()
 	ResetCmkForQueryForced()
 	ResetDailyQuotaGb()
 	ResetDataCollectionRuleId()
 	ResetId()
+	ResetIdentity()
 	ResetInternetIngestionEnabled()
 	ResetInternetQueryEnabled()
 	ResetLocalAuthenticationDisabled()
@@ -341,6 +345,26 @@ func (j *jsiiProxy_LogAnalyticsWorkspace) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogAnalyticsWorkspace) Identity() LogAnalyticsWorkspaceIdentityOutputReference {
+	var returns LogAnalyticsWorkspaceIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogAnalyticsWorkspace) IdentityInput() *LogAnalyticsWorkspaceIdentity {
+	var returns *LogAnalyticsWorkspaceIdentity
+	_jsii_.Get(
+		j,
+		"identityInput",
 		&returns,
 	)
 	return returns
@@ -687,7 +711,7 @@ func (j *jsiiProxy_LogAnalyticsWorkspace) WorkspaceId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource.
 func NewLogAnalyticsWorkspace(scope constructs.Construct, id *string, config *LogAnalyticsWorkspaceConfig) LogAnalyticsWorkspace {
 	_init_.Initialize()
 
@@ -705,7 +729,7 @@ func NewLogAnalyticsWorkspace(scope constructs.Construct, id *string, config *Lo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource.
 func NewLogAnalyticsWorkspace_Override(l LogAnalyticsWorkspace, scope constructs.Construct, id *string, config *LogAnalyticsWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -1267,6 +1291,17 @@ func (l *jsiiProxy_LogAnalyticsWorkspace) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (l *jsiiProxy_LogAnalyticsWorkspace) PutIdentity(value *LogAnalyticsWorkspaceIdentity) {
+	if err := l.validatePutIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putIdentity",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LogAnalyticsWorkspace) PutTimeouts(value *LogAnalyticsWorkspaceTimeouts) {
 	if err := l.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1314,6 +1349,14 @@ func (l *jsiiProxy_LogAnalyticsWorkspace) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogAnalyticsWorkspace) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetIdentity",
 		nil, // no parameters
 	)
 }

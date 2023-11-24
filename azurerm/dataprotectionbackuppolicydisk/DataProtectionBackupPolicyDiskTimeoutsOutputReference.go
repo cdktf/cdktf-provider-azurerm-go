@@ -49,9 +49,6 @@ type DataProtectionBackupPolicyDiskTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Update() *string
-	SetUpdate(val *string)
-	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,7 +76,6 @@ type DataProtectionBackupPolicyDiskTimeoutsOutputReference interface {
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
-	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -225,26 +221,6 @@ func (j *jsiiProxy_DataProtectionBackupPolicyDiskTimeoutsOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataProtectionBackupPolicyDiskTimeoutsOutputReference) Update() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"update",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataProtectionBackupPolicyDiskTimeoutsOutputReference) UpdateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updateInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewDataProtectionBackupPolicyDiskTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataProtectionBackupPolicyDiskTimeoutsOutputReference {
 	_init_.Initialize()
@@ -357,17 +333,6 @@ func (j *jsiiProxy_DataProtectionBackupPolicyDiskTimeoutsOutputReference)SetTerr
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataProtectionBackupPolicyDiskTimeoutsOutputReference)SetUpdate(val *string) {
-	if err := j.validateSetUpdateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"update",
 		val,
 	)
 }
@@ -578,14 +543,6 @@ func (d *jsiiProxy_DataProtectionBackupPolicyDiskTimeoutsOutputReference) ResetR
 	_jsii_.InvokeVoid(
 		d,
 		"resetRead",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataProtectionBackupPolicyDiskTimeoutsOutputReference) ResetUpdate() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUpdate",
 		nil, // no parameters
 	)
 }

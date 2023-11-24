@@ -95,6 +95,10 @@ func (j *jsiiProxy_SpringCloudContainerDeployment) validateSetAddonJsonParameter
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudContainerDeployment) validateSetApplicationPerformanceMonitoringIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudContainerDeployment) validateSetArgumentsParameters(val *[]*string) error {
 	return nil
 }

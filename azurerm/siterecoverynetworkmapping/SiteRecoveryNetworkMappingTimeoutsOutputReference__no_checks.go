@@ -83,10 +83,6 @@ func (j *jsiiProxy_SiteRecoveryNetworkMappingTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_SiteRecoveryNetworkMappingTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewSiteRecoveryNetworkMappingTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

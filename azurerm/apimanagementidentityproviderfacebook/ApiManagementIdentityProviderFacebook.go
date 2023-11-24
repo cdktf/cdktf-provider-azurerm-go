@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/api_management_identity_provider_facebook azurerm_api_management_identity_provider_facebook}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/api_management_identity_provider_facebook azurerm_api_management_identity_provider_facebook}.
 type ApiManagementIdentityProviderFacebook interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -413,7 +413,7 @@ func (j *jsiiProxy_ApiManagementIdentityProviderFacebook) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/api_management_identity_provider_facebook azurerm_api_management_identity_provider_facebook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/api_management_identity_provider_facebook azurerm_api_management_identity_provider_facebook} Resource.
 func NewApiManagementIdentityProviderFacebook(scope constructs.Construct, id *string, config *ApiManagementIdentityProviderFacebookConfig) ApiManagementIdentityProviderFacebook {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewApiManagementIdentityProviderFacebook(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/api_management_identity_provider_facebook azurerm_api_management_identity_provider_facebook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/api_management_identity_provider_facebook azurerm_api_management_identity_provider_facebook} Resource.
 func NewApiManagementIdentityProviderFacebook_Override(a ApiManagementIdentityProviderFacebook, scope constructs.Construct, id *string, config *ApiManagementIdentityProviderFacebookConfig) {
 	_init_.Initialize()
 

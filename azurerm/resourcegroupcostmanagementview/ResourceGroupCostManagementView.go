@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/resource_group_cost_management_view azurerm_resource_group_cost_management_view}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/resource_group_cost_management_view azurerm_resource_group_cost_management_view}.
 type ResourceGroupCostManagementView interface {
 	cdktf.TerraformResource
 	Accumulated() interface{}
@@ -553,7 +553,7 @@ func (j *jsiiProxy_ResourceGroupCostManagementView) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/resource_group_cost_management_view azurerm_resource_group_cost_management_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/resource_group_cost_management_view azurerm_resource_group_cost_management_view} Resource.
 func NewResourceGroupCostManagementView(scope constructs.Construct, id *string, config *ResourceGroupCostManagementViewConfig) ResourceGroupCostManagementView {
 	_init_.Initialize()
 
@@ -571,7 +571,7 @@ func NewResourceGroupCostManagementView(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/resource_group_cost_management_view azurerm_resource_group_cost_management_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/resource_group_cost_management_view azurerm_resource_group_cost_management_view} Resource.
 func NewResourceGroupCostManagementView_Override(r ResourceGroupCostManagementView, scope constructs.Construct, id *string, config *ResourceGroupCostManagementViewConfig) {
 	_init_.Initialize()
 

@@ -5,7 +5,7 @@ package linuxvirtualmachine
 
 
 type LinuxVirtualMachineSecretCertificate struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/linux_virtual_machine#url LinuxVirtualMachine#url}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/linux_virtual_machine#url LinuxVirtualMachine#url}.
 	Url *string `field:"required" json:"url" yaml:"url"`
 }
 

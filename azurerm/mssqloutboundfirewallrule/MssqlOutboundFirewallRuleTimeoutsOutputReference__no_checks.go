@@ -83,10 +83,6 @@ func (j *jsiiProxy_MssqlOutboundFirewallRuleTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_MssqlOutboundFirewallRuleTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewMssqlOutboundFirewallRuleTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

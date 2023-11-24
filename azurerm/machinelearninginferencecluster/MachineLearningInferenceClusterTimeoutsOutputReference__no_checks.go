@@ -83,10 +83,6 @@ func (j *jsiiProxy_MachineLearningInferenceClusterTimeoutsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_MachineLearningInferenceClusterTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewMachineLearningInferenceClusterTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

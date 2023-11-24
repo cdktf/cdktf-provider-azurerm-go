@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/shared_image azurerm_shared_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/shared_image azurerm_shared_image}.
 type SharedImage interface {
 	cdktf.TerraformResource
 	AcceleratedNetworkSupportEnabled() interface{}
@@ -139,6 +139,9 @@ type SharedImage interface {
 	TrustedLaunchEnabled() interface{}
 	SetTrustedLaunchEnabled(val interface{})
 	TrustedLaunchEnabledInput() interface{}
+	TrustedLaunchSupported() interface{}
+	SetTrustedLaunchSupported(val interface{})
+	TrustedLaunchSupportedInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -199,6 +202,7 @@ type SharedImage interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetTrustedLaunchEnabled()
+	ResetTrustedLaunchSupported()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -914,8 +918,28 @@ func (j *jsiiProxy_SharedImage) TrustedLaunchEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SharedImage) TrustedLaunchSupported() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"trustedLaunchSupported",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/shared_image azurerm_shared_image} Resource.
+func (j *jsiiProxy_SharedImage) TrustedLaunchSupportedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"trustedLaunchSupportedInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/shared_image azurerm_shared_image} Resource.
 func NewSharedImage(scope constructs.Construct, id *string, config *SharedImageConfig) SharedImage {
 	_init_.Initialize()
 
@@ -933,7 +957,7 @@ func NewSharedImage(scope constructs.Construct, id *string, config *SharedImageC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/shared_image azurerm_shared_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/shared_image azurerm_shared_image} Resource.
 func NewSharedImage_Override(s SharedImage, scope constructs.Construct, id *string, config *SharedImageConfig) {
 	_init_.Initialize()
 
@@ -1272,6 +1296,17 @@ func (j *jsiiProxy_SharedImage)SetTrustedLaunchEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"trustedLaunchEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SharedImage)SetTrustedLaunchSupported(val interface{}) {
+	if err := j.validateSetTrustedLaunchSupportedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"trustedLaunchSupported",
 		val,
 	)
 }
@@ -1799,6 +1834,14 @@ func (s *jsiiProxy_SharedImage) ResetTrustedLaunchEnabled() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTrustedLaunchEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SharedImage) ResetTrustedLaunchSupported() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTrustedLaunchSupported",
 		nil, // no parameters
 	)
 }

@@ -83,10 +83,6 @@ func (j *jsiiProxy_ActiveDirectoryDomainServiceReplicaSetTimeoutsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ActiveDirectoryDomainServiceReplicaSetTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewActiveDirectoryDomainServiceReplicaSetTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

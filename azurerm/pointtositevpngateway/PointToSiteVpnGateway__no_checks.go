@@ -67,7 +67,7 @@ func (p *jsiiProxy_PointToSiteVpnGateway) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (p *jsiiProxy_PointToSiteVpnGateway) validatePutConnectionConfigurationParameters(value *PointToSiteVpnGatewayConnectionConfiguration) error {
+func (p *jsiiProxy_PointToSiteVpnGateway) validatePutConnectionConfigurationParameters(value interface{}) error {
 	return nil
 }
 

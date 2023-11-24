@@ -83,10 +83,6 @@ func (j *jsiiProxy_SubnetRouteTableAssociationTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SubnetRouteTableAssociationTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewSubnetRouteTableAssociationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

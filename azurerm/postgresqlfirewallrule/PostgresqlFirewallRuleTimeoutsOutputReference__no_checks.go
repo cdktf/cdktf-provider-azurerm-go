@@ -83,10 +83,6 @@ func (j *jsiiProxy_PostgresqlFirewallRuleTimeoutsOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_PostgresqlFirewallRuleTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewPostgresqlFirewallRuleTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

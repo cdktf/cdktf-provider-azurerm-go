@@ -49,6 +49,9 @@ type SpringCloudCustomizedAcceleratorGitRepositoryOutputReference interface {
 	IntervalInSeconds() *float64
 	SetIntervalInSeconds(val *float64)
 	IntervalInSecondsInput() *float64
+	Path() *string
+	SetPath(val *string)
+	PathInput() *string
 	SshAuth() SpringCloudCustomizedAcceleratorGitRepositorySshAuthOutputReference
 	SshAuthInput() *SpringCloudCustomizedAcceleratorGitRepositorySshAuth
 	// Experimental.
@@ -94,6 +97,7 @@ type SpringCloudCustomizedAcceleratorGitRepositoryOutputReference interface {
 	ResetCommit()
 	ResetGitTag()
 	ResetIntervalInSeconds()
+	ResetPath()
 	ResetSshAuth()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -280,6 +284,26 @@ func (j *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositoryOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositoryOutputReference) Path() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"path",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositoryOutputReference) PathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pathInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositoryOutputReference) SshAuth() SpringCloudCustomizedAcceleratorGitRepositorySshAuthOutputReference {
 	var returns SpringCloudCustomizedAcceleratorGitRepositorySshAuthOutputReference
 	_jsii_.Get(
@@ -452,6 +476,17 @@ func (j *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositoryOutputReference)
 	_jsii_.Set(
 		j,
 		"intervalInSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositoryOutputReference)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"path",
 		val,
 	)
 }
@@ -741,6 +776,14 @@ func (s *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositoryOutputReference)
 	_jsii_.InvokeVoid(
 		s,
 		"resetIntervalInSeconds",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositoryOutputReference) ResetPath() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPath",
 		nil, // no parameters
 	)
 }

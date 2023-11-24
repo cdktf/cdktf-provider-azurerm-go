@@ -30,8 +30,8 @@ type PointToSiteVpnGatewayConnectionConfigurationOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *PointToSiteVpnGatewayConnectionConfiguration
-	SetInternalValue(val *PointToSiteVpnGatewayConnectionConfiguration)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	InternetSecurityEnabled() interface{}
 	SetInternetSecurityEnabled(val interface{})
 	InternetSecurityEnabledInput() interface{}
@@ -133,8 +133,8 @@ func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference) InternalValue() *PointToSiteVpnGatewayConnectionConfiguration {
-	var returns *PointToSiteVpnGatewayConnectionConfiguration
+func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -244,29 +244,29 @@ func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference) 
 }
 
 
-func NewPointToSiteVpnGatewayConnectionConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PointToSiteVpnGatewayConnectionConfigurationOutputReference {
+func NewPointToSiteVpnGatewayConnectionConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PointToSiteVpnGatewayConnectionConfigurationOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewPointToSiteVpnGatewayConnectionConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewPointToSiteVpnGatewayConnectionConfigurationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.pointToSiteVpnGateway.PointToSiteVpnGatewayConnectionConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewPointToSiteVpnGatewayConnectionConfigurationOutputReference_Override(p PointToSiteVpnGatewayConnectionConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPointToSiteVpnGatewayConnectionConfigurationOutputReference_Override(p PointToSiteVpnGatewayConnectionConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.pointToSiteVpnGateway.PointToSiteVpnGatewayConnectionConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
 }
@@ -293,7 +293,7 @@ func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference)SetInternalValue(val *PointToSiteVpnGatewayConnectionConfiguration) {
+func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

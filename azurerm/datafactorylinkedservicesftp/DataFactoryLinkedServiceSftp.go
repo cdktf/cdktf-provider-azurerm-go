@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp}.
 type DataFactoryLinkedServiceSftp interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -650,7 +650,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSftp) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp} Resource.
 func NewDataFactoryLinkedServiceSftp(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceSftpConfig) DataFactoryLinkedServiceSftp {
 	_init_.Initialize()
 
@@ -668,7 +668,7 @@ func NewDataFactoryLinkedServiceSftp(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp} Resource.
 func NewDataFactoryLinkedServiceSftp_Override(d DataFactoryLinkedServiceSftp, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceSftpConfig) {
 	_init_.Initialize()
 

@@ -83,10 +83,6 @@ func (j *jsiiProxy_SubnetNatGatewayAssociationTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SubnetNatGatewayAssociationTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewSubnetNatGatewayAssociationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

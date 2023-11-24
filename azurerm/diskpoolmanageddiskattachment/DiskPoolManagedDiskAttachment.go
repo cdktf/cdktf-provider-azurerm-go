@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/disk_pool_managed_disk_attachment azurerm_disk_pool_managed_disk_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/disk_pool_managed_disk_attachment azurerm_disk_pool_managed_disk_attachment}.
 type DiskPoolManagedDiskAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_DiskPoolManagedDiskAttachment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/disk_pool_managed_disk_attachment azurerm_disk_pool_managed_disk_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/disk_pool_managed_disk_attachment azurerm_disk_pool_managed_disk_attachment} Resource.
 func NewDiskPoolManagedDiskAttachment(scope constructs.Construct, id *string, config *DiskPoolManagedDiskAttachmentConfig) DiskPoolManagedDiskAttachment {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewDiskPoolManagedDiskAttachment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/disk_pool_managed_disk_attachment azurerm_disk_pool_managed_disk_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/disk_pool_managed_disk_attachment azurerm_disk_pool_managed_disk_attachment} Resource.
 func NewDiskPoolManagedDiskAttachment_Override(d DiskPoolManagedDiskAttachment, scope constructs.Construct, id *string, config *DiskPoolManagedDiskAttachmentConfig) {
 	_init_.Initialize()
 

@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/gallery_application_version azurerm_gallery_application_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/gallery_application_version azurerm_gallery_application_version}.
 type GalleryApplicationVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConfigFile() *string
+	SetConfigFile(val *string)
+	ConfigFileInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -68,6 +71,9 @@ type GalleryApplicationVersion interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PackageFile() *string
+	SetPackageFile(val *string)
+	PackageFileInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -130,6 +136,7 @@ type GalleryApplicationVersion interface {
 	PutSource(value *GalleryApplicationVersionSource)
 	PutTargetRegion(value interface{})
 	PutTimeouts(value *GalleryApplicationVersionTimeouts)
+	ResetConfigFile()
 	ResetEnableHealthCheck()
 	ResetEndOfLifeDate()
 	ResetExcludeFromLatest()
@@ -137,6 +144,7 @@ type GalleryApplicationVersion interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPackageFile()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -159,6 +167,26 @@ func (j *jsiiProxy_GalleryApplicationVersion) CdktfStack() cdktf.TerraformStack 
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GalleryApplicationVersion) ConfigFile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configFile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GalleryApplicationVersion) ConfigFileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configFileInput",
 		&returns,
 	)
 	return returns
@@ -414,6 +442,26 @@ func (j *jsiiProxy_GalleryApplicationVersion) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GalleryApplicationVersion) PackageFile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"packageFile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GalleryApplicationVersion) PackageFileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"packageFileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GalleryApplicationVersion) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -555,7 +603,7 @@ func (j *jsiiProxy_GalleryApplicationVersion) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/gallery_application_version azurerm_gallery_application_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/gallery_application_version azurerm_gallery_application_version} Resource.
 func NewGalleryApplicationVersion(scope constructs.Construct, id *string, config *GalleryApplicationVersionConfig) GalleryApplicationVersion {
 	_init_.Initialize()
 
@@ -573,7 +621,7 @@ func NewGalleryApplicationVersion(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/gallery_application_version azurerm_gallery_application_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/gallery_application_version azurerm_gallery_application_version} Resource.
 func NewGalleryApplicationVersion_Override(g GalleryApplicationVersion, scope constructs.Construct, id *string, config *GalleryApplicationVersionConfig) {
 	_init_.Initialize()
 
@@ -581,6 +629,17 @@ func NewGalleryApplicationVersion_Override(g GalleryApplicationVersion, scope co
 		"@cdktf/provider-azurerm.galleryApplicationVersion.GalleryApplicationVersion",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GalleryApplicationVersion)SetConfigFile(val *string) {
+	if err := j.validateSetConfigFileParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"configFile",
+		val,
 	)
 }
 
@@ -706,6 +765,17 @@ func (j *jsiiProxy_GalleryApplicationVersion)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GalleryApplicationVersion)SetPackageFile(val *string) {
+	if err := j.validateSetPackageFileParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"packageFile",
 		val,
 	)
 }
@@ -1102,6 +1172,14 @@ func (g *jsiiProxy_GalleryApplicationVersion) PutTimeouts(value *GalleryApplicat
 	)
 }
 
+func (g *jsiiProxy_GalleryApplicationVersion) ResetConfigFile() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConfigFile",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GalleryApplicationVersion) ResetEnableHealthCheck() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1138,6 +1216,14 @@ func (g *jsiiProxy_GalleryApplicationVersion) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GalleryApplicationVersion) ResetPackageFile() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPackageFile",
 		nil, // no parameters
 	)
 }

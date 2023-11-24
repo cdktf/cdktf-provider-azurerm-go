@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/management_lock azurerm_management_lock}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/management_lock azurerm_management_lock}.
 type ManagementLock interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_ManagementLock) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/management_lock azurerm_management_lock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/management_lock azurerm_management_lock} Resource.
 func NewManagementLock(scope constructs.Construct, id *string, config *ManagementLockConfig) ManagementLock {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewManagementLock(scope constructs.Construct, id *string, config *Managemen
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/management_lock azurerm_management_lock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/management_lock azurerm_management_lock} Resource.
 func NewManagementLock_Override(m ManagementLock, scope constructs.Construct, id *string, config *ManagementLockConfig) {
 	_init_.Initialize()
 

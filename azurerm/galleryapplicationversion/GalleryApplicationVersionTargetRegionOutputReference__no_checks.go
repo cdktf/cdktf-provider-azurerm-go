@@ -59,6 +59,10 @@ func (j *jsiiProxy_GalleryApplicationVersionTargetRegionOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_GalleryApplicationVersionTargetRegionOutputReference) validateSetExcludeFromLatestParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GalleryApplicationVersionTargetRegionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

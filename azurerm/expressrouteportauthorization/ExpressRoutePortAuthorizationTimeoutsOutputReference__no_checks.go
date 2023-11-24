@@ -83,10 +83,6 @@ func (j *jsiiProxy_ExpressRoutePortAuthorizationTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ExpressRoutePortAuthorizationTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewExpressRoutePortAuthorizationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

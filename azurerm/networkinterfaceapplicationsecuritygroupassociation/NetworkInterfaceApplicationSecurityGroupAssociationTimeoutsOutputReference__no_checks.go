@@ -83,10 +83,6 @@ func (j *jsiiProxy_NetworkInterfaceApplicationSecurityGroupAssociationTimeoutsOu
 	return nil
 }
 
-func (j *jsiiProxy_NetworkInterfaceApplicationSecurityGroupAssociationTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewNetworkInterfaceApplicationSecurityGroupAssociationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

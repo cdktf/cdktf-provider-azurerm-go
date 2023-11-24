@@ -83,10 +83,6 @@ func (j *jsiiProxy_KustoClusterPrincipalAssignmentTimeoutsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_KustoClusterPrincipalAssignmentTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewKustoClusterPrincipalAssignmentTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

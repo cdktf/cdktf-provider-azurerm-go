@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/spring_cloud_customized_accelerator azurerm_spring_cloud_customized_accelerator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/spring_cloud_customized_accelerator azurerm_spring_cloud_customized_accelerator}.
 type SpringCloudCustomizedAccelerator interface {
 	cdktf.TerraformResource
 	AcceleratorTags() *[]*string
 	SetAcceleratorTags(val *[]*string)
 	AcceleratorTagsInput() *[]*string
+	AcceleratorType() *string
+	SetAcceleratorType(val *string)
+	AcceleratorTypeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -122,6 +125,7 @@ type SpringCloudCustomizedAccelerator interface {
 	PutGitRepository(value *SpringCloudCustomizedAcceleratorGitRepository)
 	PutTimeouts(value *SpringCloudCustomizedAcceleratorTimeouts)
 	ResetAcceleratorTags()
+	ResetAcceleratorType()
 	ResetDescription()
 	ResetDisplayName()
 	ResetIconUrl()
@@ -160,6 +164,26 @@ func (j *jsiiProxy_SpringCloudCustomizedAccelerator) AcceleratorTagsInput() *[]*
 	_jsii_.Get(
 		j,
 		"acceleratorTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudCustomizedAccelerator) AcceleratorType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"acceleratorType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudCustomizedAccelerator) AcceleratorTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"acceleratorTypeInput",
 		&returns,
 	)
 	return returns
@@ -486,7 +510,7 @@ func (j *jsiiProxy_SpringCloudCustomizedAccelerator) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/spring_cloud_customized_accelerator azurerm_spring_cloud_customized_accelerator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/spring_cloud_customized_accelerator azurerm_spring_cloud_customized_accelerator} Resource.
 func NewSpringCloudCustomizedAccelerator(scope constructs.Construct, id *string, config *SpringCloudCustomizedAcceleratorConfig) SpringCloudCustomizedAccelerator {
 	_init_.Initialize()
 
@@ -504,7 +528,7 @@ func NewSpringCloudCustomizedAccelerator(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/spring_cloud_customized_accelerator azurerm_spring_cloud_customized_accelerator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/spring_cloud_customized_accelerator azurerm_spring_cloud_customized_accelerator} Resource.
 func NewSpringCloudCustomizedAccelerator_Override(s SpringCloudCustomizedAccelerator, scope constructs.Construct, id *string, config *SpringCloudCustomizedAcceleratorConfig) {
 	_init_.Initialize()
 
@@ -522,6 +546,17 @@ func (j *jsiiProxy_SpringCloudCustomizedAccelerator)SetAcceleratorTags(val *[]*s
 	_jsii_.Set(
 		j,
 		"acceleratorTags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpringCloudCustomizedAccelerator)SetAcceleratorType(val *string) {
+	if err := j.validateSetAcceleratorTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"acceleratorType",
 		val,
 	)
 }
@@ -1004,6 +1039,14 @@ func (s *jsiiProxy_SpringCloudCustomizedAccelerator) ResetAcceleratorTags() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAcceleratorTags",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudCustomizedAccelerator) ResetAcceleratorType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAcceleratorType",
 		nil, // no parameters
 	)
 }

@@ -28,6 +28,9 @@ type GalleryApplicationVersionTargetRegionOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExcludeFromLatest() interface{}
+	SetExcludeFromLatest(val interface{})
+	ExcludeFromLatestInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -73,6 +76,7 @@ type GalleryApplicationVersionTargetRegionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetExcludeFromLatest()
 	ResetStorageAccountType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -114,6 +118,26 @@ func (j *jsiiProxy_GalleryApplicationVersionTargetRegionOutputReference) Creatio
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GalleryApplicationVersionTargetRegionOutputReference) ExcludeFromLatest() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeFromLatest",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GalleryApplicationVersionTargetRegionOutputReference) ExcludeFromLatestInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeFromLatestInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +289,17 @@ func (j *jsiiProxy_GalleryApplicationVersionTargetRegionOutputReference)SetCompl
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GalleryApplicationVersionTargetRegionOutputReference)SetExcludeFromLatest(val interface{}) {
+	if err := j.validateSetExcludeFromLatestParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeFromLatest",
 		val,
 	)
 }
@@ -519,6 +554,14 @@ func (g *jsiiProxy_GalleryApplicationVersionTargetRegionOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GalleryApplicationVersionTargetRegionOutputReference) ResetExcludeFromLatest() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExcludeFromLatest",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GalleryApplicationVersionTargetRegionOutputReference) ResetStorageAccountType() {

@@ -49,9 +49,6 @@ type MediaLiveEventOutputTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Update() *string
-	SetUpdate(val *string)
-	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,7 +76,6 @@ type MediaLiveEventOutputTimeoutsOutputReference interface {
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
-	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -225,26 +221,6 @@ func (j *jsiiProxy_MediaLiveEventOutputTimeoutsOutputReference) TerraformResourc
 	return returns
 }
 
-func (j *jsiiProxy_MediaLiveEventOutputTimeoutsOutputReference) Update() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"update",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MediaLiveEventOutputTimeoutsOutputReference) UpdateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updateInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewMediaLiveEventOutputTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MediaLiveEventOutputTimeoutsOutputReference {
 	_init_.Initialize()
@@ -357,17 +333,6 @@ func (j *jsiiProxy_MediaLiveEventOutputTimeoutsOutputReference)SetTerraformResou
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MediaLiveEventOutputTimeoutsOutputReference)SetUpdate(val *string) {
-	if err := j.validateSetUpdateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"update",
 		val,
 	)
 }
@@ -578,14 +543,6 @@ func (m *jsiiProxy_MediaLiveEventOutputTimeoutsOutputReference) ResetRead() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetRead",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MediaLiveEventOutputTimeoutsOutputReference) ResetUpdate() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetUpdate",
 		nil, // no parameters
 	)
 }

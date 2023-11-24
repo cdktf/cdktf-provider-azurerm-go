@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/point_to_site_vpn_gateway azurerm_point_to_site_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/point_to_site_vpn_gateway azurerm_point_to_site_vpn_gateway}.
 type PointToSiteVpnGateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,8 +21,8 @@ type PointToSiteVpnGateway interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
-	ConnectionConfiguration() PointToSiteVpnGatewayConnectionConfigurationOutputReference
-	ConnectionConfigurationInput() *PointToSiteVpnGatewayConnectionConfiguration
+	ConnectionConfiguration() PointToSiteVpnGatewayConnectionConfigurationList
+	ConnectionConfigurationInput() interface{}
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -128,7 +128,7 @@ type PointToSiteVpnGateway interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutConnectionConfiguration(value *PointToSiteVpnGatewayConnectionConfiguration)
+	PutConnectionConfiguration(value interface{})
 	PutTimeouts(value *PointToSiteVpnGatewayTimeouts)
 	ResetDnsServers()
 	ResetId()
@@ -173,8 +173,8 @@ func (j *jsiiProxy_PointToSiteVpnGateway) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PointToSiteVpnGateway) ConnectionConfiguration() PointToSiteVpnGatewayConnectionConfigurationOutputReference {
-	var returns PointToSiteVpnGatewayConnectionConfigurationOutputReference
+func (j *jsiiProxy_PointToSiteVpnGateway) ConnectionConfiguration() PointToSiteVpnGatewayConnectionConfigurationList {
+	var returns PointToSiteVpnGatewayConnectionConfigurationList
 	_jsii_.Get(
 		j,
 		"connectionConfiguration",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_PointToSiteVpnGateway) ConnectionConfiguration() PointToSiteV
 	return returns
 }
 
-func (j *jsiiProxy_PointToSiteVpnGateway) ConnectionConfigurationInput() *PointToSiteVpnGatewayConnectionConfiguration {
-	var returns *PointToSiteVpnGatewayConnectionConfiguration
+func (j *jsiiProxy_PointToSiteVpnGateway) ConnectionConfigurationInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"connectionConfigurationInput",
@@ -554,7 +554,7 @@ func (j *jsiiProxy_PointToSiteVpnGateway) VpnServerConfigurationIdInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/point_to_site_vpn_gateway azurerm_point_to_site_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/point_to_site_vpn_gateway azurerm_point_to_site_vpn_gateway} Resource.
 func NewPointToSiteVpnGateway(scope constructs.Construct, id *string, config *PointToSiteVpnGatewayConfig) PointToSiteVpnGateway {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewPointToSiteVpnGateway(scope constructs.Construct, id *string, config *Po
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/point_to_site_vpn_gateway azurerm_point_to_site_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/point_to_site_vpn_gateway azurerm_point_to_site_vpn_gateway} Resource.
 func NewPointToSiteVpnGateway_Override(p PointToSiteVpnGateway, scope constructs.Construct, id *string, config *PointToSiteVpnGatewayConfig) {
 	_init_.Initialize()
 
@@ -1079,7 +1079,7 @@ func (p *jsiiProxy_PointToSiteVpnGateway) OverrideLogicalId(newLogicalId *string
 	)
 }
 
-func (p *jsiiProxy_PointToSiteVpnGateway) PutConnectionConfiguration(value *PointToSiteVpnGatewayConnectionConfiguration) {
+func (p *jsiiProxy_PointToSiteVpnGateway) PutConnectionConfiguration(value interface{}) {
 	if err := p.validatePutConnectionConfigurationParameters(value); err != nil {
 		panic(err)
 	}

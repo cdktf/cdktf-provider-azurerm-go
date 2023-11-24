@@ -49,9 +49,6 @@ type ExpressRouteCircuitAuthorizationTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Update() *string
-	SetUpdate(val *string)
-	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,7 +76,6 @@ type ExpressRouteCircuitAuthorizationTimeoutsOutputReference interface {
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
-	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -225,26 +221,6 @@ func (j *jsiiProxy_ExpressRouteCircuitAuthorizationTimeoutsOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_ExpressRouteCircuitAuthorizationTimeoutsOutputReference) Update() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"update",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ExpressRouteCircuitAuthorizationTimeoutsOutputReference) UpdateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updateInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewExpressRouteCircuitAuthorizationTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ExpressRouteCircuitAuthorizationTimeoutsOutputReference {
 	_init_.Initialize()
@@ -357,17 +333,6 @@ func (j *jsiiProxy_ExpressRouteCircuitAuthorizationTimeoutsOutputReference)SetTe
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ExpressRouteCircuitAuthorizationTimeoutsOutputReference)SetUpdate(val *string) {
-	if err := j.validateSetUpdateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"update",
 		val,
 	)
 }
@@ -578,14 +543,6 @@ func (e *jsiiProxy_ExpressRouteCircuitAuthorizationTimeoutsOutputReference) Rese
 	_jsii_.InvokeVoid(
 		e,
 		"resetRead",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_ExpressRouteCircuitAuthorizationTimeoutsOutputReference) ResetUpdate() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetUpdate",
 		nil, // no parameters
 	)
 }

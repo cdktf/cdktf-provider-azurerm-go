@@ -230,14 +230,6 @@ func (j *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministratorTimeoutsO
 	return nil
 }
 
-func (j *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministratorTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewPostgresqlFlexibleServerActiveDirectoryAdministratorTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")

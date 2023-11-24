@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/custom_ip_prefix azurerm_custom_ip_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/custom_ip_prefix azurerm_custom_ip_prefix}.
 type CustomIpPrefix interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -581,7 +581,7 @@ func (j *jsiiProxy_CustomIpPrefix) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/custom_ip_prefix azurerm_custom_ip_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/custom_ip_prefix azurerm_custom_ip_prefix} Resource.
 func NewCustomIpPrefix(scope constructs.Construct, id *string, config *CustomIpPrefixConfig) CustomIpPrefix {
 	_init_.Initialize()
 
@@ -599,7 +599,7 @@ func NewCustomIpPrefix(scope constructs.Construct, id *string, config *CustomIpP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/custom_ip_prefix azurerm_custom_ip_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/custom_ip_prefix azurerm_custom_ip_prefix} Resource.
 func NewCustomIpPrefix_Override(c CustomIpPrefix, scope constructs.Construct, id *string, config *CustomIpPrefixConfig) {
 	_init_.Initialize()
 

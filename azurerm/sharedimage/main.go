@@ -111,6 +111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTrustedLaunchEnabled", GoMethod: "ResetTrustedLaunchEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTrustedLaunchSupported", GoMethod: "ResetTrustedLaunchSupported"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "specialized", GoGetter: "Specialized"},
@@ -128,6 +129,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "trustedLaunchEnabled", GoGetter: "TrustedLaunchEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "trustedLaunchEnabledInput", GoGetter: "TrustedLaunchEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "trustedLaunchSupported", GoGetter: "TrustedLaunchSupported"},
+			_jsii_.MemberProperty{JsiiProperty: "trustedLaunchSupportedInput", GoGetter: "TrustedLaunchSupportedInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SharedImage{}

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/cdn_frontdoor_rule azurerm_cdn_frontdoor_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/cdn_frontdoor_rule azurerm_cdn_frontdoor_rule}.
 type CdnFrontdoorRule interface {
 	cdktf.TerraformResource
 	Actions() CdnFrontdoorRuleActionsOutputReference
@@ -472,7 +472,7 @@ func (j *jsiiProxy_CdnFrontdoorRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/cdn_frontdoor_rule azurerm_cdn_frontdoor_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/cdn_frontdoor_rule azurerm_cdn_frontdoor_rule} Resource.
 func NewCdnFrontdoorRule(scope constructs.Construct, id *string, config *CdnFrontdoorRuleConfig) CdnFrontdoorRule {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewCdnFrontdoorRule(scope constructs.Construct, id *string, config *CdnFron
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/cdn_frontdoor_rule azurerm_cdn_frontdoor_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/cdn_frontdoor_rule azurerm_cdn_frontdoor_rule} Resource.
 func NewCdnFrontdoorRule_Override(c CdnFrontdoorRule, scope constructs.Construct, id *string, config *CdnFrontdoorRuleConfig) {
 	_init_.Initialize()
 

@@ -83,10 +83,6 @@ func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOut
 	return nil
 }
 
-func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewVirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/palo_alto_local_rulestack_rule azurerm_palo_alto_local_rulestack_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/palo_alto_local_rulestack_rule azurerm_palo_alto_local_rulestack_rule}.
 type PaloAltoLocalRulestackRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -770,7 +770,7 @@ func (j *jsiiProxy_PaloAltoLocalRulestackRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/palo_alto_local_rulestack_rule azurerm_palo_alto_local_rulestack_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/palo_alto_local_rulestack_rule azurerm_palo_alto_local_rulestack_rule} Resource.
 func NewPaloAltoLocalRulestackRule(scope constructs.Construct, id *string, config *PaloAltoLocalRulestackRuleConfig) PaloAltoLocalRulestackRule {
 	_init_.Initialize()
 
@@ -788,7 +788,7 @@ func NewPaloAltoLocalRulestackRule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/palo_alto_local_rulestack_rule azurerm_palo_alto_local_rulestack_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/palo_alto_local_rulestack_rule azurerm_palo_alto_local_rulestack_rule} Resource.
 func NewPaloAltoLocalRulestackRule_Override(p PaloAltoLocalRulestackRule, scope constructs.Construct, id *string, config *PaloAltoLocalRulestackRuleConfig) {
 	_init_.Initialize()
 

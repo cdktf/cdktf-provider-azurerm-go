@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/sentinel_alert_rule_ms_security_incident azurerm_sentinel_alert_rule_ms_security_incident}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/sentinel_alert_rule_ms_security_incident azurerm_sentinel_alert_rule_ms_security_incident}.
 type SentinelAlertRuleMsSecurityIncident interface {
 	cdktf.TerraformResource
 	AlertRuleTemplateGuid() *string
@@ -556,7 +556,7 @@ func (j *jsiiProxy_SentinelAlertRuleMsSecurityIncident) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/sentinel_alert_rule_ms_security_incident azurerm_sentinel_alert_rule_ms_security_incident} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/sentinel_alert_rule_ms_security_incident azurerm_sentinel_alert_rule_ms_security_incident} Resource.
 func NewSentinelAlertRuleMsSecurityIncident(scope constructs.Construct, id *string, config *SentinelAlertRuleMsSecurityIncidentConfig) SentinelAlertRuleMsSecurityIncident {
 	_init_.Initialize()
 
@@ -574,7 +574,7 @@ func NewSentinelAlertRuleMsSecurityIncident(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/sentinel_alert_rule_ms_security_incident azurerm_sentinel_alert_rule_ms_security_incident} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/sentinel_alert_rule_ms_security_incident azurerm_sentinel_alert_rule_ms_security_incident} Resource.
 func NewSentinelAlertRuleMsSecurityIncident_Override(s SentinelAlertRuleMsSecurityIncident, scope constructs.Construct, id *string, config *SentinelAlertRuleMsSecurityIncidentConfig) {
 	_init_.Initialize()
 

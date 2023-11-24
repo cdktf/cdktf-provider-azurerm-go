@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system}.
 type ManagedLustreFileSystem interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -57,6 +57,7 @@ type ManagedLustreFileSystem interface {
 	LocationInput() *string
 	MaintenanceWindow() ManagedLustreFileSystemMaintenanceWindowOutputReference
 	MaintenanceWindowInput() *ManagedLustreFileSystemMaintenanceWindow
+	MgsAddress() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -370,6 +371,16 @@ func (j *jsiiProxy_ManagedLustreFileSystem) MaintenanceWindowInput() *ManagedLus
 	return returns
 }
 
+func (j *jsiiProxy_ManagedLustreFileSystem) MgsAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mgsAddress",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ManagedLustreFileSystem) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -601,7 +612,7 @@ func (j *jsiiProxy_ManagedLustreFileSystem) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system} Resource.
 func NewManagedLustreFileSystem(scope constructs.Construct, id *string, config *ManagedLustreFileSystemConfig) ManagedLustreFileSystem {
 	_init_.Initialize()
 
@@ -619,7 +630,7 @@ func NewManagedLustreFileSystem(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system} Resource.
 func NewManagedLustreFileSystem_Override(m ManagedLustreFileSystem, scope constructs.Construct, id *string, config *ManagedLustreFileSystemConfig) {
 	_init_.Initialize()
 

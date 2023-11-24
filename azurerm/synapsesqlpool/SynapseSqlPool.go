@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/synapse_sql_pool azurerm_synapse_sql_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/synapse_sql_pool azurerm_synapse_sql_pool}.
 type SynapseSqlPool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -582,7 +582,7 @@ func (j *jsiiProxy_SynapseSqlPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/synapse_sql_pool azurerm_synapse_sql_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/synapse_sql_pool azurerm_synapse_sql_pool} Resource.
 func NewSynapseSqlPool(scope constructs.Construct, id *string, config *SynapseSqlPoolConfig) SynapseSqlPool {
 	_init_.Initialize()
 
@@ -600,7 +600,7 @@ func NewSynapseSqlPool(scope constructs.Construct, id *string, config *SynapseSq
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/synapse_sql_pool azurerm_synapse_sql_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/synapse_sql_pool azurerm_synapse_sql_pool} Resource.
 func NewSynapseSqlPool_Override(s SynapseSqlPool, scope constructs.Construct, id *string, config *SynapseSqlPoolConfig) {
 	_init_.Initialize()
 

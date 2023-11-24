@@ -91,6 +91,10 @@ func (j *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositoryOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositoryOutputReference) validateSetPathParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudCustomizedAcceleratorGitRepositoryOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

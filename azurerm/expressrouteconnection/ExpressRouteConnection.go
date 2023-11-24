@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/express_route_connection azurerm_express_route_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/express_route_connection azurerm_express_route_connection}.
 type ExpressRouteConnection interface {
 	cdktf.TerraformResource
 	AuthorizationKey() *string
@@ -510,7 +510,7 @@ func (j *jsiiProxy_ExpressRouteConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/express_route_connection azurerm_express_route_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/express_route_connection azurerm_express_route_connection} Resource.
 func NewExpressRouteConnection(scope constructs.Construct, id *string, config *ExpressRouteConnectionConfig) ExpressRouteConnection {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewExpressRouteConnection(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/express_route_connection azurerm_express_route_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/express_route_connection azurerm_express_route_connection} Resource.
 func NewExpressRouteConnection_Override(e ExpressRouteConnection, scope constructs.Construct, id *string, config *ExpressRouteConnectionConfig) {
 	_init_.Initialize()
 

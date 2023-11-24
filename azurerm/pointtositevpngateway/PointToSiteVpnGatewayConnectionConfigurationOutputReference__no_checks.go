@@ -67,7 +67,7 @@ func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference) validateSetInternalValueParameters(val *PointToSiteVpnGatewayConnectionConfiguration) error {
+func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -87,7 +87,7 @@ func (j *jsiiProxy_PointToSiteVpnGatewayConnectionConfigurationOutputReference) 
 	return nil
 }
 
-func validateNewPointToSiteVpnGatewayConnectionConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPointToSiteVpnGatewayConnectionConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

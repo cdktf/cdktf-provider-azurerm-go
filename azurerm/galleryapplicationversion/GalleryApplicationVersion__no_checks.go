@@ -99,6 +99,10 @@ func validateGalleryApplicationVersion_IsTerraformResourceParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_GalleryApplicationVersion) validateSetConfigFileParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GalleryApplicationVersion) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -136,6 +140,10 @@ func (j *jsiiProxy_GalleryApplicationVersion) validateSetLocationParameters(val 
 }
 
 func (j *jsiiProxy_GalleryApplicationVersion) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GalleryApplicationVersion) validateSetPackageFileParameters(val *string) error {
 	return nil
 }
 

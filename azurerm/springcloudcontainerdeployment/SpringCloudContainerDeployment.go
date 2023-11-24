@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/spring_cloud_container_deployment azurerm_spring_cloud_container_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/spring_cloud_container_deployment azurerm_spring_cloud_container_deployment}.
 type SpringCloudContainerDeployment interface {
 	cdktf.TerraformResource
 	AddonJson() *string
 	SetAddonJson(val *string)
 	AddonJsonInput() *string
+	ApplicationPerformanceMonitoringIds() *[]*string
+	SetApplicationPerformanceMonitoringIds(val *[]*string)
+	ApplicationPerformanceMonitoringIdsInput() *[]*string
 	Arguments() *[]*string
 	SetArguments(val *[]*string)
 	ArgumentsInput() *[]*string
@@ -134,6 +137,7 @@ type SpringCloudContainerDeployment interface {
 	PutQuota(value *SpringCloudContainerDeploymentQuota)
 	PutTimeouts(value *SpringCloudContainerDeploymentTimeouts)
 	ResetAddonJson()
+	ResetApplicationPerformanceMonitoringIds()
 	ResetArguments()
 	ResetCommands()
 	ResetEnvironmentVariables()
@@ -175,6 +179,26 @@ func (j *jsiiProxy_SpringCloudContainerDeployment) AddonJsonInput() *string {
 	_jsii_.Get(
 		j,
 		"addonJsonInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudContainerDeployment) ApplicationPerformanceMonitoringIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"applicationPerformanceMonitoringIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudContainerDeployment) ApplicationPerformanceMonitoringIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"applicationPerformanceMonitoringIdsInput",
 		&returns,
 	)
 	return returns
@@ -581,7 +605,7 @@ func (j *jsiiProxy_SpringCloudContainerDeployment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/spring_cloud_container_deployment azurerm_spring_cloud_container_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/spring_cloud_container_deployment azurerm_spring_cloud_container_deployment} Resource.
 func NewSpringCloudContainerDeployment(scope constructs.Construct, id *string, config *SpringCloudContainerDeploymentConfig) SpringCloudContainerDeployment {
 	_init_.Initialize()
 
@@ -599,7 +623,7 @@ func NewSpringCloudContainerDeployment(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/spring_cloud_container_deployment azurerm_spring_cloud_container_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/spring_cloud_container_deployment azurerm_spring_cloud_container_deployment} Resource.
 func NewSpringCloudContainerDeployment_Override(s SpringCloudContainerDeployment, scope constructs.Construct, id *string, config *SpringCloudContainerDeploymentConfig) {
 	_init_.Initialize()
 
@@ -617,6 +641,17 @@ func (j *jsiiProxy_SpringCloudContainerDeployment)SetAddonJson(val *string) {
 	_jsii_.Set(
 		j,
 		"addonJson",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpringCloudContainerDeployment)SetApplicationPerformanceMonitoringIds(val *[]*string) {
+	if err := j.validateSetApplicationPerformanceMonitoringIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"applicationPerformanceMonitoringIds",
 		val,
 	)
 }
@@ -1143,6 +1178,14 @@ func (s *jsiiProxy_SpringCloudContainerDeployment) ResetAddonJson() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAddonJson",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudContainerDeployment) ResetApplicationPerformanceMonitoringIds() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetApplicationPerformanceMonitoringIds",
 		nil, // no parameters
 	)
 }

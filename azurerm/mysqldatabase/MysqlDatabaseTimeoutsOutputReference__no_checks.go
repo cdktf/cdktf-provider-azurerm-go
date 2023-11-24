@@ -83,10 +83,6 @@ func (j *jsiiProxy_MysqlDatabaseTimeoutsOutputReference) validateSetTerraformRes
 	return nil
 }
 
-func (j *jsiiProxy_MysqlDatabaseTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewMysqlDatabaseTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

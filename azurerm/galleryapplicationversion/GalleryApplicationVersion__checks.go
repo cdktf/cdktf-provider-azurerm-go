@@ -295,6 +295,14 @@ func validateGalleryApplicationVersion_IsTerraformResourceParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_GalleryApplicationVersion) validateSetConfigFileParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GalleryApplicationVersion) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -466,6 +474,14 @@ func (j *jsiiProxy_GalleryApplicationVersion) validateSetLocationParameters(val 
 }
 
 func (j *jsiiProxy_GalleryApplicationVersion) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GalleryApplicationVersion) validateSetPackageFileParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

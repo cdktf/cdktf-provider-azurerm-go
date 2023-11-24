@@ -207,6 +207,10 @@ func (j *jsiiProxy_SharedImage) validateSetTrustedLaunchEnabledParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_SharedImage) validateSetTrustedLaunchSupportedParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewSharedImageParameters(scope constructs.Construct, id *string, config *SharedImageConfig) error {
 	return nil
 }

@@ -49,9 +49,6 @@ type KustoClusterPrincipalAssignmentTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Update() *string
-	SetUpdate(val *string)
-	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,7 +76,6 @@ type KustoClusterPrincipalAssignmentTimeoutsOutputReference interface {
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
-	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -225,26 +221,6 @@ func (j *jsiiProxy_KustoClusterPrincipalAssignmentTimeoutsOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_KustoClusterPrincipalAssignmentTimeoutsOutputReference) Update() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"update",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KustoClusterPrincipalAssignmentTimeoutsOutputReference) UpdateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updateInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewKustoClusterPrincipalAssignmentTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KustoClusterPrincipalAssignmentTimeoutsOutputReference {
 	_init_.Initialize()
@@ -357,17 +333,6 @@ func (j *jsiiProxy_KustoClusterPrincipalAssignmentTimeoutsOutputReference)SetTer
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KustoClusterPrincipalAssignmentTimeoutsOutputReference)SetUpdate(val *string) {
-	if err := j.validateSetUpdateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"update",
 		val,
 	)
 }
@@ -578,14 +543,6 @@ func (k *jsiiProxy_KustoClusterPrincipalAssignmentTimeoutsOutputReference) Reset
 	_jsii_.InvokeVoid(
 		k,
 		"resetRead",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KustoClusterPrincipalAssignmentTimeoutsOutputReference) ResetUpdate() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetUpdate",
 		nil, // no parameters
 	)
 }

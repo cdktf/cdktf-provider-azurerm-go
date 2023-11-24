@@ -49,9 +49,6 @@ type VirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOutputReference i
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Update() *string
-	SetUpdate(val *string)
-	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,7 +76,6 @@ type VirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOutputReference i
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
-	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -225,26 +221,6 @@ func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOut
 	return returns
 }
 
-func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOutputReference) Update() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"update",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOutputReference) UpdateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updateInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewVirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOutputReference {
 	_init_.Initialize()
@@ -357,17 +333,6 @@ func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOut
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOutputReference)SetUpdate(val *string) {
-	if err := j.validateSetUpdateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"update",
 		val,
 	)
 }
@@ -578,14 +543,6 @@ func (v *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOut
 	_jsii_.InvokeVoid(
 		v,
 		"resetRead",
-		nil, // no parameters
-	)
-}
-
-func (v *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociationTimeoutsOutputReference) ResetUpdate() {
-	_jsii_.InvokeVoid(
-		v,
-		"resetUpdate",
 		nil, // no parameters
 	)
 }

@@ -83,10 +83,6 @@ func (j *jsiiProxy_MonitorPrivateLinkScopedServiceTimeoutsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_MonitorPrivateLinkScopedServiceTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewMonitorPrivateLinkScopedServiceTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

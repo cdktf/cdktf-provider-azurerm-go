@@ -49,9 +49,6 @@ type IothubConsumerGroupTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Update() *string
-	SetUpdate(val *string)
-	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,7 +76,6 @@ type IothubConsumerGroupTimeoutsOutputReference interface {
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
-	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -225,26 +221,6 @@ func (j *jsiiProxy_IothubConsumerGroupTimeoutsOutputReference) TerraformResource
 	return returns
 }
 
-func (j *jsiiProxy_IothubConsumerGroupTimeoutsOutputReference) Update() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"update",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_IothubConsumerGroupTimeoutsOutputReference) UpdateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updateInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewIothubConsumerGroupTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IothubConsumerGroupTimeoutsOutputReference {
 	_init_.Initialize()
@@ -357,17 +333,6 @@ func (j *jsiiProxy_IothubConsumerGroupTimeoutsOutputReference)SetTerraformResour
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_IothubConsumerGroupTimeoutsOutputReference)SetUpdate(val *string) {
-	if err := j.validateSetUpdateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"update",
 		val,
 	)
 }
@@ -578,14 +543,6 @@ func (i *jsiiProxy_IothubConsumerGroupTimeoutsOutputReference) ResetRead() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetRead",
-		nil, // no parameters
-	)
-}
-
-func (i *jsiiProxy_IothubConsumerGroupTimeoutsOutputReference) ResetUpdate() {
-	_jsii_.InvokeVoid(
-		i,
-		"resetUpdate",
 		nil, // no parameters
 	)
 }

@@ -49,9 +49,6 @@ type ExpressRoutePortAuthorizationTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Update() *string
-	SetUpdate(val *string)
-	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,7 +76,6 @@ type ExpressRoutePortAuthorizationTimeoutsOutputReference interface {
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
-	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -225,26 +221,6 @@ func (j *jsiiProxy_ExpressRoutePortAuthorizationTimeoutsOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ExpressRoutePortAuthorizationTimeoutsOutputReference) Update() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"update",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ExpressRoutePortAuthorizationTimeoutsOutputReference) UpdateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updateInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewExpressRoutePortAuthorizationTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ExpressRoutePortAuthorizationTimeoutsOutputReference {
 	_init_.Initialize()
@@ -357,17 +333,6 @@ func (j *jsiiProxy_ExpressRoutePortAuthorizationTimeoutsOutputReference)SetTerra
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ExpressRoutePortAuthorizationTimeoutsOutputReference)SetUpdate(val *string) {
-	if err := j.validateSetUpdateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"update",
 		val,
 	)
 }
@@ -578,14 +543,6 @@ func (e *jsiiProxy_ExpressRoutePortAuthorizationTimeoutsOutputReference) ResetRe
 	_jsii_.InvokeVoid(
 		e,
 		"resetRead",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_ExpressRoutePortAuthorizationTimeoutsOutputReference) ResetUpdate() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetUpdate",
 		nil, // no parameters
 	)
 }

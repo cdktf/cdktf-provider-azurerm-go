@@ -85,6 +85,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCitusVersion", GoMethod: "ResetCitusVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCoordinatorPublicIpAccessEnabled", GoMethod: "ResetCoordinatorPublicIpAccessEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCoordinatorServerEdition", GoMethod: "ResetCoordinatorServerEdition"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCoordinatorStorageQuotaInMb", GoMethod: "ResetCoordinatorStorageQuotaInMb"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCoordinatorVcoreCount", GoMethod: "ResetCoordinatorVcoreCount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHaEnabled", GoMethod: "ResetHaEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaintenanceWindow", GoMethod: "ResetMaintenanceWindow"},

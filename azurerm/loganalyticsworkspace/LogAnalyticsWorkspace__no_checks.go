@@ -67,6 +67,10 @@ func (l *jsiiProxy_LogAnalyticsWorkspace) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (l *jsiiProxy_LogAnalyticsWorkspace) validatePutIdentityParameters(value *LogAnalyticsWorkspaceIdentity) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsWorkspace) validatePutTimeoutsParameters(value *LogAnalyticsWorkspaceTimeouts) error {
 	return nil
 }

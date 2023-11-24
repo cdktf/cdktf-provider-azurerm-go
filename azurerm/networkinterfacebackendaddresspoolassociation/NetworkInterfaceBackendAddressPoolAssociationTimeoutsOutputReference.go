@@ -49,9 +49,6 @@ type NetworkInterfaceBackendAddressPoolAssociationTimeoutsOutputReference interf
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Update() *string
-	SetUpdate(val *string)
-	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,7 +76,6 @@ type NetworkInterfaceBackendAddressPoolAssociationTimeoutsOutputReference interf
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
-	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -225,26 +221,6 @@ func (j *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociationTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociationTimeoutsOutputReference) Update() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"update",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociationTimeoutsOutputReference) UpdateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updateInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewNetworkInterfaceBackendAddressPoolAssociationTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkInterfaceBackendAddressPoolAssociationTimeoutsOutputReference {
 	_init_.Initialize()
@@ -357,17 +333,6 @@ func (j *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociationTimeoutsOutputRe
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociationTimeoutsOutputReference)SetUpdate(val *string) {
-	if err := j.validateSetUpdateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"update",
 		val,
 	)
 }
@@ -578,14 +543,6 @@ func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociationTimeoutsOutputRe
 	_jsii_.InvokeVoid(
 		n,
 		"resetRead",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociationTimeoutsOutputReference) ResetUpdate() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetUpdate",
 		nil, // no parameters
 	)
 }

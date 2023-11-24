@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/data-sources/subscriptions azurerm_subscriptions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/data-sources/subscriptions azurerm_subscriptions}.
 type DataAzurermSubscriptions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_DataAzurermSubscriptions) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/data-sources/subscriptions azurerm_subscriptions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/data-sources/subscriptions azurerm_subscriptions} Data Source.
 func NewDataAzurermSubscriptions(scope constructs.Construct, id *string, config *DataAzurermSubscriptionsConfig) DataAzurermSubscriptions {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewDataAzurermSubscriptions(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/data-sources/subscriptions azurerm_subscriptions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/data-sources/subscriptions azurerm_subscriptions} Data Source.
 func NewDataAzurermSubscriptions_Override(d DataAzurermSubscriptions, scope constructs.Construct, id *string, config *DataAzurermSubscriptionsConfig) {
 	_init_.Initialize()
 

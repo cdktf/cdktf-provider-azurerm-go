@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/data_factory_dataset_parquet azurerm_data_factory_dataset_parquet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/data_factory_dataset_parquet azurerm_data_factory_dataset_parquet}.
 type DataFactoryDatasetParquet interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -654,7 +654,7 @@ func (j *jsiiProxy_DataFactoryDatasetParquet) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/data_factory_dataset_parquet azurerm_data_factory_dataset_parquet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/data_factory_dataset_parquet azurerm_data_factory_dataset_parquet} Resource.
 func NewDataFactoryDatasetParquet(scope constructs.Construct, id *string, config *DataFactoryDatasetParquetConfig) DataFactoryDatasetParquet {
 	_init_.Initialize()
 
@@ -672,7 +672,7 @@ func NewDataFactoryDatasetParquet(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/data_factory_dataset_parquet azurerm_data_factory_dataset_parquet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/data_factory_dataset_parquet azurerm_data_factory_dataset_parquet} Resource.
 func NewDataFactoryDatasetParquet_Override(d DataFactoryDatasetParquet, scope constructs.Construct, id *string, config *DataFactoryDatasetParquetConfig) {
 	_init_.Initialize()
 

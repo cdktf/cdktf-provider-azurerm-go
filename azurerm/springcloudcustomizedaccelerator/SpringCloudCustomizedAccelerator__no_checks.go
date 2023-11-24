@@ -95,6 +95,10 @@ func (j *jsiiProxy_SpringCloudCustomizedAccelerator) validateSetAcceleratorTagsP
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudCustomizedAccelerator) validateSetAcceleratorTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudCustomizedAccelerator) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

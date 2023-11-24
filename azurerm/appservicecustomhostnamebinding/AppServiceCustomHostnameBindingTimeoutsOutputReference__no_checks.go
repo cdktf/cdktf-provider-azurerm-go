@@ -83,10 +83,6 @@ func (j *jsiiProxy_AppServiceCustomHostnameBindingTimeoutsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_AppServiceCustomHostnameBindingTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewAppServiceCustomHostnameBindingTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

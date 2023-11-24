@@ -83,10 +83,6 @@ func (j *jsiiProxy_NetworkInterfaceApplicationGatewayBackendAddressPoolAssociati
 	return nil
 }
 
-func (j *jsiiProxy_NetworkInterfaceApplicationGatewayBackendAddressPoolAssociationTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewNetworkInterfaceApplicationGatewayBackendAddressPoolAssociationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

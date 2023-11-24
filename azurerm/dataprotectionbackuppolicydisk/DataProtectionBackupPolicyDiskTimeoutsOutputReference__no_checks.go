@@ -83,10 +83,6 @@ func (j *jsiiProxy_DataProtectionBackupPolicyDiskTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataProtectionBackupPolicyDiskTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataProtectionBackupPolicyDiskTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

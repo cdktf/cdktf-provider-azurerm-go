@@ -83,10 +83,6 @@ func (j *jsiiProxy_StaticSiteCustomDomainTimeoutsOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_StaticSiteCustomDomainTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewStaticSiteCustomDomainTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

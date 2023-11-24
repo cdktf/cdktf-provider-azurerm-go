@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/palo_alto_local_rulestack_prefix_list azurerm_palo_alto_local_rulestack_prefix_list}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/palo_alto_local_rulestack_prefix_list azurerm_palo_alto_local_rulestack_prefix_list}.
 type PaloAltoLocalRulestackPrefixList interface {
 	cdktf.TerraformResource
 	AuditComment() *string
@@ -438,7 +438,7 @@ func (j *jsiiProxy_PaloAltoLocalRulestackPrefixList) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/palo_alto_local_rulestack_prefix_list azurerm_palo_alto_local_rulestack_prefix_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/palo_alto_local_rulestack_prefix_list azurerm_palo_alto_local_rulestack_prefix_list} Resource.
 func NewPaloAltoLocalRulestackPrefixList(scope constructs.Construct, id *string, config *PaloAltoLocalRulestackPrefixListConfig) PaloAltoLocalRulestackPrefixList {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewPaloAltoLocalRulestackPrefixList(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.81.0/docs/resources/palo_alto_local_rulestack_prefix_list azurerm_palo_alto_local_rulestack_prefix_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/palo_alto_local_rulestack_prefix_list azurerm_palo_alto_local_rulestack_prefix_list} Resource.
 func NewPaloAltoLocalRulestackPrefixList_Override(p PaloAltoLocalRulestackPrefixList, scope constructs.Construct, id *string, config *PaloAltoLocalRulestackPrefixListConfig) {
 	_init_.Initialize()
 

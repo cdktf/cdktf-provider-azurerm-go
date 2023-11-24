@@ -83,10 +83,6 @@ func (j *jsiiProxy_AppServicePublicCertificateTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_AppServicePublicCertificateTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewAppServicePublicCertificateTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

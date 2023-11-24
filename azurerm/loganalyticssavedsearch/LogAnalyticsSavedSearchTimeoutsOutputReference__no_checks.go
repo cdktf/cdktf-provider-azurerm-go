@@ -83,10 +83,6 @@ func (j *jsiiProxy_LogAnalyticsSavedSearchTimeoutsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_LogAnalyticsSavedSearchTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewLogAnalyticsSavedSearchTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

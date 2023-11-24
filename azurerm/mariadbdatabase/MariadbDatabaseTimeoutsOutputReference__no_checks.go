@@ -83,10 +83,6 @@ func (j *jsiiProxy_MariadbDatabaseTimeoutsOutputReference) validateSetTerraformR
 	return nil
 }
 
-func (j *jsiiProxy_MariadbDatabaseTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewMariadbDatabaseTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

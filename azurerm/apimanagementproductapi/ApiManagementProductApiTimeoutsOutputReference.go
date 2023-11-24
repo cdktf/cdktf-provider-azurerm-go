@@ -49,9 +49,6 @@ type ApiManagementProductApiTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Update() *string
-	SetUpdate(val *string)
-	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,7 +76,6 @@ type ApiManagementProductApiTimeoutsOutputReference interface {
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
-	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -225,26 +221,6 @@ func (j *jsiiProxy_ApiManagementProductApiTimeoutsOutputReference) TerraformReso
 	return returns
 }
 
-func (j *jsiiProxy_ApiManagementProductApiTimeoutsOutputReference) Update() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"update",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiManagementProductApiTimeoutsOutputReference) UpdateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updateInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewApiManagementProductApiTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApiManagementProductApiTimeoutsOutputReference {
 	_init_.Initialize()
@@ -357,17 +333,6 @@ func (j *jsiiProxy_ApiManagementProductApiTimeoutsOutputReference)SetTerraformRe
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApiManagementProductApiTimeoutsOutputReference)SetUpdate(val *string) {
-	if err := j.validateSetUpdateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"update",
 		val,
 	)
 }
@@ -578,14 +543,6 @@ func (a *jsiiProxy_ApiManagementProductApiTimeoutsOutputReference) ResetRead() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRead",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApiManagementProductApiTimeoutsOutputReference) ResetUpdate() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetUpdate",
 		nil, // no parameters
 	)
 }
