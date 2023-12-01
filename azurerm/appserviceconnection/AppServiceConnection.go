@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/app_service_connection azurerm_app_service_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/app_service_connection azurerm_app_service_connection}.
 type AppServiceConnection interface {
 	cdktf.TerraformResource
 	AppServiceId() *string
@@ -485,7 +485,7 @@ func (j *jsiiProxy_AppServiceConnection) VnetSolutionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/app_service_connection azurerm_app_service_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/app_service_connection azurerm_app_service_connection} Resource.
 func NewAppServiceConnection(scope constructs.Construct, id *string, config *AppServiceConnectionConfig) AppServiceConnection {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewAppServiceConnection(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/app_service_connection azurerm_app_service_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/app_service_connection azurerm_app_service_connection} Resource.
 func NewAppServiceConnection_Override(a AppServiceConnection, scope constructs.Construct, id *string, config *AppServiceConnectionConfig) {
 	_init_.Initialize()
 

@@ -7,7 +7,7 @@ package monitordatacollectionrule
 type MonitorDataCollectionRuleDataSourcesLogFileSettings struct {
 	// text block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/monitor_data_collection_rule#text MonitorDataCollectionRule#text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/monitor_data_collection_rule#text MonitorDataCollectionRule#text}
 	Text *MonitorDataCollectionRuleDataSourcesLogFileSettingsText `field:"required" json:"text" yaml:"text"`
 }
 

@@ -51,6 +51,10 @@ func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) validateResolveP
 	return nil
 }
 
+func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) validateSetActiveDirectoryAuthenticationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) validateSetAofBackupEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -65,6 +65,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScript", GoMethod: "ResetScript"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScriptLines", GoMethod: "ResetScriptLines"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSink", GoMethod: "ResetSink"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSource", GoMethod: "ResetSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTransformation", GoMethod: "ResetTransformation"},
 			_jsii_.MemberProperty{JsiiProperty: "script", GoGetter: "Script"},

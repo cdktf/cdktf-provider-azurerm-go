@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/frontdoor azurerm_frontdoor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/frontdoor azurerm_frontdoor}.
 type Frontdoor interface {
 	cdktf.TerraformResource
 	BackendPool() FrontdoorBackendPoolList
@@ -666,7 +666,7 @@ func (j *jsiiProxy_Frontdoor) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/frontdoor azurerm_frontdoor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/frontdoor azurerm_frontdoor} Resource.
 func NewFrontdoor(scope constructs.Construct, id *string, config *FrontdoorConfig) Frontdoor {
 	_init_.Initialize()
 
@@ -684,7 +684,7 @@ func NewFrontdoor(scope constructs.Construct, id *string, config *FrontdoorConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/frontdoor azurerm_frontdoor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/frontdoor azurerm_frontdoor} Resource.
 func NewFrontdoor_Override(f Frontdoor, scope constructs.Construct, id *string, config *FrontdoorConfig) {
 	_init_.Initialize()
 

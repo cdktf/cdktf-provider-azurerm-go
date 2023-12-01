@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/data-sources/cosmosdb_restorable_database_accounts azurerm_cosmosdb_restorable_database_accounts}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/cosmosdb_restorable_database_accounts azurerm_cosmosdb_restorable_database_accounts}.
 type DataAzurermCosmosdbRestorableDatabaseAccounts interface {
 	cdktf.TerraformDataSource
 	Accounts() DataAzurermCosmosdbRestorableDatabaseAccountsAccountsList
@@ -342,7 +342,7 @@ func (j *jsiiProxy_DataAzurermCosmosdbRestorableDatabaseAccounts) TimeoutsInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/data-sources/cosmosdb_restorable_database_accounts azurerm_cosmosdb_restorable_database_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/cosmosdb_restorable_database_accounts azurerm_cosmosdb_restorable_database_accounts} Data Source.
 func NewDataAzurermCosmosdbRestorableDatabaseAccounts(scope constructs.Construct, id *string, config *DataAzurermCosmosdbRestorableDatabaseAccountsConfig) DataAzurermCosmosdbRestorableDatabaseAccounts {
 	_init_.Initialize()
 
@@ -360,7 +360,7 @@ func NewDataAzurermCosmosdbRestorableDatabaseAccounts(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/data-sources/cosmosdb_restorable_database_accounts azurerm_cosmosdb_restorable_database_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/cosmosdb_restorable_database_accounts azurerm_cosmosdb_restorable_database_accounts} Data Source.
 func NewDataAzurermCosmosdbRestorableDatabaseAccounts_Override(d DataAzurermCosmosdbRestorableDatabaseAccounts, scope constructs.Construct, id *string, config *DataAzurermCosmosdbRestorableDatabaseAccountsConfig) {
 	_init_.Initialize()
 

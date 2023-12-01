@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/orbital_contact_profile azurerm_orbital_contact_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/orbital_contact_profile azurerm_orbital_contact_profile}.
 type OrbitalContactProfile interface {
 	cdktf.TerraformResource
 	AutoTracking() *string
@@ -554,7 +554,7 @@ func (j *jsiiProxy_OrbitalContactProfile) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/orbital_contact_profile azurerm_orbital_contact_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/orbital_contact_profile azurerm_orbital_contact_profile} Resource.
 func NewOrbitalContactProfile(scope constructs.Construct, id *string, config *OrbitalContactProfileConfig) OrbitalContactProfile {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewOrbitalContactProfile(scope constructs.Construct, id *string, config *Or
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/orbital_contact_profile azurerm_orbital_contact_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/orbital_contact_profile azurerm_orbital_contact_profile} Resource.
 func NewOrbitalContactProfile_Override(o OrbitalContactProfile, scope constructs.Construct, id *string, config *OrbitalContactProfileConfig) {
 	_init_.Initialize()
 

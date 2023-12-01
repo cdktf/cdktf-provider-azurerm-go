@@ -13,6 +13,9 @@ import (
 
 type RedisCacheRedisConfigurationOutputReference interface {
 	cdktf.ComplexObject
+	ActiveDirectoryAuthenticationEnabled() interface{}
+	SetActiveDirectoryAuthenticationEnabled(val interface{})
+	ActiveDirectoryAuthenticationEnabledInput() interface{}
 	AofBackupEnabled() interface{}
 	SetAofBackupEnabled(val interface{})
 	AofBackupEnabledInput() interface{}
@@ -104,6 +107,7 @@ type RedisCacheRedisConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetActiveDirectoryAuthenticationEnabled()
 	ResetAofBackupEnabled()
 	ResetAofStorageConnectionString0()
 	ResetAofStorageConnectionString1()
@@ -130,6 +134,26 @@ type RedisCacheRedisConfigurationOutputReference interface {
 // The jsii proxy struct for RedisCacheRedisConfigurationOutputReference
 type jsiiProxy_RedisCacheRedisConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) ActiveDirectoryAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"activeDirectoryAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) ActiveDirectoryAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"activeDirectoryAuthenticationEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) AofBackupEnabled() interface{} {
@@ -497,6 +521,17 @@ func NewRedisCacheRedisConfigurationOutputReference_Override(r RedisCacheRedisCo
 		"@cdktf/provider-azurerm.redisCache.RedisCacheRedisConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
+	)
+}
+
+func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference)SetActiveDirectoryAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetActiveDirectoryAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"activeDirectoryAuthenticationEnabled",
+		val,
 	)
 }
 
@@ -882,6 +917,14 @@ func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) InterpolationFor
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) ResetActiveDirectoryAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetActiveDirectoryAuthenticationEnabled",
+		nil, // no parameters
+	)
 }
 
 func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) ResetAofBackupEnabled() {

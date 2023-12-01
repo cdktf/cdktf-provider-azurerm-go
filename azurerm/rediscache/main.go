@@ -251,6 +251,8 @@ func init() {
 		"@cdktf/provider-azurerm.redisCache.RedisCacheRedisConfigurationOutputReference",
 		reflect.TypeOf((*RedisCacheRedisConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "activeDirectoryAuthenticationEnabled", GoGetter: "ActiveDirectoryAuthenticationEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "activeDirectoryAuthenticationEnabledInput", GoGetter: "ActiveDirectoryAuthenticationEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "aofBackupEnabled", GoGetter: "AofBackupEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "aofBackupEnabledInput", GoGetter: "AofBackupEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "aofStorageConnectionString0", GoGetter: "AofStorageConnectionString0"},
@@ -295,6 +297,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rdbBackupMaxSnapshotCountInput", GoGetter: "RdbBackupMaxSnapshotCountInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rdbStorageConnectionString", GoGetter: "RdbStorageConnectionString"},
 			_jsii_.MemberProperty{JsiiProperty: "rdbStorageConnectionStringInput", GoGetter: "RdbStorageConnectionStringInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetActiveDirectoryAuthenticationEnabled", GoMethod: "ResetActiveDirectoryAuthenticationEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAofBackupEnabled", GoMethod: "ResetAofBackupEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAofStorageConnectionString0", GoMethod: "ResetAofStorageConnectionString0"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAofStorageConnectionString1", GoMethod: "ResetAofStorageConnectionString1"},

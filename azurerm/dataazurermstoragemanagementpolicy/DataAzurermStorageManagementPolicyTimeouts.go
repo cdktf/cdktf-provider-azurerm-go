@@ -5,7 +5,7 @@ package dataazurermstoragemanagementpolicy
 
 
 type DataAzurermStorageManagementPolicyTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/data-sources/storage_management_policy#read DataAzurermStorageManagementPolicy#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/storage_management_policy#read DataAzurermStorageManagementPolicy#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

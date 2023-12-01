@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/batch_application azurerm_batch_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/batch_application azurerm_batch_application}.
 type BatchApplication interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_BatchApplication) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/batch_application azurerm_batch_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/batch_application azurerm_batch_application} Resource.
 func NewBatchApplication(scope constructs.Construct, id *string, config *BatchApplicationConfig) BatchApplication {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewBatchApplication(scope constructs.Construct, id *string, config *BatchAp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/batch_application azurerm_batch_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/batch_application azurerm_batch_application} Resource.
 func NewBatchApplication_Override(b BatchApplication, scope constructs.Construct, id *string, config *BatchApplicationConfig) {
 	_init_.Initialize()
 

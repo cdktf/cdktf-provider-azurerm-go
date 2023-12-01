@@ -115,6 +115,10 @@ func (j *jsiiProxy_DashboardGrafana) validateSetDeterministicOutboundIpEnabledPa
 	return nil
 }
 
+func (j *jsiiProxy_DashboardGrafana) validateSetGrafanaMajorVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardGrafana) validateSetIdParameters(val *string) error {
 	return nil
 }

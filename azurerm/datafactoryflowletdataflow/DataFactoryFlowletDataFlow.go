@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/data_factory_flowlet_data_flow azurerm_data_factory_flowlet_data_flow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_flowlet_data_flow azurerm_data_factory_flowlet_data_flow}.
 type DataFactoryFlowletDataFlow interface {
 	cdktf.TerraformResource
 	Annotations() *[]*string
@@ -139,6 +139,8 @@ type DataFactoryFlowletDataFlow interface {
 	ResetOverrideLogicalId()
 	ResetScript()
 	ResetScriptLines()
+	ResetSink()
+	ResetSource()
 	ResetTimeouts()
 	ResetTransformation()
 	SynthesizeAttributes() *map[string]interface{}
@@ -557,7 +559,7 @@ func (j *jsiiProxy_DataFactoryFlowletDataFlow) TransformationInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/data_factory_flowlet_data_flow azurerm_data_factory_flowlet_data_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_flowlet_data_flow azurerm_data_factory_flowlet_data_flow} Resource.
 func NewDataFactoryFlowletDataFlow(scope constructs.Construct, id *string, config *DataFactoryFlowletDataFlowConfig) DataFactoryFlowletDataFlow {
 	_init_.Initialize()
 
@@ -575,7 +577,7 @@ func NewDataFactoryFlowletDataFlow(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.82.0/docs/resources/data_factory_flowlet_data_flow azurerm_data_factory_flowlet_data_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_flowlet_data_flow azurerm_data_factory_flowlet_data_flow} Resource.
 func NewDataFactoryFlowletDataFlow_Override(d DataFactoryFlowletDataFlow, scope constructs.Construct, id *string, config *DataFactoryFlowletDataFlowConfig) {
 	_init_.Initialize()
 
@@ -1156,6 +1158,22 @@ func (d *jsiiProxy_DataFactoryFlowletDataFlow) ResetScriptLines() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetScriptLines",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryFlowletDataFlow) ResetSink() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSink",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryFlowletDataFlow) ResetSource() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSource",
 		nil, // no parameters
 	)
 }
