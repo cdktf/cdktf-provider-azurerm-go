@@ -59,7 +59,15 @@ func (r *jsiiProxy_ResourceGroupCostManagementView) validateInterpolationForAttr
 	return nil
 }
 
+func (r *jsiiProxy_ResourceGroupCostManagementView) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceGroupCostManagementView) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourceGroupCostManagementView) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server}.
 type PostgresqlFlexibleServer interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -159,12 +159,22 @@ type PostgresqlFlexibleServer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -916,7 +926,7 @@ func (j *jsiiProxy_PostgresqlFlexibleServer) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server} Resource.
 func NewPostgresqlFlexibleServer(scope constructs.Construct, id *string, config *PostgresqlFlexibleServerConfig) PostgresqlFlexibleServer {
 	_init_.Initialize()
 
@@ -934,7 +944,7 @@ func NewPostgresqlFlexibleServer(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server} Resource.
 func NewPostgresqlFlexibleServer_Override(p PostgresqlFlexibleServer, scope constructs.Construct, id *string, config *PostgresqlFlexibleServerConfig) {
 	_init_.Initialize()
 
@@ -1502,6 +1512,19 @@ func (p *jsiiProxy_PostgresqlFlexibleServer) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
+func (p *jsiiProxy_PostgresqlFlexibleServer) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (p *jsiiProxy_PostgresqlFlexibleServer) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1529,6 +1552,17 @@ func (p *jsiiProxy_PostgresqlFlexibleServer) InterpolationForAttribute(terraform
 	return returns
 }
 
+func (p *jsiiProxy_PostgresqlFlexibleServer) MoveFromId(id *string) {
+	if err := p.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (p *jsiiProxy_PostgresqlFlexibleServer) MoveTo(moveTarget *string, index interface{}) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1537,6 +1571,17 @@ func (p *jsiiProxy_PostgresqlFlexibleServer) MoveTo(moveTarget *string, index in
 		p,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (p *jsiiProxy_PostgresqlFlexibleServer) MoveToId(id *string) {
+	if err := p.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

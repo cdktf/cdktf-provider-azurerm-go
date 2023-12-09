@@ -59,7 +59,15 @@ func (o *jsiiProxy_OrbitalContactProfile) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (o *jsiiProxy_OrbitalContactProfile) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrbitalContactProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrbitalContactProfile) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

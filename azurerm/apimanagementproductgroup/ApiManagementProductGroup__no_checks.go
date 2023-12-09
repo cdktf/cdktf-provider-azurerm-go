@@ -59,7 +59,15 @@ func (a *jsiiProxy_ApiManagementProductGroup) validateInterpolationForAttributeP
 	return nil
 }
 
+func (a *jsiiProxy_ApiManagementProductGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementProductGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiManagementProductGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

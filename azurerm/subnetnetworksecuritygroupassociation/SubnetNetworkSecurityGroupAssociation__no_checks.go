@@ -59,7 +59,15 @@ func (s *jsiiProxy_SubnetNetworkSecurityGroupAssociation) validateInterpolationF
 	return nil
 }
 
+func (s *jsiiProxy_SubnetNetworkSecurityGroupAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SubnetNetworkSecurityGroupAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SubnetNetworkSecurityGroupAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/cosmosdb_cassandra_datacenter azurerm_cosmosdb_cassandra_datacenter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/cosmosdb_cassandra_datacenter azurerm_cosmosdb_cassandra_datacenter}.
 type CosmosdbCassandraDatacenter interface {
 	cdktf.TerraformResource
 	AvailabilityZonesEnabled() interface{}
@@ -91,6 +91,7 @@ type CosmosdbCassandraDatacenter interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SeedNodeIpAddresses() *[]*string
 	SkuName() *string
 	SetSkuName(val *string)
 	SkuNameInput() *string
@@ -126,12 +127,22 @@ type CosmosdbCassandraDatacenter interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -534,6 +545,16 @@ func (j *jsiiProxy_CosmosdbCassandraDatacenter) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CosmosdbCassandraDatacenter) SeedNodeIpAddresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"seedNodeIpAddresses",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CosmosdbCassandraDatacenter) SkuName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -605,7 +626,7 @@ func (j *jsiiProxy_CosmosdbCassandraDatacenter) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/cosmosdb_cassandra_datacenter azurerm_cosmosdb_cassandra_datacenter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/cosmosdb_cassandra_datacenter azurerm_cosmosdb_cassandra_datacenter} Resource.
 func NewCosmosdbCassandraDatacenter(scope constructs.Construct, id *string, config *CosmosdbCassandraDatacenterConfig) CosmosdbCassandraDatacenter {
 	_init_.Initialize()
 
@@ -623,7 +644,7 @@ func NewCosmosdbCassandraDatacenter(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/cosmosdb_cassandra_datacenter azurerm_cosmosdb_cassandra_datacenter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/cosmosdb_cassandra_datacenter azurerm_cosmosdb_cassandra_datacenter} Resource.
 func NewCosmosdbCassandraDatacenter_Override(c CosmosdbCassandraDatacenter, scope constructs.Construct, id *string, config *CosmosdbCassandraDatacenterConfig) {
 	_init_.Initialize()
 
@@ -1114,6 +1135,19 @@ func (c *jsiiProxy_CosmosdbCassandraDatacenter) GetStringMapAttribute(terraformA
 	return returns
 }
 
+func (c *jsiiProxy_CosmosdbCassandraDatacenter) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_CosmosdbCassandraDatacenter) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1141,6 +1175,17 @@ func (c *jsiiProxy_CosmosdbCassandraDatacenter) InterpolationForAttribute(terraf
 	return returns
 }
 
+func (c *jsiiProxy_CosmosdbCassandraDatacenter) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_CosmosdbCassandraDatacenter) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1149,6 +1194,17 @@ func (c *jsiiProxy_CosmosdbCassandraDatacenter) MoveTo(moveTarget *string, index
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_CosmosdbCassandraDatacenter) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

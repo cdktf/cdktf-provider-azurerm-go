@@ -59,7 +59,15 @@ func (s *jsiiProxy_SentinelDataConnectorAzureActiveDirectory) validateInterpolat
 	return nil
 }
 
+func (s *jsiiProxy_SentinelDataConnectorAzureActiveDirectory) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelDataConnectorAzureActiveDirectory) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelDataConnectorAzureActiveDirectory) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

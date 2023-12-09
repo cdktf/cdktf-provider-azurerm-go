@@ -59,7 +59,15 @@ func (e *jsiiProxy_ElasticCloudElasticsearch) validateInterpolationForAttributeP
 	return nil
 }
 
+func (e *jsiiProxy_ElasticCloudElasticsearch) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticCloudElasticsearch) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticCloudElasticsearch) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

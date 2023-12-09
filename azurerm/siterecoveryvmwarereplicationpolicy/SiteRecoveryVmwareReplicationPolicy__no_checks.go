@@ -59,7 +59,15 @@ func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicy) validateInterpolationFor
 	return nil
 }
 
+func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

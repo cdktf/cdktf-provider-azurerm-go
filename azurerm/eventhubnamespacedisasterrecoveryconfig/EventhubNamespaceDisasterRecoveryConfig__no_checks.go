@@ -59,7 +59,15 @@ func (e *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) validateInterpolatio
 	return nil
 }
 
+func (e *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

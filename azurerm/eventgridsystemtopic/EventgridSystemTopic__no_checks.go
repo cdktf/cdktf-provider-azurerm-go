@@ -59,7 +59,15 @@ func (e *jsiiProxy_EventgridSystemTopic) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (e *jsiiProxy_EventgridSystemTopic) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventgridSystemTopic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventgridSystemTopic) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

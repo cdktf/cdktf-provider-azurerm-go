@@ -59,7 +59,15 @@ func (m *jsiiProxy_MariadbVirtualNetworkRule) validateInterpolationForAttributeP
 	return nil
 }
 
+func (m *jsiiProxy_MariadbVirtualNetworkRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MariadbVirtualNetworkRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MariadbVirtualNetworkRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

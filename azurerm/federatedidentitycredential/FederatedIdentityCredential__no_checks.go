@@ -59,7 +59,15 @@ func (f *jsiiProxy_FederatedIdentityCredential) validateInterpolationForAttribut
 	return nil
 }
 
+func (f *jsiiProxy_FederatedIdentityCredential) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FederatedIdentityCredential) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FederatedIdentityCredential) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataFactoryDatasetBinary) validateInterpolationForAttributePa
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryDatasetBinary) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetBinary) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryDatasetBinary) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

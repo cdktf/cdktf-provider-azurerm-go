@@ -59,7 +59,15 @@ func (s *jsiiProxy_SynapseIntegrationRuntimeAzure) validateInterpolationForAttri
 	return nil
 }
 
+func (s *jsiiProxy_SynapseIntegrationRuntimeAzure) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseIntegrationRuntimeAzure) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SynapseIntegrationRuntimeAzure) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

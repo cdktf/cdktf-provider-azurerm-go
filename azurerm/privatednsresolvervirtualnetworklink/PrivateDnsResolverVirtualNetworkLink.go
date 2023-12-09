@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/private_dns_resolver_virtual_network_link azurerm_private_dns_resolver_virtual_network_link}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/private_dns_resolver_virtual_network_link azurerm_private_dns_resolver_virtual_network_link}.
 type PrivateDnsResolverVirtualNetworkLink interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -102,12 +102,22 @@ type PrivateDnsResolverVirtualNetworkLink interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -414,7 +424,7 @@ func (j *jsiiProxy_PrivateDnsResolverVirtualNetworkLink) VirtualNetworkIdInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/private_dns_resolver_virtual_network_link azurerm_private_dns_resolver_virtual_network_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/private_dns_resolver_virtual_network_link azurerm_private_dns_resolver_virtual_network_link} Resource.
 func NewPrivateDnsResolverVirtualNetworkLink(scope constructs.Construct, id *string, config *PrivateDnsResolverVirtualNetworkLinkConfig) PrivateDnsResolverVirtualNetworkLink {
 	_init_.Initialize()
 
@@ -432,7 +442,7 @@ func NewPrivateDnsResolverVirtualNetworkLink(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/private_dns_resolver_virtual_network_link azurerm_private_dns_resolver_virtual_network_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/private_dns_resolver_virtual_network_link azurerm_private_dns_resolver_virtual_network_link} Resource.
 func NewPrivateDnsResolverVirtualNetworkLink_Override(p PrivateDnsResolverVirtualNetworkLink, scope constructs.Construct, id *string, config *PrivateDnsResolverVirtualNetworkLinkConfig) {
 	_init_.Initialize()
 
@@ -835,6 +845,19 @@ func (p *jsiiProxy_PrivateDnsResolverVirtualNetworkLink) GetStringMapAttribute(t
 	return returns
 }
 
+func (p *jsiiProxy_PrivateDnsResolverVirtualNetworkLink) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (p *jsiiProxy_PrivateDnsResolverVirtualNetworkLink) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -862,6 +885,17 @@ func (p *jsiiProxy_PrivateDnsResolverVirtualNetworkLink) InterpolationForAttribu
 	return returns
 }
 
+func (p *jsiiProxy_PrivateDnsResolverVirtualNetworkLink) MoveFromId(id *string) {
+	if err := p.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (p *jsiiProxy_PrivateDnsResolverVirtualNetworkLink) MoveTo(moveTarget *string, index interface{}) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -870,6 +904,17 @@ func (p *jsiiProxy_PrivateDnsResolverVirtualNetworkLink) MoveTo(moveTarget *stri
 		p,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (p *jsiiProxy_PrivateDnsResolverVirtualNetworkLink) MoveToId(id *string) {
+	if err := p.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

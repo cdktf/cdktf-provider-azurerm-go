@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_linked_service_synapse azurerm_data_factory_linked_service_synapse}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/data_factory_linked_service_synapse azurerm_data_factory_linked_service_synapse}.
 type DataFactoryLinkedServiceSynapse interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -116,12 +116,22 @@ type DataFactoryLinkedServiceSynapse interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -534,7 +544,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSynapse) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_linked_service_synapse azurerm_data_factory_linked_service_synapse} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/data_factory_linked_service_synapse azurerm_data_factory_linked_service_synapse} Resource.
 func NewDataFactoryLinkedServiceSynapse(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceSynapseConfig) DataFactoryLinkedServiceSynapse {
 	_init_.Initialize()
 
@@ -552,7 +562,7 @@ func NewDataFactoryLinkedServiceSynapse(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_linked_service_synapse azurerm_data_factory_linked_service_synapse} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/data_factory_linked_service_synapse azurerm_data_factory_linked_service_synapse} Resource.
 func NewDataFactoryLinkedServiceSynapse_Override(d DataFactoryLinkedServiceSynapse, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceSynapseConfig) {
 	_init_.Initialize()
 
@@ -999,6 +1009,19 @@ func (d *jsiiProxy_DataFactoryLinkedServiceSynapse) GetStringMapAttribute(terraf
 	return returns
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceSynapse) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceSynapse) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1026,6 +1049,17 @@ func (d *jsiiProxy_DataFactoryLinkedServiceSynapse) InterpolationForAttribute(te
 	return returns
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceSynapse) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceSynapse) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1034,6 +1068,17 @@ func (d *jsiiProxy_DataFactoryLinkedServiceSynapse) MoveTo(moveTarget *string, i
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceSynapse) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

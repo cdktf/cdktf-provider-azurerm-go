@@ -59,7 +59,15 @@ func (s *jsiiProxy_SshPublicKey) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_SshPublicKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SshPublicKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SshPublicKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

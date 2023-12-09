@@ -59,7 +59,15 @@ func (v *jsiiProxy_VirtualMachineScaleSet) validateInterpolationForAttributePara
 	return nil
 }
 
+func (v *jsiiProxy_VirtualMachineScaleSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualMachineScaleSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualMachineScaleSet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

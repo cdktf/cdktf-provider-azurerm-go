@@ -59,7 +59,15 @@ func (s *jsiiProxy_StorageSyncCloudEndpoint) validateInterpolationForAttributePa
 	return nil
 }
 
+func (s *jsiiProxy_StorageSyncCloudEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageSyncCloudEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageSyncCloudEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

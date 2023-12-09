@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceOdbc) validateInterpolationForAttribu
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceOdbc) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceOdbc) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceOdbc) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

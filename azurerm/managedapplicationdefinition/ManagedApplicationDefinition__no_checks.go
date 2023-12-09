@@ -59,7 +59,15 @@ func (m *jsiiProxy_ManagedApplicationDefinition) validateInterpolationForAttribu
 	return nil
 }
 
+func (m *jsiiProxy_ManagedApplicationDefinition) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedApplicationDefinition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedApplicationDefinition) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

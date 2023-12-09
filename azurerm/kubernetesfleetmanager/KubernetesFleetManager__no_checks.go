@@ -59,7 +59,15 @@ func (k *jsiiProxy_KubernetesFleetManager) validateInterpolationForAttributePara
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesFleetManager) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesFleetManager) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KubernetesFleetManager) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

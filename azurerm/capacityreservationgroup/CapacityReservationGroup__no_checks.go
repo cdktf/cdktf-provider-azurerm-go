@@ -59,7 +59,15 @@ func (c *jsiiProxy_CapacityReservationGroup) validateInterpolationForAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_CapacityReservationGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CapacityReservationGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CapacityReservationGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -122,6 +122,14 @@ func (m *jsiiProxy_MssqlServerMicrosoftSupportAuditingPolicy) validateInterpolat
 	return nil
 }
 
+func (m *jsiiProxy_MssqlServerMicrosoftSupportAuditingPolicy) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MssqlServerMicrosoftSupportAuditingPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
@@ -178,6 +186,14 @@ func (m *jsiiProxy_MssqlServerMicrosoftSupportAuditingPolicy) validateMoveToPara
 		// ok
 	default:
 		return fmt.Errorf("parameter index must be one of the allowed types: *string, *float64; received %#v (a %T)", index, index)
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MssqlServerMicrosoftSupportAuditingPolicy) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
 	return nil

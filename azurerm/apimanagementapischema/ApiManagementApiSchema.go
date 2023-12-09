@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/api_management_api_schema azurerm_api_management_api_schema}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/api_management_api_schema azurerm_api_management_api_schema}.
 type ApiManagementApiSchema interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -114,12 +114,22 @@ type ApiManagementApiSchema interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -508,7 +518,7 @@ func (j *jsiiProxy_ApiManagementApiSchema) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/api_management_api_schema azurerm_api_management_api_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/api_management_api_schema azurerm_api_management_api_schema} Resource.
 func NewApiManagementApiSchema(scope constructs.Construct, id *string, config *ApiManagementApiSchemaConfig) ApiManagementApiSchema {
 	_init_.Initialize()
 
@@ -526,7 +536,7 @@ func NewApiManagementApiSchema(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/api_management_api_schema azurerm_api_management_api_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/api_management_api_schema azurerm_api_management_api_schema} Resource.
 func NewApiManagementApiSchema_Override(a ApiManagementApiSchema, scope constructs.Construct, id *string, config *ApiManagementApiSchemaConfig) {
 	_init_.Initialize()
 
@@ -973,6 +983,19 @@ func (a *jsiiProxy_ApiManagementApiSchema) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (a *jsiiProxy_ApiManagementApiSchema) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_ApiManagementApiSchema) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1000,6 +1023,17 @@ func (a *jsiiProxy_ApiManagementApiSchema) InterpolationForAttribute(terraformAt
 	return returns
 }
 
+func (a *jsiiProxy_ApiManagementApiSchema) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_ApiManagementApiSchema) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1008,6 +1042,17 @@ func (a *jsiiProxy_ApiManagementApiSchema) MoveTo(moveTarget *string, index inte
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_ApiManagementApiSchema) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

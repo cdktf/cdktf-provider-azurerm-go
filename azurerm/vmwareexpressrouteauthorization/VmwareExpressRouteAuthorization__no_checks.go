@@ -59,7 +59,15 @@ func (v *jsiiProxy_VmwareExpressRouteAuthorization) validateInterpolationForAttr
 	return nil
 }
 
+func (v *jsiiProxy_VmwareExpressRouteAuthorization) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareExpressRouteAuthorization) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareExpressRouteAuthorization) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

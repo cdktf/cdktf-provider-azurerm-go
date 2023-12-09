@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/monitor_action_rule_suppression azurerm_monitor_action_rule_suppression}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/monitor_action_rule_suppression azurerm_monitor_action_rule_suppression}.
 type MonitorActionRuleSuppression interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -111,12 +111,22 @@ type MonitorActionRuleSuppression interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -510,7 +520,7 @@ func (j *jsiiProxy_MonitorActionRuleSuppression) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/monitor_action_rule_suppression azurerm_monitor_action_rule_suppression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/monitor_action_rule_suppression azurerm_monitor_action_rule_suppression} Resource.
 func NewMonitorActionRuleSuppression(scope constructs.Construct, id *string, config *MonitorActionRuleSuppressionConfig) MonitorActionRuleSuppression {
 	_init_.Initialize()
 
@@ -528,7 +538,7 @@ func NewMonitorActionRuleSuppression(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/monitor_action_rule_suppression azurerm_monitor_action_rule_suppression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/monitor_action_rule_suppression azurerm_monitor_action_rule_suppression} Resource.
 func NewMonitorActionRuleSuppression_Override(m MonitorActionRuleSuppression, scope constructs.Construct, id *string, config *MonitorActionRuleSuppressionConfig) {
 	_init_.Initialize()
 
@@ -942,6 +952,19 @@ func (m *jsiiProxy_MonitorActionRuleSuppression) GetStringMapAttribute(terraform
 	return returns
 }
 
+func (m *jsiiProxy_MonitorActionRuleSuppression) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (m *jsiiProxy_MonitorActionRuleSuppression) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -969,6 +992,17 @@ func (m *jsiiProxy_MonitorActionRuleSuppression) InterpolationForAttribute(terra
 	return returns
 }
 
+func (m *jsiiProxy_MonitorActionRuleSuppression) MoveFromId(id *string) {
+	if err := m.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (m *jsiiProxy_MonitorActionRuleSuppression) MoveTo(moveTarget *string, index interface{}) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -977,6 +1011,17 @@ func (m *jsiiProxy_MonitorActionRuleSuppression) MoveTo(moveTarget *string, inde
 		m,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (m *jsiiProxy_MonitorActionRuleSuppression) MoveToId(id *string) {
+	if err := m.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

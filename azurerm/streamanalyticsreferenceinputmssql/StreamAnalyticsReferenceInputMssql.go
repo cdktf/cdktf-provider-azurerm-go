@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql}.
 type StreamAnalyticsReferenceInputMssql interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -126,12 +126,22 @@ type StreamAnalyticsReferenceInputMssql interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -600,7 +610,7 @@ func (j *jsiiProxy_StreamAnalyticsReferenceInputMssql) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql} Resource.
 func NewStreamAnalyticsReferenceInputMssql(scope constructs.Construct, id *string, config *StreamAnalyticsReferenceInputMssqlConfig) StreamAnalyticsReferenceInputMssql {
 	_init_.Initialize()
 
@@ -618,7 +628,7 @@ func NewStreamAnalyticsReferenceInputMssql(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/stream_analytics_reference_input_mssql azurerm_stream_analytics_reference_input_mssql} Resource.
 func NewStreamAnalyticsReferenceInputMssql_Override(s StreamAnalyticsReferenceInputMssql, scope constructs.Construct, id *string, config *StreamAnalyticsReferenceInputMssqlConfig) {
 	_init_.Initialize()
 
@@ -1109,6 +1119,19 @@ func (s *jsiiProxy_StreamAnalyticsReferenceInputMssql) GetStringMapAttribute(ter
 	return returns
 }
 
+func (s *jsiiProxy_StreamAnalyticsReferenceInputMssql) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_StreamAnalyticsReferenceInputMssql) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1136,6 +1159,17 @@ func (s *jsiiProxy_StreamAnalyticsReferenceInputMssql) InterpolationForAttribute
 	return returns
 }
 
+func (s *jsiiProxy_StreamAnalyticsReferenceInputMssql) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_StreamAnalyticsReferenceInputMssql) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1144,6 +1178,17 @@ func (s *jsiiProxy_StreamAnalyticsReferenceInputMssql) MoveTo(moveTarget *string
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_StreamAnalyticsReferenceInputMssql) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

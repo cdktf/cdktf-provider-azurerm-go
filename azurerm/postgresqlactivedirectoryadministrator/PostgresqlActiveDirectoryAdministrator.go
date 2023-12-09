@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/postgresql_active_directory_administrator azurerm_postgresql_active_directory_administrator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/postgresql_active_directory_administrator azurerm_postgresql_active_directory_administrator}.
 type PostgresqlActiveDirectoryAdministrator interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -105,12 +105,22 @@ type PostgresqlActiveDirectoryAdministrator interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -436,7 +446,7 @@ func (j *jsiiProxy_PostgresqlActiveDirectoryAdministrator) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/postgresql_active_directory_administrator azurerm_postgresql_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/postgresql_active_directory_administrator azurerm_postgresql_active_directory_administrator} Resource.
 func NewPostgresqlActiveDirectoryAdministrator(scope constructs.Construct, id *string, config *PostgresqlActiveDirectoryAdministratorConfig) PostgresqlActiveDirectoryAdministrator {
 	_init_.Initialize()
 
@@ -454,7 +464,7 @@ func NewPostgresqlActiveDirectoryAdministrator(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/postgresql_active_directory_administrator azurerm_postgresql_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/postgresql_active_directory_administrator azurerm_postgresql_active_directory_administrator} Resource.
 func NewPostgresqlActiveDirectoryAdministrator_Override(p PostgresqlActiveDirectoryAdministrator, scope constructs.Construct, id *string, config *PostgresqlActiveDirectoryAdministratorConfig) {
 	_init_.Initialize()
 
@@ -868,6 +878,19 @@ func (p *jsiiProxy_PostgresqlActiveDirectoryAdministrator) GetStringMapAttribute
 	return returns
 }
 
+func (p *jsiiProxy_PostgresqlActiveDirectoryAdministrator) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (p *jsiiProxy_PostgresqlActiveDirectoryAdministrator) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -895,6 +918,17 @@ func (p *jsiiProxy_PostgresqlActiveDirectoryAdministrator) InterpolationForAttri
 	return returns
 }
 
+func (p *jsiiProxy_PostgresqlActiveDirectoryAdministrator) MoveFromId(id *string) {
+	if err := p.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (p *jsiiProxy_PostgresqlActiveDirectoryAdministrator) MoveTo(moveTarget *string, index interface{}) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -903,6 +937,17 @@ func (p *jsiiProxy_PostgresqlActiveDirectoryAdministrator) MoveTo(moveTarget *st
 		p,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (p *jsiiProxy_PostgresqlActiveDirectoryAdministrator) MoveToId(id *string) {
+	if err := p.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

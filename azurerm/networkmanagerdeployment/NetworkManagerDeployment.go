@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_manager_deployment azurerm_network_manager_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_manager_deployment azurerm_network_manager_deployment}.
 type NetworkManagerDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -105,12 +105,22 @@ type NetworkManagerDeployment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -437,7 +447,7 @@ func (j *jsiiProxy_NetworkManagerDeployment) TriggersInput() *map[string]*string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_manager_deployment azurerm_network_manager_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_manager_deployment azurerm_network_manager_deployment} Resource.
 func NewNetworkManagerDeployment(scope constructs.Construct, id *string, config *NetworkManagerDeploymentConfig) NetworkManagerDeployment {
 	_init_.Initialize()
 
@@ -455,7 +465,7 @@ func NewNetworkManagerDeployment(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_manager_deployment azurerm_network_manager_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_manager_deployment azurerm_network_manager_deployment} Resource.
 func NewNetworkManagerDeployment_Override(n NetworkManagerDeployment, scope constructs.Construct, id *string, config *NetworkManagerDeploymentConfig) {
 	_init_.Initialize()
 
@@ -869,6 +879,19 @@ func (n *jsiiProxy_NetworkManagerDeployment) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
+func (n *jsiiProxy_NetworkManagerDeployment) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NetworkManagerDeployment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -896,6 +919,17 @@ func (n *jsiiProxy_NetworkManagerDeployment) InterpolationForAttribute(terraform
 	return returns
 }
 
+func (n *jsiiProxy_NetworkManagerDeployment) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NetworkManagerDeployment) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -904,6 +938,17 @@ func (n *jsiiProxy_NetworkManagerDeployment) MoveTo(moveTarget *string, index in
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NetworkManagerDeployment) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

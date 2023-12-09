@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateInterpolationF
 	return nil
 }
 
+func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

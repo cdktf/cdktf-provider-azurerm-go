@@ -59,7 +59,15 @@ func (k *jsiiProxy_KustoScript) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (k *jsiiProxy_KustoScript) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoScript) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KustoScript) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

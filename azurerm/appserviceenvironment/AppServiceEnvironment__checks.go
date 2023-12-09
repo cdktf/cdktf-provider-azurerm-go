@@ -122,6 +122,14 @@ func (a *jsiiProxy_AppServiceEnvironment) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (a *jsiiProxy_AppServiceEnvironment) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AppServiceEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
@@ -178,6 +186,14 @@ func (a *jsiiProxy_AppServiceEnvironment) validateMoveToParameters(moveTarget *s
 		// ok
 	default:
 		return fmt.Errorf("parameter index must be one of the allowed types: *string, *float64; received %#v (a %T)", index, index)
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AppServiceEnvironment) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
 	return nil

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataFactoryDatasetAzureSqlTable) validateInterpolationForAttr
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryDatasetAzureSqlTable) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetAzureSqlTable) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryDatasetAzureSqlTable) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

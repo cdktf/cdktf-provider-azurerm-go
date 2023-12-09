@@ -59,7 +59,15 @@ func (e *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateInterpolationFor
 	return nil
 }
 
+func (e *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventhubNamespaceCustomerManagedKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

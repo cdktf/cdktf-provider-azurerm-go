@@ -59,7 +59,15 @@ func (m *jsiiProxy_MssqlDatabaseExtendedAuditingPolicy) validateInterpolationFor
 	return nil
 }
 
+func (m *jsiiProxy_MssqlDatabaseExtendedAuditingPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlDatabaseExtendedAuditingPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlDatabaseExtendedAuditingPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

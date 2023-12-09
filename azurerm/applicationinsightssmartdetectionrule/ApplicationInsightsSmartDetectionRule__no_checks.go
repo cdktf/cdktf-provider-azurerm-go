@@ -59,7 +59,15 @@ func (a *jsiiProxy_ApplicationInsightsSmartDetectionRule) validateInterpolationF
 	return nil
 }
 
+func (a *jsiiProxy_ApplicationInsightsSmartDetectionRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationInsightsSmartDetectionRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationInsightsSmartDetectionRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_manager_admin_rule azurerm_network_manager_admin_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_manager_admin_rule azurerm_network_manager_admin_rule}.
 type NetworkManagerAdminRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -121,12 +121,22 @@ type NetworkManagerAdminRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -579,7 +589,7 @@ func (j *jsiiProxy_NetworkManagerAdminRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_manager_admin_rule azurerm_network_manager_admin_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_manager_admin_rule azurerm_network_manager_admin_rule} Resource.
 func NewNetworkManagerAdminRule(scope constructs.Construct, id *string, config *NetworkManagerAdminRuleConfig) NetworkManagerAdminRule {
 	_init_.Initialize()
 
@@ -597,7 +607,7 @@ func NewNetworkManagerAdminRule(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_manager_admin_rule azurerm_network_manager_admin_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_manager_admin_rule azurerm_network_manager_admin_rule} Resource.
 func NewNetworkManagerAdminRule_Override(n NetworkManagerAdminRule, scope constructs.Construct, id *string, config *NetworkManagerAdminRuleConfig) {
 	_init_.Initialize()
 
@@ -1055,6 +1065,19 @@ func (n *jsiiProxy_NetworkManagerAdminRule) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
+func (n *jsiiProxy_NetworkManagerAdminRule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NetworkManagerAdminRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1082,6 +1105,17 @@ func (n *jsiiProxy_NetworkManagerAdminRule) InterpolationForAttribute(terraformA
 	return returns
 }
 
+func (n *jsiiProxy_NetworkManagerAdminRule) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NetworkManagerAdminRule) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1090,6 +1124,17 @@ func (n *jsiiProxy_NetworkManagerAdminRule) MoveTo(moveTarget *string, index int
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NetworkManagerAdminRule) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

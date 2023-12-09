@@ -59,7 +59,15 @@ func (a *jsiiProxy_ApplicationInsightsWorkbookTemplate) validateInterpolationFor
 	return nil
 }
 
+func (a *jsiiProxy_ApplicationInsightsWorkbookTemplate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationInsightsWorkbookTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationInsightsWorkbookTemplate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

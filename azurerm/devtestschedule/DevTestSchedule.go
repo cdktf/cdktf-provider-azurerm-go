@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/dev_test_schedule azurerm_dev_test_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/dev_test_schedule azurerm_dev_test_schedule}.
 type DevTestSchedule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -122,12 +122,22 @@ type DevTestSchedule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -602,7 +612,7 @@ func (j *jsiiProxy_DevTestSchedule) WeeklyRecurrenceInput() *DevTestScheduleWeek
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/dev_test_schedule azurerm_dev_test_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/dev_test_schedule azurerm_dev_test_schedule} Resource.
 func NewDevTestSchedule(scope constructs.Construct, id *string, config *DevTestScheduleConfig) DevTestSchedule {
 	_init_.Initialize()
 
@@ -620,7 +630,7 @@ func NewDevTestSchedule(scope constructs.Construct, id *string, config *DevTestS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/dev_test_schedule azurerm_dev_test_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/dev_test_schedule azurerm_dev_test_schedule} Resource.
 func NewDevTestSchedule_Override(d DevTestSchedule, scope constructs.Construct, id *string, config *DevTestScheduleConfig) {
 	_init_.Initialize()
 
@@ -1067,6 +1077,19 @@ func (d *jsiiProxy_DevTestSchedule) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (d *jsiiProxy_DevTestSchedule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DevTestSchedule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1094,6 +1117,17 @@ func (d *jsiiProxy_DevTestSchedule) InterpolationForAttribute(terraformAttribute
 	return returns
 }
 
+func (d *jsiiProxy_DevTestSchedule) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DevTestSchedule) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1102,6 +1136,17 @@ func (d *jsiiProxy_DevTestSchedule) MoveTo(moveTarget *string, index interface{}
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DevTestSchedule) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

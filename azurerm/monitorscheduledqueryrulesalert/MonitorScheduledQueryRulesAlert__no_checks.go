@@ -59,7 +59,15 @@ func (m *jsiiProxy_MonitorScheduledQueryRulesAlert) validateInterpolationForAttr
 	return nil
 }
 
+func (m *jsiiProxy_MonitorScheduledQueryRulesAlert) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorScheduledQueryRulesAlert) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorScheduledQueryRulesAlert) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

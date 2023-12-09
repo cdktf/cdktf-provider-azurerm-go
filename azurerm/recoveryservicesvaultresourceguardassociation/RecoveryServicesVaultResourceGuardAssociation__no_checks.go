@@ -59,7 +59,15 @@ func (r *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation) validateInterp
 	return nil
 }
 
+func (r *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

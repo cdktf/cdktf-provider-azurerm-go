@@ -59,7 +59,15 @@ func (s *jsiiProxy_ServicebusNamespaceDisasterRecoveryConfig) validateInterpolat
 	return nil
 }
 
+func (s *jsiiProxy_ServicebusNamespaceDisasterRecoveryConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicebusNamespaceDisasterRecoveryConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicebusNamespaceDisasterRecoveryConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

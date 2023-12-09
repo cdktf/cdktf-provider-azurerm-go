@@ -59,7 +59,15 @@ func (a *jsiiProxy_ApiManagementIdentityProviderFacebook) validateInterpolationF
 	return nil
 }
 
+func (a *jsiiProxy_ApiManagementIdentityProviderFacebook) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementIdentityProviderFacebook) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiManagementIdentityProviderFacebook) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

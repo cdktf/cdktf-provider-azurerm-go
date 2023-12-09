@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot}.
 type BotServiceAzureBot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -101,6 +101,9 @@ type BotServiceAzureBot interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicNetworkAccessEnabled() interface{}
+	SetPublicNetworkAccessEnabled(val interface{})
+	PublicNetworkAccessEnabledInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -147,12 +150,22 @@ type BotServiceAzureBot interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -173,6 +186,7 @@ type BotServiceAzureBot interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublicNetworkAccessEnabled()
 	ResetStreamingEndpointEnabled()
 	ResetTags()
 	ResetTimeouts()
@@ -631,6 +645,26 @@ func (j *jsiiProxy_BotServiceAzureBot) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BotServiceAzureBot) PublicNetworkAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotServiceAzureBot) PublicNetworkAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BotServiceAzureBot) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -772,7 +806,7 @@ func (j *jsiiProxy_BotServiceAzureBot) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot} Resource.
 func NewBotServiceAzureBot(scope constructs.Construct, id *string, config *BotServiceAzureBotConfig) BotServiceAzureBot {
 	_init_.Initialize()
 
@@ -790,7 +824,7 @@ func NewBotServiceAzureBot(scope constructs.Construct, id *string, config *BotSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot} Resource.
 func NewBotServiceAzureBot_Override(b BotServiceAzureBot, scope constructs.Construct, id *string, config *BotServiceAzureBotConfig) {
 	_init_.Initialize()
 
@@ -1041,6 +1075,17 @@ func (j *jsiiProxy_BotServiceAzureBot)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotServiceAzureBot)SetPublicNetworkAccessEnabled(val interface{}) {
+	if err := j.validateSetPublicNetworkAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccessEnabled",
 		val,
 	)
 }
@@ -1358,6 +1403,19 @@ func (b *jsiiProxy_BotServiceAzureBot) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (b *jsiiProxy_BotServiceAzureBot) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (b *jsiiProxy_BotServiceAzureBot) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := b.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1385,6 +1443,17 @@ func (b *jsiiProxy_BotServiceAzureBot) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (b *jsiiProxy_BotServiceAzureBot) MoveFromId(id *string) {
+	if err := b.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (b *jsiiProxy_BotServiceAzureBot) MoveTo(moveTarget *string, index interface{}) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1393,6 +1462,17 @@ func (b *jsiiProxy_BotServiceAzureBot) MoveTo(moveTarget *string, index interfac
 		b,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (b *jsiiProxy_BotServiceAzureBot) MoveToId(id *string) {
+	if err := b.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -1526,6 +1606,14 @@ func (b *jsiiProxy_BotServiceAzureBot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotServiceAzureBot) ResetPublicNetworkAccessEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetPublicNetworkAccessEnabled",
 		nil, // no parameters
 	)
 }

@@ -59,7 +59,15 @@ func (l *jsiiProxy_LogAnalyticsDatasourceWindowsPerformanceCounter) validateInte
 	return nil
 }
 
+func (l *jsiiProxy_LogAnalyticsDatasourceWindowsPerformanceCounter) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsDatasourceWindowsPerformanceCounter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogAnalyticsDatasourceWindowsPerformanceCounter) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

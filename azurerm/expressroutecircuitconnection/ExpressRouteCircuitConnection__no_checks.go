@@ -59,7 +59,15 @@ func (e *jsiiProxy_ExpressRouteCircuitConnection) validateInterpolationForAttrib
 	return nil
 }
 
+func (e *jsiiProxy_ExpressRouteCircuitConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExpressRouteCircuitConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ExpressRouteCircuitConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

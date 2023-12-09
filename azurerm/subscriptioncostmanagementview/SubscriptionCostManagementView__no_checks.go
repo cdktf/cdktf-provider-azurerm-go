@@ -59,7 +59,15 @@ func (s *jsiiProxy_SubscriptionCostManagementView) validateInterpolationForAttri
 	return nil
 }
 
+func (s *jsiiProxy_SubscriptionCostManagementView) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SubscriptionCostManagementView) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SubscriptionCostManagementView) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

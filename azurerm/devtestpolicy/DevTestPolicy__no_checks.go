@@ -59,7 +59,15 @@ func (d *jsiiProxy_DevTestPolicy) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (d *jsiiProxy_DevTestPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevTestPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DevTestPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

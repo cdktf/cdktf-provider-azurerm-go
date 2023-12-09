@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataFactoryTriggerCustomEvent) validateInterpolationForAttrib
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryTriggerCustomEvent) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryTriggerCustomEvent) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryTriggerCustomEvent) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

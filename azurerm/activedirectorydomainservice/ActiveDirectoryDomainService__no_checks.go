@@ -59,7 +59,15 @@ func (a *jsiiProxy_ActiveDirectoryDomainService) validateInterpolationForAttribu
 	return nil
 }
 
+func (a *jsiiProxy_ActiveDirectoryDomainService) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActiveDirectoryDomainService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActiveDirectoryDomainService) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

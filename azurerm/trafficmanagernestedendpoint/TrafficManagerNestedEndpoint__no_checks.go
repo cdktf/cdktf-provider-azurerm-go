@@ -59,7 +59,15 @@ func (t *jsiiProxy_TrafficManagerNestedEndpoint) validateInterpolationForAttribu
 	return nil
 }
 
+func (t *jsiiProxy_TrafficManagerNestedEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TrafficManagerNestedEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TrafficManagerNestedEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

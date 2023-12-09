@@ -44,9 +44,13 @@ type VirtualNetworkGatewayVpnClientConfigurationOutputReference interface {
 	Fqn() *string
 	InternalValue() *VirtualNetworkGatewayVpnClientConfiguration
 	SetInternalValue(val *VirtualNetworkGatewayVpnClientConfiguration)
+	IpsecPolicy() VirtualNetworkGatewayVpnClientConfigurationIpsecPolicyOutputReference
+	IpsecPolicyInput() *VirtualNetworkGatewayVpnClientConfigurationIpsecPolicy
+	RadiusServer() VirtualNetworkGatewayVpnClientConfigurationRadiusServerList
 	RadiusServerAddress() *string
 	SetRadiusServerAddress(val *string)
 	RadiusServerAddressInput() *string
+	RadiusServerInput() interface{}
 	RadiusServerSecret() *string
 	SetRadiusServerSecret(val *string)
 	RadiusServerSecretInput() *string
@@ -62,6 +66,8 @@ type VirtualNetworkGatewayVpnClientConfigurationOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VirtualNetworkGatewayClientConnection() VirtualNetworkGatewayVpnClientConfigurationVirtualNetworkGatewayClientConnectionList
+	VirtualNetworkGatewayClientConnectionInput() interface{}
 	VpnAuthTypes() *[]*string
 	SetVpnAuthTypes(val *[]*string)
 	VpnAuthTypesInput() *[]*string
@@ -92,15 +98,21 @@ type VirtualNetworkGatewayVpnClientConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutIpsecPolicy(value *VirtualNetworkGatewayVpnClientConfigurationIpsecPolicy)
+	PutRadiusServer(value interface{})
 	PutRevokedCertificate(value interface{})
 	PutRootCertificate(value interface{})
+	PutVirtualNetworkGatewayClientConnection(value interface{})
 	ResetAadAudience()
 	ResetAadIssuer()
 	ResetAadTenant()
+	ResetIpsecPolicy()
+	ResetRadiusServer()
 	ResetRadiusServerAddress()
 	ResetRadiusServerSecret()
 	ResetRevokedCertificate()
 	ResetRootCertificate()
+	ResetVirtualNetworkGatewayClientConnection()
 	ResetVpnAuthTypes()
 	ResetVpnClientProtocols()
 	// Produce the Token's value at resolution time.
@@ -248,6 +260,36 @@ func (j *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) I
 	return returns
 }
 
+func (j *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) IpsecPolicy() VirtualNetworkGatewayVpnClientConfigurationIpsecPolicyOutputReference {
+	var returns VirtualNetworkGatewayVpnClientConfigurationIpsecPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"ipsecPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) IpsecPolicyInput() *VirtualNetworkGatewayVpnClientConfigurationIpsecPolicy {
+	var returns *VirtualNetworkGatewayVpnClientConfigurationIpsecPolicy
+	_jsii_.Get(
+		j,
+		"ipsecPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) RadiusServer() VirtualNetworkGatewayVpnClientConfigurationRadiusServerList {
+	var returns VirtualNetworkGatewayVpnClientConfigurationRadiusServerList
+	_jsii_.Get(
+		j,
+		"radiusServer",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) RadiusServerAddress() *string {
 	var returns *string
 	_jsii_.Get(
@@ -263,6 +305,16 @@ func (j *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) R
 	_jsii_.Get(
 		j,
 		"radiusServerAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) RadiusServerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"radiusServerInput",
 		&returns,
 	)
 	return returns
@@ -343,6 +395,26 @@ func (j *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) T
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) VirtualNetworkGatewayClientConnection() VirtualNetworkGatewayVpnClientConfigurationVirtualNetworkGatewayClientConnectionList {
+	var returns VirtualNetworkGatewayVpnClientConfigurationVirtualNetworkGatewayClientConnectionList
+	_jsii_.Get(
+		j,
+		"virtualNetworkGatewayClientConnection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) VirtualNetworkGatewayClientConnectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"virtualNetworkGatewayClientConnectionInput",
 		&returns,
 	)
 	return returns
@@ -745,6 +817,28 @@ func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) I
 	return returns
 }
 
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) PutIpsecPolicy(value *VirtualNetworkGatewayVpnClientConfigurationIpsecPolicy) {
+	if err := v.validatePutIpsecPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putIpsecPolicy",
+		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) PutRadiusServer(value interface{}) {
+	if err := v.validatePutRadiusServerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putRadiusServer",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) PutRevokedCertificate(value interface{}) {
 	if err := v.validatePutRevokedCertificateParameters(value); err != nil {
 		panic(err)
@@ -763,6 +857,17 @@ func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) P
 	_jsii_.InvokeVoid(
 		v,
 		"putRootCertificate",
+		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) PutVirtualNetworkGatewayClientConnection(value interface{}) {
+	if err := v.validatePutVirtualNetworkGatewayClientConnectionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putVirtualNetworkGatewayClientConnection",
 		[]interface{}{value},
 	)
 }
@@ -787,6 +892,22 @@ func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) R
 	_jsii_.InvokeVoid(
 		v,
 		"resetAadTenant",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) ResetIpsecPolicy() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetIpsecPolicy",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) ResetRadiusServer() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRadiusServer",
 		nil, // no parameters
 	)
 }
@@ -819,6 +940,14 @@ func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) R
 	_jsii_.InvokeVoid(
 		v,
 		"resetRootCertificate",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) ResetVirtualNetworkGatewayClientConnection() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetVirtualNetworkGatewayClientConnection",
 		nil, // no parameters
 	)
 }

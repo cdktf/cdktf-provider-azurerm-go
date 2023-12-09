@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataShareDatasetKustoDatabase) validateInterpolationForAttrib
 	return nil
 }
 
+func (d *jsiiProxy_DataShareDatasetKustoDatabase) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataShareDatasetKustoDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataShareDatasetKustoDatabase) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateInterpolatio
 	return nil
 }
 
+func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

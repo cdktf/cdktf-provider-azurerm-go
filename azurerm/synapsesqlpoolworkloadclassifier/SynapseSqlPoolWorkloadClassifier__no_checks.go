@@ -59,7 +59,15 @@ func (s *jsiiProxy_SynapseSqlPoolWorkloadClassifier) validateInterpolationForAtt
 	return nil
 }
 
+func (s *jsiiProxy_SynapseSqlPoolWorkloadClassifier) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseSqlPoolWorkloadClassifier) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SynapseSqlPoolWorkloadClassifier) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

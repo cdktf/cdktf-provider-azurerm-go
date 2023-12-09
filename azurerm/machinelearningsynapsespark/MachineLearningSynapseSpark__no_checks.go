@@ -59,7 +59,15 @@ func (m *jsiiProxy_MachineLearningSynapseSpark) validateInterpolationForAttribut
 	return nil
 }
 
+func (m *jsiiProxy_MachineLearningSynapseSpark) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MachineLearningSynapseSpark) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MachineLearningSynapseSpark) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

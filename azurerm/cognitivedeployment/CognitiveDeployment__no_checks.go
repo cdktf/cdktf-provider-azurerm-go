@@ -59,7 +59,15 @@ func (c *jsiiProxy_CognitiveDeployment) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_CognitiveDeployment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitiveDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitiveDeployment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (t *jsiiProxy_TrafficManagerProfile) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (t *jsiiProxy_TrafficManagerProfile) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TrafficManagerProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TrafficManagerProfile) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

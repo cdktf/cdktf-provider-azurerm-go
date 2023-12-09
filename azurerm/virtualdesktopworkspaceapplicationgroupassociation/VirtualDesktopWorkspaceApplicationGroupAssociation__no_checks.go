@@ -59,7 +59,15 @@ func (v *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociation) validateI
 	return nil
 }
 
+func (v *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualDesktopWorkspaceApplicationGroupAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

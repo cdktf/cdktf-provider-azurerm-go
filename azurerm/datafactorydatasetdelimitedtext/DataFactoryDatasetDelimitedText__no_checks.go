@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataFactoryDatasetDelimitedText) validateInterpolationForAttr
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryDatasetDelimitedText) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetDelimitedText) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryDatasetDelimitedText) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

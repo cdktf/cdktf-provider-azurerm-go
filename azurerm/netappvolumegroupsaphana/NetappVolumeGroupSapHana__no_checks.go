@@ -59,7 +59,15 @@ func (n *jsiiProxy_NetappVolumeGroupSapHana) validateInterpolationForAttributePa
 	return nil
 }
 
+func (n *jsiiProxy_NetappVolumeGroupSapHana) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolumeGroupSapHana) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappVolumeGroupSapHana) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

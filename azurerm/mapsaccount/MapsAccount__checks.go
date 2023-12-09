@@ -122,6 +122,14 @@ func (m *jsiiProxy_MapsAccount) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (m *jsiiProxy_MapsAccount) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MapsAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
@@ -178,6 +186,14 @@ func (m *jsiiProxy_MapsAccount) validateMoveToParameters(moveTarget *string, ind
 		// ok
 	default:
 		return fmt.Errorf("parameter index must be one of the allowed types: *string, *float64; received %#v (a %T)", index, index)
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MapsAccount) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
 	return nil

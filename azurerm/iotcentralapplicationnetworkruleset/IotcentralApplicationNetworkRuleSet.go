@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set}.
 type IotcentralApplicationNetworkRuleSet interface {
 	cdktf.TerraformResource
 	ApplyToDevice() interface{}
@@ -101,12 +101,22 @@ type IotcentralApplicationNetworkRuleSet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -416,7 +426,7 @@ func (j *jsiiProxy_IotcentralApplicationNetworkRuleSet) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set} Resource.
 func NewIotcentralApplicationNetworkRuleSet(scope constructs.Construct, id *string, config *IotcentralApplicationNetworkRuleSetConfig) IotcentralApplicationNetworkRuleSet {
 	_init_.Initialize()
 
@@ -434,7 +444,7 @@ func NewIotcentralApplicationNetworkRuleSet(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set} Resource.
 func NewIotcentralApplicationNetworkRuleSet_Override(i IotcentralApplicationNetworkRuleSet, scope constructs.Construct, id *string, config *IotcentralApplicationNetworkRuleSetConfig) {
 	_init_.Initialize()
 
@@ -826,6 +836,19 @@ func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) GetStringMapAttribute(te
 	return returns
 }
 
+func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -853,6 +876,17 @@ func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) InterpolationForAttribut
 	return returns
 }
 
+func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -861,6 +895,17 @@ func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) MoveTo(moveTarget *strin
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

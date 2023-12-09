@@ -59,7 +59,15 @@ func (k *jsiiProxy_KustoClusterManagedPrivateEndpoint) validateInterpolationForA
 	return nil
 }
 
+func (k *jsiiProxy_KustoClusterManagedPrivateEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoClusterManagedPrivateEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KustoClusterManagedPrivateEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

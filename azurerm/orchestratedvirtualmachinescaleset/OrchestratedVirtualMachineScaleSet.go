@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set}.
 type OrchestratedVirtualMachineScaleSet interface {
 	cdktf.TerraformResource
 	AdditionalCapabilities() OrchestratedVirtualMachineScaleSetAdditionalCapabilitiesOutputReference
@@ -180,12 +180,22 @@ type OrchestratedVirtualMachineScaleSet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -1144,7 +1154,7 @@ func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Resource.
 func NewOrchestratedVirtualMachineScaleSet(scope constructs.Construct, id *string, config *OrchestratedVirtualMachineScaleSetConfig) OrchestratedVirtualMachineScaleSet {
 	_init_.Initialize()
 
@@ -1162,7 +1172,7 @@ func NewOrchestratedVirtualMachineScaleSet(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Resource.
 func NewOrchestratedVirtualMachineScaleSet_Override(o OrchestratedVirtualMachineScaleSet, scope constructs.Construct, id *string, config *OrchestratedVirtualMachineScaleSetConfig) {
 	_init_.Initialize()
 
@@ -1752,6 +1762,19 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) GetStringMapAttribute(ter
 	return returns
 }
 
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1779,6 +1802,17 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) InterpolationForAttribute
 	return returns
 }
 
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) MoveFromId(id *string) {
+	if err := o.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) MoveTo(moveTarget *string, index interface{}) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1787,6 +1821,17 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) MoveTo(moveTarget *string
 		o,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) MoveToId(id *string) {
+	if err := o.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

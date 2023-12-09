@@ -59,7 +59,15 @@ func (p *jsiiProxy_PowerbiEmbedded) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (p *jsiiProxy_PowerbiEmbedded) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PowerbiEmbedded) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PowerbiEmbedded) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/kubernetes_cluster_trusted_access_role_binding azurerm_kubernetes_cluster_trusted_access_role_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/kubernetes_cluster_trusted_access_role_binding azurerm_kubernetes_cluster_trusted_access_role_binding}.
 type KubernetesClusterTrustedAccessRoleBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -102,12 +102,22 @@ type KubernetesClusterTrustedAccessRoleBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -413,7 +423,7 @@ func (j *jsiiProxy_KubernetesClusterTrustedAccessRoleBinding) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/kubernetes_cluster_trusted_access_role_binding azurerm_kubernetes_cluster_trusted_access_role_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/kubernetes_cluster_trusted_access_role_binding azurerm_kubernetes_cluster_trusted_access_role_binding} Resource.
 func NewKubernetesClusterTrustedAccessRoleBinding(scope constructs.Construct, id *string, config *KubernetesClusterTrustedAccessRoleBindingConfig) KubernetesClusterTrustedAccessRoleBinding {
 	_init_.Initialize()
 
@@ -431,7 +441,7 @@ func NewKubernetesClusterTrustedAccessRoleBinding(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/kubernetes_cluster_trusted_access_role_binding azurerm_kubernetes_cluster_trusted_access_role_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/kubernetes_cluster_trusted_access_role_binding azurerm_kubernetes_cluster_trusted_access_role_binding} Resource.
 func NewKubernetesClusterTrustedAccessRoleBinding_Override(k KubernetesClusterTrustedAccessRoleBinding, scope constructs.Construct, id *string, config *KubernetesClusterTrustedAccessRoleBindingConfig) {
 	_init_.Initialize()
 
@@ -834,6 +844,19 @@ func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBinding) GetStringMapAttrib
 	return returns
 }
 
+func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBinding) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		k,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBinding) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := k.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -861,6 +884,17 @@ func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBinding) InterpolationForAt
 	return returns
 }
 
+func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBinding) MoveFromId(id *string) {
+	if err := k.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBinding) MoveTo(moveTarget *string, index interface{}) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -869,6 +903,17 @@ func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBinding) MoveTo(moveTarget 
 		k,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBinding) MoveToId(id *string) {
+	if err := k.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

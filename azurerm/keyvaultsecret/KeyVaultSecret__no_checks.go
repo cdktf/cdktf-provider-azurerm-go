@@ -59,7 +59,15 @@ func (k *jsiiProxy_KeyVaultSecret) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (k *jsiiProxy_KeyVaultSecret) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultSecret) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KeyVaultSecret) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

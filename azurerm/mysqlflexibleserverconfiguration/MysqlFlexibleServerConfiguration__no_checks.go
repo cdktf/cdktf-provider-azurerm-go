@@ -59,7 +59,15 @@ func (m *jsiiProxy_MysqlFlexibleServerConfiguration) validateInterpolationForAtt
 	return nil
 }
 
+func (m *jsiiProxy_MysqlFlexibleServerConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MysqlFlexibleServerConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MysqlFlexibleServerConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

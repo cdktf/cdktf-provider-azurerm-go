@@ -59,7 +59,15 @@ func (v *jsiiProxy_VirtualDesktopScalingPlan) validateInterpolationForAttributeP
 	return nil
 }
 
+func (v *jsiiProxy_VirtualDesktopScalingPlan) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualDesktopScalingPlan) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualDesktopScalingPlan) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

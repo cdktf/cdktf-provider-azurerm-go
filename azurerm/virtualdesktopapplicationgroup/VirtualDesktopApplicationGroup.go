@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/virtual_desktop_application_group azurerm_virtual_desktop_application_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/virtual_desktop_application_group azurerm_virtual_desktop_application_group}.
 type VirtualDesktopApplicationGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -117,12 +117,22 @@ type VirtualDesktopApplicationGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -532,7 +542,7 @@ func (j *jsiiProxy_VirtualDesktopApplicationGroup) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/virtual_desktop_application_group azurerm_virtual_desktop_application_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/virtual_desktop_application_group azurerm_virtual_desktop_application_group} Resource.
 func NewVirtualDesktopApplicationGroup(scope constructs.Construct, id *string, config *VirtualDesktopApplicationGroupConfig) VirtualDesktopApplicationGroup {
 	_init_.Initialize()
 
@@ -550,7 +560,7 @@ func NewVirtualDesktopApplicationGroup(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/virtual_desktop_application_group azurerm_virtual_desktop_application_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/virtual_desktop_application_group azurerm_virtual_desktop_application_group} Resource.
 func NewVirtualDesktopApplicationGroup_Override(v VirtualDesktopApplicationGroup, scope constructs.Construct, id *string, config *VirtualDesktopApplicationGroupConfig) {
 	_init_.Initialize()
 
@@ -1008,6 +1018,19 @@ func (v *jsiiProxy_VirtualDesktopApplicationGroup) GetStringMapAttribute(terrafo
 	return returns
 }
 
+func (v *jsiiProxy_VirtualDesktopApplicationGroup) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (v *jsiiProxy_VirtualDesktopApplicationGroup) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := v.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1035,6 +1058,17 @@ func (v *jsiiProxy_VirtualDesktopApplicationGroup) InterpolationForAttribute(ter
 	return returns
 }
 
+func (v *jsiiProxy_VirtualDesktopApplicationGroup) MoveFromId(id *string) {
+	if err := v.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (v *jsiiProxy_VirtualDesktopApplicationGroup) MoveTo(moveTarget *string, index interface{}) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1043,6 +1077,17 @@ func (v *jsiiProxy_VirtualDesktopApplicationGroup) MoveTo(moveTarget *string, in
 		v,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (v *jsiiProxy_VirtualDesktopApplicationGroup) MoveToId(id *string) {
+	if err := v.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

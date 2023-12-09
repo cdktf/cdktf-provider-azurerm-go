@@ -122,6 +122,14 @@ func (m *jsiiProxy_ManagementGroupTemplateDeployment) validateInterpolationForAt
 	return nil
 }
 
+func (m *jsiiProxy_ManagementGroupTemplateDeployment) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_ManagementGroupTemplateDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
@@ -178,6 +186,14 @@ func (m *jsiiProxy_ManagementGroupTemplateDeployment) validateMoveToParameters(m
 		// ok
 	default:
 		return fmt.Errorf("parameter index must be one of the allowed types: *string, *float64; received %#v (a %T)", index, index)
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_ManagementGroupTemplateDeployment) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
 	return nil

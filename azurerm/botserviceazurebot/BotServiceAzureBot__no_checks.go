@@ -59,7 +59,15 @@ func (b *jsiiProxy_BotServiceAzureBot) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (b *jsiiProxy_BotServiceAzureBot) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotServiceAzureBot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotServiceAzureBot) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -164,6 +172,10 @@ func (j *jsiiProxy_BotServiceAzureBot) validateSetNameParameters(val *string) er
 }
 
 func (j *jsiiProxy_BotServiceAzureBot) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BotServiceAzureBot) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
 	return nil
 }
 

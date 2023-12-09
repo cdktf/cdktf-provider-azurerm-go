@@ -59,7 +59,15 @@ func (p *jsiiProxy_PrivateDnsResolverInboundEndpoint) validateInterpolationForAt
 	return nil
 }
 
+func (p *jsiiProxy_PrivateDnsResolverInboundEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateDnsResolverInboundEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivateDnsResolverInboundEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

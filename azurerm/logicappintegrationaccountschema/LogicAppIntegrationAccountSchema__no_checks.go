@@ -59,7 +59,15 @@ func (l *jsiiProxy_LogicAppIntegrationAccountSchema) validateInterpolationForAtt
 	return nil
 }
 
+func (l *jsiiProxy_LogicAppIntegrationAccountSchema) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogicAppIntegrationAccountSchema) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogicAppIntegrationAccountSchema) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

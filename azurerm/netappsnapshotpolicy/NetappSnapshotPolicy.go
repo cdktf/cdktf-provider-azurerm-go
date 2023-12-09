@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/netapp_snapshot_policy azurerm_netapp_snapshot_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/netapp_snapshot_policy azurerm_netapp_snapshot_policy}.
 type NetappSnapshotPolicy interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -116,12 +116,22 @@ type NetappSnapshotPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -556,7 +566,7 @@ func (j *jsiiProxy_NetappSnapshotPolicy) WeeklyScheduleInput() *NetappSnapshotPo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/netapp_snapshot_policy azurerm_netapp_snapshot_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/netapp_snapshot_policy azurerm_netapp_snapshot_policy} Resource.
 func NewNetappSnapshotPolicy(scope constructs.Construct, id *string, config *NetappSnapshotPolicyConfig) NetappSnapshotPolicy {
 	_init_.Initialize()
 
@@ -574,7 +584,7 @@ func NewNetappSnapshotPolicy(scope constructs.Construct, id *string, config *Net
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/netapp_snapshot_policy azurerm_netapp_snapshot_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/netapp_snapshot_policy azurerm_netapp_snapshot_policy} Resource.
 func NewNetappSnapshotPolicy_Override(n NetappSnapshotPolicy, scope constructs.Construct, id *string, config *NetappSnapshotPolicyConfig) {
 	_init_.Initialize()
 
@@ -999,6 +1009,19 @@ func (n *jsiiProxy_NetappSnapshotPolicy) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (n *jsiiProxy_NetappSnapshotPolicy) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NetappSnapshotPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1026,6 +1049,17 @@ func (n *jsiiProxy_NetappSnapshotPolicy) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (n *jsiiProxy_NetappSnapshotPolicy) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NetappSnapshotPolicy) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1034,6 +1068,17 @@ func (n *jsiiProxy_NetappSnapshotPolicy) MoveTo(moveTarget *string, index interf
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NetappSnapshotPolicy) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

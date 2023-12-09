@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/virtual_network azurerm_virtual_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/virtual_network azurerm_virtual_network}.
 type VirtualNetwork interface {
 	cdktf.TerraformResource
 	AddressSpace() *[]*string
@@ -124,12 +124,22 @@ type VirtualNetwork interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -616,7 +626,7 @@ func (j *jsiiProxy_VirtualNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
 func NewVirtualNetwork(scope constructs.Construct, id *string, config *VirtualNetworkConfig) VirtualNetwork {
 	_init_.Initialize()
 
@@ -634,7 +644,7 @@ func NewVirtualNetwork(scope constructs.Construct, id *string, config *VirtualNe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
 func NewVirtualNetwork_Override(v VirtualNetwork, scope constructs.Construct, id *string, config *VirtualNetworkConfig) {
 	_init_.Initialize()
 
@@ -1092,6 +1102,19 @@ func (v *jsiiProxy_VirtualNetwork) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
+func (v *jsiiProxy_VirtualNetwork) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (v *jsiiProxy_VirtualNetwork) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := v.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1119,6 +1142,17 @@ func (v *jsiiProxy_VirtualNetwork) InterpolationForAttribute(terraformAttribute 
 	return returns
 }
 
+func (v *jsiiProxy_VirtualNetwork) MoveFromId(id *string) {
+	if err := v.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (v *jsiiProxy_VirtualNetwork) MoveTo(moveTarget *string, index interface{}) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1127,6 +1161,17 @@ func (v *jsiiProxy_VirtualNetwork) MoveTo(moveTarget *string, index interface{})
 		v,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (v *jsiiProxy_VirtualNetwork) MoveToId(id *string) {
+	if err := v.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

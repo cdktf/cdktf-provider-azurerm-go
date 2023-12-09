@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validateInterpolation
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

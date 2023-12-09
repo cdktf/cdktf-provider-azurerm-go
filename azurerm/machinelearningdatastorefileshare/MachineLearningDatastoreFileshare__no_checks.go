@@ -59,7 +59,15 @@ func (m *jsiiProxy_MachineLearningDatastoreFileshare) validateInterpolationForAt
 	return nil
 }
 
+func (m *jsiiProxy_MachineLearningDatastoreFileshare) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MachineLearningDatastoreFileshare) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MachineLearningDatastoreFileshare) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

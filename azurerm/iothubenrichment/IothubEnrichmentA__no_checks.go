@@ -59,7 +59,15 @@ func (i *jsiiProxy_IothubEnrichmentA) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (i *jsiiProxy_IothubEnrichmentA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubEnrichmentA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IothubEnrichmentA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

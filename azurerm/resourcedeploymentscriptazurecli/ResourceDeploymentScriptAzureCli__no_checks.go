@@ -59,7 +59,15 @@ func (r *jsiiProxy_ResourceDeploymentScriptAzureCli) validateInterpolationForAtt
 	return nil
 }
 
+func (r *jsiiProxy_ResourceDeploymentScriptAzureCli) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceDeploymentScriptAzureCli) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourceDeploymentScriptAzureCli) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

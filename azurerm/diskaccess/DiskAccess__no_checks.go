@@ -59,7 +59,15 @@ func (d *jsiiProxy_DiskAccess) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (d *jsiiProxy_DiskAccess) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiskAccess) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DiskAccess) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

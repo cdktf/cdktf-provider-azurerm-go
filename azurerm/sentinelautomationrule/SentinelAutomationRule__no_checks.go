@@ -59,7 +59,15 @@ func (s *jsiiProxy_SentinelAutomationRule) validateInterpolationForAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_SentinelAutomationRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAutomationRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAutomationRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

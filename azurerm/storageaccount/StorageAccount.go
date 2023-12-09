@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/storage_account azurerm_storage_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/storage_account azurerm_storage_account}.
 type StorageAccount interface {
 	cdktf.TerraformResource
 	AccessTier() *string
@@ -117,18 +117,38 @@ type StorageAccount interface {
 	PrimaryBlobConnectionString() *string
 	PrimaryBlobEndpoint() *string
 	PrimaryBlobHost() *string
+	PrimaryBlobInternetEndpoint() *string
+	PrimaryBlobInternetHost() *string
+	PrimaryBlobMicrosoftEndpoint() *string
+	PrimaryBlobMicrosoftHost() *string
 	PrimaryConnectionString() *string
 	PrimaryDfsEndpoint() *string
 	PrimaryDfsHost() *string
+	PrimaryDfsInternetEndpoint() *string
+	PrimaryDfsInternetHost() *string
+	PrimaryDfsMicrosoftEndpoint() *string
+	PrimaryDfsMicrosoftHost() *string
 	PrimaryFileEndpoint() *string
 	PrimaryFileHost() *string
+	PrimaryFileInternetEndpoint() *string
+	PrimaryFileInternetHost() *string
+	PrimaryFileMicrosoftEndpoint() *string
+	PrimaryFileMicrosoftHost() *string
 	PrimaryLocation() *string
 	PrimaryQueueEndpoint() *string
 	PrimaryQueueHost() *string
+	PrimaryQueueMicrosoftEndpoint() *string
+	PrimaryQueueMicrosoftHost() *string
 	PrimaryTableEndpoint() *string
 	PrimaryTableHost() *string
+	PrimaryTableMicrosoftEndpoint() *string
+	PrimaryTableMicrosoftHost() *string
 	PrimaryWebEndpoint() *string
 	PrimaryWebHost() *string
+	PrimaryWebInternetEndpoint() *string
+	PrimaryWebInternetHost() *string
+	PrimaryWebMicrosoftEndpoint() *string
+	PrimaryWebMicrosoftHost() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -158,18 +178,38 @@ type StorageAccount interface {
 	SecondaryBlobConnectionString() *string
 	SecondaryBlobEndpoint() *string
 	SecondaryBlobHost() *string
+	SecondaryBlobInternetEndpoint() *string
+	SecondaryBlobInternetHost() *string
+	SecondaryBlobMicrosoftEndpoint() *string
+	SecondaryBlobMicrosoftHost() *string
 	SecondaryConnectionString() *string
 	SecondaryDfsEndpoint() *string
 	SecondaryDfsHost() *string
+	SecondaryDfsInternetEndpoint() *string
+	SecondaryDfsInternetHost() *string
+	SecondaryDfsMicrosoftEndpoint() *string
+	SecondaryDfsMicrosoftHost() *string
 	SecondaryFileEndpoint() *string
 	SecondaryFileHost() *string
+	SecondaryFileInternetEndpoint() *string
+	SecondaryFileInternetHost() *string
+	SecondaryFileMicrosoftEndpoint() *string
+	SecondaryFileMicrosoftHost() *string
 	SecondaryLocation() *string
 	SecondaryQueueEndpoint() *string
 	SecondaryQueueHost() *string
+	SecondaryQueueMicrosoftEndpoint() *string
+	SecondaryQueueMicrosoftHost() *string
 	SecondaryTableEndpoint() *string
 	SecondaryTableHost() *string
+	SecondaryTableMicrosoftEndpoint() *string
+	SecondaryTableMicrosoftHost() *string
 	SecondaryWebEndpoint() *string
 	SecondaryWebHost() *string
+	SecondaryWebInternetEndpoint() *string
+	SecondaryWebInternetHost() *string
+	SecondaryWebMicrosoftEndpoint() *string
+	SecondaryWebMicrosoftHost() *string
 	SftpEnabled() interface{}
 	SetSftpEnabled(val interface{})
 	SftpEnabledInput() interface{}
@@ -218,12 +258,22 @@ type StorageAccount interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -931,6 +981,46 @@ func (j *jsiiProxy_StorageAccount) PrimaryBlobHost() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageAccount) PrimaryBlobInternetEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryBlobInternetEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) PrimaryBlobInternetHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryBlobInternetHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) PrimaryBlobMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryBlobMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) PrimaryBlobMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryBlobMicrosoftHost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageAccount) PrimaryConnectionString() *string {
 	var returns *string
 	_jsii_.Get(
@@ -961,6 +1051,46 @@ func (j *jsiiProxy_StorageAccount) PrimaryDfsHost() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageAccount) PrimaryDfsInternetEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryDfsInternetEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) PrimaryDfsInternetHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryDfsInternetHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) PrimaryDfsMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryDfsMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) PrimaryDfsMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryDfsMicrosoftHost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageAccount) PrimaryFileEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -976,6 +1106,46 @@ func (j *jsiiProxy_StorageAccount) PrimaryFileHost() *string {
 	_jsii_.Get(
 		j,
 		"primaryFileHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) PrimaryFileInternetEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryFileInternetEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) PrimaryFileInternetHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryFileInternetHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) PrimaryFileMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryFileMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) PrimaryFileMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryFileMicrosoftHost",
 		&returns,
 	)
 	return returns
@@ -1011,6 +1181,26 @@ func (j *jsiiProxy_StorageAccount) PrimaryQueueHost() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageAccount) PrimaryQueueMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryQueueMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) PrimaryQueueMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryQueueMicrosoftHost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageAccount) PrimaryTableEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1031,6 +1221,26 @@ func (j *jsiiProxy_StorageAccount) PrimaryTableHost() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageAccount) PrimaryTableMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryTableMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) PrimaryTableMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryTableMicrosoftHost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageAccount) PrimaryWebEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1046,6 +1256,46 @@ func (j *jsiiProxy_StorageAccount) PrimaryWebHost() *string {
 	_jsii_.Get(
 		j,
 		"primaryWebHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) PrimaryWebInternetEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryWebInternetEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) PrimaryWebInternetHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryWebInternetHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) PrimaryWebMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryWebMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) PrimaryWebMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryWebMicrosoftHost",
 		&returns,
 	)
 	return returns
@@ -1241,6 +1491,46 @@ func (j *jsiiProxy_StorageAccount) SecondaryBlobHost() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageAccount) SecondaryBlobInternetEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryBlobInternetEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SecondaryBlobInternetHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryBlobInternetHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SecondaryBlobMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryBlobMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SecondaryBlobMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryBlobMicrosoftHost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageAccount) SecondaryConnectionString() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1271,6 +1561,46 @@ func (j *jsiiProxy_StorageAccount) SecondaryDfsHost() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageAccount) SecondaryDfsInternetEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryDfsInternetEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SecondaryDfsInternetHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryDfsInternetHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SecondaryDfsMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryDfsMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SecondaryDfsMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryDfsMicrosoftHost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageAccount) SecondaryFileEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1286,6 +1616,46 @@ func (j *jsiiProxy_StorageAccount) SecondaryFileHost() *string {
 	_jsii_.Get(
 		j,
 		"secondaryFileHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SecondaryFileInternetEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryFileInternetEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SecondaryFileInternetHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryFileInternetHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SecondaryFileMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryFileMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SecondaryFileMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryFileMicrosoftHost",
 		&returns,
 	)
 	return returns
@@ -1321,6 +1691,26 @@ func (j *jsiiProxy_StorageAccount) SecondaryQueueHost() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageAccount) SecondaryQueueMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryQueueMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SecondaryQueueMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryQueueMicrosoftHost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageAccount) SecondaryTableEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1341,6 +1731,26 @@ func (j *jsiiProxy_StorageAccount) SecondaryTableHost() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageAccount) SecondaryTableMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryTableMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SecondaryTableMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryTableMicrosoftHost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageAccount) SecondaryWebEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1356,6 +1766,46 @@ func (j *jsiiProxy_StorageAccount) SecondaryWebHost() *string {
 	_jsii_.Get(
 		j,
 		"secondaryWebHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SecondaryWebInternetEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryWebInternetEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SecondaryWebInternetHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryWebInternetHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SecondaryWebMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryWebMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) SecondaryWebMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryWebMicrosoftHost",
 		&returns,
 	)
 	return returns
@@ -1532,7 +1982,7 @@ func (j *jsiiProxy_StorageAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/storage_account azurerm_storage_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/storage_account azurerm_storage_account} Resource.
 func NewStorageAccount(scope constructs.Construct, id *string, config *StorageAccountConfig) StorageAccount {
 	_init_.Initialize()
 
@@ -1550,7 +2000,7 @@ func NewStorageAccount(scope constructs.Construct, id *string, config *StorageAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/storage_account azurerm_storage_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/storage_account azurerm_storage_account} Resource.
 func NewStorageAccount_Override(s StorageAccount, scope constructs.Construct, id *string, config *StorageAccountConfig) {
 	_init_.Initialize()
 
@@ -2173,6 +2623,19 @@ func (s *jsiiProxy_StorageAccount) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
+func (s *jsiiProxy_StorageAccount) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_StorageAccount) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -2200,6 +2663,17 @@ func (s *jsiiProxy_StorageAccount) InterpolationForAttribute(terraformAttribute 
 	return returns
 }
 
+func (s *jsiiProxy_StorageAccount) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_StorageAccount) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -2208,6 +2682,17 @@ func (s *jsiiProxy_StorageAccount) MoveTo(moveTarget *string, index interface{})
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_StorageAccount) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (m *jsiiProxy_MssqlElasticpool) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (m *jsiiProxy_MssqlElasticpool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlElasticpool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlElasticpool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -100,6 +108,10 @@ func (j *jsiiProxy_MssqlElasticpool) validateSetConnectionParameters(val interfa
 }
 
 func (j *jsiiProxy_MssqlElasticpool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MssqlElasticpool) validateSetEnclaveTypeParameters(val *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (s *jsiiProxy_SpringCloudBuildDeployment) validateInterpolationForAttribute
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudBuildDeployment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudBuildDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudBuildDeployment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -92,6 +100,10 @@ func validateSpringCloudBuildDeployment_IsTerraformResourceParameters(x interfac
 }
 
 func (j *jsiiProxy_SpringCloudBuildDeployment) validateSetAddonJsonParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SpringCloudBuildDeployment) validateSetApplicationPerformanceMonitoringIdsParameters(val *[]*string) error {
 	return nil
 }
 

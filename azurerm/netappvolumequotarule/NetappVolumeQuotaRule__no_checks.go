@@ -59,7 +59,15 @@ func (n *jsiiProxy_NetappVolumeQuotaRule) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (n *jsiiProxy_NetappVolumeQuotaRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolumeQuotaRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappVolumeQuotaRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

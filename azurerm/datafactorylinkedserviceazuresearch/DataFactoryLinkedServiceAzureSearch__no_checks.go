@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureSearch) validateInterpolationFor
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureSearch) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureSearch) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureSearch) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

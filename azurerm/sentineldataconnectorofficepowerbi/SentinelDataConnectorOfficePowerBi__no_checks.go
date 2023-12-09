@@ -59,7 +59,15 @@ func (s *jsiiProxy_SentinelDataConnectorOfficePowerBi) validateInterpolationForA
 	return nil
 }
 
+func (s *jsiiProxy_SentinelDataConnectorOfficePowerBi) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelDataConnectorOfficePowerBi) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelDataConnectorOfficePowerBi) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

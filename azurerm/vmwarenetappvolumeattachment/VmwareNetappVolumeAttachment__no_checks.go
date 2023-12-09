@@ -59,7 +59,15 @@ func (v *jsiiProxy_VmwareNetappVolumeAttachment) validateInterpolationForAttribu
 	return nil
 }
 
+func (v *jsiiProxy_VmwareNetappVolumeAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareNetappVolumeAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareNetappVolumeAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

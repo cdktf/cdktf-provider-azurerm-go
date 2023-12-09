@@ -59,7 +59,15 @@ func (w *jsiiProxy_WebPubsubSharedPrivateLinkResource) validateInterpolationForA
 	return nil
 }
 
+func (w *jsiiProxy_WebPubsubSharedPrivateLinkResource) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebPubsubSharedPrivateLinkResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WebPubsubSharedPrivateLinkResource) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

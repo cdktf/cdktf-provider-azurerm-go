@@ -59,7 +59,15 @@ func (k *jsiiProxy_KustoClusterPrincipalAssignment) validateInterpolationForAttr
 	return nil
 }
 
+func (k *jsiiProxy_KustoClusterPrincipalAssignment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoClusterPrincipalAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KustoClusterPrincipalAssignment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

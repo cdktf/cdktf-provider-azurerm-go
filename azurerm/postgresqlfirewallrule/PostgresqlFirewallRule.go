@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/postgresql_firewall_rule azurerm_postgresql_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/postgresql_firewall_rule azurerm_postgresql_firewall_rule}.
 type PostgresqlFirewallRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -105,12 +105,22 @@ type PostgresqlFirewallRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -436,7 +446,7 @@ func (j *jsiiProxy_PostgresqlFirewallRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/postgresql_firewall_rule azurerm_postgresql_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/postgresql_firewall_rule azurerm_postgresql_firewall_rule} Resource.
 func NewPostgresqlFirewallRule(scope constructs.Construct, id *string, config *PostgresqlFirewallRuleConfig) PostgresqlFirewallRule {
 	_init_.Initialize()
 
@@ -454,7 +464,7 @@ func NewPostgresqlFirewallRule(scope constructs.Construct, id *string, config *P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/postgresql_firewall_rule azurerm_postgresql_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/postgresql_firewall_rule azurerm_postgresql_firewall_rule} Resource.
 func NewPostgresqlFirewallRule_Override(p PostgresqlFirewallRule, scope constructs.Construct, id *string, config *PostgresqlFirewallRuleConfig) {
 	_init_.Initialize()
 
@@ -868,6 +878,19 @@ func (p *jsiiProxy_PostgresqlFirewallRule) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (p *jsiiProxy_PostgresqlFirewallRule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (p *jsiiProxy_PostgresqlFirewallRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -895,6 +918,17 @@ func (p *jsiiProxy_PostgresqlFirewallRule) InterpolationForAttribute(terraformAt
 	return returns
 }
 
+func (p *jsiiProxy_PostgresqlFirewallRule) MoveFromId(id *string) {
+	if err := p.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (p *jsiiProxy_PostgresqlFirewallRule) MoveTo(moveTarget *string, index interface{}) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -903,6 +937,17 @@ func (p *jsiiProxy_PostgresqlFirewallRule) MoveTo(moveTarget *string, index inte
 		p,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (p *jsiiProxy_PostgresqlFirewallRule) MoveToId(id *string) {
+	if err := p.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (a *jsiiProxy_AppServiceSlotVirtualNetworkSwiftConnection) validateInterpol
 	return nil
 }
 
+func (a *jsiiProxy_AppServiceSlotVirtualNetworkSwiftConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppServiceSlotVirtualNetworkSwiftConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppServiceSlotVirtualNetworkSwiftConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

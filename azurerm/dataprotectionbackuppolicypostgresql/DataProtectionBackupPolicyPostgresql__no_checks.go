@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) validateInterpolationFo
 	return nil
 }
 
+func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

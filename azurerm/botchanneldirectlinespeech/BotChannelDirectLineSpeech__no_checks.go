@@ -59,7 +59,15 @@ func (b *jsiiProxy_BotChannelDirectLineSpeech) validateInterpolationForAttribute
 	return nil
 }
 
+func (b *jsiiProxy_BotChannelDirectLineSpeech) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelDirectLineSpeech) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelDirectLineSpeech) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

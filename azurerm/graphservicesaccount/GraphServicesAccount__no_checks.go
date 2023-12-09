@@ -59,7 +59,15 @@ func (g *jsiiProxy_GraphServicesAccount) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GraphServicesAccount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GraphServicesAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GraphServicesAccount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

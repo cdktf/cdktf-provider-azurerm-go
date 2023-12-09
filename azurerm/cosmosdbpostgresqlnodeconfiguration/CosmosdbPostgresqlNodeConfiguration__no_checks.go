@@ -59,7 +59,15 @@ func (c *jsiiProxy_CosmosdbPostgresqlNodeConfiguration) validateInterpolationFor
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbPostgresqlNodeConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbPostgresqlNodeConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbPostgresqlNodeConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

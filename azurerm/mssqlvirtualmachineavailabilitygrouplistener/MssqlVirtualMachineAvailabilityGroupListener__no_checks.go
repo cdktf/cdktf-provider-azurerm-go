@@ -59,7 +59,15 @@ func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListener) validateInterpo
 	return nil
 }
 
+func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListener) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListener) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListener) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

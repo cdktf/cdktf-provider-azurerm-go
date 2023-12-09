@@ -59,7 +59,15 @@ func (c *jsiiProxy_ContainerAppEnvironmentDaprComponent) validateInterpolationFo
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAppEnvironmentDaprComponent) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAppEnvironmentDaprComponent) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAppEnvironmentDaprComponent) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

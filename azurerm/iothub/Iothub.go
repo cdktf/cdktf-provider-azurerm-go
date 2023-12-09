@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iothub azurerm_iothub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iothub azurerm_iothub}.
 type Iothub interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -143,12 +143,22 @@ type Iothub interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -837,7 +847,7 @@ func (j *jsiiProxy_Iothub) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iothub azurerm_iothub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iothub azurerm_iothub} Resource.
 func NewIothub(scope constructs.Construct, id *string, config *IothubConfig) Iothub {
 	_init_.Initialize()
 
@@ -855,7 +865,7 @@ func NewIothub(scope constructs.Construct, id *string, config *IothubConfig) Iot
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iothub azurerm_iothub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iothub azurerm_iothub} Resource.
 func NewIothub_Override(i Iothub, scope constructs.Construct, id *string, config *IothubConfig) {
 	_init_.Initialize()
 
@@ -1313,6 +1323,19 @@ func (i *jsiiProxy_Iothub) GetStringMapAttribute(terraformAttribute *string) *ma
 	return returns
 }
 
+func (i *jsiiProxy_Iothub) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_Iothub) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1340,6 +1363,17 @@ func (i *jsiiProxy_Iothub) InterpolationForAttribute(terraformAttribute *string)
 	return returns
 }
 
+func (i *jsiiProxy_Iothub) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_Iothub) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1348,6 +1382,17 @@ func (i *jsiiProxy_Iothub) MoveTo(moveTarget *string, index interface{}) {
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_Iothub) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceSftp) validateInterpolationForAttribu
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceSftp) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceSftp) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceSftp) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataShareDatasetBlobStorage) validateInterpolationForAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DataShareDatasetBlobStorage) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataShareDatasetBlobStorage) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataShareDatasetBlobStorage) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

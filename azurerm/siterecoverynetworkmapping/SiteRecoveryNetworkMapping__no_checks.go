@@ -59,7 +59,15 @@ func (s *jsiiProxy_SiteRecoveryNetworkMapping) validateInterpolationForAttribute
 	return nil
 }
 
+func (s *jsiiProxy_SiteRecoveryNetworkMapping) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryNetworkMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SiteRecoveryNetworkMapping) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

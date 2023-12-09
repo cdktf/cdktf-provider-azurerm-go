@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/function_app_function azurerm_function_app_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/function_app_function azurerm_function_app_function}.
 type FunctionAppFunction interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -117,12 +117,22 @@ type FunctionAppFunction interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -563,7 +573,7 @@ func (j *jsiiProxy_FunctionAppFunction) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/function_app_function azurerm_function_app_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/function_app_function azurerm_function_app_function} Resource.
 func NewFunctionAppFunction(scope constructs.Construct, id *string, config *FunctionAppFunctionConfig) FunctionAppFunction {
 	_init_.Initialize()
 
@@ -581,7 +591,7 @@ func NewFunctionAppFunction(scope constructs.Construct, id *string, config *Func
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/function_app_function azurerm_function_app_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/function_app_function azurerm_function_app_function} Resource.
 func NewFunctionAppFunction_Override(f FunctionAppFunction, scope constructs.Construct, id *string, config *FunctionAppFunctionConfig) {
 	_init_.Initialize()
 
@@ -1006,6 +1016,19 @@ func (f *jsiiProxy_FunctionAppFunction) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (f *jsiiProxy_FunctionAppFunction) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		f,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (f *jsiiProxy_FunctionAppFunction) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := f.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1033,6 +1056,17 @@ func (f *jsiiProxy_FunctionAppFunction) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (f *jsiiProxy_FunctionAppFunction) MoveFromId(id *string) {
+	if err := f.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (f *jsiiProxy_FunctionAppFunction) MoveTo(moveTarget *string, index interface{}) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1041,6 +1075,17 @@ func (f *jsiiProxy_FunctionAppFunction) MoveTo(moveTarget *string, index interfa
 		f,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (f *jsiiProxy_FunctionAppFunction) MoveToId(id *string) {
+	if err := f.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

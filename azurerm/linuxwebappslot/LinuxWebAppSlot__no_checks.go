@@ -59,7 +59,15 @@ func (l *jsiiProxy_LinuxWebAppSlot) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (l *jsiiProxy_LinuxWebAppSlot) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxWebAppSlot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LinuxWebAppSlot) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

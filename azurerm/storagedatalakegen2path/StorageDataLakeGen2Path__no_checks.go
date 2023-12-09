@@ -59,7 +59,15 @@ func (s *jsiiProxy_StorageDataLakeGen2Path) validateInterpolationForAttributePar
 	return nil
 }
 
+func (s *jsiiProxy_StorageDataLakeGen2Path) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageDataLakeGen2Path) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageDataLakeGen2Path) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

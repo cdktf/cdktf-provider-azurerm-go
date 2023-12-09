@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceKeyVault) validateInterpolationForAtt
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceKeyVault) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceKeyVault) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceKeyVault) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

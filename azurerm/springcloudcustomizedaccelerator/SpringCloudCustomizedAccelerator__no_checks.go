@@ -59,7 +59,15 @@ func (s *jsiiProxy_SpringCloudCustomizedAccelerator) validateInterpolationForAtt
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudCustomizedAccelerator) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudCustomizedAccelerator) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudCustomizedAccelerator) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

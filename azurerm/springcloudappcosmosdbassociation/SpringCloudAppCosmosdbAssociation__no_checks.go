@@ -59,7 +59,15 @@ func (s *jsiiProxy_SpringCloudAppCosmosdbAssociation) validateInterpolationForAt
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudAppCosmosdbAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudAppCosmosdbAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudAppCosmosdbAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

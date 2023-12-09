@@ -59,7 +59,15 @@ func (s *jsiiProxy_StreamAnalyticsOutputFunction) validateInterpolationForAttrib
 	return nil
 }
 
+func (s *jsiiProxy_StreamAnalyticsOutputFunction) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsOutputFunction) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamAnalyticsOutputFunction) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

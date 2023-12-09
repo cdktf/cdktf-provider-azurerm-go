@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/mssql_outbound_firewall_rule azurerm_mssql_outbound_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mssql_outbound_firewall_rule azurerm_mssql_outbound_firewall_rule}.
 type MssqlOutboundFirewallRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -96,12 +96,22 @@ type MssqlOutboundFirewallRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -367,7 +377,7 @@ func (j *jsiiProxy_MssqlOutboundFirewallRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/mssql_outbound_firewall_rule azurerm_mssql_outbound_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mssql_outbound_firewall_rule azurerm_mssql_outbound_firewall_rule} Resource.
 func NewMssqlOutboundFirewallRule(scope constructs.Construct, id *string, config *MssqlOutboundFirewallRuleConfig) MssqlOutboundFirewallRule {
 	_init_.Initialize()
 
@@ -385,7 +395,7 @@ func NewMssqlOutboundFirewallRule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/mssql_outbound_firewall_rule azurerm_mssql_outbound_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mssql_outbound_firewall_rule azurerm_mssql_outbound_firewall_rule} Resource.
 func NewMssqlOutboundFirewallRule_Override(m MssqlOutboundFirewallRule, scope constructs.Construct, id *string, config *MssqlOutboundFirewallRuleConfig) {
 	_init_.Initialize()
 
@@ -766,6 +776,19 @@ func (m *jsiiProxy_MssqlOutboundFirewallRule) GetStringMapAttribute(terraformAtt
 	return returns
 }
 
+func (m *jsiiProxy_MssqlOutboundFirewallRule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (m *jsiiProxy_MssqlOutboundFirewallRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -793,6 +816,17 @@ func (m *jsiiProxy_MssqlOutboundFirewallRule) InterpolationForAttribute(terrafor
 	return returns
 }
 
+func (m *jsiiProxy_MssqlOutboundFirewallRule) MoveFromId(id *string) {
+	if err := m.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (m *jsiiProxy_MssqlOutboundFirewallRule) MoveTo(moveTarget *string, index interface{}) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -801,6 +835,17 @@ func (m *jsiiProxy_MssqlOutboundFirewallRule) MoveTo(moveTarget *string, index i
 		m,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (m *jsiiProxy_MssqlOutboundFirewallRule) MoveToId(id *string) {
+	if err := m.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

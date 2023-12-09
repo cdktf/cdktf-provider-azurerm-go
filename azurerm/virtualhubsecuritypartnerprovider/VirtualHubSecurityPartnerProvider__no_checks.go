@@ -59,7 +59,15 @@ func (v *jsiiProxy_VirtualHubSecurityPartnerProvider) validateInterpolationForAt
 	return nil
 }
 
+func (v *jsiiProxy_VirtualHubSecurityPartnerProvider) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualHubSecurityPartnerProvider) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualHubSecurityPartnerProvider) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

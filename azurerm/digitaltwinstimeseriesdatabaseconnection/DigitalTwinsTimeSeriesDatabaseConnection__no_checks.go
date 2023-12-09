@@ -59,7 +59,15 @@ func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) validateInterpolati
 	return nil
 }
 
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -5,7 +5,7 @@ package dataazurermredisenterprisedatabase
 
 
 type DataAzurermRedisEnterpriseDatabaseTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/redis_enterprise_database#read DataAzurermRedisEnterpriseDatabase#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/redis_enterprise_database#read DataAzurermRedisEnterpriseDatabase#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

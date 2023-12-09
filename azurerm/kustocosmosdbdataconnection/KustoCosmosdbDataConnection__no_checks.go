@@ -59,7 +59,15 @@ func (k *jsiiProxy_KustoCosmosdbDataConnection) validateInterpolationForAttribut
 	return nil
 }
 
+func (k *jsiiProxy_KustoCosmosdbDataConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoCosmosdbDataConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KustoCosmosdbDataConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociation) validateInterp
 	return nil
 }
 
+func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

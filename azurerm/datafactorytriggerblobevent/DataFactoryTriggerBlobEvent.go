@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event}.
 type DataFactoryTriggerBlobEvent interface {
 	cdktf.TerraformResource
 	Activated() interface{}
@@ -125,12 +125,22 @@ type DataFactoryTriggerBlobEvent interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -604,7 +614,7 @@ func (j *jsiiProxy_DataFactoryTriggerBlobEvent) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event} Resource.
 func NewDataFactoryTriggerBlobEvent(scope constructs.Construct, id *string, config *DataFactoryTriggerBlobEventConfig) DataFactoryTriggerBlobEvent {
 	_init_.Initialize()
 
@@ -622,7 +632,7 @@ func NewDataFactoryTriggerBlobEvent(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/data_factory_trigger_blob_event azurerm_data_factory_trigger_blob_event} Resource.
 func NewDataFactoryTriggerBlobEvent_Override(d DataFactoryTriggerBlobEvent, scope constructs.Construct, id *string, config *DataFactoryTriggerBlobEventConfig) {
 	_init_.Initialize()
 
@@ -1102,6 +1112,19 @@ func (d *jsiiProxy_DataFactoryTriggerBlobEvent) GetStringMapAttribute(terraformA
 	return returns
 }
 
+func (d *jsiiProxy_DataFactoryTriggerBlobEvent) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DataFactoryTriggerBlobEvent) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1129,6 +1152,17 @@ func (d *jsiiProxy_DataFactoryTriggerBlobEvent) InterpolationForAttribute(terraf
 	return returns
 }
 
+func (d *jsiiProxy_DataFactoryTriggerBlobEvent) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DataFactoryTriggerBlobEvent) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1137,6 +1171,17 @@ func (d *jsiiProxy_DataFactoryTriggerBlobEvent) MoveTo(moveTarget *string, index
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DataFactoryTriggerBlobEvent) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

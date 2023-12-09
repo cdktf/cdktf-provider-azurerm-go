@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/graph_account azurerm_graph_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/graph_account azurerm_graph_account}.
 type GraphAccount interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -103,12 +103,22 @@ type GraphAccount interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -425,7 +435,7 @@ func (j *jsiiProxy_GraphAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/graph_account azurerm_graph_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/graph_account azurerm_graph_account} Resource.
 func NewGraphAccount(scope constructs.Construct, id *string, config *GraphAccountConfig) GraphAccount {
 	_init_.Initialize()
 
@@ -443,7 +453,7 @@ func NewGraphAccount(scope constructs.Construct, id *string, config *GraphAccoun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/graph_account azurerm_graph_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/graph_account azurerm_graph_account} Resource.
 func NewGraphAccount_Override(g GraphAccount, scope constructs.Construct, id *string, config *GraphAccountConfig) {
 	_init_.Initialize()
 
@@ -846,6 +856,19 @@ func (g *jsiiProxy_GraphAccount) GetStringMapAttribute(terraformAttribute *strin
 	return returns
 }
 
+func (g *jsiiProxy_GraphAccount) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GraphAccount) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -873,6 +896,17 @@ func (g *jsiiProxy_GraphAccount) InterpolationForAttribute(terraformAttribute *s
 	return returns
 }
 
+func (g *jsiiProxy_GraphAccount) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GraphAccount) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -881,6 +915,17 @@ func (g *jsiiProxy_GraphAccount) MoveTo(moveTarget *string, index interface{}) {
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GraphAccount) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

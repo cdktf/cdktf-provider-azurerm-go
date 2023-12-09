@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/servicebus_queue azurerm_servicebus_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/servicebus_queue azurerm_servicebus_queue}.
 type ServicebusQueue interface {
 	cdktf.TerraformResource
 	AutoDeleteOnIdle() *string
@@ -144,12 +144,22 @@ type ServicebusQueue interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -751,7 +761,7 @@ func (j *jsiiProxy_ServicebusQueue) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/servicebus_queue azurerm_servicebus_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/servicebus_queue azurerm_servicebus_queue} Resource.
 func NewServicebusQueue(scope constructs.Construct, id *string, config *ServicebusQueueConfig) ServicebusQueue {
 	_init_.Initialize()
 
@@ -769,7 +779,7 @@ func NewServicebusQueue(scope constructs.Construct, id *string, config *Serviceb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/servicebus_queue azurerm_servicebus_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/servicebus_queue azurerm_servicebus_queue} Resource.
 func NewServicebusQueue_Override(s ServicebusQueue, scope constructs.Construct, id *string, config *ServicebusQueueConfig) {
 	_init_.Initialize()
 
@@ -1326,6 +1336,19 @@ func (s *jsiiProxy_ServicebusQueue) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (s *jsiiProxy_ServicebusQueue) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_ServicebusQueue) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1353,6 +1376,17 @@ func (s *jsiiProxy_ServicebusQueue) InterpolationForAttribute(terraformAttribute
 	return returns
 }
 
+func (s *jsiiProxy_ServicebusQueue) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_ServicebusQueue) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1361,6 +1395,17 @@ func (s *jsiiProxy_ServicebusQueue) MoveTo(moveTarget *string, index interface{}
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_ServicebusQueue) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

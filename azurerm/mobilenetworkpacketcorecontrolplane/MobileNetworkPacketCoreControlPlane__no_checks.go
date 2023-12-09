@@ -59,7 +59,15 @@ func (m *jsiiProxy_MobileNetworkPacketCoreControlPlane) validateInterpolationFor
 	return nil
 }
 
+func (m *jsiiProxy_MobileNetworkPacketCoreControlPlane) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MobileNetworkPacketCoreControlPlane) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MobileNetworkPacketCoreControlPlane) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

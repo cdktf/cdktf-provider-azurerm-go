@@ -59,7 +59,15 @@ func (i *jsiiProxy_IothubEndpointStorageContainer) validateInterpolationForAttri
 	return nil
 }
 
+func (i *jsiiProxy_IothubEndpointStorageContainer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubEndpointStorageContainer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IothubEndpointStorageContainer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

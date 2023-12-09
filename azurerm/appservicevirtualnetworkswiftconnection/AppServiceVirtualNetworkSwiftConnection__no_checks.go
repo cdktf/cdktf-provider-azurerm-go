@@ -59,7 +59,15 @@ func (a *jsiiProxy_AppServiceVirtualNetworkSwiftConnection) validateInterpolatio
 	return nil
 }
 
+func (a *jsiiProxy_AppServiceVirtualNetworkSwiftConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppServiceVirtualNetworkSwiftConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppServiceVirtualNetworkSwiftConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

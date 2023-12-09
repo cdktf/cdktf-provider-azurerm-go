@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/synapse_sql_pool_workload_classifier azurerm_synapse_sql_pool_workload_classifier}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/synapse_sql_pool_workload_classifier azurerm_synapse_sql_pool_workload_classifier}.
 type SynapseSqlPoolWorkloadClassifier interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -114,12 +114,22 @@ type SynapseSqlPoolWorkloadClassifier interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -510,7 +520,7 @@ func (j *jsiiProxy_SynapseSqlPoolWorkloadClassifier) WorkloadGroupIdInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/synapse_sql_pool_workload_classifier azurerm_synapse_sql_pool_workload_classifier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/synapse_sql_pool_workload_classifier azurerm_synapse_sql_pool_workload_classifier} Resource.
 func NewSynapseSqlPoolWorkloadClassifier(scope constructs.Construct, id *string, config *SynapseSqlPoolWorkloadClassifierConfig) SynapseSqlPoolWorkloadClassifier {
 	_init_.Initialize()
 
@@ -528,7 +538,7 @@ func NewSynapseSqlPoolWorkloadClassifier(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/synapse_sql_pool_workload_classifier azurerm_synapse_sql_pool_workload_classifier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/synapse_sql_pool_workload_classifier azurerm_synapse_sql_pool_workload_classifier} Resource.
 func NewSynapseSqlPoolWorkloadClassifier_Override(s SynapseSqlPoolWorkloadClassifier, scope constructs.Construct, id *string, config *SynapseSqlPoolWorkloadClassifierConfig) {
 	_init_.Initialize()
 
@@ -975,6 +985,19 @@ func (s *jsiiProxy_SynapseSqlPoolWorkloadClassifier) GetStringMapAttribute(terra
 	return returns
 }
 
+func (s *jsiiProxy_SynapseSqlPoolWorkloadClassifier) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_SynapseSqlPoolWorkloadClassifier) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1002,6 +1025,17 @@ func (s *jsiiProxy_SynapseSqlPoolWorkloadClassifier) InterpolationForAttribute(t
 	return returns
 }
 
+func (s *jsiiProxy_SynapseSqlPoolWorkloadClassifier) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_SynapseSqlPoolWorkloadClassifier) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1010,6 +1044,17 @@ func (s *jsiiProxy_SynapseSqlPoolWorkloadClassifier) MoveTo(moveTarget *string, 
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_SynapseSqlPoolWorkloadClassifier) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

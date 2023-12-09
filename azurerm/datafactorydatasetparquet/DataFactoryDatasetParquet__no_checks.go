@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataFactoryDatasetParquet) validateInterpolationForAttributeP
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryDatasetParquet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetParquet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryDatasetParquet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

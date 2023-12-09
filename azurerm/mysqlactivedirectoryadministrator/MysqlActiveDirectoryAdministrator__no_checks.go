@@ -59,7 +59,15 @@ func (m *jsiiProxy_MysqlActiveDirectoryAdministrator) validateInterpolationForAt
 	return nil
 }
 
+func (m *jsiiProxy_MysqlActiveDirectoryAdministrator) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MysqlActiveDirectoryAdministrator) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MysqlActiveDirectoryAdministrator) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

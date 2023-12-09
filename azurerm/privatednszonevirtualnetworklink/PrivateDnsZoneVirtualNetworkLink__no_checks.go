@@ -59,7 +59,15 @@ func (p *jsiiProxy_PrivateDnsZoneVirtualNetworkLink) validateInterpolationForAtt
 	return nil
 }
 
+func (p *jsiiProxy_PrivateDnsZoneVirtualNetworkLink) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateDnsZoneVirtualNetworkLink) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivateDnsZoneVirtualNetworkLink) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

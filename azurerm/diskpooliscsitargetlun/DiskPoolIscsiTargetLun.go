@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/disk_pool_iscsi_target_lun azurerm_disk_pool_iscsi_target_lun}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/disk_pool_iscsi_target_lun azurerm_disk_pool_iscsi_target_lun}.
 type DiskPoolIscsiTargetLun interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -100,12 +100,22 @@ type DiskPoolIscsiTargetLun interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -401,7 +411,7 @@ func (j *jsiiProxy_DiskPoolIscsiTargetLun) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/disk_pool_iscsi_target_lun azurerm_disk_pool_iscsi_target_lun} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/disk_pool_iscsi_target_lun azurerm_disk_pool_iscsi_target_lun} Resource.
 func NewDiskPoolIscsiTargetLun(scope constructs.Construct, id *string, config *DiskPoolIscsiTargetLunConfig) DiskPoolIscsiTargetLun {
 	_init_.Initialize()
 
@@ -419,7 +429,7 @@ func NewDiskPoolIscsiTargetLun(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/disk_pool_iscsi_target_lun azurerm_disk_pool_iscsi_target_lun} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/disk_pool_iscsi_target_lun azurerm_disk_pool_iscsi_target_lun} Resource.
 func NewDiskPoolIscsiTargetLun_Override(d DiskPoolIscsiTargetLun, scope constructs.Construct, id *string, config *DiskPoolIscsiTargetLunConfig) {
 	_init_.Initialize()
 
@@ -811,6 +821,19 @@ func (d *jsiiProxy_DiskPoolIscsiTargetLun) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (d *jsiiProxy_DiskPoolIscsiTargetLun) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DiskPoolIscsiTargetLun) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -838,6 +861,17 @@ func (d *jsiiProxy_DiskPoolIscsiTargetLun) InterpolationForAttribute(terraformAt
 	return returns
 }
 
+func (d *jsiiProxy_DiskPoolIscsiTargetLun) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DiskPoolIscsiTargetLun) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -846,6 +880,17 @@ func (d *jsiiProxy_DiskPoolIscsiTargetLun) MoveTo(moveTarget *string, index inte
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DiskPoolIscsiTargetLun) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

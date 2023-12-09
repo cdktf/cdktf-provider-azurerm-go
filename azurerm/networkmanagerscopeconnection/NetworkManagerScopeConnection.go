@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_manager_scope_connection azurerm_network_manager_scope_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_manager_scope_connection azurerm_network_manager_scope_connection}.
 type NetworkManagerScopeConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -106,12 +106,22 @@ type NetworkManagerScopeConnection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -448,7 +458,7 @@ func (j *jsiiProxy_NetworkManagerScopeConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_manager_scope_connection azurerm_network_manager_scope_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_manager_scope_connection azurerm_network_manager_scope_connection} Resource.
 func NewNetworkManagerScopeConnection(scope constructs.Construct, id *string, config *NetworkManagerScopeConnectionConfig) NetworkManagerScopeConnection {
 	_init_.Initialize()
 
@@ -466,7 +476,7 @@ func NewNetworkManagerScopeConnection(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_manager_scope_connection azurerm_network_manager_scope_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_manager_scope_connection azurerm_network_manager_scope_connection} Resource.
 func NewNetworkManagerScopeConnection_Override(n NetworkManagerScopeConnection, scope constructs.Construct, id *string, config *NetworkManagerScopeConnectionConfig) {
 	_init_.Initialize()
 
@@ -880,6 +890,19 @@ func (n *jsiiProxy_NetworkManagerScopeConnection) GetStringMapAttribute(terrafor
 	return returns
 }
 
+func (n *jsiiProxy_NetworkManagerScopeConnection) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NetworkManagerScopeConnection) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -907,6 +930,17 @@ func (n *jsiiProxy_NetworkManagerScopeConnection) InterpolationForAttribute(terr
 	return returns
 }
 
+func (n *jsiiProxy_NetworkManagerScopeConnection) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NetworkManagerScopeConnection) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -915,6 +949,17 @@ func (n *jsiiProxy_NetworkManagerScopeConnection) MoveTo(moveTarget *string, ind
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NetworkManagerScopeConnection) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

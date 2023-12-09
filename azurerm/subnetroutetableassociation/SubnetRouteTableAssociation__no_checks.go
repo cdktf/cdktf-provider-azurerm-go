@@ -59,7 +59,15 @@ func (s *jsiiProxy_SubnetRouteTableAssociation) validateInterpolationForAttribut
 	return nil
 }
 
+func (s *jsiiProxy_SubnetRouteTableAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SubnetRouteTableAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SubnetRouteTableAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (p *jsiiProxy_PrivateEndpointApplicationSecurityGroupAssociation) validateI
 	return nil
 }
 
+func (p *jsiiProxy_PrivateEndpointApplicationSecurityGroupAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateEndpointApplicationSecurityGroupAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivateEndpointApplicationSecurityGroupAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

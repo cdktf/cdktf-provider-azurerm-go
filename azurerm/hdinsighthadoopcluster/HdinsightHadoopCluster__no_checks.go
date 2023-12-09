@@ -59,7 +59,15 @@ func (h *jsiiProxy_HdinsightHadoopCluster) validateInterpolationForAttributePara
 	return nil
 }
 
+func (h *jsiiProxy_HdinsightHadoopCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HdinsightHadoopCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HdinsightHadoopCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

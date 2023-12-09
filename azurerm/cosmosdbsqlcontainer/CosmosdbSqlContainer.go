@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container}.
 type CosmosdbSqlContainer interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -125,12 +125,22 @@ type CosmosdbSqlContainer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -628,7 +638,7 @@ func (j *jsiiProxy_CosmosdbSqlContainer) UniqueKeyInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container} Resource.
 func NewCosmosdbSqlContainer(scope constructs.Construct, id *string, config *CosmosdbSqlContainerConfig) CosmosdbSqlContainer {
 	_init_.Initialize()
 
@@ -646,7 +656,7 @@ func NewCosmosdbSqlContainer(scope constructs.Construct, id *string, config *Cos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container} Resource.
 func NewCosmosdbSqlContainer_Override(c CosmosdbSqlContainer, scope constructs.Construct, id *string, config *CosmosdbSqlContainerConfig) {
 	_init_.Initialize()
 
@@ -1104,6 +1114,19 @@ func (c *jsiiProxy_CosmosdbSqlContainer) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (c *jsiiProxy_CosmosdbSqlContainer) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_CosmosdbSqlContainer) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1131,6 +1154,17 @@ func (c *jsiiProxy_CosmosdbSqlContainer) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (c *jsiiProxy_CosmosdbSqlContainer) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_CosmosdbSqlContainer) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1139,6 +1173,17 @@ func (c *jsiiProxy_CosmosdbSqlContainer) MoveTo(moveTarget *string, index interf
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_CosmosdbSqlContainer) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

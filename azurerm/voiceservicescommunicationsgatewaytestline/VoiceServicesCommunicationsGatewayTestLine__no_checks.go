@@ -59,7 +59,15 @@ func (v *jsiiProxy_VoiceServicesCommunicationsGatewayTestLine) validateInterpola
 	return nil
 }
 
+func (v *jsiiProxy_VoiceServicesCommunicationsGatewayTestLine) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VoiceServicesCommunicationsGatewayTestLine) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VoiceServicesCommunicationsGatewayTestLine) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

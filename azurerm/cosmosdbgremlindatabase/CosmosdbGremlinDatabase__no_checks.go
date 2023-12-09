@@ -59,7 +59,15 @@ func (c *jsiiProxy_CosmosdbGremlinDatabase) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbGremlinDatabase) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbGremlinDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbGremlinDatabase) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

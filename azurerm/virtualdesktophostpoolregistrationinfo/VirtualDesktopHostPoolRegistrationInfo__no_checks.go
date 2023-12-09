@@ -59,7 +59,15 @@ func (v *jsiiProxy_VirtualDesktopHostPoolRegistrationInfo) validateInterpolation
 	return nil
 }
 
+func (v *jsiiProxy_VirtualDesktopHostPoolRegistrationInfo) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualDesktopHostPoolRegistrationInfo) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualDesktopHostPoolRegistrationInfo) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

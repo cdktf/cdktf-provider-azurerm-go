@@ -59,7 +59,15 @@ func (v *jsiiProxy_VirtualNetworkGateway) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (v *jsiiProxy_VirtualNetworkGateway) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetworkGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualNetworkGateway) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -76,6 +84,10 @@ func (v *jsiiProxy_VirtualNetworkGateway) validatePutCustomRouteParameters(value
 }
 
 func (v *jsiiProxy_VirtualNetworkGateway) validatePutIpConfigurationParameters(value interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualNetworkGateway) validatePutPolicyGroupParameters(value interface{}) error {
 	return nil
 }
 
@@ -107,6 +119,10 @@ func (j *jsiiProxy_VirtualNetworkGateway) validateSetActiveActiveParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_VirtualNetworkGateway) validateSetBgpRouteTranslationForNatEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetworkGateway) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -116,6 +132,10 @@ func (j *jsiiProxy_VirtualNetworkGateway) validateSetCountParameters(val interfa
 }
 
 func (j *jsiiProxy_VirtualNetworkGateway) validateSetDefaultLocalNetworkGatewayIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway) validateSetDnsForwardingEnabledParameters(val interface{}) error {
 	return nil
 }
 
@@ -132,6 +152,10 @@ func (j *jsiiProxy_VirtualNetworkGateway) validateSetGenerationParameters(val *s
 }
 
 func (j *jsiiProxy_VirtualNetworkGateway) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway) validateSetIpSecReplayProtectionEnabledParameters(val interface{}) error {
 	return nil
 }
 
@@ -155,6 +179,10 @@ func (j *jsiiProxy_VirtualNetworkGateway) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_VirtualNetworkGateway) validateSetRemoteVnetTrafficEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetworkGateway) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }
@@ -168,6 +196,10 @@ func (j *jsiiProxy_VirtualNetworkGateway) validateSetTagsParameters(val *map[str
 }
 
 func (j *jsiiProxy_VirtualNetworkGateway) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway) validateSetVirtualWanTrafficEnabledParameters(val interface{}) error {
 	return nil
 }
 

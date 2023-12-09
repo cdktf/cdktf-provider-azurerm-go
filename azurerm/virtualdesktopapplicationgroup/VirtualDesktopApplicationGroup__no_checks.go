@@ -59,7 +59,15 @@ func (v *jsiiProxy_VirtualDesktopApplicationGroup) validateInterpolationForAttri
 	return nil
 }
 
+func (v *jsiiProxy_VirtualDesktopApplicationGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualDesktopApplicationGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualDesktopApplicationGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

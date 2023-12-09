@@ -59,7 +59,15 @@ func (l *jsiiProxy_LocalNetworkGateway) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (l *jsiiProxy_LocalNetworkGateway) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LocalNetworkGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LocalNetworkGateway) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

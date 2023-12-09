@@ -59,7 +59,15 @@ func (l *jsiiProxy_LogicAppTriggerRecurrence) validateInterpolationForAttributeP
 	return nil
 }
 
+func (l *jsiiProxy_LogicAppTriggerRecurrence) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogicAppTriggerRecurrence) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogicAppTriggerRecurrence) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

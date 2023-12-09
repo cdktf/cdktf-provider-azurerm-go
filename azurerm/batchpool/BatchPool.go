@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/batch_pool azurerm_batch_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/batch_pool azurerm_batch_pool}.
 type BatchPool interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -161,12 +161,22 @@ type BatchPool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -1011,7 +1021,7 @@ func (j *jsiiProxy_BatchPool) WindowsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/batch_pool azurerm_batch_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/batch_pool azurerm_batch_pool} Resource.
 func NewBatchPool(scope constructs.Construct, id *string, config *BatchPoolConfig) BatchPool {
 	_init_.Initialize()
 
@@ -1029,7 +1039,7 @@ func NewBatchPool(scope constructs.Construct, id *string, config *BatchPoolConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/batch_pool azurerm_batch_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/batch_pool azurerm_batch_pool} Resource.
 func NewBatchPool_Override(b BatchPool, scope constructs.Construct, id *string, config *BatchPoolConfig) {
 	_init_.Initialize()
 
@@ -1531,6 +1541,19 @@ func (b *jsiiProxy_BatchPool) GetStringMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
+func (b *jsiiProxy_BatchPool) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (b *jsiiProxy_BatchPool) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := b.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1558,6 +1581,17 @@ func (b *jsiiProxy_BatchPool) InterpolationForAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (b *jsiiProxy_BatchPool) MoveFromId(id *string) {
+	if err := b.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (b *jsiiProxy_BatchPool) MoveTo(moveTarget *string, index interface{}) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1566,6 +1600,17 @@ func (b *jsiiProxy_BatchPool) MoveTo(moveTarget *string, index interface{}) {
 		b,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (b *jsiiProxy_BatchPool) MoveToId(id *string) {
+	if err := b.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

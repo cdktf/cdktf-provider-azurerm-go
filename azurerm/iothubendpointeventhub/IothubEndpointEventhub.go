@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iothub_endpoint_eventhub azurerm_iothub_endpoint_eventhub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iothub_endpoint_eventhub azurerm_iothub_endpoint_eventhub}.
 type IothubEndpointEventhub interface {
 	cdktf.TerraformResource
 	AuthenticationType() *string
@@ -114,12 +114,22 @@ type IothubEndpointEventhub interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -510,7 +520,7 @@ func (j *jsiiProxy_IothubEndpointEventhub) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iothub_endpoint_eventhub azurerm_iothub_endpoint_eventhub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iothub_endpoint_eventhub azurerm_iothub_endpoint_eventhub} Resource.
 func NewIothubEndpointEventhub(scope constructs.Construct, id *string, config *IothubEndpointEventhubConfig) IothubEndpointEventhub {
 	_init_.Initialize()
 
@@ -528,7 +538,7 @@ func NewIothubEndpointEventhub(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iothub_endpoint_eventhub azurerm_iothub_endpoint_eventhub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iothub_endpoint_eventhub azurerm_iothub_endpoint_eventhub} Resource.
 func NewIothubEndpointEventhub_Override(i IothubEndpointEventhub, scope constructs.Construct, id *string, config *IothubEndpointEventhubConfig) {
 	_init_.Initialize()
 
@@ -975,6 +985,19 @@ func (i *jsiiProxy_IothubEndpointEventhub) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (i *jsiiProxy_IothubEndpointEventhub) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IothubEndpointEventhub) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1002,6 +1025,17 @@ func (i *jsiiProxy_IothubEndpointEventhub) InterpolationForAttribute(terraformAt
 	return returns
 }
 
+func (i *jsiiProxy_IothubEndpointEventhub) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IothubEndpointEventhub) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1010,6 +1044,17 @@ func (i *jsiiProxy_IothubEndpointEventhub) MoveTo(moveTarget *string, index inte
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IothubEndpointEventhub) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

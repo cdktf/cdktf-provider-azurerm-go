@@ -59,7 +59,15 @@ func (n *jsiiProxy_NotificationHubAuthorizationRule) validateInterpolationForAtt
 	return nil
 }
 
+func (n *jsiiProxy_NotificationHubAuthorizationRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationHubAuthorizationRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationHubAuthorizationRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

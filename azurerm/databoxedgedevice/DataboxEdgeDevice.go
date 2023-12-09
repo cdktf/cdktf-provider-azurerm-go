@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/databox_edge_device azurerm_databox_edge_device}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/databox_edge_device azurerm_databox_edge_device}.
 type DataboxEdgeDevice interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -106,12 +106,22 @@ type DataboxEdgeDevice interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -448,7 +458,7 @@ func (j *jsiiProxy_DataboxEdgeDevice) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/databox_edge_device azurerm_databox_edge_device} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/databox_edge_device azurerm_databox_edge_device} Resource.
 func NewDataboxEdgeDevice(scope constructs.Construct, id *string, config *DataboxEdgeDeviceConfig) DataboxEdgeDevice {
 	_init_.Initialize()
 
@@ -466,7 +476,7 @@ func NewDataboxEdgeDevice(scope constructs.Construct, id *string, config *Databo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/databox_edge_device azurerm_databox_edge_device} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/databox_edge_device azurerm_databox_edge_device} Resource.
 func NewDataboxEdgeDevice_Override(d DataboxEdgeDevice, scope constructs.Construct, id *string, config *DataboxEdgeDeviceConfig) {
 	_init_.Initialize()
 
@@ -880,6 +890,19 @@ func (d *jsiiProxy_DataboxEdgeDevice) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (d *jsiiProxy_DataboxEdgeDevice) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DataboxEdgeDevice) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -907,6 +930,17 @@ func (d *jsiiProxy_DataboxEdgeDevice) InterpolationForAttribute(terraformAttribu
 	return returns
 }
 
+func (d *jsiiProxy_DataboxEdgeDevice) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DataboxEdgeDevice) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -915,6 +949,17 @@ func (d *jsiiProxy_DataboxEdgeDevice) MoveTo(moveTarget *string, index interface
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DataboxEdgeDevice) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (a *jsiiProxy_ArcKubernetesCluster) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (a *jsiiProxy_ArcKubernetesCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArcKubernetesCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ArcKubernetesCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

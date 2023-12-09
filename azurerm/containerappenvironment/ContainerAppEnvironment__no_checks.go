@@ -59,7 +59,15 @@ func (c *jsiiProxy_ContainerAppEnvironment) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAppEnvironment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAppEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAppEnvironment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -68,6 +76,10 @@ func (c *jsiiProxy_ContainerAppEnvironment) validateOverrideLogicalIdParameters(
 }
 
 func (c *jsiiProxy_ContainerAppEnvironment) validatePutTimeoutsParameters(value *ContainerAppEnvironmentTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAppEnvironment) validatePutWorkloadProfileParameters(value interface{}) error {
 	return nil
 }
 

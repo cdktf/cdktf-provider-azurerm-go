@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) validateInterpolatio
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapi) validateInterpolati
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapi) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapi) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceCosmosdbMongoapi) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

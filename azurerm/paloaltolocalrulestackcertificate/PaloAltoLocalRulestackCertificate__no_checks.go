@@ -59,7 +59,15 @@ func (p *jsiiProxy_PaloAltoLocalRulestackCertificate) validateInterpolationForAt
 	return nil
 }
 
+func (p *jsiiProxy_PaloAltoLocalRulestackCertificate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PaloAltoLocalRulestackCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PaloAltoLocalRulestackCertificate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

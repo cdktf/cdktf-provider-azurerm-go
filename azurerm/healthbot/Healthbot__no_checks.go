@@ -59,7 +59,15 @@ func (h *jsiiProxy_Healthbot) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (h *jsiiProxy_Healthbot) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_Healthbot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_Healthbot) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

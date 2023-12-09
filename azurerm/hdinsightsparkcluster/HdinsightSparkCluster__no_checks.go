@@ -59,7 +59,15 @@ func (h *jsiiProxy_HdinsightSparkCluster) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (h *jsiiProxy_HdinsightSparkCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HdinsightSparkCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HdinsightSparkCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

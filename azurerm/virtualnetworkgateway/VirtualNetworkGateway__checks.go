@@ -122,6 +122,14 @@ func (v *jsiiProxy_VirtualNetworkGateway) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (v *jsiiProxy_VirtualNetworkGateway) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetworkGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
@@ -183,6 +191,14 @@ func (v *jsiiProxy_VirtualNetworkGateway) validateMoveToParameters(moveTarget *s
 	return nil
 }
 
+func (v *jsiiProxy_VirtualNetworkGateway) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetworkGateway) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
@@ -238,6 +254,37 @@ func (v *jsiiProxy_VirtualNetworkGateway) validatePutIpConfigurationParameters(v
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*VirtualNetworkGatewayIpConfiguration; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (v *jsiiProxy_VirtualNetworkGateway) validatePutPolicyGroupParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*VirtualNetworkGatewayPolicyGroup:
+		value := value.(*[]*VirtualNetworkGatewayPolicyGroup)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*VirtualNetworkGatewayPolicyGroup:
+		value_ := value.([]*VirtualNetworkGatewayPolicyGroup)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*VirtualNetworkGatewayPolicyGroup; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -307,6 +354,26 @@ func validateVirtualNetworkGateway_IsTerraformResourceParameters(x interface{}) 
 }
 
 func (j *jsiiProxy_VirtualNetworkGateway) validateSetActiveActiveParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway) validateSetBgpRouteTranslationForNatEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -424,6 +491,26 @@ func (j *jsiiProxy_VirtualNetworkGateway) validateSetDefaultLocalNetworkGatewayI
 	return nil
 }
 
+func (j *jsiiProxy_VirtualNetworkGateway) validateSetDnsForwardingEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetworkGateway) validateSetEdgeZoneParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -463,6 +550,26 @@ func (j *jsiiProxy_VirtualNetworkGateway) validateSetGenerationParameters(val *s
 func (j *jsiiProxy_VirtualNetworkGateway) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway) validateSetIpSecReplayProtectionEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
@@ -558,6 +665,26 @@ func (j *jsiiProxy_VirtualNetworkGateway) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_VirtualNetworkGateway) validateSetRemoteVnetTrafficEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetworkGateway) validateSetResourceGroupNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -585,6 +712,26 @@ func (j *jsiiProxy_VirtualNetworkGateway) validateSetTagsParameters(val *map[str
 func (j *jsiiProxy_VirtualNetworkGateway) validateSetTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway) validateSetVirtualWanTrafficEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

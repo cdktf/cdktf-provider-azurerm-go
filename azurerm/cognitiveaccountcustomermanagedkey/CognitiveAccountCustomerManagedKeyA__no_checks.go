@@ -59,7 +59,15 @@ func (c *jsiiProxy_CognitiveAccountCustomerManagedKeyA) validateInterpolationFor
 	return nil
 }
 
+func (c *jsiiProxy_CognitiveAccountCustomerManagedKeyA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitiveAccountCustomerManagedKeyA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitiveAccountCustomerManagedKeyA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

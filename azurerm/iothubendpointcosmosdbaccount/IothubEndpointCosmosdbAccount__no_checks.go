@@ -59,7 +59,15 @@ func (i *jsiiProxy_IothubEndpointCosmosdbAccount) validateInterpolationForAttrib
 	return nil
 }
 
+func (i *jsiiProxy_IothubEndpointCosmosdbAccount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubEndpointCosmosdbAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IothubEndpointCosmosdbAccount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

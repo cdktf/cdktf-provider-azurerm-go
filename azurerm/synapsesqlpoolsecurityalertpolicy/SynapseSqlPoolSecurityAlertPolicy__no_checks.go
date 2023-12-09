@@ -59,7 +59,15 @@ func (s *jsiiProxy_SynapseSqlPoolSecurityAlertPolicy) validateInterpolationForAt
 	return nil
 }
 
+func (s *jsiiProxy_SynapseSqlPoolSecurityAlertPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseSqlPoolSecurityAlertPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SynapseSqlPoolSecurityAlertPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

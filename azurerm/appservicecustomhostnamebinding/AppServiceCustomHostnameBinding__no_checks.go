@@ -59,7 +59,15 @@ func (a *jsiiProxy_AppServiceCustomHostnameBinding) validateInterpolationForAttr
 	return nil
 }
 
+func (a *jsiiProxy_AppServiceCustomHostnameBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppServiceCustomHostnameBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppServiceCustomHostnameBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

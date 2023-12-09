@@ -59,7 +59,15 @@ func (v *jsiiProxy_VmwarePrivateCloud) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (v *jsiiProxy_VmwarePrivateCloud) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwarePrivateCloud) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwarePrivateCloud) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

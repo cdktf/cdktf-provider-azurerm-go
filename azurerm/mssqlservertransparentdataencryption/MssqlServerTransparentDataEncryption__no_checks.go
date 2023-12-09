@@ -59,7 +59,15 @@ func (m *jsiiProxy_MssqlServerTransparentDataEncryption) validateInterpolationFo
 	return nil
 }
 
+func (m *jsiiProxy_MssqlServerTransparentDataEncryption) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlServerTransparentDataEncryption) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlServerTransparentDataEncryption) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

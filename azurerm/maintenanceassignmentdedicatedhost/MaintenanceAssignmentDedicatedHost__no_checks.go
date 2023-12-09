@@ -59,7 +59,15 @@ func (m *jsiiProxy_MaintenanceAssignmentDedicatedHost) validateInterpolationForA
 	return nil
 }
 
+func (m *jsiiProxy_MaintenanceAssignmentDedicatedHost) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MaintenanceAssignmentDedicatedHost) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MaintenanceAssignmentDedicatedHost) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (p *jsiiProxy_PaloAltoLocalRulestackRule) validateInterpolationForAttribute
 	return nil
 }
 
+func (p *jsiiProxy_PaloAltoLocalRulestackRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PaloAltoLocalRulestackRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PaloAltoLocalRulestackRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

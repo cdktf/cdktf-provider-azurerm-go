@@ -59,7 +59,15 @@ func (m *jsiiProxy_MysqlFirewallRule) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (m *jsiiProxy_MysqlFirewallRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MysqlFirewallRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MysqlFirewallRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

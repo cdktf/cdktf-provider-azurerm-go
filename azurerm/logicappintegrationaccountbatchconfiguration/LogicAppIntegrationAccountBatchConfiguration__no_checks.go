@@ -59,7 +59,15 @@ func (l *jsiiProxy_LogicAppIntegrationAccountBatchConfiguration) validateInterpo
 	return nil
 }
 
+func (l *jsiiProxy_LogicAppIntegrationAccountBatchConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogicAppIntegrationAccountBatchConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogicAppIntegrationAccountBatchConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

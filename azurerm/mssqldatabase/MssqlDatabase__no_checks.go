@@ -59,7 +59,15 @@ func (m *jsiiProxy_MssqlDatabase) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (m *jsiiProxy_MssqlDatabase) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlDatabase) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -128,6 +136,10 @@ func (j *jsiiProxy_MssqlDatabase) validateSetCreationSourceDatabaseIdParameters(
 }
 
 func (j *jsiiProxy_MssqlDatabase) validateSetElasticPoolIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MssqlDatabase) validateSetEnclaveTypeParameters(val *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureFileStorage) validateInterpolati
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureFileStorage) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureFileStorage) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureFileStorage) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

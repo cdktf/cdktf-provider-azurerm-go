@@ -59,7 +59,15 @@ func (s *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) validateInter
 	return nil
 }
 
+func (s *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

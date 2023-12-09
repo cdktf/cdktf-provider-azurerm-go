@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/database_migration_project azurerm_database_migration_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/database_migration_project azurerm_database_migration_project}.
 type DatabaseMigrationProject interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -111,12 +111,22 @@ type DatabaseMigrationProject interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -483,7 +493,7 @@ func (j *jsiiProxy_DatabaseMigrationProject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/database_migration_project azurerm_database_migration_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/database_migration_project azurerm_database_migration_project} Resource.
 func NewDatabaseMigrationProject(scope constructs.Construct, id *string, config *DatabaseMigrationProjectConfig) DatabaseMigrationProject {
 	_init_.Initialize()
 
@@ -501,7 +511,7 @@ func NewDatabaseMigrationProject(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/database_migration_project azurerm_database_migration_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/database_migration_project azurerm_database_migration_project} Resource.
 func NewDatabaseMigrationProject_Override(d DatabaseMigrationProject, scope constructs.Construct, id *string, config *DatabaseMigrationProjectConfig) {
 	_init_.Initialize()
 
@@ -937,6 +947,19 @@ func (d *jsiiProxy_DatabaseMigrationProject) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
+func (d *jsiiProxy_DatabaseMigrationProject) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DatabaseMigrationProject) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -964,6 +987,17 @@ func (d *jsiiProxy_DatabaseMigrationProject) InterpolationForAttribute(terraform
 	return returns
 }
 
+func (d *jsiiProxy_DatabaseMigrationProject) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DatabaseMigrationProject) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -972,6 +1006,17 @@ func (d *jsiiProxy_DatabaseMigrationProject) MoveTo(moveTarget *string, index in
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DatabaseMigrationProject) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataFactoryManagedPrivateEndpoint) validateInterpolationForAt
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryManagedPrivateEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryManagedPrivateEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryManagedPrivateEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

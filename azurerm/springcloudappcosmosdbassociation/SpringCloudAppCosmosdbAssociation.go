@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/spring_cloud_app_cosmosdb_association azurerm_spring_cloud_app_cosmosdb_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/spring_cloud_app_cosmosdb_association azurerm_spring_cloud_app_cosmosdb_association}.
 type SpringCloudAppCosmosdbAssociation interface {
 	cdktf.TerraformResource
 	ApiType() *string
@@ -120,12 +120,22 @@ type SpringCloudAppCosmosdbAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -556,7 +566,7 @@ func (j *jsiiProxy_SpringCloudAppCosmosdbAssociation) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/spring_cloud_app_cosmosdb_association azurerm_spring_cloud_app_cosmosdb_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/spring_cloud_app_cosmosdb_association azurerm_spring_cloud_app_cosmosdb_association} Resource.
 func NewSpringCloudAppCosmosdbAssociation(scope constructs.Construct, id *string, config *SpringCloudAppCosmosdbAssociationConfig) SpringCloudAppCosmosdbAssociation {
 	_init_.Initialize()
 
@@ -574,7 +584,7 @@ func NewSpringCloudAppCosmosdbAssociation(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/spring_cloud_app_cosmosdb_association azurerm_spring_cloud_app_cosmosdb_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/spring_cloud_app_cosmosdb_association azurerm_spring_cloud_app_cosmosdb_association} Resource.
 func NewSpringCloudAppCosmosdbAssociation_Override(s SpringCloudAppCosmosdbAssociation, scope constructs.Construct, id *string, config *SpringCloudAppCosmosdbAssociationConfig) {
 	_init_.Initialize()
 
@@ -1043,6 +1053,19 @@ func (s *jsiiProxy_SpringCloudAppCosmosdbAssociation) GetStringMapAttribute(terr
 	return returns
 }
 
+func (s *jsiiProxy_SpringCloudAppCosmosdbAssociation) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_SpringCloudAppCosmosdbAssociation) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1070,6 +1093,17 @@ func (s *jsiiProxy_SpringCloudAppCosmosdbAssociation) InterpolationForAttribute(
 	return returns
 }
 
+func (s *jsiiProxy_SpringCloudAppCosmosdbAssociation) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_SpringCloudAppCosmosdbAssociation) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1078,6 +1112,17 @@ func (s *jsiiProxy_SpringCloudAppCosmosdbAssociation) MoveTo(moveTarget *string,
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_SpringCloudAppCosmosdbAssociation) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

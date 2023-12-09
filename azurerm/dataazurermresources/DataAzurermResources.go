@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/resources azurerm_resources}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/resources azurerm_resources}.
 type DataAzurermResources interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_DataAzurermResources) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/resources azurerm_resources} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/resources azurerm_resources} Data Source.
 func NewDataAzurermResources(scope constructs.Construct, id *string, config *DataAzurermResourcesConfig) DataAzurermResources {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewDataAzurermResources(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/resources azurerm_resources} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/resources azurerm_resources} Data Source.
 func NewDataAzurermResources_Override(d DataAzurermResources, scope constructs.Construct, id *string, config *DataAzurermResourcesConfig) {
 	_init_.Initialize()
 

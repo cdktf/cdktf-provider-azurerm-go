@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/kusto_script azurerm_kusto_script}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/kusto_script azurerm_kusto_script}.
 type KustoScript interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -111,12 +111,22 @@ type KustoScript interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -487,7 +497,7 @@ func (j *jsiiProxy_KustoScript) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/kusto_script azurerm_kusto_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/kusto_script azurerm_kusto_script} Resource.
 func NewKustoScript(scope constructs.Construct, id *string, config *KustoScriptConfig) KustoScript {
 	_init_.Initialize()
 
@@ -505,7 +515,7 @@ func NewKustoScript(scope constructs.Construct, id *string, config *KustoScriptC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/kusto_script azurerm_kusto_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/kusto_script azurerm_kusto_script} Resource.
 func NewKustoScript_Override(k KustoScript, scope constructs.Construct, id *string, config *KustoScriptConfig) {
 	_init_.Initialize()
 
@@ -941,6 +951,19 @@ func (k *jsiiProxy_KustoScript) GetStringMapAttribute(terraformAttribute *string
 	return returns
 }
 
+func (k *jsiiProxy_KustoScript) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		k,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (k *jsiiProxy_KustoScript) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := k.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -968,6 +991,17 @@ func (k *jsiiProxy_KustoScript) InterpolationForAttribute(terraformAttribute *st
 	return returns
 }
 
+func (k *jsiiProxy_KustoScript) MoveFromId(id *string) {
+	if err := k.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (k *jsiiProxy_KustoScript) MoveTo(moveTarget *string, index interface{}) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -976,6 +1010,17 @@ func (k *jsiiProxy_KustoScript) MoveTo(moveTarget *string, index interface{}) {
 		k,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (k *jsiiProxy_KustoScript) MoveToId(id *string) {
+	if err := k.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

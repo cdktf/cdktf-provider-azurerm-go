@@ -59,7 +59,15 @@ func (r *jsiiProxy_RelayNamespaceAuthorizationRule) validateInterpolationForAttr
 	return nil
 }
 
+func (r *jsiiProxy_RelayNamespaceAuthorizationRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RelayNamespaceAuthorizationRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RelayNamespaceAuthorizationRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

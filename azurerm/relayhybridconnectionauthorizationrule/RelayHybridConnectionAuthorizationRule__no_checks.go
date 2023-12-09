@@ -59,7 +59,15 @@ func (r *jsiiProxy_RelayHybridConnectionAuthorizationRule) validateInterpolation
 	return nil
 }
 
+func (r *jsiiProxy_RelayHybridConnectionAuthorizationRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RelayHybridConnectionAuthorizationRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RelayHybridConnectionAuthorizationRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

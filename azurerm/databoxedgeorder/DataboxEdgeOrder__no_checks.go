@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataboxEdgeOrder) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataboxEdgeOrder) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataboxEdgeOrder) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataboxEdgeOrder) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

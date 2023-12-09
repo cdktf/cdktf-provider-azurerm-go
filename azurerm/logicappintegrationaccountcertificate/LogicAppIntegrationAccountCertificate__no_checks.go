@@ -59,7 +59,15 @@ func (l *jsiiProxy_LogicAppIntegrationAccountCertificate) validateInterpolationF
 	return nil
 }
 
+func (l *jsiiProxy_LogicAppIntegrationAccountCertificate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogicAppIntegrationAccountCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogicAppIntegrationAccountCertificate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

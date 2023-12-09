@@ -59,7 +59,15 @@ func (m *jsiiProxy_ManagedLustreFileSystem) validateInterpolationForAttributePar
 	return nil
 }
 
+func (m *jsiiProxy_ManagedLustreFileSystem) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedLustreFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedLustreFileSystem) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/log_analytics_data_export_rule azurerm_log_analytics_data_export_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/log_analytics_data_export_rule azurerm_log_analytics_data_export_rule}.
 type LogAnalyticsDataExportRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -109,12 +109,22 @@ type LogAnalyticsDataExportRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -471,7 +481,7 @@ func (j *jsiiProxy_LogAnalyticsDataExportRule) WorkspaceResourceIdInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/log_analytics_data_export_rule azurerm_log_analytics_data_export_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/log_analytics_data_export_rule azurerm_log_analytics_data_export_rule} Resource.
 func NewLogAnalyticsDataExportRule(scope constructs.Construct, id *string, config *LogAnalyticsDataExportRuleConfig) LogAnalyticsDataExportRule {
 	_init_.Initialize()
 
@@ -489,7 +499,7 @@ func NewLogAnalyticsDataExportRule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/log_analytics_data_export_rule azurerm_log_analytics_data_export_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/log_analytics_data_export_rule azurerm_log_analytics_data_export_rule} Resource.
 func NewLogAnalyticsDataExportRule_Override(l LogAnalyticsDataExportRule, scope constructs.Construct, id *string, config *LogAnalyticsDataExportRuleConfig) {
 	_init_.Initialize()
 
@@ -914,6 +924,19 @@ func (l *jsiiProxy_LogAnalyticsDataExportRule) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (l *jsiiProxy_LogAnalyticsDataExportRule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (l *jsiiProxy_LogAnalyticsDataExportRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -941,6 +964,17 @@ func (l *jsiiProxy_LogAnalyticsDataExportRule) InterpolationForAttribute(terrafo
 	return returns
 }
 
+func (l *jsiiProxy_LogAnalyticsDataExportRule) MoveFromId(id *string) {
+	if err := l.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (l *jsiiProxy_LogAnalyticsDataExportRule) MoveTo(moveTarget *string, index interface{}) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -949,6 +983,17 @@ func (l *jsiiProxy_LogAnalyticsDataExportRule) MoveTo(moveTarget *string, index 
 		l,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (l *jsiiProxy_LogAnalyticsDataExportRule) MoveToId(id *string) {
+	if err := l.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

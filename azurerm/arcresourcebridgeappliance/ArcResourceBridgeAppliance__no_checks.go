@@ -59,7 +59,15 @@ func (a *jsiiProxy_ArcResourceBridgeAppliance) validateInterpolationForAttribute
 	return nil
 }
 
+func (a *jsiiProxy_ArcResourceBridgeAppliance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArcResourceBridgeAppliance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ArcResourceBridgeAppliance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

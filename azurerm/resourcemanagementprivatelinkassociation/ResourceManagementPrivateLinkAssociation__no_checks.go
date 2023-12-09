@@ -59,7 +59,15 @@ func (r *jsiiProxy_ResourceManagementPrivateLinkAssociation) validateInterpolati
 	return nil
 }
 
+func (r *jsiiProxy_ResourceManagementPrivateLinkAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceManagementPrivateLinkAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourceManagementPrivateLinkAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

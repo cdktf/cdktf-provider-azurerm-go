@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/arc_machine_extension azurerm_arc_machine_extension}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/arc_machine_extension azurerm_arc_machine_extension}.
 type ArcMachineExtension interface {
 	cdktf.TerraformResource
 	ArcMachineId() *string
@@ -123,12 +123,22 @@ type ArcMachineExtension interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -580,7 +590,7 @@ func (j *jsiiProxy_ArcMachineExtension) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/arc_machine_extension azurerm_arc_machine_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/arc_machine_extension azurerm_arc_machine_extension} Resource.
 func NewArcMachineExtension(scope constructs.Construct, id *string, config *ArcMachineExtensionConfig) ArcMachineExtension {
 	_init_.Initialize()
 
@@ -598,7 +608,7 @@ func NewArcMachineExtension(scope constructs.Construct, id *string, config *ArcM
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/arc_machine_extension azurerm_arc_machine_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/arc_machine_extension azurerm_arc_machine_extension} Resource.
 func NewArcMachineExtension_Override(a ArcMachineExtension, scope constructs.Construct, id *string, config *ArcMachineExtensionConfig) {
 	_init_.Initialize()
 
@@ -1078,6 +1088,19 @@ func (a *jsiiProxy_ArcMachineExtension) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (a *jsiiProxy_ArcMachineExtension) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_ArcMachineExtension) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1105,6 +1128,17 @@ func (a *jsiiProxy_ArcMachineExtension) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (a *jsiiProxy_ArcMachineExtension) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_ArcMachineExtension) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1113,6 +1147,17 @@ func (a *jsiiProxy_ArcMachineExtension) MoveTo(moveTarget *string, index interfa
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_ArcMachineExtension) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

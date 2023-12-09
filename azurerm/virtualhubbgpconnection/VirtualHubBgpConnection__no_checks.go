@@ -59,7 +59,15 @@ func (v *jsiiProxy_VirtualHubBgpConnection) validateInterpolationForAttributePar
 	return nil
 }
 
+func (v *jsiiProxy_VirtualHubBgpConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualHubBgpConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualHubBgpConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (n *jsiiProxy_NetworkFunctionAzureTrafficCollector) validateInterpolationFo
 	return nil
 }
 
+func (n *jsiiProxy_NetworkFunctionAzureTrafficCollector) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkFunctionAzureTrafficCollector) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkFunctionAzureTrafficCollector) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

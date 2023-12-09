@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/traffic_manager_nested_endpoint azurerm_traffic_manager_nested_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/traffic_manager_nested_endpoint azurerm_traffic_manager_nested_endpoint}.
 type TrafficManagerNestedEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -127,12 +127,22 @@ type TrafficManagerNestedEndpoint interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -629,7 +639,7 @@ func (j *jsiiProxy_TrafficManagerNestedEndpoint) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/traffic_manager_nested_endpoint azurerm_traffic_manager_nested_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/traffic_manager_nested_endpoint azurerm_traffic_manager_nested_endpoint} Resource.
 func NewTrafficManagerNestedEndpoint(scope constructs.Construct, id *string, config *TrafficManagerNestedEndpointConfig) TrafficManagerNestedEndpoint {
 	_init_.Initialize()
 
@@ -647,7 +657,7 @@ func NewTrafficManagerNestedEndpoint(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/traffic_manager_nested_endpoint azurerm_traffic_manager_nested_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/traffic_manager_nested_endpoint azurerm_traffic_manager_nested_endpoint} Resource.
 func NewTrafficManagerNestedEndpoint_Override(t TrafficManagerNestedEndpoint, scope constructs.Construct, id *string, config *TrafficManagerNestedEndpointConfig) {
 	_init_.Initialize()
 
@@ -1127,6 +1137,19 @@ func (t *jsiiProxy_TrafficManagerNestedEndpoint) GetStringMapAttribute(terraform
 	return returns
 }
 
+func (t *jsiiProxy_TrafficManagerNestedEndpoint) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		t,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (t *jsiiProxy_TrafficManagerNestedEndpoint) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := t.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1154,6 +1177,17 @@ func (t *jsiiProxy_TrafficManagerNestedEndpoint) InterpolationForAttribute(terra
 	return returns
 }
 
+func (t *jsiiProxy_TrafficManagerNestedEndpoint) MoveFromId(id *string) {
+	if err := t.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (t *jsiiProxy_TrafficManagerNestedEndpoint) MoveTo(moveTarget *string, index interface{}) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1162,6 +1196,17 @@ func (t *jsiiProxy_TrafficManagerNestedEndpoint) MoveTo(moveTarget *string, inde
 		t,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (t *jsiiProxy_TrafficManagerNestedEndpoint) MoveToId(id *string) {
+	if err := t.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

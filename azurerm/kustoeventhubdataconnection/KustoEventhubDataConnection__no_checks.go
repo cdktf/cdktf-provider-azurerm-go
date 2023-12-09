@@ -59,7 +59,15 @@ func (k *jsiiProxy_KustoEventhubDataConnection) validateInterpolationForAttribut
 	return nil
 }
 
+func (k *jsiiProxy_KustoEventhubDataConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoEventhubDataConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KustoEventhubDataConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

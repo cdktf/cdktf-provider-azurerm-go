@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/storage_account azurerm_storage_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/storage_account azurerm_storage_account}.
 type DataAzurermStorageAccount interface {
 	cdktf.TerraformDataSource
 	AccessTier() *string
@@ -67,18 +67,38 @@ type DataAzurermStorageAccount interface {
 	PrimaryBlobConnectionString() *string
 	PrimaryBlobEndpoint() *string
 	PrimaryBlobHost() *string
+	PrimaryBlobInternetEndpoint() *string
+	PrimaryBlobInternetHost() *string
+	PrimaryBlobMicrosoftEndpoint() *string
+	PrimaryBlobMicrosoftHost() *string
 	PrimaryConnectionString() *string
 	PrimaryDfsEndpoint() *string
 	PrimaryDfsHost() *string
+	PrimaryDfsInternetEndpoint() *string
+	PrimaryDfsInternetHost() *string
+	PrimaryDfsMicrosoftEndpoint() *string
+	PrimaryDfsMicrosoftHost() *string
 	PrimaryFileEndpoint() *string
 	PrimaryFileHost() *string
+	PrimaryFileInternetEndpoint() *string
+	PrimaryFileInternetHost() *string
+	PrimaryFileMicrosoftEndpoint() *string
+	PrimaryFileMicrosoftHost() *string
 	PrimaryLocation() *string
 	PrimaryQueueEndpoint() *string
 	PrimaryQueueHost() *string
+	PrimaryQueueMicrosoftEndpoint() *string
+	PrimaryQueueMicrosoftHost() *string
 	PrimaryTableEndpoint() *string
 	PrimaryTableHost() *string
+	PrimaryTableMicrosoftEndpoint() *string
+	PrimaryTableMicrosoftHost() *string
 	PrimaryWebEndpoint() *string
 	PrimaryWebHost() *string
+	PrimaryWebInternetEndpoint() *string
+	PrimaryWebInternetHost() *string
+	PrimaryWebMicrosoftEndpoint() *string
+	PrimaryWebMicrosoftHost() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -93,18 +113,38 @@ type DataAzurermStorageAccount interface {
 	SecondaryBlobConnectionString() *string
 	SecondaryBlobEndpoint() *string
 	SecondaryBlobHost() *string
+	SecondaryBlobInternetEndpoint() *string
+	SecondaryBlobInternetHost() *string
+	SecondaryBlobMicrosoftEndpoint() *string
+	SecondaryBlobMicrosoftHost() *string
 	SecondaryConnectionString() *string
 	SecondaryDfsEndpoint() *string
 	SecondaryDfsHost() *string
+	SecondaryDfsInternetEndpoint() *string
+	SecondaryDfsInternetHost() *string
+	SecondaryDfsMicrosoftEndpoint() *string
+	SecondaryDfsMicrosoftHost() *string
 	SecondaryFileEndpoint() *string
 	SecondaryFileHost() *string
+	SecondaryFileInternetEndpoint() *string
+	SecondaryFileInternetHost() *string
+	SecondaryFileMicrosoftEndpoint() *string
+	SecondaryFileMicrosoftHost() *string
 	SecondaryLocation() *string
 	SecondaryQueueEndpoint() *string
 	SecondaryQueueHost() *string
+	SecondaryQueueMicrosoftEndpoint() *string
+	SecondaryQueueMicrosoftHost() *string
 	SecondaryTableEndpoint() *string
 	SecondaryTableHost() *string
+	SecondaryTableMicrosoftEndpoint() *string
+	SecondaryTableMicrosoftHost() *string
 	SecondaryWebEndpoint() *string
 	SecondaryWebHost() *string
+	SecondaryWebInternetEndpoint() *string
+	SecondaryWebInternetHost() *string
+	SecondaryWebMicrosoftEndpoint() *string
+	SecondaryWebMicrosoftHost() *string
 	TableEncryptionKeyType() *string
 	Tags() cdktf.StringMap
 	// Experimental.
@@ -482,6 +522,46 @@ func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryBlobHost() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryBlobInternetEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryBlobInternetEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryBlobInternetHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryBlobInternetHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryBlobMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryBlobMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryBlobMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryBlobMicrosoftHost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryConnectionString() *string {
 	var returns *string
 	_jsii_.Get(
@@ -512,6 +592,46 @@ func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryDfsHost() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryDfsInternetEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryDfsInternetEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryDfsInternetHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryDfsInternetHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryDfsMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryDfsMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryDfsMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryDfsMicrosoftHost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryFileEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -527,6 +647,46 @@ func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryFileHost() *string {
 	_jsii_.Get(
 		j,
 		"primaryFileHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryFileInternetEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryFileInternetEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryFileInternetHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryFileInternetHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryFileMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryFileMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryFileMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryFileMicrosoftHost",
 		&returns,
 	)
 	return returns
@@ -562,6 +722,26 @@ func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryQueueHost() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryQueueMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryQueueMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryQueueMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryQueueMicrosoftHost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryTableEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -582,6 +762,26 @@ func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryTableHost() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryTableMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryTableMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryTableMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryTableMicrosoftHost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryWebEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -597,6 +797,46 @@ func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryWebHost() *string {
 	_jsii_.Get(
 		j,
 		"primaryWebHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryWebInternetEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryWebInternetEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryWebInternetHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryWebInternetHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryWebMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryWebMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) PrimaryWebMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryWebMicrosoftHost",
 		&returns,
 	)
 	return returns
@@ -692,6 +932,46 @@ func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryBlobHost() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryBlobInternetEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryBlobInternetEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryBlobInternetHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryBlobInternetHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryBlobMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryBlobMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryBlobMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryBlobMicrosoftHost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryConnectionString() *string {
 	var returns *string
 	_jsii_.Get(
@@ -722,6 +1002,46 @@ func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryDfsHost() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryDfsInternetEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryDfsInternetEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryDfsInternetHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryDfsInternetHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryDfsMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryDfsMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryDfsMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryDfsMicrosoftHost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryFileEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -737,6 +1057,46 @@ func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryFileHost() *string {
 	_jsii_.Get(
 		j,
 		"secondaryFileHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryFileInternetEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryFileInternetEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryFileInternetHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryFileInternetHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryFileMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryFileMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryFileMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryFileMicrosoftHost",
 		&returns,
 	)
 	return returns
@@ -772,6 +1132,26 @@ func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryQueueHost() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryQueueMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryQueueMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryQueueMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryQueueMicrosoftHost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryTableEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -792,6 +1172,26 @@ func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryTableHost() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryTableMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryTableMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryTableMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryTableMicrosoftHost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryWebEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -807,6 +1207,46 @@ func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryWebHost() *string {
 	_jsii_.Get(
 		j,
 		"secondaryWebHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryWebInternetEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryWebInternetEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryWebInternetHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryWebInternetHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryWebMicrosoftEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryWebMicrosoftEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageAccount) SecondaryWebMicrosoftHost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryWebMicrosoftHost",
 		&returns,
 	)
 	return returns
@@ -883,7 +1323,7 @@ func (j *jsiiProxy_DataAzurermStorageAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/storage_account azurerm_storage_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/storage_account azurerm_storage_account} Data Source.
 func NewDataAzurermStorageAccount(scope constructs.Construct, id *string, config *DataAzurermStorageAccountConfig) DataAzurermStorageAccount {
 	_init_.Initialize()
 
@@ -901,7 +1341,7 @@ func NewDataAzurermStorageAccount(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/storage_account azurerm_storage_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/storage_account azurerm_storage_account} Data Source.
 func NewDataAzurermStorageAccount_Override(d DataAzurermStorageAccount, scope constructs.Construct, id *string, config *DataAzurermStorageAccountConfig) {
 	_init_.Initialize()
 

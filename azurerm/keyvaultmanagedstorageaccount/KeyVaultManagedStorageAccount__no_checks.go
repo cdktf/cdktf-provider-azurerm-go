@@ -59,7 +59,15 @@ func (k *jsiiProxy_KeyVaultManagedStorageAccount) validateInterpolationForAttrib
 	return nil
 }
 
+func (k *jsiiProxy_KeyVaultManagedStorageAccount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultManagedStorageAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KeyVaultManagedStorageAccount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

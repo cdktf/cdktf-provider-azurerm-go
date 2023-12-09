@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/consumption_budget_resource_group azurerm_consumption_budget_resource_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/consumption_budget_resource_group azurerm_consumption_budget_resource_group}.
 type ConsumptionBudgetResourceGroup interface {
 	cdktf.TerraformResource
 	Amount() *float64
@@ -111,12 +111,22 @@ type ConsumptionBudgetResourceGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -508,7 +518,7 @@ func (j *jsiiProxy_ConsumptionBudgetResourceGroup) TimePeriodInput() *Consumptio
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/consumption_budget_resource_group azurerm_consumption_budget_resource_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/consumption_budget_resource_group azurerm_consumption_budget_resource_group} Resource.
 func NewConsumptionBudgetResourceGroup(scope constructs.Construct, id *string, config *ConsumptionBudgetResourceGroupConfig) ConsumptionBudgetResourceGroup {
 	_init_.Initialize()
 
@@ -526,7 +536,7 @@ func NewConsumptionBudgetResourceGroup(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/consumption_budget_resource_group azurerm_consumption_budget_resource_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/consumption_budget_resource_group azurerm_consumption_budget_resource_group} Resource.
 func NewConsumptionBudgetResourceGroup_Override(c ConsumptionBudgetResourceGroup, scope constructs.Construct, id *string, config *ConsumptionBudgetResourceGroupConfig) {
 	_init_.Initialize()
 
@@ -940,6 +950,19 @@ func (c *jsiiProxy_ConsumptionBudgetResourceGroup) GetStringMapAttribute(terrafo
 	return returns
 }
 
+func (c *jsiiProxy_ConsumptionBudgetResourceGroup) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_ConsumptionBudgetResourceGroup) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -967,6 +990,17 @@ func (c *jsiiProxy_ConsumptionBudgetResourceGroup) InterpolationForAttribute(ter
 	return returns
 }
 
+func (c *jsiiProxy_ConsumptionBudgetResourceGroup) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_ConsumptionBudgetResourceGroup) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -975,6 +1009,17 @@ func (c *jsiiProxy_ConsumptionBudgetResourceGroup) MoveTo(moveTarget *string, in
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_ConsumptionBudgetResourceGroup) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

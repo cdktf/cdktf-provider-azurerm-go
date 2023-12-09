@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iotcentral_application azurerm_iotcentral_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iotcentral_application azurerm_iotcentral_application}.
 type IotcentralApplication interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -119,12 +119,22 @@ type IotcentralApplication interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -557,7 +567,7 @@ func (j *jsiiProxy_IotcentralApplication) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iotcentral_application azurerm_iotcentral_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iotcentral_application azurerm_iotcentral_application} Resource.
 func NewIotcentralApplication(scope constructs.Construct, id *string, config *IotcentralApplicationConfig) IotcentralApplication {
 	_init_.Initialize()
 
@@ -575,7 +585,7 @@ func NewIotcentralApplication(scope constructs.Construct, id *string, config *Io
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iotcentral_application azurerm_iotcentral_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iotcentral_application azurerm_iotcentral_application} Resource.
 func NewIotcentralApplication_Override(i IotcentralApplication, scope constructs.Construct, id *string, config *IotcentralApplicationConfig) {
 	_init_.Initialize()
 
@@ -1033,6 +1043,19 @@ func (i *jsiiProxy_IotcentralApplication) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (i *jsiiProxy_IotcentralApplication) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IotcentralApplication) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1060,6 +1083,17 @@ func (i *jsiiProxy_IotcentralApplication) InterpolationForAttribute(terraformAtt
 	return returns
 }
 
+func (i *jsiiProxy_IotcentralApplication) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IotcentralApplication) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1068,6 +1102,17 @@ func (i *jsiiProxy_IotcentralApplication) MoveTo(moveTarget *string, index inter
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IotcentralApplication) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

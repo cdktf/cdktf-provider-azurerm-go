@@ -93,6 +93,48 @@ func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) v
 	return nil
 }
 
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) validatePutIpsecPolicyParameters(value *VirtualNetworkGatewayVpnClientConfigurationIpsecPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) validatePutRadiusServerParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*VirtualNetworkGatewayVpnClientConfigurationRadiusServer:
+		value := value.(*[]*VirtualNetworkGatewayVpnClientConfigurationRadiusServer)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*VirtualNetworkGatewayVpnClientConfigurationRadiusServer:
+		value_ := value.([]*VirtualNetworkGatewayVpnClientConfigurationRadiusServer)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*VirtualNetworkGatewayVpnClientConfigurationRadiusServer; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) validatePutRevokedCertificateParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -149,6 +191,37 @@ func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) v
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*VirtualNetworkGatewayVpnClientConfigurationRootCertificate; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) validatePutVirtualNetworkGatewayClientConnectionParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*VirtualNetworkGatewayVpnClientConfigurationVirtualNetworkGatewayClientConnection:
+		value := value.(*[]*VirtualNetworkGatewayVpnClientConfigurationVirtualNetworkGatewayClientConnection)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*VirtualNetworkGatewayVpnClientConfigurationVirtualNetworkGatewayClientConnection:
+		value_ := value.([]*VirtualNetworkGatewayVpnClientConfigurationVirtualNetworkGatewayClientConnection)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*VirtualNetworkGatewayVpnClientConfigurationVirtualNetworkGatewayClientConnection; received %#v (a %T)", value, value)
 		}
 	}
 

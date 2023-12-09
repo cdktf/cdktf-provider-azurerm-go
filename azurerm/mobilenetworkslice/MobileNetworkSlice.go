@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice}.
 type MobileNetworkSlice interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -107,12 +107,22 @@ type MobileNetworkSlice interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -461,7 +471,7 @@ func (j *jsiiProxy_MobileNetworkSlice) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice} Resource.
 func NewMobileNetworkSlice(scope constructs.Construct, id *string, config *MobileNetworkSliceConfig) MobileNetworkSlice {
 	_init_.Initialize()
 
@@ -479,7 +489,7 @@ func NewMobileNetworkSlice(scope constructs.Construct, id *string, config *Mobil
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice} Resource.
 func NewMobileNetworkSlice_Override(m MobileNetworkSlice, scope constructs.Construct, id *string, config *MobileNetworkSliceConfig) {
 	_init_.Initialize()
 
@@ -893,6 +903,19 @@ func (m *jsiiProxy_MobileNetworkSlice) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (m *jsiiProxy_MobileNetworkSlice) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (m *jsiiProxy_MobileNetworkSlice) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -920,6 +943,17 @@ func (m *jsiiProxy_MobileNetworkSlice) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (m *jsiiProxy_MobileNetworkSlice) MoveFromId(id *string) {
+	if err := m.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (m *jsiiProxy_MobileNetworkSlice) MoveTo(moveTarget *string, index interface{}) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -928,6 +962,17 @@ func (m *jsiiProxy_MobileNetworkSlice) MoveTo(moveTarget *string, index interfac
 		m,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (m *jsiiProxy_MobileNetworkSlice) MoveToId(id *string) {
+	if err := m.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

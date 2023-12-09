@@ -47,11 +47,23 @@ func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) v
 	return nil
 }
 
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) validatePutIpsecPolicyParameters(value *VirtualNetworkGatewayVpnClientConfigurationIpsecPolicy) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) validatePutRadiusServerParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) validatePutRevokedCertificateParameters(value interface{}) error {
 	return nil
 }
 
 func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) validatePutRootCertificateParameters(value interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualNetworkGatewayVpnClientConfigurationOutputReference) validatePutVirtualNetworkGatewayClientConnectionParameters(value interface{}) error {
 	return nil
 }
 

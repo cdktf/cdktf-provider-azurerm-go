@@ -59,7 +59,15 @@ func (b *jsiiProxy_BotChannelsRegistration) validateInterpolationForAttributePar
 	return nil
 }
 
+func (b *jsiiProxy_BotChannelsRegistration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelsRegistration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BotChannelsRegistration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

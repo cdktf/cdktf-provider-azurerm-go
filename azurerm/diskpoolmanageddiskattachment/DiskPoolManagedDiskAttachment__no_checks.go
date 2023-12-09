@@ -59,7 +59,15 @@ func (d *jsiiProxy_DiskPoolManagedDiskAttachment) validateInterpolationForAttrib
 	return nil
 }
 
+func (d *jsiiProxy_DiskPoolManagedDiskAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiskPoolManagedDiskAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DiskPoolManagedDiskAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

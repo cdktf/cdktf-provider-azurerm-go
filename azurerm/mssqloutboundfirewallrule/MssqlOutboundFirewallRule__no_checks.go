@@ -59,7 +59,15 @@ func (m *jsiiProxy_MssqlOutboundFirewallRule) validateInterpolationForAttributeP
 	return nil
 }
 
+func (m *jsiiProxy_MssqlOutboundFirewallRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlOutboundFirewallRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlOutboundFirewallRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

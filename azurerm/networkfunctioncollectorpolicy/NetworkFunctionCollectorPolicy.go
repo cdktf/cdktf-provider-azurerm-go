@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_function_collector_policy azurerm_network_function_collector_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_function_collector_policy azurerm_network_function_collector_policy}.
 type NetworkFunctionCollectorPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -106,12 +106,22 @@ type NetworkFunctionCollectorPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -460,7 +470,7 @@ func (j *jsiiProxy_NetworkFunctionCollectorPolicy) TrafficCollectorIdInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_function_collector_policy azurerm_network_function_collector_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_function_collector_policy azurerm_network_function_collector_policy} Resource.
 func NewNetworkFunctionCollectorPolicy(scope constructs.Construct, id *string, config *NetworkFunctionCollectorPolicyConfig) NetworkFunctionCollectorPolicy {
 	_init_.Initialize()
 
@@ -478,7 +488,7 @@ func NewNetworkFunctionCollectorPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_function_collector_policy azurerm_network_function_collector_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_function_collector_policy azurerm_network_function_collector_policy} Resource.
 func NewNetworkFunctionCollectorPolicy_Override(n NetworkFunctionCollectorPolicy, scope constructs.Construct, id *string, config *NetworkFunctionCollectorPolicyConfig) {
 	_init_.Initialize()
 
@@ -881,6 +891,19 @@ func (n *jsiiProxy_NetworkFunctionCollectorPolicy) GetStringMapAttribute(terrafo
 	return returns
 }
 
+func (n *jsiiProxy_NetworkFunctionCollectorPolicy) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NetworkFunctionCollectorPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -908,6 +931,17 @@ func (n *jsiiProxy_NetworkFunctionCollectorPolicy) InterpolationForAttribute(ter
 	return returns
 }
 
+func (n *jsiiProxy_NetworkFunctionCollectorPolicy) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NetworkFunctionCollectorPolicy) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -916,6 +950,17 @@ func (n *jsiiProxy_NetworkFunctionCollectorPolicy) MoveTo(moveTarget *string, in
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NetworkFunctionCollectorPolicy) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

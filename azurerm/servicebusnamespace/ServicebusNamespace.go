@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace}.
 type ServicebusNamespace interface {
 	cdktf.TerraformResource
 	Capacity() *float64
@@ -131,12 +131,22 @@ type ServicebusNamespace interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -684,7 +694,7 @@ func (j *jsiiProxy_ServicebusNamespace) ZoneRedundantInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace} Resource.
 func NewServicebusNamespace(scope constructs.Construct, id *string, config *ServicebusNamespaceConfig) ServicebusNamespace {
 	_init_.Initialize()
 
@@ -702,7 +712,7 @@ func NewServicebusNamespace(scope constructs.Construct, id *string, config *Serv
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace} Resource.
 func NewServicebusNamespace_Override(s ServicebusNamespace, scope constructs.Construct, id *string, config *ServicebusNamespaceConfig) {
 	_init_.Initialize()
 
@@ -1171,6 +1181,19 @@ func (s *jsiiProxy_ServicebusNamespace) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (s *jsiiProxy_ServicebusNamespace) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_ServicebusNamespace) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1198,6 +1221,17 @@ func (s *jsiiProxy_ServicebusNamespace) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (s *jsiiProxy_ServicebusNamespace) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_ServicebusNamespace) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1206,6 +1240,17 @@ func (s *jsiiProxy_ServicebusNamespace) MoveTo(moveTarget *string, index interfa
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_ServicebusNamespace) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (s *jsiiProxy_StreamAnalyticsOutputCosmosdb) validateInterpolationForAttrib
 	return nil
 }
 
+func (s *jsiiProxy_StreamAnalyticsOutputCosmosdb) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsOutputCosmosdb) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamAnalyticsOutputCosmosdb) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

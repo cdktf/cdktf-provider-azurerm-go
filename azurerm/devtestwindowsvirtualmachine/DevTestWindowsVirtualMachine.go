@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/dev_test_windows_virtual_machine azurerm_dev_test_windows_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/dev_test_windows_virtual_machine azurerm_dev_test_windows_virtual_machine}.
 type DevTestWindowsVirtualMachine interface {
 	cdktf.TerraformResource
 	AllowClaim() interface{}
@@ -138,12 +138,22 @@ type DevTestWindowsVirtualMachine interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -716,7 +726,7 @@ func (j *jsiiProxy_DevTestWindowsVirtualMachine) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/dev_test_windows_virtual_machine azurerm_dev_test_windows_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/dev_test_windows_virtual_machine azurerm_dev_test_windows_virtual_machine} Resource.
 func NewDevTestWindowsVirtualMachine(scope constructs.Construct, id *string, config *DevTestWindowsVirtualMachineConfig) DevTestWindowsVirtualMachine {
 	_init_.Initialize()
 
@@ -734,7 +744,7 @@ func NewDevTestWindowsVirtualMachine(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/dev_test_windows_virtual_machine azurerm_dev_test_windows_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/dev_test_windows_virtual_machine azurerm_dev_test_windows_virtual_machine} Resource.
 func NewDevTestWindowsVirtualMachine_Override(d DevTestWindowsVirtualMachine, scope constructs.Construct, id *string, config *DevTestWindowsVirtualMachineConfig) {
 	_init_.Initialize()
 
@@ -1247,6 +1257,19 @@ func (d *jsiiProxy_DevTestWindowsVirtualMachine) GetStringMapAttribute(terraform
 	return returns
 }
 
+func (d *jsiiProxy_DevTestWindowsVirtualMachine) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DevTestWindowsVirtualMachine) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1274,6 +1297,17 @@ func (d *jsiiProxy_DevTestWindowsVirtualMachine) InterpolationForAttribute(terra
 	return returns
 }
 
+func (d *jsiiProxy_DevTestWindowsVirtualMachine) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DevTestWindowsVirtualMachine) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1282,6 +1316,17 @@ func (d *jsiiProxy_DevTestWindowsVirtualMachine) MoveTo(moveTarget *string, inde
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DevTestWindowsVirtualMachine) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

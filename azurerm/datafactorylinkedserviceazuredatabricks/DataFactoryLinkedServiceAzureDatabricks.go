@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_linked_service_azure_databricks azurerm_data_factory_linked_service_azure_databricks}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/data_factory_linked_service_azure_databricks azurerm_data_factory_linked_service_azure_databricks}.
 type DataFactoryLinkedServiceAzureDatabricks interface {
 	cdktf.TerraformResource
 	AccessToken() *string
@@ -129,12 +129,22 @@ type DataFactoryLinkedServiceAzureDatabricks interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -654,7 +664,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_linked_service_azure_databricks azurerm_data_factory_linked_service_azure_databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/data_factory_linked_service_azure_databricks azurerm_data_factory_linked_service_azure_databricks} Resource.
 func NewDataFactoryLinkedServiceAzureDatabricks(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureDatabricksConfig) DataFactoryLinkedServiceAzureDatabricks {
 	_init_.Initialize()
 
@@ -672,7 +682,7 @@ func NewDataFactoryLinkedServiceAzureDatabricks(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_linked_service_azure_databricks azurerm_data_factory_linked_service_azure_databricks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/data_factory_linked_service_azure_databricks azurerm_data_factory_linked_service_azure_databricks} Resource.
 func NewDataFactoryLinkedServiceAzureDatabricks_Override(d DataFactoryLinkedServiceAzureDatabricks, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureDatabricksConfig) {
 	_init_.Initialize()
 
@@ -1152,6 +1162,19 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) GetStringMapAttribut
 	return returns
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1179,6 +1202,17 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) InterpolationForAttr
 	return returns
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1187,6 +1221,17 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) MoveTo(moveTarget *s
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureDatabricks) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

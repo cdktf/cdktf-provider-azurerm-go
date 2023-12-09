@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection}.
 type SpringCloudConnection interface {
 	cdktf.TerraformResource
 	Authentication() SpringCloudConnectionAuthenticationOutputReference
@@ -109,12 +109,22 @@ type SpringCloudConnection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -485,7 +495,7 @@ func (j *jsiiProxy_SpringCloudConnection) VnetSolutionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection} Resource.
 func NewSpringCloudConnection(scope constructs.Construct, id *string, config *SpringCloudConnectionConfig) SpringCloudConnection {
 	_init_.Initialize()
 
@@ -503,7 +513,7 @@ func NewSpringCloudConnection(scope constructs.Construct, id *string, config *Sp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection} Resource.
 func NewSpringCloudConnection_Override(s SpringCloudConnection, scope constructs.Construct, id *string, config *SpringCloudConnectionConfig) {
 	_init_.Initialize()
 
@@ -917,6 +927,19 @@ func (s *jsiiProxy_SpringCloudConnection) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (s *jsiiProxy_SpringCloudConnection) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_SpringCloudConnection) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -944,6 +967,17 @@ func (s *jsiiProxy_SpringCloudConnection) InterpolationForAttribute(terraformAtt
 	return returns
 }
 
+func (s *jsiiProxy_SpringCloudConnection) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_SpringCloudConnection) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -952,6 +986,17 @@ func (s *jsiiProxy_SpringCloudConnection) MoveTo(moveTarget *string, index inter
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_SpringCloudConnection) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

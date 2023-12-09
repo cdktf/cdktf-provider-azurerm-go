@@ -59,7 +59,15 @@ func (p *jsiiProxy_PostgresqlFirewallRule) validateInterpolationForAttributePara
 	return nil
 }
 
+func (p *jsiiProxy_PostgresqlFirewallRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresqlFirewallRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PostgresqlFirewallRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

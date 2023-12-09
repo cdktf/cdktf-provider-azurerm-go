@@ -59,7 +59,15 @@ func (m *jsiiProxy_MonitorPrivateLinkScopedService) validateInterpolationForAttr
 	return nil
 }
 
+func (m *jsiiProxy_MonitorPrivateLinkScopedService) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorPrivateLinkScopedService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorPrivateLinkScopedService) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

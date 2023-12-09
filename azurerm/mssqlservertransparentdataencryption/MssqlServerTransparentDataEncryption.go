@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/mssql_server_transparent_data_encryption azurerm_mssql_server_transparent_data_encryption}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mssql_server_transparent_data_encryption azurerm_mssql_server_transparent_data_encryption}.
 type MssqlServerTransparentDataEncryption interface {
 	cdktf.TerraformResource
 	AutoRotationEnabled() interface{}
@@ -99,12 +99,22 @@ type MssqlServerTransparentDataEncryption interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -392,7 +402,7 @@ func (j *jsiiProxy_MssqlServerTransparentDataEncryption) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/mssql_server_transparent_data_encryption azurerm_mssql_server_transparent_data_encryption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mssql_server_transparent_data_encryption azurerm_mssql_server_transparent_data_encryption} Resource.
 func NewMssqlServerTransparentDataEncryption(scope constructs.Construct, id *string, config *MssqlServerTransparentDataEncryptionConfig) MssqlServerTransparentDataEncryption {
 	_init_.Initialize()
 
@@ -410,7 +420,7 @@ func NewMssqlServerTransparentDataEncryption(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/mssql_server_transparent_data_encryption azurerm_mssql_server_transparent_data_encryption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mssql_server_transparent_data_encryption azurerm_mssql_server_transparent_data_encryption} Resource.
 func NewMssqlServerTransparentDataEncryption_Override(m MssqlServerTransparentDataEncryption, scope constructs.Construct, id *string, config *MssqlServerTransparentDataEncryptionConfig) {
 	_init_.Initialize()
 
@@ -802,6 +812,19 @@ func (m *jsiiProxy_MssqlServerTransparentDataEncryption) GetStringMapAttribute(t
 	return returns
 }
 
+func (m *jsiiProxy_MssqlServerTransparentDataEncryption) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (m *jsiiProxy_MssqlServerTransparentDataEncryption) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -829,6 +852,17 @@ func (m *jsiiProxy_MssqlServerTransparentDataEncryption) InterpolationForAttribu
 	return returns
 }
 
+func (m *jsiiProxy_MssqlServerTransparentDataEncryption) MoveFromId(id *string) {
+	if err := m.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (m *jsiiProxy_MssqlServerTransparentDataEncryption) MoveTo(moveTarget *string, index interface{}) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -837,6 +871,17 @@ func (m *jsiiProxy_MssqlServerTransparentDataEncryption) MoveTo(moveTarget *stri
 		m,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (m *jsiiProxy_MssqlServerTransparentDataEncryption) MoveToId(id *string) {
+	if err := m.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

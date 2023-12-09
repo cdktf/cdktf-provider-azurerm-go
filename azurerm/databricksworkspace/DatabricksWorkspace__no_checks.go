@@ -59,7 +59,15 @@ func (d *jsiiProxy_DatabricksWorkspace) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (d *jsiiProxy_DatabricksWorkspace) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabricksWorkspace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabricksWorkspace) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

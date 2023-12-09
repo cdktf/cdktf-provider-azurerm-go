@@ -59,7 +59,15 @@ func (s *jsiiProxy_StreamAnalyticsFunctionJavascriptUda) validateInterpolationFo
 	return nil
 }
 
+func (s *jsiiProxy_StreamAnalyticsFunctionJavascriptUda) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsFunctionJavascriptUda) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamAnalyticsFunctionJavascriptUda) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DatabricksVirtualNetworkPeering) validateInterpolationForAttr
 	return nil
 }
 
+func (d *jsiiProxy_DatabricksVirtualNetworkPeering) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabricksVirtualNetworkPeering) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabricksVirtualNetworkPeering) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

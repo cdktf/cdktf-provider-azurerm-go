@@ -59,7 +59,15 @@ func (l *jsiiProxy_LogicAppTriggerCustom) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (l *jsiiProxy_LogicAppTriggerCustom) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogicAppTriggerCustom) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogicAppTriggerCustom) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

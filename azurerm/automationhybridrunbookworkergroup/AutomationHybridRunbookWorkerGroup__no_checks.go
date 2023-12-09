@@ -59,7 +59,15 @@ func (a *jsiiProxy_AutomationHybridRunbookWorkerGroup) validateInterpolationForA
 	return nil
 }
 
+func (a *jsiiProxy_AutomationHybridRunbookWorkerGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutomationHybridRunbookWorkerGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutomationHybridRunbookWorkerGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

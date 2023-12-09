@@ -122,6 +122,14 @@ func (s *jsiiProxy_SynapseRoleAssignment) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SynapseRoleAssignment) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SynapseRoleAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
@@ -178,6 +186,14 @@ func (s *jsiiProxy_SynapseRoleAssignment) validateMoveToParameters(moveTarget *s
 		// ok
 	default:
 		return fmt.Errorf("parameter index must be one of the allowed types: *string, *float64; received %#v (a %T)", index, index)
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SynapseRoleAssignment) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
 	return nil
@@ -349,6 +365,14 @@ func (j *jsiiProxy_SynapseRoleAssignment) validateSetLifecycleParameters(val *cd
 }
 
 func (j *jsiiProxy_SynapseRoleAssignment) validateSetPrincipalIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SynapseRoleAssignment) validateSetPrincipalTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

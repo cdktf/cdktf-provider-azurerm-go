@@ -59,7 +59,15 @@ func (d *jsiiProxy_DedicatedHardwareSecurityModule) validateInterpolationForAttr
 	return nil
 }
 
+func (d *jsiiProxy_DedicatedHardwareSecurityModule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DedicatedHardwareSecurityModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DedicatedHardwareSecurityModule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

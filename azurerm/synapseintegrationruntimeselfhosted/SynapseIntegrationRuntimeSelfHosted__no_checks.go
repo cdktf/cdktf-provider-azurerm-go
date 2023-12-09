@@ -59,7 +59,15 @@ func (s *jsiiProxy_SynapseIntegrationRuntimeSelfHosted) validateInterpolationFor
 	return nil
 }
 
+func (s *jsiiProxy_SynapseIntegrationRuntimeSelfHosted) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseIntegrationRuntimeSelfHosted) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SynapseIntegrationRuntimeSelfHosted) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

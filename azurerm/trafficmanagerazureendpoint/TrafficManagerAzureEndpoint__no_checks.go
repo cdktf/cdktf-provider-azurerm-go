@@ -59,7 +59,15 @@ func (t *jsiiProxy_TrafficManagerAzureEndpoint) validateInterpolationForAttribut
 	return nil
 }
 
+func (t *jsiiProxy_TrafficManagerAzureEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TrafficManagerAzureEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TrafficManagerAzureEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

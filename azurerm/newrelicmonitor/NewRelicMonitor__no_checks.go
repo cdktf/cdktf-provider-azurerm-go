@@ -59,7 +59,15 @@ func (n *jsiiProxy_NewRelicMonitor) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (n *jsiiProxy_NewRelicMonitor) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NewRelicMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NewRelicMonitor) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

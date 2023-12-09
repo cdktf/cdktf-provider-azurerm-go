@@ -59,7 +59,15 @@ func (o *jsiiProxy_OrbitalSpacecraft) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (o *jsiiProxy_OrbitalSpacecraft) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrbitalSpacecraft) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrbitalSpacecraft) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/digital_twins_time_series_database_connection azurerm_digital_twins_time_series_database_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/digital_twins_time_series_database_connection azurerm_digital_twins_time_series_database_connection}.
 type DigitalTwinsTimeSeriesDatabaseConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -120,12 +120,22 @@ type DigitalTwinsTimeSeriesDatabaseConnection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -553,7 +563,7 @@ func (j *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/digital_twins_time_series_database_connection azurerm_digital_twins_time_series_database_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/digital_twins_time_series_database_connection azurerm_digital_twins_time_series_database_connection} Resource.
 func NewDigitalTwinsTimeSeriesDatabaseConnection(scope constructs.Construct, id *string, config *DigitalTwinsTimeSeriesDatabaseConnectionConfig) DigitalTwinsTimeSeriesDatabaseConnection {
 	_init_.Initialize()
 
@@ -571,7 +581,7 @@ func NewDigitalTwinsTimeSeriesDatabaseConnection(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/digital_twins_time_series_database_connection azurerm_digital_twins_time_series_database_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/digital_twins_time_series_database_connection azurerm_digital_twins_time_series_database_connection} Resource.
 func NewDigitalTwinsTimeSeriesDatabaseConnection_Override(d DigitalTwinsTimeSeriesDatabaseConnection, scope constructs.Construct, id *string, config *DigitalTwinsTimeSeriesDatabaseConnectionConfig) {
 	_init_.Initialize()
 
@@ -1040,6 +1050,19 @@ func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) GetStringMapAttribu
 	return returns
 }
 
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1067,6 +1090,17 @@ func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) InterpolationForAtt
 	return returns
 }
 
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1075,6 +1109,17 @@ func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) MoveTo(moveTarget *
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

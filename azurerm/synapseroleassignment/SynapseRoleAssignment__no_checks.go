@@ -59,7 +59,15 @@ func (s *jsiiProxy_SynapseRoleAssignment) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SynapseRoleAssignment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseRoleAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SynapseRoleAssignment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -104,6 +112,10 @@ func (j *jsiiProxy_SynapseRoleAssignment) validateSetLifecycleParameters(val *cd
 }
 
 func (j *jsiiProxy_SynapseRoleAssignment) validateSetPrincipalIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SynapseRoleAssignment) validateSetPrincipalTypeParameters(val *string) error {
 	return nil
 }
 

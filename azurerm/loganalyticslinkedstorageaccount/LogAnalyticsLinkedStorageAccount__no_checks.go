@@ -59,7 +59,15 @@ func (l *jsiiProxy_LogAnalyticsLinkedStorageAccount) validateInterpolationForAtt
 	return nil
 }
 
+func (l *jsiiProxy_LogAnalyticsLinkedStorageAccount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsLinkedStorageAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogAnalyticsLinkedStorageAccount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

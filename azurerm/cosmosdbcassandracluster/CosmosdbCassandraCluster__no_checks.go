@@ -59,7 +59,15 @@ func (c *jsiiProxy_CosmosdbCassandraCluster) validateInterpolationForAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbCassandraCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbCassandraCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbCassandraCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

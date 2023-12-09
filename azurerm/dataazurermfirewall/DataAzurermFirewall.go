@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/firewall azurerm_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/firewall azurerm_firewall}.
 type DataAzurermFirewall interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,9 @@ type DataAzurermFirewall interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DnsProxyEnabled() interface{}
+	SetDnsProxyEnabled(val interface{})
+	DnsProxyEnabledInput() interface{}
 	DnsServers() *[]*string
 	FirewallPolicyId() *string
 	// Experimental.
@@ -101,6 +104,7 @@ type DataAzurermFirewall interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DataAzurermFirewallTimeouts)
+	ResetDnsProxyEnabled()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -156,6 +160,26 @@ func (j *jsiiProxy_DataAzurermFirewall) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermFirewall) DnsProxyEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnsProxyEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermFirewall) DnsProxyEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnsProxyEnabledInput",
 		&returns,
 	)
 	return returns
@@ -452,7 +476,7 @@ func (j *jsiiProxy_DataAzurermFirewall) Zones() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/firewall azurerm_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/firewall azurerm_firewall} Data Source.
 func NewDataAzurermFirewall(scope constructs.Construct, id *string, config *DataAzurermFirewallConfig) DataAzurermFirewall {
 	_init_.Initialize()
 
@@ -470,7 +494,7 @@ func NewDataAzurermFirewall(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/firewall azurerm_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/firewall azurerm_firewall} Data Source.
 func NewDataAzurermFirewall_Override(d DataAzurermFirewall, scope constructs.Construct, id *string, config *DataAzurermFirewallConfig) {
 	_init_.Initialize()
 
@@ -496,6 +520,17 @@ func (j *jsiiProxy_DataAzurermFirewall)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzurermFirewall)SetDnsProxyEnabled(val interface{}) {
+	if err := j.validateSetDnsProxyEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnsProxyEnabled",
 		val,
 	)
 }
@@ -853,6 +888,14 @@ func (d *jsiiProxy_DataAzurermFirewall) PutTimeouts(value *DataAzurermFirewallTi
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAzurermFirewall) ResetDnsProxyEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDnsProxyEnabled",
+		nil, // no parameters
 	)
 }
 

@@ -59,7 +59,15 @@ func (k *jsiiProxy_KubernetesCluster) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KubernetesCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -320,6 +328,10 @@ func (j *jsiiProxy_KubernetesCluster) validateSetRunCommandEnabledParameters(val
 }
 
 func (j *jsiiProxy_KubernetesCluster) validateSetSkuTierParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesCluster) validateSetSupportPlanParameters(val *string) error {
 	return nil
 }
 

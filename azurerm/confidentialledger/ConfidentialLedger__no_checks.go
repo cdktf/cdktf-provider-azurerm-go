@@ -59,7 +59,15 @@ func (c *jsiiProxy_ConfidentialLedger) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_ConfidentialLedger) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfidentialLedger) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfidentialLedger) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

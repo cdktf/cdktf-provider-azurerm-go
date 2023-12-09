@@ -59,7 +59,15 @@ func (r *jsiiProxy_RedisEnterpriseCluster) validateInterpolationForAttributePara
 	return nil
 }
 
+func (r *jsiiProxy_RedisEnterpriseCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisEnterpriseCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedisEnterpriseCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

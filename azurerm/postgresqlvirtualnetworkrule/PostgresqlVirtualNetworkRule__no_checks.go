@@ -59,7 +59,15 @@ func (p *jsiiProxy_PostgresqlVirtualNetworkRule) validateInterpolationForAttribu
 	return nil
 }
 
+func (p *jsiiProxy_PostgresqlVirtualNetworkRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresqlVirtualNetworkRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PostgresqlVirtualNetworkRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

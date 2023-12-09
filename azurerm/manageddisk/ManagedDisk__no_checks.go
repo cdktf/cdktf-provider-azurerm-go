@@ -59,7 +59,15 @@ func (m *jsiiProxy_ManagedDisk) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (m *jsiiProxy_ManagedDisk) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedDisk) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedDisk) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (s *jsiiProxy_StorageAccountCustomerManagedKeyA) validateInterpolationForAt
 	return nil
 }
 
+func (s *jsiiProxy_StorageAccountCustomerManagedKeyA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageAccountCustomerManagedKeyA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageAccountCustomerManagedKeyA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

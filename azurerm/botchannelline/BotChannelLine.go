@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/bot_channel_line azurerm_bot_channel_line}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/bot_channel_line azurerm_bot_channel_line}.
 type BotChannelLine interface {
 	cdktf.TerraformResource
 	BotName() *string
@@ -101,12 +101,22 @@ type BotChannelLine interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -413,7 +423,7 @@ func (j *jsiiProxy_BotChannelLine) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/bot_channel_line azurerm_bot_channel_line} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/bot_channel_line azurerm_bot_channel_line} Resource.
 func NewBotChannelLine(scope constructs.Construct, id *string, config *BotChannelLineConfig) BotChannelLine {
 	_init_.Initialize()
 
@@ -431,7 +441,7 @@ func NewBotChannelLine(scope constructs.Construct, id *string, config *BotChanne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/bot_channel_line azurerm_bot_channel_line} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/bot_channel_line azurerm_bot_channel_line} Resource.
 func NewBotChannelLine_Override(b BotChannelLine, scope constructs.Construct, id *string, config *BotChannelLineConfig) {
 	_init_.Initialize()
 
@@ -823,6 +833,19 @@ func (b *jsiiProxy_BotChannelLine) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
+func (b *jsiiProxy_BotChannelLine) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (b *jsiiProxy_BotChannelLine) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := b.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -850,6 +873,17 @@ func (b *jsiiProxy_BotChannelLine) InterpolationForAttribute(terraformAttribute 
 	return returns
 }
 
+func (b *jsiiProxy_BotChannelLine) MoveFromId(id *string) {
+	if err := b.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (b *jsiiProxy_BotChannelLine) MoveTo(moveTarget *string, index interface{}) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -858,6 +892,17 @@ func (b *jsiiProxy_BotChannelLine) MoveTo(moveTarget *string, index interface{})
 		b,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (b *jsiiProxy_BotChannelLine) MoveToId(id *string) {
+	if err := b.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

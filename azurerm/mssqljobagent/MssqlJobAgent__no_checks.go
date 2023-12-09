@@ -59,7 +59,15 @@ func (m *jsiiProxy_MssqlJobAgent) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (m *jsiiProxy_MssqlJobAgent) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlJobAgent) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlJobAgent) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

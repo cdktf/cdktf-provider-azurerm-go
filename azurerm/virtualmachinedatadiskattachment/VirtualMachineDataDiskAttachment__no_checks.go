@@ -59,7 +59,15 @@ func (v *jsiiProxy_VirtualMachineDataDiskAttachment) validateInterpolationForAtt
 	return nil
 }
 
+func (v *jsiiProxy_VirtualMachineDataDiskAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualMachineDataDiskAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualMachineDataDiskAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

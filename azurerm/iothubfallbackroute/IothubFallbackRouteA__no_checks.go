@@ -59,7 +59,15 @@ func (i *jsiiProxy_IothubFallbackRouteA) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (i *jsiiProxy_IothubFallbackRouteA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubFallbackRouteA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IothubFallbackRouteA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

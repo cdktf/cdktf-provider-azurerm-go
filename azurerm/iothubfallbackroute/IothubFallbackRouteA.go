@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route}.
 type IothubFallbackRouteA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -108,12 +108,22 @@ type IothubFallbackRouteA interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -461,7 +471,7 @@ func (j *jsiiProxy_IothubFallbackRouteA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route} Resource.
 func NewIothubFallbackRouteA(scope constructs.Construct, id *string, config *IothubFallbackRouteAConfig) IothubFallbackRouteA {
 	_init_.Initialize()
 
@@ -479,7 +489,7 @@ func NewIothubFallbackRouteA(scope constructs.Construct, id *string, config *Iot
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route} Resource.
 func NewIothubFallbackRouteA_Override(i IothubFallbackRouteA, scope constructs.Construct, id *string, config *IothubFallbackRouteAConfig) {
 	_init_.Initialize()
 
@@ -904,6 +914,19 @@ func (i *jsiiProxy_IothubFallbackRouteA) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (i *jsiiProxy_IothubFallbackRouteA) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IothubFallbackRouteA) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -931,6 +954,17 @@ func (i *jsiiProxy_IothubFallbackRouteA) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (i *jsiiProxy_IothubFallbackRouteA) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IothubFallbackRouteA) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -939,6 +973,17 @@ func (i *jsiiProxy_IothubFallbackRouteA) MoveTo(moveTarget *string, index interf
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IothubFallbackRouteA) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

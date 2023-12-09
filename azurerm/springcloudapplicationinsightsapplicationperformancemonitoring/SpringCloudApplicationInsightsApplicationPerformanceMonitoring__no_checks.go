@@ -59,7 +59,15 @@ func (s *jsiiProxy_SpringCloudApplicationInsightsApplicationPerformanceMonitorin
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudApplicationInsightsApplicationPerformanceMonitoring) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudApplicationInsightsApplicationPerformanceMonitoring) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudApplicationInsightsApplicationPerformanceMonitoring) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

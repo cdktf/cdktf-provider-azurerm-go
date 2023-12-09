@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) validateInterpolatio
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/aadb2c_directory azurerm_aadb2c_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/aadb2c_directory azurerm_aadb2c_directory}.
 type Aadb2CDirectory interface {
 	cdktf.TerraformResource
 	BillingType() *string
@@ -114,12 +114,22 @@ type Aadb2CDirectory interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -518,7 +528,7 @@ func (j *jsiiProxy_Aadb2CDirectory) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/aadb2c_directory azurerm_aadb2c_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/aadb2c_directory azurerm_aadb2c_directory} Resource.
 func NewAadb2CDirectory(scope constructs.Construct, id *string, config *Aadb2CDirectoryConfig) Aadb2CDirectory {
 	_init_.Initialize()
 
@@ -536,7 +546,7 @@ func NewAadb2CDirectory(scope constructs.Construct, id *string, config *Aadb2CDi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/aadb2c_directory azurerm_aadb2c_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/aadb2c_directory azurerm_aadb2c_directory} Resource.
 func NewAadb2CDirectory_Override(a Aadb2CDirectory, scope constructs.Construct, id *string, config *Aadb2CDirectoryConfig) {
 	_init_.Initialize()
 
@@ -972,6 +982,19 @@ func (a *jsiiProxy_Aadb2CDirectory) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (a *jsiiProxy_Aadb2CDirectory) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_Aadb2CDirectory) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -999,6 +1022,17 @@ func (a *jsiiProxy_Aadb2CDirectory) InterpolationForAttribute(terraformAttribute
 	return returns
 }
 
+func (a *jsiiProxy_Aadb2CDirectory) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_Aadb2CDirectory) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1007,6 +1041,17 @@ func (a *jsiiProxy_Aadb2CDirectory) MoveTo(moveTarget *string, index interface{}
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_Aadb2CDirectory) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

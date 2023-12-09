@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/nat_gateway azurerm_nat_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/nat_gateway azurerm_nat_gateway}.
 type NatGateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -112,12 +112,22 @@ type NatGateway interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -497,7 +507,7 @@ func (j *jsiiProxy_NatGateway) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/nat_gateway azurerm_nat_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/nat_gateway azurerm_nat_gateway} Resource.
 func NewNatGateway(scope constructs.Construct, id *string, config *NatGatewayConfig) NatGateway {
 	_init_.Initialize()
 
@@ -515,7 +525,7 @@ func NewNatGateway(scope constructs.Construct, id *string, config *NatGatewayCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/nat_gateway azurerm_nat_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/nat_gateway azurerm_nat_gateway} Resource.
 func NewNatGateway_Override(n NatGateway, scope constructs.Construct, id *string, config *NatGatewayConfig) {
 	_init_.Initialize()
 
@@ -951,6 +961,19 @@ func (n *jsiiProxy_NatGateway) GetStringMapAttribute(terraformAttribute *string)
 	return returns
 }
 
+func (n *jsiiProxy_NatGateway) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NatGateway) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -978,6 +1001,17 @@ func (n *jsiiProxy_NatGateway) InterpolationForAttribute(terraformAttribute *str
 	return returns
 }
 
+func (n *jsiiProxy_NatGateway) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NatGateway) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -986,6 +1020,17 @@ func (n *jsiiProxy_NatGateway) MoveTo(moveTarget *string, index interface{}) {
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NatGateway) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

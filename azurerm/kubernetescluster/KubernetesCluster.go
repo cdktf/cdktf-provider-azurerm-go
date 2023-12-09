@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
 type KubernetesCluster interface {
 	cdktf.TerraformResource
 	AciConnectorLinux() KubernetesClusterAciConnectorLinuxOutputReference
@@ -198,6 +198,9 @@ type KubernetesCluster interface {
 	SkuTierInput() *string
 	StorageProfile() KubernetesClusterStorageProfileOutputReference
 	StorageProfileInput() *KubernetesClusterStorageProfile
+	SupportPlan() *string
+	SetSupportPlan(val *string)
+	SupportPlanInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -242,12 +245,22 @@ type KubernetesCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -329,6 +342,7 @@ type KubernetesCluster interface {
 	ResetServicePrincipal()
 	ResetSkuTier()
 	ResetStorageProfile()
+	ResetSupportPlan()
 	ResetTags()
 	ResetTimeouts()
 	ResetWebAppRouting()
@@ -1620,6 +1634,26 @@ func (j *jsiiProxy_KubernetesCluster) StorageProfileInput() *KubernetesClusterSt
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesCluster) SupportPlan() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"supportPlan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) SupportPlanInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"supportPlanInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesCluster) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -1771,7 +1805,7 @@ func (j *jsiiProxy_KubernetesCluster) WorkloadIdentityEnabledInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
 	_init_.Initialize()
 
@@ -1789,7 +1823,7 @@ func NewKubernetesCluster(scope constructs.Construct, id *string, config *Kubern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Construct, id *string, config *KubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -2187,6 +2221,17 @@ func (j *jsiiProxy_KubernetesCluster)SetSkuTier(val *string) {
 	)
 }
 
+func (j *jsiiProxy_KubernetesCluster)SetSupportPlan(val *string) {
+	if err := j.validateSetSupportPlanParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"supportPlan",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KubernetesCluster)SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
@@ -2478,6 +2523,19 @@ func (k *jsiiProxy_KubernetesCluster) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (k *jsiiProxy_KubernetesCluster) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		k,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (k *jsiiProxy_KubernetesCluster) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := k.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -2505,6 +2563,17 @@ func (k *jsiiProxy_KubernetesCluster) InterpolationForAttribute(terraformAttribu
 	return returns
 }
 
+func (k *jsiiProxy_KubernetesCluster) MoveFromId(id *string) {
+	if err := k.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (k *jsiiProxy_KubernetesCluster) MoveTo(moveTarget *string, index interface{}) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -2513,6 +2582,17 @@ func (k *jsiiProxy_KubernetesCluster) MoveTo(moveTarget *string, index interface
 		k,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) MoveToId(id *string) {
+	if err := k.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -3212,6 +3292,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetStorageProfile() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetStorageProfile",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetSupportPlan() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetSupportPlan",
 		nil, // no parameters
 	)
 }

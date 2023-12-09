@@ -59,7 +59,15 @@ func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBinding) validateInterpolat
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

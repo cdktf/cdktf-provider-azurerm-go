@@ -59,7 +59,15 @@ func (c *jsiiProxy_CosmosdbSqlDedicatedGateway) validateInterpolationForAttribut
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbSqlDedicatedGateway) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbSqlDedicatedGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbSqlDedicatedGateway) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

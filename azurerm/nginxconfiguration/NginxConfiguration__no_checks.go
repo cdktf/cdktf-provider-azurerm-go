@@ -59,7 +59,15 @@ func (n *jsiiProxy_NginxConfiguration) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (n *jsiiProxy_NginxConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NginxConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NginxConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

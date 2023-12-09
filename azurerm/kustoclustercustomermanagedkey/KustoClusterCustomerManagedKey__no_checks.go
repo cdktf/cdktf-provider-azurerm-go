@@ -59,7 +59,15 @@ func (k *jsiiProxy_KustoClusterCustomerManagedKey) validateInterpolationForAttri
 	return nil
 }
 
+func (k *jsiiProxy_KustoClusterCustomerManagedKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoClusterCustomerManagedKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KustoClusterCustomerManagedKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

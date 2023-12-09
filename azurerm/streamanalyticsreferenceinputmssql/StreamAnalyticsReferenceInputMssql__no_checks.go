@@ -59,7 +59,15 @@ func (s *jsiiProxy_StreamAnalyticsReferenceInputMssql) validateInterpolationForA
 	return nil
 }
 
+func (s *jsiiProxy_StreamAnalyticsReferenceInputMssql) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsReferenceInputMssql) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamAnalyticsReferenceInputMssql) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

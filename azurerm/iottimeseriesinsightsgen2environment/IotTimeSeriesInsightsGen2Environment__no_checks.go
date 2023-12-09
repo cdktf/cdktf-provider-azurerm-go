@@ -59,7 +59,15 @@ func (i *jsiiProxy_IotTimeSeriesInsightsGen2Environment) validateInterpolationFo
 	return nil
 }
 
+func (i *jsiiProxy_IotTimeSeriesInsightsGen2Environment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotTimeSeriesInsightsGen2Environment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotTimeSeriesInsightsGen2Environment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

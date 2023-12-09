@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic}.
 type EventgridSystemTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -111,12 +111,22 @@ type EventgridSystemTopic interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -495,7 +505,7 @@ func (j *jsiiProxy_EventgridSystemTopic) TopicTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic} Resource.
 func NewEventgridSystemTopic(scope constructs.Construct, id *string, config *EventgridSystemTopicConfig) EventgridSystemTopic {
 	_init_.Initialize()
 
@@ -513,7 +523,7 @@ func NewEventgridSystemTopic(scope constructs.Construct, id *string, config *Eve
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic} Resource.
 func NewEventgridSystemTopic_Override(e EventgridSystemTopic, scope constructs.Construct, id *string, config *EventgridSystemTopicConfig) {
 	_init_.Initialize()
 
@@ -938,6 +948,19 @@ func (e *jsiiProxy_EventgridSystemTopic) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (e *jsiiProxy_EventgridSystemTopic) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_EventgridSystemTopic) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -965,6 +988,17 @@ func (e *jsiiProxy_EventgridSystemTopic) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (e *jsiiProxy_EventgridSystemTopic) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_EventgridSystemTopic) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -973,6 +1007,17 @@ func (e *jsiiProxy_EventgridSystemTopic) MoveTo(moveTarget *string, index interf
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_EventgridSystemTopic) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

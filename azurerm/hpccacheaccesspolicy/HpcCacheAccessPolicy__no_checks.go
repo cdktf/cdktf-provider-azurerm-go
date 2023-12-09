@@ -59,7 +59,15 @@ func (h *jsiiProxy_HpcCacheAccessPolicy) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (h *jsiiProxy_HpcCacheAccessPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HpcCacheAccessPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HpcCacheAccessPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

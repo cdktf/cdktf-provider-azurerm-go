@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/sentinel_data_connector_microsoft_cloud_app_security azurerm_sentinel_data_connector_microsoft_cloud_app_security}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/sentinel_data_connector_microsoft_cloud_app_security azurerm_sentinel_data_connector_microsoft_cloud_app_security}.
 type SentinelDataConnectorMicrosoftCloudAppSecurity interface {
 	cdktf.TerraformResource
 	AlertsEnabled() interface{}
@@ -105,12 +105,22 @@ type SentinelDataConnectorMicrosoftCloudAppSecurity interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -439,7 +449,7 @@ func (j *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) TimeoutsInput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/sentinel_data_connector_microsoft_cloud_app_security azurerm_sentinel_data_connector_microsoft_cloud_app_security} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/sentinel_data_connector_microsoft_cloud_app_security azurerm_sentinel_data_connector_microsoft_cloud_app_security} Resource.
 func NewSentinelDataConnectorMicrosoftCloudAppSecurity(scope constructs.Construct, id *string, config *SentinelDataConnectorMicrosoftCloudAppSecurityConfig) SentinelDataConnectorMicrosoftCloudAppSecurity {
 	_init_.Initialize()
 
@@ -457,7 +467,7 @@ func NewSentinelDataConnectorMicrosoftCloudAppSecurity(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/sentinel_data_connector_microsoft_cloud_app_security azurerm_sentinel_data_connector_microsoft_cloud_app_security} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/sentinel_data_connector_microsoft_cloud_app_security azurerm_sentinel_data_connector_microsoft_cloud_app_security} Resource.
 func NewSentinelDataConnectorMicrosoftCloudAppSecurity_Override(s SentinelDataConnectorMicrosoftCloudAppSecurity, scope constructs.Construct, id *string, config *SentinelDataConnectorMicrosoftCloudAppSecurityConfig) {
 	_init_.Initialize()
 
@@ -871,6 +881,19 @@ func (s *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) GetStringMapA
 	return returns
 }
 
+func (s *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -898,6 +921,17 @@ func (s *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) Interpolation
 	return returns
 }
 
+func (s *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -906,6 +940,17 @@ func (s *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) MoveTo(moveTa
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set}.
 type WindowsVirtualMachineScaleSet interface {
 	cdktf.TerraformResource
 	AdditionalCapabilities() WindowsVirtualMachineScaleSetAdditionalCapabilitiesOutputReference
@@ -244,12 +244,22 @@ type WindowsVirtualMachineScaleSet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -1715,7 +1725,7 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSet) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set} Resource.
 func NewWindowsVirtualMachineScaleSet(scope constructs.Construct, id *string, config *WindowsVirtualMachineScaleSetConfig) WindowsVirtualMachineScaleSet {
 	_init_.Initialize()
 
@@ -1733,7 +1743,7 @@ func NewWindowsVirtualMachineScaleSet(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set} Resource.
 func NewWindowsVirtualMachineScaleSet_Override(w WindowsVirtualMachineScaleSet, scope constructs.Construct, id *string, config *WindowsVirtualMachineScaleSetConfig) {
 	_init_.Initialize()
 
@@ -2499,6 +2509,19 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSet) GetStringMapAttribute(terrafor
 	return returns
 }
 
+func (w *jsiiProxy_WindowsVirtualMachineScaleSet) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		w,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (w *jsiiProxy_WindowsVirtualMachineScaleSet) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := w.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -2526,6 +2549,17 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSet) InterpolationForAttribute(terr
 	return returns
 }
 
+func (w *jsiiProxy_WindowsVirtualMachineScaleSet) MoveFromId(id *string) {
+	if err := w.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (w *jsiiProxy_WindowsVirtualMachineScaleSet) MoveTo(moveTarget *string, index interface{}) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -2534,6 +2568,17 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSet) MoveTo(moveTarget *string, ind
 		w,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (w *jsiiProxy_WindowsVirtualMachineScaleSet) MoveToId(id *string) {
+	if err := w.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DiskPoolIscsiTarget) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (d *jsiiProxy_DiskPoolIscsiTarget) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiskPoolIscsiTarget) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DiskPoolIscsiTarget) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (r *jsiiProxy_ResourceGroupCostManagementExport) validateInterpolationForAt
 	return nil
 }
 
+func (r *jsiiProxy_ResourceGroupCostManagementExport) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceGroupCostManagementExport) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourceGroupCostManagementExport) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

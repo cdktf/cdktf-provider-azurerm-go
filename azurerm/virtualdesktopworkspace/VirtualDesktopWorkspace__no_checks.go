@@ -59,7 +59,15 @@ func (v *jsiiProxy_VirtualDesktopWorkspace) validateInterpolationForAttributePar
 	return nil
 }
 
+func (v *jsiiProxy_VirtualDesktopWorkspace) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualDesktopWorkspace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualDesktopWorkspace) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

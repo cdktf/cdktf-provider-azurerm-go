@@ -59,7 +59,15 @@ func (m *jsiiProxy_MaintenanceAssignmentVirtualMachineScaleSet) validateInterpol
 	return nil
 }
 
+func (m *jsiiProxy_MaintenanceAssignmentVirtualMachineScaleSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MaintenanceAssignmentVirtualMachineScaleSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MaintenanceAssignmentVirtualMachineScaleSet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/log_analytics_cluster azurerm_log_analytics_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/log_analytics_cluster azurerm_log_analytics_cluster}.
 type LogAnalyticsCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -108,12 +108,22 @@ type LogAnalyticsCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -472,7 +482,7 @@ func (j *jsiiProxy_LogAnalyticsCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/log_analytics_cluster azurerm_log_analytics_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/log_analytics_cluster azurerm_log_analytics_cluster} Resource.
 func NewLogAnalyticsCluster(scope constructs.Construct, id *string, config *LogAnalyticsClusterConfig) LogAnalyticsCluster {
 	_init_.Initialize()
 
@@ -490,7 +500,7 @@ func NewLogAnalyticsCluster(scope constructs.Construct, id *string, config *LogA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/log_analytics_cluster azurerm_log_analytics_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/log_analytics_cluster azurerm_log_analytics_cluster} Resource.
 func NewLogAnalyticsCluster_Override(l LogAnalyticsCluster, scope constructs.Construct, id *string, config *LogAnalyticsClusterConfig) {
 	_init_.Initialize()
 
@@ -904,6 +914,19 @@ func (l *jsiiProxy_LogAnalyticsCluster) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (l *jsiiProxy_LogAnalyticsCluster) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (l *jsiiProxy_LogAnalyticsCluster) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -931,6 +954,17 @@ func (l *jsiiProxy_LogAnalyticsCluster) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (l *jsiiProxy_LogAnalyticsCluster) MoveFromId(id *string) {
+	if err := l.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (l *jsiiProxy_LogAnalyticsCluster) MoveTo(moveTarget *string, index interface{}) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -939,6 +973,17 @@ func (l *jsiiProxy_LogAnalyticsCluster) MoveTo(moveTarget *string, index interfa
 		l,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (l *jsiiProxy_LogAnalyticsCluster) MoveToId(id *string) {
+	if err := l.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

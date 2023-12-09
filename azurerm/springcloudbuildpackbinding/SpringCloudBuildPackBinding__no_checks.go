@@ -59,7 +59,15 @@ func (s *jsiiProxy_SpringCloudBuildPackBinding) validateInterpolationForAttribut
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudBuildPackBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudBuildPackBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudBuildPackBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

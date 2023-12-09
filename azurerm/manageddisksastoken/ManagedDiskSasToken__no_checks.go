@@ -59,7 +59,15 @@ func (m *jsiiProxy_ManagedDiskSasToken) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_ManagedDiskSasToken) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedDiskSasToken) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedDiskSasToken) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

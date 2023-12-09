@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue}.
 type DataAzurermServicebusQueue interface {
 	cdktf.TerraformDataSource
 	AutoDeleteOnIdle() *string
@@ -545,7 +545,7 @@ func (j *jsiiProxy_DataAzurermServicebusQueue) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue} Data Source.
 func NewDataAzurermServicebusQueue(scope constructs.Construct, id *string, config *DataAzurermServicebusQueueConfig) DataAzurermServicebusQueue {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewDataAzurermServicebusQueue(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue} Data Source.
 func NewDataAzurermServicebusQueue_Override(d DataAzurermServicebusQueue, scope constructs.Construct, id *string, config *DataAzurermServicebusQueueConfig) {
 	_init_.Initialize()
 

@@ -59,7 +59,15 @@ func (p *jsiiProxy_PaloAltoLocalRulestackOutboundUntrustCertificateAssociation) 
 	return nil
 }
 
+func (p *jsiiProxy_PaloAltoLocalRulestackOutboundUntrustCertificateAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PaloAltoLocalRulestackOutboundUntrustCertificateAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PaloAltoLocalRulestackOutboundUntrustCertificateAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

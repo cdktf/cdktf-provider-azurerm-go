@@ -59,7 +59,15 @@ func (l *jsiiProxy_LbBackendAddressPool) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (l *jsiiProxy_LbBackendAddressPool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbBackendAddressPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbBackendAddressPool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

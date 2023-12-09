@@ -59,7 +59,15 @@ func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) validateInter
 	return nil
 }
 
+func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

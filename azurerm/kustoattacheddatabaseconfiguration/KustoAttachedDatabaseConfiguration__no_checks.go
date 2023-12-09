@@ -59,7 +59,15 @@ func (k *jsiiProxy_KustoAttachedDatabaseConfiguration) validateInterpolationForA
 	return nil
 }
 
+func (k *jsiiProxy_KustoAttachedDatabaseConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoAttachedDatabaseConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KustoAttachedDatabaseConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

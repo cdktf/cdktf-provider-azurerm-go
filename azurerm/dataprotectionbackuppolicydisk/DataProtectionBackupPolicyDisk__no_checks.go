@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataProtectionBackupPolicyDisk) validateInterpolationForAttri
 	return nil
 }
 
+func (d *jsiiProxy_DataProtectionBackupPolicyDisk) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataProtectionBackupPolicyDisk) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataProtectionBackupPolicyDisk) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

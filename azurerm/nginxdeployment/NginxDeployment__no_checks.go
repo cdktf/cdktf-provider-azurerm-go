@@ -59,7 +59,15 @@ func (n *jsiiProxy_NginxDeployment) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (n *jsiiProxy_NginxDeployment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NginxDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NginxDeployment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

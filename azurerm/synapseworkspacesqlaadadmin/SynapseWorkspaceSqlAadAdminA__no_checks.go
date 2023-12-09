@@ -59,7 +59,15 @@ func (s *jsiiProxy_SynapseWorkspaceSqlAadAdminA) validateInterpolationForAttribu
 	return nil
 }
 
+func (s *jsiiProxy_SynapseWorkspaceSqlAadAdminA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseWorkspaceSqlAadAdminA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SynapseWorkspaceSqlAadAdminA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

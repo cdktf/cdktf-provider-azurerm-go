@@ -59,7 +59,15 @@ func (h *jsiiProxy_HpcCache) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (h *jsiiProxy_HpcCache) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HpcCache) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HpcCache) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

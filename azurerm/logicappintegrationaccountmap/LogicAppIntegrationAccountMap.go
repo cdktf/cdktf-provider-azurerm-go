@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/logic_app_integration_account_map azurerm_logic_app_integration_account_map}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/logic_app_integration_account_map azurerm_logic_app_integration_account_map}.
 type LogicAppIntegrationAccountMap interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -108,12 +108,22 @@ type LogicAppIntegrationAccountMap interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -460,7 +470,7 @@ func (j *jsiiProxy_LogicAppIntegrationAccountMap) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/logic_app_integration_account_map azurerm_logic_app_integration_account_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/logic_app_integration_account_map azurerm_logic_app_integration_account_map} Resource.
 func NewLogicAppIntegrationAccountMap(scope constructs.Construct, id *string, config *LogicAppIntegrationAccountMapConfig) LogicAppIntegrationAccountMap {
 	_init_.Initialize()
 
@@ -478,7 +488,7 @@ func NewLogicAppIntegrationAccountMap(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/logic_app_integration_account_map azurerm_logic_app_integration_account_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/logic_app_integration_account_map azurerm_logic_app_integration_account_map} Resource.
 func NewLogicAppIntegrationAccountMap_Override(l LogicAppIntegrationAccountMap, scope constructs.Construct, id *string, config *LogicAppIntegrationAccountMapConfig) {
 	_init_.Initialize()
 
@@ -903,6 +913,19 @@ func (l *jsiiProxy_LogicAppIntegrationAccountMap) GetStringMapAttribute(terrafor
 	return returns
 }
 
+func (l *jsiiProxy_LogicAppIntegrationAccountMap) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (l *jsiiProxy_LogicAppIntegrationAccountMap) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -930,6 +953,17 @@ func (l *jsiiProxy_LogicAppIntegrationAccountMap) InterpolationForAttribute(terr
 	return returns
 }
 
+func (l *jsiiProxy_LogicAppIntegrationAccountMap) MoveFromId(id *string) {
+	if err := l.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (l *jsiiProxy_LogicAppIntegrationAccountMap) MoveTo(moveTarget *string, index interface{}) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -938,6 +972,17 @@ func (l *jsiiProxy_LogicAppIntegrationAccountMap) MoveTo(moveTarget *string, ind
 		l,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (l *jsiiProxy_LogicAppIntegrationAccountMap) MoveToId(id *string) {
+	if err := l.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

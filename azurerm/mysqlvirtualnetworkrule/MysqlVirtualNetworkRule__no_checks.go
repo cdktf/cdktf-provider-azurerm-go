@@ -59,7 +59,15 @@ func (m *jsiiProxy_MysqlVirtualNetworkRule) validateInterpolationForAttributePar
 	return nil
 }
 
+func (m *jsiiProxy_MysqlVirtualNetworkRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MysqlVirtualNetworkRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MysqlVirtualNetworkRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/route_map azurerm_route_map}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/route_map azurerm_route_map}.
 type RouteMap interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -98,12 +98,22 @@ type RouteMap interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -391,7 +401,7 @@ func (j *jsiiProxy_RouteMap) VirtualHubIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/route_map azurerm_route_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/route_map azurerm_route_map} Resource.
 func NewRouteMap(scope constructs.Construct, id *string, config *RouteMapConfig) RouteMap {
 	_init_.Initialize()
 
@@ -409,7 +419,7 @@ func NewRouteMap(scope constructs.Construct, id *string, config *RouteMapConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/route_map azurerm_route_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/route_map azurerm_route_map} Resource.
 func NewRouteMap_Override(r RouteMap, scope constructs.Construct, id *string, config *RouteMapConfig) {
 	_init_.Initialize()
 
@@ -790,6 +800,19 @@ func (r *jsiiProxy_RouteMap) GetStringMapAttribute(terraformAttribute *string) *
 	return returns
 }
 
+func (r *jsiiProxy_RouteMap) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (r *jsiiProxy_RouteMap) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -817,6 +840,17 @@ func (r *jsiiProxy_RouteMap) InterpolationForAttribute(terraformAttribute *strin
 	return returns
 }
 
+func (r *jsiiProxy_RouteMap) MoveFromId(id *string) {
+	if err := r.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (r *jsiiProxy_RouteMap) MoveTo(moveTarget *string, index interface{}) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -825,6 +859,17 @@ func (r *jsiiProxy_RouteMap) MoveTo(moveTarget *string, index interface{}) {
 		r,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (r *jsiiProxy_RouteMap) MoveToId(id *string) {
+	if err := r.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

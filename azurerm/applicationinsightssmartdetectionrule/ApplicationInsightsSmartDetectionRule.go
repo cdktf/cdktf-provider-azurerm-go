@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule}.
 type ApplicationInsightsSmartDetectionRule interface {
 	cdktf.TerraformResource
 	AdditionalEmailRecipients() *[]*string
@@ -105,12 +105,22 @@ type ApplicationInsightsSmartDetectionRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -439,7 +449,7 @@ func (j *jsiiProxy_ApplicationInsightsSmartDetectionRule) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule} Resource.
 func NewApplicationInsightsSmartDetectionRule(scope constructs.Construct, id *string, config *ApplicationInsightsSmartDetectionRuleConfig) ApplicationInsightsSmartDetectionRule {
 	_init_.Initialize()
 
@@ -457,7 +467,7 @@ func NewApplicationInsightsSmartDetectionRule(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule} Resource.
 func NewApplicationInsightsSmartDetectionRule_Override(a ApplicationInsightsSmartDetectionRule, scope constructs.Construct, id *string, config *ApplicationInsightsSmartDetectionRuleConfig) {
 	_init_.Initialize()
 
@@ -871,6 +881,19 @@ func (a *jsiiProxy_ApplicationInsightsSmartDetectionRule) GetStringMapAttribute(
 	return returns
 }
 
+func (a *jsiiProxy_ApplicationInsightsSmartDetectionRule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_ApplicationInsightsSmartDetectionRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -898,6 +921,17 @@ func (a *jsiiProxy_ApplicationInsightsSmartDetectionRule) InterpolationForAttrib
 	return returns
 }
 
+func (a *jsiiProxy_ApplicationInsightsSmartDetectionRule) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_ApplicationInsightsSmartDetectionRule) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -906,6 +940,17 @@ func (a *jsiiProxy_ApplicationInsightsSmartDetectionRule) MoveTo(moveTarget *str
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_ApplicationInsightsSmartDetectionRule) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

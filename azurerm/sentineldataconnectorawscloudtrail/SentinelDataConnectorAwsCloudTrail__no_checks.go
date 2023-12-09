@@ -59,7 +59,15 @@ func (s *jsiiProxy_SentinelDataConnectorAwsCloudTrail) validateInterpolationForA
 	return nil
 }
 
+func (s *jsiiProxy_SentinelDataConnectorAwsCloudTrail) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelDataConnectorAwsCloudTrail) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelDataConnectorAwsCloudTrail) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

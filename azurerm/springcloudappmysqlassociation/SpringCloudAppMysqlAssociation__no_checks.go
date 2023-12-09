@@ -59,7 +59,15 @@ func (s *jsiiProxy_SpringCloudAppMysqlAssociation) validateInterpolationForAttri
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudAppMysqlAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudAppMysqlAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudAppMysqlAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

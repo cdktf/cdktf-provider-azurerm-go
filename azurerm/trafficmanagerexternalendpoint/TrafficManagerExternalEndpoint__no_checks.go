@@ -59,7 +59,15 @@ func (t *jsiiProxy_TrafficManagerExternalEndpoint) validateInterpolationForAttri
 	return nil
 }
 
+func (t *jsiiProxy_TrafficManagerExternalEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TrafficManagerExternalEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TrafficManagerExternalEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

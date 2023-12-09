@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/dev_test_linux_virtual_machine azurerm_dev_test_linux_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/dev_test_linux_virtual_machine azurerm_dev_test_linux_virtual_machine}.
 type DevTestLinuxVirtualMachine interface {
 	cdktf.TerraformResource
 	AllowClaim() interface{}
@@ -141,12 +141,22 @@ type DevTestLinuxVirtualMachine interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -741,7 +751,7 @@ func (j *jsiiProxy_DevTestLinuxVirtualMachine) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/dev_test_linux_virtual_machine azurerm_dev_test_linux_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/dev_test_linux_virtual_machine azurerm_dev_test_linux_virtual_machine} Resource.
 func NewDevTestLinuxVirtualMachine(scope constructs.Construct, id *string, config *DevTestLinuxVirtualMachineConfig) DevTestLinuxVirtualMachine {
 	_init_.Initialize()
 
@@ -759,7 +769,7 @@ func NewDevTestLinuxVirtualMachine(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/dev_test_linux_virtual_machine azurerm_dev_test_linux_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/dev_test_linux_virtual_machine azurerm_dev_test_linux_virtual_machine} Resource.
 func NewDevTestLinuxVirtualMachine_Override(d DevTestLinuxVirtualMachine, scope constructs.Construct, id *string, config *DevTestLinuxVirtualMachineConfig) {
 	_init_.Initialize()
 
@@ -1283,6 +1293,19 @@ func (d *jsiiProxy_DevTestLinuxVirtualMachine) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (d *jsiiProxy_DevTestLinuxVirtualMachine) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DevTestLinuxVirtualMachine) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1310,6 +1333,17 @@ func (d *jsiiProxy_DevTestLinuxVirtualMachine) InterpolationForAttribute(terrafo
 	return returns
 }
 
+func (d *jsiiProxy_DevTestLinuxVirtualMachine) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DevTestLinuxVirtualMachine) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1318,6 +1352,17 @@ func (d *jsiiProxy_DevTestLinuxVirtualMachine) MoveTo(moveTarget *string, index 
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DevTestLinuxVirtualMachine) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

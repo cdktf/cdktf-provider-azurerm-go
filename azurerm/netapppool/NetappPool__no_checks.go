@@ -59,7 +59,15 @@ func (n *jsiiProxy_NetappPool) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (n *jsiiProxy_NetappPool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappPool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

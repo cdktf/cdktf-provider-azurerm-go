@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/federated_identity_credential azurerm_federated_identity_credential}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/federated_identity_credential azurerm_federated_identity_credential}.
 type FederatedIdentityCredential interface {
 	cdktf.TerraformResource
 	Audience() *[]*string
@@ -108,12 +108,22 @@ type FederatedIdentityCredential interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -459,7 +469,7 @@ func (j *jsiiProxy_FederatedIdentityCredential) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/federated_identity_credential azurerm_federated_identity_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/federated_identity_credential azurerm_federated_identity_credential} Resource.
 func NewFederatedIdentityCredential(scope constructs.Construct, id *string, config *FederatedIdentityCredentialConfig) FederatedIdentityCredential {
 	_init_.Initialize()
 
@@ -477,7 +487,7 @@ func NewFederatedIdentityCredential(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/federated_identity_credential azurerm_federated_identity_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/federated_identity_credential azurerm_federated_identity_credential} Resource.
 func NewFederatedIdentityCredential_Override(f FederatedIdentityCredential, scope constructs.Construct, id *string, config *FederatedIdentityCredentialConfig) {
 	_init_.Initialize()
 
@@ -902,6 +912,19 @@ func (f *jsiiProxy_FederatedIdentityCredential) GetStringMapAttribute(terraformA
 	return returns
 }
 
+func (f *jsiiProxy_FederatedIdentityCredential) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		f,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (f *jsiiProxy_FederatedIdentityCredential) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := f.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -929,6 +952,17 @@ func (f *jsiiProxy_FederatedIdentityCredential) InterpolationForAttribute(terraf
 	return returns
 }
 
+func (f *jsiiProxy_FederatedIdentityCredential) MoveFromId(id *string) {
+	if err := f.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (f *jsiiProxy_FederatedIdentityCredential) MoveTo(moveTarget *string, index interface{}) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -937,6 +971,17 @@ func (f *jsiiProxy_FederatedIdentityCredential) MoveTo(moveTarget *string, index
 		f,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (f *jsiiProxy_FederatedIdentityCredential) MoveToId(id *string) {
+	if err := f.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

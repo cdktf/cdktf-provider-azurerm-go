@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule}.
 type NotificationHubAuthorizationRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -113,12 +113,22 @@ type NotificationHubAuthorizationRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -507,7 +517,7 @@ func (j *jsiiProxy_NotificationHubAuthorizationRule) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule} Resource.
 func NewNotificationHubAuthorizationRule(scope constructs.Construct, id *string, config *NotificationHubAuthorizationRuleConfig) NotificationHubAuthorizationRule {
 	_init_.Initialize()
 
@@ -525,7 +535,7 @@ func NewNotificationHubAuthorizationRule(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule} Resource.
 func NewNotificationHubAuthorizationRule_Override(n NotificationHubAuthorizationRule, scope constructs.Construct, id *string, config *NotificationHubAuthorizationRuleConfig) {
 	_init_.Initialize()
 
@@ -961,6 +971,19 @@ func (n *jsiiProxy_NotificationHubAuthorizationRule) GetStringMapAttribute(terra
 	return returns
 }
 
+func (n *jsiiProxy_NotificationHubAuthorizationRule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NotificationHubAuthorizationRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -988,6 +1011,17 @@ func (n *jsiiProxy_NotificationHubAuthorizationRule) InterpolationForAttribute(t
 	return returns
 }
 
+func (n *jsiiProxy_NotificationHubAuthorizationRule) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NotificationHubAuthorizationRule) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -996,6 +1030,17 @@ func (n *jsiiProxy_NotificationHubAuthorizationRule) MoveTo(moveTarget *string, 
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NotificationHubAuthorizationRule) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (s *jsiiProxy_SentinelDataConnectorAwsS3) validateInterpolationForAttribute
 	return nil
 }
 
+func (s *jsiiProxy_SentinelDataConnectorAwsS3) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelDataConnectorAwsS3) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelDataConnectorAwsS3) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

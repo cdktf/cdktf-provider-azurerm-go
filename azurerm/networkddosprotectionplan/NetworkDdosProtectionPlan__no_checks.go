@@ -59,7 +59,15 @@ func (n *jsiiProxy_NetworkDdosProtectionPlan) validateInterpolationForAttributeP
 	return nil
 }
 
+func (n *jsiiProxy_NetworkDdosProtectionPlan) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkDdosProtectionPlan) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkDdosProtectionPlan) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

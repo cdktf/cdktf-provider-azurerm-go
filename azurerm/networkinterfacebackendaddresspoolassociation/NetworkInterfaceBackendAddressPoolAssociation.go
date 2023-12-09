@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_interface_backend_address_pool_association azurerm_network_interface_backend_address_pool_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_interface_backend_address_pool_association azurerm_network_interface_backend_address_pool_association}.
 type NetworkInterfaceBackendAddressPoolAssociation interface {
 	cdktf.TerraformResource
 	BackendAddressPoolId() *string
@@ -99,12 +99,22 @@ type NetworkInterfaceBackendAddressPoolAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -390,7 +400,7 @@ func (j *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociation) TimeoutsInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_interface_backend_address_pool_association azurerm_network_interface_backend_address_pool_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_interface_backend_address_pool_association azurerm_network_interface_backend_address_pool_association} Resource.
 func NewNetworkInterfaceBackendAddressPoolAssociation(scope constructs.Construct, id *string, config *NetworkInterfaceBackendAddressPoolAssociationConfig) NetworkInterfaceBackendAddressPoolAssociation {
 	_init_.Initialize()
 
@@ -408,7 +418,7 @@ func NewNetworkInterfaceBackendAddressPoolAssociation(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_interface_backend_address_pool_association azurerm_network_interface_backend_address_pool_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_interface_backend_address_pool_association azurerm_network_interface_backend_address_pool_association} Resource.
 func NewNetworkInterfaceBackendAddressPoolAssociation_Override(n NetworkInterfaceBackendAddressPoolAssociation, scope constructs.Construct, id *string, config *NetworkInterfaceBackendAddressPoolAssociationConfig) {
 	_init_.Initialize()
 
@@ -800,6 +810,19 @@ func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociation) GetStringMapAt
 	return returns
 }
 
+func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociation) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociation) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -827,6 +850,17 @@ func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociation) InterpolationF
 	return returns
 }
 
+func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociation) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociation) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -835,6 +869,17 @@ func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociation) MoveTo(moveTar
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociation) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

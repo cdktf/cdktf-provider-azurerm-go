@@ -59,7 +59,15 @@ func (m *jsiiProxy_MariadbFirewallRule) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_MariadbFirewallRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MariadbFirewallRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MariadbFirewallRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

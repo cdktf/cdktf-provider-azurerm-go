@@ -59,7 +59,15 @@ func (m *jsiiProxy_MediaAsset) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (m *jsiiProxy_MediaAsset) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaAsset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MediaAsset) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (k *jsiiProxy_KeyVaultManagedStorageAccountSasTokenDefinition) validateInte
 	return nil
 }
 
+func (k *jsiiProxy_KeyVaultManagedStorageAccountSasTokenDefinition) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultManagedStorageAccountSasTokenDefinition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KeyVaultManagedStorageAccountSasTokenDefinition) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

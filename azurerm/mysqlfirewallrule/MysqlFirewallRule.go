@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/mysql_firewall_rule azurerm_mysql_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mysql_firewall_rule azurerm_mysql_firewall_rule}.
 type MysqlFirewallRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -105,12 +105,22 @@ type MysqlFirewallRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -436,7 +446,7 @@ func (j *jsiiProxy_MysqlFirewallRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/mysql_firewall_rule azurerm_mysql_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mysql_firewall_rule azurerm_mysql_firewall_rule} Resource.
 func NewMysqlFirewallRule(scope constructs.Construct, id *string, config *MysqlFirewallRuleConfig) MysqlFirewallRule {
 	_init_.Initialize()
 
@@ -454,7 +464,7 @@ func NewMysqlFirewallRule(scope constructs.Construct, id *string, config *MysqlF
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/mysql_firewall_rule azurerm_mysql_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mysql_firewall_rule azurerm_mysql_firewall_rule} Resource.
 func NewMysqlFirewallRule_Override(m MysqlFirewallRule, scope constructs.Construct, id *string, config *MysqlFirewallRuleConfig) {
 	_init_.Initialize()
 
@@ -868,6 +878,19 @@ func (m *jsiiProxy_MysqlFirewallRule) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (m *jsiiProxy_MysqlFirewallRule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (m *jsiiProxy_MysqlFirewallRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -895,6 +918,17 @@ func (m *jsiiProxy_MysqlFirewallRule) InterpolationForAttribute(terraformAttribu
 	return returns
 }
 
+func (m *jsiiProxy_MysqlFirewallRule) MoveFromId(id *string) {
+	if err := m.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (m *jsiiProxy_MysqlFirewallRule) MoveTo(moveTarget *string, index interface{}) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -903,6 +937,17 @@ func (m *jsiiProxy_MysqlFirewallRule) MoveTo(moveTarget *string, index interface
 		m,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (m *jsiiProxy_MysqlFirewallRule) MoveToId(id *string) {
+	if err := m.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

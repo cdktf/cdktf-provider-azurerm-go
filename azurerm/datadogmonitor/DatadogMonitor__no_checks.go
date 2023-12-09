@@ -59,7 +59,15 @@ func (d *jsiiProxy_DatadogMonitor) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (d *jsiiProxy_DatadogMonitor) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatadogMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatadogMonitor) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

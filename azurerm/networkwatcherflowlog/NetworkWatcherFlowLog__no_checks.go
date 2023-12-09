@@ -59,7 +59,15 @@ func (n *jsiiProxy_NetworkWatcherFlowLog) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (n *jsiiProxy_NetworkWatcherFlowLog) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkWatcherFlowLog) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkWatcherFlowLog) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

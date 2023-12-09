@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/synapse_linked_service azurerm_synapse_linked_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/synapse_linked_service azurerm_synapse_linked_service}.
 type SynapseLinkedService interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -116,12 +116,22 @@ type SynapseLinkedService interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -533,7 +543,7 @@ func (j *jsiiProxy_SynapseLinkedService) TypePropertiesJsonInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/synapse_linked_service azurerm_synapse_linked_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/synapse_linked_service azurerm_synapse_linked_service} Resource.
 func NewSynapseLinkedService(scope constructs.Construct, id *string, config *SynapseLinkedServiceConfig) SynapseLinkedService {
 	_init_.Initialize()
 
@@ -551,7 +561,7 @@ func NewSynapseLinkedService(scope constructs.Construct, id *string, config *Syn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/synapse_linked_service azurerm_synapse_linked_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/synapse_linked_service azurerm_synapse_linked_service} Resource.
 func NewSynapseLinkedService_Override(s SynapseLinkedService, scope constructs.Construct, id *string, config *SynapseLinkedServiceConfig) {
 	_init_.Initialize()
 
@@ -998,6 +1008,19 @@ func (s *jsiiProxy_SynapseLinkedService) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (s *jsiiProxy_SynapseLinkedService) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_SynapseLinkedService) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1025,6 +1048,17 @@ func (s *jsiiProxy_SynapseLinkedService) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (s *jsiiProxy_SynapseLinkedService) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_SynapseLinkedService) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1033,6 +1067,17 @@ func (s *jsiiProxy_SynapseLinkedService) MoveTo(moveTarget *string, index interf
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_SynapseLinkedService) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

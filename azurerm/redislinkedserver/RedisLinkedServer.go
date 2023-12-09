@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/redis_linked_server azurerm_redis_linked_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/redis_linked_server azurerm_redis_linked_server}.
 type RedisLinkedServer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -39,6 +39,7 @@ type RedisLinkedServer interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GeoReplicatedPrimaryHostName() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -106,12 +107,22 @@ type RedisLinkedServer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -211,6 +222,16 @@ func (j *jsiiProxy_RedisLinkedServer) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisLinkedServer) GeoReplicatedPrimaryHostName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"geoReplicatedPrimaryHostName",
 		&returns,
 	)
 	return returns
@@ -447,7 +468,7 @@ func (j *jsiiProxy_RedisLinkedServer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/redis_linked_server azurerm_redis_linked_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/redis_linked_server azurerm_redis_linked_server} Resource.
 func NewRedisLinkedServer(scope constructs.Construct, id *string, config *RedisLinkedServerConfig) RedisLinkedServer {
 	_init_.Initialize()
 
@@ -465,7 +486,7 @@ func NewRedisLinkedServer(scope constructs.Construct, id *string, config *RedisL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/redis_linked_server azurerm_redis_linked_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/redis_linked_server azurerm_redis_linked_server} Resource.
 func NewRedisLinkedServer_Override(r RedisLinkedServer, scope constructs.Construct, id *string, config *RedisLinkedServerConfig) {
 	_init_.Initialize()
 
@@ -879,6 +900,19 @@ func (r *jsiiProxy_RedisLinkedServer) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (r *jsiiProxy_RedisLinkedServer) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (r *jsiiProxy_RedisLinkedServer) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -906,6 +940,17 @@ func (r *jsiiProxy_RedisLinkedServer) InterpolationForAttribute(terraformAttribu
 	return returns
 }
 
+func (r *jsiiProxy_RedisLinkedServer) MoveFromId(id *string) {
+	if err := r.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (r *jsiiProxy_RedisLinkedServer) MoveTo(moveTarget *string, index interface{}) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -914,6 +959,17 @@ func (r *jsiiProxy_RedisLinkedServer) MoveTo(moveTarget *string, index interface
 		r,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (r *jsiiProxy_RedisLinkedServer) MoveToId(id *string) {
+	if err := r.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) validateInterpolationFo
 	return nil
 }
 
+func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

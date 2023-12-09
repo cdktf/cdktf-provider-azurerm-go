@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/private_dns_resolver azurerm_private_dns_resolver}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/private_dns_resolver azurerm_private_dns_resolver}.
 type PrivateDnsResolver interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -105,12 +105,22 @@ type PrivateDnsResolver interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -437,7 +447,7 @@ func (j *jsiiProxy_PrivateDnsResolver) VirtualNetworkIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/private_dns_resolver azurerm_private_dns_resolver} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/private_dns_resolver azurerm_private_dns_resolver} Resource.
 func NewPrivateDnsResolver(scope constructs.Construct, id *string, config *PrivateDnsResolverConfig) PrivateDnsResolver {
 	_init_.Initialize()
 
@@ -455,7 +465,7 @@ func NewPrivateDnsResolver(scope constructs.Construct, id *string, config *Priva
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/private_dns_resolver azurerm_private_dns_resolver} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/private_dns_resolver azurerm_private_dns_resolver} Resource.
 func NewPrivateDnsResolver_Override(p PrivateDnsResolver, scope constructs.Construct, id *string, config *PrivateDnsResolverConfig) {
 	_init_.Initialize()
 
@@ -869,6 +879,19 @@ func (p *jsiiProxy_PrivateDnsResolver) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (p *jsiiProxy_PrivateDnsResolver) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (p *jsiiProxy_PrivateDnsResolver) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -896,6 +919,17 @@ func (p *jsiiProxy_PrivateDnsResolver) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (p *jsiiProxy_PrivateDnsResolver) MoveFromId(id *string) {
+	if err := p.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (p *jsiiProxy_PrivateDnsResolver) MoveTo(moveTarget *string, index interface{}) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -904,6 +938,17 @@ func (p *jsiiProxy_PrivateDnsResolver) MoveTo(moveTarget *string, index interfac
 		p,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (p *jsiiProxy_PrivateDnsResolver) MoveToId(id *string) {
+	if err := p.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

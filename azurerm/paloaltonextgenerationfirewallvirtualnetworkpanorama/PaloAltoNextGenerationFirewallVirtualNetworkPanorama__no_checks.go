@@ -59,7 +59,15 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanorama) validat
 	return nil
 }
 
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanorama) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanorama) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanorama) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

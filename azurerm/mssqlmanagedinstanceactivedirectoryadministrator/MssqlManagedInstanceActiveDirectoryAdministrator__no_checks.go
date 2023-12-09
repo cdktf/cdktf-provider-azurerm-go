@@ -59,7 +59,15 @@ func (m *jsiiProxy_MssqlManagedInstanceActiveDirectoryAdministrator) validateInt
 	return nil
 }
 
+func (m *jsiiProxy_MssqlManagedInstanceActiveDirectoryAdministrator) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlManagedInstanceActiveDirectoryAdministrator) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlManagedInstanceActiveDirectoryAdministrator) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

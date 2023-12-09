@@ -59,7 +59,15 @@ func (m *jsiiProxy_MonitorAlertPrometheusRuleGroup) validateInterpolationForAttr
 	return nil
 }
 
+func (m *jsiiProxy_MonitorAlertPrometheusRuleGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAlertPrometheusRuleGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitorAlertPrometheusRuleGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

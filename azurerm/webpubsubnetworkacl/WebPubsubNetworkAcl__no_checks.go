@@ -59,7 +59,15 @@ func (w *jsiiProxy_WebPubsubNetworkAcl) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (w *jsiiProxy_WebPubsubNetworkAcl) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebPubsubNetworkAcl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WebPubsubNetworkAcl) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

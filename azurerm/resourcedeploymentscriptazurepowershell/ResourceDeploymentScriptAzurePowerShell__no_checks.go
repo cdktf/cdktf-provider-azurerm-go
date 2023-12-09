@@ -59,7 +59,15 @@ func (r *jsiiProxy_ResourceDeploymentScriptAzurePowerShell) validateInterpolatio
 	return nil
 }
 
+func (r *jsiiProxy_ResourceDeploymentScriptAzurePowerShell) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceDeploymentScriptAzurePowerShell) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourceDeploymentScriptAzurePowerShell) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

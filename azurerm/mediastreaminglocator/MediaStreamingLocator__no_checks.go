@@ -59,7 +59,15 @@ func (m *jsiiProxy_MediaStreamingLocator) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (m *jsiiProxy_MediaStreamingLocator) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaStreamingLocator) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MediaStreamingLocator) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

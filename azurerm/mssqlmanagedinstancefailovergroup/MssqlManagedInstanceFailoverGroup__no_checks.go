@@ -59,7 +59,15 @@ func (m *jsiiProxy_MssqlManagedInstanceFailoverGroup) validateInterpolationForAt
 	return nil
 }
 
+func (m *jsiiProxy_MssqlManagedInstanceFailoverGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlManagedInstanceFailoverGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlManagedInstanceFailoverGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

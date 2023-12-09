@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/datadog_monitor_tag_rule azurerm_datadog_monitor_tag_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/datadog_monitor_tag_rule azurerm_datadog_monitor_tag_rule}.
 type DatadogMonitorTagRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -100,12 +100,22 @@ type DatadogMonitorTagRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -416,7 +426,7 @@ func (j *jsiiProxy_DatadogMonitorTagRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/datadog_monitor_tag_rule azurerm_datadog_monitor_tag_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/datadog_monitor_tag_rule azurerm_datadog_monitor_tag_rule} Resource.
 func NewDatadogMonitorTagRule(scope constructs.Construct, id *string, config *DatadogMonitorTagRuleConfig) DatadogMonitorTagRule {
 	_init_.Initialize()
 
@@ -434,7 +444,7 @@ func NewDatadogMonitorTagRule(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/datadog_monitor_tag_rule azurerm_datadog_monitor_tag_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/datadog_monitor_tag_rule azurerm_datadog_monitor_tag_rule} Resource.
 func NewDatadogMonitorTagRule_Override(d DatadogMonitorTagRule, scope constructs.Construct, id *string, config *DatadogMonitorTagRuleConfig) {
 	_init_.Initialize()
 
@@ -815,6 +825,19 @@ func (d *jsiiProxy_DatadogMonitorTagRule) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (d *jsiiProxy_DatadogMonitorTagRule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DatadogMonitorTagRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -842,6 +865,17 @@ func (d *jsiiProxy_DatadogMonitorTagRule) InterpolationForAttribute(terraformAtt
 	return returns
 }
 
+func (d *jsiiProxy_DatadogMonitorTagRule) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DatadogMonitorTagRule) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -850,6 +884,17 @@ func (d *jsiiProxy_DatadogMonitorTagRule) MoveTo(moveTarget *string, index inter
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DatadogMonitorTagRule) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

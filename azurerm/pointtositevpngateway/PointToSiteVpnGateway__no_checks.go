@@ -59,7 +59,15 @@ func (p *jsiiProxy_PointToSiteVpnGateway) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (p *jsiiProxy_PointToSiteVpnGateway) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PointToSiteVpnGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PointToSiteVpnGateway) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

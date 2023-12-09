@@ -59,7 +59,15 @@ func (s *jsiiProxy_SpatialAnchorsAccount) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SpatialAnchorsAccount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpatialAnchorsAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpatialAnchorsAccount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

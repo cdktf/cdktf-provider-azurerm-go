@@ -59,7 +59,15 @@ func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicyAssociation) validateInter
 	return nil
 }
 
+func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicyAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicyAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SiteRecoveryVmwareReplicationPolicyAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

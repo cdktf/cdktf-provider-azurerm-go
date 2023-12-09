@@ -59,7 +59,15 @@ func (s *jsiiProxy_StreamAnalyticsManagedPrivateEndpoint) validateInterpolationF
 	return nil
 }
 
+func (s *jsiiProxy_StreamAnalyticsManagedPrivateEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsManagedPrivateEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StreamAnalyticsManagedPrivateEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

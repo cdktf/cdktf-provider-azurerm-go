@@ -59,7 +59,15 @@ func (m *jsiiProxy_MysqlFlexibleServerActiveDirectoryAdministrator) validateInte
 	return nil
 }
 
+func (m *jsiiProxy_MysqlFlexibleServerActiveDirectoryAdministrator) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MysqlFlexibleServerActiveDirectoryAdministrator) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MysqlFlexibleServerActiveDirectoryAdministrator) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

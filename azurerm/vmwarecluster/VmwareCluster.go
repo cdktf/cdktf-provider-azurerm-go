@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/vmware_cluster azurerm_vmware_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/vmware_cluster azurerm_vmware_cluster}.
 type VmwareCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -104,12 +104,22 @@ type VmwareCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -435,7 +445,7 @@ func (j *jsiiProxy_VmwareCluster) VmwareCloudIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/vmware_cluster azurerm_vmware_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/vmware_cluster azurerm_vmware_cluster} Resource.
 func NewVmwareCluster(scope constructs.Construct, id *string, config *VmwareClusterConfig) VmwareCluster {
 	_init_.Initialize()
 
@@ -453,7 +463,7 @@ func NewVmwareCluster(scope constructs.Construct, id *string, config *VmwareClus
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/vmware_cluster azurerm_vmware_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/vmware_cluster azurerm_vmware_cluster} Resource.
 func NewVmwareCluster_Override(v VmwareCluster, scope constructs.Construct, id *string, config *VmwareClusterConfig) {
 	_init_.Initialize()
 
@@ -856,6 +866,19 @@ func (v *jsiiProxy_VmwareCluster) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (v *jsiiProxy_VmwareCluster) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (v *jsiiProxy_VmwareCluster) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := v.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -883,6 +906,17 @@ func (v *jsiiProxy_VmwareCluster) InterpolationForAttribute(terraformAttribute *
 	return returns
 }
 
+func (v *jsiiProxy_VmwareCluster) MoveFromId(id *string) {
+	if err := v.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (v *jsiiProxy_VmwareCluster) MoveTo(moveTarget *string, index interface{}) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -891,6 +925,17 @@ func (v *jsiiProxy_VmwareCluster) MoveTo(moveTarget *string, index interface{}) 
 		v,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (v *jsiiProxy_VmwareCluster) MoveToId(id *string) {
+	if err := v.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

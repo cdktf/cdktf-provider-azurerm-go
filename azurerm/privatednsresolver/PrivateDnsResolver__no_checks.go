@@ -59,7 +59,15 @@ func (p *jsiiProxy_PrivateDnsResolver) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (p *jsiiProxy_PrivateDnsResolver) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateDnsResolver) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivateDnsResolver) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

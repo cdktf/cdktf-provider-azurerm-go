@@ -59,7 +59,15 @@ func (s *jsiiProxy_SqlManagedDatabase) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (s *jsiiProxy_SqlManagedDatabase) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlManagedDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlManagedDatabase) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

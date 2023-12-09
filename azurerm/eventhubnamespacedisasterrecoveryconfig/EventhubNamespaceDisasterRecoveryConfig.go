@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config}.
 type EventhubNamespaceDisasterRecoveryConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -102,12 +102,22 @@ type EventhubNamespaceDisasterRecoveryConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -413,7 +423,7 @@ func (j *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config} Resource.
 func NewEventhubNamespaceDisasterRecoveryConfig(scope constructs.Construct, id *string, config *EventhubNamespaceDisasterRecoveryConfigConfig) EventhubNamespaceDisasterRecoveryConfig {
 	_init_.Initialize()
 
@@ -431,7 +441,7 @@ func NewEventhubNamespaceDisasterRecoveryConfig(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/eventhub_namespace_disaster_recovery_config azurerm_eventhub_namespace_disaster_recovery_config} Resource.
 func NewEventhubNamespaceDisasterRecoveryConfig_Override(e EventhubNamespaceDisasterRecoveryConfig, scope constructs.Construct, id *string, config *EventhubNamespaceDisasterRecoveryConfigConfig) {
 	_init_.Initialize()
 
@@ -834,6 +844,19 @@ func (e *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) GetStringMapAttribut
 	return returns
 }
 
+func (e *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -861,6 +884,17 @@ func (e *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) InterpolationForAttr
 	return returns
 }
 
+func (e *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -869,6 +903,17 @@ func (e *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) MoveTo(moveTarget *s
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_EventhubNamespaceDisasterRecoveryConfig) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

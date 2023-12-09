@@ -59,7 +59,15 @@ func (a *jsiiProxy_ArcKubernetesFluxConfiguration) validateInterpolationForAttri
 	return nil
 }
 
+func (a *jsiiProxy_ArcKubernetesFluxConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArcKubernetesFluxConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ArcKubernetesFluxConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

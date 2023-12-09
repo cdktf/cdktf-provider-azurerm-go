@@ -59,7 +59,15 @@ func (l *jsiiProxy_LighthouseDefinition) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (l *jsiiProxy_LighthouseDefinition) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LighthouseDefinition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LighthouseDefinition) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

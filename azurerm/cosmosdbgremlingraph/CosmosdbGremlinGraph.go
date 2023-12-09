@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph}.
 type CosmosdbGremlinGraph interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -125,12 +125,22 @@ type CosmosdbGremlinGraph interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -628,7 +638,7 @@ func (j *jsiiProxy_CosmosdbGremlinGraph) UniqueKeyInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph} Resource.
 func NewCosmosdbGremlinGraph(scope constructs.Construct, id *string, config *CosmosdbGremlinGraphConfig) CosmosdbGremlinGraph {
 	_init_.Initialize()
 
@@ -646,7 +656,7 @@ func NewCosmosdbGremlinGraph(scope constructs.Construct, id *string, config *Cos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/cosmosdb_gremlin_graph azurerm_cosmosdb_gremlin_graph} Resource.
 func NewCosmosdbGremlinGraph_Override(c CosmosdbGremlinGraph, scope constructs.Construct, id *string, config *CosmosdbGremlinGraphConfig) {
 	_init_.Initialize()
 
@@ -1104,6 +1114,19 @@ func (c *jsiiProxy_CosmosdbGremlinGraph) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (c *jsiiProxy_CosmosdbGremlinGraph) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_CosmosdbGremlinGraph) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1131,6 +1154,17 @@ func (c *jsiiProxy_CosmosdbGremlinGraph) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (c *jsiiProxy_CosmosdbGremlinGraph) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_CosmosdbGremlinGraph) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1139,6 +1173,17 @@ func (c *jsiiProxy_CosmosdbGremlinGraph) MoveTo(moveTarget *string, index interf
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_CosmosdbGremlinGraph) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

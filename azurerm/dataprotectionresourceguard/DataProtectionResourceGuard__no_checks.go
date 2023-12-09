@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataProtectionResourceGuard) validateInterpolationForAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DataProtectionResourceGuard) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataProtectionResourceGuard) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataProtectionResourceGuard) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

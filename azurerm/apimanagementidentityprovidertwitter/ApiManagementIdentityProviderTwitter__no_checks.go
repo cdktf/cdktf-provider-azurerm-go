@@ -59,7 +59,15 @@ func (a *jsiiProxy_ApiManagementIdentityProviderTwitter) validateInterpolationFo
 	return nil
 }
 
+func (a *jsiiProxy_ApiManagementIdentityProviderTwitter) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementIdentityProviderTwitter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiManagementIdentityProviderTwitter) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

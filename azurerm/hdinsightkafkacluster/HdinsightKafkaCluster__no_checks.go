@@ -59,7 +59,15 @@ func (h *jsiiProxy_HdinsightKafkaCluster) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (h *jsiiProxy_HdinsightKafkaCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HdinsightKafkaCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HdinsightKafkaCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

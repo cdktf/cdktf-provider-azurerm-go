@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/sql_managed_instance_active_directory_administrator azurerm_sql_managed_instance_active_directory_administrator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/sql_managed_instance_active_directory_administrator azurerm_sql_managed_instance_active_directory_administrator}.
 type SqlManagedInstanceActiveDirectoryAdministrator interface {
 	cdktf.TerraformResource
 	AzureadAuthenticationOnly() interface{}
@@ -108,12 +108,22 @@ type SqlManagedInstanceActiveDirectoryAdministrator interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -460,7 +470,7 @@ func (j *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) TimeoutsInput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/sql_managed_instance_active_directory_administrator azurerm_sql_managed_instance_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/sql_managed_instance_active_directory_administrator azurerm_sql_managed_instance_active_directory_administrator} Resource.
 func NewSqlManagedInstanceActiveDirectoryAdministrator(scope constructs.Construct, id *string, config *SqlManagedInstanceActiveDirectoryAdministratorConfig) SqlManagedInstanceActiveDirectoryAdministrator {
 	_init_.Initialize()
 
@@ -478,7 +488,7 @@ func NewSqlManagedInstanceActiveDirectoryAdministrator(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/sql_managed_instance_active_directory_administrator azurerm_sql_managed_instance_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/sql_managed_instance_active_directory_administrator azurerm_sql_managed_instance_active_directory_administrator} Resource.
 func NewSqlManagedInstanceActiveDirectoryAdministrator_Override(s SqlManagedInstanceActiveDirectoryAdministrator, scope constructs.Construct, id *string, config *SqlManagedInstanceActiveDirectoryAdministratorConfig) {
 	_init_.Initialize()
 
@@ -903,6 +913,19 @@ func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) GetStringMapA
 	return returns
 }
 
+func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -930,6 +953,17 @@ func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) Interpolation
 	return returns
 }
 
+func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -938,6 +972,17 @@ func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) MoveTo(moveTa
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_SqlManagedInstanceActiveDirectoryAdministrator) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

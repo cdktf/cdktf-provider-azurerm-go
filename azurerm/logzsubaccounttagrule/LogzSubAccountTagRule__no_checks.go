@@ -59,7 +59,15 @@ func (l *jsiiProxy_LogzSubAccountTagRule) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (l *jsiiProxy_LogzSubAccountTagRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogzSubAccountTagRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogzSubAccountTagRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

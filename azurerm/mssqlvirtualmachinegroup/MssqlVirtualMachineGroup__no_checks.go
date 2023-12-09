@@ -59,7 +59,15 @@ func (m *jsiiProxy_MssqlVirtualMachineGroup) validateInterpolationForAttributePa
 	return nil
 }
 
+func (m *jsiiProxy_MssqlVirtualMachineGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlVirtualMachineGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlVirtualMachineGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/nginx_configuration azurerm_nginx_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/nginx_configuration azurerm_nginx_configuration}.
 type NginxConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -103,12 +103,22 @@ type NginxConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -439,7 +449,7 @@ func (j *jsiiProxy_NginxConfiguration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/nginx_configuration azurerm_nginx_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/nginx_configuration azurerm_nginx_configuration} Resource.
 func NewNginxConfiguration(scope constructs.Construct, id *string, config *NginxConfigurationConfig) NginxConfiguration {
 	_init_.Initialize()
 
@@ -457,7 +467,7 @@ func NewNginxConfiguration(scope constructs.Construct, id *string, config *Nginx
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/nginx_configuration azurerm_nginx_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/nginx_configuration azurerm_nginx_configuration} Resource.
 func NewNginxConfiguration_Override(n NginxConfiguration, scope constructs.Construct, id *string, config *NginxConfigurationConfig) {
 	_init_.Initialize()
 
@@ -849,6 +859,19 @@ func (n *jsiiProxy_NginxConfiguration) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (n *jsiiProxy_NginxConfiguration) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NginxConfiguration) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -876,6 +899,17 @@ func (n *jsiiProxy_NginxConfiguration) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (n *jsiiProxy_NginxConfiguration) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NginxConfiguration) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -884,6 +918,17 @@ func (n *jsiiProxy_NginxConfiguration) MoveTo(moveTarget *string, index interfac
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NginxConfiguration) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

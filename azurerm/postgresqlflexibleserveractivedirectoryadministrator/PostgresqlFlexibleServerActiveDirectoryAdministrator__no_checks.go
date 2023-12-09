@@ -59,7 +59,15 @@ func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) validat
 	return nil
 }
 
+func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

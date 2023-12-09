@@ -59,7 +59,15 @@ func (s *jsiiProxy_SiteRecoveryHypervReplicationPolicyAssociation) validateInter
 	return nil
 }
 
+func (s *jsiiProxy_SiteRecoveryHypervReplicationPolicyAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SiteRecoveryHypervReplicationPolicyAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SiteRecoveryHypervReplicationPolicyAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (s *jsiiProxy_SearchSharedPrivateLinkService) validateInterpolationForAttri
 	return nil
 }
 
+func (s *jsiiProxy_SearchSharedPrivateLinkService) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SearchSharedPrivateLinkService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SearchSharedPrivateLinkService) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

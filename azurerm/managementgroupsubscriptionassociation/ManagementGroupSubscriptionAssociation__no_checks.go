@@ -59,7 +59,15 @@ func (m *jsiiProxy_ManagementGroupSubscriptionAssociation) validateInterpolation
 	return nil
 }
 
+func (m *jsiiProxy_ManagementGroupSubscriptionAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagementGroupSubscriptionAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagementGroupSubscriptionAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

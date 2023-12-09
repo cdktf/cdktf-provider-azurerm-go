@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/digital_twins_endpoint_eventgrid azurerm_digital_twins_endpoint_eventgrid}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/digital_twins_endpoint_eventgrid azurerm_digital_twins_endpoint_eventgrid}.
 type DigitalTwinsEndpointEventgrid interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -108,12 +108,22 @@ type DigitalTwinsEndpointEventgrid interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -460,7 +470,7 @@ func (j *jsiiProxy_DigitalTwinsEndpointEventgrid) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/digital_twins_endpoint_eventgrid azurerm_digital_twins_endpoint_eventgrid} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/digital_twins_endpoint_eventgrid azurerm_digital_twins_endpoint_eventgrid} Resource.
 func NewDigitalTwinsEndpointEventgrid(scope constructs.Construct, id *string, config *DigitalTwinsEndpointEventgridConfig) DigitalTwinsEndpointEventgrid {
 	_init_.Initialize()
 
@@ -478,7 +488,7 @@ func NewDigitalTwinsEndpointEventgrid(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/digital_twins_endpoint_eventgrid azurerm_digital_twins_endpoint_eventgrid} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/digital_twins_endpoint_eventgrid azurerm_digital_twins_endpoint_eventgrid} Resource.
 func NewDigitalTwinsEndpointEventgrid_Override(d DigitalTwinsEndpointEventgrid, scope constructs.Construct, id *string, config *DigitalTwinsEndpointEventgridConfig) {
 	_init_.Initialize()
 
@@ -903,6 +913,19 @@ func (d *jsiiProxy_DigitalTwinsEndpointEventgrid) GetStringMapAttribute(terrafor
 	return returns
 }
 
+func (d *jsiiProxy_DigitalTwinsEndpointEventgrid) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DigitalTwinsEndpointEventgrid) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -930,6 +953,17 @@ func (d *jsiiProxy_DigitalTwinsEndpointEventgrid) InterpolationForAttribute(terr
 	return returns
 }
 
+func (d *jsiiProxy_DigitalTwinsEndpointEventgrid) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DigitalTwinsEndpointEventgrid) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -938,6 +972,17 @@ func (d *jsiiProxy_DigitalTwinsEndpointEventgrid) MoveTo(moveTarget *string, ind
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DigitalTwinsEndpointEventgrid) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

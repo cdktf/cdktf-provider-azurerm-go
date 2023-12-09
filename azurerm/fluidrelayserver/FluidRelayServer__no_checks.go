@@ -59,7 +59,15 @@ func (f *jsiiProxy_FluidRelayServer) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (f *jsiiProxy_FluidRelayServer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FluidRelayServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FluidRelayServer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

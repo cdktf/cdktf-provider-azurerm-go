@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/express_route_circuit azurerm_express_route_circuit}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/express_route_circuit azurerm_express_route_circuit}.
 type ExpressRouteCircuit interface {
 	cdktf.TerraformResource
 	AllowClassicOperations() interface{}
@@ -127,12 +127,22 @@ type ExpressRouteCircuit interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -627,7 +637,7 @@ func (j *jsiiProxy_ExpressRouteCircuit) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/express_route_circuit azurerm_express_route_circuit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/express_route_circuit azurerm_express_route_circuit} Resource.
 func NewExpressRouteCircuit(scope constructs.Construct, id *string, config *ExpressRouteCircuitConfig) ExpressRouteCircuit {
 	_init_.Initialize()
 
@@ -645,7 +655,7 @@ func NewExpressRouteCircuit(scope constructs.Construct, id *string, config *Expr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/express_route_circuit azurerm_express_route_circuit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/express_route_circuit azurerm_express_route_circuit} Resource.
 func NewExpressRouteCircuit_Override(e ExpressRouteCircuit, scope constructs.Construct, id *string, config *ExpressRouteCircuitConfig) {
 	_init_.Initialize()
 
@@ -1125,6 +1135,19 @@ func (e *jsiiProxy_ExpressRouteCircuit) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (e *jsiiProxy_ExpressRouteCircuit) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_ExpressRouteCircuit) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1152,6 +1175,17 @@ func (e *jsiiProxy_ExpressRouteCircuit) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (e *jsiiProxy_ExpressRouteCircuit) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_ExpressRouteCircuit) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1160,6 +1194,17 @@ func (e *jsiiProxy_ExpressRouteCircuit) MoveTo(moveTarget *string, index interfa
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_ExpressRouteCircuit) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority}.
 type ApiManagementGatewayCertificateAuthority interface {
 	cdktf.TerraformResource
 	ApiManagementId() *string
@@ -102,12 +102,22 @@ type ApiManagementGatewayCertificateAuthority interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -414,7 +424,7 @@ func (j *jsiiProxy_ApiManagementGatewayCertificateAuthority) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority} Resource.
 func NewApiManagementGatewayCertificateAuthority(scope constructs.Construct, id *string, config *ApiManagementGatewayCertificateAuthorityConfig) ApiManagementGatewayCertificateAuthority {
 	_init_.Initialize()
 
@@ -432,7 +442,7 @@ func NewApiManagementGatewayCertificateAuthority(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/api_management_gateway_certificate_authority azurerm_api_management_gateway_certificate_authority} Resource.
 func NewApiManagementGatewayCertificateAuthority_Override(a ApiManagementGatewayCertificateAuthority, scope constructs.Construct, id *string, config *ApiManagementGatewayCertificateAuthorityConfig) {
 	_init_.Initialize()
 
@@ -835,6 +845,19 @@ func (a *jsiiProxy_ApiManagementGatewayCertificateAuthority) GetStringMapAttribu
 	return returns
 }
 
+func (a *jsiiProxy_ApiManagementGatewayCertificateAuthority) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_ApiManagementGatewayCertificateAuthority) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -862,6 +885,17 @@ func (a *jsiiProxy_ApiManagementGatewayCertificateAuthority) InterpolationForAtt
 	return returns
 }
 
+func (a *jsiiProxy_ApiManagementGatewayCertificateAuthority) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_ApiManagementGatewayCertificateAuthority) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -870,6 +904,17 @@ func (a *jsiiProxy_ApiManagementGatewayCertificateAuthority) MoveTo(moveTarget *
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_ApiManagementGatewayCertificateAuthority) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

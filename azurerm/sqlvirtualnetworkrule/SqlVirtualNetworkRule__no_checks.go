@@ -59,7 +59,15 @@ func (s *jsiiProxy_SqlVirtualNetworkRule) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SqlVirtualNetworkRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlVirtualNetworkRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlVirtualNetworkRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

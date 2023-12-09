@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_packet_capture azurerm_network_packet_capture}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_packet_capture azurerm_network_packet_capture}.
 type NetworkPacketCapture interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -115,12 +115,22 @@ type NetworkPacketCapture interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -532,7 +542,7 @@ func (j *jsiiProxy_NetworkPacketCapture) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_packet_capture azurerm_network_packet_capture} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_packet_capture azurerm_network_packet_capture} Resource.
 func NewNetworkPacketCapture(scope constructs.Construct, id *string, config *NetworkPacketCaptureConfig) NetworkPacketCapture {
 	_init_.Initialize()
 
@@ -550,7 +560,7 @@ func NewNetworkPacketCapture(scope constructs.Construct, id *string, config *Net
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_packet_capture azurerm_network_packet_capture} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_packet_capture azurerm_network_packet_capture} Resource.
 func NewNetworkPacketCapture_Override(n NetworkPacketCapture, scope constructs.Construct, id *string, config *NetworkPacketCaptureConfig) {
 	_init_.Initialize()
 
@@ -986,6 +996,19 @@ func (n *jsiiProxy_NetworkPacketCapture) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (n *jsiiProxy_NetworkPacketCapture) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NetworkPacketCapture) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1013,6 +1036,17 @@ func (n *jsiiProxy_NetworkPacketCapture) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (n *jsiiProxy_NetworkPacketCapture) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NetworkPacketCapture) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1021,6 +1055,17 @@ func (n *jsiiProxy_NetworkPacketCapture) MoveTo(moveTarget *string, index interf
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NetworkPacketCapture) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

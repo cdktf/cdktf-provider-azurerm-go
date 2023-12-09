@@ -59,7 +59,15 @@ func (d *jsiiProxy_DigitalTwinsEndpointServicebus) validateInterpolationForAttri
 	return nil
 }
 
+func (d *jsiiProxy_DigitalTwinsEndpointServicebus) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DigitalTwinsEndpointServicebus) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DigitalTwinsEndpointServicebus) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

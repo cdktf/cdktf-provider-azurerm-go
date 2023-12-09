@@ -59,7 +59,15 @@ func (r *jsiiProxy_RedisFirewallRule) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (r *jsiiProxy_RedisFirewallRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisFirewallRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedisFirewallRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

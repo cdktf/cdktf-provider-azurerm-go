@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server}.
 type FluidRelayServer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -113,12 +113,22 @@ type FluidRelayServer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -528,7 +538,7 @@ func (j *jsiiProxy_FluidRelayServer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server} Resource.
 func NewFluidRelayServer(scope constructs.Construct, id *string, config *FluidRelayServerConfig) FluidRelayServer {
 	_init_.Initialize()
 
@@ -546,7 +556,7 @@ func NewFluidRelayServer(scope constructs.Construct, id *string, config *FluidRe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server} Resource.
 func NewFluidRelayServer_Override(f FluidRelayServer, scope constructs.Construct, id *string, config *FluidRelayServerConfig) {
 	_init_.Initialize()
 
@@ -960,6 +970,19 @@ func (f *jsiiProxy_FluidRelayServer) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
+func (f *jsiiProxy_FluidRelayServer) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		f,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (f *jsiiProxy_FluidRelayServer) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := f.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -987,6 +1010,17 @@ func (f *jsiiProxy_FluidRelayServer) InterpolationForAttribute(terraformAttribut
 	return returns
 }
 
+func (f *jsiiProxy_FluidRelayServer) MoveFromId(id *string) {
+	if err := f.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (f *jsiiProxy_FluidRelayServer) MoveTo(moveTarget *string, index interface{}) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -995,6 +1029,17 @@ func (f *jsiiProxy_FluidRelayServer) MoveTo(moveTarget *string, index interface{
 		f,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (f *jsiiProxy_FluidRelayServer) MoveToId(id *string) {
+	if err := f.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

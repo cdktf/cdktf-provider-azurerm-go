@@ -59,7 +59,15 @@ func (w *jsiiProxy_WindowsWebAppSlot) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (w *jsiiProxy_WindowsWebAppSlot) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsWebAppSlot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WindowsWebAppSlot) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_security_rule azurerm_network_security_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_security_rule azurerm_network_security_rule}.
 type NetworkSecurityRule interface {
 	cdktf.TerraformResource
 	Access() *string
@@ -144,12 +144,22 @@ type NetworkSecurityRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -746,7 +756,7 @@ func (j *jsiiProxy_NetworkSecurityRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_security_rule azurerm_network_security_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_security_rule azurerm_network_security_rule} Resource.
 func NewNetworkSecurityRule(scope constructs.Construct, id *string, config *NetworkSecurityRuleConfig) NetworkSecurityRule {
 	_init_.Initialize()
 
@@ -764,7 +774,7 @@ func NewNetworkSecurityRule(scope constructs.Construct, id *string, config *Netw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_security_rule azurerm_network_security_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_security_rule azurerm_network_security_rule} Resource.
 func NewNetworkSecurityRule_Override(n NetworkSecurityRule, scope constructs.Construct, id *string, config *NetworkSecurityRuleConfig) {
 	_init_.Initialize()
 
@@ -1321,6 +1331,19 @@ func (n *jsiiProxy_NetworkSecurityRule) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (n *jsiiProxy_NetworkSecurityRule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NetworkSecurityRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1348,6 +1371,17 @@ func (n *jsiiProxy_NetworkSecurityRule) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (n *jsiiProxy_NetworkSecurityRule) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NetworkSecurityRule) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1356,6 +1390,17 @@ func (n *jsiiProxy_NetworkSecurityRule) MoveTo(moveTarget *string, index interfa
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NetworkSecurityRule) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

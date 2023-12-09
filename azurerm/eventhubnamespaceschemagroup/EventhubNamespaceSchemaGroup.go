@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/eventhub_namespace_schema_group azurerm_eventhub_namespace_schema_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/eventhub_namespace_schema_group azurerm_eventhub_namespace_schema_group}.
 type EventhubNamespaceSchemaGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -102,12 +102,22 @@ type EventhubNamespaceSchemaGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -413,7 +423,7 @@ func (j *jsiiProxy_EventhubNamespaceSchemaGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/eventhub_namespace_schema_group azurerm_eventhub_namespace_schema_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/eventhub_namespace_schema_group azurerm_eventhub_namespace_schema_group} Resource.
 func NewEventhubNamespaceSchemaGroup(scope constructs.Construct, id *string, config *EventhubNamespaceSchemaGroupConfig) EventhubNamespaceSchemaGroup {
 	_init_.Initialize()
 
@@ -431,7 +441,7 @@ func NewEventhubNamespaceSchemaGroup(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/eventhub_namespace_schema_group azurerm_eventhub_namespace_schema_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/eventhub_namespace_schema_group azurerm_eventhub_namespace_schema_group} Resource.
 func NewEventhubNamespaceSchemaGroup_Override(e EventhubNamespaceSchemaGroup, scope constructs.Construct, id *string, config *EventhubNamespaceSchemaGroupConfig) {
 	_init_.Initialize()
 
@@ -834,6 +844,19 @@ func (e *jsiiProxy_EventhubNamespaceSchemaGroup) GetStringMapAttribute(terraform
 	return returns
 }
 
+func (e *jsiiProxy_EventhubNamespaceSchemaGroup) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_EventhubNamespaceSchemaGroup) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -861,6 +884,17 @@ func (e *jsiiProxy_EventhubNamespaceSchemaGroup) InterpolationForAttribute(terra
 	return returns
 }
 
+func (e *jsiiProxy_EventhubNamespaceSchemaGroup) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_EventhubNamespaceSchemaGroup) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -869,6 +903,17 @@ func (e *jsiiProxy_EventhubNamespaceSchemaGroup) MoveTo(moveTarget *string, inde
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_EventhubNamespaceSchemaGroup) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

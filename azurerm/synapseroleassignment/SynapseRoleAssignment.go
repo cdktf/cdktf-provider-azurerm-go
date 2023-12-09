@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment}.
 type SynapseRoleAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -51,6 +51,9 @@ type SynapseRoleAssignment interface {
 	PrincipalId() *string
 	SetPrincipalId(val *string)
 	PrincipalIdInput() *string
+	PrincipalType() *string
+	SetPrincipalType(val *string)
+	PrincipalTypeInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -102,12 +105,22 @@ type SynapseRoleAssignment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -116,6 +129,7 @@ type SynapseRoleAssignment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrincipalType()
 	ResetSynapseSparkPoolId()
 	ResetSynapseWorkspaceId()
 	ResetTimeouts()
@@ -274,6 +288,26 @@ func (j *jsiiProxy_SynapseRoleAssignment) PrincipalIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SynapseRoleAssignment) PrincipalType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principalType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SynapseRoleAssignment) PrincipalTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principalTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SynapseRoleAssignment) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -415,7 +449,7 @@ func (j *jsiiProxy_SynapseRoleAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment} Resource.
 func NewSynapseRoleAssignment(scope constructs.Construct, id *string, config *SynapseRoleAssignmentConfig) SynapseRoleAssignment {
 	_init_.Initialize()
 
@@ -433,7 +467,7 @@ func NewSynapseRoleAssignment(scope constructs.Construct, id *string, config *Sy
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment} Resource.
 func NewSynapseRoleAssignment_Override(s SynapseRoleAssignment, scope constructs.Construct, id *string, config *SynapseRoleAssignmentConfig) {
 	_init_.Initialize()
 
@@ -511,6 +545,17 @@ func (j *jsiiProxy_SynapseRoleAssignment)SetPrincipalId(val *string) {
 	_jsii_.Set(
 		j,
 		"principalId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SynapseRoleAssignment)SetPrincipalType(val *string) {
+	if err := j.validateSetPrincipalTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"principalType",
 		val,
 	)
 }
@@ -836,6 +881,19 @@ func (s *jsiiProxy_SynapseRoleAssignment) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (s *jsiiProxy_SynapseRoleAssignment) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_SynapseRoleAssignment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -863,6 +921,17 @@ func (s *jsiiProxy_SynapseRoleAssignment) InterpolationForAttribute(terraformAtt
 	return returns
 }
 
+func (s *jsiiProxy_SynapseRoleAssignment) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_SynapseRoleAssignment) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -871,6 +940,17 @@ func (s *jsiiProxy_SynapseRoleAssignment) MoveTo(moveTarget *string, index inter
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_SynapseRoleAssignment) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -908,6 +988,14 @@ func (s *jsiiProxy_SynapseRoleAssignment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SynapseRoleAssignment) ResetPrincipalType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPrincipalType",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/automation_watcher azurerm_automation_watcher}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/automation_watcher azurerm_automation_watcher}.
 type AutomationWatcher interface {
 	cdktf.TerraformResource
 	AutomationAccountId() *string
@@ -121,12 +121,22 @@ type AutomationWatcher interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -566,7 +576,7 @@ func (j *jsiiProxy_AutomationWatcher) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/automation_watcher azurerm_automation_watcher} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/automation_watcher azurerm_automation_watcher} Resource.
 func NewAutomationWatcher(scope constructs.Construct, id *string, config *AutomationWatcherConfig) AutomationWatcher {
 	_init_.Initialize()
 
@@ -584,7 +594,7 @@ func NewAutomationWatcher(scope constructs.Construct, id *string, config *Automa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/automation_watcher azurerm_automation_watcher} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/automation_watcher azurerm_automation_watcher} Resource.
 func NewAutomationWatcher_Override(a AutomationWatcher, scope constructs.Construct, id *string, config *AutomationWatcherConfig) {
 	_init_.Initialize()
 
@@ -1053,6 +1063,19 @@ func (a *jsiiProxy_AutomationWatcher) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (a *jsiiProxy_AutomationWatcher) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_AutomationWatcher) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1080,6 +1103,17 @@ func (a *jsiiProxy_AutomationWatcher) InterpolationForAttribute(terraformAttribu
 	return returns
 }
 
+func (a *jsiiProxy_AutomationWatcher) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_AutomationWatcher) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1088,6 +1122,17 @@ func (a *jsiiProxy_AutomationWatcher) MoveTo(moveTarget *string, index interface
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_AutomationWatcher) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

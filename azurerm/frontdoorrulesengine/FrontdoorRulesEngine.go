@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine}.
 type FrontdoorRulesEngine interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -105,12 +105,22 @@ type FrontdoorRulesEngine interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -449,7 +459,7 @@ func (j *jsiiProxy_FrontdoorRulesEngine) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine} Resource.
 func NewFrontdoorRulesEngine(scope constructs.Construct, id *string, config *FrontdoorRulesEngineConfig) FrontdoorRulesEngine {
 	_init_.Initialize()
 
@@ -467,7 +477,7 @@ func NewFrontdoorRulesEngine(scope constructs.Construct, id *string, config *Fro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine} Resource.
 func NewFrontdoorRulesEngine_Override(f FrontdoorRulesEngine, scope constructs.Construct, id *string, config *FrontdoorRulesEngineConfig) {
 	_init_.Initialize()
 
@@ -870,6 +880,19 @@ func (f *jsiiProxy_FrontdoorRulesEngine) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (f *jsiiProxy_FrontdoorRulesEngine) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		f,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (f *jsiiProxy_FrontdoorRulesEngine) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := f.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -897,6 +920,17 @@ func (f *jsiiProxy_FrontdoorRulesEngine) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (f *jsiiProxy_FrontdoorRulesEngine) MoveFromId(id *string) {
+	if err := f.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (f *jsiiProxy_FrontdoorRulesEngine) MoveTo(moveTarget *string, index interface{}) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -905,6 +939,17 @@ func (f *jsiiProxy_FrontdoorRulesEngine) MoveTo(moveTarget *string, index interf
 		f,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (f *jsiiProxy_FrontdoorRulesEngine) MoveToId(id *string) {
+	if err := f.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

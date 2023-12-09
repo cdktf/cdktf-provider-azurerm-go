@@ -59,7 +59,15 @@ func (s *jsiiProxy_SentinelAlertRuleMsSecurityIncident) validateInterpolationFor
 	return nil
 }
 
+func (s *jsiiProxy_SentinelAlertRuleMsSecurityIncident) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAlertRuleMsSecurityIncident) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelAlertRuleMsSecurityIncident) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

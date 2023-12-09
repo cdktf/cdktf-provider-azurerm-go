@@ -59,7 +59,15 @@ func (b *jsiiProxy_BatchPool) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (b *jsiiProxy_BatchPool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BatchPool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

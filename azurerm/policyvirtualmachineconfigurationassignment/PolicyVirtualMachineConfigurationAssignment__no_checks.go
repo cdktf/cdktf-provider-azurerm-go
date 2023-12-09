@@ -59,7 +59,15 @@ func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) validateInterpol
 	return nil
 }
 
+func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PolicyVirtualMachineConfigurationAssignment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

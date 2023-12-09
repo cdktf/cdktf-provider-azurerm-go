@@ -59,7 +59,15 @@ func (r *jsiiProxy_RouteServerBgpConnection) validateInterpolationForAttributePa
 	return nil
 }
 
+func (r *jsiiProxy_RouteServerBgpConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RouteServerBgpConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RouteServerBgpConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

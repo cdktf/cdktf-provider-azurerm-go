@@ -59,7 +59,15 @@ func (i *jsiiProxy_IothubSharedAccessPolicyA) validateInterpolationForAttributeP
 	return nil
 }
 
+func (i *jsiiProxy_IothubSharedAccessPolicyA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubSharedAccessPolicyA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IothubSharedAccessPolicyA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

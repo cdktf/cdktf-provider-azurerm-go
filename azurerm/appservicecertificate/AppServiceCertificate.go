@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/app_service_certificate azurerm_app_service_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/app_service_certificate azurerm_app_service_certificate}.
 type AppServiceCertificate interface {
 	cdktf.TerraformResource
 	AppServicePlanId() *string
@@ -122,12 +122,22 @@ type AppServiceCertificate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -598,7 +608,7 @@ func (j *jsiiProxy_AppServiceCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/app_service_certificate azurerm_app_service_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/app_service_certificate azurerm_app_service_certificate} Resource.
 func NewAppServiceCertificate(scope constructs.Construct, id *string, config *AppServiceCertificateConfig) AppServiceCertificate {
 	_init_.Initialize()
 
@@ -616,7 +626,7 @@ func NewAppServiceCertificate(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/app_service_certificate azurerm_app_service_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/app_service_certificate azurerm_app_service_certificate} Resource.
 func NewAppServiceCertificate_Override(a AppServiceCertificate, scope constructs.Construct, id *string, config *AppServiceCertificateConfig) {
 	_init_.Initialize()
 
@@ -1063,6 +1073,19 @@ func (a *jsiiProxy_AppServiceCertificate) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (a *jsiiProxy_AppServiceCertificate) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_AppServiceCertificate) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1090,6 +1113,17 @@ func (a *jsiiProxy_AppServiceCertificate) InterpolationForAttribute(terraformAtt
 	return returns
 }
 
+func (a *jsiiProxy_AppServiceCertificate) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_AppServiceCertificate) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1098,6 +1132,17 @@ func (a *jsiiProxy_AppServiceCertificate) MoveTo(moveTarget *string, index inter
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_AppServiceCertificate) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

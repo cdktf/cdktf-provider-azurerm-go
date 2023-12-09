@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/mssql_elasticpool azurerm_mssql_elasticpool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/mssql_elasticpool azurerm_mssql_elasticpool}.
 type DataAzurermMssqlElasticpool interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,7 @@ type DataAzurermMssqlElasticpool interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnclaveType() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -157,6 +158,16 @@ func (j *jsiiProxy_DataAzurermMssqlElasticpool) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMssqlElasticpool) EnclaveType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enclaveType",
 		&returns,
 	)
 	return returns
@@ -453,7 +464,7 @@ func (j *jsiiProxy_DataAzurermMssqlElasticpool) ZoneRedundant() cdktf.IResolvabl
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/mssql_elasticpool azurerm_mssql_elasticpool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/mssql_elasticpool azurerm_mssql_elasticpool} Data Source.
 func NewDataAzurermMssqlElasticpool(scope constructs.Construct, id *string, config *DataAzurermMssqlElasticpoolConfig) DataAzurermMssqlElasticpool {
 	_init_.Initialize()
 
@@ -471,7 +482,7 @@ func NewDataAzurermMssqlElasticpool(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/mssql_elasticpool azurerm_mssql_elasticpool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/mssql_elasticpool azurerm_mssql_elasticpool} Data Source.
 func NewDataAzurermMssqlElasticpool_Override(d DataAzurermMssqlElasticpool, scope constructs.Construct, id *string, config *DataAzurermMssqlElasticpoolConfig) {
 	_init_.Initialize()
 

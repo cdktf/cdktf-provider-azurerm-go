@@ -59,7 +59,15 @@ func (c *jsiiProxy_CdnFrontdoorRouteDisableLinkToDefaultDomain) validateInterpol
 	return nil
 }
 
+func (c *jsiiProxy_CdnFrontdoorRouteDisableLinkToDefaultDomain) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorRouteDisableLinkToDefaultDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CdnFrontdoorRouteDisableLinkToDefaultDomain) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataFactoryDatasetSnowflake) validateInterpolationForAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryDatasetSnowflake) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetSnowflake) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryDatasetSnowflake) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DatabricksWorkspaceCustomerManagedKey) validateInterpolationF
 	return nil
 }
 
+func (d *jsiiProxy_DatabricksWorkspaceCustomerManagedKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabricksWorkspaceCustomerManagedKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabricksWorkspaceCustomerManagedKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

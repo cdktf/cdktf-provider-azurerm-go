@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataAzurermFirewall) validateSetCountParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermFirewall) validateSetDnsProxyEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermFirewall) validateSetIdParameters(val *string) error {
 	return nil
 }

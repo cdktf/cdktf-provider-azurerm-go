@@ -59,7 +59,15 @@ func (l *jsiiProxy_LbNatPool) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (l *jsiiProxy_LbNatPool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbNatPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbNatPool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

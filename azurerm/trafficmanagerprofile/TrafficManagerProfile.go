@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/traffic_manager_profile azurerm_traffic_manager_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/traffic_manager_profile azurerm_traffic_manager_profile}.
 type TrafficManagerProfile interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -116,12 +116,22 @@ type TrafficManagerProfile interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -543,7 +553,7 @@ func (j *jsiiProxy_TrafficManagerProfile) TrafficViewEnabledInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/traffic_manager_profile azurerm_traffic_manager_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/traffic_manager_profile azurerm_traffic_manager_profile} Resource.
 func NewTrafficManagerProfile(scope constructs.Construct, id *string, config *TrafficManagerProfileConfig) TrafficManagerProfile {
 	_init_.Initialize()
 
@@ -561,7 +571,7 @@ func NewTrafficManagerProfile(scope constructs.Construct, id *string, config *Tr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/traffic_manager_profile azurerm_traffic_manager_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/traffic_manager_profile azurerm_traffic_manager_profile} Resource.
 func NewTrafficManagerProfile_Override(t TrafficManagerProfile, scope constructs.Construct, id *string, config *TrafficManagerProfileConfig) {
 	_init_.Initialize()
 
@@ -997,6 +1007,19 @@ func (t *jsiiProxy_TrafficManagerProfile) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (t *jsiiProxy_TrafficManagerProfile) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		t,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (t *jsiiProxy_TrafficManagerProfile) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := t.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1024,6 +1047,17 @@ func (t *jsiiProxy_TrafficManagerProfile) InterpolationForAttribute(terraformAtt
 	return returns
 }
 
+func (t *jsiiProxy_TrafficManagerProfile) MoveFromId(id *string) {
+	if err := t.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (t *jsiiProxy_TrafficManagerProfile) MoveTo(moveTarget *string, index interface{}) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1032,6 +1066,17 @@ func (t *jsiiProxy_TrafficManagerProfile) MoveTo(moveTarget *string, index inter
 		t,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (t *jsiiProxy_TrafficManagerProfile) MoveToId(id *string) {
+	if err := t.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

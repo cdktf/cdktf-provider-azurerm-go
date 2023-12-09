@@ -59,7 +59,15 @@ func (s *jsiiProxy_ServicebusNamespace) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_ServicebusNamespace) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicebusNamespace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicebusNamespace) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

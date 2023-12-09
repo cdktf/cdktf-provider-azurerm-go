@@ -59,7 +59,15 @@ func (r *jsiiProxy_RecoveryServicesVault) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (r *jsiiProxy_RecoveryServicesVault) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RecoveryServicesVault) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RecoveryServicesVault) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

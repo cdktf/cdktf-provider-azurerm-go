@@ -59,7 +59,15 @@ func (v *jsiiProxy_VirtualNetworkDnsServers) validateInterpolationForAttributePa
 	return nil
 }
 
+func (v *jsiiProxy_VirtualNetworkDnsServers) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetworkDnsServers) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualNetworkDnsServers) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

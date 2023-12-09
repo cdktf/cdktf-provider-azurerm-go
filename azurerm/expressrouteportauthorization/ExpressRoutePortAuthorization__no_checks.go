@@ -59,7 +59,15 @@ func (e *jsiiProxy_ExpressRoutePortAuthorization) validateInterpolationForAttrib
 	return nil
 }
 
+func (e *jsiiProxy_ExpressRoutePortAuthorization) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExpressRoutePortAuthorization) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ExpressRoutePortAuthorization) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

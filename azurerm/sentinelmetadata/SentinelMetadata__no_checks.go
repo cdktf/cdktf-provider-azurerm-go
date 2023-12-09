@@ -59,7 +59,15 @@ func (s *jsiiProxy_SentinelMetadata) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_SentinelMetadata) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelMetadata) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelMetadata) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

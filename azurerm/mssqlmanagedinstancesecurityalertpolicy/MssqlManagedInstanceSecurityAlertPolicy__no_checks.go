@@ -59,7 +59,15 @@ func (m *jsiiProxy_MssqlManagedInstanceSecurityAlertPolicy) validateInterpolatio
 	return nil
 }
 
+func (m *jsiiProxy_MssqlManagedInstanceSecurityAlertPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlManagedInstanceSecurityAlertPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlManagedInstanceSecurityAlertPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

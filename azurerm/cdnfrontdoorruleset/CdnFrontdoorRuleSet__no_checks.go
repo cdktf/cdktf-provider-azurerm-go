@@ -59,7 +59,15 @@ func (c *jsiiProxy_CdnFrontdoorRuleSet) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_CdnFrontdoorRuleSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorRuleSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CdnFrontdoorRuleSet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

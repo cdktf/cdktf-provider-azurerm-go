@@ -59,7 +59,15 @@ func (r *jsiiProxy_RedisCache) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (r *jsiiProxy_RedisCache) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisCache) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedisCache) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

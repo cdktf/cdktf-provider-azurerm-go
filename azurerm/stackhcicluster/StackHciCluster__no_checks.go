@@ -59,7 +59,15 @@ func (s *jsiiProxy_StackHciCluster) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (s *jsiiProxy_StackHciCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StackHciCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StackHciCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

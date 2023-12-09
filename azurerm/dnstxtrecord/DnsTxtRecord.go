@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/dns_txt_record azurerm_dns_txt_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/dns_txt_record azurerm_dns_txt_record}.
 type DnsTxtRecord interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -108,12 +108,22 @@ type DnsTxtRecord interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -471,7 +481,7 @@ func (j *jsiiProxy_DnsTxtRecord) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/dns_txt_record azurerm_dns_txt_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/dns_txt_record azurerm_dns_txt_record} Resource.
 func NewDnsTxtRecord(scope constructs.Construct, id *string, config *DnsTxtRecordConfig) DnsTxtRecord {
 	_init_.Initialize()
 
@@ -489,7 +499,7 @@ func NewDnsTxtRecord(scope constructs.Construct, id *string, config *DnsTxtRecor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/dns_txt_record azurerm_dns_txt_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/dns_txt_record azurerm_dns_txt_record} Resource.
 func NewDnsTxtRecord_Override(d DnsTxtRecord, scope constructs.Construct, id *string, config *DnsTxtRecordConfig) {
 	_init_.Initialize()
 
@@ -903,6 +913,19 @@ func (d *jsiiProxy_DnsTxtRecord) GetStringMapAttribute(terraformAttribute *strin
 	return returns
 }
 
+func (d *jsiiProxy_DnsTxtRecord) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DnsTxtRecord) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -930,6 +953,17 @@ func (d *jsiiProxy_DnsTxtRecord) InterpolationForAttribute(terraformAttribute *s
 	return returns
 }
 
+func (d *jsiiProxy_DnsTxtRecord) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DnsTxtRecord) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -938,6 +972,17 @@ func (d *jsiiProxy_DnsTxtRecord) MoveTo(moveTarget *string, index interface{}) {
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DnsTxtRecord) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

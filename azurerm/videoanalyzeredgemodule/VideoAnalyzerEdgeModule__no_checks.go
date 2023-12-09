@@ -59,7 +59,15 @@ func (v *jsiiProxy_VideoAnalyzerEdgeModule) validateInterpolationForAttributePar
 	return nil
 }
 
+func (v *jsiiProxy_VideoAnalyzerEdgeModule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VideoAnalyzerEdgeModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VideoAnalyzerEdgeModule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

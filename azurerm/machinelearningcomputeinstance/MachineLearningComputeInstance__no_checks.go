@@ -59,7 +59,15 @@ func (m *jsiiProxy_MachineLearningComputeInstance) validateInterpolationForAttri
 	return nil
 }
 
+func (m *jsiiProxy_MachineLearningComputeInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MachineLearningComputeInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MachineLearningComputeInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

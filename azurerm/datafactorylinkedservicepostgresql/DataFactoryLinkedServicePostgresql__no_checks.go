@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataFactoryLinkedServicePostgresql) validateInterpolationForA
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServicePostgresql) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServicePostgresql) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServicePostgresql) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (s *jsiiProxy_SynapsePrivateLinkHub) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SynapsePrivateLinkHub) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapsePrivateLinkHub) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SynapsePrivateLinkHub) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (c *jsiiProxy_CdnEndpointCustomDomain) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_CdnEndpointCustomDomain) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnEndpointCustomDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CdnEndpointCustomDomain) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

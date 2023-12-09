@@ -59,7 +59,15 @@ func (h *jsiiProxy_HpcCacheNfsTarget) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (h *jsiiProxy_HpcCacheNfsTarget) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HpcCacheNfsTarget) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HpcCacheNfsTarget) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

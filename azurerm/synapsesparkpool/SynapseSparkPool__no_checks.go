@@ -59,7 +59,15 @@ func (s *jsiiProxy_SynapseSparkPool) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_SynapseSparkPool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseSparkPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SynapseSparkPool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

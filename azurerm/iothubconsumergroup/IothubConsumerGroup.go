@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iothub_consumer_group azurerm_iothub_consumer_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iothub_consumer_group azurerm_iothub_consumer_group}.
 type IothubConsumerGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -102,12 +102,22 @@ type IothubConsumerGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -413,7 +423,7 @@ func (j *jsiiProxy_IothubConsumerGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iothub_consumer_group azurerm_iothub_consumer_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iothub_consumer_group azurerm_iothub_consumer_group} Resource.
 func NewIothubConsumerGroup(scope constructs.Construct, id *string, config *IothubConsumerGroupConfig) IothubConsumerGroup {
 	_init_.Initialize()
 
@@ -431,7 +441,7 @@ func NewIothubConsumerGroup(scope constructs.Construct, id *string, config *Ioth
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/iothub_consumer_group azurerm_iothub_consumer_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/iothub_consumer_group azurerm_iothub_consumer_group} Resource.
 func NewIothubConsumerGroup_Override(i IothubConsumerGroup, scope constructs.Construct, id *string, config *IothubConsumerGroupConfig) {
 	_init_.Initialize()
 
@@ -834,6 +844,19 @@ func (i *jsiiProxy_IothubConsumerGroup) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (i *jsiiProxy_IothubConsumerGroup) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IothubConsumerGroup) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -861,6 +884,17 @@ func (i *jsiiProxy_IothubConsumerGroup) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (i *jsiiProxy_IothubConsumerGroup) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IothubConsumerGroup) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -869,6 +903,17 @@ func (i *jsiiProxy_IothubConsumerGroup) MoveTo(moveTarget *string, index interfa
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IothubConsumerGroup) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

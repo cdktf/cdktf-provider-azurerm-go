@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule}.
 type DataFactoryTriggerSchedule interface {
 	cdktf.TerraformResource
 	Activated() interface{}
@@ -130,12 +130,22 @@ type DataFactoryTriggerSchedule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -655,7 +665,7 @@ func (j *jsiiProxy_DataFactoryTriggerSchedule) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule} Resource.
 func NewDataFactoryTriggerSchedule(scope constructs.Construct, id *string, config *DataFactoryTriggerScheduleConfig) DataFactoryTriggerSchedule {
 	_init_.Initialize()
 
@@ -673,7 +683,7 @@ func NewDataFactoryTriggerSchedule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule} Resource.
 func NewDataFactoryTriggerSchedule_Override(d DataFactoryTriggerSchedule, scope constructs.Construct, id *string, config *DataFactoryTriggerScheduleConfig) {
 	_init_.Initialize()
 
@@ -1164,6 +1174,19 @@ func (d *jsiiProxy_DataFactoryTriggerSchedule) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (d *jsiiProxy_DataFactoryTriggerSchedule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DataFactoryTriggerSchedule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1191,6 +1214,17 @@ func (d *jsiiProxy_DataFactoryTriggerSchedule) InterpolationForAttribute(terrafo
 	return returns
 }
 
+func (d *jsiiProxy_DataFactoryTriggerSchedule) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DataFactoryTriggerSchedule) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1199,6 +1233,17 @@ func (d *jsiiProxy_DataFactoryTriggerSchedule) MoveTo(moveTarget *string, index 
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DataFactoryTriggerSchedule) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (s *jsiiProxy_SynapseManagedPrivateEndpoint) validateInterpolationForAttrib
 	return nil
 }
 
+func (s *jsiiProxy_SynapseManagedPrivateEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SynapseManagedPrivateEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SynapseManagedPrivateEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

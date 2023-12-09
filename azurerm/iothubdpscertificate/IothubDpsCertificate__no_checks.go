@@ -59,7 +59,15 @@ func (i *jsiiProxy_IothubDpsCertificate) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (i *jsiiProxy_IothubDpsCertificate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubDpsCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IothubDpsCertificate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

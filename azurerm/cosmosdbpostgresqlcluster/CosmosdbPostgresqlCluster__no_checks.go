@@ -59,7 +59,15 @@ func (c *jsiiProxy_CosmosdbPostgresqlCluster) validateInterpolationForAttributeP
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbPostgresqlCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbPostgresqlCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CosmosdbPostgresqlCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

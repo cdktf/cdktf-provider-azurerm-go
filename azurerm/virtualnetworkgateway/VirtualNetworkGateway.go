@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/virtual_network_gateway azurerm_virtual_network_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/virtual_network_gateway azurerm_virtual_network_gateway}.
 type VirtualNetworkGateway interface {
 	cdktf.TerraformResource
 	ActiveActive() interface{}
 	SetActiveActive(val interface{})
 	ActiveActiveInput() interface{}
+	BgpRouteTranslationForNatEnabled() interface{}
+	SetBgpRouteTranslationForNatEnabled(val interface{})
+	BgpRouteTranslationForNatEnabledInput() interface{}
 	BgpSettings() VirtualNetworkGatewayBgpSettingsOutputReference
 	BgpSettingsInput() *VirtualNetworkGatewayBgpSettings
 	// Experimental.
@@ -41,6 +44,9 @@ type VirtualNetworkGateway interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DnsForwardingEnabled() interface{}
+	SetDnsForwardingEnabled(val interface{})
+	DnsForwardingEnabledInput() interface{}
 	EdgeZone() *string
 	SetEdgeZone(val *string)
 	EdgeZoneInput() *string
@@ -63,6 +69,9 @@ type VirtualNetworkGateway interface {
 	IdInput() *string
 	IpConfiguration() VirtualNetworkGatewayIpConfigurationList
 	IpConfigurationInput() interface{}
+	IpSecReplayProtectionEnabled() interface{}
+	SetIpSecReplayProtectionEnabled(val interface{})
+	IpSecReplayProtectionEnabledInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -75,6 +84,8 @@ type VirtualNetworkGateway interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PolicyGroup() VirtualNetworkGatewayPolicyGroupList
+	PolicyGroupInput() interface{}
 	PrivateIpAddressEnabled() interface{}
 	SetPrivateIpAddressEnabled(val interface{})
 	PrivateIpAddressEnabledInput() interface{}
@@ -88,6 +99,9 @@ type VirtualNetworkGateway interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RemoteVnetTrafficEnabled() interface{}
+	SetRemoteVnetTrafficEnabled(val interface{})
+	RemoteVnetTrafficEnabledInput() interface{}
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
@@ -108,6 +122,9 @@ type VirtualNetworkGateway interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	VirtualWanTrafficEnabled() interface{}
+	SetVirtualWanTrafficEnabled(val interface{})
+	VirtualWanTrafficEnabledInput() interface{}
 	VpnClientConfiguration() VirtualNetworkGatewayVpnClientConfigurationOutputReference
 	VpnClientConfigurationInput() *VirtualNetworkGatewayVpnClientConfiguration
 	VpnType() *string
@@ -137,34 +154,51 @@ type VirtualNetworkGateway interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBgpSettings(value *VirtualNetworkGatewayBgpSettings)
 	PutCustomRoute(value *VirtualNetworkGatewayCustomRoute)
 	PutIpConfiguration(value interface{})
+	PutPolicyGroup(value interface{})
 	PutTimeouts(value *VirtualNetworkGatewayTimeouts)
 	PutVpnClientConfiguration(value *VirtualNetworkGatewayVpnClientConfiguration)
 	ResetActiveActive()
+	ResetBgpRouteTranslationForNatEnabled()
 	ResetBgpSettings()
 	ResetCustomRoute()
 	ResetDefaultLocalNetworkGatewayId()
+	ResetDnsForwardingEnabled()
 	ResetEdgeZone()
 	ResetEnableBgp()
 	ResetGeneration()
 	ResetId()
+	ResetIpSecReplayProtectionEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicyGroup()
 	ResetPrivateIpAddressEnabled()
+	ResetRemoteVnetTrafficEnabled()
 	ResetTags()
 	ResetTimeouts()
+	ResetVirtualWanTrafficEnabled()
 	ResetVpnClientConfiguration()
 	ResetVpnType()
 	SynthesizeAttributes() *map[string]interface{}
@@ -197,6 +231,26 @@ func (j *jsiiProxy_VirtualNetworkGateway) ActiveActiveInput() interface{} {
 	_jsii_.Get(
 		j,
 		"activeActiveInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway) BgpRouteTranslationForNatEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bgpRouteTranslationForNatEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway) BgpRouteTranslationForNatEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bgpRouteTranslationForNatEnabledInput",
 		&returns,
 	)
 	return returns
@@ -307,6 +361,26 @@ func (j *jsiiProxy_VirtualNetworkGateway) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway) DnsForwardingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnsForwardingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway) DnsForwardingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnsForwardingEnabledInput",
 		&returns,
 	)
 	return returns
@@ -442,6 +516,26 @@ func (j *jsiiProxy_VirtualNetworkGateway) IpConfigurationInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VirtualNetworkGateway) IpSecReplayProtectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipSecReplayProtectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway) IpSecReplayProtectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipSecReplayProtectionEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualNetworkGateway) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -502,6 +596,26 @@ func (j *jsiiProxy_VirtualNetworkGateway) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_VirtualNetworkGateway) PolicyGroup() VirtualNetworkGatewayPolicyGroupList {
+	var returns VirtualNetworkGatewayPolicyGroupList
+	_jsii_.Get(
+		j,
+		"policyGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway) PolicyGroupInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"policyGroupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualNetworkGateway) PrivateIpAddressEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -547,6 +661,26 @@ func (j *jsiiProxy_VirtualNetworkGateway) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway) RemoteVnetTrafficEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"remoteVnetTrafficEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway) RemoteVnetTrafficEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"remoteVnetTrafficEnabledInput",
 		&returns,
 	)
 	return returns
@@ -682,6 +816,26 @@ func (j *jsiiProxy_VirtualNetworkGateway) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VirtualNetworkGateway) VirtualWanTrafficEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"virtualWanTrafficEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway) VirtualWanTrafficEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"virtualWanTrafficEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualNetworkGateway) VpnClientConfiguration() VirtualNetworkGatewayVpnClientConfigurationOutputReference {
 	var returns VirtualNetworkGatewayVpnClientConfigurationOutputReference
 	_jsii_.Get(
@@ -723,7 +877,7 @@ func (j *jsiiProxy_VirtualNetworkGateway) VpnTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/virtual_network_gateway azurerm_virtual_network_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/virtual_network_gateway azurerm_virtual_network_gateway} Resource.
 func NewVirtualNetworkGateway(scope constructs.Construct, id *string, config *VirtualNetworkGatewayConfig) VirtualNetworkGateway {
 	_init_.Initialize()
 
@@ -741,7 +895,7 @@ func NewVirtualNetworkGateway(scope constructs.Construct, id *string, config *Vi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/virtual_network_gateway azurerm_virtual_network_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/virtual_network_gateway azurerm_virtual_network_gateway} Resource.
 func NewVirtualNetworkGateway_Override(v VirtualNetworkGateway, scope constructs.Construct, id *string, config *VirtualNetworkGatewayConfig) {
 	_init_.Initialize()
 
@@ -759,6 +913,17 @@ func (j *jsiiProxy_VirtualNetworkGateway)SetActiveActive(val interface{}) {
 	_jsii_.Set(
 		j,
 		"activeActive",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway)SetBgpRouteTranslationForNatEnabled(val interface{}) {
+	if err := j.validateSetBgpRouteTranslationForNatEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bgpRouteTranslationForNatEnabled",
 		val,
 	)
 }
@@ -800,6 +965,17 @@ func (j *jsiiProxy_VirtualNetworkGateway)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway)SetDnsForwardingEnabled(val interface{}) {
+	if err := j.validateSetDnsForwardingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnsForwardingEnabled",
 		val,
 	)
 }
@@ -852,6 +1028,17 @@ func (j *jsiiProxy_VirtualNetworkGateway)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway)SetIpSecReplayProtectionEnabled(val interface{}) {
+	if err := j.validateSetIpSecReplayProtectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipSecReplayProtectionEnabled",
 		val,
 	)
 }
@@ -919,6 +1106,17 @@ func (j *jsiiProxy_VirtualNetworkGateway)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_VirtualNetworkGateway)SetRemoteVnetTrafficEnabled(val interface{}) {
+	if err := j.validateSetRemoteVnetTrafficEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"remoteVnetTrafficEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_VirtualNetworkGateway)SetResourceGroupName(val *string) {
 	if err := j.validateSetResourceGroupNameParameters(val); err != nil {
 		panic(err)
@@ -959,6 +1157,17 @@ func (j *jsiiProxy_VirtualNetworkGateway)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualNetworkGateway)SetVirtualWanTrafficEnabled(val interface{}) {
+	if err := j.validateSetVirtualWanTrafficEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"virtualWanTrafficEnabled",
 		val,
 	)
 }
@@ -1243,6 +1452,19 @@ func (v *jsiiProxy_VirtualNetworkGateway) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (v *jsiiProxy_VirtualNetworkGateway) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (v *jsiiProxy_VirtualNetworkGateway) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := v.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1270,6 +1492,17 @@ func (v *jsiiProxy_VirtualNetworkGateway) InterpolationForAttribute(terraformAtt
 	return returns
 }
 
+func (v *jsiiProxy_VirtualNetworkGateway) MoveFromId(id *string) {
+	if err := v.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (v *jsiiProxy_VirtualNetworkGateway) MoveTo(moveTarget *string, index interface{}) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1278,6 +1511,17 @@ func (v *jsiiProxy_VirtualNetworkGateway) MoveTo(moveTarget *string, index inter
 		v,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkGateway) MoveToId(id *string) {
+	if err := v.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -1325,6 +1569,17 @@ func (v *jsiiProxy_VirtualNetworkGateway) PutIpConfiguration(value interface{}) 
 	)
 }
 
+func (v *jsiiProxy_VirtualNetworkGateway) PutPolicyGroup(value interface{}) {
+	if err := v.validatePutPolicyGroupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putPolicyGroup",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VirtualNetworkGateway) PutTimeouts(value *VirtualNetworkGatewayTimeouts) {
 	if err := v.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1355,6 +1610,14 @@ func (v *jsiiProxy_VirtualNetworkGateway) ResetActiveActive() {
 	)
 }
 
+func (v *jsiiProxy_VirtualNetworkGateway) ResetBgpRouteTranslationForNatEnabled() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetBgpRouteTranslationForNatEnabled",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VirtualNetworkGateway) ResetBgpSettings() {
 	_jsii_.InvokeVoid(
 		v,
@@ -1375,6 +1638,14 @@ func (v *jsiiProxy_VirtualNetworkGateway) ResetDefaultLocalNetworkGatewayId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetDefaultLocalNetworkGatewayId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkGateway) ResetDnsForwardingEnabled() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetDnsForwardingEnabled",
 		nil, // no parameters
 	)
 }
@@ -1411,6 +1682,14 @@ func (v *jsiiProxy_VirtualNetworkGateway) ResetId() {
 	)
 }
 
+func (v *jsiiProxy_VirtualNetworkGateway) ResetIpSecReplayProtectionEnabled() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetIpSecReplayProtectionEnabled",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VirtualNetworkGateway) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
@@ -1419,10 +1698,26 @@ func (v *jsiiProxy_VirtualNetworkGateway) ResetOverrideLogicalId() {
 	)
 }
 
+func (v *jsiiProxy_VirtualNetworkGateway) ResetPolicyGroup() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPolicyGroup",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VirtualNetworkGateway) ResetPrivateIpAddressEnabled() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetPrivateIpAddressEnabled",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkGateway) ResetRemoteVnetTrafficEnabled() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRemoteVnetTrafficEnabled",
 		nil, // no parameters
 	)
 }
@@ -1439,6 +1734,14 @@ func (v *jsiiProxy_VirtualNetworkGateway) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkGateway) ResetVirtualWanTrafficEnabled() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetVirtualWanTrafficEnabled",
 		nil, // no parameters
 	)
 }

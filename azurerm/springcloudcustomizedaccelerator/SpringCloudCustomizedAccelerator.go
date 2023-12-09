@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/spring_cloud_customized_accelerator azurerm_spring_cloud_customized_accelerator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/spring_cloud_customized_accelerator azurerm_spring_cloud_customized_accelerator}.
 type SpringCloudCustomizedAccelerator interface {
 	cdktf.TerraformResource
 	AcceleratorTags() *[]*string
@@ -113,12 +113,22 @@ type SpringCloudCustomizedAccelerator interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -510,7 +520,7 @@ func (j *jsiiProxy_SpringCloudCustomizedAccelerator) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/spring_cloud_customized_accelerator azurerm_spring_cloud_customized_accelerator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/spring_cloud_customized_accelerator azurerm_spring_cloud_customized_accelerator} Resource.
 func NewSpringCloudCustomizedAccelerator(scope constructs.Construct, id *string, config *SpringCloudCustomizedAcceleratorConfig) SpringCloudCustomizedAccelerator {
 	_init_.Initialize()
 
@@ -528,7 +538,7 @@ func NewSpringCloudCustomizedAccelerator(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/spring_cloud_customized_accelerator azurerm_spring_cloud_customized_accelerator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/spring_cloud_customized_accelerator azurerm_spring_cloud_customized_accelerator} Resource.
 func NewSpringCloudCustomizedAccelerator_Override(s SpringCloudCustomizedAccelerator, scope constructs.Construct, id *string, config *SpringCloudCustomizedAcceleratorConfig) {
 	_init_.Initialize()
 
@@ -964,6 +974,19 @@ func (s *jsiiProxy_SpringCloudCustomizedAccelerator) GetStringMapAttribute(terra
 	return returns
 }
 
+func (s *jsiiProxy_SpringCloudCustomizedAccelerator) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_SpringCloudCustomizedAccelerator) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -991,6 +1014,17 @@ func (s *jsiiProxy_SpringCloudCustomizedAccelerator) InterpolationForAttribute(t
 	return returns
 }
 
+func (s *jsiiProxy_SpringCloudCustomizedAccelerator) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_SpringCloudCustomizedAccelerator) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -999,6 +1033,17 @@ func (s *jsiiProxy_SpringCloudCustomizedAccelerator) MoveTo(moveTarget *string, 
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_SpringCloudCustomizedAccelerator) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

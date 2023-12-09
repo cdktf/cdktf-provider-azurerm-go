@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_linked_service_key_vault azurerm_data_factory_linked_service_key_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/data_factory_linked_service_key_vault azurerm_data_factory_linked_service_key_vault}.
 type DataFactoryLinkedServiceKeyVault interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -114,12 +114,22 @@ type DataFactoryLinkedServiceKeyVault interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -510,7 +520,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceKeyVault) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_linked_service_key_vault azurerm_data_factory_linked_service_key_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/data_factory_linked_service_key_vault azurerm_data_factory_linked_service_key_vault} Resource.
 func NewDataFactoryLinkedServiceKeyVault(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceKeyVaultConfig) DataFactoryLinkedServiceKeyVault {
 	_init_.Initialize()
 
@@ -528,7 +538,7 @@ func NewDataFactoryLinkedServiceKeyVault(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/data_factory_linked_service_key_vault azurerm_data_factory_linked_service_key_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/data_factory_linked_service_key_vault azurerm_data_factory_linked_service_key_vault} Resource.
 func NewDataFactoryLinkedServiceKeyVault_Override(d DataFactoryLinkedServiceKeyVault, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceKeyVaultConfig) {
 	_init_.Initialize()
 
@@ -975,6 +985,19 @@ func (d *jsiiProxy_DataFactoryLinkedServiceKeyVault) GetStringMapAttribute(terra
 	return returns
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceKeyVault) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceKeyVault) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1002,6 +1025,17 @@ func (d *jsiiProxy_DataFactoryLinkedServiceKeyVault) InterpolationForAttribute(t
 	return returns
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceKeyVault) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceKeyVault) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1010,6 +1044,17 @@ func (d *jsiiProxy_DataFactoryLinkedServiceKeyVault) MoveTo(moveTarget *string, 
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceKeyVault) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

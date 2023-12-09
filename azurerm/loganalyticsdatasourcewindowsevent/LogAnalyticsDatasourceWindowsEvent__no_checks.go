@@ -59,7 +59,15 @@ func (l *jsiiProxy_LogAnalyticsDatasourceWindowsEvent) validateInterpolationForA
 	return nil
 }
 
+func (l *jsiiProxy_LogAnalyticsDatasourceWindowsEvent) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogAnalyticsDatasourceWindowsEvent) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogAnalyticsDatasourceWindowsEvent) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (s *jsiiProxy_SharedImageVersion) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (s *jsiiProxy_SharedImageVersion) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SharedImageVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SharedImageVersion) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

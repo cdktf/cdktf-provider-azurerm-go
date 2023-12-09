@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/bot_connection azurerm_bot_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/bot_connection azurerm_bot_connection}.
 type BotConnection interface {
 	cdktf.TerraformResource
 	BotName() *string
@@ -120,12 +120,22 @@ type BotConnection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -554,7 +564,7 @@ func (j *jsiiProxy_BotConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/bot_connection azurerm_bot_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/bot_connection azurerm_bot_connection} Resource.
 func NewBotConnection(scope constructs.Construct, id *string, config *BotConnectionConfig) BotConnection {
 	_init_.Initialize()
 
@@ -572,7 +582,7 @@ func NewBotConnection(scope constructs.Construct, id *string, config *BotConnect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/bot_connection azurerm_bot_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/bot_connection azurerm_bot_connection} Resource.
 func NewBotConnection_Override(b BotConnection, scope constructs.Construct, id *string, config *BotConnectionConfig) {
 	_init_.Initialize()
 
@@ -1041,6 +1051,19 @@ func (b *jsiiProxy_BotConnection) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (b *jsiiProxy_BotConnection) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (b *jsiiProxy_BotConnection) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := b.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1068,6 +1091,17 @@ func (b *jsiiProxy_BotConnection) InterpolationForAttribute(terraformAttribute *
 	return returns
 }
 
+func (b *jsiiProxy_BotConnection) MoveFromId(id *string) {
+	if err := b.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (b *jsiiProxy_BotConnection) MoveTo(moveTarget *string, index interface{}) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1076,6 +1110,17 @@ func (b *jsiiProxy_BotConnection) MoveTo(moveTarget *string, index interface{}) 
 		b,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (b *jsiiProxy_BotConnection) MoveToId(id *string) {
+	if err := b.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

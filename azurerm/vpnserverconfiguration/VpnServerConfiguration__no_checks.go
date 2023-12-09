@@ -59,7 +59,15 @@ func (v *jsiiProxy_VpnServerConfiguration) validateInterpolationForAttributePara
 	return nil
 }
 
+func (v *jsiiProxy_VpnServerConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnServerConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpnServerConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

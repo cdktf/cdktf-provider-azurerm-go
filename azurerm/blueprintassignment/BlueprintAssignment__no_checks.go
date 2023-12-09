@@ -59,7 +59,15 @@ func (b *jsiiProxy_BlueprintAssignment) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (b *jsiiProxy_BlueprintAssignment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BlueprintAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BlueprintAssignment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

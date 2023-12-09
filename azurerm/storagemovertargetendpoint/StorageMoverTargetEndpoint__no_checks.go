@@ -59,7 +59,15 @@ func (s *jsiiProxy_StorageMoverTargetEndpoint) validateInterpolationForAttribute
 	return nil
 }
 
+func (s *jsiiProxy_StorageMoverTargetEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageMoverTargetEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageMoverTargetEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

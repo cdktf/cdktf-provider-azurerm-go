@@ -59,7 +59,15 @@ func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) validateInterpolationFor
 	return nil
 }
 
+func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotcentralApplicationNetworkRuleSet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

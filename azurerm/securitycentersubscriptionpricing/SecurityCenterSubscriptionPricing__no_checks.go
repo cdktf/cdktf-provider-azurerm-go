@@ -59,7 +59,15 @@ func (s *jsiiProxy_SecurityCenterSubscriptionPricing) validateInterpolationForAt
 	return nil
 }
 
+func (s *jsiiProxy_SecurityCenterSubscriptionPricing) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityCenterSubscriptionPricing) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityCenterSubscriptionPricing) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

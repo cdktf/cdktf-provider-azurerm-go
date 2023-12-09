@@ -59,7 +59,15 @@ func (e *jsiiProxy_EventhubNamespace) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (e *jsiiProxy_EventhubNamespace) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventhubNamespace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EventhubNamespace) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

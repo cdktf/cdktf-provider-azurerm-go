@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_interface_security_group_association azurerm_network_interface_security_group_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_interface_security_group_association azurerm_network_interface_security_group_association}.
 type NetworkInterfaceSecurityGroupAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -96,12 +96,22 @@ type NetworkInterfaceSecurityGroupAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -367,7 +377,7 @@ func (j *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_interface_security_group_association azurerm_network_interface_security_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_interface_security_group_association azurerm_network_interface_security_group_association} Resource.
 func NewNetworkInterfaceSecurityGroupAssociation(scope constructs.Construct, id *string, config *NetworkInterfaceSecurityGroupAssociationConfig) NetworkInterfaceSecurityGroupAssociation {
 	_init_.Initialize()
 
@@ -385,7 +395,7 @@ func NewNetworkInterfaceSecurityGroupAssociation(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_interface_security_group_association azurerm_network_interface_security_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/network_interface_security_group_association azurerm_network_interface_security_group_association} Resource.
 func NewNetworkInterfaceSecurityGroupAssociation_Override(n NetworkInterfaceSecurityGroupAssociation, scope constructs.Construct, id *string, config *NetworkInterfaceSecurityGroupAssociationConfig) {
 	_init_.Initialize()
 
@@ -766,6 +776,19 @@ func (n *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) GetStringMapAttribu
 	return returns
 }
 
+func (n *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -793,6 +816,17 @@ func (n *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) InterpolationForAtt
 	return returns
 }
 
+func (n *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -801,6 +835,17 @@ func (n *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) MoveTo(moveTarget *
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

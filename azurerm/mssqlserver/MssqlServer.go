@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/mssql_server azurerm_mssql_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mssql_server azurerm_mssql_server}.
 type MssqlServer interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -135,12 +135,22 @@ type MssqlServer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -699,7 +709,7 @@ func (j *jsiiProxy_MssqlServer) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
 func NewMssqlServer(scope constructs.Construct, id *string, config *MssqlServerConfig) MssqlServer {
 	_init_.Initialize()
 
@@ -717,7 +727,7 @@ func NewMssqlServer(scope constructs.Construct, id *string, config *MssqlServerC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
 func NewMssqlServer_Override(m MssqlServer, scope constructs.Construct, id *string, config *MssqlServerConfig) {
 	_init_.Initialize()
 
@@ -1219,6 +1229,19 @@ func (m *jsiiProxy_MssqlServer) GetStringMapAttribute(terraformAttribute *string
 	return returns
 }
 
+func (m *jsiiProxy_MssqlServer) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (m *jsiiProxy_MssqlServer) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1246,6 +1269,17 @@ func (m *jsiiProxy_MssqlServer) InterpolationForAttribute(terraformAttribute *st
 	return returns
 }
 
+func (m *jsiiProxy_MssqlServer) MoveFromId(id *string) {
+	if err := m.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (m *jsiiProxy_MssqlServer) MoveTo(moveTarget *string, index interface{}) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1254,6 +1288,17 @@ func (m *jsiiProxy_MssqlServer) MoveTo(moveTarget *string, index interface{}) {
 		m,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (m *jsiiProxy_MssqlServer) MoveToId(id *string) {
+	if err := m.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

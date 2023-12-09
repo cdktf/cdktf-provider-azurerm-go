@@ -59,7 +59,15 @@ func (c *jsiiProxy_CostAnomalyAlert) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (c *jsiiProxy_CostAnomalyAlert) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CostAnomalyAlert) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CostAnomalyAlert) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

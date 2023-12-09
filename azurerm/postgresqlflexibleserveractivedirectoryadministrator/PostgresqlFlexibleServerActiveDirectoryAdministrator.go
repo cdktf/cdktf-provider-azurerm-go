@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/postgresql_flexible_server_active_directory_administrator azurerm_postgresql_flexible_server_active_directory_administrator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/postgresql_flexible_server_active_directory_administrator azurerm_postgresql_flexible_server_active_directory_administrator}.
 type PostgresqlFlexibleServerActiveDirectoryAdministrator interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -108,12 +108,22 @@ type PostgresqlFlexibleServerActiveDirectoryAdministrator interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -459,7 +469,7 @@ func (j *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) Timeout
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/postgresql_flexible_server_active_directory_administrator azurerm_postgresql_flexible_server_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/postgresql_flexible_server_active_directory_administrator azurerm_postgresql_flexible_server_active_directory_administrator} Resource.
 func NewPostgresqlFlexibleServerActiveDirectoryAdministrator(scope constructs.Construct, id *string, config *PostgresqlFlexibleServerActiveDirectoryAdministratorConfig) PostgresqlFlexibleServerActiveDirectoryAdministrator {
 	_init_.Initialize()
 
@@ -477,7 +487,7 @@ func NewPostgresqlFlexibleServerActiveDirectoryAdministrator(scope constructs.Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/postgresql_flexible_server_active_directory_administrator azurerm_postgresql_flexible_server_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/postgresql_flexible_server_active_directory_administrator azurerm_postgresql_flexible_server_active_directory_administrator} Resource.
 func NewPostgresqlFlexibleServerActiveDirectoryAdministrator_Override(p PostgresqlFlexibleServerActiveDirectoryAdministrator, scope constructs.Construct, id *string, config *PostgresqlFlexibleServerActiveDirectoryAdministratorConfig) {
 	_init_.Initialize()
 
@@ -902,6 +912,19 @@ func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) GetStri
 	return returns
 }
 
+func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -929,6 +952,17 @@ func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) Interpo
 	return returns
 }
 
+func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) MoveFromId(id *string) {
+	if err := p.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) MoveTo(moveTarget *string, index interface{}) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -937,6 +971,17 @@ func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) MoveTo(
 		p,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (p *jsiiProxy_PostgresqlFlexibleServerActiveDirectoryAdministrator) MoveToId(id *string) {
+	if err := p.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

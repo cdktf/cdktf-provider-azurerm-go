@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/machine_learning_datastore_datalake_gen2 azurerm_machine_learning_datastore_datalake_gen2}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/machine_learning_datastore_datalake_gen2 azurerm_machine_learning_datastore_datalake_gen2}.
 type MachineLearningDatastoreDatalakeGen2 interface {
 	cdktf.TerraformResource
 	AuthorityUrl() *string
@@ -121,12 +121,22 @@ type MachineLearningDatastoreDatalakeGen2 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -569,7 +579,7 @@ func (j *jsiiProxy_MachineLearningDatastoreDatalakeGen2) WorkspaceIdInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/machine_learning_datastore_datalake_gen2 azurerm_machine_learning_datastore_datalake_gen2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/machine_learning_datastore_datalake_gen2 azurerm_machine_learning_datastore_datalake_gen2} Resource.
 func NewMachineLearningDatastoreDatalakeGen2(scope constructs.Construct, id *string, config *MachineLearningDatastoreDatalakeGen2Config) MachineLearningDatastoreDatalakeGen2 {
 	_init_.Initialize()
 
@@ -587,7 +597,7 @@ func NewMachineLearningDatastoreDatalakeGen2(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/machine_learning_datastore_datalake_gen2 azurerm_machine_learning_datastore_datalake_gen2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/machine_learning_datastore_datalake_gen2 azurerm_machine_learning_datastore_datalake_gen2} Resource.
 func NewMachineLearningDatastoreDatalakeGen2_Override(m MachineLearningDatastoreDatalakeGen2, scope constructs.Construct, id *string, config *MachineLearningDatastoreDatalakeGen2Config) {
 	_init_.Initialize()
 
@@ -1056,6 +1066,19 @@ func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) GetStringMapAttribute(t
 	return returns
 }
 
+func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1083,6 +1106,17 @@ func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) InterpolationForAttribu
 	return returns
 }
 
+func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) MoveFromId(id *string) {
+	if err := m.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) MoveTo(moveTarget *string, index interface{}) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1091,6 +1125,17 @@ func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) MoveTo(moveTarget *stri
 		m,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (m *jsiiProxy_MachineLearningDatastoreDatalakeGen2) MoveToId(id *string) {
+	if err := m.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (m *jsiiProxy_MarketplaceAgreement) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (m *jsiiProxy_MarketplaceAgreement) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MarketplaceAgreement) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MarketplaceAgreement) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

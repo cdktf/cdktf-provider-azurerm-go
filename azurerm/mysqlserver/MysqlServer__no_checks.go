@@ -59,7 +59,15 @@ func (m *jsiiProxy_MysqlServer) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (m *jsiiProxy_MysqlServer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MysqlServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MysqlServer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

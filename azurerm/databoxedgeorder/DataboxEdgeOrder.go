@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/databox_edge_order azurerm_databox_edge_order}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/databox_edge_order azurerm_databox_edge_order}.
 type DataboxEdgeOrder interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -106,12 +106,22 @@ type DataboxEdgeOrder interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -479,7 +489,7 @@ func (j *jsiiProxy_DataboxEdgeOrder) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/databox_edge_order azurerm_databox_edge_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/databox_edge_order azurerm_databox_edge_order} Resource.
 func NewDataboxEdgeOrder(scope constructs.Construct, id *string, config *DataboxEdgeOrderConfig) DataboxEdgeOrder {
 	_init_.Initialize()
 
@@ -497,7 +507,7 @@ func NewDataboxEdgeOrder(scope constructs.Construct, id *string, config *Databox
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/databox_edge_order azurerm_databox_edge_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/databox_edge_order azurerm_databox_edge_order} Resource.
 func NewDataboxEdgeOrder_Override(d DataboxEdgeOrder, scope constructs.Construct, id *string, config *DataboxEdgeOrderConfig) {
 	_init_.Initialize()
 
@@ -878,6 +888,19 @@ func (d *jsiiProxy_DataboxEdgeOrder) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
+func (d *jsiiProxy_DataboxEdgeOrder) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DataboxEdgeOrder) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -905,6 +928,17 @@ func (d *jsiiProxy_DataboxEdgeOrder) InterpolationForAttribute(terraformAttribut
 	return returns
 }
 
+func (d *jsiiProxy_DataboxEdgeOrder) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DataboxEdgeOrder) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -913,6 +947,17 @@ func (d *jsiiProxy_DataboxEdgeOrder) MoveTo(moveTarget *string, index interface{
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DataboxEdgeOrder) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

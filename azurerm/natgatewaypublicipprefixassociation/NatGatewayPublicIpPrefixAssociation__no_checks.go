@@ -59,7 +59,15 @@ func (n *jsiiProxy_NatGatewayPublicIpPrefixAssociation) validateInterpolationFor
 	return nil
 }
 
+func (n *jsiiProxy_NatGatewayPublicIpPrefixAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NatGatewayPublicIpPrefixAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NatGatewayPublicIpPrefixAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

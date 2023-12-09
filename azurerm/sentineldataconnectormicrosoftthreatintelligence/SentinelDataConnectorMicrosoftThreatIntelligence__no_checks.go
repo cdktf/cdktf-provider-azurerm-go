@@ -59,7 +59,15 @@ func (s *jsiiProxy_SentinelDataConnectorMicrosoftThreatIntelligence) validateInt
 	return nil
 }
 
+func (s *jsiiProxy_SentinelDataConnectorMicrosoftThreatIntelligence) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelDataConnectorMicrosoftThreatIntelligence) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SentinelDataConnectorMicrosoftThreatIntelligence) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

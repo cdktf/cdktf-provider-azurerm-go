@@ -59,7 +59,15 @@ func (m *jsiiProxy_MssqlServerMicrosoftSupportAuditingPolicy) validateInterpolat
 	return nil
 }
 
+func (m *jsiiProxy_MssqlServerMicrosoftSupportAuditingPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlServerMicrosoftSupportAuditingPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MssqlServerMicrosoftSupportAuditingPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/security_center_auto_provisioning azurerm_security_center_auto_provisioning}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/security_center_auto_provisioning azurerm_security_center_auto_provisioning}.
 type SecurityCenterAutoProvisioning interface {
 	cdktf.TerraformResource
 	AutoProvision() *string
@@ -93,12 +93,22 @@ type SecurityCenterAutoProvisioning interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -344,7 +354,7 @@ func (j *jsiiProxy_SecurityCenterAutoProvisioning) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/security_center_auto_provisioning azurerm_security_center_auto_provisioning} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/security_center_auto_provisioning azurerm_security_center_auto_provisioning} Resource.
 func NewSecurityCenterAutoProvisioning(scope constructs.Construct, id *string, config *SecurityCenterAutoProvisioningConfig) SecurityCenterAutoProvisioning {
 	_init_.Initialize()
 
@@ -362,7 +372,7 @@ func NewSecurityCenterAutoProvisioning(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/security_center_auto_provisioning azurerm_security_center_auto_provisioning} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/security_center_auto_provisioning azurerm_security_center_auto_provisioning} Resource.
 func NewSecurityCenterAutoProvisioning_Override(s SecurityCenterAutoProvisioning, scope constructs.Construct, id *string, config *SecurityCenterAutoProvisioningConfig) {
 	_init_.Initialize()
 
@@ -732,6 +742,19 @@ func (s *jsiiProxy_SecurityCenterAutoProvisioning) GetStringMapAttribute(terrafo
 	return returns
 }
 
+func (s *jsiiProxy_SecurityCenterAutoProvisioning) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_SecurityCenterAutoProvisioning) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -759,6 +782,17 @@ func (s *jsiiProxy_SecurityCenterAutoProvisioning) InterpolationForAttribute(ter
 	return returns
 }
 
+func (s *jsiiProxy_SecurityCenterAutoProvisioning) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_SecurityCenterAutoProvisioning) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -767,6 +801,17 @@ func (s *jsiiProxy_SecurityCenterAutoProvisioning) MoveTo(moveTarget *string, in
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_SecurityCenterAutoProvisioning) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

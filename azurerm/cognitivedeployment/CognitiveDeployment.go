@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment}.
 type CognitiveDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -106,12 +106,22 @@ type CognitiveDeployment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -461,7 +471,7 @@ func (j *jsiiProxy_CognitiveDeployment) VersionUpgradeOptionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment} Resource.
 func NewCognitiveDeployment(scope constructs.Construct, id *string, config *CognitiveDeploymentConfig) CognitiveDeployment {
 	_init_.Initialize()
 
@@ -479,7 +489,7 @@ func NewCognitiveDeployment(scope constructs.Construct, id *string, config *Cogn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment} Resource.
 func NewCognitiveDeployment_Override(c CognitiveDeployment, scope constructs.Construct, id *string, config *CognitiveDeploymentConfig) {
 	_init_.Initialize()
 
@@ -882,6 +892,19 @@ func (c *jsiiProxy_CognitiveDeployment) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (c *jsiiProxy_CognitiveDeployment) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_CognitiveDeployment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -909,6 +932,17 @@ func (c *jsiiProxy_CognitiveDeployment) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (c *jsiiProxy_CognitiveDeployment) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_CognitiveDeployment) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -917,6 +951,17 @@ func (c *jsiiProxy_CognitiveDeployment) MoveTo(moveTarget *string, index interfa
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_CognitiveDeployment) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

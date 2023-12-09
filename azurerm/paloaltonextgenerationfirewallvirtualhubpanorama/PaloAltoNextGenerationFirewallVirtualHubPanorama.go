@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_panorama azurerm_palo_alto_next_generation_firewall_virtual_hub_panorama}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_panorama azurerm_palo_alto_next_generation_firewall_virtual_hub_panorama}.
 type PaloAltoNextGenerationFirewallVirtualHubPanorama interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -112,12 +112,22 @@ type PaloAltoNextGenerationFirewallVirtualHubPanorama interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -519,7 +529,7 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) TimeoutsInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_panorama azurerm_palo_alto_next_generation_firewall_virtual_hub_panorama} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_panorama azurerm_palo_alto_next_generation_firewall_virtual_hub_panorama} Resource.
 func NewPaloAltoNextGenerationFirewallVirtualHubPanorama(scope constructs.Construct, id *string, config *PaloAltoNextGenerationFirewallVirtualHubPanoramaConfig) PaloAltoNextGenerationFirewallVirtualHubPanorama {
 	_init_.Initialize()
 
@@ -537,7 +547,7 @@ func NewPaloAltoNextGenerationFirewallVirtualHubPanorama(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_panorama azurerm_palo_alto_next_generation_firewall_virtual_hub_panorama} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_panorama azurerm_palo_alto_next_generation_firewall_virtual_hub_panorama} Resource.
 func NewPaloAltoNextGenerationFirewallVirtualHubPanorama_Override(p PaloAltoNextGenerationFirewallVirtualHubPanorama, scope constructs.Construct, id *string, config *PaloAltoNextGenerationFirewallVirtualHubPanoramaConfig) {
 	_init_.Initialize()
 
@@ -951,6 +961,19 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) GetStringMa
 	return returns
 }
 
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -978,6 +1001,17 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) Interpolati
 	return returns
 }
 
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) MoveFromId(id *string) {
+	if err := p.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) MoveTo(moveTarget *string, index interface{}) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -986,6 +1020,17 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) MoveTo(move
 		p,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) MoveToId(id *string) {
+	if err := p.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

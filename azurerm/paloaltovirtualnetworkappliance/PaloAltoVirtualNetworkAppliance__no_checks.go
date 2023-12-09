@@ -59,7 +59,15 @@ func (p *jsiiProxy_PaloAltoVirtualNetworkAppliance) validateInterpolationForAttr
 	return nil
 }
 
+func (p *jsiiProxy_PaloAltoVirtualNetworkAppliance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PaloAltoVirtualNetworkAppliance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PaloAltoVirtualNetworkAppliance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
