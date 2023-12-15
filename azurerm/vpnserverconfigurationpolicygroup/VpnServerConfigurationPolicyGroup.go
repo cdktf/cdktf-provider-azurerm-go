@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/vpn_server_configuration_policy_group azurerm_vpn_server_configuration_policy_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/vpn_server_configuration_policy_group azurerm_vpn_server_configuration_policy_group}.
 type VpnServerConfigurationPolicyGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -448,7 +448,7 @@ func (j *jsiiProxy_VpnServerConfigurationPolicyGroup) VpnServerConfigurationIdIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/vpn_server_configuration_policy_group azurerm_vpn_server_configuration_policy_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/vpn_server_configuration_policy_group azurerm_vpn_server_configuration_policy_group} Resource.
 func NewVpnServerConfigurationPolicyGroup(scope constructs.Construct, id *string, config *VpnServerConfigurationPolicyGroupConfig) VpnServerConfigurationPolicyGroup {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewVpnServerConfigurationPolicyGroup(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/vpn_server_configuration_policy_group azurerm_vpn_server_configuration_policy_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/vpn_server_configuration_policy_group azurerm_vpn_server_configuration_policy_group} Resource.
 func NewVpnServerConfigurationPolicyGroup_Override(v VpnServerConfigurationPolicyGroup, scope constructs.Construct, id *string, config *VpnServerConfigurationPolicyGroupConfig) {
 	_init_.Initialize()
 

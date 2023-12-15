@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice}.
 type MobileNetworkSlice interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -471,7 +471,7 @@ func (j *jsiiProxy_MobileNetworkSlice) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice} Resource.
 func NewMobileNetworkSlice(scope constructs.Construct, id *string, config *MobileNetworkSliceConfig) MobileNetworkSlice {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewMobileNetworkSlice(scope constructs.Construct, id *string, config *Mobil
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice} Resource.
 func NewMobileNetworkSlice_Override(m MobileNetworkSlice, scope constructs.Construct, id *string, config *MobileNetworkSliceConfig) {
 	_init_.Initialize()
 

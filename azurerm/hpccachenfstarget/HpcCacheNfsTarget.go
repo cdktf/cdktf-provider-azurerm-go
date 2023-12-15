@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/hpc_cache_nfs_target azurerm_hpc_cache_nfs_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/hpc_cache_nfs_target azurerm_hpc_cache_nfs_target}.
 type HpcCacheNfsTarget interface {
 	cdktf.TerraformResource
 	CacheName() *string
@@ -83,6 +83,12 @@ type HpcCacheNfsTarget interface {
 	UsageModel() *string
 	SetUsageModel(val *string)
 	UsageModelInput() *string
+	VerificationTimerInSeconds() *float64
+	SetVerificationTimerInSeconds(val *float64)
+	VerificationTimerInSecondsInput() *float64
+	WriteBackTimerInSeconds() *float64
+	SetWriteBackTimerInSeconds(val *float64)
+	WriteBackTimerInSecondsInput() *float64
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -133,6 +139,8 @@ type HpcCacheNfsTarget interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
+	ResetVerificationTimerInSeconds()
+	ResetWriteBackTimerInSeconds()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -468,8 +476,48 @@ func (j *jsiiProxy_HpcCacheNfsTarget) UsageModelInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_HpcCacheNfsTarget) VerificationTimerInSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"verificationTimerInSeconds",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/hpc_cache_nfs_target azurerm_hpc_cache_nfs_target} Resource.
+func (j *jsiiProxy_HpcCacheNfsTarget) VerificationTimerInSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"verificationTimerInSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HpcCacheNfsTarget) WriteBackTimerInSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"writeBackTimerInSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HpcCacheNfsTarget) WriteBackTimerInSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"writeBackTimerInSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/hpc_cache_nfs_target azurerm_hpc_cache_nfs_target} Resource.
 func NewHpcCacheNfsTarget(scope constructs.Construct, id *string, config *HpcCacheNfsTargetConfig) HpcCacheNfsTarget {
 	_init_.Initialize()
 
@@ -487,7 +535,7 @@ func NewHpcCacheNfsTarget(scope constructs.Construct, id *string, config *HpcCac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/hpc_cache_nfs_target azurerm_hpc_cache_nfs_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/hpc_cache_nfs_target azurerm_hpc_cache_nfs_target} Resource.
 func NewHpcCacheNfsTarget_Override(h HpcCacheNfsTarget, scope constructs.Construct, id *string, config *HpcCacheNfsTargetConfig) {
 	_init_.Initialize()
 
@@ -628,6 +676,28 @@ func (j *jsiiProxy_HpcCacheNfsTarget)SetUsageModel(val *string) {
 	_jsii_.Set(
 		j,
 		"usageModel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HpcCacheNfsTarget)SetVerificationTimerInSeconds(val *float64) {
+	if err := j.validateSetVerificationTimerInSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"verificationTimerInSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HpcCacheNfsTarget)SetWriteBackTimerInSeconds(val *float64) {
+	if err := j.validateSetWriteBackTimerInSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"writeBackTimerInSeconds",
 		val,
 	)
 }
@@ -1027,6 +1097,22 @@ func (h *jsiiProxy_HpcCacheNfsTarget) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HpcCacheNfsTarget) ResetVerificationTimerInSeconds() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetVerificationTimerInSeconds",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HpcCacheNfsTarget) ResetWriteBackTimerInSeconds() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetWriteBackTimerInSeconds",
 		nil, // no parameters
 	)
 }

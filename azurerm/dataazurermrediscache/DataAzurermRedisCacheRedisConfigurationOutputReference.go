@@ -46,6 +46,7 @@ type DataAzurermRedisCacheRedisConfigurationOutputReference interface {
 	RdbBackupFrequency() *float64
 	RdbBackupMaxSnapshotCount() *float64
 	RdbStorageConnectionString() *string
+	StorageAccountSubscriptionId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -278,6 +279,16 @@ func (j *jsiiProxy_DataAzurermRedisCacheRedisConfigurationOutputReference) RdbSt
 	_jsii_.Get(
 		j,
 		"rdbStorageConnectionString",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermRedisCacheRedisConfigurationOutputReference) StorageAccountSubscriptionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageAccountSubscriptionId",
 		&returns,
 	)
 	return returns

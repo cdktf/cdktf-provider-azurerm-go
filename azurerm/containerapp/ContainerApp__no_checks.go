@@ -159,6 +159,10 @@ func (j *jsiiProxy_ContainerApp) validateSetTagsParameters(val *map[string]*stri
 	return nil
 }
 
+func (j *jsiiProxy_ContainerApp) validateSetWorkloadProfileNameParameters(val *string) error {
+	return nil
+}
+
 func validateNewContainerAppParameters(scope constructs.Construct, id *string, config *ContainerAppConfig) error {
 	return nil
 }

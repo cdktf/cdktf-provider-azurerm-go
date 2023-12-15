@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/cognitive_account azurerm_cognitive_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/cognitive_account azurerm_cognitive_account}.
 type DataAzurermCognitiveAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -38,6 +38,7 @@ type DataAzurermCognitiveAccount interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() DataAzurermCognitiveAccountIdentityList
 	IdInput() *string
 	Kind() *string
 	// Experimental.
@@ -206,6 +207,16 @@ func (j *jsiiProxy_DataAzurermCognitiveAccount) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermCognitiveAccount) Identity() DataAzurermCognitiveAccountIdentityList {
+	var returns DataAzurermCognitiveAccountIdentityList
+	_jsii_.Get(
+		j,
+		"identity",
 		&returns,
 	)
 	return returns
@@ -432,7 +443,7 @@ func (j *jsiiProxy_DataAzurermCognitiveAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/cognitive_account azurerm_cognitive_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/cognitive_account azurerm_cognitive_account} Data Source.
 func NewDataAzurermCognitiveAccount(scope constructs.Construct, id *string, config *DataAzurermCognitiveAccountConfig) DataAzurermCognitiveAccount {
 	_init_.Initialize()
 
@@ -450,7 +461,7 @@ func NewDataAzurermCognitiveAccount(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/cognitive_account azurerm_cognitive_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/cognitive_account azurerm_cognitive_account} Data Source.
 func NewDataAzurermCognitiveAccount_Override(d DataAzurermCognitiveAccount, scope constructs.Construct, id *string, config *DataAzurermCognitiveAccountConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/log_analytics_linked_service azurerm_log_analytics_linked_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/log_analytics_linked_service azurerm_log_analytics_linked_service}.
 type LogAnalyticsLinkedService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -436,7 +436,7 @@ func (j *jsiiProxy_LogAnalyticsLinkedService) WriteAccessIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/log_analytics_linked_service azurerm_log_analytics_linked_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/log_analytics_linked_service azurerm_log_analytics_linked_service} Resource.
 func NewLogAnalyticsLinkedService(scope constructs.Construct, id *string, config *LogAnalyticsLinkedServiceConfig) LogAnalyticsLinkedService {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewLogAnalyticsLinkedService(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/log_analytics_linked_service azurerm_log_analytics_linked_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/log_analytics_linked_service azurerm_log_analytics_linked_service} Resource.
 func NewLogAnalyticsLinkedService_Override(l LogAnalyticsLinkedService, scope constructs.Construct, id *string, config *LogAnalyticsLinkedServiceConfig) {
 	_init_.Initialize()
 

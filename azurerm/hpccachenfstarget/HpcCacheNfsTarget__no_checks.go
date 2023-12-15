@@ -139,6 +139,14 @@ func (j *jsiiProxy_HpcCacheNfsTarget) validateSetUsageModelParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_HpcCacheNfsTarget) validateSetVerificationTimerInSecondsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_HpcCacheNfsTarget) validateSetWriteBackTimerInSecondsParameters(val *float64) error {
+	return nil
+}
+
 func validateNewHpcCacheNfsTargetParameters(scope constructs.Construct, id *string, config *HpcCacheNfsTargetConfig) error {
 	return nil
 }

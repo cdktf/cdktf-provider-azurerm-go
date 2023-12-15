@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/netapp_snapshot_policy azurerm_netapp_snapshot_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/netapp_snapshot_policy azurerm_netapp_snapshot_policy}.
 type NetappSnapshotPolicy interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -566,7 +566,7 @@ func (j *jsiiProxy_NetappSnapshotPolicy) WeeklyScheduleInput() *NetappSnapshotPo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/netapp_snapshot_policy azurerm_netapp_snapshot_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/netapp_snapshot_policy azurerm_netapp_snapshot_policy} Resource.
 func NewNetappSnapshotPolicy(scope constructs.Construct, id *string, config *NetappSnapshotPolicyConfig) NetappSnapshotPolicy {
 	_init_.Initialize()
 
@@ -584,7 +584,7 @@ func NewNetappSnapshotPolicy(scope constructs.Construct, id *string, config *Net
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/netapp_snapshot_policy azurerm_netapp_snapshot_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/netapp_snapshot_policy azurerm_netapp_snapshot_policy} Resource.
 func NewNetappSnapshotPolicy_Override(n NetappSnapshotPolicy, scope constructs.Construct, id *string, config *NetappSnapshotPolicyConfig) {
 	_init_.Initialize()
 

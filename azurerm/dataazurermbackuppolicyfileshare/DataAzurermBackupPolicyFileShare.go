@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/backup_policy_file_share azurerm_backup_policy_file_share}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/backup_policy_file_share azurerm_backup_policy_file_share}.
 type DataAzurermBackupPolicyFileShare interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataAzurermBackupPolicyFileShare) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/backup_policy_file_share azurerm_backup_policy_file_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/backup_policy_file_share azurerm_backup_policy_file_share} Data Source.
 func NewDataAzurermBackupPolicyFileShare(scope constructs.Construct, id *string, config *DataAzurermBackupPolicyFileShareConfig) DataAzurermBackupPolicyFileShare {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataAzurermBackupPolicyFileShare(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/backup_policy_file_share azurerm_backup_policy_file_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/backup_policy_file_share azurerm_backup_policy_file_share} Data Source.
 func NewDataAzurermBackupPolicyFileShare_Override(d DataAzurermBackupPolicyFileShare, scope constructs.Construct, id *string, config *DataAzurermBackupPolicyFileShareConfig) {
 	_init_.Initialize()
 

@@ -127,6 +127,10 @@ func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetIdParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetImmediateDataPurgeOn30DaysEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetInternetIngestionEnabledParameters(val interface{}) error {
 	return nil
 }

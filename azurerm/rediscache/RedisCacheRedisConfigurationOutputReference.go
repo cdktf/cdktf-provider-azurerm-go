@@ -75,6 +75,9 @@ type RedisCacheRedisConfigurationOutputReference interface {
 	RdbStorageConnectionString() *string
 	SetRdbStorageConnectionString(val *string)
 	RdbStorageConnectionStringInput() *string
+	StorageAccountSubscriptionId() *string
+	SetStorageAccountSubscriptionId(val *string)
+	StorageAccountSubscriptionIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -121,6 +124,7 @@ type RedisCacheRedisConfigurationOutputReference interface {
 	ResetRdbBackupFrequency()
 	ResetRdbBackupMaxSnapshotCount()
 	ResetRdbStorageConnectionString()
+	ResetStorageAccountSubscriptionId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -476,6 +480,26 @@ func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) RdbStorageConnec
 	return returns
 }
 
+func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) StorageAccountSubscriptionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageAccountSubscriptionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) StorageAccountSubscriptionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageAccountSubscriptionIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -707,6 +731,17 @@ func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference)SetRdbStorageConn
 	_jsii_.Set(
 		j,
 		"rdbStorageConnectionString",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference)SetStorageAccountSubscriptionId(val *string) {
+	if err := j.validateSetStorageAccountSubscriptionIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageAccountSubscriptionId",
 		val,
 	)
 }
@@ -1027,6 +1062,14 @@ func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) ResetRdbStorageC
 	_jsii_.InvokeVoid(
 		r,
 		"resetRdbStorageConnectionString",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) ResetStorageAccountSubscriptionId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetStorageAccountSubscriptionId",
 		nil, // no parameters
 	)
 }

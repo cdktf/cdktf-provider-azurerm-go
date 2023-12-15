@@ -143,6 +143,14 @@ func (j *jsiiProxy_HpcCacheBlobNfsTarget) validateSetUsageModelParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_HpcCacheBlobNfsTarget) validateSetVerificationTimerInSecondsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_HpcCacheBlobNfsTarget) validateSetWriteBackTimerInSecondsParameters(val *float64) error {
+	return nil
+}
+
 func validateNewHpcCacheBlobNfsTargetParameters(scope constructs.Construct, id *string, config *HpcCacheBlobNfsTargetConfig) error {
 	return nil
 }

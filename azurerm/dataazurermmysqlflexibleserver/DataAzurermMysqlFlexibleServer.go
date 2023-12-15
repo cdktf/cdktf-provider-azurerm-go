@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/mysql_flexible_server azurerm_mysql_flexible_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/mysql_flexible_server azurerm_mysql_flexible_server}.
 type DataAzurermMysqlFlexibleServer interface {
 	cdktf.TerraformDataSource
 	AdministratorLogin() *string
@@ -529,7 +529,7 @@ func (j *jsiiProxy_DataAzurermMysqlFlexibleServer) Zone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/mysql_flexible_server azurerm_mysql_flexible_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/mysql_flexible_server azurerm_mysql_flexible_server} Data Source.
 func NewDataAzurermMysqlFlexibleServer(scope constructs.Construct, id *string, config *DataAzurermMysqlFlexibleServerConfig) DataAzurermMysqlFlexibleServer {
 	_init_.Initialize()
 
@@ -547,7 +547,7 @@ func NewDataAzurermMysqlFlexibleServer(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/mysql_flexible_server azurerm_mysql_flexible_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/mysql_flexible_server azurerm_mysql_flexible_server} Data Source.
 func NewDataAzurermMysqlFlexibleServer_Override(d DataAzurermMysqlFlexibleServer, scope constructs.Construct, id *string, config *DataAzurermMysqlFlexibleServerConfig) {
 	_init_.Initialize()
 

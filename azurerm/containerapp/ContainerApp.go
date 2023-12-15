@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/container_app azurerm_container_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/container_app azurerm_container_app}.
 type ContainerApp interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -98,6 +98,9 @@ type ContainerApp interface {
 	TerraformResourceType() *string
 	Timeouts() ContainerAppTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	WorkloadProfileName() *string
+	SetWorkloadProfileName(val *string)
+	WorkloadProfileNameInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -159,6 +162,7 @@ type ContainerApp interface {
 	ResetSecret()
 	ResetTags()
 	ResetTimeouts()
+	ResetWorkloadProfileName()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -644,8 +648,28 @@ func (j *jsiiProxy_ContainerApp) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerApp) WorkloadProfileName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workloadProfileName",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/container_app azurerm_container_app} Resource.
+func (j *jsiiProxy_ContainerApp) WorkloadProfileNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workloadProfileNameInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/container_app azurerm_container_app} Resource.
 func NewContainerApp(scope constructs.Construct, id *string, config *ContainerAppConfig) ContainerApp {
 	_init_.Initialize()
 
@@ -663,7 +687,7 @@ func NewContainerApp(scope constructs.Construct, id *string, config *ContainerAp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/container_app azurerm_container_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/container_app azurerm_container_app} Resource.
 func NewContainerApp_Override(c ContainerApp, scope constructs.Construct, id *string, config *ContainerAppConfig) {
 	_init_.Initialize()
 
@@ -804,6 +828,17 @@ func (j *jsiiProxy_ContainerApp)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerApp)SetWorkloadProfileName(val *string) {
+	if err := j.validateSetWorkloadProfileNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workloadProfileName",
 		val,
 	)
 }
@@ -1306,6 +1341,14 @@ func (c *jsiiProxy_ContainerApp) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerApp) ResetWorkloadProfileName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWorkloadProfileName",
 		nil, // no parameters
 	)
 }

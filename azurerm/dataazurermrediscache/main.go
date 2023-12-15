@@ -206,6 +206,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rdbBackupMaxSnapshotCount", GoGetter: "RdbBackupMaxSnapshotCount"},
 			_jsii_.MemberProperty{JsiiProperty: "rdbStorageConnectionString", GoGetter: "RdbStorageConnectionString"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "storageAccountSubscriptionId", GoGetter: "StorageAccountSubscriptionId"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

@@ -58,6 +58,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVerificationTimerInSeconds", GoMethod: "ResetVerificationTimerInSeconds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWriteBackTimerInSeconds", GoMethod: "ResetWriteBackTimerInSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -73,6 +75,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "usageModel", GoGetter: "UsageModel"},
 			_jsii_.MemberProperty{JsiiProperty: "usageModelInput", GoGetter: "UsageModelInput"},
+			_jsii_.MemberProperty{JsiiProperty: "verificationTimerInSeconds", GoGetter: "VerificationTimerInSeconds"},
+			_jsii_.MemberProperty{JsiiProperty: "verificationTimerInSecondsInput", GoGetter: "VerificationTimerInSecondsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "writeBackTimerInSeconds", GoGetter: "WriteBackTimerInSeconds"},
+			_jsii_.MemberProperty{JsiiProperty: "writeBackTimerInSecondsInput", GoGetter: "WriteBackTimerInSecondsInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_HpcCacheNfsTarget{}

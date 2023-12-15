@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/sql_managed_database azurerm_sql_managed_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/sql_managed_database azurerm_sql_managed_database}.
 type SqlManagedDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -400,7 +400,7 @@ func (j *jsiiProxy_SqlManagedDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/sql_managed_database azurerm_sql_managed_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/sql_managed_database azurerm_sql_managed_database} Resource.
 func NewSqlManagedDatabase(scope constructs.Construct, id *string, config *SqlManagedDatabaseConfig) SqlManagedDatabase {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewSqlManagedDatabase(scope constructs.Construct, id *string, config *SqlMa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/sql_managed_database azurerm_sql_managed_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/sql_managed_database azurerm_sql_managed_database} Resource.
 func NewSqlManagedDatabase_Override(s SqlManagedDatabase, scope constructs.Construct, id *string, config *SqlManagedDatabaseConfig) {
 	_init_.Initialize()
 

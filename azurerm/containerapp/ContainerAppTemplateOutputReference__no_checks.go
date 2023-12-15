@@ -63,6 +63,10 @@ func (c *jsiiProxy_ContainerAppTemplateOutputReference) validatePutHttpScaleRule
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) validatePutInitContainerParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAppTemplateOutputReference) validatePutTcpScaleRuleParameters(value interface{}) error {
 	return nil
 }

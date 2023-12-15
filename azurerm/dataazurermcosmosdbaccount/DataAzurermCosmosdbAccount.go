@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/cosmosdb_account azurerm_cosmosdb_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/cosmosdb_account azurerm_cosmosdb_account}.
 type DataAzurermCosmosdbAccount interface {
 	cdktf.TerraformDataSource
 	Capabilities() DataAzurermCosmosdbAccountCapabilitiesList
@@ -661,7 +661,7 @@ func (j *jsiiProxy_DataAzurermCosmosdbAccount) WriteEndpoints() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/cosmosdb_account azurerm_cosmosdb_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/cosmosdb_account azurerm_cosmosdb_account} Data Source.
 func NewDataAzurermCosmosdbAccount(scope constructs.Construct, id *string, config *DataAzurermCosmosdbAccountConfig) DataAzurermCosmosdbAccount {
 	_init_.Initialize()
 
@@ -679,7 +679,7 @@ func NewDataAzurermCosmosdbAccount(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/cosmosdb_account azurerm_cosmosdb_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/cosmosdb_account azurerm_cosmosdb_account} Data Source.
 func NewDataAzurermCosmosdbAccount_Override(d DataAzurermCosmosdbAccount, scope constructs.Construct, id *string, config *DataAzurermCosmosdbAccountConfig) {
 	_init_.Initialize()
 

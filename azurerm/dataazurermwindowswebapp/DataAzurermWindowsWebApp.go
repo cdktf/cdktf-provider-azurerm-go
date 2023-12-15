@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/windows_web_app azurerm_windows_web_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/windows_web_app azurerm_windows_web_app}.
 type DataAzurermWindowsWebApp interface {
 	cdktf.TerraformDataSource
 	AppSettings() cdktf.StringMap
@@ -683,7 +683,7 @@ func (j *jsiiProxy_DataAzurermWindowsWebApp) WebdeployPublishBasicAuthentication
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/windows_web_app azurerm_windows_web_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/windows_web_app azurerm_windows_web_app} Data Source.
 func NewDataAzurermWindowsWebApp(scope constructs.Construct, id *string, config *DataAzurermWindowsWebAppConfig) DataAzurermWindowsWebApp {
 	_init_.Initialize()
 
@@ -701,7 +701,7 @@ func NewDataAzurermWindowsWebApp(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/windows_web_app azurerm_windows_web_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/windows_web_app azurerm_windows_web_app} Data Source.
 func NewDataAzurermWindowsWebApp_Override(d DataAzurermWindowsWebApp, scope constructs.Construct, id *string, config *DataAzurermWindowsWebAppConfig) {
 	_init_.Initialize()
 

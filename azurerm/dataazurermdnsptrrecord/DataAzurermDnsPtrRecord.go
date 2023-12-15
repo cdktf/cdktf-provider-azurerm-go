@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/dns_ptr_record azurerm_dns_ptr_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/dns_ptr_record azurerm_dns_ptr_record}.
 type DataAzurermDnsPtrRecord interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -398,7 +398,7 @@ func (j *jsiiProxy_DataAzurermDnsPtrRecord) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/dns_ptr_record azurerm_dns_ptr_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/dns_ptr_record azurerm_dns_ptr_record} Data Source.
 func NewDataAzurermDnsPtrRecord(scope constructs.Construct, id *string, config *DataAzurermDnsPtrRecordConfig) DataAzurermDnsPtrRecord {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewDataAzurermDnsPtrRecord(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/dns_ptr_record azurerm_dns_ptr_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/dns_ptr_record azurerm_dns_ptr_record} Data Source.
 func NewDataAzurermDnsPtrRecord_Override(d DataAzurermDnsPtrRecord, scope constructs.Construct, id *string, config *DataAzurermDnsPtrRecordConfig) {
 	_init_.Initialize()
 

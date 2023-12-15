@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/security_center_automation azurerm_security_center_automation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/security_center_automation azurerm_security_center_automation}.
 type SecurityCenterAutomation interface {
 	cdktf.TerraformResource
 	Action() SecurityCenterAutomationActionList
@@ -541,7 +541,7 @@ func (j *jsiiProxy_SecurityCenterAutomation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/security_center_automation azurerm_security_center_automation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/security_center_automation azurerm_security_center_automation} Resource.
 func NewSecurityCenterAutomation(scope constructs.Construct, id *string, config *SecurityCenterAutomationConfig) SecurityCenterAutomation {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewSecurityCenterAutomation(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/security_center_automation azurerm_security_center_automation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/security_center_automation azurerm_security_center_automation} Resource.
 func NewSecurityCenterAutomation_Override(s SecurityCenterAutomation, scope constructs.Construct, id *string, config *SecurityCenterAutomationConfig) {
 	_init_.Initialize()
 

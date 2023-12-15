@@ -34,6 +34,7 @@ type DataAzurermContainerAppTemplateOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	HttpScaleRule() DataAzurermContainerAppTemplateHttpScaleRuleList
+	InitContainer() DataAzurermContainerAppTemplateInitContainerList
 	InternalValue() *DataAzurermContainerAppTemplate
 	SetInternalValue(val *DataAzurermContainerAppTemplate)
 	MaxReplicas() *float64
@@ -163,6 +164,16 @@ func (j *jsiiProxy_DataAzurermContainerAppTemplateOutputReference) HttpScaleRule
 	_jsii_.Get(
 		j,
 		"httpScaleRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermContainerAppTemplateOutputReference) InitContainer() DataAzurermContainerAppTemplateInitContainerList {
+	var returns DataAzurermContainerAppTemplateInitContainerList
+	_jsii_.Get(
+		j,
+		"initContainer",
 		&returns,
 	)
 	return returns

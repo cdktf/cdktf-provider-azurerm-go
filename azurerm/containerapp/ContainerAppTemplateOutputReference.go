@@ -38,6 +38,8 @@ type ContainerAppTemplateOutputReference interface {
 	Fqn() *string
 	HttpScaleRule() ContainerAppTemplateHttpScaleRuleList
 	HttpScaleRuleInput() interface{}
+	InitContainer() ContainerAppTemplateInitContainerList
+	InitContainerInput() interface{}
 	InternalValue() *ContainerAppTemplate
 	SetInternalValue(val *ContainerAppTemplate)
 	MaxReplicas() *float64
@@ -89,11 +91,13 @@ type ContainerAppTemplateOutputReference interface {
 	PutContainer(value interface{})
 	PutCustomScaleRule(value interface{})
 	PutHttpScaleRule(value interface{})
+	PutInitContainer(value interface{})
 	PutTcpScaleRule(value interface{})
 	PutVolume(value interface{})
 	ResetAzureQueueScaleRule()
 	ResetCustomScaleRule()
 	ResetHttpScaleRule()
+	ResetInitContainer()
 	ResetMaxReplicas()
 	ResetMinReplicas()
 	ResetRevisionSuffix()
@@ -229,6 +233,26 @@ func (j *jsiiProxy_ContainerAppTemplateOutputReference) HttpScaleRuleInput() int
 	_jsii_.Get(
 		j,
 		"httpScaleRuleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) InitContainer() ContainerAppTemplateInitContainerList {
+	var returns ContainerAppTemplateInitContainerList
+	_jsii_.Get(
+		j,
+		"initContainer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) InitContainerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"initContainerInput",
 		&returns,
 	)
 	return returns
@@ -710,6 +734,17 @@ func (c *jsiiProxy_ContainerAppTemplateOutputReference) PutHttpScaleRule(value i
 	)
 }
 
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) PutInitContainer(value interface{}) {
+	if err := c.validatePutInitContainerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putInitContainer",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerAppTemplateOutputReference) PutTcpScaleRule(value interface{}) {
 	if err := c.validatePutTcpScaleRuleParameters(value); err != nil {
 		panic(err)
@@ -752,6 +787,14 @@ func (c *jsiiProxy_ContainerAppTemplateOutputReference) ResetHttpScaleRule() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetHttpScaleRule",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) ResetInitContainer() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInitContainer",
 		nil, // no parameters
 	)
 }

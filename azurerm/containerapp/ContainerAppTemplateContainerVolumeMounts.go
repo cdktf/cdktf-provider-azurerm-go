@@ -7,11 +7,11 @@ package containerapp
 type ContainerAppTemplateContainerVolumeMounts struct {
 	// The name of the Volume to be mounted in the container.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/container_app#name ContainerApp#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/container_app#name ContainerApp#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The path in the container at which to mount this volume.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/container_app#path ContainerApp#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/container_app#path ContainerApp#path}
 	Path *string `field:"required" json:"path" yaml:"path"`
 }
 

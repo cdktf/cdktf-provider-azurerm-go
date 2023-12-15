@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/cdn_frontdoor_endpoint azurerm_cdn_frontdoor_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/cdn_frontdoor_endpoint azurerm_cdn_frontdoor_endpoint}.
 type DataAzurermCdnFrontdoorEndpoint interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -387,7 +387,7 @@ func (j *jsiiProxy_DataAzurermCdnFrontdoorEndpoint) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/cdn_frontdoor_endpoint azurerm_cdn_frontdoor_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/cdn_frontdoor_endpoint azurerm_cdn_frontdoor_endpoint} Data Source.
 func NewDataAzurermCdnFrontdoorEndpoint(scope constructs.Construct, id *string, config *DataAzurermCdnFrontdoorEndpointConfig) DataAzurermCdnFrontdoorEndpoint {
 	_init_.Initialize()
 
@@ -405,7 +405,7 @@ func NewDataAzurermCdnFrontdoorEndpoint(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/data-sources/cdn_frontdoor_endpoint azurerm_cdn_frontdoor_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/cdn_frontdoor_endpoint azurerm_cdn_frontdoor_endpoint} Data Source.
 func NewDataAzurermCdnFrontdoorEndpoint_Override(d DataAzurermCdnFrontdoorEndpoint, scope constructs.Construct, id *string, config *DataAzurermCdnFrontdoorEndpointConfig) {
 	_init_.Initialize()
 

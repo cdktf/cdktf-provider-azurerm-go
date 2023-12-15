@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/stream_analytics_job_schedule azurerm_stream_analytics_job_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/stream_analytics_job_schedule azurerm_stream_analytics_job_schedule}.
 type StreamAnalyticsJobSchedule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_StreamAnalyticsJobSchedule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/stream_analytics_job_schedule azurerm_stream_analytics_job_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/stream_analytics_job_schedule azurerm_stream_analytics_job_schedule} Resource.
 func NewStreamAnalyticsJobSchedule(scope constructs.Construct, id *string, config *StreamAnalyticsJobScheduleConfig) StreamAnalyticsJobSchedule {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewStreamAnalyticsJobSchedule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/stream_analytics_job_schedule azurerm_stream_analytics_job_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/stream_analytics_job_schedule azurerm_stream_analytics_job_schedule} Resource.
 func NewStreamAnalyticsJobSchedule_Override(s StreamAnalyticsJobSchedule, scope constructs.Construct, id *string, config *StreamAnalyticsJobScheduleConfig) {
 	_init_.Initialize()
 

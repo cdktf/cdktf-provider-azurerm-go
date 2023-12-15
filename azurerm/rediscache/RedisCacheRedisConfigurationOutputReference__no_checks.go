@@ -119,6 +119,10 @@ func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) validateSetRdbSt
 	return nil
 }
 
+func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) validateSetStorageAccountSubscriptionIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

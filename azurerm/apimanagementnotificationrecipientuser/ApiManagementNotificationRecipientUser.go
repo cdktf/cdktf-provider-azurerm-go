@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/api_management_notification_recipient_user azurerm_api_management_notification_recipient_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/api_management_notification_recipient_user azurerm_api_management_notification_recipient_user}.
 type ApiManagementNotificationRecipientUser interface {
 	cdktf.TerraformResource
 	ApiManagementId() *string
@@ -400,7 +400,7 @@ func (j *jsiiProxy_ApiManagementNotificationRecipientUser) UserIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/api_management_notification_recipient_user azurerm_api_management_notification_recipient_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/api_management_notification_recipient_user azurerm_api_management_notification_recipient_user} Resource.
 func NewApiManagementNotificationRecipientUser(scope constructs.Construct, id *string, config *ApiManagementNotificationRecipientUserConfig) ApiManagementNotificationRecipientUser {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewApiManagementNotificationRecipientUser(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/api_management_notification_recipient_user azurerm_api_management_notification_recipient_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/api_management_notification_recipient_user azurerm_api_management_notification_recipient_user} Resource.
 func NewApiManagementNotificationRecipientUser_Override(a ApiManagementNotificationRecipientUser, scope constructs.Construct, id *string, config *ApiManagementNotificationRecipientUserConfig) {
 	_init_.Initialize()
 

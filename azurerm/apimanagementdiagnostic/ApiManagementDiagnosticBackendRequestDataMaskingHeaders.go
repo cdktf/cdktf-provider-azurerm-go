@@ -5,9 +5,9 @@ package apimanagementdiagnostic
 
 
 type ApiManagementDiagnosticBackendRequestDataMaskingHeaders struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}.
 	Mode *string `field:"required" json:"mode" yaml:"mode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

@@ -466,6 +466,22 @@ func (j *jsiiProxy_HpcCacheBlobNfsTarget) validateSetUsageModelParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_HpcCacheBlobNfsTarget) validateSetVerificationTimerInSecondsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_HpcCacheBlobNfsTarget) validateSetWriteBackTimerInSecondsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewHpcCacheBlobNfsTargetParameters(scope constructs.Construct, id *string, config *HpcCacheBlobNfsTargetConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

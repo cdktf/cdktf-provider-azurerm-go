@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/api_management_backend azurerm_api_management_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/api_management_backend azurerm_api_management_backend}.
 type ApiManagementBackend interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -614,7 +614,7 @@ func (j *jsiiProxy_ApiManagementBackend) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/api_management_backend azurerm_api_management_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/api_management_backend azurerm_api_management_backend} Resource.
 func NewApiManagementBackend(scope constructs.Construct, id *string, config *ApiManagementBackendConfig) ApiManagementBackend {
 	_init_.Initialize()
 
@@ -632,7 +632,7 @@ func NewApiManagementBackend(scope constructs.Construct, id *string, config *Api
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/api_management_backend azurerm_api_management_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/api_management_backend azurerm_api_management_backend} Resource.
 func NewApiManagementBackend_Override(a ApiManagementBackend, scope constructs.Construct, id *string, config *ApiManagementBackendConfig) {
 	_init_.Initialize()
 

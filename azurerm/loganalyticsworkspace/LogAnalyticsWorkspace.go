@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace}.
 type LogAnalyticsWorkspace interface {
 	cdktf.TerraformResource
 	AllowResourceOnlyPermissions() interface{}
@@ -56,6 +56,9 @@ type LogAnalyticsWorkspace interface {
 	Identity() LogAnalyticsWorkspaceIdentityOutputReference
 	IdentityInput() *LogAnalyticsWorkspaceIdentity
 	IdInput() *string
+	ImmediateDataPurgeOn30DaysEnabled() interface{}
+	SetImmediateDataPurgeOn30DaysEnabled(val interface{})
+	ImmediateDataPurgeOn30DaysEnabledInput() interface{}
 	InternetIngestionEnabled() interface{}
 	SetInternetIngestionEnabled(val interface{})
 	InternetIngestionEnabledInput() interface{}
@@ -164,6 +167,7 @@ type LogAnalyticsWorkspace interface {
 	ResetDataCollectionRuleId()
 	ResetId()
 	ResetIdentity()
+	ResetImmediateDataPurgeOn30DaysEnabled()
 	ResetInternetIngestionEnabled()
 	ResetInternetQueryEnabled()
 	ResetLocalAuthenticationDisabled()
@@ -385,6 +389,26 @@ func (j *jsiiProxy_LogAnalyticsWorkspace) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogAnalyticsWorkspace) ImmediateDataPurgeOn30DaysEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"immediateDataPurgeOn30DaysEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogAnalyticsWorkspace) ImmediateDataPurgeOn30DaysEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"immediateDataPurgeOn30DaysEnabledInput",
 		&returns,
 	)
 	return returns
@@ -721,7 +745,7 @@ func (j *jsiiProxy_LogAnalyticsWorkspace) WorkspaceId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource.
 func NewLogAnalyticsWorkspace(scope constructs.Construct, id *string, config *LogAnalyticsWorkspaceConfig) LogAnalyticsWorkspace {
 	_init_.Initialize()
 
@@ -739,7 +763,7 @@ func NewLogAnalyticsWorkspace(scope constructs.Construct, id *string, config *Lo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource.
 func NewLogAnalyticsWorkspace_Override(l LogAnalyticsWorkspace, scope constructs.Construct, id *string, config *LogAnalyticsWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -839,6 +863,17 @@ func (j *jsiiProxy_LogAnalyticsWorkspace)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogAnalyticsWorkspace)SetImmediateDataPurgeOn30DaysEnabled(val interface{}) {
+	if err := j.validateSetImmediateDataPurgeOn30DaysEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"immediateDataPurgeOn30DaysEnabled",
 		val,
 	)
 }
@@ -1402,6 +1437,14 @@ func (l *jsiiProxy_LogAnalyticsWorkspace) ResetIdentity() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogAnalyticsWorkspace) ResetImmediateDataPurgeOn30DaysEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetImmediateDataPurgeOn30DaysEnabled",
 		nil, // no parameters
 	)
 }

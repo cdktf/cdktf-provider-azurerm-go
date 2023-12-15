@@ -51,6 +51,10 @@ func (j *jsiiProxy_AzurermProvider) validateSetStorageUseAzureadParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_AzurermProvider) validateSetUseAksWorkloadIdentityParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzurermProvider) validateSetUseCliParameters(val interface{}) error {
 	return nil
 }

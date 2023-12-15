@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/arc_machine_extension azurerm_arc_machine_extension}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/arc_machine_extension azurerm_arc_machine_extension}.
 type ArcMachineExtension interface {
 	cdktf.TerraformResource
 	ArcMachineId() *string
@@ -590,7 +590,7 @@ func (j *jsiiProxy_ArcMachineExtension) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/arc_machine_extension azurerm_arc_machine_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/arc_machine_extension azurerm_arc_machine_extension} Resource.
 func NewArcMachineExtension(scope constructs.Construct, id *string, config *ArcMachineExtensionConfig) ArcMachineExtension {
 	_init_.Initialize()
 
@@ -608,7 +608,7 @@ func NewArcMachineExtension(scope constructs.Construct, id *string, config *ArcM
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/arc_machine_extension azurerm_arc_machine_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/arc_machine_extension azurerm_arc_machine_extension} Resource.
 func NewArcMachineExtension_Override(a ArcMachineExtension, scope constructs.Construct, id *string, config *ArcMachineExtensionConfig) {
 	_init_.Initialize()
 

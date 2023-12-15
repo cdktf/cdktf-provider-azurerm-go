@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/postgresql_active_directory_administrator azurerm_postgresql_active_directory_administrator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/postgresql_active_directory_administrator azurerm_postgresql_active_directory_administrator}.
 type PostgresqlActiveDirectoryAdministrator interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -446,7 +446,7 @@ func (j *jsiiProxy_PostgresqlActiveDirectoryAdministrator) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/postgresql_active_directory_administrator azurerm_postgresql_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/postgresql_active_directory_administrator azurerm_postgresql_active_directory_administrator} Resource.
 func NewPostgresqlActiveDirectoryAdministrator(scope constructs.Construct, id *string, config *PostgresqlActiveDirectoryAdministratorConfig) PostgresqlActiveDirectoryAdministrator {
 	_init_.Initialize()
 
@@ -464,7 +464,7 @@ func NewPostgresqlActiveDirectoryAdministrator(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/postgresql_active_directory_administrator azurerm_postgresql_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/postgresql_active_directory_administrator azurerm_postgresql_active_directory_administrator} Resource.
 func NewPostgresqlActiveDirectoryAdministrator_Override(p PostgresqlActiveDirectoryAdministrator, scope constructs.Construct, id *string, config *PostgresqlActiveDirectoryAdministratorConfig) {
 	_init_.Initialize()
 

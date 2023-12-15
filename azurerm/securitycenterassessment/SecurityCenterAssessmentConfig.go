@@ -22,24 +22,24 @@ type SecurityCenterAssessmentConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/security_center_assessment#assessment_policy_id SecurityCenterAssessment#assessment_policy_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/security_center_assessment#assessment_policy_id SecurityCenterAssessment#assessment_policy_id}.
 	AssessmentPolicyId *string `field:"required" json:"assessmentPolicyId" yaml:"assessmentPolicyId"`
 	// status block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/security_center_assessment#status SecurityCenterAssessment#status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/security_center_assessment#status SecurityCenterAssessment#status}
 	Status *SecurityCenterAssessmentStatus `field:"required" json:"status" yaml:"status"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/security_center_assessment#target_resource_id SecurityCenterAssessment#target_resource_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/security_center_assessment#target_resource_id SecurityCenterAssessment#target_resource_id}.
 	TargetResourceId *string `field:"required" json:"targetResourceId" yaml:"targetResourceId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/security_center_assessment#additional_data SecurityCenterAssessment#additional_data}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/security_center_assessment#additional_data SecurityCenterAssessment#additional_data}.
 	AdditionalData *map[string]*string `field:"optional" json:"additionalData" yaml:"additionalData"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/security_center_assessment#id SecurityCenterAssessment#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/security_center_assessment#id SecurityCenterAssessment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.84.0/docs/resources/security_center_assessment#timeouts SecurityCenterAssessment#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/security_center_assessment#timeouts SecurityCenterAssessment#timeouts}
 	Timeouts *SecurityCenterAssessmentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
