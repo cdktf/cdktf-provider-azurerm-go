@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/active_directory_domain_service_replica_set azurerm_active_directory_domain_service_replica_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/active_directory_domain_service_replica_set azurerm_active_directory_domain_service_replica_set}.
 type ActiveDirectoryDomainServiceReplicaSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -433,7 +433,7 @@ func (j *jsiiProxy_ActiveDirectoryDomainServiceReplicaSet) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/active_directory_domain_service_replica_set azurerm_active_directory_domain_service_replica_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/active_directory_domain_service_replica_set azurerm_active_directory_domain_service_replica_set} Resource.
 func NewActiveDirectoryDomainServiceReplicaSet(scope constructs.Construct, id *string, config *ActiveDirectoryDomainServiceReplicaSetConfig) ActiveDirectoryDomainServiceReplicaSet {
 	_init_.Initialize()
 
@@ -451,7 +451,7 @@ func NewActiveDirectoryDomainServiceReplicaSet(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/active_directory_domain_service_replica_set azurerm_active_directory_domain_service_replica_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/active_directory_domain_service_replica_set azurerm_active_directory_domain_service_replica_set} Resource.
 func NewActiveDirectoryDomainServiceReplicaSet_Override(a ActiveDirectoryDomainServiceReplicaSet, scope constructs.Construct, id *string, config *ActiveDirectoryDomainServiceReplicaSetConfig) {
 	_init_.Initialize()
 

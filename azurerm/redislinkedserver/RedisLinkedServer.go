@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/redis_linked_server azurerm_redis_linked_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/redis_linked_server azurerm_redis_linked_server}.
 type RedisLinkedServer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -468,7 +468,7 @@ func (j *jsiiProxy_RedisLinkedServer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/redis_linked_server azurerm_redis_linked_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/redis_linked_server azurerm_redis_linked_server} Resource.
 func NewRedisLinkedServer(scope constructs.Construct, id *string, config *RedisLinkedServerConfig) RedisLinkedServer {
 	_init_.Initialize()
 
@@ -486,7 +486,7 @@ func NewRedisLinkedServer(scope constructs.Construct, id *string, config *RedisL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/redis_linked_server azurerm_redis_linked_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/redis_linked_server azurerm_redis_linked_server} Resource.
 func NewRedisLinkedServer_Override(r RedisLinkedServer, scope constructs.Construct, id *string, config *RedisLinkedServerConfig) {
 	_init_.Initialize()
 

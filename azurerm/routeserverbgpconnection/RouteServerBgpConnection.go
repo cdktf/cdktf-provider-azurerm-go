@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/route_server_bgp_connection azurerm_route_server_bgp_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/route_server_bgp_connection azurerm_route_server_bgp_connection}.
 type RouteServerBgpConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -423,7 +423,7 @@ func (j *jsiiProxy_RouteServerBgpConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/route_server_bgp_connection azurerm_route_server_bgp_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/route_server_bgp_connection azurerm_route_server_bgp_connection} Resource.
 func NewRouteServerBgpConnection(scope constructs.Construct, id *string, config *RouteServerBgpConnectionConfig) RouteServerBgpConnection {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewRouteServerBgpConnection(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/route_server_bgp_connection azurerm_route_server_bgp_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/route_server_bgp_connection azurerm_route_server_bgp_connection} Resource.
 func NewRouteServerBgpConnection_Override(r RouteServerBgpConnection, scope constructs.Construct, id *string, config *RouteServerBgpConnectionConfig) {
 	_init_.Initialize()
 

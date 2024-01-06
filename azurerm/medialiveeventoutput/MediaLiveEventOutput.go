@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/media_live_event_output azurerm_media_live_event_output}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/media_live_event_output azurerm_media_live_event_output}.
 type MediaLiveEventOutput interface {
 	cdktf.TerraformResource
 	ArchiveWindowDuration() *string
@@ -543,7 +543,7 @@ func (j *jsiiProxy_MediaLiveEventOutput) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/media_live_event_output azurerm_media_live_event_output} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/media_live_event_output azurerm_media_live_event_output} Resource.
 func NewMediaLiveEventOutput(scope constructs.Construct, id *string, config *MediaLiveEventOutputConfig) MediaLiveEventOutput {
 	_init_.Initialize()
 
@@ -561,7 +561,7 @@ func NewMediaLiveEventOutput(scope constructs.Construct, id *string, config *Med
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/media_live_event_output azurerm_media_live_event_output} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/media_live_event_output azurerm_media_live_event_output} Resource.
 func NewMediaLiveEventOutput_Override(m MediaLiveEventOutput, scope constructs.Construct, id *string, config *MediaLiveEventOutputConfig) {
 	_init_.Initialize()
 

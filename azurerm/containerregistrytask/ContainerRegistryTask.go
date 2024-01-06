@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/container_registry_task azurerm_container_registry_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/container_registry_task azurerm_container_registry_task}.
 type ContainerRegistryTask interface {
 	cdktf.TerraformResource
 	AgentPoolName() *string
@@ -761,7 +761,7 @@ func (j *jsiiProxy_ContainerRegistryTask) TimerTriggerInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/container_registry_task azurerm_container_registry_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/container_registry_task azurerm_container_registry_task} Resource.
 func NewContainerRegistryTask(scope constructs.Construct, id *string, config *ContainerRegistryTaskConfig) ContainerRegistryTask {
 	_init_.Initialize()
 
@@ -779,7 +779,7 @@ func NewContainerRegistryTask(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/container_registry_task azurerm_container_registry_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/container_registry_task azurerm_container_registry_task} Resource.
 func NewContainerRegistryTask_Override(c ContainerRegistryTask, scope constructs.Construct, id *string, config *ContainerRegistryTaskConfig) {
 	_init_.Initialize()
 

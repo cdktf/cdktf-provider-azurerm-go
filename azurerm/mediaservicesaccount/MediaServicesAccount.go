@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/media_services_account azurerm_media_services_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/media_services_account azurerm_media_services_account}.
 type MediaServicesAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -567,7 +567,7 @@ func (j *jsiiProxy_MediaServicesAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/media_services_account azurerm_media_services_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/media_services_account azurerm_media_services_account} Resource.
 func NewMediaServicesAccount(scope constructs.Construct, id *string, config *MediaServicesAccountConfig) MediaServicesAccount {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewMediaServicesAccount(scope constructs.Construct, id *string, config *Med
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/media_services_account azurerm_media_services_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/media_services_account azurerm_media_services_account} Resource.
 func NewMediaServicesAccount_Override(m MediaServicesAccount, scope constructs.Construct, id *string, config *MediaServicesAccountConfig) {
 	_init_.Initialize()
 

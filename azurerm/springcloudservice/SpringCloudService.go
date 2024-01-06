@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service}.
 type SpringCloudService interface {
 	cdktf.TerraformResource
 	BuildAgentPoolSize() *string
@@ -61,6 +61,9 @@ type SpringCloudService interface {
 	LogStreamPublicEndpointEnabled() interface{}
 	SetLogStreamPublicEndpointEnabled(val interface{})
 	LogStreamPublicEndpointEnabledInput() interface{}
+	ManagedEnvironmentId() *string
+	SetManagedEnvironmentId(val *string)
+	ManagedEnvironmentIdInput() *string
 	Marketplace() SpringCloudServiceMarketplaceOutputReference
 	MarketplaceInput() *SpringCloudServiceMarketplace
 	Name() *string
@@ -92,6 +95,9 @@ type SpringCloudService interface {
 	SkuName() *string
 	SetSkuName(val *string)
 	SkuNameInput() *string
+	SkuTier() *string
+	SetSkuTier(val *string)
+	SkuTierInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -164,6 +170,7 @@ type SpringCloudService interface {
 	ResetDefaultBuildService()
 	ResetId()
 	ResetLogStreamPublicEndpointEnabled()
+	ResetManagedEnvironmentId()
 	ResetMarketplace()
 	ResetNetwork()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -171,6 +178,7 @@ type SpringCloudService interface {
 	ResetOverrideLogicalId()
 	ResetServiceRegistryEnabled()
 	ResetSkuName()
+	ResetSkuTier()
 	ResetTags()
 	ResetTimeouts()
 	ResetTrace()
@@ -420,6 +428,26 @@ func (j *jsiiProxy_SpringCloudService) LogStreamPublicEndpointEnabledInput() int
 	return returns
 }
 
+func (j *jsiiProxy_SpringCloudService) ManagedEnvironmentId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedEnvironmentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudService) ManagedEnvironmentIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedEnvironmentIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpringCloudService) Marketplace() SpringCloudServiceMarketplaceOutputReference {
 	var returns SpringCloudServiceMarketplaceOutputReference
 	_jsii_.Get(
@@ -610,6 +638,26 @@ func (j *jsiiProxy_SpringCloudService) SkuNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SpringCloudService) SkuTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"skuTier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudService) SkuTierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"skuTierInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpringCloudService) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -721,7 +769,7 @@ func (j *jsiiProxy_SpringCloudService) ZoneRedundantInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service} Resource.
 func NewSpringCloudService(scope constructs.Construct, id *string, config *SpringCloudServiceConfig) SpringCloudService {
 	_init_.Initialize()
 
@@ -739,7 +787,7 @@ func NewSpringCloudService(scope constructs.Construct, id *string, config *Sprin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/spring_cloud_service azurerm_spring_cloud_service} Resource.
 func NewSpringCloudService_Override(s SpringCloudService, scope constructs.Construct, id *string, config *SpringCloudServiceConfig) {
 	_init_.Initialize()
 
@@ -843,6 +891,17 @@ func (j *jsiiProxy_SpringCloudService)SetLogStreamPublicEndpointEnabled(val inte
 	)
 }
 
+func (j *jsiiProxy_SpringCloudService)SetManagedEnvironmentId(val *string) {
+	if err := j.validateSetManagedEnvironmentIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedEnvironmentId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SpringCloudService)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -902,6 +961,17 @@ func (j *jsiiProxy_SpringCloudService)SetSkuName(val *string) {
 	_jsii_.Set(
 		j,
 		"skuName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpringCloudService)SetSkuTier(val *string) {
+	if err := j.validateSetSkuTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skuTier",
 		val,
 	)
 }
@@ -1406,6 +1476,14 @@ func (s *jsiiProxy_SpringCloudService) ResetLogStreamPublicEndpointEnabled() {
 	)
 }
 
+func (s *jsiiProxy_SpringCloudService) ResetManagedEnvironmentId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetManagedEnvironmentId",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SpringCloudService) ResetMarketplace() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1442,6 +1520,14 @@ func (s *jsiiProxy_SpringCloudService) ResetSkuName() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSkuName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudService) ResetSkuTier() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSkuTier",
 		nil, // no parameters
 	)
 }

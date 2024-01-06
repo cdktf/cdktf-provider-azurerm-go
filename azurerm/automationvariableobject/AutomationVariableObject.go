@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/automation_variable_object azurerm_automation_variable_object}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/automation_variable_object azurerm_automation_variable_object}.
 type AutomationVariableObject interface {
 	cdktf.TerraformResource
 	AutomationAccountName() *string
@@ -472,7 +472,7 @@ func (j *jsiiProxy_AutomationVariableObject) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/automation_variable_object azurerm_automation_variable_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/automation_variable_object azurerm_automation_variable_object} Resource.
 func NewAutomationVariableObject(scope constructs.Construct, id *string, config *AutomationVariableObjectConfig) AutomationVariableObject {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewAutomationVariableObject(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/automation_variable_object azurerm_automation_variable_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/automation_variable_object azurerm_automation_variable_object} Resource.
 func NewAutomationVariableObject_Override(a AutomationVariableObject, scope constructs.Construct, id *string, config *AutomationVariableObjectConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/relay_namespace azurerm_relay_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/relay_namespace azurerm_relay_namespace}.
 type RelayNamespace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -502,7 +502,7 @@ func (j *jsiiProxy_RelayNamespace) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/relay_namespace azurerm_relay_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/relay_namespace azurerm_relay_namespace} Resource.
 func NewRelayNamespace(scope constructs.Construct, id *string, config *RelayNamespaceConfig) RelayNamespace {
 	_init_.Initialize()
 
@@ -520,7 +520,7 @@ func NewRelayNamespace(scope constructs.Construct, id *string, config *RelayName
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/relay_namespace azurerm_relay_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/relay_namespace azurerm_relay_namespace} Resource.
 func NewRelayNamespace_Override(r RelayNamespace, scope constructs.Construct, id *string, config *RelayNamespaceConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/mysql_active_directory_administrator azurerm_mysql_active_directory_administrator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/mysql_active_directory_administrator azurerm_mysql_active_directory_administrator}.
 type MysqlActiveDirectoryAdministrator interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -446,7 +446,7 @@ func (j *jsiiProxy_MysqlActiveDirectoryAdministrator) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/mysql_active_directory_administrator azurerm_mysql_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/mysql_active_directory_administrator azurerm_mysql_active_directory_administrator} Resource.
 func NewMysqlActiveDirectoryAdministrator(scope constructs.Construct, id *string, config *MysqlActiveDirectoryAdministratorConfig) MysqlActiveDirectoryAdministrator {
 	_init_.Initialize()
 
@@ -464,7 +464,7 @@ func NewMysqlActiveDirectoryAdministrator(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/mysql_active_directory_administrator azurerm_mysql_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/mysql_active_directory_administrator azurerm_mysql_active_directory_administrator} Resource.
 func NewMysqlActiveDirectoryAdministrator_Override(m MysqlActiveDirectoryAdministrator, scope constructs.Construct, id *string, config *MysqlActiveDirectoryAdministratorConfig) {
 	_init_.Initialize()
 

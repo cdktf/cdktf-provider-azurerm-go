@@ -5,7 +5,7 @@ package dataazurermcommunicationservice
 
 
 type DataAzurermCommunicationServiceTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/communication_service#read DataAzurermCommunicationService#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/data-sources/communication_service#read DataAzurermCommunicationService#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

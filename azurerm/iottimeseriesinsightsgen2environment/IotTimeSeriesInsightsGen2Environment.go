@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/iot_time_series_insights_gen2_environment azurerm_iot_time_series_insights_gen2_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/iot_time_series_insights_gen2_environment azurerm_iot_time_series_insights_gen2_environment}.
 type IotTimeSeriesInsightsGen2Environment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -528,7 +528,7 @@ func (j *jsiiProxy_IotTimeSeriesInsightsGen2Environment) WarmStoreDataRetentionT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/iot_time_series_insights_gen2_environment azurerm_iot_time_series_insights_gen2_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/iot_time_series_insights_gen2_environment azurerm_iot_time_series_insights_gen2_environment} Resource.
 func NewIotTimeSeriesInsightsGen2Environment(scope constructs.Construct, id *string, config *IotTimeSeriesInsightsGen2EnvironmentConfig) IotTimeSeriesInsightsGen2Environment {
 	_init_.Initialize()
 
@@ -546,7 +546,7 @@ func NewIotTimeSeriesInsightsGen2Environment(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/iot_time_series_insights_gen2_environment azurerm_iot_time_series_insights_gen2_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/iot_time_series_insights_gen2_environment azurerm_iot_time_series_insights_gen2_environment} Resource.
 func NewIotTimeSeriesInsightsGen2Environment_Override(i IotTimeSeriesInsightsGen2Environment, scope constructs.Construct, id *string, config *IotTimeSeriesInsightsGen2EnvironmentConfig) {
 	_init_.Initialize()
 

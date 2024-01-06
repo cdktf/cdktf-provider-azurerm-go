@@ -67,6 +67,9 @@ type DataAzurermLogicAppStandardSiteConfigOutputReference interface {
 	PreWarmedInstanceCount() *float64
 	SetPreWarmedInstanceCount(val *float64)
 	PreWarmedInstanceCountInput() *float64
+	PublicNetworkAccessEnabled() interface{}
+	SetPublicNetworkAccessEnabled(val interface{})
+	PublicNetworkAccessEnabledInput() interface{}
 	RuntimeScaleMonitoringEnabled() interface{}
 	SetRuntimeScaleMonitoringEnabled(val interface{})
 	RuntimeScaleMonitoringEnabledInput() interface{}
@@ -137,6 +140,7 @@ type DataAzurermLogicAppStandardSiteConfigOutputReference interface {
 	ResetLinuxFxVersion()
 	ResetMinTlsVersion()
 	ResetPreWarmedInstanceCount()
+	ResetPublicNetworkAccessEnabled()
 	ResetRuntimeScaleMonitoringEnabled()
 	ResetScmIpRestriction()
 	ResetScmMinTlsVersion()
@@ -455,6 +459,26 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) PreWarm
 	_jsii_.Get(
 		j,
 		"preWarmedInstanceCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) PublicNetworkAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) PublicNetworkAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabledInput",
 		&returns,
 	)
 	return returns
@@ -807,6 +831,17 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetPreWa
 	_jsii_.Set(
 		j,
 		"preWarmedInstanceCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference)SetPublicNetworkAccessEnabled(val interface{}) {
+	if err := j.validateSetPublicNetworkAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccessEnabled",
 		val,
 	)
 }
@@ -1221,6 +1256,14 @@ func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetPr
 	_jsii_.InvokeVoid(
 		d,
 		"resetPreWarmedInstanceCount",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) ResetPublicNetworkAccessEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPublicNetworkAccessEnabled",
 		nil, // no parameters
 	)
 }

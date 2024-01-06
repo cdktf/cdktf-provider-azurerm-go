@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/api_management_api_policy azurerm_api_management_api_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/api_management_api_policy azurerm_api_management_api_policy}.
 type ApiManagementApiPolicy interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -448,7 +448,7 @@ func (j *jsiiProxy_ApiManagementApiPolicy) XmlLinkInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/api_management_api_policy azurerm_api_management_api_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/api_management_api_policy azurerm_api_management_api_policy} Resource.
 func NewApiManagementApiPolicy(scope constructs.Construct, id *string, config *ApiManagementApiPolicyConfig) ApiManagementApiPolicy {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewApiManagementApiPolicy(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/api_management_api_policy azurerm_api_management_api_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/api_management_api_policy azurerm_api_management_api_policy} Resource.
 func NewApiManagementApiPolicy_Override(a ApiManagementApiPolicy, scope constructs.Construct, id *string, config *ApiManagementApiPolicyConfig) {
 	_init_.Initialize()
 

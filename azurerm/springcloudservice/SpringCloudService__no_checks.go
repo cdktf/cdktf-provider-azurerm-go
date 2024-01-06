@@ -147,6 +147,10 @@ func (j *jsiiProxy_SpringCloudService) validateSetLogStreamPublicEndpointEnabled
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudService) validateSetManagedEnvironmentIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudService) validateSetNameParameters(val *string) error {
 	return nil
 }
@@ -164,6 +168,10 @@ func (j *jsiiProxy_SpringCloudService) validateSetServiceRegistryEnabledParamete
 }
 
 func (j *jsiiProxy_SpringCloudService) validateSetSkuNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SpringCloudService) validateSetSkuTierParameters(val *string) error {
 	return nil
 }
 

@@ -115,6 +115,10 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermLogicAppStandardSiteConfigOutputReference) validateSetRuntimeScaleMonitoringEnabledParameters(val interface{}) error {
 	return nil
 }

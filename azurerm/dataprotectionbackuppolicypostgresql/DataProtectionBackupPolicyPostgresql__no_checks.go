@@ -135,6 +135,10 @@ func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql) validateSetResourceGrou
 	return nil
 }
 
+func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql) validateSetTimeZoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql) validateSetVaultNameParameters(val *string) error {
 	return nil
 }

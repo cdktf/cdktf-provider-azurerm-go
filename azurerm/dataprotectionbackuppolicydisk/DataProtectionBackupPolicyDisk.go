@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/data_protection_backup_policy_disk azurerm_data_protection_backup_policy_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/data_protection_backup_policy_disk azurerm_data_protection_backup_policy_disk}.
 type DataProtectionBackupPolicyDisk interface {
 	cdktf.TerraformResource
 	BackupRepeatingTimeIntervals() *[]*string
@@ -77,6 +77,9 @@ type DataProtectionBackupPolicyDisk interface {
 	TerraformResourceType() *string
 	Timeouts() DataProtectionBackupPolicyDiskTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TimeZone() *string
+	SetTimeZone(val *string)
+	TimeZoneInput() *string
 	VaultId() *string
 	SetVaultId(val *string)
 	VaultIdInput() *string
@@ -131,6 +134,7 @@ type DataProtectionBackupPolicyDisk interface {
 	ResetOverrideLogicalId()
 	ResetRetentionRule()
 	ResetTimeouts()
+	ResetTimeZone()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -426,6 +430,26 @@ func (j *jsiiProxy_DataProtectionBackupPolicyDisk) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataProtectionBackupPolicyDisk) TimeZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyDisk) TimeZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZoneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataProtectionBackupPolicyDisk) VaultId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -447,7 +471,7 @@ func (j *jsiiProxy_DataProtectionBackupPolicyDisk) VaultIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/data_protection_backup_policy_disk azurerm_data_protection_backup_policy_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/data_protection_backup_policy_disk azurerm_data_protection_backup_policy_disk} Resource.
 func NewDataProtectionBackupPolicyDisk(scope constructs.Construct, id *string, config *DataProtectionBackupPolicyDiskConfig) DataProtectionBackupPolicyDisk {
 	_init_.Initialize()
 
@@ -465,7 +489,7 @@ func NewDataProtectionBackupPolicyDisk(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/data_protection_backup_policy_disk azurerm_data_protection_backup_policy_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/data_protection_backup_policy_disk azurerm_data_protection_backup_policy_disk} Resource.
 func NewDataProtectionBackupPolicyDisk_Override(d DataProtectionBackupPolicyDisk, scope constructs.Construct, id *string, config *DataProtectionBackupPolicyDiskConfig) {
 	_init_.Initialize()
 
@@ -584,6 +608,17 @@ func (j *jsiiProxy_DataProtectionBackupPolicyDisk)SetProvisioners(val *[]interfa
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyDisk)SetTimeZone(val *string) {
+	if err := j.validateSetTimeZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timeZone",
 		val,
 	)
 }
@@ -1002,6 +1037,14 @@ func (d *jsiiProxy_DataProtectionBackupPolicyDisk) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataProtectionBackupPolicyDisk) ResetTimeZone() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimeZone",
 		nil, // no parameters
 	)
 }

@@ -486,6 +486,14 @@ func (j *jsiiProxy_SpringCloudService) validateSetLogStreamPublicEndpointEnabled
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudService) validateSetManagedEnvironmentIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudService) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -569,6 +577,14 @@ func (j *jsiiProxy_SpringCloudService) validateSetServiceRegistryEnabledParamete
 }
 
 func (j *jsiiProxy_SpringCloudService) validateSetSkuNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SpringCloudService) validateSetSkuTierParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

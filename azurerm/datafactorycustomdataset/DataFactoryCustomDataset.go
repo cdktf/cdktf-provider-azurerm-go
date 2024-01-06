@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/data_factory_custom_dataset azurerm_data_factory_custom_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/data_factory_custom_dataset azurerm_data_factory_custom_dataset}.
 type DataFactoryCustomDataset interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -590,7 +590,7 @@ func (j *jsiiProxy_DataFactoryCustomDataset) TypePropertiesJsonInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/data_factory_custom_dataset azurerm_data_factory_custom_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/data_factory_custom_dataset azurerm_data_factory_custom_dataset} Resource.
 func NewDataFactoryCustomDataset(scope constructs.Construct, id *string, config *DataFactoryCustomDatasetConfig) DataFactoryCustomDataset {
 	_init_.Initialize()
 
@@ -608,7 +608,7 @@ func NewDataFactoryCustomDataset(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/data_factory_custom_dataset azurerm_data_factory_custom_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/data_factory_custom_dataset azurerm_data_factory_custom_dataset} Resource.
 func NewDataFactoryCustomDataset_Override(d DataFactoryCustomDataset, scope constructs.Construct, id *string, config *DataFactoryCustomDatasetConfig) {
 	_init_.Initialize()
 

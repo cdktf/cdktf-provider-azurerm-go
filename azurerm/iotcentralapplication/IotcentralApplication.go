@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/iotcentral_application azurerm_iotcentral_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/iotcentral_application azurerm_iotcentral_application}.
 type IotcentralApplication interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -567,7 +567,7 @@ func (j *jsiiProxy_IotcentralApplication) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/iotcentral_application azurerm_iotcentral_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/iotcentral_application azurerm_iotcentral_application} Resource.
 func NewIotcentralApplication(scope constructs.Construct, id *string, config *IotcentralApplicationConfig) IotcentralApplication {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewIotcentralApplication(scope constructs.Construct, id *string, config *Io
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/iotcentral_application azurerm_iotcentral_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/iotcentral_application azurerm_iotcentral_application} Resource.
 func NewIotcentralApplication_Override(i IotcentralApplication, scope constructs.Construct, id *string, config *IotcentralApplicationConfig) {
 	_init_.Initialize()
 

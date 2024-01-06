@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/storage_sync_group azurerm_storage_sync_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/storage_sync_group azurerm_storage_sync_group}.
 type StorageSyncGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_StorageSyncGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/storage_sync_group azurerm_storage_sync_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/storage_sync_group azurerm_storage_sync_group} Resource.
 func NewStorageSyncGroup(scope constructs.Construct, id *string, config *StorageSyncGroupConfig) StorageSyncGroup {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewStorageSyncGroup(scope constructs.Construct, id *string, config *Storage
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/storage_sync_group azurerm_storage_sync_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/storage_sync_group azurerm_storage_sync_group} Resource.
 func NewStorageSyncGroup_Override(s StorageSyncGroup, scope constructs.Construct, id *string, config *StorageSyncGroupConfig) {
 	_init_.Initialize()
 

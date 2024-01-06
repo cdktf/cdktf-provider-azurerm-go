@@ -5,9 +5,9 @@ package containerapp
 
 
 type ContainerAppTemplateCustomScaleRuleAuthentication struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/container_app#secret_name ContainerApp#secret_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/container_app#secret_name ContainerApp#secret_name}.
 	SecretName *string `field:"required" json:"secretName" yaml:"secretName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/container_app#trigger_parameter ContainerApp#trigger_parameter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/container_app#trigger_parameter ContainerApp#trigger_parameter}.
 	TriggerParameter *string `field:"required" json:"triggerParameter" yaml:"triggerParameter"`
 }
 

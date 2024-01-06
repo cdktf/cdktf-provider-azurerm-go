@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/stream_analytics_output_blob azurerm_stream_analytics_output_blob}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/stream_analytics_output_blob azurerm_stream_analytics_output_blob}.
 type StreamAnalyticsOutputBlob interface {
 	cdktf.TerraformResource
 	AuthenticationMode() *string
@@ -634,7 +634,7 @@ func (j *jsiiProxy_StreamAnalyticsOutputBlob) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/stream_analytics_output_blob azurerm_stream_analytics_output_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/stream_analytics_output_blob azurerm_stream_analytics_output_blob} Resource.
 func NewStreamAnalyticsOutputBlob(scope constructs.Construct, id *string, config *StreamAnalyticsOutputBlobConfig) StreamAnalyticsOutputBlob {
 	_init_.Initialize()
 
@@ -652,7 +652,7 @@ func NewStreamAnalyticsOutputBlob(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/stream_analytics_output_blob azurerm_stream_analytics_output_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/stream_analytics_output_blob azurerm_stream_analytics_output_blob} Resource.
 func NewStreamAnalyticsOutputBlob_Override(s StreamAnalyticsOutputBlob, scope constructs.Construct, id *string, config *StreamAnalyticsOutputBlobConfig) {
 	_init_.Initialize()
 

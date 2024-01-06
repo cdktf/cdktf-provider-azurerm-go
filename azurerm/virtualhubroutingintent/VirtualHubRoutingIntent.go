@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/virtual_hub_routing_intent azurerm_virtual_hub_routing_intent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/virtual_hub_routing_intent azurerm_virtual_hub_routing_intent}.
 type VirtualHubRoutingIntent interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -400,7 +400,7 @@ func (j *jsiiProxy_VirtualHubRoutingIntent) VirtualHubIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/virtual_hub_routing_intent azurerm_virtual_hub_routing_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/virtual_hub_routing_intent azurerm_virtual_hub_routing_intent} Resource.
 func NewVirtualHubRoutingIntent(scope constructs.Construct, id *string, config *VirtualHubRoutingIntentConfig) VirtualHubRoutingIntent {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewVirtualHubRoutingIntent(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/virtual_hub_routing_intent azurerm_virtual_hub_routing_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/virtual_hub_routing_intent azurerm_virtual_hub_routing_intent} Resource.
 func NewVirtualHubRoutingIntent_Override(v VirtualHubRoutingIntent, scope constructs.Construct, id *string, config *VirtualHubRoutingIntentConfig) {
 	_init_.Initialize()
 

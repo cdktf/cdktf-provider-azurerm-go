@@ -465,6 +465,14 @@ func (j *jsiiProxy_DataProtectionBackupPolicyDisk) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_DataProtectionBackupPolicyDisk) validateSetTimeZoneParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupPolicyDisk) validateSetVaultIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

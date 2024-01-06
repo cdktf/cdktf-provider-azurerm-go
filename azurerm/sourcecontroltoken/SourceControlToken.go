@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/source_control_token azurerm_source_control_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/source_control_token azurerm_source_control_token}.
 type SourceControlToken interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_SourceControlToken) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/source_control_token azurerm_source_control_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/source_control_token azurerm_source_control_token} Resource.
 func NewSourceControlToken(scope constructs.Construct, id *string, config *SourceControlTokenConfig) SourceControlToken {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewSourceControlToken(scope constructs.Construct, id *string, config *Sourc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/source_control_token azurerm_source_control_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/source_control_token azurerm_source_control_token} Resource.
 func NewSourceControlToken_Override(s SourceControlToken, scope constructs.Construct, id *string, config *SourceControlTokenConfig) {
 	_init_.Initialize()
 

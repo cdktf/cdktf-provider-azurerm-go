@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/marketplace_agreement azurerm_marketplace_agreement}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/data-sources/marketplace_agreement azurerm_marketplace_agreement}.
 type DataAzurermMarketplaceAgreement interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataAzurermMarketplaceAgreement) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/marketplace_agreement azurerm_marketplace_agreement} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/data-sources/marketplace_agreement azurerm_marketplace_agreement} Data Source.
 func NewDataAzurermMarketplaceAgreement(scope constructs.Construct, id *string, config *DataAzurermMarketplaceAgreementConfig) DataAzurermMarketplaceAgreement {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDataAzurermMarketplaceAgreement(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/marketplace_agreement azurerm_marketplace_agreement} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/data-sources/marketplace_agreement azurerm_marketplace_agreement} Data Source.
 func NewDataAzurermMarketplaceAgreement_Override(d DataAzurermMarketplaceAgreement, scope constructs.Construct, id *string, config *DataAzurermMarketplaceAgreementConfig) {
 	_init_.Initialize()
 

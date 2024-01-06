@@ -67,6 +67,9 @@ type LogicAppStandardSiteConfigOutputReference interface {
 	PreWarmedInstanceCount() *float64
 	SetPreWarmedInstanceCount(val *float64)
 	PreWarmedInstanceCountInput() *float64
+	PublicNetworkAccessEnabled() interface{}
+	SetPublicNetworkAccessEnabled(val interface{})
+	PublicNetworkAccessEnabledInput() interface{}
 	RuntimeScaleMonitoringEnabled() interface{}
 	SetRuntimeScaleMonitoringEnabled(val interface{})
 	RuntimeScaleMonitoringEnabledInput() interface{}
@@ -137,6 +140,7 @@ type LogicAppStandardSiteConfigOutputReference interface {
 	ResetLinuxFxVersion()
 	ResetMinTlsVersion()
 	ResetPreWarmedInstanceCount()
+	ResetPublicNetworkAccessEnabled()
 	ResetRuntimeScaleMonitoringEnabled()
 	ResetScmIpRestriction()
 	ResetScmMinTlsVersion()
@@ -455,6 +459,26 @@ func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) PreWarmedInstanceC
 	_jsii_.Get(
 		j,
 		"preWarmedInstanceCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) PublicNetworkAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference) PublicNetworkAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabledInput",
 		&returns,
 	)
 	return returns
@@ -807,6 +831,17 @@ func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference)SetPreWarmedInstanc
 	_jsii_.Set(
 		j,
 		"preWarmedInstanceCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogicAppStandardSiteConfigOutputReference)SetPublicNetworkAccessEnabled(val interface{}) {
+	if err := j.validateSetPublicNetworkAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccessEnabled",
 		val,
 	)
 }
@@ -1221,6 +1256,14 @@ func (l *jsiiProxy_LogicAppStandardSiteConfigOutputReference) ResetPreWarmedInst
 	_jsii_.InvokeVoid(
 		l,
 		"resetPreWarmedInstanceCount",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogicAppStandardSiteConfigOutputReference) ResetPublicNetworkAccessEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPublicNetworkAccessEnabled",
 		nil, // no parameters
 	)
 }

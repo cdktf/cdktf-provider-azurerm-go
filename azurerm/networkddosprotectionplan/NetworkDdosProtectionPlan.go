@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/network_ddos_protection_plan azurerm_network_ddos_protection_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/network_ddos_protection_plan azurerm_network_ddos_protection_plan}.
 type NetworkDdosProtectionPlan interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_NetworkDdosProtectionPlan) VirtualNetworkIds() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/network_ddos_protection_plan azurerm_network_ddos_protection_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/network_ddos_protection_plan azurerm_network_ddos_protection_plan} Resource.
 func NewNetworkDdosProtectionPlan(scope constructs.Construct, id *string, config *NetworkDdosProtectionPlanConfig) NetworkDdosProtectionPlan {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewNetworkDdosProtectionPlan(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/network_ddos_protection_plan azurerm_network_ddos_protection_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/network_ddos_protection_plan azurerm_network_ddos_protection_plan} Resource.
 func NewNetworkDdosProtectionPlan_Override(n NetworkDdosProtectionPlan, scope constructs.Construct, id *string, config *NetworkDdosProtectionPlanConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/static_site_custom_domain azurerm_static_site_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/static_site_custom_domain azurerm_static_site_custom_domain}.
 type StaticSiteCustomDomain interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_StaticSiteCustomDomain) ValidationTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/static_site_custom_domain azurerm_static_site_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/static_site_custom_domain azurerm_static_site_custom_domain} Resource.
 func NewStaticSiteCustomDomain(scope constructs.Construct, id *string, config *StaticSiteCustomDomainConfig) StaticSiteCustomDomain {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewStaticSiteCustomDomain(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/static_site_custom_domain azurerm_static_site_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/static_site_custom_domain azurerm_static_site_custom_domain} Resource.
 func NewStaticSiteCustomDomain_Override(s StaticSiteCustomDomain, scope constructs.Construct, id *string, config *StaticSiteCustomDomainConfig) {
 	_init_.Initialize()
 

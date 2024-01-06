@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/api_management_email_template azurerm_api_management_email_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/api_management_email_template azurerm_api_management_email_template}.
 type ApiManagementEmailTemplate interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -468,7 +468,7 @@ func (j *jsiiProxy_ApiManagementEmailTemplate) Title() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/api_management_email_template azurerm_api_management_email_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/api_management_email_template azurerm_api_management_email_template} Resource.
 func NewApiManagementEmailTemplate(scope constructs.Construct, id *string, config *ApiManagementEmailTemplateConfig) ApiManagementEmailTemplate {
 	_init_.Initialize()
 
@@ -486,7 +486,7 @@ func NewApiManagementEmailTemplate(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/api_management_email_template azurerm_api_management_email_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/api_management_email_template azurerm_api_management_email_template} Resource.
 func NewApiManagementEmailTemplate_Override(a ApiManagementEmailTemplate, scope constructs.Construct, id *string, config *ApiManagementEmailTemplateConfig) {
 	_init_.Initialize()
 

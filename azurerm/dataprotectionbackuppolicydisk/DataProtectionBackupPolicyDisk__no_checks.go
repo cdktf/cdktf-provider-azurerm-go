@@ -131,6 +131,10 @@ func (j *jsiiProxy_DataProtectionBackupPolicyDisk) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_DataProtectionBackupPolicyDisk) validateSetTimeZoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupPolicyDisk) validateSetVaultIdParameters(val *string) error {
 	return nil
 }

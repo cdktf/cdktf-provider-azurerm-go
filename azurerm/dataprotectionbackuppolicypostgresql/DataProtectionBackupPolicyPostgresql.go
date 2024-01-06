@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql}.
 type DataProtectionBackupPolicyPostgresql interface {
 	cdktf.TerraformResource
 	BackupRepeatingTimeIntervals() *[]*string
@@ -80,6 +80,9 @@ type DataProtectionBackupPolicyPostgresql interface {
 	TerraformResourceType() *string
 	Timeouts() DataProtectionBackupPolicyPostgresqlTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TimeZone() *string
+	SetTimeZone(val *string)
+	TimeZoneInput() *string
 	VaultName() *string
 	SetVaultName(val *string)
 	VaultNameInput() *string
@@ -134,6 +137,7 @@ type DataProtectionBackupPolicyPostgresql interface {
 	ResetOverrideLogicalId()
 	ResetRetentionRule()
 	ResetTimeouts()
+	ResetTimeZone()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -449,6 +453,26 @@ func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql) TimeoutsInput() interfa
 	return returns
 }
 
+func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql) TimeZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql) TimeZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZoneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql) VaultName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -470,7 +494,7 @@ func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql) VaultNameInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql} Resource.
 func NewDataProtectionBackupPolicyPostgresql(scope constructs.Construct, id *string, config *DataProtectionBackupPolicyPostgresqlConfig) DataProtectionBackupPolicyPostgresql {
 	_init_.Initialize()
 
@@ -488,7 +512,7 @@ func NewDataProtectionBackupPolicyPostgresql(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql} Resource.
 func NewDataProtectionBackupPolicyPostgresql_Override(d DataProtectionBackupPolicyPostgresql, scope constructs.Construct, id *string, config *DataProtectionBackupPolicyPostgresqlConfig) {
 	_init_.Initialize()
 
@@ -618,6 +642,17 @@ func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql)SetResourceGroupName(val
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql)SetTimeZone(val *string) {
+	if err := j.validateSetTimeZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timeZone",
 		val,
 	)
 }
@@ -1036,6 +1071,14 @@ func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataProtectionBackupPolicyPostgresql) ResetTimeZone() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimeZone",
 		nil, // no parameters
 	)
 }

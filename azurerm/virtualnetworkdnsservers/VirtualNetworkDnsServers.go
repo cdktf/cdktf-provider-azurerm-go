@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/virtual_network_dns_servers azurerm_virtual_network_dns_servers}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/virtual_network_dns_servers azurerm_virtual_network_dns_servers}.
 type VirtualNetworkDnsServers interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -378,7 +378,7 @@ func (j *jsiiProxy_VirtualNetworkDnsServers) VirtualNetworkIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/virtual_network_dns_servers azurerm_virtual_network_dns_servers} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/virtual_network_dns_servers azurerm_virtual_network_dns_servers} Resource.
 func NewVirtualNetworkDnsServers(scope constructs.Construct, id *string, config *VirtualNetworkDnsServersConfig) VirtualNetworkDnsServers {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewVirtualNetworkDnsServers(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/resources/virtual_network_dns_servers azurerm_virtual_network_dns_servers} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/virtual_network_dns_servers azurerm_virtual_network_dns_servers} Resource.
 func NewVirtualNetworkDnsServers_Override(v VirtualNetworkDnsServers, scope constructs.Construct, id *string, config *VirtualNetworkDnsServersConfig) {
 	_init_.Initialize()
 

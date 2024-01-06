@@ -5,7 +5,7 @@ package dataazurermstackhcicluster
 
 
 type DataAzurermStackHciClusterTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.85.0/docs/data-sources/stack_hci_cluster#read DataAzurermStackHciCluster#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/data-sources/stack_hci_cluster#read DataAzurermStackHciCluster#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 
