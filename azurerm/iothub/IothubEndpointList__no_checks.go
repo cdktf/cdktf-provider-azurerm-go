@@ -7,6 +7,10 @@ package iothub
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IothubEndpointList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IothubEndpointList) validateGetParameters(index *float64) error {
 	return nil
 }

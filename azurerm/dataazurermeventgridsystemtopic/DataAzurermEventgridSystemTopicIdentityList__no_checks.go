@@ -7,6 +7,10 @@ package dataazurermeventgridsystemtopic
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermEventgridSystemTopicIdentityList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermEventgridSystemTopicIdentityList) validateGetParameters(index *float64) error {
 	return nil
 }

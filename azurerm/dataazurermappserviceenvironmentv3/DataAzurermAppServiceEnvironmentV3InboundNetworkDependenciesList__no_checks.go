@@ -7,6 +7,10 @@ package dataazurermappserviceenvironmentv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermAppServiceEnvironmentV3InboundNetworkDependenciesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermAppServiceEnvironmentV3InboundNetworkDependenciesList) validateGetParameters(index *float64) error {
 	return nil
 }

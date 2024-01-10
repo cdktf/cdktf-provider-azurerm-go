@@ -7,6 +7,10 @@ package dataazurermwindowsfunctionapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermWindowsFunctionAppAuthSettingsActiveDirectoryList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermWindowsFunctionAppAuthSettingsActiveDirectoryList) validateGetParameters(index *float64) error {
 	return nil
 }

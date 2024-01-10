@@ -7,6 +7,10 @@ package dataazurermprivatednssrvrecord
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermPrivateDnsSrvRecordRecordList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermPrivateDnsSrvRecordRecordList) validateGetParameters(index *float64) error {
 	return nil
 }

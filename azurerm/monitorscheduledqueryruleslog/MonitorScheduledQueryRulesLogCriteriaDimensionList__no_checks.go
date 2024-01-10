@@ -7,6 +7,10 @@ package monitorscheduledqueryruleslog
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorScheduledQueryRulesLogCriteriaDimensionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorScheduledQueryRulesLogCriteriaDimensionList) validateGetParameters(index *float64) error {
 	return nil
 }

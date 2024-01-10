@@ -7,6 +7,10 @@ package dataazurermspringcloudservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermSpringCloudServiceRequiredNetworkTrafficRulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermSpringCloudServiceRequiredNetworkTrafficRulesList) validateGetParameters(index *float64) error {
 	return nil
 }

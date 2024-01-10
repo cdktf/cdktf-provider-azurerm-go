@@ -7,6 +7,10 @@ package monitordatacollectionrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsStorageBlobList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDataCollectionRuleDestinationsStorageBlobList) validateGetParameters(index *float64) error {
 	return nil
 }

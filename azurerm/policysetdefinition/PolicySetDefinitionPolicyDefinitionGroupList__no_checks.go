@@ -7,6 +7,10 @@ package policysetdefinition
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PolicySetDefinitionPolicyDefinitionGroupList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicySetDefinitionPolicyDefinitionGroupList) validateGetParameters(index *float64) error {
 	return nil
 }

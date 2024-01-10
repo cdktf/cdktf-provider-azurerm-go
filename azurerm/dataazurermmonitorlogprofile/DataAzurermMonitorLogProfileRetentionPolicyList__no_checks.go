@@ -7,6 +7,10 @@ package dataazurermmonitorlogprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermMonitorLogProfileRetentionPolicyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermMonitorLogProfileRetentionPolicyList) validateGetParameters(index *float64) error {
 	return nil
 }

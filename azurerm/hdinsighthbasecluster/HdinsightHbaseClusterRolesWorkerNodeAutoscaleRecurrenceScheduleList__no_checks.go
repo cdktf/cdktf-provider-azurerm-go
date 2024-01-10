@@ -7,6 +7,10 @@ package hdinsighthbasecluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeAutoscaleRecurrenceScheduleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HdinsightHbaseClusterRolesWorkerNodeAutoscaleRecurrenceScheduleList) validateGetParameters(index *float64) error {
 	return nil
 }

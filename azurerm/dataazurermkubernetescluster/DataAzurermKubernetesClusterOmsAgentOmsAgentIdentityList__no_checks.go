@@ -7,6 +7,10 @@ package dataazurermkubernetescluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermKubernetesClusterOmsAgentOmsAgentIdentityList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermKubernetesClusterOmsAgentOmsAgentIdentityList) validateGetParameters(index *float64) error {
 	return nil
 }

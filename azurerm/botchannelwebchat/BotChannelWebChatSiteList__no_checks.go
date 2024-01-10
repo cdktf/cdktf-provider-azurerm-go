@@ -7,6 +7,10 @@ package botchannelwebchat
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BotChannelWebChatSiteList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotChannelWebChatSiteList) validateGetParameters(index *float64) error {
 	return nil
 }

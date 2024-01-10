@@ -7,6 +7,10 @@ package streamanalyticsjob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StreamAnalyticsJobJobStorageAccountList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StreamAnalyticsJobJobStorageAccountList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package frontdoor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FrontdoorBackendPoolLoadBalancingList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FrontdoorBackendPoolLoadBalancingList) validateGetParameters(index *float64) error {
 	return nil
 }

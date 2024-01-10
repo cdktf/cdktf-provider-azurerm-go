@@ -7,6 +7,10 @@ package dataazurermarcmachine
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermArcMachineAgentExtensionsBlockListStructList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermArcMachineAgentExtensionsBlockListStructList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package sentinelthreatintelligenceindicator
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SentinelThreatIntelligenceIndicatorParsedPatternList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelThreatIntelligenceIndicatorParsedPatternList) validateGetParameters(index *float64) error {
 	return nil
 }

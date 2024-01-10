@@ -7,6 +7,10 @@ package dataazurermfirewallpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermFirewallPolicyDnsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermFirewallPolicyDnsList) validateGetParameters(index *float64) error {
 	return nil
 }

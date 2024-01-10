@@ -7,6 +7,10 @@ package analysisservicesserver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AnalysisServicesServerIpv4FirewallRuleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AnalysisServicesServerIpv4FirewallRuleList) validateGetParameters(index *float64) error {
 	return nil
 }

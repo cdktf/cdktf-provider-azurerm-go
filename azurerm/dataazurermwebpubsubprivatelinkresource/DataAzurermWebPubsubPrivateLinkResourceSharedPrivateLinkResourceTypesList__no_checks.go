@@ -7,6 +7,10 @@ package dataazurermwebpubsubprivatelinkresource
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermWebPubsubPrivateLinkResourceSharedPrivateLinkResourceTypesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermWebPubsubPrivateLinkResourceSharedPrivateLinkResourceTypesList) validateGetParameters(index *float64) error {
 	return nil
 }

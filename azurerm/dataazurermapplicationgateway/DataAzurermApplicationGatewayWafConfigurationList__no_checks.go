@@ -7,6 +7,10 @@ package dataazurermapplicationgateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermApplicationGatewayWafConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermApplicationGatewayWafConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }

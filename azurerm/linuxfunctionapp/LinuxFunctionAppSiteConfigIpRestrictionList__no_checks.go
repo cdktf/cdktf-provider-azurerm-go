@@ -7,6 +7,10 @@ package linuxfunctionapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LinuxFunctionAppSiteConfigIpRestrictionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxFunctionAppSiteConfigIpRestrictionList) validateGetParameters(index *float64) error {
 	return nil
 }

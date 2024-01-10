@@ -7,6 +7,10 @@ package hdinsightinteractivequerycluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HdinsightInteractiveQueryClusterDiskEncryptionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HdinsightInteractiveQueryClusterDiskEncryptionList) validateGetParameters(index *float64) error {
 	return nil
 }

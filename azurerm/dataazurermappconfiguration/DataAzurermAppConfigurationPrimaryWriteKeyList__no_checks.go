@@ -7,6 +7,10 @@ package dataazurermappconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermAppConfigurationPrimaryWriteKeyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermAppConfigurationPrimaryWriteKeyList) validateGetParameters(index *float64) error {
 	return nil
 }

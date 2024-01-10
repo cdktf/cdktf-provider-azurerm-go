@@ -7,6 +7,10 @@ package dataazurermvirtualhubconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermVirtualHubConnectionRoutingList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermVirtualHubConnectionRoutingList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -74,12 +74,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "sslPolicy", GoGetter: "SslPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "sslProfile", GoGetter: "SslProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
+			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
 			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
@@ -103,6 +105,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayAuthenticationCertificateList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -161,6 +164,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAutoscaleConfigurationList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayAutoscaleConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -219,6 +223,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendAddressPoolList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayBackendAddressPoolList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -283,6 +288,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -341,6 +347,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsConnectionDrainingList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayBackendHttpSettingsConnectionDrainingList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -395,6 +402,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayBackendHttpSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -470,6 +478,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayCustomErrorConfigurationList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayCustomErrorConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -529,6 +538,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayFrontendIpConfigurationList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayFrontendIpConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -593,6 +603,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayFrontendPortList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayFrontendPortList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -652,6 +663,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayGatewayIpConfigurationList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayGatewayIpConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -711,6 +723,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayGlobalList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayGlobalList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -773,6 +786,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayHttpListenerCustomErrorConfigurationList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayHttpListenerCustomErrorConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -828,6 +842,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayHttpListenerList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayHttpListenerList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -900,6 +915,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayIdentityList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayIdentityList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -958,6 +974,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayPrivateEndpointConnectionList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayPrivateEndpointConnectionList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1020,6 +1037,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayPrivateLinkConfigurationIpConfigurationList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayPrivateLinkConfigurationIpConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1077,6 +1095,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayPrivateLinkConfigurationList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayPrivateLinkConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1136,6 +1155,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayProbeList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayProbeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1160,6 +1180,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayProbeMatchList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayProbeMatchList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1262,6 +1283,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRedirectConfigurationList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayRedirectConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1326,6 +1348,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRequestRoutingRuleList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayRequestRoutingRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1398,6 +1421,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayRewriteRuleSetList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1461,6 +1485,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleConditionList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleConditionList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1517,6 +1542,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1579,6 +1605,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1637,6 +1664,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1695,6 +1723,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleUrlList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleUrlList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1755,6 +1784,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySkuList",
 		reflect.TypeOf((*DataAzurermApplicationGatewaySkuList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1814,6 +1844,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslCertificateList",
 		reflect.TypeOf((*DataAzurermApplicationGatewaySslCertificateList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1874,6 +1905,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslPolicyList",
 		reflect.TypeOf((*DataAzurermApplicationGatewaySslPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1935,6 +1967,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslProfileList",
 		reflect.TypeOf((*DataAzurermApplicationGatewaySslProfileList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1997,6 +2030,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslProfileSslPolicyList",
 		reflect.TypeOf((*DataAzurermApplicationGatewaySslProfileSslPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2097,6 +2131,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTrustedClientCertificateList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayTrustedClientCertificateList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2155,6 +2190,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTrustedRootCertificateList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayTrustedRootCertificateList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2214,6 +2250,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayUrlPathMapList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayUrlPathMapList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2281,6 +2318,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayUrlPathMapPathRuleList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayUrlPathMapPathRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2353,6 +2391,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayWafConfigurationDisabledRuleGroupList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayWafConfigurationDisabledRuleGroupList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2411,6 +2450,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayWafConfigurationExclusionList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayWafConfigurationExclusionList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2466,6 +2506,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayWafConfigurationList",
 		reflect.TypeOf((*DataAzurermApplicationGatewayWafConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

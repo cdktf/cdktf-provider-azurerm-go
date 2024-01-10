@@ -7,6 +7,10 @@ package monitorautoscalesetting
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorAutoscaleSettingProfileRuleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAutoscaleSettingProfileRuleList) validateGetParameters(index *float64) error {
 	return nil
 }

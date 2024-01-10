@@ -7,6 +7,10 @@ package servicefabriccluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServiceFabricClusterFabricSettingsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceFabricClusterFabricSettingsList) validateGetParameters(index *float64) error {
 	return nil
 }

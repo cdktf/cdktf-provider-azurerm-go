@@ -7,6 +7,10 @@ package dataazurermlboutboundrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermLbOutboundRuleFrontendIpConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermLbOutboundRuleFrontendIpConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }

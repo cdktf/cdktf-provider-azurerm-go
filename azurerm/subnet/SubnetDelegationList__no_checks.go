@@ -7,6 +7,10 @@ package subnet
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SubnetDelegationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SubnetDelegationList) validateGetParameters(index *float64) error {
 	return nil
 }

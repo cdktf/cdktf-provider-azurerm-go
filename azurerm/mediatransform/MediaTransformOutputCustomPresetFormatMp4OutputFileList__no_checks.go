@@ -7,6 +7,10 @@ package mediatransform
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatMp4OutputFileList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaTransformOutputCustomPresetFormatMp4OutputFileList) validateGetParameters(index *float64) error {
 	return nil
 }

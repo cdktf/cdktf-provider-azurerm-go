@@ -7,6 +7,10 @@ package resourcegroupcostmanagementview
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_ResourceGroupCostManagementViewDatasetGroupingList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceGroupCostManagementViewDatasetGroupingList) validateGetParameters(index *float64) error {
 	return nil
 }

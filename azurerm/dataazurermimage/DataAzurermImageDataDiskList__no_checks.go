@@ -7,6 +7,10 @@ package dataazurermimage
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermImageDataDiskList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermImageDataDiskList) validateGetParameters(index *float64) error {
 	return nil
 }

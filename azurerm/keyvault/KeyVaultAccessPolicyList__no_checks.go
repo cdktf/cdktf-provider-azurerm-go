@@ -7,6 +7,10 @@ package keyvault
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KeyVaultAccessPolicyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultAccessPolicyList) validateGetParameters(index *float64) error {
 	return nil
 }

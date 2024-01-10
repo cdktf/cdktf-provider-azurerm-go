@@ -7,6 +7,10 @@ package resourcegrouppolicyassignment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_ResourceGroupPolicyAssignmentResourceSelectorsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceGroupPolicyAssignmentResourceSelectorsList) validateGetParameters(index *float64) error {
 	return nil
 }

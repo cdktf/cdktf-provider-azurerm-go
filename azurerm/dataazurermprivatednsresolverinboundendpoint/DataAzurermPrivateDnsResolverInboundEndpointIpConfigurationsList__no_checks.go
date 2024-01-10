@@ -7,6 +7,10 @@ package dataazurermprivatednsresolverinboundendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermPrivateDnsResolverInboundEndpointIpConfigurationsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermPrivateDnsResolverInboundEndpointIpConfigurationsList) validateGetParameters(index *float64) error {
 	return nil
 }

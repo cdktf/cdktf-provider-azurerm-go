@@ -7,6 +7,10 @@ package subnetserviceendpointstoragepolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SubnetServiceEndpointStoragePolicyDefinitionList) validateGetParameters(index *float64) error {
 	return nil
 }

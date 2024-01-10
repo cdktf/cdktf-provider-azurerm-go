@@ -7,6 +7,10 @@ package hdinsightinteractivequerycluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HdinsightInteractiveQueryClusterRolesHeadNodeScriptActionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HdinsightInteractiveQueryClusterRolesHeadNodeScriptActionsList) validateGetParameters(index *float64) error {
 	return nil
 }

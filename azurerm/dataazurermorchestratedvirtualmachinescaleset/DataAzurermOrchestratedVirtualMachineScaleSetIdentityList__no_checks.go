@@ -7,6 +7,10 @@ package dataazurermorchestratedvirtualmachinescaleset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermOrchestratedVirtualMachineScaleSetIdentityList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermOrchestratedVirtualMachineScaleSetIdentityList) validateGetParameters(index *float64) error {
 	return nil
 }

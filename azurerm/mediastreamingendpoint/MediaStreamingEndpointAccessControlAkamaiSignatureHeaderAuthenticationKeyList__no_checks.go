@@ -7,6 +7,10 @@ package mediastreamingendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MediaStreamingEndpointAccessControlAkamaiSignatureHeaderAuthenticationKeyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaStreamingEndpointAccessControlAkamaiSignatureHeaderAuthenticationKeyList) validateGetParameters(index *float64) error {
 	return nil
 }

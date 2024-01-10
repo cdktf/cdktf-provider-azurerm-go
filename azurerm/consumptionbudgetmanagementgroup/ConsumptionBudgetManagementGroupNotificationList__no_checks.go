@@ -7,6 +7,10 @@ package consumptionbudgetmanagementgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConsumptionBudgetManagementGroupNotificationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConsumptionBudgetManagementGroupNotificationList) validateGetParameters(index *float64) error {
 	return nil
 }

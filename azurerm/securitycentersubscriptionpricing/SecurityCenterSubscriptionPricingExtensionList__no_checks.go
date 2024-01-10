@@ -7,6 +7,10 @@ package securitycentersubscriptionpricing
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecurityCenterSubscriptionPricingExtensionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityCenterSubscriptionPricingExtensionList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package appserviceenvironmentv3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppServiceEnvironmentV3ClusterSettingList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppServiceEnvironmentV3ClusterSettingList) validateGetParameters(index *float64) error {
 	return nil
 }

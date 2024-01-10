@@ -7,6 +7,10 @@ package logicappworkflow
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaimList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaimList) validateGetParameters(index *float64) error {
 	return nil
 }

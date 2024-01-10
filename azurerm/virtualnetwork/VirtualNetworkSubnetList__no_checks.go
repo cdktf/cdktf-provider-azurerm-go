@@ -7,6 +7,10 @@ package virtualnetwork
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualNetworkSubnetList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetworkSubnetList) validateGetParameters(index *float64) error {
 	return nil
 }

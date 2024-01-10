@@ -7,6 +7,10 @@ package datafactoryflowletdataflow
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryFlowletDataFlowSinkList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryFlowletDataFlowSinkList) validateGetParameters(index *float64) error {
 	return nil
 }

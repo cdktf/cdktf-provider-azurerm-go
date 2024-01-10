@@ -5,10 +5,10 @@ package securitycenterautoprovisioning
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/securitycenterautoprovisioning/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/securitycenterautoprovisioning/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -119,6 +119,9 @@ type SecurityCenterAutoProvisioning interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -867,6 +870,32 @@ func (s *jsiiProxy_SecurityCenterAutoProvisioning) SynthesizeAttributes() *map[s
 	_jsii_.Invoke(
 		s,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecurityCenterAutoProvisioning) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		s,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SecurityCenterAutoProvisioning) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

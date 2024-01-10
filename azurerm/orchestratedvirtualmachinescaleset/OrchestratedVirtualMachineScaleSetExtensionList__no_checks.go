@@ -7,6 +7,10 @@ package orchestratedvirtualmachinescaleset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetExtensionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetExtensionList) validateGetParameters(index *float64) error {
 	return nil
 }

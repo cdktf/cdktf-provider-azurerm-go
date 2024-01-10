@@ -7,6 +7,10 @@ package batchaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BatchAccountEncryptionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchAccountEncryptionList) validateGetParameters(index *float64) error {
 	return nil
 }

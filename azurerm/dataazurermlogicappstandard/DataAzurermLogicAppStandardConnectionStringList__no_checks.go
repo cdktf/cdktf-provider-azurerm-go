@@ -7,6 +7,10 @@ package dataazurermlogicappstandard
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermLogicAppStandardConnectionStringList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermLogicAppStandardConnectionStringList) validateGetParameters(index *float64) error {
 	return nil
 }

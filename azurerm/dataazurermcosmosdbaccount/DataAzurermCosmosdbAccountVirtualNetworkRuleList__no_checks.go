@@ -7,6 +7,10 @@ package dataazurermcosmosdbaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermCosmosdbAccountVirtualNetworkRuleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermCosmosdbAccountVirtualNetworkRuleList) validateGetParameters(index *float64) error {
 	return nil
 }

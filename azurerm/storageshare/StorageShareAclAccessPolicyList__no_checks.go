@@ -7,6 +7,10 @@ package storageshare
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageShareAclAccessPolicyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageShareAclAccessPolicyList) validateGetParameters(index *float64) error {
 	return nil
 }

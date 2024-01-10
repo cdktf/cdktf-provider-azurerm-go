@@ -7,6 +7,10 @@ package virtualmachinescalesetpacketcapture
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualMachineScaleSetPacketCaptureFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualMachineScaleSetPacketCaptureFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

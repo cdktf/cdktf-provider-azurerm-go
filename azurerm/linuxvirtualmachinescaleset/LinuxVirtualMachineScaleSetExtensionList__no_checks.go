@@ -7,6 +7,10 @@ package linuxvirtualmachinescaleset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxVirtualMachineScaleSetExtensionList) validateGetParameters(index *float64) error {
 	return nil
 }

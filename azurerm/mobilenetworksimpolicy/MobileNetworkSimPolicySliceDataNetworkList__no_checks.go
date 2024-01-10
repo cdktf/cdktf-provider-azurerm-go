@@ -7,6 +7,10 @@ package mobilenetworksimpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MobileNetworkSimPolicySliceDataNetworkList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MobileNetworkSimPolicySliceDataNetworkList) validateGetParameters(index *float64) error {
 	return nil
 }

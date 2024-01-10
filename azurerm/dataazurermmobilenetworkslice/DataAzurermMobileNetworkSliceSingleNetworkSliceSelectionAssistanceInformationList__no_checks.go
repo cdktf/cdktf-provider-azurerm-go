@@ -7,6 +7,10 @@ package dataazurermmobilenetworkslice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermMobileNetworkSliceSingleNetworkSliceSelectionAssistanceInformationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermMobileNetworkSliceSingleNetworkSliceSelectionAssistanceInformationList) validateGetParameters(index *float64) error {
 	return nil
 }

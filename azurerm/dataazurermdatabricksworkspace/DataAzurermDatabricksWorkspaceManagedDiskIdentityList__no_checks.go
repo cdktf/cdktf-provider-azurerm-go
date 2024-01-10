@@ -7,6 +7,10 @@ package dataazurermdatabricksworkspace
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermDatabricksWorkspaceManagedDiskIdentityList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermDatabricksWorkspaceManagedDiskIdentityList) validateGetParameters(index *float64) error {
 	return nil
 }

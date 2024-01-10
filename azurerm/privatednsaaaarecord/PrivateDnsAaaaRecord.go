@@ -5,10 +5,10 @@ package privatednsaaaarecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/privatednsaaaarecord/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/privatednsaaaarecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -136,6 +136,9 @@ type PrivateDnsAaaaRecord interface {
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1057,6 +1060,32 @@ func (p *jsiiProxy_PrivateDnsAaaaRecord) SynthesizeAttributes() *map[string]inte
 	_jsii_.Invoke(
 		p,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PrivateDnsAaaaRecord) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		p,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PrivateDnsAaaaRecord) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

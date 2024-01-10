@@ -5,9 +5,9 @@ package windowsvirtualmachinescaleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/windowsvirtualmachinescaleset/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/windowsvirtualmachinescaleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,6 +31,11 @@ type WindowsVirtualMachineScaleSetExtensionList interface {
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
+	// Creating an iterator for this complex list.
+	//
+	// The list will be converted into a map with the mapKeyAttributeName as the key.
+	// Experimental.
+	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) WindowsVirtualMachineScaleSetExtensionOutputReference
@@ -179,6 +184,22 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSetExtensionList)SetWrapsSet(val *b
 		"wrapsSet",
 		val,
 	)
+}
+
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetExtensionList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+	if err := w.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
+		panic(err)
+	}
+	var returns cdktf.DynamicListTerraformIterator
+
+	_jsii_.Invoke(
+		w,
+		"allWithMapKey",
+		[]interface{}{mapKeyAttributeName},
+		&returns,
+	)
+
+	return returns
 }
 
 func (w *jsiiProxy_WindowsVirtualMachineScaleSetExtensionList) ComputeFqn() *string {

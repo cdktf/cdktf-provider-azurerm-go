@@ -7,6 +7,10 @@ package mediastreamingendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MediaStreamingEndpointAccessControlIpAllowList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaStreamingEndpointAccessControlIpAllowList) validateGetParameters(index *float64) error {
 	return nil
 }

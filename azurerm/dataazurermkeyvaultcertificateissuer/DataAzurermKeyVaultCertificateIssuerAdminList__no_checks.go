@@ -7,6 +7,10 @@ package dataazurermkeyvaultcertificateissuer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermKeyVaultCertificateIssuerAdminList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermKeyVaultCertificateIssuerAdminList) validateGetParameters(index *float64) error {
 	return nil
 }

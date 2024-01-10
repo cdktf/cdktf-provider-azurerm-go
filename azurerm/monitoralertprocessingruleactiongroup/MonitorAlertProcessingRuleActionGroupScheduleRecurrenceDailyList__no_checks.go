@@ -7,6 +7,10 @@ package monitoralertprocessingruleactiongroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyList) validateGetParameters(index *float64) error {
 	return nil
 }

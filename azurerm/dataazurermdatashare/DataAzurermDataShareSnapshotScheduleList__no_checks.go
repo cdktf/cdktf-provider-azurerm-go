@@ -7,6 +7,10 @@ package dataazurermdatashare
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermDataShareSnapshotScheduleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermDataShareSnapshotScheduleList) validateGetParameters(index *float64) error {
 	return nil
 }

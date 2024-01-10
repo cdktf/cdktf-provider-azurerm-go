@@ -7,6 +7,10 @@ package dataazurermmobilenetworkservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermMobileNetworkServicePccRuleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermMobileNetworkServicePccRuleList) validateGetParameters(index *float64) error {
 	return nil
 }

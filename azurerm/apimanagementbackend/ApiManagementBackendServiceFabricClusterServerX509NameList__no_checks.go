@@ -7,6 +7,10 @@ package apimanagementbackend
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiManagementBackendServiceFabricClusterServerX509NameList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiManagementBackendServiceFabricClusterServerX509NameList) validateGetParameters(index *float64) error {
 	return nil
 }

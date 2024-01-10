@@ -7,6 +7,10 @@ package windowsvirtualmachinescaleset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetDataDiskList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsVirtualMachineScaleSetDataDiskList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package frontdoorfirewallpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FrontdoorFirewallPolicyManagedRuleOverrideExclusionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FrontdoorFirewallPolicyManagedRuleOverrideExclusionList) validateGetParameters(index *float64) error {
 	return nil
 }

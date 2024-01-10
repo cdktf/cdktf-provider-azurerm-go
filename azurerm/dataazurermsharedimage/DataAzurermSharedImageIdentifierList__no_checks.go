@@ -7,6 +7,10 @@ package dataazurermsharedimage
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermSharedImageIdentifierList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermSharedImageIdentifierList) validateGetParameters(index *float64) error {
 	return nil
 }

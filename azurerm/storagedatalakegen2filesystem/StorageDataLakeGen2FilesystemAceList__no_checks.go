@@ -7,6 +7,10 @@ package storagedatalakegen2filesystem
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageDataLakeGen2FilesystemAceList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageDataLakeGen2FilesystemAceList) validateGetParameters(index *float64) error {
 	return nil
 }

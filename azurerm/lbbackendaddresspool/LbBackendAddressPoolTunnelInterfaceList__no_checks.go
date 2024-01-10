@@ -7,6 +7,10 @@ package lbbackendaddresspool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbBackendAddressPoolTunnelInterfaceList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbBackendAddressPoolTunnelInterfaceList) validateGetParameters(index *float64) error {
 	return nil
 }

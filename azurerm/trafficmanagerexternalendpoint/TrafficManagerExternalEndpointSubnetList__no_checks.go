@@ -7,6 +7,10 @@ package trafficmanagerexternalendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TrafficManagerExternalEndpointSubnetList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TrafficManagerExternalEndpointSubnetList) validateGetParameters(index *float64) error {
 	return nil
 }

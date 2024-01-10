@@ -7,6 +7,10 @@ package containerregistry
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerRegistryEncryptionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerRegistryEncryptionList) validateGetParameters(index *float64) error {
 	return nil
 }

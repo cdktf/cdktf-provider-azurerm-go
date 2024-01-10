@@ -7,6 +7,10 @@ package frontdoor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FrontdoorFrontendEndpointList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FrontdoorFrontendEndpointList) validateGetParameters(index *float64) error {
 	return nil
 }

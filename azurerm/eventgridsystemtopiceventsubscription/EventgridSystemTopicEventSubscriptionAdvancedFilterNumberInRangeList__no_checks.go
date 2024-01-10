@@ -7,6 +7,10 @@ package eventgridsystemtopiceventsubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeList) validateGetParameters(index *float64) error {
 	return nil
 }

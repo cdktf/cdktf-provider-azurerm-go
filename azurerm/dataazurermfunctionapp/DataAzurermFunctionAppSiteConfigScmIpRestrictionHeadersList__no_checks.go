@@ -7,6 +7,10 @@ package dataazurermfunctionapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermFunctionAppSiteConfigScmIpRestrictionHeadersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermFunctionAppSiteConfigScmIpRestrictionHeadersList) validateGetParameters(index *float64) error {
 	return nil
 }

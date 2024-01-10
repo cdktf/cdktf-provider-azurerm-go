@@ -7,6 +7,10 @@ package datafactorydatasetparquet
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryDatasetParquetSchemaColumnList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryDatasetParquetSchemaColumnList) validateGetParameters(index *float64) error {
 	return nil
 }

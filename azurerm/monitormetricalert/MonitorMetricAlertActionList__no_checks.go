@@ -7,6 +7,10 @@ package monitormetricalert
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorMetricAlertActionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorMetricAlertActionList) validateGetParameters(index *float64) error {
 	return nil
 }

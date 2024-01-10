@@ -7,6 +7,10 @@ package logztagrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogzTagRuleTagFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogzTagRuleTagFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

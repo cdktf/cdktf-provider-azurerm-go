@@ -7,6 +7,10 @@ package dataazurermhybridcomputemachine
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListStructList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermHybridComputeMachineAgentConfigurationExtensionsAllowListStructList) validateGetParameters(index *float64) error {
 	return nil
 }

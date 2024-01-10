@@ -7,6 +7,10 @@ package monitoraaddiagnosticsetting
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorAadDiagnosticSettingEnabledLogList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAadDiagnosticSettingEnabledLogList) validateGetParameters(index *float64) error {
 	return nil
 }

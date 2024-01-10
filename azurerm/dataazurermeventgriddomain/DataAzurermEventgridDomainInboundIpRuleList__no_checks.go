@@ -7,6 +7,10 @@ package dataazurermeventgriddomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermEventgridDomainInboundIpRuleList) validateGetParameters(index *float64) error {
 	return nil
 }

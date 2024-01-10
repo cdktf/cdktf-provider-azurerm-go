@@ -7,6 +7,10 @@ package dataazurermroledefinition
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermRoleDefinitionPermissionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermRoleDefinitionPermissionsList) validateGetParameters(index *float64) error {
 	return nil
 }

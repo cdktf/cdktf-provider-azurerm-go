@@ -5,10 +5,10 @@ package automationpython3package
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/automationpython3package/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/automationpython3package/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -144,6 +144,9 @@ type AutomationPython3Package interface {
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1141,6 +1144,32 @@ func (a *jsiiProxy_AutomationPython3Package) SynthesizeAttributes() *map[string]
 	_jsii_.Invoke(
 		a,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AutomationPython3Package) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		a,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AutomationPython3Package) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

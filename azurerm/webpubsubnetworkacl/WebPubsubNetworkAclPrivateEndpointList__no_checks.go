@@ -7,6 +7,10 @@ package webpubsubnetworkacl
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WebPubsubNetworkAclPrivateEndpointList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebPubsubNetworkAclPrivateEndpointList) validateGetParameters(index *float64) error {
 	return nil
 }

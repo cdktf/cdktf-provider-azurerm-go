@@ -5,10 +5,10 @@ package firewall
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/firewall/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/firewall/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -171,6 +171,9 @@ type Firewall interface {
 	ResetVirtualHub()
 	ResetZones()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1433,6 +1436,32 @@ func (f *jsiiProxy_Firewall) SynthesizeAttributes() *map[string]interface{} {
 	_jsii_.Invoke(
 		f,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_Firewall) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		f,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_Firewall) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		f,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

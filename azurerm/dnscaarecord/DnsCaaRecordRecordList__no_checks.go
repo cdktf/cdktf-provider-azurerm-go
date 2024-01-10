@@ -7,6 +7,10 @@ package dnscaarecord
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DnsCaaRecordRecordList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsCaaRecordRecordList) validateGetParameters(index *float64) error {
 	return nil
 }

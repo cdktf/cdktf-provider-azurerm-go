@@ -7,6 +7,10 @@ package dataazurermiothub
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermIothubIdentityList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermIothubIdentityList) validateGetParameters(index *float64) error {
 	return nil
 }

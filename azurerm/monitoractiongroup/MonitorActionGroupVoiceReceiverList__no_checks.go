@@ -7,6 +7,10 @@ package monitoractiongroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorActionGroupVoiceReceiverList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorActionGroupVoiceReceiverList) validateGetParameters(index *float64) error {
 	return nil
 }

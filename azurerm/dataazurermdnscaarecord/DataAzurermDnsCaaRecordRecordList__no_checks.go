@@ -7,6 +7,10 @@ package dataazurermdnscaarecord
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermDnsCaaRecordRecordList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermDnsCaaRecordRecordList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package lboutboundrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LbOutboundRuleFrontendIpConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbOutboundRuleFrontendIpConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }

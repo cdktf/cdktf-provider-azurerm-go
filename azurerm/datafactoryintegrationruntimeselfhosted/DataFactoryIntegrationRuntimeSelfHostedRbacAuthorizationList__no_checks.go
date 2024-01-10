@@ -7,6 +7,10 @@ package datafactoryintegrationruntimeselfhosted
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationList) validateGetParameters(index *float64) error {
 	return nil
 }

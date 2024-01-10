@@ -7,6 +7,10 @@ package dataazurermmonitorscheduledqueryruleslog
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermMonitorScheduledQueryRulesLogCriteriaDimensionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermMonitorScheduledQueryRulesLogCriteriaDimensionList) validateGetParameters(index *float64) error {
 	return nil
 }

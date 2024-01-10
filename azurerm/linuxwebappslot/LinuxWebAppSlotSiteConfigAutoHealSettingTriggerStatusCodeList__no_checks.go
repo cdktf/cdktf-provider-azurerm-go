@@ -7,6 +7,10 @@ package linuxwebappslot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeList) validateGetParameters(index *float64) error {
 	return nil
 }

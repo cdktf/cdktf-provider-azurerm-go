@@ -7,6 +7,10 @@ package firewallapplicationrulecollection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FirewallApplicationRuleCollectionRuleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirewallApplicationRuleCollectionRuleList) validateGetParameters(index *float64) error {
 	return nil
 }

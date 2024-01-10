@@ -7,6 +7,10 @@ package virtualdesktophostpool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualDesktopHostPoolScheduledAgentUpdatesScheduleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualDesktopHostPoolScheduledAgentUpdatesScheduleList) validateGetParameters(index *float64) error {
 	return nil
 }

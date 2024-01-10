@@ -7,6 +7,10 @@ package dataazurermlinuxwebapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermLinuxWebAppSiteConfigList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermLinuxWebAppSiteConfigList) validateGetParameters(index *float64) error {
 	return nil
 }

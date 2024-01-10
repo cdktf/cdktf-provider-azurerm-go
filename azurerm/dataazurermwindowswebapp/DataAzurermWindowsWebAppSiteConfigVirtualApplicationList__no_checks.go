@@ -7,6 +7,10 @@ package dataazurermwindowswebapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermWindowsWebAppSiteConfigVirtualApplicationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermWindowsWebAppSiteConfigVirtualApplicationList) validateGetParameters(index *float64) error {
 	return nil
 }

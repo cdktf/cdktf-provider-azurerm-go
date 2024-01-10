@@ -7,6 +7,10 @@ package mobilenetworksim
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MobileNetworkSimStaticIpConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MobileNetworkSimStaticIpConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }

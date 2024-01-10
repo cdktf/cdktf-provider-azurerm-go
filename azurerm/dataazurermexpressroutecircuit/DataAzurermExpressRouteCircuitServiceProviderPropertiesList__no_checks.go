@@ -7,6 +7,10 @@ package dataazurermexpressroutecircuit
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermExpressRouteCircuitServiceProviderPropertiesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermExpressRouteCircuitServiceProviderPropertiesList) validateGetParameters(index *float64) error {
 	return nil
 }

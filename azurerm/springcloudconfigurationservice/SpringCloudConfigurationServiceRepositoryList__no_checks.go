@@ -7,6 +7,10 @@ package springcloudconfigurationservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpringCloudConfigurationServiceRepositoryList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudConfigurationServiceRepositoryList) validateGetParameters(index *float64) error {
 	return nil
 }

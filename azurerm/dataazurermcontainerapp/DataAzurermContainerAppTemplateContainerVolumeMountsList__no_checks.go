@@ -7,6 +7,10 @@ package dataazurermcontainerapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermContainerAppTemplateContainerVolumeMountsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermContainerAppTemplateContainerVolumeMountsList) validateGetParameters(index *float64) error {
 	return nil
 }

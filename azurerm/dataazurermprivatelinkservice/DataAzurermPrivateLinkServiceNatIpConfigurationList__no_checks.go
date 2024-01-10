@@ -7,6 +7,10 @@ package dataazurermprivatelinkservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermPrivateLinkServiceNatIpConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermPrivateLinkServiceNatIpConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }

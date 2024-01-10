@@ -7,6 +7,10 @@ package securitycenterautomation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecurityCenterAutomationActionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityCenterAutomationActionList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package dataazurermmonitordatacollectionrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsLogAnalyticsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermMonitorDataCollectionRuleDestinationsLogAnalyticsList) validateGetParameters(index *float64) error {
 	return nil
 }

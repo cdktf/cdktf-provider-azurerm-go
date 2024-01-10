@@ -7,6 +7,10 @@ package managedapplicationdefinition
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_ManagedApplicationDefinitionAuthorizationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedApplicationDefinitionAuthorizationList) validateGetParameters(index *float64) error {
 	return nil
 }

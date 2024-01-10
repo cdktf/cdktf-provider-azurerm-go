@@ -7,6 +7,10 @@ package privatednstxtrecord
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrivateDnsTxtRecordRecordList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateDnsTxtRecordRecordList) validateGetParameters(index *float64) error {
 	return nil
 }

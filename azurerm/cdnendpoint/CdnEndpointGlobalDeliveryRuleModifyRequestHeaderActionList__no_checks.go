@@ -7,6 +7,10 @@ package cdnendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CdnEndpointGlobalDeliveryRuleModifyRequestHeaderActionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnEndpointGlobalDeliveryRuleModifyRequestHeaderActionList) validateGetParameters(index *float64) error {
 	return nil
 }

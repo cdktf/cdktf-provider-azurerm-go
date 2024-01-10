@@ -5,10 +5,10 @@ package virtualnetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/virtualnetwork/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/virtualnetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -161,6 +161,9 @@ type VirtualNetwork interface {
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1324,6 +1327,32 @@ func (v *jsiiProxy_VirtualNetwork) SynthesizeAttributes() *map[string]interface{
 	_jsii_.Invoke(
 		v,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (v *jsiiProxy_VirtualNetwork) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		v,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (v *jsiiProxy_VirtualNetwork) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

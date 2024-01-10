@@ -5,10 +5,10 @@ package privatednsresolverforwardingrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/privatednsresolverforwardingrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/privatednsresolverforwardingrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -136,6 +136,9 @@ type PrivateDnsResolverForwardingRule interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1055,6 +1058,32 @@ func (p *jsiiProxy_PrivateDnsResolverForwardingRule) SynthesizeAttributes() *map
 	_jsii_.Invoke(
 		p,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PrivateDnsResolverForwardingRule) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		p,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PrivateDnsResolverForwardingRule) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

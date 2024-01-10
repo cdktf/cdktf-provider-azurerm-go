@@ -7,6 +7,10 @@ package dataazurermsentinelalertruletemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermSentinelAlertRuleTemplateScheduledTemplateList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermSentinelAlertRuleTemplateScheduledTemplateList) validateGetParameters(index *float64) error {
 	return nil
 }

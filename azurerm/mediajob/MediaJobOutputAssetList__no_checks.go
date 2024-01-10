@@ -7,6 +7,10 @@ package mediajob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MediaJobOutputAssetList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaJobOutputAssetList) validateGetParameters(index *float64) error {
 	return nil
 }

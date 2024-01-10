@@ -7,6 +7,10 @@ package monitoralertprometheusrulegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorAlertPrometheusRuleGroupRuleActionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAlertPrometheusRuleGroupRuleActionList) validateGetParameters(index *float64) error {
 	return nil
 }

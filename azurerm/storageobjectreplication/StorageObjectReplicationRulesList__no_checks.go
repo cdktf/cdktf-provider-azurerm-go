@@ -7,6 +7,10 @@ package storageobjectreplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageObjectReplicationRulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageObjectReplicationRulesList) validateGetParameters(index *float64) error {
 	return nil
 }

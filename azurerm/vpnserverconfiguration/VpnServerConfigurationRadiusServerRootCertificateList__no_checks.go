@@ -7,6 +7,10 @@ package vpnserverconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpnServerConfigurationRadiusServerRootCertificateList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnServerConfigurationRadiusServerRootCertificateList) validateGetParameters(index *float64) error {
 	return nil
 }

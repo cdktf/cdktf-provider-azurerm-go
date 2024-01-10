@@ -7,6 +7,10 @@ package applicationgateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApplicationGatewayAuthenticationCertificateList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationGatewayAuthenticationCertificateList) validateGetParameters(index *float64) error {
 	return nil
 }

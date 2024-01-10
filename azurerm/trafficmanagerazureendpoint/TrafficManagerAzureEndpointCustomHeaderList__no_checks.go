@@ -7,6 +7,10 @@ package trafficmanagerazureendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TrafficManagerAzureEndpointCustomHeaderList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TrafficManagerAzureEndpointCustomHeaderList) validateGetParameters(index *float64) error {
 	return nil
 }

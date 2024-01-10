@@ -7,6 +7,10 @@ package monitorscheduledqueryrulesalertv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2CriteriaList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2CriteriaList) validateGetParameters(index *float64) error {
 	return nil
 }

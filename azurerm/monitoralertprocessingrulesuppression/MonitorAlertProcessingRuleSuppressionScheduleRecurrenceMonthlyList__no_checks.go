@@ -7,6 +7,10 @@ package monitoralertprocessingrulesuppression
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionScheduleRecurrenceMonthlyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorAlertProcessingRuleSuppressionScheduleRecurrenceMonthlyList) validateGetParameters(index *float64) error {
 	return nil
 }

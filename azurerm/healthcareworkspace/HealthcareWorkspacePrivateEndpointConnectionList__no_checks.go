@@ -7,6 +7,10 @@ package healthcareworkspace
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HealthcareWorkspacePrivateEndpointConnectionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareWorkspacePrivateEndpointConnectionList) validateGetParameters(index *float64) error {
 	return nil
 }

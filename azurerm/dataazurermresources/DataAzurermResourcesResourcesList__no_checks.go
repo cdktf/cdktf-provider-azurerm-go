@@ -7,6 +7,10 @@ package dataazurermresources
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermResourcesResourcesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermResourcesResourcesList) validateGetParameters(index *float64) error {
 	return nil
 }

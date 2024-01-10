@@ -7,6 +7,10 @@ package containergroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerGroupContainerReadinessProbeHttpGetList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerGroupContainerReadinessProbeHttpGetList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package functionapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FunctionAppSiteConfigScmIpRestrictionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FunctionAppSiteConfigScmIpRestrictionList) validateGetParameters(index *float64) error {
 	return nil
 }

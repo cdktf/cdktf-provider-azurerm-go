@@ -7,6 +7,10 @@ package dataazurermmobilenetworkpacketcorecontrolplane
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermMobileNetworkPacketCoreControlPlanePlatformList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermMobileNetworkPacketCoreControlPlanePlatformList) validateGetParameters(index *float64) error {
 	return nil
 }

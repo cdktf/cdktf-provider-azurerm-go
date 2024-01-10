@@ -7,6 +7,10 @@ package windowsvirtualmachine
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WindowsVirtualMachineAdditionalUnattendContentList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsVirtualMachineAdditionalUnattendContentList) validateGetParameters(index *float64) error {
 	return nil
 }

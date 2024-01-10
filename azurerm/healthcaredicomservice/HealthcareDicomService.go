@@ -5,10 +5,10 @@ package healthcaredicomservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/healthcaredicomservice/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/healthcaredicomservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -140,6 +140,9 @@ type HealthcareDicomService interface {
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1097,6 +1100,32 @@ func (h *jsiiProxy_HealthcareDicomService) SynthesizeAttributes() *map[string]in
 	_jsii_.Invoke(
 		h,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_HealthcareDicomService) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		h,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_HealthcareDicomService) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		h,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

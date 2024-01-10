@@ -7,6 +7,10 @@ package dataazurermsnapshot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermSnapshotEncryptionSettingsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermSnapshotEncryptionSettingsList) validateGetParameters(index *float64) error {
 	return nil
 }

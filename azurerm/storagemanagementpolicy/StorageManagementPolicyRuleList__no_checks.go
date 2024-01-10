@@ -7,6 +7,10 @@ package storagemanagementpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageManagementPolicyRuleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageManagementPolicyRuleList) validateGetParameters(index *float64) error {
 	return nil
 }

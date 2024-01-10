@@ -7,6 +7,10 @@ package datafactorytriggerblobevent
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFactoryTriggerBlobEventPipelineList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryTriggerBlobEventPipelineList) validateGetParameters(index *float64) error {
 	return nil
 }

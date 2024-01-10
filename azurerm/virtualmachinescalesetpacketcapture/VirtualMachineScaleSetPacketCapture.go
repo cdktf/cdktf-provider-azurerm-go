@@ -5,10 +5,10 @@ package virtualmachinescalesetpacketcapture
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/virtualmachinescalesetpacketcapture/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/virtualmachinescalesetpacketcapture/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -148,6 +148,9 @@ type VirtualMachineScaleSetPacketCapture interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1184,6 +1187,32 @@ func (v *jsiiProxy_VirtualMachineScaleSetPacketCapture) SynthesizeAttributes() *
 	_jsii_.Invoke(
 		v,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (v *jsiiProxy_VirtualMachineScaleSetPacketCapture) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		v,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (v *jsiiProxy_VirtualMachineScaleSetPacketCapture) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

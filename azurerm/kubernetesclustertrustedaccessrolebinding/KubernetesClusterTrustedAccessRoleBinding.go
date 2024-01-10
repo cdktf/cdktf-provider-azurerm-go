@@ -5,10 +5,10 @@ package kubernetesclustertrustedaccessrolebinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/kubernetesclustertrustedaccessrolebinding/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/kubernetesclustertrustedaccessrolebinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -128,6 +128,9 @@ type KubernetesClusterTrustedAccessRoleBinding interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -969,6 +972,32 @@ func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBinding) SynthesizeAttribut
 	_jsii_.Invoke(
 		k,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBinding) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		k,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (k *jsiiProxy_KubernetesClusterTrustedAccessRoleBinding) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		k,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

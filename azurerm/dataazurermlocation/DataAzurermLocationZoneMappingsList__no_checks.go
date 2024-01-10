@@ -7,6 +7,10 @@ package dataazurermlocation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermLocationZoneMappingsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermLocationZoneMappingsList) validateGetParameters(index *float64) error {
 	return nil
 }

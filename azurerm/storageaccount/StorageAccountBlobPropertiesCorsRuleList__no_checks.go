@@ -7,6 +7,10 @@ package storageaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageAccountBlobPropertiesCorsRuleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageAccountBlobPropertiesCorsRuleList) validateGetParameters(index *float64) error {
 	return nil
 }

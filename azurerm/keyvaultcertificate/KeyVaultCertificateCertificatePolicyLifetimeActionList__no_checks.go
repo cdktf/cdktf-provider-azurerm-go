@@ -7,6 +7,10 @@ package keyvaultcertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KeyVaultCertificateCertificatePolicyLifetimeActionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyVaultCertificateCertificatePolicyLifetimeActionList) validateGetParameters(index *float64) error {
 	return nil
 }

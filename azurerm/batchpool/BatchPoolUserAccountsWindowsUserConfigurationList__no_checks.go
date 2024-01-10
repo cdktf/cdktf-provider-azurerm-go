@@ -7,6 +7,10 @@ package batchpool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BatchPoolUserAccountsWindowsUserConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchPoolUserAccountsWindowsUserConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }

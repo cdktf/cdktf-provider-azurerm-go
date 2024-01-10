@@ -7,6 +7,10 @@ package linuxfunctionappslot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LinuxFunctionAppSlotSiteCredentialList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxFunctionAppSlotSiteCredentialList) validateGetParameters(index *float64) error {
 	return nil
 }

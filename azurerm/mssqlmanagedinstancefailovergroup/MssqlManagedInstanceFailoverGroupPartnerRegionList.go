@@ -5,9 +5,9 @@ package mssqlmanagedinstancefailovergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/mssqlmanagedinstancefailovergroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/mssqlmanagedinstancefailovergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -29,6 +29,11 @@ type MssqlManagedInstanceFailoverGroupPartnerRegionList interface {
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
+	// Creating an iterator for this complex list.
+	//
+	// The list will be converted into a map with the mapKeyAttributeName as the key.
+	// Experimental.
+	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) MssqlManagedInstanceFailoverGroupPartnerRegionOutputReference
@@ -156,6 +161,22 @@ func (j *jsiiProxy_MssqlManagedInstanceFailoverGroupPartnerRegionList)SetWrapsSe
 		"wrapsSet",
 		val,
 	)
+}
+
+func (m *jsiiProxy_MssqlManagedInstanceFailoverGroupPartnerRegionList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+	if err := m.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
+		panic(err)
+	}
+	var returns cdktf.DynamicListTerraformIterator
+
+	_jsii_.Invoke(
+		m,
+		"allWithMapKey",
+		[]interface{}{mapKeyAttributeName},
+		&returns,
+	)
+
+	return returns
 }
 
 func (m *jsiiProxy_MssqlManagedInstanceFailoverGroupPartnerRegionList) ComputeFqn() *string {

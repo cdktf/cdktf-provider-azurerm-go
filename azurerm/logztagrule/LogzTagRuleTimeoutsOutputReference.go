@@ -5,9 +5,9 @@ package logztagrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v11/logztagrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/logztagrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

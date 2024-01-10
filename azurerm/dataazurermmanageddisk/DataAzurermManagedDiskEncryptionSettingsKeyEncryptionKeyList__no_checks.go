@@ -7,6 +7,10 @@ package dataazurermmanageddisk
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurermManagedDiskEncryptionSettingsKeyEncryptionKeyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermManagedDiskEncryptionSettingsKeyEncryptionKeyList) validateGetParameters(index *float64) error {
 	return nil
 }
