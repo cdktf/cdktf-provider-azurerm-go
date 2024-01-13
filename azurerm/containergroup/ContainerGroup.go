@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/container_group azurerm_container_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/container_group azurerm_container_group}.
 type ContainerGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -91,6 +91,9 @@ type ContainerGroup interface {
 	OsType() *string
 	SetOsType(val *string)
 	OsTypeInput() *string
+	Priority() *string
+	SetPriority(val *string)
+	PriorityInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -194,6 +197,7 @@ type ContainerGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPriority()
 	ResetRestartPolicy()
 	ResetSku()
 	ResetSubnetIds()
@@ -678,6 +682,26 @@ func (j *jsiiProxy_ContainerGroup) OsTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerGroup) Priority() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"priority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerGroup) PriorityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"priorityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerGroup) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -879,7 +903,7 @@ func (j *jsiiProxy_ContainerGroup) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/container_group azurerm_container_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/container_group azurerm_container_group} Resource.
 func NewContainerGroup(scope constructs.Construct, id *string, config *ContainerGroupConfig) ContainerGroup {
 	_init_.Initialize()
 
@@ -897,7 +921,7 @@ func NewContainerGroup(scope constructs.Construct, id *string, config *Container
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/container_group azurerm_container_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/container_group azurerm_container_group} Resource.
 func NewContainerGroup_Override(c ContainerGroup, scope constructs.Construct, id *string, config *ContainerGroupConfig) {
 	_init_.Initialize()
 
@@ -1063,6 +1087,17 @@ func (j *jsiiProxy_ContainerGroup)SetOsType(val *string) {
 	_jsii_.Set(
 		j,
 		"osType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerGroup)SetPriority(val *string) {
+	if err := j.validateSetPriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"priority",
 		val,
 	)
 }
@@ -1701,6 +1736,14 @@ func (c *jsiiProxy_ContainerGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerGroup) ResetPriority() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPriority",
 		nil, // no parameters
 	)
 }

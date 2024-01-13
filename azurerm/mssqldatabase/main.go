@@ -49,6 +49,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "identity", GoGetter: "Identity"},
+			_jsii_.MemberProperty{JsiiProperty: "identityInput", GoGetter: "IdentityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "import", GoGetter: "Import"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
@@ -76,6 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putIdentity", GoMethod: "PutIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "putImport", GoMethod: "PutImport"},
 			_jsii_.MemberMethod{JsiiMethod: "putLongTermRetentionPolicy", GoMethod: "PutLongTermRetentionPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putShortTermRetentionPolicy", GoMethod: "PutShortTermRetentionPolicy"},
@@ -96,6 +99,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEnclaveType", GoMethod: "ResetEnclaveType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGeoBackupEnabled", GoMethod: "ResetGeoBackupEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIdentity", GoMethod: "ResetIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImport", GoMethod: "ResetImport"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLedgerEnabled", GoMethod: "ResetLedgerEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLicenseType", GoMethod: "ResetLicenseType"},
@@ -117,6 +121,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetThreatDetectionPolicy", GoMethod: "ResetThreatDetectionPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTransparentDataEncryptionEnabled", GoMethod: "ResetTransparentDataEncryptionEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTransparentDataEncryptionKeyAutomaticRotationEnabled", GoMethod: "ResetTransparentDataEncryptionKeyAutomaticRotationEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTransparentDataEncryptionKeyVaultKeyId", GoMethod: "ResetTransparentDataEncryptionKeyVaultKeyId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetZoneRedundant", GoMethod: "ResetZoneRedundant"},
 			_jsii_.MemberProperty{JsiiProperty: "restoreDroppedDatabaseId", GoGetter: "RestoreDroppedDatabaseId"},
 			_jsii_.MemberProperty{JsiiProperty: "restoreDroppedDatabaseIdInput", GoGetter: "RestoreDroppedDatabaseIdInput"},
@@ -149,6 +155,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "transparentDataEncryptionEnabled", GoGetter: "TransparentDataEncryptionEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "transparentDataEncryptionEnabledInput", GoGetter: "TransparentDataEncryptionEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "transparentDataEncryptionKeyAutomaticRotationEnabled", GoGetter: "TransparentDataEncryptionKeyAutomaticRotationEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "transparentDataEncryptionKeyAutomaticRotationEnabledInput", GoGetter: "TransparentDataEncryptionKeyAutomaticRotationEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "transparentDataEncryptionKeyVaultKeyId", GoGetter: "TransparentDataEncryptionKeyVaultKeyId"},
+			_jsii_.MemberProperty{JsiiProperty: "transparentDataEncryptionKeyVaultKeyIdInput", GoGetter: "TransparentDataEncryptionKeyVaultKeyIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneRedundant", GoGetter: "ZoneRedundant"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneRedundantInput", GoGetter: "ZoneRedundantInput"},
 		},
@@ -161,6 +171,46 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.mssqlDatabase.MssqlDatabaseConfig",
 		reflect.TypeOf((*MssqlDatabaseConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.mssqlDatabase.MssqlDatabaseIdentity",
+		reflect.TypeOf((*MssqlDatabaseIdentity)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.mssqlDatabase.MssqlDatabaseIdentityOutputReference",
+		reflect.TypeOf((*MssqlDatabaseIdentityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "identityIds", GoGetter: "IdentityIds"},
+			_jsii_.MemberProperty{JsiiProperty: "identityIdsInput", GoGetter: "IdentityIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MssqlDatabaseIdentityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.mssqlDatabase.MssqlDatabaseImport",

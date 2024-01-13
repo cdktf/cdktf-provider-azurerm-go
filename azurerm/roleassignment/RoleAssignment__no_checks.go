@@ -135,6 +135,10 @@ func (j *jsiiProxy_RoleAssignment) validateSetPrincipalIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_RoleAssignment) validateSetPrincipalTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RoleAssignment) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

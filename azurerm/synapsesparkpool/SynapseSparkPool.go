@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool}.
 type SynapseSparkPool interface {
 	cdktf.TerraformResource
 	AutoPause() SynapseSparkPoolAutoPauseOutputReference
@@ -786,7 +786,7 @@ func (j *jsiiProxy_SynapseSparkPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool} Resource.
 func NewSynapseSparkPool(scope constructs.Construct, id *string, config *SynapseSparkPoolConfig) SynapseSparkPool {
 	_init_.Initialize()
 
@@ -804,7 +804,7 @@ func NewSynapseSparkPool(scope constructs.Construct, id *string, config *Synapse
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool} Resource.
 func NewSynapseSparkPool_Override(s SynapseSparkPool, scope constructs.Construct, id *string, config *SynapseSparkPoolConfig) {
 	_init_.Initialize()
 

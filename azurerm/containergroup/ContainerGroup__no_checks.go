@@ -175,6 +175,10 @@ func (j *jsiiProxy_ContainerGroup) validateSetOsTypeParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_ContainerGroup) validateSetPriorityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerGroup) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

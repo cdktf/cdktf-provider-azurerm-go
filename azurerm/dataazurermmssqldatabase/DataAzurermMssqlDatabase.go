@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/data-sources/mssql_database azurerm_mssql_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/data-sources/mssql_database azurerm_mssql_database}.
 type DataAzurermMssqlDatabase interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -40,6 +40,7 @@ type DataAzurermMssqlDatabase interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() DataAzurermMssqlDatabaseIdentityList
 	IdInput() *string
 	LicenseType() *string
 	// Experimental.
@@ -74,6 +75,9 @@ type DataAzurermMssqlDatabase interface {
 	TerraformResourceType() *string
 	Timeouts() DataAzurermMssqlDatabaseTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TransparentDataEncryptionEnabled() cdktf.IResolvable
+	TransparentDataEncryptionKeyAutomaticRotationEnabled() cdktf.IResolvable
+	TransparentDataEncryptionKeyVaultKeyId() *string
 	ZoneRedundant() cdktf.IResolvable
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -230,6 +234,16 @@ func (j *jsiiProxy_DataAzurermMssqlDatabase) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMssqlDatabase) Identity() DataAzurermMssqlDatabaseIdentityList {
+	var returns DataAzurermMssqlDatabaseIdentityList
+	_jsii_.Get(
+		j,
+		"identity",
 		&returns,
 	)
 	return returns
@@ -445,6 +459,36 @@ func (j *jsiiProxy_DataAzurermMssqlDatabase) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermMssqlDatabase) TransparentDataEncryptionEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"transparentDataEncryptionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMssqlDatabase) TransparentDataEncryptionKeyAutomaticRotationEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"transparentDataEncryptionKeyAutomaticRotationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermMssqlDatabase) TransparentDataEncryptionKeyVaultKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentDataEncryptionKeyVaultKeyId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermMssqlDatabase) ZoneRedundant() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -456,7 +500,7 @@ func (j *jsiiProxy_DataAzurermMssqlDatabase) ZoneRedundant() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/data-sources/mssql_database azurerm_mssql_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/data-sources/mssql_database azurerm_mssql_database} Data Source.
 func NewDataAzurermMssqlDatabase(scope constructs.Construct, id *string, config *DataAzurermMssqlDatabaseConfig) DataAzurermMssqlDatabase {
 	_init_.Initialize()
 
@@ -474,7 +518,7 @@ func NewDataAzurermMssqlDatabase(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/data-sources/mssql_database azurerm_mssql_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/data-sources/mssql_database azurerm_mssql_database} Data Source.
 func NewDataAzurermMssqlDatabase_Override(d DataAzurermMssqlDatabase, scope constructs.Construct, id *string, config *DataAzurermMssqlDatabaseConfig) {
 	_init_.Initialize()
 

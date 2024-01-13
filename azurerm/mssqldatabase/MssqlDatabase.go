@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/mssql_database azurerm_mssql_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/mssql_database azurerm_mssql_database}.
 type MssqlDatabase interface {
 	cdktf.TerraformResource
 	AutoPauseDelayInMinutes() *float64
@@ -62,6 +62,8 @@ type MssqlDatabase interface {
 	GeoBackupEnabledInput() interface{}
 	Id() *string
 	SetId(val *string)
+	Identity() MssqlDatabaseIdentityOutputReference
+	IdentityInput() *MssqlDatabaseIdentity
 	IdInput() *string
 	Import() MssqlDatabaseImportOutputReference
 	ImportInput() *MssqlDatabaseImport
@@ -146,6 +148,12 @@ type MssqlDatabase interface {
 	TransparentDataEncryptionEnabled() interface{}
 	SetTransparentDataEncryptionEnabled(val interface{})
 	TransparentDataEncryptionEnabledInput() interface{}
+	TransparentDataEncryptionKeyAutomaticRotationEnabled() interface{}
+	SetTransparentDataEncryptionKeyAutomaticRotationEnabled(val interface{})
+	TransparentDataEncryptionKeyAutomaticRotationEnabledInput() interface{}
+	TransparentDataEncryptionKeyVaultKeyId() *string
+	SetTransparentDataEncryptionKeyVaultKeyId(val *string)
+	TransparentDataEncryptionKeyVaultKeyIdInput() *string
 	ZoneRedundant() interface{}
 	SetZoneRedundant(val interface{})
 	ZoneRedundantInput() interface{}
@@ -192,6 +200,7 @@ type MssqlDatabase interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutIdentity(value *MssqlDatabaseIdentity)
 	PutImport(value *MssqlDatabaseImport)
 	PutLongTermRetentionPolicy(value *MssqlDatabaseLongTermRetentionPolicy)
 	PutShortTermRetentionPolicy(value *MssqlDatabaseShortTermRetentionPolicy)
@@ -205,6 +214,7 @@ type MssqlDatabase interface {
 	ResetEnclaveType()
 	ResetGeoBackupEnabled()
 	ResetId()
+	ResetIdentity()
 	ResetImport()
 	ResetLedgerEnabled()
 	ResetLicenseType()
@@ -228,6 +238,8 @@ type MssqlDatabase interface {
 	ResetThreatDetectionPolicy()
 	ResetTimeouts()
 	ResetTransparentDataEncryptionEnabled()
+	ResetTransparentDataEncryptionKeyAutomaticRotationEnabled()
+	ResetTransparentDataEncryptionKeyVaultKeyId()
 	ResetZoneRedundant()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -472,6 +484,26 @@ func (j *jsiiProxy_MssqlDatabase) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlDatabase) Identity() MssqlDatabaseIdentityOutputReference {
+	var returns MssqlDatabaseIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlDatabase) IdentityInput() *MssqlDatabaseIdentity {
+	var returns *MssqlDatabaseIdentity
+	_jsii_.Get(
+		j,
+		"identityInput",
 		&returns,
 	)
 	return returns
@@ -1007,6 +1039,46 @@ func (j *jsiiProxy_MssqlDatabase) TransparentDataEncryptionEnabledInput() interf
 	return returns
 }
 
+func (j *jsiiProxy_MssqlDatabase) TransparentDataEncryptionKeyAutomaticRotationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"transparentDataEncryptionKeyAutomaticRotationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlDatabase) TransparentDataEncryptionKeyAutomaticRotationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"transparentDataEncryptionKeyAutomaticRotationEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlDatabase) TransparentDataEncryptionKeyVaultKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentDataEncryptionKeyVaultKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlDatabase) TransparentDataEncryptionKeyVaultKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentDataEncryptionKeyVaultKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MssqlDatabase) ZoneRedundant() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1028,7 +1100,7 @@ func (j *jsiiProxy_MssqlDatabase) ZoneRedundantInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/mssql_database azurerm_mssql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/mssql_database azurerm_mssql_database} Resource.
 func NewMssqlDatabase(scope constructs.Construct, id *string, config *MssqlDatabaseConfig) MssqlDatabase {
 	_init_.Initialize()
 
@@ -1046,7 +1118,7 @@ func NewMssqlDatabase(scope constructs.Construct, id *string, config *MssqlDatab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/mssql_database azurerm_mssql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/mssql_database azurerm_mssql_database} Resource.
 func NewMssqlDatabase_Override(m MssqlDatabase, scope constructs.Construct, id *string, config *MssqlDatabaseConfig) {
 	_init_.Initialize()
 
@@ -1396,6 +1468,28 @@ func (j *jsiiProxy_MssqlDatabase)SetTransparentDataEncryptionEnabled(val interfa
 	_jsii_.Set(
 		j,
 		"transparentDataEncryptionEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlDatabase)SetTransparentDataEncryptionKeyAutomaticRotationEnabled(val interface{}) {
+	if err := j.validateSetTransparentDataEncryptionKeyAutomaticRotationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transparentDataEncryptionKeyAutomaticRotationEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlDatabase)SetTransparentDataEncryptionKeyVaultKeyId(val *string) {
+	if err := j.validateSetTransparentDataEncryptionKeyVaultKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transparentDataEncryptionKeyVaultKeyId",
 		val,
 	)
 }
@@ -1764,6 +1858,17 @@ func (m *jsiiProxy_MssqlDatabase) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (m *jsiiProxy_MssqlDatabase) PutIdentity(value *MssqlDatabaseIdentity) {
+	if err := m.validatePutIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putIdentity",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MssqlDatabase) PutImport(value *MssqlDatabaseImport) {
 	if err := m.validatePutImportParameters(value); err != nil {
 		panic(err)
@@ -1879,6 +1984,14 @@ func (m *jsiiProxy_MssqlDatabase) ResetId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlDatabase) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetIdentity",
 		nil, // no parameters
 	)
 }
@@ -2047,6 +2160,22 @@ func (m *jsiiProxy_MssqlDatabase) ResetTransparentDataEncryptionEnabled() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetTransparentDataEncryptionEnabled",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlDatabase) ResetTransparentDataEncryptionKeyAutomaticRotationEnabled() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTransparentDataEncryptionKeyAutomaticRotationEnabled",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlDatabase) ResetTransparentDataEncryptionKeyVaultKeyId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTransparentDataEncryptionKeyVaultKeyId",
 		nil, // no parameters
 	)
 }

@@ -51,6 +51,10 @@ func (c *jsiiProxy_ContainerAppIngressOutputReference) validatePutCustomDomainPa
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAppIngressOutputReference) validatePutIpSecurityRestrictionParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAppIngressOutputReference) validatePutTrafficWeightParameters(value interface{}) error {
 	return nil
 }

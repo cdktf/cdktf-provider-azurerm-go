@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/api_management_custom_domain azurerm_api_management_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/api_management_custom_domain azurerm_api_management_custom_domain}.
 type ApiManagementCustomDomain interface {
 	cdktf.TerraformResource
 	ApiManagementId() *string
@@ -477,7 +477,7 @@ func (j *jsiiProxy_ApiManagementCustomDomain) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/api_management_custom_domain azurerm_api_management_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/api_management_custom_domain azurerm_api_management_custom_domain} Resource.
 func NewApiManagementCustomDomain(scope constructs.Construct, id *string, config *ApiManagementCustomDomainConfig) ApiManagementCustomDomain {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewApiManagementCustomDomain(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/api_management_custom_domain azurerm_api_management_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/api_management_custom_domain azurerm_api_management_custom_domain} Resource.
 func NewApiManagementCustomDomain_Override(a ApiManagementCustomDomain, scope constructs.Construct, id *string, config *ApiManagementCustomDomainConfig) {
 	_init_.Initialize()
 

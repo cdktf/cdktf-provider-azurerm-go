@@ -75,6 +75,10 @@ func (m *jsiiProxy_MssqlDatabase) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (m *jsiiProxy_MssqlDatabase) validatePutIdentityParameters(value *MssqlDatabaseIdentity) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlDatabase) validatePutImportParameters(value *MssqlDatabaseImport) error {
 	return nil
 }
@@ -224,6 +228,14 @@ func (j *jsiiProxy_MssqlDatabase) validateSetTagsParameters(val *map[string]*str
 }
 
 func (j *jsiiProxy_MssqlDatabase) validateSetTransparentDataEncryptionEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MssqlDatabase) validateSetTransparentDataEncryptionKeyAutomaticRotationEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MssqlDatabase) validateSetTransparentDataEncryptionKeyVaultKeyIdParameters(val *string) error {
 	return nil
 }
 

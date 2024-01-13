@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy}.
 type CdnFrontdoorFirewallPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -81,6 +81,9 @@ type CdnFrontdoorFirewallPolicy interface {
 	RedirectUrl() *string
 	SetRedirectUrl(val *string)
 	RedirectUrlInput() *string
+	RequestBodyCheckEnabled() interface{}
+	SetRequestBodyCheckEnabled(val interface{})
+	RequestBodyCheckEnabledInput() interface{}
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
@@ -154,6 +157,7 @@ type CdnFrontdoorFirewallPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRedirectUrl()
+	ResetRequestBodyCheckEnabled()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -494,6 +498,26 @@ func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) RedirectUrlInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) RequestBodyCheckEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requestBodyCheckEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) RequestBodyCheckEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requestBodyCheckEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) ResourceGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -605,7 +629,7 @@ func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Resource.
 func NewCdnFrontdoorFirewallPolicy(scope constructs.Construct, id *string, config *CdnFrontdoorFirewallPolicyConfig) CdnFrontdoorFirewallPolicy {
 	_init_.Initialize()
 
@@ -623,7 +647,7 @@ func NewCdnFrontdoorFirewallPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Resource.
 func NewCdnFrontdoorFirewallPolicy_Override(c CdnFrontdoorFirewallPolicy, scope constructs.Construct, id *string, config *CdnFrontdoorFirewallPolicyConfig) {
 	_init_.Initialize()
 
@@ -775,6 +799,17 @@ func (j *jsiiProxy_CdnFrontdoorFirewallPolicy)SetRedirectUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"redirectUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CdnFrontdoorFirewallPolicy)SetRequestBodyCheckEnabled(val interface{}) {
+	if err := j.validateSetRequestBodyCheckEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestBodyCheckEnabled",
 		val,
 	)
 }
@@ -1258,6 +1293,14 @@ func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) ResetRedirectUrl() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRedirectUrl",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) ResetRequestBodyCheckEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRequestBodyCheckEnabled",
 		nil, // no parameters
 	)
 }

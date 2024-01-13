@@ -147,6 +147,10 @@ func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) validateSetRedirectUrlParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) validateSetRequestBodyCheckEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/batch_pool azurerm_batch_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/batch_pool azurerm_batch_pool}.
 type BatchPool interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -1024,7 +1024,7 @@ func (j *jsiiProxy_BatchPool) WindowsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/batch_pool azurerm_batch_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/batch_pool azurerm_batch_pool} Resource.
 func NewBatchPool(scope constructs.Construct, id *string, config *BatchPoolConfig) BatchPool {
 	_init_.Initialize()
 
@@ -1042,7 +1042,7 @@ func NewBatchPool(scope constructs.Construct, id *string, config *BatchPoolConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/batch_pool azurerm_batch_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/batch_pool azurerm_batch_pool} Resource.
 func NewBatchPool_Override(b BatchPool, scope constructs.Construct, id *string, config *BatchPoolConfig) {
 	_init_.Initialize()
 

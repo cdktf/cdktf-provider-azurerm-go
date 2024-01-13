@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/spatial_anchors_account azurerm_spatial_anchors_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/spatial_anchors_account azurerm_spatial_anchors_account}.
 type SpatialAnchorsAccount interface {
 	cdktf.TerraformResource
 	AccountDomain() *string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_SpatialAnchorsAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/spatial_anchors_account azurerm_spatial_anchors_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/spatial_anchors_account azurerm_spatial_anchors_account} Resource.
 func NewSpatialAnchorsAccount(scope constructs.Construct, id *string, config *SpatialAnchorsAccountConfig) SpatialAnchorsAccount {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewSpatialAnchorsAccount(scope constructs.Construct, id *string, config *Sp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/spatial_anchors_account azurerm_spatial_anchors_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/spatial_anchors_account azurerm_spatial_anchors_account} Resource.
 func NewSpatialAnchorsAccount_Override(s SpatialAnchorsAccount, scope constructs.Construct, id *string, config *SpatialAnchorsAccountConfig) {
 	_init_.Initialize()
 

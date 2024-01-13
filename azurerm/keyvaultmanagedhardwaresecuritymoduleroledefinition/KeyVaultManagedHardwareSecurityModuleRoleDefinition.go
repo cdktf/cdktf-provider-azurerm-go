@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition}.
 type KeyVaultManagedHardwareSecurityModuleRoleDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -474,7 +474,7 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) VaultBas
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition} Resource.
 func NewKeyVaultManagedHardwareSecurityModuleRoleDefinition(scope constructs.Construct, id *string, config *KeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig) KeyVaultManagedHardwareSecurityModuleRoleDefinition {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewKeyVaultManagedHardwareSecurityModuleRoleDefinition(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition} Resource.
 func NewKeyVaultManagedHardwareSecurityModuleRoleDefinition_Override(k KeyVaultManagedHardwareSecurityModuleRoleDefinition, scope constructs.Construct, id *string, config *KeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig) {
 	_init_.Initialize()
 

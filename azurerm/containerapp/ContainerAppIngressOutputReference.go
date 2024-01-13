@@ -44,6 +44,8 @@ type ContainerAppIngressOutputReference interface {
 	Fqn() *string
 	InternalValue() *ContainerAppIngress
 	SetInternalValue(val *ContainerAppIngress)
+	IpSecurityRestriction() ContainerAppIngressIpSecurityRestrictionList
+	IpSecurityRestrictionInput() interface{}
 	TargetPort() *float64
 	SetTargetPort(val *float64)
 	TargetPortInput() *float64
@@ -85,11 +87,13 @@ type ContainerAppIngressOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCustomDomain(value *ContainerAppIngressCustomDomain)
+	PutIpSecurityRestriction(value interface{})
 	PutTrafficWeight(value interface{})
 	ResetAllowInsecureConnections()
 	ResetCustomDomain()
 	ResetExposedPort()
 	ResetExternalEnabled()
+	ResetIpSecurityRestriction()
 	ResetTransport()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -241,6 +245,26 @@ func (j *jsiiProxy_ContainerAppIngressOutputReference) InternalValue() *Containe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppIngressOutputReference) IpSecurityRestriction() ContainerAppIngressIpSecurityRestrictionList {
+	var returns ContainerAppIngressIpSecurityRestrictionList
+	_jsii_.Get(
+		j,
+		"ipSecurityRestriction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppIngressOutputReference) IpSecurityRestrictionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipSecurityRestrictionInput",
 		&returns,
 	)
 	return returns
@@ -661,6 +685,17 @@ func (c *jsiiProxy_ContainerAppIngressOutputReference) PutCustomDomain(value *Co
 	)
 }
 
+func (c *jsiiProxy_ContainerAppIngressOutputReference) PutIpSecurityRestriction(value interface{}) {
+	if err := c.validatePutIpSecurityRestrictionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putIpSecurityRestriction",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerAppIngressOutputReference) PutTrafficWeight(value interface{}) {
 	if err := c.validatePutTrafficWeightParameters(value); err != nil {
 		panic(err)
@@ -700,6 +735,14 @@ func (c *jsiiProxy_ContainerAppIngressOutputReference) ResetExternalEnabled() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetExternalEnabled",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppIngressOutputReference) ResetIpSecurityRestriction() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpSecurityRestriction",
 		nil, // no parameters
 	)
 }

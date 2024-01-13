@@ -28,6 +28,7 @@ type DataAzurermApplicationGatewayTrustedClientCertificateOutputReference interf
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Data() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -106,6 +107,16 @@ func (j *jsiiProxy_DataAzurermApplicationGatewayTrustedClientCertificateOutputRe
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGatewayTrustedClientCertificateOutputReference) Data() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"data",
 		&returns,
 	)
 	return returns

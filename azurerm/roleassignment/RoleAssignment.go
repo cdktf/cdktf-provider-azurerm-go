@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/role_assignment azurerm_role_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/role_assignment azurerm_role_assignment}.
 type RoleAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,8 @@ type RoleAssignment interface {
 	SetPrincipalId(val *string)
 	PrincipalIdInput() *string
 	PrincipalType() *string
+	SetPrincipalType(val *string)
+	PrincipalTypeInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -150,6 +152,7 @@ type RoleAssignment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrincipalType()
 	ResetRoleDefinitionId()
 	ResetRoleDefinitionName()
 	ResetSkipServicePrincipalAadCheck()
@@ -422,6 +425,16 @@ func (j *jsiiProxy_RoleAssignment) PrincipalType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RoleAssignment) PrincipalTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principalTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RoleAssignment) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -583,7 +596,7 @@ func (j *jsiiProxy_RoleAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/role_assignment azurerm_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/role_assignment azurerm_role_assignment} Resource.
 func NewRoleAssignment(scope constructs.Construct, id *string, config *RoleAssignmentConfig) RoleAssignment {
 	_init_.Initialize()
 
@@ -601,7 +614,7 @@ func NewRoleAssignment(scope constructs.Construct, id *string, config *RoleAssig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.86.0/docs/resources/role_assignment azurerm_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/role_assignment azurerm_role_assignment} Resource.
 func NewRoleAssignment_Override(r RoleAssignment, scope constructs.Construct, id *string, config *RoleAssignmentConfig) {
 	_init_.Initialize()
 
@@ -734,6 +747,17 @@ func (j *jsiiProxy_RoleAssignment)SetPrincipalId(val *string) {
 	_jsii_.Set(
 		j,
 		"principalId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RoleAssignment)SetPrincipalType(val *string) {
+	if err := j.validateSetPrincipalTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"principalType",
 		val,
 	)
 }
@@ -1217,6 +1241,14 @@ func (r *jsiiProxy_RoleAssignment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RoleAssignment) ResetPrincipalType() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPrincipalType",
 		nil, // no parameters
 	)
 }
