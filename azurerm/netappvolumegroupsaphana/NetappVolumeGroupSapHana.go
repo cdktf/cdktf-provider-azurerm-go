@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/netapp_volume_group_sap_hana azurerm_netapp_volume_group_sap_hana}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/netapp_volume_group_sap_hana azurerm_netapp_volume_group_sap_hana}.
 type NetappVolumeGroupSapHana interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -495,7 +495,7 @@ func (j *jsiiProxy_NetappVolumeGroupSapHana) VolumeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/netapp_volume_group_sap_hana azurerm_netapp_volume_group_sap_hana} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/netapp_volume_group_sap_hana azurerm_netapp_volume_group_sap_hana} Resource.
 func NewNetappVolumeGroupSapHana(scope constructs.Construct, id *string, config *NetappVolumeGroupSapHanaConfig) NetappVolumeGroupSapHana {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewNetappVolumeGroupSapHana(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/netapp_volume_group_sap_hana azurerm_netapp_volume_group_sap_hana} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/netapp_volume_group_sap_hana azurerm_netapp_volume_group_sap_hana} Resource.
 func NewNetappVolumeGroupSapHana_Override(n NetappVolumeGroupSapHana, scope constructs.Construct, id *string, config *NetappVolumeGroupSapHanaConfig) {
 	_init_.Initialize()
 

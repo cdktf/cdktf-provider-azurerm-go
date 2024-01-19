@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/data-sources/monitor_diagnostic_categories azurerm_monitor_diagnostic_categories}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/data-sources/monitor_diagnostic_categories azurerm_monitor_diagnostic_categories}.
 type DataAzurermMonitorDiagnosticCategories interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_DataAzurermMonitorDiagnosticCategories) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/data-sources/monitor_diagnostic_categories azurerm_monitor_diagnostic_categories} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/data-sources/monitor_diagnostic_categories azurerm_monitor_diagnostic_categories} Data Source.
 func NewDataAzurermMonitorDiagnosticCategories(scope constructs.Construct, id *string, config *DataAzurermMonitorDiagnosticCategoriesConfig) DataAzurermMonitorDiagnosticCategories {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewDataAzurermMonitorDiagnosticCategories(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/data-sources/monitor_diagnostic_categories azurerm_monitor_diagnostic_categories} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/data-sources/monitor_diagnostic_categories azurerm_monitor_diagnostic_categories} Data Source.
 func NewDataAzurermMonitorDiagnosticCategories_Override(d DataAzurermMonitorDiagnosticCategories, scope constructs.Construct, id *string, config *DataAzurermMonitorDiagnosticCategoriesConfig) {
 	_init_.Initialize()
 

@@ -22,6 +22,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "customerManagedKeyId", GoGetter: "CustomerManagedKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "dnsZone", GoGetter: "DnsZone"},
 			_jsii_.MemberProperty{JsiiProperty: "dnsZonePartnerId", GoGetter: "DnsZonePartnerId"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqdn", GoGetter: "Fqdn"},

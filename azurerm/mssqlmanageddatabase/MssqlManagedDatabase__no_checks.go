@@ -79,6 +79,10 @@ func (m *jsiiProxy_MssqlManagedDatabase) validatePutLongTermRetentionPolicyParam
 	return nil
 }
 
+func (m *jsiiProxy_MssqlManagedDatabase) validatePutPointInTimeRestoreParameters(value *MssqlManagedDatabasePointInTimeRestore) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlManagedDatabase) validatePutTimeoutsParameters(value *MssqlManagedDatabaseTimeouts) error {
 	return nil
 }

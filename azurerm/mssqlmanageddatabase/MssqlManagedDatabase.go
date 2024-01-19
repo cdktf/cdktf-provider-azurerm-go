@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/mssql_managed_database azurerm_mssql_managed_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/mssql_managed_database azurerm_mssql_managed_database}.
 type MssqlManagedDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -56,6 +56,8 @@ type MssqlManagedDatabase interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PointInTimeRestore() MssqlManagedDatabasePointInTimeRestoreOutputReference
+	PointInTimeRestoreInput() *MssqlManagedDatabasePointInTimeRestore
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -121,12 +123,14 @@ type MssqlManagedDatabase interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLongTermRetentionPolicy(value *MssqlManagedDatabaseLongTermRetentionPolicy)
+	PutPointInTimeRestore(value *MssqlManagedDatabasePointInTimeRestore)
 	PutTimeouts(value *MssqlManagedDatabaseTimeouts)
 	ResetId()
 	ResetLongTermRetentionPolicy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPointInTimeRestore()
 	ResetShortTermRetentionDays()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -327,6 +331,26 @@ func (j *jsiiProxy_MssqlManagedDatabase) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_MssqlManagedDatabase) PointInTimeRestore() MssqlManagedDatabasePointInTimeRestoreOutputReference {
+	var returns MssqlManagedDatabasePointInTimeRestoreOutputReference
+	_jsii_.Get(
+		j,
+		"pointInTimeRestore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlManagedDatabase) PointInTimeRestoreInput() *MssqlManagedDatabasePointInTimeRestore {
+	var returns *MssqlManagedDatabasePointInTimeRestore
+	_jsii_.Get(
+		j,
+		"pointInTimeRestoreInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MssqlManagedDatabase) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -428,7 +452,7 @@ func (j *jsiiProxy_MssqlManagedDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/mssql_managed_database azurerm_mssql_managed_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/mssql_managed_database azurerm_mssql_managed_database} Resource.
 func NewMssqlManagedDatabase(scope constructs.Construct, id *string, config *MssqlManagedDatabaseConfig) MssqlManagedDatabase {
 	_init_.Initialize()
 
@@ -446,7 +470,7 @@ func NewMssqlManagedDatabase(scope constructs.Construct, id *string, config *Mss
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.87.0/docs/resources/mssql_managed_database azurerm_mssql_managed_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/mssql_managed_database azurerm_mssql_managed_database} Resource.
 func NewMssqlManagedDatabase_Override(m MssqlManagedDatabase, scope constructs.Construct, id *string, config *MssqlManagedDatabaseConfig) {
 	_init_.Initialize()
 
@@ -933,6 +957,17 @@ func (m *jsiiProxy_MssqlManagedDatabase) PutLongTermRetentionPolicy(value *Mssql
 	)
 }
 
+func (m *jsiiProxy_MssqlManagedDatabase) PutPointInTimeRestore(value *MssqlManagedDatabasePointInTimeRestore) {
+	if err := m.validatePutPointInTimeRestoreParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putPointInTimeRestore",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MssqlManagedDatabase) PutTimeouts(value *MssqlManagedDatabaseTimeouts) {
 	if err := m.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -964,6 +999,14 @@ func (m *jsiiProxy_MssqlManagedDatabase) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlManagedDatabase) ResetPointInTimeRestore() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPointInTimeRestore",
 		nil, // no parameters
 	)
 }
