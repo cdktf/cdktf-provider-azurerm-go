@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/automation_schedule azurerm_automation_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/automation_schedule azurerm_automation_schedule}.
 type AutomationSchedule interface {
 	cdktf.TerraformResource
 	AutomationAccountName() *string
@@ -64,8 +64,8 @@ type AutomationSchedule interface {
 	MonthDays() *[]*float64
 	SetMonthDays(val *[]*float64)
 	MonthDaysInput() *[]*float64
-	MonthlyOccurrence() AutomationScheduleMonthlyOccurrenceList
-	MonthlyOccurrenceInput() interface{}
+	MonthlyOccurrence() AutomationScheduleMonthlyOccurrenceOutputReference
+	MonthlyOccurrenceInput() *AutomationScheduleMonthlyOccurrence
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -144,7 +144,7 @@ type AutomationSchedule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutMonthlyOccurrence(value interface{})
+	PutMonthlyOccurrence(value *AutomationScheduleMonthlyOccurrence)
 	PutTimeouts(value *AutomationScheduleTimeouts)
 	ResetDescription()
 	ResetExpiryTime()
@@ -407,8 +407,8 @@ func (j *jsiiProxy_AutomationSchedule) MonthDaysInput() *[]*float64 {
 	return returns
 }
 
-func (j *jsiiProxy_AutomationSchedule) MonthlyOccurrence() AutomationScheduleMonthlyOccurrenceList {
-	var returns AutomationScheduleMonthlyOccurrenceList
+func (j *jsiiProxy_AutomationSchedule) MonthlyOccurrence() AutomationScheduleMonthlyOccurrenceOutputReference {
+	var returns AutomationScheduleMonthlyOccurrenceOutputReference
 	_jsii_.Get(
 		j,
 		"monthlyOccurrence",
@@ -417,8 +417,8 @@ func (j *jsiiProxy_AutomationSchedule) MonthlyOccurrence() AutomationScheduleMon
 	return returns
 }
 
-func (j *jsiiProxy_AutomationSchedule) MonthlyOccurrenceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AutomationSchedule) MonthlyOccurrenceInput() *AutomationScheduleMonthlyOccurrence {
+	var returns *AutomationScheduleMonthlyOccurrence
 	_jsii_.Get(
 		j,
 		"monthlyOccurrenceInput",
@@ -618,7 +618,7 @@ func (j *jsiiProxy_AutomationSchedule) WeekDaysInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/automation_schedule azurerm_automation_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/automation_schedule azurerm_automation_schedule} Resource.
 func NewAutomationSchedule(scope constructs.Construct, id *string, config *AutomationScheduleConfig) AutomationSchedule {
 	_init_.Initialize()
 
@@ -636,7 +636,7 @@ func NewAutomationSchedule(scope constructs.Construct, id *string, config *Autom
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/automation_schedule azurerm_automation_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/automation_schedule azurerm_automation_schedule} Resource.
 func NewAutomationSchedule_Override(a AutomationSchedule, scope constructs.Construct, id *string, config *AutomationScheduleConfig) {
 	_init_.Initialize()
 
@@ -1200,7 +1200,7 @@ func (a *jsiiProxy_AutomationSchedule) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (a *jsiiProxy_AutomationSchedule) PutMonthlyOccurrence(value interface{}) {
+func (a *jsiiProxy_AutomationSchedule) PutMonthlyOccurrence(value *AutomationScheduleMonthlyOccurrence) {
 	if err := a.validatePutMonthlyOccurrenceParameters(value); err != nil {
 		panic(err)
 	}

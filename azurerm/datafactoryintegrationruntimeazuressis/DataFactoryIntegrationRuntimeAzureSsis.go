@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis}.
 type DataFactoryIntegrationRuntimeAzureSsis interface {
 	cdktf.TerraformResource
 	CatalogInfo() DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference
@@ -29,6 +29,9 @@ type DataFactoryIntegrationRuntimeAzureSsis interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CredentialName() *string
+	SetCredentialName(val *string)
+	CredentialNameInput() *string
 	CustomSetupScript() DataFactoryIntegrationRuntimeAzureSsisCustomSetupScriptOutputReference
 	CustomSetupScriptInput() *DataFactoryIntegrationRuntimeAzureSsisCustomSetupScript
 	DataFactoryId() *string
@@ -159,6 +162,7 @@ type DataFactoryIntegrationRuntimeAzureSsis interface {
 	PutTimeouts(value *DataFactoryIntegrationRuntimeAzureSsisTimeouts)
 	PutVnetIntegration(value *DataFactoryIntegrationRuntimeAzureSsisVnetIntegration)
 	ResetCatalogInfo()
+	ResetCredentialName()
 	ResetCustomSetupScript()
 	ResetDescription()
 	ResetEdition()
@@ -248,6 +252,26 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) CredentialName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) CredentialNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialNameInput",
 		&returns,
 	)
 	return returns
@@ -714,7 +738,7 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) VnetIntegrationInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis} Resource.
 func NewDataFactoryIntegrationRuntimeAzureSsis(scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeAzureSsisConfig) DataFactoryIntegrationRuntimeAzureSsis {
 	_init_.Initialize()
 
@@ -732,7 +756,7 @@ func NewDataFactoryIntegrationRuntimeAzureSsis(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis} Resource.
 func NewDataFactoryIntegrationRuntimeAzureSsis_Override(d DataFactoryIntegrationRuntimeAzureSsis, scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeAzureSsisConfig) {
 	_init_.Initialize()
 
@@ -761,6 +785,17 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis)SetCount(val interface
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis)SetCredentialName(val *string) {
+	if err := j.validateSetCredentialNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialName",
 		val,
 	)
 }
@@ -1366,6 +1401,14 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) ResetCatalogInfo() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCatalogInfo",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) ResetCredentialName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCredentialName",
 		nil, // no parameters
 	)
 }

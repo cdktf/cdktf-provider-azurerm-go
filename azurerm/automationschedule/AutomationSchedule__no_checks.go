@@ -75,7 +75,7 @@ func (a *jsiiProxy_AutomationSchedule) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSchedule) validatePutMonthlyOccurrenceParameters(value interface{}) error {
+func (a *jsiiProxy_AutomationSchedule) validatePutMonthlyOccurrenceParameters(value *AutomationScheduleMonthlyOccurrence) error {
 	return nil
 }
 

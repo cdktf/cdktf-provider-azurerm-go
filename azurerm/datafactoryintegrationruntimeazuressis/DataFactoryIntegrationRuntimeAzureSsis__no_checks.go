@@ -131,6 +131,10 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validateSetCountParam
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validateSetCredentialNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

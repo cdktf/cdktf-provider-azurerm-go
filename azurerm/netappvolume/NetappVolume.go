@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/netapp_volume azurerm_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/netapp_volume azurerm_netapp_volume}.
 type NetappVolume interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -44,6 +44,9 @@ type NetappVolume interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionKeySource() *string
+	SetEncryptionKeySource(val *string)
+	EncryptionKeySourceInput() *string
 	ExportPolicyRule() NetappVolumeExportPolicyRuleList
 	ExportPolicyRuleInput() interface{}
 	// Experimental.
@@ -57,6 +60,9 @@ type NetappVolume interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KeyVaultPrivateEndpointId() *string
+	SetKeyVaultPrivateEndpointId(val *string)
+	KeyVaultPrivateEndpointIdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -178,8 +184,10 @@ type NetappVolume interface {
 	ResetCreateFromSnapshotResourceId()
 	ResetDataProtectionReplication()
 	ResetDataProtectionSnapshotPolicy()
+	ResetEncryptionKeySource()
 	ResetExportPolicyRule()
 	ResetId()
+	ResetKeyVaultPrivateEndpointId()
 	ResetNetworkFeatures()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -359,6 +367,26 @@ func (j *jsiiProxy_NetappVolume) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_NetappVolume) EncryptionKeySource() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionKeySource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) EncryptionKeySourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionKeySourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetappVolume) ExportPolicyRule() NetappVolumeExportPolicyRuleList {
 	var returns NetappVolumeExportPolicyRuleList
 	_jsii_.Get(
@@ -424,6 +452,26 @@ func (j *jsiiProxy_NetappVolume) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) KeyVaultPrivateEndpointId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultPrivateEndpointId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) KeyVaultPrivateEndpointIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultPrivateEndpointIdInput",
 		&returns,
 	)
 	return returns
@@ -840,7 +888,7 @@ func (j *jsiiProxy_NetappVolume) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
 func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolumeConfig) NetappVolume {
 	_init_.Initialize()
 
@@ -858,7 +906,7 @@ func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolum
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
 func NewNetappVolume_Override(n NetappVolume, scope constructs.Construct, id *string, config *NetappVolumeConfig) {
 	_init_.Initialize()
 
@@ -932,6 +980,17 @@ func (j *jsiiProxy_NetappVolume)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_NetappVolume)SetEncryptionKeySource(val *string) {
+	if err := j.validateSetEncryptionKeySourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encryptionKeySource",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetappVolume)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -947,6 +1006,17 @@ func (j *jsiiProxy_NetappVolume)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappVolume)SetKeyVaultPrivateEndpointId(val *string) {
+	if err := j.validateSetKeyVaultPrivateEndpointIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyVaultPrivateEndpointId",
 		val,
 	)
 }
@@ -1575,6 +1645,14 @@ func (n *jsiiProxy_NetappVolume) ResetDataProtectionSnapshotPolicy() {
 	)
 }
 
+func (n *jsiiProxy_NetappVolume) ResetEncryptionKeySource() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEncryptionKeySource",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetappVolume) ResetExportPolicyRule() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1587,6 +1665,14 @@ func (n *jsiiProxy_NetappVolume) ResetId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolume) ResetKeyVaultPrivateEndpointId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetKeyVaultPrivateEndpointId",
 		nil, // no parameters
 	)
 }

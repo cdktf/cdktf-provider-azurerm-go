@@ -79,6 +79,10 @@ func (n *jsiiProxy_NetappAccount) validatePutActiveDirectoryParameters(value *Ne
 	return nil
 }
 
+func (n *jsiiProxy_NetappAccount) validatePutIdentityParameters(value *NetappAccountIdentity) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappAccount) validatePutTimeoutsParameters(value *NetappAccountTimeouts) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/netapp_account azurerm_netapp_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/netapp_account azurerm_netapp_account}.
 type NetappAccount interface {
 	cdktf.TerraformResource
 	ActiveDirectory() NetappAccountActiveDirectoryOutputReference
@@ -43,6 +43,8 @@ type NetappAccount interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() NetappAccountIdentityOutputReference
+	IdentityInput() *NetappAccountIdentity
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -124,9 +126,11 @@ type NetappAccount interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutActiveDirectory(value *NetappAccountActiveDirectory)
+	PutIdentity(value *NetappAccountIdentity)
 	PutTimeouts(value *NetappAccountTimeouts)
 	ResetActiveDirectory()
 	ResetId()
+	ResetIdentity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -255,6 +259,26 @@ func (j *jsiiProxy_NetappAccount) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccount) Identity() NetappAccountIdentityOutputReference {
+	var returns NetappAccountIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccount) IdentityInput() *NetappAccountIdentity {
+	var returns *NetappAccountIdentity
+	_jsii_.Get(
+		j,
+		"identityInput",
 		&returns,
 	)
 	return returns
@@ -451,7 +475,7 @@ func (j *jsiiProxy_NetappAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/netapp_account azurerm_netapp_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/netapp_account azurerm_netapp_account} Resource.
 func NewNetappAccount(scope constructs.Construct, id *string, config *NetappAccountConfig) NetappAccount {
 	_init_.Initialize()
 
@@ -469,7 +493,7 @@ func NewNetappAccount(scope constructs.Construct, id *string, config *NetappAcco
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/netapp_account azurerm_netapp_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/netapp_account azurerm_netapp_account} Resource.
 func NewNetappAccount_Override(n NetappAccount, scope constructs.Construct, id *string, config *NetappAccountConfig) {
 	_init_.Initialize()
 
@@ -967,6 +991,17 @@ func (n *jsiiProxy_NetappAccount) PutActiveDirectory(value *NetappAccountActiveD
 	)
 }
 
+func (n *jsiiProxy_NetappAccount) PutIdentity(value *NetappAccountIdentity) {
+	if err := n.validatePutIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putIdentity",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetappAccount) PutTimeouts(value *NetappAccountTimeouts) {
 	if err := n.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -990,6 +1025,14 @@ func (n *jsiiProxy_NetappAccount) ResetId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappAccount) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIdentity",
 		nil, // no parameters
 	)
 }

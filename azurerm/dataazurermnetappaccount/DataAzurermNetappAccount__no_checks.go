@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAzurermNetappAccount) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataAzurermNetappAccount) validatePutIdentityParameters(value *DataAzurermNetappAccountIdentity) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermNetappAccount) validatePutTimeoutsParameters(value *DataAzurermNetappAccountTimeouts) error {
 	return nil
 }

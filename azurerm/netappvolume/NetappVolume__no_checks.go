@@ -127,7 +127,15 @@ func (j *jsiiProxy_NetappVolume) validateSetCreateFromSnapshotResourceIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolume) validateSetEncryptionKeySourceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolume) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappVolume) validateSetKeyVaultPrivateEndpointIdParameters(val *string) error {
 	return nil
 }
 

@@ -22,18 +22,18 @@ type DataAzurermEventhubSasConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/data-sources/eventhub_sas#connection_string DataAzurermEventhubSas#connection_string}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/data-sources/eventhub_sas#connection_string DataAzurermEventhubSas#connection_string}.
 	ConnectionString *string `field:"required" json:"connectionString" yaml:"connectionString"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/data-sources/eventhub_sas#expiry DataAzurermEventhubSas#expiry}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/data-sources/eventhub_sas#expiry DataAzurermEventhubSas#expiry}.
 	Expiry *string `field:"required" json:"expiry" yaml:"expiry"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/data-sources/eventhub_sas#id DataAzurermEventhubSas#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/data-sources/eventhub_sas#id DataAzurermEventhubSas#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/data-sources/eventhub_sas#timeouts DataAzurermEventhubSas#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/data-sources/eventhub_sas#timeouts DataAzurermEventhubSas#timeouts}
 	Timeouts *DataAzurermEventhubSasTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

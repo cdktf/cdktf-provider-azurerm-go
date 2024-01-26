@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job}.
 type StreamAnalyticsJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -93,6 +93,9 @@ type StreamAnalyticsJob interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	SkuName() *string
+	SetSkuName(val *string)
+	SkuNameInput() *string
 	StreamAnalyticsClusterId() *string
 	SetStreamAnalyticsClusterId(val *string)
 	StreamAnalyticsClusterIdInput() *string
@@ -175,6 +178,7 @@ type StreamAnalyticsJob interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSkuName()
 	ResetStreamAnalyticsClusterId()
 	ResetStreamingUnits()
 	ResetTags()
@@ -598,6 +602,26 @@ func (j *jsiiProxy_StreamAnalyticsJob) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StreamAnalyticsJob) SkuName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"skuName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamAnalyticsJob) SkuNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"skuNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StreamAnalyticsJob) StreamAnalyticsClusterId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -749,7 +773,7 @@ func (j *jsiiProxy_StreamAnalyticsJob) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job} Resource.
 func NewStreamAnalyticsJob(scope constructs.Construct, id *string, config *StreamAnalyticsJobConfig) StreamAnalyticsJob {
 	_init_.Initialize()
 
@@ -767,7 +791,7 @@ func NewStreamAnalyticsJob(scope constructs.Construct, id *string, config *Strea
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job} Resource.
 func NewStreamAnalyticsJob_Override(s StreamAnalyticsJob, scope constructs.Construct, id *string, config *StreamAnalyticsJobConfig) {
 	_init_.Initialize()
 
@@ -963,6 +987,17 @@ func (j *jsiiProxy_StreamAnalyticsJob)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StreamAnalyticsJob)SetSkuName(val *string) {
+	if err := j.validateSetSkuNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skuName",
 		val,
 	)
 }
@@ -1492,6 +1527,14 @@ func (s *jsiiProxy_StreamAnalyticsJob) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StreamAnalyticsJob) ResetSkuName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSkuName",
 		nil, // no parameters
 	)
 }

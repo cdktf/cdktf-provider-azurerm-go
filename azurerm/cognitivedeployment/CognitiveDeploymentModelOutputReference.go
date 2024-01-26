@@ -73,6 +73,7 @@ type CognitiveDeploymentModelOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -518,6 +519,14 @@ func (c *jsiiProxy_CognitiveDeploymentModelOutputReference) InterpolationForAttr
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CognitiveDeploymentModelOutputReference) ResetVersion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVersion",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CognitiveDeploymentModelOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

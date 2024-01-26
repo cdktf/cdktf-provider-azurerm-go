@@ -37,6 +37,7 @@ type DataAzurermContainerAppIngressOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataAzurermContainerAppIngress
 	SetInternalValue(val *DataAzurermContainerAppIngress)
+	IpSecurityRestriction() DataAzurermContainerAppIngressIpSecurityRestrictionList
 	TargetPort() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -182,6 +183,16 @@ func (j *jsiiProxy_DataAzurermContainerAppIngressOutputReference) InternalValue(
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermContainerAppIngressOutputReference) IpSecurityRestriction() DataAzurermContainerAppIngressIpSecurityRestrictionList {
+	var returns DataAzurermContainerAppIngressIpSecurityRestrictionList
+	_jsii_.Get(
+		j,
+		"ipSecurityRestriction",
 		&returns,
 	)
 	return returns

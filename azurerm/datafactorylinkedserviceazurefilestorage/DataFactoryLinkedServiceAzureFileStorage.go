@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/data_factory_linked_service_azure_file_storage azurerm_data_factory_linked_service_azure_file_storage}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/data_factory_linked_service_azure_file_storage azurerm_data_factory_linked_service_azure_file_storage}.
 type DataFactoryLinkedServiceAzureFileStorage interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -643,7 +643,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureFileStorage) UserIdInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/data_factory_linked_service_azure_file_storage azurerm_data_factory_linked_service_azure_file_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/data_factory_linked_service_azure_file_storage azurerm_data_factory_linked_service_azure_file_storage} Resource.
 func NewDataFactoryLinkedServiceAzureFileStorage(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureFileStorageConfig) DataFactoryLinkedServiceAzureFileStorage {
 	_init_.Initialize()
 
@@ -661,7 +661,7 @@ func NewDataFactoryLinkedServiceAzureFileStorage(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/data_factory_linked_service_azure_file_storage azurerm_data_factory_linked_service_azure_file_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/data_factory_linked_service_azure_file_storage azurerm_data_factory_linked_service_azure_file_storage} Resource.
 func NewDataFactoryLinkedServiceAzureFileStorage_Override(d DataFactoryLinkedServiceAzureFileStorage, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureFileStorageConfig) {
 	_init_.Initialize()
 

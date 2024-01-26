@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/data-sources/netapp_account azurerm_netapp_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/data-sources/netapp_account azurerm_netapp_account}.
 type DataAzurermNetappAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -37,6 +37,8 @@ type DataAzurermNetappAccount interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() DataAzurermNetappAccountIdentityOutputReference
+	IdentityInput() *DataAzurermNetappAccountIdentity
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -57,6 +59,7 @@ type DataAzurermNetappAccount interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -90,8 +93,10 @@ type DataAzurermNetappAccount interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutIdentity(value *DataAzurermNetappAccountIdentity)
 	PutTimeouts(value *DataAzurermNetappAccountTimeouts)
 	ResetId()
+	ResetIdentity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -190,6 +195,26 @@ func (j *jsiiProxy_DataAzurermNetappAccount) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermNetappAccount) Identity() DataAzurermNetappAccountIdentityOutputReference {
+	var returns DataAzurermNetappAccountIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermNetappAccount) IdentityInput() *DataAzurermNetappAccountIdentity {
+	var returns *DataAzurermNetappAccountIdentity
+	_jsii_.Get(
+		j,
+		"identityInput",
 		&returns,
 	)
 	return returns
@@ -295,6 +320,16 @@ func (j *jsiiProxy_DataAzurermNetappAccount) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermNetappAccount) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermNetappAccount) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -346,7 +381,7 @@ func (j *jsiiProxy_DataAzurermNetappAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/data-sources/netapp_account azurerm_netapp_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/data-sources/netapp_account azurerm_netapp_account} Data Source.
 func NewDataAzurermNetappAccount(scope constructs.Construct, id *string, config *DataAzurermNetappAccountConfig) DataAzurermNetappAccount {
 	_init_.Initialize()
 
@@ -364,7 +399,7 @@ func NewDataAzurermNetappAccount(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/data-sources/netapp_account azurerm_netapp_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/data-sources/netapp_account azurerm_netapp_account} Data Source.
 func NewDataAzurermNetappAccount_Override(d DataAzurermNetappAccount, scope constructs.Construct, id *string, config *DataAzurermNetappAccountConfig) {
 	_init_.Initialize()
 
@@ -739,6 +774,17 @@ func (d *jsiiProxy_DataAzurermNetappAccount) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (d *jsiiProxy_DataAzurermNetappAccount) PutIdentity(value *DataAzurermNetappAccountIdentity) {
+	if err := d.validatePutIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putIdentity",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataAzurermNetappAccount) PutTimeouts(value *DataAzurermNetappAccountTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -754,6 +800,14 @@ func (d *jsiiProxy_DataAzurermNetappAccount) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermNetappAccount) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIdentity",
 		nil, // no parameters
 	)
 }

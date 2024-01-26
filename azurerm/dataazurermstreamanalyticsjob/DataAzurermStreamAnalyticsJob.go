@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/data-sources/stream_analytics_job azurerm_stream_analytics_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/data-sources/stream_analytics_job azurerm_stream_analytics_job}.
 type DataAzurermStreamAnalyticsJob interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -66,6 +66,7 @@ type DataAzurermStreamAnalyticsJob interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	SkuName() *string
 	StartMode() *string
 	StartTime() *string
 	StreamingUnits() *float64
@@ -398,6 +399,16 @@ func (j *jsiiProxy_DataAzurermStreamAnalyticsJob) ResourceGroupNameInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermStreamAnalyticsJob) SkuName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"skuName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermStreamAnalyticsJob) StartMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -489,7 +500,7 @@ func (j *jsiiProxy_DataAzurermStreamAnalyticsJob) TransformationQuery() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/data-sources/stream_analytics_job azurerm_stream_analytics_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/data-sources/stream_analytics_job azurerm_stream_analytics_job} Data Source.
 func NewDataAzurermStreamAnalyticsJob(scope constructs.Construct, id *string, config *DataAzurermStreamAnalyticsJobConfig) DataAzurermStreamAnalyticsJob {
 	_init_.Initialize()
 
@@ -507,7 +518,7 @@ func NewDataAzurermStreamAnalyticsJob(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/data-sources/stream_analytics_job azurerm_stream_analytics_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/data-sources/stream_analytics_job azurerm_stream_analytics_job} Data Source.
 func NewDataAzurermStreamAnalyticsJob_Override(d DataAzurermStreamAnalyticsJob, scope constructs.Construct, id *string, config *DataAzurermStreamAnalyticsJobConfig) {
 	_init_.Initialize()
 

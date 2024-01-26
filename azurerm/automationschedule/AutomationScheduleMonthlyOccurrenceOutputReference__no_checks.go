@@ -63,7 +63,7 @@ func (j *jsiiProxy_AutomationScheduleMonthlyOccurrenceOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_AutomationScheduleMonthlyOccurrenceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AutomationScheduleMonthlyOccurrenceOutputReference) validateSetInternalValueParameters(val *AutomationScheduleMonthlyOccurrence) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_AutomationScheduleMonthlyOccurrenceOutputReference) validateS
 	return nil
 }
 
-func validateNewAutomationScheduleMonthlyOccurrenceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAutomationScheduleMonthlyOccurrenceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

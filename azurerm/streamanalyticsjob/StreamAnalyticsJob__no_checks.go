@@ -163,6 +163,10 @@ func (j *jsiiProxy_StreamAnalyticsJob) validateSetResourceGroupNameParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsJob) validateSetSkuNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsJob) validateSetStreamAnalyticsClusterIdParameters(val *string) error {
 	return nil
 }

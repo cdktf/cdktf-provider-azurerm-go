@@ -207,32 +207,12 @@ func (a *jsiiProxy_AutomationSchedule) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (a *jsiiProxy_AutomationSchedule) validatePutMonthlyOccurrenceParameters(value interface{}) error {
+func (a *jsiiProxy_AutomationSchedule) validatePutMonthlyOccurrenceParameters(value *AutomationScheduleMonthlyOccurrence) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*AutomationScheduleMonthlyOccurrence:
-		value := value.(*[]*AutomationScheduleMonthlyOccurrence)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*AutomationScheduleMonthlyOccurrence:
-		value_ := value.([]*AutomationScheduleMonthlyOccurrence)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AutomationScheduleMonthlyOccurrence; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

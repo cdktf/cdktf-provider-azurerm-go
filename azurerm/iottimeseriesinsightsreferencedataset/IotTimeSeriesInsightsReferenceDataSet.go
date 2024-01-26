@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/iot_time_series_insights_reference_data_set azurerm_iot_time_series_insights_reference_data_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/iot_time_series_insights_reference_data_set azurerm_iot_time_series_insights_reference_data_set}.
 type IotTimeSeriesInsightsReferenceDataSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -474,7 +474,7 @@ func (j *jsiiProxy_IotTimeSeriesInsightsReferenceDataSet) TimeSeriesInsightsEnvi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/iot_time_series_insights_reference_data_set azurerm_iot_time_series_insights_reference_data_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/iot_time_series_insights_reference_data_set azurerm_iot_time_series_insights_reference_data_set} Resource.
 func NewIotTimeSeriesInsightsReferenceDataSet(scope constructs.Construct, id *string, config *IotTimeSeriesInsightsReferenceDataSetConfig) IotTimeSeriesInsightsReferenceDataSet {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewIotTimeSeriesInsightsReferenceDataSet(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.88.0/docs/resources/iot_time_series_insights_reference_data_set azurerm_iot_time_series_insights_reference_data_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/iot_time_series_insights_reference_data_set azurerm_iot_time_series_insights_reference_data_set} Resource.
 func NewIotTimeSeriesInsightsReferenceDataSet_Override(i IotTimeSeriesInsightsReferenceDataSet, scope constructs.Construct, id *string, config *IotTimeSeriesInsightsReferenceDataSetConfig) {
 	_init_.Initialize()
 
