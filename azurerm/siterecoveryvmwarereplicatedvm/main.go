@@ -1,0 +1,323 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+package siterecoveryvmwarereplicatedvm
+
+import (
+	"reflect"
+
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+)
+
+func init() {
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.siteRecoveryVmwareReplicatedVm.SiteRecoveryVmwareReplicatedVm",
+		reflect.TypeOf((*SiteRecoveryVmwareReplicatedVm)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
+			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "applianceName", GoGetter: "ApplianceName"},
+			_jsii_.MemberProperty{JsiiProperty: "applianceNameInput", GoGetter: "ApplianceNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
+			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultLogStorageAccountId", GoGetter: "DefaultLogStorageAccountId"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultLogStorageAccountIdInput", GoGetter: "DefaultLogStorageAccountIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultRecoveryDiskType", GoGetter: "DefaultRecoveryDiskType"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultRecoveryDiskTypeInput", GoGetter: "DefaultRecoveryDiskTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultTargetDiskEncryptionSetId", GoGetter: "DefaultTargetDiskEncryptionSetId"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultTargetDiskEncryptionSetIdInput", GoGetter: "DefaultTargetDiskEncryptionSetIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
+			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "licenseType", GoGetter: "LicenseType"},
+			_jsii_.MemberProperty{JsiiProperty: "licenseTypeInput", GoGetter: "LicenseTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberProperty{JsiiProperty: "managedDisk", GoGetter: "ManagedDisk"},
+			_jsii_.MemberProperty{JsiiProperty: "managedDiskInput", GoGetter: "ManagedDiskInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
+			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
+			_jsii_.MemberProperty{JsiiProperty: "multiVmGroupName", GoGetter: "MultiVmGroupName"},
+			_jsii_.MemberProperty{JsiiProperty: "multiVmGroupNameInput", GoGetter: "MultiVmGroupNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "networkInterface", GoGetter: "NetworkInterface"},
+			_jsii_.MemberProperty{JsiiProperty: "networkInterfaceInput", GoGetter: "NetworkInterfaceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "physicalServerCredentialName", GoGetter: "PhysicalServerCredentialName"},
+			_jsii_.MemberProperty{JsiiProperty: "physicalServerCredentialNameInput", GoGetter: "PhysicalServerCredentialNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
+			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putManagedDisk", GoMethod: "PutManagedDisk"},
+			_jsii_.MemberMethod{JsiiMethod: "putNetworkInterface", GoMethod: "PutNetworkInterface"},
+			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
+			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberProperty{JsiiProperty: "recoveryReplicationPolicyId", GoGetter: "RecoveryReplicationPolicyId"},
+			_jsii_.MemberProperty{JsiiProperty: "recoveryReplicationPolicyIdInput", GoGetter: "RecoveryReplicationPolicyIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "recoveryVaultId", GoGetter: "RecoveryVaultId"},
+			_jsii_.MemberProperty{JsiiProperty: "recoveryVaultIdInput", GoGetter: "RecoveryVaultIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDefaultLogStorageAccountId", GoMethod: "ResetDefaultLogStorageAccountId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDefaultRecoveryDiskType", GoMethod: "ResetDefaultRecoveryDiskType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDefaultTargetDiskEncryptionSetId", GoMethod: "ResetDefaultTargetDiskEncryptionSetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLicenseType", GoMethod: "ResetLicenseType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetManagedDisk", GoMethod: "ResetManagedDisk"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMultiVmGroupName", GoMethod: "ResetMultiVmGroupName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNetworkInterface", GoMethod: "ResetNetworkInterface"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetAvailabilitySetId", GoMethod: "ResetTargetAvailabilitySetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetBootDiagnosticsStorageAccountId", GoMethod: "ResetTargetBootDiagnosticsStorageAccountId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetNetworkId", GoMethod: "ResetTargetNetworkId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetProximityPlacementGroupId", GoMethod: "ResetTargetProximityPlacementGroupId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetVmSize", GoMethod: "ResetTargetVmSize"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetZone", GoMethod: "ResetTargetZone"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTestNetworkId", GoMethod: "ResetTestNetworkId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceVmName", GoGetter: "SourceVmName"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceVmNameInput", GoGetter: "SourceVmNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
+			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
+			_jsii_.MemberProperty{JsiiProperty: "targetAvailabilitySetId", GoGetter: "TargetAvailabilitySetId"},
+			_jsii_.MemberProperty{JsiiProperty: "targetAvailabilitySetIdInput", GoGetter: "TargetAvailabilitySetIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetBootDiagnosticsStorageAccountId", GoGetter: "TargetBootDiagnosticsStorageAccountId"},
+			_jsii_.MemberProperty{JsiiProperty: "targetBootDiagnosticsStorageAccountIdInput", GoGetter: "TargetBootDiagnosticsStorageAccountIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetNetworkId", GoGetter: "TargetNetworkId"},
+			_jsii_.MemberProperty{JsiiProperty: "targetNetworkIdInput", GoGetter: "TargetNetworkIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetProximityPlacementGroupId", GoGetter: "TargetProximityPlacementGroupId"},
+			_jsii_.MemberProperty{JsiiProperty: "targetProximityPlacementGroupIdInput", GoGetter: "TargetProximityPlacementGroupIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetResourceGroupId", GoGetter: "TargetResourceGroupId"},
+			_jsii_.MemberProperty{JsiiProperty: "targetResourceGroupIdInput", GoGetter: "TargetResourceGroupIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetVmName", GoGetter: "TargetVmName"},
+			_jsii_.MemberProperty{JsiiProperty: "targetVmNameInput", GoGetter: "TargetVmNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetVmSize", GoGetter: "TargetVmSize"},
+			_jsii_.MemberProperty{JsiiProperty: "targetVmSizeInput", GoGetter: "TargetVmSizeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetZone", GoGetter: "TargetZone"},
+			_jsii_.MemberProperty{JsiiProperty: "targetZoneInput", GoGetter: "TargetZoneInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
+			_jsii_.MemberProperty{JsiiProperty: "testNetworkId", GoGetter: "TestNetworkId"},
+			_jsii_.MemberProperty{JsiiProperty: "testNetworkIdInput", GoGetter: "TestNetworkIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
+			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SiteRecoveryVmwareReplicatedVm{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.siteRecoveryVmwareReplicatedVm.SiteRecoveryVmwareReplicatedVmConfig",
+		reflect.TypeOf((*SiteRecoveryVmwareReplicatedVmConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.siteRecoveryVmwareReplicatedVm.SiteRecoveryVmwareReplicatedVmManagedDisk",
+		reflect.TypeOf((*SiteRecoveryVmwareReplicatedVmManagedDisk)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.siteRecoveryVmwareReplicatedVm.SiteRecoveryVmwareReplicatedVmManagedDiskList",
+		reflect.TypeOf((*SiteRecoveryVmwareReplicatedVmManagedDiskList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SiteRecoveryVmwareReplicatedVmManagedDiskList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.siteRecoveryVmwareReplicatedVm.SiteRecoveryVmwareReplicatedVmManagedDiskOutputReference",
+		reflect.TypeOf((*SiteRecoveryVmwareReplicatedVmManagedDiskOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "diskId", GoGetter: "DiskId"},
+			_jsii_.MemberProperty{JsiiProperty: "diskIdInput", GoGetter: "DiskIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "logStorageAccountId", GoGetter: "LogStorageAccountId"},
+			_jsii_.MemberProperty{JsiiProperty: "logStorageAccountIdInput", GoGetter: "LogStorageAccountIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLogStorageAccountId", GoMethod: "ResetLogStorageAccountId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetDiskEncryptionSetId", GoMethod: "ResetTargetDiskEncryptionSetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "targetDiskEncryptionSetId", GoGetter: "TargetDiskEncryptionSetId"},
+			_jsii_.MemberProperty{JsiiProperty: "targetDiskEncryptionSetIdInput", GoGetter: "TargetDiskEncryptionSetIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetDiskType", GoGetter: "TargetDiskType"},
+			_jsii_.MemberProperty{JsiiProperty: "targetDiskTypeInput", GoGetter: "TargetDiskTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SiteRecoveryVmwareReplicatedVmManagedDiskOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.siteRecoveryVmwareReplicatedVm.SiteRecoveryVmwareReplicatedVmNetworkInterface",
+		reflect.TypeOf((*SiteRecoveryVmwareReplicatedVmNetworkInterface)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.siteRecoveryVmwareReplicatedVm.SiteRecoveryVmwareReplicatedVmNetworkInterfaceList",
+		reflect.TypeOf((*SiteRecoveryVmwareReplicatedVmNetworkInterfaceList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SiteRecoveryVmwareReplicatedVmNetworkInterfaceList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.siteRecoveryVmwareReplicatedVm.SiteRecoveryVmwareReplicatedVmNetworkInterfaceOutputReference",
+		reflect.TypeOf((*SiteRecoveryVmwareReplicatedVmNetworkInterfaceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "isPrimary", GoGetter: "IsPrimary"},
+			_jsii_.MemberProperty{JsiiProperty: "isPrimaryInput", GoGetter: "IsPrimaryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetStaticIp", GoMethod: "ResetTargetStaticIp"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetSubnetName", GoMethod: "ResetTargetSubnetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTestSubnetName", GoMethod: "ResetTestSubnetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceMacAddress", GoGetter: "SourceMacAddress"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceMacAddressInput", GoGetter: "SourceMacAddressInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetStaticIp", GoGetter: "TargetStaticIp"},
+			_jsii_.MemberProperty{JsiiProperty: "targetStaticIpInput", GoGetter: "TargetStaticIpInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetSubnetName", GoGetter: "TargetSubnetName"},
+			_jsii_.MemberProperty{JsiiProperty: "targetSubnetNameInput", GoGetter: "TargetSubnetNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "testSubnetName", GoGetter: "TestSubnetName"},
+			_jsii_.MemberProperty{JsiiProperty: "testSubnetNameInput", GoGetter: "TestSubnetNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SiteRecoveryVmwareReplicatedVmNetworkInterfaceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.siteRecoveryVmwareReplicatedVm.SiteRecoveryVmwareReplicatedVmTimeouts",
+		reflect.TypeOf((*SiteRecoveryVmwareReplicatedVmTimeouts)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.siteRecoveryVmwareReplicatedVm.SiteRecoveryVmwareReplicatedVmTimeoutsOutputReference",
+		reflect.TypeOf((*SiteRecoveryVmwareReplicatedVmTimeoutsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "create", GoGetter: "Create"},
+			_jsii_.MemberProperty{JsiiProperty: "createInput", GoGetter: "CreateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
+			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "read", GoGetter: "Read"},
+			_jsii_.MemberProperty{JsiiProperty: "readInput", GoGetter: "ReadInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCreate", GoMethod: "ResetCreate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRead", GoMethod: "ResetRead"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
+			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SiteRecoveryVmwareReplicatedVmTimeoutsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+}

@@ -53,6 +53,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "instanceCountInput", GoGetter: "InstanceCountInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberProperty{JsiiProperty: "localResponseCachePerInstance", GoGetter: "LocalResponseCachePerInstance"},
+			_jsii_.MemberProperty{JsiiProperty: "localResponseCachePerInstanceInput", GoGetter: "LocalResponseCachePerInstanceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "localResponseCachePerRoute", GoGetter: "LocalResponseCachePerRoute"},
+			_jsii_.MemberProperty{JsiiProperty: "localResponseCachePerRouteInput", GoGetter: "LocalResponseCachePerRouteInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -67,6 +71,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putApiMetadata", GoMethod: "PutApiMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "putClientAuthorization", GoMethod: "PutClientAuthorization"},
 			_jsii_.MemberMethod{JsiiMethod: "putCors", GoMethod: "PutCors"},
+			_jsii_.MemberMethod{JsiiMethod: "putLocalResponseCachePerInstance", GoMethod: "PutLocalResponseCachePerInstance"},
+			_jsii_.MemberMethod{JsiiMethod: "putLocalResponseCachePerRoute", GoMethod: "PutLocalResponseCachePerRoute"},
 			_jsii_.MemberMethod{JsiiMethod: "putQuota", GoMethod: "PutQuota"},
 			_jsii_.MemberMethod{JsiiMethod: "putSso", GoMethod: "PutSso"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
@@ -81,6 +87,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpsOnly", GoMethod: "ResetHttpsOnly"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstanceCount", GoMethod: "ResetInstanceCount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLocalResponseCachePerInstance", GoMethod: "ResetLocalResponseCachePerInstance"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLocalResponseCachePerRoute", GoMethod: "ResetLocalResponseCachePerRoute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPublicNetworkAccessEnabled", GoMethod: "ResetPublicNetworkAccessEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQuota", GoMethod: "ResetQuota"},
@@ -262,6 +270,90 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SpringCloudGatewayCorsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.springCloudGateway.SpringCloudGatewayLocalResponseCachePerInstance",
+		reflect.TypeOf((*SpringCloudGatewayLocalResponseCachePerInstance)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.springCloudGateway.SpringCloudGatewayLocalResponseCachePerInstanceOutputReference",
+		reflect.TypeOf((*SpringCloudGatewayLocalResponseCachePerInstanceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSize", GoMethod: "ResetSize"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTimeToLive", GoMethod: "ResetTimeToLive"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "size", GoGetter: "Size"},
+			_jsii_.MemberProperty{JsiiProperty: "sizeInput", GoGetter: "SizeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "timeToLive", GoGetter: "TimeToLive"},
+			_jsii_.MemberProperty{JsiiProperty: "timeToLiveInput", GoGetter: "TimeToLiveInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SpringCloudGatewayLocalResponseCachePerInstanceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.springCloudGateway.SpringCloudGatewayLocalResponseCachePerRoute",
+		reflect.TypeOf((*SpringCloudGatewayLocalResponseCachePerRoute)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.springCloudGateway.SpringCloudGatewayLocalResponseCachePerRouteOutputReference",
+		reflect.TypeOf((*SpringCloudGatewayLocalResponseCachePerRouteOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSize", GoMethod: "ResetSize"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTimeToLive", GoMethod: "ResetTimeToLive"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "size", GoGetter: "Size"},
+			_jsii_.MemberProperty{JsiiProperty: "sizeInput", GoGetter: "SizeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "timeToLive", GoGetter: "TimeToLive"},
+			_jsii_.MemberProperty{JsiiProperty: "timeToLiveInput", GoGetter: "TimeToLiveInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SpringCloudGatewayLocalResponseCachePerRouteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

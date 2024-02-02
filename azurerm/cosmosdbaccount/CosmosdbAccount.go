@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account}.
 type CosmosdbAccount interface {
 	cdktf.TerraformResource
 	AccessKeyMetadataWritesEnabled() interface{}
@@ -120,6 +120,9 @@ type CosmosdbAccount interface {
 	OfferType() *string
 	SetOfferType(val *string)
 	OfferTypeInput() *string
+	PartitionMergeEnabled() interface{}
+	SetPartitionMergeEnabled(val interface{})
+	PartitionMergeEnabledInput() interface{}
 	PrimaryKey() *string
 	PrimaryMongodbConnectionString() *string
 	PrimaryReadonlyKey() *string
@@ -244,6 +247,7 @@ type CosmosdbAccount interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPartitionMergeEnabled()
 	ResetPublicNetworkAccessEnabled()
 	ResetRestore()
 	ResetTags()
@@ -927,6 +931,26 @@ func (j *jsiiProxy_CosmosdbAccount) OfferTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CosmosdbAccount) PartitionMergeEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"partitionMergeEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccount) PartitionMergeEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"partitionMergeEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CosmosdbAccount) PrimaryKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1248,7 +1272,7 @@ func (j *jsiiProxy_CosmosdbAccount) WriteEndpoints() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
 func NewCosmosdbAccount(scope constructs.Construct, id *string, config *CosmosdbAccountConfig) CosmosdbAccount {
 	_init_.Initialize()
 
@@ -1266,7 +1290,7 @@ func NewCosmosdbAccount(scope constructs.Construct, id *string, config *Cosmosdb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
 func NewCosmosdbAccount_Override(c CosmosdbAccount, scope constructs.Construct, id *string, config *CosmosdbAccountConfig) {
 	_init_.Initialize()
 
@@ -1531,6 +1555,17 @@ func (j *jsiiProxy_CosmosdbAccount)SetOfferType(val *string) {
 	_jsii_.Set(
 		j,
 		"offerType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CosmosdbAccount)SetPartitionMergeEnabled(val interface{}) {
+	if err := j.validateSetPartitionMergeEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"partitionMergeEnabled",
 		val,
 	)
 }
@@ -2241,6 +2276,14 @@ func (c *jsiiProxy_CosmosdbAccount) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CosmosdbAccount) ResetPartitionMergeEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPartitionMergeEnabled",
 		nil, // no parameters
 	)
 }

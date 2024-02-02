@@ -13,6 +13,11 @@ import (
 
 type KubernetesClusterNodePoolNodeNetworkProfileOutputReference interface {
 	cdktf.ComplexObject
+	AllowedHostPorts() KubernetesClusterNodePoolNodeNetworkProfileAllowedHostPortsList
+	AllowedHostPortsInput() interface{}
+	ApplicationSecurityGroupIds() *[]*string
+	SetApplicationSecurityGroupIds(val *[]*string)
+	ApplicationSecurityGroupIdsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +72,9 @@ type KubernetesClusterNodePoolNodeNetworkProfileOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAllowedHostPorts(value interface{})
+	ResetAllowedHostPorts()
+	ResetApplicationSecurityGroupIds()
 	ResetNodePublicIpTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -81,6 +89,46 @@ type KubernetesClusterNodePoolNodeNetworkProfileOutputReference interface {
 // The jsii proxy struct for KubernetesClusterNodePoolNodeNetworkProfileOutputReference
 type jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileOutputReference) AllowedHostPorts() KubernetesClusterNodePoolNodeNetworkProfileAllowedHostPortsList {
+	var returns KubernetesClusterNodePoolNodeNetworkProfileAllowedHostPortsList
+	_jsii_.Get(
+		j,
+		"allowedHostPorts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileOutputReference) AllowedHostPortsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowedHostPortsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileOutputReference) ApplicationSecurityGroupIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"applicationSecurityGroupIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileOutputReference) ApplicationSecurityGroupIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"applicationSecurityGroupIdsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileOutputReference) ComplexObjectIndex() interface{} {
@@ -198,6 +246,17 @@ func NewKubernetesClusterNodePoolNodeNetworkProfileOutputReference_Override(k Ku
 		"@cdktf/provider-azurerm.kubernetesClusterNodePool.KubernetesClusterNodePoolNodeNetworkProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileOutputReference)SetApplicationSecurityGroupIds(val *[]*string) {
+	if err := j.validateSetApplicationSecurityGroupIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"applicationSecurityGroupIds",
+		val,
 	)
 }
 
@@ -451,6 +510,33 @@ func (k *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileOutputReference) I
 	)
 
 	return returns
+}
+
+func (k *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileOutputReference) PutAllowedHostPorts(value interface{}) {
+	if err := k.validatePutAllowedHostPortsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putAllowedHostPorts",
+		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileOutputReference) ResetAllowedHostPorts() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetAllowedHostPorts",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileOutputReference) ResetApplicationSecurityGroupIds() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetApplicationSecurityGroupIds",
+		nil, // no parameters
+	)
 }
 
 func (k *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileOutputReference) ResetNodePublicIpTags() {

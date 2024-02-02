@@ -48,6 +48,9 @@ type PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileOutputRef
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TrustedAddressRanges() *[]*string
+	SetTrustedAddressRanges(val *[]*string)
+	TrustedAddressRangesInput() *[]*string
 	VnetConfiguration() PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileVnetConfigurationOutputReference
 	VnetConfigurationInput() *PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileVnetConfiguration
 	// Experimental.
@@ -76,6 +79,7 @@ type PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileOutputRef
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutVnetConfiguration(value *PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileVnetConfiguration)
 	ResetEgressNatIpAddressIds()
+	ResetTrustedAddressRanges()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -221,6 +225,26 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkPr
 	return returns
 }
 
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileOutputReference) TrustedAddressRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"trustedAddressRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileOutputReference) TrustedAddressRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"trustedAddressRangesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileOutputReference) VnetConfiguration() PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileVnetConfigurationOutputReference {
 	var returns PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileVnetConfigurationOutputReference
 	_jsii_.Get(
@@ -342,6 +366,17 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkPr
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileOutputReference)SetTrustedAddressRanges(val *[]*string) {
+	if err := j.validateSetTrustedAddressRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"trustedAddressRanges",
 		val,
 	)
 }
@@ -547,6 +582,14 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkPr
 	_jsii_.InvokeVoid(
 		p,
 		"resetEgressNatIpAddressIds",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileOutputReference) ResetTrustedAddressRanges() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTrustedAddressRanges",
 		nil, // no parameters
 	)
 }

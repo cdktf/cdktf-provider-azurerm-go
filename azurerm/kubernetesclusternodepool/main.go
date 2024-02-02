@@ -446,10 +446,81 @@ func init() {
 		"@cdktf/provider-azurerm.kubernetesClusterNodePool.KubernetesClusterNodePoolNodeNetworkProfile",
 		reflect.TypeOf((*KubernetesClusterNodePoolNodeNetworkProfile)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.kubernetesClusterNodePool.KubernetesClusterNodePoolNodeNetworkProfileAllowedHostPorts",
+		reflect.TypeOf((*KubernetesClusterNodePoolNodeNetworkProfileAllowedHostPorts)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.kubernetesClusterNodePool.KubernetesClusterNodePoolNodeNetworkProfileAllowedHostPortsList",
+		reflect.TypeOf((*KubernetesClusterNodePoolNodeNetworkProfileAllowedHostPortsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileAllowedHostPortsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.kubernetesClusterNodePool.KubernetesClusterNodePoolNodeNetworkProfileAllowedHostPortsOutputReference",
+		reflect.TypeOf((*KubernetesClusterNodePoolNodeNetworkProfileAllowedHostPortsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "portEnd", GoGetter: "PortEnd"},
+			_jsii_.MemberProperty{JsiiProperty: "portEndInput", GoGetter: "PortEndInput"},
+			_jsii_.MemberProperty{JsiiProperty: "portStart", GoGetter: "PortStart"},
+			_jsii_.MemberProperty{JsiiProperty: "portStartInput", GoGetter: "PortStartInput"},
+			_jsii_.MemberProperty{JsiiProperty: "protocol", GoGetter: "Protocol"},
+			_jsii_.MemberProperty{JsiiProperty: "protocolInput", GoGetter: "ProtocolInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPortEnd", GoMethod: "ResetPortEnd"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPortStart", GoMethod: "ResetPortStart"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtocol", GoMethod: "ResetProtocol"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileAllowedHostPortsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-azurerm.kubernetesClusterNodePool.KubernetesClusterNodePoolNodeNetworkProfileOutputReference",
 		reflect.TypeOf((*KubernetesClusterNodePoolNodeNetworkProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allowedHostPorts", GoGetter: "AllowedHostPorts"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedHostPortsInput", GoGetter: "AllowedHostPortsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "applicationSecurityGroupIds", GoGetter: "ApplicationSecurityGroupIds"},
+			_jsii_.MemberProperty{JsiiProperty: "applicationSecurityGroupIdsInput", GoGetter: "ApplicationSecurityGroupIdsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -469,6 +540,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "nodePublicIpTags", GoGetter: "NodePublicIpTags"},
 			_jsii_.MemberProperty{JsiiProperty: "nodePublicIpTagsInput", GoGetter: "NodePublicIpTagsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAllowedHostPorts", GoMethod: "PutAllowedHostPorts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedHostPorts", GoMethod: "ResetAllowedHostPorts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetApplicationSecurityGroupIds", GoMethod: "ResetApplicationSecurityGroupIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNodePublicIpTags", GoMethod: "ResetNodePublicIpTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

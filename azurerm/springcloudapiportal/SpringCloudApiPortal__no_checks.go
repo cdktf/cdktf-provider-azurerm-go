@@ -99,6 +99,10 @@ func validateSpringCloudApiPortal_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudApiPortal) validateSetApiTryOutEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudApiPortal) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

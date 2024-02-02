@@ -98,6 +98,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "offerType", GoGetter: "OfferType"},
 			_jsii_.MemberProperty{JsiiProperty: "offerTypeInput", GoGetter: "OfferTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "partitionMergeEnabled", GoGetter: "PartitionMergeEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "partitionMergeEnabledInput", GoGetter: "PartitionMergeEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "primaryKey", GoGetter: "PrimaryKey"},
 			_jsii_.MemberProperty{JsiiProperty: "primaryMongodbConnectionString", GoGetter: "PrimaryMongodbConnectionString"},
 			_jsii_.MemberProperty{JsiiProperty: "primaryReadonlyKey", GoGetter: "PrimaryReadonlyKey"},
@@ -144,6 +146,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkAclBypassForAzureServices", GoMethod: "ResetNetworkAclBypassForAzureServices"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkAclBypassIds", GoMethod: "ResetNetworkAclBypassIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPartitionMergeEnabled", GoMethod: "ResetPartitionMergeEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPublicNetworkAccessEnabled", GoMethod: "ResetPublicNetworkAccessEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRestore", GoMethod: "ResetRestore"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
@@ -636,6 +639,69 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreGremlinDatabase",
+		reflect.TypeOf((*CosmosdbAccountRestoreGremlinDatabase)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreGremlinDatabaseList",
+		reflect.TypeOf((*CosmosdbAccountRestoreGremlinDatabaseList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CosmosdbAccountRestoreGremlinDatabaseList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreGremlinDatabaseOutputReference",
+		reflect.TypeOf((*CosmosdbAccountRestoreGremlinDatabaseOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "graphNames", GoGetter: "GraphNames"},
+			_jsii_.MemberProperty{JsiiProperty: "graphNamesInput", GoGetter: "GraphNamesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGraphNames", GoMethod: "ResetGraphNames"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CosmosdbAccountRestoreGremlinDatabaseOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreOutputReference",
 		reflect.TypeOf((*CosmosdbAccountRestoreOutputReference)(nil)).Elem(),
@@ -656,16 +722,23 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "gremlinDatabase", GoGetter: "GremlinDatabase"},
+			_jsii_.MemberProperty{JsiiProperty: "gremlinDatabaseInput", GoGetter: "GremlinDatabaseInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putDatabase", GoMethod: "PutDatabase"},
+			_jsii_.MemberMethod{JsiiMethod: "putGremlinDatabase", GoMethod: "PutGremlinDatabase"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabase", GoMethod: "ResetDatabase"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGremlinDatabase", GoMethod: "ResetGremlinDatabase"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTablesToRestore", GoMethod: "ResetTablesToRestore"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "restoreTimestampInUtc", GoGetter: "RestoreTimestampInUtc"},
 			_jsii_.MemberProperty{JsiiProperty: "restoreTimestampInUtcInput", GoGetter: "RestoreTimestampInUtcInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceCosmosdbAccountId", GoGetter: "SourceCosmosdbAccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceCosmosdbAccountIdInput", GoGetter: "SourceCosmosdbAccountIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tablesToRestore", GoGetter: "TablesToRestore"},
+			_jsii_.MemberProperty{JsiiProperty: "tablesToRestoreInput", GoGetter: "TablesToRestoreInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

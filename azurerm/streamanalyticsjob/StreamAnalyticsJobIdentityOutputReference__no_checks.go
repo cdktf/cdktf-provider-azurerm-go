@@ -59,6 +59,10 @@ func (j *jsiiProxy_StreamAnalyticsJobIdentityOutputReference) validateSetComplex
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsJobIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsJobIdentityOutputReference) validateSetInternalValueParameters(val *StreamAnalyticsJobIdentity) error {
 	return nil
 }

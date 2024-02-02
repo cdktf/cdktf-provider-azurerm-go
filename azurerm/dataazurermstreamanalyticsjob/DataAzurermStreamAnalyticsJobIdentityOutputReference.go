@@ -30,6 +30,7 @@ type DataAzurermStreamAnalyticsJobIdentityOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdentityIds() *[]*string
 	InternalValue() *DataAzurermStreamAnalyticsJobIdentity
 	SetInternalValue(val *DataAzurermStreamAnalyticsJobIdentity)
 	PrincipalId() *string
@@ -117,6 +118,16 @@ func (j *jsiiProxy_DataAzurermStreamAnalyticsJobIdentityOutputReference) Fqn() *
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStreamAnalyticsJobIdentityOutputReference) IdentityIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIds",
 		&returns,
 	)
 	return returns

@@ -22,20 +22,20 @@ type DataAzurermPolicyDefinitionConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/data-sources/policy_definition#display_name DataAzurermPolicyDefinition#display_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/data-sources/policy_definition#display_name DataAzurermPolicyDefinition#display_name}.
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/data-sources/policy_definition#id DataAzurermPolicyDefinition#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/data-sources/policy_definition#id DataAzurermPolicyDefinition#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/data-sources/policy_definition#management_group_name DataAzurermPolicyDefinition#management_group_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/data-sources/policy_definition#management_group_name DataAzurermPolicyDefinition#management_group_name}.
 	ManagementGroupName *string `field:"optional" json:"managementGroupName" yaml:"managementGroupName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/data-sources/policy_definition#name DataAzurermPolicyDefinition#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/data-sources/policy_definition#name DataAzurermPolicyDefinition#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/data-sources/policy_definition#timeouts DataAzurermPolicyDefinition#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/data-sources/policy_definition#timeouts DataAzurermPolicyDefinition#timeouts}
 	Timeouts *DataAzurermPolicyDefinitionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

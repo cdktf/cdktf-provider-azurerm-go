@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/signalr_service_custom_certificate azurerm_signalr_service_custom_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/signalr_service_custom_certificate azurerm_signalr_service_custom_certificate}.
 type SignalrServiceCustomCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_SignalrServiceCustomCertificate) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/signalr_service_custom_certificate azurerm_signalr_service_custom_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/signalr_service_custom_certificate azurerm_signalr_service_custom_certificate} Resource.
 func NewSignalrServiceCustomCertificate(scope constructs.Construct, id *string, config *SignalrServiceCustomCertificateConfig) SignalrServiceCustomCertificate {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewSignalrServiceCustomCertificate(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/signalr_service_custom_certificate azurerm_signalr_service_custom_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/signalr_service_custom_certificate azurerm_signalr_service_custom_certificate} Resource.
 func NewSignalrServiceCustomCertificate_Override(s SignalrServiceCustomCertificate, scope constructs.Construct, id *string, config *SignalrServiceCustomCertificateConfig) {
 	_init_.Initialize()
 

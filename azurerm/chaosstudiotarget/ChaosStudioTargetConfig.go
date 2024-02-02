@@ -22,20 +22,20 @@ type ChaosStudioTargetConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/chaos_studio_target#location ChaosStudioTarget#location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/chaos_studio_target#location ChaosStudioTarget#location}.
 	Location *string `field:"required" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/chaos_studio_target#target_resource_id ChaosStudioTarget#target_resource_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/chaos_studio_target#target_resource_id ChaosStudioTarget#target_resource_id}.
 	TargetResourceId *string `field:"required" json:"targetResourceId" yaml:"targetResourceId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/chaos_studio_target#target_type ChaosStudioTarget#target_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/chaos_studio_target#target_type ChaosStudioTarget#target_type}.
 	TargetType *string `field:"required" json:"targetType" yaml:"targetType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/chaos_studio_target#id ChaosStudioTarget#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/chaos_studio_target#id ChaosStudioTarget#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/chaos_studio_target#timeouts ChaosStudioTarget#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/chaos_studio_target#timeouts ChaosStudioTarget#timeouts}
 	Timeouts *ChaosStudioTargetTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

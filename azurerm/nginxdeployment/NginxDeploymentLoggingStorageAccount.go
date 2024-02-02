@@ -5,9 +5,9 @@ package nginxdeployment
 
 
 type NginxDeploymentLoggingStorageAccount struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/nginx_deployment#container_name NginxDeployment#container_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/nginx_deployment#container_name NginxDeployment#container_name}.
 	ContainerName *string `field:"optional" json:"containerName" yaml:"containerName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/nginx_deployment#name NginxDeployment#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/nginx_deployment#name NginxDeployment#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

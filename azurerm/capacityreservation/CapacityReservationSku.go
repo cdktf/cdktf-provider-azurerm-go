@@ -5,9 +5,9 @@ package capacityreservation
 
 
 type CapacityReservationSku struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/capacity_reservation#capacity CapacityReservation#capacity}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/capacity_reservation#capacity CapacityReservation#capacity}.
 	Capacity *float64 `field:"required" json:"capacity" yaml:"capacity"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/capacity_reservation#name CapacityReservation#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/capacity_reservation#name CapacityReservation#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

@@ -127,6 +127,10 @@ func (j *jsiiProxy_BotChannelEmail) validateSetLocationParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_BotChannelEmail) validateSetMagicCodeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotChannelEmail) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

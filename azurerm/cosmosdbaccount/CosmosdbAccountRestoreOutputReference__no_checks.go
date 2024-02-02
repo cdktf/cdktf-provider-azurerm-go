@@ -51,6 +51,10 @@ func (c *jsiiProxy_CosmosdbAccountRestoreOutputReference) validatePutDatabasePar
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbAccountRestoreOutputReference) validatePutGremlinDatabaseParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbAccountRestoreOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (j *jsiiProxy_CosmosdbAccountRestoreOutputReference) validateSetRestoreTime
 }
 
 func (j *jsiiProxy_CosmosdbAccountRestoreOutputReference) validateSetSourceCosmosdbAccountIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CosmosdbAccountRestoreOutputReference) validateSetTablesToRestoreParameters(val *[]*string) error {
 	return nil
 }
 

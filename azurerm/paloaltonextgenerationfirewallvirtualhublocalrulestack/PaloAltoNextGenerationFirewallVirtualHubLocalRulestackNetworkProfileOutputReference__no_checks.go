@@ -83,6 +83,10 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubLocalRulestackNetwork
 	return nil
 }
 
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubLocalRulestackNetworkProfileOutputReference) validateSetTrustedAddressRangesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubLocalRulestackNetworkProfileOutputReference) validateSetVirtualHubIdParameters(val *string) error {
 	return nil
 }

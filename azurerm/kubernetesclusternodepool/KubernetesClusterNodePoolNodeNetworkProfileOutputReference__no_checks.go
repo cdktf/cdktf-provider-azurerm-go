@@ -47,7 +47,15 @@ func (k *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileOutputReference) v
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileOutputReference) validatePutAllowedHostPortsParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePoolNodeNetworkProfileOutputReference) validateSetApplicationSecurityGroupIdsParameters(val *[]*string) error {
 	return nil
 }
 

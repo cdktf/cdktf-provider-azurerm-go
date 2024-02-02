@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/bot_channel_email azurerm_bot_channel_email}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/bot_channel_email azurerm_bot_channel_email}.
 type BotChannelEmail interface {
 	cdktf.TerraformResource
 	BotName() *string
@@ -58,6 +58,9 @@ type BotChannelEmail interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MagicCode() *string
+	SetMagicCode(val *string)
+	MagicCodeInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -125,7 +128,9 @@ type BotChannelEmail interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *BotChannelEmailTimeouts)
+	ResetEmailPassword()
 	ResetId()
+	ResetMagicCode()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -338,6 +343,26 @@ func (j *jsiiProxy_BotChannelEmail) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BotChannelEmail) MagicCode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"magicCode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotChannelEmail) MagicCodeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"magicCodeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BotChannelEmail) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -449,7 +474,7 @@ func (j *jsiiProxy_BotChannelEmail) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/bot_channel_email azurerm_bot_channel_email} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/bot_channel_email azurerm_bot_channel_email} Resource.
 func NewBotChannelEmail(scope constructs.Construct, id *string, config *BotChannelEmailConfig) BotChannelEmail {
 	_init_.Initialize()
 
@@ -467,7 +492,7 @@ func NewBotChannelEmail(scope constructs.Construct, id *string, config *BotChann
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/bot_channel_email azurerm_bot_channel_email} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/bot_channel_email azurerm_bot_channel_email} Resource.
 func NewBotChannelEmail_Override(b BotChannelEmail, scope constructs.Construct, id *string, config *BotChannelEmailConfig) {
 	_init_.Initialize()
 
@@ -578,6 +603,17 @@ func (j *jsiiProxy_BotChannelEmail)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotChannelEmail)SetMagicCode(val *string) {
+	if err := j.validateSetMagicCodeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"magicCode",
 		val,
 	)
 }
@@ -976,10 +1012,26 @@ func (b *jsiiProxy_BotChannelEmail) PutTimeouts(value *BotChannelEmailTimeouts) 
 	)
 }
 
+func (b *jsiiProxy_BotChannelEmail) ResetEmailPassword() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetEmailPassword",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BotChannelEmail) ResetId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotChannelEmail) ResetMagicCode() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetMagicCode",
 		nil, // no parameters
 	)
 }

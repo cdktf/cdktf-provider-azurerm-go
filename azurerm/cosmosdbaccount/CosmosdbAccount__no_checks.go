@@ -223,6 +223,10 @@ func (j *jsiiProxy_CosmosdbAccount) validateSetOfferTypeParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbAccount) validateSetPartitionMergeEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbAccount) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

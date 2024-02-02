@@ -22,24 +22,24 @@ type SynapseRoleAssignmentConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/synapse_role_assignment#principal_id SynapseRoleAssignment#principal_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/synapse_role_assignment#principal_id SynapseRoleAssignment#principal_id}.
 	PrincipalId *string `field:"required" json:"principalId" yaml:"principalId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/synapse_role_assignment#role_name SynapseRoleAssignment#role_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/synapse_role_assignment#role_name SynapseRoleAssignment#role_name}.
 	RoleName *string `field:"required" json:"roleName" yaml:"roleName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/synapse_role_assignment#id SynapseRoleAssignment#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/synapse_role_assignment#id SynapseRoleAssignment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/synapse_role_assignment#principal_type SynapseRoleAssignment#principal_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/synapse_role_assignment#principal_type SynapseRoleAssignment#principal_type}.
 	PrincipalType *string `field:"optional" json:"principalType" yaml:"principalType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/synapse_role_assignment#synapse_spark_pool_id SynapseRoleAssignment#synapse_spark_pool_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/synapse_role_assignment#synapse_spark_pool_id SynapseRoleAssignment#synapse_spark_pool_id}.
 	SynapseSparkPoolId *string `field:"optional" json:"synapseSparkPoolId" yaml:"synapseSparkPoolId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/synapse_role_assignment#synapse_workspace_id SynapseRoleAssignment#synapse_workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/synapse_role_assignment#synapse_workspace_id SynapseRoleAssignment#synapse_workspace_id}.
 	SynapseWorkspaceId *string `field:"optional" json:"synapseWorkspaceId" yaml:"synapseWorkspaceId"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/synapse_role_assignment#timeouts SynapseRoleAssignment#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/synapse_role_assignment#timeouts SynapseRoleAssignment#timeouts}
 	Timeouts *SynapseRoleAssignmentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

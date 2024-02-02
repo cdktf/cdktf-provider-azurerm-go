@@ -87,6 +87,14 @@ func (s *jsiiProxy_SpringCloudGateway) validatePutCorsParameters(value *SpringCl
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudGateway) validatePutLocalResponseCachePerInstanceParameters(value *SpringCloudGatewayLocalResponseCachePerInstance) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudGateway) validatePutLocalResponseCachePerRouteParameters(value *SpringCloudGatewayLocalResponseCachePerRoute) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudGateway) validatePutQuotaParameters(value *SpringCloudGatewayQuota) error {
 	return nil
 }

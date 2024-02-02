@@ -69,7 +69,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putVirtualMachine", GoMethod: "PutVirtualMachine"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoShutdown", GoMethod: "ResetAutoShutdown"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConnectionSetting", GoMethod: "ResetConnectionSetting"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLabPlanId", GoMethod: "ResetLabPlanId"},

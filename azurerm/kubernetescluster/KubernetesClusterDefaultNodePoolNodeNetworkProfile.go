@@ -5,7 +5,13 @@ package kubernetescluster
 
 
 type KubernetesClusterDefaultNodePoolNodeNetworkProfile struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/kubernetes_cluster#node_public_ip_tags KubernetesCluster#node_public_ip_tags}.
+	// allowed_host_ports block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/kubernetes_cluster#allowed_host_ports KubernetesCluster#allowed_host_ports}
+	AllowedHostPorts interface{} `field:"optional" json:"allowedHostPorts" yaml:"allowedHostPorts"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/kubernetes_cluster#application_security_group_ids KubernetesCluster#application_security_group_ids}.
+	ApplicationSecurityGroupIds *[]*string `field:"optional" json:"applicationSecurityGroupIds" yaml:"applicationSecurityGroupIds"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/kubernetes_cluster#node_public_ip_tags KubernetesCluster#node_public_ip_tags}.
 	NodePublicIpTags *map[string]*string `field:"optional" json:"nodePublicIpTags" yaml:"nodePublicIpTags"`
 }
 

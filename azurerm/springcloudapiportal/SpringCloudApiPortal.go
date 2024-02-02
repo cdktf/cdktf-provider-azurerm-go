@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/spring_cloud_api_portal azurerm_spring_cloud_api_portal}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/spring_cloud_api_portal azurerm_spring_cloud_api_portal}.
 type SpringCloudApiPortal interface {
 	cdktf.TerraformResource
+	ApiTryOutEnabled() interface{}
+	SetApiTryOutEnabled(val interface{})
+	ApiTryOutEnabledInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -132,6 +135,7 @@ type SpringCloudApiPortal interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutSso(value *SpringCloudApiPortalSso)
 	PutTimeouts(value *SpringCloudApiPortalTimeouts)
+	ResetApiTryOutEnabled()
 	ResetGatewayIds()
 	ResetHttpsOnlyEnabled()
 	ResetId()
@@ -158,6 +162,26 @@ type SpringCloudApiPortal interface {
 // The jsii proxy struct for SpringCloudApiPortal
 type jsiiProxy_SpringCloudApiPortal struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SpringCloudApiPortal) ApiTryOutEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"apiTryOutEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudApiPortal) ApiTryOutEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"apiTryOutEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SpringCloudApiPortal) CdktfStack() cdktf.TerraformStack {
@@ -511,7 +535,7 @@ func (j *jsiiProxy_SpringCloudApiPortal) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/spring_cloud_api_portal azurerm_spring_cloud_api_portal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/spring_cloud_api_portal azurerm_spring_cloud_api_portal} Resource.
 func NewSpringCloudApiPortal(scope constructs.Construct, id *string, config *SpringCloudApiPortalConfig) SpringCloudApiPortal {
 	_init_.Initialize()
 
@@ -529,7 +553,7 @@ func NewSpringCloudApiPortal(scope constructs.Construct, id *string, config *Spr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/spring_cloud_api_portal azurerm_spring_cloud_api_portal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/spring_cloud_api_portal azurerm_spring_cloud_api_portal} Resource.
 func NewSpringCloudApiPortal_Override(s SpringCloudApiPortal, scope constructs.Construct, id *string, config *SpringCloudApiPortalConfig) {
 	_init_.Initialize()
 
@@ -537,6 +561,17 @@ func NewSpringCloudApiPortal_Override(s SpringCloudApiPortal, scope constructs.C
 		"@cdktf/provider-azurerm.springCloudApiPortal.SpringCloudApiPortal",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SpringCloudApiPortal)SetApiTryOutEnabled(val interface{}) {
+	if err := j.validateSetApiTryOutEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiTryOutEnabled",
+		val,
 	)
 }
 
@@ -1057,6 +1092,14 @@ func (s *jsiiProxy_SpringCloudApiPortal) PutTimeouts(value *SpringCloudApiPortal
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SpringCloudApiPortal) ResetApiTryOutEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetApiTryOutEnabled",
+		nil, // no parameters
 	)
 }
 

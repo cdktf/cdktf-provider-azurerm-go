@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway}.
 type SpringCloudGateway interface {
 	cdktf.TerraformResource
 	ApiMetadata() SpringCloudGatewayApiMetadataOutputReference
@@ -64,6 +64,10 @@ type SpringCloudGateway interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LocalResponseCachePerInstance() SpringCloudGatewayLocalResponseCachePerInstanceOutputReference
+	LocalResponseCachePerInstanceInput() *SpringCloudGatewayLocalResponseCachePerInstance
+	LocalResponseCachePerRoute() SpringCloudGatewayLocalResponseCachePerRouteOutputReference
+	LocalResponseCachePerRouteInput() *SpringCloudGatewayLocalResponseCachePerRoute
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -147,6 +151,8 @@ type SpringCloudGateway interface {
 	PutApiMetadata(value *SpringCloudGatewayApiMetadata)
 	PutClientAuthorization(value *SpringCloudGatewayClientAuthorization)
 	PutCors(value *SpringCloudGatewayCors)
+	PutLocalResponseCachePerInstance(value *SpringCloudGatewayLocalResponseCachePerInstance)
+	PutLocalResponseCachePerRoute(value *SpringCloudGatewayLocalResponseCachePerRoute)
 	PutQuota(value *SpringCloudGatewayQuota)
 	PutSso(value *SpringCloudGatewaySso)
 	PutTimeouts(value *SpringCloudGatewayTimeouts)
@@ -158,6 +164,8 @@ type SpringCloudGateway interface {
 	ResetHttpsOnly()
 	ResetId()
 	ResetInstanceCount()
+	ResetLocalResponseCachePerInstance()
+	ResetLocalResponseCachePerRoute()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -434,6 +442,46 @@ func (j *jsiiProxy_SpringCloudGateway) Lifecycle() *cdktf.TerraformResourceLifec
 	return returns
 }
 
+func (j *jsiiProxy_SpringCloudGateway) LocalResponseCachePerInstance() SpringCloudGatewayLocalResponseCachePerInstanceOutputReference {
+	var returns SpringCloudGatewayLocalResponseCachePerInstanceOutputReference
+	_jsii_.Get(
+		j,
+		"localResponseCachePerInstance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGateway) LocalResponseCachePerInstanceInput() *SpringCloudGatewayLocalResponseCachePerInstance {
+	var returns *SpringCloudGatewayLocalResponseCachePerInstance
+	_jsii_.Get(
+		j,
+		"localResponseCachePerInstanceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGateway) LocalResponseCachePerRoute() SpringCloudGatewayLocalResponseCachePerRouteOutputReference {
+	var returns SpringCloudGatewayLocalResponseCachePerRouteOutputReference
+	_jsii_.Get(
+		j,
+		"localResponseCachePerRoute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGateway) LocalResponseCachePerRouteInput() *SpringCloudGatewayLocalResponseCachePerRoute {
+	var returns *SpringCloudGatewayLocalResponseCachePerRoute
+	_jsii_.Get(
+		j,
+		"localResponseCachePerRouteInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpringCloudGateway) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -655,7 +703,7 @@ func (j *jsiiProxy_SpringCloudGateway) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway} Resource.
 func NewSpringCloudGateway(scope constructs.Construct, id *string, config *SpringCloudGatewayConfig) SpringCloudGateway {
 	_init_.Initialize()
 
@@ -673,7 +721,7 @@ func NewSpringCloudGateway(scope constructs.Construct, id *string, config *Sprin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.89.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway} Resource.
 func NewSpringCloudGateway_Override(s SpringCloudGateway, scope constructs.Construct, id *string, config *SpringCloudGatewayConfig) {
 	_init_.Initialize()
 
@@ -1237,6 +1285,28 @@ func (s *jsiiProxy_SpringCloudGateway) PutCors(value *SpringCloudGatewayCors) {
 	)
 }
 
+func (s *jsiiProxy_SpringCloudGateway) PutLocalResponseCachePerInstance(value *SpringCloudGatewayLocalResponseCachePerInstance) {
+	if err := s.validatePutLocalResponseCachePerInstanceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putLocalResponseCachePerInstance",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SpringCloudGateway) PutLocalResponseCachePerRoute(value *SpringCloudGatewayLocalResponseCachePerRoute) {
+	if err := s.validatePutLocalResponseCachePerRouteParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putLocalResponseCachePerRoute",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SpringCloudGateway) PutQuota(value *SpringCloudGatewayQuota) {
 	if err := s.validatePutQuotaParameters(value); err != nil {
 		panic(err)
@@ -1330,6 +1400,22 @@ func (s *jsiiProxy_SpringCloudGateway) ResetInstanceCount() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetInstanceCount",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudGateway) ResetLocalResponseCachePerInstance() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLocalResponseCachePerInstance",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudGateway) ResetLocalResponseCachePerRoute() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLocalResponseCachePerRoute",
 		nil, // no parameters
 	)
 }

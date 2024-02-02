@@ -240,6 +240,28 @@ func (s *jsiiProxy_SpringCloudGateway) validatePutCorsParameters(value *SpringCl
 	return nil
 }
 
+func (s *jsiiProxy_SpringCloudGateway) validatePutLocalResponseCachePerInstanceParameters(value *SpringCloudGatewayLocalResponseCachePerInstance) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SpringCloudGateway) validatePutLocalResponseCachePerRouteParameters(value *SpringCloudGatewayLocalResponseCachePerRoute) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SpringCloudGateway) validatePutQuotaParameters(value *SpringCloudGatewayQuota) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

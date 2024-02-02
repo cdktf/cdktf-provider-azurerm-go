@@ -48,6 +48,9 @@ type PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileOut
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TrustedAddressRanges() *[]*string
+	SetTrustedAddressRanges(val *[]*string)
+	TrustedAddressRangesInput() *[]*string
 	VnetConfiguration() PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileVnetConfigurationOutputReference
 	VnetConfigurationInput() *PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileVnetConfiguration
 	// Experimental.
@@ -76,6 +79,7 @@ type PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileOut
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutVnetConfiguration(value *PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileVnetConfiguration)
 	ResetEgressNatIpAddressIds()
+	ResetTrustedAddressRanges()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -221,6 +225,26 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNet
 	return returns
 }
 
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileOutputReference) TrustedAddressRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"trustedAddressRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileOutputReference) TrustedAddressRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"trustedAddressRangesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileOutputReference) VnetConfiguration() PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileVnetConfigurationOutputReference {
 	var returns PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileVnetConfigurationOutputReference
 	_jsii_.Get(
@@ -342,6 +366,17 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNet
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileOutputReference)SetTrustedAddressRanges(val *[]*string) {
+	if err := j.validateSetTrustedAddressRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"trustedAddressRanges",
 		val,
 	)
 }
@@ -547,6 +582,14 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNet
 	_jsii_.InvokeVoid(
 		p,
 		"resetEgressNatIpAddressIds",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileOutputReference) ResetTrustedAddressRanges() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTrustedAddressRanges",
 		nil, // no parameters
 	)
 }

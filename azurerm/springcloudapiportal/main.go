@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "apiTryOutEnabled", GoGetter: "ApiTryOutEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "apiTryOutEnabledInput", GoGetter: "ApiTryOutEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
@@ -59,6 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSso", GoMethod: "PutSso"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetApiTryOutEnabled", GoMethod: "ResetApiTryOutEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGatewayIds", GoMethod: "ResetGatewayIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpsOnlyEnabled", GoMethod: "ResetHttpsOnlyEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

@@ -32,6 +32,8 @@ type CosmosdbAccountRestoreOutputReference interface {
 	DatabaseInput() interface{}
 	// Experimental.
 	Fqn() *string
+	GremlinDatabase() CosmosdbAccountRestoreGremlinDatabaseList
+	GremlinDatabaseInput() interface{}
 	InternalValue() *CosmosdbAccountRestore
 	SetInternalValue(val *CosmosdbAccountRestore)
 	RestoreTimestampInUtc() *string
@@ -40,6 +42,9 @@ type CosmosdbAccountRestoreOutputReference interface {
 	SourceCosmosdbAccountId() *string
 	SetSourceCosmosdbAccountId(val *string)
 	SourceCosmosdbAccountIdInput() *string
+	TablesToRestore() *[]*string
+	SetTablesToRestore(val *[]*string)
+	TablesToRestoreInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,7 +78,10 @@ type CosmosdbAccountRestoreOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDatabase(value interface{})
+	PutGremlinDatabase(value interface{})
 	ResetDatabase()
+	ResetGremlinDatabase()
+	ResetTablesToRestore()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -149,6 +157,26 @@ func (j *jsiiProxy_CosmosdbAccountRestoreOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CosmosdbAccountRestoreOutputReference) GremlinDatabase() CosmosdbAccountRestoreGremlinDatabaseList {
+	var returns CosmosdbAccountRestoreGremlinDatabaseList
+	_jsii_.Get(
+		j,
+		"gremlinDatabase",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccountRestoreOutputReference) GremlinDatabaseInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gremlinDatabaseInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CosmosdbAccountRestoreOutputReference) InternalValue() *CosmosdbAccountRestore {
 	var returns *CosmosdbAccountRestore
 	_jsii_.Get(
@@ -194,6 +222,26 @@ func (j *jsiiProxy_CosmosdbAccountRestoreOutputReference) SourceCosmosdbAccountI
 	_jsii_.Get(
 		j,
 		"sourceCosmosdbAccountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccountRestoreOutputReference) TablesToRestore() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tablesToRestore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccountRestoreOutputReference) TablesToRestoreInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tablesToRestoreInput",
 		&returns,
 	)
 	return returns
@@ -298,6 +346,17 @@ func (j *jsiiProxy_CosmosdbAccountRestoreOutputReference)SetSourceCosmosdbAccoun
 	_jsii_.Set(
 		j,
 		"sourceCosmosdbAccountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CosmosdbAccountRestoreOutputReference)SetTablesToRestore(val *[]*string) {
+	if err := j.validateSetTablesToRestoreParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tablesToRestore",
 		val,
 	)
 }
@@ -521,10 +580,37 @@ func (c *jsiiProxy_CosmosdbAccountRestoreOutputReference) PutDatabase(value inte
 	)
 }
 
+func (c *jsiiProxy_CosmosdbAccountRestoreOutputReference) PutGremlinDatabase(value interface{}) {
+	if err := c.validatePutGremlinDatabaseParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putGremlinDatabase",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CosmosdbAccountRestoreOutputReference) ResetDatabase() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDatabase",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CosmosdbAccountRestoreOutputReference) ResetGremlinDatabase() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGremlinDatabase",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CosmosdbAccountRestoreOutputReference) ResetTablesToRestore() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTablesToRestore",
 		nil, // no parameters
 	)
 }

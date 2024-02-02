@@ -52,6 +52,9 @@ type PaloAltoNextGenerationFirewallVirtualHubLocalRulestackNetworkProfileOutputR
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TrustedAddressRanges() *[]*string
+	SetTrustedAddressRanges(val *[]*string)
+	TrustedAddressRangesInput() *[]*string
 	TrustedSubnetId() *string
 	UntrustedSubnetId() *string
 	VirtualHubId() *string
@@ -82,6 +85,7 @@ type PaloAltoNextGenerationFirewallVirtualHubLocalRulestackNetworkProfileOutputR
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEgressNatIpAddressIds()
+	ResetTrustedAddressRanges()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -257,6 +261,26 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubLocalRulestackNetwork
 	return returns
 }
 
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubLocalRulestackNetworkProfileOutputReference) TrustedAddressRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"trustedAddressRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubLocalRulestackNetworkProfileOutputReference) TrustedAddressRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"trustedAddressRangesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubLocalRulestackNetworkProfileOutputReference) TrustedSubnetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -409,6 +433,17 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubLocalRulestackNetwork
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubLocalRulestackNetworkProfileOutputReference)SetTrustedAddressRanges(val *[]*string) {
+	if err := j.validateSetTrustedAddressRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"trustedAddressRanges",
 		val,
 	)
 }
@@ -614,6 +649,14 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubLocalRulestackNetwork
 	_jsii_.InvokeVoid(
 		p,
 		"resetEgressNatIpAddressIds",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubLocalRulestackNetworkProfileOutputReference) ResetTrustedAddressRanges() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTrustedAddressRanges",
 		nil, // no parameters
 	)
 }

@@ -83,6 +83,10 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNet
 	return nil
 }
 
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileOutputReference) validateSetTrustedAddressRangesParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewPaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfileOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

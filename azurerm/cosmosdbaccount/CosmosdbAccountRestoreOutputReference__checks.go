@@ -124,6 +124,37 @@ func (c *jsiiProxy_CosmosdbAccountRestoreOutputReference) validatePutDatabasePar
 	return nil
 }
 
+func (c *jsiiProxy_CosmosdbAccountRestoreOutputReference) validatePutGremlinDatabaseParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*CosmosdbAccountRestoreGremlinDatabase:
+		value := value.(*[]*CosmosdbAccountRestoreGremlinDatabase)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*CosmosdbAccountRestoreGremlinDatabase:
+		value_ := value.([]*CosmosdbAccountRestoreGremlinDatabase)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CosmosdbAccountRestoreGremlinDatabase; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CosmosdbAccountRestoreOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -214,6 +245,14 @@ func (j *jsiiProxy_CosmosdbAccountRestoreOutputReference) validateSetRestoreTime
 }
 
 func (j *jsiiProxy_CosmosdbAccountRestoreOutputReference) validateSetSourceCosmosdbAccountIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CosmosdbAccountRestoreOutputReference) validateSetTablesToRestoreParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
