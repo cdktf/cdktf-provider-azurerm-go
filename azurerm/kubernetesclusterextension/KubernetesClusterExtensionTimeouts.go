@@ -5,13 +5,13 @@ package kubernetesclusterextension
 
 
 type KubernetesClusterExtensionTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/kubernetes_cluster_extension#create KubernetesClusterExtension#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/kubernetes_cluster_extension#create KubernetesClusterExtension#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/kubernetes_cluster_extension#delete KubernetesClusterExtension#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/kubernetes_cluster_extension#delete KubernetesClusterExtension#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/kubernetes_cluster_extension#read KubernetesClusterExtension#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/kubernetes_cluster_extension#read KubernetesClusterExtension#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/kubernetes_cluster_extension#update KubernetesClusterExtension#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/kubernetes_cluster_extension#update KubernetesClusterExtension#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

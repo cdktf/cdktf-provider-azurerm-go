@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/kubernetes_fleet_update_strategy azurerm_kubernetes_fleet_update_strategy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/kubernetes_fleet_update_strategy azurerm_kubernetes_fleet_update_strategy}.
 type KubernetesFleetUpdateStrategy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_KubernetesFleetUpdateStrategy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/kubernetes_fleet_update_strategy azurerm_kubernetes_fleet_update_strategy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/kubernetes_fleet_update_strategy azurerm_kubernetes_fleet_update_strategy} Resource.
 func NewKubernetesFleetUpdateStrategy(scope constructs.Construct, id *string, config *KubernetesFleetUpdateStrategyConfig) KubernetesFleetUpdateStrategy {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewKubernetesFleetUpdateStrategy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/kubernetes_fleet_update_strategy azurerm_kubernetes_fleet_update_strategy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/kubernetes_fleet_update_strategy azurerm_kubernetes_fleet_update_strategy} Resource.
 func NewKubernetesFleetUpdateStrategy_Override(k KubernetesFleetUpdateStrategy, scope constructs.Construct, id *string, config *KubernetesFleetUpdateStrategyConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/lab_service_schedule azurerm_lab_service_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/lab_service_schedule azurerm_lab_service_schedule}.
 type LabServiceSchedule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -498,7 +498,7 @@ func (j *jsiiProxy_LabServiceSchedule) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/lab_service_schedule azurerm_lab_service_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/lab_service_schedule azurerm_lab_service_schedule} Resource.
 func NewLabServiceSchedule(scope constructs.Construct, id *string, config *LabServiceScheduleConfig) LabServiceSchedule {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewLabServiceSchedule(scope constructs.Construct, id *string, config *LabSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/lab_service_schedule azurerm_lab_service_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/lab_service_schedule azurerm_lab_service_schedule} Resource.
 func NewLabServiceSchedule_Override(l LabServiceSchedule, scope constructs.Construct, id *string, config *LabServiceScheduleConfig) {
 	_init_.Initialize()
 

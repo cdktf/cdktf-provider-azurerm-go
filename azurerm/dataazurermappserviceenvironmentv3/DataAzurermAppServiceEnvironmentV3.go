@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3}.
 type DataAzurermAppServiceEnvironmentV3 interface {
 	cdktf.TerraformDataSource
 	AllowNewPrivateEndpointConnections() cdktf.IResolvable
@@ -65,6 +65,7 @@ type DataAzurermAppServiceEnvironmentV3 interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	RemoteDebuggingEnabled() cdktf.IResolvable
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
@@ -400,6 +401,16 @@ func (j *jsiiProxy_DataAzurermAppServiceEnvironmentV3) RawOverrides() interface{
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermAppServiceEnvironmentV3) RemoteDebuggingEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"remoteDebuggingEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermAppServiceEnvironmentV3) ResourceGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -511,7 +522,7 @@ func (j *jsiiProxy_DataAzurermAppServiceEnvironmentV3) ZoneRedundant() cdktf.IRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3} Data Source.
 func NewDataAzurermAppServiceEnvironmentV3(scope constructs.Construct, id *string, config *DataAzurermAppServiceEnvironmentV3Config) DataAzurermAppServiceEnvironmentV3 {
 	_init_.Initialize()
 
@@ -529,7 +540,7 @@ func NewDataAzurermAppServiceEnvironmentV3(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3} Data Source.
 func NewDataAzurermAppServiceEnvironmentV3_Override(d DataAzurermAppServiceEnvironmentV3, scope constructs.Construct, id *string, config *DataAzurermAppServiceEnvironmentV3Config) {
 	_init_.Initialize()
 

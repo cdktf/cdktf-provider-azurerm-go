@@ -127,6 +127,10 @@ func (j *jsiiProxy_LogAnalyticsWorkspaceTable) validateSetRetentionInDaysParamet
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsWorkspaceTable) validateSetTotalRetentionInDaysParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsWorkspaceTable) validateSetWorkspaceIdParameters(val *string) error {
 	return nil
 }

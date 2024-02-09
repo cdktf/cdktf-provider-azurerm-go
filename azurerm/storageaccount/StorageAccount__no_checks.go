@@ -211,6 +211,10 @@ func (j *jsiiProxy_StorageAccount) validateSetLifecycleParameters(val *cdktf.Ter
 	return nil
 }
 
+func (j *jsiiProxy_StorageAccount) validateSetLocalUserEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccount) validateSetLocationParameters(val *string) error {
 	return nil
 }

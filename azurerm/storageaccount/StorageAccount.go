@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/storage_account azurerm_storage_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/storage_account azurerm_storage_account}.
 type StorageAccount interface {
 	cdktf.TerraformResource
 	AccessTier() *string
@@ -97,6 +97,9 @@ type StorageAccount interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LocalUserEnabled() interface{}
+	SetLocalUserEnabled(val interface{})
+	LocalUserEnabledInput() interface{}
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
@@ -308,6 +311,7 @@ type StorageAccount interface {
 	ResetInfrastructureEncryptionEnabled()
 	ResetIsHnsEnabled()
 	ResetLargeFileShareEnabled()
+	ResetLocalUserEnabled()
 	ResetMinTlsVersion()
 	ResetNetworkRules()
 	ResetNfsv3Enabled()
@@ -829,6 +833,26 @@ func (j *jsiiProxy_StorageAccount) Lifecycle() *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) LocalUserEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localUserEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) LocalUserEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localUserEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1985,7 +2009,7 @@ func (j *jsiiProxy_StorageAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/storage_account azurerm_storage_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/storage_account azurerm_storage_account} Resource.
 func NewStorageAccount(scope constructs.Construct, id *string, config *StorageAccountConfig) StorageAccount {
 	_init_.Initialize()
 
@@ -2003,7 +2027,7 @@ func NewStorageAccount(scope constructs.Construct, id *string, config *StorageAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/storage_account azurerm_storage_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/storage_account azurerm_storage_account} Resource.
 func NewStorageAccount_Override(s StorageAccount, scope constructs.Construct, id *string, config *StorageAccountConfig) {
 	_init_.Initialize()
 
@@ -2213,6 +2237,17 @@ func (j *jsiiProxy_StorageAccount)SetLifecycle(val *cdktf.TerraformResourceLifec
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageAccount)SetLocalUserEnabled(val interface{}) {
+	if err := j.validateSetLocalUserEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localUserEnabled",
 		val,
 	)
 }
@@ -2993,6 +3028,14 @@ func (s *jsiiProxy_StorageAccount) ResetLargeFileShareEnabled() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetLargeFileShareEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageAccount) ResetLocalUserEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLocalUserEnabled",
 		nil, // no parameters
 	)
 }

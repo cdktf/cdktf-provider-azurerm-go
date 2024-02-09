@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/log_analytics_workspace_table azurerm_log_analytics_workspace_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/log_analytics_workspace_table azurerm_log_analytics_workspace_table}.
 type LogAnalyticsWorkspaceTable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -75,6 +75,9 @@ type LogAnalyticsWorkspaceTable interface {
 	TerraformResourceType() *string
 	Timeouts() LogAnalyticsWorkspaceTableTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TotalRetentionInDays() *float64
+	SetTotalRetentionInDays(val *float64)
+	TotalRetentionInDaysInput() *float64
 	WorkspaceId() *string
 	SetWorkspaceId(val *string)
 	WorkspaceIdInput() *string
@@ -129,6 +132,7 @@ type LogAnalyticsWorkspaceTable interface {
 	ResetPlan()
 	ResetRetentionInDays()
 	ResetTimeouts()
+	ResetTotalRetentionInDays()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -407,6 +411,26 @@ func (j *jsiiProxy_LogAnalyticsWorkspaceTable) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LogAnalyticsWorkspaceTable) TotalRetentionInDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalRetentionInDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogAnalyticsWorkspaceTable) TotalRetentionInDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalRetentionInDaysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogAnalyticsWorkspaceTable) WorkspaceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -428,7 +452,7 @@ func (j *jsiiProxy_LogAnalyticsWorkspaceTable) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/log_analytics_workspace_table azurerm_log_analytics_workspace_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/log_analytics_workspace_table azurerm_log_analytics_workspace_table} Resource.
 func NewLogAnalyticsWorkspaceTable(scope constructs.Construct, id *string, config *LogAnalyticsWorkspaceTableConfig) LogAnalyticsWorkspaceTable {
 	_init_.Initialize()
 
@@ -446,7 +470,7 @@ func NewLogAnalyticsWorkspaceTable(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/log_analytics_workspace_table azurerm_log_analytics_workspace_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/log_analytics_workspace_table azurerm_log_analytics_workspace_table} Resource.
 func NewLogAnalyticsWorkspaceTable_Override(l LogAnalyticsWorkspaceTable, scope constructs.Construct, id *string, config *LogAnalyticsWorkspaceTableConfig) {
 	_init_.Initialize()
 
@@ -565,6 +589,17 @@ func (j *jsiiProxy_LogAnalyticsWorkspaceTable)SetRetentionInDays(val *float64) {
 	_jsii_.Set(
 		j,
 		"retentionInDays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogAnalyticsWorkspaceTable)SetTotalRetentionInDays(val *float64) {
+	if err := j.validateSetTotalRetentionInDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"totalRetentionInDays",
 		val,
 	)
 }
@@ -980,6 +1015,14 @@ func (l *jsiiProxy_LogAnalyticsWorkspaceTable) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogAnalyticsWorkspaceTable) ResetTotalRetentionInDays() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTotalRetentionInDays",
 		nil, // no parameters
 	)
 }

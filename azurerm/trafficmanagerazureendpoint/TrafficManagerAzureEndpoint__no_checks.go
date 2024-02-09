@@ -103,6 +103,10 @@ func validateTrafficManagerAzureEndpoint_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_TrafficManagerAzureEndpoint) validateSetAlwaysServeEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TrafficManagerAzureEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

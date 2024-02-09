@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint}.
 type TrafficManagerAzureEndpoint interface {
 	cdktf.TerraformResource
+	AlwaysServeEnabled() interface{}
+	SetAlwaysServeEnabled(val interface{})
+	AlwaysServeEnabledInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -137,6 +140,7 @@ type TrafficManagerAzureEndpoint interface {
 	PutCustomHeader(value interface{})
 	PutSubnet(value interface{})
 	PutTimeouts(value *TrafficManagerAzureEndpointTimeouts)
+	ResetAlwaysServeEnabled()
 	ResetCustomHeader()
 	ResetEnabled()
 	ResetGeoMappings()
@@ -164,6 +168,26 @@ type TrafficManagerAzureEndpoint interface {
 // The jsii proxy struct for TrafficManagerAzureEndpoint
 type jsiiProxy_TrafficManagerAzureEndpoint struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_TrafficManagerAzureEndpoint) AlwaysServeEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"alwaysServeEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TrafficManagerAzureEndpoint) AlwaysServeEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"alwaysServeEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_TrafficManagerAzureEndpoint) CdktfStack() cdktf.TerraformStack {
@@ -547,7 +571,7 @@ func (j *jsiiProxy_TrafficManagerAzureEndpoint) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint} Resource.
 func NewTrafficManagerAzureEndpoint(scope constructs.Construct, id *string, config *TrafficManagerAzureEndpointConfig) TrafficManagerAzureEndpoint {
 	_init_.Initialize()
 
@@ -565,7 +589,7 @@ func NewTrafficManagerAzureEndpoint(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint} Resource.
 func NewTrafficManagerAzureEndpoint_Override(t TrafficManagerAzureEndpoint, scope constructs.Construct, id *string, config *TrafficManagerAzureEndpointConfig) {
 	_init_.Initialize()
 
@@ -573,6 +597,17 @@ func NewTrafficManagerAzureEndpoint_Override(t TrafficManagerAzureEndpoint, scop
 		"@cdktf/provider-azurerm.trafficManagerAzureEndpoint.TrafficManagerAzureEndpoint",
 		[]interface{}{scope, id, config},
 		t,
+	)
+}
+
+func (j *jsiiProxy_TrafficManagerAzureEndpoint)SetAlwaysServeEnabled(val interface{}) {
+	if err := j.validateSetAlwaysServeEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alwaysServeEnabled",
+		val,
 	)
 }
 
@@ -1115,6 +1150,14 @@ func (t *jsiiProxy_TrafficManagerAzureEndpoint) PutTimeouts(value *TrafficManage
 		t,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (t *jsiiProxy_TrafficManagerAzureEndpoint) ResetAlwaysServeEnabled() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAlwaysServeEnabled",
+		nil, // no parameters
 	)
 }
 

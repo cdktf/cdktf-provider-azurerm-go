@@ -22,26 +22,26 @@ type KubernetesFleetManagerConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/kubernetes_fleet_manager#location KubernetesFleetManager#location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/kubernetes_fleet_manager#location KubernetesFleetManager#location}.
 	Location *string `field:"required" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/kubernetes_fleet_manager#name KubernetesFleetManager#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/kubernetes_fleet_manager#name KubernetesFleetManager#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/kubernetes_fleet_manager#resource_group_name KubernetesFleetManager#resource_group_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/kubernetes_fleet_manager#resource_group_name KubernetesFleetManager#resource_group_name}.
 	ResourceGroupName *string `field:"required" json:"resourceGroupName" yaml:"resourceGroupName"`
 	// hub_profile block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/kubernetes_fleet_manager#hub_profile KubernetesFleetManager#hub_profile}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/kubernetes_fleet_manager#hub_profile KubernetesFleetManager#hub_profile}
 	HubProfile *KubernetesFleetManagerHubProfile `field:"optional" json:"hubProfile" yaml:"hubProfile"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/kubernetes_fleet_manager#id KubernetesFleetManager#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/kubernetes_fleet_manager#id KubernetesFleetManager#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/kubernetes_fleet_manager#tags KubernetesFleetManager#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/kubernetes_fleet_manager#tags KubernetesFleetManager#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/kubernetes_fleet_manager#timeouts KubernetesFleetManager#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/kubernetes_fleet_manager#timeouts KubernetesFleetManager#timeouts}
 	Timeouts *KubernetesFleetManagerTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

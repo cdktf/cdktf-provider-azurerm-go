@@ -103,6 +103,10 @@ func validateTrafficManagerExternalEndpoint_IsTerraformResourceParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_TrafficManagerExternalEndpoint) validateSetAlwaysServeEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TrafficManagerExternalEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

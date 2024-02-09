@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/security_center_storage_defender azurerm_security_center_storage_defender}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/security_center_storage_defender azurerm_security_center_storage_defender}.
 type SecurityCenterStorageDefender interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -453,7 +453,7 @@ func (j *jsiiProxy_SecurityCenterStorageDefender) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/security_center_storage_defender azurerm_security_center_storage_defender} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/security_center_storage_defender azurerm_security_center_storage_defender} Resource.
 func NewSecurityCenterStorageDefender(scope constructs.Construct, id *string, config *SecurityCenterStorageDefenderConfig) SecurityCenterStorageDefender {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewSecurityCenterStorageDefender(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/security_center_storage_defender azurerm_security_center_storage_defender} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/security_center_storage_defender azurerm_security_center_storage_defender} Resource.
 func NewSecurityCenterStorageDefender_Override(s SecurityCenterStorageDefender, scope constructs.Construct, id *string, config *SecurityCenterStorageDefenderConfig) {
 	_init_.Initialize()
 

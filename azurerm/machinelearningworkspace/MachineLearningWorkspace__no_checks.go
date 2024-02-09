@@ -79,6 +79,10 @@ func (m *jsiiProxy_MachineLearningWorkspace) validatePutEncryptionParameters(val
 	return nil
 }
 
+func (m *jsiiProxy_MachineLearningWorkspace) validatePutFeatureStoreParameters(value *MachineLearningWorkspaceFeatureStore) error {
+	return nil
+}
+
 func (m *jsiiProxy_MachineLearningWorkspace) validatePutIdentityParameters(value *MachineLearningWorkspaceIdentity) error {
 	return nil
 }
@@ -140,6 +144,10 @@ func (j *jsiiProxy_MachineLearningWorkspace) validateSetImageBuildComputeNamePar
 }
 
 func (j *jsiiProxy_MachineLearningWorkspace) validateSetKeyVaultIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MachineLearningWorkspace) validateSetKindParameters(val *string) error {
 	return nil
 }
 

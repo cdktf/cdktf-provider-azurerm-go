@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace}.
 type MachineLearningWorkspace interface {
 	cdktf.TerraformResource
 	ApplicationInsightsId() *string
@@ -43,6 +43,8 @@ type MachineLearningWorkspace interface {
 	DiscoveryUrl() *string
 	Encryption() MachineLearningWorkspaceEncryptionOutputReference
 	EncryptionInput() *MachineLearningWorkspaceEncryption
+	FeatureStore() MachineLearningWorkspaceFeatureStoreOutputReference
+	FeatureStoreInput() *MachineLearningWorkspaceFeatureStore
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -68,6 +70,9 @@ type MachineLearningWorkspace interface {
 	KeyVaultId() *string
 	SetKeyVaultId(val *string)
 	KeyVaultIdInput() *string
+	Kind() *string
+	SetKind(val *string)
+	KindInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -167,15 +172,18 @@ type MachineLearningWorkspace interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEncryption(value *MachineLearningWorkspaceEncryption)
+	PutFeatureStore(value *MachineLearningWorkspaceFeatureStore)
 	PutIdentity(value *MachineLearningWorkspaceIdentity)
 	PutTimeouts(value *MachineLearningWorkspaceTimeouts)
 	ResetContainerRegistryId()
 	ResetDescription()
 	ResetEncryption()
+	ResetFeatureStore()
 	ResetFriendlyName()
 	ResetHighBusinessImpact()
 	ResetId()
 	ResetImageBuildComputeName()
+	ResetKind()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -344,6 +352,26 @@ func (j *jsiiProxy_MachineLearningWorkspace) EncryptionInput() *MachineLearningW
 	return returns
 }
 
+func (j *jsiiProxy_MachineLearningWorkspace) FeatureStore() MachineLearningWorkspaceFeatureStoreOutputReference {
+	var returns MachineLearningWorkspaceFeatureStoreOutputReference
+	_jsii_.Get(
+		j,
+		"featureStore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MachineLearningWorkspace) FeatureStoreInput() *MachineLearningWorkspaceFeatureStore {
+	var returns *MachineLearningWorkspaceFeatureStore
+	_jsii_.Get(
+		j,
+		"featureStoreInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MachineLearningWorkspace) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -489,6 +517,26 @@ func (j *jsiiProxy_MachineLearningWorkspace) KeyVaultIdInput() *string {
 	_jsii_.Get(
 		j,
 		"keyVaultIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MachineLearningWorkspace) Kind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MachineLearningWorkspace) KindInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kindInput",
 		&returns,
 	)
 	return returns
@@ -805,7 +853,7 @@ func (j *jsiiProxy_MachineLearningWorkspace) WorkspaceId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace} Resource.
 func NewMachineLearningWorkspace(scope constructs.Construct, id *string, config *MachineLearningWorkspaceConfig) MachineLearningWorkspace {
 	_init_.Initialize()
 
@@ -823,7 +871,7 @@ func NewMachineLearningWorkspace(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace} Resource.
 func NewMachineLearningWorkspace_Override(m MachineLearningWorkspace, scope constructs.Construct, id *string, config *MachineLearningWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -956,6 +1004,17 @@ func (j *jsiiProxy_MachineLearningWorkspace)SetKeyVaultId(val *string) {
 	_jsii_.Set(
 		j,
 		"keyVaultId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MachineLearningWorkspace)SetKind(val *string) {
+	if err := j.validateSetKindParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kind",
 		val,
 	)
 }
@@ -1464,6 +1523,17 @@ func (m *jsiiProxy_MachineLearningWorkspace) PutEncryption(value *MachineLearnin
 	)
 }
 
+func (m *jsiiProxy_MachineLearningWorkspace) PutFeatureStore(value *MachineLearningWorkspaceFeatureStore) {
+	if err := m.validatePutFeatureStoreParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putFeatureStore",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MachineLearningWorkspace) PutIdentity(value *MachineLearningWorkspaceIdentity) {
 	if err := m.validatePutIdentityParameters(value); err != nil {
 		panic(err)
@@ -1510,6 +1580,14 @@ func (m *jsiiProxy_MachineLearningWorkspace) ResetEncryption() {
 	)
 }
 
+func (m *jsiiProxy_MachineLearningWorkspace) ResetFeatureStore() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetFeatureStore",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MachineLearningWorkspace) ResetFriendlyName() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1538,6 +1616,14 @@ func (m *jsiiProxy_MachineLearningWorkspace) ResetImageBuildComputeName() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetImageBuildComputeName",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MachineLearningWorkspace) ResetKind() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetKind",
 		nil, // no parameters
 	)
 }

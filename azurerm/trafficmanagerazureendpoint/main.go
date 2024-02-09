@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "alwaysServeEnabled", GoGetter: "AlwaysServeEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "alwaysServeEnabledInput", GoGetter: "AlwaysServeEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
@@ -62,6 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSubnet", GoMethod: "PutSubnet"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlwaysServeEnabled", GoMethod: "ResetAlwaysServeEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomHeader", GoMethod: "ResetCustomHeader"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGeoMappings", GoMethod: "ResetGeoMappings"},

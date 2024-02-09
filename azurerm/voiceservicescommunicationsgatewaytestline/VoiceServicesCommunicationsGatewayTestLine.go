@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/voice_services_communications_gateway_test_line azurerm_voice_services_communications_gateway_test_line}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/voice_services_communications_gateway_test_line azurerm_voice_services_communications_gateway_test_line}.
 type VoiceServicesCommunicationsGatewayTestLine interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_VoiceServicesCommunicationsGatewayTestLine) VoiceServicesComm
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/voice_services_communications_gateway_test_line azurerm_voice_services_communications_gateway_test_line} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/voice_services_communications_gateway_test_line azurerm_voice_services_communications_gateway_test_line} Resource.
 func NewVoiceServicesCommunicationsGatewayTestLine(scope constructs.Construct, id *string, config *VoiceServicesCommunicationsGatewayTestLineConfig) VoiceServicesCommunicationsGatewayTestLine {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewVoiceServicesCommunicationsGatewayTestLine(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/voice_services_communications_gateway_test_line azurerm_voice_services_communications_gateway_test_line} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/voice_services_communications_gateway_test_line azurerm_voice_services_communications_gateway_test_line} Resource.
 func NewVoiceServicesCommunicationsGatewayTestLine_Override(v VoiceServicesCommunicationsGatewayTestLine, scope constructs.Construct, id *string, config *VoiceServicesCommunicationsGatewayTestLineConfig) {
 	_init_.Initialize()
 

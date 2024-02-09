@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/app_service_environment_v3 azurerm_app_service_environment_v3}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/app_service_environment_v3 azurerm_app_service_environment_v3}.
 type AppServiceEnvironmentV3 interface {
 	cdktf.TerraformResource
 	AllowNewPrivateEndpointConnections() interface{}
@@ -80,6 +80,9 @@ type AppServiceEnvironmentV3 interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RemoteDebuggingEnabled() interface{}
+	SetRemoteDebuggingEnabled(val interface{})
+	RemoteDebuggingEnabledInput() interface{}
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
@@ -154,6 +157,7 @@ type AppServiceEnvironmentV3 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRemoteDebuggingEnabled()
 	ResetTags()
 	ResetTimeouts()
 	ResetZoneRedundant()
@@ -505,6 +509,26 @@ func (j *jsiiProxy_AppServiceEnvironmentV3) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppServiceEnvironmentV3) RemoteDebuggingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"remoteDebuggingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppServiceEnvironmentV3) RemoteDebuggingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"remoteDebuggingEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppServiceEnvironmentV3) ResourceGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -646,7 +670,7 @@ func (j *jsiiProxy_AppServiceEnvironmentV3) ZoneRedundantInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/app_service_environment_v3 azurerm_app_service_environment_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/app_service_environment_v3 azurerm_app_service_environment_v3} Resource.
 func NewAppServiceEnvironmentV3(scope constructs.Construct, id *string, config *AppServiceEnvironmentV3Config) AppServiceEnvironmentV3 {
 	_init_.Initialize()
 
@@ -664,7 +688,7 @@ func NewAppServiceEnvironmentV3(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.90.0/docs/resources/app_service_environment_v3 azurerm_app_service_environment_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/app_service_environment_v3 azurerm_app_service_environment_v3} Resource.
 func NewAppServiceEnvironmentV3_Override(a AppServiceEnvironmentV3, scope constructs.Construct, id *string, config *AppServiceEnvironmentV3Config) {
 	_init_.Initialize()
 
@@ -794,6 +818,17 @@ func (j *jsiiProxy_AppServiceEnvironmentV3)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppServiceEnvironmentV3)SetRemoteDebuggingEnabled(val interface{}) {
+	if err := j.validateSetRemoteDebuggingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"remoteDebuggingEnabled",
 		val,
 	)
 }
@@ -1261,6 +1296,14 @@ func (a *jsiiProxy_AppServiceEnvironmentV3) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppServiceEnvironmentV3) ResetRemoteDebuggingEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRemoteDebuggingEnabled",
 		nil, // no parameters
 	)
 }

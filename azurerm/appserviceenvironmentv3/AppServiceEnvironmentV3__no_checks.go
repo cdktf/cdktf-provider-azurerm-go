@@ -135,6 +135,10 @@ func (j *jsiiProxy_AppServiceEnvironmentV3) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_AppServiceEnvironmentV3) validateSetRemoteDebuggingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceEnvironmentV3) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }
