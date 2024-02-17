@@ -450,6 +450,14 @@ func (j *jsiiProxy_CostAnomalyAlert) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_CostAnomalyAlert) validateSetSubscriptionIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewCostAnomalyAlertParameters(scope constructs.Construct, id *string, config *CostAnomalyAlertConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

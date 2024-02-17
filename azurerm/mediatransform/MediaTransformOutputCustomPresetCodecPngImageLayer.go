@@ -5,11 +5,11 @@ package mediatransform
 
 
 type MediaTransformOutputCustomPresetCodecPngImageLayer struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/media_transform#height MediaTransform#height}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/media_transform#height MediaTransform#height}.
 	Height *string `field:"optional" json:"height" yaml:"height"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/media_transform#label MediaTransform#label}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/media_transform#label MediaTransform#label}.
 	Label *string `field:"optional" json:"label" yaml:"label"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/media_transform#width MediaTransform#width}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/media_transform#width MediaTransform#width}.
 	Width *string `field:"optional" json:"width" yaml:"width"`
 }
 

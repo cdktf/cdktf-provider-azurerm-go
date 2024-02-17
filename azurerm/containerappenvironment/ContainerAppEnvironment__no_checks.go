@@ -115,6 +115,10 @@ func (j *jsiiProxy_ContainerAppEnvironment) validateSetIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppEnvironment) validateSetInfrastructureResourceGroupNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppEnvironment) validateSetInfrastructureSubnetIdParameters(val *string) error {
 	return nil
 }

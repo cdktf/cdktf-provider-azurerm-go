@@ -557,6 +557,14 @@ func (j *jsiiProxy_VirtualDesktopHostPool) validateSetValidateEnvironmentParamet
 	return nil
 }
 
+func (j *jsiiProxy_VirtualDesktopHostPool) validateSetVmTemplateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewVirtualDesktopHostPoolParameters(scope constructs.Construct, id *string, config *VirtualDesktopHostPoolConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

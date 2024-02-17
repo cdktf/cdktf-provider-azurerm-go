@@ -80,6 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetValidateEnvironment", GoMethod: "ResetValidateEnvironment"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVmTemplate", GoMethod: "ResetVmTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "scheduledAgentUpdates", GoGetter: "ScheduledAgentUpdates"},
@@ -103,6 +104,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "validateEnvironment", GoGetter: "ValidateEnvironment"},
 			_jsii_.MemberProperty{JsiiProperty: "validateEnvironmentInput", GoGetter: "ValidateEnvironmentInput"},
+			_jsii_.MemberProperty{JsiiProperty: "vmTemplate", GoGetter: "VmTemplate"},
+			_jsii_.MemberProperty{JsiiProperty: "vmTemplateInput", GoGetter: "VmTemplateInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_VirtualDesktopHostPool{}

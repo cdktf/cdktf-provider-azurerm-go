@@ -160,6 +160,10 @@ func init() {
 		reflect.TypeOf((*AzurermProviderFeaturesManagedDisk)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer",
+		reflect.TypeOf((*AzurermProviderFeaturesPostgresqlFlexibleServer)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup",
 		reflect.TypeOf((*AzurermProviderFeaturesResourceGroup)(nil)).Elem(),
 	)

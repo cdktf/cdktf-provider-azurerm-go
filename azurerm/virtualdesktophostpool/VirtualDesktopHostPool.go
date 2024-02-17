@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool}.
 type VirtualDesktopHostPool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -110,6 +110,9 @@ type VirtualDesktopHostPool interface {
 	ValidateEnvironment() interface{}
 	SetValidateEnvironment(val interface{})
 	ValidateEnvironmentInput() interface{}
+	VmTemplate() *string
+	SetVmTemplate(val *string)
+	VmTemplateInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -170,6 +173,7 @@ type VirtualDesktopHostPool interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetValidateEnvironment()
+	ResetVmTemplate()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -688,8 +692,28 @@ func (j *jsiiProxy_VirtualDesktopHostPool) ValidateEnvironmentInput() interface{
 	return returns
 }
 
+func (j *jsiiProxy_VirtualDesktopHostPool) VmTemplate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vmTemplate",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool} Resource.
+func (j *jsiiProxy_VirtualDesktopHostPool) VmTemplateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vmTemplateInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool} Resource.
 func NewVirtualDesktopHostPool(scope constructs.Construct, id *string, config *VirtualDesktopHostPoolConfig) VirtualDesktopHostPool {
 	_init_.Initialize()
 
@@ -707,7 +731,7 @@ func NewVirtualDesktopHostPool(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool} Resource.
 func NewVirtualDesktopHostPool_Override(v VirtualDesktopHostPool, scope constructs.Construct, id *string, config *VirtualDesktopHostPoolConfig) {
 	_init_.Initialize()
 
@@ -947,6 +971,17 @@ func (j *jsiiProxy_VirtualDesktopHostPool)SetValidateEnvironment(val interface{}
 	_jsii_.Set(
 		j,
 		"validateEnvironment",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualDesktopHostPool)SetVmTemplate(val *string) {
+	if err := j.validateSetVmTemplateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vmTemplate",
 		val,
 	)
 }
@@ -1426,6 +1461,14 @@ func (v *jsiiProxy_VirtualDesktopHostPool) ResetValidateEnvironment() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetValidateEnvironment",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualDesktopHostPool) ResetVmTemplate() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetVmTemplate",
 		nil, // no parameters
 	)
 }

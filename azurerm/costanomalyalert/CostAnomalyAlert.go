@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert}.
 type CostAnomalyAlert interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -73,6 +73,9 @@ type CostAnomalyAlert interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SubscriptionId() *string
+	SetSubscriptionId(val *string)
+	SubscriptionIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -130,6 +133,7 @@ type CostAnomalyAlert interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSubscriptionId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -399,6 +403,26 @@ func (j *jsiiProxy_CostAnomalyAlert) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CostAnomalyAlert) SubscriptionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subscriptionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CostAnomalyAlert) SubscriptionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subscriptionIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CostAnomalyAlert) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -450,7 +474,7 @@ func (j *jsiiProxy_CostAnomalyAlert) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert} Resource.
 func NewCostAnomalyAlert(scope constructs.Construct, id *string, config *CostAnomalyAlertConfig) CostAnomalyAlert {
 	_init_.Initialize()
 
@@ -468,7 +492,7 @@ func NewCostAnomalyAlert(scope constructs.Construct, id *string, config *CostAno
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert} Resource.
 func NewCostAnomalyAlert_Override(c CostAnomalyAlert, scope constructs.Construct, id *string, config *CostAnomalyAlertConfig) {
 	_init_.Initialize()
 
@@ -609,6 +633,17 @@ func (j *jsiiProxy_CostAnomalyAlert)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CostAnomalyAlert)SetSubscriptionId(val *string) {
+	if err := j.validateSetSubscriptionIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subscriptionId",
 		val,
 	)
 }
@@ -997,6 +1032,14 @@ func (c *jsiiProxy_CostAnomalyAlert) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CostAnomalyAlert) ResetSubscriptionId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSubscriptionId",
 		nil, // no parameters
 	)
 }

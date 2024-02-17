@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/lb_outbound_rule azurerm_lb_outbound_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/lb_outbound_rule azurerm_lb_outbound_rule}.
 type LbOutboundRule interface {
 	cdktf.TerraformResource
 	AllocatedOutboundPorts() *float64
@@ -522,7 +522,7 @@ func (j *jsiiProxy_LbOutboundRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/lb_outbound_rule azurerm_lb_outbound_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/lb_outbound_rule azurerm_lb_outbound_rule} Resource.
 func NewLbOutboundRule(scope constructs.Construct, id *string, config *LbOutboundRuleConfig) LbOutboundRule {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewLbOutboundRule(scope constructs.Construct, id *string, config *LbOutboun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/lb_outbound_rule azurerm_lb_outbound_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/lb_outbound_rule azurerm_lb_outbound_rule} Resource.
 func NewLbOutboundRule_Override(l LbOutboundRule, scope constructs.Construct, id *string, config *LbOutboundRuleConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/container_app_environment azurerm_container_app_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/container_app_environment azurerm_container_app_environment}.
 type ContainerAppEnvironment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -47,6 +47,9 @@ type ContainerAppEnvironment interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InfrastructureResourceGroupName() *string
+	SetInfrastructureResourceGroupName(val *string)
+	InfrastructureResourceGroupNameInput() *string
 	InfrastructureSubnetId() *string
 	SetInfrastructureSubnetId(val *string)
 	InfrastructureSubnetIdInput() *string
@@ -147,6 +150,7 @@ type ContainerAppEnvironment interface {
 	PutWorkloadProfile(value interface{})
 	ResetDaprApplicationInsightsConnectionString()
 	ResetId()
+	ResetInfrastructureResourceGroupName()
 	ResetInfrastructureSubnetId()
 	ResetInternalLoadBalancerEnabled()
 	ResetLogAnalyticsWorkspaceId()
@@ -310,6 +314,26 @@ func (j *jsiiProxy_ContainerAppEnvironment) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppEnvironment) InfrastructureResourceGroupName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"infrastructureResourceGroupName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppEnvironment) InfrastructureResourceGroupNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"infrastructureResourceGroupNameInput",
 		&returns,
 	)
 	return returns
@@ -626,7 +650,7 @@ func (j *jsiiProxy_ContainerAppEnvironment) ZoneRedundancyEnabledInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
 func NewContainerAppEnvironment(scope constructs.Construct, id *string, config *ContainerAppEnvironmentConfig) ContainerAppEnvironment {
 	_init_.Initialize()
 
@@ -644,7 +668,7 @@ func NewContainerAppEnvironment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
 func NewContainerAppEnvironment_Override(c ContainerAppEnvironment, scope constructs.Construct, id *string, config *ContainerAppEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -711,6 +735,17 @@ func (j *jsiiProxy_ContainerAppEnvironment)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAppEnvironment)SetInfrastructureResourceGroupName(val *string) {
+	if err := j.validateSetInfrastructureResourceGroupNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"infrastructureResourceGroupName",
 		val,
 	)
 }
@@ -1220,6 +1255,14 @@ func (c *jsiiProxy_ContainerAppEnvironment) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppEnvironment) ResetInfrastructureResourceGroupName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInfrastructureResourceGroupName",
 		nil, // no parameters
 	)
 }

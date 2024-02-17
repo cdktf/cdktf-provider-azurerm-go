@@ -35,6 +35,7 @@ type DataAzurermKeyVaultSecretsSecretsOutputReference interface {
 	InternalValue() *DataAzurermKeyVaultSecretsSecrets
 	SetInternalValue(val *DataAzurermKeyVaultSecretsSecrets)
 	Name() *string
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -157,6 +158,16 @@ func (j *jsiiProxy_DataAzurermKeyVaultSecretsSecretsOutputReference) Name() *str
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermKeyVaultSecretsSecretsOutputReference) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns

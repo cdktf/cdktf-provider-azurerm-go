@@ -175,6 +175,10 @@ func (j *jsiiProxy_VirtualDesktopHostPool) validateSetValidateEnvironmentParamet
 	return nil
 }
 
+func (j *jsiiProxy_VirtualDesktopHostPool) validateSetVmTemplateParameters(val *string) error {
+	return nil
+}
+
 func validateNewVirtualDesktopHostPoolParameters(scope constructs.Construct, id *string, config *VirtualDesktopHostPoolConfig) error {
 	return nil
 }

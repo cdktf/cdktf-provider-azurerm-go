@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/cosmosdb_notebook_workspace azurerm_cosmosdb_notebook_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/cosmosdb_notebook_workspace azurerm_cosmosdb_notebook_workspace}.
 type CosmosdbNotebookWorkspace interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_CosmosdbNotebookWorkspace) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/cosmosdb_notebook_workspace azurerm_cosmosdb_notebook_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/cosmosdb_notebook_workspace azurerm_cosmosdb_notebook_workspace} Resource.
 func NewCosmosdbNotebookWorkspace(scope constructs.Construct, id *string, config *CosmosdbNotebookWorkspaceConfig) CosmosdbNotebookWorkspace {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewCosmosdbNotebookWorkspace(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/cosmosdb_notebook_workspace azurerm_cosmosdb_notebook_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/cosmosdb_notebook_workspace azurerm_cosmosdb_notebook_workspace} Resource.
 func NewCosmosdbNotebookWorkspace_Override(c CosmosdbNotebookWorkspace, scope constructs.Construct, id *string, config *CosmosdbNotebookWorkspaceConfig) {
 	_init_.Initialize()
 

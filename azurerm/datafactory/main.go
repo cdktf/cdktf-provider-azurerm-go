@@ -148,6 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publishingEnabledInput", GoGetter: "PublishingEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "repositoryName", GoGetter: "RepositoryName"},
 			_jsii_.MemberProperty{JsiiProperty: "repositoryNameInput", GoGetter: "RepositoryNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGitUrl", GoMethod: "ResetGitUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPublishingEnabled", GoMethod: "ResetPublishingEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "rootFolder", GoGetter: "RootFolder"},

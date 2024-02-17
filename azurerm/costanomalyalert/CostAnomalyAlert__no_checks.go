@@ -135,6 +135,10 @@ func (j *jsiiProxy_CostAnomalyAlert) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_CostAnomalyAlert) validateSetSubscriptionIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewCostAnomalyAlertParameters(scope constructs.Construct, id *string, config *CostAnomalyAlertConfig) error {
 	return nil
 }

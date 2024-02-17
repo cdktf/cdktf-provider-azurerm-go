@@ -82,6 +82,7 @@ type DataFactoryGithubConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetGitUrl()
 	ResetPublishingEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -621,6 +622,14 @@ func (d *jsiiProxy_DataFactoryGithubConfigurationOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataFactoryGithubConfigurationOutputReference) ResetGitUrl() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGitUrl",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataFactoryGithubConfigurationOutputReference) ResetPublishingEnabled() {

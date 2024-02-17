@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/mssql_job_credential azurerm_mssql_job_credential}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/mssql_job_credential azurerm_mssql_job_credential}.
 type MssqlJobCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_MssqlJobCredential) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/mssql_job_credential azurerm_mssql_job_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/mssql_job_credential azurerm_mssql_job_credential} Resource.
 func NewMssqlJobCredential(scope constructs.Construct, id *string, config *MssqlJobCredentialConfig) MssqlJobCredential {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewMssqlJobCredential(scope constructs.Construct, id *string, config *Mssql
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.91.0/docs/resources/mssql_job_credential azurerm_mssql_job_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/mssql_job_credential azurerm_mssql_job_credential} Resource.
 func NewMssqlJobCredential_Override(m MssqlJobCredential, scope constructs.Construct, id *string, config *MssqlJobCredentialConfig) {
 	_init_.Initialize()
 

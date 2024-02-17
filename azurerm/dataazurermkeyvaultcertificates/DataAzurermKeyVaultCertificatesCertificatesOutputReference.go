@@ -35,6 +35,7 @@ type DataAzurermKeyVaultCertificatesCertificatesOutputReference interface {
 	InternalValue() *DataAzurermKeyVaultCertificatesCertificates
 	SetInternalValue(val *DataAzurermKeyVaultCertificatesCertificates)
 	Name() *string
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -157,6 +158,16 @@ func (j *jsiiProxy_DataAzurermKeyVaultCertificatesCertificatesOutputReference) N
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermKeyVaultCertificatesCertificatesOutputReference) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns

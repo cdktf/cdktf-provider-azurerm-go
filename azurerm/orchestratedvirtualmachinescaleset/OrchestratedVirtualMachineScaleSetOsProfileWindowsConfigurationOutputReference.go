@@ -13,6 +13,8 @@ import (
 
 type OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalUnattendContent() OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContentList
+	AdditionalUnattendContentInput() interface{}
 	AdminPassword() *string
 	SetAdminPassword(val *string)
 	AdminPasswordInput() *string
@@ -95,8 +97,10 @@ type OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutputRefere
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAdditionalUnattendContent(value interface{})
 	PutSecret(value interface{})
 	PutWinrmListener(value interface{})
+	ResetAdditionalUnattendContent()
 	ResetComputerNamePrefix()
 	ResetEnableAutomaticUpdates()
 	ResetHotpatchingEnabled()
@@ -119,6 +123,26 @@ type OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutputRefere
 // The jsii proxy struct for OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutputReference
 type jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutputReference) AdditionalUnattendContent() OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContentList {
+	var returns OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContentList
+	_jsii_.Get(
+		j,
+		"additionalUnattendContent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutputReference) AdditionalUnattendContentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"additionalUnattendContentInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutputReference) AdminPassword() *string {
@@ -779,6 +803,17 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurati
 	return returns
 }
 
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutputReference) PutAdditionalUnattendContent(value interface{}) {
+	if err := o.validatePutAdditionalUnattendContentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAdditionalUnattendContent",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutputReference) PutSecret(value interface{}) {
 	if err := o.validatePutSecretParameters(value); err != nil {
 		panic(err)
@@ -798,6 +833,14 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurati
 		o,
 		"putWinrmListener",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutputReference) ResetAdditionalUnattendContent() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAdditionalUnattendContent",
+		nil, // no parameters
 	)
 }
 

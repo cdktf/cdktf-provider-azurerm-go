@@ -93,6 +93,37 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurati
 	return nil
 }
 
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutputReference) validatePutAdditionalUnattendContentParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent:
+		value := value.(*[]*OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent:
+		value_ := value.([]*OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutputReference) validatePutSecretParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

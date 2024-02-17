@@ -83,6 +83,10 @@ func (d *jsiiProxy_DashboardGrafana) validatePutIdentityParameters(value *Dashbo
 	return nil
 }
 
+func (d *jsiiProxy_DashboardGrafana) validatePutSmtpParameters(value *DashboardGrafanaSmtp) error {
+	return nil
+}
+
 func (d *jsiiProxy_DashboardGrafana) validatePutTimeoutsParameters(value *DashboardGrafanaTimeouts) error {
 	return nil
 }
