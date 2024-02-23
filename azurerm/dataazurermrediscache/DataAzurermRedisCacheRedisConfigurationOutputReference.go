@@ -31,6 +31,7 @@ type DataAzurermRedisCacheRedisConfigurationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataPersistenceAuthenticationMethod() *string
 	EnableAuthentication() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -149,6 +150,16 @@ func (j *jsiiProxy_DataAzurermRedisCacheRedisConfigurationOutputReference) Creat
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermRedisCacheRedisConfigurationOutputReference) DataPersistenceAuthenticationMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataPersistenceAuthenticationMethod",
 		&returns,
 	)
 	return returns

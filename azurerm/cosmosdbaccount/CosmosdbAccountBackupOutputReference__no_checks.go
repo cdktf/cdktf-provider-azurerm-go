@@ -83,6 +83,10 @@ func (j *jsiiProxy_CosmosdbAccountBackupOutputReference) validateSetTerraformRes
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbAccountBackupOutputReference) validateSetTierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbAccountBackupOutputReference) validateSetTypeParameters(val *string) error {
 	return nil
 }

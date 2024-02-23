@@ -5,13 +5,13 @@ package streamanalyticscluster
 
 
 type StreamAnalyticsClusterTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/stream_analytics_cluster#create StreamAnalyticsCluster#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/stream_analytics_cluster#create StreamAnalyticsCluster#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/stream_analytics_cluster#delete StreamAnalyticsCluster#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/stream_analytics_cluster#delete StreamAnalyticsCluster#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/stream_analytics_cluster#read StreamAnalyticsCluster#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/stream_analytics_cluster#read StreamAnalyticsCluster#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/stream_analytics_cluster#update StreamAnalyticsCluster#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/stream_analytics_cluster#update StreamAnalyticsCluster#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

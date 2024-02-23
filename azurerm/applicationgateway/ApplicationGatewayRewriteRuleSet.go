@@ -5,11 +5,11 @@ package applicationgateway
 
 
 type ApplicationGatewayRewriteRuleSet struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// rewrite_rule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/application_gateway#rewrite_rule ApplicationGateway#rewrite_rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/application_gateway#rewrite_rule ApplicationGateway#rewrite_rule}
 	RewriteRule interface{} `field:"optional" json:"rewriteRule" yaml:"rewriteRule"`
 }
 

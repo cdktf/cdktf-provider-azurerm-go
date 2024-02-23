@@ -143,6 +143,10 @@ func (j *jsiiProxy_ServicebusNamespace) validateSetNameParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_ServicebusNamespace) validateSetPremiumMessagingPartitionsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicebusNamespace) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

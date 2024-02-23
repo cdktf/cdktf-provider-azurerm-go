@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/cosmosdb_cassandra_keyspace azurerm_cosmosdb_cassandra_keyspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/cosmosdb_cassandra_keyspace azurerm_cosmosdb_cassandra_keyspace}.
 type CosmosdbCassandraKeyspace interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -451,7 +451,7 @@ func (j *jsiiProxy_CosmosdbCassandraKeyspace) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/cosmosdb_cassandra_keyspace azurerm_cosmosdb_cassandra_keyspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/cosmosdb_cassandra_keyspace azurerm_cosmosdb_cassandra_keyspace} Resource.
 func NewCosmosdbCassandraKeyspace(scope constructs.Construct, id *string, config *CosmosdbCassandraKeyspaceConfig) CosmosdbCassandraKeyspace {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewCosmosdbCassandraKeyspace(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/cosmosdb_cassandra_keyspace azurerm_cosmosdb_cassandra_keyspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/cosmosdb_cassandra_keyspace azurerm_cosmosdb_cassandra_keyspace} Resource.
 func NewCosmosdbCassandraKeyspace_Override(c CosmosdbCassandraKeyspace, scope constructs.Construct, id *string, config *CosmosdbCassandraKeyspaceConfig) {
 	_init_.Initialize()
 

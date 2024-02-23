@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/bot_connection azurerm_bot_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/bot_connection azurerm_bot_connection}.
 type BotConnection interface {
 	cdktf.TerraformResource
 	BotName() *string
@@ -567,7 +567,7 @@ func (j *jsiiProxy_BotConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/bot_connection azurerm_bot_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/bot_connection azurerm_bot_connection} Resource.
 func NewBotConnection(scope constructs.Construct, id *string, config *BotConnectionConfig) BotConnection {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewBotConnection(scope constructs.Construct, id *string, config *BotConnect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/bot_connection azurerm_bot_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/bot_connection azurerm_bot_connection} Resource.
 func NewBotConnection_Override(b BotConnection, scope constructs.Construct, id *string, config *BotConnectionConfig) {
 	_init_.Initialize()
 

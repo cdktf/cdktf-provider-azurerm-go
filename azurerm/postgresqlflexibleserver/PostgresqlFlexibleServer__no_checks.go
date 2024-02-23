@@ -199,6 +199,10 @@ func (j *jsiiProxy_PostgresqlFlexibleServer) validateSetStorageMbParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_PostgresqlFlexibleServer) validateSetStorageTierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlFlexibleServer) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

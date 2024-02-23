@@ -49,6 +49,9 @@ type CosmosdbAccountBackupOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Tier() *string
+	SetTier(val *string)
+	TierInput() *string
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -79,6 +82,7 @@ type CosmosdbAccountBackupOutputReference interface {
 	ResetIntervalInMinutes()
 	ResetRetentionInHours()
 	ResetStorageRedundancy()
+	ResetTier()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -224,6 +228,26 @@ func (j *jsiiProxy_CosmosdbAccountBackupOutputReference) TerraformResource() cdk
 	return returns
 }
 
+func (j *jsiiProxy_CosmosdbAccountBackupOutputReference) Tier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccountBackupOutputReference) TierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tierInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CosmosdbAccountBackupOutputReference) Type() *string {
 	var returns *string
 	_jsii_.Get(
@@ -356,6 +380,17 @@ func (j *jsiiProxy_CosmosdbAccountBackupOutputReference)SetTerraformResource(val
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CosmosdbAccountBackupOutputReference)SetTier(val *string) {
+	if err := j.validateSetTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tier",
 		val,
 	)
 }
@@ -577,6 +612,14 @@ func (c *jsiiProxy_CosmosdbAccountBackupOutputReference) ResetStorageRedundancy(
 	_jsii_.InvokeVoid(
 		c,
 		"resetStorageRedundancy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CosmosdbAccountBackupOutputReference) ResetTier() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTier",
 		nil, // no parameters
 	)
 }

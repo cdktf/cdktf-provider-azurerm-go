@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace}.
 type MachineLearningWorkspace interface {
 	cdktf.TerraformResource
 	ApplicationInsightsId() *string
@@ -80,6 +80,8 @@ type MachineLearningWorkspace interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	ManagedNetwork() MachineLearningWorkspaceManagedNetworkOutputReference
+	ManagedNetworkInput() *MachineLearningWorkspaceManagedNetwork
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -174,6 +176,7 @@ type MachineLearningWorkspace interface {
 	PutEncryption(value *MachineLearningWorkspaceEncryption)
 	PutFeatureStore(value *MachineLearningWorkspaceFeatureStore)
 	PutIdentity(value *MachineLearningWorkspaceIdentity)
+	PutManagedNetwork(value *MachineLearningWorkspaceManagedNetwork)
 	PutTimeouts(value *MachineLearningWorkspaceTimeouts)
 	ResetContainerRegistryId()
 	ResetDescription()
@@ -184,6 +187,7 @@ type MachineLearningWorkspace interface {
 	ResetId()
 	ResetImageBuildComputeName()
 	ResetKind()
+	ResetManagedNetwork()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -572,6 +576,26 @@ func (j *jsiiProxy_MachineLearningWorkspace) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MachineLearningWorkspace) ManagedNetwork() MachineLearningWorkspaceManagedNetworkOutputReference {
+	var returns MachineLearningWorkspaceManagedNetworkOutputReference
+	_jsii_.Get(
+		j,
+		"managedNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MachineLearningWorkspace) ManagedNetworkInput() *MachineLearningWorkspaceManagedNetwork {
+	var returns *MachineLearningWorkspaceManagedNetwork
+	_jsii_.Get(
+		j,
+		"managedNetworkInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MachineLearningWorkspace) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -853,7 +877,7 @@ func (j *jsiiProxy_MachineLearningWorkspace) WorkspaceId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace} Resource.
 func NewMachineLearningWorkspace(scope constructs.Construct, id *string, config *MachineLearningWorkspaceConfig) MachineLearningWorkspace {
 	_init_.Initialize()
 
@@ -871,7 +895,7 @@ func NewMachineLearningWorkspace(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace} Resource.
 func NewMachineLearningWorkspace_Override(m MachineLearningWorkspace, scope constructs.Construct, id *string, config *MachineLearningWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -1545,6 +1569,17 @@ func (m *jsiiProxy_MachineLearningWorkspace) PutIdentity(value *MachineLearningW
 	)
 }
 
+func (m *jsiiProxy_MachineLearningWorkspace) PutManagedNetwork(value *MachineLearningWorkspaceManagedNetwork) {
+	if err := m.validatePutManagedNetworkParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putManagedNetwork",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MachineLearningWorkspace) PutTimeouts(value *MachineLearningWorkspaceTimeouts) {
 	if err := m.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1624,6 +1659,14 @@ func (m *jsiiProxy_MachineLearningWorkspace) ResetKind() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetKind",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MachineLearningWorkspace) ResetManagedNetwork() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetManagedNetwork",
 		nil, // no parameters
 	)
 }

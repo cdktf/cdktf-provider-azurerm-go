@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/data-sources/function_app_host_keys azurerm_function_app_host_keys}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/data-sources/function_app_host_keys azurerm_function_app_host_keys}.
 type DataAzurermFunctionAppHostKeys interface {
 	cdktf.TerraformDataSource
 	BlobsExtensionKey() *string
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataAzurermFunctionAppHostKeys) WebpubsubExtensionKey() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/data-sources/function_app_host_keys azurerm_function_app_host_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/data-sources/function_app_host_keys azurerm_function_app_host_keys} Data Source.
 func NewDataAzurermFunctionAppHostKeys(scope constructs.Construct, id *string, config *DataAzurermFunctionAppHostKeysConfig) DataAzurermFunctionAppHostKeys {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewDataAzurermFunctionAppHostKeys(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/data-sources/function_app_host_keys azurerm_function_app_host_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/data-sources/function_app_host_keys azurerm_function_app_host_keys} Data Source.
 func NewDataAzurermFunctionAppHostKeys_Override(d DataAzurermFunctionAppHostKeys, scope constructs.Construct, id *string, config *DataAzurermFunctionAppHostKeysConfig) {
 	_init_.Initialize()
 

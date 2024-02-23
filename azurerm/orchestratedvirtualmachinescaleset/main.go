@@ -363,6 +363,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lunInput", GoGetter: "LunInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreateOption", GoMethod: "ResetCreateOption"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskEncryptionSetId", GoMethod: "ResetDiskEncryptionSetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDiskSizeGb", GoMethod: "ResetDiskSizeGb"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLun", GoMethod: "ResetLun"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUltraSsdDiskIopsReadWrite", GoMethod: "ResetUltraSsdDiskIopsReadWrite"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUltraSsdDiskMbpsReadWrite", GoMethod: "ResetUltraSsdDiskMbpsReadWrite"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWriteAcceleratorEnabled", GoMethod: "ResetWriteAcceleratorEnabled"},

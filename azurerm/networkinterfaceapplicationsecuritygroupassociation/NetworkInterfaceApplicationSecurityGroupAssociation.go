@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/network_interface_application_security_group_association azurerm_network_interface_application_security_group_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/network_interface_application_security_group_association azurerm_network_interface_application_security_group_association}.
 type NetworkInterfaceApplicationSecurityGroupAssociation interface {
 	cdktf.TerraformResource
 	ApplicationSecurityGroupId() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_NetworkInterfaceApplicationSecurityGroupAssociation) Timeouts
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/network_interface_application_security_group_association azurerm_network_interface_application_security_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/network_interface_application_security_group_association azurerm_network_interface_application_security_group_association} Resource.
 func NewNetworkInterfaceApplicationSecurityGroupAssociation(scope constructs.Construct, id *string, config *NetworkInterfaceApplicationSecurityGroupAssociationConfig) NetworkInterfaceApplicationSecurityGroupAssociation {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewNetworkInterfaceApplicationSecurityGroupAssociation(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/network_interface_application_security_group_association azurerm_network_interface_application_security_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/network_interface_application_security_group_association azurerm_network_interface_application_security_group_association} Resource.
 func NewNetworkInterfaceApplicationSecurityGroupAssociation_Override(n NetworkInterfaceApplicationSecurityGroupAssociation, scope constructs.Construct, id *string, config *NetworkInterfaceApplicationSecurityGroupAssociationConfig) {
 	_init_.Initialize()
 

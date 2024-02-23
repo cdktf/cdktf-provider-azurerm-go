@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault}.
 type DataProtectionBackupVault interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -75,6 +75,12 @@ type DataProtectionBackupVault interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	RetentionDurationInDays() *float64
+	SetRetentionDurationInDays(val *float64)
+	RetentionDurationInDaysInput() *float64
+	SoftDelete() *string
+	SetSoftDelete(val *string)
+	SoftDeleteInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -136,6 +142,8 @@ type DataProtectionBackupVault interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRetentionDurationInDays()
+	ResetSoftDelete()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -426,6 +434,46 @@ func (j *jsiiProxy_DataProtectionBackupVault) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataProtectionBackupVault) RetentionDurationInDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retentionDurationInDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupVault) RetentionDurationInDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retentionDurationInDaysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupVault) SoftDelete() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"softDelete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupVault) SoftDeleteInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"softDeleteInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataProtectionBackupVault) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -497,7 +545,7 @@ func (j *jsiiProxy_DataProtectionBackupVault) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault} Resource.
 func NewDataProtectionBackupVault(scope constructs.Construct, id *string, config *DataProtectionBackupVaultConfig) DataProtectionBackupVault {
 	_init_.Initialize()
 
@@ -515,7 +563,7 @@ func NewDataProtectionBackupVault(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault} Resource.
 func NewDataProtectionBackupVault_Override(d DataProtectionBackupVault, scope constructs.Construct, id *string, config *DataProtectionBackupVaultConfig) {
 	_init_.Initialize()
 
@@ -656,6 +704,28 @@ func (j *jsiiProxy_DataProtectionBackupVault)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataProtectionBackupVault)SetRetentionDurationInDays(val *float64) {
+	if err := j.validateSetRetentionDurationInDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"retentionDurationInDays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataProtectionBackupVault)SetSoftDelete(val *string) {
+	if err := j.validateSetSoftDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"softDelete",
 		val,
 	)
 }
@@ -1066,6 +1136,22 @@ func (d *jsiiProxy_DataProtectionBackupVault) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataProtectionBackupVault) ResetRetentionDurationInDays() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRetentionDurationInDays",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataProtectionBackupVault) ResetSoftDelete() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSoftDelete",
 		nil, // no parameters
 	)
 }

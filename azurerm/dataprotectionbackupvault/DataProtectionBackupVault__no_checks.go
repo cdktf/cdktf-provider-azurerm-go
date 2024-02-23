@@ -139,6 +139,14 @@ func (j *jsiiProxy_DataProtectionBackupVault) validateSetResourceGroupNameParame
 	return nil
 }
 
+func (j *jsiiProxy_DataProtectionBackupVault) validateSetRetentionDurationInDaysParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataProtectionBackupVault) validateSetSoftDeleteParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupVault) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace}.
 type ServicebusNamespace interface {
 	cdktf.TerraformResource
 	Capacity() *float64
@@ -74,6 +74,9 @@ type ServicebusNamespace interface {
 	NetworkRuleSetInput() *ServicebusNamespaceNetworkRuleSet
 	// The tree node.
 	Node() constructs.Node
+	PremiumMessagingPartitions() *float64
+	SetPremiumMessagingPartitions(val *float64)
+	PremiumMessagingPartitionsInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -164,6 +167,7 @@ type ServicebusNamespace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPremiumMessagingPartitions()
 	ResetPublicNetworkAccessEnabled()
 	ResetTags()
 	ResetTimeouts()
@@ -516,6 +520,26 @@ func (j *jsiiProxy_ServicebusNamespace) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ServicebusNamespace) PremiumMessagingPartitions() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"premiumMessagingPartitions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicebusNamespace) PremiumMessagingPartitionsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"premiumMessagingPartitionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServicebusNamespace) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -697,7 +721,7 @@ func (j *jsiiProxy_ServicebusNamespace) ZoneRedundantInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace} Resource.
 func NewServicebusNamespace(scope constructs.Construct, id *string, config *ServicebusNamespaceConfig) ServicebusNamespace {
 	_init_.Initialize()
 
@@ -715,7 +739,7 @@ func NewServicebusNamespace(scope constructs.Construct, id *string, config *Serv
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace} Resource.
 func NewServicebusNamespace_Override(s ServicebusNamespace, scope constructs.Construct, id *string, config *ServicebusNamespaceConfig) {
 	_init_.Initialize()
 
@@ -837,6 +861,17 @@ func (j *jsiiProxy_ServicebusNamespace)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicebusNamespace)SetPremiumMessagingPartitions(val *float64) {
+	if err := j.validateSetPremiumMessagingPartitionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"premiumMessagingPartitions",
 		val,
 	)
 }
@@ -1372,6 +1407,14 @@ func (s *jsiiProxy_ServicebusNamespace) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicebusNamespace) ResetPremiumMessagingPartitions() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPremiumMessagingPartitions",
 		nil, // no parameters
 	)
 }

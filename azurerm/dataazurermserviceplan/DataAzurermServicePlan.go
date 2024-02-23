@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/data-sources/service_plan azurerm_service_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/data-sources/service_plan azurerm_service_plan}.
 type DataAzurermServicePlan interface {
 	cdktf.TerraformDataSource
 	AppServiceEnvironmentId() *string
@@ -456,7 +456,7 @@ func (j *jsiiProxy_DataAzurermServicePlan) ZoneBalancingEnabled() cdktf.IResolva
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/data-sources/service_plan azurerm_service_plan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/data-sources/service_plan azurerm_service_plan} Data Source.
 func NewDataAzurermServicePlan(scope constructs.Construct, id *string, config *DataAzurermServicePlanConfig) DataAzurermServicePlan {
 	_init_.Initialize()
 
@@ -474,7 +474,7 @@ func NewDataAzurermServicePlan(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/data-sources/service_plan azurerm_service_plan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/data-sources/service_plan azurerm_service_plan} Data Source.
 func NewDataAzurermServicePlan_Override(d DataAzurermServicePlan, scope constructs.Construct, id *string, config *DataAzurermServicePlanConfig) {
 	_init_.Initialize()
 

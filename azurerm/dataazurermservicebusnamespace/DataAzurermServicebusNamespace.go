@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/data-sources/servicebus_namespace azurerm_servicebus_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/data-sources/servicebus_namespace azurerm_servicebus_namespace}.
 type DataAzurermServicebusNamespace interface {
 	cdktf.TerraformDataSource
 	Capacity() *float64
@@ -54,6 +54,7 @@ type DataAzurermServicebusNamespace interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PremiumMessagingPartitions() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -324,6 +325,16 @@ func (j *jsiiProxy_DataAzurermServicebusNamespace) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermServicebusNamespace) PremiumMessagingPartitions() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"premiumMessagingPartitions",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermServicebusNamespace) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -445,7 +456,7 @@ func (j *jsiiProxy_DataAzurermServicebusNamespace) ZoneRedundant() cdktf.IResolv
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/data-sources/servicebus_namespace azurerm_servicebus_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/data-sources/servicebus_namespace azurerm_servicebus_namespace} Data Source.
 func NewDataAzurermServicebusNamespace(scope constructs.Construct, id *string, config *DataAzurermServicebusNamespaceConfig) DataAzurermServicebusNamespace {
 	_init_.Initialize()
 
@@ -463,7 +474,7 @@ func NewDataAzurermServicebusNamespace(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/data-sources/servicebus_namespace azurerm_servicebus_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/data-sources/servicebus_namespace azurerm_servicebus_namespace} Data Source.
 func NewDataAzurermServicebusNamespace_Override(d DataAzurermServicebusNamespace, scope constructs.Construct, id *string, config *DataAzurermServicebusNamespaceConfig) {
 	_init_.Initialize()
 

@@ -449,6 +449,14 @@ func (j *jsiiProxy_ServicebusNamespace) validateSetNameParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_ServicebusNamespace) validateSetPremiumMessagingPartitionsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ServicebusNamespace) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {

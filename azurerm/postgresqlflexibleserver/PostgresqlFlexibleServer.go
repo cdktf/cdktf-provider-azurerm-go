@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server}.
 type PostgresqlFlexibleServer interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -118,6 +118,9 @@ type PostgresqlFlexibleServer interface {
 	StorageMb() *float64
 	SetStorageMb(val *float64)
 	StorageMbInput() *float64
+	StorageTier() *string
+	SetStorageTier(val *string)
+	StorageTierInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -206,6 +209,7 @@ type PostgresqlFlexibleServer interface {
 	ResetSkuName()
 	ResetSourceServerId()
 	ResetStorageMb()
+	ResetStorageTier()
 	ResetTags()
 	ResetTimeouts()
 	ResetVersion()
@@ -818,6 +822,26 @@ func (j *jsiiProxy_PostgresqlFlexibleServer) StorageMbInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_PostgresqlFlexibleServer) StorageTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageTier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServer) StorageTierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageTierInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresqlFlexibleServer) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -929,7 +953,7 @@ func (j *jsiiProxy_PostgresqlFlexibleServer) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server} Resource.
 func NewPostgresqlFlexibleServer(scope constructs.Construct, id *string, config *PostgresqlFlexibleServerConfig) PostgresqlFlexibleServer {
 	_init_.Initialize()
 
@@ -947,7 +971,7 @@ func NewPostgresqlFlexibleServer(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.92.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server} Resource.
 func NewPostgresqlFlexibleServer_Override(p PostgresqlFlexibleServer, scope constructs.Construct, id *string, config *PostgresqlFlexibleServerConfig) {
 	_init_.Initialize()
 
@@ -1209,6 +1233,17 @@ func (j *jsiiProxy_PostgresqlFlexibleServer)SetStorageMb(val *float64) {
 	_jsii_.Set(
 		j,
 		"storageMb",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServer)SetStorageTier(val *string) {
+	if err := j.validateSetStorageTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageTier",
 		val,
 	)
 }
@@ -1821,6 +1856,14 @@ func (p *jsiiProxy_PostgresqlFlexibleServer) ResetStorageMb() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetStorageMb",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresqlFlexibleServer) ResetStorageTier() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetStorageTier",
 		nil, // no parameters
 	)
 }

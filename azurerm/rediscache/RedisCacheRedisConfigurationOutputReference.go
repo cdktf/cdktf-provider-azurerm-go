@@ -40,6 +40,9 @@ type RedisCacheRedisConfigurationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataPersistenceAuthenticationMethod() *string
+	SetDataPersistenceAuthenticationMethod(val *string)
+	DataPersistenceAuthenticationMethodInput() *string
 	EnableAuthentication() interface{}
 	SetEnableAuthentication(val interface{})
 	EnableAuthenticationInput() interface{}
@@ -114,6 +117,7 @@ type RedisCacheRedisConfigurationOutputReference interface {
 	ResetAofBackupEnabled()
 	ResetAofStorageConnectionString0()
 	ResetAofStorageConnectionString1()
+	ResetDataPersistenceAuthenticationMethod()
 	ResetEnableAuthentication()
 	ResetMaxfragmentationmemoryReserved()
 	ResetMaxmemoryDelta()
@@ -245,6 +249,26 @@ func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) CreationStack() 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) DataPersistenceAuthenticationMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataPersistenceAuthenticationMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) DataPersistenceAuthenticationMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataPersistenceAuthenticationMethodInput",
 		&returns,
 	)
 	return returns
@@ -610,6 +634,17 @@ func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference)SetComplexObjectI
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference)SetDataPersistenceAuthenticationMethod(val *string) {
+	if err := j.validateSetDataPersistenceAuthenticationMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataPersistenceAuthenticationMethod",
 		val,
 	)
 }
@@ -982,6 +1017,14 @@ func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) ResetAofStorageC
 	_jsii_.InvokeVoid(
 		r,
 		"resetAofStorageConnectionString1",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) ResetDataPersistenceAuthenticationMethod() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDataPersistenceAuthenticationMethod",
 		nil, // no parameters
 	)
 }

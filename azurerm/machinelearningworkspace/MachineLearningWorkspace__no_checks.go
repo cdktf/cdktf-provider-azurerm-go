@@ -87,6 +87,10 @@ func (m *jsiiProxy_MachineLearningWorkspace) validatePutIdentityParameters(value
 	return nil
 }
 
+func (m *jsiiProxy_MachineLearningWorkspace) validatePutManagedNetworkParameters(value *MachineLearningWorkspaceManagedNetwork) error {
+	return nil
+}
+
 func (m *jsiiProxy_MachineLearningWorkspace) validatePutTimeoutsParameters(value *MachineLearningWorkspaceTimeouts) error {
 	return nil
 }

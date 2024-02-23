@@ -78,7 +78,6 @@ type PostgresqlFlexibleServerCustomerManagedKeyOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetGeoBackupKeyVaultKeyId()
 	ResetGeoBackupUserAssignedIdentityId()
-	ResetKeyVaultKeyId()
 	ResetPrimaryUserAssignedIdentityId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -570,14 +569,6 @@ func (p *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) Re
 	_jsii_.InvokeVoid(
 		p,
 		"resetGeoBackupUserAssignedIdentityId",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PostgresqlFlexibleServerCustomerManagedKeyOutputReference) ResetKeyVaultKeyId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetKeyVaultKeyId",
 		nil, // no parameters
 	)
 }

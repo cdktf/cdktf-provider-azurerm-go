@@ -93,6 +93,8 @@ type OrchestratedVirtualMachineScaleSetDataDiskOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreateOption()
 	ResetDiskEncryptionSetId()
+	ResetDiskSizeGb()
+	ResetLun()
 	ResetUltraSsdDiskIopsReadWrite()
 	ResetUltraSsdDiskMbpsReadWrite()
 	ResetWriteAcceleratorEnabled()
@@ -741,6 +743,22 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetDataDiskOutputReference) Re
 	_jsii_.InvokeVoid(
 		o,
 		"resetDiskEncryptionSetId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetDataDiskOutputReference) ResetDiskSizeGb() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDiskSizeGb",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetDataDiskOutputReference) ResetLun() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLun",
 		nil, // no parameters
 	)
 }
