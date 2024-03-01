@@ -5,7 +5,7 @@ package machinelearningcomputeinstance
 
 
 type MachineLearningComputeInstanceSsh struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/machine_learning_compute_instance#public_key MachineLearningComputeInstance#public_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/machine_learning_compute_instance#public_key MachineLearningComputeInstance#public_key}.
 	PublicKey *string `field:"required" json:"publicKey" yaml:"publicKey"`
 }
 

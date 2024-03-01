@@ -291,10 +291,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keyVersionlessId", GoGetter: "KeyVersionlessId"},
 			_jsii_.MemberProperty{JsiiProperty: "keyVersionlessIdInput", GoGetter: "KeyVersionlessIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeyName", GoMethod: "ResetKeyName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUserAssignedIdentityId", GoMethod: "ResetUserAssignedIdentityId"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "userAssignedIdentityId", GoGetter: "UserAssignedIdentityId"},
+			_jsii_.MemberProperty{JsiiProperty: "userAssignedIdentityIdInput", GoGetter: "UserAssignedIdentityIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SynapseWorkspaceCustomerManagedKeyOutputReference{}

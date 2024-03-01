@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/netapp_pool azurerm_netapp_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/netapp_pool azurerm_netapp_pool}.
 type NetappPool interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -34,6 +34,9 @@ type NetappPool interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionType() *string
+	SetEncryptionType(val *string)
+	EncryptionTypeInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -134,6 +137,7 @@ type NetappPool interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *NetappPoolTimeouts)
+	ResetEncryptionType()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -224,6 +228,26 @@ func (j *jsiiProxy_NetappPool) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappPool) EncryptionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappPool) EncryptionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionTypeInput",
 		&returns,
 	)
 	return returns
@@ -520,7 +544,7 @@ func (j *jsiiProxy_NetappPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/netapp_pool azurerm_netapp_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/netapp_pool azurerm_netapp_pool} Resource.
 func NewNetappPool(scope constructs.Construct, id *string, config *NetappPoolConfig) NetappPool {
 	_init_.Initialize()
 
@@ -538,7 +562,7 @@ func NewNetappPool(scope constructs.Construct, id *string, config *NetappPoolCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/netapp_pool azurerm_netapp_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/netapp_pool azurerm_netapp_pool} Resource.
 func NewNetappPool_Override(n NetappPool, scope constructs.Construct, id *string, config *NetappPoolConfig) {
 	_init_.Initialize()
 
@@ -586,6 +610,17 @@ func (j *jsiiProxy_NetappPool)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappPool)SetEncryptionType(val *string) {
+	if err := j.validateSetEncryptionTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encryptionType",
 		val,
 	)
 }
@@ -1077,6 +1112,14 @@ func (n *jsiiProxy_NetappPool) PutTimeouts(value *NetappPoolTimeouts) {
 		n,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetappPool) ResetEncryptionType() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEncryptionType",
+		nil, // no parameters
 	)
 }
 

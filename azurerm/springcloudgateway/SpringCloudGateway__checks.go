@@ -335,6 +335,14 @@ func validateSpringCloudGateway_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudGateway) validateSetApplicationPerformanceMonitoringIdsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudGateway) validateSetApplicationPerformanceMonitoringTypesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

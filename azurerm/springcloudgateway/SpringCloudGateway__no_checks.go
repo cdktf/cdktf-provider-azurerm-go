@@ -123,6 +123,10 @@ func validateSpringCloudGateway_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_SpringCloudGateway) validateSetApplicationPerformanceMonitoringIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpringCloudGateway) validateSetApplicationPerformanceMonitoringTypesParameters(val *[]*string) error {
 	return nil
 }

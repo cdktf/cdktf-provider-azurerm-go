@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/vmware_netapp_volume_attachment azurerm_vmware_netapp_volume_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/vmware_netapp_volume_attachment azurerm_vmware_netapp_volume_attachment}.
 type VmwareNetappVolumeAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_VmwareNetappVolumeAttachment) VmwareClusterIdInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/vmware_netapp_volume_attachment azurerm_vmware_netapp_volume_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/vmware_netapp_volume_attachment azurerm_vmware_netapp_volume_attachment} Resource.
 func NewVmwareNetappVolumeAttachment(scope constructs.Construct, id *string, config *VmwareNetappVolumeAttachmentConfig) VmwareNetappVolumeAttachment {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewVmwareNetappVolumeAttachment(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/vmware_netapp_volume_attachment azurerm_vmware_netapp_volume_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/vmware_netapp_volume_attachment azurerm_vmware_netapp_volume_attachment} Resource.
 func NewVmwareNetappVolumeAttachment_Override(v VmwareNetappVolumeAttachment, scope constructs.Construct, id *string, config *VmwareNetappVolumeAttachmentConfig) {
 	_init_.Initialize()
 

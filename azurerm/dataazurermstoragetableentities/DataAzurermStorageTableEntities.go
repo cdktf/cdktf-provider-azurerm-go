@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/data-sources/storage_table_entities azurerm_storage_table_entities}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/data-sources/storage_table_entities azurerm_storage_table_entities}.
 type DataAzurermStorageTableEntities interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -54,6 +54,9 @@ type DataAzurermStorageTableEntities interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Select() *[]*string
+	SetSelect(val *[]*string)
+	SelectInput() *[]*string
 	StorageAccountName() *string
 	SetStorageAccountName(val *string)
 	StorageAccountNameInput() *string
@@ -98,6 +101,7 @@ type DataAzurermStorageTableEntities interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSelect()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -278,6 +282,26 @@ func (j *jsiiProxy_DataAzurermStorageTableEntities) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermStorageTableEntities) Select() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"select",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageTableEntities) SelectInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"selectInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermStorageTableEntities) StorageAccountName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -369,7 +393,7 @@ func (j *jsiiProxy_DataAzurermStorageTableEntities) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/data-sources/storage_table_entities azurerm_storage_table_entities} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/data-sources/storage_table_entities azurerm_storage_table_entities} Data Source.
 func NewDataAzurermStorageTableEntities(scope constructs.Construct, id *string, config *DataAzurermStorageTableEntitiesConfig) DataAzurermStorageTableEntities {
 	_init_.Initialize()
 
@@ -387,7 +411,7 @@ func NewDataAzurermStorageTableEntities(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/data-sources/storage_table_entities azurerm_storage_table_entities} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/data-sources/storage_table_entities azurerm_storage_table_entities} Data Source.
 func NewDataAzurermStorageTableEntities_Override(d DataAzurermStorageTableEntities, scope constructs.Construct, id *string, config *DataAzurermStorageTableEntitiesConfig) {
 	_init_.Initialize()
 
@@ -462,6 +486,17 @@ func (j *jsiiProxy_DataAzurermStorageTableEntities)SetProvider(val cdktf.Terrafo
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzurermStorageTableEntities)SetSelect(val *[]*string) {
+	if err := j.validateSetSelectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"select",
 		val,
 	)
 }
@@ -796,6 +831,14 @@ func (d *jsiiProxy_DataAzurermStorageTableEntities) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermStorageTableEntities) ResetSelect() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSelect",
 		nil, // no parameters
 	)
 }

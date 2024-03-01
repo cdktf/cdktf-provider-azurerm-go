@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/nginx_deployment azurerm_nginx_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/nginx_deployment azurerm_nginx_deployment}.
 type NginxDeployment interface {
 	cdktf.TerraformResource
+	AutomaticUpgradeChannel() *string
+	SetAutomaticUpgradeChannel(val *string)
+	AutomaticUpgradeChannelInput() *string
 	Capacity() *float64
 	SetCapacity(val *float64)
 	CapacityInput() *float64
@@ -154,6 +157,7 @@ type NginxDeployment interface {
 	PutLoggingStorageAccount(value interface{})
 	PutNetworkInterface(value interface{})
 	PutTimeouts(value *NginxDeploymentTimeouts)
+	ResetAutomaticUpgradeChannel()
 	ResetCapacity()
 	ResetDiagnoseSupportEnabled()
 	ResetEmail()
@@ -185,6 +189,26 @@ type NginxDeployment interface {
 // The jsii proxy struct for NginxDeployment
 type jsiiProxy_NginxDeployment struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_NginxDeployment) AutomaticUpgradeChannel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"automaticUpgradeChannel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NginxDeployment) AutomaticUpgradeChannelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"automaticUpgradeChannelInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NginxDeployment) Capacity() *float64 {
@@ -688,7 +712,7 @@ func (j *jsiiProxy_NginxDeployment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
 func NewNginxDeployment(scope constructs.Construct, id *string, config *NginxDeploymentConfig) NginxDeployment {
 	_init_.Initialize()
 
@@ -706,7 +730,7 @@ func NewNginxDeployment(scope constructs.Construct, id *string, config *NginxDep
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
 func NewNginxDeployment_Override(n NginxDeployment, scope constructs.Construct, id *string, config *NginxDeploymentConfig) {
 	_init_.Initialize()
 
@@ -714,6 +738,17 @@ func NewNginxDeployment_Override(n NginxDeployment, scope constructs.Construct, 
 		"@cdktf/provider-azurerm.nginxDeployment.NginxDeployment",
 		[]interface{}{scope, id, config},
 		n,
+	)
+}
+
+func (j *jsiiProxy_NginxDeployment)SetAutomaticUpgradeChannel(val *string) {
+	if err := j.validateSetAutomaticUpgradeChannelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"automaticUpgradeChannel",
+		val,
 	)
 }
 
@@ -1311,6 +1346,14 @@ func (n *jsiiProxy_NginxDeployment) PutTimeouts(value *NginxDeploymentTimeouts) 
 		n,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NginxDeployment) ResetAutomaticUpgradeChannel() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAutomaticUpgradeChannel",
+		nil, // no parameters
 	)
 }
 

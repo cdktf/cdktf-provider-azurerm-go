@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAzurermStorageTableEntities) validateSetLifecycleParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermStorageTableEntities) validateSetSelectParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermStorageTableEntities) validateSetStorageAccountNameParameters(val *string) error {
 	return nil
 }

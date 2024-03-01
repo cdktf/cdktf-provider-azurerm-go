@@ -13,6 +13,9 @@ import (
 
 type LinuxVirtualMachineGalleryApplicationOutputReference interface {
 	cdktf.ComplexObject
+	AutomaticUpgradeEnabled() interface{}
+	SetAutomaticUpgradeEnabled(val interface{})
+	AutomaticUpgradeEnabledInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -49,6 +52,9 @@ type LinuxVirtualMachineGalleryApplicationOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TreatFailureAsDeploymentFailureEnabled() interface{}
+	SetTreatFailureAsDeploymentFailureEnabled(val interface{})
+	TreatFailureAsDeploymentFailureEnabledInput() interface{}
 	VersionId() *string
 	SetVersionId(val *string)
 	VersionIdInput() *string
@@ -76,9 +82,11 @@ type LinuxVirtualMachineGalleryApplicationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAutomaticUpgradeEnabled()
 	ResetConfigurationBlobUri()
 	ResetOrder()
 	ResetTag()
+	ResetTreatFailureAsDeploymentFailureEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -92,6 +100,26 @@ type LinuxVirtualMachineGalleryApplicationOutputReference interface {
 // The jsii proxy struct for LinuxVirtualMachineGalleryApplicationOutputReference
 type jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) AutomaticUpgradeEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticUpgradeEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) AutomaticUpgradeEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticUpgradeEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) ComplexObjectIndex() interface{} {
@@ -224,6 +252,26 @@ func (j *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) Terrafo
 	return returns
 }
 
+func (j *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) TreatFailureAsDeploymentFailureEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"treatFailureAsDeploymentFailureEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) TreatFailureAsDeploymentFailureEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"treatFailureAsDeploymentFailureEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) VersionId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -269,6 +317,17 @@ func NewLinuxVirtualMachineGalleryApplicationOutputReference_Override(l LinuxVir
 		"@cdktf/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineGalleryApplicationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
+	)
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference)SetAutomaticUpgradeEnabled(val interface{}) {
+	if err := j.validateSetAutomaticUpgradeEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"automaticUpgradeEnabled",
+		val,
 	)
 }
 
@@ -356,6 +415,17 @@ func (j *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference)SetTerra
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference)SetTreatFailureAsDeploymentFailureEnabled(val interface{}) {
+	if err := j.validateSetTreatFailureAsDeploymentFailureEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"treatFailureAsDeploymentFailureEnabled",
 		val,
 	)
 }
@@ -557,6 +627,14 @@ func (l *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) Interpo
 	return returns
 }
 
+func (l *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) ResetAutomaticUpgradeEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAutomaticUpgradeEnabled",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) ResetConfigurationBlobUri() {
 	_jsii_.InvokeVoid(
 		l,
@@ -577,6 +655,14 @@ func (l *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) ResetTa
 	_jsii_.InvokeVoid(
 		l,
 		"resetTag",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) ResetTreatFailureAsDeploymentFailureEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTreatFailureAsDeploymentFailureEnabled",
 		nil, // no parameters
 	)
 }

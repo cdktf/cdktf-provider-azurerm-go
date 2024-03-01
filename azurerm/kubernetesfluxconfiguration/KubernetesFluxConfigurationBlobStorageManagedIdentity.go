@@ -5,7 +5,7 @@ package kubernetesfluxconfiguration
 
 
 type KubernetesFluxConfigurationBlobStorageManagedIdentity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/kubernetes_flux_configuration#client_id KubernetesFluxConfiguration#client_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/kubernetes_flux_configuration#client_id KubernetesFluxConfiguration#client_id}.
 	ClientId *string `field:"required" json:"clientId" yaml:"clientId"`
 }
 

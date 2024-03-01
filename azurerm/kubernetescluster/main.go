@@ -36,6 +36,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "currentKubernetesVersion", GoGetter: "CurrentKubernetesVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "customCaTrustCertificatesBase64", GoGetter: "CustomCaTrustCertificatesBase64"},
 			_jsii_.MemberProperty{JsiiProperty: "customCaTrustCertificatesBase64Input", GoGetter: "CustomCaTrustCertificatesBase64Input"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultNodePool", GoGetter: "DefaultNodePool"},

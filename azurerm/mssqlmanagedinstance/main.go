@@ -88,6 +88,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimezoneId", GoMethod: "ResetTimezoneId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZoneRedundantEnabled", GoMethod: "ResetZoneRedundantEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "skuName", GoGetter: "SkuName"},
@@ -115,6 +116,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vcores", GoGetter: "Vcores"},
 			_jsii_.MemberProperty{JsiiProperty: "vcoresInput", GoGetter: "VcoresInput"},
+			_jsii_.MemberProperty{JsiiProperty: "zoneRedundantEnabled", GoGetter: "ZoneRedundantEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "zoneRedundantEnabledInput", GoGetter: "ZoneRedundantEnabledInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_MssqlManagedInstance{}

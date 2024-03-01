@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service}.
 type SpringCloudConfigurationService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,9 @@ type SpringCloudConfigurationService interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RefreshIntervalInSeconds() *float64
+	SetRefreshIntervalInSeconds(val *float64)
+	RefreshIntervalInSecondsInput() *float64
 	Repository() SpringCloudConfigurationServiceRepositoryList
 	RepositoryInput() interface{}
 	SpringCloudServiceId() *string
@@ -127,6 +130,7 @@ type SpringCloudConfigurationService interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRefreshIntervalInSeconds()
 	ResetRepository()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -337,6 +341,26 @@ func (j *jsiiProxy_SpringCloudConfigurationService) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SpringCloudConfigurationService) RefreshIntervalInSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"refreshIntervalInSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudConfigurationService) RefreshIntervalInSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"refreshIntervalInSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpringCloudConfigurationService) Repository() SpringCloudConfigurationServiceRepositoryList {
 	var returns SpringCloudConfigurationServiceRepositoryList
 	_jsii_.Get(
@@ -428,7 +452,7 @@ func (j *jsiiProxy_SpringCloudConfigurationService) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service} Resource.
 func NewSpringCloudConfigurationService(scope constructs.Construct, id *string, config *SpringCloudConfigurationServiceConfig) SpringCloudConfigurationService {
 	_init_.Initialize()
 
@@ -446,7 +470,7 @@ func NewSpringCloudConfigurationService(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/spring_cloud_configuration_service azurerm_spring_cloud_configuration_service} Resource.
 func NewSpringCloudConfigurationService_Override(s SpringCloudConfigurationService, scope constructs.Construct, id *string, config *SpringCloudConfigurationServiceConfig) {
 	_init_.Initialize()
 
@@ -554,6 +578,17 @@ func (j *jsiiProxy_SpringCloudConfigurationService)SetProvisioners(val *[]interf
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpringCloudConfigurationService)SetRefreshIntervalInSeconds(val *float64) {
+	if err := j.validateSetRefreshIntervalInSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"refreshIntervalInSeconds",
 		val,
 	)
 }
@@ -964,6 +999,14 @@ func (s *jsiiProxy_SpringCloudConfigurationService) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudConfigurationService) ResetRefreshIntervalInSeconds() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRefreshIntervalInSeconds",
 		nil, // no parameters
 	)
 }

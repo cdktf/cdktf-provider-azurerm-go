@@ -107,6 +107,10 @@ func (j *jsiiProxy_NetappPool) validateSetCountParameters(val interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_NetappPool) validateSetEncryptionTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappPool) validateSetIdParameters(val *string) error {
 	return nil
 }

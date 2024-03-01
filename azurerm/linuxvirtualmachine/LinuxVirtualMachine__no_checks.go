@@ -99,6 +99,10 @@ func (l *jsiiProxy_LinuxVirtualMachine) validatePutOsDiskParameters(value *Linux
 	return nil
 }
 
+func (l *jsiiProxy_LinuxVirtualMachine) validatePutOsImageNotificationParameters(value *LinuxVirtualMachineOsImageNotification) error {
+	return nil
+}
+
 func (l *jsiiProxy_LinuxVirtualMachine) validatePutPlanParameters(value *LinuxVirtualMachinePlan) error {
 	return nil
 }
@@ -184,6 +188,10 @@ func (j *jsiiProxy_LinuxVirtualMachine) validateSetDedicatedHostIdParameters(val
 }
 
 func (j *jsiiProxy_LinuxVirtualMachine) validateSetDisablePasswordAuthenticationParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LinuxVirtualMachine) validateSetDiskControllerTypeParameters(val *string) error {
 	return nil
 }
 
@@ -288,6 +296,10 @@ func (j *jsiiProxy_LinuxVirtualMachine) validateSetUserDataParameters(val *strin
 }
 
 func (j *jsiiProxy_LinuxVirtualMachine) validateSetVirtualMachineScaleSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LinuxVirtualMachine) validateSetVmAgentPlatformUpdatesEnabledParameters(val interface{}) error {
 	return nil
 }
 

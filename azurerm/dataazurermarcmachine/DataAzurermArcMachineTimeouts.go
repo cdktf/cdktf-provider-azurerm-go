@@ -5,7 +5,7 @@ package dataazurermarcmachine
 
 
 type DataAzurermArcMachineTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/data-sources/arc_machine#read DataAzurermArcMachine#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/data-sources/arc_machine#read DataAzurermArcMachine#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway}.
 type SpringCloudGateway interface {
 	cdktf.TerraformResource
 	ApiMetadata() SpringCloudGatewayApiMetadataOutputReference
 	ApiMetadataInput() *SpringCloudGatewayApiMetadata
+	ApplicationPerformanceMonitoringIds() *[]*string
+	SetApplicationPerformanceMonitoringIds(val *[]*string)
+	ApplicationPerformanceMonitoringIdsInput() *[]*string
 	ApplicationPerformanceMonitoringTypes() *[]*string
 	SetApplicationPerformanceMonitoringTypes(val *[]*string)
 	ApplicationPerformanceMonitoringTypesInput() *[]*string
@@ -157,6 +160,7 @@ type SpringCloudGateway interface {
 	PutSso(value *SpringCloudGatewaySso)
 	PutTimeouts(value *SpringCloudGatewayTimeouts)
 	ResetApiMetadata()
+	ResetApplicationPerformanceMonitoringIds()
 	ResetApplicationPerformanceMonitoringTypes()
 	ResetClientAuthorization()
 	ResetCors()
@@ -207,6 +211,26 @@ func (j *jsiiProxy_SpringCloudGateway) ApiMetadataInput() *SpringCloudGatewayApi
 	_jsii_.Get(
 		j,
 		"apiMetadataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGateway) ApplicationPerformanceMonitoringIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"applicationPerformanceMonitoringIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpringCloudGateway) ApplicationPerformanceMonitoringIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"applicationPerformanceMonitoringIdsInput",
 		&returns,
 	)
 	return returns
@@ -703,7 +727,7 @@ func (j *jsiiProxy_SpringCloudGateway) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway} Resource.
 func NewSpringCloudGateway(scope constructs.Construct, id *string, config *SpringCloudGatewayConfig) SpringCloudGateway {
 	_init_.Initialize()
 
@@ -721,7 +745,7 @@ func NewSpringCloudGateway(scope constructs.Construct, id *string, config *Sprin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway} Resource.
 func NewSpringCloudGateway_Override(s SpringCloudGateway, scope constructs.Construct, id *string, config *SpringCloudGatewayConfig) {
 	_init_.Initialize()
 
@@ -729,6 +753,17 @@ func NewSpringCloudGateway_Override(s SpringCloudGateway, scope constructs.Const
 		"@cdktf/provider-azurerm.springCloudGateway.SpringCloudGateway",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SpringCloudGateway)SetApplicationPerformanceMonitoringIds(val *[]*string) {
+	if err := j.validateSetApplicationPerformanceMonitoringIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"applicationPerformanceMonitoringIds",
+		val,
 	)
 }
 
@@ -1344,6 +1379,14 @@ func (s *jsiiProxy_SpringCloudGateway) ResetApiMetadata() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetApiMetadata",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpringCloudGateway) ResetApplicationPerformanceMonitoringIds() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetApplicationPerformanceMonitoringIds",
 		nil, // no parameters
 	)
 }

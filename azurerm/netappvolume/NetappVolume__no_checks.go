@@ -179,6 +179,14 @@ func (j *jsiiProxy_NetappVolume) validateSetServiceLevelParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolume) validateSetSmbAccessBasedEnumerationEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappVolume) validateSetSmbNonBrowsableEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolume) validateSetSnapshotDirectoryVisibleParameters(val interface{}) error {
 	return nil
 }

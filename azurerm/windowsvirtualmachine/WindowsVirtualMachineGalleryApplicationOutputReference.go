@@ -13,6 +13,9 @@ import (
 
 type WindowsVirtualMachineGalleryApplicationOutputReference interface {
 	cdktf.ComplexObject
+	AutomaticUpgradeEnabled() interface{}
+	SetAutomaticUpgradeEnabled(val interface{})
+	AutomaticUpgradeEnabledInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -49,6 +52,9 @@ type WindowsVirtualMachineGalleryApplicationOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TreatFailureAsDeploymentFailureEnabled() interface{}
+	SetTreatFailureAsDeploymentFailureEnabled(val interface{})
+	TreatFailureAsDeploymentFailureEnabledInput() interface{}
 	VersionId() *string
 	SetVersionId(val *string)
 	VersionIdInput() *string
@@ -76,9 +82,11 @@ type WindowsVirtualMachineGalleryApplicationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAutomaticUpgradeEnabled()
 	ResetConfigurationBlobUri()
 	ResetOrder()
 	ResetTag()
+	ResetTreatFailureAsDeploymentFailureEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -92,6 +100,26 @@ type WindowsVirtualMachineGalleryApplicationOutputReference interface {
 // The jsii proxy struct for WindowsVirtualMachineGalleryApplicationOutputReference
 type jsiiProxy_WindowsVirtualMachineGalleryApplicationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineGalleryApplicationOutputReference) AutomaticUpgradeEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticUpgradeEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineGalleryApplicationOutputReference) AutomaticUpgradeEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticUpgradeEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_WindowsVirtualMachineGalleryApplicationOutputReference) ComplexObjectIndex() interface{} {
@@ -224,6 +252,26 @@ func (j *jsiiProxy_WindowsVirtualMachineGalleryApplicationOutputReference) Terra
 	return returns
 }
 
+func (j *jsiiProxy_WindowsVirtualMachineGalleryApplicationOutputReference) TreatFailureAsDeploymentFailureEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"treatFailureAsDeploymentFailureEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineGalleryApplicationOutputReference) TreatFailureAsDeploymentFailureEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"treatFailureAsDeploymentFailureEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsVirtualMachineGalleryApplicationOutputReference) VersionId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -269,6 +317,17 @@ func NewWindowsVirtualMachineGalleryApplicationOutputReference_Override(w Window
 		"@cdktf/provider-azurerm.windowsVirtualMachine.WindowsVirtualMachineGalleryApplicationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
+	)
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineGalleryApplicationOutputReference)SetAutomaticUpgradeEnabled(val interface{}) {
+	if err := j.validateSetAutomaticUpgradeEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"automaticUpgradeEnabled",
+		val,
 	)
 }
 
@@ -356,6 +415,17 @@ func (j *jsiiProxy_WindowsVirtualMachineGalleryApplicationOutputReference)SetTer
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineGalleryApplicationOutputReference)SetTreatFailureAsDeploymentFailureEnabled(val interface{}) {
+	if err := j.validateSetTreatFailureAsDeploymentFailureEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"treatFailureAsDeploymentFailureEnabled",
 		val,
 	)
 }
@@ -557,6 +627,14 @@ func (w *jsiiProxy_WindowsVirtualMachineGalleryApplicationOutputReference) Inter
 	return returns
 }
 
+func (w *jsiiProxy_WindowsVirtualMachineGalleryApplicationOutputReference) ResetAutomaticUpgradeEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAutomaticUpgradeEnabled",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WindowsVirtualMachineGalleryApplicationOutputReference) ResetConfigurationBlobUri() {
 	_jsii_.InvokeVoid(
 		w,
@@ -577,6 +655,14 @@ func (w *jsiiProxy_WindowsVirtualMachineGalleryApplicationOutputReference) Reset
 	_jsii_.InvokeVoid(
 		w,
 		"resetTag",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsVirtualMachineGalleryApplicationOutputReference) ResetTreatFailureAsDeploymentFailureEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTreatFailureAsDeploymentFailureEnabled",
 		nil, // no parameters
 	)
 }

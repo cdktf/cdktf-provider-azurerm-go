@@ -79,6 +79,10 @@ func (j *jsiiProxy_SynapseWorkspaceCustomerManagedKeyOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_SynapseWorkspaceCustomerManagedKeyOutputReference) validateSetUserAssignedIdentityIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewSynapseWorkspaceCustomerManagedKeyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

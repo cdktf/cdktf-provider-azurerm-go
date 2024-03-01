@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/automation_variable_bool azurerm_automation_variable_bool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/automation_variable_bool azurerm_automation_variable_bool}.
 type AutomationVariableBool interface {
 	cdktf.TerraformResource
 	AutomationAccountName() *string
@@ -475,7 +475,7 @@ func (j *jsiiProxy_AutomationVariableBool) ValueInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/automation_variable_bool azurerm_automation_variable_bool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/automation_variable_bool azurerm_automation_variable_bool} Resource.
 func NewAutomationVariableBool(scope constructs.Construct, id *string, config *AutomationVariableBoolConfig) AutomationVariableBool {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewAutomationVariableBool(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/automation_variable_bool azurerm_automation_variable_bool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/automation_variable_bool azurerm_automation_variable_bool} Resource.
 func NewAutomationVariableBool_Override(a AutomationVariableBool, scope constructs.Construct, id *string, config *AutomationVariableBoolConfig) {
 	_init_.Initialize()
 

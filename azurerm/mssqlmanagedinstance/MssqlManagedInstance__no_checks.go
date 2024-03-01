@@ -195,6 +195,10 @@ func (j *jsiiProxy_MssqlManagedInstance) validateSetVcoresParameters(val *float6
 	return nil
 }
 
+func (j *jsiiProxy_MssqlManagedInstance) validateSetZoneRedundantEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewMssqlManagedInstanceParameters(scope constructs.Construct, id *string, config *MssqlManagedInstanceConfig) error {
 	return nil
 }

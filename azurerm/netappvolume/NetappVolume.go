@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/netapp_volume azurerm_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/netapp_volume azurerm_netapp_volume}.
 type NetappVolume interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -104,6 +104,12 @@ type NetappVolume interface {
 	ServiceLevel() *string
 	SetServiceLevel(val *string)
 	ServiceLevelInput() *string
+	SmbAccessBasedEnumerationEnabled() interface{}
+	SetSmbAccessBasedEnumerationEnabled(val interface{})
+	SmbAccessBasedEnumerationEnabledInput() interface{}
+	SmbNonBrowsableEnabled() interface{}
+	SetSmbNonBrowsableEnabled(val interface{})
+	SmbNonBrowsableEnabledInput() interface{}
 	SnapshotDirectoryVisible() interface{}
 	SetSnapshotDirectoryVisible(val interface{})
 	SnapshotDirectoryVisibleInput() interface{}
@@ -194,6 +200,8 @@ type NetappVolume interface {
 	ResetOverrideLogicalId()
 	ResetProtocols()
 	ResetSecurityStyle()
+	ResetSmbAccessBasedEnumerationEnabled()
+	ResetSmbNonBrowsableEnabled()
 	ResetSnapshotDirectoryVisible()
 	ResetTags()
 	ResetThroughputInMibps()
@@ -697,6 +705,46 @@ func (j *jsiiProxy_NetappVolume) ServiceLevelInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NetappVolume) SmbAccessBasedEnumerationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"smbAccessBasedEnumerationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) SmbAccessBasedEnumerationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"smbAccessBasedEnumerationEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) SmbNonBrowsableEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"smbNonBrowsableEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) SmbNonBrowsableEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"smbNonBrowsableEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetappVolume) SnapshotDirectoryVisible() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -888,7 +936,7 @@ func (j *jsiiProxy_NetappVolume) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
 func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolumeConfig) NetappVolume {
 	_init_.Initialize()
 
@@ -906,7 +954,7 @@ func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolum
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
 func NewNetappVolume_Override(n NetappVolume, scope constructs.Construct, id *string, config *NetappVolumeConfig) {
 	_init_.Initialize()
 
@@ -1135,6 +1183,28 @@ func (j *jsiiProxy_NetappVolume)SetServiceLevel(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceLevel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappVolume)SetSmbAccessBasedEnumerationEnabled(val interface{}) {
+	if err := j.validateSetSmbAccessBasedEnumerationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"smbAccessBasedEnumerationEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappVolume)SetSmbNonBrowsableEnabled(val interface{}) {
+	if err := j.validateSetSmbNonBrowsableEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"smbNonBrowsableEnabled",
 		val,
 	)
 }
@@ -1705,6 +1775,22 @@ func (n *jsiiProxy_NetappVolume) ResetSecurityStyle() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetSecurityStyle",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolume) ResetSmbAccessBasedEnumerationEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSmbAccessBasedEnumerationEnabled",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolume) ResetSmbNonBrowsableEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSmbNonBrowsableEnabled",
 		nil, // no parameters
 	)
 }

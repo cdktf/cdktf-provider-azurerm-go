@@ -83,6 +83,10 @@ func (j *jsiiProxy_FederatedIdentityCredentialTimeoutsOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_FederatedIdentityCredentialTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewFederatedIdentityCredentialTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

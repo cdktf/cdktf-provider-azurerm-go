@@ -62,6 +62,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "securityStyle", GoGetter: "SecurityStyle"},
 			_jsii_.MemberProperty{JsiiProperty: "securityStyleInput", GoGetter: "SecurityStyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceLevel", GoGetter: "ServiceLevel"},
+			_jsii_.MemberProperty{JsiiProperty: "smbAccessBasedEnumerationEnabled", GoGetter: "SmbAccessBasedEnumerationEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "smbNonBrowsableEnabled", GoGetter: "SmbNonBrowsableEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "storageQuotaInGb", GoGetter: "StorageQuotaInGb"},
 			_jsii_.MemberProperty{JsiiProperty: "subnetId", GoGetter: "SubnetId"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},

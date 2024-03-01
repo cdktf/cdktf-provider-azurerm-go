@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/mssql_database azurerm_mssql_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/mssql_database azurerm_mssql_database}.
 type MssqlDatabase interface {
 	cdktf.TerraformResource
 	AutoPauseDelayInMinutes() *float64
@@ -112,9 +112,15 @@ type MssqlDatabase interface {
 	RecoverDatabaseId() *string
 	SetRecoverDatabaseId(val *string)
 	RecoverDatabaseIdInput() *string
+	RecoveryPointId() *string
+	SetRecoveryPointId(val *string)
+	RecoveryPointIdInput() *string
 	RestoreDroppedDatabaseId() *string
 	SetRestoreDroppedDatabaseId(val *string)
 	RestoreDroppedDatabaseIdInput() *string
+	RestoreLongTermRetentionBackupId() *string
+	SetRestoreLongTermRetentionBackupId(val *string)
+	RestoreLongTermRetentionBackupIdInput() *string
 	RestorePointInTime() *string
 	SetRestorePointInTime(val *string)
 	RestorePointInTimeInput() *string
@@ -228,7 +234,9 @@ type MssqlDatabase interface {
 	ResetReadReplicaCount()
 	ResetReadScale()
 	ResetRecoverDatabaseId()
+	ResetRecoveryPointId()
 	ResetRestoreDroppedDatabaseId()
+	ResetRestoreLongTermRetentionBackupId()
 	ResetRestorePointInTime()
 	ResetSampleName()
 	ResetShortTermRetentionPolicy()
@@ -789,6 +797,26 @@ func (j *jsiiProxy_MssqlDatabase) RecoverDatabaseIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MssqlDatabase) RecoveryPointId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"recoveryPointId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlDatabase) RecoveryPointIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"recoveryPointIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MssqlDatabase) RestoreDroppedDatabaseId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -804,6 +832,26 @@ func (j *jsiiProxy_MssqlDatabase) RestoreDroppedDatabaseIdInput() *string {
 	_jsii_.Get(
 		j,
 		"restoreDroppedDatabaseIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlDatabase) RestoreLongTermRetentionBackupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"restoreLongTermRetentionBackupId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlDatabase) RestoreLongTermRetentionBackupIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"restoreLongTermRetentionBackupIdInput",
 		&returns,
 	)
 	return returns
@@ -1100,7 +1148,7 @@ func (j *jsiiProxy_MssqlDatabase) ZoneRedundantInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/mssql_database azurerm_mssql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/mssql_database azurerm_mssql_database} Resource.
 func NewMssqlDatabase(scope constructs.Construct, id *string, config *MssqlDatabaseConfig) MssqlDatabase {
 	_init_.Initialize()
 
@@ -1118,7 +1166,7 @@ func NewMssqlDatabase(scope constructs.Construct, id *string, config *MssqlDatab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/mssql_database azurerm_mssql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/mssql_database azurerm_mssql_database} Resource.
 func NewMssqlDatabase_Override(m MssqlDatabase, scope constructs.Construct, id *string, config *MssqlDatabaseConfig) {
 	_init_.Initialize()
 
@@ -1384,6 +1432,17 @@ func (j *jsiiProxy_MssqlDatabase)SetRecoverDatabaseId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_MssqlDatabase)SetRecoveryPointId(val *string) {
+	if err := j.validateSetRecoveryPointIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"recoveryPointId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MssqlDatabase)SetRestoreDroppedDatabaseId(val *string) {
 	if err := j.validateSetRestoreDroppedDatabaseIdParameters(val); err != nil {
 		panic(err)
@@ -1391,6 +1450,17 @@ func (j *jsiiProxy_MssqlDatabase)SetRestoreDroppedDatabaseId(val *string) {
 	_jsii_.Set(
 		j,
 		"restoreDroppedDatabaseId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlDatabase)SetRestoreLongTermRetentionBackupId(val *string) {
+	if err := j.validateSetRestoreLongTermRetentionBackupIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"restoreLongTermRetentionBackupId",
 		val,
 	)
 }
@@ -2084,10 +2154,26 @@ func (m *jsiiProxy_MssqlDatabase) ResetRecoverDatabaseId() {
 	)
 }
 
+func (m *jsiiProxy_MssqlDatabase) ResetRecoveryPointId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRecoveryPointId",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MssqlDatabase) ResetRestoreDroppedDatabaseId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetRestoreDroppedDatabaseId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlDatabase) ResetRestoreLongTermRetentionBackupId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRestoreLongTermRetentionBackupId",
 		nil, // no parameters
 	)
 }

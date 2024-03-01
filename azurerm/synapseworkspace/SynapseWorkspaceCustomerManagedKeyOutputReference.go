@@ -46,6 +46,9 @@ type SynapseWorkspaceCustomerManagedKeyOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UserAssignedIdentityId() *string
+	SetUserAssignedIdentityId(val *string)
+	UserAssignedIdentityIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -71,6 +74,7 @@ type SynapseWorkspaceCustomerManagedKeyOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetKeyName()
+	ResetUserAssignedIdentityId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -196,6 +200,26 @@ func (j *jsiiProxy_SynapseWorkspaceCustomerManagedKeyOutputReference) TerraformR
 	return returns
 }
 
+func (j *jsiiProxy_SynapseWorkspaceCustomerManagedKeyOutputReference) UserAssignedIdentityId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userAssignedIdentityId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SynapseWorkspaceCustomerManagedKeyOutputReference) UserAssignedIdentityIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userAssignedIdentityIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewSynapseWorkspaceCustomerManagedKeyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SynapseWorkspaceCustomerManagedKeyOutputReference {
 	_init_.Initialize()
@@ -297,6 +321,17 @@ func (j *jsiiProxy_SynapseWorkspaceCustomerManagedKeyOutputReference)SetTerrafor
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SynapseWorkspaceCustomerManagedKeyOutputReference)SetUserAssignedIdentityId(val *string) {
+	if err := j.validateSetUserAssignedIdentityIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userAssignedIdentityId",
 		val,
 	)
 }
@@ -491,6 +526,14 @@ func (s *jsiiProxy_SynapseWorkspaceCustomerManagedKeyOutputReference) ResetKeyNa
 	_jsii_.InvokeVoid(
 		s,
 		"resetKeyName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SynapseWorkspaceCustomerManagedKeyOutputReference) ResetUserAssignedIdentityId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUserAssignedIdentityId",
 		nil, // no parameters
 	)
 }

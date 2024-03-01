@@ -115,6 +115,10 @@ func validateNginxDeployment_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_NginxDeployment) validateSetAutomaticUpgradeChannelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NginxDeployment) validateSetCapacityParameters(val *float64) error {
 	return nil
 }

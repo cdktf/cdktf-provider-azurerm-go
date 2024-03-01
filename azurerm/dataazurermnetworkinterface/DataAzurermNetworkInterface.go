@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/data-sources/network_interface azurerm_network_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/data-sources/network_interface azurerm_network_interface}.
 type DataAzurermNetworkInterface interface {
 	cdktf.TerraformDataSource
 	AppliedDnsServers() *[]*string
@@ -478,7 +478,7 @@ func (j *jsiiProxy_DataAzurermNetworkInterface) VirtualMachineId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/data-sources/network_interface azurerm_network_interface} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/data-sources/network_interface azurerm_network_interface} Data Source.
 func NewDataAzurermNetworkInterface(scope constructs.Construct, id *string, config *DataAzurermNetworkInterfaceConfig) DataAzurermNetworkInterface {
 	_init_.Initialize()
 
@@ -496,7 +496,7 @@ func NewDataAzurermNetworkInterface(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/data-sources/network_interface azurerm_network_interface} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/data-sources/network_interface azurerm_network_interface} Data Source.
 func NewDataAzurermNetworkInterface_Override(d DataAzurermNetworkInterface, scope constructs.Construct, id *string, config *DataAzurermNetworkInterfaceConfig) {
 	_init_.Initialize()
 

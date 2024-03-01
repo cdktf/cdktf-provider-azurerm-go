@@ -5,13 +5,13 @@ package containerappenvironmentstorage
 
 
 type ContainerAppEnvironmentStorageTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/container_app_environment_storage#create ContainerAppEnvironmentStorage#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/container_app_environment_storage#create ContainerAppEnvironmentStorage#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/container_app_environment_storage#delete ContainerAppEnvironmentStorage#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/container_app_environment_storage#delete ContainerAppEnvironmentStorage#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/container_app_environment_storage#read ContainerAppEnvironmentStorage#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/container_app_environment_storage#read ContainerAppEnvironmentStorage#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/container_app_environment_storage#update ContainerAppEnvironmentStorage#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/container_app_environment_storage#update ContainerAppEnvironmentStorage#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

@@ -51,6 +51,10 @@ func (l *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) validateSetAutomaticUpgradeEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (j *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) validat
 }
 
 func (j *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineGalleryApplicationOutputReference) validateSetTreatFailureAsDeploymentFailureEnabledParameters(val interface{}) error {
 	return nil
 }
 

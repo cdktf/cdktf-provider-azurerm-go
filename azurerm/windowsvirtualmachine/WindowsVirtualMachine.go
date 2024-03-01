@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine}.
 type WindowsVirtualMachine interface {
 	cdktf.TerraformResource
 	AdditionalCapabilities() WindowsVirtualMachineAdditionalCapabilitiesOutputReference
@@ -67,6 +67,9 @@ type WindowsVirtualMachine interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DiskControllerType() *string
+	SetDiskControllerType(val *string)
+	DiskControllerTypeInput() *string
 	EdgeZone() *string
 	SetEdgeZone(val *string)
 	EdgeZoneInput() *string
@@ -123,6 +126,8 @@ type WindowsVirtualMachine interface {
 	Node() constructs.Node
 	OsDisk() WindowsVirtualMachineOsDiskOutputReference
 	OsDiskInput() *WindowsVirtualMachineOsDisk
+	OsImageNotification() WindowsVirtualMachineOsImageNotificationOutputReference
+	OsImageNotificationInput() *WindowsVirtualMachineOsImageNotification
 	PatchAssessmentMode() *string
 	SetPatchAssessmentMode(val *string)
 	PatchAssessmentModeInput() *string
@@ -199,6 +204,9 @@ type WindowsVirtualMachine interface {
 	VirtualMachineScaleSetId() *string
 	SetVirtualMachineScaleSetId(val *string)
 	VirtualMachineScaleSetIdInput() *string
+	VmAgentPlatformUpdatesEnabled() interface{}
+	SetVmAgentPlatformUpdatesEnabled(val interface{})
+	VmAgentPlatformUpdatesEnabledInput() interface{}
 	VtpmEnabled() interface{}
 	SetVtpmEnabled(val interface{})
 	VtpmEnabledInput() interface{}
@@ -256,6 +264,7 @@ type WindowsVirtualMachine interface {
 	PutGalleryApplication(value interface{})
 	PutIdentity(value *WindowsVirtualMachineIdentity)
 	PutOsDisk(value *WindowsVirtualMachineOsDisk)
+	PutOsImageNotification(value *WindowsVirtualMachineOsImageNotification)
 	PutPlan(value *WindowsVirtualMachinePlan)
 	PutSecret(value interface{})
 	PutSourceImageReference(value *WindowsVirtualMachineSourceImageReference)
@@ -273,6 +282,7 @@ type WindowsVirtualMachine interface {
 	ResetCustomData()
 	ResetDedicatedHostGroupId()
 	ResetDedicatedHostId()
+	ResetDiskControllerType()
 	ResetEdgeZone()
 	ResetEnableAutomaticUpdates()
 	ResetEncryptionAtHostEnabled()
@@ -284,6 +294,7 @@ type WindowsVirtualMachine interface {
 	ResetIdentity()
 	ResetLicenseType()
 	ResetMaxBidPrice()
+	ResetOsImageNotification()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -305,6 +316,7 @@ type WindowsVirtualMachine interface {
 	ResetTimezone()
 	ResetUserData()
 	ResetVirtualMachineScaleSetId()
+	ResetVmAgentPlatformUpdatesEnabled()
 	ResetVtpmEnabled()
 	ResetWinrmListener()
 	ResetZone()
@@ -631,6 +643,26 @@ func (j *jsiiProxy_WindowsVirtualMachine) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine) DiskControllerType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskControllerType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine) DiskControllerTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskControllerTypeInput",
 		&returns,
 	)
 	return returns
@@ -981,6 +1013,26 @@ func (j *jsiiProxy_WindowsVirtualMachine) OsDiskInput() *WindowsVirtualMachineOs
 	_jsii_.Get(
 		j,
 		"osDiskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine) OsImageNotification() WindowsVirtualMachineOsImageNotificationOutputReference {
+	var returns WindowsVirtualMachineOsImageNotificationOutputReference
+	_jsii_.Get(
+		j,
+		"osImageNotification",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine) OsImageNotificationInput() *WindowsVirtualMachineOsImageNotification {
+	var returns *WindowsVirtualMachineOsImageNotification
+	_jsii_.Get(
+		j,
+		"osImageNotificationInput",
 		&returns,
 	)
 	return returns
@@ -1496,6 +1548,26 @@ func (j *jsiiProxy_WindowsVirtualMachine) VirtualMachineScaleSetIdInput() *strin
 	return returns
 }
 
+func (j *jsiiProxy_WindowsVirtualMachine) VmAgentPlatformUpdatesEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vmAgentPlatformUpdatesEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine) VmAgentPlatformUpdatesEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vmAgentPlatformUpdatesEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsVirtualMachine) VtpmEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1557,7 +1629,7 @@ func (j *jsiiProxy_WindowsVirtualMachine) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine} Resource.
 func NewWindowsVirtualMachine(scope constructs.Construct, id *string, config *WindowsVirtualMachineConfig) WindowsVirtualMachine {
 	_init_.Initialize()
 
@@ -1575,7 +1647,7 @@ func NewWindowsVirtualMachine(scope constructs.Construct, id *string, config *Wi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/windows_virtual_machine azurerm_windows_virtual_machine} Resource.
 func NewWindowsVirtualMachine_Override(w WindowsVirtualMachine, scope constructs.Construct, id *string, config *WindowsVirtualMachineConfig) {
 	_init_.Initialize()
 
@@ -1722,6 +1794,17 @@ func (j *jsiiProxy_WindowsVirtualMachine)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine)SetDiskControllerType(val *string) {
+	if err := j.validateSetDiskControllerTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskControllerType",
 		val,
 	)
 }
@@ -2057,6 +2140,17 @@ func (j *jsiiProxy_WindowsVirtualMachine)SetVirtualMachineScaleSetId(val *string
 	_jsii_.Set(
 		j,
 		"virtualMachineScaleSetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine)SetVmAgentPlatformUpdatesEnabled(val interface{}) {
+	if err := j.validateSetVmAgentPlatformUpdatesEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vmAgentPlatformUpdatesEnabled",
 		val,
 	)
 }
@@ -2502,6 +2596,17 @@ func (w *jsiiProxy_WindowsVirtualMachine) PutOsDisk(value *WindowsVirtualMachine
 	)
 }
 
+func (w *jsiiProxy_WindowsVirtualMachine) PutOsImageNotification(value *WindowsVirtualMachineOsImageNotification) {
+	if err := w.validatePutOsImageNotificationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putOsImageNotification",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WindowsVirtualMachine) PutPlan(value *WindowsVirtualMachinePlan) {
 	if err := w.validatePutPlanParameters(value); err != nil {
 		panic(err)
@@ -2656,6 +2761,14 @@ func (w *jsiiProxy_WindowsVirtualMachine) ResetDedicatedHostId() {
 	)
 }
 
+func (w *jsiiProxy_WindowsVirtualMachine) ResetDiskControllerType() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDiskControllerType",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WindowsVirtualMachine) ResetEdgeZone() {
 	_jsii_.InvokeVoid(
 		w,
@@ -2740,6 +2853,14 @@ func (w *jsiiProxy_WindowsVirtualMachine) ResetMaxBidPrice() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetMaxBidPrice",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsVirtualMachine) ResetOsImageNotification() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetOsImageNotification",
 		nil, // no parameters
 	)
 }
@@ -2892,6 +3013,14 @@ func (w *jsiiProxy_WindowsVirtualMachine) ResetVirtualMachineScaleSetId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetVirtualMachineScaleSetId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsVirtualMachine) ResetVmAgentPlatformUpdatesEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetVmAgentPlatformUpdatesEnabled",
 		nil, // no parameters
 	)
 }

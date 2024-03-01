@@ -199,7 +199,15 @@ func (j *jsiiProxy_MssqlDatabase) validateSetRecoverDatabaseIdParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_MssqlDatabase) validateSetRecoveryPointIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlDatabase) validateSetRestoreDroppedDatabaseIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MssqlDatabase) validateSetRestoreLongTermRetentionBackupIdParameters(val *string) error {
 	return nil
 }
 

@@ -99,6 +99,10 @@ func (w *jsiiProxy_WindowsVirtualMachine) validatePutOsDiskParameters(value *Win
 	return nil
 }
 
+func (w *jsiiProxy_WindowsVirtualMachine) validatePutOsImageNotificationParameters(value *WindowsVirtualMachineOsImageNotification) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsVirtualMachine) validatePutPlanParameters(value *WindowsVirtualMachinePlan) error {
 	return nil
 }
@@ -184,6 +188,10 @@ func (j *jsiiProxy_WindowsVirtualMachine) validateSetDedicatedHostGroupIdParamet
 }
 
 func (j *jsiiProxy_WindowsVirtualMachine) validateSetDedicatedHostIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine) validateSetDiskControllerTypeParameters(val *string) error {
 	return nil
 }
 
@@ -300,6 +308,10 @@ func (j *jsiiProxy_WindowsVirtualMachine) validateSetUserDataParameters(val *str
 }
 
 func (j *jsiiProxy_WindowsVirtualMachine) validateSetVirtualMachineScaleSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WindowsVirtualMachine) validateSetVmAgentPlatformUpdatesEnabledParameters(val interface{}) error {
 	return nil
 }
 

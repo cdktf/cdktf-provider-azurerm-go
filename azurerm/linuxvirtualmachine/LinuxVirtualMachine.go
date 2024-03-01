@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine}.
 type LinuxVirtualMachine interface {
 	cdktf.TerraformResource
 	AdditionalCapabilities() LinuxVirtualMachineAdditionalCapabilitiesOutputReference
@@ -70,6 +70,9 @@ type LinuxVirtualMachine interface {
 	DisablePasswordAuthentication() interface{}
 	SetDisablePasswordAuthentication(val interface{})
 	DisablePasswordAuthenticationInput() interface{}
+	DiskControllerType() *string
+	SetDiskControllerType(val *string)
+	DiskControllerTypeInput() *string
 	EdgeZone() *string
 	SetEdgeZone(val *string)
 	EdgeZoneInput() *string
@@ -120,6 +123,8 @@ type LinuxVirtualMachine interface {
 	Node() constructs.Node
 	OsDisk() LinuxVirtualMachineOsDiskOutputReference
 	OsDiskInput() *LinuxVirtualMachineOsDisk
+	OsImageNotification() LinuxVirtualMachineOsImageNotificationOutputReference
+	OsImageNotificationInput() *LinuxVirtualMachineOsImageNotification
 	PatchAssessmentMode() *string
 	SetPatchAssessmentMode(val *string)
 	PatchAssessmentModeInput() *string
@@ -193,6 +198,9 @@ type LinuxVirtualMachine interface {
 	VirtualMachineScaleSetId() *string
 	SetVirtualMachineScaleSetId(val *string)
 	VirtualMachineScaleSetIdInput() *string
+	VmAgentPlatformUpdatesEnabled() interface{}
+	SetVmAgentPlatformUpdatesEnabled(val interface{})
+	VmAgentPlatformUpdatesEnabledInput() interface{}
 	VtpmEnabled() interface{}
 	SetVtpmEnabled(val interface{})
 	VtpmEnabledInput() interface{}
@@ -248,6 +256,7 @@ type LinuxVirtualMachine interface {
 	PutGalleryApplication(value interface{})
 	PutIdentity(value *LinuxVirtualMachineIdentity)
 	PutOsDisk(value *LinuxVirtualMachineOsDisk)
+	PutOsImageNotification(value *LinuxVirtualMachineOsImageNotification)
 	PutPlan(value *LinuxVirtualMachinePlan)
 	PutSecret(value interface{})
 	PutSourceImageReference(value *LinuxVirtualMachineSourceImageReference)
@@ -266,6 +275,7 @@ type LinuxVirtualMachine interface {
 	ResetDedicatedHostGroupId()
 	ResetDedicatedHostId()
 	ResetDisablePasswordAuthentication()
+	ResetDiskControllerType()
 	ResetEdgeZone()
 	ResetEncryptionAtHostEnabled()
 	ResetEvictionPolicy()
@@ -275,6 +285,7 @@ type LinuxVirtualMachine interface {
 	ResetIdentity()
 	ResetLicenseType()
 	ResetMaxBidPrice()
+	ResetOsImageNotification()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -295,6 +306,7 @@ type LinuxVirtualMachine interface {
 	ResetTimeouts()
 	ResetUserData()
 	ResetVirtualMachineScaleSetId()
+	ResetVmAgentPlatformUpdatesEnabled()
 	ResetVtpmEnabled()
 	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
@@ -645,6 +657,26 @@ func (j *jsiiProxy_LinuxVirtualMachine) DisablePasswordAuthenticationInput() int
 	return returns
 }
 
+func (j *jsiiProxy_LinuxVirtualMachine) DiskControllerType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskControllerType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachine) DiskControllerTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskControllerTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LinuxVirtualMachine) EdgeZone() *string {
 	var returns *string
 	_jsii_.Get(
@@ -950,6 +982,26 @@ func (j *jsiiProxy_LinuxVirtualMachine) OsDiskInput() *LinuxVirtualMachineOsDisk
 	_jsii_.Get(
 		j,
 		"osDiskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachine) OsImageNotification() LinuxVirtualMachineOsImageNotificationOutputReference {
+	var returns LinuxVirtualMachineOsImageNotificationOutputReference
+	_jsii_.Get(
+		j,
+		"osImageNotification",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachine) OsImageNotificationInput() *LinuxVirtualMachineOsImageNotification {
+	var returns *LinuxVirtualMachineOsImageNotification
+	_jsii_.Get(
+		j,
+		"osImageNotificationInput",
 		&returns,
 	)
 	return returns
@@ -1445,6 +1497,26 @@ func (j *jsiiProxy_LinuxVirtualMachine) VirtualMachineScaleSetIdInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_LinuxVirtualMachine) VmAgentPlatformUpdatesEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vmAgentPlatformUpdatesEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachine) VmAgentPlatformUpdatesEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vmAgentPlatformUpdatesEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LinuxVirtualMachine) VtpmEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1486,7 +1558,7 @@ func (j *jsiiProxy_LinuxVirtualMachine) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine} Resource.
 func NewLinuxVirtualMachine(scope constructs.Construct, id *string, config *LinuxVirtualMachineConfig) LinuxVirtualMachine {
 	_init_.Initialize()
 
@@ -1504,7 +1576,7 @@ func NewLinuxVirtualMachine(scope constructs.Construct, id *string, config *Linu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine} Resource.
 func NewLinuxVirtualMachine_Override(l LinuxVirtualMachine, scope constructs.Construct, id *string, config *LinuxVirtualMachineConfig) {
 	_init_.Initialize()
 
@@ -1662,6 +1734,17 @@ func (j *jsiiProxy_LinuxVirtualMachine)SetDisablePasswordAuthentication(val inte
 	_jsii_.Set(
 		j,
 		"disablePasswordAuthentication",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxVirtualMachine)SetDiskControllerType(val *string) {
+	if err := j.validateSetDiskControllerTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskControllerType",
 		val,
 	)
 }
@@ -1964,6 +2047,17 @@ func (j *jsiiProxy_LinuxVirtualMachine)SetVirtualMachineScaleSetId(val *string) 
 	_jsii_.Set(
 		j,
 		"virtualMachineScaleSetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxVirtualMachine)SetVmAgentPlatformUpdatesEnabled(val interface{}) {
+	if err := j.validateSetVmAgentPlatformUpdatesEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vmAgentPlatformUpdatesEnabled",
 		val,
 	)
 }
@@ -2409,6 +2503,17 @@ func (l *jsiiProxy_LinuxVirtualMachine) PutOsDisk(value *LinuxVirtualMachineOsDi
 	)
 }
 
+func (l *jsiiProxy_LinuxVirtualMachine) PutOsImageNotification(value *LinuxVirtualMachineOsImageNotification) {
+	if err := l.validatePutOsImageNotificationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putOsImageNotification",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LinuxVirtualMachine) PutPlan(value *LinuxVirtualMachinePlan) {
 	if err := l.validatePutPlanParameters(value); err != nil {
 		panic(err)
@@ -2568,6 +2673,14 @@ func (l *jsiiProxy_LinuxVirtualMachine) ResetDisablePasswordAuthentication() {
 	)
 }
 
+func (l *jsiiProxy_LinuxVirtualMachine) ResetDiskControllerType() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDiskControllerType",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LinuxVirtualMachine) ResetEdgeZone() {
 	_jsii_.InvokeVoid(
 		l,
@@ -2636,6 +2749,14 @@ func (l *jsiiProxy_LinuxVirtualMachine) ResetMaxBidPrice() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetMaxBidPrice",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxVirtualMachine) ResetOsImageNotification() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetOsImageNotification",
 		nil, // no parameters
 	)
 }
@@ -2780,6 +2901,14 @@ func (l *jsiiProxy_LinuxVirtualMachine) ResetVirtualMachineScaleSetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetVirtualMachineScaleSetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxVirtualMachine) ResetVmAgentPlatformUpdatesEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetVmAgentPlatformUpdatesEnabled",
 		nil, // no parameters
 	)
 }

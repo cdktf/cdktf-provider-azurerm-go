@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance}.
 type MssqlManagedInstance interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -127,6 +127,9 @@ type MssqlManagedInstance interface {
 	Vcores() *float64
 	SetVcores(val *float64)
 	VcoresInput() *float64
+	ZoneRedundantEnabled() interface{}
+	SetZoneRedundantEnabled(val interface{})
+	ZoneRedundantEnabledInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -187,6 +190,7 @@ type MssqlManagedInstance interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetTimezoneId()
+	ResetZoneRedundantEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -825,8 +829,28 @@ func (j *jsiiProxy_MssqlManagedInstance) VcoresInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_MssqlManagedInstance) ZoneRedundantEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zoneRedundantEnabled",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
+func (j *jsiiProxy_MssqlManagedInstance) ZoneRedundantEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zoneRedundantEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
 func NewMssqlManagedInstance(scope constructs.Construct, id *string, config *MssqlManagedInstanceConfig) MssqlManagedInstance {
 	_init_.Initialize()
 
@@ -844,7 +868,7 @@ func NewMssqlManagedInstance(scope constructs.Construct, id *string, config *Mss
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.93.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
 func NewMssqlManagedInstance_Override(m MssqlManagedInstance, scope constructs.Construct, id *string, config *MssqlManagedInstanceConfig) {
 	_init_.Initialize()
 
@@ -1139,6 +1163,17 @@ func (j *jsiiProxy_MssqlManagedInstance)SetVcores(val *float64) {
 	_jsii_.Set(
 		j,
 		"vcores",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlManagedInstance)SetZoneRedundantEnabled(val interface{}) {
+	if err := j.validateSetZoneRedundantEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zoneRedundantEnabled",
 		val,
 	)
 }
@@ -1618,6 +1653,14 @@ func (m *jsiiProxy_MssqlManagedInstance) ResetTimezoneId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetTimezoneId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlManagedInstance) ResetZoneRedundantEnabled() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetZoneRedundantEnabled",
 		nil, // no parameters
 	)
 }
