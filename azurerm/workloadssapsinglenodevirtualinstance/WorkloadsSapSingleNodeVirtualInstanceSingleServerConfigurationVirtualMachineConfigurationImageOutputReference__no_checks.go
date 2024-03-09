@@ -1,0 +1,93 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package workloadssapsinglenodevirtualinstance
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateSetInternalValueParameters(val *WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImage) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateSetOfferParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateSetPublisherParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateSetSkuParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReference) validateSetVersionParameters(val *string) error {
+	return nil
+}
+
+func validateNewWorkloadsSapSingleNodeVirtualInstanceSingleServerConfigurationVirtualMachineConfigurationImageOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

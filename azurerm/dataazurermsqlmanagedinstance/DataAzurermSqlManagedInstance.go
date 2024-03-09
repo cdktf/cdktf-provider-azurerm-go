@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/data-sources/sql_managed_instance azurerm_sql_managed_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/data-sources/sql_managed_instance azurerm_sql_managed_instance}.
 type DataAzurermSqlManagedInstance interface {
 	cdktf.TerraformDataSource
 	AdministratorLogin() *string
@@ -535,7 +535,7 @@ func (j *jsiiProxy_DataAzurermSqlManagedInstance) Vcores() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/data-sources/sql_managed_instance azurerm_sql_managed_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/data-sources/sql_managed_instance azurerm_sql_managed_instance} Data Source.
 func NewDataAzurermSqlManagedInstance(scope constructs.Construct, id *string, config *DataAzurermSqlManagedInstanceConfig) DataAzurermSqlManagedInstance {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewDataAzurermSqlManagedInstance(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/data-sources/sql_managed_instance azurerm_sql_managed_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/data-sources/sql_managed_instance azurerm_sql_managed_instance} Data Source.
 func NewDataAzurermSqlManagedInstance_Override(d DataAzurermSqlManagedInstance, scope constructs.Construct, id *string, config *DataAzurermSqlManagedInstanceConfig) {
 	_init_.Initialize()
 

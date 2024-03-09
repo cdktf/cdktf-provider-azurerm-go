@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/postgresql_server azurerm_postgresql_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/postgresql_server azurerm_postgresql_server}.
 type PostgresqlServer interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -843,7 +843,7 @@ func (j *jsiiProxy_PostgresqlServer) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/postgresql_server azurerm_postgresql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/postgresql_server azurerm_postgresql_server} Resource.
 func NewPostgresqlServer(scope constructs.Construct, id *string, config *PostgresqlServerConfig) PostgresqlServer {
 	_init_.Initialize()
 
@@ -861,7 +861,7 @@ func NewPostgresqlServer(scope constructs.Construct, id *string, config *Postgre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/postgresql_server azurerm_postgresql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/postgresql_server azurerm_postgresql_server} Resource.
 func NewPostgresqlServer_Override(p PostgresqlServer, scope constructs.Construct, id *string, config *PostgresqlServerConfig) {
 	_init_.Initialize()
 

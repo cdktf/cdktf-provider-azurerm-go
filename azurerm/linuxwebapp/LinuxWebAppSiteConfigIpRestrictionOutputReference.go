@@ -31,6 +31,9 @@ type LinuxWebAppSiteConfigIpRestrictionOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
 	Headers() LinuxWebAppSiteConfigIpRestrictionHeadersList
@@ -86,6 +89,7 @@ type LinuxWebAppSiteConfigIpRestrictionOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutHeaders(value interface{})
 	ResetAction()
+	ResetDescription()
 	ResetHeaders()
 	ResetIpAddress()
 	ResetName()
@@ -152,6 +156,26 @@ func (j *jsiiProxy_LinuxWebAppSiteConfigIpRestrictionOutputReference) CreationSt
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxWebAppSiteConfigIpRestrictionOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxWebAppSiteConfigIpRestrictionOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -374,6 +398,17 @@ func (j *jsiiProxy_LinuxWebAppSiteConfigIpRestrictionOutputReference)SetComplexO
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxWebAppSiteConfigIpRestrictionOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -667,6 +702,14 @@ func (l *jsiiProxy_LinuxWebAppSiteConfigIpRestrictionOutputReference) ResetActio
 	_jsii_.InvokeVoid(
 		l,
 		"resetAction",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxWebAppSiteConfigIpRestrictionOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDescription",
 		nil, // no parameters
 	)
 }

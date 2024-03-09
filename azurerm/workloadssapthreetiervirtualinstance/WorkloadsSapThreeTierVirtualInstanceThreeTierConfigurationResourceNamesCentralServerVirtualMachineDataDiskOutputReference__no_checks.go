@@ -1,0 +1,85 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package workloadssapthreetiervirtualinstance
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateSetNamesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference) validateSetVolumeNameParameters(val *string) error {
+	return nil
+}
+
+func validateNewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+	return nil
+}
+

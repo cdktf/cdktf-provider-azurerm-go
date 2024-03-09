@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/app_service_certificate azurerm_app_service_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/app_service_certificate azurerm_app_service_certificate}.
 type AppServiceCertificate interface {
 	cdktf.TerraformResource
 	AppServicePlanId() *string
@@ -51,6 +51,9 @@ type AppServiceCertificate interface {
 	IdInput() *string
 	IssueDate() *string
 	Issuer() *string
+	KeyVaultId() *string
+	SetKeyVaultId(val *string)
+	KeyVaultIdInput() *string
 	KeyVaultSecretId() *string
 	SetKeyVaultSecretId(val *string)
 	KeyVaultSecretIdInput() *string
@@ -144,6 +147,7 @@ type AppServiceCertificate interface {
 	PutTimeouts(value *AppServiceCertificateTimeouts)
 	ResetAppServicePlanId()
 	ResetId()
+	ResetKeyVaultId()
 	ResetKeyVaultSecretId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -345,6 +349,26 @@ func (j *jsiiProxy_AppServiceCertificate) Issuer() *string {
 	_jsii_.Get(
 		j,
 		"issuer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppServiceCertificate) KeyVaultId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppServiceCertificate) KeyVaultIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultIdInput",
 		&returns,
 	)
 	return returns
@@ -611,7 +635,7 @@ func (j *jsiiProxy_AppServiceCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/app_service_certificate azurerm_app_service_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/app_service_certificate azurerm_app_service_certificate} Resource.
 func NewAppServiceCertificate(scope constructs.Construct, id *string, config *AppServiceCertificateConfig) AppServiceCertificate {
 	_init_.Initialize()
 
@@ -629,7 +653,7 @@ func NewAppServiceCertificate(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/app_service_certificate azurerm_app_service_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/app_service_certificate azurerm_app_service_certificate} Resource.
 func NewAppServiceCertificate_Override(a AppServiceCertificate, scope constructs.Construct, id *string, config *AppServiceCertificateConfig) {
 	_init_.Initialize()
 
@@ -696,6 +720,17 @@ func (j *jsiiProxy_AppServiceCertificate)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppServiceCertificate)SetKeyVaultId(val *string) {
+	if err := j.validateSetKeyVaultIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyVaultId",
 		val,
 	)
 }
@@ -1183,6 +1218,14 @@ func (a *jsiiProxy_AppServiceCertificate) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppServiceCertificate) ResetKeyVaultId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetKeyVaultId",
 		nil, // no parameters
 	)
 }

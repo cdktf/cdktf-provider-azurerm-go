@@ -147,6 +147,10 @@ func (j *jsiiProxy_LinuxFunctionAppSlotSiteConfigOutputReference) validateSetInt
 	return nil
 }
 
+func (j *jsiiProxy_LinuxFunctionAppSlotSiteConfigOutputReference) validateSetIpRestrictionDefaultActionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxFunctionAppSlotSiteConfigOutputReference) validateSetLoadBalancingModeParameters(val *string) error {
 	return nil
 }
@@ -172,6 +176,10 @@ func (j *jsiiProxy_LinuxFunctionAppSlotSiteConfigOutputReference) validateSetRem
 }
 
 func (j *jsiiProxy_LinuxFunctionAppSlotSiteConfigOutputReference) validateSetRuntimeScaleMonitoringEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LinuxFunctionAppSlotSiteConfigOutputReference) validateSetScmIpRestrictionDefaultActionParameters(val *string) error {
 	return nil
 }
 

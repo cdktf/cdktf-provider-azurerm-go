@@ -1,0 +1,89 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+//go:build no_runtime_type_checking
+
+package workloadssapthreetiervirtualinstance
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateSetAdminUsernameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateSetInternalValueParameters(val *WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfile) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateSetSshPrivateKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateSetSshPublicKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

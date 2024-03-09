@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/data_factory_integration_runtime_managed azurerm_data_factory_integration_runtime_managed}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/data_factory_integration_runtime_managed azurerm_data_factory_integration_runtime_managed}.
 type DataFactoryIntegrationRuntimeManaged interface {
 	cdktf.TerraformResource
 	CatalogInfo() DataFactoryIntegrationRuntimeManagedCatalogInfoOutputReference
@@ -29,6 +29,9 @@ type DataFactoryIntegrationRuntimeManaged interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CredentialName() *string
+	SetCredentialName(val *string)
+	CredentialNameInput() *string
 	CustomSetupScript() DataFactoryIntegrationRuntimeManagedCustomSetupScriptOutputReference
 	CustomSetupScriptInput() *DataFactoryIntegrationRuntimeManagedCustomSetupScript
 	DataFactoryId() *string
@@ -147,6 +150,7 @@ type DataFactoryIntegrationRuntimeManaged interface {
 	PutTimeouts(value *DataFactoryIntegrationRuntimeManagedTimeouts)
 	PutVnetIntegration(value *DataFactoryIntegrationRuntimeManagedVnetIntegration)
 	ResetCatalogInfo()
+	ResetCredentialName()
 	ResetCustomSetupScript()
 	ResetDescription()
 	ResetEdition()
@@ -232,6 +236,26 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeManaged) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeManaged) CredentialName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeManaged) CredentialNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialNameInput",
 		&returns,
 	)
 	return returns
@@ -618,7 +642,7 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeManaged) VnetIntegrationInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/data_factory_integration_runtime_managed azurerm_data_factory_integration_runtime_managed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/data_factory_integration_runtime_managed azurerm_data_factory_integration_runtime_managed} Resource.
 func NewDataFactoryIntegrationRuntimeManaged(scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeManagedConfig) DataFactoryIntegrationRuntimeManaged {
 	_init_.Initialize()
 
@@ -636,7 +660,7 @@ func NewDataFactoryIntegrationRuntimeManaged(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/data_factory_integration_runtime_managed azurerm_data_factory_integration_runtime_managed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/data_factory_integration_runtime_managed azurerm_data_factory_integration_runtime_managed} Resource.
 func NewDataFactoryIntegrationRuntimeManaged_Override(d DataFactoryIntegrationRuntimeManaged, scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeManagedConfig) {
 	_init_.Initialize()
 
@@ -665,6 +689,17 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeManaged)SetCount(val interface{}
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeManaged)SetCredentialName(val *string) {
+	if err := j.validateSetCredentialNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialName",
 		val,
 	)
 }
@@ -1226,6 +1261,14 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeManaged) ResetCatalogInfo() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCatalogInfo",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeManaged) ResetCredentialName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCredentialName",
 		nil, // no parameters
 	)
 }

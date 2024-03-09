@@ -205,6 +205,14 @@ func (j *jsiiProxy_WindowsFunctionAppSlotSiteConfigIpRestrictionOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_WindowsFunctionAppSlotSiteConfigIpRestrictionOutputReference) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WindowsFunctionAppSlotSiteConfigIpRestrictionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:

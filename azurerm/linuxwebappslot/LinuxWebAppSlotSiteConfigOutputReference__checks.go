@@ -421,6 +421,14 @@ func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) validateSetInternal
 	return nil
 }
 
+func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) validateSetIpRestrictionDefaultActionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) validateSetLoadBalancingModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -486,6 +494,14 @@ func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) validateSetRemoteDe
 }
 
 func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) validateSetRemoteDebuggingVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) validateSetScmIpRestrictionDefaultActionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

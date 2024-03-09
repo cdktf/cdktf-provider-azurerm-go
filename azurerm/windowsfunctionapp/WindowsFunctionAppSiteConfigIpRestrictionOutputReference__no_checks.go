@@ -67,6 +67,10 @@ func (j *jsiiProxy_WindowsFunctionAppSiteConfigIpRestrictionOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_WindowsFunctionAppSiteConfigIpRestrictionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsFunctionAppSiteConfigIpRestrictionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

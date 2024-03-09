@@ -85,6 +85,9 @@ type LinuxFunctionAppSiteConfigOutputReference interface {
 	InternalValue() *LinuxFunctionAppSiteConfig
 	SetInternalValue(val *LinuxFunctionAppSiteConfig)
 	IpRestriction() LinuxFunctionAppSiteConfigIpRestrictionList
+	IpRestrictionDefaultAction() *string
+	SetIpRestrictionDefaultAction(val *string)
+	IpRestrictionDefaultActionInput() *string
 	IpRestrictionInput() interface{}
 	LinuxFxVersion() *string
 	LoadBalancingMode() *string
@@ -109,6 +112,9 @@ type LinuxFunctionAppSiteConfigOutputReference interface {
 	SetRuntimeScaleMonitoringEnabled(val interface{})
 	RuntimeScaleMonitoringEnabledInput() interface{}
 	ScmIpRestriction() LinuxFunctionAppSiteConfigScmIpRestrictionList
+	ScmIpRestrictionDefaultAction() *string
+	SetScmIpRestrictionDefaultAction(val *string)
+	ScmIpRestrictionDefaultActionInput() *string
 	ScmIpRestrictionInput() interface{}
 	ScmMinimumTlsVersion() *string
 	SetScmMinimumTlsVersion(val *string)
@@ -185,6 +191,7 @@ type LinuxFunctionAppSiteConfigOutputReference interface {
 	ResetHealthCheckPath()
 	ResetHttp2Enabled()
 	ResetIpRestriction()
+	ResetIpRestrictionDefaultAction()
 	ResetLoadBalancingMode()
 	ResetManagedPipelineMode()
 	ResetMinimumTlsVersion()
@@ -193,6 +200,7 @@ type LinuxFunctionAppSiteConfigOutputReference interface {
 	ResetRemoteDebuggingVersion()
 	ResetRuntimeScaleMonitoringEnabled()
 	ResetScmIpRestriction()
+	ResetScmIpRestrictionDefaultAction()
 	ResetScmMinimumTlsVersion()
 	ResetScmUseMainIpRestriction()
 	ResetUse32BitWorker()
@@ -644,6 +652,26 @@ func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) IpRestriction() Li
 	return returns
 }
 
+func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) IpRestrictionDefaultAction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipRestrictionDefaultAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) IpRestrictionDefaultActionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipRestrictionDefaultActionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) IpRestrictionInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -809,6 +837,26 @@ func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) ScmIpRestriction()
 	_jsii_.Get(
 		j,
 		"scmIpRestriction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) ScmIpRestrictionDefaultAction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scmIpRestrictionDefaultAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) ScmIpRestrictionDefaultActionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scmIpRestrictionDefaultActionInput",
 		&returns,
 	)
 	return returns
@@ -1200,6 +1248,17 @@ func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference)SetInternalValue(va
 	)
 }
 
+func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference)SetIpRestrictionDefaultAction(val *string) {
+	if err := j.validateSetIpRestrictionDefaultActionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipRestrictionDefaultAction",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference)SetLoadBalancingMode(val *string) {
 	if err := j.validateSetLoadBalancingModeParameters(val); err != nil {
 		panic(err)
@@ -1273,6 +1332,17 @@ func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference)SetRuntimeScaleMoni
 	_jsii_.Set(
 		j,
 		"runtimeScaleMonitoringEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference)SetScmIpRestrictionDefaultAction(val *string) {
+	if err := j.validateSetScmIpRestrictionDefaultActionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scmIpRestrictionDefaultAction",
 		val,
 	)
 }
@@ -1758,6 +1828,14 @@ func (l *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) ResetIpRestriction
 	)
 }
 
+func (l *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) ResetIpRestrictionDefaultAction() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetIpRestrictionDefaultAction",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) ResetLoadBalancingMode() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1818,6 +1896,14 @@ func (l *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) ResetScmIpRestrict
 	_jsii_.InvokeVoid(
 		l,
 		"resetScmIpRestriction",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) ResetScmIpRestrictionDefaultAction() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetScmIpRestrictionDefaultAction",
 		nil, // no parameters
 	)
 }

@@ -33,6 +33,8 @@ type PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference interface 
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	PrivateIpAddress() *string
+	SetPrivateIpAddress(val *string)
+	PrivateIpAddressInput() *string
 	PrivateIpAllocationMethod() *string
 	SetPrivateIpAllocationMethod(val *string)
 	PrivateIpAllocationMethodInput() *string
@@ -71,6 +73,7 @@ type PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPrivateIpAddress()
 	ResetPrivateIpAllocationMethod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -142,6 +145,16 @@ func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputRefere
 	_jsii_.Get(
 		j,
 		"privateIpAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference) PrivateIpAddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateIpAddressInput",
 		&returns,
 	)
 	return returns
@@ -264,6 +277,17 @@ func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputRefere
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference)SetPrivateIpAddress(val *string) {
+	if err := j.validateSetPrivateIpAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateIpAddress",
 		val,
 	)
 }
@@ -496,6 +520,14 @@ func (p *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputRefere
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference) ResetPrivateIpAddress() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPrivateIpAddress",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference) ResetPrivateIpAllocationMethod() {

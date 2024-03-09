@@ -13,6 +13,7 @@ import (
 
 type DataAzurermRedisCacheRedisConfigurationOutputReference interface {
 	cdktf.ComplexObject
+	ActiveDirectoryAuthenticationEnabled() cdktf.IResolvable
 	AofBackupEnabled() cdktf.IResolvable
 	AofStorageConnectionString0() *string
 	AofStorageConnectionString1() *string
@@ -93,6 +94,16 @@ type DataAzurermRedisCacheRedisConfigurationOutputReference interface {
 // The jsii proxy struct for DataAzurermRedisCacheRedisConfigurationOutputReference
 type jsiiProxy_DataAzurermRedisCacheRedisConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataAzurermRedisCacheRedisConfigurationOutputReference) ActiveDirectoryAuthenticationEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"activeDirectoryAuthenticationEnabled",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAzurermRedisCacheRedisConfigurationOutputReference) AofBackupEnabled() cdktf.IResolvable {

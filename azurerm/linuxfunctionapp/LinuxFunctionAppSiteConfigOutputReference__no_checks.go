@@ -143,6 +143,10 @@ func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) validateSetInterna
 	return nil
 }
 
+func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) validateSetIpRestrictionDefaultActionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) validateSetLoadBalancingModeParameters(val *string) error {
 	return nil
 }
@@ -168,6 +172,10 @@ func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) validateSetRemoteD
 }
 
 func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) validateSetRuntimeScaleMonitoringEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LinuxFunctionAppSiteConfigOutputReference) validateSetScmIpRestrictionDefaultActionParameters(val *string) error {
 	return nil
 }
 

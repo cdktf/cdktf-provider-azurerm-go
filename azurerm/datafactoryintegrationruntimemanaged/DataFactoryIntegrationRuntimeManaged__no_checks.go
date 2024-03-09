@@ -115,6 +115,10 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeManaged) validateSetCountParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeManaged) validateSetCredentialNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryIntegrationRuntimeManaged) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

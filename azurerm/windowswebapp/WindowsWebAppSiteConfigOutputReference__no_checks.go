@@ -135,6 +135,10 @@ func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateSetInternalVa
 	return nil
 }
 
+func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateSetIpRestrictionDefaultActionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateSetLoadBalancingModeParameters(val *string) error {
 	return nil
 }
@@ -156,6 +160,10 @@ func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateSetRemoteDebu
 }
 
 func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateSetRemoteDebuggingVersionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateSetScmIpRestrictionDefaultActionParameters(val *string) error {
 	return nil
 }
 

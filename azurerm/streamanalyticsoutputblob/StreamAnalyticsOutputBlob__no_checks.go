@@ -111,6 +111,10 @@ func (j *jsiiProxy_StreamAnalyticsOutputBlob) validateSetBatchMinRowsParameters(
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsOutputBlob) validateSetBlobWriteModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsOutputBlob) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

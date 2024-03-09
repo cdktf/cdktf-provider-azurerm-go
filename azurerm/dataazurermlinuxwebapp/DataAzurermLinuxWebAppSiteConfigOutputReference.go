@@ -49,6 +49,7 @@ type DataAzurermLinuxWebAppSiteConfigOutputReference interface {
 	InternalValue() *DataAzurermLinuxWebAppSiteConfig
 	SetInternalValue(val *DataAzurermLinuxWebAppSiteConfig)
 	IpRestriction() DataAzurermLinuxWebAppSiteConfigIpRestrictionList
+	IpRestrictionDefaultAction() *string
 	LinuxFxVersion() *string
 	LoadBalancingMode() *string
 	LocalMysqlEnabled() cdktf.IResolvable
@@ -57,6 +58,7 @@ type DataAzurermLinuxWebAppSiteConfigOutputReference interface {
 	RemoteDebuggingEnabled() cdktf.IResolvable
 	RemoteDebuggingVersion() *string
 	ScmIpRestriction() DataAzurermLinuxWebAppSiteConfigScmIpRestrictionList
+	ScmIpRestrictionDefaultAction() *string
 	ScmMinimumTlsVersion() *string
 	ScmType() *string
 	ScmUseMainIpRestriction() cdktf.IResolvable
@@ -331,6 +333,16 @@ func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigOutputReference) IpRestrictio
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigOutputReference) IpRestrictionDefaultAction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipRestrictionDefaultAction",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigOutputReference) LinuxFxVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -406,6 +418,16 @@ func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigOutputReference) ScmIpRestric
 	_jsii_.Get(
 		j,
 		"scmIpRestriction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigOutputReference) ScmIpRestrictionDefaultAction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scmIpRestrictionDefaultAction",
 		&returns,
 	)
 	return returns

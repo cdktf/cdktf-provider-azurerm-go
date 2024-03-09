@@ -364,6 +364,14 @@ func (j *jsiiProxy_AppServiceCertificate) validateSetIdParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_AppServiceCertificate) validateSetKeyVaultIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceCertificate) validateSetKeyVaultSecretIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

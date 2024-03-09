@@ -67,6 +67,10 @@ func (j *jsiiProxy_LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

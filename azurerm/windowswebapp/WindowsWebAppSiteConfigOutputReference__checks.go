@@ -444,6 +444,14 @@ func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateSetInternalVa
 	return nil
 }
 
+func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateSetIpRestrictionDefaultActionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateSetLoadBalancingModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -509,6 +517,14 @@ func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateSetRemoteDebu
 }
 
 func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateSetRemoteDebuggingVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateSetScmIpRestrictionDefaultActionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

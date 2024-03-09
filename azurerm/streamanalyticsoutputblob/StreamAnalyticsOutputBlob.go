@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/stream_analytics_output_blob azurerm_stream_analytics_output_blob}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/stream_analytics_output_blob azurerm_stream_analytics_output_blob}.
 type StreamAnalyticsOutputBlob interface {
 	cdktf.TerraformResource
 	AuthenticationMode() *string
@@ -24,6 +24,9 @@ type StreamAnalyticsOutputBlob interface {
 	BatchMinRows() *float64
 	SetBatchMinRows(val *float64)
 	BatchMinRowsInput() *float64
+	BlobWriteMode() *string
+	SetBlobWriteMode(val *string)
+	BlobWriteModeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -152,6 +155,7 @@ type StreamAnalyticsOutputBlob interface {
 	ResetAuthenticationMode()
 	ResetBatchMaxWaitTime()
 	ResetBatchMinRows()
+	ResetBlobWriteMode()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -231,6 +235,26 @@ func (j *jsiiProxy_StreamAnalyticsOutputBlob) BatchMinRowsInput() *float64 {
 	_jsii_.Get(
 		j,
 		"batchMinRowsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamAnalyticsOutputBlob) BlobWriteMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"blobWriteMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamAnalyticsOutputBlob) BlobWriteModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"blobWriteModeInput",
 		&returns,
 	)
 	return returns
@@ -637,7 +661,7 @@ func (j *jsiiProxy_StreamAnalyticsOutputBlob) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/stream_analytics_output_blob azurerm_stream_analytics_output_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/stream_analytics_output_blob azurerm_stream_analytics_output_blob} Resource.
 func NewStreamAnalyticsOutputBlob(scope constructs.Construct, id *string, config *StreamAnalyticsOutputBlobConfig) StreamAnalyticsOutputBlob {
 	_init_.Initialize()
 
@@ -655,7 +679,7 @@ func NewStreamAnalyticsOutputBlob(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/stream_analytics_output_blob azurerm_stream_analytics_output_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/stream_analytics_output_blob azurerm_stream_analytics_output_blob} Resource.
 func NewStreamAnalyticsOutputBlob_Override(s StreamAnalyticsOutputBlob, scope constructs.Construct, id *string, config *StreamAnalyticsOutputBlobConfig) {
 	_init_.Initialize()
 
@@ -695,6 +719,17 @@ func (j *jsiiProxy_StreamAnalyticsOutputBlob)SetBatchMinRows(val *float64) {
 	_jsii_.Set(
 		j,
 		"batchMinRows",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StreamAnalyticsOutputBlob)SetBlobWriteMode(val *string) {
+	if err := j.validateSetBlobWriteModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"blobWriteMode",
 		val,
 	)
 }
@@ -1272,6 +1307,14 @@ func (s *jsiiProxy_StreamAnalyticsOutputBlob) ResetBatchMinRows() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetBatchMinRows",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StreamAnalyticsOutputBlob) ResetBlobWriteMode() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBlobWriteMode",
 		nil, // no parameters
 	)
 }

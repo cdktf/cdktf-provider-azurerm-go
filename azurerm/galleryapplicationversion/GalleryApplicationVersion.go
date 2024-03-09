@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/gallery_application_version azurerm_gallery_application_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/gallery_application_version azurerm_gallery_application_version}.
 type GalleryApplicationVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -616,7 +616,7 @@ func (j *jsiiProxy_GalleryApplicationVersion) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/gallery_application_version azurerm_gallery_application_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/gallery_application_version azurerm_gallery_application_version} Resource.
 func NewGalleryApplicationVersion(scope constructs.Construct, id *string, config *GalleryApplicationVersionConfig) GalleryApplicationVersion {
 	_init_.Initialize()
 
@@ -634,7 +634,7 @@ func NewGalleryApplicationVersion(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/gallery_application_version azurerm_gallery_application_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/gallery_application_version azurerm_gallery_application_version} Resource.
 func NewGalleryApplicationVersion_Override(g GalleryApplicationVersion, scope constructs.Construct, id *string, config *GalleryApplicationVersionConfig) {
 	_init_.Initialize()
 

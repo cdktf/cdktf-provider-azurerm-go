@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/new_relic_tag_rule azurerm_new_relic_tag_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/new_relic_tag_rule azurerm_new_relic_tag_rule}.
 type NewRelicTagRule interface {
 	cdktf.TerraformResource
 	ActivityLogEnabled() interface{}
@@ -501,7 +501,7 @@ func (j *jsiiProxy_NewRelicTagRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/new_relic_tag_rule azurerm_new_relic_tag_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/new_relic_tag_rule azurerm_new_relic_tag_rule} Resource.
 func NewNewRelicTagRule(scope constructs.Construct, id *string, config *NewRelicTagRuleConfig) NewRelicTagRule {
 	_init_.Initialize()
 
@@ -519,7 +519,7 @@ func NewNewRelicTagRule(scope constructs.Construct, id *string, config *NewRelic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.94.0/docs/resources/new_relic_tag_rule azurerm_new_relic_tag_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/new_relic_tag_rule azurerm_new_relic_tag_rule} Resource.
 func NewNewRelicTagRule_Override(n NewRelicTagRule, scope constructs.Construct, id *string, config *NewRelicTagRuleConfig) {
 	_init_.Initialize()
 

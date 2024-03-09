@@ -63,6 +63,10 @@ func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference) validateSetPrivateIpAddressParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference) validateSetPrivateIpAllocationMethodParameters(val *string) error {
 	return nil
 }

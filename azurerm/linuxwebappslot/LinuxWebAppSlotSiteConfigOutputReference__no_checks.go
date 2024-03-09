@@ -135,6 +135,10 @@ func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) validateSetInternal
 	return nil
 }
 
+func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) validateSetIpRestrictionDefaultActionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) validateSetLoadBalancingModeParameters(val *string) error {
 	return nil
 }
@@ -156,6 +160,10 @@ func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) validateSetRemoteDe
 }
 
 func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) validateSetRemoteDebuggingVersionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) validateSetScmIpRestrictionDefaultActionParameters(val *string) error {
 	return nil
 }
 

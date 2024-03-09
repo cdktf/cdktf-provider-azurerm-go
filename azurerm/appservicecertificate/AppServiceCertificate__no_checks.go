@@ -111,6 +111,10 @@ func (j *jsiiProxy_AppServiceCertificate) validateSetIdParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_AppServiceCertificate) validateSetKeyVaultIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppServiceCertificate) validateSetKeyVaultSecretIdParameters(val *string) error {
 	return nil
 }

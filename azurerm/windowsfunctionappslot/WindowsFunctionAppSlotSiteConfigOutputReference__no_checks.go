@@ -139,6 +139,10 @@ func (j *jsiiProxy_WindowsFunctionAppSlotSiteConfigOutputReference) validateSetI
 	return nil
 }
 
+func (j *jsiiProxy_WindowsFunctionAppSlotSiteConfigOutputReference) validateSetIpRestrictionDefaultActionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsFunctionAppSlotSiteConfigOutputReference) validateSetLoadBalancingModeParameters(val *string) error {
 	return nil
 }
@@ -164,6 +168,10 @@ func (j *jsiiProxy_WindowsFunctionAppSlotSiteConfigOutputReference) validateSetR
 }
 
 func (j *jsiiProxy_WindowsFunctionAppSlotSiteConfigOutputReference) validateSetRuntimeScaleMonitoringEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WindowsFunctionAppSlotSiteConfigOutputReference) validateSetScmIpRestrictionDefaultActionParameters(val *string) error {
 	return nil
 }
 

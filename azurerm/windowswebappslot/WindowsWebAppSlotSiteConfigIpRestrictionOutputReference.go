@@ -31,6 +31,9 @@ type WindowsWebAppSlotSiteConfigIpRestrictionOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
 	Headers() WindowsWebAppSlotSiteConfigIpRestrictionHeadersList
@@ -86,6 +89,7 @@ type WindowsWebAppSlotSiteConfigIpRestrictionOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutHeaders(value interface{})
 	ResetAction()
+	ResetDescription()
 	ResetHeaders()
 	ResetIpAddress()
 	ResetName()
@@ -152,6 +156,26 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigIpRestrictionOutputReference) Crea
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigIpRestrictionOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigIpRestrictionOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -374,6 +398,17 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigIpRestrictionOutputReference)SetCo
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigIpRestrictionOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -667,6 +702,14 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigIpRestrictionOutputReference) Rese
 	_jsii_.InvokeVoid(
 		w,
 		"resetAction",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigIpRestrictionOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDescription",
 		nil, // no parameters
 	)
 }

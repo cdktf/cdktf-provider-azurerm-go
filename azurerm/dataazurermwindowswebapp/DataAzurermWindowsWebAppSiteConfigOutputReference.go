@@ -49,6 +49,7 @@ type DataAzurermWindowsWebAppSiteConfigOutputReference interface {
 	InternalValue() *DataAzurermWindowsWebAppSiteConfig
 	SetInternalValue(val *DataAzurermWindowsWebAppSiteConfig)
 	IpRestriction() DataAzurermWindowsWebAppSiteConfigIpRestrictionList
+	IpRestrictionDefaultAction() *string
 	LoadBalancingMode() *string
 	LocalMysqlEnabled() cdktf.IResolvable
 	ManagedPipelineMode() *string
@@ -56,6 +57,7 @@ type DataAzurermWindowsWebAppSiteConfigOutputReference interface {
 	RemoteDebuggingEnabled() cdktf.IResolvable
 	RemoteDebuggingVersion() *string
 	ScmIpRestriction() DataAzurermWindowsWebAppSiteConfigScmIpRestrictionList
+	ScmIpRestrictionDefaultAction() *string
 	ScmMinimumTlsVersion() *string
 	ScmType() *string
 	ScmUseMainIpRestriction() cdktf.IResolvable
@@ -332,6 +334,16 @@ func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigOutputReference) IpRestrict
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigOutputReference) IpRestrictionDefaultAction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipRestrictionDefaultAction",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigOutputReference) LoadBalancingMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -397,6 +409,16 @@ func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigOutputReference) ScmIpRestr
 	_jsii_.Get(
 		j,
 		"scmIpRestriction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigOutputReference) ScmIpRestrictionDefaultAction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scmIpRestrictionDefaultAction",
 		&returns,
 	)
 	return returns

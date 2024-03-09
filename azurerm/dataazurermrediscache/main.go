@@ -178,6 +178,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermRedisCache.DataAzurermRedisCacheRedisConfigurationOutputReference",
 		reflect.TypeOf((*DataAzurermRedisCacheRedisConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "activeDirectoryAuthenticationEnabled", GoGetter: "ActiveDirectoryAuthenticationEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "aofBackupEnabled", GoGetter: "AofBackupEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "aofStorageConnectionString0", GoGetter: "AofStorageConnectionString0"},
 			_jsii_.MemberProperty{JsiiProperty: "aofStorageConnectionString1", GoGetter: "AofStorageConnectionString1"},

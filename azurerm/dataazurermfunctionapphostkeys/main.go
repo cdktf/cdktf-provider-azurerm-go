@@ -23,6 +23,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "durabletaskExtensionKey", GoGetter: "DurabletaskExtensionKey"},
 			_jsii_.MemberProperty{JsiiProperty: "eventGridExtensionConfigKey", GoGetter: "EventGridExtensionConfigKey"},
+			_jsii_.MemberProperty{JsiiProperty: "eventGridExtensionKey", GoGetter: "EventGridExtensionKey"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
