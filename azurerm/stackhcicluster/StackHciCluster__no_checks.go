@@ -75,6 +75,10 @@ func (s *jsiiProxy_StackHciCluster) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (s *jsiiProxy_StackHciCluster) validatePutIdentityParameters(value *StackHciClusterIdentity) error {
+	return nil
+}
+
 func (s *jsiiProxy_StackHciCluster) validatePutTimeoutsParameters(value *StackHciClusterTimeouts) error {
 	return nil
 }

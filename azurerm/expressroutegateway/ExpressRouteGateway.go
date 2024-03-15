@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/express_route_gateway azurerm_express_route_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/express_route_gateway azurerm_express_route_gateway}.
 type ExpressRouteGateway interface {
 	cdktf.TerraformResource
 	AllowNonVirtualWanTraffic() interface{}
@@ -497,7 +497,7 @@ func (j *jsiiProxy_ExpressRouteGateway) VirtualHubIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/express_route_gateway azurerm_express_route_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/express_route_gateway azurerm_express_route_gateway} Resource.
 func NewExpressRouteGateway(scope constructs.Construct, id *string, config *ExpressRouteGatewayConfig) ExpressRouteGateway {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewExpressRouteGateway(scope constructs.Construct, id *string, config *Expr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/express_route_gateway azurerm_express_route_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/express_route_gateway azurerm_express_route_gateway} Resource.
 func NewExpressRouteGateway_Override(e ExpressRouteGateway, scope constructs.Construct, id *string, config *ExpressRouteGatewayConfig) {
 	_init_.Initialize()
 

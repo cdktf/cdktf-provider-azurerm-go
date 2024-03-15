@@ -131,6 +131,10 @@ func (j *jsiiProxy_StorageTableEntity) validateSetStorageAccountNameParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_StorageTableEntity) validateSetStorageTableIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageTableEntity) validateSetTableNameParameters(val *string) error {
 	return nil
 }

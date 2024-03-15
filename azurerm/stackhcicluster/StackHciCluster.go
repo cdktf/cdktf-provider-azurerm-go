@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/stack_hci_cluster azurerm_stack_hci_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/stack_hci_cluster azurerm_stack_hci_cluster}.
 type StackHciCluster interface {
 	cdktf.TerraformResource
 	AutomanageConfigurationId() *string
@@ -23,6 +23,7 @@ type StackHciCluster interface {
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
+	CloudId() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -47,6 +48,8 @@ type StackHciCluster interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() StackHciClusterIdentityOutputReference
+	IdentityInput() *StackHciClusterIdentity
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -73,6 +76,8 @@ type StackHciCluster interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	ResourceProviderObjectId() *string
+	ServiceEndpoint() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -130,9 +135,11 @@ type StackHciCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutIdentity(value *StackHciClusterIdentity)
 	PutTimeouts(value *StackHciClusterTimeouts)
 	ResetAutomanageConfigurationId()
 	ResetId()
+	ResetIdentity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -202,6 +209,16 @@ func (j *jsiiProxy_StackHciCluster) ClientIdInput() *string {
 	_jsii_.Get(
 		j,
 		"clientIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackHciCluster) CloudId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudId",
 		&returns,
 	)
 	return returns
@@ -282,6 +299,26 @@ func (j *jsiiProxy_StackHciCluster) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackHciCluster) Identity() StackHciClusterIdentityOutputReference {
+	var returns StackHciClusterIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackHciCluster) IdentityInput() *StackHciClusterIdentity {
+	var returns *StackHciClusterIdentity
+	_jsii_.Get(
+		j,
+		"identityInput",
 		&returns,
 	)
 	return returns
@@ -407,6 +444,26 @@ func (j *jsiiProxy_StackHciCluster) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StackHciCluster) ResourceProviderObjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceProviderObjectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackHciCluster) ServiceEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceEndpoint",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StackHciCluster) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -498,7 +555,7 @@ func (j *jsiiProxy_StackHciCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/stack_hci_cluster azurerm_stack_hci_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/stack_hci_cluster azurerm_stack_hci_cluster} Resource.
 func NewStackHciCluster(scope constructs.Construct, id *string, config *StackHciClusterConfig) StackHciCluster {
 	_init_.Initialize()
 
@@ -516,7 +573,7 @@ func NewStackHciCluster(scope constructs.Construct, id *string, config *StackHci
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/stack_hci_cluster azurerm_stack_hci_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/stack_hci_cluster azurerm_stack_hci_cluster} Resource.
 func NewStackHciCluster_Override(s StackHciCluster, scope constructs.Construct, id *string, config *StackHciClusterConfig) {
 	_init_.Initialize()
 
@@ -1036,6 +1093,17 @@ func (s *jsiiProxy_StackHciCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_StackHciCluster) PutIdentity(value *StackHciClusterIdentity) {
+	if err := s.validatePutIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putIdentity",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StackHciCluster) PutTimeouts(value *StackHciClusterTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1059,6 +1127,14 @@ func (s *jsiiProxy_StackHciCluster) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackHciCluster) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIdentity",
 		nil, // no parameters
 	)
 }

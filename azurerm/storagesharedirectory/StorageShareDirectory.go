@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/storage_share_directory azurerm_storage_share_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/storage_share_directory azurerm_storage_share_directory}.
 type StorageShareDirectory interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +70,9 @@ type StorageShareDirectory interface {
 	StorageAccountName() *string
 	SetStorageAccountName(val *string)
 	StorageAccountNameInput() *string
+	StorageShareId() *string
+	SetStorageShareId(val *string)
+	StorageShareIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -127,6 +130,9 @@ type StorageShareDirectory interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetShareName()
+	ResetStorageAccountName()
+	ResetStorageShareId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -376,6 +382,26 @@ func (j *jsiiProxy_StorageShareDirectory) StorageAccountNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageShareDirectory) StorageShareId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageShareId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageShareDirectory) StorageShareIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageShareIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageShareDirectory) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -427,7 +453,7 @@ func (j *jsiiProxy_StorageShareDirectory) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/storage_share_directory azurerm_storage_share_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/storage_share_directory azurerm_storage_share_directory} Resource.
 func NewStorageShareDirectory(scope constructs.Construct, id *string, config *StorageShareDirectoryConfig) StorageShareDirectory {
 	_init_.Initialize()
 
@@ -445,7 +471,7 @@ func NewStorageShareDirectory(scope constructs.Construct, id *string, config *St
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/storage_share_directory azurerm_storage_share_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/storage_share_directory azurerm_storage_share_directory} Resource.
 func NewStorageShareDirectory_Override(s StorageShareDirectory, scope constructs.Construct, id *string, config *StorageShareDirectoryConfig) {
 	_init_.Initialize()
 
@@ -575,6 +601,17 @@ func (j *jsiiProxy_StorageShareDirectory)SetStorageAccountName(val *string) {
 	_jsii_.Set(
 		j,
 		"storageAccountName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageShareDirectory)SetStorageShareId(val *string) {
+	if err := j.validateSetStorageShareIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageShareId",
 		val,
 	)
 }
@@ -963,6 +1000,30 @@ func (s *jsiiProxy_StorageShareDirectory) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageShareDirectory) ResetShareName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetShareName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageShareDirectory) ResetStorageAccountName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStorageAccountName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageShareDirectory) ResetStorageShareId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStorageShareId",
 		nil, // no parameters
 	)
 }

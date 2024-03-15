@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/data_factory_dataset_postgresql azurerm_data_factory_dataset_postgresql}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/data_factory_dataset_postgresql azurerm_data_factory_dataset_postgresql}.
 type DataFactoryDatasetPostgresql interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -571,7 +571,7 @@ func (j *jsiiProxy_DataFactoryDatasetPostgresql) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/data_factory_dataset_postgresql azurerm_data_factory_dataset_postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/data_factory_dataset_postgresql azurerm_data_factory_dataset_postgresql} Resource.
 func NewDataFactoryDatasetPostgresql(scope constructs.Construct, id *string, config *DataFactoryDatasetPostgresqlConfig) DataFactoryDatasetPostgresql {
 	_init_.Initialize()
 
@@ -589,7 +589,7 @@ func NewDataFactoryDatasetPostgresql(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/data_factory_dataset_postgresql azurerm_data_factory_dataset_postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/data_factory_dataset_postgresql azurerm_data_factory_dataset_postgresql} Resource.
 func NewDataFactoryDatasetPostgresql_Override(d DataFactoryDatasetPostgresql, scope constructs.Construct, id *string, config *DataFactoryDatasetPostgresqlConfig) {
 	_init_.Initialize()
 

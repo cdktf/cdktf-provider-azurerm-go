@@ -5,7 +5,7 @@ package dataazurermmysqlserver
 
 
 type DataAzurermMysqlServerTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/data-sources/mysql_server#read DataAzurermMysqlServer#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/data-sources/mysql_server#read DataAzurermMysqlServer#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

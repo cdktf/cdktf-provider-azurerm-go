@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/data_factory_linked_service_azure_search azurerm_data_factory_linked_service_azure_search}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/data_factory_linked_service_azure_search azurerm_data_factory_linked_service_azure_search}.
 type DataFactoryLinkedServiceAzureSearch interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -557,7 +557,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureSearch) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/data_factory_linked_service_azure_search azurerm_data_factory_linked_service_azure_search} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/data_factory_linked_service_azure_search azurerm_data_factory_linked_service_azure_search} Resource.
 func NewDataFactoryLinkedServiceAzureSearch(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureSearchConfig) DataFactoryLinkedServiceAzureSearch {
 	_init_.Initialize()
 
@@ -575,7 +575,7 @@ func NewDataFactoryLinkedServiceAzureSearch(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/data_factory_linked_service_azure_search azurerm_data_factory_linked_service_azure_search} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/data_factory_linked_service_azure_search azurerm_data_factory_linked_service_azure_search} Resource.
 func NewDataFactoryLinkedServiceAzureSearch_Override(d DataFactoryLinkedServiceAzureSearch, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureSearchConfig) {
 	_init_.Initialize()
 

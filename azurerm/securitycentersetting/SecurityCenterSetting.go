@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/security_center_setting azurerm_security_center_setting}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/security_center_setting azurerm_security_center_setting}.
 type SecurityCenterSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_SecurityCenterSetting) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/security_center_setting azurerm_security_center_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/security_center_setting azurerm_security_center_setting} Resource.
 func NewSecurityCenterSetting(scope constructs.Construct, id *string, config *SecurityCenterSettingConfig) SecurityCenterSetting {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewSecurityCenterSetting(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/resources/security_center_setting azurerm_security_center_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/security_center_setting azurerm_security_center_setting} Resource.
 func NewSecurityCenterSetting_Override(s SecurityCenterSetting, scope constructs.Construct, id *string, config *SecurityCenterSettingConfig) {
 	_init_.Initialize()
 

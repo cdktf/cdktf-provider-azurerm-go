@@ -12,13 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/data-sources/stack_hci_cluster azurerm_stack_hci_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/data-sources/stack_hci_cluster azurerm_stack_hci_cluster}.
 type DataAzurermStackHciCluster interface {
 	cdktf.TerraformDataSource
 	AutomanageConfigurationId() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientId() *string
+	CloudId() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -39,6 +40,7 @@ type DataAzurermStackHciCluster interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() DataAzurermStackHciClusterIdentityList
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -59,6 +61,8 @@ type DataAzurermStackHciCluster interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	ResourceProviderObjectId() *string
+	ServiceEndpoint() *string
 	Tags() cdktf.StringMap
 	TenantId() *string
 	// Experimental.
@@ -149,6 +153,16 @@ func (j *jsiiProxy_DataAzurermStackHciCluster) ClientId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermStackHciCluster) CloudId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermStackHciCluster) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -214,6 +228,16 @@ func (j *jsiiProxy_DataAzurermStackHciCluster) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStackHciCluster) Identity() DataAzurermStackHciClusterIdentityList {
+	var returns DataAzurermStackHciClusterIdentityList
+	_jsii_.Get(
+		j,
+		"identity",
 		&returns,
 	)
 	return returns
@@ -319,6 +343,26 @@ func (j *jsiiProxy_DataAzurermStackHciCluster) ResourceGroupNameInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermStackHciCluster) ResourceProviderObjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceProviderObjectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStackHciCluster) ServiceEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceEndpoint",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermStackHciCluster) Tags() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
@@ -390,7 +434,7 @@ func (j *jsiiProxy_DataAzurermStackHciCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/data-sources/stack_hci_cluster azurerm_stack_hci_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/data-sources/stack_hci_cluster azurerm_stack_hci_cluster} Data Source.
 func NewDataAzurermStackHciCluster(scope constructs.Construct, id *string, config *DataAzurermStackHciClusterConfig) DataAzurermStackHciCluster {
 	_init_.Initialize()
 
@@ -408,7 +452,7 @@ func NewDataAzurermStackHciCluster(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.95.0/docs/data-sources/stack_hci_cluster azurerm_stack_hci_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/data-sources/stack_hci_cluster azurerm_stack_hci_cluster} Data Source.
 func NewDataAzurermStackHciCluster_Override(d DataAzurermStackHciCluster, scope constructs.Construct, id *string, config *DataAzurermStackHciClusterConfig) {
 	_init_.Initialize()
 
