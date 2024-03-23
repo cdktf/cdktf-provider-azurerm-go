@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/data-sources/monitor_log_profile azurerm_monitor_log_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/data-sources/monitor_log_profile azurerm_monitor_log_profile}.
 type DataAzurermMonitorLogProfile interface {
 	cdktf.TerraformDataSource
 	Categories() *[]*string
@@ -367,7 +367,7 @@ func (j *jsiiProxy_DataAzurermMonitorLogProfile) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/data-sources/monitor_log_profile azurerm_monitor_log_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/data-sources/monitor_log_profile azurerm_monitor_log_profile} Data Source.
 func NewDataAzurermMonitorLogProfile(scope constructs.Construct, id *string, config *DataAzurermMonitorLogProfileConfig) DataAzurermMonitorLogProfile {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewDataAzurermMonitorLogProfile(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/data-sources/monitor_log_profile azurerm_monitor_log_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/data-sources/monitor_log_profile azurerm_monitor_log_profile} Data Source.
 func NewDataAzurermMonitorLogProfile_Override(d DataAzurermMonitorLogProfile, scope constructs.Construct, id *string, config *DataAzurermMonitorLogProfileConfig) {
 	_init_.Initialize()
 

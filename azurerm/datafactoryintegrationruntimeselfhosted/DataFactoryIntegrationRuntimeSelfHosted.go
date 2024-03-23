@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/data_factory_integration_runtime_self_hosted azurerm_data_factory_integration_runtime_self_hosted}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/data_factory_integration_runtime_self_hosted azurerm_data_factory_integration_runtime_self_hosted}.
 type DataFactoryIntegrationRuntimeSelfHosted interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -71,6 +71,9 @@ type DataFactoryIntegrationRuntimeSelfHosted interface {
 	RbacAuthorization() DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationList
 	RbacAuthorizationInput() interface{}
 	SecondaryAuthorizationKey() *string
+	SelfContainedInteractiveAuthoringEnabled() interface{}
+	SetSelfContainedInteractiveAuthoringEnabled(val interface{})
+	SelfContainedInteractiveAuthoringEnabledInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -130,6 +133,7 @@ type DataFactoryIntegrationRuntimeSelfHosted interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRbacAuthorization()
+	ResetSelfContainedInteractiveAuthoringEnabled()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -399,6 +403,26 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) SecondaryAuthorizati
 	return returns
 }
 
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) SelfContainedInteractiveAuthoringEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"selfContainedInteractiveAuthoringEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) SelfContainedInteractiveAuthoringEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"selfContainedInteractiveAuthoringEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -450,7 +474,7 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/data_factory_integration_runtime_self_hosted azurerm_data_factory_integration_runtime_self_hosted} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/data_factory_integration_runtime_self_hosted azurerm_data_factory_integration_runtime_self_hosted} Resource.
 func NewDataFactoryIntegrationRuntimeSelfHosted(scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeSelfHostedConfig) DataFactoryIntegrationRuntimeSelfHosted {
 	_init_.Initialize()
 
@@ -468,7 +492,7 @@ func NewDataFactoryIntegrationRuntimeSelfHosted(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/data_factory_integration_runtime_self_hosted azurerm_data_factory_integration_runtime_self_hosted} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/data_factory_integration_runtime_self_hosted azurerm_data_factory_integration_runtime_self_hosted} Resource.
 func NewDataFactoryIntegrationRuntimeSelfHosted_Override(d DataFactoryIntegrationRuntimeSelfHosted, scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeSelfHostedConfig) {
 	_init_.Initialize()
 
@@ -587,6 +611,17 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted)SetProvisioners(val *
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted)SetSelfContainedInteractiveAuthoringEnabled(val interface{}) {
+	if err := j.validateSetSelfContainedInteractiveAuthoringEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"selfContainedInteractiveAuthoringEnabled",
 		val,
 	)
 }
@@ -994,6 +1029,14 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) ResetRbacAuthorizati
 	_jsii_.InvokeVoid(
 		d,
 		"resetRbacAuthorization",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) ResetSelfContainedInteractiveAuthoringEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSelfContainedInteractiveAuthoringEnabled",
 		nil, // no parameters
 	)
 }

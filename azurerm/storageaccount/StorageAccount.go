@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/storage_account azurerm_storage_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/storage_account azurerm_storage_account}.
 type StorageAccount interface {
 	cdktf.TerraformResource
 	AccessTier() *string
@@ -63,6 +63,9 @@ type StorageAccount interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DnsEndpointType() *string
+	SetDnsEndpointType(val *string)
+	DnsEndpointTypeInput() *string
 	EdgeZone() *string
 	SetEdgeZone(val *string)
 	EdgeZoneInput() *string
@@ -303,6 +306,7 @@ type StorageAccount interface {
 	ResetCustomDomain()
 	ResetCustomerManagedKey()
 	ResetDefaultToOauthAuthentication()
+	ResetDnsEndpointType()
 	ResetEdgeZone()
 	ResetEnableHttpsTrafficOnly()
 	ResetId()
@@ -633,6 +637,26 @@ func (j *jsiiProxy_StorageAccount) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) DnsEndpointType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsEndpointType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) DnsEndpointTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsEndpointTypeInput",
 		&returns,
 	)
 	return returns
@@ -2009,7 +2033,7 @@ func (j *jsiiProxy_StorageAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/storage_account azurerm_storage_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/storage_account azurerm_storage_account} Resource.
 func NewStorageAccount(scope constructs.Construct, id *string, config *StorageAccountConfig) StorageAccount {
 	_init_.Initialize()
 
@@ -2027,7 +2051,7 @@ func NewStorageAccount(scope constructs.Construct, id *string, config *StorageAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/storage_account azurerm_storage_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/storage_account azurerm_storage_account} Resource.
 func NewStorageAccount_Override(s StorageAccount, scope constructs.Construct, id *string, config *StorageAccountConfig) {
 	_init_.Initialize()
 
@@ -2152,6 +2176,17 @@ func (j *jsiiProxy_StorageAccount)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageAccount)SetDnsEndpointType(val *string) {
+	if err := j.validateSetDnsEndpointTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnsEndpointType",
 		val,
 	)
 }
@@ -2964,6 +2999,14 @@ func (s *jsiiProxy_StorageAccount) ResetDefaultToOauthAuthentication() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDefaultToOauthAuthentication",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageAccount) ResetDnsEndpointType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDnsEndpointType",
 		nil, // no parameters
 	)
 }

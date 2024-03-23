@@ -131,6 +131,10 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) validateSetSelfContainedInteractiveAuthoringEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewDataFactoryIntegrationRuntimeSelfHostedParameters(scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeSelfHostedConfig) error {
 	return nil
 }

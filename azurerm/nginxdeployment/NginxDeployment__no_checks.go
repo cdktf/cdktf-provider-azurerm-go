@@ -75,6 +75,14 @@ func (n *jsiiProxy_NginxDeployment) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (n *jsiiProxy_NginxDeployment) validatePutAutoScaleProfileParameters(value interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NginxDeployment) validatePutConfigurationParameters(value *NginxDeploymentConfiguration) error {
+	return nil
+}
+
 func (n *jsiiProxy_NginxDeployment) validatePutFrontendPrivateParameters(value interface{}) error {
 	return nil
 }

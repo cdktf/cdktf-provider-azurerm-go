@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis}.
 type DataFactoryIntegrationRuntimeAzureSsis interface {
 	cdktf.TerraformResource
 	CatalogInfo() DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference
@@ -25,6 +25,8 @@ type DataFactoryIntegrationRuntimeAzureSsis interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	CopyComputeScale() DataFactoryIntegrationRuntimeAzureSsisCopyComputeScaleOutputReference
+	CopyComputeScaleInput() *DataFactoryIntegrationRuntimeAzureSsisCopyComputeScale
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -88,6 +90,8 @@ type DataFactoryIntegrationRuntimeAzureSsis interface {
 	NumberOfNodesInput() *float64
 	PackageStore() DataFactoryIntegrationRuntimeAzureSsisPackageStoreList
 	PackageStoreInput() interface{}
+	PipelineExternalComputeScale() DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScaleOutputReference
+	PipelineExternalComputeScaleInput() *DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScale
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -154,14 +158,17 @@ type DataFactoryIntegrationRuntimeAzureSsis interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCatalogInfo(value *DataFactoryIntegrationRuntimeAzureSsisCatalogInfo)
+	PutCopyComputeScale(value *DataFactoryIntegrationRuntimeAzureSsisCopyComputeScale)
 	PutCustomSetupScript(value *DataFactoryIntegrationRuntimeAzureSsisCustomSetupScript)
 	PutExpressCustomSetup(value *DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetup)
 	PutExpressVnetIntegration(value *DataFactoryIntegrationRuntimeAzureSsisExpressVnetIntegration)
 	PutPackageStore(value interface{})
+	PutPipelineExternalComputeScale(value *DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScale)
 	PutProxy(value *DataFactoryIntegrationRuntimeAzureSsisProxy)
 	PutTimeouts(value *DataFactoryIntegrationRuntimeAzureSsisTimeouts)
 	PutVnetIntegration(value *DataFactoryIntegrationRuntimeAzureSsisVnetIntegration)
 	ResetCatalogInfo()
+	ResetCopyComputeScale()
 	ResetCredentialName()
 	ResetCustomSetupScript()
 	ResetDescription()
@@ -176,6 +183,7 @@ type DataFactoryIntegrationRuntimeAzureSsis interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPackageStore()
+	ResetPipelineExternalComputeScale()
 	ResetProxy()
 	ResetTimeouts()
 	ResetVnetIntegration()
@@ -242,6 +250,26 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) ConstructNodeMetadata
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) CopyComputeScale() DataFactoryIntegrationRuntimeAzureSsisCopyComputeScaleOutputReference {
+	var returns DataFactoryIntegrationRuntimeAzureSsisCopyComputeScaleOutputReference
+	_jsii_.Get(
+		j,
+		"copyComputeScale",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) CopyComputeScaleInput() *DataFactoryIntegrationRuntimeAzureSsisCopyComputeScale {
+	var returns *DataFactoryIntegrationRuntimeAzureSsisCopyComputeScale
+	_jsii_.Get(
+		j,
+		"copyComputeScaleInput",
 		&returns,
 	)
 	return returns
@@ -617,6 +645,26 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) PackageStoreInput() i
 	return returns
 }
 
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) PipelineExternalComputeScale() DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScaleOutputReference {
+	var returns DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScaleOutputReference
+	_jsii_.Get(
+		j,
+		"pipelineExternalComputeScale",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) PipelineExternalComputeScaleInput() *DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScale {
+	var returns *DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScale
+	_jsii_.Get(
+		j,
+		"pipelineExternalComputeScaleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -738,7 +786,7 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) VnetIntegrationInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis} Resource.
 func NewDataFactoryIntegrationRuntimeAzureSsis(scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeAzureSsisConfig) DataFactoryIntegrationRuntimeAzureSsis {
 	_init_.Initialize()
 
@@ -756,7 +804,7 @@ func NewDataFactoryIntegrationRuntimeAzureSsis(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis} Resource.
 func NewDataFactoryIntegrationRuntimeAzureSsis_Override(d DataFactoryIntegrationRuntimeAzureSsis, scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeAzureSsisConfig) {
 	_init_.Initialize()
 
@@ -1320,6 +1368,17 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) PutCatalogInfo(value 
 	)
 }
 
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) PutCopyComputeScale(value *DataFactoryIntegrationRuntimeAzureSsisCopyComputeScale) {
+	if err := d.validatePutCopyComputeScaleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCopyComputeScale",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) PutCustomSetupScript(value *DataFactoryIntegrationRuntimeAzureSsisCustomSetupScript) {
 	if err := d.validatePutCustomSetupScriptParameters(value); err != nil {
 		panic(err)
@@ -1364,6 +1423,17 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) PutPackageStore(value
 	)
 }
 
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) PutPipelineExternalComputeScale(value *DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScale) {
+	if err := d.validatePutPipelineExternalComputeScaleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPipelineExternalComputeScale",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) PutProxy(value *DataFactoryIntegrationRuntimeAzureSsisProxy) {
 	if err := d.validatePutProxyParameters(value); err != nil {
 		panic(err)
@@ -1401,6 +1471,14 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) ResetCatalogInfo() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCatalogInfo",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) ResetCopyComputeScale() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCopyComputeScale",
 		nil, // no parameters
 	)
 }
@@ -1497,6 +1575,14 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) ResetPackageStore() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPackageStore",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) ResetPipelineExternalComputeScale() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPipelineExternalComputeScale",
 		nil, // no parameters
 	)
 }

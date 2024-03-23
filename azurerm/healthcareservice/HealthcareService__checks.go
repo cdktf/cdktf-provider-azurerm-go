@@ -229,6 +229,17 @@ func (h *jsiiProxy_HealthcareService) validatePutCorsConfigurationParameters(val
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareService) validatePutIdentityParameters(value *HealthcareServiceIdentity) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareService) validatePutTimeoutsParameters(value *HealthcareServiceTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -281,6 +292,14 @@ func validateHealthcareService_IsTerraformResourceParameters(x interface{}) erro
 }
 
 func (j *jsiiProxy_HealthcareService) validateSetAccessPolicyObjectIdsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_HealthcareService) validateSetConfigurationExportStorageAccountNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

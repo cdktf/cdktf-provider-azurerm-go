@@ -210,6 +210,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "minimumCountInput", GoGetter: "MinimumCountInput"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaximumCount", GoMethod: "ResetMaximumCount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinimumCount", GoMethod: "ResetMinimumCount"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

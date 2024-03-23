@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/healthcare_service azurerm_healthcare_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/healthcare_service azurerm_healthcare_service}.
 type HealthcareService interface {
 	cdktf.TerraformResource
 	AccessPolicyObjectIds() *[]*string
@@ -22,6 +22,9 @@ type HealthcareService interface {
 	AuthenticationConfigurationInput() *HealthcareServiceAuthenticationConfiguration
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConfigurationExportStorageAccountName() *string
+	SetConfigurationExportStorageAccountName(val *string)
+	ConfigurationExportStorageAccountNameInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -54,6 +57,8 @@ type HealthcareService interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() HealthcareServiceIdentityOutputReference
+	IdentityInput() *HealthcareServiceIdentity
 	IdInput() *string
 	Kind() *string
 	SetKind(val *string)
@@ -142,13 +147,16 @@ type HealthcareService interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthenticationConfiguration(value *HealthcareServiceAuthenticationConfiguration)
 	PutCorsConfiguration(value *HealthcareServiceCorsConfiguration)
+	PutIdentity(value *HealthcareServiceIdentity)
 	PutTimeouts(value *HealthcareServiceTimeouts)
 	ResetAccessPolicyObjectIds()
 	ResetAuthenticationConfiguration()
+	ResetConfigurationExportStorageAccountName()
 	ResetCorsConfiguration()
 	ResetCosmosdbKeyVaultKeyVersionlessId()
 	ResetCosmosdbThroughput()
 	ResetId()
+	ResetIdentity()
 	ResetKind()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -219,6 +227,26 @@ func (j *jsiiProxy_HealthcareService) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareService) ConfigurationExportStorageAccountName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configurationExportStorageAccountName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareService) ConfigurationExportStorageAccountNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configurationExportStorageAccountNameInput",
 		&returns,
 	)
 	return returns
@@ -359,6 +387,26 @@ func (j *jsiiProxy_HealthcareService) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareService) Identity() HealthcareServiceIdentityOutputReference {
+	var returns HealthcareServiceIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareService) IdentityInput() *HealthcareServiceIdentity {
+	var returns *HealthcareServiceIdentity
+	_jsii_.Get(
+		j,
+		"identityInput",
 		&returns,
 	)
 	return returns
@@ -595,7 +643,7 @@ func (j *jsiiProxy_HealthcareService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/healthcare_service azurerm_healthcare_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/healthcare_service azurerm_healthcare_service} Resource.
 func NewHealthcareService(scope constructs.Construct, id *string, config *HealthcareServiceConfig) HealthcareService {
 	_init_.Initialize()
 
@@ -613,7 +661,7 @@ func NewHealthcareService(scope constructs.Construct, id *string, config *Health
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/healthcare_service azurerm_healthcare_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/healthcare_service azurerm_healthcare_service} Resource.
 func NewHealthcareService_Override(h HealthcareService, scope constructs.Construct, id *string, config *HealthcareServiceConfig) {
 	_init_.Initialize()
 
@@ -631,6 +679,17 @@ func (j *jsiiProxy_HealthcareService)SetAccessPolicyObjectIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"accessPolicyObjectIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HealthcareService)SetConfigurationExportStorageAccountName(val *string) {
+	if err := j.validateSetConfigurationExportStorageAccountNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"configurationExportStorageAccountName",
 		val,
 	)
 }
@@ -1177,6 +1236,17 @@ func (h *jsiiProxy_HealthcareService) PutCorsConfiguration(value *HealthcareServ
 	)
 }
 
+func (h *jsiiProxy_HealthcareService) PutIdentity(value *HealthcareServiceIdentity) {
+	if err := h.validatePutIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putIdentity",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_HealthcareService) PutTimeouts(value *HealthcareServiceTimeouts) {
 	if err := h.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1200,6 +1270,14 @@ func (h *jsiiProxy_HealthcareService) ResetAuthenticationConfiguration() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetAuthenticationConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HealthcareService) ResetConfigurationExportStorageAccountName() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetConfigurationExportStorageAccountName",
 		nil, // no parameters
 	)
 }
@@ -1232,6 +1310,14 @@ func (h *jsiiProxy_HealthcareService) ResetId() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HealthcareService) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetIdentity",
 		nil, // no parameters
 	)
 }

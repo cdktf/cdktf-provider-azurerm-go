@@ -51,6 +51,10 @@ func (n *jsiiProxy_NetappAccountActiveDirectoryOutputReference) validateResolveP
 	return nil
 }
 
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) validateSetAesEncryptionEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -71,11 +75,39 @@ func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) validateSetInter
 	return nil
 }
 
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) validateSetKerberosAdNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) validateSetKerberosKdcIpParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) validateSetLdapOverTlsEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) validateSetLdapSigningEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) validateSetLocalNfsUsersWithLdapAllowedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) validateSetOrganizationalUnitParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) validateSetPasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) validateSetServerRootCaCertificateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) validateSetSiteNameParameters(val *string) error {
 	return nil
 }
 

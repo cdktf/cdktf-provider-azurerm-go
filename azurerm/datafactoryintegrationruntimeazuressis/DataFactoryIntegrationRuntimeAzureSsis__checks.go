@@ -218,6 +218,17 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validatePutCatalogInf
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validatePutCopyComputeScaleParameters(value *DataFactoryIntegrationRuntimeAzureSsisCopyComputeScale) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validatePutCustomSetupScriptParameters(value *DataFactoryIntegrationRuntimeAzureSsisCustomSetupScript) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -277,6 +288,17 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validatePutPackageSto
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataFactoryIntegrationRuntimeAzureSsisPackageStore; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validatePutPipelineExternalComputeScaleParameters(value *DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScale) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

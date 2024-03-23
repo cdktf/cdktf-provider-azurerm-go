@@ -21,6 +21,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "copyComputeScale", GoGetter: "CopyComputeScale"},
+			_jsii_.MemberProperty{JsiiProperty: "copyComputeScaleInput", GoGetter: "CopyComputeScaleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "credentialName", GoGetter: "CredentialName"},
 			_jsii_.MemberProperty{JsiiProperty: "credentialNameInput", GoGetter: "CredentialNameInput"},
@@ -74,20 +76,25 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "packageStore", GoGetter: "PackageStore"},
 			_jsii_.MemberProperty{JsiiProperty: "packageStoreInput", GoGetter: "PackageStoreInput"},
+			_jsii_.MemberProperty{JsiiProperty: "pipelineExternalComputeScale", GoGetter: "PipelineExternalComputeScale"},
+			_jsii_.MemberProperty{JsiiProperty: "pipelineExternalComputeScaleInput", GoGetter: "PipelineExternalComputeScaleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "proxy", GoGetter: "Proxy"},
 			_jsii_.MemberProperty{JsiiProperty: "proxyInput", GoGetter: "ProxyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCatalogInfo", GoMethod: "PutCatalogInfo"},
+			_jsii_.MemberMethod{JsiiMethod: "putCopyComputeScale", GoMethod: "PutCopyComputeScale"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomSetupScript", GoMethod: "PutCustomSetupScript"},
 			_jsii_.MemberMethod{JsiiMethod: "putExpressCustomSetup", GoMethod: "PutExpressCustomSetup"},
 			_jsii_.MemberMethod{JsiiMethod: "putExpressVnetIntegration", GoMethod: "PutExpressVnetIntegration"},
 			_jsii_.MemberMethod{JsiiMethod: "putPackageStore", GoMethod: "PutPackageStore"},
+			_jsii_.MemberMethod{JsiiMethod: "putPipelineExternalComputeScale", GoMethod: "PutPipelineExternalComputeScale"},
 			_jsii_.MemberMethod{JsiiMethod: "putProxy", GoMethod: "PutProxy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putVnetIntegration", GoMethod: "PutVnetIntegration"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCatalogInfo", GoMethod: "ResetCatalogInfo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCopyComputeScale", GoMethod: "ResetCopyComputeScale"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCredentialName", GoMethod: "ResetCredentialName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomSetupScript", GoMethod: "ResetCustomSetupScript"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -100,6 +107,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNumberOfNodes", GoMethod: "ResetNumberOfNodes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPackageStore", GoMethod: "ResetPackageStore"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPipelineExternalComputeScale", GoMethod: "ResetPipelineExternalComputeScale"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProxy", GoMethod: "ResetProxy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVnetIntegration", GoMethod: "ResetVnetIntegration"},
@@ -179,6 +187,48 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.dataFactoryIntegrationRuntimeAzureSsis.DataFactoryIntegrationRuntimeAzureSsisConfig",
 		reflect.TypeOf((*DataFactoryIntegrationRuntimeAzureSsisConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.dataFactoryIntegrationRuntimeAzureSsis.DataFactoryIntegrationRuntimeAzureSsisCopyComputeScale",
+		reflect.TypeOf((*DataFactoryIntegrationRuntimeAzureSsisCopyComputeScale)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.dataFactoryIntegrationRuntimeAzureSsis.DataFactoryIntegrationRuntimeAzureSsisCopyComputeScaleOutputReference",
+		reflect.TypeOf((*DataFactoryIntegrationRuntimeAzureSsisCopyComputeScaleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataIntegrationUnit", GoGetter: "DataIntegrationUnit"},
+			_jsii_.MemberProperty{JsiiProperty: "dataIntegrationUnitInput", GoGetter: "DataIntegrationUnitInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDataIntegrationUnit", GoMethod: "ResetDataIntegrationUnit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTimeToLive", GoMethod: "ResetTimeToLive"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "timeToLive", GoGetter: "TimeToLive"},
+			_jsii_.MemberProperty{JsiiProperty: "timeToLiveInput", GoGetter: "TimeToLiveInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisCopyComputeScaleOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.dataFactoryIntegrationRuntimeAzureSsis.DataFactoryIntegrationRuntimeAzureSsisCustomSetupScript",
@@ -594,6 +644,51 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisPackageStoreOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.dataFactoryIntegrationRuntimeAzureSsis.DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScale",
+		reflect.TypeOf((*DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScale)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.dataFactoryIntegrationRuntimeAzureSsis.DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScaleOutputReference",
+		reflect.TypeOf((*DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScaleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "numberOfExternalNodes", GoGetter: "NumberOfExternalNodes"},
+			_jsii_.MemberProperty{JsiiProperty: "numberOfExternalNodesInput", GoGetter: "NumberOfExternalNodesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "numberOfPipelineNodes", GoGetter: "NumberOfPipelineNodes"},
+			_jsii_.MemberProperty{JsiiProperty: "numberOfPipelineNodesInput", GoGetter: "NumberOfPipelineNodesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNumberOfExternalNodes", GoMethod: "ResetNumberOfExternalNodes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNumberOfPipelineNodes", GoMethod: "ResetNumberOfPipelineNodes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTimeToLive", GoMethod: "ResetTimeToLive"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "timeToLive", GoGetter: "TimeToLive"},
+			_jsii_.MemberProperty{JsiiProperty: "timeToLiveInput", GoGetter: "TimeToLiveInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScaleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

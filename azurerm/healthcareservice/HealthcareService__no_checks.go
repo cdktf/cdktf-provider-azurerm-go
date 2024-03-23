@@ -83,6 +83,10 @@ func (h *jsiiProxy_HealthcareService) validatePutCorsConfigurationParameters(val
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareService) validatePutIdentityParameters(value *HealthcareServiceIdentity) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareService) validatePutTimeoutsParameters(value *HealthcareServiceTimeouts) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func validateHealthcareService_IsTerraformResourceParameters(x interface{}) erro
 }
 
 func (j *jsiiProxy_HealthcareService) validateSetAccessPolicyObjectIdsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_HealthcareService) validateSetConfigurationExportStorageAccountNameParameters(val *string) error {
 	return nil
 }
 

@@ -12,17 +12,21 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/nginx_deployment azurerm_nginx_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/nginx_deployment azurerm_nginx_deployment}.
 type NginxDeployment interface {
 	cdktf.TerraformResource
 	AutomaticUpgradeChannel() *string
 	SetAutomaticUpgradeChannel(val *string)
 	AutomaticUpgradeChannelInput() *string
+	AutoScaleProfile() NginxDeploymentAutoScaleProfileList
+	AutoScaleProfileInput() interface{}
 	Capacity() *float64
 	SetCapacity(val *float64)
 	CapacityInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Configuration() NginxDeploymentConfigurationOutputReference
+	ConfigurationInput() *NginxDeploymentConfiguration
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -151,6 +155,8 @@ type NginxDeployment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutoScaleProfile(value interface{})
+	PutConfiguration(value *NginxDeploymentConfiguration)
 	PutFrontendPrivate(value interface{})
 	PutFrontendPublic(value *NginxDeploymentFrontendPublic)
 	PutIdentity(value *NginxDeploymentIdentity)
@@ -158,7 +164,9 @@ type NginxDeployment interface {
 	PutNetworkInterface(value interface{})
 	PutTimeouts(value *NginxDeploymentTimeouts)
 	ResetAutomaticUpgradeChannel()
+	ResetAutoScaleProfile()
 	ResetCapacity()
+	ResetConfiguration()
 	ResetDiagnoseSupportEnabled()
 	ResetEmail()
 	ResetFrontendPrivate()
@@ -211,6 +219,26 @@ func (j *jsiiProxy_NginxDeployment) AutomaticUpgradeChannelInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NginxDeployment) AutoScaleProfile() NginxDeploymentAutoScaleProfileList {
+	var returns NginxDeploymentAutoScaleProfileList
+	_jsii_.Get(
+		j,
+		"autoScaleProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NginxDeployment) AutoScaleProfileInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoScaleProfileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NginxDeployment) Capacity() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -236,6 +264,26 @@ func (j *jsiiProxy_NginxDeployment) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NginxDeployment) Configuration() NginxDeploymentConfigurationOutputReference {
+	var returns NginxDeploymentConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"configuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NginxDeployment) ConfigurationInput() *NginxDeploymentConfiguration {
+	var returns *NginxDeploymentConfiguration
+	_jsii_.Get(
+		j,
+		"configurationInput",
 		&returns,
 	)
 	return returns
@@ -712,7 +760,7 @@ func (j *jsiiProxy_NginxDeployment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
 func NewNginxDeployment(scope constructs.Construct, id *string, config *NginxDeploymentConfig) NginxDeployment {
 	_init_.Initialize()
 
@@ -730,7 +778,7 @@ func NewNginxDeployment(scope constructs.Construct, id *string, config *NginxDep
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
 func NewNginxDeployment_Override(n NginxDeployment, scope constructs.Construct, id *string, config *NginxDeploymentConfig) {
 	_init_.Initialize()
 
@@ -1283,6 +1331,28 @@ func (n *jsiiProxy_NginxDeployment) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (n *jsiiProxy_NginxDeployment) PutAutoScaleProfile(value interface{}) {
+	if err := n.validatePutAutoScaleProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putAutoScaleProfile",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NginxDeployment) PutConfiguration(value *NginxDeploymentConfiguration) {
+	if err := n.validatePutConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NginxDeployment) PutFrontendPrivate(value interface{}) {
 	if err := n.validatePutFrontendPrivateParameters(value); err != nil {
 		panic(err)
@@ -1357,10 +1427,26 @@ func (n *jsiiProxy_NginxDeployment) ResetAutomaticUpgradeChannel() {
 	)
 }
 
+func (n *jsiiProxy_NginxDeployment) ResetAutoScaleProfile() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAutoScaleProfile",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NginxDeployment) ResetCapacity() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetCapacity",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NginxDeployment) ResetConfiguration() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetConfiguration",
 		nil, // no parameters
 	)
 }

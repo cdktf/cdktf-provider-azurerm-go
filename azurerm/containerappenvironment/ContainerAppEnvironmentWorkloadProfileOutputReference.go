@@ -76,6 +76,8 @@ type ContainerAppEnvironmentWorkloadProfileOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMaximumCount()
+	ResetMinimumCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -552,6 +554,22 @@ func (c *jsiiProxy_ContainerAppEnvironmentWorkloadProfileOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerAppEnvironmentWorkloadProfileOutputReference) ResetMaximumCount() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaximumCount",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppEnvironmentWorkloadProfileOutputReference) ResetMinimumCount() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMinimumCount",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerAppEnvironmentWorkloadProfileOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

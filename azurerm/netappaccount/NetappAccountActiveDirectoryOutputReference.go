@@ -13,6 +13,9 @@ import (
 
 type NetappAccountActiveDirectoryOutputReference interface {
 	cdktf.ComplexObject
+	AesEncryptionEnabled() interface{}
+	SetAesEncryptionEnabled(val interface{})
+	AesEncryptionEnabledInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,12 +41,33 @@ type NetappAccountActiveDirectoryOutputReference interface {
 	Fqn() *string
 	InternalValue() *NetappAccountActiveDirectory
 	SetInternalValue(val *NetappAccountActiveDirectory)
+	KerberosAdName() *string
+	SetKerberosAdName(val *string)
+	KerberosAdNameInput() *string
+	KerberosKdcIp() *string
+	SetKerberosKdcIp(val *string)
+	KerberosKdcIpInput() *string
+	LdapOverTlsEnabled() interface{}
+	SetLdapOverTlsEnabled(val interface{})
+	LdapOverTlsEnabledInput() interface{}
+	LdapSigningEnabled() interface{}
+	SetLdapSigningEnabled(val interface{})
+	LdapSigningEnabledInput() interface{}
+	LocalNfsUsersWithLdapAllowed() interface{}
+	SetLocalNfsUsersWithLdapAllowed(val interface{})
+	LocalNfsUsersWithLdapAllowedInput() interface{}
 	OrganizationalUnit() *string
 	SetOrganizationalUnit(val *string)
 	OrganizationalUnitInput() *string
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	ServerRootCaCertificate() *string
+	SetServerRootCaCertificate(val *string)
+	ServerRootCaCertificateInput() *string
+	SiteName() *string
+	SetSiteName(val *string)
+	SiteNameInput() *string
 	SmbServerName() *string
 	SetSmbServerName(val *string)
 	SmbServerNameInput() *string
@@ -82,7 +106,15 @@ type NetappAccountActiveDirectoryOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAesEncryptionEnabled()
+	ResetKerberosAdName()
+	ResetKerberosKdcIp()
+	ResetLdapOverTlsEnabled()
+	ResetLdapSigningEnabled()
+	ResetLocalNfsUsersWithLdapAllowed()
 	ResetOrganizationalUnit()
+	ResetServerRootCaCertificate()
+	ResetSiteName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -96,6 +128,26 @@ type NetappAccountActiveDirectoryOutputReference interface {
 // The jsii proxy struct for NetappAccountActiveDirectoryOutputReference
 type jsiiProxy_NetappAccountActiveDirectoryOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) AesEncryptionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aesEncryptionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) AesEncryptionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aesEncryptionEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) ComplexObjectIndex() interface{} {
@@ -188,6 +240,106 @@ func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) InternalValue() 
 	return returns
 }
 
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) KerberosAdName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kerberosAdName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) KerberosAdNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kerberosAdNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) KerberosKdcIp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kerberosKdcIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) KerberosKdcIpInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kerberosKdcIpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) LdapOverTlsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ldapOverTlsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) LdapOverTlsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ldapOverTlsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) LdapSigningEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ldapSigningEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) LdapSigningEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ldapSigningEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) LocalNfsUsersWithLdapAllowed() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localNfsUsersWithLdapAllowed",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) LocalNfsUsersWithLdapAllowedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localNfsUsersWithLdapAllowedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) OrganizationalUnit() *string {
 	var returns *string
 	_jsii_.Get(
@@ -223,6 +375,46 @@ func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) PasswordInput() 
 	_jsii_.Get(
 		j,
 		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) ServerRootCaCertificate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverRootCaCertificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) ServerRootCaCertificateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverRootCaCertificateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) SiteName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"siteName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference) SiteNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"siteNameInput",
 		&returns,
 	)
 	return returns
@@ -316,6 +508,17 @@ func NewNetappAccountActiveDirectoryOutputReference_Override(n NetappAccountActi
 	)
 }
 
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference)SetAesEncryptionEnabled(val interface{}) {
+	if err := j.validateSetAesEncryptionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aesEncryptionEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -371,6 +574,61 @@ func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference)SetInternalValue(
 	)
 }
 
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference)SetKerberosAdName(val *string) {
+	if err := j.validateSetKerberosAdNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kerberosAdName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference)SetKerberosKdcIp(val *string) {
+	if err := j.validateSetKerberosKdcIpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kerberosKdcIp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference)SetLdapOverTlsEnabled(val interface{}) {
+	if err := j.validateSetLdapOverTlsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ldapOverTlsEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference)SetLdapSigningEnabled(val interface{}) {
+	if err := j.validateSetLdapSigningEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ldapSigningEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference)SetLocalNfsUsersWithLdapAllowed(val interface{}) {
+	if err := j.validateSetLocalNfsUsersWithLdapAllowedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localNfsUsersWithLdapAllowed",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference)SetOrganizationalUnit(val *string) {
 	if err := j.validateSetOrganizationalUnitParameters(val); err != nil {
 		panic(err)
@@ -389,6 +647,28 @@ func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference)SetPassword(val *
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference)SetServerRootCaCertificate(val *string) {
+	if err := j.validateSetServerRootCaCertificateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverRootCaCertificate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappAccountActiveDirectoryOutputReference)SetSiteName(val *string) {
+	if err := j.validateSetSiteNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"siteName",
 		val,
 	)
 }
@@ -623,10 +903,74 @@ func (n *jsiiProxy_NetappAccountActiveDirectoryOutputReference) InterpolationFor
 	return returns
 }
 
+func (n *jsiiProxy_NetappAccountActiveDirectoryOutputReference) ResetAesEncryptionEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAesEncryptionEnabled",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappAccountActiveDirectoryOutputReference) ResetKerberosAdName() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetKerberosAdName",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappAccountActiveDirectoryOutputReference) ResetKerberosKdcIp() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetKerberosKdcIp",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappAccountActiveDirectoryOutputReference) ResetLdapOverTlsEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetLdapOverTlsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappAccountActiveDirectoryOutputReference) ResetLdapSigningEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetLdapSigningEnabled",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappAccountActiveDirectoryOutputReference) ResetLocalNfsUsersWithLdapAllowed() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetLocalNfsUsersWithLdapAllowed",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetappAccountActiveDirectoryOutputReference) ResetOrganizationalUnit() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOrganizationalUnit",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappAccountActiveDirectoryOutputReference) ResetServerRootCaCertificate() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetServerRootCaCertificate",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappAccountActiveDirectoryOutputReference) ResetSiteName() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSiteName",
 		nil, // no parameters
 	)
 }

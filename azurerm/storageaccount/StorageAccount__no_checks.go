@@ -183,6 +183,10 @@ func (j *jsiiProxy_StorageAccount) validateSetDefaultToOauthAuthenticationParame
 	return nil
 }
 
+func (j *jsiiProxy_StorageAccount) validateSetDnsEndpointTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccount) validateSetEdgeZoneParameters(val *string) error {
 	return nil
 }

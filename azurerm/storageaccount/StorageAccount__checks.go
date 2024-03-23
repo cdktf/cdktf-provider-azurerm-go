@@ -580,6 +580,14 @@ func (j *jsiiProxy_StorageAccount) validateSetDefaultToOauthAuthenticationParame
 	return nil
 }
 
+func (j *jsiiProxy_StorageAccount) validateSetDnsEndpointTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccount) validateSetEdgeZoneParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

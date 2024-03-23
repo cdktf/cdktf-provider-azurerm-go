@@ -79,6 +79,10 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validatePutCatalogInf
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validatePutCopyComputeScaleParameters(value *DataFactoryIntegrationRuntimeAzureSsisCopyComputeScale) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validatePutCustomSetupScriptParameters(value *DataFactoryIntegrationRuntimeAzureSsisCustomSetupScript) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validatePutExpressVne
 }
 
 func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validatePutPackageStoreParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) validatePutPipelineExternalComputeScaleParameters(value *DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScale) error {
 	return nil
 }
 

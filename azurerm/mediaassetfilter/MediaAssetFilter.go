@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/media_asset_filter azurerm_media_asset_filter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/media_asset_filter azurerm_media_asset_filter}.
 type MediaAssetFilter interface {
 	cdktf.TerraformResource
 	AssetId() *string
@@ -452,7 +452,7 @@ func (j *jsiiProxy_MediaAssetFilter) TrackSelectionInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/media_asset_filter azurerm_media_asset_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/media_asset_filter azurerm_media_asset_filter} Resource.
 func NewMediaAssetFilter(scope constructs.Construct, id *string, config *MediaAssetFilterConfig) MediaAssetFilter {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewMediaAssetFilter(scope constructs.Construct, id *string, config *MediaAs
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.96.0/docs/resources/media_asset_filter azurerm_media_asset_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/media_asset_filter azurerm_media_asset_filter} Resource.
 func NewMediaAssetFilter_Override(m MediaAssetFilter, scope constructs.Construct, id *string, config *MediaAssetFilterConfig) {
 	_init_.Initialize()
 
