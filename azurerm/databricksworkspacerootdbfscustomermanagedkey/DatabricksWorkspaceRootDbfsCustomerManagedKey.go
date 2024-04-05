@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/databricks_workspace_root_dbfs_customer_managed_key azurerm_databricks_workspace_root_dbfs_customer_managed_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/databricks_workspace_root_dbfs_customer_managed_key azurerm_databricks_workspace_root_dbfs_customer_managed_key}.
 type DatabricksWorkspaceRootDbfsCustomerManagedKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,6 +42,9 @@ type DatabricksWorkspaceRootDbfsCustomerManagedKey interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KeyVaultId() *string
+	SetKeyVaultId(val *string)
+	KeyVaultIdInput() *string
 	KeyVaultKeyId() *string
 	SetKeyVaultKeyId(val *string)
 	KeyVaultKeyIdInput() *string
@@ -117,6 +120,7 @@ type DatabricksWorkspaceRootDbfsCustomerManagedKey interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DatabricksWorkspaceRootDbfsCustomerManagedKeyTimeouts)
 	ResetId()
+	ResetKeyVaultId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -234,6 +238,26 @@ func (j *jsiiProxy_DatabricksWorkspaceRootDbfsCustomerManagedKey) IdInput() *str
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksWorkspaceRootDbfsCustomerManagedKey) KeyVaultId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksWorkspaceRootDbfsCustomerManagedKey) KeyVaultIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultIdInput",
 		&returns,
 	)
 	return returns
@@ -380,7 +404,7 @@ func (j *jsiiProxy_DatabricksWorkspaceRootDbfsCustomerManagedKey) WorkspaceIdInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/databricks_workspace_root_dbfs_customer_managed_key azurerm_databricks_workspace_root_dbfs_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/databricks_workspace_root_dbfs_customer_managed_key azurerm_databricks_workspace_root_dbfs_customer_managed_key} Resource.
 func NewDatabricksWorkspaceRootDbfsCustomerManagedKey(scope constructs.Construct, id *string, config *DatabricksWorkspaceRootDbfsCustomerManagedKeyConfig) DatabricksWorkspaceRootDbfsCustomerManagedKey {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewDatabricksWorkspaceRootDbfsCustomerManagedKey(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/databricks_workspace_root_dbfs_customer_managed_key azurerm_databricks_workspace_root_dbfs_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/databricks_workspace_root_dbfs_customer_managed_key azurerm_databricks_workspace_root_dbfs_customer_managed_key} Resource.
 func NewDatabricksWorkspaceRootDbfsCustomerManagedKey_Override(d DatabricksWorkspaceRootDbfsCustomerManagedKey, scope constructs.Construct, id *string, config *DatabricksWorkspaceRootDbfsCustomerManagedKeyConfig) {
 	_init_.Initialize()
 
@@ -454,6 +478,17 @@ func (j *jsiiProxy_DatabricksWorkspaceRootDbfsCustomerManagedKey)SetId(val *stri
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabricksWorkspaceRootDbfsCustomerManagedKey)SetKeyVaultId(val *string) {
+	if err := j.validateSetKeyVaultIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyVaultId",
 		val,
 	)
 }
@@ -878,6 +913,14 @@ func (d *jsiiProxy_DatabricksWorkspaceRootDbfsCustomerManagedKey) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksWorkspaceRootDbfsCustomerManagedKey) ResetKeyVaultId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKeyVaultId",
 		nil, // no parameters
 	)
 }

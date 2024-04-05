@@ -431,6 +431,14 @@ func (j *jsiiProxy_DatabricksWorkspace) validateSetLocationParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DatabricksWorkspace) validateSetManagedDiskCmkKeyVaultIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabricksWorkspace) validateSetManagedDiskCmkKeyVaultKeyIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -460,6 +468,14 @@ func (j *jsiiProxy_DatabricksWorkspace) validateSetManagedDiskCmkRotationToLates
 }
 
 func (j *jsiiProxy_DatabricksWorkspace) validateSetManagedResourceGroupNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabricksWorkspace) validateSetManagedServicesCmkKeyVaultIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

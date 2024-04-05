@@ -164,6 +164,10 @@ func init() {
 		reflect.TypeOf((*AzurermProviderFeaturesPostgresqlFlexibleServer)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService",
+		reflect.TypeOf((*AzurermProviderFeaturesRecoveryService)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup",
 		reflect.TypeOf((*AzurermProviderFeaturesResourceGroup)(nil)).Elem(),
 	)

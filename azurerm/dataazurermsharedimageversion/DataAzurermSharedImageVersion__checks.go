@@ -290,6 +290,14 @@ func (j *jsiiProxy_DataAzurermSharedImageVersion) validateSetSortVersionsBySemve
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermSharedImageVersion) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAzurermSharedImageVersionParameters(scope constructs.Construct, id *string, config *DataAzurermSharedImageVersionConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

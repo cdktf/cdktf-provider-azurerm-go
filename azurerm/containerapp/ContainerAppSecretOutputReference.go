@@ -30,8 +30,14 @@ type ContainerAppSecretOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Identity() *string
+	SetIdentity(val *string)
+	IdentityInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	KeyVaultSecretId() *string
+	SetKeyVaultSecretId(val *string)
+	KeyVaultSecretIdInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -70,6 +76,9 @@ type ContainerAppSecretOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIdentity()
+	ResetKeyVaultSecretId()
+	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -125,11 +134,51 @@ func (j *jsiiProxy_ContainerAppSecretOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerAppSecretOutputReference) Identity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppSecretOutputReference) IdentityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerAppSecretOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppSecretOutputReference) KeyVaultSecretId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultSecretId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppSecretOutputReference) KeyVaultSecretIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultSecretIdInput",
 		&returns,
 	)
 	return returns
@@ -245,6 +294,17 @@ func (j *jsiiProxy_ContainerAppSecretOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
+func (j *jsiiProxy_ContainerAppSecretOutputReference)SetIdentity(val *string) {
+	if err := j.validateSetIdentityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identity",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContainerAppSecretOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -252,6 +312,17 @@ func (j *jsiiProxy_ContainerAppSecretOutputReference)SetInternalValue(val interf
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAppSecretOutputReference)SetKeyVaultSecretId(val *string) {
+	if err := j.validateSetKeyVaultSecretIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyVaultSecretId",
 		val,
 	)
 }
@@ -484,6 +555,30 @@ func (c *jsiiProxy_ContainerAppSecretOutputReference) InterpolationForAttribute(
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerAppSecretOutputReference) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppSecretOutputReference) ResetKeyVaultSecretId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKeyVaultSecretId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppSecretOutputReference) ResetValue() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetValue",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerAppSecretOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

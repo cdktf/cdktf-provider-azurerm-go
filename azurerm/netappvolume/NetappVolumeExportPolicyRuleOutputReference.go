@@ -35,6 +35,24 @@ type NetappVolumeExportPolicyRuleOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Kerberos5IReadOnlyEnabled() interface{}
+	SetKerberos5IReadOnlyEnabled(val interface{})
+	Kerberos5IReadOnlyEnabledInput() interface{}
+	Kerberos5IReadWriteEnabled() interface{}
+	SetKerberos5IReadWriteEnabled(val interface{})
+	Kerberos5IReadWriteEnabledInput() interface{}
+	Kerberos5PReadOnlyEnabled() interface{}
+	SetKerberos5PReadOnlyEnabled(val interface{})
+	Kerberos5PReadOnlyEnabledInput() interface{}
+	Kerberos5PReadWriteEnabled() interface{}
+	SetKerberos5PReadWriteEnabled(val interface{})
+	Kerberos5PReadWriteEnabledInput() interface{}
+	Kerberos5ReadOnlyEnabled() interface{}
+	SetKerberos5ReadOnlyEnabled(val interface{})
+	Kerberos5ReadOnlyEnabledInput() interface{}
+	Kerberos5ReadWriteEnabled() interface{}
+	SetKerberos5ReadWriteEnabled(val interface{})
+	Kerberos5ReadWriteEnabledInput() interface{}
 	ProtocolsEnabled() *[]*string
 	SetProtocolsEnabled(val *[]*string)
 	ProtocolsEnabledInput() *[]*string
@@ -82,6 +100,12 @@ type NetappVolumeExportPolicyRuleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetKerberos5IReadOnlyEnabled()
+	ResetKerberos5IReadWriteEnabled()
+	ResetKerberos5PReadOnlyEnabled()
+	ResetKerberos5PReadWriteEnabled()
+	ResetKerberos5ReadOnlyEnabled()
+	ResetKerberos5ReadWriteEnabled()
 	ResetProtocolsEnabled()
 	ResetRootAccessEnabled()
 	ResetUnixReadOnly()
@@ -166,6 +190,126 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) Kerberos5IReadOnlyEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kerberos5IReadOnlyEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) Kerberos5IReadOnlyEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kerberos5IReadOnlyEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) Kerberos5IReadWriteEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kerberos5IReadWriteEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) Kerberos5IReadWriteEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kerberos5IReadWriteEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) Kerberos5PReadOnlyEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kerberos5PReadOnlyEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) Kerberos5PReadOnlyEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kerberos5PReadOnlyEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) Kerberos5PReadWriteEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kerberos5PReadWriteEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) Kerberos5PReadWriteEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kerberos5PReadWriteEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) Kerberos5ReadOnlyEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kerberos5ReadOnlyEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) Kerberos5ReadOnlyEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kerberos5ReadOnlyEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) Kerberos5ReadWriteEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kerberos5ReadWriteEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) Kerberos5ReadWriteEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kerberos5ReadWriteEnabledInput",
 		&returns,
 	)
 	return returns
@@ -359,6 +503,72 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference)SetInternalValue(
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference)SetKerberos5IReadOnlyEnabled(val interface{}) {
+	if err := j.validateSetKerberos5IReadOnlyEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kerberos5IReadOnlyEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference)SetKerberos5IReadWriteEnabled(val interface{}) {
+	if err := j.validateSetKerberos5IReadWriteEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kerberos5IReadWriteEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference)SetKerberos5PReadOnlyEnabled(val interface{}) {
+	if err := j.validateSetKerberos5PReadOnlyEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kerberos5PReadOnlyEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference)SetKerberos5PReadWriteEnabled(val interface{}) {
+	if err := j.validateSetKerberos5PReadWriteEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kerberos5PReadWriteEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference)SetKerberos5ReadOnlyEnabled(val interface{}) {
+	if err := j.validateSetKerberos5ReadOnlyEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kerberos5ReadOnlyEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference)SetKerberos5ReadWriteEnabled(val interface{}) {
+	if err := j.validateSetKerberos5ReadWriteEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kerberos5ReadWriteEnabled",
 		val,
 	)
 }
@@ -624,6 +834,54 @@ func (n *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) InterpolationFor
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) ResetKerberos5IReadOnlyEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetKerberos5IReadOnlyEnabled",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) ResetKerberos5IReadWriteEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetKerberos5IReadWriteEnabled",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) ResetKerberos5PReadOnlyEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetKerberos5PReadOnlyEnabled",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) ResetKerberos5PReadWriteEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetKerberos5PReadWriteEnabled",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) ResetKerberos5ReadOnlyEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetKerberos5ReadOnlyEnabled",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) ResetKerberos5ReadWriteEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetKerberos5ReadWriteEnabled",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) ResetProtocolsEnabled() {

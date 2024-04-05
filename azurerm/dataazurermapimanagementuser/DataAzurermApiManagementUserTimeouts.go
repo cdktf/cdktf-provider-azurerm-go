@@ -5,7 +5,7 @@ package dataazurermapimanagementuser
 
 
 type DataAzurermApiManagementUserTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/data-sources/api_management_user#read DataAzurermApiManagementUser#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/data-sources/api_management_user#read DataAzurermApiManagementUser#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

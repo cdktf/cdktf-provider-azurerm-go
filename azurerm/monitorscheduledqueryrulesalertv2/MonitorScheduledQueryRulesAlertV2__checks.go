@@ -249,6 +249,17 @@ func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2) validatePutCriteriaParamet
 	return nil
 }
 
+func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2) validatePutIdentityParameters(value *MonitorScheduledQueryRulesAlertV2Identity) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2) validatePutTimeoutsParameters(value *MonitorScheduledQueryRulesAlertV2Timeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

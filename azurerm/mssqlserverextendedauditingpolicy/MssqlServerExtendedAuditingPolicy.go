@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/mssql_server_extended_auditing_policy azurerm_mssql_server_extended_auditing_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/mssql_server_extended_auditing_policy azurerm_mssql_server_extended_auditing_policy}.
 type MssqlServerExtendedAuditingPolicy interface {
 	cdktf.TerraformResource
+	AuditActionsAndGroups() *[]*string
+	SetAuditActionsAndGroups(val *[]*string)
+	AuditActionsAndGroupsInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -54,6 +57,9 @@ type MssqlServerExtendedAuditingPolicy interface {
 	LogMonitoringEnabledInput() interface{}
 	// The tree node.
 	Node() constructs.Node
+	PredicateExpression() *string
+	SetPredicateExpression(val *string)
+	PredicateExpressionInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -134,12 +140,14 @@ type MssqlServerExtendedAuditingPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *MssqlServerExtendedAuditingPolicyTimeouts)
+	ResetAuditActionsAndGroups()
 	ResetEnabled()
 	ResetId()
 	ResetLogMonitoringEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPredicateExpression()
 	ResetRetentionInDays()
 	ResetStorageAccountAccessKey()
 	ResetStorageAccountAccessKeyIsSecondary()
@@ -162,6 +170,26 @@ type MssqlServerExtendedAuditingPolicy interface {
 // The jsii proxy struct for MssqlServerExtendedAuditingPolicy
 type jsiiProxy_MssqlServerExtendedAuditingPolicy struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_MssqlServerExtendedAuditingPolicy) AuditActionsAndGroups() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditActionsAndGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlServerExtendedAuditingPolicy) AuditActionsAndGroupsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditActionsAndGroupsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_MssqlServerExtendedAuditingPolicy) CdktfStack() cdktf.TerraformStack {
@@ -319,6 +347,26 @@ func (j *jsiiProxy_MssqlServerExtendedAuditingPolicy) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlServerExtendedAuditingPolicy) PredicateExpression() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"predicateExpression",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlServerExtendedAuditingPolicy) PredicateExpressionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"predicateExpressionInput",
 		&returns,
 	)
 	return returns
@@ -525,7 +573,7 @@ func (j *jsiiProxy_MssqlServerExtendedAuditingPolicy) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/mssql_server_extended_auditing_policy azurerm_mssql_server_extended_auditing_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/mssql_server_extended_auditing_policy azurerm_mssql_server_extended_auditing_policy} Resource.
 func NewMssqlServerExtendedAuditingPolicy(scope constructs.Construct, id *string, config *MssqlServerExtendedAuditingPolicyConfig) MssqlServerExtendedAuditingPolicy {
 	_init_.Initialize()
 
@@ -543,7 +591,7 @@ func NewMssqlServerExtendedAuditingPolicy(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/mssql_server_extended_auditing_policy azurerm_mssql_server_extended_auditing_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/mssql_server_extended_auditing_policy azurerm_mssql_server_extended_auditing_policy} Resource.
 func NewMssqlServerExtendedAuditingPolicy_Override(m MssqlServerExtendedAuditingPolicy, scope constructs.Construct, id *string, config *MssqlServerExtendedAuditingPolicyConfig) {
 	_init_.Initialize()
 
@@ -551,6 +599,17 @@ func NewMssqlServerExtendedAuditingPolicy_Override(m MssqlServerExtendedAuditing
 		"@cdktf/provider-azurerm.mssqlServerExtendedAuditingPolicy.MssqlServerExtendedAuditingPolicy",
 		[]interface{}{scope, id, config},
 		m,
+	)
+}
+
+func (j *jsiiProxy_MssqlServerExtendedAuditingPolicy)SetAuditActionsAndGroups(val *[]*string) {
+	if err := j.validateSetAuditActionsAndGroupsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auditActionsAndGroups",
+		val,
 	)
 }
 
@@ -632,6 +691,17 @@ func (j *jsiiProxy_MssqlServerExtendedAuditingPolicy)SetLogMonitoringEnabled(val
 	_jsii_.Set(
 		j,
 		"logMonitoringEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlServerExtendedAuditingPolicy)SetPredicateExpression(val *string) {
+	if err := j.validateSetPredicateExpressionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"predicateExpression",
 		val,
 	)
 }
@@ -1085,6 +1155,14 @@ func (m *jsiiProxy_MssqlServerExtendedAuditingPolicy) PutTimeouts(value *MssqlSe
 	)
 }
 
+func (m *jsiiProxy_MssqlServerExtendedAuditingPolicy) ResetAuditActionsAndGroups() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAuditActionsAndGroups",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MssqlServerExtendedAuditingPolicy) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1113,6 +1191,14 @@ func (m *jsiiProxy_MssqlServerExtendedAuditingPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlServerExtendedAuditingPolicy) ResetPredicateExpression() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPredicateExpression",
 		nil, // no parameters
 	)
 }

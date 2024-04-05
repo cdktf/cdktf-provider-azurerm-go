@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/data-sources/shared_image_version azurerm_shared_image_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/data-sources/shared_image_version azurerm_shared_image_version}.
 type DataAzurermSharedImageVersion interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -70,7 +70,9 @@ type DataAzurermSharedImageVersion interface {
 	SortVersionsBySemver() interface{}
 	SetSortVersionsBySemver(val interface{})
 	SortVersionsBySemverInput() interface{}
-	Tags() cdktf.StringMap
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	TargetRegion() DataAzurermSharedImageVersionTargetRegionList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -111,6 +113,7 @@ type DataAzurermSharedImageVersion interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSortVersionsBySemver()
+	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -411,11 +414,21 @@ func (j *jsiiProxy_DataAzurermSharedImageVersion) SortVersionsBySemverInput() in
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermSharedImageVersion) Tags() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataAzurermSharedImageVersion) Tags() *map[string]*string {
+	var returns *map[string]*string
 	_jsii_.Get(
 		j,
 		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermSharedImageVersion) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
 		&returns,
 	)
 	return returns
@@ -482,7 +495,7 @@ func (j *jsiiProxy_DataAzurermSharedImageVersion) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/data-sources/shared_image_version azurerm_shared_image_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/data-sources/shared_image_version azurerm_shared_image_version} Data Source.
 func NewDataAzurermSharedImageVersion(scope constructs.Construct, id *string, config *DataAzurermSharedImageVersionConfig) DataAzurermSharedImageVersion {
 	_init_.Initialize()
 
@@ -500,7 +513,7 @@ func NewDataAzurermSharedImageVersion(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/data-sources/shared_image_version azurerm_shared_image_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/data-sources/shared_image_version azurerm_shared_image_version} Data Source.
 func NewDataAzurermSharedImageVersion_Override(d DataAzurermSharedImageVersion, scope constructs.Construct, id *string, config *DataAzurermSharedImageVersionConfig) {
 	_init_.Initialize()
 
@@ -619,6 +632,17 @@ func (j *jsiiProxy_DataAzurermSharedImageVersion)SetSortVersionsBySemver(val int
 	_jsii_.Set(
 		j,
 		"sortVersionsBySemver",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzurermSharedImageVersion)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -939,6 +963,14 @@ func (d *jsiiProxy_DataAzurermSharedImageVersion) ResetSortVersionsBySemver() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSortVersionsBySemver",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermSharedImageVersion) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
 		nil, // no parameters
 	)
 }

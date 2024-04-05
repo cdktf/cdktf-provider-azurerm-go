@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot}.
 type BotServiceAzureBot interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CmkKeyVaultKeyUrl() *string
+	SetCmkKeyVaultKeyUrl(val *string)
+	CmkKeyVaultKeyUrlInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -170,6 +173,7 @@ type BotServiceAzureBot interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *BotServiceAzureBotTimeouts)
+	ResetCmkKeyVaultKeyUrl()
 	ResetDeveloperAppInsightsApiKey()
 	ResetDeveloperAppInsightsApplicationId()
 	ResetDeveloperAppInsightsKey()
@@ -213,6 +217,26 @@ func (j *jsiiProxy_BotServiceAzureBot) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotServiceAzureBot) CmkKeyVaultKeyUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cmkKeyVaultKeyUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotServiceAzureBot) CmkKeyVaultKeyUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cmkKeyVaultKeyUrlInput",
 		&returns,
 	)
 	return returns
@@ -809,7 +833,7 @@ func (j *jsiiProxy_BotServiceAzureBot) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot} Resource.
 func NewBotServiceAzureBot(scope constructs.Construct, id *string, config *BotServiceAzureBotConfig) BotServiceAzureBot {
 	_init_.Initialize()
 
@@ -827,7 +851,7 @@ func NewBotServiceAzureBot(scope constructs.Construct, id *string, config *BotSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot} Resource.
 func NewBotServiceAzureBot_Override(b BotServiceAzureBot, scope constructs.Construct, id *string, config *BotServiceAzureBotConfig) {
 	_init_.Initialize()
 
@@ -835,6 +859,17 @@ func NewBotServiceAzureBot_Override(b BotServiceAzureBot, scope constructs.Const
 		"@cdktf/provider-azurerm.botServiceAzureBot.BotServiceAzureBot",
 		[]interface{}{scope, id, config},
 		b,
+	)
+}
+
+func (j *jsiiProxy_BotServiceAzureBot)SetCmkKeyVaultKeyUrl(val *string) {
+	if err := j.validateSetCmkKeyVaultKeyUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cmkKeyVaultKeyUrl",
+		val,
 	)
 }
 
@@ -1498,6 +1533,14 @@ func (b *jsiiProxy_BotServiceAzureBot) PutTimeouts(value *BotServiceAzureBotTime
 		b,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BotServiceAzureBot) ResetCmkKeyVaultKeyUrl() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCmkKeyVaultKeyUrl",
+		nil, // no parameters
 	)
 }
 

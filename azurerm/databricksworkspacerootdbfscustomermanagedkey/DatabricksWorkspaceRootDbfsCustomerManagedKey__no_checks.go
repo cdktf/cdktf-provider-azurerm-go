@@ -107,6 +107,10 @@ func (j *jsiiProxy_DatabricksWorkspaceRootDbfsCustomerManagedKey) validateSetIdP
 	return nil
 }
 
+func (j *jsiiProxy_DatabricksWorkspaceRootDbfsCustomerManagedKey) validateSetKeyVaultIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabricksWorkspaceRootDbfsCustomerManagedKey) validateSetKeyVaultKeyIdParameters(val *string) error {
 	return nil
 }

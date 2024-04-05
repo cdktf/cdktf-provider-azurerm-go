@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/databricks_workspace azurerm_databricks_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/databricks_workspace azurerm_databricks_workspace}.
 type DatabricksWorkspace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type DatabricksWorkspace interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	ManagedDiskCmkKeyVaultId() *string
+	SetManagedDiskCmkKeyVaultId(val *string)
+	ManagedDiskCmkKeyVaultIdInput() *string
 	ManagedDiskCmkKeyVaultKeyId() *string
 	SetManagedDiskCmkKeyVaultKeyId(val *string)
 	ManagedDiskCmkKeyVaultKeyIdInput() *string
@@ -72,6 +75,9 @@ type DatabricksWorkspace interface {
 	ManagedResourceGroupName() *string
 	SetManagedResourceGroupName(val *string)
 	ManagedResourceGroupNameInput() *string
+	ManagedServicesCmkKeyVaultId() *string
+	SetManagedServicesCmkKeyVaultId(val *string)
+	ManagedServicesCmkKeyVaultIdInput() *string
 	ManagedServicesCmkKeyVaultKeyId() *string
 	SetManagedServicesCmkKeyVaultKeyId(val *string)
 	ManagedServicesCmkKeyVaultKeyIdInput() *string
@@ -166,9 +172,11 @@ type DatabricksWorkspace interface {
 	ResetId()
 	ResetInfrastructureEncryptionEnabled()
 	ResetLoadBalancerBackendAddressPoolId()
+	ResetManagedDiskCmkKeyVaultId()
 	ResetManagedDiskCmkKeyVaultKeyId()
 	ResetManagedDiskCmkRotationToLatestVersionEnabled()
 	ResetManagedResourceGroupName()
+	ResetManagedServicesCmkKeyVaultId()
 	ResetManagedServicesCmkKeyVaultKeyId()
 	ResetNetworkSecurityGroupRulesRequired()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -415,6 +423,26 @@ func (j *jsiiProxy_DatabricksWorkspace) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DatabricksWorkspace) ManagedDiskCmkKeyVaultId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedDiskCmkKeyVaultId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksWorkspace) ManagedDiskCmkKeyVaultIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedDiskCmkKeyVaultIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabricksWorkspace) ManagedDiskCmkKeyVaultKeyId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -490,6 +518,26 @@ func (j *jsiiProxy_DatabricksWorkspace) ManagedResourceGroupNameInput() *string 
 	_jsii_.Get(
 		j,
 		"managedResourceGroupNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksWorkspace) ManagedServicesCmkKeyVaultId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedServicesCmkKeyVaultId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksWorkspace) ManagedServicesCmkKeyVaultIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedServicesCmkKeyVaultIdInput",
 		&returns,
 	)
 	return returns
@@ -756,7 +804,7 @@ func (j *jsiiProxy_DatabricksWorkspace) WorkspaceUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/databricks_workspace azurerm_databricks_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/databricks_workspace azurerm_databricks_workspace} Resource.
 func NewDatabricksWorkspace(scope constructs.Construct, id *string, config *DatabricksWorkspaceConfig) DatabricksWorkspace {
 	_init_.Initialize()
 
@@ -774,7 +822,7 @@ func NewDatabricksWorkspace(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/databricks_workspace azurerm_databricks_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/databricks_workspace azurerm_databricks_workspace} Resource.
 func NewDatabricksWorkspace_Override(d DatabricksWorkspace, scope constructs.Construct, id *string, config *DatabricksWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -889,6 +937,17 @@ func (j *jsiiProxy_DatabricksWorkspace)SetLocation(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DatabricksWorkspace)SetManagedDiskCmkKeyVaultId(val *string) {
+	if err := j.validateSetManagedDiskCmkKeyVaultIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedDiskCmkKeyVaultId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabricksWorkspace)SetManagedDiskCmkKeyVaultKeyId(val *string) {
 	if err := j.validateSetManagedDiskCmkKeyVaultKeyIdParameters(val); err != nil {
 		panic(err)
@@ -918,6 +977,17 @@ func (j *jsiiProxy_DatabricksWorkspace)SetManagedResourceGroupName(val *string) 
 	_jsii_.Set(
 		j,
 		"managedResourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabricksWorkspace)SetManagedServicesCmkKeyVaultId(val *string) {
+	if err := j.validateSetManagedServicesCmkKeyVaultIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedServicesCmkKeyVaultId",
 		val,
 	)
 }
@@ -1433,6 +1503,14 @@ func (d *jsiiProxy_DatabricksWorkspace) ResetLoadBalancerBackendAddressPoolId() 
 	)
 }
 
+func (d *jsiiProxy_DatabricksWorkspace) ResetManagedDiskCmkKeyVaultId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetManagedDiskCmkKeyVaultId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabricksWorkspace) ResetManagedDiskCmkKeyVaultKeyId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1453,6 +1531,14 @@ func (d *jsiiProxy_DatabricksWorkspace) ResetManagedResourceGroupName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetManagedResourceGroupName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksWorkspace) ResetManagedServicesCmkKeyVaultId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetManagedServicesCmkKeyVaultId",
 		nil, // no parameters
 	)
 }

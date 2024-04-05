@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/spring_cloud_build_pack_binding azurerm_spring_cloud_build_pack_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/spring_cloud_build_pack_binding azurerm_spring_cloud_build_pack_binding}.
 type SpringCloudBuildPackBinding interface {
 	cdktf.TerraformResource
 	BindingType() *string
@@ -428,7 +428,7 @@ func (j *jsiiProxy_SpringCloudBuildPackBinding) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/spring_cloud_build_pack_binding azurerm_spring_cloud_build_pack_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/spring_cloud_build_pack_binding azurerm_spring_cloud_build_pack_binding} Resource.
 func NewSpringCloudBuildPackBinding(scope constructs.Construct, id *string, config *SpringCloudBuildPackBindingConfig) SpringCloudBuildPackBinding {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewSpringCloudBuildPackBinding(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/spring_cloud_build_pack_binding azurerm_spring_cloud_build_pack_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/spring_cloud_build_pack_binding azurerm_spring_cloud_build_pack_binding} Resource.
 func NewSpringCloudBuildPackBinding_Override(s SpringCloudBuildPackBinding, scope constructs.Construct, id *string, config *SpringCloudBuildPackBindingConfig) {
 	_init_.Initialize()
 

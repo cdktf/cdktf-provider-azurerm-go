@@ -67,6 +67,30 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) validateSetInter
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) validateSetKerberos5IReadOnlyEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) validateSetKerberos5IReadWriteEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) validateSetKerberos5PReadOnlyEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) validateSetKerberos5PReadWriteEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) validateSetKerberos5ReadOnlyEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) validateSetKerberos5ReadWriteEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolumeExportPolicyRuleOutputReference) validateSetProtocolsEnabledParameters(val *[]*string) error {
 	return nil
 }

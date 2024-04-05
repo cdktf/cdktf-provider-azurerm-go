@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/monitor_scheduled_query_rules_alert_v2 azurerm_monitor_scheduled_query_rules_alert_v2}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/monitor_scheduled_query_rules_alert_v2 azurerm_monitor_scheduled_query_rules_alert_v2}.
 type MonitorScheduledQueryRulesAlertV2 interface {
 	cdktf.TerraformResource
 	Action() MonitorScheduledQueryRulesAlertV2ActionOutputReference
@@ -61,6 +61,8 @@ type MonitorScheduledQueryRulesAlertV2 interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() MonitorScheduledQueryRulesAlertV2IdentityOutputReference
+	IdentityInput() *MonitorScheduledQueryRulesAlertV2Identity
 	IdInput() *string
 	IsALegacyLogAnalyticsRule() cdktf.IResolvable
 	IsWorkspaceAlertsStorageConfigured() cdktf.IResolvable
@@ -169,6 +171,7 @@ type MonitorScheduledQueryRulesAlertV2 interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAction(value *MonitorScheduledQueryRulesAlertV2Action)
 	PutCriteria(value interface{})
+	PutIdentity(value *MonitorScheduledQueryRulesAlertV2Identity)
 	PutTimeouts(value *MonitorScheduledQueryRulesAlertV2Timeouts)
 	ResetAction()
 	ResetAutoMitigationEnabled()
@@ -177,6 +180,7 @@ type MonitorScheduledQueryRulesAlertV2 interface {
 	ResetEnabled()
 	ResetEvaluationFrequency()
 	ResetId()
+	ResetIdentity()
 	ResetMuteActionsAfterAlertDuration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -440,6 +444,26 @@ func (j *jsiiProxy_MonitorScheduledQueryRulesAlertV2) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorScheduledQueryRulesAlertV2) Identity() MonitorScheduledQueryRulesAlertV2IdentityOutputReference {
+	var returns MonitorScheduledQueryRulesAlertV2IdentityOutputReference
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorScheduledQueryRulesAlertV2) IdentityInput() *MonitorScheduledQueryRulesAlertV2Identity {
+	var returns *MonitorScheduledQueryRulesAlertV2Identity
+	_jsii_.Get(
+		j,
+		"identityInput",
 		&returns,
 	)
 	return returns
@@ -816,7 +840,7 @@ func (j *jsiiProxy_MonitorScheduledQueryRulesAlertV2) WorkspaceAlertsStorageEnab
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/monitor_scheduled_query_rules_alert_v2 azurerm_monitor_scheduled_query_rules_alert_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/monitor_scheduled_query_rules_alert_v2 azurerm_monitor_scheduled_query_rules_alert_v2} Resource.
 func NewMonitorScheduledQueryRulesAlertV2(scope constructs.Construct, id *string, config *MonitorScheduledQueryRulesAlertV2Config) MonitorScheduledQueryRulesAlertV2 {
 	_init_.Initialize()
 
@@ -834,7 +858,7 @@ func NewMonitorScheduledQueryRulesAlertV2(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/monitor_scheduled_query_rules_alert_v2 azurerm_monitor_scheduled_query_rules_alert_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/monitor_scheduled_query_rules_alert_v2 azurerm_monitor_scheduled_query_rules_alert_v2} Resource.
 func NewMonitorScheduledQueryRulesAlertV2_Override(m MonitorScheduledQueryRulesAlertV2, scope constructs.Construct, id *string, config *MonitorScheduledQueryRulesAlertV2Config) {
 	_init_.Initialize()
 
@@ -1486,6 +1510,17 @@ func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2) PutCriteria(value interfac
 	)
 }
 
+func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2) PutIdentity(value *MonitorScheduledQueryRulesAlertV2Identity) {
+	if err := m.validatePutIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putIdentity",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2) PutTimeouts(value *MonitorScheduledQueryRulesAlertV2Timeouts) {
 	if err := m.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1549,6 +1584,14 @@ func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2) ResetId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetIdentity",
 		nil, // no parameters
 	)
 }

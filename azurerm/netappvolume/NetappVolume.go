@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/netapp_volume azurerm_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/netapp_volume azurerm_netapp_volume}.
 type NetappVolume interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -60,6 +60,9 @@ type NetappVolume interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KerberosEnabled() interface{}
+	SetKerberosEnabled(val interface{})
+	KerberosEnabledInput() interface{}
 	KeyVaultPrivateEndpointId() *string
 	SetKeyVaultPrivateEndpointId(val *string)
 	KeyVaultPrivateEndpointIdInput() *string
@@ -107,6 +110,9 @@ type NetappVolume interface {
 	SmbAccessBasedEnumerationEnabled() interface{}
 	SetSmbAccessBasedEnumerationEnabled(val interface{})
 	SmbAccessBasedEnumerationEnabledInput() interface{}
+	SmbContinuousAvailabilityEnabled() interface{}
+	SetSmbContinuousAvailabilityEnabled(val interface{})
+	SmbContinuousAvailabilityEnabledInput() interface{}
 	SmbNonBrowsableEnabled() interface{}
 	SetSmbNonBrowsableEnabled(val interface{})
 	SmbNonBrowsableEnabledInput() interface{}
@@ -193,6 +199,7 @@ type NetappVolume interface {
 	ResetEncryptionKeySource()
 	ResetExportPolicyRule()
 	ResetId()
+	ResetKerberosEnabled()
 	ResetKeyVaultPrivateEndpointId()
 	ResetNetworkFeatures()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -201,6 +208,7 @@ type NetappVolume interface {
 	ResetProtocols()
 	ResetSecurityStyle()
 	ResetSmbAccessBasedEnumerationEnabled()
+	ResetSmbContinuousAvailabilityEnabled()
 	ResetSmbNonBrowsableEnabled()
 	ResetSnapshotDirectoryVisible()
 	ResetTags()
@@ -460,6 +468,26 @@ func (j *jsiiProxy_NetappVolume) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) KerberosEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kerberosEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) KerberosEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kerberosEnabledInput",
 		&returns,
 	)
 	return returns
@@ -725,6 +753,26 @@ func (j *jsiiProxy_NetappVolume) SmbAccessBasedEnumerationEnabledInput() interfa
 	return returns
 }
 
+func (j *jsiiProxy_NetappVolume) SmbContinuousAvailabilityEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"smbContinuousAvailabilityEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) SmbContinuousAvailabilityEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"smbContinuousAvailabilityEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetappVolume) SmbNonBrowsableEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -936,7 +984,7 @@ func (j *jsiiProxy_NetappVolume) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
 func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolumeConfig) NetappVolume {
 	_init_.Initialize()
 
@@ -954,7 +1002,7 @@ func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolum
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
 func NewNetappVolume_Override(n NetappVolume, scope constructs.Construct, id *string, config *NetappVolumeConfig) {
 	_init_.Initialize()
 
@@ -1054,6 +1102,17 @@ func (j *jsiiProxy_NetappVolume)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappVolume)SetKerberosEnabled(val interface{}) {
+	if err := j.validateSetKerberosEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kerberosEnabled",
 		val,
 	)
 }
@@ -1194,6 +1253,17 @@ func (j *jsiiProxy_NetappVolume)SetSmbAccessBasedEnumerationEnabled(val interfac
 	_jsii_.Set(
 		j,
 		"smbAccessBasedEnumerationEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappVolume)SetSmbContinuousAvailabilityEnabled(val interface{}) {
+	if err := j.validateSetSmbContinuousAvailabilityEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"smbContinuousAvailabilityEnabled",
 		val,
 	)
 }
@@ -1739,6 +1809,14 @@ func (n *jsiiProxy_NetappVolume) ResetId() {
 	)
 }
 
+func (n *jsiiProxy_NetappVolume) ResetKerberosEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetKerberosEnabled",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetappVolume) ResetKeyVaultPrivateEndpointId() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1783,6 +1861,14 @@ func (n *jsiiProxy_NetappVolume) ResetSmbAccessBasedEnumerationEnabled() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetSmbAccessBasedEnumerationEnabled",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolume) ResetSmbContinuousAvailabilityEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSmbContinuousAvailabilityEnabled",
 		nil, // no parameters
 	)
 }

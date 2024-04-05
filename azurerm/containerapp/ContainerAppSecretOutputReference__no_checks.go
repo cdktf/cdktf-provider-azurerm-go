@@ -59,7 +59,15 @@ func (j *jsiiProxy_ContainerAppSecretOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppSecretOutputReference) validateSetIdentityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppSecretOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerAppSecretOutputReference) validateSetKeyVaultSecretIdParameters(val *string) error {
 	return nil
 }
 

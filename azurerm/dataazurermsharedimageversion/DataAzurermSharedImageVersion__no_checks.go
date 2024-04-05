@@ -107,6 +107,10 @@ func (j *jsiiProxy_DataAzurermSharedImageVersion) validateSetSortVersionsBySemve
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermSharedImageVersion) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewDataAzurermSharedImageVersionParameters(scope constructs.Construct, id *string, config *DataAzurermSharedImageVersionConfig) error {
 	return nil
 }

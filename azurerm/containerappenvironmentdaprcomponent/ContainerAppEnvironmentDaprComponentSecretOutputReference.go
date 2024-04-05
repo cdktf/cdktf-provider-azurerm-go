@@ -30,8 +30,14 @@ type ContainerAppEnvironmentDaprComponentSecretOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Identity() *string
+	SetIdentity(val *string)
+	IdentityInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	KeyVaultSecretId() *string
+	SetKeyVaultSecretId(val *string)
+	KeyVaultSecretIdInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -70,6 +76,9 @@ type ContainerAppEnvironmentDaprComponentSecretOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIdentity()
+	ResetKeyVaultSecretId()
+	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -125,11 +134,51 @@ func (j *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) Fq
 	return returns
 }
 
+func (j *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) Identity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) IdentityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) KeyVaultSecretId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultSecretId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) KeyVaultSecretIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultSecretIdInput",
 		&returns,
 	)
 	return returns
@@ -245,6 +294,17 @@ func (j *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference)Set
 	)
 }
 
+func (j *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference)SetIdentity(val *string) {
+	if err := j.validateSetIdentityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identity",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -252,6 +312,17 @@ func (j *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference)Set
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference)SetKeyVaultSecretId(val *string) {
+	if err := j.validateSetKeyVaultSecretIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyVaultSecretId",
 		val,
 	)
 }
@@ -484,6 +555,30 @@ func (c *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) In
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) ResetKeyVaultSecretId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKeyVaultSecretId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) ResetValue() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetValue",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

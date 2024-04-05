@@ -95,6 +95,10 @@ func validateMssqlServerExtendedAuditingPolicy_IsTerraformResourceParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_MssqlServerExtendedAuditingPolicy) validateSetAuditActionsAndGroupsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlServerExtendedAuditingPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (j *jsiiProxy_MssqlServerExtendedAuditingPolicy) validateSetLifecycleParame
 }
 
 func (j *jsiiProxy_MssqlServerExtendedAuditingPolicy) validateSetLogMonitoringEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MssqlServerExtendedAuditingPolicy) validateSetPredicateExpressionParameters(val *string) error {
 	return nil
 }
 

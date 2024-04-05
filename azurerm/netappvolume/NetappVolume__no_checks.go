@@ -135,6 +135,10 @@ func (j *jsiiProxy_NetappVolume) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolume) validateSetKerberosEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolume) validateSetKeyVaultPrivateEndpointIdParameters(val *string) error {
 	return nil
 }
@@ -180,6 +184,10 @@ func (j *jsiiProxy_NetappVolume) validateSetServiceLevelParameters(val *string) 
 }
 
 func (j *jsiiProxy_NetappVolume) validateSetSmbAccessBasedEnumerationEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappVolume) validateSetSmbContinuousAvailabilityEnabledParameters(val interface{}) error {
 	return nil
 }
 

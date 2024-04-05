@@ -219,6 +219,10 @@ func (j *jsiiProxy_MssqlDatabase) validateSetSampleNameParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_MssqlDatabase) validateSetSecondaryTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlDatabase) validateSetServerIdParameters(val *string) error {
 	return nil
 }

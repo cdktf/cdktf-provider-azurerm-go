@@ -83,6 +83,10 @@ func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2) validatePutCriteriaParamet
 	return nil
 }
 
+func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2) validatePutIdentityParameters(value *MonitorScheduledQueryRulesAlertV2Identity) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorScheduledQueryRulesAlertV2) validatePutTimeoutsParameters(value *MonitorScheduledQueryRulesAlertV2Timeouts) error {
 	return nil
 }

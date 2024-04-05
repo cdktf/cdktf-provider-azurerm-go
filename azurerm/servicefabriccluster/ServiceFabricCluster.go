@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/service_fabric_cluster azurerm_service_fabric_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/service_fabric_cluster azurerm_service_fabric_cluster}.
 type ServiceFabricCluster interface {
 	cdktf.TerraformResource
 	AddOnFeatures() *[]*string
@@ -889,7 +889,7 @@ func (j *jsiiProxy_ServiceFabricCluster) VmssZonalUpgradeModeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/service_fabric_cluster azurerm_service_fabric_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/service_fabric_cluster azurerm_service_fabric_cluster} Resource.
 func NewServiceFabricCluster(scope constructs.Construct, id *string, config *ServiceFabricClusterConfig) ServiceFabricCluster {
 	_init_.Initialize()
 
@@ -907,7 +907,7 @@ func NewServiceFabricCluster(scope constructs.Construct, id *string, config *Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/service_fabric_cluster azurerm_service_fabric_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/service_fabric_cluster azurerm_service_fabric_cluster} Resource.
 func NewServiceFabricCluster_Override(s ServiceFabricCluster, scope constructs.Construct, id *string, config *ServiceFabricClusterConfig) {
 	_init_.Initialize()
 

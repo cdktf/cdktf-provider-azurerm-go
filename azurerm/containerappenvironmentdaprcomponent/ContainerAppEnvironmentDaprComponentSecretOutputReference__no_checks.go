@@ -59,7 +59,15 @@ func (j *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) validateSetIdentityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerAppEnvironmentDaprComponentSecretOutputReference) validateSetKeyVaultSecretIdParameters(val *string) error {
 	return nil
 }
 

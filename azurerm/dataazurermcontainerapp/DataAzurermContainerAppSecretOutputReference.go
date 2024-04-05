@@ -30,8 +30,10 @@ type DataAzurermContainerAppSecretOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Identity() *string
 	InternalValue() *DataAzurermContainerAppSecret
 	SetInternalValue(val *DataAzurermContainerAppSecret)
+	KeyVaultSecretId() *string
 	Name() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -121,11 +123,31 @@ func (j *jsiiProxy_DataAzurermContainerAppSecretOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermContainerAppSecretOutputReference) Identity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermContainerAppSecretOutputReference) InternalValue() *DataAzurermContainerAppSecret {
 	var returns *DataAzurermContainerAppSecret
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermContainerAppSecretOutputReference) KeyVaultSecretId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultSecretId",
 		&returns,
 	)
 	return returns

@@ -669,6 +669,14 @@ func (j *jsiiProxy_MssqlDatabase) validateSetSampleNameParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_MssqlDatabase) validateSetSecondaryTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MssqlDatabase) validateSetServerIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

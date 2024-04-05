@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/mssql_database azurerm_mssql_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/mssql_database azurerm_mssql_database}.
 type MssqlDatabase interface {
 	cdktf.TerraformResource
 	AutoPauseDelayInMinutes() *float64
@@ -127,6 +127,9 @@ type MssqlDatabase interface {
 	SampleName() *string
 	SetSampleName(val *string)
 	SampleNameInput() *string
+	SecondaryType() *string
+	SetSecondaryType(val *string)
+	SecondaryTypeInput() *string
 	ServerId() *string
 	SetServerId(val *string)
 	ServerIdInput() *string
@@ -239,6 +242,7 @@ type MssqlDatabase interface {
 	ResetRestoreLongTermRetentionBackupId()
 	ResetRestorePointInTime()
 	ResetSampleName()
+	ResetSecondaryType()
 	ResetShortTermRetentionPolicy()
 	ResetSkuName()
 	ResetStorageAccountType()
@@ -897,6 +901,26 @@ func (j *jsiiProxy_MssqlDatabase) SampleNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MssqlDatabase) SecondaryType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlDatabase) SecondaryTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MssqlDatabase) ServerId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1148,7 +1172,7 @@ func (j *jsiiProxy_MssqlDatabase) ZoneRedundantInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/mssql_database azurerm_mssql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/mssql_database azurerm_mssql_database} Resource.
 func NewMssqlDatabase(scope constructs.Construct, id *string, config *MssqlDatabaseConfig) MssqlDatabase {
 	_init_.Initialize()
 
@@ -1166,7 +1190,7 @@ func NewMssqlDatabase(scope constructs.Construct, id *string, config *MssqlDatab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/mssql_database azurerm_mssql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/mssql_database azurerm_mssql_database} Resource.
 func NewMssqlDatabase_Override(m MssqlDatabase, scope constructs.Construct, id *string, config *MssqlDatabaseConfig) {
 	_init_.Initialize()
 
@@ -1483,6 +1507,17 @@ func (j *jsiiProxy_MssqlDatabase)SetSampleName(val *string) {
 	_jsii_.Set(
 		j,
 		"sampleName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlDatabase)SetSecondaryType(val *string) {
+	if err := j.validateSetSecondaryTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secondaryType",
 		val,
 	)
 }
@@ -2190,6 +2225,14 @@ func (m *jsiiProxy_MssqlDatabase) ResetSampleName() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetSampleName",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlDatabase) ResetSecondaryType() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSecondaryType",
 		nil, // no parameters
 	)
 }

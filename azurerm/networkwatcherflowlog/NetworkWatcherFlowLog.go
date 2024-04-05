@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/network_watcher_flow_log azurerm_network_watcher_flow_log}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/network_watcher_flow_log azurerm_network_watcher_flow_log}.
 type NetworkWatcherFlowLog interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -591,7 +591,7 @@ func (j *jsiiProxy_NetworkWatcherFlowLog) VersionInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/network_watcher_flow_log azurerm_network_watcher_flow_log} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/network_watcher_flow_log azurerm_network_watcher_flow_log} Resource.
 func NewNetworkWatcherFlowLog(scope constructs.Construct, id *string, config *NetworkWatcherFlowLogConfig) NetworkWatcherFlowLog {
 	_init_.Initialize()
 
@@ -609,7 +609,7 @@ func NewNetworkWatcherFlowLog(scope constructs.Construct, id *string, config *Ne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.97.1/docs/resources/network_watcher_flow_log azurerm_network_watcher_flow_log} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/network_watcher_flow_log azurerm_network_watcher_flow_log} Resource.
 func NewNetworkWatcherFlowLog_Override(n NetworkWatcherFlowLog, scope constructs.Construct, id *string, config *NetworkWatcherFlowLogConfig) {
 	_init_.Initialize()
 

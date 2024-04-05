@@ -95,6 +95,10 @@ func validateBotServiceAzureBot_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_BotServiceAzureBot) validateSetCmkKeyVaultKeyUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotServiceAzureBot) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
