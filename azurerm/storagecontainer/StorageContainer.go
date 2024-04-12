@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/storage_container azurerm_storage_container}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/storage_container azurerm_storage_container}.
 type StorageContainer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -30,10 +30,16 @@ type StorageContainer interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultEncryptionScope() *string
+	SetDefaultEncryptionScope(val *string)
+	DefaultEncryptionScopeInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionScopeOverrideEnabled() interface{}
+	SetEncryptionScopeOverrideEnabled(val interface{})
+	EncryptionScopeOverrideEnabledInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -126,6 +132,8 @@ type StorageContainer interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *StorageContainerTimeouts)
 	ResetContainerAccessType()
+	ResetDefaultEncryptionScope()
+	ResetEncryptionScopeOverrideEnabled()
 	ResetId()
 	ResetMetadata()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -210,11 +218,51 @@ func (j *jsiiProxy_StorageContainer) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StorageContainer) DefaultEncryptionScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultEncryptionScope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageContainer) DefaultEncryptionScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultEncryptionScopeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageContainer) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageContainer) EncryptionScopeOverrideEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"encryptionScopeOverrideEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageContainer) EncryptionScopeOverrideEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"encryptionScopeOverrideEnabledInput",
 		&returns,
 	)
 	return returns
@@ -461,7 +509,7 @@ func (j *jsiiProxy_StorageContainer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/storage_container azurerm_storage_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/storage_container azurerm_storage_container} Resource.
 func NewStorageContainer(scope constructs.Construct, id *string, config *StorageContainerConfig) StorageContainer {
 	_init_.Initialize()
 
@@ -479,7 +527,7 @@ func NewStorageContainer(scope constructs.Construct, id *string, config *Storage
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/storage_container azurerm_storage_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/storage_container azurerm_storage_container} Resource.
 func NewStorageContainer_Override(s StorageContainer, scope constructs.Construct, id *string, config *StorageContainerConfig) {
 	_init_.Initialize()
 
@@ -523,10 +571,32 @@ func (j *jsiiProxy_StorageContainer)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_StorageContainer)SetDefaultEncryptionScope(val *string) {
+	if err := j.validateSetDefaultEncryptionScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultEncryptionScope",
+		val,
+	)
+}
+
 func (j *jsiiProxy_StorageContainer)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageContainer)SetEncryptionScopeOverrideEnabled(val interface{}) {
+	if err := j.validateSetEncryptionScopeOverrideEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encryptionScopeOverrideEnabled",
 		val,
 	)
 }
@@ -981,6 +1051,22 @@ func (s *jsiiProxy_StorageContainer) ResetContainerAccessType() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetContainerAccessType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageContainer) ResetDefaultEncryptionScope() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultEncryptionScope",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageContainer) ResetEncryptionScopeOverrideEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEncryptionScopeOverrideEnabled",
 		nil, // no parameters
 	)
 }

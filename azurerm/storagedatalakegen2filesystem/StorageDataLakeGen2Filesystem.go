@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/storage_data_lake_gen2_filesystem azurerm_storage_data_lake_gen2_filesystem}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/storage_data_lake_gen2_filesystem azurerm_storage_data_lake_gen2_filesystem}.
 type StorageDataLakeGen2Filesystem interface {
 	cdktf.TerraformResource
 	Ace() StorageDataLakeGen2FilesystemAceList
@@ -29,6 +29,9 @@ type StorageDataLakeGen2Filesystem interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultEncryptionScope() *string
+	SetDefaultEncryptionScope(val *string)
+	DefaultEncryptionScopeInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -129,6 +132,7 @@ type StorageDataLakeGen2Filesystem interface {
 	PutAce(value interface{})
 	PutTimeouts(value *StorageDataLakeGen2FilesystemTimeouts)
 	ResetAce()
+	ResetDefaultEncryptionScope()
 	ResetGroup()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -210,6 +214,26 @@ func (j *jsiiProxy_StorageDataLakeGen2Filesystem) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageDataLakeGen2Filesystem) DefaultEncryptionScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultEncryptionScope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageDataLakeGen2Filesystem) DefaultEncryptionScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultEncryptionScopeInput",
 		&returns,
 	)
 	return returns
@@ -476,7 +500,7 @@ func (j *jsiiProxy_StorageDataLakeGen2Filesystem) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/storage_data_lake_gen2_filesystem azurerm_storage_data_lake_gen2_filesystem} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/storage_data_lake_gen2_filesystem azurerm_storage_data_lake_gen2_filesystem} Resource.
 func NewStorageDataLakeGen2Filesystem(scope constructs.Construct, id *string, config *StorageDataLakeGen2FilesystemConfig) StorageDataLakeGen2Filesystem {
 	_init_.Initialize()
 
@@ -494,7 +518,7 @@ func NewStorageDataLakeGen2Filesystem(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/storage_data_lake_gen2_filesystem azurerm_storage_data_lake_gen2_filesystem} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/storage_data_lake_gen2_filesystem azurerm_storage_data_lake_gen2_filesystem} Resource.
 func NewStorageDataLakeGen2Filesystem_Override(s StorageDataLakeGen2Filesystem, scope constructs.Construct, id *string, config *StorageDataLakeGen2FilesystemConfig) {
 	_init_.Initialize()
 
@@ -523,6 +547,17 @@ func (j *jsiiProxy_StorageDataLakeGen2Filesystem)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageDataLakeGen2Filesystem)SetDefaultEncryptionScope(val *string) {
+	if err := j.validateSetDefaultEncryptionScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultEncryptionScope",
 		val,
 	)
 }
@@ -1018,6 +1053,14 @@ func (s *jsiiProxy_StorageDataLakeGen2Filesystem) ResetAce() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAce",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageDataLakeGen2Filesystem) ResetDefaultEncryptionScope() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultEncryptionScope",
 		nil, // no parameters
 	)
 }

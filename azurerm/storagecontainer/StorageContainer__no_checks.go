@@ -107,6 +107,14 @@ func (j *jsiiProxy_StorageContainer) validateSetCountParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_StorageContainer) validateSetDefaultEncryptionScopeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageContainer) validateSetEncryptionScopeOverrideEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageContainer) validateSetIdParameters(val *string) error {
 	return nil
 }

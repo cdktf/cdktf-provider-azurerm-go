@@ -107,6 +107,10 @@ func (j *jsiiProxy_StorageDataLakeGen2Filesystem) validateSetCountParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_StorageDataLakeGen2Filesystem) validateSetDefaultEncryptionScopeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageDataLakeGen2Filesystem) validateSetGroupParameters(val *string) error {
 	return nil
 }

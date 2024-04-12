@@ -380,6 +380,14 @@ func (j *jsiiProxy_StorageBlob) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_StorageBlob) validateSetEncryptionScopeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_StorageBlob) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

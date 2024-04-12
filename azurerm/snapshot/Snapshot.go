@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/snapshot azurerm_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/snapshot azurerm_snapshot}.
 type Snapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,6 +63,9 @@ type Snapshot interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkAccessPolicy() *string
+	SetNetworkAccessPolicy(val *string)
+	NetworkAccessPolicyInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -73,6 +76,9 @@ type Snapshot interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicNetworkAccessEnabled() interface{}
+	SetPublicNetworkAccessEnabled(val interface{})
+	PublicNetworkAccessEnabledInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -148,9 +154,11 @@ type Snapshot interface {
 	ResetEncryptionSettings()
 	ResetId()
 	ResetIncrementalEnabled()
+	ResetNetworkAccessPolicy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublicNetworkAccessEnabled()
 	ResetSourceResourceId()
 	ResetSourceUri()
 	ResetStorageAccountId()
@@ -404,6 +412,26 @@ func (j *jsiiProxy_Snapshot) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Snapshot) NetworkAccessPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAccessPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Snapshot) NetworkAccessPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAccessPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Snapshot) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -429,6 +457,26 @@ func (j *jsiiProxy_Snapshot) Provisioners() *[]interface{} {
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Snapshot) PublicNetworkAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Snapshot) PublicNetworkAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabledInput",
 		&returns,
 	)
 	return returns
@@ -605,7 +653,7 @@ func (j *jsiiProxy_Snapshot) TrustedLaunchEnabled() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/snapshot azurerm_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/snapshot azurerm_snapshot} Resource.
 func NewSnapshot(scope constructs.Construct, id *string, config *SnapshotConfig) Snapshot {
 	_init_.Initialize()
 
@@ -623,7 +671,7 @@ func NewSnapshot(scope constructs.Construct, id *string, config *SnapshotConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/snapshot azurerm_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/snapshot azurerm_snapshot} Resource.
 func NewSnapshot_Override(s Snapshot, scope constructs.Construct, id *string, config *SnapshotConfig) {
 	_init_.Initialize()
 
@@ -749,6 +797,17 @@ func (j *jsiiProxy_Snapshot)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Snapshot)SetNetworkAccessPolicy(val *string) {
+	if err := j.validateSetNetworkAccessPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkAccessPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Snapshot)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -764,6 +823,17 @@ func (j *jsiiProxy_Snapshot)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Snapshot)SetPublicNetworkAccessEnabled(val interface{}) {
+	if err := j.validateSetPublicNetworkAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccessEnabled",
 		val,
 	)
 }
@@ -1230,10 +1300,26 @@ func (s *jsiiProxy_Snapshot) ResetIncrementalEnabled() {
 	)
 }
 
+func (s *jsiiProxy_Snapshot) ResetNetworkAccessPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNetworkAccessPolicy",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_Snapshot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Snapshot) ResetPublicNetworkAccessEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPublicNetworkAccessEnabled",
 		nil, // no parameters
 	)
 }

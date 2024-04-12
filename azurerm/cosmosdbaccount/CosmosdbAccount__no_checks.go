@@ -143,6 +143,10 @@ func (j *jsiiProxy_CosmosdbAccount) validateSetAnalyticalStorageEnabledParameter
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbAccount) validateSetAutomaticFailoverEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbAccount) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -168,6 +172,10 @@ func (j *jsiiProxy_CosmosdbAccount) validateSetEnableFreeTierParameters(val inte
 }
 
 func (j *jsiiProxy_CosmosdbAccount) validateSetEnableMultipleWriteLocationsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CosmosdbAccount) validateSetFreeTierEnabledParameters(val interface{}) error {
 	return nil
 }
 
@@ -208,6 +216,10 @@ func (j *jsiiProxy_CosmosdbAccount) validateSetMinimalTlsVersionParameters(val *
 }
 
 func (j *jsiiProxy_CosmosdbAccount) validateSetMongoServerVersionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CosmosdbAccount) validateSetMultipleWriteLocationsEnabledParameters(val interface{}) error {
 	return nil
 }
 

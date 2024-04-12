@@ -15,6 +15,7 @@ func init() {
 		reflect.TypeOf((*DataAzurermCosmosdbAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "automaticFailoverEnabled", GoGetter: "AutomaticFailoverEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "capabilities", GoGetter: "Capabilities"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionStrings", GoGetter: "ConnectionStrings"},
@@ -28,6 +29,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "endpoint", GoGetter: "Endpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberProperty{JsiiProperty: "freeTierEnabled", GoGetter: "FreeTierEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
 			_jsii_.MemberProperty{JsiiProperty: "geoLocation", GoGetter: "GeoLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
@@ -48,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kind", GoGetter: "Kind"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
+			_jsii_.MemberProperty{JsiiProperty: "multipleWriteLocationsEnabled", GoGetter: "MultipleWriteLocationsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

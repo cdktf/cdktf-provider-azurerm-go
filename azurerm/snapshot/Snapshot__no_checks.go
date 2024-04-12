@@ -135,7 +135,15 @@ func (j *jsiiProxy_Snapshot) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Snapshot) validateSetNetworkAccessPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Snapshot) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Snapshot) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
 	return nil
 }
 

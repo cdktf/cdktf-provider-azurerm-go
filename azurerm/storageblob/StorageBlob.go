@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/storage_blob azurerm_storage_blob}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/storage_blob azurerm_storage_blob}.
 type StorageBlob interface {
 	cdktf.TerraformResource
 	AccessTier() *string
@@ -43,6 +43,9 @@ type StorageBlob interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionScope() *string
+	SetEncryptionScope(val *string)
+	EncryptionScopeInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -157,6 +160,7 @@ type StorageBlob interface {
 	ResetCacheControl()
 	ResetContentMd5()
 	ResetContentType()
+	ResetEncryptionScope()
 	ResetId()
 	ResetMetadata()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -311,6 +315,26 @@ func (j *jsiiProxy_StorageBlob) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBlob) EncryptionScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionScope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBlob) EncryptionScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionScopeInput",
 		&returns,
 	)
 	return returns
@@ -677,7 +701,7 @@ func (j *jsiiProxy_StorageBlob) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/storage_blob azurerm_storage_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/storage_blob azurerm_storage_blob} Resource.
 func NewStorageBlob(scope constructs.Construct, id *string, config *StorageBlobConfig) StorageBlob {
 	_init_.Initialize()
 
@@ -695,7 +719,7 @@ func NewStorageBlob(scope constructs.Construct, id *string, config *StorageBlobC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/storage_blob azurerm_storage_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/storage_blob azurerm_storage_blob} Resource.
 func NewStorageBlob_Override(s StorageBlob, scope constructs.Construct, id *string, config *StorageBlobConfig) {
 	_init_.Initialize()
 
@@ -776,6 +800,17 @@ func (j *jsiiProxy_StorageBlob)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBlob)SetEncryptionScope(val *string) {
+	if err := j.validateSetEncryptionScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encryptionScope",
 		val,
 	)
 }
@@ -1331,6 +1366,14 @@ func (s *jsiiProxy_StorageBlob) ResetContentType() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetContentType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBlob) ResetEncryptionScope() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEncryptionScope",
 		nil, // no parameters
 	)
 }

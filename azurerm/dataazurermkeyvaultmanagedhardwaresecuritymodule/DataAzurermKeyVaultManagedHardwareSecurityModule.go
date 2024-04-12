@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/data-sources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module}.
 type DataAzurermKeyVaultManagedHardwareSecurityModule interface {
 	cdktf.TerraformDataSource
 	AdminObjectIds() *[]*string
@@ -423,7 +423,7 @@ func (j *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModule) TimeoutsInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/data-sources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module} Data Source.
 func NewDataAzurermKeyVaultManagedHardwareSecurityModule(scope constructs.Construct, id *string, config *DataAzurermKeyVaultManagedHardwareSecurityModuleConfig) DataAzurermKeyVaultManagedHardwareSecurityModule {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewDataAzurermKeyVaultManagedHardwareSecurityModule(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/data-sources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module} Data Source.
 func NewDataAzurermKeyVaultManagedHardwareSecurityModule_Override(d DataAzurermKeyVaultManagedHardwareSecurityModule, scope constructs.Construct, id *string, config *DataAzurermKeyVaultManagedHardwareSecurityModuleConfig) {
 	_init_.Initialize()
 

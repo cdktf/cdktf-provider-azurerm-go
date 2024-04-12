@@ -5,7 +5,7 @@ package devtestschedule
 
 
 type DevTestScheduleHourlyRecurrence struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/dev_test_schedule#minute DevTestSchedule#minute}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/dev_test_schedule#minute DevTestSchedule#minute}.
 	Minute *float64 `field:"required" json:"minute" yaml:"minute"`
 }
 

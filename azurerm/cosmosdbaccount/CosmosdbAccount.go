@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account}.
 type CosmosdbAccount interface {
 	cdktf.TerraformResource
 	AccessKeyMetadataWritesEnabled() interface{}
@@ -23,6 +23,9 @@ type CosmosdbAccount interface {
 	SetAnalyticalStorageEnabled(val interface{})
 	AnalyticalStorageEnabledInput() interface{}
 	AnalyticalStorageInput() *CosmosdbAccountAnalyticalStorage
+	AutomaticFailoverEnabled() interface{}
+	SetAutomaticFailoverEnabled(val interface{})
+	AutomaticFailoverEnabledInput() interface{}
 	Backup() CosmosdbAccountBackupOutputReference
 	BackupInput() *CosmosdbAccountBackup
 	Capabilities() CosmosdbAccountCapabilitiesList
@@ -72,6 +75,9 @@ type CosmosdbAccount interface {
 	SetForEach(val cdktf.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
+	FreeTierEnabled() interface{}
+	SetFreeTierEnabled(val interface{})
+	FreeTierEnabledInput() interface{}
 	// Experimental.
 	FriendlyUniqueId() *string
 	GeoLocation() CosmosdbAccountGeoLocationList
@@ -109,6 +115,9 @@ type CosmosdbAccount interface {
 	MongoServerVersion() *string
 	SetMongoServerVersion(val *string)
 	MongoServerVersionInput() *string
+	MultipleWriteLocationsEnabled() interface{}
+	SetMultipleWriteLocationsEnabled(val interface{})
+	MultipleWriteLocationsEnabledInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -228,6 +237,7 @@ type CosmosdbAccount interface {
 	ResetAccessKeyMetadataWritesEnabled()
 	ResetAnalyticalStorage()
 	ResetAnalyticalStorageEnabled()
+	ResetAutomaticFailoverEnabled()
 	ResetBackup()
 	ResetCapabilities()
 	ResetCapacity()
@@ -237,6 +247,7 @@ type CosmosdbAccount interface {
 	ResetEnableAutomaticFailover()
 	ResetEnableFreeTier()
 	ResetEnableMultipleWriteLocations()
+	ResetFreeTierEnabled()
 	ResetId()
 	ResetIdentity()
 	ResetIpRangeFilter()
@@ -246,6 +257,7 @@ type CosmosdbAccount interface {
 	ResetLocalAuthenticationDisabled()
 	ResetMinimalTlsVersion()
 	ResetMongoServerVersion()
+	ResetMultipleWriteLocationsEnabled()
 	ResetNetworkAclBypassForAzureServices()
 	ResetNetworkAclBypassIds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -330,6 +342,26 @@ func (j *jsiiProxy_CosmosdbAccount) AnalyticalStorageInput() *CosmosdbAccountAna
 	_jsii_.Get(
 		j,
 		"analyticalStorageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccount) AutomaticFailoverEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticFailoverEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccount) AutomaticFailoverEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticFailoverEnabledInput",
 		&returns,
 	)
 	return returns
@@ -625,6 +657,26 @@ func (j *jsiiProxy_CosmosdbAccount) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CosmosdbAccount) FreeTierEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"freeTierEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccount) FreeTierEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"freeTierEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CosmosdbAccount) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -860,6 +912,26 @@ func (j *jsiiProxy_CosmosdbAccount) MongoServerVersionInput() *string {
 	_jsii_.Get(
 		j,
 		"mongoServerVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccount) MultipleWriteLocationsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multipleWriteLocationsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccount) MultipleWriteLocationsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multipleWriteLocationsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1296,7 +1368,7 @@ func (j *jsiiProxy_CosmosdbAccount) WriteEndpoints() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
 func NewCosmosdbAccount(scope constructs.Construct, id *string, config *CosmosdbAccountConfig) CosmosdbAccount {
 	_init_.Initialize()
 
@@ -1314,7 +1386,7 @@ func NewCosmosdbAccount(scope constructs.Construct, id *string, config *Cosmosdb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
 func NewCosmosdbAccount_Override(c CosmosdbAccount, scope constructs.Construct, id *string, config *CosmosdbAccountConfig) {
 	_init_.Initialize()
 
@@ -1343,6 +1415,17 @@ func (j *jsiiProxy_CosmosdbAccount)SetAnalyticalStorageEnabled(val interface{}) 
 	_jsii_.Set(
 		j,
 		"analyticalStorageEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CosmosdbAccount)SetAutomaticFailoverEnabled(val interface{}) {
+	if err := j.validateSetAutomaticFailoverEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"automaticFailoverEnabled",
 		val,
 	)
 }
@@ -1436,6 +1519,17 @@ func (j *jsiiProxy_CosmosdbAccount)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CosmosdbAccount)SetFreeTierEnabled(val interface{}) {
+	if err := j.validateSetFreeTierEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"freeTierEnabled",
 		val,
 	)
 }
@@ -1546,6 +1640,17 @@ func (j *jsiiProxy_CosmosdbAccount)SetMongoServerVersion(val *string) {
 	_jsii_.Set(
 		j,
 		"mongoServerVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CosmosdbAccount)SetMultipleWriteLocationsEnabled(val interface{}) {
+	if err := j.validateSetMultipleWriteLocationsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"multipleWriteLocationsEnabled",
 		val,
 	)
 }
@@ -2155,6 +2260,14 @@ func (c *jsiiProxy_CosmosdbAccount) ResetAnalyticalStorageEnabled() {
 	)
 }
 
+func (c *jsiiProxy_CosmosdbAccount) ResetAutomaticFailoverEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAutomaticFailoverEnabled",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CosmosdbAccount) ResetBackup() {
 	_jsii_.InvokeVoid(
 		c,
@@ -2227,6 +2340,14 @@ func (c *jsiiProxy_CosmosdbAccount) ResetEnableMultipleWriteLocations() {
 	)
 }
 
+func (c *jsiiProxy_CosmosdbAccount) ResetFreeTierEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFreeTierEnabled",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CosmosdbAccount) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
@@ -2295,6 +2416,14 @@ func (c *jsiiProxy_CosmosdbAccount) ResetMongoServerVersion() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetMongoServerVersion",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CosmosdbAccount) ResetMultipleWriteLocationsEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMultipleWriteLocationsEnabled",
 		nil, // no parameters
 	)
 }

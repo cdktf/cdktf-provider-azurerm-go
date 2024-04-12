@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/data-sources/storage_blob azurerm_storage_blob}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/storage_blob azurerm_storage_blob}.
 type DataAzurermStorageBlob interface {
 	cdktf.TerraformDataSource
 	AccessTier() *string
@@ -30,6 +30,7 @@ type DataAzurermStorageBlob interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionScope() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -191,6 +192,16 @@ func (j *jsiiProxy_DataAzurermStorageBlob) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageBlob) EncryptionScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionScope",
 		&returns,
 	)
 	return returns
@@ -437,7 +448,7 @@ func (j *jsiiProxy_DataAzurermStorageBlob) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/data-sources/storage_blob azurerm_storage_blob} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/storage_blob azurerm_storage_blob} Data Source.
 func NewDataAzurermStorageBlob(scope constructs.Construct, id *string, config *DataAzurermStorageBlobConfig) DataAzurermStorageBlob {
 	_init_.Initialize()
 
@@ -455,7 +466,7 @@ func NewDataAzurermStorageBlob(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/data-sources/storage_blob azurerm_storage_blob} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/storage_blob azurerm_storage_blob} Data Source.
 func NewDataAzurermStorageBlob_Override(d DataAzurermStorageBlob, scope constructs.Construct, id *string, config *DataAzurermStorageBlobConfig) {
 	_init_.Initialize()
 

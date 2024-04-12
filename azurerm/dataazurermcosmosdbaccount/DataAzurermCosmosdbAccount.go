@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/data-sources/cosmosdb_account azurerm_cosmosdb_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/cosmosdb_account azurerm_cosmosdb_account}.
 type DataAzurermCosmosdbAccount interface {
 	cdktf.TerraformDataSource
+	AutomaticFailoverEnabled() cdktf.IResolvable
 	Capabilities() DataAzurermCosmosdbAccountCapabilitiesList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -40,6 +41,7 @@ type DataAzurermCosmosdbAccount interface {
 	SetForEach(val cdktf.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
+	FreeTierEnabled() cdktf.IResolvable
 	// Experimental.
 	FriendlyUniqueId() *string
 	GeoLocation() DataAzurermCosmosdbAccountGeoLocationList
@@ -55,6 +57,7 @@ type DataAzurermCosmosdbAccount interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Location() *string
+	MultipleWriteLocationsEnabled() cdktf.IResolvable
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -142,6 +145,16 @@ type DataAzurermCosmosdbAccount interface {
 // The jsii proxy struct for DataAzurermCosmosdbAccount
 type jsiiProxy_DataAzurermCosmosdbAccount struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataAzurermCosmosdbAccount) AutomaticFailoverEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"automaticFailoverEnabled",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAzurermCosmosdbAccount) Capabilities() DataAzurermCosmosdbAccountCapabilitiesList {
@@ -274,6 +287,16 @@ func (j *jsiiProxy_DataAzurermCosmosdbAccount) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermCosmosdbAccount) FreeTierEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"freeTierEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermCosmosdbAccount) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -369,6 +392,16 @@ func (j *jsiiProxy_DataAzurermCosmosdbAccount) Location() *string {
 	_jsii_.Get(
 		j,
 		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermCosmosdbAccount) MultipleWriteLocationsEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"multipleWriteLocationsEnabled",
 		&returns,
 	)
 	return returns
@@ -665,7 +698,7 @@ func (j *jsiiProxy_DataAzurermCosmosdbAccount) WriteEndpoints() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/data-sources/cosmosdb_account azurerm_cosmosdb_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/cosmosdb_account azurerm_cosmosdb_account} Data Source.
 func NewDataAzurermCosmosdbAccount(scope constructs.Construct, id *string, config *DataAzurermCosmosdbAccountConfig) DataAzurermCosmosdbAccount {
 	_init_.Initialize()
 
@@ -683,7 +716,7 @@ func NewDataAzurermCosmosdbAccount(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/data-sources/cosmosdb_account azurerm_cosmosdb_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/cosmosdb_account azurerm_cosmosdb_account} Data Source.
 func NewDataAzurermCosmosdbAccount_Override(d DataAzurermCosmosdbAccount, scope constructs.Construct, id *string, config *DataAzurermCosmosdbAccountConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/firewall azurerm_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/firewall azurerm_firewall}.
 type Firewall interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -689,7 +689,7 @@ func (j *jsiiProxy_Firewall) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/firewall azurerm_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/firewall azurerm_firewall} Resource.
 func NewFirewall(scope constructs.Construct, id *string, config *FirewallConfig) Firewall {
 	_init_.Initialize()
 
@@ -707,7 +707,7 @@ func NewFirewall(scope constructs.Construct, id *string, config *FirewallConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/firewall azurerm_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/firewall azurerm_firewall} Resource.
 func NewFirewall_Override(f Firewall, scope constructs.Construct, id *string, config *FirewallConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/data-sources/storage_container azurerm_storage_container}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/storage_container azurerm_storage_container}.
 type DataAzurermStorageContainer interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -24,10 +24,12 @@ type DataAzurermStorageContainer interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultEncryptionScope() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionScopeOverrideEnabled() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -162,11 +164,31 @@ func (j *jsiiProxy_DataAzurermStorageContainer) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermStorageContainer) DefaultEncryptionScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultEncryptionScope",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermStorageContainer) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageContainer) EncryptionScopeOverrideEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"encryptionScopeOverrideEnabled",
 		&returns,
 	)
 	return returns
@@ -403,7 +425,7 @@ func (j *jsiiProxy_DataAzurermStorageContainer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/data-sources/storage_container azurerm_storage_container} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/storage_container azurerm_storage_container} Data Source.
 func NewDataAzurermStorageContainer(scope constructs.Construct, id *string, config *DataAzurermStorageContainerConfig) DataAzurermStorageContainer {
 	_init_.Initialize()
 
@@ -421,7 +443,7 @@ func NewDataAzurermStorageContainer(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/data-sources/storage_container azurerm_storage_container} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/storage_container azurerm_storage_container} Data Source.
 func NewDataAzurermStorageContainer_Override(d DataAzurermStorageContainer, scope constructs.Construct, id *string, config *DataAzurermStorageContainerConfig) {
 	_init_.Initialize()
 

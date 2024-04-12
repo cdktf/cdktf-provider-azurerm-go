@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/palo_alto_local_rulestack_certificate azurerm_palo_alto_local_rulestack_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/palo_alto_local_rulestack_certificate azurerm_palo_alto_local_rulestack_certificate}.
 type PaloAltoLocalRulestackCertificate interface {
 	cdktf.TerraformResource
 	AuditComment() *string
@@ -476,7 +476,7 @@ func (j *jsiiProxy_PaloAltoLocalRulestackCertificate) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/palo_alto_local_rulestack_certificate azurerm_palo_alto_local_rulestack_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/palo_alto_local_rulestack_certificate azurerm_palo_alto_local_rulestack_certificate} Resource.
 func NewPaloAltoLocalRulestackCertificate(scope constructs.Construct, id *string, config *PaloAltoLocalRulestackCertificateConfig) PaloAltoLocalRulestackCertificate {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewPaloAltoLocalRulestackCertificate(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/palo_alto_local_rulestack_certificate azurerm_palo_alto_local_rulestack_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/palo_alto_local_rulestack_certificate azurerm_palo_alto_local_rulestack_certificate} Resource.
 func NewPaloAltoLocalRulestackCertificate_Override(p PaloAltoLocalRulestackCertificate, scope constructs.Construct, id *string, config *PaloAltoLocalRulestackCertificateConfig) {
 	_init_.Initialize()
 

@@ -5,13 +5,13 @@ package containerconnectedregistry
 
 
 type ContainerConnectedRegistryTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/container_connected_registry#create ContainerConnectedRegistry#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/container_connected_registry#create ContainerConnectedRegistry#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/container_connected_registry#delete ContainerConnectedRegistry#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/container_connected_registry#delete ContainerConnectedRegistry#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/container_connected_registry#read ContainerConnectedRegistry#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/container_connected_registry#read ContainerConnectedRegistry#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/container_connected_registry#update ContainerConnectedRegistry#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/container_connected_registry#update ContainerConnectedRegistry#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

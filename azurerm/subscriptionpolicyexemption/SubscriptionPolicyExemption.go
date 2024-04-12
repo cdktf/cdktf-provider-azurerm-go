@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/subscription_policy_exemption azurerm_subscription_policy_exemption}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/subscription_policy_exemption azurerm_subscription_policy_exemption}.
 type SubscriptionPolicyExemption interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -546,7 +546,7 @@ func (j *jsiiProxy_SubscriptionPolicyExemption) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/subscription_policy_exemption azurerm_subscription_policy_exemption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/subscription_policy_exemption azurerm_subscription_policy_exemption} Resource.
 func NewSubscriptionPolicyExemption(scope constructs.Construct, id *string, config *SubscriptionPolicyExemptionConfig) SubscriptionPolicyExemption {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewSubscriptionPolicyExemption(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/subscription_policy_exemption azurerm_subscription_policy_exemption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/subscription_policy_exemption azurerm_subscription_policy_exemption} Resource.
 func NewSubscriptionPolicyExemption_Override(s SubscriptionPolicyExemption, scope constructs.Construct, id *string, config *SubscriptionPolicyExemptionConfig) {
 	_init_.Initialize()
 

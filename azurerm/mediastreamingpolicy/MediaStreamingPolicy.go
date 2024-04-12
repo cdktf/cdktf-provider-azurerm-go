@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/media_streaming_policy azurerm_media_streaming_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/media_streaming_policy azurerm_media_streaming_policy}.
 type MediaStreamingPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -523,7 +523,7 @@ func (j *jsiiProxy_MediaStreamingPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/media_streaming_policy azurerm_media_streaming_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/media_streaming_policy azurerm_media_streaming_policy} Resource.
 func NewMediaStreamingPolicy(scope constructs.Construct, id *string, config *MediaStreamingPolicyConfig) MediaStreamingPolicy {
 	_init_.Initialize()
 
@@ -541,7 +541,7 @@ func NewMediaStreamingPolicy(scope constructs.Construct, id *string, config *Med
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.98.0/docs/resources/media_streaming_policy azurerm_media_streaming_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/media_streaming_policy azurerm_media_streaming_policy} Resource.
 func NewMediaStreamingPolicy_Override(m MediaStreamingPolicy, scope constructs.Construct, id *string, config *MediaStreamingPolicyConfig) {
 	_init_.Initialize()
 
