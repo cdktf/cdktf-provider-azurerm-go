@@ -59,6 +59,10 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) validatePutCorsPa
 	return nil
 }
 
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) validatePutHandlerMappingParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) validatePutIpRestrictionParameters(value interface{}) error {
 	return nil
 }

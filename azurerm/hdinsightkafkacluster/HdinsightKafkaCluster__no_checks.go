@@ -107,6 +107,10 @@ func (h *jsiiProxy_HdinsightKafkaCluster) validatePutNetworkParameters(value *Hd
 	return nil
 }
 
+func (h *jsiiProxy_HdinsightKafkaCluster) validatePutPrivateLinkConfigurationParameters(value *HdinsightKafkaClusterPrivateLinkConfiguration) error {
+	return nil
+}
+
 func (h *jsiiProxy_HdinsightKafkaCluster) validatePutRestProxyParameters(value *HdinsightKafkaClusterRestProxy) error {
 	return nil
 }

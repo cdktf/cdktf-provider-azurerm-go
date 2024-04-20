@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/hdinsight_interactive_query_cluster azurerm_hdinsight_interactive_query_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/hdinsight_interactive_query_cluster azurerm_hdinsight_interactive_query_cluster}.
 type HdinsightInteractiveQueryCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -77,6 +77,8 @@ type HdinsightInteractiveQueryCluster interface {
 	NetworkInput() *HdinsightInteractiveQueryClusterNetwork
 	// The tree node.
 	Node() constructs.Node
+	PrivateLinkConfiguration() HdinsightInteractiveQueryClusterPrivateLinkConfigurationOutputReference
+	PrivateLinkConfigurationInput() *HdinsightInteractiveQueryClusterPrivateLinkConfiguration
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -167,6 +169,7 @@ type HdinsightInteractiveQueryCluster interface {
 	PutMetastores(value *HdinsightInteractiveQueryClusterMetastores)
 	PutMonitor(value *HdinsightInteractiveQueryClusterMonitor)
 	PutNetwork(value *HdinsightInteractiveQueryClusterNetwork)
+	PutPrivateLinkConfiguration(value *HdinsightInteractiveQueryClusterPrivateLinkConfiguration)
 	PutRoles(value *HdinsightInteractiveQueryClusterRoles)
 	PutSecurityProfile(value *HdinsightInteractiveQueryClusterSecurityProfile)
 	PutStorageAccount(value interface{})
@@ -183,6 +186,7 @@ type HdinsightInteractiveQueryCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrivateLinkConfiguration()
 	ResetSecurityProfile()
 	ResetStorageAccount()
 	ResetStorageAccountGen2()
@@ -577,6 +581,26 @@ func (j *jsiiProxy_HdinsightInteractiveQueryCluster) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_HdinsightInteractiveQueryCluster) PrivateLinkConfiguration() HdinsightInteractiveQueryClusterPrivateLinkConfigurationOutputReference {
+	var returns HdinsightInteractiveQueryClusterPrivateLinkConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"privateLinkConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightInteractiveQueryCluster) PrivateLinkConfigurationInput() *HdinsightInteractiveQueryClusterPrivateLinkConfiguration {
+	var returns *HdinsightInteractiveQueryClusterPrivateLinkConfiguration
+	_jsii_.Get(
+		j,
+		"privateLinkConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HdinsightInteractiveQueryCluster) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -828,7 +852,7 @@ func (j *jsiiProxy_HdinsightInteractiveQueryCluster) TlsMinVersionInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/hdinsight_interactive_query_cluster azurerm_hdinsight_interactive_query_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/hdinsight_interactive_query_cluster azurerm_hdinsight_interactive_query_cluster} Resource.
 func NewHdinsightInteractiveQueryCluster(scope constructs.Construct, id *string, config *HdinsightInteractiveQueryClusterConfig) HdinsightInteractiveQueryCluster {
 	_init_.Initialize()
 
@@ -846,7 +870,7 @@ func NewHdinsightInteractiveQueryCluster(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/hdinsight_interactive_query_cluster azurerm_hdinsight_interactive_query_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/hdinsight_interactive_query_cluster azurerm_hdinsight_interactive_query_cluster} Resource.
 func NewHdinsightInteractiveQueryCluster_Override(h HdinsightInteractiveQueryCluster, scope constructs.Construct, id *string, config *HdinsightInteractiveQueryClusterConfig) {
 	_init_.Initialize()
 
@@ -1465,6 +1489,17 @@ func (h *jsiiProxy_HdinsightInteractiveQueryCluster) PutNetwork(value *Hdinsight
 	)
 }
 
+func (h *jsiiProxy_HdinsightInteractiveQueryCluster) PutPrivateLinkConfiguration(value *HdinsightInteractiveQueryClusterPrivateLinkConfiguration) {
+	if err := h.validatePutPrivateLinkConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putPrivateLinkConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_HdinsightInteractiveQueryCluster) PutRoles(value *HdinsightInteractiveQueryClusterRoles) {
 	if err := h.validatePutRolesParameters(value); err != nil {
 		panic(err)
@@ -1588,6 +1623,14 @@ func (h *jsiiProxy_HdinsightInteractiveQueryCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HdinsightInteractiveQueryCluster) ResetPrivateLinkConfiguration() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetPrivateLinkConfiguration",
 		nil, // no parameters
 	)
 }

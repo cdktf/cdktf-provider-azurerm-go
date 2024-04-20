@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/site_recovery_vmware_replicated_vm azurerm_site_recovery_vmware_replicated_vm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/site_recovery_vmware_replicated_vm azurerm_site_recovery_vmware_replicated_vm}.
 type SiteRecoveryVmwareReplicatedVm interface {
 	cdktf.TerraformResource
 	ApplianceName() *string
@@ -854,7 +854,7 @@ func (j *jsiiProxy_SiteRecoveryVmwareReplicatedVm) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/site_recovery_vmware_replicated_vm azurerm_site_recovery_vmware_replicated_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/site_recovery_vmware_replicated_vm azurerm_site_recovery_vmware_replicated_vm} Resource.
 func NewSiteRecoveryVmwareReplicatedVm(scope constructs.Construct, id *string, config *SiteRecoveryVmwareReplicatedVmConfig) SiteRecoveryVmwareReplicatedVm {
 	_init_.Initialize()
 
@@ -872,7 +872,7 @@ func NewSiteRecoveryVmwareReplicatedVm(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/site_recovery_vmware_replicated_vm azurerm_site_recovery_vmware_replicated_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/site_recovery_vmware_replicated_vm azurerm_site_recovery_vmware_replicated_vm} Resource.
 func NewSiteRecoveryVmwareReplicatedVm_Override(s SiteRecoveryVmwareReplicatedVm, scope constructs.Construct, id *string, config *SiteRecoveryVmwareReplicatedVmConfig) {
 	_init_.Initialize()
 

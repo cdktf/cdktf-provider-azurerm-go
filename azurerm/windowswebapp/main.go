@@ -2097,6 +2097,71 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.windowsWebApp.WindowsWebAppSiteConfigHandlerMapping",
+		reflect.TypeOf((*WindowsWebAppSiteConfigHandlerMapping)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.windowsWebApp.WindowsWebAppSiteConfigHandlerMappingList",
+		reflect.TypeOf((*WindowsWebAppSiteConfigHandlerMappingList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WindowsWebAppSiteConfigHandlerMappingList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.windowsWebApp.WindowsWebAppSiteConfigHandlerMappingOutputReference",
+		reflect.TypeOf((*WindowsWebAppSiteConfigHandlerMappingOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "arguments", GoGetter: "Arguments"},
+			_jsii_.MemberProperty{JsiiProperty: "argumentsInput", GoGetter: "ArgumentsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "extension", GoGetter: "Extension"},
+			_jsii_.MemberProperty{JsiiProperty: "extensionInput", GoGetter: "ExtensionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetArguments", GoMethod: "ResetArguments"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "scriptProcessorPath", GoGetter: "ScriptProcessorPath"},
+			_jsii_.MemberProperty{JsiiProperty: "scriptProcessorPathInput", GoGetter: "ScriptProcessorPathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WindowsWebAppSiteConfigHandlerMappingOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.windowsWebApp.WindowsWebAppSiteConfigIpRestriction",
 		reflect.TypeOf((*WindowsWebAppSiteConfigIpRestriction)(nil)).Elem(),
 	)
@@ -2292,6 +2357,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "handlerMapping", GoGetter: "HandlerMapping"},
+			_jsii_.MemberProperty{JsiiProperty: "handlerMappingInput", GoGetter: "HandlerMappingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "healthCheckEvictionTimeInMin", GoGetter: "HealthCheckEvictionTimeInMin"},
 			_jsii_.MemberProperty{JsiiProperty: "healthCheckEvictionTimeInMinInput", GoGetter: "HealthCheckEvictionTimeInMinInput"},
 			_jsii_.MemberProperty{JsiiProperty: "healthCheckPath", GoGetter: "HealthCheckPath"},
@@ -2317,6 +2384,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putApplicationStack", GoMethod: "PutApplicationStack"},
 			_jsii_.MemberMethod{JsiiMethod: "putAutoHealSetting", GoMethod: "PutAutoHealSetting"},
 			_jsii_.MemberMethod{JsiiMethod: "putCors", GoMethod: "PutCors"},
+			_jsii_.MemberMethod{JsiiMethod: "putHandlerMapping", GoMethod: "PutHandlerMapping"},
 			_jsii_.MemberMethod{JsiiMethod: "putIpRestriction", GoMethod: "PutIpRestriction"},
 			_jsii_.MemberMethod{JsiiMethod: "putScmIpRestriction", GoMethod: "PutScmIpRestriction"},
 			_jsii_.MemberMethod{JsiiMethod: "putVirtualApplication", GoMethod: "PutVirtualApplication"},
@@ -2336,6 +2404,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCors", GoMethod: "ResetCors"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultDocuments", GoMethod: "ResetDefaultDocuments"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFtpsState", GoMethod: "ResetFtpsState"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHandlerMapping", GoMethod: "ResetHandlerMapping"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHealthCheckEvictionTimeInMin", GoMethod: "ResetHealthCheckEvictionTimeInMin"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHealthCheckPath", GoMethod: "ResetHealthCheckPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttp2Enabled", GoMethod: "ResetHttp2Enabled"},

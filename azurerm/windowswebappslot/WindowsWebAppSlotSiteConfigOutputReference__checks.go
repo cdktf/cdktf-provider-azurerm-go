@@ -126,6 +126,37 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) validatePutCorsPa
 	return nil
 }
 
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) validatePutHandlerMappingParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*WindowsWebAppSlotSiteConfigHandlerMapping:
+		value := value.(*[]*WindowsWebAppSlotSiteConfigHandlerMapping)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*WindowsWebAppSlotSiteConfigHandlerMapping:
+		value_ := value.([]*WindowsWebAppSlotSiteConfigHandlerMapping)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WindowsWebAppSlotSiteConfigHandlerMapping; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) validatePutIpRestrictionParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -139,6 +139,10 @@ func (j *jsiiProxy_ExpressRouteConnection) validateSetNameParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_ExpressRouteConnection) validateSetPrivateLinkFastPathEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRouteConnection) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

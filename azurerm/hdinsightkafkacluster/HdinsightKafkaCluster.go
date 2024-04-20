@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/hdinsight_kafka_cluster azurerm_hdinsight_kafka_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/hdinsight_kafka_cluster azurerm_hdinsight_kafka_cluster}.
 type HdinsightKafkaCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -78,6 +78,8 @@ type HdinsightKafkaCluster interface {
 	NetworkInput() *HdinsightKafkaClusterNetwork
 	// The tree node.
 	Node() constructs.Node
+	PrivateLinkConfiguration() HdinsightKafkaClusterPrivateLinkConfigurationOutputReference
+	PrivateLinkConfigurationInput() *HdinsightKafkaClusterPrivateLinkConfiguration
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -170,6 +172,7 @@ type HdinsightKafkaCluster interface {
 	PutMetastores(value *HdinsightKafkaClusterMetastores)
 	PutMonitor(value *HdinsightKafkaClusterMonitor)
 	PutNetwork(value *HdinsightKafkaClusterNetwork)
+	PutPrivateLinkConfiguration(value *HdinsightKafkaClusterPrivateLinkConfiguration)
 	PutRestProxy(value *HdinsightKafkaClusterRestProxy)
 	PutRoles(value *HdinsightKafkaClusterRoles)
 	PutSecurityProfile(value *HdinsightKafkaClusterSecurityProfile)
@@ -187,6 +190,7 @@ type HdinsightKafkaCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrivateLinkConfiguration()
 	ResetRestProxy()
 	ResetSecurityProfile()
 	ResetStorageAccount()
@@ -592,6 +596,26 @@ func (j *jsiiProxy_HdinsightKafkaCluster) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_HdinsightKafkaCluster) PrivateLinkConfiguration() HdinsightKafkaClusterPrivateLinkConfigurationOutputReference {
+	var returns HdinsightKafkaClusterPrivateLinkConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"privateLinkConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightKafkaCluster) PrivateLinkConfigurationInput() *HdinsightKafkaClusterPrivateLinkConfiguration {
+	var returns *HdinsightKafkaClusterPrivateLinkConfiguration
+	_jsii_.Get(
+		j,
+		"privateLinkConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HdinsightKafkaCluster) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -863,7 +887,7 @@ func (j *jsiiProxy_HdinsightKafkaCluster) TlsMinVersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/hdinsight_kafka_cluster azurerm_hdinsight_kafka_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/hdinsight_kafka_cluster azurerm_hdinsight_kafka_cluster} Resource.
 func NewHdinsightKafkaCluster(scope constructs.Construct, id *string, config *HdinsightKafkaClusterConfig) HdinsightKafkaCluster {
 	_init_.Initialize()
 
@@ -881,7 +905,7 @@ func NewHdinsightKafkaCluster(scope constructs.Construct, id *string, config *Hd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/hdinsight_kafka_cluster azurerm_hdinsight_kafka_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/hdinsight_kafka_cluster azurerm_hdinsight_kafka_cluster} Resource.
 func NewHdinsightKafkaCluster_Override(h HdinsightKafkaCluster, scope constructs.Construct, id *string, config *HdinsightKafkaClusterConfig) {
 	_init_.Initialize()
 
@@ -1500,6 +1524,17 @@ func (h *jsiiProxy_HdinsightKafkaCluster) PutNetwork(value *HdinsightKafkaCluste
 	)
 }
 
+func (h *jsiiProxy_HdinsightKafkaCluster) PutPrivateLinkConfiguration(value *HdinsightKafkaClusterPrivateLinkConfiguration) {
+	if err := h.validatePutPrivateLinkConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putPrivateLinkConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_HdinsightKafkaCluster) PutRestProxy(value *HdinsightKafkaClusterRestProxy) {
 	if err := h.validatePutRestProxyParameters(value); err != nil {
 		panic(err)
@@ -1634,6 +1669,14 @@ func (h *jsiiProxy_HdinsightKafkaCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HdinsightKafkaCluster) ResetPrivateLinkConfiguration() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetPrivateLinkConfiguration",
 		nil, // no parameters
 	)
 }

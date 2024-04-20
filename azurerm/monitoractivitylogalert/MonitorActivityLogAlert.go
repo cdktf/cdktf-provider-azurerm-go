@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert}.
 type MonitorActivityLogAlert interface {
 	cdktf.TerraformResource
 	Action() MonitorActivityLogAlertActionList
@@ -56,6 +56,9 @@ type MonitorActivityLogAlert interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -138,6 +141,7 @@ type MonitorActivityLogAlert interface {
 	ResetDescription()
 	ResetEnabled()
 	ResetId()
+	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -351,6 +355,26 @@ func (j *jsiiProxy_MonitorActivityLogAlert) Lifecycle() *cdktf.TerraformResource
 	return returns
 }
 
+func (j *jsiiProxy_MonitorActivityLogAlert) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorActivityLogAlert) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitorActivityLogAlert) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -522,7 +546,7 @@ func (j *jsiiProxy_MonitorActivityLogAlert) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert} Resource.
 func NewMonitorActivityLogAlert(scope constructs.Construct, id *string, config *MonitorActivityLogAlertConfig) MonitorActivityLogAlert {
 	_init_.Initialize()
 
@@ -540,7 +564,7 @@ func NewMonitorActivityLogAlert(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert} Resource.
 func NewMonitorActivityLogAlert_Override(m MonitorActivityLogAlert, scope constructs.Construct, id *string, config *MonitorActivityLogAlertConfig) {
 	_init_.Initialize()
 
@@ -629,6 +653,17 @@ func (j *jsiiProxy_MonitorActivityLogAlert)SetLifecycle(val *cdktf.TerraformReso
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitorActivityLogAlert)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
 		val,
 	)
 }
@@ -1110,6 +1145,14 @@ func (m *jsiiProxy_MonitorActivityLogAlert) ResetId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorActivityLogAlert) ResetLocation() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

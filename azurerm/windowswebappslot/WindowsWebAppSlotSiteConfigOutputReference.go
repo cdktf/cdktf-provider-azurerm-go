@@ -67,6 +67,8 @@ type WindowsWebAppSlotSiteConfigOutputReference interface {
 	FtpsState() *string
 	SetFtpsState(val *string)
 	FtpsStateInput() *string
+	HandlerMapping() WindowsWebAppSlotSiteConfigHandlerMappingList
+	HandlerMappingInput() interface{}
 	HealthCheckEvictionTimeInMin() *float64
 	SetHealthCheckEvictionTimeInMin(val *float64)
 	HealthCheckEvictionTimeInMinInput() *float64
@@ -163,6 +165,7 @@ type WindowsWebAppSlotSiteConfigOutputReference interface {
 	PutApplicationStack(value *WindowsWebAppSlotSiteConfigApplicationStack)
 	PutAutoHealSetting(value *WindowsWebAppSlotSiteConfigAutoHealSetting)
 	PutCors(value *WindowsWebAppSlotSiteConfigCors)
+	PutHandlerMapping(value interface{})
 	PutIpRestriction(value interface{})
 	PutScmIpRestriction(value interface{})
 	PutVirtualApplication(value interface{})
@@ -179,6 +182,7 @@ type WindowsWebAppSlotSiteConfigOutputReference interface {
 	ResetCors()
 	ResetDefaultDocuments()
 	ResetFtpsState()
+	ResetHandlerMapping()
 	ResetHealthCheckEvictionTimeInMin()
 	ResetHealthCheckPath()
 	ResetHttp2Enabled()
@@ -519,6 +523,26 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) FtpsStateInput() 
 	_jsii_.Get(
 		j,
 		"ftpsStateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) HandlerMapping() WindowsWebAppSlotSiteConfigHandlerMappingList {
+	var returns WindowsWebAppSlotSiteConfigHandlerMappingList
+	_jsii_.Get(
+		j,
+		"handlerMapping",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) HandlerMappingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"handlerMappingInput",
 		&returns,
 	)
 	return returns
@@ -1573,6 +1597,17 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) PutCors(value *Wi
 	)
 }
 
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) PutHandlerMapping(value interface{}) {
+	if err := w.validatePutHandlerMappingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putHandlerMapping",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) PutIpRestriction(value interface{}) {
 	if err := w.validatePutIpRestrictionParameters(value); err != nil {
 		panic(err)
@@ -1706,6 +1741,14 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) ResetFtpsState() 
 	_jsii_.InvokeVoid(
 		w,
 		"resetFtpsState",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) ResetHandlerMapping() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetHandlerMapping",
 		nil, // no parameters
 	)
 }

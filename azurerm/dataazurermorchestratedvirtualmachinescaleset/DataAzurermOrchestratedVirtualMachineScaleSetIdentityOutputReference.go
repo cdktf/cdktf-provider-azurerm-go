@@ -33,6 +33,8 @@ type DataAzurermOrchestratedVirtualMachineScaleSetIdentityOutputReference interf
 	IdentityIds() *[]*string
 	InternalValue() *DataAzurermOrchestratedVirtualMachineScaleSetIdentity
 	SetInternalValue(val *DataAzurermOrchestratedVirtualMachineScaleSetIdentity)
+	PrincipalId() *string
+	TenantId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -136,6 +138,26 @@ func (j *jsiiProxy_DataAzurermOrchestratedVirtualMachineScaleSetIdentityOutputRe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermOrchestratedVirtualMachineScaleSetIdentityOutputReference) PrincipalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermOrchestratedVirtualMachineScaleSetIdentityOutputReference) TenantId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantId",
 		&returns,
 	)
 	return returns

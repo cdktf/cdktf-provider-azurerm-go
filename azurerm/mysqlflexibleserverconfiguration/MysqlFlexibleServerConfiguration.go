@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/mysql_flexible_server_configuration azurerm_mysql_flexible_server_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/mysql_flexible_server_configuration azurerm_mysql_flexible_server_configuration}.
 type MysqlFlexibleServerConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_MysqlFlexibleServerConfiguration) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/mysql_flexible_server_configuration azurerm_mysql_flexible_server_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/mysql_flexible_server_configuration azurerm_mysql_flexible_server_configuration} Resource.
 func NewMysqlFlexibleServerConfiguration(scope constructs.Construct, id *string, config *MysqlFlexibleServerConfigurationConfig) MysqlFlexibleServerConfiguration {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewMysqlFlexibleServerConfiguration(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/mysql_flexible_server_configuration azurerm_mysql_flexible_server_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/mysql_flexible_server_configuration azurerm_mysql_flexible_server_configuration} Resource.
 func NewMysqlFlexibleServerConfiguration_Override(m MysqlFlexibleServerConfiguration, scope constructs.Construct, id *string, config *MysqlFlexibleServerConfigurationConfig) {
 	_init_.Initialize()
 

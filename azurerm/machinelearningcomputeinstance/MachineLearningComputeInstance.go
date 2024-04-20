@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance}.
 type MachineLearningComputeInstance interface {
 	cdktf.TerraformResource
 	AssignToUser() MachineLearningComputeInstanceAssignToUserOutputReference
@@ -155,6 +155,7 @@ type MachineLearningComputeInstance interface {
 	ResetId()
 	ResetIdentity()
 	ResetLocalAuthEnabled()
+	ResetLocation()
 	ResetNodePublicIpEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -642,7 +643,7 @@ func (j *jsiiProxy_MachineLearningComputeInstance) VirtualMachineSizeInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance} Resource.
 func NewMachineLearningComputeInstance(scope constructs.Construct, id *string, config *MachineLearningComputeInstanceConfig) MachineLearningComputeInstance {
 	_init_.Initialize()
 
@@ -660,7 +661,7 @@ func NewMachineLearningComputeInstance(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance} Resource.
 func NewMachineLearningComputeInstance_Override(m MachineLearningComputeInstance, scope constructs.Construct, id *string, config *MachineLearningComputeInstanceConfig) {
 	_init_.Initialize()
 
@@ -1301,6 +1302,14 @@ func (m *jsiiProxy_MachineLearningComputeInstance) ResetLocalAuthEnabled() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetLocalAuthEnabled",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MachineLearningComputeInstance) ResetLocation() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

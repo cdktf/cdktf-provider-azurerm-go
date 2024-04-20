@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/management_group azurerm_management_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/data-sources/management_group azurerm_management_group}.
 type DataAzurermManagementGroup interface {
 	cdktf.TerraformDataSource
 	AllManagementGroupIds() *[]*string
@@ -61,6 +61,7 @@ type DataAzurermManagementGroup interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SubscriptionIds() *[]*string
+	TenantScopedId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -341,6 +342,16 @@ func (j *jsiiProxy_DataAzurermManagementGroup) SubscriptionIds() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermManagementGroup) TenantScopedId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantScopedId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermManagementGroup) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -392,7 +403,7 @@ func (j *jsiiProxy_DataAzurermManagementGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/management_group azurerm_management_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/data-sources/management_group azurerm_management_group} Data Source.
 func NewDataAzurermManagementGroup(scope constructs.Construct, id *string, config *DataAzurermManagementGroupConfig) DataAzurermManagementGroup {
 	_init_.Initialize()
 
@@ -410,7 +421,7 @@ func NewDataAzurermManagementGroup(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/management_group azurerm_management_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/data-sources/management_group azurerm_management_group} Data Source.
 func NewDataAzurermManagementGroup_Override(d DataAzurermManagementGroup, scope constructs.Construct, id *string, config *DataAzurermManagementGroupConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/spring_cloud_app_dynamics_application_performance_monitoring azurerm_spring_cloud_app_dynamics_application_performance_monitoring}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/spring_cloud_app_dynamics_application_performance_monitoring azurerm_spring_cloud_app_dynamics_application_performance_monitoring}.
 type SpringCloudAppDynamicsApplicationPerformanceMonitoring interface {
 	cdktf.TerraformResource
 	AgentAccountAccessKey() *string
@@ -617,7 +617,7 @@ func (j *jsiiProxy_SpringCloudAppDynamicsApplicationPerformanceMonitoring) Timeo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/spring_cloud_app_dynamics_application_performance_monitoring azurerm_spring_cloud_app_dynamics_application_performance_monitoring} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/spring_cloud_app_dynamics_application_performance_monitoring azurerm_spring_cloud_app_dynamics_application_performance_monitoring} Resource.
 func NewSpringCloudAppDynamicsApplicationPerformanceMonitoring(scope constructs.Construct, id *string, config *SpringCloudAppDynamicsApplicationPerformanceMonitoringConfig) SpringCloudAppDynamicsApplicationPerformanceMonitoring {
 	_init_.Initialize()
 
@@ -635,7 +635,7 @@ func NewSpringCloudAppDynamicsApplicationPerformanceMonitoring(scope constructs.
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/spring_cloud_app_dynamics_application_performance_monitoring azurerm_spring_cloud_app_dynamics_application_performance_monitoring} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/spring_cloud_app_dynamics_application_performance_monitoring azurerm_spring_cloud_app_dynamics_application_performance_monitoring} Resource.
 func NewSpringCloudAppDynamicsApplicationPerformanceMonitoring_Override(s SpringCloudAppDynamicsApplicationPerformanceMonitoring, scope constructs.Construct, id *string, config *SpringCloudAppDynamicsApplicationPerformanceMonitoringConfig) {
 	_init_.Initialize()
 

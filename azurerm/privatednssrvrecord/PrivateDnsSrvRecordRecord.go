@@ -5,13 +5,13 @@ package privatednssrvrecord
 
 
 type PrivateDnsSrvRecordRecord struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/private_dns_srv_record#port PrivateDnsSrvRecord#port}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/private_dns_srv_record#port PrivateDnsSrvRecord#port}.
 	Port *float64 `field:"required" json:"port" yaml:"port"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/private_dns_srv_record#priority PrivateDnsSrvRecord#priority}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/private_dns_srv_record#priority PrivateDnsSrvRecord#priority}.
 	Priority *float64 `field:"required" json:"priority" yaml:"priority"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/private_dns_srv_record#target PrivateDnsSrvRecord#target}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/private_dns_srv_record#target PrivateDnsSrvRecord#target}.
 	Target *string `field:"required" json:"target" yaml:"target"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/private_dns_srv_record#weight PrivateDnsSrvRecord#weight}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/private_dns_srv_record#weight PrivateDnsSrvRecord#weight}.
 	Weight *float64 `field:"required" json:"weight" yaml:"weight"`
 }
 

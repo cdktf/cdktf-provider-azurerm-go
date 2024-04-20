@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/data-sources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection}.
 type DataAzurermVirtualNetworkGatewayConnection interface {
 	cdktf.TerraformDataSource
 	AuthorizationKey() *string
@@ -60,6 +60,7 @@ type DataAzurermVirtualNetworkGatewayConnection interface {
 	// The tree node.
 	Node() constructs.Node
 	PeerVirtualNetworkGatewayId() *string
+	PrivateLinkFastPathEnabled() cdktf.IResolvable
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -395,6 +396,16 @@ func (j *jsiiProxy_DataAzurermVirtualNetworkGatewayConnection) PeerVirtualNetwor
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermVirtualNetworkGatewayConnection) PrivateLinkFastPathEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"privateLinkFastPathEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermVirtualNetworkGatewayConnection) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -566,7 +577,7 @@ func (j *jsiiProxy_DataAzurermVirtualNetworkGatewayConnection) VirtualNetworkGat
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/data-sources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Data Source.
 func NewDataAzurermVirtualNetworkGatewayConnection(scope constructs.Construct, id *string, config *DataAzurermVirtualNetworkGatewayConnectionConfig) DataAzurermVirtualNetworkGatewayConnection {
 	_init_.Initialize()
 
@@ -584,7 +595,7 @@ func NewDataAzurermVirtualNetworkGatewayConnection(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/data-sources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/data-sources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Data Source.
 func NewDataAzurermVirtualNetworkGatewayConnection_Override(d DataAzurermVirtualNetworkGatewayConnection, scope constructs.Construct, id *string, config *DataAzurermVirtualNetworkGatewayConnectionConfig) {
 	_init_.Initialize()
 

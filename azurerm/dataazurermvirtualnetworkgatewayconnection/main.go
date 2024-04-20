@@ -52,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "peerVirtualNetworkGatewayId", GoGetter: "PeerVirtualNetworkGatewayId"},
+			_jsii_.MemberProperty{JsiiProperty: "privateLinkFastPathEnabled", GoGetter: "PrivateLinkFastPathEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},

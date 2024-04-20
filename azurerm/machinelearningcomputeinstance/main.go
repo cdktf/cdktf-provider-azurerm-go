@@ -75,6 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIdentity", GoMethod: "ResetIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocalAuthEnabled", GoMethod: "ResetLocalAuthEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLocation", GoMethod: "ResetLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNodePublicIpEnabled", GoMethod: "ResetNodePublicIpEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSsh", GoMethod: "ResetSsh"},

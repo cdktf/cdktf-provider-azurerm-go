@@ -127,6 +127,10 @@ func (j *jsiiProxy_MonitorActivityLogAlert) validateSetLifecycleParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_MonitorActivityLogAlert) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorActivityLogAlert) validateSetNameParameters(val *string) error {
 	return nil
 }

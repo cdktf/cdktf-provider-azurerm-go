@@ -107,6 +107,10 @@ func (h *jsiiProxy_HdinsightSparkCluster) validatePutNetworkParameters(value *Hd
 	return nil
 }
 
+func (h *jsiiProxy_HdinsightSparkCluster) validatePutPrivateLinkConfigurationParameters(value *HdinsightSparkClusterPrivateLinkConfiguration) error {
+	return nil
+}
+
 func (h *jsiiProxy_HdinsightSparkCluster) validatePutRolesParameters(value *HdinsightSparkClusterRoles) error {
 	return nil
 }

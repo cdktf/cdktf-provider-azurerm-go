@@ -315,6 +315,17 @@ func (h *jsiiProxy_HdinsightHbaseCluster) validatePutNetworkParameters(value *Hd
 	return nil
 }
 
+func (h *jsiiProxy_HdinsightHbaseCluster) validatePutPrivateLinkConfigurationParameters(value *HdinsightHbaseClusterPrivateLinkConfiguration) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (h *jsiiProxy_HdinsightHbaseCluster) validatePutRolesParameters(value *HdinsightHbaseClusterRoles) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

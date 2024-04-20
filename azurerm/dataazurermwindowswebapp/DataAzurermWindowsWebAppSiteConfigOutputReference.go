@@ -43,6 +43,7 @@ type DataAzurermWindowsWebAppSiteConfigOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	FtpsState() *string
+	HandlerMapping() DataAzurermWindowsWebAppSiteConfigHandlerMappingList
 	HealthCheckEvictionTimeInMin() *float64
 	HealthCheckPath() *string
 	Http2Enabled() cdktf.IResolvable
@@ -279,6 +280,16 @@ func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigOutputReference) FtpsState(
 	_jsii_.Get(
 		j,
 		"ftpsState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigOutputReference) HandlerMapping() DataAzurermWindowsWebAppSiteConfigHandlerMappingList {
+	var returns DataAzurermWindowsWebAppSiteConfigHandlerMappingList
+	_jsii_.Get(
+		j,
+		"handlerMapping",
 		&returns,
 	)
 	return returns

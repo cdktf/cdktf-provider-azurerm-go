@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/hdinsight_spark_cluster azurerm_hdinsight_spark_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/hdinsight_spark_cluster azurerm_hdinsight_spark_cluster}.
 type HdinsightSparkCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -77,6 +77,8 @@ type HdinsightSparkCluster interface {
 	NetworkInput() *HdinsightSparkClusterNetwork
 	// The tree node.
 	Node() constructs.Node
+	PrivateLinkConfiguration() HdinsightSparkClusterPrivateLinkConfigurationOutputReference
+	PrivateLinkConfigurationInput() *HdinsightSparkClusterPrivateLinkConfiguration
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -167,6 +169,7 @@ type HdinsightSparkCluster interface {
 	PutMetastores(value *HdinsightSparkClusterMetastores)
 	PutMonitor(value *HdinsightSparkClusterMonitor)
 	PutNetwork(value *HdinsightSparkClusterNetwork)
+	PutPrivateLinkConfiguration(value *HdinsightSparkClusterPrivateLinkConfiguration)
 	PutRoles(value *HdinsightSparkClusterRoles)
 	PutSecurityProfile(value *HdinsightSparkClusterSecurityProfile)
 	PutStorageAccount(value interface{})
@@ -183,6 +186,7 @@ type HdinsightSparkCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrivateLinkConfiguration()
 	ResetSecurityProfile()
 	ResetStorageAccount()
 	ResetStorageAccountGen2()
@@ -577,6 +581,26 @@ func (j *jsiiProxy_HdinsightSparkCluster) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_HdinsightSparkCluster) PrivateLinkConfiguration() HdinsightSparkClusterPrivateLinkConfigurationOutputReference {
+	var returns HdinsightSparkClusterPrivateLinkConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"privateLinkConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HdinsightSparkCluster) PrivateLinkConfigurationInput() *HdinsightSparkClusterPrivateLinkConfiguration {
+	var returns *HdinsightSparkClusterPrivateLinkConfiguration
+	_jsii_.Get(
+		j,
+		"privateLinkConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HdinsightSparkCluster) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -828,7 +852,7 @@ func (j *jsiiProxy_HdinsightSparkCluster) TlsMinVersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/hdinsight_spark_cluster azurerm_hdinsight_spark_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/hdinsight_spark_cluster azurerm_hdinsight_spark_cluster} Resource.
 func NewHdinsightSparkCluster(scope constructs.Construct, id *string, config *HdinsightSparkClusterConfig) HdinsightSparkCluster {
 	_init_.Initialize()
 
@@ -846,7 +870,7 @@ func NewHdinsightSparkCluster(scope constructs.Construct, id *string, config *Hd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/hdinsight_spark_cluster azurerm_hdinsight_spark_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/hdinsight_spark_cluster azurerm_hdinsight_spark_cluster} Resource.
 func NewHdinsightSparkCluster_Override(h HdinsightSparkCluster, scope constructs.Construct, id *string, config *HdinsightSparkClusterConfig) {
 	_init_.Initialize()
 
@@ -1465,6 +1489,17 @@ func (h *jsiiProxy_HdinsightSparkCluster) PutNetwork(value *HdinsightSparkCluste
 	)
 }
 
+func (h *jsiiProxy_HdinsightSparkCluster) PutPrivateLinkConfiguration(value *HdinsightSparkClusterPrivateLinkConfiguration) {
+	if err := h.validatePutPrivateLinkConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putPrivateLinkConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_HdinsightSparkCluster) PutRoles(value *HdinsightSparkClusterRoles) {
 	if err := h.validatePutRolesParameters(value); err != nil {
 		panic(err)
@@ -1588,6 +1623,14 @@ func (h *jsiiProxy_HdinsightSparkCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HdinsightSparkCluster) ResetPrivateLinkConfiguration() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetPrivateLinkConfiguration",
 		nil, // no parameters
 	)
 }

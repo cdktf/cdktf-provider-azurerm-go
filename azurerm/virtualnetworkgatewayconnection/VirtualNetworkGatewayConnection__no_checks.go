@@ -179,6 +179,10 @@ func (j *jsiiProxy_VirtualNetworkGatewayConnection) validateSetPeerVirtualNetwor
 	return nil
 }
 
+func (j *jsiiProxy_VirtualNetworkGatewayConnection) validateSetPrivateLinkFastPathEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetworkGatewayConnection) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

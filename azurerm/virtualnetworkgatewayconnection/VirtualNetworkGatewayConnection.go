@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection}.
 type VirtualNetworkGatewayConnection interface {
 	cdktf.TerraformResource
 	AuthorizationKey() *string
@@ -94,6 +94,9 @@ type VirtualNetworkGatewayConnection interface {
 	PeerVirtualNetworkGatewayId() *string
 	SetPeerVirtualNetworkGatewayId(val *string)
 	PeerVirtualNetworkGatewayIdInput() *string
+	PrivateLinkFastPathEnabled() interface{}
+	SetPrivateLinkFastPathEnabled(val interface{})
+	PrivateLinkFastPathEnabledInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -200,6 +203,7 @@ type VirtualNetworkGatewayConnection interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPeerVirtualNetworkGatewayId()
+	ResetPrivateLinkFastPathEnabled()
 	ResetRoutingWeight()
 	ResetSharedKey()
 	ResetTags()
@@ -664,6 +668,26 @@ func (j *jsiiProxy_VirtualNetworkGatewayConnection) PeerVirtualNetworkGatewayIdI
 	return returns
 }
 
+func (j *jsiiProxy_VirtualNetworkGatewayConnection) PrivateLinkFastPathEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"privateLinkFastPathEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkGatewayConnection) PrivateLinkFastPathEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"privateLinkFastPathEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualNetworkGatewayConnection) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -905,7 +929,7 @@ func (j *jsiiProxy_VirtualNetworkGatewayConnection) VirtualNetworkGatewayIdInput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Resource.
 func NewVirtualNetworkGatewayConnection(scope constructs.Construct, id *string, config *VirtualNetworkGatewayConnectionConfig) VirtualNetworkGatewayConnection {
 	_init_.Initialize()
 
@@ -923,7 +947,7 @@ func NewVirtualNetworkGatewayConnection(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.99.0/docs/resources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Resource.
 func NewVirtualNetworkGatewayConnection_Override(v VirtualNetworkGatewayConnection, scope constructs.Construct, id *string, config *VirtualNetworkGatewayConnectionConfig) {
 	_init_.Initialize()
 
@@ -1144,6 +1168,17 @@ func (j *jsiiProxy_VirtualNetworkGatewayConnection)SetPeerVirtualNetworkGatewayI
 	_jsii_.Set(
 		j,
 		"peerVirtualNetworkGatewayId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualNetworkGatewayConnection)SetPrivateLinkFastPathEnabled(val interface{}) {
+	if err := j.validateSetPrivateLinkFastPathEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateLinkFastPathEnabled",
 		val,
 	)
 }
@@ -1765,6 +1800,14 @@ func (v *jsiiProxy_VirtualNetworkGatewayConnection) ResetPeerVirtualNetworkGatew
 	_jsii_.InvokeVoid(
 		v,
 		"resetPeerVirtualNetworkGatewayId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkGatewayConnection) ResetPrivateLinkFastPathEnabled() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPrivateLinkFastPathEnabled",
 		nil, // no parameters
 	)
 }
