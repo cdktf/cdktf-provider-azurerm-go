@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/storage_mover_agent azurerm_storage_mover_agent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/storage_mover_agent azurerm_storage_mover_agent}.
 type StorageMoverAgent interface {
 	cdktf.TerraformResource
 	ArcVirtualMachineId() *string
@@ -450,7 +450,7 @@ func (j *jsiiProxy_StorageMoverAgent) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/storage_mover_agent azurerm_storage_mover_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/storage_mover_agent azurerm_storage_mover_agent} Resource.
 func NewStorageMoverAgent(scope constructs.Construct, id *string, config *StorageMoverAgentConfig) StorageMoverAgent {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewStorageMoverAgent(scope constructs.Construct, id *string, config *Storag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/storage_mover_agent azurerm_storage_mover_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/storage_mover_agent azurerm_storage_mover_agent} Resource.
 func NewStorageMoverAgent_Override(s StorageMoverAgent, scope constructs.Construct, id *string, config *StorageMoverAgentConfig) {
 	_init_.Initialize()
 

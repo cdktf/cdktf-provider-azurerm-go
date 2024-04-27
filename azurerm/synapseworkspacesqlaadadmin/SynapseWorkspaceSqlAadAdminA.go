@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin}.
 type SynapseWorkspaceSqlAadAdminA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_SynapseWorkspaceSqlAadAdminA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin} Resource.
 func NewSynapseWorkspaceSqlAadAdminA(scope constructs.Construct, id *string, config *SynapseWorkspaceSqlAadAdminAConfig) SynapseWorkspaceSqlAadAdminA {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewSynapseWorkspaceSqlAadAdminA(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/synapse_workspace_sql_aad_admin azurerm_synapse_workspace_sql_aad_admin} Resource.
 func NewSynapseWorkspaceSqlAadAdminA_Override(s SynapseWorkspaceSqlAadAdminA, scope constructs.Construct, id *string, config *SynapseWorkspaceSqlAadAdminAConfig) {
 	_init_.Initialize()
 

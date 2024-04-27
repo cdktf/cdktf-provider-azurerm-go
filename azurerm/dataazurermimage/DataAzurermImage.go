@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/data-sources/image azurerm_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/data-sources/image azurerm_image}.
 type DataAzurermImage interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -439,7 +439,7 @@ func (j *jsiiProxy_DataAzurermImage) ZoneResilient() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/data-sources/image azurerm_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/data-sources/image azurerm_image} Data Source.
 func NewDataAzurermImage(scope constructs.Construct, id *string, config *DataAzurermImageConfig) DataAzurermImage {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewDataAzurermImage(scope constructs.Construct, id *string, config *DataAzu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/data-sources/image azurerm_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/data-sources/image azurerm_image} Data Source.
 func NewDataAzurermImage_Override(d DataAzurermImage, scope constructs.Construct, id *string, config *DataAzurermImageConfig) {
 	_init_.Initialize()
 

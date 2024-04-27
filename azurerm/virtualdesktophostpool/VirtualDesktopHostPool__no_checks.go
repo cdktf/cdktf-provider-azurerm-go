@@ -155,6 +155,10 @@ func (j *jsiiProxy_VirtualDesktopHostPool) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_VirtualDesktopHostPool) validateSetPublicNetworkAccessParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualDesktopHostPool) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }

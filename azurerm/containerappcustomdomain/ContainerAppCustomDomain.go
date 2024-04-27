@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/container_app_custom_domain azurerm_container_app_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_app_custom_domain azurerm_container_app_custom_domain}.
 type ContainerAppCustomDomain interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -122,6 +122,8 @@ type ContainerAppCustomDomain interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ContainerAppCustomDomainTimeouts)
+	ResetCertificateBindingType()
+	ResetContainerAppEnvironmentCertificateId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -426,7 +428,7 @@ func (j *jsiiProxy_ContainerAppCustomDomain) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/container_app_custom_domain azurerm_container_app_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_app_custom_domain azurerm_container_app_custom_domain} Resource.
 func NewContainerAppCustomDomain(scope constructs.Construct, id *string, config *ContainerAppCustomDomainConfig) ContainerAppCustomDomain {
 	_init_.Initialize()
 
@@ -444,7 +446,7 @@ func NewContainerAppCustomDomain(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/container_app_custom_domain azurerm_container_app_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_app_custom_domain azurerm_container_app_custom_domain} Resource.
 func NewContainerAppCustomDomain_Override(c ContainerAppCustomDomain, scope constructs.Construct, id *string, config *ContainerAppCustomDomainConfig) {
 	_init_.Initialize()
 
@@ -939,6 +941,22 @@ func (c *jsiiProxy_ContainerAppCustomDomain) PutTimeouts(value *ContainerAppCust
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerAppCustomDomain) ResetCertificateBindingType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCertificateBindingType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppCustomDomain) ResetContainerAppEnvironmentCertificateId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetContainerAppEnvironmentCertificateId",
+		nil, // no parameters
 	)
 }
 

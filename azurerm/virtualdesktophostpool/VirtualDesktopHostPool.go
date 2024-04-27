@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool}.
 type VirtualDesktopHostPool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -83,6 +83,9 @@ type VirtualDesktopHostPool interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicNetworkAccess() *string
+	SetPublicNetworkAccess(val *string)
+	PublicNetworkAccessInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -168,6 +171,7 @@ type VirtualDesktopHostPool interface {
 	ResetOverrideLogicalId()
 	ResetPersonalDesktopAssignmentType()
 	ResetPreferredAppGroupType()
+	ResetPublicNetworkAccess()
 	ResetScheduledAgentUpdates()
 	ResetStartVmOnConnect()
 	ResetTags()
@@ -512,6 +516,26 @@ func (j *jsiiProxy_VirtualDesktopHostPool) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VirtualDesktopHostPool) PublicNetworkAccess() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicNetworkAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualDesktopHostPool) PublicNetworkAccessInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualDesktopHostPool) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -713,7 +737,7 @@ func (j *jsiiProxy_VirtualDesktopHostPool) VmTemplateInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool} Resource.
 func NewVirtualDesktopHostPool(scope constructs.Construct, id *string, config *VirtualDesktopHostPoolConfig) VirtualDesktopHostPool {
 	_init_.Initialize()
 
@@ -731,7 +755,7 @@ func NewVirtualDesktopHostPool(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.100.0/docs/resources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool} Resource.
 func NewVirtualDesktopHostPool_Override(v VirtualDesktopHostPool, scope constructs.Construct, id *string, config *VirtualDesktopHostPoolConfig) {
 	_init_.Initialize()
 
@@ -916,6 +940,17 @@ func (j *jsiiProxy_VirtualDesktopHostPool)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualDesktopHostPool)SetPublicNetworkAccess(val *string) {
+	if err := j.validateSetPublicNetworkAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccess",
 		val,
 	)
 }
@@ -1421,6 +1456,14 @@ func (v *jsiiProxy_VirtualDesktopHostPool) ResetPreferredAppGroupType() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetPreferredAppGroupType",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualDesktopHostPool) ResetPublicNetworkAccess() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPublicNetworkAccess",
 		nil, // no parameters
 	)
 }
