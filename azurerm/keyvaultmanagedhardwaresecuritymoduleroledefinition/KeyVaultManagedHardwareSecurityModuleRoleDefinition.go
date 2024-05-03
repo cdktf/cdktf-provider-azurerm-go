@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition}.
 type KeyVaultManagedHardwareSecurityModuleRoleDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -49,6 +49,9 @@ type KeyVaultManagedHardwareSecurityModuleRoleDefinition interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ManagedHsmId() *string
+	SetManagedHsmId(val *string)
+	ManagedHsmIdInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -129,12 +132,14 @@ type KeyVaultManagedHardwareSecurityModuleRoleDefinition interface {
 	PutTimeouts(value *KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeouts)
 	ResetDescription()
 	ResetId()
+	ResetManagedHsmId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPermission()
 	ResetRoleName()
 	ResetTimeouts()
+	ResetVaultBaseUrl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -278,6 +283,26 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) Lifecycl
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) ManagedHsmId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedHsmId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) ManagedHsmIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedHsmIdInput",
 		&returns,
 	)
 	return returns
@@ -474,7 +499,7 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) VaultBas
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition} Resource.
 func NewKeyVaultManagedHardwareSecurityModuleRoleDefinition(scope constructs.Construct, id *string, config *KeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig) KeyVaultManagedHardwareSecurityModuleRoleDefinition {
 	_init_.Initialize()
 
@@ -492,7 +517,7 @@ func NewKeyVaultManagedHardwareSecurityModuleRoleDefinition(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition} Resource.
 func NewKeyVaultManagedHardwareSecurityModuleRoleDefinition_Override(k KeyVaultManagedHardwareSecurityModuleRoleDefinition, scope constructs.Construct, id *string, config *KeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig) {
 	_init_.Initialize()
 
@@ -570,6 +595,17 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition)SetLifecy
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition)SetManagedHsmId(val *string) {
+	if err := j.validateSetManagedHsmIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedHsmId",
 		val,
 	)
 }
@@ -1017,6 +1053,14 @@ func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) ResetId(
 	)
 }
 
+func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) ResetManagedHsmId() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetManagedHsmId",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1045,6 +1089,14 @@ func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) ResetTim
 	_jsii_.InvokeVoid(
 		k,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) ResetVaultBaseUrl() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetVaultBaseUrl",
 		nil, // no parameters
 	)
 }

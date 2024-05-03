@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/api_management_api_version_set azurerm_api_management_api_version_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/api_management_api_version_set azurerm_api_management_api_version_set}.
 type ApiManagementApiVersionSet interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -521,7 +521,7 @@ func (j *jsiiProxy_ApiManagementApiVersionSet) VersionQueryNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/api_management_api_version_set azurerm_api_management_api_version_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/api_management_api_version_set azurerm_api_management_api_version_set} Resource.
 func NewApiManagementApiVersionSet(scope constructs.Construct, id *string, config *ApiManagementApiVersionSetConfig) ApiManagementApiVersionSet {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewApiManagementApiVersionSet(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/api_management_api_version_set azurerm_api_management_api_version_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/api_management_api_version_set azurerm_api_management_api_version_set} Resource.
 func NewApiManagementApiVersionSet_Override(a ApiManagementApiVersionSet, scope constructs.Construct, id *string, config *ApiManagementApiVersionSetConfig) {
 	_init_.Initialize()
 

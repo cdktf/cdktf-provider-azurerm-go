@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/mysql_configuration azurerm_mysql_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/mysql_configuration azurerm_mysql_configuration}.
 type MysqlConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_MysqlConfiguration) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/mysql_configuration azurerm_mysql_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/mysql_configuration azurerm_mysql_configuration} Resource.
 func NewMysqlConfiguration(scope constructs.Construct, id *string, config *MysqlConfigurationConfig) MysqlConfiguration {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewMysqlConfiguration(scope constructs.Construct, id *string, config *Mysql
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/mysql_configuration azurerm_mysql_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/mysql_configuration azurerm_mysql_configuration} Resource.
 func NewMysqlConfiguration_Override(m MysqlConfiguration, scope constructs.Construct, id *string, config *MysqlConfigurationConfig) {
 	_init_.Initialize()
 

@@ -207,6 +207,17 @@ func (l *jsiiProxy_LoadTest) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (l *jsiiProxy_LoadTest) validatePutEncryptionParameters(value *LoadTestEncryption) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (l *jsiiProxy_LoadTest) validatePutIdentityParameters(value *LoadTestIdentity) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

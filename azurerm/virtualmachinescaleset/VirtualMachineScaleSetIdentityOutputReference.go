@@ -36,6 +36,7 @@ type VirtualMachineScaleSetIdentityOutputReference interface {
 	InternalValue() *VirtualMachineScaleSetIdentity
 	SetInternalValue(val *VirtualMachineScaleSetIdentity)
 	PrincipalId() *string
+	TenantId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -162,6 +163,16 @@ func (j *jsiiProxy_VirtualMachineScaleSetIdentityOutputReference) PrincipalId() 
 	_jsii_.Get(
 		j,
 		"principalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualMachineScaleSetIdentityOutputReference) TenantId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantId",
 		&returns,
 	)
 	return returns

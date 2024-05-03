@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module}.
 type KeyVaultManagedHardwareSecurityModule interface {
 	cdktf.TerraformResource
 	AdminObjectIds() *[]*string
@@ -662,7 +662,7 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModule) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module} Resource.
 func NewKeyVaultManagedHardwareSecurityModule(scope constructs.Construct, id *string, config *KeyVaultManagedHardwareSecurityModuleConfig) KeyVaultManagedHardwareSecurityModule {
 	_init_.Initialize()
 
@@ -680,7 +680,7 @@ func NewKeyVaultManagedHardwareSecurityModule(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/key_vault_managed_hardware_security_module azurerm_key_vault_managed_hardware_security_module} Resource.
 func NewKeyVaultManagedHardwareSecurityModule_Override(k KeyVaultManagedHardwareSecurityModule, scope constructs.Construct, id *string, config *KeyVaultManagedHardwareSecurityModuleConfig) {
 	_init_.Initialize()
 

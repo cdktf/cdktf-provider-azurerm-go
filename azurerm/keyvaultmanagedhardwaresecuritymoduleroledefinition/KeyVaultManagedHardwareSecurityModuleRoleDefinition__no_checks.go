@@ -119,6 +119,10 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) validate
 	return nil
 }
 
+func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) validateSetManagedHsmIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) validateSetNameParameters(val *string) error {
 	return nil
 }

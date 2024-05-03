@@ -5,7 +5,7 @@ package stackhcicluster
 
 
 type StackHciClusterIdentity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/stack_hci_cluster#type StackHciCluster#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/stack_hci_cluster#type StackHciCluster#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

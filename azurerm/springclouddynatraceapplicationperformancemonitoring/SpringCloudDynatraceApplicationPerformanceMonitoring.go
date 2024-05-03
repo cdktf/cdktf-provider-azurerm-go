@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/spring_cloud_dynatrace_application_performance_monitoring azurerm_spring_cloud_dynatrace_application_performance_monitoring}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/spring_cloud_dynatrace_application_performance_monitoring azurerm_spring_cloud_dynatrace_application_performance_monitoring}.
 type SpringCloudDynatraceApplicationPerformanceMonitoring interface {
 	cdktf.TerraformResource
 	ApiToken() *string
@@ -545,7 +545,7 @@ func (j *jsiiProxy_SpringCloudDynatraceApplicationPerformanceMonitoring) Timeout
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/spring_cloud_dynatrace_application_performance_monitoring azurerm_spring_cloud_dynatrace_application_performance_monitoring} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/spring_cloud_dynatrace_application_performance_monitoring azurerm_spring_cloud_dynatrace_application_performance_monitoring} Resource.
 func NewSpringCloudDynatraceApplicationPerformanceMonitoring(scope constructs.Construct, id *string, config *SpringCloudDynatraceApplicationPerformanceMonitoringConfig) SpringCloudDynatraceApplicationPerformanceMonitoring {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewSpringCloudDynatraceApplicationPerformanceMonitoring(scope constructs.Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/spring_cloud_dynatrace_application_performance_monitoring azurerm_spring_cloud_dynatrace_application_performance_monitoring} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/spring_cloud_dynatrace_application_performance_monitoring azurerm_spring_cloud_dynatrace_application_performance_monitoring} Resource.
 func NewSpringCloudDynatraceApplicationPerformanceMonitoring_Override(s SpringCloudDynatraceApplicationPerformanceMonitoring, scope constructs.Construct, id *string, config *SpringCloudDynatraceApplicationPerformanceMonitoringConfig) {
 	_init_.Initialize()
 

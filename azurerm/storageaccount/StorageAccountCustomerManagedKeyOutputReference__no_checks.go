@@ -67,6 +67,10 @@ func (j *jsiiProxy_StorageAccountCustomerManagedKeyOutputReference) validateSetK
 	return nil
 }
 
+func (j *jsiiProxy_StorageAccountCustomerManagedKeyOutputReference) validateSetManagedHsmKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccountCustomerManagedKeyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

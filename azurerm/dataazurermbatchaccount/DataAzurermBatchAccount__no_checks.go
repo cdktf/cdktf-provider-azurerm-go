@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataAzurermBatchAccount) validateOverrideLogicalIdParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurermBatchAccount) validatePutEncryptionParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataAzurermBatchAccount) validatePutTimeoutsParameters(value *DataAzurermBatchAccountTimeouts) error {
 	return nil
 }

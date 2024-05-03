@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/load_test azurerm_load_test}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/load_test azurerm_load_test}.
 type LoadTest interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,6 +35,8 @@ type LoadTest interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	Encryption() LoadTestEncryptionOutputReference
+	EncryptionInput() *LoadTestEncryption
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -127,9 +129,11 @@ type LoadTest interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryption(value *LoadTestEncryption)
 	PutIdentity(value *LoadTestIdentity)
 	PutTimeouts(value *LoadTestTimeouts)
 	ResetDescription()
+	ResetEncryption()
 	ResetId()
 	ResetIdentity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -230,6 +234,26 @@ func (j *jsiiProxy_LoadTest) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadTest) Encryption() LoadTestEncryptionOutputReference {
+	var returns LoadTestEncryptionOutputReference
+	_jsii_.Get(
+		j,
+		"encryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadTest) EncryptionInput() *LoadTestEncryption {
+	var returns *LoadTestEncryption
+	_jsii_.Get(
+		j,
+		"encryptionInput",
 		&returns,
 	)
 	return returns
@@ -486,7 +510,7 @@ func (j *jsiiProxy_LoadTest) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/load_test azurerm_load_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/load_test azurerm_load_test} Resource.
 func NewLoadTest(scope constructs.Construct, id *string, config *LoadTestConfig) LoadTest {
 	_init_.Initialize()
 
@@ -504,7 +528,7 @@ func NewLoadTest(scope constructs.Construct, id *string, config *LoadTestConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/load_test azurerm_load_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/load_test azurerm_load_test} Resource.
 func NewLoadTest_Override(l LoadTest, scope constructs.Construct, id *string, config *LoadTestConfig) {
 	_init_.Initialize()
 
@@ -1002,6 +1026,17 @@ func (l *jsiiProxy_LoadTest) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (l *jsiiProxy_LoadTest) PutEncryption(value *LoadTestEncryption) {
+	if err := l.validatePutEncryptionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putEncryption",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LoadTest) PutIdentity(value *LoadTestIdentity) {
 	if err := l.validatePutIdentityParameters(value); err != nil {
 		panic(err)
@@ -1028,6 +1063,14 @@ func (l *jsiiProxy_LoadTest) ResetDescription() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadTest) ResetEncryption() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetEncryption",
 		nil, // no parameters
 	)
 }

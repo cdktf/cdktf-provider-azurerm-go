@@ -59,11 +59,7 @@ func (j *jsiiProxy_DataAzurermBatchAccountEncryptionOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermBatchAccountEncryptionOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermBatchAccountEncryptionOutputReference) validateSetKeyVaultKeyIdParameters(val *string) error {
+func (j *jsiiProxy_DataAzurermBatchAccountEncryptionOutputReference) validateSetInternalValueParameters(val *DataAzurermBatchAccountEncryption) error {
 	return nil
 }
 

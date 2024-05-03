@@ -30,11 +30,9 @@ type DataAzurermBatchAccountEncryptionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAzurermBatchAccountEncryption
+	SetInternalValue(val *DataAzurermBatchAccountEncryption)
 	KeyVaultKeyId() *string
-	SetKeyVaultKeyId(val *string)
-	KeyVaultKeyIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +65,6 @@ type DataAzurermBatchAccountEncryptionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetKeyVaultKeyId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -123,8 +120,8 @@ func (j *jsiiProxy_DataAzurermBatchAccountEncryptionOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermBatchAccountEncryptionOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAzurermBatchAccountEncryptionOutputReference) InternalValue() *DataAzurermBatchAccountEncryption {
+	var returns *DataAzurermBatchAccountEncryption
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -138,16 +135,6 @@ func (j *jsiiProxy_DataAzurermBatchAccountEncryptionOutputReference) KeyVaultKey
 	_jsii_.Get(
 		j,
 		"keyVaultKeyId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermBatchAccountEncryptionOutputReference) KeyVaultKeyIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"keyVaultKeyIdInput",
 		&returns,
 	)
 	return returns
@@ -223,24 +210,13 @@ func (j *jsiiProxy_DataAzurermBatchAccountEncryptionOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DataAzurermBatchAccountEncryptionOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAzurermBatchAccountEncryptionOutputReference)SetInternalValue(val *DataAzurermBatchAccountEncryption) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermBatchAccountEncryptionOutputReference)SetKeyVaultKeyId(val *string) {
-	if err := j.validateSetKeyVaultKeyIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"keyVaultKeyId",
 		val,
 	)
 }
@@ -451,14 +427,6 @@ func (d *jsiiProxy_DataAzurermBatchAccountEncryptionOutputReference) Interpolati
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataAzurermBatchAccountEncryptionOutputReference) ResetKeyVaultKeyId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetKeyVaultKeyId",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataAzurermBatchAccountEncryptionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitio
 	return nil
 }
 
+func (j *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition) validateSetManagedHsmIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition) validateSetNameParameters(val *string) error {
 	return nil
 }

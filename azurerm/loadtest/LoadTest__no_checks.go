@@ -75,6 +75,10 @@ func (l *jsiiProxy_LoadTest) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (l *jsiiProxy_LoadTest) validatePutEncryptionParameters(value *LoadTestEncryption) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadTest) validatePutIdentityParameters(value *LoadTestIdentity) error {
 	return nil
 }

@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAzurermBatchAccountEncryptionList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermBatchAccountEncryptionList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAzurermBatchAccountEncryptionList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

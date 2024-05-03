@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/data-sources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/data-sources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition}.
 type DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition interface {
 	cdktf.TerraformDataSource
 	AssignableScopes() *[]*string
@@ -44,6 +44,9 @@ type DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ManagedHsmId() *string
+	SetManagedHsmId(val *string)
+	ManagedHsmIdInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -97,10 +100,12 @@ type DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeouts)
 	ResetId()
+	ResetManagedHsmId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
+	ResetVaultBaseUrl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -235,6 +240,26 @@ func (j *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitio
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition) ManagedHsmId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedHsmId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition) ManagedHsmIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedHsmIdInput",
 		&returns,
 	)
 	return returns
@@ -401,7 +426,7 @@ func (j *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitio
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/data-sources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/data-sources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition} Data Source.
 func NewDataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition(scope constructs.Construct, id *string, config *DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig) DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition {
 	_init_.Initialize()
 
@@ -419,7 +444,7 @@ func NewDataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition(scope con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/data-sources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/data-sources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition} Data Source.
 func NewDataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition_Override(d DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition, scope constructs.Construct, id *string, config *DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig) {
 	_init_.Initialize()
 
@@ -475,6 +500,17 @@ func (j *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitio
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition)SetManagedHsmId(val *string) {
+	if err := j.validateSetManagedHsmIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedHsmId",
 		val,
 	)
 }
@@ -813,6 +849,14 @@ func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitio
 	)
 }
 
+func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition) ResetManagedHsmId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetManagedHsmId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -825,6 +869,14 @@ func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitio
 	_jsii_.InvokeVoid(
 		d,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition) ResetVaultBaseUrl() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetVaultBaseUrl",
 		nil, // no parameters
 	)
 }

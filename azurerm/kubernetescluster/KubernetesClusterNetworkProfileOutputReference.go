@@ -63,6 +63,12 @@ type KubernetesClusterNetworkProfileOutputReference interface {
 	NetworkPolicy() *string
 	SetNetworkPolicy(val *string)
 	NetworkPolicyInput() *string
+	OutboundIpAddressIds() *[]*string
+	SetOutboundIpAddressIds(val *[]*string)
+	OutboundIpAddressIdsInput() *[]*string
+	OutboundIpPrefixIds() *[]*string
+	SetOutboundIpPrefixIds(val *[]*string)
+	OutboundIpPrefixIdsInput() *[]*string
 	OutboundType() *string
 	SetOutboundType(val *string)
 	OutboundTypeInput() *string
@@ -122,6 +128,8 @@ type KubernetesClusterNetworkProfileOutputReference interface {
 	ResetNetworkMode()
 	ResetNetworkPluginMode()
 	ResetNetworkPolicy()
+	ResetOutboundIpAddressIds()
+	ResetOutboundIpPrefixIds()
 	ResetOutboundType()
 	ResetPodCidr()
 	ResetPodCidrs()
@@ -412,6 +420,46 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) NetworkPolicy
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) OutboundIpAddressIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"outboundIpAddressIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) OutboundIpAddressIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"outboundIpAddressIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) OutboundIpPrefixIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"outboundIpPrefixIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) OutboundIpPrefixIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"outboundIpPrefixIdsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) OutboundType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -688,6 +736,28 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetNetworkPoli
 	_jsii_.Set(
 		j,
 		"networkPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetOutboundIpAddressIds(val *[]*string) {
+	if err := j.validateSetOutboundIpAddressIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"outboundIpAddressIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetOutboundIpPrefixIds(val *[]*string) {
+	if err := j.validateSetOutboundIpPrefixIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"outboundIpPrefixIds",
 		val,
 	)
 }
@@ -1053,6 +1123,22 @@ func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetNetworkP
 	_jsii_.InvokeVoid(
 		k,
 		"resetNetworkPolicy",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetOutboundIpAddressIds() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOutboundIpAddressIds",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetOutboundIpPrefixIds() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOutboundIpPrefixIds",
 		nil, // no parameters
 	)
 }

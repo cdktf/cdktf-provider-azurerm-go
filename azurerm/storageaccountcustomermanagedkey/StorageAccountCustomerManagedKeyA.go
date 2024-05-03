@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key}.
 type StorageAccountCustomerManagedKeyA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type StorageAccountCustomerManagedKeyA interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ManagedHsmKeyId() *string
+	SetManagedHsmKeyId(val *string)
+	ManagedHsmKeyIdInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -136,6 +139,7 @@ type StorageAccountCustomerManagedKeyA interface {
 	ResetKeyVaultId()
 	ResetKeyVaultUri()
 	ResetKeyVersion()
+	ResetManagedHsmKeyId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -369,6 +373,26 @@ func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) Lifecycle() *cdktf.Terrafo
 	return returns
 }
 
+func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) ManagedHsmKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedHsmKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) ManagedHsmKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedHsmKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -500,7 +524,7 @@ func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) UserAssignedIdentityIdInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key} Resource.
 func NewStorageAccountCustomerManagedKeyA(scope constructs.Construct, id *string, config *StorageAccountCustomerManagedKeyAConfig) StorageAccountCustomerManagedKeyA {
 	_init_.Initialize()
 
@@ -518,7 +542,7 @@ func NewStorageAccountCustomerManagedKeyA(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key} Resource.
 func NewStorageAccountCustomerManagedKeyA_Override(s StorageAccountCustomerManagedKeyA, scope constructs.Construct, id *string, config *StorageAccountCustomerManagedKeyAConfig) {
 	_init_.Initialize()
 
@@ -640,6 +664,17 @@ func (j *jsiiProxy_StorageAccountCustomerManagedKeyA)SetLifecycle(val *cdktf.Ter
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageAccountCustomerManagedKeyA)SetManagedHsmKeyId(val *string) {
+	if err := j.validateSetManagedHsmKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedHsmKeyId",
 		val,
 	)
 }
@@ -1085,6 +1120,14 @@ func (s *jsiiProxy_StorageAccountCustomerManagedKeyA) ResetKeyVersion() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetKeyVersion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageAccountCustomerManagedKeyA) ResetManagedHsmKeyId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetManagedHsmKeyId",
 		nil, // no parameters
 	)
 }

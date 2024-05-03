@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/cosmosdb_sql_function azurerm_cosmosdb_sql_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/cosmosdb_sql_function azurerm_cosmosdb_sql_function}.
 type CosmosdbSqlFunction interface {
 	cdktf.TerraformResource
 	Body() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_CosmosdbSqlFunction) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/cosmosdb_sql_function azurerm_cosmosdb_sql_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/cosmosdb_sql_function azurerm_cosmosdb_sql_function} Resource.
 func NewCosmosdbSqlFunction(scope constructs.Construct, id *string, config *CosmosdbSqlFunctionConfig) CosmosdbSqlFunction {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewCosmosdbSqlFunction(scope constructs.Construct, id *string, config *Cosm
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/cosmosdb_sql_function azurerm_cosmosdb_sql_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/cosmosdb_sql_function azurerm_cosmosdb_sql_function} Resource.
 func NewCosmosdbSqlFunction_Override(c CosmosdbSqlFunction, scope constructs.Construct, id *string, config *CosmosdbSqlFunctionConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/data-sources/batch_account azurerm_batch_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/data-sources/batch_account azurerm_batch_account}.
 type DataAzurermBatchAccount interface {
 	cdktf.TerraformDataSource
 	AccountEndpoint() *string
@@ -29,7 +29,6 @@ type DataAzurermBatchAccount interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Encryption() DataAzurermBatchAccountEncryptionList
-	EncryptionInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -99,9 +98,7 @@ type DataAzurermBatchAccount interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEncryption(value interface{})
 	PutTimeouts(value *DataAzurermBatchAccountTimeouts)
-	ResetEncryption()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -181,16 +178,6 @@ func (j *jsiiProxy_DataAzurermBatchAccount) Encryption() DataAzurermBatchAccount
 	_jsii_.Get(
 		j,
 		"encryption",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermBatchAccount) EncryptionInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"encryptionInput",
 		&returns,
 	)
 	return returns
@@ -447,7 +434,7 @@ func (j *jsiiProxy_DataAzurermBatchAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/data-sources/batch_account azurerm_batch_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/data-sources/batch_account azurerm_batch_account} Data Source.
 func NewDataAzurermBatchAccount(scope constructs.Construct, id *string, config *DataAzurermBatchAccountConfig) DataAzurermBatchAccount {
 	_init_.Initialize()
 
@@ -465,7 +452,7 @@ func NewDataAzurermBatchAccount(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/data-sources/batch_account azurerm_batch_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/data-sources/batch_account azurerm_batch_account} Data Source.
 func NewDataAzurermBatchAccount_Override(d DataAzurermBatchAccount, scope constructs.Construct, id *string, config *DataAzurermBatchAccountConfig) {
 	_init_.Initialize()
 
@@ -840,17 +827,6 @@ func (d *jsiiProxy_DataAzurermBatchAccount) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
-func (d *jsiiProxy_DataAzurermBatchAccount) PutEncryption(value interface{}) {
-	if err := d.validatePutEncryptionParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putEncryption",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataAzurermBatchAccount) PutTimeouts(value *DataAzurermBatchAccountTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -859,14 +835,6 @@ func (d *jsiiProxy_DataAzurermBatchAccount) PutTimeouts(value *DataAzurermBatchA
 		d,
 		"putTimeouts",
 		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAzurermBatchAccount) ResetEncryption() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEncryption",
-		nil, // no parameters
 	)
 }
 

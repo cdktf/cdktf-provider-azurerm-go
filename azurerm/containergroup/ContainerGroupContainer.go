@@ -5,51 +5,51 @@ package containergroup
 
 
 type ContainerGroupContainer struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_group#cpu ContainerGroup#cpu}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_group#cpu ContainerGroup#cpu}.
 	Cpu *float64 `field:"required" json:"cpu" yaml:"cpu"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_group#image ContainerGroup#image}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_group#image ContainerGroup#image}.
 	Image *string `field:"required" json:"image" yaml:"image"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_group#memory ContainerGroup#memory}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_group#memory ContainerGroup#memory}.
 	Memory *float64 `field:"required" json:"memory" yaml:"memory"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_group#name ContainerGroup#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_group#name ContainerGroup#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_group#commands ContainerGroup#commands}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_group#commands ContainerGroup#commands}.
 	Commands *[]*string `field:"optional" json:"commands" yaml:"commands"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_group#cpu_limit ContainerGroup#cpu_limit}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_group#cpu_limit ContainerGroup#cpu_limit}.
 	CpuLimit *float64 `field:"optional" json:"cpuLimit" yaml:"cpuLimit"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_group#environment_variables ContainerGroup#environment_variables}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_group#environment_variables ContainerGroup#environment_variables}.
 	EnvironmentVariables *map[string]*string `field:"optional" json:"environmentVariables" yaml:"environmentVariables"`
 	// gpu block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_group#gpu ContainerGroup#gpu}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_group#gpu ContainerGroup#gpu}
 	Gpu *ContainerGroupContainerGpu `field:"optional" json:"gpu" yaml:"gpu"`
 	// gpu_limit block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_group#gpu_limit ContainerGroup#gpu_limit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_group#gpu_limit ContainerGroup#gpu_limit}
 	GpuLimit *ContainerGroupContainerGpuLimit `field:"optional" json:"gpuLimit" yaml:"gpuLimit"`
 	// liveness_probe block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_group#liveness_probe ContainerGroup#liveness_probe}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_group#liveness_probe ContainerGroup#liveness_probe}
 	LivenessProbe *ContainerGroupContainerLivenessProbe `field:"optional" json:"livenessProbe" yaml:"livenessProbe"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_group#memory_limit ContainerGroup#memory_limit}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_group#memory_limit ContainerGroup#memory_limit}.
 	MemoryLimit *float64 `field:"optional" json:"memoryLimit" yaml:"memoryLimit"`
 	// ports block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_group#ports ContainerGroup#ports}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_group#ports ContainerGroup#ports}
 	Ports interface{} `field:"optional" json:"ports" yaml:"ports"`
 	// readiness_probe block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_group#readiness_probe ContainerGroup#readiness_probe}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_group#readiness_probe ContainerGroup#readiness_probe}
 	ReadinessProbe *ContainerGroupContainerReadinessProbe `field:"optional" json:"readinessProbe" yaml:"readinessProbe"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_group#secure_environment_variables ContainerGroup#secure_environment_variables}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_group#secure_environment_variables ContainerGroup#secure_environment_variables}.
 	SecureEnvironmentVariables *map[string]*string `field:"optional" json:"secureEnvironmentVariables" yaml:"secureEnvironmentVariables"`
 	// security block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_group#security ContainerGroup#security}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_group#security ContainerGroup#security}
 	Security interface{} `field:"optional" json:"security" yaml:"security"`
 	// volume block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.101.0/docs/resources/container_group#volume ContainerGroup#volume}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_group#volume ContainerGroup#volume}
 	Volume interface{} `field:"optional" json:"volume" yaml:"volume"`
 }
 

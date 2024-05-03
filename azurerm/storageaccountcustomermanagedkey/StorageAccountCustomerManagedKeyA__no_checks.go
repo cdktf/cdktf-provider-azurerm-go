@@ -131,6 +131,10 @@ func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) validateSetLifecycleParame
 	return nil
 }
 
+func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) validateSetManagedHsmKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccountCustomerManagedKeyA) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
