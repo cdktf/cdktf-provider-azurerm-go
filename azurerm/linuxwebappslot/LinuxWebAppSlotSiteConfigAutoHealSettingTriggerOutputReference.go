@@ -36,6 +36,8 @@ type LinuxWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference interface {
 	RequestsInput() *LinuxWebAppSlotSiteConfigAutoHealSettingTriggerRequests
 	SlowRequest() LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestOutputReference
 	SlowRequestInput() *LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequest
+	SlowRequestWithPath() LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList
+	SlowRequestWithPathInput() interface{}
 	StatusCode() LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeList
 	StatusCodeInput() interface{}
 	// Experimental.
@@ -72,9 +74,11 @@ type LinuxWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutRequests(value *LinuxWebAppSlotSiteConfigAutoHealSettingTriggerRequests)
 	PutSlowRequest(value *LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequest)
+	PutSlowRequestWithPath(value interface{})
 	PutStatusCode(value interface{})
 	ResetRequests()
 	ResetSlowRequest()
+	ResetSlowRequestWithPath()
 	ResetStatusCode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -176,6 +180,26 @@ func (j *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerOutputReferenc
 	_jsii_.Get(
 		j,
 		"slowRequestInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference) SlowRequestWithPath() LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList {
+	var returns LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList
+	_jsii_.Get(
+		j,
+		"slowRequestWithPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference) SlowRequestWithPathInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"slowRequestWithPathInput",
 		&returns,
 	)
 	return returns
@@ -512,6 +536,17 @@ func (l *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerOutputReferenc
 	)
 }
 
+func (l *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference) PutSlowRequestWithPath(value interface{}) {
+	if err := l.validatePutSlowRequestWithPathParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putSlowRequestWithPath",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference) PutStatusCode(value interface{}) {
 	if err := l.validatePutStatusCodeParameters(value); err != nil {
 		panic(err)
@@ -535,6 +570,14 @@ func (l *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerOutputReferenc
 	_jsii_.InvokeVoid(
 		l,
 		"resetSlowRequest",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference) ResetSlowRequestWithPath() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSlowRequestWithPath",
 		nil, // no parameters
 	)
 }

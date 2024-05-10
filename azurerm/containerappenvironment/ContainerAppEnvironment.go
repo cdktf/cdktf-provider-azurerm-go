@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_app_environment azurerm_container_app_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/container_app_environment azurerm_container_app_environment}.
 type ContainerAppEnvironment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,7 @@ type ContainerAppEnvironment interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomDomainVerificationId() *string
 	DaprApplicationInsightsConnectionString() *string
 	SetDaprApplicationInsightsConnectionString(val *string)
 	DaprApplicationInsightsConnectionStringInput() *string
@@ -214,6 +215,16 @@ func (j *jsiiProxy_ContainerAppEnvironment) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppEnvironment) CustomDomainVerificationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customDomainVerificationId",
 		&returns,
 	)
 	return returns
@@ -650,7 +661,7 @@ func (j *jsiiProxy_ContainerAppEnvironment) ZoneRedundancyEnabledInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
 func NewContainerAppEnvironment(scope constructs.Construct, id *string, config *ContainerAppEnvironmentConfig) ContainerAppEnvironment {
 	_init_.Initialize()
 
@@ -668,7 +679,7 @@ func NewContainerAppEnvironment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
 func NewContainerAppEnvironment_Override(c ContainerAppEnvironment, scope constructs.Construct, id *string, config *ContainerAppEnvironmentConfig) {
 	_init_.Initialize()
 

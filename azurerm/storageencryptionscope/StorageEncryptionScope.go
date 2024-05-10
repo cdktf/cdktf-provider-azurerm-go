@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/storage_encryption_scope azurerm_storage_encryption_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/storage_encryption_scope azurerm_storage_encryption_scope}.
 type StorageEncryptionScope interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_StorageEncryptionScope) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/storage_encryption_scope azurerm_storage_encryption_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/storage_encryption_scope azurerm_storage_encryption_scope} Resource.
 func NewStorageEncryptionScope(scope constructs.Construct, id *string, config *StorageEncryptionScopeConfig) StorageEncryptionScope {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewStorageEncryptionScope(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/storage_encryption_scope azurerm_storage_encryption_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/storage_encryption_scope azurerm_storage_encryption_scope} Resource.
 func NewStorageEncryptionScope_Override(s StorageEncryptionScope, scope constructs.Construct, id *string, config *StorageEncryptionScopeConfig) {
 	_init_.Initialize()
 

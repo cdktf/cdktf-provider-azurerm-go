@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/logic_app_integration_account_certificate azurerm_logic_app_integration_account_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/logic_app_integration_account_certificate azurerm_logic_app_integration_account_certificate}.
 type LogicAppIntegrationAccountCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -475,7 +475,7 @@ func (j *jsiiProxy_LogicAppIntegrationAccountCertificate) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/logic_app_integration_account_certificate azurerm_logic_app_integration_account_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/logic_app_integration_account_certificate azurerm_logic_app_integration_account_certificate} Resource.
 func NewLogicAppIntegrationAccountCertificate(scope constructs.Construct, id *string, config *LogicAppIntegrationAccountCertificateConfig) LogicAppIntegrationAccountCertificate {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewLogicAppIntegrationAccountCertificate(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/logic_app_integration_account_certificate azurerm_logic_app_integration_account_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/logic_app_integration_account_certificate azurerm_logic_app_integration_account_certificate} Resource.
 func NewLogicAppIntegrationAccountCertificate_Override(l LogicAppIntegrationAccountCertificate, scope constructs.Construct, id *string, config *LogicAppIntegrationAccountCertificateConfig) {
 	_init_.Initialize()
 

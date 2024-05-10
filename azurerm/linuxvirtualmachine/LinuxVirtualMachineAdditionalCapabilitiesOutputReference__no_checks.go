@@ -59,6 +59,10 @@ func (j *jsiiProxy_LinuxVirtualMachineAdditionalCapabilitiesOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_LinuxVirtualMachineAdditionalCapabilitiesOutputReference) validateSetHibernationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxVirtualMachineAdditionalCapabilitiesOutputReference) validateSetInternalValueParameters(val *LinuxVirtualMachineAdditionalCapabilities) error {
 	return nil
 }

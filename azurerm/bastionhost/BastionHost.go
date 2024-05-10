@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/bastion_host azurerm_bastion_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/bastion_host azurerm_bastion_host}.
 type BastionHost interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -54,6 +54,9 @@ type BastionHost interface {
 	IpConnectEnabled() interface{}
 	SetIpConnectEnabled(val interface{})
 	IpConnectEnabledInput() interface{}
+	KerberosEnabled() interface{}
+	SetKerberosEnabled(val interface{})
+	KerberosEnabledInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -151,6 +154,7 @@ type BastionHost interface {
 	ResetFileCopyEnabled()
 	ResetId()
 	ResetIpConnectEnabled()
+	ResetKerberosEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -363,6 +367,26 @@ func (j *jsiiProxy_BastionHost) IpConnectEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"ipConnectEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BastionHost) KerberosEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kerberosEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BastionHost) KerberosEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kerberosEnabledInput",
 		&returns,
 	)
 	return returns
@@ -629,7 +653,7 @@ func (j *jsiiProxy_BastionHost) TunnelingEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
 func NewBastionHost(scope constructs.Construct, id *string, config *BastionHostConfig) BastionHost {
 	_init_.Initialize()
 
@@ -647,7 +671,7 @@ func NewBastionHost(scope constructs.Construct, id *string, config *BastionHostC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
 func NewBastionHost_Override(b BastionHost, scope constructs.Construct, id *string, config *BastionHostConfig) {
 	_init_.Initialize()
 
@@ -736,6 +760,17 @@ func (j *jsiiProxy_BastionHost)SetIpConnectEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"ipConnectEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BastionHost)SetKerberosEnabled(val interface{}) {
+	if err := j.validateSetKerberosEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kerberosEnabled",
 		val,
 	)
 }
@@ -1261,6 +1296,14 @@ func (b *jsiiProxy_BastionHost) ResetIpConnectEnabled() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetIpConnectEnabled",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BastionHost) ResetKerberosEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetKerberosEnabled",
 		nil, // no parameters
 	)
 }

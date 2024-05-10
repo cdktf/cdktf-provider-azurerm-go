@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/sentinel_data_connector_office_atp azurerm_sentinel_data_connector_office_atp}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/sentinel_data_connector_office_atp azurerm_sentinel_data_connector_office_atp}.
 type SentinelDataConnectorOfficeAtp interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_SentinelDataConnectorOfficeAtp) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/sentinel_data_connector_office_atp azurerm_sentinel_data_connector_office_atp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/sentinel_data_connector_office_atp azurerm_sentinel_data_connector_office_atp} Resource.
 func NewSentinelDataConnectorOfficeAtp(scope constructs.Construct, id *string, config *SentinelDataConnectorOfficeAtpConfig) SentinelDataConnectorOfficeAtp {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewSentinelDataConnectorOfficeAtp(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/sentinel_data_connector_office_atp azurerm_sentinel_data_connector_office_atp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/sentinel_data_connector_office_atp azurerm_sentinel_data_connector_office_atp} Resource.
 func NewSentinelDataConnectorOfficeAtp_Override(s SentinelDataConnectorOfficeAtp, scope constructs.Construct, id *string, config *SentinelDataConnectorOfficeAtpConfig) {
 	_init_.Initialize()
 

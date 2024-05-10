@@ -5,7 +5,7 @@ package dataazurermnotificationhub
 
 
 type DataAzurermNotificationHubTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/data-sources/notification_hub#read DataAzurermNotificationHub#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/data-sources/notification_hub#read DataAzurermNotificationHub#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

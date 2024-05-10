@@ -39,6 +39,8 @@ type WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference interface 
 	RequestsInput() *WindowsWebAppSlotSiteConfigAutoHealSettingTriggerRequests
 	SlowRequest() WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestOutputReference
 	SlowRequestInput() *WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequest
+	SlowRequestWithPath() WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList
+	SlowRequestWithPathInput() interface{}
 	StatusCode() WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeList
 	StatusCodeInput() interface{}
 	// Experimental.
@@ -75,10 +77,12 @@ type WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference interface 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutRequests(value *WindowsWebAppSlotSiteConfigAutoHealSettingTriggerRequests)
 	PutSlowRequest(value *WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequest)
+	PutSlowRequestWithPath(value interface{})
 	PutStatusCode(value interface{})
 	ResetPrivateMemoryKb()
 	ResetRequests()
 	ResetSlowRequest()
+	ResetSlowRequestWithPath()
 	ResetStatusCode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -200,6 +204,26 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputRefere
 	_jsii_.Get(
 		j,
 		"slowRequestInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference) SlowRequestWithPath() WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList {
+	var returns WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList
+	_jsii_.Get(
+		j,
+		"slowRequestWithPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference) SlowRequestWithPathInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"slowRequestWithPathInput",
 		&returns,
 	)
 	return returns
@@ -547,6 +571,17 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputRefere
 	)
 }
 
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference) PutSlowRequestWithPath(value interface{}) {
+	if err := w.validatePutSlowRequestWithPathParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putSlowRequestWithPath",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference) PutStatusCode(value interface{}) {
 	if err := w.validatePutStatusCodeParameters(value); err != nil {
 		panic(err)
@@ -578,6 +613,14 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputRefere
 	_jsii_.InvokeVoid(
 		w,
 		"resetSlowRequest",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference) ResetSlowRequestWithPath() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetSlowRequestWithPath",
 		nil, // no parameters
 	)
 }

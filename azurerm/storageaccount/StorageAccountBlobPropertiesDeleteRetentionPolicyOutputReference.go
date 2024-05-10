@@ -35,6 +35,9 @@ type StorageAccountBlobPropertiesDeleteRetentionPolicyOutputReference interface 
 	Fqn() *string
 	InternalValue() *StorageAccountBlobPropertiesDeleteRetentionPolicy
 	SetInternalValue(val *StorageAccountBlobPropertiesDeleteRetentionPolicy)
+	PermanentDeleteEnabled() interface{}
+	SetPermanentDeleteEnabled(val interface{})
+	PermanentDeleteEnabledInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type StorageAccountBlobPropertiesDeleteRetentionPolicyOutputReference interface 
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDays()
+	ResetPermanentDeleteEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_StorageAccountBlobPropertiesDeleteRetentionPolicyOutputRefere
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccountBlobPropertiesDeleteRetentionPolicyOutputReference) PermanentDeleteEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"permanentDeleteEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccountBlobPropertiesDeleteRetentionPolicyOutputReference) PermanentDeleteEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"permanentDeleteEnabledInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +265,17 @@ func (j *jsiiProxy_StorageAccountBlobPropertiesDeleteRetentionPolicyOutputRefere
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageAccountBlobPropertiesDeleteRetentionPolicyOutputReference)SetPermanentDeleteEnabled(val interface{}) {
+	if err := j.validateSetPermanentDeleteEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"permanentDeleteEnabled",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (s *jsiiProxy_StorageAccountBlobPropertiesDeleteRetentionPolicyOutputRefere
 	_jsii_.InvokeVoid(
 		s,
 		"resetDays",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageAccountBlobPropertiesDeleteRetentionPolicyOutputReference) ResetPermanentDeleteEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPermanentDeleteEnabled",
 		nil, // no parameters
 	)
 }

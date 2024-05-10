@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/data-sources/subnet azurerm_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/data-sources/subnet azurerm_subnet}.
 type DataAzurermSubnet interface {
 	cdktf.TerraformDataSource
 	AddressPrefix() *string
@@ -52,6 +52,7 @@ type DataAzurermSubnet interface {
 	NetworkSecurityGroupId() *string
 	// The tree node.
 	Node() constructs.Node
+	PrivateEndpointNetworkPolicies() *string
 	PrivateEndpointNetworkPoliciesEnabled() cdktf.IResolvable
 	PrivateLinkServiceNetworkPoliciesEnabled() cdktf.IResolvable
 	// Experimental.
@@ -306,6 +307,16 @@ func (j *jsiiProxy_DataAzurermSubnet) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermSubnet) PrivateEndpointNetworkPolicies() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateEndpointNetworkPolicies",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermSubnet) PrivateEndpointNetworkPoliciesEnabled() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -457,7 +468,7 @@ func (j *jsiiProxy_DataAzurermSubnet) VirtualNetworkNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/data-sources/subnet azurerm_subnet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/data-sources/subnet azurerm_subnet} Data Source.
 func NewDataAzurermSubnet(scope constructs.Construct, id *string, config *DataAzurermSubnetConfig) DataAzurermSubnet {
 	_init_.Initialize()
 
@@ -475,7 +486,7 @@ func NewDataAzurermSubnet(scope constructs.Construct, id *string, config *DataAz
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/data-sources/subnet azurerm_subnet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/data-sources/subnet azurerm_subnet} Data Source.
 func NewDataAzurermSubnet_Override(d DataAzurermSubnet, scope constructs.Construct, id *string, config *DataAzurermSubnetConfig) {
 	_init_.Initialize()
 

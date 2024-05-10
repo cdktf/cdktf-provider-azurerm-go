@@ -67,6 +67,10 @@ func (j *jsiiProxy_StorageAccountBlobPropertiesDeleteRetentionPolicyOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_StorageAccountBlobPropertiesDeleteRetentionPolicyOutputReference) validateSetPermanentDeleteEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccountBlobPropertiesDeleteRetentionPolicyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

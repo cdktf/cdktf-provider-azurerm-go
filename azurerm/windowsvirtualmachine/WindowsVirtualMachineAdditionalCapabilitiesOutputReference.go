@@ -30,6 +30,9 @@ type WindowsVirtualMachineAdditionalCapabilitiesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HibernationEnabled() interface{}
+	SetHibernationEnabled(val interface{})
+	HibernationEnabledInput() interface{}
 	InternalValue() *WindowsVirtualMachineAdditionalCapabilities
 	SetInternalValue(val *WindowsVirtualMachineAdditionalCapabilities)
 	// Experimental.
@@ -67,6 +70,7 @@ type WindowsVirtualMachineAdditionalCapabilitiesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetHibernationEnabled()
 	ResetUltraSsdEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -118,6 +122,26 @@ func (j *jsiiProxy_WindowsVirtualMachineAdditionalCapabilitiesOutputReference) F
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineAdditionalCapabilitiesOutputReference) HibernationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hibernationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineAdditionalCapabilitiesOutputReference) HibernationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hibernationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +243,17 @@ func (j *jsiiProxy_WindowsVirtualMachineAdditionalCapabilitiesOutputReference)Se
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineAdditionalCapabilitiesOutputReference)SetHibernationEnabled(val interface{}) {
+	if err := j.validateSetHibernationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hibernationEnabled",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (w *jsiiProxy_WindowsVirtualMachineAdditionalCapabilitiesOutputReference) I
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_WindowsVirtualMachineAdditionalCapabilitiesOutputReference) ResetHibernationEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetHibernationEnabled",
+		nil, // no parameters
+	)
 }
 
 func (w *jsiiProxy_WindowsVirtualMachineAdditionalCapabilitiesOutputReference) ResetUltraSsdEnabled() {

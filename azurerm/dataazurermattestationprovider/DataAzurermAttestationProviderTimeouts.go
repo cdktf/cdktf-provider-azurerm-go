@@ -5,7 +5,7 @@ package dataazurermattestationprovider
 
 
 type DataAzurermAttestationProviderTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/data-sources/attestation_provider#read DataAzurermAttestationProvider#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/data-sources/attestation_provider#read DataAzurermAttestationProvider#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

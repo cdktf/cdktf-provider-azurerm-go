@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/logz_sub_account azurerm_logz_sub_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/logz_sub_account azurerm_logz_sub_account}.
 type LogzSubAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_LogzSubAccount) UserInput() *LogzSubAccountUser {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/logz_sub_account azurerm_logz_sub_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/logz_sub_account azurerm_logz_sub_account} Resource.
 func NewLogzSubAccount(scope constructs.Construct, id *string, config *LogzSubAccountConfig) LogzSubAccount {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewLogzSubAccount(scope constructs.Construct, id *string, config *LogzSubAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/logz_sub_account azurerm_logz_sub_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/logz_sub_account azurerm_logz_sub_account} Resource.
 func NewLogzSubAccount_Override(l LogzSubAccount, scope constructs.Construct, id *string, config *LogzSubAccountConfig) {
 	_init_.Initialize()
 

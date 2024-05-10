@@ -5,7 +5,7 @@ package dataazurermserviceplan
 
 
 type DataAzurermServicePlanTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/data-sources/service_plan#read DataAzurermServicePlan#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/data-sources/service_plan#read DataAzurermServicePlan#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

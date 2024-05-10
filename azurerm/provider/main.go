@@ -172,6 +172,10 @@ func init() {
 		reflect.TypeOf((*AzurermProviderFeaturesRecoveryService)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults",
+		reflect.TypeOf((*AzurermProviderFeaturesRecoveryServicesVaults)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup",
 		reflect.TypeOf((*AzurermProviderFeaturesResourceGroup)(nil)).Elem(),
 	)

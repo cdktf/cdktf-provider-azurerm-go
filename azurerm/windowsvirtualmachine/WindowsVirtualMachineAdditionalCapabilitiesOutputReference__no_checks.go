@@ -59,6 +59,10 @@ func (j *jsiiProxy_WindowsVirtualMachineAdditionalCapabilitiesOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_WindowsVirtualMachineAdditionalCapabilitiesOutputReference) validateSetHibernationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsVirtualMachineAdditionalCapabilitiesOutputReference) validateSetInternalValueParameters(val *WindowsVirtualMachineAdditionalCapabilities) error {
 	return nil
 }

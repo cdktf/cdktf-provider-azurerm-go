@@ -24,36 +24,36 @@ type ContainerAppEnvironmentStorageConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Storage Account Access Key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_app_environment_storage#access_key ContainerAppEnvironmentStorage#access_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/container_app_environment_storage#access_key ContainerAppEnvironmentStorage#access_key}
 	AccessKey *string `field:"required" json:"accessKey" yaml:"accessKey"`
 	// The access mode to connect this storage to the Container App. Possible values include `ReadOnly` and `ReadWrite`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_app_environment_storage#access_mode ContainerAppEnvironmentStorage#access_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/container_app_environment_storage#access_mode ContainerAppEnvironmentStorage#access_mode}
 	AccessMode *string `field:"required" json:"accessMode" yaml:"accessMode"`
 	// The Azure Storage Account in which the Share to be used is located.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_app_environment_storage#account_name ContainerAppEnvironmentStorage#account_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/container_app_environment_storage#account_name ContainerAppEnvironmentStorage#account_name}
 	AccountName *string `field:"required" json:"accountName" yaml:"accountName"`
 	// The ID of the Container App Environment to which this storage belongs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_app_environment_storage#container_app_environment_id ContainerAppEnvironmentStorage#container_app_environment_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/container_app_environment_storage#container_app_environment_id ContainerAppEnvironmentStorage#container_app_environment_id}
 	ContainerAppEnvironmentId *string `field:"required" json:"containerAppEnvironmentId" yaml:"containerAppEnvironmentId"`
 	// The name for this Storage.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_app_environment_storage#name ContainerAppEnvironmentStorage#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/container_app_environment_storage#name ContainerAppEnvironmentStorage#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The name of the Azure Storage Share to use.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_app_environment_storage#share_name ContainerAppEnvironmentStorage#share_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/container_app_environment_storage#share_name ContainerAppEnvironmentStorage#share_name}
 	ShareName *string `field:"required" json:"shareName" yaml:"shareName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_app_environment_storage#id ContainerAppEnvironmentStorage#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/container_app_environment_storage#id ContainerAppEnvironmentStorage#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/container_app_environment_storage#timeouts ContainerAppEnvironmentStorage#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/container_app_environment_storage#timeouts ContainerAppEnvironmentStorage#timeouts}
 	Timeouts *ContainerAppEnvironmentStorageTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -35,6 +35,7 @@ type DataAzurermWindowsWebAppSiteConfigAutoHealSettingTriggerOutputReference int
 	PrivateMemoryKb() *float64
 	Requests() DataAzurermWindowsWebAppSiteConfigAutoHealSettingTriggerRequestsList
 	SlowRequest() DataAzurermWindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestList
+	SlowRequestWithPath() DataAzurermWindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathList
 	StatusCode() DataAzurermWindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeList
 	// Experimental.
 	TerraformAttribute() *string
@@ -158,6 +159,16 @@ func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigAutoHealSettingTriggerOutpu
 	_jsii_.Get(
 		j,
 		"slowRequest",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigAutoHealSettingTriggerOutputReference) SlowRequestWithPath() DataAzurermWindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathList {
+	var returns DataAzurermWindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathList
+	_jsii_.Get(
+		j,
+		"slowRequestWithPath",
 		&returns,
 	)
 	return returns

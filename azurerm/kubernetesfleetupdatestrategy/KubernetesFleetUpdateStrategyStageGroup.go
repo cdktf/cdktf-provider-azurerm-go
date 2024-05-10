@@ -5,7 +5,7 @@ package kubernetesfleetupdatestrategy
 
 
 type KubernetesFleetUpdateStrategyStageGroup struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/kubernetes_fleet_update_strategy#name KubernetesFleetUpdateStrategy#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/kubernetes_fleet_update_strategy#name KubernetesFleetUpdateStrategy#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

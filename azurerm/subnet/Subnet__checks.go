@@ -451,6 +451,14 @@ func (j *jsiiProxy_Subnet) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Subnet) validateSetPrivateEndpointNetworkPoliciesParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Subnet) validateSetPrivateEndpointNetworkPoliciesEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

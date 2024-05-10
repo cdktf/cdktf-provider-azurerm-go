@@ -123,6 +123,10 @@ func (j *jsiiProxy_BastionHost) validateSetIpConnectEnabledParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_BastionHost) validateSetKerberosEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BastionHost) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -20,6 +20,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "customDomainVerificationId", GoGetter: "CustomDomainVerificationId"},
 			_jsii_.MemberProperty{JsiiProperty: "daprApplicationInsightsConnectionString", GoGetter: "DaprApplicationInsightsConnectionString"},
 			_jsii_.MemberProperty{JsiiProperty: "daprApplicationInsightsConnectionStringInput", GoGetter: "DaprApplicationInsightsConnectionStringInput"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultDomain", GoGetter: "DefaultDomain"},

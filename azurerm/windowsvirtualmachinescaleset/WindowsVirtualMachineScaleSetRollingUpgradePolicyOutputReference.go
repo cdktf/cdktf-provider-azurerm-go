@@ -38,6 +38,9 @@ type WindowsVirtualMachineScaleSetRollingUpgradePolicyOutputReference interface 
 	MaxBatchInstancePercent() *float64
 	SetMaxBatchInstancePercent(val *float64)
 	MaxBatchInstancePercentInput() *float64
+	MaximumSurgeInstancesEnabled() interface{}
+	SetMaximumSurgeInstancesEnabled(val interface{})
+	MaximumSurgeInstancesEnabledInput() interface{}
 	MaxUnhealthyInstancePercent() *float64
 	SetMaxUnhealthyInstancePercent(val *float64)
 	MaxUnhealthyInstancePercentInput() *float64
@@ -83,6 +86,7 @@ type WindowsVirtualMachineScaleSetRollingUpgradePolicyOutputReference interface 
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCrossZoneUpgradesEnabled()
+	ResetMaximumSurgeInstancesEnabled()
 	ResetPrioritizeUnhealthyInstancesEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -184,6 +188,26 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSetRollingUpgradePolicyOutputRefere
 	_jsii_.Get(
 		j,
 		"maxBatchInstancePercentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineScaleSetRollingUpgradePolicyOutputReference) MaximumSurgeInstancesEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"maximumSurgeInstancesEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineScaleSetRollingUpgradePolicyOutputReference) MaximumSurgeInstancesEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"maximumSurgeInstancesEnabledInput",
 		&returns,
 	)
 	return returns
@@ -368,6 +392,17 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSetRollingUpgradePolicyOutputRefere
 	_jsii_.Set(
 		j,
 		"maxBatchInstancePercent",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineScaleSetRollingUpgradePolicyOutputReference)SetMaximumSurgeInstancesEnabled(val interface{}) {
+	if err := j.validateSetMaximumSurgeInstancesEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maximumSurgeInstancesEnabled",
 		val,
 	)
 }
@@ -628,6 +663,14 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetRollingUpgradePolicyOutputRefere
 	_jsii_.InvokeVoid(
 		w,
 		"resetCrossZoneUpgradesEnabled",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetRollingUpgradePolicyOutputReference) ResetMaximumSurgeInstancesEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetMaximumSurgeInstancesEnabled",
 		nil, // no parameters
 	)
 }

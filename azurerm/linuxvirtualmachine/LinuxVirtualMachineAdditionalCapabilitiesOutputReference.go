@@ -30,6 +30,9 @@ type LinuxVirtualMachineAdditionalCapabilitiesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HibernationEnabled() interface{}
+	SetHibernationEnabled(val interface{})
+	HibernationEnabledInput() interface{}
 	InternalValue() *LinuxVirtualMachineAdditionalCapabilities
 	SetInternalValue(val *LinuxVirtualMachineAdditionalCapabilities)
 	// Experimental.
@@ -67,6 +70,7 @@ type LinuxVirtualMachineAdditionalCapabilitiesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetHibernationEnabled()
 	ResetUltraSsdEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -118,6 +122,26 @@ func (j *jsiiProxy_LinuxVirtualMachineAdditionalCapabilitiesOutputReference) Fqn
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineAdditionalCapabilitiesOutputReference) HibernationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hibernationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineAdditionalCapabilitiesOutputReference) HibernationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hibernationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +243,17 @@ func (j *jsiiProxy_LinuxVirtualMachineAdditionalCapabilitiesOutputReference)SetC
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineAdditionalCapabilitiesOutputReference)SetHibernationEnabled(val interface{}) {
+	if err := j.validateSetHibernationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hibernationEnabled",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (l *jsiiProxy_LinuxVirtualMachineAdditionalCapabilitiesOutputReference) Int
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LinuxVirtualMachineAdditionalCapabilitiesOutputReference) ResetHibernationEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetHibernationEnabled",
+		nil, // no parameters
+	)
 }
 
 func (l *jsiiProxy_LinuxVirtualMachineAdditionalCapabilitiesOutputReference) ResetUltraSsdEnabled() {

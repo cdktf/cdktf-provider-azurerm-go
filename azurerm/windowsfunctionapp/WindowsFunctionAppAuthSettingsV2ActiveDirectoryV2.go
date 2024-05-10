@@ -7,51 +7,51 @@ package windowsfunctionapp
 type WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2 struct {
 	// The ID of the Client to use to authenticate with Azure Active Directory.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
 	ClientId *string `field:"required" json:"clientId" yaml:"clientId"`
 	// The Azure Tenant Endpoint for the Authenticating Tenant. e.g. `https://login.microsoftonline.com/v2.0/{tenant-guid}/`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/windows_function_app#tenant_auth_endpoint WindowsFunctionApp#tenant_auth_endpoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/windows_function_app#tenant_auth_endpoint WindowsFunctionApp#tenant_auth_endpoint}
 	TenantAuthEndpoint *string `field:"required" json:"tenantAuthEndpoint" yaml:"tenantAuthEndpoint"`
 	// The list of allowed Applications for the Default Authorisation Policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/windows_function_app#allowed_applications WindowsFunctionApp#allowed_applications}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/windows_function_app#allowed_applications WindowsFunctionApp#allowed_applications}
 	AllowedApplications *[]*string `field:"optional" json:"allowedApplications" yaml:"allowedApplications"`
 	// Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/windows_function_app#allowed_audiences WindowsFunctionApp#allowed_audiences}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/windows_function_app#allowed_audiences WindowsFunctionApp#allowed_audiences}
 	AllowedAudiences *[]*string `field:"optional" json:"allowedAudiences" yaml:"allowedAudiences"`
 	// The list of allowed Group Names for the Default Authorisation Policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/windows_function_app#allowed_groups WindowsFunctionApp#allowed_groups}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/windows_function_app#allowed_groups WindowsFunctionApp#allowed_groups}
 	AllowedGroups *[]*string `field:"optional" json:"allowedGroups" yaml:"allowedGroups"`
 	// The list of allowed Identities for the Default Authorisation Policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/windows_function_app#allowed_identities WindowsFunctionApp#allowed_identities}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/windows_function_app#allowed_identities WindowsFunctionApp#allowed_identities}
 	AllowedIdentities *[]*string `field:"optional" json:"allowedIdentities" yaml:"allowedIdentities"`
 	// The thumbprint of the certificate used for signing purposes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/windows_function_app#client_secret_certificate_thumbprint WindowsFunctionApp#client_secret_certificate_thumbprint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/windows_function_app#client_secret_certificate_thumbprint WindowsFunctionApp#client_secret_certificate_thumbprint}
 	ClientSecretCertificateThumbprint *string `field:"optional" json:"clientSecretCertificateThumbprint" yaml:"clientSecretCertificateThumbprint"`
 	// The App Setting name that contains the client secret of the Client.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
 	ClientSecretSettingName *string `field:"optional" json:"clientSecretSettingName" yaml:"clientSecretSettingName"`
 	// A list of Allowed Client Applications in the JWT Claim.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/windows_function_app#jwt_allowed_client_applications WindowsFunctionApp#jwt_allowed_client_applications}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/windows_function_app#jwt_allowed_client_applications WindowsFunctionApp#jwt_allowed_client_applications}
 	JwtAllowedClientApplications *[]*string `field:"optional" json:"jwtAllowedClientApplications" yaml:"jwtAllowedClientApplications"`
 	// A list of Allowed Groups in the JWT Claim.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/windows_function_app#jwt_allowed_groups WindowsFunctionApp#jwt_allowed_groups}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/windows_function_app#jwt_allowed_groups WindowsFunctionApp#jwt_allowed_groups}
 	JwtAllowedGroups *[]*string `field:"optional" json:"jwtAllowedGroups" yaml:"jwtAllowedGroups"`
 	// A map of key-value pairs to send to the Authorisation Endpoint when a user logs in.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/windows_function_app#login_parameters WindowsFunctionApp#login_parameters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/windows_function_app#login_parameters WindowsFunctionApp#login_parameters}
 	LoginParameters *map[string]*string `field:"optional" json:"loginParameters" yaml:"loginParameters"`
 	// Should the www-authenticate provider should be omitted from the request? Defaults to `false`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.102.0/docs/resources/windows_function_app#www_authentication_disabled WindowsFunctionApp#www_authentication_disabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/windows_function_app#www_authentication_disabled WindowsFunctionApp#www_authentication_disabled}
 	WwwAuthenticationDisabled interface{} `field:"optional" json:"wwwAuthenticationDisabled" yaml:"wwwAuthenticationDisabled"`
 }
 

@@ -34,6 +34,7 @@ type DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerOutputReference inter
 	SetInternalValue(val *DataAzurermLinuxWebAppSiteConfigAutoHealSettingTrigger)
 	Requests() DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequestsList
 	SlowRequest() DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestList
+	SlowRequestWithPath() DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathList
 	StatusCode() DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeList
 	// Experimental.
 	TerraformAttribute() *string
@@ -147,6 +148,16 @@ func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerOutputR
 	_jsii_.Get(
 		j,
 		"slowRequest",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerOutputReference) SlowRequestWithPath() DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathList {
+	var returns DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathList
+	_jsii_.Get(
+		j,
+		"slowRequestWithPath",
 		&returns,
 	)
 	return returns

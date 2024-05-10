@@ -71,6 +71,10 @@ func (j *jsiiProxy_LinuxVirtualMachineScaleSetRollingUpgradePolicyOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_LinuxVirtualMachineScaleSetRollingUpgradePolicyOutputReference) validateSetMaximumSurgeInstancesEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxVirtualMachineScaleSetRollingUpgradePolicyOutputReference) validateSetMaxUnhealthyInstancePercentParameters(val *float64) error {
 	return nil
 }
