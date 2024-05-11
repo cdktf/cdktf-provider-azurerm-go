@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/media_live_event azurerm_media_live_event}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/media_live_event azurerm_media_live_event}.
 type MediaLiveEvent interface {
 	cdktf.TerraformResource
 	AutoStartEnabled() interface{}
@@ -689,7 +689,7 @@ func (j *jsiiProxy_MediaLiveEvent) UseStaticHostnameInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/media_live_event azurerm_media_live_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/media_live_event azurerm_media_live_event} Resource.
 func NewMediaLiveEvent(scope constructs.Construct, id *string, config *MediaLiveEventConfig) MediaLiveEvent {
 	_init_.Initialize()
 
@@ -707,7 +707,7 @@ func NewMediaLiveEvent(scope constructs.Construct, id *string, config *MediaLive
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/media_live_event azurerm_media_live_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/media_live_event azurerm_media_live_event} Resource.
 func NewMediaLiveEvent_Override(m MediaLiveEvent, scope constructs.Construct, id *string, config *MediaLiveEventConfig) {
 	_init_.Initialize()
 

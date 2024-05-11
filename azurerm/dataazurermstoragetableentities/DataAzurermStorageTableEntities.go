@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/data-sources/storage_table_entities azurerm_storage_table_entities}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/data-sources/storage_table_entities azurerm_storage_table_entities}.
 type DataAzurermStorageTableEntities interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_DataAzurermStorageTableEntities) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/data-sources/storage_table_entities azurerm_storage_table_entities} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/data-sources/storage_table_entities azurerm_storage_table_entities} Data Source.
 func NewDataAzurermStorageTableEntities(scope constructs.Construct, id *string, config *DataAzurermStorageTableEntitiesConfig) DataAzurermStorageTableEntities {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewDataAzurermStorageTableEntities(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/data-sources/storage_table_entities azurerm_storage_table_entities} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/data-sources/storage_table_entities azurerm_storage_table_entities} Data Source.
 func NewDataAzurermStorageTableEntities_Override(d DataAzurermStorageTableEntities, scope constructs.Construct, id *string, config *DataAzurermStorageTableEntitiesConfig) {
 	_init_.Initialize()
 

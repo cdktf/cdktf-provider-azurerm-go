@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/data-sources/app_service_certificate azurerm_app_service_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/data-sources/app_service_certificate azurerm_app_service_certificate}.
 type DataAzurermAppServiceCertificate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -447,7 +447,7 @@ func (j *jsiiProxy_DataAzurermAppServiceCertificate) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/data-sources/app_service_certificate azurerm_app_service_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/data-sources/app_service_certificate azurerm_app_service_certificate} Data Source.
 func NewDataAzurermAppServiceCertificate(scope constructs.Construct, id *string, config *DataAzurermAppServiceCertificateConfig) DataAzurermAppServiceCertificate {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewDataAzurermAppServiceCertificate(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/data-sources/app_service_certificate azurerm_app_service_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/data-sources/app_service_certificate azurerm_app_service_certificate} Data Source.
 func NewDataAzurermAppServiceCertificate_Override(d DataAzurermAppServiceCertificate, scope constructs.Construct, id *string, config *DataAzurermAppServiceCertificateConfig) {
 	_init_.Initialize()
 

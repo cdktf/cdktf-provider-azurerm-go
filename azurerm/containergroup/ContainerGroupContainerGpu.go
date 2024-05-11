@@ -5,9 +5,9 @@ package containergroup
 
 
 type ContainerGroupContainerGpu struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/container_group#count ContainerGroup#count}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/container_group#count ContainerGroup#count}.
 	Count *float64 `field:"optional" json:"count" yaml:"count"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/container_group#sku ContainerGroup#sku}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/container_group#sku ContainerGroup#sku}.
 	Sku *string `field:"optional" json:"sku" yaml:"sku"`
 }
 

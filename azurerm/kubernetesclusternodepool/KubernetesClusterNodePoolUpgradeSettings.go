@@ -5,7 +5,7 @@ package kubernetesclusternodepool
 
 
 type KubernetesClusterNodePoolUpgradeSettings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.0/docs/resources/kubernetes_cluster_node_pool#max_surge KubernetesClusterNodePool#max_surge}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/kubernetes_cluster_node_pool#max_surge KubernetesClusterNodePool#max_surge}.
 	MaxSurge *string `field:"required" json:"maxSurge" yaml:"maxSurge"`
 }
 
