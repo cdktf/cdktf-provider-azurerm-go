@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/sql_elasticpool azurerm_sql_elasticpool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/sql_elasticpool azurerm_sql_elasticpool}.
 type SqlElasticpool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -579,7 +579,7 @@ func (j *jsiiProxy_SqlElasticpool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/sql_elasticpool azurerm_sql_elasticpool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/sql_elasticpool azurerm_sql_elasticpool} Resource.
 func NewSqlElasticpool(scope constructs.Construct, id *string, config *SqlElasticpoolConfig) SqlElasticpool {
 	_init_.Initialize()
 
@@ -597,7 +597,7 @@ func NewSqlElasticpool(scope constructs.Construct, id *string, config *SqlElasti
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/sql_elasticpool azurerm_sql_elasticpool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/sql_elasticpool azurerm_sql_elasticpool} Resource.
 func NewSqlElasticpool_Override(s SqlElasticpool, scope constructs.Construct, id *string, config *SqlElasticpoolConfig) {
 	_init_.Initialize()
 

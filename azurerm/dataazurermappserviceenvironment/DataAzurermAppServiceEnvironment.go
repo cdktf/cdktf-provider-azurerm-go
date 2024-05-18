@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/data-sources/app_service_environment azurerm_app_service_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/data-sources/app_service_environment azurerm_app_service_environment}.
 type DataAzurermAppServiceEnvironment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -423,7 +423,7 @@ func (j *jsiiProxy_DataAzurermAppServiceEnvironment) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/data-sources/app_service_environment azurerm_app_service_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/data-sources/app_service_environment azurerm_app_service_environment} Data Source.
 func NewDataAzurermAppServiceEnvironment(scope constructs.Construct, id *string, config *DataAzurermAppServiceEnvironmentConfig) DataAzurermAppServiceEnvironment {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewDataAzurermAppServiceEnvironment(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/data-sources/app_service_environment azurerm_app_service_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/data-sources/app_service_environment azurerm_app_service_environment} Data Source.
 func NewDataAzurermAppServiceEnvironment_Override(d DataAzurermAppServiceEnvironment, scope constructs.Construct, id *string, config *DataAzurermAppServiceEnvironmentConfig) {
 	_init_.Initialize()
 

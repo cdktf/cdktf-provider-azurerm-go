@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/data-sources/postgresql_server azurerm_postgresql_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/data-sources/postgresql_server azurerm_postgresql_server}.
 type DataAzurermPostgresqlServer interface {
 	cdktf.TerraformDataSource
 	AdministratorLogin() *string
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataAzurermPostgresqlServer) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/data-sources/postgresql_server azurerm_postgresql_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/data-sources/postgresql_server azurerm_postgresql_server} Data Source.
 func NewDataAzurermPostgresqlServer(scope constructs.Construct, id *string, config *DataAzurermPostgresqlServerConfig) DataAzurermPostgresqlServer {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewDataAzurermPostgresqlServer(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/data-sources/postgresql_server azurerm_postgresql_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/data-sources/postgresql_server azurerm_postgresql_server} Data Source.
 func NewDataAzurermPostgresqlServer_Override(d DataAzurermPostgresqlServer, scope constructs.Construct, id *string, config *DataAzurermPostgresqlServerConfig) {
 	_init_.Initialize()
 

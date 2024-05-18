@@ -5,13 +5,13 @@ package pimactiveroleassignment
 
 
 type PimActiveRoleAssignmentTicket struct {
-	// The ticket number.
+	// User-supplied ticket number to be included with the request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/pim_active_role_assignment#number PimActiveRoleAssignment#number}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/pim_active_role_assignment#number PimActiveRoleAssignment#number}
 	Number *string `field:"optional" json:"number" yaml:"number"`
-	// The ticket system.
+	// User-supplied ticket system name to be included with the request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/pim_active_role_assignment#system PimActiveRoleAssignment#system}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/pim_active_role_assignment#system PimActiveRoleAssignment#system}
 	SystemAttribute *string `field:"optional" json:"systemAttribute" yaml:"systemAttribute"`
 }
 

@@ -33,6 +33,8 @@ type DataAzurermApplicationGatewayIdentityOutputReference interface {
 	IdentityIds() *[]*string
 	InternalValue() *DataAzurermApplicationGatewayIdentity
 	SetInternalValue(val *DataAzurermApplicationGatewayIdentity)
+	PrincipalId() *string
+	TenantId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -136,6 +138,26 @@ func (j *jsiiProxy_DataAzurermApplicationGatewayIdentityOutputReference) Interna
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGatewayIdentityOutputReference) PrincipalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApplicationGatewayIdentityOutputReference) TenantId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantId",
 		&returns,
 	)
 	return returns

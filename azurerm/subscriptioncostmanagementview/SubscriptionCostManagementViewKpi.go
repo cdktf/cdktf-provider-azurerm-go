@@ -5,7 +5,7 @@ package subscriptioncostmanagementview
 
 
 type SubscriptionCostManagementViewKpi struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

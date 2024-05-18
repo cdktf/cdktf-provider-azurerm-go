@@ -99,6 +99,10 @@ func validateDatabricksWorkspace_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_DatabricksWorkspace) validateSetAccessConnectorIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabricksWorkspace) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (j *jsiiProxy_DatabricksWorkspace) validateSetCountParameters(val interface
 }
 
 func (j *jsiiProxy_DatabricksWorkspace) validateSetCustomerManagedKeyEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabricksWorkspace) validateSetDefaultStorageFirewallEnabledParameters(val interface{}) error {
 	return nil
 }
 

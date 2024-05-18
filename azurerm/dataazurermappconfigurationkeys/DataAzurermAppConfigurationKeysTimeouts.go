@@ -5,7 +5,7 @@ package dataazurermappconfigurationkeys
 
 
 type DataAzurermAppConfigurationKeysTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/data-sources/app_configuration_keys#read DataAzurermAppConfigurationKeys#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/data-sources/app_configuration_keys#read DataAzurermAppConfigurationKeys#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

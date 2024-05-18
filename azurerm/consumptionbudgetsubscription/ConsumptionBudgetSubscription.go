@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/consumption_budget_subscription azurerm_consumption_budget_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/consumption_budget_subscription azurerm_consumption_budget_subscription}.
 type ConsumptionBudgetSubscription interface {
 	cdktf.TerraformResource
 	Amount() *float64
@@ -521,7 +521,7 @@ func (j *jsiiProxy_ConsumptionBudgetSubscription) TimePeriodInput() *Consumption
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/consumption_budget_subscription azurerm_consumption_budget_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/consumption_budget_subscription azurerm_consumption_budget_subscription} Resource.
 func NewConsumptionBudgetSubscription(scope constructs.Construct, id *string, config *ConsumptionBudgetSubscriptionConfig) ConsumptionBudgetSubscription {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewConsumptionBudgetSubscription(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/consumption_budget_subscription azurerm_consumption_budget_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/consumption_budget_subscription azurerm_consumption_budget_subscription} Resource.
 func NewConsumptionBudgetSubscription_Override(c ConsumptionBudgetSubscription, scope constructs.Construct, id *string, config *ConsumptionBudgetSubscriptionConfig) {
 	_init_.Initialize()
 

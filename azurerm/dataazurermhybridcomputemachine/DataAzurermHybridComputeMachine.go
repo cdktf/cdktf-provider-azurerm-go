@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/data-sources/hybrid_compute_machine azurerm_hybrid_compute_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/data-sources/hybrid_compute_machine azurerm_hybrid_compute_machine}.
 type DataAzurermHybridComputeMachine interface {
 	cdktf.TerraformDataSource
 	AdFqdn() *string
@@ -643,7 +643,7 @@ func (j *jsiiProxy_DataAzurermHybridComputeMachine) VmUuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/data-sources/hybrid_compute_machine azurerm_hybrid_compute_machine} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/data-sources/hybrid_compute_machine azurerm_hybrid_compute_machine} Data Source.
 func NewDataAzurermHybridComputeMachine(scope constructs.Construct, id *string, config *DataAzurermHybridComputeMachineConfig) DataAzurermHybridComputeMachine {
 	_init_.Initialize()
 
@@ -661,7 +661,7 @@ func NewDataAzurermHybridComputeMachine(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/data-sources/hybrid_compute_machine azurerm_hybrid_compute_machine} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/data-sources/hybrid_compute_machine azurerm_hybrid_compute_machine} Data Source.
 func NewDataAzurermHybridComputeMachine_Override(d DataAzurermHybridComputeMachine, scope constructs.Construct, id *string, config *DataAzurermHybridComputeMachineConfig) {
 	_init_.Initialize()
 

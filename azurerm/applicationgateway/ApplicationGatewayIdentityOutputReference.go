@@ -35,6 +35,8 @@ type ApplicationGatewayIdentityOutputReference interface {
 	IdentityIdsInput() *[]*string
 	InternalValue() *ApplicationGatewayIdentity
 	SetInternalValue(val *ApplicationGatewayIdentity)
+	PrincipalId() *string
+	TenantId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +72,7 @@ type ApplicationGatewayIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIdentityIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -150,6 +153,26 @@ func (j *jsiiProxy_ApplicationGatewayIdentityOutputReference) InternalValue() *A
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationGatewayIdentityOutputReference) PrincipalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationGatewayIdentityOutputReference) TenantId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantId",
 		&returns,
 	)
 	return returns
@@ -484,6 +507,14 @@ func (a *jsiiProxy_ApplicationGatewayIdentityOutputReference) InterpolationForAt
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_ApplicationGatewayIdentityOutputReference) ResetIdentityIds() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIdentityIds",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_ApplicationGatewayIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

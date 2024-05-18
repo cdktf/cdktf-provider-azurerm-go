@@ -5,7 +5,7 @@ package dataazurermipgroups
 
 
 type DataAzurermIpGroupsTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/data-sources/ip_groups#read DataAzurermIpGroups#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/data-sources/ip_groups#read DataAzurermIpGroups#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

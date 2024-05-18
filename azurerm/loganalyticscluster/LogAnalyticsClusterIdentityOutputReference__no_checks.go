@@ -59,6 +59,10 @@ func (j *jsiiProxy_LogAnalyticsClusterIdentityOutputReference) validateSetComple
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsClusterIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsClusterIdentityOutputReference) validateSetInternalValueParameters(val *LogAnalyticsClusterIdentity) error {
 	return nil
 }

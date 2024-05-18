@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/kubernetes_cluster_extension azurerm_kubernetes_cluster_extension}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/kubernetes_cluster_extension azurerm_kubernetes_cluster_extension}.
 type KubernetesClusterExtension interface {
 	cdktf.TerraformResource
 	AksAssignedIdentity() KubernetesClusterExtensionAksAssignedIdentityList
@@ -593,7 +593,7 @@ func (j *jsiiProxy_KubernetesClusterExtension) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/kubernetes_cluster_extension azurerm_kubernetes_cluster_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/kubernetes_cluster_extension azurerm_kubernetes_cluster_extension} Resource.
 func NewKubernetesClusterExtension(scope constructs.Construct, id *string, config *KubernetesClusterExtensionConfig) KubernetesClusterExtension {
 	_init_.Initialize()
 
@@ -611,7 +611,7 @@ func NewKubernetesClusterExtension(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/kubernetes_cluster_extension azurerm_kubernetes_cluster_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/kubernetes_cluster_extension azurerm_kubernetes_cluster_extension} Resource.
 func NewKubernetesClusterExtension_Override(k KubernetesClusterExtension, scope constructs.Construct, id *string, config *KubernetesClusterExtensionConfig) {
 	_init_.Initialize()
 

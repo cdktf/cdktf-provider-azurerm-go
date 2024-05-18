@@ -166,6 +166,14 @@ func (j *jsiiProxy_LogAnalyticsClusterIdentityOutputReference) validateSetComple
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsClusterIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsClusterIdentityOutputReference) validateSetInternalValueParameters(val *LogAnalyticsClusterIdentity) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

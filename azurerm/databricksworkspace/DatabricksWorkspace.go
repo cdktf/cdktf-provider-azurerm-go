@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/databricks_workspace azurerm_databricks_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/databricks_workspace azurerm_databricks_workspace}.
 type DatabricksWorkspace interface {
 	cdktf.TerraformResource
+	AccessConnectorId() *string
+	SetAccessConnectorId(val *string)
+	AccessConnectorIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -32,6 +35,9 @@ type DatabricksWorkspace interface {
 	CustomerManagedKeyEnabledInput() interface{}
 	CustomParameters() DatabricksWorkspaceCustomParametersOutputReference
 	CustomParametersInput() *DatabricksWorkspaceCustomParameters
+	DefaultStorageFirewallEnabled() interface{}
+	SetDefaultStorageFirewallEnabled(val interface{})
+	DefaultStorageFirewallEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -167,8 +173,10 @@ type DatabricksWorkspace interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCustomParameters(value *DatabricksWorkspaceCustomParameters)
 	PutTimeouts(value *DatabricksWorkspaceTimeouts)
+	ResetAccessConnectorId()
 	ResetCustomerManagedKeyEnabled()
 	ResetCustomParameters()
+	ResetDefaultStorageFirewallEnabled()
 	ResetId()
 	ResetInfrastructureEncryptionEnabled()
 	ResetLoadBalancerBackendAddressPoolId()
@@ -201,6 +209,26 @@ type DatabricksWorkspace interface {
 // The jsii proxy struct for DatabricksWorkspace
 type jsiiProxy_DatabricksWorkspace struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DatabricksWorkspace) AccessConnectorId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessConnectorId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksWorkspace) AccessConnectorIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessConnectorIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DatabricksWorkspace) CdktfStack() cdktf.TerraformStack {
@@ -278,6 +306,26 @@ func (j *jsiiProxy_DatabricksWorkspace) CustomParametersInput() *DatabricksWorks
 	_jsii_.Get(
 		j,
 		"customParametersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksWorkspace) DefaultStorageFirewallEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultStorageFirewallEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksWorkspace) DefaultStorageFirewallEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultStorageFirewallEnabledInput",
 		&returns,
 	)
 	return returns
@@ -804,7 +852,7 @@ func (j *jsiiProxy_DatabricksWorkspace) WorkspaceUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/databricks_workspace azurerm_databricks_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/databricks_workspace azurerm_databricks_workspace} Resource.
 func NewDatabricksWorkspace(scope constructs.Construct, id *string, config *DatabricksWorkspaceConfig) DatabricksWorkspace {
 	_init_.Initialize()
 
@@ -822,7 +870,7 @@ func NewDatabricksWorkspace(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/databricks_workspace azurerm_databricks_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/databricks_workspace azurerm_databricks_workspace} Resource.
 func NewDatabricksWorkspace_Override(d DatabricksWorkspace, scope constructs.Construct, id *string, config *DatabricksWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -830,6 +878,17 @@ func NewDatabricksWorkspace_Override(d DatabricksWorkspace, scope constructs.Con
 		"@cdktf/provider-azurerm.databricksWorkspace.DatabricksWorkspace",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DatabricksWorkspace)SetAccessConnectorId(val *string) {
+	if err := j.validateSetAccessConnectorIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessConnectorId",
+		val,
 	)
 }
 
@@ -862,6 +921,17 @@ func (j *jsiiProxy_DatabricksWorkspace)SetCustomerManagedKeyEnabled(val interfac
 	_jsii_.Set(
 		j,
 		"customerManagedKeyEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabricksWorkspace)SetDefaultStorageFirewallEnabled(val interface{}) {
+	if err := j.validateSetDefaultStorageFirewallEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultStorageFirewallEnabled",
 		val,
 	)
 }
@@ -1463,6 +1533,14 @@ func (d *jsiiProxy_DatabricksWorkspace) PutTimeouts(value *DatabricksWorkspaceTi
 	)
 }
 
+func (d *jsiiProxy_DatabricksWorkspace) ResetAccessConnectorId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccessConnectorId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabricksWorkspace) ResetCustomerManagedKeyEnabled() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1475,6 +1553,14 @@ func (d *jsiiProxy_DatabricksWorkspace) ResetCustomParameters() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCustomParameters",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksWorkspace) ResetDefaultStorageFirewallEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDefaultStorageFirewallEnabled",
 		nil, // no parameters
 	)
 }

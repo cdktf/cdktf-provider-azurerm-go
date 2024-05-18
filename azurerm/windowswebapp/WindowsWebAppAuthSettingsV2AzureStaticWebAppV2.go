@@ -7,7 +7,7 @@ package windowswebapp
 type WindowsWebAppAuthSettingsV2AzureStaticWebAppV2 struct {
 	// The ID of the Client to use to authenticate with Azure Static Web App Authentication.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.103.1/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
 	ClientId *string `field:"required" json:"clientId" yaml:"clientId"`
 }
 
