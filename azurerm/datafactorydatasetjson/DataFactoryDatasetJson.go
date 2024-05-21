@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/data_factory_dataset_json azurerm_data_factory_dataset_json}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/data_factory_dataset_json azurerm_data_factory_dataset_json}.
 type DataFactoryDatasetJson interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -619,7 +619,7 @@ func (j *jsiiProxy_DataFactoryDatasetJson) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/data_factory_dataset_json azurerm_data_factory_dataset_json} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/data_factory_dataset_json azurerm_data_factory_dataset_json} Resource.
 func NewDataFactoryDatasetJson(scope constructs.Construct, id *string, config *DataFactoryDatasetJsonConfig) DataFactoryDatasetJson {
 	_init_.Initialize()
 
@@ -637,7 +637,7 @@ func NewDataFactoryDatasetJson(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/data_factory_dataset_json azurerm_data_factory_dataset_json} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/data_factory_dataset_json azurerm_data_factory_dataset_json} Resource.
 func NewDataFactoryDatasetJson_Override(d DataFactoryDatasetJson, scope constructs.Construct, id *string, config *DataFactoryDatasetJsonConfig) {
 	_init_.Initialize()
 

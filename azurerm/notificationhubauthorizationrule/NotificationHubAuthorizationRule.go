@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule}.
 type NotificationHubAuthorizationRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -520,7 +520,7 @@ func (j *jsiiProxy_NotificationHubAuthorizationRule) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule} Resource.
 func NewNotificationHubAuthorizationRule(scope constructs.Construct, id *string, config *NotificationHubAuthorizationRuleConfig) NotificationHubAuthorizationRule {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewNotificationHubAuthorizationRule(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule} Resource.
 func NewNotificationHubAuthorizationRule_Override(n NotificationHubAuthorizationRule, scope constructs.Construct, id *string, config *NotificationHubAuthorizationRuleConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/spring_cloud_gateway_route_config azurerm_spring_cloud_gateway_route_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/spring_cloud_gateway_route_config azurerm_spring_cloud_gateway_route_config}.
 type SpringCloudGatewayRouteConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -548,7 +548,7 @@ func (j *jsiiProxy_SpringCloudGatewayRouteConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/spring_cloud_gateway_route_config azurerm_spring_cloud_gateway_route_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/spring_cloud_gateway_route_config azurerm_spring_cloud_gateway_route_config} Resource.
 func NewSpringCloudGatewayRouteConfig(scope constructs.Construct, id *string, config *SpringCloudGatewayRouteConfigConfig) SpringCloudGatewayRouteConfig {
 	_init_.Initialize()
 
@@ -566,7 +566,7 @@ func NewSpringCloudGatewayRouteConfig(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/spring_cloud_gateway_route_config azurerm_spring_cloud_gateway_route_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/spring_cloud_gateway_route_config azurerm_spring_cloud_gateway_route_config} Resource.
 func NewSpringCloudGatewayRouteConfig_Override(s SpringCloudGatewayRouteConfig, scope constructs.Construct, id *string, config *SpringCloudGatewayRouteConfigConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/cdn_frontdoor_route_disable_link_to_default_domain azurerm_cdn_frontdoor_route_disable_link_to_default_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/cdn_frontdoor_route_disable_link_to_default_domain azurerm_cdn_frontdoor_route_disable_link_to_default_domain}.
 type CdnFrontdoorRouteDisableLinkToDefaultDomain interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_CdnFrontdoorRouteDisableLinkToDefaultDomain) TimeoutsInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/cdn_frontdoor_route_disable_link_to_default_domain azurerm_cdn_frontdoor_route_disable_link_to_default_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/cdn_frontdoor_route_disable_link_to_default_domain azurerm_cdn_frontdoor_route_disable_link_to_default_domain} Resource.
 func NewCdnFrontdoorRouteDisableLinkToDefaultDomain(scope constructs.Construct, id *string, config *CdnFrontdoorRouteDisableLinkToDefaultDomainConfig) CdnFrontdoorRouteDisableLinkToDefaultDomain {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewCdnFrontdoorRouteDisableLinkToDefaultDomain(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/cdn_frontdoor_route_disable_link_to_default_domain azurerm_cdn_frontdoor_route_disable_link_to_default_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/cdn_frontdoor_route_disable_link_to_default_domain azurerm_cdn_frontdoor_route_disable_link_to_default_domain} Resource.
 func NewCdnFrontdoorRouteDisableLinkToDefaultDomain_Override(c CdnFrontdoorRouteDisableLinkToDefaultDomain, scope constructs.Construct, id *string, config *CdnFrontdoorRouteDisableLinkToDefaultDomainConfig) {
 	_init_.Initialize()
 

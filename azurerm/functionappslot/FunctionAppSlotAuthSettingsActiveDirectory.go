@@ -5,11 +5,11 @@ package functionappslot
 
 
 type FunctionAppSlotAuthSettingsActiveDirectory struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/function_app_slot#client_id FunctionAppSlot#client_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/function_app_slot#client_id FunctionAppSlot#client_id}.
 	ClientId *string `field:"required" json:"clientId" yaml:"clientId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/function_app_slot#allowed_audiences FunctionAppSlot#allowed_audiences}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/function_app_slot#allowed_audiences FunctionAppSlot#allowed_audiences}.
 	AllowedAudiences *[]*string `field:"optional" json:"allowedAudiences" yaml:"allowedAudiences"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/function_app_slot#client_secret FunctionAppSlot#client_secret}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/function_app_slot#client_secret FunctionAppSlot#client_secret}.
 	ClientSecret *string `field:"optional" json:"clientSecret" yaml:"clientSecret"`
 }
 

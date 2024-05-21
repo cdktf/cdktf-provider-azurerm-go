@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/container_app_job azurerm_container_app_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/container_app_job azurerm_container_app_job}.
 type ContainerAppJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -710,7 +710,7 @@ func (j *jsiiProxy_ContainerAppJob) WorkloadProfileNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/container_app_job azurerm_container_app_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/container_app_job azurerm_container_app_job} Resource.
 func NewContainerAppJob(scope constructs.Construct, id *string, config *ContainerAppJobConfig) ContainerAppJob {
 	_init_.Initialize()
 
@@ -728,7 +728,7 @@ func NewContainerAppJob(scope constructs.Construct, id *string, config *Containe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.0/docs/resources/container_app_job azurerm_container_app_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/container_app_job azurerm_container_app_job} Resource.
 func NewContainerAppJob_Override(c ContainerAppJob, scope constructs.Construct, id *string, config *ContainerAppJobConfig) {
 	_init_.Initialize()
 
