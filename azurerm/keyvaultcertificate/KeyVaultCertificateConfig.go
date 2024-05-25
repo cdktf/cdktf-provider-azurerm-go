@@ -22,28 +22,28 @@ type KeyVaultCertificateConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/key_vault_certificate#key_vault_id KeyVaultCertificate#key_vault_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/key_vault_certificate#key_vault_id KeyVaultCertificate#key_vault_id}.
 	KeyVaultId *string `field:"required" json:"keyVaultId" yaml:"keyVaultId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/key_vault_certificate#name KeyVaultCertificate#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/key_vault_certificate#name KeyVaultCertificate#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// certificate block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/key_vault_certificate#certificate KeyVaultCertificate#certificate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/key_vault_certificate#certificate KeyVaultCertificate#certificate}
 	Certificate *KeyVaultCertificateCertificate `field:"optional" json:"certificate" yaml:"certificate"`
 	// certificate_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/key_vault_certificate#certificate_policy KeyVaultCertificate#certificate_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/key_vault_certificate#certificate_policy KeyVaultCertificate#certificate_policy}
 	CertificatePolicy *KeyVaultCertificateCertificatePolicy `field:"optional" json:"certificatePolicy" yaml:"certificatePolicy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/key_vault_certificate#id KeyVaultCertificate#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/key_vault_certificate#id KeyVaultCertificate#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/key_vault_certificate#tags KeyVaultCertificate#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/key_vault_certificate#tags KeyVaultCertificate#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/key_vault_certificate#timeouts KeyVaultCertificate#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/key_vault_certificate#timeouts KeyVaultCertificate#timeouts}
 	Timeouts *KeyVaultCertificateTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

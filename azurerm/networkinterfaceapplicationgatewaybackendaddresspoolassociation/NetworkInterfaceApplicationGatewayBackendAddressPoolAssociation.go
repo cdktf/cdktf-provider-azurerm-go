@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/network_interface_application_gateway_backend_address_pool_association azurerm_network_interface_application_gateway_backend_address_pool_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/network_interface_application_gateway_backend_address_pool_association azurerm_network_interface_application_gateway_backend_address_pool_association}.
 type NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation interface {
 	cdktf.TerraformResource
 	BackendAddressPoolId() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_NetworkInterfaceApplicationGatewayBackendAddressPoolAssociati
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/network_interface_application_gateway_backend_address_pool_association azurerm_network_interface_application_gateway_backend_address_pool_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/network_interface_application_gateway_backend_address_pool_association azurerm_network_interface_application_gateway_backend_address_pool_association} Resource.
 func NewNetworkInterfaceApplicationGatewayBackendAddressPoolAssociation(scope constructs.Construct, id *string, config *NetworkInterfaceApplicationGatewayBackendAddressPoolAssociationConfig) NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewNetworkInterfaceApplicationGatewayBackendAddressPoolAssociation(scope co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/network_interface_application_gateway_backend_address_pool_association azurerm_network_interface_application_gateway_backend_address_pool_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/network_interface_application_gateway_backend_address_pool_association azurerm_network_interface_application_gateway_backend_address_pool_association} Resource.
 func NewNetworkInterfaceApplicationGatewayBackendAddressPoolAssociation_Override(n NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation, scope constructs.Construct, id *string, config *NetworkInterfaceApplicationGatewayBackendAddressPoolAssociationConfig) {
 	_init_.Initialize()
 

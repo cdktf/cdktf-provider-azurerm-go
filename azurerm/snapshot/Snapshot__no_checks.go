@@ -111,6 +111,10 @@ func (j *jsiiProxy_Snapshot) validateSetCreateOptionParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_Snapshot) validateSetDiskAccessIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Snapshot) validateSetDiskSizeGbParameters(val *float64) error {
 	return nil
 }

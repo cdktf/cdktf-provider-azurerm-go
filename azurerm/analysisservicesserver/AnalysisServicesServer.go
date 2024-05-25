@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/analysis_services_server azurerm_analysis_services_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/analysis_services_server azurerm_analysis_services_server}.
 type AnalysisServicesServer interface {
 	cdktf.TerraformResource
 	AdminUsers() *[]*string
@@ -581,7 +581,7 @@ func (j *jsiiProxy_AnalysisServicesServer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/analysis_services_server azurerm_analysis_services_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/analysis_services_server azurerm_analysis_services_server} Resource.
 func NewAnalysisServicesServer(scope constructs.Construct, id *string, config *AnalysisServicesServerConfig) AnalysisServicesServer {
 	_init_.Initialize()
 
@@ -599,7 +599,7 @@ func NewAnalysisServicesServer(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/analysis_services_server azurerm_analysis_services_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/analysis_services_server azurerm_analysis_services_server} Resource.
 func NewAnalysisServicesServer_Override(a AnalysisServicesServer, scope constructs.Construct, id *string, config *AnalysisServicesServerConfig) {
 	_init_.Initialize()
 

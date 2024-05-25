@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server}.
 type PostgresqlFlexibleServer interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -100,7 +100,9 @@ type PostgresqlFlexibleServer interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
-	PublicNetworkAccessEnabled() cdktf.IResolvable
+	PublicNetworkAccessEnabled() interface{}
+	SetPublicNetworkAccessEnabled(val interface{})
+	PublicNetworkAccessEnabledInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	ReplicationRole() *string
@@ -205,6 +207,7 @@ type PostgresqlFlexibleServer interface {
 	ResetOverrideLogicalId()
 	ResetPointInTimeRestoreTimeInUtc()
 	ResetPrivateDnsZoneId()
+	ResetPublicNetworkAccessEnabled()
 	ResetReplicationRole()
 	ResetSkuName()
 	ResetSourceServerId()
@@ -702,11 +705,21 @@ func (j *jsiiProxy_PostgresqlFlexibleServer) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PostgresqlFlexibleServer) PublicNetworkAccessEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_PostgresqlFlexibleServer) PublicNetworkAccessEnabled() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServer) PublicNetworkAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabledInput",
 		&returns,
 	)
 	return returns
@@ -953,7 +966,7 @@ func (j *jsiiProxy_PostgresqlFlexibleServer) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server} Resource.
 func NewPostgresqlFlexibleServer(scope constructs.Construct, id *string, config *PostgresqlFlexibleServerConfig) PostgresqlFlexibleServer {
 	_init_.Initialize()
 
@@ -971,7 +984,7 @@ func NewPostgresqlFlexibleServer(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server} Resource.
 func NewPostgresqlFlexibleServer_Override(p PostgresqlFlexibleServer, scope constructs.Construct, id *string, config *PostgresqlFlexibleServerConfig) {
 	_init_.Initialize()
 
@@ -1178,6 +1191,17 @@ func (j *jsiiProxy_PostgresqlFlexibleServer)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServer)SetPublicNetworkAccessEnabled(val interface{}) {
+	if err := j.validateSetPublicNetworkAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccessEnabled",
 		val,
 	)
 }
@@ -1824,6 +1848,14 @@ func (p *jsiiProxy_PostgresqlFlexibleServer) ResetPrivateDnsZoneId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPrivateDnsZoneId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresqlFlexibleServer) ResetPublicNetworkAccessEnabled() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPublicNetworkAccessEnabled",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/data-sources/storage_management_policy azurerm_storage_management_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/data-sources/storage_management_policy azurerm_storage_management_policy}.
 type DataAzurermStorageManagementPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataAzurermStorageManagementPolicy) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/data-sources/storage_management_policy azurerm_storage_management_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/data-sources/storage_management_policy azurerm_storage_management_policy} Data Source.
 func NewDataAzurermStorageManagementPolicy(scope constructs.Construct, id *string, config *DataAzurermStorageManagementPolicyConfig) DataAzurermStorageManagementPolicy {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataAzurermStorageManagementPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/data-sources/storage_management_policy azurerm_storage_management_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/data-sources/storage_management_policy azurerm_storage_management_policy} Data Source.
 func NewDataAzurermStorageManagementPolicy_Override(d DataAzurermStorageManagementPolicy, scope constructs.Construct, id *string, config *DataAzurermStorageManagementPolicyConfig) {
 	_init_.Initialize()
 

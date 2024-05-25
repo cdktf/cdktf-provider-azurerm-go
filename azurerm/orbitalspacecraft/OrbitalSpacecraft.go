@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/orbital_spacecraft azurerm_orbital_spacecraft}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/orbital_spacecraft azurerm_orbital_spacecraft}.
 type OrbitalSpacecraft interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -519,7 +519,7 @@ func (j *jsiiProxy_OrbitalSpacecraft) TwoLineElementsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/orbital_spacecraft azurerm_orbital_spacecraft} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/orbital_spacecraft azurerm_orbital_spacecraft} Resource.
 func NewOrbitalSpacecraft(scope constructs.Construct, id *string, config *OrbitalSpacecraftConfig) OrbitalSpacecraft {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewOrbitalSpacecraft(scope constructs.Construct, id *string, config *Orbita
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/orbital_spacecraft azurerm_orbital_spacecraft} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/orbital_spacecraft azurerm_orbital_spacecraft} Resource.
 func NewOrbitalSpacecraft_Override(o OrbitalSpacecraft, scope constructs.Construct, id *string, config *OrbitalSpacecraftConfig) {
 	_init_.Initialize()
 

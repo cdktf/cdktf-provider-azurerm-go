@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/snapshot azurerm_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/snapshot azurerm_snapshot}.
 type Snapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,9 @@ type Snapshot interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DiskAccessId() *string
+	SetDiskAccessId(val *string)
+	DiskAccessIdInput() *string
 	DiskSizeGb() *float64
 	SetDiskSizeGb(val *float64)
 	DiskSizeGbInput() *float64
@@ -150,6 +153,7 @@ type Snapshot interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutEncryptionSettings(value *SnapshotEncryptionSettings)
 	PutTimeouts(value *SnapshotTimeouts)
+	ResetDiskAccessId()
 	ResetDiskSizeGb()
 	ResetEncryptionSettings()
 	ResetId()
@@ -247,6 +251,26 @@ func (j *jsiiProxy_Snapshot) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Snapshot) DiskAccessId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskAccessId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Snapshot) DiskAccessIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskAccessIdInput",
 		&returns,
 	)
 	return returns
@@ -653,7 +677,7 @@ func (j *jsiiProxy_Snapshot) TrustedLaunchEnabled() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/snapshot azurerm_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/snapshot azurerm_snapshot} Resource.
 func NewSnapshot(scope constructs.Construct, id *string, config *SnapshotConfig) Snapshot {
 	_init_.Initialize()
 
@@ -671,7 +695,7 @@ func NewSnapshot(scope constructs.Construct, id *string, config *SnapshotConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.104.2/docs/resources/snapshot azurerm_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/snapshot azurerm_snapshot} Resource.
 func NewSnapshot_Override(s Snapshot, scope constructs.Construct, id *string, config *SnapshotConfig) {
 	_init_.Initialize()
 
@@ -719,6 +743,17 @@ func (j *jsiiProxy_Snapshot)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Snapshot)SetDiskAccessId(val *string) {
+	if err := j.validateSetDiskAccessIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskAccessId",
 		val,
 	)
 }
@@ -1265,6 +1300,14 @@ func (s *jsiiProxy_Snapshot) PutTimeouts(value *SnapshotTimeouts) {
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_Snapshot) ResetDiskAccessId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDiskAccessId",
+		nil, // no parameters
 	)
 }
 

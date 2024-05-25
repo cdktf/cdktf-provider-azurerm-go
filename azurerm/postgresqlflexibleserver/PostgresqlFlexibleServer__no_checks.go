@@ -179,6 +179,10 @@ func (j *jsiiProxy_PostgresqlFlexibleServer) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_PostgresqlFlexibleServer) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlFlexibleServer) validateSetReplicationRoleParameters(val *string) error {
 	return nil
 }
