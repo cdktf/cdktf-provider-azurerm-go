@@ -5,13 +5,13 @@ package automationrunbook
 
 
 type AutomationRunbookDraftContentLink struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/automation_runbook#uri AutomationRunbook#uri}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/automation_runbook#uri AutomationRunbook#uri}.
 	Uri *string `field:"required" json:"uri" yaml:"uri"`
 	// hash block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/automation_runbook#hash AutomationRunbook#hash}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/automation_runbook#hash AutomationRunbook#hash}
 	Hash *AutomationRunbookDraftContentLinkHash `field:"optional" json:"hash" yaml:"hash"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/automation_runbook#version AutomationRunbook#version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/automation_runbook#version AutomationRunbook#version}.
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 

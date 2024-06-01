@@ -75,6 +75,10 @@ func (n *jsiiProxy_NewRelicMonitor) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (n *jsiiProxy_NewRelicMonitor) validatePutIdentityParameters(value *NewRelicMonitorIdentity) error {
+	return nil
+}
+
 func (n *jsiiProxy_NewRelicMonitor) validatePutPlanParameters(value *NewRelicMonitorPlan) error {
 	return nil
 }

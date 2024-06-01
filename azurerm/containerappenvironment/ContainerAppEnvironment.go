@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/container_app_environment azurerm_container_app_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/container_app_environment azurerm_container_app_environment}.
 type ContainerAppEnvironment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type ContainerAppEnvironment interface {
 	LogAnalyticsWorkspaceId() *string
 	SetLogAnalyticsWorkspaceId(val *string)
 	LogAnalyticsWorkspaceIdInput() *string
+	MutualTlsEnabled() interface{}
+	SetMutualTlsEnabled(val interface{})
+	MutualTlsEnabledInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -155,6 +158,7 @@ type ContainerAppEnvironment interface {
 	ResetInfrastructureSubnetId()
 	ResetInternalLoadBalancerEnabled()
 	ResetLogAnalyticsWorkspaceId()
+	ResetMutualTlsEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -440,6 +444,26 @@ func (j *jsiiProxy_ContainerAppEnvironment) LogAnalyticsWorkspaceIdInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_ContainerAppEnvironment) MutualTlsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mutualTlsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppEnvironment) MutualTlsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mutualTlsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerAppEnvironment) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -661,7 +685,7 @@ func (j *jsiiProxy_ContainerAppEnvironment) ZoneRedundancyEnabledInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
 func NewContainerAppEnvironment(scope constructs.Construct, id *string, config *ContainerAppEnvironmentConfig) ContainerAppEnvironment {
 	_init_.Initialize()
 
@@ -679,7 +703,7 @@ func NewContainerAppEnvironment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
 func NewContainerAppEnvironment_Override(c ContainerAppEnvironment, scope constructs.Construct, id *string, config *ContainerAppEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -812,6 +836,17 @@ func (j *jsiiProxy_ContainerAppEnvironment)SetLogAnalyticsWorkspaceId(val *strin
 	_jsii_.Set(
 		j,
 		"logAnalyticsWorkspaceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAppEnvironment)SetMutualTlsEnabled(val interface{}) {
+	if err := j.validateSetMutualTlsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mutualTlsEnabled",
 		val,
 	)
 }
@@ -1298,6 +1333,14 @@ func (c *jsiiProxy_ContainerAppEnvironment) ResetLogAnalyticsWorkspaceId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetLogAnalyticsWorkspaceId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppEnvironment) ResetMutualTlsEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMutualTlsEnabled",
 		nil, // no parameters
 	)
 }

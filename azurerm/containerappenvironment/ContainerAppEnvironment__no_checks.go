@@ -139,6 +139,10 @@ func (j *jsiiProxy_ContainerAppEnvironment) validateSetLogAnalyticsWorkspaceIdPa
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppEnvironment) validateSetMutualTlsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppEnvironment) validateSetNameParameters(val *string) error {
 	return nil
 }

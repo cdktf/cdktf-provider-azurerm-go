@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
 type KubernetesCluster interface {
 	cdktf.TerraformResource
 	AciConnectorLinux() KubernetesClusterAciConnectorLinuxOutputReference
@@ -42,6 +42,9 @@ type KubernetesCluster interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	CostAnalysisEnabled() interface{}
+	SetCostAnalysisEnabled(val interface{})
+	CostAnalysisEnabledInput() interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -300,6 +303,7 @@ type KubernetesCluster interface {
 	ResetAzureActiveDirectoryRoleBasedAccessControl()
 	ResetAzurePolicyEnabled()
 	ResetConfidentialComputing()
+	ResetCostAnalysisEnabled()
 	ResetCustomCaTrustCertificatesBase64()
 	ResetDiskEncryptionSetId()
 	ResetDnsPrefix()
@@ -553,6 +557,26 @@ func (j *jsiiProxy_KubernetesCluster) ConstructNodeMetadata() *map[string]interf
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) CostAnalysisEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"costAnalysisEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) CostAnalysisEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"costAnalysisEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1819,7 +1843,7 @@ func (j *jsiiProxy_KubernetesCluster) WorkloadIdentityEnabledInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
 	_init_.Initialize()
 
@@ -1837,7 +1861,7 @@ func NewKubernetesCluster(scope constructs.Construct, id *string, config *Kubern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Construct, id *string, config *KubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -1888,6 +1912,17 @@ func (j *jsiiProxy_KubernetesCluster)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesCluster)SetCostAnalysisEnabled(val interface{}) {
+	if err := j.validateSetCostAnalysisEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"costAnalysisEnabled",
 		val,
 	)
 }
@@ -2978,6 +3013,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetConfidentialComputing() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetConfidentialComputing",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetCostAnalysisEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetCostAnalysisEnabled",
 		nil, // no parameters
 	)
 }

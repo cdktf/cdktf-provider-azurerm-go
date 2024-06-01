@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/data-sources/virtual_hub_route_table azurerm_virtual_hub_route_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/data-sources/virtual_hub_route_table azurerm_virtual_hub_route_table}.
 type DataAzurermVirtualHubRouteTable interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_DataAzurermVirtualHubRouteTable) VirtualHubNameInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/data-sources/virtual_hub_route_table azurerm_virtual_hub_route_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/data-sources/virtual_hub_route_table azurerm_virtual_hub_route_table} Data Source.
 func NewDataAzurermVirtualHubRouteTable(scope constructs.Construct, id *string, config *DataAzurermVirtualHubRouteTableConfig) DataAzurermVirtualHubRouteTable {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewDataAzurermVirtualHubRouteTable(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/data-sources/virtual_hub_route_table azurerm_virtual_hub_route_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/data-sources/virtual_hub_route_table azurerm_virtual_hub_route_table} Data Source.
 func NewDataAzurermVirtualHubRouteTable_Override(d DataAzurermVirtualHubRouteTable, scope constructs.Construct, id *string, config *DataAzurermVirtualHubRouteTableConfig) {
 	_init_.Initialize()
 

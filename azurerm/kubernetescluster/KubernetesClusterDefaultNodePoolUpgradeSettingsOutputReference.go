@@ -28,6 +28,9 @@ type KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DrainTimeoutInMinutes() *float64
+	SetDrainTimeoutInMinutes(val *float64)
+	DrainTimeoutInMinutesInput() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() *KubernetesClusterDefaultNodePoolUpgradeSettings
@@ -35,6 +38,9 @@ type KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference interface {
 	MaxSurge() *string
 	SetMaxSurge(val *string)
 	MaxSurgeInput() *string
+	NodeSoakDurationInMinutes() *float64
+	SetNodeSoakDurationInMinutes(val *float64)
+	NodeSoakDurationInMinutesInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +73,8 @@ type KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDrainTimeoutInMinutes()
+	ResetNodeSoakDurationInMinutes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -112,6 +120,26 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference) DrainTimeoutInMinutes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"drainTimeoutInMinutes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference) DrainTimeoutInMinutesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"drainTimeoutInMinutesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -147,6 +175,26 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReferenc
 	_jsii_.Get(
 		j,
 		"maxSurgeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference) NodeSoakDurationInMinutes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"nodeSoakDurationInMinutes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference) NodeSoakDurationInMinutesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"nodeSoakDurationInMinutesInput",
 		&returns,
 	)
 	return returns
@@ -222,6 +270,17 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReferenc
 	)
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference)SetDrainTimeoutInMinutes(val *float64) {
+	if err := j.validateSetDrainTimeoutInMinutesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"drainTimeoutInMinutes",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference)SetInternalValue(val *KubernetesClusterDefaultNodePoolUpgradeSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -240,6 +299,17 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReferenc
 	_jsii_.Set(
 		j,
 		"maxSurge",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference)SetNodeSoakDurationInMinutes(val *float64) {
+	if err := j.validateSetNodeSoakDurationInMinutesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeSoakDurationInMinutes",
 		val,
 	)
 }
@@ -450,6 +520,22 @@ func (k *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReferenc
 	)
 
 	return returns
+}
+
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference) ResetDrainTimeoutInMinutes() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetDrainTimeoutInMinutes",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference) ResetNodeSoakDurationInMinutes() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetNodeSoakDurationInMinutes",
+		nil, // no parameters
+	)
 }
 
 func (k *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

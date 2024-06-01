@@ -5,11 +5,11 @@ package virtualnetworkgateway
 
 
 type VirtualNetworkGatewayVpnClientConfigurationRadiusServer struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/virtual_network_gateway#address VirtualNetworkGateway#address}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/virtual_network_gateway#address VirtualNetworkGateway#address}.
 	Address *string `field:"required" json:"address" yaml:"address"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/virtual_network_gateway#score VirtualNetworkGateway#score}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/virtual_network_gateway#score VirtualNetworkGateway#score}.
 	Score *float64 `field:"required" json:"score" yaml:"score"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/virtual_network_gateway#secret VirtualNetworkGateway#secret}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/virtual_network_gateway#secret VirtualNetworkGateway#secret}.
 	Secret *string `field:"required" json:"secret" yaml:"secret"`
 }
 

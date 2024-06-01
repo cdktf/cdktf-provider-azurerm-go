@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/new_relic_monitor azurerm_new_relic_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/new_relic_monitor azurerm_new_relic_monitor}.
 type NewRelicMonitor interface {
 	cdktf.TerraformResource
 	AccountCreationSource() *string
@@ -47,6 +47,8 @@ type NewRelicMonitor interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() NewRelicMonitorIdentityOutputReference
+	IdentityInput() *NewRelicMonitorIdentity
 	IdInput() *string
 	IngestionKey() *string
 	SetIngestionKey(val *string)
@@ -140,12 +142,14 @@ type NewRelicMonitor interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutIdentity(value *NewRelicMonitorIdentity)
 	PutPlan(value *NewRelicMonitorPlan)
 	PutTimeouts(value *NewRelicMonitorTimeouts)
 	PutUser(value *NewRelicMonitorUser)
 	ResetAccountCreationSource()
 	ResetAccountId()
 	ResetId()
+	ResetIdentity()
 	ResetIngestionKey()
 	ResetOrganizationId()
 	ResetOrgCreationSource()
@@ -297,6 +301,26 @@ func (j *jsiiProxy_NewRelicMonitor) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NewRelicMonitor) Identity() NewRelicMonitorIdentityOutputReference {
+	var returns NewRelicMonitorIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NewRelicMonitor) IdentityInput() *NewRelicMonitorIdentity {
+	var returns *NewRelicMonitorIdentity
+	_jsii_.Get(
+		j,
+		"identityInput",
 		&returns,
 	)
 	return returns
@@ -593,7 +617,7 @@ func (j *jsiiProxy_NewRelicMonitor) UserInput() *NewRelicMonitorUser {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/new_relic_monitor azurerm_new_relic_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/new_relic_monitor azurerm_new_relic_monitor} Resource.
 func NewNewRelicMonitor(scope constructs.Construct, id *string, config *NewRelicMonitorConfig) NewRelicMonitor {
 	_init_.Initialize()
 
@@ -611,7 +635,7 @@ func NewNewRelicMonitor(scope constructs.Construct, id *string, config *NewRelic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/new_relic_monitor azurerm_new_relic_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/new_relic_monitor azurerm_new_relic_monitor} Resource.
 func NewNewRelicMonitor_Override(n NewRelicMonitor, scope constructs.Construct, id *string, config *NewRelicMonitorConfig) {
 	_init_.Initialize()
 
@@ -1153,6 +1177,17 @@ func (n *jsiiProxy_NewRelicMonitor) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (n *jsiiProxy_NewRelicMonitor) PutIdentity(value *NewRelicMonitorIdentity) {
+	if err := n.validatePutIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putIdentity",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NewRelicMonitor) PutPlan(value *NewRelicMonitorPlan) {
 	if err := n.validatePutPlanParameters(value); err != nil {
 		panic(err)
@@ -1206,6 +1241,14 @@ func (n *jsiiProxy_NewRelicMonitor) ResetId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NewRelicMonitor) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIdentity",
 		nil, // no parameters
 	)
 }

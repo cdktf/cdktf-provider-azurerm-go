@@ -35,6 +35,8 @@ type ExpressRoutePortIdentityOutputReference interface {
 	IdentityIdsInput() *[]*string
 	InternalValue() *ExpressRoutePortIdentity
 	SetInternalValue(val *ExpressRoutePortIdentity)
+	PrincipalId() *string
+	TenantId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +72,7 @@ type ExpressRoutePortIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIdentityIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -150,6 +153,26 @@ func (j *jsiiProxy_ExpressRoutePortIdentityOutputReference) InternalValue() *Exp
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExpressRoutePortIdentityOutputReference) PrincipalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"principalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExpressRoutePortIdentityOutputReference) TenantId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantId",
 		&returns,
 	)
 	return returns
@@ -484,6 +507,14 @@ func (e *jsiiProxy_ExpressRoutePortIdentityOutputReference) InterpolationForAttr
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_ExpressRoutePortIdentityOutputReference) ResetIdentityIds() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetIdentityIds",
+		nil, // no parameters
+	)
 }
 
 func (e *jsiiProxy_ExpressRoutePortIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

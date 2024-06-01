@@ -135,6 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "parameter", GoGetter: "Parameter"},
 			_jsii_.MemberProperty{JsiiProperty: "parameterInput", GoGetter: "ParameterInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putParameter", GoMethod: "PutParameter"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParameter", GoMethod: "ResetParameter"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

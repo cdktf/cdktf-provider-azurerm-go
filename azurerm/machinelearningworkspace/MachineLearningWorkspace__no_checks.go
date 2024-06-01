@@ -91,6 +91,10 @@ func (m *jsiiProxy_MachineLearningWorkspace) validatePutManagedNetworkParameters
 	return nil
 }
 
+func (m *jsiiProxy_MachineLearningWorkspace) validatePutServerlessComputeParameters(value *MachineLearningWorkspaceServerlessCompute) error {
+	return nil
+}
+
 func (m *jsiiProxy_MachineLearningWorkspace) validatePutTimeoutsParameters(value *MachineLearningWorkspaceTimeouts) error {
 	return nil
 }

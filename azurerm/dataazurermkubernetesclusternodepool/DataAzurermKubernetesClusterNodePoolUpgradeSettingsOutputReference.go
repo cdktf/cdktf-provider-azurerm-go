@@ -28,11 +28,13 @@ type DataAzurermKubernetesClusterNodePoolUpgradeSettingsOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DrainTimeoutInMinutes() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataAzurermKubernetesClusterNodePoolUpgradeSettings
 	SetInternalValue(val *DataAzurermKubernetesClusterNodePoolUpgradeSettings)
 	MaxSurge() *string
+	NodeSoakDurationInMinutes() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -110,6 +112,16 @@ func (j *jsiiProxy_DataAzurermKubernetesClusterNodePoolUpgradeSettingsOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermKubernetesClusterNodePoolUpgradeSettingsOutputReference) DrainTimeoutInMinutes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"drainTimeoutInMinutes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermKubernetesClusterNodePoolUpgradeSettingsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -135,6 +147,16 @@ func (j *jsiiProxy_DataAzurermKubernetesClusterNodePoolUpgradeSettingsOutputRefe
 	_jsii_.Get(
 		j,
 		"maxSurge",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermKubernetesClusterNodePoolUpgradeSettingsOutputReference) NodeSoakDurationInMinutes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"nodeSoakDurationInMinutes",
 		&returns,
 	)
 	return returns

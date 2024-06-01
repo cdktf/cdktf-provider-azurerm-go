@@ -166,6 +166,14 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference) validateSetDrainTimeoutInMinutesParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference) validateSetInternalValueParameters(val *KubernetesClusterDefaultNodePoolUpgradeSettings) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -175,6 +183,14 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReferenc
 }
 
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference) validateSetMaxSurgeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference) validateSetNodeSoakDurationInMinutesParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

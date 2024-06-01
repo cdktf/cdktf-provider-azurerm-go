@@ -5,9 +5,9 @@ package staticwebapp
 
 
 type StaticWebAppBasicAuth struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/static_web_app#environments StaticWebApp#environments}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/static_web_app#environments StaticWebApp#environments}.
 	Environments *string `field:"required" json:"environments" yaml:"environments"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/static_web_app#password StaticWebApp#password}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/static_web_app#password StaticWebApp#password}.
 	Password *string `field:"required" json:"password" yaml:"password"`
 }
 

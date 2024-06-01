@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/kusto_eventgrid_data_connection azurerm_kusto_eventgrid_data_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/kusto_eventgrid_data_connection azurerm_kusto_eventgrid_data_connection}.
 type KustoEventgridDataConnection interface {
 	cdktf.TerraformResource
 	BlobStorageEventType() *string
@@ -710,7 +710,7 @@ func (j *jsiiProxy_KustoEventgridDataConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/kusto_eventgrid_data_connection azurerm_kusto_eventgrid_data_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/kusto_eventgrid_data_connection azurerm_kusto_eventgrid_data_connection} Resource.
 func NewKustoEventgridDataConnection(scope constructs.Construct, id *string, config *KustoEventgridDataConnectionConfig) KustoEventgridDataConnection {
 	_init_.Initialize()
 
@@ -728,7 +728,7 @@ func NewKustoEventgridDataConnection(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/kusto_eventgrid_data_connection azurerm_kusto_eventgrid_data_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/kusto_eventgrid_data_connection azurerm_kusto_eventgrid_data_connection} Resource.
 func NewKustoEventgridDataConnection_Override(k KustoEventgridDataConnection, scope constructs.Construct, id *string, config *KustoEventgridDataConnectionConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/container_app_job azurerm_container_app_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/container_app_job azurerm_container_app_job}.
 type ContainerAppJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -77,6 +77,8 @@ type ContainerAppJob interface {
 	RawOverrides() interface{}
 	Registries() ContainerAppJobRegistriesList
 	RegistriesInput() interface{}
+	Registry() ContainerAppJobRegistryList
+	RegistryInput() interface{}
 	ReplicaRetryLimit() *float64
 	SetReplicaRetryLimit(val *float64)
 	ReplicaRetryLimitInput() *float64
@@ -88,6 +90,8 @@ type ContainerAppJob interface {
 	ResourceGroupNameInput() *string
 	ScheduleTriggerConfig() ContainerAppJobScheduleTriggerConfigOutputReference
 	ScheduleTriggerConfigInput() *ContainerAppJobScheduleTriggerConfig
+	Secret() ContainerAppJobSecretList
+	SecretInput() interface{}
 	Secrets() ContainerAppJobSecretsList
 	SecretsInput() interface{}
 	Tags() *map[string]*string
@@ -153,7 +157,9 @@ type ContainerAppJob interface {
 	PutIdentity(value *ContainerAppJobIdentity)
 	PutManualTriggerConfig(value *ContainerAppJobManualTriggerConfig)
 	PutRegistries(value interface{})
+	PutRegistry(value interface{})
 	PutScheduleTriggerConfig(value *ContainerAppJobScheduleTriggerConfig)
+	PutSecret(value interface{})
 	PutSecrets(value interface{})
 	PutTemplate(value *ContainerAppJobTemplate)
 	PutTimeouts(value *ContainerAppJobTimeouts)
@@ -165,8 +171,10 @@ type ContainerAppJob interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegistries()
+	ResetRegistry()
 	ResetReplicaRetryLimit()
 	ResetScheduleTriggerConfig()
+	ResetSecret()
 	ResetSecrets()
 	ResetTags()
 	ResetTimeouts()
@@ -499,6 +507,26 @@ func (j *jsiiProxy_ContainerAppJob) RegistriesInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerAppJob) Registry() ContainerAppJobRegistryList {
+	var returns ContainerAppJobRegistryList
+	_jsii_.Get(
+		j,
+		"registry",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppJob) RegistryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"registryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerAppJob) ReplicaRetryLimit() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -574,6 +602,26 @@ func (j *jsiiProxy_ContainerAppJob) ScheduleTriggerConfigInput() *ContainerAppJo
 	_jsii_.Get(
 		j,
 		"scheduleTriggerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppJob) Secret() ContainerAppJobSecretList {
+	var returns ContainerAppJobSecretList
+	_jsii_.Get(
+		j,
+		"secret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppJob) SecretInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secretInput",
 		&returns,
 	)
 	return returns
@@ -710,7 +758,7 @@ func (j *jsiiProxy_ContainerAppJob) WorkloadProfileNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/container_app_job azurerm_container_app_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/container_app_job azurerm_container_app_job} Resource.
 func NewContainerAppJob(scope constructs.Construct, id *string, config *ContainerAppJobConfig) ContainerAppJob {
 	_init_.Initialize()
 
@@ -728,7 +776,7 @@ func NewContainerAppJob(scope constructs.Construct, id *string, config *Containe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/container_app_job azurerm_container_app_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/container_app_job azurerm_container_app_job} Resource.
 func NewContainerAppJob_Override(c ContainerAppJob, scope constructs.Construct, id *string, config *ContainerAppJobConfig) {
 	_init_.Initialize()
 
@@ -1303,6 +1351,17 @@ func (c *jsiiProxy_ContainerAppJob) PutRegistries(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_ContainerAppJob) PutRegistry(value interface{}) {
+	if err := c.validatePutRegistryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRegistry",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerAppJob) PutScheduleTriggerConfig(value *ContainerAppJobScheduleTriggerConfig) {
 	if err := c.validatePutScheduleTriggerConfigParameters(value); err != nil {
 		panic(err)
@@ -1310,6 +1369,17 @@ func (c *jsiiProxy_ContainerAppJob) PutScheduleTriggerConfig(value *ContainerApp
 	_jsii_.InvokeVoid(
 		c,
 		"putScheduleTriggerConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerAppJob) PutSecret(value interface{}) {
+	if err := c.validatePutSecretParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSecret",
 		[]interface{}{value},
 	)
 }
@@ -1395,6 +1465,14 @@ func (c *jsiiProxy_ContainerAppJob) ResetRegistries() {
 	)
 }
 
+func (c *jsiiProxy_ContainerAppJob) ResetRegistry() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegistry",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerAppJob) ResetReplicaRetryLimit() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1407,6 +1485,14 @@ func (c *jsiiProxy_ContainerAppJob) ResetScheduleTriggerConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetScheduleTriggerConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppJob) ResetSecret() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSecret",
 		nil, // no parameters
 	)
 }

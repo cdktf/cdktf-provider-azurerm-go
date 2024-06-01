@@ -85,6 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFeatureStore", GoMethod: "PutFeatureStore"},
 			_jsii_.MemberMethod{JsiiMethod: "putIdentity", GoMethod: "PutIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "putManagedNetwork", GoMethod: "PutManagedNetwork"},
+			_jsii_.MemberMethod{JsiiMethod: "putServerlessCompute", GoMethod: "PutServerlessCompute"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContainerRegistryId", GoMethod: "ResetContainerRegistryId"},
@@ -101,12 +102,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPrimaryUserAssignedIdentity", GoMethod: "ResetPrimaryUserAssignedIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPublicAccessBehindVirtualNetworkEnabled", GoMethod: "ResetPublicAccessBehindVirtualNetworkEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPublicNetworkAccessEnabled", GoMethod: "ResetPublicNetworkAccessEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServerlessCompute", GoMethod: "ResetServerlessCompute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkuName", GoMethod: "ResetSkuName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetV1LegacyModeEnabled", GoMethod: "ResetV1LegacyModeEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "serverlessCompute", GoGetter: "ServerlessCompute"},
+			_jsii_.MemberProperty{JsiiProperty: "serverlessComputeInput", GoGetter: "ServerlessComputeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "skuName", GoGetter: "SkuName"},
 			_jsii_.MemberProperty{JsiiProperty: "skuNameInput", GoGetter: "SkuNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "storageAccountId", GoGetter: "StorageAccountId"},
@@ -304,6 +308,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MachineLearningWorkspaceManagedNetworkOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.machineLearningWorkspace.MachineLearningWorkspaceServerlessCompute",
+		reflect.TypeOf((*MachineLearningWorkspaceServerlessCompute)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.machineLearningWorkspace.MachineLearningWorkspaceServerlessComputeOutputReference",
+		reflect.TypeOf((*MachineLearningWorkspaceServerlessComputeOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "publicIpEnabled", GoGetter: "PublicIpEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "publicIpEnabledInput", GoGetter: "PublicIpEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPublicIpEnabled", GoMethod: "ResetPublicIpEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubnetId", GoMethod: "ResetSubnetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "subnetId", GoGetter: "SubnetId"},
+			_jsii_.MemberProperty{JsiiProperty: "subnetIdInput", GoGetter: "SubnetIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MachineLearningWorkspaceServerlessComputeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

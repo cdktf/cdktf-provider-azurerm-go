@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/automation_powershell72_module azurerm_automation_powershell72_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/automation_powershell72_module azurerm_automation_powershell72_module}.
 type AutomationPowershell72Module interface {
 	cdktf.TerraformResource
 	AutomationAccountId() *string
@@ -66,6 +66,9 @@ type AutomationPowershell72Module interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -123,6 +126,7 @@ type AutomationPowershell72Module interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -352,6 +356,26 @@ func (j *jsiiProxy_AutomationPowershell72Module) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AutomationPowershell72Module) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutomationPowershell72Module) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AutomationPowershell72Module) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -403,7 +427,7 @@ func (j *jsiiProxy_AutomationPowershell72Module) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/automation_powershell72_module azurerm_automation_powershell72_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/automation_powershell72_module azurerm_automation_powershell72_module} Resource.
 func NewAutomationPowershell72Module(scope constructs.Construct, id *string, config *AutomationPowershell72ModuleConfig) AutomationPowershell72Module {
 	_init_.Initialize()
 
@@ -421,7 +445,7 @@ func NewAutomationPowershell72Module(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/automation_powershell72_module azurerm_automation_powershell72_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/automation_powershell72_module azurerm_automation_powershell72_module} Resource.
 func NewAutomationPowershell72Module_Override(a AutomationPowershell72Module, scope constructs.Construct, id *string, config *AutomationPowershell72ModuleConfig) {
 	_init_.Initialize()
 
@@ -529,6 +553,17 @@ func (j *jsiiProxy_AutomationPowershell72Module)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AutomationPowershell72Module)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -920,6 +955,14 @@ func (a *jsiiProxy_AutomationPowershell72Module) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutomationPowershell72Module) ResetTags() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTags",
 		nil, // no parameters
 	)
 }

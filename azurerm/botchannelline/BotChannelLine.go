@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/bot_channel_line azurerm_bot_channel_line}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/bot_channel_line azurerm_bot_channel_line}.
 type BotChannelLine interface {
 	cdktf.TerraformResource
 	BotName() *string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_BotChannelLine) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/bot_channel_line azurerm_bot_channel_line} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/bot_channel_line azurerm_bot_channel_line} Resource.
 func NewBotChannelLine(scope constructs.Construct, id *string, config *BotChannelLineConfig) BotChannelLine {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewBotChannelLine(scope constructs.Construct, id *string, config *BotChanne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/bot_channel_line azurerm_bot_channel_line} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/bot_channel_line azurerm_bot_channel_line} Resource.
 func NewBotChannelLine_Override(b BotChannelLine, scope constructs.Construct, id *string, config *BotChannelLineConfig) {
 	_init_.Initialize()
 

@@ -5,7 +5,7 @@ package dataazurermnetworkddosprotectionplan
 
 
 type DataAzurermNetworkDdosProtectionPlanTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/data-sources/network_ddos_protection_plan#read DataAzurermNetworkDdosProtectionPlan#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/data-sources/network_ddos_protection_plan#read DataAzurermNetworkDdosProtectionPlan#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

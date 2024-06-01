@@ -67,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCopyPasteEnabled", GoMethod: "ResetCopyPasteEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFileCopyEnabled", GoMethod: "ResetFileCopyEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIpConfiguration", GoMethod: "ResetIpConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpConnectEnabled", GoMethod: "ResetIpConnectEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKerberosEnabled", GoMethod: "ResetKerberosEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -76,6 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTunnelingEnabled", GoMethod: "ResetTunnelingEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVirtualNetworkId", GoMethod: "ResetVirtualNetworkId"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "scaleUnits", GoGetter: "ScaleUnits"},
@@ -99,6 +101,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnelingEnabled", GoGetter: "TunnelingEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnelingEnabledInput", GoGetter: "TunnelingEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkId", GoGetter: "VirtualNetworkId"},
+			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkIdInput", GoGetter: "VirtualNetworkIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_BastionHost{}

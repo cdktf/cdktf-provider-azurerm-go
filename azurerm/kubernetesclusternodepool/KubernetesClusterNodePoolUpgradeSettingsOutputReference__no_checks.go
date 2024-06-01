@@ -59,11 +59,19 @@ func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) validateSetDrainTimeoutInMinutesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) validateSetInternalValueParameters(val *KubernetesClusterNodePoolUpgradeSettings) error {
 	return nil
 }
 
 func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) validateSetMaxSurgeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePoolUpgradeSettingsOutputReference) validateSetNodeSoakDurationInMinutesParameters(val *float64) error {
 	return nil
 }
 

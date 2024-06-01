@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/bastion_host azurerm_bastion_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/bastion_host azurerm_bastion_host}.
 type BastionHost interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -105,6 +105,9 @@ type BastionHost interface {
 	TunnelingEnabled() interface{}
 	SetTunnelingEnabled(val interface{})
 	TunnelingEnabledInput() interface{}
+	VirtualNetworkId() *string
+	SetVirtualNetworkId(val *string)
+	VirtualNetworkIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -153,6 +156,7 @@ type BastionHost interface {
 	ResetCopyPasteEnabled()
 	ResetFileCopyEnabled()
 	ResetId()
+	ResetIpConfiguration()
 	ResetIpConnectEnabled()
 	ResetKerberosEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -164,6 +168,7 @@ type BastionHost interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetTunnelingEnabled()
+	ResetVirtualNetworkId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -652,8 +657,28 @@ func (j *jsiiProxy_BastionHost) TunnelingEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BastionHost) VirtualNetworkId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"virtualNetworkId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
+func (j *jsiiProxy_BastionHost) VirtualNetworkIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"virtualNetworkIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/bastion_host azurerm_bastion_host} Resource.
 func NewBastionHost(scope constructs.Construct, id *string, config *BastionHostConfig) BastionHost {
 	_init_.Initialize()
 
@@ -671,7 +696,7 @@ func NewBastionHost(scope constructs.Construct, id *string, config *BastionHostC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/bastion_host azurerm_bastion_host} Resource.
 func NewBastionHost_Override(b BastionHost, scope constructs.Construct, id *string, config *BastionHostConfig) {
 	_init_.Initialize()
 
@@ -889,6 +914,17 @@ func (j *jsiiProxy_BastionHost)SetTunnelingEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"tunnelingEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BastionHost)SetVirtualNetworkId(val *string) {
+	if err := j.validateSetVirtualNetworkIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"virtualNetworkId",
 		val,
 	)
 }
@@ -1292,6 +1328,14 @@ func (b *jsiiProxy_BastionHost) ResetId() {
 	)
 }
 
+func (b *jsiiProxy_BastionHost) ResetIpConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetIpConfiguration",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BastionHost) ResetIpConnectEnabled() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1360,6 +1404,14 @@ func (b *jsiiProxy_BastionHost) ResetTunnelingEnabled() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetTunnelingEnabled",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BastionHost) ResetVirtualNetworkId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetVirtualNetworkId",
 		nil, // no parameters
 	)
 }

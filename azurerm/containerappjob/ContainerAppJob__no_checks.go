@@ -91,7 +91,15 @@ func (c *jsiiProxy_ContainerAppJob) validatePutRegistriesParameters(value interf
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAppJob) validatePutRegistryParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAppJob) validatePutScheduleTriggerConfigParameters(value *ContainerAppJobScheduleTriggerConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAppJob) validatePutSecretParameters(value interface{}) error {
 	return nil
 }
 

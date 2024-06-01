@@ -437,6 +437,14 @@ func (j *jsiiProxy_AutomationPowershell72Module) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_AutomationPowershell72Module) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewAutomationPowershell72ModuleParameters(scope constructs.Construct, id *string, config *AutomationPowershell72ModuleConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace}.
 type MachineLearningWorkspace interface {
 	cdktf.TerraformResource
 	ApplicationInsightsId() *string
@@ -109,6 +109,8 @@ type MachineLearningWorkspace interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	ServerlessCompute() MachineLearningWorkspaceServerlessComputeOutputReference
+	ServerlessComputeInput() *MachineLearningWorkspaceServerlessCompute
 	SkuName() *string
 	SetSkuName(val *string)
 	SkuNameInput() *string
@@ -177,6 +179,7 @@ type MachineLearningWorkspace interface {
 	PutFeatureStore(value *MachineLearningWorkspaceFeatureStore)
 	PutIdentity(value *MachineLearningWorkspaceIdentity)
 	PutManagedNetwork(value *MachineLearningWorkspaceManagedNetwork)
+	PutServerlessCompute(value *MachineLearningWorkspaceServerlessCompute)
 	PutTimeouts(value *MachineLearningWorkspaceTimeouts)
 	ResetContainerRegistryId()
 	ResetDescription()
@@ -194,6 +197,7 @@ type MachineLearningWorkspace interface {
 	ResetPrimaryUserAssignedIdentity()
 	ResetPublicAccessBehindVirtualNetworkEnabled()
 	ResetPublicNetworkAccessEnabled()
+	ResetServerlessCompute()
 	ResetSkuName()
 	ResetTags()
 	ResetTimeouts()
@@ -736,6 +740,26 @@ func (j *jsiiProxy_MachineLearningWorkspace) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MachineLearningWorkspace) ServerlessCompute() MachineLearningWorkspaceServerlessComputeOutputReference {
+	var returns MachineLearningWorkspaceServerlessComputeOutputReference
+	_jsii_.Get(
+		j,
+		"serverlessCompute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MachineLearningWorkspace) ServerlessComputeInput() *MachineLearningWorkspaceServerlessCompute {
+	var returns *MachineLearningWorkspaceServerlessCompute
+	_jsii_.Get(
+		j,
+		"serverlessComputeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MachineLearningWorkspace) SkuName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -877,7 +901,7 @@ func (j *jsiiProxy_MachineLearningWorkspace) WorkspaceId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace} Resource.
 func NewMachineLearningWorkspace(scope constructs.Construct, id *string, config *MachineLearningWorkspaceConfig) MachineLearningWorkspace {
 	_init_.Initialize()
 
@@ -895,7 +919,7 @@ func NewMachineLearningWorkspace(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace} Resource.
 func NewMachineLearningWorkspace_Override(m MachineLearningWorkspace, scope constructs.Construct, id *string, config *MachineLearningWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -1580,6 +1604,17 @@ func (m *jsiiProxy_MachineLearningWorkspace) PutManagedNetwork(value *MachineLea
 	)
 }
 
+func (m *jsiiProxy_MachineLearningWorkspace) PutServerlessCompute(value *MachineLearningWorkspaceServerlessCompute) {
+	if err := m.validatePutServerlessComputeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putServerlessCompute",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MachineLearningWorkspace) PutTimeouts(value *MachineLearningWorkspaceTimeouts) {
 	if err := m.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1699,6 +1734,14 @@ func (m *jsiiProxy_MachineLearningWorkspace) ResetPublicNetworkAccessEnabled() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetPublicNetworkAccessEnabled",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MachineLearningWorkspace) ResetServerlessCompute() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetServerlessCompute",
 		nil, // no parameters
 	)
 }

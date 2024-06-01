@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/mysql_server_key azurerm_mysql_server_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/mysql_server_key azurerm_mysql_server_key}.
 type MysqlServerKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_MysqlServerKey) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/mysql_server_key azurerm_mysql_server_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/mysql_server_key azurerm_mysql_server_key} Resource.
 func NewMysqlServerKey(scope constructs.Construct, id *string, config *MysqlServerKeyConfig) MysqlServerKey {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewMysqlServerKey(scope constructs.Construct, id *string, config *MysqlServ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.105.0/docs/resources/mysql_server_key azurerm_mysql_server_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/mysql_server_key azurerm_mysql_server_key} Resource.
 func NewMysqlServerKey_Override(m MysqlServerKey, scope constructs.Construct, id *string, config *MysqlServerKeyConfig) {
 	_init_.Initialize()
 

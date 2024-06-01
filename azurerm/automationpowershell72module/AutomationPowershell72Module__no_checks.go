@@ -127,6 +127,10 @@ func (j *jsiiProxy_AutomationPowershell72Module) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_AutomationPowershell72Module) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewAutomationPowershell72ModuleParameters(scope constructs.Construct, id *string, config *AutomationPowershell72ModuleConfig) error {
 	return nil
 }

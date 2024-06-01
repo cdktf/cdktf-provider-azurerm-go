@@ -70,6 +70,7 @@ type RouteMapRuleActionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutParameter(value interface{})
+	ResetParameter()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -483,6 +484,14 @@ func (r *jsiiProxy_RouteMapRuleActionOutputReference) PutParameter(value interfa
 		r,
 		"putParameter",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RouteMapRuleActionOutputReference) ResetParameter() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetParameter",
+		nil, // no parameters
 	)
 }
 
