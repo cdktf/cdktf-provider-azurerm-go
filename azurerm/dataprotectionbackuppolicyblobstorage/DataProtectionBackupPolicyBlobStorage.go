@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage}.
 type DataProtectionBackupPolicyBlobStorage interface {
 	cdktf.TerraformResource
+	BackupRepeatingTimeIntervals() *[]*string
+	SetBackupRepeatingTimeIntervals(val *[]*string)
+	BackupRepeatingTimeIntervalsInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -51,6 +54,9 @@ type DataProtectionBackupPolicyBlobStorage interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OperationalDefaultRetentionDuration() *string
+	SetOperationalDefaultRetentionDuration(val *string)
+	OperationalDefaultRetentionDurationInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -64,6 +70,8 @@ type DataProtectionBackupPolicyBlobStorage interface {
 	RetentionDuration() *string
 	SetRetentionDuration(val *string)
 	RetentionDurationInput() *string
+	RetentionRule() DataProtectionBackupPolicyBlobStorageRetentionRuleList
+	RetentionRuleInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -72,6 +80,12 @@ type DataProtectionBackupPolicyBlobStorage interface {
 	TerraformResourceType() *string
 	Timeouts() DataProtectionBackupPolicyBlobStorageTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TimeZone() *string
+	SetTimeZone(val *string)
+	TimeZoneInput() *string
+	VaultDefaultRetentionDuration() *string
+	SetVaultDefaultRetentionDuration(val *string)
+	VaultDefaultRetentionDurationInput() *string
 	VaultId() *string
 	SetVaultId(val *string)
 	VaultIdInput() *string
@@ -118,12 +132,19 @@ type DataProtectionBackupPolicyBlobStorage interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutRetentionRule(value interface{})
 	PutTimeouts(value *DataProtectionBackupPolicyBlobStorageTimeouts)
+	ResetBackupRepeatingTimeIntervals()
 	ResetId()
+	ResetOperationalDefaultRetentionDuration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRetentionDuration()
+	ResetRetentionRule()
 	ResetTimeouts()
+	ResetTimeZone()
+	ResetVaultDefaultRetentionDuration()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -140,6 +161,26 @@ type DataProtectionBackupPolicyBlobStorage interface {
 // The jsii proxy struct for DataProtectionBackupPolicyBlobStorage
 type jsiiProxy_DataProtectionBackupPolicyBlobStorage struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) BackupRepeatingTimeIntervals() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"backupRepeatingTimeIntervals",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) BackupRepeatingTimeIntervalsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"backupRepeatingTimeIntervalsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) CdktfStack() cdktf.TerraformStack {
@@ -282,6 +323,26 @@ func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) Node() constructs.Node
 	return returns
 }
 
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) OperationalDefaultRetentionDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"operationalDefaultRetentionDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) OperationalDefaultRetentionDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"operationalDefaultRetentionDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -327,6 +388,26 @@ func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) RetentionDurationInput
 	_jsii_.Get(
 		j,
 		"retentionDurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) RetentionRule() DataProtectionBackupPolicyBlobStorageRetentionRuleList {
+	var returns DataProtectionBackupPolicyBlobStorageRetentionRuleList
+	_jsii_.Get(
+		j,
+		"retentionRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) RetentionRuleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"retentionRuleInput",
 		&returns,
 	)
 	return returns
@@ -382,6 +463,46 @@ func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) TimeoutsInput() interf
 	return returns
 }
 
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) TimeZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) TimeZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZoneInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) VaultDefaultRetentionDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vaultDefaultRetentionDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) VaultDefaultRetentionDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vaultDefaultRetentionDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) VaultId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -403,7 +524,7 @@ func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) VaultIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage} Resource.
 func NewDataProtectionBackupPolicyBlobStorage(scope constructs.Construct, id *string, config *DataProtectionBackupPolicyBlobStorageConfig) DataProtectionBackupPolicyBlobStorage {
 	_init_.Initialize()
 
@@ -421,7 +542,7 @@ func NewDataProtectionBackupPolicyBlobStorage(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage} Resource.
 func NewDataProtectionBackupPolicyBlobStorage_Override(d DataProtectionBackupPolicyBlobStorage, scope constructs.Construct, id *string, config *DataProtectionBackupPolicyBlobStorageConfig) {
 	_init_.Initialize()
 
@@ -429,6 +550,17 @@ func NewDataProtectionBackupPolicyBlobStorage_Override(d DataProtectionBackupPol
 		"@cdktf/provider-azurerm.dataProtectionBackupPolicyBlobStorage.DataProtectionBackupPolicyBlobStorage",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage)SetBackupRepeatingTimeIntervals(val *[]*string) {
+	if err := j.validateSetBackupRepeatingTimeIntervalsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"backupRepeatingTimeIntervals",
+		val,
 	)
 }
 
@@ -503,6 +635,17 @@ func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage)SetOperationalDefaultRetentionDuration(val *string) {
+	if err := j.validateSetOperationalDefaultRetentionDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationalDefaultRetentionDuration",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -529,6 +672,28 @@ func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage)SetRetentionDuration(va
 	_jsii_.Set(
 		j,
 		"retentionDuration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage)SetTimeZone(val *string) {
+	if err := j.validateSetTimeZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timeZone",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage)SetVaultDefaultRetentionDuration(val *string) {
+	if err := j.validateSetVaultDefaultRetentionDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vaultDefaultRetentionDuration",
 		val,
 	)
 }
@@ -897,6 +1062,17 @@ func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) OverrideLogicalId(newL
 	)
 }
 
+func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) PutRetentionRule(value interface{}) {
+	if err := d.validatePutRetentionRuleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRetentionRule",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) PutTimeouts(value *DataProtectionBackupPolicyBlobStorageTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -908,10 +1084,26 @@ func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) PutTimeouts(value *Dat
 	)
 }
 
+func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) ResetBackupRepeatingTimeIntervals() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBackupRepeatingTimeIntervals",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) ResetOperationalDefaultRetentionDuration() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOperationalDefaultRetentionDuration",
 		nil, // no parameters
 	)
 }
@@ -924,10 +1116,42 @@ func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) ResetOverrideLogicalId
 	)
 }
 
+func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) ResetRetentionDuration() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRetentionDuration",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) ResetRetentionRule() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRetentionRule",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) ResetTimeZone() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimeZone",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) ResetVaultDefaultRetentionDuration() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetVaultDefaultRetentionDuration",
 		nil, // no parameters
 	)
 }

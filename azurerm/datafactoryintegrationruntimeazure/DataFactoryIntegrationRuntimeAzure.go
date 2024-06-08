@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/data_factory_integration_runtime_azure azurerm_data_factory_integration_runtime_azure}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/data_factory_integration_runtime_azure azurerm_data_factory_integration_runtime_azure}.
 type DataFactoryIntegrationRuntimeAzure interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -547,7 +547,7 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzure) VirtualNetworkEnabledInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/data_factory_integration_runtime_azure azurerm_data_factory_integration_runtime_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/data_factory_integration_runtime_azure azurerm_data_factory_integration_runtime_azure} Resource.
 func NewDataFactoryIntegrationRuntimeAzure(scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeAzureConfig) DataFactoryIntegrationRuntimeAzure {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewDataFactoryIntegrationRuntimeAzure(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/data_factory_integration_runtime_azure azurerm_data_factory_integration_runtime_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/data_factory_integration_runtime_azure azurerm_data_factory_integration_runtime_azure} Resource.
 func NewDataFactoryIntegrationRuntimeAzure_Override(d DataFactoryIntegrationRuntimeAzure, scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeAzureConfig) {
 	_init_.Initialize()
 

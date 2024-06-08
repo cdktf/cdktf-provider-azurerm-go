@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule}.
 type NotificationHubAuthorizationRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,7 @@ type NotificationHubAuthorizationRule interface {
 	SetNotificationHubName(val *string)
 	NotificationHubNameInput() *string
 	PrimaryAccessKey() *string
+	PrimaryConnectionString() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -78,6 +79,7 @@ type NotificationHubAuthorizationRule interface {
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
 	SecondaryAccessKey() *string
+	SecondaryConnectionString() *string
 	Send() interface{}
 	SetSend(val interface{})
 	SendInput() interface{}
@@ -389,6 +391,16 @@ func (j *jsiiProxy_NotificationHubAuthorizationRule) PrimaryAccessKey() *string 
 	return returns
 }
 
+func (j *jsiiProxy_NotificationHubAuthorizationRule) PrimaryConnectionString() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryConnectionString",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NotificationHubAuthorizationRule) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -444,6 +456,16 @@ func (j *jsiiProxy_NotificationHubAuthorizationRule) SecondaryAccessKey() *strin
 	_jsii_.Get(
 		j,
 		"secondaryAccessKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationHubAuthorizationRule) SecondaryConnectionString() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryConnectionString",
 		&returns,
 	)
 	return returns
@@ -520,7 +542,7 @@ func (j *jsiiProxy_NotificationHubAuthorizationRule) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule} Resource.
 func NewNotificationHubAuthorizationRule(scope constructs.Construct, id *string, config *NotificationHubAuthorizationRuleConfig) NotificationHubAuthorizationRule {
 	_init_.Initialize()
 
@@ -538,7 +560,7 @@ func NewNotificationHubAuthorizationRule(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/notification_hub_authorization_rule azurerm_notification_hub_authorization_rule} Resource.
 func NewNotificationHubAuthorizationRule_Override(n NotificationHubAuthorizationRule, scope constructs.Construct, id *string, config *NotificationHubAuthorizationRuleConfig) {
 	_init_.Initialize()
 

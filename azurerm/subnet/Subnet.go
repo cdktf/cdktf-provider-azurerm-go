@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/subnet azurerm_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/subnet azurerm_subnet}.
 type Subnet interface {
 	cdktf.TerraformResource
 	AddressPrefixes() *[]*string
@@ -30,6 +30,9 @@ type Subnet interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultOutboundAccessEnabled() interface{}
+	SetDefaultOutboundAccessEnabled(val interface{})
+	DefaultOutboundAccessEnabledInput() interface{}
 	Delegation() SubnetDelegationList
 	DelegationInput() interface{}
 	// Experimental.
@@ -146,6 +149,7 @@ type Subnet interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutDelegation(value interface{})
 	PutTimeouts(value *SubnetTimeouts)
+	ResetDefaultOutboundAccessEnabled()
 	ResetDelegation()
 	ResetEnforcePrivateLinkEndpointNetworkPolicies()
 	ResetEnforcePrivateLinkServiceNetworkPolicies()
@@ -232,6 +236,26 @@ func (j *jsiiProxy_Subnet) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Subnet) DefaultOutboundAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultOutboundAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Subnet) DefaultOutboundAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultOutboundAccessEnabledInput",
 		&returns,
 	)
 	return returns
@@ -618,7 +642,7 @@ func (j *jsiiProxy_Subnet) VirtualNetworkNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/subnet azurerm_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/subnet azurerm_subnet} Resource.
 func NewSubnet(scope constructs.Construct, id *string, config *SubnetConfig) Subnet {
 	_init_.Initialize()
 
@@ -636,7 +660,7 @@ func NewSubnet(scope constructs.Construct, id *string, config *SubnetConfig) Sub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/subnet azurerm_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/subnet azurerm_subnet} Resource.
 func NewSubnet_Override(s Subnet, scope constructs.Construct, id *string, config *SubnetConfig) {
 	_init_.Initialize()
 
@@ -676,6 +700,17 @@ func (j *jsiiProxy_Subnet)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Subnet)SetDefaultOutboundAccessEnabled(val interface{}) {
+	if err := j.validateSetDefaultOutboundAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultOutboundAccessEnabled",
 		val,
 	)
 }
@@ -1219,6 +1254,14 @@ func (s *jsiiProxy_Subnet) PutTimeouts(value *SubnetTimeouts) {
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_Subnet) ResetDefaultOutboundAccessEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultOutboundAccessEnabled",
+		nil, // no parameters
 	)
 }
 

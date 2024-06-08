@@ -31,6 +31,9 @@ type KubernetesClusterWebAppRoutingOutputReference interface {
 	DnsZoneId() *string
 	SetDnsZoneId(val *string)
 	DnsZoneIdInput() *string
+	DnsZoneIds() *[]*string
+	SetDnsZoneIds(val *[]*string)
+	DnsZoneIdsInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *KubernetesClusterWebAppRouting
@@ -68,6 +71,8 @@ type KubernetesClusterWebAppRoutingOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDnsZoneId()
+	ResetDnsZoneIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -128,6 +133,26 @@ func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) DnsZoneIdInput
 	_jsii_.Get(
 		j,
 		"dnsZoneIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) DnsZoneIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dnsZoneIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) DnsZoneIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dnsZoneIdsInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +265,17 @@ func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference)SetDnsZoneId(va
 	_jsii_.Set(
 		j,
 		"dnsZoneId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference)SetDnsZoneIds(val *[]*string) {
+	if err := j.validateSetDnsZoneIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnsZoneIds",
 		val,
 	)
 }
@@ -461,6 +497,22 @@ func (k *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (k *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) ResetDnsZoneId() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetDnsZoneId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) ResetDnsZoneIds() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetDnsZoneIds",
+		nil, // no parameters
+	)
 }
 
 func (k *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

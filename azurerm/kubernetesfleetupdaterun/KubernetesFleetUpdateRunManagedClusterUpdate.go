@@ -7,11 +7,11 @@ package kubernetesfleetupdaterun
 type KubernetesFleetUpdateRunManagedClusterUpdate struct {
 	// upgrade block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/kubernetes_fleet_update_run#upgrade KubernetesFleetUpdateRun#upgrade}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/kubernetes_fleet_update_run#upgrade KubernetesFleetUpdateRun#upgrade}
 	Upgrade *KubernetesFleetUpdateRunManagedClusterUpdateUpgrade `field:"required" json:"upgrade" yaml:"upgrade"`
 	// node_image_selection block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/resources/kubernetes_fleet_update_run#node_image_selection KubernetesFleetUpdateRun#node_image_selection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/kubernetes_fleet_update_run#node_image_selection KubernetesFleetUpdateRun#node_image_selection}
 	NodeImageSelection *KubernetesFleetUpdateRunManagedClusterUpdateNodeImageSelection `field:"optional" json:"nodeImageSelection" yaml:"nodeImageSelection"`
 }
 

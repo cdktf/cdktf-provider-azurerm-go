@@ -5,7 +5,7 @@ package dataazurermlogicappintegrationaccount
 
 
 type DataAzurermLogicAppIntegrationAccountTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/data-sources/logic_app_integration_account#read DataAzurermLogicAppIntegrationAccount#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/data-sources/logic_app_integration_account#read DataAzurermLogicAppIntegrationAccount#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

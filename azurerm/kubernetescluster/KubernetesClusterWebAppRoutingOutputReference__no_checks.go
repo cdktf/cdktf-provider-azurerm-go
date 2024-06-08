@@ -63,6 +63,10 @@ func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) validateSetDns
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) validateSetDnsZoneIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterWebAppRoutingOutputReference) validateSetInternalValueParameters(val *KubernetesClusterWebAppRouting) error {
 	return nil
 }

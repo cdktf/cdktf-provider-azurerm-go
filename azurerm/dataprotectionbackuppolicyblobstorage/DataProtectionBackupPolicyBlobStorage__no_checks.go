@@ -75,6 +75,10 @@ func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateOverrideLogica
 	return nil
 }
 
+func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validatePutRetentionRuleParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validatePutTimeoutsParameters(value *DataProtectionBackupPolicyBlobStorageTimeouts) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func validateDataProtectionBackupPolicyBlobStorage_IsTerraformElementParameters(
 }
 
 func validateDataProtectionBackupPolicyBlobStorage_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateSetBackupRepeatingTimeIntervalsParameters(val *[]*string) error {
 	return nil
 }
 
@@ -115,11 +123,23 @@ func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateSetNameParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateSetOperationalDefaultRetentionDurationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateSetRetentionDurationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateSetTimeZoneParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateSetVaultDefaultRetentionDurationParameters(val *string) error {
 	return nil
 }
 

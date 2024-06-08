@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/data-sources/subnet azurerm_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/data-sources/subnet azurerm_subnet}.
 type DataAzurermSubnet interface {
 	cdktf.TerraformDataSource
 	AddressPrefix() *string
@@ -25,6 +25,7 @@ type DataAzurermSubnet interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultOutboundAccessEnabled() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -172,6 +173,16 @@ func (j *jsiiProxy_DataAzurermSubnet) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermSubnet) DefaultOutboundAccessEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"defaultOutboundAccessEnabled",
 		&returns,
 	)
 	return returns
@@ -468,7 +479,7 @@ func (j *jsiiProxy_DataAzurermSubnet) VirtualNetworkNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/data-sources/subnet azurerm_subnet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/data-sources/subnet azurerm_subnet} Data Source.
 func NewDataAzurermSubnet(scope constructs.Construct, id *string, config *DataAzurermSubnetConfig) DataAzurermSubnet {
 	_init_.Initialize()
 
@@ -486,7 +497,7 @@ func NewDataAzurermSubnet(scope constructs.Construct, id *string, config *DataAz
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.106.1/docs/data-sources/subnet azurerm_subnet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/data-sources/subnet azurerm_subnet} Data Source.
 func NewDataAzurermSubnet_Override(d DataAzurermSubnet, scope constructs.Construct, id *string, config *DataAzurermSubnetConfig) {
 	_init_.Initialize()
 
