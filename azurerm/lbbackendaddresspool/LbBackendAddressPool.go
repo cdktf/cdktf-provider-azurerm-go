@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/lb_backend_address_pool azurerm_lb_backend_address_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/lb_backend_address_pool azurerm_lb_backend_address_pool}.
 type LbBackendAddressPool interface {
 	cdktf.TerraformResource
 	BackendIpConfigurations() *[]*string
@@ -68,6 +68,9 @@ type LbBackendAddressPool interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SynchronousMode() *string
+	SetSynchronousMode(val *string)
+	SynchronousModeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -130,6 +133,7 @@ type LbBackendAddressPool interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSynchronousMode()
 	ResetTimeouts()
 	ResetTunnelInterface()
 	ResetVirtualNetworkId()
@@ -381,6 +385,26 @@ func (j *jsiiProxy_LbBackendAddressPool) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LbBackendAddressPool) SynchronousMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"synchronousMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbBackendAddressPool) SynchronousModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"synchronousModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LbBackendAddressPool) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -472,7 +496,7 @@ func (j *jsiiProxy_LbBackendAddressPool) VirtualNetworkIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/lb_backend_address_pool azurerm_lb_backend_address_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/lb_backend_address_pool azurerm_lb_backend_address_pool} Resource.
 func NewLbBackendAddressPool(scope constructs.Construct, id *string, config *LbBackendAddressPoolConfig) LbBackendAddressPool {
 	_init_.Initialize()
 
@@ -490,7 +514,7 @@ func NewLbBackendAddressPool(scope constructs.Construct, id *string, config *LbB
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/lb_backend_address_pool azurerm_lb_backend_address_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/lb_backend_address_pool azurerm_lb_backend_address_pool} Resource.
 func NewLbBackendAddressPool_Override(l LbBackendAddressPool, scope constructs.Construct, id *string, config *LbBackendAddressPoolConfig) {
 	_init_.Initialize()
 
@@ -598,6 +622,17 @@ func (j *jsiiProxy_LbBackendAddressPool)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbBackendAddressPool)SetSynchronousMode(val *string) {
+	if err := j.validateSetSynchronousModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"synchronousMode",
 		val,
 	)
 }
@@ -1000,6 +1035,14 @@ func (l *jsiiProxy_LbBackendAddressPool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbBackendAddressPool) ResetSynchronousMode() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSynchronousMode",
 		nil, // no parameters
 	)
 }

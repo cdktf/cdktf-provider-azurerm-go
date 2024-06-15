@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/network_interface azurerm_network_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/network_interface azurerm_network_interface}.
 type NetworkInterface interface {
 	cdktf.TerraformResource
+	AcceleratedNetworkingEnabled() interface{}
+	SetAcceleratedNetworkingEnabled(val interface{})
+	AcceleratedNetworkingEnabledInput() interface{}
 	AppliedDnsServers() *[]*string
 	AuxiliaryMode() *string
 	SetAuxiliaryMode(val *string)
@@ -67,6 +70,9 @@ type NetworkInterface interface {
 	InternalDomainNameSuffix() *string
 	IpConfiguration() NetworkInterfaceIpConfigurationList
 	IpConfigurationInput() interface{}
+	IpForwardingEnabled() interface{}
+	SetIpForwardingEnabled(val interface{})
+	IpForwardingEnabledInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -152,6 +158,7 @@ type NetworkInterface interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutIpConfiguration(value interface{})
 	PutTimeouts(value *NetworkInterfaceTimeouts)
+	ResetAcceleratedNetworkingEnabled()
 	ResetAuxiliaryMode()
 	ResetAuxiliarySku()
 	ResetDnsServers()
@@ -160,6 +167,7 @@ type NetworkInterface interface {
 	ResetEnableIpForwarding()
 	ResetId()
 	ResetInternalDnsNameLabel()
+	ResetIpForwardingEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -181,6 +189,26 @@ type NetworkInterface interface {
 // The jsii proxy struct for NetworkInterface
 type jsiiProxy_NetworkInterface struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_NetworkInterface) AcceleratedNetworkingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceleratedNetworkingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkInterface) AcceleratedNetworkingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceleratedNetworkingEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NetworkInterface) AppliedDnsServers() *[]*string {
@@ -463,6 +491,26 @@ func (j *jsiiProxy_NetworkInterface) IpConfigurationInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkInterface) IpForwardingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipForwardingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkInterface) IpForwardingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipForwardingEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkInterface) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -684,7 +732,7 @@ func (j *jsiiProxy_NetworkInterface) VirtualMachineId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/network_interface azurerm_network_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/network_interface azurerm_network_interface} Resource.
 func NewNetworkInterface(scope constructs.Construct, id *string, config *NetworkInterfaceConfig) NetworkInterface {
 	_init_.Initialize()
 
@@ -702,7 +750,7 @@ func NewNetworkInterface(scope constructs.Construct, id *string, config *Network
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/network_interface azurerm_network_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/network_interface azurerm_network_interface} Resource.
 func NewNetworkInterface_Override(n NetworkInterface, scope constructs.Construct, id *string, config *NetworkInterfaceConfig) {
 	_init_.Initialize()
 
@@ -710,6 +758,17 @@ func NewNetworkInterface_Override(n NetworkInterface, scope constructs.Construct
 		"@cdktf/provider-azurerm.networkInterface.NetworkInterface",
 		[]interface{}{scope, id, config},
 		n,
+	)
+}
+
+func (j *jsiiProxy_NetworkInterface)SetAcceleratedNetworkingEnabled(val interface{}) {
+	if err := j.validateSetAcceleratedNetworkingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"acceleratedNetworkingEnabled",
+		val,
 	)
 }
 
@@ -835,6 +894,17 @@ func (j *jsiiProxy_NetworkInterface)SetInternalDnsNameLabel(val *string) {
 	_jsii_.Set(
 		j,
 		"internalDnsNameLabel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkInterface)SetIpForwardingEnabled(val interface{}) {
+	if err := j.validateSetIpForwardingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipForwardingEnabled",
 		val,
 	)
 }
@@ -1288,6 +1358,14 @@ func (n *jsiiProxy_NetworkInterface) PutTimeouts(value *NetworkInterfaceTimeouts
 	)
 }
 
+func (n *jsiiProxy_NetworkInterface) ResetAcceleratedNetworkingEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAcceleratedNetworkingEnabled",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetworkInterface) ResetAuxiliaryMode() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1348,6 +1426,14 @@ func (n *jsiiProxy_NetworkInterface) ResetInternalDnsNameLabel() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetInternalDnsNameLabel",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkInterface) ResetIpForwardingEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIpForwardingEnabled",
 		nil, // no parameters
 	)
 }

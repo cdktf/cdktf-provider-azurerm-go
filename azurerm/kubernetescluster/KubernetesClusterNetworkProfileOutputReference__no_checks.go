@@ -91,6 +91,10 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetLo
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetNetworkDataPlaneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetNetworkModeParameters(val *string) error {
 	return nil
 }

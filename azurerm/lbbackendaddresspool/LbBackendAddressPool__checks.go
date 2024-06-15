@@ -457,6 +457,14 @@ func (j *jsiiProxy_LbBackendAddressPool) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_LbBackendAddressPool) validateSetSynchronousModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LbBackendAddressPool) validateSetVirtualNetworkIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

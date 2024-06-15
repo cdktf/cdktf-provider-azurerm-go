@@ -5,11 +5,11 @@ package chaosstudiotarget
 
 
 type ChaosStudioTargetTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/chaos_studio_target#create ChaosStudioTarget#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/chaos_studio_target#create ChaosStudioTarget#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/chaos_studio_target#delete ChaosStudioTarget#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/chaos_studio_target#delete ChaosStudioTarget#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/chaos_studio_target#read ChaosStudioTarget#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/chaos_studio_target#read ChaosStudioTarget#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

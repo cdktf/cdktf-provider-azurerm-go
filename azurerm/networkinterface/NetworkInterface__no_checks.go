@@ -99,6 +99,10 @@ func validateNetworkInterface_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_NetworkInterface) validateSetAcceleratedNetworkingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkInterface) validateSetAuxiliaryModeParameters(val *string) error {
 	return nil
 }
@@ -136,6 +140,10 @@ func (j *jsiiProxy_NetworkInterface) validateSetIdParameters(val *string) error 
 }
 
 func (j *jsiiProxy_NetworkInterface) validateSetInternalDnsNameLabelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkInterface) validateSetIpForwardingEnabledParameters(val interface{}) error {
 	return nil
 }
 

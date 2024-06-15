@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/kubernetes_fleet_update_run azurerm_kubernetes_fleet_update_run}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/kubernetes_fleet_update_run azurerm_kubernetes_fleet_update_run}.
 type KubernetesFleetUpdateRun interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_KubernetesFleetUpdateRun) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/kubernetes_fleet_update_run azurerm_kubernetes_fleet_update_run} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/kubernetes_fleet_update_run azurerm_kubernetes_fleet_update_run} Resource.
 func NewKubernetesFleetUpdateRun(scope constructs.Construct, id *string, config *KubernetesFleetUpdateRunConfig) KubernetesFleetUpdateRun {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewKubernetesFleetUpdateRun(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/kubernetes_fleet_update_run azurerm_kubernetes_fleet_update_run} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/kubernetes_fleet_update_run azurerm_kubernetes_fleet_update_run} Resource.
 func NewKubernetesFleetUpdateRun_Override(k KubernetesFleetUpdateRun, scope constructs.Construct, id *string, config *KubernetesFleetUpdateRunConfig) {
 	_init_.Initialize()
 

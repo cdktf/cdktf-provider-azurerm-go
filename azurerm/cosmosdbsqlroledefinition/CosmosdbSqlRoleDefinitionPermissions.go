@@ -5,7 +5,7 @@ package cosmosdbsqlroledefinition
 
 
 type CosmosdbSqlRoleDefinitionPermissions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/cosmosdb_sql_role_definition#data_actions CosmosdbSqlRoleDefinition#data_actions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/cosmosdb_sql_role_definition#data_actions CosmosdbSqlRoleDefinition#data_actions}.
 	DataActions *[]*string `field:"required" json:"dataActions" yaml:"dataActions"`
 }
 

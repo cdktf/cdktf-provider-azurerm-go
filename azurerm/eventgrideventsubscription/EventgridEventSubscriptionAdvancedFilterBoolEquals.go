@@ -5,9 +5,9 @@ package eventgrideventsubscription
 
 
 type EventgridEventSubscriptionAdvancedFilterBoolEquals struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}.
 	Value interface{} `field:"required" json:"value" yaml:"value"`
 }
 

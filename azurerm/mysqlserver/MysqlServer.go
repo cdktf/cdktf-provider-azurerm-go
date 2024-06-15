@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/mysql_server azurerm_mysql_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/mysql_server azurerm_mysql_server}.
 type MysqlServer interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -843,7 +843,7 @@ func (j *jsiiProxy_MysqlServer) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/mysql_server azurerm_mysql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/mysql_server azurerm_mysql_server} Resource.
 func NewMysqlServer(scope constructs.Construct, id *string, config *MysqlServerConfig) MysqlServer {
 	_init_.Initialize()
 
@@ -861,7 +861,7 @@ func NewMysqlServer(scope constructs.Construct, id *string, config *MysqlServerC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/mysql_server azurerm_mysql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/mysql_server azurerm_mysql_server} Resource.
 func NewMysqlServer_Override(m MysqlServer, scope constructs.Construct, id *string, config *MysqlServerConfig) {
 	_init_.Initialize()
 

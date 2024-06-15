@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set}.
 type ServicebusNamespaceNetworkRuleSetA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -477,7 +477,7 @@ func (j *jsiiProxy_ServicebusNamespaceNetworkRuleSetA) TrustedServicesAllowedInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set} Resource.
 func NewServicebusNamespaceNetworkRuleSetA(scope constructs.Construct, id *string, config *ServicebusNamespaceNetworkRuleSetAConfig) ServicebusNamespaceNetworkRuleSetA {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewServicebusNamespaceNetworkRuleSetA(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/servicebus_namespace_network_rule_set azurerm_servicebus_namespace_network_rule_set} Resource.
 func NewServicebusNamespaceNetworkRuleSetA_Override(s ServicebusNamespaceNetworkRuleSetA, scope constructs.Construct, id *string, config *ServicebusNamespaceNetworkRuleSetAConfig) {
 	_init_.Initialize()
 

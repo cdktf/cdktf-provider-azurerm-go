@@ -5,13 +5,13 @@ package functionapphybridconnection
 
 
 type FunctionAppHybridConnectionTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/function_app_hybrid_connection#create FunctionAppHybridConnection#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/function_app_hybrid_connection#create FunctionAppHybridConnection#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/function_app_hybrid_connection#delete FunctionAppHybridConnection#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/function_app_hybrid_connection#delete FunctionAppHybridConnection#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/function_app_hybrid_connection#read FunctionAppHybridConnection#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/function_app_hybrid_connection#read FunctionAppHybridConnection#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/resources/function_app_hybrid_connection#update FunctionAppHybridConnection#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/function_app_hybrid_connection#update FunctionAppHybridConnection#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

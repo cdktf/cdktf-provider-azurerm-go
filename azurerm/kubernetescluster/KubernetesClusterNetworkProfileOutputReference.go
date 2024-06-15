@@ -51,6 +51,9 @@ type KubernetesClusterNetworkProfileOutputReference interface {
 	LoadBalancerSkuInput() *string
 	NatGatewayProfile() KubernetesClusterNetworkProfileNatGatewayProfileOutputReference
 	NatGatewayProfileInput() *KubernetesClusterNetworkProfileNatGatewayProfile
+	NetworkDataPlane() *string
+	SetNetworkDataPlane(val *string)
+	NetworkDataPlaneInput() *string
 	NetworkMode() *string
 	SetNetworkMode(val *string)
 	NetworkModeInput() *string
@@ -125,6 +128,7 @@ type KubernetesClusterNetworkProfileOutputReference interface {
 	ResetLoadBalancerProfile()
 	ResetLoadBalancerSku()
 	ResetNatGatewayProfile()
+	ResetNetworkDataPlane()
 	ResetNetworkMode()
 	ResetNetworkPluginMode()
 	ResetNetworkPolicy()
@@ -335,6 +339,26 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) NatGatewayPro
 	_jsii_.Get(
 		j,
 		"natGatewayProfileInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) NetworkDataPlane() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkDataPlane",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) NetworkDataPlaneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkDataPlaneInput",
 		&returns,
 	)
 	return returns
@@ -692,6 +716,17 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetLoadBalance
 	_jsii_.Set(
 		j,
 		"loadBalancerSku",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetNetworkDataPlane(val *string) {
+	if err := j.validateSetNetworkDataPlaneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkDataPlane",
 		val,
 	)
 }
@@ -1099,6 +1134,14 @@ func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetNatGatew
 	_jsii_.InvokeVoid(
 		k,
 		"resetNatGatewayProfile",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetNetworkDataPlane() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetNetworkDataPlane",
 		nil, // no parameters
 	)
 }

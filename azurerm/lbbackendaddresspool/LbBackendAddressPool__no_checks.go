@@ -127,6 +127,10 @@ func (j *jsiiProxy_LbBackendAddressPool) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_LbBackendAddressPool) validateSetSynchronousModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbBackendAddressPool) validateSetVirtualNetworkIdParameters(val *string) error {
 	return nil
 }

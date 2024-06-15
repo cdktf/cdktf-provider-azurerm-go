@@ -5,7 +5,7 @@ package dataazurermconfidentialledger
 
 
 type DataAzurermConfidentialLedgerTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.107.0/docs/data-sources/confidential_ledger#read DataAzurermConfidentialLedger#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/data-sources/confidential_ledger#read DataAzurermConfidentialLedger#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

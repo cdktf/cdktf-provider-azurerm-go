@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermNetworkInterface.DataAzurermNetworkInterface",
 		reflect.TypeOf((*DataAzurermNetworkInterface)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "acceleratedNetworkingEnabled", GoGetter: "AcceleratedNetworkingEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "appliedDnsServers", GoGetter: "AppliedDnsServers"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -40,6 +41,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalDnsNameLabel", GoGetter: "InternalDnsNameLabel"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ipConfiguration", GoGetter: "IpConfiguration"},
+			_jsii_.MemberProperty{JsiiProperty: "ipForwardingEnabled", GoGetter: "IpForwardingEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "macAddress", GoGetter: "MacAddress"},
