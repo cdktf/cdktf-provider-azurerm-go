@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/data_protection_backup_instance_blob_storage azurerm_data_protection_backup_instance_blob_storage}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/data_protection_backup_instance_blob_storage azurerm_data_protection_backup_instance_blob_storage}.
 type DataProtectionBackupInstanceBlobStorage interface {
 	cdktf.TerraformResource
 	BackupPolicyId() *string
@@ -67,6 +67,9 @@ type DataProtectionBackupInstanceBlobStorage interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	StorageAccountContainerNames() *[]*string
+	SetStorageAccountContainerNames(val *[]*string)
+	StorageAccountContainerNamesInput() *[]*string
 	StorageAccountId() *string
 	SetStorageAccountId(val *string)
 	StorageAccountIdInput() *string
@@ -129,6 +132,7 @@ type DataProtectionBackupInstanceBlobStorage interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStorageAccountContainerNames()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -358,6 +362,26 @@ func (j *jsiiProxy_DataProtectionBackupInstanceBlobStorage) RawOverrides() inter
 	return returns
 }
 
+func (j *jsiiProxy_DataProtectionBackupInstanceBlobStorage) StorageAccountContainerNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"storageAccountContainerNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupInstanceBlobStorage) StorageAccountContainerNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"storageAccountContainerNamesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataProtectionBackupInstanceBlobStorage) StorageAccountId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -449,7 +473,7 @@ func (j *jsiiProxy_DataProtectionBackupInstanceBlobStorage) VaultIdInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/data_protection_backup_instance_blob_storage azurerm_data_protection_backup_instance_blob_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/data_protection_backup_instance_blob_storage azurerm_data_protection_backup_instance_blob_storage} Resource.
 func NewDataProtectionBackupInstanceBlobStorage(scope constructs.Construct, id *string, config *DataProtectionBackupInstanceBlobStorageConfig) DataProtectionBackupInstanceBlobStorage {
 	_init_.Initialize()
 
@@ -467,7 +491,7 @@ func NewDataProtectionBackupInstanceBlobStorage(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/data_protection_backup_instance_blob_storage azurerm_data_protection_backup_instance_blob_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/data_protection_backup_instance_blob_storage azurerm_data_protection_backup_instance_blob_storage} Resource.
 func NewDataProtectionBackupInstanceBlobStorage_Override(d DataProtectionBackupInstanceBlobStorage, scope constructs.Construct, id *string, config *DataProtectionBackupInstanceBlobStorageConfig) {
 	_init_.Initialize()
 
@@ -586,6 +610,17 @@ func (j *jsiiProxy_DataProtectionBackupInstanceBlobStorage)SetProvisioners(val *
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataProtectionBackupInstanceBlobStorage)SetStorageAccountContainerNames(val *[]*string) {
+	if err := j.validateSetStorageAccountContainerNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageAccountContainerNames",
 		val,
 	)
 }
@@ -988,6 +1023,14 @@ func (d *jsiiProxy_DataProtectionBackupInstanceBlobStorage) ResetOverrideLogical
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataProtectionBackupInstanceBlobStorage) ResetStorageAccountContainerNames() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStorageAccountContainerNames",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/backup_policy_vm azurerm_backup_policy_vm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/backup_policy_vm azurerm_backup_policy_vm}.
 type BackupPolicyVm interface {
 	cdktf.TerraformResource
 	Backup() BackupPolicyVmBackupOutputReference
@@ -91,6 +91,8 @@ type BackupPolicyVm interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TieringPolicy() BackupPolicyVmTieringPolicyOutputReference
+	TieringPolicyInput() *BackupPolicyVmTieringPolicy
 	Timeouts() BackupPolicyVmTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Timezone() *string
@@ -145,6 +147,7 @@ type BackupPolicyVm interface {
 	PutRetentionMonthly(value *BackupPolicyVmRetentionMonthly)
 	PutRetentionWeekly(value *BackupPolicyVmRetentionWeekly)
 	PutRetentionYearly(value *BackupPolicyVmRetentionYearly)
+	PutTieringPolicy(value *BackupPolicyVmTieringPolicy)
 	PutTimeouts(value *BackupPolicyVmTimeouts)
 	ResetId()
 	ResetInstantRestoreResourceGroup()
@@ -157,6 +160,7 @@ type BackupPolicyVm interface {
 	ResetRetentionMonthly()
 	ResetRetentionWeekly()
 	ResetRetentionYearly()
+	ResetTieringPolicy()
 	ResetTimeouts()
 	ResetTimezone()
 	SynthesizeAttributes() *map[string]interface{}
@@ -577,6 +581,26 @@ func (j *jsiiProxy_BackupPolicyVm) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BackupPolicyVm) TieringPolicy() BackupPolicyVmTieringPolicyOutputReference {
+	var returns BackupPolicyVmTieringPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"tieringPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupPolicyVm) TieringPolicyInput() *BackupPolicyVmTieringPolicy {
+	var returns *BackupPolicyVmTieringPolicy
+	_jsii_.Get(
+		j,
+		"tieringPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BackupPolicyVm) Timeouts() BackupPolicyVmTimeoutsOutputReference {
 	var returns BackupPolicyVmTimeoutsOutputReference
 	_jsii_.Get(
@@ -618,7 +642,7 @@ func (j *jsiiProxy_BackupPolicyVm) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/backup_policy_vm azurerm_backup_policy_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/backup_policy_vm azurerm_backup_policy_vm} Resource.
 func NewBackupPolicyVm(scope constructs.Construct, id *string, config *BackupPolicyVmConfig) BackupPolicyVm {
 	_init_.Initialize()
 
@@ -636,7 +660,7 @@ func NewBackupPolicyVm(scope constructs.Construct, id *string, config *BackupPol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/backup_policy_vm azurerm_backup_policy_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/backup_policy_vm azurerm_backup_policy_vm} Resource.
 func NewBackupPolicyVm_Override(b BackupPolicyVm, scope constructs.Construct, id *string, config *BackupPolicyVmConfig) {
 	_init_.Initialize()
 
@@ -1211,6 +1235,17 @@ func (b *jsiiProxy_BackupPolicyVm) PutRetentionYearly(value *BackupPolicyVmReten
 	)
 }
 
+func (b *jsiiProxy_BackupPolicyVm) PutTieringPolicy(value *BackupPolicyVmTieringPolicy) {
+	if err := b.validatePutTieringPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putTieringPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BackupPolicyVm) PutTimeouts(value *BackupPolicyVmTimeouts) {
 	if err := b.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1290,6 +1325,14 @@ func (b *jsiiProxy_BackupPolicyVm) ResetRetentionYearly() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetRetentionYearly",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupPolicyVm) ResetTieringPolicy() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTieringPolicy",
 		nil, // no parameters
 	)
 }

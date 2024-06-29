@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/web_pubsub azurerm_web_pubsub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/web_pubsub azurerm_web_pubsub}.
 type WebPubsub interface {
 	cdktf.TerraformResource
 	AadAuthEnabled() interface{}
@@ -717,7 +717,7 @@ func (j *jsiiProxy_WebPubsub) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/web_pubsub azurerm_web_pubsub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/web_pubsub azurerm_web_pubsub} Resource.
 func NewWebPubsub(scope constructs.Construct, id *string, config *WebPubsubConfig) WebPubsub {
 	_init_.Initialize()
 
@@ -735,7 +735,7 @@ func NewWebPubsub(scope constructs.Construct, id *string, config *WebPubsubConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/web_pubsub azurerm_web_pubsub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/web_pubsub azurerm_web_pubsub} Resource.
 func NewWebPubsub_Override(w WebPubsub, scope constructs.Construct, id *string, config *WebPubsubConfig) {
 	_init_.Initialize()
 

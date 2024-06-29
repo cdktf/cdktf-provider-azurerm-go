@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/monitor_private_link_scope azurerm_monitor_private_link_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/monitor_private_link_scope azurerm_monitor_private_link_scope}.
 type MonitorPrivateLinkScope interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,6 +42,9 @@ type MonitorPrivateLinkScope interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IngestionAccessMode() *string
+	SetIngestionAccessMode(val *string)
+	IngestionAccessModeInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -59,6 +62,9 @@ type MonitorPrivateLinkScope interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	QueryAccessMode() *string
+	SetQueryAccessMode(val *string)
+	QueryAccessModeInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -120,9 +126,11 @@ type MonitorPrivateLinkScope interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *MonitorPrivateLinkScopeTimeouts)
 	ResetId()
+	ResetIngestionAccessMode()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetQueryAccessMode()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -243,6 +251,26 @@ func (j *jsiiProxy_MonitorPrivateLinkScope) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MonitorPrivateLinkScope) IngestionAccessMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ingestionAccessMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorPrivateLinkScope) IngestionAccessModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ingestionAccessModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitorPrivateLinkScope) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -298,6 +326,26 @@ func (j *jsiiProxy_MonitorPrivateLinkScope) Provisioners() *[]interface{} {
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorPrivateLinkScope) QueryAccessMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"queryAccessMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorPrivateLinkScope) QueryAccessModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"queryAccessModeInput",
 		&returns,
 	)
 	return returns
@@ -404,7 +452,7 @@ func (j *jsiiProxy_MonitorPrivateLinkScope) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/monitor_private_link_scope azurerm_monitor_private_link_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/monitor_private_link_scope azurerm_monitor_private_link_scope} Resource.
 func NewMonitorPrivateLinkScope(scope constructs.Construct, id *string, config *MonitorPrivateLinkScopeConfig) MonitorPrivateLinkScope {
 	_init_.Initialize()
 
@@ -422,7 +470,7 @@ func NewMonitorPrivateLinkScope(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/monitor_private_link_scope azurerm_monitor_private_link_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/monitor_private_link_scope azurerm_monitor_private_link_scope} Resource.
 func NewMonitorPrivateLinkScope_Override(m MonitorPrivateLinkScope, scope constructs.Construct, id *string, config *MonitorPrivateLinkScopeConfig) {
 	_init_.Initialize()
 
@@ -482,6 +530,17 @@ func (j *jsiiProxy_MonitorPrivateLinkScope)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_MonitorPrivateLinkScope)SetIngestionAccessMode(val *string) {
+	if err := j.validateSetIngestionAccessModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ingestionAccessMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MonitorPrivateLinkScope)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -519,6 +578,17 @@ func (j *jsiiProxy_MonitorPrivateLinkScope)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitorPrivateLinkScope)SetQueryAccessMode(val *string) {
+	if err := j.validateSetQueryAccessModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"queryAccessMode",
 		val,
 	)
 }
@@ -917,10 +987,26 @@ func (m *jsiiProxy_MonitorPrivateLinkScope) ResetId() {
 	)
 }
 
+func (m *jsiiProxy_MonitorPrivateLinkScope) ResetIngestionAccessMode() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetIngestionAccessMode",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MonitorPrivateLinkScope) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorPrivateLinkScope) ResetQueryAccessMode() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetQueryAccessMode",
 		nil, // no parameters
 	)
 }

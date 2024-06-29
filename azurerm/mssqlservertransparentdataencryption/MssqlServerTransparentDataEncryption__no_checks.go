@@ -119,6 +119,10 @@ func (j *jsiiProxy_MssqlServerTransparentDataEncryption) validateSetLifecyclePar
 	return nil
 }
 
+func (j *jsiiProxy_MssqlServerTransparentDataEncryption) validateSetManagedHsmKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlServerTransparentDataEncryption) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

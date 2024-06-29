@@ -87,6 +87,10 @@ func (s *jsiiProxy_SentinelAlertRuleScheduled) validatePutEventGroupingParameter
 	return nil
 }
 
+func (s *jsiiProxy_SentinelAlertRuleScheduled) validatePutIncidentParameters(value *SentinelAlertRuleScheduledIncident) error {
+	return nil
+}
+
 func (s *jsiiProxy_SentinelAlertRuleScheduled) validatePutIncidentConfigurationParameters(value *SentinelAlertRuleScheduledIncidentConfiguration) error {
 	return nil
 }

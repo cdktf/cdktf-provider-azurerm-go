@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container}.
 type CosmosdbSqlContainer interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -69,9 +69,15 @@ type CosmosdbSqlContainer interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PartitionKeyKind() *string
+	SetPartitionKeyKind(val *string)
+	PartitionKeyKindInput() *string
 	PartitionKeyPath() *string
 	SetPartitionKeyPath(val *string)
 	PartitionKeyPathInput() *string
+	PartitionKeyPaths() *[]*string
+	SetPartitionKeyPaths(val *[]*string)
+	PartitionKeyPathsInput() *[]*string
 	PartitionKeyVersion() *float64
 	SetPartitionKeyVersion(val *float64)
 	PartitionKeyVersionInput() *float64
@@ -158,6 +164,9 @@ type CosmosdbSqlContainer interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPartitionKeyKind()
+	ResetPartitionKeyPath()
+	ResetPartitionKeyPaths()
 	ResetPartitionKeyVersion()
 	ResetThroughput()
 	ResetTimeouts()
@@ -460,6 +469,26 @@ func (j *jsiiProxy_CosmosdbSqlContainer) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_CosmosdbSqlContainer) PartitionKeyKind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"partitionKeyKind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbSqlContainer) PartitionKeyKindInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"partitionKeyKindInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CosmosdbSqlContainer) PartitionKeyPath() *string {
 	var returns *string
 	_jsii_.Get(
@@ -475,6 +504,26 @@ func (j *jsiiProxy_CosmosdbSqlContainer) PartitionKeyPathInput() *string {
 	_jsii_.Get(
 		j,
 		"partitionKeyPathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbSqlContainer) PartitionKeyPaths() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"partitionKeyPaths",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbSqlContainer) PartitionKeyPathsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"partitionKeyPathsInput",
 		&returns,
 	)
 	return returns
@@ -641,7 +690,7 @@ func (j *jsiiProxy_CosmosdbSqlContainer) UniqueKeyInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container} Resource.
 func NewCosmosdbSqlContainer(scope constructs.Construct, id *string, config *CosmosdbSqlContainerConfig) CosmosdbSqlContainer {
 	_init_.Initialize()
 
@@ -659,7 +708,7 @@ func NewCosmosdbSqlContainer(scope constructs.Construct, id *string, config *Cos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container} Resource.
 func NewCosmosdbSqlContainer_Override(c CosmosdbSqlContainer, scope constructs.Construct, id *string, config *CosmosdbSqlContainerConfig) {
 	_init_.Initialize()
 
@@ -785,6 +834,17 @@ func (j *jsiiProxy_CosmosdbSqlContainer)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_CosmosdbSqlContainer)SetPartitionKeyKind(val *string) {
+	if err := j.validateSetPartitionKeyKindParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"partitionKeyKind",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CosmosdbSqlContainer)SetPartitionKeyPath(val *string) {
 	if err := j.validateSetPartitionKeyPathParameters(val); err != nil {
 		panic(err)
@@ -792,6 +852,17 @@ func (j *jsiiProxy_CosmosdbSqlContainer)SetPartitionKeyPath(val *string) {
 	_jsii_.Set(
 		j,
 		"partitionKeyPath",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CosmosdbSqlContainer)SetPartitionKeyPaths(val *[]*string) {
+	if err := j.validateSetPartitionKeyPathsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"partitionKeyPaths",
 		val,
 	)
 }
@@ -1308,6 +1379,30 @@ func (c *jsiiProxy_CosmosdbSqlContainer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CosmosdbSqlContainer) ResetPartitionKeyKind() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPartitionKeyKind",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CosmosdbSqlContainer) ResetPartitionKeyPath() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPartitionKeyPath",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CosmosdbSqlContainer) ResetPartitionKeyPaths() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPartitionKeyPaths",
 		nil, // no parameters
 	)
 }

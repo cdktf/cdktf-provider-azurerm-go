@@ -55,8 +55,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
+			_jsii_.MemberProperty{JsiiProperty: "incident", GoGetter: "Incident"},
 			_jsii_.MemberProperty{JsiiProperty: "incidentConfiguration", GoGetter: "IncidentConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "incidentConfigurationInput", GoGetter: "IncidentConfigurationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "incidentInput", GoGetter: "IncidentInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "logAnalyticsWorkspaceId", GoGetter: "LogAnalyticsWorkspaceId"},
@@ -73,6 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAlertDetailsOverride", GoMethod: "PutAlertDetailsOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "putEntityMapping", GoMethod: "PutEntityMapping"},
 			_jsii_.MemberMethod{JsiiMethod: "putEventGrouping", GoMethod: "PutEventGrouping"},
+			_jsii_.MemberMethod{JsiiMethod: "putIncident", GoMethod: "PutIncident"},
 			_jsii_.MemberMethod{JsiiMethod: "putIncidentConfiguration", GoMethod: "PutIncidentConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putSentinelEntityMapping", GoMethod: "PutSentinelEntityMapping"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
@@ -92,6 +95,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEntityMapping", GoMethod: "ResetEntityMapping"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEventGrouping", GoMethod: "ResetEventGrouping"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIncident", GoMethod: "ResetIncident"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIncidentConfiguration", GoMethod: "ResetIncidentConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQueryFrequency", GoMethod: "ResetQueryFrequency"},
@@ -442,6 +446,10 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.sentinelAlertRuleScheduled.SentinelAlertRuleScheduledIncident",
+		reflect.TypeOf((*SentinelAlertRuleScheduledIncident)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.sentinelAlertRuleScheduled.SentinelAlertRuleScheduledIncidentConfiguration",
 		reflect.TypeOf((*SentinelAlertRuleScheduledIncidentConfiguration)(nil)).Elem(),
 	)
@@ -535,6 +543,100 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SentinelAlertRuleScheduledIncidentConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.sentinelAlertRuleScheduled.SentinelAlertRuleScheduledIncidentGrouping",
+		reflect.TypeOf((*SentinelAlertRuleScheduledIncidentGrouping)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.sentinelAlertRuleScheduled.SentinelAlertRuleScheduledIncidentGroupingOutputReference",
+		reflect.TypeOf((*SentinelAlertRuleScheduledIncidentGroupingOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "byAlertDetails", GoGetter: "ByAlertDetails"},
+			_jsii_.MemberProperty{JsiiProperty: "byAlertDetailsInput", GoGetter: "ByAlertDetailsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "byCustomDetails", GoGetter: "ByCustomDetails"},
+			_jsii_.MemberProperty{JsiiProperty: "byCustomDetailsInput", GoGetter: "ByCustomDetailsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "byEntities", GoGetter: "ByEntities"},
+			_jsii_.MemberProperty{JsiiProperty: "byEntitiesInput", GoGetter: "ByEntitiesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "entityMatchingMethod", GoGetter: "EntityMatchingMethod"},
+			_jsii_.MemberProperty{JsiiProperty: "entityMatchingMethodInput", GoGetter: "EntityMatchingMethodInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lookbackDuration", GoGetter: "LookbackDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "lookbackDurationInput", GoGetter: "LookbackDurationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "reopenClosedIncidents", GoGetter: "ReopenClosedIncidents"},
+			_jsii_.MemberProperty{JsiiProperty: "reopenClosedIncidentsInput", GoGetter: "ReopenClosedIncidentsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetByAlertDetails", GoMethod: "ResetByAlertDetails"},
+			_jsii_.MemberMethod{JsiiMethod: "resetByCustomDetails", GoMethod: "ResetByCustomDetails"},
+			_jsii_.MemberMethod{JsiiMethod: "resetByEntities", GoMethod: "ResetByEntities"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEntityMatchingMethod", GoMethod: "ResetEntityMatchingMethod"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLookbackDuration", GoMethod: "ResetLookbackDuration"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReopenClosedIncidents", GoMethod: "ResetReopenClosedIncidents"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SentinelAlertRuleScheduledIncidentGroupingOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.sentinelAlertRuleScheduled.SentinelAlertRuleScheduledIncidentOutputReference",
+		reflect.TypeOf((*SentinelAlertRuleScheduledIncidentOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "createIncidentEnabled", GoGetter: "CreateIncidentEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "createIncidentEnabledInput", GoGetter: "CreateIncidentEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "grouping", GoGetter: "Grouping"},
+			_jsii_.MemberProperty{JsiiProperty: "groupingInput", GoGetter: "GroupingInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putGrouping", GoMethod: "PutGrouping"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SentinelAlertRuleScheduledIncidentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

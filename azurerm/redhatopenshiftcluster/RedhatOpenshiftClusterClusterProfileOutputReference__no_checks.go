@@ -71,6 +71,10 @@ func (j *jsiiProxy_RedhatOpenshiftClusterClusterProfileOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_RedhatOpenshiftClusterClusterProfileOutputReference) validateSetManagedResourceGroupNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedhatOpenshiftClusterClusterProfileOutputReference) validateSetPullSecretParameters(val *string) error {
 	return nil
 }

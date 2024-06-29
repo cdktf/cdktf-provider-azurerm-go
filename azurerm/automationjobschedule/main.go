@@ -62,6 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceManagerId", GoGetter: "ResourceManagerId"},
 			_jsii_.MemberProperty{JsiiProperty: "runbookName", GoGetter: "RunbookName"},
 			_jsii_.MemberProperty{JsiiProperty: "runbookNameInput", GoGetter: "RunbookNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "runOn", GoGetter: "RunOn"},

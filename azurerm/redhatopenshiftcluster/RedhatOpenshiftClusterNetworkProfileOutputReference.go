@@ -38,6 +38,9 @@ type RedhatOpenshiftClusterNetworkProfileOutputReference interface {
 	PodCidr() *string
 	SetPodCidr(val *string)
 	PodCidrInput() *string
+	PreconfiguredNetworkSecurityGroupEnabled() interface{}
+	SetPreconfiguredNetworkSecurityGroupEnabled(val interface{})
+	PreconfiguredNetworkSecurityGroupEnabledInput() interface{}
 	ServiceCidr() *string
 	SetServiceCidr(val *string)
 	ServiceCidrInput() *string
@@ -74,6 +77,7 @@ type RedhatOpenshiftClusterNetworkProfileOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetOutboundType()
+	ResetPreconfiguredNetworkSecurityGroupEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +178,26 @@ func (j *jsiiProxy_RedhatOpenshiftClusterNetworkProfileOutputReference) PodCidrI
 	_jsii_.Get(
 		j,
 		"podCidrInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedhatOpenshiftClusterNetworkProfileOutputReference) PreconfiguredNetworkSecurityGroupEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preconfiguredNetworkSecurityGroupEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedhatOpenshiftClusterNetworkProfileOutputReference) PreconfiguredNetworkSecurityGroupEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preconfiguredNetworkSecurityGroupEnabledInput",
 		&returns,
 	)
 	return returns
@@ -298,6 +322,17 @@ func (j *jsiiProxy_RedhatOpenshiftClusterNetworkProfileOutputReference)SetPodCid
 	_jsii_.Set(
 		j,
 		"podCidr",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedhatOpenshiftClusterNetworkProfileOutputReference)SetPreconfiguredNetworkSecurityGroupEnabled(val interface{}) {
+	if err := j.validateSetPreconfiguredNetworkSecurityGroupEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preconfiguredNetworkSecurityGroupEnabled",
 		val,
 	)
 }
@@ -525,6 +560,14 @@ func (r *jsiiProxy_RedhatOpenshiftClusterNetworkProfileOutputReference) ResetOut
 	_jsii_.InvokeVoid(
 		r,
 		"resetOutboundType",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedhatOpenshiftClusterNetworkProfileOutputReference) ResetPreconfiguredNetworkSecurityGroupEnabled() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPreconfiguredNetworkSecurityGroupEnabled",
 		nil, // no parameters
 	)
 }

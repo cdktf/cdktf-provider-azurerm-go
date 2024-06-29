@@ -123,11 +123,27 @@ func (j *jsiiProxy_VirtualNetworkPeering) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_VirtualNetworkPeering) validateSetLocalSubnetNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetworkPeering) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_VirtualNetworkPeering) validateSetOnlyIpv6PeeringEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_VirtualNetworkPeering) validateSetPeerCompleteVirtualNetworksEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetworkPeering) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_VirtualNetworkPeering) validateSetRemoteSubnetNamesParameters(val *[]*string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/data-sources/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/data-sources/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint}.
 type DataAzurermMonitorDataCollectionEndpoint interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -40,6 +40,7 @@ type DataAzurermMonitorDataCollectionEndpoint interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	ImmutableId() *string
 	Kind() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -231,6 +232,16 @@ func (j *jsiiProxy_DataAzurermMonitorDataCollectionEndpoint) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermMonitorDataCollectionEndpoint) ImmutableId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"immutableId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermMonitorDataCollectionEndpoint) Kind() *string {
 	var returns *string
 	_jsii_.Get(
@@ -412,7 +423,7 @@ func (j *jsiiProxy_DataAzurermMonitorDataCollectionEndpoint) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/data-sources/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/data-sources/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint} Data Source.
 func NewDataAzurermMonitorDataCollectionEndpoint(scope constructs.Construct, id *string, config *DataAzurermMonitorDataCollectionEndpointConfig) DataAzurermMonitorDataCollectionEndpoint {
 	_init_.Initialize()
 
@@ -430,7 +441,7 @@ func NewDataAzurermMonitorDataCollectionEndpoint(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/data-sources/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/data-sources/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint} Data Source.
 func NewDataAzurermMonitorDataCollectionEndpoint_Override(d DataAzurermMonitorDataCollectionEndpoint, scope constructs.Construct, id *string, config *DataAzurermMonitorDataCollectionEndpointConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/virtual_network_peering azurerm_virtual_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/virtual_network_peering azurerm_virtual_network_peering}.
 type VirtualNetworkPeering interface {
 	cdktf.TerraformResource
 	AllowForwardedTraffic() interface{}
@@ -55,11 +55,20 @@ type VirtualNetworkPeering interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LocalSubnetNames() *[]*string
+	SetLocalSubnetNames(val *[]*string)
+	LocalSubnetNamesInput() *[]*string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OnlyIpv6PeeringEnabled() interface{}
+	SetOnlyIpv6PeeringEnabled(val interface{})
+	OnlyIpv6PeeringEnabledInput() interface{}
+	PeerCompleteVirtualNetworksEnabled() interface{}
+	SetPeerCompleteVirtualNetworksEnabled(val interface{})
+	PeerCompleteVirtualNetworksEnabledInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -70,6 +79,9 @@ type VirtualNetworkPeering interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RemoteSubnetNames() *[]*string
+	SetRemoteSubnetNames(val *[]*string)
+	RemoteSubnetNamesInput() *[]*string
 	RemoteVirtualNetworkId() *string
 	SetRemoteVirtualNetworkId(val *string)
 	RemoteVirtualNetworkIdInput() *string
@@ -141,9 +153,13 @@ type VirtualNetworkPeering interface {
 	ResetAllowGatewayTransit()
 	ResetAllowVirtualNetworkAccess()
 	ResetId()
+	ResetLocalSubnetNames()
+	ResetOnlyIpv6PeeringEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPeerCompleteVirtualNetworksEnabled()
+	ResetRemoteSubnetNames()
 	ResetTimeouts()
 	ResetTriggers()
 	ResetUseRemoteGateways()
@@ -335,6 +351,26 @@ func (j *jsiiProxy_VirtualNetworkPeering) Lifecycle() *cdktf.TerraformResourceLi
 	return returns
 }
 
+func (j *jsiiProxy_VirtualNetworkPeering) LocalSubnetNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"localSubnetNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkPeering) LocalSubnetNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"localSubnetNamesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualNetworkPeering) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -365,6 +401,46 @@ func (j *jsiiProxy_VirtualNetworkPeering) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_VirtualNetworkPeering) OnlyIpv6PeeringEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onlyIpv6PeeringEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkPeering) OnlyIpv6PeeringEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onlyIpv6PeeringEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkPeering) PeerCompleteVirtualNetworksEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"peerCompleteVirtualNetworksEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkPeering) PeerCompleteVirtualNetworksEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"peerCompleteVirtualNetworksEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualNetworkPeering) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -390,6 +466,26 @@ func (j *jsiiProxy_VirtualNetworkPeering) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkPeering) RemoteSubnetNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"remoteSubnetNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkPeering) RemoteSubnetNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"remoteSubnetNamesInput",
 		&returns,
 	)
 	return returns
@@ -546,7 +642,7 @@ func (j *jsiiProxy_VirtualNetworkPeering) VirtualNetworkNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/virtual_network_peering azurerm_virtual_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/virtual_network_peering azurerm_virtual_network_peering} Resource.
 func NewVirtualNetworkPeering(scope constructs.Construct, id *string, config *VirtualNetworkPeeringConfig) VirtualNetworkPeering {
 	_init_.Initialize()
 
@@ -564,7 +660,7 @@ func NewVirtualNetworkPeering(scope constructs.Construct, id *string, config *Vi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/virtual_network_peering azurerm_virtual_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/virtual_network_peering azurerm_virtual_network_peering} Resource.
 func NewVirtualNetworkPeering_Override(v VirtualNetworkPeering, scope constructs.Construct, id *string, config *VirtualNetworkPeeringConfig) {
 	_init_.Initialize()
 
@@ -668,6 +764,17 @@ func (j *jsiiProxy_VirtualNetworkPeering)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
+func (j *jsiiProxy_VirtualNetworkPeering)SetLocalSubnetNames(val *[]*string) {
+	if err := j.validateSetLocalSubnetNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localSubnetNames",
+		val,
+	)
+}
+
 func (j *jsiiProxy_VirtualNetworkPeering)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -675,6 +782,28 @@ func (j *jsiiProxy_VirtualNetworkPeering)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualNetworkPeering)SetOnlyIpv6PeeringEnabled(val interface{}) {
+	if err := j.validateSetOnlyIpv6PeeringEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"onlyIpv6PeeringEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualNetworkPeering)SetPeerCompleteVirtualNetworksEnabled(val interface{}) {
+	if err := j.validateSetPeerCompleteVirtualNetworksEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"peerCompleteVirtualNetworksEnabled",
 		val,
 	)
 }
@@ -694,6 +823,17 @@ func (j *jsiiProxy_VirtualNetworkPeering)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualNetworkPeering)SetRemoteSubnetNames(val *[]*string) {
+	if err := j.validateSetRemoteSubnetNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"remoteSubnetNames",
 		val,
 	)
 }
@@ -1149,10 +1289,42 @@ func (v *jsiiProxy_VirtualNetworkPeering) ResetId() {
 	)
 }
 
+func (v *jsiiProxy_VirtualNetworkPeering) ResetLocalSubnetNames() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetLocalSubnetNames",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkPeering) ResetOnlyIpv6PeeringEnabled() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetOnlyIpv6PeeringEnabled",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VirtualNetworkPeering) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkPeering) ResetPeerCompleteVirtualNetworksEnabled() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPeerCompleteVirtualNetworksEnabled",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkPeering) ResetRemoteSubnetNames() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRemoteSubnetNames",
 		nil, // no parameters
 	)
 }

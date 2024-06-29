@@ -75,6 +75,18 @@ func (m *jsiiProxy_MapsAccount) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (m *jsiiProxy_MapsAccount) validatePutCorsParameters(value *MapsAccountCors) error {
+	return nil
+}
+
+func (m *jsiiProxy_MapsAccount) validatePutDataStoreParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MapsAccount) validatePutIdentityParameters(value *MapsAccountIdentity) error {
+	return nil
+}
+
 func (m *jsiiProxy_MapsAccount) validatePutTimeoutsParameters(value *MapsAccountTimeouts) error {
 	return nil
 }
@@ -112,6 +124,10 @@ func (j *jsiiProxy_MapsAccount) validateSetLifecycleParameters(val *cdktf.Terraf
 }
 
 func (j *jsiiProxy_MapsAccount) validateSetLocalAuthenticationEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MapsAccount) validateSetLocationParameters(val *string) error {
 	return nil
 }
 

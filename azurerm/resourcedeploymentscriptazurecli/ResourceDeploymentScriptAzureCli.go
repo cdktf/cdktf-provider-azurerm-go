@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/resource_deployment_script_azure_cli azurerm_resource_deployment_script_azure_cli}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/resource_deployment_script_azure_cli azurerm_resource_deployment_script_azure_cli}.
 type ResourceDeploymentScriptAzureCli interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -748,7 +748,7 @@ func (j *jsiiProxy_ResourceDeploymentScriptAzureCli) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/resource_deployment_script_azure_cli azurerm_resource_deployment_script_azure_cli} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/resource_deployment_script_azure_cli azurerm_resource_deployment_script_azure_cli} Resource.
 func NewResourceDeploymentScriptAzureCli(scope constructs.Construct, id *string, config *ResourceDeploymentScriptAzureCliConfig) ResourceDeploymentScriptAzureCli {
 	_init_.Initialize()
 
@@ -766,7 +766,7 @@ func NewResourceDeploymentScriptAzureCli(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/resource_deployment_script_azure_cli azurerm_resource_deployment_script_azure_cli} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/resource_deployment_script_azure_cli azurerm_resource_deployment_script_azure_cli} Resource.
 func NewResourceDeploymentScriptAzureCli_Override(r ResourceDeploymentScriptAzureCli, scope constructs.Construct, id *string, config *ResourceDeploymentScriptAzureCliConfig) {
 	_init_.Initialize()
 

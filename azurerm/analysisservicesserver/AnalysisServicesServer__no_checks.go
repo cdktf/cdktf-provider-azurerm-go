@@ -135,6 +135,10 @@ func (j *jsiiProxy_AnalysisServicesServer) validateSetNameParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_AnalysisServicesServer) validateSetPowerBiServiceEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AnalysisServicesServer) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

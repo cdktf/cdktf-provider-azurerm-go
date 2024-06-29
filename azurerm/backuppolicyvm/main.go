@@ -62,6 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putRetentionMonthly", GoMethod: "PutRetentionMonthly"},
 			_jsii_.MemberMethod{JsiiMethod: "putRetentionWeekly", GoMethod: "PutRetentionWeekly"},
 			_jsii_.MemberMethod{JsiiMethod: "putRetentionYearly", GoMethod: "PutRetentionYearly"},
+			_jsii_.MemberMethod{JsiiMethod: "putTieringPolicy", GoMethod: "PutTieringPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "recoveryVaultName", GoGetter: "RecoveryVaultName"},
@@ -75,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRetentionMonthly", GoMethod: "ResetRetentionMonthly"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRetentionWeekly", GoMethod: "ResetRetentionWeekly"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRetentionYearly", GoMethod: "ResetRetentionYearly"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTieringPolicy", GoMethod: "ResetTieringPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimezone", GoMethod: "ResetTimezone"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
@@ -92,6 +94,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
+			_jsii_.MemberProperty{JsiiProperty: "tieringPolicy", GoGetter: "TieringPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "tieringPolicyInput", GoGetter: "TieringPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "timezone", GoGetter: "Timezone"},
@@ -377,6 +381,89 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BackupPolicyVmRetentionYearlyOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.backupPolicyVm.BackupPolicyVmTieringPolicy",
+		reflect.TypeOf((*BackupPolicyVmTieringPolicy)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.backupPolicyVm.BackupPolicyVmTieringPolicyArchivedRestorePoint",
+		reflect.TypeOf((*BackupPolicyVmTieringPolicyArchivedRestorePoint)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.backupPolicyVm.BackupPolicyVmTieringPolicyArchivedRestorePointOutputReference",
+		reflect.TypeOf((*BackupPolicyVmTieringPolicyArchivedRestorePointOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "duration", GoGetter: "Duration"},
+			_jsii_.MemberProperty{JsiiProperty: "durationInput", GoGetter: "DurationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "durationType", GoGetter: "DurationType"},
+			_jsii_.MemberProperty{JsiiProperty: "durationTypeInput", GoGetter: "DurationTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
+			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDuration", GoMethod: "ResetDuration"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDurationType", GoMethod: "ResetDurationType"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BackupPolicyVmTieringPolicyArchivedRestorePointOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.backupPolicyVm.BackupPolicyVmTieringPolicyOutputReference",
+		reflect.TypeOf((*BackupPolicyVmTieringPolicyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "archivedRestorePoint", GoGetter: "ArchivedRestorePoint"},
+			_jsii_.MemberProperty{JsiiProperty: "archivedRestorePointInput", GoGetter: "ArchivedRestorePointInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putArchivedRestorePoint", GoMethod: "PutArchivedRestorePoint"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BackupPolicyVmTieringPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

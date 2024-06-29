@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/api_management_subscription azurerm_api_management_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/api_management_subscription azurerm_api_management_subscription}.
 type ApiManagementSubscription interface {
 	cdktf.TerraformResource
 	AllowTracing() interface{}
@@ -595,7 +595,7 @@ func (j *jsiiProxy_ApiManagementSubscription) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/api_management_subscription azurerm_api_management_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/api_management_subscription azurerm_api_management_subscription} Resource.
 func NewApiManagementSubscription(scope constructs.Construct, id *string, config *ApiManagementSubscriptionConfig) ApiManagementSubscription {
 	_init_.Initialize()
 
@@ -613,7 +613,7 @@ func NewApiManagementSubscription(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/api_management_subscription azurerm_api_management_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/api_management_subscription azurerm_api_management_subscription} Resource.
 func NewApiManagementSubscription_Override(a ApiManagementSubscription, scope constructs.Construct, id *string, config *ApiManagementSubscriptionConfig) {
 	_init_.Initialize()
 

@@ -38,6 +38,9 @@ type RedhatOpenshiftClusterClusterProfileOutputReference interface {
 	Fqn() *string
 	InternalValue() *RedhatOpenshiftClusterClusterProfile
 	SetInternalValue(val *RedhatOpenshiftClusterClusterProfile)
+	ManagedResourceGroupName() *string
+	SetManagedResourceGroupName(val *string)
+	ManagedResourceGroupNameInput() *string
 	PullSecret() *string
 	SetPullSecret(val *string)
 	PullSecretInput() *string
@@ -78,6 +81,7 @@ type RedhatOpenshiftClusterClusterProfileOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetFipsEnabled()
+	ResetManagedResourceGroupName()
 	ResetPullSecret()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -179,6 +183,26 @@ func (j *jsiiProxy_RedhatOpenshiftClusterClusterProfileOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedhatOpenshiftClusterClusterProfileOutputReference) ManagedResourceGroupName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedResourceGroupName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedhatOpenshiftClusterClusterProfileOutputReference) ManagedResourceGroupNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedResourceGroupNameInput",
 		&returns,
 	)
 	return returns
@@ -333,6 +357,17 @@ func (j *jsiiProxy_RedhatOpenshiftClusterClusterProfileOutputReference)SetIntern
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedhatOpenshiftClusterClusterProfileOutputReference)SetManagedResourceGroupName(val *string) {
+	if err := j.validateSetManagedResourceGroupNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedResourceGroupName",
 		val,
 	)
 }
@@ -571,6 +606,14 @@ func (r *jsiiProxy_RedhatOpenshiftClusterClusterProfileOutputReference) ResetFip
 	_jsii_.InvokeVoid(
 		r,
 		"resetFipsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedhatOpenshiftClusterClusterProfileOutputReference) ResetManagedResourceGroupName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetManagedResourceGroupName",
 		nil, // no parameters
 	)
 }

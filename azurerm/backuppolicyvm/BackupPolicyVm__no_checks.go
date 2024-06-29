@@ -99,6 +99,10 @@ func (b *jsiiProxy_BackupPolicyVm) validatePutRetentionYearlyParameters(value *B
 	return nil
 }
 
+func (b *jsiiProxy_BackupPolicyVm) validatePutTieringPolicyParameters(value *BackupPolicyVmTieringPolicy) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupPolicyVm) validatePutTimeoutsParameters(value *BackupPolicyVmTimeouts) error {
 	return nil
 }

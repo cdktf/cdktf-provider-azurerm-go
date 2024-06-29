@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/maps_account azurerm_maps_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/maps_account azurerm_maps_account}.
 type MapsAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,10 +23,14 @@ type MapsAccount interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Cors() MapsAccountCorsOutputReference
+	CorsInput() *MapsAccountCors
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DataStore() MapsAccountDataStoreList
+	DataStoreInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -41,6 +45,8 @@ type MapsAccount interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() MapsAccountIdentityOutputReference
+	IdentityInput() *MapsAccountIdentity
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -49,6 +55,9 @@ type MapsAccount interface {
 	LocalAuthenticationEnabled() interface{}
 	SetLocalAuthenticationEnabled(val interface{})
 	LocalAuthenticationEnabledInput() interface{}
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -127,9 +136,16 @@ type MapsAccount interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCors(value *MapsAccountCors)
+	PutDataStore(value interface{})
+	PutIdentity(value *MapsAccountIdentity)
 	PutTimeouts(value *MapsAccountTimeouts)
+	ResetCors()
+	ResetDataStore()
 	ResetId()
+	ResetIdentity()
 	ResetLocalAuthenticationEnabled()
+	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -183,11 +199,51 @@ func (j *jsiiProxy_MapsAccount) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_MapsAccount) Cors() MapsAccountCorsOutputReference {
+	var returns MapsAccountCorsOutputReference
+	_jsii_.Get(
+		j,
+		"cors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MapsAccount) CorsInput() *MapsAccountCors {
+	var returns *MapsAccountCors
+	_jsii_.Get(
+		j,
+		"corsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MapsAccount) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MapsAccount) DataStore() MapsAccountDataStoreList {
+	var returns MapsAccountDataStoreList
+	_jsii_.Get(
+		j,
+		"dataStore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MapsAccount) DataStoreInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dataStoreInput",
 		&returns,
 	)
 	return returns
@@ -243,6 +299,26 @@ func (j *jsiiProxy_MapsAccount) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MapsAccount) Identity() MapsAccountIdentityOutputReference {
+	var returns MapsAccountIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MapsAccount) IdentityInput() *MapsAccountIdentity {
+	var returns *MapsAccountIdentity
+	_jsii_.Get(
+		j,
+		"identityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MapsAccount) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -278,6 +354,26 @@ func (j *jsiiProxy_MapsAccount) LocalAuthenticationEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"localAuthenticationEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MapsAccount) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MapsAccount) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
 		&returns,
 	)
 	return returns
@@ -484,7 +580,7 @@ func (j *jsiiProxy_MapsAccount) XMsClientId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/maps_account azurerm_maps_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/maps_account azurerm_maps_account} Resource.
 func NewMapsAccount(scope constructs.Construct, id *string, config *MapsAccountConfig) MapsAccount {
 	_init_.Initialize()
 
@@ -502,7 +598,7 @@ func NewMapsAccount(scope constructs.Construct, id *string, config *MapsAccountC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/maps_account azurerm_maps_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/maps_account azurerm_maps_account} Resource.
 func NewMapsAccount_Override(m MapsAccount, scope constructs.Construct, id *string, config *MapsAccountConfig) {
 	_init_.Initialize()
 
@@ -580,6 +676,17 @@ func (j *jsiiProxy_MapsAccount)SetLocalAuthenticationEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"localAuthenticationEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MapsAccount)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
 		val,
 	)
 }
@@ -1000,6 +1107,39 @@ func (m *jsiiProxy_MapsAccount) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (m *jsiiProxy_MapsAccount) PutCors(value *MapsAccountCors) {
+	if err := m.validatePutCorsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putCors",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MapsAccount) PutDataStore(value interface{}) {
+	if err := m.validatePutDataStoreParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putDataStore",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MapsAccount) PutIdentity(value *MapsAccountIdentity) {
+	if err := m.validatePutIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putIdentity",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MapsAccount) PutTimeouts(value *MapsAccountTimeouts) {
 	if err := m.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1011,6 +1151,22 @@ func (m *jsiiProxy_MapsAccount) PutTimeouts(value *MapsAccountTimeouts) {
 	)
 }
 
+func (m *jsiiProxy_MapsAccount) ResetCors() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCors",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MapsAccount) ResetDataStore() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDataStore",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MapsAccount) ResetId() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1019,10 +1175,26 @@ func (m *jsiiProxy_MapsAccount) ResetId() {
 	)
 }
 
+func (m *jsiiProxy_MapsAccount) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MapsAccount) ResetLocalAuthenticationEnabled() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetLocalAuthenticationEnabled",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MapsAccount) ResetLocation() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

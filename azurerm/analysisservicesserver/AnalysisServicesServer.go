@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/analysis_services_server azurerm_analysis_services_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/analysis_services_server azurerm_analysis_services_server}.
 type AnalysisServicesServer interface {
 	cdktf.TerraformResource
 	AdminUsers() *[]*string
@@ -65,6 +65,9 @@ type AnalysisServicesServer interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PowerBiServiceEnabled() interface{}
+	SetPowerBiServiceEnabled(val interface{})
+	PowerBiServiceEnabledInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -149,6 +152,7 @@ type AnalysisServicesServer interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPowerBiServiceEnabled()
 	ResetQuerypoolConnectionMode()
 	ResetTags()
 	ResetTimeouts()
@@ -410,6 +414,26 @@ func (j *jsiiProxy_AnalysisServicesServer) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_AnalysisServicesServer) PowerBiServiceEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"powerBiServiceEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AnalysisServicesServer) PowerBiServiceEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"powerBiServiceEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AnalysisServicesServer) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -581,7 +605,7 @@ func (j *jsiiProxy_AnalysisServicesServer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/analysis_services_server azurerm_analysis_services_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/analysis_services_server azurerm_analysis_services_server} Resource.
 func NewAnalysisServicesServer(scope constructs.Construct, id *string, config *AnalysisServicesServerConfig) AnalysisServicesServer {
 	_init_.Initialize()
 
@@ -599,7 +623,7 @@ func NewAnalysisServicesServer(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/resources/analysis_services_server azurerm_analysis_services_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/analysis_services_server azurerm_analysis_services_server} Resource.
 func NewAnalysisServicesServer_Override(a AnalysisServicesServer, scope constructs.Construct, id *string, config *AnalysisServicesServerConfig) {
 	_init_.Initialize()
 
@@ -721,6 +745,17 @@ func (j *jsiiProxy_AnalysisServicesServer)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AnalysisServicesServer)SetPowerBiServiceEnabled(val interface{}) {
+	if err := j.validateSetPowerBiServiceEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"powerBiServiceEnabled",
 		val,
 	)
 }
@@ -1207,6 +1242,14 @@ func (a *jsiiProxy_AnalysisServicesServer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AnalysisServicesServer) ResetPowerBiServiceEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPowerBiServiceEnabled",
 		nil, // no parameters
 	)
 }

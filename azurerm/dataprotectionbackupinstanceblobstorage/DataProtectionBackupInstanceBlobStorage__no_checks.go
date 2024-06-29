@@ -127,6 +127,10 @@ func (j *jsiiProxy_DataProtectionBackupInstanceBlobStorage) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_DataProtectionBackupInstanceBlobStorage) validateSetStorageAccountContainerNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupInstanceBlobStorage) validateSetStorageAccountIdParameters(val *string) error {
 	return nil
 }

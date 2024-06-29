@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/data-sources/policy_set_definition azurerm_policy_set_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/data-sources/policy_set_definition azurerm_policy_set_definition}.
 type DataAzurermPolicySetDefinition interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_DataAzurermPolicySetDefinition) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/data-sources/policy_set_definition azurerm_policy_set_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/data-sources/policy_set_definition azurerm_policy_set_definition} Data Source.
 func NewDataAzurermPolicySetDefinition(scope constructs.Construct, id *string, config *DataAzurermPolicySetDefinitionConfig) DataAzurermPolicySetDefinition {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewDataAzurermPolicySetDefinition(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/data-sources/policy_set_definition azurerm_policy_set_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/data-sources/policy_set_definition azurerm_policy_set_definition} Data Source.
 func NewDataAzurermPolicySetDefinition_Override(d DataAzurermPolicySetDefinition, scope constructs.Construct, id *string, config *DataAzurermPolicySetDefinitionConfig) {
 	_init_.Initialize()
 

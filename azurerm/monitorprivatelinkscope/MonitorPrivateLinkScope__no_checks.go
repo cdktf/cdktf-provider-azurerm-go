@@ -107,6 +107,10 @@ func (j *jsiiProxy_MonitorPrivateLinkScope) validateSetIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_MonitorPrivateLinkScope) validateSetIngestionAccessModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitorPrivateLinkScope) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (j *jsiiProxy_MonitorPrivateLinkScope) validateSetNameParameters(val *strin
 }
 
 func (j *jsiiProxy_MonitorPrivateLinkScope) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MonitorPrivateLinkScope) validateSetQueryAccessModeParameters(val *string) error {
 	return nil
 }
 

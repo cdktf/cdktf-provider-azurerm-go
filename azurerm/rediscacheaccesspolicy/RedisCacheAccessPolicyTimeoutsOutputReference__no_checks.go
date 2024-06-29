@@ -83,6 +83,10 @@ func (j *jsiiProxy_RedisCacheAccessPolicyTimeoutsOutputReference) validateSetTer
 	return nil
 }
 
+func (j *jsiiProxy_RedisCacheAccessPolicyTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewRedisCacheAccessPolicyTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

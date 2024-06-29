@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/data-sources/nginx_certificate azurerm_nginx_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/data-sources/nginx_certificate azurerm_nginx_certificate}.
 type DataAzurermNginxCertificate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -28,6 +28,8 @@ type DataAzurermNginxCertificate interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ErrorCode() *string
+	ErrorMessage() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -39,7 +41,9 @@ type DataAzurermNginxCertificate interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KeyVaultSecretCreationDate() *string
 	KeyVaultSecretId() *string
+	KeyVaultSecretVersion() *string
 	KeyVirtualPath() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -59,6 +63,7 @@ type DataAzurermNginxCertificate interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Sha1Thumbprint() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -167,6 +172,26 @@ func (j *jsiiProxy_DataAzurermNginxCertificate) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermNginxCertificate) ErrorCode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"errorCode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermNginxCertificate) ErrorMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"errorMessage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermNginxCertificate) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -217,11 +242,31 @@ func (j *jsiiProxy_DataAzurermNginxCertificate) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermNginxCertificate) KeyVaultSecretCreationDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultSecretCreationDate",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermNginxCertificate) KeyVaultSecretId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"keyVaultSecretId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermNginxCertificate) KeyVaultSecretVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultSecretVersion",
 		&returns,
 	)
 	return returns
@@ -317,6 +362,16 @@ func (j *jsiiProxy_DataAzurermNginxCertificate) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermNginxCertificate) Sha1Thumbprint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sha1Thumbprint",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermNginxCertificate) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -368,7 +423,7 @@ func (j *jsiiProxy_DataAzurermNginxCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/data-sources/nginx_certificate azurerm_nginx_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/data-sources/nginx_certificate azurerm_nginx_certificate} Data Source.
 func NewDataAzurermNginxCertificate(scope constructs.Construct, id *string, config *DataAzurermNginxCertificateConfig) DataAzurermNginxCertificate {
 	_init_.Initialize()
 
@@ -386,7 +441,7 @@ func NewDataAzurermNginxCertificate(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.108.0/docs/data-sources/nginx_certificate azurerm_nginx_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/data-sources/nginx_certificate azurerm_nginx_certificate} Data Source.
 func NewDataAzurermNginxCertificate_Override(d DataAzurermNginxCertificate, scope constructs.Construct, id *string, config *DataAzurermNginxCertificateConfig) {
 	_init_.Initialize()
 

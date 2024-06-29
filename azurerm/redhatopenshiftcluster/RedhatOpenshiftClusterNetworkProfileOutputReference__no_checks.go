@@ -71,6 +71,10 @@ func (j *jsiiProxy_RedhatOpenshiftClusterNetworkProfileOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_RedhatOpenshiftClusterNetworkProfileOutputReference) validateSetPreconfiguredNetworkSecurityGroupEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedhatOpenshiftClusterNetworkProfileOutputReference) validateSetServiceCidrParameters(val *string) error {
 	return nil
 }
