@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/disk_encryption_set azurerm_disk_encryption_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/disk_encryption_set azurerm_disk_encryption_set}.
 type DiskEncryptionSet interface {
 	cdktf.TerraformResource
 	AutoKeyRotationEnabled() interface{}
@@ -64,6 +64,9 @@ type DiskEncryptionSet interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	ManagedHsmKeyId() *string
+	SetManagedHsmKeyId(val *string)
+	ManagedHsmKeyIdInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -142,6 +145,8 @@ type DiskEncryptionSet interface {
 	ResetEncryptionType()
 	ResetFederatedClientId()
 	ResetId()
+	ResetKeyVaultKeyId()
+	ResetManagedHsmKeyId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -405,6 +410,26 @@ func (j *jsiiProxy_DiskEncryptionSet) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DiskEncryptionSet) ManagedHsmKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedHsmKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiskEncryptionSet) ManagedHsmKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedHsmKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DiskEncryptionSet) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -556,7 +581,7 @@ func (j *jsiiProxy_DiskEncryptionSet) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/disk_encryption_set azurerm_disk_encryption_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/disk_encryption_set azurerm_disk_encryption_set} Resource.
 func NewDiskEncryptionSet(scope constructs.Construct, id *string, config *DiskEncryptionSetConfig) DiskEncryptionSet {
 	_init_.Initialize()
 
@@ -574,7 +599,7 @@ func NewDiskEncryptionSet(scope constructs.Construct, id *string, config *DiskEn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/disk_encryption_set azurerm_disk_encryption_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/disk_encryption_set azurerm_disk_encryption_set} Resource.
 func NewDiskEncryptionSet_Override(d DiskEncryptionSet, scope constructs.Construct, id *string, config *DiskEncryptionSetConfig) {
 	_init_.Initialize()
 
@@ -696,6 +721,17 @@ func (j *jsiiProxy_DiskEncryptionSet)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DiskEncryptionSet)SetManagedHsmKeyId(val *string) {
+	if err := j.validateSetManagedHsmKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedHsmKeyId",
 		val,
 	)
 }
@@ -1155,6 +1191,22 @@ func (d *jsiiProxy_DiskEncryptionSet) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DiskEncryptionSet) ResetKeyVaultKeyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKeyVaultKeyId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DiskEncryptionSet) ResetManagedHsmKeyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetManagedHsmKeyId",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/security_center_auto_provisioning azurerm_security_center_auto_provisioning}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/security_center_auto_provisioning azurerm_security_center_auto_provisioning}.
 type SecurityCenterAutoProvisioning interface {
 	cdktf.TerraformResource
 	AutoProvision() *string
@@ -357,7 +357,7 @@ func (j *jsiiProxy_SecurityCenterAutoProvisioning) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/security_center_auto_provisioning azurerm_security_center_auto_provisioning} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/security_center_auto_provisioning azurerm_security_center_auto_provisioning} Resource.
 func NewSecurityCenterAutoProvisioning(scope constructs.Construct, id *string, config *SecurityCenterAutoProvisioningConfig) SecurityCenterAutoProvisioning {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewSecurityCenterAutoProvisioning(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/security_center_auto_provisioning azurerm_security_center_auto_provisioning} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/security_center_auto_provisioning azurerm_security_center_auto_provisioning} Resource.
 func NewSecurityCenterAutoProvisioning_Override(s SecurityCenterAutoProvisioning, scope constructs.Construct, id *string, config *SecurityCenterAutoProvisioningConfig) {
 	_init_.Initialize()
 

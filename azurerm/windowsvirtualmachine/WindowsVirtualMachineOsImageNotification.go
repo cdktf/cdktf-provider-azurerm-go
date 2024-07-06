@@ -5,7 +5,7 @@ package windowsvirtualmachine
 
 
 type WindowsVirtualMachineOsImageNotification struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/windows_virtual_machine#timeout WindowsVirtualMachine#timeout}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/windows_virtual_machine#timeout WindowsVirtualMachine#timeout}.
 	Timeout *string `field:"optional" json:"timeout" yaml:"timeout"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/api_connection azurerm_api_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/api_connection azurerm_api_connection}.
 type ApiConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -475,7 +475,7 @@ func (j *jsiiProxy_ApiConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/api_connection azurerm_api_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/api_connection azurerm_api_connection} Resource.
 func NewApiConnection(scope constructs.Construct, id *string, config *ApiConnectionConfig) ApiConnection {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewApiConnection(scope constructs.Construct, id *string, config *ApiConnect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.110.0/docs/resources/api_connection azurerm_api_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/api_connection azurerm_api_connection} Resource.
 func NewApiConnection_Override(a ApiConnection, scope constructs.Construct, id *string, config *ApiConnectionConfig) {
 	_init_.Initialize()
 
