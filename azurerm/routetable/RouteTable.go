@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/route_table azurerm_route_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/route_table azurerm_route_table}.
 type RouteTable interface {
 	cdktf.TerraformResource
+	BgpRoutePropagationEnabled() interface{}
+	SetBgpRoutePropagationEnabled(val interface{})
+	BgpRoutePropagationEnabledInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -129,6 +132,7 @@ type RouteTable interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutRoute(value interface{})
 	PutTimeouts(value *RouteTableTimeouts)
+	ResetBgpRoutePropagationEnabled()
 	ResetDisableBgpRoutePropagation()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -153,6 +157,26 @@ type RouteTable interface {
 // The jsii proxy struct for RouteTable
 type jsiiProxy_RouteTable struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_RouteTable) BgpRoutePropagationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bgpRoutePropagationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RouteTable) BgpRoutePropagationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bgpRoutePropagationEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_RouteTable) CdktfStack() cdktf.TerraformStack {
@@ -486,7 +510,7 @@ func (j *jsiiProxy_RouteTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/route_table azurerm_route_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/route_table azurerm_route_table} Resource.
 func NewRouteTable(scope constructs.Construct, id *string, config *RouteTableConfig) RouteTable {
 	_init_.Initialize()
 
@@ -504,7 +528,7 @@ func NewRouteTable(scope constructs.Construct, id *string, config *RouteTableCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/route_table azurerm_route_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/route_table azurerm_route_table} Resource.
 func NewRouteTable_Override(r RouteTable, scope constructs.Construct, id *string, config *RouteTableConfig) {
 	_init_.Initialize()
 
@@ -512,6 +536,17 @@ func NewRouteTable_Override(r RouteTable, scope constructs.Construct, id *string
 		"@cdktf/provider-azurerm.routeTable.RouteTable",
 		[]interface{}{scope, id, config},
 		r,
+	)
+}
+
+func (j *jsiiProxy_RouteTable)SetBgpRoutePropagationEnabled(val interface{}) {
+	if err := j.validateSetBgpRoutePropagationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bgpRoutePropagationEnabled",
+		val,
 	)
 }
 
@@ -1021,6 +1056,14 @@ func (r *jsiiProxy_RouteTable) PutTimeouts(value *RouteTableTimeouts) {
 		r,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RouteTable) ResetBgpRoutePropagationEnabled() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetBgpRoutePropagationEnabled",
+		nil, // no parameters
 	)
 }
 

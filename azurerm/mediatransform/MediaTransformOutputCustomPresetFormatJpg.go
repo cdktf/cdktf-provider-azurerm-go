@@ -5,7 +5,7 @@ package mediatransform
 
 
 type MediaTransformOutputCustomPresetFormatJpg struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/media_transform#filename_pattern MediaTransform#filename_pattern}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/media_transform#filename_pattern MediaTransform#filename_pattern}.
 	FilenamePattern *string `field:"required" json:"filenamePattern" yaml:"filenamePattern"`
 }
 

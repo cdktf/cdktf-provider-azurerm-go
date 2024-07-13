@@ -107,6 +107,10 @@ func (j *jsiiProxy_ApiManagementIdentityProviderAad) validateSetClientIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementIdentityProviderAad) validateSetClientLibraryParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementIdentityProviderAad) validateSetClientSecretParameters(val *string) error {
 	return nil
 }

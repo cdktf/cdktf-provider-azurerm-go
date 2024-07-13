@@ -47,6 +47,10 @@ func (k *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) validateI
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) validatePutCertificateAuthorityParameters(value *KubernetesClusterServiceMeshProfileCertificateAuthority) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

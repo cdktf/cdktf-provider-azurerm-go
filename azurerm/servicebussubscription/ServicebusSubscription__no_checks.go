@@ -103,6 +103,10 @@ func (j *jsiiProxy_ServicebusSubscription) validateSetAutoDeleteOnIdleParameters
 	return nil
 }
 
+func (j *jsiiProxy_ServicebusSubscription) validateSetBatchedOperationsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicebusSubscription) validateSetClientScopedSubscriptionEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/data-sources/stack_hci_cluster azurerm_stack_hci_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/data-sources/stack_hci_cluster azurerm_stack_hci_cluster}.
 type DataAzurermStackHciCluster interface {
 	cdktf.TerraformDataSource
 	AutomanageConfigurationId() *string
@@ -434,7 +434,7 @@ func (j *jsiiProxy_DataAzurermStackHciCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/data-sources/stack_hci_cluster azurerm_stack_hci_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/data-sources/stack_hci_cluster azurerm_stack_hci_cluster} Data Source.
 func NewDataAzurermStackHciCluster(scope constructs.Construct, id *string, config *DataAzurermStackHciClusterConfig) DataAzurermStackHciCluster {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewDataAzurermStackHciCluster(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/data-sources/stack_hci_cluster azurerm_stack_hci_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/data-sources/stack_hci_cluster azurerm_stack_hci_cluster} Data Source.
 func NewDataAzurermStackHciCluster_Override(d DataAzurermStackHciCluster, scope constructs.Construct, id *string, config *DataAzurermStackHciClusterConfig) {
 	_init_.Initialize()
 

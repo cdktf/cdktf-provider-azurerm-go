@@ -13,6 +13,8 @@ import (
 
 type KubernetesClusterServiceMeshProfileOutputReference interface {
 	cdktf.ComplexObject
+	CertificateAuthority() KubernetesClusterServiceMeshProfileCertificateAuthorityOutputReference
+	CertificateAuthorityInput() *KubernetesClusterServiceMeshProfileCertificateAuthority
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -73,6 +75,8 @@ type KubernetesClusterServiceMeshProfileOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCertificateAuthority(value *KubernetesClusterServiceMeshProfileCertificateAuthority)
+	ResetCertificateAuthority()
 	ResetExternalIngressGatewayEnabled()
 	ResetInternalIngressGatewayEnabled()
 	// Produce the Token's value at resolution time.
@@ -88,6 +92,26 @@ type KubernetesClusterServiceMeshProfileOutputReference interface {
 // The jsii proxy struct for KubernetesClusterServiceMeshProfileOutputReference
 type jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) CertificateAuthority() KubernetesClusterServiceMeshProfileCertificateAuthorityOutputReference {
+	var returns KubernetesClusterServiceMeshProfileCertificateAuthorityOutputReference
+	_jsii_.Get(
+		j,
+		"certificateAuthority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) CertificateAuthorityInput() *KubernetesClusterServiceMeshProfileCertificateAuthority {
+	var returns *KubernetesClusterServiceMeshProfileCertificateAuthority
+	_jsii_.Get(
+		j,
+		"certificateAuthorityInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) ComplexObjectIndex() interface{} {
@@ -520,6 +544,25 @@ func (k *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (k *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) PutCertificateAuthority(value *KubernetesClusterServiceMeshProfileCertificateAuthority) {
+	if err := k.validatePutCertificateAuthorityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putCertificateAuthority",
+		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) ResetCertificateAuthority() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetCertificateAuthority",
+		nil, // no parameters
+	)
 }
 
 func (k *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) ResetExternalIngressGatewayEnabled() {

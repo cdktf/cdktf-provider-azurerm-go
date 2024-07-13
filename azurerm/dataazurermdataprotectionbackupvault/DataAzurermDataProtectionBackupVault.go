@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/data-sources/data_protection_backup_vault azurerm_data_protection_backup_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/data-sources/data_protection_backup_vault azurerm_data_protection_backup_vault}.
 type DataAzurermDataProtectionBackupVault interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DataAzurermDataProtectionBackupVault) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/data-sources/data_protection_backup_vault azurerm_data_protection_backup_vault} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/data-sources/data_protection_backup_vault azurerm_data_protection_backup_vault} Data Source.
 func NewDataAzurermDataProtectionBackupVault(scope constructs.Construct, id *string, config *DataAzurermDataProtectionBackupVaultConfig) DataAzurermDataProtectionBackupVault {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewDataAzurermDataProtectionBackupVault(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/data-sources/data_protection_backup_vault azurerm_data_protection_backup_vault} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/data-sources/data_protection_backup_vault azurerm_data_protection_backup_vault} Data Source.
 func NewDataAzurermDataProtectionBackupVault_Override(d DataAzurermDataProtectionBackupVault, scope constructs.Construct, id *string, config *DataAzurermDataProtectionBackupVaultConfig) {
 	_init_.Initialize()
 

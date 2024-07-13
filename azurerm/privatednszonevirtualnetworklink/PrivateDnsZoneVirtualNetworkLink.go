@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link}.
 type PrivateDnsZoneVirtualNetworkLink interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -474,7 +474,7 @@ func (j *jsiiProxy_PrivateDnsZoneVirtualNetworkLink) VirtualNetworkIdInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link} Resource.
 func NewPrivateDnsZoneVirtualNetworkLink(scope constructs.Construct, id *string, config *PrivateDnsZoneVirtualNetworkLinkConfig) PrivateDnsZoneVirtualNetworkLink {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewPrivateDnsZoneVirtualNetworkLink(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link} Resource.
 func NewPrivateDnsZoneVirtualNetworkLink_Override(p PrivateDnsZoneVirtualNetworkLink, scope constructs.Construct, id *string, config *PrivateDnsZoneVirtualNetworkLinkConfig) {
 	_init_.Initialize()
 

@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/servicebus_queue azurerm_servicebus_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/servicebus_queue azurerm_servicebus_queue}.
 type ServicebusQueue interface {
 	cdktf.TerraformResource
 	AutoDeleteOnIdle() *string
 	SetAutoDeleteOnIdle(val *string)
 	AutoDeleteOnIdleInput() *string
+	BatchedOperationsEnabled() interface{}
+	SetBatchedOperationsEnabled(val interface{})
+	BatchedOperationsEnabledInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -52,6 +55,9 @@ type ServicebusQueue interface {
 	EnablePartitioning() interface{}
 	SetEnablePartitioning(val interface{})
 	EnablePartitioningInput() interface{}
+	ExpressEnabled() interface{}
+	SetExpressEnabled(val interface{})
+	ExpressEnabledInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -93,6 +99,9 @@ type ServicebusQueue interface {
 	NamespaceIdInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PartitioningEnabled() interface{}
+	SetPartitioningEnabled(val interface{})
+	PartitioningEnabledInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -165,12 +174,14 @@ type ServicebusQueue interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ServicebusQueueTimeouts)
 	ResetAutoDeleteOnIdle()
+	ResetBatchedOperationsEnabled()
 	ResetDeadLetteringOnMessageExpiration()
 	ResetDefaultMessageTtl()
 	ResetDuplicateDetectionHistoryTimeWindow()
 	ResetEnableBatchedOperations()
 	ResetEnableExpress()
 	ResetEnablePartitioning()
+	ResetExpressEnabled()
 	ResetForwardDeadLetteredMessagesTo()
 	ResetForwardTo()
 	ResetId()
@@ -181,6 +192,7 @@ type ServicebusQueue interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPartitioningEnabled()
 	ResetRequiresDuplicateDetection()
 	ResetRequiresSession()
 	ResetStatus()
@@ -218,6 +230,26 @@ func (j *jsiiProxy_ServicebusQueue) AutoDeleteOnIdleInput() *string {
 	_jsii_.Get(
 		j,
 		"autoDeleteOnIdleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicebusQueue) BatchedOperationsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"batchedOperationsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicebusQueue) BatchedOperationsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"batchedOperationsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -388,6 +420,26 @@ func (j *jsiiProxy_ServicebusQueue) EnablePartitioningInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enablePartitioningInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicebusQueue) ExpressEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"expressEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicebusQueue) ExpressEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"expressEnabledInput",
 		&returns,
 	)
 	return returns
@@ -623,6 +675,26 @@ func (j *jsiiProxy_ServicebusQueue) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ServicebusQueue) PartitioningEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"partitioningEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicebusQueue) PartitioningEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"partitioningEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServicebusQueue) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -764,7 +836,7 @@ func (j *jsiiProxy_ServicebusQueue) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/servicebus_queue azurerm_servicebus_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/servicebus_queue azurerm_servicebus_queue} Resource.
 func NewServicebusQueue(scope constructs.Construct, id *string, config *ServicebusQueueConfig) ServicebusQueue {
 	_init_.Initialize()
 
@@ -782,7 +854,7 @@ func NewServicebusQueue(scope constructs.Construct, id *string, config *Serviceb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/servicebus_queue azurerm_servicebus_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/servicebus_queue azurerm_servicebus_queue} Resource.
 func NewServicebusQueue_Override(s ServicebusQueue, scope constructs.Construct, id *string, config *ServicebusQueueConfig) {
 	_init_.Initialize()
 
@@ -800,6 +872,17 @@ func (j *jsiiProxy_ServicebusQueue)SetAutoDeleteOnIdle(val *string) {
 	_jsii_.Set(
 		j,
 		"autoDeleteOnIdle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicebusQueue)SetBatchedOperationsEnabled(val interface{}) {
+	if err := j.validateSetBatchedOperationsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"batchedOperationsEnabled",
 		val,
 	)
 }
@@ -896,6 +979,17 @@ func (j *jsiiProxy_ServicebusQueue)SetEnablePartitioning(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enablePartitioning",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicebusQueue)SetExpressEnabled(val interface{}) {
+	if err := j.validateSetExpressEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expressEnabled",
 		val,
 	)
 }
@@ -1014,6 +1108,17 @@ func (j *jsiiProxy_ServicebusQueue)SetNamespaceId(val *string) {
 	_jsii_.Set(
 		j,
 		"namespaceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicebusQueue)SetPartitioningEnabled(val interface{}) {
+	if err := j.validateSetPartitioningEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"partitioningEnabled",
 		val,
 	)
 }
@@ -1442,6 +1547,14 @@ func (s *jsiiProxy_ServicebusQueue) ResetAutoDeleteOnIdle() {
 	)
 }
 
+func (s *jsiiProxy_ServicebusQueue) ResetBatchedOperationsEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBatchedOperationsEnabled",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_ServicebusQueue) ResetDeadLetteringOnMessageExpiration() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1486,6 +1599,14 @@ func (s *jsiiProxy_ServicebusQueue) ResetEnablePartitioning() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEnablePartitioning",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicebusQueue) ResetExpressEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExpressEnabled",
 		nil, // no parameters
 	)
 }
@@ -1550,6 +1671,14 @@ func (s *jsiiProxy_ServicebusQueue) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicebusQueue) ResetPartitioningEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPartitioningEnabled",
 		nil, // no parameters
 	)
 }

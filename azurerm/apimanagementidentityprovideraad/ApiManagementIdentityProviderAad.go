@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/api_management_identity_provider_aad azurerm_api_management_identity_provider_aad}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/api_management_identity_provider_aad azurerm_api_management_identity_provider_aad}.
 type ApiManagementIdentityProviderAad interface {
 	cdktf.TerraformResource
 	AllowedTenants() *[]*string
@@ -26,6 +26,9 @@ type ApiManagementIdentityProviderAad interface {
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
+	ClientLibrary() *string
+	SetClientLibrary(val *string)
+	ClientLibraryInput() *string
 	ClientSecret() *string
 	SetClientSecret(val *string)
 	ClientSecretInput() *string
@@ -128,6 +131,7 @@ type ApiManagementIdentityProviderAad interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ApiManagementIdentityProviderAadTimeouts)
+	ResetClientLibrary()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -217,6 +221,26 @@ func (j *jsiiProxy_ApiManagementIdentityProviderAad) ClientIdInput() *string {
 	_jsii_.Get(
 		j,
 		"clientIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementIdentityProviderAad) ClientLibrary() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientLibrary",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementIdentityProviderAad) ClientLibraryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientLibraryInput",
 		&returns,
 	)
 	return returns
@@ -473,7 +497,7 @@ func (j *jsiiProxy_ApiManagementIdentityProviderAad) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/api_management_identity_provider_aad azurerm_api_management_identity_provider_aad} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/api_management_identity_provider_aad azurerm_api_management_identity_provider_aad} Resource.
 func NewApiManagementIdentityProviderAad(scope constructs.Construct, id *string, config *ApiManagementIdentityProviderAadConfig) ApiManagementIdentityProviderAad {
 	_init_.Initialize()
 
@@ -491,7 +515,7 @@ func NewApiManagementIdentityProviderAad(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/api_management_identity_provider_aad azurerm_api_management_identity_provider_aad} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/api_management_identity_provider_aad azurerm_api_management_identity_provider_aad} Resource.
 func NewApiManagementIdentityProviderAad_Override(a ApiManagementIdentityProviderAad, scope constructs.Construct, id *string, config *ApiManagementIdentityProviderAadConfig) {
 	_init_.Initialize()
 
@@ -531,6 +555,17 @@ func (j *jsiiProxy_ApiManagementIdentityProviderAad)SetClientId(val *string) {
 	_jsii_.Set(
 		j,
 		"clientId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiManagementIdentityProviderAad)SetClientLibrary(val *string) {
+	if err := j.validateSetClientLibraryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientLibrary",
 		val,
 	)
 }
@@ -1008,6 +1043,14 @@ func (a *jsiiProxy_ApiManagementIdentityProviderAad) PutTimeouts(value *ApiManag
 		a,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ApiManagementIdentityProviderAad) ResetClientLibrary() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClientLibrary",
+		nil, // no parameters
 	)
 }
 

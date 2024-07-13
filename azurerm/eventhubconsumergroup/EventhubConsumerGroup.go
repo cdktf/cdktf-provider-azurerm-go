@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/eventhub_consumer_group azurerm_eventhub_consumer_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/eventhub_consumer_group azurerm_eventhub_consumer_group}.
 type EventhubConsumerGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -450,7 +450,7 @@ func (j *jsiiProxy_EventhubConsumerGroup) UserMetadataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/eventhub_consumer_group azurerm_eventhub_consumer_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/eventhub_consumer_group azurerm_eventhub_consumer_group} Resource.
 func NewEventhubConsumerGroup(scope constructs.Construct, id *string, config *EventhubConsumerGroupConfig) EventhubConsumerGroup {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewEventhubConsumerGroup(scope constructs.Construct, id *string, config *Ev
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/eventhub_consumer_group azurerm_eventhub_consumer_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/eventhub_consumer_group azurerm_eventhub_consumer_group} Resource.
 func NewEventhubConsumerGroup_Override(e EventhubConsumerGroup, scope constructs.Construct, id *string, config *EventhubConsumerGroupConfig) {
 	_init_.Initialize()
 

@@ -99,6 +99,10 @@ func (j *jsiiProxy_ServicebusQueue) validateSetAutoDeleteOnIdleParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_ServicebusQueue) validateSetBatchedOperationsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicebusQueue) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -128,6 +132,10 @@ func (j *jsiiProxy_ServicebusQueue) validateSetEnableExpressParameters(val inter
 }
 
 func (j *jsiiProxy_ServicebusQueue) validateSetEnablePartitioningParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServicebusQueue) validateSetExpressEnabledParameters(val interface{}) error {
 	return nil
 }
 
@@ -168,6 +176,10 @@ func (j *jsiiProxy_ServicebusQueue) validateSetNameParameters(val *string) error
 }
 
 func (j *jsiiProxy_ServicebusQueue) validateSetNamespaceIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServicebusQueue) validateSetPartitioningEnabledParameters(val interface{}) error {
 	return nil
 }
 

@@ -47,6 +47,10 @@ func (d *jsiiProxy_DevTestVirtualNetworkSubnetOutputReference) validateInterpola
 	return nil
 }
 
+func (d *jsiiProxy_DevTestVirtualNetworkSubnetOutputReference) validatePutSharedPublicIpAddressParameters(value *DevTestVirtualNetworkSubnetSharedPublicIpAddress) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevTestVirtualNetworkSubnetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

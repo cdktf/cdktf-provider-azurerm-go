@@ -13,6 +13,7 @@ import (
 
 type DataAzurermKubernetesClusterServiceMeshProfileOutputReference interface {
 	cdktf.ComplexObject
+	CertificateAuthority() DataAzurermKubernetesClusterServiceMeshProfileCertificateAuthorityList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -80,6 +81,16 @@ type DataAzurermKubernetesClusterServiceMeshProfileOutputReference interface {
 // The jsii proxy struct for DataAzurermKubernetesClusterServiceMeshProfileOutputReference
 type jsiiProxy_DataAzurermKubernetesClusterServiceMeshProfileOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataAzurermKubernetesClusterServiceMeshProfileOutputReference) CertificateAuthority() DataAzurermKubernetesClusterServiceMeshProfileCertificateAuthorityList {
+	var returns DataAzurermKubernetesClusterServiceMeshProfileCertificateAuthorityList
+	_jsii_.Get(
+		j,
+		"certificateAuthority",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAzurermKubernetesClusterServiceMeshProfileOutputReference) ComplexObjectIndex() interface{} {

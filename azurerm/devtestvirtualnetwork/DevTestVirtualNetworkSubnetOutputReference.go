@@ -33,6 +33,8 @@ type DevTestVirtualNetworkSubnetOutputReference interface {
 	InternalValue() *DevTestVirtualNetworkSubnet
 	SetInternalValue(val *DevTestVirtualNetworkSubnet)
 	Name() *string
+	SharedPublicIpAddress() DevTestVirtualNetworkSubnetSharedPublicIpAddressOutputReference
+	SharedPublicIpAddressInput() *DevTestVirtualNetworkSubnetSharedPublicIpAddress
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,6 +73,8 @@ type DevTestVirtualNetworkSubnetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSharedPublicIpAddress(value *DevTestVirtualNetworkSubnetSharedPublicIpAddress)
+	ResetSharedPublicIpAddress()
 	ResetUseInVirtualMachineCreation()
 	ResetUsePublicIpAddress()
 	// Produce the Token's value at resolution time.
@@ -143,6 +147,26 @@ func (j *jsiiProxy_DevTestVirtualNetworkSubnetOutputReference) Name() *string {
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevTestVirtualNetworkSubnetOutputReference) SharedPublicIpAddress() DevTestVirtualNetworkSubnetSharedPublicIpAddressOutputReference {
+	var returns DevTestVirtualNetworkSubnetSharedPublicIpAddressOutputReference
+	_jsii_.Get(
+		j,
+		"sharedPublicIpAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevTestVirtualNetworkSubnetOutputReference) SharedPublicIpAddressInput() *DevTestVirtualNetworkSubnetSharedPublicIpAddress {
+	var returns *DevTestVirtualNetworkSubnetSharedPublicIpAddress
+	_jsii_.Get(
+		j,
+		"sharedPublicIpAddressInput",
 		&returns,
 	)
 	return returns
@@ -497,6 +521,25 @@ func (d *jsiiProxy_DevTestVirtualNetworkSubnetOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DevTestVirtualNetworkSubnetOutputReference) PutSharedPublicIpAddress(value *DevTestVirtualNetworkSubnetSharedPublicIpAddress) {
+	if err := d.validatePutSharedPublicIpAddressParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSharedPublicIpAddress",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DevTestVirtualNetworkSubnetOutputReference) ResetSharedPublicIpAddress() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSharedPublicIpAddress",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DevTestVirtualNetworkSubnetOutputReference) ResetUseInVirtualMachineCreation() {

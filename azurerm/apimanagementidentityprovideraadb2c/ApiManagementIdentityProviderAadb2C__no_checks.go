@@ -111,6 +111,10 @@ func (j *jsiiProxy_ApiManagementIdentityProviderAadb2C) validateSetClientIdParam
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementIdentityProviderAadb2C) validateSetClientLibraryParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementIdentityProviderAadb2C) validateSetClientSecretParameters(val *string) error {
 	return nil
 }

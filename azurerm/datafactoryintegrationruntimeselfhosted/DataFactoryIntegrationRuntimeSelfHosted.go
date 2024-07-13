@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/data_factory_integration_runtime_self_hosted azurerm_data_factory_integration_runtime_self_hosted}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/data_factory_integration_runtime_self_hosted azurerm_data_factory_integration_runtime_self_hosted}.
 type DataFactoryIntegrationRuntimeSelfHosted interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -474,7 +474,7 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeSelfHosted) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/data_factory_integration_runtime_self_hosted azurerm_data_factory_integration_runtime_self_hosted} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/data_factory_integration_runtime_self_hosted azurerm_data_factory_integration_runtime_self_hosted} Resource.
 func NewDataFactoryIntegrationRuntimeSelfHosted(scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeSelfHostedConfig) DataFactoryIntegrationRuntimeSelfHosted {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewDataFactoryIntegrationRuntimeSelfHosted(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/data_factory_integration_runtime_self_hosted azurerm_data_factory_integration_runtime_self_hosted} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/data_factory_integration_runtime_self_hosted azurerm_data_factory_integration_runtime_self_hosted} Resource.
 func NewDataFactoryIntegrationRuntimeSelfHosted_Override(d DataFactoryIntegrationRuntimeSelfHosted, scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeSelfHostedConfig) {
 	_init_.Initialize()
 

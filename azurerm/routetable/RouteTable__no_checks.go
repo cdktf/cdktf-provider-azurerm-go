@@ -99,6 +99,10 @@ func validateRouteTable_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_RouteTable) validateSetBgpRoutePropagationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RouteTable) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/servicebus_subscription azurerm_servicebus_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/servicebus_subscription azurerm_servicebus_subscription}.
 type ServicebusSubscription interface {
 	cdktf.TerraformResource
 	AutoDeleteOnIdle() *string
 	SetAutoDeleteOnIdle(val *string)
 	AutoDeleteOnIdleInput() *string
+	BatchedOperationsEnabled() interface{}
+	SetBatchedOperationsEnabled(val interface{})
+	BatchedOperationsEnabledInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientScopedSubscription() ServicebusSubscriptionClientScopedSubscriptionOutputReference
@@ -156,6 +159,7 @@ type ServicebusSubscription interface {
 	PutClientScopedSubscription(value *ServicebusSubscriptionClientScopedSubscription)
 	PutTimeouts(value *ServicebusSubscriptionTimeouts)
 	ResetAutoDeleteOnIdle()
+	ResetBatchedOperationsEnabled()
 	ResetClientScopedSubscription()
 	ResetClientScopedSubscriptionEnabled()
 	ResetDeadLetteringOnFilterEvaluationError()
@@ -205,6 +209,26 @@ func (j *jsiiProxy_ServicebusSubscription) AutoDeleteOnIdleInput() *string {
 	_jsii_.Get(
 		j,
 		"autoDeleteOnIdleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicebusSubscription) BatchedOperationsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"batchedOperationsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicebusSubscription) BatchedOperationsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"batchedOperationsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -691,7 +715,7 @@ func (j *jsiiProxy_ServicebusSubscription) TopicIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/servicebus_subscription azurerm_servicebus_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/servicebus_subscription azurerm_servicebus_subscription} Resource.
 func NewServicebusSubscription(scope constructs.Construct, id *string, config *ServicebusSubscriptionConfig) ServicebusSubscription {
 	_init_.Initialize()
 
@@ -709,7 +733,7 @@ func NewServicebusSubscription(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.111.0/docs/resources/servicebus_subscription azurerm_servicebus_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/servicebus_subscription azurerm_servicebus_subscription} Resource.
 func NewServicebusSubscription_Override(s ServicebusSubscription, scope constructs.Construct, id *string, config *ServicebusSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -727,6 +751,17 @@ func (j *jsiiProxy_ServicebusSubscription)SetAutoDeleteOnIdle(val *string) {
 	_jsii_.Set(
 		j,
 		"autoDeleteOnIdle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicebusSubscription)SetBatchedOperationsEnabled(val interface{}) {
+	if err := j.validateSetBatchedOperationsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"batchedOperationsEnabled",
 		val,
 	)
 }
@@ -1332,6 +1367,14 @@ func (s *jsiiProxy_ServicebusSubscription) ResetAutoDeleteOnIdle() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAutoDeleteOnIdle",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicebusSubscription) ResetBatchedOperationsEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBatchedOperationsEnabled",
 		nil, // no parameters
 	)
 }
