@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/kusto_database azurerm_kusto_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/kusto_database azurerm_kusto_database}.
 type KustoDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_KustoDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/kusto_database azurerm_kusto_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/kusto_database azurerm_kusto_database} Resource.
 func NewKustoDatabase(scope constructs.Construct, id *string, config *KustoDatabaseConfig) KustoDatabase {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewKustoDatabase(scope constructs.Construct, id *string, config *KustoDatab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/kusto_database azurerm_kusto_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/kusto_database azurerm_kusto_database} Resource.
 func NewKustoDatabase_Override(k KustoDatabase, scope constructs.Construct, id *string, config *KustoDatabaseConfig) {
 	_init_.Initialize()
 

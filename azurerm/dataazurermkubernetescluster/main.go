@@ -192,6 +192,7 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermKubernetesCluster.DataAzurermKubernetesClusterAgentPoolProfileOutputReference",
 		reflect.TypeOf((*DataAzurermKubernetesClusterAgentPoolProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "autoScalingEnabled", GoGetter: "AutoScalingEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -217,6 +218,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "minCount", GoGetter: "MinCount"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeLabels", GoGetter: "NodeLabels"},
+			_jsii_.MemberProperty{JsiiProperty: "nodePublicIpEnabled", GoGetter: "NodePublicIpEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "nodePublicIpPrefixId", GoGetter: "NodePublicIpPrefixId"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeTaints", GoGetter: "NodeTaints"},
 			_jsii_.MemberProperty{JsiiProperty: "orchestratorVersion", GoGetter: "OrchestratorVersion"},

@@ -15,6 +15,7 @@ func init() {
 		reflect.TypeOf((*DataAzurermKubernetesClusterNodePool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "autoScalingEnabled", GoGetter: "AutoScalingEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -49,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeCount", GoGetter: "NodeCount"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeLabels", GoGetter: "NodeLabels"},
+			_jsii_.MemberProperty{JsiiProperty: "nodePublicIpEnabled", GoGetter: "NodePublicIpEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "nodePublicIpPrefixId", GoGetter: "NodePublicIpPrefixId"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeTaints", GoGetter: "NodeTaints"},
 			_jsii_.MemberProperty{JsiiProperty: "orchestratorVersion", GoGetter: "OrchestratorVersion"},

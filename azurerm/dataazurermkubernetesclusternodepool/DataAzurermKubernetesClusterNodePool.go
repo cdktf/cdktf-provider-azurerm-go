@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/data-sources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/data-sources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool}.
 type DataAzurermKubernetesClusterNodePool interface {
 	cdktf.TerraformDataSource
+	AutoScalingEnabled() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -59,6 +60,7 @@ type DataAzurermKubernetesClusterNodePool interface {
 	Node() constructs.Node
 	NodeCount() *float64
 	NodeLabels() cdktf.StringMap
+	NodePublicIpEnabled() cdktf.IResolvable
 	NodePublicIpPrefixId() *string
 	NodeTaints() *[]*string
 	OrchestratorVersion() *string
@@ -138,6 +140,16 @@ type DataAzurermKubernetesClusterNodePool interface {
 // The jsii proxy struct for DataAzurermKubernetesClusterNodePool
 type jsiiProxy_DataAzurermKubernetesClusterNodePool struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataAzurermKubernetesClusterNodePool) AutoScalingEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"autoScalingEnabled",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAzurermKubernetesClusterNodePool) CdktfStack() cdktf.TerraformStack {
@@ -380,6 +392,16 @@ func (j *jsiiProxy_DataAzurermKubernetesClusterNodePool) NodeLabels() cdktf.Stri
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermKubernetesClusterNodePool) NodePublicIpEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"nodePublicIpEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermKubernetesClusterNodePool) NodePublicIpPrefixId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -611,7 +633,7 @@ func (j *jsiiProxy_DataAzurermKubernetesClusterNodePool) Zones() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/data-sources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/data-sources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Data Source.
 func NewDataAzurermKubernetesClusterNodePool(scope constructs.Construct, id *string, config *DataAzurermKubernetesClusterNodePoolConfig) DataAzurermKubernetesClusterNodePool {
 	_init_.Initialize()
 
@@ -629,7 +651,7 @@ func NewDataAzurermKubernetesClusterNodePool(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/data-sources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/data-sources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Data Source.
 func NewDataAzurermKubernetesClusterNodePool_Override(d DataAzurermKubernetesClusterNodePool, scope constructs.Construct, id *string, config *DataAzurermKubernetesClusterNodePoolConfig) {
 	_init_.Initialize()
 

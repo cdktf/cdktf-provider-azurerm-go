@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/cdn_frontdoor_origin azurerm_cdn_frontdoor_origin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/cdn_frontdoor_origin azurerm_cdn_frontdoor_origin}.
 type CdnFrontdoorOrigin interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -618,7 +618,7 @@ func (j *jsiiProxy_CdnFrontdoorOrigin) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/cdn_frontdoor_origin azurerm_cdn_frontdoor_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/cdn_frontdoor_origin azurerm_cdn_frontdoor_origin} Resource.
 func NewCdnFrontdoorOrigin(scope constructs.Construct, id *string, config *CdnFrontdoorOriginConfig) CdnFrontdoorOrigin {
 	_init_.Initialize()
 
@@ -636,7 +636,7 @@ func NewCdnFrontdoorOrigin(scope constructs.Construct, id *string, config *CdnFr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/cdn_frontdoor_origin azurerm_cdn_frontdoor_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/cdn_frontdoor_origin azurerm_cdn_frontdoor_origin} Resource.
 func NewCdnFrontdoorOrigin_Override(c CdnFrontdoorOrigin, scope constructs.Construct, id *string, config *CdnFrontdoorOriginConfig) {
 	_init_.Initialize()
 

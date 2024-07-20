@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/logz_sub_account_tag_rule azurerm_logz_sub_account_tag_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/logz_sub_account_tag_rule azurerm_logz_sub_account_tag_rule}.
 type LogzSubAccountTagRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -453,7 +453,7 @@ func (j *jsiiProxy_LogzSubAccountTagRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/logz_sub_account_tag_rule azurerm_logz_sub_account_tag_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/logz_sub_account_tag_rule azurerm_logz_sub_account_tag_rule} Resource.
 func NewLogzSubAccountTagRule(scope constructs.Construct, id *string, config *LogzSubAccountTagRuleConfig) LogzSubAccountTagRule {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewLogzSubAccountTagRule(scope constructs.Construct, id *string, config *Lo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.112.0/docs/resources/logz_sub_account_tag_rule azurerm_logz_sub_account_tag_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/logz_sub_account_tag_rule azurerm_logz_sub_account_tag_rule} Resource.
 func NewLogzSubAccountTagRule_Override(l LogzSubAccountTagRule, scope constructs.Construct, id *string, config *LogzSubAccountTagRuleConfig) {
 	_init_.Initialize()
 

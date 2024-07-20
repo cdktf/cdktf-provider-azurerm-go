@@ -13,6 +13,7 @@ import (
 
 type DataAzurermKubernetesClusterAgentPoolProfileOutputReference interface {
 	cdktf.ComplexObject
+	AutoScalingEnabled() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,6 +41,7 @@ type DataAzurermKubernetesClusterAgentPoolProfileOutputReference interface {
 	MinCount() *float64
 	Name() *string
 	NodeLabels() cdktf.StringMap
+	NodePublicIpEnabled() cdktf.IResolvable
 	NodePublicIpPrefixId() *string
 	NodeTaints() *[]*string
 	OrchestratorVersion() *string
@@ -96,6 +98,16 @@ type DataAzurermKubernetesClusterAgentPoolProfileOutputReference interface {
 // The jsii proxy struct for DataAzurermKubernetesClusterAgentPoolProfileOutputReference
 type jsiiProxy_DataAzurermKubernetesClusterAgentPoolProfileOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataAzurermKubernetesClusterAgentPoolProfileOutputReference) AutoScalingEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"autoScalingEnabled",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAzurermKubernetesClusterAgentPoolProfileOutputReference) ComplexObjectIndex() interface{} {
@@ -223,6 +235,16 @@ func (j *jsiiProxy_DataAzurermKubernetesClusterAgentPoolProfileOutputReference) 
 	_jsii_.Get(
 		j,
 		"nodeLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermKubernetesClusterAgentPoolProfileOutputReference) NodePublicIpEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"nodePublicIpEnabled",
 		&returns,
 	)
 	return returns
