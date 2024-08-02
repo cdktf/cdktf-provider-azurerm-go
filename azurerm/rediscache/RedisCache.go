@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/redis_cache azurerm_redis_cache}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/redis_cache azurerm_redis_cache}.
 type RedisCache interface {
 	cdktf.TerraformResource
 	Capacity() *float64
@@ -69,6 +69,9 @@ type RedisCache interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NonSslPortEnabled() interface{}
+	SetNonSslPortEnabled(val interface{})
+	NonSslPortEnabledInput() interface{}
 	PatchSchedule() RedisCachePatchScheduleList
 	PatchScheduleInput() interface{}
 	Port() *float64
@@ -184,6 +187,7 @@ type RedisCache interface {
 	ResetId()
 	ResetIdentity()
 	ResetMinimumTlsVersion()
+	ResetNonSslPortEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -483,6 +487,26 @@ func (j *jsiiProxy_RedisCache) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCache) NonSslPortEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nonSslPortEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCache) NonSslPortEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nonSslPortEnabledInput",
 		&returns,
 	)
 	return returns
@@ -909,7 +933,7 @@ func (j *jsiiProxy_RedisCache) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/redis_cache azurerm_redis_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/redis_cache azurerm_redis_cache} Resource.
 func NewRedisCache(scope constructs.Construct, id *string, config *RedisCacheConfig) RedisCache {
 	_init_.Initialize()
 
@@ -927,7 +951,7 @@ func NewRedisCache(scope constructs.Construct, id *string, config *RedisCacheCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/redis_cache azurerm_redis_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/redis_cache azurerm_redis_cache} Resource.
 func NewRedisCache_Override(r RedisCache, scope constructs.Construct, id *string, config *RedisCacheConfig) {
 	_init_.Initialize()
 
@@ -1060,6 +1084,17 @@ func (j *jsiiProxy_RedisCache)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedisCache)SetNonSslPortEnabled(val interface{}) {
+	if err := j.validateSetNonSslPortEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nonSslPortEnabled",
 		val,
 	)
 }
@@ -1640,6 +1675,14 @@ func (r *jsiiProxy_RedisCache) ResetMinimumTlsVersion() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetMinimumTlsVersion",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCache) ResetNonSslPortEnabled() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetNonSslPortEnabled",
 		nil, // no parameters
 	)
 }

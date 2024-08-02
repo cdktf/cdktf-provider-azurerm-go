@@ -195,6 +195,10 @@ func (j *jsiiProxy_StorageAccount) validateSetEnableHttpsTrafficOnlyParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_StorageAccount) validateSetHttpsTrafficOnlyEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

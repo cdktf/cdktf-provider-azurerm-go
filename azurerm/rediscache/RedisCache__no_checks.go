@@ -147,6 +147,10 @@ func (j *jsiiProxy_RedisCache) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_RedisCache) validateSetNonSslPortEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisCache) validateSetPrivateStaticIpAddressParameters(val *string) error {
 	return nil
 }

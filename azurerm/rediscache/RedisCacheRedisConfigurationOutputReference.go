@@ -25,6 +25,9 @@ type RedisCacheRedisConfigurationOutputReference interface {
 	AofStorageConnectionString1() *string
 	SetAofStorageConnectionString1(val *string)
 	AofStorageConnectionString1Input() *string
+	AuthenticationEnabled() interface{}
+	SetAuthenticationEnabled(val interface{})
+	AuthenticationEnabledInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -117,6 +120,7 @@ type RedisCacheRedisConfigurationOutputReference interface {
 	ResetAofBackupEnabled()
 	ResetAofStorageConnectionString0()
 	ResetAofStorageConnectionString1()
+	ResetAuthenticationEnabled()
 	ResetDataPersistenceAuthenticationMethod()
 	ResetEnableAuthentication()
 	ResetMaxfragmentationmemoryReserved()
@@ -219,6 +223,26 @@ func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) AofStorageConnec
 	_jsii_.Get(
 		j,
 		"aofStorageConnectionString1Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) AuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"authenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) AuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"authenticationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -612,6 +636,17 @@ func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference)SetAofStorageConn
 	_jsii_.Set(
 		j,
 		"aofStorageConnectionString1",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference)SetAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authenticationEnabled",
 		val,
 	)
 }
@@ -1017,6 +1052,14 @@ func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) ResetAofStorageC
 	_jsii_.InvokeVoid(
 		r,
 		"resetAofStorageConnectionString1",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) ResetAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAuthenticationEnabled",
 		nil, // no parameters
 	)
 }

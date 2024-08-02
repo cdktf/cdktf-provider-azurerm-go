@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/storage_account azurerm_storage_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/storage_account azurerm_storage_account}.
 type StorageAccount interface {
 	cdktf.TerraformResource
 	AccessTier() *string
@@ -80,6 +80,9 @@ type StorageAccount interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HttpsTrafficOnlyEnabled() interface{}
+	SetHttpsTrafficOnlyEnabled(val interface{})
+	HttpsTrafficOnlyEnabledInput() interface{}
 	Id() *string
 	SetId(val *string)
 	Identity() StorageAccountIdentityOutputReference
@@ -309,6 +312,7 @@ type StorageAccount interface {
 	ResetDnsEndpointType()
 	ResetEdgeZone()
 	ResetEnableHttpsTrafficOnly()
+	ResetHttpsTrafficOnlyEnabled()
 	ResetId()
 	ResetIdentity()
 	ResetImmutabilityPolicy()
@@ -727,6 +731,26 @@ func (j *jsiiProxy_StorageAccount) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) HttpsTrafficOnlyEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"httpsTrafficOnlyEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccount) HttpsTrafficOnlyEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"httpsTrafficOnlyEnabledInput",
 		&returns,
 	)
 	return returns
@@ -2033,7 +2057,7 @@ func (j *jsiiProxy_StorageAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/storage_account azurerm_storage_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/storage_account azurerm_storage_account} Resource.
 func NewStorageAccount(scope constructs.Construct, id *string, config *StorageAccountConfig) StorageAccount {
 	_init_.Initialize()
 
@@ -2051,7 +2075,7 @@ func NewStorageAccount(scope constructs.Construct, id *string, config *StorageAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/storage_account azurerm_storage_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/storage_account azurerm_storage_account} Resource.
 func NewStorageAccount_Override(s StorageAccount, scope constructs.Construct, id *string, config *StorageAccountConfig) {
 	_init_.Initialize()
 
@@ -2217,6 +2241,17 @@ func (j *jsiiProxy_StorageAccount)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageAccount)SetHttpsTrafficOnlyEnabled(val interface{}) {
+	if err := j.validateSetHttpsTrafficOnlyEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpsTrafficOnlyEnabled",
 		val,
 	)
 }
@@ -3023,6 +3058,14 @@ func (s *jsiiProxy_StorageAccount) ResetEnableHttpsTrafficOnly() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEnableHttpsTrafficOnly",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageAccount) ResetHttpsTrafficOnlyEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHttpsTrafficOnlyEnabled",
 		nil, // no parameters
 	)
 }

@@ -67,6 +67,10 @@ func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) validateSetAofSt
 	return nil
 }
 
+func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) validateSetAuthenticationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

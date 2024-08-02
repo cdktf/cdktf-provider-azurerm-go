@@ -17,6 +17,7 @@ type DataAzurermRedisCacheRedisConfigurationOutputReference interface {
 	AofBackupEnabled() cdktf.IResolvable
 	AofStorageConnectionString0() *string
 	AofStorageConnectionString1() *string
+	AuthenticationEnabled() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -131,6 +132,16 @@ func (j *jsiiProxy_DataAzurermRedisCacheRedisConfigurationOutputReference) AofSt
 	_jsii_.Get(
 		j,
 		"aofStorageConnectionString1",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermRedisCacheRedisConfigurationOutputReference) AuthenticationEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"authenticationEnabled",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/storage_management_policy azurerm_storage_management_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/storage_management_policy azurerm_storage_management_policy}.
 type StorageManagementPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_StorageManagementPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/storage_management_policy azurerm_storage_management_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/storage_management_policy azurerm_storage_management_policy} Resource.
 func NewStorageManagementPolicy(scope constructs.Construct, id *string, config *StorageManagementPolicyConfig) StorageManagementPolicy {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewStorageManagementPolicy(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.113.0/docs/resources/storage_management_policy azurerm_storage_management_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/storage_management_policy azurerm_storage_management_policy} Resource.
 func NewStorageManagementPolicy_Override(s StorageManagementPolicy, scope constructs.Construct, id *string, config *StorageManagementPolicyConfig) {
 	_init_.Initialize()
 
