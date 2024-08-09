@@ -5,13 +5,13 @@ package apimanagementidentityprovideraad
 
 
 type ApiManagementIdentityProviderAadTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/api_management_identity_provider_aad#create ApiManagementIdentityProviderAad#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/api_management_identity_provider_aad#create ApiManagementIdentityProviderAad#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/api_management_identity_provider_aad#delete ApiManagementIdentityProviderAad#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/api_management_identity_provider_aad#delete ApiManagementIdentityProviderAad#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/api_management_identity_provider_aad#read ApiManagementIdentityProviderAad#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/api_management_identity_provider_aad#read ApiManagementIdentityProviderAad#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/api_management_identity_provider_aad#update ApiManagementIdentityProviderAad#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/api_management_identity_provider_aad#update ApiManagementIdentityProviderAad#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

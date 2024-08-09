@@ -30,6 +30,9 @@ type StorageAccountAzureFilesAuthenticationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultShareLevelPermission() *string
+	SetDefaultShareLevelPermission(val *string)
+	DefaultShareLevelPermissionInput() *string
 	DirectoryType() *string
 	SetDirectoryType(val *string)
 	DirectoryTypeInput() *string
@@ -71,6 +74,7 @@ type StorageAccountAzureFilesAuthenticationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutActiveDirectory(value *StorageAccountAzureFilesAuthenticationActiveDirectory)
 	ResetActiveDirectory()
+	ResetDefaultShareLevelPermission()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -131,6 +135,26 @@ func (j *jsiiProxy_StorageAccountAzureFilesAuthenticationOutputReference) Creati
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccountAzureFilesAuthenticationOutputReference) DefaultShareLevelPermission() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultShareLevelPermission",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageAccountAzureFilesAuthenticationOutputReference) DefaultShareLevelPermissionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultShareLevelPermissionInput",
 		&returns,
 	)
 	return returns
@@ -242,6 +266,17 @@ func (j *jsiiProxy_StorageAccountAzureFilesAuthenticationOutputReference)SetComp
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageAccountAzureFilesAuthenticationOutputReference)SetDefaultShareLevelPermission(val *string) {
+	if err := j.validateSetDefaultShareLevelPermissionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultShareLevelPermission",
 		val,
 	)
 }
@@ -491,6 +526,14 @@ func (s *jsiiProxy_StorageAccountAzureFilesAuthenticationOutputReference) ResetA
 	_jsii_.InvokeVoid(
 		s,
 		"resetActiveDirectory",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageAccountAzureFilesAuthenticationOutputReference) ResetDefaultShareLevelPermission() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultShareLevelPermission",
 		nil, // no parameters
 	)
 }

@@ -51,6 +51,10 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) validateSetActionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

@@ -127,6 +127,10 @@ func (j *jsiiProxy_SecurityCenterStorageDefender) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_SecurityCenterStorageDefender) validateSetScanResultsEventGridTopicIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityCenterStorageDefender) validateSetSensitiveDataDiscoveryEnabledParameters(val interface{}) error {
 	return nil
 }

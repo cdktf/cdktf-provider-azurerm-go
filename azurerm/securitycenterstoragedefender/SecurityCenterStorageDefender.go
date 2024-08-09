@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/security_center_storage_defender azurerm_security_center_storage_defender}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/security_center_storage_defender azurerm_security_center_storage_defender}.
 type SecurityCenterStorageDefender interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type SecurityCenterStorageDefender interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ScanResultsEventGridTopicId() *string
+	SetScanResultsEventGridTopicId(val *string)
+	ScanResultsEventGridTopicIdInput() *string
 	SensitiveDataDiscoveryEnabled() interface{}
 	SetSensitiveDataDiscoveryEnabled(val interface{})
 	SensitiveDataDiscoveryEnabledInput() interface{}
@@ -132,6 +135,7 @@ type SecurityCenterStorageDefender interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOverrideSubscriptionSettingsEnabled()
+	ResetScanResultsEventGridTopicId()
 	ResetSensitiveDataDiscoveryEnabled()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -362,6 +366,26 @@ func (j *jsiiProxy_SecurityCenterStorageDefender) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SecurityCenterStorageDefender) ScanResultsEventGridTopicId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scanResultsEventGridTopicId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityCenterStorageDefender) ScanResultsEventGridTopicIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scanResultsEventGridTopicIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecurityCenterStorageDefender) SensitiveDataDiscoveryEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -453,7 +477,7 @@ func (j *jsiiProxy_SecurityCenterStorageDefender) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/security_center_storage_defender azurerm_security_center_storage_defender} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/security_center_storage_defender azurerm_security_center_storage_defender} Resource.
 func NewSecurityCenterStorageDefender(scope constructs.Construct, id *string, config *SecurityCenterStorageDefenderConfig) SecurityCenterStorageDefender {
 	_init_.Initialize()
 
@@ -471,7 +495,7 @@ func NewSecurityCenterStorageDefender(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/security_center_storage_defender azurerm_security_center_storage_defender} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/security_center_storage_defender azurerm_security_center_storage_defender} Resource.
 func NewSecurityCenterStorageDefender_Override(s SecurityCenterStorageDefender, scope constructs.Construct, id *string, config *SecurityCenterStorageDefenderConfig) {
 	_init_.Initialize()
 
@@ -590,6 +614,17 @@ func (j *jsiiProxy_SecurityCenterStorageDefender)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityCenterStorageDefender)SetScanResultsEventGridTopicId(val *string) {
+	if err := j.validateSetScanResultsEventGridTopicIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scanResultsEventGridTopicId",
 		val,
 	)
 }
@@ -1016,6 +1051,14 @@ func (s *jsiiProxy_SecurityCenterStorageDefender) ResetOverrideSubscriptionSetti
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideSubscriptionSettingsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityCenterStorageDefender) ResetScanResultsEventGridTopicId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetScanResultsEventGridTopicId",
 		nil, // no parameters
 	)
 }

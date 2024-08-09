@@ -5,7 +5,7 @@ package dataazurermservicebusqueue
 
 
 type DataAzurermServicebusQueueTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/data-sources/servicebus_queue#read DataAzurermServicebusQueue#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/data-sources/servicebus_queue#read DataAzurermServicebusQueue#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

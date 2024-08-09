@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/mobile_network_sim_group azurerm_mobile_network_sim_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/mobile_network_sim_group azurerm_mobile_network_sim_group}.
 type MobileNetworkSimGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -475,7 +475,7 @@ func (j *jsiiProxy_MobileNetworkSimGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/mobile_network_sim_group azurerm_mobile_network_sim_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/mobile_network_sim_group azurerm_mobile_network_sim_group} Resource.
 func NewMobileNetworkSimGroup(scope constructs.Construct, id *string, config *MobileNetworkSimGroupConfig) MobileNetworkSimGroup {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewMobileNetworkSimGroup(scope constructs.Construct, id *string, config *Mo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.114.0/docs/resources/mobile_network_sim_group azurerm_mobile_network_sim_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/mobile_network_sim_group azurerm_mobile_network_sim_group} Resource.
 func NewMobileNetworkSimGroup_Override(m MobileNetworkSimGroup, scope constructs.Construct, id *string, config *MobileNetworkSimGroupConfig) {
 	_init_.Initialize()
 

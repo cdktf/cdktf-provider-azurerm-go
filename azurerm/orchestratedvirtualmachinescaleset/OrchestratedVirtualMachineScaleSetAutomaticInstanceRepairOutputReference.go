@@ -13,6 +13,9 @@ import (
 
 type OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputReference interface {
 	cdktf.ComplexObject
+	Action() *string
+	SetAction(val *string)
+	ActionInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,7 @@ type OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputReference in
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAction()
 	ResetGracePeriod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -84,6 +88,26 @@ type OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputReference in
 // The jsii proxy struct for OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputReference
 type jsiiProxy_OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) Action() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"action",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) ActionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"actionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) ComplexObjectIndex() interface{} {
@@ -221,6 +245,17 @@ func NewOrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputReference
 		"@cdktf/provider-azurerm.orchestratedVirtualMachineScaleSet.OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
+	)
+}
+
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputReference)SetAction(val *string) {
+	if err := j.validateSetActionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"action",
+		val,
 	)
 }
 
@@ -485,6 +520,14 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutp
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) ResetAction() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAction",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) ResetGracePeriod() {

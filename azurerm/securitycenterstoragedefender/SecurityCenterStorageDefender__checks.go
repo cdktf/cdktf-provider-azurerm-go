@@ -458,6 +458,14 @@ func (j *jsiiProxy_SecurityCenterStorageDefender) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_SecurityCenterStorageDefender) validateSetScanResultsEventGridTopicIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecurityCenterStorageDefender) validateSetSensitiveDataDiscoveryEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -13,6 +13,9 @@ import (
 
 type LinuxVirtualMachineScaleSetAutomaticInstanceRepairOutputReference interface {
 	cdktf.ComplexObject
+	Action() *string
+	SetAction(val *string)
+	ActionInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,7 @@ type LinuxVirtualMachineScaleSetAutomaticInstanceRepairOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAction()
 	ResetGracePeriod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -84,6 +88,26 @@ type LinuxVirtualMachineScaleSetAutomaticInstanceRepairOutputReference interface
 // The jsii proxy struct for LinuxVirtualMachineScaleSetAutomaticInstanceRepairOutputReference
 type jsiiProxy_LinuxVirtualMachineScaleSetAutomaticInstanceRepairOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) Action() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"action",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) ActionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"actionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_LinuxVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) ComplexObjectIndex() interface{} {
@@ -221,6 +245,17 @@ func NewLinuxVirtualMachineScaleSetAutomaticInstanceRepairOutputReference_Overri
 		"@cdktf/provider-azurerm.linuxVirtualMachineScaleSet.LinuxVirtualMachineScaleSetAutomaticInstanceRepairOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
+	)
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineScaleSetAutomaticInstanceRepairOutputReference)SetAction(val *string) {
+	if err := j.validateSetActionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"action",
+		val,
 	)
 }
 
@@ -485,6 +520,14 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetAutomaticInstanceRepairOutputRefer
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LinuxVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) ResetAction() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAction",
+		nil, // no parameters
+	)
 }
 
 func (l *jsiiProxy_LinuxVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) ResetGracePeriod() {

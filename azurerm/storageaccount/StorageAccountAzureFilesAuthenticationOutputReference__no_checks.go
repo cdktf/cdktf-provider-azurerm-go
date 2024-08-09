@@ -63,6 +63,10 @@ func (j *jsiiProxy_StorageAccountAzureFilesAuthenticationOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_StorageAccountAzureFilesAuthenticationOutputReference) validateSetDefaultShareLevelPermissionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageAccountAzureFilesAuthenticationOutputReference) validateSetDirectoryTypeParameters(val *string) error {
 	return nil
 }

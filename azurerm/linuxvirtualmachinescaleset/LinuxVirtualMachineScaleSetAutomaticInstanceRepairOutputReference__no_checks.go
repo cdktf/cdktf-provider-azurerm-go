@@ -51,6 +51,10 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSetAutomaticInstanceRepairOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_LinuxVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) validateSetActionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LinuxVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

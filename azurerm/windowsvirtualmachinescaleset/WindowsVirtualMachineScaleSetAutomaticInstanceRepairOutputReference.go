@@ -13,6 +13,9 @@ import (
 
 type WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference interface {
 	cdktf.ComplexObject
+	Action() *string
+	SetAction(val *string)
+	ActionInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,7 @@ type WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAction()
 	ResetGracePeriod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -84,6 +88,26 @@ type WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference interfa
 // The jsii proxy struct for WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference
 type jsiiProxy_WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) Action() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"action",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) ActionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"actionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) ComplexObjectIndex() interface{} {
@@ -221,6 +245,17 @@ func NewWindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference_Over
 		"@cdktf/provider-azurerm.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
+	)
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference)SetAction(val *string) {
+	if err := j.validateSetActionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"action",
+		val,
 	)
 }
 
@@ -485,6 +520,14 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputRef
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) ResetAction() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAction",
+		nil, // no parameters
+	)
 }
 
 func (w *jsiiProxy_WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference) ResetGracePeriod() {
