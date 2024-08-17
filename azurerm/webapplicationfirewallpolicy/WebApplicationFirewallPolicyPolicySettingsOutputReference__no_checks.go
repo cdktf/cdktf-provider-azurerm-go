@@ -75,6 +75,10 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) validateSetJsChallengeCookieExpirationInMinutesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) validateSetMaxRequestBodySizeInKbParameters(val *float64) error {
 	return nil
 }

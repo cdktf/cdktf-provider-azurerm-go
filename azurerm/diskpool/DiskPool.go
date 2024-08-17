@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/disk_pool azurerm_disk_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/disk_pool azurerm_disk_pool}.
 type DiskPool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -496,7 +496,7 @@ func (j *jsiiProxy_DiskPool) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/disk_pool azurerm_disk_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/disk_pool azurerm_disk_pool} Resource.
 func NewDiskPool(scope constructs.Construct, id *string, config *DiskPoolConfig) DiskPool {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewDiskPool(scope constructs.Construct, id *string, config *DiskPoolConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/disk_pool azurerm_disk_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/disk_pool azurerm_disk_pool} Resource.
 func NewDiskPool_Override(d DiskPool, scope constructs.Construct, id *string, config *DiskPoolConfig) {
 	_init_.Initialize()
 

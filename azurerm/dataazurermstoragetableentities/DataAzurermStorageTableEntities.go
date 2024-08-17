@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/data-sources/storage_table_entities azurerm_storage_table_entities}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/storage_table_entities azurerm_storage_table_entities}.
 type DataAzurermStorageTableEntities interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -60,6 +60,9 @@ type DataAzurermStorageTableEntities interface {
 	StorageAccountName() *string
 	SetStorageAccountName(val *string)
 	StorageAccountNameInput() *string
+	StorageTableId() *string
+	SetStorageTableId(val *string)
+	StorageTableIdInput() *string
 	TableName() *string
 	SetTableName(val *string)
 	TableNameInput() *string
@@ -102,6 +105,9 @@ type DataAzurermStorageTableEntities interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSelect()
+	ResetStorageAccountName()
+	ResetStorageTableId()
+	ResetTableName()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -322,6 +328,26 @@ func (j *jsiiProxy_DataAzurermStorageTableEntities) StorageAccountNameInput() *s
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermStorageTableEntities) StorageTableId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageTableId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageTableEntities) StorageTableIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageTableIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermStorageTableEntities) TableName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -393,7 +419,7 @@ func (j *jsiiProxy_DataAzurermStorageTableEntities) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/data-sources/storage_table_entities azurerm_storage_table_entities} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/storage_table_entities azurerm_storage_table_entities} Data Source.
 func NewDataAzurermStorageTableEntities(scope constructs.Construct, id *string, config *DataAzurermStorageTableEntitiesConfig) DataAzurermStorageTableEntities {
 	_init_.Initialize()
 
@@ -411,7 +437,7 @@ func NewDataAzurermStorageTableEntities(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/data-sources/storage_table_entities azurerm_storage_table_entities} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/storage_table_entities azurerm_storage_table_entities} Data Source.
 func NewDataAzurermStorageTableEntities_Override(d DataAzurermStorageTableEntities, scope constructs.Construct, id *string, config *DataAzurermStorageTableEntitiesConfig) {
 	_init_.Initialize()
 
@@ -508,6 +534,17 @@ func (j *jsiiProxy_DataAzurermStorageTableEntities)SetStorageAccountName(val *st
 	_jsii_.Set(
 		j,
 		"storageAccountName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzurermStorageTableEntities)SetStorageTableId(val *string) {
+	if err := j.validateSetStorageTableIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageTableId",
 		val,
 	)
 }
@@ -839,6 +876,30 @@ func (d *jsiiProxy_DataAzurermStorageTableEntities) ResetSelect() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSelect",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermStorageTableEntities) ResetStorageAccountName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStorageAccountName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermStorageTableEntities) ResetStorageTableId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStorageTableId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermStorageTableEntities) ResetTableName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTableName",
 		nil, // no parameters
 	)
 }

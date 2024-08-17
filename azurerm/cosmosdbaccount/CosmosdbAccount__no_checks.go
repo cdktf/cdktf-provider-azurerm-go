@@ -147,6 +147,10 @@ func (j *jsiiProxy_CosmosdbAccount) validateSetAutomaticFailoverEnabledParameter
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbAccount) validateSetBurstCapacityEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbAccount) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

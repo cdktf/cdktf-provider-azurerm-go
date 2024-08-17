@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/stack_hci_logical_network azurerm_stack_hci_logical_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/stack_hci_logical_network azurerm_stack_hci_logical_network}.
 type StackHciLogicalNetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -520,7 +520,7 @@ func (j *jsiiProxy_StackHciLogicalNetwork) VirtualSwitchNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/stack_hci_logical_network azurerm_stack_hci_logical_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/stack_hci_logical_network azurerm_stack_hci_logical_network} Resource.
 func NewStackHciLogicalNetwork(scope constructs.Construct, id *string, config *StackHciLogicalNetworkConfig) StackHciLogicalNetwork {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewStackHciLogicalNetwork(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/stack_hci_logical_network azurerm_stack_hci_logical_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/stack_hci_logical_network azurerm_stack_hci_logical_network} Resource.
 func NewStackHciLogicalNetwork_Override(s StackHciLogicalNetwork, scope constructs.Construct, id *string, config *StackHciLogicalNetworkConfig) {
 	_init_.Initialize()
 

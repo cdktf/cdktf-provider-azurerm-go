@@ -38,6 +38,9 @@ type WebApplicationFirewallPolicyPolicySettingsOutputReference interface {
 	Fqn() *string
 	InternalValue() *WebApplicationFirewallPolicyPolicySettings
 	SetInternalValue(val *WebApplicationFirewallPolicyPolicySettings)
+	JsChallengeCookieExpirationInMinutes() *float64
+	SetJsChallengeCookieExpirationInMinutes(val *float64)
+	JsChallengeCookieExpirationInMinutesInput() *float64
 	LogScrubbing() WebApplicationFirewallPolicyPolicySettingsLogScrubbingOutputReference
 	LogScrubbingInput() *WebApplicationFirewallPolicyPolicySettingsLogScrubbing
 	MaxRequestBodySizeInKb() *float64
@@ -87,6 +90,7 @@ type WebApplicationFirewallPolicyPolicySettingsOutputReference interface {
 	PutLogScrubbing(value *WebApplicationFirewallPolicyPolicySettingsLogScrubbing)
 	ResetEnabled()
 	ResetFileUploadLimitInMb()
+	ResetJsChallengeCookieExpirationInMinutes()
 	ResetLogScrubbing()
 	ResetMaxRequestBodySizeInKb()
 	ResetMode()
@@ -192,6 +196,26 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) JsChallengeCookieExpirationInMinutes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"jsChallengeCookieExpirationInMinutes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) JsChallengeCookieExpirationInMinutesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"jsChallengeCookieExpirationInMinutesInput",
 		&returns,
 	)
 	return returns
@@ -396,6 +420,17 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference)Set
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference)SetJsChallengeCookieExpirationInMinutes(val *float64) {
+	if err := j.validateSetJsChallengeCookieExpirationInMinutesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jsChallengeCookieExpirationInMinutes",
 		val,
 	)
 }
@@ -675,6 +710,14 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) Re
 	_jsii_.InvokeVoid(
 		w,
 		"resetFileUploadLimitInMb",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) ResetJsChallengeCookieExpirationInMinutes() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetJsChallengeCookieExpirationInMinutes",
 		nil, // no parameters
 	)
 }

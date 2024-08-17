@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/storage_account_network_rules azurerm_storage_account_network_rules}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_account_network_rules azurerm_storage_account_network_rules}.
 type StorageAccountNetworkRulesA interface {
 	cdktf.TerraformResource
 	Bypass() *[]*string
@@ -476,7 +476,7 @@ func (j *jsiiProxy_StorageAccountNetworkRulesA) VirtualNetworkSubnetIdsInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/storage_account_network_rules azurerm_storage_account_network_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_account_network_rules azurerm_storage_account_network_rules} Resource.
 func NewStorageAccountNetworkRulesA(scope constructs.Construct, id *string, config *StorageAccountNetworkRulesAConfig) StorageAccountNetworkRulesA {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewStorageAccountNetworkRulesA(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/storage_account_network_rules azurerm_storage_account_network_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_account_network_rules azurerm_storage_account_network_rules} Resource.
 func NewStorageAccountNetworkRulesA_Override(s StorageAccountNetworkRulesA, scope constructs.Construct, id *string, config *StorageAccountNetworkRulesAConfig) {
 	_init_.Initialize()
 

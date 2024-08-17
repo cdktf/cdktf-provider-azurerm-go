@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/data-sources/storage_table_entity azurerm_storage_table_entity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/storage_table_entity azurerm_storage_table_entity}.
 type DataAzurermStorageTableEntity interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -60,6 +60,9 @@ type DataAzurermStorageTableEntity interface {
 	StorageAccountName() *string
 	SetStorageAccountName(val *string)
 	StorageAccountNameInput() *string
+	StorageTableId() *string
+	SetStorageTableId(val *string)
+	StorageTableIdInput() *string
 	TableName() *string
 	SetTableName(val *string)
 	TableNameInput() *string
@@ -101,6 +104,9 @@ type DataAzurermStorageTableEntity interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStorageAccountName()
+	ResetStorageTableId()
+	ResetTableName()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -321,6 +327,26 @@ func (j *jsiiProxy_DataAzurermStorageTableEntity) StorageAccountNameInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermStorageTableEntity) StorageTableId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageTableId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStorageTableEntity) StorageTableIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageTableIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermStorageTableEntity) TableName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -392,7 +418,7 @@ func (j *jsiiProxy_DataAzurermStorageTableEntity) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/data-sources/storage_table_entity azurerm_storage_table_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/storage_table_entity azurerm_storage_table_entity} Data Source.
 func NewDataAzurermStorageTableEntity(scope constructs.Construct, id *string, config *DataAzurermStorageTableEntityConfig) DataAzurermStorageTableEntity {
 	_init_.Initialize()
 
@@ -410,7 +436,7 @@ func NewDataAzurermStorageTableEntity(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/data-sources/storage_table_entity azurerm_storage_table_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/storage_table_entity azurerm_storage_table_entity} Data Source.
 func NewDataAzurermStorageTableEntity_Override(d DataAzurermStorageTableEntity, scope constructs.Construct, id *string, config *DataAzurermStorageTableEntityConfig) {
 	_init_.Initialize()
 
@@ -507,6 +533,17 @@ func (j *jsiiProxy_DataAzurermStorageTableEntity)SetStorageAccountName(val *stri
 	_jsii_.Set(
 		j,
 		"storageAccountName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAzurermStorageTableEntity)SetStorageTableId(val *string) {
+	if err := j.validateSetStorageTableIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageTableId",
 		val,
 	)
 }
@@ -830,6 +867,30 @@ func (d *jsiiProxy_DataAzurermStorageTableEntity) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermStorageTableEntity) ResetStorageAccountName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStorageAccountName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermStorageTableEntity) ResetStorageTableId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStorageTableId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAzurermStorageTableEntity) ResetTableName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTableName",
 		nil, // no parameters
 	)
 }

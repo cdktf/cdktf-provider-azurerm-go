@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition}.
 type DevCenterDevBoxDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_DevCenterDevBoxDefinition) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition} Resource.
 func NewDevCenterDevBoxDefinition(scope constructs.Construct, id *string, config *DevCenterDevBoxDefinitionConfig) DevCenterDevBoxDefinition {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewDevCenterDevBoxDefinition(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/dev_center_dev_box_definition azurerm_dev_center_dev_box_definition} Resource.
 func NewDevCenterDevBoxDefinition_Override(d DevCenterDevBoxDefinition, scope constructs.Construct, id *string, config *DevCenterDevBoxDefinitionConfig) {
 	_init_.Initialize()
 

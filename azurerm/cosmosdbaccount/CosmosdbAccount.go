@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account}.
 type CosmosdbAccount interface {
 	cdktf.TerraformResource
 	AccessKeyMetadataWritesEnabled() interface{}
@@ -28,6 +28,9 @@ type CosmosdbAccount interface {
 	AutomaticFailoverEnabledInput() interface{}
 	Backup() CosmosdbAccountBackupOutputReference
 	BackupInput() *CosmosdbAccountBackup
+	BurstCapacityEnabled() interface{}
+	SetBurstCapacityEnabled(val interface{})
+	BurstCapacityEnabledInput() interface{}
 	Capabilities() CosmosdbAccountCapabilitiesList
 	CapabilitiesInput() interface{}
 	Capacity() CosmosdbAccountCapacityOutputReference
@@ -239,6 +242,7 @@ type CosmosdbAccount interface {
 	ResetAnalyticalStorageEnabled()
 	ResetAutomaticFailoverEnabled()
 	ResetBackup()
+	ResetBurstCapacityEnabled()
 	ResetCapabilities()
 	ResetCapacity()
 	ResetCorsRule()
@@ -382,6 +386,26 @@ func (j *jsiiProxy_CosmosdbAccount) BackupInput() *CosmosdbAccountBackup {
 	_jsii_.Get(
 		j,
 		"backupInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccount) BurstCapacityEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"burstCapacityEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccount) BurstCapacityEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"burstCapacityEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1368,7 +1392,7 @@ func (j *jsiiProxy_CosmosdbAccount) WriteEndpoints() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
 func NewCosmosdbAccount(scope constructs.Construct, id *string, config *CosmosdbAccountConfig) CosmosdbAccount {
 	_init_.Initialize()
 
@@ -1386,7 +1410,7 @@ func NewCosmosdbAccount(scope constructs.Construct, id *string, config *Cosmosdb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.115.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
 func NewCosmosdbAccount_Override(c CosmosdbAccount, scope constructs.Construct, id *string, config *CosmosdbAccountConfig) {
 	_init_.Initialize()
 
@@ -1426,6 +1450,17 @@ func (j *jsiiProxy_CosmosdbAccount)SetAutomaticFailoverEnabled(val interface{}) 
 	_jsii_.Set(
 		j,
 		"automaticFailoverEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CosmosdbAccount)SetBurstCapacityEnabled(val interface{}) {
+	if err := j.validateSetBurstCapacityEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"burstCapacityEnabled",
 		val,
 	)
 }
@@ -2272,6 +2307,14 @@ func (c *jsiiProxy_CosmosdbAccount) ResetBackup() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetBackup",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CosmosdbAccount) ResetBurstCapacityEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBurstCapacityEnabled",
 		nil, // no parameters
 	)
 }
