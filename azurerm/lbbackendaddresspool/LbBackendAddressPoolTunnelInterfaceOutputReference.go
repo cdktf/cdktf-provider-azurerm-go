@@ -5,9 +5,9 @@ package lbbackendaddresspool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/lbbackendaddresspool/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/lbbackendaddresspool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

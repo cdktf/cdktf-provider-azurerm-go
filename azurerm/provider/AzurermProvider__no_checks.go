@@ -39,7 +39,7 @@ func (j *jsiiProxy_AzurermProvider) validateSetDisableTerraformPartnerIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_AzurermProvider) validateSetFeaturesParameters(val *AzurermProviderFeatures) error {
+func (j *jsiiProxy_AzurermProvider) validateSetFeaturesParameters(val interface{}) error {
 	return nil
 }
 

@@ -207,37 +207,6 @@ func (s *jsiiProxy_SynapseWorkspace) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (s *jsiiProxy_SynapseWorkspace) validatePutAadAdminParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*SynapseWorkspaceAadAdmin:
-		value := value.(*[]*SynapseWorkspaceAadAdmin)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*SynapseWorkspaceAadAdmin:
-		value_ := value.([]*SynapseWorkspaceAadAdmin)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SynapseWorkspaceAadAdmin; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func (s *jsiiProxy_SynapseWorkspace) validatePutAzureDevopsRepoParameters(value *SynapseWorkspaceAzureDevopsRepo) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -277,37 +246,6 @@ func (s *jsiiProxy_SynapseWorkspace) validatePutIdentityParameters(value *Synaps
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
-	}
-
-	return nil
-}
-
-func (s *jsiiProxy_SynapseWorkspace) validatePutSqlAadAdminParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*SynapseWorkspaceSqlAadAdmin:
-		value := value.(*[]*SynapseWorkspaceSqlAadAdmin)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*SynapseWorkspaceSqlAadAdmin:
-		value_ := value.([]*SynapseWorkspaceSqlAadAdmin)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SynapseWorkspaceSqlAadAdmin; received %#v (a %T)", value, value)
-		}
 	}
 
 	return nil

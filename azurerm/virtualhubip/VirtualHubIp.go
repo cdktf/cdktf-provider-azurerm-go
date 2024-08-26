@@ -5,14 +5,14 @@ package virtualhubip
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/virtualhubip/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/virtualhubip/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_hub_ip azurerm_virtual_hub_ip}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_hub_ip azurerm_virtual_hub_ip}.
 type VirtualHubIp interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -474,7 +474,7 @@ func (j *jsiiProxy_VirtualHubIp) VirtualHubIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_hub_ip azurerm_virtual_hub_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_hub_ip azurerm_virtual_hub_ip} Resource.
 func NewVirtualHubIp(scope constructs.Construct, id *string, config *VirtualHubIpConfig) VirtualHubIp {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewVirtualHubIp(scope constructs.Construct, id *string, config *VirtualHubI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_hub_ip azurerm_virtual_hub_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_hub_ip azurerm_virtual_hub_ip} Resource.
 func NewVirtualHubIp_Override(v VirtualHubIp, scope constructs.Construct, id *string, config *VirtualHubIpConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package virtualhubconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/virtualhubconnection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/virtualhubconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_hub_connection azurerm_virtual_hub_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_hub_connection azurerm_virtual_hub_connection}.
 type VirtualHubConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_VirtualHubConnection) VirtualHubIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_hub_connection azurerm_virtual_hub_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_hub_connection azurerm_virtual_hub_connection} Resource.
 func NewVirtualHubConnection(scope constructs.Construct, id *string, config *VirtualHubConnectionConfig) VirtualHubConnection {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewVirtualHubConnection(scope constructs.Construct, id *string, config *Vir
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_hub_connection azurerm_virtual_hub_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_hub_connection azurerm_virtual_hub_connection} Resource.
 func NewVirtualHubConnection_Override(v VirtualHubConnection, scope constructs.Construct, id *string, config *VirtualHubConnectionConfig) {
 	_init_.Initialize()
 

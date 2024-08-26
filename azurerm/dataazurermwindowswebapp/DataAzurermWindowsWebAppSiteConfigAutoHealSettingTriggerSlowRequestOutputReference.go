@@ -5,9 +5,9 @@ package dataazurermwindowswebapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermwindowswebapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermwindowswebapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -34,7 +34,6 @@ type DataAzurermWindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputRe
 	InternalValue() *DataAzurermWindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequest
 	SetInternalValue(val *DataAzurermWindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequest)
 	Interval() *string
-	Path() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -148,16 +147,6 @@ func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigAutoHealSettingTriggerSlowR
 	_jsii_.Get(
 		j,
 		"interval",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference) Path() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"path",
 		&returns,
 	)
 	return returns

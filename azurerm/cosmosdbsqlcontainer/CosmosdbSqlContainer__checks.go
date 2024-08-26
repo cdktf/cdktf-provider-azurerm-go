@@ -476,14 +476,6 @@ func (j *jsiiProxy_CosmosdbSqlContainer) validateSetPartitionKeyKindParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_CosmosdbSqlContainer) validateSetPartitionKeyPathParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_CosmosdbSqlContainer) validateSetPartitionKeyPathsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

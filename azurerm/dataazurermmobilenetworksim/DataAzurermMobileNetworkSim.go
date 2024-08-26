@@ -5,14 +5,14 @@ package dataazurermmobilenetworksim
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermmobilenetworksim/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermmobilenetworksim/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/mobile_network_sim azurerm_mobile_network_sim}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/mobile_network_sim azurerm_mobile_network_sim}.
 type DataAzurermMobileNetworkSim interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -423,7 +423,7 @@ func (j *jsiiProxy_DataAzurermMobileNetworkSim) VendorName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/mobile_network_sim azurerm_mobile_network_sim} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/mobile_network_sim azurerm_mobile_network_sim} Data Source.
 func NewDataAzurermMobileNetworkSim(scope constructs.Construct, id *string, config *DataAzurermMobileNetworkSimConfig) DataAzurermMobileNetworkSim {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewDataAzurermMobileNetworkSim(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/mobile_network_sim azurerm_mobile_network_sim} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/mobile_network_sim azurerm_mobile_network_sim} Data Source.
 func NewDataAzurermMobileNetworkSim_Override(d DataAzurermMobileNetworkSim, scope constructs.Construct, id *string, config *DataAzurermMobileNetworkSimConfig) {
 	_init_.Initialize()
 

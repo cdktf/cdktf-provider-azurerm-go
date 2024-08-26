@@ -5,14 +5,14 @@ package monitoralertprocessingrulesuppression
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/monitoralertprocessingrulesuppression/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/monitoralertprocessingrulesuppression/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/monitor_alert_processing_rule_suppression azurerm_monitor_alert_processing_rule_suppression}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/monitor_alert_processing_rule_suppression azurerm_monitor_alert_processing_rule_suppression}.
 type MonitorAlertProcessingRuleSuppression interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -523,7 +523,7 @@ func (j *jsiiProxy_MonitorAlertProcessingRuleSuppression) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/monitor_alert_processing_rule_suppression azurerm_monitor_alert_processing_rule_suppression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/monitor_alert_processing_rule_suppression azurerm_monitor_alert_processing_rule_suppression} Resource.
 func NewMonitorAlertProcessingRuleSuppression(scope constructs.Construct, id *string, config *MonitorAlertProcessingRuleSuppressionConfig) MonitorAlertProcessingRuleSuppression {
 	_init_.Initialize()
 
@@ -541,7 +541,7 @@ func NewMonitorAlertProcessingRuleSuppression(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/monitor_alert_processing_rule_suppression azurerm_monitor_alert_processing_rule_suppression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/monitor_alert_processing_rule_suppression azurerm_monitor_alert_processing_rule_suppression} Resource.
 func NewMonitorAlertProcessingRuleSuppression_Override(m MonitorAlertProcessingRuleSuppression, scope constructs.Construct, id *string, config *MonitorAlertProcessingRuleSuppressionConfig) {
 	_init_.Initialize()
 

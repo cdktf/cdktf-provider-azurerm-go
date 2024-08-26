@@ -420,7 +420,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "eventHubId", GoGetter: "EventHubId"},
 			_jsii_.MemberProperty{JsiiProperty: "eventHubName", GoGetter: "EventHubName"},
 			_jsii_.MemberProperty{JsiiProperty: "eventHubNamespace", GoGetter: "EventHubNamespace"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

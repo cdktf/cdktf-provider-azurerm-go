@@ -5,14 +5,14 @@ package automationconnectionserviceprincipal
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/automationconnectionserviceprincipal/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/automationconnectionserviceprincipal/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_connection_service_principal azurerm_automation_connection_service_principal}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_connection_service_principal azurerm_automation_connection_service_principal}.
 type AutomationConnectionServicePrincipal interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -519,7 +519,7 @@ func (j *jsiiProxy_AutomationConnectionServicePrincipal) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_connection_service_principal azurerm_automation_connection_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_connection_service_principal azurerm_automation_connection_service_principal} Resource.
 func NewAutomationConnectionServicePrincipal(scope constructs.Construct, id *string, config *AutomationConnectionServicePrincipalConfig) AutomationConnectionServicePrincipal {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewAutomationConnectionServicePrincipal(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_connection_service_principal azurerm_automation_connection_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_connection_service_principal azurerm_automation_connection_service_principal} Resource.
 func NewAutomationConnectionServicePrincipal_Override(a AutomationConnectionServicePrincipal, scope constructs.Construct, id *string, config *AutomationConnectionServicePrincipalConfig) {
 	_init_.Initialize()
 

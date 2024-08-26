@@ -5,14 +5,14 @@ package diskencryptionset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/diskencryptionset/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/diskencryptionset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/disk_encryption_set azurerm_disk_encryption_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/disk_encryption_set azurerm_disk_encryption_set}.
 type DiskEncryptionSet interface {
 	cdktf.TerraformResource
 	AutoKeyRotationEnabled() interface{}
@@ -581,7 +581,7 @@ func (j *jsiiProxy_DiskEncryptionSet) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/disk_encryption_set azurerm_disk_encryption_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/disk_encryption_set azurerm_disk_encryption_set} Resource.
 func NewDiskEncryptionSet(scope constructs.Construct, id *string, config *DiskEncryptionSetConfig) DiskEncryptionSet {
 	_init_.Initialize()
 
@@ -599,7 +599,7 @@ func NewDiskEncryptionSet(scope constructs.Construct, id *string, config *DiskEn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/disk_encryption_set azurerm_disk_encryption_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/disk_encryption_set azurerm_disk_encryption_set} Resource.
 func NewDiskEncryptionSet_Override(d DiskEncryptionSet, scope constructs.Construct, id *string, config *DiskEncryptionSetConfig) {
 	_init_.Initialize()
 

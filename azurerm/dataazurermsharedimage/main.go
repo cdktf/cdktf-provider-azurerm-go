@@ -14,9 +14,12 @@ func init() {
 		"@cdktf/provider-azurerm.dataAzurermSharedImage.DataAzurermSharedImage",
 		reflect.TypeOf((*DataAzurermSharedImage)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "acceleratedNetworkSupportEnabled", GoGetter: "AcceleratedNetworkSupportEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "architecture", GoGetter: "Architecture"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "confidentialVmEnabled", GoGetter: "ConfidentialVmEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "confidentialVmSupported", GoGetter: "ConfidentialVmSupported"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
@@ -36,6 +39,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hibernationEnabled", GoGetter: "HibernationEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "hyperVGeneration", GoGetter: "HyperVGeneration"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "identifier", GoGetter: "Identifier"},
@@ -72,6 +76,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "trustedLaunchEnabled", GoGetter: "TrustedLaunchEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "trustedLaunchSupported", GoGetter: "TrustedLaunchSupported"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAzurermSharedImage{}

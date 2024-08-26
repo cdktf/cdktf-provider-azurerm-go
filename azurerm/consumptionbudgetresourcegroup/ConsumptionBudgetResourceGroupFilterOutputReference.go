@@ -5,9 +5,9 @@ package consumptionbudgetresourcegroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/consumptionbudgetresourcegroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/consumptionbudgetresourcegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -34,8 +34,6 @@ type ConsumptionBudgetResourceGroupFilterOutputReference interface {
 	Fqn() *string
 	InternalValue() *ConsumptionBudgetResourceGroupFilter
 	SetInternalValue(val *ConsumptionBudgetResourceGroupFilter)
-	Not() ConsumptionBudgetResourceGroupFilterNotOutputReference
-	NotInput() *ConsumptionBudgetResourceGroupFilterNot
 	Tag() ConsumptionBudgetResourceGroupFilterTagList
 	TagInput() interface{}
 	// Experimental.
@@ -71,10 +69,8 @@ type ConsumptionBudgetResourceGroupFilterOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDimension(value interface{})
-	PutNot(value *ConsumptionBudgetResourceGroupFilterNot)
 	PutTag(value interface{})
 	ResetDimension()
-	ResetNot()
 	ResetTag()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -156,26 +152,6 @@ func (j *jsiiProxy_ConsumptionBudgetResourceGroupFilterOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ConsumptionBudgetResourceGroupFilterOutputReference) Not() ConsumptionBudgetResourceGroupFilterNotOutputReference {
-	var returns ConsumptionBudgetResourceGroupFilterNotOutputReference
-	_jsii_.Get(
-		j,
-		"not",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ConsumptionBudgetResourceGroupFilterOutputReference) NotInput() *ConsumptionBudgetResourceGroupFilterNot {
-	var returns *ConsumptionBudgetResourceGroupFilterNot
-	_jsii_.Get(
-		j,
-		"notInput",
 		&returns,
 	)
 	return returns
@@ -501,17 +477,6 @@ func (c *jsiiProxy_ConsumptionBudgetResourceGroupFilterOutputReference) PutDimen
 	)
 }
 
-func (c *jsiiProxy_ConsumptionBudgetResourceGroupFilterOutputReference) PutNot(value *ConsumptionBudgetResourceGroupFilterNot) {
-	if err := c.validatePutNotParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		c,
-		"putNot",
-		[]interface{}{value},
-	)
-}
-
 func (c *jsiiProxy_ConsumptionBudgetResourceGroupFilterOutputReference) PutTag(value interface{}) {
 	if err := c.validatePutTagParameters(value); err != nil {
 		panic(err)
@@ -527,14 +492,6 @@ func (c *jsiiProxy_ConsumptionBudgetResourceGroupFilterOutputReference) ResetDim
 	_jsii_.InvokeVoid(
 		c,
 		"resetDimension",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ConsumptionBudgetResourceGroupFilterOutputReference) ResetNot() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetNot",
 		nil, // no parameters
 	)
 }

@@ -79,7 +79,7 @@ func (c *jsiiProxy_CognitiveDeployment) validatePutModelParameters(value *Cognit
 	return nil
 }
 
-func (c *jsiiProxy_CognitiveDeployment) validatePutScaleParameters(value *CognitiveDeploymentScale) error {
+func (c *jsiiProxy_CognitiveDeployment) validatePutSkuParameters(value *CognitiveDeploymentSku) error {
 	return nil
 }
 

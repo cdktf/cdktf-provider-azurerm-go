@@ -59,7 +59,7 @@ func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference) validateSetInternalValueParameters(val *PrivateDnsResolverInboundEndpointIpConfigurations) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputRefere
 	return nil
 }
 
-func validateNewPrivateDnsResolverInboundEndpointIpConfigurationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPrivateDnsResolverInboundEndpointIpConfigurationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

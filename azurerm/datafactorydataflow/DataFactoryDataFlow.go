@@ -5,14 +5,14 @@ package datafactorydataflow
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/datafactorydataflow/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/datafactorydataflow/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/data_factory_data_flow azurerm_data_factory_data_flow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/data_factory_data_flow azurerm_data_factory_data_flow}.
 type DataFactoryDataFlow interface {
 	cdktf.TerraformResource
 	Annotations() *[]*string
@@ -570,7 +570,7 @@ func (j *jsiiProxy_DataFactoryDataFlow) TransformationInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/data_factory_data_flow azurerm_data_factory_data_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/data_factory_data_flow azurerm_data_factory_data_flow} Resource.
 func NewDataFactoryDataFlow(scope constructs.Construct, id *string, config *DataFactoryDataFlowConfig) DataFactoryDataFlow {
 	_init_.Initialize()
 
@@ -588,7 +588,7 @@ func NewDataFactoryDataFlow(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/data_factory_data_flow azurerm_data_factory_data_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/data_factory_data_flow azurerm_data_factory_data_flow} Resource.
 func NewDataFactoryDataFlow_Override(d DataFactoryDataFlow, scope constructs.Construct, id *string, config *DataFactoryDataFlowConfig) {
 	_init_.Initialize()
 

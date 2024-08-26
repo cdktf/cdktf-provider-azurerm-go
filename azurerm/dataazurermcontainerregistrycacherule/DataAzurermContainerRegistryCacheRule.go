@@ -5,14 +5,14 @@ package dataazurermcontainerregistrycacherule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermcontainerregistrycacherule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermcontainerregistrycacherule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/container_registry_cache_rule azurerm_container_registry_cache_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/container_registry_cache_rule azurerm_container_registry_cache_rule}.
 type DataAzurermContainerRegistryCacheRule interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DataAzurermContainerRegistryCacheRule) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/container_registry_cache_rule azurerm_container_registry_cache_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/container_registry_cache_rule azurerm_container_registry_cache_rule} Data Source.
 func NewDataAzurermContainerRegistryCacheRule(scope constructs.Construct, id *string, config *DataAzurermContainerRegistryCacheRuleConfig) DataAzurermContainerRegistryCacheRule {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewDataAzurermContainerRegistryCacheRule(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/container_registry_cache_rule azurerm_container_registry_cache_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/container_registry_cache_rule azurerm_container_registry_cache_rule} Data Source.
 func NewDataAzurermContainerRegistryCacheRule_Override(d DataAzurermContainerRegistryCacheRule, scope constructs.Construct, id *string, config *DataAzurermContainerRegistryCacheRuleConfig) {
 	_init_.Initialize()
 

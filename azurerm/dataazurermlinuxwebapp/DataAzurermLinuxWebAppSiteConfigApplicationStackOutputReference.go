@@ -5,9 +5,9 @@ package dataazurermlinuxwebapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermlinuxwebapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermlinuxwebapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -28,9 +28,7 @@ type DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DockerImage() *string
 	DockerImageName() *string
-	DockerImageTag() *string
 	DockerRegistryPassword() *string
 	DockerRegistryUrl() *string
 	DockerRegistryUsername() *string
@@ -124,31 +122,11 @@ func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReference) DockerImage() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dockerImage",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReference) DockerImageName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"dockerImageName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReference) DockerImageTag() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dockerImageTag",
 		&returns,
 	)
 	return returns

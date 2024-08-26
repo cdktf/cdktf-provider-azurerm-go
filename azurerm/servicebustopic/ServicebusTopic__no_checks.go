@@ -119,18 +119,6 @@ func (j *jsiiProxy_ServicebusTopic) validateSetDuplicateDetectionHistoryTimeWind
 	return nil
 }
 
-func (j *jsiiProxy_ServicebusTopic) validateSetEnableBatchedOperationsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ServicebusTopic) validateSetEnableExpressParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ServicebusTopic) validateSetEnablePartitioningParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ServicebusTopic) validateSetExpressEnabledParameters(val interface{}) error {
 	return nil
 }

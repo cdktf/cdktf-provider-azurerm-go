@@ -5,14 +5,14 @@ package networksecuritygroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/networksecuritygroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/networksecuritygroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/network_security_group azurerm_network_security_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/network_security_group azurerm_network_security_group}.
 type NetworkSecurityGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_NetworkSecurityGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/network_security_group azurerm_network_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/network_security_group azurerm_network_security_group} Resource.
 func NewNetworkSecurityGroup(scope constructs.Construct, id *string, config *NetworkSecurityGroupConfig) NetworkSecurityGroup {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewNetworkSecurityGroup(scope constructs.Construct, id *string, config *Net
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/network_security_group azurerm_network_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/network_security_group azurerm_network_security_group} Resource.
 func NewNetworkSecurityGroup_Override(n NetworkSecurityGroup, scope constructs.Construct, id *string, config *NetworkSecurityGroupConfig) {
 	_init_.Initialize()
 

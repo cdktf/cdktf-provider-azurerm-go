@@ -5,14 +5,14 @@ package servicebusnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/servicebusnamespace/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/servicebusnamespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/servicebus_namespace azurerm_servicebus_namespace}.
 type ServicebusNamespace interface {
 	cdktf.TerraformResource
 	Capacity() *float64
@@ -107,9 +107,6 @@ type ServicebusNamespace interface {
 	TerraformResourceType() *string
 	Timeouts() ServicebusNamespaceTimeoutsOutputReference
 	TimeoutsInput() interface{}
-	ZoneRedundant() interface{}
-	SetZoneRedundant(val interface{})
-	ZoneRedundantInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -171,7 +168,6 @@ type ServicebusNamespace interface {
 	ResetPublicNetworkAccessEnabled()
 	ResetTags()
 	ResetTimeouts()
-	ResetZoneRedundant()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -700,28 +696,8 @@ func (j *jsiiProxy_ServicebusNamespace) TimeoutsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServicebusNamespace) ZoneRedundant() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"zoneRedundant",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_ServicebusNamespace) ZoneRedundantInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"zoneRedundantInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/servicebus_namespace azurerm_servicebus_namespace} Resource.
 func NewServicebusNamespace(scope constructs.Construct, id *string, config *ServicebusNamespaceConfig) ServicebusNamespace {
 	_init_.Initialize()
 
@@ -739,7 +715,7 @@ func NewServicebusNamespace(scope constructs.Construct, id *string, config *Serv
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/servicebus_namespace azurerm_servicebus_namespace} Resource.
 func NewServicebusNamespace_Override(s ServicebusNamespace, scope constructs.Construct, id *string, config *ServicebusNamespaceConfig) {
 	_init_.Initialize()
 
@@ -935,17 +911,6 @@ func (j *jsiiProxy_ServicebusNamespace)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ServicebusNamespace)SetZoneRedundant(val interface{}) {
-	if err := j.validateSetZoneRedundantParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"zoneRedundant",
 		val,
 	)
 }
@@ -1439,14 +1404,6 @@ func (s *jsiiProxy_ServicebusNamespace) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTimeouts",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_ServicebusNamespace) ResetZoneRedundant() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetZoneRedundant",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package nginxcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/nginxcertificate/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/nginxcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/nginx_certificate azurerm_nginx_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/nginx_certificate azurerm_nginx_certificate}.
 type NginxCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -449,7 +449,7 @@ func (j *jsiiProxy_NginxCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/nginx_certificate azurerm_nginx_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/nginx_certificate azurerm_nginx_certificate} Resource.
 func NewNginxCertificate(scope constructs.Construct, id *string, config *NginxCertificateConfig) NginxCertificate {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewNginxCertificate(scope constructs.Construct, id *string, config *NginxCe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/nginx_certificate azurerm_nginx_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/nginx_certificate azurerm_nginx_certificate} Resource.
 func NewNginxCertificate_Override(n NginxCertificate, scope constructs.Construct, id *string, config *NginxCertificateConfig) {
 	_init_.Initialize()
 

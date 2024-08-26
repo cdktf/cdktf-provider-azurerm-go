@@ -5,9 +5,9 @@ package dataazurermwindowswebapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermwindowswebapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermwindowswebapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -18,7 +18,6 @@ type DataAzurermWindowsWebAppSiteConfigOutputReference interface {
 	ApiManagementApiId() *string
 	AppCommandLine() *string
 	ApplicationStack() DataAzurermWindowsWebAppSiteConfigApplicationStackList
-	AutoHealEnabled() cdktf.IResolvable
 	AutoHealSetting() DataAzurermWindowsWebAppSiteConfigAutoHealSettingList
 	// the index of the complex object in a list.
 	// Experimental.
@@ -160,16 +159,6 @@ func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigOutputReference) Applicatio
 	_jsii_.Get(
 		j,
 		"applicationStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigOutputReference) AutoHealEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"autoHealEnabled",
 		&returns,
 	)
 	return returns

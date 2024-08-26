@@ -5,14 +5,14 @@ package datafactorylinkedservicesynapse
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/datafactorylinkedservicesynapse/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/datafactorylinkedservicesynapse/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/data_factory_linked_service_synapse azurerm_data_factory_linked_service_synapse}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/data_factory_linked_service_synapse azurerm_data_factory_linked_service_synapse}.
 type DataFactoryLinkedServiceSynapse interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -547,7 +547,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSynapse) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/data_factory_linked_service_synapse azurerm_data_factory_linked_service_synapse} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/data_factory_linked_service_synapse azurerm_data_factory_linked_service_synapse} Resource.
 func NewDataFactoryLinkedServiceSynapse(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceSynapseConfig) DataFactoryLinkedServiceSynapse {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewDataFactoryLinkedServiceSynapse(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/data_factory_linked_service_synapse azurerm_data_factory_linked_service_synapse} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/data_factory_linked_service_synapse azurerm_data_factory_linked_service_synapse} Resource.
 func NewDataFactoryLinkedServiceSynapse_Override(d DataFactoryLinkedServiceSynapse, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceSynapseConfig) {
 	_init_.Initialize()
 

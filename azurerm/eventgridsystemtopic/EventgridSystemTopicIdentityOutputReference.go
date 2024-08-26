@@ -5,9 +5,9 @@ package eventgridsystemtopic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/eventgridsystemtopic/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/eventgridsystemtopic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

@@ -5,9 +5,9 @@ package webapplicationfirewallpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/webapplicationfirewallpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/webapplicationfirewallpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -52,6 +52,9 @@ type WebApplicationFirewallPolicyPolicySettingsOutputReference interface {
 	RequestBodyCheck() interface{}
 	SetRequestBodyCheck(val interface{})
 	RequestBodyCheckInput() interface{}
+	RequestBodyEnforcement() interface{}
+	SetRequestBodyEnforcement(val interface{})
+	RequestBodyEnforcementInput() interface{}
 	RequestBodyInspectLimitInKb() *float64
 	SetRequestBodyInspectLimitInKb(val *float64)
 	RequestBodyInspectLimitInKbInput() *float64
@@ -95,6 +98,7 @@ type WebApplicationFirewallPolicyPolicySettingsOutputReference interface {
 	ResetMaxRequestBodySizeInKb()
 	ResetMode()
 	ResetRequestBodyCheck()
+	ResetRequestBodyEnforcement()
 	ResetRequestBodyInspectLimitInKb()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -301,6 +305,26 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) Re
 	return returns
 }
 
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) RequestBodyEnforcement() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requestBodyEnforcement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) RequestBodyEnforcementInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requestBodyEnforcementInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) RequestBodyInspectLimitInKb() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -464,6 +488,17 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference)Set
 	_jsii_.Set(
 		j,
 		"requestBodyCheck",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference)SetRequestBodyEnforcement(val interface{}) {
+	if err := j.validateSetRequestBodyEnforcementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestBodyEnforcement",
 		val,
 	)
 }
@@ -750,6 +785,14 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) Re
 	_jsii_.InvokeVoid(
 		w,
 		"resetRequestBodyCheck",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) ResetRequestBodyEnforcement() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRequestBodyEnforcement",
 		nil, // no parameters
 	)
 }

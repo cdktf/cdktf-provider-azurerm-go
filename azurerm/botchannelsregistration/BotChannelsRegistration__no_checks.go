@@ -139,10 +139,6 @@ func (j *jsiiProxy_BotChannelsRegistration) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_BotChannelsRegistration) validateSetIsolatedNetworkEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_BotChannelsRegistration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

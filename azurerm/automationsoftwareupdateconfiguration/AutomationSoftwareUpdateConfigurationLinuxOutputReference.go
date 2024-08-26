@@ -5,17 +5,14 @@ package automationsoftwareupdateconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/automationsoftwareupdateconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/automationsoftwareupdateconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type AutomationSoftwareUpdateConfigurationLinuxOutputReference interface {
 	cdktf.ComplexObject
-	ClassificationIncluded() *string
-	SetClassificationIncluded(val *string)
-	ClassificationIncludedInput() *string
 	ClassificationsIncluded() *[]*string
 	SetClassificationsIncluded(val *[]*string)
 	ClassificationsIncludedInput() *[]*string
@@ -79,8 +76,6 @@ type AutomationSoftwareUpdateConfigurationLinuxOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetClassificationIncluded()
-	ResetClassificationsIncluded()
 	ResetExcludedPackages()
 	ResetIncludedPackages()
 	ResetReboot()
@@ -97,26 +92,6 @@ type AutomationSoftwareUpdateConfigurationLinuxOutputReference interface {
 // The jsii proxy struct for AutomationSoftwareUpdateConfigurationLinuxOutputReference
 type jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) ClassificationIncluded() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"classificationIncluded",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) ClassificationIncludedInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"classificationIncludedInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) ClassificationsIncluded() *[]*string {
@@ -294,17 +269,6 @@ func NewAutomationSoftwareUpdateConfigurationLinuxOutputReference_Override(a Aut
 		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationLinuxOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
-	)
-}
-
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference)SetClassificationIncluded(val *string) {
-	if err := j.validateSetClassificationIncludedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"classificationIncluded",
-		val,
 	)
 }
 
@@ -591,22 +555,6 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) In
 	)
 
 	return returns
-}
-
-func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) ResetClassificationIncluded() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetClassificationIncluded",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) ResetClassificationsIncluded() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetClassificationsIncluded",
-		nil, // no parameters
-	)
 }
 
 func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) ResetExcludedPackages() {

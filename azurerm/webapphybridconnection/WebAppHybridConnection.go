@@ -5,14 +5,14 @@ package webapphybridconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/webapphybridconnection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/webapphybridconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/web_app_hybrid_connection azurerm_web_app_hybrid_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/web_app_hybrid_connection azurerm_web_app_hybrid_connection}.
 type WebAppHybridConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -505,7 +505,7 @@ func (j *jsiiProxy_WebAppHybridConnection) WebAppIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/web_app_hybrid_connection azurerm_web_app_hybrid_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/web_app_hybrid_connection azurerm_web_app_hybrid_connection} Resource.
 func NewWebAppHybridConnection(scope constructs.Construct, id *string, config *WebAppHybridConnectionConfig) WebAppHybridConnection {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewWebAppHybridConnection(scope constructs.Construct, id *string, config *W
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/web_app_hybrid_connection azurerm_web_app_hybrid_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/web_app_hybrid_connection azurerm_web_app_hybrid_connection} Resource.
 func NewWebAppHybridConnection_Override(w WebAppHybridConnection, scope constructs.Construct, id *string, config *WebAppHybridConnectionConfig) {
 	_init_.Initialize()
 

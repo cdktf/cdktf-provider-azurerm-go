@@ -5,14 +5,14 @@ package dataazurermdatafactorytriggerschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermdatafactorytriggerschedule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermdatafactorytriggerschedule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule}.
 type DataAzurermDataFactoryTriggerSchedule interface {
 	cdktf.TerraformDataSource
 	Activated() cdktf.IResolvable
@@ -445,7 +445,7 @@ func (j *jsiiProxy_DataAzurermDataFactoryTriggerSchedule) TimeZone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule} Data Source.
 func NewDataAzurermDataFactoryTriggerSchedule(scope constructs.Construct, id *string, config *DataAzurermDataFactoryTriggerScheduleConfig) DataAzurermDataFactoryTriggerSchedule {
 	_init_.Initialize()
 
@@ -463,7 +463,7 @@ func NewDataAzurermDataFactoryTriggerSchedule(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule} Data Source.
 func NewDataAzurermDataFactoryTriggerSchedule_Override(d DataAzurermDataFactoryTriggerSchedule, scope constructs.Construct, id *string, config *DataAzurermDataFactoryTriggerScheduleConfig) {
 	_init_.Initialize()
 

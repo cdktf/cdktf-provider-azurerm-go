@@ -5,14 +5,14 @@ package automationaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/automationaccount/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/automationaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_account azurerm_automation_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_account azurerm_automation_account}.
 type AutomationAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -601,7 +601,7 @@ func (j *jsiiProxy_AutomationAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_account azurerm_automation_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_account azurerm_automation_account} Resource.
 func NewAutomationAccount(scope constructs.Construct, id *string, config *AutomationAccountConfig) AutomationAccount {
 	_init_.Initialize()
 
@@ -619,7 +619,7 @@ func NewAutomationAccount(scope constructs.Construct, id *string, config *Automa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_account azurerm_automation_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_account azurerm_automation_account} Resource.
 func NewAutomationAccount_Override(a AutomationAccount, scope constructs.Construct, id *string, config *AutomationAccountConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package siterecoveryreplicationrecoveryplan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/siterecoveryreplicationrecoveryplan/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/siterecoveryreplicationrecoveryplan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan}.
 type SiteRecoveryReplicationRecoveryPlan interface {
 	cdktf.TerraformResource
 	AzureToAzureSettings() SiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsOutputReference
@@ -67,8 +67,6 @@ type SiteRecoveryReplicationRecoveryPlan interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	RecoveryGroup() SiteRecoveryReplicationRecoveryPlanRecoveryGroupList
-	RecoveryGroupInput() interface{}
 	RecoveryVaultId() *string
 	SetRecoveryVaultId(val *string)
 	RecoveryVaultIdInput() *string
@@ -134,18 +132,13 @@ type SiteRecoveryReplicationRecoveryPlan interface {
 	PutAzureToAzureSettings(value *SiteRecoveryReplicationRecoveryPlanAzureToAzureSettings)
 	PutBootRecoveryGroup(value interface{})
 	PutFailoverRecoveryGroup(value *SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroup)
-	PutRecoveryGroup(value interface{})
 	PutShutdownRecoveryGroup(value *SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroup)
 	PutTimeouts(value *SiteRecoveryReplicationRecoveryPlanTimeouts)
 	ResetAzureToAzureSettings()
-	ResetBootRecoveryGroup()
-	ResetFailoverRecoveryGroup()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRecoveryGroup()
-	ResetShutdownRecoveryGroup()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -395,26 +388,6 @@ func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) RawOverrides() interface
 	return returns
 }
 
-func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) RecoveryGroup() SiteRecoveryReplicationRecoveryPlanRecoveryGroupList {
-	var returns SiteRecoveryReplicationRecoveryPlanRecoveryGroupList
-	_jsii_.Get(
-		j,
-		"recoveryGroup",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) RecoveryGroupInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"recoveryGroupInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) RecoveryVaultId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -546,7 +519,7 @@ func (j *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Resource.
 func NewSiteRecoveryReplicationRecoveryPlan(scope constructs.Construct, id *string, config *SiteRecoveryReplicationRecoveryPlanConfig) SiteRecoveryReplicationRecoveryPlan {
 	_init_.Initialize()
 
@@ -564,7 +537,7 @@ func NewSiteRecoveryReplicationRecoveryPlan(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan} Resource.
 func NewSiteRecoveryReplicationRecoveryPlan_Override(s SiteRecoveryReplicationRecoveryPlan, scope constructs.Construct, id *string, config *SiteRecoveryReplicationRecoveryPlanConfig) {
 	_init_.Initialize()
 
@@ -1084,17 +1057,6 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) PutFailoverRecoveryGroup
 	)
 }
 
-func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) PutRecoveryGroup(value interface{}) {
-	if err := s.validatePutRecoveryGroupParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		s,
-		"putRecoveryGroup",
-		[]interface{}{value},
-	)
-}
-
 func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) PutShutdownRecoveryGroup(value *SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroup) {
 	if err := s.validatePutShutdownRecoveryGroupParameters(value); err != nil {
 		panic(err)
@@ -1125,22 +1087,6 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) ResetAzureToAzureSetting
 	)
 }
 
-func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) ResetBootRecoveryGroup() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetBootRecoveryGroup",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) ResetFailoverRecoveryGroup() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetFailoverRecoveryGroup",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1153,22 +1099,6 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) ResetOverrideLogicalId()
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) ResetRecoveryGroup() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetRecoveryGroup",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) ResetShutdownRecoveryGroup() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetShutdownRecoveryGroup",
 		nil, // no parameters
 	)
 }

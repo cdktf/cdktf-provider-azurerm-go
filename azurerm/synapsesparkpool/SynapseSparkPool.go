@@ -5,14 +5,14 @@ package synapsesparkpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/synapsesparkpool/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/synapsesparkpool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool}.
 type SynapseSparkPool interface {
 	cdktf.TerraformResource
 	AutoPause() SynapseSparkPoolAutoPauseOutputReference
@@ -184,7 +184,6 @@ type SynapseSparkPool interface {
 	ResetSparkConfig()
 	ResetSparkEventsFolder()
 	ResetSparkLogFolder()
-	ResetSparkVersion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_SynapseSparkPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool} Resource.
 func NewSynapseSparkPool(scope constructs.Construct, id *string, config *SynapseSparkPoolConfig) SynapseSparkPool {
 	_init_.Initialize()
 
@@ -804,7 +803,7 @@ func NewSynapseSparkPool(scope constructs.Construct, id *string, config *Synapse
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/synapse_spark_pool azurerm_synapse_spark_pool} Resource.
 func NewSynapseSparkPool_Override(s SynapseSparkPool, scope constructs.Construct, id *string, config *SynapseSparkPoolConfig) {
 	_init_.Initialize()
 
@@ -1583,14 +1582,6 @@ func (s *jsiiProxy_SynapseSparkPool) ResetSparkLogFolder() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSparkLogFolder",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SynapseSparkPool) ResetSparkVersion() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetSparkVersion",
 		nil, // no parameters
 	)
 }

@@ -135,10 +135,6 @@ func (j *jsiiProxy_ManagedApplication) validateSetNameParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_ManagedApplication) validateSetParametersParameters(val *map[string]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ManagedApplication) validateSetParameterValuesParameters(val *string) error {
 	return nil
 }

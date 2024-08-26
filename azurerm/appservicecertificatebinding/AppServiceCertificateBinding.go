@@ -5,14 +5,14 @@ package appservicecertificatebinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/appservicecertificatebinding/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/appservicecertificatebinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_service_certificate_binding azurerm_app_service_certificate_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_service_certificate_binding azurerm_app_service_certificate_binding}.
 type AppServiceCertificateBinding interface {
 	cdktf.TerraformResource
 	AppServiceName() *string
@@ -436,7 +436,7 @@ func (j *jsiiProxy_AppServiceCertificateBinding) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_service_certificate_binding azurerm_app_service_certificate_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_service_certificate_binding azurerm_app_service_certificate_binding} Resource.
 func NewAppServiceCertificateBinding(scope constructs.Construct, id *string, config *AppServiceCertificateBindingConfig) AppServiceCertificateBinding {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewAppServiceCertificateBinding(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_service_certificate_binding azurerm_app_service_certificate_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_service_certificate_binding azurerm_app_service_certificate_binding} Resource.
 func NewAppServiceCertificateBinding_Override(a AppServiceCertificateBinding, scope constructs.Construct, id *string, config *AppServiceCertificateBindingConfig) {
 	_init_.Initialize()
 

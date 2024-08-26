@@ -150,90 +150,6 @@ func init() {
 		"@cdktf/provider-azurerm.containerGroup.ContainerGroupContainer",
 		reflect.TypeOf((*ContainerGroupContainer)(nil)).Elem(),
 	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-azurerm.containerGroup.ContainerGroupContainerGpu",
-		reflect.TypeOf((*ContainerGroupContainerGpu)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-azurerm.containerGroup.ContainerGroupContainerGpuLimit",
-		reflect.TypeOf((*ContainerGroupContainerGpuLimit)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.containerGroup.ContainerGroupContainerGpuLimitOutputReference",
-		reflect.TypeOf((*ContainerGroupContainerGpuLimitOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "countInput", GoGetter: "CountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCount", GoMethod: "ResetCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSku", GoMethod: "ResetSku"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sku", GoGetter: "Sku"},
-			_jsii_.MemberProperty{JsiiProperty: "skuInput", GoGetter: "SkuInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerGroupContainerGpuLimitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.containerGroup.ContainerGroupContainerGpuOutputReference",
-		reflect.TypeOf((*ContainerGroupContainerGpuOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "countInput", GoGetter: "CountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCount", GoMethod: "ResetCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSku", GoMethod: "ResetSku"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "sku", GoGetter: "Sku"},
-			_jsii_.MemberProperty{JsiiProperty: "skuInput", GoGetter: "SkuInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ContainerGroupContainerGpuOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-azurerm.containerGroup.ContainerGroupContainerList",
 		reflect.TypeOf((*ContainerGroupContainerList)(nil)).Elem(),
@@ -410,10 +326,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "gpu", GoGetter: "Gpu"},
-			_jsii_.MemberProperty{JsiiProperty: "gpuInput", GoGetter: "GpuInput"},
-			_jsii_.MemberProperty{JsiiProperty: "gpuLimit", GoGetter: "GpuLimit"},
-			_jsii_.MemberProperty{JsiiProperty: "gpuLimitInput", GoGetter: "GpuLimitInput"},
 			_jsii_.MemberProperty{JsiiProperty: "image", GoGetter: "Image"},
 			_jsii_.MemberProperty{JsiiProperty: "imageInput", GoGetter: "ImageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
@@ -429,8 +341,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ports", GoGetter: "Ports"},
 			_jsii_.MemberProperty{JsiiProperty: "portsInput", GoGetter: "PortsInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putGpu", GoMethod: "PutGpu"},
-			_jsii_.MemberMethod{JsiiMethod: "putGpuLimit", GoMethod: "PutGpuLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "putLivenessProbe", GoMethod: "PutLivenessProbe"},
 			_jsii_.MemberMethod{JsiiMethod: "putPorts", GoMethod: "PutPorts"},
 			_jsii_.MemberMethod{JsiiMethod: "putReadinessProbe", GoMethod: "PutReadinessProbe"},
@@ -441,8 +351,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCommands", GoMethod: "ResetCommands"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCpuLimit", GoMethod: "ResetCpuLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentVariables", GoMethod: "ResetEnvironmentVariables"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGpu", GoMethod: "ResetGpu"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGpuLimit", GoMethod: "ResetGpuLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLivenessProbe", GoMethod: "ResetLivenessProbe"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMemoryLimit", GoMethod: "ResetMemoryLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPorts", GoMethod: "ResetPorts"},

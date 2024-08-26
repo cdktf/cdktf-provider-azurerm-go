@@ -5,16 +5,19 @@ package rediscache
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/rediscache/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/rediscache/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/redis_cache azurerm_redis_cache}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/redis_cache azurerm_redis_cache}.
 type RedisCache interface {
 	cdktf.TerraformResource
+	AccessKeysAuthenticationEnabled() interface{}
+	SetAccessKeysAuthenticationEnabled(val interface{})
+	AccessKeysAuthenticationEnabledInput() interface{}
 	Capacity() *float64
 	SetCapacity(val *float64)
 	CapacityInput() *float64
@@ -34,9 +37,6 @@ type RedisCache interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnableNonSslPort() interface{}
-	SetEnableNonSslPort(val interface{})
-	EnableNonSslPortInput() interface{}
 	Family() *string
 	SetFamily(val *string)
 	FamilyInput() *string
@@ -183,7 +183,7 @@ type RedisCache interface {
 	PutPatchSchedule(value interface{})
 	PutRedisConfiguration(value *RedisCacheRedisConfiguration)
 	PutTimeouts(value *RedisCacheTimeouts)
-	ResetEnableNonSslPort()
+	ResetAccessKeysAuthenticationEnabled()
 	ResetId()
 	ResetIdentity()
 	ResetMinimumTlsVersion()
@@ -220,6 +220,26 @@ type RedisCache interface {
 // The jsii proxy struct for RedisCache
 type jsiiProxy_RedisCache struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_RedisCache) AccessKeysAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessKeysAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCache) AccessKeysAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessKeysAuthenticationEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_RedisCache) Capacity() *float64 {
@@ -287,26 +307,6 @@ func (j *jsiiProxy_RedisCache) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RedisCache) EnableNonSslPort() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableNonSslPort",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RedisCache) EnableNonSslPortInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableNonSslPortInput",
 		&returns,
 	)
 	return returns
@@ -933,7 +933,7 @@ func (j *jsiiProxy_RedisCache) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/redis_cache azurerm_redis_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/redis_cache azurerm_redis_cache} Resource.
 func NewRedisCache(scope constructs.Construct, id *string, config *RedisCacheConfig) RedisCache {
 	_init_.Initialize()
 
@@ -951,7 +951,7 @@ func NewRedisCache(scope constructs.Construct, id *string, config *RedisCacheCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/redis_cache azurerm_redis_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/redis_cache azurerm_redis_cache} Resource.
 func NewRedisCache_Override(r RedisCache, scope constructs.Construct, id *string, config *RedisCacheConfig) {
 	_init_.Initialize()
 
@@ -959,6 +959,17 @@ func NewRedisCache_Override(r RedisCache, scope constructs.Construct, id *string
 		"@cdktf/provider-azurerm.redisCache.RedisCache",
 		[]interface{}{scope, id, config},
 		r,
+	)
+}
+
+func (j *jsiiProxy_RedisCache)SetAccessKeysAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetAccessKeysAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessKeysAuthenticationEnabled",
+		val,
 	)
 }
 
@@ -999,17 +1010,6 @@ func (j *jsiiProxy_RedisCache)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RedisCache)SetEnableNonSslPort(val interface{}) {
-	if err := j.validateSetEnableNonSslPortParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enableNonSslPort",
 		val,
 	)
 }
@@ -1647,10 +1647,10 @@ func (r *jsiiProxy_RedisCache) PutTimeouts(value *RedisCacheTimeouts) {
 	)
 }
 
-func (r *jsiiProxy_RedisCache) ResetEnableNonSslPort() {
+func (r *jsiiProxy_RedisCache) ResetAccessKeysAuthenticationEnabled() {
 	_jsii_.InvokeVoid(
 		r,
-		"resetEnableNonSslPort",
+		"resetAccessKeysAuthenticationEnabled",
 		nil, // no parameters
 	)
 }

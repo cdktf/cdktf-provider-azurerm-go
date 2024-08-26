@@ -5,14 +5,14 @@ package eventgridsystemtopic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/eventgridsystemtopic/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/eventgridsystemtopic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic}.
 type EventgridSystemTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -508,7 +508,7 @@ func (j *jsiiProxy_EventgridSystemTopic) TopicTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic} Resource.
 func NewEventgridSystemTopic(scope constructs.Construct, id *string, config *EventgridSystemTopicConfig) EventgridSystemTopic {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewEventgridSystemTopic(scope constructs.Construct, id *string, config *Eve
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic} Resource.
 func NewEventgridSystemTopic_Override(e EventgridSystemTopic, scope constructs.Construct, id *string, config *EventgridSystemTopicConfig) {
 	_init_.Initialize()
 

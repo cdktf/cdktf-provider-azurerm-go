@@ -5,14 +5,14 @@ package iothubdps
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/iothubdps/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/iothubdps/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/iothub_dps azurerm_iothub_dps}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/iothub_dps azurerm_iothub_dps}.
 type IothubDps interface {
 	cdktf.TerraformResource
 	AllocationPolicy() *string
@@ -603,7 +603,7 @@ func (j *jsiiProxy_IothubDps) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/iothub_dps azurerm_iothub_dps} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/iothub_dps azurerm_iothub_dps} Resource.
 func NewIothubDps(scope constructs.Construct, id *string, config *IothubDpsConfig) IothubDps {
 	_init_.Initialize()
 
@@ -621,7 +621,7 @@ func NewIothubDps(scope constructs.Construct, id *string, config *IothubDpsConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/iothub_dps azurerm_iothub_dps} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/iothub_dps azurerm_iothub_dps} Resource.
 func NewIothubDps_Override(i IothubDps, scope constructs.Construct, id *string, config *IothubDpsConfig) {
 	_init_.Initialize()
 

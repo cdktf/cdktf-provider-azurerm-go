@@ -5,14 +5,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/provider/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs azurerm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs azurerm}.
 type AzurermProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -55,9 +55,9 @@ type AzurermProvider interface {
 	Environment() *string
 	SetEnvironment(val *string)
 	EnvironmentInput() *string
-	Features() *AzurermProviderFeatures
-	SetFeatures(val *AzurermProviderFeatures)
-	FeaturesInput() *AzurermProviderFeatures
+	Features() interface{}
+	SetFeatures(val interface{})
+	FeaturesInput() interface{}
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -89,6 +89,12 @@ type AzurermProvider interface {
 	PartnerIdInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	ResourceProviderRegistrations() *string
+	SetResourceProviderRegistrations(val *string)
+	ResourceProviderRegistrationsInput() *string
+	ResourceProvidersToRegister() *[]*string
+	SetResourceProvidersToRegister(val *[]*string)
+	ResourceProvidersToRegisterInput() *[]*string
 	SkipProviderRegistration() interface{}
 	SetSkipProviderRegistration(val interface{})
 	SkipProviderRegistrationInput() interface{}
@@ -136,6 +142,7 @@ type AzurermProvider interface {
 	ResetDisableCorrelationRequestId()
 	ResetDisableTerraformPartnerId()
 	ResetEnvironment()
+	ResetFeatures()
 	ResetMetadataHost()
 	ResetMsiEndpoint()
 	ResetOidcRequestToken()
@@ -146,6 +153,8 @@ type AzurermProvider interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPartnerId()
+	ResetResourceProviderRegistrations()
+	ResetResourceProvidersToRegister()
 	ResetSkipProviderRegistration()
 	ResetStorageUseAzuread()
 	ResetSubscriptionId()
@@ -432,8 +441,8 @@ func (j *jsiiProxy_AzurermProvider) EnvironmentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AzurermProvider) Features() *AzurermProviderFeatures {
-	var returns *AzurermProviderFeatures
+func (j *jsiiProxy_AzurermProvider) Features() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"features",
@@ -442,8 +451,8 @@ func (j *jsiiProxy_AzurermProvider) Features() *AzurermProviderFeatures {
 	return returns
 }
 
-func (j *jsiiProxy_AzurermProvider) FeaturesInput() *AzurermProviderFeatures {
-	var returns *AzurermProviderFeatures
+func (j *jsiiProxy_AzurermProvider) FeaturesInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"featuresInput",
@@ -642,6 +651,46 @@ func (j *jsiiProxy_AzurermProvider) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AzurermProvider) ResourceProviderRegistrations() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceProviderRegistrations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzurermProvider) ResourceProviderRegistrationsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceProviderRegistrationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzurermProvider) ResourceProvidersToRegister() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourceProvidersToRegister",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzurermProvider) ResourceProvidersToRegisterInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourceProvidersToRegisterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AzurermProvider) SkipProviderRegistration() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -833,7 +882,7 @@ func (j *jsiiProxy_AzurermProvider) UseOidcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs azurerm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs azurerm} Resource.
 func NewAzurermProvider(scope constructs.Construct, id *string, config *AzurermProviderConfig) AzurermProvider {
 	_init_.Initialize()
 
@@ -851,7 +900,7 @@ func NewAzurermProvider(scope constructs.Construct, id *string, config *AzurermP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs azurerm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs azurerm} Resource.
 func NewAzurermProvider_Override(a AzurermProvider, scope constructs.Construct, id *string, config *AzurermProviderConfig) {
 	_init_.Initialize()
 
@@ -964,7 +1013,7 @@ func (j *jsiiProxy_AzurermProvider)SetEnvironment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzurermProvider)SetFeatures(val *AzurermProviderFeatures) {
+func (j *jsiiProxy_AzurermProvider)SetFeatures(val interface{}) {
 	if err := j.validateSetFeaturesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1027,6 +1076,22 @@ func (j *jsiiProxy_AzurermProvider)SetPartnerId(val *string) {
 	_jsii_.Set(
 		j,
 		"partnerId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzurermProvider)SetResourceProviderRegistrations(val *string) {
+	_jsii_.Set(
+		j,
+		"resourceProviderRegistrations",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzurermProvider)SetResourceProvidersToRegister(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"resourceProvidersToRegister",
 		val,
 	)
 }
@@ -1334,6 +1399,14 @@ func (a *jsiiProxy_AzurermProvider) ResetEnvironment() {
 	)
 }
 
+func (a *jsiiProxy_AzurermProvider) ResetFeatures() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFeatures",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AzurermProvider) ResetMetadataHost() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1394,6 +1467,22 @@ func (a *jsiiProxy_AzurermProvider) ResetPartnerId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPartnerId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzurermProvider) ResetResourceProviderRegistrations() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetResourceProviderRegistrations",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzurermProvider) ResetResourceProvidersToRegister() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetResourceProvidersToRegister",
 		nil, // no parameters
 	)
 }

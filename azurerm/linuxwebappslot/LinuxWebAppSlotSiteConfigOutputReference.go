@@ -5,9 +5,9 @@ package linuxwebappslot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/linuxwebappslot/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/linuxwebappslot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -27,9 +27,6 @@ type LinuxWebAppSlotSiteConfigOutputReference interface {
 	AppCommandLineInput() *string
 	ApplicationStack() LinuxWebAppSlotSiteConfigApplicationStackOutputReference
 	ApplicationStackInput() *LinuxWebAppSlotSiteConfigApplicationStack
-	AutoHealEnabled() interface{}
-	SetAutoHealEnabled(val interface{})
-	AutoHealEnabledInput() interface{}
 	AutoHealSetting() LinuxWebAppSlotSiteConfigAutoHealSettingOutputReference
 	AutoHealSettingInput() *LinuxWebAppSlotSiteConfigAutoHealSetting
 	AutoSwapSlotName() *string
@@ -168,7 +165,6 @@ type LinuxWebAppSlotSiteConfigOutputReference interface {
 	ResetApiManagementApiId()
 	ResetAppCommandLine()
 	ResetApplicationStack()
-	ResetAutoHealEnabled()
 	ResetAutoHealSetting()
 	ResetAutoSwapSlotName()
 	ResetContainerRegistryManagedIdentityClientId()
@@ -305,26 +301,6 @@ func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) ApplicationStackInp
 	_jsii_.Get(
 		j,
 		"applicationStackInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) AutoHealEnabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"autoHealEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) AutoHealEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"autoHealEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1022,17 +998,6 @@ func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference)SetAppCommandLine(va
 	)
 }
 
-func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference)SetAutoHealEnabled(val interface{}) {
-	if err := j.validateSetAutoHealEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"autoHealEnabled",
-		val,
-	)
-}
-
 func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference)SetAutoSwapSlotName(val *string) {
 	if err := j.validateSetAutoSwapSlotNameParameters(val); err != nil {
 		panic(err)
@@ -1607,14 +1572,6 @@ func (l *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) ResetApplicationSta
 	_jsii_.InvokeVoid(
 		l,
 		"resetApplicationStack",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) ResetAutoHealEnabled() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetAutoHealEnabled",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package containerappenvironmentcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/containerappenvironmentcertificate/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/containerappenvironmentcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_app_environment_certificate azurerm_container_app_environment_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_app_environment_certificate azurerm_container_app_environment_certificate}.
 type ContainerAppEnvironmentCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -505,7 +505,7 @@ func (j *jsiiProxy_ContainerAppEnvironmentCertificate) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_app_environment_certificate azurerm_container_app_environment_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_app_environment_certificate azurerm_container_app_environment_certificate} Resource.
 func NewContainerAppEnvironmentCertificate(scope constructs.Construct, id *string, config *ContainerAppEnvironmentCertificateConfig) ContainerAppEnvironmentCertificate {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewContainerAppEnvironmentCertificate(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_app_environment_certificate azurerm_container_app_environment_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_app_environment_certificate azurerm_container_app_environment_certificate} Resource.
 func NewContainerAppEnvironmentCertificate_Override(c ContainerAppEnvironmentCertificate, scope constructs.Construct, id *string, config *ContainerAppEnvironmentCertificateConfig) {
 	_init_.Initialize()
 

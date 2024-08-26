@@ -5,9 +5,9 @@ package siterecoveryreplicatedvm
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/siterecoveryreplicatedvm/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/siterecoveryreplicatedvm/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -41,9 +41,6 @@ type SiteRecoveryReplicatedVmNetworkInterfaceOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	IsPrimary() interface{}
-	SetIsPrimary(val interface{})
-	IsPrimaryInput() interface{}
 	RecoveryPublicIpAddressId() *string
 	SetRecoveryPublicIpAddressId(val *string)
 	RecoveryPublicIpAddressIdInput() *string
@@ -91,7 +88,6 @@ type SiteRecoveryReplicatedVmNetworkInterfaceOutputReference interface {
 	ResetFailoverTestPublicIpAddressId()
 	ResetFailoverTestStaticIp()
 	ResetFailoverTestSubnetName()
-	ResetIsPrimary()
 	ResetRecoveryPublicIpAddressId()
 	ResetSourceNetworkInterfaceId()
 	ResetTargetStaticIp()
@@ -216,26 +212,6 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) IsPrimary() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"isPrimary",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) IsPrimaryInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"isPrimaryInput",
 		&returns,
 	)
 	return returns
@@ -431,17 +407,6 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference)SetIn
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference)SetIsPrimary(val interface{}) {
-	if err := j.validateSetIsPrimaryParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"isPrimary",
 		val,
 	)
 }
@@ -718,14 +683,6 @@ func (s *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) Rese
 	_jsii_.InvokeVoid(
 		s,
 		"resetFailoverTestSubnetName",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) ResetIsPrimary() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetIsPrimary",
 		nil, // no parameters
 	)
 }

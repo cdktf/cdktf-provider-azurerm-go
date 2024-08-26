@@ -5,14 +5,14 @@ package cosmosdbsqlroleassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/cosmosdbsqlroleassignment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/cosmosdbsqlroleassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_sql_role_assignment azurerm_cosmosdb_sql_role_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cosmosdb_sql_role_assignment azurerm_cosmosdb_sql_role_assignment}.
 type CosmosdbSqlRoleAssignment interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -473,7 +473,7 @@ func (j *jsiiProxy_CosmosdbSqlRoleAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_sql_role_assignment azurerm_cosmosdb_sql_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cosmosdb_sql_role_assignment azurerm_cosmosdb_sql_role_assignment} Resource.
 func NewCosmosdbSqlRoleAssignment(scope constructs.Construct, id *string, config *CosmosdbSqlRoleAssignmentConfig) CosmosdbSqlRoleAssignment {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewCosmosdbSqlRoleAssignment(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_sql_role_assignment azurerm_cosmosdb_sql_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cosmosdb_sql_role_assignment azurerm_cosmosdb_sql_role_assignment} Resource.
 func NewCosmosdbSqlRoleAssignment_Override(c CosmosdbSqlRoleAssignment, scope constructs.Construct, id *string, config *CosmosdbSqlRoleAssignmentConfig) {
 	_init_.Initialize()
 

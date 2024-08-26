@@ -69,7 +69,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRecoveryDatabaseId", GoMethod: "ResetRecoveryDatabaseId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRestore", GoMethod: "ResetRestore"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStorageAccountType", GoMethod: "ResetStorageAccountType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "restore", GoGetter: "Restore"},

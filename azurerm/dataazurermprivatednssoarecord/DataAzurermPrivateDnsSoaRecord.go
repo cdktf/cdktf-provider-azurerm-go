@@ -5,14 +5,14 @@ package dataazurermprivatednssoarecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermprivatednssoarecord/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermprivatednssoarecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/private_dns_soa_record azurerm_private_dns_soa_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/private_dns_soa_record azurerm_private_dns_soa_record}.
 type DataAzurermPrivateDnsSoaRecord interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -469,7 +469,7 @@ func (j *jsiiProxy_DataAzurermPrivateDnsSoaRecord) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/private_dns_soa_record azurerm_private_dns_soa_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/private_dns_soa_record azurerm_private_dns_soa_record} Data Source.
 func NewDataAzurermPrivateDnsSoaRecord(scope constructs.Construct, id *string, config *DataAzurermPrivateDnsSoaRecordConfig) DataAzurermPrivateDnsSoaRecord {
 	_init_.Initialize()
 
@@ -487,7 +487,7 @@ func NewDataAzurermPrivateDnsSoaRecord(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/private_dns_soa_record azurerm_private_dns_soa_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/private_dns_soa_record azurerm_private_dns_soa_record} Data Source.
 func NewDataAzurermPrivateDnsSoaRecord_Override(d DataAzurermPrivateDnsSoaRecord, scope constructs.Construct, id *string, config *DataAzurermPrivateDnsSoaRecordConfig) {
 	_init_.Initialize()
 

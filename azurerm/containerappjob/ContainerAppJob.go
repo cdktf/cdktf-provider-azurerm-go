@@ -5,14 +5,14 @@ package containerappjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/containerappjob/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/containerappjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_app_job azurerm_container_app_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_app_job azurerm_container_app_job}.
 type ContainerAppJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -75,8 +75,6 @@ type ContainerAppJob interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Registries() ContainerAppJobRegistriesList
-	RegistriesInput() interface{}
 	Registry() ContainerAppJobRegistryList
 	RegistryInput() interface{}
 	ReplicaRetryLimit() *float64
@@ -92,8 +90,6 @@ type ContainerAppJob interface {
 	ScheduleTriggerConfigInput() *ContainerAppJobScheduleTriggerConfig
 	Secret() ContainerAppJobSecretList
 	SecretInput() interface{}
-	Secrets() ContainerAppJobSecretsList
-	SecretsInput() interface{}
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -156,11 +152,9 @@ type ContainerAppJob interface {
 	PutEventTriggerConfig(value *ContainerAppJobEventTriggerConfig)
 	PutIdentity(value *ContainerAppJobIdentity)
 	PutManualTriggerConfig(value *ContainerAppJobManualTriggerConfig)
-	PutRegistries(value interface{})
 	PutRegistry(value interface{})
 	PutScheduleTriggerConfig(value *ContainerAppJobScheduleTriggerConfig)
 	PutSecret(value interface{})
-	PutSecrets(value interface{})
 	PutTemplate(value *ContainerAppJobTemplate)
 	PutTimeouts(value *ContainerAppJobTimeouts)
 	ResetEventTriggerConfig()
@@ -170,12 +164,10 @@ type ContainerAppJob interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRegistries()
 	ResetRegistry()
 	ResetReplicaRetryLimit()
 	ResetScheduleTriggerConfig()
 	ResetSecret()
-	ResetSecrets()
 	ResetTags()
 	ResetTimeouts()
 	ResetWorkloadProfileName()
@@ -487,26 +479,6 @@ func (j *jsiiProxy_ContainerAppJob) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAppJob) Registries() ContainerAppJobRegistriesList {
-	var returns ContainerAppJobRegistriesList
-	_jsii_.Get(
-		j,
-		"registries",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContainerAppJob) RegistriesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"registriesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ContainerAppJob) Registry() ContainerAppJobRegistryList {
 	var returns ContainerAppJobRegistryList
 	_jsii_.Get(
@@ -627,26 +599,6 @@ func (j *jsiiProxy_ContainerAppJob) SecretInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAppJob) Secrets() ContainerAppJobSecretsList {
-	var returns ContainerAppJobSecretsList
-	_jsii_.Get(
-		j,
-		"secrets",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContainerAppJob) SecretsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"secretsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ContainerAppJob) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -758,7 +710,7 @@ func (j *jsiiProxy_ContainerAppJob) WorkloadProfileNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_app_job azurerm_container_app_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_app_job azurerm_container_app_job} Resource.
 func NewContainerAppJob(scope constructs.Construct, id *string, config *ContainerAppJobConfig) ContainerAppJob {
 	_init_.Initialize()
 
@@ -776,7 +728,7 @@ func NewContainerAppJob(scope constructs.Construct, id *string, config *Containe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_app_job azurerm_container_app_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_app_job azurerm_container_app_job} Resource.
 func NewContainerAppJob_Override(c ContainerAppJob, scope constructs.Construct, id *string, config *ContainerAppJobConfig) {
 	_init_.Initialize()
 
@@ -1340,17 +1292,6 @@ func (c *jsiiProxy_ContainerAppJob) PutManualTriggerConfig(value *ContainerAppJo
 	)
 }
 
-func (c *jsiiProxy_ContainerAppJob) PutRegistries(value interface{}) {
-	if err := c.validatePutRegistriesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		c,
-		"putRegistries",
-		[]interface{}{value},
-	)
-}
-
 func (c *jsiiProxy_ContainerAppJob) PutRegistry(value interface{}) {
 	if err := c.validatePutRegistryParameters(value); err != nil {
 		panic(err)
@@ -1380,17 +1321,6 @@ func (c *jsiiProxy_ContainerAppJob) PutSecret(value interface{}) {
 	_jsii_.InvokeVoid(
 		c,
 		"putSecret",
-		[]interface{}{value},
-	)
-}
-
-func (c *jsiiProxy_ContainerAppJob) PutSecrets(value interface{}) {
-	if err := c.validatePutSecretsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		c,
-		"putSecrets",
 		[]interface{}{value},
 	)
 }
@@ -1457,14 +1387,6 @@ func (c *jsiiProxy_ContainerAppJob) ResetOverrideLogicalId() {
 	)
 }
 
-func (c *jsiiProxy_ContainerAppJob) ResetRegistries() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetRegistries",
-		nil, // no parameters
-	)
-}
-
 func (c *jsiiProxy_ContainerAppJob) ResetRegistry() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1493,14 +1415,6 @@ func (c *jsiiProxy_ContainerAppJob) ResetSecret() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSecret",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ContainerAppJob) ResetSecrets() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetSecrets",
 		nil, // no parameters
 	)
 }

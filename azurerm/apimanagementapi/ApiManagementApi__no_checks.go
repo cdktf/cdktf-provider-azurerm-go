@@ -183,10 +183,6 @@ func (j *jsiiProxy_ApiManagementApi) validateSetServiceUrlParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_ApiManagementApi) validateSetSoapPassThroughParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ApiManagementApi) validateSetSourceApiIdParameters(val *string) error {
 	return nil
 }

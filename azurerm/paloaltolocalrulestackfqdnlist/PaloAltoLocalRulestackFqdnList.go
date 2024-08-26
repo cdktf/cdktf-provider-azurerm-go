@@ -5,14 +5,14 @@ package paloaltolocalrulestackfqdnlist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/paloaltolocalrulestackfqdnlist/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/paloaltolocalrulestackfqdnlist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/palo_alto_local_rulestack_fqdn_list azurerm_palo_alto_local_rulestack_fqdn_list}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/palo_alto_local_rulestack_fqdn_list azurerm_palo_alto_local_rulestack_fqdn_list}.
 type PaloAltoLocalRulestackFqdnList interface {
 	cdktf.TerraformResource
 	AuditComment() *string
@@ -451,7 +451,7 @@ func (j *jsiiProxy_PaloAltoLocalRulestackFqdnList) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/palo_alto_local_rulestack_fqdn_list azurerm_palo_alto_local_rulestack_fqdn_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/palo_alto_local_rulestack_fqdn_list azurerm_palo_alto_local_rulestack_fqdn_list} Resource.
 func NewPaloAltoLocalRulestackFqdnList(scope constructs.Construct, id *string, config *PaloAltoLocalRulestackFqdnListConfig) PaloAltoLocalRulestackFqdnList {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewPaloAltoLocalRulestackFqdnList(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/palo_alto_local_rulestack_fqdn_list azurerm_palo_alto_local_rulestack_fqdn_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/palo_alto_local_rulestack_fqdn_list azurerm_palo_alto_local_rulestack_fqdn_list} Resource.
 func NewPaloAltoLocalRulestackFqdnList_Override(p PaloAltoLocalRulestackFqdnList, scope constructs.Construct, id *string, config *PaloAltoLocalRulestackFqdnListConfig) {
 	_init_.Initialize()
 

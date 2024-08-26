@@ -5,9 +5,9 @@ package linuxwebapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/linuxwebapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/linuxwebapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -38,9 +38,6 @@ type LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference inter
 	Interval() *string
 	SetInterval(val *string)
 	IntervalInput() *string
-	Path() *string
-	SetPath(val *string)
-	PathInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,7 +73,6 @@ type LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference inter
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -177,26 +173,6 @@ func (j *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputR
 	_jsii_.Get(
 		j,
 		"intervalInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference) Path() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"path",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference) PathInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pathInput",
 		&returns,
 	)
 	return returns
@@ -321,17 +297,6 @@ func (j *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputR
 	_jsii_.Set(
 		j,
 		"interval",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference)SetPath(val *string) {
-	if err := j.validateSetPathParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"path",
 		val,
 	)
 }
@@ -553,14 +518,6 @@ func (l *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputR
 	)
 
 	return returns
-}
-
-func (l *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference) ResetPath() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetPath",
-		nil, // no parameters
-	)
 }
 
 func (l *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

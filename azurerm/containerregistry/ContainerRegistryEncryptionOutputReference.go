@@ -5,9 +5,9 @@ package containerregistry
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/containerregistry/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/containerregistry/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -28,9 +28,6 @@ type ContainerRegistryEncryptionOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	IdentityClientId() *string
@@ -73,7 +70,6 @@ type ContainerRegistryEncryptionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetEnabled()
 	ResetIdentityClientId()
 	ResetKeyVaultKeyId()
 	// Produce the Token's value at resolution time.
@@ -116,26 +112,6 @@ func (j *jsiiProxy_ContainerRegistryEncryptionOutputReference) CreationStack() *
 	_jsii_.Get(
 		j,
 		"creationStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContainerRegistryEncryptionOutputReference) Enabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContainerRegistryEncryptionOutputReference) EnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -267,17 +243,6 @@ func (j *jsiiProxy_ContainerRegistryEncryptionOutputReference)SetComplexObjectIs
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ContainerRegistryEncryptionOutputReference)SetEnabled(val interface{}) {
-	if err := j.validateSetEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enabled",
 		val,
 	)
 }
@@ -521,14 +486,6 @@ func (c *jsiiProxy_ContainerRegistryEncryptionOutputReference) InterpolationForA
 	)
 
 	return returns
-}
-
-func (c *jsiiProxy_ContainerRegistryEncryptionOutputReference) ResetEnabled() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetEnabled",
-		nil, // no parameters
-	)
 }
 
 func (c *jsiiProxy_ContainerRegistryEncryptionOutputReference) ResetIdentityClientId() {

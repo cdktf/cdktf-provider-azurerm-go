@@ -5,14 +5,14 @@ package kustocosmosdbdataconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/kustocosmosdbdataconnection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/kustocosmosdbdataconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kusto_cosmosdb_data_connection azurerm_kusto_cosmosdb_data_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kusto_cosmosdb_data_connection azurerm_kusto_cosmosdb_data_connection}.
 type KustoCosmosdbDataConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -520,7 +520,7 @@ func (j *jsiiProxy_KustoCosmosdbDataConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kusto_cosmosdb_data_connection azurerm_kusto_cosmosdb_data_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kusto_cosmosdb_data_connection azurerm_kusto_cosmosdb_data_connection} Resource.
 func NewKustoCosmosdbDataConnection(scope constructs.Construct, id *string, config *KustoCosmosdbDataConnectionConfig) KustoCosmosdbDataConnection {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewKustoCosmosdbDataConnection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kusto_cosmosdb_data_connection azurerm_kusto_cosmosdb_data_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kusto_cosmosdb_data_connection azurerm_kusto_cosmosdb_data_connection} Resource.
 func NewKustoCosmosdbDataConnection_Override(k KustoCosmosdbDataConnection, scope constructs.Construct, id *string, config *KustoCosmosdbDataConnectionConfig) {
 	_init_.Initialize()
 

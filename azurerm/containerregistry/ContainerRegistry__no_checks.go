@@ -91,15 +91,7 @@ func (c *jsiiProxy_ContainerRegistry) validatePutNetworkRuleSetParameters(value 
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistry) validatePutRetentionPolicyParameters(value interface{}) error {
-	return nil
-}
-
 func (c *jsiiProxy_ContainerRegistry) validatePutTimeoutsParameters(value *ContainerRegistryTimeouts) error {
-	return nil
-}
-
-func (c *jsiiProxy_ContainerRegistry) validatePutTrustPolicyParameters(value interface{}) error {
 	return nil
 }
 
@@ -179,11 +171,19 @@ func (j *jsiiProxy_ContainerRegistry) validateSetResourceGroupNameParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ContainerRegistry) validateSetRetentionPolicyInDaysParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerRegistry) validateSetSkuParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ContainerRegistry) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerRegistry) validateSetTrustPolicyEnabledParameters(val interface{}) error {
 	return nil
 }
 

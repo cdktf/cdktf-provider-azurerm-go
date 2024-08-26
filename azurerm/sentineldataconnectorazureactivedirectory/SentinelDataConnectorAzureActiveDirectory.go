@@ -5,14 +5,14 @@ package sentineldataconnectorazureactivedirectory
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/sentineldataconnectorazureactivedirectory/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/sentineldataconnectorazureactivedirectory/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_data_connector_azure_active_directory azurerm_sentinel_data_connector_azure_active_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_data_connector_azure_active_directory azurerm_sentinel_data_connector_azure_active_directory}.
 type SentinelDataConnectorAzureActiveDirectory interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_SentinelDataConnectorAzureActiveDirectory) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_data_connector_azure_active_directory azurerm_sentinel_data_connector_azure_active_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_data_connector_azure_active_directory azurerm_sentinel_data_connector_azure_active_directory} Resource.
 func NewSentinelDataConnectorAzureActiveDirectory(scope constructs.Construct, id *string, config *SentinelDataConnectorAzureActiveDirectoryConfig) SentinelDataConnectorAzureActiveDirectory {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewSentinelDataConnectorAzureActiveDirectory(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_data_connector_azure_active_directory azurerm_sentinel_data_connector_azure_active_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_data_connector_azure_active_directory azurerm_sentinel_data_connector_azure_active_directory} Resource.
 func NewSentinelDataConnectorAzureActiveDirectory_Override(s SentinelDataConnectorAzureActiveDirectory, scope constructs.Construct, id *string, config *SentinelDataConnectorAzureActiveDirectoryConfig) {
 	_init_.Initialize()
 

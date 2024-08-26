@@ -5,18 +5,16 @@ package synapseworkspace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/synapseworkspace/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/synapseworkspace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/synapse_workspace azurerm_synapse_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/synapse_workspace azurerm_synapse_workspace}.
 type SynapseWorkspace interface {
 	cdktf.TerraformResource
-	AadAdmin() SynapseWorkspaceAadAdminList
-	AadAdminInput() interface{}
 	AzureadAuthenticationOnly() interface{}
 	SetAzureadAuthenticationOnly(val interface{})
 	AzureadAuthenticationOnlyInput() interface{}
@@ -102,8 +100,6 @@ type SynapseWorkspace interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
-	SqlAadAdmin() SynapseWorkspaceSqlAadAdminList
-	SqlAadAdminInput() interface{}
 	SqlAdministratorLogin() *string
 	SetSqlAdministratorLogin(val *string)
 	SqlAdministratorLoginInput() *string
@@ -170,14 +166,11 @@ type SynapseWorkspace interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAadAdmin(value interface{})
 	PutAzureDevopsRepo(value *SynapseWorkspaceAzureDevopsRepo)
 	PutCustomerManagedKey(value *SynapseWorkspaceCustomerManagedKey)
 	PutGithubRepo(value *SynapseWorkspaceGithubRepo)
 	PutIdentity(value *SynapseWorkspaceIdentity)
-	PutSqlAadAdmin(value interface{})
 	PutTimeouts(value *SynapseWorkspaceTimeouts)
-	ResetAadAdmin()
 	ResetAzureadAuthenticationOnly()
 	ResetAzureDevopsRepo()
 	ResetComputeSubnetId()
@@ -194,7 +187,6 @@ type SynapseWorkspace interface {
 	ResetOverrideLogicalId()
 	ResetPublicNetworkAccessEnabled()
 	ResetPurviewId()
-	ResetSqlAadAdmin()
 	ResetSqlAdministratorLogin()
 	ResetSqlAdministratorLoginPassword()
 	ResetSqlIdentityControlEnabled()
@@ -216,26 +208,6 @@ type SynapseWorkspace interface {
 // The jsii proxy struct for SynapseWorkspace
 type jsiiProxy_SynapseWorkspace struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_SynapseWorkspace) AadAdmin() SynapseWorkspaceAadAdminList {
-	var returns SynapseWorkspaceAadAdminList
-	_jsii_.Get(
-		j,
-		"aadAdmin",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SynapseWorkspace) AadAdminInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"aadAdminInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_SynapseWorkspace) AzureadAuthenticationOnly() interface{} {
@@ -698,26 +670,6 @@ func (j *jsiiProxy_SynapseWorkspace) ResourceGroupNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SynapseWorkspace) SqlAadAdmin() SynapseWorkspaceSqlAadAdminList {
-	var returns SynapseWorkspaceSqlAadAdminList
-	_jsii_.Get(
-		j,
-		"sqlAadAdmin",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SynapseWorkspace) SqlAadAdminInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"sqlAadAdminInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SynapseWorkspace) SqlAdministratorLogin() *string {
 	var returns *string
 	_jsii_.Get(
@@ -869,7 +821,7 @@ func (j *jsiiProxy_SynapseWorkspace) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/synapse_workspace azurerm_synapse_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/synapse_workspace azurerm_synapse_workspace} Resource.
 func NewSynapseWorkspace(scope constructs.Construct, id *string, config *SynapseWorkspaceConfig) SynapseWorkspace {
 	_init_.Initialize()
 
@@ -887,7 +839,7 @@ func NewSynapseWorkspace(scope constructs.Construct, id *string, config *Synapse
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/synapse_workspace azurerm_synapse_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/synapse_workspace azurerm_synapse_workspace} Resource.
 func NewSynapseWorkspace_Override(s SynapseWorkspace, scope constructs.Construct, id *string, config *SynapseWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -1506,17 +1458,6 @@ func (s *jsiiProxy_SynapseWorkspace) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (s *jsiiProxy_SynapseWorkspace) PutAadAdmin(value interface{}) {
-	if err := s.validatePutAadAdminParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		s,
-		"putAadAdmin",
-		[]interface{}{value},
-	)
-}
-
 func (s *jsiiProxy_SynapseWorkspace) PutAzureDevopsRepo(value *SynapseWorkspaceAzureDevopsRepo) {
 	if err := s.validatePutAzureDevopsRepoParameters(value); err != nil {
 		panic(err)
@@ -1561,17 +1502,6 @@ func (s *jsiiProxy_SynapseWorkspace) PutIdentity(value *SynapseWorkspaceIdentity
 	)
 }
 
-func (s *jsiiProxy_SynapseWorkspace) PutSqlAadAdmin(value interface{}) {
-	if err := s.validatePutSqlAadAdminParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		s,
-		"putSqlAadAdmin",
-		[]interface{}{value},
-	)
-}
-
 func (s *jsiiProxy_SynapseWorkspace) PutTimeouts(value *SynapseWorkspaceTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1580,14 +1510,6 @@ func (s *jsiiProxy_SynapseWorkspace) PutTimeouts(value *SynapseWorkspaceTimeouts
 		s,
 		"putTimeouts",
 		[]interface{}{value},
-	)
-}
-
-func (s *jsiiProxy_SynapseWorkspace) ResetAadAdmin() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetAadAdmin",
-		nil, // no parameters
 	)
 }
 
@@ -1699,14 +1621,6 @@ func (s *jsiiProxy_SynapseWorkspace) ResetPurviewId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPurviewId",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SynapseWorkspace) ResetSqlAadAdmin() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetSqlAadAdmin",
 		nil, // no parameters
 	)
 }

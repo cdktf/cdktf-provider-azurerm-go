@@ -51,14 +51,6 @@ func (c *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) validateSetCertificateBindingTypeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) validateSetCertificateIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -71,10 +63,6 @@ func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) validateSetIn
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) validateSetNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
@@ -83,7 +71,7 @@ func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) validateSetTe
 	return nil
 }
 
-func validateNewContainerAppIngressCustomDomainOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerAppIngressCustomDomainOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

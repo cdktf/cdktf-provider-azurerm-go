@@ -5,14 +5,14 @@ package webpubsubcustomdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/webpubsubcustomdomain/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/webpubsubcustomdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/web_pubsub_custom_domain azurerm_web_pubsub_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/web_pubsub_custom_domain azurerm_web_pubsub_custom_domain}.
 type WebPubsubCustomDomain interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_WebPubsubCustomDomain) WebPubsubIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/web_pubsub_custom_domain azurerm_web_pubsub_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/web_pubsub_custom_domain azurerm_web_pubsub_custom_domain} Resource.
 func NewWebPubsubCustomDomain(scope constructs.Construct, id *string, config *WebPubsubCustomDomainConfig) WebPubsubCustomDomain {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewWebPubsubCustomDomain(scope constructs.Construct, id *string, config *We
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/web_pubsub_custom_domain azurerm_web_pubsub_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/web_pubsub_custom_domain azurerm_web_pubsub_custom_domain} Resource.
 func NewWebPubsubCustomDomain_Override(w WebPubsubCustomDomain, scope constructs.Construct, id *string, config *WebPubsubCustomDomainConfig) {
 	_init_.Initialize()
 

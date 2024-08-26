@@ -5,14 +5,14 @@ package recoveryservicesvault
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/recoveryservicesvault/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/recoveryservicesvault/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/recovery_services_vault azurerm_recovery_services_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/recovery_services_vault azurerm_recovery_services_vault}.
 type RecoveryServicesVault interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -666,7 +666,7 @@ func (j *jsiiProxy_RecoveryServicesVault) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/recovery_services_vault azurerm_recovery_services_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/recovery_services_vault azurerm_recovery_services_vault} Resource.
 func NewRecoveryServicesVault(scope constructs.Construct, id *string, config *RecoveryServicesVaultConfig) RecoveryServicesVault {
 	_init_.Initialize()
 
@@ -684,7 +684,7 @@ func NewRecoveryServicesVault(scope constructs.Construct, id *string, config *Re
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/recovery_services_vault azurerm_recovery_services_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/recovery_services_vault azurerm_recovery_services_vault} Resource.
 func NewRecoveryServicesVault_Override(r RecoveryServicesVault, scope constructs.Construct, id *string, config *RecoveryServicesVaultConfig) {
 	_init_.Initialize()
 

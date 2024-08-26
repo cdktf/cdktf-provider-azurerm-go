@@ -5,14 +5,14 @@ package synapselinkedservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/synapselinkedservice/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/synapselinkedservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/synapse_linked_service azurerm_synapse_linked_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/synapse_linked_service azurerm_synapse_linked_service}.
 type SynapseLinkedService interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -546,7 +546,7 @@ func (j *jsiiProxy_SynapseLinkedService) TypePropertiesJsonInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/synapse_linked_service azurerm_synapse_linked_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/synapse_linked_service azurerm_synapse_linked_service} Resource.
 func NewSynapseLinkedService(scope constructs.Construct, id *string, config *SynapseLinkedServiceConfig) SynapseLinkedService {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewSynapseLinkedService(scope constructs.Construct, id *string, config *Syn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/synapse_linked_service azurerm_synapse_linked_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/synapse_linked_service azurerm_synapse_linked_service} Resource.
 func NewSynapseLinkedService_Override(s SynapseLinkedService, scope constructs.Construct, id *string, config *SynapseLinkedServiceConfig) {
 	_init_.Initialize()
 

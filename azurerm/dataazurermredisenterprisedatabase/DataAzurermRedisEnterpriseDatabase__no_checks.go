@@ -95,10 +95,6 @@ func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase) validateSetNameParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase) validateSetResourceGroupNameParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataAzurermRedisEnterpriseDatabaseParameters(scope constructs.Construct, id *string, config *DataAzurermRedisEnterpriseDatabaseConfig) error {
 	return nil
 }

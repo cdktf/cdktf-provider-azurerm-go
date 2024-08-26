@@ -51,19 +51,15 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "openEnclavePolicyBase64", GoGetter: "OpenEnclavePolicyBase64"},
 			_jsii_.MemberProperty{JsiiProperty: "openEnclavePolicyBase64Input", GoGetter: "OpenEnclavePolicyBase64Input"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "policy", GoGetter: "Policy"},
-			_jsii_.MemberProperty{JsiiProperty: "policyInput", GoGetter: "PolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "policySigningCertificateData", GoGetter: "PolicySigningCertificateData"},
 			_jsii_.MemberProperty{JsiiProperty: "policySigningCertificateDataInput", GoGetter: "PolicySigningCertificateDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putPolicy", GoMethod: "PutPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOpenEnclavePolicyBase64", GoMethod: "ResetOpenEnclavePolicyBase64"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPolicy", GoMethod: "ResetPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPolicySigningCertificateData", GoMethod: "ResetPolicySigningCertificateData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSevSnpPolicyBase64", GoMethod: "ResetSevSnpPolicyBase64"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSgxEnclavePolicyBase64", GoMethod: "ResetSgxEnclavePolicyBase64"},
@@ -102,70 +98,6 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.attestationProvider.AttestationProviderConfig",
 		reflect.TypeOf((*AttestationProviderConfig)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-azurerm.attestationProvider.AttestationProviderPolicy",
-		reflect.TypeOf((*AttestationProviderPolicy)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.attestationProvider.AttestationProviderPolicyList",
-		reflect.TypeOf((*AttestationProviderPolicyList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AttestationProviderPolicyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.attestationProvider.AttestationProviderPolicyOutputReference",
-		reflect.TypeOf((*AttestationProviderPolicyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "data", GoGetter: "Data"},
-			_jsii_.MemberProperty{JsiiProperty: "dataInput", GoGetter: "DataInput"},
-			_jsii_.MemberProperty{JsiiProperty: "environmentType", GoGetter: "EnvironmentType"},
-			_jsii_.MemberProperty{JsiiProperty: "environmentTypeInput", GoGetter: "EnvironmentTypeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetData", GoMethod: "ResetData"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentType", GoMethod: "ResetEnvironmentType"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_AttestationProviderPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.attestationProvider.AttestationProviderTimeouts",

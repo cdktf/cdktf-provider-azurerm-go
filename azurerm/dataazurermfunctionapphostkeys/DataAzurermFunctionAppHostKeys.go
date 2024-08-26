@@ -5,14 +5,14 @@ package dataazurermfunctionapphostkeys
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermfunctionapphostkeys/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermfunctionapphostkeys/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/function_app_host_keys azurerm_function_app_host_keys}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/function_app_host_keys azurerm_function_app_host_keys}.
 type DataAzurermFunctionAppHostKeys interface {
 	cdktf.TerraformDataSource
 	BlobsExtensionKey() *string
@@ -423,7 +423,7 @@ func (j *jsiiProxy_DataAzurermFunctionAppHostKeys) WebpubsubExtensionKey() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/function_app_host_keys azurerm_function_app_host_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/function_app_host_keys azurerm_function_app_host_keys} Data Source.
 func NewDataAzurermFunctionAppHostKeys(scope constructs.Construct, id *string, config *DataAzurermFunctionAppHostKeysConfig) DataAzurermFunctionAppHostKeys {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewDataAzurermFunctionAppHostKeys(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/function_app_host_keys azurerm_function_app_host_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/function_app_host_keys azurerm_function_app_host_keys} Data Source.
 func NewDataAzurermFunctionAppHostKeys_Override(d DataAzurermFunctionAppHostKeys, scope constructs.Construct, id *string, config *DataAzurermFunctionAppHostKeysConfig) {
 	_init_.Initialize()
 

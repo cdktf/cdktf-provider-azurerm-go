@@ -5,9 +5,9 @@ package monitordatacollectionrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/monitordatacollectionrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/monitordatacollectionrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -76,7 +76,6 @@ type MonitorDataCollectionRuleDataSourcesSyslogOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetStreams()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -553,14 +552,6 @@ func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) In
 	)
 
 	return returns
-}
-
-func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) ResetStreams() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetStreams",
-		nil, // no parameters
-	)
 }
 
 func (m *jsiiProxy_MonitorDataCollectionRuleDataSourcesSyslogOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

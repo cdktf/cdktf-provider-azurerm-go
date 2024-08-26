@@ -131,10 +131,6 @@ func (j *jsiiProxy_ResourcePolicyRemediation) validateSetPolicyAssignmentIdParam
 	return nil
 }
 
-func (j *jsiiProxy_ResourcePolicyRemediation) validateSetPolicyDefinitionIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ResourcePolicyRemediation) validateSetPolicyDefinitionReferenceIdParameters(val *string) error {
 	return nil
 }

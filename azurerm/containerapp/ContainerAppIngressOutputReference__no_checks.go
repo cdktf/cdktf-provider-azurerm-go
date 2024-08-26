@@ -47,10 +47,6 @@ func (c *jsiiProxy_ContainerAppIngressOutputReference) validateInterpolationForA
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppIngressOutputReference) validatePutCustomDomainParameters(value *ContainerAppIngressCustomDomain) error {
-	return nil
-}
-
 func (c *jsiiProxy_ContainerAppIngressOutputReference) validatePutIpSecurityRestrictionParameters(value interface{}) error {
 	return nil
 }

@@ -75,10 +75,6 @@ func (s *jsiiProxy_SynapseWorkspace) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (s *jsiiProxy_SynapseWorkspace) validatePutAadAdminParameters(value interface{}) error {
-	return nil
-}
-
 func (s *jsiiProxy_SynapseWorkspace) validatePutAzureDevopsRepoParameters(value *SynapseWorkspaceAzureDevopsRepo) error {
 	return nil
 }
@@ -92,10 +88,6 @@ func (s *jsiiProxy_SynapseWorkspace) validatePutGithubRepoParameters(value *Syna
 }
 
 func (s *jsiiProxy_SynapseWorkspace) validatePutIdentityParameters(value *SynapseWorkspaceIdentity) error {
-	return nil
-}
-
-func (s *jsiiProxy_SynapseWorkspace) validatePutSqlAadAdminParameters(value interface{}) error {
 	return nil
 }
 

@@ -5,9 +5,9 @@ package rediscache
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/rediscache/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/rediscache/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -46,9 +46,6 @@ type RedisCacheRedisConfigurationOutputReference interface {
 	DataPersistenceAuthenticationMethod() *string
 	SetDataPersistenceAuthenticationMethod(val *string)
 	DataPersistenceAuthenticationMethodInput() *string
-	EnableAuthentication() interface{}
-	SetEnableAuthentication(val interface{})
-	EnableAuthenticationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *RedisCacheRedisConfiguration
@@ -122,7 +119,6 @@ type RedisCacheRedisConfigurationOutputReference interface {
 	ResetAofStorageConnectionString1()
 	ResetAuthenticationEnabled()
 	ResetDataPersistenceAuthenticationMethod()
-	ResetEnableAuthentication()
 	ResetMaxfragmentationmemoryReserved()
 	ResetMaxmemoryDelta()
 	ResetMaxmemoryPolicy()
@@ -293,26 +289,6 @@ func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) DataPersistenceA
 	_jsii_.Get(
 		j,
 		"dataPersistenceAuthenticationMethodInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) EnableAuthentication() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableAuthentication",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) EnableAuthenticationInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableAuthenticationInput",
 		&returns,
 	)
 	return returns
@@ -680,17 +656,6 @@ func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference)SetDataPersistenc
 	_jsii_.Set(
 		j,
 		"dataPersistenceAuthenticationMethod",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference)SetEnableAuthentication(val interface{}) {
-	if err := j.validateSetEnableAuthenticationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enableAuthentication",
 		val,
 	)
 }
@@ -1068,14 +1033,6 @@ func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) ResetDataPersist
 	_jsii_.InvokeVoid(
 		r,
 		"resetDataPersistenceAuthenticationMethod",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RedisCacheRedisConfigurationOutputReference) ResetEnableAuthentication() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetEnableAuthentication",
 		nil, // no parameters
 	)
 }

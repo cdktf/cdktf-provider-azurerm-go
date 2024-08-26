@@ -5,14 +5,14 @@ package healthcarefhirservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/healthcarefhirservice/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/healthcarefhirservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/healthcare_fhir_service azurerm_healthcare_fhir_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/healthcare_fhir_service azurerm_healthcare_fhir_service}.
 type HealthcareFhirService interface {
 	cdktf.TerraformResource
 	AccessPolicyObjectIds() *[]*string
@@ -652,7 +652,7 @@ func (j *jsiiProxy_HealthcareFhirService) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/healthcare_fhir_service azurerm_healthcare_fhir_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/healthcare_fhir_service azurerm_healthcare_fhir_service} Resource.
 func NewHealthcareFhirService(scope constructs.Construct, id *string, config *HealthcareFhirServiceConfig) HealthcareFhirService {
 	_init_.Initialize()
 
@@ -670,7 +670,7 @@ func NewHealthcareFhirService(scope constructs.Construct, id *string, config *He
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/healthcare_fhir_service azurerm_healthcare_fhir_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/healthcare_fhir_service azurerm_healthcare_fhir_service} Resource.
 func NewHealthcareFhirService_Override(h HealthcareFhirService, scope constructs.Construct, id *string, config *HealthcareFhirServiceConfig) {
 	_init_.Initialize()
 

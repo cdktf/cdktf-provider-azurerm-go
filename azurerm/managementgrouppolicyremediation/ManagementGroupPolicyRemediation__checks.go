@@ -412,14 +412,6 @@ func (j *jsiiProxy_ManagementGroupPolicyRemediation) validateSetPolicyAssignment
 	return nil
 }
 
-func (j *jsiiProxy_ManagementGroupPolicyRemediation) validateSetPolicyDefinitionIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ManagementGroupPolicyRemediation) validateSetPolicyDefinitionReferenceIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -475,14 +467,6 @@ func (j *jsiiProxy_ManagementGroupPolicyRemediation) validateSetProvisionersPara
 }
 
 func (j *jsiiProxy_ManagementGroupPolicyRemediation) validateSetResourceCountParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ManagementGroupPolicyRemediation) validateSetResourceDiscoveryModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

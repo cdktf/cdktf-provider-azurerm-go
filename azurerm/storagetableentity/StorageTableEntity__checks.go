@@ -434,23 +434,7 @@ func (j *jsiiProxy_StorageTableEntity) validateSetRowKeyParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_StorageTableEntity) validateSetStorageAccountNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_StorageTableEntity) validateSetStorageTableIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_StorageTableEntity) validateSetTableNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

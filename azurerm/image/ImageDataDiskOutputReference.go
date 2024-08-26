@@ -5,9 +5,9 @@ package image
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/image/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/image/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -34,6 +34,9 @@ type ImageDataDiskOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DiskEncryptionSetId() *string
+	SetDiskEncryptionSetId(val *string)
+	DiskEncryptionSetIdInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -47,6 +50,9 @@ type ImageDataDiskOutputReference interface {
 	SizeGb() *float64
 	SetSizeGb(val *float64)
 	SizeGbInput() *float64
+	StorageType() *string
+	SetStorageType(val *string)
+	StorageTypeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -81,6 +87,7 @@ type ImageDataDiskOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBlobUri()
 	ResetCaching()
+	ResetDiskEncryptionSetId()
 	ResetLun()
 	ResetManagedDiskId()
 	ResetSizeGb()
@@ -169,6 +176,26 @@ func (j *jsiiProxy_ImageDataDiskOutputReference) CreationStack() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ImageDataDiskOutputReference) DiskEncryptionSetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionSetId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImageDataDiskOutputReference) DiskEncryptionSetIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionSetIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ImageDataDiskOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -244,6 +271,26 @@ func (j *jsiiProxy_ImageDataDiskOutputReference) SizeGbInput() *float64 {
 	_jsii_.Get(
 		j,
 		"sizeGbInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImageDataDiskOutputReference) StorageType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImageDataDiskOutputReference) StorageTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageTypeInput",
 		&returns,
 	)
 	return returns
@@ -341,6 +388,17 @@ func (j *jsiiProxy_ImageDataDiskOutputReference)SetComplexObjectIsFromSet(val *b
 	)
 }
 
+func (j *jsiiProxy_ImageDataDiskOutputReference)SetDiskEncryptionSetId(val *string) {
+	if err := j.validateSetDiskEncryptionSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskEncryptionSetId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ImageDataDiskOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -381,6 +439,17 @@ func (j *jsiiProxy_ImageDataDiskOutputReference)SetSizeGb(val *float64) {
 	_jsii_.Set(
 		j,
 		"sizeGb",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ImageDataDiskOutputReference)SetStorageType(val *string) {
+	if err := j.validateSetStorageTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageType",
 		val,
 	)
 }
@@ -605,6 +674,14 @@ func (i *jsiiProxy_ImageDataDiskOutputReference) ResetCaching() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetCaching",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImageDataDiskOutputReference) ResetDiskEncryptionSetId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetDiskEncryptionSetId",
 		nil, // no parameters
 	)
 }

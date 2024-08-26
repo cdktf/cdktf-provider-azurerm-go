@@ -5,14 +5,14 @@ package cdnfrontdoorendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/cdnfrontdoorendpoint/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/cdnfrontdoorendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cdn_frontdoor_endpoint azurerm_cdn_frontdoor_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cdn_frontdoor_endpoint azurerm_cdn_frontdoor_endpoint}.
 type CdnFrontdoorEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -439,7 +439,7 @@ func (j *jsiiProxy_CdnFrontdoorEndpoint) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cdn_frontdoor_endpoint azurerm_cdn_frontdoor_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cdn_frontdoor_endpoint azurerm_cdn_frontdoor_endpoint} Resource.
 func NewCdnFrontdoorEndpoint(scope constructs.Construct, id *string, config *CdnFrontdoorEndpointConfig) CdnFrontdoorEndpoint {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewCdnFrontdoorEndpoint(scope constructs.Construct, id *string, config *Cdn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cdn_frontdoor_endpoint azurerm_cdn_frontdoor_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cdn_frontdoor_endpoint azurerm_cdn_frontdoor_endpoint} Resource.
 func NewCdnFrontdoorEndpoint_Override(c CdnFrontdoorEndpoint, scope constructs.Construct, id *string, config *CdnFrontdoorEndpointConfig) {
 	_init_.Initialize()
 

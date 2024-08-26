@@ -127,10 +127,6 @@ func (j *jsiiProxy_DevTestLab) validateSetResourceGroupNameParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_DevTestLab) validateSetStorageTypeParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DevTestLab) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

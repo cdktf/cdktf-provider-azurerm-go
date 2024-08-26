@@ -167,18 +167,6 @@ func (j *jsiiProxy_CosmosdbAccount) validateSetDefaultIdentityTypeParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_CosmosdbAccount) validateSetEnableAutomaticFailoverParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_CosmosdbAccount) validateSetEnableFreeTierParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_CosmosdbAccount) validateSetEnableMultipleWriteLocationsParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_CosmosdbAccount) validateSetFreeTierEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -187,7 +175,7 @@ func (j *jsiiProxy_CosmosdbAccount) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CosmosdbAccount) validateSetIpRangeFilterParameters(val *string) error {
+func (j *jsiiProxy_CosmosdbAccount) validateSetIpRangeFilterParameters(val *[]*string) error {
 	return nil
 }
 

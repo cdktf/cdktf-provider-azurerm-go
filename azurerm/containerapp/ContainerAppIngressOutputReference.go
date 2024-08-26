@@ -5,9 +5,9 @@ package containerapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/containerapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/containerapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,8 +31,7 @@ type ContainerAppIngressOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	CustomDomain() ContainerAppIngressCustomDomainOutputReference
-	CustomDomainInput() *ContainerAppIngressCustomDomain
+	CustomDomain() ContainerAppIngressCustomDomainList
 	ExposedPort() *float64
 	SetExposedPort(val *float64)
 	ExposedPortInput() *float64
@@ -86,11 +85,9 @@ type ContainerAppIngressOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCustomDomain(value *ContainerAppIngressCustomDomain)
 	PutIpSecurityRestriction(value interface{})
 	PutTrafficWeight(value interface{})
 	ResetAllowInsecureConnections()
-	ResetCustomDomain()
 	ResetExposedPort()
 	ResetExternalEnabled()
 	ResetIpSecurityRestriction()
@@ -160,21 +157,11 @@ func (j *jsiiProxy_ContainerAppIngressOutputReference) CreationStack() *[]*strin
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAppIngressOutputReference) CustomDomain() ContainerAppIngressCustomDomainOutputReference {
-	var returns ContainerAppIngressCustomDomainOutputReference
+func (j *jsiiProxy_ContainerAppIngressOutputReference) CustomDomain() ContainerAppIngressCustomDomainList {
+	var returns ContainerAppIngressCustomDomainList
 	_jsii_.Get(
 		j,
 		"customDomain",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContainerAppIngressOutputReference) CustomDomainInput() *ContainerAppIngressCustomDomain {
-	var returns *ContainerAppIngressCustomDomain
-	_jsii_.Get(
-		j,
-		"customDomainInput",
 		&returns,
 	)
 	return returns
@@ -674,17 +661,6 @@ func (c *jsiiProxy_ContainerAppIngressOutputReference) InterpolationForAttribute
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAppIngressOutputReference) PutCustomDomain(value *ContainerAppIngressCustomDomain) {
-	if err := c.validatePutCustomDomainParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		c,
-		"putCustomDomain",
-		[]interface{}{value},
-	)
-}
-
 func (c *jsiiProxy_ContainerAppIngressOutputReference) PutIpSecurityRestriction(value interface{}) {
 	if err := c.validatePutIpSecurityRestrictionParameters(value); err != nil {
 		panic(err)
@@ -711,14 +687,6 @@ func (c *jsiiProxy_ContainerAppIngressOutputReference) ResetAllowInsecureConnect
 	_jsii_.InvokeVoid(
 		c,
 		"resetAllowInsecureConnections",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ContainerAppIngressOutputReference) ResetCustomDomain() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetCustomDomain",
 		nil, // no parameters
 	)
 }

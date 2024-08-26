@@ -179,10 +179,6 @@ func (j *jsiiProxy_MachineLearningWorkspace) validateSetProvisionersParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_MachineLearningWorkspace) validateSetPublicAccessBehindVirtualNetworkEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_MachineLearningWorkspace) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
 	return nil
 }

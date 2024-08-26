@@ -123,14 +123,6 @@ func (j *jsiiProxy_StorageShareDirectory) validateSetProvisionersParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_StorageShareDirectory) validateSetShareNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_StorageShareDirectory) validateSetStorageAccountNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_StorageShareDirectory) validateSetStorageShareIdParameters(val *string) error {
 	return nil
 }

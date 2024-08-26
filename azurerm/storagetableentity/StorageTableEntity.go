@@ -5,14 +5,14 @@ package storagetableentity
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/storagetableentity/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/storagetableentity/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_table_entity azurerm_storage_table_entity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_table_entity azurerm_storage_table_entity}.
 type StorageTableEntity interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,15 +67,9 @@ type StorageTableEntity interface {
 	RowKey() *string
 	SetRowKey(val *string)
 	RowKeyInput() *string
-	StorageAccountName() *string
-	SetStorageAccountName(val *string)
-	StorageAccountNameInput() *string
 	StorageTableId() *string
 	SetStorageTableId(val *string)
 	StorageTableIdInput() *string
-	TableName() *string
-	SetTableName(val *string)
-	TableNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -132,9 +126,6 @@ type StorageTableEntity interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetStorageAccountName()
-	ResetStorageTableId()
-	ResetTableName()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -364,26 +355,6 @@ func (j *jsiiProxy_StorageTableEntity) RowKeyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StorageTableEntity) StorageAccountName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"storageAccountName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_StorageTableEntity) StorageAccountNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"storageAccountNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_StorageTableEntity) StorageTableId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -399,26 +370,6 @@ func (j *jsiiProxy_StorageTableEntity) StorageTableIdInput() *string {
 	_jsii_.Get(
 		j,
 		"storageTableIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_StorageTableEntity) TableName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tableName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_StorageTableEntity) TableNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tableNameInput",
 		&returns,
 	)
 	return returns
@@ -475,7 +426,7 @@ func (j *jsiiProxy_StorageTableEntity) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_table_entity azurerm_storage_table_entity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_table_entity azurerm_storage_table_entity} Resource.
 func NewStorageTableEntity(scope constructs.Construct, id *string, config *StorageTableEntityConfig) StorageTableEntity {
 	_init_.Initialize()
 
@@ -493,7 +444,7 @@ func NewStorageTableEntity(scope constructs.Construct, id *string, config *Stora
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_table_entity azurerm_storage_table_entity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_table_entity azurerm_storage_table_entity} Resource.
 func NewStorageTableEntity_Override(s StorageTableEntity, scope constructs.Construct, id *string, config *StorageTableEntityConfig) {
 	_init_.Initialize()
 
@@ -616,17 +567,6 @@ func (j *jsiiProxy_StorageTableEntity)SetRowKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageTableEntity)SetStorageAccountName(val *string) {
-	if err := j.validateSetStorageAccountNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"storageAccountName",
-		val,
-	)
-}
-
 func (j *jsiiProxy_StorageTableEntity)SetStorageTableId(val *string) {
 	if err := j.validateSetStorageTableIdParameters(val); err != nil {
 		panic(err)
@@ -634,17 +574,6 @@ func (j *jsiiProxy_StorageTableEntity)SetStorageTableId(val *string) {
 	_jsii_.Set(
 		j,
 		"storageTableId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_StorageTableEntity)SetTableName(val *string) {
-	if err := j.validateSetTableNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tableName",
 		val,
 	)
 }
@@ -1025,30 +954,6 @@ func (s *jsiiProxy_StorageTableEntity) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_StorageTableEntity) ResetStorageAccountName() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetStorageAccountName",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_StorageTableEntity) ResetStorageTableId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetStorageTableId",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_StorageTableEntity) ResetTableName() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetTableName",
 		nil, // no parameters
 	)
 }

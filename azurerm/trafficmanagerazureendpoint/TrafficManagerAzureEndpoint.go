@@ -5,14 +5,14 @@ package trafficmanagerazureendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/trafficmanagerazureendpoint/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/trafficmanagerazureendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint}.
 type TrafficManagerAzureEndpoint interface {
 	cdktf.TerraformResource
 	AlwaysServeEnabled() interface{}
@@ -571,7 +571,7 @@ func (j *jsiiProxy_TrafficManagerAzureEndpoint) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint} Resource.
 func NewTrafficManagerAzureEndpoint(scope constructs.Construct, id *string, config *TrafficManagerAzureEndpointConfig) TrafficManagerAzureEndpoint {
 	_init_.Initialize()
 
@@ -589,7 +589,7 @@ func NewTrafficManagerAzureEndpoint(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint} Resource.
 func NewTrafficManagerAzureEndpoint_Override(t TrafficManagerAzureEndpoint, scope constructs.Construct, id *string, config *TrafficManagerAzureEndpointConfig) {
 	_init_.Initialize()
 

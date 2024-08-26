@@ -196,22 +196,6 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetDn
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetDockerBridgeCidrParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetEbpfDataPlaneParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetInternalValueParameters(val *KubernetesClusterNetworkProfile) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -269,22 +253,6 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetNe
 }
 
 func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetNetworkPolicyParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetOutboundIpAddressIdsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetOutboundIpPrefixIdsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

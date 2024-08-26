@@ -87,10 +87,6 @@ func (j *jsiiProxy_LinuxWebAppSiteConfigOutputReference) validateSetAppCommandLi
 	return nil
 }
 
-func (j *jsiiProxy_LinuxWebAppSiteConfigOutputReference) validateSetAutoHealEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_LinuxWebAppSiteConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

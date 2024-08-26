@@ -5,14 +5,14 @@ package linuxfunctionapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/linuxfunctionapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/linuxfunctionapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/linux_function_app azurerm_linux_function_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/linux_function_app azurerm_linux_function_app}.
 type LinuxFunctionApp interface {
 	cdktf.TerraformResource
 	AppSettings() *map[string]*string
@@ -160,6 +160,9 @@ type LinuxFunctionApp interface {
 	VirtualNetworkSubnetId() *string
 	SetVirtualNetworkSubnetId(val *string)
 	VirtualNetworkSubnetIdInput() *string
+	VnetImagePullEnabled() interface{}
+	SetVnetImagePullEnabled(val interface{})
+	VnetImagePullEnabledInput() interface{}
 	WebdeployPublishBasicAuthenticationEnabled() interface{}
 	SetWebdeployPublishBasicAuthenticationEnabled(val interface{})
 	WebdeployPublishBasicAuthenticationEnabledInput() interface{}
@@ -249,6 +252,7 @@ type LinuxFunctionApp interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetVirtualNetworkSubnetId()
+	ResetVnetImagePullEnabled()
 	ResetWebdeployPublishBasicAuthenticationEnabled()
 	ResetZipDeployFile()
 	SynthesizeAttributes() *map[string]interface{}
@@ -1179,6 +1183,26 @@ func (j *jsiiProxy_LinuxFunctionApp) VirtualNetworkSubnetIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LinuxFunctionApp) VnetImagePullEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vnetImagePullEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxFunctionApp) VnetImagePullEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vnetImagePullEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LinuxFunctionApp) WebdeployPublishBasicAuthenticationEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1220,7 +1244,7 @@ func (j *jsiiProxy_LinuxFunctionApp) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/linux_function_app azurerm_linux_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/linux_function_app azurerm_linux_function_app} Resource.
 func NewLinuxFunctionApp(scope constructs.Construct, id *string, config *LinuxFunctionAppConfig) LinuxFunctionApp {
 	_init_.Initialize()
 
@@ -1238,7 +1262,7 @@ func NewLinuxFunctionApp(scope constructs.Construct, id *string, config *LinuxFu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/linux_function_app azurerm_linux_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/linux_function_app azurerm_linux_function_app} Resource.
 func NewLinuxFunctionApp_Override(l LinuxFunctionApp, scope constructs.Construct, id *string, config *LinuxFunctionAppConfig) {
 	_init_.Initialize()
 
@@ -1577,6 +1601,17 @@ func (j *jsiiProxy_LinuxFunctionApp)SetVirtualNetworkSubnetId(val *string) {
 	_jsii_.Set(
 		j,
 		"virtualNetworkSubnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxFunctionApp)SetVnetImagePullEnabled(val interface{}) {
+	if err := j.validateSetVnetImagePullEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vnetImagePullEnabled",
 		val,
 	)
 }
@@ -2283,6 +2318,14 @@ func (l *jsiiProxy_LinuxFunctionApp) ResetVirtualNetworkSubnetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetVirtualNetworkSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxFunctionApp) ResetVnetImagePullEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetVnetImagePullEnabled",
 		nil, // no parameters
 	)
 }

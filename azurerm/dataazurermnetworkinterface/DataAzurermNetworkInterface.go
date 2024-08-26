@@ -5,14 +5,14 @@ package dataazurermnetworkinterface
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermnetworkinterface/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermnetworkinterface/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/network_interface azurerm_network_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/network_interface azurerm_network_interface}.
 type DataAzurermNetworkInterface interface {
 	cdktf.TerraformDataSource
 	AcceleratedNetworkingEnabled() cdktf.IResolvable
@@ -30,8 +30,6 @@ type DataAzurermNetworkInterface interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DnsServers() *[]*string
-	EnableAcceleratedNetworking() cdktf.IResolvable
-	EnableIpForwarding() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -194,26 +192,6 @@ func (j *jsiiProxy_DataAzurermNetworkInterface) DnsServers() *[]*string {
 	_jsii_.Get(
 		j,
 		"dnsServers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermNetworkInterface) EnableAcceleratedNetworking() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"enableAcceleratedNetworking",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermNetworkInterface) EnableIpForwarding() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"enableIpForwarding",
 		&returns,
 	)
 	return returns
@@ -500,7 +478,7 @@ func (j *jsiiProxy_DataAzurermNetworkInterface) VirtualMachineId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/network_interface azurerm_network_interface} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/network_interface azurerm_network_interface} Data Source.
 func NewDataAzurermNetworkInterface(scope constructs.Construct, id *string, config *DataAzurermNetworkInterfaceConfig) DataAzurermNetworkInterface {
 	_init_.Initialize()
 
@@ -518,7 +496,7 @@ func NewDataAzurermNetworkInterface(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/network_interface azurerm_network_interface} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/network_interface azurerm_network_interface} Data Source.
 func NewDataAzurermNetworkInterface_Override(d DataAzurermNetworkInterface, scope constructs.Construct, id *string, config *DataAzurermNetworkInterfaceConfig) {
 	_init_.Initialize()
 

@@ -190,14 +190,6 @@ func (j *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputR
 	return nil
 }
 
-func (j *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference) validateSetPathParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

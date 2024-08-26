@@ -5,14 +5,14 @@ package dataazurermkubernetesclusternodepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermkubernetesclusternodepool/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermkubernetesclusternodepool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool}.
 type DataAzurermKubernetesClusterNodePool interface {
 	cdktf.TerraformDataSource
 	AutoScalingEnabled() cdktf.IResolvable
@@ -28,8 +28,6 @@ type DataAzurermKubernetesClusterNodePool interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnableAutoScaling() cdktf.IResolvable
-	EnableNodePublicIp() cdktf.IResolvable
 	EvictionPolicy() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -187,26 +185,6 @@ func (j *jsiiProxy_DataAzurermKubernetesClusterNodePool) DependsOn() *[]*string 
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermKubernetesClusterNodePool) EnableAutoScaling() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"enableAutoScaling",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermKubernetesClusterNodePool) EnableNodePublicIp() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"enableNodePublicIp",
 		&returns,
 	)
 	return returns
@@ -633,7 +611,7 @@ func (j *jsiiProxy_DataAzurermKubernetesClusterNodePool) Zones() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Data Source.
 func NewDataAzurermKubernetesClusterNodePool(scope constructs.Construct, id *string, config *DataAzurermKubernetesClusterNodePoolConfig) DataAzurermKubernetesClusterNodePool {
 	_init_.Initialize()
 
@@ -651,7 +629,7 @@ func NewDataAzurermKubernetesClusterNodePool(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Data Source.
 func NewDataAzurermKubernetesClusterNodePool_Override(d DataAzurermKubernetesClusterNodePool, scope constructs.Construct, id *string, config *DataAzurermKubernetesClusterNodePoolConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package cdnfrontdoororigin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/cdnfrontdoororigin/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/cdnfrontdoororigin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cdn_frontdoor_origin azurerm_cdn_frontdoor_origin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cdn_frontdoor_origin azurerm_cdn_frontdoor_origin}.
 type CdnFrontdoorOrigin interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -48,9 +48,6 @@ type CdnFrontdoorOrigin interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	HealthProbesEnabled() interface{}
-	SetHealthProbesEnabled(val interface{})
-	HealthProbesEnabledInput() interface{}
 	HostName() *string
 	SetHostName(val *string)
 	HostNameInput() *string
@@ -147,7 +144,6 @@ type CdnFrontdoorOrigin interface {
 	PutPrivateLink(value *CdnFrontdoorOriginPrivateLink)
 	PutTimeouts(value *CdnFrontdoorOriginTimeouts)
 	ResetEnabled()
-	ResetHealthProbesEnabled()
 	ResetHttpPort()
 	ResetHttpsPort()
 	ResetId()
@@ -312,26 +308,6 @@ func (j *jsiiProxy_CdnFrontdoorOrigin) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CdnFrontdoorOrigin) HealthProbesEnabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"healthProbesEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CdnFrontdoorOrigin) HealthProbesEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"healthProbesEnabledInput",
 		&returns,
 	)
 	return returns
@@ -618,7 +594,7 @@ func (j *jsiiProxy_CdnFrontdoorOrigin) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cdn_frontdoor_origin azurerm_cdn_frontdoor_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cdn_frontdoor_origin azurerm_cdn_frontdoor_origin} Resource.
 func NewCdnFrontdoorOrigin(scope constructs.Construct, id *string, config *CdnFrontdoorOriginConfig) CdnFrontdoorOrigin {
 	_init_.Initialize()
 
@@ -636,7 +612,7 @@ func NewCdnFrontdoorOrigin(scope constructs.Construct, id *string, config *CdnFr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cdn_frontdoor_origin azurerm_cdn_frontdoor_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cdn_frontdoor_origin azurerm_cdn_frontdoor_origin} Resource.
 func NewCdnFrontdoorOrigin_Override(c CdnFrontdoorOrigin, scope constructs.Construct, id *string, config *CdnFrontdoorOriginConfig) {
 	_init_.Initialize()
 
@@ -714,17 +690,6 @@ func (j *jsiiProxy_CdnFrontdoorOrigin)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CdnFrontdoorOrigin)SetHealthProbesEnabled(val interface{}) {
-	if err := j.validateSetHealthProbesEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"healthProbesEnabled",
 		val,
 	)
 }
@@ -1226,14 +1191,6 @@ func (c *jsiiProxy_CdnFrontdoorOrigin) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnabled",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CdnFrontdoorOrigin) ResetHealthProbesEnabled() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetHealthProbesEnabled",
 		nil, // no parameters
 	)
 }

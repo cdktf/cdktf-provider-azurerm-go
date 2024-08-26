@@ -5,14 +5,14 @@ package networkinterfaceapplicationsecuritygroupassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/networkinterfaceapplicationsecuritygroupassociation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/networkinterfaceapplicationsecuritygroupassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/network_interface_application_security_group_association azurerm_network_interface_application_security_group_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/network_interface_application_security_group_association azurerm_network_interface_application_security_group_association}.
 type NetworkInterfaceApplicationSecurityGroupAssociation interface {
 	cdktf.TerraformResource
 	ApplicationSecurityGroupId() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_NetworkInterfaceApplicationSecurityGroupAssociation) Timeouts
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/network_interface_application_security_group_association azurerm_network_interface_application_security_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/network_interface_application_security_group_association azurerm_network_interface_application_security_group_association} Resource.
 func NewNetworkInterfaceApplicationSecurityGroupAssociation(scope constructs.Construct, id *string, config *NetworkInterfaceApplicationSecurityGroupAssociationConfig) NetworkInterfaceApplicationSecurityGroupAssociation {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewNetworkInterfaceApplicationSecurityGroupAssociation(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/network_interface_application_security_group_association azurerm_network_interface_application_security_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/network_interface_application_security_group_association azurerm_network_interface_application_security_group_association} Resource.
 func NewNetworkInterfaceApplicationSecurityGroupAssociation_Override(n NetworkInterfaceApplicationSecurityGroupAssociation, scope constructs.Construct, id *string, config *NetworkInterfaceApplicationSecurityGroupAssociationConfig) {
 	_init_.Initialize()
 

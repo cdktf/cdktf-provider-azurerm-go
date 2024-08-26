@@ -71,14 +71,6 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetDn
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetDockerBridgeCidrParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetEbpfDataPlaneParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetInternalValueParameters(val *KubernetesClusterNetworkProfile) error {
 	return nil
 }
@@ -108,14 +100,6 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetNe
 }
 
 func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetNetworkPolicyParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetOutboundIpAddressIdsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) validateSetOutboundIpPrefixIdsParameters(val *[]*string) error {
 	return nil
 }
 

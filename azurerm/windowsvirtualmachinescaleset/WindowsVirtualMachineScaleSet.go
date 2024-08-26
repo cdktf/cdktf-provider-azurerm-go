@@ -5,14 +5,14 @@ package windowsvirtualmachinescaleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/windowsvirtualmachinescaleset/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/windowsvirtualmachinescaleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set}.
 type WindowsVirtualMachineScaleSet interface {
 	cdktf.TerraformResource
 	AdditionalCapabilities() WindowsVirtualMachineScaleSetAdditionalCapabilitiesOutputReference
@@ -91,8 +91,6 @@ type WindowsVirtualMachineScaleSet interface {
 	FriendlyUniqueId() *string
 	GalleryApplication() WindowsVirtualMachineScaleSetGalleryApplicationList
 	GalleryApplicationInput() interface{}
-	GalleryApplications() WindowsVirtualMachineScaleSetGalleryApplicationsList
-	GalleryApplicationsInput() interface{}
 	HealthProbeId() *string
 	SetHealthProbeId(val *string)
 	HealthProbeIdInput() *string
@@ -163,9 +161,6 @@ type WindowsVirtualMachineScaleSet interface {
 	RollingUpgradePolicyInput() *WindowsVirtualMachineScaleSetRollingUpgradePolicy
 	ScaleIn() WindowsVirtualMachineScaleSetScaleInOutputReference
 	ScaleInInput() *WindowsVirtualMachineScaleSetScaleIn
-	ScaleInPolicy() *string
-	SetScaleInPolicy(val *string)
-	ScaleInPolicyInput() *string
 	Secret() WindowsVirtualMachineScaleSetSecretList
 	SecretInput() interface{}
 	SecureBootEnabled() interface{}
@@ -187,8 +182,6 @@ type WindowsVirtualMachineScaleSet interface {
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
-	TerminateNotification() WindowsVirtualMachineScaleSetTerminateNotificationOutputReference
-	TerminateNotificationInput() *WindowsVirtualMachineScaleSetTerminateNotification
 	TerminationNotification() WindowsVirtualMachineScaleSetTerminationNotificationOutputReference
 	TerminationNotificationInput() *WindowsVirtualMachineScaleSetTerminationNotification
 	// Experimental.
@@ -271,7 +264,6 @@ type WindowsVirtualMachineScaleSet interface {
 	PutDataDisk(value interface{})
 	PutExtension(value interface{})
 	PutGalleryApplication(value interface{})
-	PutGalleryApplications(value interface{})
 	PutIdentity(value *WindowsVirtualMachineScaleSetIdentity)
 	PutNetworkInterface(value interface{})
 	PutOsDisk(value *WindowsVirtualMachineScaleSetOsDisk)
@@ -281,7 +273,6 @@ type WindowsVirtualMachineScaleSet interface {
 	PutSecret(value interface{})
 	PutSourceImageReference(value *WindowsVirtualMachineScaleSetSourceImageReference)
 	PutSpotRestore(value *WindowsVirtualMachineScaleSetSpotRestore)
-	PutTerminateNotification(value *WindowsVirtualMachineScaleSetTerminateNotification)
 	PutTerminationNotification(value *WindowsVirtualMachineScaleSetTerminationNotification)
 	PutTimeouts(value *WindowsVirtualMachineScaleSetTimeouts)
 	PutWinrmListener(value interface{})
@@ -303,7 +294,6 @@ type WindowsVirtualMachineScaleSet interface {
 	ResetExtensionOperationsEnabled()
 	ResetExtensionsTimeBudget()
 	ResetGalleryApplication()
-	ResetGalleryApplications()
 	ResetHealthProbeId()
 	ResetHostGroupId()
 	ResetId()
@@ -321,7 +311,6 @@ type WindowsVirtualMachineScaleSet interface {
 	ResetProximityPlacementGroupId()
 	ResetRollingUpgradePolicy()
 	ResetScaleIn()
-	ResetScaleInPolicy()
 	ResetSecret()
 	ResetSecureBootEnabled()
 	ResetSinglePlacementGroup()
@@ -329,7 +318,6 @@ type WindowsVirtualMachineScaleSet interface {
 	ResetSourceImageReference()
 	ResetSpotRestore()
 	ResetTags()
-	ResetTerminateNotification()
 	ResetTerminationNotification()
 	ResetTimeouts()
 	ResetTimezone()
@@ -837,26 +825,6 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSet) GalleryApplicationInput() inte
 	return returns
 }
 
-func (j *jsiiProxy_WindowsVirtualMachineScaleSet) GalleryApplications() WindowsVirtualMachineScaleSetGalleryApplicationsList {
-	var returns WindowsVirtualMachineScaleSetGalleryApplicationsList
-	_jsii_.Get(
-		j,
-		"galleryApplications",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WindowsVirtualMachineScaleSet) GalleryApplicationsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"galleryApplicationsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_WindowsVirtualMachineScaleSet) HealthProbeId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1307,26 +1275,6 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSet) ScaleInInput() *WindowsVirtual
 	return returns
 }
 
-func (j *jsiiProxy_WindowsVirtualMachineScaleSet) ScaleInPolicy() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"scaleInPolicy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WindowsVirtualMachineScaleSet) ScaleInPolicyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"scaleInPolicyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_WindowsVirtualMachineScaleSet) Secret() WindowsVirtualMachineScaleSetSecretList {
 	var returns WindowsVirtualMachineScaleSetSecretList
 	_jsii_.Get(
@@ -1482,26 +1430,6 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSet) TagsInput() *map[string]*strin
 	_jsii_.Get(
 		j,
 		"tagsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WindowsVirtualMachineScaleSet) TerminateNotification() WindowsVirtualMachineScaleSetTerminateNotificationOutputReference {
-	var returns WindowsVirtualMachineScaleSetTerminateNotificationOutputReference
-	_jsii_.Get(
-		j,
-		"terminateNotification",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WindowsVirtualMachineScaleSet) TerminateNotificationInput() *WindowsVirtualMachineScaleSetTerminateNotification {
-	var returns *WindowsVirtualMachineScaleSetTerminateNotification
-	_jsii_.Get(
-		j,
-		"terminateNotificationInput",
 		&returns,
 	)
 	return returns
@@ -1728,7 +1656,7 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSet) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set} Resource.
 func NewWindowsVirtualMachineScaleSet(scope constructs.Construct, id *string, config *WindowsVirtualMachineScaleSetConfig) WindowsVirtualMachineScaleSet {
 	_init_.Initialize()
 
@@ -1746,7 +1674,7 @@ func NewWindowsVirtualMachineScaleSet(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/windows_virtual_machine_scale_set azurerm_windows_virtual_machine_scale_set} Resource.
 func NewWindowsVirtualMachineScaleSet_Override(w WindowsVirtualMachineScaleSet, scope constructs.Construct, id *string, config *WindowsVirtualMachineScaleSetConfig) {
 	_init_.Initialize()
 
@@ -2107,17 +2035,6 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSet)SetResourceGroupName(val *strin
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WindowsVirtualMachineScaleSet)SetScaleInPolicy(val *string) {
-	if err := j.validateSetScaleInPolicyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"scaleInPolicy",
 		val,
 	)
 }
@@ -2684,17 +2601,6 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSet) PutGalleryApplication(value in
 	)
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSet) PutGalleryApplications(value interface{}) {
-	if err := w.validatePutGalleryApplicationsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		w,
-		"putGalleryApplications",
-		[]interface{}{value},
-	)
-}
-
 func (w *jsiiProxy_WindowsVirtualMachineScaleSet) PutIdentity(value *WindowsVirtualMachineScaleSetIdentity) {
 	if err := w.validatePutIdentityParameters(value); err != nil {
 		panic(err)
@@ -2790,17 +2696,6 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSet) PutSpotRestore(value *WindowsV
 	_jsii_.InvokeVoid(
 		w,
 		"putSpotRestore",
-		[]interface{}{value},
-	)
-}
-
-func (w *jsiiProxy_WindowsVirtualMachineScaleSet) PutTerminateNotification(value *WindowsVirtualMachineScaleSetTerminateNotification) {
-	if err := w.validatePutTerminateNotificationParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		w,
-		"putTerminateNotification",
 		[]interface{}{value},
 	)
 }
@@ -2982,14 +2877,6 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSet) ResetGalleryApplication() {
 	)
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSet) ResetGalleryApplications() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetGalleryApplications",
-		nil, // no parameters
-	)
-}
-
 func (w *jsiiProxy_WindowsVirtualMachineScaleSet) ResetHealthProbeId() {
 	_jsii_.InvokeVoid(
 		w,
@@ -3110,14 +2997,6 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSet) ResetScaleIn() {
 	)
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSet) ResetScaleInPolicy() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetScaleInPolicy",
-		nil, // no parameters
-	)
-}
-
 func (w *jsiiProxy_WindowsVirtualMachineScaleSet) ResetSecret() {
 	_jsii_.InvokeVoid(
 		w,
@@ -3170,14 +3049,6 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSet) ResetTags() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetTags",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WindowsVirtualMachineScaleSet) ResetTerminateNotification() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetTerminateNotification",
 		nil, // no parameters
 	)
 }

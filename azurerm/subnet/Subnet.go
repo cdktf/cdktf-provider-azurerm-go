@@ -5,14 +5,14 @@ package subnet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/subnet/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/subnet/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/subnet azurerm_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/subnet azurerm_subnet}.
 type Subnet interface {
 	cdktf.TerraformResource
 	AddressPrefixes() *[]*string
@@ -39,12 +39,6 @@ type Subnet interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnforcePrivateLinkEndpointNetworkPolicies() interface{}
-	SetEnforcePrivateLinkEndpointNetworkPolicies(val interface{})
-	EnforcePrivateLinkEndpointNetworkPoliciesInput() interface{}
-	EnforcePrivateLinkServiceNetworkPolicies() interface{}
-	SetEnforcePrivateLinkServiceNetworkPolicies(val interface{})
-	EnforcePrivateLinkServiceNetworkPoliciesInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -67,9 +61,6 @@ type Subnet interface {
 	Node() constructs.Node
 	PrivateEndpointNetworkPolicies() *string
 	SetPrivateEndpointNetworkPolicies(val *string)
-	PrivateEndpointNetworkPoliciesEnabled() interface{}
-	SetPrivateEndpointNetworkPoliciesEnabled(val interface{})
-	PrivateEndpointNetworkPoliciesEnabledInput() interface{}
 	PrivateEndpointNetworkPoliciesInput() *string
 	PrivateLinkServiceNetworkPoliciesEnabled() interface{}
 	SetPrivateLinkServiceNetworkPoliciesEnabled(val interface{})
@@ -151,14 +142,11 @@ type Subnet interface {
 	PutTimeouts(value *SubnetTimeouts)
 	ResetDefaultOutboundAccessEnabled()
 	ResetDelegation()
-	ResetEnforcePrivateLinkEndpointNetworkPolicies()
-	ResetEnforcePrivateLinkServiceNetworkPolicies()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrivateEndpointNetworkPolicies()
-	ResetPrivateEndpointNetworkPoliciesEnabled()
 	ResetPrivateLinkServiceNetworkPoliciesEnabled()
 	ResetServiceEndpointPolicyIds()
 	ResetServiceEndpoints()
@@ -291,46 +279,6 @@ func (j *jsiiProxy_Subnet) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Subnet) EnforcePrivateLinkEndpointNetworkPolicies() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enforcePrivateLinkEndpointNetworkPolicies",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Subnet) EnforcePrivateLinkEndpointNetworkPoliciesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enforcePrivateLinkEndpointNetworkPoliciesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Subnet) EnforcePrivateLinkServiceNetworkPolicies() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enforcePrivateLinkServiceNetworkPolicies",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Subnet) EnforcePrivateLinkServiceNetworkPoliciesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enforcePrivateLinkServiceNetworkPoliciesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Subnet) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -426,26 +374,6 @@ func (j *jsiiProxy_Subnet) PrivateEndpointNetworkPolicies() *string {
 	_jsii_.Get(
 		j,
 		"privateEndpointNetworkPolicies",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Subnet) PrivateEndpointNetworkPoliciesEnabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"privateEndpointNetworkPoliciesEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Subnet) PrivateEndpointNetworkPoliciesEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"privateEndpointNetworkPoliciesEnabledInput",
 		&returns,
 	)
 	return returns
@@ -642,7 +570,7 @@ func (j *jsiiProxy_Subnet) VirtualNetworkNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/subnet azurerm_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/subnet azurerm_subnet} Resource.
 func NewSubnet(scope constructs.Construct, id *string, config *SubnetConfig) Subnet {
 	_init_.Initialize()
 
@@ -660,7 +588,7 @@ func NewSubnet(scope constructs.Construct, id *string, config *SubnetConfig) Sub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/subnet azurerm_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/subnet azurerm_subnet} Resource.
 func NewSubnet_Override(s Subnet, scope constructs.Construct, id *string, config *SubnetConfig) {
 	_init_.Initialize()
 
@@ -723,28 +651,6 @@ func (j *jsiiProxy_Subnet)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Subnet)SetEnforcePrivateLinkEndpointNetworkPolicies(val interface{}) {
-	if err := j.validateSetEnforcePrivateLinkEndpointNetworkPoliciesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enforcePrivateLinkEndpointNetworkPolicies",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Subnet)SetEnforcePrivateLinkServiceNetworkPolicies(val interface{}) {
-	if err := j.validateSetEnforcePrivateLinkServiceNetworkPoliciesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enforcePrivateLinkServiceNetworkPolicies",
-		val,
-	)
-}
-
 func (j *jsiiProxy_Subnet)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -793,17 +699,6 @@ func (j *jsiiProxy_Subnet)SetPrivateEndpointNetworkPolicies(val *string) {
 	_jsii_.Set(
 		j,
 		"privateEndpointNetworkPolicies",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Subnet)SetPrivateEndpointNetworkPoliciesEnabled(val interface{}) {
-	if err := j.validateSetPrivateEndpointNetworkPoliciesEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"privateEndpointNetworkPoliciesEnabled",
 		val,
 	)
 }
@@ -1273,22 +1168,6 @@ func (s *jsiiProxy_Subnet) ResetDelegation() {
 	)
 }
 
-func (s *jsiiProxy_Subnet) ResetEnforcePrivateLinkEndpointNetworkPolicies() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetEnforcePrivateLinkEndpointNetworkPolicies",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_Subnet) ResetEnforcePrivateLinkServiceNetworkPolicies() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetEnforcePrivateLinkServiceNetworkPolicies",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_Subnet) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1309,14 +1188,6 @@ func (s *jsiiProxy_Subnet) ResetPrivateEndpointNetworkPolicies() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPrivateEndpointNetworkPolicies",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_Subnet) ResetPrivateEndpointNetworkPoliciesEnabled() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetPrivateEndpointNetworkPoliciesEnabled",
 		nil, // no parameters
 	)
 }

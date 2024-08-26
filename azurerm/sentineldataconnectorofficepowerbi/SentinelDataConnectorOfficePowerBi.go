@@ -5,14 +5,14 @@ package sentineldataconnectorofficepowerbi
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/sentineldataconnectorofficepowerbi/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/sentineldataconnectorofficepowerbi/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_data_connector_office_power_bi azurerm_sentinel_data_connector_office_power_bi}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_data_connector_office_power_bi azurerm_sentinel_data_connector_office_power_bi}.
 type SentinelDataConnectorOfficePowerBi interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_SentinelDataConnectorOfficePowerBi) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_data_connector_office_power_bi azurerm_sentinel_data_connector_office_power_bi} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_data_connector_office_power_bi azurerm_sentinel_data_connector_office_power_bi} Resource.
 func NewSentinelDataConnectorOfficePowerBi(scope constructs.Construct, id *string, config *SentinelDataConnectorOfficePowerBiConfig) SentinelDataConnectorOfficePowerBi {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewSentinelDataConnectorOfficePowerBi(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_data_connector_office_power_bi azurerm_sentinel_data_connector_office_power_bi} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_data_connector_office_power_bi azurerm_sentinel_data_connector_office_power_bi} Resource.
 func NewSentinelDataConnectorOfficePowerBi_Override(s SentinelDataConnectorOfficePowerBi, scope constructs.Construct, id *string, config *SentinelDataConnectorOfficePowerBiConfig) {
 	_init_.Initialize()
 

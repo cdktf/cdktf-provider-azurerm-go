@@ -135,10 +135,6 @@ func (j *jsiiProxy_MachineLearningComputeInstance) validateSetLocalAuthEnabledPa
 	return nil
 }
 
-func (j *jsiiProxy_MachineLearningComputeInstance) validateSetLocationParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_MachineLearningComputeInstance) validateSetMachineLearningWorkspaceIdParameters(val *string) error {
 	return nil
 }

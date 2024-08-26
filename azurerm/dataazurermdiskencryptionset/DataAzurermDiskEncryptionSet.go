@@ -5,14 +5,14 @@ package dataazurermdiskencryptionset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermdiskencryptionset/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermdiskencryptionset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/disk_encryption_set azurerm_disk_encryption_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/disk_encryption_set azurerm_disk_encryption_set}.
 type DataAzurermDiskEncryptionSet interface {
 	cdktf.TerraformDataSource
 	AutoKeyRotationEnabled() cdktf.IResolvable
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DataAzurermDiskEncryptionSet) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/disk_encryption_set azurerm_disk_encryption_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/disk_encryption_set azurerm_disk_encryption_set} Data Source.
 func NewDataAzurermDiskEncryptionSet(scope constructs.Construct, id *string, config *DataAzurermDiskEncryptionSetConfig) DataAzurermDiskEncryptionSet {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewDataAzurermDiskEncryptionSet(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/disk_encryption_set azurerm_disk_encryption_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/disk_encryption_set azurerm_disk_encryption_set} Data Source.
 func NewDataAzurermDiskEncryptionSet_Override(d DataAzurermDiskEncryptionSet, scope constructs.Construct, id *string, config *DataAzurermDiskEncryptionSetConfig) {
 	_init_.Initialize()
 

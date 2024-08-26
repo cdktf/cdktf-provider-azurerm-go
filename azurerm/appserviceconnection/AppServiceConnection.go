@@ -5,14 +5,14 @@ package appserviceconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/appserviceconnection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/appserviceconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_service_connection azurerm_app_service_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_service_connection azurerm_app_service_connection}.
 type AppServiceConnection interface {
 	cdktf.TerraformResource
 	AppServiceId() *string
@@ -498,7 +498,7 @@ func (j *jsiiProxy_AppServiceConnection) VnetSolutionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_service_connection azurerm_app_service_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_service_connection azurerm_app_service_connection} Resource.
 func NewAppServiceConnection(scope constructs.Construct, id *string, config *AppServiceConnectionConfig) AppServiceConnection {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewAppServiceConnection(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_service_connection azurerm_app_service_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_service_connection azurerm_app_service_connection} Resource.
 func NewAppServiceConnection_Override(a AppServiceConnection, scope constructs.Construct, id *string, config *AppServiceConnectionConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package applicationsecuritygroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/applicationsecuritygroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/applicationsecuritygroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/application_security_group azurerm_application_security_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/application_security_group azurerm_application_security_group}.
 type ApplicationSecurityGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_ApplicationSecurityGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/application_security_group azurerm_application_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/application_security_group azurerm_application_security_group} Resource.
 func NewApplicationSecurityGroup(scope constructs.Construct, id *string, config *ApplicationSecurityGroupConfig) ApplicationSecurityGroup {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewApplicationSecurityGroup(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/application_security_group azurerm_application_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/application_security_group azurerm_application_security_group} Resource.
 func NewApplicationSecurityGroup_Override(a ApplicationSecurityGroup, scope constructs.Construct, id *string, config *ApplicationSecurityGroupConfig) {
 	_init_.Initialize()
 

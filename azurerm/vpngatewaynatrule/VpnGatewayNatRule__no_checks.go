@@ -111,15 +111,7 @@ func (j *jsiiProxy_VpnGatewayNatRule) validateSetCountParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_VpnGatewayNatRule) validateSetExternalAddressSpaceMappingsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_VpnGatewayNatRule) validateSetIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_VpnGatewayNatRule) validateSetInternalAddressSpaceMappingsParameters(val *[]*string) error {
 	return nil
 }
 
@@ -140,10 +132,6 @@ func (j *jsiiProxy_VpnGatewayNatRule) validateSetNameParameters(val *string) err
 }
 
 func (j *jsiiProxy_VpnGatewayNatRule) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_VpnGatewayNatRule) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }
 

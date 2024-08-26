@@ -5,9 +5,9 @@ package dnszone
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dnszone/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dnszone/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -38,8 +38,6 @@ type DnsZoneSoaRecordOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	HostName() *string
-	SetHostName(val *string)
-	HostNameInput() *string
 	InternalValue() *DnsZoneSoaRecord
 	SetInternalValue(val *DnsZoneSoaRecord)
 	MinimumTtl() *float64
@@ -93,7 +91,6 @@ type DnsZoneSoaRecordOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetExpireTime()
-	ResetHostName()
 	ResetMinimumTtl()
 	ResetRefreshTime()
 	ResetRetryTime()
@@ -210,16 +207,6 @@ func (j *jsiiProxy_DnsZoneSoaRecordOutputReference) HostName() *string {
 	_jsii_.Get(
 		j,
 		"hostName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DnsZoneSoaRecordOutputReference) HostNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"hostNameInput",
 		&returns,
 	)
 	return returns
@@ -443,17 +430,6 @@ func (j *jsiiProxy_DnsZoneSoaRecordOutputReference)SetExpireTime(val *float64) {
 	_jsii_.Set(
 		j,
 		"expireTime",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DnsZoneSoaRecordOutputReference)SetHostName(val *string) {
-	if err := j.validateSetHostNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"hostName",
 		val,
 	)
 }
@@ -747,14 +723,6 @@ func (d *jsiiProxy_DnsZoneSoaRecordOutputReference) ResetExpireTime() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetExpireTime",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DnsZoneSoaRecordOutputReference) ResetHostName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetHostName",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package apimanagementcustomdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/apimanagementcustomdomain/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/apimanagementcustomdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_custom_domain azurerm_api_management_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_custom_domain azurerm_api_management_custom_domain}.
 type ApiManagementCustomDomain interface {
 	cdktf.TerraformResource
 	ApiManagementId() *string
@@ -477,7 +477,7 @@ func (j *jsiiProxy_ApiManagementCustomDomain) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_custom_domain azurerm_api_management_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_custom_domain azurerm_api_management_custom_domain} Resource.
 func NewApiManagementCustomDomain(scope constructs.Construct, id *string, config *ApiManagementCustomDomainConfig) ApiManagementCustomDomain {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewApiManagementCustomDomain(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_custom_domain azurerm_api_management_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_custom_domain azurerm_api_management_custom_domain} Resource.
 func NewApiManagementCustomDomain_Override(a ApiManagementCustomDomain, scope constructs.Construct, id *string, config *ApiManagementCustomDomainConfig) {
 	_init_.Initialize()
 

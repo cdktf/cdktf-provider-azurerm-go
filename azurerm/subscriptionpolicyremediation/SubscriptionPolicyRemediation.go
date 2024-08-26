@@ -5,14 +5,14 @@ package subscriptionpolicyremediation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/subscriptionpolicyremediation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/subscriptionpolicyremediation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/subscription_policy_remediation azurerm_subscription_policy_remediation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/subscription_policy_remediation azurerm_subscription_policy_remediation}.
 type SubscriptionPolicyRemediation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,9 +63,6 @@ type SubscriptionPolicyRemediation interface {
 	PolicyAssignmentId() *string
 	SetPolicyAssignmentId(val *string)
 	PolicyAssignmentIdInput() *string
-	PolicyDefinitionId() *string
-	SetPolicyDefinitionId(val *string)
-	PolicyDefinitionIdInput() *string
 	PolicyDefinitionReferenceId() *string
 	SetPolicyDefinitionReferenceId(val *string)
 	PolicyDefinitionReferenceIdInput() *string
@@ -147,7 +144,6 @@ type SubscriptionPolicyRemediation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParallelDeployments()
-	ResetPolicyDefinitionId()
 	ResetPolicyDefinitionReferenceId()
 	ResetResourceCount()
 	ResetResourceDiscoveryMode()
@@ -390,26 +386,6 @@ func (j *jsiiProxy_SubscriptionPolicyRemediation) PolicyAssignmentIdInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_SubscriptionPolicyRemediation) PolicyDefinitionId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyDefinitionId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SubscriptionPolicyRemediation) PolicyDefinitionIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyDefinitionIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SubscriptionPolicyRemediation) PolicyDefinitionReferenceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -571,7 +547,7 @@ func (j *jsiiProxy_SubscriptionPolicyRemediation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/subscription_policy_remediation azurerm_subscription_policy_remediation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/subscription_policy_remediation azurerm_subscription_policy_remediation} Resource.
 func NewSubscriptionPolicyRemediation(scope constructs.Construct, id *string, config *SubscriptionPolicyRemediationConfig) SubscriptionPolicyRemediation {
 	_init_.Initialize()
 
@@ -589,7 +565,7 @@ func NewSubscriptionPolicyRemediation(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/subscription_policy_remediation azurerm_subscription_policy_remediation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/subscription_policy_remediation azurerm_subscription_policy_remediation} Resource.
 func NewSubscriptionPolicyRemediation_Override(s SubscriptionPolicyRemediation, scope constructs.Construct, id *string, config *SubscriptionPolicyRemediationConfig) {
 	_init_.Initialize()
 
@@ -711,17 +687,6 @@ func (j *jsiiProxy_SubscriptionPolicyRemediation)SetPolicyAssignmentId(val *stri
 	_jsii_.Set(
 		j,
 		"policyAssignmentId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SubscriptionPolicyRemediation)SetPolicyDefinitionId(val *string) {
-	if err := j.validateSetPolicyDefinitionIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"policyDefinitionId",
 		val,
 	)
 }
@@ -1189,14 +1154,6 @@ func (s *jsiiProxy_SubscriptionPolicyRemediation) ResetParallelDeployments() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetParallelDeployments",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SubscriptionPolicyRemediation) ResetPolicyDefinitionId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetPolicyDefinitionId",
 		nil, // no parameters
 	)
 }

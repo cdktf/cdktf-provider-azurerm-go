@@ -5,14 +5,14 @@ package appservicevirtualnetworkswiftconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/appservicevirtualnetworkswiftconnection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/appservicevirtualnetworkswiftconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_service_virtual_network_swift_connection azurerm_app_service_virtual_network_swift_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_service_virtual_network_swift_connection azurerm_app_service_virtual_network_swift_connection}.
 type AppServiceVirtualNetworkSwiftConnection interface {
 	cdktf.TerraformResource
 	AppServiceId() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_AppServiceVirtualNetworkSwiftConnection) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_service_virtual_network_swift_connection azurerm_app_service_virtual_network_swift_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_service_virtual_network_swift_connection azurerm_app_service_virtual_network_swift_connection} Resource.
 func NewAppServiceVirtualNetworkSwiftConnection(scope constructs.Construct, id *string, config *AppServiceVirtualNetworkSwiftConnectionConfig) AppServiceVirtualNetworkSwiftConnection {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewAppServiceVirtualNetworkSwiftConnection(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_service_virtual_network_swift_connection azurerm_app_service_virtual_network_swift_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_service_virtual_network_swift_connection azurerm_app_service_virtual_network_swift_connection} Resource.
 func NewAppServiceVirtualNetworkSwiftConnection_Override(a AppServiceVirtualNetworkSwiftConnection, scope constructs.Construct, id *string, config *AppServiceVirtualNetworkSwiftConnectionConfig) {
 	_init_.Initialize()
 

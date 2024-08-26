@@ -5,14 +5,14 @@ package automationvariablebool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/automationvariablebool/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/automationvariablebool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_variable_bool azurerm_automation_variable_bool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_variable_bool azurerm_automation_variable_bool}.
 type AutomationVariableBool interface {
 	cdktf.TerraformResource
 	AutomationAccountName() *string
@@ -475,7 +475,7 @@ func (j *jsiiProxy_AutomationVariableBool) ValueInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_variable_bool azurerm_automation_variable_bool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_variable_bool azurerm_automation_variable_bool} Resource.
 func NewAutomationVariableBool(scope constructs.Construct, id *string, config *AutomationVariableBoolConfig) AutomationVariableBool {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewAutomationVariableBool(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_variable_bool azurerm_automation_variable_bool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_variable_bool azurerm_automation_variable_bool} Resource.
 func NewAutomationVariableBool_Override(a AutomationVariableBool, scope constructs.Construct, id *string, config *AutomationVariableBoolConfig) {
 	_init_.Initialize()
 

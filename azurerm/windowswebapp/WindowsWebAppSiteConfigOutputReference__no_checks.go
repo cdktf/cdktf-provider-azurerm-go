@@ -95,10 +95,6 @@ func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateSetAppCommand
 	return nil
 }
 
-func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateSetAutoHealEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

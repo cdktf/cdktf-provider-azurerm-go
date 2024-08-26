@@ -5,14 +5,14 @@ package dataazurermnotificationhubnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermnotificationhubnamespace/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermnotificationhubnamespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/notification_hub_namespace azurerm_notification_hub_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/notification_hub_namespace azurerm_notification_hub_namespace}.
 type DataAzurermNotificationHubNamespace interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_DataAzurermNotificationHubNamespace) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/notification_hub_namespace azurerm_notification_hub_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/notification_hub_namespace azurerm_notification_hub_namespace} Data Source.
 func NewDataAzurermNotificationHubNamespace(scope constructs.Construct, id *string, config *DataAzurermNotificationHubNamespaceConfig) DataAzurermNotificationHubNamespace {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewDataAzurermNotificationHubNamespace(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/notification_hub_namespace azurerm_notification_hub_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/notification_hub_namespace azurerm_notification_hub_namespace} Data Source.
 func NewDataAzurermNotificationHubNamespace_Override(d DataAzurermNotificationHubNamespace, scope constructs.Construct, id *string, config *DataAzurermNotificationHubNamespaceConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package apimanagementapioperation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/apimanagementapioperation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/apimanagementapioperation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_api_operation azurerm_api_management_api_operation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_api_operation azurerm_api_management_api_operation}.
 type ApiManagementApiOperation interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -591,7 +591,7 @@ func (j *jsiiProxy_ApiManagementApiOperation) UrlTemplateInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_api_operation azurerm_api_management_api_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_api_operation azurerm_api_management_api_operation} Resource.
 func NewApiManagementApiOperation(scope constructs.Construct, id *string, config *ApiManagementApiOperationConfig) ApiManagementApiOperation {
 	_init_.Initialize()
 
@@ -609,7 +609,7 @@ func NewApiManagementApiOperation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_api_operation azurerm_api_management_api_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_api_operation azurerm_api_management_api_operation} Resource.
 func NewApiManagementApiOperation_Override(a ApiManagementApiOperation, scope constructs.Construct, id *string, config *ApiManagementApiOperationConfig) {
 	_init_.Initialize()
 

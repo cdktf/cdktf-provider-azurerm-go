@@ -5,14 +5,14 @@ package lbbackendaddresspooladdress
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/lbbackendaddresspooladdress/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/lbbackendaddresspooladdress/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/lb_backend_address_pool_address azurerm_lb_backend_address_pool_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/lb_backend_address_pool_address azurerm_lb_backend_address_pool_address}.
 type LbBackendAddressPoolAddress interface {
 	cdktf.TerraformResource
 	BackendAddressIpConfigurationId() *string
@@ -463,7 +463,7 @@ func (j *jsiiProxy_LbBackendAddressPoolAddress) VirtualNetworkIdInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/lb_backend_address_pool_address azurerm_lb_backend_address_pool_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/lb_backend_address_pool_address azurerm_lb_backend_address_pool_address} Resource.
 func NewLbBackendAddressPoolAddress(scope constructs.Construct, id *string, config *LbBackendAddressPoolAddressConfig) LbBackendAddressPoolAddress {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewLbBackendAddressPoolAddress(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/lb_backend_address_pool_address azurerm_lb_backend_address_pool_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/lb_backend_address_pool_address azurerm_lb_backend_address_pool_address} Resource.
 func NewLbBackendAddressPoolAddress_Override(l LbBackendAddressPoolAddress, scope constructs.Construct, id *string, config *LbBackendAddressPoolAddressConfig) {
 	_init_.Initialize()
 

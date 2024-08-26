@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12
+module github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13
 
 go 1.18
 

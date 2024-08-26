@@ -5,14 +5,14 @@ package eventhubnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/eventhubnamespace/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/eventhubnamespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/eventhub_namespace azurerm_eventhub_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/eventhub_namespace azurerm_eventhub_namespace}.
 type EventhubNamespace interface {
 	cdktf.TerraformResource
 	AutoInflateEnabled() interface{}
@@ -112,9 +112,6 @@ type EventhubNamespace interface {
 	TerraformResourceType() *string
 	Timeouts() EventhubNamespaceTimeoutsOutputReference
 	TimeoutsInput() interface{}
-	ZoneRedundant() interface{}
-	SetZoneRedundant(val interface{})
-	ZoneRedundantInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -176,7 +173,6 @@ type EventhubNamespace interface {
 	ResetPublicNetworkAccessEnabled()
 	ResetTags()
 	ResetTimeouts()
-	ResetZoneRedundant()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -735,28 +731,8 @@ func (j *jsiiProxy_EventhubNamespace) TimeoutsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EventhubNamespace) ZoneRedundant() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"zoneRedundant",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_EventhubNamespace) ZoneRedundantInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"zoneRedundantInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/eventhub_namespace azurerm_eventhub_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/eventhub_namespace azurerm_eventhub_namespace} Resource.
 func NewEventhubNamespace(scope constructs.Construct, id *string, config *EventhubNamespaceConfig) EventhubNamespace {
 	_init_.Initialize()
 
@@ -774,7 +750,7 @@ func NewEventhubNamespace(scope constructs.Construct, id *string, config *Eventh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/eventhub_namespace azurerm_eventhub_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/eventhub_namespace azurerm_eventhub_namespace} Resource.
 func NewEventhubNamespace_Override(e EventhubNamespace, scope constructs.Construct, id *string, config *EventhubNamespaceConfig) {
 	_init_.Initialize()
 
@@ -992,17 +968,6 @@ func (j *jsiiProxy_EventhubNamespace)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
-		val,
-	)
-}
-
-func (j *jsiiProxy_EventhubNamespace)SetZoneRedundant(val interface{}) {
-	if err := j.validateSetZoneRedundantParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"zoneRedundant",
 		val,
 	)
 }
@@ -1493,14 +1458,6 @@ func (e *jsiiProxy_EventhubNamespace) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTimeouts",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_EventhubNamespace) ResetZoneRedundant() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetZoneRedundant",
 		nil, // no parameters
 	)
 }

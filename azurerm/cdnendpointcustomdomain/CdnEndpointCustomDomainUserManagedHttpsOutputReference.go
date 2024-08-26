@@ -5,9 +5,9 @@ package cdnendpointcustomdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/cdnendpointcustomdomain/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/cdnendpointcustomdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -32,9 +32,6 @@ type CdnEndpointCustomDomainUserManagedHttpsOutputReference interface {
 	Fqn() *string
 	InternalValue() *CdnEndpointCustomDomainUserManagedHttps
 	SetInternalValue(val *CdnEndpointCustomDomainUserManagedHttps)
-	KeyVaultCertificateId() *string
-	SetKeyVaultCertificateId(val *string)
-	KeyVaultCertificateIdInput() *string
 	KeyVaultSecretId() *string
 	SetKeyVaultSecretId(val *string)
 	KeyVaultSecretIdInput() *string
@@ -73,8 +70,6 @@ type CdnEndpointCustomDomainUserManagedHttpsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetKeyVaultCertificateId()
-	ResetKeyVaultSecretId()
 	ResetTlsVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -136,26 +131,6 @@ func (j *jsiiProxy_CdnEndpointCustomDomainUserManagedHttpsOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CdnEndpointCustomDomainUserManagedHttpsOutputReference) KeyVaultCertificateId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"keyVaultCertificateId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CdnEndpointCustomDomainUserManagedHttpsOutputReference) KeyVaultCertificateIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"keyVaultCertificateIdInput",
 		&returns,
 	)
 	return returns
@@ -278,17 +253,6 @@ func (j *jsiiProxy_CdnEndpointCustomDomainUserManagedHttpsOutputReference)SetInt
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CdnEndpointCustomDomainUserManagedHttpsOutputReference)SetKeyVaultCertificateId(val *string) {
-	if err := j.validateSetKeyVaultCertificateIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"keyVaultCertificateId",
 		val,
 	)
 }
@@ -521,22 +485,6 @@ func (c *jsiiProxy_CdnEndpointCustomDomainUserManagedHttpsOutputReference) Inter
 	)
 
 	return returns
-}
-
-func (c *jsiiProxy_CdnEndpointCustomDomainUserManagedHttpsOutputReference) ResetKeyVaultCertificateId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetKeyVaultCertificateId",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CdnEndpointCustomDomainUserManagedHttpsOutputReference) ResetKeyVaultSecretId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetKeyVaultSecretId",
-		nil, // no parameters
-	)
 }
 
 func (c *jsiiProxy_CdnEndpointCustomDomainUserManagedHttpsOutputReference) ResetTlsVersion() {

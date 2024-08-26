@@ -5,14 +5,14 @@ package virtualmachineruncommand
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/virtualmachineruncommand/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/virtualmachineruncommand/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_machine_run_command azurerm_virtual_machine_run_command}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_machine_run_command azurerm_virtual_machine_run_command}.
 type VirtualMachineRunCommand interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -653,7 +653,7 @@ func (j *jsiiProxy_VirtualMachineRunCommand) VirtualMachineIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_machine_run_command azurerm_virtual_machine_run_command} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_machine_run_command azurerm_virtual_machine_run_command} Resource.
 func NewVirtualMachineRunCommand(scope constructs.Construct, id *string, config *VirtualMachineRunCommandConfig) VirtualMachineRunCommand {
 	_init_.Initialize()
 
@@ -671,7 +671,7 @@ func NewVirtualMachineRunCommand(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_machine_run_command azurerm_virtual_machine_run_command} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_machine_run_command azurerm_virtual_machine_run_command} Resource.
 func NewVirtualMachineRunCommand_Override(v VirtualMachineRunCommand, scope constructs.Construct, id *string, config *VirtualMachineRunCommandConfig) {
 	_init_.Initialize()
 

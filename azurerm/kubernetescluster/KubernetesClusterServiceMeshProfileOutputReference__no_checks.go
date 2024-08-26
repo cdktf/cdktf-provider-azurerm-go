@@ -79,6 +79,10 @@ func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) validateSetRevisionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

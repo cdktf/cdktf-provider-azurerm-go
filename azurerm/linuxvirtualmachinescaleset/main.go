@@ -64,8 +64,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
 			_jsii_.MemberProperty{JsiiProperty: "galleryApplication", GoGetter: "GalleryApplication"},
 			_jsii_.MemberProperty{JsiiProperty: "galleryApplicationInput", GoGetter: "GalleryApplicationInput"},
-			_jsii_.MemberProperty{JsiiProperty: "galleryApplications", GoGetter: "GalleryApplications"},
-			_jsii_.MemberProperty{JsiiProperty: "galleryApplicationsInput", GoGetter: "GalleryApplicationsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
@@ -126,7 +124,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putDataDisk", GoMethod: "PutDataDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "putExtension", GoMethod: "PutExtension"},
 			_jsii_.MemberMethod{JsiiMethod: "putGalleryApplication", GoMethod: "PutGalleryApplication"},
-			_jsii_.MemberMethod{JsiiMethod: "putGalleryApplications", GoMethod: "PutGalleryApplications"},
 			_jsii_.MemberMethod{JsiiMethod: "putIdentity", GoMethod: "PutIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkInterface", GoMethod: "PutNetworkInterface"},
 			_jsii_.MemberMethod{JsiiMethod: "putOsDisk", GoMethod: "PutOsDisk"},
@@ -136,7 +133,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSecret", GoMethod: "PutSecret"},
 			_jsii_.MemberMethod{JsiiMethod: "putSourceImageReference", GoMethod: "PutSourceImageReference"},
 			_jsii_.MemberMethod{JsiiMethod: "putSpotRestore", GoMethod: "PutSpotRestore"},
-			_jsii_.MemberMethod{JsiiMethod: "putTerminateNotification", GoMethod: "PutTerminateNotification"},
 			_jsii_.MemberMethod{JsiiMethod: "putTerminationNotification", GoMethod: "PutTerminationNotification"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -159,7 +155,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetExtensionOperationsEnabled", GoMethod: "ResetExtensionOperationsEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExtensionsTimeBudget", GoMethod: "ResetExtensionsTimeBudget"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGalleryApplication", GoMethod: "ResetGalleryApplication"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGalleryApplications", GoMethod: "ResetGalleryApplications"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHealthProbeId", GoMethod: "ResetHealthProbeId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHostGroupId", GoMethod: "ResetHostGroupId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -175,7 +170,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetProximityPlacementGroupId", GoMethod: "ResetProximityPlacementGroupId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRollingUpgradePolicy", GoMethod: "ResetRollingUpgradePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScaleIn", GoMethod: "ResetScaleIn"},
-			_jsii_.MemberMethod{JsiiMethod: "resetScaleInPolicy", GoMethod: "ResetScaleInPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecret", GoMethod: "ResetSecret"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecureBootEnabled", GoMethod: "ResetSecureBootEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSinglePlacementGroup", GoMethod: "ResetSinglePlacementGroup"},
@@ -183,7 +177,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSourceImageReference", GoMethod: "ResetSourceImageReference"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSpotRestore", GoMethod: "ResetSpotRestore"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTerminateNotification", GoMethod: "ResetTerminateNotification"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTerminationNotification", GoMethod: "ResetTerminationNotification"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUpgradeMode", GoMethod: "ResetUpgradeMode"},
@@ -197,8 +190,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rollingUpgradePolicyInput", GoGetter: "RollingUpgradePolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "scaleIn", GoGetter: "ScaleIn"},
 			_jsii_.MemberProperty{JsiiProperty: "scaleInInput", GoGetter: "ScaleInInput"},
-			_jsii_.MemberProperty{JsiiProperty: "scaleInPolicy", GoGetter: "ScaleInPolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "scaleInPolicyInput", GoGetter: "ScaleInPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "secret", GoGetter: "Secret"},
 			_jsii_.MemberProperty{JsiiProperty: "secretInput", GoGetter: "SecretInput"},
 			_jsii_.MemberProperty{JsiiProperty: "secureBootEnabled", GoGetter: "SecureBootEnabled"},
@@ -217,8 +208,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
 			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terminateNotification", GoGetter: "TerminateNotification"},
-			_jsii_.MemberProperty{JsiiProperty: "terminateNotificationInput", GoGetter: "TerminateNotificationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terminationNotification", GoGetter: "TerminationNotification"},
 			_jsii_.MemberProperty{JsiiProperty: "terminationNotificationInput", GoGetter: "TerminationNotificationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -753,75 +742,6 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LinuxVirtualMachineScaleSetGalleryApplicationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-azurerm.linuxVirtualMachineScaleSet.LinuxVirtualMachineScaleSetGalleryApplications",
-		reflect.TypeOf((*LinuxVirtualMachineScaleSetGalleryApplications)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.linuxVirtualMachineScaleSet.LinuxVirtualMachineScaleSetGalleryApplicationsList",
-		reflect.TypeOf((*LinuxVirtualMachineScaleSetGalleryApplicationsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_LinuxVirtualMachineScaleSetGalleryApplicationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.linuxVirtualMachineScaleSet.LinuxVirtualMachineScaleSetGalleryApplicationsOutputReference",
-		reflect.TypeOf((*LinuxVirtualMachineScaleSetGalleryApplicationsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "configurationReferenceBlobUri", GoGetter: "ConfigurationReferenceBlobUri"},
-			_jsii_.MemberProperty{JsiiProperty: "configurationReferenceBlobUriInput", GoGetter: "ConfigurationReferenceBlobUriInput"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "order", GoGetter: "Order"},
-			_jsii_.MemberProperty{JsiiProperty: "orderInput", GoGetter: "OrderInput"},
-			_jsii_.MemberProperty{JsiiProperty: "packageReferenceId", GoGetter: "PackageReferenceId"},
-			_jsii_.MemberProperty{JsiiProperty: "packageReferenceIdInput", GoGetter: "PackageReferenceIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConfigurationReferenceBlobUri", GoMethod: "ResetConfigurationReferenceBlobUri"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOrder", GoMethod: "ResetOrder"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTag", GoMethod: "ResetTag"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "tag", GoGetter: "Tag"},
-			_jsii_.MemberProperty{JsiiProperty: "tagInput", GoGetter: "TagInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_LinuxVirtualMachineScaleSetGalleryApplicationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -1612,47 +1532,6 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LinuxVirtualMachineScaleSetSpotRestoreOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-azurerm.linuxVirtualMachineScaleSet.LinuxVirtualMachineScaleSetTerminateNotification",
-		reflect.TypeOf((*LinuxVirtualMachineScaleSetTerminateNotification)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.linuxVirtualMachineScaleSet.LinuxVirtualMachineScaleSetTerminateNotificationOutputReference",
-		reflect.TypeOf((*LinuxVirtualMachineScaleSetTerminateNotificationOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTimeout", GoMethod: "ResetTimeout"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberProperty{JsiiProperty: "timeout", GoGetter: "Timeout"},
-			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_LinuxVirtualMachineScaleSetTerminateNotificationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

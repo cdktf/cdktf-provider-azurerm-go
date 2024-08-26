@@ -59,15 +59,7 @@ func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) validateSetDockerImageParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) validateSetDockerImageNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) validateSetDockerImageTagParameters(val *string) error {
 	return nil
 }
 

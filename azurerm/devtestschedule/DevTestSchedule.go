@@ -5,14 +5,14 @@ package devtestschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/devtestschedule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/devtestschedule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/dev_test_schedule azurerm_dev_test_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/dev_test_schedule azurerm_dev_test_schedule}.
 type DevTestSchedule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -615,7 +615,7 @@ func (j *jsiiProxy_DevTestSchedule) WeeklyRecurrenceInput() *DevTestScheduleWeek
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/dev_test_schedule azurerm_dev_test_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/dev_test_schedule azurerm_dev_test_schedule} Resource.
 func NewDevTestSchedule(scope constructs.Construct, id *string, config *DevTestScheduleConfig) DevTestSchedule {
 	_init_.Initialize()
 
@@ -633,7 +633,7 @@ func NewDevTestSchedule(scope constructs.Construct, id *string, config *DevTestS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/dev_test_schedule azurerm_dev_test_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/dev_test_schedule azurerm_dev_test_schedule} Resource.
 func NewDevTestSchedule_Override(d DevTestSchedule, scope constructs.Construct, id *string, config *DevTestScheduleConfig) {
 	_init_.Initialize()
 

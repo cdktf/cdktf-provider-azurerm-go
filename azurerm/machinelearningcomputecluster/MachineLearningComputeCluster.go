@@ -5,14 +5,14 @@ package machinelearningcomputecluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/machinelearningcomputecluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/machinelearningcomputecluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/machine_learning_compute_cluster azurerm_machine_learning_compute_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/machine_learning_compute_cluster azurerm_machine_learning_compute_cluster}.
 type MachineLearningComputeCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -664,7 +664,7 @@ func (j *jsiiProxy_MachineLearningComputeCluster) VmSizeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/machine_learning_compute_cluster azurerm_machine_learning_compute_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/machine_learning_compute_cluster azurerm_machine_learning_compute_cluster} Resource.
 func NewMachineLearningComputeCluster(scope constructs.Construct, id *string, config *MachineLearningComputeClusterConfig) MachineLearningComputeCluster {
 	_init_.Initialize()
 
@@ -682,7 +682,7 @@ func NewMachineLearningComputeCluster(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/machine_learning_compute_cluster azurerm_machine_learning_compute_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/machine_learning_compute_cluster azurerm_machine_learning_compute_cluster} Resource.
 func NewMachineLearningComputeCluster_Override(m MachineLearningComputeCluster, scope constructs.Construct, id *string, config *MachineLearningComputeClusterConfig) {
 	_init_.Initialize()
 

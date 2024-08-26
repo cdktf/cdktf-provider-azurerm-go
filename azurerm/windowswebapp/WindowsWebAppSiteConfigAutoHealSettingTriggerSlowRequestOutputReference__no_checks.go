@@ -71,10 +71,6 @@ func (j *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutpu
 	return nil
 }
 
-func (j *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference) validateSetPathParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

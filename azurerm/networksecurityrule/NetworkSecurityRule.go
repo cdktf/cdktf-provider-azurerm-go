@@ -5,14 +5,14 @@ package networksecurityrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/networksecurityrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/networksecurityrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/network_security_rule azurerm_network_security_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/network_security_rule azurerm_network_security_rule}.
 type NetworkSecurityRule interface {
 	cdktf.TerraformResource
 	Access() *string
@@ -759,7 +759,7 @@ func (j *jsiiProxy_NetworkSecurityRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/network_security_rule azurerm_network_security_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/network_security_rule azurerm_network_security_rule} Resource.
 func NewNetworkSecurityRule(scope constructs.Construct, id *string, config *NetworkSecurityRuleConfig) NetworkSecurityRule {
 	_init_.Initialize()
 
@@ -777,7 +777,7 @@ func NewNetworkSecurityRule(scope constructs.Construct, id *string, config *Netw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/network_security_rule azurerm_network_security_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/network_security_rule azurerm_network_security_rule} Resource.
 func NewNetworkSecurityRule_Override(n NetworkSecurityRule, scope constructs.Construct, id *string, config *NetworkSecurityRuleConfig) {
 	_init_.Initialize()
 

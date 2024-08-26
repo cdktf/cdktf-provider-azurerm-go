@@ -5,14 +5,14 @@ package windowswebappslot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/windowswebappslot/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/windowswebappslot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot}.
 type WindowsWebAppSlot interface {
 	cdktf.TerraformResource
 	AppServiceId() *string
@@ -1030,7 +1030,7 @@ func (j *jsiiProxy_WindowsWebAppSlot) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot} Resource.
 func NewWindowsWebAppSlot(scope constructs.Construct, id *string, config *WindowsWebAppSlotConfig) WindowsWebAppSlot {
 	_init_.Initialize()
 
@@ -1048,7 +1048,7 @@ func NewWindowsWebAppSlot(scope constructs.Construct, id *string, config *Window
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/windows_web_app_slot azurerm_windows_web_app_slot} Resource.
 func NewWindowsWebAppSlot_Override(w WindowsWebAppSlot, scope constructs.Construct, id *string, config *WindowsWebAppSlotConfig) {
 	_init_.Initialize()
 

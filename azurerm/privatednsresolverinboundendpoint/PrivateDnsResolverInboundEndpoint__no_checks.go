@@ -75,7 +75,7 @@ func (p *jsiiProxy_PrivateDnsResolverInboundEndpoint) validateOverrideLogicalIdP
 	return nil
 }
 
-func (p *jsiiProxy_PrivateDnsResolverInboundEndpoint) validatePutIpConfigurationsParameters(value interface{}) error {
+func (p *jsiiProxy_PrivateDnsResolverInboundEndpoint) validatePutIpConfigurationsParameters(value *PrivateDnsResolverInboundEndpointIpConfigurations) error {
 	return nil
 }
 

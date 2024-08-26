@@ -5,14 +5,14 @@ package resourcepolicyremediation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/resourcepolicyremediation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/resourcepolicyremediation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/resource_policy_remediation azurerm_resource_policy_remediation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/resource_policy_remediation azurerm_resource_policy_remediation}.
 type ResourcePolicyRemediation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,9 +63,6 @@ type ResourcePolicyRemediation interface {
 	PolicyAssignmentId() *string
 	SetPolicyAssignmentId(val *string)
 	PolicyAssignmentIdInput() *string
-	PolicyDefinitionId() *string
-	SetPolicyDefinitionId(val *string)
-	PolicyDefinitionIdInput() *string
 	PolicyDefinitionReferenceId() *string
 	SetPolicyDefinitionReferenceId(val *string)
 	PolicyDefinitionReferenceIdInput() *string
@@ -147,7 +144,6 @@ type ResourcePolicyRemediation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParallelDeployments()
-	ResetPolicyDefinitionId()
 	ResetPolicyDefinitionReferenceId()
 	ResetResourceCount()
 	ResetResourceDiscoveryMode()
@@ -390,26 +386,6 @@ func (j *jsiiProxy_ResourcePolicyRemediation) PolicyAssignmentIdInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_ResourcePolicyRemediation) PolicyDefinitionId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyDefinitionId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ResourcePolicyRemediation) PolicyDefinitionIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyDefinitionIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ResourcePolicyRemediation) PolicyDefinitionReferenceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -571,7 +547,7 @@ func (j *jsiiProxy_ResourcePolicyRemediation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/resource_policy_remediation azurerm_resource_policy_remediation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/resource_policy_remediation azurerm_resource_policy_remediation} Resource.
 func NewResourcePolicyRemediation(scope constructs.Construct, id *string, config *ResourcePolicyRemediationConfig) ResourcePolicyRemediation {
 	_init_.Initialize()
 
@@ -589,7 +565,7 @@ func NewResourcePolicyRemediation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/resource_policy_remediation azurerm_resource_policy_remediation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/resource_policy_remediation azurerm_resource_policy_remediation} Resource.
 func NewResourcePolicyRemediation_Override(r ResourcePolicyRemediation, scope constructs.Construct, id *string, config *ResourcePolicyRemediationConfig) {
 	_init_.Initialize()
 
@@ -711,17 +687,6 @@ func (j *jsiiProxy_ResourcePolicyRemediation)SetPolicyAssignmentId(val *string) 
 	_jsii_.Set(
 		j,
 		"policyAssignmentId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ResourcePolicyRemediation)SetPolicyDefinitionId(val *string) {
-	if err := j.validateSetPolicyDefinitionIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"policyDefinitionId",
 		val,
 	)
 }
@@ -1189,14 +1154,6 @@ func (r *jsiiProxy_ResourcePolicyRemediation) ResetParallelDeployments() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetParallelDeployments",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_ResourcePolicyRemediation) ResetPolicyDefinitionId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetPolicyDefinitionId",
 		nil, // no parameters
 	)
 }

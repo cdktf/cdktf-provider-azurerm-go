@@ -171,10 +171,6 @@ func (j *jsiiProxy_EventhubNamespace) validateSetTagsParameters(val *map[string]
 	return nil
 }
 
-func (j *jsiiProxy_EventhubNamespace) validateSetZoneRedundantParameters(val interface{}) error {
-	return nil
-}
-
 func validateNewEventhubNamespaceParameters(scope constructs.Construct, id *string, config *EventhubNamespaceConfig) error {
 	return nil
 }

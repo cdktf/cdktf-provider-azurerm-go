@@ -87,10 +87,6 @@ func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutFailoverRecov
 	return nil
 }
 
-func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutRecoveryGroupParameters(value interface{}) error {
-	return nil
-}
-
 func (s *jsiiProxy_SiteRecoveryReplicationRecoveryPlan) validatePutShutdownRecoveryGroupParameters(value *SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroup) error {
 	return nil
 }

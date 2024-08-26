@@ -5,14 +5,14 @@ package apimanagementapi
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/apimanagementapi/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/apimanagementapi/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_api azurerm_api_management_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_api azurerm_api_management_api}.
 type ApiManagementApi interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -103,9 +103,6 @@ type ApiManagementApi interface {
 	ServiceUrl() *string
 	SetServiceUrl(val *string)
 	ServiceUrlInput() *string
-	SoapPassThrough() interface{}
-	SetSoapPassThrough(val interface{})
-	SoapPassThroughInput() interface{}
 	SourceApiId() *string
 	SetSourceApiId(val *string)
 	SourceApiIdInput() *string
@@ -200,7 +197,6 @@ type ApiManagementApi interface {
 	ResetProtocols()
 	ResetRevisionDescription()
 	ResetServiceUrl()
-	ResetSoapPassThrough()
 	ResetSourceApiId()
 	ResetSubscriptionKeyParameterNames()
 	ResetSubscriptionRequired()
@@ -717,26 +713,6 @@ func (j *jsiiProxy_ApiManagementApi) ServiceUrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiManagementApi) SoapPassThrough() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"soapPassThrough",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiManagementApi) SoapPassThroughInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"soapPassThroughInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ApiManagementApi) SourceApiId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -928,7 +904,7 @@ func (j *jsiiProxy_ApiManagementApi) VersionSetIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_api azurerm_api_management_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_api azurerm_api_management_api} Resource.
 func NewApiManagementApi(scope constructs.Construct, id *string, config *ApiManagementApiConfig) ApiManagementApi {
 	_init_.Initialize()
 
@@ -946,7 +922,7 @@ func NewApiManagementApi(scope constructs.Construct, id *string, config *ApiMana
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_api azurerm_api_management_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_api azurerm_api_management_api} Resource.
 func NewApiManagementApi_Override(a ApiManagementApi, scope constructs.Construct, id *string, config *ApiManagementApiConfig) {
 	_init_.Initialize()
 
@@ -1153,17 +1129,6 @@ func (j *jsiiProxy_ApiManagementApi)SetServiceUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceUrl",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApiManagementApi)SetSoapPassThrough(val interface{}) {
-	if err := j.validateSetSoapPassThroughParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"soapPassThrough",
 		val,
 	)
 }
@@ -1772,14 +1737,6 @@ func (a *jsiiProxy_ApiManagementApi) ResetServiceUrl() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetServiceUrl",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApiManagementApi) ResetSoapPassThrough() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSoapPassThrough",
 		nil, // no parameters
 	)
 }

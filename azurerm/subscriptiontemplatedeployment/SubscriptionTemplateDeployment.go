@@ -5,14 +5,14 @@ package subscriptiontemplatedeployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/subscriptiontemplatedeployment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/subscriptiontemplatedeployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/subscription_template_deployment azurerm_subscription_template_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/subscription_template_deployment azurerm_subscription_template_deployment}.
 type SubscriptionTemplateDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -511,7 +511,7 @@ func (j *jsiiProxy_SubscriptionTemplateDeployment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/subscription_template_deployment azurerm_subscription_template_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/subscription_template_deployment azurerm_subscription_template_deployment} Resource.
 func NewSubscriptionTemplateDeployment(scope constructs.Construct, id *string, config *SubscriptionTemplateDeploymentConfig) SubscriptionTemplateDeployment {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewSubscriptionTemplateDeployment(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/subscription_template_deployment azurerm_subscription_template_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/subscription_template_deployment azurerm_subscription_template_deployment} Resource.
 func NewSubscriptionTemplateDeployment_Override(s SubscriptionTemplateDeployment, scope constructs.Construct, id *string, config *SubscriptionTemplateDeploymentConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package windowsfunctionappslot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/windowsfunctionappslot/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/windowsfunctionappslot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/windows_function_app_slot azurerm_windows_function_app_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/windows_function_app_slot azurerm_windows_function_app_slot}.
 type WindowsFunctionAppSlot interface {
 	cdktf.TerraformResource
 	AppSettings() *map[string]*string
@@ -155,6 +155,9 @@ type WindowsFunctionAppSlot interface {
 	VirtualNetworkSubnetId() *string
 	SetVirtualNetworkSubnetId(val *string)
 	VirtualNetworkSubnetIdInput() *string
+	VnetImagePullEnabled() interface{}
+	SetVnetImagePullEnabled(val interface{})
+	VnetImagePullEnabledInput() interface{}
 	WebdeployPublishBasicAuthenticationEnabled() interface{}
 	SetWebdeployPublishBasicAuthenticationEnabled(val interface{})
 	WebdeployPublishBasicAuthenticationEnabledInput() interface{}
@@ -240,6 +243,7 @@ type WindowsFunctionAppSlot interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetVirtualNetworkSubnetId()
+	ResetVnetImagePullEnabled()
 	ResetWebdeployPublishBasicAuthenticationEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -1129,6 +1133,26 @@ func (j *jsiiProxy_WindowsFunctionAppSlot) VirtualNetworkSubnetIdInput() *string
 	return returns
 }
 
+func (j *jsiiProxy_WindowsFunctionAppSlot) VnetImagePullEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vnetImagePullEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsFunctionAppSlot) VnetImagePullEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vnetImagePullEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsFunctionAppSlot) WebdeployPublishBasicAuthenticationEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1150,7 +1174,7 @@ func (j *jsiiProxy_WindowsFunctionAppSlot) WebdeployPublishBasicAuthenticationEn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/windows_function_app_slot azurerm_windows_function_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/windows_function_app_slot azurerm_windows_function_app_slot} Resource.
 func NewWindowsFunctionAppSlot(scope constructs.Construct, id *string, config *WindowsFunctionAppSlotConfig) WindowsFunctionAppSlot {
 	_init_.Initialize()
 
@@ -1168,7 +1192,7 @@ func NewWindowsFunctionAppSlot(scope constructs.Construct, id *string, config *W
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/windows_function_app_slot azurerm_windows_function_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/windows_function_app_slot azurerm_windows_function_app_slot} Resource.
 func NewWindowsFunctionAppSlot_Override(w WindowsFunctionAppSlot, scope constructs.Construct, id *string, config *WindowsFunctionAppSlotConfig) {
 	_init_.Initialize()
 
@@ -1496,6 +1520,17 @@ func (j *jsiiProxy_WindowsFunctionAppSlot)SetVirtualNetworkSubnetId(val *string)
 	_jsii_.Set(
 		j,
 		"virtualNetworkSubnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsFunctionAppSlot)SetVnetImagePullEnabled(val interface{}) {
+	if err := j.validateSetVnetImagePullEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vnetImagePullEnabled",
 		val,
 	)
 }
@@ -2180,6 +2215,14 @@ func (w *jsiiProxy_WindowsFunctionAppSlot) ResetVirtualNetworkSubnetId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetVirtualNetworkSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsFunctionAppSlot) ResetVnetImagePullEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetVnetImagePullEnabled",
 		nil, // no parameters
 	)
 }

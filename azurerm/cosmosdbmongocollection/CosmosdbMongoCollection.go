@@ -5,14 +5,14 @@ package cosmosdbmongocollection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/cosmosdbmongocollection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/cosmosdbmongocollection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_mongo_collection azurerm_cosmosdb_mongo_collection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cosmosdb_mongo_collection azurerm_cosmosdb_mongo_collection}.
 type CosmosdbMongoCollection interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -581,7 +581,7 @@ func (j *jsiiProxy_CosmosdbMongoCollection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_mongo_collection azurerm_cosmosdb_mongo_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cosmosdb_mongo_collection azurerm_cosmosdb_mongo_collection} Resource.
 func NewCosmosdbMongoCollection(scope constructs.Construct, id *string, config *CosmosdbMongoCollectionConfig) CosmosdbMongoCollection {
 	_init_.Initialize()
 
@@ -599,7 +599,7 @@ func NewCosmosdbMongoCollection(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_mongo_collection azurerm_cosmosdb_mongo_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cosmosdb_mongo_collection azurerm_cosmosdb_mongo_collection} Resource.
 func NewCosmosdbMongoCollection_Override(c CosmosdbMongoCollection, scope constructs.Construct, id *string, config *CosmosdbMongoCollectionConfig) {
 	_init_.Initialize()
 

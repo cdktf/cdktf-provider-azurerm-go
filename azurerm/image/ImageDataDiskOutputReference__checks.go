@@ -182,6 +182,14 @@ func (j *jsiiProxy_ImageDataDiskOutputReference) validateSetComplexObjectIsFromS
 	return nil
 }
 
+func (j *jsiiProxy_ImageDataDiskOutputReference) validateSetDiskEncryptionSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ImageDataDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -223,6 +231,14 @@ func (j *jsiiProxy_ImageDataDiskOutputReference) validateSetManagedDiskIdParamet
 }
 
 func (j *jsiiProxy_ImageDataDiskOutputReference) validateSetSizeGbParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ImageDataDiskOutputReference) validateSetStorageTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

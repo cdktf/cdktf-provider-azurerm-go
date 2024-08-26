@@ -5,14 +5,14 @@ package automationrunbook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/automationrunbook/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/automationrunbook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_runbook azurerm_automation_runbook}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_runbook azurerm_automation_runbook}.
 type AutomationRunbook interface {
 	cdktf.TerraformResource
 	AutomationAccountName() *string
@@ -663,7 +663,7 @@ func (j *jsiiProxy_AutomationRunbook) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_runbook azurerm_automation_runbook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_runbook azurerm_automation_runbook} Resource.
 func NewAutomationRunbook(scope constructs.Construct, id *string, config *AutomationRunbookConfig) AutomationRunbook {
 	_init_.Initialize()
 
@@ -681,7 +681,7 @@ func NewAutomationRunbook(scope constructs.Construct, id *string, config *Automa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_runbook azurerm_automation_runbook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_runbook azurerm_automation_runbook} Resource.
 func NewAutomationRunbook_Override(a AutomationRunbook, scope constructs.Construct, id *string, config *AutomationRunbookConfig) {
 	_init_.Initialize()
 

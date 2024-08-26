@@ -5,14 +5,14 @@ package automationdscconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/automationdscconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/automationdscconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_dsc_configuration azurerm_automation_dsc_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_dsc_configuration azurerm_automation_dsc_configuration}.
 type AutomationDscConfiguration interface {
 	cdktf.TerraformResource
 	AutomationAccountName() *string
@@ -532,7 +532,7 @@ func (j *jsiiProxy_AutomationDscConfiguration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_dsc_configuration azurerm_automation_dsc_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_dsc_configuration azurerm_automation_dsc_configuration} Resource.
 func NewAutomationDscConfiguration(scope constructs.Construct, id *string, config *AutomationDscConfigurationConfig) AutomationDscConfiguration {
 	_init_.Initialize()
 
@@ -550,7 +550,7 @@ func NewAutomationDscConfiguration(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_dsc_configuration azurerm_automation_dsc_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_dsc_configuration azurerm_automation_dsc_configuration} Resource.
 func NewAutomationDscConfiguration_Override(a AutomationDscConfiguration, scope constructs.Construct, id *string, config *AutomationDscConfigurationConfig) {
 	_init_.Initialize()
 

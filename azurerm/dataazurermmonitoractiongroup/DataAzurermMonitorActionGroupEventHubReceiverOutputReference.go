@@ -5,9 +5,9 @@ package dataazurermmonitoractiongroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermmonitoractiongroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermmonitoractiongroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -28,7 +28,6 @@ type DataAzurermMonitorActionGroupEventHubReceiverOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EventHubId() *string
 	EventHubName() *string
 	EventHubNamespace() *string
 	// Experimental.
@@ -111,16 +110,6 @@ func (j *jsiiProxy_DataAzurermMonitorActionGroupEventHubReceiverOutputReference)
 	_jsii_.Get(
 		j,
 		"creationStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermMonitorActionGroupEventHubReceiverOutputReference) EventHubId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"eventHubId",
 		&returns,
 	)
 	return returns

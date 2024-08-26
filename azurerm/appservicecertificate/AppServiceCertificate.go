@@ -5,14 +5,14 @@ package appservicecertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/appservicecertificate/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/appservicecertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_service_certificate azurerm_app_service_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_service_certificate azurerm_app_service_certificate}.
 type AppServiceCertificate interface {
 	cdktf.TerraformResource
 	AppServicePlanId() *string
@@ -635,7 +635,7 @@ func (j *jsiiProxy_AppServiceCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_service_certificate azurerm_app_service_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_service_certificate azurerm_app_service_certificate} Resource.
 func NewAppServiceCertificate(scope constructs.Construct, id *string, config *AppServiceCertificateConfig) AppServiceCertificate {
 	_init_.Initialize()
 
@@ -653,7 +653,7 @@ func NewAppServiceCertificate(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_service_certificate azurerm_app_service_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_service_certificate azurerm_app_service_certificate} Resource.
 func NewAppServiceCertificate_Override(a AppServiceCertificate, scope constructs.Construct, id *string, config *AppServiceCertificateConfig) {
 	_init_.Initialize()
 

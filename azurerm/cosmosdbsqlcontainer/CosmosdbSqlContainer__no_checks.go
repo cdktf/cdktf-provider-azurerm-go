@@ -151,10 +151,6 @@ func (j *jsiiProxy_CosmosdbSqlContainer) validateSetPartitionKeyKindParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_CosmosdbSqlContainer) validateSetPartitionKeyPathParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_CosmosdbSqlContainer) validateSetPartitionKeyPathsParameters(val *[]*string) error {
 	return nil
 }

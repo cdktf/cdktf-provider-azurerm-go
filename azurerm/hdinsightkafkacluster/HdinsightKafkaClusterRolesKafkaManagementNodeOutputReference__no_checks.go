@@ -87,10 +87,6 @@ func (j *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference) validateSetUsernameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference) validateSetVirtualNetworkIdParameters(val *string) error {
 	return nil
 }

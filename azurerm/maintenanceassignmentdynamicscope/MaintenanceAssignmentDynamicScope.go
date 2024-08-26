@@ -5,14 +5,14 @@ package maintenanceassignmentdynamicscope
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/maintenanceassignmentdynamicscope/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/maintenanceassignmentdynamicscope/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/maintenance_assignment_dynamic_scope azurerm_maintenance_assignment_dynamic_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/maintenance_assignment_dynamic_scope azurerm_maintenance_assignment_dynamic_scope}.
 type MaintenanceAssignmentDynamicScope interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_MaintenanceAssignmentDynamicScope) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/maintenance_assignment_dynamic_scope azurerm_maintenance_assignment_dynamic_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/maintenance_assignment_dynamic_scope azurerm_maintenance_assignment_dynamic_scope} Resource.
 func NewMaintenanceAssignmentDynamicScope(scope constructs.Construct, id *string, config *MaintenanceAssignmentDynamicScopeConfig) MaintenanceAssignmentDynamicScope {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewMaintenanceAssignmentDynamicScope(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/maintenance_assignment_dynamic_scope azurerm_maintenance_assignment_dynamic_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/maintenance_assignment_dynamic_scope azurerm_maintenance_assignment_dynamic_scope} Resource.
 func NewMaintenanceAssignmentDynamicScope_Override(m MaintenanceAssignmentDynamicScope, scope constructs.Construct, id *string, config *MaintenanceAssignmentDynamicScopeConfig) {
 	_init_.Initialize()
 

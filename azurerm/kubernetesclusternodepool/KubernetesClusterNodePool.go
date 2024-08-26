@@ -5,16 +5,19 @@ package kubernetesclusternodepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/kubernetesclusternodepool/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/kubernetesclusternodepool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool}.
 type KubernetesClusterNodePool interface {
 	cdktf.TerraformResource
+	AutoScalingEnabled() interface{}
+	SetAutoScalingEnabled(val interface{})
+	AutoScalingEnabledInput() interface{}
 	CapacityReservationGroupId() *string
 	SetCapacityReservationGroupId(val *string)
 	CapacityReservationGroupIdInput() *string
@@ -30,22 +33,10 @@ type KubernetesClusterNodePool interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CustomCaTrustEnabled() interface{}
-	SetCustomCaTrustEnabled(val interface{})
-	CustomCaTrustEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnableAutoScaling() interface{}
-	SetEnableAutoScaling(val interface{})
-	EnableAutoScalingInput() interface{}
-	EnableHostEncryption() interface{}
-	SetEnableHostEncryption(val interface{})
-	EnableHostEncryptionInput() interface{}
-	EnableNodePublicIp() interface{}
-	SetEnableNodePublicIp(val interface{})
-	EnableNodePublicIpInput() interface{}
 	EvictionPolicy() *string
 	SetEvictionPolicy(val *string)
 	EvictionPolicyInput() *string
@@ -63,6 +54,9 @@ type KubernetesClusterNodePool interface {
 	GpuInstance() *string
 	SetGpuInstance(val *string)
 	GpuInstanceInput() *string
+	HostEncryptionEnabled() interface{}
+	SetHostEncryptionEnabled(val interface{})
+	HostEncryptionEnabledInput() interface{}
 	HostGroupId() *string
 	SetHostGroupId(val *string)
 	HostGroupIdInput() *string
@@ -89,9 +83,6 @@ type KubernetesClusterNodePool interface {
 	MaxPods() *float64
 	SetMaxPods(val *float64)
 	MaxPodsInput() *float64
-	MessageOfTheDay() *string
-	SetMessageOfTheDay(val *string)
-	MessageOfTheDayInput() *string
 	MinCount() *float64
 	SetMinCount(val *float64)
 	MinCountInput() *float64
@@ -111,6 +102,9 @@ type KubernetesClusterNodePool interface {
 	NodeLabelsInput() *map[string]*string
 	NodeNetworkProfile() KubernetesClusterNodePoolNodeNetworkProfileOutputReference
 	NodeNetworkProfileInput() *KubernetesClusterNodePoolNodeNetworkProfile
+	NodePublicIpEnabled() interface{}
+	SetNodePublicIpEnabled(val interface{})
+	NodePublicIpEnabledInput() interface{}
 	NodePublicIpPrefixId() *string
 	SetNodePublicIpPrefixId(val *string)
 	NodePublicIpPrefixIdInput() *string
@@ -239,14 +233,12 @@ type KubernetesClusterNodePool interface {
 	PutTimeouts(value *KubernetesClusterNodePoolTimeouts)
 	PutUpgradeSettings(value *KubernetesClusterNodePoolUpgradeSettings)
 	PutWindowsProfile(value *KubernetesClusterNodePoolWindowsProfile)
+	ResetAutoScalingEnabled()
 	ResetCapacityReservationGroupId()
-	ResetCustomCaTrustEnabled()
-	ResetEnableAutoScaling()
-	ResetEnableHostEncryption()
-	ResetEnableNodePublicIp()
 	ResetEvictionPolicy()
 	ResetFipsEnabled()
 	ResetGpuInstance()
+	ResetHostEncryptionEnabled()
 	ResetHostGroupId()
 	ResetId()
 	ResetKubeletConfig()
@@ -254,12 +246,12 @@ type KubernetesClusterNodePool interface {
 	ResetLinuxOsConfig()
 	ResetMaxCount()
 	ResetMaxPods()
-	ResetMessageOfTheDay()
 	ResetMinCount()
 	ResetMode()
 	ResetNodeCount()
 	ResetNodeLabels()
 	ResetNodeNetworkProfile()
+	ResetNodePublicIpEnabled()
 	ResetNodePublicIpPrefixId()
 	ResetNodeTaints()
 	ResetOrchestratorVersion()
@@ -300,6 +292,26 @@ type KubernetesClusterNodePool interface {
 // The jsii proxy struct for KubernetesClusterNodePool
 type jsiiProxy_KubernetesClusterNodePool struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) AutoScalingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoScalingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) AutoScalingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoScalingEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_KubernetesClusterNodePool) CapacityReservationGroupId() *string {
@@ -362,91 +374,11 @@ func (j *jsiiProxy_KubernetesClusterNodePool) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePool) CustomCaTrustEnabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"customCaTrustEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterNodePool) CustomCaTrustEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"customCaTrustEnabledInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_KubernetesClusterNodePool) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterNodePool) EnableAutoScaling() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableAutoScaling",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterNodePool) EnableAutoScalingInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableAutoScalingInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterNodePool) EnableHostEncryption() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableHostEncryption",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterNodePool) EnableHostEncryptionInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableHostEncryptionInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterNodePool) EnableNodePublicIp() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableNodePublicIp",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterNodePool) EnableNodePublicIpInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableNodePublicIpInput",
 		&returns,
 	)
 	return returns
@@ -537,6 +469,26 @@ func (j *jsiiProxy_KubernetesClusterNodePool) GpuInstanceInput() *string {
 	_jsii_.Get(
 		j,
 		"gpuInstanceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) HostEncryptionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hostEncryptionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) HostEncryptionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hostEncryptionEnabledInput",
 		&returns,
 	)
 	return returns
@@ -712,26 +664,6 @@ func (j *jsiiProxy_KubernetesClusterNodePool) MaxPodsInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePool) MessageOfTheDay() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"messageOfTheDay",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterNodePool) MessageOfTheDayInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"messageOfTheDayInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_KubernetesClusterNodePool) MinCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -857,6 +789,26 @@ func (j *jsiiProxy_KubernetesClusterNodePool) NodeNetworkProfileInput() *Kuberne
 	_jsii_.Get(
 		j,
 		"nodeNetworkProfileInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) NodePublicIpEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nodePublicIpEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) NodePublicIpEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nodePublicIpEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1363,7 +1315,7 @@ func (j *jsiiProxy_KubernetesClusterNodePool) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Resource.
 func NewKubernetesClusterNodePool(scope constructs.Construct, id *string, config *KubernetesClusterNodePoolConfig) KubernetesClusterNodePool {
 	_init_.Initialize()
 
@@ -1381,7 +1333,7 @@ func NewKubernetesClusterNodePool(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Resource.
 func NewKubernetesClusterNodePool_Override(k KubernetesClusterNodePool, scope constructs.Construct, id *string, config *KubernetesClusterNodePoolConfig) {
 	_init_.Initialize()
 
@@ -1389,6 +1341,17 @@ func NewKubernetesClusterNodePool_Override(k KubernetesClusterNodePool, scope co
 		"@cdktf/provider-azurerm.kubernetesClusterNodePool.KubernetesClusterNodePool",
 		[]interface{}{scope, id, config},
 		k,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool)SetAutoScalingEnabled(val interface{}) {
+	if err := j.validateSetAutoScalingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoScalingEnabled",
+		val,
 	)
 }
 
@@ -1425,54 +1388,10 @@ func (j *jsiiProxy_KubernetesClusterNodePool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePool)SetCustomCaTrustEnabled(val interface{}) {
-	if err := j.validateSetCustomCaTrustEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"customCaTrustEnabled",
-		val,
-	)
-}
-
 func (j *jsiiProxy_KubernetesClusterNodePool)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KubernetesClusterNodePool)SetEnableAutoScaling(val interface{}) {
-	if err := j.validateSetEnableAutoScalingParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enableAutoScaling",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KubernetesClusterNodePool)SetEnableHostEncryption(val interface{}) {
-	if err := j.validateSetEnableHostEncryptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enableHostEncryption",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KubernetesClusterNodePool)SetEnableNodePublicIp(val interface{}) {
-	if err := j.validateSetEnableNodePublicIpParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enableNodePublicIp",
 		val,
 	)
 }
@@ -1514,6 +1433,17 @@ func (j *jsiiProxy_KubernetesClusterNodePool)SetGpuInstance(val *string) {
 	_jsii_.Set(
 		j,
 		"gpuInstance",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool)SetHostEncryptionEnabled(val interface{}) {
+	if err := j.validateSetHostEncryptionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hostEncryptionEnabled",
 		val,
 	)
 }
@@ -1595,17 +1525,6 @@ func (j *jsiiProxy_KubernetesClusterNodePool)SetMaxPods(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePool)SetMessageOfTheDay(val *string) {
-	if err := j.validateSetMessageOfTheDayParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"messageOfTheDay",
-		val,
-	)
-}
-
 func (j *jsiiProxy_KubernetesClusterNodePool)SetMinCount(val *float64) {
 	if err := j.validateSetMinCountParameters(val); err != nil {
 		panic(err)
@@ -1657,6 +1576,17 @@ func (j *jsiiProxy_KubernetesClusterNodePool)SetNodeLabels(val *map[string]*stri
 	_jsii_.Set(
 		j,
 		"nodeLabels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool)SetNodePublicIpEnabled(val interface{}) {
+	if err := j.validateSetNodePublicIpEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodePublicIpEnabled",
 		val,
 	)
 }
@@ -2308,42 +2238,18 @@ func (k *jsiiProxy_KubernetesClusterNodePool) PutWindowsProfile(value *Kubernete
 	)
 }
 
+func (k *jsiiProxy_KubernetesClusterNodePool) ResetAutoScalingEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetAutoScalingEnabled",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KubernetesClusterNodePool) ResetCapacityReservationGroupId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetCapacityReservationGroupId",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KubernetesClusterNodePool) ResetCustomCaTrustEnabled() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetCustomCaTrustEnabled",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KubernetesClusterNodePool) ResetEnableAutoScaling() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetEnableAutoScaling",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KubernetesClusterNodePool) ResetEnableHostEncryption() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetEnableHostEncryption",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KubernetesClusterNodePool) ResetEnableNodePublicIp() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetEnableNodePublicIp",
 		nil, // no parameters
 	)
 }
@@ -2368,6 +2274,14 @@ func (k *jsiiProxy_KubernetesClusterNodePool) ResetGpuInstance() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetGpuInstance",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNodePool) ResetHostEncryptionEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetHostEncryptionEnabled",
 		nil, // no parameters
 	)
 }
@@ -2428,14 +2342,6 @@ func (k *jsiiProxy_KubernetesClusterNodePool) ResetMaxPods() {
 	)
 }
 
-func (k *jsiiProxy_KubernetesClusterNodePool) ResetMessageOfTheDay() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetMessageOfTheDay",
-		nil, // no parameters
-	)
-}
-
 func (k *jsiiProxy_KubernetesClusterNodePool) ResetMinCount() {
 	_jsii_.InvokeVoid(
 		k,
@@ -2472,6 +2378,14 @@ func (k *jsiiProxy_KubernetesClusterNodePool) ResetNodeNetworkProfile() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetNodeNetworkProfile",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNodePool) ResetNodePublicIpEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetNodePublicIpEnabled",
 		nil, // no parameters
 	)
 }

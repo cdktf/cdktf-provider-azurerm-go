@@ -22,30 +22,30 @@ type StorageShareConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_share#name StorageShare#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_share#name StorageShare#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_share#quota StorageShare#quota}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_share#quota StorageShare#quota}.
 	Quota *float64 `field:"required" json:"quota" yaml:"quota"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_share#storage_account_name StorageShare#storage_account_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_share#storage_account_name StorageShare#storage_account_name}.
 	StorageAccountName *string `field:"required" json:"storageAccountName" yaml:"storageAccountName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_share#access_tier StorageShare#access_tier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_share#access_tier StorageShare#access_tier}.
 	AccessTier *string `field:"optional" json:"accessTier" yaml:"accessTier"`
 	// acl block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_share#acl StorageShare#acl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_share#acl StorageShare#acl}
 	Acl interface{} `field:"optional" json:"acl" yaml:"acl"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_share#enabled_protocol StorageShare#enabled_protocol}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_share#enabled_protocol StorageShare#enabled_protocol}.
 	EnabledProtocol *string `field:"optional" json:"enabledProtocol" yaml:"enabledProtocol"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_share#id StorageShare#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_share#id StorageShare#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_share#metadata StorageShare#metadata}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_share#metadata StorageShare#metadata}.
 	Metadata *map[string]*string `field:"optional" json:"metadata" yaml:"metadata"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_share#timeouts StorageShare#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_share#timeouts StorageShare#timeouts}
 	Timeouts *StorageShareTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

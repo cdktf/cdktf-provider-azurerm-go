@@ -5,14 +5,14 @@ package dataazurermvirtualmachine
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermvirtualmachine/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermvirtualmachine/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/virtual_machine azurerm_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/virtual_machine azurerm_virtual_machine}.
 type DataAzurermVirtualMachine interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataAzurermVirtualMachine) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/virtual_machine azurerm_virtual_machine} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/virtual_machine azurerm_virtual_machine} Data Source.
 func NewDataAzurermVirtualMachine(scope constructs.Construct, id *string, config *DataAzurermVirtualMachineConfig) DataAzurermVirtualMachine {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewDataAzurermVirtualMachine(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/virtual_machine azurerm_virtual_machine} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/virtual_machine azurerm_virtual_machine} Data Source.
 func NewDataAzurermVirtualMachine_Override(d DataAzurermVirtualMachine, scope constructs.Construct, id *string, config *DataAzurermVirtualMachineConfig) {
 	_init_.Initialize()
 

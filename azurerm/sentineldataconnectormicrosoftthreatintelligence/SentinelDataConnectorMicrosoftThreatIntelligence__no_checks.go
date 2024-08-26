@@ -95,10 +95,6 @@ func validateSentinelDataConnectorMicrosoftThreatIntelligence_IsTerraformResourc
 	return nil
 }
 
-func (j *jsiiProxy_SentinelDataConnectorMicrosoftThreatIntelligence) validateSetBingSafetyPhishingUrlLookbackDateParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_SentinelDataConnectorMicrosoftThreatIntelligence) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

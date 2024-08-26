@@ -5,9 +5,9 @@ package webapplicationfirewallpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/webapplicationfirewallpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/webapplicationfirewallpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -28,9 +28,6 @@ type WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutp
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisabledRules() *[]*string
-	SetDisabledRules(val *[]*string)
-	DisabledRulesInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -73,7 +70,6 @@ type WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutp
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutRule(value interface{})
-	ResetDisabledRules()
 	ResetRule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -115,26 +111,6 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGro
 	_jsii_.Get(
 		j,
 		"creationStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutputReference) DisabledRules() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"disabledRules",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutputReference) DisabledRulesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"disabledRulesInput",
 		&returns,
 	)
 	return returns
@@ -266,17 +242,6 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGro
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutputReference)SetDisabledRules(val *[]*string) {
-	if err := j.validateSetDisabledRulesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"disabledRules",
 		val,
 	)
 }
@@ -519,14 +484,6 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGro
 		w,
 		"putRule",
 		[]interface{}{value},
-	)
-}
-
-func (w *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutputReference) ResetDisabledRules() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetDisabledRules",
-		nil, // no parameters
 	)
 }
 

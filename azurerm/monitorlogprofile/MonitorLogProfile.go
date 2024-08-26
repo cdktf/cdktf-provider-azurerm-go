@@ -5,14 +5,14 @@ package monitorlogprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/monitorlogprofile/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/monitorlogprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/monitor_log_profile azurerm_monitor_log_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/monitor_log_profile azurerm_monitor_log_profile}.
 type MonitorLogProfile interface {
 	cdktf.TerraformResource
 	Categories() *[]*string
@@ -474,7 +474,7 @@ func (j *jsiiProxy_MonitorLogProfile) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/monitor_log_profile azurerm_monitor_log_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/monitor_log_profile azurerm_monitor_log_profile} Resource.
 func NewMonitorLogProfile(scope constructs.Construct, id *string, config *MonitorLogProfileConfig) MonitorLogProfile {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewMonitorLogProfile(scope constructs.Construct, id *string, config *Monito
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/monitor_log_profile azurerm_monitor_log_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/monitor_log_profile azurerm_monitor_log_profile} Resource.
 func NewMonitorLogProfile_Override(m MonitorLogProfile, scope constructs.Construct, id *string, config *MonitorLogProfileConfig) {
 	_init_.Initialize()
 

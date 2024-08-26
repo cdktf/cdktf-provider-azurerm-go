@@ -5,14 +5,14 @@ package dataazurermmobilenetworkpacketcorecontrolplane
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermmobilenetworkpacketcorecontrolplane/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermmobilenetworkpacketcorecontrolplane/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/mobile_network_packet_core_control_plane azurerm_mobile_network_packet_core_control_plane}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/mobile_network_packet_core_control_plane azurerm_mobile_network_packet_core_control_plane}.
 type DataAzurermMobileNetworkPacketCoreControlPlane interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -500,7 +500,7 @@ func (j *jsiiProxy_DataAzurermMobileNetworkPacketCoreControlPlane) UserEquipment
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/mobile_network_packet_core_control_plane azurerm_mobile_network_packet_core_control_plane} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/mobile_network_packet_core_control_plane azurerm_mobile_network_packet_core_control_plane} Data Source.
 func NewDataAzurermMobileNetworkPacketCoreControlPlane(scope constructs.Construct, id *string, config *DataAzurermMobileNetworkPacketCoreControlPlaneConfig) DataAzurermMobileNetworkPacketCoreControlPlane {
 	_init_.Initialize()
 
@@ -518,7 +518,7 @@ func NewDataAzurermMobileNetworkPacketCoreControlPlane(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/mobile_network_packet_core_control_plane azurerm_mobile_network_packet_core_control_plane} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/mobile_network_packet_core_control_plane azurerm_mobile_network_packet_core_control_plane} Data Source.
 func NewDataAzurermMobileNetworkPacketCoreControlPlane_Override(d DataAzurermMobileNetworkPacketCoreControlPlane, scope constructs.Construct, id *string, config *DataAzurermMobileNetworkPacketCoreControlPlaneConfig) {
 	_init_.Initialize()
 

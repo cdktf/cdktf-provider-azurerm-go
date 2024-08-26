@@ -5,14 +5,14 @@ package dataazurermappservicecertificateorder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermappservicecertificateorder/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermappservicecertificateorder/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/app_service_certificate_order azurerm_app_service_certificate_order}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/app_service_certificate_order azurerm_app_service_certificate_order}.
 type DataAzurermAppServiceCertificateOrder interface {
 	cdktf.TerraformDataSource
 	AppServiceCertificateNotRenewableReasons() *[]*string
@@ -522,7 +522,7 @@ func (j *jsiiProxy_DataAzurermAppServiceCertificateOrder) ValidityInYears() *flo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/app_service_certificate_order azurerm_app_service_certificate_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/app_service_certificate_order azurerm_app_service_certificate_order} Data Source.
 func NewDataAzurermAppServiceCertificateOrder(scope constructs.Construct, id *string, config *DataAzurermAppServiceCertificateOrderConfig) DataAzurermAppServiceCertificateOrder {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewDataAzurermAppServiceCertificateOrder(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/app_service_certificate_order azurerm_app_service_certificate_order} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/app_service_certificate_order azurerm_app_service_certificate_order} Data Source.
 func NewDataAzurermAppServiceCertificateOrder_Override(d DataAzurermAppServiceCertificateOrder, scope constructs.Construct, id *string, config *DataAzurermAppServiceCertificateOrderConfig) {
 	_init_.Initialize()
 

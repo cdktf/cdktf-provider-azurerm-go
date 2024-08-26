@@ -5,14 +5,14 @@ package containerappenvironmentcustomdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/containerappenvironmentcustomdomain/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/containerappenvironmentcustomdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_app_environment_custom_domain azurerm_container_app_environment_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_app_environment_custom_domain azurerm_container_app_environment_custom_domain}.
 type ContainerAppEnvironmentCustomDomain interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_ContainerAppEnvironmentCustomDomain) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_app_environment_custom_domain azurerm_container_app_environment_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_app_environment_custom_domain azurerm_container_app_environment_custom_domain} Resource.
 func NewContainerAppEnvironmentCustomDomain(scope constructs.Construct, id *string, config *ContainerAppEnvironmentCustomDomainConfig) ContainerAppEnvironmentCustomDomain {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewContainerAppEnvironmentCustomDomain(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_app_environment_custom_domain azurerm_container_app_environment_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_app_environment_custom_domain azurerm_container_app_environment_custom_domain} Resource.
 func NewContainerAppEnvironmentCustomDomain_Override(c ContainerAppEnvironmentCustomDomain, scope constructs.Construct, id *string, config *ContainerAppEnvironmentCustomDomainConfig) {
 	_init_.Initialize()
 

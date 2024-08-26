@@ -5,14 +5,14 @@ package datafactorylinkedcustomservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/datafactorylinkedcustomservice/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/datafactorylinkedcustomservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/data_factory_linked_custom_service azurerm_data_factory_linked_custom_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/data_factory_linked_custom_service azurerm_data_factory_linked_custom_service}.
 type DataFactoryLinkedCustomService interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -546,7 +546,7 @@ func (j *jsiiProxy_DataFactoryLinkedCustomService) TypePropertiesJsonInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/data_factory_linked_custom_service azurerm_data_factory_linked_custom_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/data_factory_linked_custom_service azurerm_data_factory_linked_custom_service} Resource.
 func NewDataFactoryLinkedCustomService(scope constructs.Construct, id *string, config *DataFactoryLinkedCustomServiceConfig) DataFactoryLinkedCustomService {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewDataFactoryLinkedCustomService(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/data_factory_linked_custom_service azurerm_data_factory_linked_custom_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/data_factory_linked_custom_service azurerm_data_factory_linked_custom_service} Resource.
 func NewDataFactoryLinkedCustomService_Override(d DataFactoryLinkedCustomService, scope constructs.Construct, id *string, config *DataFactoryLinkedCustomServiceConfig) {
 	_init_.Initialize()
 

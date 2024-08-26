@@ -5,16 +5,14 @@ package hdinsightinteractivequerycluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/hdinsightinteractivequerycluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/hdinsightinteractivequerycluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutputReference interface {
 	cdktf.ComplexObject
-	Capacity() HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleCapacityOutputReference
-	CapacityInput() *HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleCapacity
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -68,9 +66,7 @@ type HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCapacity(value *HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleCapacity)
 	PutRecurrence(value *HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleRecurrence)
-	ResetCapacity()
 	ResetRecurrence()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -85,26 +81,6 @@ type HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutputReference int
 // The jsii proxy struct for HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutputReference
 type jsiiProxy_HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutputReference) Capacity() HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleCapacityOutputReference {
-	var returns HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleCapacityOutputReference
-	_jsii_.Get(
-		j,
-		"capacity",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutputReference) CapacityInput() *HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleCapacity {
-	var returns *HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleCapacity
-	_jsii_.Get(
-		j,
-		"capacityInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutputReference) ComplexObjectIndex() interface{} {
@@ -466,17 +442,6 @@ func (h *jsiiProxy_HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutpu
 	return returns
 }
 
-func (h *jsiiProxy_HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutputReference) PutCapacity(value *HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleCapacity) {
-	if err := h.validatePutCapacityParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		h,
-		"putCapacity",
-		[]interface{}{value},
-	)
-}
-
 func (h *jsiiProxy_HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutputReference) PutRecurrence(value *HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleRecurrence) {
 	if err := h.validatePutRecurrenceParameters(value); err != nil {
 		panic(err)
@@ -485,14 +450,6 @@ func (h *jsiiProxy_HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutpu
 		h,
 		"putRecurrence",
 		[]interface{}{value},
-	)
-}
-
-func (h *jsiiProxy_HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutputReference) ResetCapacity() {
-	_jsii_.InvokeVoid(
-		h,
-		"resetCapacity",
-		nil, // no parameters
 	)
 }
 

@@ -5,14 +5,14 @@ package staticwebappfunctionappregistration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/staticwebappfunctionappregistration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/staticwebappfunctionappregistration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/static_web_app_function_app_registration azurerm_static_web_app_function_app_registration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/static_web_app_function_app_registration azurerm_static_web_app_function_app_registration}.
 type StaticWebAppFunctionAppRegistration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_StaticWebAppFunctionAppRegistration) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/static_web_app_function_app_registration azurerm_static_web_app_function_app_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/static_web_app_function_app_registration azurerm_static_web_app_function_app_registration} Resource.
 func NewStaticWebAppFunctionAppRegistration(scope constructs.Construct, id *string, config *StaticWebAppFunctionAppRegistrationConfig) StaticWebAppFunctionAppRegistration {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewStaticWebAppFunctionAppRegistration(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/static_web_app_function_app_registration azurerm_static_web_app_function_app_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/static_web_app_function_app_registration azurerm_static_web_app_function_app_registration} Resource.
 func NewStaticWebAppFunctionAppRegistration_Override(s StaticWebAppFunctionAppRegistration, scope constructs.Construct, id *string, config *StaticWebAppFunctionAppRegistrationConfig) {
 	_init_.Initialize()
 

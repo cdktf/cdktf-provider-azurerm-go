@@ -5,14 +5,14 @@ package virtualdesktopscalingplan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/virtualdesktopscalingplan/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/virtualdesktopscalingplan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_desktop_scaling_plan azurerm_virtual_desktop_scaling_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_desktop_scaling_plan azurerm_virtual_desktop_scaling_plan}.
 type VirtualDesktopScalingPlan interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -569,7 +569,7 @@ func (j *jsiiProxy_VirtualDesktopScalingPlan) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_desktop_scaling_plan azurerm_virtual_desktop_scaling_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_desktop_scaling_plan azurerm_virtual_desktop_scaling_plan} Resource.
 func NewVirtualDesktopScalingPlan(scope constructs.Construct, id *string, config *VirtualDesktopScalingPlanConfig) VirtualDesktopScalingPlan {
 	_init_.Initialize()
 
@@ -587,7 +587,7 @@ func NewVirtualDesktopScalingPlan(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_desktop_scaling_plan azurerm_virtual_desktop_scaling_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_desktop_scaling_plan azurerm_virtual_desktop_scaling_plan} Resource.
 func NewVirtualDesktopScalingPlan_Override(v VirtualDesktopScalingPlan, scope constructs.Construct, id *string, config *VirtualDesktopScalingPlanConfig) {
 	_init_.Initialize()
 

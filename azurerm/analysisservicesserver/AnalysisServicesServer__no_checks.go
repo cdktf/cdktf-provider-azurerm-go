@@ -115,10 +115,6 @@ func (j *jsiiProxy_AnalysisServicesServer) validateSetCountParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_AnalysisServicesServer) validateSetEnablePowerBiServiceParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_AnalysisServicesServer) validateSetIdParameters(val *string) error {
 	return nil
 }

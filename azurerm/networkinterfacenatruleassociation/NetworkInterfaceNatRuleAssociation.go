@@ -5,14 +5,14 @@ package networkinterfacenatruleassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/networkinterfacenatruleassociation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/networkinterfacenatruleassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/network_interface_nat_rule_association azurerm_network_interface_nat_rule_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/network_interface_nat_rule_association azurerm_network_interface_nat_rule_association}.
 type NetworkInterfaceNatRuleAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_NetworkInterfaceNatRuleAssociation) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/network_interface_nat_rule_association azurerm_network_interface_nat_rule_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/network_interface_nat_rule_association azurerm_network_interface_nat_rule_association} Resource.
 func NewNetworkInterfaceNatRuleAssociation(scope constructs.Construct, id *string, config *NetworkInterfaceNatRuleAssociationConfig) NetworkInterfaceNatRuleAssociation {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewNetworkInterfaceNatRuleAssociation(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/network_interface_nat_rule_association azurerm_network_interface_nat_rule_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/network_interface_nat_rule_association azurerm_network_interface_nat_rule_association} Resource.
 func NewNetworkInterfaceNatRuleAssociation_Override(n NetworkInterfaceNatRuleAssociation, scope constructs.Construct, id *string, config *NetworkInterfaceNatRuleAssociationConfig) {
 	_init_.Initialize()
 

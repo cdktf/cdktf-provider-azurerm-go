@@ -5,14 +5,14 @@ package appserviceenvironmentv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/appserviceenvironmentv3/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/appserviceenvironmentv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_service_environment_v3 azurerm_app_service_environment_v3}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_service_environment_v3 azurerm_app_service_environment_v3}.
 type AppServiceEnvironmentV3 interface {
 	cdktf.TerraformResource
 	AllowNewPrivateEndpointConnections() interface{}
@@ -670,7 +670,7 @@ func (j *jsiiProxy_AppServiceEnvironmentV3) ZoneRedundantInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_service_environment_v3 azurerm_app_service_environment_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_service_environment_v3 azurerm_app_service_environment_v3} Resource.
 func NewAppServiceEnvironmentV3(scope constructs.Construct, id *string, config *AppServiceEnvironmentV3Config) AppServiceEnvironmentV3 {
 	_init_.Initialize()
 
@@ -688,7 +688,7 @@ func NewAppServiceEnvironmentV3(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_service_environment_v3 azurerm_app_service_environment_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_service_environment_v3 azurerm_app_service_environment_v3} Resource.
 func NewAppServiceEnvironmentV3_Override(a AppServiceEnvironmentV3, scope constructs.Construct, id *string, config *AppServiceEnvironmentV3Config) {
 	_init_.Initialize()
 

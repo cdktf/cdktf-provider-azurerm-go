@@ -5,14 +5,14 @@ package dataazurermcontainergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermcontainergroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermcontainergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/container_group azurerm_container_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/container_group azurerm_container_group}.
 type DataAzurermContainerGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_DataAzurermContainerGroup) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/container_group azurerm_container_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/container_group azurerm_container_group} Data Source.
 func NewDataAzurermContainerGroup(scope constructs.Construct, id *string, config *DataAzurermContainerGroupConfig) DataAzurermContainerGroup {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewDataAzurermContainerGroup(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/container_group azurerm_container_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/container_group azurerm_container_group} Data Source.
 func NewDataAzurermContainerGroup_Override(d DataAzurermContainerGroup, scope constructs.Construct, id *string, config *DataAzurermContainerGroupConfig) {
 	_init_.Initialize()
 

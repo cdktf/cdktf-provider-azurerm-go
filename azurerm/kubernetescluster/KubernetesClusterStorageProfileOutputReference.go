@@ -5,9 +5,9 @@ package kubernetescluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/kubernetescluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/kubernetescluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -34,9 +34,6 @@ type KubernetesClusterStorageProfileOutputReference interface {
 	DiskDriverEnabled() interface{}
 	SetDiskDriverEnabled(val interface{})
 	DiskDriverEnabledInput() interface{}
-	DiskDriverVersion() *string
-	SetDiskDriverVersion(val *string)
-	DiskDriverVersionInput() *string
 	FileDriverEnabled() interface{}
 	SetFileDriverEnabled(val interface{})
 	FileDriverEnabledInput() interface{}
@@ -81,7 +78,6 @@ type KubernetesClusterStorageProfileOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBlobDriverEnabled()
 	ResetDiskDriverEnabled()
-	ResetDiskDriverVersion()
 	ResetFileDriverEnabled()
 	ResetSnapshotControllerEnabled()
 	// Produce the Token's value at resolution time.
@@ -164,26 +160,6 @@ func (j *jsiiProxy_KubernetesClusterStorageProfileOutputReference) DiskDriverEna
 	_jsii_.Get(
 		j,
 		"diskDriverEnabledInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterStorageProfileOutputReference) DiskDriverVersion() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"diskDriverVersion",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterStorageProfileOutputReference) DiskDriverVersionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"diskDriverVersionInput",
 		&returns,
 	)
 	return returns
@@ -337,17 +313,6 @@ func (j *jsiiProxy_KubernetesClusterStorageProfileOutputReference)SetDiskDriverE
 	_jsii_.Set(
 		j,
 		"diskDriverEnabled",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KubernetesClusterStorageProfileOutputReference)SetDiskDriverVersion(val *string) {
-	if err := j.validateSetDiskDriverVersionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"diskDriverVersion",
 		val,
 	)
 }
@@ -605,14 +570,6 @@ func (k *jsiiProxy_KubernetesClusterStorageProfileOutputReference) ResetDiskDriv
 	_jsii_.InvokeVoid(
 		k,
 		"resetDiskDriverEnabled",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KubernetesClusterStorageProfileOutputReference) ResetDiskDriverVersion() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetDiskDriverVersion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package digitaltwinsinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/digitaltwinsinstance/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/digitaltwinsinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/digital_twins_instance azurerm_digital_twins_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/digital_twins_instance azurerm_digital_twins_instance}.
 type DigitalTwinsInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_DigitalTwinsInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/digital_twins_instance azurerm_digital_twins_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/digital_twins_instance azurerm_digital_twins_instance} Resource.
 func NewDigitalTwinsInstance(scope constructs.Construct, id *string, config *DigitalTwinsInstanceConfig) DigitalTwinsInstance {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewDigitalTwinsInstance(scope constructs.Construct, id *string, config *Dig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/digital_twins_instance azurerm_digital_twins_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/digital_twins_instance azurerm_digital_twins_instance} Resource.
 func NewDigitalTwinsInstance_Override(d DigitalTwinsInstance, scope constructs.Construct, id *string, config *DigitalTwinsInstanceConfig) {
 	_init_.Initialize()
 

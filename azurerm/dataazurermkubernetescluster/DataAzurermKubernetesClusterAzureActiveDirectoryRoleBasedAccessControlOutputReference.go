@@ -5,9 +5,9 @@ package dataazurermkubernetescluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermkubernetescluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermkubernetescluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -15,7 +15,6 @@ type DataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutpu
 	cdktf.ComplexObject
 	AdminGroupObjectIds() *[]*string
 	AzureRbacEnabled() cdktf.IResolvable
-	ClientAppId() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,8 +34,6 @@ type DataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutpu
 	Fqn() *string
 	InternalValue() *DataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAccessControl
 	SetInternalValue(val *DataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAccessControl)
-	Managed() cdktf.IResolvable
-	ServerAppId() *string
 	TenantId() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -105,16 +102,6 @@ func (j *jsiiProxy_DataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAcce
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) ClientAppId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"clientAppId",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -160,26 +147,6 @@ func (j *jsiiProxy_DataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAcce
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) Managed() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"managed",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) ServerAppId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"serverAppId",
 		&returns,
 	)
 	return returns

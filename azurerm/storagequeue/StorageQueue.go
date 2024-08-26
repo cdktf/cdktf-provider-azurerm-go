@@ -5,14 +5,14 @@ package storagequeue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/storagequeue/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/storagequeue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_queue azurerm_storage_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_queue azurerm_storage_queue}.
 type StorageQueue interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_StorageQueue) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_queue azurerm_storage_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_queue azurerm_storage_queue} Resource.
 func NewStorageQueue(scope constructs.Construct, id *string, config *StorageQueueConfig) StorageQueue {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewStorageQueue(scope constructs.Construct, id *string, config *StorageQueu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_queue azurerm_storage_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_queue azurerm_storage_queue} Resource.
 func NewStorageQueue_Override(s StorageQueue, scope constructs.Construct, id *string, config *StorageQueueConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package storagetable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/storagetable/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/storagetable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_table azurerm_storage_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_table azurerm_storage_table}.
 type StorageTable interface {
 	cdktf.TerraformResource
 	Acl() StorageTableAclList
@@ -404,7 +404,7 @@ func (j *jsiiProxy_StorageTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_table azurerm_storage_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_table azurerm_storage_table} Resource.
 func NewStorageTable(scope constructs.Construct, id *string, config *StorageTableConfig) StorageTable {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewStorageTable(scope constructs.Construct, id *string, config *StorageTabl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_table azurerm_storage_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_table azurerm_storage_table} Resource.
 func NewStorageTable_Override(s StorageTable, scope constructs.Construct, id *string, config *StorageTableConfig) {
 	_init_.Initialize()
 

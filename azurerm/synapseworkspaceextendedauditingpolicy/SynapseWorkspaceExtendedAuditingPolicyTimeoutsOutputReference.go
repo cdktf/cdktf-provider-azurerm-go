@@ -5,9 +5,9 @@ package synapseworkspaceextendedauditingpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/synapseworkspaceextendedauditingpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/synapseworkspaceextendedauditingpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

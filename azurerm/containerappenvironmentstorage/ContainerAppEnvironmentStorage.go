@@ -5,14 +5,14 @@ package containerappenvironmentstorage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/containerappenvironmentstorage/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/containerappenvironmentstorage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_app_environment_storage azurerm_container_app_environment_storage}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_app_environment_storage azurerm_container_app_environment_storage}.
 type ContainerAppEnvironmentStorage interface {
 	cdktf.TerraformResource
 	AccessKey() *string
@@ -472,7 +472,7 @@ func (j *jsiiProxy_ContainerAppEnvironmentStorage) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_app_environment_storage azurerm_container_app_environment_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_app_environment_storage azurerm_container_app_environment_storage} Resource.
 func NewContainerAppEnvironmentStorage(scope constructs.Construct, id *string, config *ContainerAppEnvironmentStorageConfig) ContainerAppEnvironmentStorage {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewContainerAppEnvironmentStorage(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_app_environment_storage azurerm_container_app_environment_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_app_environment_storage azurerm_container_app_environment_storage} Resource.
 func NewContainerAppEnvironmentStorage_Override(c ContainerAppEnvironmentStorage, scope constructs.Construct, id *string, config *ContainerAppEnvironmentStorageConfig) {
 	_init_.Initialize()
 

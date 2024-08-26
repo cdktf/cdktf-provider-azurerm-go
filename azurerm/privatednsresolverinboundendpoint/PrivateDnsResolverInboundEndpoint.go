@@ -5,14 +5,14 @@ package privatednsresolverinboundendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/privatednsresolverinboundendpoint/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/privatednsresolverinboundendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/private_dns_resolver_inbound_endpoint azurerm_private_dns_resolver_inbound_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/private_dns_resolver_inbound_endpoint azurerm_private_dns_resolver_inbound_endpoint}.
 type PrivateDnsResolverInboundEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,8 +42,8 @@ type PrivateDnsResolverInboundEndpoint interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IpConfigurations() PrivateDnsResolverInboundEndpointIpConfigurationsList
-	IpConfigurationsInput() interface{}
+	IpConfigurations() PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference
+	IpConfigurationsInput() *PrivateDnsResolverInboundEndpointIpConfigurations
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -123,7 +123,7 @@ type PrivateDnsResolverInboundEndpoint interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutIpConfigurations(value interface{})
+	PutIpConfigurations(value *PrivateDnsResolverInboundEndpointIpConfigurations)
 	PutTimeouts(value *PrivateDnsResolverInboundEndpointTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -249,8 +249,8 @@ func (j *jsiiProxy_PrivateDnsResolverInboundEndpoint) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PrivateDnsResolverInboundEndpoint) IpConfigurations() PrivateDnsResolverInboundEndpointIpConfigurationsList {
-	var returns PrivateDnsResolverInboundEndpointIpConfigurationsList
+func (j *jsiiProxy_PrivateDnsResolverInboundEndpoint) IpConfigurations() PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference {
+	var returns PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference
 	_jsii_.Get(
 		j,
 		"ipConfigurations",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_PrivateDnsResolverInboundEndpoint) IpConfigurations() Private
 	return returns
 }
 
-func (j *jsiiProxy_PrivateDnsResolverInboundEndpoint) IpConfigurationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivateDnsResolverInboundEndpoint) IpConfigurationsInput() *PrivateDnsResolverInboundEndpointIpConfigurations {
+	var returns *PrivateDnsResolverInboundEndpointIpConfigurations
 	_jsii_.Get(
 		j,
 		"ipConfigurationsInput",
@@ -450,7 +450,7 @@ func (j *jsiiProxy_PrivateDnsResolverInboundEndpoint) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/private_dns_resolver_inbound_endpoint azurerm_private_dns_resolver_inbound_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/private_dns_resolver_inbound_endpoint azurerm_private_dns_resolver_inbound_endpoint} Resource.
 func NewPrivateDnsResolverInboundEndpoint(scope constructs.Construct, id *string, config *PrivateDnsResolverInboundEndpointConfig) PrivateDnsResolverInboundEndpoint {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewPrivateDnsResolverInboundEndpoint(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/private_dns_resolver_inbound_endpoint azurerm_private_dns_resolver_inbound_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/private_dns_resolver_inbound_endpoint azurerm_private_dns_resolver_inbound_endpoint} Resource.
 func NewPrivateDnsResolverInboundEndpoint_Override(p PrivateDnsResolverInboundEndpoint, scope constructs.Construct, id *string, config *PrivateDnsResolverInboundEndpointConfig) {
 	_init_.Initialize()
 
@@ -955,7 +955,7 @@ func (p *jsiiProxy_PrivateDnsResolverInboundEndpoint) OverrideLogicalId(newLogic
 	)
 }
 
-func (p *jsiiProxy_PrivateDnsResolverInboundEndpoint) PutIpConfigurations(value interface{}) {
+func (p *jsiiProxy_PrivateDnsResolverInboundEndpoint) PutIpConfigurations(value *PrivateDnsResolverInboundEndpointIpConfigurations) {
 	if err := p.validatePutIpConfigurationsParameters(value); err != nil {
 		panic(err)
 	}

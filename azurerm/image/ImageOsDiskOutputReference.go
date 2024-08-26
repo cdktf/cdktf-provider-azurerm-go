@@ -5,9 +5,9 @@ package image
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/image/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/image/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -53,6 +53,9 @@ type ImageOsDiskOutputReference interface {
 	SizeGb() *float64
 	SetSizeGb(val *float64)
 	SizeGbInput() *float64
+	StorageType() *string
+	SetStorageType(val *string)
+	StorageTypeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -297,6 +300,26 @@ func (j *jsiiProxy_ImageOsDiskOutputReference) SizeGbInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ImageOsDiskOutputReference) StorageType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImageOsDiskOutputReference) StorageTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ImageOsDiskOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -451,6 +474,17 @@ func (j *jsiiProxy_ImageOsDiskOutputReference)SetSizeGb(val *float64) {
 	_jsii_.Set(
 		j,
 		"sizeGb",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ImageOsDiskOutputReference)SetStorageType(val *string) {
+	if err := j.validateSetStorageTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageType",
 		val,
 	)
 }

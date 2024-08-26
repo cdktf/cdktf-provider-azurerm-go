@@ -5,9 +5,9 @@ package dataazurermwindowswebapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermwindowswebapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermwindowswebapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -29,9 +29,6 @@ type DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference interface
 	// Experimental.
 	CreationStack() *[]*string
 	CurrentStack() *string
-	DockerContainerName() *string
-	DockerContainerRegistry() *string
-	DockerContainerTag() *string
 	DockerImageName() *string
 	DockerRegistryPassword() *string
 	DockerRegistryUrl() *string
@@ -133,36 +130,6 @@ func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputRefer
 	_jsii_.Get(
 		j,
 		"currentStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference) DockerContainerName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dockerContainerName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference) DockerContainerRegistry() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dockerContainerRegistry",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermWindowsWebAppSiteConfigApplicationStackOutputReference) DockerContainerTag() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dockerContainerTag",
 		&returns,
 	)
 	return returns

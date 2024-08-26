@@ -5,9 +5,9 @@ package dataazurermkubernetescluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermkubernetescluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermkubernetescluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -36,6 +36,7 @@ type DataAzurermKubernetesClusterServiceMeshProfileOutputReference interface {
 	InternalValue() *DataAzurermKubernetesClusterServiceMeshProfile
 	SetInternalValue(val *DataAzurermKubernetesClusterServiceMeshProfile)
 	Mode() *string
+	Revisions() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -168,6 +169,16 @@ func (j *jsiiProxy_DataAzurermKubernetesClusterServiceMeshProfileOutputReference
 	_jsii_.Get(
 		j,
 		"mode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermKubernetesClusterServiceMeshProfileOutputReference) Revisions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"revisions",
 		&returns,
 	)
 	return returns

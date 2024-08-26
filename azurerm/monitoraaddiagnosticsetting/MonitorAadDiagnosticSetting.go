@@ -5,14 +5,14 @@ package monitoraaddiagnosticsetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/monitoraaddiagnosticsetting/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/monitoraaddiagnosticsetting/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/monitor_aad_diagnostic_setting azurerm_monitor_aad_diagnostic_setting}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/monitor_aad_diagnostic_setting azurerm_monitor_aad_diagnostic_setting}.
 type MonitorAadDiagnosticSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -54,11 +54,9 @@ type MonitorAadDiagnosticSetting interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Log() MonitorAadDiagnosticSettingLogList
 	LogAnalyticsWorkspaceId() *string
 	SetLogAnalyticsWorkspaceId(val *string)
 	LogAnalyticsWorkspaceIdInput() *string
-	LogInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -129,13 +127,11 @@ type MonitorAadDiagnosticSetting interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEnabledLog(value interface{})
-	PutLog(value interface{})
 	PutTimeouts(value *MonitorAadDiagnosticSettingTimeouts)
 	ResetEnabledLog()
 	ResetEventhubAuthorizationRuleId()
 	ResetEventhubName()
 	ResetId()
-	ResetLog()
 	ResetLogAnalyticsWorkspaceId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -330,16 +326,6 @@ func (j *jsiiProxy_MonitorAadDiagnosticSetting) Lifecycle() *cdktf.TerraformReso
 	return returns
 }
 
-func (j *jsiiProxy_MonitorAadDiagnosticSetting) Log() MonitorAadDiagnosticSettingLogList {
-	var returns MonitorAadDiagnosticSettingLogList
-	_jsii_.Get(
-		j,
-		"log",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MonitorAadDiagnosticSetting) LogAnalyticsWorkspaceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -355,16 +341,6 @@ func (j *jsiiProxy_MonitorAadDiagnosticSetting) LogAnalyticsWorkspaceIdInput() *
 	_jsii_.Get(
 		j,
 		"logAnalyticsWorkspaceIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MonitorAadDiagnosticSetting) LogInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"logInput",
 		&returns,
 	)
 	return returns
@@ -501,7 +477,7 @@ func (j *jsiiProxy_MonitorAadDiagnosticSetting) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/monitor_aad_diagnostic_setting azurerm_monitor_aad_diagnostic_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/monitor_aad_diagnostic_setting azurerm_monitor_aad_diagnostic_setting} Resource.
 func NewMonitorAadDiagnosticSetting(scope constructs.Construct, id *string, config *MonitorAadDiagnosticSettingConfig) MonitorAadDiagnosticSetting {
 	_init_.Initialize()
 
@@ -519,7 +495,7 @@ func NewMonitorAadDiagnosticSetting(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/monitor_aad_diagnostic_setting azurerm_monitor_aad_diagnostic_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/monitor_aad_diagnostic_setting azurerm_monitor_aad_diagnostic_setting} Resource.
 func NewMonitorAadDiagnosticSetting_Override(m MonitorAadDiagnosticSetting, scope constructs.Construct, id *string, config *MonitorAadDiagnosticSettingConfig) {
 	_init_.Initialize()
 
@@ -1028,17 +1004,6 @@ func (m *jsiiProxy_MonitorAadDiagnosticSetting) PutEnabledLog(value interface{})
 	)
 }
 
-func (m *jsiiProxy_MonitorAadDiagnosticSetting) PutLog(value interface{}) {
-	if err := m.validatePutLogParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		m,
-		"putLog",
-		[]interface{}{value},
-	)
-}
-
 func (m *jsiiProxy_MonitorAadDiagnosticSetting) PutTimeouts(value *MonitorAadDiagnosticSettingTimeouts) {
 	if err := m.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1078,14 +1043,6 @@ func (m *jsiiProxy_MonitorAadDiagnosticSetting) ResetId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MonitorAadDiagnosticSetting) ResetLog() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetLog",
 		nil, // no parameters
 	)
 }

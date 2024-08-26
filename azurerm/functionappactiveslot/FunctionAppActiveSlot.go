@@ -5,14 +5,14 @@ package functionappactiveslot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/functionappactiveslot/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/functionappactiveslot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/function_app_active_slot azurerm_function_app_active_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/function_app_active_slot azurerm_function_app_active_slot}.
 type FunctionAppActiveSlot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_FunctionAppActiveSlot) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/function_app_active_slot azurerm_function_app_active_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/function_app_active_slot azurerm_function_app_active_slot} Resource.
 func NewFunctionAppActiveSlot(scope constructs.Construct, id *string, config *FunctionAppActiveSlotConfig) FunctionAppActiveSlot {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewFunctionAppActiveSlot(scope constructs.Construct, id *string, config *Fu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/function_app_active_slot azurerm_function_app_active_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/function_app_active_slot azurerm_function_app_active_slot} Resource.
 func NewFunctionAppActiveSlot_Override(f FunctionAppActiveSlot, scope constructs.Construct, id *string, config *FunctionAppActiveSlotConfig) {
 	_init_.Initialize()
 

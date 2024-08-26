@@ -5,14 +5,14 @@ package dataazurermnginxcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermnginxcertificate/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermnginxcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/nginx_certificate azurerm_nginx_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/nginx_certificate azurerm_nginx_certificate}.
 type DataAzurermNginxCertificate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -423,7 +423,7 @@ func (j *jsiiProxy_DataAzurermNginxCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/nginx_certificate azurerm_nginx_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/nginx_certificate azurerm_nginx_certificate} Data Source.
 func NewDataAzurermNginxCertificate(scope constructs.Construct, id *string, config *DataAzurermNginxCertificateConfig) DataAzurermNginxCertificate {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewDataAzurermNginxCertificate(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/nginx_certificate azurerm_nginx_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/nginx_certificate azurerm_nginx_certificate} Data Source.
 func NewDataAzurermNginxCertificate_Override(d DataAzurermNginxCertificate, scope constructs.Construct, id *string, config *DataAzurermNginxCertificateConfig) {
 	_init_.Initialize()
 

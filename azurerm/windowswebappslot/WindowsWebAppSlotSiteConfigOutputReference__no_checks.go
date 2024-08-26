@@ -95,10 +95,6 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) validateSetAppCom
 	return nil
 }
 
-func (j *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) validateSetAutoHealEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) validateSetAutoSwapSlotNameParameters(val *string) error {
 	return nil
 }

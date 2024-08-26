@@ -5,14 +5,14 @@ package dataazurermspatialanchorsaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermspatialanchorsaccount/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermspatialanchorsaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/spatial_anchors_account azurerm_spatial_anchors_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/spatial_anchors_account azurerm_spatial_anchors_account}.
 type DataAzurermSpatialAnchorsAccount interface {
 	cdktf.TerraformDataSource
 	AccountDomain() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_DataAzurermSpatialAnchorsAccount) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/spatial_anchors_account azurerm_spatial_anchors_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/spatial_anchors_account azurerm_spatial_anchors_account} Data Source.
 func NewDataAzurermSpatialAnchorsAccount(scope constructs.Construct, id *string, config *DataAzurermSpatialAnchorsAccountConfig) DataAzurermSpatialAnchorsAccount {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewDataAzurermSpatialAnchorsAccount(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/spatial_anchors_account azurerm_spatial_anchors_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/spatial_anchors_account azurerm_spatial_anchors_account} Data Source.
 func NewDataAzurermSpatialAnchorsAccount_Override(d DataAzurermSpatialAnchorsAccount, scope constructs.Construct, id *string, config *DataAzurermSpatialAnchorsAccountConfig) {
 	_init_.Initialize()
 

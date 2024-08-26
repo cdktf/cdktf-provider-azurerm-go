@@ -5,14 +5,14 @@ package sentinelloganalyticsworkspaceonboarding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/sentinelloganalyticsworkspaceonboarding/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/sentinelloganalyticsworkspaceonboarding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_log_analytics_workspace_onboarding azurerm_sentinel_log_analytics_workspace_onboarding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_log_analytics_workspace_onboarding azurerm_sentinel_log_analytics_workspace_onboarding}.
 type SentinelLogAnalyticsWorkspaceOnboarding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,9 +61,6 @@ type SentinelLogAnalyticsWorkspaceOnboarding interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	ResourceGroupName() *string
-	SetResourceGroupName(val *string)
-	ResourceGroupNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -75,9 +72,6 @@ type SentinelLogAnalyticsWorkspaceOnboarding interface {
 	WorkspaceId() *string
 	SetWorkspaceId(val *string)
 	WorkspaceIdInput() *string
-	WorkspaceName() *string
-	SetWorkspaceName(val *string)
-	WorkspaceNameInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -127,10 +121,7 @@ type SentinelLogAnalyticsWorkspaceOnboarding interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetResourceGroupName()
 	ResetTimeouts()
-	ResetWorkspaceId()
-	ResetWorkspaceName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -319,26 +310,6 @@ func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) RawOverrides() inter
 	return returns
 }
 
-func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) ResourceGroupName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"resourceGroupName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) ResourceGroupNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"resourceGroupNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -409,28 +380,8 @@ func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) WorkspaceIdInput() *
 	return returns
 }
 
-func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) WorkspaceName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceName",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) WorkspaceNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"workspaceNameInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_log_analytics_workspace_onboarding azurerm_sentinel_log_analytics_workspace_onboarding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_log_analytics_workspace_onboarding azurerm_sentinel_log_analytics_workspace_onboarding} Resource.
 func NewSentinelLogAnalyticsWorkspaceOnboarding(scope constructs.Construct, id *string, config *SentinelLogAnalyticsWorkspaceOnboardingConfig) SentinelLogAnalyticsWorkspaceOnboarding {
 	_init_.Initialize()
 
@@ -448,7 +399,7 @@ func NewSentinelLogAnalyticsWorkspaceOnboarding(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_log_analytics_workspace_onboarding azurerm_sentinel_log_analytics_workspace_onboarding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_log_analytics_workspace_onboarding azurerm_sentinel_log_analytics_workspace_onboarding} Resource.
 func NewSentinelLogAnalyticsWorkspaceOnboarding_Override(s SentinelLogAnalyticsWorkspaceOnboarding, scope constructs.Construct, id *string, config *SentinelLogAnalyticsWorkspaceOnboardingConfig) {
 	_init_.Initialize()
 
@@ -549,17 +500,6 @@ func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding)SetProvisioners(val *
 	)
 }
 
-func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding)SetResourceGroupName(val *string) {
-	if err := j.validateSetResourceGroupNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"resourceGroupName",
-		val,
-	)
-}
-
 func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding)SetWorkspaceId(val *string) {
 	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
 		panic(err)
@@ -567,17 +507,6 @@ func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding)SetWorkspaceId(val *s
 	_jsii_.Set(
 		j,
 		"workspaceId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding)SetWorkspaceName(val *string) {
-	if err := j.validateSetWorkspaceNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"workspaceName",
 		val,
 	)
 }
@@ -970,34 +899,10 @@ func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) ResetOverrideLogical
 	)
 }
 
-func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) ResetResourceGroupName() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetResourceGroupName",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTimeouts",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) ResetWorkspaceId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetWorkspaceId",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) ResetWorkspaceName() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetWorkspaceName",
 		nil, // no parameters
 	)
 }

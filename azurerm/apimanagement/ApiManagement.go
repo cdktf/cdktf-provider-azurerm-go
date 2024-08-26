@@ -5,14 +5,14 @@ package apimanagement
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/apimanagement/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/apimanagement/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management azurerm_api_management}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management azurerm_api_management}.
 type ApiManagement interface {
 	cdktf.TerraformResource
 	AdditionalLocation() ApiManagementAdditionalLocationList
@@ -80,8 +80,6 @@ type ApiManagement interface {
 	NotificationSenderEmail() *string
 	SetNotificationSenderEmail(val *string)
 	NotificationSenderEmailInput() *string
-	Policy() ApiManagementPolicyList
-	PolicyInput() interface{}
 	PortalUrl() *string
 	PrivateIpAddresses() *[]*string
 	Protocols() ApiManagementProtocolsOutputReference
@@ -191,7 +189,6 @@ type ApiManagement interface {
 	PutDelegation(value *ApiManagementDelegation)
 	PutHostnameConfiguration(value *ApiManagementHostnameConfiguration)
 	PutIdentity(value *ApiManagementIdentity)
-	PutPolicy(value interface{})
 	PutProtocols(value *ApiManagementProtocols)
 	PutSecurity(value *ApiManagementSecurity)
 	PutSignIn(value *ApiManagementSignIn)
@@ -212,7 +209,6 @@ type ApiManagement interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPolicy()
 	ResetProtocols()
 	ResetPublicIpAddressId()
 	ResetPublicNetworkAccessEnabled()
@@ -618,26 +614,6 @@ func (j *jsiiProxy_ApiManagement) NotificationSenderEmailInput() *string {
 	_jsii_.Get(
 		j,
 		"notificationSenderEmailInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiManagement) Policy() ApiManagementPolicyList {
-	var returns ApiManagementPolicyList
-	_jsii_.Get(
-		j,
-		"policy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiManagement) PolicyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"policyInput",
 		&returns,
 	)
 	return returns
@@ -1064,7 +1040,7 @@ func (j *jsiiProxy_ApiManagement) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management azurerm_api_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management azurerm_api_management} Resource.
 func NewApiManagement(scope constructs.Construct, id *string, config *ApiManagementConfig) ApiManagement {
 	_init_.Initialize()
 
@@ -1082,7 +1058,7 @@ func NewApiManagement(scope constructs.Construct, id *string, config *ApiManagem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management azurerm_api_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management azurerm_api_management} Resource.
 func NewApiManagement_Override(a ApiManagement, scope constructs.Construct, id *string, config *ApiManagementConfig) {
 	_init_.Initialize()
 
@@ -1745,17 +1721,6 @@ func (a *jsiiProxy_ApiManagement) PutIdentity(value *ApiManagementIdentity) {
 	)
 }
 
-func (a *jsiiProxy_ApiManagement) PutPolicy(value interface{}) {
-	if err := a.validatePutPolicyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putPolicy",
-		[]interface{}{value},
-	)
-}
-
 func (a *jsiiProxy_ApiManagement) PutProtocols(value *ApiManagementProtocols) {
 	if err := a.validatePutProtocolsParameters(value); err != nil {
 		panic(err)
@@ -1917,14 +1882,6 @@ func (a *jsiiProxy_ApiManagement) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApiManagement) ResetPolicy() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetPolicy",
 		nil, // no parameters
 	)
 }

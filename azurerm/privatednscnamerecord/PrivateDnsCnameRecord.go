@@ -5,14 +5,14 @@ package privatednscnamerecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/privatednscnamerecord/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/privatednscnamerecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/private_dns_cname_record azurerm_private_dns_cname_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/private_dns_cname_record azurerm_private_dns_cname_record}.
 type PrivateDnsCnameRecord interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -484,7 +484,7 @@ func (j *jsiiProxy_PrivateDnsCnameRecord) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/private_dns_cname_record azurerm_private_dns_cname_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/private_dns_cname_record azurerm_private_dns_cname_record} Resource.
 func NewPrivateDnsCnameRecord(scope constructs.Construct, id *string, config *PrivateDnsCnameRecordConfig) PrivateDnsCnameRecord {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewPrivateDnsCnameRecord(scope constructs.Construct, id *string, config *Pr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/private_dns_cname_record azurerm_private_dns_cname_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/private_dns_cname_record azurerm_private_dns_cname_record} Resource.
 func NewPrivateDnsCnameRecord_Override(p PrivateDnsCnameRecord, scope constructs.Construct, id *string, config *PrivateDnsCnameRecordConfig) {
 	_init_.Initialize()
 

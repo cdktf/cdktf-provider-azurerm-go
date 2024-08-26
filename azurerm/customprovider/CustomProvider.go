@@ -5,14 +5,14 @@ package customprovider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/customprovider/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/customprovider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/custom_provider azurerm_custom_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/custom_provider azurerm_custom_provider}.
 type CustomProvider interface {
 	cdktf.TerraformResource
 	Action() CustomProviderActionList
@@ -499,7 +499,7 @@ func (j *jsiiProxy_CustomProvider) ValidationInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/custom_provider azurerm_custom_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/custom_provider azurerm_custom_provider} Resource.
 func NewCustomProvider(scope constructs.Construct, id *string, config *CustomProviderConfig) CustomProvider {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewCustomProvider(scope constructs.Construct, id *string, config *CustomPro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/custom_provider azurerm_custom_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/custom_provider azurerm_custom_provider} Resource.
 func NewCustomProvider_Override(c CustomProvider, scope constructs.Construct, id *string, config *CustomProviderConfig) {
 	_init_.Initialize()
 

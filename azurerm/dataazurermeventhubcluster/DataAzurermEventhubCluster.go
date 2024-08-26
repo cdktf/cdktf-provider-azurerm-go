@@ -5,14 +5,14 @@ package dataazurermeventhubcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermeventhubcluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermeventhubcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/eventhub_cluster azurerm_eventhub_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/eventhub_cluster azurerm_eventhub_cluster}.
 type DataAzurermEventhubCluster interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_DataAzurermEventhubCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/eventhub_cluster azurerm_eventhub_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/eventhub_cluster azurerm_eventhub_cluster} Data Source.
 func NewDataAzurermEventhubCluster(scope constructs.Construct, id *string, config *DataAzurermEventhubClusterConfig) DataAzurermEventhubCluster {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewDataAzurermEventhubCluster(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/eventhub_cluster azurerm_eventhub_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/eventhub_cluster azurerm_eventhub_cluster} Data Source.
 func NewDataAzurermEventhubCluster_Override(d DataAzurermEventhubCluster, scope constructs.Construct, id *string, config *DataAzurermEventhubClusterConfig) {
 	_init_.Initialize()
 

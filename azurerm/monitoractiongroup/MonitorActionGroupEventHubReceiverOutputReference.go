@@ -5,9 +5,9 @@ package monitoractiongroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/monitoractiongroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/monitoractiongroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -28,9 +28,6 @@ type MonitorActionGroupEventHubReceiverOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EventHubId() *string
-	SetEventHubId(val *string)
-	EventHubIdInput() *string
 	EventHubName() *string
 	SetEventHubName(val *string)
 	EventHubNameInput() *string
@@ -85,9 +82,6 @@ type MonitorActionGroupEventHubReceiverOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetEventHubId()
-	ResetEventHubName()
-	ResetEventHubNamespace()
 	ResetSubscriptionId()
 	ResetTenantId()
 	ResetUseCommonAlertSchema()
@@ -131,26 +125,6 @@ func (j *jsiiProxy_MonitorActionGroupEventHubReceiverOutputReference) CreationSt
 	_jsii_.Get(
 		j,
 		"creationStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MonitorActionGroupEventHubReceiverOutputReference) EventHubId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"eventHubId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MonitorActionGroupEventHubReceiverOutputReference) EventHubIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"eventHubIdInput",
 		&returns,
 	)
 	return returns
@@ -362,17 +336,6 @@ func (j *jsiiProxy_MonitorActionGroupEventHubReceiverOutputReference)SetComplexO
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MonitorActionGroupEventHubReceiverOutputReference)SetEventHubId(val *string) {
-	if err := j.validateSetEventHubIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"eventHubId",
 		val,
 	)
 }
@@ -660,30 +623,6 @@ func (m *jsiiProxy_MonitorActionGroupEventHubReceiverOutputReference) Interpolat
 	)
 
 	return returns
-}
-
-func (m *jsiiProxy_MonitorActionGroupEventHubReceiverOutputReference) ResetEventHubId() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetEventHubId",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MonitorActionGroupEventHubReceiverOutputReference) ResetEventHubName() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetEventHubName",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MonitorActionGroupEventHubReceiverOutputReference) ResetEventHubNamespace() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetEventHubNamespace",
-		nil, // no parameters
-	)
 }
 
 func (m *jsiiProxy_MonitorActionGroupEventHubReceiverOutputReference) ResetSubscriptionId() {

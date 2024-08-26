@@ -79,6 +79,10 @@ func (k *jsiiProxy_KustoCluster) validatePutIdentityParameters(value *KustoClust
 	return nil
 }
 
+func (k *jsiiProxy_KustoCluster) validatePutLanguageExtensionsParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KustoCluster) validatePutOptimizedAutoScaleParameters(value *KustoClusterOptimizedAutoScale) error {
 	return nil
 }
@@ -139,15 +143,7 @@ func (j *jsiiProxy_KustoCluster) validateSetDoubleEncryptionEnabledParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_KustoCluster) validateSetEngineParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_KustoCluster) validateSetIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_KustoCluster) validateSetLanguageExtensionsParameters(val *[]*string) error {
 	return nil
 }
 

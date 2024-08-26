@@ -5,14 +5,14 @@ package keyvaultmanagedhardwaresecuritymoduleroledefinition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/keyvaultmanagedhardwaresecuritymoduleroledefinition/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/keyvaultmanagedhardwaresecuritymoduleroledefinition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition}.
 type KeyVaultManagedHardwareSecurityModuleRoleDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -82,9 +82,6 @@ type KeyVaultManagedHardwareSecurityModuleRoleDefinition interface {
 	TerraformResourceType() *string
 	Timeouts() KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeoutsOutputReference
 	TimeoutsInput() interface{}
-	VaultBaseUrl() *string
-	SetVaultBaseUrl(val *string)
-	VaultBaseUrlInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -132,14 +129,12 @@ type KeyVaultManagedHardwareSecurityModuleRoleDefinition interface {
 	PutTimeouts(value *KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeouts)
 	ResetDescription()
 	ResetId()
-	ResetManagedHsmId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPermission()
 	ResetRoleName()
 	ResetTimeouts()
-	ResetVaultBaseUrl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -478,28 +473,8 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) Timeouts
 	return returns
 }
 
-func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) VaultBaseUrl() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vaultBaseUrl",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) VaultBaseUrlInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vaultBaseUrlInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition} Resource.
 func NewKeyVaultManagedHardwareSecurityModuleRoleDefinition(scope constructs.Construct, id *string, config *KeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig) KeyVaultManagedHardwareSecurityModuleRoleDefinition {
 	_init_.Initialize()
 
@@ -517,7 +492,7 @@ func NewKeyVaultManagedHardwareSecurityModuleRoleDefinition(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition} Resource.
 func NewKeyVaultManagedHardwareSecurityModuleRoleDefinition_Override(k KeyVaultManagedHardwareSecurityModuleRoleDefinition, scope constructs.Construct, id *string, config *KeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig) {
 	_init_.Initialize()
 
@@ -647,17 +622,6 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition)SetRoleNa
 	_jsii_.Set(
 		j,
 		"roleName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition)SetVaultBaseUrl(val *string) {
-	if err := j.validateSetVaultBaseUrlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"vaultBaseUrl",
 		val,
 	)
 }
@@ -1053,14 +1017,6 @@ func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) ResetId(
 	)
 }
 
-func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) ResetManagedHsmId() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetManagedHsmId",
-		nil, // no parameters
-	)
-}
-
 func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1089,14 +1045,6 @@ func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) ResetTim
 	_jsii_.InvokeVoid(
 		k,
 		"resetTimeouts",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) ResetVaultBaseUrl() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetVaultBaseUrl",
 		nil, // no parameters
 	)
 }

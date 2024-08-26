@@ -5,14 +5,14 @@ package mapscreator
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/mapscreator/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/mapscreator/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/maps_creator azurerm_maps_creator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/maps_creator azurerm_maps_creator}.
 type MapsCreator interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -450,7 +450,7 @@ func (j *jsiiProxy_MapsCreator) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/maps_creator azurerm_maps_creator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/maps_creator azurerm_maps_creator} Resource.
 func NewMapsCreator(scope constructs.Construct, id *string, config *MapsCreatorConfig) MapsCreator {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewMapsCreator(scope constructs.Construct, id *string, config *MapsCreatorC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/maps_creator azurerm_maps_creator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/maps_creator azurerm_maps_creator} Resource.
 func NewMapsCreator_Override(m MapsCreator, scope constructs.Construct, id *string, config *MapsCreatorConfig) {
 	_init_.Initialize()
 

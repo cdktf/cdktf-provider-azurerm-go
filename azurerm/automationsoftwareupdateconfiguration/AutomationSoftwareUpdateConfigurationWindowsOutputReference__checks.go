@@ -101,14 +101,6 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationWindowsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationWindowsOutputReference) validateSetClassificationIncludedParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationWindowsOutputReference) validateSetClassificationsIncludedParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

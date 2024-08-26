@@ -5,14 +5,14 @@ package dataazurermsystemcentervirtualmachinemanagerinventoryitems
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermsystemcentervirtualmachinemanagerinventoryitems/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermsystemcentervirtualmachinemanagerinventoryitems/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/system_center_virtual_machine_manager_inventory_items azurerm_system_center_virtual_machine_manager_inventory_items}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/system_center_virtual_machine_manager_inventory_items azurerm_system_center_virtual_machine_manager_inventory_items}.
 type DataAzurermSystemCenterVirtualMachineManagerInventoryItems interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataAzurermSystemCenterVirtualMachineManagerInventoryItems) T
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/system_center_virtual_machine_manager_inventory_items azurerm_system_center_virtual_machine_manager_inventory_items} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/system_center_virtual_machine_manager_inventory_items azurerm_system_center_virtual_machine_manager_inventory_items} Data Source.
 func NewDataAzurermSystemCenterVirtualMachineManagerInventoryItems(scope constructs.Construct, id *string, config *DataAzurermSystemCenterVirtualMachineManagerInventoryItemsConfig) DataAzurermSystemCenterVirtualMachineManagerInventoryItems {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataAzurermSystemCenterVirtualMachineManagerInventoryItems(scope constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/system_center_virtual_machine_manager_inventory_items azurerm_system_center_virtual_machine_manager_inventory_items} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/system_center_virtual_machine_manager_inventory_items azurerm_system_center_virtual_machine_manager_inventory_items} Data Source.
 func NewDataAzurermSystemCenterVirtualMachineManagerInventoryItems_Override(d DataAzurermSystemCenterVirtualMachineManagerInventoryItems, scope constructs.Construct, id *string, config *DataAzurermSystemCenterVirtualMachineManagerInventoryItemsConfig) {
 	_init_.Initialize()
 

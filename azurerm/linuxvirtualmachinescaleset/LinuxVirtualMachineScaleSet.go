@@ -5,14 +5,14 @@ package linuxvirtualmachinescaleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/linuxvirtualmachinescaleset/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/linuxvirtualmachinescaleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/linux_virtual_machine_scale_set azurerm_linux_virtual_machine_scale_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/linux_virtual_machine_scale_set azurerm_linux_virtual_machine_scale_set}.
 type LinuxVirtualMachineScaleSet interface {
 	cdktf.TerraformResource
 	AdditionalCapabilities() LinuxVirtualMachineScaleSetAdditionalCapabilitiesOutputReference
@@ -91,8 +91,6 @@ type LinuxVirtualMachineScaleSet interface {
 	FriendlyUniqueId() *string
 	GalleryApplication() LinuxVirtualMachineScaleSetGalleryApplicationList
 	GalleryApplicationInput() interface{}
-	GalleryApplications() LinuxVirtualMachineScaleSetGalleryApplicationsList
-	GalleryApplicationsInput() interface{}
 	HealthProbeId() *string
 	SetHealthProbeId(val *string)
 	HealthProbeIdInput() *string
@@ -160,9 +158,6 @@ type LinuxVirtualMachineScaleSet interface {
 	RollingUpgradePolicyInput() *LinuxVirtualMachineScaleSetRollingUpgradePolicy
 	ScaleIn() LinuxVirtualMachineScaleSetScaleInOutputReference
 	ScaleInInput() *LinuxVirtualMachineScaleSetScaleIn
-	ScaleInPolicy() *string
-	SetScaleInPolicy(val *string)
-	ScaleInPolicyInput() *string
 	Secret() LinuxVirtualMachineScaleSetSecretList
 	SecretInput() interface{}
 	SecureBootEnabled() interface{}
@@ -184,8 +179,6 @@ type LinuxVirtualMachineScaleSet interface {
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
-	TerminateNotification() LinuxVirtualMachineScaleSetTerminateNotificationOutputReference
-	TerminateNotificationInput() *LinuxVirtualMachineScaleSetTerminateNotification
 	TerminationNotification() LinuxVirtualMachineScaleSetTerminationNotificationOutputReference
 	TerminationNotificationInput() *LinuxVirtualMachineScaleSetTerminationNotification
 	// Experimental.
@@ -263,7 +256,6 @@ type LinuxVirtualMachineScaleSet interface {
 	PutDataDisk(value interface{})
 	PutExtension(value interface{})
 	PutGalleryApplication(value interface{})
-	PutGalleryApplications(value interface{})
 	PutIdentity(value *LinuxVirtualMachineScaleSetIdentity)
 	PutNetworkInterface(value interface{})
 	PutOsDisk(value *LinuxVirtualMachineScaleSetOsDisk)
@@ -273,7 +265,6 @@ type LinuxVirtualMachineScaleSet interface {
 	PutSecret(value interface{})
 	PutSourceImageReference(value *LinuxVirtualMachineScaleSetSourceImageReference)
 	PutSpotRestore(value *LinuxVirtualMachineScaleSetSpotRestore)
-	PutTerminateNotification(value *LinuxVirtualMachineScaleSetTerminateNotification)
 	PutTerminationNotification(value *LinuxVirtualMachineScaleSetTerminationNotification)
 	PutTimeouts(value *LinuxVirtualMachineScaleSetTimeouts)
 	ResetAdditionalCapabilities()
@@ -295,7 +286,6 @@ type LinuxVirtualMachineScaleSet interface {
 	ResetExtensionOperationsEnabled()
 	ResetExtensionsTimeBudget()
 	ResetGalleryApplication()
-	ResetGalleryApplications()
 	ResetHealthProbeId()
 	ResetHostGroupId()
 	ResetId()
@@ -313,7 +303,6 @@ type LinuxVirtualMachineScaleSet interface {
 	ResetProximityPlacementGroupId()
 	ResetRollingUpgradePolicy()
 	ResetScaleIn()
-	ResetScaleInPolicy()
 	ResetSecret()
 	ResetSecureBootEnabled()
 	ResetSinglePlacementGroup()
@@ -321,7 +310,6 @@ type LinuxVirtualMachineScaleSet interface {
 	ResetSourceImageReference()
 	ResetSpotRestore()
 	ResetTags()
-	ResetTerminateNotification()
 	ResetTerminationNotification()
 	ResetTimeouts()
 	ResetUpgradeMode()
@@ -827,26 +815,6 @@ func (j *jsiiProxy_LinuxVirtualMachineScaleSet) GalleryApplicationInput() interf
 	return returns
 }
 
-func (j *jsiiProxy_LinuxVirtualMachineScaleSet) GalleryApplications() LinuxVirtualMachineScaleSetGalleryApplicationsList {
-	var returns LinuxVirtualMachineScaleSetGalleryApplicationsList
-	_jsii_.Get(
-		j,
-		"galleryApplications",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LinuxVirtualMachineScaleSet) GalleryApplicationsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"galleryApplicationsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_LinuxVirtualMachineScaleSet) HealthProbeId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1277,26 +1245,6 @@ func (j *jsiiProxy_LinuxVirtualMachineScaleSet) ScaleInInput() *LinuxVirtualMach
 	return returns
 }
 
-func (j *jsiiProxy_LinuxVirtualMachineScaleSet) ScaleInPolicy() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"scaleInPolicy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LinuxVirtualMachineScaleSet) ScaleInPolicyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"scaleInPolicyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_LinuxVirtualMachineScaleSet) Secret() LinuxVirtualMachineScaleSetSecretList {
 	var returns LinuxVirtualMachineScaleSetSecretList
 	_jsii_.Get(
@@ -1452,26 +1400,6 @@ func (j *jsiiProxy_LinuxVirtualMachineScaleSet) TagsInput() *map[string]*string 
 	_jsii_.Get(
 		j,
 		"tagsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LinuxVirtualMachineScaleSet) TerminateNotification() LinuxVirtualMachineScaleSetTerminateNotificationOutputReference {
-	var returns LinuxVirtualMachineScaleSetTerminateNotificationOutputReference
-	_jsii_.Get(
-		j,
-		"terminateNotification",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LinuxVirtualMachineScaleSet) TerminateNotificationInput() *LinuxVirtualMachineScaleSetTerminateNotification {
-	var returns *LinuxVirtualMachineScaleSetTerminateNotification
-	_jsii_.Get(
-		j,
-		"terminateNotificationInput",
 		&returns,
 	)
 	return returns
@@ -1658,7 +1586,7 @@ func (j *jsiiProxy_LinuxVirtualMachineScaleSet) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/linux_virtual_machine_scale_set azurerm_linux_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/linux_virtual_machine_scale_set azurerm_linux_virtual_machine_scale_set} Resource.
 func NewLinuxVirtualMachineScaleSet(scope constructs.Construct, id *string, config *LinuxVirtualMachineScaleSetConfig) LinuxVirtualMachineScaleSet {
 	_init_.Initialize()
 
@@ -1676,7 +1604,7 @@ func NewLinuxVirtualMachineScaleSet(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/linux_virtual_machine_scale_set azurerm_linux_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/linux_virtual_machine_scale_set azurerm_linux_virtual_machine_scale_set} Resource.
 func NewLinuxVirtualMachineScaleSet_Override(l LinuxVirtualMachineScaleSet, scope constructs.Construct, id *string, config *LinuxVirtualMachineScaleSetConfig) {
 	_init_.Initialize()
 
@@ -2026,17 +1954,6 @@ func (j *jsiiProxy_LinuxVirtualMachineScaleSet)SetResourceGroupName(val *string)
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LinuxVirtualMachineScaleSet)SetScaleInPolicy(val *string) {
-	if err := j.validateSetScaleInPolicyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"scaleInPolicy",
 		val,
 	)
 }
@@ -2592,17 +2509,6 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSet) PutGalleryApplication(value inte
 	)
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSet) PutGalleryApplications(value interface{}) {
-	if err := l.validatePutGalleryApplicationsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		l,
-		"putGalleryApplications",
-		[]interface{}{value},
-	)
-}
-
 func (l *jsiiProxy_LinuxVirtualMachineScaleSet) PutIdentity(value *LinuxVirtualMachineScaleSetIdentity) {
 	if err := l.validatePutIdentityParameters(value); err != nil {
 		panic(err)
@@ -2698,17 +2604,6 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSet) PutSpotRestore(value *LinuxVirtu
 	_jsii_.InvokeVoid(
 		l,
 		"putSpotRestore",
-		[]interface{}{value},
-	)
-}
-
-func (l *jsiiProxy_LinuxVirtualMachineScaleSet) PutTerminateNotification(value *LinuxVirtualMachineScaleSetTerminateNotification) {
-	if err := l.validatePutTerminateNotificationParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		l,
-		"putTerminateNotification",
 		[]interface{}{value},
 	)
 }
@@ -2887,14 +2782,6 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSet) ResetGalleryApplication() {
 	)
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSet) ResetGalleryApplications() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetGalleryApplications",
-		nil, // no parameters
-	)
-}
-
 func (l *jsiiProxy_LinuxVirtualMachineScaleSet) ResetHealthProbeId() {
 	_jsii_.InvokeVoid(
 		l,
@@ -3015,14 +2902,6 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSet) ResetScaleIn() {
 	)
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSet) ResetScaleInPolicy() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetScaleInPolicy",
-		nil, // no parameters
-	)
-}
-
 func (l *jsiiProxy_LinuxVirtualMachineScaleSet) ResetSecret() {
 	_jsii_.InvokeVoid(
 		l,
@@ -3075,14 +2954,6 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSet) ResetTags() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetTags",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LinuxVirtualMachineScaleSet) ResetTerminateNotification() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetTerminateNotification",
 		nil, // no parameters
 	)
 }

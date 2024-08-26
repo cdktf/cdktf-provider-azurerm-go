@@ -53,12 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomerManagedKeyEnabled", GoMethod: "ResetCustomerManagedKeyEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetResourceGroupName", GoMethod: "ResetResourceGroupName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceId", GoMethod: "ResetWorkspaceId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceName", GoMethod: "ResetWorkspaceName"},
-			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
-			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -72,8 +67,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "workspaceName", GoGetter: "WorkspaceName"},
-			_jsii_.MemberProperty{JsiiProperty: "workspaceNameInput", GoGetter: "WorkspaceNameInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding{}

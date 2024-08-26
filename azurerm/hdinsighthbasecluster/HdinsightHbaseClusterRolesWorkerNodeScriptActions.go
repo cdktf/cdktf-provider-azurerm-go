@@ -5,11 +5,11 @@ package hdinsighthbasecluster
 
 
 type HdinsightHbaseClusterRolesWorkerNodeScriptActions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/hdinsight_hbase_cluster#name HdinsightHbaseCluster#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/hdinsight_hbase_cluster#name HdinsightHbaseCluster#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/hdinsight_hbase_cluster#uri HdinsightHbaseCluster#uri}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/hdinsight_hbase_cluster#uri HdinsightHbaseCluster#uri}.
 	Uri *string `field:"required" json:"uri" yaml:"uri"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/hdinsight_hbase_cluster#parameters HdinsightHbaseCluster#parameters}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/hdinsight_hbase_cluster#parameters HdinsightHbaseCluster#parameters}.
 	Parameters *string `field:"optional" json:"parameters" yaml:"parameters"`
 }
 

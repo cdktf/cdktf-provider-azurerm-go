@@ -254,14 +254,6 @@ func (j *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitio
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition) validateSetVaultBaseUrlParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewDataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitionParameters(scope constructs.Construct, id *string, config *DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

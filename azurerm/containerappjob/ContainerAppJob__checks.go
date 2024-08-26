@@ -240,37 +240,6 @@ func (c *jsiiProxy_ContainerAppJob) validatePutManualTriggerConfigParameters(val
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAppJob) validatePutRegistriesParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*ContainerAppJobRegistries:
-		value := value.(*[]*ContainerAppJobRegistries)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*ContainerAppJobRegistries:
-		value_ := value.([]*ContainerAppJobRegistries)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ContainerAppJobRegistries; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func (c *jsiiProxy_ContainerAppJob) validatePutRegistryParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -338,37 +307,6 @@ func (c *jsiiProxy_ContainerAppJob) validatePutSecretParameters(value interface{
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ContainerAppJobSecret; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (c *jsiiProxy_ContainerAppJob) validatePutSecretsParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*ContainerAppJobSecrets:
-		value := value.(*[]*ContainerAppJobSecrets)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*ContainerAppJobSecrets:
-		value_ := value.([]*ContainerAppJobSecrets)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ContainerAppJobSecrets; received %#v (a %T)", value, value)
 		}
 	}
 

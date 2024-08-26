@@ -5,14 +5,14 @@ package automationconnectiontype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/automationconnectiontype/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/automationconnectiontype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_connection_type azurerm_automation_connection_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_connection_type azurerm_automation_connection_type}.
 type AutomationConnectionType interface {
 	cdktf.TerraformResource
 	AutomationAccountName() *string
@@ -450,7 +450,7 @@ func (j *jsiiProxy_AutomationConnectionType) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_connection_type azurerm_automation_connection_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_connection_type azurerm_automation_connection_type} Resource.
 func NewAutomationConnectionType(scope constructs.Construct, id *string, config *AutomationConnectionTypeConfig) AutomationConnectionType {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewAutomationConnectionType(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_connection_type azurerm_automation_connection_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_connection_type azurerm_automation_connection_type} Resource.
 func NewAutomationConnectionType_Override(a AutomationConnectionType, scope constructs.Construct, id *string, config *AutomationConnectionTypeConfig) {
 	_init_.Initialize()
 

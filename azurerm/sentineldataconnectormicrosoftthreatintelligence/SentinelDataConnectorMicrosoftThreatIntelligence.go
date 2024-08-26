@@ -5,19 +5,16 @@ package sentineldataconnectormicrosoftthreatintelligence
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/sentineldataconnectormicrosoftthreatintelligence/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/sentineldataconnectormicrosoftthreatintelligence/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_data_connector_microsoft_threat_intelligence azurerm_sentinel_data_connector_microsoft_threat_intelligence}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_data_connector_microsoft_threat_intelligence azurerm_sentinel_data_connector_microsoft_threat_intelligence}.
 type SentinelDataConnectorMicrosoftThreatIntelligence interface {
 	cdktf.TerraformResource
-	BingSafetyPhishingUrlLookbackDate() *string
-	SetBingSafetyPhishingUrlLookbackDate(val *string)
-	BingSafetyPhishingUrlLookbackDateInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -125,9 +122,7 @@ type SentinelDataConnectorMicrosoftThreatIntelligence interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *SentinelDataConnectorMicrosoftThreatIntelligenceTimeouts)
-	ResetBingSafetyPhishingUrlLookbackDate()
 	ResetId()
-	ResetMicrosoftEmergingThreatFeedLookbackDate()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -149,26 +144,6 @@ type SentinelDataConnectorMicrosoftThreatIntelligence interface {
 // The jsii proxy struct for SentinelDataConnectorMicrosoftThreatIntelligence
 type jsiiProxy_SentinelDataConnectorMicrosoftThreatIntelligence struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_SentinelDataConnectorMicrosoftThreatIntelligence) BingSafetyPhishingUrlLookbackDate() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"bingSafetyPhishingUrlLookbackDate",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SentinelDataConnectorMicrosoftThreatIntelligence) BingSafetyPhishingUrlLookbackDateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"bingSafetyPhishingUrlLookbackDateInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_SentinelDataConnectorMicrosoftThreatIntelligence) CdktfStack() cdktf.TerraformStack {
@@ -452,7 +427,7 @@ func (j *jsiiProxy_SentinelDataConnectorMicrosoftThreatIntelligence) TimeoutsInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_data_connector_microsoft_threat_intelligence azurerm_sentinel_data_connector_microsoft_threat_intelligence} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_data_connector_microsoft_threat_intelligence azurerm_sentinel_data_connector_microsoft_threat_intelligence} Resource.
 func NewSentinelDataConnectorMicrosoftThreatIntelligence(scope constructs.Construct, id *string, config *SentinelDataConnectorMicrosoftThreatIntelligenceConfig) SentinelDataConnectorMicrosoftThreatIntelligence {
 	_init_.Initialize()
 
@@ -470,7 +445,7 @@ func NewSentinelDataConnectorMicrosoftThreatIntelligence(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_data_connector_microsoft_threat_intelligence azurerm_sentinel_data_connector_microsoft_threat_intelligence} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_data_connector_microsoft_threat_intelligence azurerm_sentinel_data_connector_microsoft_threat_intelligence} Resource.
 func NewSentinelDataConnectorMicrosoftThreatIntelligence_Override(s SentinelDataConnectorMicrosoftThreatIntelligence, scope constructs.Construct, id *string, config *SentinelDataConnectorMicrosoftThreatIntelligenceConfig) {
 	_init_.Initialize()
 
@@ -478,17 +453,6 @@ func NewSentinelDataConnectorMicrosoftThreatIntelligence_Override(s SentinelData
 		"@cdktf/provider-azurerm.sentinelDataConnectorMicrosoftThreatIntelligence.SentinelDataConnectorMicrosoftThreatIntelligence",
 		[]interface{}{scope, id, config},
 		s,
-	)
-}
-
-func (j *jsiiProxy_SentinelDataConnectorMicrosoftThreatIntelligence)SetBingSafetyPhishingUrlLookbackDate(val *string) {
-	if err := j.validateSetBingSafetyPhishingUrlLookbackDateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"bingSafetyPhishingUrlLookbackDate",
-		val,
 	)
 }
 
@@ -979,26 +943,10 @@ func (s *jsiiProxy_SentinelDataConnectorMicrosoftThreatIntelligence) PutTimeouts
 	)
 }
 
-func (s *jsiiProxy_SentinelDataConnectorMicrosoftThreatIntelligence) ResetBingSafetyPhishingUrlLookbackDate() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetBingSafetyPhishingUrlLookbackDate",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_SentinelDataConnectorMicrosoftThreatIntelligence) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SentinelDataConnectorMicrosoftThreatIntelligence) ResetMicrosoftEmergingThreatFeedLookbackDate() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetMicrosoftEmergingThreatFeedLookbackDate",
 		nil, // no parameters
 	)
 }

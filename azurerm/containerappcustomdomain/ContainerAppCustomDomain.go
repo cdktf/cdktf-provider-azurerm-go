@@ -5,14 +5,14 @@ package containerappcustomdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/containerappcustomdomain/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/containerappcustomdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_app_custom_domain azurerm_container_app_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_app_custom_domain azurerm_container_app_custom_domain}.
 type ContainerAppCustomDomain interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_ContainerAppCustomDomain) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_app_custom_domain azurerm_container_app_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_app_custom_domain azurerm_container_app_custom_domain} Resource.
 func NewContainerAppCustomDomain(scope constructs.Construct, id *string, config *ContainerAppCustomDomainConfig) ContainerAppCustomDomain {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewContainerAppCustomDomain(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_app_custom_domain azurerm_container_app_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_app_custom_domain azurerm_container_app_custom_domain} Resource.
 func NewContainerAppCustomDomain_Override(c ContainerAppCustomDomain, scope constructs.Construct, id *string, config *ContainerAppCustomDomainConfig) {
 	_init_.Initialize()
 

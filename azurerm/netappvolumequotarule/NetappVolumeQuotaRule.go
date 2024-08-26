@@ -5,14 +5,14 @@ package netappvolumequotarule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/netappvolumequotarule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/netappvolumequotarule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/netapp_volume_quota_rule azurerm_netapp_volume_quota_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/netapp_volume_quota_rule azurerm_netapp_volume_quota_rule}.
 type NetappVolumeQuotaRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_NetappVolumeQuotaRule) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/netapp_volume_quota_rule azurerm_netapp_volume_quota_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/netapp_volume_quota_rule azurerm_netapp_volume_quota_rule} Resource.
 func NewNetappVolumeQuotaRule(scope constructs.Construct, id *string, config *NetappVolumeQuotaRuleConfig) NetappVolumeQuotaRule {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewNetappVolumeQuotaRule(scope constructs.Construct, id *string, config *Ne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/netapp_volume_quota_rule azurerm_netapp_volume_quota_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/netapp_volume_quota_rule azurerm_netapp_volume_quota_rule} Resource.
 func NewNetappVolumeQuotaRule_Override(n NetappVolumeQuotaRule, scope constructs.Construct, id *string, config *NetappVolumeQuotaRuleConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package dataazurermredisenterprisedatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermredisenterprisedatabase/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermredisenterprisedatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/redis_enterprise_database azurerm_redis_enterprise_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/redis_enterprise_database azurerm_redis_enterprise_database}.
 type DataAzurermRedisEnterpriseDatabase interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -59,9 +59,6 @@ type DataAzurermRedisEnterpriseDatabase interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	ResourceGroupName() *string
-	SetResourceGroupName(val *string)
-	ResourceGroupNameInput() *string
 	SecondaryAccessKey() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -101,7 +98,6 @@ type DataAzurermRedisEnterpriseDatabase interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetResourceGroupName()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -322,26 +318,6 @@ func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase) RawOverrides() interface{
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase) ResourceGroupName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"resourceGroupName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase) ResourceGroupNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"resourceGroupNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase) SecondaryAccessKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -403,7 +379,7 @@ func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/redis_enterprise_database azurerm_redis_enterprise_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/redis_enterprise_database azurerm_redis_enterprise_database} Data Source.
 func NewDataAzurermRedisEnterpriseDatabase(scope constructs.Construct, id *string, config *DataAzurermRedisEnterpriseDatabaseConfig) DataAzurermRedisEnterpriseDatabase {
 	_init_.Initialize()
 
@@ -421,7 +397,7 @@ func NewDataAzurermRedisEnterpriseDatabase(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/redis_enterprise_database azurerm_redis_enterprise_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/redis_enterprise_database azurerm_redis_enterprise_database} Data Source.
 func NewDataAzurermRedisEnterpriseDatabase_Override(d DataAzurermRedisEnterpriseDatabase, scope constructs.Construct, id *string, config *DataAzurermRedisEnterpriseDatabaseConfig) {
 	_init_.Initialize()
 
@@ -507,17 +483,6 @@ func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase)SetProvider(val cdktf.Terr
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermRedisEnterpriseDatabase)SetResourceGroupName(val *string) {
-	if err := j.validateSetResourceGroupNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"resourceGroupName",
 		val,
 	)
 }
@@ -830,14 +795,6 @@ func (d *jsiiProxy_DataAzurermRedisEnterpriseDatabase) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermRedisEnterpriseDatabase) ResetResourceGroupName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetResourceGroupName",
 		nil, // no parameters
 	)
 }

@@ -67,10 +67,6 @@ func (j *jsiiProxy_SnapshotEncryptionSettingsOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_SnapshotEncryptionSettingsOutputReference) validateSetEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_SnapshotEncryptionSettingsOutputReference) validateSetInternalValueParameters(val *SnapshotEncryptionSettings) error {
 	return nil
 }

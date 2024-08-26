@@ -5,20 +5,16 @@ package containerapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/containerapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/containerapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type ContainerAppIngressCustomDomainOutputReference interface {
 	cdktf.ComplexObject
 	CertificateBindingType() *string
-	SetCertificateBindingType(val *string)
-	CertificateBindingTypeInput() *string
 	CertificateId() *string
-	SetCertificateId(val *string)
-	CertificateIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,8 +35,6 @@ type ContainerAppIngressCustomDomainOutputReference interface {
 	InternalValue() *ContainerAppIngressCustomDomain
 	SetInternalValue(val *ContainerAppIngressCustomDomain)
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,7 +67,6 @@ type ContainerAppIngressCustomDomainOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetCertificateBindingType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -99,31 +92,11 @@ func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) CertificateBi
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) CertificateBindingTypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"certificateBindingTypeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) CertificateId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"certificateId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) CertificateIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"certificateIdInput",
 		&returns,
 	)
 	return returns
@@ -189,16 +162,6 @@ func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) Name() *strin
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -220,52 +183,30 @@ func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) TerraformReso
 }
 
 
-func NewContainerAppIngressCustomDomainOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerAppIngressCustomDomainOutputReference {
+func NewContainerAppIngressCustomDomainOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ContainerAppIngressCustomDomainOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewContainerAppIngressCustomDomainOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewContainerAppIngressCustomDomainOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ContainerAppIngressCustomDomainOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.containerApp.ContainerAppIngressCustomDomainOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewContainerAppIngressCustomDomainOutputReference_Override(c ContainerAppIngressCustomDomainOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContainerAppIngressCustomDomainOutputReference_Override(c ContainerAppIngressCustomDomainOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.containerApp.ContainerAppIngressCustomDomainOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
-	)
-}
-
-func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference)SetCertificateBindingType(val *string) {
-	if err := j.validateSetCertificateBindingTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"certificateBindingType",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference)SetCertificateId(val *string) {
-	if err := j.validateSetCertificateIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"certificateId",
-		val,
 	)
 }
 
@@ -298,17 +239,6 @@ func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference)SetInternalVal
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ContainerAppIngressCustomDomainOutputReference)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
 		val,
 	)
 }
@@ -519,14 +449,6 @@ func (c *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) Interpolation
 	)
 
 	return returns
-}
-
-func (c *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) ResetCertificateBindingType() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetCertificateBindingType",
-		nil, // no parameters
-	)
 }
 
 func (c *jsiiProxy_ContainerAppIngressCustomDomainOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

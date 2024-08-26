@@ -5,9 +5,9 @@ package privatednsresolverinboundendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/privatednsresolverinboundendpoint/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/privatednsresolverinboundendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,8 +30,8 @@ type PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference interface 
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *PrivateDnsResolverInboundEndpointIpConfigurations
+	SetInternalValue(val *PrivateDnsResolverInboundEndpointIpConfigurations)
 	PrivateIpAddress() *string
 	SetPrivateIpAddress(val *string)
 	PrivateIpAddressInput() *string
@@ -130,8 +130,8 @@ func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference) InternalValue() *PrivateDnsResolverInboundEndpointIpConfigurations {
+	var returns *PrivateDnsResolverInboundEndpointIpConfigurations
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -221,29 +221,29 @@ func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputRefere
 }
 
 
-func NewPrivateDnsResolverInboundEndpointIpConfigurationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference {
+func NewPrivateDnsResolverInboundEndpointIpConfigurationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewPrivateDnsResolverInboundEndpointIpConfigurationsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewPrivateDnsResolverInboundEndpointIpConfigurationsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.privateDnsResolverInboundEndpoint.PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewPrivateDnsResolverInboundEndpointIpConfigurationsOutputReference_Override(p PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewPrivateDnsResolverInboundEndpointIpConfigurationsOutputReference_Override(p PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.privateDnsResolverInboundEndpoint.PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
 }
@@ -270,7 +270,7 @@ func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference)SetInternalValue(val *PrivateDnsResolverInboundEndpointIpConfigurations) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

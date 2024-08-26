@@ -5,14 +5,14 @@ package sentineldataconnectormicrosoftthreatprotection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/sentineldataconnectormicrosoftthreatprotection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/sentineldataconnectormicrosoftthreatprotection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_data_connector_microsoft_threat_protection azurerm_sentinel_data_connector_microsoft_threat_protection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_data_connector_microsoft_threat_protection azurerm_sentinel_data_connector_microsoft_threat_protection}.
 type SentinelDataConnectorMicrosoftThreatProtection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_SentinelDataConnectorMicrosoftThreatProtection) TimeoutsInput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_data_connector_microsoft_threat_protection azurerm_sentinel_data_connector_microsoft_threat_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_data_connector_microsoft_threat_protection azurerm_sentinel_data_connector_microsoft_threat_protection} Resource.
 func NewSentinelDataConnectorMicrosoftThreatProtection(scope constructs.Construct, id *string, config *SentinelDataConnectorMicrosoftThreatProtectionConfig) SentinelDataConnectorMicrosoftThreatProtection {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewSentinelDataConnectorMicrosoftThreatProtection(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_data_connector_microsoft_threat_protection azurerm_sentinel_data_connector_microsoft_threat_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_data_connector_microsoft_threat_protection azurerm_sentinel_data_connector_microsoft_threat_protection} Resource.
 func NewSentinelDataConnectorMicrosoftThreatProtection_Override(s SentinelDataConnectorMicrosoftThreatProtection, scope constructs.Construct, id *string, config *SentinelDataConnectorMicrosoftThreatProtectionConfig) {
 	_init_.Initialize()
 

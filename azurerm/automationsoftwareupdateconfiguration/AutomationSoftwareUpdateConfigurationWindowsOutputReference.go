@@ -5,17 +5,14 @@ package automationsoftwareupdateconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/automationsoftwareupdateconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/automationsoftwareupdateconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type AutomationSoftwareUpdateConfigurationWindowsOutputReference interface {
 	cdktf.ComplexObject
-	ClassificationIncluded() *string
-	SetClassificationIncluded(val *string)
-	ClassificationIncludedInput() *string
 	ClassificationsIncluded() *[]*string
 	SetClassificationsIncluded(val *[]*string)
 	ClassificationsIncludedInput() *[]*string
@@ -79,8 +76,6 @@ type AutomationSoftwareUpdateConfigurationWindowsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetClassificationIncluded()
-	ResetClassificationsIncluded()
 	ResetExcludedKnowledgeBaseNumbers()
 	ResetIncludedKnowledgeBaseNumbers()
 	ResetReboot()
@@ -97,26 +92,6 @@ type AutomationSoftwareUpdateConfigurationWindowsOutputReference interface {
 // The jsii proxy struct for AutomationSoftwareUpdateConfigurationWindowsOutputReference
 type jsiiProxy_AutomationSoftwareUpdateConfigurationWindowsOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationWindowsOutputReference) ClassificationIncluded() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"classificationIncluded",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationWindowsOutputReference) ClassificationIncludedInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"classificationIncludedInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationWindowsOutputReference) ClassificationsIncluded() *[]*string {
@@ -294,17 +269,6 @@ func NewAutomationSoftwareUpdateConfigurationWindowsOutputReference_Override(a A
 		"@cdktf/provider-azurerm.automationSoftwareUpdateConfiguration.AutomationSoftwareUpdateConfigurationWindowsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
-	)
-}
-
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationWindowsOutputReference)SetClassificationIncluded(val *string) {
-	if err := j.validateSetClassificationIncludedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"classificationIncluded",
-		val,
 	)
 }
 
@@ -591,22 +555,6 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationWindowsOutputReference) 
 	)
 
 	return returns
-}
-
-func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationWindowsOutputReference) ResetClassificationIncluded() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetClassificationIncluded",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationWindowsOutputReference) ResetClassificationsIncluded() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetClassificationsIncluded",
-		nil, // no parameters
-	)
 }
 
 func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationWindowsOutputReference) ResetExcludedKnowledgeBaseNumbers() {

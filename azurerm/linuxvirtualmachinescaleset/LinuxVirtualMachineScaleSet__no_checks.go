@@ -107,10 +107,6 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validatePutGalleryApplicationPar
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validatePutGalleryApplicationsParameters(value interface{}) error {
-	return nil
-}
-
 func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validatePutIdentityParameters(value *LinuxVirtualMachineScaleSetIdentity) error {
 	return nil
 }
@@ -144,10 +140,6 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validatePutSourceImageReferenceP
 }
 
 func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validatePutSpotRestoreParameters(value *LinuxVirtualMachineScaleSetSpotRestore) error {
-	return nil
-}
-
-func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validatePutTerminateNotificationParameters(value *LinuxVirtualMachineScaleSetTerminateNotification) error {
 	return nil
 }
 
@@ -288,10 +280,6 @@ func (j *jsiiProxy_LinuxVirtualMachineScaleSet) validateSetProximityPlacementGro
 }
 
 func (j *jsiiProxy_LinuxVirtualMachineScaleSet) validateSetResourceGroupNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_LinuxVirtualMachineScaleSet) validateSetScaleInPolicyParameters(val *string) error {
 	return nil
 }
 

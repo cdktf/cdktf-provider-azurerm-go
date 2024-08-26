@@ -5,9 +5,9 @@ package containerregistry
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/containerregistry/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/containerregistry/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -45,8 +45,6 @@ type ContainerRegistryNetworkRuleSetOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	VirtualNetwork() ContainerRegistryNetworkRuleSetVirtualNetworkList
-	VirtualNetworkInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,10 +70,8 @@ type ContainerRegistryNetworkRuleSetOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutIpRule(value interface{})
-	PutVirtualNetwork(value interface{})
 	ResetDefaultAction()
 	ResetIpRule()
-	ResetVirtualNetwork()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -196,26 +192,6 @@ func (j *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) TerraformReso
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) VirtualNetwork() ContainerRegistryNetworkRuleSetVirtualNetworkList {
-	var returns ContainerRegistryNetworkRuleSetVirtualNetworkList
-	_jsii_.Get(
-		j,
-		"virtualNetwork",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) VirtualNetworkInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"virtualNetworkInput",
 		&returns,
 	)
 	return returns
@@ -512,17 +488,6 @@ func (c *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) PutIpRule(val
 	)
 }
 
-func (c *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) PutVirtualNetwork(value interface{}) {
-	if err := c.validatePutVirtualNetworkParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		c,
-		"putVirtualNetwork",
-		[]interface{}{value},
-	)
-}
-
 func (c *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) ResetDefaultAction() {
 	_jsii_.InvokeVoid(
 		c,
@@ -535,14 +500,6 @@ func (c *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) ResetIpRule()
 	_jsii_.InvokeVoid(
 		c,
 		"resetIpRule",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) ResetVirtualNetwork() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetVirtualNetwork",
 		nil, // no parameters
 	)
 }

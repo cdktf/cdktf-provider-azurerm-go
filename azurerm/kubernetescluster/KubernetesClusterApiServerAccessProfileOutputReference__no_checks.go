@@ -67,19 +67,11 @@ func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) validateSetSubnetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) validateSetVnetIntegrationEnabledParameters(val interface{}) error {
 	return nil
 }
 

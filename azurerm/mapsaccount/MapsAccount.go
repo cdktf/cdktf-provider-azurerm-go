@@ -5,14 +5,14 @@ package mapsaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/mapsaccount/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/mapsaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/maps_account azurerm_maps_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/maps_account azurerm_maps_account}.
 type MapsAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -145,7 +145,6 @@ type MapsAccount interface {
 	ResetId()
 	ResetIdentity()
 	ResetLocalAuthenticationEnabled()
-	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -580,7 +579,7 @@ func (j *jsiiProxy_MapsAccount) XMsClientId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/maps_account azurerm_maps_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/maps_account azurerm_maps_account} Resource.
 func NewMapsAccount(scope constructs.Construct, id *string, config *MapsAccountConfig) MapsAccount {
 	_init_.Initialize()
 
@@ -598,7 +597,7 @@ func NewMapsAccount(scope constructs.Construct, id *string, config *MapsAccountC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/maps_account azurerm_maps_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/maps_account azurerm_maps_account} Resource.
 func NewMapsAccount_Override(m MapsAccount, scope constructs.Construct, id *string, config *MapsAccountConfig) {
 	_init_.Initialize()
 
@@ -1187,14 +1186,6 @@ func (m *jsiiProxy_MapsAccount) ResetLocalAuthenticationEnabled() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetLocalAuthenticationEnabled",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MapsAccount) ResetLocation() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetLocation",
 		nil, // no parameters
 	)
 }

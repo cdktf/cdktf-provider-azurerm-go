@@ -5,14 +5,14 @@ package automationvariablestring
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/automationvariablestring/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/automationvariablestring/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_variable_string azurerm_automation_variable_string}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_variable_string azurerm_automation_variable_string}.
 type AutomationVariableString interface {
 	cdktf.TerraformResource
 	AutomationAccountName() *string
@@ -475,7 +475,7 @@ func (j *jsiiProxy_AutomationVariableString) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_variable_string azurerm_automation_variable_string} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_variable_string azurerm_automation_variable_string} Resource.
 func NewAutomationVariableString(scope constructs.Construct, id *string, config *AutomationVariableStringConfig) AutomationVariableString {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewAutomationVariableString(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_variable_string azurerm_automation_variable_string} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_variable_string azurerm_automation_variable_string} Resource.
 func NewAutomationVariableString_Override(a AutomationVariableString, scope constructs.Construct, id *string, config *AutomationVariableStringConfig) {
 	_init_.Initialize()
 

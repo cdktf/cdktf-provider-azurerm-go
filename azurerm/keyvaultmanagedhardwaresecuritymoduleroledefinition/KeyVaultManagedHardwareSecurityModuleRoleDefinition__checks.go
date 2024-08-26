@@ -473,14 +473,6 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) validate
 	return nil
 }
 
-func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) validateSetVaultBaseUrlParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewKeyVaultManagedHardwareSecurityModuleRoleDefinitionParameters(scope constructs.Construct, id *string, config *KeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

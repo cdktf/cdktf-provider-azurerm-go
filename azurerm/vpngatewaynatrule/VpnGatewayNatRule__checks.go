@@ -410,23 +410,7 @@ func (j *jsiiProxy_VpnGatewayNatRule) validateSetCountParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_VpnGatewayNatRule) validateSetExternalAddressSpaceMappingsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_VpnGatewayNatRule) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_VpnGatewayNatRule) validateSetInternalAddressSpaceMappingsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -507,14 +491,6 @@ func (j *jsiiProxy_VpnGatewayNatRule) validateSetProvisionersParameters(val *[]i
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_VpnGatewayNatRule) validateSetResourceGroupNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

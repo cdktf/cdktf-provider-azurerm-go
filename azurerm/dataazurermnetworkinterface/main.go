@@ -22,8 +22,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "dnsServers", GoGetter: "DnsServers"},
-			_jsii_.MemberProperty{JsiiProperty: "enableAcceleratedNetworking", GoGetter: "EnableAcceleratedNetworking"},
-			_jsii_.MemberProperty{JsiiProperty: "enableIpForwarding", GoGetter: "EnableIpForwarding"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},

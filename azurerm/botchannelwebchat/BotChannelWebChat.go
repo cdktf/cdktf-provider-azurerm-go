@@ -5,14 +5,14 @@ package botchannelwebchat
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/botchannelwebchat/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/botchannelwebchat/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/bot_channel_web_chat azurerm_bot_channel_web_chat}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/bot_channel_web_chat azurerm_bot_channel_web_chat}.
 type BotChannelWebChat interface {
 	cdktf.TerraformResource
 	BotName() *string
@@ -69,9 +69,6 @@ type BotChannelWebChat interface {
 	ResourceGroupNameInput() *string
 	Site() BotChannelWebChatSiteList
 	SiteInput() interface{}
-	SiteNames() *[]*string
-	SetSiteNames(val *[]*string)
-	SiteNamesInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -130,7 +127,6 @@ type BotChannelWebChat interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSite()
-	ResetSiteNames()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -380,26 +376,6 @@ func (j *jsiiProxy_BotChannelWebChat) SiteInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BotChannelWebChat) SiteNames() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"siteNames",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BotChannelWebChat) SiteNamesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"siteNamesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_BotChannelWebChat) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -451,7 +427,7 @@ func (j *jsiiProxy_BotChannelWebChat) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/bot_channel_web_chat azurerm_bot_channel_web_chat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/bot_channel_web_chat azurerm_bot_channel_web_chat} Resource.
 func NewBotChannelWebChat(scope constructs.Construct, id *string, config *BotChannelWebChatConfig) BotChannelWebChat {
 	_init_.Initialize()
 
@@ -469,7 +445,7 @@ func NewBotChannelWebChat(scope constructs.Construct, id *string, config *BotCha
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/bot_channel_web_chat azurerm_bot_channel_web_chat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/bot_channel_web_chat azurerm_bot_channel_web_chat} Resource.
 func NewBotChannelWebChat_Override(b BotChannelWebChat, scope constructs.Construct, id *string, config *BotChannelWebChatConfig) {
 	_init_.Initialize()
 
@@ -588,17 +564,6 @@ func (j *jsiiProxy_BotChannelWebChat)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_BotChannelWebChat)SetSiteNames(val *[]*string) {
-	if err := j.validateSetSiteNamesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"siteNames",
 		val,
 	)
 }
@@ -998,14 +963,6 @@ func (b *jsiiProxy_BotChannelWebChat) ResetSite() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetSite",
-		nil, // no parameters
-	)
-}
-
-func (b *jsiiProxy_BotChannelWebChat) ResetSiteNames() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetSiteNames",
 		nil, // no parameters
 	)
 }

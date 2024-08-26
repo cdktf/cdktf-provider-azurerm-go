@@ -5,14 +5,14 @@ package cosmosdbsqltrigger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/cosmosdbsqltrigger/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/cosmosdbsqltrigger/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_sql_trigger azurerm_cosmosdb_sql_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cosmosdb_sql_trigger azurerm_cosmosdb_sql_trigger}.
 type CosmosdbSqlTrigger interface {
 	cdktf.TerraformResource
 	Body() *string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_CosmosdbSqlTrigger) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_sql_trigger azurerm_cosmosdb_sql_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cosmosdb_sql_trigger azurerm_cosmosdb_sql_trigger} Resource.
 func NewCosmosdbSqlTrigger(scope constructs.Construct, id *string, config *CosmosdbSqlTriggerConfig) CosmosdbSqlTrigger {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewCosmosdbSqlTrigger(scope constructs.Construct, id *string, config *Cosmo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_sql_trigger azurerm_cosmosdb_sql_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cosmosdb_sql_trigger azurerm_cosmosdb_sql_trigger} Resource.
 func NewCosmosdbSqlTrigger_Override(c CosmosdbSqlTrigger, scope constructs.Construct, id *string, config *CosmosdbSqlTriggerConfig) {
 	_init_.Initialize()
 

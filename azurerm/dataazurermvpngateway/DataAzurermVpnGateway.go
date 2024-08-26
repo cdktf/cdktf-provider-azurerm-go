@@ -5,14 +5,14 @@ package dataazurermvpngateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermvpngateway/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermvpngateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/vpn_gateway azurerm_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/vpn_gateway azurerm_vpn_gateway}.
 type DataAzurermVpnGateway interface {
 	cdktf.TerraformDataSource
 	BgpSettings() DataAzurermVpnGatewayBgpSettingsList
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DataAzurermVpnGateway) VirtualHubId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/vpn_gateway azurerm_vpn_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/vpn_gateway azurerm_vpn_gateway} Data Source.
 func NewDataAzurermVpnGateway(scope constructs.Construct, id *string, config *DataAzurermVpnGatewayConfig) DataAzurermVpnGateway {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewDataAzurermVpnGateway(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/vpn_gateway azurerm_vpn_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/vpn_gateway azurerm_vpn_gateway} Data Source.
 func NewDataAzurermVpnGateway_Override(d DataAzurermVpnGateway, scope constructs.Construct, id *string, config *DataAzurermVpnGatewayConfig) {
 	_init_.Initialize()
 

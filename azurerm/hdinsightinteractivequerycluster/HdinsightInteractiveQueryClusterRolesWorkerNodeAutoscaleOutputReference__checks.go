@@ -93,17 +93,6 @@ func (h *jsiiProxy_HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutpu
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutputReference) validatePutCapacityParameters(value *HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleCapacity) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (h *jsiiProxy_HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutputReference) validatePutRecurrenceParameters(value *HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleRecurrence) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

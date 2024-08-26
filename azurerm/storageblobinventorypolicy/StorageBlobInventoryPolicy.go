@@ -5,14 +5,14 @@ package storageblobinventorypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/storageblobinventorypolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/storageblobinventorypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_blob_inventory_policy azurerm_storage_blob_inventory_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_blob_inventory_policy azurerm_storage_blob_inventory_policy}.
 type StorageBlobInventoryPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_StorageBlobInventoryPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_blob_inventory_policy azurerm_storage_blob_inventory_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_blob_inventory_policy azurerm_storage_blob_inventory_policy} Resource.
 func NewStorageBlobInventoryPolicy(scope constructs.Construct, id *string, config *StorageBlobInventoryPolicyConfig) StorageBlobInventoryPolicy {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewStorageBlobInventoryPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_blob_inventory_policy azurerm_storage_blob_inventory_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_blob_inventory_policy azurerm_storage_blob_inventory_policy} Resource.
 func NewStorageBlobInventoryPolicy_Override(s StorageBlobInventoryPolicy, scope constructs.Construct, id *string, config *StorageBlobInventoryPolicyConfig) {
 	_init_.Initialize()
 

@@ -174,30 +174,6 @@ func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) validateSetDockerContainerNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) validateSetDockerContainerRegistryParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) validateSetDockerContainerTagParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) validateSetDockerImageNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -329,14 +305,6 @@ func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) valid
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) validateSetPythonVersionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

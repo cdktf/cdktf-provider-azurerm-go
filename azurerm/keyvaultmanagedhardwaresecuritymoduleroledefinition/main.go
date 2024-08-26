@@ -59,12 +59,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetManagedHsmId", GoMethod: "ResetManagedHsmId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPermission", GoMethod: "ResetPermission"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRoleName", GoMethod: "ResetRoleName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVaultBaseUrl", GoMethod: "ResetVaultBaseUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceManagerId", GoGetter: "ResourceManagerId"},
 			_jsii_.MemberProperty{JsiiProperty: "roleName", GoGetter: "RoleName"},
 			_jsii_.MemberProperty{JsiiProperty: "roleNameInput", GoGetter: "RoleNameInput"},
@@ -80,8 +78,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "vaultBaseUrl", GoGetter: "VaultBaseUrl"},
-			_jsii_.MemberProperty{JsiiProperty: "vaultBaseUrlInput", GoGetter: "VaultBaseUrlInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition{}

@@ -5,14 +5,14 @@ package networkinterface
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/networkinterface/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/networkinterface/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/network_interface azurerm_network_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/network_interface azurerm_network_interface}.
 type NetworkInterface interface {
 	cdktf.TerraformResource
 	AcceleratedNetworkingEnabled() interface{}
@@ -47,12 +47,6 @@ type NetworkInterface interface {
 	EdgeZone() *string
 	SetEdgeZone(val *string)
 	EdgeZoneInput() *string
-	EnableAcceleratedNetworking() interface{}
-	SetEnableAcceleratedNetworking(val interface{})
-	EnableAcceleratedNetworkingInput() interface{}
-	EnableIpForwarding() interface{}
-	SetEnableIpForwarding(val interface{})
-	EnableIpForwardingInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -163,8 +157,6 @@ type NetworkInterface interface {
 	ResetAuxiliarySku()
 	ResetDnsServers()
 	ResetEdgeZone()
-	ResetEnableAcceleratedNetworking()
-	ResetEnableIpForwarding()
 	ResetId()
 	ResetInternalDnsNameLabel()
 	ResetIpForwardingEnabled()
@@ -346,46 +338,6 @@ func (j *jsiiProxy_NetworkInterface) EdgeZoneInput() *string {
 	_jsii_.Get(
 		j,
 		"edgeZoneInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkInterface) EnableAcceleratedNetworking() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableAcceleratedNetworking",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkInterface) EnableAcceleratedNetworkingInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableAcceleratedNetworkingInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkInterface) EnableIpForwarding() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableIpForwarding",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkInterface) EnableIpForwardingInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableIpForwardingInput",
 		&returns,
 	)
 	return returns
@@ -732,7 +684,7 @@ func (j *jsiiProxy_NetworkInterface) VirtualMachineId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/network_interface azurerm_network_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/network_interface azurerm_network_interface} Resource.
 func NewNetworkInterface(scope constructs.Construct, id *string, config *NetworkInterfaceConfig) NetworkInterface {
 	_init_.Initialize()
 
@@ -750,7 +702,7 @@ func NewNetworkInterface(scope constructs.Construct, id *string, config *Network
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/network_interface azurerm_network_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/network_interface azurerm_network_interface} Resource.
 func NewNetworkInterface_Override(n NetworkInterface, scope constructs.Construct, id *string, config *NetworkInterfaceConfig) {
 	_init_.Initialize()
 
@@ -842,28 +794,6 @@ func (j *jsiiProxy_NetworkInterface)SetEdgeZone(val *string) {
 	_jsii_.Set(
 		j,
 		"edgeZone",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NetworkInterface)SetEnableAcceleratedNetworking(val interface{}) {
-	if err := j.validateSetEnableAcceleratedNetworkingParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enableAcceleratedNetworking",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NetworkInterface)SetEnableIpForwarding(val interface{}) {
-	if err := j.validateSetEnableIpForwardingParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enableIpForwarding",
 		val,
 	)
 }
@@ -1394,22 +1324,6 @@ func (n *jsiiProxy_NetworkInterface) ResetEdgeZone() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetEdgeZone",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NetworkInterface) ResetEnableAcceleratedNetworking() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetEnableAcceleratedNetworking",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NetworkInterface) ResetEnableIpForwarding() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetEnableIpForwarding",
 		nil, // no parameters
 	)
 }

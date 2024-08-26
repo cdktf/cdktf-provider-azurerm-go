@@ -107,10 +107,6 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSet) validatePutGalleryApplicationP
 	return nil
 }
 
-func (w *jsiiProxy_WindowsVirtualMachineScaleSet) validatePutGalleryApplicationsParameters(value interface{}) error {
-	return nil
-}
-
 func (w *jsiiProxy_WindowsVirtualMachineScaleSet) validatePutIdentityParameters(value *WindowsVirtualMachineScaleSetIdentity) error {
 	return nil
 }
@@ -144,10 +140,6 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSet) validatePutSourceImageReferenc
 }
 
 func (w *jsiiProxy_WindowsVirtualMachineScaleSet) validatePutSpotRestoreParameters(value *WindowsVirtualMachineScaleSetSpotRestore) error {
-	return nil
-}
-
-func (w *jsiiProxy_WindowsVirtualMachineScaleSet) validatePutTerminateNotificationParameters(value *WindowsVirtualMachineScaleSetTerminateNotification) error {
 	return nil
 }
 
@@ -296,10 +288,6 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSet) validateSetProximityPlacementG
 }
 
 func (j *jsiiProxy_WindowsVirtualMachineScaleSet) validateSetResourceGroupNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_WindowsVirtualMachineScaleSet) validateSetScaleInPolicyParameters(val *string) error {
 	return nil
 }
 

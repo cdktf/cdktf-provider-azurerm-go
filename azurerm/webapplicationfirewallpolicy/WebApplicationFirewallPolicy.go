@@ -5,14 +5,14 @@ package webapplicationfirewallpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/webapplicationfirewallpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/webapplicationfirewallpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/web_application_firewall_policy azurerm_web_application_firewall_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/web_application_firewall_policy azurerm_web_application_firewall_policy}.
 type WebApplicationFirewallPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -520,7 +520,7 @@ func (j *jsiiProxy_WebApplicationFirewallPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/web_application_firewall_policy azurerm_web_application_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/web_application_firewall_policy azurerm_web_application_firewall_policy} Resource.
 func NewWebApplicationFirewallPolicy(scope constructs.Construct, id *string, config *WebApplicationFirewallPolicyConfig) WebApplicationFirewallPolicy {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewWebApplicationFirewallPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/web_application_firewall_policy azurerm_web_application_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/web_application_firewall_policy azurerm_web_application_firewall_policy} Resource.
 func NewWebApplicationFirewallPolicy_Override(w WebApplicationFirewallPolicy, scope constructs.Construct, id *string, config *WebApplicationFirewallPolicyConfig) {
 	_init_.Initialize()
 

@@ -131,10 +131,6 @@ func (j *jsiiProxy_BotChannelWebChat) validateSetResourceGroupNameParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_BotChannelWebChat) validateSetSiteNamesParameters(val *[]*string) error {
-	return nil
-}
-
 func validateNewBotChannelWebChatParameters(scope constructs.Construct, id *string, config *BotChannelWebChatConfig) error {
 	return nil
 }

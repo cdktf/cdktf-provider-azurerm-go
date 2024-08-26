@@ -5,9 +5,9 @@ package kubernetescluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/kubernetescluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/kubernetescluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -43,11 +43,9 @@ type KubernetesClusterWorkloadAutoscalerProfileOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	VerticalPodAutoscalerControlledValues() *string
 	VerticalPodAutoscalerEnabled() interface{}
 	SetVerticalPodAutoscalerEnabled(val interface{})
 	VerticalPodAutoscalerEnabledInput() interface{}
-	VerticalPodAutoscalerUpdateMode() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -179,16 +177,6 @@ func (j *jsiiProxy_KubernetesClusterWorkloadAutoscalerProfileOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesClusterWorkloadAutoscalerProfileOutputReference) VerticalPodAutoscalerControlledValues() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"verticalPodAutoscalerControlledValues",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_KubernetesClusterWorkloadAutoscalerProfileOutputReference) VerticalPodAutoscalerEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -204,16 +192,6 @@ func (j *jsiiProxy_KubernetesClusterWorkloadAutoscalerProfileOutputReference) Ve
 	_jsii_.Get(
 		j,
 		"verticalPodAutoscalerEnabledInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterWorkloadAutoscalerProfileOutputReference) VerticalPodAutoscalerUpdateMode() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"verticalPodAutoscalerUpdateMode",
 		&returns,
 	)
 	return returns

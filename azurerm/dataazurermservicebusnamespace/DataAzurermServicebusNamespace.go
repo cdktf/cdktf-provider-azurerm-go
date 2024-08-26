@@ -5,14 +5,14 @@ package dataazurermservicebusnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermservicebusnamespace/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermservicebusnamespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/servicebus_namespace azurerm_servicebus_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/servicebus_namespace azurerm_servicebus_namespace}.
 type DataAzurermServicebusNamespace interface {
 	cdktf.TerraformDataSource
 	Capacity() *float64
@@ -74,7 +74,6 @@ type DataAzurermServicebusNamespace interface {
 	TerraformResourceType() *string
 	Timeouts() DataAzurermServicebusNamespaceTimeoutsOutputReference
 	TimeoutsInput() interface{}
-	ZoneRedundant() cdktf.IResolvable
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -445,18 +444,8 @@ func (j *jsiiProxy_DataAzurermServicebusNamespace) TimeoutsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermServicebusNamespace) ZoneRedundant() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"zoneRedundant",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/servicebus_namespace azurerm_servicebus_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/servicebus_namespace azurerm_servicebus_namespace} Data Source.
 func NewDataAzurermServicebusNamespace(scope constructs.Construct, id *string, config *DataAzurermServicebusNamespaceConfig) DataAzurermServicebusNamespace {
 	_init_.Initialize()
 
@@ -474,7 +463,7 @@ func NewDataAzurermServicebusNamespace(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/servicebus_namespace azurerm_servicebus_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/servicebus_namespace azurerm_servicebus_namespace} Data Source.
 func NewDataAzurermServicebusNamespace_Override(d DataAzurermServicebusNamespace, scope constructs.Construct, id *string, config *DataAzurermServicebusNamespaceConfig) {
 	_init_.Initialize()
 

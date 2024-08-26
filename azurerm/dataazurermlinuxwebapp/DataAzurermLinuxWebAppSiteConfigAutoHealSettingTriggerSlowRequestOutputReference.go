@@ -5,9 +5,9 @@ package dataazurermlinuxwebapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermlinuxwebapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermlinuxwebapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -34,7 +34,6 @@ type DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputRefe
 	InternalValue() *DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest
 	SetInternalValue(val *DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest)
 	Interval() *string
-	Path() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -148,16 +147,6 @@ func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowReq
 	_jsii_.Get(
 		j,
 		"interval",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference) Path() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"path",
 		&returns,
 	)
 	return returns

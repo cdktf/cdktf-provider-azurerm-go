@@ -5,14 +5,14 @@ package applicationinsightssmartdetectionrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/applicationinsightssmartdetectionrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/applicationinsightssmartdetectionrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule}.
 type ApplicationInsightsSmartDetectionRule interface {
 	cdktf.TerraformResource
 	AdditionalEmailRecipients() *[]*string
@@ -452,7 +452,7 @@ func (j *jsiiProxy_ApplicationInsightsSmartDetectionRule) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule} Resource.
 func NewApplicationInsightsSmartDetectionRule(scope constructs.Construct, id *string, config *ApplicationInsightsSmartDetectionRuleConfig) ApplicationInsightsSmartDetectionRule {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewApplicationInsightsSmartDetectionRule(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule} Resource.
 func NewApplicationInsightsSmartDetectionRule_Override(a ApplicationInsightsSmartDetectionRule, scope constructs.Construct, id *string, config *ApplicationInsightsSmartDetectionRuleConfig) {
 	_init_.Initialize()
 

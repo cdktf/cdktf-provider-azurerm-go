@@ -5,14 +5,14 @@ package firewallapplicationrulecollection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/firewallapplicationrulecollection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/firewallapplicationrulecollection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/firewall_application_rule_collection azurerm_firewall_application_rule_collection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/firewall_application_rule_collection azurerm_firewall_application_rule_collection}.
 type FirewallApplicationRuleCollection interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -472,7 +472,7 @@ func (j *jsiiProxy_FirewallApplicationRuleCollection) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/firewall_application_rule_collection azurerm_firewall_application_rule_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/firewall_application_rule_collection azurerm_firewall_application_rule_collection} Resource.
 func NewFirewallApplicationRuleCollection(scope constructs.Construct, id *string, config *FirewallApplicationRuleCollectionConfig) FirewallApplicationRuleCollection {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewFirewallApplicationRuleCollection(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/firewall_application_rule_collection azurerm_firewall_application_rule_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/firewall_application_rule_collection azurerm_firewall_application_rule_collection} Resource.
 func NewFirewallApplicationRuleCollection_Override(f FirewallApplicationRuleCollection, scope constructs.Construct, id *string, config *FirewallApplicationRuleCollectionConfig) {
 	_init_.Initialize()
 

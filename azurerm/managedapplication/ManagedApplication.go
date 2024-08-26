@@ -5,14 +5,14 @@ package managedapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/managedapplication/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/managedapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/managed_application azurerm_managed_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/managed_application azurerm_managed_application}.
 type ManagedApplication interface {
 	cdktf.TerraformResource
 	ApplicationDefinitionId() *string
@@ -64,9 +64,6 @@ type ManagedApplication interface {
 	// The tree node.
 	Node() constructs.Node
 	Outputs() cdktf.StringMap
-	Parameters() *map[string]*string
-	SetParameters(val *map[string]*string)
-	ParametersInput() *map[string]*string
 	ParameterValues() *string
 	SetParameterValues(val *string)
 	ParameterValuesInput() *string
@@ -146,7 +143,6 @@ type ManagedApplication interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetParameters()
 	ResetParameterValues()
 	ResetPlan()
 	ResetTags()
@@ -399,26 +395,6 @@ func (j *jsiiProxy_ManagedApplication) Outputs() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedApplication) Parameters() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"parameters",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ManagedApplication) ParametersInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"parametersInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ManagedApplication) ParameterValues() *string {
 	var returns *string
 	_jsii_.Get(
@@ -580,7 +556,7 @@ func (j *jsiiProxy_ManagedApplication) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/managed_application azurerm_managed_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/managed_application azurerm_managed_application} Resource.
 func NewManagedApplication(scope constructs.Construct, id *string, config *ManagedApplicationConfig) ManagedApplication {
 	_init_.Initialize()
 
@@ -598,7 +574,7 @@ func NewManagedApplication(scope constructs.Construct, id *string, config *Manag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/managed_application azurerm_managed_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/managed_application azurerm_managed_application} Resource.
 func NewManagedApplication_Override(m ManagedApplication, scope constructs.Construct, id *string, config *ManagedApplicationConfig) {
 	_init_.Initialize()
 
@@ -720,17 +696,6 @@ func (j *jsiiProxy_ManagedApplication)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ManagedApplication)SetParameters(val *map[string]*string) {
-	if err := j.validateSetParametersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"parameters",
 		val,
 	)
 }
@@ -1182,14 +1147,6 @@ func (m *jsiiProxy_ManagedApplication) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_ManagedApplication) ResetParameters() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetParameters",
 		nil, // no parameters
 	)
 }

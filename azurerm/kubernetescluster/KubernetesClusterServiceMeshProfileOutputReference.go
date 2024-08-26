@@ -5,9 +5,9 @@ package kubernetescluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/kubernetescluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/kubernetescluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -43,6 +43,9 @@ type KubernetesClusterServiceMeshProfileOutputReference interface {
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
+	Revisions() *[]*string
+	SetRevisions(val *[]*string)
+	RevisionsInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -224,6 +227,26 @@ func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) ModeInput
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) Revisions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"revisions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) RevisionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"revisionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -334,6 +357,17 @@ func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference)SetMode(va
 	_jsii_.Set(
 		j,
 		"mode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterServiceMeshProfileOutputReference)SetRevisions(val *[]*string) {
+	if err := j.validateSetRevisionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"revisions",
 		val,
 	)
 }

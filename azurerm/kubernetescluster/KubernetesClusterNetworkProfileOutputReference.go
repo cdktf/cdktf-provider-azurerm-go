@@ -5,9 +5,9 @@ package kubernetescluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/kubernetescluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/kubernetescluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,12 +31,6 @@ type KubernetesClusterNetworkProfileOutputReference interface {
 	DnsServiceIp() *string
 	SetDnsServiceIp(val *string)
 	DnsServiceIpInput() *string
-	DockerBridgeCidr() *string
-	SetDockerBridgeCidr(val *string)
-	DockerBridgeCidrInput() *string
-	EbpfDataPlane() *string
-	SetEbpfDataPlane(val *string)
-	EbpfDataPlaneInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *KubernetesClusterNetworkProfile
@@ -66,12 +60,6 @@ type KubernetesClusterNetworkProfileOutputReference interface {
 	NetworkPolicy() *string
 	SetNetworkPolicy(val *string)
 	NetworkPolicyInput() *string
-	OutboundIpAddressIds() *[]*string
-	SetOutboundIpAddressIds(val *[]*string)
-	OutboundIpAddressIdsInput() *[]*string
-	OutboundIpPrefixIds() *[]*string
-	SetOutboundIpPrefixIds(val *[]*string)
-	OutboundIpPrefixIdsInput() *[]*string
 	OutboundType() *string
 	SetOutboundType(val *string)
 	OutboundTypeInput() *string
@@ -122,8 +110,6 @@ type KubernetesClusterNetworkProfileOutputReference interface {
 	PutLoadBalancerProfile(value *KubernetesClusterNetworkProfileLoadBalancerProfile)
 	PutNatGatewayProfile(value *KubernetesClusterNetworkProfileNatGatewayProfile)
 	ResetDnsServiceIp()
-	ResetDockerBridgeCidr()
-	ResetEbpfDataPlane()
 	ResetIpVersions()
 	ResetLoadBalancerProfile()
 	ResetLoadBalancerSku()
@@ -132,8 +118,6 @@ type KubernetesClusterNetworkProfileOutputReference interface {
 	ResetNetworkMode()
 	ResetNetworkPluginMode()
 	ResetNetworkPolicy()
-	ResetOutboundIpAddressIds()
-	ResetOutboundIpPrefixIds()
 	ResetOutboundType()
 	ResetPodCidr()
 	ResetPodCidrs()
@@ -199,46 +183,6 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) DnsServiceIpI
 	_jsii_.Get(
 		j,
 		"dnsServiceIpInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) DockerBridgeCidr() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dockerBridgeCidr",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) DockerBridgeCidrInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dockerBridgeCidrInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) EbpfDataPlane() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ebpfDataPlane",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) EbpfDataPlaneInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ebpfDataPlaneInput",
 		&returns,
 	)
 	return returns
@@ -444,46 +388,6 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) NetworkPolicy
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) OutboundIpAddressIds() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"outboundIpAddressIds",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) OutboundIpAddressIdsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"outboundIpAddressIdsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) OutboundIpPrefixIds() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"outboundIpPrefixIds",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) OutboundIpPrefixIdsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"outboundIpPrefixIdsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) OutboundType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -665,28 +569,6 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetDnsServiceI
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetDockerBridgeCidr(val *string) {
-	if err := j.validateSetDockerBridgeCidrParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"dockerBridgeCidr",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetEbpfDataPlane(val *string) {
-	if err := j.validateSetEbpfDataPlaneParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ebpfDataPlane",
-		val,
-	)
-}
-
 func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetInternalValue(val *KubernetesClusterNetworkProfile) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -771,28 +653,6 @@ func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetNetworkPoli
 	_jsii_.Set(
 		j,
 		"networkPolicy",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetOutboundIpAddressIds(val *[]*string) {
-	if err := j.validateSetOutboundIpAddressIdsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"outboundIpAddressIds",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KubernetesClusterNetworkProfileOutputReference)SetOutboundIpPrefixIds(val *[]*string) {
-	if err := j.validateSetOutboundIpPrefixIdsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"outboundIpPrefixIds",
 		val,
 	)
 }
@@ -1090,22 +950,6 @@ func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetDnsServi
 	)
 }
 
-func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetDockerBridgeCidr() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetDockerBridgeCidr",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetEbpfDataPlane() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetEbpfDataPlane",
-		nil, // no parameters
-	)
-}
-
 func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetIpVersions() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1166,22 +1010,6 @@ func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetNetworkP
 	_jsii_.InvokeVoid(
 		k,
 		"resetNetworkPolicy",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetOutboundIpAddressIds() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetOutboundIpAddressIds",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KubernetesClusterNetworkProfileOutputReference) ResetOutboundIpPrefixIds() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetOutboundIpPrefixIds",
 		nil, // no parameters
 	)
 }

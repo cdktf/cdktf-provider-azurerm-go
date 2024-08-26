@@ -67,6 +67,10 @@ func (j *jsiiProxy_ImageDataDiskOutputReference) validateSetComplexObjectIsFromS
 	return nil
 }
 
+func (j *jsiiProxy_ImageDataDiskOutputReference) validateSetDiskEncryptionSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImageDataDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (j *jsiiProxy_ImageDataDiskOutputReference) validateSetManagedDiskIdParamet
 }
 
 func (j *jsiiProxy_ImageDataDiskOutputReference) validateSetSizeGbParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ImageDataDiskOutputReference) validateSetStorageTypeParameters(val *string) error {
 	return nil
 }
 

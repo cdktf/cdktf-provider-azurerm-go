@@ -5,14 +5,14 @@ package sentinelalertruleanomalyduplicate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/sentinelalertruleanomalyduplicate/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/sentinelalertruleanomalyduplicate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_alert_rule_anomaly_duplicate azurerm_sentinel_alert_rule_anomaly_duplicate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_alert_rule_anomaly_duplicate azurerm_sentinel_alert_rule_anomaly_duplicate}.
 type SentinelAlertRuleAnomalyDuplicate interface {
 	cdktf.TerraformResource
 	AnomalySettingsVersion() *float64
@@ -655,7 +655,7 @@ func (j *jsiiProxy_SentinelAlertRuleAnomalyDuplicate) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_alert_rule_anomaly_duplicate azurerm_sentinel_alert_rule_anomaly_duplicate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_alert_rule_anomaly_duplicate azurerm_sentinel_alert_rule_anomaly_duplicate} Resource.
 func NewSentinelAlertRuleAnomalyDuplicate(scope constructs.Construct, id *string, config *SentinelAlertRuleAnomalyDuplicateConfig) SentinelAlertRuleAnomalyDuplicate {
 	_init_.Initialize()
 
@@ -673,7 +673,7 @@ func NewSentinelAlertRuleAnomalyDuplicate(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_alert_rule_anomaly_duplicate azurerm_sentinel_alert_rule_anomaly_duplicate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_alert_rule_anomaly_duplicate azurerm_sentinel_alert_rule_anomaly_duplicate} Resource.
 func NewSentinelAlertRuleAnomalyDuplicate_Override(s SentinelAlertRuleAnomalyDuplicate, scope constructs.Construct, id *string, config *SentinelAlertRuleAnomalyDuplicateConfig) {
 	_init_.Initialize()
 

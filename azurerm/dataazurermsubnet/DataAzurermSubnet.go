@@ -5,14 +5,14 @@ package dataazurermsubnet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermsubnet/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermsubnet/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/subnet azurerm_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/subnet azurerm_subnet}.
 type DataAzurermSubnet interface {
 	cdktf.TerraformDataSource
 	AddressPrefix() *string
@@ -30,8 +30,6 @@ type DataAzurermSubnet interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnforcePrivateLinkEndpointNetworkPolicies() cdktf.IResolvable
-	EnforcePrivateLinkServiceNetworkPolicies() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -54,7 +52,6 @@ type DataAzurermSubnet interface {
 	// The tree node.
 	Node() constructs.Node
 	PrivateEndpointNetworkPolicies() *string
-	PrivateEndpointNetworkPoliciesEnabled() cdktf.IResolvable
 	PrivateLinkServiceNetworkPoliciesEnabled() cdktf.IResolvable
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -198,26 +195,6 @@ func (j *jsiiProxy_DataAzurermSubnet) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermSubnet) EnforcePrivateLinkEndpointNetworkPolicies() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"enforcePrivateLinkEndpointNetworkPolicies",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermSubnet) EnforcePrivateLinkServiceNetworkPolicies() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"enforcePrivateLinkServiceNetworkPolicies",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAzurermSubnet) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -323,16 +300,6 @@ func (j *jsiiProxy_DataAzurermSubnet) PrivateEndpointNetworkPolicies() *string {
 	_jsii_.Get(
 		j,
 		"privateEndpointNetworkPolicies",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermSubnet) PrivateEndpointNetworkPoliciesEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"privateEndpointNetworkPoliciesEnabled",
 		&returns,
 	)
 	return returns
@@ -479,7 +446,7 @@ func (j *jsiiProxy_DataAzurermSubnet) VirtualNetworkNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/subnet azurerm_subnet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/subnet azurerm_subnet} Data Source.
 func NewDataAzurermSubnet(scope constructs.Construct, id *string, config *DataAzurermSubnetConfig) DataAzurermSubnet {
 	_init_.Initialize()
 
@@ -497,7 +464,7 @@ func NewDataAzurermSubnet(scope constructs.Construct, id *string, config *DataAz
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/subnet azurerm_subnet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/subnet azurerm_subnet} Data Source.
 func NewDataAzurermSubnet_Override(d DataAzurermSubnet, scope constructs.Construct, id *string, config *DataAzurermSubnetConfig) {
 	_init_.Initialize()
 

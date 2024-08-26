@@ -5,14 +5,14 @@ package botchannelsregistration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/botchannelsregistration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/botchannelsregistration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/bot_channels_registration azurerm_bot_channels_registration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/bot_channels_registration azurerm_bot_channels_registration}.
 type BotChannelsRegistration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -66,9 +66,6 @@ type BotChannelsRegistration interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IsolatedNetworkEnabled() interface{}
-	SetIsolatedNetworkEnabled(val interface{})
-	IsolatedNetworkEnabledInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -170,7 +167,6 @@ type BotChannelsRegistration interface {
 	ResetEndpoint()
 	ResetIconUrl()
 	ResetId()
-	ResetIsolatedNetworkEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -456,26 +452,6 @@ func (j *jsiiProxy_BotChannelsRegistration) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BotChannelsRegistration) IsolatedNetworkEnabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"isolatedNetworkEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BotChannelsRegistration) IsolatedNetworkEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"isolatedNetworkEnabledInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_BotChannelsRegistration) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -737,7 +713,7 @@ func (j *jsiiProxy_BotChannelsRegistration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/bot_channels_registration azurerm_bot_channels_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/bot_channels_registration azurerm_bot_channels_registration} Resource.
 func NewBotChannelsRegistration(scope constructs.Construct, id *string, config *BotChannelsRegistrationConfig) BotChannelsRegistration {
 	_init_.Initialize()
 
@@ -755,7 +731,7 @@ func NewBotChannelsRegistration(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/bot_channels_registration azurerm_bot_channels_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/bot_channels_registration azurerm_bot_channels_registration} Resource.
 func NewBotChannelsRegistration_Override(b BotChannelsRegistration, scope constructs.Construct, id *string, config *BotChannelsRegistrationConfig) {
 	_init_.Initialize()
 
@@ -899,17 +875,6 @@ func (j *jsiiProxy_BotChannelsRegistration)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_BotChannelsRegistration)SetIsolatedNetworkEnabled(val interface{}) {
-	if err := j.validateSetIsolatedNetworkEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"isolatedNetworkEnabled",
 		val,
 	)
 }
@@ -1464,14 +1429,6 @@ func (b *jsiiProxy_BotChannelsRegistration) ResetId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (b *jsiiProxy_BotChannelsRegistration) ResetIsolatedNetworkEnabled() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetIsolatedNetworkEnabled",
 		nil, // no parameters
 	)
 }

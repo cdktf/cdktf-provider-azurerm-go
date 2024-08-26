@@ -5,18 +5,20 @@ package notificationhub
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/notificationhub/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/notificationhub/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/notification_hub azurerm_notification_hub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/notification_hub azurerm_notification_hub}.
 type NotificationHub interface {
 	cdktf.TerraformResource
 	ApnsCredential() NotificationHubApnsCredentialOutputReference
 	ApnsCredentialInput() *NotificationHubApnsCredential
+	BrowserCredential() NotificationHubBrowserCredentialOutputReference
+	BrowserCredentialInput() *NotificationHubBrowserCredential
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -129,9 +131,11 @@ type NotificationHub interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutApnsCredential(value *NotificationHubApnsCredential)
+	PutBrowserCredential(value *NotificationHubBrowserCredential)
 	PutGcmCredential(value *NotificationHubGcmCredential)
 	PutTimeouts(value *NotificationHubTimeouts)
 	ResetApnsCredential()
+	ResetBrowserCredential()
 	ResetGcmCredential()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -172,6 +176,26 @@ func (j *jsiiProxy_NotificationHub) ApnsCredentialInput() *NotificationHubApnsCr
 	_jsii_.Get(
 		j,
 		"apnsCredentialInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationHub) BrowserCredential() NotificationHubBrowserCredentialOutputReference {
+	var returns NotificationHubBrowserCredentialOutputReference
+	_jsii_.Get(
+		j,
+		"browserCredential",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationHub) BrowserCredentialInput() *NotificationHubBrowserCredential {
+	var returns *NotificationHubBrowserCredential
+	_jsii_.Get(
+		j,
+		"browserCredentialInput",
 		&returns,
 	)
 	return returns
@@ -498,7 +522,7 @@ func (j *jsiiProxy_NotificationHub) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/notification_hub azurerm_notification_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/notification_hub azurerm_notification_hub} Resource.
 func NewNotificationHub(scope constructs.Construct, id *string, config *NotificationHubConfig) NotificationHub {
 	_init_.Initialize()
 
@@ -516,7 +540,7 @@ func NewNotificationHub(scope constructs.Construct, id *string, config *Notifica
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/notification_hub azurerm_notification_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/notification_hub azurerm_notification_hub} Resource.
 func NewNotificationHub_Override(n NotificationHub, scope constructs.Construct, id *string, config *NotificationHubConfig) {
 	_init_.Initialize()
 
@@ -1025,6 +1049,17 @@ func (n *jsiiProxy_NotificationHub) PutApnsCredential(value *NotificationHubApns
 	)
 }
 
+func (n *jsiiProxy_NotificationHub) PutBrowserCredential(value *NotificationHubBrowserCredential) {
+	if err := n.validatePutBrowserCredentialParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putBrowserCredential",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NotificationHub) PutGcmCredential(value *NotificationHubGcmCredential) {
 	if err := n.validatePutGcmCredentialParameters(value); err != nil {
 		panic(err)
@@ -1051,6 +1086,14 @@ func (n *jsiiProxy_NotificationHub) ResetApnsCredential() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetApnsCredential",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationHub) ResetBrowserCredential() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetBrowserCredential",
 		nil, // no parameters
 	)
 }

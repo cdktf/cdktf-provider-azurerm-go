@@ -51,10 +51,6 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationWindowsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationWindowsOutputReference) validateSetClassificationIncludedParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationWindowsOutputReference) validateSetClassificationsIncludedParameters(val *[]*string) error {
 	return nil
 }

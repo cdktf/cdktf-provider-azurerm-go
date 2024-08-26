@@ -5,14 +5,14 @@ package dataprotectionbackuppolicyblobstorage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataprotectionbackuppolicyblobstorage/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataprotectionbackuppolicyblobstorage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage}.
 type DataProtectionBackupPolicyBlobStorage interface {
 	cdktf.TerraformResource
 	BackupRepeatingTimeIntervals() *[]*string
@@ -67,9 +67,6 @@ type DataProtectionBackupPolicyBlobStorage interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	RetentionDuration() *string
-	SetRetentionDuration(val *string)
-	RetentionDurationInput() *string
 	RetentionRule() DataProtectionBackupPolicyBlobStorageRetentionRuleList
 	RetentionRuleInput() interface{}
 	// Experimental.
@@ -140,7 +137,6 @@ type DataProtectionBackupPolicyBlobStorage interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRetentionDuration()
 	ResetRetentionRule()
 	ResetTimeouts()
 	ResetTimeZone()
@@ -373,26 +369,6 @@ func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) RawOverrides() interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) RetentionDuration() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"retentionDuration",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) RetentionDurationInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"retentionDurationInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) RetentionRule() DataProtectionBackupPolicyBlobStorageRetentionRuleList {
 	var returns DataProtectionBackupPolicyBlobStorageRetentionRuleList
 	_jsii_.Get(
@@ -524,7 +500,7 @@ func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) VaultIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage} Resource.
 func NewDataProtectionBackupPolicyBlobStorage(scope constructs.Construct, id *string, config *DataProtectionBackupPolicyBlobStorageConfig) DataProtectionBackupPolicyBlobStorage {
 	_init_.Initialize()
 
@@ -542,7 +518,7 @@ func NewDataProtectionBackupPolicyBlobStorage(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage} Resource.
 func NewDataProtectionBackupPolicyBlobStorage_Override(d DataProtectionBackupPolicyBlobStorage, scope constructs.Construct, id *string, config *DataProtectionBackupPolicyBlobStorageConfig) {
 	_init_.Initialize()
 
@@ -661,17 +637,6 @@ func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage)SetProvisioners(val *[]
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage)SetRetentionDuration(val *string) {
-	if err := j.validateSetRetentionDurationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"retentionDuration",
 		val,
 	)
 }
@@ -1112,14 +1077,6 @@ func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) ResetOverrideLogicalId
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataProtectionBackupPolicyBlobStorage) ResetRetentionDuration() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRetentionDuration",
 		nil, // no parameters
 	)
 }

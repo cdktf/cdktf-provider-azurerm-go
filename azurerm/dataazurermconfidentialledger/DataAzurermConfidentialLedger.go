@@ -5,14 +5,14 @@ package dataazurermconfidentialledger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermconfidentialledger/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermconfidentialledger/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/confidential_ledger azurerm_confidential_ledger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/confidential_ledger azurerm_confidential_ledger}.
 type DataAzurermConfidentialLedger interface {
 	cdktf.TerraformDataSource
 	AzureadBasedServicePrincipal() DataAzurermConfidentialLedgerAzureadBasedServicePrincipalList
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataAzurermConfidentialLedger) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/confidential_ledger azurerm_confidential_ledger} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/confidential_ledger azurerm_confidential_ledger} Data Source.
 func NewDataAzurermConfidentialLedger(scope constructs.Construct, id *string, config *DataAzurermConfidentialLedgerConfig) DataAzurermConfidentialLedger {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewDataAzurermConfidentialLedger(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/confidential_ledger azurerm_confidential_ledger} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/confidential_ledger azurerm_confidential_ledger} Data Source.
 func NewDataAzurermConfidentialLedger_Override(d DataAzurermConfidentialLedger, scope constructs.Construct, id *string, config *DataAzurermConfidentialLedgerConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package automationhybridrunbookworkergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/automationhybridrunbookworkergroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/automationhybridrunbookworkergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_hybrid_runbook_worker_group azurerm_automation_hybrid_runbook_worker_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_hybrid_runbook_worker_group azurerm_automation_hybrid_runbook_worker_group}.
 type AutomationHybridRunbookWorkerGroup interface {
 	cdktf.TerraformResource
 	AutomationAccountName() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_AutomationHybridRunbookWorkerGroup) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_hybrid_runbook_worker_group azurerm_automation_hybrid_runbook_worker_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_hybrid_runbook_worker_group azurerm_automation_hybrid_runbook_worker_group} Resource.
 func NewAutomationHybridRunbookWorkerGroup(scope constructs.Construct, id *string, config *AutomationHybridRunbookWorkerGroupConfig) AutomationHybridRunbookWorkerGroup {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewAutomationHybridRunbookWorkerGroup(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_hybrid_runbook_worker_group azurerm_automation_hybrid_runbook_worker_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_hybrid_runbook_worker_group azurerm_automation_hybrid_runbook_worker_group} Resource.
 func NewAutomationHybridRunbookWorkerGroup_Override(a AutomationHybridRunbookWorkerGroup, scope constructs.Construct, id *string, config *AutomationHybridRunbookWorkerGroupConfig) {
 	_init_.Initialize()
 

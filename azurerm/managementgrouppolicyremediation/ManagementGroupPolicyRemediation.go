@@ -5,14 +5,14 @@ package managementgrouppolicyremediation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/managementgrouppolicyremediation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/managementgrouppolicyremediation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/management_group_policy_remediation azurerm_management_group_policy_remediation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/management_group_policy_remediation azurerm_management_group_policy_remediation}.
 type ManagementGroupPolicyRemediation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -66,9 +66,6 @@ type ManagementGroupPolicyRemediation interface {
 	PolicyAssignmentId() *string
 	SetPolicyAssignmentId(val *string)
 	PolicyAssignmentIdInput() *string
-	PolicyDefinitionId() *string
-	SetPolicyDefinitionId(val *string)
-	PolicyDefinitionIdInput() *string
 	PolicyDefinitionReferenceId() *string
 	SetPolicyDefinitionReferenceId(val *string)
 	PolicyDefinitionReferenceIdInput() *string
@@ -85,9 +82,6 @@ type ManagementGroupPolicyRemediation interface {
 	ResourceCount() *float64
 	SetResourceCount(val *float64)
 	ResourceCountInput() *float64
-	ResourceDiscoveryMode() *string
-	SetResourceDiscoveryMode(val *string)
-	ResourceDiscoveryModeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -147,10 +141,8 @@ type ManagementGroupPolicyRemediation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParallelDeployments()
-	ResetPolicyDefinitionId()
 	ResetPolicyDefinitionReferenceId()
 	ResetResourceCount()
-	ResetResourceDiscoveryMode()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -410,26 +402,6 @@ func (j *jsiiProxy_ManagementGroupPolicyRemediation) PolicyAssignmentIdInput() *
 	return returns
 }
 
-func (j *jsiiProxy_ManagementGroupPolicyRemediation) PolicyDefinitionId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyDefinitionId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ManagementGroupPolicyRemediation) PolicyDefinitionIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyDefinitionIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ManagementGroupPolicyRemediation) PolicyDefinitionReferenceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -500,26 +472,6 @@ func (j *jsiiProxy_ManagementGroupPolicyRemediation) ResourceCountInput() *float
 	return returns
 }
 
-func (j *jsiiProxy_ManagementGroupPolicyRemediation) ResourceDiscoveryMode() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"resourceDiscoveryMode",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ManagementGroupPolicyRemediation) ResourceDiscoveryModeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"resourceDiscoveryModeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ManagementGroupPolicyRemediation) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -571,7 +523,7 @@ func (j *jsiiProxy_ManagementGroupPolicyRemediation) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/management_group_policy_remediation azurerm_management_group_policy_remediation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/management_group_policy_remediation azurerm_management_group_policy_remediation} Resource.
 func NewManagementGroupPolicyRemediation(scope constructs.Construct, id *string, config *ManagementGroupPolicyRemediationConfig) ManagementGroupPolicyRemediation {
 	_init_.Initialize()
 
@@ -589,7 +541,7 @@ func NewManagementGroupPolicyRemediation(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/management_group_policy_remediation azurerm_management_group_policy_remediation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/management_group_policy_remediation azurerm_management_group_policy_remediation} Resource.
 func NewManagementGroupPolicyRemediation_Override(m ManagementGroupPolicyRemediation, scope constructs.Construct, id *string, config *ManagementGroupPolicyRemediationConfig) {
 	_init_.Initialize()
 
@@ -726,17 +678,6 @@ func (j *jsiiProxy_ManagementGroupPolicyRemediation)SetPolicyAssignmentId(val *s
 	)
 }
 
-func (j *jsiiProxy_ManagementGroupPolicyRemediation)SetPolicyDefinitionId(val *string) {
-	if err := j.validateSetPolicyDefinitionIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"policyDefinitionId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ManagementGroupPolicyRemediation)SetPolicyDefinitionReferenceId(val *string) {
 	if err := j.validateSetPolicyDefinitionReferenceIdParameters(val); err != nil {
 		panic(err)
@@ -774,17 +715,6 @@ func (j *jsiiProxy_ManagementGroupPolicyRemediation)SetResourceCount(val *float6
 	_jsii_.Set(
 		j,
 		"resourceCount",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ManagementGroupPolicyRemediation)SetResourceDiscoveryMode(val *string) {
-	if err := j.validateSetResourceDiscoveryModeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"resourceDiscoveryMode",
 		val,
 	)
 }
@@ -1193,14 +1123,6 @@ func (m *jsiiProxy_ManagementGroupPolicyRemediation) ResetParallelDeployments() 
 	)
 }
 
-func (m *jsiiProxy_ManagementGroupPolicyRemediation) ResetPolicyDefinitionId() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetPolicyDefinitionId",
-		nil, // no parameters
-	)
-}
-
 func (m *jsiiProxy_ManagementGroupPolicyRemediation) ResetPolicyDefinitionReferenceId() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1213,14 +1135,6 @@ func (m *jsiiProxy_ManagementGroupPolicyRemediation) ResetResourceCount() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetResourceCount",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_ManagementGroupPolicyRemediation) ResetResourceDiscoveryMode() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetResourceDiscoveryMode",
 		nil, // no parameters
 	)
 }

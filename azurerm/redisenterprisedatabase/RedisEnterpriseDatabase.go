@@ -5,14 +5,14 @@ package redisenterprisedatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/redisenterprisedatabase/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/redisenterprisedatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/redis_enterprise_database azurerm_redis_enterprise_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/redis_enterprise_database azurerm_redis_enterprise_database}.
 type RedisEnterpriseDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -85,9 +85,6 @@ type RedisEnterpriseDatabase interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	ResourceGroupName() *string
-	SetResourceGroupName(val *string)
-	ResourceGroupNameInput() *string
 	SecondaryAccessKey() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -154,7 +151,6 @@ type RedisEnterpriseDatabase interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPort()
-	ResetResourceGroupName()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -514,26 +510,6 @@ func (j *jsiiProxy_RedisEnterpriseDatabase) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedisEnterpriseDatabase) ResourceGroupName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"resourceGroupName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RedisEnterpriseDatabase) ResourceGroupNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"resourceGroupNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RedisEnterpriseDatabase) SecondaryAccessKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -595,7 +571,7 @@ func (j *jsiiProxy_RedisEnterpriseDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/redis_enterprise_database azurerm_redis_enterprise_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/redis_enterprise_database azurerm_redis_enterprise_database} Resource.
 func NewRedisEnterpriseDatabase(scope constructs.Construct, id *string, config *RedisEnterpriseDatabaseConfig) RedisEnterpriseDatabase {
 	_init_.Initialize()
 
@@ -613,7 +589,7 @@ func NewRedisEnterpriseDatabase(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/redis_enterprise_database azurerm_redis_enterprise_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/redis_enterprise_database azurerm_redis_enterprise_database} Resource.
 func NewRedisEnterpriseDatabase_Override(r RedisEnterpriseDatabase, scope constructs.Construct, id *string, config *RedisEnterpriseDatabaseConfig) {
 	_init_.Initialize()
 
@@ -787,17 +763,6 @@ func (j *jsiiProxy_RedisEnterpriseDatabase)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RedisEnterpriseDatabase)SetResourceGroupName(val *string) {
-	if err := j.validateSetResourceGroupNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"resourceGroupName",
 		val,
 	)
 }
@@ -1253,14 +1218,6 @@ func (r *jsiiProxy_RedisEnterpriseDatabase) ResetPort() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetPort",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RedisEnterpriseDatabase) ResetResourceGroupName() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetResourceGroupName",
 		nil, // no parameters
 	)
 }

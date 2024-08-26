@@ -47,14 +47,6 @@ func (c *jsiiProxy_ContainerGroupContainerOutputReference) validateInterpolation
 	return nil
 }
 
-func (c *jsiiProxy_ContainerGroupContainerOutputReference) validatePutGpuParameters(value *ContainerGroupContainerGpu) error {
-	return nil
-}
-
-func (c *jsiiProxy_ContainerGroupContainerOutputReference) validatePutGpuLimitParameters(value *ContainerGroupContainerGpuLimit) error {
-	return nil
-}
-
 func (c *jsiiProxy_ContainerGroupContainerOutputReference) validatePutLivenessProbeParameters(value *ContainerGroupContainerLivenessProbe) error {
 	return nil
 }

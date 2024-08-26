@@ -5,14 +5,14 @@ package firewallnatrulecollection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/firewallnatrulecollection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/firewallnatrulecollection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/firewall_nat_rule_collection azurerm_firewall_nat_rule_collection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/firewall_nat_rule_collection azurerm_firewall_nat_rule_collection}.
 type FirewallNatRuleCollection interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -472,7 +472,7 @@ func (j *jsiiProxy_FirewallNatRuleCollection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/firewall_nat_rule_collection azurerm_firewall_nat_rule_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/firewall_nat_rule_collection azurerm_firewall_nat_rule_collection} Resource.
 func NewFirewallNatRuleCollection(scope constructs.Construct, id *string, config *FirewallNatRuleCollectionConfig) FirewallNatRuleCollection {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewFirewallNatRuleCollection(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/firewall_nat_rule_collection azurerm_firewall_nat_rule_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/firewall_nat_rule_collection azurerm_firewall_nat_rule_collection} Resource.
 func NewFirewallNatRuleCollection_Override(f FirewallNatRuleCollection, scope constructs.Construct, id *string, config *FirewallNatRuleCollectionConfig) {
 	_init_.Initialize()
 

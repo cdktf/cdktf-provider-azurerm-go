@@ -5,14 +5,14 @@ package containerregistry
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/containerregistry/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/containerregistry/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_registry azurerm_container_registry}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_registry azurerm_container_registry}.
 type ContainerRegistry interface {
 	cdktf.TerraformResource
 	AdminEnabled() interface{}
@@ -99,8 +99,9 @@ type ContainerRegistry interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
-	RetentionPolicy() ContainerRegistryRetentionPolicyList
-	RetentionPolicyInput() interface{}
+	RetentionPolicyInDays() *float64
+	SetRetentionPolicyInDays(val *float64)
+	RetentionPolicyInDaysInput() *float64
 	Sku() *string
 	SetSku(val *string)
 	SkuInput() *string
@@ -115,8 +116,9 @@ type ContainerRegistry interface {
 	TerraformResourceType() *string
 	Timeouts() ContainerRegistryTimeoutsOutputReference
 	TimeoutsInput() interface{}
-	TrustPolicy() ContainerRegistryTrustPolicyList
-	TrustPolicyInput() interface{}
+	TrustPolicyEnabled() interface{}
+	SetTrustPolicyEnabled(val interface{})
+	TrustPolicyEnabledInput() interface{}
 	ZoneRedundancyEnabled() interface{}
 	SetZoneRedundancyEnabled(val interface{})
 	ZoneRedundancyEnabledInput() interface{}
@@ -167,9 +169,7 @@ type ContainerRegistry interface {
 	PutGeoreplications(value interface{})
 	PutIdentity(value *ContainerRegistryIdentity)
 	PutNetworkRuleSet(value interface{})
-	PutRetentionPolicy(value interface{})
 	PutTimeouts(value *ContainerRegistryTimeouts)
-	PutTrustPolicy(value interface{})
 	ResetAdminEnabled()
 	ResetAnonymousPullEnabled()
 	ResetDataEndpointEnabled()
@@ -185,10 +185,10 @@ type ContainerRegistry interface {
 	ResetOverrideLogicalId()
 	ResetPublicNetworkAccessEnabled()
 	ResetQuarantinePolicyEnabled()
-	ResetRetentionPolicy()
+	ResetRetentionPolicyInDays()
 	ResetTags()
 	ResetTimeouts()
-	ResetTrustPolicy()
+	ResetTrustPolicyEnabled()
 	ResetZoneRedundancyEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -668,21 +668,21 @@ func (j *jsiiProxy_ContainerRegistry) ResourceGroupNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerRegistry) RetentionPolicy() ContainerRegistryRetentionPolicyList {
-	var returns ContainerRegistryRetentionPolicyList
+func (j *jsiiProxy_ContainerRegistry) RetentionPolicyInDays() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
-		"retentionPolicy",
+		"retentionPolicyInDays",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ContainerRegistry) RetentionPolicyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerRegistry) RetentionPolicyInDaysInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
-		"retentionPolicyInput",
+		"retentionPolicyInDaysInput",
 		&returns,
 	)
 	return returns
@@ -778,21 +778,21 @@ func (j *jsiiProxy_ContainerRegistry) TimeoutsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerRegistry) TrustPolicy() ContainerRegistryTrustPolicyList {
-	var returns ContainerRegistryTrustPolicyList
+func (j *jsiiProxy_ContainerRegistry) TrustPolicyEnabled() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"trustPolicy",
+		"trustPolicyEnabled",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ContainerRegistry) TrustPolicyInput() interface{} {
+func (j *jsiiProxy_ContainerRegistry) TrustPolicyEnabledInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"trustPolicyInput",
+		"trustPolicyEnabledInput",
 		&returns,
 	)
 	return returns
@@ -819,7 +819,7 @@ func (j *jsiiProxy_ContainerRegistry) ZoneRedundancyEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_registry azurerm_container_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_registry azurerm_container_registry} Resource.
 func NewContainerRegistry(scope constructs.Construct, id *string, config *ContainerRegistryConfig) ContainerRegistry {
 	_init_.Initialize()
 
@@ -837,7 +837,7 @@ func NewContainerRegistry(scope constructs.Construct, id *string, config *Contai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/container_registry azurerm_container_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_registry azurerm_container_registry} Resource.
 func NewContainerRegistry_Override(c ContainerRegistry, scope constructs.Construct, id *string, config *ContainerRegistryConfig) {
 	_init_.Initialize()
 
@@ -1037,6 +1037,17 @@ func (j *jsiiProxy_ContainerRegistry)SetResourceGroupName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ContainerRegistry)SetRetentionPolicyInDays(val *float64) {
+	if err := j.validateSetRetentionPolicyInDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"retentionPolicyInDays",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContainerRegistry)SetSku(val *string) {
 	if err := j.validateSetSkuParameters(val); err != nil {
 		panic(err)
@@ -1055,6 +1066,17 @@ func (j *jsiiProxy_ContainerRegistry)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerRegistry)SetTrustPolicyEnabled(val interface{}) {
+	if err := j.validateSetTrustPolicyEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"trustPolicyEnabled",
 		val,
 	)
 }
@@ -1467,17 +1489,6 @@ func (c *jsiiProxy_ContainerRegistry) PutNetworkRuleSet(value interface{}) {
 	)
 }
 
-func (c *jsiiProxy_ContainerRegistry) PutRetentionPolicy(value interface{}) {
-	if err := c.validatePutRetentionPolicyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		c,
-		"putRetentionPolicy",
-		[]interface{}{value},
-	)
-}
-
 func (c *jsiiProxy_ContainerRegistry) PutTimeouts(value *ContainerRegistryTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1485,17 +1496,6 @@ func (c *jsiiProxy_ContainerRegistry) PutTimeouts(value *ContainerRegistryTimeou
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
-	)
-}
-
-func (c *jsiiProxy_ContainerRegistry) PutTrustPolicy(value interface{}) {
-	if err := c.validatePutTrustPolicyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		c,
-		"putTrustPolicy",
 		[]interface{}{value},
 	)
 }
@@ -1604,10 +1604,10 @@ func (c *jsiiProxy_ContainerRegistry) ResetQuarantinePolicyEnabled() {
 	)
 }
 
-func (c *jsiiProxy_ContainerRegistry) ResetRetentionPolicy() {
+func (c *jsiiProxy_ContainerRegistry) ResetRetentionPolicyInDays() {
 	_jsii_.InvokeVoid(
 		c,
-		"resetRetentionPolicy",
+		"resetRetentionPolicyInDays",
 		nil, // no parameters
 	)
 }
@@ -1628,10 +1628,10 @@ func (c *jsiiProxy_ContainerRegistry) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ContainerRegistry) ResetTrustPolicy() {
+func (c *jsiiProxy_ContainerRegistry) ResetTrustPolicyEnabled() {
 	_jsii_.InvokeVoid(
 		c,
-		"resetTrustPolicy",
+		"resetTrustPolicyEnabled",
 		nil, // no parameters
 	)
 }

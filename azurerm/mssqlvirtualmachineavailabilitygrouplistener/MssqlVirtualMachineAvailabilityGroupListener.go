@@ -5,14 +5,14 @@ package mssqlvirtualmachineavailabilitygrouplistener
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/mssqlvirtualmachineavailabilitygrouplistener/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/mssqlvirtualmachineavailabilitygrouplistener/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mssql_virtual_machine_availability_group_listener azurerm_mssql_virtual_machine_availability_group_listener}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mssql_virtual_machine_availability_group_listener azurerm_mssql_virtual_machine_availability_group_listener}.
 type MssqlVirtualMachineAvailabilityGroupListener interface {
 	cdktf.TerraformResource
 	AvailabilityGroupName() *string
@@ -499,7 +499,7 @@ func (j *jsiiProxy_MssqlVirtualMachineAvailabilityGroupListener) TimeoutsInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mssql_virtual_machine_availability_group_listener azurerm_mssql_virtual_machine_availability_group_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mssql_virtual_machine_availability_group_listener azurerm_mssql_virtual_machine_availability_group_listener} Resource.
 func NewMssqlVirtualMachineAvailabilityGroupListener(scope constructs.Construct, id *string, config *MssqlVirtualMachineAvailabilityGroupListenerConfig) MssqlVirtualMachineAvailabilityGroupListener {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewMssqlVirtualMachineAvailabilityGroupListener(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mssql_virtual_machine_availability_group_listener azurerm_mssql_virtual_machine_availability_group_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mssql_virtual_machine_availability_group_listener azurerm_mssql_virtual_machine_availability_group_listener} Resource.
 func NewMssqlVirtualMachineAvailabilityGroupListener_Override(m MssqlVirtualMachineAvailabilityGroupListener, scope constructs.Construct, id *string, config *MssqlVirtualMachineAvailabilityGroupListenerConfig) {
 	_init_.Initialize()
 

@@ -14,8 +14,6 @@ func init() {
 		"@cdktf/provider-azurerm.synapseWorkspace.SynapseWorkspace",
 		reflect.TypeOf((*SynapseWorkspace)(nil)).Elem(),
 		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "aadAdmin", GoGetter: "AadAdmin"},
-			_jsii_.MemberProperty{JsiiProperty: "aadAdminInput", GoGetter: "AadAdminInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "azureadAuthenticationOnly", GoGetter: "AzureadAuthenticationOnly"},
@@ -77,15 +75,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publicNetworkAccessEnabledInput", GoGetter: "PublicNetworkAccessEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "purviewId", GoGetter: "PurviewId"},
 			_jsii_.MemberProperty{JsiiProperty: "purviewIdInput", GoGetter: "PurviewIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putAadAdmin", GoMethod: "PutAadAdmin"},
 			_jsii_.MemberMethod{JsiiMethod: "putAzureDevopsRepo", GoMethod: "PutAzureDevopsRepo"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomerManagedKey", GoMethod: "PutCustomerManagedKey"},
 			_jsii_.MemberMethod{JsiiMethod: "putGithubRepo", GoMethod: "PutGithubRepo"},
 			_jsii_.MemberMethod{JsiiMethod: "putIdentity", GoMethod: "PutIdentity"},
-			_jsii_.MemberMethod{JsiiMethod: "putSqlAadAdmin", GoMethod: "PutSqlAadAdmin"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAadAdmin", GoMethod: "ResetAadAdmin"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureadAuthenticationOnly", GoMethod: "ResetAzureadAuthenticationOnly"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureDevopsRepo", GoMethod: "ResetAzureDevopsRepo"},
 			_jsii_.MemberMethod{JsiiMethod: "resetComputeSubnetId", GoMethod: "ResetComputeSubnetId"},
@@ -100,7 +95,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPublicNetworkAccessEnabled", GoMethod: "ResetPublicNetworkAccessEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPurviewId", GoMethod: "ResetPurviewId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSqlAadAdmin", GoMethod: "ResetSqlAadAdmin"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSqlAdministratorLogin", GoMethod: "ResetSqlAdministratorLogin"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSqlAdministratorLoginPassword", GoMethod: "ResetSqlAdministratorLoginPassword"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSqlIdentityControlEnabled", GoMethod: "ResetSqlIdentityControlEnabled"},
@@ -108,8 +102,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "sqlAadAdmin", GoGetter: "SqlAadAdmin"},
-			_jsii_.MemberProperty{JsiiProperty: "sqlAadAdminInput", GoGetter: "SqlAadAdminInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sqlAdministratorLogin", GoGetter: "SqlAdministratorLogin"},
 			_jsii_.MemberProperty{JsiiProperty: "sqlAdministratorLoginInput", GoGetter: "SqlAdministratorLoginInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sqlAdministratorLoginPassword", GoGetter: "SqlAdministratorLoginPassword"},
@@ -135,73 +127,6 @@ func init() {
 		func() interface{} {
 			j := jsiiProxy_SynapseWorkspace{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-azurerm.synapseWorkspace.SynapseWorkspaceAadAdmin",
-		reflect.TypeOf((*SynapseWorkspaceAadAdmin)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.synapseWorkspace.SynapseWorkspaceAadAdminList",
-		reflect.TypeOf((*SynapseWorkspaceAadAdminList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SynapseWorkspaceAadAdminList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.synapseWorkspace.SynapseWorkspaceAadAdminOutputReference",
-		reflect.TypeOf((*SynapseWorkspaceAadAdminOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "login", GoGetter: "Login"},
-			_jsii_.MemberProperty{JsiiProperty: "loginInput", GoGetter: "LoginInput"},
-			_jsii_.MemberProperty{JsiiProperty: "objectId", GoGetter: "ObjectId"},
-			_jsii_.MemberProperty{JsiiProperty: "objectIdInput", GoGetter: "ObjectIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLogin", GoMethod: "ResetLogin"},
-			_jsii_.MemberMethod{JsiiMethod: "resetObjectId", GoMethod: "ResetObjectId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTenantId", GoMethod: "ResetTenantId"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "tenantId", GoGetter: "TenantId"},
-			_jsii_.MemberProperty{JsiiProperty: "tenantIdInput", GoGetter: "TenantIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SynapseWorkspaceAadAdminOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)
@@ -394,73 +319,6 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SynapseWorkspaceIdentityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-azurerm.synapseWorkspace.SynapseWorkspaceSqlAadAdmin",
-		reflect.TypeOf((*SynapseWorkspaceSqlAadAdmin)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.synapseWorkspace.SynapseWorkspaceSqlAadAdminList",
-		reflect.TypeOf((*SynapseWorkspaceSqlAadAdminList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SynapseWorkspaceSqlAadAdminList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.synapseWorkspace.SynapseWorkspaceSqlAadAdminOutputReference",
-		reflect.TypeOf((*SynapseWorkspaceSqlAadAdminOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "login", GoGetter: "Login"},
-			_jsii_.MemberProperty{JsiiProperty: "loginInput", GoGetter: "LoginInput"},
-			_jsii_.MemberProperty{JsiiProperty: "objectId", GoGetter: "ObjectId"},
-			_jsii_.MemberProperty{JsiiProperty: "objectIdInput", GoGetter: "ObjectIdInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLogin", GoMethod: "ResetLogin"},
-			_jsii_.MemberMethod{JsiiMethod: "resetObjectId", GoMethod: "ResetObjectId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetTenantId", GoMethod: "ResetTenantId"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "tenantId", GoGetter: "TenantId"},
-			_jsii_.MemberProperty{JsiiProperty: "tenantIdInput", GoGetter: "TenantIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_SynapseWorkspaceSqlAadAdminOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

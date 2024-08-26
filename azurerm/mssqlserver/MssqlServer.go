@@ -5,14 +5,14 @@ package mssqlserver
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/mssqlserver/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/mssqlserver/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mssql_server azurerm_mssql_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mssql_server azurerm_mssql_server}.
 type MssqlServer interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -712,7 +712,7 @@ func (j *jsiiProxy_MssqlServer) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mssql_server azurerm_mssql_server} Resource.
 func NewMssqlServer(scope constructs.Construct, id *string, config *MssqlServerConfig) MssqlServer {
 	_init_.Initialize()
 
@@ -730,7 +730,7 @@ func NewMssqlServer(scope constructs.Construct, id *string, config *MssqlServerC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mssql_server azurerm_mssql_server} Resource.
 func NewMssqlServer_Override(m MssqlServer, scope constructs.Construct, id *string, config *MssqlServerConfig) {
 	_init_.Initialize()
 

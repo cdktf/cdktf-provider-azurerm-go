@@ -5,14 +5,14 @@ package mobilenetworkslice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/mobilenetworkslice/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/mobilenetworkslice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mobile_network_slice azurerm_mobile_network_slice}.
 type MobileNetworkSlice interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -474,7 +474,7 @@ func (j *jsiiProxy_MobileNetworkSlice) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mobile_network_slice azurerm_mobile_network_slice} Resource.
 func NewMobileNetworkSlice(scope constructs.Construct, id *string, config *MobileNetworkSliceConfig) MobileNetworkSlice {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewMobileNetworkSlice(scope constructs.Construct, id *string, config *Mobil
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mobile_network_slice azurerm_mobile_network_slice} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mobile_network_slice azurerm_mobile_network_slice} Resource.
 func NewMobileNetworkSlice_Override(m MobileNetworkSlice, scope constructs.Construct, id *string, config *MobileNetworkSliceConfig) {
 	_init_.Initialize()
 

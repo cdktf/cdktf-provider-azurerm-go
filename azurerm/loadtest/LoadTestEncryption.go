@@ -7,9 +7,9 @@ package loadtest
 type LoadTestEncryption struct {
 	// identity block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/load_test#identity LoadTest#identity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/load_test#identity LoadTest#identity}
 	Identity *LoadTestEncryptionIdentity `field:"required" json:"identity" yaml:"identity"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/load_test#key_url LoadTest#key_url}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/load_test#key_url LoadTest#key_url}.
 	KeyUrl *string `field:"required" json:"keyUrl" yaml:"keyUrl"`
 }
 

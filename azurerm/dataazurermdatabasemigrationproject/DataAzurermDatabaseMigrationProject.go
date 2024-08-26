@@ -5,14 +5,14 @@ package dataazurermdatabasemigrationproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermdatabasemigrationproject/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermdatabasemigrationproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/database_migration_project azurerm_database_migration_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/database_migration_project azurerm_database_migration_project}.
 type DataAzurermDatabaseMigrationProject interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_DataAzurermDatabaseMigrationProject) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/database_migration_project azurerm_database_migration_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/database_migration_project azurerm_database_migration_project} Data Source.
 func NewDataAzurermDatabaseMigrationProject(scope constructs.Construct, id *string, config *DataAzurermDatabaseMigrationProjectConfig) DataAzurermDatabaseMigrationProject {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewDataAzurermDatabaseMigrationProject(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/database_migration_project azurerm_database_migration_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/database_migration_project azurerm_database_migration_project} Data Source.
 func NewDataAzurermDatabaseMigrationProject_Override(d DataAzurermDatabaseMigrationProject, scope constructs.Construct, id *string, config *DataAzurermDatabaseMigrationProjectConfig) {
 	_init_.Initialize()
 

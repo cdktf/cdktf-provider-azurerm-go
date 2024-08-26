@@ -65,7 +65,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOpenApi", GoMethod: "ResetOpenApi"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPredicates", GoMethod: "ResetPredicates"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProtocol", GoMethod: "ResetProtocol"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRoute", GoMethod: "ResetRoute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSpringCloudAppId", GoMethod: "ResetSpringCloudAppId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSsoValidationEnabled", GoMethod: "ResetSsoValidationEnabled"},

@@ -5,14 +5,14 @@ package apimanagementproductpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/apimanagementproductpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/apimanagementproductpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_product_policy azurerm_api_management_product_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_product_policy azurerm_api_management_product_policy}.
 type ApiManagementProductPolicy interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -451,7 +451,7 @@ func (j *jsiiProxy_ApiManagementProductPolicy) XmlLinkInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_product_policy azurerm_api_management_product_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_product_policy azurerm_api_management_product_policy} Resource.
 func NewApiManagementProductPolicy(scope constructs.Construct, id *string, config *ApiManagementProductPolicyConfig) ApiManagementProductPolicy {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewApiManagementProductPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_product_policy azurerm_api_management_product_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_product_policy azurerm_api_management_product_policy} Resource.
 func NewApiManagementProductPolicy_Override(a ApiManagementProductPolicy, scope constructs.Construct, id *string, config *ApiManagementProductPolicyConfig) {
 	_init_.Initialize()
 

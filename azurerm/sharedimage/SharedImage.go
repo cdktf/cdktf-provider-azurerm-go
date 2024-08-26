@@ -5,14 +5,14 @@ package sharedimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/sharedimage/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/sharedimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/shared_image azurerm_shared_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/shared_image azurerm_shared_image}.
 type SharedImage interface {
 	cdktf.TerraformResource
 	AcceleratedNetworkSupportEnabled() interface{}
@@ -66,6 +66,9 @@ type SharedImage interface {
 	GalleryName() *string
 	SetGalleryName(val *string)
 	GalleryNameInput() *string
+	HibernationEnabled() interface{}
+	SetHibernationEnabled(val interface{})
+	HibernationEnabledInput() interface{}
 	HyperVGeneration() *string
 	SetHyperVGeneration(val *string)
 	HyperVGenerationInput() *string
@@ -196,6 +199,7 @@ type SharedImage interface {
 	ResetDiskTypesNotAllowed()
 	ResetEndOfLifeDate()
 	ResetEula()
+	ResetHibernationEnabled()
 	ResetHyperVGeneration()
 	ResetId()
 	ResetMaxRecommendedMemoryInGb()
@@ -486,6 +490,26 @@ func (j *jsiiProxy_SharedImage) GalleryNameInput() *string {
 	_jsii_.Get(
 		j,
 		"galleryNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SharedImage) HibernationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hibernationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SharedImage) HibernationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hibernationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -952,7 +976,7 @@ func (j *jsiiProxy_SharedImage) TrustedLaunchSupportedInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/shared_image azurerm_shared_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/shared_image azurerm_shared_image} Resource.
 func NewSharedImage(scope constructs.Construct, id *string, config *SharedImageConfig) SharedImage {
 	_init_.Initialize()
 
@@ -970,7 +994,7 @@ func NewSharedImage(scope constructs.Construct, id *string, config *SharedImageC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/shared_image azurerm_shared_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/shared_image azurerm_shared_image} Resource.
 func NewSharedImage_Override(s SharedImage, scope constructs.Construct, id *string, config *SharedImageConfig) {
 	_init_.Initialize()
 
@@ -1114,6 +1138,17 @@ func (j *jsiiProxy_SharedImage)SetGalleryName(val *string) {
 	_jsii_.Set(
 		j,
 		"galleryName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SharedImage)SetHibernationEnabled(val interface{}) {
+	if err := j.validateSetHibernationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hibernationEnabled",
 		val,
 	)
 }
@@ -1770,6 +1805,14 @@ func (s *jsiiProxy_SharedImage) ResetEula() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEula",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SharedImage) ResetHibernationEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHibernationEnabled",
 		nil, // no parameters
 	)
 }

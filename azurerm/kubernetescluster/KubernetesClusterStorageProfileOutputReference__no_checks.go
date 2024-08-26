@@ -67,10 +67,6 @@ func (j *jsiiProxy_KubernetesClusterStorageProfileOutputReference) validateSetDi
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesClusterStorageProfileOutputReference) validateSetDiskDriverVersionParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_KubernetesClusterStorageProfileOutputReference) validateSetFileDriverEnabledParameters(val interface{}) error {
 	return nil
 }

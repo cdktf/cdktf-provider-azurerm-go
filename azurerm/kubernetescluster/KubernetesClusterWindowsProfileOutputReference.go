@@ -5,9 +5,9 @@ package kubernetescluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/kubernetescluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/kubernetescluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -76,7 +76,6 @@ type KubernetesClusterWindowsProfileOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutGmsa(value *KubernetesClusterWindowsProfileGmsa)
-	ResetAdminPassword()
 	ResetGmsa()
 	ResetLicense()
 	// Produce the Token's value at resolution time.
@@ -554,14 +553,6 @@ func (k *jsiiProxy_KubernetesClusterWindowsProfileOutputReference) PutGmsa(value
 		k,
 		"putGmsa",
 		[]interface{}{value},
-	)
-}
-
-func (k *jsiiProxy_KubernetesClusterWindowsProfileOutputReference) ResetAdminPassword() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetAdminPassword",
-		nil, // no parameters
 	)
 }
 

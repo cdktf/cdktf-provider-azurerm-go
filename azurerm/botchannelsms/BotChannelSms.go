@@ -5,14 +5,14 @@ package botchannelsms
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/botchannelsms/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/botchannelsms/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/bot_channel_sms azurerm_bot_channel_sms}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/bot_channel_sms azurerm_bot_channel_sms}.
 type BotChannelSms interface {
 	cdktf.TerraformResource
 	BotName() *string
@@ -472,7 +472,7 @@ func (j *jsiiProxy_BotChannelSms) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/bot_channel_sms azurerm_bot_channel_sms} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/bot_channel_sms azurerm_bot_channel_sms} Resource.
 func NewBotChannelSms(scope constructs.Construct, id *string, config *BotChannelSmsConfig) BotChannelSms {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewBotChannelSms(scope constructs.Construct, id *string, config *BotChannel
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/bot_channel_sms azurerm_bot_channel_sms} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/bot_channel_sms azurerm_bot_channel_sms} Resource.
 func NewBotChannelSms_Override(b BotChannelSms, scope constructs.Construct, id *string, config *BotChannelSmsConfig) {
 	_init_.Initialize()
 

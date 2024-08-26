@@ -5,14 +5,14 @@ package privatednsaaaarecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/privatednsaaaarecord/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/privatednsaaaarecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/private_dns_aaaa_record azurerm_private_dns_aaaa_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/private_dns_aaaa_record azurerm_private_dns_aaaa_record}.
 type PrivateDnsAaaaRecord interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -484,7 +484,7 @@ func (j *jsiiProxy_PrivateDnsAaaaRecord) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/private_dns_aaaa_record azurerm_private_dns_aaaa_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/private_dns_aaaa_record azurerm_private_dns_aaaa_record} Resource.
 func NewPrivateDnsAaaaRecord(scope constructs.Construct, id *string, config *PrivateDnsAaaaRecordConfig) PrivateDnsAaaaRecord {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewPrivateDnsAaaaRecord(scope constructs.Construct, id *string, config *Pri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/private_dns_aaaa_record azurerm_private_dns_aaaa_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/private_dns_aaaa_record azurerm_private_dns_aaaa_record} Resource.
 func NewPrivateDnsAaaaRecord_Override(p PrivateDnsAaaaRecord, scope constructs.Construct, id *string, config *PrivateDnsAaaaRecordConfig) {
 	_init_.Initialize()
 

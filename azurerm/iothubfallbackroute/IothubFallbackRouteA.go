@@ -5,14 +5,14 @@ package iothubfallbackroute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/iothubfallbackroute/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/iothubfallbackroute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route}.
 type IothubFallbackRouteA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -474,7 +474,7 @@ func (j *jsiiProxy_IothubFallbackRouteA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route} Resource.
 func NewIothubFallbackRouteA(scope constructs.Construct, id *string, config *IothubFallbackRouteAConfig) IothubFallbackRouteA {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewIothubFallbackRouteA(scope constructs.Construct, id *string, config *Iot
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/iothub_fallback_route azurerm_iothub_fallback_route} Resource.
 func NewIothubFallbackRouteA_Override(i IothubFallbackRouteA, scope constructs.Construct, id *string, config *IothubFallbackRouteAConfig) {
 	_init_.Initialize()
 

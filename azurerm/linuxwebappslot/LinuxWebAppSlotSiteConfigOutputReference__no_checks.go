@@ -87,10 +87,6 @@ func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) validateSetAppComma
 	return nil
 }
 
-func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) validateSetAutoHealEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_LinuxWebAppSlotSiteConfigOutputReference) validateSetAutoSwapSlotNameParameters(val *string) error {
 	return nil
 }

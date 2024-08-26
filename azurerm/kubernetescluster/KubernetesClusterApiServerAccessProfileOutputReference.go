@@ -5,9 +5,9 @@ package kubernetescluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/kubernetescluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/kubernetescluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,9 +35,6 @@ type KubernetesClusterApiServerAccessProfileOutputReference interface {
 	Fqn() *string
 	InternalValue() *KubernetesClusterApiServerAccessProfile
 	SetInternalValue(val *KubernetesClusterApiServerAccessProfile)
-	SubnetId() *string
-	SetSubnetId(val *string)
-	SubnetIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,9 +43,6 @@ type KubernetesClusterApiServerAccessProfileOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	VnetIntegrationEnabled() interface{}
-	SetVnetIntegrationEnabled(val interface{})
-	VnetIntegrationEnabledInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -74,8 +68,6 @@ type KubernetesClusterApiServerAccessProfileOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAuthorizedIpRanges()
-	ResetSubnetId()
-	ResetVnetIntegrationEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -161,26 +153,6 @@ func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) Inter
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) SubnetId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"subnetId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) SubnetIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"subnetIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -196,26 +168,6 @@ func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) Terra
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) VnetIntegrationEnabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"vnetIntegrationEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) VnetIntegrationEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"vnetIntegrationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -293,17 +245,6 @@ func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference)SetSubnetId(val *string) {
-	if err := j.validateSetSubnetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"subnetId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -322,17 +263,6 @@ func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference)SetTer
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference)SetVnetIntegrationEnabled(val interface{}) {
-	if err := j.validateSetVnetIntegrationEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"vnetIntegrationEnabled",
 		val,
 	)
 }
@@ -527,22 +457,6 @@ func (k *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) Reset
 	_jsii_.InvokeVoid(
 		k,
 		"resetAuthorizedIpRanges",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) ResetSubnetId() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetSubnetId",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KubernetesClusterApiServerAccessProfileOutputReference) ResetVnetIntegrationEnabled() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetVnetIntegrationEnabled",
 		nil, // no parameters
 	)
 }

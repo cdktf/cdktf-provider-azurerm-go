@@ -51,10 +51,6 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) validateSetClassificationIncludedParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AutomationSoftwareUpdateConfigurationLinuxOutputReference) validateSetClassificationsIncludedParameters(val *[]*string) error {
 	return nil
 }

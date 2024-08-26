@@ -63,18 +63,6 @@ func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) validateSetDockerContainerNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) validateSetDockerContainerRegistryParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) validateSetDockerContainerTagParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) validateSetDockerImageNameParameters(val *string) error {
 	return nil
 }
@@ -128,10 +116,6 @@ func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) valid
 }
 
 func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) validateSetPythonParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_WindowsWebAppSiteConfigApplicationStackOutputReference) validateSetPythonVersionParameters(val *string) error {
 	return nil
 }
 

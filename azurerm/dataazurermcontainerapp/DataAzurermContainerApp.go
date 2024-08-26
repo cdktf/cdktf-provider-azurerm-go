@@ -5,14 +5,14 @@ package dataazurermcontainerapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermcontainerapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermcontainerapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/container_app azurerm_container_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/container_app azurerm_container_app}.
 type DataAzurermContainerApp interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -500,7 +500,7 @@ func (j *jsiiProxy_DataAzurermContainerApp) WorkloadProfileName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/container_app azurerm_container_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/container_app azurerm_container_app} Data Source.
 func NewDataAzurermContainerApp(scope constructs.Construct, id *string, config *DataAzurermContainerAppConfig) DataAzurermContainerApp {
 	_init_.Initialize()
 
@@ -518,7 +518,7 @@ func NewDataAzurermContainerApp(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/container_app azurerm_container_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/container_app azurerm_container_app} Data Source.
 func NewDataAzurermContainerApp_Override(d DataAzurermContainerApp, scope constructs.Construct, id *string, config *DataAzurermContainerAppConfig) {
 	_init_.Initialize()
 

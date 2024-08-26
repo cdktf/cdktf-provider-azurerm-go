@@ -5,14 +5,14 @@ package botconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/botconnection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/botconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/bot_connection azurerm_bot_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/bot_connection azurerm_bot_connection}.
 type BotConnection interface {
 	cdktf.TerraformResource
 	BotName() *string
@@ -85,9 +85,6 @@ type BotConnection interface {
 	ServiceProviderName() *string
 	SetServiceProviderName(val *string)
 	ServiceProviderNameInput() *string
-	Tags() *map[string]*string
-	SetTags(val *map[string]*string)
-	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -146,7 +143,6 @@ type BotConnection interface {
 	ResetOverrideLogicalId()
 	ResetParameters()
 	ResetScopes()
-	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -496,26 +492,6 @@ func (j *jsiiProxy_BotConnection) ServiceProviderNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BotConnection) Tags() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"tags",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BotConnection) TagsInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"tagsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_BotConnection) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -567,7 +543,7 @@ func (j *jsiiProxy_BotConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/bot_connection azurerm_bot_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/bot_connection azurerm_bot_connection} Resource.
 func NewBotConnection(scope constructs.Construct, id *string, config *BotConnectionConfig) BotConnection {
 	_init_.Initialize()
 
@@ -585,7 +561,7 @@ func NewBotConnection(scope constructs.Construct, id *string, config *BotConnect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/bot_connection azurerm_bot_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/bot_connection azurerm_bot_connection} Resource.
 func NewBotConnection_Override(b BotConnection, scope constructs.Construct, id *string, config *BotConnectionConfig) {
 	_init_.Initialize()
 
@@ -770,17 +746,6 @@ func (j *jsiiProxy_BotConnection)SetServiceProviderName(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceProviderName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_BotConnection)SetTags(val *map[string]*string) {
-	if err := j.validateSetTagsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tags",
 		val,
 	)
 }
@@ -1177,14 +1142,6 @@ func (b *jsiiProxy_BotConnection) ResetScopes() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetScopes",
-		nil, // no parameters
-	)
-}
-
-func (b *jsiiProxy_BotConnection) ResetTags() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetTags",
 		nil, // no parameters
 	)
 }

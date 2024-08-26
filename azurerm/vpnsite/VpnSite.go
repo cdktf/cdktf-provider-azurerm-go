@@ -5,14 +5,14 @@ package vpnsite
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/vpnsite/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/vpnsite/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/vpn_site azurerm_vpn_site}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/vpn_site azurerm_vpn_site}.
 type VpnSite interface {
 	cdktf.TerraformResource
 	AddressCidrs() *[]*string
@@ -570,7 +570,7 @@ func (j *jsiiProxy_VpnSite) VirtualWanIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/vpn_site azurerm_vpn_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/vpn_site azurerm_vpn_site} Resource.
 func NewVpnSite(scope constructs.Construct, id *string, config *VpnSiteConfig) VpnSite {
 	_init_.Initialize()
 
@@ -588,7 +588,7 @@ func NewVpnSite(scope constructs.Construct, id *string, config *VpnSiteConfig) V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/vpn_site azurerm_vpn_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/vpn_site azurerm_vpn_site} Resource.
 func NewVpnSite_Override(v VpnSite, scope constructs.Construct, id *string, config *VpnSiteConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package dataazurermlinuxwebapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermlinuxwebapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermlinuxwebapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/linux_web_app azurerm_linux_web_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/linux_web_app azurerm_linux_web_app}.
 type DataAzurermLinuxWebApp interface {
 	cdktf.TerraformDataSource
 	AppMetadata() cdktf.StringMap
@@ -731,7 +731,7 @@ func (j *jsiiProxy_DataAzurermLinuxWebApp) WebdeployPublishBasicAuthenticationEn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/linux_web_app azurerm_linux_web_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/linux_web_app azurerm_linux_web_app} Data Source.
 func NewDataAzurermLinuxWebApp(scope constructs.Construct, id *string, config *DataAzurermLinuxWebAppConfig) DataAzurermLinuxWebApp {
 	_init_.Initialize()
 
@@ -749,7 +749,7 @@ func NewDataAzurermLinuxWebApp(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/linux_web_app azurerm_linux_web_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/linux_web_app azurerm_linux_web_app} Data Source.
 func NewDataAzurermLinuxWebApp_Override(d DataAzurermLinuxWebApp, scope constructs.Construct, id *string, config *DataAzurermLinuxWebAppConfig) {
 	_init_.Initialize()
 

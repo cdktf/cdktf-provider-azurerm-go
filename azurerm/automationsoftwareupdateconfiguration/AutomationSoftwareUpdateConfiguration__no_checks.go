@@ -151,10 +151,6 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) validateSetNonAzureCom
 	return nil
 }
 
-func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) validateSetOperatingSystemParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

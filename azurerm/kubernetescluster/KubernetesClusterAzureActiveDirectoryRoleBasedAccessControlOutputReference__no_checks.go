@@ -59,10 +59,6 @@ func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOu
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) validateSetClientAppIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -72,18 +68,6 @@ func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOu
 }
 
 func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) validateSetInternalValueParameters(val *KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl) error {
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) validateSetManagedParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) validateSetServerAppIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) validateSetServerAppSecretParameters(val *string) error {
 	return nil
 }
 

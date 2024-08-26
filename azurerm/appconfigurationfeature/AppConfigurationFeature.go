@@ -5,14 +5,14 @@ package appconfigurationfeature
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/appconfigurationfeature/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/appconfigurationfeature/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_configuration_feature azurerm_app_configuration_feature}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_configuration_feature azurerm_app_configuration_feature}.
 type AppConfigurationFeature interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -620,7 +620,7 @@ func (j *jsiiProxy_AppConfigurationFeature) TimewindowFilterInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_configuration_feature azurerm_app_configuration_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_configuration_feature azurerm_app_configuration_feature} Resource.
 func NewAppConfigurationFeature(scope constructs.Construct, id *string, config *AppConfigurationFeatureConfig) AppConfigurationFeature {
 	_init_.Initialize()
 
@@ -638,7 +638,7 @@ func NewAppConfigurationFeature(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/app_configuration_feature azurerm_app_configuration_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/app_configuration_feature azurerm_app_configuration_feature} Resource.
 func NewAppConfigurationFeature_Override(a AppConfigurationFeature, scope constructs.Construct, id *string, config *AppConfigurationFeatureConfig) {
 	_init_.Initialize()
 

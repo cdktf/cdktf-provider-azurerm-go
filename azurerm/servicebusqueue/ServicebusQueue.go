@@ -5,14 +5,14 @@ package servicebusqueue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/servicebusqueue/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/servicebusqueue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/servicebus_queue azurerm_servicebus_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/servicebus_queue azurerm_servicebus_queue}.
 type ServicebusQueue interface {
 	cdktf.TerraformResource
 	AutoDeleteOnIdle() *string
@@ -46,15 +46,6 @@ type ServicebusQueue interface {
 	DuplicateDetectionHistoryTimeWindow() *string
 	SetDuplicateDetectionHistoryTimeWindow(val *string)
 	DuplicateDetectionHistoryTimeWindowInput() *string
-	EnableBatchedOperations() interface{}
-	SetEnableBatchedOperations(val interface{})
-	EnableBatchedOperationsInput() interface{}
-	EnableExpress() interface{}
-	SetEnableExpress(val interface{})
-	EnableExpressInput() interface{}
-	EnablePartitioning() interface{}
-	SetEnablePartitioning(val interface{})
-	EnablePartitioningInput() interface{}
 	ExpressEnabled() interface{}
 	SetExpressEnabled(val interface{})
 	ExpressEnabledInput() interface{}
@@ -178,9 +169,6 @@ type ServicebusQueue interface {
 	ResetDeadLetteringOnMessageExpiration()
 	ResetDefaultMessageTtl()
 	ResetDuplicateDetectionHistoryTimeWindow()
-	ResetEnableBatchedOperations()
-	ResetEnableExpress()
-	ResetEnablePartitioning()
 	ResetExpressEnabled()
 	ResetForwardDeadLetteredMessagesTo()
 	ResetForwardTo()
@@ -360,66 +348,6 @@ func (j *jsiiProxy_ServicebusQueue) DuplicateDetectionHistoryTimeWindowInput() *
 	_jsii_.Get(
 		j,
 		"duplicateDetectionHistoryTimeWindowInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServicebusQueue) EnableBatchedOperations() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableBatchedOperations",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServicebusQueue) EnableBatchedOperationsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableBatchedOperationsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServicebusQueue) EnableExpress() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableExpress",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServicebusQueue) EnableExpressInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableExpressInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServicebusQueue) EnablePartitioning() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enablePartitioning",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServicebusQueue) EnablePartitioningInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enablePartitioningInput",
 		&returns,
 	)
 	return returns
@@ -836,7 +764,7 @@ func (j *jsiiProxy_ServicebusQueue) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/servicebus_queue azurerm_servicebus_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/servicebus_queue azurerm_servicebus_queue} Resource.
 func NewServicebusQueue(scope constructs.Construct, id *string, config *ServicebusQueueConfig) ServicebusQueue {
 	_init_.Initialize()
 
@@ -854,7 +782,7 @@ func NewServicebusQueue(scope constructs.Construct, id *string, config *Serviceb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/servicebus_queue azurerm_servicebus_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/servicebus_queue azurerm_servicebus_queue} Resource.
 func NewServicebusQueue_Override(s ServicebusQueue, scope constructs.Construct, id *string, config *ServicebusQueueConfig) {
 	_init_.Initialize()
 
@@ -946,39 +874,6 @@ func (j *jsiiProxy_ServicebusQueue)SetDuplicateDetectionHistoryTimeWindow(val *s
 	_jsii_.Set(
 		j,
 		"duplicateDetectionHistoryTimeWindow",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ServicebusQueue)SetEnableBatchedOperations(val interface{}) {
-	if err := j.validateSetEnableBatchedOperationsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enableBatchedOperations",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ServicebusQueue)SetEnableExpress(val interface{}) {
-	if err := j.validateSetEnableExpressParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enableExpress",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ServicebusQueue)SetEnablePartitioning(val interface{}) {
-	if err := j.validateSetEnablePartitioningParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enablePartitioning",
 		val,
 	)
 }
@@ -1575,30 +1470,6 @@ func (s *jsiiProxy_ServicebusQueue) ResetDuplicateDetectionHistoryTimeWindow() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDuplicateDetectionHistoryTimeWindow",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_ServicebusQueue) ResetEnableBatchedOperations() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetEnableBatchedOperations",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_ServicebusQueue) ResetEnableExpress() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetEnableExpress",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_ServicebusQueue) ResetEnablePartitioning() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetEnablePartitioning",
 		nil, // no parameters
 	)
 }

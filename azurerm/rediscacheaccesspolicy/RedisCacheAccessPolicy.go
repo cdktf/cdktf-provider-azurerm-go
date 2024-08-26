@@ -5,14 +5,14 @@ package rediscacheaccesspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/rediscacheaccesspolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/rediscacheaccesspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/redis_cache_access_policy azurerm_redis_cache_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/redis_cache_access_policy azurerm_redis_cache_access_policy}.
 type RedisCacheAccessPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_RedisCacheAccessPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/redis_cache_access_policy azurerm_redis_cache_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/redis_cache_access_policy azurerm_redis_cache_access_policy} Resource.
 func NewRedisCacheAccessPolicy(scope constructs.Construct, id *string, config *RedisCacheAccessPolicyConfig) RedisCacheAccessPolicy {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewRedisCacheAccessPolicy(scope constructs.Construct, id *string, config *R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/redis_cache_access_policy azurerm_redis_cache_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/redis_cache_access_policy azurerm_redis_cache_access_policy} Resource.
 func NewRedisCacheAccessPolicy_Override(r RedisCacheAccessPolicy, scope constructs.Construct, id *string, config *RedisCacheAccessPolicyConfig) {
 	_init_.Initialize()
 

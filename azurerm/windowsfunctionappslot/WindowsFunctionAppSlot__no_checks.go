@@ -231,6 +231,10 @@ func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetVirtualNetworkSubnetIdPara
 	return nil
 }
 
+func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetVnetImagePullEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetWebdeployPublishBasicAuthenticationEnabledParameters(val interface{}) error {
 	return nil
 }

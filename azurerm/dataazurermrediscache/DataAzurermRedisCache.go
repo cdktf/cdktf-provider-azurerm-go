@@ -5,16 +5,17 @@ package dataazurermrediscache
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermrediscache/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermrediscache/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/redis_cache azurerm_redis_cache}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/redis_cache azurerm_redis_cache}.
 type DataAzurermRedisCache interface {
 	cdktf.TerraformDataSource
+	AccessKeysAuthenticationEnabled() cdktf.IResolvable
 	Capacity() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -28,7 +29,6 @@ type DataAzurermRedisCache interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnableNonSslPort() cdktf.IResolvable
 	Family() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -135,6 +135,16 @@ type jsiiProxy_DataAzurermRedisCache struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
+func (j *jsiiProxy_DataAzurermRedisCache) AccessKeysAuthenticationEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"accessKeysAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermRedisCache) Capacity() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -180,16 +190,6 @@ func (j *jsiiProxy_DataAzurermRedisCache) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermRedisCache) EnableNonSslPort() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"enableNonSslPort",
 		&returns,
 	)
 	return returns
@@ -566,7 +566,7 @@ func (j *jsiiProxy_DataAzurermRedisCache) Zones() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/redis_cache azurerm_redis_cache} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/redis_cache azurerm_redis_cache} Data Source.
 func NewDataAzurermRedisCache(scope constructs.Construct, id *string, config *DataAzurermRedisCacheConfig) DataAzurermRedisCache {
 	_init_.Initialize()
 
@@ -584,7 +584,7 @@ func NewDataAzurermRedisCache(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/redis_cache azurerm_redis_cache} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/redis_cache azurerm_redis_cache} Data Source.
 func NewDataAzurermRedisCache_Override(d DataAzurermRedisCache, scope constructs.Construct, id *string, config *DataAzurermRedisCacheConfig) {
 	_init_.Initialize()
 

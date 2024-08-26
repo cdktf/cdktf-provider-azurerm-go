@@ -5,14 +5,14 @@ package eventhub
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/eventhub/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/eventhub/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/eventhub azurerm_eventhub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/eventhub azurerm_eventhub}.
 type Eventhub interface {
 	cdktf.TerraformResource
 	CaptureDescription() EventhubCaptureDescriptionOutputReference
@@ -508,7 +508,7 @@ func (j *jsiiProxy_Eventhub) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/eventhub azurerm_eventhub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/eventhub azurerm_eventhub} Resource.
 func NewEventhub(scope constructs.Construct, id *string, config *EventhubConfig) Eventhub {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewEventhub(scope constructs.Construct, id *string, config *EventhubConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/eventhub azurerm_eventhub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/eventhub azurerm_eventhub} Resource.
 func NewEventhub_Override(e Eventhub, scope constructs.Construct, id *string, config *EventhubConfig) {
 	_init_.Initialize()
 

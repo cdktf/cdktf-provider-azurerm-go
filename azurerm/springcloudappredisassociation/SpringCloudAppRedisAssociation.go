@@ -5,14 +5,14 @@ package springcloudappredisassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/springcloudappredisassociation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/springcloudappredisassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/spring_cloud_app_redis_association azurerm_spring_cloud_app_redis_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/spring_cloud_app_redis_association azurerm_spring_cloud_app_redis_association}.
 type SpringCloudAppRedisAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -450,7 +450,7 @@ func (j *jsiiProxy_SpringCloudAppRedisAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/spring_cloud_app_redis_association azurerm_spring_cloud_app_redis_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/spring_cloud_app_redis_association azurerm_spring_cloud_app_redis_association} Resource.
 func NewSpringCloudAppRedisAssociation(scope constructs.Construct, id *string, config *SpringCloudAppRedisAssociationConfig) SpringCloudAppRedisAssociation {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewSpringCloudAppRedisAssociation(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/spring_cloud_app_redis_association azurerm_spring_cloud_app_redis_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/spring_cloud_app_redis_association azurerm_spring_cloud_app_redis_association} Resource.
 func NewSpringCloudAppRedisAssociation_Override(s SpringCloudAppRedisAssociation, scope constructs.Construct, id *string, config *SpringCloudAppRedisAssociationConfig) {
 	_init_.Initialize()
 

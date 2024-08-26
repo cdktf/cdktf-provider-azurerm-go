@@ -5,14 +5,14 @@ package dataazurermappconfigurationkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermappconfigurationkey/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermappconfigurationkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/app_configuration_key azurerm_app_configuration_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/app_configuration_key azurerm_app_configuration_key}.
 type DataAzurermAppConfigurationKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -436,7 +436,7 @@ func (j *jsiiProxy_DataAzurermAppConfigurationKey) VaultKeyReference() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/app_configuration_key azurerm_app_configuration_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/app_configuration_key azurerm_app_configuration_key} Data Source.
 func NewDataAzurermAppConfigurationKey(scope constructs.Construct, id *string, config *DataAzurermAppConfigurationKeyConfig) DataAzurermAppConfigurationKey {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewDataAzurermAppConfigurationKey(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/app_configuration_key azurerm_app_configuration_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/app_configuration_key azurerm_app_configuration_key} Data Source.
 func NewDataAzurermAppConfigurationKey_Override(d DataAzurermAppConfigurationKey, scope constructs.Construct, id *string, config *DataAzurermAppConfigurationKeyConfig) {
 	_init_.Initialize()
 

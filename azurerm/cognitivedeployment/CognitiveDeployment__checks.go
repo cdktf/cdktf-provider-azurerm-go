@@ -218,7 +218,7 @@ func (c *jsiiProxy_CognitiveDeployment) validatePutModelParameters(value *Cognit
 	return nil
 }
 
-func (c *jsiiProxy_CognitiveDeployment) validatePutScaleParameters(value *CognitiveDeploymentScale) error {
+func (c *jsiiProxy_CognitiveDeployment) validatePutSkuParameters(value *CognitiveDeploymentSku) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

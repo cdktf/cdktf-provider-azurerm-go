@@ -199,11 +199,7 @@ func validateKubernetesCluster_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesCluster) validateSetApiServerAuthorizedIpRangesParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesCluster) validateSetAutomaticChannelUpgradeParameters(val *string) error {
+func (j *jsiiProxy_KubernetesCluster) validateSetAutomaticUpgradeChannelParameters(val *string) error {
 	return nil
 }
 
@@ -223,10 +219,6 @@ func (j *jsiiProxy_KubernetesCluster) validateSetCountParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesCluster) validateSetCustomCaTrustCertificatesBase64Parameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_KubernetesCluster) validateSetDiskEncryptionSetIdParameters(val *string) error {
 	return nil
 }
@@ -240,10 +232,6 @@ func (j *jsiiProxy_KubernetesCluster) validateSetDnsPrefixPrivateClusterParamete
 }
 
 func (j *jsiiProxy_KubernetesCluster) validateSetEdgeZoneParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesCluster) validateSetEnablePodSecurityPolicyParameters(val interface{}) error {
 	return nil
 }
 
@@ -283,7 +271,7 @@ func (j *jsiiProxy_KubernetesCluster) validateSetNameParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesCluster) validateSetNodeOsChannelUpgradeParameters(val *string) error {
+func (j *jsiiProxy_KubernetesCluster) validateSetNodeOsUpgradeChannelParameters(val *string) error {
 	return nil
 }
 
@@ -312,10 +300,6 @@ func (j *jsiiProxy_KubernetesCluster) validateSetPrivateDnsZoneIdParameters(val 
 }
 
 func (j *jsiiProxy_KubernetesCluster) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesCluster) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
 	return nil
 }
 

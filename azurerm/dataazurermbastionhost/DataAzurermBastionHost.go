@@ -5,14 +5,14 @@ package dataazurermbastionhost
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermbastionhost/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermbastionhost/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/bastion_host azurerm_bastion_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/bastion_host azurerm_bastion_host}.
 type DataAzurermBastionHost interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -456,7 +456,7 @@ func (j *jsiiProxy_DataAzurermBastionHost) TunnelingEnabled() cdktf.IResolvable 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/bastion_host azurerm_bastion_host} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/bastion_host azurerm_bastion_host} Data Source.
 func NewDataAzurermBastionHost(scope constructs.Construct, id *string, config *DataAzurermBastionHostConfig) DataAzurermBastionHost {
 	_init_.Initialize()
 
@@ -474,7 +474,7 @@ func NewDataAzurermBastionHost(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/bastion_host azurerm_bastion_host} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/bastion_host azurerm_bastion_host} Data Source.
 func NewDataAzurermBastionHost_Override(d DataAzurermBastionHost, scope constructs.Construct, id *string, config *DataAzurermBastionHostConfig) {
 	_init_.Initialize()
 

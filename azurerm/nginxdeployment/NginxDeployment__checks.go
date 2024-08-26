@@ -238,17 +238,6 @@ func (n *jsiiProxy_NginxDeployment) validatePutAutoScaleProfileParameters(value 
 	return nil
 }
 
-func (n *jsiiProxy_NginxDeployment) validatePutConfigurationParameters(value *NginxDeploymentConfiguration) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (n *jsiiProxy_NginxDeployment) validatePutFrontendPrivateParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

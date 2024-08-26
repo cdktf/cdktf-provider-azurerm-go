@@ -5,14 +5,14 @@ package dataazurermroutetable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermroutetable/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermroutetable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/route_table azurerm_route_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/route_table azurerm_route_table}.
 type DataAzurermRouteTable interface {
 	cdktf.TerraformDataSource
 	BgpRoutePropagationEnabled() cdktf.IResolvable
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DataAzurermRouteTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/route_table azurerm_route_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/route_table azurerm_route_table} Data Source.
 func NewDataAzurermRouteTable(scope constructs.Construct, id *string, config *DataAzurermRouteTableConfig) DataAzurermRouteTable {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewDataAzurermRouteTable(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/route_table azurerm_route_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/route_table azurerm_route_table} Data Source.
 func NewDataAzurermRouteTable_Override(d DataAzurermRouteTable, scope constructs.Construct, id *string, config *DataAzurermRouteTableConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package cdnfrontdoororigingroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/cdnfrontdoororigingroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/cdnfrontdoororigingroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cdn_frontdoor_origin_group azurerm_cdn_frontdoor_origin_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cdn_frontdoor_origin_group azurerm_cdn_frontdoor_origin_group}.
 type CdnFrontdoorOriginGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -475,7 +475,7 @@ func (j *jsiiProxy_CdnFrontdoorOriginGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cdn_frontdoor_origin_group azurerm_cdn_frontdoor_origin_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cdn_frontdoor_origin_group azurerm_cdn_frontdoor_origin_group} Resource.
 func NewCdnFrontdoorOriginGroup(scope constructs.Construct, id *string, config *CdnFrontdoorOriginGroupConfig) CdnFrontdoorOriginGroup {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewCdnFrontdoorOriginGroup(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cdn_frontdoor_origin_group azurerm_cdn_frontdoor_origin_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cdn_frontdoor_origin_group azurerm_cdn_frontdoor_origin_group} Resource.
 func NewCdnFrontdoorOriginGroup_Override(c CdnFrontdoorOriginGroup, scope constructs.Construct, id *string, config *CdnFrontdoorOriginGroupConfig) {
 	_init_.Initialize()
 

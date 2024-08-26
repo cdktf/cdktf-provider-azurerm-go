@@ -5,19 +5,22 @@ package dataazurermsharedimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermsharedimage/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermsharedimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/shared_image azurerm_shared_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/shared_image azurerm_shared_image}.
 type DataAzurermSharedImage interface {
 	cdktf.TerraformDataSource
+	AcceleratedNetworkSupportEnabled() cdktf.IResolvable
 	Architecture() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConfidentialVmEnabled() cdktf.IResolvable
+	ConfidentialVmSupported() cdktf.IResolvable
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -41,6 +44,7 @@ type DataAzurermSharedImage interface {
 	GalleryName() *string
 	SetGalleryName(val *string)
 	GalleryNameInput() *string
+	HibernationEnabled() cdktf.IResolvable
 	HyperVGeneration() *string
 	Id() *string
 	SetId(val *string)
@@ -79,6 +83,8 @@ type DataAzurermSharedImage interface {
 	TerraformResourceType() *string
 	Timeouts() DataAzurermSharedImageTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TrustedLaunchEnabled() cdktf.IResolvable
+	TrustedLaunchSupported() cdktf.IResolvable
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -129,6 +135,16 @@ type jsiiProxy_DataAzurermSharedImage struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
+func (j *jsiiProxy_DataAzurermSharedImage) AcceleratedNetworkSupportEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"acceleratedNetworkSupportEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermSharedImage) Architecture() *string {
 	var returns *string
 	_jsii_.Get(
@@ -144,6 +160,26 @@ func (j *jsiiProxy_DataAzurermSharedImage) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermSharedImage) ConfidentialVmEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"confidentialVmEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermSharedImage) ConfidentialVmSupported() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"confidentialVmSupported",
 		&returns,
 	)
 	return returns
@@ -244,6 +280,16 @@ func (j *jsiiProxy_DataAzurermSharedImage) GalleryNameInput() *string {
 	_jsii_.Get(
 		j,
 		"galleryNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermSharedImage) HibernationEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"hibernationEnabled",
 		&returns,
 	)
 	return returns
@@ -489,8 +535,28 @@ func (j *jsiiProxy_DataAzurermSharedImage) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermSharedImage) TrustedLaunchEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"trustedLaunchEnabled",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/shared_image azurerm_shared_image} Data Source.
+func (j *jsiiProxy_DataAzurermSharedImage) TrustedLaunchSupported() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"trustedLaunchSupported",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/shared_image azurerm_shared_image} Data Source.
 func NewDataAzurermSharedImage(scope constructs.Construct, id *string, config *DataAzurermSharedImageConfig) DataAzurermSharedImage {
 	_init_.Initialize()
 
@@ -508,7 +574,7 @@ func NewDataAzurermSharedImage(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/shared_image azurerm_shared_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/shared_image azurerm_shared_image} Data Source.
 func NewDataAzurermSharedImage_Override(d DataAzurermSharedImage, scope constructs.Construct, id *string, config *DataAzurermSharedImageConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package storagesharedirectory
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/storagesharedirectory/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/storagesharedirectory/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_share_directory azurerm_storage_share_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_share_directory azurerm_storage_share_directory}.
 type StorageShareDirectory interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,12 +64,6 @@ type StorageShareDirectory interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	ShareName() *string
-	SetShareName(val *string)
-	ShareNameInput() *string
-	StorageAccountName() *string
-	SetStorageAccountName(val *string)
-	StorageAccountNameInput() *string
 	StorageShareId() *string
 	SetStorageShareId(val *string)
 	StorageShareIdInput() *string
@@ -130,9 +124,6 @@ type StorageShareDirectory interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetShareName()
-	ResetStorageAccountName()
-	ResetStorageShareId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -342,46 +333,6 @@ func (j *jsiiProxy_StorageShareDirectory) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StorageShareDirectory) ShareName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"shareName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_StorageShareDirectory) ShareNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"shareNameInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_StorageShareDirectory) StorageAccountName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"storageAccountName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_StorageShareDirectory) StorageAccountNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"storageAccountNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_StorageShareDirectory) StorageShareId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -453,7 +404,7 @@ func (j *jsiiProxy_StorageShareDirectory) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_share_directory azurerm_storage_share_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_share_directory azurerm_storage_share_directory} Resource.
 func NewStorageShareDirectory(scope constructs.Construct, id *string, config *StorageShareDirectoryConfig) StorageShareDirectory {
 	_init_.Initialize()
 
@@ -471,7 +422,7 @@ func NewStorageShareDirectory(scope constructs.Construct, id *string, config *St
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/storage_share_directory azurerm_storage_share_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/storage_share_directory azurerm_storage_share_directory} Resource.
 func NewStorageShareDirectory_Override(s StorageShareDirectory, scope constructs.Construct, id *string, config *StorageShareDirectoryConfig) {
 	_init_.Initialize()
 
@@ -579,28 +530,6 @@ func (j *jsiiProxy_StorageShareDirectory)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_StorageShareDirectory)SetShareName(val *string) {
-	if err := j.validateSetShareNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"shareName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_StorageShareDirectory)SetStorageAccountName(val *string) {
-	if err := j.validateSetStorageAccountNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"storageAccountName",
 		val,
 	)
 }
@@ -1000,30 +929,6 @@ func (s *jsiiProxy_StorageShareDirectory) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_StorageShareDirectory) ResetShareName() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetShareName",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_StorageShareDirectory) ResetStorageAccountName() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetStorageAccountName",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_StorageShareDirectory) ResetStorageShareId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetStorageShareId",
 		nil, // no parameters
 	)
 }

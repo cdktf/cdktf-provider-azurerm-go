@@ -63,10 +63,6 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGro
 	return nil
 }
 
-func (j *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutputReference) validateSetDisabledRulesParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package digitaltwinstimeseriesdatabaseconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/digitaltwinstimeseriesdatabaseconnection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/digitaltwinstimeseriesdatabaseconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/digital_twins_time_series_database_connection azurerm_digital_twins_time_series_database_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/digital_twins_time_series_database_connection azurerm_digital_twins_time_series_database_connection}.
 type DigitalTwinsTimeSeriesDatabaseConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -566,7 +566,7 @@ func (j *jsiiProxy_DigitalTwinsTimeSeriesDatabaseConnection) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/digital_twins_time_series_database_connection azurerm_digital_twins_time_series_database_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/digital_twins_time_series_database_connection azurerm_digital_twins_time_series_database_connection} Resource.
 func NewDigitalTwinsTimeSeriesDatabaseConnection(scope constructs.Construct, id *string, config *DigitalTwinsTimeSeriesDatabaseConnectionConfig) DigitalTwinsTimeSeriesDatabaseConnection {
 	_init_.Initialize()
 
@@ -584,7 +584,7 @@ func NewDigitalTwinsTimeSeriesDatabaseConnection(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/digital_twins_time_series_database_connection azurerm_digital_twins_time_series_database_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/digital_twins_time_series_database_connection azurerm_digital_twins_time_series_database_connection} Resource.
 func NewDigitalTwinsTimeSeriesDatabaseConnection_Override(d DigitalTwinsTimeSeriesDatabaseConnection, scope constructs.Construct, id *string, config *DigitalTwinsTimeSeriesDatabaseConnectionConfig) {
 	_init_.Initialize()
 

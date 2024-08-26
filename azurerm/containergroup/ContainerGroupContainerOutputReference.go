@@ -5,9 +5,9 @@ package containergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/containergroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/containergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -42,10 +42,6 @@ type ContainerGroupContainerOutputReference interface {
 	EnvironmentVariablesInput() *map[string]*string
 	// Experimental.
 	Fqn() *string
-	Gpu() ContainerGroupContainerGpuOutputReference
-	GpuInput() *ContainerGroupContainerGpu
-	GpuLimit() ContainerGroupContainerGpuLimitOutputReference
-	GpuLimitInput() *ContainerGroupContainerGpuLimit
 	Image() *string
 	SetImage(val *string)
 	ImageInput() *string
@@ -105,8 +101,6 @@ type ContainerGroupContainerOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutGpu(value *ContainerGroupContainerGpu)
-	PutGpuLimit(value *ContainerGroupContainerGpuLimit)
 	PutLivenessProbe(value *ContainerGroupContainerLivenessProbe)
 	PutPorts(value interface{})
 	PutReadinessProbe(value *ContainerGroupContainerReadinessProbe)
@@ -115,8 +109,6 @@ type ContainerGroupContainerOutputReference interface {
 	ResetCommands()
 	ResetCpuLimit()
 	ResetEnvironmentVariables()
-	ResetGpu()
-	ResetGpuLimit()
 	ResetLivenessProbe()
 	ResetMemoryLimit()
 	ResetPorts()
@@ -254,46 +246,6 @@ func (j *jsiiProxy_ContainerGroupContainerOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContainerGroupContainerOutputReference) Gpu() ContainerGroupContainerGpuOutputReference {
-	var returns ContainerGroupContainerGpuOutputReference
-	_jsii_.Get(
-		j,
-		"gpu",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContainerGroupContainerOutputReference) GpuInput() *ContainerGroupContainerGpu {
-	var returns *ContainerGroupContainerGpu
-	_jsii_.Get(
-		j,
-		"gpuInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContainerGroupContainerOutputReference) GpuLimit() ContainerGroupContainerGpuLimitOutputReference {
-	var returns ContainerGroupContainerGpuLimitOutputReference
-	_jsii_.Get(
-		j,
-		"gpuLimit",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContainerGroupContainerOutputReference) GpuLimitInput() *ContainerGroupContainerGpuLimit {
-	var returns *ContainerGroupContainerGpuLimit
-	_jsii_.Get(
-		j,
-		"gpuLimitInput",
 		&returns,
 	)
 	return returns
@@ -897,28 +849,6 @@ func (c *jsiiProxy_ContainerGroupContainerOutputReference) InterpolationForAttri
 	return returns
 }
 
-func (c *jsiiProxy_ContainerGroupContainerOutputReference) PutGpu(value *ContainerGroupContainerGpu) {
-	if err := c.validatePutGpuParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		c,
-		"putGpu",
-		[]interface{}{value},
-	)
-}
-
-func (c *jsiiProxy_ContainerGroupContainerOutputReference) PutGpuLimit(value *ContainerGroupContainerGpuLimit) {
-	if err := c.validatePutGpuLimitParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		c,
-		"putGpuLimit",
-		[]interface{}{value},
-	)
-}
-
 func (c *jsiiProxy_ContainerGroupContainerOutputReference) PutLivenessProbe(value *ContainerGroupContainerLivenessProbe) {
 	if err := c.validatePutLivenessProbeParameters(value); err != nil {
 		panic(err)
@@ -994,22 +924,6 @@ func (c *jsiiProxy_ContainerGroupContainerOutputReference) ResetEnvironmentVaria
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnvironmentVariables",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ContainerGroupContainerOutputReference) ResetGpu() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetGpu",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ContainerGroupContainerOutputReference) ResetGpuLimit() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetGpuLimit",
 		nil, // no parameters
 	)
 }

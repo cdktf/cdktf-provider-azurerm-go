@@ -5,14 +5,14 @@ package mssqlmanageddatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/mssqlmanageddatabase/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/mssqlmanageddatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mssql_managed_database azurerm_mssql_managed_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mssql_managed_database azurerm_mssql_managed_database}.
 type MssqlManagedDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -452,7 +452,7 @@ func (j *jsiiProxy_MssqlManagedDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mssql_managed_database azurerm_mssql_managed_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mssql_managed_database azurerm_mssql_managed_database} Resource.
 func NewMssqlManagedDatabase(scope constructs.Construct, id *string, config *MssqlManagedDatabaseConfig) MssqlManagedDatabase {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewMssqlManagedDatabase(scope constructs.Construct, id *string, config *Mss
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mssql_managed_database azurerm_mssql_managed_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mssql_managed_database azurerm_mssql_managed_database} Resource.
 func NewMssqlManagedDatabase_Override(m MssqlManagedDatabase, scope constructs.Construct, id *string, config *MssqlManagedDatabaseConfig) {
 	_init_.Initialize()
 

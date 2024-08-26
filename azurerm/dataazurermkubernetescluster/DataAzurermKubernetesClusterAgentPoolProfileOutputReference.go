@@ -5,9 +5,9 @@ package dataazurermkubernetescluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermkubernetescluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermkubernetescluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,8 +30,6 @@ type DataAzurermKubernetesClusterAgentPoolProfileOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableAutoScaling() cdktf.IResolvable
-	EnableNodePublicIp() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataAzurermKubernetesClusterAgentPoolProfile
@@ -145,26 +143,6 @@ func (j *jsiiProxy_DataAzurermKubernetesClusterAgentPoolProfileOutputReference) 
 	_jsii_.Get(
 		j,
 		"creationStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermKubernetesClusterAgentPoolProfileOutputReference) EnableAutoScaling() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"enableAutoScaling",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermKubernetesClusterAgentPoolProfileOutputReference) EnableNodePublicIp() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"enableNodePublicIp",
 		&returns,
 	)
 	return returns

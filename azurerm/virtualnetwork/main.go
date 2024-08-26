@@ -191,6 +191,135 @@ func init() {
 		"@cdktf/provider-azurerm.virtualNetwork.VirtualNetworkSubnet",
 		reflect.TypeOf((*VirtualNetworkSubnet)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.virtualNetwork.VirtualNetworkSubnetDelegation",
+		reflect.TypeOf((*VirtualNetworkSubnetDelegation)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.virtualNetwork.VirtualNetworkSubnetDelegationList",
+		reflect.TypeOf((*VirtualNetworkSubnetDelegationList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_VirtualNetworkSubnetDelegationList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.virtualNetwork.VirtualNetworkSubnetDelegationOutputReference",
+		reflect.TypeOf((*VirtualNetworkSubnetDelegationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putServiceDelegation", GoMethod: "PutServiceDelegation"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServiceDelegation", GoMethod: "ResetServiceDelegation"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceDelegation", GoGetter: "ServiceDelegation"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceDelegationInput", GoGetter: "ServiceDelegationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_VirtualNetworkSubnetDelegationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.virtualNetwork.VirtualNetworkSubnetDelegationServiceDelegation",
+		reflect.TypeOf((*VirtualNetworkSubnetDelegationServiceDelegation)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.virtualNetwork.VirtualNetworkSubnetDelegationServiceDelegationList",
+		reflect.TypeOf((*VirtualNetworkSubnetDelegationServiceDelegationList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_VirtualNetworkSubnetDelegationServiceDelegationList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.virtualNetwork.VirtualNetworkSubnetDelegationServiceDelegationOutputReference",
+		reflect.TypeOf((*VirtualNetworkSubnetDelegationServiceDelegationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
+			_jsii_.MemberProperty{JsiiProperty: "actionsInput", GoGetter: "ActionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetActions", GoMethod: "ResetActions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_VirtualNetworkSubnetDelegationServiceDelegationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-azurerm.virtualNetwork.VirtualNetworkSubnetList",
 		reflect.TypeOf((*VirtualNetworkSubnetList)(nil)).Elem(),
@@ -217,12 +346,16 @@ func init() {
 		"@cdktf/provider-azurerm.virtualNetwork.VirtualNetworkSubnetOutputReference",
 		reflect.TypeOf((*VirtualNetworkSubnetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "addressPrefix", GoGetter: "AddressPrefix"},
-			_jsii_.MemberProperty{JsiiProperty: "addressPrefixInput", GoGetter: "AddressPrefixInput"},
+			_jsii_.MemberProperty{JsiiProperty: "addressPrefixes", GoGetter: "AddressPrefixes"},
+			_jsii_.MemberProperty{JsiiProperty: "addressPrefixesInput", GoGetter: "AddressPrefixesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultOutboundAccessEnabled", GoGetter: "DefaultOutboundAccessEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultOutboundAccessEnabledInput", GoGetter: "DefaultOutboundAccessEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "delegation", GoGetter: "Delegation"},
+			_jsii_.MemberProperty{JsiiProperty: "delegationInput", GoGetter: "DelegationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -240,13 +373,31 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAddressPrefix", GoMethod: "ResetAddressPrefix"},
+			_jsii_.MemberProperty{JsiiProperty: "privateEndpointNetworkPolicies", GoGetter: "PrivateEndpointNetworkPolicies"},
+			_jsii_.MemberProperty{JsiiProperty: "privateEndpointNetworkPoliciesInput", GoGetter: "PrivateEndpointNetworkPoliciesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "privateLinkServiceNetworkPoliciesEnabled", GoGetter: "PrivateLinkServiceNetworkPoliciesEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "privateLinkServiceNetworkPoliciesEnabledInput", GoGetter: "PrivateLinkServiceNetworkPoliciesEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putDelegation", GoMethod: "PutDelegation"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAddressPrefixes", GoMethod: "ResetAddressPrefixes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDefaultOutboundAccessEnabled", GoMethod: "ResetDefaultOutboundAccessEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDelegation", GoMethod: "ResetDelegation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrivateEndpointNetworkPolicies", GoMethod: "ResetPrivateEndpointNetworkPolicies"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrivateLinkServiceNetworkPoliciesEnabled", GoMethod: "ResetPrivateLinkServiceNetworkPoliciesEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRouteTableId", GoMethod: "ResetRouteTableId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecurityGroup", GoMethod: "ResetSecurityGroup"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServiceEndpointPolicyIds", GoMethod: "ResetServiceEndpointPolicyIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServiceEndpoints", GoMethod: "ResetServiceEndpoints"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "routeTableId", GoGetter: "RouteTableId"},
+			_jsii_.MemberProperty{JsiiProperty: "routeTableIdInput", GoGetter: "RouteTableIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroup", GoGetter: "SecurityGroup"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroupInput", GoGetter: "SecurityGroupInput"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceEndpointPolicyIds", GoGetter: "ServiceEndpointPolicyIds"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceEndpointPolicyIdsInput", GoGetter: "ServiceEndpointPolicyIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceEndpoints", GoGetter: "ServiceEndpoints"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceEndpointsInput", GoGetter: "ServiceEndpointsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

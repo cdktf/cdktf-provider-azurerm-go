@@ -135,10 +135,6 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) validate
 	return nil
 }
 
-func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleRoleDefinition) validateSetVaultBaseUrlParameters(val *string) error {
-	return nil
-}
-
 func validateNewKeyVaultManagedHardwareSecurityModuleRoleDefinitionParameters(scope constructs.Construct, id *string, config *KeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig) error {
 	return nil
 }

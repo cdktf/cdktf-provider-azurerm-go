@@ -5,14 +5,14 @@ package dataazurermlbrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermlbrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermlbrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/lb_rule azurerm_lb_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/lb_rule azurerm_lb_rule}.
 type DataAzurermLbRule interface {
 	cdktf.TerraformDataSource
 	BackendAddressPoolId() *string
@@ -456,7 +456,7 @@ func (j *jsiiProxy_DataAzurermLbRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/lb_rule azurerm_lb_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/lb_rule azurerm_lb_rule} Data Source.
 func NewDataAzurermLbRule(scope constructs.Construct, id *string, config *DataAzurermLbRuleConfig) DataAzurermLbRule {
 	_init_.Initialize()
 
@@ -474,7 +474,7 @@ func NewDataAzurermLbRule(scope constructs.Construct, id *string, config *DataAz
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/lb_rule azurerm_lb_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/lb_rule azurerm_lb_rule} Data Source.
 func NewDataAzurermLbRule_Override(d DataAzurermLbRule, scope constructs.Construct, id *string, config *DataAzurermLbRuleConfig) {
 	_init_.Initialize()
 

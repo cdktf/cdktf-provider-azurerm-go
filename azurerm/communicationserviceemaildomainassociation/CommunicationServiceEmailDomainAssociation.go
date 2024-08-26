@@ -5,14 +5,14 @@ package communicationserviceemaildomainassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/communicationserviceemaildomainassociation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/communicationserviceemaildomainassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/communication_service_email_domain_association azurerm_communication_service_email_domain_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/communication_service_email_domain_association azurerm_communication_service_email_domain_association}.
 type CommunicationServiceEmailDomainAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_CommunicationServiceEmailDomainAssociation) TimeoutsInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/communication_service_email_domain_association azurerm_communication_service_email_domain_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/communication_service_email_domain_association azurerm_communication_service_email_domain_association} Resource.
 func NewCommunicationServiceEmailDomainAssociation(scope constructs.Construct, id *string, config *CommunicationServiceEmailDomainAssociationConfig) CommunicationServiceEmailDomainAssociation {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewCommunicationServiceEmailDomainAssociation(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/communication_service_email_domain_association azurerm_communication_service_email_domain_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/communication_service_email_domain_association azurerm_communication_service_email_domain_association} Resource.
 func NewCommunicationServiceEmailDomainAssociation_Override(c CommunicationServiceEmailDomainAssociation, scope constructs.Construct, id *string, config *CommunicationServiceEmailDomainAssociationConfig) {
 	_init_.Initialize()
 

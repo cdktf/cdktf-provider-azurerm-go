@@ -131,10 +131,6 @@ func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateSetProvisioner
 	return nil
 }
 
-func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateSetRetentionDurationParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) validateSetTimeZoneParameters(val *string) error {
 	return nil
 }

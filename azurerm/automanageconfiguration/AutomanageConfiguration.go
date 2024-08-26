@@ -5,14 +5,14 @@ package automanageconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/automanageconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/automanageconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automanage_configuration azurerm_automanage_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automanage_configuration azurerm_automanage_configuration}.
 type AutomanageConfiguration interface {
 	cdktf.TerraformResource
 	Antimalware() AutomanageConfigurationAntimalwareOutputReference
@@ -643,7 +643,7 @@ func (j *jsiiProxy_AutomanageConfiguration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automanage_configuration azurerm_automanage_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automanage_configuration azurerm_automanage_configuration} Resource.
 func NewAutomanageConfiguration(scope constructs.Construct, id *string, config *AutomanageConfigurationConfig) AutomanageConfiguration {
 	_init_.Initialize()
 
@@ -661,7 +661,7 @@ func NewAutomanageConfiguration(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automanage_configuration azurerm_automanage_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automanage_configuration azurerm_automanage_configuration} Resource.
 func NewAutomanageConfiguration_Override(a AutomanageConfiguration, scope constructs.Construct, id *string, config *AutomanageConfigurationConfig) {
 	_init_.Initialize()
 

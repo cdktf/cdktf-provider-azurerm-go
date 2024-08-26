@@ -47,11 +47,15 @@ func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) validateInterpolationFor
 	return nil
 }
 
+func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) validatePutDelegationParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
 
-func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) validateSetAddressPrefixParameters(val *string) error {
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) validateSetAddressPrefixesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -60,6 +64,10 @@ func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) validateSetComplexObject
 }
 
 func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) validateSetDefaultOutboundAccessEnabledParameters(val interface{}) error {
 	return nil
 }
 
@@ -75,7 +83,27 @@ func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) validateSetNameParameter
 	return nil
 }
 
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) validateSetPrivateEndpointNetworkPoliciesParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) validateSetPrivateLinkServiceNetworkPoliciesEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) validateSetRouteTableIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) validateSetSecurityGroupParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) validateSetServiceEndpointPolicyIdsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) validateSetServiceEndpointsParameters(val *[]*string) error {
 	return nil
 }
 

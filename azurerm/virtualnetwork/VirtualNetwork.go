@@ -5,14 +5,14 @@ package virtualnetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/virtualnetwork/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/virtualnetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_network azurerm_virtual_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_network azurerm_virtual_network}.
 type VirtualNetwork interface {
 	cdktf.TerraformResource
 	AddressSpace() *[]*string
@@ -629,7 +629,7 @@ func (j *jsiiProxy_VirtualNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_network azurerm_virtual_network} Resource.
 func NewVirtualNetwork(scope constructs.Construct, id *string, config *VirtualNetworkConfig) VirtualNetwork {
 	_init_.Initialize()
 
@@ -647,7 +647,7 @@ func NewVirtualNetwork(scope constructs.Construct, id *string, config *VirtualNe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_network azurerm_virtual_network} Resource.
 func NewVirtualNetwork_Override(v VirtualNetwork, scope constructs.Construct, id *string, config *VirtualNetworkConfig) {
 	_init_.Initialize()
 

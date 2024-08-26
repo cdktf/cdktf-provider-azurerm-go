@@ -5,14 +5,14 @@ package sentinelautomationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/sentinelautomationrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/sentinelautomationrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_automation_rule azurerm_sentinel_automation_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_automation_rule azurerm_sentinel_automation_rule}.
 type SentinelAutomationRule interface {
 	cdktf.TerraformResource
 	ActionIncident() SentinelAutomationRuleActionIncidentList
@@ -21,8 +21,6 @@ type SentinelAutomationRule interface {
 	ActionPlaybookInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	Condition() SentinelAutomationRuleConditionList
-	ConditionInput() interface{}
 	ConditionJson() *string
 	SetConditionJson(val *string)
 	ConditionJsonInput() *string
@@ -144,11 +142,9 @@ type SentinelAutomationRule interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutActionIncident(value interface{})
 	PutActionPlaybook(value interface{})
-	PutCondition(value interface{})
 	PutTimeouts(value *SentinelAutomationRuleTimeouts)
 	ResetActionIncident()
 	ResetActionPlaybook()
-	ResetCondition()
 	ResetConditionJson()
 	ResetEnabled()
 	ResetExpiration()
@@ -222,26 +218,6 @@ func (j *jsiiProxy_SentinelAutomationRule) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SentinelAutomationRule) Condition() SentinelAutomationRuleConditionList {
-	var returns SentinelAutomationRuleConditionList
-	_jsii_.Get(
-		j,
-		"condition",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SentinelAutomationRule) ConditionInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"conditionInput",
 		&returns,
 	)
 	return returns
@@ -618,7 +594,7 @@ func (j *jsiiProxy_SentinelAutomationRule) TriggersWhenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_automation_rule azurerm_sentinel_automation_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_automation_rule azurerm_sentinel_automation_rule} Resource.
 func NewSentinelAutomationRule(scope constructs.Construct, id *string, config *SentinelAutomationRuleConfig) SentinelAutomationRule {
 	_init_.Initialize()
 
@@ -636,7 +612,7 @@ func NewSentinelAutomationRule(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_automation_rule azurerm_sentinel_automation_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_automation_rule azurerm_sentinel_automation_rule} Resource.
 func NewSentinelAutomationRule_Override(s SentinelAutomationRule, scope constructs.Construct, id *string, config *SentinelAutomationRuleConfig) {
 	_init_.Initialize()
 
@@ -1200,17 +1176,6 @@ func (s *jsiiProxy_SentinelAutomationRule) PutActionPlaybook(value interface{}) 
 	)
 }
 
-func (s *jsiiProxy_SentinelAutomationRule) PutCondition(value interface{}) {
-	if err := s.validatePutConditionParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		s,
-		"putCondition",
-		[]interface{}{value},
-	)
-}
-
 func (s *jsiiProxy_SentinelAutomationRule) PutTimeouts(value *SentinelAutomationRuleTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1234,14 +1199,6 @@ func (s *jsiiProxy_SentinelAutomationRule) ResetActionPlaybook() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetActionPlaybook",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SentinelAutomationRule) ResetCondition() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetCondition",
 		nil, // no parameters
 	)
 }

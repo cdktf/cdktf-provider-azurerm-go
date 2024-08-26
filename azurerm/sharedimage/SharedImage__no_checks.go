@@ -147,6 +147,10 @@ func (j *jsiiProxy_SharedImage) validateSetGalleryNameParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_SharedImage) validateSetHibernationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SharedImage) validateSetHyperVGenerationParameters(val *string) error {
 	return nil
 }

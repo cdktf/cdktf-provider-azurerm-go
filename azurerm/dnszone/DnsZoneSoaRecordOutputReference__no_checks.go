@@ -67,10 +67,6 @@ func (j *jsiiProxy_DnsZoneSoaRecordOutputReference) validateSetExpireTimeParamet
 	return nil
 }
 
-func (j *jsiiProxy_DnsZoneSoaRecordOutputReference) validateSetHostNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DnsZoneSoaRecordOutputReference) validateSetInternalValueParameters(val *DnsZoneSoaRecord) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package natgatewaypublicipprefixassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/natgatewaypublicipprefixassociation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/natgatewaypublicipprefixassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/nat_gateway_public_ip_prefix_association azurerm_nat_gateway_public_ip_prefix_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/nat_gateway_public_ip_prefix_association azurerm_nat_gateway_public_ip_prefix_association}.
 type NatGatewayPublicIpPrefixAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_NatGatewayPublicIpPrefixAssociation) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/nat_gateway_public_ip_prefix_association azurerm_nat_gateway_public_ip_prefix_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/nat_gateway_public_ip_prefix_association azurerm_nat_gateway_public_ip_prefix_association} Resource.
 func NewNatGatewayPublicIpPrefixAssociation(scope constructs.Construct, id *string, config *NatGatewayPublicIpPrefixAssociationConfig) NatGatewayPublicIpPrefixAssociation {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewNatGatewayPublicIpPrefixAssociation(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/nat_gateway_public_ip_prefix_association azurerm_nat_gateway_public_ip_prefix_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/nat_gateway_public_ip_prefix_association azurerm_nat_gateway_public_ip_prefix_association} Resource.
 func NewNatGatewayPublicIpPrefixAssociation_Override(n NatGatewayPublicIpPrefixAssociation, scope constructs.Construct, id *string, config *NatGatewayPublicIpPrefixAssociationConfig) {
 	_init_.Initialize()
 

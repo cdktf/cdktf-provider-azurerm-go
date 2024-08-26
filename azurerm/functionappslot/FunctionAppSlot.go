@@ -5,14 +5,14 @@ package functionappslot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/functionappslot/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/functionappslot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/function_app_slot azurerm_function_app_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/function_app_slot azurerm_function_app_slot}.
 type FunctionAppSlot interface {
 	cdktf.TerraformResource
 	AppServicePlanId() *string
@@ -838,7 +838,7 @@ func (j *jsiiProxy_FunctionAppSlot) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/function_app_slot azurerm_function_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/function_app_slot azurerm_function_app_slot} Resource.
 func NewFunctionAppSlot(scope constructs.Construct, id *string, config *FunctionAppSlotConfig) FunctionAppSlot {
 	_init_.Initialize()
 
@@ -856,7 +856,7 @@ func NewFunctionAppSlot(scope constructs.Construct, id *string, config *Function
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/function_app_slot azurerm_function_app_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/function_app_slot azurerm_function_app_slot} Resource.
 func NewFunctionAppSlot_Override(f FunctionAppSlot, scope constructs.Construct, id *string, config *FunctionAppSlotConfig) {
 	_init_.Initialize()
 

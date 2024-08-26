@@ -5,9 +5,9 @@ package linuxwebapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/linuxwebapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/linuxwebapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -28,15 +28,9 @@ type LinuxWebAppSiteConfigApplicationStackOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DockerImage() *string
-	SetDockerImage(val *string)
-	DockerImageInput() *string
 	DockerImageName() *string
 	SetDockerImageName(val *string)
 	DockerImageNameInput() *string
-	DockerImageTag() *string
-	SetDockerImageTag(val *string)
-	DockerImageTagInput() *string
 	DockerRegistryPassword() *string
 	SetDockerRegistryPassword(val *string)
 	DockerRegistryPasswordInput() *string
@@ -109,9 +103,7 @@ type LinuxWebAppSiteConfigApplicationStackOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetDockerImage()
 	ResetDockerImageName()
-	ResetDockerImageTag()
 	ResetDockerRegistryPassword()
 	ResetDockerRegistryUrl()
 	ResetDockerRegistryUsername()
@@ -169,26 +161,6 @@ func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) Creatio
 	return returns
 }
 
-func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) DockerImage() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dockerImage",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) DockerImageInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dockerImageInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) DockerImageName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -204,26 +176,6 @@ func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) DockerI
 	_jsii_.Get(
 		j,
 		"dockerImageNameInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) DockerImageTag() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dockerImageTag",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) DockerImageTagInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dockerImageTagInput",
 		&returns,
 	)
 	return returns
@@ -559,17 +511,6 @@ func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference)SetDockerImage(val *string) {
-	if err := j.validateSetDockerImageParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"dockerImage",
-		val,
-	)
-}
-
 func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference)SetDockerImageName(val *string) {
 	if err := j.validateSetDockerImageNameParameters(val); err != nil {
 		panic(err)
@@ -577,17 +518,6 @@ func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference)SetDocke
 	_jsii_.Set(
 		j,
 		"dockerImageName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference)SetDockerImageTag(val *string) {
-	if err := j.validateSetDockerImageTagParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"dockerImageTag",
 		val,
 	)
 }
@@ -943,26 +873,10 @@ func (l *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) Interpo
 	return returns
 }
 
-func (l *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) ResetDockerImage() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetDockerImage",
-		nil, // no parameters
-	)
-}
-
 func (l *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) ResetDockerImageName() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDockerImageName",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LinuxWebAppSiteConfigApplicationStackOutputReference) ResetDockerImageTag() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetDockerImageTag",
 		nil, // no parameters
 	)
 }

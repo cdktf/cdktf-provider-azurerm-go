@@ -5,14 +5,14 @@ package dataazurermnetworkddosprotectionplan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermnetworkddosprotectionplan/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermnetworkddosprotectionplan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/network_ddos_protection_plan azurerm_network_ddos_protection_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/network_ddos_protection_plan azurerm_network_ddos_protection_plan}.
 type DataAzurermNetworkDdosProtectionPlan interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DataAzurermNetworkDdosProtectionPlan) VirtualNetworkIds() *[]
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/network_ddos_protection_plan azurerm_network_ddos_protection_plan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/network_ddos_protection_plan azurerm_network_ddos_protection_plan} Data Source.
 func NewDataAzurermNetworkDdosProtectionPlan(scope constructs.Construct, id *string, config *DataAzurermNetworkDdosProtectionPlanConfig) DataAzurermNetworkDdosProtectionPlan {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewDataAzurermNetworkDdosProtectionPlan(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/network_ddos_protection_plan azurerm_network_ddos_protection_plan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/network_ddos_protection_plan azurerm_network_ddos_protection_plan} Data Source.
 func NewDataAzurermNetworkDdosProtectionPlan_Override(d DataAzurermNetworkDdosProtectionPlan, scope constructs.Construct, id *string, config *DataAzurermNetworkDdosProtectionPlanConfig) {
 	_init_.Initialize()
 

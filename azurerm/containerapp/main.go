@@ -211,13 +211,32 @@ func init() {
 		reflect.TypeOf((*ContainerAppIngressCustomDomain)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.containerApp.ContainerAppIngressCustomDomainList",
+		reflect.TypeOf((*ContainerAppIngressCustomDomainList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ContainerAppIngressCustomDomainList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
 		"@cdktf/provider-azurerm.containerApp.ContainerAppIngressCustomDomainOutputReference",
 		reflect.TypeOf((*ContainerAppIngressCustomDomainOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateBindingType", GoGetter: "CertificateBindingType"},
-			_jsii_.MemberProperty{JsiiProperty: "certificateBindingTypeInput", GoGetter: "CertificateBindingTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateId", GoGetter: "CertificateId"},
-			_jsii_.MemberProperty{JsiiProperty: "certificateIdInput", GoGetter: "CertificateIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -236,8 +255,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCertificateBindingType", GoMethod: "ResetCertificateBindingType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -327,7 +344,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "customDomain", GoGetter: "CustomDomain"},
-			_jsii_.MemberProperty{JsiiProperty: "customDomainInput", GoGetter: "CustomDomainInput"},
 			_jsii_.MemberProperty{JsiiProperty: "exposedPort", GoGetter: "ExposedPort"},
 			_jsii_.MemberProperty{JsiiProperty: "exposedPortInput", GoGetter: "ExposedPortInput"},
 			_jsii_.MemberProperty{JsiiProperty: "externalEnabled", GoGetter: "ExternalEnabled"},
@@ -348,11 +364,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ipSecurityRestriction", GoGetter: "IpSecurityRestriction"},
 			_jsii_.MemberProperty{JsiiProperty: "ipSecurityRestrictionInput", GoGetter: "IpSecurityRestrictionInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putCustomDomain", GoMethod: "PutCustomDomain"},
 			_jsii_.MemberMethod{JsiiMethod: "putIpSecurityRestriction", GoMethod: "PutIpSecurityRestriction"},
 			_jsii_.MemberMethod{JsiiMethod: "putTrafficWeight", GoMethod: "PutTrafficWeight"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowInsecureConnections", GoMethod: "ResetAllowInsecureConnections"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomDomain", GoMethod: "ResetCustomDomain"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExposedPort", GoMethod: "ResetExposedPort"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExternalEnabled", GoMethod: "ResetExternalEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpSecurityRestriction", GoMethod: "ResetIpSecurityRestriction"},

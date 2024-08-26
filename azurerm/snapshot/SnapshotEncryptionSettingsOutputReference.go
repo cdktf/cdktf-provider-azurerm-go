@@ -5,9 +5,9 @@ package snapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/snapshot/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/snapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,9 +30,6 @@ type SnapshotEncryptionSettingsOutputReference interface {
 	CreationStack() *[]*string
 	DiskEncryptionKey() SnapshotEncryptionSettingsDiskEncryptionKeyOutputReference
 	DiskEncryptionKeyInput() *SnapshotEncryptionSettingsDiskEncryptionKey
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SnapshotEncryptionSettings
@@ -73,8 +70,6 @@ type SnapshotEncryptionSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDiskEncryptionKey(value *SnapshotEncryptionSettingsDiskEncryptionKey)
 	PutKeyEncryptionKey(value *SnapshotEncryptionSettingsKeyEncryptionKey)
-	ResetDiskEncryptionKey()
-	ResetEnabled()
 	ResetKeyEncryptionKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -136,26 +131,6 @@ func (j *jsiiProxy_SnapshotEncryptionSettingsOutputReference) DiskEncryptionKeyI
 	_jsii_.Get(
 		j,
 		"diskEncryptionKeyInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SnapshotEncryptionSettingsOutputReference) Enabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SnapshotEncryptionSettingsOutputReference) EnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -267,17 +242,6 @@ func (j *jsiiProxy_SnapshotEncryptionSettingsOutputReference)SetComplexObjectIsF
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SnapshotEncryptionSettingsOutputReference)SetEnabled(val interface{}) {
-	if err := j.validateSetEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enabled",
 		val,
 	)
 }
@@ -520,22 +484,6 @@ func (s *jsiiProxy_SnapshotEncryptionSettingsOutputReference) PutKeyEncryptionKe
 		s,
 		"putKeyEncryptionKey",
 		[]interface{}{value},
-	)
-}
-
-func (s *jsiiProxy_SnapshotEncryptionSettingsOutputReference) ResetDiskEncryptionKey() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetDiskEncryptionKey",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SnapshotEncryptionSettingsOutputReference) ResetEnabled() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetEnabled",
-		nil, // no parameters
 	)
 }
 

@@ -5,14 +5,14 @@ package automationpowershell72module
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/automationpowershell72module/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/automationpowershell72module/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_powershell72_module azurerm_automation_powershell72_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_powershell72_module azurerm_automation_powershell72_module}.
 type AutomationPowershell72Module interface {
 	cdktf.TerraformResource
 	AutomationAccountId() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_AutomationPowershell72Module) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_powershell72_module azurerm_automation_powershell72_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_powershell72_module azurerm_automation_powershell72_module} Resource.
 func NewAutomationPowershell72Module(scope constructs.Construct, id *string, config *AutomationPowershell72ModuleConfig) AutomationPowershell72Module {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewAutomationPowershell72Module(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_powershell72_module azurerm_automation_powershell72_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_powershell72_module azurerm_automation_powershell72_module} Resource.
 func NewAutomationPowershell72Module_Override(a AutomationPowershell72Module, scope constructs.Construct, id *string, config *AutomationPowershell72ModuleConfig) {
 	_init_.Initialize()
 

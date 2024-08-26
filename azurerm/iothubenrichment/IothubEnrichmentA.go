@@ -5,14 +5,14 @@ package iothubenrichment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/iothubenrichment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/iothubenrichment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/iothub_enrichment azurerm_iothub_enrichment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/iothub_enrichment azurerm_iothub_enrichment}.
 type IothubEnrichmentA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -449,7 +449,7 @@ func (j *jsiiProxy_IothubEnrichmentA) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/iothub_enrichment azurerm_iothub_enrichment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/iothub_enrichment azurerm_iothub_enrichment} Resource.
 func NewIothubEnrichmentA(scope constructs.Construct, id *string, config *IothubEnrichmentAConfig) IothubEnrichmentA {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewIothubEnrichmentA(scope constructs.Construct, id *string, config *Iothub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/iothub_enrichment azurerm_iothub_enrichment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/iothub_enrichment azurerm_iothub_enrichment} Resource.
 func NewIothubEnrichmentA_Override(i IothubEnrichmentA, scope constructs.Construct, id *string, config *IothubEnrichmentAConfig) {
 	_init_.Initialize()
 

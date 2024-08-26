@@ -5,14 +5,14 @@ package recoveryservicesvaultresourceguardassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/recoveryservicesvaultresourceguardassociation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/recoveryservicesvaultresourceguardassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association}.
 type RecoveryServicesVaultResourceGuardAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,9 +46,6 @@ type RecoveryServicesVaultResourceGuardAssociation interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -120,7 +117,6 @@ type RecoveryServicesVaultResourceGuardAssociation interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *RecoveryServicesVaultResourceGuardAssociationTimeouts)
 	ResetId()
-	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -248,26 +244,6 @@ func (j *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation) Lifecycle() *c
 	_jsii_.Get(
 		j,
 		"lifecycle",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation) Name() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
 		&returns,
 	)
 	return returns
@@ -404,7 +380,7 @@ func (j *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation) VaultIdInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association} Resource.
 func NewRecoveryServicesVaultResourceGuardAssociation(scope constructs.Construct, id *string, config *RecoveryServicesVaultResourceGuardAssociationConfig) RecoveryServicesVaultResourceGuardAssociation {
 	_init_.Initialize()
 
@@ -422,7 +398,7 @@ func NewRecoveryServicesVaultResourceGuardAssociation(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association} Resource.
 func NewRecoveryServicesVaultResourceGuardAssociation_Override(r RecoveryServicesVaultResourceGuardAssociation, scope constructs.Construct, id *string, config *RecoveryServicesVaultResourceGuardAssociationConfig) {
 	_init_.Initialize()
 
@@ -489,17 +465,6 @@ func (j *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation)SetLifecycle(va
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
 		val,
 	)
 }
@@ -913,14 +878,6 @@ func (r *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation) ResetName() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetName",
 		nil, // no parameters
 	)
 }

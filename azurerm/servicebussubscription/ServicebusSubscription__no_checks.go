@@ -131,10 +131,6 @@ func (j *jsiiProxy_ServicebusSubscription) validateSetDefaultMessageTtlParameter
 	return nil
 }
 
-func (j *jsiiProxy_ServicebusSubscription) validateSetEnableBatchedOperationsParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ServicebusSubscription) validateSetForwardDeadLetteredMessagesToParameters(val *string) error {
 	return nil
 }

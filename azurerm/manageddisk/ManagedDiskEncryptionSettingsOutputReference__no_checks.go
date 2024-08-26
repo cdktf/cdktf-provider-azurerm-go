@@ -67,10 +67,6 @@ func (j *jsiiProxy_ManagedDiskEncryptionSettingsOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_ManagedDiskEncryptionSettingsOutputReference) validateSetEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ManagedDiskEncryptionSettingsOutputReference) validateSetInternalValueParameters(val *ManagedDiskEncryptionSettings) error {
 	return nil
 }

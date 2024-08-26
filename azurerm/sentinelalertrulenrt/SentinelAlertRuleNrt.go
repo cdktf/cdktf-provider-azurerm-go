@@ -5,14 +5,14 @@ package sentinelalertrulenrt
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/sentinelalertrulenrt/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/sentinelalertrulenrt/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_alert_rule_nrt azurerm_sentinel_alert_rule_nrt}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_alert_rule_nrt azurerm_sentinel_alert_rule_nrt}.
 type SentinelAlertRuleNrt interface {
 	cdktf.TerraformResource
 	AlertDetailsOverride() SentinelAlertRuleNrtAlertDetailsOverrideList
@@ -174,7 +174,6 @@ type SentinelAlertRuleNrt interface {
 	ResetDescription()
 	ResetEnabled()
 	ResetEntityMapping()
-	ResetEventGrouping()
 	ResetId()
 	ResetIncident()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -785,7 +784,7 @@ func (j *jsiiProxy_SentinelAlertRuleNrt) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_alert_rule_nrt azurerm_sentinel_alert_rule_nrt} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_alert_rule_nrt azurerm_sentinel_alert_rule_nrt} Resource.
 func NewSentinelAlertRuleNrt(scope constructs.Construct, id *string, config *SentinelAlertRuleNrtConfig) SentinelAlertRuleNrt {
 	_init_.Initialize()
 
@@ -803,7 +802,7 @@ func NewSentinelAlertRuleNrt(scope constructs.Construct, id *string, config *Sen
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_alert_rule_nrt azurerm_sentinel_alert_rule_nrt} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_alert_rule_nrt azurerm_sentinel_alert_rule_nrt} Resource.
 func NewSentinelAlertRuleNrt_Override(s SentinelAlertRuleNrt, scope constructs.Construct, id *string, config *SentinelAlertRuleNrtConfig) {
 	_init_.Initialize()
 
@@ -1518,14 +1517,6 @@ func (s *jsiiProxy_SentinelAlertRuleNrt) ResetEntityMapping() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEntityMapping",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SentinelAlertRuleNrt) ResetEventGrouping() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetEventGrouping",
 		nil, // no parameters
 	)
 }

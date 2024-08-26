@@ -5,14 +5,14 @@ package monitoractivitylogalert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/monitoractivitylogalert/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/monitoractivitylogalert/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert}.
 type MonitorActivityLogAlert interface {
 	cdktf.TerraformResource
 	Action() MonitorActivityLogAlertActionList
@@ -141,7 +141,6 @@ type MonitorActivityLogAlert interface {
 	ResetDescription()
 	ResetEnabled()
 	ResetId()
-	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -546,7 +545,7 @@ func (j *jsiiProxy_MonitorActivityLogAlert) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert} Resource.
 func NewMonitorActivityLogAlert(scope constructs.Construct, id *string, config *MonitorActivityLogAlertConfig) MonitorActivityLogAlert {
 	_init_.Initialize()
 
@@ -564,7 +563,7 @@ func NewMonitorActivityLogAlert(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert} Resource.
 func NewMonitorActivityLogAlert_Override(m MonitorActivityLogAlert, scope constructs.Construct, id *string, config *MonitorActivityLogAlertConfig) {
 	_init_.Initialize()
 
@@ -1145,14 +1144,6 @@ func (m *jsiiProxy_MonitorActivityLogAlert) ResetId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MonitorActivityLogAlert) ResetLocation() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetLocation",
 		nil, // no parameters
 	)
 }

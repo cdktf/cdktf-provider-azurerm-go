@@ -167,10 +167,6 @@ func (j *jsiiProxy_ServicebusNamespace) validateSetTagsParameters(val *map[strin
 	return nil
 }
 
-func (j *jsiiProxy_ServicebusNamespace) validateSetZoneRedundantParameters(val interface{}) error {
-	return nil
-}
-
 func validateNewServicebusNamespaceParameters(scope constructs.Construct, id *string, config *ServicebusNamespaceConfig) error {
 	return nil
 }

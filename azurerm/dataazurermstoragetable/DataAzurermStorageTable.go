@@ -5,14 +5,14 @@ package dataazurermstoragetable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermstoragetable/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermstoragetable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/storage_table azurerm_storage_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/storage_table azurerm_storage_table}.
 type DataAzurermStorageTable interface {
 	cdktf.TerraformDataSource
 	Acl() DataAzurermStorageTableAclList
@@ -344,7 +344,7 @@ func (j *jsiiProxy_DataAzurermStorageTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/storage_table azurerm_storage_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/storage_table azurerm_storage_table} Data Source.
 func NewDataAzurermStorageTable(scope constructs.Construct, id *string, config *DataAzurermStorageTableConfig) DataAzurermStorageTable {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewDataAzurermStorageTable(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/storage_table azurerm_storage_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/storage_table azurerm_storage_table} Data Source.
 func NewDataAzurermStorageTable_Override(d DataAzurermStorageTable, scope constructs.Construct, id *string, config *DataAzurermStorageTableConfig) {
 	_init_.Initialize()
 

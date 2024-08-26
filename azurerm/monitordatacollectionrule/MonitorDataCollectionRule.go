@@ -5,14 +5,14 @@ package monitordatacollectionrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/monitordatacollectionrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/monitordatacollectionrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/monitor_data_collection_rule azurerm_monitor_data_collection_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/monitor_data_collection_rule azurerm_monitor_data_collection_rule}.
 type MonitorDataCollectionRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -628,7 +628,7 @@ func (j *jsiiProxy_MonitorDataCollectionRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/monitor_data_collection_rule azurerm_monitor_data_collection_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/monitor_data_collection_rule azurerm_monitor_data_collection_rule} Resource.
 func NewMonitorDataCollectionRule(scope constructs.Construct, id *string, config *MonitorDataCollectionRuleConfig) MonitorDataCollectionRule {
 	_init_.Initialize()
 
@@ -646,7 +646,7 @@ func NewMonitorDataCollectionRule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/monitor_data_collection_rule azurerm_monitor_data_collection_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/monitor_data_collection_rule azurerm_monitor_data_collection_rule} Resource.
 func NewMonitorDataCollectionRule_Override(m MonitorDataCollectionRule, scope constructs.Construct, id *string, config *MonitorDataCollectionRuleConfig) {
 	_init_.Initialize()
 

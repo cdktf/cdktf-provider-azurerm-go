@@ -83,10 +83,6 @@ func (s *jsiiProxy_SentinelAutomationRule) validatePutActionPlaybookParameters(v
 	return nil
 }
 
-func (s *jsiiProxy_SentinelAutomationRule) validatePutConditionParameters(value interface{}) error {
-	return nil
-}
-
 func (s *jsiiProxy_SentinelAutomationRule) validatePutTimeoutsParameters(value *SentinelAutomationRuleTimeouts) error {
 	return nil
 }

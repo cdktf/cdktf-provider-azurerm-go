@@ -5,14 +5,14 @@ package datafactorydatasetazureblob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/datafactorydatasetazureblob/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/datafactorydatasetazureblob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/data_factory_dataset_azure_blob azurerm_data_factory_dataset_azure_blob}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/data_factory_dataset_azure_blob azurerm_data_factory_dataset_azure_blob}.
 type DataFactoryDatasetAzureBlob interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -643,7 +643,7 @@ func (j *jsiiProxy_DataFactoryDatasetAzureBlob) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/data_factory_dataset_azure_blob azurerm_data_factory_dataset_azure_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/data_factory_dataset_azure_blob azurerm_data_factory_dataset_azure_blob} Resource.
 func NewDataFactoryDatasetAzureBlob(scope constructs.Construct, id *string, config *DataFactoryDatasetAzureBlobConfig) DataFactoryDatasetAzureBlob {
 	_init_.Initialize()
 
@@ -661,7 +661,7 @@ func NewDataFactoryDatasetAzureBlob(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/data_factory_dataset_azure_blob azurerm_data_factory_dataset_azure_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/data_factory_dataset_azure_blob azurerm_data_factory_dataset_azure_blob} Resource.
 func NewDataFactoryDatasetAzureBlob_Override(d DataFactoryDatasetAzureBlob, scope constructs.Construct, id *string, config *DataFactoryDatasetAzureBlobConfig) {
 	_init_.Initialize()
 

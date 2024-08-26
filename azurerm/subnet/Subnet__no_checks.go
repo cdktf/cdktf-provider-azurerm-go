@@ -115,14 +115,6 @@ func (j *jsiiProxy_Subnet) validateSetDefaultOutboundAccessEnabledParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_Subnet) validateSetEnforcePrivateLinkEndpointNetworkPoliciesParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_Subnet) validateSetEnforcePrivateLinkServiceNetworkPoliciesParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_Subnet) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -136,10 +128,6 @@ func (j *jsiiProxy_Subnet) validateSetNameParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Subnet) validateSetPrivateEndpointNetworkPoliciesParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_Subnet) validateSetPrivateEndpointNetworkPoliciesEnabledParameters(val interface{}) error {
 	return nil
 }
 

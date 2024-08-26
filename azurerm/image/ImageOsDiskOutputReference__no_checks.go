@@ -91,6 +91,10 @@ func (j *jsiiProxy_ImageOsDiskOutputReference) validateSetSizeGbParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_ImageOsDiskOutputReference) validateSetStorageTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImageOsDiskOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

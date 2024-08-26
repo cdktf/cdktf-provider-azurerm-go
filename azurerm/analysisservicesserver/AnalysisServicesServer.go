@@ -5,14 +5,14 @@ package analysisservicesserver
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/analysisservicesserver/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/analysisservicesserver/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/analysis_services_server azurerm_analysis_services_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/analysis_services_server azurerm_analysis_services_server}.
 type AnalysisServicesServer interface {
 	cdktf.TerraformResource
 	AdminUsers() *[]*string
@@ -37,9 +37,6 @@ type AnalysisServicesServer interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnablePowerBiService() interface{}
-	SetEnablePowerBiService(val interface{})
-	EnablePowerBiServiceInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -146,7 +143,6 @@ type AnalysisServicesServer interface {
 	PutTimeouts(value *AnalysisServicesServerTimeouts)
 	ResetAdminUsers()
 	ResetBackupBlobContainerUri()
-	ResetEnablePowerBiService()
 	ResetId()
 	ResetIpv4FirewallRule()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -259,26 +255,6 @@ func (j *jsiiProxy_AnalysisServicesServer) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AnalysisServicesServer) EnablePowerBiService() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enablePowerBiService",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AnalysisServicesServer) EnablePowerBiServiceInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enablePowerBiServiceInput",
 		&returns,
 	)
 	return returns
@@ -605,7 +581,7 @@ func (j *jsiiProxy_AnalysisServicesServer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/analysis_services_server azurerm_analysis_services_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/analysis_services_server azurerm_analysis_services_server} Resource.
 func NewAnalysisServicesServer(scope constructs.Construct, id *string, config *AnalysisServicesServerConfig) AnalysisServicesServer {
 	_init_.Initialize()
 
@@ -623,7 +599,7 @@ func NewAnalysisServicesServer(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/analysis_services_server azurerm_analysis_services_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/analysis_services_server azurerm_analysis_services_server} Resource.
 func NewAnalysisServicesServer_Override(a AnalysisServicesServer, scope constructs.Construct, id *string, config *AnalysisServicesServerConfig) {
 	_init_.Initialize()
 
@@ -682,17 +658,6 @@ func (j *jsiiProxy_AnalysisServicesServer)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AnalysisServicesServer)SetEnablePowerBiService(val interface{}) {
-	if err := j.validateSetEnablePowerBiServiceParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enablePowerBiService",
 		val,
 	)
 }
@@ -1210,14 +1175,6 @@ func (a *jsiiProxy_AnalysisServicesServer) ResetBackupBlobContainerUri() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetBackupBlobContainerUri",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AnalysisServicesServer) ResetEnablePowerBiService() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetEnablePowerBiService",
 		nil, // no parameters
 	)
 }

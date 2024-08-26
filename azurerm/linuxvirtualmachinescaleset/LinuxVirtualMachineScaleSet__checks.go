@@ -375,37 +375,6 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validatePutGalleryApplicationPar
 	return nil
 }
 
-func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validatePutGalleryApplicationsParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*LinuxVirtualMachineScaleSetGalleryApplications:
-		value := value.(*[]*LinuxVirtualMachineScaleSetGalleryApplications)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*LinuxVirtualMachineScaleSetGalleryApplications:
-		value_ := value.([]*LinuxVirtualMachineScaleSetGalleryApplications)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LinuxVirtualMachineScaleSetGalleryApplications; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validatePutIdentityParameters(value *LinuxVirtualMachineScaleSetIdentity) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -535,17 +504,6 @@ func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validatePutSourceImageReferenceP
 }
 
 func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validatePutSpotRestoreParameters(value *LinuxVirtualMachineScaleSetSpotRestore) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (l *jsiiProxy_LinuxVirtualMachineScaleSet) validatePutTerminateNotificationParameters(value *LinuxVirtualMachineScaleSetTerminateNotification) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -1027,14 +985,6 @@ func (j *jsiiProxy_LinuxVirtualMachineScaleSet) validateSetProximityPlacementGro
 }
 
 func (j *jsiiProxy_LinuxVirtualMachineScaleSet) validateSetResourceGroupNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_LinuxVirtualMachineScaleSet) validateSetScaleInPolicyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

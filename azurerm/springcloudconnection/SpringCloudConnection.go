@@ -5,14 +5,14 @@ package springcloudconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/springcloudconnection/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/springcloudconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection}.
 type SpringCloudConnection interface {
 	cdktf.TerraformResource
 	Authentication() SpringCloudConnectionAuthenticationOutputReference
@@ -498,7 +498,7 @@ func (j *jsiiProxy_SpringCloudConnection) VnetSolutionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection} Resource.
 func NewSpringCloudConnection(scope constructs.Construct, id *string, config *SpringCloudConnectionConfig) SpringCloudConnection {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewSpringCloudConnection(scope constructs.Construct, id *string, config *Sp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection} Resource.
 func NewSpringCloudConnection_Override(s SpringCloudConnection, scope constructs.Construct, id *string, config *SpringCloudConnectionConfig) {
 	_init_.Initialize()
 

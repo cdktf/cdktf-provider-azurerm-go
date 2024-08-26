@@ -5,14 +5,14 @@ package botchannelfacebook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/botchannelfacebook/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/botchannelfacebook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/bot_channel_facebook azurerm_bot_channel_facebook}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/bot_channel_facebook azurerm_bot_channel_facebook}.
 type BotChannelFacebook interface {
 	cdktf.TerraformResource
 	BotName() *string
@@ -472,7 +472,7 @@ func (j *jsiiProxy_BotChannelFacebook) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/bot_channel_facebook azurerm_bot_channel_facebook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/bot_channel_facebook azurerm_bot_channel_facebook} Resource.
 func NewBotChannelFacebook(scope constructs.Construct, id *string, config *BotChannelFacebookConfig) BotChannelFacebook {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewBotChannelFacebook(scope constructs.Construct, id *string, config *BotCh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/bot_channel_facebook azurerm_bot_channel_facebook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/bot_channel_facebook azurerm_bot_channel_facebook} Resource.
 func NewBotChannelFacebook_Override(b BotChannelFacebook, scope constructs.Construct, id *string, config *BotChannelFacebookConfig) {
 	_init_.Initialize()
 

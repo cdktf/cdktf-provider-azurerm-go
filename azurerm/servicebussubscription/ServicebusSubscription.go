@@ -5,14 +5,14 @@ package servicebussubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/servicebussubscription/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/servicebussubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/servicebus_subscription azurerm_servicebus_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/servicebus_subscription azurerm_servicebus_subscription}.
 type ServicebusSubscription interface {
 	cdktf.TerraformResource
 	AutoDeleteOnIdle() *string
@@ -51,9 +51,6 @@ type ServicebusSubscription interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnableBatchedOperations() interface{}
-	SetEnableBatchedOperations(val interface{})
-	EnableBatchedOperationsInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -165,7 +162,6 @@ type ServicebusSubscription interface {
 	ResetDeadLetteringOnFilterEvaluationError()
 	ResetDeadLetteringOnMessageExpiration()
 	ResetDefaultMessageTtl()
-	ResetEnableBatchedOperations()
 	ResetForwardDeadLetteredMessagesTo()
 	ResetForwardTo()
 	ResetId()
@@ -379,26 +375,6 @@ func (j *jsiiProxy_ServicebusSubscription) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServicebusSubscription) EnableBatchedOperations() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableBatchedOperations",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServicebusSubscription) EnableBatchedOperationsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableBatchedOperationsInput",
 		&returns,
 	)
 	return returns
@@ -715,7 +691,7 @@ func (j *jsiiProxy_ServicebusSubscription) TopicIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/servicebus_subscription azurerm_servicebus_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/servicebus_subscription azurerm_servicebus_subscription} Resource.
 func NewServicebusSubscription(scope constructs.Construct, id *string, config *ServicebusSubscriptionConfig) ServicebusSubscription {
 	_init_.Initialize()
 
@@ -733,7 +709,7 @@ func NewServicebusSubscription(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/servicebus_subscription azurerm_servicebus_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/servicebus_subscription azurerm_servicebus_subscription} Resource.
 func NewServicebusSubscription_Override(s ServicebusSubscription, scope constructs.Construct, id *string, config *ServicebusSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -836,17 +812,6 @@ func (j *jsiiProxy_ServicebusSubscription)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ServicebusSubscription)SetEnableBatchedOperations(val interface{}) {
-	if err := j.validateSetEnableBatchedOperationsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enableBatchedOperations",
 		val,
 	)
 }
@@ -1415,14 +1380,6 @@ func (s *jsiiProxy_ServicebusSubscription) ResetDefaultMessageTtl() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDefaultMessageTtl",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_ServicebusSubscription) ResetEnableBatchedOperations() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetEnableBatchedOperations",
 		nil, // no parameters
 	)
 }

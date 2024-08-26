@@ -5,14 +5,14 @@ package dataazurermeventhubauthorizationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermeventhubauthorizationrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermeventhubauthorizationrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/eventhub_authorization_rule azurerm_eventhub_authorization_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/eventhub_authorization_rule azurerm_eventhub_authorization_rule}.
 type DataAzurermEventhubAuthorizationRule interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -519,7 +519,7 @@ func (j *jsiiProxy_DataAzurermEventhubAuthorizationRule) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/eventhub_authorization_rule azurerm_eventhub_authorization_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/eventhub_authorization_rule azurerm_eventhub_authorization_rule} Data Source.
 func NewDataAzurermEventhubAuthorizationRule(scope constructs.Construct, id *string, config *DataAzurermEventhubAuthorizationRuleConfig) DataAzurermEventhubAuthorizationRule {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewDataAzurermEventhubAuthorizationRule(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/eventhub_authorization_rule azurerm_eventhub_authorization_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/eventhub_authorization_rule azurerm_eventhub_authorization_rule} Data Source.
 func NewDataAzurermEventhubAuthorizationRule_Override(d DataAzurermEventhubAuthorizationRule, scope constructs.Construct, id *string, config *DataAzurermEventhubAuthorizationRuleConfig) {
 	_init_.Initialize()
 

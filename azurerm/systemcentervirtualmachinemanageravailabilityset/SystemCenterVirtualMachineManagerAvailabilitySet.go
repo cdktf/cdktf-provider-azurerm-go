@@ -5,14 +5,14 @@ package systemcentervirtualmachinemanageravailabilityset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/systemcentervirtualmachinemanageravailabilityset/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/systemcentervirtualmachinemanageravailabilityset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/system_center_virtual_machine_manager_availability_set azurerm_system_center_virtual_machine_manager_availability_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/system_center_virtual_machine_manager_availability_set azurerm_system_center_virtual_machine_manager_availability_set}.
 type SystemCenterVirtualMachineManagerAvailabilitySet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_SystemCenterVirtualMachineManagerAvailabilitySet) TimeoutsInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/system_center_virtual_machine_manager_availability_set azurerm_system_center_virtual_machine_manager_availability_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/system_center_virtual_machine_manager_availability_set azurerm_system_center_virtual_machine_manager_availability_set} Resource.
 func NewSystemCenterVirtualMachineManagerAvailabilitySet(scope constructs.Construct, id *string, config *SystemCenterVirtualMachineManagerAvailabilitySetConfig) SystemCenterVirtualMachineManagerAvailabilitySet {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewSystemCenterVirtualMachineManagerAvailabilitySet(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/system_center_virtual_machine_manager_availability_set azurerm_system_center_virtual_machine_manager_availability_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/system_center_virtual_machine_manager_availability_set azurerm_system_center_virtual_machine_manager_availability_set} Resource.
 func NewSystemCenterVirtualMachineManagerAvailabilitySet_Override(s SystemCenterVirtualMachineManagerAvailabilitySet, scope constructs.Construct, id *string, config *SystemCenterVirtualMachineManagerAvailabilitySetConfig) {
 	_init_.Initialize()
 

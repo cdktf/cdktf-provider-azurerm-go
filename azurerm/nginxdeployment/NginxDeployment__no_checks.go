@@ -79,10 +79,6 @@ func (n *jsiiProxy_NginxDeployment) validatePutAutoScaleProfileParameters(value 
 	return nil
 }
 
-func (n *jsiiProxy_NginxDeployment) validatePutConfigurationParameters(value *NginxDeploymentConfiguration) error {
-	return nil
-}
-
 func (n *jsiiProxy_NginxDeployment) validatePutFrontendPrivateParameters(value interface{}) error {
 	return nil
 }

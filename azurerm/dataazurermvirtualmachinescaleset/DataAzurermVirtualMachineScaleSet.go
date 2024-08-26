@@ -5,14 +5,14 @@ package dataazurermvirtualmachinescaleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermvirtualmachinescaleset/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermvirtualmachinescaleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/virtual_machine_scale_set azurerm_virtual_machine_scale_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/virtual_machine_scale_set azurerm_virtual_machine_scale_set}.
 type DataAzurermVirtualMachineScaleSet interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_DataAzurermVirtualMachineScaleSet) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/virtual_machine_scale_set azurerm_virtual_machine_scale_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/virtual_machine_scale_set azurerm_virtual_machine_scale_set} Data Source.
 func NewDataAzurermVirtualMachineScaleSet(scope constructs.Construct, id *string, config *DataAzurermVirtualMachineScaleSetConfig) DataAzurermVirtualMachineScaleSet {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewDataAzurermVirtualMachineScaleSet(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/virtual_machine_scale_set azurerm_virtual_machine_scale_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/virtual_machine_scale_set azurerm_virtual_machine_scale_set} Data Source.
 func NewDataAzurermVirtualMachineScaleSet_Override(d DataAzurermVirtualMachineScaleSet, scope constructs.Construct, id *string, config *DataAzurermVirtualMachineScaleSetConfig) {
 	_init_.Initialize()
 

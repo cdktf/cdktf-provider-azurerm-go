@@ -119,15 +119,7 @@ func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateSetProvision
 	return nil
 }
 
-func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateSetResourceGroupNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateSetWorkspaceIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_SentinelLogAnalyticsWorkspaceOnboarding) validateSetWorkspaceNameParameters(val *string) error {
 	return nil
 }
 

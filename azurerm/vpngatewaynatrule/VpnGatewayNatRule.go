@@ -5,14 +5,14 @@ package vpngatewaynatrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/vpngatewaynatrule/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/vpngatewaynatrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/vpn_gateway_nat_rule azurerm_vpn_gateway_nat_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/vpn_gateway_nat_rule azurerm_vpn_gateway_nat_rule}.
 type VpnGatewayNatRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,9 +31,6 @@ type VpnGatewayNatRule interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	ExternalAddressSpaceMappings() *[]*string
-	SetExternalAddressSpaceMappings(val *[]*string)
-	ExternalAddressSpaceMappingsInput() *[]*string
 	ExternalMapping() VpnGatewayNatRuleExternalMappingList
 	ExternalMappingInput() interface{}
 	// Experimental.
@@ -47,9 +44,6 @@ type VpnGatewayNatRule interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalAddressSpaceMappings() *[]*string
-	SetInternalAddressSpaceMappings(val *[]*string)
-	InternalAddressSpaceMappingsInput() *[]*string
 	InternalMapping() VpnGatewayNatRuleInternalMappingList
 	InternalMappingInput() interface{}
 	IpConfigurationId() *string
@@ -77,9 +71,6 @@ type VpnGatewayNatRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	ResourceGroupName() *string
-	SetResourceGroupName(val *string)
-	ResourceGroupNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -140,10 +131,8 @@ type VpnGatewayNatRule interface {
 	PutExternalMapping(value interface{})
 	PutInternalMapping(value interface{})
 	PutTimeouts(value *VpnGatewayNatRuleTimeouts)
-	ResetExternalAddressSpaceMappings()
 	ResetExternalMapping()
 	ResetId()
-	ResetInternalAddressSpaceMappings()
 	ResetInternalMapping()
 	ResetIpConfigurationId()
 	ResetMode()
@@ -220,26 +209,6 @@ func (j *jsiiProxy_VpnGatewayNatRule) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_VpnGatewayNatRule) ExternalAddressSpaceMappings() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"externalAddressSpaceMappings",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_VpnGatewayNatRule) ExternalAddressSpaceMappingsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"externalAddressSpaceMappingsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_VpnGatewayNatRule) ExternalMapping() VpnGatewayNatRuleExternalMappingList {
 	var returns VpnGatewayNatRuleExternalMappingList
 	_jsii_.Get(
@@ -305,26 +274,6 @@ func (j *jsiiProxy_VpnGatewayNatRule) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_VpnGatewayNatRule) InternalAddressSpaceMappings() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"internalAddressSpaceMappings",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_VpnGatewayNatRule) InternalAddressSpaceMappingsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"internalAddressSpaceMappingsInput",
 		&returns,
 	)
 	return returns
@@ -460,26 +409,6 @@ func (j *jsiiProxy_VpnGatewayNatRule) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpnGatewayNatRule) ResourceGroupName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"resourceGroupName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_VpnGatewayNatRule) ResourceGroupNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"resourceGroupNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_VpnGatewayNatRule) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -571,7 +500,7 @@ func (j *jsiiProxy_VpnGatewayNatRule) VpnGatewayIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/vpn_gateway_nat_rule azurerm_vpn_gateway_nat_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/vpn_gateway_nat_rule azurerm_vpn_gateway_nat_rule} Resource.
 func NewVpnGatewayNatRule(scope constructs.Construct, id *string, config *VpnGatewayNatRuleConfig) VpnGatewayNatRule {
 	_init_.Initialize()
 
@@ -589,7 +518,7 @@ func NewVpnGatewayNatRule(scope constructs.Construct, id *string, config *VpnGat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/vpn_gateway_nat_rule azurerm_vpn_gateway_nat_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/vpn_gateway_nat_rule azurerm_vpn_gateway_nat_rule} Resource.
 func NewVpnGatewayNatRule_Override(v VpnGatewayNatRule, scope constructs.Construct, id *string, config *VpnGatewayNatRuleConfig) {
 	_init_.Initialize()
 
@@ -630,17 +559,6 @@ func (j *jsiiProxy_VpnGatewayNatRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpnGatewayNatRule)SetExternalAddressSpaceMappings(val *[]*string) {
-	if err := j.validateSetExternalAddressSpaceMappingsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"externalAddressSpaceMappings",
-		val,
-	)
-}
-
 func (j *jsiiProxy_VpnGatewayNatRule)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -656,17 +574,6 @@ func (j *jsiiProxy_VpnGatewayNatRule)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_VpnGatewayNatRule)SetInternalAddressSpaceMappings(val *[]*string) {
-	if err := j.validateSetInternalAddressSpaceMappingsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"internalAddressSpaceMappings",
 		val,
 	)
 }
@@ -730,17 +637,6 @@ func (j *jsiiProxy_VpnGatewayNatRule)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_VpnGatewayNatRule)SetResourceGroupName(val *string) {
-	if err := j.validateSetResourceGroupNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"resourceGroupName",
 		val,
 	)
 }
@@ -1153,14 +1049,6 @@ func (v *jsiiProxy_VpnGatewayNatRule) PutTimeouts(value *VpnGatewayNatRuleTimeou
 	)
 }
 
-func (v *jsiiProxy_VpnGatewayNatRule) ResetExternalAddressSpaceMappings() {
-	_jsii_.InvokeVoid(
-		v,
-		"resetExternalAddressSpaceMappings",
-		nil, // no parameters
-	)
-}
-
 func (v *jsiiProxy_VpnGatewayNatRule) ResetExternalMapping() {
 	_jsii_.InvokeVoid(
 		v,
@@ -1173,14 +1061,6 @@ func (v *jsiiProxy_VpnGatewayNatRule) ResetId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (v *jsiiProxy_VpnGatewayNatRule) ResetInternalAddressSpaceMappings() {
-	_jsii_.InvokeVoid(
-		v,
-		"resetInternalAddressSpaceMappings",
 		nil, // no parameters
 	)
 }

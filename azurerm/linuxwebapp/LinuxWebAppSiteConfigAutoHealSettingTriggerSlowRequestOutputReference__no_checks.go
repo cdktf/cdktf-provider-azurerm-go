@@ -71,10 +71,6 @@ func (j *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputR
 	return nil
 }
 
-func (j *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference) validateSetPathParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

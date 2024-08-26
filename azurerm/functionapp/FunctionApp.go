@@ -5,14 +5,14 @@ package functionapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/functionapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/functionapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/function_app azurerm_function_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/function_app azurerm_function_app}.
 type FunctionApp interface {
 	cdktf.TerraformResource
 	AppServicePlanId() *string
@@ -898,7 +898,7 @@ func (j *jsiiProxy_FunctionApp) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/function_app azurerm_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/function_app azurerm_function_app} Resource.
 func NewFunctionApp(scope constructs.Construct, id *string, config *FunctionAppConfig) FunctionApp {
 	_init_.Initialize()
 
@@ -916,7 +916,7 @@ func NewFunctionApp(scope constructs.Construct, id *string, config *FunctionAppC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/function_app azurerm_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/function_app azurerm_function_app} Resource.
 func NewFunctionApp_Override(f FunctionApp, scope constructs.Construct, id *string, config *FunctionAppConfig) {
 	_init_.Initialize()
 

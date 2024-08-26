@@ -91,7 +91,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSparkConfig", GoMethod: "ResetSparkConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSparkEventsFolder", GoMethod: "ResetSparkEventsFolder"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSparkLogFolder", GoMethod: "ResetSparkLogFolder"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSparkVersion", GoMethod: "ResetSparkVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "sessionLevelPackagesEnabled", GoGetter: "SessionLevelPackagesEnabled"},

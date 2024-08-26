@@ -5,14 +5,14 @@ package automationwatcher
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/automationwatcher/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/automationwatcher/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_watcher azurerm_automation_watcher}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_watcher azurerm_automation_watcher}.
 type AutomationWatcher interface {
 	cdktf.TerraformResource
 	AutomationAccountId() *string
@@ -579,7 +579,7 @@ func (j *jsiiProxy_AutomationWatcher) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_watcher azurerm_automation_watcher} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_watcher azurerm_automation_watcher} Resource.
 func NewAutomationWatcher(scope constructs.Construct, id *string, config *AutomationWatcherConfig) AutomationWatcher {
 	_init_.Initialize()
 
@@ -597,7 +597,7 @@ func NewAutomationWatcher(scope constructs.Construct, id *string, config *Automa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_watcher azurerm_automation_watcher} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_watcher azurerm_automation_watcher} Resource.
 func NewAutomationWatcher_Override(a AutomationWatcher, scope constructs.Construct, id *string, config *AutomationWatcherConfig) {
 	_init_.Initialize()
 

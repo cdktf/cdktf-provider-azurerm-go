@@ -5,14 +5,14 @@ package mssqlmanagedinstanceactivedirectoryadministrator
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/mssqlmanagedinstanceactivedirectoryadministrator/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/mssqlmanagedinstanceactivedirectoryadministrator/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mssql_managed_instance_active_directory_administrator azurerm_mssql_managed_instance_active_directory_administrator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mssql_managed_instance_active_directory_administrator azurerm_mssql_managed_instance_active_directory_administrator}.
 type MssqlManagedInstanceActiveDirectoryAdministrator interface {
 	cdktf.TerraformResource
 	AzureadAuthenticationOnly() interface{}
@@ -450,7 +450,7 @@ func (j *jsiiProxy_MssqlManagedInstanceActiveDirectoryAdministrator) TimeoutsInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mssql_managed_instance_active_directory_administrator azurerm_mssql_managed_instance_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mssql_managed_instance_active_directory_administrator azurerm_mssql_managed_instance_active_directory_administrator} Resource.
 func NewMssqlManagedInstanceActiveDirectoryAdministrator(scope constructs.Construct, id *string, config *MssqlManagedInstanceActiveDirectoryAdministratorConfig) MssqlManagedInstanceActiveDirectoryAdministrator {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewMssqlManagedInstanceActiveDirectoryAdministrator(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mssql_managed_instance_active_directory_administrator azurerm_mssql_managed_instance_active_directory_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mssql_managed_instance_active_directory_administrator azurerm_mssql_managed_instance_active_directory_administrator} Resource.
 func NewMssqlManagedInstanceActiveDirectoryAdministrator_Override(m MssqlManagedInstanceActiveDirectoryAdministrator, scope constructs.Construct, id *string, config *MssqlManagedInstanceActiveDirectoryAdministratorConfig) {
 	_init_.Initialize()
 

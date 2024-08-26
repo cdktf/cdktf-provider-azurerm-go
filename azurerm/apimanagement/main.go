@@ -70,8 +70,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "notificationSenderEmail", GoGetter: "NotificationSenderEmail"},
 			_jsii_.MemberProperty{JsiiProperty: "notificationSenderEmailInput", GoGetter: "NotificationSenderEmailInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "policy", GoGetter: "Policy"},
-			_jsii_.MemberProperty{JsiiProperty: "policyInput", GoGetter: "PolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "portalUrl", GoGetter: "PortalUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "privateIpAddresses", GoGetter: "PrivateIpAddresses"},
 			_jsii_.MemberProperty{JsiiProperty: "protocols", GoGetter: "Protocols"},
@@ -92,7 +90,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putDelegation", GoMethod: "PutDelegation"},
 			_jsii_.MemberMethod{JsiiMethod: "putHostnameConfiguration", GoMethod: "PutHostnameConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putIdentity", GoMethod: "PutIdentity"},
-			_jsii_.MemberMethod{JsiiMethod: "putPolicy", GoMethod: "PutPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putProtocols", GoMethod: "PutProtocols"},
 			_jsii_.MemberMethod{JsiiMethod: "putSecurity", GoMethod: "PutSecurity"},
 			_jsii_.MemberMethod{JsiiMethod: "putSignIn", GoMethod: "PutSignIn"},
@@ -112,7 +109,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMinApiVersion", GoMethod: "ResetMinApiVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNotificationSenderEmail", GoMethod: "ResetNotificationSenderEmail"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPolicy", GoMethod: "ResetPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProtocols", GoMethod: "ResetProtocols"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPublicIpAddressId", GoMethod: "ResetPublicIpAddressId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPublicNetworkAccessEnabled", GoMethod: "ResetPublicNetworkAccessEnabled"},
@@ -899,70 +895,6 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApiManagementIdentityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-azurerm.apiManagement.ApiManagementPolicy",
-		reflect.TypeOf((*ApiManagementPolicy)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.apiManagement.ApiManagementPolicyList",
-		reflect.TypeOf((*ApiManagementPolicyList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ApiManagementPolicyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.apiManagement.ApiManagementPolicyOutputReference",
-		reflect.TypeOf((*ApiManagementPolicyOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetXmlContent", GoMethod: "ResetXmlContent"},
-			_jsii_.MemberMethod{JsiiMethod: "resetXmlLink", GoMethod: "ResetXmlLink"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "xmlContent", GoGetter: "XmlContent"},
-			_jsii_.MemberProperty{JsiiProperty: "xmlContentInput", GoGetter: "XmlContentInput"},
-			_jsii_.MemberProperty{JsiiProperty: "xmlLink", GoGetter: "XmlLink"},
-			_jsii_.MemberProperty{JsiiProperty: "xmlLinkInput", GoGetter: "XmlLinkInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ApiManagementPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -5,14 +5,14 @@ package kubernetesfleetmember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/kubernetesfleetmember/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/kubernetesfleetmember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kubernetes_fleet_member azurerm_kubernetes_fleet_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kubernetes_fleet_member azurerm_kubernetes_fleet_member}.
 type KubernetesFleetMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_KubernetesFleetMember) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kubernetes_fleet_member azurerm_kubernetes_fleet_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kubernetes_fleet_member azurerm_kubernetes_fleet_member} Resource.
 func NewKubernetesFleetMember(scope constructs.Construct, id *string, config *KubernetesFleetMemberConfig) KubernetesFleetMember {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewKubernetesFleetMember(scope constructs.Construct, id *string, config *Ku
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kubernetes_fleet_member azurerm_kubernetes_fleet_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kubernetes_fleet_member azurerm_kubernetes_fleet_member} Resource.
 func NewKubernetesFleetMember_Override(k KubernetesFleetMember, scope constructs.Construct, id *string, config *KubernetesFleetMemberConfig) {
 	_init_.Initialize()
 

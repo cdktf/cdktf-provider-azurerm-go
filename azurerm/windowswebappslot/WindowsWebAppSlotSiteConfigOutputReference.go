@@ -5,9 +5,9 @@ package windowswebappslot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/windowswebappslot/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/windowswebappslot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -27,9 +27,6 @@ type WindowsWebAppSlotSiteConfigOutputReference interface {
 	AppCommandLineInput() *string
 	ApplicationStack() WindowsWebAppSlotSiteConfigApplicationStackOutputReference
 	ApplicationStackInput() *WindowsWebAppSlotSiteConfigApplicationStack
-	AutoHealEnabled() interface{}
-	SetAutoHealEnabled(val interface{})
-	AutoHealEnabledInput() interface{}
 	AutoHealSetting() WindowsWebAppSlotSiteConfigAutoHealSettingOutputReference
 	AutoHealSettingInput() *WindowsWebAppSlotSiteConfigAutoHealSetting
 	AutoSwapSlotName() *string
@@ -174,7 +171,6 @@ type WindowsWebAppSlotSiteConfigOutputReference interface {
 	ResetApiManagementApiId()
 	ResetAppCommandLine()
 	ResetApplicationStack()
-	ResetAutoHealEnabled()
 	ResetAutoHealSetting()
 	ResetAutoSwapSlotName()
 	ResetContainerRegistryManagedIdentityClientId()
@@ -313,26 +309,6 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) ApplicationStackI
 	_jsii_.Get(
 		j,
 		"applicationStackInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) AutoHealEnabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"autoHealEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) AutoHealEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"autoHealEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1070,17 +1046,6 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference)SetAppCommandLine(
 	)
 }
 
-func (j *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference)SetAutoHealEnabled(val interface{}) {
-	if err := j.validateSetAutoHealEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"autoHealEnabled",
-		val,
-	)
-}
-
 func (j *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference)SetAutoSwapSlotName(val *string) {
 	if err := j.validateSetAutoSwapSlotNameParameters(val); err != nil {
 		panic(err)
@@ -1677,14 +1642,6 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) ResetApplicationS
 	_jsii_.InvokeVoid(
 		w,
 		"resetApplicationStack",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WindowsWebAppSlotSiteConfigOutputReference) ResetAutoHealEnabled() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetAutoHealEnabled",
 		nil, // no parameters
 	)
 }

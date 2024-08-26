@@ -5,9 +5,9 @@ package windowswebappslot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/windowswebappslot/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/windowswebappslot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,15 +31,6 @@ type WindowsWebAppSlotSiteConfigApplicationStackOutputReference interface {
 	CurrentStack() *string
 	SetCurrentStack(val *string)
 	CurrentStackInput() *string
-	DockerContainerName() *string
-	SetDockerContainerName(val *string)
-	DockerContainerNameInput() *string
-	DockerContainerRegistry() *string
-	SetDockerContainerRegistry(val *string)
-	DockerContainerRegistryInput() *string
-	DockerContainerTag() *string
-	SetDockerContainerTag(val *string)
-	DockerContainerTagInput() *string
 	DockerImageName() *string
 	SetDockerImageName(val *string)
 	DockerImageNameInput() *string
@@ -83,9 +74,6 @@ type WindowsWebAppSlotSiteConfigApplicationStackOutputReference interface {
 	Python() interface{}
 	SetPython(val interface{})
 	PythonInput() interface{}
-	PythonVersion() *string
-	SetPythonVersion(val *string)
-	PythonVersionInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -122,9 +110,6 @@ type WindowsWebAppSlotSiteConfigApplicationStackOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCurrentStack()
-	ResetDockerContainerName()
-	ResetDockerContainerRegistry()
-	ResetDockerContainerTag()
 	ResetDockerImageName()
 	ResetDockerRegistryPassword()
 	ResetDockerRegistryUrl()
@@ -138,7 +123,6 @@ type WindowsWebAppSlotSiteConfigApplicationStackOutputReference interface {
 	ResetNodeVersion()
 	ResetPhpVersion()
 	ResetPython()
-	ResetPythonVersion()
 	ResetTomcatVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -200,66 +184,6 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) C
 	_jsii_.Get(
 		j,
 		"currentStackInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) DockerContainerName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dockerContainerName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) DockerContainerNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dockerContainerNameInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) DockerContainerRegistry() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dockerContainerRegistry",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) DockerContainerRegistryInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dockerContainerRegistryInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) DockerContainerTag() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dockerContainerTag",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) DockerContainerTagInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dockerContainerTagInput",
 		&returns,
 	)
 	return returns
@@ -545,26 +469,6 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) P
 	return returns
 }
 
-func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) PythonVersion() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pythonVersion",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) PythonVersionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pythonVersionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -662,39 +566,6 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)Se
 	_jsii_.Set(
 		j,
 		"currentStack",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)SetDockerContainerName(val *string) {
-	if err := j.validateSetDockerContainerNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"dockerContainerName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)SetDockerContainerRegistry(val *string) {
-	if err := j.validateSetDockerContainerRegistryParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"dockerContainerRegistry",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)SetDockerContainerTag(val *string) {
-	if err := j.validateSetDockerContainerTagParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"dockerContainerTag",
 		val,
 	)
 }
@@ -849,17 +720,6 @@ func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)Se
 	_jsii_.Set(
 		j,
 		"python",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference)SetPythonVersion(val *string) {
-	if err := j.validateSetPythonVersionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pythonVersion",
 		val,
 	)
 }
@@ -1091,30 +951,6 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) R
 	)
 }
 
-func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) ResetDockerContainerName() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetDockerContainerName",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) ResetDockerContainerRegistry() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetDockerContainerRegistry",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) ResetDockerContainerTag() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetDockerContainerTag",
-		nil, // no parameters
-	)
-}
-
 func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) ResetDockerImageName() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1215,14 +1051,6 @@ func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) R
 	_jsii_.InvokeVoid(
 		w,
 		"resetPython",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WindowsWebAppSlotSiteConfigApplicationStackOutputReference) ResetPythonVersion() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetPythonVersion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package dataazurermsiterecoveryfabric
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermsiterecoveryfabric/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermsiterecoveryfabric/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/site_recovery_fabric azurerm_site_recovery_fabric}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/site_recovery_fabric azurerm_site_recovery_fabric}.
 type DataAzurermSiteRecoveryFabric interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -369,7 +369,7 @@ func (j *jsiiProxy_DataAzurermSiteRecoveryFabric) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/site_recovery_fabric azurerm_site_recovery_fabric} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/site_recovery_fabric azurerm_site_recovery_fabric} Data Source.
 func NewDataAzurermSiteRecoveryFabric(scope constructs.Construct, id *string, config *DataAzurermSiteRecoveryFabricConfig) DataAzurermSiteRecoveryFabric {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewDataAzurermSiteRecoveryFabric(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/site_recovery_fabric azurerm_site_recovery_fabric} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/site_recovery_fabric azurerm_site_recovery_fabric} Data Source.
 func NewDataAzurermSiteRecoveryFabric_Override(d DataAzurermSiteRecoveryFabric, scope constructs.Construct, id *string, config *DataAzurermSiteRecoveryFabricConfig) {
 	_init_.Initialize()
 

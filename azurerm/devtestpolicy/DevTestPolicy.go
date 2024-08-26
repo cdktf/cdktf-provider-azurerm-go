@@ -5,14 +5,14 @@ package devtestpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/devtestpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/devtestpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/dev_test_policy azurerm_dev_test_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/dev_test_policy azurerm_dev_test_policy}.
 type DevTestPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -544,7 +544,7 @@ func (j *jsiiProxy_DevTestPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/dev_test_policy azurerm_dev_test_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/dev_test_policy azurerm_dev_test_policy} Resource.
 func NewDevTestPolicy(scope constructs.Construct, id *string, config *DevTestPolicyConfig) DevTestPolicy {
 	_init_.Initialize()
 
@@ -562,7 +562,7 @@ func NewDevTestPolicy(scope constructs.Construct, id *string, config *DevTestPol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/dev_test_policy azurerm_dev_test_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/dev_test_policy azurerm_dev_test_policy} Resource.
 func NewDevTestPolicy_Override(d DevTestPolicy, scope constructs.Construct, id *string, config *DevTestPolicyConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package automationsoftwareupdateconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/automationsoftwareupdateconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/automationsoftwareupdateconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration}.
 type AutomationSoftwareUpdateConfiguration interface {
 	cdktf.TerraformResource
 	AutomationAccountId() *string
@@ -38,7 +38,6 @@ type AutomationSoftwareUpdateConfiguration interface {
 	SetDuration(val *string)
 	DurationInput() *string
 	ErrorCode() *string
-	ErrorMeesage() *string
 	ErrorMessage() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -65,9 +64,6 @@ type AutomationSoftwareUpdateConfiguration interface {
 	NonAzureComputerNames() *[]*string
 	SetNonAzureComputerNames(val *[]*string)
 	NonAzureComputerNamesInput() *[]*string
-	OperatingSystem() *string
-	SetOperatingSystem(val *string)
-	OperatingSystemInput() *string
 	PostTask() AutomationSoftwareUpdateConfigurationPostTaskOutputReference
 	PostTaskInput() *AutomationSoftwareUpdateConfigurationPostTask
 	PreTask() AutomationSoftwareUpdateConfigurationPreTaskOutputReference
@@ -153,7 +149,6 @@ type AutomationSoftwareUpdateConfiguration interface {
 	ResetId()
 	ResetLinux()
 	ResetNonAzureComputerNames()
-	ResetOperatingSystem()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -276,16 +271,6 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) ErrorCode() *string {
 	_jsii_.Get(
 		j,
 		"errorCode",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) ErrorMeesage() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"errorMeesage",
 		&returns,
 	)
 	return returns
@@ -426,26 +411,6 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) NonAzureComputerNamesI
 	_jsii_.Get(
 		j,
 		"nonAzureComputerNamesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) OperatingSystem() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"operatingSystem",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) OperatingSystemInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"operatingSystemInput",
 		&returns,
 	)
 	return returns
@@ -652,7 +617,7 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration) WindowsInput() *Automa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration} Resource.
 func NewAutomationSoftwareUpdateConfiguration(scope constructs.Construct, id *string, config *AutomationSoftwareUpdateConfigurationConfig) AutomationSoftwareUpdateConfiguration {
 	_init_.Initialize()
 
@@ -670,7 +635,7 @@ func NewAutomationSoftwareUpdateConfiguration(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/automation_software_update_configuration azurerm_automation_software_update_configuration} Resource.
 func NewAutomationSoftwareUpdateConfiguration_Override(a AutomationSoftwareUpdateConfiguration, scope constructs.Construct, id *string, config *AutomationSoftwareUpdateConfigurationConfig) {
 	_init_.Initialize()
 
@@ -781,17 +746,6 @@ func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration)SetNonAzureComputerName
 	_jsii_.Set(
 		j,
 		"nonAzureComputerNames",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AutomationSoftwareUpdateConfiguration)SetOperatingSystem(val *string) {
-	if err := j.validateSetOperatingSystemParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"operatingSystem",
 		val,
 	)
 }
@@ -1284,14 +1238,6 @@ func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) ResetNonAzureComputerN
 	_jsii_.InvokeVoid(
 		a,
 		"resetNonAzureComputerNames",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AutomationSoftwareUpdateConfiguration) ResetOperatingSystem() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetOperatingSystem",
 		nil, // no parameters
 	)
 }

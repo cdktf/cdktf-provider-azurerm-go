@@ -91,6 +91,10 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) validateSetRequestBodyEnforcementParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) validateSetRequestBodyInspectLimitInKbParameters(val *float64) error {
 	return nil
 }

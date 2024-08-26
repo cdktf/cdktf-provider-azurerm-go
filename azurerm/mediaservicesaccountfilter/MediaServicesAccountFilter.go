@@ -5,14 +5,14 @@ package mediaservicesaccountfilter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/mediaservicesaccountfilter/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/mediaservicesaccountfilter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/media_services_account_filter azurerm_media_services_account_filter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/media_services_account_filter azurerm_media_services_account_filter}.
 type MediaServicesAccountFilter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -475,7 +475,7 @@ func (j *jsiiProxy_MediaServicesAccountFilter) TrackSelectionInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/media_services_account_filter azurerm_media_services_account_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/media_services_account_filter azurerm_media_services_account_filter} Resource.
 func NewMediaServicesAccountFilter(scope constructs.Construct, id *string, config *MediaServicesAccountFilterConfig) MediaServicesAccountFilter {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewMediaServicesAccountFilter(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/media_services_account_filter azurerm_media_services_account_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/media_services_account_filter azurerm_media_services_account_filter} Resource.
 func NewMediaServicesAccountFilter_Override(m MediaServicesAccountFilter, scope constructs.Construct, id *string, config *MediaServicesAccountFilterConfig) {
 	_init_.Initialize()
 

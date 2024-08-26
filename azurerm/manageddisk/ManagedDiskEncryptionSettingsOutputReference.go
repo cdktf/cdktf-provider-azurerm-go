@@ -5,9 +5,9 @@ package manageddisk
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/manageddisk/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/manageddisk/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,9 +30,6 @@ type ManagedDiskEncryptionSettingsOutputReference interface {
 	CreationStack() *[]*string
 	DiskEncryptionKey() ManagedDiskEncryptionSettingsDiskEncryptionKeyOutputReference
 	DiskEncryptionKeyInput() *ManagedDiskEncryptionSettingsDiskEncryptionKey
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ManagedDiskEncryptionSettings
@@ -73,8 +70,6 @@ type ManagedDiskEncryptionSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDiskEncryptionKey(value *ManagedDiskEncryptionSettingsDiskEncryptionKey)
 	PutKeyEncryptionKey(value *ManagedDiskEncryptionSettingsKeyEncryptionKey)
-	ResetDiskEncryptionKey()
-	ResetEnabled()
 	ResetKeyEncryptionKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -136,26 +131,6 @@ func (j *jsiiProxy_ManagedDiskEncryptionSettingsOutputReference) DiskEncryptionK
 	_jsii_.Get(
 		j,
 		"diskEncryptionKeyInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ManagedDiskEncryptionSettingsOutputReference) Enabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ManagedDiskEncryptionSettingsOutputReference) EnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -267,17 +242,6 @@ func (j *jsiiProxy_ManagedDiskEncryptionSettingsOutputReference)SetComplexObject
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ManagedDiskEncryptionSettingsOutputReference)SetEnabled(val interface{}) {
-	if err := j.validateSetEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enabled",
 		val,
 	)
 }
@@ -520,22 +484,6 @@ func (m *jsiiProxy_ManagedDiskEncryptionSettingsOutputReference) PutKeyEncryptio
 		m,
 		"putKeyEncryptionKey",
 		[]interface{}{value},
-	)
-}
-
-func (m *jsiiProxy_ManagedDiskEncryptionSettingsOutputReference) ResetDiskEncryptionKey() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetDiskEncryptionKey",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_ManagedDiskEncryptionSettingsOutputReference) ResetEnabled() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetEnabled",
-		nil, // no parameters
 	)
 }
 

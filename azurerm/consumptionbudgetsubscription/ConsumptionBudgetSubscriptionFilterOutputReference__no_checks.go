@@ -51,10 +51,6 @@ func (c *jsiiProxy_ConsumptionBudgetSubscriptionFilterOutputReference) validateP
 	return nil
 }
 
-func (c *jsiiProxy_ConsumptionBudgetSubscriptionFilterOutputReference) validatePutNotParameters(value *ConsumptionBudgetSubscriptionFilterNot) error {
-	return nil
-}
-
 func (c *jsiiProxy_ConsumptionBudgetSubscriptionFilterOutputReference) validatePutTagParameters(value interface{}) error {
 	return nil
 }

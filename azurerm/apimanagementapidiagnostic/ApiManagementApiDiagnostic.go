@@ -5,14 +5,14 @@ package apimanagementapidiagnostic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/apimanagementapidiagnostic/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/apimanagementapidiagnostic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_api_diagnostic azurerm_api_management_api_diagnostic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_api_diagnostic azurerm_api_management_api_diagnostic}.
 type ApiManagementApiDiagnostic interface {
 	cdktf.TerraformResource
 	AlwaysLogErrors() interface{}
@@ -689,7 +689,7 @@ func (j *jsiiProxy_ApiManagementApiDiagnostic) VerbosityInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_api_diagnostic azurerm_api_management_api_diagnostic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_api_diagnostic azurerm_api_management_api_diagnostic} Resource.
 func NewApiManagementApiDiagnostic(scope constructs.Construct, id *string, config *ApiManagementApiDiagnosticConfig) ApiManagementApiDiagnostic {
 	_init_.Initialize()
 
@@ -707,7 +707,7 @@ func NewApiManagementApiDiagnostic(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_api_diagnostic azurerm_api_management_api_diagnostic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_api_diagnostic azurerm_api_management_api_diagnostic} Resource.
 func NewApiManagementApiDiagnostic_Override(a ApiManagementApiDiagnostic, scope constructs.Construct, id *string, config *ApiManagementApiDiagnosticConfig) {
 	_init_.Initialize()
 

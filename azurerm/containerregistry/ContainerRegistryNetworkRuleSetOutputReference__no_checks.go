@@ -51,10 +51,6 @@ func (c *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) validatePutIp
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) validatePutVirtualNetworkParameters(value interface{}) error {
-	return nil
-}
-
 func (c *jsiiProxy_ContainerRegistryNetworkRuleSetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package logicappintegrationaccountpartner
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/logicappintegrationaccountpartner/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/logicappintegrationaccountpartner/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/logic_app_integration_account_partner azurerm_logic_app_integration_account_partner}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/logic_app_integration_account_partner azurerm_logic_app_integration_account_partner}.
 type LogicAppIntegrationAccountPartner interface {
 	cdktf.TerraformResource
 	BusinessIdentity() LogicAppIntegrationAccountPartnerBusinessIdentityList
@@ -450,7 +450,7 @@ func (j *jsiiProxy_LogicAppIntegrationAccountPartner) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/logic_app_integration_account_partner azurerm_logic_app_integration_account_partner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/logic_app_integration_account_partner azurerm_logic_app_integration_account_partner} Resource.
 func NewLogicAppIntegrationAccountPartner(scope constructs.Construct, id *string, config *LogicAppIntegrationAccountPartnerConfig) LogicAppIntegrationAccountPartner {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewLogicAppIntegrationAccountPartner(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/logic_app_integration_account_partner azurerm_logic_app_integration_account_partner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/logic_app_integration_account_partner azurerm_logic_app_integration_account_partner} Resource.
 func NewLogicAppIntegrationAccountPartner_Override(l LogicAppIntegrationAccountPartner, scope constructs.Construct, id *string, config *LogicAppIntegrationAccountPartnerConfig) {
 	_init_.Initialize()
 

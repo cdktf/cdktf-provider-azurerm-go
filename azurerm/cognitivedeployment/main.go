@@ -53,7 +53,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putModel", GoMethod: "PutModel"},
-			_jsii_.MemberMethod{JsiiMethod: "putScale", GoMethod: "PutScale"},
+			_jsii_.MemberMethod{JsiiMethod: "putSku", GoMethod: "PutSku"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "raiPolicyName", GoGetter: "RaiPolicyName"},
 			_jsii_.MemberProperty{JsiiProperty: "raiPolicyNameInput", GoGetter: "RaiPolicyNameInput"},
@@ -63,8 +63,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRaiPolicyName", GoMethod: "ResetRaiPolicyName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVersionUpgradeOption", GoMethod: "ResetVersionUpgradeOption"},
-			_jsii_.MemberProperty{JsiiProperty: "scale", GoGetter: "Scale"},
-			_jsii_.MemberProperty{JsiiProperty: "scaleInput", GoGetter: "ScaleInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sku", GoGetter: "Sku"},
+			_jsii_.MemberProperty{JsiiProperty: "skuInput", GoGetter: "SkuInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -133,12 +133,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-azurerm.cognitiveDeployment.CognitiveDeploymentScale",
-		reflect.TypeOf((*CognitiveDeploymentScale)(nil)).Elem(),
+		"@cdktf/provider-azurerm.cognitiveDeployment.CognitiveDeploymentSku",
+		reflect.TypeOf((*CognitiveDeploymentSku)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.cognitiveDeployment.CognitiveDeploymentScaleOutputReference",
-		reflect.TypeOf((*CognitiveDeploymentScaleOutputReference)(nil)).Elem(),
+		"@cdktf/provider-azurerm.cognitiveDeployment.CognitiveDeploymentSkuOutputReference",
+		reflect.TypeOf((*CognitiveDeploymentSkuOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacity", GoGetter: "Capacity"},
 			_jsii_.MemberProperty{JsiiProperty: "capacityInput", GoGetter: "CapacityInput"},
@@ -161,6 +161,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCapacity", GoMethod: "ResetCapacity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFamily", GoMethod: "ResetFamily"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSize", GoMethod: "ResetSize"},
@@ -173,11 +175,9 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tier", GoGetter: "Tier"},
 			_jsii_.MemberProperty{JsiiProperty: "tierInput", GoGetter: "TierInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_CognitiveDeploymentScaleOutputReference{}
+			j := jsiiProxy_CognitiveDeploymentSkuOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

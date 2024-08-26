@@ -5,14 +5,14 @@ package keyvaultmanagedhardwaresecuritymodulekey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/keyvaultmanagedhardwaresecuritymodulekey/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/keyvaultmanagedhardwaresecuritymodulekey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/key_vault_managed_hardware_security_module_key azurerm_key_vault_managed_hardware_security_module_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/key_vault_managed_hardware_security_module_key azurerm_key_vault_managed_hardware_security_module_key}.
 type KeyVaultManagedHardwareSecurityModuleKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -557,7 +557,7 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleKey) VersionedId() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/key_vault_managed_hardware_security_module_key azurerm_key_vault_managed_hardware_security_module_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/key_vault_managed_hardware_security_module_key azurerm_key_vault_managed_hardware_security_module_key} Resource.
 func NewKeyVaultManagedHardwareSecurityModuleKey(scope constructs.Construct, id *string, config *KeyVaultManagedHardwareSecurityModuleKeyConfig) KeyVaultManagedHardwareSecurityModuleKey {
 	_init_.Initialize()
 
@@ -575,7 +575,7 @@ func NewKeyVaultManagedHardwareSecurityModuleKey(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/key_vault_managed_hardware_security_module_key azurerm_key_vault_managed_hardware_security_module_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/key_vault_managed_hardware_security_module_key azurerm_key_vault_managed_hardware_security_module_key} Resource.
 func NewKeyVaultManagedHardwareSecurityModuleKey_Override(k KeyVaultManagedHardwareSecurityModuleKey, scope constructs.Construct, id *string, config *KeyVaultManagedHardwareSecurityModuleKeyConfig) {
 	_init_.Initialize()
 

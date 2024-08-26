@@ -5,9 +5,9 @@ package dataazurermrediscache
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermrediscache/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermrediscache/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -34,7 +34,6 @@ type DataAzurermRedisCacheRedisConfigurationOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DataPersistenceAuthenticationMethod() *string
-	EnableAuthentication() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataAzurermRedisCacheRedisConfiguration
@@ -182,16 +181,6 @@ func (j *jsiiProxy_DataAzurermRedisCacheRedisConfigurationOutputReference) DataP
 	_jsii_.Get(
 		j,
 		"dataPersistenceAuthenticationMethod",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermRedisCacheRedisConfigurationOutputReference) EnableAuthentication() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"enableAuthentication",
 		&returns,
 	)
 	return returns

@@ -151,10 +151,6 @@ func (j *jsiiProxy_BotConnection) validateSetServiceProviderNameParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_BotConnection) validateSetTagsParameters(val *map[string]*string) error {
-	return nil
-}
-
 func validateNewBotConnectionParameters(scope constructs.Construct, id *string, config *BotConnectionConfig) error {
 	return nil
 }

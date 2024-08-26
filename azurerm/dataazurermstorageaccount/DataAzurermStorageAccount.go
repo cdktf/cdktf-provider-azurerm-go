@@ -5,14 +5,14 @@ package dataazurermstorageaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermstorageaccount/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermstorageaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/storage_account azurerm_storage_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/storage_account azurerm_storage_account}.
 type DataAzurermStorageAccount interface {
 	cdktf.TerraformDataSource
 	AccessTier() *string
@@ -35,7 +35,6 @@ type DataAzurermStorageAccount interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DnsEndpointType() *string
-	EnableHttpsTrafficOnly() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -323,16 +322,6 @@ func (j *jsiiProxy_DataAzurermStorageAccount) DnsEndpointType() *string {
 	_jsii_.Get(
 		j,
 		"dnsEndpointType",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermStorageAccount) EnableHttpsTrafficOnly() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"enableHttpsTrafficOnly",
 		&returns,
 	)
 	return returns
@@ -1349,7 +1338,7 @@ func (j *jsiiProxy_DataAzurermStorageAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/storage_account azurerm_storage_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/storage_account azurerm_storage_account} Data Source.
 func NewDataAzurermStorageAccount(scope constructs.Construct, id *string, config *DataAzurermStorageAccountConfig) DataAzurermStorageAccount {
 	_init_.Initialize()
 
@@ -1367,7 +1356,7 @@ func NewDataAzurermStorageAccount(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/storage_account azurerm_storage_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/storage_account azurerm_storage_account} Data Source.
 func NewDataAzurermStorageAccount_Override(d DataAzurermStorageAccount, scope constructs.Construct, id *string, config *DataAzurermStorageAccountConfig) {
 	_init_.Initialize()
 

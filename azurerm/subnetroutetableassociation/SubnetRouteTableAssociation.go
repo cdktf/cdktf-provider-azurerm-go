@@ -5,14 +5,14 @@ package subnetroutetableassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/subnetroutetableassociation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/subnetroutetableassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/subnet_route_table_association azurerm_subnet_route_table_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/subnet_route_table_association azurerm_subnet_route_table_association}.
 type SubnetRouteTableAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_SubnetRouteTableAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/subnet_route_table_association azurerm_subnet_route_table_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/subnet_route_table_association azurerm_subnet_route_table_association} Resource.
 func NewSubnetRouteTableAssociation(scope constructs.Construct, id *string, config *SubnetRouteTableAssociationConfig) SubnetRouteTableAssociation {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewSubnetRouteTableAssociation(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/subnet_route_table_association azurerm_subnet_route_table_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/subnet_route_table_association azurerm_subnet_route_table_association} Resource.
 func NewSubnetRouteTableAssociation_Override(s SubnetRouteTableAssociation, scope constructs.Construct, id *string, config *SubnetRouteTableAssociationConfig) {
 	_init_.Initialize()
 

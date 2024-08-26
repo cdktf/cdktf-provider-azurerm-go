@@ -5,9 +5,9 @@ package kubernetescluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/kubernetescluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/kubernetescluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -19,9 +19,6 @@ type KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference 
 	AzureRbacEnabled() interface{}
 	SetAzureRbacEnabled(val interface{})
 	AzureRbacEnabledInput() interface{}
-	ClientAppId() *string
-	SetClientAppId(val *string)
-	ClientAppIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,15 +38,6 @@ type KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference 
 	Fqn() *string
 	InternalValue() *KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl
 	SetInternalValue(val *KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl)
-	Managed() interface{}
-	SetManaged(val interface{})
-	ManagedInput() interface{}
-	ServerAppId() *string
-	SetServerAppId(val *string)
-	ServerAppIdInput() *string
-	ServerAppSecret() *string
-	SetServerAppSecret(val *string)
-	ServerAppSecretInput() *string
 	TenantId() *string
 	SetTenantId(val *string)
 	TenantIdInput() *string
@@ -87,10 +75,6 @@ type KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAdminGroupObjectIds()
 	ResetAzureRbacEnabled()
-	ResetClientAppId()
-	ResetManaged()
-	ResetServerAppId()
-	ResetServerAppSecret()
 	ResetTenantId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -147,26 +131,6 @@ func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOu
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) ClientAppId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"clientAppId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) ClientAppIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"clientAppIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -212,66 +176,6 @@ func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOu
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) Managed() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"managed",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) ManagedInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"managedInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) ServerAppId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"serverAppId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) ServerAppIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"serverAppIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) ServerAppSecret() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"serverAppSecret",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) ServerAppSecretInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"serverAppSecretInput",
 		&returns,
 	)
 	return returns
@@ -367,17 +271,6 @@ func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOu
 	)
 }
 
-func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference)SetClientAppId(val *string) {
-	if err := j.validateSetClientAppIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"clientAppId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -407,39 +300,6 @@ func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOu
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference)SetManaged(val interface{}) {
-	if err := j.validateSetManagedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"managed",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference)SetServerAppId(val *string) {
-	if err := j.validateSetServerAppIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"serverAppId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference)SetServerAppSecret(val *string) {
-	if err := j.validateSetServerAppSecretParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"serverAppSecret",
 		val,
 	)
 }
@@ -675,38 +535,6 @@ func (k *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOu
 	_jsii_.InvokeVoid(
 		k,
 		"resetAzureRbacEnabled",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) ResetClientAppId() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetClientAppId",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) ResetManaged() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetManaged",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) ResetServerAppId() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetServerAppId",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference) ResetServerAppSecret() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetServerAppSecret",
 		nil, // no parameters
 	)
 }

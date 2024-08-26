@@ -5,14 +5,14 @@ package dataazurermappconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermappconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermappconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/app_configuration azurerm_app_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/app_configuration azurerm_app_configuration}.
 type DataAzurermAppConfiguration interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -511,7 +511,7 @@ func (j *jsiiProxy_DataAzurermAppConfiguration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/app_configuration azurerm_app_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/app_configuration azurerm_app_configuration} Data Source.
 func NewDataAzurermAppConfiguration(scope constructs.Construct, id *string, config *DataAzurermAppConfigurationConfig) DataAzurermAppConfiguration {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewDataAzurermAppConfiguration(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/app_configuration azurerm_app_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/app_configuration azurerm_app_configuration} Data Source.
 func NewDataAzurermAppConfiguration_Override(d DataAzurermAppConfiguration, scope constructs.Construct, id *string, config *DataAzurermAppConfigurationConfig) {
 	_init_.Initialize()
 

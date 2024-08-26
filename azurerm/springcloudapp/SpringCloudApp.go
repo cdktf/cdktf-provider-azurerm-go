@@ -5,14 +5,14 @@ package springcloudapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/springcloudapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/springcloudapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/spring_cloud_app azurerm_spring_cloud_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/spring_cloud_app azurerm_spring_cloud_app}.
 type SpringCloudApp interface {
 	cdktf.TerraformResource
 	AddonJson() *string
@@ -641,7 +641,7 @@ func (j *jsiiProxy_SpringCloudApp) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/spring_cloud_app azurerm_spring_cloud_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/spring_cloud_app azurerm_spring_cloud_app} Resource.
 func NewSpringCloudApp(scope constructs.Construct, id *string, config *SpringCloudAppConfig) SpringCloudApp {
 	_init_.Initialize()
 
@@ -659,7 +659,7 @@ func NewSpringCloudApp(scope constructs.Construct, id *string, config *SpringClo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/spring_cloud_app azurerm_spring_cloud_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/spring_cloud_app azurerm_spring_cloud_app} Resource.
 func NewSpringCloudApp_Override(s SpringCloudApp, scope constructs.Construct, id *string, config *SpringCloudAppConfig) {
 	_init_.Initialize()
 

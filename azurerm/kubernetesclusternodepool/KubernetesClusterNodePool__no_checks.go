@@ -115,6 +115,10 @@ func validateKubernetesClusterNodePool_IsTerraformResourceParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterNodePool) validateSetAutoScalingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterNodePool) validateSetCapacityReservationGroupIdParameters(val *string) error {
 	return nil
 }
@@ -127,22 +131,6 @@ func (j *jsiiProxy_KubernetesClusterNodePool) validateSetCountParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePool) validateSetCustomCaTrustEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesClusterNodePool) validateSetEnableAutoScalingParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesClusterNodePool) validateSetEnableHostEncryptionParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesClusterNodePool) validateSetEnableNodePublicIpParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_KubernetesClusterNodePool) validateSetEvictionPolicyParameters(val *string) error {
 	return nil
 }
@@ -152,6 +140,10 @@ func (j *jsiiProxy_KubernetesClusterNodePool) validateSetFipsEnabledParameters(v
 }
 
 func (j *jsiiProxy_KubernetesClusterNodePool) validateSetGpuInstanceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) validateSetHostEncryptionEnabledParameters(val interface{}) error {
 	return nil
 }
 
@@ -183,10 +175,6 @@ func (j *jsiiProxy_KubernetesClusterNodePool) validateSetMaxPodsParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesClusterNodePool) validateSetMessageOfTheDayParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_KubernetesClusterNodePool) validateSetMinCountParameters(val *float64) error {
 	return nil
 }
@@ -204,6 +192,10 @@ func (j *jsiiProxy_KubernetesClusterNodePool) validateSetNodeCountParameters(val
 }
 
 func (j *jsiiProxy_KubernetesClusterNodePool) validateSetNodeLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) validateSetNodePublicIpEnabledParameters(val interface{}) error {
 	return nil
 }
 

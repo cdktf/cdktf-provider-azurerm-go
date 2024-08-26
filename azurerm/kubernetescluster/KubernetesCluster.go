@@ -5,26 +5,23 @@ package kubernetescluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/kubernetescluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/kubernetescluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
 type KubernetesCluster interface {
 	cdktf.TerraformResource
 	AciConnectorLinux() KubernetesClusterAciConnectorLinuxOutputReference
 	AciConnectorLinuxInput() *KubernetesClusterAciConnectorLinux
 	ApiServerAccessProfile() KubernetesClusterApiServerAccessProfileOutputReference
 	ApiServerAccessProfileInput() *KubernetesClusterApiServerAccessProfile
-	ApiServerAuthorizedIpRanges() *[]*string
-	SetApiServerAuthorizedIpRanges(val *[]*string)
-	ApiServerAuthorizedIpRangesInput() *[]*string
-	AutomaticChannelUpgrade() *string
-	SetAutomaticChannelUpgrade(val *string)
-	AutomaticChannelUpgradeInput() *string
+	AutomaticUpgradeChannel() *string
+	SetAutomaticUpgradeChannel(val *string)
+	AutomaticUpgradeChannelInput() *string
 	AutoScalerProfile() KubernetesClusterAutoScalerProfileOutputReference
 	AutoScalerProfileInput() *KubernetesClusterAutoScalerProfile
 	AzureActiveDirectoryRoleBasedAccessControl() KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference
@@ -50,9 +47,6 @@ type KubernetesCluster interface {
 	// Experimental.
 	SetCount(val interface{})
 	CurrentKubernetesVersion() *string
-	CustomCaTrustCertificatesBase64() *[]*string
-	SetCustomCaTrustCertificatesBase64(val *[]*string)
-	CustomCaTrustCertificatesBase64Input() *[]*string
 	DefaultNodePool() KubernetesClusterDefaultNodePoolOutputReference
 	DefaultNodePoolInput() *KubernetesClusterDefaultNodePool
 	// Experimental.
@@ -71,9 +65,6 @@ type KubernetesCluster interface {
 	EdgeZone() *string
 	SetEdgeZone(val *string)
 	EdgeZoneInput() *string
-	EnablePodSecurityPolicy() interface{}
-	SetEnablePodSecurityPolicy(val interface{})
-	EnablePodSecurityPolicyInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -144,9 +135,9 @@ type KubernetesCluster interface {
 	NetworkProfileInput() *KubernetesClusterNetworkProfile
 	// The tree node.
 	Node() constructs.Node
-	NodeOsChannelUpgrade() *string
-	SetNodeOsChannelUpgrade(val *string)
-	NodeOsChannelUpgradeInput() *string
+	NodeOsUpgradeChannel() *string
+	SetNodeOsUpgradeChannel(val *string)
+	NodeOsUpgradeChannelInput() *string
 	NodeResourceGroup() *string
 	SetNodeResourceGroup(val *string)
 	NodeResourceGroupId() *string
@@ -179,9 +170,6 @@ type KubernetesCluster interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
-	PublicNetworkAccessEnabled() interface{}
-	SetPublicNetworkAccessEnabled(val interface{})
-	PublicNetworkAccessEnabledInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -297,19 +285,16 @@ type KubernetesCluster interface {
 	PutWorkloadAutoscalerProfile(value *KubernetesClusterWorkloadAutoscalerProfile)
 	ResetAciConnectorLinux()
 	ResetApiServerAccessProfile()
-	ResetApiServerAuthorizedIpRanges()
-	ResetAutomaticChannelUpgrade()
+	ResetAutomaticUpgradeChannel()
 	ResetAutoScalerProfile()
 	ResetAzureActiveDirectoryRoleBasedAccessControl()
 	ResetAzurePolicyEnabled()
 	ResetConfidentialComputing()
 	ResetCostAnalysisEnabled()
-	ResetCustomCaTrustCertificatesBase64()
 	ResetDiskEncryptionSetId()
 	ResetDnsPrefix()
 	ResetDnsPrefixPrivateCluster()
 	ResetEdgeZone()
-	ResetEnablePodSecurityPolicy()
 	ResetHttpApplicationRoutingEnabled()
 	ResetHttpProxyConfig()
 	ResetId()
@@ -329,7 +314,7 @@ type KubernetesCluster interface {
 	ResetMicrosoftDefender()
 	ResetMonitorMetrics()
 	ResetNetworkProfile()
-	ResetNodeOsChannelUpgrade()
+	ResetNodeOsUpgradeChannel()
 	ResetNodeResourceGroup()
 	ResetOidcIssuerEnabled()
 	ResetOmsAgent()
@@ -340,7 +325,6 @@ type KubernetesCluster interface {
 	ResetPrivateClusterEnabled()
 	ResetPrivateClusterPublicFqdnEnabled()
 	ResetPrivateDnsZoneId()
-	ResetPublicNetworkAccessEnabled()
 	ResetRoleBasedAccessControlEnabled()
 	ResetRunCommandEnabled()
 	ResetServiceMeshProfile()
@@ -412,41 +396,21 @@ func (j *jsiiProxy_KubernetesCluster) ApiServerAccessProfileInput() *KubernetesC
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesCluster) ApiServerAuthorizedIpRanges() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"apiServerAuthorizedIpRanges",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesCluster) ApiServerAuthorizedIpRangesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"apiServerAuthorizedIpRangesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesCluster) AutomaticChannelUpgrade() *string {
+func (j *jsiiProxy_KubernetesCluster) AutomaticUpgradeChannel() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"automaticChannelUpgrade",
+		"automaticUpgradeChannel",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesCluster) AutomaticChannelUpgradeInput() *string {
+func (j *jsiiProxy_KubernetesCluster) AutomaticUpgradeChannelInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"automaticChannelUpgradeInput",
+		"automaticUpgradeChannelInput",
 		&returns,
 	)
 	return returns
@@ -602,26 +566,6 @@ func (j *jsiiProxy_KubernetesCluster) CurrentKubernetesVersion() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesCluster) CustomCaTrustCertificatesBase64() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"customCaTrustCertificatesBase64",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesCluster) CustomCaTrustCertificatesBase64Input() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"customCaTrustCertificatesBase64Input",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_KubernetesCluster) DefaultNodePool() KubernetesClusterDefaultNodePoolOutputReference {
 	var returns KubernetesClusterDefaultNodePoolOutputReference
 	_jsii_.Get(
@@ -727,26 +671,6 @@ func (j *jsiiProxy_KubernetesCluster) EdgeZoneInput() *string {
 	_jsii_.Get(
 		j,
 		"edgeZoneInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesCluster) EnablePodSecurityPolicy() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enablePodSecurityPolicy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesCluster) EnablePodSecurityPolicyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enablePodSecurityPolicyInput",
 		&returns,
 	)
 	return returns
@@ -1282,21 +1206,21 @@ func (j *jsiiProxy_KubernetesCluster) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesCluster) NodeOsChannelUpgrade() *string {
+func (j *jsiiProxy_KubernetesCluster) NodeOsUpgradeChannel() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"nodeOsChannelUpgrade",
+		"nodeOsUpgradeChannel",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesCluster) NodeOsChannelUpgradeInput() *string {
+func (j *jsiiProxy_KubernetesCluster) NodeOsUpgradeChannelInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"nodeOsChannelUpgradeInput",
+		"nodeOsUpgradeChannelInput",
 		&returns,
 	)
 	return returns
@@ -1497,26 +1421,6 @@ func (j *jsiiProxy_KubernetesCluster) Provisioners() *[]interface{} {
 	_jsii_.Get(
 		j,
 		"provisioners",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesCluster) PublicNetworkAccessEnabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"publicNetworkAccessEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KubernetesCluster) PublicNetworkAccessEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"publicNetworkAccessEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1843,7 +1747,7 @@ func (j *jsiiProxy_KubernetesCluster) WorkloadIdentityEnabledInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
 	_init_.Initialize()
 
@@ -1861,7 +1765,7 @@ func NewKubernetesCluster(scope constructs.Construct, id *string, config *Kubern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Construct, id *string, config *KubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -1872,24 +1776,13 @@ func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_KubernetesCluster)SetApiServerAuthorizedIpRanges(val *[]*string) {
-	if err := j.validateSetApiServerAuthorizedIpRangesParameters(val); err != nil {
+func (j *jsiiProxy_KubernetesCluster)SetAutomaticUpgradeChannel(val *string) {
+	if err := j.validateSetAutomaticUpgradeChannelParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"apiServerAuthorizedIpRanges",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KubernetesCluster)SetAutomaticChannelUpgrade(val *string) {
-	if err := j.validateSetAutomaticChannelUpgradeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"automaticChannelUpgrade",
+		"automaticUpgradeChannel",
 		val,
 	)
 }
@@ -1934,17 +1827,6 @@ func (j *jsiiProxy_KubernetesCluster)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KubernetesCluster)SetCustomCaTrustCertificatesBase64(val *[]*string) {
-	if err := j.validateSetCustomCaTrustCertificatesBase64Parameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"customCaTrustCertificatesBase64",
 		val,
 	)
 }
@@ -1997,17 +1879,6 @@ func (j *jsiiProxy_KubernetesCluster)SetEdgeZone(val *string) {
 	_jsii_.Set(
 		j,
 		"edgeZone",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KubernetesCluster)SetEnablePodSecurityPolicy(val interface{}) {
-	if err := j.validateSetEnablePodSecurityPolicyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enablePodSecurityPolicy",
 		val,
 	)
 }
@@ -2119,13 +1990,13 @@ func (j *jsiiProxy_KubernetesCluster)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesCluster)SetNodeOsChannelUpgrade(val *string) {
-	if err := j.validateSetNodeOsChannelUpgradeParameters(val); err != nil {
+func (j *jsiiProxy_KubernetesCluster)SetNodeOsUpgradeChannel(val *string) {
+	if err := j.validateSetNodeOsUpgradeChannelParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"nodeOsChannelUpgrade",
+		"nodeOsUpgradeChannel",
 		val,
 	)
 }
@@ -2211,17 +2082,6 @@ func (j *jsiiProxy_KubernetesCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KubernetesCluster)SetPublicNetworkAccessEnabled(val interface{}) {
-	if err := j.validateSetPublicNetworkAccessEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"publicNetworkAccessEnabled",
 		val,
 	)
 }
@@ -2969,18 +2829,10 @@ func (k *jsiiProxy_KubernetesCluster) ResetApiServerAccessProfile() {
 	)
 }
 
-func (k *jsiiProxy_KubernetesCluster) ResetApiServerAuthorizedIpRanges() {
+func (k *jsiiProxy_KubernetesCluster) ResetAutomaticUpgradeChannel() {
 	_jsii_.InvokeVoid(
 		k,
-		"resetApiServerAuthorizedIpRanges",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KubernetesCluster) ResetAutomaticChannelUpgrade() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetAutomaticChannelUpgrade",
+		"resetAutomaticUpgradeChannel",
 		nil, // no parameters
 	)
 }
@@ -3025,14 +2877,6 @@ func (k *jsiiProxy_KubernetesCluster) ResetCostAnalysisEnabled() {
 	)
 }
 
-func (k *jsiiProxy_KubernetesCluster) ResetCustomCaTrustCertificatesBase64() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetCustomCaTrustCertificatesBase64",
-		nil, // no parameters
-	)
-}
-
 func (k *jsiiProxy_KubernetesCluster) ResetDiskEncryptionSetId() {
 	_jsii_.InvokeVoid(
 		k,
@@ -3061,14 +2905,6 @@ func (k *jsiiProxy_KubernetesCluster) ResetEdgeZone() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetEdgeZone",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KubernetesCluster) ResetEnablePodSecurityPolicy() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetEnablePodSecurityPolicy",
 		nil, // no parameters
 	)
 }
@@ -3225,10 +3061,10 @@ func (k *jsiiProxy_KubernetesCluster) ResetNetworkProfile() {
 	)
 }
 
-func (k *jsiiProxy_KubernetesCluster) ResetNodeOsChannelUpgrade() {
+func (k *jsiiProxy_KubernetesCluster) ResetNodeOsUpgradeChannel() {
 	_jsii_.InvokeVoid(
 		k,
-		"resetNodeOsChannelUpgrade",
+		"resetNodeOsUpgradeChannel",
 		nil, // no parameters
 	)
 }
@@ -3293,14 +3129,6 @@ func (k *jsiiProxy_KubernetesCluster) ResetPrivateDnsZoneId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetPrivateDnsZoneId",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KubernetesCluster) ResetPublicNetworkAccessEnabled() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetPublicNetworkAccessEnabled",
 		nil, // no parameters
 	)
 }

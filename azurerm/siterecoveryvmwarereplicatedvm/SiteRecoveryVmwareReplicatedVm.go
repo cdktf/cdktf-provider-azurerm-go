@@ -5,14 +5,14 @@ package siterecoveryvmwarereplicatedvm
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/siterecoveryvmwarereplicatedvm/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/siterecoveryvmwarereplicatedvm/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/site_recovery_vmware_replicated_vm azurerm_site_recovery_vmware_replicated_vm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/site_recovery_vmware_replicated_vm azurerm_site_recovery_vmware_replicated_vm}.
 type SiteRecoveryVmwareReplicatedVm interface {
 	cdktf.TerraformResource
 	ApplianceName() *string
@@ -854,7 +854,7 @@ func (j *jsiiProxy_SiteRecoveryVmwareReplicatedVm) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/site_recovery_vmware_replicated_vm azurerm_site_recovery_vmware_replicated_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/site_recovery_vmware_replicated_vm azurerm_site_recovery_vmware_replicated_vm} Resource.
 func NewSiteRecoveryVmwareReplicatedVm(scope constructs.Construct, id *string, config *SiteRecoveryVmwareReplicatedVmConfig) SiteRecoveryVmwareReplicatedVm {
 	_init_.Initialize()
 
@@ -872,7 +872,7 @@ func NewSiteRecoveryVmwareReplicatedVm(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/site_recovery_vmware_replicated_vm azurerm_site_recovery_vmware_replicated_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/site_recovery_vmware_replicated_vm azurerm_site_recovery_vmware_replicated_vm} Resource.
 func NewSiteRecoveryVmwareReplicatedVm_Override(s SiteRecoveryVmwareReplicatedVm, scope constructs.Construct, id *string, config *SiteRecoveryVmwareReplicatedVmConfig) {
 	_init_.Initialize()
 

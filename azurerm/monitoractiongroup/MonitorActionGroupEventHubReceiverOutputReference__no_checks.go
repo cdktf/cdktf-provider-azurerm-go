@@ -59,10 +59,6 @@ func (j *jsiiProxy_MonitorActionGroupEventHubReceiverOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_MonitorActionGroupEventHubReceiverOutputReference) validateSetEventHubIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_MonitorActionGroupEventHubReceiverOutputReference) validateSetEventHubNameParameters(val *string) error {
 	return nil
 }

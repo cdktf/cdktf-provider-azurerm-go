@@ -5,14 +5,14 @@ package dataazurermdatasharedatasetblobstorage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermdatasharedatasetblobstorage/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermdatasharedatasetblobstorage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/data_share_dataset_blob_storage azurerm_data_share_dataset_blob_storage}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/data_share_dataset_blob_storage azurerm_data_share_dataset_blob_storage}.
 type DataAzurermDataShareDatasetBlobStorage interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DataAzurermDataShareDatasetBlobStorage) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/data_share_dataset_blob_storage azurerm_data_share_dataset_blob_storage} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/data_share_dataset_blob_storage azurerm_data_share_dataset_blob_storage} Data Source.
 func NewDataAzurermDataShareDatasetBlobStorage(scope constructs.Construct, id *string, config *DataAzurermDataShareDatasetBlobStorageConfig) DataAzurermDataShareDatasetBlobStorage {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewDataAzurermDataShareDatasetBlobStorage(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/data_share_dataset_blob_storage azurerm_data_share_dataset_blob_storage} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/data_share_dataset_blob_storage azurerm_data_share_dataset_blob_storage} Data Source.
 func NewDataAzurermDataShareDatasetBlobStorage_Override(d DataAzurermDataShareDatasetBlobStorage, scope constructs.Construct, id *string, config *DataAzurermDataShareDatasetBlobStorageConfig) {
 	_init_.Initialize()
 

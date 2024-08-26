@@ -5,14 +5,14 @@ package cosmosdbaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/cosmosdbaccount/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/cosmosdbaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cosmosdb_account azurerm_cosmosdb_account}.
 type CosmosdbAccount interface {
 	cdktf.TerraformResource
 	AccessKeyMetadataWritesEnabled() interface{}
@@ -41,7 +41,6 @@ type CosmosdbAccount interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
-	ConnectionStrings() *[]*string
 	ConsistencyPolicy() CosmosdbAccountConsistencyPolicyOutputReference
 	ConsistencyPolicyInput() *CosmosdbAccountConsistencyPolicy
 	// Experimental.
@@ -62,15 +61,6 @@ type CosmosdbAccount interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnableAutomaticFailover() interface{}
-	SetEnableAutomaticFailover(val interface{})
-	EnableAutomaticFailoverInput() interface{}
-	EnableFreeTier() interface{}
-	SetEnableFreeTier(val interface{})
-	EnableFreeTierInput() interface{}
-	EnableMultipleWriteLocations() interface{}
-	SetEnableMultipleWriteLocations(val interface{})
-	EnableMultipleWriteLocationsInput() interface{}
 	Endpoint() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -90,9 +80,9 @@ type CosmosdbAccount interface {
 	Identity() CosmosdbAccountIdentityOutputReference
 	IdentityInput() *CosmosdbAccountIdentity
 	IdInput() *string
-	IpRangeFilter() *string
-	SetIpRangeFilter(val *string)
-	IpRangeFilterInput() *string
+	IpRangeFilter() *[]*string
+	SetIpRangeFilter(val *[]*string)
+	IpRangeFilterInput() *[]*string
 	IsVirtualNetworkFilterEnabled() interface{}
 	SetIsVirtualNetworkFilterEnabled(val interface{})
 	IsVirtualNetworkFilterEnabledInput() interface{}
@@ -248,9 +238,6 @@ type CosmosdbAccount interface {
 	ResetCorsRule()
 	ResetCreateMode()
 	ResetDefaultIdentityType()
-	ResetEnableAutomaticFailover()
-	ResetEnableFreeTier()
-	ResetEnableMultipleWriteLocations()
 	ResetFreeTierEnabled()
 	ResetId()
 	ResetIdentity()
@@ -471,16 +458,6 @@ func (j *jsiiProxy_CosmosdbAccount) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CosmosdbAccount) ConnectionStrings() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"connectionStrings",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CosmosdbAccount) ConsistencyPolicy() CosmosdbAccountConsistencyPolicyOutputReference {
 	var returns CosmosdbAccountConsistencyPolicyOutputReference
 	_jsii_.Get(
@@ -586,66 +563,6 @@ func (j *jsiiProxy_CosmosdbAccount) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CosmosdbAccount) EnableAutomaticFailover() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableAutomaticFailover",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CosmosdbAccount) EnableAutomaticFailoverInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableAutomaticFailoverInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CosmosdbAccount) EnableFreeTier() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableFreeTier",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CosmosdbAccount) EnableFreeTierInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableFreeTierInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CosmosdbAccount) EnableMultipleWriteLocations() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableMultipleWriteLocations",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CosmosdbAccount) EnableMultipleWriteLocationsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableMultipleWriteLocationsInput",
 		&returns,
 	)
 	return returns
@@ -771,8 +688,8 @@ func (j *jsiiProxy_CosmosdbAccount) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CosmosdbAccount) IpRangeFilter() *string {
-	var returns *string
+func (j *jsiiProxy_CosmosdbAccount) IpRangeFilter() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"ipRangeFilter",
@@ -781,8 +698,8 @@ func (j *jsiiProxy_CosmosdbAccount) IpRangeFilter() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CosmosdbAccount) IpRangeFilterInput() *string {
-	var returns *string
+func (j *jsiiProxy_CosmosdbAccount) IpRangeFilterInput() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"ipRangeFilterInput",
@@ -1392,7 +1309,7 @@ func (j *jsiiProxy_CosmosdbAccount) WriteEndpoints() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
 func NewCosmosdbAccount(scope constructs.Construct, id *string, config *CosmosdbAccountConfig) CosmosdbAccount {
 	_init_.Initialize()
 
@@ -1410,7 +1327,7 @@ func NewCosmosdbAccount(scope constructs.Construct, id *string, config *Cosmosdb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
 func NewCosmosdbAccount_Override(c CosmosdbAccount, scope constructs.Construct, id *string, config *CosmosdbAccountConfig) {
 	_init_.Initialize()
 
@@ -1517,39 +1434,6 @@ func (j *jsiiProxy_CosmosdbAccount)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CosmosdbAccount)SetEnableAutomaticFailover(val interface{}) {
-	if err := j.validateSetEnableAutomaticFailoverParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enableAutomaticFailover",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CosmosdbAccount)SetEnableFreeTier(val interface{}) {
-	if err := j.validateSetEnableFreeTierParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enableFreeTier",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CosmosdbAccount)SetEnableMultipleWriteLocations(val interface{}) {
-	if err := j.validateSetEnableMultipleWriteLocationsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enableMultipleWriteLocations",
-		val,
-	)
-}
-
 func (j *jsiiProxy_CosmosdbAccount)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -1580,7 +1464,7 @@ func (j *jsiiProxy_CosmosdbAccount)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CosmosdbAccount)SetIpRangeFilter(val *string) {
+func (j *jsiiProxy_CosmosdbAccount)SetIpRangeFilter(val *[]*string) {
 	if err := j.validateSetIpRangeFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -2355,30 +2239,6 @@ func (c *jsiiProxy_CosmosdbAccount) ResetDefaultIdentityType() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDefaultIdentityType",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CosmosdbAccount) ResetEnableAutomaticFailover() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetEnableAutomaticFailover",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CosmosdbAccount) ResetEnableFreeTier() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetEnableFreeTier",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CosmosdbAccount) ResetEnableMultipleWriteLocations() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetEnableMultipleWriteLocations",
 		nil, // no parameters
 	)
 }

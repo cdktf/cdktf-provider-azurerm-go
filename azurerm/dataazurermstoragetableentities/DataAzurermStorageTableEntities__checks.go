@@ -254,23 +254,7 @@ func (j *jsiiProxy_DataAzurermStorageTableEntities) validateSetSelectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermStorageTableEntities) validateSetStorageAccountNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataAzurermStorageTableEntities) validateSetStorageTableIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermStorageTableEntities) validateSetTableNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

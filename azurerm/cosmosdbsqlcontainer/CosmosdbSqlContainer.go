@@ -5,14 +5,14 @@ package cosmosdbsqlcontainer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/cosmosdbsqlcontainer/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/cosmosdbsqlcontainer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container}.
 type CosmosdbSqlContainer interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -72,9 +72,6 @@ type CosmosdbSqlContainer interface {
 	PartitionKeyKind() *string
 	SetPartitionKeyKind(val *string)
 	PartitionKeyKindInput() *string
-	PartitionKeyPath() *string
-	SetPartitionKeyPath(val *string)
-	PartitionKeyPathInput() *string
 	PartitionKeyPaths() *[]*string
 	SetPartitionKeyPaths(val *[]*string)
 	PartitionKeyPathsInput() *[]*string
@@ -165,8 +162,6 @@ type CosmosdbSqlContainer interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPartitionKeyKind()
-	ResetPartitionKeyPath()
-	ResetPartitionKeyPaths()
 	ResetPartitionKeyVersion()
 	ResetThroughput()
 	ResetTimeouts()
@@ -489,26 +484,6 @@ func (j *jsiiProxy_CosmosdbSqlContainer) PartitionKeyKindInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CosmosdbSqlContainer) PartitionKeyPath() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"partitionKeyPath",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CosmosdbSqlContainer) PartitionKeyPathInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"partitionKeyPathInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CosmosdbSqlContainer) PartitionKeyPaths() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -690,7 +665,7 @@ func (j *jsiiProxy_CosmosdbSqlContainer) UniqueKeyInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container} Resource.
 func NewCosmosdbSqlContainer(scope constructs.Construct, id *string, config *CosmosdbSqlContainerConfig) CosmosdbSqlContainer {
 	_init_.Initialize()
 
@@ -708,7 +683,7 @@ func NewCosmosdbSqlContainer(scope constructs.Construct, id *string, config *Cos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container} Resource.
 func NewCosmosdbSqlContainer_Override(c CosmosdbSqlContainer, scope constructs.Construct, id *string, config *CosmosdbSqlContainerConfig) {
 	_init_.Initialize()
 
@@ -841,17 +816,6 @@ func (j *jsiiProxy_CosmosdbSqlContainer)SetPartitionKeyKind(val *string) {
 	_jsii_.Set(
 		j,
 		"partitionKeyKind",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CosmosdbSqlContainer)SetPartitionKeyPath(val *string) {
-	if err := j.validateSetPartitionKeyPathParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"partitionKeyPath",
 		val,
 	)
 }
@@ -1387,22 +1351,6 @@ func (c *jsiiProxy_CosmosdbSqlContainer) ResetPartitionKeyKind() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetPartitionKeyKind",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CosmosdbSqlContainer) ResetPartitionKeyPath() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetPartitionKeyPath",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CosmosdbSqlContainer) ResetPartitionKeyPaths() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetPartitionKeyPaths",
 		nil, // no parameters
 	)
 }

@@ -111,10 +111,6 @@ func (j *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation) validateSetLif
 	return nil
 }
 
-func (j *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation) validateSetNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_RecoveryServicesVaultResourceGuardAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

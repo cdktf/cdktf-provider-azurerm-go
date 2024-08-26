@@ -5,14 +5,14 @@ package resourcepolicyassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/resourcepolicyassignment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/resourcepolicyassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/resource_policy_assignment azurerm_resource_policy_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/resource_policy_assignment azurerm_resource_policy_assignment}.
 type ResourcePolicyAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -667,7 +667,7 @@ func (j *jsiiProxy_ResourcePolicyAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/resource_policy_assignment azurerm_resource_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/resource_policy_assignment azurerm_resource_policy_assignment} Resource.
 func NewResourcePolicyAssignment(scope constructs.Construct, id *string, config *ResourcePolicyAssignmentConfig) ResourcePolicyAssignment {
 	_init_.Initialize()
 
@@ -685,7 +685,7 @@ func NewResourcePolicyAssignment(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/resource_policy_assignment azurerm_resource_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/resource_policy_assignment azurerm_resource_policy_assignment} Resource.
 func NewResourcePolicyAssignment_Override(r ResourcePolicyAssignment, scope constructs.Construct, id *string, config *ResourcePolicyAssignmentConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package apimanagementidentityproviderfacebook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/apimanagementidentityproviderfacebook/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/apimanagementidentityproviderfacebook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_identity_provider_facebook azurerm_api_management_identity_provider_facebook}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_identity_provider_facebook azurerm_api_management_identity_provider_facebook}.
 type ApiManagementIdentityProviderFacebook interface {
 	cdktf.TerraformResource
 	ApiManagementName() *string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_ApiManagementIdentityProviderFacebook) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_identity_provider_facebook azurerm_api_management_identity_provider_facebook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_identity_provider_facebook azurerm_api_management_identity_provider_facebook} Resource.
 func NewApiManagementIdentityProviderFacebook(scope constructs.Construct, id *string, config *ApiManagementIdentityProviderFacebookConfig) ApiManagementIdentityProviderFacebook {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewApiManagementIdentityProviderFacebook(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_identity_provider_facebook azurerm_api_management_identity_provider_facebook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_identity_provider_facebook azurerm_api_management_identity_provider_facebook} Resource.
 func NewApiManagementIdentityProviderFacebook_Override(a ApiManagementIdentityProviderFacebook, scope constructs.Construct, id *string, config *ApiManagementIdentityProviderFacebookConfig) {
 	_init_.Initialize()
 

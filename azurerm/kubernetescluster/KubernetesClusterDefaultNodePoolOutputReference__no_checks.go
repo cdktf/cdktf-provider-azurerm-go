@@ -67,6 +67,10 @@ func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateReso
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetAutoScalingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetCapacityReservationGroupIdParameters(val *string) error {
 	return nil
 }
@@ -79,27 +83,15 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetCustomCaTrustEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetEnableAutoScalingParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetEnableHostEncryptionParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetEnableNodePublicIpParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetFipsEnabledParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetGpuInstanceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetHostEncryptionEnabledParameters(val interface{}) error {
 	return nil
 }
 
@@ -123,10 +115,6 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetM
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetMessageOfTheDayParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetMinCountParameters(val *float64) error {
 	return nil
 }
@@ -143,11 +131,11 @@ func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetN
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetNodePublicIpPrefixIdParameters(val *string) error {
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetNodePublicIpEnabledParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetNodeTaintsParameters(val *[]*string) error {
+func (j *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) validateSetNodePublicIpPrefixIdParameters(val *string) error {
 	return nil
 }
 

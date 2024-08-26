@@ -433,14 +433,6 @@ func (j *jsiiProxy_MachineLearningComputeInstance) validateSetLocalAuthEnabledPa
 	return nil
 }
 
-func (j *jsiiProxy_MachineLearningComputeInstance) validateSetLocationParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_MachineLearningComputeInstance) validateSetMachineLearningWorkspaceIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

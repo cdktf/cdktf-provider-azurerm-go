@@ -59,10 +59,6 @@ func (j *jsiiProxy_ContainerRegistryEncryptionOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_ContainerRegistryEncryptionOutputReference) validateSetEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ContainerRegistryEncryptionOutputReference) validateSetIdentityClientIdParameters(val *string) error {
 	return nil
 }

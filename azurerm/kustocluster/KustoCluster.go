@@ -5,14 +5,14 @@ package kustocluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/kustocluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/kustocluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kusto_cluster azurerm_kusto_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kusto_cluster azurerm_kusto_cluster}.
 type KustoCluster interface {
 	cdktf.TerraformResource
 	AllowedFqdns() *[]*string
@@ -47,9 +47,6 @@ type KustoCluster interface {
 	DoubleEncryptionEnabled() interface{}
 	SetDoubleEncryptionEnabled(val interface{})
 	DoubleEncryptionEnabledInput() interface{}
-	Engine() *string
-	SetEngine(val *string)
-	EngineInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -63,9 +60,8 @@ type KustoCluster interface {
 	Identity() KustoClusterIdentityOutputReference
 	IdentityInput() *KustoClusterIdentity
 	IdInput() *string
-	LanguageExtensions() *[]*string
-	SetLanguageExtensions(val *[]*string)
-	LanguageExtensionsInput() *[]*string
+	LanguageExtensions() KustoClusterLanguageExtensionsList
+	LanguageExtensionsInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -174,6 +170,7 @@ type KustoCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutIdentity(value *KustoClusterIdentity)
+	PutLanguageExtensions(value interface{})
 	PutOptimizedAutoScale(value *KustoClusterOptimizedAutoScale)
 	PutSku(value *KustoClusterSku)
 	PutTimeouts(value *KustoClusterTimeouts)
@@ -183,7 +180,6 @@ type KustoCluster interface {
 	ResetAutoStopEnabled()
 	ResetDiskEncryptionEnabled()
 	ResetDoubleEncryptionEnabled()
-	ResetEngine()
 	ResetId()
 	ResetIdentity()
 	ResetLanguageExtensions()
@@ -379,26 +375,6 @@ func (j *jsiiProxy_KustoCluster) DoubleEncryptionEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KustoCluster) Engine() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"engine",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KustoCluster) EngineInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"engineInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_KustoCluster) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -469,8 +445,8 @@ func (j *jsiiProxy_KustoCluster) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KustoCluster) LanguageExtensions() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_KustoCluster) LanguageExtensions() KustoClusterLanguageExtensionsList {
+	var returns KustoClusterLanguageExtensionsList
 	_jsii_.Get(
 		j,
 		"languageExtensions",
@@ -479,8 +455,8 @@ func (j *jsiiProxy_KustoCluster) LanguageExtensions() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_KustoCluster) LanguageExtensionsInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_KustoCluster) LanguageExtensionsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"languageExtensionsInput",
@@ -880,7 +856,7 @@ func (j *jsiiProxy_KustoCluster) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kusto_cluster azurerm_kusto_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kusto_cluster azurerm_kusto_cluster} Resource.
 func NewKustoCluster(scope constructs.Construct, id *string, config *KustoClusterConfig) KustoCluster {
 	_init_.Initialize()
 
@@ -898,7 +874,7 @@ func NewKustoCluster(scope constructs.Construct, id *string, config *KustoCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kusto_cluster azurerm_kusto_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kusto_cluster azurerm_kusto_cluster} Resource.
 func NewKustoCluster_Override(k KustoCluster, scope constructs.Construct, id *string, config *KustoClusterConfig) {
 	_init_.Initialize()
 
@@ -994,17 +970,6 @@ func (j *jsiiProxy_KustoCluster)SetDoubleEncryptionEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KustoCluster)SetEngine(val *string) {
-	if err := j.validateSetEngineParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"engine",
-		val,
-	)
-}
-
 func (j *jsiiProxy_KustoCluster)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -1020,17 +985,6 @@ func (j *jsiiProxy_KustoCluster)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_KustoCluster)SetLanguageExtensions(val *[]*string) {
-	if err := j.validateSetLanguageExtensionsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"languageExtensions",
 		val,
 	)
 }
@@ -1550,6 +1504,17 @@ func (k *jsiiProxy_KustoCluster) PutIdentity(value *KustoClusterIdentity) {
 	)
 }
 
+func (k *jsiiProxy_KustoCluster) PutLanguageExtensions(value interface{}) {
+	if err := k.validatePutLanguageExtensionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putLanguageExtensions",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KustoCluster) PutOptimizedAutoScale(value *KustoClusterOptimizedAutoScale) {
 	if err := k.validatePutOptimizedAutoScaleParameters(value); err != nil {
 		panic(err)
@@ -1630,14 +1595,6 @@ func (k *jsiiProxy_KustoCluster) ResetDoubleEncryptionEnabled() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetDoubleEncryptionEnabled",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KustoCluster) ResetEngine() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetEngine",
 		nil, // no parameters
 	)
 }

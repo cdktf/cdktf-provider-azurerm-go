@@ -191,10 +191,6 @@ func (j *jsiiProxy_StorageAccount) validateSetEdgeZoneParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_StorageAccount) validateSetEnableHttpsTrafficOnlyParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_StorageAccount) validateSetHttpsTrafficOnlyEnabledParameters(val interface{}) error {
 	return nil
 }

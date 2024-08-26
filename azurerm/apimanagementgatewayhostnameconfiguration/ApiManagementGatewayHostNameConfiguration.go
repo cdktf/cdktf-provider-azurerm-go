@@ -5,14 +5,14 @@ package apimanagementgatewayhostnameconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/apimanagementgatewayhostnameconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/apimanagementgatewayhostnameconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration}.
 type ApiManagementGatewayHostNameConfiguration interface {
 	cdktf.TerraformResource
 	ApiManagementId() *string
@@ -545,7 +545,7 @@ func (j *jsiiProxy_ApiManagementGatewayHostNameConfiguration) Tls11EnabledInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration} Resource.
 func NewApiManagementGatewayHostNameConfiguration(scope constructs.Construct, id *string, config *ApiManagementGatewayHostNameConfigurationConfig) ApiManagementGatewayHostNameConfiguration {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewApiManagementGatewayHostNameConfiguration(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration} Resource.
 func NewApiManagementGatewayHostNameConfiguration_Override(a ApiManagementGatewayHostNameConfiguration, scope constructs.Construct, id *string, config *ApiManagementGatewayHostNameConfigurationConfig) {
 	_init_.Initialize()
 

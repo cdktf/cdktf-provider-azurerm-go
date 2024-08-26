@@ -79,10 +79,6 @@ func (m *jsiiProxy_MonitorAadDiagnosticSetting) validatePutEnabledLogParameters(
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAadDiagnosticSetting) validatePutLogParameters(value interface{}) error {
-	return nil
-}
-
 func (m *jsiiProxy_MonitorAadDiagnosticSetting) validatePutTimeoutsParameters(value *MonitorAadDiagnosticSettingTimeouts) error {
 	return nil
 }

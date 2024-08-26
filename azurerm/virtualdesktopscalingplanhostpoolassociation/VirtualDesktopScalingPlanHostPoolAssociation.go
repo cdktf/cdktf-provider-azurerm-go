@@ -5,14 +5,14 @@ package virtualdesktopscalingplanhostpoolassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/virtualdesktopscalingplanhostpoolassociation/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/virtualdesktopscalingplanhostpoolassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_desktop_scaling_plan_host_pool_association azurerm_virtual_desktop_scaling_plan_host_pool_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_desktop_scaling_plan_host_pool_association azurerm_virtual_desktop_scaling_plan_host_pool_association}.
 type VirtualDesktopScalingPlanHostPoolAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_VirtualDesktopScalingPlanHostPoolAssociation) TimeoutsInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_desktop_scaling_plan_host_pool_association azurerm_virtual_desktop_scaling_plan_host_pool_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_desktop_scaling_plan_host_pool_association azurerm_virtual_desktop_scaling_plan_host_pool_association} Resource.
 func NewVirtualDesktopScalingPlanHostPoolAssociation(scope constructs.Construct, id *string, config *VirtualDesktopScalingPlanHostPoolAssociationConfig) VirtualDesktopScalingPlanHostPoolAssociation {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewVirtualDesktopScalingPlanHostPoolAssociation(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_desktop_scaling_plan_host_pool_association azurerm_virtual_desktop_scaling_plan_host_pool_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_desktop_scaling_plan_host_pool_association azurerm_virtual_desktop_scaling_plan_host_pool_association} Resource.
 func NewVirtualDesktopScalingPlanHostPoolAssociation_Override(v VirtualDesktopScalingPlanHostPoolAssociation, scope constructs.Construct, id *string, config *VirtualDesktopScalingPlanHostPoolAssociationConfig) {
 	_init_.Initialize()
 

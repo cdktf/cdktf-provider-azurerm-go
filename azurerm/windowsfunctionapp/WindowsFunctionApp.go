@@ -5,14 +5,14 @@ package windowsfunctionapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/windowsfunctionapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/windowsfunctionapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/windows_function_app azurerm_windows_function_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/windows_function_app azurerm_windows_function_app}.
 type WindowsFunctionApp interface {
 	cdktf.TerraformResource
 	AppSettings() *map[string]*string
@@ -160,6 +160,9 @@ type WindowsFunctionApp interface {
 	VirtualNetworkSubnetId() *string
 	SetVirtualNetworkSubnetId(val *string)
 	VirtualNetworkSubnetIdInput() *string
+	VnetImagePullEnabled() interface{}
+	SetVnetImagePullEnabled(val interface{})
+	VnetImagePullEnabledInput() interface{}
 	WebdeployPublishBasicAuthenticationEnabled() interface{}
 	SetWebdeployPublishBasicAuthenticationEnabled(val interface{})
 	WebdeployPublishBasicAuthenticationEnabledInput() interface{}
@@ -249,6 +252,7 @@ type WindowsFunctionApp interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetVirtualNetworkSubnetId()
+	ResetVnetImagePullEnabled()
 	ResetWebdeployPublishBasicAuthenticationEnabled()
 	ResetZipDeployFile()
 	SynthesizeAttributes() *map[string]interface{}
@@ -1179,6 +1183,26 @@ func (j *jsiiProxy_WindowsFunctionApp) VirtualNetworkSubnetIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WindowsFunctionApp) VnetImagePullEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vnetImagePullEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsFunctionApp) VnetImagePullEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vnetImagePullEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsFunctionApp) WebdeployPublishBasicAuthenticationEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1220,7 +1244,7 @@ func (j *jsiiProxy_WindowsFunctionApp) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/windows_function_app azurerm_windows_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/windows_function_app azurerm_windows_function_app} Resource.
 func NewWindowsFunctionApp(scope constructs.Construct, id *string, config *WindowsFunctionAppConfig) WindowsFunctionApp {
 	_init_.Initialize()
 
@@ -1238,7 +1262,7 @@ func NewWindowsFunctionApp(scope constructs.Construct, id *string, config *Windo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/windows_function_app azurerm_windows_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/windows_function_app azurerm_windows_function_app} Resource.
 func NewWindowsFunctionApp_Override(w WindowsFunctionApp, scope constructs.Construct, id *string, config *WindowsFunctionAppConfig) {
 	_init_.Initialize()
 
@@ -1577,6 +1601,17 @@ func (j *jsiiProxy_WindowsFunctionApp)SetVirtualNetworkSubnetId(val *string) {
 	_jsii_.Set(
 		j,
 		"virtualNetworkSubnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsFunctionApp)SetVnetImagePullEnabled(val interface{}) {
+	if err := j.validateSetVnetImagePullEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vnetImagePullEnabled",
 		val,
 	)
 }
@@ -2283,6 +2318,14 @@ func (w *jsiiProxy_WindowsFunctionApp) ResetVirtualNetworkSubnetId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetVirtualNetworkSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsFunctionApp) ResetVnetImagePullEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetVnetImagePullEnabled",
 		nil, // no parameters
 	)
 }

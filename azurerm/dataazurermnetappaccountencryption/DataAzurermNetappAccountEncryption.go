@@ -5,14 +5,14 @@ package dataazurermnetappaccountencryption
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermnetappaccountencryption/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermnetappaccountencryption/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption}.
 type DataAzurermNetappAccountEncryption interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DataAzurermNetappAccountEncryption) UserAssignedIdentityIdInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption} Data Source.
 func NewDataAzurermNetappAccountEncryption(scope constructs.Construct, id *string, config *DataAzurermNetappAccountEncryptionConfig) DataAzurermNetappAccountEncryption {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewDataAzurermNetappAccountEncryption(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption} Data Source.
 func NewDataAzurermNetappAccountEncryption_Override(d DataAzurermNetappAccountEncryption, scope constructs.Construct, id *string, config *DataAzurermNetappAccountEncryptionConfig) {
 	_init_.Initialize()
 

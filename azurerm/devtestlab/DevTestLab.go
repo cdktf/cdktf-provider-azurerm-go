@@ -5,14 +5,14 @@ package devtestlab
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/devtestlab/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/devtestlab/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/dev_test_lab azurerm_dev_test_lab}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/dev_test_lab azurerm_dev_test_lab}.
 type DevTestLab interface {
 	cdktf.TerraformResource
 	ArtifactsStorageAccountId() *string
@@ -72,9 +72,6 @@ type DevTestLab interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
-	StorageType() *string
-	SetStorageType(val *string)
-	StorageTypeInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -135,7 +132,6 @@ type DevTestLab interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetStorageType()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -416,26 +412,6 @@ func (j *jsiiProxy_DevTestLab) ResourceGroupNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DevTestLab) StorageType() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"storageType",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DevTestLab) StorageTypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"storageTypeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DevTestLab) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -517,7 +493,7 @@ func (j *jsiiProxy_DevTestLab) UniqueIdentifier() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/dev_test_lab azurerm_dev_test_lab} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/dev_test_lab azurerm_dev_test_lab} Resource.
 func NewDevTestLab(scope constructs.Construct, id *string, config *DevTestLabConfig) DevTestLab {
 	_init_.Initialize()
 
@@ -535,7 +511,7 @@ func NewDevTestLab(scope constructs.Construct, id *string, config *DevTestLabCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/dev_test_lab azurerm_dev_test_lab} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/dev_test_lab azurerm_dev_test_lab} Resource.
 func NewDevTestLab_Override(d DevTestLab, scope constructs.Construct, id *string, config *DevTestLabConfig) {
 	_init_.Initialize()
 
@@ -654,17 +630,6 @@ func (j *jsiiProxy_DevTestLab)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DevTestLab)SetStorageType(val *string) {
-	if err := j.validateSetStorageTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"storageType",
 		val,
 	)
 }
@@ -1056,14 +1021,6 @@ func (d *jsiiProxy_DevTestLab) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DevTestLab) ResetStorageType() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetStorageType",
 		nil, // no parameters
 	)
 }

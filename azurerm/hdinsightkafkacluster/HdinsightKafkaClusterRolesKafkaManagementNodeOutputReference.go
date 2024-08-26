@@ -5,9 +5,9 @@ package hdinsightkafkacluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/hdinsightkafkacluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/hdinsightkafkacluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -52,8 +52,6 @@ type HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Username() *string
-	SetUsername(val *string)
-	UsernameInput() *string
 	VirtualNetworkId() *string
 	SetVirtualNetworkId(val *string)
 	VirtualNetworkIdInput() *string
@@ -265,16 +263,6 @@ func (j *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference) UsernameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"usernameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference) VirtualNetworkId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -427,17 +415,6 @@ func (j *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference)
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_HdinsightKafkaClusterRolesKafkaManagementNodeOutputReference)SetUsername(val *string) {
-	if err := j.validateSetUsernameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"username",
 		val,
 	)
 }

@@ -119,10 +119,6 @@ func (j *jsiiProxy_CdnFrontdoorOrigin) validateSetEnabledParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_CdnFrontdoorOrigin) validateSetHealthProbesEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_CdnFrontdoorOrigin) validateSetHostNameParameters(val *string) error {
 	return nil
 }

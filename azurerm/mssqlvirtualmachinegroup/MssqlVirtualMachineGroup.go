@@ -5,14 +5,14 @@ package mssqlvirtualmachinegroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/mssqlvirtualmachinegroup/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/mssqlvirtualmachinegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mssql_virtual_machine_group azurerm_mssql_virtual_machine_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mssql_virtual_machine_group azurerm_mssql_virtual_machine_group}.
 type MssqlVirtualMachineGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -496,7 +496,7 @@ func (j *jsiiProxy_MssqlVirtualMachineGroup) WsfcDomainProfileInput() *MssqlVirt
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mssql_virtual_machine_group azurerm_mssql_virtual_machine_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mssql_virtual_machine_group azurerm_mssql_virtual_machine_group} Resource.
 func NewMssqlVirtualMachineGroup(scope constructs.Construct, id *string, config *MssqlVirtualMachineGroupConfig) MssqlVirtualMachineGroup {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewMssqlVirtualMachineGroup(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/mssql_virtual_machine_group azurerm_mssql_virtual_machine_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/mssql_virtual_machine_group azurerm_mssql_virtual_machine_group} Resource.
 func NewMssqlVirtualMachineGroup_Override(m MssqlVirtualMachineGroup, scope constructs.Construct, id *string, config *MssqlVirtualMachineGroupConfig) {
 	_init_.Initialize()
 

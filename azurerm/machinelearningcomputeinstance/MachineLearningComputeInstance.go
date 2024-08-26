@@ -5,14 +5,14 @@ package machinelearningcomputeinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/machinelearningcomputeinstance/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/machinelearningcomputeinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance}.
 type MachineLearningComputeInstance interface {
 	cdktf.TerraformResource
 	AssignToUser() MachineLearningComputeInstanceAssignToUserOutputReference
@@ -59,9 +59,6 @@ type MachineLearningComputeInstance interface {
 	LocalAuthEnabled() interface{}
 	SetLocalAuthEnabled(val interface{})
 	LocalAuthEnabledInput() interface{}
-	Location() *string
-	SetLocation(val *string)
-	LocationInput() *string
 	MachineLearningWorkspaceId() *string
 	SetMachineLearningWorkspaceId(val *string)
 	MachineLearningWorkspaceIdInput() *string
@@ -155,7 +152,6 @@ type MachineLearningComputeInstance interface {
 	ResetId()
 	ResetIdentity()
 	ResetLocalAuthEnabled()
-	ResetLocation()
 	ResetNodePublicIpEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -392,26 +388,6 @@ func (j *jsiiProxy_MachineLearningComputeInstance) LocalAuthEnabledInput() inter
 	return returns
 }
 
-func (j *jsiiProxy_MachineLearningComputeInstance) Location() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"location",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MachineLearningComputeInstance) LocationInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"locationInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MachineLearningComputeInstance) MachineLearningWorkspaceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -643,7 +619,7 @@ func (j *jsiiProxy_MachineLearningComputeInstance) VirtualMachineSizeInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance} Resource.
 func NewMachineLearningComputeInstance(scope constructs.Construct, id *string, config *MachineLearningComputeInstanceConfig) MachineLearningComputeInstance {
 	_init_.Initialize()
 
@@ -661,7 +637,7 @@ func NewMachineLearningComputeInstance(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/machine_learning_compute_instance azurerm_machine_learning_compute_instance} Resource.
 func NewMachineLearningComputeInstance_Override(m MachineLearningComputeInstance, scope constructs.Construct, id *string, config *MachineLearningComputeInstanceConfig) {
 	_init_.Initialize()
 
@@ -761,17 +737,6 @@ func (j *jsiiProxy_MachineLearningComputeInstance)SetLocalAuthEnabled(val interf
 	_jsii_.Set(
 		j,
 		"localAuthEnabled",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MachineLearningComputeInstance)SetLocation(val *string) {
-	if err := j.validateSetLocationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"location",
 		val,
 	)
 }
@@ -1302,14 +1267,6 @@ func (m *jsiiProxy_MachineLearningComputeInstance) ResetLocalAuthEnabled() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetLocalAuthEnabled",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MachineLearningComputeInstance) ResetLocation() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetLocation",
 		nil, // no parameters
 	)
 }

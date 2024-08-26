@@ -79,6 +79,10 @@ func (n *jsiiProxy_NotificationHub) validatePutApnsCredentialParameters(value *N
 	return nil
 }
 
+func (n *jsiiProxy_NotificationHub) validatePutBrowserCredentialParameters(value *NotificationHubBrowserCredential) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationHub) validatePutGcmCredentialParameters(value *NotificationHubGcmCredential) error {
 	return nil
 }

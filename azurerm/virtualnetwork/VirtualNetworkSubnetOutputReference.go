@@ -5,17 +5,17 @@ package virtualnetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/virtualnetwork/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/virtualnetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type VirtualNetworkSubnetOutputReference interface {
 	cdktf.ComplexObject
-	AddressPrefix() *string
-	SetAddressPrefix(val *string)
-	AddressPrefixInput() *string
+	AddressPrefixes() *[]*string
+	SetAddressPrefixes(val *[]*string)
+	AddressPrefixesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,6 +31,11 @@ type VirtualNetworkSubnetOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultOutboundAccessEnabled() interface{}
+	SetDefaultOutboundAccessEnabled(val interface{})
+	DefaultOutboundAccessEnabledInput() interface{}
+	Delegation() VirtualNetworkSubnetDelegationList
+	DelegationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -41,9 +46,24 @@ type VirtualNetworkSubnetOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	PrivateEndpointNetworkPolicies() *string
+	SetPrivateEndpointNetworkPolicies(val *string)
+	PrivateEndpointNetworkPoliciesInput() *string
+	PrivateLinkServiceNetworkPoliciesEnabled() interface{}
+	SetPrivateLinkServiceNetworkPoliciesEnabled(val interface{})
+	PrivateLinkServiceNetworkPoliciesEnabledInput() interface{}
+	RouteTableId() *string
+	SetRouteTableId(val *string)
+	RouteTableIdInput() *string
 	SecurityGroup() *string
 	SetSecurityGroup(val *string)
 	SecurityGroupInput() *string
+	ServiceEndpointPolicyIds() *[]*string
+	SetServiceEndpointPolicyIds(val *[]*string)
+	ServiceEndpointPolicyIdsInput() *[]*string
+	ServiceEndpoints() *[]*string
+	SetServiceEndpoints(val *[]*string)
+	ServiceEndpointsInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,10 +96,18 @@ type VirtualNetworkSubnetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetAddressPrefix()
+	PutDelegation(value interface{})
+	ResetAddressPrefixes()
+	ResetDefaultOutboundAccessEnabled()
+	ResetDelegation()
 	ResetId()
 	ResetName()
+	ResetPrivateEndpointNetworkPolicies()
+	ResetPrivateLinkServiceNetworkPoliciesEnabled()
+	ResetRouteTableId()
 	ResetSecurityGroup()
+	ResetServiceEndpointPolicyIds()
+	ResetServiceEndpoints()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -95,21 +123,21 @@ type jsiiProxy_VirtualNetworkSubnetOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) AddressPrefix() *string {
-	var returns *string
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) AddressPrefixes() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"addressPrefix",
+		"addressPrefixes",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) AddressPrefixInput() *string {
-	var returns *string
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) AddressPrefixesInput() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"addressPrefixInput",
+		"addressPrefixesInput",
 		&returns,
 	)
 	return returns
@@ -140,6 +168,46 @@ func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) CreationStack() *[]*stri
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) DefaultOutboundAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultOutboundAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) DefaultOutboundAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultOutboundAccessEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) Delegation() VirtualNetworkSubnetDelegationList {
+	var returns VirtualNetworkSubnetDelegationList
+	_jsii_.Get(
+		j,
+		"delegation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) DelegationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"delegationInput",
 		&returns,
 	)
 	return returns
@@ -205,6 +273,66 @@ func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) PrivateEndpointNetworkPolicies() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateEndpointNetworkPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) PrivateEndpointNetworkPoliciesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateEndpointNetworkPoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) PrivateLinkServiceNetworkPoliciesEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"privateLinkServiceNetworkPoliciesEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) PrivateLinkServiceNetworkPoliciesEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"privateLinkServiceNetworkPoliciesEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) RouteTableId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routeTableId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) RouteTableIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routeTableIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) SecurityGroup() *string {
 	var returns *string
 	_jsii_.Get(
@@ -220,6 +348,46 @@ func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) SecurityGroupInput() *st
 	_jsii_.Get(
 		j,
 		"securityGroupInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) ServiceEndpointPolicyIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"serviceEndpointPolicyIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) ServiceEndpointPolicyIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"serviceEndpointPolicyIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) ServiceEndpoints() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"serviceEndpoints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference) ServiceEndpointsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"serviceEndpointsInput",
 		&returns,
 	)
 	return returns
@@ -273,13 +441,13 @@ func NewVirtualNetworkSubnetOutputReference_Override(v VirtualNetworkSubnetOutpu
 	)
 }
 
-func (j *jsiiProxy_VirtualNetworkSubnetOutputReference)SetAddressPrefix(val *string) {
-	if err := j.validateSetAddressPrefixParameters(val); err != nil {
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference)SetAddressPrefixes(val *[]*string) {
+	if err := j.validateSetAddressPrefixesParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"addressPrefix",
+		"addressPrefixes",
 		val,
 	)
 }
@@ -302,6 +470,17 @@ func (j *jsiiProxy_VirtualNetworkSubnetOutputReference)SetComplexObjectIsFromSet
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference)SetDefaultOutboundAccessEnabled(val interface{}) {
+	if err := j.validateSetDefaultOutboundAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultOutboundAccessEnabled",
 		val,
 	)
 }
@@ -339,6 +518,39 @@ func (j *jsiiProxy_VirtualNetworkSubnetOutputReference)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference)SetPrivateEndpointNetworkPolicies(val *string) {
+	if err := j.validateSetPrivateEndpointNetworkPoliciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateEndpointNetworkPolicies",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference)SetPrivateLinkServiceNetworkPoliciesEnabled(val interface{}) {
+	if err := j.validateSetPrivateLinkServiceNetworkPoliciesEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateLinkServiceNetworkPoliciesEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference)SetRouteTableId(val *string) {
+	if err := j.validateSetRouteTableIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routeTableId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_VirtualNetworkSubnetOutputReference)SetSecurityGroup(val *string) {
 	if err := j.validateSetSecurityGroupParameters(val); err != nil {
 		panic(err)
@@ -346,6 +558,28 @@ func (j *jsiiProxy_VirtualNetworkSubnetOutputReference)SetSecurityGroup(val *str
 	_jsii_.Set(
 		j,
 		"securityGroup",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference)SetServiceEndpointPolicyIds(val *[]*string) {
+	if err := j.validateSetServiceEndpointPolicyIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceEndpointPolicyIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualNetworkSubnetOutputReference)SetServiceEndpoints(val *[]*string) {
+	if err := j.validateSetServiceEndpointsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceEndpoints",
 		val,
 	)
 }
@@ -558,10 +792,37 @@ func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) InterpolationForAttribut
 	return returns
 }
 
-func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) ResetAddressPrefix() {
+func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) PutDelegation(value interface{}) {
+	if err := v.validatePutDelegationParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
-		"resetAddressPrefix",
+		"putDelegation",
+		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) ResetAddressPrefixes() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetAddressPrefixes",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) ResetDefaultOutboundAccessEnabled() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetDefaultOutboundAccessEnabled",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) ResetDelegation() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetDelegation",
 		nil, // no parameters
 	)
 }
@@ -582,10 +843,50 @@ func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) ResetName() {
 	)
 }
 
+func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) ResetPrivateEndpointNetworkPolicies() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPrivateEndpointNetworkPolicies",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) ResetPrivateLinkServiceNetworkPoliciesEnabled() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPrivateLinkServiceNetworkPoliciesEnabled",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) ResetRouteTableId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRouteTableId",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) ResetSecurityGroup() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetSecurityGroup",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) ResetServiceEndpointPolicyIds() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetServiceEndpointPolicyIds",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) ResetServiceEndpoints() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetServiceEndpoints",
 		nil, // no parameters
 	)
 }

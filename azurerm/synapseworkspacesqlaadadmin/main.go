@@ -11,8 +11,8 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.synapseWorkspaceSqlAadAdmin.SynapseWorkspaceSqlAadAdminA",
-		reflect.TypeOf((*SynapseWorkspaceSqlAadAdminA)(nil)).Elem(),
+		"@cdktf/provider-azurerm.synapseWorkspaceSqlAadAdmin.SynapseWorkspaceSqlAadAdmin",
+		reflect.TypeOf((*SynapseWorkspaceSqlAadAdmin)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,14 +72,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
 		func() interface{} {
-			j := jsiiProxy_SynapseWorkspaceSqlAadAdminA{}
+			j := jsiiProxy_SynapseWorkspaceSqlAadAdmin{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-azurerm.synapseWorkspaceSqlAadAdmin.SynapseWorkspaceSqlAadAdminAConfig",
-		reflect.TypeOf((*SynapseWorkspaceSqlAadAdminAConfig)(nil)).Elem(),
+		"@cdktf/provider-azurerm.synapseWorkspaceSqlAadAdmin.SynapseWorkspaceSqlAadAdminConfig",
+		reflect.TypeOf((*SynapseWorkspaceSqlAadAdminConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.synapseWorkspaceSqlAadAdmin.SynapseWorkspaceSqlAadAdminTimeouts",

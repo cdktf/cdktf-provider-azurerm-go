@@ -47,10 +47,6 @@ func (h *jsiiProxy_HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutpu
 	return nil
 }
 
-func (h *jsiiProxy_HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutputReference) validatePutCapacityParameters(value *HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleCapacity) error {
-	return nil
-}
-
 func (h *jsiiProxy_HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleOutputReference) validatePutRecurrenceParameters(value *HdinsightInteractiveQueryClusterRolesWorkerNodeAutoscaleRecurrence) error {
 	return nil
 }

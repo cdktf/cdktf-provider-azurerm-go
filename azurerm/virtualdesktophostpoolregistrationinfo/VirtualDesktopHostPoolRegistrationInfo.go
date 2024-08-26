@@ -5,14 +5,14 @@ package virtualdesktophostpoolregistrationinfo
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/virtualdesktophostpoolregistrationinfo/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/virtualdesktophostpoolregistrationinfo/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_desktop_host_pool_registration_info azurerm_virtual_desktop_host_pool_registration_info}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_desktop_host_pool_registration_info azurerm_virtual_desktop_host_pool_registration_info}.
 type VirtualDesktopHostPoolRegistrationInfo interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_VirtualDesktopHostPoolRegistrationInfo) Token() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_desktop_host_pool_registration_info azurerm_virtual_desktop_host_pool_registration_info} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_desktop_host_pool_registration_info azurerm_virtual_desktop_host_pool_registration_info} Resource.
 func NewVirtualDesktopHostPoolRegistrationInfo(scope constructs.Construct, id *string, config *VirtualDesktopHostPoolRegistrationInfoConfig) VirtualDesktopHostPoolRegistrationInfo {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewVirtualDesktopHostPoolRegistrationInfo(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/virtual_desktop_host_pool_registration_info azurerm_virtual_desktop_host_pool_registration_info} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/virtual_desktop_host_pool_registration_info azurerm_virtual_desktop_host_pool_registration_info} Resource.
 func NewVirtualDesktopHostPoolRegistrationInfo_Override(v VirtualDesktopHostPoolRegistrationInfo, scope constructs.Construct, id *string, config *VirtualDesktopHostPoolRegistrationInfoConfig) {
 	_init_.Initialize()
 

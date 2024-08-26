@@ -5,14 +5,14 @@ package servicefabriccluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/servicefabriccluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/servicefabriccluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/service_fabric_cluster azurerm_service_fabric_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/service_fabric_cluster azurerm_service_fabric_cluster}.
 type ServiceFabricCluster interface {
 	cdktf.TerraformResource
 	AddOnFeatures() *[]*string
@@ -889,7 +889,7 @@ func (j *jsiiProxy_ServiceFabricCluster) VmssZonalUpgradeModeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/service_fabric_cluster azurerm_service_fabric_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/service_fabric_cluster azurerm_service_fabric_cluster} Resource.
 func NewServiceFabricCluster(scope constructs.Construct, id *string, config *ServiceFabricClusterConfig) ServiceFabricCluster {
 	_init_.Initialize()
 
@@ -907,7 +907,7 @@ func NewServiceFabricCluster(scope constructs.Construct, id *string, config *Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/service_fabric_cluster azurerm_service_fabric_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/service_fabric_cluster azurerm_service_fabric_cluster} Resource.
 func NewServiceFabricCluster_Override(s ServiceFabricCluster, scope constructs.Construct, id *string, config *ServiceFabricClusterConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package dataazurermprivatednsresolverdnsforwardingruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermprivatednsresolverdnsforwardingruleset/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermprivatednsresolverdnsforwardingruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/private_dns_resolver_dns_forwarding_ruleset azurerm_private_dns_resolver_dns_forwarding_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/private_dns_resolver_dns_forwarding_ruleset azurerm_private_dns_resolver_dns_forwarding_ruleset}.
 type DataAzurermPrivateDnsResolverDnsForwardingRuleset interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DataAzurermPrivateDnsResolverDnsForwardingRuleset) TimeoutsIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/private_dns_resolver_dns_forwarding_ruleset azurerm_private_dns_resolver_dns_forwarding_ruleset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/private_dns_resolver_dns_forwarding_ruleset azurerm_private_dns_resolver_dns_forwarding_ruleset} Data Source.
 func NewDataAzurermPrivateDnsResolverDnsForwardingRuleset(scope constructs.Construct, id *string, config *DataAzurermPrivateDnsResolverDnsForwardingRulesetConfig) DataAzurermPrivateDnsResolverDnsForwardingRuleset {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewDataAzurermPrivateDnsResolverDnsForwardingRuleset(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/private_dns_resolver_dns_forwarding_ruleset azurerm_private_dns_resolver_dns_forwarding_ruleset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/private_dns_resolver_dns_forwarding_ruleset azurerm_private_dns_resolver_dns_forwarding_ruleset} Data Source.
 func NewDataAzurermPrivateDnsResolverDnsForwardingRuleset_Override(d DataAzurermPrivateDnsResolverDnsForwardingRuleset, scope constructs.Construct, id *string, config *DataAzurermPrivateDnsResolverDnsForwardingRulesetConfig) {
 	_init_.Initialize()
 

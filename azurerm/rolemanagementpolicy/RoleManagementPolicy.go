@@ -5,14 +5,14 @@ package rolemanagementpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/rolemanagementpolicy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/rolemanagementpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/role_management_policy azurerm_role_management_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/role_management_policy azurerm_role_management_policy}.
 type RoleManagementPolicy interface {
 	cdktf.TerraformResource
 	ActivationRules() RoleManagementPolicyActivationRulesOutputReference
@@ -498,7 +498,7 @@ func (j *jsiiProxy_RoleManagementPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/role_management_policy azurerm_role_management_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/role_management_policy azurerm_role_management_policy} Resource.
 func NewRoleManagementPolicy(scope constructs.Construct, id *string, config *RoleManagementPolicyConfig) RoleManagementPolicy {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewRoleManagementPolicy(scope constructs.Construct, id *string, config *Rol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/role_management_policy azurerm_role_management_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/role_management_policy azurerm_role_management_policy} Resource.
 func NewRoleManagementPolicy_Override(r RoleManagementPolicy, scope constructs.Construct, id *string, config *RoleManagementPolicyConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package nginxdeployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/nginxdeployment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/nginxdeployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/nginx_deployment azurerm_nginx_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/nginx_deployment azurerm_nginx_deployment}.
 type NginxDeployment interface {
 	cdktf.TerraformResource
 	AutomaticUpgradeChannel() *string
@@ -25,8 +25,6 @@ type NginxDeployment interface {
 	CapacityInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	Configuration() NginxDeploymentConfigurationOutputReference
-	ConfigurationInput() *NginxDeploymentConfiguration
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -156,7 +154,6 @@ type NginxDeployment interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoScaleProfile(value interface{})
-	PutConfiguration(value *NginxDeploymentConfiguration)
 	PutFrontendPrivate(value interface{})
 	PutFrontendPublic(value *NginxDeploymentFrontendPublic)
 	PutIdentity(value *NginxDeploymentIdentity)
@@ -166,7 +163,6 @@ type NginxDeployment interface {
 	ResetAutomaticUpgradeChannel()
 	ResetAutoScaleProfile()
 	ResetCapacity()
-	ResetConfiguration()
 	ResetDiagnoseSupportEnabled()
 	ResetEmail()
 	ResetFrontendPrivate()
@@ -264,26 +260,6 @@ func (j *jsiiProxy_NginxDeployment) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NginxDeployment) Configuration() NginxDeploymentConfigurationOutputReference {
-	var returns NginxDeploymentConfigurationOutputReference
-	_jsii_.Get(
-		j,
-		"configuration",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NginxDeployment) ConfigurationInput() *NginxDeploymentConfiguration {
-	var returns *NginxDeploymentConfiguration
-	_jsii_.Get(
-		j,
-		"configurationInput",
 		&returns,
 	)
 	return returns
@@ -760,7 +736,7 @@ func (j *jsiiProxy_NginxDeployment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
 func NewNginxDeployment(scope constructs.Construct, id *string, config *NginxDeploymentConfig) NginxDeployment {
 	_init_.Initialize()
 
@@ -778,7 +754,7 @@ func NewNginxDeployment(scope constructs.Construct, id *string, config *NginxDep
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
 func NewNginxDeployment_Override(n NginxDeployment, scope constructs.Construct, id *string, config *NginxDeploymentConfig) {
 	_init_.Initialize()
 
@@ -1342,17 +1318,6 @@ func (n *jsiiProxy_NginxDeployment) PutAutoScaleProfile(value interface{}) {
 	)
 }
 
-func (n *jsiiProxy_NginxDeployment) PutConfiguration(value *NginxDeploymentConfiguration) {
-	if err := n.validatePutConfigurationParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		n,
-		"putConfiguration",
-		[]interface{}{value},
-	)
-}
-
 func (n *jsiiProxy_NginxDeployment) PutFrontendPrivate(value interface{}) {
 	if err := n.validatePutFrontendPrivateParameters(value); err != nil {
 		panic(err)
@@ -1439,14 +1404,6 @@ func (n *jsiiProxy_NginxDeployment) ResetCapacity() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetCapacity",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NginxDeployment) ResetConfiguration() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetConfiguration",
 		nil, // no parameters
 	)
 }

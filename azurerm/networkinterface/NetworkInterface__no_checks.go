@@ -127,14 +127,6 @@ func (j *jsiiProxy_NetworkInterface) validateSetEdgeZoneParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_NetworkInterface) validateSetEnableAcceleratedNetworkingParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_NetworkInterface) validateSetEnableIpForwardingParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_NetworkInterface) validateSetIdParameters(val *string) error {
 	return nil
 }

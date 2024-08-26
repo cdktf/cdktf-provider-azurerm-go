@@ -83,10 +83,6 @@ func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) validateSetDataP
 	return nil
 }
 
-func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) validateSetEnableAuthenticationParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_RedisCacheRedisConfigurationOutputReference) validateSetInternalValueParameters(val *RedisCacheRedisConfiguration) error {
 	return nil
 }

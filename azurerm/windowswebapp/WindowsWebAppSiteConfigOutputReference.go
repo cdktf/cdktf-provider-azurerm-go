@@ -5,9 +5,9 @@ package windowswebapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/windowswebapp/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/windowswebapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -27,9 +27,6 @@ type WindowsWebAppSiteConfigOutputReference interface {
 	AppCommandLineInput() *string
 	ApplicationStack() WindowsWebAppSiteConfigApplicationStackOutputReference
 	ApplicationStackInput() *WindowsWebAppSiteConfigApplicationStack
-	AutoHealEnabled() interface{}
-	SetAutoHealEnabled(val interface{})
-	AutoHealEnabledInput() interface{}
 	AutoHealSetting() WindowsWebAppSiteConfigAutoHealSettingOutputReference
 	AutoHealSettingInput() *WindowsWebAppSiteConfigAutoHealSetting
 	// the index of the complex object in a list.
@@ -172,7 +169,6 @@ type WindowsWebAppSiteConfigOutputReference interface {
 	ResetApiManagementApiId()
 	ResetAppCommandLine()
 	ResetApplicationStack()
-	ResetAutoHealEnabled()
 	ResetAutoHealSetting()
 	ResetContainerRegistryManagedIdentityClientId()
 	ResetContainerRegistryUseManagedIdentity()
@@ -310,26 +306,6 @@ func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) ApplicationStackInput
 	_jsii_.Get(
 		j,
 		"applicationStackInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) AutoHealEnabled() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"autoHealEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference) AutoHealEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"autoHealEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1057,17 +1033,6 @@ func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference)SetAppCommandLine(val 
 	)
 }
 
-func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference)SetAutoHealEnabled(val interface{}) {
-	if err := j.validateSetAutoHealEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"autoHealEnabled",
-		val,
-	)
-}
-
 func (j *jsiiProxy_WindowsWebAppSiteConfigOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -1653,14 +1618,6 @@ func (w *jsiiProxy_WindowsWebAppSiteConfigOutputReference) ResetApplicationStack
 	_jsii_.InvokeVoid(
 		w,
 		"resetApplicationStack",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WindowsWebAppSiteConfigOutputReference) ResetAutoHealEnabled() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetAutoHealEnabled",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package cognitivedeployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/cognitivedeployment/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/cognitivedeployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cognitive_deployment azurerm_cognitive_deployment}.
 type CognitiveDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -69,8 +69,8 @@ type CognitiveDeployment interface {
 	RaiPolicyNameInput() *string
 	// Experimental.
 	RawOverrides() interface{}
-	Scale() CognitiveDeploymentScaleOutputReference
-	ScaleInput() *CognitiveDeploymentScale
+	Sku() CognitiveDeploymentSkuOutputReference
+	SkuInput() *CognitiveDeploymentSku
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -126,7 +126,7 @@ type CognitiveDeployment interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutModel(value *CognitiveDeploymentModel)
-	PutScale(value *CognitiveDeploymentScale)
+	PutSku(value *CognitiveDeploymentSku)
 	PutTimeouts(value *CognitiveDeploymentTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -383,21 +383,21 @@ func (j *jsiiProxy_CognitiveDeployment) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CognitiveDeployment) Scale() CognitiveDeploymentScaleOutputReference {
-	var returns CognitiveDeploymentScaleOutputReference
+func (j *jsiiProxy_CognitiveDeployment) Sku() CognitiveDeploymentSkuOutputReference {
+	var returns CognitiveDeploymentSkuOutputReference
 	_jsii_.Get(
 		j,
-		"scale",
+		"sku",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_CognitiveDeployment) ScaleInput() *CognitiveDeploymentScale {
-	var returns *CognitiveDeploymentScale
+func (j *jsiiProxy_CognitiveDeployment) SkuInput() *CognitiveDeploymentSku {
+	var returns *CognitiveDeploymentSku
 	_jsii_.Get(
 		j,
-		"scaleInput",
+		"skuInput",
 		&returns,
 	)
 	return returns
@@ -474,7 +474,7 @@ func (j *jsiiProxy_CognitiveDeployment) VersionUpgradeOptionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cognitive_deployment azurerm_cognitive_deployment} Resource.
 func NewCognitiveDeployment(scope constructs.Construct, id *string, config *CognitiveDeploymentConfig) CognitiveDeployment {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewCognitiveDeployment(scope constructs.Construct, id *string, config *Cogn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/cognitive_deployment azurerm_cognitive_deployment} Resource.
 func NewCognitiveDeployment_Override(c CognitiveDeployment, scope constructs.Construct, id *string, config *CognitiveDeploymentConfig) {
 	_init_.Initialize()
 
@@ -990,13 +990,13 @@ func (c *jsiiProxy_CognitiveDeployment) PutModel(value *CognitiveDeploymentModel
 	)
 }
 
-func (c *jsiiProxy_CognitiveDeployment) PutScale(value *CognitiveDeploymentScale) {
-	if err := c.validatePutScaleParameters(value); err != nil {
+func (c *jsiiProxy_CognitiveDeployment) PutSku(value *CognitiveDeploymentSku) {
+	if err := c.validatePutSkuParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
-		"putScale",
+		"putSku",
 		[]interface{}{value},
 	)
 }

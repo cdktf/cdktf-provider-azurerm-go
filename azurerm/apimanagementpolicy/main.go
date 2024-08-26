@@ -11,8 +11,8 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-azurerm.apiManagementPolicy.ApiManagementPolicyA",
-		reflect.TypeOf((*ApiManagementPolicyA)(nil)).Elem(),
+		"@cdktf/provider-azurerm.apiManagementPolicy.ApiManagementPolicy",
+		reflect.TypeOf((*ApiManagementPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,14 +72,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "xmlLinkInput", GoGetter: "XmlLinkInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_ApiManagementPolicyA{}
+			j := jsiiProxy_ApiManagementPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-azurerm.apiManagementPolicy.ApiManagementPolicyAConfig",
-		reflect.TypeOf((*ApiManagementPolicyAConfig)(nil)).Elem(),
+		"@cdktf/provider-azurerm.apiManagementPolicy.ApiManagementPolicyConfig",
+		reflect.TypeOf((*ApiManagementPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.apiManagementPolicy.ApiManagementPolicyTimeouts",

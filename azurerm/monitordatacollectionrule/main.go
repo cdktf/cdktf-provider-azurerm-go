@@ -952,7 +952,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "logLevelsInput", GoGetter: "LogLevelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStreams", GoMethod: "ResetStreams"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "streams", GoGetter: "Streams"},
 			_jsii_.MemberProperty{JsiiProperty: "streamsInput", GoGetter: "StreamsInput"},

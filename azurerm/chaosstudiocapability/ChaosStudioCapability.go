@@ -5,14 +5,14 @@ package chaosstudiocapability
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/chaosstudiocapability/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/chaosstudiocapability/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/chaos_studio_capability azurerm_chaos_studio_capability}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/chaos_studio_capability azurerm_chaos_studio_capability}.
 type ChaosStudioCapability interface {
 	cdktf.TerraformResource
 	CapabilityType() *string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_ChaosStudioCapability) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/chaos_studio_capability azurerm_chaos_studio_capability} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/chaos_studio_capability azurerm_chaos_studio_capability} Resource.
 func NewChaosStudioCapability(scope constructs.Construct, id *string, config *ChaosStudioCapabilityConfig) ChaosStudioCapability {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewChaosStudioCapability(scope constructs.Construct, id *string, config *Ch
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/chaos_studio_capability azurerm_chaos_studio_capability} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/chaos_studio_capability azurerm_chaos_studio_capability} Resource.
 func NewChaosStudioCapability_Override(c ChaosStudioCapability, scope constructs.Construct, id *string, config *ChaosStudioCapabilityConfig) {
 	_init_.Initialize()
 

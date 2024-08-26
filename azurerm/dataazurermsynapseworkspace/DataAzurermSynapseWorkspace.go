@@ -5,14 +5,14 @@ package dataazurermsynapseworkspace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermsynapseworkspace/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermsynapseworkspace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/synapse_workspace azurerm_synapse_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/synapse_workspace azurerm_synapse_workspace}.
 type DataAzurermSynapseWorkspace interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_DataAzurermSynapseWorkspace) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/synapse_workspace azurerm_synapse_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/synapse_workspace azurerm_synapse_workspace} Data Source.
 func NewDataAzurermSynapseWorkspace(scope constructs.Construct, id *string, config *DataAzurermSynapseWorkspaceConfig) DataAzurermSynapseWorkspace {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewDataAzurermSynapseWorkspace(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/synapse_workspace azurerm_synapse_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/synapse_workspace azurerm_synapse_workspace} Data Source.
 func NewDataAzurermSynapseWorkspace_Override(d DataAzurermSynapseWorkspace, scope constructs.Construct, id *string, config *DataAzurermSynapseWorkspaceConfig) {
 	_init_.Initialize()
 

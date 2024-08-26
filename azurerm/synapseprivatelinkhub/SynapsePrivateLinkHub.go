@@ -5,14 +5,14 @@ package synapseprivatelinkhub
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/synapseprivatelinkhub/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/synapseprivatelinkhub/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/synapse_private_link_hub azurerm_synapse_private_link_hub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/synapse_private_link_hub azurerm_synapse_private_link_hub}.
 type SynapsePrivateLinkHub interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_SynapsePrivateLinkHub) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/synapse_private_link_hub azurerm_synapse_private_link_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/synapse_private_link_hub azurerm_synapse_private_link_hub} Resource.
 func NewSynapsePrivateLinkHub(scope constructs.Construct, id *string, config *SynapsePrivateLinkHubConfig) SynapsePrivateLinkHub {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewSynapsePrivateLinkHub(scope constructs.Construct, id *string, config *Sy
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/synapse_private_link_hub azurerm_synapse_private_link_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/synapse_private_link_hub azurerm_synapse_private_link_hub} Resource.
 func NewSynapsePrivateLinkHub_Override(s SynapsePrivateLinkHub, scope constructs.Construct, id *string, config *SynapsePrivateLinkHubConfig) {
 	_init_.Initialize()
 

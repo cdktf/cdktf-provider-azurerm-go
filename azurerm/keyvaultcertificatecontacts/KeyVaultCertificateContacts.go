@@ -5,14 +5,14 @@ package keyvaultcertificatecontacts
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/keyvaultcertificatecontacts/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/keyvaultcertificatecontacts/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/key_vault_certificate_contacts azurerm_key_vault_certificate_contacts}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/key_vault_certificate_contacts azurerm_key_vault_certificate_contacts}.
 type KeyVaultCertificateContacts interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -116,6 +116,7 @@ type KeyVaultCertificateContacts interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutContact(value interface{})
 	PutTimeouts(value *KeyVaultCertificateContactsTimeouts)
+	ResetContact()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -380,7 +381,7 @@ func (j *jsiiProxy_KeyVaultCertificateContacts) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/key_vault_certificate_contacts azurerm_key_vault_certificate_contacts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/key_vault_certificate_contacts azurerm_key_vault_certificate_contacts} Resource.
 func NewKeyVaultCertificateContacts(scope constructs.Construct, id *string, config *KeyVaultCertificateContactsConfig) KeyVaultCertificateContacts {
 	_init_.Initialize()
 
@@ -398,7 +399,7 @@ func NewKeyVaultCertificateContacts(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/key_vault_certificate_contacts azurerm_key_vault_certificate_contacts} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/key_vault_certificate_contacts azurerm_key_vault_certificate_contacts} Resource.
 func NewKeyVaultCertificateContacts_Override(k KeyVaultCertificateContacts, scope constructs.Construct, id *string, config *KeyVaultCertificateContactsConfig) {
 	_init_.Initialize()
 
@@ -871,6 +872,14 @@ func (k *jsiiProxy_KeyVaultCertificateContacts) PutTimeouts(value *KeyVaultCerti
 		k,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KeyVaultCertificateContacts) ResetContact() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetContact",
+		nil, // no parameters
 	)
 }
 

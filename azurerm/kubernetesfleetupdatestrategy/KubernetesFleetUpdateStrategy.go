@@ -5,14 +5,14 @@ package kubernetesfleetupdatestrategy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/kubernetesfleetupdatestrategy/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/kubernetesfleetupdatestrategy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kubernetes_fleet_update_strategy azurerm_kubernetes_fleet_update_strategy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kubernetes_fleet_update_strategy azurerm_kubernetes_fleet_update_strategy}.
 type KubernetesFleetUpdateStrategy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_KubernetesFleetUpdateStrategy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kubernetes_fleet_update_strategy azurerm_kubernetes_fleet_update_strategy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kubernetes_fleet_update_strategy azurerm_kubernetes_fleet_update_strategy} Resource.
 func NewKubernetesFleetUpdateStrategy(scope constructs.Construct, id *string, config *KubernetesFleetUpdateStrategyConfig) KubernetesFleetUpdateStrategy {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewKubernetesFleetUpdateStrategy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/kubernetes_fleet_update_strategy azurerm_kubernetes_fleet_update_strategy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/kubernetes_fleet_update_strategy azurerm_kubernetes_fleet_update_strategy} Resource.
 func NewKubernetesFleetUpdateStrategy_Override(k KubernetesFleetUpdateStrategy, scope constructs.Construct, id *string, config *KubernetesFleetUpdateStrategyConfig) {
 	_init_.Initialize()
 

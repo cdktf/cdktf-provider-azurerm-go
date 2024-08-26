@@ -5,14 +5,14 @@ package sentinelalertrulescheduled
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/sentinelalertrulescheduled/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/sentinelalertrulescheduled/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_alert_rule_scheduled azurerm_sentinel_alert_rule_scheduled}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_alert_rule_scheduled azurerm_sentinel_alert_rule_scheduled}.
 type SentinelAlertRuleScheduled interface {
 	cdktf.TerraformResource
 	AlertDetailsOverride() SentinelAlertRuleScheduledAlertDetailsOverrideList
@@ -67,8 +67,6 @@ type SentinelAlertRuleScheduled interface {
 	SetId(val *string)
 	IdInput() *string
 	Incident() SentinelAlertRuleScheduledIncidentOutputReference
-	IncidentConfiguration() SentinelAlertRuleScheduledIncidentConfigurationOutputReference
-	IncidentConfigurationInput() *SentinelAlertRuleScheduledIncidentConfiguration
 	IncidentInput() *SentinelAlertRuleScheduledIncident
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -179,7 +177,6 @@ type SentinelAlertRuleScheduled interface {
 	PutEntityMapping(value interface{})
 	PutEventGrouping(value *SentinelAlertRuleScheduledEventGrouping)
 	PutIncident(value *SentinelAlertRuleScheduledIncident)
-	PutIncidentConfiguration(value *SentinelAlertRuleScheduledIncidentConfiguration)
 	PutSentinelEntityMapping(value interface{})
 	PutTimeouts(value *SentinelAlertRuleScheduledTimeouts)
 	ResetAlertDetailsOverride()
@@ -192,7 +189,6 @@ type SentinelAlertRuleScheduled interface {
 	ResetEventGrouping()
 	ResetId()
 	ResetIncident()
-	ResetIncidentConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -509,26 +505,6 @@ func (j *jsiiProxy_SentinelAlertRuleScheduled) Incident() SentinelAlertRuleSched
 	_jsii_.Get(
 		j,
 		"incident",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SentinelAlertRuleScheduled) IncidentConfiguration() SentinelAlertRuleScheduledIncidentConfigurationOutputReference {
-	var returns SentinelAlertRuleScheduledIncidentConfigurationOutputReference
-	_jsii_.Get(
-		j,
-		"incidentConfiguration",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SentinelAlertRuleScheduled) IncidentConfigurationInput() *SentinelAlertRuleScheduledIncidentConfiguration {
-	var returns *SentinelAlertRuleScheduledIncidentConfiguration
-	_jsii_.Get(
-		j,
-		"incidentConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -905,7 +881,7 @@ func (j *jsiiProxy_SentinelAlertRuleScheduled) TriggerThresholdInput() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_alert_rule_scheduled azurerm_sentinel_alert_rule_scheduled} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_alert_rule_scheduled azurerm_sentinel_alert_rule_scheduled} Resource.
 func NewSentinelAlertRuleScheduled(scope constructs.Construct, id *string, config *SentinelAlertRuleScheduledConfig) SentinelAlertRuleScheduled {
 	_init_.Initialize()
 
@@ -923,7 +899,7 @@ func NewSentinelAlertRuleScheduled(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_alert_rule_scheduled azurerm_sentinel_alert_rule_scheduled} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_alert_rule_scheduled azurerm_sentinel_alert_rule_scheduled} Resource.
 func NewSentinelAlertRuleScheduled_Override(s SentinelAlertRuleScheduled, scope constructs.Construct, id *string, config *SentinelAlertRuleScheduledConfig) {
 	_init_.Initialize()
 
@@ -1608,17 +1584,6 @@ func (s *jsiiProxy_SentinelAlertRuleScheduled) PutIncident(value *SentinelAlertR
 	)
 }
 
-func (s *jsiiProxy_SentinelAlertRuleScheduled) PutIncidentConfiguration(value *SentinelAlertRuleScheduledIncidentConfiguration) {
-	if err := s.validatePutIncidentConfigurationParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		s,
-		"putIncidentConfiguration",
-		[]interface{}{value},
-	)
-}
-
 func (s *jsiiProxy_SentinelAlertRuleScheduled) PutSentinelEntityMapping(value interface{}) {
 	if err := s.validatePutSentinelEntityMappingParameters(value); err != nil {
 		panic(err)
@@ -1717,14 +1682,6 @@ func (s *jsiiProxy_SentinelAlertRuleScheduled) ResetIncident() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetIncident",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SentinelAlertRuleScheduled) ResetIncidentConfiguration() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetIncidentConfiguration",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package dataazurermkustocluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/dataazurermkustocluster/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/dataazurermkustocluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/kusto_cluster azurerm_kusto_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/kusto_cluster azurerm_kusto_cluster}.
 type DataAzurermKustoCluster interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DataAzurermKustoCluster) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/kusto_cluster azurerm_kusto_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/kusto_cluster azurerm_kusto_cluster} Data Source.
 func NewDataAzurermKustoCluster(scope constructs.Construct, id *string, config *DataAzurermKustoClusterConfig) DataAzurermKustoCluster {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewDataAzurermKustoCluster(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/data-sources/kusto_cluster azurerm_kusto_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/kusto_cluster azurerm_kusto_cluster} Data Source.
 func NewDataAzurermKustoCluster_Override(d DataAzurermKustoCluster, scope constructs.Construct, id *string, config *DataAzurermKustoClusterConfig) {
 	_init_.Initialize()
 

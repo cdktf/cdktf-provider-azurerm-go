@@ -5,14 +5,14 @@ package logicappintegrationaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/logicappintegrationaccount/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/logicappintegrationaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/logic_app_integration_account azurerm_logic_app_integration_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/logic_app_integration_account azurerm_logic_app_integration_account}.
 type LogicAppIntegrationAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -474,7 +474,7 @@ func (j *jsiiProxy_LogicAppIntegrationAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/logic_app_integration_account azurerm_logic_app_integration_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/logic_app_integration_account azurerm_logic_app_integration_account} Resource.
 func NewLogicAppIntegrationAccount(scope constructs.Construct, id *string, config *LogicAppIntegrationAccountConfig) LogicAppIntegrationAccount {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewLogicAppIntegrationAccount(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/logic_app_integration_account azurerm_logic_app_integration_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/logic_app_integration_account azurerm_logic_app_integration_account} Resource.
 func NewLogicAppIntegrationAccount_Override(l LogicAppIntegrationAccount, scope constructs.Construct, id *string, config *LogicAppIntegrationAccountConfig) {
 	_init_.Initialize()
 

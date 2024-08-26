@@ -5,14 +5,14 @@ package sentineldataconnectorofficeirm
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v12/sentineldataconnectorofficeirm/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/sentineldataconnectorofficeirm/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_data_connector_office_irm azurerm_sentinel_data_connector_office_irm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_data_connector_office_irm azurerm_sentinel_data_connector_office_irm}.
 type SentinelDataConnectorOfficeIrm interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_SentinelDataConnectorOfficeIrm) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_data_connector_office_irm azurerm_sentinel_data_connector_office_irm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_data_connector_office_irm azurerm_sentinel_data_connector_office_irm} Resource.
 func NewSentinelDataConnectorOfficeIrm(scope constructs.Construct, id *string, config *SentinelDataConnectorOfficeIrmConfig) SentinelDataConnectorOfficeIrm {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewSentinelDataConnectorOfficeIrm(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/3.116.0/docs/resources/sentinel_data_connector_office_irm azurerm_sentinel_data_connector_office_irm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/sentinel_data_connector_office_irm azurerm_sentinel_data_connector_office_irm} Resource.
 func NewSentinelDataConnectorOfficeIrm_Override(s SentinelDataConnectorOfficeIrm, scope constructs.Construct, id *string, config *SentinelDataConnectorOfficeIrmConfig) {
 	_init_.Initialize()
 

@@ -95,10 +95,6 @@ func (j *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitio
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinition) validateSetVaultBaseUrlParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitionParameters(scope constructs.Construct, id *string, config *DataAzurermKeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig) error {
 	return nil
 }

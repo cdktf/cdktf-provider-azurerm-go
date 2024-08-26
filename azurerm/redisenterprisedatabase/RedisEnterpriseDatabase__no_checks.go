@@ -151,10 +151,6 @@ func (j *jsiiProxy_RedisEnterpriseDatabase) validateSetProvisionersParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_RedisEnterpriseDatabase) validateSetResourceGroupNameParameters(val *string) error {
-	return nil
-}
-
 func validateNewRedisEnterpriseDatabaseParameters(scope constructs.Construct, id *string, config *RedisEnterpriseDatabaseConfig) error {
 	return nil
 }

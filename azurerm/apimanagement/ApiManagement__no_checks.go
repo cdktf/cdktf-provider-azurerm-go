@@ -95,10 +95,6 @@ func (a *jsiiProxy_ApiManagement) validatePutIdentityParameters(value *ApiManage
 	return nil
 }
 
-func (a *jsiiProxy_ApiManagement) validatePutPolicyParameters(value interface{}) error {
-	return nil
-}
-
 func (a *jsiiProxy_ApiManagement) validatePutProtocolsParameters(value *ApiManagementProtocols) error {
 	return nil
 }
