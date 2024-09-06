@@ -5,7 +5,7 @@ package dataazurermmobilenetworkservice
 
 
 type DataAzurermMobileNetworkServiceTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/data-sources/mobile_network_service#read DataAzurermMobileNetworkService#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/data-sources/mobile_network_service#read DataAzurermMobileNetworkService#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

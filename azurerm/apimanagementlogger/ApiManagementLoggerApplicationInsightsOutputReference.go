@@ -23,6 +23,9 @@ type ApiManagementLoggerApplicationInsightsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionString() *string
+	SetConnectionString(val *string)
+	ConnectionStringInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -67,6 +70,8 @@ type ApiManagementLoggerApplicationInsightsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetConnectionString()
+	ResetInstrumentationKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -97,6 +102,26 @@ func (j *jsiiProxy_ApiManagementLoggerApplicationInsightsOutputReference) Comple
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementLoggerApplicationInsightsOutputReference) ConnectionString() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionString",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementLoggerApplicationInsightsOutputReference) ConnectionStringInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionStringInput",
 		&returns,
 	)
 	return returns
@@ -218,6 +243,17 @@ func (j *jsiiProxy_ApiManagementLoggerApplicationInsightsOutputReference)SetComp
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiManagementLoggerApplicationInsightsOutputReference)SetConnectionString(val *string) {
+	if err := j.validateSetConnectionStringParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connectionString",
 		val,
 	)
 }
@@ -450,6 +486,22 @@ func (a *jsiiProxy_ApiManagementLoggerApplicationInsightsOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_ApiManagementLoggerApplicationInsightsOutputReference) ResetConnectionString() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConnectionString",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiManagementLoggerApplicationInsightsOutputReference) ResetInstrumentationKey() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetInstrumentationKey",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_ApiManagementLoggerApplicationInsightsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

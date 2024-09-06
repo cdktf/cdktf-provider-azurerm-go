@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/netapp_volume azurerm_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/netapp_volume azurerm_netapp_volume}.
 type NetappVolume interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -107,6 +107,9 @@ type NetappVolume interface {
 	ServiceLevel() *string
 	SetServiceLevel(val *string)
 	ServiceLevelInput() *string
+	Smb3ProtocolEncryptionEnabled() interface{}
+	SetSmb3ProtocolEncryptionEnabled(val interface{})
+	Smb3ProtocolEncryptionEnabledInput() interface{}
 	SmbAccessBasedEnumerationEnabled() interface{}
 	SetSmbAccessBasedEnumerationEnabled(val interface{})
 	SmbAccessBasedEnumerationEnabledInput() interface{}
@@ -207,6 +210,7 @@ type NetappVolume interface {
 	ResetOverrideLogicalId()
 	ResetProtocols()
 	ResetSecurityStyle()
+	ResetSmb3ProtocolEncryptionEnabled()
 	ResetSmbAccessBasedEnumerationEnabled()
 	ResetSmbContinuousAvailabilityEnabled()
 	ResetSmbNonBrowsableEnabled()
@@ -733,6 +737,26 @@ func (j *jsiiProxy_NetappVolume) ServiceLevelInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NetappVolume) Smb3ProtocolEncryptionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"smb3ProtocolEncryptionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) Smb3ProtocolEncryptionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"smb3ProtocolEncryptionEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetappVolume) SmbAccessBasedEnumerationEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -984,7 +1008,7 @@ func (j *jsiiProxy_NetappVolume) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
 func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolumeConfig) NetappVolume {
 	_init_.Initialize()
 
@@ -1002,7 +1026,7 @@ func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolum
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
 func NewNetappVolume_Override(n NetappVolume, scope constructs.Construct, id *string, config *NetappVolumeConfig) {
 	_init_.Initialize()
 
@@ -1242,6 +1266,17 @@ func (j *jsiiProxy_NetappVolume)SetServiceLevel(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceLevel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappVolume)SetSmb3ProtocolEncryptionEnabled(val interface{}) {
+	if err := j.validateSetSmb3ProtocolEncryptionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"smb3ProtocolEncryptionEnabled",
 		val,
 	)
 }
@@ -1853,6 +1888,14 @@ func (n *jsiiProxy_NetappVolume) ResetSecurityStyle() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetSecurityStyle",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolume) ResetSmb3ProtocolEncryptionEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSmb3ProtocolEncryptionEnabled",
 		nil, // no parameters
 	)
 }

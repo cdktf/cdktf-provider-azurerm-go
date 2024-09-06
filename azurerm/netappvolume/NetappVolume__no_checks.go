@@ -183,6 +183,10 @@ func (j *jsiiProxy_NetappVolume) validateSetServiceLevelParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolume) validateSetSmb3ProtocolEncryptionEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolume) validateSetSmbAccessBasedEnumerationEnabledParameters(val interface{}) error {
 	return nil
 }

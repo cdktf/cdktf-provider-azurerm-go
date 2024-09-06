@@ -5,7 +5,7 @@ package containerregistrytokenpassword
 
 
 type ContainerRegistryTokenPasswordPassword2 struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/container_registry_token_password#expiry ContainerRegistryTokenPassword#expiry}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/container_registry_token_password#expiry ContainerRegistryTokenPassword#expiry}.
 	Expiry *string `field:"optional" json:"expiry" yaml:"expiry"`
 }
 

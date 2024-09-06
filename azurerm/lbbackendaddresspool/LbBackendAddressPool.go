@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/lb_backend_address_pool azurerm_lb_backend_address_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/lb_backend_address_pool azurerm_lb_backend_address_pool}.
 type LbBackendAddressPool interface {
 	cdktf.TerraformResource
 	BackendIpConfigurations() *[]*string
@@ -496,7 +496,7 @@ func (j *jsiiProxy_LbBackendAddressPool) VirtualNetworkIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/lb_backend_address_pool azurerm_lb_backend_address_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/lb_backend_address_pool azurerm_lb_backend_address_pool} Resource.
 func NewLbBackendAddressPool(scope constructs.Construct, id *string, config *LbBackendAddressPoolConfig) LbBackendAddressPool {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewLbBackendAddressPool(scope constructs.Construct, id *string, config *LbB
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/lb_backend_address_pool azurerm_lb_backend_address_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/lb_backend_address_pool azurerm_lb_backend_address_pool} Resource.
 func NewLbBackendAddressPool_Override(l LbBackendAddressPool, scope constructs.Construct, id *string, config *LbBackendAddressPoolConfig) {
 	_init_.Initialize()
 

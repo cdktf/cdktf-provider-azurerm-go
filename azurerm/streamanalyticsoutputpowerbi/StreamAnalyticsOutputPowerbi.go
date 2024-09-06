@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/stream_analytics_output_powerbi azurerm_stream_analytics_output_powerbi}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/stream_analytics_output_powerbi azurerm_stream_analytics_output_powerbi}.
 type StreamAnalyticsOutputPowerbi interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -520,7 +520,7 @@ func (j *jsiiProxy_StreamAnalyticsOutputPowerbi) TokenUserPrincipalNameInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/stream_analytics_output_powerbi azurerm_stream_analytics_output_powerbi} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/stream_analytics_output_powerbi azurerm_stream_analytics_output_powerbi} Resource.
 func NewStreamAnalyticsOutputPowerbi(scope constructs.Construct, id *string, config *StreamAnalyticsOutputPowerbiConfig) StreamAnalyticsOutputPowerbi {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewStreamAnalyticsOutputPowerbi(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/stream_analytics_output_powerbi azurerm_stream_analytics_output_powerbi} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/stream_analytics_output_powerbi azurerm_stream_analytics_output_powerbi} Resource.
 func NewStreamAnalyticsOutputPowerbi_Override(s StreamAnalyticsOutputPowerbi, scope constructs.Construct, id *string, config *StreamAnalyticsOutputPowerbiConfig) {
 	_init_.Initialize()
 

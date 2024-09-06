@@ -5,7 +5,7 @@ package hdinsighthbasecluster
 
 
 type HdinsightHbaseClusterComponentVersion struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.0.1/docs/resources/hdinsight_hbase_cluster#hbase HdinsightHbaseCluster#hbase}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/hdinsight_hbase_cluster#hbase HdinsightHbaseCluster#hbase}.
 	Hbase *string `field:"required" json:"hbase" yaml:"hbase"`
 }
 

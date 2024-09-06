@@ -59,6 +59,10 @@ func (j *jsiiProxy_ApiManagementLoggerApplicationInsightsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementLoggerApplicationInsightsOutputReference) validateSetConnectionStringParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementLoggerApplicationInsightsOutputReference) validateSetInstrumentationKeyParameters(val *string) error {
 	return nil
 }
