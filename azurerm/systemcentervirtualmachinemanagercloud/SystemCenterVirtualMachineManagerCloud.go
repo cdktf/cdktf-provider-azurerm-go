@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/system_center_virtual_machine_manager_cloud azurerm_system_center_virtual_machine_manager_cloud}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/system_center_virtual_machine_manager_cloud azurerm_system_center_virtual_machine_manager_cloud}.
 type SystemCenterVirtualMachineManagerCloud interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_SystemCenterVirtualMachineManagerCloud) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/system_center_virtual_machine_manager_cloud azurerm_system_center_virtual_machine_manager_cloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/system_center_virtual_machine_manager_cloud azurerm_system_center_virtual_machine_manager_cloud} Resource.
 func NewSystemCenterVirtualMachineManagerCloud(scope constructs.Construct, id *string, config *SystemCenterVirtualMachineManagerCloudConfig) SystemCenterVirtualMachineManagerCloud {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewSystemCenterVirtualMachineManagerCloud(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/system_center_virtual_machine_manager_cloud azurerm_system_center_virtual_machine_manager_cloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/system_center_virtual_machine_manager_cloud azurerm_system_center_virtual_machine_manager_cloud} Resource.
 func NewSystemCenterVirtualMachineManagerCloud_Override(s SystemCenterVirtualMachineManagerCloud, scope constructs.Construct, id *string, config *SystemCenterVirtualMachineManagerCloudConfig) {
 	_init_.Initialize()
 

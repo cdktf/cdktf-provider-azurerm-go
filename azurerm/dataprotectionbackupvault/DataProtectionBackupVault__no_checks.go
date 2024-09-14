@@ -107,6 +107,10 @@ func (j *jsiiProxy_DataProtectionBackupVault) validateSetCountParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_DataProtectionBackupVault) validateSetCrossRegionRestoreEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupVault) validateSetDatastoreTypeParameters(val *string) error {
 	return nil
 }

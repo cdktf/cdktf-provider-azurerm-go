@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/data-sources/batch_certificate azurerm_batch_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/data-sources/batch_certificate azurerm_batch_certificate}.
 type DataAzurermBatchCertificate interface {
 	cdktf.TerraformDataSource
 	AccountName() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_DataAzurermBatchCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/data-sources/batch_certificate azurerm_batch_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/data-sources/batch_certificate azurerm_batch_certificate} Data Source.
 func NewDataAzurermBatchCertificate(scope constructs.Construct, id *string, config *DataAzurermBatchCertificateConfig) DataAzurermBatchCertificate {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewDataAzurermBatchCertificate(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/data-sources/batch_certificate azurerm_batch_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/data-sources/batch_certificate azurerm_batch_certificate} Data Source.
 func NewDataAzurermBatchCertificate_Override(d DataAzurermBatchCertificate, scope constructs.Construct, id *string, config *DataAzurermBatchCertificateConfig) {
 	_init_.Initialize()
 

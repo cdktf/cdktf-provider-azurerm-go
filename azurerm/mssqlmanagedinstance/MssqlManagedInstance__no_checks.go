@@ -167,6 +167,10 @@ func (j *jsiiProxy_MssqlManagedInstance) validateSetResourceGroupNameParameters(
 	return nil
 }
 
+func (j *jsiiProxy_MssqlManagedInstance) validateSetServicePrincipalTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlManagedInstance) validateSetSkuNameParameters(val *string) error {
 	return nil
 }

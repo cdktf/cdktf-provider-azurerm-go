@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/management_group_subscription_association azurerm_management_group_subscription_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/management_group_subscription_association azurerm_management_group_subscription_association}.
 type ManagementGroupSubscriptionAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ManagementGroupSubscriptionAssociation) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/management_group_subscription_association azurerm_management_group_subscription_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/management_group_subscription_association azurerm_management_group_subscription_association} Resource.
 func NewManagementGroupSubscriptionAssociation(scope constructs.Construct, id *string, config *ManagementGroupSubscriptionAssociationConfig) ManagementGroupSubscriptionAssociation {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewManagementGroupSubscriptionAssociation(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/management_group_subscription_association azurerm_management_group_subscription_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/management_group_subscription_association azurerm_management_group_subscription_association} Resource.
 func NewManagementGroupSubscriptionAssociation_Override(m ManagementGroupSubscriptionAssociation, scope constructs.Construct, id *string, config *ManagementGroupSubscriptionAssociationConfig) {
 	_init_.Initialize()
 

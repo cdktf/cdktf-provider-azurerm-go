@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/data-sources/storage_container azurerm_storage_container}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/data-sources/storage_container azurerm_storage_container}.
 type DataAzurermStorageContainer interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_DataAzurermStorageContainer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/data-sources/storage_container azurerm_storage_container} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/data-sources/storage_container azurerm_storage_container} Data Source.
 func NewDataAzurermStorageContainer(scope constructs.Construct, id *string, config *DataAzurermStorageContainerConfig) DataAzurermStorageContainer {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewDataAzurermStorageContainer(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/data-sources/storage_container azurerm_storage_container} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/data-sources/storage_container azurerm_storage_container} Data Source.
 func NewDataAzurermStorageContainer_Override(d DataAzurermStorageContainer, scope constructs.Construct, id *string, config *DataAzurermStorageContainerConfig) {
 	_init_.Initialize()
 

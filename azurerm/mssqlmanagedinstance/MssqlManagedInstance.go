@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance}.
 type MssqlManagedInstance interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -98,6 +98,9 @@ type MssqlManagedInstance interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	ServicePrincipalType() *string
+	SetServicePrincipalType(val *string)
+	ServicePrincipalTypeInput() *string
 	SkuName() *string
 	SetSkuName(val *string)
 	SkuNameInput() *string
@@ -186,6 +189,7 @@ type MssqlManagedInstance interface {
 	ResetOverrideLogicalId()
 	ResetProxyOverride()
 	ResetPublicDataEndpointEnabled()
+	ResetServicePrincipalType()
 	ResetStorageAccountType()
 	ResetTags()
 	ResetTimeouts()
@@ -639,6 +643,26 @@ func (j *jsiiProxy_MssqlManagedInstance) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MssqlManagedInstance) ServicePrincipalType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servicePrincipalType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlManagedInstance) ServicePrincipalTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"servicePrincipalTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MssqlManagedInstance) SkuName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -850,7 +874,7 @@ func (j *jsiiProxy_MssqlManagedInstance) ZoneRedundantEnabledInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
 func NewMssqlManagedInstance(scope constructs.Construct, id *string, config *MssqlManagedInstanceConfig) MssqlManagedInstance {
 	_init_.Initialize()
 
@@ -868,7 +892,7 @@ func NewMssqlManagedInstance(scope constructs.Construct, id *string, config *Mss
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
 func NewMssqlManagedInstance_Override(m MssqlManagedInstance, scope constructs.Construct, id *string, config *MssqlManagedInstanceConfig) {
 	_init_.Initialize()
 
@@ -1086,6 +1110,17 @@ func (j *jsiiProxy_MssqlManagedInstance)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlManagedInstance)SetServicePrincipalType(val *string) {
+	if err := j.validateSetServicePrincipalTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"servicePrincipalType",
 		val,
 	)
 }
@@ -1621,6 +1656,14 @@ func (m *jsiiProxy_MssqlManagedInstance) ResetPublicDataEndpointEnabled() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetPublicDataEndpointEnabled",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlManagedInstance) ResetServicePrincipalType() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetServicePrincipalType",
 		nil, // no parameters
 	)
 }

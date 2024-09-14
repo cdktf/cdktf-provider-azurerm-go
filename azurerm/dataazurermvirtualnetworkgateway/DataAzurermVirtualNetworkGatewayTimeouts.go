@@ -5,7 +5,7 @@ package dataazurermvirtualnetworkgateway
 
 
 type DataAzurermVirtualNetworkGatewayTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/data-sources/virtual_network_gateway#read DataAzurermVirtualNetworkGateway#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/data-sources/virtual_network_gateway#read DataAzurermVirtualNetworkGateway#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

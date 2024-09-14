@@ -5,7 +5,7 @@ package dataazurermactivedirectorydomainservice
 
 
 type DataAzurermActiveDirectoryDomainServiceTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/data-sources/active_directory_domain_service#read DataAzurermActiveDirectoryDomainService#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/data-sources/active_directory_domain_service#read DataAzurermActiveDirectoryDomainService#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

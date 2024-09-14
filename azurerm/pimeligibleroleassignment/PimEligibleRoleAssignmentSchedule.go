@@ -7,11 +7,11 @@ package pimeligibleroleassignment
 type PimEligibleRoleAssignmentSchedule struct {
 	// expiration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/pim_eligible_role_assignment#expiration PimEligibleRoleAssignment#expiration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/pim_eligible_role_assignment#expiration PimEligibleRoleAssignment#expiration}
 	Expiration *PimEligibleRoleAssignmentScheduleExpiration `field:"optional" json:"expiration" yaml:"expiration"`
 	// The start date/time.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/pim_eligible_role_assignment#start_date_time PimEligibleRoleAssignment#start_date_time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/pim_eligible_role_assignment#start_date_time PimEligibleRoleAssignment#start_date_time}
 	StartDateTime *string `field:"optional" json:"startDateTime" yaml:"startDateTime"`
 }
 

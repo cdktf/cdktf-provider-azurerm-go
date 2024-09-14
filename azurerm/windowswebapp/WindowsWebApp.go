@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/windows_web_app azurerm_windows_web_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/windows_web_app azurerm_windows_web_app}.
 type WindowsWebApp interface {
 	cdktf.TerraformResource
 	AppSettings() *map[string]*string
@@ -1076,7 +1076,7 @@ func (j *jsiiProxy_WindowsWebApp) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/windows_web_app azurerm_windows_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/windows_web_app azurerm_windows_web_app} Resource.
 func NewWindowsWebApp(scope constructs.Construct, id *string, config *WindowsWebAppConfig) WindowsWebApp {
 	_init_.Initialize()
 
@@ -1094,7 +1094,7 @@ func NewWindowsWebApp(scope constructs.Construct, id *string, config *WindowsWeb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/windows_web_app azurerm_windows_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/windows_web_app azurerm_windows_web_app} Resource.
 func NewWindowsWebApp_Override(w WindowsWebApp, scope constructs.Construct, id *string, config *WindowsWebAppConfig) {
 	_init_.Initialize()
 

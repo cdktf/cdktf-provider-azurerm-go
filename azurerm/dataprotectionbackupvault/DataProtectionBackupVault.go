@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault}.
 type DataProtectionBackupVault interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,9 @@ type DataProtectionBackupVault interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CrossRegionRestoreEnabled() interface{}
+	SetCrossRegionRestoreEnabled(val interface{})
+	CrossRegionRestoreEnabledInput() interface{}
 	DatastoreType() *string
 	SetDatastoreType(val *string)
 	DatastoreTypeInput() *string
@@ -137,6 +140,7 @@ type DataProtectionBackupVault interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutIdentity(value *DataProtectionBackupVaultIdentity)
 	PutTimeouts(value *DataProtectionBackupVaultTimeouts)
+	ResetCrossRegionRestoreEnabled()
 	ResetId()
 	ResetIdentity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -199,6 +203,26 @@ func (j *jsiiProxy_DataProtectionBackupVault) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupVault) CrossRegionRestoreEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"crossRegionRestoreEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupVault) CrossRegionRestoreEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"crossRegionRestoreEnabledInput",
 		&returns,
 	)
 	return returns
@@ -545,7 +569,7 @@ func (j *jsiiProxy_DataProtectionBackupVault) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault} Resource.
 func NewDataProtectionBackupVault(scope constructs.Construct, id *string, config *DataProtectionBackupVaultConfig) DataProtectionBackupVault {
 	_init_.Initialize()
 
@@ -563,7 +587,7 @@ func NewDataProtectionBackupVault(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.1.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault} Resource.
 func NewDataProtectionBackupVault_Override(d DataProtectionBackupVault, scope constructs.Construct, id *string, config *DataProtectionBackupVaultConfig) {
 	_init_.Initialize()
 
@@ -592,6 +616,17 @@ func (j *jsiiProxy_DataProtectionBackupVault)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataProtectionBackupVault)SetCrossRegionRestoreEnabled(val interface{}) {
+	if err := j.validateSetCrossRegionRestoreEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"crossRegionRestoreEnabled",
 		val,
 	)
 }
@@ -1113,6 +1148,14 @@ func (d *jsiiProxy_DataProtectionBackupVault) PutTimeouts(value *DataProtectionB
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataProtectionBackupVault) ResetCrossRegionRestoreEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCrossRegionRestoreEnabled",
+		nil, // no parameters
 	)
 }
 
