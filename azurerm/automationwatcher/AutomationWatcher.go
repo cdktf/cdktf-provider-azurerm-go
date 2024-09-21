@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/automation_watcher azurerm_automation_watcher}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/automation_watcher azurerm_automation_watcher}.
 type AutomationWatcher interface {
 	cdktf.TerraformResource
 	AutomationAccountId() *string
@@ -579,7 +579,7 @@ func (j *jsiiProxy_AutomationWatcher) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/automation_watcher azurerm_automation_watcher} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/automation_watcher azurerm_automation_watcher} Resource.
 func NewAutomationWatcher(scope constructs.Construct, id *string, config *AutomationWatcherConfig) AutomationWatcher {
 	_init_.Initialize()
 
@@ -597,7 +597,7 @@ func NewAutomationWatcher(scope constructs.Construct, id *string, config *Automa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/automation_watcher azurerm_automation_watcher} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/automation_watcher azurerm_automation_watcher} Resource.
 func NewAutomationWatcher_Override(a AutomationWatcher, scope constructs.Construct, id *string, config *AutomationWatcherConfig) {
 	_init_.Initialize()
 

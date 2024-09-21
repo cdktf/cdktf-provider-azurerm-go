@@ -143,6 +143,10 @@ func (j *jsiiProxy_StaticWebApp) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_StaticWebApp) validateSetPublicNetworkAccessEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StaticWebApp) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }

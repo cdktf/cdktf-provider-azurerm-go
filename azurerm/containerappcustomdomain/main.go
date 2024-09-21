@@ -23,6 +23,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "containerAppEnvironmentCertificateId", GoGetter: "ContainerAppEnvironmentCertificateId"},
 			_jsii_.MemberProperty{JsiiProperty: "containerAppEnvironmentCertificateIdInput", GoGetter: "ContainerAppEnvironmentCertificateIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "containerAppEnvironmentManagedCertificateId", GoGetter: "ContainerAppEnvironmentManagedCertificateId"},
 			_jsii_.MemberProperty{JsiiProperty: "containerAppId", GoGetter: "ContainerAppId"},
 			_jsii_.MemberProperty{JsiiProperty: "containerAppIdInput", GoGetter: "ContainerAppIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},

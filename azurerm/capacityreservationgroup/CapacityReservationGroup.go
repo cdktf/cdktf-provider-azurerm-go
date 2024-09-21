@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/capacity_reservation_group azurerm_capacity_reservation_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/capacity_reservation_group azurerm_capacity_reservation_group}.
 type CapacityReservationGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_CapacityReservationGroup) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/capacity_reservation_group azurerm_capacity_reservation_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/capacity_reservation_group azurerm_capacity_reservation_group} Resource.
 func NewCapacityReservationGroup(scope constructs.Construct, id *string, config *CapacityReservationGroupConfig) CapacityReservationGroup {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewCapacityReservationGroup(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/capacity_reservation_group azurerm_capacity_reservation_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/capacity_reservation_group azurerm_capacity_reservation_group} Resource.
 func NewCapacityReservationGroup_Override(c CapacityReservationGroup, scope constructs.Construct, id *string, config *CapacityReservationGroupConfig) {
 	_init_.Initialize()
 

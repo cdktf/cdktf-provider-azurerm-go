@@ -131,6 +131,10 @@ func (j *jsiiProxy_SharedImage) validateSetDescriptionParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_SharedImage) validateSetDiskControllerTypeNvmeEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SharedImage) validateSetDiskTypesNotAllowedParameters(val *[]*string) error {
 	return nil
 }

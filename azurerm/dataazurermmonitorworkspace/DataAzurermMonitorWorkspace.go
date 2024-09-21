@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/data-sources/monitor_workspace azurerm_monitor_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/data-sources/monitor_workspace azurerm_monitor_workspace}.
 type DataAzurermMonitorWorkspace interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_DataAzurermMonitorWorkspace) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/data-sources/monitor_workspace azurerm_monitor_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/data-sources/monitor_workspace azurerm_monitor_workspace} Data Source.
 func NewDataAzurermMonitorWorkspace(scope constructs.Construct, id *string, config *DataAzurermMonitorWorkspaceConfig) DataAzurermMonitorWorkspace {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewDataAzurermMonitorWorkspace(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/data-sources/monitor_workspace azurerm_monitor_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/data-sources/monitor_workspace azurerm_monitor_workspace} Data Source.
 func NewDataAzurermMonitorWorkspace_Override(d DataAzurermMonitorWorkspace, scope constructs.Construct, id *string, config *DataAzurermMonitorWorkspaceConfig) {
 	_init_.Initialize()
 

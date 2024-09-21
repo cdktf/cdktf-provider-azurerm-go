@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/shared_image azurerm_shared_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/shared_image azurerm_shared_image}.
 type SharedImage interface {
 	cdktf.TerraformResource
 	AcceleratedNetworkSupportEnabled() interface{}
@@ -46,6 +46,9 @@ type SharedImage interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DiskControllerTypeNvmeEnabled() interface{}
+	SetDiskControllerTypeNvmeEnabled(val interface{})
+	DiskControllerTypeNvmeEnabledInput() interface{}
 	DiskTypesNotAllowed() *[]*string
 	SetDiskTypesNotAllowed(val *[]*string)
 	DiskTypesNotAllowedInput() *[]*string
@@ -196,6 +199,7 @@ type SharedImage interface {
 	ResetConfidentialVmEnabled()
 	ResetConfidentialVmSupported()
 	ResetDescription()
+	ResetDiskControllerTypeNvmeEnabled()
 	ResetDiskTypesNotAllowed()
 	ResetEndOfLifeDate()
 	ResetEula()
@@ -380,6 +384,26 @@ func (j *jsiiProxy_SharedImage) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SharedImage) DiskControllerTypeNvmeEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"diskControllerTypeNvmeEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SharedImage) DiskControllerTypeNvmeEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"diskControllerTypeNvmeEnabledInput",
 		&returns,
 	)
 	return returns
@@ -976,7 +1000,7 @@ func (j *jsiiProxy_SharedImage) TrustedLaunchSupportedInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/shared_image azurerm_shared_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/shared_image azurerm_shared_image} Resource.
 func NewSharedImage(scope constructs.Construct, id *string, config *SharedImageConfig) SharedImage {
 	_init_.Initialize()
 
@@ -994,7 +1018,7 @@ func NewSharedImage(scope constructs.Construct, id *string, config *SharedImageC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/shared_image azurerm_shared_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/shared_image azurerm_shared_image} Resource.
 func NewSharedImage_Override(s SharedImage, scope constructs.Construct, id *string, config *SharedImageConfig) {
 	_init_.Initialize()
 
@@ -1086,6 +1110,17 @@ func (j *jsiiProxy_SharedImage)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SharedImage)SetDiskControllerTypeNvmeEnabled(val interface{}) {
+	if err := j.validateSetDiskControllerTypeNvmeEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskControllerTypeNvmeEnabled",
 		val,
 	)
 }
@@ -1781,6 +1816,14 @@ func (s *jsiiProxy_SharedImage) ResetDescription() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SharedImage) ResetDiskControllerTypeNvmeEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDiskControllerTypeNvmeEnabled",
 		nil, // no parameters
 	)
 }

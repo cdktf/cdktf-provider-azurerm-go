@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/static_web_app azurerm_static_web_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/static_web_app azurerm_static_web_app}.
 type StaticWebApp interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -77,6 +77,9 @@ type StaticWebApp interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicNetworkAccessEnabled() interface{}
+	SetPublicNetworkAccessEnabled(val interface{})
+	PublicNetworkAccessEnabledInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -154,6 +157,7 @@ type StaticWebApp interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreviewEnvironmentsEnabled()
+	ResetPublicNetworkAccessEnabled()
 	ResetSkuSize()
 	ResetSkuTier()
 	ResetTags()
@@ -476,6 +480,26 @@ func (j *jsiiProxy_StaticWebApp) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StaticWebApp) PublicNetworkAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StaticWebApp) PublicNetworkAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StaticWebApp) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -617,7 +641,7 @@ func (j *jsiiProxy_StaticWebApp) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/static_web_app azurerm_static_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/static_web_app azurerm_static_web_app} Resource.
 func NewStaticWebApp(scope constructs.Construct, id *string, config *StaticWebAppConfig) StaticWebApp {
 	_init_.Initialize()
 
@@ -635,7 +659,7 @@ func NewStaticWebApp(scope constructs.Construct, id *string, config *StaticWebAp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.2.0/docs/resources/static_web_app azurerm_static_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/static_web_app azurerm_static_web_app} Resource.
 func NewStaticWebApp_Override(s StaticWebApp, scope constructs.Construct, id *string, config *StaticWebAppConfig) {
 	_init_.Initialize()
 
@@ -776,6 +800,17 @@ func (j *jsiiProxy_StaticWebApp)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StaticWebApp)SetPublicNetworkAccessEnabled(val interface{}) {
+	if err := j.validateSetPublicNetworkAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccessEnabled",
 		val,
 	)
 }
@@ -1262,6 +1297,14 @@ func (s *jsiiProxy_StaticWebApp) ResetPreviewEnvironmentsEnabled() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPreviewEnvironmentsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StaticWebApp) ResetPublicNetworkAccessEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPublicNetworkAccessEnabled",
 		nil, // no parameters
 	)
 }
