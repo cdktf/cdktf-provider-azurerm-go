@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/data-sources/eventgrid_domain_topic azurerm_eventgrid_domain_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/data-sources/eventgrid_domain_topic azurerm_eventgrid_domain_topic}.
 type DataAzurermEventgridDomainTopic interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataAzurermEventgridDomainTopic) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/data-sources/eventgrid_domain_topic azurerm_eventgrid_domain_topic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/data-sources/eventgrid_domain_topic azurerm_eventgrid_domain_topic} Data Source.
 func NewDataAzurermEventgridDomainTopic(scope constructs.Construct, id *string, config *DataAzurermEventgridDomainTopicConfig) DataAzurermEventgridDomainTopic {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewDataAzurermEventgridDomainTopic(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/data-sources/eventgrid_domain_topic azurerm_eventgrid_domain_topic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/data-sources/eventgrid_domain_topic azurerm_eventgrid_domain_topic} Data Source.
 func NewDataAzurermEventgridDomainTopic_Override(d DataAzurermEventgridDomainTopic, scope constructs.Construct, id *string, config *DataAzurermEventgridDomainTopicConfig) {
 	_init_.Initialize()
 

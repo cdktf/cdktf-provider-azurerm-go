@@ -22,22 +22,22 @@ type IotcentralOrganizationConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/iotcentral_organization#display_name IotcentralOrganization#display_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/iotcentral_organization#display_name IotcentralOrganization#display_name}.
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/iotcentral_organization#iotcentral_application_id IotcentralOrganization#iotcentral_application_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/iotcentral_organization#iotcentral_application_id IotcentralOrganization#iotcentral_application_id}.
 	IotcentralApplicationId *string `field:"required" json:"iotcentralApplicationId" yaml:"iotcentralApplicationId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/iotcentral_organization#organization_id IotcentralOrganization#organization_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/iotcentral_organization#organization_id IotcentralOrganization#organization_id}.
 	OrganizationId *string `field:"required" json:"organizationId" yaml:"organizationId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/iotcentral_organization#id IotcentralOrganization#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/iotcentral_organization#id IotcentralOrganization#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/iotcentral_organization#parent_organization_id IotcentralOrganization#parent_organization_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/iotcentral_organization#parent_organization_id IotcentralOrganization#parent_organization_id}.
 	ParentOrganizationId *string `field:"optional" json:"parentOrganizationId" yaml:"parentOrganizationId"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/iotcentral_organization#timeouts IotcentralOrganization#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/iotcentral_organization#timeouts IotcentralOrganization#timeouts}
 	Timeouts *IotcentralOrganizationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

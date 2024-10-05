@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/site_recovery_replicated_vm azurerm_site_recovery_replicated_vm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/site_recovery_replicated_vm azurerm_site_recovery_replicated_vm}.
 type SiteRecoveryReplicatedVm interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -116,6 +116,9 @@ type SiteRecoveryReplicatedVm interface {
 	TargetVirtualMachineScaleSetId() *string
 	SetTargetVirtualMachineScaleSetId(val *string)
 	TargetVirtualMachineScaleSetIdInput() *string
+	TargetVirtualMachineSize() *string
+	SetTargetVirtualMachineSize(val *string)
+	TargetVirtualMachineSizeInput() *string
 	TargetZone() *string
 	SetTargetZone(val *string)
 	TargetZoneInput() *string
@@ -193,6 +196,7 @@ type SiteRecoveryReplicatedVm interface {
 	ResetTargetNetworkId()
 	ResetTargetProximityPlacementGroupId()
 	ResetTargetVirtualMachineScaleSetId()
+	ResetTargetVirtualMachineSize()
 	ResetTargetZone()
 	ResetTestNetworkId()
 	ResetTimeouts()
@@ -765,6 +769,26 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVm) TargetVirtualMachineScaleSetIdInput
 	return returns
 }
 
+func (j *jsiiProxy_SiteRecoveryReplicatedVm) TargetVirtualMachineSize() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetVirtualMachineSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVm) TargetVirtualMachineSizeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetVirtualMachineSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SiteRecoveryReplicatedVm) TargetZone() *string {
 	var returns *string
 	_jsii_.Get(
@@ -876,7 +900,7 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVm) UnmanagedDiskInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/site_recovery_replicated_vm azurerm_site_recovery_replicated_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/site_recovery_replicated_vm azurerm_site_recovery_replicated_vm} Resource.
 func NewSiteRecoveryReplicatedVm(scope constructs.Construct, id *string, config *SiteRecoveryReplicatedVmConfig) SiteRecoveryReplicatedVm {
 	_init_.Initialize()
 
@@ -894,7 +918,7 @@ func NewSiteRecoveryReplicatedVm(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/site_recovery_replicated_vm azurerm_site_recovery_replicated_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/site_recovery_replicated_vm azurerm_site_recovery_replicated_vm} Resource.
 func NewSiteRecoveryReplicatedVm_Override(s SiteRecoveryReplicatedVm, scope constructs.Construct, id *string, config *SiteRecoveryReplicatedVmConfig) {
 	_init_.Initialize()
 
@@ -1178,6 +1202,17 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVm)SetTargetVirtualMachineScaleSetId(va
 	_jsii_.Set(
 		j,
 		"targetVirtualMachineScaleSetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVm)SetTargetVirtualMachineSize(val *string) {
+	if err := j.validateSetTargetVirtualMachineSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetVirtualMachineSize",
 		val,
 	)
 }
@@ -1693,6 +1728,14 @@ func (s *jsiiProxy_SiteRecoveryReplicatedVm) ResetTargetVirtualMachineScaleSetId
 	_jsii_.InvokeVoid(
 		s,
 		"resetTargetVirtualMachineScaleSetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SiteRecoveryReplicatedVm) ResetTargetVirtualMachineSize() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTargetVirtualMachineSize",
 		nil, // no parameters
 	)
 }

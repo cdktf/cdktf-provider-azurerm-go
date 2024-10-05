@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/log_analytics_datasource_windows_event azurerm_log_analytics_datasource_windows_event}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/log_analytics_datasource_windows_event azurerm_log_analytics_datasource_windows_event}.
 type LogAnalyticsDatasourceWindowsEvent interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -449,7 +449,7 @@ func (j *jsiiProxy_LogAnalyticsDatasourceWindowsEvent) WorkspaceNameInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/log_analytics_datasource_windows_event azurerm_log_analytics_datasource_windows_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/log_analytics_datasource_windows_event azurerm_log_analytics_datasource_windows_event} Resource.
 func NewLogAnalyticsDatasourceWindowsEvent(scope constructs.Construct, id *string, config *LogAnalyticsDatasourceWindowsEventConfig) LogAnalyticsDatasourceWindowsEvent {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewLogAnalyticsDatasourceWindowsEvent(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/log_analytics_datasource_windows_event azurerm_log_analytics_datasource_windows_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/log_analytics_datasource_windows_event azurerm_log_analytics_datasource_windows_event} Resource.
 func NewLogAnalyticsDatasourceWindowsEvent_Override(l LogAnalyticsDatasourceWindowsEvent, scope constructs.Construct, id *string, config *LogAnalyticsDatasourceWindowsEventConfig) {
 	_init_.Initialize()
 

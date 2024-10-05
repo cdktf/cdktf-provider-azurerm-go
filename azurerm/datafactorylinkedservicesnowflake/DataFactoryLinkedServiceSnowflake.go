@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/data_factory_linked_service_snowflake azurerm_data_factory_linked_service_snowflake}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/data_factory_linked_service_snowflake azurerm_data_factory_linked_service_snowflake}.
 type DataFactoryLinkedServiceSnowflake interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -547,7 +547,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSnowflake) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/data_factory_linked_service_snowflake azurerm_data_factory_linked_service_snowflake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/data_factory_linked_service_snowflake azurerm_data_factory_linked_service_snowflake} Resource.
 func NewDataFactoryLinkedServiceSnowflake(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceSnowflakeConfig) DataFactoryLinkedServiceSnowflake {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewDataFactoryLinkedServiceSnowflake(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/data_factory_linked_service_snowflake azurerm_data_factory_linked_service_snowflake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/data_factory_linked_service_snowflake azurerm_data_factory_linked_service_snowflake} Resource.
 func NewDataFactoryLinkedServiceSnowflake_Override(d DataFactoryLinkedServiceSnowflake, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceSnowflakeConfig) {
 	_init_.Initialize()
 

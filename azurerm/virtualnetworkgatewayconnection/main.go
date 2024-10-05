@@ -103,6 +103,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPeerVirtualNetworkGatewayId", GoMethod: "ResetPeerVirtualNetworkGatewayId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrivateLinkFastPathEnabled", GoMethod: "ResetPrivateLinkFastPathEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRoutingWeight", GoMethod: "ResetRoutingWeight"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSharedKey", GoMethod: "ResetSharedKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTrafficSelectorPolicy", GoMethod: "ResetTrafficSelectorPolicy"},

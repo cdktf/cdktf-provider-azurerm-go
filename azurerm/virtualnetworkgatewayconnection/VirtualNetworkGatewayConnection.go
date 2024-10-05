@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection}.
 type VirtualNetworkGatewayConnection interface {
 	cdktf.TerraformResource
 	AuthorizationKey() *string
@@ -205,6 +205,7 @@ type VirtualNetworkGatewayConnection interface {
 	ResetPeerVirtualNetworkGatewayId()
 	ResetPrivateLinkFastPathEnabled()
 	ResetRoutingWeight()
+	ResetSharedKey()
 	ResetTags()
 	ResetTimeouts()
 	ResetTrafficSelectorPolicy()
@@ -928,7 +929,7 @@ func (j *jsiiProxy_VirtualNetworkGatewayConnection) VirtualNetworkGatewayIdInput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Resource.
 func NewVirtualNetworkGatewayConnection(scope constructs.Construct, id *string, config *VirtualNetworkGatewayConnectionConfig) VirtualNetworkGatewayConnection {
 	_init_.Initialize()
 
@@ -946,7 +947,7 @@ func NewVirtualNetworkGatewayConnection(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Resource.
 func NewVirtualNetworkGatewayConnection_Override(v VirtualNetworkGatewayConnection, scope constructs.Construct, id *string, config *VirtualNetworkGatewayConnectionConfig) {
 	_init_.Initialize()
 
@@ -1815,6 +1816,14 @@ func (v *jsiiProxy_VirtualNetworkGatewayConnection) ResetRoutingWeight() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetRoutingWeight",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkGatewayConnection) ResetSharedKey() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetSharedKey",
 		nil, // no parameters
 	)
 }

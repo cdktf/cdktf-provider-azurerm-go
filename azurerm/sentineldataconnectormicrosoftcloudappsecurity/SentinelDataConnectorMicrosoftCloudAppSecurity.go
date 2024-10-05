@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/sentinel_data_connector_microsoft_cloud_app_security azurerm_sentinel_data_connector_microsoft_cloud_app_security}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/sentinel_data_connector_microsoft_cloud_app_security azurerm_sentinel_data_connector_microsoft_cloud_app_security}.
 type SentinelDataConnectorMicrosoftCloudAppSecurity interface {
 	cdktf.TerraformResource
 	AlertsEnabled() interface{}
@@ -452,7 +452,7 @@ func (j *jsiiProxy_SentinelDataConnectorMicrosoftCloudAppSecurity) TimeoutsInput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/sentinel_data_connector_microsoft_cloud_app_security azurerm_sentinel_data_connector_microsoft_cloud_app_security} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/sentinel_data_connector_microsoft_cloud_app_security azurerm_sentinel_data_connector_microsoft_cloud_app_security} Resource.
 func NewSentinelDataConnectorMicrosoftCloudAppSecurity(scope constructs.Construct, id *string, config *SentinelDataConnectorMicrosoftCloudAppSecurityConfig) SentinelDataConnectorMicrosoftCloudAppSecurity {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewSentinelDataConnectorMicrosoftCloudAppSecurity(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/sentinel_data_connector_microsoft_cloud_app_security azurerm_sentinel_data_connector_microsoft_cloud_app_security} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/sentinel_data_connector_microsoft_cloud_app_security azurerm_sentinel_data_connector_microsoft_cloud_app_security} Resource.
 func NewSentinelDataConnectorMicrosoftCloudAppSecurity_Override(s SentinelDataConnectorMicrosoftCloudAppSecurity, scope constructs.Construct, id *string, config *SentinelDataConnectorMicrosoftCloudAppSecurityConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/mssql_managed_instance_transparent_data_encryption azurerm_mssql_managed_instance_transparent_data_encryption}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/mssql_managed_instance_transparent_data_encryption azurerm_mssql_managed_instance_transparent_data_encryption}.
 type MssqlManagedInstanceTransparentDataEncryption interface {
 	cdktf.TerraformResource
 	AutoRotationEnabled() interface{}
@@ -405,7 +405,7 @@ func (j *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) TimeoutsInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/mssql_managed_instance_transparent_data_encryption azurerm_mssql_managed_instance_transparent_data_encryption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/mssql_managed_instance_transparent_data_encryption azurerm_mssql_managed_instance_transparent_data_encryption} Resource.
 func NewMssqlManagedInstanceTransparentDataEncryption(scope constructs.Construct, id *string, config *MssqlManagedInstanceTransparentDataEncryptionConfig) MssqlManagedInstanceTransparentDataEncryption {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewMssqlManagedInstanceTransparentDataEncryption(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.3.0/docs/resources/mssql_managed_instance_transparent_data_encryption azurerm_mssql_managed_instance_transparent_data_encryption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/mssql_managed_instance_transparent_data_encryption azurerm_mssql_managed_instance_transparent_data_encryption} Resource.
 func NewMssqlManagedInstanceTransparentDataEncryption_Override(m MssqlManagedInstanceTransparentDataEncryption, scope constructs.Construct, id *string, config *MssqlManagedInstanceTransparentDataEncryptionConfig) {
 	_init_.Initialize()
 
