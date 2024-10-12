@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/bastion_host azurerm_bastion_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/bastion_host azurerm_bastion_host}.
 type BastionHost interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -85,6 +85,9 @@ type BastionHost interface {
 	ScaleUnits() *float64
 	SetScaleUnits(val *float64)
 	ScaleUnitsInput() *float64
+	SessionRecordingEnabled() interface{}
+	SetSessionRecordingEnabled(val interface{})
+	SessionRecordingEnabledInput() interface{}
 	ShareableLinkEnabled() interface{}
 	SetShareableLinkEnabled(val interface{})
 	ShareableLinkEnabledInput() interface{}
@@ -163,6 +166,7 @@ type BastionHost interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetScaleUnits()
+	ResetSessionRecordingEnabled()
 	ResetShareableLinkEnabled()
 	ResetSku()
 	ResetTags()
@@ -527,6 +531,26 @@ func (j *jsiiProxy_BastionHost) ScaleUnitsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_BastionHost) SessionRecordingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sessionRecordingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BastionHost) SessionRecordingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sessionRecordingEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BastionHost) ShareableLinkEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -678,7 +702,7 @@ func (j *jsiiProxy_BastionHost) VirtualNetworkIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
 func NewBastionHost(scope constructs.Construct, id *string, config *BastionHostConfig) BastionHost {
 	_init_.Initialize()
 
@@ -696,7 +720,7 @@ func NewBastionHost(scope constructs.Construct, id *string, config *BastionHostC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
 func NewBastionHost_Override(b BastionHost, scope constructs.Construct, id *string, config *BastionHostConfig) {
 	_init_.Initialize()
 
@@ -870,6 +894,17 @@ func (j *jsiiProxy_BastionHost)SetScaleUnits(val *float64) {
 	_jsii_.Set(
 		j,
 		"scaleUnits",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BastionHost)SetSessionRecordingEnabled(val interface{}) {
+	if err := j.validateSetSessionRecordingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sessionRecordingEnabled",
 		val,
 	)
 }
@@ -1364,6 +1399,14 @@ func (b *jsiiProxy_BastionHost) ResetScaleUnits() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetScaleUnits",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BastionHost) ResetSessionRecordingEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSessionRecordingEnabled",
 		nil, // no parameters
 	)
 }

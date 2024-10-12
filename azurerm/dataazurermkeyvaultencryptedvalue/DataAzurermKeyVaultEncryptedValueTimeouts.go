@@ -5,7 +5,7 @@ package dataazurermkeyvaultencryptedvalue
 
 
 type DataAzurermKeyVaultEncryptedValueTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/data-sources/key_vault_encrypted_value#read DataAzurermKeyVaultEncryptedValue#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/data-sources/key_vault_encrypted_value#read DataAzurermKeyVaultEncryptedValue#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

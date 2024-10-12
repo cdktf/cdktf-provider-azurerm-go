@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/synapse_workspace_security_alert_policy azurerm_synapse_workspace_security_alert_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/synapse_workspace_security_alert_policy azurerm_synapse_workspace_security_alert_policy}.
 type SynapseWorkspaceSecurityAlertPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -524,7 +524,7 @@ func (j *jsiiProxy_SynapseWorkspaceSecurityAlertPolicy) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/synapse_workspace_security_alert_policy azurerm_synapse_workspace_security_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/synapse_workspace_security_alert_policy azurerm_synapse_workspace_security_alert_policy} Resource.
 func NewSynapseWorkspaceSecurityAlertPolicy(scope constructs.Construct, id *string, config *SynapseWorkspaceSecurityAlertPolicyConfig) SynapseWorkspaceSecurityAlertPolicy {
 	_init_.Initialize()
 
@@ -542,7 +542,7 @@ func NewSynapseWorkspaceSecurityAlertPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/synapse_workspace_security_alert_policy azurerm_synapse_workspace_security_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/synapse_workspace_security_alert_policy azurerm_synapse_workspace_security_alert_policy} Resource.
 func NewSynapseWorkspaceSecurityAlertPolicy_Override(s SynapseWorkspaceSecurityAlertPolicy, scope constructs.Construct, id *string, config *SynapseWorkspaceSecurityAlertPolicyConfig) {
 	_init_.Initialize()
 

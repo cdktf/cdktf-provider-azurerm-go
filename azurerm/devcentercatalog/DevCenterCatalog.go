@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/dev_center_catalog azurerm_dev_center_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/dev_center_catalog azurerm_dev_center_catalog}.
 type DevCenterCatalog interface {
 	cdktf.TerraformResource
 	CatalogAdogit() DevCenterCatalogCatalogAdogitOutputReference
@@ -451,7 +451,7 @@ func (j *jsiiProxy_DevCenterCatalog) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/dev_center_catalog azurerm_dev_center_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/dev_center_catalog azurerm_dev_center_catalog} Resource.
 func NewDevCenterCatalog(scope constructs.Construct, id *string, config *DevCenterCatalogConfig) DevCenterCatalog {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewDevCenterCatalog(scope constructs.Construct, id *string, config *DevCent
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/dev_center_catalog azurerm_dev_center_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/dev_center_catalog azurerm_dev_center_catalog} Resource.
 func NewDevCenterCatalog_Override(d DevCenterCatalog, scope constructs.Construct, id *string, config *DevCenterCatalogConfig) {
 	_init_.Initialize()
 

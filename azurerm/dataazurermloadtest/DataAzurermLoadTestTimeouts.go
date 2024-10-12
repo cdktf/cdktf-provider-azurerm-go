@@ -5,7 +5,7 @@ package dataazurermloadtest
 
 
 type DataAzurermLoadTestTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/data-sources/load_test#read DataAzurermLoadTest#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/data-sources/load_test#read DataAzurermLoadTest#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

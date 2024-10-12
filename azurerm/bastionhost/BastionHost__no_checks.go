@@ -151,6 +151,10 @@ func (j *jsiiProxy_BastionHost) validateSetScaleUnitsParameters(val *float64) er
 	return nil
 }
 
+func (j *jsiiProxy_BastionHost) validateSetSessionRecordingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BastionHost) validateSetShareableLinkEnabledParameters(val interface{}) error {
 	return nil
 }

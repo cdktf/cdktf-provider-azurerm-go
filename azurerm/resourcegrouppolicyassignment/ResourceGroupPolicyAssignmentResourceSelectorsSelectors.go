@@ -5,11 +5,11 @@ package resourcegrouppolicyassignment
 
 
 type ResourceGroupPolicyAssignmentResourceSelectorsSelectors struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/resource_group_policy_assignment#kind ResourceGroupPolicyAssignment#kind}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/resource_group_policy_assignment#kind ResourceGroupPolicyAssignment#kind}.
 	Kind *string `field:"required" json:"kind" yaml:"kind"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/resource_group_policy_assignment#in ResourceGroupPolicyAssignment#in}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/resource_group_policy_assignment#in ResourceGroupPolicyAssignment#in}.
 	In *[]*string `field:"optional" json:"in" yaml:"in"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/resource_group_policy_assignment#not_in ResourceGroupPolicyAssignment#not_in}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/resource_group_policy_assignment#not_in ResourceGroupPolicyAssignment#not_in}.
 	NotIn *[]*string `field:"optional" json:"notIn" yaml:"notIn"`
 }
 

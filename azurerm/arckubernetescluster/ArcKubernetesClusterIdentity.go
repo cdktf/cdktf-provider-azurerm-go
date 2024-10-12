@@ -5,7 +5,7 @@ package arckubernetescluster
 
 
 type ArcKubernetesClusterIdentity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/arc_kubernetes_cluster#type ArcKubernetesCluster#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/arc_kubernetes_cluster#type ArcKubernetesCluster#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/ai_services azurerm_ai_services}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/ai_services azurerm_ai_services}.
 type AiServices interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -699,7 +699,7 @@ func (j *jsiiProxy_AiServices) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/ai_services azurerm_ai_services} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/ai_services azurerm_ai_services} Resource.
 func NewAiServices(scope constructs.Construct, id *string, config *AiServicesConfig) AiServices {
 	_init_.Initialize()
 
@@ -717,7 +717,7 @@ func NewAiServices(scope constructs.Construct, id *string, config *AiServicesCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/ai_services azurerm_ai_services} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/ai_services azurerm_ai_services} Resource.
 func NewAiServices_Override(a AiServices, scope constructs.Construct, id *string, config *AiServicesConfig) {
 	_init_.Initialize()
 

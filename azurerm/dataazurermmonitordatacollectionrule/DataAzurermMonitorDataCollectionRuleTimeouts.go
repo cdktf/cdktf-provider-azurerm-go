@@ -5,7 +5,7 @@ package dataazurermmonitordatacollectionrule
 
 
 type DataAzurermMonitorDataCollectionRuleTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/data-sources/monitor_data_collection_rule#read DataAzurermMonitorDataCollectionRule#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/data-sources/monitor_data_collection_rule#read DataAzurermMonitorDataCollectionRule#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

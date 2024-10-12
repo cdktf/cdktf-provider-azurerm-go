@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/data_factory_credential_service_principal azurerm_data_factory_credential_service_principal}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/data_factory_credential_service_principal azurerm_data_factory_credential_service_principal}.
 type DataFactoryCredentialServicePrincipal interface {
 	cdktf.TerraformResource
 	Annotations() *[]*string
@@ -498,7 +498,7 @@ func (j *jsiiProxy_DataFactoryCredentialServicePrincipal) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/data_factory_credential_service_principal azurerm_data_factory_credential_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/data_factory_credential_service_principal azurerm_data_factory_credential_service_principal} Resource.
 func NewDataFactoryCredentialServicePrincipal(scope constructs.Construct, id *string, config *DataFactoryCredentialServicePrincipalConfig) DataFactoryCredentialServicePrincipal {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewDataFactoryCredentialServicePrincipal(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.4.0/docs/resources/data_factory_credential_service_principal azurerm_data_factory_credential_service_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/data_factory_credential_service_principal azurerm_data_factory_credential_service_principal} Resource.
 func NewDataFactoryCredentialServicePrincipal_Override(d DataFactoryCredentialServicePrincipal, scope constructs.Construct, id *string, config *DataFactoryCredentialServicePrincipalConfig) {
 	_init_.Initialize()
 
