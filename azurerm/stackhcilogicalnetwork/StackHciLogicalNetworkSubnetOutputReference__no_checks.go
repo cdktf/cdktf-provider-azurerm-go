@@ -51,7 +51,7 @@ func (s *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) validatePutIpPoo
 	return nil
 }
 
-func (s *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) validatePutRouteParameters(value interface{}) error {
+func (s *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) validatePutRouteParameters(value *StackHciLogicalNetworkSubnetRoute) error {
 	return nil
 }
 

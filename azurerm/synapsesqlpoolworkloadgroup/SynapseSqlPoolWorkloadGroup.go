@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/synapse_sql_pool_workload_group azurerm_synapse_sql_pool_workload_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.6.0/docs/resources/synapse_sql_pool_workload_group azurerm_synapse_sql_pool_workload_group}.
 type SynapseSqlPoolWorkloadGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -522,7 +522,7 @@ func (j *jsiiProxy_SynapseSqlPoolWorkloadGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/synapse_sql_pool_workload_group azurerm_synapse_sql_pool_workload_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.6.0/docs/resources/synapse_sql_pool_workload_group azurerm_synapse_sql_pool_workload_group} Resource.
 func NewSynapseSqlPoolWorkloadGroup(scope constructs.Construct, id *string, config *SynapseSqlPoolWorkloadGroupConfig) SynapseSqlPoolWorkloadGroup {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewSynapseSqlPoolWorkloadGroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/synapse_sql_pool_workload_group azurerm_synapse_sql_pool_workload_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.6.0/docs/resources/synapse_sql_pool_workload_group azurerm_synapse_sql_pool_workload_group} Resource.
 func NewSynapseSqlPoolWorkloadGroup_Override(s SynapseSqlPoolWorkloadGroup, scope constructs.Construct, id *string, config *SynapseSqlPoolWorkloadGroupConfig) {
 	_init_.Initialize()
 

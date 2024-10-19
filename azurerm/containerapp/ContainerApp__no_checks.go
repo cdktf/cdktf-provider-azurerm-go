@@ -139,6 +139,10 @@ func (j *jsiiProxy_ContainerApp) validateSetLifecycleParameters(val *cdktf.Terra
 	return nil
 }
 
+func (j *jsiiProxy_ContainerApp) validateSetMaxInactiveRevisionsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerApp) validateSetNameParameters(val *string) error {
 	return nil
 }

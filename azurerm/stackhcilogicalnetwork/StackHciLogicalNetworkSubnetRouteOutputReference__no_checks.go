@@ -63,7 +63,7 @@ func (j *jsiiProxy_StackHciLogicalNetworkSubnetRouteOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_StackHciLogicalNetworkSubnetRouteOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StackHciLogicalNetworkSubnetRouteOutputReference) validateSetInternalValueParameters(val *StackHciLogicalNetworkSubnetRoute) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_StackHciLogicalNetworkSubnetRouteOutputReference) validateSet
 	return nil
 }
 
-func validateNewStackHciLogicalNetworkSubnetRouteOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewStackHciLogicalNetworkSubnetRouteOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

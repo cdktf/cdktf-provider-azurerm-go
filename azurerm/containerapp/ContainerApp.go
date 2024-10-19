@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/container_app azurerm_container_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.6.0/docs/resources/container_app azurerm_container_app}.
 type ContainerApp interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -59,6 +59,9 @@ type ContainerApp interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Location() *string
+	MaxInactiveRevisions() *float64
+	SetMaxInactiveRevisions(val *float64)
+	MaxInactiveRevisionsInput() *float64
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -155,6 +158,7 @@ type ContainerApp interface {
 	ResetId()
 	ResetIdentity()
 	ResetIngress()
+	ResetMaxInactiveRevisions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -406,6 +410,26 @@ func (j *jsiiProxy_ContainerApp) Location() *string {
 	_jsii_.Get(
 		j,
 		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerApp) MaxInactiveRevisions() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInactiveRevisions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerApp) MaxInactiveRevisionsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInactiveRevisionsInput",
 		&returns,
 	)
 	return returns
@@ -672,7 +696,7 @@ func (j *jsiiProxy_ContainerApp) WorkloadProfileNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/container_app azurerm_container_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.6.0/docs/resources/container_app azurerm_container_app} Resource.
 func NewContainerApp(scope constructs.Construct, id *string, config *ContainerAppConfig) ContainerApp {
 	_init_.Initialize()
 
@@ -690,7 +714,7 @@ func NewContainerApp(scope constructs.Construct, id *string, config *ContainerAp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/container_app azurerm_container_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.6.0/docs/resources/container_app azurerm_container_app} Resource.
 func NewContainerApp_Override(c ContainerApp, scope constructs.Construct, id *string, config *ContainerAppConfig) {
 	_init_.Initialize()
 
@@ -768,6 +792,17 @@ func (j *jsiiProxy_ContainerApp)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerApp)SetMaxInactiveRevisions(val *float64) {
+	if err := j.validateSetMaxInactiveRevisionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxInactiveRevisions",
 		val,
 	)
 }
@@ -1304,6 +1339,14 @@ func (c *jsiiProxy_ContainerApp) ResetIngress() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIngress",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerApp) ResetMaxInactiveRevisions() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaxInactiveRevisions",
 		nil, // no parameters
 	)
 }

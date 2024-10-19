@@ -7,11 +7,11 @@ package lighthousedefinition
 type LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicy struct {
 	// approver block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/lighthouse_definition#approver LighthouseDefinition#approver}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.6.0/docs/resources/lighthouse_definition#approver LighthouseDefinition#approver}
 	Approver interface{} `field:"optional" json:"approver" yaml:"approver"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/lighthouse_definition#maximum_activation_duration LighthouseDefinition#maximum_activation_duration}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.6.0/docs/resources/lighthouse_definition#maximum_activation_duration LighthouseDefinition#maximum_activation_duration}.
 	MaximumActivationDuration *string `field:"optional" json:"maximumActivationDuration" yaml:"maximumActivationDuration"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/lighthouse_definition#multi_factor_auth_provider LighthouseDefinition#multi_factor_auth_provider}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.6.0/docs/resources/lighthouse_definition#multi_factor_auth_provider LighthouseDefinition#multi_factor_auth_provider}.
 	MultiFactorAuthProvider *string `field:"optional" json:"multiFactorAuthProvider" yaml:"multiFactorAuthProvider"`
 }
 

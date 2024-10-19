@@ -33,8 +33,8 @@ type StackHciLogicalNetworkSubnetRouteOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *StackHciLogicalNetworkSubnetRoute
+	SetInternalValue(val *StackHciLogicalNetworkSubnetRoute)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -73,6 +73,7 @@ type StackHciLogicalNetworkSubnetRouteOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,8 +149,8 @@ func (j *jsiiProxy_StackHciLogicalNetworkSubnetRouteOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_StackHciLogicalNetworkSubnetRouteOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StackHciLogicalNetworkSubnetRouteOutputReference) InternalValue() *StackHciLogicalNetworkSubnetRoute {
+	var returns *StackHciLogicalNetworkSubnetRoute
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -219,29 +220,29 @@ func (j *jsiiProxy_StackHciLogicalNetworkSubnetRouteOutputReference) TerraformRe
 }
 
 
-func NewStackHciLogicalNetworkSubnetRouteOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) StackHciLogicalNetworkSubnetRouteOutputReference {
+func NewStackHciLogicalNetworkSubnetRouteOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StackHciLogicalNetworkSubnetRouteOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewStackHciLogicalNetworkSubnetRouteOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewStackHciLogicalNetworkSubnetRouteOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_StackHciLogicalNetworkSubnetRouteOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.stackHciLogicalNetwork.StackHciLogicalNetworkSubnetRouteOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewStackHciLogicalNetworkSubnetRouteOutputReference_Override(s StackHciLogicalNetworkSubnetRouteOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewStackHciLogicalNetworkSubnetRouteOutputReference_Override(s StackHciLogicalNetworkSubnetRouteOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-azurerm.stackHciLogicalNetwork.StackHciLogicalNetworkSubnetRouteOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
 }
@@ -279,7 +280,7 @@ func (j *jsiiProxy_StackHciLogicalNetworkSubnetRouteOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_StackHciLogicalNetworkSubnetRouteOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StackHciLogicalNetworkSubnetRouteOutputReference)SetInternalValue(val *StackHciLogicalNetworkSubnetRoute) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,6 +519,14 @@ func (s *jsiiProxy_StackHciLogicalNetworkSubnetRouteOutputReference) Interpolati
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_StackHciLogicalNetworkSubnetRouteOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetName",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_StackHciLogicalNetworkSubnetRouteOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

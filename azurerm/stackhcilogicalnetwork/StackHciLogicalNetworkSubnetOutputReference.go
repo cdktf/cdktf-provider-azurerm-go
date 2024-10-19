@@ -40,8 +40,8 @@ type StackHciLogicalNetworkSubnetOutputReference interface {
 	IpAllocationMethodInput() *string
 	IpPool() StackHciLogicalNetworkSubnetIpPoolList
 	IpPoolInput() interface{}
-	Route() StackHciLogicalNetworkSubnetRouteList
-	RouteInput() interface{}
+	Route() StackHciLogicalNetworkSubnetRouteOutputReference
+	RouteInput() *StackHciLogicalNetworkSubnetRoute
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -78,7 +78,7 @@ type StackHciLogicalNetworkSubnetOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutIpPool(value interface{})
-	PutRoute(value interface{})
+	PutRoute(value *StackHciLogicalNetworkSubnetRoute)
 	ResetAddressPrefix()
 	ResetIpPool()
 	ResetRoute()
@@ -208,8 +208,8 @@ func (j *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) IpPoolInput() in
 	return returns
 }
 
-func (j *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) Route() StackHciLogicalNetworkSubnetRouteList {
-	var returns StackHciLogicalNetworkSubnetRouteList
+func (j *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) Route() StackHciLogicalNetworkSubnetRouteOutputReference {
+	var returns StackHciLogicalNetworkSubnetRouteOutputReference
 	_jsii_.Get(
 		j,
 		"route",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) Route() StackHci
 	return returns
 }
 
-func (j *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) RouteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) RouteInput() *StackHciLogicalNetworkSubnetRoute {
+	var returns *StackHciLogicalNetworkSubnetRoute
 	_jsii_.Get(
 		j,
 		"routeInput",
@@ -581,7 +581,7 @@ func (s *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) PutIpPool(value 
 	)
 }
 
-func (s *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) PutRoute(value interface{}) {
+func (s *jsiiProxy_StackHciLogicalNetworkSubnetOutputReference) PutRoute(value *StackHciLogicalNetworkSubnetRoute) {
 	if err := s.validatePutRouteParameters(value); err != nil {
 		panic(err)
 	}

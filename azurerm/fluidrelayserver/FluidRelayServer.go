@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.6.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server}.
 type FluidRelayServer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,8 @@ type FluidRelayServer interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomerManagedKey() FluidRelayServerCustomerManagedKeyOutputReference
+	CustomerManagedKeyInput() *FluidRelayServerCustomerManagedKey
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -132,8 +134,10 @@ type FluidRelayServer interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCustomerManagedKey(value *FluidRelayServerCustomerManagedKey)
 	PutIdentity(value *FluidRelayServerIdentity)
 	PutTimeouts(value *FluidRelayServerTimeouts)
+	ResetCustomerManagedKey()
 	ResetId()
 	ResetIdentity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -195,6 +199,26 @@ func (j *jsiiProxy_FluidRelayServer) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FluidRelayServer) CustomerManagedKey() FluidRelayServerCustomerManagedKeyOutputReference {
+	var returns FluidRelayServerCustomerManagedKeyOutputReference
+	_jsii_.Get(
+		j,
+		"customerManagedKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FluidRelayServer) CustomerManagedKeyInput() *FluidRelayServerCustomerManagedKey {
+	var returns *FluidRelayServerCustomerManagedKey
+	_jsii_.Get(
+		j,
+		"customerManagedKeyInput",
 		&returns,
 	)
 	return returns
@@ -541,7 +565,7 @@ func (j *jsiiProxy_FluidRelayServer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.6.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server} Resource.
 func NewFluidRelayServer(scope constructs.Construct, id *string, config *FluidRelayServerConfig) FluidRelayServer {
 	_init_.Initialize()
 
@@ -559,7 +583,7 @@ func NewFluidRelayServer(scope constructs.Construct, id *string, config *FluidRe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.6.0/docs/resources/fluid_relay_server azurerm_fluid_relay_server} Resource.
 func NewFluidRelayServer_Override(f FluidRelayServer, scope constructs.Construct, id *string, config *FluidRelayServerConfig) {
 	_init_.Initialize()
 
@@ -1057,6 +1081,17 @@ func (f *jsiiProxy_FluidRelayServer) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (f *jsiiProxy_FluidRelayServer) PutCustomerManagedKey(value *FluidRelayServerCustomerManagedKey) {
+	if err := f.validatePutCustomerManagedKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putCustomerManagedKey",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FluidRelayServer) PutIdentity(value *FluidRelayServerIdentity) {
 	if err := f.validatePutIdentityParameters(value); err != nil {
 		panic(err)
@@ -1076,6 +1111,14 @@ func (f *jsiiProxy_FluidRelayServer) PutTimeouts(value *FluidRelayServerTimeouts
 		f,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FluidRelayServer) ResetCustomerManagedKey() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetCustomerManagedKey",
+		nil, // no parameters
 	)
 }
 

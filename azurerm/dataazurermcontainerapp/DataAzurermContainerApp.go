@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/data-sources/container_app azurerm_container_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.6.0/docs/data-sources/container_app azurerm_container_app}.
 type DataAzurermContainerApp interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -50,6 +50,7 @@ type DataAzurermContainerApp interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Location() *string
+	MaxInactiveRevisions() *float64
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -309,6 +310,16 @@ func (j *jsiiProxy_DataAzurermContainerApp) Location() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermContainerApp) MaxInactiveRevisions() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInactiveRevisions",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermContainerApp) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -500,7 +511,7 @@ func (j *jsiiProxy_DataAzurermContainerApp) WorkloadProfileName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/data-sources/container_app azurerm_container_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.6.0/docs/data-sources/container_app azurerm_container_app} Data Source.
 func NewDataAzurermContainerApp(scope constructs.Construct, id *string, config *DataAzurermContainerAppConfig) DataAzurermContainerApp {
 	_init_.Initialize()
 
@@ -518,7 +529,7 @@ func NewDataAzurermContainerApp(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.5.0/docs/data-sources/container_app azurerm_container_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.6.0/docs/data-sources/container_app azurerm_container_app} Data Source.
 func NewDataAzurermContainerApp_Override(d DataAzurermContainerApp, scope constructs.Construct, id *string, config *DataAzurermContainerAppConfig) {
 	_init_.Initialize()
 

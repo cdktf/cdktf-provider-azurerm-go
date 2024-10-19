@@ -75,6 +75,10 @@ func (f *jsiiProxy_FluidRelayServer) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (f *jsiiProxy_FluidRelayServer) validatePutCustomerManagedKeyParameters(value *FluidRelayServerCustomerManagedKey) error {
+	return nil
+}
+
 func (f *jsiiProxy_FluidRelayServer) validatePutIdentityParameters(value *FluidRelayServerIdentity) error {
 	return nil
 }
