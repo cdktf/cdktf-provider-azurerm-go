@@ -38,6 +38,9 @@ type ContainerAppJobTemplateContainerStartupProbeOutputReference interface {
 	Host() *string
 	SetHost(val *string)
 	HostInput() *string
+	InitialDelay() *float64
+	SetInitialDelay(val *float64)
+	InitialDelayInput() *float64
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	IntervalSeconds() *float64
@@ -92,6 +95,7 @@ type ContainerAppJobTemplateContainerStartupProbeOutputReference interface {
 	ResetFailureCountThreshold()
 	ResetHeader()
 	ResetHost()
+	ResetInitialDelay()
 	ResetIntervalSeconds()
 	ResetPath()
 	ResetTimeout()
@@ -205,6 +209,26 @@ func (j *jsiiProxy_ContainerAppJobTemplateContainerStartupProbeOutputReference) 
 	_jsii_.Get(
 		j,
 		"hostInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppJobTemplateContainerStartupProbeOutputReference) InitialDelay() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"initialDelay",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppJobTemplateContainerStartupProbeOutputReference) InitialDelayInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"initialDelayInput",
 		&returns,
 	)
 	return returns
@@ -418,6 +442,17 @@ func (j *jsiiProxy_ContainerAppJobTemplateContainerStartupProbeOutputReference)S
 	_jsii_.Set(
 		j,
 		"host",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAppJobTemplateContainerStartupProbeOutputReference)SetInitialDelay(val *float64) {
+	if err := j.validateSetInitialDelayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"initialDelay",
 		val,
 	)
 }
@@ -727,6 +762,14 @@ func (c *jsiiProxy_ContainerAppJobTemplateContainerStartupProbeOutputReference) 
 	_jsii_.InvokeVoid(
 		c,
 		"resetHost",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppJobTemplateContainerStartupProbeOutputReference) ResetInitialDelay() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInitialDelay",
 		nil, // no parameters
 	)
 }

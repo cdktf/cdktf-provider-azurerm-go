@@ -47,7 +47,6 @@ type DataAzurermOracleDbServersDbServersOutputReference interface {
 	MaxMemoryInGbs() *float64
 	MemorySizeInGbs() *float64
 	Ocid() *string
-	ProvisioningState() *string
 	Shape() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -293,16 +292,6 @@ func (j *jsiiProxy_DataAzurermOracleDbServersDbServersOutputReference) Ocid() *s
 	_jsii_.Get(
 		j,
 		"ocid",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermOracleDbServersDbServersOutputReference) ProvisioningState() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"provisioningState",
 		&returns,
 	)
 	return returns

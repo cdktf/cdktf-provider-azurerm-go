@@ -71,6 +71,10 @@ func (j *jsiiProxy_ContainerAppTemplateContainerReadinessProbeOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppTemplateContainerReadinessProbeOutputReference) validateSetInitialDelayParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppTemplateContainerReadinessProbeOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

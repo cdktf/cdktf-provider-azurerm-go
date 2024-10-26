@@ -213,6 +213,14 @@ func (j *jsiiProxy_ContainerAppTemplateContainerStartupProbeOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppTemplateContainerStartupProbeOutputReference) validateSetInitialDelayParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppTemplateContainerStartupProbeOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:

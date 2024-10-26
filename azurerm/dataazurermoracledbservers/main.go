@@ -131,7 +131,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxMemoryInGbs", GoGetter: "MaxMemoryInGbs"},
 			_jsii_.MemberProperty{JsiiProperty: "memorySizeInGbs", GoGetter: "MemorySizeInGbs"},
 			_jsii_.MemberProperty{JsiiProperty: "ocid", GoGetter: "Ocid"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioningState", GoGetter: "ProvisioningState"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "shape", GoGetter: "Shape"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

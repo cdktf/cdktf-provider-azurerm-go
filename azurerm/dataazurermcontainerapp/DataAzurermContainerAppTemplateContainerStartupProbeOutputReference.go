@@ -33,6 +33,7 @@ type DataAzurermContainerAppTemplateContainerStartupProbeOutputReference interfa
 	Fqn() *string
 	Header() DataAzurermContainerAppTemplateContainerStartupProbeHeaderList
 	Host() *string
+	InitialDelay() *float64
 	InternalValue() *DataAzurermContainerAppTemplateContainerStartupProbe
 	SetInternalValue(val *DataAzurermContainerAppTemplateContainerStartupProbe)
 	IntervalSeconds() *float64
@@ -153,6 +154,16 @@ func (j *jsiiProxy_DataAzurermContainerAppTemplateContainerStartupProbeOutputRef
 	_jsii_.Get(
 		j,
 		"host",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermContainerAppTemplateContainerStartupProbeOutputReference) InitialDelay() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"initialDelay",
 		&returns,
 	)
 	return returns
