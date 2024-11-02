@@ -203,6 +203,10 @@ func (j *jsiiProxy_CosmosdbAccount) validateSetLocationParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_CosmosdbAccount) validateSetManagedHsmKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CosmosdbAccount) validateSetMinimalTlsVersionParameters(val *string) error {
 	return nil
 }

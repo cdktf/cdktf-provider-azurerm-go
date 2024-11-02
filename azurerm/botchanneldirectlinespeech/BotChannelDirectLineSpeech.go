@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/bot_channel_direct_line_speech azurerm_bot_channel_direct_line_speech}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/bot_channel_direct_line_speech azurerm_bot_channel_direct_line_speech}.
 type BotChannelDirectLineSpeech interface {
 	cdktf.TerraformResource
 	BotName() *string
@@ -521,7 +521,7 @@ func (j *jsiiProxy_BotChannelDirectLineSpeech) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/bot_channel_direct_line_speech azurerm_bot_channel_direct_line_speech} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/bot_channel_direct_line_speech azurerm_bot_channel_direct_line_speech} Resource.
 func NewBotChannelDirectLineSpeech(scope constructs.Construct, id *string, config *BotChannelDirectLineSpeechConfig) BotChannelDirectLineSpeech {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewBotChannelDirectLineSpeech(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/bot_channel_direct_line_speech azurerm_bot_channel_direct_line_speech} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/bot_channel_direct_line_speech azurerm_bot_channel_direct_line_speech} Resource.
 func NewBotChannelDirectLineSpeech_Override(b BotChannelDirectLineSpeech, scope constructs.Construct, id *string, config *BotChannelDirectLineSpeechConfig) {
 	_init_.Initialize()
 

@@ -5,7 +5,7 @@ package dataazurermeventhubnamespace
 
 
 type DataAzurermEventhubNamespaceTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/data-sources/eventhub_namespace#read DataAzurermEventhubNamespace#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/data-sources/eventhub_namespace#read DataAzurermEventhubNamespace#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

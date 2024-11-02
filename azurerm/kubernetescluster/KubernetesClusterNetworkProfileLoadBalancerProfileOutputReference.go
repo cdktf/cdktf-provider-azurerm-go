@@ -13,6 +13,9 @@ import (
 
 type KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference interface {
 	cdktf.ComplexObject
+	BackendPoolType() *string
+	SetBackendPoolType(val *string)
+	BackendPoolTypeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -83,6 +86,7 @@ type KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBackendPoolType()
 	ResetIdleTimeoutInMinutes()
 	ResetManagedOutboundIpCount()
 	ResetManagedOutboundIpv6Count()
@@ -102,6 +106,26 @@ type KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference interface
 // The jsii proxy struct for KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference
 type jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference) BackendPoolType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backendPoolType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference) BackendPoolTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backendPoolTypeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference) ComplexObjectIndex() interface{} {
@@ -329,6 +353,17 @@ func NewKubernetesClusterNetworkProfileLoadBalancerProfileOutputReference_Overri
 		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference)SetBackendPoolType(val *string) {
+	if err := j.validateSetBackendPoolTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"backendPoolType",
+		val,
 	)
 }
 
@@ -637,6 +672,14 @@ func (k *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputRefer
 	)
 
 	return returns
+}
+
+func (k *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference) ResetBackendPoolType() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetBackendPoolType",
+		nil, // no parameters
+	)
 }
 
 func (k *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference) ResetIdleTimeoutInMinutes() {

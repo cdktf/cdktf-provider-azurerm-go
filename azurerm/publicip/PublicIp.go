@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/public_ip azurerm_public_ip}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/public_ip azurerm_public_ip}.
 type PublicIp interface {
 	cdktf.TerraformResource
 	AllocationMethod() *string
@@ -760,7 +760,7 @@ func (j *jsiiProxy_PublicIp) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/public_ip azurerm_public_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/public_ip azurerm_public_ip} Resource.
 func NewPublicIp(scope constructs.Construct, id *string, config *PublicIpConfig) PublicIp {
 	_init_.Initialize()
 
@@ -778,7 +778,7 @@ func NewPublicIp(scope constructs.Construct, id *string, config *PublicIpConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/public_ip azurerm_public_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/public_ip azurerm_public_ip} Resource.
 func NewPublicIp_Override(p PublicIp, scope constructs.Construct, id *string, config *PublicIpConfig) {
 	_init_.Initialize()
 

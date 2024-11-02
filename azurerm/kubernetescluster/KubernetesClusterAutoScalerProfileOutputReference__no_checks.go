@@ -63,11 +63,23 @@ func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) validateSetDaemonsetEvictionForEmptyNodesEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) validateSetDaemonsetEvictionForOccupiedNodesEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) validateSetEmptyBulkDeleteMaxParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) validateSetExpanderParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) validateSetIgnoreDaemonsetsUtilizationEnabledParameters(val interface{}) error {
 	return nil
 }
 

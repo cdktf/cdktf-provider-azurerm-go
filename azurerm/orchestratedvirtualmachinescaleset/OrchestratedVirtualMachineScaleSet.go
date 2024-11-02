@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set}.
 type OrchestratedVirtualMachineScaleSet interface {
 	cdktf.TerraformResource
 	AdditionalCapabilities() OrchestratedVirtualMachineScaleSetAdditionalCapabilitiesOutputReference
@@ -128,6 +128,8 @@ type OrchestratedVirtualMachineScaleSet interface {
 	SkuName() *string
 	SetSkuName(val *string)
 	SkuNameInput() *string
+	SkuProfile() OrchestratedVirtualMachineScaleSetSkuProfileOutputReference
+	SkuProfileInput() *OrchestratedVirtualMachineScaleSetSkuProfile
 	SourceImageId() *string
 	SetSourceImageId(val *string)
 	SourceImageIdInput() *string
@@ -210,6 +212,7 @@ type OrchestratedVirtualMachineScaleSet interface {
 	PutOsProfile(value *OrchestratedVirtualMachineScaleSetOsProfile)
 	PutPlan(value *OrchestratedVirtualMachineScaleSetPlan)
 	PutPriorityMix(value *OrchestratedVirtualMachineScaleSetPriorityMix)
+	PutSkuProfile(value *OrchestratedVirtualMachineScaleSetSkuProfile)
 	PutSourceImageReference(value *OrchestratedVirtualMachineScaleSetSourceImageReference)
 	PutTerminationNotification(value *OrchestratedVirtualMachineScaleSetTerminationNotification)
 	PutTimeouts(value *OrchestratedVirtualMachineScaleSetTimeouts)
@@ -240,6 +243,7 @@ type OrchestratedVirtualMachineScaleSet interface {
 	ResetProximityPlacementGroupId()
 	ResetSinglePlacementGroup()
 	ResetSkuName()
+	ResetSkuProfile()
 	ResetSourceImageId()
 	ResetSourceImageReference()
 	ResetTags()
@@ -956,6 +960,26 @@ func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) SkuNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) SkuProfile() OrchestratedVirtualMachineScaleSetSkuProfileOutputReference {
+	var returns OrchestratedVirtualMachineScaleSetSkuProfileOutputReference
+	_jsii_.Get(
+		j,
+		"skuProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) SkuProfileInput() *OrchestratedVirtualMachineScaleSetSkuProfile {
+	var returns *OrchestratedVirtualMachineScaleSetSkuProfile
+	_jsii_.Get(
+		j,
+		"skuProfileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) SourceImageId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1157,7 +1181,7 @@ func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Resource.
 func NewOrchestratedVirtualMachineScaleSet(scope constructs.Construct, id *string, config *OrchestratedVirtualMachineScaleSetConfig) OrchestratedVirtualMachineScaleSet {
 	_init_.Initialize()
 
@@ -1175,7 +1199,7 @@ func NewOrchestratedVirtualMachineScaleSet(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Resource.
 func NewOrchestratedVirtualMachineScaleSet_Override(o OrchestratedVirtualMachineScaleSet, scope constructs.Construct, id *string, config *OrchestratedVirtualMachineScaleSetConfig) {
 	_init_.Initialize()
 
@@ -1970,6 +1994,17 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) PutPriorityMix(value *Orc
 	)
 }
 
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) PutSkuProfile(value *OrchestratedVirtualMachineScaleSetSkuProfile) {
+	if err := o.validatePutSkuProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSkuProfile",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) PutSourceImageReference(value *OrchestratedVirtualMachineScaleSetSourceImageReference) {
 	if err := o.validatePutSourceImageReferenceParameters(value); err != nil {
 		panic(err)
@@ -2199,6 +2234,14 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) ResetSkuName() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetSkuName",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) ResetSkuProfile() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSkuProfile",
 		nil, // no parameters
 	)
 }

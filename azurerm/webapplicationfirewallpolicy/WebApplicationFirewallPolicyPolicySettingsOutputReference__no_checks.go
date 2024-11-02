@@ -67,6 +67,10 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) validateSetFileUploadEnforcementParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) validateSetFileUploadLimitInMbParameters(val *float64) error {
 	return nil
 }

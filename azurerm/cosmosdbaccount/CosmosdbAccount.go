@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account}.
 type CosmosdbAccount interface {
 	cdktf.TerraformResource
 	AccessKeyMetadataWritesEnabled() interface{}
@@ -102,6 +102,9 @@ type CosmosdbAccount interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	ManagedHsmKeyId() *string
+	SetManagedHsmKeyId(val *string)
+	ManagedHsmKeyIdInput() *string
 	MinimalTlsVersion() *string
 	SetMinimalTlsVersion(val *string)
 	MinimalTlsVersionInput() *string
@@ -246,6 +249,7 @@ type CosmosdbAccount interface {
 	ResetKeyVaultKeyId()
 	ResetKind()
 	ResetLocalAuthenticationDisabled()
+	ResetManagedHsmKeyId()
 	ResetMinimalTlsVersion()
 	ResetMongoServerVersion()
 	ResetMultipleWriteLocationsEnabled()
@@ -818,6 +822,26 @@ func (j *jsiiProxy_CosmosdbAccount) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CosmosdbAccount) ManagedHsmKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedHsmKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CosmosdbAccount) ManagedHsmKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedHsmKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CosmosdbAccount) MinimalTlsVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1309,7 +1333,7 @@ func (j *jsiiProxy_CosmosdbAccount) WriteEndpoints() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
 func NewCosmosdbAccount(scope constructs.Construct, id *string, config *CosmosdbAccountConfig) CosmosdbAccount {
 	_init_.Initialize()
 
@@ -1327,7 +1351,7 @@ func NewCosmosdbAccount(scope constructs.Construct, id *string, config *Cosmosdb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account} Resource.
 func NewCosmosdbAccount_Override(c CosmosdbAccount, scope constructs.Construct, id *string, config *CosmosdbAccountConfig) {
 	_init_.Initialize()
 
@@ -1537,6 +1561,17 @@ func (j *jsiiProxy_CosmosdbAccount)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CosmosdbAccount)SetManagedHsmKeyId(val *string) {
+	if err := j.validateSetManagedHsmKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedHsmKeyId",
 		val,
 	)
 }
@@ -2303,6 +2338,14 @@ func (c *jsiiProxy_CosmosdbAccount) ResetLocalAuthenticationDisabled() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetLocalAuthenticationDisabled",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CosmosdbAccount) ResetManagedHsmKeyId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetManagedHsmKeyId",
 		nil, // no parameters
 	)
 }

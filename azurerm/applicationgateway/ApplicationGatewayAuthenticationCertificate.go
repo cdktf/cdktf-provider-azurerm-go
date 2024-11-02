@@ -5,9 +5,9 @@ package applicationgateway
 
 
 type ApplicationGatewayAuthenticationCertificate struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/application_gateway#data ApplicationGateway#data}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/application_gateway#data ApplicationGateway#data}.
 	Data *string `field:"required" json:"data" yaml:"data"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

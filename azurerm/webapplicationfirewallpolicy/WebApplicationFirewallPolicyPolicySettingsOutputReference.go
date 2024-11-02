@@ -31,6 +31,9 @@ type WebApplicationFirewallPolicyPolicySettingsOutputReference interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
+	FileUploadEnforcement() interface{}
+	SetFileUploadEnforcement(val interface{})
+	FileUploadEnforcementInput() interface{}
 	FileUploadLimitInMb() *float64
 	SetFileUploadLimitInMb(val *float64)
 	FileUploadLimitInMbInput() *float64
@@ -92,6 +95,7 @@ type WebApplicationFirewallPolicyPolicySettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLogScrubbing(value *WebApplicationFirewallPolicyPolicySettingsLogScrubbing)
 	ResetEnabled()
+	ResetFileUploadEnforcement()
 	ResetFileUploadLimitInMb()
 	ResetJsChallengeCookieExpirationInMinutes()
 	ResetLogScrubbing()
@@ -160,6 +164,26 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) En
 	_jsii_.Get(
 		j,
 		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) FileUploadEnforcement() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fileUploadEnforcement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) FileUploadEnforcementInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fileUploadEnforcementInput",
 		&returns,
 	)
 	return returns
@@ -422,6 +446,17 @@ func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference)Set
 	_jsii_.Set(
 		j,
 		"enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference)SetFileUploadEnforcement(val interface{}) {
+	if err := j.validateSetFileUploadEnforcementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fileUploadEnforcement",
 		val,
 	)
 }
@@ -737,6 +772,14 @@ func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) Re
 	_jsii_.InvokeVoid(
 		w,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WebApplicationFirewallPolicyPolicySettingsOutputReference) ResetFileUploadEnforcement() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetFileUploadEnforcement",
 		nil, // no parameters
 	)
 }

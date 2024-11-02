@@ -105,6 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOsProfile", GoMethod: "PutOsProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "putPlan", GoMethod: "PutPlan"},
 			_jsii_.MemberMethod{JsiiMethod: "putPriorityMix", GoMethod: "PutPriorityMix"},
+			_jsii_.MemberMethod{JsiiMethod: "putSkuProfile", GoMethod: "PutSkuProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "putSourceImageReference", GoMethod: "PutSourceImageReference"},
 			_jsii_.MemberMethod{JsiiMethod: "putTerminationNotification", GoMethod: "PutTerminationNotification"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
@@ -134,6 +135,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetProximityPlacementGroupId", GoMethod: "ResetProximityPlacementGroupId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSinglePlacementGroup", GoMethod: "ResetSinglePlacementGroup"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkuName", GoMethod: "ResetSkuName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSkuProfile", GoMethod: "ResetSkuProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSourceImageId", GoMethod: "ResetSourceImageId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSourceImageReference", GoMethod: "ResetSourceImageReference"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
@@ -148,6 +150,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "singlePlacementGroupInput", GoGetter: "SinglePlacementGroupInput"},
 			_jsii_.MemberProperty{JsiiProperty: "skuName", GoGetter: "SkuName"},
 			_jsii_.MemberProperty{JsiiProperty: "skuNameInput", GoGetter: "SkuNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "skuProfile", GoGetter: "SkuProfile"},
+			_jsii_.MemberProperty{JsiiProperty: "skuProfileInput", GoGetter: "SkuProfileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceImageId", GoGetter: "SourceImageId"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceImageIdInput", GoGetter: "SourceImageIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceImageReference", GoGetter: "SourceImageReference"},
@@ -1652,6 +1656,46 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OrchestratedVirtualMachineScaleSetPriorityMixOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.orchestratedVirtualMachineScaleSet.OrchestratedVirtualMachineScaleSetSkuProfile",
+		reflect.TypeOf((*OrchestratedVirtualMachineScaleSetSkuProfile)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.orchestratedVirtualMachineScaleSet.OrchestratedVirtualMachineScaleSetSkuProfileOutputReference",
+		reflect.TypeOf((*OrchestratedVirtualMachineScaleSetSkuProfileOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allocationStrategy", GoGetter: "AllocationStrategy"},
+			_jsii_.MemberProperty{JsiiProperty: "allocationStrategyInput", GoGetter: "AllocationStrategyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "vmSizes", GoGetter: "VmSizes"},
+			_jsii_.MemberProperty{JsiiProperty: "vmSizesInput", GoGetter: "VmSizesInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OrchestratedVirtualMachineScaleSetSkuProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

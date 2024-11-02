@@ -123,6 +123,10 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) validateSetCountPar
 	return nil
 }
 
+func (j *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) validateSetCredentialNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) validateSetDataFactoryIdParameters(val *string) error {
 	return nil
 }

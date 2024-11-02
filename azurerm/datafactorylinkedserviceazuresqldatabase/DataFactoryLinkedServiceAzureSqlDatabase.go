@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/data_factory_linked_service_azure_sql_database azurerm_data_factory_linked_service_azure_sql_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/data_factory_linked_service_azure_sql_database azurerm_data_factory_linked_service_azure_sql_database}.
 type DataFactoryLinkedServiceAzureSqlDatabase interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -36,6 +36,9 @@ type DataFactoryLinkedServiceAzureSqlDatabase interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CredentialName() *string
+	SetCredentialName(val *string)
+	CredentialNameInput() *string
 	DataFactoryId() *string
 	SetDataFactoryId(val *string)
 	DataFactoryIdInput() *string
@@ -155,6 +158,7 @@ type DataFactoryLinkedServiceAzureSqlDatabase interface {
 	ResetAdditionalProperties()
 	ResetAnnotations()
 	ResetConnectionString()
+	ResetCredentialName()
 	ResetDescription()
 	ResetId()
 	ResetIntegrationRuntimeName()
@@ -282,6 +286,26 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) Count() interface{}
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) CredentialName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) CredentialNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialNameInput",
 		&returns,
 	)
 	return returns
@@ -668,7 +692,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) UseManagedIdentityI
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/data_factory_linked_service_azure_sql_database azurerm_data_factory_linked_service_azure_sql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/data_factory_linked_service_azure_sql_database azurerm_data_factory_linked_service_azure_sql_database} Resource.
 func NewDataFactoryLinkedServiceAzureSqlDatabase(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureSqlDatabaseConfig) DataFactoryLinkedServiceAzureSqlDatabase {
 	_init_.Initialize()
 
@@ -686,7 +710,7 @@ func NewDataFactoryLinkedServiceAzureSqlDatabase(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/data_factory_linked_service_azure_sql_database azurerm_data_factory_linked_service_azure_sql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/data_factory_linked_service_azure_sql_database azurerm_data_factory_linked_service_azure_sql_database} Resource.
 func NewDataFactoryLinkedServiceAzureSqlDatabase_Override(d DataFactoryLinkedServiceAzureSqlDatabase, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceAzureSqlDatabaseConfig) {
 	_init_.Initialize()
 
@@ -748,6 +772,17 @@ func (j *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase)SetCount(val interfa
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase)SetCredentialName(val *string) {
+	if err := j.validateSetCredentialNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialName",
 		val,
 	)
 }
@@ -1314,6 +1349,14 @@ func (d *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) ResetConnectionStri
 	_jsii_.InvokeVoid(
 		d,
 		"resetConnectionString",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceAzureSqlDatabase) ResetCredentialName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCredentialName",
 		nil, // no parameters
 	)
 }

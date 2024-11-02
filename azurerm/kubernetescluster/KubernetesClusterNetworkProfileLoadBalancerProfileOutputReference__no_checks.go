@@ -51,6 +51,10 @@ func (k *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference) validateSetBackendPoolTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

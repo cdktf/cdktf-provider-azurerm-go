@@ -31,6 +31,12 @@ type KubernetesClusterAutoScalerProfileOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DaemonsetEvictionForEmptyNodesEnabled() interface{}
+	SetDaemonsetEvictionForEmptyNodesEnabled(val interface{})
+	DaemonsetEvictionForEmptyNodesEnabledInput() interface{}
+	DaemonsetEvictionForOccupiedNodesEnabled() interface{}
+	SetDaemonsetEvictionForOccupiedNodesEnabled(val interface{})
+	DaemonsetEvictionForOccupiedNodesEnabledInput() interface{}
 	EmptyBulkDeleteMax() *string
 	SetEmptyBulkDeleteMax(val *string)
 	EmptyBulkDeleteMaxInput() *string
@@ -39,6 +45,9 @@ type KubernetesClusterAutoScalerProfileOutputReference interface {
 	ExpanderInput() *string
 	// Experimental.
 	Fqn() *string
+	IgnoreDaemonsetsUtilizationEnabled() interface{}
+	SetIgnoreDaemonsetsUtilizationEnabled(val interface{})
+	IgnoreDaemonsetsUtilizationEnabledInput() interface{}
 	InternalValue() *KubernetesClusterAutoScalerProfile
 	SetInternalValue(val *KubernetesClusterAutoScalerProfile)
 	MaxGracefulTerminationSec() *string
@@ -116,8 +125,11 @@ type KubernetesClusterAutoScalerProfileOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBalanceSimilarNodeGroups()
+	ResetDaemonsetEvictionForEmptyNodesEnabled()
+	ResetDaemonsetEvictionForOccupiedNodesEnabled()
 	ResetEmptyBulkDeleteMax()
 	ResetExpander()
+	ResetIgnoreDaemonsetsUtilizationEnabled()
 	ResetMaxGracefulTerminationSec()
 	ResetMaxNodeProvisioningTime()
 	ResetMaxUnreadyNodes()
@@ -197,6 +209,46 @@ func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) CreationSt
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) DaemonsetEvictionForEmptyNodesEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"daemonsetEvictionForEmptyNodesEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) DaemonsetEvictionForEmptyNodesEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"daemonsetEvictionForEmptyNodesEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) DaemonsetEvictionForOccupiedNodesEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"daemonsetEvictionForOccupiedNodesEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) DaemonsetEvictionForOccupiedNodesEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"daemonsetEvictionForOccupiedNodesEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) EmptyBulkDeleteMax() *string {
 	var returns *string
 	_jsii_.Get(
@@ -242,6 +294,26 @@ func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) Fqn() *str
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) IgnoreDaemonsetsUtilizationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreDaemonsetsUtilizationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) IgnoreDaemonsetsUtilizationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreDaemonsetsUtilizationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -618,6 +690,28 @@ func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference)SetComplexO
 	)
 }
 
+func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference)SetDaemonsetEvictionForEmptyNodesEnabled(val interface{}) {
+	if err := j.validateSetDaemonsetEvictionForEmptyNodesEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"daemonsetEvictionForEmptyNodesEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference)SetDaemonsetEvictionForOccupiedNodesEnabled(val interface{}) {
+	if err := j.validateSetDaemonsetEvictionForOccupiedNodesEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"daemonsetEvictionForOccupiedNodesEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference)SetEmptyBulkDeleteMax(val *string) {
 	if err := j.validateSetEmptyBulkDeleteMaxParameters(val); err != nil {
 		panic(err)
@@ -636,6 +730,17 @@ func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference)SetExpander
 	_jsii_.Set(
 		j,
 		"expander",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference)SetIgnoreDaemonsetsUtilizationEnabled(val interface{}) {
+	if err := j.validateSetIgnoreDaemonsetsUtilizationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreDaemonsetsUtilizationEnabled",
 		val,
 	)
 }
@@ -1021,6 +1126,22 @@ func (k *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) ResetBalan
 	)
 }
 
+func (k *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) ResetDaemonsetEvictionForEmptyNodesEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetDaemonsetEvictionForEmptyNodesEnabled",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) ResetDaemonsetEvictionForOccupiedNodesEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetDaemonsetEvictionForOccupiedNodesEnabled",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) ResetEmptyBulkDeleteMax() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1033,6 +1154,14 @@ func (k *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) ResetExpan
 	_jsii_.InvokeVoid(
 		k,
 		"resetExpander",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterAutoScalerProfileOutputReference) ResetIgnoreDaemonsetsUtilizationEnabled() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetIgnoreDaemonsetsUtilizationEnabled",
 		nil, // no parameters
 	)
 }

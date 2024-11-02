@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster}.
 type OracleCloudVmCluster interface {
 	cdktf.TerraformResource
 	BackupSubnetCidr() *string
@@ -99,6 +99,7 @@ type OracleCloudVmCluster interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Ocid() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -687,6 +688,16 @@ func (j *jsiiProxy_OracleCloudVmCluster) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_OracleCloudVmCluster) Ocid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ocid",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OracleCloudVmCluster) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -908,7 +919,7 @@ func (j *jsiiProxy_OracleCloudVmCluster) VirtualNetworkIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster} Resource.
 func NewOracleCloudVmCluster(scope constructs.Construct, id *string, config *OracleCloudVmClusterConfig) OracleCloudVmCluster {
 	_init_.Initialize()
 
@@ -926,7 +937,7 @@ func NewOracleCloudVmCluster(scope constructs.Construct, id *string, config *Ora
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.7.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster} Resource.
 func NewOracleCloudVmCluster_Override(o OracleCloudVmCluster, scope constructs.Construct, id *string, config *OracleCloudVmClusterConfig) {
 	_init_.Initialize()
 
