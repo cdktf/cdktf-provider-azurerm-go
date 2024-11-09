@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/new_relic_monitor azurerm_new_relic_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/new_relic_monitor azurerm_new_relic_monitor}.
 type NewRelicMonitor interface {
 	cdktf.TerraformResource
 	AccountCreationSource() *string
@@ -617,7 +617,7 @@ func (j *jsiiProxy_NewRelicMonitor) UserInput() *NewRelicMonitorUser {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/new_relic_monitor azurerm_new_relic_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/new_relic_monitor azurerm_new_relic_monitor} Resource.
 func NewNewRelicMonitor(scope constructs.Construct, id *string, config *NewRelicMonitorConfig) NewRelicMonitor {
 	_init_.Initialize()
 
@@ -635,7 +635,7 @@ func NewNewRelicMonitor(scope constructs.Construct, id *string, config *NewRelic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/new_relic_monitor azurerm_new_relic_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/new_relic_monitor azurerm_new_relic_monitor} Resource.
 func NewNewRelicMonitor_Override(n NewRelicMonitor, scope constructs.Construct, id *string, config *NewRelicMonitorConfig) {
 	_init_.Initialize()
 

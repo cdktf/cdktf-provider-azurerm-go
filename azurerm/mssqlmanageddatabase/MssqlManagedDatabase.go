@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_managed_database azurerm_mssql_managed_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_managed_database azurerm_mssql_managed_database}.
 type MssqlManagedDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -71,6 +71,9 @@ type MssqlManagedDatabase interface {
 	ShortTermRetentionDays() *float64
 	SetShortTermRetentionDays(val *float64)
 	ShortTermRetentionDaysInput() *float64
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -132,6 +135,7 @@ type MssqlManagedDatabase interface {
 	ResetOverrideLogicalId()
 	ResetPointInTimeRestore()
 	ResetShortTermRetentionDays()
+	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -401,6 +405,26 @@ func (j *jsiiProxy_MssqlManagedDatabase) ShortTermRetentionDaysInput() *float64 
 	return returns
 }
 
+func (j *jsiiProxy_MssqlManagedDatabase) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlManagedDatabase) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MssqlManagedDatabase) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -452,7 +476,7 @@ func (j *jsiiProxy_MssqlManagedDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_managed_database azurerm_mssql_managed_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_managed_database azurerm_mssql_managed_database} Resource.
 func NewMssqlManagedDatabase(scope constructs.Construct, id *string, config *MssqlManagedDatabaseConfig) MssqlManagedDatabase {
 	_init_.Initialize()
 
@@ -470,7 +494,7 @@ func NewMssqlManagedDatabase(scope constructs.Construct, id *string, config *Mss
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_managed_database azurerm_mssql_managed_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_managed_database azurerm_mssql_managed_database} Resource.
 func NewMssqlManagedDatabase_Override(m MssqlManagedDatabase, scope constructs.Construct, id *string, config *MssqlManagedDatabaseConfig) {
 	_init_.Initialize()
 
@@ -589,6 +613,17 @@ func (j *jsiiProxy_MssqlManagedDatabase)SetShortTermRetentionDays(val *float64) 
 	_jsii_.Set(
 		j,
 		"shortTermRetentionDays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlManagedDatabase)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1015,6 +1050,14 @@ func (m *jsiiProxy_MssqlManagedDatabase) ResetShortTermRetentionDays() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetShortTermRetentionDays",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlManagedDatabase) ResetTags() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTags",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/communication_service_email_domain_association azurerm_communication_service_email_domain_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/communication_service_email_domain_association azurerm_communication_service_email_domain_association}.
 type CommunicationServiceEmailDomainAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_CommunicationServiceEmailDomainAssociation) TimeoutsInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/communication_service_email_domain_association azurerm_communication_service_email_domain_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/communication_service_email_domain_association azurerm_communication_service_email_domain_association} Resource.
 func NewCommunicationServiceEmailDomainAssociation(scope constructs.Construct, id *string, config *CommunicationServiceEmailDomainAssociationConfig) CommunicationServiceEmailDomainAssociation {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewCommunicationServiceEmailDomainAssociation(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/communication_service_email_domain_association azurerm_communication_service_email_domain_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/communication_service_email_domain_association azurerm_communication_service_email_domain_association} Resource.
 func NewCommunicationServiceEmailDomainAssociation_Override(c CommunicationServiceEmailDomainAssociation, scope constructs.Construct, id *string, config *CommunicationServiceEmailDomainAssociationConfig) {
 	_init_.Initialize()
 

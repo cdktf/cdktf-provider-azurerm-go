@@ -431,6 +431,14 @@ func (j *jsiiProxy_OracleCloudVmCluster) validateSetDisplayNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_OracleCloudVmCluster) validateSetDomainParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OracleCloudVmCluster) validateSetGiVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -569,6 +577,22 @@ func (j *jsiiProxy_OracleCloudVmCluster) validateSetResourceGroupNameParameters(
 	return nil
 }
 
+func (j *jsiiProxy_OracleCloudVmCluster) validateSetScanListenerPortTcpParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OracleCloudVmCluster) validateSetScanListenerPortTcpSslParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OracleCloudVmCluster) validateSetSparseDiskgroupEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -622,6 +646,14 @@ func (j *jsiiProxy_OracleCloudVmCluster) validateSetTimeZoneParameters(val *stri
 }
 
 func (j *jsiiProxy_OracleCloudVmCluster) validateSetVirtualNetworkIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OracleCloudVmCluster) validateSetZoneIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

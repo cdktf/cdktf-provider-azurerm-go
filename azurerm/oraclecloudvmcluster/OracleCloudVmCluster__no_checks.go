@@ -143,6 +143,10 @@ func (j *jsiiProxy_OracleCloudVmCluster) validateSetDisplayNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_OracleCloudVmCluster) validateSetDomainParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OracleCloudVmCluster) validateSetGiVersionParameters(val *string) error {
 	return nil
 }
@@ -187,6 +191,14 @@ func (j *jsiiProxy_OracleCloudVmCluster) validateSetResourceGroupNameParameters(
 	return nil
 }
 
+func (j *jsiiProxy_OracleCloudVmCluster) validateSetScanListenerPortTcpParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OracleCloudVmCluster) validateSetScanListenerPortTcpSslParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_OracleCloudVmCluster) validateSetSparseDiskgroupEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -208,6 +220,10 @@ func (j *jsiiProxy_OracleCloudVmCluster) validateSetTimeZoneParameters(val *stri
 }
 
 func (j *jsiiProxy_OracleCloudVmCluster) validateSetVirtualNetworkIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OracleCloudVmCluster) validateSetZoneIdParameters(val *string) error {
 	return nil
 }
 

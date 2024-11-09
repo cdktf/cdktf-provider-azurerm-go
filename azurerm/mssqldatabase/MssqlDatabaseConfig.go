@@ -22,94 +22,94 @@ type MssqlDatabaseConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#name MssqlDatabase#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#name MssqlDatabase#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#server_id MssqlDatabase#server_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#server_id MssqlDatabase#server_id}.
 	ServerId *string `field:"required" json:"serverId" yaml:"serverId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#auto_pause_delay_in_minutes MssqlDatabase#auto_pause_delay_in_minutes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#auto_pause_delay_in_minutes MssqlDatabase#auto_pause_delay_in_minutes}.
 	AutoPauseDelayInMinutes *float64 `field:"optional" json:"autoPauseDelayInMinutes" yaml:"autoPauseDelayInMinutes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#collation MssqlDatabase#collation}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#collation MssqlDatabase#collation}.
 	Collation *string `field:"optional" json:"collation" yaml:"collation"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#create_mode MssqlDatabase#create_mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#create_mode MssqlDatabase#create_mode}.
 	CreateMode *string `field:"optional" json:"createMode" yaml:"createMode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#creation_source_database_id MssqlDatabase#creation_source_database_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#creation_source_database_id MssqlDatabase#creation_source_database_id}.
 	CreationSourceDatabaseId *string `field:"optional" json:"creationSourceDatabaseId" yaml:"creationSourceDatabaseId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#elastic_pool_id MssqlDatabase#elastic_pool_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#elastic_pool_id MssqlDatabase#elastic_pool_id}.
 	ElasticPoolId *string `field:"optional" json:"elasticPoolId" yaml:"elasticPoolId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#enclave_type MssqlDatabase#enclave_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#enclave_type MssqlDatabase#enclave_type}.
 	EnclaveType *string `field:"optional" json:"enclaveType" yaml:"enclaveType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#geo_backup_enabled MssqlDatabase#geo_backup_enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#geo_backup_enabled MssqlDatabase#geo_backup_enabled}.
 	GeoBackupEnabled interface{} `field:"optional" json:"geoBackupEnabled" yaml:"geoBackupEnabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#id MssqlDatabase#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#id MssqlDatabase#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// identity block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#identity MssqlDatabase#identity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#identity MssqlDatabase#identity}
 	Identity *MssqlDatabaseIdentity `field:"optional" json:"identity" yaml:"identity"`
 	// import block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#import MssqlDatabase#import}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#import MssqlDatabase#import}
 	Import *MssqlDatabaseImport `field:"optional" json:"import" yaml:"import"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#ledger_enabled MssqlDatabase#ledger_enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#ledger_enabled MssqlDatabase#ledger_enabled}.
 	LedgerEnabled interface{} `field:"optional" json:"ledgerEnabled" yaml:"ledgerEnabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#license_type MssqlDatabase#license_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#license_type MssqlDatabase#license_type}.
 	LicenseType *string `field:"optional" json:"licenseType" yaml:"licenseType"`
 	// long_term_retention_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#long_term_retention_policy MssqlDatabase#long_term_retention_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#long_term_retention_policy MssqlDatabase#long_term_retention_policy}
 	LongTermRetentionPolicy *MssqlDatabaseLongTermRetentionPolicy `field:"optional" json:"longTermRetentionPolicy" yaml:"longTermRetentionPolicy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#maintenance_configuration_name MssqlDatabase#maintenance_configuration_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#maintenance_configuration_name MssqlDatabase#maintenance_configuration_name}.
 	MaintenanceConfigurationName *string `field:"optional" json:"maintenanceConfigurationName" yaml:"maintenanceConfigurationName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#max_size_gb MssqlDatabase#max_size_gb}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#max_size_gb MssqlDatabase#max_size_gb}.
 	MaxSizeGb *float64 `field:"optional" json:"maxSizeGb" yaml:"maxSizeGb"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#min_capacity MssqlDatabase#min_capacity}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#min_capacity MssqlDatabase#min_capacity}.
 	MinCapacity *float64 `field:"optional" json:"minCapacity" yaml:"minCapacity"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#read_replica_count MssqlDatabase#read_replica_count}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#read_replica_count MssqlDatabase#read_replica_count}.
 	ReadReplicaCount *float64 `field:"optional" json:"readReplicaCount" yaml:"readReplicaCount"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#read_scale MssqlDatabase#read_scale}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#read_scale MssqlDatabase#read_scale}.
 	ReadScale interface{} `field:"optional" json:"readScale" yaml:"readScale"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#recover_database_id MssqlDatabase#recover_database_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#recover_database_id MssqlDatabase#recover_database_id}.
 	RecoverDatabaseId *string `field:"optional" json:"recoverDatabaseId" yaml:"recoverDatabaseId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#recovery_point_id MssqlDatabase#recovery_point_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#recovery_point_id MssqlDatabase#recovery_point_id}.
 	RecoveryPointId *string `field:"optional" json:"recoveryPointId" yaml:"recoveryPointId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#restore_dropped_database_id MssqlDatabase#restore_dropped_database_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#restore_dropped_database_id MssqlDatabase#restore_dropped_database_id}.
 	RestoreDroppedDatabaseId *string `field:"optional" json:"restoreDroppedDatabaseId" yaml:"restoreDroppedDatabaseId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#restore_long_term_retention_backup_id MssqlDatabase#restore_long_term_retention_backup_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#restore_long_term_retention_backup_id MssqlDatabase#restore_long_term_retention_backup_id}.
 	RestoreLongTermRetentionBackupId *string `field:"optional" json:"restoreLongTermRetentionBackupId" yaml:"restoreLongTermRetentionBackupId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#restore_point_in_time MssqlDatabase#restore_point_in_time}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#restore_point_in_time MssqlDatabase#restore_point_in_time}.
 	RestorePointInTime *string `field:"optional" json:"restorePointInTime" yaml:"restorePointInTime"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#sample_name MssqlDatabase#sample_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#sample_name MssqlDatabase#sample_name}.
 	SampleName *string `field:"optional" json:"sampleName" yaml:"sampleName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#secondary_type MssqlDatabase#secondary_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#secondary_type MssqlDatabase#secondary_type}.
 	SecondaryType *string `field:"optional" json:"secondaryType" yaml:"secondaryType"`
 	// short_term_retention_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#short_term_retention_policy MssqlDatabase#short_term_retention_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#short_term_retention_policy MssqlDatabase#short_term_retention_policy}
 	ShortTermRetentionPolicy *MssqlDatabaseShortTermRetentionPolicy `field:"optional" json:"shortTermRetentionPolicy" yaml:"shortTermRetentionPolicy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#sku_name MssqlDatabase#sku_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#sku_name MssqlDatabase#sku_name}.
 	SkuName *string `field:"optional" json:"skuName" yaml:"skuName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#storage_account_type MssqlDatabase#storage_account_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#storage_account_type MssqlDatabase#storage_account_type}.
 	StorageAccountType *string `field:"optional" json:"storageAccountType" yaml:"storageAccountType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#tags MssqlDatabase#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#tags MssqlDatabase#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// threat_detection_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#threat_detection_policy MssqlDatabase#threat_detection_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#threat_detection_policy MssqlDatabase#threat_detection_policy}
 	ThreatDetectionPolicy *MssqlDatabaseThreatDetectionPolicy `field:"optional" json:"threatDetectionPolicy" yaml:"threatDetectionPolicy"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#timeouts MssqlDatabase#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#timeouts MssqlDatabase#timeouts}
 	Timeouts *MssqlDatabaseTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#transparent_data_encryption_enabled MssqlDatabase#transparent_data_encryption_enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#transparent_data_encryption_enabled MssqlDatabase#transparent_data_encryption_enabled}.
 	TransparentDataEncryptionEnabled interface{} `field:"optional" json:"transparentDataEncryptionEnabled" yaml:"transparentDataEncryptionEnabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#transparent_data_encryption_key_automatic_rotation_enabled MssqlDatabase#transparent_data_encryption_key_automatic_rotation_enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#transparent_data_encryption_key_automatic_rotation_enabled MssqlDatabase#transparent_data_encryption_key_automatic_rotation_enabled}.
 	TransparentDataEncryptionKeyAutomaticRotationEnabled interface{} `field:"optional" json:"transparentDataEncryptionKeyAutomaticRotationEnabled" yaml:"transparentDataEncryptionKeyAutomaticRotationEnabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#transparent_data_encryption_key_vault_key_id MssqlDatabase#transparent_data_encryption_key_vault_key_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#transparent_data_encryption_key_vault_key_id MssqlDatabase#transparent_data_encryption_key_vault_key_id}.
 	TransparentDataEncryptionKeyVaultKeyId *string `field:"optional" json:"transparentDataEncryptionKeyVaultKeyId" yaml:"transparentDataEncryptionKeyVaultKeyId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/mssql_database#zone_redundant MssqlDatabase#zone_redundant}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/mssql_database#zone_redundant MssqlDatabase#zone_redundant}.
 	ZoneRedundant interface{} `field:"optional" json:"zoneRedundant" yaml:"zoneRedundant"`
 }
 

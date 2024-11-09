@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/workloads_sap_discovery_virtual_instance azurerm_workloads_sap_discovery_virtual_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/workloads_sap_discovery_virtual_instance azurerm_workloads_sap_discovery_virtual_instance}.
 type WorkloadsSapDiscoveryVirtualInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -568,7 +568,7 @@ func (j *jsiiProxy_WorkloadsSapDiscoveryVirtualInstance) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/workloads_sap_discovery_virtual_instance azurerm_workloads_sap_discovery_virtual_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/workloads_sap_discovery_virtual_instance azurerm_workloads_sap_discovery_virtual_instance} Resource.
 func NewWorkloadsSapDiscoveryVirtualInstance(scope constructs.Construct, id *string, config *WorkloadsSapDiscoveryVirtualInstanceConfig) WorkloadsSapDiscoveryVirtualInstance {
 	_init_.Initialize()
 
@@ -586,7 +586,7 @@ func NewWorkloadsSapDiscoveryVirtualInstance(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/workloads_sap_discovery_virtual_instance azurerm_workloads_sap_discovery_virtual_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/workloads_sap_discovery_virtual_instance azurerm_workloads_sap_discovery_virtual_instance} Resource.
 func NewWorkloadsSapDiscoveryVirtualInstance_Override(w WorkloadsSapDiscoveryVirtualInstance, scope constructs.Construct, id *string, config *WorkloadsSapDiscoveryVirtualInstanceConfig) {
 	_init_.Initialize()
 

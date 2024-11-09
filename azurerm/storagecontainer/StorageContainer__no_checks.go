@@ -135,6 +135,10 @@ func (j *jsiiProxy_StorageContainer) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_StorageContainer) validateSetStorageAccountIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageContainer) validateSetStorageAccountNameParameters(val *string) error {
 	return nil
 }

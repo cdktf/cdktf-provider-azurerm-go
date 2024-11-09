@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/public_ip azurerm_public_ip}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/public_ip azurerm_public_ip}.
 type PublicIp interface {
 	cdktf.TerraformResource
 	AllocationMethod() *string
@@ -43,6 +43,9 @@ type PublicIp interface {
 	DomainNameLabel() *string
 	SetDomainNameLabel(val *string)
 	DomainNameLabelInput() *string
+	DomainNameLabelScope() *string
+	SetDomainNameLabelScope(val *string)
+	DomainNameLabelScopeInput() *string
 	EdgeZone() *string
 	SetEdgeZone(val *string)
 	EdgeZoneInput() *string
@@ -166,6 +169,7 @@ type PublicIp interface {
 	ResetDdosProtectionMode()
 	ResetDdosProtectionPlanId()
 	ResetDomainNameLabel()
+	ResetDomainNameLabelScope()
 	ResetEdgeZone()
 	ResetId()
 	ResetIdleTimeoutInMinutes()
@@ -324,6 +328,26 @@ func (j *jsiiProxy_PublicIp) DomainNameLabelInput() *string {
 	_jsii_.Get(
 		j,
 		"domainNameLabelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PublicIp) DomainNameLabelScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainNameLabelScope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PublicIp) DomainNameLabelScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainNameLabelScopeInput",
 		&returns,
 	)
 	return returns
@@ -760,7 +784,7 @@ func (j *jsiiProxy_PublicIp) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/public_ip azurerm_public_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/public_ip azurerm_public_ip} Resource.
 func NewPublicIp(scope constructs.Construct, id *string, config *PublicIpConfig) PublicIp {
 	_init_.Initialize()
 
@@ -778,7 +802,7 @@ func NewPublicIp(scope constructs.Construct, id *string, config *PublicIpConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/public_ip azurerm_public_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/public_ip azurerm_public_ip} Resource.
 func NewPublicIp_Override(p PublicIp, scope constructs.Construct, id *string, config *PublicIpConfig) {
 	_init_.Initialize()
 
@@ -859,6 +883,17 @@ func (j *jsiiProxy_PublicIp)SetDomainNameLabel(val *string) {
 	_jsii_.Set(
 		j,
 		"domainNameLabel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PublicIp)SetDomainNameLabelScope(val *string) {
+	if err := j.validateSetDomainNameLabelScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainNameLabelScope",
 		val,
 	)
 }
@@ -1439,6 +1474,14 @@ func (p *jsiiProxy_PublicIp) ResetDomainNameLabel() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetDomainNameLabel",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PublicIp) ResetDomainNameLabelScope() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDomainNameLabelScope",
 		nil, // no parameters
 	)
 }

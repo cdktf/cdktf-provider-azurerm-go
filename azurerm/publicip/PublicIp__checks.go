@@ -380,6 +380,14 @@ func (j *jsiiProxy_PublicIp) validateSetDomainNameLabelParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_PublicIp) validateSetDomainNameLabelScopeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PublicIp) validateSetEdgeZoneParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

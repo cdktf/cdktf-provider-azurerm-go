@@ -456,6 +456,14 @@ func (j *jsiiProxy_MssqlManagedDatabase) validateSetShortTermRetentionDaysParame
 	return nil
 }
 
+func (j *jsiiProxy_MssqlManagedDatabase) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewMssqlManagedDatabaseParameters(scope constructs.Construct, id *string, config *MssqlManagedDatabaseConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

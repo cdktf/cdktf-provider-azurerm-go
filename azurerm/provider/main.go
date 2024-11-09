@@ -187,6 +187,10 @@ func init() {
 		reflect.TypeOf((*AzurermProviderFeaturesResourceGroup)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.provider.AzurermProviderFeaturesStorage",
+		reflect.TypeOf((*AzurermProviderFeaturesStorage)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.provider.AzurermProviderFeaturesSubscription",
 		reflect.TypeOf((*AzurermProviderFeaturesSubscription)(nil)).Elem(),
 	)

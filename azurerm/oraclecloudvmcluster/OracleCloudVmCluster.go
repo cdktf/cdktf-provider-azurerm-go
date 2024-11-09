@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster}.
 type OracleCloudVmCluster interface {
 	cdktf.TerraformResource
 	BackupSubnetCidr() *string
@@ -60,6 +60,9 @@ type OracleCloudVmCluster interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	Domain() *string
+	SetDomain(val *string)
+	DomainInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -113,6 +116,12 @@ type OracleCloudVmCluster interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	ScanListenerPortTcp() *float64
+	SetScanListenerPortTcp(val *float64)
+	ScanListenerPortTcpInput() *float64
+	ScanListenerPortTcpSsl() *float64
+	SetScanListenerPortTcpSsl(val *float64)
+	ScanListenerPortTcpSslInput() *float64
 	SparseDiskgroupEnabled() interface{}
 	SetSparseDiskgroupEnabled(val interface{})
 	SparseDiskgroupEnabledInput() interface{}
@@ -139,6 +148,9 @@ type OracleCloudVmCluster interface {
 	VirtualNetworkId() *string
 	SetVirtualNetworkId(val *string)
 	VirtualNetworkIdInput() *string
+	ZoneId() *string
+	SetZoneId(val *string)
+	ZoneIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -190,16 +202,20 @@ type OracleCloudVmCluster interface {
 	ResetDataStoragePercentage()
 	ResetDataStorageSizeInTbs()
 	ResetDbNodeStorageSizeInGbs()
+	ResetDomain()
 	ResetId()
 	ResetLocalBackupEnabled()
 	ResetMemorySizeInGbs()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetScanListenerPortTcp()
+	ResetScanListenerPortTcpSsl()
 	ResetSparseDiskgroupEnabled()
 	ResetTags()
 	ResetTimeouts()
 	ResetTimeZone()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -463,6 +479,26 @@ func (j *jsiiProxy_OracleCloudVmCluster) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleCloudVmCluster) Domain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleCloudVmCluster) DomainInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainInput",
 		&returns,
 	)
 	return returns
@@ -748,6 +784,46 @@ func (j *jsiiProxy_OracleCloudVmCluster) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OracleCloudVmCluster) ScanListenerPortTcp() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"scanListenerPortTcp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleCloudVmCluster) ScanListenerPortTcpInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"scanListenerPortTcpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleCloudVmCluster) ScanListenerPortTcpSsl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"scanListenerPortTcpSsl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleCloudVmCluster) ScanListenerPortTcpSslInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"scanListenerPortTcpSslInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OracleCloudVmCluster) SparseDiskgroupEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -918,8 +994,28 @@ func (j *jsiiProxy_OracleCloudVmCluster) VirtualNetworkIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OracleCloudVmCluster) ZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster} Resource.
+func (j *jsiiProxy_OracleCloudVmCluster) ZoneIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster} Resource.
 func NewOracleCloudVmCluster(scope constructs.Construct, id *string, config *OracleCloudVmClusterConfig) OracleCloudVmCluster {
 	_init_.Initialize()
 
@@ -937,7 +1033,7 @@ func NewOracleCloudVmCluster(scope constructs.Construct, id *string, config *Ora
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster} Resource.
 func NewOracleCloudVmCluster_Override(o OracleCloudVmCluster, scope constructs.Construct, id *string, config *OracleCloudVmClusterConfig) {
 	_init_.Initialize()
 
@@ -1073,6 +1169,17 @@ func (j *jsiiProxy_OracleCloudVmCluster)SetDisplayName(val *string) {
 	_jsii_.Set(
 		j,
 		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OracleCloudVmCluster)SetDomain(val *string) {
+	if err := j.validateSetDomainParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domain",
 		val,
 	)
 }
@@ -1214,6 +1321,28 @@ func (j *jsiiProxy_OracleCloudVmCluster)SetResourceGroupName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_OracleCloudVmCluster)SetScanListenerPortTcp(val *float64) {
+	if err := j.validateSetScanListenerPortTcpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scanListenerPortTcp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OracleCloudVmCluster)SetScanListenerPortTcpSsl(val *float64) {
+	if err := j.validateSetScanListenerPortTcpSslParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scanListenerPortTcpSsl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_OracleCloudVmCluster)SetSparseDiskgroupEnabled(val interface{}) {
 	if err := j.validateSetSparseDiskgroupEnabledParameters(val); err != nil {
 		panic(err)
@@ -1276,6 +1405,17 @@ func (j *jsiiProxy_OracleCloudVmCluster)SetVirtualNetworkId(val *string) {
 	_jsii_.Set(
 		j,
 		"virtualNetworkId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OracleCloudVmCluster)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zoneId",
 		val,
 	)
 }
@@ -1703,6 +1843,14 @@ func (o *jsiiProxy_OracleCloudVmCluster) ResetDbNodeStorageSizeInGbs() {
 	)
 }
 
+func (o *jsiiProxy_OracleCloudVmCluster) ResetDomain() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDomain",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OracleCloudVmCluster) ResetId() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1735,6 +1883,22 @@ func (o *jsiiProxy_OracleCloudVmCluster) ResetOverrideLogicalId() {
 	)
 }
 
+func (o *jsiiProxy_OracleCloudVmCluster) ResetScanListenerPortTcp() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetScanListenerPortTcp",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OracleCloudVmCluster) ResetScanListenerPortTcpSsl() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetScanListenerPortTcpSsl",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OracleCloudVmCluster) ResetSparseDiskgroupEnabled() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1763,6 +1927,14 @@ func (o *jsiiProxy_OracleCloudVmCluster) ResetTimeZone() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetTimeZone",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OracleCloudVmCluster) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }

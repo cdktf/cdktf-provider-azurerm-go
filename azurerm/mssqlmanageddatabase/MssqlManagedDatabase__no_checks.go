@@ -135,6 +135,10 @@ func (j *jsiiProxy_MssqlManagedDatabase) validateSetShortTermRetentionDaysParame
 	return nil
 }
 
+func (j *jsiiProxy_MssqlManagedDatabase) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewMssqlManagedDatabaseParameters(scope constructs.Construct, id *string, config *MssqlManagedDatabaseConfig) error {
 	return nil
 }

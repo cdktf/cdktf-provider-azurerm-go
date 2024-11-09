@@ -5,7 +5,7 @@ package virtualnetwork
 
 
 type VirtualNetworkEncryption struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/virtual_network#enforcement VirtualNetwork#enforcement}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/virtual_network#enforcement VirtualNetwork#enforcement}.
 	Enforcement *string `field:"required" json:"enforcement" yaml:"enforcement"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/data-sources/virtual_network azurerm_virtual_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/data-sources/virtual_network azurerm_virtual_network}.
 type DataAzurermVirtualNetwork interface {
 	cdktf.TerraformDataSource
 	AddressSpace() *[]*string
@@ -423,7 +423,7 @@ func (j *jsiiProxy_DataAzurermVirtualNetwork) VnetPeeringsAddresses() *[]*string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/data-sources/virtual_network azurerm_virtual_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/data-sources/virtual_network azurerm_virtual_network} Data Source.
 func NewDataAzurermVirtualNetwork(scope constructs.Construct, id *string, config *DataAzurermVirtualNetworkConfig) DataAzurermVirtualNetwork {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewDataAzurermVirtualNetwork(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/data-sources/virtual_network azurerm_virtual_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/data-sources/virtual_network azurerm_virtual_network} Data Source.
 func NewDataAzurermVirtualNetwork_Override(d DataAzurermVirtualNetwork, scope constructs.Construct, id *string, config *DataAzurermVirtualNetworkConfig) {
 	_init_.Initialize()
 

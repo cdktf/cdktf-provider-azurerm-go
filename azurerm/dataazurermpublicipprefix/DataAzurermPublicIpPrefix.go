@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/data-sources/public_ip_prefix azurerm_public_ip_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/data-sources/public_ip_prefix azurerm_public_ip_prefix}.
 type DataAzurermPublicIpPrefix interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -60,6 +60,7 @@ type DataAzurermPublicIpPrefix interface {
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
 	Sku() *string
+	SkuTier() *string
 	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -330,6 +331,16 @@ func (j *jsiiProxy_DataAzurermPublicIpPrefix) Sku() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermPublicIpPrefix) SkuTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"skuTier",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermPublicIpPrefix) Tags() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
@@ -401,7 +412,7 @@ func (j *jsiiProxy_DataAzurermPublicIpPrefix) Zones() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/data-sources/public_ip_prefix azurerm_public_ip_prefix} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/data-sources/public_ip_prefix azurerm_public_ip_prefix} Data Source.
 func NewDataAzurermPublicIpPrefix(scope constructs.Construct, id *string, config *DataAzurermPublicIpPrefixConfig) DataAzurermPublicIpPrefix {
 	_init_.Initialize()
 
@@ -419,7 +430,7 @@ func NewDataAzurermPublicIpPrefix(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/data-sources/public_ip_prefix azurerm_public_ip_prefix} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/data-sources/public_ip_prefix azurerm_public_ip_prefix} Data Source.
 func NewDataAzurermPublicIpPrefix_Override(d DataAzurermPublicIpPrefix, scope constructs.Construct, id *string, config *DataAzurermPublicIpPrefixConfig) {
 	_init_.Initialize()
 

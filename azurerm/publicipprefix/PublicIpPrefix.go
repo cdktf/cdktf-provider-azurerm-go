@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/public_ip_prefix azurerm_public_ip_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/public_ip_prefix azurerm_public_ip_prefix}.
 type PublicIpPrefix interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -77,6 +77,9 @@ type PublicIpPrefix interface {
 	Sku() *string
 	SetSku(val *string)
 	SkuInput() *string
+	SkuTier() *string
+	SetSkuTier(val *string)
+	SkuTierInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -142,6 +145,7 @@ type PublicIpPrefix interface {
 	ResetOverrideLogicalId()
 	ResetPrefixLength()
 	ResetSku()
+	ResetSkuTier()
 	ResetTags()
 	ResetTimeouts()
 	ResetZones()
@@ -443,6 +447,26 @@ func (j *jsiiProxy_PublicIpPrefix) SkuInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PublicIpPrefix) SkuTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"skuTier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PublicIpPrefix) SkuTierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"skuTierInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PublicIpPrefix) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -534,7 +558,7 @@ func (j *jsiiProxy_PublicIpPrefix) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/public_ip_prefix azurerm_public_ip_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/public_ip_prefix azurerm_public_ip_prefix} Resource.
 func NewPublicIpPrefix(scope constructs.Construct, id *string, config *PublicIpPrefixConfig) PublicIpPrefix {
 	_init_.Initialize()
 
@@ -552,7 +576,7 @@ func NewPublicIpPrefix(scope constructs.Construct, id *string, config *PublicIpP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/resources/public_ip_prefix azurerm_public_ip_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/public_ip_prefix azurerm_public_ip_prefix} Resource.
 func NewPublicIpPrefix_Override(p PublicIpPrefix, scope constructs.Construct, id *string, config *PublicIpPrefixConfig) {
 	_init_.Initialize()
 
@@ -704,6 +728,17 @@ func (j *jsiiProxy_PublicIpPrefix)SetSku(val *string) {
 	_jsii_.Set(
 		j,
 		"sku",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PublicIpPrefix)SetSkuTier(val *string) {
+	if err := j.validateSetSkuTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skuTier",
 		val,
 	)
 }
@@ -1130,6 +1165,14 @@ func (p *jsiiProxy_PublicIpPrefix) ResetSku() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetSku",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PublicIpPrefix) ResetSkuTier() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSkuTier",
 		nil, // no parameters
 	)
 }

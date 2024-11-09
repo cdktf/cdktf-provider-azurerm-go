@@ -139,6 +139,10 @@ func (j *jsiiProxy_StorageShare) validateSetQuotaParameters(val *float64) error 
 	return nil
 }
 
+func (j *jsiiProxy_StorageShare) validateSetStorageAccountIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageShare) validateSetStorageAccountNameParameters(val *string) error {
 	return nil
 }

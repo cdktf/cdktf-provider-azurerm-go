@@ -5,7 +5,7 @@ package dataazurermsubnet
 
 
 type DataAzurermSubnetTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.8.0/docs/data-sources/subnet#read DataAzurermSubnet#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/data-sources/subnet#read DataAzurermSubnet#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 
