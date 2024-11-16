@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/healthcare_service azurerm_healthcare_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/healthcare_service azurerm_healthcare_service}.
 type HealthcareService interface {
 	cdktf.TerraformResource
 	AccessPolicyObjectIds() *[]*string
@@ -643,7 +643,7 @@ func (j *jsiiProxy_HealthcareService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/healthcare_service azurerm_healthcare_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/healthcare_service azurerm_healthcare_service} Resource.
 func NewHealthcareService(scope constructs.Construct, id *string, config *HealthcareServiceConfig) HealthcareService {
 	_init_.Initialize()
 
@@ -661,7 +661,7 @@ func NewHealthcareService(scope constructs.Construct, id *string, config *Health
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/healthcare_service azurerm_healthcare_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/healthcare_service azurerm_healthcare_service} Resource.
 func NewHealthcareService_Override(h HealthcareService, scope constructs.Construct, id *string, config *HealthcareServiceConfig) {
 	_init_.Initialize()
 

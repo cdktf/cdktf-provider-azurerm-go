@@ -175,6 +175,10 @@ func (j *jsiiProxy_BastionHost) validateSetVirtualNetworkIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_BastionHost) validateSetZonesParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewBastionHostParameters(scope constructs.Construct, id *string, config *BastionHostConfig) error {
 	return nil
 }

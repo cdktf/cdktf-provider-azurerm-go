@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job}.
 type StreamAnalyticsJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -773,7 +773,7 @@ func (j *jsiiProxy_StreamAnalyticsJob) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job} Resource.
 func NewStreamAnalyticsJob(scope constructs.Construct, id *string, config *StreamAnalyticsJobConfig) StreamAnalyticsJob {
 	_init_.Initialize()
 
@@ -791,7 +791,7 @@ func NewStreamAnalyticsJob(scope constructs.Construct, id *string, config *Strea
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/stream_analytics_job azurerm_stream_analytics_job} Resource.
 func NewStreamAnalyticsJob_Override(s StreamAnalyticsJob, scope constructs.Construct, id *string, config *StreamAnalyticsJobConfig) {
 	_init_.Initialize()
 

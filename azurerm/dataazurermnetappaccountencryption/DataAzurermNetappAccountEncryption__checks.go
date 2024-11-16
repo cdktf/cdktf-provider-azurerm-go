@@ -222,14 +222,6 @@ func (j *jsiiProxy_DataAzurermNetappAccountEncryption) validateSetCountParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermNetappAccountEncryption) validateSetEncryptionKeyParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataAzurermNetappAccountEncryption) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -247,22 +239,6 @@ func (j *jsiiProxy_DataAzurermNetappAccountEncryption) validateSetLifecycleParam
 }
 
 func (j *jsiiProxy_DataAzurermNetappAccountEncryption) validateSetNetappAccountIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermNetappAccountEncryption) validateSetSystemAssignedIdentityPrincipalIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermNetappAccountEncryption) validateSetUserAssignedIdentityIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

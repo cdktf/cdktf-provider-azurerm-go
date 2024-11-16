@@ -5,7 +5,7 @@ package datadogmonitor
 
 
 type DatadogMonitorIdentity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/datadog_monitor#type DatadogMonitor#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/datadog_monitor#type DatadogMonitor#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

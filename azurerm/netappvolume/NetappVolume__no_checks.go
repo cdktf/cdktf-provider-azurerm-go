@@ -75,6 +75,10 @@ func (n *jsiiProxy_NetappVolume) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (n *jsiiProxy_NetappVolume) validatePutDataProtectionBackupPolicyParameters(value *NetappVolumeDataProtectionBackupPolicy) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolume) validatePutDataProtectionReplicationParameters(value *NetappVolumeDataProtectionReplication) error {
 	return nil
 }

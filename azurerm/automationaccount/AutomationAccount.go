@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/automation_account azurerm_automation_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/automation_account azurerm_automation_account}.
 type AutomationAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -601,7 +601,7 @@ func (j *jsiiProxy_AutomationAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/automation_account azurerm_automation_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/automation_account azurerm_automation_account} Resource.
 func NewAutomationAccount(scope constructs.Construct, id *string, config *AutomationAccountConfig) AutomationAccount {
 	_init_.Initialize()
 
@@ -619,7 +619,7 @@ func NewAutomationAccount(scope constructs.Construct, id *string, config *Automa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/automation_account azurerm_automation_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/automation_account azurerm_automation_account} Resource.
 func NewAutomationAccount_Override(a AutomationAccount, scope constructs.Construct, id *string, config *AutomationAccountConfig) {
 	_init_.Initialize()
 

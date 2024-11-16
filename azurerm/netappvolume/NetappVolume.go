@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/netapp_volume azurerm_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/netapp_volume azurerm_netapp_volume}.
 type NetappVolume interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -36,6 +36,8 @@ type NetappVolume interface {
 	CreateFromSnapshotResourceId() *string
 	SetCreateFromSnapshotResourceId(val *string)
 	CreateFromSnapshotResourceIdInput() *string
+	DataProtectionBackupPolicy() NetappVolumeDataProtectionBackupPolicyOutputReference
+	DataProtectionBackupPolicyInput() *NetappVolumeDataProtectionBackupPolicy
 	DataProtectionReplication() NetappVolumeDataProtectionReplicationOutputReference
 	DataProtectionReplicationInput() *NetappVolumeDataProtectionReplication
 	DataProtectionSnapshotPolicy() NetappVolumeDataProtectionSnapshotPolicyOutputReference
@@ -191,12 +193,14 @@ type NetappVolume interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDataProtectionBackupPolicy(value *NetappVolumeDataProtectionBackupPolicy)
 	PutDataProtectionReplication(value *NetappVolumeDataProtectionReplication)
 	PutDataProtectionSnapshotPolicy(value *NetappVolumeDataProtectionSnapshotPolicy)
 	PutExportPolicyRule(value interface{})
 	PutTimeouts(value *NetappVolumeTimeouts)
 	ResetAzureVmwareDataStoreEnabled()
 	ResetCreateFromSnapshotResourceId()
+	ResetDataProtectionBackupPolicy()
 	ResetDataProtectionReplication()
 	ResetDataProtectionSnapshotPolicy()
 	ResetEncryptionKeySource()
@@ -332,6 +336,26 @@ func (j *jsiiProxy_NetappVolume) CreateFromSnapshotResourceIdInput() *string {
 	_jsii_.Get(
 		j,
 		"createFromSnapshotResourceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) DataProtectionBackupPolicy() NetappVolumeDataProtectionBackupPolicyOutputReference {
+	var returns NetappVolumeDataProtectionBackupPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"dataProtectionBackupPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) DataProtectionBackupPolicyInput() *NetappVolumeDataProtectionBackupPolicy {
+	var returns *NetappVolumeDataProtectionBackupPolicy
+	_jsii_.Get(
+		j,
+		"dataProtectionBackupPolicyInput",
 		&returns,
 	)
 	return returns
@@ -1008,7 +1032,7 @@ func (j *jsiiProxy_NetappVolume) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
 func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolumeConfig) NetappVolume {
 	_init_.Initialize()
 
@@ -1026,7 +1050,7 @@ func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolum
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
 func NewNetappVolume_Override(n NetappVolume, scope constructs.Construct, id *string, config *NetappVolumeConfig) {
 	_init_.Initialize()
 
@@ -1744,6 +1768,17 @@ func (n *jsiiProxy_NetappVolume) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (n *jsiiProxy_NetappVolume) PutDataProtectionBackupPolicy(value *NetappVolumeDataProtectionBackupPolicy) {
+	if err := n.validatePutDataProtectionBackupPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putDataProtectionBackupPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetappVolume) PutDataProtectionReplication(value *NetappVolumeDataProtectionReplication) {
 	if err := n.validatePutDataProtectionReplicationParameters(value); err != nil {
 		panic(err)
@@ -1800,6 +1835,14 @@ func (n *jsiiProxy_NetappVolume) ResetCreateFromSnapshotResourceId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetCreateFromSnapshotResourceId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolume) ResetDataProtectionBackupPolicy() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDataProtectionBackupPolicy",
 		nil, // no parameters
 	)
 }

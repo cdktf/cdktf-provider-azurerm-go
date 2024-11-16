@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption}.
 type DataAzurermNetappAccountEncryption interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -28,8 +28,6 @@ type DataAzurermNetappAccountEncryption interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EncryptionKey() *string
-	SetEncryptionKey(val *string)
-	EncryptionKeyInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -57,8 +55,6 @@ type DataAzurermNetappAccountEncryption interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SystemAssignedIdentityPrincipalId() *string
-	SetSystemAssignedIdentityPrincipalId(val *string)
-	SystemAssignedIdentityPrincipalIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -68,8 +64,6 @@ type DataAzurermNetappAccountEncryption interface {
 	Timeouts() DataAzurermNetappAccountEncryptionTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UserAssignedIdentityId() *string
-	SetUserAssignedIdentityId(val *string)
-	UserAssignedIdentityIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -96,14 +90,11 @@ type DataAzurermNetappAccountEncryption interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DataAzurermNetappAccountEncryptionTimeouts)
-	ResetEncryptionKey()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSystemAssignedIdentityPrincipalId()
 	ResetTimeouts()
-	ResetUserAssignedIdentityId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -168,16 +159,6 @@ func (j *jsiiProxy_DataAzurermNetappAccountEncryption) EncryptionKey() *string {
 	_jsii_.Get(
 		j,
 		"encryptionKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermNetappAccountEncryption) EncryptionKeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"encryptionKeyInput",
 		&returns,
 	)
 	return returns
@@ -303,16 +284,6 @@ func (j *jsiiProxy_DataAzurermNetappAccountEncryption) SystemAssignedIdentityPri
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermNetappAccountEncryption) SystemAssignedIdentityPrincipalIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"systemAssignedIdentityPrincipalIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAzurermNetappAccountEncryption) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -373,18 +344,8 @@ func (j *jsiiProxy_DataAzurermNetappAccountEncryption) UserAssignedIdentityId() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermNetappAccountEncryption) UserAssignedIdentityIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"userAssignedIdentityIdInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption} Data Source.
 func NewDataAzurermNetappAccountEncryption(scope constructs.Construct, id *string, config *DataAzurermNetappAccountEncryptionConfig) DataAzurermNetappAccountEncryption {
 	_init_.Initialize()
 
@@ -402,7 +363,7 @@ func NewDataAzurermNetappAccountEncryption(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption} Data Source.
 func NewDataAzurermNetappAccountEncryption_Override(d DataAzurermNetappAccountEncryption, scope constructs.Construct, id *string, config *DataAzurermNetappAccountEncryptionConfig) {
 	_init_.Initialize()
 
@@ -428,17 +389,6 @@ func (j *jsiiProxy_DataAzurermNetappAccountEncryption)SetDependsOn(val *[]*strin
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermNetappAccountEncryption)SetEncryptionKey(val *string) {
-	if err := j.validateSetEncryptionKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"encryptionKey",
 		val,
 	)
 }
@@ -488,28 +438,6 @@ func (j *jsiiProxy_DataAzurermNetappAccountEncryption)SetProvider(val cdktf.Terr
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermNetappAccountEncryption)SetSystemAssignedIdentityPrincipalId(val *string) {
-	if err := j.validateSetSystemAssignedIdentityPrincipalIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"systemAssignedIdentityPrincipalId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermNetappAccountEncryption)SetUserAssignedIdentityId(val *string) {
-	if err := j.validateSetUserAssignedIdentityIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"userAssignedIdentityId",
 		val,
 	)
 }
@@ -810,14 +738,6 @@ func (d *jsiiProxy_DataAzurermNetappAccountEncryption) PutTimeouts(value *DataAz
 	)
 }
 
-func (d *jsiiProxy_DataAzurermNetappAccountEncryption) ResetEncryptionKey() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEncryptionKey",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataAzurermNetappAccountEncryption) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -834,26 +754,10 @@ func (d *jsiiProxy_DataAzurermNetappAccountEncryption) ResetOverrideLogicalId() 
 	)
 }
 
-func (d *jsiiProxy_DataAzurermNetappAccountEncryption) ResetSystemAssignedIdentityPrincipalId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSystemAssignedIdentityPrincipalId",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataAzurermNetappAccountEncryption) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTimeouts",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermNetappAccountEncryption) ResetUserAssignedIdentityId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUserAssignedIdentityId",
 		nil, // no parameters
 	)
 }

@@ -5,11 +5,11 @@ package consumptionbudgetmanagementgroup
 
 
 type ConsumptionBudgetManagementGroupFilterDimension struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/consumption_budget_management_group#name ConsumptionBudgetManagementGroup#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/consumption_budget_management_group#name ConsumptionBudgetManagementGroup#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/consumption_budget_management_group#values ConsumptionBudgetManagementGroup#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/consumption_budget_management_group#values ConsumptionBudgetManagementGroup#values}.
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/consumption_budget_management_group#operator ConsumptionBudgetManagementGroup#operator}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/consumption_budget_management_group#operator ConsumptionBudgetManagementGroup#operator}.
 	Operator *string `field:"optional" json:"operator" yaml:"operator"`
 }
 

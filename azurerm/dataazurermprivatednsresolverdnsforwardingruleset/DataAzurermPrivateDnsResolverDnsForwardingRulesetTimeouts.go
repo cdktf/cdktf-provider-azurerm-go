@@ -5,7 +5,7 @@ package dataazurermprivatednsresolverdnsforwardingruleset
 
 
 type DataAzurermPrivateDnsResolverDnsForwardingRulesetTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/data-sources/private_dns_resolver_dns_forwarding_ruleset#read DataAzurermPrivateDnsResolverDnsForwardingRuleset#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/data-sources/private_dns_resolver_dns_forwarding_ruleset#read DataAzurermPrivateDnsResolverDnsForwardingRuleset#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

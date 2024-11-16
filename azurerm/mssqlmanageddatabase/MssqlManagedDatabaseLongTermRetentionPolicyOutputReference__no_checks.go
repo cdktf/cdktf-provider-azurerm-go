@@ -59,6 +59,10 @@ func (j *jsiiProxy_MssqlManagedDatabaseLongTermRetentionPolicyOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_MssqlManagedDatabaseLongTermRetentionPolicyOutputReference) validateSetImmutableBackupsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlManagedDatabaseLongTermRetentionPolicyOutputReference) validateSetInternalValueParameters(val *MssqlManagedDatabaseLongTermRetentionPolicy) error {
 	return nil
 }

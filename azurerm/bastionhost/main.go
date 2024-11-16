@@ -79,6 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTunnelingEnabled", GoMethod: "ResetTunnelingEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVirtualNetworkId", GoMethod: "ResetVirtualNetworkId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZones", GoMethod: "ResetZones"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "scaleUnits", GoGetter: "ScaleUnits"},
@@ -106,6 +107,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tunnelingEnabledInput", GoGetter: "TunnelingEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkId", GoGetter: "VirtualNetworkId"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkIdInput", GoGetter: "VirtualNetworkIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "zones", GoGetter: "Zones"},
+			_jsii_.MemberProperty{JsiiProperty: "zonesInput", GoGetter: "ZonesInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_BastionHost{}

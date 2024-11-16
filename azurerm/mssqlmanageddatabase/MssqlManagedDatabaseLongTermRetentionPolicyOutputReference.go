@@ -30,6 +30,9 @@ type MssqlManagedDatabaseLongTermRetentionPolicyOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	ImmutableBackupsEnabled() interface{}
+	SetImmutableBackupsEnabled(val interface{})
+	ImmutableBackupsEnabledInput() interface{}
 	InternalValue() *MssqlManagedDatabaseLongTermRetentionPolicy
 	SetInternalValue(val *MssqlManagedDatabaseLongTermRetentionPolicy)
 	MonthlyRetention() *string
@@ -76,6 +79,7 @@ type MssqlManagedDatabaseLongTermRetentionPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetImmutableBackupsEnabled()
 	ResetMonthlyRetention()
 	ResetWeeklyRetention()
 	ResetWeekOfYear()
@@ -130,6 +134,26 @@ func (j *jsiiProxy_MssqlManagedDatabaseLongTermRetentionPolicyOutputReference) F
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlManagedDatabaseLongTermRetentionPolicyOutputReference) ImmutableBackupsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"immutableBackupsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlManagedDatabaseLongTermRetentionPolicyOutputReference) ImmutableBackupsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"immutableBackupsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -291,6 +315,17 @@ func (j *jsiiProxy_MssqlManagedDatabaseLongTermRetentionPolicyOutputReference)Se
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlManagedDatabaseLongTermRetentionPolicyOutputReference)SetImmutableBackupsEnabled(val interface{}) {
+	if err := j.validateSetImmutableBackupsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"immutableBackupsEnabled",
 		val,
 	)
 }
@@ -556,6 +591,14 @@ func (m *jsiiProxy_MssqlManagedDatabaseLongTermRetentionPolicyOutputReference) I
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MssqlManagedDatabaseLongTermRetentionPolicyOutputReference) ResetImmutableBackupsEnabled() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetImmutableBackupsEnabled",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MssqlManagedDatabaseLongTermRetentionPolicyOutputReference) ResetMonthlyRetention() {

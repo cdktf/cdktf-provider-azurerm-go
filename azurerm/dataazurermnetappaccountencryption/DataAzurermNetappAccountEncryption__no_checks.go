@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataAzurermNetappAccountEncryption) validateSetCountParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermNetappAccountEncryption) validateSetEncryptionKeyParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAzurermNetappAccountEncryption) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -92,14 +88,6 @@ func (j *jsiiProxy_DataAzurermNetappAccountEncryption) validateSetLifecycleParam
 }
 
 func (j *jsiiProxy_DataAzurermNetappAccountEncryption) validateSetNetappAccountIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermNetappAccountEncryption) validateSetSystemAssignedIdentityPrincipalIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAzurermNetappAccountEncryption) validateSetUserAssignedIdentityIdParameters(val *string) error {
 	return nil
 }
 

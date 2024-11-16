@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/bastion_host azurerm_bastion_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/bastion_host azurerm_bastion_host}.
 type BastionHost interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -111,6 +111,9 @@ type BastionHost interface {
 	VirtualNetworkId() *string
 	SetVirtualNetworkId(val *string)
 	VirtualNetworkIdInput() *string
+	Zones() *[]*string
+	SetZones(val *[]*string)
+	ZonesInput() *[]*string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -173,6 +176,7 @@ type BastionHost interface {
 	ResetTimeouts()
 	ResetTunnelingEnabled()
 	ResetVirtualNetworkId()
+	ResetZones()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -701,8 +705,28 @@ func (j *jsiiProxy_BastionHost) VirtualNetworkIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BastionHost) Zones() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"zones",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
+func (j *jsiiProxy_BastionHost) ZonesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"zonesInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
 func NewBastionHost(scope constructs.Construct, id *string, config *BastionHostConfig) BastionHost {
 	_init_.Initialize()
 
@@ -720,7 +744,7 @@ func NewBastionHost(scope constructs.Construct, id *string, config *BastionHostC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/bastion_host azurerm_bastion_host} Resource.
 func NewBastionHost_Override(b BastionHost, scope constructs.Construct, id *string, config *BastionHostConfig) {
 	_init_.Initialize()
 
@@ -960,6 +984,17 @@ func (j *jsiiProxy_BastionHost)SetVirtualNetworkId(val *string) {
 	_jsii_.Set(
 		j,
 		"virtualNetworkId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BastionHost)SetZones(val *[]*string) {
+	if err := j.validateSetZonesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zones",
 		val,
 	)
 }
@@ -1455,6 +1490,14 @@ func (b *jsiiProxy_BastionHost) ResetVirtualNetworkId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetVirtualNetworkId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BastionHost) ResetZones() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetZones",
 		nil, // no parameters
 	)
 }

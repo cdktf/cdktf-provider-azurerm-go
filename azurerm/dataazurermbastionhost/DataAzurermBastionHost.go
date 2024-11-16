@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/data-sources/bastion_host azurerm_bastion_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/data-sources/bastion_host azurerm_bastion_host}.
 type DataAzurermBastionHost interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -76,6 +76,7 @@ type DataAzurermBastionHost interface {
 	Timeouts() DataAzurermBastionHostTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	TunnelingEnabled() cdktf.IResolvable
+	Zones() *[]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -466,8 +467,18 @@ func (j *jsiiProxy_DataAzurermBastionHost) TunnelingEnabled() cdktf.IResolvable 
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermBastionHost) Zones() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"zones",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/data-sources/bastion_host azurerm_bastion_host} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/data-sources/bastion_host azurerm_bastion_host} Data Source.
 func NewDataAzurermBastionHost(scope constructs.Construct, id *string, config *DataAzurermBastionHostConfig) DataAzurermBastionHost {
 	_init_.Initialize()
 
@@ -485,7 +496,7 @@ func NewDataAzurermBastionHost(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/data-sources/bastion_host azurerm_bastion_host} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/data-sources/bastion_host azurerm_bastion_host} Data Source.
 func NewDataAzurermBastionHost_Override(d DataAzurermBastionHost, scope constructs.Construct, id *string, config *DataAzurermBastionHostConfig) {
 	_init_.Initialize()
 

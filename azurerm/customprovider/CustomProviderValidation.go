@@ -5,7 +5,7 @@ package customprovider
 
 
 type CustomProviderValidation struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.9.0/docs/resources/custom_provider#specification CustomProvider#specification}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/custom_provider#specification CustomProvider#specification}.
 	Specification *string `field:"required" json:"specification" yaml:"specification"`
 }
 
