@@ -5,9 +5,9 @@ package logicappworkflow
 
 
 type LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaim struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/logic_app_workflow#name LogicAppWorkflow#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/logic_app_workflow#name LogicAppWorkflow#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/logic_app_workflow#value LogicAppWorkflow#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/logic_app_workflow#value LogicAppWorkflow#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

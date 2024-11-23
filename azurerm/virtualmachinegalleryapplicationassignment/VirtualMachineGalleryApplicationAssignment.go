@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/virtual_machine_gallery_application_assignment azurerm_virtual_machine_gallery_application_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/virtual_machine_gallery_application_assignment azurerm_virtual_machine_gallery_application_assignment}.
 type VirtualMachineGalleryApplicationAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -452,7 +452,7 @@ func (j *jsiiProxy_VirtualMachineGalleryApplicationAssignment) VirtualMachineIdI
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/virtual_machine_gallery_application_assignment azurerm_virtual_machine_gallery_application_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/virtual_machine_gallery_application_assignment azurerm_virtual_machine_gallery_application_assignment} Resource.
 func NewVirtualMachineGalleryApplicationAssignment(scope constructs.Construct, id *string, config *VirtualMachineGalleryApplicationAssignmentConfig) VirtualMachineGalleryApplicationAssignment {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewVirtualMachineGalleryApplicationAssignment(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/virtual_machine_gallery_application_assignment azurerm_virtual_machine_gallery_application_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/virtual_machine_gallery_application_assignment azurerm_virtual_machine_gallery_application_assignment} Resource.
 func NewVirtualMachineGalleryApplicationAssignment_Override(v VirtualMachineGalleryApplicationAssignment, scope constructs.Construct, id *string, config *VirtualMachineGalleryApplicationAssignmentConfig) {
 	_init_.Initialize()
 

@@ -5,7 +5,7 @@ package dataazurermlogicappworkflow
 
 
 type DataAzurermLogicAppWorkflowTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/data-sources/logic_app_workflow#read DataAzurermLogicAppWorkflow#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/data-sources/logic_app_workflow#read DataAzurermLogicAppWorkflow#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

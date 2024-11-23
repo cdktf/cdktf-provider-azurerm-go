@@ -207,6 +207,17 @@ func (a *jsiiProxy_ArcMachine) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (a *jsiiProxy_ArcMachine) validatePutIdentityParameters(value *ArcMachineIdentity) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_ArcMachine) validatePutTimeoutsParameters(value *ArcMachineTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -435,6 +446,14 @@ func (j *jsiiProxy_ArcMachine) validateSetProvisionersParameters(val *[]interfac
 }
 
 func (j *jsiiProxy_ArcMachine) validateSetResourceGroupNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ArcMachine) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

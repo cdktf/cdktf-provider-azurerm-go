@@ -5,7 +5,7 @@ package dataazurermvpnserverconfiguration
 
 
 type DataAzurermVpnServerConfigurationTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/data-sources/vpn_server_configuration#read DataAzurermVpnServerConfiguration#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/data-sources/vpn_server_configuration#read DataAzurermVpnServerConfiguration#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

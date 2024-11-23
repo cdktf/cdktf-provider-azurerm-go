@@ -83,6 +83,10 @@ func (j *jsiiProxy_ArcMachineTimeoutsOutputReference) validateSetTerraformResour
 	return nil
 }
 
+func (j *jsiiProxy_ArcMachineTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewArcMachineTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

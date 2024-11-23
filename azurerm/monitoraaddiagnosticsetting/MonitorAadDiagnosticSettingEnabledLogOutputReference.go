@@ -70,6 +70,7 @@ type MonitorAadDiagnosticSettingEnabledLogOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutRetentionPolicy(value *MonitorAadDiagnosticSettingEnabledLogRetentionPolicy)
+	ResetRetentionPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -483,6 +484,14 @@ func (m *jsiiProxy_MonitorAadDiagnosticSettingEnabledLogOutputReference) PutRete
 		m,
 		"putRetentionPolicy",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitorAadDiagnosticSettingEnabledLogOutputReference) ResetRetentionPolicy() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRetentionPolicy",
+		nil, // no parameters
 	)
 }
 

@@ -75,6 +75,10 @@ func (a *jsiiProxy_ArcMachine) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (a *jsiiProxy_ArcMachine) validatePutIdentityParameters(value *ArcMachineIdentity) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArcMachine) validatePutTimeoutsParameters(value *ArcMachineTimeouts) error {
 	return nil
 }
@@ -128,6 +132,10 @@ func (j *jsiiProxy_ArcMachine) validateSetProvisionersParameters(val *[]interfac
 }
 
 func (j *jsiiProxy_ArcMachine) validateSetResourceGroupNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ArcMachine) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

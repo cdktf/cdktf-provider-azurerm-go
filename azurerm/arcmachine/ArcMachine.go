@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/arc_machine azurerm_arc_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/arc_machine azurerm_arc_machine}.
 type ArcMachine interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -41,6 +41,8 @@ type ArcMachine interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() ArcMachineIdentityOutputReference
+	IdentityInput() *ArcMachineIdentity
 	IdInput() *string
 	Kind() *string
 	SetKind(val *string)
@@ -70,6 +72,9 @@ type ArcMachine interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -121,11 +126,14 @@ type ArcMachine interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutIdentity(value *ArcMachineIdentity)
 	PutTimeouts(value *ArcMachineTimeouts)
 	ResetId()
+	ResetIdentity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -230,6 +238,26 @@ func (j *jsiiProxy_ArcMachine) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArcMachine) Identity() ArcMachineIdentityOutputReference {
+	var returns ArcMachineIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArcMachine) IdentityInput() *ArcMachineIdentity {
+	var returns *ArcMachineIdentity
+	_jsii_.Get(
+		j,
+		"identityInput",
 		&returns,
 	)
 	return returns
@@ -375,6 +403,26 @@ func (j *jsiiProxy_ArcMachine) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ArcMachine) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArcMachine) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ArcMachine) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -426,7 +474,7 @@ func (j *jsiiProxy_ArcMachine) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/arc_machine azurerm_arc_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/arc_machine azurerm_arc_machine} Resource.
 func NewArcMachine(scope constructs.Construct, id *string, config *ArcMachineConfig) ArcMachine {
 	_init_.Initialize()
 
@@ -444,7 +492,7 @@ func NewArcMachine(scope constructs.Construct, id *string, config *ArcMachineCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/arc_machine azurerm_arc_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/arc_machine azurerm_arc_machine} Resource.
 func NewArcMachine_Override(a ArcMachine, scope constructs.Construct, id *string, config *ArcMachineConfig) {
 	_init_.Initialize()
 
@@ -574,6 +622,17 @@ func (j *jsiiProxy_ArcMachine)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ArcMachine)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -931,6 +990,17 @@ func (a *jsiiProxy_ArcMachine) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_ArcMachine) PutIdentity(value *ArcMachineIdentity) {
+	if err := a.validatePutIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putIdentity",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_ArcMachine) PutTimeouts(value *ArcMachineTimeouts) {
 	if err := a.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -950,10 +1020,26 @@ func (a *jsiiProxy_ArcMachine) ResetId() {
 	)
 }
 
+func (a *jsiiProxy_ArcMachine) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ArcMachine) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ArcMachine) ResetTags() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTags",
 		nil, // no parameters
 	)
 }

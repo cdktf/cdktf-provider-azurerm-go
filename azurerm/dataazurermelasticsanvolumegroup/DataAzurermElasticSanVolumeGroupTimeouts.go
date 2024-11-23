@@ -5,7 +5,7 @@ package dataazurermelasticsanvolumegroup
 
 
 type DataAzurermElasticSanVolumeGroupTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/data-sources/elastic_san_volume_group#read DataAzurermElasticSanVolumeGroup#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/data-sources/elastic_san_volume_group#read DataAzurermElasticSanVolumeGroup#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

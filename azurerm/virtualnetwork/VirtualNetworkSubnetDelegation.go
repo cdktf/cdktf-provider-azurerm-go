@@ -5,9 +5,9 @@ package virtualnetwork
 
 
 type VirtualNetworkSubnetDelegation struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/virtual_network#name VirtualNetwork#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/virtual_network#name VirtualNetwork#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/virtual_network#service_delegation VirtualNetwork#service_delegation}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/virtual_network#service_delegation VirtualNetwork#service_delegation}.
 	ServiceDelegation interface{} `field:"optional" json:"serviceDelegation" yaml:"serviceDelegation"`
 }
 

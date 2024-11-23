@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/data-sources/cdn_frontdoor_rule_set azurerm_cdn_frontdoor_rule_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/data-sources/cdn_frontdoor_rule_set azurerm_cdn_frontdoor_rule_set}.
 type DataAzurermCdnFrontdoorRuleSet interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -369,7 +369,7 @@ func (j *jsiiProxy_DataAzurermCdnFrontdoorRuleSet) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/data-sources/cdn_frontdoor_rule_set azurerm_cdn_frontdoor_rule_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/data-sources/cdn_frontdoor_rule_set azurerm_cdn_frontdoor_rule_set} Data Source.
 func NewDataAzurermCdnFrontdoorRuleSet(scope constructs.Construct, id *string, config *DataAzurermCdnFrontdoorRuleSetConfig) DataAzurermCdnFrontdoorRuleSet {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewDataAzurermCdnFrontdoorRuleSet(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/data-sources/cdn_frontdoor_rule_set azurerm_cdn_frontdoor_rule_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/data-sources/cdn_frontdoor_rule_set azurerm_cdn_frontdoor_rule_set} Data Source.
 func NewDataAzurermCdnFrontdoorRuleSet_Override(d DataAzurermCdnFrontdoorRuleSet, scope constructs.Construct, id *string, config *DataAzurermCdnFrontdoorRuleSetConfig) {
 	_init_.Initialize()
 

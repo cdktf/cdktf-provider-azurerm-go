@@ -155,6 +155,10 @@ func (j *jsiiProxy_NetworkWatcherFlowLog) validateSetTagsParameters(val *map[str
 	return nil
 }
 
+func (j *jsiiProxy_NetworkWatcherFlowLog) validateSetTargetResourceIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkWatcherFlowLog) validateSetVersionParameters(val *float64) error {
 	return nil
 }

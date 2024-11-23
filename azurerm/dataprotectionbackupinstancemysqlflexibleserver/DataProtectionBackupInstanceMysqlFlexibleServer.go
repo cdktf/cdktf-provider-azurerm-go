@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/data_protection_backup_instance_mysql_flexible_server azurerm_data_protection_backup_instance_mysql_flexible_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/data_protection_backup_instance_mysql_flexible_server azurerm_data_protection_backup_instance_mysql_flexible_server}.
 type DataProtectionBackupInstanceMysqlFlexibleServer interface {
 	cdktf.TerraformResource
 	BackupPolicyId() *string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_DataProtectionBackupInstanceMysqlFlexibleServer) VaultIdInput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/data_protection_backup_instance_mysql_flexible_server azurerm_data_protection_backup_instance_mysql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/data_protection_backup_instance_mysql_flexible_server azurerm_data_protection_backup_instance_mysql_flexible_server} Resource.
 func NewDataProtectionBackupInstanceMysqlFlexibleServer(scope constructs.Construct, id *string, config *DataProtectionBackupInstanceMysqlFlexibleServerConfig) DataProtectionBackupInstanceMysqlFlexibleServer {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewDataProtectionBackupInstanceMysqlFlexibleServer(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.10.0/docs/resources/data_protection_backup_instance_mysql_flexible_server azurerm_data_protection_backup_instance_mysql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/data_protection_backup_instance_mysql_flexible_server azurerm_data_protection_backup_instance_mysql_flexible_server} Resource.
 func NewDataProtectionBackupInstanceMysqlFlexibleServer_Override(d DataProtectionBackupInstanceMysqlFlexibleServer, scope constructs.Construct, id *string, config *DataProtectionBackupInstanceMysqlFlexibleServerConfig) {
 	_init_.Initialize()
 

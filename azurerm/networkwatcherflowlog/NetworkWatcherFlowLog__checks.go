@@ -508,6 +508,14 @@ func (j *jsiiProxy_NetworkWatcherFlowLog) validateSetTagsParameters(val *map[str
 	return nil
 }
 
+func (j *jsiiProxy_NetworkWatcherFlowLog) validateSetTargetResourceIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetworkWatcherFlowLog) validateSetVersionParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
