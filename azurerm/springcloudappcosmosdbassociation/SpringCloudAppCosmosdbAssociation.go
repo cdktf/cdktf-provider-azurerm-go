@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/spring_cloud_app_cosmosdb_association azurerm_spring_cloud_app_cosmosdb_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/spring_cloud_app_cosmosdb_association azurerm_spring_cloud_app_cosmosdb_association}.
 type SpringCloudAppCosmosdbAssociation interface {
 	cdktf.TerraformResource
 	ApiType() *string
@@ -569,7 +569,7 @@ func (j *jsiiProxy_SpringCloudAppCosmosdbAssociation) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/spring_cloud_app_cosmosdb_association azurerm_spring_cloud_app_cosmosdb_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/spring_cloud_app_cosmosdb_association azurerm_spring_cloud_app_cosmosdb_association} Resource.
 func NewSpringCloudAppCosmosdbAssociation(scope constructs.Construct, id *string, config *SpringCloudAppCosmosdbAssociationConfig) SpringCloudAppCosmosdbAssociation {
 	_init_.Initialize()
 
@@ -587,7 +587,7 @@ func NewSpringCloudAppCosmosdbAssociation(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/spring_cloud_app_cosmosdb_association azurerm_spring_cloud_app_cosmosdb_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/spring_cloud_app_cosmosdb_association azurerm_spring_cloud_app_cosmosdb_association} Resource.
 func NewSpringCloudAppCosmosdbAssociation_Override(s SpringCloudAppCosmosdbAssociation, scope constructs.Construct, id *string, config *SpringCloudAppCosmosdbAssociationConfig) {
 	_init_.Initialize()
 

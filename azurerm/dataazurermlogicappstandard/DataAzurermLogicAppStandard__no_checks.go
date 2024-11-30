@@ -99,10 +99,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandard) validateSetResourceGroupNamePara
 	return nil
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandard) validateSetTagsParameters(val *map[string]*string) error {
-	return nil
-}
-
 func validateNewDataAzurermLogicAppStandardParameters(scope constructs.Construct, id *string, config *DataAzurermLogicAppStandardConfig) error {
 	return nil
 }

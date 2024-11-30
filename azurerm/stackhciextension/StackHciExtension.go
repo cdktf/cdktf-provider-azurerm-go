@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/stack_hci_extension azurerm_stack_hci_extension}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/stack_hci_extension azurerm_stack_hci_extension}.
 type StackHciExtension interface {
 	cdktf.TerraformResource
 	ArcSettingId() *string
@@ -546,7 +546,7 @@ func (j *jsiiProxy_StackHciExtension) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/stack_hci_extension azurerm_stack_hci_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/stack_hci_extension azurerm_stack_hci_extension} Resource.
 func NewStackHciExtension(scope constructs.Construct, id *string, config *StackHciExtensionConfig) StackHciExtension {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewStackHciExtension(scope constructs.Construct, id *string, config *StackH
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/stack_hci_extension azurerm_stack_hci_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/stack_hci_extension azurerm_stack_hci_extension} Resource.
 func NewStackHciExtension_Override(s StackHciExtension, scope constructs.Construct, id *string, config *StackHciExtensionConfig) {
 	_init_.Initialize()
 

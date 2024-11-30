@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/databricks_workspace azurerm_databricks_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/databricks_workspace azurerm_databricks_workspace}.
 type DatabricksWorkspace interface {
 	cdktf.TerraformResource
 	AccessConnectorId() *string
@@ -43,6 +43,8 @@ type DatabricksWorkspace interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DiskEncryptionSetId() *string
+	EnhancedSecurityCompliance() DatabricksWorkspaceEnhancedSecurityComplianceOutputReference
+	EnhancedSecurityComplianceInput() *DatabricksWorkspaceEnhancedSecurityCompliance
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -172,11 +174,13 @@ type DatabricksWorkspace interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCustomParameters(value *DatabricksWorkspaceCustomParameters)
+	PutEnhancedSecurityCompliance(value *DatabricksWorkspaceEnhancedSecurityCompliance)
 	PutTimeouts(value *DatabricksWorkspaceTimeouts)
 	ResetAccessConnectorId()
 	ResetCustomerManagedKeyEnabled()
 	ResetCustomParameters()
 	ResetDefaultStorageFirewallEnabled()
+	ResetEnhancedSecurityCompliance()
 	ResetId()
 	ResetInfrastructureEncryptionEnabled()
 	ResetLoadBalancerBackendAddressPoolId()
@@ -346,6 +350,26 @@ func (j *jsiiProxy_DatabricksWorkspace) DiskEncryptionSetId() *string {
 	_jsii_.Get(
 		j,
 		"diskEncryptionSetId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksWorkspace) EnhancedSecurityCompliance() DatabricksWorkspaceEnhancedSecurityComplianceOutputReference {
+	var returns DatabricksWorkspaceEnhancedSecurityComplianceOutputReference
+	_jsii_.Get(
+		j,
+		"enhancedSecurityCompliance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabricksWorkspace) EnhancedSecurityComplianceInput() *DatabricksWorkspaceEnhancedSecurityCompliance {
+	var returns *DatabricksWorkspaceEnhancedSecurityCompliance
+	_jsii_.Get(
+		j,
+		"enhancedSecurityComplianceInput",
 		&returns,
 	)
 	return returns
@@ -852,7 +876,7 @@ func (j *jsiiProxy_DatabricksWorkspace) WorkspaceUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/databricks_workspace azurerm_databricks_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/databricks_workspace azurerm_databricks_workspace} Resource.
 func NewDatabricksWorkspace(scope constructs.Construct, id *string, config *DatabricksWorkspaceConfig) DatabricksWorkspace {
 	_init_.Initialize()
 
@@ -870,7 +894,7 @@ func NewDatabricksWorkspace(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/databricks_workspace azurerm_databricks_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/databricks_workspace azurerm_databricks_workspace} Resource.
 func NewDatabricksWorkspace_Override(d DatabricksWorkspace, scope constructs.Construct, id *string, config *DatabricksWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -1522,6 +1546,17 @@ func (d *jsiiProxy_DatabricksWorkspace) PutCustomParameters(value *DatabricksWor
 	)
 }
 
+func (d *jsiiProxy_DatabricksWorkspace) PutEnhancedSecurityCompliance(value *DatabricksWorkspaceEnhancedSecurityCompliance) {
+	if err := d.validatePutEnhancedSecurityComplianceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putEnhancedSecurityCompliance",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatabricksWorkspace) PutTimeouts(value *DatabricksWorkspaceTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1561,6 +1596,14 @@ func (d *jsiiProxy_DatabricksWorkspace) ResetDefaultStorageFirewallEnabled() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDefaultStorageFirewallEnabled",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabricksWorkspace) ResetEnhancedSecurityCompliance() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnhancedSecurityCompliance",
 		nil, // no parameters
 	)
 }

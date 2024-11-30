@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/search_service azurerm_search_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/search_service azurerm_search_service}.
 type SearchService interface {
 	cdktf.TerraformResource
 	AllowedIps() *[]*string
@@ -33,6 +33,7 @@ type SearchService interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomerManagedKeyEncryptionComplianceStatus() *string
 	CustomerManagedKeyEnforcementEnabled() interface{}
 	SetCustomerManagedKeyEnforcementEnabled(val interface{})
 	CustomerManagedKeyEnforcementEnabledInput() interface{}
@@ -267,6 +268,16 @@ func (j *jsiiProxy_SearchService) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchService) CustomerManagedKeyEncryptionComplianceStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerManagedKeyEncryptionComplianceStatus",
 		&returns,
 	)
 	return returns
@@ -723,7 +734,7 @@ func (j *jsiiProxy_SearchService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/search_service azurerm_search_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/search_service azurerm_search_service} Resource.
 func NewSearchService(scope constructs.Construct, id *string, config *SearchServiceConfig) SearchService {
 	_init_.Initialize()
 
@@ -741,7 +752,7 @@ func NewSearchService(scope constructs.Construct, id *string, config *SearchServ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/search_service azurerm_search_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/search_service azurerm_search_service} Resource.
 func NewSearchService_Override(s SearchService, scope constructs.Construct, id *string, config *SearchServiceConfig) {
 	_init_.Initialize()
 

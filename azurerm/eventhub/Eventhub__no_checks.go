@@ -123,6 +123,10 @@ func (j *jsiiProxy_Eventhub) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Eventhub) validateSetNamespaceIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Eventhub) validateSetNamespaceNameParameters(val *string) error {
 	return nil
 }

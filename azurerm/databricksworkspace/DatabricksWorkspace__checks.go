@@ -218,6 +218,17 @@ func (d *jsiiProxy_DatabricksWorkspace) validatePutCustomParametersParameters(va
 	return nil
 }
 
+func (d *jsiiProxy_DatabricksWorkspace) validatePutEnhancedSecurityComplianceParameters(value *DatabricksWorkspaceEnhancedSecurityCompliance) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DatabricksWorkspace) validatePutTimeoutsParameters(value *DatabricksWorkspaceTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard}.
 type DataAzurermLogicAppStandard interface {
 	cdktf.TerraformDataSource
 	AppServicePlanId() *string
@@ -66,6 +66,7 @@ type DataAzurermLogicAppStandard interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	PublicNetworkAccess() *string
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -77,9 +78,7 @@ type DataAzurermLogicAppStandard interface {
 	StorageAccountAccessKey() *string
 	StorageAccountName() *string
 	StorageAccountShareName() *string
-	Tags() *map[string]*string
-	SetTags(val *map[string]*string)
-	TagsInput() *map[string]*string
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -123,7 +122,6 @@ type DataAzurermLogicAppStandard interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSiteConfig()
-	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -434,6 +432,16 @@ func (j *jsiiProxy_DataAzurermLogicAppStandard) Provider() cdktf.TerraformProvid
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermLogicAppStandard) PublicNetworkAccess() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicNetworkAccess",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermLogicAppStandard) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -524,21 +532,11 @@ func (j *jsiiProxy_DataAzurermLogicAppStandard) StorageAccountShareName() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermLogicAppStandard) Tags() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_DataAzurermLogicAppStandard) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"tags",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandard) TagsInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"tagsInput",
 		&returns,
 	)
 	return returns
@@ -625,7 +623,7 @@ func (j *jsiiProxy_DataAzurermLogicAppStandard) VirtualNetworkSubnetId() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard} Data Source.
 func NewDataAzurermLogicAppStandard(scope constructs.Construct, id *string, config *DataAzurermLogicAppStandardConfig) DataAzurermLogicAppStandard {
 	_init_.Initialize()
 
@@ -643,7 +641,7 @@ func NewDataAzurermLogicAppStandard(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard} Data Source.
 func NewDataAzurermLogicAppStandard_Override(d DataAzurermLogicAppStandard, scope constructs.Construct, id *string, config *DataAzurermLogicAppStandardConfig) {
 	_init_.Initialize()
 
@@ -729,17 +727,6 @@ func (j *jsiiProxy_DataAzurermLogicAppStandard)SetResourceGroupName(val *string)
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAzurermLogicAppStandard)SetTags(val *map[string]*string) {
-	if err := j.validateSetTagsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tags",
 		val,
 	)
 }
@@ -1071,14 +1058,6 @@ func (d *jsiiProxy_DataAzurermLogicAppStandard) ResetSiteConfig() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSiteConfig",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAzurermLogicAppStandard) ResetTags() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTags",
 		nil, // no parameters
 	)
 }

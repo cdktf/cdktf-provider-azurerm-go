@@ -59,6 +59,10 @@ func (j *jsiiProxy_SearchServiceIdentityOutputReference) validateSetComplexObjec
 	return nil
 }
 
+func (j *jsiiProxy_SearchServiceIdentityOutputReference) validateSetIdentityIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SearchServiceIdentityOutputReference) validateSetInternalValueParameters(val *SearchServiceIdentity) error {
 	return nil
 }

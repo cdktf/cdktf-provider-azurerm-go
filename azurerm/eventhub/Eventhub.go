@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/eventhub azurerm_eventhub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/eventhub azurerm_eventhub}.
 type Eventhub interface {
 	cdktf.TerraformResource
 	CaptureDescription() EventhubCaptureDescriptionOutputReference
@@ -54,6 +54,9 @@ type Eventhub interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NamespaceId() *string
+	SetNamespaceId(val *string)
+	NamespaceIdInput() *string
 	NamespaceName() *string
 	SetNamespaceName(val *string)
 	NamespaceNameInput() *string
@@ -134,9 +137,12 @@ type Eventhub interface {
 	PutTimeouts(value *EventhubTimeouts)
 	ResetCaptureDescription()
 	ResetId()
+	ResetNamespaceId()
+	ResetNamespaceName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetResourceGroupName()
 	ResetStatus()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -327,6 +333,26 @@ func (j *jsiiProxy_Eventhub) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Eventhub) NamespaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Eventhub) NamespaceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Eventhub) NamespaceName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -508,7 +534,7 @@ func (j *jsiiProxy_Eventhub) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/eventhub azurerm_eventhub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/eventhub azurerm_eventhub} Resource.
 func NewEventhub(scope constructs.Construct, id *string, config *EventhubConfig) Eventhub {
 	_init_.Initialize()
 
@@ -526,7 +552,7 @@ func NewEventhub(scope constructs.Construct, id *string, config *EventhubConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/eventhub azurerm_eventhub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/eventhub azurerm_eventhub} Resource.
 func NewEventhub_Override(e Eventhub, scope constructs.Construct, id *string, config *EventhubConfig) {
 	_init_.Initialize()
 
@@ -615,6 +641,17 @@ func (j *jsiiProxy_Eventhub)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Eventhub)SetNamespaceId(val *string) {
+	if err := j.validateSetNamespaceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namespaceId",
 		val,
 	)
 }
@@ -1073,10 +1110,34 @@ func (e *jsiiProxy_Eventhub) ResetId() {
 	)
 }
 
+func (e *jsiiProxy_Eventhub) ResetNamespaceId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetNamespaceId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Eventhub) ResetNamespaceName() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetNamespaceName",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_Eventhub) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Eventhub) ResetResourceGroupName() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetResourceGroupName",
 		nil, // no parameters
 	)
 }

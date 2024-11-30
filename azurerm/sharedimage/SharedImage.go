@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/shared_image azurerm_shared_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/shared_image azurerm_shared_image}.
 type SharedImage interface {
 	cdktf.TerraformResource
 	AcceleratedNetworkSupportEnabled() interface{}
@@ -1000,7 +1000,7 @@ func (j *jsiiProxy_SharedImage) TrustedLaunchSupportedInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/shared_image azurerm_shared_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/shared_image azurerm_shared_image} Resource.
 func NewSharedImage(scope constructs.Construct, id *string, config *SharedImageConfig) SharedImage {
 	_init_.Initialize()
 
@@ -1018,7 +1018,7 @@ func NewSharedImage(scope constructs.Construct, id *string, config *SharedImageC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/shared_image azurerm_shared_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/shared_image azurerm_shared_image} Resource.
 func NewSharedImage_Override(s SharedImage, scope constructs.Construct, id *string, config *SharedImageConfig) {
 	_init_.Initialize()
 

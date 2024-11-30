@@ -30,6 +30,9 @@ type SearchServiceIdentityOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdentityIds() *[]*string
+	SetIdentityIds(val *[]*string)
+	IdentityIdsInput() *[]*string
 	InternalValue() *SearchServiceIdentity
 	SetInternalValue(val *SearchServiceIdentity)
 	PrincipalId() *string
@@ -69,6 +72,7 @@ type SearchServiceIdentityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIdentityIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -119,6 +123,26 @@ func (j *jsiiProxy_SearchServiceIdentityOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchServiceIdentityOutputReference) IdentityIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchServiceIdentityOutputReference) IdentityIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIdsInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_SearchServiceIdentityOutputReference)SetComplexObjectIsFromSe
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SearchServiceIdentityOutputReference)SetIdentityIds(val *[]*string) {
+	if err := j.validateSetIdentityIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityIds",
 		val,
 	)
 }
@@ -472,6 +507,14 @@ func (s *jsiiProxy_SearchServiceIdentityOutputReference) InterpolationForAttribu
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SearchServiceIdentityOutputReference) ResetIdentityIds() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIdentityIds",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SearchServiceIdentityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

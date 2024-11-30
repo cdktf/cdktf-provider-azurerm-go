@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/data-sources/load_test azurerm_load_test}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/data-sources/load_test azurerm_load_test}.
 type DataAzurermLoadTest interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_DataAzurermLoadTest) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/data-sources/load_test azurerm_load_test} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/data-sources/load_test azurerm_load_test} Data Source.
 func NewDataAzurermLoadTest(scope constructs.Construct, id *string, config *DataAzurermLoadTestConfig) DataAzurermLoadTest {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewDataAzurermLoadTest(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/data-sources/load_test azurerm_load_test} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/data-sources/load_test azurerm_load_test} Data Source.
 func NewDataAzurermLoadTest_Override(d DataAzurermLoadTest, scope constructs.Construct, id *string, config *DataAzurermLoadTestConfig) {
 	_init_.Initialize()
 

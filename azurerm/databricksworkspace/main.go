@@ -30,6 +30,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "defaultStorageFirewallEnabledInput", GoGetter: "DefaultStorageFirewallEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "diskEncryptionSetId", GoGetter: "DiskEncryptionSetId"},
+			_jsii_.MemberProperty{JsiiProperty: "enhancedSecurityCompliance", GoGetter: "EnhancedSecurityCompliance"},
+			_jsii_.MemberProperty{JsiiProperty: "enhancedSecurityComplianceInput", GoGetter: "EnhancedSecurityComplianceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -82,12 +84,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publicNetworkAccessEnabled", GoGetter: "PublicNetworkAccessEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "publicNetworkAccessEnabledInput", GoGetter: "PublicNetworkAccessEnabledInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomParameters", GoMethod: "PutCustomParameters"},
+			_jsii_.MemberMethod{JsiiMethod: "putEnhancedSecurityCompliance", GoMethod: "PutEnhancedSecurityCompliance"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessConnectorId", GoMethod: "ResetAccessConnectorId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomerManagedKeyEnabled", GoMethod: "ResetCustomerManagedKeyEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomParameters", GoMethod: "ResetCustomParameters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultStorageFirewallEnabled", GoMethod: "ResetDefaultStorageFirewallEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnhancedSecurityCompliance", GoMethod: "ResetEnhancedSecurityCompliance"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInfrastructureEncryptionEnabled", GoMethod: "ResetInfrastructureEncryptionEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLoadBalancerBackendAddressPoolId", GoMethod: "ResetLoadBalancerBackendAddressPoolId"},
@@ -201,6 +205,54 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabricksWorkspaceCustomParametersOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.databricksWorkspace.DatabricksWorkspaceEnhancedSecurityCompliance",
+		reflect.TypeOf((*DatabricksWorkspaceEnhancedSecurityCompliance)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.databricksWorkspace.DatabricksWorkspaceEnhancedSecurityComplianceOutputReference",
+		reflect.TypeOf((*DatabricksWorkspaceEnhancedSecurityComplianceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "automaticClusterUpdateEnabled", GoGetter: "AutomaticClusterUpdateEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "automaticClusterUpdateEnabledInput", GoGetter: "AutomaticClusterUpdateEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberProperty{JsiiProperty: "complianceSecurityProfileEnabled", GoGetter: "ComplianceSecurityProfileEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "complianceSecurityProfileEnabledInput", GoGetter: "ComplianceSecurityProfileEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complianceSecurityProfileStandards", GoGetter: "ComplianceSecurityProfileStandards"},
+			_jsii_.MemberProperty{JsiiProperty: "complianceSecurityProfileStandardsInput", GoGetter: "ComplianceSecurityProfileStandardsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enhancedSecurityMonitoringEnabled", GoGetter: "EnhancedSecurityMonitoringEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enhancedSecurityMonitoringEnabledInput", GoGetter: "EnhancedSecurityMonitoringEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAutomaticClusterUpdateEnabled", GoMethod: "ResetAutomaticClusterUpdateEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetComplianceSecurityProfileEnabled", GoMethod: "ResetComplianceSecurityProfileEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetComplianceSecurityProfileStandards", GoMethod: "ResetComplianceSecurityProfileStandards"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnhancedSecurityMonitoringEnabled", GoMethod: "ResetEnhancedSecurityMonitoringEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DatabricksWorkspaceEnhancedSecurityComplianceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

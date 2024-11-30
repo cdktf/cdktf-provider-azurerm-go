@@ -163,6 +163,10 @@ func (j *jsiiProxy_LogicAppStandard) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_LogicAppStandard) validateSetPublicNetworkAccessParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogicAppStandard) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }

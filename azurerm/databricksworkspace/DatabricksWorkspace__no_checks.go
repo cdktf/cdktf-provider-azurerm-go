@@ -79,6 +79,10 @@ func (d *jsiiProxy_DatabricksWorkspace) validatePutCustomParametersParameters(va
 	return nil
 }
 
+func (d *jsiiProxy_DatabricksWorkspace) validatePutEnhancedSecurityComplianceParameters(value *DatabricksWorkspaceEnhancedSecurityCompliance) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabricksWorkspace) validatePutTimeoutsParameters(value *DatabricksWorkspaceTimeouts) error {
 	return nil
 }

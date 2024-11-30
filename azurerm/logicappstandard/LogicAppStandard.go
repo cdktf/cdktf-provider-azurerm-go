@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/logic_app_standard azurerm_logic_app_standard}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/logic_app_standard azurerm_logic_app_standard}.
 type LogicAppStandard interface {
 	cdktf.TerraformResource
 	AppServicePlanId() *string
@@ -92,6 +92,9 @@ type LogicAppStandard interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicNetworkAccess() *string
+	SetPublicNetworkAccess(val *string)
+	PublicNetworkAccessInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -188,6 +191,7 @@ type LogicAppStandard interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublicNetworkAccess()
 	ResetSiteConfig()
 	ResetStorageAccountShareName()
 	ResetTags()
@@ -623,6 +627,26 @@ func (j *jsiiProxy_LogicAppStandard) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LogicAppStandard) PublicNetworkAccess() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicNetworkAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogicAppStandard) PublicNetworkAccessInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogicAppStandard) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -874,7 +898,7 @@ func (j *jsiiProxy_LogicAppStandard) VirtualNetworkSubnetIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/logic_app_standard azurerm_logic_app_standard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/logic_app_standard azurerm_logic_app_standard} Resource.
 func NewLogicAppStandard(scope constructs.Construct, id *string, config *LogicAppStandardConfig) LogicAppStandard {
 	_init_.Initialize()
 
@@ -892,7 +916,7 @@ func NewLogicAppStandard(scope constructs.Construct, id *string, config *LogicAp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.11.0/docs/resources/logic_app_standard azurerm_logic_app_standard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/logic_app_standard azurerm_logic_app_standard} Resource.
 func NewLogicAppStandard_Override(l LogicAppStandard, scope constructs.Construct, id *string, config *LogicAppStandardConfig) {
 	_init_.Initialize()
 
@@ -1077,6 +1101,17 @@ func (j *jsiiProxy_LogicAppStandard)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogicAppStandard)SetPublicNetworkAccess(val *string) {
+	if err := j.validateSetPublicNetworkAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccess",
 		val,
 	)
 }
@@ -1642,6 +1677,14 @@ func (l *jsiiProxy_LogicAppStandard) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogicAppStandard) ResetPublicNetworkAccess() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPublicNetworkAccess",
 		nil, // no parameters
 	)
 }
