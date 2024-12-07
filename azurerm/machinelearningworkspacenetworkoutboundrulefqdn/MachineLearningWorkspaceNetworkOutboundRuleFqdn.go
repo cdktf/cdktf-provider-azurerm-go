@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/machine_learning_workspace_network_outbound_rule_fqdn azurerm_machine_learning_workspace_network_outbound_rule_fqdn}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/machine_learning_workspace_network_outbound_rule_fqdn azurerm_machine_learning_workspace_network_outbound_rule_fqdn}.
 type MachineLearningWorkspaceNetworkOutboundRuleFqdn interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_MachineLearningWorkspaceNetworkOutboundRuleFqdn) WorkspaceIdI
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/machine_learning_workspace_network_outbound_rule_fqdn azurerm_machine_learning_workspace_network_outbound_rule_fqdn} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/machine_learning_workspace_network_outbound_rule_fqdn azurerm_machine_learning_workspace_network_outbound_rule_fqdn} Resource.
 func NewMachineLearningWorkspaceNetworkOutboundRuleFqdn(scope constructs.Construct, id *string, config *MachineLearningWorkspaceNetworkOutboundRuleFqdnConfig) MachineLearningWorkspaceNetworkOutboundRuleFqdn {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewMachineLearningWorkspaceNetworkOutboundRuleFqdn(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/machine_learning_workspace_network_outbound_rule_fqdn azurerm_machine_learning_workspace_network_outbound_rule_fqdn} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/machine_learning_workspace_network_outbound_rule_fqdn azurerm_machine_learning_workspace_network_outbound_rule_fqdn} Resource.
 func NewMachineLearningWorkspaceNetworkOutboundRuleFqdn_Override(m MachineLearningWorkspaceNetworkOutboundRuleFqdn, scope constructs.Construct, id *string, config *MachineLearningWorkspaceNetworkOutboundRuleFqdnConfig) {
 	_init_.Initialize()
 

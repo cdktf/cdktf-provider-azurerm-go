@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/data-sources/private_endpoint_connection azurerm_private_endpoint_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/data-sources/private_endpoint_connection azurerm_private_endpoint_connection}.
 type DataAzurermPrivateEndpointConnection interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DataAzurermPrivateEndpointConnection) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/data-sources/private_endpoint_connection azurerm_private_endpoint_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/data-sources/private_endpoint_connection azurerm_private_endpoint_connection} Data Source.
 func NewDataAzurermPrivateEndpointConnection(scope constructs.Construct, id *string, config *DataAzurermPrivateEndpointConnectionConfig) DataAzurermPrivateEndpointConnection {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewDataAzurermPrivateEndpointConnection(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/data-sources/private_endpoint_connection azurerm_private_endpoint_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/data-sources/private_endpoint_connection azurerm_private_endpoint_connection} Data Source.
 func NewDataAzurermPrivateEndpointConnection_Override(d DataAzurermPrivateEndpointConnection, scope constructs.Construct, id *string, config *DataAzurermPrivateEndpointConnectionConfig) {
 	_init_.Initialize()
 

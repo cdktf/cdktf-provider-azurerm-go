@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment}.
 type CognitiveDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,9 @@ type CognitiveDeployment interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DynamicThrottlingEnabled() interface{}
+	SetDynamicThrottlingEnabled(val interface{})
+	DynamicThrottlingEnabledInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -128,6 +131,7 @@ type CognitiveDeployment interface {
 	PutModel(value *CognitiveDeploymentModel)
 	PutSku(value *CognitiveDeploymentSku)
 	PutTimeouts(value *CognitiveDeploymentTimeouts)
+	ResetDynamicThrottlingEnabled()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -218,6 +222,26 @@ func (j *jsiiProxy_CognitiveDeployment) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitiveDeployment) DynamicThrottlingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dynamicThrottlingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitiveDeployment) DynamicThrottlingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dynamicThrottlingEnabledInput",
 		&returns,
 	)
 	return returns
@@ -474,7 +498,7 @@ func (j *jsiiProxy_CognitiveDeployment) VersionUpgradeOptionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment} Resource.
 func NewCognitiveDeployment(scope constructs.Construct, id *string, config *CognitiveDeploymentConfig) CognitiveDeployment {
 	_init_.Initialize()
 
@@ -492,7 +516,7 @@ func NewCognitiveDeployment(scope constructs.Construct, id *string, config *Cogn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment} Resource.
 func NewCognitiveDeployment_Override(c CognitiveDeployment, scope constructs.Construct, id *string, config *CognitiveDeploymentConfig) {
 	_init_.Initialize()
 
@@ -540,6 +564,17 @@ func (j *jsiiProxy_CognitiveDeployment)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitiveDeployment)SetDynamicThrottlingEnabled(val interface{}) {
+	if err := j.validateSetDynamicThrottlingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dynamicThrottlingEnabled",
 		val,
 	)
 }
@@ -1009,6 +1044,14 @@ func (c *jsiiProxy_CognitiveDeployment) PutTimeouts(value *CognitiveDeploymentTi
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitiveDeployment) ResetDynamicThrottlingEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDynamicThrottlingEnabled",
+		nil, // no parameters
 	)
 }
 

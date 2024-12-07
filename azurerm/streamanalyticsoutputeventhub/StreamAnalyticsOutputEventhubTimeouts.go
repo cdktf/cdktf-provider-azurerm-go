@@ -5,13 +5,13 @@ package streamanalyticsoutputeventhub
 
 
 type StreamAnalyticsOutputEventhubTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/stream_analytics_output_eventhub#create StreamAnalyticsOutputEventhub#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/stream_analytics_output_eventhub#create StreamAnalyticsOutputEventhub#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/stream_analytics_output_eventhub#delete StreamAnalyticsOutputEventhub#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/stream_analytics_output_eventhub#delete StreamAnalyticsOutputEventhub#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/stream_analytics_output_eventhub#read StreamAnalyticsOutputEventhub#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/stream_analytics_output_eventhub#read StreamAnalyticsOutputEventhub#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/stream_analytics_output_eventhub#update StreamAnalyticsOutputEventhub#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/stream_analytics_output_eventhub#update StreamAnalyticsOutputEventhub#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

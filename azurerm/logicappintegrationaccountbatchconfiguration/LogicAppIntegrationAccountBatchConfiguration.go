@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/logic_app_integration_account_batch_configuration azurerm_logic_app_integration_account_batch_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/logic_app_integration_account_batch_configuration azurerm_logic_app_integration_account_batch_configuration}.
 type LogicAppIntegrationAccountBatchConfiguration interface {
 	cdktf.TerraformResource
 	BatchGroupName() *string
@@ -473,7 +473,7 @@ func (j *jsiiProxy_LogicAppIntegrationAccountBatchConfiguration) TimeoutsInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/logic_app_integration_account_batch_configuration azurerm_logic_app_integration_account_batch_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/logic_app_integration_account_batch_configuration azurerm_logic_app_integration_account_batch_configuration} Resource.
 func NewLogicAppIntegrationAccountBatchConfiguration(scope constructs.Construct, id *string, config *LogicAppIntegrationAccountBatchConfigurationConfig) LogicAppIntegrationAccountBatchConfiguration {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewLogicAppIntegrationAccountBatchConfiguration(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.12.0/docs/resources/logic_app_integration_account_batch_configuration azurerm_logic_app_integration_account_batch_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/logic_app_integration_account_batch_configuration azurerm_logic_app_integration_account_batch_configuration} Resource.
 func NewLogicAppIntegrationAccountBatchConfiguration_Override(l LogicAppIntegrationAccountBatchConfiguration, scope constructs.Construct, id *string, config *LogicAppIntegrationAccountBatchConfigurationConfig) {
 	_init_.Initialize()
 

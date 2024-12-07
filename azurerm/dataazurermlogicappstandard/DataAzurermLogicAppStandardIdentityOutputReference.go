@@ -30,6 +30,7 @@ type DataAzurermLogicAppStandardIdentityOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdentityIds() *[]*string
 	InternalValue() *DataAzurermLogicAppStandardIdentity
 	SetInternalValue(val *DataAzurermLogicAppStandardIdentity)
 	PrincipalId() *string
@@ -117,6 +118,16 @@ func (j *jsiiProxy_DataAzurermLogicAppStandardIdentityOutputReference) Fqn() *st
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermLogicAppStandardIdentityOutputReference) IdentityIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"identityIds",
 		&returns,
 	)
 	return returns

@@ -115,6 +115,10 @@ func (j *jsiiProxy_CognitiveDeployment) validateSetCountParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_CognitiveDeployment) validateSetDynamicThrottlingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitiveDeployment) validateSetIdParameters(val *string) error {
 	return nil
 }
