@@ -24,32 +24,32 @@ type SubscriptionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Display Name for the Subscription.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/subscription#subscription_name Subscription#subscription_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/subscription#subscription_name Subscription#subscription_name}
 	SubscriptionName *string `field:"required" json:"subscriptionName" yaml:"subscriptionName"`
 	// The Alias Name of the subscription. If omitted a new UUID will be generated for this property.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/subscription#alias Subscription#alias}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/subscription#alias Subscription#alias}
 	Alias *string `field:"optional" json:"alias" yaml:"alias"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/subscription#billing_scope_id Subscription#billing_scope_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/subscription#billing_scope_id Subscription#billing_scope_id}.
 	BillingScopeId *string `field:"optional" json:"billingScopeId" yaml:"billingScopeId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/subscription#id Subscription#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/subscription#id Subscription#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The GUID of the Subscription.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/subscription#subscription_id Subscription#subscription_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/subscription#subscription_id Subscription#subscription_id}
 	SubscriptionId *string `field:"optional" json:"subscriptionId" yaml:"subscriptionId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/subscription#tags Subscription#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/subscription#tags Subscription#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/subscription#timeouts Subscription#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/subscription#timeouts Subscription#timeouts}
 	Timeouts *SubscriptionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// The workload type for the Subscription. Possible values are `Production` (default) and `DevTest`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/subscription#workload Subscription#workload}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/subscription#workload Subscription#workload}
 	Workload *string `field:"optional" json:"workload" yaml:"workload"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/search_service azurerm_search_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/search_service azurerm_search_service}.
 type SearchService interface {
 	cdktf.TerraformResource
 	AllowedIps() *[]*string
@@ -70,6 +70,9 @@ type SearchService interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkRuleBypassOption() *string
+	SetNetworkRuleBypassOption(val *string)
+	NetworkRuleBypassOptionInput() *string
 	// The tree node.
 	Node() constructs.Node
 	PartitionCount() *float64
@@ -166,6 +169,7 @@ type SearchService interface {
 	ResetId()
 	ResetIdentity()
 	ResetLocalAuthenticationEnabled()
+	ResetNetworkRuleBypassOption()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -473,6 +477,26 @@ func (j *jsiiProxy_SearchService) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SearchService) NetworkRuleBypassOption() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkRuleBypassOption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SearchService) NetworkRuleBypassOptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkRuleBypassOptionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SearchService) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -734,7 +758,7 @@ func (j *jsiiProxy_SearchService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/search_service azurerm_search_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/search_service azurerm_search_service} Resource.
 func NewSearchService(scope constructs.Construct, id *string, config *SearchServiceConfig) SearchService {
 	_init_.Initialize()
 
@@ -752,7 +776,7 @@ func NewSearchService(scope constructs.Construct, id *string, config *SearchServ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/search_service azurerm_search_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/search_service azurerm_search_service} Resource.
 func NewSearchService_Override(s SearchService, scope constructs.Construct, id *string, config *SearchServiceConfig) {
 	_init_.Initialize()
 
@@ -896,6 +920,17 @@ func (j *jsiiProxy_SearchService)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SearchService)SetNetworkRuleBypassOption(val *string) {
+	if err := j.validateSetNetworkRuleBypassOptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkRuleBypassOption",
 		val,
 	)
 }
@@ -1423,6 +1458,14 @@ func (s *jsiiProxy_SearchService) ResetLocalAuthenticationEnabled() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetLocalAuthenticationEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SearchService) ResetNetworkRuleBypassOption() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNetworkRuleBypassOption",
 		nil, // no parameters
 	)
 }

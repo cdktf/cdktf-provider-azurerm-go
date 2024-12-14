@@ -143,6 +143,10 @@ func (j *jsiiProxy_SearchService) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_SearchService) validateSetNetworkRuleBypassOptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SearchService) validateSetPartitionCountParameters(val *float64) error {
 	return nil
 }

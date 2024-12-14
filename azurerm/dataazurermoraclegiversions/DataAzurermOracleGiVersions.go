@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/data-sources/oracle_gi_versions azurerm_oracle_gi_versions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/oracle_gi_versions azurerm_oracle_gi_versions}.
 type DataAzurermOracleGiVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataAzurermOracleGiVersions) Versions() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/data-sources/oracle_gi_versions azurerm_oracle_gi_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/oracle_gi_versions azurerm_oracle_gi_versions} Data Source.
 func NewDataAzurermOracleGiVersions(scope constructs.Construct, id *string, config *DataAzurermOracleGiVersionsConfig) DataAzurermOracleGiVersions {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataAzurermOracleGiVersions(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/data-sources/oracle_gi_versions azurerm_oracle_gi_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/oracle_gi_versions azurerm_oracle_gi_versions} Data Source.
 func NewDataAzurermOracleGiVersions_Override(d DataAzurermOracleGiVersions, scope constructs.Construct, id *string, config *DataAzurermOracleGiVersionsConfig) {
 	_init_.Initialize()
 

@@ -455,6 +455,14 @@ func (j *jsiiProxy_SearchService) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_SearchService) validateSetNetworkRuleBypassOptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SearchService) validateSetPartitionCountParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

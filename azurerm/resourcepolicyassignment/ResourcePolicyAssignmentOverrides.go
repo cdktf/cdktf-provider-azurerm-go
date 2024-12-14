@@ -5,11 +5,11 @@ package resourcepolicyassignment
 
 
 type ResourcePolicyAssignmentOverrides struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/resource_policy_assignment#value ResourcePolicyAssignment#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/resource_policy_assignment#value ResourcePolicyAssignment#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 	// selectors block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/resource_policy_assignment#selectors ResourcePolicyAssignment#selectors}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/resource_policy_assignment#selectors ResourcePolicyAssignment#selectors}
 	Selectors interface{} `field:"optional" json:"selectors" yaml:"selectors"`
 }
 

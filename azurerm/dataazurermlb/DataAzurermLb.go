@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/data-sources/lb azurerm_lb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/lb azurerm_lb}.
 type DataAzurermLb interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_DataAzurermLb) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/data-sources/lb azurerm_lb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/lb azurerm_lb} Data Source.
 func NewDataAzurermLb(scope constructs.Construct, id *string, config *DataAzurermLbConfig) DataAzurermLb {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewDataAzurermLb(scope constructs.Construct, id *string, config *DataAzurer
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/data-sources/lb azurerm_lb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/lb azurerm_lb} Data Source.
 func NewDataAzurermLb_Override(d DataAzurermLb, scope constructs.Construct, id *string, config *DataAzurermLbConfig) {
 	_init_.Initialize()
 

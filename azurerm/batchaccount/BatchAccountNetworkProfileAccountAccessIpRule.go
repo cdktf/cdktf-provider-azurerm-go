@@ -5,9 +5,9 @@ package batchaccount
 
 
 type BatchAccountNetworkProfileAccountAccessIpRule struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/batch_account#ip_range BatchAccount#ip_range}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/batch_account#ip_range BatchAccount#ip_range}.
 	IpRange *string `field:"required" json:"ipRange" yaml:"ipRange"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/batch_account#action BatchAccount#action}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/batch_account#action BatchAccount#action}.
 	Action *string `field:"optional" json:"action" yaml:"action"`
 }
 

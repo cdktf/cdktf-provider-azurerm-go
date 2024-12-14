@@ -5,9 +5,9 @@ package springcloudgateway
 
 
 type SpringCloudGatewayLocalResponseCachePerRoute struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/spring_cloud_gateway#size SpringCloudGateway#size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/spring_cloud_gateway#size SpringCloudGateway#size}.
 	Size *string `field:"optional" json:"size" yaml:"size"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/spring_cloud_gateway#time_to_live SpringCloudGateway#time_to_live}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/spring_cloud_gateway#time_to_live SpringCloudGateway#time_to_live}.
 	TimeToLive *string `field:"optional" json:"timeToLive" yaml:"timeToLive"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/spring_cloud_application_live_view azurerm_spring_cloud_application_live_view}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/spring_cloud_application_live_view azurerm_spring_cloud_application_live_view}.
 type SpringCloudApplicationLiveView interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_SpringCloudApplicationLiveView) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/spring_cloud_application_live_view azurerm_spring_cloud_application_live_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/spring_cloud_application_live_view azurerm_spring_cloud_application_live_view} Resource.
 func NewSpringCloudApplicationLiveView(scope constructs.Construct, id *string, config *SpringCloudApplicationLiveViewConfig) SpringCloudApplicationLiveView {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewSpringCloudApplicationLiveView(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/resources/spring_cloud_application_live_view azurerm_spring_cloud_application_live_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/spring_cloud_application_live_view azurerm_spring_cloud_application_live_view} Resource.
 func NewSpringCloudApplicationLiveView_Override(s SpringCloudApplicationLiveView, scope constructs.Construct, id *string, config *SpringCloudApplicationLiveViewConfig) {
 	_init_.Initialize()
 

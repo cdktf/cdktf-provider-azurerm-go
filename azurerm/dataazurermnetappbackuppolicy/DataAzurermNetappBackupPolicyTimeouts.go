@@ -5,7 +5,7 @@ package dataazurermnetappbackuppolicy
 
 
 type DataAzurermNetappBackupPolicyTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.13.0/docs/data-sources/netapp_backup_policy#read DataAzurermNetappBackupPolicy#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/netapp_backup_policy#read DataAzurermNetappBackupPolicy#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 
