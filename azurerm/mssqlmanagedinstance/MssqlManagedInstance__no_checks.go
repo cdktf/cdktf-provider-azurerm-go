@@ -75,6 +75,10 @@ func (m *jsiiProxy_MssqlManagedInstance) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (m *jsiiProxy_MssqlManagedInstance) validatePutAzureActiveDirectoryAdministratorParameters(value *MssqlManagedInstanceAzureActiveDirectoryAdministrator) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlManagedInstance) validatePutIdentityParameters(value *MssqlManagedInstanceIdentity) error {
 	return nil
 }

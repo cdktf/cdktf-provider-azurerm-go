@@ -5,7 +5,7 @@ package dataazurermpolicyassignment
 
 
 type DataAzurermPolicyAssignmentTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/policy_assignment#read DataAzurermPolicyAssignment#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/policy_assignment#read DataAzurermPolicyAssignment#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

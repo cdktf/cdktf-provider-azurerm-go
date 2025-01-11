@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance}.
 type MssqlManagedInstance interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -21,6 +21,8 @@ type MssqlManagedInstance interface {
 	AdministratorLoginPassword() *string
 	SetAdministratorLoginPassword(val *string)
 	AdministratorLoginPasswordInput() *string
+	AzureActiveDirectoryAdministrator() MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference
+	AzureActiveDirectoryAdministratorInput() *MssqlManagedInstanceAzureActiveDirectoryAdministrator
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Collation() *string
@@ -176,8 +178,12 @@ type MssqlManagedInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAzureActiveDirectoryAdministrator(value *MssqlManagedInstanceAzureActiveDirectoryAdministrator)
 	PutIdentity(value *MssqlManagedInstanceIdentity)
 	PutTimeouts(value *MssqlManagedInstanceTimeouts)
+	ResetAdministratorLogin()
+	ResetAdministratorLoginPassword()
+	ResetAzureActiveDirectoryAdministrator()
 	ResetCollation()
 	ResetDnsZonePartnerId()
 	ResetId()
@@ -248,6 +254,26 @@ func (j *jsiiProxy_MssqlManagedInstance) AdministratorLoginPasswordInput() *stri
 	_jsii_.Get(
 		j,
 		"administratorLoginPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlManagedInstance) AzureActiveDirectoryAdministrator() MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference {
+	var returns MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference
+	_jsii_.Get(
+		j,
+		"azureActiveDirectoryAdministrator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlManagedInstance) AzureActiveDirectoryAdministratorInput() *MssqlManagedInstanceAzureActiveDirectoryAdministrator {
+	var returns *MssqlManagedInstanceAzureActiveDirectoryAdministrator
+	_jsii_.Get(
+		j,
+		"azureActiveDirectoryAdministratorInput",
 		&returns,
 	)
 	return returns
@@ -874,7 +900,7 @@ func (j *jsiiProxy_MssqlManagedInstance) ZoneRedundantEnabledInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
 func NewMssqlManagedInstance(scope constructs.Construct, id *string, config *MssqlManagedInstanceConfig) MssqlManagedInstance {
 	_init_.Initialize()
 
@@ -892,7 +918,7 @@ func NewMssqlManagedInstance(scope constructs.Construct, id *string, config *Mss
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
 func NewMssqlManagedInstance_Override(m MssqlManagedInstance, scope constructs.Construct, id *string, config *MssqlManagedInstanceConfig) {
 	_init_.Initialize()
 
@@ -1566,6 +1592,17 @@ func (m *jsiiProxy_MssqlManagedInstance) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (m *jsiiProxy_MssqlManagedInstance) PutAzureActiveDirectoryAdministrator(value *MssqlManagedInstanceAzureActiveDirectoryAdministrator) {
+	if err := m.validatePutAzureActiveDirectoryAdministratorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putAzureActiveDirectoryAdministrator",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MssqlManagedInstance) PutIdentity(value *MssqlManagedInstanceIdentity) {
 	if err := m.validatePutIdentityParameters(value); err != nil {
 		panic(err)
@@ -1585,6 +1622,30 @@ func (m *jsiiProxy_MssqlManagedInstance) PutTimeouts(value *MssqlManagedInstance
 		m,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MssqlManagedInstance) ResetAdministratorLogin() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAdministratorLogin",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlManagedInstance) ResetAdministratorLoginPassword() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAdministratorLoginPassword",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlManagedInstance) ResetAzureActiveDirectoryAdministrator() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAzureActiveDirectoryAdministrator",
+		nil, // no parameters
 	)
 }
 

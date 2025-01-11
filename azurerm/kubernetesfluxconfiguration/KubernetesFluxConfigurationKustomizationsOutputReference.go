@@ -44,6 +44,8 @@ type KubernetesFluxConfigurationKustomizationsOutputReference interface {
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	PostBuild() KubernetesFluxConfigurationKustomizationsPostBuildOutputReference
+	PostBuildInput() *KubernetesFluxConfigurationKustomizationsPostBuild
 	RecreatingEnabled() interface{}
 	SetRecreatingEnabled(val interface{})
 	RecreatingEnabledInput() interface{}
@@ -64,6 +66,9 @@ type KubernetesFluxConfigurationKustomizationsOutputReference interface {
 	TimeoutInSeconds() *float64
 	SetTimeoutInSeconds(val *float64)
 	TimeoutInSecondsInput() *float64
+	Wait() interface{}
+	SetWait(val interface{})
+	WaitInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -88,13 +93,16 @@ type KubernetesFluxConfigurationKustomizationsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPostBuild(value *KubernetesFluxConfigurationKustomizationsPostBuild)
 	ResetDependsOn()
 	ResetGarbageCollectionEnabled()
 	ResetPath()
+	ResetPostBuild()
 	ResetRecreatingEnabled()
 	ResetRetryIntervalInSeconds()
 	ResetSyncIntervalInSeconds()
 	ResetTimeoutInSeconds()
+	ResetWait()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -240,6 +248,26 @@ func (j *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) Pat
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) PostBuild() KubernetesFluxConfigurationKustomizationsPostBuildOutputReference {
+	var returns KubernetesFluxConfigurationKustomizationsPostBuildOutputReference
+	_jsii_.Get(
+		j,
+		"postBuild",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) PostBuildInput() *KubernetesFluxConfigurationKustomizationsPostBuild {
+	var returns *KubernetesFluxConfigurationKustomizationsPostBuild
+	_jsii_.Get(
+		j,
+		"postBuildInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) RecreatingEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -335,6 +363,26 @@ func (j *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) Tim
 	_jsii_.Get(
 		j,
 		"timeoutInSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) Wait() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"wait",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) WaitInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"waitInput",
 		&returns,
 	)
 	return returns
@@ -507,6 +555,17 @@ func (j *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference)SetT
 	_jsii_.Set(
 		j,
 		"timeoutInSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference)SetWait(val interface{}) {
+	if err := j.validateSetWaitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"wait",
 		val,
 	)
 }
@@ -697,6 +756,17 @@ func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) Int
 	return returns
 }
 
+func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) PutPostBuild(value *KubernetesFluxConfigurationKustomizationsPostBuild) {
+	if err := k.validatePutPostBuildParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putPostBuild",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) ResetDependsOn() {
 	_jsii_.InvokeVoid(
 		k,
@@ -717,6 +787,14 @@ func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) Res
 	_jsii_.InvokeVoid(
 		k,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) ResetPostBuild() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetPostBuild",
 		nil, // no parameters
 	)
 }
@@ -749,6 +827,14 @@ func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) Res
 	_jsii_.InvokeVoid(
 		k,
 		"resetTimeoutInSeconds",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) ResetWait() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetWait",
 		nil, // no parameters
 	)
 }

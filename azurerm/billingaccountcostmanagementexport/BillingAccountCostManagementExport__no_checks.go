@@ -119,6 +119,10 @@ func (j *jsiiProxy_BillingAccountCostManagementExport) validateSetCountParameter
 	return nil
 }
 
+func (j *jsiiProxy_BillingAccountCostManagementExport) validateSetFileFormatParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BillingAccountCostManagementExport) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -97,6 +97,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMount", GoMethod: "PutMount"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkConfiguration", GoMethod: "PutNetworkConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putNodePlacement", GoMethod: "PutNodePlacement"},
+			_jsii_.MemberMethod{JsiiMethod: "putSecurityProfile", GoMethod: "PutSecurityProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "putStartTask", GoMethod: "PutStartTask"},
 			_jsii_.MemberMethod{JsiiMethod: "putStorageImageReference", GoMethod: "PutStorageImageReference"},
 			_jsii_.MemberMethod{JsiiMethod: "putTaskSchedulingPolicy", GoMethod: "PutTaskSchedulingPolicy"},
@@ -123,6 +124,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNodePlacement", GoMethod: "ResetNodePlacement"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOsDiskPlacement", GoMethod: "ResetOsDiskPlacement"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecurityProfile", GoMethod: "ResetSecurityProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStartTask", GoMethod: "ResetStartTask"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStopPendingResizeOperation", GoMethod: "ResetStopPendingResizeOperation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetNodeCommunicationMode", GoMethod: "ResetTargetNodeCommunicationMode"},
@@ -132,6 +134,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetWindows", GoMethod: "ResetWindows"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "securityProfile", GoGetter: "SecurityProfile"},
+			_jsii_.MemberProperty{JsiiProperty: "securityProfileInput", GoGetter: "SecurityProfileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "startTask", GoGetter: "StartTask"},
 			_jsii_.MemberProperty{JsiiProperty: "startTaskInput", GoGetter: "StartTaskInput"},
 			_jsii_.MemberProperty{JsiiProperty: "stopPendingResizeOperation", GoGetter: "StopPendingResizeOperation"},
@@ -1273,6 +1277,54 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BatchPoolNodePlacementOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.batchPool.BatchPoolSecurityProfile",
+		reflect.TypeOf((*BatchPoolSecurityProfile)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.batchPool.BatchPoolSecurityProfileOutputReference",
+		reflect.TypeOf((*BatchPoolSecurityProfileOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hostEncryptionEnabled", GoGetter: "HostEncryptionEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "hostEncryptionEnabledInput", GoGetter: "HostEncryptionEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHostEncryptionEnabled", GoMethod: "ResetHostEncryptionEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecureBootEnabled", GoMethod: "ResetSecureBootEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecurityType", GoMethod: "ResetSecurityType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVtpmEnabled", GoMethod: "ResetVtpmEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "secureBootEnabled", GoGetter: "SecureBootEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "secureBootEnabledInput", GoGetter: "SecureBootEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "securityType", GoGetter: "SecurityType"},
+			_jsii_.MemberProperty{JsiiProperty: "securityTypeInput", GoGetter: "SecurityTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "vtpmEnabled", GoGetter: "VtpmEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "vtpmEnabledInput", GoGetter: "VtpmEnabledInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BatchPoolSecurityProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -147,6 +147,18 @@ func (j *jsiiProxy_StaticWebApp) validateSetPublicNetworkAccessEnabledParameters
 	return nil
 }
 
+func (j *jsiiProxy_StaticWebApp) validateSetRepositoryBranchParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_StaticWebApp) validateSetRepositoryTokenParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_StaticWebApp) validateSetRepositoryUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StaticWebApp) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }

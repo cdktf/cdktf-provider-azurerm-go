@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/batch_pool azurerm_batch_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/batch_pool azurerm_batch_pool}.
 type BatchPool interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -110,6 +110,8 @@ type BatchPool interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	SecurityProfile() BatchPoolSecurityProfileOutputReference
+	SecurityProfileInput() *BatchPoolSecurityProfile
 	StartTask() BatchPoolStartTaskOutputReference
 	StartTaskInput() *BatchPoolStartTask
 	StopPendingResizeOperation() interface{}
@@ -191,6 +193,7 @@ type BatchPool interface {
 	PutMount(value interface{})
 	PutNetworkConfiguration(value *BatchPoolNetworkConfiguration)
 	PutNodePlacement(value interface{})
+	PutSecurityProfile(value *BatchPoolSecurityProfile)
 	PutStartTask(value *BatchPoolStartTask)
 	PutStorageImageReference(value *BatchPoolStorageImageReference)
 	PutTaskSchedulingPolicy(value interface{})
@@ -218,6 +221,7 @@ type BatchPool interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSecurityProfile()
 	ResetStartTask()
 	ResetStopPendingResizeOperation()
 	ResetTargetNodeCommunicationMode()
@@ -813,6 +817,26 @@ func (j *jsiiProxy_BatchPool) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BatchPool) SecurityProfile() BatchPoolSecurityProfileOutputReference {
+	var returns BatchPoolSecurityProfileOutputReference
+	_jsii_.Get(
+		j,
+		"securityProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchPool) SecurityProfileInput() *BatchPoolSecurityProfile {
+	var returns *BatchPoolSecurityProfile
+	_jsii_.Get(
+		j,
+		"securityProfileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BatchPool) StartTask() BatchPoolStartTaskOutputReference {
 	var returns BatchPoolStartTaskOutputReference
 	_jsii_.Get(
@@ -1024,7 +1048,7 @@ func (j *jsiiProxy_BatchPool) WindowsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/batch_pool azurerm_batch_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/batch_pool azurerm_batch_pool} Resource.
 func NewBatchPool(scope constructs.Construct, id *string, config *BatchPoolConfig) BatchPool {
 	_init_.Initialize()
 
@@ -1042,7 +1066,7 @@ func NewBatchPool(scope constructs.Construct, id *string, config *BatchPoolConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/batch_pool azurerm_batch_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/batch_pool azurerm_batch_pool} Resource.
 func NewBatchPool_Override(b BatchPool, scope constructs.Construct, id *string, config *BatchPoolConfig) {
 	_init_.Initialize()
 
@@ -1749,6 +1773,17 @@ func (b *jsiiProxy_BatchPool) PutNodePlacement(value interface{}) {
 	)
 }
 
+func (b *jsiiProxy_BatchPool) PutSecurityProfile(value *BatchPoolSecurityProfile) {
+	if err := b.validatePutSecurityProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putSecurityProfile",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BatchPool) PutStartTask(value *BatchPoolStartTask) {
 	if err := b.validatePutStartTaskParameters(value); err != nil {
 		panic(err)
@@ -1963,6 +1998,14 @@ func (b *jsiiProxy_BatchPool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchPool) ResetSecurityProfile() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSecurityProfile",
 		nil, // no parameters
 	)
 }

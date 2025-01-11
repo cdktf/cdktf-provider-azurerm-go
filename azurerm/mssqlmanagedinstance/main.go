@@ -20,6 +20,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "administratorLoginInput", GoGetter: "AdministratorLoginInput"},
 			_jsii_.MemberProperty{JsiiProperty: "administratorLoginPassword", GoGetter: "AdministratorLoginPassword"},
 			_jsii_.MemberProperty{JsiiProperty: "administratorLoginPasswordInput", GoGetter: "AdministratorLoginPasswordInput"},
+			_jsii_.MemberProperty{JsiiProperty: "azureActiveDirectoryAdministrator", GoGetter: "AzureActiveDirectoryAdministrator"},
+			_jsii_.MemberProperty{JsiiProperty: "azureActiveDirectoryAdministratorInput", GoGetter: "AzureActiveDirectoryAdministratorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "collation", GoGetter: "Collation"},
 			_jsii_.MemberProperty{JsiiProperty: "collationInput", GoGetter: "CollationInput"},
@@ -72,9 +74,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "proxyOverrideInput", GoGetter: "ProxyOverrideInput"},
 			_jsii_.MemberProperty{JsiiProperty: "publicDataEndpointEnabled", GoGetter: "PublicDataEndpointEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "publicDataEndpointEnabledInput", GoGetter: "PublicDataEndpointEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAzureActiveDirectoryAdministrator", GoMethod: "PutAzureActiveDirectoryAdministrator"},
 			_jsii_.MemberMethod{JsiiMethod: "putIdentity", GoMethod: "PutIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdministratorLogin", GoMethod: "ResetAdministratorLogin"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdministratorLoginPassword", GoMethod: "ResetAdministratorLoginPassword"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAzureActiveDirectoryAdministrator", GoMethod: "ResetAzureActiveDirectoryAdministrator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCollation", GoMethod: "ResetCollation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsZonePartnerId", GoMethod: "ResetDnsZonePartnerId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -125,6 +131,54 @@ func init() {
 		func() interface{} {
 			j := jsiiProxy_MssqlManagedInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator",
+		reflect.TypeOf((*MssqlManagedInstanceAzureActiveDirectoryAdministrator)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference",
+		reflect.TypeOf((*MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "azureadAuthenticationOnlyEnabled", GoGetter: "AzureadAuthenticationOnlyEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "azureadAuthenticationOnlyEnabledInput", GoGetter: "AzureadAuthenticationOnlyEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "loginUsername", GoGetter: "LoginUsername"},
+			_jsii_.MemberProperty{JsiiProperty: "loginUsernameInput", GoGetter: "LoginUsernameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "objectId", GoGetter: "ObjectId"},
+			_jsii_.MemberProperty{JsiiProperty: "objectIdInput", GoGetter: "ObjectIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "principalType", GoGetter: "PrincipalType"},
+			_jsii_.MemberProperty{JsiiProperty: "principalTypeInput", GoGetter: "PrincipalTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAzureadAuthenticationOnlyEnabled", GoMethod: "ResetAzureadAuthenticationOnlyEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTenantId", GoMethod: "ResetTenantId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "tenantId", GoGetter: "TenantId"},
+			_jsii_.MemberProperty{JsiiProperty: "tenantIdInput", GoGetter: "TenantIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)

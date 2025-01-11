@@ -115,6 +115,10 @@ func (j *jsiiProxy_SubscriptionCostManagementExport) validateSetCountParameters(
 	return nil
 }
 
+func (j *jsiiProxy_SubscriptionCostManagementExport) validateSetFileFormatParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SubscriptionCostManagementExport) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/billing_account_cost_management_export azurerm_billing_account_cost_management_export}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/billing_account_cost_management_export azurerm_billing_account_cost_management_export}.
 type BillingAccountCostManagementExport interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -41,6 +41,9 @@ type BillingAccountCostManagementExport interface {
 	ExportDataOptionsInput() *BillingAccountCostManagementExportExportDataOptions
 	ExportDataStorageLocation() BillingAccountCostManagementExportExportDataStorageLocationOutputReference
 	ExportDataStorageLocationInput() *BillingAccountCostManagementExportExportDataStorageLocation
+	FileFormat() *string
+	SetFileFormat(val *string)
+	FileFormatInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -135,6 +138,7 @@ type BillingAccountCostManagementExport interface {
 	PutExportDataStorageLocation(value *BillingAccountCostManagementExportExportDataStorageLocation)
 	PutTimeouts(value *BillingAccountCostManagementExportTimeouts)
 	ResetActive()
+	ResetFileFormat()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -283,6 +287,26 @@ func (j *jsiiProxy_BillingAccountCostManagementExport) ExportDataStorageLocation
 	_jsii_.Get(
 		j,
 		"exportDataStorageLocationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BillingAccountCostManagementExport) FileFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BillingAccountCostManagementExport) FileFormatInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileFormatInput",
 		&returns,
 	)
 	return returns
@@ -519,7 +543,7 @@ func (j *jsiiProxy_BillingAccountCostManagementExport) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/billing_account_cost_management_export azurerm_billing_account_cost_management_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/billing_account_cost_management_export azurerm_billing_account_cost_management_export} Resource.
 func NewBillingAccountCostManagementExport(scope constructs.Construct, id *string, config *BillingAccountCostManagementExportConfig) BillingAccountCostManagementExport {
 	_init_.Initialize()
 
@@ -537,7 +561,7 @@ func NewBillingAccountCostManagementExport(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/billing_account_cost_management_export azurerm_billing_account_cost_management_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/billing_account_cost_management_export azurerm_billing_account_cost_management_export} Resource.
 func NewBillingAccountCostManagementExport_Override(b BillingAccountCostManagementExport, scope constructs.Construct, id *string, config *BillingAccountCostManagementExportConfig) {
 	_init_.Initialize()
 
@@ -596,6 +620,17 @@ func (j *jsiiProxy_BillingAccountCostManagementExport)SetDependsOn(val *[]*strin
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BillingAccountCostManagementExport)SetFileFormat(val *string) {
+	if err := j.validateSetFileFormatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fileFormat",
 		val,
 	)
 }
@@ -1083,6 +1118,14 @@ func (b *jsiiProxy_BillingAccountCostManagementExport) ResetActive() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetActive",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BillingAccountCostManagementExport) ResetFileFormat() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetFileFormat",
 		nil, // no parameters
 	)
 }

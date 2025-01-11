@@ -114,6 +114,17 @@ func (d *jsiiProxy_DataAzurermCdnFrontdoorProfile) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (d *jsiiProxy_DataAzurermCdnFrontdoorProfile) validatePutIdentityParameters(value *DataAzurermCdnFrontdoorProfileIdentity) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermCdnFrontdoorProfile) validatePutTimeoutsParameters(value *DataAzurermCdnFrontdoorProfileTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

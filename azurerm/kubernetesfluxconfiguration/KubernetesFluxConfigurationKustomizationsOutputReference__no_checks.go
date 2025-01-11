@@ -47,6 +47,10 @@ func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) val
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) validatePutPostBuildParameters(value *KubernetesFluxConfigurationKustomizationsPostBuild) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (j *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) val
 }
 
 func (j *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) validateSetTimeoutInSecondsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesFluxConfigurationKustomizationsOutputReference) validateSetWaitParameters(val interface{}) error {
 	return nil
 }
 

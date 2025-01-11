@@ -41,6 +41,9 @@ type SiteRecoveryReplicatedVmNetworkInterfaceOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	RecoveryLoadBalancerBackendAddressPoolIds() *[]*string
+	SetRecoveryLoadBalancerBackendAddressPoolIds(val *[]*string)
+	RecoveryLoadBalancerBackendAddressPoolIdsInput() *[]*string
 	RecoveryPublicIpAddressId() *string
 	SetRecoveryPublicIpAddressId(val *string)
 	RecoveryPublicIpAddressIdInput() *string
@@ -88,6 +91,7 @@ type SiteRecoveryReplicatedVmNetworkInterfaceOutputReference interface {
 	ResetFailoverTestPublicIpAddressId()
 	ResetFailoverTestStaticIp()
 	ResetFailoverTestSubnetName()
+	ResetRecoveryLoadBalancerBackendAddressPoolIds()
 	ResetRecoveryPublicIpAddressId()
 	ResetSourceNetworkInterfaceId()
 	ResetTargetStaticIp()
@@ -212,6 +216,26 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) RecoveryLoadBalancerBackendAddressPoolIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"recoveryLoadBalancerBackendAddressPoolIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) RecoveryLoadBalancerBackendAddressPoolIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"recoveryLoadBalancerBackendAddressPoolIdsInput",
 		&returns,
 	)
 	return returns
@@ -407,6 +431,17 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference)SetIn
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference)SetRecoveryLoadBalancerBackendAddressPoolIds(val *[]*string) {
+	if err := j.validateSetRecoveryLoadBalancerBackendAddressPoolIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"recoveryLoadBalancerBackendAddressPoolIds",
 		val,
 	)
 }
@@ -683,6 +718,14 @@ func (s *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) Rese
 	_jsii_.InvokeVoid(
 		s,
 		"resetFailoverTestSubnetName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) ResetRecoveryLoadBalancerBackendAddressPoolIds() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRecoveryLoadBalancerBackendAddressPoolIds",
 		nil, // no parameters
 	)
 }

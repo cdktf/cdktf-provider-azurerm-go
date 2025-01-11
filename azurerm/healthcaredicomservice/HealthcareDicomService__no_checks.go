@@ -75,7 +75,15 @@ func (h *jsiiProxy_HealthcareDicomService) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareDicomService) validatePutCorsParameters(value *HealthcareDicomServiceCors) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareDicomService) validatePutIdentityParameters(value *HealthcareDicomServiceIdentity) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareDicomService) validatePutStorageParameters(value *HealthcareDicomServiceStorage) error {
 	return nil
 }
 
@@ -104,6 +112,14 @@ func (j *jsiiProxy_HealthcareDicomService) validateSetConnectionParameters(val i
 }
 
 func (j *jsiiProxy_HealthcareDicomService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_HealthcareDicomService) validateSetDataPartitionsEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_HealthcareDicomService) validateSetEncryptionKeyUrlParameters(val *string) error {
 	return nil
 }
 

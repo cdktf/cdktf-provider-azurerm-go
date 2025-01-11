@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/virtual_network azurerm_virtual_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/virtual_network azurerm_virtual_network}.
 type VirtualNetwork interface {
 	cdktf.TerraformResource
 	AddressSpace() *[]*string
@@ -74,6 +74,9 @@ type VirtualNetwork interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PrivateEndpointVnetPolicies() *string
+	SetPrivateEndpointVnetPolicies(val *string)
+	PrivateEndpointVnetPoliciesInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -157,6 +160,7 @@ type VirtualNetwork interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrivateEndpointVnetPolicies()
 	ResetSubnet()
 	ResetTags()
 	ResetTimeouts()
@@ -488,6 +492,26 @@ func (j *jsiiProxy_VirtualNetwork) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_VirtualNetwork) PrivateEndpointVnetPolicies() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateEndpointVnetPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetwork) PrivateEndpointVnetPoliciesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateEndpointVnetPoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualNetwork) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -629,7 +653,7 @@ func (j *jsiiProxy_VirtualNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
 func NewVirtualNetwork(scope constructs.Construct, id *string, config *VirtualNetworkConfig) VirtualNetwork {
 	_init_.Initialize()
 
@@ -647,7 +671,7 @@ func NewVirtualNetwork(scope constructs.Construct, id *string, config *VirtualNe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
 func NewVirtualNetwork_Override(v VirtualNetwork, scope constructs.Construct, id *string, config *VirtualNetworkConfig) {
 	_init_.Initialize()
 
@@ -791,6 +815,17 @@ func (j *jsiiProxy_VirtualNetwork)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualNetwork)SetPrivateEndpointVnetPolicies(val *string) {
+	if err := j.validateSetPrivateEndpointVnetPoliciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateEndpointVnetPolicies",
 		val,
 	)
 }
@@ -1293,6 +1328,14 @@ func (v *jsiiProxy_VirtualNetwork) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetwork) ResetPrivateEndpointVnetPolicies() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPrivateEndpointVnetPolicies",
 		nil, // no parameters
 	)
 }

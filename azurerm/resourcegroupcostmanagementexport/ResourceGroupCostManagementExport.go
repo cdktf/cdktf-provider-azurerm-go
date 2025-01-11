@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/resource_group_cost_management_export azurerm_resource_group_cost_management_export}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/resource_group_cost_management_export azurerm_resource_group_cost_management_export}.
 type ResourceGroupCostManagementExport interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -38,6 +38,9 @@ type ResourceGroupCostManagementExport interface {
 	ExportDataOptionsInput() *ResourceGroupCostManagementExportExportDataOptions
 	ExportDataStorageLocation() ResourceGroupCostManagementExportExportDataStorageLocationOutputReference
 	ExportDataStorageLocationInput() *ResourceGroupCostManagementExportExportDataStorageLocation
+	FileFormat() *string
+	SetFileFormat(val *string)
+	FileFormatInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -135,6 +138,7 @@ type ResourceGroupCostManagementExport interface {
 	PutExportDataStorageLocation(value *ResourceGroupCostManagementExportExportDataStorageLocation)
 	PutTimeouts(value *ResourceGroupCostManagementExportTimeouts)
 	ResetActive()
+	ResetFileFormat()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -263,6 +267,26 @@ func (j *jsiiProxy_ResourceGroupCostManagementExport) ExportDataStorageLocationI
 	_jsii_.Get(
 		j,
 		"exportDataStorageLocationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ResourceGroupCostManagementExport) FileFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ResourceGroupCostManagementExport) FileFormatInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileFormatInput",
 		&returns,
 	)
 	return returns
@@ -519,7 +543,7 @@ func (j *jsiiProxy_ResourceGroupCostManagementExport) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/resource_group_cost_management_export azurerm_resource_group_cost_management_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/resource_group_cost_management_export azurerm_resource_group_cost_management_export} Resource.
 func NewResourceGroupCostManagementExport(scope constructs.Construct, id *string, config *ResourceGroupCostManagementExportConfig) ResourceGroupCostManagementExport {
 	_init_.Initialize()
 
@@ -537,7 +561,7 @@ func NewResourceGroupCostManagementExport(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/resource_group_cost_management_export azurerm_resource_group_cost_management_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/resource_group_cost_management_export azurerm_resource_group_cost_management_export} Resource.
 func NewResourceGroupCostManagementExport_Override(r ResourceGroupCostManagementExport, scope constructs.Construct, id *string, config *ResourceGroupCostManagementExportConfig) {
 	_init_.Initialize()
 
@@ -585,6 +609,17 @@ func (j *jsiiProxy_ResourceGroupCostManagementExport)SetDependsOn(val *[]*string
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ResourceGroupCostManagementExport)SetFileFormat(val *string) {
+	if err := j.validateSetFileFormatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fileFormat",
 		val,
 	)
 }
@@ -1083,6 +1118,14 @@ func (r *jsiiProxy_ResourceGroupCostManagementExport) ResetActive() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetActive",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ResourceGroupCostManagementExport) ResetFileFormat() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetFileFormat",
 		nil, // no parameters
 	)
 }

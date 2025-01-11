@@ -41,6 +41,7 @@ type LinuxVirtualMachineOsDiskOutputReference interface {
 	DiskSizeGbInput() *float64
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *LinuxVirtualMachineOsDisk
 	SetInternalValue(val *LinuxVirtualMachineOsDisk)
 	Name() *string
@@ -228,6 +229,16 @@ func (j *jsiiProxy_LinuxVirtualMachineOsDiskOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxVirtualMachineOsDiskOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

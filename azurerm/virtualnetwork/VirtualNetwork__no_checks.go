@@ -151,6 +151,10 @@ func (j *jsiiProxy_VirtualNetwork) validateSetNameParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_VirtualNetwork) validateSetPrivateEndpointVnetPoliciesParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualNetwork) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

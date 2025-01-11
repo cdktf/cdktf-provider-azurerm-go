@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAzurermCdnFrontdoorProfile) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (d *jsiiProxy_DataAzurermCdnFrontdoorProfile) validatePutIdentityParameters(value *DataAzurermCdnFrontdoorProfileIdentity) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurermCdnFrontdoorProfile) validatePutTimeoutsParameters(value *DataAzurermCdnFrontdoorProfileTimeouts) error {
 	return nil
 }

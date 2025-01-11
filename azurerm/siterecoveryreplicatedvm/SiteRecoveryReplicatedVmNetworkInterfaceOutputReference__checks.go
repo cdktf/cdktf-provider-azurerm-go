@@ -214,6 +214,14 @@ func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) validateSetRecoveryLoadBalancerBackendAddressPoolIdsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SiteRecoveryReplicatedVmNetworkInterfaceOutputReference) validateSetRecoveryPublicIpAddressIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

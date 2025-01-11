@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/static_web_app azurerm_static_web_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/static_web_app azurerm_static_web_app}.
 type StaticWebApp interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -82,6 +82,15 @@ type StaticWebApp interface {
 	PublicNetworkAccessEnabledInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	RepositoryBranch() *string
+	SetRepositoryBranch(val *string)
+	RepositoryBranchInput() *string
+	RepositoryToken() *string
+	SetRepositoryToken(val *string)
+	RepositoryTokenInput() *string
+	RepositoryUrl() *string
+	SetRepositoryUrl(val *string)
+	RepositoryUrlInput() *string
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
@@ -158,6 +167,9 @@ type StaticWebApp interface {
 	ResetOverrideLogicalId()
 	ResetPreviewEnvironmentsEnabled()
 	ResetPublicNetworkAccessEnabled()
+	ResetRepositoryBranch()
+	ResetRepositoryToken()
+	ResetRepositoryUrl()
 	ResetSkuSize()
 	ResetSkuTier()
 	ResetTags()
@@ -510,6 +522,66 @@ func (j *jsiiProxy_StaticWebApp) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StaticWebApp) RepositoryBranch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repositoryBranch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StaticWebApp) RepositoryBranchInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repositoryBranchInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StaticWebApp) RepositoryToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repositoryToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StaticWebApp) RepositoryTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repositoryTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StaticWebApp) RepositoryUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repositoryUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StaticWebApp) RepositoryUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repositoryUrlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StaticWebApp) ResourceGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -641,7 +713,7 @@ func (j *jsiiProxy_StaticWebApp) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/static_web_app azurerm_static_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/static_web_app azurerm_static_web_app} Resource.
 func NewStaticWebApp(scope constructs.Construct, id *string, config *StaticWebAppConfig) StaticWebApp {
 	_init_.Initialize()
 
@@ -659,7 +731,7 @@ func NewStaticWebApp(scope constructs.Construct, id *string, config *StaticWebAp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/static_web_app azurerm_static_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/static_web_app azurerm_static_web_app} Resource.
 func NewStaticWebApp_Override(s StaticWebApp, scope constructs.Construct, id *string, config *StaticWebAppConfig) {
 	_init_.Initialize()
 
@@ -811,6 +883,39 @@ func (j *jsiiProxy_StaticWebApp)SetPublicNetworkAccessEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"publicNetworkAccessEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StaticWebApp)SetRepositoryBranch(val *string) {
+	if err := j.validateSetRepositoryBranchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"repositoryBranch",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StaticWebApp)SetRepositoryToken(val *string) {
+	if err := j.validateSetRepositoryTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"repositoryToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StaticWebApp)SetRepositoryUrl(val *string) {
+	if err := j.validateSetRepositoryUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"repositoryUrl",
 		val,
 	)
 }
@@ -1305,6 +1410,30 @@ func (s *jsiiProxy_StaticWebApp) ResetPublicNetworkAccessEnabled() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPublicNetworkAccessEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StaticWebApp) ResetRepositoryBranch() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRepositoryBranch",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StaticWebApp) ResetRepositoryToken() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRepositoryToken",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StaticWebApp) ResetRepositoryUrl() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRepositoryUrl",
 		nil, // no parameters
 	)
 }

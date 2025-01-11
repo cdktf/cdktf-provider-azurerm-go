@@ -119,6 +119,10 @@ func (b *jsiiProxy_BatchPool) validatePutNodePlacementParameters(value interface
 	return nil
 }
 
+func (b *jsiiProxy_BatchPool) validatePutSecurityProfileParameters(value *BatchPoolSecurityProfile) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchPool) validatePutStartTaskParameters(value *BatchPoolStartTask) error {
 	return nil
 }

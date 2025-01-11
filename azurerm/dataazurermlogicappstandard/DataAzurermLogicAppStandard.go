@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard}.
 type DataAzurermLogicAppStandard interface {
 	cdktf.TerraformDataSource
 	AppServicePlanId() *string
@@ -623,7 +623,7 @@ func (j *jsiiProxy_DataAzurermLogicAppStandard) VirtualNetworkSubnetId() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard} Data Source.
 func NewDataAzurermLogicAppStandard(scope constructs.Construct, id *string, config *DataAzurermLogicAppStandardConfig) DataAzurermLogicAppStandard {
 	_init_.Initialize()
 
@@ -641,7 +641,7 @@ func NewDataAzurermLogicAppStandard(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/logic_app_standard azurerm_logic_app_standard} Data Source.
 func NewDataAzurermLogicAppStandard_Override(d DataAzurermLogicAppStandard, scope constructs.Construct, id *string, config *DataAzurermLogicAppStandardConfig) {
 	_init_.Initialize()
 

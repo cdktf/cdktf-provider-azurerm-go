@@ -75,6 +75,10 @@ func (c *jsiiProxy_CdnFrontdoorProfile) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (c *jsiiProxy_CdnFrontdoorProfile) validatePutIdentityParameters(value *CdnFrontdoorProfileIdentity) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorProfile) validatePutTimeoutsParameters(value *CdnFrontdoorProfileTimeouts) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/subscription_cost_management_export azurerm_subscription_cost_management_export}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/subscription_cost_management_export azurerm_subscription_cost_management_export}.
 type SubscriptionCostManagementExport interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -38,6 +38,9 @@ type SubscriptionCostManagementExport interface {
 	ExportDataOptionsInput() *SubscriptionCostManagementExportExportDataOptions
 	ExportDataStorageLocation() SubscriptionCostManagementExportExportDataStorageLocationOutputReference
 	ExportDataStorageLocationInput() *SubscriptionCostManagementExportExportDataStorageLocation
+	FileFormat() *string
+	SetFileFormat(val *string)
+	FileFormatInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -135,6 +138,7 @@ type SubscriptionCostManagementExport interface {
 	PutExportDataStorageLocation(value *SubscriptionCostManagementExportExportDataStorageLocation)
 	PutTimeouts(value *SubscriptionCostManagementExportTimeouts)
 	ResetActive()
+	ResetFileFormat()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -263,6 +267,26 @@ func (j *jsiiProxy_SubscriptionCostManagementExport) ExportDataStorageLocationIn
 	_jsii_.Get(
 		j,
 		"exportDataStorageLocationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SubscriptionCostManagementExport) FileFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SubscriptionCostManagementExport) FileFormatInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileFormatInput",
 		&returns,
 	)
 	return returns
@@ -519,7 +543,7 @@ func (j *jsiiProxy_SubscriptionCostManagementExport) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/subscription_cost_management_export azurerm_subscription_cost_management_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/subscription_cost_management_export azurerm_subscription_cost_management_export} Resource.
 func NewSubscriptionCostManagementExport(scope constructs.Construct, id *string, config *SubscriptionCostManagementExportConfig) SubscriptionCostManagementExport {
 	_init_.Initialize()
 
@@ -537,7 +561,7 @@ func NewSubscriptionCostManagementExport(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/subscription_cost_management_export azurerm_subscription_cost_management_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/subscription_cost_management_export azurerm_subscription_cost_management_export} Resource.
 func NewSubscriptionCostManagementExport_Override(s SubscriptionCostManagementExport, scope constructs.Construct, id *string, config *SubscriptionCostManagementExportConfig) {
 	_init_.Initialize()
 
@@ -585,6 +609,17 @@ func (j *jsiiProxy_SubscriptionCostManagementExport)SetDependsOn(val *[]*string)
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SubscriptionCostManagementExport)SetFileFormat(val *string) {
+	if err := j.validateSetFileFormatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fileFormat",
 		val,
 	)
 }
@@ -1083,6 +1118,14 @@ func (s *jsiiProxy_SubscriptionCostManagementExport) ResetActive() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetActive",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SubscriptionCostManagementExport) ResetFileFormat() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetFileFormat",
 		nil, // no parameters
 	)
 }

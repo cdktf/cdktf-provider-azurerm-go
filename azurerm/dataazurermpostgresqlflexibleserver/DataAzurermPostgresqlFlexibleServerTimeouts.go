@@ -5,7 +5,7 @@ package dataazurermpostgresqlflexibleserver
 
 
 type DataAzurermPostgresqlFlexibleServerTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/postgresql_flexible_server#read DataAzurermPostgresqlFlexibleServer#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/postgresql_flexible_server#read DataAzurermPostgresqlFlexibleServer#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

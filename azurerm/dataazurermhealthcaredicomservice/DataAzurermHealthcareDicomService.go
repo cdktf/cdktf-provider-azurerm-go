@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/healthcare_dicom_service azurerm_healthcare_dicom_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/healthcare_dicom_service azurerm_healthcare_dicom_service}.
 type DataAzurermHealthcareDicomService interface {
 	cdktf.TerraformDataSource
 	Authentication() DataAzurermHealthcareDicomServiceAuthenticationList
@@ -20,14 +20,17 @@ type DataAzurermHealthcareDicomService interface {
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Cors() DataAzurermHealthcareDicomServiceCorsList
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DataPartitionsEnabled() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionKeyUrl() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -58,6 +61,7 @@ type DataAzurermHealthcareDicomService interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ServiceUrl() *string
+	Storage() DataAzurermHealthcareDicomServiceStorageList
 	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -150,6 +154,16 @@ func (j *jsiiProxy_DataAzurermHealthcareDicomService) ConstructNodeMetadata() *m
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermHealthcareDicomService) Cors() DataAzurermHealthcareDicomServiceCorsList {
+	var returns DataAzurermHealthcareDicomServiceCorsList
+	_jsii_.Get(
+		j,
+		"cors",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermHealthcareDicomService) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -160,11 +174,31 @@ func (j *jsiiProxy_DataAzurermHealthcareDicomService) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermHealthcareDicomService) DataPartitionsEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"dataPartitionsEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermHealthcareDicomService) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermHealthcareDicomService) EncryptionKeyUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionKeyUrl",
 		&returns,
 	)
 	return returns
@@ -320,6 +354,16 @@ func (j *jsiiProxy_DataAzurermHealthcareDicomService) ServiceUrl() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermHealthcareDicomService) Storage() DataAzurermHealthcareDicomServiceStorageList {
+	var returns DataAzurermHealthcareDicomServiceStorageList
+	_jsii_.Get(
+		j,
+		"storage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermHealthcareDicomService) Tags() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
@@ -401,7 +445,7 @@ func (j *jsiiProxy_DataAzurermHealthcareDicomService) WorkspaceIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/healthcare_dicom_service azurerm_healthcare_dicom_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/healthcare_dicom_service azurerm_healthcare_dicom_service} Data Source.
 func NewDataAzurermHealthcareDicomService(scope constructs.Construct, id *string, config *DataAzurermHealthcareDicomServiceConfig) DataAzurermHealthcareDicomService {
 	_init_.Initialize()
 
@@ -419,7 +463,7 @@ func NewDataAzurermHealthcareDicomService(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/healthcare_dicom_service azurerm_healthcare_dicom_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/healthcare_dicom_service azurerm_healthcare_dicom_service} Data Source.
 func NewDataAzurermHealthcareDicomService_Override(d DataAzurermHealthcareDicomService, scope constructs.Construct, id *string, config *DataAzurermHealthcareDicomServiceConfig) {
 	_init_.Initialize()
 

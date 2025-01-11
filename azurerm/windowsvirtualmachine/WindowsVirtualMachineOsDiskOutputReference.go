@@ -41,6 +41,7 @@ type WindowsVirtualMachineOsDiskOutputReference interface {
 	DiskSizeGbInput() *float64
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *WindowsVirtualMachineOsDisk
 	SetInternalValue(val *WindowsVirtualMachineOsDisk)
 	Name() *string
@@ -228,6 +229,16 @@ func (j *jsiiProxy_WindowsVirtualMachineOsDiskOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsVirtualMachineOsDiskOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

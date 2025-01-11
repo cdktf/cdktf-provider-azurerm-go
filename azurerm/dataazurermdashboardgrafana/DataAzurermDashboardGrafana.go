@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/dashboard_grafana azurerm_dashboard_grafana}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/dashboard_grafana azurerm_dashboard_grafana}.
 type DataAzurermDashboardGrafana interface {
 	cdktf.TerraformDataSource
 	ApiKeyEnabled() cdktf.IResolvable
@@ -502,7 +502,7 @@ func (j *jsiiProxy_DataAzurermDashboardGrafana) ZoneRedundancyEnabled() cdktf.IR
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/dashboard_grafana azurerm_dashboard_grafana} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/dashboard_grafana azurerm_dashboard_grafana} Data Source.
 func NewDataAzurermDashboardGrafana(scope constructs.Construct, id *string, config *DataAzurermDashboardGrafanaConfig) DataAzurermDashboardGrafana {
 	_init_.Initialize()
 
@@ -520,7 +520,7 @@ func NewDataAzurermDashboardGrafana(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/dashboard_grafana azurerm_dashboard_grafana} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/dashboard_grafana azurerm_dashboard_grafana} Data Source.
 func NewDataAzurermDashboardGrafana_Override(d DataAzurermDashboardGrafana, scope constructs.Construct, id *string, config *DataAzurermDashboardGrafanaConfig) {
 	_init_.Initialize()
 

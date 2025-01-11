@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/static_web_app azurerm_static_web_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/static_web_app azurerm_static_web_app}.
 type DataAzurermStaticWebApp interface {
 	cdktf.TerraformDataSource
 	ApiKey() *string
@@ -62,6 +62,8 @@ type DataAzurermStaticWebApp interface {
 	PublicNetworkAccessEnabled() cdktf.IResolvable
 	// Experimental.
 	RawOverrides() interface{}
+	RepositoryBranch() *string
+	RepositoryUrl() *string
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
@@ -366,6 +368,26 @@ func (j *jsiiProxy_DataAzurermStaticWebApp) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermStaticWebApp) RepositoryBranch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repositoryBranch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermStaticWebApp) RepositoryUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repositoryUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermStaticWebApp) ResourceGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -467,7 +489,7 @@ func (j *jsiiProxy_DataAzurermStaticWebApp) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/static_web_app azurerm_static_web_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/static_web_app azurerm_static_web_app} Data Source.
 func NewDataAzurermStaticWebApp(scope constructs.Construct, id *string, config *DataAzurermStaticWebAppConfig) DataAzurermStaticWebApp {
 	_init_.Initialize()
 
@@ -485,7 +507,7 @@ func NewDataAzurermStaticWebApp(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/data-sources/static_web_app azurerm_static_web_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/static_web_app azurerm_static_web_app} Data Source.
 func NewDataAzurermStaticWebApp_Override(d DataAzurermStaticWebApp, scope constructs.Construct, id *string, config *DataAzurermStaticWebAppConfig) {
 	_init_.Initialize()
 

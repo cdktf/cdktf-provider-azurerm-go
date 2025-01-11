@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/healthcare_dicom_service azurerm_healthcare_dicom_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/healthcare_dicom_service azurerm_healthcare_dicom_service}.
 type HealthcareDicomService interface {
 	cdktf.TerraformResource
 	Authentication() HealthcareDicomServiceAuthenticationList
@@ -24,14 +24,22 @@ type HealthcareDicomService interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Cors() HealthcareDicomServiceCorsOutputReference
+	CorsInput() *HealthcareDicomServiceCors
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DataPartitionsEnabled() interface{}
+	SetDataPartitionsEnabled(val interface{})
+	DataPartitionsEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionKeyUrl() *string
+	SetEncryptionKeyUrl(val *string)
+	EncryptionKeyUrlInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -72,6 +80,8 @@ type HealthcareDicomService interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ServiceUrl() *string
+	Storage() HealthcareDicomServiceStorageOutputReference
+	StorageInput() *HealthcareDicomServiceStorage
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -129,14 +139,20 @@ type HealthcareDicomService interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCors(value *HealthcareDicomServiceCors)
 	PutIdentity(value *HealthcareDicomServiceIdentity)
+	PutStorage(value *HealthcareDicomServiceStorage)
 	PutTimeouts(value *HealthcareDicomServiceTimeouts)
+	ResetCors()
+	ResetDataPartitionsEnabled()
+	ResetEncryptionKeyUrl()
 	ResetId()
 	ResetIdentity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPublicNetworkAccessEnabled()
+	ResetStorage()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -197,6 +213,26 @@ func (j *jsiiProxy_HealthcareDicomService) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
+func (j *jsiiProxy_HealthcareDicomService) Cors() HealthcareDicomServiceCorsOutputReference {
+	var returns HealthcareDicomServiceCorsOutputReference
+	_jsii_.Get(
+		j,
+		"cors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareDicomService) CorsInput() *HealthcareDicomServiceCors {
+	var returns *HealthcareDicomServiceCors
+	_jsii_.Get(
+		j,
+		"corsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HealthcareDicomService) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -207,11 +243,51 @@ func (j *jsiiProxy_HealthcareDicomService) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_HealthcareDicomService) DataPartitionsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dataPartitionsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareDicomService) DataPartitionsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dataPartitionsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HealthcareDicomService) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareDicomService) EncryptionKeyUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionKeyUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareDicomService) EncryptionKeyUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionKeyUrlInput",
 		&returns,
 	)
 	return returns
@@ -417,6 +493,26 @@ func (j *jsiiProxy_HealthcareDicomService) ServiceUrl() *string {
 	return returns
 }
 
+func (j *jsiiProxy_HealthcareDicomService) Storage() HealthcareDicomServiceStorageOutputReference {
+	var returns HealthcareDicomServiceStorageOutputReference
+	_jsii_.Get(
+		j,
+		"storage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareDicomService) StorageInput() *HealthcareDicomServiceStorage {
+	var returns *HealthcareDicomServiceStorage
+	_jsii_.Get(
+		j,
+		"storageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HealthcareDicomService) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -508,7 +604,7 @@ func (j *jsiiProxy_HealthcareDicomService) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/healthcare_dicom_service azurerm_healthcare_dicom_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/healthcare_dicom_service azurerm_healthcare_dicom_service} Resource.
 func NewHealthcareDicomService(scope constructs.Construct, id *string, config *HealthcareDicomServiceConfig) HealthcareDicomService {
 	_init_.Initialize()
 
@@ -526,7 +622,7 @@ func NewHealthcareDicomService(scope constructs.Construct, id *string, config *H
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.14.0/docs/resources/healthcare_dicom_service azurerm_healthcare_dicom_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/healthcare_dicom_service azurerm_healthcare_dicom_service} Resource.
 func NewHealthcareDicomService_Override(h HealthcareDicomService, scope constructs.Construct, id *string, config *HealthcareDicomServiceConfig) {
 	_init_.Initialize()
 
@@ -559,10 +655,32 @@ func (j *jsiiProxy_HealthcareDicomService)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_HealthcareDicomService)SetDataPartitionsEnabled(val interface{}) {
+	if err := j.validateSetDataPartitionsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataPartitionsEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_HealthcareDicomService)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HealthcareDicomService)SetEncryptionKeyUrl(val *string) {
+	if err := j.validateSetEncryptionKeyUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encryptionKeyUrl",
 		val,
 	)
 }
@@ -1024,6 +1142,17 @@ func (h *jsiiProxy_HealthcareDicomService) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (h *jsiiProxy_HealthcareDicomService) PutCors(value *HealthcareDicomServiceCors) {
+	if err := h.validatePutCorsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putCors",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_HealthcareDicomService) PutIdentity(value *HealthcareDicomServiceIdentity) {
 	if err := h.validatePutIdentityParameters(value); err != nil {
 		panic(err)
@@ -1031,6 +1160,17 @@ func (h *jsiiProxy_HealthcareDicomService) PutIdentity(value *HealthcareDicomSer
 	_jsii_.InvokeVoid(
 		h,
 		"putIdentity",
+		[]interface{}{value},
+	)
+}
+
+func (h *jsiiProxy_HealthcareDicomService) PutStorage(value *HealthcareDicomServiceStorage) {
+	if err := h.validatePutStorageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putStorage",
 		[]interface{}{value},
 	)
 }
@@ -1043,6 +1183,30 @@ func (h *jsiiProxy_HealthcareDicomService) PutTimeouts(value *HealthcareDicomSer
 		h,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (h *jsiiProxy_HealthcareDicomService) ResetCors() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetCors",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HealthcareDicomService) ResetDataPartitionsEnabled() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetDataPartitionsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HealthcareDicomService) ResetEncryptionKeyUrl() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetEncryptionKeyUrl",
+		nil, // no parameters
 	)
 }
 
@@ -1074,6 +1238,14 @@ func (h *jsiiProxy_HealthcareDicomService) ResetPublicNetworkAccessEnabled() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetPublicNetworkAccessEnabled",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HealthcareDicomService) ResetStorage() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetStorage",
 		nil, // no parameters
 	)
 }
