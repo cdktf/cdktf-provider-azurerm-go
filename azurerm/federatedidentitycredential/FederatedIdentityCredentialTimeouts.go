@@ -5,13 +5,13 @@ package federatedidentitycredential
 
 
 type FederatedIdentityCredentialTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/federated_identity_credential#create FederatedIdentityCredential#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/federated_identity_credential#create FederatedIdentityCredential#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/federated_identity_credential#delete FederatedIdentityCredential#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/federated_identity_credential#delete FederatedIdentityCredential#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/federated_identity_credential#read FederatedIdentityCredential#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/federated_identity_credential#read FederatedIdentityCredential#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/federated_identity_credential#update FederatedIdentityCredential#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/federated_identity_credential#update FederatedIdentityCredential#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

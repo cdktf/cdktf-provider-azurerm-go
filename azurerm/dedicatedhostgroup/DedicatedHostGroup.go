@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/dedicated_host_group azurerm_dedicated_host_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/dedicated_host_group azurerm_dedicated_host_group}.
 type DedicatedHostGroup interface {
 	cdktf.TerraformResource
 	AutomaticPlacementEnabled() interface{}
@@ -498,7 +498,7 @@ func (j *jsiiProxy_DedicatedHostGroup) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/dedicated_host_group azurerm_dedicated_host_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/dedicated_host_group azurerm_dedicated_host_group} Resource.
 func NewDedicatedHostGroup(scope constructs.Construct, id *string, config *DedicatedHostGroupConfig) DedicatedHostGroup {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewDedicatedHostGroup(scope constructs.Construct, id *string, config *Dedic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/dedicated_host_group azurerm_dedicated_host_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/dedicated_host_group azurerm_dedicated_host_group} Resource.
 func NewDedicatedHostGroup_Override(d DedicatedHostGroup, scope constructs.Construct, id *string, config *DedicatedHostGroupConfig) {
 	_init_.Initialize()
 

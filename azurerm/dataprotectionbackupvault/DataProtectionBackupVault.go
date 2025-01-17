@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault}.
 type DataProtectionBackupVault interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -50,6 +50,9 @@ type DataProtectionBackupVault interface {
 	Identity() DataProtectionBackupVaultIdentityOutputReference
 	IdentityInput() *DataProtectionBackupVaultIdentity
 	IdInput() *string
+	Immutability() *string
+	SetImmutability(val *string)
+	ImmutabilityInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -143,6 +146,7 @@ type DataProtectionBackupVault interface {
 	ResetCrossRegionRestoreEnabled()
 	ResetId()
 	ResetIdentity()
+	ResetImmutability()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -323,6 +327,26 @@ func (j *jsiiProxy_DataProtectionBackupVault) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupVault) Immutability() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"immutability",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataProtectionBackupVault) ImmutabilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"immutabilityInput",
 		&returns,
 	)
 	return returns
@@ -569,7 +593,7 @@ func (j *jsiiProxy_DataProtectionBackupVault) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault} Resource.
 func NewDataProtectionBackupVault(scope constructs.Construct, id *string, config *DataProtectionBackupVaultConfig) DataProtectionBackupVault {
 	_init_.Initialize()
 
@@ -587,7 +611,7 @@ func NewDataProtectionBackupVault(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/data_protection_backup_vault azurerm_data_protection_backup_vault} Resource.
 func NewDataProtectionBackupVault_Override(d DataProtectionBackupVault, scope constructs.Construct, id *string, config *DataProtectionBackupVaultConfig) {
 	_init_.Initialize()
 
@@ -665,6 +689,17 @@ func (j *jsiiProxy_DataProtectionBackupVault)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataProtectionBackupVault)SetImmutability(val *string) {
+	if err := j.validateSetImmutabilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"immutability",
 		val,
 	)
 }
@@ -1171,6 +1206,14 @@ func (d *jsiiProxy_DataProtectionBackupVault) ResetIdentity() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataProtectionBackupVault) ResetImmutability() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetImmutability",
 		nil, // no parameters
 	)
 }

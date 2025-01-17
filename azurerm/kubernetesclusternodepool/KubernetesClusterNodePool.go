@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool}.
 type KubernetesClusterNodePool interface {
 	cdktf.TerraformResource
 	AutoScalingEnabled() interface{}
@@ -157,6 +157,9 @@ type KubernetesClusterNodePool interface {
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
+	TemporaryNameForRotation() *string
+	SetTemporaryNameForRotation(val *string)
+	TemporaryNameForRotationInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -269,6 +272,7 @@ type KubernetesClusterNodePool interface {
 	ResetSnapshotId()
 	ResetSpotMaxPrice()
 	ResetTags()
+	ResetTemporaryNameForRotation()
 	ResetTimeouts()
 	ResetUltraSsdEnabled()
 	ResetUpgradeSettings()
@@ -1124,6 +1128,26 @@ func (j *jsiiProxy_KubernetesClusterNodePool) TagsInput() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesClusterNodePool) TemporaryNameForRotation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"temporaryNameForRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool) TemporaryNameForRotationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"temporaryNameForRotationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesClusterNodePool) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -1315,7 +1339,7 @@ func (j *jsiiProxy_KubernetesClusterNodePool) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Resource.
 func NewKubernetesClusterNodePool(scope constructs.Construct, id *string, config *KubernetesClusterNodePoolConfig) KubernetesClusterNodePool {
 	_init_.Initialize()
 
@@ -1333,7 +1357,7 @@ func NewKubernetesClusterNodePool(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/kubernetes_cluster_node_pool azurerm_kubernetes_cluster_node_pool} Resource.
 func NewKubernetesClusterNodePool_Override(k KubernetesClusterNodePool, scope constructs.Construct, id *string, config *KubernetesClusterNodePoolConfig) {
 	_init_.Initialize()
 
@@ -1760,6 +1784,17 @@ func (j *jsiiProxy_KubernetesClusterNodePool)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesClusterNodePool)SetTemporaryNameForRotation(val *string) {
+	if err := j.validateSetTemporaryNameForRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"temporaryNameForRotation",
 		val,
 	)
 }
@@ -2506,6 +2541,14 @@ func (k *jsiiProxy_KubernetesClusterNodePool) ResetTags() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterNodePool) ResetTemporaryNameForRotation() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetTemporaryNameForRotation",
 		nil, // no parameters
 	)
 }

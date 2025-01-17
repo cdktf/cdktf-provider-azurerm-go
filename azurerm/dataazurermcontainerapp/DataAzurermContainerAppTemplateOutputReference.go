@@ -41,6 +41,7 @@ type DataAzurermContainerAppTemplateOutputReference interface {
 	MinReplicas() *float64
 	RevisionSuffix() *string
 	TcpScaleRule() DataAzurermContainerAppTemplateTcpScaleRuleList
+	TerminationGracePeriodSeconds() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -224,6 +225,16 @@ func (j *jsiiProxy_DataAzurermContainerAppTemplateOutputReference) TcpScaleRule(
 	_jsii_.Get(
 		j,
 		"tcpScaleRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermContainerAppTemplateOutputReference) TerminationGracePeriodSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"terminationGracePeriodSeconds",
 		&returns,
 	)
 	return returns

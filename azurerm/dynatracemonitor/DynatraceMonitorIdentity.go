@@ -5,7 +5,7 @@ package dynatracemonitor
 
 
 type DynatraceMonitorIdentity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/dynatrace_monitor#type DynatraceMonitor#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/dynatrace_monitor#type DynatraceMonitor#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

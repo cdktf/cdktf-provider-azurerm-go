@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/attestation_provider azurerm_attestation_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/data-sources/attestation_provider azurerm_attestation_provider}.
 type DataAzurermAttestationProvider interface {
 	cdktf.TerraformDataSource
 	AttestationUri() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_DataAzurermAttestationProvider) TrustModel() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/attestation_provider azurerm_attestation_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/data-sources/attestation_provider azurerm_attestation_provider} Data Source.
 func NewDataAzurermAttestationProvider(scope constructs.Construct, id *string, config *DataAzurermAttestationProviderConfig) DataAzurermAttestationProvider {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewDataAzurermAttestationProvider(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/attestation_provider azurerm_attestation_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/data-sources/attestation_provider azurerm_attestation_provider} Data Source.
 func NewDataAzurermAttestationProvider_Override(d DataAzurermAttestationProvider, scope constructs.Construct, id *string, config *DataAzurermAttestationProviderConfig) {
 	_init_.Initialize()
 

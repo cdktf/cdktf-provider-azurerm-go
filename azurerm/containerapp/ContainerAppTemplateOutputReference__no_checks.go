@@ -103,6 +103,10 @@ func (j *jsiiProxy_ContainerAppTemplateOutputReference) validateSetRevisionSuffi
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) validateSetTerminationGracePeriodSecondsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppTemplateOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

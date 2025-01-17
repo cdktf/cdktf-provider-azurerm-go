@@ -5,13 +5,13 @@ package apimanagementcustomdomain
 
 
 type ApiManagementCustomDomainTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/api_management_custom_domain#create ApiManagementCustomDomain#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/api_management_custom_domain#create ApiManagementCustomDomain#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/api_management_custom_domain#delete ApiManagementCustomDomain#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/api_management_custom_domain#delete ApiManagementCustomDomain#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/api_management_custom_domain#read ApiManagementCustomDomain#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/api_management_custom_domain#read ApiManagementCustomDomain#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/api_management_custom_domain#update ApiManagementCustomDomain#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/api_management_custom_domain#update ApiManagementCustomDomain#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

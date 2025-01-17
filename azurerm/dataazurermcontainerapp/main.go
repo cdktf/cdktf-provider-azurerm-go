@@ -1742,6 +1742,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "revisionSuffix", GoGetter: "RevisionSuffix"},
 			_jsii_.MemberProperty{JsiiProperty: "tcpScaleRule", GoGetter: "TcpScaleRule"},
+			_jsii_.MemberProperty{JsiiProperty: "terminationGracePeriodSeconds", GoGetter: "TerminationGracePeriodSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

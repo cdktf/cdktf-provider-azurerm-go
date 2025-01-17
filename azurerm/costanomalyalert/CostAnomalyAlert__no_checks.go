@@ -131,6 +131,10 @@ func (j *jsiiProxy_CostAnomalyAlert) validateSetNameParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_CostAnomalyAlert) validateSetNotificationEmailParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CostAnomalyAlert) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

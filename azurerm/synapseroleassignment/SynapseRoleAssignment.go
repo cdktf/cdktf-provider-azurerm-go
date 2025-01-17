@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment}.
 type SynapseRoleAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -452,7 +452,7 @@ func (j *jsiiProxy_SynapseRoleAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment} Resource.
 func NewSynapseRoleAssignment(scope constructs.Construct, id *string, config *SynapseRoleAssignmentConfig) SynapseRoleAssignment {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewSynapseRoleAssignment(scope constructs.Construct, id *string, config *Sy
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/synapse_role_assignment azurerm_synapse_role_assignment} Resource.
 func NewSynapseRoleAssignment_Override(s SynapseRoleAssignment, scope constructs.Construct, id *string, config *SynapseRoleAssignmentConfig) {
 	_init_.Initialize()
 

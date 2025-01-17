@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/automation_certificate azurerm_automation_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/automation_certificate azurerm_automation_certificate}.
 type AutomationCertificate interface {
 	cdktf.TerraformResource
 	AutomationAccountName() *string
@@ -485,7 +485,7 @@ func (j *jsiiProxy_AutomationCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/automation_certificate azurerm_automation_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/automation_certificate azurerm_automation_certificate} Resource.
 func NewAutomationCertificate(scope constructs.Construct, id *string, config *AutomationCertificateConfig) AutomationCertificate {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewAutomationCertificate(scope constructs.Construct, id *string, config *Au
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/automation_certificate azurerm_automation_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/automation_certificate azurerm_automation_certificate} Resource.
 func NewAutomationCertificate_Override(a AutomationCertificate, scope constructs.Construct, id *string, config *AutomationCertificateConfig) {
 	_init_.Initialize()
 

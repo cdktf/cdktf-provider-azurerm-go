@@ -5,7 +5,7 @@ package dataazurermkeyvaultaccesspolicy
 
 
 type DataAzurermKeyVaultAccessPolicyTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/data-sources/key_vault_access_policy#read DataAzurermKeyVaultAccessPolicyA#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/data-sources/key_vault_access_policy#read DataAzurermKeyVaultAccessPolicyA#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

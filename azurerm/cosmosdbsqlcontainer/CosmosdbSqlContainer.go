@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container}.
 type CosmosdbSqlContainer interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -665,7 +665,7 @@ func (j *jsiiProxy_CosmosdbSqlContainer) UniqueKeyInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container} Resource.
 func NewCosmosdbSqlContainer(scope constructs.Construct, id *string, config *CosmosdbSqlContainerConfig) CosmosdbSqlContainer {
 	_init_.Initialize()
 
@@ -683,7 +683,7 @@ func NewCosmosdbSqlContainer(scope constructs.Construct, id *string, config *Cos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/cosmosdb_sql_container azurerm_cosmosdb_sql_container} Resource.
 func NewCosmosdbSqlContainer_Override(c CosmosdbSqlContainer, scope constructs.Construct, id *string, config *CosmosdbSqlContainerConfig) {
 	_init_.Initialize()
 

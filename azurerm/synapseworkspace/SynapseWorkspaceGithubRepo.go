@@ -5,17 +5,17 @@ package synapseworkspace
 
 
 type SynapseWorkspaceGithubRepo struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/synapse_workspace#account_name SynapseWorkspace#account_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/synapse_workspace#account_name SynapseWorkspace#account_name}.
 	AccountName *string `field:"required" json:"accountName" yaml:"accountName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/synapse_workspace#branch_name SynapseWorkspace#branch_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/synapse_workspace#branch_name SynapseWorkspace#branch_name}.
 	BranchName *string `field:"required" json:"branchName" yaml:"branchName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/synapse_workspace#repository_name SynapseWorkspace#repository_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/synapse_workspace#repository_name SynapseWorkspace#repository_name}.
 	RepositoryName *string `field:"required" json:"repositoryName" yaml:"repositoryName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/synapse_workspace#root_folder SynapseWorkspace#root_folder}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/synapse_workspace#root_folder SynapseWorkspace#root_folder}.
 	RootFolder *string `field:"required" json:"rootFolder" yaml:"rootFolder"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/synapse_workspace#git_url SynapseWorkspace#git_url}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/synapse_workspace#git_url SynapseWorkspace#git_url}.
 	GitUrl *string `field:"optional" json:"gitUrl" yaml:"gitUrl"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/synapse_workspace#last_commit_id SynapseWorkspace#last_commit_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/synapse_workspace#last_commit_id SynapseWorkspace#last_commit_id}.
 	LastCommitId *string `field:"optional" json:"lastCommitId" yaml:"lastCommitId"`
 }
 

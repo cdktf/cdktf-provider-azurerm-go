@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/mssql_virtual_machine_group azurerm_mssql_virtual_machine_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/mssql_virtual_machine_group azurerm_mssql_virtual_machine_group}.
 type MssqlVirtualMachineGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -496,7 +496,7 @@ func (j *jsiiProxy_MssqlVirtualMachineGroup) WsfcDomainProfileInput() *MssqlVirt
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/mssql_virtual_machine_group azurerm_mssql_virtual_machine_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/mssql_virtual_machine_group azurerm_mssql_virtual_machine_group} Resource.
 func NewMssqlVirtualMachineGroup(scope constructs.Construct, id *string, config *MssqlVirtualMachineGroupConfig) MssqlVirtualMachineGroup {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewMssqlVirtualMachineGroup(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/mssql_virtual_machine_group azurerm_mssql_virtual_machine_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/mssql_virtual_machine_group azurerm_mssql_virtual_machine_group} Resource.
 func NewMssqlVirtualMachineGroup_Override(m MssqlVirtualMachineGroup, scope constructs.Construct, id *string, config *MssqlVirtualMachineGroupConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/network_manager_static_member azurerm_network_manager_static_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/network_manager_static_member azurerm_network_manager_static_member}.
 type NetworkManagerStaticMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_NetworkManagerStaticMember) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/network_manager_static_member azurerm_network_manager_static_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/network_manager_static_member azurerm_network_manager_static_member} Resource.
 func NewNetworkManagerStaticMember(scope constructs.Construct, id *string, config *NetworkManagerStaticMemberConfig) NetworkManagerStaticMember {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewNetworkManagerStaticMember(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/network_manager_static_member azurerm_network_manager_static_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/network_manager_static_member azurerm_network_manager_static_member} Resource.
 func NewNetworkManagerStaticMember_Override(n NetworkManagerStaticMember, scope constructs.Construct, id *string, config *NetworkManagerStaticMemberConfig) {
 	_init_.Initialize()
 

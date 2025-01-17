@@ -259,6 +259,10 @@ func (j *jsiiProxy_KubernetesClusterNodePool) validateSetTagsParameters(val *map
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesClusterNodePool) validateSetTemporaryNameForRotationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesClusterNodePool) validateSetUltraSsdEnabledParameters(val interface{}) error {
 	return nil
 }

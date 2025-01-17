@@ -5,7 +5,7 @@ package cosmosdbaccount
 
 
 type CosmosdbAccountAnalyticalStorage struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/cosmosdb_account#schema_type CosmosdbAccount#schema_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/cosmosdb_account#schema_type CosmosdbAccount#schema_type}.
 	SchemaType *string `field:"required" json:"schemaType" yaml:"schemaType"`
 }
 

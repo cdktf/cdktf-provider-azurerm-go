@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert}.
 type CostAnomalyAlert interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,6 +63,9 @@ type CostAnomalyAlert interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NotificationEmail() *string
+	SetNotificationEmail(val *string)
+	NotificationEmailInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -130,6 +133,7 @@ type CostAnomalyAlert interface {
 	PutTimeouts(value *CostAnomalyAlertTimeouts)
 	ResetId()
 	ResetMessage()
+	ResetNotificationEmail()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -373,6 +377,26 @@ func (j *jsiiProxy_CostAnomalyAlert) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_CostAnomalyAlert) NotificationEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notificationEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CostAnomalyAlert) NotificationEmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notificationEmailInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CostAnomalyAlert) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -474,7 +498,7 @@ func (j *jsiiProxy_CostAnomalyAlert) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert} Resource.
 func NewCostAnomalyAlert(scope constructs.Construct, id *string, config *CostAnomalyAlertConfig) CostAnomalyAlert {
 	_init_.Initialize()
 
@@ -492,7 +516,7 @@ func NewCostAnomalyAlert(scope constructs.Construct, id *string, config *CostAno
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/cost_anomaly_alert azurerm_cost_anomaly_alert} Resource.
 func NewCostAnomalyAlert_Override(c CostAnomalyAlert, scope constructs.Construct, id *string, config *CostAnomalyAlertConfig) {
 	_init_.Initialize()
 
@@ -614,6 +638,17 @@ func (j *jsiiProxy_CostAnomalyAlert)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CostAnomalyAlert)SetNotificationEmail(val *string) {
+	if err := j.validateSetNotificationEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notificationEmail",
 		val,
 	)
 }
@@ -1024,6 +1059,14 @@ func (c *jsiiProxy_CostAnomalyAlert) ResetMessage() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetMessage",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CostAnomalyAlert) ResetNotificationEmail() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNotificationEmail",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/eventhub_authorization_rule azurerm_eventhub_authorization_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/eventhub_authorization_rule azurerm_eventhub_authorization_rule}.
 type EventhubAuthorizationRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -564,7 +564,7 @@ func (j *jsiiProxy_EventhubAuthorizationRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/eventhub_authorization_rule azurerm_eventhub_authorization_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/eventhub_authorization_rule azurerm_eventhub_authorization_rule} Resource.
 func NewEventhubAuthorizationRule(scope constructs.Construct, id *string, config *EventhubAuthorizationRuleConfig) EventhubAuthorizationRule {
 	_init_.Initialize()
 
@@ -582,7 +582,7 @@ func NewEventhubAuthorizationRule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.15.0/docs/resources/eventhub_authorization_rule azurerm_eventhub_authorization_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/eventhub_authorization_rule azurerm_eventhub_authorization_rule} Resource.
 func NewEventhubAuthorizationRule_Override(e EventhubAuthorizationRule, scope constructs.Construct, id *string, config *EventhubAuthorizationRuleConfig) {
 	_init_.Initialize()
 

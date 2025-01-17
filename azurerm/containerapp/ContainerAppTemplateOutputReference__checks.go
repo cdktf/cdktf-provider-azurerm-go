@@ -415,6 +415,14 @@ func (j *jsiiProxy_ContainerAppTemplateOutputReference) validateSetRevisionSuffi
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) validateSetTerminationGracePeriodSecondsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppTemplateOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -53,6 +53,9 @@ type ContainerAppTemplateOutputReference interface {
 	RevisionSuffixInput() *string
 	TcpScaleRule() ContainerAppTemplateTcpScaleRuleList
 	TcpScaleRuleInput() interface{}
+	TerminationGracePeriodSeconds() *float64
+	SetTerminationGracePeriodSeconds(val *float64)
+	TerminationGracePeriodSecondsInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -102,6 +105,7 @@ type ContainerAppTemplateOutputReference interface {
 	ResetMinReplicas()
 	ResetRevisionSuffix()
 	ResetTcpScaleRule()
+	ResetTerminationGracePeriodSeconds()
 	ResetVolume()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -348,6 +352,26 @@ func (j *jsiiProxy_ContainerAppTemplateOutputReference) TcpScaleRuleInput() inte
 	return returns
 }
 
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) TerminationGracePeriodSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"terminationGracePeriodSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppTemplateOutputReference) TerminationGracePeriodSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"terminationGracePeriodSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerAppTemplateOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -478,6 +502,17 @@ func (j *jsiiProxy_ContainerAppTemplateOutputReference)SetRevisionSuffix(val *st
 	_jsii_.Set(
 		j,
 		"revisionSuffix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAppTemplateOutputReference)SetTerminationGracePeriodSeconds(val *float64) {
+	if err := j.validateSetTerminationGracePeriodSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terminationGracePeriodSeconds",
 		val,
 	)
 }
@@ -827,6 +862,14 @@ func (c *jsiiProxy_ContainerAppTemplateOutputReference) ResetTcpScaleRule() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTcpScaleRule",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppTemplateOutputReference) ResetTerminationGracePeriodSeconds() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTerminationGracePeriodSeconds",
 		nil, // no parameters
 	)
 }

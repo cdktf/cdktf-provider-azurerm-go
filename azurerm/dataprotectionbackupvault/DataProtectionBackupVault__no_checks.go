@@ -119,6 +119,10 @@ func (j *jsiiProxy_DataProtectionBackupVault) validateSetIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataProtectionBackupVault) validateSetImmutabilityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataProtectionBackupVault) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
