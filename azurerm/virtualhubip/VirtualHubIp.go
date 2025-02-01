@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/virtual_hub_ip azurerm_virtual_hub_ip}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/virtual_hub_ip azurerm_virtual_hub_ip}.
 type VirtualHubIp interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -474,7 +474,7 @@ func (j *jsiiProxy_VirtualHubIp) VirtualHubIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/virtual_hub_ip azurerm_virtual_hub_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/virtual_hub_ip azurerm_virtual_hub_ip} Resource.
 func NewVirtualHubIp(scope constructs.Construct, id *string, config *VirtualHubIpConfig) VirtualHubIp {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewVirtualHubIp(scope constructs.Construct, id *string, config *VirtualHubI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/virtual_hub_ip azurerm_virtual_hub_ip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/virtual_hub_ip azurerm_virtual_hub_ip} Resource.
 func NewVirtualHubIp_Override(v VirtualHubIp, scope constructs.Construct, id *string, config *VirtualHubIpConfig) {
 	_init_.Initialize()
 

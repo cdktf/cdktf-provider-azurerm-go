@@ -55,6 +55,10 @@ func (c *jsiiProxy_CognitiveAccountNetworkAclsOutputReference) validateResolvePa
 	return nil
 }
 
+func (j *jsiiProxy_CognitiveAccountNetworkAclsOutputReference) validateSetBypassParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitiveAccountNetworkAclsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

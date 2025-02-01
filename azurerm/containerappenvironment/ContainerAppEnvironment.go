@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/container_app_environment azurerm_container_app_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/container_app_environment azurerm_container_app_environment}.
 type ContainerAppEnvironment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type ContainerAppEnvironment interface {
 	LogAnalyticsWorkspaceId() *string
 	SetLogAnalyticsWorkspaceId(val *string)
 	LogAnalyticsWorkspaceIdInput() *string
+	LogsDestination() *string
+	SetLogsDestination(val *string)
+	LogsDestinationInput() *string
 	MutualTlsEnabled() interface{}
 	SetMutualTlsEnabled(val interface{})
 	MutualTlsEnabledInput() interface{}
@@ -158,6 +161,7 @@ type ContainerAppEnvironment interface {
 	ResetInfrastructureSubnetId()
 	ResetInternalLoadBalancerEnabled()
 	ResetLogAnalyticsWorkspaceId()
+	ResetLogsDestination()
 	ResetMutualTlsEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -444,6 +448,26 @@ func (j *jsiiProxy_ContainerAppEnvironment) LogAnalyticsWorkspaceIdInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_ContainerAppEnvironment) LogsDestination() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logsDestination",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppEnvironment) LogsDestinationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logsDestinationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerAppEnvironment) MutualTlsEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -685,7 +709,7 @@ func (j *jsiiProxy_ContainerAppEnvironment) ZoneRedundancyEnabledInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
 func NewContainerAppEnvironment(scope constructs.Construct, id *string, config *ContainerAppEnvironmentConfig) ContainerAppEnvironment {
 	_init_.Initialize()
 
@@ -703,7 +727,7 @@ func NewContainerAppEnvironment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/container_app_environment azurerm_container_app_environment} Resource.
 func NewContainerAppEnvironment_Override(c ContainerAppEnvironment, scope constructs.Construct, id *string, config *ContainerAppEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -836,6 +860,17 @@ func (j *jsiiProxy_ContainerAppEnvironment)SetLogAnalyticsWorkspaceId(val *strin
 	_jsii_.Set(
 		j,
 		"logAnalyticsWorkspaceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAppEnvironment)SetLogsDestination(val *string) {
+	if err := j.validateSetLogsDestinationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logsDestination",
 		val,
 	)
 }
@@ -1333,6 +1368,14 @@ func (c *jsiiProxy_ContainerAppEnvironment) ResetLogAnalyticsWorkspaceId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetLogAnalyticsWorkspaceId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppEnvironment) ResetLogsDestination() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLogsDestination",
 		nil, // no parameters
 	)
 }

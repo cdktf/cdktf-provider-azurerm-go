@@ -119,6 +119,10 @@ func (j *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) validateSetLif
 	return nil
 }
 
+func (j *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) validateSetManagedHsmKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) validateSetManagedInstanceIdParameters(val *string) error {
 	return nil
 }

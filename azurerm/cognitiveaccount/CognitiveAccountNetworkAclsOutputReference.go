@@ -13,6 +13,9 @@ import (
 
 type CognitiveAccountNetworkAclsOutputReference interface {
 	cdktf.ComplexObject
+	Bypass() *string
+	SetBypass(val *string)
+	BypassInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -73,6 +76,7 @@ type CognitiveAccountNetworkAclsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutVirtualNetworkRules(value interface{})
+	ResetBypass()
 	ResetIpRules()
 	ResetVirtualNetworkRules()
 	// Produce the Token's value at resolution time.
@@ -88,6 +92,26 @@ type CognitiveAccountNetworkAclsOutputReference interface {
 // The jsii proxy struct for CognitiveAccountNetworkAclsOutputReference
 type jsiiProxy_CognitiveAccountNetworkAclsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_CognitiveAccountNetworkAclsOutputReference) Bypass() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bypass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitiveAccountNetworkAclsOutputReference) BypassInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bypassInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CognitiveAccountNetworkAclsOutputReference) ComplexObjectIndex() interface{} {
@@ -245,6 +269,17 @@ func NewCognitiveAccountNetworkAclsOutputReference_Override(c CognitiveAccountNe
 		"@cdktf/provider-azurerm.cognitiveAccount.CognitiveAccountNetworkAclsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CognitiveAccountNetworkAclsOutputReference)SetBypass(val *string) {
+	if err := j.validateSetBypassParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bypass",
+		val,
 	)
 }
 
@@ -519,6 +554,14 @@ func (c *jsiiProxy_CognitiveAccountNetworkAclsOutputReference) PutVirtualNetwork
 		c,
 		"putVirtualNetworkRules",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitiveAccountNetworkAclsOutputReference) ResetBypass() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBypass",
+		nil, // no parameters
 	)
 }
 

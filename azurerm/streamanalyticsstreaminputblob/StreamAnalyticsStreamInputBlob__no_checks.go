@@ -99,6 +99,10 @@ func validateStreamAnalyticsStreamInputBlob_IsTerraformResourceParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsStreamInputBlob) validateSetAuthenticationModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsStreamInputBlob) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

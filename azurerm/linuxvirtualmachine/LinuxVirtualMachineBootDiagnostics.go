@@ -5,7 +5,7 @@ package linuxvirtualmachine
 
 
 type LinuxVirtualMachineBootDiagnostics struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/linux_virtual_machine#storage_account_uri LinuxVirtualMachine#storage_account_uri}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/linux_virtual_machine#storage_account_uri LinuxVirtualMachine#storage_account_uri}.
 	StorageAccountUri *string `field:"optional" json:"storageAccountUri" yaml:"storageAccountUri"`
 }
 

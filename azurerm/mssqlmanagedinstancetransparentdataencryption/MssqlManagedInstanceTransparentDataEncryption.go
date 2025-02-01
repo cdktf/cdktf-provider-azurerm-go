@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/mssql_managed_instance_transparent_data_encryption azurerm_mssql_managed_instance_transparent_data_encryption}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/mssql_managed_instance_transparent_data_encryption azurerm_mssql_managed_instance_transparent_data_encryption}.
 type MssqlManagedInstanceTransparentDataEncryption interface {
 	cdktf.TerraformResource
 	AutoRotationEnabled() interface{}
@@ -52,6 +52,9 @@ type MssqlManagedInstanceTransparentDataEncryption interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ManagedHsmKeyId() *string
+	SetManagedHsmKeyId(val *string)
+	ManagedHsmKeyIdInput() *string
 	ManagedInstanceId() *string
 	SetManagedInstanceId(val *string)
 	ManagedInstanceIdInput() *string
@@ -122,6 +125,7 @@ type MssqlManagedInstanceTransparentDataEncryption interface {
 	ResetAutoRotationEnabled()
 	ResetId()
 	ResetKeyVaultKeyId()
+	ResetManagedHsmKeyId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -294,6 +298,26 @@ func (j *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) Lifecycle() *c
 	return returns
 }
 
+func (j *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) ManagedHsmKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedHsmKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) ManagedHsmKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedHsmKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) ManagedInstanceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -405,7 +429,7 @@ func (j *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) TimeoutsInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/mssql_managed_instance_transparent_data_encryption azurerm_mssql_managed_instance_transparent_data_encryption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/mssql_managed_instance_transparent_data_encryption azurerm_mssql_managed_instance_transparent_data_encryption} Resource.
 func NewMssqlManagedInstanceTransparentDataEncryption(scope constructs.Construct, id *string, config *MssqlManagedInstanceTransparentDataEncryptionConfig) MssqlManagedInstanceTransparentDataEncryption {
 	_init_.Initialize()
 
@@ -423,7 +447,7 @@ func NewMssqlManagedInstanceTransparentDataEncryption(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/mssql_managed_instance_transparent_data_encryption azurerm_mssql_managed_instance_transparent_data_encryption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/mssql_managed_instance_transparent_data_encryption azurerm_mssql_managed_instance_transparent_data_encryption} Resource.
 func NewMssqlManagedInstanceTransparentDataEncryption_Override(m MssqlManagedInstanceTransparentDataEncryption, scope constructs.Construct, id *string, config *MssqlManagedInstanceTransparentDataEncryptionConfig) {
 	_init_.Initialize()
 
@@ -512,6 +536,17 @@ func (j *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption)SetLifecycle(va
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption)SetManagedHsmKeyId(val *string) {
+	if err := j.validateSetManagedHsmKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedHsmKeyId",
 		val,
 	)
 }
@@ -930,6 +965,14 @@ func (m *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) ResetKeyVaultK
 	_jsii_.InvokeVoid(
 		m,
 		"resetKeyVaultKeyId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlManagedInstanceTransparentDataEncryption) ResetManagedHsmKeyId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetManagedHsmKeyId",
 		nil, // no parameters
 	)
 }

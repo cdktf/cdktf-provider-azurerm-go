@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/stream_analytics_output_cosmosdb azurerm_stream_analytics_output_cosmosdb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/stream_analytics_output_cosmosdb azurerm_stream_analytics_output_cosmosdb}.
 type StreamAnalyticsOutputCosmosdb interface {
 	cdktf.TerraformResource
+	AuthenticationMode() *string
+	SetAuthenticationMode(val *string)
+	AuthenticationModeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -131,6 +134,7 @@ type StreamAnalyticsOutputCosmosdb interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *StreamAnalyticsOutputCosmosdbTimeouts)
+	ResetAuthenticationMode()
 	ResetDocumentId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -154,6 +158,26 @@ type StreamAnalyticsOutputCosmosdb interface {
 // The jsii proxy struct for StreamAnalyticsOutputCosmosdb
 type jsiiProxy_StreamAnalyticsOutputCosmosdb struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_StreamAnalyticsOutputCosmosdb) AuthenticationMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamAnalyticsOutputCosmosdb) AuthenticationModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationModeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_StreamAnalyticsOutputCosmosdb) CdktfStack() cdktf.TerraformStack {
@@ -497,7 +521,7 @@ func (j *jsiiProxy_StreamAnalyticsOutputCosmosdb) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/stream_analytics_output_cosmosdb azurerm_stream_analytics_output_cosmosdb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/stream_analytics_output_cosmosdb azurerm_stream_analytics_output_cosmosdb} Resource.
 func NewStreamAnalyticsOutputCosmosdb(scope constructs.Construct, id *string, config *StreamAnalyticsOutputCosmosdbConfig) StreamAnalyticsOutputCosmosdb {
 	_init_.Initialize()
 
@@ -515,7 +539,7 @@ func NewStreamAnalyticsOutputCosmosdb(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/stream_analytics_output_cosmosdb azurerm_stream_analytics_output_cosmosdb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/stream_analytics_output_cosmosdb azurerm_stream_analytics_output_cosmosdb} Resource.
 func NewStreamAnalyticsOutputCosmosdb_Override(s StreamAnalyticsOutputCosmosdb, scope constructs.Construct, id *string, config *StreamAnalyticsOutputCosmosdbConfig) {
 	_init_.Initialize()
 
@@ -523,6 +547,17 @@ func NewStreamAnalyticsOutputCosmosdb_Override(s StreamAnalyticsOutputCosmosdb, 
 		"@cdktf/provider-azurerm.streamAnalyticsOutputCosmosdb.StreamAnalyticsOutputCosmosdb",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_StreamAnalyticsOutputCosmosdb)SetAuthenticationMode(val *string) {
+	if err := j.validateSetAuthenticationModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authenticationMode",
+		val,
 	)
 }
 
@@ -1043,6 +1078,14 @@ func (s *jsiiProxy_StreamAnalyticsOutputCosmosdb) PutTimeouts(value *StreamAnaly
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StreamAnalyticsOutputCosmosdb) ResetAuthenticationMode() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAuthenticationMode",
+		nil, // no parameters
 	)
 }
 

@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/stream_analytics_stream_input_blob azurerm_stream_analytics_stream_input_blob}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/stream_analytics_stream_input_blob azurerm_stream_analytics_stream_input_blob}.
 type StreamAnalyticsStreamInputBlob interface {
 	cdktf.TerraformResource
+	AuthenticationMode() *string
+	SetAuthenticationMode(val *string)
+	AuthenticationModeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -140,6 +143,7 @@ type StreamAnalyticsStreamInputBlob interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutSerialization(value *StreamAnalyticsStreamInputBlobSerialization)
 	PutTimeouts(value *StreamAnalyticsStreamInputBlobTimeouts)
+	ResetAuthenticationMode()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -161,6 +165,26 @@ type StreamAnalyticsStreamInputBlob interface {
 // The jsii proxy struct for StreamAnalyticsStreamInputBlob
 type jsiiProxy_StreamAnalyticsStreamInputBlob struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_StreamAnalyticsStreamInputBlob) AuthenticationMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StreamAnalyticsStreamInputBlob) AuthenticationModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationModeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_StreamAnalyticsStreamInputBlob) CdktfStack() cdktf.TerraformStack {
@@ -564,7 +588,7 @@ func (j *jsiiProxy_StreamAnalyticsStreamInputBlob) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/stream_analytics_stream_input_blob azurerm_stream_analytics_stream_input_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/stream_analytics_stream_input_blob azurerm_stream_analytics_stream_input_blob} Resource.
 func NewStreamAnalyticsStreamInputBlob(scope constructs.Construct, id *string, config *StreamAnalyticsStreamInputBlobConfig) StreamAnalyticsStreamInputBlob {
 	_init_.Initialize()
 
@@ -582,7 +606,7 @@ func NewStreamAnalyticsStreamInputBlob(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.16.0/docs/resources/stream_analytics_stream_input_blob azurerm_stream_analytics_stream_input_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/stream_analytics_stream_input_blob azurerm_stream_analytics_stream_input_blob} Resource.
 func NewStreamAnalyticsStreamInputBlob_Override(s StreamAnalyticsStreamInputBlob, scope constructs.Construct, id *string, config *StreamAnalyticsStreamInputBlobConfig) {
 	_init_.Initialize()
 
@@ -590,6 +614,17 @@ func NewStreamAnalyticsStreamInputBlob_Override(s StreamAnalyticsStreamInputBlob
 		"@cdktf/provider-azurerm.streamAnalyticsStreamInputBlob.StreamAnalyticsStreamInputBlob",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_StreamAnalyticsStreamInputBlob)SetAuthenticationMode(val *string) {
+	if err := j.validateSetAuthenticationModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authenticationMode",
+		val,
 	)
 }
 
@@ -1143,6 +1178,14 @@ func (s *jsiiProxy_StreamAnalyticsStreamInputBlob) PutTimeouts(value *StreamAnal
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StreamAnalyticsStreamInputBlob) ResetAuthenticationMode() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAuthenticationMode",
+		nil, // no parameters
 	)
 }
 

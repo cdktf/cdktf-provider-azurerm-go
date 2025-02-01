@@ -95,6 +95,10 @@ func validateStreamAnalyticsOutputCosmosdb_IsTerraformResourceParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_StreamAnalyticsOutputCosmosdb) validateSetAuthenticationModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StreamAnalyticsOutputCosmosdb) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
