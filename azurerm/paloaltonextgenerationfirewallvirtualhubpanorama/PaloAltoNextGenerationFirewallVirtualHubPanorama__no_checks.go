@@ -127,11 +127,19 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validateSetMarketplaceOfferIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validateSetNameParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validateSetPanoramaBase64ConfigParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validateSetPlanIdParameters(val *string) error {
 	return nil
 }
 

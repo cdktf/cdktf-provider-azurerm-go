@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/route_server azurerm_route_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/route_server azurerm_route_server}.
 type RouteServer interface {
 	cdktf.TerraformResource
 	BranchToBranchTrafficEnabled() interface{}
@@ -42,6 +42,9 @@ type RouteServer interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HubRoutingPreference() *string
+	SetHubRoutingPreference(val *string)
+	HubRoutingPreferenceInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -138,6 +141,7 @@ type RouteServer interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *RouteServerTimeouts)
 	ResetBranchToBranchTrafficEnabled()
+	ResetHubRoutingPreference()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -257,6 +261,26 @@ func (j *jsiiProxy_RouteServer) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RouteServer) HubRoutingPreference() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hubRoutingPreference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RouteServer) HubRoutingPreferenceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hubRoutingPreferenceInput",
 		&returns,
 	)
 	return returns
@@ -553,7 +577,7 @@ func (j *jsiiProxy_RouteServer) VirtualRouterIps() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/route_server azurerm_route_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/route_server azurerm_route_server} Resource.
 func NewRouteServer(scope constructs.Construct, id *string, config *RouteServerConfig) RouteServer {
 	_init_.Initialize()
 
@@ -571,7 +595,7 @@ func NewRouteServer(scope constructs.Construct, id *string, config *RouteServerC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/route_server azurerm_route_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/route_server azurerm_route_server} Resource.
 func NewRouteServer_Override(r RouteServer, scope constructs.Construct, id *string, config *RouteServerConfig) {
 	_init_.Initialize()
 
@@ -627,6 +651,17 @@ func (j *jsiiProxy_RouteServer)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RouteServer)SetHubRoutingPreference(val *string) {
+	if err := j.validateSetHubRoutingPreferenceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hubRoutingPreference",
 		val,
 	)
 }
@@ -1117,6 +1152,14 @@ func (r *jsiiProxy_RouteServer) ResetBranchToBranchTrafficEnabled() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetBranchToBranchTrafficEnabled",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RouteServer) ResetHubRoutingPreference() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetHubRoutingPreference",
 		nil, // no parameters
 	)
 }

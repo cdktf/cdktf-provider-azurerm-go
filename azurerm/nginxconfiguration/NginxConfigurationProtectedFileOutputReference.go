@@ -25,6 +25,7 @@ type NginxConfigurationProtectedFileOutputReference interface {
 	SetComplexObjectIsFromSet(val *bool)
 	Content() *string
 	SetContent(val *string)
+	ContentHash() *string
 	ContentInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -110,6 +111,16 @@ func (j *jsiiProxy_NginxConfigurationProtectedFileOutputReference) Content() *st
 	_jsii_.Get(
 		j,
 		"content",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NginxConfigurationProtectedFileOutputReference) ContentHash() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentHash",
 		&returns,
 	)
 	return returns

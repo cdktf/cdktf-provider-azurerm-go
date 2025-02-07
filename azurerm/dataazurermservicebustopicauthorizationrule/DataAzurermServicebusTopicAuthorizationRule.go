@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/data-sources/servicebus_topic_authorization_rule azurerm_servicebus_topic_authorization_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/data-sources/servicebus_topic_authorization_rule azurerm_servicebus_topic_authorization_rule}.
 type DataAzurermServicebusTopicAuthorizationRule interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -531,7 +531,7 @@ func (j *jsiiProxy_DataAzurermServicebusTopicAuthorizationRule) TopicNameInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/data-sources/servicebus_topic_authorization_rule azurerm_servicebus_topic_authorization_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/data-sources/servicebus_topic_authorization_rule azurerm_servicebus_topic_authorization_rule} Data Source.
 func NewDataAzurermServicebusTopicAuthorizationRule(scope constructs.Construct, id *string, config *DataAzurermServicebusTopicAuthorizationRuleConfig) DataAzurermServicebusTopicAuthorizationRule {
 	_init_.Initialize()
 
@@ -549,7 +549,7 @@ func NewDataAzurermServicebusTopicAuthorizationRule(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/data-sources/servicebus_topic_authorization_rule azurerm_servicebus_topic_authorization_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/data-sources/servicebus_topic_authorization_rule azurerm_servicebus_topic_authorization_rule} Data Source.
 func NewDataAzurermServicebusTopicAuthorizationRule_Override(d DataAzurermServicebusTopicAuthorizationRule, scope constructs.Construct, id *string, config *DataAzurermServicebusTopicAuthorizationRuleConfig) {
 	_init_.Initialize()
 

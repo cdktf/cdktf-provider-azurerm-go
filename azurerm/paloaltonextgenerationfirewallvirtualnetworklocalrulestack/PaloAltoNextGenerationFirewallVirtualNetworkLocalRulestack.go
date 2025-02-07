@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/palo_alto_next_generation_firewall_virtual_network_local_rulestack azurerm_palo_alto_next_generation_firewall_virtual_network_local_rulestack}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/palo_alto_next_generation_firewall_virtual_network_local_rulestack azurerm_palo_alto_next_generation_firewall_virtual_network_local_rulestack}.
 type PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -50,6 +50,9 @@ type PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MarketplaceOfferId() *string
+	SetMarketplaceOfferId(val *string)
+	MarketplaceOfferIdInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -57,6 +60,9 @@ type PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack interface {
 	NetworkProfileInput() *PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackNetworkProfile
 	// The tree node.
 	Node() constructs.Node
+	PlanId() *string
+	SetPlanId(val *string)
+	PlanIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -134,9 +140,11 @@ type PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack interface {
 	ResetDestinationNat()
 	ResetDnsSettings()
 	ResetId()
+	ResetMarketplaceOfferId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPlanId()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -307,6 +315,26 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) L
 	return returns
 }
 
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) MarketplaceOfferId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"marketplaceOfferId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) MarketplaceOfferIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"marketplaceOfferIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -352,6 +380,26 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) N
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) PlanId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"planId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) PlanIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"planIdInput",
 		&returns,
 	)
 	return returns
@@ -498,7 +546,7 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) T
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/palo_alto_next_generation_firewall_virtual_network_local_rulestack azurerm_palo_alto_next_generation_firewall_virtual_network_local_rulestack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/palo_alto_next_generation_firewall_virtual_network_local_rulestack azurerm_palo_alto_next_generation_firewall_virtual_network_local_rulestack} Resource.
 func NewPaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack(scope constructs.Construct, id *string, config *PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackConfig) PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack {
 	_init_.Initialize()
 
@@ -516,7 +564,7 @@ func NewPaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack(scope constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/palo_alto_next_generation_firewall_virtual_network_local_rulestack azurerm_palo_alto_next_generation_firewall_virtual_network_local_rulestack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/palo_alto_next_generation_firewall_virtual_network_local_rulestack azurerm_palo_alto_next_generation_firewall_virtual_network_local_rulestack} Resource.
 func NewPaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack_Override(p PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack, scope constructs.Construct, id *string, config *PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestackConfig) {
 	_init_.Initialize()
 
@@ -587,6 +635,17 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack)Se
 	)
 }
 
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack)SetMarketplaceOfferId(val *string) {
+	if err := j.validateSetMarketplaceOfferIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"marketplaceOfferId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -594,6 +653,17 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack)Se
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack)SetPlanId(val *string) {
+	if err := j.validateSetPlanIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"planId",
 		val,
 	)
 }
@@ -1071,10 +1141,26 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) R
 	)
 }
 
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) ResetMarketplaceOfferId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMarketplaceOfferId",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualNetworkLocalRulestack) ResetPlanId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPlanId",
 		nil, // no parameters
 	)
 }

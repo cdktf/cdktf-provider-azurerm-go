@@ -15,6 +15,8 @@ func init() {
 		reflect.TypeOf((*AzurermProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "adoPipelineServiceConnectionId", GoGetter: "AdoPipelineServiceConnectionId"},
+			_jsii_.MemberProperty{JsiiProperty: "adoPipelineServiceConnectionIdInput", GoGetter: "AdoPipelineServiceConnectionIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
 			_jsii_.MemberProperty{JsiiProperty: "aliasInput", GoGetter: "AliasInput"},
 			_jsii_.MemberProperty{JsiiProperty: "auxiliaryTenantIds", GoGetter: "AuxiliaryTenantIds"},
@@ -63,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "partnerId", GoGetter: "PartnerId"},
 			_jsii_.MemberProperty{JsiiProperty: "partnerIdInput", GoGetter: "PartnerIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdoPipelineServiceConnectionId", GoMethod: "ResetAdoPipelineServiceConnectionId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuxiliaryTenantIds", GoMethod: "ResetAuxiliaryTenantIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientCertificate", GoMethod: "ResetClientCertificate"},

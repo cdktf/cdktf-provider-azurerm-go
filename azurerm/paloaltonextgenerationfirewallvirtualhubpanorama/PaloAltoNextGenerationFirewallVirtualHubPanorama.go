@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_panorama azurerm_palo_alto_next_generation_firewall_virtual_hub_panorama}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_panorama azurerm_palo_alto_next_generation_firewall_virtual_hub_panorama}.
 type PaloAltoNextGenerationFirewallVirtualHubPanorama interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -53,6 +53,9 @@ type PaloAltoNextGenerationFirewallVirtualHubPanorama interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MarketplaceOfferId() *string
+	SetMarketplaceOfferId(val *string)
+	MarketplaceOfferIdInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -64,6 +67,9 @@ type PaloAltoNextGenerationFirewallVirtualHubPanorama interface {
 	PanoramaBase64Config() *string
 	SetPanoramaBase64Config(val *string)
 	PanoramaBase64ConfigInput() *string
+	PlanId() *string
+	SetPlanId(val *string)
+	PlanIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -138,9 +144,11 @@ type PaloAltoNextGenerationFirewallVirtualHubPanorama interface {
 	ResetDestinationNat()
 	ResetDnsSettings()
 	ResetId()
+	ResetMarketplaceOfferId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPlanId()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -331,6 +339,26 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) LocationInp
 	return returns
 }
 
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) MarketplaceOfferId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"marketplaceOfferId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) MarketplaceOfferIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"marketplaceOfferIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -406,6 +434,26 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) PanoramaBas
 	_jsii_.Get(
 		j,
 		"panoramaBase64ConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) PlanId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"planId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) PlanIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"planIdInput",
 		&returns,
 	)
 	return returns
@@ -532,7 +580,7 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) TimeoutsInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_panorama azurerm_palo_alto_next_generation_firewall_virtual_hub_panorama} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_panorama azurerm_palo_alto_next_generation_firewall_virtual_hub_panorama} Resource.
 func NewPaloAltoNextGenerationFirewallVirtualHubPanorama(scope constructs.Construct, id *string, config *PaloAltoNextGenerationFirewallVirtualHubPanoramaConfig) PaloAltoNextGenerationFirewallVirtualHubPanorama {
 	_init_.Initialize()
 
@@ -550,7 +598,7 @@ func NewPaloAltoNextGenerationFirewallVirtualHubPanorama(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_panorama azurerm_palo_alto_next_generation_firewall_virtual_hub_panorama} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/palo_alto_next_generation_firewall_virtual_hub_panorama azurerm_palo_alto_next_generation_firewall_virtual_hub_panorama} Resource.
 func NewPaloAltoNextGenerationFirewallVirtualHubPanorama_Override(p PaloAltoNextGenerationFirewallVirtualHubPanorama, scope constructs.Construct, id *string, config *PaloAltoNextGenerationFirewallVirtualHubPanoramaConfig) {
 	_init_.Initialize()
 
@@ -632,6 +680,17 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama)SetLocation(
 	)
 }
 
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama)SetMarketplaceOfferId(val *string) {
+	if err := j.validateSetMarketplaceOfferIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"marketplaceOfferId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -650,6 +709,17 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama)SetPanoramaB
 	_jsii_.Set(
 		j,
 		"panoramaBase64Config",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama)SetPlanId(val *string) {
+	if err := j.validateSetPlanIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"planId",
 		val,
 	)
 }
@@ -1116,10 +1186,26 @@ func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) ResetId() {
 	)
 }
 
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) ResetMarketplaceOfferId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMarketplaceOfferId",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) ResetPlanId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPlanId",
 		nil, // no parameters
 	)
 }

@@ -24,6 +24,7 @@ type DataAzurermNginxConfigurationProtectedFileOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Content() *string
+	ContentHash() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -106,6 +107,16 @@ func (j *jsiiProxy_DataAzurermNginxConfigurationProtectedFileOutputReference) Co
 	_jsii_.Get(
 		j,
 		"content",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermNginxConfigurationProtectedFileOutputReference) ContentHash() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentHash",
 		&returns,
 	)
 	return returns

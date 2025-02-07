@@ -206,6 +206,14 @@ func (j *jsiiProxy_ContainerAppTemplateContainerVolumeMountsOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppTemplateContainerVolumeMountsOutputReference) validateSetSubPathParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppTemplateContainerVolumeMountsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

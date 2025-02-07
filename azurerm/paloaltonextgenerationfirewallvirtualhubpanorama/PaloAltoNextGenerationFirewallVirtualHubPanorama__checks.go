@@ -425,6 +425,14 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validateSetMarketplaceOfferIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -434,6 +442,14 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validateSet
 }
 
 func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validateSetPanoramaBase64ConfigParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubPanorama) validateSetPlanIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

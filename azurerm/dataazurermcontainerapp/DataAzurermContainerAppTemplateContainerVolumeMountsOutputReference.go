@@ -34,6 +34,7 @@ type DataAzurermContainerAppTemplateContainerVolumeMountsOutputReference interfa
 	SetInternalValue(val *DataAzurermContainerAppTemplateContainerVolumeMounts)
 	Name() *string
 	Path() *string
+	SubPath() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -146,6 +147,16 @@ func (j *jsiiProxy_DataAzurermContainerAppTemplateContainerVolumeMountsOutputRef
 	_jsii_.Get(
 		j,
 		"path",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermContainerAppTemplateContainerVolumeMountsOutputReference) SubPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subPath",
 		&returns,
 	)
 	return returns

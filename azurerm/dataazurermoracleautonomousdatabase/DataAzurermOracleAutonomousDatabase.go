@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/data-sources/oracle_autonomous_database azurerm_oracle_autonomous_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/data-sources/oracle_autonomous_database azurerm_oracle_autonomous_database}.
 type DataAzurermOracleAutonomousDatabase interface {
 	cdktf.TerraformDataSource
 	ActualUsedDataStorageSizeInTbs() *float64
@@ -96,7 +96,7 @@ type DataAzurermOracleAutonomousDatabase interface {
 	ServiceConsoleUrl() *string
 	SqlWebDeveloperUrl() *string
 	SubnetId() *string
-	SupportedRegionsToCloneTo() *[]*float64
+	SupportedRegionsToCloneTo() *[]*string
 	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -740,8 +740,8 @@ func (j *jsiiProxy_DataAzurermOracleAutonomousDatabase) SubnetId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAzurermOracleAutonomousDatabase) SupportedRegionsToCloneTo() *[]*float64 {
-	var returns *[]*float64
+func (j *jsiiProxy_DataAzurermOracleAutonomousDatabase) SupportedRegionsToCloneTo() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"supportedRegionsToCloneTo",
@@ -951,7 +951,7 @@ func (j *jsiiProxy_DataAzurermOracleAutonomousDatabase) VirtualNetworkId() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/data-sources/oracle_autonomous_database azurerm_oracle_autonomous_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/data-sources/oracle_autonomous_database azurerm_oracle_autonomous_database} Data Source.
 func NewDataAzurermOracleAutonomousDatabase(scope constructs.Construct, id *string, config *DataAzurermOracleAutonomousDatabaseConfig) DataAzurermOracleAutonomousDatabase {
 	_init_.Initialize()
 
@@ -969,7 +969,7 @@ func NewDataAzurermOracleAutonomousDatabase(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/data-sources/oracle_autonomous_database azurerm_oracle_autonomous_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/data-sources/oracle_autonomous_database azurerm_oracle_autonomous_database} Data Source.
 func NewDataAzurermOracleAutonomousDatabase_Override(d DataAzurermOracleAutonomousDatabase, scope constructs.Construct, id *string, config *DataAzurermOracleAutonomousDatabaseConfig) {
 	_init_.Initialize()
 

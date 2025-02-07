@@ -38,6 +38,9 @@ type ContainerAppJobTemplateContainerVolumeMountsOutputReference interface {
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	SubPath() *string
+	SetSubPath(val *string)
+	SubPathInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +73,7 @@ type ContainerAppJobTemplateContainerVolumeMountsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSubPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -175,6 +179,26 @@ func (j *jsiiProxy_ContainerAppJobTemplateContainerVolumeMountsOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_ContainerAppJobTemplateContainerVolumeMountsOutputReference) SubPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppJobTemplateContainerVolumeMountsOutputReference) SubPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subPathInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerAppJobTemplateContainerVolumeMountsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -274,6 +298,17 @@ func (j *jsiiProxy_ContainerAppJobTemplateContainerVolumeMountsOutputReference)S
 	_jsii_.Set(
 		j,
 		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAppJobTemplateContainerVolumeMountsOutputReference)SetSubPath(val *string) {
+	if err := j.validateSetSubPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subPath",
 		val,
 	)
 }
@@ -484,6 +519,14 @@ func (c *jsiiProxy_ContainerAppJobTemplateContainerVolumeMountsOutputReference) 
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerAppJobTemplateContainerVolumeMountsOutputReference) ResetSubPath() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSubPath",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerAppJobTemplateContainerVolumeMountsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

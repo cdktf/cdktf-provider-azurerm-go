@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy}.
 type CdnFrontdoorFirewallPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -54,6 +54,9 @@ type CdnFrontdoorFirewallPolicy interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	JsChallengeCookieExpirationInMinutes() *float64
+	SetJsChallengeCookieExpirationInMinutes(val *float64)
+	JsChallengeCookieExpirationInMinutesInput() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -152,6 +155,7 @@ type CdnFrontdoorFirewallPolicy interface {
 	ResetCustomRule()
 	ResetEnabled()
 	ResetId()
+	ResetJsChallengeCookieExpirationInMinutes()
 	ResetManagedRule()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -363,6 +367,26 @@ func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) JsChallengeCookieExpirationInMinutes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"jsChallengeCookieExpirationInMinutes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) JsChallengeCookieExpirationInMinutesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"jsChallengeCookieExpirationInMinutesInput",
 		&returns,
 	)
 	return returns
@@ -629,7 +653,7 @@ func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Resource.
 func NewCdnFrontdoorFirewallPolicy(scope constructs.Construct, id *string, config *CdnFrontdoorFirewallPolicyConfig) CdnFrontdoorFirewallPolicy {
 	_init_.Initialize()
 
@@ -647,7 +671,7 @@ func NewCdnFrontdoorFirewallPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Resource.
 func NewCdnFrontdoorFirewallPolicy_Override(c CdnFrontdoorFirewallPolicy, scope constructs.Construct, id *string, config *CdnFrontdoorFirewallPolicyConfig) {
 	_init_.Initialize()
 
@@ -736,6 +760,17 @@ func (j *jsiiProxy_CdnFrontdoorFirewallPolicy)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CdnFrontdoorFirewallPolicy)SetJsChallengeCookieExpirationInMinutes(val *float64) {
+	if err := j.validateSetJsChallengeCookieExpirationInMinutesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jsChallengeCookieExpirationInMinutes",
 		val,
 	)
 }
@@ -1269,6 +1304,14 @@ func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) ResetJsChallengeCookieExpirationInMinutes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetJsChallengeCookieExpirationInMinutes",
 		nil, // no parameters
 	)
 }

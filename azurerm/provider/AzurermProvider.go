@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs azurerm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs azurerm}.
 type AzurermProvider interface {
 	cdktf.TerraformProvider
+	AdoPipelineServiceConnectionId() *string
+	SetAdoPipelineServiceConnectionId(val *string)
+	AdoPipelineServiceConnectionIdInput() *string
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
@@ -130,6 +133,7 @@ type AzurermProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAdoPipelineServiceConnectionId()
 	ResetAlias()
 	ResetAuxiliaryTenantIds()
 	ResetClientCertificate()
@@ -179,6 +183,26 @@ type AzurermProvider interface {
 // The jsii proxy struct for AzurermProvider
 type jsiiProxy_AzurermProvider struct {
 	internal.Type__cdktfTerraformProvider
+}
+
+func (j *jsiiProxy_AzurermProvider) AdoPipelineServiceConnectionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"adoPipelineServiceConnectionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzurermProvider) AdoPipelineServiceConnectionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"adoPipelineServiceConnectionIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AzurermProvider) Alias() *string {
@@ -882,7 +906,7 @@ func (j *jsiiProxy_AzurermProvider) UseOidcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs azurerm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs azurerm} Resource.
 func NewAzurermProvider(scope constructs.Construct, id *string, config *AzurermProviderConfig) AzurermProvider {
 	_init_.Initialize()
 
@@ -900,7 +924,7 @@ func NewAzurermProvider(scope constructs.Construct, id *string, config *AzurermP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs azurerm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs azurerm} Resource.
 func NewAzurermProvider_Override(a AzurermProvider, scope constructs.Construct, id *string, config *AzurermProviderConfig) {
 	_init_.Initialize()
 
@@ -908,6 +932,14 @@ func NewAzurermProvider_Override(a AzurermProvider, scope constructs.Construct, 
 		"@cdktf/provider-azurerm.provider.AzurermProvider",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AzurermProvider)SetAdoPipelineServiceConnectionId(val *string) {
+	_jsii_.Set(
+		j,
+		"adoPipelineServiceConnectionId",
+		val,
 	)
 }
 
@@ -1300,6 +1332,14 @@ func (a *jsiiProxy_AzurermProvider) OverrideLogicalId(newLogicalId *string) {
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_AzurermProvider) ResetAdoPipelineServiceConnectionId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAdoPipelineServiceConnectionId",
+		nil, // no parameters
 	)
 }
 

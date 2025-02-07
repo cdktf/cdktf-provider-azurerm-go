@@ -127,6 +127,10 @@ func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) validateSetIdParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) validateSetJsChallengeCookieExpirationInMinutesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

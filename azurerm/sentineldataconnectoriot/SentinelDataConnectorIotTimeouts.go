@@ -5,11 +5,11 @@ package sentineldataconnectoriot
 
 
 type SentinelDataConnectorIotTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/sentinel_data_connector_iot#create SentinelDataConnectorIot#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/sentinel_data_connector_iot#create SentinelDataConnectorIot#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/sentinel_data_connector_iot#delete SentinelDataConnectorIot#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/sentinel_data_connector_iot#delete SentinelDataConnectorIot#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.17.0/docs/resources/sentinel_data_connector_iot#read SentinelDataConnectorIot#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/sentinel_data_connector_iot#read SentinelDataConnectorIot#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

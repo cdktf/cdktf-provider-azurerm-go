@@ -123,7 +123,15 @@ func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubLocalRulestack) valid
 	return nil
 }
 
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubLocalRulestack) validateSetMarketplaceOfferIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubLocalRulestack) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PaloAltoNextGenerationFirewallVirtualHubLocalRulestack) validateSetPlanIdParameters(val *string) error {
 	return nil
 }
 

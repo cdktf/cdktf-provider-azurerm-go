@@ -107,6 +107,10 @@ func (j *jsiiProxy_RouteServer) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_RouteServer) validateSetHubRoutingPreferenceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RouteServer) validateSetIdParameters(val *string) error {
 	return nil
 }
