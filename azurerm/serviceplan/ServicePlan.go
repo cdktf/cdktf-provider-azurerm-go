@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/service_plan azurerm_service_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/service_plan azurerm_service_plan}.
 type ServicePlan interface {
 	cdktf.TerraformResource
 	AppServiceEnvironmentId() *string
@@ -67,6 +67,9 @@ type ServicePlan interface {
 	PerSiteScalingEnabled() interface{}
 	SetPerSiteScalingEnabled(val interface{})
 	PerSiteScalingEnabledInput() interface{}
+	PremiumPlanAutoScaleEnabled() interface{}
+	SetPremiumPlanAutoScaleEnabled(val interface{})
+	PremiumPlanAutoScaleEnabledInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -152,6 +155,7 @@ type ServicePlan interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPerSiteScalingEnabled()
+	ResetPremiumPlanAutoScaleEnabled()
 	ResetTags()
 	ResetTimeouts()
 	ResetWorkerCount()
@@ -424,6 +428,26 @@ func (j *jsiiProxy_ServicePlan) PerSiteScalingEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ServicePlan) PremiumPlanAutoScaleEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"premiumPlanAutoScaleEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicePlan) PremiumPlanAutoScaleEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"premiumPlanAutoScaleEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServicePlan) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -615,7 +639,7 @@ func (j *jsiiProxy_ServicePlan) ZoneBalancingEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/service_plan azurerm_service_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/service_plan azurerm_service_plan} Resource.
 func NewServicePlan(scope constructs.Construct, id *string, config *ServicePlanConfig) ServicePlan {
 	_init_.Initialize()
 
@@ -633,7 +657,7 @@ func NewServicePlan(scope constructs.Construct, id *string, config *ServicePlanC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/service_plan azurerm_service_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/service_plan azurerm_service_plan} Resource.
 func NewServicePlan_Override(s ServicePlan, scope constructs.Construct, id *string, config *ServicePlanConfig) {
 	_init_.Initialize()
 
@@ -766,6 +790,17 @@ func (j *jsiiProxy_ServicePlan)SetPerSiteScalingEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"perSiteScalingEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicePlan)SetPremiumPlanAutoScaleEnabled(val interface{}) {
+	if err := j.validateSetPremiumPlanAutoScaleEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"premiumPlanAutoScaleEnabled",
 		val,
 	)
 }
@@ -1244,6 +1279,14 @@ func (s *jsiiProxy_ServicePlan) ResetPerSiteScalingEnabled() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPerSiteScalingEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicePlan) ResetPremiumPlanAutoScaleEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPremiumPlanAutoScaleEnabled",
 		nil, // no parameters
 	)
 }

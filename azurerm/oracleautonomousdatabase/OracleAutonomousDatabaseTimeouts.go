@@ -5,13 +5,13 @@ package oracleautonomousdatabase
 
 
 type OracleAutonomousDatabaseTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/oracle_autonomous_database#create OracleAutonomousDatabase#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/oracle_autonomous_database#create OracleAutonomousDatabase#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/oracle_autonomous_database#delete OracleAutonomousDatabase#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/oracle_autonomous_database#delete OracleAutonomousDatabase#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/oracle_autonomous_database#read OracleAutonomousDatabase#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/oracle_autonomous_database#read OracleAutonomousDatabase#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/oracle_autonomous_database#update OracleAutonomousDatabase#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/oracle_autonomous_database#update OracleAutonomousDatabase#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

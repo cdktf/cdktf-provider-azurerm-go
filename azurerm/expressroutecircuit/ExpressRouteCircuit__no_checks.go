@@ -151,6 +151,10 @@ func (j *jsiiProxy_ExpressRouteCircuit) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_ExpressRouteCircuit) validateSetRateLimitingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExpressRouteCircuit) validateSetResourceGroupNameParameters(val *string) error {
 	return nil
 }

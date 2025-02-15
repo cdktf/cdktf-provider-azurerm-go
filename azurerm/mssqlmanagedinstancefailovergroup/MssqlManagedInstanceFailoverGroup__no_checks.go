@@ -139,6 +139,10 @@ func (j *jsiiProxy_MssqlManagedInstanceFailoverGroup) validateSetReadonlyEndpoin
 	return nil
 }
 
+func (j *jsiiProxy_MssqlManagedInstanceFailoverGroup) validateSetSecondaryTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewMssqlManagedInstanceFailoverGroupParameters(scope constructs.Construct, id *string, config *MssqlManagedInstanceFailoverGroupConfig) error {
 	return nil
 }

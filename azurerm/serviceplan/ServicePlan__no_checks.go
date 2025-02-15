@@ -135,6 +135,10 @@ func (j *jsiiProxy_ServicePlan) validateSetPerSiteScalingEnabledParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_ServicePlan) validateSetPremiumPlanAutoScaleEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicePlan) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

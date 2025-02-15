@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/data-sources/app_configuration azurerm_app_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/app_configuration azurerm_app_configuration}.
 type DataAzurermAppConfiguration interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -23,6 +23,8 @@ type DataAzurermAppConfiguration interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DataPlaneProxyAuthenticationMode() *string
+	DataPlaneProxyPrivateLinkDelegationEnabled() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -155,6 +157,26 @@ func (j *jsiiProxy_DataAzurermAppConfiguration) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermAppConfiguration) DataPlaneProxyAuthenticationMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataPlaneProxyAuthenticationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermAppConfiguration) DataPlaneProxyPrivateLinkDelegationEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"dataPlaneProxyPrivateLinkDelegationEnabled",
 		&returns,
 	)
 	return returns
@@ -511,7 +533,7 @@ func (j *jsiiProxy_DataAzurermAppConfiguration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/data-sources/app_configuration azurerm_app_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/app_configuration azurerm_app_configuration} Data Source.
 func NewDataAzurermAppConfiguration(scope constructs.Construct, id *string, config *DataAzurermAppConfigurationConfig) DataAzurermAppConfiguration {
 	_init_.Initialize()
 
@@ -529,7 +551,7 @@ func NewDataAzurermAppConfiguration(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/data-sources/app_configuration azurerm_app_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/app_configuration azurerm_app_configuration} Data Source.
 func NewDataAzurermAppConfiguration_Override(d DataAzurermAppConfiguration, scope constructs.Construct, id *string, config *DataAzurermAppConfigurationConfig) {
 	_init_.Initialize()
 

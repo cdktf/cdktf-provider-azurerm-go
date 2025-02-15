@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/mssql_managed_instance_failover_group azurerm_mssql_managed_instance_failover_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/mssql_managed_instance_failover_group azurerm_mssql_managed_instance_failover_group}.
 type MssqlManagedInstanceFailoverGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -77,6 +77,9 @@ type MssqlManagedInstanceFailoverGroup interface {
 	ReadWriteEndpointFailoverPolicy() MssqlManagedInstanceFailoverGroupReadWriteEndpointFailoverPolicyOutputReference
 	ReadWriteEndpointFailoverPolicyInput() *MssqlManagedInstanceFailoverGroupReadWriteEndpointFailoverPolicy
 	Role() *string
+	SecondaryType() *string
+	SetSecondaryType(val *string)
+	SecondaryTypeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -135,6 +138,7 @@ type MssqlManagedInstanceFailoverGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetReadonlyEndpointFailoverPolicyEnabled()
+	ResetSecondaryType()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -444,6 +448,26 @@ func (j *jsiiProxy_MssqlManagedInstanceFailoverGroup) Role() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MssqlManagedInstanceFailoverGroup) SecondaryType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlManagedInstanceFailoverGroup) SecondaryTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MssqlManagedInstanceFailoverGroup) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -495,7 +519,7 @@ func (j *jsiiProxy_MssqlManagedInstanceFailoverGroup) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/mssql_managed_instance_failover_group azurerm_mssql_managed_instance_failover_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/mssql_managed_instance_failover_group azurerm_mssql_managed_instance_failover_group} Resource.
 func NewMssqlManagedInstanceFailoverGroup(scope constructs.Construct, id *string, config *MssqlManagedInstanceFailoverGroupConfig) MssqlManagedInstanceFailoverGroup {
 	_init_.Initialize()
 
@@ -513,7 +537,7 @@ func NewMssqlManagedInstanceFailoverGroup(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/mssql_managed_instance_failover_group azurerm_mssql_managed_instance_failover_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/mssql_managed_instance_failover_group azurerm_mssql_managed_instance_failover_group} Resource.
 func NewMssqlManagedInstanceFailoverGroup_Override(m MssqlManagedInstanceFailoverGroup, scope constructs.Construct, id *string, config *MssqlManagedInstanceFailoverGroupConfig) {
 	_init_.Initialize()
 
@@ -654,6 +678,17 @@ func (j *jsiiProxy_MssqlManagedInstanceFailoverGroup)SetReadonlyEndpointFailover
 	_jsii_.Set(
 		j,
 		"readonlyEndpointFailoverPolicyEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlManagedInstanceFailoverGroup)SetSecondaryType(val *string) {
+	if err := j.validateSetSecondaryTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secondaryType",
 		val,
 	)
 }
@@ -1053,6 +1088,14 @@ func (m *jsiiProxy_MssqlManagedInstanceFailoverGroup) ResetReadonlyEndpointFailo
 	_jsii_.InvokeVoid(
 		m,
 		"resetReadonlyEndpointFailoverPolicyEnabled",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlManagedInstanceFailoverGroup) ResetSecondaryType() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSecondaryType",
 		nil, // no parameters
 	)
 }

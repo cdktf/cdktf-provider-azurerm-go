@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/app_configuration azurerm_app_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/app_configuration azurerm_app_configuration}.
 type AppConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,12 @@ type AppConfiguration interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DataPlaneProxyAuthenticationMode() *string
+	SetDataPlaneProxyAuthenticationMode(val *string)
+	DataPlaneProxyAuthenticationModeInput() *string
+	DataPlaneProxyPrivateLinkDelegationEnabled() interface{}
+	SetDataPlaneProxyPrivateLinkDelegationEnabled(val interface{})
+	DataPlaneProxyPrivateLinkDelegationEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -151,6 +157,8 @@ type AppConfiguration interface {
 	PutIdentity(value *AppConfigurationIdentity)
 	PutReplica(value interface{})
 	PutTimeouts(value *AppConfigurationTimeouts)
+	ResetDataPlaneProxyAuthenticationMode()
+	ResetDataPlaneProxyPrivateLinkDelegationEnabled()
 	ResetEncryption()
 	ResetId()
 	ResetIdentity()
@@ -218,6 +226,46 @@ func (j *jsiiProxy_AppConfiguration) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppConfiguration) DataPlaneProxyAuthenticationMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataPlaneProxyAuthenticationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppConfiguration) DataPlaneProxyAuthenticationModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataPlaneProxyAuthenticationModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppConfiguration) DataPlaneProxyPrivateLinkDelegationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dataPlaneProxyPrivateLinkDelegationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppConfiguration) DataPlaneProxyPrivateLinkDelegationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dataPlaneProxyPrivateLinkDelegationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -674,7 +722,7 @@ func (j *jsiiProxy_AppConfiguration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/app_configuration azurerm_app_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/app_configuration azurerm_app_configuration} Resource.
 func NewAppConfiguration(scope constructs.Construct, id *string, config *AppConfigurationConfig) AppConfiguration {
 	_init_.Initialize()
 
@@ -692,7 +740,7 @@ func NewAppConfiguration(scope constructs.Construct, id *string, config *AppConf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/app_configuration azurerm_app_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/app_configuration azurerm_app_configuration} Resource.
 func NewAppConfiguration_Override(a AppConfiguration, scope constructs.Construct, id *string, config *AppConfigurationConfig) {
 	_init_.Initialize()
 
@@ -721,6 +769,28 @@ func (j *jsiiProxy_AppConfiguration)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppConfiguration)SetDataPlaneProxyAuthenticationMode(val *string) {
+	if err := j.validateSetDataPlaneProxyAuthenticationModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataPlaneProxyAuthenticationMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppConfiguration)SetDataPlaneProxyPrivateLinkDelegationEnabled(val interface{}) {
+	if err := j.validateSetDataPlaneProxyPrivateLinkDelegationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataPlaneProxyPrivateLinkDelegationEnabled",
 		val,
 	)
 }
@@ -1275,6 +1345,22 @@ func (a *jsiiProxy_AppConfiguration) PutTimeouts(value *AppConfigurationTimeouts
 		a,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppConfiguration) ResetDataPlaneProxyAuthenticationMode() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDataPlaneProxyAuthenticationMode",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppConfiguration) ResetDataPlaneProxyPrivateLinkDelegationEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDataPlaneProxyPrivateLinkDelegationEnabled",
+		nil, // no parameters
 	)
 }
 

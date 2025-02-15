@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3}.
 type DataAzurermAppServiceEnvironmentV3 interface {
 	cdktf.TerraformDataSource
 	AllowNewPrivateEndpointConnections() cdktf.IResolvable
@@ -522,7 +522,7 @@ func (j *jsiiProxy_DataAzurermAppServiceEnvironmentV3) ZoneRedundant() cdktf.IRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3} Data Source.
 func NewDataAzurermAppServiceEnvironmentV3(scope constructs.Construct, id *string, config *DataAzurermAppServiceEnvironmentV3Config) DataAzurermAppServiceEnvironmentV3 {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewDataAzurermAppServiceEnvironmentV3(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3} Data Source.
 func NewDataAzurermAppServiceEnvironmentV3_Override(d DataAzurermAppServiceEnvironmentV3, scope constructs.Construct, id *string, config *DataAzurermAppServiceEnvironmentV3Config) {
 	_init_.Initialize()
 

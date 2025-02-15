@@ -16,6 +16,9 @@ type ContainerAppIngressOutputReference interface {
 	AllowInsecureConnections() interface{}
 	SetAllowInsecureConnections(val interface{})
 	AllowInsecureConnectionsInput() interface{}
+	ClientCertificateMode() *string
+	SetClientCertificateMode(val *string)
+	ClientCertificateModeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -88,6 +91,7 @@ type ContainerAppIngressOutputReference interface {
 	PutIpSecurityRestriction(value interface{})
 	PutTrafficWeight(value interface{})
 	ResetAllowInsecureConnections()
+	ResetClientCertificateMode()
 	ResetExposedPort()
 	ResetExternalEnabled()
 	ResetIpSecurityRestriction()
@@ -122,6 +126,26 @@ func (j *jsiiProxy_ContainerAppIngressOutputReference) AllowInsecureConnectionsI
 	_jsii_.Get(
 		j,
 		"allowInsecureConnectionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppIngressOutputReference) ClientCertificateMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificateMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppIngressOutputReference) ClientCertificateModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificateModeInput",
 		&returns,
 	)
 	return returns
@@ -372,6 +396,17 @@ func (j *jsiiProxy_ContainerAppIngressOutputReference)SetAllowInsecureConnection
 	_jsii_.Set(
 		j,
 		"allowInsecureConnections",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAppIngressOutputReference)SetClientCertificateMode(val *string) {
+	if err := j.validateSetClientCertificateModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientCertificateMode",
 		val,
 	)
 }
@@ -687,6 +722,14 @@ func (c *jsiiProxy_ContainerAppIngressOutputReference) ResetAllowInsecureConnect
 	_jsii_.InvokeVoid(
 		c,
 		"resetAllowInsecureConnections",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppIngressOutputReference) ResetClientCertificateMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetClientCertificateMode",
 		nil, // no parameters
 	)
 }

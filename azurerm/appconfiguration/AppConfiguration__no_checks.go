@@ -115,6 +115,14 @@ func (j *jsiiProxy_AppConfiguration) validateSetCountParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_AppConfiguration) validateSetDataPlaneProxyAuthenticationModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppConfiguration) validateSetDataPlaneProxyPrivateLinkDelegationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -342,6 +342,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowInsecureConnections", GoGetter: "AllowInsecureConnections"},
 			_jsii_.MemberProperty{JsiiProperty: "allowInsecureConnectionsInput", GoGetter: "AllowInsecureConnectionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "clientCertificateMode", GoGetter: "ClientCertificateMode"},
+			_jsii_.MemberProperty{JsiiProperty: "clientCertificateModeInput", GoGetter: "ClientCertificateModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -370,6 +372,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putIpSecurityRestriction", GoMethod: "PutIpSecurityRestriction"},
 			_jsii_.MemberMethod{JsiiMethod: "putTrafficWeight", GoMethod: "PutTrafficWeight"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowInsecureConnections", GoMethod: "ResetAllowInsecureConnections"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClientCertificateMode", GoMethod: "ResetClientCertificateMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExposedPort", GoMethod: "ResetExposedPort"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExternalEnabled", GoMethod: "ResetExternalEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpSecurityRestriction", GoMethod: "ResetIpSecurityRestriction"},

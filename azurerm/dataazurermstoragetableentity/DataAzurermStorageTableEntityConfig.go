@@ -22,20 +22,20 @@ type DataAzurermStorageTableEntityConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/data-sources/storage_table_entity#partition_key DataAzurermStorageTableEntity#partition_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/storage_table_entity#partition_key DataAzurermStorageTableEntity#partition_key}.
 	PartitionKey *string `field:"required" json:"partitionKey" yaml:"partitionKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/data-sources/storage_table_entity#row_key DataAzurermStorageTableEntity#row_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/storage_table_entity#row_key DataAzurermStorageTableEntity#row_key}.
 	RowKey *string `field:"required" json:"rowKey" yaml:"rowKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/data-sources/storage_table_entity#storage_table_id DataAzurermStorageTableEntity#storage_table_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/storage_table_entity#storage_table_id DataAzurermStorageTableEntity#storage_table_id}.
 	StorageTableId *string `field:"required" json:"storageTableId" yaml:"storageTableId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/data-sources/storage_table_entity#id DataAzurermStorageTableEntity#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/storage_table_entity#id DataAzurermStorageTableEntity#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/data-sources/storage_table_entity#timeouts DataAzurermStorageTableEntity#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/storage_table_entity#timeouts DataAzurermStorageTableEntity#timeouts}
 	Timeouts *DataAzurermStorageTableEntityTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/network_interface_backend_address_pool_association azurerm_network_interface_backend_address_pool_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/network_interface_backend_address_pool_association azurerm_network_interface_backend_address_pool_association}.
 type NetworkInterfaceBackendAddressPoolAssociation interface {
 	cdktf.TerraformResource
 	BackendAddressPoolId() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociation) TimeoutsInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/network_interface_backend_address_pool_association azurerm_network_interface_backend_address_pool_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/network_interface_backend_address_pool_association azurerm_network_interface_backend_address_pool_association} Resource.
 func NewNetworkInterfaceBackendAddressPoolAssociation(scope constructs.Construct, id *string, config *NetworkInterfaceBackendAddressPoolAssociationConfig) NetworkInterfaceBackendAddressPoolAssociation {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewNetworkInterfaceBackendAddressPoolAssociation(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/network_interface_backend_address_pool_association azurerm_network_interface_backend_address_pool_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/network_interface_backend_address_pool_association azurerm_network_interface_backend_address_pool_association} Resource.
 func NewNetworkInterfaceBackendAddressPoolAssociation_Override(n NetworkInterfaceBackendAddressPoolAssociation, scope constructs.Construct, id *string, config *NetworkInterfaceBackendAddressPoolAssociationConfig) {
 	_init_.Initialize()
 

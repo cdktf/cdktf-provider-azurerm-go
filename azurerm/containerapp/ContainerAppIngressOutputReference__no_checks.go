@@ -63,6 +63,10 @@ func (j *jsiiProxy_ContainerAppIngressOutputReference) validateSetAllowInsecureC
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppIngressOutputReference) validateSetClientCertificateModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppIngressOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

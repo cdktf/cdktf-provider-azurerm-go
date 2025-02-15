@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/express_route_circuit azurerm_express_route_circuit}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/express_route_circuit azurerm_express_route_circuit}.
 type ExpressRouteCircuit interface {
 	cdktf.TerraformResource
 	AllowClassicOperations() interface{}
@@ -80,6 +80,9 @@ type ExpressRouteCircuit interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	RateLimitingEnabled() interface{}
+	SetRateLimitingEnabled(val interface{})
+	RateLimitingEnabledInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceGroupName() *string
@@ -158,6 +161,7 @@ type ExpressRouteCircuit interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPeeringLocation()
+	ResetRateLimitingEnabled()
 	ResetServiceProviderName()
 	ResetTags()
 	ResetTimeouts()
@@ -479,6 +483,26 @@ func (j *jsiiProxy_ExpressRouteCircuit) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ExpressRouteCircuit) RateLimitingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rateLimitingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ExpressRouteCircuit) RateLimitingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rateLimitingEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ExpressRouteCircuit) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -640,7 +664,7 @@ func (j *jsiiProxy_ExpressRouteCircuit) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/express_route_circuit azurerm_express_route_circuit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/express_route_circuit azurerm_express_route_circuit} Resource.
 func NewExpressRouteCircuit(scope constructs.Construct, id *string, config *ExpressRouteCircuitConfig) ExpressRouteCircuit {
 	_init_.Initialize()
 
@@ -658,7 +682,7 @@ func NewExpressRouteCircuit(scope constructs.Construct, id *string, config *Expr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.18.0/docs/resources/express_route_circuit azurerm_express_route_circuit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/express_route_circuit azurerm_express_route_circuit} Resource.
 func NewExpressRouteCircuit_Override(e ExpressRouteCircuit, scope constructs.Construct, id *string, config *ExpressRouteCircuitConfig) {
 	_init_.Initialize()
 
@@ -832,6 +856,17 @@ func (j *jsiiProxy_ExpressRouteCircuit)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ExpressRouteCircuit)SetRateLimitingEnabled(val interface{}) {
+	if err := j.validateSetRateLimitingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rateLimitingEnabled",
 		val,
 	)
 }
@@ -1304,6 +1339,14 @@ func (e *jsiiProxy_ExpressRouteCircuit) ResetPeeringLocation() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetPeeringLocation",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ExpressRouteCircuit) ResetRateLimitingEnabled() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRateLimitingEnabled",
 		nil, // no parameters
 	)
 }
