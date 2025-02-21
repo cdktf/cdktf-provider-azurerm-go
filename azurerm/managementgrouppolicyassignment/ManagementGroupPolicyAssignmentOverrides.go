@@ -5,11 +5,11 @@ package managementgrouppolicyassignment
 
 
 type ManagementGroupPolicyAssignmentOverrides struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/management_group_policy_assignment#value ManagementGroupPolicyAssignment#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/management_group_policy_assignment#value ManagementGroupPolicyAssignment#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 	// selectors block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/management_group_policy_assignment#selectors ManagementGroupPolicyAssignment#selectors}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/management_group_policy_assignment#selectors ManagementGroupPolicyAssignment#selectors}
 	Selectors interface{} `field:"optional" json:"selectors" yaml:"selectors"`
 }
 

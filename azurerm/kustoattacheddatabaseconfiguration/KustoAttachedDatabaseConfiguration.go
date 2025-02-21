@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/kusto_attached_database_configuration azurerm_kusto_attached_database_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/kusto_attached_database_configuration azurerm_kusto_attached_database_configuration}.
 type KustoAttachedDatabaseConfiguration interface {
 	cdktf.TerraformResource
 	AttachedDatabaseNames() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClusterId() *string
+	SetClusterId(val *string)
+	ClusterIdInput() *string
 	ClusterName() *string
 	SetClusterName(val *string)
 	ClusterNameInput() *string
@@ -135,6 +138,8 @@ type KustoAttachedDatabaseConfiguration interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutSharing(value *KustoAttachedDatabaseConfigurationSharing)
 	PutTimeouts(value *KustoAttachedDatabaseConfigurationTimeouts)
+	ResetClusterId()
+	ResetClusterResourceId()
 	ResetDefaultPrincipalModificationKind()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -175,6 +180,26 @@ func (j *jsiiProxy_KustoAttachedDatabaseConfiguration) CdktfStack() cdktf.Terraf
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KustoAttachedDatabaseConfiguration) ClusterId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KustoAttachedDatabaseConfiguration) ClusterIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterIdInput",
 		&returns,
 	)
 	return returns
@@ -531,7 +556,7 @@ func (j *jsiiProxy_KustoAttachedDatabaseConfiguration) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/kusto_attached_database_configuration azurerm_kusto_attached_database_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/kusto_attached_database_configuration azurerm_kusto_attached_database_configuration} Resource.
 func NewKustoAttachedDatabaseConfiguration(scope constructs.Construct, id *string, config *KustoAttachedDatabaseConfigurationConfig) KustoAttachedDatabaseConfiguration {
 	_init_.Initialize()
 
@@ -549,7 +574,7 @@ func NewKustoAttachedDatabaseConfiguration(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/kusto_attached_database_configuration azurerm_kusto_attached_database_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/kusto_attached_database_configuration azurerm_kusto_attached_database_configuration} Resource.
 func NewKustoAttachedDatabaseConfiguration_Override(k KustoAttachedDatabaseConfiguration, scope constructs.Construct, id *string, config *KustoAttachedDatabaseConfigurationConfig) {
 	_init_.Initialize()
 
@@ -557,6 +582,17 @@ func NewKustoAttachedDatabaseConfiguration_Override(k KustoAttachedDatabaseConfi
 		"@cdktf/provider-azurerm.kustoAttachedDatabaseConfiguration.KustoAttachedDatabaseConfiguration",
 		[]interface{}{scope, id, config},
 		k,
+	)
+}
+
+func (j *jsiiProxy_KustoAttachedDatabaseConfiguration)SetClusterId(val *string) {
+	if err := j.validateSetClusterIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterId",
+		val,
 	)
 }
 
@@ -1088,6 +1124,22 @@ func (k *jsiiProxy_KustoAttachedDatabaseConfiguration) PutTimeouts(value *KustoA
 		k,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KustoAttachedDatabaseConfiguration) ResetClusterId() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetClusterId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KustoAttachedDatabaseConfiguration) ResetClusterResourceId() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetClusterResourceId",
+		nil, // no parameters
 	)
 }
 

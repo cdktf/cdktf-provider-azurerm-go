@@ -14,6 +14,7 @@ import (
 type DataAzurermContainerAppIngressOutputReference interface {
 	cdktf.ComplexObject
 	AllowInsecureConnections() cdktf.IResolvable
+	ClientCertificateMode() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -93,6 +94,16 @@ func (j *jsiiProxy_DataAzurermContainerAppIngressOutputReference) AllowInsecureC
 	_jsii_.Get(
 		j,
 		"allowInsecureConnections",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermContainerAppIngressOutputReference) ClientCertificateMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificateMode",
 		&returns,
 	)
 	return returns

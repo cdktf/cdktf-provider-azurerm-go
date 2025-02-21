@@ -103,6 +103,14 @@ func validatePimEligibleRoleAssignment_IsTerraformResourceParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_PimEligibleRoleAssignment) validateSetConditionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PimEligibleRoleAssignment) validateSetConditionVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PimEligibleRoleAssignment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

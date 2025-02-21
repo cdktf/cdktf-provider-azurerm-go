@@ -12,11 +12,17 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/pim_eligible_role_assignment azurerm_pim_eligible_role_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/pim_eligible_role_assignment azurerm_pim_eligible_role_assignment}.
 type PimEligibleRoleAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Condition() *string
+	SetCondition(val *string)
+	ConditionInput() *string
+	ConditionVersion() *string
+	SetConditionVersion(val *string)
+	ConditionVersionInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -129,6 +135,8 @@ type PimEligibleRoleAssignment interface {
 	PutSchedule(value *PimEligibleRoleAssignmentSchedule)
 	PutTicket(value *PimEligibleRoleAssignmentTicket)
 	PutTimeouts(value *PimEligibleRoleAssignmentTimeouts)
+	ResetCondition()
+	ResetConditionVersion()
 	ResetId()
 	ResetJustification()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -160,6 +168,46 @@ func (j *jsiiProxy_PimEligibleRoleAssignment) CdktfStack() cdktf.TerraformStack 
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PimEligibleRoleAssignment) Condition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"condition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PimEligibleRoleAssignment) ConditionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"conditionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PimEligibleRoleAssignment) ConditionVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"conditionVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PimEligibleRoleAssignment) ConditionVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"conditionVersionInput",
 		&returns,
 	)
 	return returns
@@ -486,7 +534,7 @@ func (j *jsiiProxy_PimEligibleRoleAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/pim_eligible_role_assignment azurerm_pim_eligible_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/pim_eligible_role_assignment azurerm_pim_eligible_role_assignment} Resource.
 func NewPimEligibleRoleAssignment(scope constructs.Construct, id *string, config *PimEligibleRoleAssignmentConfig) PimEligibleRoleAssignment {
 	_init_.Initialize()
 
@@ -504,7 +552,7 @@ func NewPimEligibleRoleAssignment(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/pim_eligible_role_assignment azurerm_pim_eligible_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/pim_eligible_role_assignment azurerm_pim_eligible_role_assignment} Resource.
 func NewPimEligibleRoleAssignment_Override(p PimEligibleRoleAssignment, scope constructs.Construct, id *string, config *PimEligibleRoleAssignmentConfig) {
 	_init_.Initialize()
 
@@ -512,6 +560,28 @@ func NewPimEligibleRoleAssignment_Override(p PimEligibleRoleAssignment, scope co
 		"@cdktf/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment",
 		[]interface{}{scope, id, config},
 		p,
+	)
+}
+
+func (j *jsiiProxy_PimEligibleRoleAssignment)SetCondition(val *string) {
+	if err := j.validateSetConditionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"condition",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PimEligibleRoleAssignment)SetConditionVersion(val *string) {
+	if err := j.validateSetConditionVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"conditionVersion",
+		val,
 	)
 }
 
@@ -1021,6 +1091,22 @@ func (p *jsiiProxy_PimEligibleRoleAssignment) PutTimeouts(value *PimEligibleRole
 		p,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PimEligibleRoleAssignment) ResetCondition() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCondition",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PimEligibleRoleAssignment) ResetConditionVersion() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetConditionVersion",
+		nil, // no parameters
 	)
 }
 

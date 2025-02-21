@@ -12,10 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue}.
 type DataAzurermServicebusQueue interface {
 	cdktf.TerraformDataSource
 	AutoDeleteOnIdle() *string
+	BatchedOperationsEnabled() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -34,6 +35,7 @@ type DataAzurermServicebusQueue interface {
 	EnableBatchedOperations() cdktf.IResolvable
 	EnableExpress() cdktf.IResolvable
 	EnablePartitioning() cdktf.IResolvable
+	ExpressEnabled() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -65,6 +67,7 @@ type DataAzurermServicebusQueue interface {
 	NamespaceNameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PartitioningEnabled() cdktf.IResolvable
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -143,6 +146,16 @@ func (j *jsiiProxy_DataAzurermServicebusQueue) AutoDeleteOnIdle() *string {
 	_jsii_.Get(
 		j,
 		"autoDeleteOnIdle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermServicebusQueue) BatchedOperationsEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"batchedOperationsEnabled",
 		&returns,
 	)
 	return returns
@@ -243,6 +256,16 @@ func (j *jsiiProxy_DataAzurermServicebusQueue) EnablePartitioning() cdktf.IResol
 	_jsii_.Get(
 		j,
 		"enablePartitioning",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermServicebusQueue) ExpressEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"expressEnabled",
 		&returns,
 	)
 	return returns
@@ -428,6 +451,16 @@ func (j *jsiiProxy_DataAzurermServicebusQueue) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermServicebusQueue) PartitioningEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"partitioningEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermServicebusQueue) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -549,7 +582,7 @@ func (j *jsiiProxy_DataAzurermServicebusQueue) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue} Data Source.
 func NewDataAzurermServicebusQueue(scope constructs.Construct, id *string, config *DataAzurermServicebusQueueConfig) DataAzurermServicebusQueue {
 	_init_.Initialize()
 
@@ -567,7 +600,7 @@ func NewDataAzurermServicebusQueue(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue} Data Source.
 func NewDataAzurermServicebusQueue_Override(d DataAzurermServicebusQueue, scope constructs.Construct, id *string, config *DataAzurermServicebusQueueConfig) {
 	_init_.Initialize()
 

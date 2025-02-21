@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis}.
 type DataFactoryIntegrationRuntimeAzureSsis interface {
 	cdktf.TerraformResource
 	CatalogInfo() DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference
@@ -786,7 +786,7 @@ func (j *jsiiProxy_DataFactoryIntegrationRuntimeAzureSsis) VnetIntegrationInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis} Resource.
 func NewDataFactoryIntegrationRuntimeAzureSsis(scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeAzureSsisConfig) DataFactoryIntegrationRuntimeAzureSsis {
 	_init_.Initialize()
 
@@ -804,7 +804,7 @@ func NewDataFactoryIntegrationRuntimeAzureSsis(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis} Resource.
 func NewDataFactoryIntegrationRuntimeAzureSsis_Override(d DataFactoryIntegrationRuntimeAzureSsis, scope constructs.Construct, id *string, config *DataFactoryIntegrationRuntimeAzureSsisConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/kusto_eventgrid_data_connection azurerm_kusto_eventgrid_data_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/kusto_eventgrid_data_connection azurerm_kusto_eventgrid_data_connection}.
 type KustoEventgridDataConnection interface {
 	cdktf.TerraformResource
 	BlobStorageEventType() *string
@@ -46,6 +46,9 @@ type KustoEventgridDataConnection interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EventgridEventSubscriptionId() *string
+	SetEventgridEventSubscriptionId(val *string)
+	EventgridEventSubscriptionIdInput() *string
 	EventgridResourceId() *string
 	SetEventgridResourceId(val *string)
 	EventgridResourceIdInput() *string
@@ -73,6 +76,9 @@ type KustoEventgridDataConnection interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	ManagedIdentityId() *string
+	SetManagedIdentityId(val *string)
+	ManagedIdentityIdInput() *string
 	ManagedIdentityResourceId() *string
 	SetManagedIdentityResourceId(val *string)
 	ManagedIdentityResourceIdInput() *string
@@ -161,8 +167,10 @@ type KustoEventgridDataConnection interface {
 	ResetBlobStorageEventType()
 	ResetDatabaseRoutingType()
 	ResetDataFormat()
+	ResetEventgridEventSubscriptionId()
 	ResetEventgridResourceId()
 	ResetId()
+	ResetManagedIdentityId()
 	ResetManagedIdentityResourceId()
 	ResetMappingRuleName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -339,6 +347,26 @@ func (j *jsiiProxy_KustoEventgridDataConnection) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_KustoEventgridDataConnection) EventgridEventSubscriptionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eventgridEventSubscriptionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KustoEventgridDataConnection) EventgridEventSubscriptionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eventgridEventSubscriptionIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KustoEventgridDataConnection) EventgridResourceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -474,6 +502,26 @@ func (j *jsiiProxy_KustoEventgridDataConnection) LocationInput() *string {
 	_jsii_.Get(
 		j,
 		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KustoEventgridDataConnection) ManagedIdentityId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedIdentityId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KustoEventgridDataConnection) ManagedIdentityIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedIdentityIdInput",
 		&returns,
 	)
 	return returns
@@ -710,7 +758,7 @@ func (j *jsiiProxy_KustoEventgridDataConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/kusto_eventgrid_data_connection azurerm_kusto_eventgrid_data_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/kusto_eventgrid_data_connection azurerm_kusto_eventgrid_data_connection} Resource.
 func NewKustoEventgridDataConnection(scope constructs.Construct, id *string, config *KustoEventgridDataConnectionConfig) KustoEventgridDataConnection {
 	_init_.Initialize()
 
@@ -728,7 +776,7 @@ func NewKustoEventgridDataConnection(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/kusto_eventgrid_data_connection azurerm_kusto_eventgrid_data_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/kusto_eventgrid_data_connection azurerm_kusto_eventgrid_data_connection} Resource.
 func NewKustoEventgridDataConnection_Override(k KustoEventgridDataConnection, scope constructs.Construct, id *string, config *KustoEventgridDataConnectionConfig) {
 	_init_.Initialize()
 
@@ -824,6 +872,17 @@ func (j *jsiiProxy_KustoEventgridDataConnection)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_KustoEventgridDataConnection)SetEventgridEventSubscriptionId(val *string) {
+	if err := j.validateSetEventgridEventSubscriptionIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"eventgridEventSubscriptionId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KustoEventgridDataConnection)SetEventgridResourceId(val *string) {
 	if err := j.validateSetEventgridResourceIdParameters(val); err != nil {
 		panic(err)
@@ -894,6 +953,17 @@ func (j *jsiiProxy_KustoEventgridDataConnection)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KustoEventgridDataConnection)SetManagedIdentityId(val *string) {
+	if err := j.validateSetManagedIdentityIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedIdentityId",
 		val,
 	)
 }
@@ -1382,6 +1452,14 @@ func (k *jsiiProxy_KustoEventgridDataConnection) ResetDataFormat() {
 	)
 }
 
+func (k *jsiiProxy_KustoEventgridDataConnection) ResetEventgridEventSubscriptionId() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetEventgridEventSubscriptionId",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KustoEventgridDataConnection) ResetEventgridResourceId() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1394,6 +1472,14 @@ func (k *jsiiProxy_KustoEventgridDataConnection) ResetId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KustoEventgridDataConnection) ResetManagedIdentityId() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetManagedIdentityId",
 		nil, // no parameters
 	)
 }

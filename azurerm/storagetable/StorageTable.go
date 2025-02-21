@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/storage_table azurerm_storage_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/storage_table azurerm_storage_table}.
 type StorageTable interface {
 	cdktf.TerraformResource
 	Acl() StorageTableAclList
@@ -63,6 +63,7 @@ type StorageTable interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ResourceManagerId() *string
 	StorageAccountName() *string
 	SetStorageAccountName(val *string)
 	StorageAccountNameInput() *string
@@ -333,6 +334,16 @@ func (j *jsiiProxy_StorageTable) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StorageTable) ResourceManagerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceManagerId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageTable) StorageAccountName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -404,7 +415,7 @@ func (j *jsiiProxy_StorageTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/storage_table azurerm_storage_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/storage_table azurerm_storage_table} Resource.
 func NewStorageTable(scope constructs.Construct, id *string, config *StorageTableConfig) StorageTable {
 	_init_.Initialize()
 
@@ -422,7 +433,7 @@ func NewStorageTable(scope constructs.Construct, id *string, config *StorageTabl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/storage_table azurerm_storage_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/storage_table azurerm_storage_table} Resource.
 func NewStorageTable_Override(s StorageTable, scope constructs.Construct, id *string, config *StorageTableConfig) {
 	_init_.Initialize()
 

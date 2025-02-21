@@ -5,7 +5,7 @@ package dataazurermelasticsanvolumesnapshot
 
 
 type DataAzurermElasticSanVolumeSnapshotTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/elastic_san_volume_snapshot#read DataAzurermElasticSanVolumeSnapshot#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/data-sources/elastic_san_volume_snapshot#read DataAzurermElasticSanVolumeSnapshot#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

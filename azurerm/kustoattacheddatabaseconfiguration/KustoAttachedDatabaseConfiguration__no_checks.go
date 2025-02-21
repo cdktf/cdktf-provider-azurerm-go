@@ -99,6 +99,10 @@ func validateKustoAttachedDatabaseConfiguration_IsTerraformResourceParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_KustoAttachedDatabaseConfiguration) validateSetClusterIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoAttachedDatabaseConfiguration) validateSetClusterNameParameters(val *string) error {
 	return nil
 }

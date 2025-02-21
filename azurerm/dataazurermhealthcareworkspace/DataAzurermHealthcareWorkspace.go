@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/healthcare_workspace azurerm_healthcare_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/data-sources/healthcare_workspace azurerm_healthcare_workspace}.
 type DataAzurermHealthcareWorkspace interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_DataAzurermHealthcareWorkspace) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/healthcare_workspace azurerm_healthcare_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/data-sources/healthcare_workspace azurerm_healthcare_workspace} Data Source.
 func NewDataAzurermHealthcareWorkspace(scope constructs.Construct, id *string, config *DataAzurermHealthcareWorkspaceConfig) DataAzurermHealthcareWorkspace {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewDataAzurermHealthcareWorkspace(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/data-sources/healthcare_workspace azurerm_healthcare_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/data-sources/healthcare_workspace azurerm_healthcare_workspace} Data Source.
 func NewDataAzurermHealthcareWorkspace_Override(d DataAzurermHealthcareWorkspace, scope constructs.Construct, id *string, config *DataAzurermHealthcareWorkspaceConfig) {
 	_init_.Initialize()
 

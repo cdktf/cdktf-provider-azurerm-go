@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/key_vault_managed_hardware_security_module_key_rotation_policy azurerm_key_vault_managed_hardware_security_module_key_rotation_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/key_vault_managed_hardware_security_module_key_rotation_policy azurerm_key_vault_managed_hardware_security_module_key_rotation_policy}.
 type KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy) Timeo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/key_vault_managed_hardware_security_module_key_rotation_policy azurerm_key_vault_managed_hardware_security_module_key_rotation_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/key_vault_managed_hardware_security_module_key_rotation_policy azurerm_key_vault_managed_hardware_security_module_key_rotation_policy} Resource.
 func NewKeyVaultManagedHardwareSecurityModuleKeyRotationPolicy(scope constructs.Construct, id *string, config *KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyConfig) KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewKeyVaultManagedHardwareSecurityModuleKeyRotationPolicy(scope constructs.
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/key_vault_managed_hardware_security_module_key_rotation_policy azurerm_key_vault_managed_hardware_security_module_key_rotation_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/key_vault_managed_hardware_security_module_key_rotation_policy azurerm_key_vault_managed_hardware_security_module_key_rotation_policy} Resource.
 func NewKeyVaultManagedHardwareSecurityModuleKeyRotationPolicy_Override(k KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy, scope constructs.Construct, id *string, config *KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyConfig) {
 	_init_.Initialize()
 

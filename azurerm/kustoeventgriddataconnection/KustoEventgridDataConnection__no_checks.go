@@ -123,6 +123,10 @@ func (j *jsiiProxy_KustoEventgridDataConnection) validateSetDataFormatParameters
 	return nil
 }
 
+func (j *jsiiProxy_KustoEventgridDataConnection) validateSetEventgridEventSubscriptionIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoEventgridDataConnection) validateSetEventgridResourceIdParameters(val *string) error {
 	return nil
 }
@@ -144,6 +148,10 @@ func (j *jsiiProxy_KustoEventgridDataConnection) validateSetLifecycleParameters(
 }
 
 func (j *jsiiProxy_KustoEventgridDataConnection) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KustoEventgridDataConnection) validateSetManagedIdentityIdParameters(val *string) error {
 	return nil
 }
 

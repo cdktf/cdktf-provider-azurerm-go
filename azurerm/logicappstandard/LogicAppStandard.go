@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/logic_app_standard azurerm_logic_app_standard}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/logic_app_standard azurerm_logic_app_standard}.
 type LogicAppStandard interface {
 	cdktf.TerraformResource
 	AppServicePlanId() *string
@@ -61,6 +61,9 @@ type LogicAppStandard interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	FtpPublishBasicAuthenticationEnabled() interface{}
+	SetFtpPublishBasicAuthenticationEnabled(val interface{})
+	FtpPublishBasicAuthenticationEnabledInput() interface{}
 	HttpsOnly() interface{}
 	SetHttpsOnly(val interface{})
 	HttpsOnlyInput() interface{}
@@ -100,6 +103,9 @@ type LogicAppStandard interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	ScmPublishBasicAuthenticationEnabled() interface{}
+	SetScmPublishBasicAuthenticationEnabled(val interface{})
+	ScmPublishBasicAuthenticationEnabledInput() interface{}
 	SiteConfig() LogicAppStandardSiteConfigOutputReference
 	SiteConfigInput() *LogicAppStandardSiteConfig
 	SiteCredential() LogicAppStandardSiteCredentialList
@@ -185,6 +191,7 @@ type LogicAppStandard interface {
 	ResetClientCertificateMode()
 	ResetConnectionString()
 	ResetEnabled()
+	ResetFtpPublishBasicAuthenticationEnabled()
 	ResetHttpsOnly()
 	ResetId()
 	ResetIdentity()
@@ -192,6 +199,7 @@ type LogicAppStandard interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPublicNetworkAccess()
+	ResetScmPublishBasicAuthenticationEnabled()
 	ResetSiteConfig()
 	ResetStorageAccountShareName()
 	ResetTags()
@@ -457,6 +465,26 @@ func (j *jsiiProxy_LogicAppStandard) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LogicAppStandard) FtpPublishBasicAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ftpPublishBasicAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogicAppStandard) FtpPublishBasicAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ftpPublishBasicAuthenticationEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogicAppStandard) HttpsOnly() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -672,6 +700,26 @@ func (j *jsiiProxy_LogicAppStandard) ResourceGroupNameInput() *string {
 	_jsii_.Get(
 		j,
 		"resourceGroupNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogicAppStandard) ScmPublishBasicAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scmPublishBasicAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogicAppStandard) ScmPublishBasicAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scmPublishBasicAuthenticationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -898,7 +946,7 @@ func (j *jsiiProxy_LogicAppStandard) VirtualNetworkSubnetIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/logic_app_standard azurerm_logic_app_standard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/logic_app_standard azurerm_logic_app_standard} Resource.
 func NewLogicAppStandard(scope constructs.Construct, id *string, config *LogicAppStandardConfig) LogicAppStandard {
 	_init_.Initialize()
 
@@ -916,7 +964,7 @@ func NewLogicAppStandard(scope constructs.Construct, id *string, config *LogicAp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.19.0/docs/resources/logic_app_standard azurerm_logic_app_standard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/logic_app_standard azurerm_logic_app_standard} Resource.
 func NewLogicAppStandard_Override(l LogicAppStandard, scope constructs.Construct, id *string, config *LogicAppStandardConfig) {
 	_init_.Initialize()
 
@@ -1031,6 +1079,17 @@ func (j *jsiiProxy_LogicAppStandard)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
+func (j *jsiiProxy_LogicAppStandard)SetFtpPublishBasicAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetFtpPublishBasicAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ftpPublishBasicAuthenticationEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LogicAppStandard)SetHttpsOnly(val interface{}) {
 	if err := j.validateSetHttpsOnlyParameters(val); err != nil {
 		panic(err)
@@ -1123,6 +1182,17 @@ func (j *jsiiProxy_LogicAppStandard)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogicAppStandard)SetScmPublishBasicAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetScmPublishBasicAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scmPublishBasicAuthenticationEnabled",
 		val,
 	)
 }
@@ -1649,6 +1719,14 @@ func (l *jsiiProxy_LogicAppStandard) ResetEnabled() {
 	)
 }
 
+func (l *jsiiProxy_LogicAppStandard) ResetFtpPublishBasicAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFtpPublishBasicAuthenticationEnabled",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LogicAppStandard) ResetHttpsOnly() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1685,6 +1763,14 @@ func (l *jsiiProxy_LogicAppStandard) ResetPublicNetworkAccess() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPublicNetworkAccess",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogicAppStandard) ResetScmPublishBasicAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetScmPublishBasicAuthenticationEnabled",
 		nil, // no parameters
 	)
 }
