@@ -5,7 +5,7 @@ package dataazurermautomationvariabledatetime
 
 
 type DataAzurermAutomationVariableDatetimeTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/data-sources/automation_variable_datetime#read DataAzurermAutomationVariableDatetime#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/data-sources/automation_variable_datetime#read DataAzurermAutomationVariableDatetime#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

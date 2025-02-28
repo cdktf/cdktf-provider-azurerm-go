@@ -111,6 +111,14 @@ func (j *jsiiProxy_PostgresqlServer) validateSetAdministratorLoginPasswordParame
 	return nil
 }
 
+func (j *jsiiProxy_PostgresqlServer) validateSetAdministratorLoginPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PostgresqlServer) validateSetAdministratorLoginPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlServer) validateSetAutoGrowEnabledParameters(val interface{}) error {
 	return nil
 }

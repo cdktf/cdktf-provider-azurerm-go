@@ -5,7 +5,7 @@ package cosmosdbcassandratable
 
 
 type CosmosdbCassandraTableSchemaPartitionKey struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

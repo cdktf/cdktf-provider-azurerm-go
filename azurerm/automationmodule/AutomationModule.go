@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/automation_module azurerm_automation_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/automation_module azurerm_automation_module}.
 type AutomationModule interface {
 	cdktf.TerraformResource
 	AutomationAccountName() *string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_AutomationModule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/automation_module azurerm_automation_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/automation_module azurerm_automation_module} Resource.
 func NewAutomationModule(scope constructs.Construct, id *string, config *AutomationModuleConfig) AutomationModule {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewAutomationModule(scope constructs.Construct, id *string, config *Automat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/automation_module azurerm_automation_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/automation_module azurerm_automation_module} Resource.
 func NewAutomationModule_Override(a AutomationModule, scope constructs.Construct, id *string, config *AutomationModuleConfig) {
 	_init_.Initialize()
 

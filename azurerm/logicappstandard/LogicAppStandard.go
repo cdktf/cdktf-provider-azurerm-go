@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/logic_app_standard azurerm_logic_app_standard}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/logic_app_standard azurerm_logic_app_standard}.
 type LogicAppStandard interface {
 	cdktf.TerraformResource
 	AppServicePlanId() *string
@@ -138,6 +138,9 @@ type LogicAppStandard interface {
 	VirtualNetworkSubnetId() *string
 	SetVirtualNetworkSubnetId(val *string)
 	VirtualNetworkSubnetIdInput() *string
+	VnetContentShareEnabled() interface{}
+	SetVnetContentShareEnabled(val interface{})
+	VnetContentShareEnabledInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -207,6 +210,7 @@ type LogicAppStandard interface {
 	ResetUseExtensionBundle()
 	ResetVersion()
 	ResetVirtualNetworkSubnetId()
+	ResetVnetContentShareEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -945,8 +949,28 @@ func (j *jsiiProxy_LogicAppStandard) VirtualNetworkSubnetIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LogicAppStandard) VnetContentShareEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vnetContentShareEnabled",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/logic_app_standard azurerm_logic_app_standard} Resource.
+func (j *jsiiProxy_LogicAppStandard) VnetContentShareEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vnetContentShareEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/logic_app_standard azurerm_logic_app_standard} Resource.
 func NewLogicAppStandard(scope constructs.Construct, id *string, config *LogicAppStandardConfig) LogicAppStandard {
 	_init_.Initialize()
 
@@ -964,7 +988,7 @@ func NewLogicAppStandard(scope constructs.Construct, id *string, config *LogicAp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/logic_app_standard azurerm_logic_app_standard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/logic_app_standard azurerm_logic_app_standard} Resource.
 func NewLogicAppStandard_Override(l LogicAppStandard, scope constructs.Construct, id *string, config *LogicAppStandardConfig) {
 	_init_.Initialize()
 
@@ -1270,6 +1294,17 @@ func (j *jsiiProxy_LogicAppStandard)SetVirtualNetworkSubnetId(val *string) {
 	_jsii_.Set(
 		j,
 		"virtualNetworkSubnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogicAppStandard)SetVnetContentShareEnabled(val interface{}) {
+	if err := j.validateSetVnetContentShareEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vnetContentShareEnabled",
 		val,
 	)
 }
@@ -1827,6 +1862,14 @@ func (l *jsiiProxy_LogicAppStandard) ResetVirtualNetworkSubnetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetVirtualNetworkSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogicAppStandard) ResetVnetContentShareEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetVnetContentShareEnabled",
 		nil, // no parameters
 	)
 }

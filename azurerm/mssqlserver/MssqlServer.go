@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/mssql_server azurerm_mssql_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/mssql_server azurerm_mssql_server}.
 type MssqlServer interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -21,6 +21,12 @@ type MssqlServer interface {
 	AdministratorLoginPassword() *string
 	SetAdministratorLoginPassword(val *string)
 	AdministratorLoginPasswordInput() *string
+	AdministratorLoginPasswordWo() *string
+	SetAdministratorLoginPasswordWo(val *string)
+	AdministratorLoginPasswordWoInput() *string
+	AdministratorLoginPasswordWoVersion() *float64
+	SetAdministratorLoginPasswordWoVersion(val *float64)
+	AdministratorLoginPasswordWoVersionInput() *float64
 	AzureadAdministrator() MssqlServerAzureadAdministratorOutputReference
 	AzureadAdministratorInput() *MssqlServerAzureadAdministrator
 	// Experimental.
@@ -159,6 +165,8 @@ type MssqlServer interface {
 	PutTimeouts(value *MssqlServerTimeouts)
 	ResetAdministratorLogin()
 	ResetAdministratorLoginPassword()
+	ResetAdministratorLoginPasswordWo()
+	ResetAdministratorLoginPasswordWoVersion()
 	ResetAzureadAdministrator()
 	ResetConnectionPolicy()
 	ResetId()
@@ -226,6 +234,46 @@ func (j *jsiiProxy_MssqlServer) AdministratorLoginPasswordInput() *string {
 	_jsii_.Get(
 		j,
 		"administratorLoginPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlServer) AdministratorLoginPasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"administratorLoginPasswordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlServer) AdministratorLoginPasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"administratorLoginPasswordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlServer) AdministratorLoginPasswordWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"administratorLoginPasswordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlServer) AdministratorLoginPasswordWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"administratorLoginPasswordWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -712,7 +760,7 @@ func (j *jsiiProxy_MssqlServer) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
 func NewMssqlServer(scope constructs.Construct, id *string, config *MssqlServerConfig) MssqlServer {
 	_init_.Initialize()
 
@@ -730,7 +778,7 @@ func NewMssqlServer(scope constructs.Construct, id *string, config *MssqlServerC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
 func NewMssqlServer_Override(m MssqlServer, scope constructs.Construct, id *string, config *MssqlServerConfig) {
 	_init_.Initialize()
 
@@ -759,6 +807,28 @@ func (j *jsiiProxy_MssqlServer)SetAdministratorLoginPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"administratorLoginPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlServer)SetAdministratorLoginPasswordWo(val *string) {
+	if err := j.validateSetAdministratorLoginPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"administratorLoginPasswordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlServer)SetAdministratorLoginPasswordWoVersion(val *float64) {
+	if err := j.validateSetAdministratorLoginPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"administratorLoginPasswordWoVersion",
 		val,
 	)
 }
@@ -1361,6 +1431,22 @@ func (m *jsiiProxy_MssqlServer) ResetAdministratorLoginPassword() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetAdministratorLoginPassword",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlServer) ResetAdministratorLoginPasswordWo() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAdministratorLoginPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlServer) ResetAdministratorLoginPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAdministratorLoginPasswordWoVersion",
 		nil, // no parameters
 	)
 }

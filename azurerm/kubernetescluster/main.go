@@ -163,6 +163,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putServicePrincipal", GoMethod: "PutServicePrincipal"},
 			_jsii_.MemberMethod{JsiiMethod: "putStorageProfile", GoMethod: "PutStorageProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "putUpgradeOverride", GoMethod: "PutUpgradeOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "putWebAppRouting", GoMethod: "PutWebAppRouting"},
 			_jsii_.MemberMethod{JsiiMethod: "putWindowsProfile", GoMethod: "PutWindowsProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "putWorkloadAutoscalerProfile", GoMethod: "PutWorkloadAutoscalerProfile"},
@@ -216,6 +217,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSupportPlan", GoMethod: "ResetSupportPlan"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUpgradeOverride", GoMethod: "ResetUpgradeOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWebAppRouting", GoMethod: "ResetWebAppRouting"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWindowsProfile", GoMethod: "ResetWindowsProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadAutoscalerProfile", GoMethod: "ResetWorkloadAutoscalerProfile"},
@@ -249,6 +251,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "upgradeOverride", GoGetter: "UpgradeOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "upgradeOverrideInput", GoGetter: "UpgradeOverrideInput"},
 			_jsii_.MemberProperty{JsiiProperty: "webAppRouting", GoGetter: "WebAppRouting"},
 			_jsii_.MemberProperty{JsiiProperty: "webAppRoutingInput", GoGetter: "WebAppRoutingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "windowsProfile", GoGetter: "WindowsProfile"},
@@ -2734,6 +2738,47 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KubernetesClusterTimeoutsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverride",
+		reflect.TypeOf((*KubernetesClusterUpgradeOverride)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverrideOutputReference",
+		reflect.TypeOf((*KubernetesClusterUpgradeOverrideOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveUntil", GoGetter: "EffectiveUntil"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveUntilInput", GoGetter: "EffectiveUntilInput"},
+			_jsii_.MemberProperty{JsiiProperty: "forceUpgradeEnabled", GoGetter: "ForceUpgradeEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "forceUpgradeEnabledInput", GoGetter: "ForceUpgradeEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEffectiveUntil", GoMethod: "ResetEffectiveUntil"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KubernetesClusterUpgradeOverrideOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

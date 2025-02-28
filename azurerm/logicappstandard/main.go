@@ -102,6 +102,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetUseExtensionBundle", GoMethod: "ResetUseExtensionBundle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVersion", GoMethod: "ResetVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVirtualNetworkSubnetId", GoMethod: "ResetVirtualNetworkSubnetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVnetContentShareEnabled", GoMethod: "ResetVnetContentShareEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupName", GoGetter: "ResourceGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceGroupNameInput", GoGetter: "ResourceGroupNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "scmPublishBasicAuthenticationEnabled", GoGetter: "ScmPublishBasicAuthenticationEnabled"},
@@ -134,6 +135,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkSubnetId", GoGetter: "VirtualNetworkSubnetId"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkSubnetIdInput", GoGetter: "VirtualNetworkSubnetIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "vnetContentShareEnabled", GoGetter: "VnetContentShareEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "vnetContentShareEnabledInput", GoGetter: "VnetContentShareEnabledInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_LogicAppStandard{}

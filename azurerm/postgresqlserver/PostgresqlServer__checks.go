@@ -296,6 +296,22 @@ func (j *jsiiProxy_PostgresqlServer) validateSetAdministratorLoginPasswordParame
 	return nil
 }
 
+func (j *jsiiProxy_PostgresqlServer) validateSetAdministratorLoginPasswordWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PostgresqlServer) validateSetAdministratorLoginPasswordWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlServer) validateSetAutoGrowEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

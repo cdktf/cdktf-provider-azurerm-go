@@ -5,7 +5,7 @@ package dataazurermelasticsan
 
 
 type DataAzurermElasticSanTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/data-sources/elastic_san#read DataAzurermElasticSan#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/data-sources/elastic_san#read DataAzurermElasticSan#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

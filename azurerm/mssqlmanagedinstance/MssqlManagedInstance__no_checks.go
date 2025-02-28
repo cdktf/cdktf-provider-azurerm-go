@@ -123,7 +123,15 @@ func (j *jsiiProxy_MssqlManagedInstance) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_MssqlManagedInstance) validateSetDatabaseFormatParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlManagedInstance) validateSetDnsZonePartnerIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MssqlManagedInstance) validateSetHybridSecondaryUsageParameters(val *string) error {
 	return nil
 }
 

@@ -171,6 +171,10 @@ func (k *jsiiProxy_KubernetesCluster) validatePutTimeoutsParameters(value *Kuber
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesCluster) validatePutUpgradeOverrideParameters(value *KubernetesClusterUpgradeOverride) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesCluster) validatePutWebAppRoutingParameters(value *KubernetesClusterWebAppRouting) error {
 	return nil
 }

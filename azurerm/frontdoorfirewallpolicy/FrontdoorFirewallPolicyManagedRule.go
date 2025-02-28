@@ -5,17 +5,17 @@ package frontdoorfirewallpolicy
 
 
 type FrontdoorFirewallPolicyManagedRule struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/frontdoor_firewall_policy#type FrontdoorFirewallPolicy#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/frontdoor_firewall_policy#type FrontdoorFirewallPolicy#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/frontdoor_firewall_policy#version FrontdoorFirewallPolicy#version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/frontdoor_firewall_policy#version FrontdoorFirewallPolicy#version}.
 	Version *string `field:"required" json:"version" yaml:"version"`
 	// exclusion block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/frontdoor_firewall_policy#exclusion FrontdoorFirewallPolicy#exclusion}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/frontdoor_firewall_policy#exclusion FrontdoorFirewallPolicy#exclusion}
 	Exclusion interface{} `field:"optional" json:"exclusion" yaml:"exclusion"`
 	// override block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/frontdoor_firewall_policy#override FrontdoorFirewallPolicy#override}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/frontdoor_firewall_policy#override FrontdoorFirewallPolicy#override}
 	Override interface{} `field:"optional" json:"override" yaml:"override"`
 }
 

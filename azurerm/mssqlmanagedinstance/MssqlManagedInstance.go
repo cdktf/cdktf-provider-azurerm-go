@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance}.
 type MssqlManagedInstance interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -38,6 +38,9 @@ type MssqlManagedInstance interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DatabaseFormat() *string
+	SetDatabaseFormat(val *string)
+	DatabaseFormatInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,6 +58,9 @@ type MssqlManagedInstance interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HybridSecondaryUsage() *string
+	SetHybridSecondaryUsage(val *string)
+	HybridSecondaryUsageInput() *string
 	Id() *string
 	SetId(val *string)
 	Identity() MssqlManagedInstanceIdentityOutputReference
@@ -185,7 +191,9 @@ type MssqlManagedInstance interface {
 	ResetAdministratorLoginPassword()
 	ResetAzureActiveDirectoryAdministrator()
 	ResetCollation()
+	ResetDatabaseFormat()
 	ResetDnsZonePartnerId()
+	ResetHybridSecondaryUsage()
 	ResetId()
 	ResetIdentity()
 	ResetMaintenanceConfigurationName()
@@ -339,6 +347,26 @@ func (j *jsiiProxy_MssqlManagedInstance) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MssqlManagedInstance) DatabaseFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlManagedInstance) DatabaseFormatInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseFormatInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MssqlManagedInstance) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -414,6 +442,26 @@ func (j *jsiiProxy_MssqlManagedInstance) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlManagedInstance) HybridSecondaryUsage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hybridSecondaryUsage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlManagedInstance) HybridSecondaryUsageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hybridSecondaryUsageInput",
 		&returns,
 	)
 	return returns
@@ -900,7 +948,7 @@ func (j *jsiiProxy_MssqlManagedInstance) ZoneRedundantEnabledInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
 func NewMssqlManagedInstance(scope constructs.Construct, id *string, config *MssqlManagedInstanceConfig) MssqlManagedInstance {
 	_init_.Initialize()
 
@@ -918,7 +966,7 @@ func NewMssqlManagedInstance(scope constructs.Construct, id *string, config *Mss
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance} Resource.
 func NewMssqlManagedInstance_Override(m MssqlManagedInstance, scope constructs.Construct, id *string, config *MssqlManagedInstanceConfig) {
 	_init_.Initialize()
 
@@ -984,6 +1032,17 @@ func (j *jsiiProxy_MssqlManagedInstance)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_MssqlManagedInstance)SetDatabaseFormat(val *string) {
+	if err := j.validateSetDatabaseFormatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseFormat",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MssqlManagedInstance)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1007,6 +1066,17 @@ func (j *jsiiProxy_MssqlManagedInstance)SetForEach(val cdktf.ITerraformIterator)
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlManagedInstance)SetHybridSecondaryUsage(val *string) {
+	if err := j.validateSetHybridSecondaryUsageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hybridSecondaryUsage",
 		val,
 	)
 }
@@ -1657,10 +1727,26 @@ func (m *jsiiProxy_MssqlManagedInstance) ResetCollation() {
 	)
 }
 
+func (m *jsiiProxy_MssqlManagedInstance) ResetDatabaseFormat() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDatabaseFormat",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MssqlManagedInstance) ResetDnsZonePartnerId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetDnsZonePartnerId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlManagedInstance) ResetHybridSecondaryUsage() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetHybridSecondaryUsage",
 		nil, // no parameters
 	)
 }

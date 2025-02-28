@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server}.
 type MysqlFlexibleServer interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -21,6 +21,12 @@ type MysqlFlexibleServer interface {
 	AdministratorPassword() *string
 	SetAdministratorPassword(val *string)
 	AdministratorPasswordInput() *string
+	AdministratorPasswordWo() *string
+	SetAdministratorPasswordWo(val *string)
+	AdministratorPasswordWoInput() *string
+	AdministratorPasswordWoVersion() *float64
+	SetAdministratorPasswordWoVersion(val *float64)
+	AdministratorPasswordWoVersionInput() *float64
 	BackupRetentionDays() *float64
 	SetBackupRetentionDays(val *float64)
 	BackupRetentionDaysInput() *float64
@@ -181,6 +187,8 @@ type MysqlFlexibleServer interface {
 	PutTimeouts(value *MysqlFlexibleServerTimeouts)
 	ResetAdministratorLogin()
 	ResetAdministratorPassword()
+	ResetAdministratorPasswordWo()
+	ResetAdministratorPasswordWoVersion()
 	ResetBackupRetentionDays()
 	ResetCreateMode()
 	ResetCustomerManagedKey()
@@ -256,6 +264,46 @@ func (j *jsiiProxy_MysqlFlexibleServer) AdministratorPasswordInput() *string {
 	_jsii_.Get(
 		j,
 		"administratorPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MysqlFlexibleServer) AdministratorPasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"administratorPasswordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MysqlFlexibleServer) AdministratorPasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"administratorPasswordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MysqlFlexibleServer) AdministratorPasswordWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"administratorPasswordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MysqlFlexibleServer) AdministratorPasswordWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"administratorPasswordWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -892,7 +940,7 @@ func (j *jsiiProxy_MysqlFlexibleServer) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server} Resource.
 func NewMysqlFlexibleServer(scope constructs.Construct, id *string, config *MysqlFlexibleServerConfig) MysqlFlexibleServer {
 	_init_.Initialize()
 
@@ -910,7 +958,7 @@ func NewMysqlFlexibleServer(scope constructs.Construct, id *string, config *Mysq
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server} Resource.
 func NewMysqlFlexibleServer_Override(m MysqlFlexibleServer, scope constructs.Construct, id *string, config *MysqlFlexibleServerConfig) {
 	_init_.Initialize()
 
@@ -939,6 +987,28 @@ func (j *jsiiProxy_MysqlFlexibleServer)SetAdministratorPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"administratorPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MysqlFlexibleServer)SetAdministratorPasswordWo(val *string) {
+	if err := j.validateSetAdministratorPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"administratorPasswordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MysqlFlexibleServer)SetAdministratorPasswordWoVersion(val *float64) {
+	if err := j.validateSetAdministratorPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"administratorPasswordWoVersion",
 		val,
 	)
 }
@@ -1618,6 +1688,22 @@ func (m *jsiiProxy_MysqlFlexibleServer) ResetAdministratorPassword() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetAdministratorPassword",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MysqlFlexibleServer) ResetAdministratorPasswordWo() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAdministratorPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MysqlFlexibleServer) ResetAdministratorPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAdministratorPasswordWoVersion",
 		nil, // no parameters
 	)
 }

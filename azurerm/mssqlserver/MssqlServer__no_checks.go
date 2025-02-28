@@ -111,6 +111,14 @@ func (j *jsiiProxy_MssqlServer) validateSetAdministratorLoginPasswordParameters(
 	return nil
 }
 
+func (j *jsiiProxy_MssqlServer) validateSetAdministratorLoginPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MssqlServer) validateSetAdministratorLoginPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlServer) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

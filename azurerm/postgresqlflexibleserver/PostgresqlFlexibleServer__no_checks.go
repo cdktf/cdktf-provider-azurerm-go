@@ -123,6 +123,14 @@ func (j *jsiiProxy_PostgresqlFlexibleServer) validateSetAdministratorPasswordPar
 	return nil
 }
 
+func (j *jsiiProxy_PostgresqlFlexibleServer) validateSetAdministratorPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PostgresqlFlexibleServer) validateSetAdministratorPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresqlFlexibleServer) validateSetAutoGrowEnabledParameters(val interface{}) error {
 	return nil
 }

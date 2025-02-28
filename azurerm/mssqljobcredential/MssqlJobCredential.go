@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/mssql_job_credential azurerm_mssql_job_credential}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/mssql_job_credential azurerm_mssql_job_credential}.
 type MssqlJobCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -57,6 +57,12 @@ type MssqlJobCredential interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordWo() *string
+	SetPasswordWo(val *string)
+	PasswordWoInput() *string
+	PasswordWoVersion() *float64
+	SetPasswordWoVersion(val *float64)
+	PasswordWoVersionInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -126,6 +132,9 @@ type MssqlJobCredential interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPassword()
+	ResetPasswordWo()
+	ResetPasswordWoVersion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -325,6 +334,46 @@ func (j *jsiiProxy_MssqlJobCredential) PasswordInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MssqlJobCredential) PasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlJobCredential) PasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlJobCredential) PasswordWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlJobCredential) PasswordWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MssqlJobCredential) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -426,7 +475,7 @@ func (j *jsiiProxy_MssqlJobCredential) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/mssql_job_credential azurerm_mssql_job_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/mssql_job_credential azurerm_mssql_job_credential} Resource.
 func NewMssqlJobCredential(scope constructs.Construct, id *string, config *MssqlJobCredentialConfig) MssqlJobCredential {
 	_init_.Initialize()
 
@@ -444,7 +493,7 @@ func NewMssqlJobCredential(scope constructs.Construct, id *string, config *Mssql
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/mssql_job_credential azurerm_mssql_job_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/mssql_job_credential azurerm_mssql_job_credential} Resource.
 func NewMssqlJobCredential_Override(m MssqlJobCredential, scope constructs.Construct, id *string, config *MssqlJobCredentialConfig) {
 	_init_.Initialize()
 
@@ -544,6 +593,28 @@ func (j *jsiiProxy_MssqlJobCredential)SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlJobCredential)SetPasswordWo(val *string) {
+	if err := j.validateSetPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlJobCredential)SetPasswordWoVersion(val *float64) {
+	if err := j.validateSetPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWoVersion",
 		val,
 	)
 }
@@ -954,6 +1025,30 @@ func (m *jsiiProxy_MssqlJobCredential) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlJobCredential) ResetPassword() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlJobCredential) ResetPasswordWo() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlJobCredential) ResetPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPasswordWoVersion",
 		nil, // no parameters
 	)
 }

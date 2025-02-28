@@ -296,6 +296,22 @@ func (j *jsiiProxy_MssqlServer) validateSetAdministratorLoginPasswordParameters(
 	return nil
 }
 
+func (j *jsiiProxy_MssqlServer) validateSetAdministratorLoginPasswordWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MssqlServer) validateSetAdministratorLoginPasswordWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MssqlServer) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

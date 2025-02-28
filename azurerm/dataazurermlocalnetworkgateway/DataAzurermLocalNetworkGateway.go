@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/data-sources/local_network_gateway azurerm_local_network_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/data-sources/local_network_gateway azurerm_local_network_gateway}.
 type DataAzurermLocalNetworkGateway interface {
 	cdktf.TerraformDataSource
 	AddressSpace() *[]*string
@@ -401,7 +401,7 @@ func (j *jsiiProxy_DataAzurermLocalNetworkGateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/data-sources/local_network_gateway azurerm_local_network_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/data-sources/local_network_gateway azurerm_local_network_gateway} Data Source.
 func NewDataAzurermLocalNetworkGateway(scope constructs.Construct, id *string, config *DataAzurermLocalNetworkGatewayConfig) DataAzurermLocalNetworkGateway {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewDataAzurermLocalNetworkGateway(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/data-sources/local_network_gateway azurerm_local_network_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/data-sources/local_network_gateway azurerm_local_network_gateway} Data Source.
 func NewDataAzurermLocalNetworkGateway_Override(d DataAzurermLocalNetworkGateway, scope constructs.Construct, id *string, config *DataAzurermLocalNetworkGatewayConfig) {
 	_init_.Initialize()
 

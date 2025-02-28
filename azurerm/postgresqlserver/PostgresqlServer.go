@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/postgresql_server azurerm_postgresql_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/postgresql_server azurerm_postgresql_server}.
 type PostgresqlServer interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -21,6 +21,12 @@ type PostgresqlServer interface {
 	AdministratorLoginPassword() *string
 	SetAdministratorLoginPassword(val *string)
 	AdministratorLoginPasswordInput() *string
+	AdministratorLoginPasswordWo() *string
+	SetAdministratorLoginPasswordWo(val *string)
+	AdministratorLoginPasswordWoInput() *string
+	AdministratorLoginPasswordWoVersion() *float64
+	SetAdministratorLoginPasswordWoVersion(val *float64)
+	AdministratorLoginPasswordWoVersionInput() *float64
 	AutoGrowEnabled() interface{}
 	SetAutoGrowEnabled(val interface{})
 	AutoGrowEnabledInput() interface{}
@@ -176,6 +182,8 @@ type PostgresqlServer interface {
 	PutTimeouts(value *PostgresqlServerTimeouts)
 	ResetAdministratorLogin()
 	ResetAdministratorLoginPassword()
+	ResetAdministratorLoginPasswordWo()
+	ResetAdministratorLoginPasswordWoVersion()
 	ResetAutoGrowEnabled()
 	ResetBackupRetentionDays()
 	ResetCreateMode()
@@ -247,6 +255,46 @@ func (j *jsiiProxy_PostgresqlServer) AdministratorLoginPasswordInput() *string {
 	_jsii_.Get(
 		j,
 		"administratorLoginPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlServer) AdministratorLoginPasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"administratorLoginPasswordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlServer) AdministratorLoginPasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"administratorLoginPasswordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlServer) AdministratorLoginPasswordWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"administratorLoginPasswordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresqlServer) AdministratorLoginPasswordWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"administratorLoginPasswordWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -843,7 +891,7 @@ func (j *jsiiProxy_PostgresqlServer) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/postgresql_server azurerm_postgresql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/postgresql_server azurerm_postgresql_server} Resource.
 func NewPostgresqlServer(scope constructs.Construct, id *string, config *PostgresqlServerConfig) PostgresqlServer {
 	_init_.Initialize()
 
@@ -861,7 +909,7 @@ func NewPostgresqlServer(scope constructs.Construct, id *string, config *Postgre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/postgresql_server azurerm_postgresql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/postgresql_server azurerm_postgresql_server} Resource.
 func NewPostgresqlServer_Override(p PostgresqlServer, scope constructs.Construct, id *string, config *PostgresqlServerConfig) {
 	_init_.Initialize()
 
@@ -890,6 +938,28 @@ func (j *jsiiProxy_PostgresqlServer)SetAdministratorLoginPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"administratorLoginPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresqlServer)SetAdministratorLoginPasswordWo(val *string) {
+	if err := j.validateSetAdministratorLoginPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"administratorLoginPasswordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresqlServer)SetAdministratorLoginPasswordWoVersion(val *float64) {
+	if err := j.validateSetAdministratorLoginPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"administratorLoginPasswordWoVersion",
 		val,
 	)
 }
@@ -1558,6 +1628,22 @@ func (p *jsiiProxy_PostgresqlServer) ResetAdministratorLoginPassword() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetAdministratorLoginPassword",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresqlServer) ResetAdministratorLoginPasswordWo() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAdministratorLoginPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresqlServer) ResetAdministratorLoginPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAdministratorLoginPasswordWoVersion",
 		nil, // no parameters
 	)
 }

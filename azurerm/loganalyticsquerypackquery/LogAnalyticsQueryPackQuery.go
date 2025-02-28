@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/log_analytics_query_pack_query azurerm_log_analytics_query_pack_query}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/log_analytics_query_pack_query azurerm_log_analytics_query_pack_query}.
 type LogAnalyticsQueryPackQuery interface {
 	cdktf.TerraformResource
 	AdditionalSettingsJson() *string
@@ -571,7 +571,7 @@ func (j *jsiiProxy_LogAnalyticsQueryPackQuery) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/log_analytics_query_pack_query azurerm_log_analytics_query_pack_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/log_analytics_query_pack_query azurerm_log_analytics_query_pack_query} Resource.
 func NewLogAnalyticsQueryPackQuery(scope constructs.Construct, id *string, config *LogAnalyticsQueryPackQueryConfig) LogAnalyticsQueryPackQuery {
 	_init_.Initialize()
 
@@ -589,7 +589,7 @@ func NewLogAnalyticsQueryPackQuery(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/log_analytics_query_pack_query azurerm_log_analytics_query_pack_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/log_analytics_query_pack_query azurerm_log_analytics_query_pack_query} Resource.
 func NewLogAnalyticsQueryPackQuery_Override(l LogAnalyticsQueryPackQuery, scope constructs.Construct, id *string, config *LogAnalyticsQueryPackQueryConfig) {
 	_init_.Initialize()
 

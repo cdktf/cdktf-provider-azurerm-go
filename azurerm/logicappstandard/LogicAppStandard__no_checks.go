@@ -207,6 +207,10 @@ func (j *jsiiProxy_LogicAppStandard) validateSetVirtualNetworkSubnetIdParameters
 	return nil
 }
 
+func (j *jsiiProxy_LogicAppStandard) validateSetVnetContentShareEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewLogicAppStandardParameters(scope constructs.Construct, id *string, config *LogicAppStandardConfig) error {
 	return nil
 }

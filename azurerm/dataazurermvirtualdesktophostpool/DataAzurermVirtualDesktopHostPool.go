@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/data-sources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/data-sources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool}.
 type DataAzurermVirtualDesktopHostPool interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -478,7 +478,7 @@ func (j *jsiiProxy_DataAzurermVirtualDesktopHostPool) ValidateEnvironment() cdkt
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/data-sources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/data-sources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool} Data Source.
 func NewDataAzurermVirtualDesktopHostPool(scope constructs.Construct, id *string, config *DataAzurermVirtualDesktopHostPoolConfig) DataAzurermVirtualDesktopHostPool {
 	_init_.Initialize()
 
@@ -496,7 +496,7 @@ func NewDataAzurermVirtualDesktopHostPool(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/data-sources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/data-sources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool} Data Source.
 func NewDataAzurermVirtualDesktopHostPool_Override(d DataAzurermVirtualDesktopHostPool, scope constructs.Construct, id *string, config *DataAzurermVirtualDesktopHostPoolConfig) {
 	_init_.Initialize()
 

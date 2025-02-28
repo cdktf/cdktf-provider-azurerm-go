@@ -329,6 +329,22 @@ func (j *jsiiProxy_MysqlFlexibleServer) validateSetAdministratorPasswordParamete
 	return nil
 }
 
+func (j *jsiiProxy_MysqlFlexibleServer) validateSetAdministratorPasswordWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MysqlFlexibleServer) validateSetAdministratorPasswordWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MysqlFlexibleServer) validateSetBackupRetentionDaysParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -123,6 +123,14 @@ func (j *jsiiProxy_MysqlFlexibleServer) validateSetAdministratorPasswordParamete
 	return nil
 }
 
+func (j *jsiiProxy_MysqlFlexibleServer) validateSetAdministratorPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MysqlFlexibleServer) validateSetAdministratorPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_MysqlFlexibleServer) validateSetBackupRetentionDaysParameters(val *float64) error {
 	return nil
 }

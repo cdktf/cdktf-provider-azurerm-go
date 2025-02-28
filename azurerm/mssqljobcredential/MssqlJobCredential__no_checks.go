@@ -123,6 +123,14 @@ func (j *jsiiProxy_MssqlJobCredential) validateSetPasswordParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_MssqlJobCredential) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MssqlJobCredential) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlJobCredential) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

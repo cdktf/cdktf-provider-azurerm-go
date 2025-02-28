@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster}.
 type KubernetesCluster interface {
 	cdktf.TerraformResource
 	AciConnectorLinux() KubernetesClusterAciConnectorLinuxOutputReference
@@ -204,6 +204,8 @@ type KubernetesCluster interface {
 	TerraformResourceType() *string
 	Timeouts() KubernetesClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	UpgradeOverride() KubernetesClusterUpgradeOverrideOutputReference
+	UpgradeOverrideInput() *KubernetesClusterUpgradeOverride
 	WebAppRouting() KubernetesClusterWebAppRoutingOutputReference
 	WebAppRoutingInput() *KubernetesClusterWebAppRouting
 	WindowsProfile() KubernetesClusterWindowsProfileOutputReference
@@ -280,6 +282,7 @@ type KubernetesCluster interface {
 	PutServicePrincipal(value *KubernetesClusterServicePrincipal)
 	PutStorageProfile(value *KubernetesClusterStorageProfile)
 	PutTimeouts(value *KubernetesClusterTimeouts)
+	PutUpgradeOverride(value *KubernetesClusterUpgradeOverride)
 	PutWebAppRouting(value *KubernetesClusterWebAppRouting)
 	PutWindowsProfile(value *KubernetesClusterWindowsProfile)
 	PutWorkloadAutoscalerProfile(value *KubernetesClusterWorkloadAutoscalerProfile)
@@ -334,6 +337,7 @@ type KubernetesCluster interface {
 	ResetSupportPlan()
 	ResetTags()
 	ResetTimeouts()
+	ResetUpgradeOverride()
 	ResetWebAppRouting()
 	ResetWindowsProfile()
 	ResetWorkloadAutoscalerProfile()
@@ -1666,6 +1670,26 @@ func (j *jsiiProxy_KubernetesCluster) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesCluster) UpgradeOverride() KubernetesClusterUpgradeOverrideOutputReference {
+	var returns KubernetesClusterUpgradeOverrideOutputReference
+	_jsii_.Get(
+		j,
+		"upgradeOverride",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesCluster) UpgradeOverrideInput() *KubernetesClusterUpgradeOverride {
+	var returns *KubernetesClusterUpgradeOverride
+	_jsii_.Get(
+		j,
+		"upgradeOverrideInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesCluster) WebAppRouting() KubernetesClusterWebAppRoutingOutputReference {
 	var returns KubernetesClusterWebAppRoutingOutputReference
 	_jsii_.Get(
@@ -1747,7 +1771,7 @@ func (j *jsiiProxy_KubernetesCluster) WorkloadIdentityEnabledInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster(scope constructs.Construct, id *string, config *KubernetesClusterConfig) KubernetesCluster {
 	_init_.Initialize()
 
@@ -1765,7 +1789,7 @@ func NewKubernetesCluster(scope constructs.Construct, id *string, config *Kubern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.20.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/kubernetes_cluster azurerm_kubernetes_cluster} Resource.
 func NewKubernetesCluster_Override(k KubernetesCluster, scope constructs.Construct, id *string, config *KubernetesClusterConfig) {
 	_init_.Initialize()
 
@@ -2780,6 +2804,17 @@ func (k *jsiiProxy_KubernetesCluster) PutTimeouts(value *KubernetesClusterTimeou
 	)
 }
 
+func (k *jsiiProxy_KubernetesCluster) PutUpgradeOverride(value *KubernetesClusterUpgradeOverride) {
+	if err := k.validatePutUpgradeOverrideParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putUpgradeOverride",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KubernetesCluster) PutWebAppRouting(value *KubernetesClusterWebAppRouting) {
 	if err := k.validatePutWebAppRoutingParameters(value); err != nil {
 		panic(err)
@@ -3201,6 +3236,14 @@ func (k *jsiiProxy_KubernetesCluster) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesCluster) ResetUpgradeOverride() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetUpgradeOverride",
 		nil, // no parameters
 	)
 }
