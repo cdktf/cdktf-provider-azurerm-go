@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/data_factory_linked_service_key_vault azurerm_data_factory_linked_service_key_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/data_factory_linked_service_key_vault azurerm_data_factory_linked_service_key_vault}.
 type DataFactoryLinkedServiceKeyVault interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -523,7 +523,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceKeyVault) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/data_factory_linked_service_key_vault azurerm_data_factory_linked_service_key_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/data_factory_linked_service_key_vault azurerm_data_factory_linked_service_key_vault} Resource.
 func NewDataFactoryLinkedServiceKeyVault(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceKeyVaultConfig) DataFactoryLinkedServiceKeyVault {
 	_init_.Initialize()
 
@@ -541,7 +541,7 @@ func NewDataFactoryLinkedServiceKeyVault(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/data_factory_linked_service_key_vault azurerm_data_factory_linked_service_key_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/data_factory_linked_service_key_vault azurerm_data_factory_linked_service_key_vault} Resource.
 func NewDataFactoryLinkedServiceKeyVault_Override(d DataFactoryLinkedServiceKeyVault, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceKeyVaultConfig) {
 	_init_.Initialize()
 

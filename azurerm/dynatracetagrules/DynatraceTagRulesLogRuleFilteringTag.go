@@ -5,11 +5,11 @@ package dynatracetagrules
 
 
 type DynatraceTagRulesLogRuleFilteringTag struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/dynatrace_tag_rules#action DynatraceTagRules#action}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/dynatrace_tag_rules#action DynatraceTagRules#action}.
 	Action *string `field:"required" json:"action" yaml:"action"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/dynatrace_tag_rules#name DynatraceTagRules#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/dynatrace_tag_rules#name DynatraceTagRules#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/dynatrace_tag_rules#value DynatraceTagRules#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/dynatrace_tag_rules#value DynatraceTagRules#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

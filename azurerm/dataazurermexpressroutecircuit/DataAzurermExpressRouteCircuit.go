@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/data-sources/express_route_circuit azurerm_express_route_circuit}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/data-sources/express_route_circuit azurerm_express_route_circuit}.
 type DataAzurermExpressRouteCircuit interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_DataAzurermExpressRouteCircuit) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/data-sources/express_route_circuit azurerm_express_route_circuit} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/data-sources/express_route_circuit azurerm_express_route_circuit} Data Source.
 func NewDataAzurermExpressRouteCircuit(scope constructs.Construct, id *string, config *DataAzurermExpressRouteCircuitConfig) DataAzurermExpressRouteCircuit {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewDataAzurermExpressRouteCircuit(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/data-sources/express_route_circuit azurerm_express_route_circuit} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/data-sources/express_route_circuit azurerm_express_route_circuit} Data Source.
 func NewDataAzurermExpressRouteCircuit_Override(d DataAzurermExpressRouteCircuit, scope constructs.Construct, id *string, config *DataAzurermExpressRouteCircuitConfig) {
 	_init_.Initialize()
 

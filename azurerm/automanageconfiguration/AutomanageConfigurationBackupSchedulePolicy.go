@@ -5,13 +5,13 @@ package automanageconfiguration
 
 
 type AutomanageConfigurationBackupSchedulePolicy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/automanage_configuration#schedule_policy_type AutomanageConfiguration#schedule_policy_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/automanage_configuration#schedule_policy_type AutomanageConfiguration#schedule_policy_type}.
 	SchedulePolicyType *string `field:"optional" json:"schedulePolicyType" yaml:"schedulePolicyType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/automanage_configuration#schedule_run_days AutomanageConfiguration#schedule_run_days}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/automanage_configuration#schedule_run_days AutomanageConfiguration#schedule_run_days}.
 	ScheduleRunDays *[]*string `field:"optional" json:"scheduleRunDays" yaml:"scheduleRunDays"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/automanage_configuration#schedule_run_frequency AutomanageConfiguration#schedule_run_frequency}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/automanage_configuration#schedule_run_frequency AutomanageConfiguration#schedule_run_frequency}.
 	ScheduleRunFrequency *string `field:"optional" json:"scheduleRunFrequency" yaml:"scheduleRunFrequency"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/automanage_configuration#schedule_run_times AutomanageConfiguration#schedule_run_times}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/automanage_configuration#schedule_run_times AutomanageConfiguration#schedule_run_times}.
 	ScheduleRunTimes *[]*string `field:"optional" json:"scheduleRunTimes" yaml:"scheduleRunTimes"`
 }
 

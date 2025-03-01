@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/data-sources/firewall_policy azurerm_firewall_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/data-sources/firewall_policy azurerm_firewall_policy}.
 type DataAzurermFirewallPolicy interface {
 	cdktf.TerraformDataSource
 	BasePolicyId() *string
@@ -434,7 +434,7 @@ func (j *jsiiProxy_DataAzurermFirewallPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/data-sources/firewall_policy azurerm_firewall_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/data-sources/firewall_policy azurerm_firewall_policy} Data Source.
 func NewDataAzurermFirewallPolicy(scope constructs.Construct, id *string, config *DataAzurermFirewallPolicyConfig) DataAzurermFirewallPolicy {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewDataAzurermFirewallPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/data-sources/firewall_policy azurerm_firewall_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/data-sources/firewall_policy azurerm_firewall_policy} Data Source.
 func NewDataAzurermFirewallPolicy_Override(d DataAzurermFirewallPolicy, scope constructs.Construct, id *string, config *DataAzurermFirewallPolicyConfig) {
 	_init_.Initialize()
 

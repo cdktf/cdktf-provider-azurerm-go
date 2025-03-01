@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/api_management_identity_provider_twitter azurerm_api_management_identity_provider_twitter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/api_management_identity_provider_twitter azurerm_api_management_identity_provider_twitter}.
 type ApiManagementIdentityProviderTwitter interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_ApiManagementIdentityProviderTwitter) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/api_management_identity_provider_twitter azurerm_api_management_identity_provider_twitter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/api_management_identity_provider_twitter azurerm_api_management_identity_provider_twitter} Resource.
 func NewApiManagementIdentityProviderTwitter(scope constructs.Construct, id *string, config *ApiManagementIdentityProviderTwitterConfig) ApiManagementIdentityProviderTwitter {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewApiManagementIdentityProviderTwitter(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.0/docs/resources/api_management_identity_provider_twitter azurerm_api_management_identity_provider_twitter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/api_management_identity_provider_twitter azurerm_api_management_identity_provider_twitter} Resource.
 func NewApiManagementIdentityProviderTwitter_Override(a ApiManagementIdentityProviderTwitter, scope constructs.Construct, id *string, config *ApiManagementIdentityProviderTwitterConfig) {
 	_init_.Initialize()
 
