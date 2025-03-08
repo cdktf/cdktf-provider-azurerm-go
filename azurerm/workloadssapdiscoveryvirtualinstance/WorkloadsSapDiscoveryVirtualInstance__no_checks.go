@@ -131,6 +131,10 @@ func (j *jsiiProxy_WorkloadsSapDiscoveryVirtualInstance) validateSetManagedResou
 	return nil
 }
 
+func (j *jsiiProxy_WorkloadsSapDiscoveryVirtualInstance) validateSetManagedResourcesNetworkAccessTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkloadsSapDiscoveryVirtualInstance) validateSetManagedStorageAccountNameParameters(val *string) error {
 	return nil
 }

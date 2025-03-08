@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql}.
 type DataProtectionBackupPolicyPostgresql interface {
 	cdktf.TerraformResource
 	BackupRepeatingTimeIntervals() *[]*string
@@ -497,7 +497,7 @@ func (j *jsiiProxy_DataProtectionBackupPolicyPostgresql) VaultNameInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql} Resource.
 func NewDataProtectionBackupPolicyPostgresql(scope constructs.Construct, id *string, config *DataProtectionBackupPolicyPostgresqlConfig) DataProtectionBackupPolicyPostgresql {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewDataProtectionBackupPolicyPostgresql(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/data_protection_backup_policy_postgresql azurerm_data_protection_backup_policy_postgresql} Resource.
 func NewDataProtectionBackupPolicyPostgresql_Override(d DataProtectionBackupPolicyPostgresql, scope constructs.Construct, id *string, config *DataProtectionBackupPolicyPostgresqlConfig) {
 	_init_.Initialize()
 

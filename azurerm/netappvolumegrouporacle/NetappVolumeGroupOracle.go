@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/netapp_volume_group_oracle azurerm_netapp_volume_group_oracle}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/netapp_volume_group_oracle azurerm_netapp_volume_group_oracle}.
 type NetappVolumeGroupOracle interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -495,7 +495,7 @@ func (j *jsiiProxy_NetappVolumeGroupOracle) VolumeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/netapp_volume_group_oracle azurerm_netapp_volume_group_oracle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/netapp_volume_group_oracle azurerm_netapp_volume_group_oracle} Resource.
 func NewNetappVolumeGroupOracle(scope constructs.Construct, id *string, config *NetappVolumeGroupOracleConfig) NetappVolumeGroupOracle {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewNetappVolumeGroupOracle(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/netapp_volume_group_oracle azurerm_netapp_volume_group_oracle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/netapp_volume_group_oracle azurerm_netapp_volume_group_oracle} Resource.
 func NewNetappVolumeGroupOracle_Override(n NetappVolumeGroupOracle, scope constructs.Construct, id *string, config *NetappVolumeGroupOracleConfig) {
 	_init_.Initialize()
 

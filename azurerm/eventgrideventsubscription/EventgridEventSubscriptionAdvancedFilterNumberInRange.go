@@ -5,9 +5,9 @@ package eventgrideventsubscription
 
 
 type EventgridEventSubscriptionAdvancedFilterNumberInRange struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
 	Values interface{} `field:"required" json:"values" yaml:"values"`
 }
 

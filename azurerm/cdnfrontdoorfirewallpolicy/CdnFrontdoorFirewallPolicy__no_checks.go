@@ -79,6 +79,10 @@ func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) validatePutCustomRuleParameters(v
 	return nil
 }
 
+func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) validatePutLogScrubbingParameters(value *CdnFrontdoorFirewallPolicyLogScrubbing) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) validatePutManagedRuleParameters(value interface{}) error {
 	return nil
 }

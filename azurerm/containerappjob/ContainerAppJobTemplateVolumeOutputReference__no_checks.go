@@ -63,6 +63,10 @@ func (j *jsiiProxy_ContainerAppJobTemplateVolumeOutputReference) validateSetInte
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppJobTemplateVolumeOutputReference) validateSetMountOptionsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppJobTemplateVolumeOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }

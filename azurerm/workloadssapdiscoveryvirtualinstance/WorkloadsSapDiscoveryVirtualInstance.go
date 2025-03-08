@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/workloads_sap_discovery_virtual_instance azurerm_workloads_sap_discovery_virtual_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/workloads_sap_discovery_virtual_instance azurerm_workloads_sap_discovery_virtual_instance}.
 type WorkloadsSapDiscoveryVirtualInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -60,6 +60,9 @@ type WorkloadsSapDiscoveryVirtualInstance interface {
 	ManagedResourceGroupName() *string
 	SetManagedResourceGroupName(val *string)
 	ManagedResourceGroupNameInput() *string
+	ManagedResourcesNetworkAccessType() *string
+	SetManagedResourcesNetworkAccessType(val *string)
+	ManagedResourcesNetworkAccessTypeInput() *string
 	ManagedStorageAccountName() *string
 	SetManagedStorageAccountName(val *string)
 	ManagedStorageAccountNameInput() *string
@@ -143,6 +146,7 @@ type WorkloadsSapDiscoveryVirtualInstance interface {
 	ResetId()
 	ResetIdentity()
 	ResetManagedResourceGroupName()
+	ResetManagedResourcesNetworkAccessType()
 	ResetManagedStorageAccountName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -377,6 +381,26 @@ func (j *jsiiProxy_WorkloadsSapDiscoveryVirtualInstance) ManagedResourceGroupNam
 	return returns
 }
 
+func (j *jsiiProxy_WorkloadsSapDiscoveryVirtualInstance) ManagedResourcesNetworkAccessType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedResourcesNetworkAccessType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkloadsSapDiscoveryVirtualInstance) ManagedResourcesNetworkAccessTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedResourcesNetworkAccessTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkloadsSapDiscoveryVirtualInstance) ManagedStorageAccountName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -568,7 +592,7 @@ func (j *jsiiProxy_WorkloadsSapDiscoveryVirtualInstance) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/workloads_sap_discovery_virtual_instance azurerm_workloads_sap_discovery_virtual_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/workloads_sap_discovery_virtual_instance azurerm_workloads_sap_discovery_virtual_instance} Resource.
 func NewWorkloadsSapDiscoveryVirtualInstance(scope constructs.Construct, id *string, config *WorkloadsSapDiscoveryVirtualInstanceConfig) WorkloadsSapDiscoveryVirtualInstance {
 	_init_.Initialize()
 
@@ -586,7 +610,7 @@ func NewWorkloadsSapDiscoveryVirtualInstance(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/workloads_sap_discovery_virtual_instance azurerm_workloads_sap_discovery_virtual_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/workloads_sap_discovery_virtual_instance azurerm_workloads_sap_discovery_virtual_instance} Resource.
 func NewWorkloadsSapDiscoveryVirtualInstance_Override(w WorkloadsSapDiscoveryVirtualInstance, scope constructs.Construct, id *string, config *WorkloadsSapDiscoveryVirtualInstanceConfig) {
 	_init_.Initialize()
 
@@ -697,6 +721,17 @@ func (j *jsiiProxy_WorkloadsSapDiscoveryVirtualInstance)SetManagedResourceGroupN
 	_jsii_.Set(
 		j,
 		"managedResourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkloadsSapDiscoveryVirtualInstance)SetManagedResourcesNetworkAccessType(val *string) {
+	if err := j.validateSetManagedResourcesNetworkAccessTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedResourcesNetworkAccessType",
 		val,
 	)
 }
@@ -1170,6 +1205,14 @@ func (w *jsiiProxy_WorkloadsSapDiscoveryVirtualInstance) ResetManagedResourceGro
 	_jsii_.InvokeVoid(
 		w,
 		"resetManagedResourceGroupName",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkloadsSapDiscoveryVirtualInstance) ResetManagedResourcesNetworkAccessType() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetManagedResourcesNetworkAccessType",
 		nil, // no parameters
 	)
 }

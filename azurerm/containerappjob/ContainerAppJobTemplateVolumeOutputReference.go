@@ -32,6 +32,9 @@ type ContainerAppJobTemplateVolumeOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	MountOptions() *string
+	SetMountOptions(val *string)
+	MountOptionsInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -73,6 +76,7 @@ type ContainerAppJobTemplateVolumeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMountOptions()
 	ResetStorageName()
 	ResetStorageType()
 	// Produce the Token's value at resolution time.
@@ -135,6 +139,26 @@ func (j *jsiiProxy_ContainerAppJobTemplateVolumeOutputReference) InternalValue()
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppJobTemplateVolumeOutputReference) MountOptions() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mountOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppJobTemplateVolumeOutputReference) MountOptionsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mountOptionsInput",
 		&returns,
 	)
 	return returns
@@ -277,6 +301,17 @@ func (j *jsiiProxy_ContainerAppJobTemplateVolumeOutputReference)SetInternalValue
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAppJobTemplateVolumeOutputReference)SetMountOptions(val *string) {
+	if err := j.validateSetMountOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mountOptions",
 		val,
 	)
 }
@@ -520,6 +555,14 @@ func (c *jsiiProxy_ContainerAppJobTemplateVolumeOutputReference) InterpolationFo
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerAppJobTemplateVolumeOutputReference) ResetMountOptions() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMountOptions",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerAppJobTemplateVolumeOutputReference) ResetStorageName() {

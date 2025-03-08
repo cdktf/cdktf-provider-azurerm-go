@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy}.
 type CdnFrontdoorFirewallPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,8 @@ type CdnFrontdoorFirewallPolicy interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LogScrubbing() CdnFrontdoorFirewallPolicyLogScrubbingOutputReference
+	LogScrubbingInput() *CdnFrontdoorFirewallPolicyLogScrubbing
 	ManagedRule() CdnFrontdoorFirewallPolicyManagedRuleList
 	ManagedRuleInput() interface{}
 	Mode() *string
@@ -148,6 +150,7 @@ type CdnFrontdoorFirewallPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCustomRule(value interface{})
+	PutLogScrubbing(value *CdnFrontdoorFirewallPolicyLogScrubbing)
 	PutManagedRule(value interface{})
 	PutTimeouts(value *CdnFrontdoorFirewallPolicyTimeouts)
 	ResetCustomBlockResponseBody()
@@ -156,6 +159,7 @@ type CdnFrontdoorFirewallPolicy interface {
 	ResetEnabled()
 	ResetId()
 	ResetJsChallengeCookieExpirationInMinutes()
+	ResetLogScrubbing()
 	ResetManagedRule()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -397,6 +401,26 @@ func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) Lifecycle() *cdktf.TerraformResou
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) LogScrubbing() CdnFrontdoorFirewallPolicyLogScrubbingOutputReference {
+	var returns CdnFrontdoorFirewallPolicyLogScrubbingOutputReference
+	_jsii_.Get(
+		j,
+		"logScrubbing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) LogScrubbingInput() *CdnFrontdoorFirewallPolicyLogScrubbing {
+	var returns *CdnFrontdoorFirewallPolicyLogScrubbing
+	_jsii_.Get(
+		j,
+		"logScrubbingInput",
 		&returns,
 	)
 	return returns
@@ -653,7 +677,7 @@ func (j *jsiiProxy_CdnFrontdoorFirewallPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Resource.
 func NewCdnFrontdoorFirewallPolicy(scope constructs.Construct, id *string, config *CdnFrontdoorFirewallPolicyConfig) CdnFrontdoorFirewallPolicy {
 	_init_.Initialize()
 
@@ -671,7 +695,7 @@ func NewCdnFrontdoorFirewallPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/cdn_frontdoor_firewall_policy azurerm_cdn_frontdoor_firewall_policy} Resource.
 func NewCdnFrontdoorFirewallPolicy_Override(c CdnFrontdoorFirewallPolicy, scope constructs.Construct, id *string, config *CdnFrontdoorFirewallPolicyConfig) {
 	_init_.Initialize()
 
@@ -1246,6 +1270,17 @@ func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) PutCustomRule(value interface{}) 
 	)
 }
 
+func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) PutLogScrubbing(value *CdnFrontdoorFirewallPolicyLogScrubbing) {
+	if err := c.validatePutLogScrubbingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putLogScrubbing",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) PutManagedRule(value interface{}) {
 	if err := c.validatePutManagedRuleParameters(value); err != nil {
 		panic(err)
@@ -1312,6 +1347,14 @@ func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) ResetJsChallengeCookieExpirationI
 	_jsii_.InvokeVoid(
 		c,
 		"resetJsChallengeCookieExpirationInMinutes",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnFrontdoorFirewallPolicy) ResetLogScrubbing() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLogScrubbing",
 		nil, // no parameters
 	)
 }

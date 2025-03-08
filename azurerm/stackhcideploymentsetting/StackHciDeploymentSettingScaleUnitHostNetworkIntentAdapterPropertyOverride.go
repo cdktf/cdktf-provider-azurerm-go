@@ -5,11 +5,11 @@ package stackhcideploymentsetting
 
 
 type StackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPropertyOverride struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/stack_hci_deployment_setting#jumbo_packet StackHciDeploymentSetting#jumbo_packet}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/stack_hci_deployment_setting#jumbo_packet StackHciDeploymentSetting#jumbo_packet}.
 	JumboPacket *string `field:"optional" json:"jumboPacket" yaml:"jumboPacket"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/stack_hci_deployment_setting#network_direct StackHciDeploymentSetting#network_direct}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/stack_hci_deployment_setting#network_direct StackHciDeploymentSetting#network_direct}.
 	NetworkDirect *string `field:"optional" json:"networkDirect" yaml:"networkDirect"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/stack_hci_deployment_setting#network_direct_technology StackHciDeploymentSetting#network_direct_technology}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/stack_hci_deployment_setting#network_direct_technology StackHciDeploymentSetting#network_direct_technology}.
 	NetworkDirectTechnology *string `field:"optional" json:"networkDirectTechnology" yaml:"networkDirectTechnology"`
 }
 

@@ -135,6 +135,10 @@ func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstance) validateSetManagedResou
 	return nil
 }
 
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstance) validateSetManagedResourcesNetworkAccessTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstance) validateSetNameParameters(val *string) error {
 	return nil
 }

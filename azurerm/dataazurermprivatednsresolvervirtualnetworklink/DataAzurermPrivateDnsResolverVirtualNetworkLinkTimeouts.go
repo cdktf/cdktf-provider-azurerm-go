@@ -5,7 +5,7 @@ package dataazurermprivatednsresolvervirtualnetworklink
 
 
 type DataAzurermPrivateDnsResolverVirtualNetworkLinkTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/data-sources/private_dns_resolver_virtual_network_link#read DataAzurermPrivateDnsResolverVirtualNetworkLink#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/data-sources/private_dns_resolver_virtual_network_link#read DataAzurermPrivateDnsResolverVirtualNetworkLink#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/hpc_cache_nfs_target azurerm_hpc_cache_nfs_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/hpc_cache_nfs_target azurerm_hpc_cache_nfs_target}.
 type HpcCacheNfsTarget interface {
 	cdktf.TerraformResource
 	CacheName() *string
@@ -520,7 +520,7 @@ func (j *jsiiProxy_HpcCacheNfsTarget) WriteBackTimerInSecondsInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/hpc_cache_nfs_target azurerm_hpc_cache_nfs_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/hpc_cache_nfs_target azurerm_hpc_cache_nfs_target} Resource.
 func NewHpcCacheNfsTarget(scope constructs.Construct, id *string, config *HpcCacheNfsTargetConfig) HpcCacheNfsTarget {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewHpcCacheNfsTarget(scope constructs.Construct, id *string, config *HpcCac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/hpc_cache_nfs_target azurerm_hpc_cache_nfs_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/hpc_cache_nfs_target azurerm_hpc_cache_nfs_target} Resource.
 func NewHpcCacheNfsTarget_Override(h HpcCacheNfsTarget, scope constructs.Construct, id *string, config *HpcCacheNfsTargetConfig) {
 	_init_.Initialize()
 

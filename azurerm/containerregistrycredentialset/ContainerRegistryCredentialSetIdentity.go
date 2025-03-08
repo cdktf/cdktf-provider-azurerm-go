@@ -5,7 +5,7 @@ package containerregistrycredentialset
 
 
 type ContainerRegistryCredentialSetIdentity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/container_registry_credential_set#type ContainerRegistryCredentialSet#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/container_registry_credential_set#type ContainerRegistryCredentialSet#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

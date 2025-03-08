@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/workloads_sap_three_tier_virtual_instance azurerm_workloads_sap_three_tier_virtual_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/workloads_sap_three_tier_virtual_instance azurerm_workloads_sap_three_tier_virtual_instance}.
 type WorkloadsSapThreeTierVirtualInstance interface {
 	cdktf.TerraformResource
 	AppLocation() *string
@@ -60,6 +60,9 @@ type WorkloadsSapThreeTierVirtualInstance interface {
 	ManagedResourceGroupName() *string
 	SetManagedResourceGroupName(val *string)
 	ManagedResourceGroupNameInput() *string
+	ManagedResourcesNetworkAccessType() *string
+	SetManagedResourcesNetworkAccessType(val *string)
+	ManagedResourcesNetworkAccessTypeInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -146,6 +149,7 @@ type WorkloadsSapThreeTierVirtualInstance interface {
 	ResetId()
 	ResetIdentity()
 	ResetManagedResourceGroupName()
+	ResetManagedResourcesNetworkAccessType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -379,6 +383,26 @@ func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstance) ManagedResourceGroupNam
 	return returns
 }
 
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstance) ManagedResourcesNetworkAccessType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedResourcesNetworkAccessType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstance) ManagedResourcesNetworkAccessTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedResourcesNetworkAccessTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstance) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -590,7 +614,7 @@ func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstance) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/workloads_sap_three_tier_virtual_instance azurerm_workloads_sap_three_tier_virtual_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/workloads_sap_three_tier_virtual_instance azurerm_workloads_sap_three_tier_virtual_instance} Resource.
 func NewWorkloadsSapThreeTierVirtualInstance(scope constructs.Construct, id *string, config *WorkloadsSapThreeTierVirtualInstanceConfig) WorkloadsSapThreeTierVirtualInstance {
 	_init_.Initialize()
 
@@ -608,7 +632,7 @@ func NewWorkloadsSapThreeTierVirtualInstance(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/workloads_sap_three_tier_virtual_instance azurerm_workloads_sap_three_tier_virtual_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/workloads_sap_three_tier_virtual_instance azurerm_workloads_sap_three_tier_virtual_instance} Resource.
 func NewWorkloadsSapThreeTierVirtualInstance_Override(w WorkloadsSapThreeTierVirtualInstance, scope constructs.Construct, id *string, config *WorkloadsSapThreeTierVirtualInstanceConfig) {
 	_init_.Initialize()
 
@@ -719,6 +743,17 @@ func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstance)SetManagedResourceGroupN
 	_jsii_.Set(
 		j,
 		"managedResourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstance)SetManagedResourcesNetworkAccessType(val *string) {
+	if err := j.validateSetManagedResourcesNetworkAccessTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedResourcesNetworkAccessType",
 		val,
 	)
 }
@@ -1203,6 +1238,14 @@ func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstance) ResetManagedResourceGro
 	_jsii_.InvokeVoid(
 		w,
 		"resetManagedResourceGroupName",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkloadsSapThreeTierVirtualInstance) ResetManagedResourcesNetworkAccessType() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetManagedResourcesNetworkAccessType",
 		nil, // no parameters
 	)
 }

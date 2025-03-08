@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/mongo_cluster azurerm_mongo_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/mongo_cluster azurerm_mongo_cluster}.
 type MongoCluster interface {
 	cdktf.TerraformResource
 	AdministratorPassword() *string
@@ -30,6 +30,7 @@ type MongoCluster interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectionStrings() MongoClusterConnectionStringsList
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -269,6 +270,16 @@ func (j *jsiiProxy_MongoCluster) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongoCluster) ConnectionStrings() MongoClusterConnectionStringsList {
+	var returns MongoClusterConnectionStringsList
+	_jsii_.Get(
+		j,
+		"connectionStrings",
 		&returns,
 	)
 	return returns
@@ -715,7 +726,7 @@ func (j *jsiiProxy_MongoCluster) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/mongo_cluster azurerm_mongo_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/mongo_cluster azurerm_mongo_cluster} Resource.
 func NewMongoCluster(scope constructs.Construct, id *string, config *MongoClusterConfig) MongoCluster {
 	_init_.Initialize()
 
@@ -733,7 +744,7 @@ func NewMongoCluster(scope constructs.Construct, id *string, config *MongoCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/mongo_cluster azurerm_mongo_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/mongo_cluster azurerm_mongo_cluster} Resource.
 func NewMongoCluster_Override(m MongoCluster, scope constructs.Construct, id *string, config *MongoClusterConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/data_factory_linked_service_web azurerm_data_factory_linked_service_web}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/data_factory_linked_service_web azurerm_data_factory_linked_service_web}.
 type DataFactoryLinkedServiceWeb interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -594,7 +594,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceWeb) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/data_factory_linked_service_web azurerm_data_factory_linked_service_web} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/data_factory_linked_service_web azurerm_data_factory_linked_service_web} Resource.
 func NewDataFactoryLinkedServiceWeb(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceWebConfig) DataFactoryLinkedServiceWeb {
 	_init_.Initialize()
 
@@ -612,7 +612,7 @@ func NewDataFactoryLinkedServiceWeb(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/data_factory_linked_service_web azurerm_data_factory_linked_service_web} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/data_factory_linked_service_web azurerm_data_factory_linked_service_web} Resource.
 func NewDataFactoryLinkedServiceWeb_Override(d DataFactoryLinkedServiceWeb, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceWebConfig) {
 	_init_.Initialize()
 

@@ -135,6 +135,10 @@ func (j *jsiiProxy_WorkloadsSapSingleNodeVirtualInstance) validateSetManagedReso
 	return nil
 }
 
+func (j *jsiiProxy_WorkloadsSapSingleNodeVirtualInstance) validateSetManagedResourcesNetworkAccessTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkloadsSapSingleNodeVirtualInstance) validateSetNameParameters(val *string) error {
 	return nil
 }

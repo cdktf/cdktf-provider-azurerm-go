@@ -5,7 +5,7 @@ package mapsaccount
 
 
 type MapsAccountCors struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.21.1/docs/resources/maps_account#allowed_origins MapsAccount#allowed_origins}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/maps_account#allowed_origins MapsAccount#allowed_origins}.
 	AllowedOrigins *[]*string `field:"required" json:"allowedOrigins" yaml:"allowedOrigins"`
 }
 

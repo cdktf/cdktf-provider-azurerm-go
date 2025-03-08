@@ -32,6 +32,7 @@ type DataAzurermContainerAppTemplateVolumeOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataAzurermContainerAppTemplateVolume
 	SetInternalValue(val *DataAzurermContainerAppTemplateVolume)
+	MountOptions() *string
 	Name() *string
 	StorageName() *string
 	StorageType() *string
@@ -127,6 +128,16 @@ func (j *jsiiProxy_DataAzurermContainerAppTemplateVolumeOutputReference) Interna
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermContainerAppTemplateVolumeOutputReference) MountOptions() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mountOptions",
 		&returns,
 	)
 	return returns

@@ -63,6 +63,10 @@ func (j *jsiiProxy_ContainerAppTemplateVolumeOutputReference) validateSetInterna
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppTemplateVolumeOutputReference) validateSetMountOptionsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppTemplateVolumeOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }
