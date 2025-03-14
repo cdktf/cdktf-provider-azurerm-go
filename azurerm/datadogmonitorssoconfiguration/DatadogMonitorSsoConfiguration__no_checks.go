@@ -127,6 +127,10 @@ func (j *jsiiProxy_DatadogMonitorSsoConfiguration) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_DatadogMonitorSsoConfiguration) validateSetSingleSignOnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatadogMonitorSsoConfiguration) validateSetSingleSignOnEnabledParameters(val *string) error {
 	return nil
 }

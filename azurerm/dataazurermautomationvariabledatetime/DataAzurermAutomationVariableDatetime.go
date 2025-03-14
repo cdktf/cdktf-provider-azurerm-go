@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/data-sources/automation_variable_datetime azurerm_automation_variable_datetime}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/data-sources/automation_variable_datetime azurerm_automation_variable_datetime}.
 type DataAzurermAutomationVariableDatetime interface {
 	cdktf.TerraformDataSource
 	AutomationAccountName() *string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_DataAzurermAutomationVariableDatetime) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/data-sources/automation_variable_datetime azurerm_automation_variable_datetime} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/data-sources/automation_variable_datetime azurerm_automation_variable_datetime} Data Source.
 func NewDataAzurermAutomationVariableDatetime(scope constructs.Construct, id *string, config *DataAzurermAutomationVariableDatetimeConfig) DataAzurermAutomationVariableDatetime {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewDataAzurermAutomationVariableDatetime(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/data-sources/automation_variable_datetime azurerm_automation_variable_datetime} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/data-sources/automation_variable_datetime azurerm_automation_variable_datetime} Data Source.
 func NewDataAzurermAutomationVariableDatetime_Override(d DataAzurermAutomationVariableDatetime, scope constructs.Construct, id *string, config *DataAzurermAutomationVariableDatetimeConfig) {
 	_init_.Initialize()
 

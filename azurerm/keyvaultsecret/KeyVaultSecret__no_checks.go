@@ -143,6 +143,14 @@ func (j *jsiiProxy_KeyVaultSecret) validateSetValueParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_KeyVaultSecret) validateSetValueWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KeyVaultSecret) validateSetValueWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func validateNewKeyVaultSecretParameters(scope constructs.Construct, id *string, config *KeyVaultSecretConfig) error {
 	return nil
 }

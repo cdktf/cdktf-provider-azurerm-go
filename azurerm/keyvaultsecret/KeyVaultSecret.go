@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/key_vault_secret azurerm_key_vault_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/key_vault_secret azurerm_key_vault_secret}.
 type KeyVaultSecret interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -89,6 +89,12 @@ type KeyVaultSecret interface {
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
+	ValueWo() *string
+	SetValueWo(val *string)
+	ValueWoInput() *string
+	ValueWoVersion() *float64
+	SetValueWoVersion(val *float64)
+	ValueWoVersionInput() *float64
 	Version() *string
 	VersionlessId() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -144,6 +150,9 @@ type KeyVaultSecret interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTimeouts()
+	ResetValue()
+	ResetValueWo()
+	ResetValueWoVersion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -522,6 +531,46 @@ func (j *jsiiProxy_KeyVaultSecret) ValueInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_KeyVaultSecret) ValueWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valueWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVaultSecret) ValueWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valueWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVaultSecret) ValueWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"valueWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyVaultSecret) ValueWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"valueWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KeyVaultSecret) Version() *string {
 	var returns *string
 	_jsii_.Get(
@@ -543,7 +592,7 @@ func (j *jsiiProxy_KeyVaultSecret) VersionlessId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/key_vault_secret azurerm_key_vault_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/key_vault_secret azurerm_key_vault_secret} Resource.
 func NewKeyVaultSecret(scope constructs.Construct, id *string, config *KeyVaultSecretConfig) KeyVaultSecret {
 	_init_.Initialize()
 
@@ -561,7 +610,7 @@ func NewKeyVaultSecret(scope constructs.Construct, id *string, config *KeyVaultS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/key_vault_secret azurerm_key_vault_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/key_vault_secret azurerm_key_vault_secret} Resource.
 func NewKeyVaultSecret_Override(k KeyVaultSecret, scope constructs.Construct, id *string, config *KeyVaultSecretConfig) {
 	_init_.Initialize()
 
@@ -724,6 +773,28 @@ func (j *jsiiProxy_KeyVaultSecret)SetValue(val *string) {
 	_jsii_.Set(
 		j,
 		"value",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KeyVaultSecret)SetValueWo(val *string) {
+	if err := j.validateSetValueWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"valueWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KeyVaultSecret)SetValueWoVersion(val *float64) {
+	if err := j.validateSetValueWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"valueWoVersion",
 		val,
 	)
 }
@@ -1144,6 +1215,30 @@ func (k *jsiiProxy_KeyVaultSecret) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KeyVaultSecret) ResetValue() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetValue",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KeyVaultSecret) ResetValueWo() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetValueWo",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KeyVaultSecret) ResetValueWoVersion() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetValueWoVersion",
 		nil, // no parameters
 	)
 }

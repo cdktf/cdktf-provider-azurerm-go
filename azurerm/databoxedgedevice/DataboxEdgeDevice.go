@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/databox_edge_device azurerm_databox_edge_device}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/databox_edge_device azurerm_databox_edge_device}.
 type DataboxEdgeDevice interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -461,7 +461,7 @@ func (j *jsiiProxy_DataboxEdgeDevice) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/databox_edge_device azurerm_databox_edge_device} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/databox_edge_device azurerm_databox_edge_device} Resource.
 func NewDataboxEdgeDevice(scope constructs.Construct, id *string, config *DataboxEdgeDeviceConfig) DataboxEdgeDevice {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewDataboxEdgeDevice(scope constructs.Construct, id *string, config *Databo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.22.0/docs/resources/databox_edge_device azurerm_databox_edge_device} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/databox_edge_device azurerm_databox_edge_device} Resource.
 func NewDataboxEdgeDevice_Override(d DataboxEdgeDevice, scope constructs.Construct, id *string, config *DataboxEdgeDeviceConfig) {
 	_init_.Initialize()
 
