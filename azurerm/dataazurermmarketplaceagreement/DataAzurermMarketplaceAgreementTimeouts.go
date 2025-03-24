@@ -5,7 +5,7 @@ package dataazurermmarketplaceagreement
 
 
 type DataAzurermMarketplaceAgreementTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/data-sources/marketplace_agreement#read DataAzurermMarketplaceAgreement#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/data-sources/marketplace_agreement#read DataAzurermMarketplaceAgreement#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

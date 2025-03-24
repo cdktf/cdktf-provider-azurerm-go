@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/iothub_route azurerm_iothub_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/iothub_route azurerm_iothub_route}.
 type IothubRouteA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -496,7 +496,7 @@ func (j *jsiiProxy_IothubRouteA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/iothub_route azurerm_iothub_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/iothub_route azurerm_iothub_route} Resource.
 func NewIothubRouteA(scope constructs.Construct, id *string, config *IothubRouteAConfig) IothubRouteA {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewIothubRouteA(scope constructs.Construct, id *string, config *IothubRoute
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/iothub_route azurerm_iothub_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/iothub_route azurerm_iothub_route} Resource.
 func NewIothubRouteA_Override(i IothubRouteA, scope constructs.Construct, id *string, config *IothubRouteAConfig) {
 	_init_.Initialize()
 

@@ -227,6 +227,10 @@ func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetTagsParameters(val *map[st
 	return nil
 }
 
+func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetVirtualNetworkBackupRestoreEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WindowsFunctionAppSlot) validateSetVirtualNetworkSubnetIdParameters(val *string) error {
 	return nil
 }

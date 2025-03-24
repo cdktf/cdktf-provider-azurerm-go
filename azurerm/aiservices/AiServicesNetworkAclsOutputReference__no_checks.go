@@ -55,6 +55,10 @@ func (a *jsiiProxy_AiServicesNetworkAclsOutputReference) validateResolveParamete
 	return nil
 }
 
+func (j *jsiiProxy_AiServicesNetworkAclsOutputReference) validateSetBypassParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AiServicesNetworkAclsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

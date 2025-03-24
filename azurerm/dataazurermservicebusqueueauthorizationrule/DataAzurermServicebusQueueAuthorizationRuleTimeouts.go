@@ -5,7 +5,7 @@ package dataazurermservicebusqueueauthorizationrule
 
 
 type DataAzurermServicebusQueueAuthorizationRuleTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/data-sources/servicebus_queue_authorization_rule#read DataAzurermServicebusQueueAuthorizationRule#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/data-sources/servicebus_queue_authorization_rule#read DataAzurermServicebusQueueAuthorizationRule#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

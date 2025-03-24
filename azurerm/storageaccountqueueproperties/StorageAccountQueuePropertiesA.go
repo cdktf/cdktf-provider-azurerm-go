@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/storage_account_queue_properties azurerm_storage_account_queue_properties}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/storage_account_queue_properties azurerm_storage_account_queue_properties}.
 type StorageAccountQueuePropertiesA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -453,7 +453,7 @@ func (j *jsiiProxy_StorageAccountQueuePropertiesA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/storage_account_queue_properties azurerm_storage_account_queue_properties} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/storage_account_queue_properties azurerm_storage_account_queue_properties} Resource.
 func NewStorageAccountQueuePropertiesA(scope constructs.Construct, id *string, config *StorageAccountQueuePropertiesAConfig) StorageAccountQueuePropertiesA {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewStorageAccountQueuePropertiesA(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/storage_account_queue_properties azurerm_storage_account_queue_properties} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/storage_account_queue_properties azurerm_storage_account_queue_properties} Resource.
 func NewStorageAccountQueuePropertiesA_Override(s StorageAccountQueuePropertiesA, scope constructs.Construct, id *string, config *StorageAccountQueuePropertiesAConfig) {
 	_init_.Initialize()
 

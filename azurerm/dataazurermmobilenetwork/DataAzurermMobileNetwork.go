@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/data-sources/mobile_network azurerm_mobile_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/data-sources/mobile_network azurerm_mobile_network}.
 type DataAzurermMobileNetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DataAzurermMobileNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/data-sources/mobile_network azurerm_mobile_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/data-sources/mobile_network azurerm_mobile_network} Data Source.
 func NewDataAzurermMobileNetwork(scope constructs.Construct, id *string, config *DataAzurermMobileNetworkConfig) DataAzurermMobileNetwork {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewDataAzurermMobileNetwork(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/data-sources/mobile_network azurerm_mobile_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/data-sources/mobile_network azurerm_mobile_network} Data Source.
 func NewDataAzurermMobileNetwork_Override(d DataAzurermMobileNetwork, scope constructs.Construct, id *string, config *DataAzurermMobileNetworkConfig) {
 	_init_.Initialize()
 

@@ -214,6 +214,8 @@ func init() {
 		"@cdktf/provider-azurerm.aiServices.AiServicesNetworkAclsOutputReference",
 		reflect.TypeOf((*AiServicesNetworkAclsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "bypass", GoGetter: "Bypass"},
+			_jsii_.MemberProperty{JsiiProperty: "bypassInput", GoGetter: "BypassInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -236,6 +238,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ipRules", GoGetter: "IpRules"},
 			_jsii_.MemberProperty{JsiiProperty: "ipRulesInput", GoGetter: "IpRulesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putVirtualNetworkRules", GoMethod: "PutVirtualNetworkRules"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBypass", GoMethod: "ResetBypass"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpRules", GoMethod: "ResetIpRules"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVirtualNetworkRules", GoMethod: "ResetVirtualNetworkRules"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

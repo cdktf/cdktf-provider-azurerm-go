@@ -5,7 +5,7 @@ package dataazurermdnstxtrecord
 
 
 type DataAzurermDnsTxtRecordTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/data-sources/dns_txt_record#read DataAzurermDnsTxtRecord#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/data-sources/dns_txt_record#read DataAzurermDnsTxtRecord#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

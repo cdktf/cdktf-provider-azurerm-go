@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/windows_function_app azurerm_windows_function_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/windows_function_app azurerm_windows_function_app}.
 type WindowsFunctionApp interface {
 	cdktf.TerraformResource
 	AppSettings() *map[string]*string
@@ -157,6 +157,9 @@ type WindowsFunctionApp interface {
 	TerraformResourceType() *string
 	Timeouts() WindowsFunctionAppTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	VirtualNetworkBackupRestoreEnabled() interface{}
+	SetVirtualNetworkBackupRestoreEnabled(val interface{})
+	VirtualNetworkBackupRestoreEnabledInput() interface{}
 	VirtualNetworkSubnetId() *string
 	SetVirtualNetworkSubnetId(val *string)
 	VirtualNetworkSubnetIdInput() *string
@@ -251,6 +254,7 @@ type WindowsFunctionApp interface {
 	ResetStorageUsesManagedIdentity()
 	ResetTags()
 	ResetTimeouts()
+	ResetVirtualNetworkBackupRestoreEnabled()
 	ResetVirtualNetworkSubnetId()
 	ResetVnetImagePullEnabled()
 	ResetWebdeployPublishBasicAuthenticationEnabled()
@@ -1163,6 +1167,26 @@ func (j *jsiiProxy_WindowsFunctionApp) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WindowsFunctionApp) VirtualNetworkBackupRestoreEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"virtualNetworkBackupRestoreEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WindowsFunctionApp) VirtualNetworkBackupRestoreEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"virtualNetworkBackupRestoreEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WindowsFunctionApp) VirtualNetworkSubnetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1244,7 +1268,7 @@ func (j *jsiiProxy_WindowsFunctionApp) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/windows_function_app azurerm_windows_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/windows_function_app azurerm_windows_function_app} Resource.
 func NewWindowsFunctionApp(scope constructs.Construct, id *string, config *WindowsFunctionAppConfig) WindowsFunctionApp {
 	_init_.Initialize()
 
@@ -1262,7 +1286,7 @@ func NewWindowsFunctionApp(scope constructs.Construct, id *string, config *Windo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/windows_function_app azurerm_windows_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/windows_function_app azurerm_windows_function_app} Resource.
 func NewWindowsFunctionApp_Override(w WindowsFunctionApp, scope constructs.Construct, id *string, config *WindowsFunctionAppConfig) {
 	_init_.Initialize()
 
@@ -1590,6 +1614,17 @@ func (j *jsiiProxy_WindowsFunctionApp)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WindowsFunctionApp)SetVirtualNetworkBackupRestoreEnabled(val interface{}) {
+	if err := j.validateSetVirtualNetworkBackupRestoreEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"virtualNetworkBackupRestoreEnabled",
 		val,
 	)
 }
@@ -2310,6 +2345,14 @@ func (w *jsiiProxy_WindowsFunctionApp) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WindowsFunctionApp) ResetVirtualNetworkBackupRestoreEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetVirtualNetworkBackupRestoreEnabled",
 		nil, // no parameters
 	)
 }

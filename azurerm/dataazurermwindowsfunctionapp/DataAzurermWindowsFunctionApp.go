@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/data-sources/windows_function_app azurerm_windows_function_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/data-sources/windows_function_app azurerm_windows_function_app}.
 type DataAzurermWindowsFunctionApp interface {
 	cdktf.TerraformDataSource
 	AppSettings() cdktf.StringMap
@@ -99,6 +99,7 @@ type DataAzurermWindowsFunctionApp interface {
 	TerraformResourceType() *string
 	Timeouts() DataAzurermWindowsFunctionAppTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	VirtualNetworkBackupRestoreEnabled() cdktf.IResolvable
 	VirtualNetworkSubnetId() *string
 	WebdeployPublishBasicAuthenticationEnabled() cdktf.IResolvable
 	// Experimental.
@@ -721,6 +722,16 @@ func (j *jsiiProxy_DataAzurermWindowsFunctionApp) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermWindowsFunctionApp) VirtualNetworkBackupRestoreEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"virtualNetworkBackupRestoreEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermWindowsFunctionApp) VirtualNetworkSubnetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -742,7 +753,7 @@ func (j *jsiiProxy_DataAzurermWindowsFunctionApp) WebdeployPublishBasicAuthentic
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/data-sources/windows_function_app azurerm_windows_function_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/data-sources/windows_function_app azurerm_windows_function_app} Data Source.
 func NewDataAzurermWindowsFunctionApp(scope constructs.Construct, id *string, config *DataAzurermWindowsFunctionAppConfig) DataAzurermWindowsFunctionApp {
 	_init_.Initialize()
 
@@ -760,7 +771,7 @@ func NewDataAzurermWindowsFunctionApp(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/data-sources/windows_function_app azurerm_windows_function_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/data-sources/windows_function_app azurerm_windows_function_app} Data Source.
 func NewDataAzurermWindowsFunctionApp_Override(d DataAzurermWindowsFunctionApp, scope constructs.Construct, id *string, config *DataAzurermWindowsFunctionAppConfig) {
 	_init_.Initialize()
 

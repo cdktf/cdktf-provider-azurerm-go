@@ -13,6 +13,9 @@ import (
 
 type AiServicesNetworkAclsOutputReference interface {
 	cdktf.ComplexObject
+	Bypass() *string
+	SetBypass(val *string)
+	BypassInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -73,6 +76,7 @@ type AiServicesNetworkAclsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutVirtualNetworkRules(value interface{})
+	ResetBypass()
 	ResetIpRules()
 	ResetVirtualNetworkRules()
 	// Produce the Token's value at resolution time.
@@ -88,6 +92,26 @@ type AiServicesNetworkAclsOutputReference interface {
 // The jsii proxy struct for AiServicesNetworkAclsOutputReference
 type jsiiProxy_AiServicesNetworkAclsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_AiServicesNetworkAclsOutputReference) Bypass() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bypass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiServicesNetworkAclsOutputReference) BypassInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bypassInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AiServicesNetworkAclsOutputReference) ComplexObjectIndex() interface{} {
@@ -245,6 +269,17 @@ func NewAiServicesNetworkAclsOutputReference_Override(a AiServicesNetworkAclsOut
 		"@cdktf/provider-azurerm.aiServices.AiServicesNetworkAclsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AiServicesNetworkAclsOutputReference)SetBypass(val *string) {
+	if err := j.validateSetBypassParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bypass",
+		val,
 	)
 }
 
@@ -519,6 +554,14 @@ func (a *jsiiProxy_AiServicesNetworkAclsOutputReference) PutVirtualNetworkRules(
 		a,
 		"putVirtualNetworkRules",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AiServicesNetworkAclsOutputReference) ResetBypass() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBypass",
+		nil, // no parameters
 	)
 }
 

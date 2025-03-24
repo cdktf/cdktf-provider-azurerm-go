@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/fabric_capacity azurerm_fabric_capacity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/fabric_capacity azurerm_fabric_capacity}.
 type FabricCapacity interface {
 	cdktf.TerraformResource
 	AdministrationMembers() *[]*string
@@ -474,7 +474,7 @@ func (j *jsiiProxy_FabricCapacity) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/fabric_capacity azurerm_fabric_capacity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/fabric_capacity azurerm_fabric_capacity} Resource.
 func NewFabricCapacity(scope constructs.Construct, id *string, config *FabricCapacityConfig) FabricCapacity {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewFabricCapacity(scope constructs.Construct, id *string, config *FabricCap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/fabric_capacity azurerm_fabric_capacity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/fabric_capacity azurerm_fabric_capacity} Resource.
 func NewFabricCapacity_Override(f FabricCapacity, scope constructs.Construct, id *string, config *FabricCapacityConfig) {
 	_init_.Initialize()
 

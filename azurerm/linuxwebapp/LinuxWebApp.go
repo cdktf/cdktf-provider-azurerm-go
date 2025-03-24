@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/linux_web_app azurerm_linux_web_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/linux_web_app azurerm_linux_web_app}.
 type LinuxWebApp interface {
 	cdktf.TerraformResource
 	AppSettings() *map[string]*string
@@ -138,6 +138,9 @@ type LinuxWebApp interface {
 	TerraformResourceType() *string
 	Timeouts() LinuxWebAppTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	VirtualNetworkBackupRestoreEnabled() interface{}
+	SetVirtualNetworkBackupRestoreEnabled(val interface{})
+	VirtualNetworkBackupRestoreEnabledInput() interface{}
 	VirtualNetworkSubnetId() *string
 	SetVirtualNetworkSubnetId(val *string)
 	VirtualNetworkSubnetIdInput() *string
@@ -224,6 +227,7 @@ type LinuxWebApp interface {
 	ResetStorageAccount()
 	ResetTags()
 	ResetTimeouts()
+	ResetVirtualNetworkBackupRestoreEnabled()
 	ResetVirtualNetworkSubnetId()
 	ResetWebdeployPublishBasicAuthenticationEnabled()
 	ResetZipDeployFile()
@@ -1015,6 +1019,26 @@ func (j *jsiiProxy_LinuxWebApp) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LinuxWebApp) VirtualNetworkBackupRestoreEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"virtualNetworkBackupRestoreEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LinuxWebApp) VirtualNetworkBackupRestoreEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"virtualNetworkBackupRestoreEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LinuxWebApp) VirtualNetworkSubnetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1076,7 +1100,7 @@ func (j *jsiiProxy_LinuxWebApp) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/linux_web_app azurerm_linux_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/linux_web_app azurerm_linux_web_app} Resource.
 func NewLinuxWebApp(scope constructs.Construct, id *string, config *LinuxWebAppConfig) LinuxWebApp {
 	_init_.Initialize()
 
@@ -1094,7 +1118,7 @@ func NewLinuxWebApp(scope constructs.Construct, id *string, config *LinuxWebAppC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/linux_web_app azurerm_linux_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/linux_web_app azurerm_linux_web_app} Resource.
 func NewLinuxWebApp_Override(l LinuxWebApp, scope constructs.Construct, id *string, config *LinuxWebAppConfig) {
 	_init_.Initialize()
 
@@ -1345,6 +1369,17 @@ func (j *jsiiProxy_LinuxWebApp)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LinuxWebApp)SetVirtualNetworkBackupRestoreEnabled(val interface{}) {
+	if err := j.validateSetVirtualNetworkBackupRestoreEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"virtualNetworkBackupRestoreEnabled",
 		val,
 	)
 }
@@ -2017,6 +2052,14 @@ func (l *jsiiProxy_LinuxWebApp) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LinuxWebApp) ResetVirtualNetworkBackupRestoreEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetVirtualNetworkBackupRestoreEnabled",
 		nil, // no parameters
 	)
 }

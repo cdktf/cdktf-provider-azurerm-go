@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/dev_test_global_vm_shutdown_schedule azurerm_dev_test_global_vm_shutdown_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/dev_test_global_vm_shutdown_schedule azurerm_dev_test_global_vm_shutdown_schedule}.
 type DevTestGlobalVmShutdownSchedule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -497,7 +497,7 @@ func (j *jsiiProxy_DevTestGlobalVmShutdownSchedule) VirtualMachineIdInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/dev_test_global_vm_shutdown_schedule azurerm_dev_test_global_vm_shutdown_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/dev_test_global_vm_shutdown_schedule azurerm_dev_test_global_vm_shutdown_schedule} Resource.
 func NewDevTestGlobalVmShutdownSchedule(scope constructs.Construct, id *string, config *DevTestGlobalVmShutdownScheduleConfig) DevTestGlobalVmShutdownSchedule {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewDevTestGlobalVmShutdownSchedule(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.23.0/docs/resources/dev_test_global_vm_shutdown_schedule azurerm_dev_test_global_vm_shutdown_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/dev_test_global_vm_shutdown_schedule azurerm_dev_test_global_vm_shutdown_schedule} Resource.
 func NewDevTestGlobalVmShutdownSchedule_Override(d DevTestGlobalVmShutdownSchedule, scope constructs.Construct, id *string, config *DevTestGlobalVmShutdownScheduleConfig) {
 	_init_.Initialize()
 

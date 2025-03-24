@@ -88,6 +88,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkBackupRestoreEnabled", GoGetter: "VirtualNetworkBackupRestoreEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkSubnetId", GoGetter: "VirtualNetworkSubnetId"},
 			_jsii_.MemberProperty{JsiiProperty: "webdeployPublishBasicAuthenticationEnabled", GoGetter: "WebdeployPublishBasicAuthenticationEnabled"},
 		},
