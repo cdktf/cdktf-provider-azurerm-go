@@ -211,6 +211,10 @@ func (j *jsiiProxy_OracleCloudVmCluster) validateSetSubnetIdParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_OracleCloudVmCluster) validateSetSystemVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OracleCloudVmCluster) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

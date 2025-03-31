@@ -669,6 +669,14 @@ func (j *jsiiProxy_HdinsightSparkCluster) validateSetTlsMinVersionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_HdinsightSparkCluster) validateSetZonesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewHdinsightSparkClusterParameters(scope constructs.Construct, id *string, config *HdinsightSparkClusterConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

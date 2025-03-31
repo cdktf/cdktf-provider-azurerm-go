@@ -46,6 +46,9 @@ type VirtualHubConnectionRoutingOutputReference interface {
 	StaticVnetLocalRouteOverrideCriteria() *string
 	SetStaticVnetLocalRouteOverrideCriteria(val *string)
 	StaticVnetLocalRouteOverrideCriteriaInput() *string
+	StaticVnetPropagateStaticRoutesEnabled() interface{}
+	SetStaticVnetPropagateStaticRoutesEnabled(val interface{})
+	StaticVnetPropagateStaticRoutesEnabledInput() interface{}
 	StaticVnetRoute() VirtualHubConnectionRoutingStaticVnetRouteList
 	StaticVnetRouteInput() interface{}
 	// Experimental.
@@ -87,6 +90,7 @@ type VirtualHubConnectionRoutingOutputReference interface {
 	ResetOutboundRouteMapId()
 	ResetPropagatedRouteTable()
 	ResetStaticVnetLocalRouteOverrideCriteria()
+	ResetStaticVnetPropagateStaticRoutesEnabled()
 	ResetStaticVnetRoute()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -253,6 +257,26 @@ func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) StaticVnetLocalRo
 	return returns
 }
 
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) StaticVnetPropagateStaticRoutesEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"staticVnetPropagateStaticRoutesEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) StaticVnetPropagateStaticRoutesEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"staticVnetPropagateStaticRoutesEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) StaticVnetRoute() VirtualHubConnectionRoutingStaticVnetRouteList {
 	var returns VirtualHubConnectionRoutingStaticVnetRouteList
 	_jsii_.Get(
@@ -394,6 +418,17 @@ func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference)SetStaticVnetLocal
 	_jsii_.Set(
 		j,
 		"staticVnetLocalRouteOverrideCriteria",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference)SetStaticVnetPropagateStaticRoutesEnabled(val interface{}) {
+	if err := j.validateSetStaticVnetPropagateStaticRoutesEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"staticVnetPropagateStaticRoutesEnabled",
 		val,
 	)
 }
@@ -664,6 +699,14 @@ func (v *jsiiProxy_VirtualHubConnectionRoutingOutputReference) ResetStaticVnetLo
 	_jsii_.InvokeVoid(
 		v,
 		"resetStaticVnetLocalRouteOverrideCriteria",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualHubConnectionRoutingOutputReference) ResetStaticVnetPropagateStaticRoutesEnabled() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetStaticVnetPropagateStaticRoutesEnabled",
 		nil, // no parameters
 	)
 }

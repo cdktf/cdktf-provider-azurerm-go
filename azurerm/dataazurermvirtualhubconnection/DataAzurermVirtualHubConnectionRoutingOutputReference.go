@@ -37,6 +37,7 @@ type DataAzurermVirtualHubConnectionRoutingOutputReference interface {
 	OutboundRouteMapId() *string
 	PropagatedRouteTable() DataAzurermVirtualHubConnectionRoutingPropagatedRouteTableList
 	StaticVnetLocalRouteOverrideCriteria() *string
+	StaticVnetPropagateStaticRoutesEnabled() cdktf.IResolvable
 	StaticVnetRoute() DataAzurermVirtualHubConnectionRoutingStaticVnetRouteList
 	// Experimental.
 	TerraformAttribute() *string
@@ -180,6 +181,16 @@ func (j *jsiiProxy_DataAzurermVirtualHubConnectionRoutingOutputReference) Static
 	_jsii_.Get(
 		j,
 		"staticVnetLocalRouteOverrideCriteria",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermVirtualHubConnectionRoutingOutputReference) StaticVnetPropagateStaticRoutesEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"staticVnetPropagateStaticRoutesEnabled",
 		&returns,
 	)
 	return returns

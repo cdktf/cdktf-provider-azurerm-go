@@ -87,6 +87,10 @@ func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateSetStatic
 	return nil
 }
 
+func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateSetStaticVnetPropagateStaticRoutesEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualHubConnectionRoutingOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

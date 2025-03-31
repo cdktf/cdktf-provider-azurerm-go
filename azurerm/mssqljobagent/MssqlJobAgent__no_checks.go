@@ -75,6 +75,10 @@ func (m *jsiiProxy_MssqlJobAgent) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (m *jsiiProxy_MssqlJobAgent) validatePutIdentityParameters(value *MssqlJobAgentIdentity) error {
+	return nil
+}
+
 func (m *jsiiProxy_MssqlJobAgent) validatePutTimeoutsParameters(value *MssqlJobAgentTimeouts) error {
 	return nil
 }
@@ -124,6 +128,10 @@ func (j *jsiiProxy_MssqlJobAgent) validateSetNameParameters(val *string) error {
 }
 
 func (j *jsiiProxy_MssqlJobAgent) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MssqlJobAgent) validateSetSkuParameters(val *string) error {
 	return nil
 }
 

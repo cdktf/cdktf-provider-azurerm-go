@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster}.
 type OracleCloudVmCluster interface {
 	cdktf.TerraformResource
 	BackupSubnetCidr() *string
@@ -131,6 +131,9 @@ type OracleCloudVmCluster interface {
 	SubnetId() *string
 	SetSubnetId(val *string)
 	SubnetIdInput() *string
+	SystemVersion() *string
+	SetSystemVersion(val *string)
+	SystemVersionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -212,6 +215,7 @@ type OracleCloudVmCluster interface {
 	ResetScanListenerPortTcp()
 	ResetScanListenerPortTcpSsl()
 	ResetSparseDiskgroupEnabled()
+	ResetSystemVersion()
 	ResetTags()
 	ResetTimeouts()
 	ResetTimeZone()
@@ -884,6 +888,26 @@ func (j *jsiiProxy_OracleCloudVmCluster) SubnetIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OracleCloudVmCluster) SystemVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"systemVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleCloudVmCluster) SystemVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"systemVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OracleCloudVmCluster) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -1015,7 +1039,7 @@ func (j *jsiiProxy_OracleCloudVmCluster) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster} Resource.
 func NewOracleCloudVmCluster(scope constructs.Construct, id *string, config *OracleCloudVmClusterConfig) OracleCloudVmCluster {
 	_init_.Initialize()
 
@@ -1033,7 +1057,7 @@ func NewOracleCloudVmCluster(scope constructs.Construct, id *string, config *Ora
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster} Resource.
 func NewOracleCloudVmCluster_Override(o OracleCloudVmCluster, scope constructs.Construct, id *string, config *OracleCloudVmClusterConfig) {
 	_init_.Initialize()
 
@@ -1372,6 +1396,17 @@ func (j *jsiiProxy_OracleCloudVmCluster)SetSubnetId(val *string) {
 	_jsii_.Set(
 		j,
 		"subnetId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OracleCloudVmCluster)SetSystemVersion(val *string) {
+	if err := j.validateSetSystemVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"systemVersion",
 		val,
 	)
 }
@@ -1903,6 +1938,14 @@ func (o *jsiiProxy_OracleCloudVmCluster) ResetSparseDiskgroupEnabled() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetSparseDiskgroupEnabled",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OracleCloudVmCluster) ResetSystemVersion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSystemVersion",
 		nil, // no parameters
 	)
 }

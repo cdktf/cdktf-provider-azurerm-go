@@ -127,6 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "propagatedRouteTable", GoGetter: "PropagatedRouteTable"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "staticVnetLocalRouteOverrideCriteria", GoGetter: "StaticVnetLocalRouteOverrideCriteria"},
+			_jsii_.MemberProperty{JsiiProperty: "staticVnetPropagateStaticRoutesEnabled", GoGetter: "StaticVnetPropagateStaticRoutesEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "staticVnetRoute", GoGetter: "StaticVnetRoute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

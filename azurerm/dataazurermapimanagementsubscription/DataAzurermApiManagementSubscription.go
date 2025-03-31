@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/data-sources/api_management_subscription azurerm_api_management_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/data-sources/api_management_subscription azurerm_api_management_subscription}.
 type DataAzurermApiManagementSubscription interface {
 	cdktf.TerraformDataSource
 	AllowTracing() cdktf.IResolvable
@@ -423,7 +423,7 @@ func (j *jsiiProxy_DataAzurermApiManagementSubscription) UserId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/data-sources/api_management_subscription azurerm_api_management_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/data-sources/api_management_subscription azurerm_api_management_subscription} Data Source.
 func NewDataAzurermApiManagementSubscription(scope constructs.Construct, id *string, config *DataAzurermApiManagementSubscriptionConfig) DataAzurermApiManagementSubscription {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewDataAzurermApiManagementSubscription(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/data-sources/api_management_subscription azurerm_api_management_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/data-sources/api_management_subscription azurerm_api_management_subscription} Data Source.
 func NewDataAzurermApiManagementSubscription_Override(d DataAzurermApiManagementSubscription, scope constructs.Construct, id *string, config *DataAzurermApiManagementSubscriptionConfig) {
 	_init_.Initialize()
 

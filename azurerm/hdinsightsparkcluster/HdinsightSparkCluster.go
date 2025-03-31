@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/hdinsight_spark_cluster azurerm_hdinsight_spark_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/hdinsight_spark_cluster azurerm_hdinsight_spark_cluster}.
 type HdinsightSparkCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -118,6 +118,9 @@ type HdinsightSparkCluster interface {
 	TlsMinVersion() *string
 	SetTlsMinVersion(val *string)
 	TlsMinVersionInput() *string
+	Zones() *[]*string
+	SetZones(val *[]*string)
+	ZonesInput() *[]*string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -193,6 +196,7 @@ type HdinsightSparkCluster interface {
 	ResetTags()
 	ResetTimeouts()
 	ResetTlsMinVersion()
+	ResetZones()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -851,8 +855,28 @@ func (j *jsiiProxy_HdinsightSparkCluster) TlsMinVersionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_HdinsightSparkCluster) Zones() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"zones",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/hdinsight_spark_cluster azurerm_hdinsight_spark_cluster} Resource.
+func (j *jsiiProxy_HdinsightSparkCluster) ZonesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"zonesInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/hdinsight_spark_cluster azurerm_hdinsight_spark_cluster} Resource.
 func NewHdinsightSparkCluster(scope constructs.Construct, id *string, config *HdinsightSparkClusterConfig) HdinsightSparkCluster {
 	_init_.Initialize()
 
@@ -870,7 +894,7 @@ func NewHdinsightSparkCluster(scope constructs.Construct, id *string, config *Hd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/hdinsight_spark_cluster azurerm_hdinsight_spark_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/hdinsight_spark_cluster azurerm_hdinsight_spark_cluster} Resource.
 func NewHdinsightSparkCluster_Override(h HdinsightSparkCluster, scope constructs.Construct, id *string, config *HdinsightSparkClusterConfig) {
 	_init_.Initialize()
 
@@ -1044,6 +1068,17 @@ func (j *jsiiProxy_HdinsightSparkCluster)SetTlsMinVersion(val *string) {
 	_jsii_.Set(
 		j,
 		"tlsMinVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HdinsightSparkCluster)SetZones(val *[]*string) {
+	if err := j.validateSetZonesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zones",
 		val,
 	)
 }
@@ -1679,6 +1714,14 @@ func (h *jsiiProxy_HdinsightSparkCluster) ResetTlsMinVersion() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetTlsMinVersion",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HdinsightSparkCluster) ResetZones() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetZones",
 		nil, // no parameters
 	)
 }

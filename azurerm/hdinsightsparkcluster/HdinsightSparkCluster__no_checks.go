@@ -199,6 +199,10 @@ func (j *jsiiProxy_HdinsightSparkCluster) validateSetTlsMinVersionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_HdinsightSparkCluster) validateSetZonesParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewHdinsightSparkClusterParameters(scope constructs.Construct, id *string, config *HdinsightSparkClusterConfig) error {
 	return nil
 }

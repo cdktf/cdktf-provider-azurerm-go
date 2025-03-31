@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/mssql_job_agent azurerm_mssql_job_agent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/mssql_job_agent azurerm_mssql_job_agent}.
 type MssqlJobAgent interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -44,6 +44,8 @@ type MssqlJobAgent interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() MssqlJobAgentIdentityOutputReference
+	IdentityInput() *MssqlJobAgentIdentity
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -67,6 +69,9 @@ type MssqlJobAgent interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Sku() *string
+	SetSku(val *string)
+	SkuInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -121,11 +126,14 @@ type MssqlJobAgent interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutIdentity(value *MssqlJobAgentIdentity)
 	PutTimeouts(value *MssqlJobAgentTimeouts)
 	ResetId()
+	ResetIdentity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSku()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -256,6 +264,26 @@ func (j *jsiiProxy_MssqlJobAgent) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MssqlJobAgent) Identity() MssqlJobAgentIdentityOutputReference {
+	var returns MssqlJobAgentIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlJobAgent) IdentityInput() *MssqlJobAgentIdentity {
+	var returns *MssqlJobAgentIdentity
+	_jsii_.Get(
+		j,
+		"identityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MssqlJobAgent) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -356,6 +384,26 @@ func (j *jsiiProxy_MssqlJobAgent) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MssqlJobAgent) Sku() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sku",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlJobAgent) SkuInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"skuInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MssqlJobAgent) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -427,7 +475,7 @@ func (j *jsiiProxy_MssqlJobAgent) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/mssql_job_agent azurerm_mssql_job_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/mssql_job_agent azurerm_mssql_job_agent} Resource.
 func NewMssqlJobAgent(scope constructs.Construct, id *string, config *MssqlJobAgentConfig) MssqlJobAgent {
 	_init_.Initialize()
 
@@ -445,7 +493,7 @@ func NewMssqlJobAgent(scope constructs.Construct, id *string, config *MssqlJobAg
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/mssql_job_agent azurerm_mssql_job_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/mssql_job_agent azurerm_mssql_job_agent} Resource.
 func NewMssqlJobAgent_Override(m MssqlJobAgent, scope constructs.Construct, id *string, config *MssqlJobAgentConfig) {
 	_init_.Initialize()
 
@@ -564,6 +612,17 @@ func (j *jsiiProxy_MssqlJobAgent)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlJobAgent)SetSku(val *string) {
+	if err := j.validateSetSkuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sku",
 		val,
 	)
 }
@@ -932,6 +991,17 @@ func (m *jsiiProxy_MssqlJobAgent) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (m *jsiiProxy_MssqlJobAgent) PutIdentity(value *MssqlJobAgentIdentity) {
+	if err := m.validatePutIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putIdentity",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MssqlJobAgent) PutTimeouts(value *MssqlJobAgentTimeouts) {
 	if err := m.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -951,10 +1021,26 @@ func (m *jsiiProxy_MssqlJobAgent) ResetId() {
 	)
 }
 
+func (m *jsiiProxy_MssqlJobAgent) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetIdentity",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MssqlJobAgent) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlJobAgent) ResetSku() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSku",
 		nil, // no parameters
 	)
 }

@@ -5,7 +5,7 @@ package batchpool
 
 
 type BatchPoolWindows struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/resources/batch_pool#enable_automatic_updates BatchPool#enable_automatic_updates}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/batch_pool#enable_automatic_updates BatchPool#enable_automatic_updates}.
 	EnableAutomaticUpdates interface{} `field:"optional" json:"enableAutomaticUpdates" yaml:"enableAutomaticUpdates"`
 }
 

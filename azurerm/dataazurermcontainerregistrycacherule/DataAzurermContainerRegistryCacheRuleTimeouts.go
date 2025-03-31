@@ -5,7 +5,7 @@ package dataazurermcontainerregistrycacherule
 
 
 type DataAzurermContainerRegistryCacheRuleTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.24.0/docs/data-sources/container_registry_cache_rule#read DataAzurermContainerRegistryCacheRule#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/data-sources/container_registry_cache_rule#read DataAzurermContainerRegistryCacheRule#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 
