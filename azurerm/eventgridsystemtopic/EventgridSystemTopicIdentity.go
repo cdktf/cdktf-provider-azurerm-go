@@ -5,9 +5,9 @@ package eventgridsystemtopic
 
 
 type EventgridSystemTopicIdentity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/eventgrid_system_topic#type EventgridSystemTopic#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/eventgrid_system_topic#type EventgridSystemTopic#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/eventgrid_system_topic#identity_ids EventgridSystemTopic#identity_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/eventgrid_system_topic#identity_ids EventgridSystemTopic#identity_ids}.
 	IdentityIds *[]*string `field:"optional" json:"identityIds" yaml:"identityIds"`
 }
 

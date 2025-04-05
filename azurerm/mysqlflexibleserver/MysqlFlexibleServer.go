@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server}.
 type MysqlFlexibleServer interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -101,7 +101,10 @@ type MysqlFlexibleServer interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicNetworkAccess() *string
+	SetPublicNetworkAccess(val *string)
 	PublicNetworkAccessEnabled() cdktf.IResolvable
+	PublicNetworkAccessInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	ReplicaCapacity() *float64
@@ -203,6 +206,7 @@ type MysqlFlexibleServer interface {
 	ResetOverrideLogicalId()
 	ResetPointInTimeRestoreTimeInUtc()
 	ResetPrivateDnsZoneId()
+	ResetPublicNetworkAccess()
 	ResetReplicationRole()
 	ResetSkuName()
 	ResetSourceServerId()
@@ -699,11 +703,31 @@ func (j *jsiiProxy_MysqlFlexibleServer) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MysqlFlexibleServer) PublicNetworkAccess() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicNetworkAccess",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MysqlFlexibleServer) PublicNetworkAccessEnabled() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"publicNetworkAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MysqlFlexibleServer) PublicNetworkAccessInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicNetworkAccessInput",
 		&returns,
 	)
 	return returns
@@ -940,7 +964,7 @@ func (j *jsiiProxy_MysqlFlexibleServer) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server} Resource.
 func NewMysqlFlexibleServer(scope constructs.Construct, id *string, config *MysqlFlexibleServerConfig) MysqlFlexibleServer {
 	_init_.Initialize()
 
@@ -958,7 +982,7 @@ func NewMysqlFlexibleServer(scope constructs.Construct, id *string, config *Mysq
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server} Resource.
 func NewMysqlFlexibleServer_Override(m MysqlFlexibleServer, scope constructs.Construct, id *string, config *MysqlFlexibleServerConfig) {
 	_init_.Initialize()
 
@@ -1176,6 +1200,17 @@ func (j *jsiiProxy_MysqlFlexibleServer)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MysqlFlexibleServer)SetPublicNetworkAccess(val *string) {
+	if err := j.validateSetPublicNetworkAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicNetworkAccess",
 		val,
 	)
 }
@@ -1800,6 +1835,14 @@ func (m *jsiiProxy_MysqlFlexibleServer) ResetPrivateDnsZoneId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetPrivateDnsZoneId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MysqlFlexibleServer) ResetPublicNetworkAccess() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPublicNetworkAccess",
 		nil, // no parameters
 	)
 }

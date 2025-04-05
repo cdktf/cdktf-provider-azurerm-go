@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/data-sources/mobile_network_packet_core_data_plane azurerm_mobile_network_packet_core_data_plane}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/data-sources/mobile_network_packet_core_data_plane azurerm_mobile_network_packet_core_data_plane}.
 type DataAzurermMobileNetworkPacketCoreDataPlane interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_DataAzurermMobileNetworkPacketCoreDataPlane) UserPlaneAccessN
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/data-sources/mobile_network_packet_core_data_plane azurerm_mobile_network_packet_core_data_plane} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/data-sources/mobile_network_packet_core_data_plane azurerm_mobile_network_packet_core_data_plane} Data Source.
 func NewDataAzurermMobileNetworkPacketCoreDataPlane(scope constructs.Construct, id *string, config *DataAzurermMobileNetworkPacketCoreDataPlaneConfig) DataAzurermMobileNetworkPacketCoreDataPlane {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewDataAzurermMobileNetworkPacketCoreDataPlane(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/data-sources/mobile_network_packet_core_data_plane azurerm_mobile_network_packet_core_data_plane} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/data-sources/mobile_network_packet_core_data_plane azurerm_mobile_network_packet_core_data_plane} Data Source.
 func NewDataAzurermMobileNetworkPacketCoreDataPlane_Override(d DataAzurermMobileNetworkPacketCoreDataPlane, scope constructs.Construct, id *string, config *DataAzurermMobileNetworkPacketCoreDataPlaneConfig) {
 	_init_.Initialize()
 

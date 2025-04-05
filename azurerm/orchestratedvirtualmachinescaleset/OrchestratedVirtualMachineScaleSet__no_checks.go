@@ -119,6 +119,10 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) validatePutPriorityMixPar
 	return nil
 }
 
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) validatePutRollingUpgradePolicyParameters(value *OrchestratedVirtualMachineScaleSetRollingUpgradePolicy) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) validatePutSkuProfileParameters(value *OrchestratedVirtualMachineScaleSetSkuProfile) error {
 	return nil
 }
@@ -240,6 +244,10 @@ func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateSetSourceImageIdP
 }
 
 func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateSetUpgradeModeParameters(val *string) error {
 	return nil
 }
 

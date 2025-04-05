@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/sentinel_alert_rule_machine_learning_behavior_analytics azurerm_sentinel_alert_rule_machine_learning_behavior_analytics}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/sentinel_alert_rule_machine_learning_behavior_analytics azurerm_sentinel_alert_rule_machine_learning_behavior_analytics}.
 type SentinelAlertRuleMachineLearningBehaviorAnalytics interface {
 	cdktf.TerraformResource
 	AlertRuleTemplateGuid() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_SentinelAlertRuleMachineLearningBehaviorAnalytics) TimeoutsIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/sentinel_alert_rule_machine_learning_behavior_analytics azurerm_sentinel_alert_rule_machine_learning_behavior_analytics} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/sentinel_alert_rule_machine_learning_behavior_analytics azurerm_sentinel_alert_rule_machine_learning_behavior_analytics} Resource.
 func NewSentinelAlertRuleMachineLearningBehaviorAnalytics(scope constructs.Construct, id *string, config *SentinelAlertRuleMachineLearningBehaviorAnalyticsConfig) SentinelAlertRuleMachineLearningBehaviorAnalytics {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewSentinelAlertRuleMachineLearningBehaviorAnalytics(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/sentinel_alert_rule_machine_learning_behavior_analytics azurerm_sentinel_alert_rule_machine_learning_behavior_analytics} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/sentinel_alert_rule_machine_learning_behavior_analytics azurerm_sentinel_alert_rule_machine_learning_behavior_analytics} Resource.
 func NewSentinelAlertRuleMachineLearningBehaviorAnalytics_Override(s SentinelAlertRuleMachineLearningBehaviorAnalytics, scope constructs.Construct, id *string, config *SentinelAlertRuleMachineLearningBehaviorAnalyticsConfig) {
 	_init_.Initialize()
 

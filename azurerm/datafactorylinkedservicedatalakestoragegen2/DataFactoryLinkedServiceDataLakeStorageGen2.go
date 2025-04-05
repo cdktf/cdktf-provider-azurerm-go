@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/data_factory_linked_service_data_lake_storage_gen2 azurerm_data_factory_linked_service_data_lake_storage_gen2}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/data_factory_linked_service_data_lake_storage_gen2 azurerm_data_factory_linked_service_data_lake_storage_gen2}.
 type DataFactoryLinkedServiceDataLakeStorageGen2 interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -643,7 +643,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceDataLakeStorageGen2) UseManagedIdenti
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/data_factory_linked_service_data_lake_storage_gen2 azurerm_data_factory_linked_service_data_lake_storage_gen2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/data_factory_linked_service_data_lake_storage_gen2 azurerm_data_factory_linked_service_data_lake_storage_gen2} Resource.
 func NewDataFactoryLinkedServiceDataLakeStorageGen2(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceDataLakeStorageGen2Config) DataFactoryLinkedServiceDataLakeStorageGen2 {
 	_init_.Initialize()
 
@@ -661,7 +661,7 @@ func NewDataFactoryLinkedServiceDataLakeStorageGen2(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/data_factory_linked_service_data_lake_storage_gen2 azurerm_data_factory_linked_service_data_lake_storage_gen2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/data_factory_linked_service_data_lake_storage_gen2 azurerm_data_factory_linked_service_data_lake_storage_gen2} Resource.
 func NewDataFactoryLinkedServiceDataLakeStorageGen2_Override(d DataFactoryLinkedServiceDataLakeStorageGen2, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceDataLakeStorageGen2Config) {
 	_init_.Initialize()
 

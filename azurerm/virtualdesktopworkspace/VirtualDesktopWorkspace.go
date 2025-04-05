@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/virtual_desktop_workspace azurerm_virtual_desktop_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/virtual_desktop_workspace azurerm_virtual_desktop_workspace}.
 type VirtualDesktopWorkspace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -499,7 +499,7 @@ func (j *jsiiProxy_VirtualDesktopWorkspace) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/virtual_desktop_workspace azurerm_virtual_desktop_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/virtual_desktop_workspace azurerm_virtual_desktop_workspace} Resource.
 func NewVirtualDesktopWorkspace(scope constructs.Construct, id *string, config *VirtualDesktopWorkspaceConfig) VirtualDesktopWorkspace {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewVirtualDesktopWorkspace(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/virtual_desktop_workspace azurerm_virtual_desktop_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/virtual_desktop_workspace azurerm_virtual_desktop_workspace} Resource.
 func NewVirtualDesktopWorkspace_Override(v VirtualDesktopWorkspace, scope constructs.Construct, id *string, config *VirtualDesktopWorkspaceConfig) {
 	_init_.Initialize()
 

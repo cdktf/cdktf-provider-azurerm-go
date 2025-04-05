@@ -22,26 +22,26 @@ type DynatraceTagRulesConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/dynatrace_tag_rules#monitor_id DynatraceTagRules#monitor_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/dynatrace_tag_rules#monitor_id DynatraceTagRules#monitor_id}.
 	MonitorId *string `field:"required" json:"monitorId" yaml:"monitorId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/dynatrace_tag_rules#name DynatraceTagRules#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/dynatrace_tag_rules#name DynatraceTagRules#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/dynatrace_tag_rules#id DynatraceTagRules#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/dynatrace_tag_rules#id DynatraceTagRules#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// log_rule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/dynatrace_tag_rules#log_rule DynatraceTagRules#log_rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/dynatrace_tag_rules#log_rule DynatraceTagRules#log_rule}
 	LogRule *DynatraceTagRulesLogRule `field:"optional" json:"logRule" yaml:"logRule"`
 	// metric_rule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/dynatrace_tag_rules#metric_rule DynatraceTagRules#metric_rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/dynatrace_tag_rules#metric_rule DynatraceTagRules#metric_rule}
 	MetricRule *DynatraceTagRulesMetricRule `field:"optional" json:"metricRule" yaml:"metricRule"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/dynatrace_tag_rules#timeouts DynatraceTagRules#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/dynatrace_tag_rules#timeouts DynatraceTagRules#timeouts}
 	Timeouts *DynatraceTagRulesTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -131,6 +131,10 @@ func (j *jsiiProxy_MssqlServer) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_MssqlServer) validateSetExpressVulnerabilityAssessmentEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MssqlServer) validateSetIdParameters(val *string) error {
 	return nil
 }

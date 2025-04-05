@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/data-sources/dynatrace_monitor azurerm_dynatrace_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/data-sources/dynatrace_monitor azurerm_dynatrace_monitor}.
 type DataAzurermDynatraceMonitor interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -423,7 +423,7 @@ func (j *jsiiProxy_DataAzurermDynatraceMonitor) User() DataAzurermDynatraceMonit
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/data-sources/dynatrace_monitor azurerm_dynatrace_monitor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/data-sources/dynatrace_monitor azurerm_dynatrace_monitor} Data Source.
 func NewDataAzurermDynatraceMonitor(scope constructs.Construct, id *string, config *DataAzurermDynatraceMonitorConfig) DataAzurermDynatraceMonitor {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewDataAzurermDynatraceMonitor(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/data-sources/dynatrace_monitor azurerm_dynatrace_monitor} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/data-sources/dynatrace_monitor azurerm_dynatrace_monitor} Data Source.
 func NewDataAzurermDynatraceMonitor_Override(d DataAzurermDynatraceMonitor, scope constructs.Construct, id *string, config *DataAzurermDynatraceMonitorConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/mssql_server azurerm_mssql_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/mssql_server azurerm_mssql_server}.
 type MssqlServer interface {
 	cdktf.TerraformResource
 	AdministratorLogin() *string
@@ -48,6 +48,9 @@ type MssqlServer interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExpressVulnerabilityAssessmentEnabled() interface{}
+	SetExpressVulnerabilityAssessmentEnabled(val interface{})
+	ExpressVulnerabilityAssessmentEnabledInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -169,6 +172,7 @@ type MssqlServer interface {
 	ResetAdministratorLoginPasswordWoVersion()
 	ResetAzureadAdministrator()
 	ResetConnectionPolicy()
+	ResetExpressVulnerabilityAssessmentEnabled()
 	ResetId()
 	ResetIdentity()
 	ResetMinimumTlsVersion()
@@ -364,6 +368,26 @@ func (j *jsiiProxy_MssqlServer) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlServer) ExpressVulnerabilityAssessmentEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"expressVulnerabilityAssessmentEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MssqlServer) ExpressVulnerabilityAssessmentEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"expressVulnerabilityAssessmentEnabledInput",
 		&returns,
 	)
 	return returns
@@ -760,7 +784,7 @@ func (j *jsiiProxy_MssqlServer) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
 func NewMssqlServer(scope constructs.Construct, id *string, config *MssqlServerConfig) MssqlServer {
 	_init_.Initialize()
 
@@ -778,7 +802,7 @@ func NewMssqlServer(scope constructs.Construct, id *string, config *MssqlServerC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/mssql_server azurerm_mssql_server} Resource.
 func NewMssqlServer_Override(m MssqlServer, scope constructs.Construct, id *string, config *MssqlServerConfig) {
 	_init_.Initialize()
 
@@ -870,6 +894,17 @@ func (j *jsiiProxy_MssqlServer)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MssqlServer)SetExpressVulnerabilityAssessmentEnabled(val interface{}) {
+	if err := j.validateSetExpressVulnerabilityAssessmentEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expressVulnerabilityAssessmentEnabled",
 		val,
 	)
 }
@@ -1463,6 +1498,14 @@ func (m *jsiiProxy_MssqlServer) ResetConnectionPolicy() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetConnectionPolicy",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MssqlServer) ResetExpressVulnerabilityAssessmentEnabled() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetExpressVulnerabilityAssessmentEnabled",
 		nil, // no parameters
 	)
 }

@@ -158,6 +158,10 @@ func init() {
 		reflect.TypeOf((*AzurermProviderFeaturesCognitiveAccount)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace",
+		reflect.TypeOf((*AzurermProviderFeaturesDatabricksWorkspace)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault",
 		reflect.TypeOf((*AzurermProviderFeaturesKeyVault)(nil)).Elem(),
 	)

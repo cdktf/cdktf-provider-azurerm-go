@@ -388,6 +388,17 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) validatePutPriorityMixPar
 	return nil
 }
 
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) validatePutRollingUpgradePolicyParameters(value *OrchestratedVirtualMachineScaleSetRollingUpgradePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) validatePutSkuProfileParameters(value *OrchestratedVirtualMachineScaleSetSkuProfile) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -797,6 +808,14 @@ func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateSetSourceImageIdP
 }
 
 func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) validateSetUpgradeModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp}.
 type DataFactoryLinkedServiceSftp interface {
 	cdktf.TerraformResource
 	AdditionalProperties() *map[string]*string
@@ -66,6 +66,12 @@ type DataFactoryLinkedServiceSftp interface {
 	IntegrationRuntimeName() *string
 	SetIntegrationRuntimeName(val *string)
 	IntegrationRuntimeNameInput() *string
+	KeyVaultPassword() DataFactoryLinkedServiceSftpKeyVaultPasswordList
+	KeyVaultPasswordInput() interface{}
+	KeyVaultPrivateKeyContentBase64() DataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64OutputReference
+	KeyVaultPrivateKeyContentBase64Input() *DataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64
+	KeyVaultPrivateKeyPassphrase() DataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphraseOutputReference
+	KeyVaultPrivateKeyPassphraseInput() *DataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphrase
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -84,6 +90,15 @@ type DataFactoryLinkedServiceSftp interface {
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
+	PrivateKeyContentBase64() *string
+	SetPrivateKeyContentBase64(val *string)
+	PrivateKeyContentBase64Input() *string
+	PrivateKeyPassphrase() *string
+	SetPrivateKeyPassphrase(val *string)
+	PrivateKeyPassphraseInput() *string
+	PrivateKeyPath() *string
+	SetPrivateKeyPath(val *string)
+	PrivateKeyPathInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -151,6 +166,9 @@ type DataFactoryLinkedServiceSftp interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutKeyVaultPassword(value interface{})
+	PutKeyVaultPrivateKeyContentBase64(value *DataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64)
+	PutKeyVaultPrivateKeyPassphrase(value *DataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphrase)
 	PutTimeouts(value *DataFactoryLinkedServiceSftpTimeouts)
 	ResetAdditionalProperties()
 	ResetAnnotations()
@@ -158,10 +176,17 @@ type DataFactoryLinkedServiceSftp interface {
 	ResetHostKeyFingerprint()
 	ResetId()
 	ResetIntegrationRuntimeName()
+	ResetKeyVaultPassword()
+	ResetKeyVaultPrivateKeyContentBase64()
+	ResetKeyVaultPrivateKeyPassphrase()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameters()
+	ResetPassword()
+	ResetPrivateKeyContentBase64()
+	ResetPrivateKeyPassphrase()
+	ResetPrivateKeyPath()
 	ResetSkipHostKeyValidation()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -442,6 +467,66 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSftp) IntegrationRuntimeNameInput() *
 	return returns
 }
 
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp) KeyVaultPassword() DataFactoryLinkedServiceSftpKeyVaultPasswordList {
+	var returns DataFactoryLinkedServiceSftpKeyVaultPasswordList
+	_jsii_.Get(
+		j,
+		"keyVaultPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp) KeyVaultPasswordInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"keyVaultPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp) KeyVaultPrivateKeyContentBase64() DataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64OutputReference {
+	var returns DataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64OutputReference
+	_jsii_.Get(
+		j,
+		"keyVaultPrivateKeyContentBase64",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp) KeyVaultPrivateKeyContentBase64Input() *DataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64 {
+	var returns *DataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64
+	_jsii_.Get(
+		j,
+		"keyVaultPrivateKeyContentBase64Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp) KeyVaultPrivateKeyPassphrase() DataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphraseOutputReference {
+	var returns DataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphraseOutputReference
+	_jsii_.Get(
+		j,
+		"keyVaultPrivateKeyPassphrase",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp) KeyVaultPrivateKeyPassphraseInput() *DataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphrase {
+	var returns *DataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphrase
+	_jsii_.Get(
+		j,
+		"keyVaultPrivateKeyPassphraseInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataFactoryLinkedServiceSftp) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -537,6 +622,66 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSftp) PortInput() *float64 {
 	_jsii_.Get(
 		j,
 		"portInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp) PrivateKeyContentBase64() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyContentBase64",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp) PrivateKeyContentBase64Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyContentBase64Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp) PrivateKeyPassphrase() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyPassphrase",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp) PrivateKeyPassphraseInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyPassphraseInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp) PrivateKeyPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp) PrivateKeyPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyPathInput",
 		&returns,
 	)
 	return returns
@@ -663,7 +808,7 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSftp) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp} Resource.
 func NewDataFactoryLinkedServiceSftp(scope constructs.Construct, id *string, config *DataFactoryLinkedServiceSftpConfig) DataFactoryLinkedServiceSftp {
 	_init_.Initialize()
 
@@ -681,7 +826,7 @@ func NewDataFactoryLinkedServiceSftp(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp} Resource.
 func NewDataFactoryLinkedServiceSftp_Override(d DataFactoryLinkedServiceSftp, scope constructs.Construct, id *string, config *DataFactoryLinkedServiceSftpConfig) {
 	_init_.Initialize()
 
@@ -880,6 +1025,39 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSftp)SetPort(val *float64) {
 	_jsii_.Set(
 		j,
 		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp)SetPrivateKeyContentBase64(val *string) {
+	if err := j.validateSetPrivateKeyContentBase64Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateKeyContentBase64",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp)SetPrivateKeyPassphrase(val *string) {
+	if err := j.validateSetPrivateKeyPassphraseParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateKeyPassphrase",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp)SetPrivateKeyPath(val *string) {
+	if err := j.validateSetPrivateKeyPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateKeyPath",
 		val,
 	)
 }
@@ -1278,6 +1456,39 @@ func (d *jsiiProxy_DataFactoryLinkedServiceSftp) OverrideLogicalId(newLogicalId 
 	)
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceSftp) PutKeyVaultPassword(value interface{}) {
+	if err := d.validatePutKeyVaultPasswordParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putKeyVaultPassword",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceSftp) PutKeyVaultPrivateKeyContentBase64(value *DataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64) {
+	if err := d.validatePutKeyVaultPrivateKeyContentBase64Parameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putKeyVaultPrivateKeyContentBase64",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceSftp) PutKeyVaultPrivateKeyPassphrase(value *DataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphrase) {
+	if err := d.validatePutKeyVaultPrivateKeyPassphraseParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putKeyVaultPrivateKeyPassphrase",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceSftp) PutTimeouts(value *DataFactoryLinkedServiceSftpTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1337,6 +1548,30 @@ func (d *jsiiProxy_DataFactoryLinkedServiceSftp) ResetIntegrationRuntimeName() {
 	)
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceSftp) ResetKeyVaultPassword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKeyVaultPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceSftp) ResetKeyVaultPrivateKeyContentBase64() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKeyVaultPrivateKeyContentBase64",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceSftp) ResetKeyVaultPrivateKeyPassphrase() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKeyVaultPrivateKeyPassphrase",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceSftp) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1349,6 +1584,38 @@ func (d *jsiiProxy_DataFactoryLinkedServiceSftp) ResetParameters() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceSftp) ResetPassword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceSftp) ResetPrivateKeyContentBase64() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrivateKeyContentBase64",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceSftp) ResetPrivateKeyPassphrase() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrivateKeyPassphrase",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceSftp) ResetPrivateKeyPath() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrivateKeyPath",
 		nil, // no parameters
 	)
 }

@@ -183,6 +183,10 @@ func (j *jsiiProxy_MysqlFlexibleServer) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_MysqlFlexibleServer) validateSetPublicNetworkAccessParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MysqlFlexibleServer) validateSetReplicationRoleParameters(val *string) error {
 	return nil
 }

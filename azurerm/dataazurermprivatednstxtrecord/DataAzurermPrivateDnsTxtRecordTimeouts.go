@@ -5,7 +5,7 @@ package dataazurermprivatednstxtrecord
 
 
 type DataAzurermPrivateDnsTxtRecordTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/data-sources/private_dns_txt_record#read DataAzurermPrivateDnsTxtRecord#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/data-sources/private_dns_txt_record#read DataAzurermPrivateDnsTxtRecord#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

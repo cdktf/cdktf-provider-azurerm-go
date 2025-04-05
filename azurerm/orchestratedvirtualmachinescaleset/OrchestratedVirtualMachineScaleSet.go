@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set}.
 type OrchestratedVirtualMachineScaleSet interface {
 	cdktf.TerraformResource
 	AdditionalCapabilities() OrchestratedVirtualMachineScaleSetAdditionalCapabilitiesOutputReference
@@ -122,6 +122,8 @@ type OrchestratedVirtualMachineScaleSet interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	RollingUpgradePolicy() OrchestratedVirtualMachineScaleSetRollingUpgradePolicyOutputReference
+	RollingUpgradePolicyInput() *OrchestratedVirtualMachineScaleSetRollingUpgradePolicy
 	SinglePlacementGroup() interface{}
 	SetSinglePlacementGroup(val interface{})
 	SinglePlacementGroupInput() interface{}
@@ -149,6 +151,9 @@ type OrchestratedVirtualMachineScaleSet interface {
 	Timeouts() OrchestratedVirtualMachineScaleSetTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UniqueId() *string
+	UpgradeMode() *string
+	SetUpgradeMode(val *string)
+	UpgradeModeInput() *string
 	UserDataBase64() *string
 	SetUserDataBase64(val *string)
 	UserDataBase64Input() *string
@@ -212,6 +217,7 @@ type OrchestratedVirtualMachineScaleSet interface {
 	PutOsProfile(value *OrchestratedVirtualMachineScaleSetOsProfile)
 	PutPlan(value *OrchestratedVirtualMachineScaleSetPlan)
 	PutPriorityMix(value *OrchestratedVirtualMachineScaleSetPriorityMix)
+	PutRollingUpgradePolicy(value *OrchestratedVirtualMachineScaleSetRollingUpgradePolicy)
 	PutSkuProfile(value *OrchestratedVirtualMachineScaleSetSkuProfile)
 	PutSourceImageReference(value *OrchestratedVirtualMachineScaleSetSourceImageReference)
 	PutTerminationNotification(value *OrchestratedVirtualMachineScaleSetTerminationNotification)
@@ -241,6 +247,7 @@ type OrchestratedVirtualMachineScaleSet interface {
 	ResetPriority()
 	ResetPriorityMix()
 	ResetProximityPlacementGroupId()
+	ResetRollingUpgradePolicy()
 	ResetSinglePlacementGroup()
 	ResetSkuName()
 	ResetSkuProfile()
@@ -249,6 +256,7 @@ type OrchestratedVirtualMachineScaleSet interface {
 	ResetTags()
 	ResetTerminationNotification()
 	ResetTimeouts()
+	ResetUpgradeMode()
 	ResetUserDataBase64()
 	ResetZoneBalance()
 	ResetZones()
@@ -920,6 +928,26 @@ func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) ResourceGroupNameInput() 
 	return returns
 }
 
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) RollingUpgradePolicy() OrchestratedVirtualMachineScaleSetRollingUpgradePolicyOutputReference {
+	var returns OrchestratedVirtualMachineScaleSetRollingUpgradePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"rollingUpgradePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) RollingUpgradePolicyInput() *OrchestratedVirtualMachineScaleSetRollingUpgradePolicy {
+	var returns *OrchestratedVirtualMachineScaleSetRollingUpgradePolicy
+	_jsii_.Get(
+		j,
+		"rollingUpgradePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) SinglePlacementGroup() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1120,6 +1148,26 @@ func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) UniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) UpgradeMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"upgradeMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) UpgradeModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"upgradeModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) UserDataBase64() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1181,7 +1229,7 @@ func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Resource.
 func NewOrchestratedVirtualMachineScaleSet(scope constructs.Construct, id *string, config *OrchestratedVirtualMachineScaleSetConfig) OrchestratedVirtualMachineScaleSet {
 	_init_.Initialize()
 
@@ -1199,7 +1247,7 @@ func NewOrchestratedVirtualMachineScaleSet(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.25.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set} Resource.
 func NewOrchestratedVirtualMachineScaleSet_Override(o OrchestratedVirtualMachineScaleSet, scope constructs.Construct, id *string, config *OrchestratedVirtualMachineScaleSetConfig) {
 	_init_.Initialize()
 
@@ -1483,6 +1531,17 @@ func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet)SetTags(val *map[string]*s
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrchestratedVirtualMachineScaleSet)SetUpgradeMode(val *string) {
+	if err := j.validateSetUpgradeModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"upgradeMode",
 		val,
 	)
 }
@@ -1994,6 +2053,17 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) PutPriorityMix(value *Orc
 	)
 }
 
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) PutRollingUpgradePolicy(value *OrchestratedVirtualMachineScaleSetRollingUpgradePolicy) {
+	if err := o.validatePutRollingUpgradePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putRollingUpgradePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) PutSkuProfile(value *OrchestratedVirtualMachineScaleSetSkuProfile) {
 	if err := o.validatePutSkuProfileParameters(value); err != nil {
 		panic(err)
@@ -2222,6 +2292,14 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) ResetProximityPlacementGr
 	)
 }
 
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) ResetRollingUpgradePolicy() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRollingUpgradePolicy",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) ResetSinglePlacementGroup() {
 	_jsii_.InvokeVoid(
 		o,
@@ -2282,6 +2360,14 @@ func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrchestratedVirtualMachineScaleSet) ResetUpgradeMode() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUpgradeMode",
 		nil, // no parameters
 	)
 }

@@ -75,6 +75,18 @@ func (d *jsiiProxy_DataFactoryLinkedServiceSftp) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (d *jsiiProxy_DataFactoryLinkedServiceSftp) validatePutKeyVaultPasswordParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceSftp) validatePutKeyVaultPrivateKeyContentBase64Parameters(value *DataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFactoryLinkedServiceSftp) validatePutKeyVaultPrivateKeyPassphraseParameters(value *DataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphrase) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFactoryLinkedServiceSftp) validatePutTimeoutsParameters(value *DataFactoryLinkedServiceSftpTimeouts) error {
 	return nil
 }
@@ -156,6 +168,18 @@ func (j *jsiiProxy_DataFactoryLinkedServiceSftp) validateSetPasswordParameters(v
 }
 
 func (j *jsiiProxy_DataFactoryLinkedServiceSftp) validateSetPortParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp) validateSetPrivateKeyContentBase64Parameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp) validateSetPrivateKeyPassphraseParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataFactoryLinkedServiceSftp) validateSetPrivateKeyPathParameters(val *string) error {
 	return nil
 }
 
