@@ -51,6 +51,18 @@ func (a *jsiiProxy_ApiManagementSecurityOutputReference) validateResolveParamete
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) validateSetBackendSsl30EnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) validateSetBackendTls10EnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) validateSetBackendTls11EnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementSecurityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -80,6 +92,18 @@ func (j *jsiiProxy_ApiManagementSecurityOutputReference) validateSetEnableFronte
 }
 
 func (j *jsiiProxy_ApiManagementSecurityOutputReference) validateSetEnableFrontendTls11Parameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) validateSetFrontendSsl30EnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) validateSetFrontendTls10EnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) validateSetFrontendTls11EnabledParameters(val interface{}) error {
 	return nil
 }
 

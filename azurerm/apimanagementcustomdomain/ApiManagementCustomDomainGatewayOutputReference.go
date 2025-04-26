@@ -47,6 +47,9 @@ type ApiManagementCustomDomainGatewayOutputReference interface {
 	HostNameInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	KeyVaultCertificateId() *string
+	SetKeyVaultCertificateId(val *string)
+	KeyVaultCertificateIdInput() *string
 	KeyVaultId() *string
 	SetKeyVaultId(val *string)
 	KeyVaultIdInput() *string
@@ -93,6 +96,7 @@ type ApiManagementCustomDomainGatewayOutputReference interface {
 	ResetCertificate()
 	ResetCertificatePassword()
 	ResetDefaultSslBinding()
+	ResetKeyVaultCertificateId()
 	ResetKeyVaultId()
 	ResetNegotiateClientCertificate()
 	ResetSslKeyvaultIdentityClientId()
@@ -266,6 +270,26 @@ func (j *jsiiProxy_ApiManagementCustomDomainGatewayOutputReference) InternalValu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementCustomDomainGatewayOutputReference) KeyVaultCertificateId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultCertificateId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementCustomDomainGatewayOutputReference) KeyVaultCertificateIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultCertificateIdInput",
 		&returns,
 	)
 	return returns
@@ -472,6 +496,17 @@ func (j *jsiiProxy_ApiManagementCustomDomainGatewayOutputReference)SetInternalVa
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiManagementCustomDomainGatewayOutputReference)SetKeyVaultCertificateId(val *string) {
+	if err := j.validateSetKeyVaultCertificateIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyVaultCertificateId",
 		val,
 	)
 }
@@ -737,6 +772,14 @@ func (a *jsiiProxy_ApiManagementCustomDomainGatewayOutputReference) ResetDefault
 	_jsii_.InvokeVoid(
 		a,
 		"resetDefaultSslBinding",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiManagementCustomDomainGatewayOutputReference) ResetKeyVaultCertificateId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetKeyVaultCertificateId",
 		nil, // no parameters
 	)
 }

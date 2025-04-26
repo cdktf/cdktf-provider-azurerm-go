@@ -5,11 +5,11 @@ package cosmosdbpostgresqlrole
 
 
 type CosmosdbPostgresqlRoleTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/cosmosdb_postgresql_role#create CosmosdbPostgresqlRole#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/cosmosdb_postgresql_role#create CosmosdbPostgresqlRole#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/cosmosdb_postgresql_role#delete CosmosdbPostgresqlRole#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/cosmosdb_postgresql_role#delete CosmosdbPostgresqlRole#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/cosmosdb_postgresql_role#read CosmosdbPostgresqlRole#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/cosmosdb_postgresql_role#read CosmosdbPostgresqlRole#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

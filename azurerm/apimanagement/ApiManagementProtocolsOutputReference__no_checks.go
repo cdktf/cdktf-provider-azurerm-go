@@ -63,6 +63,10 @@ func (j *jsiiProxy_ApiManagementProtocolsOutputReference) validateSetEnableHttp2
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementProtocolsOutputReference) validateSetHttp2EnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementProtocolsOutputReference) validateSetInternalValueParameters(val *ApiManagementProtocols) error {
 	return nil
 }

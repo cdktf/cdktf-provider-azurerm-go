@@ -75,6 +75,10 @@ func (d *jsiiProxy_DevCenterProject) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (d *jsiiProxy_DevCenterProject) validatePutIdentityParameters(value *DevCenterProjectIdentity) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevCenterProject) validatePutTimeoutsParameters(value *DevCenterProjectTimeouts) error {
 	return nil
 }

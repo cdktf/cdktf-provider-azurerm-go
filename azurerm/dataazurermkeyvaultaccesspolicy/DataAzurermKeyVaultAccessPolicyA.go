@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/data-sources/key_vault_access_policy azurerm_key_vault_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/data-sources/key_vault_access_policy azurerm_key_vault_access_policy}.
 type DataAzurermKeyVaultAccessPolicyA interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataAzurermKeyVaultAccessPolicyA) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/data-sources/key_vault_access_policy azurerm_key_vault_access_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/data-sources/key_vault_access_policy azurerm_key_vault_access_policy} Data Source.
 func NewDataAzurermKeyVaultAccessPolicyA(scope constructs.Construct, id *string, config *DataAzurermKeyVaultAccessPolicyAConfig) DataAzurermKeyVaultAccessPolicyA {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewDataAzurermKeyVaultAccessPolicyA(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/data-sources/key_vault_access_policy azurerm_key_vault_access_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/data-sources/key_vault_access_policy azurerm_key_vault_access_policy} Data Source.
 func NewDataAzurermKeyVaultAccessPolicyA_Override(d DataAzurermKeyVaultAccessPolicyA, scope constructs.Construct, id *string, config *DataAzurermKeyVaultAccessPolicyAConfig) {
 	_init_.Initialize()
 

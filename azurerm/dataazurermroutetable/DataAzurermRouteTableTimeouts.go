@@ -5,7 +5,7 @@ package dataazurermroutetable
 
 
 type DataAzurermRouteTableTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/data-sources/route_table#read DataAzurermRouteTable#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/data-sources/route_table#read DataAzurermRouteTable#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

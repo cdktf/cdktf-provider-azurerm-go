@@ -41,6 +41,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "logsIngestionEndpoint", GoGetter: "LogsIngestionEndpoint"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsIngestionEndpoint", GoGetter: "MetricsIngestionEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

@@ -75,6 +75,10 @@ func (j *jsiiProxy_ApiManagementHostnameConfigurationScmOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementHostnameConfigurationScmOutputReference) validateSetKeyVaultCertificateIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementHostnameConfigurationScmOutputReference) validateSetKeyVaultIdParameters(val *string) error {
 	return nil
 }

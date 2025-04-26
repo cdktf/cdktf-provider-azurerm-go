@@ -5,7 +5,7 @@ package automanageconfiguration
 
 
 type AutomanageConfigurationAzureSecurityBaseline struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/automanage_configuration#assignment_type AutomanageConfiguration#assignment_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/automanage_configuration#assignment_type AutomanageConfiguration#assignment_type}.
 	AssignmentType *string `field:"optional" json:"assignmentType" yaml:"assignmentType"`
 }
 

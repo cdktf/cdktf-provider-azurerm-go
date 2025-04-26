@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "autoDeleteOnIdle", GoGetter: "AutoDeleteOnIdle"},
+			_jsii_.MemberProperty{JsiiProperty: "batchedOperationsEnabled", GoGetter: "BatchedOperationsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -25,6 +26,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "enableBatchedOperations", GoGetter: "EnableBatchedOperations"},
 			_jsii_.MemberProperty{JsiiProperty: "enableExpress", GoGetter: "EnableExpress"},
 			_jsii_.MemberProperty{JsiiProperty: "enablePartitioning", GoGetter: "EnablePartitioning"},
+			_jsii_.MemberProperty{JsiiProperty: "expressEnabled", GoGetter: "ExpressEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -50,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "namespaceNameInput", GoGetter: "NamespaceNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "partitioningEnabled", GoGetter: "PartitioningEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},

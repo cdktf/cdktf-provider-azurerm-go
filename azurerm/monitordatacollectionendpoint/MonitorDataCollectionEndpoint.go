@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint}.
 type MonitorDataCollectionEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,7 @@ type MonitorDataCollectionEndpoint interface {
 	SetLocation(val *string)
 	LocationInput() *string
 	LogsIngestionEndpoint() *string
+	MetricsIngestionEndpoint() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -361,6 +362,16 @@ func (j *jsiiProxy_MonitorDataCollectionEndpoint) LogsIngestionEndpoint() *strin
 	return returns
 }
 
+func (j *jsiiProxy_MonitorDataCollectionEndpoint) MetricsIngestionEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metricsIngestionEndpoint",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitorDataCollectionEndpoint) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -532,7 +543,7 @@ func (j *jsiiProxy_MonitorDataCollectionEndpoint) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint} Resource.
 func NewMonitorDataCollectionEndpoint(scope constructs.Construct, id *string, config *MonitorDataCollectionEndpointConfig) MonitorDataCollectionEndpoint {
 	_init_.Initialize()
 
@@ -550,7 +561,7 @@ func NewMonitorDataCollectionEndpoint(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/monitor_data_collection_endpoint azurerm_monitor_data_collection_endpoint} Resource.
 func NewMonitorDataCollectionEndpoint_Override(m MonitorDataCollectionEndpoint, scope constructs.Construct, id *string, config *MonitorDataCollectionEndpointConfig) {
 	_init_.Initialize()
 

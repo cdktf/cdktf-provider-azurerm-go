@@ -33,6 +33,7 @@ type DataAzurermApiManagementHostnameConfigurationDeveloperPortalOutputReference
 	HostName() *string
 	InternalValue() *DataAzurermApiManagementHostnameConfigurationDeveloperPortal
 	SetInternalValue(val *DataAzurermApiManagementHostnameConfigurationDeveloperPortal)
+	KeyVaultCertificateId() *string
 	KeyVaultId() *string
 	NegotiateClientCertificate() cdktf.IResolvable
 	// Experimental.
@@ -137,6 +138,16 @@ func (j *jsiiProxy_DataAzurermApiManagementHostnameConfigurationDeveloperPortalO
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermApiManagementHostnameConfigurationDeveloperPortalOutputReference) KeyVaultCertificateId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultCertificateId",
 		&returns,
 	)
 	return returns

@@ -41,6 +41,9 @@ type MysqlFlexibleServerStorageOutputReference interface {
 	IoScalingEnabled() interface{}
 	SetIoScalingEnabled(val interface{})
 	IoScalingEnabledInput() interface{}
+	LogOnDiskEnabled() interface{}
+	SetLogOnDiskEnabled(val interface{})
+	LogOnDiskEnabledInput() interface{}
 	SizeGb() *float64
 	SetSizeGb(val *float64)
 	SizeGbInput() *float64
@@ -79,6 +82,7 @@ type MysqlFlexibleServerStorageOutputReference interface {
 	ResetAutoGrowEnabled()
 	ResetIops()
 	ResetIoScalingEnabled()
+	ResetLogOnDiskEnabled()
 	ResetSizeGb()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -200,6 +204,26 @@ func (j *jsiiProxy_MysqlFlexibleServerStorageOutputReference) IoScalingEnabledIn
 	_jsii_.Get(
 		j,
 		"ioScalingEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MysqlFlexibleServerStorageOutputReference) LogOnDiskEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logOnDiskEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MysqlFlexibleServerStorageOutputReference) LogOnDiskEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logOnDiskEnabledInput",
 		&returns,
 	)
 	return returns
@@ -335,6 +359,17 @@ func (j *jsiiProxy_MysqlFlexibleServerStorageOutputReference)SetIoScalingEnabled
 	_jsii_.Set(
 		j,
 		"ioScalingEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MysqlFlexibleServerStorageOutputReference)SetLogOnDiskEnabled(val interface{}) {
+	if err := j.validateSetLogOnDiskEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logOnDiskEnabled",
 		val,
 	)
 }
@@ -578,6 +613,14 @@ func (m *jsiiProxy_MysqlFlexibleServerStorageOutputReference) ResetIoScalingEnab
 	_jsii_.InvokeVoid(
 		m,
 		"resetIoScalingEnabled",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MysqlFlexibleServerStorageOutputReference) ResetLogOnDiskEnabled() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetLogOnDiskEnabled",
 		nil, // no parameters
 	)
 }

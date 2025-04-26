@@ -33,6 +33,9 @@ type ApiManagementProtocolsOutputReference interface {
 	EnableHttp2Input() interface{}
 	// Experimental.
 	Fqn() *string
+	Http2Enabled() interface{}
+	SetHttp2Enabled(val interface{})
+	Http2EnabledInput() interface{}
 	InternalValue() *ApiManagementProtocols
 	SetInternalValue(val *ApiManagementProtocols)
 	// Experimental.
@@ -68,6 +71,7 @@ type ApiManagementProtocolsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnableHttp2()
+	ResetHttp2Enabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -138,6 +142,26 @@ func (j *jsiiProxy_ApiManagementProtocolsOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementProtocolsOutputReference) Http2Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"http2Enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementProtocolsOutputReference) Http2EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"http2EnabledInput",
 		&returns,
 	)
 	return returns
@@ -230,6 +254,17 @@ func (j *jsiiProxy_ApiManagementProtocolsOutputReference)SetEnableHttp2(val inte
 	_jsii_.Set(
 		j,
 		"enableHttp2",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiManagementProtocolsOutputReference)SetHttp2Enabled(val interface{}) {
+	if err := j.validateSetHttp2EnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"http2Enabled",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (a *jsiiProxy_ApiManagementProtocolsOutputReference) ResetEnableHttp2() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEnableHttp2",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiManagementProtocolsOutputReference) ResetHttp2Enabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetHttp2Enabled",
 		nil, // no parameters
 	)
 }

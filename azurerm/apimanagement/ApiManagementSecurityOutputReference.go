@@ -13,6 +13,15 @@ import (
 
 type ApiManagementSecurityOutputReference interface {
 	cdktf.ComplexObject
+	BackendSsl30Enabled() interface{}
+	SetBackendSsl30Enabled(val interface{})
+	BackendSsl30EnabledInput() interface{}
+	BackendTls10Enabled() interface{}
+	SetBackendTls10Enabled(val interface{})
+	BackendTls10EnabledInput() interface{}
+	BackendTls11Enabled() interface{}
+	SetBackendTls11Enabled(val interface{})
+	BackendTls11EnabledInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -48,6 +57,15 @@ type ApiManagementSecurityOutputReference interface {
 	EnableFrontendTls11Input() interface{}
 	// Experimental.
 	Fqn() *string
+	FrontendSsl30Enabled() interface{}
+	SetFrontendSsl30Enabled(val interface{})
+	FrontendSsl30EnabledInput() interface{}
+	FrontendTls10Enabled() interface{}
+	SetFrontendTls10Enabled(val interface{})
+	FrontendTls10EnabledInput() interface{}
+	FrontendTls11Enabled() interface{}
+	SetFrontendTls11Enabled(val interface{})
+	FrontendTls11EnabledInput() interface{}
 	InternalValue() *ApiManagementSecurity
 	SetInternalValue(val *ApiManagementSecurity)
 	// Experimental.
@@ -115,12 +133,18 @@ type ApiManagementSecurityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBackendSsl30Enabled()
+	ResetBackendTls10Enabled()
+	ResetBackendTls11Enabled()
 	ResetEnableBackendSsl30()
 	ResetEnableBackendTls10()
 	ResetEnableBackendTls11()
 	ResetEnableFrontendSsl30()
 	ResetEnableFrontendTls10()
 	ResetEnableFrontendTls11()
+	ResetFrontendSsl30Enabled()
+	ResetFrontendTls10Enabled()
+	ResetFrontendTls11Enabled()
 	ResetTlsEcdheEcdsaWithAes128CbcShaCiphersEnabled()
 	ResetTlsEcdheEcdsaWithAes256CbcShaCiphersEnabled()
 	ResetTlsEcdheRsaWithAes128CbcShaCiphersEnabled()
@@ -145,6 +169,66 @@ type ApiManagementSecurityOutputReference interface {
 // The jsii proxy struct for ApiManagementSecurityOutputReference
 type jsiiProxy_ApiManagementSecurityOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) BackendSsl30Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"backendSsl30Enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) BackendSsl30EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"backendSsl30EnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) BackendTls10Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"backendTls10Enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) BackendTls10EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"backendTls10EnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) BackendTls11Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"backendTls11Enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) BackendTls11EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"backendTls11EnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ApiManagementSecurityOutputReference) ComplexObjectIndex() interface{} {
@@ -302,6 +386,66 @@ func (j *jsiiProxy_ApiManagementSecurityOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) FrontendSsl30Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"frontendSsl30Enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) FrontendSsl30EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"frontendSsl30EnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) FrontendTls10Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"frontendTls10Enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) FrontendTls10EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"frontendTls10EnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) FrontendTls11Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"frontendTls11Enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference) FrontendTls11EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"frontendTls11EnabledInput",
 		&returns,
 	)
 	return returns
@@ -585,6 +729,39 @@ func NewApiManagementSecurityOutputReference_Override(a ApiManagementSecurityOut
 	)
 }
 
+func (j *jsiiProxy_ApiManagementSecurityOutputReference)SetBackendSsl30Enabled(val interface{}) {
+	if err := j.validateSetBackendSsl30EnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"backendSsl30Enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference)SetBackendTls10Enabled(val interface{}) {
+	if err := j.validateSetBackendTls10EnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"backendTls10Enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference)SetBackendTls11Enabled(val interface{}) {
+	if err := j.validateSetBackendTls11EnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"backendTls11Enabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApiManagementSecurityOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -669,6 +846,39 @@ func (j *jsiiProxy_ApiManagementSecurityOutputReference)SetEnableFrontendTls11(v
 	_jsii_.Set(
 		j,
 		"enableFrontendTls11",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference)SetFrontendSsl30Enabled(val interface{}) {
+	if err := j.validateSetFrontendSsl30EnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"frontendSsl30Enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference)SetFrontendTls10Enabled(val interface{}) {
+	if err := j.validateSetFrontendTls10EnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"frontendTls10Enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiManagementSecurityOutputReference)SetFrontendTls11Enabled(val interface{}) {
+	if err := j.validateSetFrontendTls11EnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"frontendTls11Enabled",
 		val,
 	)
 }
@@ -1013,6 +1223,30 @@ func (a *jsiiProxy_ApiManagementSecurityOutputReference) InterpolationForAttribu
 	return returns
 }
 
+func (a *jsiiProxy_ApiManagementSecurityOutputReference) ResetBackendSsl30Enabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBackendSsl30Enabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiManagementSecurityOutputReference) ResetBackendTls10Enabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBackendTls10Enabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiManagementSecurityOutputReference) ResetBackendTls11Enabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBackendTls11Enabled",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApiManagementSecurityOutputReference) ResetEnableBackendSsl30() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1057,6 +1291,30 @@ func (a *jsiiProxy_ApiManagementSecurityOutputReference) ResetEnableFrontendTls1
 	_jsii_.InvokeVoid(
 		a,
 		"resetEnableFrontendTls11",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiManagementSecurityOutputReference) ResetFrontendSsl30Enabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFrontendSsl30Enabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiManagementSecurityOutputReference) ResetFrontendTls10Enabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFrontendTls10Enabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiManagementSecurityOutputReference) ResetFrontendTls11Enabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFrontendTls11Enabled",
 		nil, // no parameters
 	)
 }

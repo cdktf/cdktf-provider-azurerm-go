@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/dev_center_project azurerm_dev_center_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/dev_center_project azurerm_dev_center_project}.
 type DevCenterProject interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -48,6 +48,8 @@ type DevCenterProject interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	Identity() DevCenterProjectIdentityOutputReference
+	IdentityInput() *DevCenterProjectIdentity
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -131,9 +133,11 @@ type DevCenterProject interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutIdentity(value *DevCenterProjectIdentity)
 	PutTimeouts(value *DevCenterProjectTimeouts)
 	ResetDescription()
 	ResetId()
+	ResetIdentity()
 	ResetMaximumDevBoxesPerUser()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -293,6 +297,26 @@ func (j *jsiiProxy_DevCenterProject) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevCenterProject) Identity() DevCenterProjectIdentityOutputReference {
+	var returns DevCenterProjectIdentityOutputReference
+	_jsii_.Get(
+		j,
+		"identity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevCenterProject) IdentityInput() *DevCenterProjectIdentity {
+	var returns *DevCenterProjectIdentity
+	_jsii_.Get(
+		j,
+		"identityInput",
 		&returns,
 	)
 	return returns
@@ -509,7 +533,7 @@ func (j *jsiiProxy_DevCenterProject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/dev_center_project azurerm_dev_center_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/dev_center_project azurerm_dev_center_project} Resource.
 func NewDevCenterProject(scope constructs.Construct, id *string, config *DevCenterProjectConfig) DevCenterProject {
 	_init_.Initialize()
 
@@ -527,7 +551,7 @@ func NewDevCenterProject(scope constructs.Construct, id *string, config *DevCent
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/dev_center_project azurerm_dev_center_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/dev_center_project azurerm_dev_center_project} Resource.
 func NewDevCenterProject_Override(d DevCenterProject, scope constructs.Construct, id *string, config *DevCenterProjectConfig) {
 	_init_.Initialize()
 
@@ -1047,6 +1071,17 @@ func (d *jsiiProxy_DevCenterProject) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DevCenterProject) PutIdentity(value *DevCenterProjectIdentity) {
+	if err := d.validatePutIdentityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putIdentity",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DevCenterProject) PutTimeouts(value *DevCenterProjectTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1070,6 +1105,14 @@ func (d *jsiiProxy_DevCenterProject) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevCenterProject) ResetIdentity() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIdentity",
 		nil, // no parameters
 	)
 }

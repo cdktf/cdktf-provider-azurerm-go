@@ -75,6 +75,10 @@ func (j *jsiiProxy_ApiManagementCustomDomainDeveloperPortalOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementCustomDomainDeveloperPortalOutputReference) validateSetKeyVaultCertificateIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementCustomDomainDeveloperPortalOutputReference) validateSetKeyVaultIdParameters(val *string) error {
 	return nil
 }

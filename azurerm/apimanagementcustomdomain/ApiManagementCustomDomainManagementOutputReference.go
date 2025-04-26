@@ -44,6 +44,9 @@ type ApiManagementCustomDomainManagementOutputReference interface {
 	HostNameInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	KeyVaultCertificateId() *string
+	SetKeyVaultCertificateId(val *string)
+	KeyVaultCertificateIdInput() *string
 	KeyVaultId() *string
 	SetKeyVaultId(val *string)
 	KeyVaultIdInput() *string
@@ -89,6 +92,7 @@ type ApiManagementCustomDomainManagementOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCertificate()
 	ResetCertificatePassword()
+	ResetKeyVaultCertificateId()
 	ResetKeyVaultId()
 	ResetNegotiateClientCertificate()
 	ResetSslKeyvaultIdentityClientId()
@@ -242,6 +246,26 @@ func (j *jsiiProxy_ApiManagementCustomDomainManagementOutputReference) InternalV
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementCustomDomainManagementOutputReference) KeyVaultCertificateId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultCertificateId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementCustomDomainManagementOutputReference) KeyVaultCertificateIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultCertificateIdInput",
 		&returns,
 	)
 	return returns
@@ -437,6 +461,17 @@ func (j *jsiiProxy_ApiManagementCustomDomainManagementOutputReference)SetInterna
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiManagementCustomDomainManagementOutputReference)SetKeyVaultCertificateId(val *string) {
+	if err := j.validateSetKeyVaultCertificateIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyVaultCertificateId",
 		val,
 	)
 }
@@ -694,6 +729,14 @@ func (a *jsiiProxy_ApiManagementCustomDomainManagementOutputReference) ResetCert
 	_jsii_.InvokeVoid(
 		a,
 		"resetCertificatePassword",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiManagementCustomDomainManagementOutputReference) ResetKeyVaultCertificateId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetKeyVaultCertificateId",
 		nil, // no parameters
 	)
 }

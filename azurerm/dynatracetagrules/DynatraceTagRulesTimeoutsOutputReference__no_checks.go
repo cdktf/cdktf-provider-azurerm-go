@@ -83,6 +83,10 @@ func (j *jsiiProxy_DynatraceTagRulesTimeoutsOutputReference) validateSetTerrafor
 	return nil
 }
 
+func (j *jsiiProxy_DynatraceTagRulesTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewDynatraceTagRulesTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/storage_container_immutability_policy azurerm_storage_container_immutability_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/storage_container_immutability_policy azurerm_storage_container_immutability_policy}.
 type StorageContainerImmutabilityPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -452,7 +452,7 @@ func (j *jsiiProxy_StorageContainerImmutabilityPolicy) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/storage_container_immutability_policy azurerm_storage_container_immutability_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/storage_container_immutability_policy azurerm_storage_container_immutability_policy} Resource.
 func NewStorageContainerImmutabilityPolicy(scope constructs.Construct, id *string, config *StorageContainerImmutabilityPolicyConfig) StorageContainerImmutabilityPolicy {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewStorageContainerImmutabilityPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/resources/storage_container_immutability_policy azurerm_storage_container_immutability_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/storage_container_immutability_policy azurerm_storage_container_immutability_policy} Resource.
 func NewStorageContainerImmutabilityPolicy_Override(s StorageContainerImmutabilityPolicy, scope constructs.Construct, id *string, config *StorageContainerImmutabilityPolicyConfig) {
 	_init_.Initialize()
 

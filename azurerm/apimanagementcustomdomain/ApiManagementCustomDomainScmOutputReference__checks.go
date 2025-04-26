@@ -214,6 +214,14 @@ func (j *jsiiProxy_ApiManagementCustomDomainScmOutputReference) validateSetInter
 	return nil
 }
 
+func (j *jsiiProxy_ApiManagementCustomDomainScmOutputReference) validateSetKeyVaultCertificateIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApiManagementCustomDomainScmOutputReference) validateSetKeyVaultIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

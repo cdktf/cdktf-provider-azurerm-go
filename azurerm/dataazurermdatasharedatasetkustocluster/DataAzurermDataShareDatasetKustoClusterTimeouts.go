@@ -5,7 +5,7 @@ package dataazurermdatasharedatasetkustocluster
 
 
 type DataAzurermDataShareDatasetKustoClusterTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.26.0/docs/data-sources/data_share_dataset_kusto_cluster#read DataAzurermDataShareDatasetKustoCluster#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/data-sources/data_share_dataset_kusto_cluster#read DataAzurermDataShareDatasetKustoCluster#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

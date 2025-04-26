@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "logsIngestionEndpoint", GoGetter: "LogsIngestionEndpoint"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsIngestionEndpoint", GoGetter: "MetricsIngestionEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},

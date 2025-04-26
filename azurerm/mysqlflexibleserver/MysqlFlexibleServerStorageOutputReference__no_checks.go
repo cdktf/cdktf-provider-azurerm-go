@@ -75,6 +75,10 @@ func (j *jsiiProxy_MysqlFlexibleServerStorageOutputReference) validateSetIoScali
 	return nil
 }
 
+func (j *jsiiProxy_MysqlFlexibleServerStorageOutputReference) validateSetLogOnDiskEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MysqlFlexibleServerStorageOutputReference) validateSetSizeGbParameters(val *float64) error {
 	return nil
 }

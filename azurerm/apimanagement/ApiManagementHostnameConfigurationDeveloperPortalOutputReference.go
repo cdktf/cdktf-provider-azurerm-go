@@ -44,6 +44,9 @@ type ApiManagementHostnameConfigurationDeveloperPortalOutputReference interface 
 	HostNameInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	KeyVaultCertificateId() *string
+	SetKeyVaultCertificateId(val *string)
+	KeyVaultCertificateIdInput() *string
 	KeyVaultId() *string
 	SetKeyVaultId(val *string)
 	KeyVaultIdInput() *string
@@ -89,6 +92,7 @@ type ApiManagementHostnameConfigurationDeveloperPortalOutputReference interface 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCertificate()
 	ResetCertificatePassword()
+	ResetKeyVaultCertificateId()
 	ResetKeyVaultId()
 	ResetNegotiateClientCertificate()
 	ResetSslKeyvaultIdentityClientId()
@@ -242,6 +246,26 @@ func (j *jsiiProxy_ApiManagementHostnameConfigurationDeveloperPortalOutputRefere
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementHostnameConfigurationDeveloperPortalOutputReference) KeyVaultCertificateId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultCertificateId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiManagementHostnameConfigurationDeveloperPortalOutputReference) KeyVaultCertificateIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyVaultCertificateIdInput",
 		&returns,
 	)
 	return returns
@@ -437,6 +461,17 @@ func (j *jsiiProxy_ApiManagementHostnameConfigurationDeveloperPortalOutputRefere
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiManagementHostnameConfigurationDeveloperPortalOutputReference)SetKeyVaultCertificateId(val *string) {
+	if err := j.validateSetKeyVaultCertificateIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyVaultCertificateId",
 		val,
 	)
 }
@@ -694,6 +729,14 @@ func (a *jsiiProxy_ApiManagementHostnameConfigurationDeveloperPortalOutputRefere
 	_jsii_.InvokeVoid(
 		a,
 		"resetCertificatePassword",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiManagementHostnameConfigurationDeveloperPortalOutputReference) ResetKeyVaultCertificateId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetKeyVaultCertificateId",
 		nil, // no parameters
 	)
 }

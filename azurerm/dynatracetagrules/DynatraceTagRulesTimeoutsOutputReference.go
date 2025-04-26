@@ -49,6 +49,9 @@ type DynatraceTagRulesTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,6 +79,7 @@ type DynatraceTagRulesTimeoutsOutputReference interface {
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -221,6 +225,26 @@ func (j *jsiiProxy_DynatraceTagRulesTimeoutsOutputReference) TerraformResource()
 	return returns
 }
 
+func (j *jsiiProxy_DynatraceTagRulesTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynatraceTagRulesTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDynatraceTagRulesTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DynatraceTagRulesTimeoutsOutputReference {
 	_init_.Initialize()
@@ -333,6 +357,17 @@ func (j *jsiiProxy_DynatraceTagRulesTimeoutsOutputReference)SetTerraformResource
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DynatraceTagRulesTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -543,6 +578,14 @@ func (d *jsiiProxy_DynatraceTagRulesTimeoutsOutputReference) ResetRead() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRead",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DynatraceTagRulesTimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUpdate",
 		nil, // no parameters
 	)
 }
