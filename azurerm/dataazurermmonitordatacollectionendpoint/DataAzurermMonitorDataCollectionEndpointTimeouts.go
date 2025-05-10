@@ -5,7 +5,7 @@ package dataazurermmonitordatacollectionendpoint
 
 
 type DataAzurermMonitorDataCollectionEndpointTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/data-sources/monitor_data_collection_endpoint#read DataAzurermMonitorDataCollectionEndpoint#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/data-sources/monitor_data_collection_endpoint#read DataAzurermMonitorDataCollectionEndpoint#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

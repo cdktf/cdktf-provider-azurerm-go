@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/ai_foundry_project azurerm_ai_foundry_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/ai_foundry_project azurerm_ai_foundry_project}.
 type AiFoundryProject interface {
 	cdktf.TerraformResource
 	AiServicesHubId() *string
@@ -68,6 +68,9 @@ type AiFoundryProject interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PrimaryUserAssignedIdentity() *string
+	SetPrimaryUserAssignedIdentity(val *string)
+	PrimaryUserAssignedIdentityInput() *string
 	ProjectId() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -143,6 +146,7 @@ type AiFoundryProject interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrimaryUserAssignedIdentity()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -423,6 +427,26 @@ func (j *jsiiProxy_AiFoundryProject) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_AiFoundryProject) PrimaryUserAssignedIdentity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryUserAssignedIdentity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AiFoundryProject) PrimaryUserAssignedIdentityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryUserAssignedIdentityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AiFoundryProject) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -534,7 +558,7 @@ func (j *jsiiProxy_AiFoundryProject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/ai_foundry_project azurerm_ai_foundry_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/ai_foundry_project azurerm_ai_foundry_project} Resource.
 func NewAiFoundryProject(scope constructs.Construct, id *string, config *AiFoundryProjectConfig) AiFoundryProject {
 	_init_.Initialize()
 
@@ -552,7 +576,7 @@ func NewAiFoundryProject(scope constructs.Construct, id *string, config *AiFound
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/ai_foundry_project azurerm_ai_foundry_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/ai_foundry_project azurerm_ai_foundry_project} Resource.
 func NewAiFoundryProject_Override(a AiFoundryProject, scope constructs.Construct, id *string, config *AiFoundryProjectConfig) {
 	_init_.Initialize()
 
@@ -685,6 +709,17 @@ func (j *jsiiProxy_AiFoundryProject)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AiFoundryProject)SetPrimaryUserAssignedIdentity(val *string) {
+	if err := j.validateSetPrimaryUserAssignedIdentityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"primaryUserAssignedIdentity",
 		val,
 	)
 }
@@ -1138,6 +1173,14 @@ func (a *jsiiProxy_AiFoundryProject) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AiFoundryProject) ResetPrimaryUserAssignedIdentity() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPrimaryUserAssignedIdentity",
 		nil, // no parameters
 	)
 }

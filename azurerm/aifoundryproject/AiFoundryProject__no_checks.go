@@ -139,6 +139,10 @@ func (j *jsiiProxy_AiFoundryProject) validateSetNameParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_AiFoundryProject) validateSetPrimaryUserAssignedIdentityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AiFoundryProject) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

@@ -5,19 +5,19 @@ package frontdoor
 
 
 type FrontdoorBackendPoolBackend struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/frontdoor#address Frontdoor#address}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/frontdoor#address Frontdoor#address}.
 	Address *string `field:"required" json:"address" yaml:"address"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/frontdoor#host_header Frontdoor#host_header}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/frontdoor#host_header Frontdoor#host_header}.
 	HostHeader *string `field:"required" json:"hostHeader" yaml:"hostHeader"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/frontdoor#http_port Frontdoor#http_port}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/frontdoor#http_port Frontdoor#http_port}.
 	HttpPort *float64 `field:"required" json:"httpPort" yaml:"httpPort"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/frontdoor#https_port Frontdoor#https_port}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/frontdoor#https_port Frontdoor#https_port}.
 	HttpsPort *float64 `field:"required" json:"httpsPort" yaml:"httpsPort"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/frontdoor#enabled Frontdoor#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/frontdoor#enabled Frontdoor#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/frontdoor#priority Frontdoor#priority}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/frontdoor#priority Frontdoor#priority}.
 	Priority *float64 `field:"optional" json:"priority" yaml:"priority"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/frontdoor#weight Frontdoor#weight}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/frontdoor#weight Frontdoor#weight}.
 	Weight *float64 `field:"optional" json:"weight" yaml:"weight"`
 }
 

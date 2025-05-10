@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/nginx_deployment azurerm_nginx_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/nginx_deployment azurerm_nginx_deployment}.
 type NginxDeployment interface {
 	cdktf.TerraformResource
 	AutomaticUpgradeChannel() *string
@@ -111,6 +111,8 @@ type NginxDeployment interface {
 	TerraformResourceType() *string
 	Timeouts() NginxDeploymentTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	WebApplicationFirewall() NginxDeploymentWebApplicationFirewallOutputReference
+	WebApplicationFirewallInput() *NginxDeploymentWebApplicationFirewall
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -161,6 +163,7 @@ type NginxDeployment interface {
 	PutLoggingStorageAccount(value interface{})
 	PutNetworkInterface(value interface{})
 	PutTimeouts(value *NginxDeploymentTimeouts)
+	PutWebApplicationFirewall(value *NginxDeploymentWebApplicationFirewall)
 	ResetAutomaticUpgradeChannel()
 	ResetAutoScaleProfile()
 	ResetCapacity()
@@ -178,6 +181,7 @@ type NginxDeployment interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTimeouts()
+	ResetWebApplicationFirewall()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -746,8 +750,28 @@ func (j *jsiiProxy_NginxDeployment) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NginxDeployment) WebApplicationFirewall() NginxDeploymentWebApplicationFirewallOutputReference {
+	var returns NginxDeploymentWebApplicationFirewallOutputReference
+	_jsii_.Get(
+		j,
+		"webApplicationFirewall",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
+func (j *jsiiProxy_NginxDeployment) WebApplicationFirewallInput() *NginxDeploymentWebApplicationFirewall {
+	var returns *NginxDeploymentWebApplicationFirewall
+	_jsii_.Get(
+		j,
+		"webApplicationFirewallInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
 func NewNginxDeployment(scope constructs.Construct, id *string, config *NginxDeploymentConfig) NginxDeployment {
 	_init_.Initialize()
 
@@ -765,7 +789,7 @@ func NewNginxDeployment(scope constructs.Construct, id *string, config *NginxDep
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource.
 func NewNginxDeployment_Override(n NginxDeployment, scope constructs.Construct, id *string, config *NginxDeploymentConfig) {
 	_init_.Initialize()
 
@@ -1395,6 +1419,17 @@ func (n *jsiiProxy_NginxDeployment) PutTimeouts(value *NginxDeploymentTimeouts) 
 	)
 }
 
+func (n *jsiiProxy_NginxDeployment) PutWebApplicationFirewall(value *NginxDeploymentWebApplicationFirewall) {
+	if err := n.validatePutWebApplicationFirewallParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putWebApplicationFirewall",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NginxDeployment) ResetAutomaticUpgradeChannel() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1511,6 +1546,14 @@ func (n *jsiiProxy_NginxDeployment) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NginxDeployment) ResetWebApplicationFirewall() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetWebApplicationFirewall",
 		nil, // no parameters
 	)
 }

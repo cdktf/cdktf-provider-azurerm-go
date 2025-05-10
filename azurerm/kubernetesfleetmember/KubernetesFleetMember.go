@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/kubernetes_fleet_member azurerm_kubernetes_fleet_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/kubernetes_fleet_member azurerm_kubernetes_fleet_member}.
 type KubernetesFleetMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_KubernetesFleetMember) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/kubernetes_fleet_member azurerm_kubernetes_fleet_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/kubernetes_fleet_member azurerm_kubernetes_fleet_member} Resource.
 func NewKubernetesFleetMember(scope constructs.Construct, id *string, config *KubernetesFleetMemberConfig) KubernetesFleetMember {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewKubernetesFleetMember(scope constructs.Construct, id *string, config *Ku
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/kubernetes_fleet_member azurerm_kubernetes_fleet_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/kubernetes_fleet_member azurerm_kubernetes_fleet_member} Resource.
 func NewKubernetesFleetMember_Override(k KubernetesFleetMember, scope constructs.Construct, id *string, config *KubernetesFleetMemberConfig) {
 	_init_.Initialize()
 

@@ -103,6 +103,10 @@ func (n *jsiiProxy_NginxDeployment) validatePutTimeoutsParameters(value *NginxDe
 	return nil
 }
 
+func (n *jsiiProxy_NginxDeployment) validatePutWebApplicationFirewallParameters(value *NginxDeploymentWebApplicationFirewall) error {
+	return nil
+}
+
 func validateNginxDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

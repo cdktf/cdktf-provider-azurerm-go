@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/data-sources/private_dns_resolver azurerm_private_dns_resolver}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/data-sources/private_dns_resolver azurerm_private_dns_resolver}.
 type DataAzurermPrivateDnsResolver interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DataAzurermPrivateDnsResolver) VirtualNetworkId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/data-sources/private_dns_resolver azurerm_private_dns_resolver} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/data-sources/private_dns_resolver azurerm_private_dns_resolver} Data Source.
 func NewDataAzurermPrivateDnsResolver(scope constructs.Construct, id *string, config *DataAzurermPrivateDnsResolverConfig) DataAzurermPrivateDnsResolver {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewDataAzurermPrivateDnsResolver(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/data-sources/private_dns_resolver azurerm_private_dns_resolver} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/data-sources/private_dns_resolver azurerm_private_dns_resolver} Data Source.
 func NewDataAzurermPrivateDnsResolver_Override(d DataAzurermPrivateDnsResolver, scope constructs.Construct, id *string, config *DataAzurermPrivateDnsResolverConfig) {
 	_init_.Initialize()
 

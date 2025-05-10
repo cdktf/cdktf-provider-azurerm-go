@@ -5,7 +5,7 @@ package resourcegroupcostmanagementview
 
 
 type ResourceGroupCostManagementViewKpi struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/resources/resource_group_cost_management_view#type ResourceGroupCostManagementView#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/resource_group_cost_management_view#type ResourceGroupCostManagementView#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

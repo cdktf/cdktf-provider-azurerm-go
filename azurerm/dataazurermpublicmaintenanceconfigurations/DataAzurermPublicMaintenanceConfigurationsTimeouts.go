@@ -5,7 +5,7 @@ package dataazurermpublicmaintenanceconfigurations
 
 
 type DataAzurermPublicMaintenanceConfigurationsTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.27.0/docs/data-sources/public_maintenance_configurations#read DataAzurermPublicMaintenanceConfigurations#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/data-sources/public_maintenance_configurations#read DataAzurermPublicMaintenanceConfigurations#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 
