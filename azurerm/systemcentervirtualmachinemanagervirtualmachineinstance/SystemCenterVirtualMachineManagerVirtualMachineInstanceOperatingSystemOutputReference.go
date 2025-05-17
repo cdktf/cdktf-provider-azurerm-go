@@ -71,6 +71,7 @@ type SystemCenterVirtualMachineManagerVirtualMachineInstanceOperatingSystemOutpu
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAdminPassword()
+	ResetComputerName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -491,6 +492,14 @@ func (s *jsiiProxy_SystemCenterVirtualMachineManagerVirtualMachineInstanceOperat
 	_jsii_.InvokeVoid(
 		s,
 		"resetAdminPassword",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SystemCenterVirtualMachineManagerVirtualMachineInstanceOperatingSystemOutputReference) ResetComputerName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetComputerName",
 		nil, // no parameters
 	)
 }

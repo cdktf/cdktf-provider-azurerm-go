@@ -131,6 +131,10 @@ func (j *jsiiProxy_ContainerAppEnvironmentStorage) validateSetNameParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppEnvironmentStorage) validateSetNfsServerUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppEnvironmentStorage) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

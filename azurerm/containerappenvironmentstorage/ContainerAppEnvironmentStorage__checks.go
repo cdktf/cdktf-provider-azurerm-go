@@ -404,6 +404,14 @@ func (j *jsiiProxy_ContainerAppEnvironmentStorage) validateSetNameParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAppEnvironmentStorage) validateSetNfsServerUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAppEnvironmentStorage) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {

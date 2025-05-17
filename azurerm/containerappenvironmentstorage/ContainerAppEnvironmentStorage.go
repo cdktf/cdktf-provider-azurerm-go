@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/container_app_environment_storage azurerm_container_app_environment_storage}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/container_app_environment_storage azurerm_container_app_environment_storage}.
 type ContainerAppEnvironmentStorage interface {
 	cdktf.TerraformResource
 	AccessKey() *string
@@ -61,6 +61,9 @@ type ContainerAppEnvironmentStorage interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NfsServerUrl() *string
+	SetNfsServerUrl(val *string)
+	NfsServerUrlInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -128,7 +131,10 @@ type ContainerAppEnvironmentStorage interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ContainerAppEnvironmentStorageTimeouts)
+	ResetAccessKey()
+	ResetAccountName()
 	ResetId()
+	ResetNfsServerUrl()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -361,6 +367,26 @@ func (j *jsiiProxy_ContainerAppEnvironmentStorage) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerAppEnvironmentStorage) NfsServerUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nfsServerUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppEnvironmentStorage) NfsServerUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nfsServerUrlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerAppEnvironmentStorage) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -472,7 +498,7 @@ func (j *jsiiProxy_ContainerAppEnvironmentStorage) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/container_app_environment_storage azurerm_container_app_environment_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/container_app_environment_storage azurerm_container_app_environment_storage} Resource.
 func NewContainerAppEnvironmentStorage(scope constructs.Construct, id *string, config *ContainerAppEnvironmentStorageConfig) ContainerAppEnvironmentStorage {
 	_init_.Initialize()
 
@@ -490,7 +516,7 @@ func NewContainerAppEnvironmentStorage(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/container_app_environment_storage azurerm_container_app_environment_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/container_app_environment_storage azurerm_container_app_environment_storage} Resource.
 func NewContainerAppEnvironmentStorage_Override(c ContainerAppEnvironmentStorage, scope constructs.Construct, id *string, config *ContainerAppEnvironmentStorageConfig) {
 	_init_.Initialize()
 
@@ -612,6 +638,17 @@ func (j *jsiiProxy_ContainerAppEnvironmentStorage)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAppEnvironmentStorage)SetNfsServerUrl(val *string) {
+	if err := j.validateSetNfsServerUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nfsServerUrl",
 		val,
 	)
 }
@@ -1010,10 +1047,34 @@ func (c *jsiiProxy_ContainerAppEnvironmentStorage) PutTimeouts(value *ContainerA
 	)
 }
 
+func (c *jsiiProxy_ContainerAppEnvironmentStorage) ResetAccessKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAccessKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppEnvironmentStorage) ResetAccountName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAccountName",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerAppEnvironmentStorage) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppEnvironmentStorage) ResetNfsServerUrl() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNfsServerUrl",
 		nil, // no parameters
 	)
 }

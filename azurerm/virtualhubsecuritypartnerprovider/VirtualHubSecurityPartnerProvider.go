@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/virtual_hub_security_partner_provider azurerm_virtual_hub_security_partner_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/virtual_hub_security_partner_provider azurerm_virtual_hub_security_partner_provider}.
 type VirtualHubSecurityPartnerProvider interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -474,7 +474,7 @@ func (j *jsiiProxy_VirtualHubSecurityPartnerProvider) VirtualHubIdInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/virtual_hub_security_partner_provider azurerm_virtual_hub_security_partner_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/virtual_hub_security_partner_provider azurerm_virtual_hub_security_partner_provider} Resource.
 func NewVirtualHubSecurityPartnerProvider(scope constructs.Construct, id *string, config *VirtualHubSecurityPartnerProviderConfig) VirtualHubSecurityPartnerProvider {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewVirtualHubSecurityPartnerProvider(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/virtual_hub_security_partner_provider azurerm_virtual_hub_security_partner_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/virtual_hub_security_partner_provider azurerm_virtual_hub_security_partner_provider} Resource.
 func NewVirtualHubSecurityPartnerProvider_Override(v VirtualHubSecurityPartnerProvider, scope constructs.Construct, id *string, config *VirtualHubSecurityPartnerProviderConfig) {
 	_init_.Initialize()
 

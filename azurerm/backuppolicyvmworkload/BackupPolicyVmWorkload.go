@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/backup_policy_vm_workload azurerm_backup_policy_vm_workload}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/backup_policy_vm_workload azurerm_backup_policy_vm_workload}.
 type BackupPolicyVmWorkload interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -472,7 +472,7 @@ func (j *jsiiProxy_BackupPolicyVmWorkload) WorkloadTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/backup_policy_vm_workload azurerm_backup_policy_vm_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/backup_policy_vm_workload azurerm_backup_policy_vm_workload} Resource.
 func NewBackupPolicyVmWorkload(scope constructs.Construct, id *string, config *BackupPolicyVmWorkloadConfig) BackupPolicyVmWorkload {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewBackupPolicyVmWorkload(scope constructs.Construct, id *string, config *B
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/backup_policy_vm_workload azurerm_backup_policy_vm_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/backup_policy_vm_workload azurerm_backup_policy_vm_workload} Resource.
 func NewBackupPolicyVmWorkload_Override(b BackupPolicyVmWorkload, scope constructs.Construct, id *string, config *BackupPolicyVmWorkloadConfig) {
 	_init_.Initialize()
 

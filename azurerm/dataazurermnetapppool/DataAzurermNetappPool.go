@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/data-sources/netapp_pool azurerm_netapp_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/data-sources/netapp_pool azurerm_netapp_pool}.
 type DataAzurermNetappPool interface {
 	cdktf.TerraformDataSource
 	AccountName() *string
@@ -22,6 +22,7 @@ type DataAzurermNetappPool interface {
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	CoolAccessEnabled() cdktf.IResolvable
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -156,6 +157,16 @@ func (j *jsiiProxy_DataAzurermNetappPool) ConstructNodeMetadata() *map[string]in
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermNetappPool) CoolAccessEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"coolAccessEnabled",
 		&returns,
 	)
 	return returns
@@ -402,7 +413,7 @@ func (j *jsiiProxy_DataAzurermNetappPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/data-sources/netapp_pool azurerm_netapp_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/data-sources/netapp_pool azurerm_netapp_pool} Data Source.
 func NewDataAzurermNetappPool(scope constructs.Construct, id *string, config *DataAzurermNetappPoolConfig) DataAzurermNetappPool {
 	_init_.Initialize()
 
@@ -420,7 +431,7 @@ func NewDataAzurermNetappPool(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/data-sources/netapp_pool azurerm_netapp_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/data-sources/netapp_pool azurerm_netapp_pool} Data Source.
 func NewDataAzurermNetappPool_Override(d DataAzurermNetappPool, scope constructs.Construct, id *string, config *DataAzurermNetappPoolConfig) {
 	_init_.Initialize()
 

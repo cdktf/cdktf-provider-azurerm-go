@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/netapp_pool azurerm_netapp_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/netapp_pool azurerm_netapp_pool}.
 type NetappPool interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -26,6 +26,9 @@ type NetappPool interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	CoolAccessEnabled() interface{}
+	SetCoolAccessEnabled(val interface{})
+	CoolAccessEnabledInput() interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -137,6 +140,7 @@ type NetappPool interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *NetappPoolTimeouts)
+	ResetCoolAccessEnabled()
 	ResetEncryptionType()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -208,6 +212,26 @@ func (j *jsiiProxy_NetappPool) ConstructNodeMetadata() *map[string]interface{} {
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappPool) CoolAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"coolAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappPool) CoolAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"coolAccessEnabledInput",
 		&returns,
 	)
 	return returns
@@ -544,7 +568,7 @@ func (j *jsiiProxy_NetappPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/netapp_pool azurerm_netapp_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/netapp_pool azurerm_netapp_pool} Resource.
 func NewNetappPool(scope constructs.Construct, id *string, config *NetappPoolConfig) NetappPool {
 	_init_.Initialize()
 
@@ -562,7 +586,7 @@ func NewNetappPool(scope constructs.Construct, id *string, config *NetappPoolCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.28.0/docs/resources/netapp_pool azurerm_netapp_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/netapp_pool azurerm_netapp_pool} Resource.
 func NewNetappPool_Override(n NetappPool, scope constructs.Construct, id *string, config *NetappPoolConfig) {
 	_init_.Initialize()
 
@@ -591,6 +615,17 @@ func (j *jsiiProxy_NetappPool)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappPool)SetCoolAccessEnabled(val interface{}) {
+	if err := j.validateSetCoolAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"coolAccessEnabled",
 		val,
 	)
 }
@@ -1112,6 +1147,14 @@ func (n *jsiiProxy_NetappPool) PutTimeouts(value *NetappPoolTimeouts) {
 		n,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetappPool) ResetCoolAccessEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCoolAccessEnabled",
+		nil, // no parameters
 	)
 }
 
