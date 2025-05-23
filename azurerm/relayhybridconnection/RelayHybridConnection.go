@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/relay_hybrid_connection azurerm_relay_hybrid_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/relay_hybrid_connection azurerm_relay_hybrid_connection}.
 type RelayHybridConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_RelayHybridConnection) UserMetadataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/relay_hybrid_connection azurerm_relay_hybrid_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/relay_hybrid_connection azurerm_relay_hybrid_connection} Resource.
 func NewRelayHybridConnection(scope constructs.Construct, id *string, config *RelayHybridConnectionConfig) RelayHybridConnection {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewRelayHybridConnection(scope constructs.Construct, id *string, config *Re
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/relay_hybrid_connection azurerm_relay_hybrid_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/relay_hybrid_connection azurerm_relay_hybrid_connection} Resource.
 func NewRelayHybridConnection_Override(r RelayHybridConnection, scope constructs.Construct, id *string, config *RelayHybridConnectionConfig) {
 	_init_.Initialize()
 

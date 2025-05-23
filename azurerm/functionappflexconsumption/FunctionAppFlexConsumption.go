@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption}.
 type FunctionAppFlexConsumption interface {
 	cdktf.TerraformResource
+	AlwaysReady() FunctionAppFlexConsumptionAlwaysReadyList
+	AlwaysReadyInput() interface{}
 	AppSettings() *map[string]*string
 	SetAppSettings(val *map[string]*string)
 	AppSettingsInput() *map[string]*string
@@ -199,6 +201,7 @@ type FunctionAppFlexConsumption interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAlwaysReady(value interface{})
 	PutAuthSettings(value *FunctionAppFlexConsumptionAuthSettings)
 	PutAuthSettingsV2(value *FunctionAppFlexConsumptionAuthSettingsV2)
 	PutConnectionString(value interface{})
@@ -206,6 +209,7 @@ type FunctionAppFlexConsumption interface {
 	PutSiteConfig(value *FunctionAppFlexConsumptionSiteConfig)
 	PutStickySettings(value *FunctionAppFlexConsumptionStickySettings)
 	PutTimeouts(value *FunctionAppFlexConsumptionTimeouts)
+	ResetAlwaysReady()
 	ResetAppSettings()
 	ResetAuthSettings()
 	ResetAuthSettingsV2()
@@ -246,6 +250,26 @@ type FunctionAppFlexConsumption interface {
 // The jsii proxy struct for FunctionAppFlexConsumption
 type jsiiProxy_FunctionAppFlexConsumption struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_FunctionAppFlexConsumption) AlwaysReady() FunctionAppFlexConsumptionAlwaysReadyList {
+	var returns FunctionAppFlexConsumptionAlwaysReadyList
+	_jsii_.Get(
+		j,
+		"alwaysReady",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionAppFlexConsumption) AlwaysReadyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"alwaysReadyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_FunctionAppFlexConsumption) AppSettings() *map[string]*string {
@@ -1119,7 +1143,7 @@ func (j *jsiiProxy_FunctionAppFlexConsumption) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption} Resource.
 func NewFunctionAppFlexConsumption(scope constructs.Construct, id *string, config *FunctionAppFlexConsumptionConfig) FunctionAppFlexConsumption {
 	_init_.Initialize()
 
@@ -1137,7 +1161,7 @@ func NewFunctionAppFlexConsumption(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption} Resource.
 func NewFunctionAppFlexConsumption_Override(f FunctionAppFlexConsumption, scope constructs.Construct, id *string, config *FunctionAppFlexConsumptionConfig) {
 	_init_.Initialize()
 
@@ -1833,6 +1857,17 @@ func (f *jsiiProxy_FunctionAppFlexConsumption) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (f *jsiiProxy_FunctionAppFlexConsumption) PutAlwaysReady(value interface{}) {
+	if err := f.validatePutAlwaysReadyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putAlwaysReady",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FunctionAppFlexConsumption) PutAuthSettings(value *FunctionAppFlexConsumptionAuthSettings) {
 	if err := f.validatePutAuthSettingsParameters(value); err != nil {
 		panic(err)
@@ -1907,6 +1942,14 @@ func (f *jsiiProxy_FunctionAppFlexConsumption) PutTimeouts(value *FunctionAppFle
 		f,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FunctionAppFlexConsumption) ResetAlwaysReady() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetAlwaysReady",
+		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/network_interface_security_group_association azurerm_network_interface_security_group_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/network_interface_security_group_association azurerm_network_interface_security_group_association}.
 type NetworkInterfaceSecurityGroupAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_NetworkInterfaceSecurityGroupAssociation) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/network_interface_security_group_association azurerm_network_interface_security_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/network_interface_security_group_association azurerm_network_interface_security_group_association} Resource.
 func NewNetworkInterfaceSecurityGroupAssociation(scope constructs.Construct, id *string, config *NetworkInterfaceSecurityGroupAssociationConfig) NetworkInterfaceSecurityGroupAssociation {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewNetworkInterfaceSecurityGroupAssociation(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/network_interface_security_group_association azurerm_network_interface_security_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/network_interface_security_group_association azurerm_network_interface_security_group_association} Resource.
 func NewNetworkInterfaceSecurityGroupAssociation_Override(n NetworkInterfaceSecurityGroupAssociation, scope constructs.Construct, id *string, config *NetworkInterfaceSecurityGroupAssociationConfig) {
 	_init_.Initialize()
 

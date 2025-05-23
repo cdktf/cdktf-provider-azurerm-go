@@ -5,11 +5,11 @@ package backuppolicyvm
 
 
 type BackupPolicyVmTieringPolicyArchivedRestorePoint struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/backup_policy_vm#mode BackupPolicyVm#mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/backup_policy_vm#mode BackupPolicyVm#mode}.
 	Mode *string `field:"required" json:"mode" yaml:"mode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/backup_policy_vm#duration BackupPolicyVm#duration}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/backup_policy_vm#duration BackupPolicyVm#duration}.
 	Duration *float64 `field:"optional" json:"duration" yaml:"duration"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/backup_policy_vm#duration_type BackupPolicyVm#duration_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/backup_policy_vm#duration_type BackupPolicyVm#duration_type}.
 	DurationType *string `field:"optional" json:"durationType" yaml:"durationType"`
 }
 

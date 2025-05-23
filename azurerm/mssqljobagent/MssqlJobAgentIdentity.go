@@ -5,9 +5,9 @@ package mssqljobagent
 
 
 type MssqlJobAgentIdentity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/mssql_job_agent#identity_ids MssqlJobAgent#identity_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/mssql_job_agent#identity_ids MssqlJobAgent#identity_ids}.
 	IdentityIds *[]*string `field:"required" json:"identityIds" yaml:"identityIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/mssql_job_agent#type MssqlJobAgent#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/mssql_job_agent#type MssqlJobAgent#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

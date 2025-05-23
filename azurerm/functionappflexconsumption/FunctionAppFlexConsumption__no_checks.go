@@ -75,6 +75,10 @@ func (f *jsiiProxy_FunctionAppFlexConsumption) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (f *jsiiProxy_FunctionAppFlexConsumption) validatePutAlwaysReadyParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FunctionAppFlexConsumption) validatePutAuthSettingsParameters(value *FunctionAppFlexConsumptionAuthSettings) error {
 	return nil
 }

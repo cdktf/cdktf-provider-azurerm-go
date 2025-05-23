@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/data-sources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/data-sources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection}.
 type DataAzurermVirtualNetworkGatewayConnection interface {
 	cdktf.TerraformDataSource
 	AuthorizationKey() *string
@@ -577,7 +577,7 @@ func (j *jsiiProxy_DataAzurermVirtualNetworkGatewayConnection) VirtualNetworkGat
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/data-sources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/data-sources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Data Source.
 func NewDataAzurermVirtualNetworkGatewayConnection(scope constructs.Construct, id *string, config *DataAzurermVirtualNetworkGatewayConnectionConfig) DataAzurermVirtualNetworkGatewayConnection {
 	_init_.Initialize()
 
@@ -595,7 +595,7 @@ func NewDataAzurermVirtualNetworkGatewayConnection(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/data-sources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/data-sources/virtual_network_gateway_connection azurerm_virtual_network_gateway_connection} Data Source.
 func NewDataAzurermVirtualNetworkGatewayConnection_Override(d DataAzurermVirtualNetworkGatewayConnection, scope constructs.Construct, id *string, config *DataAzurermVirtualNetworkGatewayConnectionConfig) {
 	_init_.Initialize()
 

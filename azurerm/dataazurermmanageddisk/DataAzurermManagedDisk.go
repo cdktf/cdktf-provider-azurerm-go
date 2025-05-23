@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/data-sources/managed_disk azurerm_managed_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/data-sources/managed_disk azurerm_managed_disk}.
 type DataAzurermManagedDisk interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -50,6 +50,7 @@ type DataAzurermManagedDisk interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -310,6 +311,16 @@ func (j *jsiiProxy_DataAzurermManagedDisk) Lifecycle() *cdktf.TerraformResourceL
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermManagedDisk) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermManagedDisk) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -511,7 +522,7 @@ func (j *jsiiProxy_DataAzurermManagedDisk) Zones() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/data-sources/managed_disk azurerm_managed_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/data-sources/managed_disk azurerm_managed_disk} Data Source.
 func NewDataAzurermManagedDisk(scope constructs.Construct, id *string, config *DataAzurermManagedDiskConfig) DataAzurermManagedDisk {
 	_init_.Initialize()
 
@@ -529,7 +540,7 @@ func NewDataAzurermManagedDisk(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/data-sources/managed_disk azurerm_managed_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/data-sources/managed_disk azurerm_managed_disk} Data Source.
 func NewDataAzurermManagedDisk_Override(d DataAzurermManagedDisk, scope constructs.Construct, id *string, config *DataAzurermManagedDiskConfig) {
 	_init_.Initialize()
 

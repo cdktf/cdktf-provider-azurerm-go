@@ -207,6 +207,37 @@ func (f *jsiiProxy_FunctionAppFlexConsumption) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (f *jsiiProxy_FunctionAppFlexConsumption) validatePutAlwaysReadyParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*FunctionAppFlexConsumptionAlwaysReady:
+		value := value.(*[]*FunctionAppFlexConsumptionAlwaysReady)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*FunctionAppFlexConsumptionAlwaysReady:
+		value_ := value.([]*FunctionAppFlexConsumptionAlwaysReady)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*FunctionAppFlexConsumptionAlwaysReady; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (f *jsiiProxy_FunctionAppFlexConsumption) validatePutAuthSettingsParameters(value *FunctionAppFlexConsumptionAuthSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/container_app_environment_custom_domain azurerm_container_app_environment_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/container_app_environment_custom_domain azurerm_container_app_environment_custom_domain}.
 type ContainerAppEnvironmentCustomDomain interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_ContainerAppEnvironmentCustomDomain) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/container_app_environment_custom_domain azurerm_container_app_environment_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/container_app_environment_custom_domain azurerm_container_app_environment_custom_domain} Resource.
 func NewContainerAppEnvironmentCustomDomain(scope constructs.Construct, id *string, config *ContainerAppEnvironmentCustomDomainConfig) ContainerAppEnvironmentCustomDomain {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewContainerAppEnvironmentCustomDomain(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/container_app_environment_custom_domain azurerm_container_app_environment_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/container_app_environment_custom_domain azurerm_container_app_environment_custom_domain} Resource.
 func NewContainerAppEnvironmentCustomDomain_Override(c ContainerAppEnvironmentCustomDomain, scope constructs.Construct, id *string, config *ContainerAppEnvironmentCustomDomainConfig) {
 	_init_.Initialize()
 

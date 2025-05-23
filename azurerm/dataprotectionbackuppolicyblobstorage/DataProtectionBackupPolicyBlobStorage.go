@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage}.
 type DataProtectionBackupPolicyBlobStorage interface {
 	cdktf.TerraformResource
 	BackupRepeatingTimeIntervals() *[]*string
@@ -500,7 +500,7 @@ func (j *jsiiProxy_DataProtectionBackupPolicyBlobStorage) VaultIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage} Resource.
 func NewDataProtectionBackupPolicyBlobStorage(scope constructs.Construct, id *string, config *DataProtectionBackupPolicyBlobStorageConfig) DataProtectionBackupPolicyBlobStorage {
 	_init_.Initialize()
 
@@ -518,7 +518,7 @@ func NewDataProtectionBackupPolicyBlobStorage(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.29.0/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/data_protection_backup_policy_blob_storage azurerm_data_protection_backup_policy_blob_storage} Resource.
 func NewDataProtectionBackupPolicyBlobStorage_Override(d DataProtectionBackupPolicyBlobStorage, scope constructs.Construct, id *string, config *DataProtectionBackupPolicyBlobStorageConfig) {
 	_init_.Initialize()
 
