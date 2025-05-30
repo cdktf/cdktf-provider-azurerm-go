@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption}.
 type FunctionAppFlexConsumption interface {
 	cdktf.TerraformResource
 	AlwaysReady() FunctionAppFlexConsumptionAlwaysReadyList
@@ -65,6 +65,9 @@ type FunctionAppFlexConsumption interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	HostingEnvironmentId() *string
+	HttpsOnly() interface{}
+	SetHttpsOnly(val interface{})
+	HttpsOnlyInput() interface{}
 	Id() *string
 	SetId(val *string)
 	Identity() FunctionAppFlexConsumptionIdentityOutputReference
@@ -218,6 +221,7 @@ type FunctionAppFlexConsumption interface {
 	ResetClientCertificateMode()
 	ResetConnectionString()
 	ResetEnabled()
+	ResetHttpsOnly()
 	ResetId()
 	ResetIdentity()
 	ResetInstanceMemoryInMb()
@@ -537,6 +541,26 @@ func (j *jsiiProxy_FunctionAppFlexConsumption) HostingEnvironmentId() *string {
 	_jsii_.Get(
 		j,
 		"hostingEnvironmentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionAppFlexConsumption) HttpsOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"httpsOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionAppFlexConsumption) HttpsOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"httpsOnlyInput",
 		&returns,
 	)
 	return returns
@@ -1143,7 +1167,7 @@ func (j *jsiiProxy_FunctionAppFlexConsumption) ZipDeployFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption} Resource.
 func NewFunctionAppFlexConsumption(scope constructs.Construct, id *string, config *FunctionAppFlexConsumptionConfig) FunctionAppFlexConsumption {
 	_init_.Initialize()
 
@@ -1161,7 +1185,7 @@ func NewFunctionAppFlexConsumption(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption} Resource.
 func NewFunctionAppFlexConsumption_Override(f FunctionAppFlexConsumption, scope constructs.Construct, id *string, config *FunctionAppFlexConsumptionConfig) {
 	_init_.Initialize()
 
@@ -1261,6 +1285,17 @@ func (j *jsiiProxy_FunctionAppFlexConsumption)SetForEach(val cdktf.ITerraformIte
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FunctionAppFlexConsumption)SetHttpsOnly(val interface{}) {
+	if err := j.validateSetHttpsOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpsOnly",
 		val,
 	)
 }
@@ -2013,6 +2048,14 @@ func (f *jsiiProxy_FunctionAppFlexConsumption) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FunctionAppFlexConsumption) ResetHttpsOnly() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetHttpsOnly",
 		nil, // no parameters
 	)
 }

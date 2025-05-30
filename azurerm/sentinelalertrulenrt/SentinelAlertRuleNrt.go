@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/sentinel_alert_rule_nrt azurerm_sentinel_alert_rule_nrt}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/sentinel_alert_rule_nrt azurerm_sentinel_alert_rule_nrt}.
 type SentinelAlertRuleNrt interface {
 	cdktf.TerraformResource
 	AlertDetailsOverride() SentinelAlertRuleNrtAlertDetailsOverrideList
@@ -784,7 +784,7 @@ func (j *jsiiProxy_SentinelAlertRuleNrt) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/sentinel_alert_rule_nrt azurerm_sentinel_alert_rule_nrt} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/sentinel_alert_rule_nrt azurerm_sentinel_alert_rule_nrt} Resource.
 func NewSentinelAlertRuleNrt(scope constructs.Construct, id *string, config *SentinelAlertRuleNrtConfig) SentinelAlertRuleNrt {
 	_init_.Initialize()
 
@@ -802,7 +802,7 @@ func NewSentinelAlertRuleNrt(scope constructs.Construct, id *string, config *Sen
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/sentinel_alert_rule_nrt azurerm_sentinel_alert_rule_nrt} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/sentinel_alert_rule_nrt azurerm_sentinel_alert_rule_nrt} Resource.
 func NewSentinelAlertRuleNrt_Override(s SentinelAlertRuleNrt, scope constructs.Construct, id *string, config *SentinelAlertRuleNrtConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/stack_hci_storage_path azurerm_stack_hci_storage_path}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/stack_hci_storage_path azurerm_stack_hci_storage_path}.
 type StackHciStoragePath interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_StackHciStoragePath) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/stack_hci_storage_path azurerm_stack_hci_storage_path} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/stack_hci_storage_path azurerm_stack_hci_storage_path} Resource.
 func NewStackHciStoragePath(scope constructs.Construct, id *string, config *StackHciStoragePathConfig) StackHciStoragePath {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewStackHciStoragePath(scope constructs.Construct, id *string, config *Stac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/stack_hci_storage_path azurerm_stack_hci_storage_path} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/stack_hci_storage_path azurerm_stack_hci_storage_path} Resource.
 func NewStackHciStoragePath_Override(s StackHciStoragePath, scope constructs.Construct, id *string, config *StackHciStoragePathConfig) {
 	_init_.Initialize()
 

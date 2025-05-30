@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/dashboard_grafana_managed_private_endpoint azurerm_dashboard_grafana_managed_private_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/dashboard_grafana_managed_private_endpoint azurerm_dashboard_grafana_managed_private_endpoint}.
 type DashboardGrafanaManagedPrivateEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -66,6 +66,9 @@ type DashboardGrafanaManagedPrivateEndpoint interface {
 	PrivateLinkResourceRegion() *string
 	SetPrivateLinkResourceRegion(val *string)
 	PrivateLinkResourceRegionInput() *string
+	PrivateLinkServiceUrl() *string
+	SetPrivateLinkServiceUrl(val *string)
+	PrivateLinkServiceUrlInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -140,6 +143,7 @@ type DashboardGrafanaManagedPrivateEndpoint interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrivateLinkResourceRegion()
+	ResetPrivateLinkServiceUrl()
 	ResetRequestMessage()
 	ResetTags()
 	ResetTimeouts()
@@ -401,6 +405,26 @@ func (j *jsiiProxy_DashboardGrafanaManagedPrivateEndpoint) PrivateLinkResourceRe
 	return returns
 }
 
+func (j *jsiiProxy_DashboardGrafanaManagedPrivateEndpoint) PrivateLinkServiceUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateLinkServiceUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DashboardGrafanaManagedPrivateEndpoint) PrivateLinkServiceUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateLinkServiceUrlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DashboardGrafanaManagedPrivateEndpoint) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -522,7 +546,7 @@ func (j *jsiiProxy_DashboardGrafanaManagedPrivateEndpoint) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/dashboard_grafana_managed_private_endpoint azurerm_dashboard_grafana_managed_private_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/dashboard_grafana_managed_private_endpoint azurerm_dashboard_grafana_managed_private_endpoint} Resource.
 func NewDashboardGrafanaManagedPrivateEndpoint(scope constructs.Construct, id *string, config *DashboardGrafanaManagedPrivateEndpointConfig) DashboardGrafanaManagedPrivateEndpoint {
 	_init_.Initialize()
 
@@ -540,7 +564,7 @@ func NewDashboardGrafanaManagedPrivateEndpoint(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/dashboard_grafana_managed_private_endpoint azurerm_dashboard_grafana_managed_private_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/dashboard_grafana_managed_private_endpoint azurerm_dashboard_grafana_managed_private_endpoint} Resource.
 func NewDashboardGrafanaManagedPrivateEndpoint_Override(d DashboardGrafanaManagedPrivateEndpoint, scope constructs.Construct, id *string, config *DashboardGrafanaManagedPrivateEndpointConfig) {
 	_init_.Initialize()
 
@@ -673,6 +697,17 @@ func (j *jsiiProxy_DashboardGrafanaManagedPrivateEndpoint)SetPrivateLinkResource
 	_jsii_.Set(
 		j,
 		"privateLinkResourceRegion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DashboardGrafanaManagedPrivateEndpoint)SetPrivateLinkServiceUrl(val *string) {
+	if err := j.validateSetPrivateLinkServiceUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateLinkServiceUrl",
 		val,
 	)
 }
@@ -1110,6 +1145,14 @@ func (d *jsiiProxy_DashboardGrafanaManagedPrivateEndpoint) ResetPrivateLinkResou
 	_jsii_.InvokeVoid(
 		d,
 		"resetPrivateLinkResourceRegion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DashboardGrafanaManagedPrivateEndpoint) ResetPrivateLinkServiceUrl() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrivateLinkServiceUrl",
 		nil, // no parameters
 	)
 }

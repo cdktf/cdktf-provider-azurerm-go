@@ -135,6 +135,10 @@ func (j *jsiiProxy_DashboardGrafanaManagedPrivateEndpoint) validateSetPrivateLin
 	return nil
 }
 
+func (j *jsiiProxy_DashboardGrafanaManagedPrivateEndpoint) validateSetPrivateLinkServiceUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DashboardGrafanaManagedPrivateEndpoint) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

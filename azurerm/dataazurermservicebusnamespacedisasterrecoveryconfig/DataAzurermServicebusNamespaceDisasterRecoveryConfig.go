@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/data-sources/servicebus_namespace_disaster_recovery_config azurerm_servicebus_namespace_disaster_recovery_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/data-sources/servicebus_namespace_disaster_recovery_config azurerm_servicebus_namespace_disaster_recovery_config}.
 type DataAzurermServicebusNamespaceDisasterRecoveryConfig interface {
 	cdktf.TerraformDataSource
 	AliasAuthorizationRuleId() *string
@@ -463,7 +463,7 @@ func (j *jsiiProxy_DataAzurermServicebusNamespaceDisasterRecoveryConfig) Timeout
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/data-sources/servicebus_namespace_disaster_recovery_config azurerm_servicebus_namespace_disaster_recovery_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/data-sources/servicebus_namespace_disaster_recovery_config azurerm_servicebus_namespace_disaster_recovery_config} Data Source.
 func NewDataAzurermServicebusNamespaceDisasterRecoveryConfig(scope constructs.Construct, id *string, config *DataAzurermServicebusNamespaceDisasterRecoveryConfigConfig) DataAzurermServicebusNamespaceDisasterRecoveryConfig {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewDataAzurermServicebusNamespaceDisasterRecoveryConfig(scope constructs.Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/data-sources/servicebus_namespace_disaster_recovery_config azurerm_servicebus_namespace_disaster_recovery_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/data-sources/servicebus_namespace_disaster_recovery_config azurerm_servicebus_namespace_disaster_recovery_config} Data Source.
 func NewDataAzurermServicebusNamespaceDisasterRecoveryConfig_Override(d DataAzurermServicebusNamespaceDisasterRecoveryConfig, scope constructs.Construct, id *string, config *DataAzurermServicebusNamespaceDisasterRecoveryConfigConfig) {
 	_init_.Initialize()
 

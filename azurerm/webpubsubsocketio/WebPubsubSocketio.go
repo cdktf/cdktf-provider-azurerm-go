@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/web_pubsub_socketio azurerm_web_pubsub_socketio}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/web_pubsub_socketio azurerm_web_pubsub_socketio}.
 type WebPubsubSocketio interface {
 	cdktf.TerraformResource
 	AadAuthEnabled() interface{}
@@ -778,7 +778,7 @@ func (j *jsiiProxy_WebPubsubSocketio) TlsClientCertEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/web_pubsub_socketio azurerm_web_pubsub_socketio} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/web_pubsub_socketio azurerm_web_pubsub_socketio} Resource.
 func NewWebPubsubSocketio(scope constructs.Construct, id *string, config *WebPubsubSocketioConfig) WebPubsubSocketio {
 	_init_.Initialize()
 
@@ -796,7 +796,7 @@ func NewWebPubsubSocketio(scope constructs.Construct, id *string, config *WebPub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/web_pubsub_socketio azurerm_web_pubsub_socketio} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/web_pubsub_socketio azurerm_web_pubsub_socketio} Resource.
 func NewWebPubsubSocketio_Override(w WebPubsubSocketio, scope constructs.Construct, id *string, config *WebPubsubSocketioConfig) {
 	_init_.Initialize()
 

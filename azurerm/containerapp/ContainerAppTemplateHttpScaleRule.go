@@ -5,13 +5,13 @@ package containerapp
 
 
 type ContainerAppTemplateHttpScaleRule struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/container_app#concurrent_requests ContainerApp#concurrent_requests}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/container_app#concurrent_requests ContainerApp#concurrent_requests}.
 	ConcurrentRequests *string `field:"required" json:"concurrentRequests" yaml:"concurrentRequests"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/container_app#name ContainerApp#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/container_app#name ContainerApp#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// authentication block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/container_app#authentication ContainerApp#authentication}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/container_app#authentication ContainerApp#authentication}
 	Authentication interface{} `field:"optional" json:"authentication" yaml:"authentication"`
 }
 

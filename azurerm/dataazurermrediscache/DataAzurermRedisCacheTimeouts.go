@@ -5,7 +5,7 @@ package dataazurermrediscache
 
 
 type DataAzurermRedisCacheTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/data-sources/redis_cache#read DataAzurermRedisCache#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/data-sources/redis_cache#read DataAzurermRedisCache#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

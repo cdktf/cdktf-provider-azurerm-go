@@ -151,6 +151,10 @@ func (j *jsiiProxy_FunctionAppFlexConsumption) validateSetEnabledParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_FunctionAppFlexConsumption) validateSetHttpsOnlyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FunctionAppFlexConsumption) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -67,6 +67,10 @@ func (j *jsiiProxy_DynatraceTagRulesMetricRuleOutputReference) validateSetIntern
 	return nil
 }
 
+func (j *jsiiProxy_DynatraceTagRulesMetricRuleOutputReference) validateSetSendingMetricsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynatraceTagRulesMetricRuleOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

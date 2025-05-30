@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/data-sources/network_manager_network_group azurerm_network_manager_network_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/data-sources/network_manager_network_group azurerm_network_manager_network_group}.
 type DataAzurermNetworkManagerNetworkGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataAzurermNetworkManagerNetworkGroup) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/data-sources/network_manager_network_group azurerm_network_manager_network_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/data-sources/network_manager_network_group azurerm_network_manager_network_group} Data Source.
 func NewDataAzurermNetworkManagerNetworkGroup(scope constructs.Construct, id *string, config *DataAzurermNetworkManagerNetworkGroupConfig) DataAzurermNetworkManagerNetworkGroup {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataAzurermNetworkManagerNetworkGroup(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/data-sources/network_manager_network_group azurerm_network_manager_network_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/data-sources/network_manager_network_group azurerm_network_manager_network_group} Data Source.
 func NewDataAzurermNetworkManagerNetworkGroup_Override(d DataAzurermNetworkManagerNetworkGroup, scope constructs.Construct, id *string, config *DataAzurermNetworkManagerNetworkGroupConfig) {
 	_init_.Initialize()
 

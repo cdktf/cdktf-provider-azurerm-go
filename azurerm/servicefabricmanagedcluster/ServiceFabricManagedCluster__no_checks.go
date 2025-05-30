@@ -171,6 +171,10 @@ func (j *jsiiProxy_ServiceFabricManagedCluster) validateSetSkuParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_ServiceFabricManagedCluster) validateSetSubnetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceFabricManagedCluster) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

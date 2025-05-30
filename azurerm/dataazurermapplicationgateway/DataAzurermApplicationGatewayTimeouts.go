@@ -5,7 +5,7 @@ package dataazurermapplicationgateway
 
 
 type DataAzurermApplicationGatewayTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/data-sources/application_gateway#read DataAzurermApplicationGateway#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/data-sources/application_gateway#read DataAzurermApplicationGateway#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

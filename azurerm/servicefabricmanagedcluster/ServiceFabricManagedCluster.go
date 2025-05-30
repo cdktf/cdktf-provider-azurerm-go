@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster}.
 type ServiceFabricManagedCluster interface {
 	cdktf.TerraformResource
 	Authentication() ServiceFabricManagedClusterAuthenticationOutputReference
@@ -96,6 +96,9 @@ type ServiceFabricManagedCluster interface {
 	Sku() *string
 	SetSku(val *string)
 	SkuInput() *string
+	SubnetId() *string
+	SetSubnetId(val *string)
+	SubnetIdInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -173,6 +176,7 @@ type ServiceFabricManagedCluster interface {
 	ResetOverrideLogicalId()
 	ResetPassword()
 	ResetSku()
+	ResetSubnetId()
 	ResetTags()
 	ResetTimeouts()
 	ResetUpgradeWave()
@@ -625,6 +629,26 @@ func (j *jsiiProxy_ServiceFabricManagedCluster) SkuInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ServiceFabricManagedCluster) SubnetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceFabricManagedCluster) SubnetIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServiceFabricManagedCluster) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -736,7 +760,7 @@ func (j *jsiiProxy_ServiceFabricManagedCluster) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster} Resource.
 func NewServiceFabricManagedCluster(scope constructs.Construct, id *string, config *ServiceFabricManagedClusterConfig) ServiceFabricManagedCluster {
 	_init_.Initialize()
 
@@ -754,7 +778,7 @@ func NewServiceFabricManagedCluster(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/service_fabric_managed_cluster azurerm_service_fabric_managed_cluster} Resource.
 func NewServiceFabricManagedCluster_Override(s ServiceFabricManagedCluster, scope constructs.Construct, id *string, config *ServiceFabricManagedClusterConfig) {
 	_init_.Initialize()
 
@@ -950,6 +974,17 @@ func (j *jsiiProxy_ServiceFabricManagedCluster)SetSku(val *string) {
 	_jsii_.Set(
 		j,
 		"sku",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceFabricManagedCluster)SetSubnetId(val *string) {
+	if err := j.validateSetSubnetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subnetId",
 		val,
 	)
 }
@@ -1471,6 +1506,14 @@ func (s *jsiiProxy_ServiceFabricManagedCluster) ResetSku() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSku",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceFabricManagedCluster) ResetSubnetId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSubnetId",
 		nil, // no parameters
 	)
 }

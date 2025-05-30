@@ -79,6 +79,10 @@ func (m *jsiiProxy_MonitorDiagnosticSetting) validatePutEnabledLogParameters(val
 	return nil
 }
 
+func (m *jsiiProxy_MonitorDiagnosticSetting) validatePutEnabledMetricParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitorDiagnosticSetting) validatePutMetricParameters(value interface{}) error {
 	return nil
 }

@@ -34,6 +34,9 @@ type DynatraceTagRulesMetricRuleOutputReference interface {
 	Fqn() *string
 	InternalValue() *DynatraceTagRulesMetricRule
 	SetInternalValue(val *DynatraceTagRulesMetricRule)
+	SendingMetricsEnabled() interface{}
+	SetSendingMetricsEnabled(val interface{})
+	SendingMetricsEnabledInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type DynatraceTagRulesMetricRuleOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFilteringTag(value interface{})
+	ResetSendingMetricsEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -152,6 +156,26 @@ func (j *jsiiProxy_DynatraceTagRulesMetricRuleOutputReference) InternalValue() *
 	return returns
 }
 
+func (j *jsiiProxy_DynatraceTagRulesMetricRuleOutputReference) SendingMetricsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendingMetricsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynatraceTagRulesMetricRuleOutputReference) SendingMetricsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendingMetricsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DynatraceTagRulesMetricRuleOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -229,6 +253,17 @@ func (j *jsiiProxy_DynatraceTagRulesMetricRuleOutputReference)SetInternalValue(v
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DynatraceTagRulesMetricRuleOutputReference)SetSendingMetricsEnabled(val interface{}) {
+	if err := j.validateSetSendingMetricsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendingMetricsEnabled",
 		val,
 	)
 }
@@ -449,6 +484,14 @@ func (d *jsiiProxy_DynatraceTagRulesMetricRuleOutputReference) PutFilteringTag(v
 		d,
 		"putFilteringTag",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DynatraceTagRulesMetricRuleOutputReference) ResetSendingMetricsEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSendingMetricsEnabled",
+		nil, // no parameters
 	)
 }
 

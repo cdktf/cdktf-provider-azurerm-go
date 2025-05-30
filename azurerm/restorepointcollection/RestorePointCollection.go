@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/restore_point_collection azurerm_restore_point_collection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/restore_point_collection azurerm_restore_point_collection}.
 type RestorePointCollection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -450,7 +450,7 @@ func (j *jsiiProxy_RestorePointCollection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/restore_point_collection azurerm_restore_point_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/restore_point_collection azurerm_restore_point_collection} Resource.
 func NewRestorePointCollection(scope constructs.Construct, id *string, config *RestorePointCollectionConfig) RestorePointCollection {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewRestorePointCollection(scope constructs.Construct, id *string, config *R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/restore_point_collection azurerm_restore_point_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/restore_point_collection azurerm_restore_point_collection} Resource.
 func NewRestorePointCollection_Override(r RestorePointCollection, scope constructs.Construct, id *string, config *RestorePointCollectionConfig) {
 	_init_.Initialize()
 

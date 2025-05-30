@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/monitor_diagnostic_setting azurerm_monitor_diagnostic_setting}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/monitor_diagnostic_setting azurerm_monitor_diagnostic_setting}.
 type MonitorDiagnosticSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,8 @@ type MonitorDiagnosticSetting interface {
 	SetDependsOn(val *[]*string)
 	EnabledLog() MonitorDiagnosticSettingEnabledLogList
 	EnabledLogInput() interface{}
+	EnabledMetric() MonitorDiagnosticSettingEnabledMetricList
+	EnabledMetricInput() interface{}
 	EventhubAuthorizationRuleId() *string
 	SetEventhubAuthorizationRuleId(val *string)
 	EventhubAuthorizationRuleIdInput() *string
@@ -138,9 +140,11 @@ type MonitorDiagnosticSetting interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEnabledLog(value interface{})
+	PutEnabledMetric(value interface{})
 	PutMetric(value interface{})
 	PutTimeouts(value *MonitorDiagnosticSettingTimeouts)
 	ResetEnabledLog()
+	ResetEnabledMetric()
 	ResetEventhubAuthorizationRuleId()
 	ResetEventhubName()
 	ResetId()
@@ -236,6 +240,26 @@ func (j *jsiiProxy_MonitorDiagnosticSetting) EnabledLogInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enabledLogInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDiagnosticSetting) EnabledMetric() MonitorDiagnosticSettingEnabledMetricList {
+	var returns MonitorDiagnosticSettingEnabledMetricList
+	_jsii_.Get(
+		j,
+		"enabledMetric",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitorDiagnosticSetting) EnabledMetricInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledMetricInput",
 		&returns,
 	)
 	return returns
@@ -572,7 +596,7 @@ func (j *jsiiProxy_MonitorDiagnosticSetting) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/monitor_diagnostic_setting azurerm_monitor_diagnostic_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/monitor_diagnostic_setting azurerm_monitor_diagnostic_setting} Resource.
 func NewMonitorDiagnosticSetting(scope constructs.Construct, id *string, config *MonitorDiagnosticSettingConfig) MonitorDiagnosticSetting {
 	_init_.Initialize()
 
@@ -590,7 +614,7 @@ func NewMonitorDiagnosticSetting(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/monitor_diagnostic_setting azurerm_monitor_diagnostic_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/monitor_diagnostic_setting azurerm_monitor_diagnostic_setting} Resource.
 func NewMonitorDiagnosticSetting_Override(m MonitorDiagnosticSetting, scope constructs.Construct, id *string, config *MonitorDiagnosticSettingConfig) {
 	_init_.Initialize()
 
@@ -1132,6 +1156,17 @@ func (m *jsiiProxy_MonitorDiagnosticSetting) PutEnabledLog(value interface{}) {
 	)
 }
 
+func (m *jsiiProxy_MonitorDiagnosticSetting) PutEnabledMetric(value interface{}) {
+	if err := m.validatePutEnabledMetricParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putEnabledMetric",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitorDiagnosticSetting) PutMetric(value interface{}) {
 	if err := m.validatePutMetricParameters(value); err != nil {
 		panic(err)
@@ -1158,6 +1193,14 @@ func (m *jsiiProxy_MonitorDiagnosticSetting) ResetEnabledLog() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetEnabledLog",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitorDiagnosticSetting) ResetEnabledMetric() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEnabledMetric",
 		nil, // no parameters
 	)
 }

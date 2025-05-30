@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/storage_object_replication azurerm_storage_object_replication}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/storage_object_replication azurerm_storage_object_replication}.
 type StorageObjectReplication interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_StorageObjectReplication) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/storage_object_replication azurerm_storage_object_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/storage_object_replication azurerm_storage_object_replication} Resource.
 func NewStorageObjectReplication(scope constructs.Construct, id *string, config *StorageObjectReplicationConfig) StorageObjectReplication {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewStorageObjectReplication(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/storage_object_replication azurerm_storage_object_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/storage_object_replication azurerm_storage_object_replication} Resource.
 func NewStorageObjectReplication_Override(s StorageObjectReplication, scope constructs.Construct, id *string, config *StorageObjectReplicationConfig) {
 	_init_.Initialize()
 

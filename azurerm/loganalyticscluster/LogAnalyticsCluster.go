@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/log_analytics_cluster azurerm_log_analytics_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/log_analytics_cluster azurerm_log_analytics_cluster}.
 type LogAnalyticsCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_LogAnalyticsCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/log_analytics_cluster azurerm_log_analytics_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/log_analytics_cluster azurerm_log_analytics_cluster} Resource.
 func NewLogAnalyticsCluster(scope constructs.Construct, id *string, config *LogAnalyticsClusterConfig) LogAnalyticsCluster {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewLogAnalyticsCluster(scope constructs.Construct, id *string, config *LogA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.30.0/docs/resources/log_analytics_cluster azurerm_log_analytics_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/log_analytics_cluster azurerm_log_analytics_cluster} Resource.
 func NewLogAnalyticsCluster_Override(l LogAnalyticsCluster, scope constructs.Construct, id *string, config *LogAnalyticsClusterConfig) {
 	_init_.Initialize()
 
