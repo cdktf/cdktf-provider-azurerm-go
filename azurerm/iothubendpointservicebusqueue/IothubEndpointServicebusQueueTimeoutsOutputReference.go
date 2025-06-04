@@ -5,9 +5,9 @@ package iothubendpointservicebusqueue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v13/iothubendpointservicebusqueue/internal"
+	"github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/iothubendpointservicebusqueue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
