@@ -1050,6 +1050,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUltraSsdEnabled", GoMethod: "ResetUltraSsdEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUpgradeSettings", GoMethod: "ResetUpgradeSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVmSize", GoMethod: "ResetVmSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVnetSubnetId", GoMethod: "ResetVnetSubnetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadRuntime", GoMethod: "ResetWorkloadRuntime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetZones", GoMethod: "ResetZones"},

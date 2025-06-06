@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/subscription_policy_remediation azurerm_subscription_policy_remediation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/subscription_policy_remediation azurerm_subscription_policy_remediation}.
 type SubscriptionPolicyRemediation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -547,7 +547,7 @@ func (j *jsiiProxy_SubscriptionPolicyRemediation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/subscription_policy_remediation azurerm_subscription_policy_remediation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/subscription_policy_remediation azurerm_subscription_policy_remediation} Resource.
 func NewSubscriptionPolicyRemediation(scope constructs.Construct, id *string, config *SubscriptionPolicyRemediationConfig) SubscriptionPolicyRemediation {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewSubscriptionPolicyRemediation(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/subscription_policy_remediation azurerm_subscription_policy_remediation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/subscription_policy_remediation azurerm_subscription_policy_remediation} Resource.
 func NewSubscriptionPolicyRemediation_Override(s SubscriptionPolicyRemediation, scope constructs.Construct, id *string, config *SubscriptionPolicyRemediationConfig) {
 	_init_.Initialize()
 

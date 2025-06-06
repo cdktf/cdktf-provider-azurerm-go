@@ -147,6 +147,10 @@ func (j *jsiiProxy_NetappVolume) validateSetKeyVaultPrivateEndpointIdParameters(
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolume) validateSetLargeVolumeEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolume) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/vpn_gateway azurerm_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/vpn_gateway azurerm_vpn_gateway}.
 type VpnGateway interface {
 	cdktf.TerraformResource
 	BgpRouteTranslationForNatEnabled() interface{}
@@ -47,6 +47,7 @@ type VpnGateway interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpConfiguration() VpnGatewayIpConfigurationList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -305,6 +306,16 @@ func (j *jsiiProxy_VpnGateway) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VpnGateway) IpConfiguration() VpnGatewayIpConfigurationList {
+	var returns VpnGatewayIpConfigurationList
+	_jsii_.Get(
+		j,
+		"ipConfiguration",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpnGateway) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -546,7 +557,7 @@ func (j *jsiiProxy_VpnGateway) VirtualHubIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/vpn_gateway azurerm_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/vpn_gateway azurerm_vpn_gateway} Resource.
 func NewVpnGateway(scope constructs.Construct, id *string, config *VpnGatewayConfig) VpnGateway {
 	_init_.Initialize()
 
@@ -564,7 +575,7 @@ func NewVpnGateway(scope constructs.Construct, id *string, config *VpnGatewayCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/vpn_gateway azurerm_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/vpn_gateway azurerm_vpn_gateway} Resource.
 func NewVpnGateway_Override(v VpnGateway, scope constructs.Construct, id *string, config *VpnGatewayConfig) {
 	_init_.Initialize()
 

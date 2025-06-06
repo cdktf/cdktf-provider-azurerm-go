@@ -5,7 +5,7 @@ package kubernetescluster
 
 
 type KubernetesClusterWebAppRouting struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/kubernetes_cluster#dns_zone_ids KubernetesCluster#dns_zone_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/kubernetes_cluster#dns_zone_ids KubernetesCluster#dns_zone_ids}.
 	DnsZoneIds *[]*string `field:"required" json:"dnsZoneIds" yaml:"dnsZoneIds"`
 }
 

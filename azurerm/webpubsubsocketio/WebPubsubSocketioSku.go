@@ -5,9 +5,9 @@ package webpubsubsocketio
 
 
 type WebPubsubSocketioSku struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/web_pubsub_socketio#name WebPubsubSocketio#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/web_pubsub_socketio#name WebPubsubSocketio#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/web_pubsub_socketio#capacity WebPubsubSocketio#capacity}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/web_pubsub_socketio#capacity WebPubsubSocketio#capacity}.
 	Capacity *float64 `field:"optional" json:"capacity" yaml:"capacity"`
 }
 

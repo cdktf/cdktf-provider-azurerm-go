@@ -5,7 +5,7 @@ package dataazurermapplicationsecuritygroup
 
 
 type DataAzurermApplicationSecurityGroupTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/data-sources/application_security_group#read DataAzurermApplicationSecurityGroup#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/data-sources/application_security_group#read DataAzurermApplicationSecurityGroup#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

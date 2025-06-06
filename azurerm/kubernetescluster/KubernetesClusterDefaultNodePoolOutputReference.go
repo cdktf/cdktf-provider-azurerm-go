@@ -203,6 +203,7 @@ type KubernetesClusterDefaultNodePoolOutputReference interface {
 	ResetType()
 	ResetUltraSsdEnabled()
 	ResetUpgradeSettings()
+	ResetVmSize()
 	ResetVnetSubnetId()
 	ResetWorkloadRuntime()
 	ResetZones()
@@ -1920,6 +1921,14 @@ func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetUpgrade
 	_jsii_.InvokeVoid(
 		k,
 		"resetUpgradeSettings",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesClusterDefaultNodePoolOutputReference) ResetVmSize() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetVmSize",
 		nil, // no parameters
 	)
 }

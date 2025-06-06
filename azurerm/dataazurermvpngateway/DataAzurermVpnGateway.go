@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/data-sources/vpn_gateway azurerm_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/data-sources/vpn_gateway azurerm_vpn_gateway}.
 type DataAzurermVpnGateway interface {
 	cdktf.TerraformDataSource
 	BgpSettings() DataAzurermVpnGatewayBgpSettingsList
@@ -39,6 +39,7 @@ type DataAzurermVpnGateway interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpConfiguration() DataAzurermVpnGatewayIpConfigurationList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -219,6 +220,16 @@ func (j *jsiiProxy_DataAzurermVpnGateway) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermVpnGateway) IpConfiguration() DataAzurermVpnGatewayIpConfigurationList {
+	var returns DataAzurermVpnGatewayIpConfigurationList
+	_jsii_.Get(
+		j,
+		"ipConfiguration",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermVpnGateway) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -390,7 +401,7 @@ func (j *jsiiProxy_DataAzurermVpnGateway) VirtualHubId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/data-sources/vpn_gateway azurerm_vpn_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/data-sources/vpn_gateway azurerm_vpn_gateway} Data Source.
 func NewDataAzurermVpnGateway(scope constructs.Construct, id *string, config *DataAzurermVpnGatewayConfig) DataAzurermVpnGateway {
 	_init_.Initialize()
 
@@ -408,7 +419,7 @@ func NewDataAzurermVpnGateway(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/data-sources/vpn_gateway azurerm_vpn_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/data-sources/vpn_gateway azurerm_vpn_gateway} Data Source.
 func NewDataAzurermVpnGateway_Override(d DataAzurermVpnGateway, scope constructs.Construct, id *string, config *DataAzurermVpnGatewayConfig) {
 	_init_.Initialize()
 

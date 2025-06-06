@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/data-sources/netapp_volume azurerm_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/data-sources/netapp_volume azurerm_netapp_volume}.
 type DataAzurermNetappVolume interface {
 	cdktf.TerraformDataSource
 	AccountName() *string
@@ -45,6 +45,7 @@ type DataAzurermNetappVolume interface {
 	SetId(val *string)
 	IdInput() *string
 	KeyVaultPrivateEndpointId() *string
+	LargeVolumeEnabled() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -284,6 +285,16 @@ func (j *jsiiProxy_DataAzurermNetappVolume) KeyVaultPrivateEndpointId() *string 
 	_jsii_.Get(
 		j,
 		"keyVaultPrivateEndpointId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermNetappVolume) LargeVolumeEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"largeVolumeEnabled",
 		&returns,
 	)
 	return returns
@@ -570,7 +581,7 @@ func (j *jsiiProxy_DataAzurermNetappVolume) Zone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/data-sources/netapp_volume azurerm_netapp_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/data-sources/netapp_volume azurerm_netapp_volume} Data Source.
 func NewDataAzurermNetappVolume(scope constructs.Construct, id *string, config *DataAzurermNetappVolumeConfig) DataAzurermNetappVolume {
 	_init_.Initialize()
 
@@ -588,7 +599,7 @@ func NewDataAzurermNetappVolume(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/data-sources/netapp_volume azurerm_netapp_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/data-sources/netapp_volume azurerm_netapp_volume} Data Source.
 func NewDataAzurermNetappVolume_Override(d DataAzurermNetappVolume, scope constructs.Construct, id *string, config *DataAzurermNetappVolumeConfig) {
 	_init_.Initialize()
 

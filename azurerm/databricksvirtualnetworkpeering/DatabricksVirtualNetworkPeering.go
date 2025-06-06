@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/databricks_virtual_network_peering azurerm_databricks_virtual_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/databricks_virtual_network_peering azurerm_databricks_virtual_network_peering}.
 type DatabricksVirtualNetworkPeering interface {
 	cdktf.TerraformResource
 	AddressSpacePrefixes() *[]*string
@@ -567,7 +567,7 @@ func (j *jsiiProxy_DatabricksVirtualNetworkPeering) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/databricks_virtual_network_peering azurerm_databricks_virtual_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/databricks_virtual_network_peering azurerm_databricks_virtual_network_peering} Resource.
 func NewDatabricksVirtualNetworkPeering(scope constructs.Construct, id *string, config *DatabricksVirtualNetworkPeeringConfig) DatabricksVirtualNetworkPeering {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewDatabricksVirtualNetworkPeering(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/databricks_virtual_network_peering azurerm_databricks_virtual_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/databricks_virtual_network_peering azurerm_databricks_virtual_network_peering} Resource.
 func NewDatabricksVirtualNetworkPeering_Override(d DatabricksVirtualNetworkPeering, scope constructs.Construct, id *string, config *DatabricksVirtualNetworkPeeringConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/netapp_volume azurerm_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/netapp_volume azurerm_netapp_volume}.
 type NetappVolume interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -68,6 +68,9 @@ type NetappVolume interface {
 	KeyVaultPrivateEndpointId() *string
 	SetKeyVaultPrivateEndpointId(val *string)
 	KeyVaultPrivateEndpointIdInput() *string
+	LargeVolumeEnabled() interface{}
+	SetLargeVolumeEnabled(val interface{})
+	LargeVolumeEnabledInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -208,6 +211,7 @@ type NetappVolume interface {
 	ResetId()
 	ResetKerberosEnabled()
 	ResetKeyVaultPrivateEndpointId()
+	ResetLargeVolumeEnabled()
 	ResetNetworkFeatures()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -536,6 +540,26 @@ func (j *jsiiProxy_NetappVolume) KeyVaultPrivateEndpointIdInput() *string {
 	_jsii_.Get(
 		j,
 		"keyVaultPrivateEndpointIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) LargeVolumeEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"largeVolumeEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) LargeVolumeEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"largeVolumeEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1032,7 +1056,7 @@ func (j *jsiiProxy_NetappVolume) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
 func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolumeConfig) NetappVolume {
 	_init_.Initialize()
 
@@ -1050,7 +1074,7 @@ func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolum
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/netapp_volume azurerm_netapp_volume} Resource.
 func NewNetappVolume_Override(n NetappVolume, scope constructs.Construct, id *string, config *NetappVolumeConfig) {
 	_init_.Initialize()
 
@@ -1172,6 +1196,17 @@ func (j *jsiiProxy_NetappVolume)SetKeyVaultPrivateEndpointId(val *string) {
 	_jsii_.Set(
 		j,
 		"keyVaultPrivateEndpointId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappVolume)SetLargeVolumeEnabled(val interface{}) {
+	if err := j.validateSetLargeVolumeEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"largeVolumeEnabled",
 		val,
 	)
 }
@@ -1899,6 +1934,14 @@ func (n *jsiiProxy_NetappVolume) ResetKeyVaultPrivateEndpointId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetKeyVaultPrivateEndpointId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolume) ResetLargeVolumeEnabled() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetLargeVolumeEnabled",
 		nil, // no parameters
 	)
 }

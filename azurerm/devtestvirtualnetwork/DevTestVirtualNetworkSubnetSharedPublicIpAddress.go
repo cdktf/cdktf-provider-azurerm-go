@@ -7,7 +7,7 @@ package devtestvirtualnetwork
 type DevTestVirtualNetworkSubnetSharedPublicIpAddress struct {
 	// allowed_ports block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/dev_test_virtual_network#allowed_ports DevTestVirtualNetwork#allowed_ports}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/dev_test_virtual_network#allowed_ports DevTestVirtualNetwork#allowed_ports}
 	AllowedPorts interface{} `field:"optional" json:"allowedPorts" yaml:"allowedPorts"`
 }
 

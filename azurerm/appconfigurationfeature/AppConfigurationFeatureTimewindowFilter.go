@@ -5,9 +5,9 @@ package appconfigurationfeature
 
 
 type AppConfigurationFeatureTimewindowFilter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/app_configuration_feature#end AppConfigurationFeature#end}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/app_configuration_feature#end AppConfigurationFeature#end}.
 	End *string `field:"optional" json:"end" yaml:"end"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/app_configuration_feature#start AppConfigurationFeature#start}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/app_configuration_feature#start AppConfigurationFeature#start}.
 	Start *string `field:"optional" json:"start" yaml:"start"`
 }
 

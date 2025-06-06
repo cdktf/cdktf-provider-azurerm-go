@@ -83,6 +83,10 @@ func (v *jsiiProxy_VirtualNetwork) validatePutEncryptionParameters(value *Virtua
 	return nil
 }
 
+func (v *jsiiProxy_VirtualNetwork) validatePutIpAddressPoolParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetwork) validatePutSubnetParameters(value interface{}) error {
 	return nil
 }

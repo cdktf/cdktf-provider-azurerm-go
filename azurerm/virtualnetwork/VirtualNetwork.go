@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/virtual_network azurerm_virtual_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/virtual_network azurerm_virtual_network}.
 type VirtualNetwork interface {
 	cdktf.TerraformResource
 	AddressSpace() *[]*string
@@ -62,6 +62,8 @@ type VirtualNetwork interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAddressPool() VirtualNetworkIpAddressPoolList
+	IpAddressPoolInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -148,8 +150,10 @@ type VirtualNetwork interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutDdosProtectionPlan(value *VirtualNetworkDdosProtectionPlan)
 	PutEncryption(value *VirtualNetworkEncryption)
+	PutIpAddressPool(value interface{})
 	PutSubnet(value interface{})
 	PutTimeouts(value *VirtualNetworkTimeouts)
+	ResetAddressSpace()
 	ResetBgpCommunity()
 	ResetDdosProtectionPlan()
 	ResetDnsServers()
@@ -157,6 +161,7 @@ type VirtualNetwork interface {
 	ResetEncryption()
 	ResetFlowTimeoutInMinutes()
 	ResetId()
+	ResetIpAddressPool()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -432,6 +437,26 @@ func (j *jsiiProxy_VirtualNetwork) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VirtualNetwork) IpAddressPool() VirtualNetworkIpAddressPoolList {
+	var returns VirtualNetworkIpAddressPoolList
+	_jsii_.Get(
+		j,
+		"ipAddressPool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualNetwork) IpAddressPoolInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipAddressPoolInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualNetwork) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -653,7 +678,7 @@ func (j *jsiiProxy_VirtualNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
 func NewVirtualNetwork(scope constructs.Construct, id *string, config *VirtualNetworkConfig) VirtualNetwork {
 	_init_.Initialize()
 
@@ -671,7 +696,7 @@ func NewVirtualNetwork(scope constructs.Construct, id *string, config *VirtualNe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.31.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/virtual_network azurerm_virtual_network} Resource.
 func NewVirtualNetwork_Override(v VirtualNetwork, scope constructs.Construct, id *string, config *VirtualNetworkConfig) {
 	_init_.Initialize()
 
@@ -1246,6 +1271,17 @@ func (v *jsiiProxy_VirtualNetwork) PutEncryption(value *VirtualNetworkEncryption
 	)
 }
 
+func (v *jsiiProxy_VirtualNetwork) PutIpAddressPool(value interface{}) {
+	if err := v.validatePutIpAddressPoolParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putIpAddressPool",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VirtualNetwork) PutSubnet(value interface{}) {
 	if err := v.validatePutSubnetParameters(value); err != nil {
 		panic(err)
@@ -1265,6 +1301,14 @@ func (v *jsiiProxy_VirtualNetwork) PutTimeouts(value *VirtualNetworkTimeouts) {
 		v,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VirtualNetwork) ResetAddressSpace() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetAddressSpace",
+		nil, // no parameters
 	)
 }
 
@@ -1320,6 +1364,14 @@ func (v *jsiiProxy_VirtualNetwork) ResetId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetwork) ResetIpAddressPool() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetIpAddressPool",
 		nil, // no parameters
 	)
 }

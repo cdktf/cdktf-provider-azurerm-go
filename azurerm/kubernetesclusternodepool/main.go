@@ -151,6 +151,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUltraSsdEnabled", GoMethod: "ResetUltraSsdEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUpgradeSettings", GoMethod: "ResetUpgradeSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVmSize", GoMethod: "ResetVmSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVnetSubnetId", GoMethod: "ResetVnetSubnetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWindowsProfile", GoMethod: "ResetWindowsProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadRuntime", GoMethod: "ResetWorkloadRuntime"},
