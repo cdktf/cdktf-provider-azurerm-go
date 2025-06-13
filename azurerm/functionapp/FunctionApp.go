@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/function_app azurerm_function_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/function_app azurerm_function_app}.
 type FunctionApp interface {
 	cdktf.TerraformResource
 	AppServicePlanId() *string
@@ -898,7 +898,7 @@ func (j *jsiiProxy_FunctionApp) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/function_app azurerm_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/function_app azurerm_function_app} Resource.
 func NewFunctionApp(scope constructs.Construct, id *string, config *FunctionAppConfig) FunctionApp {
 	_init_.Initialize()
 
@@ -916,7 +916,7 @@ func NewFunctionApp(scope constructs.Construct, id *string, config *FunctionAppC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/function_app azurerm_function_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/function_app azurerm_function_app} Resource.
 func NewFunctionApp_Override(f FunctionApp, scope constructs.Construct, id *string, config *FunctionAppConfig) {
 	_init_.Initialize()
 

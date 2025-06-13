@@ -93,6 +93,17 @@ func (n *jsiiProxy_NetappVolumeGroupOracleVolumeOutputReference) validateInterpo
 	return nil
 }
 
+func (n *jsiiProxy_NetappVolumeGroupOracleVolumeOutputReference) validatePutDataProtectionReplicationParameters(value *NetappVolumeGroupOracleVolumeDataProtectionReplication) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolumeGroupOracleVolumeOutputReference) validatePutDataProtectionSnapshotPolicyParameters(value *NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

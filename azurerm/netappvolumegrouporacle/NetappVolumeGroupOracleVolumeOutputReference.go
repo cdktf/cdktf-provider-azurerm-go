@@ -31,6 +31,8 @@ type NetappVolumeGroupOracleVolumeOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataProtectionReplication() NetappVolumeGroupOracleVolumeDataProtectionReplicationOutputReference
+	DataProtectionReplicationInput() *NetappVolumeGroupOracleVolumeDataProtectionReplication
 	DataProtectionSnapshotPolicy() NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicyOutputReference
 	DataProtectionSnapshotPolicyInput() *NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicy
 	EncryptionKeySource() *string
@@ -121,8 +123,10 @@ type NetappVolumeGroupOracleVolumeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDataProtectionReplication(value *NetappVolumeGroupOracleVolumeDataProtectionReplication)
 	PutDataProtectionSnapshotPolicy(value *NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicy)
 	PutExportPolicyRule(value interface{})
+	ResetDataProtectionReplication()
 	ResetDataProtectionSnapshotPolicy()
 	ResetEncryptionKeySource()
 	ResetKeyVaultPrivateEndpointId()
@@ -190,6 +194,26 @@ func (j *jsiiProxy_NetappVolumeGroupOracleVolumeOutputReference) CreationStack()
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeGroupOracleVolumeOutputReference) DataProtectionReplication() NetappVolumeGroupOracleVolumeDataProtectionReplicationOutputReference {
+	var returns NetappVolumeGroupOracleVolumeDataProtectionReplicationOutputReference
+	_jsii_.Get(
+		j,
+		"dataProtectionReplication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeGroupOracleVolumeOutputReference) DataProtectionReplicationInput() *NetappVolumeGroupOracleVolumeDataProtectionReplication {
+	var returns *NetappVolumeGroupOracleVolumeDataProtectionReplication
+	_jsii_.Get(
+		j,
+		"dataProtectionReplicationInput",
 		&returns,
 	)
 	return returns
@@ -1071,6 +1095,17 @@ func (n *jsiiProxy_NetappVolumeGroupOracleVolumeOutputReference) InterpolationFo
 	return returns
 }
 
+func (n *jsiiProxy_NetappVolumeGroupOracleVolumeOutputReference) PutDataProtectionReplication(value *NetappVolumeGroupOracleVolumeDataProtectionReplication) {
+	if err := n.validatePutDataProtectionReplicationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putDataProtectionReplication",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetappVolumeGroupOracleVolumeOutputReference) PutDataProtectionSnapshotPolicy(value *NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicy) {
 	if err := n.validatePutDataProtectionSnapshotPolicyParameters(value); err != nil {
 		panic(err)
@@ -1090,6 +1125,14 @@ func (n *jsiiProxy_NetappVolumeGroupOracleVolumeOutputReference) PutExportPolicy
 		n,
 		"putExportPolicyRule",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetappVolumeGroupOracleVolumeOutputReference) ResetDataProtectionReplication() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDataProtectionReplication",
+		nil, // no parameters
 	)
 }
 

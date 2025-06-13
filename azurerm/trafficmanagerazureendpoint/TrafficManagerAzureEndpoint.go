@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint}.
 type TrafficManagerAzureEndpoint interface {
 	cdktf.TerraformResource
 	AlwaysServeEnabled() interface{}
@@ -571,7 +571,7 @@ func (j *jsiiProxy_TrafficManagerAzureEndpoint) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint} Resource.
 func NewTrafficManagerAzureEndpoint(scope constructs.Construct, id *string, config *TrafficManagerAzureEndpointConfig) TrafficManagerAzureEndpoint {
 	_init_.Initialize()
 
@@ -589,7 +589,7 @@ func NewTrafficManagerAzureEndpoint(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint} Resource.
 func NewTrafficManagerAzureEndpoint_Override(t TrafficManagerAzureEndpoint, scope constructs.Construct, id *string, config *TrafficManagerAzureEndpointConfig) {
 	_init_.Initialize()
 

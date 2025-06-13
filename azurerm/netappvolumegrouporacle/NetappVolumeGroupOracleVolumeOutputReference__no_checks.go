@@ -47,6 +47,10 @@ func (n *jsiiProxy_NetappVolumeGroupOracleVolumeOutputReference) validateInterpo
 	return nil
 }
 
+func (n *jsiiProxy_NetappVolumeGroupOracleVolumeOutputReference) validatePutDataProtectionReplicationParameters(value *NetappVolumeGroupOracleVolumeDataProtectionReplication) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolumeGroupOracleVolumeOutputReference) validatePutDataProtectionSnapshotPolicyParameters(value *NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicy) error {
 	return nil
 }

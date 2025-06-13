@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/servicebus_subscription_rule azurerm_servicebus_subscription_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/servicebus_subscription_rule azurerm_servicebus_subscription_rule}.
 type ServicebusSubscriptionRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -486,7 +486,7 @@ func (j *jsiiProxy_ServicebusSubscriptionRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/servicebus_subscription_rule azurerm_servicebus_subscription_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/servicebus_subscription_rule azurerm_servicebus_subscription_rule} Resource.
 func NewServicebusSubscriptionRule(scope constructs.Construct, id *string, config *ServicebusSubscriptionRuleConfig) ServicebusSubscriptionRule {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewServicebusSubscriptionRule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/servicebus_subscription_rule azurerm_servicebus_subscription_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/servicebus_subscription_rule azurerm_servicebus_subscription_rule} Resource.
 func NewServicebusSubscriptionRule_Override(s ServicebusSubscriptionRule, scope constructs.Construct, id *string, config *ServicebusSubscriptionRuleConfig) {
 	_init_.Initialize()
 

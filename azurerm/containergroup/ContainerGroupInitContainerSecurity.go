@@ -5,7 +5,7 @@ package containergroup
 
 
 type ContainerGroupInitContainerSecurity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/container_group#privilege_enabled ContainerGroup#privilege_enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/container_group#privilege_enabled ContainerGroup#privilege_enabled}.
 	PrivilegeEnabled interface{} `field:"required" json:"privilegeEnabled" yaml:"privilegeEnabled"`
 }
 

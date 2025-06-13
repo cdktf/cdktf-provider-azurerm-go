@@ -5,7 +5,7 @@ package dataazurermsignalrservice
 
 
 type DataAzurermSignalrServiceTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/data-sources/signalr_service#read DataAzurermSignalrService#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/data-sources/signalr_service#read DataAzurermSignalrService#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

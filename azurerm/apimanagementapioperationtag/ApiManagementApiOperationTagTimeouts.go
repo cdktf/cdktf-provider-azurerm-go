@@ -5,13 +5,13 @@ package apimanagementapioperationtag
 
 
 type ApiManagementApiOperationTagTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/api_management_api_operation_tag#create ApiManagementApiOperationTag#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/api_management_api_operation_tag#create ApiManagementApiOperationTag#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/api_management_api_operation_tag#delete ApiManagementApiOperationTag#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/api_management_api_operation_tag#delete ApiManagementApiOperationTag#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/api_management_api_operation_tag#read ApiManagementApiOperationTag#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/api_management_api_operation_tag#read ApiManagementApiOperationTag#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.32.0/docs/resources/api_management_api_operation_tag#update ApiManagementApiOperationTag#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/api_management_api_operation_tag#update ApiManagementApiOperationTag#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

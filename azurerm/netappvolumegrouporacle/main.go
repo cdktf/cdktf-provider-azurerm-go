@@ -141,6 +141,51 @@ func init() {
 		reflect.TypeOf((*NetappVolumeGroupOracleVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-azurerm.netappVolumeGroupOracle.NetappVolumeGroupOracleVolumeDataProtectionReplication",
+		reflect.TypeOf((*NetappVolumeGroupOracleVolumeDataProtectionReplication)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-azurerm.netappVolumeGroupOracle.NetappVolumeGroupOracleVolumeDataProtectionReplicationOutputReference",
+		reflect.TypeOf((*NetappVolumeGroupOracleVolumeDataProtectionReplicationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "endpointType", GoGetter: "EndpointType"},
+			_jsii_.MemberProperty{JsiiProperty: "endpointTypeInput", GoGetter: "EndpointTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "remoteVolumeLocation", GoGetter: "RemoteVolumeLocation"},
+			_jsii_.MemberProperty{JsiiProperty: "remoteVolumeLocationInput", GoGetter: "RemoteVolumeLocationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "remoteVolumeResourceId", GoGetter: "RemoteVolumeResourceId"},
+			_jsii_.MemberProperty{JsiiProperty: "remoteVolumeResourceIdInput", GoGetter: "RemoteVolumeResourceIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "replicationFrequency", GoGetter: "ReplicationFrequency"},
+			_jsii_.MemberProperty{JsiiProperty: "replicationFrequencyInput", GoGetter: "ReplicationFrequencyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEndpointType", GoMethod: "ResetEndpointType"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_NetappVolumeGroupOracleVolumeDataProtectionReplicationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-azurerm.netappVolumeGroupOracle.NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicy",
 		reflect.TypeOf((*NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicy)(nil)).Elem(),
 	)
@@ -285,6 +330,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataProtectionReplication", GoGetter: "DataProtectionReplication"},
+			_jsii_.MemberProperty{JsiiProperty: "dataProtectionReplicationInput", GoGetter: "DataProtectionReplicationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dataProtectionSnapshotPolicy", GoGetter: "DataProtectionSnapshotPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "dataProtectionSnapshotPolicyInput", GoGetter: "DataProtectionSnapshotPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "encryptionKeySource", GoGetter: "EncryptionKeySource"},
@@ -316,8 +363,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "protocolsInput", GoGetter: "ProtocolsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "proximityPlacementGroupId", GoGetter: "ProximityPlacementGroupId"},
 			_jsii_.MemberProperty{JsiiProperty: "proximityPlacementGroupIdInput", GoGetter: "ProximityPlacementGroupIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putDataProtectionReplication", GoMethod: "PutDataProtectionReplication"},
 			_jsii_.MemberMethod{JsiiMethod: "putDataProtectionSnapshotPolicy", GoMethod: "PutDataProtectionSnapshotPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putExportPolicyRule", GoMethod: "PutExportPolicyRule"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDataProtectionReplication", GoMethod: "ResetDataProtectionReplication"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataProtectionSnapshotPolicy", GoMethod: "ResetDataProtectionSnapshotPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEncryptionKeySource", GoMethod: "ResetEncryptionKeySource"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeyVaultPrivateEndpointId", GoMethod: "ResetKeyVaultPrivateEndpointId"},
