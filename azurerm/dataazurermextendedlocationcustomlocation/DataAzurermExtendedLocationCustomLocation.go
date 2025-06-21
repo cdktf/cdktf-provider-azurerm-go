@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/data-sources/extended_location_custom_location azurerm_extended_location_custom_location}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/data-sources/extended_location_custom_location azurerm_extended_location_custom_location}.
 type DataAzurermExtendedLocationCustomLocation interface {
 	cdktf.TerraformDataSource
 	Authentication() DataAzurermExtendedLocationCustomLocationAuthenticationList
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataAzurermExtendedLocationCustomLocation) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/data-sources/extended_location_custom_location azurerm_extended_location_custom_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/data-sources/extended_location_custom_location azurerm_extended_location_custom_location} Data Source.
 func NewDataAzurermExtendedLocationCustomLocation(scope constructs.Construct, id *string, config *DataAzurermExtendedLocationCustomLocationConfig) DataAzurermExtendedLocationCustomLocation {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewDataAzurermExtendedLocationCustomLocation(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/data-sources/extended_location_custom_location azurerm_extended_location_custom_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/data-sources/extended_location_custom_location azurerm_extended_location_custom_location} Data Source.
 func NewDataAzurermExtendedLocationCustomLocation_Override(d DataAzurermExtendedLocationCustomLocation, scope constructs.Construct, id *string, config *DataAzurermExtendedLocationCustomLocationConfig) {
 	_init_.Initialize()
 

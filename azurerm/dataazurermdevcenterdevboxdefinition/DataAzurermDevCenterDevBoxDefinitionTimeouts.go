@@ -5,7 +5,7 @@ package dataazurermdevcenterdevboxdefinition
 
 
 type DataAzurermDevCenterDevBoxDefinitionTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/data-sources/dev_center_dev_box_definition#read DataAzurermDevCenterDevBoxDefinition#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/data-sources/dev_center_dev_box_definition#read DataAzurermDevCenterDevBoxDefinition#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

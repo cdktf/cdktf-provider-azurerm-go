@@ -5,9 +5,9 @@ package chaosstudioexperiment
 
 
 type ChaosStudioExperimentIdentity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/chaos_studio_experiment#type ChaosStudioExperiment#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/chaos_studio_experiment#type ChaosStudioExperiment#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/chaos_studio_experiment#identity_ids ChaosStudioExperiment#identity_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/chaos_studio_experiment#identity_ids ChaosStudioExperiment#identity_ids}.
 	IdentityIds *[]*string `field:"optional" json:"identityIds" yaml:"identityIds"`
 }
 

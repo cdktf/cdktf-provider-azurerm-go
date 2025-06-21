@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/app_service_certificate_order azurerm_app_service_certificate_order}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/app_service_certificate_order azurerm_app_service_certificate_order}.
 type AppServiceCertificateOrder interface {
 	cdktf.TerraformResource
 	AppServiceCertificateNotRenewableReasons() *[]*string
@@ -670,7 +670,7 @@ func (j *jsiiProxy_AppServiceCertificateOrder) ValidityInYearsInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/app_service_certificate_order azurerm_app_service_certificate_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/app_service_certificate_order azurerm_app_service_certificate_order} Resource.
 func NewAppServiceCertificateOrder(scope constructs.Construct, id *string, config *AppServiceCertificateOrderConfig) AppServiceCertificateOrder {
 	_init_.Initialize()
 
@@ -688,7 +688,7 @@ func NewAppServiceCertificateOrder(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/app_service_certificate_order azurerm_app_service_certificate_order} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/app_service_certificate_order azurerm_app_service_certificate_order} Resource.
 func NewAppServiceCertificateOrder_Override(a AppServiceCertificateOrder, scope constructs.Construct, id *string, config *AppServiceCertificateOrderConfig) {
 	_init_.Initialize()
 

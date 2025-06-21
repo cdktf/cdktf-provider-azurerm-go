@@ -127,6 +127,10 @@ func (j *jsiiProxy_KustoClusterCustomerManagedKey) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_KustoClusterCustomerManagedKey) validateSetManagedHsmKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KustoClusterCustomerManagedKey) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

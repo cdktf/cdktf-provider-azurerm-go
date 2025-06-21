@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/user_assigned_identity azurerm_user_assigned_identity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/user_assigned_identity azurerm_user_assigned_identity}.
 type UserAssignedIdentity interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -460,7 +460,7 @@ func (j *jsiiProxy_UserAssignedIdentity) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/user_assigned_identity azurerm_user_assigned_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/user_assigned_identity azurerm_user_assigned_identity} Resource.
 func NewUserAssignedIdentity(scope constructs.Construct, id *string, config *UserAssignedIdentityConfig) UserAssignedIdentity {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewUserAssignedIdentity(scope constructs.Construct, id *string, config *Use
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/user_assigned_identity azurerm_user_assigned_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/user_assigned_identity azurerm_user_assigned_identity} Resource.
 func NewUserAssignedIdentity_Override(u UserAssignedIdentity, scope constructs.Construct, id *string, config *UserAssignedIdentityConfig) {
 	_init_.Initialize()
 

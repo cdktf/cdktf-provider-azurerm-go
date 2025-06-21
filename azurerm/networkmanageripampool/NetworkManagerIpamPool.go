@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/network_manager_ipam_pool azurerm_network_manager_ipam_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/network_manager_ipam_pool azurerm_network_manager_ipam_pool}.
 type NetworkManagerIpamPool interface {
 	cdktf.TerraformResource
 	AddressPrefixes() *[]*string
@@ -135,6 +135,7 @@ type NetworkManagerIpamPool interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *NetworkManagerIpamPoolTimeouts)
 	ResetDescription()
+	ResetDisplayName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -521,7 +522,7 @@ func (j *jsiiProxy_NetworkManagerIpamPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/network_manager_ipam_pool azurerm_network_manager_ipam_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/network_manager_ipam_pool azurerm_network_manager_ipam_pool} Resource.
 func NewNetworkManagerIpamPool(scope constructs.Construct, id *string, config *NetworkManagerIpamPoolConfig) NetworkManagerIpamPool {
 	_init_.Initialize()
 
@@ -539,7 +540,7 @@ func NewNetworkManagerIpamPool(scope constructs.Construct, id *string, config *N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/network_manager_ipam_pool azurerm_network_manager_ipam_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/network_manager_ipam_pool azurerm_network_manager_ipam_pool} Resource.
 func NewNetworkManagerIpamPool_Override(n NetworkManagerIpamPool, scope constructs.Construct, id *string, config *NetworkManagerIpamPoolConfig) {
 	_init_.Initialize()
 
@@ -1085,6 +1086,14 @@ func (n *jsiiProxy_NetworkManagerIpamPool) ResetDescription() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkManagerIpamPool) ResetDisplayName() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDisplayName",
 		nil, // no parameters
 	)
 }

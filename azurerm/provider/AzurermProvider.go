@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs azurerm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs azurerm}.
 type AzurermProvider interface {
 	cdktf.TerraformProvider
 	AdoPipelineServiceConnectionId() *string
@@ -70,6 +70,9 @@ type AzurermProvider interface {
 	MetadataHost() *string
 	SetMetadataHost(val *string)
 	MetadataHostInput() *string
+	MsiApiVersion() *string
+	SetMsiApiVersion(val *string)
+	MsiApiVersionInput() *string
 	MsiEndpoint() *string
 	SetMsiEndpoint(val *string)
 	MsiEndpointInput() *string
@@ -148,6 +151,7 @@ type AzurermProvider interface {
 	ResetEnvironment()
 	ResetFeatures()
 	ResetMetadataHost()
+	ResetMsiApiVersion()
 	ResetMsiEndpoint()
 	ResetOidcRequestToken()
 	ResetOidcRequestUrl()
@@ -535,6 +539,26 @@ func (j *jsiiProxy_AzurermProvider) MetadataHostInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AzurermProvider) MsiApiVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"msiApiVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzurermProvider) MsiApiVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"msiApiVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AzurermProvider) MsiEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -906,7 +930,7 @@ func (j *jsiiProxy_AzurermProvider) UseOidcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs azurerm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs azurerm} Resource.
 func NewAzurermProvider(scope constructs.Construct, id *string, config *AzurermProviderConfig) AzurermProvider {
 	_init_.Initialize()
 
@@ -924,7 +948,7 @@ func NewAzurermProvider(scope constructs.Construct, id *string, config *AzurermP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs azurerm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs azurerm} Resource.
 func NewAzurermProvider_Override(a AzurermProvider, scope constructs.Construct, id *string, config *AzurermProviderConfig) {
 	_init_.Initialize()
 
@@ -1060,6 +1084,14 @@ func (j *jsiiProxy_AzurermProvider)SetMetadataHost(val *string) {
 	_jsii_.Set(
 		j,
 		"metadataHost",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzurermProvider)SetMsiApiVersion(val *string) {
+	_jsii_.Set(
+		j,
+		"msiApiVersion",
 		val,
 	)
 }
@@ -1451,6 +1483,14 @@ func (a *jsiiProxy_AzurermProvider) ResetMetadataHost() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetMetadataHost",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzurermProvider) ResetMsiApiVersion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMsiApiVersion",
 		nil, // no parameters
 	)
 }

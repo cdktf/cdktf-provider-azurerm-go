@@ -5,7 +5,7 @@ package linuxvirtualmachine
 
 
 type LinuxVirtualMachineOsImageNotification struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/linux_virtual_machine#timeout LinuxVirtualMachine#timeout}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/linux_virtual_machine#timeout LinuxVirtualMachine#timeout}.
 	Timeout *string `field:"optional" json:"timeout" yaml:"timeout"`
 }
 

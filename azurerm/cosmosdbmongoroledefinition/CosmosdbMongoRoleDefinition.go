@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/cosmosdb_mongo_role_definition azurerm_cosmosdb_mongo_role_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/cosmosdb_mongo_role_definition azurerm_cosmosdb_mongo_role_definition}.
 type CosmosdbMongoRoleDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_CosmosdbMongoRoleDefinition) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/cosmosdb_mongo_role_definition azurerm_cosmosdb_mongo_role_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/cosmosdb_mongo_role_definition azurerm_cosmosdb_mongo_role_definition} Resource.
 func NewCosmosdbMongoRoleDefinition(scope constructs.Construct, id *string, config *CosmosdbMongoRoleDefinitionConfig) CosmosdbMongoRoleDefinition {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewCosmosdbMongoRoleDefinition(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/cosmosdb_mongo_role_definition azurerm_cosmosdb_mongo_role_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/cosmosdb_mongo_role_definition azurerm_cosmosdb_mongo_role_definition} Resource.
 func NewCosmosdbMongoRoleDefinition_Override(c CosmosdbMongoRoleDefinition, scope constructs.Construct, id *string, config *CosmosdbMongoRoleDefinitionConfig) {
 	_init_.Initialize()
 

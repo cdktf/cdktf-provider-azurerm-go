@@ -5,7 +5,7 @@ package arcresourcebridgeappliance
 
 
 type ArcResourceBridgeApplianceIdentity struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/resources/arc_resource_bridge_appliance#type ArcResourceBridgeAppliance#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/arc_resource_bridge_appliance#type ArcResourceBridgeAppliance#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

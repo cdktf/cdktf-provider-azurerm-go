@@ -5,7 +5,7 @@ package dataazurermelasticcloudelasticsearch
 
 
 type DataAzurermElasticCloudElasticsearchTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.33.0/docs/data-sources/elastic_cloud_elasticsearch#read DataAzurermElasticCloudElasticsearch#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/data-sources/elastic_cloud_elasticsearch#read DataAzurermElasticCloudElasticsearch#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 
