@@ -147,6 +147,10 @@ func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetLocalAuthenticationDisabled
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetLocalAuthenticationEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsWorkspace) validateSetLocationParameters(val *string) error {
 	return nil
 }

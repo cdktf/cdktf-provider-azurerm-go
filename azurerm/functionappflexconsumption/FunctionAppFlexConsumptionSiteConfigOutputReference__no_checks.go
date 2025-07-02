@@ -179,6 +179,10 @@ func (j *jsiiProxy_FunctionAppFlexConsumptionSiteConfigOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_FunctionAppFlexConsumptionSiteConfigOutputReference) validateSetVnetRouteAllEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FunctionAppFlexConsumptionSiteConfigOutputReference) validateSetWebsocketsEnabledParameters(val interface{}) error {
 	return nil
 }

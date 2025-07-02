@@ -29,6 +29,8 @@ type ContainerAppIngressOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Cors() ContainerAppIngressCorsOutputReference
+	CorsInput() *ContainerAppIngressCors
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -88,10 +90,12 @@ type ContainerAppIngressOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCors(value *ContainerAppIngressCors)
 	PutIpSecurityRestriction(value interface{})
 	PutTrafficWeight(value interface{})
 	ResetAllowInsecureConnections()
 	ResetClientCertificateMode()
+	ResetCors()
 	ResetExposedPort()
 	ResetExternalEnabled()
 	ResetIpSecurityRestriction()
@@ -166,6 +170,26 @@ func (j *jsiiProxy_ContainerAppIngressOutputReference) ComplexObjectIsFromSet() 
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppIngressOutputReference) Cors() ContainerAppIngressCorsOutputReference {
+	var returns ContainerAppIngressCorsOutputReference
+	_jsii_.Get(
+		j,
+		"cors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAppIngressOutputReference) CorsInput() *ContainerAppIngressCors {
+	var returns *ContainerAppIngressCors
+	_jsii_.Get(
+		j,
+		"corsInput",
 		&returns,
 	)
 	return returns
@@ -696,6 +720,17 @@ func (c *jsiiProxy_ContainerAppIngressOutputReference) InterpolationForAttribute
 	return returns
 }
 
+func (c *jsiiProxy_ContainerAppIngressOutputReference) PutCors(value *ContainerAppIngressCors) {
+	if err := c.validatePutCorsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCors",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerAppIngressOutputReference) PutIpSecurityRestriction(value interface{}) {
 	if err := c.validatePutIpSecurityRestrictionParameters(value); err != nil {
 		panic(err)
@@ -730,6 +765,14 @@ func (c *jsiiProxy_ContainerAppIngressOutputReference) ResetClientCertificateMod
 	_jsii_.InvokeVoid(
 		c,
 		"resetClientCertificateMode",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAppIngressOutputReference) ResetCors() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCors",
 		nil, // no parameters
 	)
 }

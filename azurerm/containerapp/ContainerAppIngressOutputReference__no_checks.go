@@ -47,6 +47,10 @@ func (c *jsiiProxy_ContainerAppIngressOutputReference) validateInterpolationForA
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAppIngressOutputReference) validatePutCorsParameters(value *ContainerAppIngressCors) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAppIngressOutputReference) validatePutIpSecurityRestrictionParameters(value interface{}) error {
 	return nil
 }

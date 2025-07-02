@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/workloads_sap_three_tier_virtual_instance azurerm_workloads_sap_three_tier_virtual_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/workloads_sap_three_tier_virtual_instance azurerm_workloads_sap_three_tier_virtual_instance}.
 type WorkloadsSapThreeTierVirtualInstance interface {
 	cdktf.TerraformResource
 	AppLocation() *string
@@ -614,7 +614,7 @@ func (j *jsiiProxy_WorkloadsSapThreeTierVirtualInstance) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/workloads_sap_three_tier_virtual_instance azurerm_workloads_sap_three_tier_virtual_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/workloads_sap_three_tier_virtual_instance azurerm_workloads_sap_three_tier_virtual_instance} Resource.
 func NewWorkloadsSapThreeTierVirtualInstance(scope constructs.Construct, id *string, config *WorkloadsSapThreeTierVirtualInstanceConfig) WorkloadsSapThreeTierVirtualInstance {
 	_init_.Initialize()
 
@@ -632,7 +632,7 @@ func NewWorkloadsSapThreeTierVirtualInstance(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/workloads_sap_three_tier_virtual_instance azurerm_workloads_sap_three_tier_virtual_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/workloads_sap_three_tier_virtual_instance azurerm_workloads_sap_three_tier_virtual_instance} Resource.
 func NewWorkloadsSapThreeTierVirtualInstance_Override(w WorkloadsSapThreeTierVirtualInstance, scope constructs.Construct, id *string, config *WorkloadsSapThreeTierVirtualInstanceConfig) {
 	_init_.Initialize()
 

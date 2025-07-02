@@ -111,6 +111,10 @@ func (j *jsiiProxy_PrivateLinkService) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_PrivateLinkService) validateSetDestinationIpAddressParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivateLinkService) validateSetEnableProxyProtocolParameters(val interface{}) error {
 	return nil
 }

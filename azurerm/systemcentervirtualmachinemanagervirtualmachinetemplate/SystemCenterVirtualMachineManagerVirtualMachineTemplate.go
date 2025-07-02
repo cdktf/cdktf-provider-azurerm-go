@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/system_center_virtual_machine_manager_virtual_machine_template azurerm_system_center_virtual_machine_manager_virtual_machine_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/system_center_virtual_machine_manager_virtual_machine_template azurerm_system_center_virtual_machine_manager_virtual_machine_template}.
 type SystemCenterVirtualMachineManagerVirtualMachineTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_SystemCenterVirtualMachineManagerVirtualMachineTemplate) Time
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/system_center_virtual_machine_manager_virtual_machine_template azurerm_system_center_virtual_machine_manager_virtual_machine_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/system_center_virtual_machine_manager_virtual_machine_template azurerm_system_center_virtual_machine_manager_virtual_machine_template} Resource.
 func NewSystemCenterVirtualMachineManagerVirtualMachineTemplate(scope constructs.Construct, id *string, config *SystemCenterVirtualMachineManagerVirtualMachineTemplateConfig) SystemCenterVirtualMachineManagerVirtualMachineTemplate {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewSystemCenterVirtualMachineManagerVirtualMachineTemplate(scope constructs
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/system_center_virtual_machine_manager_virtual_machine_template azurerm_system_center_virtual_machine_manager_virtual_machine_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/system_center_virtual_machine_manager_virtual_machine_template azurerm_system_center_virtual_machine_manager_virtual_machine_template} Resource.
 func NewSystemCenterVirtualMachineManagerVirtualMachineTemplate_Override(s SystemCenterVirtualMachineManagerVirtualMachineTemplate, scope constructs.Construct, id *string, config *SystemCenterVirtualMachineManagerVirtualMachineTemplateConfig) {
 	_init_.Initialize()
 

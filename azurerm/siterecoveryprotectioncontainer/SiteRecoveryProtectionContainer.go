@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/site_recovery_protection_container azurerm_site_recovery_protection_container}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/site_recovery_protection_container azurerm_site_recovery_protection_container}.
 type SiteRecoveryProtectionContainer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_SiteRecoveryProtectionContainer) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/site_recovery_protection_container azurerm_site_recovery_protection_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/site_recovery_protection_container azurerm_site_recovery_protection_container} Resource.
 func NewSiteRecoveryProtectionContainer(scope constructs.Construct, id *string, config *SiteRecoveryProtectionContainerConfig) SiteRecoveryProtectionContainer {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewSiteRecoveryProtectionContainer(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/site_recovery_protection_container azurerm_site_recovery_protection_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/site_recovery_protection_container azurerm_site_recovery_protection_container} Resource.
 func NewSiteRecoveryProtectionContainer_Override(s SiteRecoveryProtectionContainer, scope constructs.Construct, id *string, config *SiteRecoveryProtectionContainerConfig) {
 	_init_.Initialize()
 

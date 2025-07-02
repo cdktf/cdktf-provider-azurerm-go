@@ -119,6 +119,10 @@ func (j *jsiiProxy_PurviewAccount) validateSetLocationParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_PurviewAccount) validateSetManagedEventHubEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PurviewAccount) validateSetManagedResourceGroupNameParameters(val *string) error {
 	return nil
 }

@@ -347,6 +347,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publicIpAddressIdInput", GoGetter: "PublicIpAddressIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrivateIpAddressAllocation", GoMethod: "ResetPrivateIpAddressAllocation"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPublicIpAddressId", GoMethod: "ResetPublicIpAddressId"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "subnetId", GoGetter: "SubnetId"},
 			_jsii_.MemberProperty{JsiiProperty: "subnetIdInput", GoGetter: "SubnetIdInput"},

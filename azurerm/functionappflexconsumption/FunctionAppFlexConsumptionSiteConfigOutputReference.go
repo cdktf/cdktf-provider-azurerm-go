@@ -119,6 +119,9 @@ type FunctionAppFlexConsumptionSiteConfigOutputReference interface {
 	Use32BitWorker() interface{}
 	SetUse32BitWorker(val interface{})
 	Use32BitWorkerInput() interface{}
+	VnetRouteAllEnabled() interface{}
+	SetVnetRouteAllEnabled(val interface{})
+	VnetRouteAllEnabledInput() interface{}
 	WebsocketsEnabled() interface{}
 	SetWebsocketsEnabled(val interface{})
 	WebsocketsEnabledInput() interface{}
@@ -180,6 +183,7 @@ type FunctionAppFlexConsumptionSiteConfigOutputReference interface {
 	ResetScmMinimumTlsVersion()
 	ResetScmUseMainIpRestriction()
 	ResetUse32BitWorker()
+	ResetVnetRouteAllEnabled()
 	ResetWebsocketsEnabled()
 	ResetWorkerCount()
 	// Produce the Token's value at resolution time.
@@ -827,6 +831,26 @@ func (j *jsiiProxy_FunctionAppFlexConsumptionSiteConfigOutputReference) Use32Bit
 	return returns
 }
 
+func (j *jsiiProxy_FunctionAppFlexConsumptionSiteConfigOutputReference) VnetRouteAllEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vnetRouteAllEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FunctionAppFlexConsumptionSiteConfigOutputReference) VnetRouteAllEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vnetRouteAllEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FunctionAppFlexConsumptionSiteConfigOutputReference) WebsocketsEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1199,6 +1223,17 @@ func (j *jsiiProxy_FunctionAppFlexConsumptionSiteConfigOutputReference)SetUse32B
 	_jsii_.Set(
 		j,
 		"use32BitWorker",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FunctionAppFlexConsumptionSiteConfigOutputReference)SetVnetRouteAllEnabled(val interface{}) {
+	if err := j.validateSetVnetRouteAllEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vnetRouteAllEnabled",
 		val,
 	)
 }
@@ -1667,6 +1702,14 @@ func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigOutputReference) ResetUse
 	_jsii_.InvokeVoid(
 		f,
 		"resetUse32BitWorker",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FunctionAppFlexConsumptionSiteConfigOutputReference) ResetVnetRouteAllEnabled() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetVnetRouteAllEnabled",
 		nil, // no parameters
 	)
 }

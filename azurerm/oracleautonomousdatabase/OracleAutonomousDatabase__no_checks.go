@@ -75,6 +75,10 @@ func (o *jsiiProxy_OracleAutonomousDatabase) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (o *jsiiProxy_OracleAutonomousDatabase) validatePutLongTermBackupScheduleParameters(value *OracleAutonomousDatabaseLongTermBackupSchedule) error {
+	return nil
+}
+
 func (o *jsiiProxy_OracleAutonomousDatabase) validatePutTimeoutsParameters(value *OracleAutonomousDatabaseTimeouts) error {
 	return nil
 }

@@ -22,18 +22,18 @@ type ApiManagementApiTagConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/api_management_api_tag#api_id ApiManagementApiTag#api_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/api_management_api_tag#api_id ApiManagementApiTag#api_id}.
 	ApiId *string `field:"required" json:"apiId" yaml:"apiId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/api_management_api_tag#name ApiManagementApiTag#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/api_management_api_tag#name ApiManagementApiTag#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/api_management_api_tag#id ApiManagementApiTag#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/api_management_api_tag#id ApiManagementApiTag#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/api_management_api_tag#timeouts ApiManagementApiTag#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/api_management_api_tag#timeouts ApiManagementApiTag#timeouts}
 	Timeouts *ApiManagementApiTagTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

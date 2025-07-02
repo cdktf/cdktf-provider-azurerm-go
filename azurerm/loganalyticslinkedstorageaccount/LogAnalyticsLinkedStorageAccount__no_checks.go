@@ -127,6 +127,10 @@ func (j *jsiiProxy_LogAnalyticsLinkedStorageAccount) validateSetStorageAccountId
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsLinkedStorageAccount) validateSetWorkspaceIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsLinkedStorageAccount) validateSetWorkspaceResourceIdParameters(val *string) error {
 	return nil
 }

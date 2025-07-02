@@ -78,6 +78,7 @@ type VirtualNetworkGatewayIpConfigurationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetName()
 	ResetPrivateIpAddressAllocation()
+	ResetPublicIpAddressId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -568,6 +569,14 @@ func (v *jsiiProxy_VirtualNetworkGatewayIpConfigurationOutputReference) ResetPri
 	_jsii_.InvokeVoid(
 		v,
 		"resetPrivateIpAddressAllocation",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualNetworkGatewayIpConfigurationOutputReference) ResetPublicIpAddressId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPublicIpAddressId",
 		nil, // no parameters
 	)
 }

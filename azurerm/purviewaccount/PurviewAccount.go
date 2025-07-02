@@ -12,11 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/purview_account azurerm_purview_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/purview_account azurerm_purview_account}.
 type PurviewAccount interface {
 	cdktf.TerraformResource
 	AtlasKafkaEndpointPrimaryConnectionString() *string
 	AtlasKafkaEndpointSecondaryConnectionString() *string
+	AwsExternalId() *string
 	CatalogEndpoint() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -55,6 +56,9 @@ type PurviewAccount interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	ManagedEventHubEnabled() interface{}
+	SetManagedEventHubEnabled(val interface{})
+	ManagedEventHubEnabledInput() interface{}
 	ManagedResourceGroupName() *string
 	SetManagedResourceGroupName(val *string)
 	ManagedResourceGroupNameInput() *string
@@ -138,6 +142,7 @@ type PurviewAccount interface {
 	PutIdentity(value *PurviewAccountIdentity)
 	PutTimeouts(value *PurviewAccountTimeouts)
 	ResetId()
+	ResetManagedEventHubEnabled()
 	ResetManagedResourceGroupName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -178,6 +183,16 @@ func (j *jsiiProxy_PurviewAccount) AtlasKafkaEndpointSecondaryConnectionString()
 	_jsii_.Get(
 		j,
 		"atlasKafkaEndpointSecondaryConnectionString",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PurviewAccount) AwsExternalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsExternalId",
 		&returns,
 	)
 	return returns
@@ -348,6 +363,26 @@ func (j *jsiiProxy_PurviewAccount) LocationInput() *string {
 	_jsii_.Get(
 		j,
 		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PurviewAccount) ManagedEventHubEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"managedEventHubEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PurviewAccount) ManagedEventHubEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"managedEventHubEnabledInput",
 		&returns,
 	)
 	return returns
@@ -564,7 +599,7 @@ func (j *jsiiProxy_PurviewAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/purview_account azurerm_purview_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/purview_account azurerm_purview_account} Resource.
 func NewPurviewAccount(scope constructs.Construct, id *string, config *PurviewAccountConfig) PurviewAccount {
 	_init_.Initialize()
 
@@ -582,7 +617,7 @@ func NewPurviewAccount(scope constructs.Construct, id *string, config *PurviewAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/purview_account azurerm_purview_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/purview_account azurerm_purview_account} Resource.
 func NewPurviewAccount_Override(p PurviewAccount, scope constructs.Construct, id *string, config *PurviewAccountConfig) {
 	_init_.Initialize()
 
@@ -660,6 +695,17 @@ func (j *jsiiProxy_PurviewAccount)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PurviewAccount)SetManagedEventHubEnabled(val interface{}) {
+	if err := j.validateSetManagedEventHubEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedEventHubEnabled",
 		val,
 	)
 }
@@ -1117,6 +1163,14 @@ func (p *jsiiProxy_PurviewAccount) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PurviewAccount) ResetManagedEventHubEnabled() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetManagedEventHubEnabled",
 		nil, // no parameters
 	)
 }

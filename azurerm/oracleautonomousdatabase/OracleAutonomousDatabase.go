@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/oracle_autonomous_database azurerm_oracle_autonomous_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/oracle_autonomous_database azurerm_oracle_autonomous_database}.
 type OracleAutonomousDatabase interface {
 	cdktf.TerraformResource
 	AdminPassword() *string
@@ -88,6 +88,8 @@ type OracleAutonomousDatabase interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	LongTermBackupSchedule() OracleAutonomousDatabaseLongTermBackupScheduleOutputReference
+	LongTermBackupScheduleInput() *OracleAutonomousDatabaseLongTermBackupSchedule
 	MtlsConnectionRequired() interface{}
 	SetMtlsConnectionRequired(val interface{})
 	MtlsConnectionRequiredInput() interface{}
@@ -172,9 +174,11 @@ type OracleAutonomousDatabase interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutLongTermBackupSchedule(value *OracleAutonomousDatabaseLongTermBackupSchedule)
 	PutTimeouts(value *OracleAutonomousDatabaseTimeouts)
 	ResetCustomerContacts()
 	ResetId()
+	ResetLongTermBackupSchedule()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -588,6 +592,26 @@ func (j *jsiiProxy_OracleAutonomousDatabase) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OracleAutonomousDatabase) LongTermBackupSchedule() OracleAutonomousDatabaseLongTermBackupScheduleOutputReference {
+	var returns OracleAutonomousDatabaseLongTermBackupScheduleOutputReference
+	_jsii_.Get(
+		j,
+		"longTermBackupSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleAutonomousDatabase) LongTermBackupScheduleInput() *OracleAutonomousDatabaseLongTermBackupSchedule {
+	var returns *OracleAutonomousDatabaseLongTermBackupSchedule
+	_jsii_.Get(
+		j,
+		"longTermBackupScheduleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OracleAutonomousDatabase) MtlsConnectionRequired() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -819,7 +843,7 @@ func (j *jsiiProxy_OracleAutonomousDatabase) VirtualNetworkIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/oracle_autonomous_database azurerm_oracle_autonomous_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/oracle_autonomous_database azurerm_oracle_autonomous_database} Resource.
 func NewOracleAutonomousDatabase(scope constructs.Construct, id *string, config *OracleAutonomousDatabaseConfig) OracleAutonomousDatabase {
 	_init_.Initialize()
 
@@ -837,7 +861,7 @@ func NewOracleAutonomousDatabase(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/oracle_autonomous_database azurerm_oracle_autonomous_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/oracle_autonomous_database azurerm_oracle_autonomous_database} Resource.
 func NewOracleAutonomousDatabase_Override(o OracleAutonomousDatabase, scope constructs.Construct, id *string, config *OracleAutonomousDatabaseConfig) {
 	_init_.Initialize()
 
@@ -1511,6 +1535,17 @@ func (o *jsiiProxy_OracleAutonomousDatabase) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (o *jsiiProxy_OracleAutonomousDatabase) PutLongTermBackupSchedule(value *OracleAutonomousDatabaseLongTermBackupSchedule) {
+	if err := o.validatePutLongTermBackupScheduleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putLongTermBackupSchedule",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OracleAutonomousDatabase) PutTimeouts(value *OracleAutonomousDatabaseTimeouts) {
 	if err := o.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1534,6 +1569,14 @@ func (o *jsiiProxy_OracleAutonomousDatabase) ResetId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OracleAutonomousDatabase) ResetLongTermBackupSchedule() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLongTermBackupSchedule",
 		nil, // no parameters
 	)
 }

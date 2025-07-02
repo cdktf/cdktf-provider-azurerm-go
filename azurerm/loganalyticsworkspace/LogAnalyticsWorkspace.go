@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace}.
 type LogAnalyticsWorkspace interface {
 	cdktf.TerraformResource
 	AllowResourceOnlyPermissions() interface{}
@@ -72,6 +72,9 @@ type LogAnalyticsWorkspace interface {
 	LocalAuthenticationDisabled() interface{}
 	SetLocalAuthenticationDisabled(val interface{})
 	LocalAuthenticationDisabledInput() interface{}
+	LocalAuthenticationEnabled() interface{}
+	SetLocalAuthenticationEnabled(val interface{})
+	LocalAuthenticationEnabledInput() interface{}
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
@@ -171,6 +174,7 @@ type LogAnalyticsWorkspace interface {
 	ResetInternetIngestionEnabled()
 	ResetInternetQueryEnabled()
 	ResetLocalAuthenticationDisabled()
+	ResetLocalAuthenticationEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -487,6 +491,26 @@ func (j *jsiiProxy_LogAnalyticsWorkspace) LocalAuthenticationDisabledInput() int
 	return returns
 }
 
+func (j *jsiiProxy_LogAnalyticsWorkspace) LocalAuthenticationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogAnalyticsWorkspace) LocalAuthenticationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localAuthenticationEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogAnalyticsWorkspace) Location() *string {
 	var returns *string
 	_jsii_.Get(
@@ -748,7 +772,7 @@ func (j *jsiiProxy_LogAnalyticsWorkspace) WorkspaceId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource.
 func NewLogAnalyticsWorkspace(scope constructs.Construct, id *string, config *LogAnalyticsWorkspaceConfig) LogAnalyticsWorkspace {
 	_init_.Initialize()
 
@@ -766,7 +790,7 @@ func NewLogAnalyticsWorkspace(scope constructs.Construct, id *string, config *Lo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource.
 func NewLogAnalyticsWorkspace_Override(l LogAnalyticsWorkspace, scope constructs.Construct, id *string, config *LogAnalyticsWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -921,6 +945,17 @@ func (j *jsiiProxy_LogAnalyticsWorkspace)SetLocalAuthenticationDisabled(val inte
 	_jsii_.Set(
 		j,
 		"localAuthenticationDisabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogAnalyticsWorkspace)SetLocalAuthenticationEnabled(val interface{}) {
+	if err := j.validateSetLocalAuthenticationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localAuthenticationEnabled",
 		val,
 	)
 }
@@ -1472,6 +1507,14 @@ func (l *jsiiProxy_LogAnalyticsWorkspace) ResetLocalAuthenticationDisabled() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetLocalAuthenticationDisabled",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogAnalyticsWorkspace) ResetLocalAuthenticationEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetLocalAuthenticationEnabled",
 		nil, // no parameters
 	)
 }

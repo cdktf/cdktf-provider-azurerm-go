@@ -25,6 +25,7 @@ type DataAzurermContainerAppIngressOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Cors() DataAzurermContainerAppIngressCorsList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -124,6 +125,16 @@ func (j *jsiiProxy_DataAzurermContainerAppIngressOutputReference) ComplexObjectI
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAzurermContainerAppIngressOutputReference) Cors() DataAzurermContainerAppIngressCorsList {
+	var returns DataAzurermContainerAppIngressCorsList
+	_jsii_.Get(
+		j,
+		"cors",
 		&returns,
 	)
 	return returns

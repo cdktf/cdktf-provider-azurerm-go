@@ -22,20 +22,20 @@ type CosmosdbSqlFunctionConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/cosmosdb_sql_function#body CosmosdbSqlFunction#body}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/cosmosdb_sql_function#body CosmosdbSqlFunction#body}.
 	Body *string `field:"required" json:"body" yaml:"body"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/cosmosdb_sql_function#container_id CosmosdbSqlFunction#container_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/cosmosdb_sql_function#container_id CosmosdbSqlFunction#container_id}.
 	ContainerId *string `field:"required" json:"containerId" yaml:"containerId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/cosmosdb_sql_function#name CosmosdbSqlFunction#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/cosmosdb_sql_function#name CosmosdbSqlFunction#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/cosmosdb_sql_function#id CosmosdbSqlFunction#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/cosmosdb_sql_function#id CosmosdbSqlFunction#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/cosmosdb_sql_function#timeouts CosmosdbSqlFunction#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/cosmosdb_sql_function#timeouts CosmosdbSqlFunction#timeouts}
 	Timeouts *CosmosdbSqlFunctionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

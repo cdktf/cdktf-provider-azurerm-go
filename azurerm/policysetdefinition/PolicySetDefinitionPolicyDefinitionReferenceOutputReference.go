@@ -52,6 +52,9 @@ type PolicySetDefinitionPolicyDefinitionReferenceOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Version() *string
+	SetVersion(val *string)
+	VersionInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,6 +82,7 @@ type PolicySetDefinitionPolicyDefinitionReferenceOutputReference interface {
 	ResetParameterValues()
 	ResetPolicyGroupNames()
 	ResetReferenceId()
+	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -244,6 +248,26 @@ func (j *jsiiProxy_PolicySetDefinitionPolicyDefinitionReferenceOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_PolicySetDefinitionPolicyDefinitionReferenceOutputReference) Version() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"version",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PolicySetDefinitionPolicyDefinitionReferenceOutputReference) VersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewPolicySetDefinitionPolicyDefinitionReferenceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PolicySetDefinitionPolicyDefinitionReferenceOutputReference {
 	_init_.Initialize()
@@ -367,6 +391,17 @@ func (j *jsiiProxy_PolicySetDefinitionPolicyDefinitionReferenceOutputReference)S
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PolicySetDefinitionPolicyDefinitionReferenceOutputReference)SetVersion(val *string) {
+	if err := j.validateSetVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"version",
 		val,
 	)
 }
@@ -577,6 +612,14 @@ func (p *jsiiProxy_PolicySetDefinitionPolicyDefinitionReferenceOutputReference) 
 	_jsii_.InvokeVoid(
 		p,
 		"resetReferenceId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PolicySetDefinitionPolicyDefinitionReferenceOutputReference) ResetVersion() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetVersion",
 		nil, // no parameters
 	)
 }

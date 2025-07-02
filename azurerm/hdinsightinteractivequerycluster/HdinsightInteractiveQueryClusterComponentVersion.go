@@ -5,7 +5,7 @@ package hdinsightinteractivequerycluster
 
 
 type HdinsightInteractiveQueryClusterComponentVersion struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/hdinsight_interactive_query_cluster#interactive_hive HdinsightInteractiveQueryCluster#interactive_hive}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/hdinsight_interactive_query_cluster#interactive_hive HdinsightInteractiveQueryCluster#interactive_hive}.
 	InteractiveHive *string `field:"required" json:"interactiveHive" yaml:"interactiveHive"`
 }
 

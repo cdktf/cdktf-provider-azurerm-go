@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/data-sources/communication_service azurerm_communication_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/data-sources/communication_service azurerm_communication_service}.
 type DataAzurermCommunicationService interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -40,6 +40,7 @@ type DataAzurermCommunicationService interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	ImmutableResourceId() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -231,6 +232,16 @@ func (j *jsiiProxy_DataAzurermCommunicationService) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAzurermCommunicationService) ImmutableResourceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"immutableResourceId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAzurermCommunicationService) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -412,7 +423,7 @@ func (j *jsiiProxy_DataAzurermCommunicationService) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/data-sources/communication_service azurerm_communication_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/data-sources/communication_service azurerm_communication_service} Data Source.
 func NewDataAzurermCommunicationService(scope constructs.Construct, id *string, config *DataAzurermCommunicationServiceConfig) DataAzurermCommunicationService {
 	_init_.Initialize()
 
@@ -430,7 +441,7 @@ func NewDataAzurermCommunicationService(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/data-sources/communication_service azurerm_communication_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/data-sources/communication_service azurerm_communication_service} Data Source.
 func NewDataAzurermCommunicationService_Override(d DataAzurermCommunicationService, scope constructs.Construct, id *string, config *DataAzurermCommunicationServiceConfig) {
 	_init_.Initialize()
 

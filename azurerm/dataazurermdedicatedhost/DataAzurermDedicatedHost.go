@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/data-sources/dedicated_host azurerm_dedicated_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/data-sources/dedicated_host azurerm_dedicated_host}.
 type DataAzurermDedicatedHost interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_DataAzurermDedicatedHost) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/data-sources/dedicated_host azurerm_dedicated_host} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/data-sources/dedicated_host azurerm_dedicated_host} Data Source.
 func NewDataAzurermDedicatedHost(scope constructs.Construct, id *string, config *DataAzurermDedicatedHostConfig) DataAzurermDedicatedHost {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewDataAzurermDedicatedHost(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/data-sources/dedicated_host azurerm_dedicated_host} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/data-sources/dedicated_host azurerm_dedicated_host} Data Source.
 func NewDataAzurermDedicatedHost_Override(d DataAzurermDedicatedHost, scope constructs.Construct, id *string, config *DataAzurermDedicatedHostConfig) {
 	_init_.Initialize()
 

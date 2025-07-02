@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/log_analytics_linked_storage_account azurerm_log_analytics_linked_storage_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/log_analytics_linked_storage_account azurerm_log_analytics_linked_storage_account}.
 type LogAnalyticsLinkedStorageAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -75,6 +75,9 @@ type LogAnalyticsLinkedStorageAccount interface {
 	TerraformResourceType() *string
 	Timeouts() LogAnalyticsLinkedStorageAccountTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	WorkspaceId() *string
+	SetWorkspaceId(val *string)
+	WorkspaceIdInput() *string
 	WorkspaceResourceId() *string
 	SetWorkspaceResourceId(val *string)
 	WorkspaceResourceIdInput() *string
@@ -127,6 +130,8 @@ type LogAnalyticsLinkedStorageAccount interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
+	ResetWorkspaceId()
+	ResetWorkspaceResourceId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -405,6 +410,26 @@ func (j *jsiiProxy_LogAnalyticsLinkedStorageAccount) TimeoutsInput() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_LogAnalyticsLinkedStorageAccount) WorkspaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogAnalyticsLinkedStorageAccount) WorkspaceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogAnalyticsLinkedStorageAccount) WorkspaceResourceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -426,7 +451,7 @@ func (j *jsiiProxy_LogAnalyticsLinkedStorageAccount) WorkspaceResourceIdInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/log_analytics_linked_storage_account azurerm_log_analytics_linked_storage_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/log_analytics_linked_storage_account azurerm_log_analytics_linked_storage_account} Resource.
 func NewLogAnalyticsLinkedStorageAccount(scope constructs.Construct, id *string, config *LogAnalyticsLinkedStorageAccountConfig) LogAnalyticsLinkedStorageAccount {
 	_init_.Initialize()
 
@@ -444,7 +469,7 @@ func NewLogAnalyticsLinkedStorageAccount(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/log_analytics_linked_storage_account azurerm_log_analytics_linked_storage_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/log_analytics_linked_storage_account azurerm_log_analytics_linked_storage_account} Resource.
 func NewLogAnalyticsLinkedStorageAccount_Override(l LogAnalyticsLinkedStorageAccount, scope constructs.Construct, id *string, config *LogAnalyticsLinkedStorageAccountConfig) {
 	_init_.Initialize()
 
@@ -563,6 +588,17 @@ func (j *jsiiProxy_LogAnalyticsLinkedStorageAccount)SetStorageAccountIds(val *[]
 	_jsii_.Set(
 		j,
 		"storageAccountIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogAnalyticsLinkedStorageAccount)SetWorkspaceId(val *string) {
+	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceId",
 		val,
 	)
 }
@@ -962,6 +998,22 @@ func (l *jsiiProxy_LogAnalyticsLinkedStorageAccount) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogAnalyticsLinkedStorageAccount) ResetWorkspaceId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetWorkspaceId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogAnalyticsLinkedStorageAccount) ResetWorkspaceResourceId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetWorkspaceResourceId",
 		nil, // no parameters
 	)
 }

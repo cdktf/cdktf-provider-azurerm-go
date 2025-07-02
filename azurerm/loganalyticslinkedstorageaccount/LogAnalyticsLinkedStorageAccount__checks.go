@@ -434,6 +434,14 @@ func (j *jsiiProxy_LogAnalyticsLinkedStorageAccount) validateSetStorageAccountId
 	return nil
 }
 
+func (j *jsiiProxy_LogAnalyticsLinkedStorageAccount) validateSetWorkspaceIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LogAnalyticsLinkedStorageAccount) validateSetWorkspaceResourceIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

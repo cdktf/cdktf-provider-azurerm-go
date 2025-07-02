@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/private_link_service azurerm_private_link_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/private_link_service azurerm_private_link_service}.
 type PrivateLinkService interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -35,6 +35,9 @@ type PrivateLinkService interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DestinationIpAddress() *string
+	SetDestinationIpAddress(val *string)
+	DestinationIpAddressInput() *string
 	EnableProxyProtocol() interface{}
 	SetEnableProxyProtocol(val interface{})
 	EnableProxyProtocolInput() interface{}
@@ -142,9 +145,11 @@ type PrivateLinkService interface {
 	PutNatIpConfiguration(value interface{})
 	PutTimeouts(value *PrivateLinkServiceTimeouts)
 	ResetAutoApprovalSubscriptionIds()
+	ResetDestinationIpAddress()
 	ResetEnableProxyProtocol()
 	ResetFqdns()
 	ResetId()
+	ResetLoadBalancerFrontendIpConfigurationIds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -244,6 +249,26 @@ func (j *jsiiProxy_PrivateLinkService) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivateLinkService) DestinationIpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destinationIpAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivateLinkService) DestinationIpAddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destinationIpAddressInput",
 		&returns,
 	)
 	return returns
@@ -580,7 +605,7 @@ func (j *jsiiProxy_PrivateLinkService) VisibilitySubscriptionIdsInput() *[]*stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/private_link_service azurerm_private_link_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/private_link_service azurerm_private_link_service} Resource.
 func NewPrivateLinkService(scope constructs.Construct, id *string, config *PrivateLinkServiceConfig) PrivateLinkService {
 	_init_.Initialize()
 
@@ -598,7 +623,7 @@ func NewPrivateLinkService(scope constructs.Construct, id *string, config *Priva
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.34.0/docs/resources/private_link_service azurerm_private_link_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.35.0/docs/resources/private_link_service azurerm_private_link_service} Resource.
 func NewPrivateLinkService_Override(p PrivateLinkService, scope constructs.Construct, id *string, config *PrivateLinkServiceConfig) {
 	_init_.Initialize()
 
@@ -646,6 +671,17 @@ func (j *jsiiProxy_PrivateLinkService)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PrivateLinkService)SetDestinationIpAddress(val *string) {
+	if err := j.validateSetDestinationIpAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destinationIpAddress",
 		val,
 	)
 }
@@ -1170,6 +1206,14 @@ func (p *jsiiProxy_PrivateLinkService) ResetAutoApprovalSubscriptionIds() {
 	)
 }
 
+func (p *jsiiProxy_PrivateLinkService) ResetDestinationIpAddress() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDestinationIpAddress",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PrivateLinkService) ResetEnableProxyProtocol() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1190,6 +1234,14 @@ func (p *jsiiProxy_PrivateLinkService) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrivateLinkService) ResetLoadBalancerFrontendIpConfigurationIds() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetLoadBalancerFrontendIpConfigurationIds",
 		nil, // no parameters
 	)
 }
